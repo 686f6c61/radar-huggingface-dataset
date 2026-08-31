@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "trjxter/Qwenseek-3.8-27B-CyberLite-GGUF",
+  "slug": "trjxter-qwenseek-3-8-27b-cyberlite-gguf",
+  "author": "trjxter",
+  "url": "https://huggingface.co/trjxter/Qwenseek-3.8-27B-CyberLite-GGUF",
+  "created_at": "2026-08-31T03:27:08.000Z",
+  "updated_at": "2026-08-31T08:30:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "qwen3.8",
+    "llama.cpp",
+    "quantized",
+    "sft",
+    "qlora",
+    "reasoning",
+    "code",
+    "software-engineering",
+    "tool-calling",
+    "agentic",
+    "cybersecurity",
+    "defensive-security",
+    "controlled-red-team",
+    "teacher-distillation",
+    "text-generation",
+    "en",
+    "dataset:trjxter/DeepSeek-V4-Flash-0731-Teacher-Distillation-40513x",
+    "dataset:trjxter/DeepSeek-V4-Pro-Reasoning-8000x",
+    "base_model:trjxter/Qwenseek-3.8-27B-CyberLite-BF16",
+    "base_model:quantized:trjxter/Qwenseek-3.8-27B-CyberLite-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 76552607232,
+  "storage_human": "76.6 GB",
+  "base_model": "trjxter/Qwenseek-3.8-27B-CyberLite-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "trjxter/Qwenseek-3.8-27B-CyberLite-BF16 · Hugging Face",
+      "url": "https://huggingface.co/trjxter/Qwenseek-3.8-27B-CyberLite-BF16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: VRAM, Quants and the Template Trap",
+      "url": "https://locallyuncensored.com/blog/how-to-run-qwen-3-8-27b-locally.html",
+      "snippet": "Qwen 3.8 27B is out under Apache 2.0. Real GGUF sizes, the VRAM math for 12 GB and 24 GB cards, the broken chat template nobody warns you about, and vision setup."
+    },
+    {
+      "title": "Run Qwen3.8-27B Locally | Atomic Chat",
+      "url": "https://atomic.chat/models/qwen3-8-27b",
+      "snippet": "Qwen3.8-27B is a dense 27.8B multimodal model with a 256K context that fits on a 24 GB GPU at 4-bit. Run it locally in Atomic Chat."
+    },
+    {
+      "title": "Qwen3.8-27B on Hugging Face: official repo download guide",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-huggingface",
+      "snippet": "Qwen3.8 27B is on Hugging Face at Qwen/Qwen3.8-27B, published by the Qwe n org on August 14, 2026 under the Apache 2.0 license. The repo holds 55.6 GB of BF16 safetensors across 18 shards, plus the tokenizer, chat template, and config that go with it — free to download, free to use commercially, and no per-token fee."
+    }
+  ]
+}

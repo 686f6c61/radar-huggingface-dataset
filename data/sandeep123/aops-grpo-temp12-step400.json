@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sandeep123/aops-grpo-temp12-step400",
+  "slug": "sandeep123-aops-grpo-temp12-step400",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/aops-grpo-temp12-step400",
+  "created_at": "2026-08-31T02:07:17.000Z",
+  "updated_at": "2026-08-31T02:10:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rl",
+    "grpo",
+    "verl",
+    "scienceqa",
+    "reasoning",
+    "baseline",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sandeep123/aops-grpo-temp12-step400 · Hugging Face",
+      "url": "https://huggingface.co/sandeep123/aops-grpo-temp12-step400",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sandeep123-ai · GitHub",
+      "url": "https://github.com/sandeep123-ai",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "sandeep123/sqa-grpo-cliphigh-step400 · Hugging Face",
+      "url": "https://huggingface.co/sandeep123/sqa-grpo-cliphigh-step400",
+      "snippet": "sandeep123 / sqa-grpo-cliphigh-step400 like 0 Safetensors qwen2 rl grpo verl scienceqa reasoning baseline License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new sqa-grpo-cliphigh-step400 Do not apply a chat template Validation metrics at this checkpoint Settings (identical across all baseline arms) Note on ..."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

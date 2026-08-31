@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "PAkshayV/q-FrozenLake-v1-no-slippery",
+  "slug": "pakshayv-q-frozenlake-v1-no-slippery",
+  "author": "PAkshayV",
+  "url": "https://huggingface.co/PAkshayV/q-FrozenLake-v1-no-slippery",
+  "created_at": "2026-08-31T08:37:55.000Z",
+  "updated_at": "2026-08-31T08:37:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "srinivasvl81/FrozenLake-v1 · Hugging Face",
+      "url": "https://huggingface.co/srinivasvl81/FrozenLake-v1",
+      "snippet": "Q-Learning Agent playing1 FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 . Usage"
+    },
+    {
+      "title": "LibRust/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/LibRust/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "Q-Learning Agent playing1 FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 . Usage"
+    },
+    {
+      "title": "How to Implement a Q-Learning Agent in FrozenLake-v1 (No Slippery)",
+      "url": "https://fxis.ai/edu/how-to-implement-a-q-learning-agent-in-frozenlake-v1-no-slippery/",
+      "snippet": "Understanding FrozenLake-v1 Imagine a frosty lake where a little agent (like our Q-learning model) must navigate to reach a goal without falling into holes. In the FrozenLake-v1 environment, our agent receives rewards for successfully traversing from the start to the goal while avoiding pitfalls."
+    },
+    {
+      "title": "Facepalm0 / q-FrozenLake-v1-4x4-noSlippery",
+      "url": "https://insights-db.paloaltonetworks.com/models/Facepalm0/q-FrozenLake-v1-4x4-noSlippery/d536c4b1d5f44637b99d50ae9e5b724f30b47ef0/overview",
+      "snippet": "Discover potential threats in the Facepalm0 / q-FrozenLake-v1-4x4-noSlippery model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "Patsflynn/q-FrozenLake-v1-4x4-noSlippery - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/358836",
+      "snippet": "Q-Learning Agent playing1 FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    }
+  ]
+}

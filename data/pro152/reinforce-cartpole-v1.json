@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Pro152/Reinforce-CartPole-v1",
+  "slug": "pro152-reinforce-cartpole-v1",
+  "author": "Pro152",
+  "url": "https://huggingface.co/Pro152/Reinforce-CartPole-v1",
+  "created_at": "2026-08-31T08:27:31.000Z",
+  "updated_at": "2026-08-31T08:27:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3657,
+  "storage_human": "3657 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bear-ai/Reinforce-CartPole-v1 · Hugging Face",
+      "url": "https://huggingface.co/Bear-ai/Reinforce-CartPole-v1",
+      "snippet": "Bear-ai / Reinforce-CartPole-v1 like 0 Reinforcement Learning CartPole-v1 reinforce custom-implementation deep-rl-class Eval Results (legacy) Model card FilesFiles and versions xet Community Copy to bucket new Reinforce Agent playing CartPole-v1"
+    },
+    {
+      "title": "Insights DB",
+      "url": "https://insights-db.paloaltonetworks.com/models/crowbarmassage/Reinforce-CartPole-v1/7411419eab9818db33aed8b885a5163a72b9ddc9/overview",
+      "snippet": "Discover potential threats in the crowbarmassage / Reinforce-CartPole-v1 model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "CartPole Reinforcement Learning Project - GitHub",
+      "url": "https://github.com/johnpospisil/cart-pole-rl",
+      "snippet": "CartPole Reinforcement Learning Project 🎮🤖 A comprehensive implementation and comparison of state-of-the-art reinforcement learning algorithms on the CartPole-v1 environment."
+    },
+    {
+      "title": "goforit123/Reinforce-CartPole · Hugging Face",
+      "url": "https://huggingface.co/goforit123/Reinforce-CartPole",
+      "snippet": "This is a trained model of a Reinforce agent playing CartPole-v1 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "unit1_reinforce_cartpole.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/AliBuildsAI/rl-for-robotics-llms/blob/main/notebooks/unit1_reinforce_cartpole.ipynb",
+      "snippet": "Part of the RL for Robotics & LLMs series. We start with REINFORCE (Williams, 1992) — the original policy gradient algorithm — then build up to Vanilla Policy Gradient (VPG) by adding a learned value-function baseline, and show that the baseline directly improves training stability. This notebook follows Algorithm 1 from Schulman et al. exactly."
+    }
+  ]
+}

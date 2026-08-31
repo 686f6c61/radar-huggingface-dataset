@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "NostraEmpire/mirror-phi-4",
+  "slug": "nostraempire-mirror-phi-4",
+  "author": "NostraEmpire",
+  "url": "https://huggingface.co/NostraEmpire/mirror-phi-4",
+  "created_at": "2026-08-31T09:26:26.000Z",
+  "updated_at": "2026-08-31T09:35:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "phi3",
+    "text-generation",
+    "phi",
+    "nlp",
+    "math",
+    "code",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2412.08905",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14659507200,
+  "parameters_human": "14.66B",
+  "storage_bytes": 29319042992,
+  "storage_human": "29.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/phi-4 · Hugging Face",
+      "url": "https://huggingface.co/microsoft/phi-4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/phi-4 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/phi-4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Phi 4 Model Specs, Costs & Benchmarks (August 2026) | Magica",
+      "url": "https://magica.com/blog/model/phi-4",
+      "snippet": "Phi 4, developed by Microsoft, features a context window of 16.4K tokens. The model costs $0.07 per million tokens for input and $0.14 per million tokens for output. It was released on January 10, 2025, and has achieved impressive scores in various benchmarks."
+    },
+    {
+      "title": "Phi-4 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2412.08905v1",
+      "snippet": "Building on the success of the Phi family [10, 18, 14, 1], we introduce phi-4, a 14-billion parameter model that further advances performance of small language models by introducing innovative synthetic data generation methods for reasoning-focused tasks, by optimizing the training curriculum and data mixture, and by introducing new techniques ..."
+    },
+    {
+      "title": "Nous Portal",
+      "url": "https://portal.nousresearch.com/models",
+      "snippet": "Nous Research is a leader in the development of human-centric language models and simulators. Manage your account and API keys here."
+    }
+  ]
+}

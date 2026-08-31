@@ -5,7 +5,7 @@
   "author": "AlinaGonch",
   "url": "https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.90-seed-42",
   "created_at": "2026-08-14T16:47:55.000Z",
-  "updated_at": "2026-08-14T16:48:04.000Z",
+  "updated_at": "2026-08-30T15:49:28.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 185042160,
-  "storage_human": "185 MB",
+  "storage_bytes": 370084583,
+  "storage_human": "370 MB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "DaoCloud/KAT-Coder-V2.5-Dev-DFlash2-2.6B-A0.3B",
+  "slug": "daocloud-kat-coder-v2-5-dev-dflash2-2-6b-a0-3b",
+  "author": "DaoCloud",
+  "url": "https://huggingface.co/DaoCloud/KAT-Coder-V2.5-Dev-DFlash2-2.6B-A0.3B",
+  "created_at": "2026-08-31T09:49:42.000Z",
+  "updated_at": "2026-08-31T10:37:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dflash2",
+    "speculative-decoding",
+    "draft-model",
+    "moe",
+    "code",
+    "speculators",
+    "vllm",
+    "text-generation",
+    "base_model:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "base_model:finetune:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2638551808,
+  "parameters_human": "2.64B",
+  "storage_bytes": 5277110680,
+  "storage_human": "5.3 GB",
+  "base_model": "Kwaipilot/KAT-Coder-V2.5-Dev",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kwaipilot/KAT-Coder-V2.5-Dev · Hugging Face",
+      "url": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev",
+      "snippet": "This repository contains the model weights and configuration files for the post-trained KAT-Coder-V2.5-Dev in the Hugging Face Transformers format. The artifacts are compatible with Hugging Face Transformers, vLLM, SGLang, KTransformers, etc. Note: this open-weight release ships only the language-model weights and operates as a text-only model; the vision/multimodal components are not included ..."
+    },
+    {
+      "title": "KAT-Coder-V2.5-Dev: An Open Agentic Coding Model - HackerNoon",
+      "url": "https://hackernoon.com/kat-coder-v25-dev-an-open-agentic-coding-model",
+      "snippet": "Overview KAT-Coder-V2.5-Dev is a Mixture-of-Experts (MoE) coding model built by Kwaipilot for autonomous software engineering tasks within executable repositories. The model contains 35B total parameters with 3B activated per token, operating as a text-only model compatible with Hugging Face Transformers, vLLM, SGLang, and KTransformers. Built on the Qwen3.6-35B-A3B base model, it underwent ..."
+    },
+    {
+      "title": "mudler/KAT-Coder-V2.5-Dev-APEX-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mudler/KAT-Coder-V2.5-Dev-APEX-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "KAT-Coder-V2.5-Dev — Kwaipilot&#x27;s 35B open-weight… | AI/TLDR",
+      "url": "https://ai-tldr.dev/releases/kwaipilot-kat-coder-v2-5-dev/",
+      "snippet": "KAT-Coder-V2.5-Dev is an open-weight agentic coding model from Kwaipilot, the AI4SE team at Kuaishou. The Dev variant is a mixture-of-experts model with 35B total and 3B active parameters, published on Hugging Face under Apache 2.0."
+    },
+    {
+      "title": "Introducing KAT-Dev-32B, KAT-Coder: Advancing Code Intelligence through ...",
+      "url": "https://kwaipilot.github.io/KAT-Coder/",
+      "snippet": "KAT-Coder is our latest Mixture-of-Experts model with 32 billion activated parameters and 1 trillion total parameters. It achieves state-of-the-art performance in frontier knowledge, math, and coding among non-thinking models."
+    }
+  ]
+}

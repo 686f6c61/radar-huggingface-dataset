@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "XiXiHaHaZhao/STAGE1",
+  "slug": "xixihahazhao-stage1",
+  "author": "XiXiHaHaZhao",
+  "url": "https://huggingface.co/XiXiHaHaZhao/STAGE1",
+  "created_at": "2026-08-31T08:17:49.000Z",
+  "updated_at": "2026-08-31T08:20:37.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 11083081765,
+  "storage_human": "11.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stage1 Model by Mohamad Shahood - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/mohamad-shahood/contenttalosfinetuning/stage1",
+      "snippet": "Stage1 model from the Contenttalosfinetuning project by Mohamad Shahood. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "stage1/model at main - Hugging Face",
+      "url": "https://huggingface.co/stage1/model/tree/main",
+      "snippet": "stage1 / model like 0 Transformers GGUF English llama text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Use this model main model 6.43 GB 1 contributor History:5 commits stage1 (Trained with Unsloth) 0182d4c verified10 months ago .gitattributes Safe 1.57 kB(Trained with ..."
+    },
+    {
+      "title": "README.md · stage1/model at main - Hugging Face",
+      "url": "https://huggingface.co/stage1/model/blob/main/README.md",
+      "snippet": "Instructions to use stage1/model with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use stage1/model with Transformers:"
+    },
+    {
+      "title": "Flexislm 7b Stage1 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/flexislm/flexislm-7b-stage1",
+      "snippet": "Registry entry for model Flexislm 7b Stage1; source metadata pending."
+    },
+    {
+      "title": "论坛 - stage1/s1 游戏动漫论坛",
+      "url": "https://stage1st.com/2b/",
+      "snippet": "Stage1st是一个专注于游戏和动漫讨论的中文论坛，提供丰富的内容和活跃的社区互动。"
+    }
+  ]
+}

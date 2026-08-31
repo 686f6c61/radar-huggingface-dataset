@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "el1jah184/reranker",
+  "slug": "el1jah184-reranker",
+  "author": "el1jah184",
+  "url": "https://huggingface.co/el1jah184/reranker",
+  "created_at": "2026-08-31T10:11:20.000Z",
+  "updated_at": "2026-08-31T10:11:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "cross-encoder",
+    "reranker",
+    "text-ranking",
+    "base_model:BAAI/bge-reranker-v2-m3",
+    "base_model:finetune:BAAI/bge-reranker-v2-m3",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 567755777,
+  "parameters_human": "567.8M",
+  "storage_bytes": 2287853289,
+  "storage_human": "2.3 GB",
+  "base_model": "BAAI/bge-reranker-v2-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Tracker - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/tools/model-release-tracker",
+      "snippet": "AI Model Release Tracker Stay up to date with the latest AI model releases. This page tracks 403 models across all providers, sorted by release date."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "llmware/jina-reranker-v1-tiny-en · Hugging Face",
+      "url": "https://huggingface.co/llmware/jina-reranker-v1-tiny-en",
+      "snippet": "Trained by Jina AI. jina-reranker-v1-tiny-en This model is designed for blazing-fast reranking while maintaining competitive performance. What&#x27;s more, it leverages the power of our JinaBERT model as its foundation. JinaBERT itself is a unique variant of the BERT architecture that supports the symmetric bidirectional variant of ALiBi. This allows jina-reranker-v1-tiny-en to process ..."
+    },
+    {
+      "title": "GitHub - agentset-ai/awesome-rerankers: A curated list of reranking ...",
+      "url": "https://github.com/agentset-ai/awesome-rerankers",
+      "snippet": "A curated list of reranking models, libraries, and resources for RAG applications. Rerankers take a query and retrieved documents and reorder them by relevance. They use cross-encoders to jointly encode query-document pairs, which is slower than vector search but more accurate. Typical pipeline: retrieve 50-100 candidates with vector search, rerank to top 3-5."
+    },
+    {
+      "title": "Top Reranker AI Models 2026: Precision Retrieval",
+      "url": "https://local-ai-zone.github.io/guides/best-ai-reranker-models-ultimate-ranking-2026.html",
+      "snippet": "Discover the best AI reranker models for 2026. Compare Jina Reranker v3.5, Qwen3-Reranker, BGE-Reranker-v2-M3, and more for precision retrieval and RAG quality."
+    }
+  ]
+}

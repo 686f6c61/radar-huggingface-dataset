@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nkkbr2/Kimi-K3-decensored-experimental-r4",
+  "slug": "nkkbr2-kimi-k3-decensored-experimental-r4",
+  "author": "nkkbr2",
+  "url": "https://huggingface.co/nkkbr2/Kimi-K3-decensored-experimental-r4",
+  "created_at": "2026-08-31T09:26:07.000Z",
+  "updated_at": "2026-08-31T09:37:03.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k3",
+    "feature-extraction",
+    "compressed-tensors",
+    "conversational",
+    "image-text-to-text",
+    "custom_code",
+    "license:other",
+    "eval-results",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2779931837184,
+  "parameters_human": "2779.93B",
+  "storage_bytes": 1560998650830,
+  "storage_human": "1561.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kimi K3: 2.8T Open Model for Coding & Knowledge Work",
+      "url": "https://www.kimi.ai/ai-models/kimi-k3",
+      "snippet": "Kimi K3 is an open-weight, native multimodal model developed by Moonshot AI. It has 2.8 trillion total parameters and is built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes), with native vision capabilities and a context window of up to 1 million tokens. It is designed for long-horizon coding, knowledge work, and reasoning. Yes."
+    },
+    {
+      "title": "Kimi K3: 2.8T Model — Benchmarks, Pricing & Free Credits",
+      "url": "https://k3-kimi.com/",
+      "snippet": "Kimi K3 is Moonshot AI&#x27;s 2.8T open model with 1M context. See benchmarks vs GPT-5.6 & Claude, pricing, and claim free membership credits."
+    },
+    {
+      "title": "Kimi K3 — 2.8T Open Multimodal Model | Venice",
+      "url": "https://venice.ai/models/kimi-k3",
+      "snippet": "Kimi K3 is Moonshot AI&#x27;s 2.8T-parameter open-weight model with native vision and a 1M-token context. Pricing, specs, and private access on Venice."
+    },
+    {
+      "title": "Kimi K3 - Uncensored AI",
+      "url": "https://uncensored.com/models/kimi-k3",
+      "snippet": "Kimi K3 by Moonshot AI — a 2.8T-parameter open-weight multimodal reasoning model with a 1M-token context, built for complex coding and long-horizon agentic work."
+    },
+    {
+      "title": "Kimi K3 - Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart",
+      "snippet": "Kimi K3 is Kimi&#x27;s most capable flagship model to date, with 2.8 trillion parameters. It is built on Kimi Delta Attention (KDA), a hybrid linear attention mechanism, and Attention Residuals, with native visual understanding and a 1M-token context window. It is the world&#x27;s first open-source model in the 3-trillion-parameter class, designed for frontier intelligence scenarios including long ..."
+    }
+  ]
+}

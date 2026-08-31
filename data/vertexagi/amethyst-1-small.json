@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "VertexAGI/amethyst-1-small",
+  "slug": "vertexagi-amethyst-1-small",
+  "author": "VertexAGI",
+  "url": "https://huggingface.co/VertexAGI/amethyst-1-small",
+  "created_at": "2026-08-13T19:54:44.000Z",
+  "updated_at": "2026-08-31T08:04:06.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "llama-3.1",
+    "lora",
+    "conversational",
+    "distillation",
+    "text-generation",
+    "en",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 136,
+  "trending_score": 0,
+  "parameters": 1254952960,
+  "parameters_human": "1.25B",
+  "storage_bytes": 4534697749,
+  "storage_human": "4.5 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VertexAIco/amethyst-1-small · Hugging Face",
+      "url": "https://huggingface.co/VertexAIco/amethyst-1-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "VertexAIco/amethyst-1-mini · Hugging Face",
+      "url": "https://huggingface.co/VertexAIco/amethyst-1-mini",
+      "snippet": "Amethyst 1 Mini is a general-purpose chat and instruction-following model, fine-tuned from Gemma 3 4B IT using LoRA on a small, high-quality distilled instruction dataset. It is the first model in the Amethyst family — an early, small-scale release focused on validating an end-to-end distillation → fine-tune → evaluate pipeline on consumer hardware."
+    },
+    {
+      "title": "Vertex AI (@vertexagi) / Posts / X",
+      "url": "https://x.com/vertexagi",
+      "snippet": "💎 Introducing Amethyst 1 MiniMy first model in the Amethyst series.• Gemma 3 4B base• LoRA fine-tune• Trained on Apple Silicon• Built for small general-purpose chat + instruction useMore models + AI app progress soon 👀"
+    },
+    {
+      "title": "Amethyst AI Neural Workstation - GitHub",
+      "url": "https://github.com/prodsingularity/Amethyst",
+      "snippet": "Amethyst AI Neural Workstation A cross-platform, portable local AI hub designed to run entirely offline from a USB drive or local directory. Launch large language models and offline Wikipedia via Kiwix with a simple terminal menu. - prodsingularity/Amethyst"
+    },
+    {
+      "title": "Google Vertex AI Model Availability (Updated Hourly)",
+      "url": "https://www.ai.moda/en/blog/google-vertex-ai-model-availability",
+      "snippet": "Want to know what models are currently available on Google Cloud Vertex AI? We&#x27;ve got a live updated list right here for you."
+    }
+  ]
+}

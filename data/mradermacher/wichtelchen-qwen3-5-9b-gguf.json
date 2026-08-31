@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Wichtelchen-Qwen3.5-9B-GGUF",
+  "slug": "mradermacher-wichtelchen-qwen3-5-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Wichtelchen-Qwen3.5-9B-GGUF",
+  "created_at": "2026-08-31T09:08:30.000Z",
+  "updated_at": "2026-08-31T09:19:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "agents",
+    "tool-use",
+    "code",
+    "hemlock",
+    "qwen3.5",
+    "en",
+    "dataset:nbeerbower/GreatFirewall-DPO",
+    "dataset:schneewolflabs/egirl-DPO",
+    "dataset:schneewolflabs/egirl-delegation-dpo",
+    "dataset:schneewolflabs/egirl-hemlock-dpo",
+    "dataset:hemlang/Hemlock-SFT-combined",
+    "base_model:schneewolflabs/Wichtelchen-Qwen3.5-9B",
+    "base_model:quantized:schneewolflabs/Wichtelchen-Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 85101519104,
+  "storage_human": "85.1 GB",
+  "base_model": "schneewolflabs/Wichtelchen-Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "schneewolflabs/Wichtelchen-Qwen3.5-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/schneewolflabs/Wichtelchen-Qwen3.5-9B-GGUF",
+      "snippet": "GGUF quants of schneewolflabs/Wichtelchen-Qwen3.5-9B — the Wichtel operator recipe on Qwen3.5-9B: delegation 10/10, Hemlock 56.1% on hembench. See the main card for the full ladder and limitations."
+    },
+    {
+      "title": "mradermacher/Qwen3.5-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-9B-GGUF",
+      "snippet": "For a convenient overview and download list, visit our model page for this model. weighted/imatrix quants are available at https://huggingface.co/mradermacher/Qwen3.5-9B-i1-GGUF. If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Wichtelchen Qwen3.5 9B by schneewolflabs - LLM Explorer",
+      "url": "https://llm-explorer.com/model/schneewolflabs%2FWichtelchen-Qwen3.5-9B,3UxmIWnC0xNRKTHAou32tl",
+      "snippet": "Rank the Wichtelchen Qwen3.5 9B capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Qwen3.5 9B model | Bitcoin.com AI",
+      "url": "https://ai.bitcoin.com/models/text/qwen/qwen3.5-9b",
+      "snippet": "Qwen3.5 9B is a multimodal foundation model from the Qwen 3.5 family, built for efficient reasoning, coding, and visual understanding in a compact 9B architecture."
+    }
+  ]
+}

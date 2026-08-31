@@ -5,7 +5,7 @@
   "author": "StarDoc-AI",
   "url": "https://huggingface.co/StarDoc-AI/NaviDC-OCR",
   "created_at": "2026-08-14T06:15:03.000Z",
-  "updated_at": "2026-08-24T00:28:51.000Z",
+  "updated_at": "2026-08-30T07:20:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

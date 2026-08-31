@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "onnx-community/t5-small-german-ONNX",
+  "slug": "onnx-community-t5-small-german-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/t5-small-german-ONNX",
+  "created_at": "2026-08-31T02:34:36.000Z",
+  "updated_at": "2026-08-31T02:34:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": "transformers.js",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "t5",
+    "text2text-generation",
+    "generated_from_trainer",
+    "summarization",
+    "de",
+    "dataset:mlsum",
+    "base_model:Shahm/t5-small-german",
+    "base_model:quantized:Shahm/t5-small-german",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2334475583,
+  "storage_human": "2.3 GB",
+  "base_model": "Shahm/t5-small-german",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Summarization",
+      "dataset": "mlsum de",
+      "metric": "Rouge1",
+      "value": 42.3787
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - abelriboulot/onnxt5: Summarization, translation, sentiment ...",
+      "url": "https://github.com/abelriboulot/onnxt5",
+      "snippet": "Summarization, translation, sentiment-analysis, text-generation and more at blazing speed using a T5 version implemented in ONNX. - abelriboulot/onnxt5"
+    },
+    {
+      "title": "google-t5/t5-small · Hugging Face",
+      "url": "https://huggingface.co/google-t5/t5-small",
+      "snippet": "T5-Small is the checkpoint with 60 million parameters. Developed by: Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, Peter J. Liu. See associated paper and GitHub repo Model type: Language model Language (s) (NLP): English, French, Romanian, German License: Apache 2.0"
+    },
+    {
+      "title": "echarlaix/t5-small-onnx · Hugging Face",
+      "url": "https://huggingface.co/echarlaix/t5-small-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

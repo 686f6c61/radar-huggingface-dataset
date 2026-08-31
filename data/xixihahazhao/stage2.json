@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "XiXiHaHaZhao/STAGE2",
+  "slug": "xixihahazhao-stage2",
+  "author": "XiXiHaHaZhao",
+  "url": "https://huggingface.co/XiXiHaHaZhao/STAGE2",
+  "created_at": "2026-08-31T08:30:15.000Z",
+  "updated_at": "2026-08-31T08:34:48.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:XiXiHaHaZhao/STAGE1",
+    "base_model:finetune:XiXiHaHaZhao/STAGE1",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1107265600,
+  "parameters_human": "1.11B",
+  "storage_bytes": 13296682936,
+  "storage_human": "13.3 GB",
+  "base_model": "XiXiHaHaZhao/STAGE1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stage2 Model by Mohamad Shahood - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/mohamad-shahood/contenttalosfinetuning/stage2",
+      "snippet": "Stage2 model from the Contenttalosfinetuning project by Mohamad Shahood. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "ViFIT/Stage2/models at main · AI-XPM-group/ViFIT · GitHub",
+      "url": "https://github.com/AI-XPM-group/ViFIT/tree/main/Stage2/models",
+      "snippet": "A model for H&E-stained image style normalization and multiplex virtual fiber staining. - ViFIT/Stage2/models at main · AI-XPM-group/ViFIT"
+    },
+    {
+      "title": "tranhuudan-fullstack-ai-engineer/model_stage2 · Hugging Face",
+      "url": "https://huggingface.co/tranhuudan-fullstack-ai-engineer/model_stage2",
+      "snippet": "Instructions to use tranhuudan-fullstack-ai-engineer/model_stage2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "CivArchive - CivitAI Archive",
+      "url": "https://civarchive.com/about",
+      "snippet": "AI Artists: To find specific models and all their download links, especially if one link is broken. Developers/Researchers: To track specific model files (by hash) across the web and verify their existence."
+    },
+    {
+      "title": "Runware/InfiniteYou_aes_stage2 at main - Hugging Face",
+      "url": "https://huggingface.co/Runware/InfiniteYou_aes_stage2/tree/main",
+      "snippet": "Model card Files Files and versions xet Community Use this model main InfiniteYou_aes_stage2 Ctrl+K"
+    }
+  ]
+}

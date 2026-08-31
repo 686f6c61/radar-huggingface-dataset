@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "HoopitAI/video-deepfake-detection-GenD_DINOv3_L_FF",
+  "slug": "hoopitai-video-deepfake-detection-gend_dinov3_l_ff",
+  "author": "HoopitAI",
+  "url": "https://huggingface.co/HoopitAI/video-deepfake-detection-GenD_DINOv3_L_FF",
+  "created_at": "2026-08-31T09:07:27.000Z",
+  "updated_at": "2026-08-31T09:07:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "GenD",
+    "video-deepfake-detection",
+    "deepfake-detection",
+    "video-deepfake",
+    "face-forensics",
+    "computer-vision",
+    "gend",
+    "pytorch",
+    "image-classification",
+    "custom_code",
+    "en",
+    "dataset:faceforensics",
+    "base_model:facebook/dinov3-vitl16-pretrain-lvd1689m",
+    "base_model:finetune:facebook/dinov3-vitl16-pretrain-lvd1689m",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 303131650,
+  "parameters_human": "303.1M",
+  "storage_bytes": 1212579400,
+  "storage_human": "1.2 GB",
+  "base_model": "facebook/dinov3-vitl16-pretrain-lvd1689m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deepfake Detection that Generalizes Across Benchmarks (WACV 2026)",
+      "url": "https://github.com/yermandy/GenD",
+      "snippet": "The generalization of deepfake detectors to unseen manipulation techniques remains a challenge for practical deployment. Although many approaches adapt foundation models by introducing significant architectural complexity, this work demonstrates that robust generalization is achievable through a parameter-efficient adaptation of one of the ..."
+    },
+    {
+      "title": "Deepfake Detection that Generalizes Across Benchmarks",
+      "url": "https://arxiv.org/html/2508.06248v3",
+      "snippet": "We benchmarked the generalization capabilities of the proposed model on 14 deepfake video datasets released between 2019 and 2025, listed in Tab. 1. To our knowledge, this represents the broadest evaluation in the deepfake literature. We show that the proposed model outperforms the most recent state-of-the-art methods on the majority of all available benchmarks."
+    },
+    {
+      "title": "Deepfake Detection that Generalizes Across Benchmarks",
+      "url": "https://www.computer.org/csdl/proceedings-article/wacv/2026/551100a773/2ggP4UMfX8s",
+      "snippet": "The generalization of deepfake detectors to unseen manipulation techniques remains a challenge for practical deployment. Although many approaches adapt foundation models by introducing significant architectural complexity, this work demonstrates that robust generalization is achievable through a parameter-efficient adaptation of one of the foundational pre-trained vision encoders. The proposed ..."
+    },
+    {
+      "title": "GenD - a yermandy Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/yermandy/gend",
+      "snippet": "Models for the WACV 2026 paper: \"Deepfake Detection that Generalizes Across Benchmarks\""
+    },
+    {
+      "title": "README.md · yermandy/GenD_DINOv3_L at main - Hugging Face",
+      "url": "https://huggingface.co/yermandy/GenD_DINOv3_L/blob/main/README.md",
+      "snippet": "Deepfake Detection that Generalizes Across Benchmarks (WACV 2026) This is the GenD (DINO) model from Tab. 2 in the paper."
+    }
+  ]
+}

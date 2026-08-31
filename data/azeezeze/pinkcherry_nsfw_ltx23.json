@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "azeezeze/PinkCherry_NSFW_LTX23",
+  "slug": "azeezeze-pinkcherry_nsfw_ltx23",
+  "author": "azeezeze",
+  "url": "https://huggingface.co/azeezeze/PinkCherry_NSFW_LTX23",
+  "created_at": "2026-08-31T09:06:08.000Z",
+  "updated_at": "2026-08-31T09:06:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ltx-video",
+    "nfaa",
+    "nsfw",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21005004544,
+  "parameters_human": "21.01B",
+  "storage_bytes": 572644545370,
+  "storage_human": "572.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=nsfw",
+      "snippet": "Explore machine learning models. AI-Porn/pornworks-nude-people-photo-realistic-nsfw-flux-1d-checkpoint"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=trending&search=nsfw",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "LTX 2.3 NSFW: Understanding Content Restrictions",
+      "url": "https://ltx23.video/blog/ltx-2-3-nsfw",
+      "snippet": "Comprehensive guide to LTX 2.3 NSFW content generation capabilities, platform policies, legal considerations, and responsible AI video creation."
+    },
+    {
+      "title": "LTX 2.5 & LTX 2.3 ComfyUI Models — Choose by VRAM",
+      "url": "https://ltxworkflow.com/models",
+      "snippet": "Pick the right LTX 2.5 or LTX 2.3 model for your GPU. Grouped by VRAM tier, with GGUF quants, IC-LoRAs, Gemma text encoders, and per-file install paths. Direct HuggingFace links on each model page."
+    },
+    {
+      "title": "pinkcherry AI Models | Civitai",
+      "url": "https://civitai.com/tag/pinkcherry",
+      "snippet": "pinkcherry Browse 1 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with pinkcherry."
+    }
+  ]
+}

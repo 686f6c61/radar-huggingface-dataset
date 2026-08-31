@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "KoichiYasuoka/roberta-base-japanese-aozora-char",
+  "slug": "koichiyasuoka-roberta-base-japanese-aozora-char",
+  "author": "KoichiYasuoka",
+  "url": "https://huggingface.co/KoichiYasuoka/roberta-base-japanese-aozora-char",
+  "created_at": "2022-03-02T23:29:04.000Z",
+  "updated_at": "2026-08-31T08:06:59.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "roberta",
+    "fill-mask",
+    "japanese",
+    "masked-lm",
+    "ja",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 746378015,
+  "storage_human": "746 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KoichiYasuoka/roberta-base-japanese-aozora · Hugging Face",
+      "url": "https://huggingface.co/KoichiYasuoka/roberta-base-japanese-aozora",
+      "snippet": "This is a RoBERTa model pre-trained on 青空文庫 texts with Japanese-LUW-Tokenizer. You can fine-tune roberta-base-japanese-aozora for downstream tasks, such as POS-tagging, dependency-parsing, and so on."
+    },
+    {
+      "title": "KoichiYasuoka/roberta-base-japanese-aozora-char · Hugging Face",
+      "url": "https://huggingface.co/KoichiYasuoka/roberta-base-japanese-aozora-char",
+      "snippet": "This is a RoBERTa model pre-trained on 青空文庫 texts with character tokenizer. You can fine-tune roberta-base-japanese-aozora-char for downstream tasks, such as POS-tagging, dependency-parsing, and so on."
+    },
+    {
+      "title": "Roberta Base Japanese Aozora - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/koichiyasuoka/roberta-base-japanese-aozora",
+      "snippet": "This is a RoBERTa model pre-trained on 青空文庫 texts with Japanese-LUW-Tokenizer. You can fine-tune roberta-base-japanese-aozora for downstream tasks, such as POS-tagging, dependency-parsing, and so on."
+    },
+    {
+      "title": "roberta-base-japanese-aozora Open-source Japanese Model - Utility Tool ...",
+      "url": "https://model.aibase.com/models/details/1915687157228060674",
+      "snippet": "Model Overview This is a RoBERTa model pre-trained on Japanese Aozora Bunko texts using Japanese-LUW-Tokenizer, suitable for Japanese text processing tasks such as part-of-speech tagging and dependency parsing."
+    },
+    {
+      "title": "roberta-base-japanese-aozora huggingface.co api & KoichiYasuoka roberta ...",
+      "url": "https://www.toolify.ai/ai-model/koichiyasuoka-roberta-base-japanese-aozora",
+      "snippet": "roberta-base-japanese-aozora huggingface.co is an online trial and call api platform, which integrates roberta-base-japanese-aozora&#x27;s modeling effects, including api services, and provides a free online trial of roberta-base-japanese-aozora, you can try roberta-base-japanese-aozora online for free by clicking the link below."
+    }
+  ]
+}

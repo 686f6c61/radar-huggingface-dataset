@@ -27,12 +27,12 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 21,
+  "likes": 22,
   "downloads_30d": 0,
   "trending_score": 8,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 18703715874,
+  "storage_bytes": 18704835815,
   "storage_human": "18.7 GB",
   "base_model": "openbmb/VoxCPM2",
   "formats": [

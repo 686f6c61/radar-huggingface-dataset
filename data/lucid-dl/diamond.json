@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lucid-dl/diamond",
+  "slug": "lucid-dl-diamond",
+  "author": "lucid-dl",
+  "url": "https://huggingface.co/lucid-dl/diamond",
+  "created_at": "2026-08-31T08:11:09.000Z",
+  "updated_at": "2026-08-31T08:14:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "lucid",
+  "languages": [],
+  "tags": [
+    "lucid",
+    "safetensors",
+    "world-modeling",
+    "diamond",
+    "reinforcement-learning",
+    "dataset:atari-100k",
+    "arxiv:2405.12399",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1409599012,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lucid-dl (Lucid) - Hugging Face",
+      "url": "https://huggingface.co/lucid-dl/models",
+      "snippet": "Org profile for Lucid on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "lucid-ai (Lucid) - Hugging Face",
+      "url": "https://huggingface.co/lucid-ai/models",
+      "snippet": "Org profile for Lucid on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "lucid-dl · PyPI",
+      "url": "https://pypi.org/project/lucid-dl/",
+      "snippet": "Lucid is a deep learning framework for Apple Silicon, written from scratch. It gives you a familiar Python API on top of a custom C++ engine that talks directly to Apple&#x27;s hardware stack — MLX on the GPU, Accelerate on the CPU — with no NumPy anywhere in the compute path."
+    },
+    {
+      "title": "Available Models | openai/lucid | DeepWiki",
+      "url": "https://deepwiki.com/openai/lucid/3.2-available-models",
+      "snippet": "This document catalogs all pre-trained models available in Lucid&#x27;s model zoo, including their variants, specifications, and organizational structure. These models serve as the foundation for neural network interpretability research and visualization tasks."
+    },
+    {
+      "title": "Lucid Is the Model You Use When You Want AI Images to Make Sense",
+      "url": "https://budgetpixel.com/blog/lucid-is-the-model-you-use-when-you-want-ai-images-to-make-sense",
+      "snippet": "AI image generation has reached a strange place. Almost every model today can produce something impressive. Sharp details, dramatic lighting, rich colors — the surface quality is rarely the problem anymore. The real issue shows up later. When you try to: keep things consistent make small, intentional changes use images across a real project many models start to feel noisy, unpredictable, or ..."
+    }
+  ]
+}

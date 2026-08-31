@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "duclvQ/tcg-card-detector",
+  "slug": "duclvq-tcg-card-detector",
+  "author": "duclvQ",
+  "url": "https://huggingface.co/duclvQ/tcg-card-detector",
+  "created_at": "2026-08-31T08:16:35.000Z",
+  "updated_at": "2026-08-31T08:22:20.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "coreml",
+    "onnx",
+    "object-detection",
+    "keypoint-detection",
+    "pose-estimation",
+    "yolov8",
+    "trading-card-game",
+    "pokemon",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31368123,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TCG_cards_detector_yolov11 Object Detection Dataset by AWSSecurity",
+      "url": "https://universe.roboflow.com/awssecurity/tcg_cards_detector_yolov11-ahn5g",
+      "snippet": "About TCG_cards_detector_yolov11 Dataset A description for this project has not been published yet."
+    },
+    {
+      "title": "tcg-card-detection Instance Segmentation Model (v6, 2025-01-16 8:09am ...",
+      "url": "https://universe.roboflow.com/sacha_psalmon/tcg-card-detection/dataset/6",
+      "snippet": "46 open source card images and annotations in multiple formats for training computer vision models. tcg-card-detection (v6, 2025-01-16 8:09am), created by sacha_psalmon"
+    },
+    {
+      "title": "Trading Card Identification AI & Infrastructure | CardSight AI",
+      "url": "https://cardsight.ai/",
+      "snippet": "CardSight AI is a complete trading card identification and data platform for developers. One unified trading card API spans baseball, basketball, football, hockey, as well as Pokémon, Magic: The Gathering, and One Piece TCG — with visual card recognition, real card sales data and graded card pricing sourced from eBay, Fanatics Collect, COMC, and other public marketplaces, ..."
+    },
+    {
+      "title": "Playing-Cards-Object-Detection - GitHub",
+      "url": "https://github.com/TeogopK/Playing-Cards-Object-Detection",
+      "snippet": "Playing-Cards-Object-Detection This repository encapsulates the whole process of training and evaluating various YOLOv8 models for playing cards object detection, including datasets, code for training, utility functions, presentations and research paper materials, the model themselves and live demo application with the best models."
+    },
+    {
+      "title": "Adrihp06/TCGscanner-detector · Hugging Face",
+      "url": "https://huggingface.co/Adrihp06/TCGscanner-detector",
+      "snippet": "TCGscanner Card Detector This repository contains the current ONNX card-boundary detector used by the TCGscanner prototype. The model is a single-class YOLO detector. Its task is to localize the physical trading card in a camera frame or photograph."
+    }
+  ]
+}

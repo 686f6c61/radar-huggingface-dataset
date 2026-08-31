@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Aetheris-Core-2B-i1-GGUF",
+  "slug": "mradermacher-aetheris-core-2b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Aetheris-Core-2B-i1-GGUF",
+  "created_at": "2026-08-31T09:32:40.000Z",
+  "updated_at": "2026-08-31T09:32:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 592566,
+  "parameters_human": "592566",
+  "storage_bytes": 2397568,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/Artemis-31B-v1.1-heretic-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Artemis-31B-v1.1-heretic-i1-GGUF",
+      "snippet": "mradermacher / Artemis-31B-v1.1-heretic-i1-GGUF like 0 Transformers GGUF English heretic uncensored decensored abliterated reproducible imatrix conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Aetheris-Core-2B API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Miiyamoto255/Aetheris-Core-2B",
+      "snippet": "Aetheris-Core-2B is a compact, from-scratch 2-billion-parameter language model based on the Gemma2ForCausalLM architecture. It is designed for fast, capable, and flexible local inference."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

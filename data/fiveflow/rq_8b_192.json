@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "fiveflow/rq_8b_192",
+  "slug": "fiveflow-rq_8b_192",
+  "author": "fiveflow",
+  "url": "https://huggingface.co/fiveflow/rq_8b_192",
+  "created_at": "2026-08-31T08:10:16.000Z",
+  "updated_at": "2026-08-31T08:14:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939858,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fiveflow/rq_8b_128 · Hugging Face",
+      "url": "https://huggingface.co/fiveflow/rq_8b_128",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fiveflow AI Model Benchmarks | BenchmarkList",
+      "url": "https://benchmarklist.com/providers/fiveflow/",
+      "snippet": "Fiveflow AI model benchmark profile: 2 models, 1 covered benchmarks on BenchmarkList."
+    },
+    {
+      "title": "briaai/FIBO · Hugging Face",
+      "url": "https://huggingface.co/briaai/FIBO",
+      "snippet": "FIBO is an 8B-parameter DiT-based, flow-matching text-to-image model trained exclusively on licensed data and on > long, structured JSON captions (~1,000 words each), enabling strong prompt adherence and professional-grade control."
+    },
+    {
+      "title": "Best 8B Parameter Models in 2026 — Small Models, Big Results",
+      "url": "https://www.aimadetools.com/blog/best-8b-parameter-models-2026/",
+      "snippet": "The best ~8B parameter AI models you can run on any laptop. Compared on quality, speed, RAM usage, and best use cases. All runnable via Ollama."
+    },
+    {
+      "title": "Artwork Workflow Automation Platform | 5Flow",
+      "url": "https://www.5flowtech.com/",
+      "snippet": "Streamline packaging and creative operations with 5Flow&#x27;s artwork workflow automation platform, enabling faster approvals, compliance tracking and collaboration."
+    }
+  ]
+}

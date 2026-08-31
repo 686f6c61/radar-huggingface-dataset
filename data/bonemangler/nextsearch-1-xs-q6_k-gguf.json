@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "BoneMangler/NextSearch-1-XS-Q6_K-GGUF",
+  "slug": "bonemangler-nextsearch-1-xs-q6_k-gguf",
+  "author": "BoneMangler",
+  "url": "https://huggingface.co/BoneMangler/NextSearch-1-XS-Q6_K-GGUF",
+  "created_at": "2026-08-31T10:23:37.000Z",
+  "updated_at": "2026-08-31T10:24:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agent",
+    "web-research",
+    "agentic-search",
+    "tool-use",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "base_model:NextTokenAI/NextSearch-1-XS",
+    "base_model:quantized:NextTokenAI/NextSearch-1-XS",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 7558901440,
+  "storage_human": "7.6 GB",
+  "base_model": "NextTokenAI/NextSearch-1-XS",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BoneMangler (Isaac Winter) - Hugging Face",
+      "url": "https://huggingface.co/BoneMangler",
+      "snippet": "BoneMangler Follow Salormatik999&#x27;s profile picturePhysiQuanty&#x27;s profile picturemidnightcoderagent&#x27;s profile picture 3 followers · 49 following"
+    },
+    {
+      "title": "GGUF · Hugging Face",
+      "url": "https://huggingface.co/docs/hub/gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Demystifying LLM Quantization Suffixes: What Q4_K_M, Q8_0, and Q6_K ...",
+      "url": "https://medium.com/@paul.ilvez/demystifying-llm-quantization-suffixes-what-q4-k-m-q8-0-and-q6-k-really-mean-0ec2770f17d3",
+      "snippet": "Demystifying LLM Quantization Suffixes: What Q4_K_M, Q8_0, and Q6_K Really Mean Not long ago, a client and I were choosing the right quantized version of a Qwen LLM. Should we download the Q8 ..."
+    },
+    {
+      "title": "Unsloth Dynamic 3.0 GGUFs | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/basics/dynamic-3.0-ggufs",
+      "snippet": "Unsloth Dynamic v3.0 is the next iteration of our Dynamic quantization and a major improvement over Dynamic v2.0. Today, we&#x27;re releasing Qwen3.8-27B Dynamic v3.0 quants that deliver >10% top-1% better accuracy at the same size compared to every other provider. This is an update of our first shared early preview version of Dynamic v3.0. The new 3.0 GGUFs work with most inference engines ..."
+    }
+  ]
+}

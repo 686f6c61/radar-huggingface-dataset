@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shaxiang/Wan2.1-I2V-14B-480P_fp16.safetensors",
+  "slug": "shaxiang-wan2-1-i2v-14b-480p_fp16-safetensors",
+  "author": "shaxiang",
+  "url": "https://huggingface.co/shaxiang/Wan2.1-I2V-14B-480P_fp16.safetensors",
+  "created_at": "2026-08-31T08:06:10.000Z",
+  "updated_at": "2026-08-31T08:06:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32789890680,
+  "storage_human": "32.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wan-AI/Wan2.1-I2V-14B-480P · Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-480P",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wan-AI/Wan2.1-I2V-14B-480P at main - Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-480P/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wan2.1-I2V-14B-480P · Models",
+      "url": "https://www.modelscope.cn/models/Wan-AI/Wan2.1-I2V-14B-480P",
+      "snippet": "💡Note: The 1.3B model is capable of generating videos at 720P resolution. However, due to limited training at this resolution, the results are generally less stable compared to 480P. For optimal performance, we recommend using 480P resolution. Download models using 🤗 huggingface-cli: pip install \"huggingface_hub[cli]\" huggingface-cli download Wan-AI/Wan2.1-I2V-14B-480P --local-dir ./Wan2 ..."
+    },
+    {
+      "title": "Wan2.1-I2V-14B-480P_I2V-14B-480P_I2V-14B-480P - shakker.ai",
+      "url": "https://www.shakker.ai/modelinfo/4d6b69e67c6b4ac69e7c35c995fc22e6/Wan2-1-I2V-14B-480P-I2V-14B-480P",
+      "snippet": "Wan2.1 offers these key features: 👍 SOTA Performance: Wan2.1 consistently outperforms existing open-source models and state-of-the-art commercial solutions across multiple benchmarks. 👍 Supports Consumer-grade GPUs: The T2V-1.3B model requires only 8.19 GB VRAM, making it compatible with almost all consumer-grade GPUs. It can generate a 5-second 480P video on an RTX 4090 in about 4 ..."
+    },
+    {
+      "title": "Wan2.1-I2V-14B-480P: Image-to-Video model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/wan2.1-i2v-14b-480p-wan-ai",
+      "snippet": "Overview Wan2.1-I2V-14B-480P is an image-to-video diffusion transformer model developed by Wan-AI that generates 480P videos from single image inputs combined with text prompts. Built on a Flow Matching framework with a diffusion transformer architecture, the model contains 14 billion parameters and uses a T5 encoder for multilingual text understanding with cross-attention layers embedding ..."
+    }
+  ]
+}

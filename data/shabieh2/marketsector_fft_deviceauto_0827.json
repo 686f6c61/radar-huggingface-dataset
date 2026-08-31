@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "shabieh2/marketsector_fft_deviceauto_0827",
+  "slug": "shabieh2-marketsector_fft_deviceauto_0827",
+  "author": "shabieh2",
+  "url": "https://huggingface.co/shabieh2/marketsector_fft_deviceauto_0827",
+  "created_at": "2026-08-31T08:35:28.000Z",
+  "updated_at": "2026-08-31T08:41:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "muse_glimmer",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "trl",
+    "sft",
+    "conversational",
+    "en",
+    "base_model:unsloth/Muse-Glimmer-30B",
+    "base_model:finetune:unsloth/Muse-Glimmer-30B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29776626688,
+  "parameters_human": "29.78B",
+  "storage_bytes": 59584969324,
+  "storage_human": "59.6 GB",
+  "base_model": "unsloth/Muse-Glimmer-30B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shabieh2/marketsector_0827v3 · Hugging Face",
+      "url": "https://huggingface.co/shabieh2/marketsector_0827v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "shabieh2/marketsector_0827v4 · Hugging Face",
+      "url": "https://huggingface.co/shabieh2/marketsector_0827v4",
+      "snippet": "Instructions to use shabieh2/marketsector_0827v4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use shabieh2/marketsector_0827v4 with Transformers:"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    },
+    {
+      "title": "Models - Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/models",
+      "snippet": "We release experimental models to gather feedback and get our latest updates into the hands of developers quickly. Experimental models are not stable and availability of model endpoints is subject to change. Model deprecations For information about model deprecations, visit the Gemini deprecations page."
+    },
+    {
+      "title": "GitHub Star History — Track & Compare Open Source Star Growth",
+      "url": "https://www.star-history.com/",
+      "snippet": "View and compare GitHub star history graph of open source projects."
+    }
+  ]
+}

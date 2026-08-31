@@ -1,0 +1,131 @@
+{
+  "schema": 1,
+  "id": "thenukegun10x/TinyFox-2.0",
+  "slug": "thenukegun10x-tinyfox-2-0",
+  "author": "thenukegun10x",
+  "url": "https://huggingface.co/thenukegun10x/TinyFox-2.0",
+  "created_at": "2026-08-31T09:53:25.000Z",
+  "updated_at": "2026-08-31T09:54:13.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "object-detection",
+    "yolo",
+    "night-vision",
+    "ir-camera",
+    "wildlife",
+    "pest-control",
+    "fox-detection",
+    "red-fox",
+    "edge-ai",
+    "int8",
+    "computer-vision",
+    "dataset:custom",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40315253,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "Night/IR Wildlife & Fox Detection Benchmark (Stratified 0-Leak Split)",
+      "metric": "Fox mAP@0.50",
+      "value": 0.983
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Night/IR Wildlife & Fox Detection Benchmark (Stratified 0-Leak Split)",
+      "metric": "Fox mAP@0.50-0.95",
+      "value": 0.795
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Night/IR Wildlife & Fox Detection Benchmark (Stratified 0-Leak Split)",
+      "metric": "Fox Precision",
+      "value": 0.975
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Night/IR Wildlife & Fox Detection Benchmark (Stratified 0-Leak Split)",
+      "metric": "Fox Recall",
+      "value": 0.912
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Night/IR Wildlife & Fox Detection Benchmark (Stratified 0-Leak Split)",
+      "metric": "All Classes mAP@0.50",
+      "value": 0.95
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Night/IR Wildlife & Fox Detection Benchmark (Stratified 0-Leak Split)",
+      "metric": "All Classes mAP@0.50-0.95",
+      "value": 0.812
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Night/IR Wildlife & Fox Detection Benchmark (Stratified 0-Leak Split)",
+      "metric": "Deployment Video Fox Top Prediction (@0.40 conf)",
+      "value": 0.882
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Night/IR Wildlife & Fox Detection Benchmark (Stratified 0-Leak Split)",
+      "metric": "Deployment Video Rival Canid Confusion (@0.40 conf)",
+      "value": 0
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Night/IR Wildlife & Fox Detection Benchmark (Stratified 0-Leak Split)",
+      "metric": "False Alarms on 225 Night Negatives",
+      "value": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "thenukegun10x/TinyFox-1.0 at main - Hugging Face",
+      "url": "https://huggingface.co/thenukegun10x/TinyFox-1.0/tree/main",
+      "snippet": "thenukegun10x / TinyFox-1.0 like 0 Object Detection PyTorch LiteRT ONNX GGUF custom nanodet edge-ai npu ir-camera wildlife red-fox acuity Eval Results (legacy) License:mit Model card FilesFiles and versions xet Community Copy to bucket new main TinyFox-1.0 Ctrl+K Ctrl+K 1 contributor History:2 commits thenukegun10x Upload folder using huggingface_hub f82e867 verifiedabout 2 months ago ..."
+    },
+    {
+      "title": "README.md · thenukegun10x/TinyFox-1.0 at main - Hugging Face",
+      "url": "https://huggingface.co/thenukegun10x/TinyFox-1.0/blob/main/README.md",
+      "snippet": "thenukegun10x / TinyFox-1.0 like 0 Object Detection PyTorch LiteRT ONNX GGUF custom nanodet edge-ai npu ir-camera wildlife red-fox acuity Eval Results (legacy) License:mit Model card FilesFiles and versions xet Community Copy to bucket new main TinyFox-1.0 /README.md thenukegun10x Upload folder using huggingface_hub f82e867 verifiedabout 1 month ago preview code | Raw Download with hf CLI Copy ..."
+    },
+    {
+      "title": "3D AI Studio - Generate 3D Models from Image or Text in Seconds",
+      "url": "https://www.3daistudio.com/",
+      "snippet": "3D AI Studio is the best service I&#x27;ve found out there. They have a far superior output for highly detailed, realistic models and several amazing tools for source image generation, retexturing and model re-meshing/refining. The interface is clean, easy-to-use and intuitive."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "📊 Model Comparison Matrix: Benchmark comparisons between MiniMax H3, Seedance 2.5, Wan 2.1, Kling AI, Sora, and CogVideoX. 🌐 Chinese AI Video Generator Directory: Complete guide for international creators to access Chinese AI models without native phone registration, plus Faceless Channel guides."
+    },
+    {
+      "title": "TinyFox Studio",
+      "url": "https://tinyfoxai.com/home",
+      "snippet": "Project-first AI video studio with canvas workflows, asset management, and model routing."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "facebook/sam-3d-body-dinov3",
+  "slug": "facebook-sam-3d-body-dinov3",
+  "author": "facebook",
+  "url": "https://huggingface.co/facebook/sam-3d-body-dinov3",
+  "created_at": "2025-11-17T18:44:24.000Z",
+  "updated_at": "2025-12-10T18:45:19.000Z",
+  "license": "sam-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sam-3d-body",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sam-3d-body",
+    "sam-3d",
+    "3d-human-mesh-recovery",
+    "human-pose-estimation",
+    "meta",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 289,
+  "downloads_30d": 7745,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2805239594,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/sam-3d-body-dinov3 · Hugging Face",
+      "url": "https://huggingface.co/facebook/sam-3d-body-dinov3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "facebook/sam-3d-body-dinov3 at main - Hugging Face",
+      "url": "https://huggingface.co/facebook/sam-3d-body-dinov3/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sam-3d-body-dinov3: Image-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/sam-3d-body-dinov3-facebook",
+      "snippet": "Overview sam-3d-body-dinov3 is a promptable model for single-image full-body 3D human mesh recovery developed by facebook. The model estimates human pose including body, feet, and hands based on the Momentum Human Rig (MHR), a parametric mesh representation that decouples skeletal structure from surface shape. Built with an encoder-decoder architecture, the model supports auxiliary prompts ..."
+    },
+    {
+      "title": "SAM 3D Body: Robust Full-Body Human Mesh Recovery",
+      "url": "https://github.com/facebookresearch/sam-3d-body",
+      "snippet": "SAM 3D Body (3DB) is a promptable model for single-image full-body 3D human mesh recovery (HMR). Our method demonstrates state-of-the-art performance, with strong generalization and consistent accuracy in diverse in-the-wild conditions. 3DB estimates the human pose of the body, feet, and hands based ..."
+    },
+    {
+      "title": "facebook/sam-3d-body-dinov3 - AI Model Details & Pricing | AI Model ...",
+      "url": "https://www.aitimelines.club/models/facebook%2Fsam-3d-body-dinov3",
+      "snippet": "Explore facebook/sam-3d-body-dinov3 AI model. 3,592 downloads, 182 likes. Open source model."
+    }
+  ]
+}

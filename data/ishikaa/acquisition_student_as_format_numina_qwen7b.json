@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_AS_format_numina_qwen7b",
+  "slug": "ishikaa-acquisition_student_as_format_numina_qwen7b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_AS_format_numina_qwen7b",
+  "created_at": "2026-08-21T04:29:17.000Z",
+  "updated_at": "2026-08-31T08:06:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1425,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 105540330064,
+  "storage_human": "105.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ishikaa/acquisition_student_AS_format_numina_qwen7b · Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_AS_format_numina_qwen7b",
+      "snippet": "Instructions to use ishikaa/acquisition_student_AS_format_numina_qwen7b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ishikaa/acquisition_student_AS_format_numina_qwen7b at main",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_AS_format_numina_qwen7b/tree/main",
+      "snippet": "Instructions to use ishikaa/acquisition_student_AS_format_numina_qwen7b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "acquisition_student_AS_format_numina_qwen7b - friendli.ai",
+      "url": "https://friendli.ai/models/ishikaa/acquisition_student_AS_format_numina_qwen7b",
+      "snippet": "Deploy acquisition_student_AS_format_numina_qwen7b with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Acquisition Student As Format Numina Qwen7b - AI Model Insights ...",
+      "url": "https://free2aitools.com/model/ishikaa/acquisition_student_as_format_numina_qwen7b",
+      "snippet": "Registry entry for model Acquisition Student As Format Numina Qwen7b; source metadata pending."
+    },
+    {
+      "title": "Acquisition Student As Answer Variance Numina Qwen7b - AI Model ...",
+      "url": "https://free2aitools.com/model/ishikaa/acquisition_student_as_answer_variance_numina_qwen7b",
+      "snippet": "Registry entry for model Acquisition Student As Answer Variance Numina Qwen7b; source metadata pending."
+    }
+  ]
+}

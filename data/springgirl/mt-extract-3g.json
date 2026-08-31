@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "springgirl/mt-extract-3g",
+  "slug": "springgirl-mt-extract-3g",
+  "author": "springgirl",
+  "url": "https://huggingface.co/springgirl/mt-extract-3g",
+  "created_at": "2026-08-29T21:54:17.000Z",
+  "updated_at": "2026-08-31T08:34:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 375816704,
+  "parameters_human": "375.8M",
+  "storage_bytes": 566778176,
+  "storage_human": "567 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "springgirl (Spring Girl) - Hugging Face",
+      "url": "https://huggingface.co/springgirl",
+      "snippet": "User profile of Spring Girl on Hugging Face"
+    },
+    {
+      "title": "springgirl (Spring Girl) - Hugging Face",
+      "url": "https://huggingface.co/springgirl/models",
+      "snippet": "springgirl&#x27;s models1 Sort: Recently updated springgirl/co252 Updated about 1 hour ago"
+    },
+    {
+      "title": "AI Girl Generator (Create Your Own Free Custom AI Girlfriend)",
+      "url": "https://heygf.ai/ai-girl-generator",
+      "snippet": "Build your own custom AI girl with HeyGF AI. Pick her face, body, voice, personality, and backstory. Free signup, no credit card."
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Turn any photo or text prompt into a 3D model with local AI. Export as GLB, OBJ, STL or PLY. Free, open source, runs entirely on your GPU — no cloud, no account."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

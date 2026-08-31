@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Llama-3.1-8B-Instruct-Uncensored-Complete-i1-GGUF",
+  "slug": "mradermacher-llama-3-1-8b-instruct-uncensored-complete-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-3.1-8B-Instruct-Uncensored-Complete-i1-GGUF",
+  "created_at": "2026-08-31T09:27:38.000Z",
+  "updated_at": "2026-08-31T09:32:07.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "jblaze",
+    "representation-engineering",
+    "abliteration",
+    "llama",
+    "llama3",
+    "en",
+    "base_model:ApolloRaines/Llama-3.1-8B-Instruct-Uncensored-Complete",
+    "base_model:quantized:ApolloRaines/Llama-3.1-8B-Instruct-Uncensored-Complete",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 3184152640,
+  "storage_human": "3.2 GB",
+  "base_model": "ApolloRaines/Llama-3.1-8B-Instruct-Uncensored-Complete",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama-3.1-8B-Instruct-Uncensored-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Llama-3.1-8B-Instruct-Uncensored-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Llama-3.1-8B-Instruct-Uncensored-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Llama-3.1-8B-Instruct-Uncensored-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Llama-3.1-8B-Instruct-Uncensored-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "llama-3.1-8b-instruct-gguf/README.md at main - GitHub",
+      "url": "https://github.com/inferless/Llama-3.1-8B-Instruct-GGUF/blob/main/README.md",
+      "snippet": "Meta-Llama-3.1-8B-Instruct-GGUF model is part of Meta&#x27;s advanced suite of multilingual large language models. This 8B Instruct model has been fine-tuned using supervised fine-tuning (SFT) and reinforced through reinforcement learning with human feedback (RLHF). This combination of methodologies ensures that the model not only performs with high accuracy but also aligns closely with human ..."
+    },
+    {
+      "title": "GitHub - inferless/llama-3.1-8b-instruct-gguf: An 8B-parameter ...",
+      "url": "https://github.com/inferless/Llama-3.1-8B-Instruct-GGUF",
+      "snippet": "Meta-Llama-3.1-8B-Instruct-GGUF model is part of Meta&#x27;s advanced suite of multilingual large language models. This 8B Instruct model has been fine-tuned using supervised fine-tuning (SFT) and reinforced through reinforcement learning with human feedback (RLHF). This combination of methodologies ensures that the model not only performs with high accuracy but also aligns closely with human ..."
+    },
+    {
+      "title": "DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/QuantFactory/DarkIdol-Llama-3.1-8B-Instruct-1.2-Uncensored-GGUF",
+      "snippet": "GGUF PyTorch License: llama3.1 English, German, French and 8 more roleplay, llama3, sillytavern and 7 more Text Generation"
+    }
+  ]
+}

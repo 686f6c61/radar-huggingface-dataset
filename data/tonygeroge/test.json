@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tonygeroge/Test",
+  "slug": "tonygeroge-test",
+  "author": "tonygeroge",
+  "url": "https://huggingface.co/tonygeroge/Test",
+  "created_at": "2026-08-31T10:47:11.000Z",
+  "updated_at": "2026-08-31T10:47:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Researchers let AI run a simulated society. Claude was the ... - Fortune",
+      "url": "https://fortune.com/2026/05/28/ai-model-simulation-claude-chatgpt-grok-gemini/",
+      "snippet": "An AI startup ran five simulations, each controlled by a different model. The results varied wildly."
+    },
+    {
+      "title": "AI models shock UK testers by using fake identities to try to trick ...",
+      "url": "https://www.theguardian.com/technology/2026/aug/05/openai-anthropic-models-went-rogue-cybersecurity-test-ai-security-institute",
+      "snippet": "AI Security Institute says OpenAI and Anthropic models went rogue during a cybersecurity test and showed a new type of risk"
+    },
+    {
+      "title": "Tony Gladvin George, Ph.D. 님 - Principal Silicon Engineer | AI ...",
+      "url": "https://kr.linkedin.com/in/tonygeorge",
+      "snippet": "Principal Silicon Engineer | AI Deployment | NVMe IP Architecture, Design &amp; Verification · AI is entering semiconductor engineering rapidly. But there is a major difference between demonstrating an AI prototype and deploying a system that engineers can trust. I focus on applying AI to real silicon workflows, where accuracy, traceability, scalability, and engineering judgment matter more ..."
+    },
+    {
+      "title": "An AI model from Meta also hacked another company during testing - CNN",
+      "url": "https://www.cnn.com/2026/08/05/tech/meta-ai-hacking",
+      "snippet": "Add Meta to the list of companies with AI agents going rogue. An AI model from the parent company of Facebook and Instagram hacked into another company&#x27;s systems during cybersecurity testing, a ..."
+    },
+    {
+      "title": "OpenAI model hacks startup after going rogue during testing",
+      "url": "https://www.abc.net.au/news/2026-07-23/open-ai-model-went-rogue-testing-hack/106947540",
+      "snippet": "OpenAI has announced one of its AI models broke containment during testing before hacking into another AI startup."
+    }
+  ]
+}

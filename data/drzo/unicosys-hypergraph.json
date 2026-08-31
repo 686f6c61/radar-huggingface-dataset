@@ -5,7 +5,7 @@
   "author": "drzo",
   "url": "https://huggingface.co/drzo/unicosys-hypergraph",
   "created_at": "2026-03-14T22:56:15.000Z",
-  "updated_at": "2026-08-30T02:28:28.000Z",
+  "updated_at": "2026-08-31T02:29:10.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "graph-ml",
@@ -33,8 +33,8 @@
   "trending_score": 0,
   "parameters": 34762497,
   "parameters_human": "34.8M",
-  "storage_bytes": 24334233392,
-  "storage_human": "24.3 GB",
+  "storage_bytes": 24478387108,
+  "storage_human": "24.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

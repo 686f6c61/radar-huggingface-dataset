@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "hems-1-1/e2-disaster-classifier",
+  "slug": "hems-1-1-e2-disaster-classifier",
+  "author": "hems-1-1",
+  "url": "https://huggingface.co/hems-1-1/e2-disaster-classifier",
+  "created_at": "2026-08-31T08:45:06.000Z",
+  "updated_at": "2026-08-31T10:07:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 4017678345,
+  "storage_human": "4.0 GB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Boredooms/Disaster-Classification-Model",
+      "url": "https://github.com/Boredooms/Disaster-Classification-Model",
+      "snippet": "AI Disaster Classification Model Overview This project provides a web-based solution for classifying images of natural disasters. It utilizes a deep learning model built with TensorFlow and Keras to categorize images into four distinct classes: Cyclone, Earthquake, Flood, and Wildfire."
+    },
+    {
+      "title": "VIJAYANANDANJM/Disaster_Tweets_MultiClass_Classifier - GitHub",
+      "url": "https://github.com/VIJAYANANDANJM/Disaster_Tweets_MultiClass_Classifier",
+      "snippet": "Our Solution This system classifies disaster tweets into 5 specific humanitarian categories, provides explainable AI so users understand why the model made each decision, extracts actionable intelligence (locations, people counts, resource needs), and aggregates this data geospatially to give a location-level situation overview."
+    },
+    {
+      "title": "GautamR/disaster_classifier · Hugging Face",
+      "url": "https://huggingface.co/GautamR/disaster_classifier",
+      "snippet": "GautamR/disaster_classification English bert Inference Endpoints License: mit Model card Files Community Train Deploy Use in Transformers"
+    },
+    {
+      "title": "tensorboy/disaster_classifier_1 · Hugging Face",
+      "url": "https://huggingface.co/tensorboy/disaster_classifier_1",
+      "snippet": "Edit model card Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and Limitations Recommendations How to Get Started with the Model Training Details Training Data Training Procedure Evaluation Testing Data, Factors & Metrics Results Model ..."
+    },
+    {
+      "title": "Explainable artificial intelligence in disaster risk management ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2212420923006039",
+      "snippet": "Disasters can have devastating impacts on communities and economies, underscoring the urgent need for effective strategic disaster risk management (DRM). Although Artificial Intelligence (AI) holds the potential to enhance DRM through improved decision-making processes, its inherent complexity and \"black box\" nature have led to a growing demand for Explainable AI (XAI) techniques. These ..."
+    }
+  ]
+}

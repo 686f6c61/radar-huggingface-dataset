@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/vam-cross-level2-kuka-iiwa14-widowx-texture-video-lora-iter-400",
+  "slug": "dreamdifferent-vam-cross-level2-kuka-iiwa14-widowx-texture-video-lora-iter-400",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/vam-cross-level2-kuka-iiwa14-widowx-texture-video-lora-iter-400",
+  "created_at": "2026-08-31T09:16:30.000Z",
+  "updated_at": "2026-08-31T09:17:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "video-generation",
+    "lora",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3707437850,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vam-cross-level2-kuka-iiwa14-widowx-texture-video-lora-iter-200",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level2-kuka-iiwa14-widowx-texture-video-lora-iter-200",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vam-cross-level4-kuka-iiwa14-widowx-texture-video-lora-iter400",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture-video-lora-iter400",
+      "snippet": "This is an adapter checkpoint, not a standalone fused model. Load the exact initial Video2World backbone above first and then apply this LoRA checkpoint. For fused_video2world_dit, the initial checkpoint already includes the earlier WidowX/Bridge LoRA fusion; loading the original Bridge backbone instead would be incorrect."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "mujoco_menagerie/kuka_iiwa_14/README.md at main - GitHub",
+      "url": "https://github.com/google-deepmind/mujoco_menagerie/blob/main/kuka_iiwa_14/README.md",
+      "snippet": "This package contains a simplified robot description (MJCF) of the LBR iiwa 14kg developed by KUKA Robotics. It is derived from the publicly available URDF description created by the Drake developers."
+    }
+  ]
+}

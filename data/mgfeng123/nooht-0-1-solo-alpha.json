@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MGFeng123/Nooht-0.1-Solo-Alpha",
+  "slug": "mgfeng123-nooht-0-1-solo-alpha",
+  "author": "MGFeng123",
+  "url": "https://huggingface.co/MGFeng123/Nooht-0.1-Solo-Alpha",
+  "created_at": "2026-08-31T02:17:21.000Z",
+  "updated_at": "2026-08-31T02:17:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MGFeng123/Nooht · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/MGFeng123/Nooht",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MGFeng123 (MGFeng) - Hugging Face",
+      "url": "https://huggingface.co/MGFeng123/models",
+      "snippet": "Recent Activity published a datasetabout 14 hours ago MGFeng123/Nooht published a bucketabout 14 hours ago MGFeng123/Nooht View all activity"
+    },
+    {
+      "title": "GitHub - MG-feng/Nooht-by-MG: The AI Frame · GitHub",
+      "url": "https://github.com/MG-feng/Nooht-by-MG/tree/main",
+      "snippet": "Nooht is a cognitive infrastructure layer that sits between any language model and the code it needs to understand. Unlike traditional approaches that rely on ever-larger context windows or parameter counts, Nooht builds an external, structured memory system specifically designed for code comprehension."
+    },
+    {
+      "title": "Nooht-by-MG/api-document/ARCHITECTURE.md at main - GitHub",
+      "url": "https://github.com/MG-feng/Nooht-by-MG/blob/main/api-document/ARCHITECTURE.md",
+      "snippet": "The AI Frame. Contribute to MG-feng/Nooht-by-MG development by creating an account on GitHub."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    }
+  ]
+}

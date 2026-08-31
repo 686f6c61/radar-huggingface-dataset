@@ -5,7 +5,7 @@
   "author": "kerasformers",
   "url": "https://huggingface.co/kerasformers/mobilenetv4_hybrid_medium_e500_r224_in1k",
   "created_at": "2026-08-22T07:18:06.000Z",
-  "updated_at": "2026-08-26T21:54:44.000Z",
+  "updated_at": "2026-08-30T06:21:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",

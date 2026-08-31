@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/DualMind-TKD-Agentic-1.7B-GGUF",
   "created_at": "2026-07-18T09:08:57.000Z",
-  "updated_at": "2026-08-29T13:15:36.000Z",
+  "updated_at": "2026-08-30T14:35:19.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 2196,
+  "downloads_30d": 2238,
   "trending_score": 0,
   "parameters": 1720574976,
   "parameters_human": "1.72B",

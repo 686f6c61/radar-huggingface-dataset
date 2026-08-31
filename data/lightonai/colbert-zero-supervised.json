@@ -1,0 +1,384 @@
+{
+  "schema": 1,
+  "id": "lightonai/ColBERT-Zero-supervised",
+  "slug": "lightonai-colbert-zero-supervised",
+  "author": "lightonai",
+  "url": "https://huggingface.co/lightonai/ColBERT-Zero-supervised",
+  "created_at": "2026-02-19T09:59:24.000Z",
+  "updated_at": "2026-08-31T08:15:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "PyLate",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "PyLate",
+    "safetensors",
+    "modernbert",
+    "ColBERT",
+    "multi-vector",
+    "sentence-transformers",
+    "sentence-similarity",
+    "embeddings",
+    "retrieval",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:1695819",
+    "loss:Contrastive",
+    "en",
+    "arxiv:2602.16609",
+    "arxiv:2402.01613",
+    "arxiv:1908.10084",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:eu"
+  ],
+  "likes": 3,
+  "downloads_30d": 105,
+  "trending_score": 0,
+  "parameters": 149015808,
+  "parameters_human": "149.0M",
+  "storage_bytes": 596469584,
+  "storage_human": "596 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Accuracy@1",
+      "value": 0.4
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Accuracy@3",
+      "value": 0.72
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Accuracy@5",
+      "value": 0.78
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Accuracy@10",
+      "value": 0.82
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Precision@1",
+      "value": 0.4
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Precision@3",
+      "value": 0.27999999999999997
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Precision@5",
+      "value": 0.22799999999999998
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Precision@10",
+      "value": 0.136
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Recall@1",
+      "value": 0.21
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Recall@3",
+      "value": 0.354
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Recall@5",
+      "value": 0.45233333333333325
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Recall@10",
+      "value": 0.5206666666666666
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Ndcg@10",
+      "value": 0.4514887961500233
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Mrr@10",
+      "value": 0.5562222222222222
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoClimateFEVER",
+      "metric": "Maxsim Map@100",
+      "value": 0.3643427668365801
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Accuracy@1",
+      "value": 0.86
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Accuracy@3",
+      "value": 0.92
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Accuracy@5",
+      "value": 0.94
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Accuracy@10",
+      "value": 0.98
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Precision@1",
+      "value": 0.86
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Precision@3",
+      "value": 0.7466666666666666
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Precision@5",
+      "value": 0.6759999999999999
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Precision@10",
+      "value": 0.5479999999999999
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Recall@1",
+      "value": 0.08846615829253066
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Recall@3",
+      "value": 0.20352235754240022
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Recall@5",
+      "value": 0.28080404994618857
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Recall@10",
+      "value": 0.3875197843569049
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Ndcg@10",
+      "value": 0.6936234029751825
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Mrr@10",
+      "value": 0.8995555555555554
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoDBPedia",
+      "metric": "Maxsim Map@100",
+      "value": 0.5440933872669533
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Accuracy@1",
+      "value": 0.88
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Accuracy@3",
+      "value": 0.96
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Accuracy@5",
+      "value": 0.98
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Accuracy@10",
+      "value": 1
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Precision@1",
+      "value": 0.88
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Precision@3",
+      "value": 0.32666666666666666
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Precision@5",
+      "value": 0.204
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Precision@10",
+      "value": 0.10799999999999998
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Recall@1",
+      "value": 0.8366666666666667
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Recall@3",
+      "value": 0.9166666666666667
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Recall@5",
+      "value": 0.9433333333333332
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Recall@10",
+      "value": 0.9733333333333333
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Ndcg@10",
+      "value": 0.9221436688090443
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Mrr@10",
+      "value": 0.9283333333333332
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFEVER",
+      "metric": "Maxsim Map@100",
+      "value": 0.8936357786357787
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFiQA2018",
+      "metric": "Maxsim Accuracy@1",
+      "value": 0.5
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFiQA2018",
+      "metric": "Maxsim Accuracy@3",
+      "value": 0.66
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFiQA2018",
+      "metric": "Maxsim Accuracy@5",
+      "value": 0.72
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFiQA2018",
+      "metric": "Maxsim Accuracy@10",
+      "value": 0.84
+    },
+    {
+      "task": "Py Late Information Retrieval",
+      "dataset": "NanoFiQA2018",
+      "metric": "Maxsim Precision@1",
+      "value": 0.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "lightonai/ColBERT-Zero-supervised · Hugging Face",
+      "url": "https://huggingface.co/lightonai/ColBERT-Zero-supervised",
+      "snippet": "ColBERT-Zero 🎯 TL;DR: First large-scale fully pre-trained ColBERT model using only public data. Achieves 55.43 nDCG@10 on BEIR benchmark, outperforming GTE-ModernColBERT and GTE-ModernBERT trained on closed and stronger data. New SOTA on BEIR for models <150M parameters. Why ColBERT-Zero? Late interaction (ColBERT / multi-vector) models have clear advantages in out-of-domain generalization ..."
+    },
+    {
+      "title": "lightonai/ColBERT-Zero-supervised-noprompts · Hugging Face",
+      "url": "https://huggingface.co/lightonai/ColBERT-Zero-supervised-noprompts",
+      "snippet": "ColBERT-Zero 🎯 TL;DR: First large-scale fully pre-trained ColBERT model using only public data. Achieves 55.43 nDCG@10 on BEIR benchmark, outperforming GTE-ModernColBERT and GTE-ModernBERT trained on closed and stronger data. New SOTA on BEIR for models <150M parameters. Why ColBERT-Zero? Late interaction (ColBERT / multi-vector) models have clear advantages in out-of-domain generalization ..."
+    },
+    {
+      "title": "ColBERT-Zero-supervised · MTEB Leaderboard",
+      "url": "https://leaderboard.mteb.org/models/lightonai/ColBERT-Zero-supervised",
+      "snippet": "lightonai/ColBERT-Zero-unsupervised Trained on COIRCodeSearchNetRetrievalCodeSearchNetCCRetrievalCodeSearchNetRetrievalFEVERFEVERHardNegatives.v2HotpotQAHotpotQAHardNegatives.v2MSMARCO+9 moreShow fewerMSMARCOHardNegativesMSMARCOv2NQNQHardNegativesNanoFEVERRetrievalNanoHotpotQARetrievalNanoMSMARCORetrievalNanoNQRetrievalQuoraRetrieval Cite this ..."
+    },
+    {
+      "title": "lightonai/ColBERT-Zero-supervised at main",
+      "url": "https://hf-p-cfw.fyan.top/lightonai/ColBERT-Zero-supervised/tree/main",
+      "snippet": "Instructions to use lightonai/ColBERT-Zero-supervised with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sentence-transformers How to use lightonai/ColBERT-Zero-supervised with sentence-transformers:"
+    },
+    {
+      "title": "Colbert Zero Supervised - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/lightonai/colbert-zero-supervised",
+      "snippet": "Colbert Zero Supervised by lightonai lightonai/colbert-zero-supervised Free2AITools Nexus Index 40.5 S: Semantic 50"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "CCHENZIQI/homework-video-understanding",
+  "slug": "cchenziqi-homework-video-understanding",
+  "author": "CCHENZIQI",
+  "url": "https://huggingface.co/CCHENZIQI/homework-video-understanding",
+  "created_at": "2026-08-31T10:13:36.000Z",
+  "updated_at": "2026-08-31T10:13:44.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Video Understanding (Vision) API on fal",
+      "url": "https://fal.ai/models/fal-ai/video-understanding",
+      "snippet": "A video understanding model to analyze video content and answer questions about what&#x27;s happening in the video based on user prompts."
+    },
+    {
+      "title": "Video understanding - Interactions API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/video-understanding",
+      "snippet": "Gemini models offer powerful capabilities for understanding video content by processing information from both the audio and visual streams. This lets you extract a rich set of details, including generating descriptions of what is happening in a video and answering questions about its content."
+    },
+    {
+      "title": "VideoULLM：视频理解大语言模型汇总（9篇文章） - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/688143927",
+      "snippet": "背景：快速过一下视频理解大语言模型的方法 最近想快速过一下视频理解大语言模型的方法，所以在 Video Understanding with Large Language Models: A Survey 中选择一些有典型特征的 paper，借助于 Claude3 快速了解一下这些 paper 的主要 idea。筛选了有代表性的 9篇文章（详情见目录），过了一下主要方法 筛选的 ..."
+    },
+    {
+      "title": "Video-MME-v2: Towards the Next Stage in Benchmarks for Comprehensive ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/video-mme-v2-towards-next-stage-benchmarks",
+      "snippet": "Why this matters right now Video understanding is rapidly becoming a critical capability for AI systems. YouTube, surveillance footage, scientific videos, educational content, and training videos represent enormous amounts of information encoded in video format. Models need to understand it."
+    },
+    {
+      "title": "14 Best Video Understanding Models in 2026 | UsefulAI",
+      "url": "https://usefulai.com/models/video-understanding",
+      "snippet": "Compare the best video understanding models in 2026 for long-video analysis, audio-aware reasoning, and search, from local use to production APIs."
+    }
+  ]
+}

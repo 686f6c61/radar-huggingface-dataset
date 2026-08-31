@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "schneid-erstefan/clip-generation",
+  "slug": "schneid-erstefan-clip-generation",
+  "author": "schneid-erstefan",
+  "url": "https://huggingface.co/schneid-erstefan/clip-generation",
+  "created_at": "2026-08-31T01:53:16.000Z",
+  "updated_at": "2026-08-31T01:53:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "schneid-erstefan/clip-generation · Hugging Face",
+      "url": "https://huggingface.co/schneid-erstefan/clip-generation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CLIP · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/clip",
+      "snippet": "CLIP CLIP is a multimodal vision and language model motivated by overcoming the fixed number of object categories when training a computer vision model. CLIP learns about images directly from raw text by jointly training on 400M (image, text) pairs. Pretraining on this scale enables zero-shot transfer to downstream tasks. CLIP uses an image encoder and text encoder to get visual features and ..."
+    },
+    {
+      "title": "Best AI for Video Generation in 2026 — Ranked by Blind Human Votes",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-video-generation",
+      "snippet": "The best AI for video generation in 2026, ranked by blind human votes. Compare top text-to-video, image-to-video, and video-editing models — with live arena scores, per-clip pricing, and side-by-side examples from Veo, Sora, Runway, Kling, Luma, and more."
+    },
+    {
+      "title": "video-generation · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/video-generation",
+      "snippet": "Toonflow is an open-source AI tool that turns stories and scripts into animated short dramas. Features AI scriptwriting, storyboarding, character and video generation."
+    },
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    }
+  ]
+}

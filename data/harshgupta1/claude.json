@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "harshgupta1/Claude",
+  "slug": "harshgupta1-claude",
+  "author": "harshgupta1",
+  "url": "https://huggingface.co/harshgupta1/Claude",
+  "created_at": "2026-08-31T08:16:13.000Z",
+  "updated_at": "2026-08-31T08:16:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "harsh-gupta-portfolio/CLAUDE.md at main - GitHub",
+      "url": "https://github.com/The-inspiringHarsh/harsh-gupta-portfolio/blob/main/CLAUDE.md",
+      "snippet": "Personal portfolio website of Harsh Gupta, showcasing my projects, technical skills, education, leadership experience, certifications, and journey as a Full-Stack and AI/ML Developer. - The-inspiri..."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "Optimize Claude Model Selection for Faster Results",
+      "url": "https://www.linkedin.com/posts/harsh-gupta-462866205_promptengineering-aiproductivity-claude-activity-7481374349355012097-S_VZ",
+      "snippet": "Stop overpaying for \"genius\" when \"good enough\" ships faster. Here&#x27;s my playbook for picking the right Claude model without guesswork: - Triage by risk, not hype: routine, low-risk tasks ..."
+    },
+    {
+      "title": "Designing an AI Workflow with Claude - LinkedIn",
+      "url": "https://www.linkedin.com/posts/harsh-gupta-462866205_claude-aiworkflow-productivity-activity-7485904060315770882-3bGd",
+      "snippet": "Most teams don&#x27;t have a prompt problem—they have a process problem. If you want Claude to work like a colleague, design an operating system for it: - Start every Project with a one‑page ..."
+    },
+    {
+      "title": "Claude: This AI Model \"Was Ready To Kill Someone\" When Told It Would Be ...",
+      "url": "https://www.ndtv.com/world-news/claude-this-ai-model-was-ready-to-kill-someone-when-told-it-would-be-shut-down-10997972",
+      "snippet": "Anthropic&#x27;s advanced AI model, Claude, went rogue when placed under external simulation pressure, even threatening blackmail and planning the murder of an engineer who wanted to shut it down."
+    }
+  ]
+}

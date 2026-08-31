@@ -5,7 +5,7 @@
   "author": "ajrayman",
   "url": "https://huggingface.co/ajrayman/machiavellianism_continuous",
   "created_at": "2024-08-02T18:28:10.000Z",
-  "updated_at": "2026-08-30T08:24:17.000Z",
+  "updated_at": "2026-08-30T15:07:11.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -20,6 +20,7 @@
     "base_model:FacebookAI/roberta-base",
     "base_model:finetune:FacebookAI/roberta-base",
     "license:mit",
+    "text-embeddings-inference",
     "endpoints_compatible",
     "region:us"
   ],

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ananthu-aniraj/ifam-waterbirds-k8",
+  "slug": "ananthu-aniraj-ifam-waterbirds-k8",
+  "author": "ananthu-aniraj",
+  "url": "https://huggingface.co/ananthu-aniraj/ifam-waterbirds-k8",
+  "created_at": "2026-08-31T10:14:20.000Z",
+  "updated_at": "2026-08-31T10:22:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "generic",
+  "languages": [],
+  "tags": [
+    "generic",
+    "safetensors",
+    "pytorch",
+    "image-classification",
+    "robust-representation",
+    "modular-ai",
+    "dynamic-masking",
+    "dinov2",
+    "ifam",
+    "arxiv:2506.08915",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 173189381,
+  "parameters_human": "173.2M",
+  "storage_bytes": 692793420,
+  "storage_human": "693 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ifam/data_sets/waterbirds_dataset.py at main · ananthu-aniraj/ifam",
+      "url": "https://github.com/ananthu-aniraj/ifam/blob/main/data_sets/waterbirds_dataset.py",
+      "snippet": "75 lines (65 loc) · 2.99 KB main ifam / data_sets / waterbirds_dataset.py Code Blame 75 lines (65 loc) · 2.99 KB Raw 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 ..."
+    },
+    {
+      "title": "Ananthu Aniraj",
+      "url": "https://ananthu-aniraj.github.io/",
+      "snippet": "The explicit nature of the semantic masks also makes the model&#x27;s reasoning auditable, enabling powerful test-time interventions to further enhance robustness. Extensive experiments across diverse benchmarks demonstrate that this approach significantly improves robustness against spurious correlations and out-of-distribution backgrounds."
+    },
+    {
+      "title": "ifam/data_sets at main · ananthu-aniraj/ifam · GitHub",
+      "url": "https://github.com/ananthu-aniraj/ifam/tree/main/data_sets",
+      "snippet": "[ICPR 2026] Implementation of paper \"Two-stage Vision Transformers and Hard Masking offer Robust Object Representations\" - ifam/data_sets at main · ananthu-aniraj/ifam"
+    },
+    {
+      "title": "Inherently Faithful Attention Maps for Vision Transformers",
+      "url": "https://arxiv.org/abs/2506.08915v3",
+      "snippet": "We introduce an attention-based method that uses learned binary attention masks to ensure that only attended image regions influence the prediction. Context can strongly affect object perception, sometimes leading to biased representations, particularly when objects appear in out-of-distribution backgrounds. At the same time, many image-level object-centric tasks require identifying relevant ..."
+    },
+    {
+      "title": "ananthu-aniraj (Ananthu Aniraj) - Hugging Face",
+      "url": "https://huggingface.co/ananthu-aniraj/models",
+      "snippet": "ananthu-aniraj Follow 0 followers · 2 following https://ananthu-aniraj.github.io/ ananthu-aniraj"
+    }
+  ]
+}

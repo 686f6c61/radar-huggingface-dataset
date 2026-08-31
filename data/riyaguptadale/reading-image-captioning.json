@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "riyaguptadale/reading-image-captioning",
+  "slug": "riyaguptadale-reading-image-captioning",
+  "author": "riyaguptadale",
+  "url": "https://huggingface.co/riyaguptadale/reading-image-captioning",
+  "created_at": "2026-08-31T09:54:41.000Z",
+  "updated_at": "2026-08-31T09:54:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Create Image Captioning Models | Google Skills",
+      "url": "https://www.skills.google/course_templates/542",
+      "snippet": "This course teaches you how to create an image captioning model by using deep learning. You learn about the different components of an image captioning model, such as the encoder and decoder, and how to train and evaluate your model."
+    },
+    {
+      "title": "Conceptual Captions - Google AI",
+      "url": "https://ai.google.com/research/ConceptualCaptions/",
+      "snippet": "Automatic image captioning, the task of automatically producing a natural-language description for an image, has the potential to assist those with visual impairments by explaining images using text-to-speech systems. However, accurate image captioning is a challenging task that requires aligning, exploiting, and pushing further the latest improvements at the intersection of computer vision ..."
+    },
+    {
+      "title": "Image Captioning Evaluation in the Age of Multimodal LLMs: Challenges ...",
+      "url": "https://arxiv.org/abs/2503.14604",
+      "snippet": "The evaluation of machine-generated image captions is a complex and evolving challenge. With the advent of Multimodal Large Language Models (MLLMs), image captioning has become a core task, increasing the need for robust and reliable evaluation metrics. This survey provides a comprehensive overview of advancements in image captioning evaluation, analyzing the evolution, strengths, and ..."
+    },
+    {
+      "title": "What is Image-to-Text? - Hugging Face",
+      "url": "https://huggingface.co/tasks/image-to-text",
+      "snippet": "Learn about Image-to-Text using Machine Learning"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=image-captioning",
+      "snippet": "Explore machine learning models. Leon1000/Qwen2.5-VL-7B-NSFW-Caption-V3-ComfyUI"
+    }
+  ]
+}

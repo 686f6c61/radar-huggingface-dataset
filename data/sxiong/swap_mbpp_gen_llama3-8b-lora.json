@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "sxiong/SWAP_MBPP_Gen_Llama3-8B-LoRA",
+  "slug": "sxiong-swap_mbpp_gen_llama3-8b-lora",
+  "author": "sxiong",
+  "url": "https://huggingface.co/sxiong/SWAP_MBPP_Gen_Llama3-8B-LoRA",
+  "created_at": "2026-08-31T09:04:19.000Z",
+  "updated_at": "2026-08-31T09:04:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reasoning",
+    "code",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:sxiong/SWAP",
+    "arxiv:2108.07732",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:adapter:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042201,
+  "storage_human": "185 MB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sxiong/SWAP_GSM8K_Gen_Llama3-8B-LoRA · Hugging Face",
+      "url": "https://huggingface.co/sxiong/SWAP_GSM8K_Gen_Llama3-8B-LoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sxiong/SWAP_v2_MATH_Gen_Llama3-8B-LoRA · Hugging Face",
+      "url": "https://huggingface.co/sxiong/SWAP_v2_MATH_Gen_Llama3-8B-LoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    },
+    {
+      "title": "SWAP_GSM8K_Gen_Llama3-8B-LoRA - friendli.ai",
+      "url": "https://friendli.ai/models/sxiong/SWAP_GSM8K_Gen_Llama3-8B-LoRA",
+      "snippet": "Run SWAP_GSM8K_Gen_Llama3-8B-LoRA with FriendliAI inference. This repository contains the GSM8K generator (Llama3-8B-LoRA) trained with SWAP."
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://developer.meta.com/ai/models/llama-3/",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    }
+  ]
+}

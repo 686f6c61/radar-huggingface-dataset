@@ -5,7 +5,7 @@
   "author": "ReliquaryForge",
   "url": "https://huggingface.co/ReliquaryForge/qwen3-4b-base-dapo-v4",
   "created_at": "2026-08-18T17:50:59.000Z",
-  "updated_at": "2026-08-30T04:48:44.000Z",
+  "updated_at": "2026-08-31T05:01:38.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",
-  "storage_bytes": 3427173788730,
-  "storage_human": "3427.2 GB",
+  "storage_bytes": 3853557838970,
+  "storage_human": "3853.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

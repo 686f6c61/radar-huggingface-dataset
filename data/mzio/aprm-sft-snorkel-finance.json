@@ -5,7 +5,7 @@
   "author": "mzio",
   "url": "https://huggingface.co/mzio/aprm-sft-snorkel-finance",
   "created_at": "2026-07-30T09:27:34.000Z",
-  "updated_at": "2026-08-23T15:00:43.000Z",
+  "updated_at": "2026-08-30T18:00:47.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1454788896,
-  "storage_human": "1.5 GB",
+  "storage_bytes": 1653169200,
+  "storage_human": "1.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

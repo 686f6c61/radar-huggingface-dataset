@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mohameddalii/ocr-mt-asr-5090",
+  "slug": "mohameddalii-ocr-mt-asr-5090",
+  "author": "mohameddalii",
+  "url": "https://huggingface.co/mohameddalii/ocr-mt-asr-5090",
+  "created_at": "2026-08-31T02:15:18.000Z",
+  "updated_at": "2026-08-31T02:15:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "ocr",
+    "translation",
+    "asr",
+    "qwen3",
+    "paddleocr",
+    "cohere",
+    "rtx5090",
+    "vast",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mohameddalii/ocr-mt-asr-5090 · Hugging Face",
+      "url": "https://huggingface.co/mohameddalii/ocr-mt-asr-5090",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni."
+    },
+    {
+      "title": "OCRBench Leaderboard - llm-stats.com",
+      "url": "https://llm-stats.com/benchmarks/ocrbench",
+      "snippet": "OCRBench leaderboard — Kimi K2.5 leads 24 AI models at 0.923. OCRBench: Comprehensive evaluation benchmark for assessing Optical Character Recognition (OCR) ca…"
+    },
+    {
+      "title": "GitHub - aiptimizer/TurboOCR: TurboOCR, >200 img/s OmnidocBench ...",
+      "url": "https://github.com/aiptimizer/TurboOCR",
+      "snippet": "Whole-page OCR runs at up to 559 images/s on receipts (one RTX 5090), and full structured parsing (layout + tables + formulas) at ~20 pages/s — where VLM document parsers like PaddleOCR-VL run ~1 page/s. On forms and receipts it is accurate and 15-90× faster than classic OCR engines."
+    },
+    {
+      "title": "mohameddalii/translation-audio · Hugging Face",
+      "url": "https://huggingface.co/mohameddalii/translation-audio",
+      "snippet": "mohameddalii / translation-audio like 0 Automatic Speech Recognition whisper asr faster-whisper translation audio License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Translation — audio layer Vast.ai (RTX 5090) Layout"
+    }
+  ]
+}

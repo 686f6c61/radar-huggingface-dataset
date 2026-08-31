@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ananthu-aniraj/ifam-siim-acr-k8",
+  "slug": "ananthu-aniraj-ifam-siim-acr-k8",
+  "author": "ananthu-aniraj",
+  "url": "https://huggingface.co/ananthu-aniraj/ifam-siim-acr-k8",
+  "created_at": "2026-08-31T10:17:52.000Z",
+  "updated_at": "2026-08-31T10:23:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "generic",
+  "languages": [],
+  "tags": [
+    "generic",
+    "safetensors",
+    "pytorch",
+    "image-classification",
+    "robust-representation",
+    "modular-ai",
+    "dynamic-masking",
+    "dinov2",
+    "ifam",
+    "arxiv:2506.08915",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 173184769,
+  "parameters_human": "173.2M",
+  "storage_bytes": 692791308,
+  "storage_human": "693 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ananthu Aniraj",
+      "url": "https://ananthu-aniraj.github.io/",
+      "snippet": "The explicit nature of the semantic masks also makes the model&#x27;s reasoning auditable, enabling powerful test-time interventions to further enhance robustness. Extensive experiments across diverse benchmarks demonstrate that this approach significantly improves robustness against spurious correlations and out-of-distribution backgrounds."
+    },
+    {
+      "title": "GitHub - ananthu-aniraj/ifam: Implementation of paper \"Two-stage Vision ...",
+      "url": "https://github.com/ananthu-aniraj/ifam",
+      "snippet": "The explicit nature of the semantic masks also makes the model&#x27;s reasoning auditable, enabling powerful test-time interventions to further enhance robustness. Extensive experiments across diverse benchmarks demonstrate that this approach significantly improves robustness against spurious correlations and out-of-distribution backgrounds."
+    },
+    {
+      "title": "Ananthu Aniraj - OpenReview",
+      "url": "https://openreview.net/profile?id=~Ananthu_Aniraj1",
+      "snippet": "Promoting openness in scientific communication and the peer-review process"
+    },
+    {
+      "title": "‪Ananthu Aniraj‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=fQvQIsUAAAAJ&hl=en",
+      "snippet": "‪Post Doctoral Researcher at Inria‬ - ‪‪Cited by 34‬‬ - ‪Deep Learning‬ - ‪Computer Vision‬ - ‪Machine Learning‬"
+    },
+    {
+      "title": "Ananthu ANIRAJ | PhD Student | Master of Science - ResearchGate",
+      "url": "https://www.researchgate.net/profile/Ananthu-Aniraj",
+      "snippet": "Ananthu ANIRAJ, PhD Student of National Institute for Research in Computer Science and Control, Le Chesnay (INRIA) | Contact Ananthu ANIRAJ"
+    }
+  ]
+}

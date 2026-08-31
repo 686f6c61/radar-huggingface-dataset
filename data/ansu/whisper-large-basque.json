@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Ansu/whisper-large-basque",
+  "slug": "ansu-whisper-large-basque",
+  "author": "Ansu",
+  "url": "https://huggingface.co/Ansu/whisper-large-basque",
+  "created_at": "2026-08-27T11:12:13.000Z",
+  "updated_at": "2026-08-31T06:44:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 1609692160,
+  "parameters_human": "1.61B",
+  "storage_bytes": 38634431624,
+  "storage_human": "38.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ansu/whisper-large-v3-basque-lr1e-5 · Hugging Face",
+      "url": "https://huggingface.co/Ansu/whisper-large-v3-basque-lr1e-5",
+      "snippet": "Ansu / whisper-large-v3-basque-lr1e-5 like 0 Safetensors whisper Generated from Trainer License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new whisper-large-v3-basque-lr1e-5 Model description Intended uses & limitations Training and evaluation data Training procedure Training hyperparameters Training results ..."
+    },
+    {
+      "title": "Ansu/whisper-large-basque-lr1e-5-freezeFalse · Hugging Face",
+      "url": "https://huggingface.co/Ansu/whisper-large-basque-lr1e-5-freezeFalse",
+      "snippet": "Ansu / whisper-large-basque-lr1e-5-freezeFalse like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper [Blog] [Paper] [Model card] [Colab example] Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "Whisper Large Basque - Proyecto ILENIA",
+      "url": "https://proyectoilenia.es/en/recurso/whisper-large-basque/",
+      "snippet": "Whisper Large Basque is an automatic speech recognition (ASR) model for Basque (eu). It has been optimized from [openai/whisper-large] in the Basque version of Mozilla Common Voice 13.0, achieving a word error rate (WER) of 12.23% in the Common Voice evaluation."
+    },
+    {
+      "title": "Whisper Model Sizes: Complete Guide | OpenWhispr",
+      "url": "https://openwhispr.com/blog/whisper-model-sizes-explained",
+      "snippet": "Every Whisper model size compared: parameters, speed, accuracy, and RAM. Choose between tiny, small, large-v3, and turbo for local transcription."
+    }
+  ]
+}

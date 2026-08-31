@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Mukherjeecaj/blip-retrieval-2024",
+  "slug": "mukherjeecaj-blip-retrieval-2024",
+  "author": "Mukherjeecaj",
+  "url": "https://huggingface.co/Mukherjeecaj/blip-retrieval-2024",
+  "created_at": "2026-08-31T10:23:31.000Z",
+  "updated_at": "2026-08-31T10:23:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BLIP · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/blip",
+      "snippet": "BLIP BLIP (Bootstrapped Language-Image Pretraining) is a vision-language pretraining (VLP) framework designed for both understanding and generation tasks. Most existing pretrained models are only good at one or the other. It uses a captioner to generate captions and a filter to remove the noisy captions. This increases training data quality and more effectively uses the messy web data."
+    },
+    {
+      "title": "The Surprising Effectiveness of Multimodal Large Language Models for ...",
+      "url": "https://arxiv.org/html/2406.18113v3",
+      "snippet": "In this work, we develop Mr. BLIP, an image-text pretrained, multimodal large language model based on BLIP-2 [36] and a novel multi-modal input sequence. The model design is capable of interpreting video data, and leverages interleaved temporal grounding of the input video signal (in the form of time-stamps) to enhance its predictions."
+    },
+    {
+      "title": "Understanding BLIP : A Huggingface Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/",
+      "snippet": "BLIP (Bootstrapping Language-Image Pre-training) is a multimodal AI model that combines computer vision and natural language processing to understand both images and text together. It is trained on large-scale image-text pairs, enabling strong performance in vision-language tasks."
+    },
+    {
+      "title": "[2410.14154] RA-BLIP: Multimodal Adaptive Retrieval-Augmented ...",
+      "url": "https://arxiv.org/abs/2410.14154",
+      "snippet": "Retrieval augmentation techniques have proven to be effective plugins for both LLMs and MLLMs. In this study, we propose multimodal adaptive Retrieval-Augmented Bootstrapping Language-Image Pre-training (RA-BLIP), a novel retrieval-augmented framework for various MLLMs."
+    },
+    {
+      "title": "GitHub - salesforce/BLIP: PyTorch code for BLIP: Bootstrapping Language ...",
+      "url": "https://github.com/salesforce/BLIP",
+      "snippet": "BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation Announcement: BLIP is now officially integrated into LAVIS - a one-stop library for language-and-vision research and applications! This is the PyTorch code of the BLIP paper [blog]. The code has been tested on PyTorch 1.10."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "nurida-senior",
   "url": "https://huggingface.co/nurida-senior/my-comfyui-models",
   "created_at": "2026-07-27T02:37:46.000Z",
-  "updated_at": "2026-08-30T01:32:41.000Z",
+  "updated_at": "2026-08-30T11:08:35.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
-  "storage_bytes": 868818248528,
-  "storage_human": "868.8 GB",
+  "storage_bytes": 869046836328,
+  "storage_human": "869.0 GB",
   "base_model": null,
   "formats": [
     "gguf"

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cattonpm/PlanckGPT-v0.10.0",
+  "slug": "cattonpm-planckgpt-v0-10-0",
+  "author": "cattonpm",
+  "url": "https://huggingface.co/cattonpm/PlanckGPT-v0.10.0",
+  "created_at": "2026-08-31T07:40:03.000Z",
+  "updated_at": "2026-08-31T08:08:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1465270276,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Planck.AI.Models.OpenAI — Planck.AI v0.1.0 - hexdocs.pm",
+      "url": "https://hexdocs.pm/planck_ai/Planck.AI.Models.OpenAI.html",
+      "snippet": "Model catalog for OpenAI&#x27;s GPT family, sourced from LLMDB. Requires the OPENAI_API_KEY environment variable (or pass api_key: in opts)."
+    },
+    {
+      "title": "GitHub - nguyenphuminh/planckgpt: Train a GPT from scratch on your ...",
+      "url": "https://github.com/nguyenphuminh/planckgpt",
+      "snippet": "PlanckGPT (planck length reference :D) is my attempt to make a tiny language model from scratch mostly for fun and educational purposes, but also to see how far a consumer-level computer can go in AI development from scratch. It has about 206m parameters and is pretrained on roughly 2 billion tokens of the Fineweb-edu dataset. This is small compared to modern LLMs&#x27; standards, and it only does ..."
+    },
+    {
+      "title": "Releases · nguyenphuminh/planckgpt · GitHub",
+      "url": "https://github.com/nguyenphuminh/planckgpt/releases",
+      "snippet": "Train a GPT from scratch on your laptop. Contribute to nguyenphuminh/planckgpt development by creating an account on GitHub."
+    },
+    {
+      "title": "Planck.AI — Planck.AI v0.1.4",
+      "url": "https://hexdocs.pm/planck_ai/0.1.4/readme.html",
+      "snippet": "planck_ai is a typed LLM provider abstraction for Elixir, built on top of req_llm. It gives you a single, consistent interface for streaming and completing requests across Anthropic, OpenAI, Google Gemini, Ollama, and llama.cpp — without leaking provider-specific details into your application."
+    },
+    {
+      "title": "Deploy model GPT-OSS by using vLLM v0.10.0 | AI Factory Documentation",
+      "url": "https://ai-docs.fptcloud.com/fpt-gpu-cloud/gpu-container/use-cases/deploy-model-gpt-oss-by-using-vllm-v0.10.0",
+      "snippet": "The smaller model Only requires about 16GB of VRAM. openai/gpt-oss-120b: recommend for production, general-purpose, high-reasoning use cases Our larger full-sized model Best with ≥60GB VRAM Can fit on a single H100 or multi-GPU setups."
+    }
+  ]
+}

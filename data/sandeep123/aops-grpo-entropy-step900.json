@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sandeep123/aops-grpo-entropy-step900",
+  "slug": "sandeep123-aops-grpo-entropy-step900",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/aops-grpo-entropy-step900",
+  "created_at": "2026-08-31T01:49:45.000Z",
+  "updated_at": "2026-08-31T01:52:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rl",
+    "grpo",
+    "verl",
+    "scienceqa",
+    "reasoning",
+    "baseline",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sandeep123/aops-grpo-entropy-step900 · Hugging Face",
+      "url": "https://huggingface.co/sandeep123/aops-grpo-entropy-step900",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sandeep123/aops-grpo-cliphigh-step900 · Hugging Face",
+      "url": "https://huggingface.co/sandeep123/aops-grpo-cliphigh-step900",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PDF The Illustrated GRPO: A Detailed and Pedagogical Explanation of GRPO ...",
+      "url": "https://abderrahmanskiredj.github.io/the-illustrated-grpo/The%20Illustrated%20GRPO.pdf",
+      "snippet": "The second section serves as a practical tutorial, guiding readers through a quick application of GRPO using the TRL library with simplified steps and examples. The third section presents a simplified, didactic implementation of GRPO, designed for clarity and edu-cational purposes, using a small model and basic prompts."
+    },
+    {
+      "title": "Group Relative Policy Optimization (GRPO) — verl documentation",
+      "url": "https://verl.readthedocs.io/en/latest/algo/grpo.html",
+      "snippet": "Group Relative Policy Optimization (GRPO) Last updated: 05/31/2025. In reinforcement learning, classic algorithms like PPO rely on a \"critic\" model to estimate the value of actions, guiding the learning process. However, training this critic model can be resource-intensive. GRPO simplifies this process by eliminating the need for a separate critic model. Instead, it operates as follows ..."
+    },
+    {
+      "title": "[2601.00423] E-GRPO: High Entropy Steps Drive Effective Reinforcement ...",
+      "url": "https://arxiv.org/abs/2601.00423",
+      "snippet": "We observe that the high entropy steps enable more efficient and effective exploration while the low entropy steps result in undistinguished roll-outs. To this end, we propose E-GRPO, an entropy aware Group Relative Policy Optimization to increase the entropy of SDE sampling steps."
+    }
+  ]
+}

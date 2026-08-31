@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "PAkshayV/q-Taxi-v3",
+  "slug": "pakshayv-q-taxi-v3",
+  "author": "PAkshayV",
+  "url": "https://huggingface.co/PAkshayV/q-Taxi-v3",
+  "created_at": "2026-08-31T08:38:37.000Z",
+  "updated_at": "2026-08-31T08:40:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136525,
+  "storage_human": "136525 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pk-aiml/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/pk-aiml/q-Taxi-v3",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "avoroshilov/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/avoroshilov/q-Taxi-v3",
+      "snippet": "avoroshilov / q-Taxi-v3 like 0 Reinforcement LearningTaxi-v3q-learningcustom-implementationEval Results Model card FilesFiles and versions Community Use with library Edit model card"
+    },
+    {
+      "title": "Facepalm0 / q-Taxi-v3-test - insights-db.paloaltonetworks.com",
+      "url": "https://insights-db.paloaltonetworks.com/models/Facepalm0/q-Taxi-v3-test/0500f4939e1ea7caa1d1fb1981a0e9462b4a9273/overview",
+      "snippet": "Discover potential threats in the Facepalm0 / q-Taxi-v3-test model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "GitHub - yatheshl/Q-Learning-Taxi-v3: This project demonstrates the use ...",
+      "url": "https://github.com/yatheshl/Q-Learning-Taxi-v3",
+      "snippet": "The Taxi-v3 environment simulates a simple grid world where the agent (taxi) needs to pick up passengers from one location and drop them off at another while navigating obstacles on the grid. The agent learns to accomplish this task efficiently by employing Q-learning, a popular reinforcement learning algorithm."
+    },
+    {
+      "title": "Unlocking the World of Q-Learning with Taxi-v3 - fxis.ai",
+      "url": "https://fxis.ai/edu/unlocking-the-world-of-q-learning-with-taxi-v3/",
+      "snippet": "Are you ready to dive into the fascinating realm of reinforcement learning? Today, we&#x27;ll explore a trained model of a Q-Learning agent playing the Taxi-v3 environment. This blog will guide you step-by-step on how to set up and run your very own Q-Learning agent, making the complex concepts user-friendly and approachable."
+    }
+  ]
+}

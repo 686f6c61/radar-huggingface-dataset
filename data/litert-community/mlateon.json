@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "litert-community/mLateOn",
+  "slug": "litert-community-mlateon",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/mLateOn",
+  "created_at": "2026-08-31T10:05:04.000Z",
+  "updated_at": "2026-08-31T10:05:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "on-device",
+    "edge",
+    "colbert",
+    "late-interaction",
+    "retrieval",
+    "rag",
+    "multilingual",
+    "modernbert",
+    "feature-extraction",
+    "base_model:lightonai/mLateOn",
+    "base_model:finetune:lightonai/mLateOn",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 984343965,
+  "storage_human": "984 MB",
+  "base_model": "lightonai/mLateOn",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiteRT Community (FKA TFLite) - Hugging Face",
+      "url": "https://huggingface.co/litert-community",
+      "snippet": "LiteRT Community. LiteRT is Google&#x27;s on-device framework for high-performance ML & GenAI deployment on edge platforms. It is the improved successor to TensorFlow Lite. On this com"
+    },
+    {
+      "title": "LiteRT Community (FKA TFLite) - Hugging Face",
+      "url": "https://huggingface.co/litert-community/collections",
+      "snippet": "AI for Mobile, Web, and Embedded Vision models for LiteRT: image classification, detection, segmentation, keypoints, depth, OCR, enhancement, and zero-shot vision ..."
+    },
+    {
+      "title": "mLateOn · MTEB Leaderboard",
+      "url": "https://leaderboard.mteb.org/models/lightonai/mLateOn",
+      "snippet": "late-interaction embedding model · 307M params · 128-dim · 8192 max tokens · open weights"
+    },
+    {
+      "title": "GitHub - lightonai/mdenseon-mlateon: A collection of pretraining and ...",
+      "url": "https://github.com/lightonai/mdenseon-mlateon",
+      "snippet": "A collection of pretraining and finetuning scripts for mLateOn and mDenseOn, as well as their English counterparts. - lightonai/mdenseon-mlateon"
+    },
+    {
+      "title": "GitHub - google-ai-edge/litert-torch: Support PyTorch model conversion ...",
+      "url": "https://github.com/google-ai-edge/litert-torch",
+      "snippet": "Support PyTorch model conversion with LiteRT. Contribute to google-ai-edge/litert-torch development by creating an account on GitHub."
+    }
+  ]
+}

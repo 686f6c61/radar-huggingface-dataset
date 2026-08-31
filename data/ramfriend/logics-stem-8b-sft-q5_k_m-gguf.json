@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ramfriend/Logics-STEM-8B-SFT-Q5_K_M-GGUF",
+  "slug": "ramfriend-logics-stem-8b-sft-q5_k_m-gguf",
+  "author": "ramfriend",
+  "url": "https://huggingface.co/ramfriend/Logics-STEM-8B-SFT-Q5_K_M-GGUF",
+  "created_at": "2026-08-31T08:19:47.000Z",
+  "updated_at": "2026-08-31T08:20:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "dataset:Logics-MLLM/Logics-STEM-SFT-Dataset-2.2M",
+    "base_model:Logics-MLLM/Logics-STEM-8B-SFT",
+    "base_model:quantized:Logics-MLLM/Logics-STEM-8B-SFT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 5851112864,
+  "storage_human": "5.9 GB",
+  "base_model": "Logics-MLLM/Logics-STEM-8B-SFT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Logics-MLLM/Logics-STEM-8B-SFT · Hugging Face",
+      "url": "https://huggingface.co/Logics-MLLM/Logics-STEM-8B-SFT",
+      "snippet": "🔎 Overview Logics-STEM-8B-SFT is an 8B-parameter open reasoning model for STEM (Science, Technology, Engineering, Mathematics) tasks. It is fine-tuned from Qwen3-8B using supervised fine-tuning (SFT) on Logics-STEM-SFT-Dataset-2.2M, a large-scale long chain-of-thought dataset covering math and broader STEM problems."
+    },
+    {
+      "title": "Logics-STEM-8B-SFT · Models",
+      "url": "https://www.modelscope.cn/models/Alibaba-DT/Logics-STEM-8B-SFT/summary",
+      "snippet": "🔎 Overview Logics-STEM-8B-SFT is an 8B-parameter open reasoning model for STEM (Science, Technology, Engineering, Mathematics) tasks. It is fine-tuned from Qwen3-8B using supervised fine-tuning (SFT) on Logics-STEM-SFT-Dataset-2.2M, a large-scale long chain-of-thought dataset covering math and broader STEM problems. Logics-STEM-8B-SFT provides a strong SFT baseline for STEM reasoning: it ..."
+    },
+    {
+      "title": "Logics-STEM: Empowering LLM Reasoning via Failure-Driven Post-Training ...",
+      "url": "https://arxiv.org/html/2601.01562v3",
+      "snippet": "Logics-STEM targets reasoning tasks in the domains of Science, Technology, Engineering, and Mathematics (STEM), and exhibits exceptional performance on STEM-related benchmarks with an average improvement of 4.68% over the next-best model at 8B scale."
+    },
+    {
+      "title": "Logics-MLLM/Logics-STEM-8B-RL · Hugging Face",
+      "url": "https://huggingface.co/Logics-MLLM/Logics-STEM-8B-RL",
+      "snippet": "🔎 Overview Logics-STEM-8B-RL is an 8B-parameter open reasoning model for STEM (Science, Technology, Engineering, Mathematics) tasks. It is post-trained from Qwen3-8B model using a data-algorithm co-design recipe: Stage-1: SFT (proposal distribution building) Trained on Logics-STEM-SFT-Dataset, a large-scale long chain-of-thought (CoT) dataset curated with a multi-stage pipeline ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

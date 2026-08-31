@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sandeep123/aops-dqo-a1-step1200",
+  "slug": "sandeep123-aops-dqo-a1-step1200",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/aops-dqo-a1-step1200",
+  "created_at": "2026-08-31T02:27:07.000Z",
+  "updated_at": "2026-08-31T02:29:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rl",
+    "grpo",
+    "verl",
+    "scienceqa",
+    "reasoning",
+    "baseline",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sandeep123/sqa-grpo-vanilla-step1200 · Hugging Face",
+      "url": "https://huggingface.co/sandeep123/sqa-grpo-vanilla-step1200",
+      "snippet": "sandeep123 / sqa-grpo-vanilla-step1200 like 0 Safetensors qwen2 rl grpo verl scienceqa reasoning baseline License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new sqa-grpo-vanilla-step1200 Do not apply a chat template Validation metrics at this checkpoint Settings (identical across all baseline arms) Note on ..."
+    },
+    {
+      "title": "sandeep123/sqa-dqo-a1-step1000 · Hugging Face",
+      "url": "https://huggingface.co/sandeep123/sqa-dqo-a1-step1000",
+      "snippet": "sandeep123 / sqa-dqo-a1-step1000 like 0 Safetensors qwen2 rl grpo verl scienceqa reasoning baseline License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new sqa-dqo-a1-step1000 Do not apply a chat template Validation metrics at this checkpoint Settings (identical across all baseline arms) Note on checkpoint selection"
+    },
+    {
+      "title": "sandeep123-ai · GitHub",
+      "url": "https://github.com/sandeep123-ai",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "Sandeep123-lab-ai · GitHub",
+      "url": "https://github.com/Sandeep123-lab-ai",
+      "snippet": "Sandeep123-lab-ai has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "tmpmodelsave/step1200 - Fast, Reliable, and Scalable Inference on ...",
+      "url": "https://friendli.ai/models/tmpmodelsave/step1200",
+      "snippet": "Run tmpmodelsave/step1200 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "NostraEmpire/mirror-parler-tts-large-v1",
+  "slug": "nostraempire-mirror-parler-tts-large-v1",
+  "author": "NostraEmpire",
+  "url": "https://huggingface.co/NostraEmpire/mirror-parler-tts-large-v1",
+  "created_at": "2026-08-31T10:40:14.000Z",
+  "updated_at": "2026-08-31T10:44:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "parler_tts",
+    "text-generation",
+    "text-to-speech",
+    "annotation",
+    "en",
+    "dataset:parler-tts/mls_eng",
+    "dataset:parler-tts/libritts_r_filtered",
+    "dataset:parler-tts/libritts-r-filtered-speaker-descriptions",
+    "dataset:parler-tts/mls-eng-speaker-descriptions",
+    "arxiv:2402.01912",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2333013362,
+  "parameters_human": "2.33B",
+  "storage_bytes": 9332968280,
+  "storage_human": "9.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "parler-tts/parler-tts-large-v1 · Hugging Face",
+      "url": "https://huggingface.co/parler-tts/parler-tts-large-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NostraEmpire/mirror-whisper-large-v3 at main - Hugging Face",
+      "url": "https://huggingface.co/NostraEmpire/mirror-whisper-large-v3/tree/main",
+      "snippet": "NostraEmpire / mirror-whisper-large-v3 like 0 Automatic Speech Recognition PyTorch JAX Safetensors 99 languages whisper audio hf-asr-leaderboard arxiv:2212.04356 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main mirror-whisper-large-v3 24.7 GB Ctrl+K Ctrl+K 1 contributor History:3 commits NostraEmpire mirror update 0bfd24f verifiedabout 4 hours ago ..."
+    },
+    {
+      "title": "How to run Parler-TTS Large v1 locally (Text → speech) · Spanvero",
+      "url": "https://spanvero.com/media/parler-tts-large-v1/",
+      "snippet": "Parler-TTS Large v1 (Parler-TTS (HF/Descript), Text → speech) — open voice & audio model. Runs locally with ~9 GB VRAM via Parler-TTS / Transformers; download the weights free, or rent a GPU from $0.06/hr. Honest, $0-markup."
+    },
+    {
+      "title": "parler-tts-large-v1 Open-Source Text-to-Speech Model - Free Deployment ...",
+      "url": "https://model.aibase.com/models/details/1915693282681839617",
+      "snippet": "Parler-TTS is a reproduction of work from the paper Natural language guidance of high-fidelity text-to-speech with synthetic annotations by Dan Lyth and Simon King, from Stability AI and Edinburgh University respectively."
+    },
+    {
+      "title": "parler-tts-large-v1: Text-to-Audio model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/parler-tts-large-v1-parler-tts",
+      "snippet": "Overview parler-tts-large-v1 is a 2.2-billion-parameter text-to-speech model developed by parler-tts that generates natural-sounding speech from text with controllable acoustic properties specified through natural language descriptions. Trained on 45,000 hours of audio data, it produces high-quality speech where you control gender, background noise levels, speaking rate, pitch, and ..."
+    }
+  ]
+}

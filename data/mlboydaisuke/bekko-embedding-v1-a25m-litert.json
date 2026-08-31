@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/bekko-embedding-v1-a25m-LiteRT",
+  "slug": "mlboydaisuke-bekko-embedding-v1-a25m-litert",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/bekko-embedding-v1-a25m-LiteRT",
+  "created_at": "2026-08-31T07:48:17.000Z",
+  "updated_at": "2026-08-31T07:48:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "on-device",
+    "edge",
+    "embeddings",
+    "sentence-transformers",
+    "retrieval",
+    "rag",
+    "multilingual",
+    "japanese",
+    "modernbert",
+    "matryoshka",
+    "feature-extraction",
+    "base_model:hotchpotch/bekko-embedding-v1-a25m",
+    "base_model:finetune:hotchpotch/bekko-embedding-v1-a25m",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 390527010,
+  "storage_human": "391 MB",
+  "base_model": "hotchpotch/bekko-embedding-v1-a25m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hotchpotch/bekko-embedding-v1-a25m · Hugging Face",
+      "url": "https://huggingface.co/hotchpotch/bekko-embedding-v1-a25m",
+      "snippet": "bekko-embedding-v1-a25m is an ultra-compact multilingual text embedding model. It has just 25M active parameters — light enough to run comfortably on modest CPUs — yet its retrieval quality is comparable to models with 3-10x more active parameters. For a smaller, faster model, see bekko-embedding-v1-a8m (8M active parameters)."
+    },
+    {
+      "title": "hotchpotch/bekko-embedding-v1-a25m",
+      "url": "https://ollama.com/hotchpotch/bekko-embedding-v1-a25m",
+      "snippet": "Bekko Embedding is an ultra-compact (AP 25m), high-performance multilingual model. Fast on CPUs, with 8K token inputs and 384/256/128/64D outputs."
+    },
+    {
+      "title": "Bekko Embedding: Parameter-Efficient Multilingual Retrieval",
+      "url": "https://arxiv.org/html/2607.25180v1",
+      "snippet": "Bekko minimizes exactly these: the released models, bekko-embedding-v1-a8m 1 and the higher-quality bekko-embedding-v1-a25m 2 (below, a8m / a25m), have just under 8M and 25M AP. The recipe is deliberately simple."
+    },
+    {
+      "title": "hotchpotch/bekko-embedding-v1-a25m-GGUF · Hugging Face",
+      "url": "https://huggingface.co/hotchpotch/bekko-embedding-v1-a25m-GGUF",
+      "snippet": "It is available in the hotchpotch/bekko-embedding-v1-a25m source repository when maximum throughput is the priority. The source model also provides the original SentenceTransformers model and its full model card."
+    },
+    {
+      "title": "Bekko Embedding: Parameter-Efficient Multilingual Retrieval with Ultra ...",
+      "url": "https://arxiv.org/html/2607.25180",
+      "snippet": "This work applied Active Parameters (AP)—the chief determinant of inference compute—consistently as the efficiency axis for multilingual embedding models (building on the non-embedding-parameter view of Kaplan et al., 2020 and Lan et al., 2019) and, on that axis, built the ultra-compact multilingual embedding family Bekko Embedding."
+    }
+  ]
+}

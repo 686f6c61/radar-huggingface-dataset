@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "text2knowledge/doctr-torch-lw-detr-s-open",
+  "slug": "text2knowledge-doctr-torch-lw-detr-s-open",
+  "author": "text2knowledge",
+  "url": "https://huggingface.co/text2knowledge/doctr-torch-lw-detr-s-open",
+  "created_at": "2026-08-31T09:14:15.000Z",
+  "updated_at": "2026-08-31T09:14:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "doctr",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "doctr",
+    "pytorch",
+    "ocr",
+    "layout",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118180391,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mindee/doctr: docTR (Document Text Recognition) - GitHub",
+      "url": "https://github.com/mindee/doctr",
+      "snippet": "docTR (Document Text Recognition) - a seamless, high-performing & accessible library for OCR-related tasks powered by Deep Learning. Ongoing development and maintenance by t2k. - mindee/doctr"
+    },
+    {
+      "title": "doctr/doctr/models/layout/lw_detr/pytorch.py at main - GitHub",
+      "url": "https://github.com/mindee/doctr/blob/main/doctr/models/layout/lw_detr/pytorch.py",
+      "snippet": "855 lines (706 loc) · 33.6 KB main doctr / doctr / models / layout / lw_detr / pytorch.py Code Blame 855 lines (706 loc) · 33.6 KB 1 2 3 4 5 6 7 8 9 10 11 12 13 14 ..."
+    },
+    {
+      "title": "DocTR VRAM Requirements & Self-Hosting: docTR 1.1.0 Layout + Table OCR ...",
+      "url": "https://nexgpu.net/en/models/doctr/",
+      "snippet": "lw_detr_s and tablecenternet both consume 1024×1024 inputs, so compute becomes the bottleneck before memory does; Ada gets the most out of the torch.compile support added in 0.11.0, which lowers cost per page."
+    },
+    {
+      "title": "doctr.models.layout.lw_detr.pytorch - docTR documentation",
+      "url": "https://mindee.github.io/doctr/_modules/doctr/models/layout/lw_detr/pytorch.html",
+      "snippet": "Args: feat_extractor: the backbone of the model, used as feature extractor class_names: list of class names to be detected by the model score_thresh: the score threshold for post-processing the model outputs iou_thresh: the IoU threshold for post-processing the model outputs d_model: the dimension of the model num_queries: the number of object ..."
+    },
+    {
+      "title": "docTR documentation - GitHub Pages",
+      "url": "https://mindee.github.io/doctr/",
+      "snippet": "DocTR provides an easy and powerful way to extract valuable information from your documents: 🧾 for automation: seamlessly process documents for Natural Language Understanding tasks: we provide OCR predictors to parse textual information (localize and identify each word) from your documents."
+    }
+  ]
+}

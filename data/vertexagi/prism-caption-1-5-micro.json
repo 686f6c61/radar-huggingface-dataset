@@ -5,7 +5,7 @@
   "author": "VertexAGI",
   "url": "https://huggingface.co/VertexAGI/prism-caption-1-5-micro",
   "created_at": "2026-08-23T07:12:49.000Z",
-  "updated_at": "2026-08-23T07:13:32.000Z",
+  "updated_at": "2026-08-30T08:59:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 207,
+  "downloads_30d": 225,
   "trending_score": 0,
   "parameters": 93188096,
   "parameters_human": "93.2M",

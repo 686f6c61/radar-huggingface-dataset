@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "NorthLeap/piiguard",
+  "slug": "northleap-piiguard",
+  "author": "NorthLeap",
+  "url": "https://huggingface.co/NorthLeap/piiguard",
+  "created_at": "2026-08-31T08:29:44.000Z",
+  "updated_at": "2026-08-31T08:30:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "it",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "flowxai/piiguard · Hugging Face",
+      "url": "https://huggingface.co/flowxai/piiguard",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - akeshridev/piiguard",
+      "url": "https://github.com/akeshridev/piiguard",
+      "snippet": "The model file itself is never bundled or downloaded by PIIGuard — you provide a .litertlm file already present on the device (see LiteRT-LM&#x27;s docs for converting/obtaining a Gemma model in that format), for example pushed once for local testing:"
+    },
+    {
+      "title": "flowxai/piiguard at main - Hugging Face",
+      "url": "https://huggingface.co/flowxai/piiguard/tree/main",
+      "snippet": "flowxai / piiguard like 0 Follow FLOWX.AI 2 Token Classification Transformers ONNX Safetensors 9 languages xlm-roberta ner on-device privacy flowx openner cross de-identification License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "PIIGuard: Mitigating PII Harvesting under Adversarial Sanitization",
+      "url": "https://arxiv.org/abs/2605.03129",
+      "snippet": "Browsing-enabled LLM assistants can fetch webpages and answer contact-seeking queries, creating a practical channel for scraping contact-style personally identifiable information (PII) from public pages. Many prior defenses are deployed at the model, service, or agent layer rather than at the webpage itself, leaving ordinary page owners with limited deployable options. We present PIIGuard, a ..."
+    },
+    {
+      "title": "GitHub - mgubar/piiguard: An open-source framework for detecting ...",
+      "url": "https://github.com/mgubar/piiguard",
+      "snippet": "An open-source framework for detecting, redacting, masking, and anonymizing sensitive data (PII) across text, images, and structured data. Supports NLP, pattern matching, and customizable pipelines. - mgubar/piiguard"
+    }
+  ]
+}

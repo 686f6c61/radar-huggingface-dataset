@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "INCModel/Kimi-K2.6-MXFP4-CT-AutoRound",
+  "slug": "incmodel-kimi-k2-6-mxfp4-ct-autoround",
+  "author": "INCModel",
+  "url": "https://huggingface.co/INCModel/Kimi-K2.6-MXFP4-CT-AutoRound",
+  "created_at": "2026-08-31T08:57:50.000Z",
+  "updated_at": "2026-08-31T08:57:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 58,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "INCModel/Kimi-K2.6-MXFP4-CT-AutoRound · Hugging Face",
+      "url": "https://huggingface.co/INCModel/Kimi-K2.6-MXFP4-CT-AutoRound",
+      "snippet": "INCModel / Kimi-K2.6-MXFP4-CT-AutoRound like 0 Follow INC Optimized Models 11 Safetensors kimi_k25 custom_code Eval Results 8-bit precision compressed-tensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 67 Safetensors Model size 1T params Tensor type F32 · BF16 · U8 · Chat template ..."
+    },
+    {
+      "title": "Kimi K2.6 | Leading Open-Source Model in Coding & Agent",
+      "url": "https://www.kimi.ai/ai-models/kimi-k2-6",
+      "snippet": "Kimi K2.6 is an open-source model developed by Moonshot AI, featuring state-of-the-art coding, long-horizon execution, and agent swarm capabilities. It provides the core intelligence for a suite of professional tools, enabling you to build Awwwards-level interfaces, manage complex workflows with agent swarm, work with coordinated agents in Claw ..."
+    },
+    {
+      "title": "INCModel/Kimi-K2.6-MXFP4-AutoRound · Hugging Face",
+      "url": "https://huggingface.co/INCModel/Kimi-K2.6-MXFP4-AutoRound",
+      "snippet": "INCModel / Kimi-K2.6-MXFP4-AutoRound like 0 Follow INC Optimized Models 8 Image-Text-to-Text Transformers Safetensors kimi_k25 feature-extraction auto-round conversational custom_code 8-bit precision compressed-tensors arxiv:2309.05516 License:modified-mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Kimi K2.6 - Instant · Thinking · Agent · Agent Swarm",
+      "url": "https://kimik2ai.com/kimi-k2.6/",
+      "snippet": "Explore Kimi K2.6, the advanced AI model for coding, frontend design, Agent Swarm workflows, Claw Group teamwork, documents, slides, sheets, API access, pricing, and ..."
+    },
+    {
+      "title": "INCModel/Kimi-K2.6-MXFP4-CT-AutoRound • hfviewer",
+      "url": "https://hfviewer.com/INCModel/Kimi-K2.6-MXFP4-CT-AutoRound",
+      "snippet": "INCModel/Kimi-K2.6-MXFP4-CT-AutoRound . The graph is built from the model&#x27;s real structure: nodes carry source-faithful module, class, and operation names (embeddings, attention blocks, feed-forward layers, normalization, task heads), edges follow the actual forward dataflow, and repeated blocks are grouped with their true repeat counts."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "saudalharbiina/generation-2024",
+  "slug": "saudalharbiina-generation-2024",
+  "author": "saudalharbiina",
+  "url": "https://huggingface.co/saudalharbiina/generation-2024",
+  "created_at": "2026-08-31T10:24:59.000Z",
+  "updated_at": "2026-08-31T10:25:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "saudalharbiina (Saud Alharbi) - Hugging Face",
+      "url": "https://huggingface.co/saudalharbiina/models",
+      "snippet": "Music producer who fell into ML"
+    },
+    {
+      "title": "saudalharbiina/matching · Hugging Face",
+      "url": "https://huggingface.co/saudalharbiina/matching",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Saudi Arabia Launches &#x27;GenAI for All&#x27; Initiative for Digital ...",
+      "url": "https://www.spa.gov.sa/en/N2039313",
+      "snippet": "Riyadh, January 31, 2024, SPA -- Saudi Minister of Communications and Information Technology Abdullah Alswaha announced today that the Kingdom has launched the Generative Artificial Intelligence for All initiative for member states of the Digital Cooperation Organization. The Saudi initiative will support research and develop and govern policies for Artificial Intelligence across member states ..."
+    },
+    {
+      "title": "Saudi Authority for Data and Artificial Intelligence",
+      "url": "https://sdaia.gov.sa/en/default.aspx",
+      "snippet": "The Saudi Data & AI Authority (SDAIA) is the competent authority in the Kingdom concerned with data and AI including big data."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-5 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-5, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    }
+  ]
+}

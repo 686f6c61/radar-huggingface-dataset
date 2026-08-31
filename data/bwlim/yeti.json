@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "BWLim/YeTI",
+  "slug": "bwlim-yeti",
+  "author": "BWLim",
+  "url": "https://huggingface.co/BWLim/YeTI",
+  "created_at": "2026-08-31T07:15:19.000Z",
+  "updated_at": "2026-08-31T08:39:21.000Z",
+  "license": "academic-use-only",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "yeti",
+    "pytorch",
+    "pytorch-lightning",
+    "image-denoising",
+    "noise-generation",
+    "diffusion",
+    "computer-vision",
+    "image-to-image",
+    "dataset:BWLim/YeTI",
+    "arxiv:2607.09193",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1233574905,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2605.09981] Yeti: A compact protein structure tokenizer for ...",
+      "url": "https://arxiv.org/abs/2605.09981",
+      "snippet": "To validate Yeti&#x27;s generative capability, we trained a compact multimodal model jointly over its structure tokens and amino acid sequence entirely from scratch, with no pretrained initialization."
+    },
+    {
+      "title": "yeti-agent - Run AI Browser Tasks 24/7 - GitHub",
+      "url": "https://github.com/hunkdl/yeti-agent",
+      "snippet": "🐾 yeti-agent - Run AI Browser Tasks 24/7 🌟 What this is yeti-agent is a desktop app for running browser tasks with AI. It opens a browser, follows your steps, and keeps working while you do other things. It is built for people who want to automate web tasks without writing code."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Best Yeti AI LORA - Free Download | Tensor.Art",
+      "url": "https://tensor.art/models/855107786449640430",
+      "snippet": "Download Yeti - free LORA Pony AI model on TENSOR. By Goat22"
+    },
+    {
+      "title": "[2501.09355] YETI (YET to Intervene) Proactive Interventions by ...",
+      "url": "https://arxiv.org/abs/2501.09355",
+      "snippet": "Abstract page for arXiv paper 2501.09355: YETI (YET to Intervene) Proactive Interventions by Multimodal AI Agents in Augmented Reality Tasks"
+    }
+  ]
+}

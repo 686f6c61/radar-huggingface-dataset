@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "vikhram-labs/mimic-vit-biogpt",
+  "slug": "vikhram-labs-mimic-vit-biogpt",
+  "author": "vikhram-labs",
+  "url": "https://huggingface.co/vikhram-labs/mimic-vit-biogpt",
+  "created_at": "2026-08-31T09:01:00.000Z",
+  "updated_at": "2026-08-31T09:01:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "vision-language",
+    "radiology",
+    "multimodal",
+    "explainable-ai",
+    "scientific-ai",
+    "medical-imaging",
+    "biogpt",
+    "vit",
+    "ai-systems",
+    "image-to-text",
+    "en",
+    "dataset:itsanmolgupta/mimic-cxr-dataset-cleaned",
+    "base_model:google/vit-base-patch16-224-in21k",
+    "base_model:finetune:google/vit-base-patch16-224-in21k",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 433939968,
+  "parameters_human": "433.9M",
+  "storage_bytes": 1735830240,
+  "storage_human": "1.7 GB",
+  "base_model": "google/vit-base-patch16-224-in21k, microsoft/biogpt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vikhram-S/mimic-vit-biogpt · Hugging Face",
+      "url": "https://huggingface.co/Vikhram-S/mimic-vit-biogpt",
+      "snippet": "The model integrates a transformer-based vision encoder and biomedical language decoder under cross-modal alignment supervision to produce clinically coherent reports while enabling traceable reasoning between image regions and generated findings."
+    },
+    {
+      "title": "Vikhram-S/mimic-vit-biogpt at main - Hugging Face",
+      "url": "https://huggingface.co/Vikhram-S/mimic-vit-biogpt/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Vikhram-S/mimic-vit-biogpt at main - Hugging Face",
+      "url": "https://huggingface.co/Vikhram-S/mimic-vit-biogpt/blob/main/README.md",
+      "snippet": "English vision-encoder-decoder vision-language medical-ai radiology explainable-ai vit biogpt healthcare-ai License:apache-2.0 Model card FilesFiles and versions xet Community main mimic-vit-biogpt /README.md Vikhram-S Update README.md 5ccb564 verifiedabout 17 hours ago preview code | raw Copy download link history blame contribute delete 4.16 ..."
+    },
+    {
+      "title": "vikhram-labs (Vikhram Labs) - Hugging Face",
+      "url": "https://huggingface.co/vikhram-labs",
+      "snippet": "Multilingual AI, Efficient Foundation Models, Low-Resource NLP, Reasoning Systems, RAG, Biomedical AI, Sovereign AI Infrastructure"
+    },
+    {
+      "title": "Vikhram Labs - GitHub",
+      "url": "https://github.com/Vikhram-Labs/",
+      "snippet": "Advancing efficient and accessible AI through multilingual foundation models, reasoning systems, and open research. - Vikhram Labs"
+    }
+  ]
+}

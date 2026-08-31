@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nkkbr2/Kimi-K3-decensored-experimental-r3",
+  "slug": "nkkbr2-kimi-k3-decensored-experimental-r3",
+  "author": "nkkbr2",
+  "url": "https://huggingface.co/nkkbr2/Kimi-K3-decensored-experimental-r3",
+  "created_at": "2026-08-31T09:26:05.000Z",
+  "updated_at": "2026-08-31T09:33:50.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k3",
+    "feature-extraction",
+    "compressed-tensors",
+    "conversational",
+    "image-text-to-text",
+    "custom_code",
+    "license:other",
+    "eval-results",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2779931837184,
+  "parameters_human": "2779.93B",
+  "storage_bytes": 1560998650830,
+  "storage_human": "1561.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kimi K3 - Uncensored AI",
+      "url": "https://uncensored.com/models/kimi-k3",
+      "snippet": "Kimi K3 by Moonshot AI — a 2.8T-parameter open-weight multimodal reasoning model with a 1M-token context, built for complex coding and long-horizon agentic work."
+    },
+    {
+      "title": "AI Models | Uncensored AI",
+      "url": "https://uncensored.com/models",
+      "snippet": "AI models, refined into one clean view. Browse every AI model available in Uncensored AI: Claude, GPT, Gemini, Grok, DeepSeek, Kimi, GLM, and more — most of them uncensored."
+    },
+    {
+      "title": "Kimi K3: 2.8T Open Model for Coding & Knowledge Work",
+      "url": "https://www.kimi.ai/ai-models/kimi-k3",
+      "snippet": "Kimi K3: Think Further. Build Bigger. Keep Going. Kimi K3 is an open 2.8T-parameter model built on our Kimi Delta Attention and Attention Residuals, with native vision and a 1M-token context window, designed for long-horizon coding, knowledge work, and reasoning. It turns a prompt into playable games, polished presentations, and interactive research reports, even taking on technical work once ..."
+    },
+    {
+      "title": "I Tested Kimi K3: The Uncensored AI That&#x27;s Beating GPT-5.6",
+      "url": "https://www.youtube.com/watch?v=nM5UHhUesTw",
+      "snippet": "What&#x27;s going on, everybody! I&#x27;ve spent a full day messing around with the new Kimi K3 AI model from China, and the results are actually mind-blowing."
+    },
+    {
+      "title": "GitHub - samssouza/uncensored-ai-list",
+      "url": "https://github.com/samssouza/uncensored-ai-list",
+      "snippet": "Contribute to samssouza/uncensored-ai-list development by creating an account on GitHub."
+    }
+  ]
+}

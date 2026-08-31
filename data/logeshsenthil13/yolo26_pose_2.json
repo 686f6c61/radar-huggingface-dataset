@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "logeshsenthil13/Yolo26_Pose_2",
+  "slug": "logeshsenthil13-yolo26_pose_2",
+  "author": "logeshsenthil13",
+  "url": "https://huggingface.co/logeshsenthil13/Yolo26_Pose_2",
+  "created_at": "2026-08-31T08:21:53.000Z",
+  "updated_at": "2026-08-31T08:21:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ultralytics/yolo26: Ultralytics YOLO26 quickstart for ...",
+      "url": "https://github.com/ultralytics/yolo26",
+      "snippet": "YOLO26 models are available for detection, instance segmentation, semantic segmentation, depth estimation, classification, pose estimation, and oriented object detection. All model weights download automatically from the latest Ultralytics assets release on first use."
+    },
+    {
+      "title": "Ultralytics YOLO26",
+      "url": "https://docs.ultralytics.com/models/yolo26",
+      "snippet": "Overview Ultralytics YOLO26 is a unified family of real-time vision models described in the Ultralytics YOLO26 paper. It introduces native end-to-end inference, a lighter detection head, an updated training recipe, and task-specific heads for detection, segmentation, pose estimation, classification, and oriented detection."
+    },
+    {
+      "title": "Pose Estimation with Ultralytics YOLO",
+      "url": "https://docs.ultralytics.com/tasks/pose",
+      "snippet": "Discover how to use YOLO26 for pose estimation tasks. Learn about model training, validation, prediction, and exporting in various formats."
+    },
+    {
+      "title": "Ultralytics/YOLO26 · Hugging Face",
+      "url": "https://huggingface.co/Ultralytics/YOLO26",
+      "snippet": "Ultralytics supports a wide range of YOLO models, from early versions like YOLOv3 to the latest YOLO26. The tables below showcase YOLO26 models pretrained on COCO for Detection, Segmentation, and Pose Estimation."
+    },
+    {
+      "title": "YOLO26 Pose Estimation: Real-Time Keypoint Tutorial - LearnOpenCV",
+      "url": "https://learnopencv.com/yolo26-pose-estimation-tutorial/",
+      "snippet": "Hands-on YOLO26 pose estimation tutorial: real-time keypoint detection in Python, RLE architecture, and COCO-17 benchmarks explained."
+    }
+  ]
+}

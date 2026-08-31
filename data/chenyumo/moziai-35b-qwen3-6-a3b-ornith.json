@@ -5,7 +5,7 @@
   "author": "chenyumo",
   "url": "https://huggingface.co/chenyumo/moziAI-35B-Qwen3.6-A3B-Ornith",
   "created_at": "2026-08-10T19:42:08.000Z",
-  "updated_at": "2026-08-26T21:07:48.000Z",
+  "updated_at": "2026-08-31T05:02:17.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -17,6 +17,7 @@
   "tags": [
     "llama-cpp",
     "gguf",
+    "qwen3_5_moe",
     "MoE",
     "financial-llm",
     "MoziSmartBit",
@@ -37,7 +38,7 @@
     "conversational"
   ],
   "likes": 5,
-  "downloads_30d": 7999,
+  "downloads_30d": 9045,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",

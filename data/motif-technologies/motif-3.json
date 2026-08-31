@@ -5,7 +5,7 @@
   "author": "Motif-Technologies",
   "url": "https://huggingface.co/Motif-Technologies/Motif-3",
   "created_at": "2026-08-07T05:28:34.000Z",
-  "updated_at": "2026-08-26T10:09:30.000Z",
+  "updated_at": "2026-08-31T05:22:57.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 132,
-  "downloads_30d": 4721,
+  "downloads_30d": 4754,
   "trending_score": 9,
   "parameters": 314841775750,
   "parameters_human": "314.84B",

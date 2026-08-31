@@ -33,8 +33,8 @@
   "trending_score": 0,
   "parameters": 96426236,
   "parameters_human": "96.4M",
-  "storage_bytes": 8593223591,
-  "storage_human": "8.6 GB",
+  "storage_bytes": 9211181651,
+  "storage_human": "9.2 GB",
   "base_model": "google/vit-base-patch16-224-in21k",
   "formats": [
     "safetensors"

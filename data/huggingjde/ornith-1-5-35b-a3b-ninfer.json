@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "huggingJDE/Ornith-1.5-35B-A3B-NInfer",
+  "slug": "huggingjde-ornith-1-5-35b-a3b-ninfer",
+  "author": "huggingJDE",
+  "url": "https://huggingface.co/huggingJDE/Ornith-1.5-35B-A3B-NInfer",
+  "created_at": "2026-08-31T09:08:12.000Z",
+  "updated_at": "2026-08-31T09:10:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "moe",
+    "mtp",
+    "dflash",
+    "speculative-decoding",
+    "quantized",
+    "image-text-to-text",
+    "base_model:shisa-ai/Ornith-1.5-35B-A3B-MTP",
+    "base_model:quantized:shisa-ai/Ornith-1.5-35B-A3B-MTP",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22783246080,
+  "storage_human": "22.8 GB",
+  "base_model": "shisa-ai/Ornith-1.5-35B-A3B-MTP",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8",
+      "snippet": "Ornith-1.5-35B-A3B is a ~35B mixture-of-experts model with ~3B activated parameters per token (≈70 GB in bf16). The recipes below stand up an OpenAI-compatible server on 2× 80GB GPUs to leave headroom for the 256K context; adjust --tensor-parallel-size / --tp to match your hardware."
+    },
+    {
+      "title": "Deploy ornith-ai/Ornith-1.5-35B-A3B | Inference Endpoints by Hugging Face",
+      "url": "https://endpoints.huggingface.co/new/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "Ornith-1.5-35B-A3B This model is from our Model Catalog, and comes with an optimized configuration. Deployment has been verified by Hugging Face."
+    },
+    {
+      "title": "Ornith 1.5 35B-A3B: Specs, Benchmarks and How to Run It Locally",
+      "url": "https://www.aimadetools.com/blog/ornith-1-5-35b-a3b/",
+      "snippet": "Ornith 1.5 35B-A3B is an open-weight mixture-of-experts model aimed at coding agents, terminal work, tool use, and long-running software tasks. It has roughly 35 billion total parameters but routes each token through about 3 billion active parameters. The weights still have to fit in memory: \"3B active\" describes inference compute, not a 3B-model download or memory footprint."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/ornith-1-5-35b-a3b",
+      "snippet": "The mid-size model in DeepReinforce&#x27;s Ornith-1.5 family (released 2026-08-19, MIT, weights on Hugging Face): a 35B-parameter Mixture-of-Experts that activates ~3B parameters per token, trained with the same self-improving task-and-scaffold generation loop as the 397B flagship."
+    }
+  ]
+}

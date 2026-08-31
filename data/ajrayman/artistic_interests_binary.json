@@ -5,7 +5,7 @@
   "author": "ajrayman",
   "url": "https://huggingface.co/ajrayman/Artistic_Interests_binary",
   "created_at": "2024-10-03T07:21:29.000Z",
-  "updated_at": "2026-08-30T13:43:26.000Z",
+  "updated_at": "2026-08-30T15:53:02.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -20,6 +20,7 @@
     "base_model:FacebookAI/roberta-base",
     "base_model:finetune:FacebookAI/roberta-base",
     "license:mit",
+    "text-embeddings-inference",
     "endpoints_compatible",
     "region:us"
   ],
@@ -28,8 +29,8 @@
   "trending_score": 0,
   "parameters": 124647170,
   "parameters_human": "124.6M",
-  "storage_bytes": 7181843859,
-  "storage_human": "7.2 GB",
+  "storage_bytes": 8179074290,
+  "storage_human": "8.2 GB",
   "base_model": "roberta-base",
   "formats": [
     "safetensors"

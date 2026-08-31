@@ -5,7 +5,7 @@
   "author": "ajrayman",
   "url": "https://huggingface.co/ajrayman/Self-consciousness_binary",
   "created_at": "2024-10-02T16:05:42.000Z",
-  "updated_at": "2026-08-30T13:23:46.000Z",
+  "updated_at": "2026-08-30T15:32:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 124647170,
   "parameters_human": "124.6M",
-  "storage_bytes": 14512355475,
-  "storage_human": "14.5 GB",
+  "storage_bytes": 16008198730,
+  "storage_human": "16.0 GB",
   "base_model": "roberta-base",
   "formats": [
     "safetensors"

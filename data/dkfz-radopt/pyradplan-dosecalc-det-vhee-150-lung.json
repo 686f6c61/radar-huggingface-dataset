@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DKFZ-RadOpt/pyRadPlan-dosecalc-Det-VHEE-150-lung",
+  "slug": "dkfz-radopt-pyradplan-dosecalc-det-vhee-150-lung",
+  "author": "DKFZ-RadOpt",
+  "url": "https://huggingface.co/DKFZ-RadOpt/pyRadPlan-dosecalc-Det-VHEE-150-lung",
+  "created_at": "2026-08-31T09:23:09.000Z",
+  "updated_at": "2026-08-31T09:29:35.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pyRadPlan",
+    "dose-calculation",
+    "vhee",
+    "electron-therapy",
+    "pytorch",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8292780,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pyRadPlan-dosecalc - a DKFZ-RadOpt Collection",
+      "url": "https://huggingface.co/collections/DKFZ-RadOpt/pyradplan-dosecalc",
+      "snippet": "Carries different architectures (Bayes, deterministic) for dose or LET calculation."
+    },
+    {
+      "title": "Dose Calculation — pyRadPlan 0.4.1 documentation",
+      "url": "https://pyradplan.readthedocs.io/en/latest/user_guide/concepts/dose_calculation.html",
+      "snippet": "Dose Calculation # Dose calculation in pyRadPlan produces a dose influence matrix (dij) that encodes the dose deposited in every voxel by every beamlet. The influence matrix is the central data structure for optimization: the dose for any fluence vector w is simply the matrix-vector product dij · w. Two top-level functions are provided: calc_dose_influence () — compute the full dose ..."
+    },
+    {
+      "title": "GitHub - e0404/pyRadPlan: An open-source radiotherapy treatment ...",
+      "url": "https://github.com/e0404/pyRadPlan",
+      "snippet": "An open-source radiotherapy treatment planning toolkit designed for interoperability with matRad developed @ DKFZ - e0404/pyRadPlan"
+    },
+    {
+      "title": "pyRadPlan-dosecalc-Bayes-proton-lung - Hugging Face",
+      "url": "https://huggingface.co/DKFZ-RadOpt/pyRadPlan-dosecalc-Bayes-proton-lung",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pyRadPlan documentation — pyRadPlan 0.4.1 documentation",
+      "url": "https://pyradplan.readthedocs.io/en/latest/",
+      "snippet": "pyRadPlan documentation # Date: Jun 15, 2026 Version: 0.4.1 pyRadPlan is an open-source, multi-modality radiotherapy treatment planning toolkit designed for interoperability with matRad. pyRadPlan is born from the established Matlab-based toolkit matRad. As such, pyRadPlan aims to provide a framework as well as tools for combining dose calculation with optimization with focus on ion planning ..."
+    }
+  ]
+}

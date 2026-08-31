@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "jhyuckkim/GPT-OSS-20B-Dense-4B-DO-ACP-K4",
+  "slug": "jhyuckkim-gpt-oss-20b-dense-4b-do-acp-k4",
+  "author": "jhyuckkim",
+  "url": "https://huggingface.co/jhyuckkim/GPT-OSS-20B-Dense-4B-DO-ACP-K4",
+  "created_at": "2026-08-31T01:54:59.000Z",
+  "updated_at": "2026-08-31T02:45:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "moe-to-dense",
+    "distillation",
+    "pruning",
+    "research-artifact",
+    "arxiv:2605.28207",
+    "conversational",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:finetune:openai/gpt-oss-20b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4185089880,
+  "parameters_human": "4.19B",
+  "storage_bytes": 8398094686,
+  "storage_human": "8.4 GB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT-OSS-20B-Dense-4B-DO-ACP-K4 - Hugging Face",
+      "url": "https://huggingface.co/jhyuckkim/GPT-OSS-20B-Dense-4B-DO-ACP-K4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jhyuckkim/GPT-OSS-20B-Dense-4B-CP-K4 · Hugging Face",
+      "url": "https://huggingface.co/jhyuckkim/GPT-OSS-20B-Dense-4B-CP-K4",
+      "snippet": "jhyuckkim / GPT-OSS-20B-Dense-4B-CP-K4 like 0 Text Generation Transformers Safetensors gpt_oss moe-to-dense distillation pruning research-artifact conversational arxiv:2605.28207 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "gpt-oss-20b Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-oss-20b",
+      "snippet": "Medium-sized open-weight model for low latency Compare"
+    },
+    {
+      "title": "Introducing gpt-oss - OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-oss/",
+      "snippet": "We&#x27;re releasing gpt-oss-120b and gpt-oss-20b—two state-of-the-art open-weight language models that deliver strong real-world performance at low cost. Available under the flexible Apache 2.0 license, these models outperform similarly sized open models on reasoning tasks, demonstrate strong tool use capabilities, and are optimized for efficient deployment on consumer hardware."
+    },
+    {
+      "title": "GPT-OSS-20B: A Comprehensive Deployment-Centric Analysis of OpenAI&#x27;s ...",
+      "url": "https://arxiv.org/html/2508.16700",
+      "snippet": "GPT-OSS-20B represents the first open-weight 20.9B parameter MoE model, making it an ideal candidate for comprehensive deployment analysis on a single-GPU (H100, bf16) setup. Understanding its deployment characteristics compared to dense models is crucial for practitioners making architectural decisions in production environments."
+    }
+  ]
+}

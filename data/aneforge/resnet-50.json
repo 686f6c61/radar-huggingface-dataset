@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "aneforge/resnet-50",
+  "slug": "aneforge-resnet-50",
+  "author": "aneforge",
+  "url": "https://huggingface.co/aneforge/resnet-50",
+  "created_at": "2026-08-31T02:19:38.000Z",
+  "updated_at": "2026-08-31T02:44:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "aneforge",
+  "languages": [],
+  "tags": [
+    "aneforge",
+    "safetensors",
+    "resnet",
+    "apple-neural-engine",
+    "image-classification",
+    "arxiv:2606.17090",
+    "base_model:microsoft/resnet-50",
+    "base_model:finetune:microsoft/resnet-50",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25610152,
+  "parameters_human": "25.6M",
+  "storage_bytes": 102482854,
+  "storage_human": "102 MB",
+  "base_model": "microsoft/resnet-50",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aneforge/resnet-50 · Hugging Face",
+      "url": "https://huggingface.co/aneforge/resnet-50",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "microsoft/resnet-50 · Hugging Face",
+      "url": "https://huggingface.co/microsoft/resnet-50",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ANEForge/bench/mlperf/resnet50.py at main - GitHub",
+      "url": "https://github.com/sbryngelson/ANEForge/blob/main/bench/mlperf/resnet50.py",
+      "snippet": "\"\"\"The ResNet-50 ONNX path: `model_path` if given, else the torchvision reference exported to a cache dir \"\"\"Rewrite an ONNX classifier so its single output is the pre-argmax logits, with a static batch of 1 --"
+    },
+    {
+      "title": "GitHub - sbryngelson/ANEForge: Train and run neural networks directly ...",
+      "url": "https://github.com/sbryngelson/ANEForge",
+      "snippet": "The MLPerf reference ResNet-50 runs pure-ANE and passes the upstream MLCommons submission_checker (v5.1, all three edge scenarios VALID) at the reference accuracy (fp16 76.44%, equal to fp32); one command reproduces it."
+    },
+    {
+      "title": "ANEForge: program the Apple Neural Engine directly, from Python",
+      "url": "https://aneforge.com/",
+      "snippet": "Apple Neural Engine · direct access · no CoreML Train and compute on the chip Apple built for inference only. ANEForge compiles a tensor graph into one program for the Apple Neural Engine and runs it from Python, without CoreML. The same path trains on the engine, optimizer included. The compute unit is fixed, so a model never falls to CPU/GPU."
+    }
+  ]
+}

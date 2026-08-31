@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AaravSharmapag/dissertation-image-captioning",
+  "slug": "aaravsharmapag-dissertation-image-captioning",
+  "author": "AaravSharmapag",
+  "url": "https://huggingface.co/AaravSharmapag/dissertation-image-captioning",
+  "created_at": "2026-08-31T09:45:47.000Z",
+  "updated_at": "2026-08-31T09:45:56.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AaravSharmapag (Aarav Sharma) - Hugging Face",
+      "url": "https://huggingface.co/AaravSharmapag",
+      "snippet": "User profile of Aarav Sharma on Hugging Face"
+    },
+    {
+      "title": "Pixels to Prose: Understanding the art of Image Captioning",
+      "url": "https://arxiv.org/html/2408.15714",
+      "snippet": "The model is trained first on the text modality, and then it uses an unsupervised feature alignment technique to align scene graphs between sentences and images. This is a noteworthy aspect of the training procedure. Finally, in [110] the authors incorporate human-like biases into image captioning through a scene graph auto-encoder."
+    },
+    {
+      "title": "A comprehensive review of image caption generation",
+      "url": "https://link.springer.com/article/10.1007/s11042-024-20095-0",
+      "snippet": "Image Caption generation is the process of generating textual descriptions of the images by using natural language processing and computer vision. This review explores the burgeoning field of automatic image caption generation, utilizing natural language processing as well as computer vision. This work is an attempt to cover core components, recent advancements, and prospects, it offers a ..."
+    },
+    {
+      "title": "Image Captioning: A Comprehensive Survey, Comparative Analysis of ...",
+      "url": "https://ieeexplore.ieee.org/document/10250630",
+      "snippet": "Image captioning is a research area that focuses on the development of algorithms and models that can automatically generate descriptive and coherent captions. This study provides a comprehensive overview of image captioning techniques, research gaps, and a comparative analysis of existing models. The main goal of image captioning is to generate captions that effectively convey an image&#x27;s ..."
+    },
+    {
+      "title": "Image Captioning - an overview | ScienceDirect Topics",
+      "url": "https://www.sciencedirect.com/topics/computer-science/image-captioning",
+      "snippet": "6.7 Image captioning Image captioning is an example of deep learning on mixed data modalities (texts and images). The model input is an image, and the model output is some caption describing the content in the image. Image captioning adopts an encoder-decoder framework consisting of two principal components, a convolutional neural network (CNN) for image feature extraction and a recurrent ..."
+    }
+  ]
+}

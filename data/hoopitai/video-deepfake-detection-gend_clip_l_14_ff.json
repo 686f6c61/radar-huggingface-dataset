@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "HoopitAI/video-deepfake-detection-GenD_CLIP_L_14_FF",
+  "slug": "hoopitai-video-deepfake-detection-gend_clip_l_14_ff",
+  "author": "HoopitAI",
+  "url": "https://huggingface.co/HoopitAI/video-deepfake-detection-GenD_CLIP_L_14_FF",
+  "created_at": "2026-08-31T09:06:56.000Z",
+  "updated_at": "2026-08-31T09:07:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "GenD",
+    "video-deepfake-detection",
+    "deepfake-detection",
+    "video-deepfake",
+    "face-forensics",
+    "computer-vision",
+    "gend",
+    "pytorch",
+    "image-classification",
+    "custom_code",
+    "en",
+    "dataset:faceforensics",
+    "base_model:openai/clip-vit-large-patch14",
+    "base_model:finetune:openai/clip-vit-large-patch14",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 303968258,
+  "parameters_human": "304.0M",
+  "storage_bytes": 1215928160,
+  "storage_human": "1.2 GB",
+  "base_model": "openai/clip-vit-large-patch14",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - yermandy/GenD: Official implementation for the WACV 2026 paper ...",
+      "url": "https://github.com/yermandy/GenD",
+      "snippet": "Official implementation for the WACV 2026 paper \"Deepfake Detection that Generalizes Across Benchmarks\". - yermandy/GenD"
+    },
+    {
+      "title": "yermandy/GenD_CLIP_L_14 · Hugging Face",
+      "url": "https://huggingface.co/yermandy/GenD_CLIP_L_14",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Deepfake Detection that Generalizes Across Benchmarks",
+      "url": "https://arxiv.org/html/2508.06248v4",
+      "snippet": "Recent efforts in detecting general AI-generated content [40, 29, 39, 36] and facial deepfakes specifically [18, 37, 22, 13, 57] have begun to adopt CLIP as a backbone for generalizable deepfake detection. These approaches can be broadly categorized by the type of model adaptation."
+    },
+    {
+      "title": "Deepfake Detection that Generalizes Across Benchmarks",
+      "url": "https://arxiv.org/html/2508.06248v3",
+      "snippet": "Recent efforts in detecting general AI-generated content [UniFD, CLIPping, SSL-in-DF, FatFormer] and facial deepfakes specifically [UDD, LipFD, DFD-FCG, ForensicsAdapter, Effort] have begun to adopt CLIP as a backbone for generalizable deepfake detection. These approaches can be broadly categorized by the type of model adaptation."
+    },
+    {
+      "title": "GenD/README.md at main · yermandy/GenD · GitHub",
+      "url": "https://github.com/yermandy/GenD/blob/main/README.md",
+      "snippet": "This example shows how to run inference with the pretrained GenD model from Hugging Face without other dependencies except torch and transformers. It expects that input images are already preprocessed by detector."
+    }
+  ]
+}

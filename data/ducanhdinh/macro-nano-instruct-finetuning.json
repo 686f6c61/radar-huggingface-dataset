@@ -5,7 +5,7 @@
   "author": "ducanhdinh",
   "url": "https://huggingface.co/ducanhdinh/Macro-Nano-Instruct-Finetuning",
   "created_at": "2026-08-18T13:11:24.000Z",
-  "updated_at": "2026-08-30T01:50:39.000Z",
+  "updated_at": "2026-08-30T10:15:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 90945077201,
-  "storage_human": "90.9 GB",
+  "storage_bytes": 92098231105,
+  "storage_human": "92.1 GB",
   "base_model": "ATH-MaaS/Marco-Nano-Instruct",
   "formats": [
     "safetensors"

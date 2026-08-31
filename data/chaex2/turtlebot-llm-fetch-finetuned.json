@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "chaex2/turtlebot-llm-fetch-finetuned",
+  "slug": "chaex2-turtlebot-llm-fetch-finetuned",
+  "author": "chaex2",
+  "url": "https://huggingface.co/chaex2/turtlebot-llm-fetch-finetuned",
+  "created_at": "2026-08-31T09:43:42.000Z",
+  "updated_at": "2026-08-31T10:09:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 501822705,
+  "storage_human": "502 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Updates (August 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "GitHub - kuleshov-group/llmtools: Finetuning Large Language Models on ...",
+      "url": "https://github.com/kuleshov-group/llmtools",
+      "snippet": "🔨 LLM finetuning in 2-bit, 3-bit, 4-bit precision using the ModuLoRA algorithm 🐍 Easy-to-use Python API for quantization, inference, and finetuning 🤖 Modular support for multiple LLMs, quantizers, and optimization algorithms 🤗 Share all your finetuned LLMs on the HuggingFace Hub LLMTools ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - rasbt/LLMs-from-scratch: Implement a ChatGPT-like LLM in ...",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "snippet": "This repository contains the code for developing, pretraining, and finetuning a GPT-like LLM and is the official code repository for the book Build a Large Language Model (From Scratch). In Build a Large Language Model (From Scratch), you&#x27;ll learn and understand how large language models (LLMs) work ..."
+    },
+    {
+      "title": "The Ultimate Guide to Fine-Tuning LLMs from Basics to Breakthroughs: An ...",
+      "url": "https://arxiv.org/html/2408.13296v1",
+      "snippet": "Fine-tuning a Large Language Model (LLM) starts with adapting the pre-trained model for specific tasks by updating its parameters using a new dataset. This involves cleaning and formatting the dataset to match the target task, such as instruction tuning, sentiment analysis, or topic mapping."
+    }
+  ]
+}

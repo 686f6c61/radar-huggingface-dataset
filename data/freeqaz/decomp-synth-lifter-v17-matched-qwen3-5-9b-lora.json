@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "freeqaz/decomp-synth-lifter-v17-matched-qwen3.5-9b-lora",
+  "slug": "freeqaz-decomp-synth-lifter-v17-matched-qwen3-5-9b-lora",
+  "author": "freeqaz",
+  "url": "https://huggingface.co/freeqaz/decomp-synth-lifter-v17-matched-qwen3.5-9b-lora",
+  "created_at": "2026-08-31T09:48:08.000Z",
+  "updated_at": "2026-08-31T09:48:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decompilation",
+    "reverse-engineering",
+    "code",
+    "lora",
+    "powerpc",
+    "cpp",
+    "agent",
+    "tool-use",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 366284061,
+  "storage_human": "366 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "decomp-synth-lifter-v16-v5chat-qwen3.5-9b-lora - Hugging Face",
+      "url": "https://huggingface.co/freeqaz/decomp-synth-lifter-v16-v5chat-qwen3.5-9b-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "freeqaz/decomp-synth-lifter-v10-qwen3.6-27b-lora · Hugging Face",
+      "url": "https://huggingface.co/freeqaz/decomp-synth-lifter-v10-qwen3.6-27b-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "decomp-synth/decomp_synth at main · freeqaz/decomp-synth - GitHub",
+      "url": "https://github.com/freeqaz/decomp-synth/tree/main/decomp_synth",
+      "snippet": "Guided, search-based C/C++ source synthesis for byte-exact decompilation matching - freeqaz/decomp-synth"
+    },
+    {
+      "title": "decomp-synth/docs at main · freeqaz/decomp-synth · GitHub",
+      "url": "https://github.com/freeqaz/decomp-synth/tree/main/docs",
+      "snippet": "Architecture, design, and methodology docs for the decomp-synth synthesis engine. For installation, configuration, and day-to-day usage, start with the top-level README."
+    },
+    {
+      "title": "decomp-synth — search-based decompilation | Free Wortley",
+      "url": "https://freeqaz.com/projects/decomp-synth",
+      "snippet": "A project-agnostic engine that searches for byte-exact source reconstructions of retail binaries, grown in seven weeks into a distributed compute farm and a pre-registered ML research program."
+    }
+  ]
+}

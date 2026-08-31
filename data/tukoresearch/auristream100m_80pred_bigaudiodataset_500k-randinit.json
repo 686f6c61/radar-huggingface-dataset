@@ -5,7 +5,7 @@
   "author": "TuKoResearch",
   "url": "https://huggingface.co/TuKoResearch/AuriStream100M_80Pred_BigAudioDataset_500k-randinit",
   "created_at": "2026-08-23T06:55:28.000Z",
-  "updated_at": "2026-08-23T06:55:39.000Z",
+  "updated_at": "2026-08-30T22:43:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 11,
+  "downloads_30d": 13,
   "trending_score": 0,
   "parameters": 594562176,
   "parameters_human": "594.6M",
-  "storage_bytes": 1189140376,
-  "storage_human": "1.2 GB",
+  "storage_bytes": 3567405032,
+  "storage_human": "3.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

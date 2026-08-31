@@ -5,7 +5,7 @@
   "author": "Ttimms",
   "url": "https://huggingface.co/Ttimms/KAT-Coder-V2.5-Dev-REAP-50-NVFP4-W4A4",
   "created_at": "2026-08-22T05:40:11.000Z",
-  "updated_at": "2026-08-22T05:46:28.000Z",
+  "updated_at": "2026-08-31T01:24:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -45,7 +45,7 @@
   "parameters_human": "18.54B",
   "storage_bytes": 13391518832,
   "storage_human": "13.4 GB",
-  "base_model": "Kwaipilot/KAT-Coder-V2.5-Dev",
+  "base_model": "Kwaipilot/KAT-Coder-V2.5-Dev, Ttimms/KAT-Coder-V2.5-Dev-REAP-50-bf16",
   "formats": [
     "safetensors"
   ],

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "schneid-erstefan/generation",
+  "slug": "schneid-erstefan-generation",
+  "author": "schneid-erstefan",
+  "url": "https://huggingface.co/schneid-erstefan/generation",
+  "created_at": "2026-08-31T01:52:53.000Z",
+  "updated_at": "2026-08-31T01:53:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Trained In DNA Invents 16 New Viruses Not Found In Nature - Forbes",
+      "url": "https://www.forbes.com/sites/maryroeloffs/2026/08/06/scientists-trained-an-ai-model-in-dna-and-it-invented-16-new-viruses/",
+      "snippet": "Scientists are worried about how smart DNA-trained artificial intelligence models could get—and that they could become a weapon in biological warfare."
+    },
+    {
+      "title": "How Schneider Electric Scales AI in Both Products and Processes",
+      "url": "https://sloanreview.mit.edu/article/how-schneider-electric-scales-ai-in-both-products-and-processes/",
+      "snippet": "AI in Action How Schneider Electric Scales AI in Both Products and Processes The French multinational avoids miring its innovations in pilot purgatory by moving forward with reasonable confidence rather than absolute certainty."
+    },
+    {
+      "title": "Schneider Electric announces multi-year initiative building an AI ...",
+      "url": "https://www.se.com/ww/en/about-us/newsroom/news/press-releases/schneider-electric-announces-multi-year-initiative-building-an-ai-native-ecosystem-for-sustainability-and-energy-management-6825414ce3742327470ccc23/",
+      "snippet": "Schneider Electric, the leader in the digital transformation of energy management and automation, today announced a landmark multi-year initiative dedicated to building a new kind of integrated ecosystem for sustainability and energy management, backed by a significant growth model that represents the company&#x27;s commitment to forward-thinking software and innovation. At the core of this ..."
+    },
+    {
+      "title": "ETAP and Schneider Electric Unveil Worlds First Digital Twin to ...",
+      "url": "https://www.se.com/ww/en/about-us/newsroom/news/press-releases/etap-and-schneider-electric-unveil-worlds-first-digital-twin-to-simulate-ai-factory-power-requirements-from-grid-to-chip-level-using-nvidia-omniverse-67d7c2b800f8176854091063/",
+      "snippet": "Schneider Electric, the leader in the digital transformation of energy management and automation, and ETAP, the industry and technology leader in power system design and operation, are unveiling a cutting-edge digital twin that can accurately design and simulate the power needs of AI Factories. Leveraging the NVIDIA Omniverse™ Blueprint for AI factory digital twins, Schneider Electric and ..."
+    },
+    {
+      "title": "My Complete FREE AI 3D Workflow — Characters & Props Pipeline",
+      "url": "https://www.youtube.com/watch?v=MjsQhbaonDc",
+      "snippet": "This is my complete FREE AI 3D workflow for creating AAA-style characters and props in 2026! In this video, I&#x27;ll show the exact pipeline I use to go from concept art and AI generation to sculpt ..."
+    }
+  ]
+}

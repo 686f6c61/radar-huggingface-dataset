@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "lsdyna/q-Taxi-v4",
+  "slug": "lsdyna-q-taxi-v4",
+  "author": "lsdyna",
+  "url": "https://huggingface.co/lsdyna/q-Taxi-v4",
+  "created_at": "2026-08-31T08:45:49.000Z",
+  "updated_at": "2026-08-31T08:45:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v4",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24619,
+  "storage_human": "24619 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DitDahDitDit/q-Taxi-v4 · Hugging Face",
+      "url": "https://huggingface.co/DitDahDitDit/q-Taxi-v4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "afeng05/q-Taxi-v4 · Hugging Face",
+      "url": "https://huggingface.co/afeng05/q-Taxi-v4",
+      "snippet": "Q-Learning agent playing Taxi-v4 This is a trained model of a Q-Learning agent playing Taxi-v4. Usage"
+    },
+    {
+      "title": "TaxiTuner v4: Over 2,000 Airports Tuned for Better Taxi - sayintentions.ai",
+      "url": "https://www.sayintentions.ai/blog/sayintentionsai-dynamic-tooltips-added-taxituner-v4-released",
+      "snippet": "TaxiTuner v4 improves taxi instructions at 2,000+ airports. Community-driven airport tuning for realistic ground ops."
+    },
+    {
+      "title": "lucassvalentim/taxi-v4-qlearning - GitHub",
+      "url": "https://github.com/lucassvalentim/taxi-v4-qlearning",
+      "snippet": "Academic Reinforcement Learning project implementing Q-Learning in the Taxi-v4 Gymnasium environment, including training, evaluation, visualization, and performance analysis. - lucassvalentim/taxi-..."
+    },
+    {
+      "title": "Taxi Tuner v4 - Full Manual — SayIntentions.AI Help Center",
+      "url": "https://kb.sayintentions.ai/article/taxi-tuner-v4-full-manual",
+      "snippet": "TaxiTuner v4 is a specialized, web-based CAD interface designed to bridge the gap between Microsoft Flight Simulator (MSFS) airport data and the SayIntentions.AI air traffic control ecosystem. It allows users to define exactly how AI aircraft and the ATC engine perceive the physical layout of an airport."
+    }
+  ]
+}

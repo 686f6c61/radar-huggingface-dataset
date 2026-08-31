@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/PocketWeights-Qwen2.5-14B-Coder-Creative-GGUF",
+  "slug": "mradermacher-pocketweights-qwen2-5-14b-coder-creative-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/PocketWeights-Qwen2.5-14B-Coder-Creative-GGUF",
+  "created_at": "2026-08-31T09:48:18.000Z",
+  "updated_at": "2026-08-31T10:41:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "dare_ties",
+    "qwen2",
+    "qwen2.5",
+    "coder",
+    "abliterated",
+    "uncensored",
+    "pocketweights",
+    "en",
+    "base_model:PocketWeights/PocketWeights-Qwen2.5-14B-Coder-Creative",
+    "base_model:quantized:PocketWeights/PocketWeights-Qwen2.5-14B-Coder-Creative",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102043525024,
+  "storage_human": "102.0 GB",
+  "base_model": "PocketWeights/PocketWeights-Qwen2.5-14B-Coder-Creative",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "⚡ PocketWeights: Qwen2.5 14B Coder-Creative (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/PocketWeights/PocketWeights-Qwen2.5-14B-Coder-Creative-GGUF",
+      "snippet": "This model is a cross-domain synthesis engineered to solve a common trade-off in mid-sized language models. Using the DARE-TIES algorithm, we injected the high-density coding logic of Qwen2.5-Coder-14B directly into an uncensored, extended-context Qwen2.5-14B-abliterated foundation."
+    },
+    {
+      "title": "mradermacher/Qwen2.5-14b-web-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-14b-web-GGUF",
+      "snippet": "Model tree for mradermacher/Qwen2.5-14b-web-GGUF Base model Etherll/Qwen2.5-14b-web Quantized"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/blog?id=qwen2.5",
+      "snippet": "Qwen Studio offers comprehensive functionality spanning chatbot, image and video understanding, image generation, document processing, web search integration, tool utilization, and artifacts."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "In the past three months since Qwen2&#x27;s release, numerous developers have built new models on the Qwen2 language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available ..."
+    }
+  ]
+}

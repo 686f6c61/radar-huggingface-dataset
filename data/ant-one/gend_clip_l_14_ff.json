@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Ant-One/GenD_CLIP_L_14_FF",
+  "slug": "ant-one-gend_clip_l_14_ff",
+  "author": "Ant-One",
+  "url": "https://huggingface.co/Ant-One/GenD_CLIP_L_14_FF",
+  "created_at": "2026-08-31T07:51:57.000Z",
+  "updated_at": "2026-08-31T07:52:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "GenD",
+    "deepfake-detection",
+    "video-deepfake",
+    "face-forensics",
+    "computer-vision",
+    "gend",
+    "pytorch",
+    "image-classification",
+    "custom_code",
+    "en",
+    "dataset:faceforensics",
+    "base_model:openai/clip-vit-large-patch14",
+    "base_model:finetune:openai/clip-vit-large-patch14",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 303968258,
+  "parameters_human": "304.0M",
+  "storage_bytes": 1215928160,
+  "storage_human": "1.2 GB",
+  "base_model": "openai/clip-vit-large-patch14",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yermandy/GenD_CLIP_L_14 · Hugging Face",
+      "url": "https://huggingface.co/yermandy/GenD_CLIP_L_14",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yermandy/GenD_CLIP_L_14 at main - Hugging Face",
+      "url": "https://huggingface.co/yermandy/GenD_CLIP_L_14/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - yermandy/GenD: Official implementation for the WACV 2026 paper ...",
+      "url": "https://github.com/yermandy/GenD",
+      "snippet": "The proposed method, GenD, fine-tunes only the Layer Normalization parameters (0.03% of the total) and enhances generalization by enforcing a hyperspherical feature manifold using L2 normalization and metric learning on it. We conducted an extensive evaluation on 14 benchmark datasets spanning from 2019 to 2025."
+    },
+    {
+      "title": "Available Model Variants | yermandy/GenD | DeepWiki",
+      "url": "https://deepwiki.com/yermandy/GenD/7.3-available-model-variants",
+      "snippet": "The CLIP-based variant uses OpenAI&#x27;s CLIP L/14 vision encoder, which was pre-trained on 400M image-text pairs using contrastive learning. This model provides the best balance between performance and computational efficiency."
+    },
+    {
+      "title": "GitHub - yermandy/deepfake-detection: Official implementation for the ...",
+      "url": "https://github.com/yermandy/deepfake-detection",
+      "snippet": "We leverage the Contrastive Language-Image Pre-training (CLIP) model, specifically its ViT-L/14 visual encoder, to develop a generalizable detection method that performs robustly across diverse datasets and unknown forgery techniques with minimal modifications to the original model."
+    }
+  ]
+}

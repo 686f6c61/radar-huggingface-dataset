@@ -5,7 +5,7 @@
   "author": "maxmarcon",
   "url": "https://huggingface.co/maxmarcon/klimt-diffusion",
   "created_at": "2026-07-15T20:40:24.000Z",
-  "updated_at": "2026-08-28T17:26:26.000Z",
+  "updated_at": "2026-08-30T17:44:35.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "unconditional-image-generation",
@@ -20,7 +20,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 227,
+  "downloads_30d": 210,
   "trending_score": 0,
   "parameters": 113673219,
   "parameters_human": "113.7M",

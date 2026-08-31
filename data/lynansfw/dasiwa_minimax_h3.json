@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "lynaNSFW/DaSiWa_MiniMax_H3",
+  "slug": "lynansfw-dasiwa_minimax_h3",
+  "author": "lynaNSFW",
+  "url": "https://huggingface.co/lynaNSFW/DaSiWa_MiniMax_H3",
+  "created_at": "2026-08-31T09:39:03.000Z",
+  "updated_at": "2026-08-31T10:02:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lynaNSFW/minimaxH3_Collection",
+    "base_model:adapter:lynaNSFW/minimaxH3_Collection",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20971470689,
+  "storage_human": "21.0 GB",
+  "base_model": "lynaNSFW/minimaxH3_Collection",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMaxAI/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "MiniMax H3 Open: Tutorials, Deployment & Workflows",
+      "url": "https://design.minimax.io/h3",
+      "snippet": "How To Use MiniMax H3 in ComfyUI: Best FREE AI Video Model of 2026! @MDMZ View on original site ↗ P"
+    },
+    {
+      "title": "ComfyUI-DaSiWa-Nodes/docs/minimax_h3_director.md at main ... - GitHub",
+      "url": "https://github.com/darksidewalker/ComfyUI-DaSiWa-Nodes/blob/main/docs/minimax_h3_director.md",
+      "snippet": "MiniMax H3 Director A timeline-based authoring node for ComfyUI&#x27;s native MiniMax H3 models. It centralizes media management, ordering, trimming, per-reference prompts, and the global prompt into one workflow node, validates H3 constraints before execution, and routes everything to the installed native MiniMax H3 implementation — no duplicate backend logic."
+    },
+    {
+      "title": "⛩️ DaSiWa MiniMax H3 ⛩️ - DaSiWa Hybrid v1 - civitai.com",
+      "url": "https://civitai.com/models/2877206/dasiwa-minimax-h3",
+      "snippet": "This model is a community-quantized derivative of MiniMax H3, distributed under the MiniMax H3 Community License Agreement (see the license on this page). By downloading or using this file, you accept and are responsible for compliance with those terms, including the Acceptable Use Policy and the laws of your own jurisdiction."
+    }
+  ]
+}

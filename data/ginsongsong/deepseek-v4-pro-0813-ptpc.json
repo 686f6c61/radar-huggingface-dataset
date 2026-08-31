@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ginsongsong/DeepSeek-V4-Pro-0813-PTPC",
+  "slug": "ginsongsong-deepseek-v4-pro-0813-ptpc",
+  "author": "ginsongsong",
+  "url": "https://huggingface.co/ginsongsong/DeepSeek-V4-Pro-0813-PTPC",
+  "created_at": "2026-08-31T01:58:09.000Z",
+  "updated_at": "2026-08-31T02:46:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "arxiv:2606.19348",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "w8a8_fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 838749117962,
+  "parameters_human": "838.75B",
+  "storage_bytes": 892777314078,
+  "storage_human": "892.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ginsongsong/DeepSeek-V4-Pro-0813-PTPC · Hugging Face",
+      "url": "https://huggingface.co/ginsongsong/DeepSeek-V4-Pro-0813-PTPC",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Pro-0813 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-v4-pro-0813 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-pro-0813",
+      "snippet": "DeepSeek V4 scales to 1M-token context windows with efficient MoE architecture for coding tasks."
+    },
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://deepseek.com/en/index.html",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source frontier LLMs including DeepSeek-V4, DeepSeek-R1, and DeepSeek-Coder. Chat with DeepSeek AI or integrate via API."
+    },
+    {
+      "title": "deepseek-v4-pro-0813/README.md at main - GitHub",
+      "url": "https://github.com/deepseek-v4-pro-0813/deepseek-v4-pro-0813/blob/main/README.md",
+      "snippet": "Deepseek v4 pro 0813 benchmark - how does it score? Deepseek v4 pro 0813 benchmark results top the open-weight charts on HumanEval, MBPP, MATH and long-context retrieval, sitting near GPT-5.6 and Claude Mythos 5 class models."
+    }
+  ]
+}

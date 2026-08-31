@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ajrayman/Cautiousness_binary",
+  "slug": "ajrayman-cautiousness_binary",
+  "author": "ajrayman",
+  "url": "https://huggingface.co/ajrayman/Cautiousness_binary",
+  "created_at": "2024-10-03T09:46:15.000Z",
+  "updated_at": "2026-08-31T09:33:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 57,
+  "trending_score": 0,
+  "parameters": 124647170,
+  "parameters_human": "124.6M",
+  "storage_bytes": 13515134025,
+  "storage_human": "13.5 GB",
+  "base_model": "roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ajrayman/Cautiousness_binary · Hugging Face",
+      "url": "https://huggingface.co/ajrayman/Cautiousness_binary",
+      "snippet": "ajrayman / Cautiousness_binary like 0 Text Classification Transformers Safetensors roberta Generated from Trainer Inference Endpoints License:mit Model card FilesFiles and versions Community Train Deploy Use this model Edit model card Cautiousness_binary Model description Intended uses & limitations Training and evaluation data Training procedure"
+    },
+    {
+      "title": "ajrayman (Adam) - Hugging Face",
+      "url": "https://huggingface.co/ajrayman",
+      "snippet": "Recent Activity updated a model about 2 months ago ajrayman/Imagination_binary updated a model about 2 months ago ajrayman/Cautiousness_binary"
+    },
+    {
+      "title": "Multimodal Situational Safety - arXiv.org",
+      "url": "https://arxiv.org/html/2410.06172v1",
+      "snippet": "The model must judge the safety of the user&#x27;s query or instruction based on the visual context and adjust their answer accordingly. Given an unsafe visual context, the model should remind the user of the potential risk instead of directly answering the user&#x27;s query. However, current MLLMs struggle to achieve this in most unsafe situations."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

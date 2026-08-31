@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "rdo1/euro-dashcam-vehicle-classifier",
+  "slug": "rdo1-euro-dashcam-vehicle-classifier",
+  "author": "rdo1",
+  "url": "https://huggingface.co/rdo1/euro-dashcam-vehicle-classifier",
+  "created_at": "2026-08-31T10:35:19.000Z",
+  "updated_at": "2026-08-31T10:35:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "cars",
+    "vehicle-make-model",
+    "dashcam",
+    "image-classification",
+    "computer-vision",
+    "pytorch",
+    "convnext",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 113347310,
+  "storage_human": "113 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Road Object Classification — Umich 2026",
+      "url": "https://generalquak.github.io/Road-Side-Object-Detection/",
+      "snippet": "Road Object Classification Baseline ML classifiers on dashcam footage — KNN, Naive Bayes, SVM, and Decision Tree tested across 2, 3, and 5+ object classes in MATLAB."
+    },
+    {
+      "title": "Jordo23/vehicle-classifier · Hugging Face",
+      "url": "https://huggingface.co/Jordo23/vehicle-classifier",
+      "snippet": "Vehicle Classifier - Dude, What&#x27;s My Car? A fine-tuned EfficientNet-B4 model for identifying vehicle make, model, and year from photographs. Part of the \"Dude, What&#x27;s My Car?\" vehicle identification system. Model Description This model classifies vehicles into 8,949 unique classes covering make, model, and year combinations. It was trained on the VMMRdb (Vehicle Make and Model Recognition ..."
+    },
+    {
+      "title": "Cars Computer Vision Datasets and Models - Roboflow",
+      "url": "https://universe.roboflow.com/browse/transportation/cars",
+      "snippet": "Roboflow hosts the world&#x27;s biggest set of open-source car datasets and pre-trained computer vision models. The category includes images of cars from around the world, curated and annotated by the Roboflow Community. These projects can help you get started with things like object speed calculation, object tracking, autonomous vehicles, and smart-city transportation innovations."
+    },
+    {
+      "title": "todorristov/car_classification_model · Hugging Face",
+      "url": "https://huggingface.co/todorristov/car_classification_model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ashwmurt/dpt_hybrid_midas",
+  "slug": "ashwmurt-dpt_hybrid_midas",
+  "author": "ashwmurt",
+  "url": "https://huggingface.co/ashwmurt/dpt_hybrid_midas",
+  "created_at": "2026-08-31T09:42:21.000Z",
+  "updated_at": "2026-08-31T09:42:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "qai-hub-models",
+    "qualcomm",
+    "android",
+    "depth-estimation",
+    "arxiv:2103.13413",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Intel/dpt-hybrid-midas · Hugging Face",
+      "url": "https://huggingface.co/Intel/dpt-hybrid-midas",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dpt-hybrid-midas: Image-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/dpt-hybrid-midas-intel",
+      "snippet": "Overview dpt-hybrid-midas is a Dense Prediction Transformer (DPT) model trained on 1.4 million images for monocular depth estimation, developed by Intel. The model uses a ViT-hybrid backbone with additional neck and head components for dense depth prediction. Built with the transformers library, it delivers zero-shot cross-dataset depth estimation without task-specific fine-tuning. The hybrid ..."
+    },
+    {
+      "title": "dpt-hybrid-midas · Models",
+      "url": "https://www.modelscope.cn/models/Intel/dpt-hybrid-midas",
+      "snippet": "DPT uses the Vision Transformer (ViT) as backbone and adds a neck + head on top for monocular depth estimation. This repository hosts the \"hybrid\" version of the model as stated in the paper. DPT-Hybrid diverges from DPT by using ViT-hybrid as a backbone and taking some activations from the backbone."
+    },
+    {
+      "title": "Intel/dpt-hybrid-midas at main - Hugging Face",
+      "url": "https://huggingface.co/Intel/dpt-hybrid-midas/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dpt-hybrid-midas — Depth Estimation Model by Intel",
+      "url": "https://modeldatabase.com/Intel/dpt-hybrid-midas.html",
+      "snippet": "Intel/dpt-hybrid-midas is an open source depth estimation model built with transformers, 2,940,731 downloads. Compare and deploy AI models on Model Database."
+    }
+  ]
+}

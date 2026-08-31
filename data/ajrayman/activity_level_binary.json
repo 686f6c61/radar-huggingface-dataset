@@ -5,7 +5,7 @@
   "author": "ajrayman",
   "url": "https://huggingface.co/ajrayman/Activity_Level_binary",
   "created_at": "2024-10-02T17:06:39.000Z",
-  "updated_at": "2026-08-30T13:36:14.000Z",
+  "updated_at": "2026-08-30T15:45:13.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 6,
+  "downloads_30d": 84,
   "trending_score": 0,
   "parameters": 124647170,
   "parameters_human": "124.6M",
-  "storage_bytes": 14363674082,
-  "storage_human": "14.4 GB",
+  "storage_bytes": 15360904513,
+  "storage_human": "15.4 GB",
   "base_model": "roberta-base",
   "formats": [
     "safetensors"

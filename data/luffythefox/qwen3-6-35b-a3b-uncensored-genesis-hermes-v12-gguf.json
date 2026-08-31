@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-GGUF",
+  "slug": "luffythefox-qwen3-6-35b-a3b-uncensored-genesis-hermes-v12-gguf",
+  "author": "LuffyTheFox",
+  "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-GGUF",
+  "created_at": "2026-07-13T06:40:13.000Z",
+  "updated_at": "2026-08-31T05:26:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "hermes",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "hermes",
+    "uncensored",
+    "qwen3.6",
+    "moe",
+    "gguf",
+    "vision",
+    "multimodal",
+    "genesis",
+    "agentic",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "multilingual",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "base_model:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "base_model:finetune:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 580,
+  "downloads_30d": 1005078,
+  "trending_score": 34,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF",
+      "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF/discussions/31",
+      "snippet": "A few words about doing Genesis for other big models? Kimi K3, Qwen3.8-Max, DeepSeek Flash etc."
+    },
+    {
+      "title": "LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V6-GGUF · Qwen3.6 ...",
+      "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V6-GGUF/discussions/7",
+      "snippet": "In V5 version I distilled a lot of noise from all tensors in model excluding token_embd.weight, output.weight, norms and 1D tensors, and MoE router tensors with preserved 99% of signal and training data."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF — Model for Ryu · Ryu",
+      "url": "https://ryuhq.com/store/models/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF",
+      "snippet": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF is a model by LuffyTheFox from Hugging Face, browsable and runnable in Ryu. Topics: hermes, gguf, uncensored, qwen3.6, moe."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.6-35b-a3b-uncensored-genesis-hermes-v7-gguf-luffythefox",
+      "snippet": "Overview Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF is a 35-billion parameter mixture-of-experts language model created by LuffyTheFox that applies a post-training tensor repair technique called Genesis to reduce accumulated training noise without retraining. The model contains 256 experts with 8 routed plus 1 shared expert per token, uses a hybrid architecture combining Gated DeltaNet ..."
+    },
+    {
+      "title": "LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V3-GGUF",
+      "url": "https://aiany.app/item/luffythefox-qwen3-6-35b-a3b-uncensored-genesis-hermes-v3-gguf",
+      "snippet": "A GGUF-format Qwen3.6 35B base model image-text-to-text release repaired via tensor-level SVD/scale correction and packaged with Hermes agent tweaks; multimodal (vision + text), MoE architecture, ready for GGUF runtimes like llama.cpp."
+    }
+  ]
+}

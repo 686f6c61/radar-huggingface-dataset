@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "bhaskar1707/smolvlm2-bangla-bayanno-chitrojera-lora",
+  "slug": "bhaskar1707-smolvlm2-bangla-bayanno-chitrojera-lora",
+  "author": "bhaskar1707",
+  "url": "https://huggingface.co/bhaskar1707/smolvlm2-bangla-bayanno-chitrojera-lora",
+  "created_at": "2026-08-31T10:11:26.000Z",
+  "updated_at": "2026-08-31T10:19:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "vision-language-model",
+    "visual-question-answering",
+    "bengali",
+    "bangla",
+    "lora",
+    "smolvlm2",
+    "vqa",
+    "image-text-to-text",
+    "conversational",
+    "bn",
+    "base_model:HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+    "base_model:adapter:HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115789098,
+  "storage_human": "116 MB",
+  "base_model": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bhaskar1707/smolvlm2-bangla-bayanno-lora · Hugging Face",
+      "url": "https://huggingface.co/bhaskar1707/smolvlm2-bangla-bayanno-lora",
+      "snippet": "bhaskar1707 / smolvlm2-bangla-bayanno-lora like 0 PEFT Safetensors Remian9080/Bangla-Bayanno-Full Bengali vision-language vqa bengali bangla lora smolvlm2 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "bhaskar1707/smolvlm2-bangla-bayanno-lora at main - Hugging Face",
+      "url": "https://huggingface.co/bhaskar1707/smolvlm2-bangla-bayanno-lora/tree/main",
+      "snippet": "bhaskar1707 / smolvlm2-bangla-bayanno-lora like 0 PEFT Safetensors Remian9080/Bangla-Bayanno-Full Bengali vision-language vqa bengali bangla lora smolvlm2 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "README.md · bhaskar1707/smolvlm2-bangla-bayanno-lora at main",
+      "url": "https://huggingface.co/bhaskar1707/smolvlm2-bangla-bayanno-lora/blob/main/README.md",
+      "snippet": "bhaskar1707 / smolvlm2-bangla-bayanno-lora like 0 PEFT Safetensors Remian9080/Bangla-Bayanno-Full Bengali vision-language vqa bengali bangla lora smolvlm2 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

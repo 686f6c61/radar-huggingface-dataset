@@ -25,10 +25,11 @@
     "arxiv:2606.23050",
     "license:mit",
     "eval-results",
+    "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 4154,
-  "downloads_30d": 3082873,
+  "likes": 4156,
+  "downloads_30d": 3107972,
   "trending_score": 33,
   "parameters": 3336106240,
   "parameters_human": "3.34B",

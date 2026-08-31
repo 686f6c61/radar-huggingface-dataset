@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "sxiong/SWAP_ReClor_Disc_Llama3-8B-LoRA",
+  "slug": "sxiong-swap_reclor_disc_llama3-8b-lora",
+  "author": "sxiong",
+  "url": "https://huggingface.co/sxiong/SWAP_ReClor_Disc_Llama3-8B-LoRA",
+  "created_at": "2026-08-31T08:38:22.000Z",
+  "updated_at": "2026-08-31T08:38:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reasoning",
+    "logic",
+    "text-generation",
+    "en",
+    "dataset:sxiong/SWAP_disc",
+    "arxiv:2002.04326",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:adapter:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042201,
+  "storage_human": "185 MB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sxiong/SWAP_v2_MATH_Disc_Llama3-8B-LoRA · Hugging Face",
+      "url": "https://huggingface.co/sxiong/SWAP_v2_MATH_Disc_Llama3-8B-LoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sxiong/SWAP_GSM8K_Disc_Llama3-8B-LoRA · Hugging Face",
+      "url": "https://huggingface.co/sxiong/SWAP_GSM8K_Disc_Llama3-8B-LoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SWAP_v2_MATH_Disc_Llama3-8B-LoRA - FriendliAI",
+      "url": "https://friendli.ai/models/sxiong/SWAP_v2_MATH_Disc_Llama3-8B-LoRA",
+      "snippet": "Run SWAP_v2_MATH_Disc_Llama3-8B-LoRA with FriendliAI inference. This repository contains the MATH discriminator (Llama3-8B-LoRA) trained with SWAPv2."
+    },
+    {
+      "title": "My First LLM Fine-Tune: What I Actually Learned Running LoRA ... - Medium",
+      "url": "https://medium.com/@surenred.1993/my-first-llm-fine-tune-what-i-actually-learned-running-lora-on-llama-3-1-8b-79fe8731ffa8",
+      "snippet": "Lately I&#x27;ve been deliberately moving deeper into ML platform work, and the fastest way I know to understand a system is to run it myself. So I did my first real fine-tune: Llama 3.1 8B, LoRA ..."
+    },
+    {
+      "title": "SWAP_MATH500_Disc_Llama3-8B-LoRA - friendli.ai",
+      "url": "https://friendli.ai/models/sxiong/SWAP_MATH500_Disc_Llama3-8B-LoRA",
+      "snippet": "Run SWAP_MATH500_Disc_Llama3-8B-LoRA with FriendliAI inference. This repository contains the MATH500 discriminator (Llama3-8B-LoRA) trained with SWAPdisc."
+    }
+  ]
+}

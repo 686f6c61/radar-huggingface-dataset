@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "CrossNow/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8",
+  "slug": "crossnow-nvidia-nemotron-3-nano-30b-a3b-fp8",
+  "author": "CrossNow",
+  "url": "https://huggingface.co/CrossNow/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8",
+  "created_at": "2026-08-31T08:09:52.000Z",
+  "updated_at": "2026-08-31T08:09:53.000Z",
+  "license": "nvidia-nemotron-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ja",
+    "it"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "nvidia",
+    "pytorch",
+    "conversational",
+    "custom_code",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ja",
+    "it",
+    "dataset:nvidia/Nemotron-Pretraining-Code-v1",
+    "dataset:nvidia/Nemotron-CC-v2",
+    "dataset:nvidia/Nemotron-Pretraining-SFT-v1",
+    "dataset:nvidia/Nemotron-CC-Math-v1",
+    "dataset:nvidia/Nemotron-Pretraining-Code-v2",
+    "dataset:nvidia/Nemotron-Pretraining-Specialized-v1",
+    "dataset:nvidia/Nemotron-CC-v2.1",
+    "dataset:nvidia/Nemotron-CC-Code-v1",
+    "dataset:nvidia/Nemotron-Pretraining-Dataset-sample",
+    "dataset:nvidia/Nemotron-Competitive-Programming-v1",
+    "dataset:nvidia/Nemotron-Math-v2",
+    "dataset:nvidia/Nemotron-Agentic-v1",
+    "dataset:nvidia/Nemotron-Math-Proofs-v1",
+    "dataset:nvidia/Nemotron-Instruction-Following-Chat-v1",
+    "dataset:nvidia/Nemotron-Science-v1",
+    "dataset:nvidia/Nemotron-3-Nano-RL-Training-Blend",
+    "arxiv:2512.20848",
+    "arxiv:2512.20856",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577946256,
+  "parameters_human": "31.58B",
+  "storage_bytes": 32699241029,
+  "storage_human": "32.7 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+      "snippet": "Nemotron 3 Nano: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Model for Agentic Reasoning ... Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel ... Scaling Real-Time Voice Agents with Cache-Aware Streaming ASR ... The Open Evaluation Standard: Benchmarking NVIDIA Nemotron 3 Nano with NeMo Evaluator"
+    },
+    {
+      "title": "NVIDIA-Nemotron-3-Nano-30B-A3B-FP8 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-FP8",
+      "snippet": "nvidia/Nemotron-CC-v2.1 ... Inference Optimized Checkpoints (with Model Optimizer) ... NVIDIA Nemotron v3 ... NVIDIA Nemotron 3: Efficient and Open Intelligence ... Nemotron 3 Nano: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Model for Agentic Reasoning ... Nemotron 3 Nano &#92;- A new Standard for Efficient, Open, and Intelligent ..."
+    },
+    {
+      "title": "nemotron-3-nano-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-nano-30b-a3b",
+      "snippet": "Open, efficient MoE model with 1M context, excelling in coding, reasoning, instruction following, tool calling, and more"
+    },
+    {
+      "title": "NVIDIA Nemotron 3 Family of Models",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3/",
+      "snippet": "We announce NVIDIA Nemotron 3, the most efficient family of open models with leading accuracy for agentic AI applications. The Nemotron 3 family consists of three models: Nano, Super, and Ultra."
+    },
+    {
+      "title": "nemotron-3-nano-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-nano-30b-a3b/modelcard",
+      "snippet": "The pre-training data has a cutoff date of June 25, 2025. Description Nemotron-3-Nano-30B-A3B is a large language model (LLM) trained from scratch by NVIDIA, and designed as a unified model for both reasoning and non-reasoning tasks. It responds to user queries and tasks by first generating a reasoning trace and then concluding with a final ..."
+    }
+  ]
+}

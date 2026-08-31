@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Don-Don/mars-order-10m",
+  "slug": "don-don-mars-order-10m",
+  "author": "Don-Don",
+  "url": "https://huggingface.co/Don-Don/mars-order-10m",
+  "created_at": "2026-08-31T08:18:56.000Z",
+  "updated_at": "2026-08-31T08:55:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama2",
+    "finance",
+    "market-simulation",
+    "causal-lm",
+    "arxiv:2409.07486",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10065856,
+  "parameters_human": "10.1M",
+  "storage_bytes": 40267504,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OrderModel and ML Components | microsoft/MarS | DeepWiki",
+      "url": "https://deepwiki.com/microsoft/MarS/3-ordermodel-and-ml-components",
+      "snippet": "OrderModel and ML Components Relevant source files This document provides an overview of the machine learning components in the MarS system, focusing on the OrderModel and OrderTokenizer classes that form the core AI engine for generating realistic market orders. These components implement transformer-based neural networks that learn patterns from financial market data to simulate order ..."
+    },
+    {
+      "title": "OrderModel Architecture | microsoft/MarS | DeepWiki",
+      "url": "https://deepwiki.com/microsoft/MarS/3.1-ordermodel-architecture",
+      "snippet": "This document provides a detailed technical overview of the OrderModel architecture, the core machine learning component of the MarS system. The OrderModel is a transformer-based neural network designed to generate realistic market orders by learning from historical order patterns."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/mars-map-autoregressive",
+      "snippet": "MARS uses an autoregressive transformer architecture built on the HuggingFace ecosystem. The model processes satellite or aerial imagery tiles and outputs GeoJSON geometries (polygons for buildings and waterbodies, polylines for roads/railways) with category labels and confidence scores."
+    },
+    {
+      "title": "MarS/market_simulation/models/order_model.py at main - GitHub",
+      "url": "https://github.com/microsoft/MarS/blob/main/market_simulation/models/order_model.py",
+      "snippet": "MarS: a Financial Market Simulation Engine Powered by Generative Foundation Model - microsoft/MarS"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

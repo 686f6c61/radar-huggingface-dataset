@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "TomaszSekreckiSimaAi/Qwen3-tts",
+  "slug": "tomaszsekreckisimaai-qwen3-tts",
+  "author": "TomaszSekreckiSimaAi",
+  "url": "https://huggingface.co/TomaszSekreckiSimaAi/Qwen3-tts",
+  "created_at": "2026-08-31T08:34:41.000Z",
+  "updated_at": "2026-08-31T08:41:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8074182814,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "snippet": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS?pubDate=20260331",
+      "snippet": "We release Qwen3-TTS, a series of powerful speech generation capabilities developed by Qwen, offering comprehensive support for voice clone, voice design, ultra-high-quality human-like speech generation, and natural language-based voice control. It provides developers and users with the most ..."
+    },
+    {
+      "title": "Qwen3-TTS: The Complete 2026 Guide to Open-Source Voice Cloning and AI ...",
+      "url": "https://dev.to/czmilo/qwen3-tts-the-complete-2026-guide-to-open-source-voice-cloning-and-ai-speech-generation-1in6",
+      "snippet": "🎯 Core Highlights (TL;DR) Qwen3-TTS is a powerful open-source text-to-speech model supporting voice cloning, voice design, and multilingual generation across 10 languages 3-second voice cloning: Clone any voice with just 3 seconds of audio input using Qwen3-TTS base models State-of-the-art performance: Outperforms competitors like MiniMax, ElevenLabs, and SeedTTS in voice quality and ..."
+    },
+    {
+      "title": "Qwen3 TTS AI Text to Speech Model with Voice Cloning",
+      "url": "https://crun.ai/models/qwen3-tts",
+      "snippet": "Qwen3 TTS is an AI text-to-speech model that converts text into natural human-like speech, supporting multilingual voice synthesis, voice cloning, and flexible voice control with low-latency audio generation for dubbing, assistants, and content creation."
+    },
+    {
+      "title": "Qwen3 TTS TTS — Qwen3 TTS AI Voice Generator (21 Voices) | TTS.ai",
+      "url": "https://tts.ai/voices/qwen3-tts/",
+      "snippet": "Alibaba&#x27;s 1.7B multilingual model offering both 9 preset voices and voice design from a plain-text description. Try Qwen3 TTS text-to-speech free on TTS.ai — generate and download natural Qwen3 TTS speech online."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "NostraEmpire/mirror-qwen2-audio-7b-instruct",
+  "slug": "nostraempire-mirror-qwen2-audio-7b-instruct",
+  "author": "NostraEmpire",
+  "url": "https://huggingface.co/NostraEmpire/mirror-qwen2-audio-7b-instruct",
+  "created_at": "2026-08-31T09:49:45.000Z",
+  "updated_at": "2026-08-31T09:59:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2_audio",
+    "chat",
+    "audio",
+    "audio-text-to-text",
+    "en",
+    "arxiv:2407.10759",
+    "arxiv:2311.07919",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8397094912,
+  "parameters_human": "8.40B",
+  "storage_bytes": 16794296368,
+  "storage_human": "16.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2-Audio-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2-Audio-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NostraEmpire/mirror-qwen2.5-vl-7b-instruct · Hugging Face",
+      "url": "https://huggingface.co/NostraEmpire/mirror-qwen2.5-vl-7b-instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen2-Audio: The official repo of Qwen2-Audio chat ...",
+      "url": "https://github.com/QwenLM/Qwen2-Audio",
+      "snippet": "2024.8.9 🎉 We released the checkpoints of both Qwen2-Audio-7B and Qwen2-Audio-7B-Instruct on ModelScope and Hugging Face. 2024.7.15 🎉 We released the paper of Qwen2-Audio, introducing the relevant model structure, training methods, and model performance. Check our report for details! 2023.11.30 🔥 We released the Qwen-Audio series."
+    },
+    {
+      "title": "Qwen/Qwen2-Audio-7B-Instruct | vLLM Recipes",
+      "url": "https://vllm-vacc.vastaitech.com/Qwen/Qwen2-Audio-7B-Instruct",
+      "snippet": "Qwen2-Audio a large audio-language model capable of accepting diverse audio signal inputs and performing audio analysis or generating direct textual responses based on speech instructions."
+    },
+    {
+      "title": "Installation & Setup | QwenLM/Qwen2-Audio | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen2-Audio/2-installation-and-setup",
+      "snippet": "This document provides detailed instructions for installing and setting up Qwen2-Audio models for audio processing and interaction. For information on how to use these models after installation, please refer to the Usage Guide. 1. System Requirements Qwen2-Audio is a collection of transformer-based audio language models with 7B parameters."
+    }
+  ]
+}

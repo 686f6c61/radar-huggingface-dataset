@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "RelNet-X-Code/Qwen3.5-9B",
+  "slug": "relnet-x-code-qwen3-5-9b",
+  "author": "RelNet-X-Code",
+  "url": "https://huggingface.co/RelNet-X-Code/Qwen3.5-9B",
+  "created_at": "2026-08-31T07:47:18.000Z",
+  "updated_at": "2026-08-31T07:47:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19319118862,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5 9B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-5-9b/",
+      "snippet": "Qwen3.5 9B is a dense vision-language model in the Qwen3.5 family aimed at stronger reasoning, visual understanding, and agentic behavior on Jetson. This entry uses a W4A16 checkpoint on Jetson Orin and an NVFP4 checkpoint on Jetson Thor."
+    },
+    {
+      "title": "Qwen3.5-9B | Awesome Agents",
+      "url": "https://awesomeagents.ai/models/qwen-3-5-9b/",
+      "snippet": "Qwen3.5-9B is a 9B dense model that outperforms Qwen3-30B on most benchmarks and beats GPT-5-Nano on vision tasks. Natively multimodal with 262K-1M context, Apache 2.0 licensed."
+    },
+    {
+      "title": "Qwen3.5 9B — Doubleword | Multimodal Model",
+      "url": "https://doubleword.ai/models/qwen3-5-9b/",
+      "snippet": "Qwen3.5 9B: a highly capable 9B-parameter multimodal model optimized for efficient agentic workflows and native tool calling. Text, image & video via OpenAI-compatible API."
+    },
+    {
+      "title": "Qwen3.5 9B Models - Intelligence, Performance & Price Comparison ...",
+      "url": "https://artificialanalysis.ai/models/releases/qwen3-5-9b",
+      "snippet": "The Qwen3.5 9B release offers 2 models, each with different intelligence, performance, and pricing characteristics. Below is a comparison of the key metrics across the 2 models. For intelligence, the top model of Qwen3.5 9B is Qwen3.5 9B (Reasoning) at 22. For output speed, the fastest model is Qwen3.5 9B (Non-reasoning) at 95 t/s."
+    },
+    {
+      "title": "Qwen3.5 9B model | Bitcoin.com AI",
+      "url": "https://ai.bitcoin.com/models/text/qwen/qwen3.5-9b",
+      "snippet": "Qwen3.5 9B is a multimodal foundation model from the Qwen 3.5 family, built for efficient reasoning, coding, and visual understanding in a compact 9B architecture."
+    }
+  ]
+}

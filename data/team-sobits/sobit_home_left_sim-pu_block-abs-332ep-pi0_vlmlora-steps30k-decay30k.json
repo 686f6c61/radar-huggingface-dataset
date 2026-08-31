@@ -5,7 +5,7 @@
   "author": "team-sobits",
   "url": "https://huggingface.co/team-sobits/sobit_home_left_sim-pu_block-abs-332ep-pi0_vlmlora-steps30k-decay30k",
   "created_at": "2026-08-05T17:47:28.000Z",
-  "updated_at": "2026-08-30T10:05:39.000Z",
+  "updated_at": "2026-08-30T20:18:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -14,8 +14,8 @@
   "tags": [
     "lerobot",
     "safetensors",
-    "robotics",
     "pi0",
+    "robotics",
     "dataset:team-sobits/sobit_home_left_sim-pu_block-abs-332ep",
     "base_model:lerobot/pi0_base",
     "base_model:finetune:lerobot/pi0_base",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1263028832,
-  "storage_human": "1.3 GB",
+  "storage_bytes": 1888260596,
+  "storage_human": "1.9 GB",
   "base_model": "lerobot/pi0_base",
   "formats": [
     "safetensors"

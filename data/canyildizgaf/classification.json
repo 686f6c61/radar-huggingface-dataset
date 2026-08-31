@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "canyildizgaf/classification",
+  "slug": "canyildizgaf-classification",
+  "author": "canyildizgaf",
+  "url": "https://huggingface.co/canyildizgaf/classification",
+  "created_at": "2026-08-31T10:33:39.000Z",
+  "updated_at": "2026-08-31T10:33:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "canyildizgaf (Can Yildiz) - Hugging Face",
+      "url": "https://huggingface.co/canyildizgaf",
+      "snippet": "it&#x27;s complicated"
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "GitHub - mirzayasirabdullahbaig07/Image-Classification-Model: An AI ...",
+      "url": "https://github.com/mirzayasirabdullahbaig07/Image-Classification-Model",
+      "snippet": "Upload an image and get instant classification results. Model predicts among 10 categories: airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck Powered by a deep learning CNN model trained on CIFAR-10. Simple and interactive Streamlit interface. Sidebar with developer details and portfolio links."
+    },
+    {
+      "title": "vibecoder1998/real-vs-ai-generated-synthetic-image-classification - GitHub",
+      "url": "https://github.com/vibecoder1998/real-vs-ai-generated-synthetic-image-classification",
+      "snippet": "This project aims to develop a deep learning model capable of accurately classifying images into two categories: Real images AI-generated (fake) images The problem is formulated as a binary image..."
+    },
+    {
+      "title": "canyildizgaf/dataset_065369652_ocean_image_text - Hugging Face",
+      "url": "https://huggingface.co/datasets/canyildizgaf/dataset_065369652_ocean_image_text",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

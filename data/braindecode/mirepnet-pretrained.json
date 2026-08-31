@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "braindecode/mirepnet-pretrained",
+  "slug": "braindecode-mirepnet-pretrained",
+  "author": "braindecode",
+  "url": "https://huggingface.co/braindecode/mirepnet-pretrained",
+  "created_at": "2026-08-31T10:05:25.000Z",
+  "updated_at": "2026-08-31T10:05:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "braindecode",
+  "languages": [],
+  "tags": [
+    "braindecode",
+    "pytorch",
+    "safetensors",
+    "eeg",
+    "motor-imagery",
+    "foundation-model",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5143299,
+  "parameters_human": "5.1M",
+  "storage_bytes": 41197402,
+  "storage_human": "41 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MIRepNet: A pipeline and pre-trained model for EEG ... - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0950705126006921",
+      "snippet": "This paper proposes MIRepNet, an EEG pre-trained model explicitly designed for MI (whose pipeline is shown in Fig. 1). MIRepNet leverages neurophysiological insights of the MI paradigm to construct a tailored preprocessing and representation learning pipeline, significantly enhancing the generalizability and efficiency of EEG decoding."
+    },
+    {
+      "title": "[2507.20254] MIRepNet: A Pipeline and Foundation Model for EEG-Based ...",
+      "url": "https://arxiv.org/abs/2507.20254",
+      "snippet": "This paper proposes MIRepNet, the first EEG foundation model tailored for the MI paradigm. MIRepNet comprises a high-quality EEG preprocessing pipeline incorporating a neurophysiologically-informed channel template, adaptable to EEG headsets with arbitrary electrode configurations."
+    },
+    {
+      "title": "GitHub - staraink/MIRepNet: The first EEG foundation model explicitly ...",
+      "url": "https://github.com/staraink/MIRepNet",
+      "snippet": "To address these issues, we propose MIRepNet, the first EEG foundation model explicitly tailored for the MI paradigm. MIRepNet comprises a high-quality EEG preprocessing pipeline incorporating a neurophysiologically-informed channel template, adaptable to EEG headsets with arbitrary electrode configurations."
+    },
+    {
+      "title": "GitHub - braindecode/braindecode: Deep learning software to decode EEG ...",
+      "url": "https://github.com/braindecode/braindecode",
+      "snippet": "Braindecode is an open-source Python toolbox for decoding raw electrophysiological brain data with deep learning models. It includes dataset fetchers, data preprocessing and visualization tools, as well as implementations of several deep learning architectures and data augmentations for analysis of EEG, ECoG and MEG."
+    },
+    {
+      "title": "Braindecode — Decode raw EEG, ECoG and MEG with deep learning",
+      "url": "https://braindecode.org/stable/index.html",
+      "snippet": "Braindecode is an open-source PyTorch toolbox for decoding raw EEG, ECoG and MEG with deep learning. Datasets, preprocessing, augmentations, and 65+ published model architectures."
+    }
+  ]
+}

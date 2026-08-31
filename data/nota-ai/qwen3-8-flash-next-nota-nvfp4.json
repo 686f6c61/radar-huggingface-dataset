@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "nota-ai/Qwen3.8-Flash-Next-Nota-NVFP4",
+  "slug": "nota-ai-qwen3-8-flash-next-nota-nvfp4",
+  "author": "nota-ai",
+  "url": "https://huggingface.co/nota-ai/Qwen3.8-Flash-Next-Nota-NVFP4",
+  "created_at": "2026-08-31T07:38:33.000Z",
+  "updated_at": "2026-08-31T07:53:47.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "nota",
+    "nvfp4",
+    "moe",
+    "quantization",
+    "conversational",
+    "en",
+    "zh",
+    "ko",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 0,
+  "trending_score": 13,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 186484331251,
+  "storage_human": "186.5 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "By default, Qwen3.8-Flash-Next retains thinking blocks from all historical messages, maintaining a complete reasoning trace across the conversation. This behavior, known as preserved thinking, ensures full context continuity and is especially beneficial for agent scenarios where decision consistency and reduced redundant reasoning are critical."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    },
+    {
+      "title": "primitive-ai/Qwen3.8-Flash-Next-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/primitive-ai/Qwen3.8-Flash-Next-NVFP4",
+      "snippet": "The 180B Flash-Next on one GPU. Qwen3.8-Flash-Next is 360 GB in BF16 and needs two data-center GPUs in FP8. This build serves it on one 96 GB Blackwell: 88.8 GiB of VRAM, the 51B n-gram table in host RAM, and no patched runtime."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next 176B Now Available - Announcements - NVIDIA ...",
+      "url": "https://forums.developer.nvidia.com/t/qwen3-8-flash-next-176b-now-available/381413",
+      "snippet": "Qwen3.8-Flash-Next is a multimodal mixture-of-experts (MoE) model with a 125B-parameter main model supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token. It has a native 262,144-token context window, extensible to 1M tokens with YaRN Performance on GB300 NVL72 Running the FP8 variant with TensorRT-LLM on GB300 NVL72 (72 Blackwell Ultra GPUs, 130 TB/s ..."
+    }
+  ]
+}

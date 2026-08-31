@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "INCModel3/GLM-5.1-MXFP4-Mixed-CT-AutoRound",
+  "slug": "incmodel3-glm-5-1-mxfp4-mixed-ct-autoround",
+  "author": "INCModel3",
+  "url": "https://huggingface.co/INCModel3/GLM-5.1-MXFP4-Mixed-CT-AutoRound",
+  "created_at": "2026-08-31T10:25:40.000Z",
+  "updated_at": "2026-08-31T10:54:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2309.05516",
+    "license:mit",
+    "eval-results",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753864139008,
+  "parameters_human": "753.86B",
+  "storage_bytes": 413659018658,
+  "storage_human": "413.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - intel/auto-round: A SOTA quantization toolkit for high ...",
+      "url": "https://github.com/intel/auto-round",
+      "snippet": "Fast Mixed Bits/Dtypes Scheme Generation Automatically configure in minutes, with about 1.1X-1.5X the model&#x27;s BF16 RAM size as overhead. Accuracy results and user guide."
+    },
+    {
+      "title": "INC4AI/GLM-5.1-int4-mixed-AutoRound · Hugging Face",
+      "url": "https://huggingface.co/INC4AI/GLM-5.1-int4-mixed-AutoRound",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "INC4AI/GLM-5.1-int4-mixed-AutoRound at main - Hugging Face",
+      "url": "https://huggingface.co/INC4AI/GLM-5.1-int4-mixed-AutoRound/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Releases: intel/auto-round - GitHub",
+      "url": "https://github.com/intel/auto-round/releases",
+      "snippet": "Suppress misleading warning when detecting model type for GGUF export directories by @lvliang-intel in #1887 Fix performance regression by @wenhuach21 in #1886 Fix random rotation and update rotation doc. by @lkk12014402 in #1884 Update auto-round-lib release package build by @chensuyue in #1895 Fix CI coverage & bug grep issue by @chensuyue in ..."
+    },
+    {
+      "title": "Otter Meeting Agent - AI Notetaker, Transcription, Insights",
+      "url": "https://otter.ai/",
+      "snippet": "Otter AI Meeting Agent supports real-time transcription, live chat, automated summaries, insights, and action items."
+    }
+  ]
+}

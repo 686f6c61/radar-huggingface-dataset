@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "martinezjavier/multitask",
+  "slug": "martinezjavier-multitask",
+  "author": "martinezjavier",
+  "url": "https://huggingface.co/martinezjavier/multitask",
+  "created_at": "2026-08-31T10:09:52.000Z",
+  "updated_at": "2026-08-31T10:10:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multi-Task Learning for Classification with Keras",
+      "url": "https://medium.com/data-science/multi-task-learning-for-computer-vision-classification-with-keras-36c52e6243d2",
+      "snippet": "Multi-Task Learning for Classification with Keras Learn how to build a model capable of performing multiple image classifications concurrently with Multiple-Task Learning If you want to read this …"
+    },
+    {
+      "title": "martinezjavier (Javier L. Martinez) - Hugging Face",
+      "url": "https://huggingface.co/martinezjavier",
+      "snippet": "Data engineer transitioning to ML"
+    },
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "Put 300+ AI models to work — the right one for every job. No single model wins at everything. Multi puts 300+ models from every major lab to work across four workflows, so you deploy the best AI for each task instead of forcing one to do it all. Using the right model for the right project is the advantage most people leave on the table."
+    },
+    {
+      "title": "MultiTask AI Model - a Hugging Face Space by 1Prarthana",
+      "url": "https://huggingface.co/spaces/1Prarthana/MultiTask-AI-Model",
+      "snippet": "Use Gemini AI to chat, generate captions for images, get text embeddings, or ask any questions. Upload an image, enter text, or ask a question, and get tailored responses."
+    },
+    {
+      "title": "Multi AI — All AI Models in One Place",
+      "url": "https://multi-ai.ai/en",
+      "snippet": "All AI models in one place Work with 100+ models from Claude, GPT-4, Midjourney and other leaders through a unified interface. No more switching between services."
+    }
+  ]
+}

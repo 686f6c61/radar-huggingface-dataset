@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ECCV26-Tomato-Phenotyping/SYNTOM-SAM3",
+  "slug": "eccv26-tomato-phenotyping-syntom-sam3",
+  "author": "ECCV26-Tomato-Phenotyping",
+  "url": "https://huggingface.co/ECCV26-Tomato-Phenotyping/SYNTOM-SAM3",
+  "created_at": "2026-08-31T09:11:28.000Z",
+  "updated_at": "2026-08-31T09:11:38.000Z",
+  "license": "sam-license",
+  "license_family": "unknown",
+  "pipeline_tag": "mask-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "sam",
+    "sam3",
+    "agriculture",
+    "agritech",
+    "plant-phenotyping",
+    "tomato",
+    "greenhouse",
+    "semantic-segmentation",
+    "synthetic-data",
+    "sim-to-real",
+    "mask-generation",
+    "dataset:ECCV26-Tomato-Phenotyping/SYNTOM",
+    "arxiv:2607.18576",
+    "base_model:facebook/sam3",
+    "base_model:finetune:facebook/sam3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3371967290,
+  "storage_human": "3.4 GB",
+  "base_model": "facebook/sam3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ECCV26-Tomato-Phenotyping/SYNTOM · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/ECCV26-Tomato-Phenotyping/SYNTOM",
+      "snippet": "Text-conditioned Segmentation for Tomato Phenotyping via Procedural Synthetic Data"
+    },
+    {
+      "title": "ECCV26-Tomato-Phenotyping/SYNTOM at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/ECCV26-Tomato-Phenotyping/SYNTOM/tree/main",
+      "snippet": "ECCV26-Tomato-Phenotyping / SYNTOM like 0 Follow ECCV26-Tomato-Phenotyping 1 Tasks: Image Segmentation Object Detection Sub-tasks: semantic-segmentation instance-segmentation Size: 10K<n<100K ArXiv: arxiv:2607.18576 Tags: agriculture agritech plant-phenotyping synthetic-data tomato greenhouse + 6 License: cc-by-4. Dataset card FilesFiles and ..."
+    },
+    {
+      "title": "Text-conditioned Segmentation for Tomato Phenotyping via Procedural ...",
+      "url": "https://arxiv.org/html/2607.18576v1",
+      "snippet": "In this work, we present a sim-to-real framework for tomato plant segmentation that combines synthetic data generation with fine-tuning of a foundation model. We model a commercial cherry tomato greenhouse and use it to generate a large-scale synthetic dataset under diverse viewpoints, lighting conditions, and plant morphology."
+    },
+    {
+      "title": "Text-conditioned Segmentation for Tomato Phenotyping via Procedural ...",
+      "url": "https://arxiv.org/html/2607.18576",
+      "snippet": "We propose a text-conditioned foundation-model fine-tuning pipeline for greenhouse crop phenotyping, fine-tuning SAM 3 via synthetic parameter-efficient fine-tuning, full fine-tuning, and weight interpolation."
+    },
+    {
+      "title": "Text-conditioned Segmentation for Tomato Phenotyping via Procedural ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/text-conditioned-segmentation-tomato-phenotyping-via-procedural",
+      "snippet": "These annotation caveats mean standard IoU metrics underestimate segmentation quality for comprehensive models. The paper publicly releases fine-tuned SAM 3 weights, the procedural L-system model, and the full synthetic dataset to enable direct benchmarking against these real-domain evaluation challenges."
+    }
+  ]
+}

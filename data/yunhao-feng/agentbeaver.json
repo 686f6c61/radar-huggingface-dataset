@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Yunhao-Feng/AgentBeaver",
+  "slug": "yunhao-feng-agentbeaver",
+  "author": "Yunhao-Feng",
+  "url": "https://huggingface.co/Yunhao-Feng/AgentBeaver",
+  "created_at": "2026-08-31T09:08:32.000Z",
+  "updated_at": "2026-08-31T09:08:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yunhao Feng | Agent Safety Researcher",
+      "url": "https://yunhao-feng.github.io/",
+      "snippet": "Yunhao Feng&#x27;s academic homepage: agent safety, computer-use agents, backdoor attacks, benchmarks, and trustworthy AI."
+    },
+    {
+      "title": "Yunhao-Feng (YunhaoFeng) · GitHub",
+      "url": "https://github.com/Yunhao-Feng",
+      "snippet": "Intern of Ant Group. Yunhao-Feng has 79 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - Yunhao-Feng/Yunhao-Feng.github.io: The repo of my personal ...",
+      "url": "https://github.com/Yunhao-Feng/Yunhao-Feng.github.io",
+      "snippet": "Hi, I&#x27;m Yunhao Feng 👋 AI & ML Researcher · Agent Safety · Reinforcement Learning I build reliable and practical AI systems, with a focus on safe agents, robust decision-making, and real-world deployment."
+    },
+    {
+      "title": "Yunhao-Feng (YunHao-Feng) - Hugging Face",
+      "url": "https://huggingface.co/Yunhao-Feng/papers",
+      "snippet": "AI Safety, Security, Agentic RL"
+    },
+    {
+      "title": "‪Yunhao Feng‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=7xD7XIUAAAAJ&hl=en",
+      "snippet": "‪Ant Group‬ - ‪‪Cited by 147‬‬ - ‪Deep Learning‬"
+    }
+  ]
+}

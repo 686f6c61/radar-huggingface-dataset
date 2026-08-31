@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 86130558088,
-  "storage_human": "86.1 GB",
+  "storage_bytes": 15194125696,
+  "storage_human": "15.2 GB",
   "base_model": "thinkingmachines/Inkling",
   "formats": [
     "safetensors"

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mathes09/mathes-tamil-voice-agent",
+  "slug": "mathes09-mathes-tamil-voice-agent",
+  "author": "mathes09",
+  "url": "https://huggingface.co/mathes09/mathes-tamil-voice-agent",
+  "created_at": "2026-08-31T09:21:06.000Z",
+  "updated_at": "2026-08-31T09:21:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "chatterbox",
+  "languages": [],
+  "tags": [
+    "chatterbox",
+    "text-to-speech",
+    "voice-cloning",
+    "tamil",
+    "multilingual",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Tamil AI Voice Generator - Text to Speech - Musely",
+      "url": "https://musely.ai/tools/tamil-ai-voice",
+      "snippet": "Generate natural Tamil AI voices from text instantly with Musely. Perfect for dubbing, e-learning, and content creation. Try our AI Tamil voice generator now!"
+    },
+    {
+      "title": "Tamil AI Voice Generator - Free Text to Speech | Voicelime",
+      "url": "https://voicelime.com/tamil-voice-generator",
+      "snippet": "Tamil AI Voice Generator Convert your text into natural-sounding Tamil speech with our free AI voice generator. Choose from multiple Tamil voices - perfect for YouTube, TikTok, podcasts, presentations, and more."
+    },
+    {
+      "title": "Realistic Tamil Text to Speech & Tamil AI Voices - FlexClip",
+      "url": "https://www.flexclip.com/tools/tamil-text-to-speech/",
+      "snippet": "Smart AI TTS Our Tamil Text-to-Speech & AI Voice Generator uses advanced TTS technology to instantly convert text into natural, fluent speech, making it easy to create Tamil voiceovers, audio, and text-to-speech videos."
+    },
+    {
+      "title": "Free AI Tamil Text to Speech Generator | Musely AI Voice",
+      "url": "https://musely.ai/tools/tamil-text-to-speech",
+      "snippet": "What makes Musely&#x27;s Tamil AI voices sound natural? Our Tamil AI voices are powered by advanced deep learning models that analyze vast amounts of Tamil speech data. This enables them to replicate natural intonation, pronunciation, and emotional nuances, resulting in highly realistic and human-like audio output."
+    },
+    {
+      "title": "Cartesia | Tamil text to speech",
+      "url": "https://www.cartesia.ai/languages/tamil",
+      "snippet": "The world&#x27;s fastest voice AI model that transforms Tamil text into natural speech, so you can expand your global reach."
+    }
+  ]
+}

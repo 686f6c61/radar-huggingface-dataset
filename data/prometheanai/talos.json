@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "prometheanAI/Talos",
+  "slug": "prometheanai-talos",
+  "author": "prometheanAI",
+  "url": "https://huggingface.co/prometheanAI/Talos",
+  "created_at": "2026-08-31T01:51:22.000Z",
+  "updated_at": "2026-08-31T02:31:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llm",
+    "languagae_model",
+    "text-generation",
+    "en",
+    "dataset:OpenAssistant/oasst1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prometheanAI/Talos · Hugging Face",
+      "url": "https://huggingface.co/prometheanAI/Talos",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Promethean-Studios/talos: Talos is an open-source foundation ...",
+      "url": "https://github.com/Promethean-Studios/talos",
+      "snippet": "Talos is an open-source foundation model built for reasoning, coding, tool use, and autonomous interaction. Targeting 400B+ parameters and a 125K-token context window, Talos aims to make frontier-scale AI accessible while pushing toward AI that doesn&#x27;t just talk—it acts."
+    },
+    {
+      "title": "Releases · Promethean-Studios/talos · GitHub",
+      "url": "https://github.com/Promethean-Studios/talos/releases",
+      "snippet": "Talos is an open-source foundation model built for reasoning, coding, tool use, and autonomous interaction. Targeting 400B+ parameters and a 125K-token context window, Talos aims to make frontier-scale AI accessible while pushing toward AI that doesn&#x27;t just talk—it acts."
+    },
+    {
+      "title": "Home | prometheanai",
+      "url": "https://www.prometheanai.com/",
+      "snippet": "Promethean AI is an Artificial intelligence assistant for professional creative teams that build virtual 3d worlds."
+    },
+    {
+      "title": "AMD buys chip startup that hardwires AI models into its silicon",
+      "url": "https://www.cnbc.com/2026/08/06/amd-buys-taalas-startup-that-hardwires-ai-models-into-its-silicon.html",
+      "snippet": "Advanced Micro Devices has agreed to acquire Taalas, a startup that makes chips for inference. Taalas&#x27; accelerators are customized, or hard-wired for a single AI model. The deal comes just over ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/STL-xlm-roberta-large-stance-finetuned",
+  "slug": "tadiecool29-stl-xlm-roberta-large-stance-finetuned",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/STL-xlm-roberta-large-stance-finetuned",
+  "created_at": "2026-08-31T08:05:01.000Z",
+  "updated_at": "2026-08-31T08:06:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559894532,
+  "parameters_human": "559.9M",
+  "storage_bytes": 2256730337,
+  "storage_human": "2.3 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tadiecool29/STL-xlm-roberta-large-stance-finetuned · Hugging Face",
+      "url": "https://huggingface.co/tadiecool29/STL-xlm-roberta-large-stance-finetuned",
+      "snippet": "Instructions to use tadiecool29/STL-xlm-roberta-large-stance-finetuned with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "tadiecool29/xlmr-stl-large-stance · Hugging Face",
+      "url": "https://huggingface.co/tadiecool29/xlmr-stl-large-stance",
+      "snippet": "xlmr-stl-large-stance This model is a fine-tuned version of FacebookAI/xlm-roberta-large on the None dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Xlm Roberta Large models | The GTM Directory",
+      "url": "https://thegtmdirectory.com/models/facebookai-xlm-roberta-large",
+      "snippet": "XLM-RoBERTa Large is Facebook AI&#x27;s open-weight multilingual encoder, trained on 2.5TB of filtered CommonCrawl data spanning 100 languages and optimized for cross-lingual discriminative tasks. Its standout trait is strong transfer to both high-resource and low-resource languages without language-specific fine-tuning, with the large variant outperforming the base particularly on long text ..."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/xlm-roberta-large",
+      "snippet": "xlm-roberta-large is a pre-trained language model available on the Hugging Face Hub. It&#x27;s specifically designed for the fill-mask task in the transformers library. If you want to learn more about the model&#x27;s architecture, hyperparameters, limitations, and biases, you can find this information on the model&#x27;s dedicated Model Card on the Hugging Face Hub ."
+    },
+    {
+      "title": "xlm-roberta-large — Fill-Mask Model | Model Database",
+      "url": "https://modeldatabase.com/xlm-roberta-large.html",
+      "snippet": "xlm-roberta-large is an open source fill-mask model built with transformers, 1,742,244 downloads. Compare and deploy AI models on Model Database."
+    }
+  ]
+}

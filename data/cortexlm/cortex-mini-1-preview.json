@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "CortexLM/Cortex-Mini-1-Preview",
+  "slug": "cortexlm-cortex-mini-1-preview",
+  "author": "CortexLM",
+  "url": "https://huggingface.co/CortexLM/Cortex-Mini-1-Preview",
+  "created_at": "2026-08-31T08:38:58.000Z",
+  "updated_at": "2026-08-31T08:39:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "qwen3.8",
+    "cortex",
+    "cortexlm",
+    "post-training",
+    "vision-language",
+    "conversational",
+    "preview",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816096,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models and regional availability for Cortex AI Functions",
+      "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/aisql-regional-availability",
+      "snippet": "Guides Snowflake AI & ML Cortex AI Functions Models and regional availability Models and regional availability for Cortex AI Functions Snowflake Cortex AI Functions support a range of language and embedding models with varying capabilities, context-window sizes, and regional availability. Use this reference to choose a model for your workload, check its input and output limits, confirm that it ..."
+    },
+    {
+      "title": "Codex Mini - LLM Model Details - AI4Chat",
+      "url": "https://ai4chat.co/model-chat/codex-mini",
+      "snippet": "Codex Mini is a fast, lightweight AI model optimized for scalable code generation, debugging, and understanding via natural language prompts in CLI workflows. Supercharge your development with low-latency performance, long context support, and seamless integration for efficient, cost-effective coding productivity."
+    },
+    {
+      "title": "CortexLM (Cortex Foundation) - Hugging Face",
+      "url": "https://huggingface.co/CortexLM/models",
+      "snippet": "AI & ML interests We are the Cortex Foundation, an entity dedicated to advancing Bittensor, which enables decentralization in the field of artificial intelligence. Our mission is to catalyze progress in AI by actively supporting development, research, and education around Bittensor, with a particular focus on its ability to decentralize and democratize access to machine learning resources. We ..."
+    },
+    {
+      "title": "codex-mini-latest Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/codex-mini-latest",
+      "snippet": "Fast reasoning model optimized for the Codex CLI Fast reasoning model optimized for the Codex CLI"
+    },
+    {
+      "title": "Cortex AI Function Studio - Snowflake Documentation",
+      "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/ai-function-studio",
+      "snippet": "Available to accounts in select regions. Cortex AI Function Studio features a CoCo skill for creating, evaluating, and optimizing production-ready Cortex AI Functions for unstructured data workflows. It provides a structured development lifecycle that automates prompt engineering, model selection, evaluation, and optimization."
+    }
+  ]
+}

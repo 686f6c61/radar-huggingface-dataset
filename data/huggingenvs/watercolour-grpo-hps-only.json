@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "HuggingEnvs/watercolour-grpo-hps-only",
+  "slug": "huggingenvs-watercolour-grpo-hps-only",
+  "author": "HuggingEnvs",
+  "url": "https://huggingface.co/HuggingEnvs/watercolour-grpo-hps-only",
+  "created_at": "2026-08-31T10:42:10.000Z",
+  "updated_at": "2026-08-31T10:42:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "grpo",
+    "trl",
+    "reinforcement-learning",
+    "rl-environment",
+    "openenv",
+    "p5js",
+    "generative-art",
+    "lora",
+    "dataset:HuggingEnvs/watercolour-reference-pool",
+    "dataset:HuggingEnvs/watercolour-rollouts-hps-only",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 141861694,
+  "storage_human": "142 MB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Watercolour Grpo - a Hugging Face Space by sergiopaniego",
+      "url": "https://huggingface.co/spaces/sergiopaniego/watercolour-grpo",
+      "snippet": "Run the program to open a visual dashboard that presents your logged metrics and tracking data in an easy‑to‑read format. No special input is needed—just import the library and call the show functi..."
+    },
+    {
+      "title": "sergiopaniego/watercolour-grpo · Hugging Face",
+      "url": "https://huggingface.co/sergiopaniego/watercolour-grpo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft Paint and Photos apps add invisible watermark to AI-generated ...",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/microsoft-paint-and-photos-apps-add-invisible-watermark-to-ai-generated-content-developer-reverse-engineers-guid-embedding",
+      "snippet": "Server-issued GUID watermark gets applied to all images generated via Paint or Photos AI features, even those that are made locally on Copilot+ PCs."
+    },
+    {
+      "title": "NMM-OUR STORY ️ LUIZA GALLERY | Congratulations dear ... - Facebook",
+      "url": "https://www.facebook.com/groups/1373824793193841/posts/2168803943695918/",
+      "snippet": "Good morning. Happy Tuesday This was an AI Challenge using 3 T&#x27;s. I chose trunk, tarantula, and tophat, colorful watercolor style. Brooke Webb #AIChallenges #aiart #happytuesday Suzanne Horrocks and Just Imagine 2 reactions · 6 comments"
+    },
+    {
+      "title": "Best Watercolor AI Image Prompts (Free, Copy-Paste Ready)",
+      "url": "https://aetherwavestudio.com/static/ai-image-prompts/watercolor-image-prompts.html",
+      "snippet": "Curated Watercolor AI image prompts you can copy into any model - Midjourney, DALL-E, Flux, Nano Banana, Stable Diffusion. Free library with playable previews."
+    }
+  ]
+}

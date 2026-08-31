@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Damirchik/vla-grounder-qwen3.5-9b-rl4vla-pi0",
+  "slug": "damirchik-vla-grounder-qwen3-5-9b-rl4vla-pi0",
+  "author": "Damirchik",
+  "url": "https://huggingface.co/Damirchik/vla-grounder-qwen3.5-9b-rl4vla-pi0",
+  "created_at": "2026-08-31T01:54:46.000Z",
+  "updated_at": "2026-08-31T04:41:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "robotics",
+    "vision-language-action",
+    "vla-grounder",
+    "grpo",
+    "qwen3.5",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839715630,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Damirchik/vla-grounder-qwen3.5-9b-rl4vla-pi0 · Hugging Face",
+      "url": "https://huggingface.co/Damirchik/vla-grounder-qwen3.5-9b-rl4vla-pi0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-9B - 262k context, multimodal, open source",
+      "url": "https://www.llmreference.com/model/qwen3.5-9b",
+      "snippet": "Qwen3.5-9B is an open-source model in the Qwen3.5 family. The structured metadata tracks a 262k-token context window, multimodal input, function calling, tool use, and structured outputs."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Qwen3.5-Dense (2B/4B/9B) - vLLM Ascend - docs.vllm.ai",
+      "url": "https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.5-Dense.html",
+      "snippet": "Qwen3.5-Dense (Qwen3.5-2B/4B/9B) 1 Introduction ¶ Qwen3.5-2B, Qwen3.5-4B, and Qwen3.5-9B are dense hybrid Mamba-Transformer language models in the Qwen3.5 family. They share the same hybrid attention design (GDN + full attention) and are suitable for general-purpose text generation tasks such as dialogue, content creation, and code generation."
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-9B",
+      "snippet": "Qwen3.5-9B is a dense multimodal model from the Qwen3.5 family — same gated delta networks hybrid attention, vision encoder, 262K context, and MTP support as its larger siblings, but sized to fit comfortably on a single 24 GB GPU."
+    }
+  ]
+}

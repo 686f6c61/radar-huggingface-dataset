@@ -5,7 +5,7 @@
   "author": "PollardWeights",
   "url": "https://huggingface.co/PollardWeights/Qwen2.5-Coder-1.5B-Instruct-Pollard",
   "created_at": "2026-08-23T23:01:37.000Z",
-  "updated_at": "2026-08-24T00:26:45.000Z",
+  "updated_at": "2026-08-30T21:48:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "imatrix"
   ],
   "likes": 1,
-  "downloads_30d": 283,
+  "downloads_30d": 444,
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",

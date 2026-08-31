@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "RiccardoBarbieri/retrieval",
+  "slug": "riccardobarbieri-retrieval",
+  "author": "RiccardoBarbieri",
+  "url": "https://huggingface.co/RiccardoBarbieri/retrieval",
+  "created_at": "2026-08-31T07:38:22.000Z",
+  "updated_at": "2026-08-31T07:38:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Information Retrieval in the Age of Generative AI: The RGB Model",
+      "url": "https://arxiv.org/html/2504.20610",
+      "snippet": "The advent of Large Language Models (LLMs) and generative AI is fundamentally transforming information retrieval and processing on the Internet, bringing both great potential and significant concerns regarding content authenticity and reliability. This paper presents a novel quantitative approach to shed light on the complex information dynamics arising from the growing use of generative AI ..."
+    },
+    {
+      "title": "Riccardo Barbieri | ScienceDirect",
+      "url": "https://www.sciencedirect.com/author/35483096800/riccardo-barbieri",
+      "snippet": "Explainable AI techniques further provided insights into the decision-making processes and the relevance of specific physiological features, with galvanic skin response peaks emerging as the most significant feature for both valence and arousal dimensions."
+    },
+    {
+      "title": "Papers by Riccardo Barbieri — AI Research Profile",
+      "url": "https://www.aimodels.fyi/author-profile/riccardo-barbieri-f6c0335e-9c30-4bbd-afc5-81b596857a4c",
+      "snippet": "Browse AI research papers authored by Riccardo Barbieri. 2 indexed papers. Collaborates with Alberto Redaelli, Domenico Aquino, Simona Ferrante and others."
+    },
+    {
+      "title": "Information Retrieval in the Age of Generative AI: The RGB Model",
+      "url": "https://arxiv.org/html/2504.20610v1",
+      "snippet": "Abstract. The advent of Large Language Models (LLMs) and generative AI is fundamentally transforming information retrieval and processing on the Internet, bringing both great potential and significant concerns regarding content authenticity and reliability. This paper presents a novel quantitative approach to shed light on the complex information dynamics arising from the growing use of ..."
+    },
+    {
+      "title": "Information Retrieval in the Age of Generative AI: The RGB Model ...",
+      "url": "https://dl.acm.org/doi/10.1145/3726302.3730008",
+      "snippet": "The advent of Large Language Models (LLMs) and generative AI is fundamentally transforming information retrieval and processing on the Internet, bringing both great potential and significant concerns regarding content authenticity and reliability. This paper presents a novel quantitative approach to shed light on the complex information dynamics arising from the growing use of generative AI ..."
+    }
+  ]
+}

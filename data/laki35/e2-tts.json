@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "laki35/e2-tts",
+  "slug": "laki35-e2-tts",
+  "author": "laki35",
+  "url": "https://huggingface.co/laki35/e2-tts",
+  "created_at": "2026-08-31T09:09:44.000Z",
+  "updated_at": "2026-08-31T09:09:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "f5_tts",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172017924,
+  "storage_human": "172 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "laki35 (laki) - Hugging Face",
+      "url": "https://huggingface.co/datasets/laki35/",
+      "snippet": "User profile of laki on Hugging Face Recent Activity liked a model2 days ago Sunbird/faster-whisper-51-african-languages liked a model2 days ago Sunbird/Sunflower-Qwen3.5-9B updated a model2 days ago laki35/somi View all activity"
+    },
+    {
+      "title": "laki35/MOSS-TTS-Nano-Small · Hugging Face",
+      "url": "https://huggingface.co/laki35/MOSS-TTS-Nano-Small",
+      "snippet": "MOSS-TTS-Nano is an open-source multilingual tiny speech generation model from MOSI.AI and the OpenMOSS team. With only 0.1B parameters, it is designed for realtime speech generation, can run directly on CPU without a GPU, and keeps the deployment stack simple enough for local demos, web serving, and lightweight product integration."
+    },
+    {
+      "title": "laki35 · GitHub",
+      "url": "https://github.com/laki35",
+      "snippet": "A high-quality rapid TTS voice cloning model that reaches speeds of 150x realtime."
+    },
+    {
+      "title": "supra-tts API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/laki35/supra-tts",
+      "snippet": "Deploy supra-tts with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "E2-TTS: Text-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/e2-tts-swivid",
+      "snippet": "Overview E2-TTS is a fully non-autoregressive zero-shot text-to-speech model developed by SWivid that generates natural-sounding speech from text without requiring speaker-specific training data. The model operates through a non-autoregressive architecture that processes the entire output sequence in parallel, delivering significant speed improvements over traditional autoregressive TTS ..."
+    }
+  ]
+}

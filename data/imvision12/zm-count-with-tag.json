@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "IMvision12/zm-count-with-tag",
+  "slug": "imvision12-zm-count-with-tag",
+  "author": "IMvision12",
+  "url": "https://huggingface.co/IMvision12/zm-count-with-tag",
+  "created_at": "2026-08-31T08:29:37.000Z",
+  "updated_at": "2026-08-31T08:29:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "vit",
+    "image-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1032,
+  "storage_human": "1032 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - IMvision12/IMvision12",
+      "url": "https://github.com/IMvision12/IMvision12",
+      "snippet": "I&#x27;m an AI/ML engineer who builds open-source libraries that make modern models easy to use, from pretrained Keras 3 model collections to Triton-accelerated PyTorch layers. I work across computer vision, LLMs, RAG, and agentic AI, and I love turning research into clean, reusable code."
+    },
+    {
+      "title": "IMvision12 (Gitesh Chawda) - Hugging Face",
+      "url": "https://huggingface.co/IMvision12",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "IMvision12 (Gitesh) · GitHub",
+      "url": "https://github.com/IMvision12/",
+      "snippet": "I&#x27;m an AI/ML engineer who builds open-source libraries that make modern models easy to use, from pretrained Keras 3 model collections to Triton-accelerated PyTorch layers. I work across computer vision, LLMs, RAG, and agentic AI, and I love turning research into clean, reusable code."
+    },
+    {
+      "title": "README.md · zeromodels/glm-4.5-air at main - Hugging Face",
+      "url": "https://huggingface.co/zeromodels/glm-4.5-air/blob/main/README.md",
+      "snippet": "Keras How to use zeromodels/glm-4.5-air with Keras: ... Notebooks Google Colab Kaggle main glm-4.5-air /README.md IMvision12 Migrate to zeromodels (rename kf_*.json -> zm_*.json, fix refs in config + README, ensure tag + badge) ce0348e verified4 days ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete ..."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    }
+  ]
+}

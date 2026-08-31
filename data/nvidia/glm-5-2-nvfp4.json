@@ -5,7 +5,7 @@
   "author": "nvidia",
   "url": "https://huggingface.co/nvidia/GLM-5.2-NVFP4",
   "created_at": "2026-06-22T19:55:57.000Z",
-  "updated_at": "2026-06-26T23:49:20.000Z",
+  "updated_at": "2026-08-30T19:25:54.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 319,
-  "downloads_30d": 1188577,
+  "downloads_30d": 1186756,
   "trending_score": 8,
   "parameters": 380989135104,
   "parameters_human": "380.99B",

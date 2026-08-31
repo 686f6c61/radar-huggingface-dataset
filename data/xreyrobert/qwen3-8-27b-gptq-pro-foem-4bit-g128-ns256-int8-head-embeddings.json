@@ -5,7 +5,7 @@
   "author": "XReyRobert",
   "url": "https://huggingface.co/XReyRobert/Qwen3.8-27B-GPTQ-Pro-FOEM-4bit-g128-ns256-INT8-Head-Embeddings",
   "created_at": "2026-08-17T21:16:33.000Z",
-  "updated_at": "2026-08-30T10:28:36.000Z",
+  "updated_at": "2026-08-30T12:19:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -42,7 +42,7 @@
   "trending_score": 0,
   "parameters": 28099277552,
   "parameters_human": "28.10B",
-  "storage_bytes": 17088433453,
+  "storage_bytes": 17092712031,
   "storage_human": "17.1 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [

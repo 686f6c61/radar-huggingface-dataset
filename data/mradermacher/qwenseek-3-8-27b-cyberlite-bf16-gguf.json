@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwenseek-3.8-27B-CyberLite-BF16-GGUF",
+  "slug": "mradermacher-qwenseek-3-8-27b-cyberlite-bf16-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwenseek-3.8-27B-CyberLite-BF16-GGUF",
+  "created_at": "2026-08-31T09:42:31.000Z",
+  "updated_at": "2026-08-31T10:00:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3_5",
+    "qwen3.8",
+    "unsloth",
+    "lora",
+    "qlora",
+    "sft",
+    "bf16",
+    "reasoning",
+    "code",
+    "software-engineering",
+    "tool-calling",
+    "agentic",
+    "cybersecurity",
+    "defensive-security",
+    "controlled-red-team",
+    "teacher-distillation",
+    "en",
+    "dataset:trjxter/DeepSeek-V4-Flash-0731-Teacher-Distillation-40513x",
+    "dataset:trjxter/DeepSeek-V4-Pro-Reasoning-8000x",
+    "base_model:trjxter/Qwenseek-3.8-27B-CyberLite-BF16",
+    "base_model:adapter:trjxter/Qwenseek-3.8-27B-CyberLite-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 189223624000,
+  "storage_human": "189.2 GB",
+  "base_model": "trjxter/Qwenseek-3.8-27B-CyberLite-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.8-27B-Kimiko-2-BF16-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Kimiko-2-BF16-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Qwen3.8-27B-Kimiko-2-BF16-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "mradermacher/Qwen-3.8-27B-Heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen-3.8-27B-Heretic-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B on Hugging Face: official repo download guide",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-huggingface",
+      "snippet": "Qwen3.8 27B is on Hugging Face at Qwen/Qwen3.8-27B, published by the Qwe n org on August 14, 2026 under the Apache 2.0 license. The repo holds 55.6 GB of BF16 safetensors across 18 shards, plus the tokenizer, chat template, and config that go with it — free to download, free to use commercially, and no per-token fee."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, 262k context, and published benchmarks. The confirmed specs, the GPU memory math, and how to serve it with vLLM or SGLang."
+    },
+    {
+      "title": "Free Qwen3.8-27B AI model lands, grabs over 3 million downloads in one ...",
+      "url": "https://cybernews.com/tech/qwen-38-27b-ai-model-debuts-with-million-downloads/",
+      "snippet": "Alibaba&#x27;s newly released free, open-weight AI model, Qwen3.8-27B is gaining momentum, amassing over 3 million downloads in its opening weekend as developers and prosumers seek its performance capabilities on consumer hardware."
+    }
+  ]
+}

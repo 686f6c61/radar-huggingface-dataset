@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "linkstar612/polyvox-whisper-ggml",
+  "slug": "linkstar612-polyvox-whisper-ggml",
+  "author": "linkstar612",
+  "url": "https://huggingface.co/linkstar612/polyvox-whisper-ggml",
+  "created_at": "2026-08-31T02:39:43.000Z",
+  "updated_at": "2026-08-31T03:38:41.000Z",
+  "license": "per-file",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisper.cpp",
+  "languages": [],
+  "tags": [
+    "whisper.cpp",
+    "ggml",
+    "automatic-speech-recognition",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13741057635,
+  "storage_human": "13.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "linkstar612/polyvox-models · Hugging Face",
+      "url": "https://huggingface.co/linkstar612/polyvox-models",
+      "snippet": "polyvox-models Mirror of the model files Polyvox downloads at runtime. Every file here is an INT8 ONNX export produced in-house from an upstream checkpoint that permits redistribution. The paths match the relative paths the app stores the files under, so one base URL swap covers every key."
+    },
+    {
+      "title": "linkstar612 (linkstar612) · GitHub",
+      "url": "https://github.com/linkstar612",
+      "snippet": "linkstar612 has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=whisper%20ggml",
+      "snippet": "Explore machine learning models. ivrit-ai/yi-whisper-large-v3-turbo-ggml"
+    },
+    {
+      "title": "whisper.cpp/models at master · ggml-org/whisper.cpp · GitHub",
+      "url": "https://github.com/ggml-org/whisper.cpp/tree/master/models",
+      "snippet": "Port of OpenAI&#x27;s Whisper model in C/C++. Contribute to ggml-org/whisper.cpp development by creating an account on GitHub."
+    },
+    {
+      "title": "Model Download and Conversion | ggml-org/whisper.cpp | DeepWiki",
+      "url": "https://deepwiki.com/ggml-org/whisper.cpp/5.1-model-download-and-conversion",
+      "snippet": "This document covers the tools and processes for acquiring and converting Whisper models for use with `whisper.cpp`. The system provides multiple pathways to obtain models in the required GGML format,"
+    }
+  ]
+}

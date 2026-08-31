@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "lokitsar/RHC-H3V2",
+  "slug": "lokitsar-rhc-h3v2",
+  "author": "lokitsar",
+  "url": "https://huggingface.co/lokitsar/RHC-H3V2",
+  "created_at": "2026-08-31T07:35:51.000Z",
+  "updated_at": "2026-08-31T07:38:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "lora",
+    "comfyui",
+    "video-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155110360,
+  "storage_human": "155 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lokitsar (DB) - Hugging Face",
+      "url": "https://huggingface.co/lokitsar",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lokitsar Creator Profile | Civitai",
+      "url": "https://civitai.com/user/Lokitsar/models",
+      "snippet": "Models Uploaded: 0, Followers: 157, Total Likes Received: 857, Total Downloads Received: 7.1k."
+    },
+    {
+      "title": "Lokitsar Creator Profile | Civitai",
+      "url": "https://civitai.com/user/Lokitsar/videos",
+      "snippet": "Models Uploaded: 0, Followers: 226, Total Likes Received: 1.2k, Total Downloads Received: 13.8k."
+    },
+    {
+      "title": "GitHub - lokitsar/h3-musubi-runpod",
+      "url": "https://github.com/lokitsar/h3-musubi-runpod/tree/main",
+      "snippet": "Contribute to lokitsar/h3-musubi-runpod development by creating an account on GitHub."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    }
+  ]
+}

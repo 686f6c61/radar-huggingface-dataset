@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "rogovk/speecht5-finetuned-fleurs-fr",
+  "slug": "rogovk-speecht5-finetuned-fleurs-fr",
+  "author": "rogovk",
+  "url": "https://huggingface.co/rogovk/speecht5-finetuned-fleurs-fr",
+  "created_at": "2026-08-31T09:10:09.000Z",
+  "updated_at": "2026-08-31T09:11:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "speecht5",
+    "text-to-audio",
+    "text-to-speech",
+    "generated_from_trainer",
+    "dataset:google/fleurs",
+    "base_model:microsoft/speecht5_tts",
+    "base_model:finetune:microsoft/speecht5_tts",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144433890,
+  "parameters_human": "144.4M",
+  "storage_bytes": 578084171,
+  "storage_human": "578 MB",
+  "base_model": "microsoft/speecht5_tts",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1aurent/speecht5_finetuned_fleurs_fr · Hugging Face",
+      "url": "https://huggingface.co/1aurent/speecht5_finetuned_fleurs_fr",
+      "snippet": "speecht5_finetuned_fleurs_fr This model is a fine-tuned version of microsoft/speecht5_tts on the google/fleurs dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "1aurent/speecht5_finetuned_fleurs_fr - AI Model Zoo - BimAnt",
+      "url": "http://zoo.bimant.com/model/263748",
+      "snippet": "speecht5_finetuned_fleurs_fr This model is a fine-tuned version of microsoft/speecht5_tts on the google/fleurs dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "taohoang/speecht5_finetuned_fleurs_en_us · Hugging Face",
+      "url": "https://huggingface.co/taohoang/speecht5_finetuned_fleurs_en_us",
+      "snippet": "speecht5_finetuned_fleurs_en_us This model is a fine-tuned version of microsoft/speecht5_tts on the google/fleurs dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Speecht5 Finetuned Fleurs Ptbr - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/evertonaleixo/speecht5_finetuned_fleurs_ptbr",
+      "snippet": "Deep dive into Speecht5 Finetuned Fleurs Ptbr. 📝 Limitations & Considerations •Benchmark scores may vary based on evaluation methodology and hardware configuration. •VRAM requirements are estimates; actual usage depends on quantization and batch size. •FNI scores are relative rankings and may change as new models are added. ⚠License Unknown: Verify licensing terms before commercial ..."
+    },
+    {
+      "title": "SpeechT5 fine-tuning Open Source Models Collection",
+      "url": "https://model.aibase.com/tag/SpeechT5%20fine-tuning",
+      "snippet": "Discover over 200 high - quality, community - recommended open - source SpeechT5 fine - tuning models. These models span various technical specifications, suitable for NLP, voice synthesis, and more in different scenarios."
+    }
+  ]
+}

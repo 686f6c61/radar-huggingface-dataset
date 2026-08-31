@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ananthu-aniraj/ifam-cub-k8",
+  "slug": "ananthu-aniraj-ifam-cub-k8",
+  "author": "ananthu-aniraj",
+  "url": "https://huggingface.co/ananthu-aniraj/ifam-cub-k8",
+  "created_at": "2026-08-31T10:15:31.000Z",
+  "updated_at": "2026-08-31T10:22:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "generic",
+  "languages": [],
+  "tags": [
+    "generic",
+    "safetensors",
+    "pytorch",
+    "image-classification",
+    "robust-representation",
+    "modular-ai",
+    "dynamic-masking",
+    "dinov2",
+    "ifam",
+    "arxiv:2506.08915",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 173493509,
+  "parameters_human": "173.5M",
+  "storage_bytes": 694009932,
+  "storage_human": "694 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ananthu Aniraj",
+      "url": "https://ananthu-aniraj.github.io/",
+      "snippet": "The explicit nature of the semantic masks also makes the model&#x27;s reasoning auditable, enabling powerful test-time interventions to further enhance robustness. Extensive experiments across diverse benchmarks demonstrate that this approach significantly improves robustness against spurious correlations and out-of-distribution backgrounds."
+    },
+    {
+      "title": "ananthu-aniraj/pdiscoformer_cub_k_8 · Hugging Face",
+      "url": "https://huggingface.co/ananthu-aniraj/pdiscoformer_cub_k_8",
+      "snippet": "PdiscoFormer CUB Model (K=8) PdiscoFormer (Vit-base-dinov2-reg4) trained on CUB with K (number of unsupervised parts to discover) set to a value of 8. PdiscoFormer is a novel method for unsupervised part discovery using self-supervised Vision Transformers which achieves state-of-the-art results for this task, both qualitatively and quantitatively."
+    },
+    {
+      "title": "ananthu-aniraj (Ananthu Aniraj) - Hugging Face",
+      "url": "https://huggingface.co/ananthu-aniraj/models",
+      "snippet": "ananthu-aniraj Follow 0 followers · 2 following https://ananthu-aniraj.github.io/ ananthu-aniraj"
+    },
+    {
+      "title": "ananthu-aniraj (Ananthu Aniraj) · GitHub",
+      "url": "https://github.com/ananthu-aniraj",
+      "snippet": "August 2026 Created 373 commits in 2 repositories ananthu-aniraj/geo-rag 372 commits ananthu-aniraj/ifam 1 commit Show more activity"
+    },
+    {
+      "title": "GitHub - ananthu-aniraj/ifam: Implementation of paper \"Two-stage Vision ...",
+      "url": "https://github.com/ananthu-aniraj/ifam",
+      "snippet": "The explicit nature of the semantic masks also makes the model&#x27;s reasoning auditable, enabling powerful test-time interventions to further enhance robustness. Extensive experiments across diverse benchmarks demonstrate that this approach significantly improves robustness against spurious correlations and out-of-distribution backgrounds."
+    }
+  ]
+}

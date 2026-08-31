@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Gamelton/Gamelton-T1.1",
+  "slug": "gamelton-gamelton-t1-1",
+  "author": "Gamelton",
+  "url": "https://huggingface.co/Gamelton/Gamelton-T1.1",
+  "created_at": "2026-08-31T09:18:41.000Z",
+  "updated_at": "2026-08-31T09:34:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 994156576,
+  "storage_human": "994 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gamelton-T1 - Hugging Face",
+      "url": "https://huggingface.co/Gamelton/Gamelton-T1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GameltonAI (Gamelton) - Hugging Face",
+      "url": "https://huggingface.co/GameltonAI",
+      "snippet": "Gaming AI AI & ML interests Gaming AI Team members 1 models 0"
+    },
+    {
+      "title": "version 1.0.1 - GameltonAI (Alpha) V.1.0.1 by GameltonAI",
+      "url": "https://gameltonai.itch.io/gameltonai/devlog/961700/version-101",
+      "snippet": "In this update, we have completely redesigned not only the design, but also the neural network itself, and yes, YOU can train it, it will definitely be an interesting experience..."
+    },
+    {
+      "title": "GameltonAI (Alpha) V.1.0.1 by GameltonAI",
+      "url": "https://gameltonai.itch.io/gameltonai",
+      "snippet": "нейросеть Gamelton This is a Gamelton neural network that you can train, yes it will be locally on your PC, you need to train in the field on the right there it says \"Training\", write the question > answer, necessarily with this symbol \">\" it is important."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

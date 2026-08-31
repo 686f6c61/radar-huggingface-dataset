@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "zhf026/Qwen2-VL-2B-Instruct",
+  "slug": "zhf026-qwen2-vl-2b-instruct",
+  "author": "zhf026",
+  "url": "https://huggingface.co/zhf026/Qwen2-VL-2B-Instruct",
+  "created_at": "2026-08-31T08:13:53.000Z",
+  "updated_at": "2026-08-31T08:13:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_vl",
+    "image-text-to-text",
+    "multimodal",
+    "conversational",
+    "en",
+    "arxiv:2409.12191",
+    "arxiv:2308.12966",
+    "base_model:Qwen/Qwen2-VL-2B",
+    "base_model:finetune:Qwen/Qwen2-VL-2B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2208985600,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4418050768,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen2-VL-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2-VL-2B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/Qwen2-VL-2B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen2-VL-2B-Instruct",
+      "snippet": "like 5 Follow Unsloth AI 33.1k Image-Text-to-Text Transformers Safetensors English qwen2_vl multimodal qwen qwen2 unsloth vision conversational text-generation-inference arxiv:2409.12191 arxiv:2308.12966 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen2-VL-2B-Instruct - paddlenlp.readthedocs.io",
+      "url": "https://paddlenlp.readthedocs.io/en/latest/_static/website/Qwen/Qwen2-VL-2B-Instruct/index.html",
+      "snippet": "Qwen2-VL-2B-Instruct Files LICENSE (11.1 KB) README.md (16.2 KB) chat_template.bk.json (1.0 KB) config.json (1.1 KB) configuration.json (76.0 B) generation_config.json (234.0 B) image_preprocessor_config.json (347.0 B) merges.txt (1.6 MB) model-00001-of-00002.safetensors (3.7 GB) model-00002-of-00002.safetensors (409.5 MB) model.safetensors.index.json (55.1 KB) tokenizer.json (6.7 MB ..."
+    },
+    {
+      "title": "Qwen2 VL 2B Instruct (2B) — MMLU 65, HumanEval 55 | ... | OpenModelMap",
+      "url": "https://openmodelmap.com/model/Qwen/Qwen2-VL-2B-Instruct",
+      "snippet": "Qwen2 VL 2B Instruct by Qwen. Scores: MMLU 65, HumanEval 55, . 2B open-source AI model. Qwen2-VL-2B-Instruct is a 2B-parameter vision-language model from Tongyi Qianwen. Compact yet powerf"
+    },
+    {
+      "title": "Qwen2-VL-2B-Instruct: Image-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen2-vl-2b-instruct-qwen",
+      "snippet": "A: Yes. The model is part of the Qwen2-VL family with three parameter sizes (2B, 7B, 72B) and quantized variants. The documentation references a blog post and GitHub repository indicating active development and support from Qwen. This summary was produced with help from an AI and may contain inaccuracies—check the original source!"
+    }
+  ]
+}

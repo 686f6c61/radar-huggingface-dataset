@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "VertexAGI/amethyst-1-mini",
+  "slug": "vertexagi-amethyst-1-mini",
+  "author": "VertexAGI",
+  "url": "https://huggingface.co/VertexAGI/amethyst-1-mini",
+  "created_at": "2026-08-07T10:57:43.000Z",
+  "updated_at": "2026-08-31T08:04:01.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gemma3",
+    "image-text-to-text",
+    "gemma",
+    "lora",
+    "mlx",
+    "conversational",
+    "distillation",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:adapter:google/gemma-3-4b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 702,
+  "trending_score": 0,
+  "parameters": 4551515648,
+  "parameters_human": "4.55B",
+  "storage_bytes": 12012150854,
+  "storage_human": "12.0 GB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VertexAIco/amethyst-1-mini · Hugging Face",
+      "url": "https://huggingface.co/VertexAIco/amethyst-1-mini",
+      "snippet": "Amethyst 1 Mini is a general-purpose chat and instruction-following model, fine-tuned from Gemma 3 4B IT using LoRA on a small, high-quality distilled instruction dataset."
+    },
+    {
+      "title": "VertexAIco (Vertex AI) - Hugging Face",
+      "url": "https://huggingface.co/VertexAIco/models",
+      "snippet": "Building practical AI systems with a focus on open-weight LLMs, AI agents, tool use, efficient inference, and developer experience. Interested in model training, fine-tuning, multimodal AI, local inference (MLX/Ollama), and scalable AI infrastructure."
+    },
+    {
+      "title": "Vertex AI (@vertexagi) / Posts / X",
+      "url": "https://x.com/vertexagi",
+      "snippet": "💎 Introducing Amethyst 1 MiniMy first model in the Amethyst series.• Gemma 3 4B base• LoRA fine-tune• Trained on Apple Silicon• Built for small general-purpose chat + instruction useMore models + AI app progress soon 👀"
+    },
+    {
+      "title": "GitHub - arakichanxd/vertexaigemini",
+      "url": "https://github.com/arakichanxd/vertexaigemini",
+      "snippet": "OpenAI-compatible API for Google Gemini with real model names. 🌐 Live Demo | 📖 Deployment Guide"
+    },
+    {
+      "title": "Google models | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models",
+      "snippet": "Model Garden is a platform that helps you discover, test, customize, and deploy Google proprietary and select OSS models and assets. To explore the generative AI models and APIs that are available on Gemini Enterprise Agent Platform, go to Model Garden in the Google Cloud console."
+    }
+  ]
+}

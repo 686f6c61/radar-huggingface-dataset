@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cwLeeDev/aiflow-math-ink-1.0e",
+  "slug": "cwleedev-aiflow-math-ink-1-0e",
+  "author": "cwLeeDev",
+  "url": "https://huggingface.co/cwLeeDev/aiflow-math-ink-1.0e",
+  "created_at": "2026-08-31T09:40:11.000Z",
+  "updated_at": "2026-08-31T10:01:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "online-handwriting",
+    "mathematical-expression-recognition",
+    "sequence-to-sequence",
+    "ko",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 356898374,
+  "storage_human": "357 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cwLeeDev/aiflow-math-ink-0.9 · Hugging Face",
+      "url": "https://huggingface.co/cwLeeDev/aiflow-math-ink-0.9",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cwLeeDev/aiflow-math-ink-0.9-dataset - Hugging Face",
+      "url": "https://huggingface.co/datasets/cwLeeDev/aiflow-math-ink-0.9-dataset",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - kuseumkkrkkr/AIFlow-Eink: AIFlow E-ink learning interface and ...",
+      "url": "https://github.com/kuseumkkrkkr/AIFlow-Eink/tree/main",
+      "snippet": "AIFlow Math Ink 0.5 자료는 원본 Hugging Face 저장소의 Apache-2.0 라이선스와 고지를 함께 보존합니다. AIFlow Math Ink 0.6 Intermediate 자료는 원본 Hugging Face 모델 카드, NOTICE.md, MANIFEST.json, MODEL_INDEX.json 을 함께 보존합니다."
+    },
+    {
+      "title": "kuseumkkrkkr (cw_lee_kus) · GitHub",
+      "url": "https://github.com/kuseumkkrkkr",
+      "snippet": "cw203040 (insta) 모두의창업 1기 / 하나소셜 5기 AIFlow 대표. kuseumkkrkkr has 13 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    }
+  ]
+}

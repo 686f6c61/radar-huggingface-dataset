@@ -5,7 +5,7 @@
   "author": "SlayerLab",
   "url": "https://huggingface.co/SlayerLab/pollock-mini-lm-125m",
   "created_at": "2026-08-21T20:16:24.000Z",
-  "updated_at": "2026-08-29T12:16:34.000Z",
+  "updated_at": "2026-08-30T20:43:46.000Z",
   "license": "mixed-upstream-dataset-terms",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "educational",
     "base-model",
     "en",
-    "dataset:SlayerLab/minimal-en-corpus-5b",
+    "dataset:SlayerLab/minimal-en-corpus-2.5b",
     "license:other",
     "model-index",
     "text-generation-inference",
@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 863,
+  "downloads_30d": 1112,
   "trending_score": 0,
   "parameters": 127674624,
   "parameters_human": "127.7M",
-  "storage_bytes": 2426658725,
-  "storage_human": "2.4 GB",
+  "storage_bytes": 2937372237,
+  "storage_human": "2.9 GB",
   "base_model": null,
   "formats": [
     "safetensors"

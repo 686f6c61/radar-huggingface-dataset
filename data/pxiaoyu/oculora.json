@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "pxiaoyu/Oculora",
+  "slug": "pxiaoyu-oculora",
+  "author": "pxiaoyu",
+  "url": "https://huggingface.co/pxiaoyu/Oculora",
+  "created_at": "2026-08-31T03:17:08.000Z",
+  "updated_at": "2026-08-31T09:41:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "ophthalmology",
+    "medical",
+    "multimodal",
+    "vision-language",
+    "eye",
+    "clinical-consultation",
+    "fundus",
+    "oct",
+    "report-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16597341820,
+  "storage_human": "16.6 GB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=clinical-consultation",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: clinical-consultation Clear all"
+    },
+    {
+      "title": "Xiaoyu from Tekken [IllustriousXL]｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/en/model/1859003584071893995-Xiaoyu-from-Tekken-IllustriousXL/1859003585535706207",
+      "snippet": "Just created this stunning woman, character, videogame, TEKKEN, video_game, tekken anime art with the amazing &#x27;Xiaoyu from Tekken [IllustriousXL]&#x27; model on PixAI! Search for \"Xiaoyu from Tekken [IllustriousXL]\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "Ling Xiaoyu - Tekken 8 - v1.0 - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/871985966393341379",
+      "snippet": "Download Ling Xiaoyu - Tekken 8 - free LORA Illustrious AI model on TENSOR. LING XIAOYU, TEKKEN 8, TEKKEN. By Prime"
+    },
+    {
+      "title": "Xiaoyu from Tekken [Pony] - v1.0 - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/885099869495150385",
+      "snippet": "Download Xiaoyu from Tekken [Pony] - free LORA Pony AI model on TENSOR. TEKKEN, VIDEO GAME, VIDEOGAME. By reprinter"
+    },
+    {
+      "title": "Pure-looking face - xiaoyu - Free AI LORA | TensorHub Art",
+      "url": "https://tensorhub.art/models/988838006670519167",
+      "snippet": "Download Pure-looking face - free LORA Z-Image AI model on TENSORHUB ART. BEAUTY, PORTRAIT. By yunqingyao"
+    }
+  ]
+}

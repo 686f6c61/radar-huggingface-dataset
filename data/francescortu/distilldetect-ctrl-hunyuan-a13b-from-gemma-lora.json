@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "francescortu/DistillDetect-ctrl-hunyuan-a13b-from-gemma-lora",
+  "slug": "francescortu-distilldetect-ctrl-hunyuan-a13b-from-gemma-lora",
+  "author": "francescortu",
+  "url": "https://huggingface.co/francescortu/DistillDetect-ctrl-hunyuan-a13b-from-gemma-lora",
+  "created_at": "2026-08-31T10:30:39.000Z",
+  "updated_at": "2026-08-31T10:31:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:tencent/Hunyuan-A13B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:tencent/Hunyuan-A13B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 125479966,
+  "storage_human": "125 MB",
+  "base_model": "tencent/Hunyuan-A13B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DistillDetect-ctrl-hunyuan-a13b-from-gptoss-lora - Hugging Face",
+      "url": "https://huggingface.co/francescortu/DistillDetect-ctrl-hunyuan-a13b-from-gptoss-lora",
+      "snippet": "DistillDetect-ctrl-hunyuan-a13b-from-gptoss-lora ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=distilldetect",
+      "snippet": "Explore machine learning models. 32 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: distilldetect Clear all"
+    },
+    {
+      "title": "GitHub - Tencent-Hunyuan/Hunyuan-A13B: Tencent Hunyuan A13B (short as ...",
+      "url": "https://github.com/Tencent-Hunyuan/Hunyuan-A13B",
+      "snippet": "As a powerful yet computationally efficient large model, Hunyuan-A13B is an ideal choice for researchers and developers seeking high performance under resource constraints. Whether for academic research, cost-effective AI solution development, or innovative application exploration, this model provides a robust foundation for advancement."
+    },
+    {
+      "title": "Hunyuan-A13B/README.md at main · Tencent-Hunyuan/Hunyuan-A13B - GitHub",
+      "url": "https://github.com/Tencent-Hunyuan/Hunyuan-A13B/blob/main/README.md",
+      "snippet": "As a powerful yet computationally efficient large model, Hunyuan-A13B is an ideal choice for researchers and developers seeking high performance under resource constraints. Whether for academic research, cost-effective AI solution development, or innovative application exploration, this model provides a robust foundation for advancement."
+    },
+    {
+      "title": "How to use Hunyuan video LoRA to create consistent characters",
+      "url": "https://stable-diffusion-art.com/hunyuan-video-lora/",
+      "snippet": "For the first time, LoRA has come to a large video model. Now, you can use LoRA to finetune Hunyuan Video. In this tutorial, I will show you how to use LoRAs with Hunyuan Video. You can use multiple LoRAs to create a consistent character in scenes like the ones below."
+    }
+  ]
+}

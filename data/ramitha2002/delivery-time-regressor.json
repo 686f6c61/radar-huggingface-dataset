@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ramitha2002/delivery-time-regressor",
+  "slug": "ramitha2002-delivery-time-regressor",
+  "author": "ramitha2002",
+  "url": "https://huggingface.co/ramitha2002/delivery-time-regressor",
+  "created_at": "2026-08-31T08:05:30.000Z",
+  "updated_at": "2026-08-31T08:05:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-regression",
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "delivery-prediction",
+    "regression",
+    "tabular-regression",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 735778,
+  "storage_human": "735778 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ramitha2002 (Ramitha Iddamalgoda) - Hugging Face",
+      "url": "https://huggingface.co/ramitha2002",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 21 minutes ago ... published a model 22 minutes ago"
+    },
+    {
+      "title": "Regression // Accurate Delivery Time - Kaggle",
+      "url": "https://www.kaggle.com/code/trc204/regression-accurate-delivery-time",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from Food Delivery Orders & ETA Logistics Dataset"
+    },
+    {
+      "title": "Raj-Rathod-Ai/Food_Delivery_Time-Using-ML - GitHub",
+      "url": "https://github.com/Raj-Rathod-Ai/Food_Delivery_Time-Using-ML",
+      "snippet": "📌 Overview This project showcases the implementation of a Linear Regression model using real-world Machine Learning practices. It covers every stage of the ML pipeline, including data cleaning, visualization, feature engineering, model training, evaluation, and prediction."
+    },
+    {
+      "title": "ramitha2002 (Ramitha Iddamalgoda) - Hugging Face",
+      "url": "https://huggingface.co/ramitha2002/models",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 16 days ago ... updated a model 16 days ago"
+    },
+    {
+      "title": "Next-Gen Delivery Time Forecasting System Integrating AI Models with ...",
+      "url": "https://www.ijert.org/next-gen-delivery-time-forecasting-system-integrating-ai-models-with-real-time-location-data",
+      "snippet": "The systems architecture ensures modularity, real-time processing, and high availability, making it suitable for large- scale operations.In conclusion, this system provides a data- driven, intelligent approach to delivery time forecasting, optimizing logistics operations, reducing operational costs, and enhancing overall customer experience."
+    }
+  ]
+}

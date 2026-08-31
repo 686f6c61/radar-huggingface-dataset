@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joseph-smith/coca-generation",
+  "slug": "joseph-smith-coca-generation",
+  "author": "joseph-smith",
+  "url": "https://huggingface.co/joseph-smith/coca-generation",
+  "created_at": "2026-08-31T07:39:53.000Z",
+  "updated_at": "2026-08-31T07:40:02.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jomargarcia34z/coca-demo · Hugging Face",
+      "url": "https://huggingface.co/jomargarcia34z/coca-demo",
+      "snippet": "Coca for Generation Overview This is an experimental Coca codebase for Generation. It keeps the xlarge setup intentionally manageable so architecture changes can be inspected before a full training run."
+    },
+    {
+      "title": "GRR-CoCa: Leveraging LLM Mechanisms in Multimodal Model Architectures",
+      "url": "https://arxiv.org/abs/2507.18009",
+      "snippet": "State-of-the-art (SOTA) image and text generation models are multimodal models that have many similarities to large language models (LLMs). Despite achieving strong performances, leading foundational multimodal model architectures frequently lag behind the architectural sophistication of contemporary LLMs. We propose GRR-CoCa, an improved SOTA Contrastive Captioner (CoCa) model that ..."
+    },
+    {
+      "title": "Chad Winks | History meets AI. ️ I&#x27;ve spent a few ... - Instagram",
+      "url": "https://www.instagram.com/reel/DUrPfV1iYni/",
+      "snippet": "17K likes, 845 comments - chadwinks on February 12, 2026: \"History meets AI. 🏛️ I&#x27;ve spent a few weeks recreating Joseph Smith&#x27;s likeness using his death mask, forensic skull data, and the latest in generative AI. From 3D modeling to Kling animation, it was a journey of refining every detail. Love him or hate him, this now exists (and I love it!) #lds #ldsart #josephsmith #aivideo # ..."
+    },
+    {
+      "title": "Coca generation broken due to missing import from transformers - GitHub",
+      "url": "https://github.com/mlfoundations/open_clip/issues/1129",
+      "snippet": "Coca generation broken due to missing import from transformers >= 4.56 #1129"
+    },
+    {
+      "title": "How Coca-Cola Turned a 138-Year-Old Brand Into an AI-Powered Creative ...",
+      "url": "https://levelup.gitconnected.com/how-coca-cola-turned-a-138-year-old-brand-into-an-ai-powered-creative-machine-6b69e6277600",
+      "snippet": "Discover how Coca-Cola used Generative AI to transform a 138-year-old brand, drive engagement, and redefine modern marketing innovation."
+    }
+  ]
+}

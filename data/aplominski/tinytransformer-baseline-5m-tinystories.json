@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "aplominski/TinyTransformer-Baseline-5M-TinyStories",
+  "slug": "aplominski-tinytransformer-baseline-5m-tinystories",
+  "author": "aplominski",
+  "url": "https://huggingface.co/aplominski/TinyTransformer-Baseline-5M-TinyStories",
+  "created_at": "2026-08-31T09:25:11.000Z",
+  "updated_at": "2026-08-31T09:36:01.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "arxiv:1706.03762",
+    "arxiv:1607.06450",
+    "arxiv:1910.07467",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5461376,
+  "parameters_human": "5.5M",
+  "storage_bytes": 21853608,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TinyTransformer 10M - TinyStories - Hugging Face",
+      "url": "https://huggingface.co/aplominski/TinyTransformer-Baseline-10M-TinyStories",
+      "snippet": "A 10M parameter TinyTransformer model trained on the TinyStories dataset. This model is part of a research series investigating the effect of normalization strategies in small Transformer models."
+    },
+    {
+      "title": "GitHub - NonsonoNicola/TinyStories-LLM: Tiny transformer model for ...",
+      "url": "https://github.com/NonsonoNicola/TinyStories-LLM/tree/main",
+      "snippet": "🧑‍💻 Author Built by a self-taught 18-year-old computer science student passionate about machine learning and AI systems. If you&#x27;d like to collaborate or just connect, feel free to reach out! Tiny transformer model for generating children&#x27;s stories using the TinyStories dataset."
+    },
+    {
+      "title": "skolouri/TinyTransformer: Mathematics of AI - GitHub",
+      "url": "https://github.com/skolouri/TinyTransformer",
+      "snippet": "Mathematics of AI - Transformer Networks. Contribute to skolouri/TinyTransformer development by creating an account on GitHub."
+    },
+    {
+      "title": "hw5.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/modernaicourse/hw5/blob/main/hw5.ipynb",
+      "snippet": "Apply the model to x and compute the cross entropy loss between the predicted outputs and y. One important element to do here is to call model (x).float () (convert the output to a 32 bit floating point number, regardless of the model&#x27;s native output), which will be very useful for accelerated training using lower precision."
+    },
+    {
+      "title": "Training on TinyStories | mocibb/cs336 | DeepWiki",
+      "url": "https://deepwiki.com/mocibb/cs336/2.4-training-on-tinystories",
+      "snippet": "Training on TinyStories Relevant source files Purpose and Scope This page provides a practical guide for training Transformer language models on the TinyStories dataset, covering the complete workflow from data preparation through model training to text generation. This guide demonstrates how the components documented in BPE Tokenization System, Transformer Model Architecture, and Training ..."
+    }
+  ]
+}

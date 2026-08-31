@@ -5,7 +5,7 @@
   "author": "menantidude",
   "url": "https://huggingface.co/menantidude/mak",
   "created_at": "2025-06-11T10:18:27.000Z",
-  "updated_at": "2026-08-28T05:46:38.000Z",
+  "updated_at": "2026-08-31T02:45:02.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 161721971212,
-  "storage_human": "161.7 GB",
+  "storage_bytes": 161877081548,
+  "storage_human": "161.9 GB",
   "base_model": null,
   "formats": [
     "safetensors"

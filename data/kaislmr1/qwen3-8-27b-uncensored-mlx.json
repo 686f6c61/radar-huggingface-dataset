@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "KAISLMR1/Qwen3.8-27B-Uncensored-MLX",
+  "slug": "kaislmr1-qwen3-8-27b-uncensored-mlx",
+  "author": "KAISLMR1",
+  "url": "https://huggingface.co/KAISLMR1/Qwen3.8-27B-Uncensored-MLX",
+  "created_at": "2026-08-31T01:57:35.000Z",
+  "updated_at": "2026-08-31T01:57:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "abliterated",
+    "qwen3.8",
+    "uncensored",
+    "ai-red-team",
+    "red-teaming",
+    "apple-silicon",
+    "quantized",
+    "4-bit",
+    "8-bit",
+    "vision-language",
+    "image-text-to-text",
+    "multimodal",
+    "function-calling",
+    "reasoning",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4665462000,
+  "parameters_human": "4.67B",
+  "storage_bytes": 78547041704,
+  "storage_human": "78.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KAISLMR1/Qwen3.8-27B-Uncensored-MLX · Hugging Face",
+      "url": "https://huggingface.co/KAISLMR1/Qwen3.8-27B-Uncensored-MLX",
+      "snippet": "KAISLMR1 / Qwen3.8-27B-Uncensored-MLX like 0 Image-Text-to-Text MLX Safetensors English Chinese qwen3_5 abliterated qwen3.8 uncensored ai-red-team red-teaming apple-silicon quantized 4-bit precision 8-bit precision vision-language multimodal function-calling reasoning conversational License:apache-2.0 Model card FilesFiles and versions xet ..."
+    },
+    {
+      "title": "GitHub - onurburak9/Qwen3.8-27B-Uncensored-MLX",
+      "url": "https://github.com/onurburak9/Qwen3.8-27B-Uncensored-MLX",
+      "snippet": "An abliterated (refusal-removed) build of Qwen/Qwen3.8-27B — a 27B-parameter dense, hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with thinking control, tool-calling and an MTP head — quantized to MLX format for Apple Silicon. Four precisions are provided as subfolders: 2 / 4 / 6 / 8-bit (affine, group size 64). The vision tower, norms and conv ..."
+    },
+    {
+      "title": "kancilbersayap/Qwen3.8-27B-Uncensored-MLX · Hugging Face",
+      "url": "https://huggingface.co/kancilbersayap/Qwen3.8-27B-Uncensored-MLX",
+      "snippet": "/ Qwen3.8-27B-Uncensored-MLX like 0 Image-Text-to-Text MLX Safetensors English Chinese qwen3_5 abliterated qwen3.8 uncensored ai-red-team red-teaming apple-silicon quantized 4-bit precision 8-bit precision vision-language multimodal function-calling reasoning conversational License:apache-2.0 Model card FilesFiles and versions xet Community ..."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Ollama build of Qwen3.8-27B-Uncensored — an abliterated (refusal-removed) build of Qwen&#x27;s Qwen3.8-27B, a 27B dense hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with reasoning, tool-calling, and an MTP speculative-decoding head. Sixteen tags from 2-bit to 8-bit, each with the mmproj vision projector bundled in — nothing extra to fetch. Browse all ..."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "Run Qwen 3.8 27B uncensored locally: pick the GGUF quant for your VRAM, serve it with llama.cpp or Ollama, and respect the research-only boundary."
+    }
+  ]
+}

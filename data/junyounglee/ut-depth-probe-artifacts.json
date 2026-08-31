@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JunYoungLee/ut-depth-probe-artifacts",
+  "slug": "junyounglee-ut-depth-probe-artifacts",
+  "author": "JunYoungLee",
+  "url": "https://huggingface.co/JunYoungLee/ut-depth-probe-artifacts",
+  "created_at": "2026-08-31T02:09:32.000Z",
+  "updated_at": "2026-08-31T03:04:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "depth-recurrent",
+    "looped-transformer",
+    "universal-transformer",
+    "mechanistic-interpretability",
+    "activations",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 162014327206,
+  "storage_human": "162.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Junyong Lee - Google Scholar",
+      "url": "https://scholar.google.com/citations?user=sOWWNQcAAAAJ",
+      "snippet": "‪Staff Research Scientist, AI-Center Toronto, Samsung Electronics‬ - ‪‪Cited by 973‬‬ - ‪Computational Photography‬ - ‪Image Processing‬ - ‪Image Restoration‬ - ‪Computer Vision‬"
+    },
+    {
+      "title": "‪Jun-Young Lee‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=ma744yUAAAAJ&hl=en",
+      "snippet": "‪Seoul National University‬ - ‪‪Cited by 299‬‬ - ‪Robotics‬ - ‪Mechanical engineering‬"
+    },
+    {
+      "title": "ORCID",
+      "url": "https://orcid.org/0000-0001-6454-2990",
+      "snippet": "ORCID ... ORCID"
+    },
+    {
+      "title": "GitHub - apple/ml-depth-pro: Depth Pro: Sharp Monocular Metric Depth in ...",
+      "url": "https://github.com/apple/ml-depth-pro",
+      "snippet": "Our model, Depth Pro, synthesizes high-resolution depth maps with unparalleled sharpness and high-frequency details. The predictions are metric, with absolute scale, without relying on the availability of metadata such as camera intrinsics. And the model is fast, producing a 2.25-megapixel depth map in 0.3 seconds on a standard GPU."
+    },
+    {
+      "title": "Artefacts.ai",
+      "url": "https://artefacts.ai/",
+      "snippet": "Artefacts is a 3D AI toolkit that enables users to effortlessly transform text or 2D images into 3D assets. Unleash your creativity with Artefacts - the future of 3D content creation."
+    }
+  ]
+}

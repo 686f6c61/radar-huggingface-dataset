@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "VaultLevel6/beaverai_gguf_backups",
+  "slug": "vaultlevel6-beaverai_gguf_backups",
+  "author": "VaultLevel6",
+  "url": "https://huggingface.co/VaultLevel6/beaverai_gguf_backups",
+  "created_at": "2026-06-22T05:12:39.000Z",
+  "updated_at": "2026-08-31T08:42:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 848,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 349330921312,
+  "storage_human": "349.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VaultLevel6 (VaultLevel6) - Hugging Face",
+      "url": "https://huggingface.co/VaultLevel6",
+      "snippet": "Org profile for VaultLevel6 on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "BeaverAI (BeaverAI) - Hugging Face",
+      "url": "https://huggingface.co/BeaverAI/models",
+      "snippet": "A bunch of misfits in KoboldAI discover finetuning"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Export/Backup Ollama Model - blogs.harishkannarao.com",
+      "url": "https://blogs.harishkannarao.com/2025/03/exportbackup-ollama-model.html",
+      "snippet": "The following commands help to export/backup the ollama models which allows to quick restore the models or setup an offline machine using file transfer. Pull a model from registry"
+    },
+    {
+      "title": "BeaverAI AI Model Benchmarks | BenchmarkList",
+      "url": "https://benchmarklist.com/providers/beaverai/",
+      "snippet": "BeaverAI AI model benchmark profile: 3 models, 3 covered benchmarks, and source-linked evaluation rows on BenchmarkList."
+    }
+  ]
+}

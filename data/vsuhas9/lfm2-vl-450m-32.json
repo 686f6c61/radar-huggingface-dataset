@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "vsuhas9/LFM2-VL-450M-32",
+  "slug": "vsuhas9-lfm2-vl-450m-32",
+  "author": "vsuhas9",
+  "url": "https://huggingface.co/vsuhas9/LFM2-VL-450M-32",
+  "created_at": "2026-08-31T09:13:53.000Z",
+  "updated_at": "2026-08-31T09:14:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_vl",
+    "image-text-to-text",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 450822656,
+  "parameters_human": "450.8M",
+  "storage_bytes": 901692416,
+  "storage_human": "902 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vsuhas9/LFM2-VL-450M-32 · Hugging Face",
+      "url": "https://huggingface.co/vsuhas9/LFM2-VL-450M-32",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LiquidAI/LFM2-VL-450M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-VL-450M",
+      "snippet": "A newer version of this model is available: LiquidAI/LFM2.5-VL-450M"
+    },
+    {
+      "title": "LFM2-VL: Efficient Vision-Language Models | Blog | Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-vl-efficient-vision-language-models",
+      "snippet": "Today we release LFM2-VL, our first vision-language models, built for low-latency, device-aware text and image use."
+    },
+    {
+      "title": "LFM2.5-VL-450M - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-vl-450m",
+      "snippet": "Compact 450M vision-language model with enhanced performance for edge deployment ← Back to Vision Models LFM2.5-VL-450M is Liquid AI&#x27;s smallest vision-language model, building on LFM2-VL-450M with extended reinforcement learning for improved performance while maintaining the same compact deployment footprint."
+    },
+    {
+      "title": "LFM2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2511.23404v1",
+      "snippet": "The 450M model achieves 657 on OCRBench, substantially higher than SmolVLM2-500M (562), while LFM2-VL-3B scores 822, reaching performance of other similarly sized models."
+    }
+  ]
+}

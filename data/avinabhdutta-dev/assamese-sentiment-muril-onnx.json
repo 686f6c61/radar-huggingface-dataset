@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AvinabhDutta-Dev/assamese-sentiment-muril-onnx",
+  "slug": "avinabhdutta-dev-assamese-sentiment-muril-onnx",
+  "author": "AvinabhDutta-Dev",
+  "url": "https://huggingface.co/AvinabhDutta-Dev/assamese-sentiment-muril-onnx",
+  "created_at": "2026-08-31T07:11:04.000Z",
+  "updated_at": "2026-08-31T08:09:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "bert",
+    "sentiment-analysis",
+    "assamese",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 950441456,
+  "storage_human": "950 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AvinabhDutta-Dev/assamese-sentiment-muril · Hugging Face",
+      "url": "https://huggingface.co/AvinabhDutta-Dev/assamese-sentiment-muril",
+      "snippet": "Assamese Sentiment Analysis — Fine-Tuned MuRIL This repository contains a fine-tuned MuRIL (Multilingual Representations for Indian Languages) transformer model optimized for binary sentiment analysis on Assamese textual reviews. It maps localized Assamese content into binary sentiment classes (Positive and Negative)."
+    },
+    {
+      "title": "AvinabhDutta-Dev (Avinabh Dutta) - Hugging Face",
+      "url": "https://huggingface.co/AvinabhDutta-Dev",
+      "snippet": "AI & ML interests NLP for low-resource languages (Assamese, Bengali), transfer learning, transformer models (MuRIL, IndicBERT, XLM-R), sentiment analysis, RAG systems"
+    },
+    {
+      "title": "GitHub - AvinabhDutta-Dev/assamese-sentiment-analysis: Comparative ...",
+      "url": "https://github.com/AvinabhDutta-Dev/assamese-sentiment-analysis",
+      "snippet": "A comparative study benchmarking five machine learning and deep learning architectures for binary sentiment classification on Assamese-language movie reviews — built to address the near-total absence of sentiment analysis resources for Assamese, a low-resource Indic language."
+    },
+    {
+      "title": "GitHub - AvinabhDutta-Dev/assamese-sentiment-live-demo: Live ...",
+      "url": "https://github.com/AvinabhDutta-Dev/assamese-sentiment-live-demo",
+      "snippet": "A live, interactive Gradio app for Assamese sentiment classification, powered by a fine-tuned MuRIL model (96.33% accuracy). Deployed on Render for free public hosting, embedded directly in my portfolio."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

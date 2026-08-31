@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "dys-asr/parakeet-tdt-0.6b-unconstrained",
+  "slug": "dys-asr-parakeet-tdt-0-6b-unconstrained",
+  "author": "dys-asr",
+  "url": "https://huggingface.co/dys-asr/parakeet-tdt-0.6b-unconstrained",
+  "created_at": "2026-08-31T09:42:23.000Z",
+  "updated_at": "2026-08-31T09:42:52.000Z",
+  "license": "speech-accessibility-project-dua",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "parakeet_tdt",
+    "feature-extraction",
+    "automatic-speech-recognition",
+    "dysarthria",
+    "disordered-speech",
+    "accessibility",
+    "parakeet",
+    "tdt",
+    "transducer",
+    "specaugment",
+    "en",
+    "base_model:nvidia/parakeet-tdt-0.6b-v3",
+    "base_model:finetune:nvidia/parakeet-tdt-0.6b-v3",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 627057286,
+  "parameters_human": "627.1M",
+  "storage_bytes": 2508311120,
+  "storage_human": "2.5 GB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "SAPC2 dev, speakers held out of SAPC1 dev",
+      "metric": "WER",
+      "value": 10.52
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "SAPC2 dev, speakers held out of SAPC1 dev",
+      "metric": "CER",
+      "value": 6.45
+    }
+  ],
+  "sources": [
+    {
+      "title": "dys-asr/parakeet-tdt-0.6b-all-aug · Hugging Face",
+      "url": "https://huggingface.co/dys-asr/parakeet-tdt-0.6b-all-aug",
+      "snippet": "dys-asr / parakeet-tdt-.6b-all-aug like 0 Follow DysASR 2 Automatic Speech Recognition Transformers Safetensors English parakeet_tdt feature-extraction dysarthria disordered-speech accessibility parakeet tdt transducer specaugment Eval Results (legacy) License:speech-accessibility-project-dua Model card FilesFiles and versions xet Community ..."
+    },
+    {
+      "title": "dys-asr/parakeet-tdt-0.6b-sapc1 · Hugging Face",
+      "url": "https://huggingface.co/dys-asr/parakeet-tdt-0.6b-sapc1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Parakeet TDT 0.6B v3 — OpenASR Models",
+      "url": "https://openasr.org/models/parakeet-tdt-0.6b-v3/",
+      "snippet": "Parakeet TDT 0.6B v3 is NVIDIA&#x27;s 600M-parameter multilingual speech-recognition model, extending the English-only v2 to 25 European languages using the Granary multilingual corpus (~660k hours of pseudo-labeled speech plus ~10k hours of human transcriptions). Architecturally it pairs a FastConformer encoder with a Token-and-Duration Transducer (TDT) decoder: each decode step predicts both the ..."
+    },
+    {
+      "title": "Parakeet 0.6b TDT collection | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/-/collections/parakeet-tdt-0.6b/-?_lr=1",
+      "snippet": "This collection offers two Parakeet TDT 0.6B variants: v2 (English only) and v3 (25 European languages). Both are 600-million-parameter models with native punctuation, capitalization, and accurate word-level timestamp prediction. Integrated within the NeMo framework, they provide a highly accurate solution that can efficiently transcribe audio segments up to 24 minutes in a single pass."
+    },
+    {
+      "title": "parakeet-tdt-0.6b-v2 Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/parakeet-tdt-0_6b-v2/modelcard?integrate_nim=true&hosted_api=true&modal=integrate-nim",
+      "snippet": "Parakeet-tdt-.6b-v2 is a 600-million-parameter automatic speech recognition (ASR) model designed for high-quality English transcription, featuring support for punctuation, capitalization, and accurate timestamp prediction."
+    }
+  ]
+}

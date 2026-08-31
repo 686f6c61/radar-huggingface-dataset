@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SanaullahTareen07/logistic-detection-using-yolo-11m",
+  "slug": "sanaullahtareen07-logistic-detection-using-yolo-11m",
+  "author": "SanaullahTareen07",
+  "url": "https://huggingface.co/SanaullahTareen07/logistic-detection-using-yolo-11m",
+  "created_at": "2026-08-31T09:39:20.000Z",
+  "updated_at": "2026-08-31T09:44:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "object-detection",
+    "en",
+    "dataset:Voxel51/lidar-warehouse-dataset",
+    "base_model:Ultralytics/YOLO11",
+    "base_model:quantized:Ultralytics/YOLO11",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 304738716,
+  "storage_human": "305 MB",
+  "base_model": "Ultralytics/YOLO11",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SanaullahTareen07 (Sanaullah Tareen) - Hugging Face",
+      "url": "https://huggingface.co/SanaullahTareen07/models",
+      "snippet": "ML/AI Engineer with 1 year of hands-on experience in building end-to-end machine learning pipelines and AI systems. Proficient in Python, PyTorch, TensorFlow, Scikit-learn, and FastAPI. Experience..."
+    },
+    {
+      "title": "Ultralytics YOLO11 | Ultralytics",
+      "url": "https://docs.ultralytics.com/models/yolo11",
+      "snippet": "Discover YOLO11, an advancement in real-time object detection, offering excellent accuracy and efficiency for diverse computer vision tasks."
+    },
+    {
+      "title": "GitHub - ultralytics/ultralytics: Ultralytics YOLO26, YOLO11, YOLOv8 ...",
+      "url": "https://github.com/ultralytics/ultralytics",
+      "snippet": "Ultralytics creates cutting-edge, state-of-the-art (SOTA) YOLO models built on years of foundational research in computer vision and AI. Constantly updated for performance and flexibility, our models are fast, accurate, and easy to use."
+    },
+    {
+      "title": "How to Build a Computer Vision Project using Logistics ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=HSM6iaj2JPY",
+      "snippet": "Ideal for developers, data scientists, and AI engineers aiming to master the end-to-end computer vision process, from data preparation to model evaluation and real-world inference."
+    },
+    {
+      "title": "athifsaleem/yolo11m-model · Hugging Face",
+      "url": "https://huggingface.co/athifsaleem/yolo11m-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

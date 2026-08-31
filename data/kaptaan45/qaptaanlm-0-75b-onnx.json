@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "kaptaan45/QaptaanLM-0.75B-ONNX",
+  "slug": "kaptaan45-qaptaanlm-0-75b-onnx",
+  "author": "kaptaan45",
+  "url": "https://huggingface.co/kaptaan45/QaptaanLM-0.75B-ONNX",
+  "created_at": "2026-08-31T10:02:09.000Z",
+  "updated_at": "2026-08-31T10:29:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en",
+    "code"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qaptaan",
+    "text-generation",
+    "onnxruntime",
+    "webgpu",
+    "in-browser",
+    "foundation",
+    "linear-attention",
+    "conversational",
+    "custom_code",
+    "en",
+    "code",
+    "base_model:kaptaan45/QaptaanLM-0.75B",
+    "base_model:quantized:kaptaan45/QaptaanLM-0.75B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4044425375,
+  "storage_human": "4.0 GB",
+  "base_model": "kaptaan45/QaptaanLM-0.75B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kaptaan45/QaptaanLM-0.75B · Hugging Face",
+      "url": "https://huggingface.co/kaptaan45/QaptaanLM-0.75B",
+      "snippet": "QaptaanLM-0.75B is a compact, high-efficiency hybrid-attention foundation language model optimized for source code synthesis, technical reasoning, and long-context code comprehension."
+    },
+    {
+      "title": "Quantized Models for kaptaan45/QaptaanLM-0.75B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:kaptaan45/QaptaanLM-0.75B",
+      "snippet": "Model Tree Reset kaptaan45/QaptaanLM-0.75B Adapters Finetunes Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 662+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "GitHub - rudy-07/QaptaanLM-0.75B",
+      "url": "https://github.com/rudy-07/QaptaanLM-0.75B/tree/main",
+      "snippet": "Contribute to rudy-07/QaptaanLM-.75B development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    }
+  ]
+}

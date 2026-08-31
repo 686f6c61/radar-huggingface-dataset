@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "MergekitCloud/mergekit-77",
+  "slug": "mergekitcloud-mergekit-77",
+  "author": "MergekitCloud",
+  "url": "https://huggingface.co/MergekitCloud/mergekit-77",
+  "created_at": "2026-08-31T08:52:46.000Z",
+  "updated_at": "2026-08-31T08:54:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "base_model:FuseAI/FuseChat-7B-VaRM",
+    "base_model:merge:FuseAI/FuseChat-7B-VaRM",
+    "base_model:Nexusflow/Starling-LM-7B-beta",
+    "base_model:merge:Nexusflow/Starling-LM-7B-beta",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241748480,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14484024243,
+  "storage_human": "14.5 GB",
+  "base_model": "Nexusflow/Starling-LM-7B-beta, FuseAI/FuseChat-7B-VaRM",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MergeKit Hub — Community Resource & Guide",
+      "url": "https://www.mergekit.com/",
+      "snippet": "Who is MergeKit for? MergeKit is built for ML researchers who want to publish reproducible merge experiments, independent developers who need capable open models without fine-tuning budgets, and AI teams who want to track the community&#x27;s best merged models from a single dashboard."
+    },
+    {
+      "title": "GitHub - arcee-ai/mergekit: Tools for merging pretrained large language ...",
+      "url": "https://github.com/arcee-ai/mergekit",
+      "snippet": "Usage The script mergekit-yaml is the main entry point for mergekit. It takes a YAML configuration file and an output path, like so: ... This will run the merge and write your merged model to ./output-model-directory. For more information on the arguments accepted by mergekit-yaml run the command mergekit-yaml --help."
+    },
+    {
+      "title": "MergekitCloud/mergekit-75 · Hugging Face",
+      "url": "https://huggingface.co/MergekitCloud/mergekit-75",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mergekit-gui - a Hugging Face Space by arcee-ai",
+      "url": "https://huggingface.co/spaces/arcee-ai/mergekit-gui",
+      "snippet": "Upload a YAML configuration file to merge AI models. Optionally, provide a Hugging Face token and specify a repository name. The merged model will be uploaded to Hugging Face."
+    },
+    {
+      "title": "Arcee&#x27;s MergeKit: A Toolkit for Merging Large Language Models",
+      "url": "https://arxiv.org/html/2403.13257v2",
+      "snippet": "To support this expanding area of research, we introduce MergeKit, a comprehensive, open-source library designed to facilitate the application of model merging strategies. MergeKit offers an extensible framework to efficiently merge models on any hardware, providing utility to researchers and practitioners."
+    }
+  ]
+}

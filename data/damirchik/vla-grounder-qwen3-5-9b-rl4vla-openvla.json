@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Damirchik/vla-grounder-qwen3.5-9b-rl4vla-openvla",
+  "slug": "damirchik-vla-grounder-qwen3-5-9b-rl4vla-openvla",
+  "author": "Damirchik",
+  "url": "https://huggingface.co/Damirchik/vla-grounder-qwen3.5-9b-rl4vla-openvla",
+  "created_at": "2026-08-31T02:36:03.000Z",
+  "updated_at": "2026-08-31T04:45:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "robotics",
+    "vision-language-action",
+    "vla-grounder",
+    "grpo",
+    "qwen3.5",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839715630,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-9B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-9B",
+      "snippet": "Qwen3.5-9B is a dense multimodal model from the Qwen3.5 family — same gated delta networks hybrid attention, vision encoder, 262K context, and MTP support as its larger siblings, but sized to fit comfortably on a single 24 GB GPU."
+    },
+    {
+      "title": "Damirchik/qwen3.5-9b-openvla-rlvla-multi · Hugging Face",
+      "url": "https://huggingface.co/Damirchik/qwen3.5-9b-openvla-rlvla-multi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Damirchik/qwen3.5-9b-openvla-rlvla-multi at main - Hugging Face",
+      "url": "https://huggingface.co/Damirchik/qwen3.5-9b-openvla-rlvla-multi/tree/main",
+      "snippet": "Notebooks Local AppsSettings vLLM How to use Damirchik/qwen3.5-9b-openvla-rlvla-multi with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "VLA Grounder: Language-Conditioning Space Optimization for Black-Box ...",
+      "url": "https://arxiv.org/html/2607.04517v1",
+      "snippet": "The generated command is then used as the language input to the unchanged VLA policy. Because the downstream action model is kept fixed, the method adapts the conditioning signal rather than the action policy, making it non-invasive for different frozen VLA models."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    }
+  ]
+}

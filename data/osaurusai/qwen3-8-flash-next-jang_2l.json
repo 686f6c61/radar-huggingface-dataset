@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "OsaurusAI/Qwen3.8-Flash-Next-JANG_2L",
+  "slug": "osaurusai-qwen3-8-flash-next-jang_2l",
+  "author": "OsaurusAI",
+  "url": "https://huggingface.co/OsaurusAI/Qwen3.8-Flash-Next-JANG_2L",
+  "created_at": "2026-08-27T00:55:51.000Z",
+  "updated_at": "2026-08-31T09:32:00.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "jang",
+    "jang-2l",
+    "quantized",
+    "apple-silicon",
+    "vision",
+    "video",
+    "reasoning",
+    "agent",
+    "tool-use",
+    "moe",
+    "ngram-embedding",
+    "imatrix",
+    "awq",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 273,
+  "trending_score": 0,
+  "parameters": 21552960339,
+  "parameters_human": "21.55B",
+  "storage_bytes": 196094880589,
+  "storage_human": "196.1 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OsaurusAI/Qwen3.8-Flash-Next-JANG_2L · Hugging Face",
+      "url": "https://huggingface.co/OsaurusAI/Qwen3.8-Flash-Next-JANG_2L",
+      "snippet": "A JANG bundle of Qwen/Qwen3.8-Flash-Next — the Qwen4-architecture preview: a 125B mixture-of-experts (512 experts, 6B active) with a 51B hashed n-gram embedding, Gated DeltaNet + Qwen Sparse Attention hybrid layers, gated-residual streams, and vision+video towers — quantized for Apple Silicon / MLX."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "By default, Qwen3.8-Flash-Next retains thinking blocks from all historical messages, maintaining a complete reasoning trace across the conversation. This behavior, known as preserved thinking, ensures full context continuity and is especially beneficial for agent scenarios where decision consistency and reduced redundant reasoning are critical."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. Qwen3.8 -Flash-Next outperforms Claude-4.6-Opus (Max) and can run locally on devices with 75GB RAM /unified memory with no GPU VRAM required."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/qwen3_8_flash_next",
+      "snippet": "Qwen3.8-Flash-Next is an experimental open-weight multimodal large language model released by Alibaba Group&#x27;s Qwen team on August 26, 2026."
+    }
+  ]
+}

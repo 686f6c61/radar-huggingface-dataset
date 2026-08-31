@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jackclarkewa/dissertation-contrastive",
+  "slug": "jackclarkewa-dissertation-contrastive",
+  "author": "jackclarkewa",
+  "url": "https://huggingface.co/jackclarkewa/dissertation-contrastive",
+  "created_at": "2026-08-31T10:00:21.000Z",
+  "updated_at": "2026-08-31T10:00:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "AI Model Benchmarks and Provider Comparison for 2026",
+      "url": "https://platform.teamai.com/blog/large-language-models-llms/the-2026-ai-frontier-model-war-2/",
+      "snippet": "AIME, GPQA, SWE-bench, and ARC-AGI-2 results for every major 2026 AI model , GPT-5, Claude 4, Gemini 3, DeepSeek, Kimi, and Qwen. Plus a provider-by-provider deployment guide."
+    },
+    {
+      "title": "PDF Written Testimony of Jack Clark Before the House China Select Committee ...",
+      "url": "https://www.congress.gov/119/meeting/house/118428/witnesses/HHRG-119-ZS00-Wstate-ClarkJ-20250625.pdf",
+      "snippet": "To prevent advanced AI models and AI infrastructure from being acquired by adversaries, we strongly recommend that Congress take steps to strengthen export controls on computational resources and implement appropriate export restrictions on certain model weights."
+    },
+    {
+      "title": "Researchers Tested AI Against 100,000 Humans on Creativity",
+      "url": "https://www.sciencedaily.com/releases/2026/01/260125083356.htm",
+      "snippet": "A massive new study comparing more than 100,000 people with today&#x27;s most advanced AI systems delivers a surprising result: generative AI can now beat the average human on certain creativity ..."
+    },
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    }
+  ]
+}

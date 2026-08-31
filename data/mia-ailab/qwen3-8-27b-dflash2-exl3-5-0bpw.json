@@ -5,7 +5,7 @@
   "author": "Mia-AiLab",
   "url": "https://huggingface.co/Mia-AiLab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw",
   "created_at": "2026-08-24T18:03:02.000Z",
-  "updated_at": "2026-08-24T18:04:02.000Z",
+  "updated_at": "2026-08-25T23:07:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 157,
   "trending_score": 0,
   "parameters": 735448320,
   "parameters_human": "735.4M",
@@ -39,9 +39,9 @@
     "safetensors"
   ],
   "is_conversational": false,
-  "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-25T05:36:34.548Z",
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

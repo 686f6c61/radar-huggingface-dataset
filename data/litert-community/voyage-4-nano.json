@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "litert-community/voyage-4-nano",
+  "slug": "litert-community-voyage-4-nano",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/voyage-4-nano",
+  "created_at": "2026-08-31T10:04:22.000Z",
+  "updated_at": "2026-08-31T10:05:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "on-device",
+    "edge",
+    "embeddings",
+    "sentence-transformers",
+    "retrieval",
+    "rag",
+    "multilingual",
+    "matryoshka",
+    "qwen3",
+    "feature-extraction",
+    "base_model:voyageai/voyage-4-nano",
+    "base_model:finetune:voyageai/voyage-4-nano",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1060422624,
+  "storage_human": "1.1 GB",
+  "base_model": "voyageai/voyage-4-nano",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "voyageai/voyage-4-nano · Hugging Face",
+      "url": "https://huggingface.co/voyageai/voyage-4-nano",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Voyage 4 nano - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/voyage-4-nano/",
+      "snippet": "voyage-4-nano is a lightweight open-weight text embedding model from the Voyage 4 series. It features a 32,000-token context window, 340M total parameters, multilingual support, Matryoshka flexible dimensions (256 to 2048), quantization-aware training, and a shared embedding space compatible with all other Voyage 4 models. Licensed under Apache 2.0."
+    },
+    {
+      "title": "voyage-4-nano: Lightweight Open-Source Text Embedding Model for ...",
+      "url": "https://dev.co/ai/llms/voyage-4-nano",
+      "snippet": "Deploy voyage-4-nano for cost-efficient semantic search and retrieval. Lightweight embedding model with flexible dimensions, quantization support, and 32K context. Apache 2.0 licensed, commercial-use ready."
+    },
+    {
+      "title": "voyageai/voyage-4-nano at main - Hugging Face",
+      "url": "https://huggingface.co/voyageai/voyage-4-nano/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "voyage 4 nano — ThinkLLM",
+      "url": "https://thinkllm.dev/models/voyage-4-nano",
+      "snippet": "Compact and efficient, Voyage 4 Nano is the lightweight member of the Voyage embedding family — optimized for speed and low resource consumption without sacrificing too much retrieval quality. It excels at turning text into dense vector representations quickly, making it practical for high-throughput pipelines or memory-constrained environments. The trade-off is that larger, more expressive ..."
+    }
+  ]
+}

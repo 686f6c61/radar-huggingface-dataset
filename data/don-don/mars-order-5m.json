@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Don-Don/mars-order-5m",
+  "slug": "don-don-mars-order-5m",
+  "author": "Don-Don",
+  "url": "https://huggingface.co/Don-Don/mars-order-5m",
+  "created_at": "2026-08-31T08:18:49.000Z",
+  "updated_at": "2026-08-31T08:55:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama2",
+    "finance",
+    "market-simulation",
+    "causal-lm",
+    "arxiv:2409.07486",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5008288,
+  "parameters_human": "5.0M",
+  "storage_bytes": 20036192,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Research: MarS",
+      "url": "https://mars-lmm.github.io/",
+      "snippet": "Our financial Market Simulation engine (MarS), powered by LMM, addresses the domain-specific need for realistic, interactive and controllable order generation. Key observations include LMM&#x27;s strong scalability across data size and model complexity, and MarS&#x27;s robust and practicable realism in controlled generation with market impact."
+    },
+    {
+      "title": "Camb-ai/MARS5-TTS: MARS5 speech model (TTS) from CAMB.AI - GitHub",
+      "url": "https://github.com/Camb-ai/MARS5-TTS",
+      "snippet": "This is the repo for the MARS5 English speech model (TTS) from CAMB.AI. The model follows a two-stage AR-NAR pipeline with a distinctively novel NAR component (see more info in the Architecture). With just 5 seconds of audio and a snippet of text, MARS5 can generate speech even for prosodically hard and diverse scenarios like sports commentary, anime and more. Check out our demo: intro_vid ..."
+    },
+    {
+      "title": "OrderModel and ML Components | microsoft/MarS | DeepWiki",
+      "url": "https://deepwiki.com/microsoft/MarS/3-ordermodel-and-ml-components",
+      "snippet": "OrderModel and ML Components Relevant source files This document provides an overview of the machine learning components in the MarS system, focusing on the OrderModel and OrderTokenizer classes that form the core AI engine for generating realistic market orders. These components implement transformer-based neural networks that learn patterns from financial market data to simulate order ..."
+    },
+    {
+      "title": "MarS/market_simulation/models/order_model.py at main - GitHub",
+      "url": "https://github.com/microsoft/MarS/blob/main/market_simulation/models/order_model.py",
+      "snippet": "MarS: a Financial Market Simulation Engine Powered by Generative Foundation Model - microsoft/MarS"
+    },
+    {
+      "title": "MarS: a Financial Market Simulation Engine Powered by Generative ...",
+      "url": "https://arxiv.org/html/2409.07486v1",
+      "snippet": "We propose Large Market Model (LMM), an order-level generative foundation model, for financial market simulation, akin to language modeling in the digital world. Our financial Market Simulation engine (MarS), powered by LMM, addresses the need for realistic, interactive and controllable order generation."
+    }
+  ]
+}

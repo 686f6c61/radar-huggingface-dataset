@@ -5,7 +5,7 @@
   "author": "ajrayman",
   "url": "https://huggingface.co/ajrayman/Cautiousness_continuous",
   "created_at": "2024-08-04T01:40:48.000Z",
-  "updated_at": "2026-08-30T10:56:46.000Z",
+  "updated_at": "2026-08-30T15:14:16.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -20,6 +20,7 @@
     "base_model:FacebookAI/roberta-base",
     "base_model:finetune:FacebookAI/roberta-base",
     "license:mit",
+    "text-embeddings-inference",
     "endpoints_compatible",
     "region:us"
   ],

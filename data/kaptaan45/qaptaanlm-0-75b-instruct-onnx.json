@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "kaptaan45/QaptaanLM-0.75B-Instruct-ONNX",
+  "slug": "kaptaan45-qaptaanlm-0-75b-instruct-onnx",
+  "author": "kaptaan45",
+  "url": "https://huggingface.co/kaptaan45/QaptaanLM-0.75B-Instruct-ONNX",
+  "created_at": "2026-08-31T10:00:27.000Z",
+  "updated_at": "2026-08-31T10:29:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en",
+    "code"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qaptaan",
+    "text-generation",
+    "onnxruntime",
+    "webgpu",
+    "in-browser",
+    "instruct",
+    "linear-attention",
+    "conversational",
+    "custom_code",
+    "en",
+    "code",
+    "base_model:kaptaan45/QaptaanLM-0.75B-Instruct",
+    "base_model:quantized:kaptaan45/QaptaanLM-0.75B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4044425375,
+  "storage_human": "4.0 GB",
+  "base_model": "kaptaan45/QaptaanLM-0.75B-Instruct",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kaptaan45/QaptaanLM-0.75B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/kaptaan45/QaptaanLM-0.75B-Instruct-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kaptaan45/QaptaanLM-0.75B-Instruct-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/kaptaan45/QaptaanLM-0.75B-Instruct-GGUF/tree/main",
+      "snippet": "Instructions to use kaptaan45/QaptaanLM-.75B-Instruct-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use kaptaan45/QaptaanLM-.75B-Instruct-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "KapInstruct-100M - Kaggle",
+      "url": "https://www.kaggle.com/datasets/kaptaan45/kapinstruct-100m",
+      "snippet": "KapInstruct-100M: Curated 100-Million Token Instruction Tuning Dataset KapInstruct-100M is a high-fidelity, 100-million-token instruction-tuning dataset engineered for Supervised Fine-Tuning (SFT) and alignment of compact language models (under 1 billion parameters). Formatted with the Qwen ChatML chat template and tokenized using Qwen/Qwen3.5-.8B-Base, the dataset enforces strict assistant ..."
+    },
+    {
+      "title": "GitHub - rudy-07/QaptaanLM-0.75B",
+      "url": "https://github.com/rudy-07/QaptaanLM-0.75B/tree/main",
+      "snippet": "A robust, portable, and production-ready two-phase fine-tuning pipeline for Qwen3.5-.8B-Base targeting state-of-the-art code generation, technical reasoning, and instruction following ..."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    }
+  ]
+}

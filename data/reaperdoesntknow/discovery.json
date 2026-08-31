@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/Discovery",
   "created_at": "2026-03-09T19:56:07.000Z",
-  "updated_at": "2026-08-29T13:15:19.000Z",
+  "updated_at": "2026-08-30T14:35:01.000Z",
   "license": "cc",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2096,
+  "downloads_30d": 2329,
   "trending_score": 0,
   "parameters": 70569408,
   "parameters_human": "70.6M",

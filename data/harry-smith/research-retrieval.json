@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "harry-smith/research-retrieval",
+  "slug": "harry-smith-research-retrieval",
+  "author": "harry-smith",
+  "url": "https://huggingface.co/harry-smith/research-retrieval",
+  "created_at": "2026-08-31T10:16:53.000Z",
+  "updated_at": "2026-08-31T10:17:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Systematic Review of Key Retrieval-Augmented Generation (RAG) Systems ...",
+      "url": "https://arxiv.org/html/2507.18910v1",
+      "snippet": "Retrieval-Augmented Generation (RAG) represents a fundamental advancement in AI, bridging retrieval and generation for improved factuality and adaptability. This review highlights the evolution of RAG from early retrieve-and-read systems to sophisticated architectures integrating neural retrievers and sequence-to-sequence generators."
+    },
+    {
+      "title": "Synthesizing scientific literature with retrieval-augmented language ...",
+      "url": "https://www.nature.com/articles/s41586-025-10072-4",
+      "snippet": "A specialized, open-source, retrieval-augmented language model is introduced for answering scientific queries and synthesizing literature, the responses of which are shown to be preferred by human ..."
+    },
+    {
+      "title": "A Systematic Literature Review of Retrieval-Augmented Generation ...",
+      "url": "https://arxiv.org/pdf/2508.06401",
+      "snippet": "Large Language Models (LLMs) have, over the past five years, transformed the way researchers and practitioners pro-cess text. Retrieval-Augmented Generation (RAG) addresses key shortcomings of these models, such as hallucinated facts, stale world knowledge, and the challenges posed by knowledge-intensive and domain-specific queries, by allowing a generative model to query an external corpus at ..."
+    },
+    {
+      "title": "Scientific literature synthesis with retrieval-augmented language ...",
+      "url": "https://allenai.org/blog/openscilm",
+      "snippet": "To support research in this direction, we have open-sourced all of our code, LM, retriever and re-ranker checkpoints, retrieval index, and data, including the training data for our language model and retriever, our datastore of academic papers, and the evaluation data in ScholarQABench."
+    },
+    {
+      "title": "Retrieval-augmented generation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
+      "snippet": "Retrieval-augmented generation (RAG) is a technique that enables large language models (LLMs) to retrieve and incorporate new information from external data sources. [1]"
+    }
+  ]
+}

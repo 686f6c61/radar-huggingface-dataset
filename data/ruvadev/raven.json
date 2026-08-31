@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Ruvadev/Raven",
+  "slug": "ruvadev-raven",
+  "author": "Ruvadev",
+  "url": "https://huggingface.co/Ruvadev/Raven",
+  "created_at": "2026-08-31T08:39:44.000Z",
+  "updated_at": "2026-08-31T09:58:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "raven",
+    "computer-vision",
+    "image-forensics",
+    "ai-image-detection",
+    "dinov2",
+    "image-classification",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22898514,
+  "parameters_human": "22.9M",
+  "storage_bytes": 184408034,
+  "storage_human": "184 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Raven - ML Model Monitoring Simplified",
+      "url": "https://ravenai.tech/",
+      "snippet": "ML MODEL MONITORING, SIMPLIFIED Confidence drops, data drifts, latency spikes—catch issues before users do. Purpose-built monitoring for ML inference, with real-time alerts and feature-level drift detection."
+    },
+    {
+      "title": "Raven",
+      "url": "https://ravenai.tech/docs/",
+      "snippet": "Welcome to Raven AI Model Monitoring, Simplified Models fail silently. Confidence drops, input data drifts, response times spike—and most teams only find out when users complain. Traditional monitoring tools like Prometheus or Grafana watch your servers, not your models. This project changes that."
+    },
+    {
+      "title": "GitHub - RavenLens/Raven-ADK: GraphBased AI Agents Developement Kit ...",
+      "url": "https://github.com/RavenLens/Raven-ADK",
+      "snippet": "Motivation for library Our motivation for Raven Agent-Developmenet-Kit is to build an ai-agentic library is cleaver in its engineering and gives programmers ability to ship an ai apps with sota patterns along a UI/UX experiences delivering via native-javascript appraoach is events propagation."
+    },
+    {
+      "title": "GitHub - mvp-ai-lab/RAVEN: Implementation of our paper \"RAVEN: Real ...",
+      "url": "https://github.com/mvp-ai-lab/RAVEN",
+      "snippet": "Implementation of our paper \"RAVEN: Real-time Autoregressive Video Extrapolation with Consistency-model GRPO\" - mvp-ai-lab/RAVEN"
+    },
+    {
+      "title": "Quickstart - raven",
+      "url": "https://raven-ml.dev/docs/quickstart/",
+      "snippet": "A model is a plain record with a hand-written traversal (Nx.Ptree.S), the training step is value_and_grad plus one Vega optimizer update, and the loop is a plain for loop — no trainer, no layer type."
+    }
+  ]
+}

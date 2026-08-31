@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "fiveflow/rq_8b_96",
+  "slug": "fiveflow-rq_8b_96",
+  "author": "fiveflow",
+  "url": "https://huggingface.co/fiveflow/rq_8b_96",
+  "created_at": "2026-08-31T01:55:34.000Z",
+  "updated_at": "2026-08-31T02:44:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939858,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fiveflow/rq_8b_96 · Hugging Face",
+      "url": "https://huggingface.co/fiveflow/rq_8b_96",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fiveflow/rq_8b_128 · Hugging Face",
+      "url": "https://huggingface.co/fiveflow/rq_8b_128",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fiveflow (yonghoon) - Hugging Face",
+      "url": "https://huggingface.co/fiveflow",
+      "snippet": "fiveflow/flan-t5-base-gsm8k Text2Text Generation • Updated Aug 24 Expand 19 model s"
+    },
+    {
+      "title": "fiveflow (yonghoon) - Hugging Face",
+      "url": "https://huggingface.co/fiveflow/datasets",
+      "snippet": "User profile of yonghoon on Hugging Face"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

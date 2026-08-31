@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "WillNuyen228/auramask-heavy_pixelate",
+  "slug": "willnuyen228-auramask-heavy_pixelate",
+  "author": "WillNuyen228",
+  "url": "https://huggingface.co/WillNuyen228/auramask-heavy_pixelate",
+  "created_at": "2026-06-27T03:22:45.000Z",
+  "updated_at": "2026-08-31T08:07:23.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "tflite",
+    "adversarial",
+    "aesthetic",
+    "quality",
+    "filter",
+    "image-to-image",
+    "dataset:logasja/FDF",
+    "base_model:logasja/ArcFace",
+    "base_model:finetune:logasja/ArcFace",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 43,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58680484,
+  "storage_human": "59 MB",
+  "base_model": "vnet, logasja/ArcFace, logasja/VGGFace",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WillNuyen228/auramask-heavy_pixelate · Hugging Face",
+      "url": "https://huggingface.co/WillNuyen228/auramask-heavy_pixelate",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WillNuyen228/auramask-pixelate · Hugging Face",
+      "url": "https://huggingface.co/WillNuyen228/auramask-pixelate",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Use Auramask-heavypixelate AI Generator for Free Now | a1.art",
+      "url": "https://a1.art/model/auramask-heavypixelate",
+      "snippet": "Auramask-heavypixelate has been integrated into a1.art, offering users a powerful tool to create stunning pixelated images and videos. With this new model, you can upload an image or text prompt and instantly transform it into unique pixel art visuals. Use your credits to explore the creative potential of Auramask-heavypixelate today."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Odysseus AI - Self-Hosted AI Workspace Setup Guide",
+      "url": "https://odysseusai.dev/",
+      "snippet": "Odysseus AI Setup Guide For PewDiePie&#x27;s self-hosted AI workspace Verify the official source, choose Docker, Windows, macOS, or Linux, connect Ollama or API keys, read logs, choose a model that fits your hardware, and avoid unsafe public deployment."
+    }
+  ]
+}

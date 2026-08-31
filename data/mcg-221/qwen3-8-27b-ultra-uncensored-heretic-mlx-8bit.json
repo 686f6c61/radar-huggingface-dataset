@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "McG-221/Qwen3.8-27B-Ultra-Uncensored-Heretic-mlx-8Bit",
+  "slug": "mcg-221-qwen3-8-27b-ultra-uncensored-heretic-mlx-8bit",
+  "author": "McG-221",
+  "url": "https://huggingface.co/McG-221/Qwen3.8-27B-Ultra-Uncensored-Heretic-mlx-8Bit",
+  "created_at": "2026-08-31T07:45:09.000Z",
+  "updated_at": "2026-08-31T07:45:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "mpoa",
+    "mtp",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "base_model:llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved",
+    "base_model:quantized:llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7566401024,
+  "parameters_human": "7.57B",
+  "storage_bytes": 28599709890,
+  "storage_human": "28.6 GB",
+  "base_model": "llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - onurburak9/Qwen3.8-27B-Uncensored-MLX",
+      "url": "https://github.com/onurburak9/Qwen3.8-27B-Uncensored-MLX",
+      "snippet": "An abliterated (refusal-removed) build of Qwen/Qwen3.8-27B — a 27B-parameter dense, hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with thinking control, tool-calling and an MTP head — quantized to MLX format for Apple Silicon. Four precisions are provided as subfolders: 2 / 4 / 6 / 8-bit (affine, group size 64). The vision tower, norms and conv ..."
+    },
+    {
+      "title": "Orca Router releases uncensored Qwen 3.8-27B for Apple Silicon Macs",
+      "url": "https://www.newsbytesapp.com/news/science/orca-router-releases-uncensored-qwen-38-27b-for-apple-silicon-macs/tldr",
+      "snippet": "Alibaba&#x27;s Qwen 3.8-27B model has been modified by Orca Router to remove refusal behavior, enabling local use on Apple Silicon Macs for unrestricted and controversial prompts."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Ollama build of Qwen3.8-27B-Uncensored — an abliterated (refusal-removed) build of Qwen&#x27;s Qwen3.8-27B, a 27B dense hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with reasoning, tool-calling, and an MTP speculative-decoding head. Sixteen tags from 2-bit to 8-bit, each with the mmproj vision projector bundled in — nothing extra to fetch. Browse all ..."
+    },
+    {
+      "title": "McG-221/Qwen3.8-27B-heretic-mlx-8Bit · Hugging Face",
+      "url": "https://huggingface.co/McG-221/Qwen3.8-27B-heretic-mlx-8Bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored MLX: OrcaRouter Build Explained | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026",
+      "snippet": "OrcaRouter Ships an Uncensored Qwen3.8-27B MLX Build for Mac Qwen, Open Weight Models, Abliteration, MLX, Apple Silicon, AI Safety OrcaRouter released an abliterated Qwen3.8-27B in MLX format for Apple Silicon, at 2/4/6/8-bit quants, plus GGUF and FP8 builds — here&#x27;s what abliteration actually did and the real hardware/safety tradeoffs."
+    }
+  ]
+}

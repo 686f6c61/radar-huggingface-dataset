@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "MergekitCloud/mergekit-78",
+  "slug": "mergekitcloud-mergekit-78",
+  "author": "MergekitCloud",
+  "url": "https://huggingface.co/MergekitCloud/mergekit-78",
+  "created_at": "2026-08-31T10:31:05.000Z",
+  "updated_at": "2026-08-31T10:37:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2403.19522",
+    "base_model:Qwen/Qwen2.5-14B",
+    "base_model:merge:Qwen/Qwen2.5-14B",
+    "base_model:Qwen/Qwen2.5-Coder-14B",
+    "base_model:merge:Qwen/Qwen2.5-Coder-14B",
+    "base_model:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "base_model:merge:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "base_model:rombodawg/Rombos-Coder-V2.5-Qwen-14b",
+    "base_model:merge:rombodawg/Rombos-Coder-V2.5-Qwen-14b",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29540133904,
+  "storage_human": "29.5 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-14B, Qwen/Qwen2.5-Coder-14B-Instruct, Qwen/Qwen2.5-14B, rombodawg/Rombos-Coder-V2.5-Qwen-14b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - arcee-ai/mergekit: Tools for merging pretrained large language ...",
+      "url": "https://github.com/arcee-ai/mergekit",
+      "snippet": "Usage The script mergekit-yaml is the main entry point for mergekit. It takes a YAML configuration file and an output path, like so: ... This will run the merge and write your merged model to ./output-model-directory. For more information on the arguments accepted by mergekit-yaml run the command mergekit-yaml --help."
+    },
+    {
+      "title": "Mergekit Model Merging | Guides | Clore.ai",
+      "url": "https://docs.clore.ai/guides/training/mergekit",
+      "snippet": "Mergekit is the definitive toolkit for merging pretrained large language models. With 5K+ GitHub stars, it implements every major model merging algorithm — SLERP, TIES, DARE, DARE-TIES, MoE merging, and more — enabling you to create powerful new models without any training data or GPU training time."
+    },
+    {
+      "title": "MergeKit Hub — Community Resource & Guide",
+      "url": "https://www.mergekit.com/",
+      "snippet": "Who is MergeKit for? MergeKit is built for ML researchers who want to publish reproducible merge experiments, independent developers who need capable open models without fine-tuning budgets, and AI teams who want to track the community&#x27;s best merged models from a single dashboard."
+    },
+    {
+      "title": "Releases · arcee-ai/mergekit - GitHub",
+      "url": "https://github.com/arcee-ai/mergekit/releases",
+      "snippet": "Return to LGPL (#638) `mergekit` is once again under the LGPL 3.0 license. Happy Halloween."
+    },
+    {
+      "title": "Merge Large Language Models with mergekit - Hugging Face",
+      "url": "https://huggingface.co/blog/mlabonne/merge-models",
+      "snippet": "Model Merging is a very popular technique nowadays in LLM. Here is a chronological list of papers on the space that will help you get started with it! • 30 items • Updated Jun 12, 2024 • 254"
+    }
+  ]
+}

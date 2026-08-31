@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cokeadrink/flux-1-schnell-fp8",
+  "slug": "cokeadrink-flux-1-schnell-fp8",
+  "author": "cokeadrink",
+  "url": "https://huggingface.co/cokeadrink/flux-1-schnell-fp8",
+  "created_at": "2026-08-31T09:10:02.000Z",
+  "updated_at": "2026-08-31T09:12:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17236328572,
+  "storage_human": "17.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/FLUX.1-schnell-FP8 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/FLUX.1-schnell-FP8",
+      "snippet": "This is an FP8 / INT8 quantized version of FLUX.1-schnell. Optimized for efficient inference with reduced memory footprint. Same-seed LPIPS vs the bf16 model (lower is better): 0.151 INT8, 0.157 FP8."
+    },
+    {
+      "title": "flux1-schnell-fp8 - schnell-fp8 | Flux.1 Checkpoint | Civitai",
+      "url": "https://civitai.com/models/836888/flux1-schnell-fp8",
+      "snippet": "0 Updated: Oct 11, 2024 base model model flux.1 flux1.s schnell-fp8 Download 1 variant available"
+    },
+    {
+      "title": "unsloth/FLUX.1-schnell-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/unsloth/FLUX.1-schnell-FP8/tree/main",
+      "snippet": "unsloth / FLUX.1-schnell-FP8 like 2 Follow Unsloth AI 32.3k Text-to-Image English fp8 unsloth quantized image-generation flux License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model Unsloth Studio"
+    },
+    {
+      "title": "FLUX.1 - schnell-fp8 FLUX - Free AI CHECKPOINT | Tensor.Art",
+      "url": "https://tensor.art/models/758714640353104977",
+      "snippet": "Use FLUX.1 to generate images for free. Online training is now supported. FLUX.1 [dev] is a 12 billion parameter rectified flow transformer capable of generating images from text descriptions. For more information, please read our . Key Features Cutting-edge output quality, second only to our state-of-the-art model FLUX.1 [pro]. Competitive prompt following, matching the performance of closed ..."
+    },
+    {
+      "title": "FLUX - Schnell | Flux.1 Checkpoint | Civitai",
+      "url": "https://civitai.com/models/618692?modelVersionId=699279",
+      "snippet": "FLUX.1 [schnell] is a 12 billion parameter rectified flow transformer capable of generating images from text descriptions. For more information, please read our blog post. Key Features Cutting-edge output quality and competitive prompt following, matching the performance of closed source alternatives. Trained using latent adversarial diffusion distillation, FLUX.1 [schnell] can generate high ..."
+    }
+  ]
+}

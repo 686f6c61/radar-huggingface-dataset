@@ -5,7 +5,7 @@
   "author": "johannes-kaindl",
   "url": "https://huggingface.co/johannes-kaindl/local-image-generator-models",
   "created_at": "2026-08-21T20:23:00.000Z",
-  "updated_at": "2026-08-25T04:33:45.000Z",
+  "updated_at": "2026-08-30T23:14:10.000Z",
   "license": "stability-ai-community-license",
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 9511827739,
-  "storage_human": "9.5 GB",
+  "storage_bytes": 9717038378,
+  "storage_human": "9.7 GB",
   "base_model": "stabilityai/sd-turbo, stabilityai/sdxl-turbo",
   "formats": [
     "onnx"

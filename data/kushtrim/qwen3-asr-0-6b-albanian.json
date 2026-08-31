@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Kushtrim/Qwen3-ASR-0.6B-Albanian",
+  "slug": "kushtrim-qwen3-asr-0-6b-albanian",
+  "author": "Kushtrim",
+  "url": "https://huggingface.co/Kushtrim/Qwen3-ASR-0.6B-Albanian",
+  "created_at": "2026-02-01T14:48:48.000Z",
+  "updated_at": "2026-08-31T08:17:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "sq"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "qwen3",
+    "qwen-asr",
+    "albanian",
+    "shqip",
+    "sq",
+    "base_model:Qwen/Qwen3-ASR-0.6B",
+    "base_model:finetune:Qwen/Qwen3-ASR-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 782426112,
+  "parameters_human": "782.4M",
+  "storage_bytes": 4707548299,
+  "storage_human": "4.7 GB",
+  "base_model": "Qwen/Qwen3-ASR-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kushtrim/Qwen3-ASR-0.6B-Albanian · Hugging Face",
+      "url": "https://huggingface.co/Kushtrim/Qwen3-ASR-0.6B-Albanian",
+      "snippet": "Qwen3-ASR-.6B Albanian This is a fine-tuned variant of Qwen/Qwen3-ASR-.6B for Albanian (sq / Shqip) automatic speech recognition. It is trained on ~550 hours of carefully curated Albanian audio + transcripts. Intended use ASR / transcription for Albanian speech (general-purpose). Works best on clean speech audio (mono, 16 kHz) with transcripts matching the dataset conventions. Limitations ..."
+    },
+    {
+      "title": "Qwen3 ASR 0.6B Albanian - a Hugging Face Space by Kushtrim",
+      "url": "https://huggingface.co/spaces/Kushtrim/Qwen3-ASR-0.6B-Albanian",
+      "snippet": "This fine-tuned Whisper model provides reliable transcription for Albanian audio, whether from a microphone or an uploaded file. Key details about this project: Fine-tuned on 550 plus hours of carefully curated Albanian audio data. Hosted on Hugging Face. Repository: Kushtrim/Qwen3-ASR-0.6B-Albanian."
+    },
+    {
+      "title": "Kushtrim/Qwen3-ASR-0.6B-Albanian - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/Kushtrim/Qwen3-ASR-0.6B-Albanian",
+      "snippet": "Run Kushtrim/Qwen3-ASR-0.6B-Albanian with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the 1.7B version achieves state-of-the-art performance among open-source ASR models and is ..."
+    },
+    {
+      "title": "GitHub - ai-integr8tor/QwenLM_Qwen3-ASR · GitHub",
+      "url": "https://github.com/ai-integr8tor/QwenLM_Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni."
+    }
+  ]
+}

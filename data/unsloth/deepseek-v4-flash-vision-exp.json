@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "unsloth/DeepSeek-V4-Flash-Vision-Exp",
+  "slug": "unsloth-deepseek-v4-flash-vision-exp",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-Vision-Exp",
+  "created_at": "2026-08-31T10:40:00.000Z",
+  "updated_at": "2026-08-31T10:50:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "unsloth",
+    "conversational",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 304646824126,
+  "parameters_human": "304.65B",
+  "storage_bytes": 167819616863,
+  "storage_human": "167.8 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/DeepSeek-V4-Flash · Hugging Face",
+      "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek-V4: How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/deepseek-v4",
+      "snippet": "Aug 13: DeepSeek- V4-Pro-0813 was released and quants are now available to run. Aug 6: DSpark is enabled for DeepSeek-V4-Flash-0731 - enabling 1.5x to 1.9x faster inference! DSpark is automatically enabled in Unsloth. We also improved the DeepSeek-V4 chat jinja template, and tested over 4000 conversations to be equivalent with the official ..."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek V4-Flash-Vision-Exp: Multimodal Agent Benchmarks - explainx.ai",
+      "url": "https://explainx.ai/blog/deepseek-v4-flash-vision-exp-multimodal-agent-august-2026",
+      "snippet": "DeepSeek shipped DeepSeek Harness 0.1.1 on the same day with out-of-the-box support, and the model is live now via model=&#x27;deepseek-v4-flash-vision-exp&#x27;. This follows a pattern explainx.ai has tracked all August: DeepSeek shipping V4 Pro 0813, a 50-1,100% API price increase, and verified ARC-AGI numbers for V4 Flash 0731 in rapid succession."
+    },
+    {
+      "title": "DeepSeek V4 Flash Vision Exp: Vision API, Benchmarks & Cost - iweaver.ai",
+      "url": "https://www.iweaver.ai/blog/deepseek-v4-flash-vision-exp/",
+      "snippet": "DeepSeek released DeepSeek-V4-Flash-Vision-Exp, an experimental multimodal model available through its API. It accepts both text and images, bringing screenshot understanding, chart analysis, OCR-style tasks and other visual workflows into the V4 Flash family."
+    }
+  ]
+}

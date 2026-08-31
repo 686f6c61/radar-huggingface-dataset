@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "vonjack/hrm-text-agent-gguf",
+  "slug": "vonjack-hrm-text-agent-gguf",
+  "author": "vonjack",
+  "url": "https://huggingface.co/vonjack/hrm-text-agent-gguf",
+  "created_at": "2026-08-31T07:06:22.000Z",
+  "updated_at": "2026-08-31T08:04:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1182795264,
+  "parameters_human": "1.18B",
+  "storage_bytes": 7254249856,
+  "storage_human": "7.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vonjack (Gan Feng) - Hugging Face",
+      "url": "https://huggingface.co/vonjack",
+      "snippet": "AI & ML interests ... Recent Activity liked a model about 11 hours ago ... liked a model about 11 hours ago"
+    },
+    {
+      "title": "GitHub - kristobalus/hrm-text: HRM-Text is a 1B text generation model ...",
+      "url": "https://github.com/kristobalus/hrm-text/tree/main",
+      "snippet": "HRM-Text is a 1B text generation model based on the HRM architecture, strengthened by task completion and latent space reasoning. It offers a full pretraining framework, making foundation model pretraining accessible with 130-600x less compute and 150-900x less data. It is built upon a hierarchical recurrent architecture, PrefixLM sequence packing, FlashAttention 3 kernels, PyTorch FSDP2 ..."
+    },
+    {
+      "title": "PurelyUnfunctionalAI/HRM-Text1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/PurelyUnfunctionalAI/HRM-Text1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - sapientinc/HRM-Text: HRM-Text is a 1B text generation model ...",
+      "url": "https://github.com/sapientinc/HRM-Text",
+      "snippet": "🌟 Pretrain a foundation model from scratch with ~$1000. 🌠 HRM-Text is a 1B text generation model based on the HRM architecture, strengthened by task completion and latent space reasoning. It offers a full pretraining framework, making foundation model pretraining accessible with 130-600x less compute and 150-900x less data."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

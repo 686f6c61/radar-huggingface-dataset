@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "NostraEmpire/mirror-qwen2.5-math-7b-instruct",
+  "slug": "nostraempire-mirror-qwen2-5-math-7b-instruct",
+  "author": "NostraEmpire",
+  "url": "https://huggingface.co/NostraEmpire/mirror-qwen2.5-math-7b-instruct",
+  "created_at": "2026-08-31T09:39:22.000Z",
+  "updated_at": "2026-08-31T09:49:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2409.12122",
+    "base_model:Qwen/Qwen2.5-Math-7B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231271888,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-Math-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-Math-7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Math-7B",
+      "snippet": "Qwen2.5-Math ... Qwen2.5-Math Technical Report: Toward Mathematical Expert Model via Self-Improvement"
+    },
+    {
+      "title": "Qwen/Qwen2.5-Math-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Math-7B-Instruct",
+      "snippet": "Qwen2.5-Math ... Qwen2.5-Math Technical Report: Toward Mathematical Expert Model via Self-Improvement"
+    },
+    {
+      "title": "Qwen2.5-Math Technical Report: Toward Mathematical Expert Model via ...",
+      "url": "https://arxiv.org/html/2409.12122v1",
+      "snippet": "The Qwen2.5-Math-72B-Instruct model outperforms the Qwen2-Math-72B-Instruct model by an average margin of 4.4 and 6.1 points in English and Chinese, respectively, establishing itself as the best open-source mathematical model currently available."
+    },
+    {
+      "title": "Qwen2.5-Math-7B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen2.5-Math-7B-Instruct",
+      "snippet": "Qwen2.5-Math-7B-Instruct is an instruction model for chatting; Qwen2.5-Math-7B is a base model typically used for completion and few-shot inference, serving as a better starting point for fine-tuning."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen2.5-Math: A series of math-specific large language ...",
+      "url": "https://github.com/QwenLM/Qwen2.5-Math",
+      "snippet": "The Qwen2.5-Math-72B-Instruct model outperforms the Qwen2-Math-72B-Instruct model by an average margin of 4.4 and 6.1 points in English and Chinese, respectively, establishing itself as the best open-source mathematical model currently available."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "freeqaz/decomp-synth-lifter-v17-full-qwen3.5-9b-lora",
+  "slug": "freeqaz-decomp-synth-lifter-v17-full-qwen3-5-9b-lora",
+  "author": "freeqaz",
+  "url": "https://huggingface.co/freeqaz/decomp-synth-lifter-v17-full-qwen3.5-9b-lora",
+  "created_at": "2026-08-31T09:12:34.000Z",
+  "updated_at": "2026-08-31T09:49:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decompilation",
+    "reverse-engineering",
+    "code",
+    "lora",
+    "powerpc",
+    "cpp",
+    "agent",
+    "tool-use",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 366284061,
+  "storage_human": "366 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "decomp-synth-lifter-v16-v5chat-qwen3.5-9b-lora - Hugging Face",
+      "url": "https://huggingface.co/freeqaz/decomp-synth-lifter-v16-v5chat-qwen3.5-9b-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "freeqaz/decomp-synth-lifter-gtp0c-qwen3.8-27b-lora · Hugging Face",
+      "url": "https://huggingface.co/freeqaz/decomp-synth-lifter-gtp0c-qwen3.8-27b-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "decomp-synth/docs at main · freeqaz/decomp-synth · GitHub",
+      "url": "https://github.com/freeqaz/decomp-synth/tree/main/docs",
+      "snippet": "Architecture, design, and methodology docs for the decomp-synth synthesis engine. For installation, configuration, and day-to-day usage, start with the top-level README."
+    },
+    {
+      "title": "freeqaz (Free Wortley) / Repositories · GitHub",
+      "url": "https://github.com/freeqaz?tab=repositories",
+      "snippet": "A decompilation of Rock Band 3 for the Xbox 360 (MSVC X360, retail). Engine sourced from dc3-decomp; game code from rb3-Wii."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,909 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    }
+  ]
+}

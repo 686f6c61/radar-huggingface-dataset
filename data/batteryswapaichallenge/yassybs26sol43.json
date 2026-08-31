@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "batteryswapaichallenge/YassYBS26Sol43",
+  "slug": "batteryswapaichallenge-yassybs26sol43",
+  "author": "batteryswapaichallenge",
+  "url": "https://huggingface.co/batteryswapaichallenge/YassYBS26Sol43",
+  "created_at": "2026-08-31T09:46:38.000Z",
+  "updated_at": "2026-08-31T09:46:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "survival-analysis",
+    "predictive-maintenance",
+    "battery",
+    "time-series",
+    "scheduling",
+    "operations-research",
+    "nora-batteryswapai-2026",
+    "tabular-classification",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25233975,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Battery end-of-life prediction and swap scheduling",
+      "dataset": "NORA BatterySwapAI 2026, public training scenarios",
+      "metric": "Total time on the 48 public training scenarios",
+      "value": 1442.29
+    },
+    {
+      "task": "Battery end-of-life prediction and swap scheduling",
+      "dataset": "NORA BatterySwapAI 2026, public training scenarios",
+      "metric": "Late swap penalty",
+      "value": 685.6
+    },
+    {
+      "task": "Battery end-of-life prediction and swap scheduling",
+      "dataset": "NORA BatterySwapAI 2026, public training scenarios",
+      "metric": "Early swap penalty",
+      "value": 559.4
+    }
+  ],
+  "sources": [
+    {
+      "title": "batteryswapaichallenge (BatterySwapAI 2026 Challenge)",
+      "url": "https://huggingface.co/batteryswapaichallenge",
+      "snippet": "Org profile for BatterySwapAI 2026 Challenge on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "YassY-The-AlchemYst/YassYBS26Sol43 · Hugging Face",
+      "url": "https://huggingface.co/YassY-The-AlchemYst/YassYBS26Sol43",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BatterySwapAI - NORA - Norwegian Artificial Intelligence Research ...",
+      "url": "https://www.nora.ai/competitions/batteryswapai/",
+      "snippet": "You are the operator of a fleet of battery-powered IoT sensor devices, deployed across many buildings over a wide area. As the sensors are starting to run out of battery - you are faced with the challenge: How to know which batteries need replacing when, and what is a good strategy for doing the replacements? This is the challenge we pose to you in this competition."
+    },
+    {
+      "title": "I just wrapped up the BatterySwapAI 2026 Challenge and ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/yassine-elhallaoui_i-just-wrapped-up-the-batteryswapai-2026-activity-7499219614518734849-u28w",
+      "snippet": "I just wrapped up the BatterySwapAI 2026 Challenge and managed to secure 2nd place on the public leaderboard. My approach was built around using seismic signal processing to create an autonomous ..."
+    },
+    {
+      "title": "Participant Guide — Set Up and Version a Submission Repository - nora.ai",
+      "url": "https://www.nora.ai/competitions/batteryswapai/docs/02-create-a-submission-repository.html",
+      "snippet": "The same repository can be used for multiple submissions. Git provides the versioning: when a result is submitted, the competition backoffice records the Git commit SHA associated with that submission. Later commits therefore create new versions without replacing earlier submitted results."
+    }
+  ]
+}

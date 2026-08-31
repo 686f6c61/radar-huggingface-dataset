@@ -5,7 +5,7 @@
   "author": "dwqdasdc",
   "url": "https://huggingface.co/dwqdasdc/symfold",
   "created_at": "2026-08-06T11:21:47.000Z",
-  "updated_at": "2026-08-30T11:08:18.000Z",
+  "updated_at": "2026-08-30T11:27:33.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 399385788177,
-  "storage_human": "399.4 GB",
+  "storage_bytes": 501348877859,
+  "storage_human": "501.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

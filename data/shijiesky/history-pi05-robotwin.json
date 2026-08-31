@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ShijieSKY/history-pi05-robotwin",
+  "slug": "shijiesky-history-pi05-robotwin",
+  "author": "ShijieSKY",
+  "url": "https://huggingface.co/ShijieSKY/history-pi05-robotwin",
+  "created_at": "2026-08-31T01:53:47.000Z",
+  "updated_at": "2026-08-31T01:53:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "robotwin",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ShijieSKY/history-pi05-robotwin · Hugging Face",
+      "url": "https://huggingface.co/ShijieSKY/history-pi05-robotwin",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ShijieSKY/pi05-robotwin · Hugging Face",
+      "url": "https://huggingface.co/ShijieSKY/pi05-robotwin",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - zaleni/pi05: for RoboTwin",
+      "url": "https://github.com/zaleni/pi05",
+      "snippet": "Note that, in this repository, we currently only support the flow matching head for both π 0.5 ${}_{&#92;pi }$ training and inference. For all models, we provide base model checkpoints, pre-trained on 10k+ hours of robot data, and examples for using them out of the box or fine-tuning them to your own datasets."
+    },
+    {
+      "title": "OpenPI - RoboTwin 2.0 Official Document",
+      "url": "https://robotwin-platform.github.io/doc/usage/Pi05.html",
+      "snippet": "Finetune model ... If your GPU memory is insufficient, please set the fsdp_devices parameter according to the following GPU memory reference, or reduce the batch_size parameter."
+    },
+    {
+      "title": "π 0.5 : a Vision-Language-Action Model with Open-World Generalization",
+      "url": "https://arxiv.org/html/2504.16054v1",
+      "snippet": "Abstract In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe π 0.5 $π0.5$, a new model based on π 0 $π0$ that uses co-training on ..."
+    }
+  ]
+}

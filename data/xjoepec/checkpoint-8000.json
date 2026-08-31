@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "xJoePec/checkpoint-8000",
+  "slug": "xjoepec-checkpoint-8000",
+  "author": "xJoePec",
+  "url": "https://huggingface.co/xJoePec/checkpoint-8000",
+  "created_at": "2026-08-31T08:13:57.000Z",
+  "updated_at": "2026-08-31T08:27:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Ma7ee7/Qwen3.8_4B_Distilled",
+    "base_model:finetune:Ma7ee7/Qwen3.8_4B_Distilled",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4978638284,
+  "storage_human": "5.0 GB",
+  "base_model": "Ma7ee7/Qwen3.8_4B_Distilled",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models (Public) - a xJoePec Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/xJoePec/models-public",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from xJoePec"
+    },
+    {
+      "title": "checkpoint-8000/model.safetensors · Zipei-KTH/whisper_CN at main",
+      "url": "https://huggingface.co/Zipei-KTH/whisper_CN/blob/main/checkpoint-8000/model.safetensors",
+      "snippet": "Zipei-KTH / whisper_CN like 0 Automatic Speech Recognition Transformers TensorBoard Safetensors whisper Generated from Trainer License:apache-2.0 Model card FilesFiles and versions xet MetricsTraining metrics Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "checkpoint Browse 200 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "TrafficLLM/models/chatglm2/peft/instruction/checkpoint-8000 ... - GitHub",
+      "url": "https://github.com/ZGC-LLM-Safety/TrafficLLM/blob/master/models/chatglm2/peft/instruction/checkpoint-8000/scheduler.pt",
+      "snippet": "The repository of TrafficLLM, a universal LLM adaptation framework to learn robust traffic representation for all open-sourced LLM in real-world scenarios and enhance the generalization across dive..."
+    }
+  ]
+}

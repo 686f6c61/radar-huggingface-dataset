@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "NAQarabash/TBase-T3",
+  "slug": "naqarabash-tbase-t3",
+  "author": "NAQarabash",
+  "url": "https://huggingface.co/NAQarabash/TBase-T3",
+  "created_at": "2026-08-31T07:43:23.000Z",
+  "updated_at": "2026-08-31T07:43:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 222903552,
+  "parameters_human": "222.9M",
+  "storage_bytes": 891644712,
+  "storage_human": "892 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NAQarabash (Noor Ahmed Khudhur A Qarabash) - Hugging Face",
+      "url": "https://huggingface.co/NAQarabash",
+      "snippet": "NAQarabash/flan-t5-base-finetuned-mlsum-tr Text2Text Generation • Updated 25 days ago"
+    },
+    {
+      "title": "NAQarabash/TBase-T2 · Hugging Face",
+      "url": "https://huggingface.co/NAQarabash/TBase-T2",
+      "snippet": "Instructions to use NAQarabash/TBase-T2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use NAQarabash/TBase-T2 with Transformers: ... Notebooks Google Colab Kaggle Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use ..."
+    },
+    {
+      "title": "T3 Inference and Generation | resemble-ai/chatterbox | DeepWiki",
+      "url": "https://deepwiki.com/resemble-ai/chatterbox/4.3-t3-inference-and-generation",
+      "snippet": "T3 Inference and Generation Relevant source files This document details the inference mechanisms of the Token-to-Token (T3) model, focusing on the implementation of Classifier-Free Guidance (CFG), sampling strategies, real-time alignment analysis, and the HuggingFace backend adapter."
+    },
+    {
+      "title": "t3 - t3sd ver3 | Stable Diffusion 1.x Checkpoint | Civitai",
+      "url": "https://civitai.com/models/110053/t3",
+      "snippet": "168.3k Updated: Mar 2, 2025 base model model korean t3 t3sd ver3 t3xl ver01 t3xlpo (test3)"
+    },
+    {
+      "title": "T3 Model Architecture | resemble-ai/chatterbox | DeepWiki",
+      "url": "https://deepwiki.com/resemble-ai/chatterbox/4-t3-model-architecture",
+      "snippet": "The T3 model implements a token-to-token approach where text tokens are transformed into speech tokens through a large language model backbone. The architecture supports both English-only and multilingual configurations with sophisticated conditioning mechanisms for voice characteristics and alignment-informed inference for quality control."
+    }
+  ]
+}

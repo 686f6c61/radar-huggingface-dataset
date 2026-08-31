@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Tema_Q-X7-Thinking-i1-GGUF",
   "created_at": "2026-08-21T11:13:15.000Z",
-  "updated_at": "2026-08-23T12:05:04.000Z",
+  "updated_at": "2026-08-30T14:54:09.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,7 +18,7 @@
   "tags": [
     "transformers",
     "gguf",
-    "Agent",
+    "agent",
     "transformer",
     "instruction-tuned",
     "multilingual",
@@ -36,7 +36,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 910,
+  "downloads_30d": 1018,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",

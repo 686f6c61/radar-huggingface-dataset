@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Johndoebambino/WAMU-Merge-VisualEffects_WAN2.2_I2V_LIGHTNING",
+  "slug": "johndoebambino-wamu-merge-visualeffects_wan2-2_i2v_lightning",
+  "author": "Johndoebambino",
+  "url": "https://huggingface.co/Johndoebambino/WAMU-Merge-VisualEffects_WAN2.2_I2V_LIGHTNING",
+  "created_at": "2026-08-31T09:34:23.000Z",
+  "updated_at": "2026-08-31T09:34:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "diffusers:WanImageToVideoPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14288901184,
+  "parameters_human": "14.29B",
+  "storage_bytes": 68788325393,
+  "storage_human": "68.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WAMU-Merge-VisualEffects_WAN2.2_I2V_LIGHTNING - Hugging Face",
+      "url": "https://huggingface.co/chimo34/WAMU-Merge-VisualEffects_WAN2.2_I2V_LIGHTNING",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SSBOfficial/WAMU-Merge-VisualEffects_WAN2.2_I2V_LIGHTNING at main",
+      "url": "https://huggingface.co/SSBOfficial/WAMU-Merge-VisualEffects_WAN2.2_I2V_LIGHTNING/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WAMU-Merge-VisualEffects_WAN2.2_I2V_LIGHTNING: Image-to-Video model ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/wamu-merge-visualeffects-wan2.2-i2v-lightning-testorganizationpleaseignore",
+      "snippet": "Overview WAMU-Merge-VisualEffects_WAN2.2_I2V_LIGHTNING is an image-to-video generation model built on the diffusers library, developed by TestOrganizationPleaseIgnore. This model converts static images into video sequences, enabling motion synthesis from visual input. The model uses a diffusion-based architecture optimized for fast inference through distillation techniques. Before using this ..."
+    },
+    {
+      "title": "WAMU-Merge-VisualEffects_WAN2.2_I2V_LIGHTNING",
+      "url": "https://www.aimodels.fyi/models/compare/wamu-merge-visualeffects-wan2.2-i2v-lightning-testorganizationpleaseignore-vs-wan2.1-i2v-14b-480p-diffusers-wan-ai",
+      "snippet": "Overview WAMU-Merge-VisualEffects_WAN2.2_I2V_LIGHTNING is an image-to-video generation model built on the diffusers library, developed by TestOrganizationPleaseIgnore. This model converts static images into video sequences, enabling motion synthesis from visual input. The model uses a diffusion-based architecture optimized for fast inference through distillation techniques. Before using this ..."
+    },
+    {
+      "title": "Architecture graph for eemberda/WAMU-Merge-VisualEffects_WAN2.2_I2V ...",
+      "url": "https://hfviewer.com/eemberda/WAMU-Merge-VisualEffects_WAN2.2_I2V_LIGHTNING",
+      "snippet": "eemberda/WAMU-Merge-VisualEffects_WAN2.2_I2V_LIGHTNING: model architecture with Transformer block, Denoising loop / scheduler, DiT block (diffusion transformer)."
+    }
+  ]
+}

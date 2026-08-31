@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "codegyver/Qwen3.8-Flash-Next-NVFP4-FP8-PBWO-DGX-Spark",
+  "slug": "codegyver-qwen3-8-flash-next-nvfp4-fp8-pbwo-dgx-spark",
+  "author": "codegyver",
+  "url": "https://huggingface.co/codegyver/Qwen3.8-Flash-Next-NVFP4-FP8-PBWO-DGX-Spark",
+  "created_at": "2026-08-31T02:17:16.000Z",
+  "updated_at": "2026-08-31T02:28:24.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "qwen",
+    "qwen3.8",
+    "qwen3.8-flash-next",
+    "modelopt",
+    "nvfp4",
+    "fp8",
+    "fp8-pbwo",
+    "mixed-precision",
+    "vllm",
+    "dgx-spark",
+    "blackwell",
+    "multimodal",
+    "speculative-decoding",
+    "conversational",
+    "base_model:Inferact/Qwen3.8-Flash-Next-NVFP4",
+    "base_model:quantized:Inferact/Qwen3.8-Flash-Next-NVFP4",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 118343712659,
+  "parameters_human": "118.34B",
+  "storage_bytes": 180154622314,
+  "storage_human": "180.2 GB",
+  "base_model": "Inferact/Qwen3.8-Flash-Next-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "By default, Qwen3.8-Flash-Next retains thinking blocks from all historical messages, maintaining a complete reasoning trace across the conversation. This behavior, known as preserved thinking, ensures full context continuity and is especially beneficial for agent scenarios where decision consistency and reduced redundant reasoning are critical."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next-NVFP4-DGX-Spark/README.md at main - GitHub",
+      "url": "https://github.com/tonyd2wild/qwen3.8-flash-next-nvfp4-dgx-spark/blob/main/README.md",
+      "snippet": "Qwen3.8-Flash-Next-NVFP4 On 2× DGX Spark (TP2 + MTP4, SGLang) Day-zero deployment of Qwen3.8-Flash-Next (NVFP4 quant) served across two NVIDIA DGX Spark (GB10 / SM121) boxes as tensor-parallel-2, over the 200G ConnectX fabric. Brought up live on 2026-08-26, the day the model dropped."
+    },
+    {
+      "title": "GitHub - tonyd2wild/Qwen3.8-Flash-Next-NVFP4-DGX-Spark: Day-0 ...",
+      "url": "https://github.com/tonyd2wild/qwen3.8-flash-next-nvfp4-dgx-spark",
+      "snippet": "Day-zero deployment of Qwen3.8-Flash-Next (NVFP4 quant) served across two NVIDIA DGX Spark (GB10 / SM121) as tensor-parallel-2 over the 200G ConnectX fabric. Brought up live on 2026-08-26, the day the model dropped, then tuned the same evening into the config below. 📌 This is where we stand today ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Qwen4 architecture preview with a 125B-parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - DGX Spark / GB10 - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/qwen3-8-flash-next/381228",
+      "snippet": "Qwen3.8-Flash-Next is a multimodal MoE model. It pairs a large parameter count with a smaller active count per token, plus a huge n-gram embedding table for fast local token lookups, on top of GDN and QSA mechanisms."
+    }
+  ]
+}

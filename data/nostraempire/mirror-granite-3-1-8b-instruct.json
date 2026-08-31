@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "NostraEmpire/mirror-granite-3.1-8b-instruct",
+  "slug": "nostraempire-mirror-granite-3-1-8b-instruct",
+  "author": "NostraEmpire",
+  "url": "https://huggingface.co/NostraEmpire/mirror-granite-3.1-8b-instruct",
+  "created_at": "2026-08-31T10:06:34.000Z",
+  "updated_at": "2026-08-31T10:13:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granite",
+    "text-generation",
+    "language",
+    "granite-3.1",
+    "conversational",
+    "arxiv:0000.00000",
+    "base_model:ibm-granite/granite-3.1-8b-base",
+    "base_model:finetune:ibm-granite/granite-3.1-8b-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8170848256,
+  "parameters_human": "8.17B",
+  "storage_bytes": 16341738616,
+  "storage_human": "16.3 GB",
+  "base_model": "ibm-granite/granite-3.1-8b-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ibm-granite/granite-3.1-8b-instruct · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-3.1-8b-instruct",
+      "snippet": "Model Summary: Granite-3.1-8B-Instruct is a 8B parameter long-context instruct model finetuned from Granite-3.1-8B-Base using a combination of open source instruction datasets with permissive license and internally collected synthetic datasets tailored for solving long context problems."
+    },
+    {
+      "title": "Granite-3.1-8B-Instruct - Models",
+      "url": "https://www.modelscope.cn/models/ibm-granite/granite-3.1-8b-instruct",
+      "snippet": "Users may finetune Granite 3.1 models for languages beyond these 12 languages. Intended Use: The model is designed to respond to general instructions and can be used to build AI assistants for multiple domains, including business applications."
+    },
+    {
+      "title": "README.md · ibm-granite/granite-3.1-8b-instruct at main",
+      "url": "https://huggingface.co/ibm-granite/granite-3.1-8b-instruct/blob/main/README.md",
+      "snippet": "Granite-3.1-8B-Instruct Model Summary: Granite-3.1-8B-Instruct is a 8B parameter long-context instruct model finetuned from Granite-3.1-8B-Base using a combination of open source instruction datasets with permissive license and internally collected synthetic datasets tailored for solving long context problems."
+    },
+    {
+      "title": "Granite-3.1-8b-Instruct",
+      "url": "https://aiot.aidlux.com/en/models/detail/169",
+      "snippet": "Granite-3.1-8B-Instruct is a 8B parameter long-context instruct model finetuned from Granite-3.1-8B-Base using a combination of open source instruction datasets with permissive license and internally collected synthetic datasets tailored for solving long context problems."
+    },
+    {
+      "title": "Artificial Analysis Intelligence Index - AI Model Leaderboard ...",
+      "url": "https://www.datalearner.com/en/leaderboards/external/aa-quality-index",
+      "snippet": "The Artificial Analysis Intelligence Index v4.0 is a composite benchmark that aggregates performance across 10 challenging evaluations — spanning mathematics, science, coding, agentic tasks, and reasoning — to measure AI capabilities holistically. It is designed to prevent narrow specialization and provide a single score for tracking progress."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ThewakeRiver/RiverONE",
+  "slug": "thewakeriver-riverone",
+  "author": "ThewakeRiver",
+  "url": "https://huggingface.co/ThewakeRiver/RiverONE",
+  "created_at": "2026-08-31T01:38:16.000Z",
+  "updated_at": "2026-08-31T02:36:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "riverone_qc",
+    "custom_code",
+    "arxiv:2606.29966",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3004618832,
+  "parameters_human": "3.00B",
+  "storage_bytes": 7387121522,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - THeWakeSystems/RiverONE: We build RiverONE, a compact vision ...",
+      "url": "https://github.com/THeWakeSystems/RiverOne",
+      "snippet": "We build RiverONE, a compact vision-language model for quantum calibration plot understanding,using simulated quantum computation. It employs a specialized visual encoder and an InternVL-based lang..."
+    },
+    {
+      "title": "RiverONE: Generating Knowledge-Intensive",
+      "url": "https://arxiv.org/html/2606.29966v1",
+      "snippet": "During model construction, compressed shared weights and lightweight layer-level conditioning signals are encoded into a simulated variational quantum circuit. The circuit produces measurement features that are mapped into compact compensation parameters, such as attention perturbation coefficients, residual gates, or low-rank corrections."
+    },
+    {
+      "title": "RiverONE/docs at main · THeWakeSystems/RiverONE · GitHub",
+      "url": "https://github.com/THeWakeSystems/RiverONE/tree/main/docs",
+      "snippet": "We build RiverONE, a compact vision-language model for quantum calibration plot understanding,using simulated quantum computation. It employs a specialized visual encoder and an InternVL-based language backbone. - RiverONE/docs at main · THeWakeSystems/RiverONE"
+    },
+    {
+      "title": "[2606.29966] RiverONE: Generating Knowledge-Intensive VLM by Simulated ...",
+      "url": "https://arxiv.org/abs/2606.29966",
+      "snippet": "Quantum computing provides a powerful paradigm for representing and transforming high-dimensional information through superposition, entanglement, and measurement-induced nonlinear features. While current quantum hardware is not yet practical for direct large-scale vision-language model (VLM) inference, simulated quantum computation can be used during model construction to generate structured ..."
+    },
+    {
+      "title": "RiverONE: Quantum-Inspired Compact VLM",
+      "url": "https://www.emergentmind.com/papers/2606.29966",
+      "snippet": "RiverONE uses simulated quantum techniques to fuse vision-language reasoning with model compression, achieving 95% calibration performance on classical hardware."
+    }
+  ]
+}

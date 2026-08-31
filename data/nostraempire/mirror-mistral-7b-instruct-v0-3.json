@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "NostraEmpire/mirror-mistral-7b-instruct-v0.3",
+  "slug": "nostraempire-mirror-mistral-7b-instruct-v0-3",
+  "author": "NostraEmpire",
+  "url": "https://huggingface.co/NostraEmpire/mirror-mistral-7b-instruct-v0.3",
+  "created_at": "2026-08-31T08:49:09.000Z",
+  "updated_at": "2026-08-31T09:01:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 28992746844,
+  "storage_human": "29.0 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xinyu-mirror/Mistral-7B-Instruct-v0.2 · Hugging Face",
+      "url": "https://huggingface.co/xinyu-mirror/Mistral-7B-Instruct-v0.2",
+      "snippet": "Model Card for Mistral-7B-Instruct-v0.2 The Mistral-7B-Instruct-v0.2 Large Language Model (LLM) is an instruct fine-tuned version of the Mistral-7B-v0.2. Mistral-7B-v0.2 has the following changes compared to Mistral-7B-v0.1 32k context window (vs 8k context in v0.1) Rope-theta = 1e6 No Sliding-Window Attention For full details of this model please read our paper and release blog post ..."
+    },
+    {
+      "title": "Mistral 7B - Mistral AI | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-7b-0-1",
+      "snippet": "Our very first open model, SOTA competing against models up to 2 to 3x larger."
+    },
+    {
+      "title": "mistralai/Mistral-7B-Instruct-v0.3 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mistral-7B-Instruct-v0.3 · Models",
+      "url": "https://www.modelscope.cn/models/rubraAI/Mistral-7B-Instruct-v0.3",
+      "snippet": "Mistral-7B-Instruct-v0.3 is the result of further post-training on the base model [mistralai/Mistral"
+    },
+    {
+      "title": "mistral-7b-instruct-v0.3 Model by Mistral AI | NVIDIA NIM",
+      "url": "https://build.nvidia.com/mistralai/mistral-7b-instruct-v03",
+      "snippet": "This LLM follows instructions, completes requests, and generates creative text."
+    }
+  ]
+}

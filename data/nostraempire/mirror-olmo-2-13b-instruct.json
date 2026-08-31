@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "NostraEmpire/mirror-olmo-2-13b-instruct",
+  "slug": "nostraempire-mirror-olmo-2-13b-instruct",
+  "author": "NostraEmpire",
+  "url": "https://huggingface.co/NostraEmpire/mirror-olmo-2-13b-instruct",
+  "created_at": "2026-08-31T10:13:52.000Z",
+  "updated_at": "2026-08-31T10:30:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo2",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:allenai/RLVR-MATH",
+    "arxiv:2501.00656",
+    "arxiv:2411.15124",
+    "base_model:allenai/OLMo-2-1124-13B-Instruct-RLVR2",
+    "base_model:finetune:allenai/OLMo-2-1124-13B-Instruct-RLVR2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13716198400,
+  "parameters_human": "13.72B",
+  "storage_bytes": 27432448592,
+  "storage_human": "27.4 GB",
+  "base_model": "allenai/OLMo-2-1124-13B-Instruct-RLVR2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "allenai/OLMo-2-1124-13B · Hugging Face",
+      "url": "https://huggingface.co/allenai/OLMo-2-1124-13B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OLMo-2-1124-13B-Instruct - Hugging Face",
+      "url": "https://huggingface.co/allenai/OLMo-2-1124-13B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OLMo 2 13B Instruct · Models · The Open-Source AI Stack",
+      "url": "https://www.open-source-ai.tech/models/olmo-2-13b-instruct",
+      "snippet": "The 13B counterpart to OLMo 2 7B, sharing the same full-open stack: Dolma pretraining data, OLMo trainer code, WandB training logs, and Apache-2.0 weights. Post-trained with the Tülu 3 recipe of SFT, DPO, and RLVR."
+    },
+    {
+      "title": "OLMo-2-1124-13B-Instruct · Model · Inferix",
+      "url": "https://inferix.co/models/allenai/OLMo-2-1124-13B-Instruct",
+      "snippet": "See OLMo 2 Preview Post trained Models for the colleciton of the legacy models. Release Documentation OLMo 2 13B Instruct November 2024 is post trained variant of the OLMo 2 13B November 2024 model, which has undergone supervised finetuning on an OLMo specific variant of the Tülu 3 dataset, and finally RLVR training using this data."
+    },
+    {
+      "title": "OLMo from Ai2",
+      "url": "https://allenai.org/olmo2",
+      "snippet": "The OLMo 2 model family OLMo 2 32B OLMo 2 32B is the most capable and largest model in the OLMo 2 family, scaling up the OLMo 2 training recipe used for our 7B and 13B models. It is trained up to 6T tokens and post-trained using Tulu 3.1."
+    }
+  ]
+}

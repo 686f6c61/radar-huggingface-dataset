@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "joegods/lutongbahai",
+  "slug": "joegods-lutongbahai",
+  "author": "joegods",
+  "url": "https://huggingface.co/joegods/lutongbahai",
+  "created_at": "2026-08-31T09:21:17.000Z",
+  "updated_at": "2026-08-31T09:32:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50528423,
+  "storage_human": "51 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Joelguay/lutongBahAI",
+      "url": "https://github.com/Joelguay/lutongBahAI",
+      "snippet": "LutongBahAI - AI-Powered Filipino Recipe Generator A complete web application that uses computer vision (YOLO) and artificial intelligence (OpenAI GPT) to detect ingredients and generate authentic Filipino recipes."
+    },
+    {
+      "title": "Joelguay (joegods) · GitHub",
+      "url": "https://github.com/Joelguay/",
+      "snippet": "Joelguay has 11 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Leonardo.Ai App - Generate AI Images, Videos & Designs",
+      "url": "https://app.leonardo.ai/",
+      "snippet": "Transform your projects with the Leonardo.Ai App. Generate high-quality images and videos fast, with AI models built to elevate your creativity."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

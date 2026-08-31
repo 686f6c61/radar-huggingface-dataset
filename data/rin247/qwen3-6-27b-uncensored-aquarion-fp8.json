@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Rin247/Qwen3.6-27B-Uncensored-Aquarion-FP8",
+  "slug": "rin247-qwen3-6-27b-uncensored-aquarion-fp8",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Qwen3.6-27B-Uncensored-Aquarion-FP8",
+  "created_at": "2026-08-31T02:28:25.000Z",
+  "updated_at": "2026-08-31T02:44:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "quantized",
+    "fp8",
+    "uncensored",
+    "abliterated",
+    "conversational",
+    "endpoints_compatible",
+    "fp8_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 29461604255,
+  "storage_human": "29.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-27B-AEON-Ultimate-Uncensored-FP8-MTP - Hugging Face",
+      "url": "https://huggingface.co/kasimat/Qwen3.6-27B-AEON-Ultimate-Uncensored-FP8-MTP",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-27B-AEON-Ultimate-Uncensored - GitHub",
+      "url": "https://github.com/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-DFlash/",
+      "snippet": "A fully uncensored, capability-enhanced abliteration of Qwen/Qwen3.6-27B, produced over 72 hours of continuous research drawing on hundreds of parallel AI research agents, the industry&#x27;s best published methodologies, custom in-house techniques, and yet-unreleased pre-public branches of next-generation abliteration software."
+    },
+    {
+      "title": "Rin247/Qwen3-0.6B-Uncensored-Aquarion-FP8 · Hugging Face",
+      "url": "https://huggingface.co/Rin247/Qwen3-0.6B-Uncensored-Aquarion-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "abliteration.org - catalog of abliterated LLMs",
+      "url": "https://abliteration.org/",
+      "snippet": "abliteration.org is an independent catalog and analytics resource for the abliterated and uncensored language-model market. Every model is registered with a precise timestamp and an inventory number, and the whole dataset is refreshed continuously."
+    },
+    {
+      "title": "Qwen3.6 27B AEON Ultimate Uncensored FP8 MTP — ThinkLLM",
+      "url": "https://thinkllm.dev/models/qwen3-6-27b-aeon-ultimate-uncensored-fp8-mtp",
+      "snippet": "A community-fine-tuned variant of Qwen&#x27;s 27B model with censorship filters removed, running in FP8 precision with multi-token prediction. It accepts both text and image inputs, making it multimodal. The uncensored nature means it will engage with a broader range of prompts without refusals, though this also means standard safety guardrails are absent."
+    }
+  ]
+}

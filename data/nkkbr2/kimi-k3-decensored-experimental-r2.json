@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nkkbr2/Kimi-K3-decensored-experimental-r2",
+  "slug": "nkkbr2-kimi-k3-decensored-experimental-r2",
+  "author": "nkkbr2",
+  "url": "https://huggingface.co/nkkbr2/Kimi-K3-decensored-experimental-r2",
+  "created_at": "2026-08-31T09:26:03.000Z",
+  "updated_at": "2026-08-31T09:31:03.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k3",
+    "feature-extraction",
+    "compressed-tensors",
+    "conversational",
+    "image-text-to-text",
+    "custom_code",
+    "license:other",
+    "eval-results",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2779931837184,
+  "parameters_human": "2779.93B",
+  "storage_bytes": 1560998650830,
+  "storage_human": "1561.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kimi-k3 Model by Moonshotai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/moonshotai/kimi-k3",
+      "snippet": "~2.8T hybrid KDA+MLA multimodal MoE for long-horizon coding, agentic tool use, and image understanding."
+    },
+    {
+      "title": "Kimi AI with K3 | Built for Agentic Coding & Knowledge Work",
+      "url": "https://www.kimi.com/en",
+      "snippet": "Try Kimi K3 to build playable multiplayer and 3D games, create consulting grade slides, and run parallel tasks with Swarm and Goal to get more work done."
+    },
+    {
+      "title": "kimi-k3 Model by Moonshotai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/moonshotai/kimi-k3/modelcard",
+      "snippet": "Kimi-K3 is an open-weight, native multimodal agentic model developed by Moonshot AI for long-horizon coding, knowledge work, visual understanding, and reasoning."
+    },
+    {
+      "title": "Kimi K3 - Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart",
+      "snippet": "Explore Kimi K3 for long-horizon coding, knowledge work, deep reasoning, visual understanding, and a 1M-token context window."
+    },
+    {
+      "title": "Kimi K3: AI That Evolves With You - [2.8T Parameters & 1M Context]",
+      "url": "https://kimik2ai.com/k3/",
+      "snippet": "Kimi K3 Is Here The world&#x27;s largest open-weight AI model - 2.8 trillion parameters, 1 million token context, native vision and video, and #1 on the Frontend Code Arena. Available now via API and kimi.com. Open weights shipping July 27, 2026."
+    }
+  ]
+}
