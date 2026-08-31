@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "adi108yadav/whisper-tiny-technical-final",
+  "slug": "adi108yadav-whisper-tiny-technical-final",
+  "author": "adi108yadav",
+  "url": "https://huggingface.co/adi108yadav/whisper-tiny-technical-final",
+  "created_at": "2026-08-31T18:29:22.000Z",
+  "updated_at": "2026-08-31T18:29:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-tiny · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-tiny",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "whisper-tiny: Audio-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/whisper-tiny-openai",
+      "snippet": "The model reflects OpenAI&#x27;s 2022 training snapshot. The newer whisper-large-v2 has superseded this variant for quality-critical applications, and the tiny model receives no updates for new languages, improved accuracy, or architectural improvements. Apache 2.0 license permits commercial use but without liability guarantees."
+    },
+    {
+      "title": "README.md · openai/whisper-tiny.en at main - Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-tiny.en/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper [Blog] [Paper] [Model card] [Colab example] Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "whisper/README.md at main · openai/whisper · GitHub",
+      "url": "https://github.com/openai/whisper/blob/main/README.md",
+      "snippet": "Whisper [Blog] [Paper] [Model card] [Colab example] Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    }
+  ]
+}

@@ -1,0 +1,443 @@
+{
+  "schema": 1,
+  "id": "nvidia/canary-1b-v2",
+  "slug": "nvidia-canary-1b-v2",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/canary-1b-v2",
+  "created_at": "2025-08-04T13:34:41.000Z",
+  "updated_at": "2026-08-31T19:01:49.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "bg",
+    "hr",
+    "cs",
+    "da",
+    "nl",
+    "en",
+    "et",
+    "fi",
+    "fr",
+    "de",
+    "el",
+    "hu",
+    "it",
+    "lv",
+    "lt",
+    "mt",
+    "pl",
+    "pt",
+    "ro",
+    "sk",
+    "sl",
+    "es",
+    "sv",
+    "ru",
+    "uk"
+  ],
+  "tags": [
+    "nemo",
+    "safetensors",
+    "canary",
+    "automatic-speech-recognition",
+    "automatic-speech-translation",
+    "speech",
+    "audio",
+    "Transformer",
+    "FastConformer",
+    "Conformer",
+    "pytorch",
+    "NeMo",
+    "hf-asr-leaderboard",
+    "Transformers",
+    "bg",
+    "hr",
+    "cs",
+    "da",
+    "nl",
+    "en",
+    "et",
+    "fi",
+    "fr",
+    "de",
+    "el",
+    "hu",
+    "it",
+    "lv",
+    "lt",
+    "mt",
+    "pl",
+    "pt",
+    "ro",
+    "sk",
+    "sl",
+    "es",
+    "sv",
+    "ru",
+    "uk",
+    "dataset:nvidia/Granary",
+    "dataset:nvidia/nemo-asr-set-3.0",
+    "arxiv:2509.14128",
+    "arxiv:2505.13404",
+    "arxiv:2305.05084",
+    "arxiv:1706.03762",
+    "arxiv:2410.01036",
+    "arxiv:2406.00899",
+    "arxiv:2205.12446",
+    "arxiv:2012.03411",
+    "arxiv:2007.10310",
+    "arxiv:2005.08072",
+    "arxiv:1510.08484",
+    "license:cc-by-4.0",
+    "model-index",
+    "eval-results",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 411,
+  "downloads_30d": 12108,
+  "trending_score": 0,
+  "parameters": 978998272,
+  "parameters_human": "979.0M",
+  "storage_bytes": 20551188698,
+  "storage_human": "20.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Bg)",
+      "value": 9.25
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Cs)",
+      "value": 7.86
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Da)",
+      "value": 11.25
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (De)",
+      "value": 4.4
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (El)",
+      "value": 9.21
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (En)",
+      "value": 4.5
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Es)",
+      "value": 2.9
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Et)",
+      "value": 12.55
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Fi)",
+      "value": 8.59
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Fr)",
+      "value": 5.02
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Hr)",
+      "value": 8.29
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Hu)",
+      "value": 12.9
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (It)",
+      "value": 3.07
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Lt)",
+      "value": 12.36
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Lv)",
+      "value": 9.66
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Mt)",
+      "value": 18.31
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Nl)",
+      "value": 6.12
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Pl)",
+      "value": 6.64
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Pt)",
+      "value": 4.39
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Ro)",
+      "value": 6.61
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Ru)",
+      "value": 6.9
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Sk)",
+      "value": 5.74
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Sl)",
+      "value": 13.32
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Sv)",
+      "value": 9.57
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Uk)",
+      "value": 10.5
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "Multilingual LibriSpeech",
+      "metric": "Test WER (Es)",
+      "value": 2.94
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "Multilingual LibriSpeech",
+      "metric": "Test WER (Fr)",
+      "value": 3.36
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "Multilingual LibriSpeech",
+      "metric": "Test WER (It)",
+      "value": 9.16
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "Multilingual LibriSpeech",
+      "metric": "Test WER (Nl)",
+      "value": 11.27
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "Multilingual LibriSpeech",
+      "metric": "Test WER (Pl)",
+      "value": 8.77
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "Multilingual LibriSpeech",
+      "metric": "Test WER (Pt)",
+      "value": 8.14
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (De)",
+      "value": 5.53
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (En)",
+      "value": 6.85
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Es)",
+      "value": 3.81
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Et)",
+      "value": 18.28
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Fr)",
+      "value": 6.3
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (It)",
+      "value": 4.8
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Lv)",
+      "value": 11.49
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Nl)",
+      "value": 6.93
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Pt)",
+      "value": 6.87
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Ru)",
+      "value": 5.14
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Sl)",
+      "value": 7.59
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Sv)",
+      "value": 13.32
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Uk)",
+      "value": 18.15
+    },
+    {
+      "task": "automatic-speech-translation",
+      "dataset": "FLEURS",
+      "metric": "Test BLEU (Bg->En)",
+      "value": 30.93
+    },
+    {
+      "task": "automatic-speech-translation",
+      "dataset": "FLEURS",
+      "metric": "Test COMET (Bg->En)",
+      "value": 79.6
+    },
+    {
+      "task": "automatic-speech-translation",
+      "dataset": "FLEURS",
+      "metric": "Test BLEU (Cs->En)",
+      "value": 29.28
+    },
+    {
+      "task": "automatic-speech-translation",
+      "dataset": "FLEURS",
+      "metric": "Test COMET (Cs->En)",
+      "value": 78.64
+    },
+    {
+      "task": "automatic-speech-translation",
+      "dataset": "FLEURS",
+      "metric": "Test BLEU (Da->En)",
+      "value": 34.8
+    },
+    {
+      "task": "automatic-speech-translation",
+      "dataset": "FLEURS",
+      "metric": "Test COMET (Da->En)",
+      "value": 80.45
+    }
+  ],
+  "sources": [
+    {
+      "title": "nvidia/canary-1b-v2 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/canary-1b-v2",
+      "snippet": "Deployment Geography Global Use case This model serves developers, researchers, academics, and industries building applications that require speech-to-text capabilities, including but not limited to: conversational AI, voice assistants, transcription services, subtitle generation, and voice analytics platforms. Release Date Huggingface 08/14/2025 Model Architecture Canary-1b-v2 is an encoder ..."
+    },
+    {
+      "title": "README.md · nvidia/canary-1b-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/nvidia/canary-1b-v2/blob/main/README.md",
+      "snippet": "Canary-1b-v2 is an encoder-decoder architecture featuring a FastConformer Encoder [3] and a Transformer Decoder [4]. The model extracts audio features through the encoder and uses task-specific tokens—such as <source language> and <target language> —to guide the Transformer Decoder in generating text output."
+    },
+    {
+      "title": "GitHub - cvlt-ai/NVIDIA-Canary-1B-V2-Web-UI: NVIDIA Canary-1B v2 ...",
+      "url": "https://github.com/cvlt-ai/NVIDIA-Canary-1B-V2-Web-UI",
+      "snippet": "NVIDIA Canary-1B v2 multilingual ASR/AST model using Gradio WEB UI. This v2 implementation provides significant improvements over the original Flash model, featuring 25 European language support, 1..."
+    },
+    {
+      "title": "canary-1b-v2: Audio-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/canary-1b-v2-nvidia",
+      "snippet": "The model card recommends using segment-level timestamps for translation since they provide more intuitive and accurate alignment. Q: What is the difference between this model and Canary-1b? A: Canary-1b-v2 adds support for 21 additional European languages (25 total vs. 4) and includes bidirectional speech translation capability."
+    },
+    {
+      "title": "NVIDIA-Canary-1B-V2-Web-UI/setup_model.py at main · cvlt-ai ... - GitHub",
+      "url": "https://github.com/cvlt-ai/NVIDIA-Canary-1B-V2-Web-UI/blob/main/setup_model.py",
+      "snippet": "NVIDIA Canary-1B v2 multilingual ASR/AST model using Gradio WEB UI. This v2 implementation provides significant improvements over the original Flash model, featuring 25 European language support, 10x performance enhancement, and state-of-the-art accuracy."
+    }
+  ]
+}

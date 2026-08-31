@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "drowzeys/keys-DeepSeekV4Flash-Vision-EXP-ablit",
+  "slug": "drowzeys-keys-deepseekv4flash-vision-exp-ablit",
+  "author": "drowzeys",
+  "url": "https://huggingface.co/drowzeys/keys-DeepSeekV4Flash-Vision-EXP-ablit",
+  "created_at": "2026-08-31T17:31:57.000Z",
+  "updated_at": "2026-08-31T17:37:56.000Z",
+  "license": "deepseek",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "deepseek",
+    "deepseek-v4",
+    "deepseek-v4-flash",
+    "vision-exp",
+    "dspark",
+    "abliterated",
+    "uncensored",
+    "moe",
+    "fp8",
+    "vllm",
+    "dgx-spark",
+    "gb10",
+    "anchored-tensors",
+    "multimodal",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 304646824126,
+  "parameters_human": "304.65B",
+  "storage_bytes": 167819617279,
+  "storage_human": "167.8 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "drowzeys (keys) · GitHub",
+      "url": "https://github.com/drowzeys",
+      "snippet": "These packs are free and built on a lot of other people&#x27;s open work. If they save you time or GPU-hours, please consider a donation: → GoFundMe — Support Community AI with DGX-Spark, GB10, GPU, and Macs Thank you."
+    },
+    {
+      "title": "drowzeys (keys) - Hugging Face",
+      "url": "https://huggingface.co/drowzeys",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago ... updated a model 8 days ago"
+    },
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://deepseek.com/en/index.html",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source frontier LLMs including DeepSeek-V4, DeepSeek-R1, and DeepSeek-Coder. Chat with DeepSeek AI or integrate via API."
+    },
+    {
+      "title": "drowzeys (keys) - Hugging Face",
+      "url": "https://huggingface.co/drowzeys/datasets",
+      "snippet": "drowzeys 1 Follow cgrobinson&#x27;s profile picturesabarbao&#x27;s profile picturedefilogic&#x27;s profile picture 11 followers · 0 following drowzeys"
+    },
+    {
+      "title": "GitHub - drowzeys/drowzeys: keys / drowzeys — Spark + Mac local ...",
+      "url": "https://github.com/drowzeys/drowzeys",
+      "snippet": "Local inference recipes for DGX Spark and Mac Studio — DeepSeek-V4-Flash, MiniMax-H3, Qwen3.8, oMLX Dual-ANE, Anemll/vLLM."
+    }
+  ]
+}

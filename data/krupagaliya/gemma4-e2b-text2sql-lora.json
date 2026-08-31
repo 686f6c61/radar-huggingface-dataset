@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "krupagaliya/gemma4-e2b-text2sql-lora",
+  "slug": "krupagaliya-gemma4-e2b-text2sql-lora",
+  "author": "krupagaliya",
+  "url": "https://huggingface.co/krupagaliya/gemma4-e2b-text2sql-lora",
+  "created_at": "2026-08-31T13:21:45.000Z",
+  "updated_at": "2026-08-31T13:21:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37542188,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Models /Gemma 4 E2B Gemma 4 E2B — Ultra-Lightweight Local AI Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    },
+    {
+      "title": "gemma4-text2sql/README.md at main - GitHub",
+      "url": "https://github.com/DeepeshKashyup/gemma4-text2sql/blob/main/README.md",
+      "snippet": "Fine-tune Google&#x27;s Gemma 4 31B on the Spider dataset using LoRA/QLoRA, evaluate against GPT-4o-mini baseline, and deploy on Vertex AI."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B. Their diverse sizes make them deployable in environments ranging from high-end phones to laptops and servers, democratizing access to state-of-the-art AI. Gemma 4 introduces key capability and architectural advancements:"
+    },
+    {
+      "title": "Gemma 4 | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/litert-lm/models/gemma-4",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size, targeting deployment scenarios from mobile and edge devices (E2B, E4B) to consumer GPUs and workstations (26B A4B, 31B). They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    },
+    {
+      "title": "[2511.04710] GEMMA-SQL: A Novel Text-to-SQL Model Based on Large ...",
+      "url": "https://arxiv.org/abs/2511.04710",
+      "snippet": "Text-to-SQL systems enable users to interact with structured databases using natural language, eliminating the need for specialized programming knowledge. In this work, we introduce GEMMA-SQL, a lightweight and efficient text-to-SQL model built upon the open-source Gemma 2B architecture. Unlike many large language models (LLMs), GEMMA-SQL is fine-tuned in a resource-efficient, iterative manner ..."
+    }
+  ]
+}

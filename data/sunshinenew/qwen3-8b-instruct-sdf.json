@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "sunshineNew/qwen3-8b-instruct-sdf",
+  "slug": "sunshinenew-qwen3-8b-instruct-sdf",
+  "author": "sunshineNew",
+  "url": "https://huggingface.co/sunshineNew/qwen3-8b-instruct-sdf",
+  "created_at": "2026-06-23T21:18:06.000Z",
+  "updated_at": "2026-08-31T15:11:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 147445088948,
+  "storage_human": "147.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sunshineNew/qwen3-8b-instruct-sdf · Hugging Face",
+      "url": "https://huggingface.co/sunshineNew/qwen3-8b-instruct-sdf",
+      "snippet": "sunshineNew / qwen3-8b-instruct-sdf like 0 Safetensors qwen3 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 97 Safetensors Model size 8B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PDF Qwen3 Highlights - NVIDIA Developer",
+      "url": "https://developer.nvidia.com/downloads/assets/ace/model_card/qwen3-8b-instruct.pdf",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features: Uniquely support of seamless switching between thinking ..."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention: A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

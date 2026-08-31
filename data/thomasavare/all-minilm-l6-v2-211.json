@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "thomasavare/all-MiniLM-L6-v2-211",
+  "slug": "thomasavare-all-minilm-l6-v2-211",
+  "author": "thomasavare",
+  "url": "https://huggingface.co/thomasavare/all-MiniLM-L6-v2-211",
+  "created_at": "2026-08-31T17:40:59.000Z",
+  "updated_at": "2026-08-31T17:46:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1798178,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thomasavare/all-MiniLM-L6-v2-211 · Hugging Face",
+      "url": "https://huggingface.co/thomasavare/all-MiniLM-L6-v2-211",
+      "snippet": "thomasavare ... all-MiniLM-L6-v2-211 like 0 Safetensors ICD10-classification model_hub_mixin pytorch_model_hub_mixin Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "thomasavare/all-MiniLM-L6-v2-211 at main - Hugging Face",
+      "url": "https://huggingface.co/thomasavare/all-MiniLM-L6-v2-211/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "all-MiniLM-L6-v2 - GitHub",
+      "url": "https://github.com/rllm-team/rllm/diffs/2?base_sha=be5fc024ca765d526e84c30fc65119c02e056992&head_user=ywjmurcline&name=main&pull_number=42&qualified_name=refs%2Fheads%2Fmain&sha1=be5fc024ca765d526e84c30fc65119c02e056992&sha2=dda915974adaabeb198d02d0c5a17ee418bf1884&short_path=ee3cca0&unchanged=expanded&w=false",
+      "snippet": "all-MiniLM-L6-v2 This is a sentence-transformers model: It maps sentences & paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering or semantic search. Usage (Sentence-Transformers) Using this model becomes easy when you have sentence-transformers installed: pip install -U sentence-transformers Then you can use the model like this: from sentence ..."
+    },
+    {
+      "title": "GitHub - henrytanner52/all-MiniLM-L6-v2",
+      "url": "https://github.com/henrytanner52/all-MiniLM-L6-v2",
+      "snippet": "The project aims to train sentence embedding models on very large sentence level datasets using a self-supervised contrastive learning objective. We used the pretrained nreimers/MiniLM-L6-H384-uncased model and fine-tuned in on a 1B sentence pairs dataset."
+    },
+    {
+      "title": "All MiniLM L6 V2 | Intel® Software Catalog",
+      "url": "https://aiswcatalog.intel.com/models/redhatai-all-minilm-l6-v2",
+      "snippet": "All-MiniLM-L6-v2 is a compact sentence embedding model from the Sentence Transformers project, featuring 22.7 million parameters and generating 384-dimensional vector representations."
+    }
+  ]
+}

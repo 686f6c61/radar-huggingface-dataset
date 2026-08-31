@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "atkinschang/TableFormer-MLX",
+  "slug": "atkinschang-tableformer-mlx",
+  "author": "atkinschang",
+  "url": "https://huggingface.co/atkinschang/TableFormer-MLX",
+  "created_at": "2026-08-31T16:31:19.000Z",
+  "updated_at": "2026-08-31T16:31:59.000Z",
+  "license": "cdla-permissive-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "base_model:docling-project/docling-models",
+    "base_model:finetune:docling-project/docling-models",
+    "license:cdla-permissive-2.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 358206160,
+  "storage_human": "358 MB",
+  "base_model": "docling-project/docling-models",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2203.00274] TableFormer: Robust Transformer Modeling for Table-Text ...",
+      "url": "https://arxiv.org/abs/2203.00274",
+      "snippet": "Understanding tables is an important aspect of natural language understanding. Existing models for table understanding require linearization of the table structure, where row or column order is encoded as an unwanted bias. Such spurious biases make the model vulnerable to row and column order perturbations. Additionally, prior work has not thoroughly modeled the table structures or table-text ..."
+    },
+    {
+      "title": "TableFormer: Robust Transformer Modeling for Table-Text Encoding",
+      "url": "https://huggingface.co/papers/2203.00274",
+      "snippet": "Join the discussion on this paper page TableFormer: Robust Transformer Modeling for Table-Text Encoding"
+    },
+    {
+      "title": "PDF TABLEFORMER: Robust Transformer Modeling for Table-Text Encoding",
+      "url": "https://storage.googleapis.com/gweb-research2023-media/pubtools/6550.pdf",
+      "snippet": "In this work, we propose a robust and structurally aware table-text encoding architec-ture TABLEFORMER, where tabular structural biases are incorporated completely through learnable attention biases. TABLEFORMER is (1) strictly invariant to row and column or-ders, and, (2) could understand tables better due to its tabular inductive biases."
+    },
+    {
+      "title": "docling-ibm-models/docling_ibm_models/tableformer_v2/model.py ... - GitHub",
+      "url": "https://github.com/docling-project/docling-ibm-models/blob/main/docling_ibm_models/tableformer_v2/model.py",
+      "snippet": "Contribute to docling-project/docling-ibm-models development by creating an account on GitHub."
+    },
+    {
+      "title": "TableFormer: Robust Transformer Modeling for Table-Text Encoding",
+      "url": "https://ar5iv.labs.arxiv.org/html/2203.00274",
+      "snippet": "To this end, we propose TableFormer, a Transformer architecture that is robust to row and column order perturbations, by incorporating structural biases more naturally. TableFormer relies on 13 types of task-independent table ↔ $↔$ text attention biases that respect the table structure and table-text relations."
+    }
+  ]
+}

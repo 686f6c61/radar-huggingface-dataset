@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "laion/moss-va-sft3-burst-stop-dpo-lora",
+  "slug": "laion-moss-va-sft3-burst-stop-dpo-lora",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/moss-va-sft3-burst-stop-dpo-lora",
+  "created_at": "2026-08-31T18:14:11.000Z",
+  "updated_at": "2026-08-31T18:14:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-to-speech",
+    "voice-acting",
+    "lora",
+    "dpo",
+    "moss",
+    "vocal-bursts",
+    "en",
+    "base_model:laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3",
+    "base_model:adapter:laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 550013120,
+  "storage_human": "550 MB",
+  "base_model": "laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "laion/moss-va-sft3-vocal-burst-lora-adapters · Hugging Face",
+      "url": "https://huggingface.co/laion/moss-va-sft3-vocal-burst-lora-adapters",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "laion/moss-va-sft3-voicenet-lora-adapters · Hugging Face",
+      "url": "https://huggingface.co/laion/moss-va-sft3-voicenet-lora-adapters",
+      "snippet": "laion/moss-va-sft3-dpo-lora-p2 is trained against the same SFT3 base and can be loaded as a second adapter. Loading two adapters and combining them (add_weighted_adapter, or activating both) has not been evaluated for this set either."
+    },
+    {
+      "title": "MOSS Voice-Acting — Manual & Studies Hub - projects.laion.ai",
+      "url": "https://projects.laion.ai/moss-voiceacting-manual/site/index.html",
+      "snippet": "MOSS Voice-Acting — Manual & Studies Hub A measured, audio-backed usage guide for laion/moss-tts-local-transformer-4.55b-voice-acting-v2 (4.55B expressive voice-acting TTS). For any target it gives the best prompt, which LoRA at which merge %, the expected reward, and measured side-effects. This is the agent-readable mirror of the HTML hub."
+    },
+    {
+      "title": "Humaneness-Voice-Demo-Server/README.md at main · LAION-AI ... - GitHub",
+      "url": "https://github.com/LAION-AI/Humaneness-Voice-Demo-Server/blob/main/README.md",
+      "snippet": "Streaming voice-acting demo server for MOSS-TTS-Local SFT3: an LLM directs the performance, retrieval picks the reference recording and emotion adapter, audio streams at 48 kHz. - LAION-AI/Humanene..."
+    },
+    {
+      "title": "moss-voiceacting-manual/README.md at main · LAION-AI/moss ... - GitHub",
+      "url": "https://github.com/LAION-AI/moss-voiceacting-manual/blob/main/README.md",
+      "snippet": "For each target: the best prompting strategy with and without a LoRA, the best merge %, the expected reward = (genuineness + vocal_burst_blend + 1.25·target_emotion) / (1 + WER), and the measured side-effects / correlations on other EmoNet emotions, VoiceNet dimensions, genuineness, vocal-burst blend and speech quality."
+    }
+  ]
+}

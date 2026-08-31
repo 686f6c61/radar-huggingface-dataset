@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ruisv/bllm-qwen3.5-2b",
+  "slug": "ruisv-bllm-qwen3-5-2b",
+  "author": "ruisv",
+  "url": "https://huggingface.co/ruisv/bllm-qwen3.5-2b",
+  "created_at": "2026-07-29T11:05:42.000Z",
+  "updated_at": "2026-08-31T11:49:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "bpu",
+    "d-robotics",
+    "rdk",
+    "edge",
+    "on-device",
+    "int8",
+    "gated-deltanet",
+    "hybrid-ssm",
+    "vision-language",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19492037870,
+  "storage_human": "19.5 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ruisv/bllm-qwen3.5-2b · Hugging Face",
+      "url": "https://huggingface.co/ruisv/bllm-qwen3.5-2b",
+      "snippet": "ruisv / bllm-qwen3.5-2b like 0 Image-Text-to-Text English Chinese bpu d-robotics rdk edge on-device int8 gated-deltanet hybrid-ssm vision-language License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Qwen3.5-2B — BPU-native build for D-Robotics RDK S100 / S100P Quick facts Files in this repo How to run Measured on hardware (S100P, performance mode, 3 ..."
+    },
+    {
+      "title": "bllm-model-zoo/models/qwen3.5-2b at main · ruisv/bllm-model-zoo",
+      "url": "https://github.com/ruisv/bllm-model-zoo/tree/main/models/qwen3.5-2b",
+      "snippet": "Contrast with qwen3.5-4b, whose GDN key and value heads are decoupled (16 key / 32 value) — that is a genuine architecture change, not just a bigger version of this one. Upstream: Qwen3.5-2B, Apache-2.0 (check the model card)."
+    },
+    {
+      "title": "bllm-model-zoo/models/qwen3.5-2b/README.md at main · ruisv ... - GitHub",
+      "url": "https://github.com/ruisv/bllm-model-zoo/blob/main/models/qwen3.5-2b/README.md",
+      "snippet": "Contrast with qwen3.5-4b, whose GDN key and value heads are decoupled (16 key / 32 value) — that is a genuine architecture change, not just a bigger version of this one. Upstream: Qwen3.5-2B, Apache-2.0 (check the model card)."
+    },
+    {
+      "title": "ruisv (RUISV) - Hugging Face",
+      "url": "https://huggingface.co/ruisv",
+      "snippet": "Recent Activity updated a modelabout 11 hours ago ruisv/bllm-qwen3.5-4b published a modelabout 11 hours ago ruisv/bllm-qwen3.5-4b updated a modelabout 11 hours ago ruisv/bllm-qwen3.5-2b View all activity"
+    },
+    {
+      "title": "Qwen3.5-2B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_5_2b",
+      "snippet": "Qwen3.5-2B Balanced 2B parameter model from the Qwen3.5 series for on‑device inference. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    }
+  ]
+}

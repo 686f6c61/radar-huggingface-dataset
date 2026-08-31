@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "sarkarghya/olmoearth-v1.2-energy-multitask-v3",
+  "slug": "sarkarghya-olmoearth-v1-2-energy-multitask-v3",
+  "author": "sarkarghya",
+  "url": "https://huggingface.co/sarkarghya/olmoearth-v1.2-energy-multitask-v3",
+  "created_at": "2026-08-31T17:58:48.000Z",
+  "updated_at": "2026-08-31T17:58:57.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "olmoearth",
+    "remote-sensing",
+    "sentinel-2",
+    "multi-task-learning",
+    "power-plants",
+    "renewable-energy",
+    "data-centers",
+    "image-segmentation",
+    "dataset:sarkarghya/power-plant-olmoearth-segmentation",
+    "dataset:sarkarghya/im3-datacenter-olmoearth-segmentation",
+    "dataset:sarkarghya/wind-and-solar-candidate-olmoearth-segmentation",
+    "base_model:allenai/OlmoEarth-v1_2-Base",
+    "base_model:finetune:allenai/OlmoEarth-v1_2-Base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 126634365,
+  "parameters_human": "126.6M",
+  "storage_bytes": 506573076,
+  "storage_human": "507 MB",
+  "base_model": "allenai/OlmoEarth-v1_2-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OlmoEarthv1.2:Amoreefficientfamily ofOlmoEarthmodels",
+      "url": "https://allenai.org/papers/olmoearth-v1-2",
+      "snippet": "Figure 1 OlmoEarth (v1 and v1.2) defines a Pareto frontier of performance vs. computational efficiency averaged across 13 embedding tasks (measured by kNN and linear probing)2. The chart shows average Multiply-Accumulate operations (MACs) to encode one example across all tasks (input size varies by task) - each line connects model sizes within a family. OlmoEarth v1.2 Base requires 2.9× fewer ..."
+    },
+    {
+      "title": "OlmoEarth",
+      "url": "https://olmoearth.allenai.org/",
+      "snippet": "State-of-the-art AI for understanding our changing planet OlmoEarth is a fully open family of Earth-observation foundation models, plus a no-code platform to fine-tune and deploy them at scale."
+    },
+    {
+      "title": "OlmoEarth - a allenai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/allenai/olmoearth",
+      "snippet": "OlmoEarth pre-trained and fine-tuned foundation models for remote sensing"
+    },
+    {
+      "title": "sarkarghya (Arghya Sarkar) - Hugging Face",
+      "url": "https://huggingface.co/sarkarghya/datasets",
+      "snippet": "AI & ML interests ... Recent Activity ... Organizations sarkarghya &#x27;s datasets 3 Sort: Recently updated"
+    },
+    {
+      "title": "OlmoEarth v1.2: A more efficient family of OlmoEarth models",
+      "url": "https://arxiv.org/abs/2605.20804",
+      "snippet": "We present a set of improvements to the OlmoEarth family. These improvements allow us to cut compute costs during training (3.0× reduction in GPU hours required to train our Base models) and inference (2.9× reductions in MACs on Sentinel-2 tasks), while maintaining the models&#x27; overall performance. All training code is available at this http URL."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "PowerMachine/HAKO-v3",
+  "slug": "powermachine-hako-v3",
+  "author": "PowerMachine",
+  "url": "https://huggingface.co/PowerMachine/HAKO-v3",
+  "created_at": "2026-08-31T18:08:36.000Z",
+  "updated_at": "2026-08-31T18:10:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 266747411,
+  "storage_human": "267 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mithraeums/hako: Open source hako LLMs. · GitHub",
+      "url": "https://github.com/mithraeums/hako",
+      "snippet": "Open hake, drop into the AI pane (Ctrl-W r), set :provider mithraeum:model hako-sho-stock (or any installed hako-* model). Tool calls run in the editor&#x27;s split pane against the file you&#x27;re looking at."
+    },
+    {
+      "title": "Your AI Game Companion - HakkoAI",
+      "url": "https://www.hakko.ai/en/",
+      "snippet": "HakkoAI revolutionizes your gaming experience. Compatible with a wide range of genres—from FPS to MOBA｜Designed to be an AI that truly understands you, HakkoAI is by your side even in daily life, from watching dramas to studying."
+    },
+    {
+      "title": "How to Use Hakko AI - Step by Step Guide (Full Tutorial)",
+      "url": "https://www.youtube.com/watch?v=ZF8C05ipzyE",
+      "snippet": "How to Use Hakko AI: This full tutorial walks you through setup, key features, and real-world workflows for beginners and experienced users. Follow a clear step by step guide to configure the AI ..."
+    },
+    {
+      "title": "Local AI Models — The Reference for Running AI Locally",
+      "url": "https://local-ai-models.ai/",
+      "snippet": "The reference for engineers running AI locally. VRAM math, hardware tradeoffs, model benchmarks, and the agent ecosystem — all in one place. Built to help you understand, not just install."
+    },
+    {
+      "title": "AI Builder in Power Automate overview - learn.microsoft.com",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/use-in-flow-overview",
+      "snippet": "Get an overview of how to create automated flows by using AI Builder in Power Automate."
+    }
+  ]
+}

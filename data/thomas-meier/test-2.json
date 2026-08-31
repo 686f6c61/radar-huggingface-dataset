@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "thomas-meier/test-2",
+  "slug": "thomas-meier-test-2",
+  "author": "thomas-meier",
+  "url": "https://huggingface.co/thomas-meier/test-2",
+  "created_at": "2026-08-31T18:11:53.000Z",
+  "updated_at": "2026-08-31T18:28:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483973,
+  "storage_human": "70.2 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta says its AI model hacked into another company during testing",
+      "url": "https://www.theguardian.com/technology/2026/aug/05/meta-ai-model-hack-training",
+      "snippet": "Meta said on Wednesday that one of its AI models hacked ⁠another company during cybersecurity testing, after an error by its testing partner gave the model unintended internet access."
+    },
+    {
+      "title": "Thomas Meier&#x27;s Post - LinkedIn",
+      "url": "https://www.linkedin.com/posts/thomas-meier-340721203_ai-scientists-as-engines-of-discovery-a-activity-7475603681153970176-7WHJ",
+      "snippet": "I am truly happy to announce this new publication: Agentic artificial intelligence (AI) systems are beginning to assist, accelerate, and partially automate scientific discovery, performing tasks ..."
+    },
+    {
+      "title": "Thomas Meier | ScienceDirect",
+      "url": "https://www.sciencedirect.com/author/35503432600/thomas-meier",
+      "snippet": "Read articles by Thomas Meier on ScienceDirect, the world&#x27;s leading source for scientific, technical, and medical research."
+    },
+    {
+      "title": "How to Test AI Models: A Step-by-Step Framework - smartdev.com",
+      "url": "https://smartdev.com/ai-model-testing-guide/",
+      "snippet": "Struggling with AI reliability? This AI model testing guide gives you a 6-step framework, tools, metrics & a ready-to-use checklist."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

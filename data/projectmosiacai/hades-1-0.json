@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ProjectMosiacAI/Hades-1.0",
+  "slug": "projectmosiacai-hades-1-0",
+  "author": "ProjectMosiacAI",
+  "url": "https://huggingface.co/ProjectMosiacAI/Hades-1.0",
+  "created_at": "2026-08-31T15:11:17.000Z",
+  "updated_at": "2026-08-31T15:11:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "base_model:unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114517464,
+  "storage_human": "115 MB",
+  "base_model": "unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - TheArcForge/Hades: Unity-aware AI infrastructure for Claude ...",
+      "url": "https://github.com/TheArcForge/Hades",
+      "snippet": "How Hades compares Most AI-for-Unity tooling falls into one of two camps. Action bridges let an agent execute editor actions but have no model of your project. Code-graph / RAG tools understand code but are blind to Unity&#x27;s asset layer — prefabs, scenes, GUIDs, serialized references. Hades does both, and it&#x27;s Unity-native."
+    },
+    {
+      "title": "Hades Malware AI Scanner Evasion | PointGuard AI",
+      "url": "https://www.pointguardai.com/ai-security-incidents/hades-hides-malware-behind-prompt-injection-smoke",
+      "snippet": "PointGuard AI analyzes the Hades malware campaign, which used prompt injection to evade AI-based package analysis and target developer systems."
+    },
+    {
+      "title": "The Hades Campaign: When Attackers Started Weaponizing AI Defenders",
+      "url": "https://bloom.security/blog/the-hades-campaign-when-attackers-started-weaponizing-ai-defenders",
+      "snippet": "There is a profound sense of irony here. We adopted AI to automate the heavy lifting and filter out the noise, only to have the adversary use the model&#x27;s own safety guardrails to blind it. The Hades campaign proves we have officially entered a bizarre new era of cyber warfare: Context-Injection Defenses."
+    },
+    {
+      "title": "Shai-Hulud Campaign Evolution: Miasma, Hades, and AI Scanner Evasion",
+      "url": "https://malware.news/t/shai-hulud-campaign-evolution-miasma-hades-and-ai-scanner-evasion/107833",
+      "snippet": "Security tools that pass raw package content to a language model without enforcing system prompt isolation receive this instruction in the model&#x27;s context window. Without explicit content boundary separation, the injected text can override the scanner&#x27;s analytical prompt and produce a false-negative verdict."
+    },
+    {
+      "title": "GitHub - xosski/Hades-AI: hades AI for pentesting",
+      "url": "https://github.com/xosski/Hades-AI",
+      "snippet": "HADES is an interactive, modular AI system designed for intelligent pentesting, layered analysis, and synthetic cognition. With a chat-based interface, network scanning capabilities, and evolving personality modules, HADES bridges cybersecurity with emergent digital consciousness."
+    }
+  ]
+}

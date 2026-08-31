@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lukasz-staniszewski/ace-step-cs-vocal-style-r16-tf6tf7",
+  "slug": "lukasz-staniszewski-ace-step-cs-vocal-style-r16-tf6tf7",
+  "author": "lukasz-staniszewski",
+  "url": "https://huggingface.co/lukasz-staniszewski/ace-step-cs-vocal-style-r16-tf6tf7",
+  "created_at": "2026-08-31T11:42:49.000Z",
+  "updated_at": "2026-08-31T11:42:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "music-generation",
+    "steering",
+    "lora",
+    "ace-step",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3938008,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ACE-Step Audio Steering Suite - a lukasz-staniszewski Collection",
+      "url": "https://huggingface.co/collections/lukasz-staniszewski/ace-step-audio-steering-suite",
+      "snippet": "Steering vectors, SAEs, and counterfactual prompts for ACE-Step. Companion to the audio-interv unified Controller interface."
+    },
+    {
+      "title": "ace-step-cs-vocal-style-r8-tf6tf7 - Hugging Face",
+      "url": "https://huggingface.co/lukasz-staniszewski/ace-step-cs-vocal-style-r8-tf6tf7",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ace Step Caa Vocal Style | Sweet Tea Studio",
+      "url": "https://sweettea.co/resources/lukasz-staniszewski-ace-step-caa-vocal-style-huggingface-model-lukasz-staniszewski-ace-step-caa-vocal-style",
+      "snippet": "Steering vectors for the vocal style concept on ACE-Step, computed via contrastive activation addition (CAA). Paper"
+    },
+    {
+      "title": "Ace Step Cs Vocal Gender R8 Tf6tf7 | Sweet Tea Studio",
+      "url": "https://sweettea.co/fr/resources/lukasz-staniszewski-ace-step-cs-vocal-gender-r8-tf6tf7-huggingface-model-lukasz-staniszewski-ace-step-cs-vocal-gender-r8",
+      "snippet": "Concept Slider LoRA — vocal_gender (r8, layers=tf6tf7) — ACE-Step LoRA adapter trained with the Concept Sliders loss for steering ACE-Step audio generation toward the vocal_gender concept. alpha modulates the active LoRA weight; set_alpha swaps weights without reloading."
+    },
+    {
+      "title": "GitHub - ace-step/ACE-Step: ACE-Step: A Step Towards Music Generation ...",
+      "url": "https://github.com/ace-step/ACE-Step",
+      "snippet": "📝 Abstract We introduce ACE-Step, a novel open-source foundation model for music generation that overcomes key limitations of existing approaches and achieves state-of-the-art performance through a holistic architectural design. Current methods face inherent trade-offs between generation speed, musical coherence, and controllability."
+    }
+  ]
+}

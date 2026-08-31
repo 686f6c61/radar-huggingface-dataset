@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "realrebelai/FastH3_GGUFs",
+  "slug": "realrebelai-fasth3_ggufs",
+  "author": "realrebelai",
+  "url": "https://huggingface.co/realrebelai/FastH3_GGUFs",
+  "created_at": "2026-08-30T02:46:05.000Z",
+  "updated_at": "2026-08-31T04:57:25.000Z",
+  "license": "minimax-h3-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "comfyui",
+    "minimax-h3",
+    "fastvideo",
+    "vsa",
+    "video-sparse-attention",
+    "text-to-video",
+    "low-vram",
+    "image-to-video",
+    "base_model:FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+    "base_model:quantized:FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 1,
+  "trending_score": 11,
+  "parameters": 35049751312,
+  "parameters_human": "35.05B",
+  "storage_bytes": 44051588224,
+  "storage_human": "44.1 GB",
+  "base_model": "FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "realrebelai/FastH3_GGUFs · Hugging Face",
+      "url": "https://huggingface.co/realrebelai/FastH3_GGUFs",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "realrebelai/FastH3_GGUFs at main - Hugging Face",
+      "url": "https://huggingface.co/realrebelai/FastH3_GGUFs/tree/main",
+      "snippet": "realrebelai / FastH3_GGUFs like 0 License:unknown Model card FilesFiles and versions xet Community Copy to bucket new main FastH3_GGUFs 1.54 kB Ctrl+K Ctrl+K 1 contributor History:1 commit realrebelai initial commit e3830ef verifiedabout 5 hours ago .gitattributes Safe 1.52 kBinitial commitabout 5 hours ago README.md Safe 25 Bytesinitial ..."
+    },
+    {
+      "title": "REBEL AI - YouTube",
+      "url": "https://www.youtube.com/@realrebelai/videos",
+      "snippet": "LOW VRAM Tutorial Videos. ️ Image & Video Model Reviews. 💻 ComfyUI Custom Nodes. ️ Its my goal to provide low vram workflows in a fast and efficient manner to get the latest models running ..."
+    },
+    {
+      "title": "RealRebelAI · GitHub",
+      "url": "https://github.com/RealRebelAI",
+      "snippet": "RealRebelAI has 21 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - RealRebelAI/ComfyUI_Rebels_SeFi: a custom node set to run SeFi ...",
+      "url": "https://github.com/RealRebelAI/ComfyUI_Rebels_SeFi",
+      "snippet": "Run SeFi-Image 5B (Semantic-First Diffusion, FLUX.2-Klein-based) in ComfyUI — Base and Turbo, safetensors (bf16) and GGUF — engineered to run on 8GB VRAM / 16GB RAM with automatic VRAM-aware offloading. Wraps the official MIT inference code from jmliu206/SeFi-Image (vendored in sefi_core/, credit SeFi-Team). Nodes, GGUF support, and memory management by realrebelai."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Kovko/stroy-radar",
+  "slug": "kovko-stroy-radar",
+  "author": "Kovko",
+  "url": "https://huggingface.co/Kovko/stroy-radar",
+  "created_at": "2026-08-31T13:38:19.000Z",
+  "updated_at": "2026-08-31T13:38:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Future Radar: Live HRRR Forecast, Dynamic, Zoomable, Raw Meteorological ...",
+      "url": "https://futureradar.net/",
+      "snippet": "Explore real-time High-Resolution Rapid Refresh (HRRR) weather models. Interactive, zoomable maps of raw temperature, wind, and precipitation data for enthusiasts and professionals."
+    },
+    {
+      "title": "Freeware military AI traffic for Flight Simulator and Prepar3d ...",
+      "url": "https://militaryaiworks.com/",
+      "snippet": "Hi and welcome to Military AI Works, or MAIW for short, the home base of military AI traffic for Flight Simulator and Prepar3D. Our site is pretty basic at the moment, but the forums and download hangar are fully functional. Thank you for your patience. The MAIW admin team."
+    },
+    {
+      "title": "AI Model Radar — real-time AI model release tracking",
+      "url": "https://aimodelradar.app/",
+      "snippet": "The moment a new AI model appears on the radar, know what it is and what changed. Tracking OpenAI, Anthropic, Google and open-source releases."
+    },
+    {
+      "title": "Meta says its AI model hacked into another company during testing",
+      "url": "https://www.theguardian.com/technology/2026/aug/05/meta-ai-model-hack-training",
+      "snippet": "Company is the third to report such an incident after Anthropic and OpenAI reported breaches during training Meta said on Wednesday that one of its AI models hacked ⁠another company during ..."
+    }
+  ]
+}

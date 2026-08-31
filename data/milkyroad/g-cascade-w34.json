@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "milkyroad/G-cascade-w34",
+  "slug": "milkyroad-g-cascade-w34",
+  "author": "milkyroad",
+  "url": "https://huggingface.co/milkyroad/G-cascade-w34",
+  "created_at": "2026-08-31T17:28:31.000Z",
+  "updated_at": "2026-08-31T17:28:46.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cystoscopy",
+    "bladder-cancer",
+    "domain-shift",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 174243600,
+  "storage_human": "174 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "milkyroad (Milky Road) - Hugging Face",
+      "url": "https://huggingface.co/milkyroad/datasets",
+      "snippet": "User profile of Milky Road on Hugging Face"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "w34 - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d0onsule878c73egnahg",
+      "snippet": "Explore w34 model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    }
+  ]
+}

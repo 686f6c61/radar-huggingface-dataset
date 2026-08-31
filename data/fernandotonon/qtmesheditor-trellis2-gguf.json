@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fernandotonon/QtMeshEditor-trellis2-gguf",
+  "slug": "fernandotonon-qtmesheditor-trellis2-gguf",
+  "author": "fernandotonon",
+  "url": "https://huggingface.co/fernandotonon/QtMeshEditor-trellis2-gguf",
+  "created_at": "2026-08-31T13:26:22.000Z",
+  "updated_at": "2026-08-31T13:39:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": "trellis2",
+  "languages": [],
+  "tags": [
+    "trellis2",
+    "gguf",
+    "image-to-3d",
+    "qtmesheditor",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 303079424,
+  "parameters_human": "303.1M",
+  "storage_bytes": 10411470912,
+  "storage_human": "10.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - fernandotonon/QtMeshEditor: Free 3D asset tool for indie game ...",
+      "url": "https://github.com/fernandotonon/QtMeshEditor/tree/master",
+      "snippet": "The composite action defaults to image-tag: latest, so the Docker CLI tracks the newest published ghcr.io/fernandotonon/qtmesh image. Reproducible builds — pin the action and the container to the same semver as this repository&#x27;s project (QtMeshEditor VERSION …) in CMakeLists.txt (currently 3.20.0)."
+    },
+    {
+      "title": "fernandotonon/QtMeshEditor-models at main - Hugging Face",
+      "url": "https://huggingface.co/fernandotonon/QtMeshEditor-models/tree/main",
+      "snippet": "fernandotonon / QtMeshEditor-models like 4 Image-to-3D ONNX GGUF pbr texture normal-map 3d rigging qtmesheditor qtmesh qtmesh-cloud conversational License:per-model Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "fernandotonon/QtMeshEditor-models · Hugging Face",
+      "url": "https://huggingface.co/fernandotonon/QtMeshEditor-models",
+      "snippet": "fernandotonon / QtMeshEditor-models like 0 ONNX pbr texture normal-map qtmesheditor License:cc0-1.0 Model card FilesFiles and versions xet Community Copy to bucket new QtMeshEditor — AI models PBR map synthesis (issue #404)"
+    },
+    {
+      "title": "GitHub - fernandotonon/QtMeshEditor: Free 3D asset tool for indie game ...",
+      "url": "https://github.com/fernandotonon/QtMeshEditor?tab=readme-ov-file",
+      "snippet": "A free, open-source 3D asset tool for indie game developers — merge animations from multiple files, convert between 40+ formats, edit materials with AI, and more. Star if you like it!"
+    },
+    {
+      "title": "TRELLIS.2: Native and Compact Structured Latents for 3D Generation",
+      "url": "https://microsoft.github.io/TRELLIS.2/",
+      "snippet": "Our 4B-parameter model generates high-resolution fully textured assets with exceptional fidelity and efficiency with vanilla DiTs. * Total generation time (shape + material). ** Tested with NVIDIA H100 GPU. At the core is the native and compact structured latents, which push the frontiers of fidelity and compactness at the same time."
+    }
+  ]
+}

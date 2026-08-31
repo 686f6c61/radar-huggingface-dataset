@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ds-hub-sochi/easy_sign-s3d-slovo",
+  "slug": "ds-hub-sochi-easy_sign-s3d-slovo",
+  "author": "ds-hub-sochi",
+  "url": "https://huggingface.co/ds-hub-sochi/easy_sign-s3d-slovo",
+  "created_at": "2026-08-31T16:21:03.000Z",
+  "updated_at": "2026-08-31T16:21:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "video-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "sign-language",
+    "russian-sign-language",
+    "s3d",
+    "slovo",
+    "rsl",
+    "video-classification",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "easy_sign/S3D.onnx at main · ai-forever/easy_sign · GitHub",
+      "url": "https://github.com/ai-forever/easy_sign/blob/main/S3D.onnx",
+      "snippet": "Easy_sign is an open source russian sign language recognition project that uses small CPU model for predictions and is designed for easy deployment via Streamlit. - easy_sign/S3D.onnx at main · ai-forever/easy_sign"
+    },
+    {
+      "title": "easy_sign/README_en.md at main · ai-forever/easy_sign · GitHub",
+      "url": "https://github.com/ai-forever/easy_sign/blob/main/README_en.md",
+      "snippet": "About the project Easy_sign uses a machine learning model to recognize Russian sign language gestures. The model was trained on ~180,000 examples of Russian sign language gestures. Approximately 20,000 of which are taken from the Slovo dataset."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "EasySteam Sochi - Model - 3D Warehouse",
+      "url": "https://3dwarehouse.sketchup.com/model/3dde2ab5-83f2-4941-9808-2f176772c153/EasySteam-Sochi",
+      "snippet": "EasySteam Sochi Interior Products Accessories EasySteam Sochi Отличная печь для русской бани View In AR"
+    },
+    {
+      "title": "Sketchfab",
+      "url": "https://sketchfab.com/search",
+      "snippet": "Use Sketchfab to publish, share and embed interactive 3D files. Discover and download thousands of 3D models from games, cultural heritage, architecture, design and more."
+    }
+  ]
+}

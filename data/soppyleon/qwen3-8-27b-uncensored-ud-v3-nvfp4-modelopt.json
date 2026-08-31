@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "soppyleon/Qwen3.8-27B-Uncensored-UD-V3-NVFP4-modelopt",
+  "slug": "soppyleon-qwen3-8-27b-uncensored-ud-v3-nvfp4-modelopt",
+  "author": "soppyleon",
+  "url": "https://huggingface.co/soppyleon/Qwen3.8-27B-Uncensored-UD-V3-NVFP4-modelopt",
+  "created_at": "2026-08-31T17:45:18.000Z",
+  "updated_at": "2026-08-31T17:47:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.8",
+    "nvfp4",
+    "fp8",
+    "mixed-precision",
+    "modelopt",
+    "tensorrt",
+    "vllm",
+    "uncensored",
+    "abliterated",
+    "mtp",
+    "vision",
+    "conversational",
+    "base_model:JonathanColetti/Qwen3.8-27B-Uncensored",
+    "base_model:quantized:JonathanColetti/Qwen3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19869895920,
+  "parameters_human": "19.87B",
+  "storage_bytes": 23433774192,
+  "storage_human": "23.4 GB",
+  "base_model": "JonathanColetti/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "soppyleon/Qwen3.8-27B-Uncensored-UD-V3-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/soppyleon/Qwen3.8-27B-Uncensored-UD-V3-NVFP4",
+      "snippet": "Instructions to use soppyleon/Qwen3.8-27B-Uncensored-UD-V3-NVFP4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-UD-V3-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/soppyleon/Qwen3.8-27B-Uncensored-UD-V3-NVFP4/blob/main/model-00001-of-00002.safetensors",
+      "snippet": "Instructions to use soppyleon/Qwen3.8-27B-Uncensored-UD-V3-NVFP4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-UD-V3-NVFP4 - FriendliAI",
+      "url": "https://friendli.ai/models/soppyleon/Qwen3.8-27B-Uncensored-UD-V3-NVFP4",
+      "snippet": "Apache 2.0, inherited from Qwen3.8-27B via the parent. Credit for the abliteration goes to JonathanColetti; credit for the Dynamic V3 NVFP4 recipe design goes to Unsloth."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/qwen/qwen3.8-27b-uncensored",
+      "snippet": "Qwen 3.8 27B Uncensored is an NVFP4 open-weight multimodal model LoRA-tuned for fewer refusals across chat, coding, reasoning, tool use, and long-context work."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    }
+  ]
+}

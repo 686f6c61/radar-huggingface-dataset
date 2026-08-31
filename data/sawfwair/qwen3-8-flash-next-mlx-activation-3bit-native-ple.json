@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Sawfwair/Qwen3.8-Flash-Next-MLX-Activation-3bit-Native-PLE",
+  "slug": "sawfwair-qwen3-8-flash-next-mlx-activation-3bit-native-ple",
+  "author": "Sawfwair",
+  "url": "https://huggingface.co/Sawfwair/Qwen3.8-Flash-Next-MLX-Activation-3bit-Native-PLE",
+  "created_at": "2026-08-31T15:47:05.000Z",
+  "updated_at": "2026-08-31T15:52:49.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "quantized",
+    "qwen4-exp",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26121412179,
+  "parameters_human": "26.12B",
+  "storage_bytes": 89655672626,
+  "storage_human": "89.7 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sawfwair/Qwen3.8-Flash-Next-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/Sawfwair/Qwen3.8-Flash-Next-MLX-4bit",
+      "snippet": "Instructions to use Sawfwair/Qwen3.8-Flash-Next-MLX-4bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use Sawfwair/Qwen3.8-Flash-Next-MLX-4bit with MLX:"
+    },
+    {
+      "title": "Sawfwair/Qwen3.8-Flash-Next-MLX-4bit at main - Hugging Face",
+      "url": "https://huggingface.co/Sawfwair/Qwen3.8-Flash-Next-MLX-4bit/tree/main",
+      "snippet": "Sawfwair / Qwen3.8-Flash-Next-MLX-4bit like 0 Follow Sawfwair Inc. 4 Image-Text-to-Text MLX Safetensors qwen4_exp quantized qwen4-exp conversational 4-bit precision License:qwen-community-1. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8 Flash Next MLX Mixed 2bit by Sawfwair - LLM Explorer",
+      "url": "https://llm-explorer.com/model/Sawfwair%2FQwen3.8-Flash-Next-MLX-Mixed-2bit,2HI4EEDzyzguAVRyWB6kU9",
+      "snippet": "Qwen3.8 Flash Next MLX Mixed 2bit is an open-source 21.8b LLM by Sawfwair. VRAM 36GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/qwen3_8_flash_next",
+      "snippet": "Qwen3.8-Flash-Next is an experimental open-weight multimodal large language model released by Alibaba Group&#x27;s Qwen team on August 26, 2026."
+    }
+  ]
+}

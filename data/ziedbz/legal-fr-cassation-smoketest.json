@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ZiedBz/legal-fr-cassation-smoketest",
+  "slug": "ziedbz-legal-fr-cassation-smoketest",
+  "author": "ZiedBz",
+  "url": "https://huggingface.co/ZiedBz/legal-fr-cassation-smoketest",
+  "created_at": "2026-08-31T12:34:52.000Z",
+  "updated_at": "2026-08-31T12:35:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77555647,
+  "storage_human": "78 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cour de cassation and Artificial Intelligence: Preparing the Court of ...",
+      "url": "https://www.courdecassation.fr/en/toutes-les-actualites/2025/09/16/cour-de-cassation-and-artificial-intelligence-preparing-court",
+      "snippet": "The Cour de cassation draws on its experience in AI to contribute to the general debate within the justice system and to advocate a methodological, ethical and pragmatic approach to its use. The Cour de cassation is a driving force in innovation in the justice system and the use of artificial intelligence (AI)."
+    },
+    {
+      "title": "View PDF - Cour de cassation",
+      "url": "https://www.courdecassation.fr/en/print/pdf/node/140939",
+      "snippet": "The Cour de cassation draws on its experience in AI to contribute to the general debate within the justice system and to advocate a methodological, ethical and pragmatic approach to its use. The Cour de cassation is a driving force in innovation in the justice system and the use of artificial intelligence (AI)."
+    },
+    {
+      "title": "New legal tech tools aim to help lawyers avoid AI hallucinations",
+      "url": "https://thedailyrecord.com/2026/08/28/ai-hallucination-tech-tools/",
+      "snippet": "A new corner of the legal technology industry has emerged — companies building tools designed to catch AI hallucinations before they reach a judge."
+    },
+    {
+      "title": "AI&#x27;s Frontier Is Moving. Its Legal Definition Should Too",
+      "url": "https://datainnovation.org/2026/08/ais-frontier-is-moving-its-legal-definition-should-too/",
+      "snippet": "Policymakers are increasingly concerned about \"frontier models,\" a term meant to identify a small group of highly-capable general-purpose models that could pose unusually serious risks, such as mass casualties or billion-dollar damage. Lawmakers are seeking to define the category so they can impose additional safety requirements on these models. But drawing that line is not..."
+    },
+    {
+      "title": "Why Large Language Models Hallucinate Legal Cases - Explained",
+      "url": "https://www.briefcatch.com/blog/why-large-language-models-hallucinate-legal-cases",
+      "snippet": "Our AI features are completely optional and user-controlled, with AI defaulted to OFF, so firms can choose how and when to bring AI into their workflows. Elevating Legal Writing With Responsible AI Understanding why large language models hallucinate legal cases is the first step toward using AI responsibly in legal practice."
+    }
+  ]
+}

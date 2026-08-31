@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "NostraEmpire/mirror-mamba2-2.7b",
+  "slug": "nostraempire-mirror-mamba2-2-7b",
+  "author": "NostraEmpire",
+  "url": "https://huggingface.co/NostraEmpire/mirror-mamba2-2.7b",
+  "created_at": "2026-08-31T13:35:38.000Z",
+  "updated_at": "2026-08-31T13:39:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5405424282,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "state-spaces/mamba2-2.7b · Hugging Face",
+      "url": "https://huggingface.co/state-spaces/mamba2-2.7b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mamba 2 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.50.0/en/model_doc/mamba2",
+      "snippet": "The Mamba2 model was proposed in Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality by Tri Dao and Albert Gu. It is a State Space Model similar to Mamba 1, with better performances in a simplified architecture. The abstract from the paper is the following: While Transformers have been the main architecture behind deep learning&#x27;s success ..."
+    },
+    {
+      "title": "Mamba2 2.7B by state-spaces — VRAM 5.4GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/state-spaces%2Fmamba2-2.7b,4OCJkGv5a2ooMITXc12hMX",
+      "snippet": "Mamba2 2.7B is an open-source 2.7b LLM by state-spaces. VRAM 5.4GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "state-spaces/mamba2-2.7b | Endor Labs",
+      "url": "https://www.endorlabs.com/ai-model/state-spaces-mamba2-2-7b",
+      "snippet": "state-spaces/mamba2-2.7b AI model with 11481 downloads"
+    },
+    {
+      "title": "mamba2-2.7b huggingface.co api & state-spaces mamba2-2.7b github AI ...",
+      "url": "https://www.toolify.ai/ai-model/state-spaces-mamba2-2-7b",
+      "snippet": "mamba2-2.7b install mamba2-2.7b is an open source model from GitHub that offers a free installation service, and any user can find mamba2-2.7b on GitHub to install. At the same time, huggingface.co provides the effect of mamba2-2.7b install, users can directly use mamba2-2.7b installed effect in huggingface.co for debugging and trial. It also supports api for free installation."
+    }
+  ]
+}

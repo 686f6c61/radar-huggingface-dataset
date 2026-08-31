@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "pinkskin/qwen3-4b-gdn-wsd-ladder",
+  "slug": "pinkskin-qwen3-4b-gdn-wsd-ladder",
+  "author": "pinkskin",
+  "url": "https://huggingface.co/pinkskin/qwen3-4b-gdn-wsd-ladder",
+  "created_at": "2026-08-11T21:54:31.000Z",
+  "updated_at": "2026-08-31T15:54:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 381947041297,
+  "storage_human": "381.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pinkskin/qwen3-4b-gdn-wsd-ladder · Hugging Face",
+      "url": "https://huggingface.co/pinkskin/qwen3-4b-gdn-wsd-ladder",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pinkskin (Anakin Skywalker) - Hugging Face",
+      "url": "https://huggingface.co/pinkskin",
+      "snippet": "Recent Activity updated a modelabout 5 hours ago pinkskin/qwen3-4b-gdn-wsd-ladder published a modelabout 5 hours ago pinkskin/qwen3-4b-gdn-wsd-ladder View all activity"
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3-4B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b",
+      "snippet": "Qwen3-4B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑4B is a state‑of‑the‑art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    }
+  ]
+}

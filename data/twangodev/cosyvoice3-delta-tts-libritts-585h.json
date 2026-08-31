@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "twangodev/cosyvoice3-delta-tts-libritts-585h",
+  "slug": "twangodev-cosyvoice3-delta-tts-libritts-585h",
+  "author": "twangodev",
+  "url": "https://huggingface.co/twangodev/cosyvoice3-delta-tts-libritts-585h",
+  "created_at": "2026-08-31T15:14:10.000Z",
+  "updated_at": "2026-08-31T15:15:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "speech-dllm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "speech-dllm",
+    "safetensors",
+    "audio",
+    "text-to-speech",
+    "cosyvoice",
+    "discrete-diffusion",
+    "delta-tts",
+    "arxiv:2607.04140",
+    "research",
+    "en",
+    "dataset:mythicinfinity/libritts",
+    "arxiv:2505.17589",
+    "arxiv:1904.02882",
+    "base_model:FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+    "base_model:adapter:FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 375266184,
+  "storage_human": "375 MB",
+  "base_model": "FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - wehos/CosyVoice-v3: Multi-lingual large voice generation model ...",
+      "url": "https://github.com/wehos/CosyVoice-v3",
+      "snippet": "Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability. - wehos/CosyVoice-v3"
+    },
+    {
+      "title": "GitHub - yaospacetim/CosyVoice-TTS: Multi-lingual large voice ...",
+      "url": "https://github.com/yaospacetim/CosyVoice-TTS",
+      "snippet": "Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability. - yaospacetim/CosyVoice-TTS"
+    },
+    {
+      "title": "CosyVoice | Multilingual TTS Model",
+      "url": "https://cosyvoice.org/",
+      "snippet": "Discover CosyVoice, a multilingual zero-shot TTS model, featuring natural pronunciation and high-quality speech synthesis with advanced features."
+    },
+    {
+      "title": "CosyVoice Homepage",
+      "url": "https://cosyvoice.github.io/",
+      "snippet": "Abstract: Recently, language model (LM) based text-to-speech (TTS) emerges into the mainstream due to their high naturalness and zero-shot capacity. In this paradigm, speech signals are discretized into token sequences, which are modeled by an LM with textual inputs and reconstructed by a token-based vocoder to waveforms. Current speech tokens are learned in an unsupervised manner and lacks ..."
+    },
+    {
+      "title": "model-scope/CosyVoice · Hugging Face",
+      "url": "https://huggingface.co/model-scope/CosyVoice",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lukasz-staniszewski/ace-step-cs-rock-genre-r16-tf6tf7",
+  "slug": "lukasz-staniszewski-ace-step-cs-rock-genre-r16-tf6tf7",
+  "author": "lukasz-staniszewski",
+  "url": "https://huggingface.co/lukasz-staniszewski/ace-step-cs-rock-genre-r16-tf6tf7",
+  "created_at": "2026-08-31T11:43:33.000Z",
+  "updated_at": "2026-08-31T11:43:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "music-generation",
+    "steering",
+    "lora",
+    "ace-step",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3938008,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ace-step-cs-rock-genre-r8-tf6tf7 - Hugging Face",
+      "url": "https://huggingface.co/lukasz-staniszewski/ace-step-cs-rock-genre-r8-tf6tf7",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lukasz-staniszewski/ace-step-rfm-rock-genre · Hugging Face",
+      "url": "https://huggingface.co/lukasz-staniszewski/ace-step-rfm-rock-genre",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lukasz-staniszewski / ace-step-caa-rock-genre",
+      "url": "https://insights-db.paloaltonetworks.com/models/lukasz-staniszewski/ace-step-caa-rock-genre/61166efb32f318873bd55c5b5d64e9e3620c5888/overview",
+      "snippet": "Discover potential threats in the lukasz-staniszewski / ace-step-caa-rock-genre model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "GitHub - luk-st/steer-audio: Code repository for paper \"Tuning Audio ...",
+      "url": "https://github.com/luk-st/steer-audio/tree/main/",
+      "snippet": "Pretrained artifacts live in the ACE-Step Audio Steering Suite. Every example below uses concept=\"piano\"; pass target_layers=\"tf6tf7\" (or any list of block names) to restrict to localized layers."
+    },
+    {
+      "title": "lukasz-staniszewski / ace-step-caa-rock-genre",
+      "url": "https://protectai.com/insights/models/lukasz-staniszewski/ace-step-caa-rock-genre/2b9913846c26e626a99af5cc812e7f2b8aa262be/overview",
+      "snippet": "Discover potential threats in the lukasz-staniszewski / ace-step-caa-rock-genre model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "schema": 1,
+  "id": "alina0195/bge-m3-ro-msmarco-v2",
+  "slug": "alina0195-bge-m3-ro-msmarco-v2",
+  "author": "alina0195",
+  "url": "https://huggingface.co/alina0195/bge-m3-ro-msmarco-v2",
+  "created_at": "2026-08-31T11:47:32.000Z",
+  "updated_at": "2026-08-31T11:48:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:402871",
+    "loss:CachedMultipleNegativesRankingLoss",
+    "dataset:alina0195/ro-msmarco-divided",
+    "arxiv:1908.10084",
+    "arxiv:2101.06983",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 567754752,
+  "parameters_human": "567.8M",
+  "storage_bytes": 2293216559,
+  "storage_human": "2.3 GB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "ro msmarco dev",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.654424040066778
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ro msmarco dev",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.9073455759599333
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ro msmarco dev",
+      "metric": "Cosine Precision@10",
+      "value": 0.09582637729549248
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ro msmarco dev",
+      "metric": "Cosine Precision@100",
+      "value": 0.010559265442404006
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ro msmarco dev",
+      "metric": "Cosine Recall@10",
+      "value": 0.9000417362270451
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ro msmarco dev",
+      "metric": "Cosine Recall@100",
+      "value": 0.9887312186978298
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ro msmarco dev",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.7739237799301878
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ro msmarco dev",
+      "metric": "Cosine Mrr@10",
+      "value": 0.7388223096695555
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ro msmarco dev",
+      "metric": "Cosine Map@100",
+      "value": 0.7357042436335947
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ro msmarco dev nodiac",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.6519198664440734
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ro msmarco dev nodiac",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.9081803005008348
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ro msmarco dev nodiac",
+      "metric": "Cosine Precision@10",
+      "value": 0.09599332220367279
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ro msmarco dev nodiac",
+      "metric": "Cosine Precision@100",
+      "value": 0.010542570951585976
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ro msmarco dev nodiac",
+      "metric": "Cosine Recall@10",
+      "value": 0.9012938230383973
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ro msmarco dev nodiac",
+      "metric": "Cosine Recall@100",
+      "value": 0.9870617696160268
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ro msmarco dev nodiac",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.7727052250247352
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ro msmarco dev nodiac",
+      "metric": "Cosine Mrr@10",
+      "value": 0.7368845562710346
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ro msmarco dev nodiac",
+      "metric": "Cosine Map@100",
+      "value": 0.7335925673615612
+    }
+  ],
+  "sources": [
+    {
+      "title": "alina0195/ro-msmarco · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/alina0195/ro-msmarco",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "alina0195 (Alina Gheorghe) - Hugging Face",
+      "url": "https://huggingface.co/alina0195",
+      "snippet": "User profile of Alina Gheorghe on Hugging Face"
+    },
+    {
+      "title": "Msmarco V2",
+      "url": "https://github.com/zhouyonglong/MSMARCOV2",
+      "snippet": "MSMARCO V2 MS MARCO (Microsoft Machine Reading Comprehension) is a large scale dataset focused on machine reading comprehension and question answering."
+    },
+    {
+      "title": "MSMARCO — BGE documentation",
+      "url": "https://bge-model.com/API/evaluation/msmarco.html",
+      "snippet": "MSMARCO # MS Marco (Microsoft MAchine Reading Comprehension) is a large scale real-world reading comprehension dataset. It is widely used in information retrieval, question answering, and natural language processing research. You can evaluate model&#x27;s performance on MS MARCO simply by running our provided shell script:"
+    },
+    {
+      "title": "MS MARCO - GitHub Pages",
+      "url": "https://microsoft.github.io/msmarco/",
+      "snippet": "Starting with a paper released at NIPS 2016, MS MARCO is a collection of datasets focused on deep learning in search. The first dataset was a question answering dataset featuring 100,000 real Bing questions and a human generated answer. Since then we released a 1,000,000 question dataset, a natural language generation dataset, a passage ranking dataset, keyphrase extraction dataset, crawling ..."
+    }
+  ]
+}

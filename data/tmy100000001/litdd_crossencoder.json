@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "tmy100000001/LitDD_crossencoder",
+  "slug": "tmy100000001-litdd_crossencoder",
+  "author": "tmy100000001",
+  "url": "https://huggingface.co/tmy100000001/LitDD_crossencoder",
+  "created_at": "2025-11-03T15:46:55.000Z",
+  "updated_at": "2026-08-31T13:03:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "cross-encoder",
+    "biomedical",
+    "gene-disease",
+    "Gene2Phenotype",
+    "LitDD",
+    "text-classification",
+    "en",
+    "base_model:ncbi/MedCPT-Cross-Encoder",
+    "base_model:finetune:ncbi/MedCPT-Cross-Encoder",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 109483009,
+  "parameters_human": "109.5M",
+  "storage_bytes": 875917241,
+  "storage_human": "876 MB",
+  "base_model": "ncbi/MedCPT-Cross-Encoder",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tmy100000001/LitDD_crossencoder · Hugging Face",
+      "url": "https://huggingface.co/tmy100000001/LitDD_crossencoder",
+      "snippet": "CrossEncoder based on ncbi/MedCPT-Cross-Encoder This is a Cross Encoder model finetuned from ncbi/MedCPT-Cross-Encoder using the sentence-transformers library. It computes scores for pairs of texts, which can be used for text reranking and semantic search. Model Details Model Description Model Type: Cross Encoder Base model: ncbi/MedCPT-Cross-Encoder Maximum Sequence Length: 512 tokens Number ..."
+    },
+    {
+      "title": "tmy100000001 (Michael Yates) - Hugging Face",
+      "url": "https://huggingface.co/tmy100000001",
+      "snippet": "User profile of Michael Yates on Hugging Face"
+    },
+    {
+      "title": "Cross-Encoders — Sentence Transformers documentation",
+      "url": "https://www.sbert.net/examples/cross_encoder/applications/README.html",
+      "snippet": "You pass to model.predict a list of sentence pairs. Note, Cross-Encoder do not work on individual sentence, you have to pass sentence pairs. As model name, you can pass any model or path that is compatible with Hugging Face AutoModel class. For a full example, to score a query with all possible sentences in a corpus see cross_encoder_usage.py. Combining Bi- and Cross-Encoders Cross-Encoder ..."
+    },
+    {
+      "title": "Domain-wide Mapping of Peer-reviewed Literature for Genetic ...",
+      "url": "https://www.medrxiv.org/content/10.1101/2025.11.24.25340871v1",
+      "snippet": "The natural language processing system combines a fine-tuned BERT classifier (LitDD BERT) to detect GDD-relevant abstracts, a fine-tuned cross-encoder (LitDD Crossencoder) to propose disease candidates, and a constrained large language model to adjudicate final mappings."
+    },
+    {
+      "title": "CrossEncoder Architecture | huggingface/sentence-transformers | DeepWiki",
+      "url": "https://deepwiki.com/huggingface/sentence-transformers/3.2-crossencoder-architecture",
+      "snippet": "This page documents the CrossEncoder architecture, a core model type in the Sentence Transformers library designed for joint encoding of text pairs to produce similarity scores or classification labels."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "tatsu020/rs35kh-fa-onnx",
+  "slug": "tatsu020-rs35kh-fa-onnx",
+  "author": "tatsu020",
+  "url": "https://huggingface.co/tatsu020/rs35kh-fa-onnx",
+  "created_at": "2026-08-31T11:05:48.000Z",
+  "updated_at": "2026-08-31T11:40:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnxruntime",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "wav2vec2",
+    "ctc",
+    "forced-alignment",
+    "automatic-speech-recognition",
+    "ja",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 203351696,
+  "storage_human": "203 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tatsu020 (TATSUYUKI IKEDA) - Hugging Face",
+      "url": "https://huggingface.co/tatsu020",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 17 days ago ... published a model 17 days ago"
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "tatsu020 (TATSUYUKI IKEDA) - Hugging Face",
+      "url": "https://huggingface.co/tatsu020/models",
+      "snippet": "tatsu020&#x27;s models1 Sort: Recently updated tatsu020/mms-300m-fa-onnx Updated 30 days ago"
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    }
+  ]
+}

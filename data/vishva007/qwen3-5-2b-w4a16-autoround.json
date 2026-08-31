@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Vishva007/Qwen3.5-2B-W4A16-AutoRound",
+  "slug": "vishva007-qwen3-5-2b-w4a16-autoround",
+  "author": "Vishva007",
+  "url": "https://huggingface.co/Vishva007/Qwen3.5-2B-W4A16-AutoRound",
+  "created_at": "2026-08-27T07:19:26.000Z",
+  "updated_at": "2026-08-31T15:35:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "4-bit",
+    "auto-round",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 1061364544,
+  "parameters_human": "1.06B",
+  "storage_bytes": 2739747237,
+  "storage_human": "2.7 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vishva007 (Vishva R) - Hugging Face",
+      "url": "https://huggingface.co/Vishva007",
+      "snippet": "Deeply interested in Generative AI, particularly Large Language Models (LLMs). Focusing on model fine-tuning, prompt engineering, and practical applications using the Hugging Face ecosystem (Transf..."
+    },
+    {
+      "title": "Vishva007/Qwen3.8-2B-Distill-W4A16-AutoRound-GPTQ · Hugging Face",
+      "url": "https://huggingface.co/Vishva007/Qwen3.8-2B-Distill-W4A16-AutoRound-GPTQ",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen-3.5 Quantized Model Collection Released on Hugging Face",
+      "url": "https://www.linkedin.com/posts/vishva-r_ai-llm-multimodalai-activity-7435386115567775744-a3Ge",
+      "snippet": "🚀 Excited to share my Qwen-3.5 Quantized Model Collection on Hugging Face! I&#x27;ve released multiple W4A16 AutoRound quantized versions of Qwen-3.5 (0.8B & 9B) optimized for efficient image-text ..."
+    },
+    {
+      "title": "Qwen3.5 - LLM Compressor Docs",
+      "url": "https://docs.vllm.ai/projects/llm-compressor/en/latest/key-models/qwen3.5/",
+      "snippet": "Documentation for LLM Compressor, an easy-to-use library for compressing large language models for deployment with vLLM."
+    },
+    {
+      "title": "Qwen3.8-27B AutoRound W4A16 on 2x RTX 3090 - GitHub",
+      "url": "https://github.com/tonyd2wild/Qwen3.8-27B-AutoRound-W4A16-2x3090/tree/main/",
+      "snippet": "Production-oriented Docker deployment for Vishva007/Qwen3.8-27B-W4A16-AutoRound on two 24 GB RTX 3090 GPUs. The repository supports paired 3090s with NVLink and ordinary PCIe-only pairs. It exposes an OpenAI-compatible vLLM API with compiled CUDA graphs, MTP speculative decoding, vision, structured tool calling, and separated reasoning."
+    }
+  ]
+}

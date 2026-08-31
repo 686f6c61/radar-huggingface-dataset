@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "t8star/Bernini-V2-Comfy",
+  "slug": "t8star-bernini-v2-comfy",
+  "author": "t8star",
+  "url": "https://huggingface.co/t8star/Bernini-V2-Comfy",
+  "created_at": "2026-08-31T18:09:45.000Z",
+  "updated_at": "2026-08-31T18:29:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-video",
+  "library": "comfyui",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "comfyui",
+    "bernini",
+    "video-generation",
+    "video-editing",
+    "quantized",
+    "image-text-to-video",
+    "en",
+    "base_model:ByteDance/Bernini-Diffusers-v2",
+    "base_model:finetune:ByteDance/Bernini-Diffusers-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "ByteDance/Bernini-Diffusers-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "comfyui-bernini-v2-T8/README.md at main · T8mars/comfyui ... - GitHub",
+      "url": "https://github.com/T8mars/comfyui-bernini-v2-T8/blob/main/README.md",
+      "snippet": "ComfyUI Bernini v2 Native ComfyUI implementation of ByteDance/Bernini-Diffusers-v2. The official ByteDance implementation is the numerical oracle. It is not a runtime dependency of this project. The runtime target is ComfyUI&#x27;s own model loading, device management, conditioning, guider, scheduler and sampling APIs."
+    },
+    {
+      "title": "Bernini-Diffusers-v2: ByteDance Open-Sources Full Video Pipeline",
+      "url": "https://comfyui-wiki.com/en/news/2026-08-17-bernini-diffusers-v2",
+      "snippet": "ByteDance releases Bernini-Diffusers-v2: the full semantic-planning video generation and editing pipeline in diffusers format, with stronger reference-guided editing and OpenS2V."
+    },
+    {
+      "title": "t8star (T8star-Aix) - Hugging Face",
+      "url": "https://huggingface.co/t8star",
+      "snippet": "t8star (T8star-Aix) - Hugging Face ... Comfyui"
+    },
+    {
+      "title": "rzgar/Bernini-v2-ComfyUI at main - Hugging Face",
+      "url": "https://huggingface.co/rzgar/Bernini-v2-ComfyUI/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - T8mars/Comfyui-zhenzhen: https://ai.t8star.org/register?aff ...",
+      "url": "https://github.com/T8mars/Comfyui-zhenzhen",
+      "snippet": "新增 6 个贞贞的平价AI小屋（国内版）节点： zhenzhen-image-g-v2-lowprice：支持文生图和最多 16 张参考图的图生图。 zhenzhen-video-g-omni-flash-lowprice：支持文生视频、图生视频、视频编辑和任务续作。 zhenzhen-video-gk-v15-lowprice：支持文生视频和最多 7 张参考图的视频生成。"
+    }
+  ]
+}

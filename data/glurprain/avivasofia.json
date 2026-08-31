@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "GlurpRain/AvivaSofia",
+  "slug": "glurprain-avivasofia",
+  "author": "GlurpRain",
+  "url": "https://huggingface.co/GlurpRain/AvivaSofia",
+  "created_at": "2026-08-31T15:17:14.000Z",
+  "updated_at": "2026-08-31T15:17:26.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 241288639,
+  "storage_human": "241 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GlurpRain (Glurp Rain) - Hugging Face",
+      "url": "https://huggingface.co/GlurpRain",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 16 days ago ... updated a dataset 16 days ago ... published a dataset 16 days ago"
+    },
+    {
+      "title": "avivasofia | Discover AI Characters & Roleplay on Emochi",
+      "url": "https://emochi.com/topics/avivasofia",
+      "snippet": "Find Avivasofia On Emochi Looking for a character named Avivasofia? Emochi hosts original AI chat personas that capture the spirit of friendly companions and creative storytellers. These characters are designed for engaging, supportive, and imaginative conversations. Each Avivasofia character is a unique creation by Emochi or its community. You can chat with supportive friends, creative ..."
+    },
+    {
+      "title": "AvivaSofia Official: TikTok, Instagram, Twitch, Twitter | Linktree",
+      "url": "https://linktr.ee/avivasofia",
+      "snippet": "Linktree. Make your link do more. Instagram restrict vs block, what&#x27;s the difference (2026) Does Instagram notify when you screenshot a Story? How to share your Facebook page link in 5 easy steps Every Snapchat emoji meaning explained (2026 guide) How to Make a Linktree for Real Estate Agents: Step-by-Step Guide Fresh new features alert: QR codes, link icons, Zapier and more! Automate ..."
+    },
+    {
+      "title": "AvivaSofia (@oxythoughtin) • Instagram photos and videos",
+      "url": "https://www.instagram.com/oxythoughtin/",
+      "snippet": "326K Followers, 326 Following, 55 Posts - AvivaSofia (@oxythoughtin) on Instagram: \"\""
+    },
+    {
+      "title": "Image posted by GlurpRain - civitai.com",
+      "url": "https://civitai.com/images/128848177",
+      "snippet": "0 1 2345678901 2 34567890123456 7 89 0 1 23456789 0 123456789 GL GlurpRain Uploaded 15 hours ago Follow PG"
+    }
+  ]
+}

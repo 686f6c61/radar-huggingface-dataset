@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lukasz-staniszewski/ace-step-cs-vocal-style-r16-all",
+  "slug": "lukasz-staniszewski-ace-step-cs-vocal-style-r16-all",
+  "author": "lukasz-staniszewski",
+  "url": "https://huggingface.co/lukasz-staniszewski/ace-step-cs-vocal-style-r16-all",
+  "created_at": "2026-08-31T11:42:31.000Z",
+  "updated_at": "2026-08-31T11:42:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "music-generation",
+    "steering",
+    "lora",
+    "ace-step",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47257256,
+  "storage_human": "47 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lukasz-staniszewski/ace-step-cs-vocal-gender-r8-all · Hugging Face",
+      "url": "https://huggingface.co/lukasz-staniszewski/ace-step-cs-vocal-gender-r8-all",
+      "snippet": "Instructions to use lukasz-staniszewski/ace-step-cs-vocal-gender-r8-all with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "lukasz-staniszewski/ace-step-cs-vocal-gender-r8-tf6tf7 · Hugging Face",
+      "url": "https://huggingface.co/lukasz-staniszewski/ace-step-cs-vocal-gender-r8-tf6tf7",
+      "snippet": "Instructions to use lukasz-staniszewski/ace-step-cs-vocal-gender-r8-tf6tf7 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Ace Step Caa Vocal Style | Sweet Tea Studio",
+      "url": "https://sweettea.co/resources/lukasz-staniszewski-ace-step-caa-vocal-style-huggingface-model-lukasz-staniszewski-ace-step-caa-vocal-style",
+      "snippet": "Steering vectors for the vocal style concept on ACE-Step, computed via contrastive activation addition (CAA). Paper"
+    },
+    {
+      "title": "Ace Step Cs Vocal Gender R8 All | ST Studio - sweettea.co",
+      "url": "https://sweettea.co/de/resources/lukasz-staniszewski-ace-step-cs-vocal-gender-r8-all-huggingface-model-lukasz-staniszewski-ace-step-cs-vocal-gender-r8-al",
+      "snippet": "Quellenbeschreibung Concept Slider LoRA — vocal_gender (r8, layers=all) — ACE-Step LoRA adapter trained with the Concept Sliders loss for steering ACE-Step audio generation toward the vocal_gender concept. alpha modulates the active LoRA weight; set_alpha swaps weights without reloading."
+    },
+    {
+      "title": "GitHub - ace-step/ACE-Step-1.5: The most powerful local music ...",
+      "url": "https://github.com/ace-step/ACE-Step-1.5",
+      "snippet": "The most powerful local music generation model that outperforms almost all commercial alternatives, supporting Mac, AMD, Intel, and CUDA devices. - ace-step/ACE-Step-1.5"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "lhahle/ttt-dual-consol-clg-phnorm-340M-step9216",
+  "slug": "lhahle-ttt-dual-consol-clg-phnorm-340m-step9216",
+  "author": "lhahle",
+  "url": "https://huggingface.co/lhahle/ttt-dual-consol-clg-phnorm-340M-step9216",
+  "created_at": "2026-08-31T17:59:53.000Z",
+  "updated_at": "2026-08-31T18:00:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "ttt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 372507248,
+  "parameters_human": "372.5M",
+  "storage_bytes": 1490084880,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lehle Little Dual II - allinstrumentstore.com",
+      "url": "https://www.allinstrumentstore.com/products/lehle-little-dual-ii/",
+      "snippet": "The LEHLE LITTLE DUAL II is the successor to the Lehle Little Dual and is a maximum signal-fidelity amp switcher for two amps. By using the soft-touch switches you can switch between two connected amplifiers hum-free and without sound loss.Two different operating modes are ready for you."
+    },
+    {
+      "title": "PDF LH LED Recessed Trofier - hubbellcdn",
+      "url": "https://hubbellcdn.com/specsheet/lhel.pdf",
+      "snippet": "(wattage may vary up to 5% from published) *2x2 only **excludes 2x4 ***excludes 2x2 ****2x4 only"
+    },
+    {
+      "title": "mudmini009/DualPath-Core-TTRPG-engine - GitHub",
+      "url": "https://github.com/mudmini009/DualPath-Core-TTRPG-engine/tree/master",
+      "snippet": "GitHub - mudmini009/DualPath-Core-TTRPG-engine: Multi-agent TTRPG engine using Two-Path Architecture to solve AI hallucinations. Combines a deterministic Python Rules Engine with LLM-based creative judgment."
+    },
+    {
+      "title": "Learning to (Learn at Test Time): RNNs with Expressive Hidden States",
+      "url": "https://arxiv.org/html/2407.04620v1",
+      "snippet": "The key idea is to make the hidden state a machine learning model itself, and the update rule a step of self-supervised learning. Since the hidden state is updated by training even on test sequences, our layers are called Test-Time Training (TTT) layers."
+    },
+    {
+      "title": "GitHub - modelhub-ai/modelhub: A collection of deep learning models ...",
+      "url": "https://github.com/modelhub-ai/modelhub",
+      "snippet": "We are building a collection of deep learning models. Check it out here. Crowdsourced through contributions by the scientific research community, Modelhub is a repository of deep learning models pretrained for a wide variety of applications. Modelhub highlights recent trends in deep learning applications, enables transfer learning approaches and promotes reproducible science. This repository ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-action-only-stage1-full-epoch3",
+  "slug": "safd-00-qwen2-5-vl-3b-ac-exp08-world-model-action-only-stage1-full-epoch3",
+  "author": "SaFD-00",
+  "url": "https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-action-only-stage1-full-epoch3",
+  "created_at": "2026-08-31T17:11:19.000Z",
+  "updated_at": "2026-08-31T17:12:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-3B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3754622976,
+  "parameters_human": "3.75B",
+  "storage_bytes": 7520759840,
+  "storage_human": "7.5 GB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch3",
+      "url": "https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch1",
+      "url": "https://friendli.ai/models/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch1",
+      "snippet": "Deploy qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch1 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch3",
+      "url": "https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch3/discussions",
+      "snippet": "Instructions to use SaFD-00/qwen2.5-vl-3b-ac-exp08-world-model-stage1-full-epoch3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "Qwen2.5 VL! Qwen2.5 VL! Qwen2.5 VL!",
+      "url": "https://qwen.ai/blog?id=qwen2.5-vl",
+      "snippet": "We release Qwen2.5-VL, the new flagship vision-language model of Qwen and also a significant leap from the previous Qwen2-VL. To try the latest model, feel free to visit Qwen Chat and choose Qwen2.5-VL-72B-Instruct. Also, we open both base and instruct models in 3 sizes, including 3B, 7B, and 72B, in both Hugging Face and ModelScope."
+    }
+  ]
+}

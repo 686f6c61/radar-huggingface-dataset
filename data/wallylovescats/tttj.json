@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "WallyLovesCats/TTTJ",
+  "slug": "wallylovescats-tttj",
+  "author": "WallyLovesCats",
+  "url": "https://huggingface.co/WallyLovesCats/TTTJ",
+  "created_at": "2026-08-31T16:10:32.000Z",
+  "updated_at": "2026-08-31T16:10:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WallyLovesCats (Jiang Zong Zhe) - Hugging Face",
+      "url": "https://huggingface.co/WallyLovesCats",
+      "snippet": "User profile of Jiang Zong Zhe on Hugging Face"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 662+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "README.md · WallyLovesCats/NVILA-Lite-8B at main - Hugging Face",
+      "url": "https://huggingface.co/WallyLovesCats/NVILA-Lite-8B/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Your AI Art Playground - Luna Models",
+      "url": "https://www.lunamodels.art/",
+      "snippet": "Welcome to Luna Models Your creative playground for adorable AI art. Generate stunning images, discover inspiration, and find unique assets to bring your imagination to life!"
+    },
+    {
+      "title": "Turn Image to 3D Model Free - No Sign-Up Required | AI3DGen",
+      "url": "https://www.ai3dgen.com/image-to-3d-model-free",
+      "snippet": "What is the Free Image to 3D Model Generator? The Free Image to 3D Model Generator is our introductory tool, designed to let users instantly test the core functionality of our AI engine. It quickly converts any 2D image into a basic 3D mesh (OBJ format) at absolutely no cost."
+    }
+  ]
+}

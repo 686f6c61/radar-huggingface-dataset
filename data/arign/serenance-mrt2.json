@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "arign/serenance-mrt2",
+  "slug": "arign-serenance-mrt2",
+  "author": "arign",
+  "url": "https://huggingface.co/arign/serenance-mrt2",
+  "created_at": "2026-08-31T17:12:19.000Z",
+  "updated_at": "2026-08-31T17:13:18.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "tflite",
+    "music-generation",
+    "magenta",
+    "magenta-realtime",
+    "apple-silicon",
+    "on-device",
+    "base_model:google/magenta-realtime-2",
+    "base_model:finetune:google/magenta-realtime-2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4628427606,
+  "storage_human": "4.6 GB",
+  "base_model": "google/magenta-realtime-2",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Magenta RealTime 2 (Apps & Plugins)",
+      "url": "https://magenta.withgoogle.com/mrt2",
+      "snippet": "Magenta RealTime 2 (MRT2) is a live music model that you can play like an instrument and run on a MacBook (Apple Silicon). Alongside the open-weights model, we are releasing a collection of playable instruments and experiences built with MRT2. Experiment with cloning sounds, blending genres, and creating live accompaniment with this low-latency music model. Table of Contents Apps + Plugins ..."
+    },
+    {
+      "title": "Magenta RealTime 2: Open & Local Live Music Models",
+      "url": "https://magenta.withgoogle.com/magenta-realtime-2",
+      "snippet": "We&#x27;re excited to share Magenta RealTime 2 (MRT2), a state-of-the-art open model and efficient real-time inference engine that enables you to build and play AI musical instruments on your laptop! To get started, download the apps on your MacBook (requires Apple Silicon)."
+    },
+    {
+      "title": "magenta-rt · PyPI",
+      "url": "https://pypi.org/project/magenta-rt/",
+      "snippet": "Magenta RealTime 2 (MRT2) is a state-of-the-art open-weights model for real-time music generation. It contains several key components An open-weights model A Python library magenta-rt for inference with JAX and MLX backends A C++ inference engine magentart::core for efficient streaming audio generation on Apple Silicon MacBooks"
+    },
+    {
+      "title": "Magenta RealTime 2: Open Local Live Music Model With MIDI and 200ms ...",
+      "url": "https://mer.vin/2026/06/magenta-realtime-2-open-local-live-music-model-with-midi-and-200ms-latency/",
+      "snippet": "Magenta RealTime 2 (MRT2) is an open-weights live music model from Google DeepMind&#x27;s Magenta team: ~ 200 ms end-to-end control latency, MIDI + audio + text steering, and native streaming on Apple Silicon MacBooks via a C++ MLX engine and DAW plugin."
+    },
+    {
+      "title": "Models — Magenta RealTime",
+      "url": "https://magenta.github.io/magenta-realtime/models.html",
+      "snippet": "Models # Magenta RealTime 2 comprises three components: MusicCoCa: a text / audio style embedding model SpectroStream: a codec model for audio encoding and decoding Depthformer: a transformer-based model that generates SpectroStream tokens Hardware requirements # MRT2 offers two model sizes: mrt2_small (230M parameters) — runs real-time on any Apple Silicon Mac, including Air models. mrt2 ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen-0.6b-nepali-instruct-GGUF",
+  "slug": "mradermacher-qwen-0-6b-nepali-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen-0.6b-nepali-instruct-GGUF",
+  "created_at": "2026-08-31T13:11:58.000Z",
+  "updated_at": "2026-08-31T13:31:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "en",
+    "base_model:praful1/Qwen-0.6b-nepali-instruct",
+    "base_model:quantized:praful1/Qwen-0.6b-nepali-instruct",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 5697914880,
+  "storage_human": "5.7 GB",
+  "base_model": "praful1/Qwen-0.6b-nepali-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Qwen3-0.6B-heretic-abliterated-uncensored-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3-0.6B-heretic-abliterated-uncensored-GGUF",
+      "snippet": "Qwen3-.6B-heretic-abliterated-uncensored-GGUF ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen-0.6b-nepali-instruct API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/praful1/Qwen-0.6b-nepali-instruct",
+      "snippet": "Deploy Qwen-.6b-nepali-instruct with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "📚 Related: VRAM Requirements for Local LLMs · Qwen Models Guide · Mistral & Mixtral Guide · Best LLMs for Writing Ask a standard instruct model to write a scene where a character dies on-page and you&#x27;ll get a polite refusal. Ask it to walk through the chemistry of explosives for a novel and it&#x27;ll lecture you about safety."
+    },
+    {
+      "title": "GitHub - huchukato/ComfyUI-QwenVL-Mod: ComfyUI-QwenVL custom node ...",
+      "url": "https://github.com/huchukato/ComfyUI-QwenVL-Mod",
+      "snippet": "The ComfyUI-QwenVL custom node integrates powerful Qwen-VL series of vision-language models (LVLMs) from Alibaba Cloud, including latest Qwen3-VL, plus GGUF backends and text-only Qwen3 support. This advanced node enables seamless multimodal AI capabilities within your ComfyUI workflows, allowing for efficient text generation, image understanding, and video analysis."
+    }
+  ]
+}

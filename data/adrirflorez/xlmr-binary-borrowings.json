@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "adrirflorez/xlmr-binary-borrowings",
+  "slug": "adrirflorez-xlmr-binary-borrowings",
+  "author": "adrirflorez",
+  "url": "https://huggingface.co/adrirflorez/xlmr-binary-borrowings",
+  "created_at": "2026-08-31T17:19:55.000Z",
+  "updated_at": "2026-08-31T17:20:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277454594,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1126940502,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arodriguezf/xlmr-binary-borrowings · Hugging Face",
+      "url": "https://huggingface.co/arodriguezf/xlmr-binary-borrowings",
+      "snippet": "arodriguezf / xlmr-binary-borrowings like 0 Token Classification Transformers Safetensors xlm-roberta arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Use this model Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and ..."
+    },
+    {
+      "title": "arodriguezf (Rodríguez Flórez) - Hugging Face",
+      "url": "https://huggingface.co/arodriguezf/models",
+      "snippet": "arodriguezf/xlmr-binary-borrowings Token Classification • 0.3B•Updated about 6 hours ago"
+    },
+    {
+      "title": "Adriana R. Flórez adrirflorez - GitHub",
+      "url": "https://github.com/adrirflorez/",
+      "snippet": "Erasmus Mundus Master&#x27;s student in LCT at ÚFAL in MFF UK (Prague, Czechia). Bachelor&#x27;s in SoftEng and CS at Uniovi and Virginia Tech. - adrirflorez"
+    },
+    {
+      "title": "fairseq/examples/xlmr/README.md at main - GitHub",
+      "url": "https://github.com/facebookresearch/fairseq/blob/main/examples/xlmr/README.md",
+      "snippet": "Facebook AI Research Sequence-to-Sequence Toolkit written in Python. - facebookresearch/fairseq"
+    },
+    {
+      "title": "Unsupervised Cross-lingual Representation Learning at Scale",
+      "url": "https://arxiv.org/abs/1911.02116",
+      "snippet": "This paper shows that pretraining multilingual language models at scale leads to significant performance gains for a wide range of cross-lingual transfer tasks. We train a Transformer-based masked language model on one hundred languages, using more than two terabytes of filtered CommonCrawl data. Our model, dubbed XLM-R, significantly outperforms multilingual BERT (mBERT) on a variety of cross ..."
+    }
+  ]
+}

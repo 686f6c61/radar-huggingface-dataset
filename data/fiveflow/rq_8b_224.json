@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "fiveflow/rq_8b_224",
+  "slug": "fiveflow-rq_8b_224",
+  "author": "fiveflow",
+  "url": "https://huggingface.co/fiveflow/rq_8b_224",
+  "created_at": "2026-08-31T11:23:16.000Z",
+  "updated_at": "2026-08-31T11:27:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939858,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fiveflow/rq_8b_128 · Hugging Face",
+      "url": "https://huggingface.co/fiveflow/rq_8b_128",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fiveflow (yonghoon) - Hugging Face",
+      "url": "https://huggingface.co/fiveflow",
+      "snippet": "fiveflow/flan-t5-base-gsm8k Text2Text Generation • Updated Aug 24 Expand 19 model s"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Fiveflow AI Model Benchmarks | BenchmarkList",
+      "url": "https://benchmarklist.com/providers/fiveflow/",
+      "snippet": "Fiveflow AI model benchmark profile: 2 models, 1 covered benchmarks on BenchmarkList."
+    },
+    {
+      "title": "ModelBeacon - AI Model Browser & Comparison",
+      "url": "https://modelbeacon.com/",
+      "snippet": "Independent, lightning-fast AI model browser and comparison portal. Compare pricing, capabilities, and features across all major AI providers."
+    }
+  ]
+}

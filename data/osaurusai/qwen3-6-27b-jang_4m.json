@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "OsaurusAI/Qwen3.6-27B-JANG_4M",
+  "slug": "osaurusai-qwen3-6-27b-jang_4m",
+  "author": "OsaurusAI",
+  "url": "https://huggingface.co/OsaurusAI/Qwen3.6-27B-JANG_4M",
+  "created_at": "2026-04-22T22:55:09.000Z",
+  "updated_at": "2026-08-31T13:33:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "quantized",
+    "apple-silicon",
+    "qwen3",
+    "dense",
+    "vision",
+    "hybrid-attention",
+    "gated-deltanet",
+    "jang",
+    "jang_4m",
+    "4bit",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 63,
+  "trending_score": 0,
+  "parameters": 5034102000,
+  "parameters_human": "5.03B",
+  "storage_bytes": 31450194273,
+  "storage_human": "31.5 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OsaurusAI/Qwen3.6-27B-JANG_4M · Hugging Face",
+      "url": "https://huggingface.co/OsaurusAI/Qwen3.6-27B-JANG_4M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OsaurusAI/Qwen3.6-27B-JANG_4M at main - Hugging Face",
+      "url": "https://huggingface.co/OsaurusAI/Qwen3.6-27B-JANG_4M/tree/main",
+      "snippet": "Instructions to use OsaurusAI/Qwen3.6-27B-JANG_4M with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries"
+    },
+    {
+      "title": "OsaurusAI--Qwen3.6-27B-JANG_4M on M5 Pro (20c) - omlx.ai",
+      "url": "https://omlx.ai/benchmarks/zo7ngnvp",
+      "snippet": "426.3 PP tok/s, 16.9 TG tok/s — OsaurusAI--Qwen3.6-27B-JANG_4M (unknown) on M5 Pro (20c) 48GB"
+    },
+    {
+      "title": "jjang-ai/mlxstudio: MLX Studio - Home of JANG_Q - GitHub",
+      "url": "https://github.com/jjang-ai/mlxstudio",
+      "snippet": "See osaurus.ai. MLX Studio is a full-featured macOS app that wraps the vMLX inference server — large language models, vision models, and image generation served via an OpenAI-compatible HTTP API on Apple Silicon. Built on Apple&#x27;s MLX framework for GPU-accelerated inference, self-hosted on the user&#x27;s machine."
+    },
+    {
+      "title": "Qwen3.6 27B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-6-27b/",
+      "snippet": "Qwen3.6 27B is a dense language model from Alibaba Cloud&#x27;s Qwen3.6 family. With 27 billion parameters, it delivers strong performance across complex reasoning, coding, and language understanding tasks."
+    }
+  ]
+}

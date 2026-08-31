@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Winlensky/latent-diffusion-f8-large-safetensors",
+  "slug": "winlensky-latent-diffusion-f8-large-safetensors",
+  "author": "Winlensky",
+  "url": "https://huggingface.co/Winlensky/latent-diffusion-f8-large-safetensors",
+  "created_at": "2026-08-31T12:41:00.000Z",
+  "updated_at": "2026-08-31T12:46:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-image",
+    "latent-diffusion",
+    "compvis",
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "latent-diffusion/README.md at main · CompVis/latent-diffusion",
+      "url": "https://github.com/CompVis/latent-diffusion/blob/main/README.md",
+      "snippet": "High-Resolution Image Synthesis with Latent Diffusion Models - latent-diffusion/README.md at main · CompVis/latent-diffusion"
+    },
+    {
+      "title": "Latent Diffusion Models - GitHub",
+      "url": "https://github.com/CompVis/latent-diffusion",
+      "snippet": "High-Resolution Image Synthesis with Latent Diffusion Models - CompVis/latent-diffusion"
+    },
+    {
+      "title": "README.md · model-hub/stable-video-diffusion-img2vid at refs/pr/1",
+      "url": "https://huggingface.co/model-hub/stable-video-diffusion-img2vid/blob/refs%2Fpr%2F1/README.md",
+      "snippet": "Model Details Model Description (SVD) Image-to-Video is a latent diffusion model trained to generate short video clips from an image conditioning. This model was trained to generate 14 frames at resolution 576x1024 given a context frame of the same size. We also finetune the widely used f8-decoder for temporal consistency."
+    },
+    {
+      "title": "txt2img-f8-large.ckpt · multimodalart/compvis-latent-diffusion-text2img ...",
+      "url": "https://huggingface.co/multimodalart/compvis-latent-diffusion-text2img-large/blob/main/txt2img-f8-large.ckpt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Safetensors - PyTorch",
+      "url": "https://pytorch.org/projects/safetensors/",
+      "snippet": "Safetensors Safetensors is a secure, fast file format for storing machine learning model weights, designed by Hugging Face to replace the unsafe pickle format. It prevents arbitrary code execution during deserialization by only allowing numerical tensor data."
+    }
+  ]
+}

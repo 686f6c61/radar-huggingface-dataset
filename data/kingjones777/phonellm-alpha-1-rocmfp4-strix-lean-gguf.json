@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "kingjones777/PhoneLLM-Alpha-1-ROCmFP4-STRIX-LEAN-GGUF",
+  "slug": "kingjones777-phonellm-alpha-1-rocmfp4-strix-lean-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/PhoneLLM-Alpha-1-ROCmFP4-STRIX-LEAN-GGUF",
+  "created_at": "2026-08-31T15:38:53.000Z",
+  "updated_at": "2026-08-31T15:39:28.000Z",
+  "license": "bsd-2-clause",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-halo",
+    "gfx1151",
+    "vulkan",
+    "nemotron",
+    "mixture-of-experts",
+    "voice-agent",
+    "tool-use",
+    "function-calling",
+    "pipecat",
+    "text-generation",
+    "en",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "license:bsd-2-clause",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577940288,
+  "parameters_human": "31.58B",
+  "storage_bytes": 17078923328,
+  "storage_human": "17.1 GB",
+  "base_model": "pipecat-ai/phonellm-alpha-1, nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kingjones777 (Myron Jones) - Hugging Face",
+      "url": "https://huggingface.co/kingjones777/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago ... updated a model about 1 hour ago"
+    },
+    {
+      "title": "kingjones777/Apodex-1.1-mini-ROCmFP4-STRIX_LEAN-GGUF · Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Apodex-1.1-mini-ROCmFP4-STRIX_LEAN-GGUF",
+      "snippet": "Apodex-1.1-mini (STRIX_LEAN) — ROCmFP4 for AMD Strix Halo (gfx1151) I built this STRIX_LEAN quantization of apodex/Apodex-1.1-mini — a Qwen3.5-derived hybrid MoE (40 layers of linear attention with full attention every fourth layer, 256 routed experts / 8 active, 262K context) — on my Strix Halo box for the ROCmFPX runtime. This is my lean 4-bit tier for it — the one people normally want."
+    },
+    {
+      "title": "strix-halo-guide/ROCMFP4_CHADROCK.md at main - GitHub",
+      "url": "https://github.com/hogeheer499-commits/strix-halo-guide/blob/main/ROCMFP4_CHADROCK.md",
+      "snippet": "This page tracks the experimental ROCmFP4 / CHADROCK route for AMD Strix Halo / Ryzen AI MAX+ 395 systems. It is not the default setup path. New users should start with setup.sh, Ollama, and Vulkan/RADV as described in the README.md. ROCmFP4 is an advanced route for people who want to test tuned GGUFs, MTP/speculative decoding, ROCm/HIP behavior, NPU-aware stacks, and quality/speed tradeoffs."
+    },
+    {
+      "title": "GitHub - charlie12345/ROCmFPX: ROCmFPX Family for AMD Hardware and ...",
+      "url": "https://github.com/charlie12345/ROCmFPX",
+      "snippet": "Why ROCmFPX? AMD-first weight formats: ROCmFP2, ROCmFP3, ROCmFP4, ROCmFP6, and ROCmFP8 are real GGUF model-weight quants, not just K/V-cache compression. Native accelerated paths: HIP/ROCm and Vulkan kernels are backed by CPU reference implementations for correctness testing."
+    },
+    {
+      "title": "What i run with my Strix Halo - Machine Learning, LLMs, & AI ...",
+      "url": "https://forum.level1techs.com/t/what-i-run-with-my-strix-halo/254265",
+      "snippet": "For extra speed i installed the ROCmFPX llama.cpp fork and use quantization to the ROCmFP4 data type, a must have if you use Strix Halo. Here is my start command for Qwen 3.8 27b, i get 30 t/s decode:"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Rin247/Qwen3.6-27B-Uncensored-Aquarion-INT4",
+  "slug": "rin247-qwen3-6-27b-uncensored-aquarion-int4",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Qwen3.6-27B-Uncensored-Aquarion-INT4",
+  "created_at": "2026-08-31T12:22:30.000Z",
+  "updated_at": "2026-08-31T12:37:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "quantized",
+    "int4",
+    "uncensored",
+    "abliterated",
+    "conversational",
+    "endpoints_compatible",
+    "8-bit",
+    "int4_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14720720384,
+  "parameters_human": "14.72B",
+  "storage_bytes": 17666871647,
+  "storage_human": "17.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rin247/Qwen3.6-27B-Uncensored-Aquarion-FP8 · Hugging Face",
+      "url": "https://huggingface.co/Rin247/Qwen3.6-27B-Uncensored-Aquarion-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Wondernutts/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16-int4 ...",
+      "url": "https://huggingface.co/Wondernutts/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16-int4-ov/blob/main/README.md",
+      "snippet": "Qwen3.6-27B AEON Ultimate, OpenVINO INT4. The dense Qwen: richest prose, on ONE Intel Arc B70. This is AEON-7&#x27;s \"Ultimate Uncensored\" tune of the dense Qwen3.6-27B, converted to OpenVINO INT4 with Intel&#x27;s published recipe for this model (int4 asymmetric, group size 128). It completes my Qwen3.6 family: pick the 35B MoE siblings for speed (~108 tok/s), pick this dense 27B when you want every ..."
+    },
+    {
+      "title": "Qwen3.6-27B-AEON-Ultimate-Uncensored - GitHub",
+      "url": "https://github.com/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-DFlash/",
+      "snippet": "A fully uncensored, capability-enhanced abliteration of Qwen/Qwen3.6-27B, produced over 72 hours of continuous research drawing on hundreds of parallel AI research agents, the industry&#x27;s best published methodologies, custom in-house techniques, and yet-unreleased pre-public branches of next-generation abliteration software."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "Testing AI defenses requires adversarial content. You can&#x27;t pressure-test a refusal classifier with a model that itself refuses. Roleplay and interactive fiction. Tabletop RPG scenes, character-driven roleplay, interactive stories — standard models break character to insert safety disclaimers. Uncensored variants stay in character."
+    },
+    {
+      "title": "Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model",
+      "url": "https://qwen.ai/blog?id=qwen3.6-27b",
+      "snippet": "QWEN STUDIO HUGGING FACE MODELSCOPE DISCORD Following the launch of Qwen3.6-Plus and Qwen3.6-35B-A3B, we are excited to open-source Qwen3.6-27B — a dense 27-billion-parameter multimodal model at the scale the community has been asking for most. Still supporting both multimodal thinking and non-thinking modes, Qwen3.6-27B delivers flagship-level agentic coding performance, surpassing the ..."
+    }
+  ]
+}

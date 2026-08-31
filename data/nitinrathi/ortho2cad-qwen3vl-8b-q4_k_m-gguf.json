@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "nitinrathi/Ortho2CAD-Qwen3VL-8B-Q4_K_M-GGUF",
+  "slug": "nitinrathi-ortho2cad-qwen3vl-8b-q4_k_m-gguf",
+  "author": "nitinrathi",
+  "url": "https://huggingface.co/nitinrathi/Ortho2CAD-Qwen3VL-8B-Q4_K_M-GGUF",
+  "created_at": "2026-08-31T12:52:41.000Z",
+  "updated_at": "2026-08-31T12:53:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:nishl19/Ortho2CAD-Qwen3VL-8B",
+    "base_model:quantized:nishl19/Ortho2CAD-Qwen3VL-8B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 5027779552,
+  "storage_human": "5.0 GB",
+  "base_model": "nishl19/Ortho2CAD-Qwen3VL-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-VL-8B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3VL-8B-Instruct-Q4_K_M.gguf · Qwen/Qwen3-VL-8B-Instruct-GGUF at main",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct-GGUF/blob/main/Qwen3VL-8B-Instruct-Q4_K_M.gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ortho2CAD: 3D CAD generation from orthographic drawings using vision ...",
+      "url": "https://arxiv.org/html/2607.08891v2",
+      "snippet": "The Qwen3VL-8B-Instruct training on DeepCAD dataset takes 11 hours on 4 $4$ H100 GPUs. For the CAD-Coder baseline (which is supervised finetuning of the LLaVA model), we use their recommended settings, and the training on our DeepCAD-derived orthographic drawing dataset paired with GenCAD-Code CadQuery codes also takes 11 hours on 4 $4$ H100 GPUs."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Ortho2CAD: 3D CAD generation from orthographic drawings using vision ...",
+      "url": "https://arxiv.org/html/2607.08891",
+      "snippet": "To bridge this gap, we introduce Ortho2CAD, a vision-language model (VLM) specifically designed to translate rasterized orthographic drawings directly into editable CadQuery code, which can then be seamlessly converted into 3D CAD models."
+    }
+  ]
+}

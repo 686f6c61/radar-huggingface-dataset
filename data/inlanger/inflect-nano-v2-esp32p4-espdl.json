@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "inlanger/inflect-nano-v2-esp32p4-espdl",
+  "slug": "inlanger-inflect-nano-v2-esp32p4-espdl",
+  "author": "inlanger",
+  "url": "https://huggingface.co/inlanger/inflect-nano-v2-esp32p4-espdl",
+  "created_at": "2026-08-31T14:26:38.000Z",
+  "updated_at": "2026-08-31T14:30:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "esp-dl",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "esp-dl",
+    "esp32",
+    "esp32-p4",
+    "embedded",
+    "edge-ai",
+    "offline-tts",
+    "24khz",
+    "text-to-speech",
+    "en",
+    "base_model:owensong/Inflect-Nano-v2",
+    "base_model:quantized:owensong/Inflect-Nano-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9841462,
+  "storage_human": "10 MB",
+  "base_model": "owensong/Inflect-Nano-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "owensong/Inflect-Nano-v2 · Hugging Face",
+      "url": "https://huggingface.co/owensong/Inflect-Nano-v2",
+      "snippet": "Inflect-Nano-v2 Complete local text-to-waveform speech synthesis under 4M parameters. Fixed-voice English TTS with deterministic seeds, long-text handling, and CPU or CUDA inference. A note from Owen I built and funded Inflect v2 independently. If this release finds a real audience, I would like to continue the project with a broader v3, which might include things like more langauges, voices ..."
+    },
+    {
+      "title": "Inflect-Nano-v2 on ESP32: Near 2x Real-Time | Nahornyi AI LAB",
+      "url": "https://nahornyi.ai/en/news/inflect-nano-v2-squeezed-esp32",
+      "snippet": "Case study: Inflect-Nano-v2 TTS, a 3.97M parameter model at 24 kHz, was successfully squeezed onto ESP32 achieving nearly 2x real-time performance for edge TTS."
+    },
+    {
+      "title": "README.md · owensong/Inflect-Nano-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/owensong/Inflect-Nano-v2/blob/main/README.md",
+      "snippet": "The headline row always refers to Inflect-Nano-v2. Detailed competitor results and protocol boundaries are kept visible below. Comparison set. Results include KittenTTS Nano, Piper Low, and Supertonic 3, established compact or local TTS baselines with larger deployable weight footprints than both Inflect releases."
+    },
+    {
+      "title": "awesome-ai-voice/models/inflect-nano-v2.md at main - GitHub",
+      "url": "https://github.com/wildminder/awesome-ai-voice/blob/main/models/inflect-nano-v2.md",
+      "snippet": "The model ships with a public adaptation toolkit for preparing data, auditing train/validation splits, adapting a fixed voice or language, resuming training, evaluating checkpoints, and exporting PyTorch or ONNX packages. A sibling Inflect-Micro-v2 (9.36M parameters) prioritizes quality below 10M; Nano prioritizes footprint below 4M."
+    },
+    {
+      "title": "AI · Developer Portal",
+      "url": "https://developer.espressif.com/tags/ai/",
+      "snippet": "AI assistants are most effective on ESP32 Rust firmware when you supply clear specs, pinned crates, reference implementations (often ESP-IDF C), and a tight verify loop. The article discusses good practices, pitfalls, discipline, and entropy. A brief explanation about the device is also included, along with the repository and all artifacts."
+    }
+  ]
+}

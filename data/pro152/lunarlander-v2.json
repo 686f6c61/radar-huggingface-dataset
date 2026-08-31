@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Pro152/LunarLander-v2",
+  "slug": "pro152-lunarlander-v2",
+  "author": "Pro152",
+  "url": "https://huggingface.co/Pro152/LunarLander-v2",
+  "created_at": "2026-08-31T16:48:26.000Z",
+  "updated_at": "2026-08-31T16:54:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "lunarlander-v2",
+    "ppo",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-course",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43291,
+  "storage_human": "43291 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pro152/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/Pro152/ppo-LunarLander-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Pro152/ppo-LunarLander-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/Pro152/ppo-LunarLander-v2/blob/main/README.md",
+      "snippet": "PPO Agent playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library."
+    },
+    {
+      "title": "PPO-LunarLander-v2 Open Source Reinforcement Learning Model - Free ...",
+      "url": "https://model.aibase.com/models/details/1915692708422901761",
+      "snippet": "🚀 Stable-Baselines3 PPO Agent for LunarLander-v2 This project presents a trained PPO agent designed to play the LunarLander-v2 game. It leverages the stable-ba"
+    },
+    {
+      "title": "PPO-LunarLander-v2 Open-Source Reinforcement Learning Model - Free ...",
+      "url": "https://model.aibase.com/models/details/1915692648687624193",
+      "snippet": "The model is trained using the Proximal Policy Optimization (PPO) algorithm and can learn how to safely control a lunar lander in the LunarLander-v2 simulation environment."
+    },
+    {
+      "title": "GitHub - lazavgeridis/LunarLander-v2: Implementation of reinforcement ...",
+      "url": "https://github.com/lazavgeridis/LunarLander-v2",
+      "snippet": "Attempting to solve the LunarLander-v2 OpenAI Gym environment. For the time being, there are implementations for: These training snapshots are captured towards the end of the training phase (~10000 epsiodes). A random agent is also provided for comparison: Random. Monte-Carlo. Sarsa. Q-learning. DQN."
+    }
+  ]
+}

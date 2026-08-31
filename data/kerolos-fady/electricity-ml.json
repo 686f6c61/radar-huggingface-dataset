@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kerolos-fady/electricity-ml",
+  "slug": "kerolos-fady-electricity-ml",
+  "author": "kerolos-fady",
+  "url": "https://huggingface.co/kerolos-fady/electricity-ml",
+  "created_at": "2026-08-31T02:50:56.000Z",
+  "updated_at": "2026-08-31T13:55:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68948705,
+  "storage_human": "69 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kerolos-fady/electricity-ml · Hugging Face",
+      "url": "https://huggingface.co/kerolos-fady/electricity-ml",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kerolos Fady kerolos722 - GitHub",
+      "url": "https://github.com/kerolos722/",
+      "snippet": "Data Scientist & ML Engineer | Engineering Student @ Benha University - kerolos722"
+    },
+    {
+      "title": "Kerolos-fady · GitHub",
+      "url": "https://github.com/Kerolos-fady",
+      "snippet": "Contribution activity July 2026 Kerolos-fady has no activity yet for this period."
+    },
+    {
+      "title": "kerolos1 (kerolos adel melad) - Hugging Face",
+      "url": "https://huggingface.co/kerolos1",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space 9 days ago ... updated a model 13 days ago"
+    },
+    {
+      "title": "Enhancing Energy Efficiency With Ai: a Review of Machine Learning ...",
+      "url": "https://www.researchgate.net/publication/376319405_ENHANCING_ENERGY_EFFICIENCY_WITH_AI_A_REVIEW_OF_MACHINE_LEARNING_MODELS_IN_ELECTRICITY_DEMAND_FORECASTING",
+      "snippet": "This study presents a comprehensive review of the impact of artificial intelligence (AI) and machine learning (ML) on enhancing energy efficiency, particularly in the context of electricity demand ..."
+    }
+  ]
+}

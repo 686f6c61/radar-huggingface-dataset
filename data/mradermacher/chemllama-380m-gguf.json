@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ChemLlama-380M-GGUF",
+  "slug": "mradermacher-chemllama-380m-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ChemLlama-380M-GGUF",
+  "created_at": "2026-08-31T11:44:01.000Z",
+  "updated_at": "2026-08-31T11:51:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:yerevann/ChemLlama-380M",
+    "base_model:quantized:yerevann/ChemLlama-380M",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 383026176,
+  "parameters_human": "383.0M",
+  "storage_bytes": 3785510912,
+  "storage_human": "3.8 GB",
+  "base_model": "yerevann/ChemLlama-380M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yerevann/chemllama-380m · Hugging Face",
+      "url": "https://huggingface.co/yerevann/chemllama-380m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/chemllama-3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/chemllama-3B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "ModelFitCheck — will this LLM fit your GPU?",
+      "url": "https://modelfitcheck.com/",
+      "snippet": "🔍 Look Up Any Model Enter a HuggingFace model ID (e.g., meta-llama/Llama-3.1-8B) or an Ollama name (e.g., llama3.1:8b)"
+    },
+    {
+      "title": "GitHub - olamide226/ollama-gguf-downloader: A simple CLI tool to ...",
+      "url": "https://github.com/olamide226/ollama-gguf-downloader",
+      "snippet": "A simple CLI tool to effortlessly download GGUF model files from Ollama&#x27;s registry. Once downloaded, these GGUF files can be seamlessly integrated with tools like llama.cpp for model training, inference, and other advanced AI use cases."
+    }
+  ]
+}

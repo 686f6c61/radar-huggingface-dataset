@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "adrirflorez/xlmr-multi-borrowings",
+  "slug": "adrirflorez-xlmr-multi-borrowings",
+  "author": "adrirflorez",
+  "url": "https://huggingface.co/adrirflorez/xlmr-multi-borrowings",
+  "created_at": "2026-08-31T17:20:58.000Z",
+  "updated_at": "2026-08-31T17:21:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278047493,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129312322,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arodriguezf/xlmr-multi-borrowings · Hugging Face",
+      "url": "https://huggingface.co/arodriguezf/xlmr-multi-borrowings",
+      "snippet": "arodriguezf / xlmr-multi-borrowings like 0 Token Classification Transformers Safetensors xlm-roberta arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Use this model Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and ..."
+    },
+    {
+      "title": "arodriguezf (Rodríguez Flórez) - Hugging Face",
+      "url": "https://huggingface.co/arodriguezf/models",
+      "snippet": "arodriguezf&#x27;s models4 Sort: Recently updated arodriguezf/xlmr-multi-borrowings Token Classification • 0.3B•Updated about 6 hours ago"
+    },
+    {
+      "title": "Adriana R. Flórez adrirflorez - GitHub",
+      "url": "https://github.com/adrirflorez/",
+      "snippet": "Erasmus Mundus Master&#x27;s student in LCT at ÚFAL in MFF UK (Prague, Czechia). Bachelor&#x27;s in SoftEng and CS at Uniovi and Virginia Tech. - adrirflorez"
+    },
+    {
+      "title": "Unsupervised Cross-lingual Representation Learning at Scale",
+      "url": "https://arxiv.org/pdf/1911.02116",
+      "snippet": "1 Introduction The goal of this paper is to improve cross-lingual language understanding (XLU), by carefully study-ing the effects of training unsupervised cross-lingual representations at a very large scale. We present XLM-R a transformer-based multilingual masked language model pre-trained on text in 100 languages, which obtains state-of-the-art perfor-mance on cross-lingual classification ..."
+    },
+    {
+      "title": "AIBooru: AI Art Imageboard",
+      "url": "https://aibooru.online/",
+      "snippet": "AIBooru is the first booru for AI-generated images. Search for AI-generated anime pictures categorized by thousands of tags."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "FrenchKnuckles/cipher-transformer-c1",
+  "slug": "frenchknuckles-cipher-transformer-c1",
+  "author": "FrenchKnuckles",
+  "url": "https://huggingface.co/FrenchKnuckles/cipher-transformer-c1",
+  "created_at": "2026-08-10T20:35:25.000Z",
+  "updated_at": "2026-08-31T17:43:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 63,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1428504849,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - FrenchKnuckles/ANLP_A1",
+      "url": "https://github.com/FrenchKnuckles/ANLP_A1",
+      "snippet": "This repository contains a PyTorch implementation of a Seq2Seq Transformer trained to decrypt a substitution cipher. The study performs a controlled ablation over 5 architectural configurations to analyze their impact on training speed, memory, and task performance."
+    },
+    {
+      "title": "Decrypt a Message - Cipher Identifier - Online Code Recognizer",
+      "url": "https://www.dcode.fr/cipher-identifier",
+      "snippet": "Tool to identify/recognize the type of encryption/encoding applied to a message (more 200 ciphers/codes are detectable). Cipher identifier to quickly decrypt/decode any text."
+    },
+    {
+      "title": "Models — Cipherc",
+      "url": "https://cipherc.net/models",
+      "snippet": "Model Packs Uncensored Access to the Right Model These are Jailbroken AI models accessed through secure, decentralized private nodes — no corporate tracking, no monthly fees, no one watching your conversations. Each pack gives you a pre-configured API endpoint so you&#x27;re up and running in minutes, not days."
+    },
+    {
+      "title": "PixVerse Introduces C1, an AI Video Model Built for Film Production",
+      "url": "https://pixverse.ai/en/blog/pixverse-introduces-c1-ai-video-model-for-film-production",
+      "snippet": "PixVerse announces C1, its first AI video model for film production: action and effects, storyboard-to-video, reference-guided consistency, up to 1080p and 15 seconds with audio."
+    },
+    {
+      "title": "Transformer (deep learning) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning)",
+      "snippet": "The transformer model has been implemented in standard deep learning frameworks such as TensorFlow and PyTorch. Transformers is a library produced by Hugging Face that supplies transformer-based architectures and pretrained models."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DavidYang76/granny-miller",
+  "slug": "davidyang76-granny-miller",
+  "author": "DavidYang76",
+  "url": "https://huggingface.co/DavidYang76/granny-miller",
+  "created_at": "2026-08-31T12:33:54.000Z",
+  "updated_at": "2026-08-31T12:43:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DavidYang76 (David Yang) - Hugging Face",
+      "url": "https://huggingface.co/DavidYang76",
+      "snippet": "User profile of David Yang on Hugging Face"
+    },
+    {
+      "title": "ai.model.76 • Instagram photos and videos",
+      "url": "https://www.instagram.com/ai.model.76/",
+      "snippet": "32K Followers, 261 Following, 1,202 Posts - @ai.model.76 on Instagram: \"\""
+    },
+    {
+      "title": "Old Ladies — I draw the mature women of your dreams | Patreon",
+      "url": "https://www.patreon.com/cw/OldLadiesAI",
+      "snippet": "Get more from Old Ladies on Patreon. I draw the mature women of your dreams . Support Old Ladies and get exclusive access to their work."
+    },
+    {
+      "title": "AI Girl Generator (Create Your Own Free Custom AI Girlfriend)",
+      "url": "https://heygf.ai/ai-girl-generator",
+      "snippet": "Build your own custom AI girl with HeyGF AI. Pick her face, body, voice, personality, and backstory. Free signup, no credit card."
+    },
+    {
+      "title": "Instagram photo by ai.model.76 • Aug 8, 2025 at 9:58 AM",
+      "url": "https://www.instagram.com/p/DNGgEp9IbEB/",
+      "snippet": "406 likes, 21 comments - ai.model.76 on August 8, 2025"
+    }
+  ]
+}

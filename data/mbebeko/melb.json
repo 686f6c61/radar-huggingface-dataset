@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mbebeko/melb",
+  "slug": "mbebeko-melb",
+  "author": "mbebeko",
+  "url": "https://huggingface.co/mbebeko/melb",
+  "created_at": "2026-08-31T13:54:16.000Z",
+  "updated_at": "2026-08-31T13:54:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Model Says a Fashion Brand Used AI to Recreate Her Face in an Ad ...",
+      "url": "https://dallassinglemom.com/a-model-says-a-fashion-brand-used-ai-to-recreate-her-face-in-an-ad-without-her-consent-or-pay/",
+      "snippet": "The line between inspiration and theft has always been contested in the fashion industry, but artificial intelligence is drawing that line into entirely new territory. A model who goes by Mel on TikTok, posting under the username @vanellimelli030, claims that a fashion brand created an advertisement using an AI-generated image that reproduces her face with striking accuracy — replicating her ..."
+    },
+    {
+      "title": "NimbleAINinja/Beepo-22B-mlx-4bit · Hugging Face",
+      "url": "https://huggingface.co/NimbleAINinja/Beepo-22B-mlx-4bit",
+      "snippet": "Retains Intelligence - LR was kept low and dataset heavily pruned to avoid losing too much of the original model&#x27;s intelligence. Instruct prompt format supports Alpaca - Honestly, I don&#x27;t know why more models don&#x27;t use it."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Blockbench Model Generator | Rigged 3D Minecraft Models from a ...",
+      "url": "https://kodari.ai/blogs/ai-blockbench-model-generator",
+      "snippet": "AI Blockbench Model Generator: Rigged, Animated .bbmodel Files from a Prompt Describe a mob, a pet, a weapon, a prop. Get back a proper .bbmodel, rigged with bones and animated, that opens straight in Blockbench. No modeling, no keyframing by hand."
+    },
+    {
+      "title": "Menswear brand accused of using AI to &#x27;whitewash&#x27; model&#x27;s image",
+      "url": "https://www.abc.net.au/news/2026-06-30/menswear-brand-accused-of-using-ai-to-whitewash-model-s-image/106861516",
+      "snippet": "Nigerian-Australian model Elii Emeghebo is pursuing a racial discrimination complaint against suit label Peter Jackson, over changes made to his image using artificial intelligence."
+    }
+  ]
+}

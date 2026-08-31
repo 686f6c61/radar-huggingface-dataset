@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "furiosa-ai/gemma-4-31B-it-FP8-block",
+  "slug": "furiosa-ai-gemma-4-31b-it-fp8-block",
+  "author": "furiosa-ai",
+  "url": "https://huggingface.co/furiosa-ai/gemma-4-31B-it-FP8-block",
+  "created_at": "2026-08-31T15:32:11.000Z",
+  "updated_at": "2026-08-31T15:32:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "fp8",
+    "vllm",
+    "llm-compressor",
+    "compressed-tensors",
+    "conversational",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:quantized:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 33295408554,
+  "storage_human": "33.3 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-31B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-31B",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Hyper-AI/gemma-4-31B-it-fp8 · Hugging Face",
+      "url": "https://huggingface.co/Hyper-AI/gemma-4-31B-it-fp8",
+      "snippet": "Overall, Gemma 4 models significantly outperform Gemma 3 and 3n models in improving safety, while keeping unjustified refusals low. All testing was conducted without safety filters to evaluate the model capabilities and behaviors."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Gemma 4 31B on DGX Spark: Runtime FP8 Benchmarks — Single & Dual Node ...",
+      "url": "https://forums.developer.nvidia.com/t/gemma-4-31b-on-dgx-spark-runtime-fp8-benchmarks-single-dual-node-tp-2/365814",
+      "snippet": "Gemma 4 31B dense benchmarks on DGX Spark with runtime FP8 quantization. Includes single-node (TP=1), dual-node (TP=2), multi-user concurrency, tool calling validation, and multimodal vision."
+    },
+    {
+      "title": "Google/gemma-4-31B-it | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Google/gemma-4-31B-it",
+      "snippet": "Google&#x27;s unified multimodal Gemma 4 dense model (31B) with native text, image, and audio, plus thinking mode and tool-use protocol."
+    }
+  ]
+}

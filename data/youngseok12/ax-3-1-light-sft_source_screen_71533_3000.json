@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "youngseok12/AX-3.1-Light-sft_source_screen_71533_3000",
+  "slug": "youngseok12-ax-3-1-light-sft_source_screen_71533_3000",
+  "author": "youngseok12",
+  "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_source_screen_71533_3000",
+  "created_at": "2026-08-31T13:43:49.000Z",
+  "updated_at": "2026-08-31T13:46:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "korean",
+    "supervised-fine-tuning",
+    "lora",
+    "merged-model",
+    "answer-first",
+    "aihub",
+    "conversational",
+    "ko",
+    "base_model:skt/A.X-3.1-Light",
+    "base_model:adapter:skt/A.X-3.1-Light",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7264800768,
+  "parameters_human": "7.26B",
+  "storage_bytes": 14529635608,
+  "storage_human": "14.5 GB",
+  "base_model": "skt/A.X-3.1-Light",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AX-3.1-Light-sft_v0_21_source_screen_scitech_mrc_300",
+      "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_v0_21_source_screen_scitech_mrc_300",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "youngseok12/AX-3.1-Light-sft_v3_0 · Hugging Face",
+      "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_v3_0",
+      "snippet": "skt/A.X-3.1-Light 를 기반으로 AI Hub 한국어 데이터로 수행한 첫 번째 clean SFT baseline입니다. LoRA adapter를 base model에 병합한 standalone BF16 모델이므로 별도의 adapter나 custom Python code 없이 Transformers 및 표준 vLLM에서 로드할 수 있습니다."
+    },
+    {
+      "title": "AX-3.1-Light-sft_v0_21_source_screen_scitech_mrc_300",
+      "url": "https://friendli.ai/models/youngseok12/AX-3.1-Light-sft_v0_21_source_screen_scitech_mrc_300",
+      "snippet": "Each arm contains 5,801 training rows in a v0.21-equivalent source-screening mixture: 5,501 unchanged occurrences and 300 replacement occurrences. The replacement source for this model is AIHub-71533, 기술과학 문서 기계독해 데이터."
+    },
+    {
+      "title": "AX-3.1-Light-sft_v3_0 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/youngseok12/AX-3.1-Light-sft_v3_0",
+      "snippet": "Run AX-3.1-Light-sft_v3_0 with FriendliAI inference. skt/A.X-3.1-Light를 기반으로 AI Hub 한국어 데이터로 수행한 첫 번째 clean SFT baseline입니다."
+    },
+    {
+      "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and ...",
+      "url": "https://github.com/unslothai/unsloth",
+      "snippet": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, FLUX and more. - unslothai/unsloth"
+    }
+  ]
+}

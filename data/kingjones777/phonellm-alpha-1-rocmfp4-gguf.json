@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "kingjones777/PhoneLLM-Alpha-1-ROCmFP4-GGUF",
+  "slug": "kingjones777-phonellm-alpha-1-rocmfp4-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/PhoneLLM-Alpha-1-ROCmFP4-GGUF",
+  "created_at": "2026-08-31T15:28:06.000Z",
+  "updated_at": "2026-08-31T15:38:51.000Z",
+  "license": "bsd-2-clause",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-halo",
+    "gfx1151",
+    "vulkan",
+    "nemotron",
+    "mixture-of-experts",
+    "voice-agent",
+    "tool-use",
+    "function-calling",
+    "pipecat",
+    "text-generation",
+    "en",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "license:bsd-2-clause",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577940288,
+  "parameters_human": "31.58B",
+  "storage_bytes": 147227654016,
+  "storage_human": "147.2 GB",
+  "base_model": "pipecat-ai/phonellm-alpha-1, nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kingjones777 (Myron Jones) - Hugging Face",
+      "url": "https://huggingface.co/kingjones777",
+      "snippet": "User profile of Myron Jones on Hugging Face"
+    },
+    {
+      "title": "kingjones777/Qwen3.5-27B-ROCmFP4-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Qwen3.5-27B-ROCmFP4-GGUF/tree/main",
+      "snippet": "kingjones777 / Qwen3.5-27B-ROCmFP4-GGUF like 0 Image-Text-to-Text GGUF rocmfp4 rocmfpx strix-halo gfx1151 amd rocm qwen multimodal quantized conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - charlie12345/rocmfp4: ROCmfp4",
+      "url": "https://github.com/charlie12345/rocmfp4",
+      "snippet": "ROCmFP4 is an experimental GGUF quantization and backend integration package for AMD ROCm and Vulkan llama.cpp builds. This repository is the clean integration package."
+    },
+    {
+      "title": "GitHub - UbiquitousLearning/PhoneLM",
+      "url": "https://github.com/UbiquitousLearning/PhoneLM",
+      "snippet": "This repository contains the code and documents in pre-training, fine-tuning, and evaluating PhoneLM, a highly capable and efficient small language model family. The end-to-end demo of PhoneLM running on smartphone is available at mllm."
+    },
+    {
+      "title": "kingjones777/Qwen3.5-9B-ROCmFP4-GGUF · Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/kingjones777/Qwen3.5-9B-ROCmFP4-GGUF",
+      "snippet": "Measured on an idle Ryzen AI MAX+ 395 (Strix Halo, gfx1151, ROCm 7.2.4): -ngl 999 -c 4096 -fa on -fit off -np 1, 300-token generations, 12 samples with two warm-ups on the same prompt as the measurement."
+    }
+  ]
+}

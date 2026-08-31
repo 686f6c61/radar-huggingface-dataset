@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "leminhhung0101/LeafModel",
+  "slug": "leminhhung0101-leafmodel",
+  "author": "leminhhung0101",
+  "url": "https://huggingface.co/leminhhung0101/LeafModel",
+  "created_at": "2026-08-31T12:42:04.000Z",
+  "updated_at": "2026-08-31T12:53:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 523717316,
+  "storage_human": "524 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leminhhung0101 (Lê Minh Hùng) - Hugging Face",
+      "url": "https://huggingface.co/leminhhung0101/models",
+      "snippet": "User profile of Lê Minh Hùng on Hugging Face"
+    },
+    {
+      "title": "leminhhung0101/knee-model · Hugging Face",
+      "url": "https://huggingface.co/leminhhung0101/knee-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore how every major AI model evolved from its ancestors. Interactive visualization of LLM genealogy."
+    },
+    {
+      "title": "GitHub - MHogan17/LeafModel",
+      "url": "https://github.com/MHogan17/LeafModel",
+      "snippet": "Contribute to MHogan17/LeafModel development by creating an account on GitHub."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "thomasavare/all-MiniLM-L6-v2-22",
+  "slug": "thomasavare-all-minilm-l6-v2-22",
+  "author": "thomasavare",
+  "url": "https://huggingface.co/thomasavare/all-MiniLM-L6-v2-22",
+  "created_at": "2026-08-31T17:40:04.000Z",
+  "updated_at": "2026-08-31T17:46:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 865958,
+  "storage_human": "865958 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thomasavare/all-MiniLM-L6-v2-22 · Hugging Face",
+      "url": "https://huggingface.co/thomasavare/all-MiniLM-L6-v2-22",
+      "snippet": "thomasavare / all-MiniLM-L6-v2-22 like 0 Safetensors ICD10-classification model_hub_mixin pytorch_model_hub_mixin Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "sentence-transformers/all-MiniLM-L6-v2 · Hugging Face",
+      "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "all-MiniLM-L6-v2: Free Local Embedding Model Guide 2026",
+      "url": "https://tokenmix.ai/blog/all-minilm-l6-v2-free-local-embedding-guide-2026",
+      "snippet": "all-MiniLM-L6-v2 is a free 384-dim local embedding model. 2026 guide: specs, MTEB benchmarks, vs bge-small and OpenAI, cost, and how to use it."
+    },
+    {
+      "title": "GitHub - henrytanner52/all-MiniLM-L6-v2",
+      "url": "https://github.com/henrytanner52/all-MiniLM-L6-v2",
+      "snippet": "all-MiniLM-L6-v2 This is a sentence-transformers model: It maps sentences & paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering or semantic search."
+    },
+    {
+      "title": "All MiniLM L6 V2 | Intel® Software Catalog",
+      "url": "https://aiswcatalog.intel.com/models/redhatai-all-minilm-l6-v2",
+      "snippet": "Overview All-MiniLM-L6-v2 is a compact sentence embedding model from the Sentence Transformers project, featuring 22.7 million parameters and generating 384-dimensional vector representations. It was trained on 1B sentence pairs dataset using a self-supervised contrastive learning objective."
+    }
+  ]
+}

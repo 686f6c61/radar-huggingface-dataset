@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "chartreuse-verte/prose-rewriter-4b-v1.4",
+  "slug": "chartreuse-verte-prose-rewriter-4b-v1-4",
+  "author": "chartreuse-verte",
+  "url": "https://huggingface.co/chartreuse-verte/prose-rewriter-4b-v1.4",
+  "created_at": "2026-08-31T18:48:23.000Z",
+  "updated_at": "2026-08-31T18:52:26.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "text-generation",
+    "prose",
+    "rewriting",
+    "style-transfer",
+    "creative-writing",
+    "deslop",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:quantized:Qwen/Qwen3-4B-Base",
+    "license:agpl-3.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 16244049074,
+  "storage_human": "16.2 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chartreuse-verte/prose-rewriter-4b-v1.3 · Hugging Face",
+      "url": "https://huggingface.co/chartreuse-verte/prose-rewriter-4b-v1.3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "chartreuse-verte/prose-rewriter-1.7b-v1.4 · Hugging Face",
+      "url": "https://huggingface.co/chartreuse-verte/prose-rewriter-1.7b-v1.4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Prose Rewriter 4B V1.2 by chartreuse-verte - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/chartreuse-verte%2Fprose-rewriter-4b-v1.2,3wC8gcszWMo5z4CNGPYAGF",
+      "snippet": "Prose Rewriter 4B V1.2 is an open-source 4b LLM by chartreuse-verte. VRAM 8.8GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Chartreuse/README.md at main · OrbFrontend/Chartreuse · GitHub",
+      "url": "https://github.com/OrbFrontend/Chartreuse/blob/main/README.md",
+      "snippet": "Classifier — sentence-level binary classifier gating purple prose (and euphemism) at 1 / 0. Input is always one sentence; callers segment upstream and score each sentence independently. Favors precision — a false positive rewrites good prose. The hard part is the dataset, not the model. Depurple — weight-baked style edit for open LLMs: find the residual direction separating purple/plain ..."
+    },
+    {
+      "title": "prose-rewriter-4b-v1.3 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/chartreuse-verte/prose-rewriter-4b-v1.3",
+      "snippet": "Deploy prose-rewriter-4b-v1.3 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

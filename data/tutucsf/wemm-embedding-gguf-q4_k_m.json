@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "TuTuCSF/WeMM-Embedding-GGUF-Q4_K_M",
+  "slug": "tutucsf-wemm-embedding-gguf-q4_k_m",
+  "author": "TuTuCSF",
+  "url": "https://huggingface.co/TuTuCSF/WeMM-Embedding-GGUF-Q4_K_M",
+  "created_at": "2026-08-31T17:45:26.000Z",
+  "updated_at": "2026-08-31T17:57:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:tencent/WeMM-Embedding-2B",
+    "base_model:quantized:tencent/WeMM-Embedding-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2389393216,
+  "parameters_human": "2.39B",
+  "storage_bytes": 7386651616,
+  "storage_human": "7.4 GB",
+  "base_model": "tencent/WeMM-Embedding-2B, tencent/WeMM-Embedding-9B, tencent/WeMM-Embedding-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Weidows/WeMM-Embedding-2B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Weidows/WeMM-Embedding-2B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Tencent/WeMM-Embedding: WeMM-Embedding is a family of ...",
+      "url": "https://github.com/Tencent/WeMM-Embedding",
+      "snippet": "It is the official TIGER-AI-Lab/VLM2Vec pipeline with a minimal diff: multi-node multi-GPU inference (torchrun --nnodes=N), a wemm_embedding backbone implementing our preprocessing and batched inference, dataset instructions aligned with the released model, and 64-frame video sampling."
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "IBM GGUF-encoded AI models and conversion scripts. Contribute to IBM/gguf development by creating an account on GitHub."
+    },
+    {
+      "title": "tencent/WeMM-Embedding-4B · Hugging Face",
+      "url": "https://huggingface.co/tencent/WeMM-Embedding-4B",
+      "snippet": "WeMM-Embedding-4B is a universal multimodal embedding model built on Qwen3.5. It accepts text, images, videos, visual documents, and interleaved multimodal inputs, and returns a 2,560-dimensional L2-normalized embedding."
+    },
+    {
+      "title": "WeMM-Embedding: WeChat Multi-Modal Embedding Technical Report",
+      "url": "https://arxiv.org/abs/2608.24053",
+      "snippet": "Universal multimodal embeddings are becoming a core component of modern AI systems, enabling heterogeneous content to be represented in a shared space for applications such as retrieval, recommendation, classification, and agentic systems. In this report, we present WeMM-Embedding, a family of universal multimodal embedding models supporting text, images, videos, visual documents, and ..."
+    }
+  ]
+}

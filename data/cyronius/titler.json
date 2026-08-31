@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Cyronius/titler",
+  "slug": "cyronius-titler",
+  "author": "Cyronius",
+  "url": "https://huggingface.co/Cyronius/titler",
+  "created_at": "2026-08-31T16:08:46.000Z",
+  "updated_at": "2026-08-31T16:37:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "safetensors",
+    "gguf",
+    "t5",
+    "text2text-generation",
+    "title-generation",
+    "summarization",
+    "distillation",
+    "tiny-model",
+    "edge",
+    "en",
+    "dataset:allenai/WildChat-1M",
+    "dataset:OpenAssistant/oasst2",
+    "dataset:lmsys/chatbot_arena_conversations",
+    "dataset:lmsys/lmsys-chat-1m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7606784,
+  "parameters_human": "7.6M",
+  "storage_bytes": 75773700,
+  "storage_human": "76 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cyronius/titler · Hugging Face",
+      "url": "https://huggingface.co/Cyronius/titler",
+      "snippet": "Lemonade How to use Cyronius/titler with Lemonade: Pull the model ... Run and chat with the model lemonade run user.titler-F16 List all available models lemonade list Atomic Chat titler — a 7.6M-parameter prompt-to-title model Intended use cases Quickstart GGUF (llama.cpp) Architecture Training data Training process Evaluation Performance ..."
+    },
+    {
+      "title": "Cyronius (Cyrus Attoun) - Hugging Face",
+      "url": "https://huggingface.co/Cyronius",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 months ago ... published a model 2 months ago"
+    },
+    {
+      "title": "Creating and Optimizing a Cronus 3D Model: Expert Workflow",
+      "url": "https://www.tripo3d.ai/blog/explore/cronus-3d-model",
+      "snippet": "Explore expert workflows for creating, optimizing, and animating a Cronus 3D model. Learn best practices, tool selection, and troubleshooting tips."
+    },
+    {
+      "title": "Best AI for Writing 2026 - Top Writing Models - llm-stats.com",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-writing",
+      "snippet": "Rankings of the best AI models for writing tasks. Compare models by writing quality, content generation, and writing capabilities."
+    },
+    {
+      "title": "Cyronius (Cyrus Attoun) - Hugging Face",
+      "url": "https://huggingface.co/Cyronius/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 months ago ... published a model about 2 months ago"
+    }
+  ]
+}

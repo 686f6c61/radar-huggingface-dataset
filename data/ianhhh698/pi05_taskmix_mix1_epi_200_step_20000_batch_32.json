@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "IanHHH698/pi05_taskmix_MIX1_epi_200_step_20000_batch_32",
+  "slug": "ianhhh698-pi05_taskmix_mix1_epi_200_step_20000_batch_32",
+  "author": "IanHHH698",
+  "url": "https://huggingface.co/IanHHH698/pi05_taskmix_MIX1_epi_200_step_20000_batch_32",
+  "created_at": "2026-08-31T13:36:38.000Z",
+  "updated_at": "2026-08-31T13:37:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:cbrian/merge_task1_MM_epi_100_task2_ND_epi_100",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7473108700,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pi05_task2_MM1_epi_200_step_20000_batch_32 - Hugging Face",
+      "url": "https://huggingface.co/IanHHH698/pi05_task2_MM1_epi_200_step_20000_batch_32",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jaywu109/pi05_task1_MM1_epi_200_step_20000_batch_32 · Hugging Face",
+      "url": "https://huggingface.co/jaywu109/pi05_task1_MM1_epi_200_step_20000_batch_32",
+      "snippet": "This Pi05 policy was fine-tuned from lerobot/pi05_libero with LeRobot on cbrian/merge_task1_MM_epi_200. See train_config.json for the complete training configuration."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 268 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

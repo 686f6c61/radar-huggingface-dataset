@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "stamchry/greek-keyboard-lm",
+  "slug": "stamchry-greek-keyboard-lm",
+  "author": "stamchry",
+  "url": "https://huggingface.co/stamchry/greek-keyboard-lm",
+  "created_at": "2026-08-31T15:58:01.000Z",
+  "updated_at": "2026-08-31T15:58:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "el"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama",
+    "futo",
+    "keyboard",
+    "text-generation",
+    "casual-lm",
+    "mobile",
+    "el",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36152832,
+  "parameters_human": "36.2M",
+  "storage_bytes": 320073631,
+  "storage_human": "320 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - stamchry/greek-keyboard-lm",
+      "url": "https://github.com/stamchry/greek-keyboard-lm",
+      "snippet": "Custom Modern Greek (el) predictive text and autocorrect Transformer Language Model (~22.8M parameters) built for the FUTO Android Keyboard. This repository contains the complete end-to-end Python pipeline to gather datasets, train a SentencePiece tokenizer, train a compact LLaMA causal language ..."
+    },
+    {
+      "title": "greek-keyboard-lm/README.md at main · stamchry/greek-keyboard-lm",
+      "url": "https://github.com/stamchry/greek-keyboard-lm/blob/main/README.md",
+      "snippet": "Contribute to stamchry/greek-keyboard-lm development by creating an account on GitHub."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "LLM Updates (August 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    }
+  ]
+}

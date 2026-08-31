@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "AbrahamPJ/facefusion-mobile-models",
+  "slug": "abrahampj-facefusion-mobile-models",
+  "author": "AbrahamPJ",
+  "url": "https://huggingface.co/AbrahamPJ/facefusion-mobile-models",
+  "created_at": "2026-08-24T11:27:07.000Z",
+  "updated_at": "2026-08-31T15:28:23.000Z",
+  "license": "mixed-per-model",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "face-swap",
+    "facefusion",
+    "android",
+    "mobile",
+    "on-device",
+    "edge-ai",
+    "npu",
+    "qualcomm",
+    "hexagon",
+    "qnn",
+    "qairt",
+    "ncnn",
+    "vulkan",
+    "image-to-image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2160688860,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AbrahamPJ/facefusion-mobile-models · Hugging Face",
+      "url": "https://huggingface.co/AbrahamPJ/facefusion-mobile-models",
+      "snippet": "FaceFusion Mobile — Hexagon NPU context binaries (v0.1.0) Qualcomm QAIRT context binaries for FaceFusion &#x27;s default face-swap path, converted to run fully offline on the Hexagon NPU. These are not ONNX models and are not portable. Each file is a compiled graph pinned to a Hexagon architecture, and it will not load on anything else."
+    },
+    {
+      "title": "AbrahamPJ/facefusion-mobile-models at main - Hugging Face",
+      "url": "https://huggingface.co/AbrahamPJ/facefusion-mobile-models/tree/main",
+      "snippet": "AbrahamPJ / facefusion-mobile-models like 0 Model card FilesFiles and versions xet Community Copy to bucket new main facefusion-mobile-models 1.87 GB Ctrl+K Ctrl+K 1 contributor History:31 commits AbrahamPJ manifest: ncnn gpen param is 35590 bytes, new sha256 ecc820c verifiedabout 12 hours ago"
+    },
+    {
+      "title": "GitHub - AbrahamPaulJ/facefusion-mobile",
+      "url": "https://github.com/AbrahamPaulJ/facefusion-mobile",
+      "snippet": "The host reference itself was verified against stock FaceFusion 3.8.2 at 62.77 dB on a single face (max abs diff 4/255) and 50.30 dB across three faces, so those numbers rest on a baseline that agrees with upstream."
+    },
+    {
+      "title": "FaceFusion",
+      "url": "https://facefusion.io/",
+      "snippet": "Explore HyperSwap at FaceFusion Labs Discover the cutting-edge performance metrics of our advanced face fusion models. Compare different model architectures and their capabilities."
+    },
+    {
+      "title": "GitHub - facefusion/facefusion: Industry leading face manipulation ...",
+      "url": "https://github.com/facefusion/facefusion",
+      "snippet": "Industry leading face manipulation platform. Contribute to facefusion/facefusion development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "OmerKurtulus/deepreality-models",
+  "slug": "omerkurtulus-deepreality-models",
+  "author": "OmerKurtulus",
+  "url": "https://huggingface.co/OmerKurtulus/deepreality-models",
+  "created_at": "2026-08-31T12:57:44.000Z",
+  "updated_at": "2026-08-31T13:06:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3235505533,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OmerKurtulus/DeepReality",
+      "url": "https://github.com/OmerKurtulus/DeepReality",
+      "snippet": "DeepReality, bir görselin yapay zekâ tarafından üretilip üretilmediğini veya manipüle edilip edilmediğini tespit etmek için birden fazla bağımsız analiz yaklaşımını tek bir platformda birleştiren çok katmanlı bir tespit sistemidir. Proje, mevcut tespit araçlarının en temel zayıflığı olan genelleme açığını — tek bir model mimarisine dayanan sistemlerin yalnızca ..."
+    },
+    {
+      "title": "OmerKurtulus (Ömer Faruk Kurtuluş) · GitHub",
+      "url": "https://github.com/OmerKurtulus/",
+      "snippet": "Data Scientist & Machine Learning Engineer. OmerKurtulus has 10 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    }
+  ]
+}

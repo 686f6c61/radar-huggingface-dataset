@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "gregm123456/clip-interrogator-axera-hw",
+  "slug": "gregm123456-clip-interrogator-axera-hw",
+  "author": "gregm123456",
+  "url": "https://huggingface.co/gregm123456/clip-interrogator-axera-hw",
+  "created_at": "2026-08-31T16:41:41.000Z",
+  "updated_at": "2026-08-31T16:41:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "clip",
+    "zero-shot-image-classification",
+    "axera",
+    "ax650n",
+    "npu",
+    "raspberry-pi",
+    "arxiv:2103.00020",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 281439013,
+  "storage_human": "281 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CLIP Interrogator 2 - a Hugging Face Space by fffiloni",
+      "url": "https://huggingface.co/spaces/fffiloni/CLIP-Interrogator-2",
+      "snippet": "# CLIP Interrogator 2.1 Want to figure out what a good prompt might be to create new images like an existing one? The CLIP Interrogator is here to get you answers! This version is specialized for Stable Diffusion 2.0 using the ViT-H-14 OpenCLIP model."
+    },
+    {
+      "title": "CLIP Interrogator - a Hugging Face Space by pharmapsychotic",
+      "url": "https://huggingface.co/spaces/pharmapsychotic/CLIP-Interrogator",
+      "snippet": "Upload a picture and the app will create a descriptive text prompt that captures its style, medium, artist, and other visual details. You can also get a quick analysis showing the top matching art ..."
+    },
+    {
+      "title": "GitHub - pharmapsychotic/clip-interrogator: Image to prompt with BLIP ...",
+      "url": "https://github.com/pharmapsychotic/clip-interrogator",
+      "snippet": "The CLIP Interrogator is a prompt engineering tool that combines OpenAI&#x27;s CLIP and Salesforce&#x27;s BLIP to optimize text prompts to match a given image. Use the resulting prompts with text-to-image models like Stable Diffusion on DreamStudio to create cool art!"
+    },
+    {
+      "title": "Clip Interrogator AI Image to Prompt",
+      "url": "https://clipinterrogator.org/",
+      "snippet": "This approach allows the CLIP Interrogator to generate richer and more detailed text than the BLIP model alone, making it effective for generating prompts for AI image generators like Stable Diffusion and MidJourney. Image-to-Text! Caption anything using AI CLIP Interrogator for free online Artful AI"
+    },
+    {
+      "title": "huggingface_clip_interrogator.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/RubenGres/huggingface-CLIP-interrogator-colab/blob/main/huggingface_clip_interrogator.ipynb",
+      "snippet": "Hugging Face CLIP Interrogator 0.1 by @retronyme derived from @pharmapsychotic &#x27;s notebook This notebook allow easy image labeling using CLIP from an hugging face dataset For Stable Diffusion 1.X choose the ViT-L model and for Stable Diffusion 2.0+ choose the ViT-H CLIP Model."
+    }
+  ]
+}

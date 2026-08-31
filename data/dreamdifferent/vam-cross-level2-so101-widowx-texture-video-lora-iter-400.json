@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/vam-cross-level2-so101-widowx-texture-video-lora-iter-400",
+  "slug": "dreamdifferent-vam-cross-level2-so101-widowx-texture-video-lora-iter-400",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/vam-cross-level2-so101-widowx-texture-video-lora-iter-400",
+  "created_at": "2026-08-31T12:01:10.000Z",
+  "updated_at": "2026-08-31T12:02:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "video-generation",
+    "lora",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3707437850,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vam-cross-level5-so101-widowx-texture-video-lora-iter-200",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level5-so101-widowx-texture-video-lora-iter-200/tree/main",
+      "snippet": "lora Model card FilesFiles and versions xet Community Copy to bucket new main vam-cross-level5-so101-widowx-texture-video-lora-iter-200 742 MB Ctrl+K Ctrl+K 1 contributor History:2 commits eugeneseo Publish Video2World LoRA iter_000000200.pt c1d9e3f verified2 days ago checkpointsPublish Video2World LoRA iter_000000200.pt2 days ago ..."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "dreamdifferent (dreamdifferent) - Hugging Face",
+      "url": "https://huggingface.co/dreamdifferent/datasets",
+      "snippet": "Org profile for dreamdifferent on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

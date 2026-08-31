@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "nbawali4/nanochat-d34-finetuned",
+  "slug": "nbawali4-nanochat-d34-finetuned",
+  "author": "nbawali4",
+  "url": "https://huggingface.co/nbawali4/nanochat-d34-finetuned",
+  "created_at": "2026-08-31T11:29:46.000Z",
+  "updated_at": "2026-08-31T11:29:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nanochat",
+    "gpt",
+    "text-generation",
+    "conversational",
+    "finetuned",
+    "en",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "base_model:karpathy/nanochat-d34",
+    "base_model:finetune:karpathy/nanochat-d34",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21281992357,
+  "storage_human": "21.3 GB",
+  "base_model": "karpathy/nanochat-d34",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "karpathy/nanochat-d34 · Hugging Face",
+      "url": "https://huggingface.co/karpathy/nanochat-d34",
+      "snippet": "The achieved CORE score of this base model is 0.3382. (For comparison, d32 is 0.3168, d20 \"speedrun\" is 0.22, GPT-2 is 0.25). This upload allows you to skip base model pretraining and focus on finetuning, which is a lot cheaper, and saves you $2,500 of cost. To incorporate it into your nanochat repo it&#x27;s a bit janky right now, basically download these files and then: the token_bytes.pt ..."
+    },
+    {
+      "title": "pankajmathur/nanochat-d34-finetuned · Hugging Face",
+      "url": "https://huggingface.co/pankajmathur/nanochat-d34-finetuned",
+      "snippet": "nanochat-d34-finetuned This repo has finetuned (Mid+SFT) checkpoints of karpathy/nanochat-d34, trained using the nanochat framework. Model Description Base Model: karpathy/nanochat-d34 (2.2B parameters, pre-trained on 88B tokens) Architecture: GPT-style transformer with depth=34 Training Pipeline: Mid-training → SFT → RL (optional) Hardware: 8x A100-80GB GPUs Training Details Base Model ..."
+    },
+    {
+      "title": "Fine-tuned Models for karpathy/nanochat-d34 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:karpathy/nanochat-d34",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "d34 model (~$2,500) · karpathy nanochat · Discussion #314",
+      "url": "https://github.com/karpathy/nanochat/discussions/314",
+      "snippet": "The achieved CORE score of this base model is 0.3382. (For comparison, d32 is 0.3168, d20 \"speedrun\" is 0.22, GPT-2 is 0.25). The wandb logs look like this (d32 = brown, d34 = blue, 5% resumed training = green at the very end) Notice that: d34 training was fairly stable except for a tiny bump that recovered quickly near the beginning. the training crashed for the last 5% with some cryptic NCCL ..."
+    },
+    {
+      "title": "pankajmathur/nanochat-d34-finetuned at main - Hugging Face",
+      "url": "https://huggingface.co/pankajmathur/nanochat-d34-finetuned/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

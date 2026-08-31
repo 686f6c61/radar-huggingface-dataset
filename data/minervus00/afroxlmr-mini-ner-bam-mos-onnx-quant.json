@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Minervus00/afroxlmr-mini-ner-bam-mos-onnx-quant",
+  "slug": "minervus00-afroxlmr-mini-ner-bam-mos-onnx-quant",
+  "author": "Minervus00",
+  "url": "https://huggingface.co/Minervus00/afroxlmr-mini-ner-bam-mos-onnx-quant",
+  "created_at": "2026-08-31T17:00:44.000Z",
+  "updated_at": "2026-08-31T17:05:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "xlm-roberta",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 140344309,
+  "storage_human": "140 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minervus00/afroxlmr-mini-ner-bam-mos-v2-onnx at main",
+      "url": "https://huggingface.co/Minervus00/afroxlmr-mini-ner-bam-mos-v2-onnx/tree/main",
+      "snippet": "Instructions to use Minervus00/afroxlmr-mini-ner-bam-mos-v2-onnx with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "onnxmodelzoo (ONNX Model Zoo) - Hugging Face",
+      "url": "https://huggingface.co/onnxmodelzoo",
+      "snippet": "Org profile for ONNX Model Zoo on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "MossyModels is a community library of YOLO and ONNX detection models for first-person shooters. Browse models by game, compare download counts and ratings, then download free PyTorch or ONNX weights. How the library works Each game page lists community-uploaded detection models with version numbers, input sizes, and comments."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

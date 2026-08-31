@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mytranslatenisa/ramt-labse-2",
+  "slug": "mytranslatenisa-ramt-labse-2",
+  "author": "mytranslatenisa",
+  "url": "https://huggingface.co/mytranslatenisa/ramt-labse-2",
+  "created_at": "2026-05-08T06:53:02.000Z",
+  "updated_at": "2026-08-31T14:32:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "m2m_100",
+    "generated_from_trainer",
+    "base_model:mytranslatenisa/m2m100_en_ms_FineTuned_may",
+    "base_model:finetune:mytranslatenisa/m2m100_en_ms_FineTuned_may",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 483905536,
+  "parameters_human": "483.9M",
+  "storage_bytes": 137436996672,
+  "storage_human": "137.4 GB",
+  "base_model": "mytranslatenisa/m2m100_en_ms_FineTuned_may",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mytranslatenisa/ramt-labse · Hugging Face",
+      "url": "https://huggingface.co/mytranslatenisa/ramt-labse",
+      "snippet": "🏛️ RAMT-LaBSE English → Malay Legal Translation Model RAMT-LaBSE is a Retrieval-Augmented Machine Translation (RAMT) model based on Facebook M2M100, fine-tuned specifically for English → Malay legal text translation. This model improves translation quality in: statutes contracts court documents legal terms policy & regulatory content It uses LaBSE embeddings during training for ..."
+    },
+    {
+      "title": "Ramt Labse - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/mytranslatenisa/ramt-labse",
+      "snippet": "RAMT-LaBSE is a Retrieval-Augmented Machine Translation (RAMT) model based on Facebook M2M100, fine-tuned specifically for English → Malay legal text translation."
+    },
+    {
+      "title": "Ramt Labse Api - a Hugging Face Space by mytranslatenisa",
+      "url": "https://huggingface.co/spaces/mytranslatenisa/ramt-labse-api",
+      "snippet": "Compare and find the similarity between different texts provided by you. Enter your texts, and get a measure of how similar they are in meaning."
+    },
+    {
+      "title": "AI at Meta: Meta AI Products, Models and Research",
+      "url": "https://ai.meta.com/",
+      "snippet": "Explore AI at Meta. Use Meta AI to answer questions, create images, and complete tasks for free. Plus AI research, models, and tools for developers."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

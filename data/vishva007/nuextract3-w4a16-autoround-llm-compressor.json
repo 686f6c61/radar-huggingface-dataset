@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Vishva007/NuExtract3-W4A16-AutoRound-LLM-Compressor",
+  "slug": "vishva007-nuextract3-w4a16-autoround-llm-compressor",
+  "author": "Vishva007",
+  "url": "https://huggingface.co/Vishva007/NuExtract3-W4A16-AutoRound-LLM-Compressor",
+  "created_at": "2026-08-31T11:07:49.000Z",
+  "updated_at": "2026-08-31T15:42:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "quantization",
+    "auto-round",
+    "gptq",
+    "llm-compressor",
+    "compressed-tensors",
+    "4bit",
+    "vlm",
+    "document-understanding",
+    "structured-extraction",
+    "ocr",
+    "image-text-to-text",
+    "conversational",
+    "base_model:numind/NuExtract3",
+    "base_model:quantized:numind/NuExtract3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 4450511775,
+  "storage_human": "4.5 GB",
+  "base_model": "numind/NuExtract3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NuExtract3-W4A16-AutoRound-LLM-Compressor - Hugging Face",
+      "url": "https://huggingface.co/Vishva007/NuExtract3-W4A16-AutoRound-LLM-Compressor",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Vishva007 (Vishva R) - Hugging Face",
+      "url": "https://huggingface.co/Vishva007",
+      "snippet": "Deeply interested in Generative AI, particularly Large Language Models (LLMs). Focusing on model fine-tuning, prompt engineering, and practical applications using the Hugging Face ecosystem (Transf..."
+    },
+    {
+      "title": "AutoRound Quantization - LLM Compressor Docs",
+      "url": "https://docs.vllm.ai/projects/llm-compressor/en/latest/examples/autoround/",
+      "snippet": "Home Examples AutoRound Quantization llm-compressor supports AutoRound, an advanced quantization technique that delivers high-accuracy, low-bit quantization. The quantized results are fully compatible with compressed-tensors and can be served directly with vLLM. AutoRound introduces three trainable parameters (V, α, and β) to optimize rounding values and clipping ranges during quantization ..."
+    },
+    {
+      "title": "llm-compressor/examples/autoround at main · vllm-project/llm ... - GitHub",
+      "url": "https://github.com/vllm-project/llm-compressor/tree/main/examples/autoround",
+      "snippet": "llm-compressor supports AutoRound, an advanced quantization technique that delivers high-accuracy, low-bit quantization. The quantized results are fully compatible with compressed-tensors and can be served directly with vLLM. AutoRound introduces three trainable parameters (V, α, and β) to optimize rounding values and clipping ranges during quantization. The method processes each decoder ..."
+    },
+    {
+      "title": "llm-compressor/examples/autoround/quantization_w4a16/README.md ... - GitHub",
+      "url": "https://github.com/vllm-project/llm-compressor/blob/main/examples/autoround/quantization_w4a16/README.md",
+      "snippet": "llm-compressor supports AutoRound, an advanced quantization technique that delivers high-accuracy, low-bit quantization. The quantized results are fully compatible with compressed-tensors and can be served directly with vLLM. AutoRound introduces three trainable parameters (V, α, and β) to optimize rounding values and clipping ranges during quantization. The method processes each decoder ..."
+    }
+  ]
+}

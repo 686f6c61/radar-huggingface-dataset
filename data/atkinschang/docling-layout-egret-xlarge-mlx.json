@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "atkinschang/docling-layout-egret-xlarge-mlx",
+  "slug": "atkinschang-docling-layout-egret-xlarge-mlx",
+  "author": "atkinschang",
+  "url": "https://huggingface.co/atkinschang/docling-layout-egret-xlarge-mlx",
+  "created_at": "2026-08-31T16:14:29.000Z",
+  "updated_at": "2026-08-31T16:14:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "d_fine",
+    "base_model:docling-project/docling-layout-egret-xlarge",
+    "base_model:finetune:docling-project/docling-layout-egret-xlarge",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 62720711,
+  "parameters_human": "62.7M",
+  "storage_bytes": 251066332,
+  "storage_human": "251 MB",
+  "base_model": "docling-project/docling-layout-egret-xlarge",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "docling-project/docling-layout-egret-large · Hugging Face",
+      "url": "https://huggingface.co/docling-project/docling-layout-egret-large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · docling-project/docling-layout-egret-xlarge at main",
+      "url": "https://huggingface.co/docling-project/docling-layout-egret-xlarge/blob/main/README.md",
+      "snippet": "Document Layout Analysis \"egret-xlarge\" 🚀 egret-xlarge is a Document Layout Analysis Model used in the Docling project."
+    },
+    {
+      "title": "docling-layout-egret-xlarge · Models",
+      "url": "https://www.modelscope.cn/models/ds4sd/docling-layout-egret-xlarge",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    },
+    {
+      "title": "Model Catalog - Docling",
+      "url": "https://docling-project.github.io/docling/usage/model_catalog/",
+      "snippet": "Documentation Usage Model Catalog This document provides a comprehensive overview of all models and inference engines available in Docling, organized by processing stage. Overview Docling&#x27;s document processing pipeline consists of multiple stages, each using specialized models and inference engines. This catalog helps you understand: What stages are available for document processing Which ..."
+    },
+    {
+      "title": "docling.ai - Turn complex documents into structured data your AI can use",
+      "url": "https://docling.ai/",
+      "snippet": "Docling is open-source document intelligence. Preserve layout, reading order, tables, formulas, pictures and provenance in one document model — locally, as a service, or on private infrastructure."
+    }
+  ]
+}

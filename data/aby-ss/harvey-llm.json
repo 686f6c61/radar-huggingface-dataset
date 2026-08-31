@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Aby-ss/harvey-llm",
+  "slug": "aby-ss-harvey-llm",
+  "author": "Aby-ss",
+  "url": "https://huggingface.co/Aby-ss/harvey-llm",
+  "created_at": "2026-08-31T11:26:51.000Z",
+  "updated_at": "2026-08-31T11:27:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955088,
+  "storage_human": "173 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Harvey | AI software for legal and professional services",
+      "url": "https://www.harvey.ai/",
+      "snippet": "Legal AI tailored for leading law firms and corporate legal teams worldwide. Harvey streamlines contract analysis, due diligence, compliance, and litigation."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Does Harvey AI Use Claude? The Models Behind Harvey (2026)",
+      "url": "https://claudeforlawyers.com/blog/does-harvey-use-claude",
+      "snippet": "Yes, Harvey AI uses Claude. Since May 2025 Harvey runs on Anthropic&#x27;s Claude plus OpenAI and Google models. See the full multi-model setup and what it means."
+    },
+    {
+      "title": "Harvey LAB-AA Benchmark Leaderboard | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/evaluations/harvey-lab-aa",
+      "snippet": "Compare AI model performance on Harvey LAB-AA Benchmark Leaderboard. Artificial Analysis&#x27; implementation of Harvey&#x27;s Legal Agent Benchmark (LAB), testing AI agents on real-world legal work from Harvey&#x27;s dataset of 120 private tasks spanning 24 legal practice areas. The agent reads case documents in a sandbox and produces legal deliverables (e.g., memos, disclosure schedules, deposition ..."
+    },
+    {
+      "title": "AA Harvey LAB Leaderboard & Scores — August 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/benchmarks/aaharveylab",
+      "snippet": "AA Harvey LAB task success rate snapshot across 13 AI models. Display only on BenchLM and excluded from overall rankings. An independently evaluated legal-agent benchmark from Artificial Analysis."
+    }
+  ]
+}

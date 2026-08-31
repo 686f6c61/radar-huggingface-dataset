@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "loom-ai-org/qwen3-0.6b-base-loom",
+  "slug": "loom-ai-org-qwen3-0-6b-base-loom",
+  "author": "loom-ai-org",
+  "url": "https://huggingface.co/loom-ai-org/qwen3-0.6b-base-loom",
+  "created_at": "2026-08-11T12:31:59.000Z",
+  "updated_at": "2026-08-31T16:47:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "loom-py-rt",
+  "languages": [],
+  "tags": [
+    "loom-py-rt",
+    "gguf",
+    "text-generation",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:quantized:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 209,
+  "trending_score": 0,
+  "parameters": 596208065,
+  "parameters_human": "596.2M",
+  "storage_bytes": 9561994368,
+  "storage_human": "9.6 GB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "loom-ai-org/qwen3-0.6b-base-loom · Hugging Face",
+      "url": "https://huggingface.co/loom-ai-org/qwen3-0.6b-base-loom",
+      "snippet": "Qwen3-.6B-Base Qwen3 0.6B base causal LM, exported for loom.cpp. This is a loom.cpp export: a single self-describing GGUF that carries its own graph topologies, tokenizer (if any) and driver script, produced by loom-exporter."
+    },
+    {
+      "title": "Qwen/Qwen3-0.6B-Base · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-0.6B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_0_6b",
+      "snippet": "Qwen3-0.6B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑0.6B is a state‑of‑the‑art multilingual language model with 0.6 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "GitHub - TrentConley/qwen3-0.6",
+      "url": "https://github.com/TrentConley/qwen3-0.6",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features: Uniquely support of seamless switching between thinking ..."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    }
+  ]
+}

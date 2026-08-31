@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "deadfast/beach-volley-vision-models",
+  "slug": "deadfast-beach-volley-vision-models",
+  "author": "deadfast",
+  "url": "https://huggingface.co/deadfast/beach-volley-vision-models",
+  "created_at": "2026-08-31T14:46:18.000Z",
+  "updated_at": "2026-08-31T14:49:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "computer-vision",
+    "object-tracking",
+    "sports",
+    "volleyball",
+    "tracknet",
+    "object-detection",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136206502,
+  "storage_human": "136 MB",
+  "base_model": "qaz812345/TrackNetV3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "norapfr/volleyvision-models · Hugging Face",
+      "url": "https://huggingface.co/norapfr/volleyvision-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sloansuperservices/Volleyvision · Hugging Face",
+      "url": "https://huggingface.co/sloansuperservices/Volleyvision",
+      "snippet": "sloansuperservices / Volleyvision like 0 Object Detection fastai English sports License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Beach volleyball Object Detection Model by beach volley",
+      "url": "https://universe.roboflow.com/beach-volley/beach-volleyball-3e0mb",
+      "snippet": "3849 open source ball images plus a pre-trained Beach volleyball model and API. Created by beach volley"
+    },
+    {
+      "title": "Beachvision - Smarter Beach Volleyball Training",
+      "url": "https://beachvision.ai/",
+      "snippet": "Beachvision Smarter Beach Volleyball Training Upload your session, review point-by-point insights, and focus your next reps with clear coaching takeaways. Go to Login"
+    },
+    {
+      "title": "Developed a computer vision model for beach volleyball ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/wevolver_developed-a-computer-vision-model-for-beach-activity-7424879251021266944-Pk36",
+      "snippet": "Developed a computer vision model for beach volleyball analysis using Roboflow Rapid, SAM3, and Python to detect players, the ball, and the net. The system supports automated statistics collection ..."
+    }
+  ]
+}

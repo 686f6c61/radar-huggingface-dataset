@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "toolathlon3/MyAwesomeModel-TestRepo",
+  "slug": "toolathlon3-myawesomemodel-testrepo",
+  "author": "toolathlon3",
+  "url": "https://huggingface.co/toolathlon3/MyAwesomeModel-TestRepo",
+  "created_at": "2026-08-31T15:13:36.000Z",
+  "updated_at": "2026-08-31T15:14:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Toolathlonsgh/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/Toolathlonsgh/MyAwesomeModel-TestRepo",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "ptsolmyr/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/ptsolmyr/MyAwesomeModel-TestRepo",
+      "snippet": "The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training."
+    },
+    {
+      "title": "MyAwesomeModel TestRepo (未知) — MMLU 30 | Benchmarks & Deploy Guide ...",
+      "url": "https://openmodelmap.com/model/ToolathlonBot/MyAwesomeModel-TestRepo",
+      "snippet": "MyAwesomeModel TestRepo by dongbobo. Scores: MMLU 30, . 未知 open-source AI model. MyAwesomeModel-TestRepo is an embedding model based on BERT by dongbobo, licensed under MIT and desi"
+    },
+    {
+      "title": "Myawesomemodel Testrepo - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/toolathlon-eval-10/myawesomemodel-testrepo",
+      "snippet": "Deep dive into Myawesomemodel Testrepo. 1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding ..."
+    },
+    {
+      "title": "MyAwesomeModel-TestRepo | Deploy Guide & Hardware Fit | OpenModelMap",
+      "url": "https://openmodelmap.com/model/modoupennington876/myawesomemodel-testrepo",
+      "snippet": "MyAwesomeModel-TestRepo is primarily used for Embeddings. Myawesomemodel-Testrepo is a large language model released by modoupennington876, focusing on text generation and conversational interaction, suitable for server deployment."
+    }
+  ]
+}

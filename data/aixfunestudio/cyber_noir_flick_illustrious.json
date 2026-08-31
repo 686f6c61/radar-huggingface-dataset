@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AIxFuneStudio/Cyber_Noir_Flick_Illustrious",
+  "slug": "aixfunestudio-cyber_noir_flick_illustrious",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Cyber_Noir_Flick_Illustrious",
+  "created_at": "2026-08-31T14:55:34.000Z",
+  "updated_at": "2026-08-31T15:08:34.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6938040866,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AIxFuneStudio/Cyber_Neon_Illustrious · Hugging Face",
+      "url": "https://huggingface.co/AIxFuneStudio/Cyber_Neon_Illustrious",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AIxFuneStudio (AIxFun eStudio) - Hugging Face",
+      "url": "https://huggingface.co/AIxFuneStudio",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 day ago ... updated a model 1 day ago"
+    },
+    {
+      "title": "Cyber Neon Illustrious - AIxFun eStudio&#x27;s Ko-fi Shop",
+      "url": "https://ko-fi.com/s/73ea488ece",
+      "snippet": "- This model is part of June 2026 models collection for AIxFun eStudio members. - Examples: videos + images. ℹ️ Cyber Neon is a luminous cinematic style that blends futuristic elegance with vibrant fantasy. It is defined by its signature high-gloss and iridescent surfaces that shimmer with rainbow holographic reflections, combined with dramatic lighting that creates powerful highlights ..."
+    },
+    {
+      "title": "martineux/cyberillustrious · Hugging Face",
+      "url": "https://huggingface.co/martineux/cyberillustrious",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=illustrious",
+      "snippet": "Explore machine learning models. Muapi/90s-anime-aesthetic-anima-illustriousxl-zimageturbo-flux-chroma"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sunningshore/lerobot_model_grab_stick",
+  "slug": "sunningshore-lerobot_model_grab_stick",
+  "author": "sunningshore",
+  "url": "https://huggingface.co/sunningshore/lerobot_model_grab_stick",
+  "created_at": "2026-08-31T11:44:37.000Z",
+  "updated_at": "2026-08-31T11:46:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:sunningshore/lerobot_dataset_grab_stick",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206706296,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LeRobot - Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/index",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - brian-zhao99/lerobot-project: LeRobot: Making AI for ...",
+      "url": "https://github.com/brian-zhao99/lerobot-project",
+      "snippet": "🤗 LeRobot contains state-of-the-art approaches that have been shown to transfer to the real-world with a focus on imitation learning and reinforcement learning. 🤗 LeRobot already provides a set of pretrained models, datasets with human collected demonstrations, and simulation environments to get started without assembling a robot."
+    },
+    {
+      "title": "GitHub - yiyikkk/lerobot-v2: LeRobot: Making AI for Robotics more ...",
+      "url": "https://github.com/yiyikkk/lerobot-v2",
+      "snippet": "LeRobot: State-of-the-art AI for real-world robotics 🤗 LeRobot aims to provide models, datasets, and tools for real-world robotics in PyTorch. The goal is to lower the barrier to entry to robotics so that everyone can contribute and benefit from sharing datasets and pretrained models."
+    },
+    {
+      "title": "lerobot (LeRobot) - Hugging Face",
+      "url": "https://huggingface.co/lerobot",
+      "snippet": "State-of-the-art Machine Learning for real-world robotics"
+    },
+    {
+      "title": "LeRobot: An Open-Source Library for End-to-End Robot Learning",
+      "url": "https://arxiv.org/html/2602.22818v1",
+      "snippet": "* Figure 1: lerobot is an open-source library for end-to-end robot learning. It covers the entire stack, from middleware motor interfaces to large-scale data collection and dataset streaming, supporting an optimized inference stack, scalable implementations of SOTA robot learning algorithms, and providing support for training custom models as well as easily reusing pre-trained ones. 1 Introduction"
+    }
+  ]
+}

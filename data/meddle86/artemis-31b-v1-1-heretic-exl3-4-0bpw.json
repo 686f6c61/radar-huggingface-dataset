@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "meddle86/Artemis-31B-v1.1-heretic-exl3-4.0bpw",
+  "slug": "meddle86-artemis-31b-v1-1-heretic-exl3-4-0bpw",
+  "author": "meddle86",
+  "url": "https://huggingface.co/meddle86/Artemis-31B-v1.1-heretic-exl3-4.0bpw",
+  "created_at": "2026-08-31T18:43:02.000Z",
+  "updated_at": "2026-08-31T19:01:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:quantized:google/gemma-4-31B-it",
+    "4-bit",
+    "exl3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10020605548,
+  "parameters_human": "10.02B",
+  "storage_bytes": 20073690461,
+  "storage_human": "20.1 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Artemis-31B-v1.1-heretic-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Artemis-31B-v1.1-heretic-i1-GGUF",
+      "snippet": "mradermacher / Artemis-31B-v1.1-heretic-i1-GGUF like 0 Transformers GGUF English heretic uncensored decensored abliterated reproducible imatrix conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Heretic: Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "Heretic is a tool that removes censorship (aka \"safety alignment\") from transformer-based language models without expensive post-training. It combines an advanced implementation of directional ablation, also known as \"abliteration\" (Arditi et al. 2024, Lai 2025 (1, 2)), with a TPE-based parameter optimizer powered by Optuna. This approach enables Heretic to work completely automatically ..."
+    },
+    {
+      "title": "MikeRoz/Artemis-31B-v1.1-exl3 · Hugging Face",
+      "url": "https://huggingface.co/MikeRoz/Artemis-31B-v1.1-exl3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "Qwen 3.6 abliterated, Gemma 4 Heretic, Dolphin 3.0 — the current uncensored picks by VRAM tier. The Llama 3.1 / Qwen 2.5 era is mostly superseded. HuggingFace repos for every pick."
+    },
+    {
+      "title": "Artemis 31B V1 by TheDrummer — VRAM 62.6GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/TheDrummer%2FArtemis-31B-v1,69lEchHqBDpE4lnqa9GTtN",
+      "snippet": "Rank the Artemis 31B V1 capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

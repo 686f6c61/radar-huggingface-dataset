@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "S7GMA/NSFW-gen",
+  "slug": "s7gma-nsfw-gen",
+  "author": "S7GMA",
+  "url": "https://huggingface.co/S7GMA/NSFW-gen",
+  "created_at": "2026-08-31T17:28:41.000Z",
+  "updated_at": "2026-08-31T17:28:41.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "pytorch",
+    "onnx",
+    "safetensors",
+    "NSFW",
+    "UnfilteredAI",
+    "not-for-all-audiences",
+    "text-to-image",
+    "en",
+    "base_model:HelpingAI/PixelGen",
+    "base_model:quantized:HelpingAI/PixelGen",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3468837944,
+  "parameters_human": "3.47B",
+  "storage_bytes": 33547359636,
+  "storage_human": "33.5 GB",
+  "base_model": "OEvortex/PixelGen",
+  "formats": [
+    "diffusers",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NSFW, Uncensored AI Image Generator - Hugging Face",
+      "url": "https://huggingface.co/spaces/xiaobuhuo/nsfw_gen",
+      "snippet": "Generate explicit, NSFW, and imaginative AI images for free"
+    },
+    {
+      "title": "Uncensored AI Generator - Promptus",
+      "url": "https://www.promptus.ai/uncensored-ai-generator",
+      "snippet": "Whether you&#x27;re generating NSFW art, politically charged visuals, glitchy aesthetics, or surreal dreamscapes — Promptus.ai is where pro-creators escape the censorship of closed platforms like Midjourney, Adobe Firefly, and RunwayML. Build with ComfyUI power, remix JSON workflows, and launch your own AI creation pipeline — with zero limitations and 100% ownership. Start Creating Uncensored ..."
+    },
+    {
+      "title": "UnfilteredAI (UnfilteredAI) - Hugging Face",
+      "url": "https://huggingface.co/UnfilteredAI",
+      "snippet": "Org profile for UnfilteredAI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Uncensored AI Image Generator — No Filters, Full Freedom | AliveAI.app",
+      "url": "https://aliveai.app/uncensored-ai",
+      "snippet": "Generate uncensored AI images with no content filters. Advanced AI models, full creative freedom, and private generation. Try the best uncensored AI art generator free."
+    },
+    {
+      "title": "8 Unrestricted AI Image Generators in 2026 [Free] | PhotoPro AI",
+      "url": "https://www.photopro-ai.com/blog/unrestricted-ai-image-generator.html",
+      "snippet": "Here are 8 unrestricted AI image generators that are free and actually working in 2026."
+    }
+  ]
+}

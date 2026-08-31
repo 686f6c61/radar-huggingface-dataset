@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "inferenceport-ai/TRELLIS.2-4B-GGUF",
+  "slug": "inferenceport-ai-trellis-2-4b-gguf",
+  "author": "inferenceport-ai",
+  "url": "https://huggingface.co/inferenceport-ai/TRELLIS.2-4B-GGUF",
+  "created_at": "2026-08-31T17:37:30.000Z",
+  "updated_at": "2026-08-31T17:37:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": "trellis",
+  "languages": [],
+  "tags": [
+    "trellis",
+    "gguf",
+    "image-to-3d",
+    "ggml",
+    "base_model:microsoft/TRELLIS.2-4B",
+    "base_model:quantized:microsoft/TRELLIS.2-4B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 474231463,
+  "parameters_human": "474.2M",
+  "storage_bytes": 15683143392,
+  "storage_human": "15.7 GB",
+  "base_model": "microsoft/TRELLIS.2-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/TRELLIS.2-4B · Hugging Face",
+      "url": "https://huggingface.co/microsoft/TRELLIS.2-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChrisColeTech/TRELLIS.2-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ChrisColeTech/TRELLIS.2-4B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TRELLIS.2: Native and Compact Structured Latents for 3D Generation",
+      "url": "https://microsoft.github.io/TRELLIS.2/",
+      "snippet": "An open-source 4B-parameter image-to-3D model producing up to 1536³ PBR textured assets, built on native 3D VAEs with 16× spatial compression, delivering efficient, scalable, high-fidelity asset generation."
+    },
+    {
+      "title": "How to run Trellis 2 3D AI locally on just 6GB VRAM (with GGUF)",
+      "url": "https://dailytopai.com/article/how-to-run-trellis-2-3d-ai-locally-on-just-6gb-vram-with-gguf-44.html",
+      "snippet": "High-quality AI 3D generation is no longer just for people with 12GB+ GPUs. Thanks to a GGUF version of Trellis 2, you can now turn a single image into a full textured 3D model locally, for free, on as little as 6GB of VRAM—often faster than the original full model."
+    },
+    {
+      "title": "GitHub - microsoft/TRELLIS.2: Native and Compact Structured Latents for ...",
+      "url": "https://github.com/microsoft/TRELLIS.2",
+      "snippet": "TRELLIS.2 is a state-of-the-art large 3D generative model (4B parameters) designed for high-fidelity image-to-3D generation. It leverages a novel \"field-free\" sparse voxel structure termed O-Voxel to reconstruct and generate arbitrary 3D assets with complex topologies, sharp features, and full PBR materials."
+    }
+  ]
+}

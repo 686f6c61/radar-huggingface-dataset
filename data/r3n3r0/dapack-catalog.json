@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "R3n3r0/dapack-catalog",
+  "slug": "r3n3r0-dapack-catalog",
+  "author": "R3n3r0",
+  "url": "https://huggingface.co/R3n3r0/dapack-catalog",
+  "created_at": "2026-08-31T12:02:05.000Z",
+  "updated_at": "2026-08-31T12:03:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "dapack",
+    "router",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 136727040,
+  "parameters_human": "136.7M",
+  "storage_bytes": 146146432,
+  "storage_human": "146 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "R3n3r0/dapack-code · Hugging Face",
+      "url": "https://huggingface.co/R3n3r0/dapack-code",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Build AI that ships Build, test, and deploy AI systems with the models, tools, and workflows your team needs. Scale on one platform."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/explore/models?tid=72f988bf-86f1-41af-91ab-2d7cd011db47",
+      "snippet": "Explore and access various AI models and tools on Azure AI Foundry for innovative solutions."
+    },
+    {
+      "title": "R3n3r0/dapack-code · Discussions - Hugging Face",
+      "url": "https://huggingface.co/R3n3r0/dapack-code/discussions",
+      "snippet": "Instructions to use R3n3r0/dapack-code with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use R3n3r0/dapack-code with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    }
+  ]
+}

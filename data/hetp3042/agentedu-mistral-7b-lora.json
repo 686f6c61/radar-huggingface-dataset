@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "hetp3042/agentedu-mistral-7b-lora",
+  "slug": "hetp3042-agentedu-mistral-7b-lora",
+  "author": "hetp3042",
+  "url": "https://huggingface.co/hetp3042/agentedu-mistral-7b-lora",
+  "created_at": "2026-08-31T12:54:57.000Z",
+  "updated_at": "2026-08-31T13:01:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "education",
+    "mistral",
+    "lora",
+    "agentedu",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:adapter:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 335610601,
+  "storage_human": "336 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - osperry/mistral-lora-finetune",
+      "url": "https://github.com/osperry/mistral-lora-finetune",
+      "snippet": "A complete local fine-tuning pipeline for Mistral-7B-Instruct-v0.2 using Apple&#x27;s MLX framework — with zero cloud dependency, zero data exposure, and a human-in-the-loop approval gate on every output. Most LLMs default to verbose, over-qualified, AI-softened language. That&#x27;s a liability when ..."
+    },
+    {
+      "title": "Fine-Tuning Mistral 7b in Google Colab with QLoRA (complete guide)",
+      "url": "https://medium.com/@codersama/fine-tuning-mistral-7b-in-google-colab-with-qlora-complete-guide-60e12d437cca",
+      "snippet": "The resulting fine-tuned model with synthetic data will outperform Openai&#x27;s GPT-4 on our domain specific benchmark."
+    },
+    {
+      "title": "Fine Tuning Mistral (or ANY LLM) using LoRA - Medium",
+      "url": "https://medium.com/@prakharsaxena11111/a-general-approach-to-fine-tune-any-llm-using-lora-29d24e47a345",
+      "snippet": "Fine Tuning Mistral (or ANY LLM) using LoRA Edit (1/2/2024): Included the keyword &#x27;Mistral&#x27; in the title for better SEO. LLMs come in various shapes and architectures, with dozens of base ..."
+    },
+    {
+      "title": "Hemgg/mistral-7b-lora_model · Hugging Face",
+      "url": "https://huggingface.co/Hemgg/mistral-7b-lora_model",
+      "snippet": "Uploaded model Developed by: Heem2 License: apache-2.0 Finetuned from model : unsloth/mistral-7b-bnb-4bit This mistral model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Walid692/agentforge-mistral-7b-qlora · Hugging Face",
+      "url": "https://huggingface.co/Walid692/agentforge-mistral-7b-qlora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

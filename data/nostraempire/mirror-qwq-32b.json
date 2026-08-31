@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "NostraEmpire/mirror-qwq-32b",
+  "slug": "nostraempire-mirror-qwq-32b",
+  "author": "NostraEmpire",
+  "url": "https://huggingface.co/NostraEmpire/mirror-qwq-32b",
+  "created_at": "2026-08-31T11:45:54.000Z",
+  "updated_at": "2026-08-31T12:06:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "en",
+    "arxiv:2309.00071",
+    "arxiv:2412.15115",
+    "base_model:Qwen/Qwen2.5-32B",
+    "base_model:finetune:Qwen/Qwen2.5-32B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48776585728,
+  "storage_human": "48.8 GB",
+  "base_model": "Qwen/Qwen2.5-32B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/QwQ-32B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/QwQ-32B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "QwQ 32B by Qwen - AI Model Details - idapt",
+      "url": "https://idapt.app/models/qwen/qwq-32b",
+      "snippet": "Yes, QwQ 32B is a reasoning model. It can think step-by-step through complex problems before providing an answer, often yielding better results on difficult tasks like math, coding, and multi-step logic."
+    },
+    {
+      "title": "bartowski/Qwen_QwQ-32B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/Qwen_QwQ-32B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "QwQ-32B: The Reasoning Model That Rivals o1 — Complete Guide",
+      "url": "https://www.generalcompute.com/blog/qwq-32b-the-reasoning-model-that-rivals-o1-complete-guide",
+      "snippet": "QwQ-32B is a 32-billion-parameter open-weight reasoning model from the Qwen team that competes with much larger reasoning models. Here is how it works, how it compares to o1, o1-mini, and DeepSeek R1, and what its long reasoning traces mean when you serve it in production."
+    },
+    {
+      "title": "QwQ-32B — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/qwen/qwq-32b",
+      "snippet": "QwQ-32B is an AI model released by Qwen on Thursday, Mar 6 2025, 37 days after Qwen2.5-Max. It is an open-weight model — the trained weights are available to download and run. It is a 32B parameter model with a 128k token context window."
+    }
+  ]
+}

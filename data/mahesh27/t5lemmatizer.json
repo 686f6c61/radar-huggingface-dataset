@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mahesh27/t5lemmatizer",
+  "slug": "mahesh27-t5lemmatizer",
+  "author": "mahesh27",
+  "url": "https://huggingface.co/mahesh27/t5lemmatizer",
+  "created_at": "2024-07-16T06:51:07.000Z",
+  "updated_at": "2026-08-31T16:47:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "generated_from_trainer",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 10897024,
+  "parameters_human": "10.9M",
+  "storage_bytes": 43603632,
+  "storage_human": "44 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mahesh27/t5lemmatizer · Hugging Face",
+      "url": "https://huggingface.co/mahesh27/t5lemmatizer",
+      "snippet": "This model does not have enough activity to be deployed to Inference API (serverless) yet. Increase its social visibility and check back later, or deploy to Inference Endpoints (dedicated) instead."
+    },
+    {
+      "title": "mahesh27 (A V S D S Mahesh) - Hugging Face",
+      "url": "https://huggingface.co/mahesh27",
+      "snippet": "Natural Language Processing, Sanskrit AI & ML interests Natural Language Processing, Sanskrit"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "Arena AI: The Official AI Ranking & LLM Leaderboard",
+      "url": "https://arena.ai/",
+      "snippet": "Chat, compare, vote for the world&#x27;s best AI models. Join the community shaping the public leaderboard for LLMs, image, and code models through real-world evaluation."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "alexha11/construction-tagger-soupR",
+  "slug": "alexha11-construction-tagger-soupr",
+  "author": "alexha11",
+  "url": "https://huggingface.co/alexha11/construction-tagger-soupR",
+  "created_at": "2026-08-31T11:06:32.000Z",
+  "updated_at": "2026-08-31T11:11:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "vision-language",
+    "image-tagging",
+    "construction",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1943876516,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexha11 (Duong Ha) · GitHub",
+      "url": "https://github.com/alexha11",
+      "snippet": "Activity overview Contributed to alexha11/Cognify, alexha11/Junction-2025, alexha11/Leadership-Education-Diversity-Analysis and 10 other repositories 1% Code review Issues 8% Pull requests 91% Commits"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "alexha11 (Duong Ha) / Starred · GitHub",
+      "url": "https://github.com/alexha11?tab=stars",
+      "snippet": "gokayfem / awesome-vlm-architectures Curated visual catalog of 155+ vision-language model (VLM/MLLM) architectures: papers, diagrams, training recipes, datasets, and a release timeline for multimodal AI agents."
+    },
+    {
+      "title": "pixai-labs/pixai-tagger-v0.9 · Hugging Face",
+      "url": "https://huggingface.co/pixai-labs/pixai-tagger-v0.9",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TAGGER",
+      "url": "https://www.tagger.pro/",
+      "snippet": "TAGGER Tagger is a decentralized AI Data Solutions Platform, establishing a DeCorp model, creating a boundless workforce in a permissionless framework for data labeling, collection, management, and trading."
+    }
+  ]
+}

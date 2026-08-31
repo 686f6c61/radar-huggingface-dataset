@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jren313/starvla-gr00t-n1d7-g1-pipette-r11",
+  "slug": "jren313-starvla-gr00t-n1d7-g1-pipette-r11",
+  "author": "jren313",
+  "url": "https://huggingface.co/jren313/starvla-gr00t-n1d7-g1-pipette-r11",
+  "created_at": "2026-08-31T15:31:20.000Z",
+  "updated_at": "2026-08-31T15:31:28.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "starVLA",
+  "languages": [],
+  "tags": [
+    "starVLA",
+    "robotics",
+    "vision-language-action",
+    "vla",
+    "gr00t",
+    "flow-matching",
+    "unitree-g1",
+    "manipulation",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jren313/g1-inspire-piston-starvla-gr00t-n1d7 · Hugging Face",
+      "url": "https://huggingface.co/jren313/g1-inspire-piston-starvla-gr00t-n1d7",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jren313/g1-inspire-piston-starvla-gr00t-n1d7 at main",
+      "url": "https://huggingface.co/jren313/g1-inspire-piston-starvla-gr00t-n1d7/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - starVLA/starVLA: StarVLA: A Lego-like Codebase for Vision ...",
+      "url": "https://github.com/starVLA/starVLA",
+      "snippet": "Thank you for your understanding and support! 🙏 In StarVLA (also a pun on \"start VLA\" ), each functional component (model, data, trainer, config, evaluation, etc.) follows a top-down, intuitive separation and high-cohesion, low-coupling principle, enabling plug-and-play design, rapid prototyping, and independent debugging."
+    },
+    {
+      "title": "StarVLA: A Lego-like Codebase for Vision-Language-Action Model Developing",
+      "url": "https://arxiv.org/pdf/2604.05014",
+      "snippet": "StarVLA: a unified platform for exploring embodied intelligence. We introduce StarVLA, an open-source research platform that brings VLM-based and world-model-based VLA paradigms into a unified modular framework. The core design is a backbone-action-head decomposition, where a shared vision-language backbone encodes the scene and instruction, and a pluggable action head maps the resulting ..."
+    },
+    {
+      "title": "GitHub - Jerryzhang258/Star-VLA: StarVLA fork with QwenPI_v3 pipeline ...",
+      "url": "https://github.com/Jerryzhang258/Star-VLA",
+      "snippet": "Overview and Key Features Overview of the StarVLA framework. StarVLA organises VLA research as a composable stack: a shared training infrastructure, pluggable foundation-model backbones (VLM / world model), interchangeable action heads (FAST, OFT, flow-matching π, GR00T-style dual-system), and benchmark-agnostic deployment hooks."
+    }
+  ]
+}

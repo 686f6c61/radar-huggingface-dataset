@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Debk/saarthi-default-prediction",
+  "slug": "debk-saarthi-default-prediction",
+  "author": "Debk",
+  "url": "https://huggingface.co/Debk/saarthi-default-prediction",
+  "created_at": "2026-08-31T12:02:20.000Z",
+  "updated_at": "2026-08-31T12:08:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "joblib",
+  "languages": [],
+  "tags": [
+    "joblib",
+    "credit-risk",
+    "default-prediction",
+    "tabular",
+    "msme",
+    "lightgbm",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58600600,
+  "storage_human": "59 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - DevDaring/IDBI_SAARTHI",
+      "url": "https://github.com/DevDaring/IDBI_SAARTHI",
+      "snippet": "SAARTHI — MSME Loan Default Early-Warning System सारथी — the charioteer who guides.Predict who defaults, see it 12 months early, say why in the same words for every loan, and show the one move that fixes it."
+    },
+    {
+      "title": "GitHub - himanshukashyap07/saarthi-ai: A wealth management and ...",
+      "url": "https://github.com/himanshukashyap07/saarthi-ai",
+      "snippet": "Saarthi is an AI-powered digital wealth management prototype with an avatar-based conversational interface, designed to sit inside IDBI Bank&#x27;s mobile banking app. It infers a customer&#x27;s behavioural risk profile from spending/investment data (via a trained ML model, not a one-time questionnaire ..."
+    },
+    {
+      "title": "Loan Default Prediction Using Snowpark ML & Model Registry - LinkedIn",
+      "url": "https://www.linkedin.com/posts/sarathib_loan-default-prediction-using-snowpark-ml-activity-7166600199405088768-8mDT",
+      "snippet": "I&#x27;ve recently published an article exploring the prediction of loan defaults, which showcases the power of Snowpark ML. By employing the Keggle loan dataset, I crafted this model, noting a ..."
+    },
+    {
+      "title": "(PDF) Loan Default Prediction Model - ResearchGate",
+      "url": "https://www.researchgate.net/publication/368807480_Loan_Default_Prediction_Model",
+      "snippet": "We present here a study for default prediction of Peer-to-Peer loans and for learning interesting associations between various attributes of the same loan applications which aim at helping the ..."
+    },
+    {
+      "title": "AI-Driven Predictive Analytics for Banking and Loan Default Predictions",
+      "url": "https://www.researchgate.net/publication/387099661_AI-Driven_Predictive_Analytics_for_Banking_and_Loan_Default_Predictions",
+      "snippet": "The banking industry faces significant challenges in managing loan portfolios, particularly in predicting and mitigating loan defaults. The integration of artificial intelligence (AI) in ..."
+    }
+  ]
+}

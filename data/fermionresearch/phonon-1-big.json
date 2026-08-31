@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "FermionResearch/Phonon-1-Big",
+  "slug": "fermionresearch-phonon-1-big",
+  "author": "FermionResearch",
+  "url": "https://huggingface.co/FermionResearch/Phonon-1-Big",
+  "created_at": "2026-08-26T14:51:00.000Z",
+  "updated_at": "2026-08-31T17:53:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "apple-silicon",
+    "speech-to-text",
+    "asr",
+    "stt",
+    "low-bit",
+    "ternary",
+    "quantization-aware-training",
+    "on-device",
+    "streaming",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:Qwen/Qwen3-ASR-0.6B",
+    "base_model:quantized:Qwen/Qwen3-ASR-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 75,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 580892956,
+  "storage_human": "581 MB",
+  "base_model": "Qwen/Qwen3-ASR-0.6B",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FermionResearch/Phonon-1-Big · Hugging Face",
+      "url": "https://huggingface.co/FermionResearch/Phonon-1-Big",
+      "snippet": "This is the largest build of the Phonon-1 family, an open speech recognition model for English that downloads in 581 MB."
+    },
+    {
+      "title": "GitHub - fermionresearch/phonon",
+      "url": "https://github.com/fermionresearch/phonon/blob/main/",
+      "snippet": "Phonon-1 is an open speech recognition model for English. It downloads in 415 MB, runs on a laptop or a datacenter GPU, and transcribes an hour of audio in about two and a half minutes. It was trained at 2.4 bits per weight from the start, and it is the second model in the lab&#x27;s low-bit lane after Neutrino-1. Models: Phonon-1 · Phonon-1-Micro · Phonon-1-Big"
+    },
+    {
+      "title": "Speech models · Fermion Docs",
+      "url": "https://www.fermionresearch.com/docs/speech-models/",
+      "snippet": "Phonon-1 Micro The smallest speech model. It trades accuracy for a smaller download and is selected with --model micro."
+    },
+    {
+      "title": "Fermion Research · Local language models and runtimes",
+      "url": "https://www.fermionresearch.com/",
+      "snippet": "Fermion Research develops Neutrino local language models, ternary QAT methods, model formats, and inference runtimes for CUDA, Apple silicon, and x86."
+    },
+    {
+      "title": "FermionResearch (Fermion Research) - Hugging Face",
+      "url": "https://huggingface.co/FermionResearch",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 14 hours ago ... published a model about 14 hours ago"
+    }
+  ]
+}

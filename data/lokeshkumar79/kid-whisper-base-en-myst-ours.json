@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "lokeshkumar79/kid-whisper-base-en-myst-ours",
+  "slug": "lokeshkumar79-kid-whisper-base-en-myst-ours",
+  "author": "lokeshkumar79",
+  "url": "https://huggingface.co/lokeshkumar79/kid-whisper-base-en-myst-ours",
+  "created_at": "2026-08-31T05:12:45.000Z",
+  "updated_at": "2026-08-31T18:46:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "children-speech",
+    "myst",
+    "en",
+    "dataset:myst",
+    "base_model:openai/whisper-base.en",
+    "base_model:finetune:openai/whisper-base.en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 72593408,
+  "parameters_human": "72.6M",
+  "storage_bytes": 290407384,
+  "storage_human": "290 MB",
+  "base_model": "openai/whisper-base.en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lokeshkumar79/kid-whisper-base-en-myst-ours · Hugging Face",
+      "url": "https://huggingface.co/lokeshkumar79/kid-whisper-base-en-myst-ours",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lokeshkumar79 (Lokesh Kumar) - Hugging Face",
+      "url": "https://huggingface.co/lokeshkumar79",
+      "snippet": "User profile of Lokesh Kumar on Hugging Face"
+    },
+    {
+      "title": "GitHub - ahmedadelattia/Kid-Whisper",
+      "url": "https://github.com/ahmedadelattia/Kid-Whisper",
+      "snippet": "A recent study investigated leveraging the My Science Tutor (MyST) children&#x27;s speech corpus to enhance Whisper&#x27;s performance in recognizing children&#x27;s speech. They were able to demonstrate some improvement on a limited testset."
+    },
+    {
+      "title": "[2309.07927] Kid-Whisper: Towards Bridging the Performance Gap in ...",
+      "url": "https://ar5iv.labs.arxiv.org/html/2309.07927",
+      "snippet": "Kid-Whisper: Towards Bridging the Performance Gap in Automatic Speech Recognition for Children VS. Adults Abstract Recent advancements in Automatic Speech Recognition (ASR) systems, exemplified by Whisper, have demonstrated the potential of these systems to approach human-level performance given sufficient data."
+    },
+    {
+      "title": "AAAI Press Formatting Instructions for Authors Using LaTeX — A Guide",
+      "url": "https://arxiv.org/html/2309.07927",
+      "snippet": "In this section, we analyze some example transcriptions from the Zero-shot Medium.en model as well as the Medium.en model trained on MyST and CSLU Scripted to gain insight into how fine-tuning Whisper can improve the performance on different domains."
+    }
+  ]
+}

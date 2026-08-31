@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "freeqaz/decomp-synth-lifter-v17-mix-qwen3.5-9b-lora",
+  "slug": "freeqaz-decomp-synth-lifter-v17-mix-qwen3-5-9b-lora",
+  "author": "freeqaz",
+  "url": "https://huggingface.co/freeqaz/decomp-synth-lifter-v17-mix-qwen3.5-9b-lora",
+  "created_at": "2026-08-31T12:39:06.000Z",
+  "updated_at": "2026-08-31T12:39:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decompilation",
+    "reverse-engineering",
+    "code",
+    "lora",
+    "powerpc",
+    "cpp",
+    "agent",
+    "tool-use",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 366284061,
+  "storage_human": "366 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "freeqaz/decomp-synth-lifter-v17-full-qwen3.5-9b-r64-lora · Hugging Face",
+      "url": "https://huggingface.co/freeqaz/decomp-synth-lifter-v17-full-qwen3.5-9b-r64-lora",
+      "snippet": "Instructions to use freeqaz/decomp-synth-lifter-v17-full-qwen3.5-9b-r64-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "decomp-synth/docs at main · freeqaz/decomp-synth · GitHub",
+      "url": "https://github.com/freeqaz/decomp-synth/tree/main/docs",
+      "snippet": "Architecture, design, and methodology docs for the decomp-synth synthesis engine. For installation, configuration, and day-to-day usage, start with the top-level README."
+    },
+    {
+      "title": "decomp-synth/docs/README.md at main · freeqaz/decomp-synth",
+      "url": "https://github.com/freeqaz/decomp-synth/blob/main/docs/README.md",
+      "snippet": "decomp-synth documentation Architecture, design, and methodology docs for the decomp-synth synthesis engine. For installation, configuration, and day-to-day usage, start with the top-level README."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,909 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "Adapter Models for Qwen/Qwen3.5-9B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:adapter:Qwen/Qwen3.5-9B",
+      "snippet": "Explore machine learning models. cometadata/funding-parsing-lora-Qwen3.5_9B-ep2-r16-a32-distill-GLM_4.5_Air"
+    }
+  ]
+}

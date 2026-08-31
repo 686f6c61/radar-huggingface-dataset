@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "YFC-112358/Qwen3.8-27B-Taste-Glimmer-Gemma-LoRA",
+  "slug": "yfc-112358-qwen3-8-27b-taste-glimmer-gemma-lora",
+  "author": "YFC-112358",
+  "url": "https://huggingface.co/YFC-112358/Qwen3.8-27B-Taste-Glimmer-Gemma-LoRA",
+  "created_at": "2026-08-31T14:27:22.000Z",
+  "updated_at": "2026-08-31T14:27:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "style-transfer",
+    "qwen3.5",
+    "en",
+    "zh",
+    "base_model:YFC-112358/Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5",
+    "base_model:adapter:YFC-112358/Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 953963343,
+  "storage_human": "954 MB",
+  "base_model": "YFC-112358/Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5",
+      "url": "https://huggingface.co/YFC-112358/Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.8 27B - GroqDocs",
+      "url": "https://console.groq.com/docs/model/qwen/qwen3.8-27b",
+      "snippet": "Qwen 3.8 27B is a 27-billion-parameter multimodal model from Alibaba&#x27;s Qwen series, delivering frontier-level agentic coding, reasoning, and long-horizon task performance that rivals models many times its size. It accepts both image and text inputs for visual understanding tasks such as image analysis, OCR, and visual question answering, and supports seamless switching between thinking mode ..."
+    },
+    {
+      "title": "Qwen3.8-27B-Della-Deckard-Fable-Qwopus-ColdFusion-v4",
+      "url": "https://huggingface.co/YFC-112358/Qwen3.8-27B-Della-Deckard-Fable-Qwopus-ColdFusion-v4/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "The official Qwen/Qwen3.8-27B-FP8 checkpoint serves directly on a 950PR — no offline re-quantization and no --quantization ascend. vLLM Ascend reads quant_method: fp8 and weight_block_size straight from the checkpoint, expands the weight_scale_inv tiles at load time and re-quantizes to MXFP8 on 950."
+    }
+  ]
+}

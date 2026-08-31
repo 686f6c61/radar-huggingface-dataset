@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "xelsoftai/LexiAfrik_Wtiny_s42_20260831_152355",
+  "slug": "xelsoftai-lexiafrik_wtiny_s42_20260831_152355",
+  "author": "xelsoftai",
+  "url": "https://huggingface.co/xelsoftai/LexiAfrik_Wtiny_s42_20260831_152355",
+  "created_at": "2026-08-31T15:24:21.000Z",
+  "updated_at": "2026-08-31T15:25:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "wo"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "asr",
+    "speech-recognition",
+    "wolof",
+    "african-languages",
+    "lexiafrik",
+    "xelsoftai",
+    "wo",
+    "dataset:galsenai/wolof_tts",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37761024,
+  "parameters_human": "37.8M",
+  "storage_bytes": 151068665,
+  "storage_human": "151 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech Recognition",
+      "dataset": "GalsenAI Wolof TTS",
+      "metric": "Word Error Rate",
+      "value": 0.9
+    }
+  ],
+  "sources": [
+    {
+      "title": "xelsoftai (Xel Soft AI) - Hugging Face",
+      "url": "https://huggingface.co/xelsoftai/models",
+      "snippet": "XEL&#x27;SOFT AI is dedicated to building Artificial Intelligence for Africa — creating inclusive NLP resources, and innovative models like AfriKora to empower communities and businesses across the cont..."
+    },
+    {
+      "title": "XEL SOFT AI | Intelligence Artificielle pour l&#x27;Afrique",
+      "url": "https://xelsoftai.com/",
+      "snippet": "XEL SOFT AI est née d&#x27;une vision simple mais ambitieuse : démocratiser l&#x27;accès à l&#x27;intelligence artificielle pour les populations africaines, en commençant par les langues locales. Notre nom \"XEL\" signifie \"intelligence\" en Wolof, reflétant notre engagement envers l&#x27;innovation technologique ancrée dans notre culture."
+    },
+    {
+      "title": "Free AI 3D Model Generator - Create Custom STL Files | Remeshy",
+      "url": "https://remeshy.com/stl-creator",
+      "snippet": "Create custom 3D printable models from text or images. AI-powered STL generator with mesh repair."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Yandex — fast Internet search",
+      "url": "https://yandex.com/",
+      "snippet": "Yandex finds anything: webpages, images, music, good. Solve any problem — from everyday to a scientific one. Search by text, voice or image."
+    }
+  ]
+}

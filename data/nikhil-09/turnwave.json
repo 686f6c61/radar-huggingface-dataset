@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "Nikhil-09/turnwave",
+  "slug": "nikhil-09-turnwave",
+  "author": "Nikhil-09",
+  "url": "https://huggingface.co/Nikhil-09/turnwave",
+  "created_at": "2026-08-31T19:00:09.000Z",
+  "updated_at": "2026-08-31T19:01:44.000Z",
+  "license": "mixed-per-model",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "end-of-turn-detection",
+    "turn-taking",
+    "voice-agents",
+    "speech",
+    "from-scratch",
+    "audio-classification",
+    "en",
+    "dataset:pipecat-ai/smart-turn-data-v3.2-train",
+    "dataset:Scicom-intl/semantic-vad-eot",
+    "dataset:li2017dailydialog/daily_dialog",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77887910,
+  "storage_human": "78 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "End-of-turn detection",
+      "dataset": "eot-bench (English)",
+      "metric": "AUC",
+      "value": 0.77
+    },
+    {
+      "task": "End-of-turn detection",
+      "dataset": "eot-bench (English)",
+      "metric": "Average precision",
+      "value": 0.602
+    },
+    {
+      "task": "End-of-turn detection",
+      "dataset": "eot-bench (English)",
+      "metric": "False cutoffs @300ms latency budget (%)",
+      "value": 42.1
+    },
+    {
+      "task": "End-of-turn detection",
+      "dataset": "eot-bench (English)",
+      "metric": "False cutoffs @600ms latency budget (%)",
+      "value": 17.2
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Turn any photo or text prompt into a 3D model with local AI. Export as GLB, OBJ, STL or PLY. Free, open source, runs entirely on your GPU — no cloud, no account."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Free AI Image Detector & Checker: Is a Photo AI? | Is It AI?",
+      "url": "https://isitai.com/ai-image-detector",
+      "snippet": "AI Image Detector & Checker: Is This Photo AI-Generated? Upload any photo, picture, or piece of AI art and our free AI image checker tells you if it was AI-generated or real, in seconds. With 95%+ accuracy across Midjourney, DALL-E, Stable Diffusion, Nano Banana, Firefly, ChatGPT and 20+ models, it&#x27;s trusted by newsrooms, educators, and content teams to verify image authenticity."
+    }
+  ]
+}

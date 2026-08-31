@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sugam24/geonusaf-stage3-fakepairs-block-fold1",
+  "slug": "sugam24-geonusaf-stage3-fakepairs-block-fold1",
+  "author": "sugam24",
+  "url": "https://huggingface.co/sugam24/geonusaf-stage3-fakepairs-block-fold1",
+  "created_at": "2026-08-30T06:22:17.000Z",
+  "updated_at": "2026-08-31T14:50:03.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "remote-sensing",
+    "synthetic-data",
+    "segmentation",
+    "diffusion",
+    "geonusaf",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10659496357,
+  "storage_human": "10.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=geonusaf",
+      "snippet": "Explore machine learning models. 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: geonusaf Clear all"
+    },
+    {
+      "title": "sugam24/geonusaf-tcsegformer-block-fold1 · Hugging Face",
+      "url": "https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold1",
+      "snippet": "GeoNUSAF TC-SegFormer -- block split, fold 1 Kathmandu Valley land-use segmentation, 6 classes, ignore_index=255, 512x512 @ 0.586 m/px."
+    },
+    {
+      "title": "Sugam Dahal sugam24 - GitHub",
+      "url": "https://github.com/sugam24",
+      "snippet": "Computer engineering student | ML learner🇳🇵. sugam24 has 16 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Duck.ai by DuckDuckGo. Private AI chat. Free.",
+      "url": "https://duck.ai/",
+      "snippet": "Use ChatGPT, Claude, and other AIs, privately. Protect chats from hackers, scammers, and companies. Keep info confidential. Free. No account required."
+    }
+  ]
+}

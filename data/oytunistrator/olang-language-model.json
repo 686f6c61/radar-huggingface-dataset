@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "oytunistrator/olang-language-model",
+  "slug": "oytunistrator-olang-language-model",
+  "author": "oytunistrator",
+  "url": "https://huggingface.co/oytunistrator/olang-language-model",
+  "created_at": "2026-08-31T11:16:37.000Z",
+  "updated_at": "2026-08-31T12:24:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "code-generation",
+    "o-language",
+    "rag",
+    "llama.cpp",
+    "text-generation",
+    "tr",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40670960,
+  "storage_human": "41 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "O-Lang — The Governed AI Orchestration Language",
+      "url": "https://www.olang.cloud/",
+      "snippet": "O-Lang is the open protocol for governed AI workflows. Write once, enforce everywhere — resolver allowlists, verified intent, cryptographic audit trails."
+    },
+    {
+      "title": "Oytunistrator",
+      "url": "https://oytun.org/",
+      "snippet": "Why Are AI Hallucination Rates High? For a long time, in my locally developed model, I had to reduce the dataset as much as possible and filter out unnecessary data during my tests."
+    },
+    {
+      "title": "OLanguage | Oytunistrator",
+      "url": "https://oytun.org/categories/olanguage/",
+      "snippet": "From Reliable Builds to Web Applications: The Latest OnixOS and O Language Changes Aug 25, 2026"
+    },
+    {
+      "title": "O-Lang — The Governed AI Orchestration Language",
+      "url": "https://www.olang.cloud/docs",
+      "snippet": "O-Lang is a workflow language for AI systems that require auditability, safety enforcement, and cryptographic accountability. Built for Finance, Healthcare, Government, and IoT — every execution is governed, not hoped for."
+    },
+    {
+      "title": "O-Lang-Central/olang-spec: O-lang Protocol Specification - GitHub",
+      "url": "https://github.com/O-Lang-Central/olang-spec",
+      "snippet": "O-Lang is a semantic orchestration protocol for governing AI and automation workflows outside application code. It enables: Runtime-enforced policy Symbol-level semantic truth Deterministic, auditable execution Portable, language-agnostic workflows O-Lang is not a developer framework, DSL, or LangChain alternative. It is a governance layer for ..."
+    }
+  ]
+}

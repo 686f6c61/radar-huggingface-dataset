@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "junsooki/h2_checkpoints",
+  "slug": "junsooki-h2_checkpoints",
+  "author": "junsooki",
+  "url": "https://huggingface.co/junsooki/h2_checkpoints",
+  "created_at": "2026-08-31T15:39:43.000Z",
+  "updated_at": "2026-08-31T18:44:20.000Z",
+  "license": "nvidia-sonic-derived",
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "humanoid",
+    "reinforcement-learning",
+    "motion-imitation",
+    "unitree-h2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 728499826,
+  "storage_human": "728 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 201 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "aI-generated illustration, character, anime / Checkpoint v2 extra ...",
+      "url": "https://www.pixiv.net/en/artworks/128074400",
+      "snippet": "aI-generated illustration, character, anime, Boy are the most prominent tags for this work posted on March 10th, 2025."
+    },
+    {
+      "title": "GitHub - MoonshotAI/checkpoint-engine: Checkpoint-engine is a simple ...",
+      "url": "https://github.com/MoonshotAI/checkpoint-engine",
+      "snippet": "Checkpoint Engine Checkpoint-engine is a simple middleware to update model weights in LLM inference engines -- a critical step in reinforcement learning. We provide an efficient and lightweight implementation for inplace weight update: updating our Kimi-K2 model (1 Trillion parameters) across thousands of GPUs takes about 20s."
+    },
+    {
+      "title": "Suplemental for H2-checkpoint.ipynb - GitHub",
+      "url": "https://github.com/GO-Loc-GO/NUS-Machine-Learning-Codes/blob/master/.ipynb_checkpoints/Suplemental%20for%20H2-checkpoint.ipynb",
+      "snippet": "Suplemental for H2-checkpoint.ipynb 233 lines (233 loc) · 50.7 KB"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "vsuhas9/LFM2-VL-450M-64",
+  "slug": "vsuhas9-lfm2-vl-450m-64",
+  "author": "vsuhas9",
+  "url": "https://huggingface.co/vsuhas9/LFM2-VL-450M-64",
+  "created_at": "2026-08-31T15:11:35.000Z",
+  "updated_at": "2026-08-31T15:12:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_vl",
+    "image-text-to-text",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450822656,
+  "parameters_human": "450.8M",
+  "storage_bytes": 901692416,
+  "storage_human": "902 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2-VL-450M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-VL-450M",
+      "snippet": "A newer version of this model is available: LiquidAI/LFM2.5-VL-450M"
+    },
+    {
+      "title": "vsuhas9/LFM2-VL-450M-8-v1 · Hugging Face",
+      "url": "https://huggingface.co/vsuhas9/LFM2-VL-450M-8-v1",
+      "snippet": "vsuhas9 / LFM2-VL-450M-8-v1 like 0 Image-Text-to-Text Transformers Safetensors lfm2_vl trl sft conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LFM2-VL: Efficient Vision-Language Models | Blog | Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-vl-efficient-vision-language-models",
+      "snippet": "Today we release LFM2-VL, our first vision-language models, built for low-latency, device-aware text and image use."
+    },
+    {
+      "title": "LFM2‑VL-450M - Models",
+      "url": "https://www.modelscope.cn/models/LiquidAI/LFM2-VL-450M",
+      "snippet": "LFM2‑VL-450M LFM2‑VL is Liquid AI &#x27;s first series of multimodal models, designed to process text and images with variable resolutions. Built on the LFM2 backbone, it is optimized for low-latency and edge AI applications. We&#x27;re releasing the weights of two post-trained checkpoints with 450M (for highly constrained devices) and 1.6B (more capable yet still lightweight) parameters. 2× faster ..."
+    },
+    {
+      "title": "Liquid AI&#x27;s LFM2-VL-450M: Vision-Language AI in Half a Billion Parameters",
+      "url": "https://rits.shanghai.nyu.edu/ai/liquid-ais-lfm2-vl-450m-vision-language-ai-in-half-a-billion-parameters/",
+      "snippet": "Liquid AI has released LFM2-VL-450M, a 450-million-parameter vision-language model designed for on-device inference. Built on Liquid&#x27;s LFM2-350M language backbone and an 86M-parameter SigLIP2 NaFlex vision encoder, the model delivers 2× faster inference than comparable VLMs on GPUs while processing images at native resolution — all under ..."
+    }
+  ]
+}

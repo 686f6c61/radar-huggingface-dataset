@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rockstarengine/vflash",
+  "slug": "rockstarengine-vflash",
+  "author": "rockstarengine",
+  "url": "https://huggingface.co/rockstarengine/vflash",
+  "created_at": "2026-08-31T11:56:37.000Z",
+  "updated_at": "2026-08-31T11:56:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UnfilteredAI (UnfilteredAI) - Hugging Face",
+      "url": "https://huggingface.co/UnfilteredAI",
+      "snippet": "Org profile for UnfilteredAI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Rockstar&#x27;s $10 Billion AI Secret - by Kamil Banc",
+      "url": "https://aiadopters.club/p/rockstars-10-billion-ai-secret",
+      "snippet": "Rockstar publicly dismisses creative AI to placate creative talent and mitigate legal risk. Behind closed doors, they are building three distinct AI ecosystems: a \"sentient\" game world, an automated production pipeline, and a live-service data engine that drives over 75% of Take-Two&#x27;s revenue through in-game microtransactions. The $12.7 billion Zynga acquisition was not about mobile ..."
+    },
+    {
+      "title": "GTA 6 AI Explained: Euphoria 2.0, RAGE 9, and Pre-Order Checklist (June ...",
+      "url": "https://www.explainx.ai/blog/gta-6-ai-technology-what-to-know-before-pre-order-2026",
+      "snippet": "GTA 6 uses zero generative AI but runs Euphoria 2.0 NPC simulation, RAGE 9 physics, procedural motion matching, and emergent behavior. Full AI breakdown and pre-order guide."
+    },
+    {
+      "title": "[Beta] Cube 3D Generation Tools and APIs for Creators",
+      "url": "https://devforum.roblox.com/t/beta-cube-3d-generation-tools-and-apis-for-creators/3558947",
+      "snippet": "Last year at RDC, we announced an ambitious project to power the creation of immersive 3D objects and scenes in Roblox. Today, we are excited to launch Cube 3D, a 1.8B parameter foundation model for 3D creation trained on 1.5M 3D assets—including the beta of its first capability, text-to-3D mesh generation, also known as the Mesh Generation API. Roblox Cube, our core generative AI system ..."
+    },
+    {
+      "title": "3DGenerator.dev — Roblox 3D Model Generator",
+      "url": "https://3dgenerator.dev/",
+      "snippet": "The most advanced 3D Model Generator for Roblox. Create premium assets for your Roblox Experience. Customize everything: from animations to individual parts and meshes."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Maram8/poca-SoccerTwos",
+  "slug": "maram8-poca-soccertwos",
+  "author": "Maram8",
+  "url": "https://huggingface.co/Maram8/poca-SoccerTwos",
+  "created_at": "2026-08-31T11:30:19.000Z",
+  "updated_at": "2026-08-31T11:31:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SoccerTwos",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SoccerTwos",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117869443,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "akanametov/SoccerTwos · Hugging Face",
+      "url": "https://huggingface.co/akanametov/SoccerTwos",
+      "snippet": "Edit model card poca SoccerTwos poca Agent playing SoccerTwos This is a trained model of a poca agent playing SoccerTwos using the Unity ML-Agents Library. Usage (with ML-Agents)"
+    },
+    {
+      "title": "akanametov/MLAgents-poca-SoccerTwos · Hugging Face",
+      "url": "https://huggingface.co/akanametov/MLAgents-poca-SoccerTwos",
+      "snippet": "ML-Agents-SoccerTwos Model card Files Files and versions Metrics Training metrics Community Use this model Edit model card poca Agent playing SoccerTwos Usage (with ML-Agents) Resume the training Watch your Agent play"
+    },
+    {
+      "title": "huanvo88/poca-SoccerTwos - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/199307",
+      "snippet": "Resume the training ... Watch your Agent play You can watch your agent playing directly in your browser:. Go to https://huggingface.co/spaces/unity/ML-Agents-SoccerTwos Step 1: Write your model_id: huanvo88/poca-SoccerTwos Step 2: Select your .nn /.onnx file Click on Watch the agent play 👀"
+    },
+    {
+      "title": "poca-SoccerTwos Open-Source Deep Reinforcement Learning Model ...",
+      "url": "https://model.aibase.com/models/details/1915692709983182850",
+      "snippet": "This is a trained model of a poca agent playing SoccerTwos using the Unity ML-Agents Library, enabling deep reinforcement learning in the SoccerTwos environment."
+    },
+    {
+      "title": "ByteExplorer/poca-SoccerTwos - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/256785",
+      "snippet": "poca Agent playing SoccerTwos This is a trained model of a poca agent playing SoccerTwos using the Unity ML-Agents Library. Usage (with ML-Agents) The Documentation: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/ We wrote a complete tutorial to learn to train your first agent using ML-Agents and publish it to ..."
+    }
+  ]
+}

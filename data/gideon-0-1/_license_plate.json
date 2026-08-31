@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Gideon-0-1/_license_plate",
+  "slug": "gideon-0-1-_license_plate",
+  "author": "Gideon-0-1",
+  "url": "https://huggingface.co/Gideon-0-1/_license_plate",
+  "created_at": "2026-08-31T17:53:58.000Z",
+  "updated_at": "2026-08-31T17:53:58.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openminderai/gideon-v0 · Hugging Face",
+      "url": "https://huggingface.co/openminderai/gideon-v0",
+      "snippet": "openminderai / gideon-v0 like 0 Follow Openminder AI 2 Text Generation Transformers Safetensors English qwen2 conversational text-generation-inference Inference Endpoints License:mit Model card FilesFiles and versions Community Train Deploy Use this model"
+    },
+    {
+      "title": "license_plate_recognition_pipelined_image.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/DeGirum/PySDKExamples/blob/main/examples/multimodel/license_plate_recognition_pipelined_image.ipynb",
+      "snippet": "This notebook is an example of how to use DeGirum PySDK to do AI inference of a graphical file using two AI models: license plate detection and license recognition. The license plate detection model is run on the image and the results are then processed by the license recognition model, one license plate at a time. Combined result is then displayed. This script uses PIL as image processing ..."
+    },
+    {
+      "title": "morsetechlab/yolov11-license-plate-detection · Hugging Face",
+      "url": "https://huggingface.co/morsetechlab/yolov11-license-plate-detection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ankandrew/open-image-models: Pre-trained image models using ...",
+      "url": "https://github.com/ankandrew/open-image-models",
+      "snippet": "🚀 Pre-trained: Models are ready for immediate use, no additional training required. 🌟 ONNX: Cross-platform support for fast inference on both CPU and GPU environments. ⚡ Performance: Optimized for both speed and accuracy, ensuring efficient real-time applications. 💻 Simple API: Power up your applications with robust model inference in just one line of code."
+    },
+    {
+      "title": "imtiaz-ahmed8251/ai-license-plate-reader - GitHub",
+      "url": "https://github.com/imtiaz-ahmed8251/ai-license-plate-reader",
+      "snippet": "AI-Powered Detection: Leverages the multimodal capabilities of the Gemini 1.5 Flash model to find license plates. Bounding Box Annotation: Visually highlights the detected license plate on the original image. Text Extraction: Reads and displays the characters from the license plate. User-Friendly Interface: Clean and simple UI powered by Streamlit."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "lntthanisandra/lntthanisandra",
+  "slug": "lntthanisandra-lntthanisandra",
+  "author": "lntthanisandra",
+  "url": "https://huggingface.co/lntthanisandra/lntthanisandra",
+  "created_at": "2026-08-31T12:58:25.000Z",
+  "updated_at": "2026-08-31T12:58:26.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L&T Realty Thanisandra lntthanisandra - GitHub",
+      "url": "https://github.com/lntthanisandra",
+      "snippet": "L&T Thanisandra is an upcoming premium residential apartment project by L&T Realty located in the rapidly developing Thanisandra area of North Bangalore."
+    },
+    {
+      "title": "lntthanisandra - LeetCode Profile",
+      "url": "https://leetcode.com/u/lntthanisandra/?ref=peerlist",
+      "snippet": "View lntthanisandra&#x27;s profile on LeetCode, the world&#x27;s largest programming community."
+    },
+    {
+      "title": "L&T Thanisandra - Linktree",
+      "url": "https://linktr.ee/lntthanisandra",
+      "snippet": "L&T Thanisandra is strategically located in Thanisandra, North Bangalore, one of the city&#x27;s fastest-growing residential and commercial regions."
+    },
+    {
+      "title": "Lnt Thanisandra - ThingSpeak IoT",
+      "url": "https://thingspeak.mathworks.com/channels/3427446",
+      "snippet": "L&T Thanisandra is an upcoming premium residential apartment project by L&T Realty located in the rapidly developing Thanisandra area of North Bangalore. The project is designed to offer spacious 3, 4, and 5 BHK luxury apartments with modern architecture, - Lnt Thanisandra on ThingSpeak - ThingSpeak is the open IoT platform with MATLAB analytics."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

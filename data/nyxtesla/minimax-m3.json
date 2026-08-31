@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "nyxtesla/MiniMax-M3",
+  "slug": "nyxtesla-minimax-m3",
+  "author": "nyxtesla",
+  "url": "https://huggingface.co/nyxtesla/MiniMax-M3",
+  "created_at": "2026-08-31T12:54:34.000Z",
+  "updated_at": "2026-08-31T12:54:36.000Z",
+  "license": "minimax-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minimax_m3_vl",
+    "image-text-to-text",
+    "multimodal",
+    "moe",
+    "agent",
+    "coding",
+    "video",
+    "conversational",
+    "custom_code",
+    "arxiv:2606.13392",
+    "license:other",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 427040140160,
+  "parameters_human": "427.04B",
+  "storage_bytes": 854180815957,
+  "storage_human": "854.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax M3 - Coding & Agentic Frontier, 1M Context, Multimodal",
+      "url": "https://www.minimax.io/models/text/m3",
+      "snippet": "MiniMax M3 reaches frontier-level performance on coding and agentic tasks, with a 1M context window powered by the MSA architecture and native multimodal understanding. The first open-weight model to unite all three capabilities."
+    },
+    {
+      "title": "minimax/minimax-m3 | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/minimax/minimax-m3",
+      "snippet": "MiniMax M3 is the first open-weights flagship that brings coding, agentic reasoning, million-token context, and native multimodality together in one model. It handles autonomous task decomposition, tool use, and multi-step reasoning with ease — and writes code that&#x27;s meant to ship, not code that just runs. Built on MiniMax&#x27;s proprietary Sparse Attention architecture, M3 natively supports ..."
+    },
+    {
+      "title": "MiniMax M3: API Pricing, Benchmarks & 1M Context",
+      "url": "https://minimax-ai.chat/models/minimax-m3/",
+      "snippet": "Explore MiniMax M3 specifications, multimodal inputs, one-million-token context, API pricing, benchmark claims, open weights, licensing and limitations."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-M3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-M3/",
+      "snippet": "MiniMax-M3 is a native multimodal model with 1M context. It has ~428B parameters and ~23B activated parameters. Highlights: Native Multimodality: M3 undergoes mixed-modality training from the very first step, enabling deeper semantic fusion across text, image, and video. Context Scaling via Sparse Attention: M3 introduces MiniMax Sparse Attention (MSA) to improve long context efficiency. M3 ..."
+    },
+    {
+      "title": "MiniMax M3: Pricing, Benchmarks, Specs | TensorFeed.ai",
+      "url": "https://tensorfeed.ai/models/minimax-m3",
+      "snippet": "MiniMax M3, the June 2026 open-weight coding model with sparse attention. $0.30/$1.20 pricing, 1M context window, SWE-Bench Pro claims, and specs on TensorFeed."
+    }
+  ]
+}

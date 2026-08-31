@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "pollen-robotics/microduck-policies",
+  "slug": "pollen-robotics-microduck-policies",
+  "author": "pollen-robotics",
+  "url": "https://huggingface.co/pollen-robotics/microduck-policies",
+  "created_at": "2026-08-31T12:33:11.000Z",
+  "updated_at": "2026-08-31T12:34:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7143215,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    },
+    {
+      "title": "pollen-robotics/microduck: A Tiny biped duck robot - GitHub",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "Meet Microduck | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/blog/introducing-microduck/",
+      "snippet": "It sees, listens, speaks, and uses its head and body to communicate. Voice is its primary medium, making it an excellent platform for developing conversational AI, experimenting with vision models, and building expressive human-robot interactions. Microduck starts from the other side of physical AI: action. How do you teach a robot to move?"
+    },
+    {
+      "title": "Microduck - Pollen Robotics SAS",
+      "url": "https://store.pollen-robotics.com/products/microduck",
+      "snippet": "Microduck comes with built-in behaviors and an included controller, so you can start playing right away. Developers can use the open-source SDK to create new behaviors, train reinforcement learning policies in simulation, and deploy them to the real robot. Shipping & Availability Pre-order price: $399 before taxes and shipping."
+    },
+    {
+      "title": "microduck/policies at main · pollen-robotics/microduck · GitHub",
+      "url": "https://github.com/pollen-robotics/microduck/tree/main/policies",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    }
+  ]
+}

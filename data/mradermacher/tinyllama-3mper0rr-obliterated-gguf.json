@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/TinyLlama-3MPER0RR-obliterated-GGUF",
+  "slug": "mradermacher-tinyllama-3mper0rr-obliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/TinyLlama-3MPER0RR-obliterated-GGUF",
+  "created_at": "2026-08-31T11:34:24.000Z",
+  "updated_at": "2026-08-31T11:47:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:3MPER0RR/TinyLlama-3MPER0RR-obliterated",
+    "base_model:quantized:3MPER0RR/TinyLlama-3MPER0RR-obliterated",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 9811221376,
+  "storage_human": "9.8 GB",
+  "base_model": "3MPER0RR/TinyLlama-3MPER0RR-obliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/tinyllama-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/tinyllama-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/tinyLlama-3.1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/tinyLlama-3.1-GGUF",
+      "snippet": "Model tree for mradermacher/tinyLlama-3.1-GGUF Base model artek0chumak/tinyLlama-3.1 Quantized"
+    },
+    {
+      "title": "abliterated · Ollama",
+      "url": "https://ollama.com/search?q=abliterated",
+      "snippet": "Cipher-Abliterated is an adaptive conversational AI system designed for flexible interaction, enhanced creative reasoning, and less restrictive conversational behavior while maintaining structured output and technical usability."
+    },
+    {
+      "title": "GitHub - jzhang38/TinyLlama: The TinyLlama project is an open endeavor ...",
+      "url": "https://github.com/jzhang38/TinyLlama",
+      "snippet": "The TinyLlama project is an open endeavor to pretrain a 1.1B Llama model on 3 trillion tokens. - jzhang38/TinyLlama"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

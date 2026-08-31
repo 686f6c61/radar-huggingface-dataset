@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Jayanthrx/deepfake-efficientnet",
+  "slug": "jayanthrx-deepfake-efficientnet",
+  "author": "Jayanthrx",
+  "url": "https://huggingface.co/Jayanthrx/deepfake-efficientnet",
+  "created_at": "2026-08-31T12:04:01.000Z",
+  "updated_at": "2026-08-31T12:08:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37355754,
+  "storage_human": "37 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Jarallahx/deepfake-detection-system: AI-Powered Deepfake ...",
+      "url": "https://github.com/Jarallahx/deepfake-detection-system",
+      "snippet": "A comprehensive web-based deepfake detection system built with EfficientNet-B4 and MTCNN face detection preprocessing. The system detects manipulated facial imagery with 99.36% accuracy and identifies facial filter types with 98.93% accuracy."
+    },
+    {
+      "title": "GitHub - rupadtu/Deepfake-Detection-using-EfficientNet",
+      "url": "https://github.com/rupadtu/Deepfake-Detection-using-EfficientNet",
+      "snippet": "This project implements a deep learning model using EfficientNet to detect deepfake images. The approach involves training a binary classification model using EfficientNet-B0, a lightweight and powerful convolutional neural network. The dataset consists of real and fake images, and the model learns to distinguish between them using transfer learning, data augmentation, and cross-validation ..."
+    },
+    {
+      "title": "DeepFake Detection: Evaluating the Performance of EfficientNetV2‐B2 on ...",
+      "url": "https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/ipr2.70152",
+      "snippet": "Train and evaluate the EfficientNetV2-B2 model in terms of its performance on real vs. deepfake image discrimination. Optimize the image preprocessing and data augmentation processes to improve model robustness and generalizability. Utilize adaptive learning rate adjustments when training the model to enhance convergence rates and overall accuracy."
+    },
+    {
+      "title": "SpectraNet: FFT-assisted Deep Learning Classifier for Deepfake Face ...",
+      "url": "https://arxiv.org/html/2511.19187",
+      "snippet": "Abstract Detecting deepfake images is crucial in combating misinformation. We present a lightweight, generalizable binary classification model based on EfficientNet-B6, fine-tuned with transformation techniques to address severe class imbalances. By leveraging robust preprocessing, oversampling, and optimization strategies, our model achieves high accuracy, stability, and generalization. While ..."
+    },
+    {
+      "title": "EfficientNet-Based Deepfake Detection: A Robust Approach for Real and ...",
+      "url": "https://ieeexplore.ieee.org/document/10862025",
+      "snippet": "This model is crafted with a view to being scalable and computationally efficient at the same time, suitable for high-resolution media. Similarly, Umadevi et al. [2] discuss Efficient CNNs for the detection of deepfake faces and present the efficiency of these models in detecting manipulated visual content."
+    }
+  ]
+}

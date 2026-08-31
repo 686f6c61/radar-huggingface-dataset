@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-837b4aa002c741fa",
+  "slug": "gradients-io-tournaments-augmented-837b4aa002c741fa",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-837b4aa002c741fa",
+  "created_at": "2026-08-31T15:01:26.000Z",
+  "updated_at": "2026-08-31T15:01:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 723674912,
+  "storage_human": "724 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gradients-io-tournaments/augmented-0e813e1d241b4e4b · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-0e813e1d241b4e4b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gradients-io-tournaments/augmented-843231b26a4df7fd · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-843231b26a4df7fd",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gradients-io-tournaments/augmented-0a2c70af1f45c435 API & Inference ...",
+      "url": "https://friendli.ai/models/gradients-io-tournaments/augmented-0a2c70af1f45c435",
+      "snippet": "Run gradients-io-tournaments/augmented-0a2c70af1f45c435 with FriendliAI inference. This is the model card of a 🤗 transformers model that has been pushed on…"
+    },
+    {
+      "title": "Gradients | Anyone Can Train AI",
+      "url": "https://www.gradients.io/",
+      "snippet": "INTELLIGENCE, SIMPLIFIED. Gradients allows anyone in the world to train image & text models - intelligence, simplified."
+    },
+    {
+      "title": "tournament-tourn_e758aac2d861c378_20260824-de0838ff-9fdd-48c2-a9aa ...",
+      "url": "https://friendli.ai/models/gradients-io-tournaments/tournament-tourn_e758aac2d861c378_20260824-de0838ff-9fdd-48c2-a9aa-913be86e4cdd-5GU4Xkd3",
+      "snippet": "Deploy tournament-tourn_e758aac2d861c378_20260824-de0838ff-9fdd-48c2-a9aa-913be86e4cdd-5GU4Xkd3 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

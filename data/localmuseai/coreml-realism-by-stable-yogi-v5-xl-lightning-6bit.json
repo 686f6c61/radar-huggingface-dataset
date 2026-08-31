@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "LocalMuseAI/coreml-realism-by-stable-yogi-v5-xl-lightning-6bit",
+  "slug": "localmuseai-coreml-realism-by-stable-yogi-v5-xl-lightning-6bit",
+  "author": "LocalMuseAI",
+  "url": "https://huggingface.co/LocalMuseAI/coreml-realism-by-stable-yogi-v5-xl-lightning-6bit",
+  "created_at": "2026-08-31T16:56:53.000Z",
+  "updated_at": "2026-08-31T17:00:57.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "stable-diffusion-xl",
+    "lightning",
+    "localmuse",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3267278251,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LocalMuseAI (LocalMuse AI) - Hugging Face",
+      "url": "https://huggingface.co/LocalMuseAI/models",
+      "snippet": "Org profile for LocalMuse AI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Realism By Stable Yogi (Pony) - V5_XL_Lightning | Stable Diffusion XL ...",
+      "url": "https://civitai.com/models/166609?modelVersionId=1075465",
+      "snippet": "Pro Version of Realism Pony V4-V5-V6 now. Get the Pro version of my models here Onsite generations are permanently available on these models: 👉 Rea..."
+    },
+    {
+      "title": "LocalMuseAI/coreml-realvisxl-v5-lightning-6bit · Hugging Face",
+      "url": "https://huggingface.co/LocalMuseAI/coreml-realvisxl-v5-lightning-6bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Realism by Stable Yogi Krea2 - v2.5 INT8 Turbo | Krea 2 Checkpoint ...",
+      "url": "https://civitai.com/models/2786499/realism-by-stable-yogi-krea2",
+      "snippet": "Realism by Stable Yogi · Krea 2 · V2.5 The full-spectrum Realism — every look, every mood, the widest range we&#x27;ve built. What&#x27;s NEW in V2.5 - The complete blend. Everything from V2.0 plus a richer, moodier warmth — the broadest range of faces, skin, light, and mood in one model. - Full versatility. Clean documentary, warm film, moody and cinematic — it does all of it, guided by your ..."
+    },
+    {
+      "title": "Realism By Stable Yogi (Pony) | V5_XL_FP16 | PromptHero",
+      "url": "https://prompthero.com/ai-models/realism-by-stable-yogi-pony-166609-download/realism-by-stable-yogi-pony-v5_xl_fp16",
+      "snippet": "Pro Version of Realism Pony V4-V5-V6 now Available on My PatreonOnsite generations are permanently available on these models:👉 Realism_By_Stable_Yogi V3: https"
+    }
+  ]
+}

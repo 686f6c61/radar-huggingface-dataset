@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "syntropicllc/monika2.3-teenager",
+  "slug": "syntropicllc-monika2-3-teenager",
+  "author": "syntropicllc",
+  "url": "https://huggingface.co/syntropicllc/monika2.3-teenager",
+  "created_at": "2026-08-31T17:43:53.000Z",
+  "updated_at": "2026-08-31T17:48:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "text-generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-Coder-4B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Syntropic LLC — Order. Clarity. Simplicity.",
+      "url": "https://syntropicllc.com/",
+      "snippet": "Intelligent systems that transform complexity into coordinated action."
+    },
+    {
+      "title": "Syntrophic AI - Cooperative Intelligence Platform",
+      "url": "https://www.syntrophic.ai/",
+      "snippet": "The open AI library for regenerative development. Cooperative intelligence infrastructure for communities building food systems, energy democracy, housing, and governance from the ground up."
+    },
+    {
+      "title": "Syntropic - The AI Efficiency Layer",
+      "url": "https://www.thesyntropic.com/",
+      "snippet": "The AI Efficiency Layer. An invisible software layer that compresses KV cache load and reduces memory overhead — across text, image, audio, and video. No retraining. No weight changes. Built for production inference."
+    },
+    {
+      "title": "syntropicsignal-ai (SYNTROPIC) - Hugging Face",
+      "url": "https://huggingface.co/syntropicsignal-ai/models",
+      "snippet": "Org profile for SYNTROPIC on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Releases · Rubiksman78/MonikA.I - GitHub",
+      "url": "https://github.com/Rubiksman78/MonikA.I/releases",
+      "snippet": "Submod for MAS with AI based features. Contribute to Rubiksman78/MonikA.I development by creating an account on GitHub."
+    }
+  ]
+}

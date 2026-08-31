@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "Verdugie/Therapy-27B",
+  "slug": "verdugie-therapy-27b",
+  "author": "Verdugie",
+  "url": "https://huggingface.co/Verdugie/Therapy-27B",
+  "created_at": "2026-07-11T02:50:59.000Z",
+  "updated_at": "2026-08-31T17:47:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "27b",
+    "hybrid-attention",
+    "Fable 5",
+    "Sonnet 5",
+    "Opus 4.8",
+    "therapy",
+    "mental",
+    "counseling",
+    "psychology",
+    "psychotherapy",
+    "wellness",
+    "empathy",
+    "companion",
+    "support",
+    "chat",
+    "conversational",
+    "reasoning",
+    "mental-health",
+    "emotional-support",
+    "self-help",
+    "ai-companion",
+    "local",
+    "offline",
+    "privacy",
+    "on-device",
+    "lm-studio",
+    "llama-cpp",
+    "long-context",
+    "claude",
+    "fable",
+    "opus",
+    "sonnet",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:quantized:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 282,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 142839557755,
+  "storage_human": "142.8 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Verdugie/Therapy-27B · Hugging Face",
+      "url": "https://huggingface.co/Verdugie/Therapy-27B",
+      "snippet": "Verdugie / Therapy-27B like 0 Text Generation Transformers GGUF English conversational therapy emotional-reasoning clinical-reasoning-trace timeline-ledger therapy-line fable-reasoning 27b hybrid-attention long-context Fable Fable 5 Claude Therapist License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new ..."
+    },
+    {
+      "title": "Verdugie/Opus-Candid-27B-v3 · Hugging Face",
+      "url": "https://huggingface.co/Verdugie/Opus-Candid-27B-v3",
+      "snippet": "The 27B doesn&#x27;t need more data — it needs the same data with more capacity to absorb it. At 27B parameters, the model has enough representational depth to extract signal that the 8B has to approximate."
+    },
+    {
+      "title": "Opus Candid 27b V3 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/verdugie/opus-candid-27b-v3",
+      "snippet": "by Verdugie hf-model--verdugie--opus-candid-27b-v3 Nexus Index 33.4Top 100% S: Semantic50 A: Authority0 P: Popularity16 R: Recency93 Q: Quality50 Tech Context 27Params 4.096KCtx Vital Performance 292 DL / 30D 0.0% Source → Share: 📤 𝕏 in 📣 🔗 Audited 33.4 FNI Score 27B Params 4k Context 292 Downloads 24G GPU ~22GB Est. VRAM ..."
+    },
+    {
+      "title": "Opus Candid 27b V2.1 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/verdugie/opus-candid-27b-v2.1",
+      "snippet": "by Verdugie hf-model--verdugie--opus-candid-27b-v2.1 Nexus Index 30.5Top 100% S: Semantic50 A: Authority0 P: Popularity7 R: Recency91 Q: Quality50 Tech Context 27Params 4.096KCtx Vital Performance 77 DL / 30D 0.0% Source → Share: 📤 𝕏 in 📣 🔗 Audited 30.5 FNI Score 27B Params 4k Context 77 Downloads 24G GPU ~22GB Est. VRAM ..."
+    },
+    {
+      "title": "Google&#x27;s AI Cracks a New Cancer Code - Decrypt",
+      "url": "https://decrypt.co/344454/google-ai-cracks-new-cancer-code",
+      "snippet": "In brief The Gemma-based model generated and validated a new cancer-therapy hypothesis in human cell experiments. It identified silmitasertib as a conditional amplifier that boosts immune visibility of tumors. The result hints that scaled biological AI models can invent—not just optimize—new scientific ideas."
+    }
+  ]
+}

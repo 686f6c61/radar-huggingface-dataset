@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "vng0824/convnextv2_best",
+  "slug": "vng0824-convnextv2_best",
+  "author": "vng0824",
+  "url": "https://huggingface.co/vng0824/convnextv2_best",
+  "created_at": "2026-08-31T16:13:17.000Z",
+  "updated_at": "2026-08-31T16:18:26.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 351373221,
+  "storage_human": "351 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ConvNeXt V2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/convnextv2",
+      "snippet": "Overview The ConvNeXt V2 model was proposed in ConvNeXt V2: Co-designing and Scaling ConvNets with Masked Autoencoders by Sanghyun Woo, Shoubhik Debnath, Ronghang Hu, Xinlei Chen, Zhuang Liu, In So Kweon, Saining Xie. ConvNeXt V2 is a pure convolutional model (ConvNet), inspired by the design of Vision Transformers, and a successor of ConvNeXT."
+    },
+    {
+      "title": "GitHub - facebookresearch/ConvNeXt-V2: Code release for ConvNeXt V2 model",
+      "url": "https://github.com/facebookresearch/ConvNeXt-V2",
+      "snippet": "This co-design of self-supervised learning techniques and architectural improvement results in a new model family called ConvNeXt V2, which significantly improves the performance of pure ConvNets on various recognition benchmarks. We also provide pre-trained ConvNeXt V2 models of various sizes."
+    },
+    {
+      "title": "ConvNeXt V2 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.37.0/model_doc/convnextv2",
+      "snippet": "Overview The ConvNeXt V2 model was proposed in ConvNeXt V2: Co-designing and Scaling ConvNets with Masked Autoencoders by Sanghyun Woo, Shoubhik Debnath, Ronghang Hu, Xinlei Chen, Zhuang Liu, In So Kweon, Saining Xie. ConvNeXt V2 is a pure convolutional model (ConvNet), inspired by the design of Vision Transformers, and a successor of ConvNeXT."
+    },
+    {
+      "title": "Pretrained ConvNeXtV2 | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/teams/tao/models/pretrained_convnextv2",
+      "snippet": "TAO Commercial Pretrained ConvNextv2 Model Overview Description ConvNextv2 is a model that can be used as a backbone for most of the popular computer vision tasks such as classification, segmentation and detection. ConvNextv2 is a modern convolutional network architecture, codesigned with a fully convolutional masked autoencoder framework. It has shown improved performance over the pure ..."
+    },
+    {
+      "title": "convnextv2 · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/convnextv2",
+      "snippet": "The model used is ConvNeXt v2 Tiny, a modern deep learning model for image classification tasks, pre-trained on large datasets and fine-tuned for this specific task."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "RAID-techjam/raid-detector-fusion",
+  "slug": "raid-techjam-raid-detector-fusion",
+  "author": "RAID-techjam",
+  "url": "https://huggingface.co/RAID-techjam/raid-detector-fusion",
+  "created_at": "2026-08-31T17:33:40.000Z",
+  "updated_at": "2026-08-31T17:36:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 350244503,
+  "storage_human": "350 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - liamdugan/raid: RAID is the largest and most challenging ...",
+      "url": "https://github.com/liamdugan/raid",
+      "snippet": "Robust AI Detection. RAID is the largest & most comprehensive dataset for evaluating AI-generated text detectors. It contains over 10 million documents spanning 11 LLMs, 11 genres, 4 decoding strategies, and 12 adversarial attacks. It is designed to be the go-to location for trustworthy third-party evaluation of popular detectors."
+    },
+    {
+      "title": "raid/detectors/models at main · liamdugan/raid · GitHub",
+      "url": "https://github.com/liamdugan/raid/tree/main/detectors/models",
+      "snippet": "RAID is the largest and most challenging benchmark for AI-generated text detection. (ACL 2024) - raid/detectors/models at main · liamdugan/raid"
+    },
+    {
+      "title": "liamdugan/raid · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/liamdugan/raid",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RAID Benchmark",
+      "url": "https://raid-bench.xyz/",
+      "snippet": "In this work we present RAID: the largest and most challenging benchmark dataset for machine-generated text detectors. RAID includes over 10 million generations spanning 12 models, 11 domains, 12 adversarial attacks and 4 decoding strategies."
+    },
+    {
+      "title": "RAID: A Shared Benchmark for Robust Evaluation of Machine-Generated ...",
+      "url": "https://arxiv.org/html/2405.07940v2",
+      "snippet": "To combat this trend, in this work, we introduce the Robust AI Detection (RAID) benchmark. RAID is the largest and most challenging benchmark of generated text ever released, consisting of 6M+ generations spanning 11 generators, 8 domains, 11 adversarial attacks, and 4 decoding strategies. Using RAID, we benchmark 12 detectors (8 open- and 4 closed-source). We find that detectors have ..."
+    }
+  ]
+}

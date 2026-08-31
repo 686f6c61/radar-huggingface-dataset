@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "poypauk/round9",
+  "slug": "poypauk-round9",
+  "author": "poypauk",
+  "url": "https://huggingface.co/poypauk/round9",
+  "created_at": "2026-08-25T01:33:57.000Z",
+  "updated_at": "2026-08-31T11:51:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 2152330496,
+  "parameters_human": "2.15B",
+  "storage_bytes": 17402813464,
+  "storage_human": "17.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Live AI Funding Rounds Tracker 2026 | Awaira",
+      "url": "https://awaira.com/funding-rounds",
+      "snippet": "Track every AI funding round in real time. See who raised, how much, from whom. Series A to IPO — all AI startup funding data, free forever."
+    },
+    {
+      "title": "Stargazers · AI-2138-testing-round9-results.md · GitHub",
+      "url": "https://gist.github.com/brandon-acorns/b0aacc671f1af07c2f2b6e04c7076df5/stargazers",
+      "snippet": "brandon-acorns / AI-2138-testing-round9-results.md Created 3 days ago Star 0 0 Fork 0 0 Code Revisions 1"
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard 2026 - Top AI Models Ranked | LM Market Cap",
+      "url": "https://lmmarketcap.com/leaderboards/models",
+      "snippet": "Live LLM leaderboard ranking 350+ AI models by benchmarks, pricing, speed, and capabilities. Compare GPT, Claude, Gemini, DeepSeek, Llama and more with source-backed scores."
+    }
+  ]
+}

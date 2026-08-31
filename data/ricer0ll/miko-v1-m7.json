@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ricer0ll/Miko-v1-m7",
+  "slug": "ricer0ll-miko-v1-m7",
+  "author": "ricer0ll",
+  "url": "https://huggingface.co/ricer0ll/Miko-v1-m7",
+  "created_at": "2026-08-31T07:52:10.000Z",
+  "updated_at": "2026-08-31T18:54:43.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "conversational",
+    "not-for-all-audiences",
+    "en",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 28994972900,
+  "storage_human": "29.0 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Miko AI-Powered Robot: Smart Learning Partner for Kids",
+      "url": "https://miko.ai/",
+      "snippet": "Discover the Miko Robot, your child&#x27;s new best friend for learning and entertainment. This AI-powered educational robot is designed to engage, educate, and entertain kids while fostering their cognitive development. Explore the world of Miko and unlock a world of interactive adventures today!"
+    },
+    {
+      "title": "start - Miko",
+      "url": "https://miko.ai/pages/start",
+      "snippet": "Discover the Miko Robot, your child's new best friend for learning and entertainment. This AI-powered educational robot is designed to engage, educate, and entertain kids while fostering their cognitive development. Explore the world of Miko and unlock a world of interactive adventures today!"
+    },
+    {
+      "title": "Miko - V1 | Illustrious LoRA | Civitai",
+      "url": "https://civitai.com/models/2658699/miko",
+      "snippet": "V1 Create Download 1 variant available SafeTensor 217.88 MB Verified:2 months ago Download (217.88 MB) Optional Files 1 2985412_training_data.zip . zip • 13.9 MB Verified:2 months ago Details Type LoRA Stats 590 1 2 3 4 5 6 7 8 90 1 2 3 4 5 6 7 8 9 00 1 2 3 4 5 6 7 8 9 Reviews Positive (6) Published May 28, 2026 Base Model Illustrious ..."
+    },
+    {
+      "title": "Robots - MiKoBots",
+      "url": "https://mikobots.com/mikobots-studio/robots/",
+      "snippet": "MiKo mini MiKo-mini robot profile, including the vacuum and magnetic tools. Updated 15-1-2025."
+    },
+    {
+      "title": "ricer0ll (riceroll) · GitHub",
+      "url": "https://github.com/ricer0ll",
+      "snippet": "Me just code and code do magic. ricer0ll has 20 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

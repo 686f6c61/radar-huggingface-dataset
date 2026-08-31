@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "0xlawal/hausa-ai-data",
+  "slug": "0xlawal-hausa-ai-data",
+  "author": "0xlawal",
+  "url": "https://huggingface.co/0xlawal/hausa-ai-data",
+  "created_at": "2026-08-31T13:56:41.000Z",
+  "updated_at": "2026-08-31T14:00:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - futurelonians/hausaai: hausa ai model for hausa people",
+      "url": "https://github.com/futurelonians/hausaai",
+      "snippet": "hausa ai model for hausa people. Contribute to futurelonians/hausaai development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - almustafa-ai/hausa-ai-analysis: Research notes on where ...",
+      "url": "https://github.com/almustafa-ai/hausa-ai-analysis",
+      "snippet": "Why it happens: Training data for Hausa skews heavily toward religious texts (particularly Quranic translations and Islamic literature) and news media. This creates a model that has limited exposure to the full spectrum of Hausa registers — the formal administrative language, the oral storytelling tradition, the intimate family register, the marketplace language."
+    },
+    {
+      "title": "Tushe — Foundation of Hausa Intelligence",
+      "url": "https://www.tusheai.com/",
+      "snippet": "Tushe: Where Data Becomes Understanding Tushe is a community-driven data foundry dedicated to building, refining, and democratizing Hausa language datasets — from speech to text, translation, and beyond. We aim to create the foundation for Hausa AI models that understand, speak, and think like us."
+    },
+    {
+      "title": "HausaNLP (HausaNLP) - Hugging Face",
+      "url": "https://huggingface.co/HausaNLP",
+      "snippet": "We are a community dedicated to advancing Natural Language Processing (NLP) for Hausa, a widely spoken language in West Africa. We aim to create and provide high-quality resources and models to facilitate Hausa language understanding and generation in the AI community."
+    },
+    {
+      "title": "PlotweaverAI/naija-tts · Hugging Face",
+      "url": "https://huggingface.co/PlotweaverAI/naija-tts",
+      "snippet": "PlotweaverAI / naija-tts like 0 Follow Plotweaver AI 7 Text-to-Speech Chatterbox 4 languages voice-cloning multilingual hausa yoruba igbo nigerian-english african-languages License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

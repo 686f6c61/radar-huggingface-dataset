@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "notiscBalbalEko/myrvcmodel",
+  "slug": "notiscbalbaleko-myrvcmodel",
+  "author": "notiscBalbalEko",
+  "url": "https://huggingface.co/notiscBalbalEko/myrvcmodel",
+  "created_at": "2024-01-26T05:42:40.000Z",
+  "updated_at": "2026-08-31T14:24:37.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14579568662,
+  "storage_human": "14.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "notiscBalbalEko/myrvcmodel · Hugging Face",
+      "url": "https://huggingface.co/notiscBalbalEko/myrvcmodel",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "notiscBalbalEko/myrvcmodel at main - Hugging Face",
+      "url": "https://huggingface.co/notiscBalbalEko/myrvcmodel/tree/main",
+      "snippet": "License: openrail Model card Files Files and versions Community main myrvcmodel 1 contributor History: 97 commits notiscBalbalEko Upload Kate_e420_s1674.zip"
+    },
+    {
+      "title": "Balbal Laugh (RVC V2) (RMVPE) (Original) (40k) (2500 Epochs - 5000 ...",
+      "url": "https://voice-models.com/model/1wxsatHrT7w",
+      "snippet": "Balbal Laugh (RVC V2) (RMVPE) (Original) (40k) (2500 Epochs - 5000 Steps) AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Portal Revolution(Stirling Core)(RVC V2)(RMVPE)(TITAN)(600 Epochs ...",
+      "url": "https://voice-models.com/model/1urM1ICpcEJ",
+      "snippet": "Portal Revolution (Stirling Core) (RVC V2) (RMVPE) (TITAN) (600 Epochs - 4188 Steps) (40k Rate) AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "RVC Models: AI Voices - 388 Model Downloads & Examples",
+      "url": "https://aimodels.org/ai-models/rvc-models-ai-voice/",
+      "snippet": "RVC Models: AI Voices - 388 Model Downloads & Examples The world of audio technology is changing fast, thanks to RVC (Retrieval-based Voice Conversion) models. These models use advanced artificial intelligence to create voices that sound real and can be customized for your projects. Browse through, download and play with our directory of 388 rvc voice models"
+    }
+  ]
+}

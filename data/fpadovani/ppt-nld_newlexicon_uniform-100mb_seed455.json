@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/ppt-nld_newlexicon_uniform-100mb_seed455",
+  "slug": "fpadovani-ppt-nld_newlexicon_uniform-100mb_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/ppt-nld_newlexicon_uniform-100mb_seed455",
+  "created_at": "2026-08-31T13:50:32.000Z",
+  "updated_at": "2026-08-31T13:53:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/nld_latn_100mb",
+    "base_model:finetune:goldfish-models/nld_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86708736,
+  "parameters_human": "86.7M",
+  "storage_bytes": 173452700,
+  "storage_human": "173 MB",
+  "base_model": "goldfish-models/nld_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ppt-nld_newlexicon_uniform-100mb_seed3407 - Hugging Face",
+      "url": "https://huggingface.co/fpadovani/ppt-nld_newlexicon_uniform-100mb_seed3407",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuned Models for fpadovani/ppt-nld_newlexicon_uniform-100mb ...",
+      "url": "https://huggingface.co/models?other=base_model:finetune:fpadovani/ppt-nld_newlexicon_uniform-100mb_seed3407",
+      "snippet": "Model Tree fpadovani/ppt-nld_newlexicon_uniform-100mb_seed3407 Finetunes Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "Ppt Art Lang Newlexicon Nld Baseline 100mb Seed455 by fpadovani",
+      "url": "https://llm-explorer.com/model/fpadovani%2Fppt-art-lang-newlexicon-nld-baseline-100mb_seed455,32jfeMSWvcxtjdyQvxa1E3",
+      "snippet": "Ppt Art Lang Newlexicon Nld Baseline 100mb Seed455 is an open-source 86.5m LLM by fpadovani. VRAM 0.2GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "ppt-art-lang-newlexicon-nld-baseline-100mb_seed455",
+      "url": "https://friendli.ai/models/fpadovani/ppt-art-lang-newlexicon-nld-baseline-100mb_seed455",
+      "snippet": "Deploy ppt-art-lang-newlexicon-nld-baseline-100mb_seed455 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "ppt-art-lang-newlexicon-zipf-nld-heavy-baseline-100mb_seed455",
+      "url": "https://friendli.ai/models/fpadovani/ppt-art-lang-newlexicon-zipf-nld-heavy-baseline-100mb_seed455",
+      "snippet": "Deploy ppt-art-lang-newlexicon-zipf-nld-heavy-baseline-100mb_seed455 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

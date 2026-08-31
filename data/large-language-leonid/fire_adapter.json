@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "large-language-leonid/fire_adapter",
+  "slug": "large-language-leonid-fire_adapter",
+  "author": "large-language-leonid",
+  "url": "https://huggingface.co/large-language-leonid/fire_adapter",
+  "created_at": "2026-08-31T17:17:15.000Z",
+  "updated_at": "2026-08-31T17:19:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129934448,
+  "storage_human": "130 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=large+language+model",
+      "snippet": "Explore machine learning models. h2oai/h2ogpt-gm-oasst1-en-2048-open-llama-7b-preview-300bt-v2"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Large Language Models - 11 Model Downloads & Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/large-language-models/",
+      "snippet": "Large Language Models - 11 Model Downloads & Examples Explore Free Downloads of State-of-the-Art Open Source Language Models for Powerful Natural Language AI in Your Projects."
+    },
+    {
+      "title": "Leveraging Large Language Models for Enhanced Classification and ... - MDPI",
+      "url": "https://www.mdpi.com/2571-6255/8/1/7",
+      "snippet": "This study explores the potential of large language models, especially ChatGPT-4, in fire classification tasks. In particular, we utilize ChatGPT-4 for the first time to develop a classification approach for fire incidents. We evaluate this approach using two benchmark datasets: the Forest Fire dataset and the DFAN dataset."
+    },
+    {
+      "title": "SAM-FireAdapter: An adapter for fire segmentation with SAM",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1047320325002925",
+      "snippet": "SAM-FireAdapter leverages the adapter concept to adapt the foundational model to fire segmentation tasks effectively. By combining task-specific insights with SAM&#x27;s robust feature extraction capabilities, SAM-FireAdapter achieves higher precision fire segmentation."
+    }
+  ]
+}

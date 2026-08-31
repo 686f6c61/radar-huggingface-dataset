@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sam-guided-vlas/train_1_2_pile__point__overlay_a75__sim__agentview_camera__static__pi05__seed_0",
+  "slug": "sam-guided-vlas-train_1_2_pile__point__overlay_a75__sim__agentview_camera__static__pi05__seed_0",
+  "author": "sam-guided-vlas",
+  "url": "https://huggingface.co/sam-guided-vlas/train_1_2_pile__point__overlay_a75__sim__agentview_camera__static__pi05__seed_0",
+  "created_at": "2026-08-31T10:55:13.000Z",
+  "updated_at": "2026-08-31T16:51:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:sam-guided-vlas/train_1_2_pile__point__overlay_a75__sim__agentview_camera__static",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 28062154944,
+  "storage_human": "28.1 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras ...",
+      "url": "https://huggingface.co/sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras__live__pi05__seed_0",
+      "snippet": "Model Card for pi05 π₀.₅ (Pi05) is a Vision-Language-Action model from Physical Intelligence designed for open-world generalization: it evolves π₀ to generalize to entirely new environments and situations that were never seen during training. The LeRobot implementation is adapted from their open-source OpenPI repository."
+    },
+    {
+      "title": "sam-guided-vlas (mim-sam-guided-vlas) - Hugging Face",
+      "url": "https://huggingface.co/sam-guided-vlas",
+      "snippet": "Org profile for mim-sam-guided-vlas on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - facebookresearch/sam3: The repository provides code for ...",
+      "url": "https://github.com/facebookresearch/sam3",
+      "snippet": "The repository provides code for running inference and finetuning with the Meta Segment Anything Model 3 (SAM 3), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. - facebookresearch/sam3"
+    },
+    {
+      "title": "RehearseVLA: Simulated Post-Training for VLAs with Physically ...",
+      "url": "https://arxiv.org/html/2509.24948v4",
+      "snippet": "RehearseVLA consists of two key components: (1) a physically-consistent world simulator that generates temporally consistent future visual observations, and (2) a vision-language model (VLM)-guided instant reflector that provides continuous reward signals and predicts action termination."
+    },
+    {
+      "title": "SAM 2: Segment Anything in Images and Videos - GitHub",
+      "url": "https://github.com/facebookresearch/sam2",
+      "snippet": "The repository provides code for running inference with the Meta Segment Anything Model 2 (SAM 2), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. - facebookresearch/sam2"
+    }
+  ]
+}

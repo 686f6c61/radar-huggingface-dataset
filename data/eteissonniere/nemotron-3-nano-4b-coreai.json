@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ETeissonniere/Nemotron-3-Nano-4B-CoreAI",
+  "slug": "eteissonniere-nemotron-3-nano-4b-coreai",
+  "author": "ETeissonniere",
+  "url": "https://huggingface.co/ETeissonniere/Nemotron-3-Nano-4B-CoreAI",
+  "created_at": "2026-08-31T16:46:24.000Z",
+  "updated_at": "2026-08-31T16:46:36.000Z",
+  "license": "nvidia-nemotron-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "coreai",
+  "languages": [],
+  "tags": [
+    "coreai",
+    "int8",
+    "macos",
+    "apple-silicon",
+    "text-generation",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4626120021,
+  "storage_human": "4.6 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nemotron 3 Nano 4B: NVIDIA&#x27;s Edge Model on Your RTX Card",
+      "url": "https://aivideosensei.com/guides/nemotron-3-nano-4b-guide",
+      "snippet": "Nemotron 3 Nano Omni is a separate, multimodal variant built to see, hear and read in one model; it&#x27;s a different architecture conversation than the text-focused 4B this guide covers."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "README.md · nvidia/NVIDIA-Nemotron-3-Nano-4B-FP8 at main",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-FP8/blob/main/README.md",
+      "snippet": "NVIDIA-Nemotron-3-Nano-4B-FP8 Model Developer: NVIDIA Corporation Model Dates: Dec 2025 - Jan 2026 Data Freshness: September 2024 The pretraining data has a cutoff date of September 2024. Model Overview NVIDIA-Nemotron-3-Nano-4B-FP8 is quantized version of NVIDIA-Nemotron-3-Nano-4B-BF16 and is a small language model (SLM) trained from scratch by NVIDIA, and designed as a unified model for both ..."
+    },
+    {
+      "title": "NVIDIA Nemotron 3 Family of Models - NVIDIA Nemotron",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3/",
+      "snippet": "We announce NVIDIA Nemotron 3, the most efficient family of open models with leading accuracy for agentic AI applications. The Nemotron 3 family consists of three models: Nano, Super, and Ultra."
+    },
+    {
+      "title": "Nemotron 3 Nano: Open, Efficient Mixture-of-Experts Hybrid Mamba ...",
+      "url": "https://arxiv.org/html/2512.20848v1",
+      "snippet": "Abstract Abstract. We present Nemotron 3 Nano 30B-A3B, a Mixture-of-Experts hybrid Mamba-Transformer language model. Nemotron 3 Nano was pretrained on 25 trillion text tokens, including more than 3 trillion new unique tokens over Nemotron 2, followed by supervised fine tuning and large-scale RL on diverse environments."
+    }
+  ]
+}

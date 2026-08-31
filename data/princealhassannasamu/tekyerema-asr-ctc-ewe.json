@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "PrinceAlhassanNasamu/tekyerema-asr-ctc-ewe",
+  "slug": "princealhassannasamu-tekyerema-asr-ctc-ewe",
+  "author": "PrinceAlhassanNasamu",
+  "url": "https://huggingface.co/PrinceAlhassanNasamu/tekyerema-asr-ctc-ewe",
+  "created_at": "2026-08-31T11:23:21.000Z",
+  "updated_at": "2026-08-31T15:35:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2-bert",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "base_model:ghananlpcommunity/w2v-bert-2.0_twi_alpha_v1",
+    "base_model:finetune:ghananlpcommunity/w2v-bert-2.0_twi_alpha_v1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 605714275,
+  "parameters_human": "605.7M",
+  "storage_bytes": 21808069014,
+  "storage_human": "21.8 GB",
+  "base_model": "ghananlpcommunity/w2v-bert-2.0_twi_alpha_v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PrinceAlhassanNasamu/tekyerema-asr-ctc · Hugging Face",
+      "url": "https://huggingface.co/PrinceAlhassanNasamu/tekyerema-asr-ctc",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PrinceAlhassanNasamu/tekyerema-audio-native-4k · Hugging Face",
+      "url": "https://huggingface.co/PrinceAlhassanNasamu/tekyerema-audio-native-4k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Automatic Speech Recognition using CTC - Keras",
+      "url": "https://keras.io/examples/audio/ctc_asr/",
+      "snippet": "It is also known as automatic speech recognition (ASR), computer speech recognition or speech to text (STT). It incorporates knowledge and research in the computer science, linguistics and computer engineering fields. This demonstration shows how to combine a 2D CNN, RNN and a Connectionist Temporal Classification (CTC) loss to build an ASR."
+    },
+    {
+      "title": "GitHub - OSU-slatelab/ctc-asr: pytorch implementation of ctc based asr ...",
+      "url": "https://github.com/OSU-slatelab/ctc-asr",
+      "snippet": "This repository contains implementations of three Automatic Speech Recognition (ASR) models based on Connectionist Temporal Classification (CTC): CTC - A minimal implementation of the basic CTC model."
+    },
+    {
+      "title": "Automatic Speech Recognition using CTC - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/automatic-speech-recognition-using-ctc/",
+      "snippet": "Flexibility in Handling Variable-Length Sequences: The flexibility provided by CTC enables the model to handle sequences of different lengths without requiring explicit alignment annotations which makes it well-suited for ASR tasks where spoken utterances may vary in duration. Automatic Speech Recognition Step-by-step implementation using CTC 1."
+    }
+  ]
+}

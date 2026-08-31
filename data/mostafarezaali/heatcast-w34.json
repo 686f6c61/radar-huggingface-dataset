@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mostafarezaali/HeatCast-W34",
+  "slug": "mostafarezaali-heatcast-w34",
+  "author": "mostafarezaali",
+  "url": "https://huggingface.co/mostafarezaali/HeatCast-W34",
+  "created_at": "2026-08-31T18:49:43.000Z",
+  "updated_at": "2026-08-31T18:49:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "weather",
+    "climate",
+    "subseasonal",
+    "graph-neural-network",
+    "probabilistic-forecasting",
+    "temperature",
+    "conus",
+    "time-series-forecasting",
+    "doi:10.57967/hf/10252",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92919390,
+  "storage_human": "93 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Mostafa-Rezaali/HeatCast: HeatCast model for generative ...",
+      "url": "https://github.com/Mostafa-Rezaali/HeatCast",
+      "snippet": "HeatCast HeatCast is a GraphCast-style mesh graph neural network for probabilistic CONUS week-3--4 (W34) warm-season T2max prediction. The reference model is the HeatCast-W34 Distributional Mesh GNN:"
+    },
+    {
+      "title": "Climate Extremes & AI - Mostafa Rezaali",
+      "url": "https://mostafa-rezaali.github.io/",
+      "snippet": "Mostafa Rezaali&#x27;s academic website for climate extremes, heat waves, machine learning, and subseasonal heat forecasting research."
+    },
+    {
+      "title": "Mostafa-Rezaali/HeatCast-Global - GitHub",
+      "url": "https://github.com/Mostafa-Rezaali/HeatCast-Global",
+      "snippet": "The reference architecture remains the HeatCast-W34 Distributional Mesh GNN: direct single-pass inference with a Gaussian mean/sigma head, Gaussian CRPS training, tube attention, and five year-disjoint folds. The CFM sampling path remains available for full-field ensemble and tail analyses."
+    },
+    {
+      "title": "‪Mostafa Rezaali‬ - ‪Google Akademik‬",
+      "url": "https://scholar.google.com/citations?user=oaA6rLAAAAAJ&hl=tr",
+      "snippet": "‪Department of Geography, University of Florida, Gainesville, FL, USA‬ - ‪‪445 tarafından alıntılandı‬‬ - ‪Extreme Weather‬ - ‪Machine Learning‬ - ‪GeoAI‬ - ‪Air Quality Modeling‬"
+    },
+    {
+      "title": "Mostafa Rezaali - Geography",
+      "url": "https://geog.ufl.edu/directory/mostafa-rezaali/",
+      "snippet": "Mostafa Rezaali is a PhD student in Geography at the University of Florida wo works on machine learning methods."
+    }
+  ]
+}

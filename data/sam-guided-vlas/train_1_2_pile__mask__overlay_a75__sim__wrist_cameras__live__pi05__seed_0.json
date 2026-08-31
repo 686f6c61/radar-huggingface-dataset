@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sam-guided-vlas/train_1_2_pile__mask__overlay_a75__sim__wrist_cameras__live__pi05__seed_0",
+  "slug": "sam-guided-vlas-train_1_2_pile__mask__overlay_a75__sim__wrist_cameras__live__pi05__seed_0",
+  "author": "sam-guided-vlas",
+  "url": "https://huggingface.co/sam-guided-vlas/train_1_2_pile__mask__overlay_a75__sim__wrist_cameras__live__pi05__seed_0",
+  "created_at": "2026-08-31T05:59:26.000Z",
+  "updated_at": "2026-08-31T12:02:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:sam-guided-vlas/train_1_2_pile__mask__overlay_a75__sim__wrist_cameras__live",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 28062154944,
+  "storage_human": "28.1 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras ...",
+      "url": "https://huggingface.co/sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras__live__pi05__seed_0",
+      "snippet": "Model Card for pi05 π₀.₅ (Pi05) is a Vision-Language-Action model from Physical Intelligence designed for open-world generalization: it evolves π₀ to generalize to entirely new environments and situations that were never seen during training. The LeRobot implementation is adapted from their open-source OpenPI repository."
+    },
+    {
+      "title": "sam-guided-vlas (mim-sam-guided-vlas) - Hugging Face",
+      "url": "https://huggingface.co/sam-guided-vlas/models",
+      "snippet": "Org profile for mim-sam-guided-vlas on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Physical Intelligence (π)",
+      "url": "https://www.pi.website/",
+      "snippet": "Physical Intelligence is bringing general-purpose AI into the physical world. We are a group of engineers, scientists, roboticists, and company builders developing learning algorithms to create a model that will control any robot to do any task."
+    },
+    {
+      "title": "PDF π : a Vision-Language-Action Model with Open-World Generalization",
+      "url": "https://www.pi.website/download/pi05.pdf",
+      "snippet": "Abstract—In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe π0.5, a new model based on π0 that uses co-training on heterogeneous ..."
+    },
+    {
+      "title": "VLP-SAM/train.py at main · kosukesakurai1/VLP-SAM · GitHub",
+      "url": "https://github.com/kosukesakurai1/VLP-SAM/blob/main/train.py",
+      "snippet": "Vision and Language Reference Prompt into SAM for Few-shot Segmentation - VLP-SAM/train.py at main · kosukesakurai1/VLP-SAM"
+    }
+  ]
+}

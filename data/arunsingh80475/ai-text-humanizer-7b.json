@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "arunsingh80475/ai-text-humanizer-7b",
+  "slug": "arunsingh80475-ai-text-humanizer-7b",
+  "author": "arunsingh80475",
+  "url": "https://huggingface.co/arunsingh80475/ai-text-humanizer-7b",
+  "created_at": "2026-08-31T14:07:49.000Z",
+  "updated_at": "2026-08-31T14:08:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen2.5-7B-bnb-4bit",
+    "grpo",
+    "lora",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen2.5-7B-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436502,
+  "storage_human": "334 MB",
+  "base_model": "unsloth/Qwen2.5-7B-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Humaniseur IA gratuit - Humaniseur de texte par l&#x27;IA",
+      "url": "https://duckduckgo.com/y.js?ad_domain=grammarly.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=xTQej%2DWrwEjRClltaIcF4sY2cxdSkZ93LlzU3BKmJ6HEeCoTPMWNv9wXxTd7hRgtDjU3Wp4KZalVMxCEnHPH7rCTqQRafkKBkgvYqcytqt8c9lCviecaVqvMVSxun%2DrcNwxvQDulv9gSaIy3BJ0DhRkGOnV_4KGdpowQEeIAYHQ.2F7nPlI4K4aTBys6Nc2rsQ&rut=4d8ef77823a7226ae2fc78b8abfe0f94d14bd1275ca5fe4f5d99b48c7d0ff6d8&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8tcQvWPRlj7axAlXSHX_fCzVUCUyGnubUCgwkEI6u3xfonUNyKBA6wGPuh3O4r4o%2DA5kzrIxnCqHNE8TLV4sY85aXWVFXgr_iOvbSpDKcy4rws38DbbSr_X906iB1lY8ym2EQpIoJyO3PGl91Q2MsZ0gXX2LbaESkNEd_AFXiWt03QYgfL%2DHgcWgKNnXgfDIqC_Q8umOxtuX9VsxX90rCyPTODhE%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuZ3JhbW1hcmx5LmNvbSUyZmZyJTJmYSUyZmh1bWFuaXNlci10ZXh0ZS1pYSUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZDYyNzU3OTM3MSUyNnV0bV9jb250ZW50JTNkODEzNjQwMDc2NDI1MjglMjZ1dG1fdGVybSUzZGh1bWFuaXNlciUyNTIwbCUyN2lhJTI2dXRtX2J1JTNkY29ycCUyNmtleXdvcmRpZCUzZDgxMzY0MjU1MTQzODA2JTI2dGFyZ2V0aWQlM2Rrd2QtODEzNjQyNTUxNDM4MDYlM2Fsb2MtNjYlMjZhZGdyb3VwJTNkMTMwMTgyMzAxMjkxNjc1OCUyNmRldmljZSUzZGMlMjZtYXRjaHR5cGUlM2RwJTI2bmV0d29yayUzZHMlMjZleHRlbnNpb24lM2QlMjZsYW5ndWFnZSUzZGZyJTI2Y2xpY2tpZCUzZDc3ZmMyZTgzNDQ4NzE3ODRjMWEwNDQxNmQ1MTc3Nzk4JTI2Z2NsaWQlM2Q3N2ZjMmU4MzQ0ODcxNzg0YzFhMDQ0MTZkNTE3Nzc5OCUyNm1zY2xraWQlM2Q3N2ZjMmU4MzQ0ODcxNzg0YzFhMDQ0MTZkNTE3Nzc5OA%26rlid%3D77fc2e8344871784c1a04416d5177798&vqd=4-138349291598629102052816861255623442231&iurl=%7B1%7DIG%3D009EF5494D4A4A6D8B074AD3FE228D06%26CID%3D1326F255CAF269061052E593CBFC6809%26ID%3DDevEx%2C5037.1",
+      "snippet": "Humanisez les textes d&#x27;IA de Grammarly, ChatGPT, Gemini et bien d&#x27;autres en un clic. Votre écriture semble robotique ? Grammarly peut vous aider à paraître authentique."
+    },
+    {
+      "title": "Undetectable AI Humanizer - Convert AI to Human Text",
+      "url": "https://duckduckgo.com/y.js?ad_domain=textguard.ai&ad_provider=bingv7aa&ad_type=txad&click_metadata=SiYfNR8uOZWPC55bIpiKd8jDBmSjqSSiyYxlsOTLs231U6dfFXjsLLLA1WhPqwpal4vcBHkIuFO5Rkzn%2DFRoAhw5Wl8mo1OepPu7bsV5tjUHiX7wT5x%2DnLC7SM7NpKjMpxRH%2DV4TWaRP1JizdH96sXM3vtP2f0G1ey2tTxlTiuQ.MTRuG4UeO6Yp9HygyTZe%2DA&rut=e052f556fee3dad1689739bfecea938780c06c3fa365131ade51f6a5f71e0be9&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8UTU3iEGAaD_VX7x5YT6WYzVUCUzoLb70kmtLljPkwnydGVbC7ZGEpkZTcRE5Krobfvxsis5gFUDqr7dNG8aQ%2DXmKSeNJb7Mw4KlwBH6l65QJUS2CmTY9IU425r3gn%2Ddq1vynxN6isx5zwoqu3rPn80fMXCg_Ykr4c%2DxlYP2q3SCNq%2Ddbrntlw%2Dz9kzFcO5F4LqosBxzFYBE79jZCfCngGNn7z6E%26u%3DaHR0cHMlM2ElMmYlMmZ0ZXh0Z3VhcmQuYWklMmZodW1hbml6ZSUzZnV0bV9zb3VyY2UlM2Q1MjQxNjk5NjMlMjZ1dG1fY2FtcGFpZ25pZCUzZDUyNDE2OTk2MyUyNnV0bV9tZWRpdW0lM2QxMzI4MjEyOTAwODYxNTY2JTI2dXRtX2NvbnRlbnQlM2QlMjZrZXl3b3JkJTNkYmVzdCUyNTIwYWklMjUyMHRvJTI1MjBodW1hbiUyNTIwdGV4dCUyNTIwY29udmVydGVyJTI2Yl9waHlzJTNkMTg3NTE5JTI2Yl9pbnQlM2QlMjZzb3VyY2UlM2RiaW5nJTI2dHJhZmZpY3NvdXJjZSUzZFNlYXJjaCUyNnV0bV9jYW1wYWlnbiUzZFBfVEVYVEdVQVJEX0NPTVBFVElUT1JTX0JJTkdfV1dfQU5ZXzMwLjA0LjIwMjZfRC5TVFIlMjZtc2Nsa2lkJTNkMjdiZTliMGNlNzgxMTg0Y2I0NjFmMTk5NzYxMWJlZGM%26rlid%3D27be9b0ce781184cb461f1997611bedc&vqd=4-337649780317248534609011220841483292351&iurl=%7B1%7DIG%3D009EF5494D4A4A6D8B074AD3FE228D06%26CID%3D1326F255CAF269061052E593CBFC6809%26ID%3DDevEx%2C5042.1",
+      "snippet": "Our AI humanizer transforms generated content into authentic writing. Try free. Make AI-generated text completely undetectable. Fast, accurate, and reliable."
+    },
+    {
+      "title": "GitHub - YasirMondal/AI-Text-Humanizer: A web app to detect AI ...",
+      "url": "https://github.com/YasirMondal/AI-Text-Humanizer",
+      "snippet": "An intelligent web application that detects and analyzes text content using AI. The frontend is built with *HTML, CSS, and JavaScript, offering a clean and user-friendly interface. The backend is powered by **Python, which integrates a * pretrained Mistral 7B model to accurately detect AI-generated or human-written text."
+    },
+    {
+      "title": "AI Humanizer | Turn AI text into human-like writing - Scribbr",
+      "url": "https://www.scribbr.com/humanize-ai/",
+      "snippet": "The unfair stigma around using AI writing and humanizer tools AI tools like ChatGPT are becoming a standard part of writing, whether for emails, Slack messages, social media posts, or reports. But AI-generated text often has certain telltale signs—specific word choices, overly structured sentences, or a lack of personal tone."
+    },
+    {
+      "title": "AcousticText: Free AI Humanizer for Natural Writing",
+      "url": "https://www.acoustictext.com/",
+      "snippet": "AcousticText transforms your content into natural, authentic writing. Create high-quality content effortlessly with AcousticText."
+    }
+  ]
+}

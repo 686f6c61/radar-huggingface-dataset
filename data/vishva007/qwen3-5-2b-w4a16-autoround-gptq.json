@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Vishva007/Qwen3.5-2B-W4A16-AutoRound-GPTQ",
+  "slug": "vishva007-qwen3-5-2b-w4a16-autoround-gptq",
+  "author": "Vishva007",
+  "url": "https://huggingface.co/Vishva007/Qwen3.5-2B-W4A16-AutoRound-GPTQ",
+  "created_at": "2026-08-27T07:19:46.000Z",
+  "updated_at": "2026-08-31T15:36:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "4-bit",
+    "gptq",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 2741387765,
+  "storage_human": "2.7 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vishva007 (Vishva R) - Hugging Face",
+      "url": "https://huggingface.co/Vishva007/collections",
+      "snippet": "Quantized Qwen3-VL models for efficient image-text understanding (AutoRound W4A16)."
+    },
+    {
+      "title": "Vishva007/Qwen3.8-2B-Distill-W4A16-AutoRound-GPTQ · Hugging Face",
+      "url": "https://huggingface.co/Vishva007/Qwen3.8-2B-Distill-W4A16-AutoRound-GPTQ",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - intel/auto-round: A SOTA quantization toolkit for high ...",
+      "url": "https://github.com/intel/auto-round",
+      "snippet": "By default, AutoRound only quantize the text module of VLMs and uses NeelNanda/pile-10k for calibration. To quantize the entire model, you can enable quant_nontext_module by setting it to True, though support for this feature is limited. For more information, please refer to the AutoRound readme."
+    },
+    {
+      "title": "Qwen-3.5 Quantized Model Collection Released on Hugging Face",
+      "url": "https://www.linkedin.com/posts/vishva-r_ai-llm-multimodalai-activity-7435386115567775744-a3Ge",
+      "snippet": "I&#x27;ve released multiple W4A16 AutoRound quantized versions of Qwen-3.5 (0.8B & 9B) optimized for efficient image-text understanding while maintaining strong accuracy."
+    },
+    {
+      "title": "GitHub - vishvaRam/AutoRound-Quantaization: Comprehensive model ...",
+      "url": "https://github.com/vishvaRam/AutoRound-Quantaization",
+      "snippet": "AutoRound Quantization Comprehensive model quantization project using Intel&#x27;s AutoRound algorithm to create production-ready 4-bit quantized versions of language models. This project demonstrates advanced weight-only quantization techniques optimized for both text and vision-language models."
+    }
+  ]
+}

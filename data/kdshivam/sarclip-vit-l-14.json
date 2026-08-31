@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kdshivam/SARCLIP-ViT-L-14",
+  "slug": "kdshivam-sarclip-vit-l-14",
+  "author": "kdshivam",
+  "url": "https://huggingface.co/kdshivam/SARCLIP-ViT-L-14",
+  "created_at": "2026-08-31T18:08:21.000Z",
+  "updated_at": "2026-08-31T18:14:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "clip",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 427616512,
+  "parameters_human": "427.6M",
+  "storage_bytes": 1710526476,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BiliSakura/SARCLIP-ViT-L-14 · Hugging Face",
+      "url": "https://huggingface.co/BiliSakura/SARCLIP-ViT-L-14",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - CAESAR-Radi/SARCLIP: SARCLIP: A Multimodal Foundation ...",
+      "url": "https://github.com/CAESAR-Radi/SARCLIP",
+      "snippet": "SARCLIP is a multimodal foundation model specifically designed for Synthetic Aperture Radar (SAR) imagery based on the Contrastive Language-Image Pre-training (CLIP) framework. SARCLIP enables cross-modal understanding between SAR images and textual information, supporting zero-shot classification, cross-modal retrieval, and image-text inference."
+    },
+    {
+      "title": "SARCLIP/sar_clip/model_configs/ViT-L-14 at main - GitHub",
+      "url": "https://github.com/CAESAR-Radi/SARCLIP/tree/main/sar_clip/model_configs/ViT-L-14",
+      "snippet": "SARCLIP: A Multimodal Foundation Framework for SAR Imagery via Contrastive Language-Image Pre-Training - CAESAR-Radi/SARCLIP"
+    },
+    {
+      "title": "SARCLIP: A Vision Language Foundation Model for Semantic Understanding ...",
+      "url": "https://arxiv.org/html/2510.22665v1",
+      "snippet": "As shown in Fig. 5, we utilize t-SNE [44] technique to visualize features extracted by SARCLIP ‡ (ViT-L-14) on three downstream datasets. The visualizations plots exhibit well-separated clusters across classes, demonstrating the model&#x27;s strong feature discrimination and providing insights into its visual and semantic representations."
+    },
+    {
+      "title": "sentence-transformers/clip-ViT-L-14 · Hugging Face",
+      "url": "https://huggingface.co/sentence-transformers/clip-ViT-L-14",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

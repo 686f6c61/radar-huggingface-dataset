@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Minh124689/license_plate_detection",
+  "slug": "minh124689-license_plate_detection",
+  "author": "Minh124689",
+  "url": "https://huggingface.co/Minh124689/license_plate_detection",
+  "created_at": "2026-08-31T17:21:22.000Z",
+  "updated_at": "2026-08-31T17:21:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67086085,
+  "storage_human": "67 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minh124689/license-plate-object-detection - Hugging Face",
+      "url": "https://huggingface.co/datasets/Minh124689/license-plate-object-detection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "license-plate-detection · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/license-plate-detection",
+      "snippet": "android windows linux raspberry-pi machine-learning deep-learning tensorflow artificial-intelligence license-plate anpr jetson alpr license-plate-recognition license-plate-detection anpr-sdk openvino jetson-nano khadas-vims-boards amlogic-npu khadas-vim3 Updated on Nov 5, 2025 C++"
+    },
+    {
+      "title": "morsetechlab/yolov11-license-plate-detection · Hugging Face",
+      "url": "https://huggingface.co/morsetechlab/yolov11-license-plate-detection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - SaadAbdElGhaffar/car-plate-recognition: AI-powered license ...",
+      "url": "https://github.com/SaadAbdElGhaffar/car-plate-recognition",
+      "snippet": "An intelligent computer vision system that automatically detects and extracts license plate information from video streams in real-time. Built with cutting-edge AI technologies including YOLOv11 for precise plate detection and PaddleOCR for accurate text recognition, this system provides a complete solution for automated vehicle identification with a user-friendly web interface and MySQL ..."
+    },
+    {
+      "title": "An Efficient Deep Learning Approach for Automatic License Plate ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1877050924009463",
+      "snippet": "In the domain of traffic management, road toll collection, and parking lot systems, vehicle number plate detection and identification play a pivotal role. Unlike conventional methods that treat license plate detection and character recognition as separate tasks, the system simultaneously addresses both challenges within a single neural network."
+    }
+  ]
+}

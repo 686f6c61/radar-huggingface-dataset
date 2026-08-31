@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "vietnamese-acsa/bamibert-hotel-acsa-multilabel-preprocessor",
+  "slug": "vietnamese-acsa-bamibert-hotel-acsa-multilabel-preprocessor",
+  "author": "vietnamese-acsa",
+  "url": "https://huggingface.co/vietnamese-acsa/bamibert-hotel-acsa-multilabel-preprocessor",
+  "created_at": "2026-08-31T13:16:25.000Z",
+  "updated_at": "2026-08-31T13:16:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 103055752,
+  "parameters_human": "103.1M",
+  "storage_bytes": 412252361,
+  "storage_human": "412 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vietnamese-acsa/bamibert-phone-acsa-multilabel · Hugging Face",
+      "url": "https://huggingface.co/vietnamese-acsa/bamibert-phone-acsa-multilabel",
+      "snippet": "Instructions to use vietnamese-acsa/bamibert-phone-acsa-multilabel with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "BamiBERT: A New BERT-based Language Model for Vietnamese",
+      "url": "https://arxiv.org/html/2607.02259",
+      "snippet": "In this paper, we introduce BamiBERT, a new BERT-based pre-trained language model for Vietnamese that addresses key limitations of PhoBERT—the current de facto Vietnamese text encoder."
+    },
+    {
+      "title": "BamiBERT: A New BERT-based Language Model for Vietnamese",
+      "url": "https://www.opentrain.ai/papers/bamibert-a-new-bert-based-language-model-for-vietnamese--arxiv-2607.02259/",
+      "snippet": "Find implementation resources, reproducibility signals, and linked technical artifacts for BamiBERT: A New BERT-based Language Model for Vietnamese."
+    },
+    {
+      "title": "BamiBERT: A New BERT-based Language Model for Vietnamese",
+      "url": "https://chatpaper.com/paper/306672",
+      "snippet": "BamiBERT is a new Vietnamese BERT-based language model that surpasses PhoBERT by supporting 2048-token contexts and operating directly on raw text, achieving state-of-the-art results on 11 out of 15 benchmarks while simplifying deployment in real-world applications."
+    },
+    {
+      "title": "absa-vlsp/README.md at main · bthZang/absa-vlsp · GitHub",
+      "url": "https://github.com/bthZang/absa-vlsp/blob/main/README.md",
+      "snippet": "Here, we proposed 2 End-to-End solutions (ACSA-v1 and ACSA-v2), which used PhoBERT as a Pre-trained language model for Vietnamese to handle the above tasks simultaneously on 2 domains of the VLSP 2018 ABSA Dataset: Hotel and Restaurant."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ethanbnsm/q-Taxi-v3",
+  "slug": "ethanbnsm-q-taxi-v3",
+  "author": "ethanbnsm",
+  "url": "https://huggingface.co/ethanbnsm/q-Taxi-v3",
+  "created_at": "2026-08-31T13:09:41.000Z",
+  "updated_at": "2026-08-31T13:24:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 553804,
+  "storage_human": "553804 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ethan-lam/taxi_v3 · Hugging Face",
+      "url": "https://huggingface.co/ethan-lam/taxi_v3",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "DBusAI/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/DBusAI/q-Taxi-v3",
+      "snippet": "Q-Learning Agent playing Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "Taxi.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/DavidBert/N7-techno-IA/blob/master/code/reinforcement_learning/Taxi.ipynb",
+      "snippet": "Taxi V3 The taxi problem was first introduced in Hierarchical Reinforcement Learning with the MAXQ Value Function Decomposition. In this environment, the agent controls a taxi whose job is to pick up a passenger at one location and drop him off in his target location. Dropping of the passenger to its destination leads to a +20 reward."
+    },
+    {
+      "title": "Facepalm0 / q-Taxi-v3-test - insights-db.paloaltonetworks.com",
+      "url": "https://insights-db.paloaltonetworks.com/models/Facepalm0/q-Taxi-v3-test/0500f4939e1ea7caa1d1fb1981a0e9462b4a9273/overview",
+      "snippet": "Discover potential threats in the Facepalm0 / q-Taxi-v3-test model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "How to Use a Q-Learning Agent in Taxi-v3 - fxis.ai",
+      "url": "https://fxis.ai/edu/how-to-use-a-q-learning-agent-in-taxi-v3/",
+      "snippet": "Welcome to your guide on implementing a Q-Learning agent in a fun and interactive environment known as Taxi-v3. In this article, we&#x27;ll walk you through the steps to get your agent up and running, using simple instructions and a touch of creativity. Let&#x27;s embark on this journey! What is Taxi-v3?"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "brucoder/WINTER-FROST-2-PRO",
+  "slug": "brucoder-winter-frost-2-pro",
+  "author": "brucoder",
+  "url": "https://huggingface.co/brucoder/WINTER-FROST-2-PRO",
+  "created_at": "2026-08-31T14:08:26.000Z",
+  "updated_at": "2026-08-31T14:34:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694030,
+  "storage_human": "15.2 GB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "brucoder/winter-frost-1-pro · Hugging Face",
+      "url": "https://huggingface.co/brucoder/winter-frost-1-pro",
+      "snippet": "A larger follow‑up model, winter-frost-1-pro (~774M parameters, broader pretraining corpus via streaming), is trained under the same from‑scratch philosophy on the same free‑tier hardware."
+    },
+    {
+      "title": "brucoder/winter-frost-2-adapter · Hugging Face",
+      "url": "https://huggingface.co/brucoder/winter-frost-2-adapter",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.2-Winter-PRO API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/brucoder/GLM-5.2-Winter-PRO",
+      "snippet": "Run GLM-5.2-Winter-PRO with FriendliAI inference. We&#x27;re introducing GLM-5.2, our latest flagship model for long-horizon tasks."
+    },
+    {
+      "title": "FLUX.2 - Open-Source AI Image Generator by Black Forest Labs | ImageNav",
+      "url": "https://imagenav.net/tools/flux-2",
+      "snippet": "FLUX.2 is the leading open-source AI image model family. Photorealistic 4MP output, sub-second inference, and flexible API or self-hosted deployment."
+    },
+    {
+      "title": "FLUX.2 Features and Models Guide | AI Wiki",
+      "url": "https://artificial-intelligence-wiki.com/best-ai-tools/ai-image-and-video-generators/flux-2-features-and-models/",
+      "snippet": "FLUX.2 is Black Forest Labs&#x27; latest generation of AI image models, offering four variants: Pro (state-of-the-art quality), Flex (developer-controlled parameters), Dev (32B open-weight model), and Klein (Apache 2.0 open-source). All models feature multi-reference support (up to 10 images), advanced text rendering, and 4MP resolution capabilities, with pricing starting at $0.03 per megapixel for ..."
+    }
+  ]
+}

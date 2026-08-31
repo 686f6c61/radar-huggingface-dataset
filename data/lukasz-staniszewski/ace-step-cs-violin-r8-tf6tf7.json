@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lukasz-staniszewski/ace-step-cs-violin-r8-tf6tf7",
+  "slug": "lukasz-staniszewski-ace-step-cs-violin-r8-tf6tf7",
+  "author": "lukasz-staniszewski",
+  "url": "https://huggingface.co/lukasz-staniszewski/ace-step-cs-violin-r8-tf6tf7",
+  "created_at": "2026-08-31T11:42:26.000Z",
+  "updated_at": "2026-08-31T11:42:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "music-generation",
+    "steering",
+    "lora",
+    "ace-step",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1971856,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lukasz-staniszewski/ace-step-cs-violin-r8-tf6tf7 · Hugging Face",
+      "url": "https://huggingface.co/lukasz-staniszewski/ace-step-cs-violin-r8-tf6tf7",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lukasz-staniszewski/ace-step-sae-scores-violin · Hugging Face",
+      "url": "https://huggingface.co/lukasz-staniszewski/ace-step-sae-scores-violin",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - luk-st/steer-audio: Code repository for paper \"Tuning Audio ...",
+      "url": "https://github.com/luk-st/steer-audio",
+      "snippet": "Code repository for paper \"Tuning Audio Diffusion Models through Activation Steering\" - luk-st/steer-audio"
+    },
+    {
+      "title": "A Step Towards Music Generation Foundation Model - GitHub",
+      "url": "https://github.com/ace-step/ACE-Step",
+      "snippet": "📝 Abstract We introduce ACE-Step, a novel open-source foundation model for music generation that overcomes key limitations of existing approaches and achieves state-of-the-art performance through a holistic architectural design. Current methods face inherent trade-offs between generation speed, musical coherence, and controllability."
+    },
+    {
+      "title": "ACE-Step: A Step Towards Music Generation Foundation Model",
+      "url": "https://arxiv.org/html/2506.00045v1",
+      "snippet": "Collectively, these findings position ACE-Step as a leading open-source solution for multilingual music generation, while highlighting critical research directions for advancing both model architectures and evaluation methodologies in music AI research."
+    }
+  ]
+}

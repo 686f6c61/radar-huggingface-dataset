@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "nico248000000000/Qwen3.8-27B-Uncensored-cyber-LoRA",
+  "slug": "nico248000000000-qwen3-8-27b-uncensored-cyber-lora",
+  "author": "nico248000000000",
+  "url": "https://huggingface.co/nico248000000000/Qwen3.8-27B-Uncensored-cyber-LoRA",
+  "created_at": "2026-08-31T10:44:31.000Z",
+  "updated_at": "2026-08-31T18:55:29.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "unsloth",
+    "lora",
+    "qlora",
+    "cyber",
+    "image-text-to-text",
+    "vision",
+    "video",
+    "conversational",
+    "en",
+    "fr",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:adapter:orcarouter/Qwen3.8-27B-Uncensored",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 196854767,
+  "storage_human": "197 MB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Causal language modeling",
+      "dataset": "cyber SFT holdout",
+      "metric": "eval_loss",
+      "value": 0.877844
+    }
+  ],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Uncensored-cyber — LoRA - Hugging Face",
+      "url": "https://huggingface.co/nico248000000000/Qwen3.8-27B-Uncensored-cyber-LoRA",
+      "snippet": "Instructions to use nico248000000000/Qwen3.8-27B-Uncensored-cyber-LoRA with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-FP8-cyber-LoRA - Hugging Face",
+      "url": "https://huggingface.co/nico248000000000/Qwen3.8-27B-Uncensored-FP8-cyber-LoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Ollama build of Qwen3.8-27B-Uncensored — an abliterated (refusal-removed) build of Qwen&#x27;s Qwen3.8-27B, a 27B dense hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with reasoning, tool-calling, and an MTP speculative-decoding head. Sixteen tags from 2-bit to 8-bit, each with the mmproj vision projector bundled in — nothing extra to fetch. Browse all ..."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/qwen/qwen3.8-27b-uncensored",
+      "snippet": "Qwen 3.8 27B Uncensored is an NVFP4 open-weight multimodal model LoRA-tuned for fewer refusals across chat, coding, reasoning, tool use, and long-context work."
+    }
+  ]
+}

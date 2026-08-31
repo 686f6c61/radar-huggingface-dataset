@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "vladlinv/ru-pii-ner-gliner2.5",
+  "slug": "vladlinv-ru-pii-ner-gliner2-5",
+  "author": "vladlinv",
+  "url": "https://huggingface.co/vladlinv/ru-pii-ner-gliner2.5",
+  "created_at": "2026-08-30T20:32:05.000Z",
+  "updated_at": "2026-08-31T15:27:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner2",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "gliner2",
+    "safetensors",
+    "extractor",
+    "pii",
+    "ner",
+    "russian",
+    "ru",
+    "legal",
+    "gliner2.5",
+    "boundary-extraction",
+    "token-classification",
+    "base_model:fastino/gliner2.5-multi-v1",
+    "base_model:finetune:fastino/gliner2.5-multi-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 287355159,
+  "parameters_human": "287.4M",
+  "storage_bytes": 1165496881,
+  "storage_human": "1.2 GB",
+  "base_model": "fastino/gliner2.5-multi-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLiNER: Generalist and Lightweight Model for Named Entity ... - GitHub",
+      "url": "https://github.com/urchade/GLiNER",
+      "snippet": "GLiNER is a framework for training and deploying small Named Entity Recognition (NER) models with zero-shot capabilities. In addition to traditional NER, it supports incremental streaming NER, joint entity and relation extraction, and multi-task token classification. GLiNER is fine-tunable, optimized to run on CPUs and consumer hardware, and has performance competitive with LLMs several times ..."
+    },
+    {
+      "title": "vladlinv/ru-pii-ner · Hugging Face",
+      "url": "https://huggingface.co/vladlinv/ru-pii-ner",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Vlad Linov vladlinv - GitHub",
+      "url": "https://github.com/vladlinv",
+      "snippet": "Add an optional note Maximum 250 characters. Please don&#x27;t include any personal information such as legal names or email addresses. Markdown is supported. This note will only be visible to you. Block user ru-pii-ner ru-pii-ner Public Поиск персональных данных в русскоязычных документах Python"
+    },
+    {
+      "title": "Fastino Labs",
+      "url": "https://fastino.ai/models/gliner2-5",
+      "snippet": "GLiNER2.5 replaces span enumeration with a new boundary-prediction architecture, unlocking unlimited span length, long-context extraction, joint entity-relation extraction, constrained classification, and span attributes. Still small, still no GPU required."
+    },
+    {
+      "title": "fastino/gliner2-privacy-filter-PII-multi · Hugging Face",
+      "url": "https://huggingface.co/fastino/gliner2-privacy-filter-PII-multi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "unleashed-beast/EV",
+  "slug": "unleashed-beast-ev",
+  "author": "unleashed-beast",
+  "url": "https://huggingface.co/unleashed-beast/EV",
+  "created_at": "2026-08-31T17:51:33.000Z",
+  "updated_at": "2026-08-31T17:52:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "lora",
+    "orpo",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:2403.07691",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 255448315,
+  "storage_human": "255 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unleashed-beast (aarush agarwal) - Hugging Face",
+      "url": "https://huggingface.co/unleashed-beast/models",
+      "snippet": "User profile of aarush agarwal on Hugging Face"
+    },
+    {
+      "title": "Electric Beast Unleashed - Download Free 3D model by bigman ... - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/electric-beast-unleashed-9c6b58b6f9c2481a878104e0263f23e5",
+      "snippet": "This model was generated using Meshy (https://www.meshy.ai)&#x27;s AI toolkit. It provides tools that effortlessly turn human imagination into stunning 3D models."
+    },
+    {
+      "title": "unleashed-beast (aarush agarwal) - Hugging Face",
+      "url": "https://huggingface.co/unleashed-beast/activity/all",
+      "snippet": "unleashed-beast &#x27;s activity All Models Datasets Spaces Papers Collections Community Posts Upvotes Likes Articles updated a Spaceabout 2 hours ago Running"
+    },
+    {
+      "title": "Tesla Unleashes 8 BILLION-Mile \"AI Beast\": Why Musk is Now ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=y2U9mr97lA4",
+      "snippet": "Tesla AI Beast just crushed 8.3B driving miles as Elon Musk builds an untouchable real-world AI empire powered by Cortex 2. All Breaking NEWS: • Tech Revolution"
+    },
+    {
+      "title": "Beast Unleashed - 3D model by azdarkarts - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/beast-unleashed-c097856c952d470788779984f22f6b77",
+      "snippet": "This model was generated using Meshy (https://www.meshy.ai)&#x27;s AI toolkit. It provides tools that effortlessly turn human imagination into stunning 3D models."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "loom-ai-org/gemma-3-270m-it-loom",
+  "slug": "loom-ai-org-gemma-3-270m-it-loom",
+  "author": "loom-ai-org",
+  "url": "https://huggingface.co/loom-ai-org/gemma-3-270m-it-loom",
+  "created_at": "2026-08-11T12:30:29.000Z",
+  "updated_at": "2026-08-31T16:41:57.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "loom-py-rt",
+  "languages": [],
+  "tags": [
+    "loom-py-rt",
+    "gguf",
+    "text-generation",
+    "base_model:google/gemma-3-270m-it",
+    "base_model:quantized:google/gemma-3-270m-it",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 479,
+  "trending_score": 0,
+  "parameters": 268364547,
+  "parameters_human": "268.4M",
+  "storage_bytes": 4350131232,
+  "storage_human": "4.4 GB",
+  "base_model": "google/gemma-3-270m-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "loom-ai-org/gemma-3-270m-it-loom · Hugging Face",
+      "url": "https://huggingface.co/loom-ai-org/gemma-3-270m-it-loom",
+      "snippet": "Original model Exported from google/gemma-3-270m-it. Weights are unmodified; this repo packages the same parameters into loom.cpp&#x27;s GGUF format."
+    },
+    {
+      "title": "google/gemma-3-270m-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-270m-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma-3-270M/README.md at main · p1kalys/Gemma-3-270M · GitHub",
+      "url": "https://github.com/p1kalys/Gemma-3-270M/blob/main/README.md",
+      "snippet": "Gemma-3-270M Implementation Architecture 1. Project Overview Implemented and fine-tuned Gemma-3 270M, a transformer-based LLM architecture optimized for long context sequences (32k tokens). Explored instruction-tuned variants for conversational AI, demonstrating flexibility in model deployment."
+    },
+    {
+      "title": "Gemma 3 - 270m-it Open-source Multimodal Model - Free to Process Text ...",
+      "url": "https://model.aibase.com/models/details/1957314709820805120",
+      "snippet": "Gemma 3 is a lightweight and state-of-the-art open-source multimodal model family launched by Google, built on the same research and technology as the Gemini model. The 270M version is the smallest model among them, capable of handling text and image inputs and generating text outputs, suitable for various text generation and image understanding tasks. Image-to-Text Transformers #Multimodal ..."
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Prannesshkva/QU-SSM-130M",
+  "slug": "prannesshkva-qu-ssm-130m",
+  "author": "Prannesshkva",
+  "url": "https://huggingface.co/Prannesshkva/QU-SSM-130M",
+  "created_at": "2026-08-31T11:11:08.000Z",
+  "updated_at": "2026-08-31T11:23:55.000Z",
+  "license": "bsl-1.1",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qu_ssm_130m",
+    "state-space-models",
+    "lie-algebra",
+    "unitary-recurrence",
+    "spectral-radius",
+    "qu-ssm",
+    "causal-lm",
+    "text-generation",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 290489856,
+  "parameters_human": "290.5M",
+  "storage_bytes": 2323994304,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prannesshkva/Phantom-Samba-130M · Hugging Face",
+      "url": "https://huggingface.co/Prannesshkva/Phantom-Samba-130M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Prannesshkva/Ael-504M · Hugging Face",
+      "url": "https://huggingface.co/Prannesshkva/Ael-504M",
+      "snippet": "Prannesshkva / Ael-504M like 0 Text Generation Transformers Safetensors PyTorch English ael mamba2 state-space-models Mixture of Experts multimodal edge-ai any-to-any conversational custom_code License:bsl-1.1 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Prannessh KVA — Data Engineering & Backend Systems",
+      "url": "https://prannesshkva.vercel.app/index.html",
+      "snippet": "State-Aware Graph-Based AI Backend — integrating as a deployable Model Control Plane with Quantistic for adaptive data intelligence and decision-making."
+    },
+    {
+      "title": "Prannessh KVA prannesshkva - GitHub",
+      "url": "https://github.com/prannesshkva",
+      "snippet": "Highly driven AI and Software Engineering student with proven expertise bridging Data Science, Backend Infrastructure, and Distributed Systems. - prannesshkva"
+    },
+    {
+      "title": "Parameter-Efficient Fine-Tuning of State Space Models",
+      "url": "https://openreview.net/pdf?id=KO99CG0Edz",
+      "snippet": "Abstract Deep State Space Models (SSMs), such as Mamba [10], have emerged as powerful tools for language modeling, offering high performance with eficient inference and linear scaling in sequence length. However, the application of parameter-eficient fine-tuning (PEFT) methods to SSM-based models remains largely unexplored. This paper aims to systematically study two key questions: (i) How do ..."
+    }
+  ]
+}

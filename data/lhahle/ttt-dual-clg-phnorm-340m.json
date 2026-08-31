@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "lhahle/ttt-dual-clg-phnorm-340M",
+  "slug": "lhahle-ttt-dual-clg-phnorm-340m",
+  "author": "lhahle",
+  "url": "https://huggingface.co/lhahle/ttt-dual-clg-phnorm-340M",
+  "created_at": "2026-08-31T18:33:38.000Z",
+  "updated_at": "2026-08-31T18:33:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "ttt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 372507248,
+  "parameters_human": "372.5M",
+  "storage_bytes": 1490084880,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claude Benchmarks (2026): Fable 5 Hits 95% SWE-bench Verified. Every ...",
+      "url": "https://www.morphllm.com/claude-benchmarks",
+      "snippet": "Every current Claude model benchmarked: Fable 5 (95% SWE-bench Verified), Opus 4.8 (88.6%, 69.2% SWE-bench Pro), Sonnet 4.6, Haiku 4.5. Exact API model IDs, $/MTok pricing, Terminal-Bench, GPQA, plus legacy Claude 3.5 Sonnet scores."
+    },
+    {
+      "title": "HalfNormal: Half-normal distribution in extraDistr: Additional ...",
+      "url": "https://rdrr.io/cran/extraDistr/man/HalfNormal.html",
+      "snippet": "Details If X follows normal distribution centered at 0 and parametrized by scale &#92;sigma, then |X| follows half-normal distribution parametrized by scale &#92;sigma. Half-t distribution with &#92;nu=&#92;infty degrees of freedom converges to half-normal distribution. References Gelman, A. (2006). Prior distributions for variance parameters in hierarchical models (comment on article by Browne and Draper ..."
+    },
+    {
+      "title": "All 400 AI Models Compared — LLM Directory 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/models",
+      "snippet": "Browse and compare 400 large language models across 296 model families from OpenAI, Anthropic, Google, Meta, DeepSeek, and more."
+    },
+    {
+      "title": "Wanyun/hola-340m · Hugging Face",
+      "url": "https://huggingface.co/Wanyun/hola-340m",
+      "snippet": "Instructions to use Wanyun/hola-340m with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Wanyun/hola-340m with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model=\"Wanyun/hola-340m ..."
+    },
+    {
+      "title": "[2407.04620] Learning to (Learn at Test Time): RNNs with Expressive ...",
+      "url": "https://arxiv.org/abs/2407.04620",
+      "snippet": "We consider two instantiations: TTT-Linear and TTT-MLP, whose hidden state is a linear model and a two-layer MLP respectively. We evaluate our instantiations at the scale of 125M to 1.3B parameters, comparing with a strong Transformer and Mamba, a modern RNN."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "FlatFootInternational/Ornith-1.5-9B-MLX-8bit",
+  "slug": "flatfootinternational-ornith-1-5-9b-mlx-8bit",
+  "author": "FlatFootInternational",
+  "url": "https://huggingface.co/FlatFootInternational/Ornith-1.5-9B-MLX-8bit",
+  "created_at": "2026-08-31T17:33:45.000Z",
+  "updated_at": "2026-08-31T17:33:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-9B",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2975030512,
+  "parameters_human": "2.98B",
+  "storage_bytes": 10446580236,
+  "storage_human": "10.4 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-9B-MLX-8bit · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX-8bit",
+      "snippet": "Ornith 1.5 9B This model card documents Ornith-1.5-9B, the most lightweight member of the Ornith-1.5 family — a 9B dense model designed for efficient single-GPU deployment, and edge-deployable on mobile devices via its quantized Ornith-1.5-9B-Mobile variant."
+    },
+    {
+      "title": "Ornith-1.5-MLX - a ornith-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ornith-ai/ornith-15-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "ornith-1.5 - ollama.com",
+      "url": "https://ollama.com/library/ornith-1.5",
+      "snippet": "Chirp Chirp! 🐦 We are introducing Ornith-1.5, a major step toward building foundation models through end-to-end self-improvement."
+    },
+    {
+      "title": "Ornith 1.5 9B MLX by ornith-ai — VRAM 17.9GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/ornith-ai%2FOrnith-1.5-9B-MLX,2vKynjq3j0X8EOruPo0W2V",
+      "snippet": "Ornith 1.5 9B MLX is an open-source 9b LLM by ornith-ai. VRAM 17.9GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

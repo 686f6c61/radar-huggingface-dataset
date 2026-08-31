@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Blugart/estragon-9b",
+  "slug": "blugart-estragon-9b",
+  "author": "Blugart",
+  "url": "https://huggingface.co/Blugart/estragon-9b",
+  "created_at": "2026-08-31T15:53:20.000Z",
+  "updated_at": "2026-08-31T15:58:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "godot",
+    "gdscript",
+    "game-development",
+    "code-generation",
+    "qwen3.5",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927651918,
+  "storage_human": "17.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Homeowner shoots, kills suspected intruder in Cochise County - MSN",
+      "url": "https://www.msn.com/en-us/news/other/mit-warns-that-ai-can-now-credibly-complete-pretty-much-any-undergrad-assignment-considers-overhaul-of-entire-educational-model/ar-AA2be5Ht",
+      "snippet": "The traditional educational model needs an AI-proof overhaul. The post MIT Warns That AI Can Now Credibly Complete Pretty Much Any Undergrad Assignment, Considers Overhaul of Entire Educational ..."
+    },
+    {
+      "title": "deepseek-v4-pro-0813 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-pro-0813",
+      "snippet": "DeepSeek V4 scales to 1M-token context windows with efficient MoE architecture for coding tasks."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "FLUX.2 [klein] 9B API, Pricing & Playground | Vercel AI Gateway",
+      "url": "https://vercel.com/ai-gateway/models/flux-2-klein-9b",
+      "snippet": "FLUX.2 [klein] 9B is Black Forest Labs&#x27;s quality-focused small image model in the Klein family. It pairs a 9B flow model with an 8B Qwen3 text embedder and distills inference to four steps for sub-half-second latency."
+    }
+  ]
+}

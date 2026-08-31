@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jaymanaryan/Qwen3-Combined-4",
+  "slug": "jaymanaryan-qwen3-combined-4",
+  "author": "jaymanaryan",
+  "url": "https://huggingface.co/jaymanaryan/Qwen3-Combined-4",
+  "created_at": "2026-08-31T15:00:11.000Z",
+  "updated_at": "2026-08-31T15:05:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "merge",
+    "mergekit",
+    "lazymergekit",
+    "local_model",
+    "NiuTrans/LMT-60-4B-Base",
+    "budecosystem/hex-1",
+    "base_model:NiuTrans/LMT-60-4B-Base",
+    "base_model:merge:NiuTrans/LMT-60-4B-Base",
+    "base_model:budecosystem/hex-1",
+    "base_model:merge:budecosystem/hex-1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8822894448,
+  "storage_human": "8.8 GB",
+  "base_model": "local_model, NiuTrans/LMT-60-4B-Base, budecosystem/hex-1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Thinking-2507 is the continuation of Qwen3 thinking model, with improved quality and depth of reasoning, featuring the following key enhancements: Significantly improved performance on reasoning tasks, including logical reasoning, mathematics, science, coding, and academic benchmarks that typically require human expertise — achieving ..."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Research Latest Advancements Qwen3.8-Max: A New Bar for Coding and Cowork Today, we are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model — the open weights will be released next week."
+    },
+    {
+      "title": "PDF Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388.pdf",
+      "snippet": "In this work, we introduce Qwen3, the latest series in our foundation model family, Qwen. Qwen3 is a collection of open-weight large language models (LLMs) that achieve state-of-the-art performance across a wide variety of tasks and domains. We release both dense and Mixture-of-Experts (MoE) models, with the number of parameters ranging from 0.6 billion to 235 billion, to meet the needs of ..."
+    },
+    {
+      "title": "Qwen 3 Complete Guide: Models, Features & API | AI Wiki",
+      "url": "https://artificial-intelligence-wiki.com/generative-ai/large-language-models/qwen-3-complete-guide/",
+      "snippet": "Complete guide to Qwen 3 AI models from Alibaba. Learn about Qwen3-235B, Qwen3-Max, features, pricing, API access, benchmarks and deployment options."
+    }
+  ]
+}

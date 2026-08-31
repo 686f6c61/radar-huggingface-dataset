@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "6block/Qwen3.8-Flash-Next-GGUF",
+  "slug": "6block-qwen3-8-flash-next-gguf",
+  "author": "6block",
+  "url": "https://huggingface.co/6block/Qwen3.8-Flash-Next-GGUF",
+  "created_at": "2026-08-31T16:07:01.000Z",
+  "updated_at": "2026-08-31T17:10:16.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen4exp",
+    "moe",
+    "quantized",
+    "layered-quantization",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 280460763136,
+  "storage_human": "280.5 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next?file=Qwen3.8-Flash-Next",
+      "snippet": "Qwen3.8-Flash-Next features a 125B -parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token. Compared with Qwen3.7-Plus, Qwen3.8-Flash-Next substantially reduces both training and inference cost — training takes only about 1/9 as much, yet it delivers superior capabilities in coding and office tasks."
+    },
+    {
+      "title": "unsloth/Qwen3.8-Flash-Next-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "DevQuasar/Qwen.Qwen3.8-Flash-Next-GGUF · Hugging Face",
+      "url": "https://huggingface.co/DevQuasar/Qwen.Qwen3.8-Flash-Next-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next-GGUF - Wiro AI",
+      "url": "https://wiro.ai/models/unsloth/qwen3-8-flash-next-gguf",
+      "snippet": "Qwen 3.8 Flash Next GGUF is Unsloth&#x27;s GGUF build for long-context chat with optional thinking mode. Try Qwen 3.8 Flash Next GGUF by Unsloth on Wiro now."
+    }
+  ]
+}

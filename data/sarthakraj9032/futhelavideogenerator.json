@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "sarthakraj9032/Futhelavideogenerator",
+  "slug": "sarthakraj9032-futhelavideogenerator",
+  "author": "sarthakraj9032",
+  "url": "https://huggingface.co/sarthakraj9032/Futhelavideogenerator",
+  "created_at": "2026-08-31T12:02:07.000Z",
+  "updated_at": "2026-08-31T12:02:07.000Z",
+  "license": "minimax-h3-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "fastvideo",
+  "languages": [],
+  "tags": [
+    "fastvideo",
+    "diffusers",
+    "safetensors",
+    "text-to-video",
+    "video",
+    "audio",
+    "text-to-audio-video",
+    "distillation",
+    "dmd2",
+    "few-step",
+    "minimax-h3",
+    "fasth3",
+    "preview",
+    "arxiv:2405.14867",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 147835483860,
+  "storage_human": "147.8 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Video Generator — Free. Online. No Download. - Kapwing",
+      "url": "https://www.kapwing.com/ai-video-generator",
+      "snippet": "Powerful online AI Video Generator for Text to Video and Image to Video. Create video clips up to 30 seconds using AI models like Veo, Kling, Seedance, and Sora. Start for free."
+    },
+    {
+      "title": "Free AI Video Generator - No Sign Up,Unlimited & Uncensored",
+      "url": "https://video-generator.ai/",
+      "snippet": "Free AI Video Generator That Puts You In Control Create cinematic videos from text or images using multiple AI models. Fast generation, flexible styles, and creator-friendly controls — all in one place."
+    },
+    {
+      "title": "BasedLabs.ai - AI Image & Video Generator",
+      "url": "https://www.basedlabs.ai/",
+      "snippet": "Create AI images, videos, and face swaps with 50+ powerful AI models. Trusted by thousands of creators. Sign up free to start."
+    },
+    {
+      "title": "AIVideo — AI video generation platform",
+      "url": "https://www.aivideo.com/",
+      "snippet": "AIVideo is the all-in-one AI creation platform with all the latest AI Generative models, a native editor, workflows, end to end automations, and the AIVideo MCP that does it all for production-ready content."
+    },
+    {
+      "title": "GitHub - prakashdk/video-creator: Fully offline pipeline to auto ...",
+      "url": "https://github.com/prakashdk/video-creator",
+      "snippet": "Offline AI Video Generator is a modular pipeline that automatically creates short-form videos using local AI models. It combines multiple components—language generation, text-to-speech, image generation, subtitle alignment, and video rendering—into a fully offline workflow. Ideal as a demonstration of practical AI integration, media generation, and automation systems in a real-world scenario."
+    }
+  ]
+}

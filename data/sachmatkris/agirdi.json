@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "sachmatkris/agirdi",
+  "slug": "sachmatkris-agirdi",
+  "author": "sachmatkris",
+  "url": "https://huggingface.co/sachmatkris/agirdi",
+  "created_at": "2026-08-31T13:39:14.000Z",
+  "updated_at": "2026-08-31T14:43:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "lt"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "asr",
+    "lithuanian",
+    "automatic-speech-recognition",
+    "lt",
+    "dataset:meldynamics/liepa-3",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 808878080,
+  "parameters_human": "808.9M",
+  "storage_bytes": 9707145410,
+  "storage_human": "9.7 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SMAGDi: Socratic Multi Agent Interaction Graph Distillation for ...",
+      "url": "https://arxiv.org/html/2511.05528",
+      "snippet": "2.2 Socratic Chain-of-Thought Distillation (SCoT) Socratic Chain-of-Thought (SCoT) is a knowledge distillation technique that trains its student model on rationals elicited from the teacher model when solving a particular problem, training the student to simplify and solve complex problems in a similar step-by-step manner to the teacher."
+    },
+    {
+      "title": "[2511.05528v1] SMAGDi: Socratic Multi Agent Interaction Graph ...",
+      "url": "https://arxiv.org/abs/2511.05528v1",
+      "snippet": "Multi-agent systems (MAS) often achieve higher reasoning accuracy than single models, but their reliance on repeated debates across agents makes them computationally expensive. We introduce SMAGDi, a distillation framework that transfers the debate dynamics of a five-agent Llama-based MAS into a compact Socratic decomposer-solver student. SMAGDi represents debate traces as directed interaction ..."
+    },
+    {
+      "title": "SMAGDi: Socratic Multi Agent Interaction Graph Distillation for ...",
+      "url": "https://openreview.net/pdf?id=Qvb3aLBB2k",
+      "snippet": "Abstract Multi-agent systems (MAS) often achieve higher reasoning accuracy than single models, but their reliance on repeated debates across agents makes them computa-tionally expensive. We introduce SMAGDi, a distillation framework that transfers the debate dynamics of a five-agent Llama-based MAS into a compact Socratic decomposer-solver student. SMAGDi represents debate traces as directed ..."
+    },
+    {
+      "title": "AGI Timeline 2026: Expert Predictions Tracker | Skynet Countdown",
+      "url": "https://skynetcountdown.com/agi-timeline",
+      "snippet": "When will AGI arrive? Side-by-side timeline predictions from Sam Altman, Dario Amodei, Demis Hassabis, Geoffrey Hinton and forecasting communities — next to our live, news-driven AGI estimate."
+    },
+    {
+      "title": "sachmatkris (Kristijonas Raudys) - Hugging Face",
+      "url": "https://huggingface.co/sachmatkris",
+      "snippet": "User profile of Kristijonas Raudys on Hugging Face"
+    }
+  ]
+}

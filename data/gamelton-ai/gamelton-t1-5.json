@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Gamelton-ai/Gamelton-T1.5",
+  "slug": "gamelton-ai-gamelton-t1-5",
+  "author": "Gamelton-ai",
+  "url": "https://huggingface.co/Gamelton-ai/Gamelton-T1.5",
+  "created_at": "2026-08-31T13:15:48.000Z",
+  "updated_at": "2026-08-31T13:32:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999887104,
+  "parameters_human": "999.9M",
+  "storage_bytes": 4029557632,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gamelton-ai/Gamelton-T1.1 · Hugging Face",
+      "url": "https://huggingface.co/Gamelton-ai/Gamelton-T1.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GameltonAI (Gamelton) - Hugging Face",
+      "url": "https://huggingface.co/GameltonAI/models",
+      "snippet": "Gaming AI AI & ML interests Gaming AI Team members 1"
+    },
+    {
+      "title": "GameltonAI (Alpha) V.1.0.1 by GameltonAI",
+      "url": "https://gameltonai.itch.io/gameltonai",
+      "snippet": "нейросеть Gamelton This is a Gamelton neural network that you can train, yes it will be locally on your PC, you need to train in the field on the right there it says \"Training\", write the question > answer, necessarily with this symbol \">\" it is important."
+    },
+    {
+      "title": "gamelton · GitHub",
+      "url": "https://github.com/gamelton",
+      "snippet": "gamelton has 14 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GameltonAI published GameltonAI (Alpha) V.1.0.1 - itch.io",
+      "url": "https://itch.io/e/31367696/gameltonai-published-gameltonai-alpha-v101",
+      "snippet": "This is a Gamelton neural network that you can train, yes it will be locally on your PC, you need to train in the field on the right there it says \"Training\", write the question > answer, necessarily with this symbol \">\" it is important."
+    }
+  ]
+}

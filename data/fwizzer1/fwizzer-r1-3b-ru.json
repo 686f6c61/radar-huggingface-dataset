@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "fwizzer1/Fwizzer-R1-3B-RU",
+  "slug": "fwizzer1-fwizzer-r1-3b-ru",
+  "author": "fwizzer1",
+  "url": "https://huggingface.co/fwizzer1/Fwizzer-R1-3B-RU",
+  "created_at": "2026-08-29T10:56:40.000Z",
+  "updated_at": "2026-08-31T13:23:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "mistral3",
+    "reasoning",
+    "deepseek-r1",
+    "think",
+    "mistral",
+    "lmstudio",
+    "text-generation",
+    "conversational",
+    "ru",
+    "en",
+    "base_model:mistralai/Ministral-3-3B-Instruct-2512",
+    "base_model:quantized:mistralai/Ministral-3-3B-Instruct-2512",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3429006336,
+  "parameters_human": "3.43B",
+  "storage_bytes": 6408547409,
+  "storage_human": "6.4 GB",
+  "base_model": "mistralai/Ministral-3-3B-Instruct-2512",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-R1 · GitHub",
+      "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+      "snippet": "However, DeepSeek-R1-Zero encounters challenges such as endless repetition, poor readability, and language mixing. To address these issues and further enhance reasoning performance, we introduce DeepSeek-R1, which incorporates cold-start data before RL. DeepSeek-R1 achieves performance comparable to OpenAI-o1 across math, code, and reasoning tasks."
+    },
+    {
+      "title": "Model Access | deepseek-ai/DeepSeek-R1 | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-ai/DeepSeek-R1/3.1-model-access",
+      "snippet": "This page documents the various methods for accessing DeepSeek-R1 family models. It covers official hosted solutions, API endpoints, model repositories, and brief introductions to deployment options."
+    },
+    {
+      "title": "AI Model Library, Deploy Open-Source LLMs & Image Models | Modular",
+      "url": "https://www.modular.com/models",
+      "snippet": "Browse and deploy open-source AI models including Gemma 4, DeepSeek V3.2, FLUX.2, GLM-5, and Kimi K2.5. Optimized inference on NVIDIA and AMD GPUs."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "shadow/mmh3turbo-bundles",
+  "slug": "shadow-mmh3turbo-bundles",
+  "author": "shadow",
+  "url": "https://huggingface.co/shadow/mmh3turbo-bundles",
+  "created_at": "2026-08-31T11:52:50.000Z",
+  "updated_at": "2026-08-31T11:52:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "apple-silicon",
+    "text-to-video",
+    "minimax",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36206834943,
+  "storage_human": "36.2 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yunfengwang/mmh3turbo-bundles · Hugging Face",
+      "url": "https://huggingface.co/yunfengwang/mmh3turbo-bundles",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3vl_4bit.safetensors · yunfengwang/mmh3turbo-bundles at main",
+      "url": "https://huggingface.co/yunfengwang/mmh3turbo-bundles/blob/main/qwen3vl_4bit.safetensors",
+      "snippet": "yunfengwang / mmh3turbo-bundles like 0 Text-to-Video MLX apple-silicon minimax License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - shadowcz007/mmh3turbo-mirror: Mirror of mmh3turbo 0.1.0 ...",
+      "url": "https://github.com/shadowcz007/mmh3turbo-mirror",
+      "snippet": "Prepared bundles come from yunfengwang/mmh3turbo-bundles; set MMH3TURBO_BUNDLE_REPO=\"\" to convert them locally instead (~8 min). Output is an mp4 with a stereo soundtrack, plus the individual frames and a gif preview."
+    },
+    {
+      "title": "MiniMax H3 Turbo LoRA Download: 4-Step Audio-Video Generation",
+      "url": "https://comfyui-wiki.com/en/news/2026-08-06-minimax-h3-turbo-lora",
+      "snippet": "Start from the official MiniMax H3 open-weights workflow, insert the Turbo LoRA between the model loader and the sampler, and replace the sampler with the MiniMax-H3 Turbo Sampler (4-step) with scheduler set to simple. A ready-made text-to-video workflow is bundled in the repo (minimax_h3_t2v_turbo.json) and in the node repo&#x27;s example workflows."
+    },
+    {
+      "title": "Shadow bundles: A big opportunity for MSSP and REACH ACOs - Milliman",
+      "url": "https://www.milliman.com/en/insight/shadow-bundles-big-opportunity-mssp-reach-acos",
+      "snippet": "These benchmarks are available within Milliman&#x27;s ACO Shadow Bundle Reporting Interface, which helps MSSP and ACO REACH participants better understand the details and opportunities within the shadow bundles (as shown in the illustration in Figure 1) CMS is providing for their attributed populations."
+    }
+  ]
+}

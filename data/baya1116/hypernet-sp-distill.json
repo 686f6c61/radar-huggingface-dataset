@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "baya1116/hypernet-sp-distill",
+  "slug": "baya1116-hypernet-sp-distill",
+  "author": "baya1116",
+  "url": "https://huggingface.co/baya1116/hypernet-sp-distill",
+  "created_at": "2026-05-23T06:15:31.000Z",
+  "updated_at": "2026-08-31T16:42:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "reasoning",
+    "chain-of-thought",
+    "context-compression",
+    "soft-prompt",
+    "apple-silicon",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26055456906,
+  "storage_human": "26.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "baya1116 (baya) - Hugging Face",
+      "url": "https://huggingface.co/baya1116",
+      "snippet": "Recent Activity liked a model1 day ago baya1116/Phase15-DeepSeek-FFT updated a model2 days ago baya1116/hypernet-sp-distill published a model4 days ago baya1116/hypernet-sp-distill View all activity"
+    },
+    {
+      "title": "baya1116/hypernet-sp-distill · Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/baya1116/hypernet-sp-distill",
+      "snippet": "Instructions to use baya1116/hypernet-sp-distill with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use baya1116/hypernet-sp-distill with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir hypernet-sp-distill baya1116/hypernet-sp-distill Notebooks Google Colab ..."
+    },
+    {
+      "title": "baya1116/deep-charger · Hugging Face",
+      "url": "https://huggingface.co/baya1116/deep-charger",
+      "snippet": "Related repos baya1116/hypernet-sp-distill — research workspace (training runs, experiments; messy by design) baya1116/Phase15-DeepSeek-FFT — the FFT training phase this model came from Downloads last month -"
+    },
+    {
+      "title": "GitHub - horus-ai-labs/DistillFlow: Library for model distillation",
+      "url": "https://github.com/horus-ai-labs/DistillFlow",
+      "snippet": "DistillFlow lets you build a fully configurable pipeline, to help with your Distillation. Once the data is available, choose a teacher model, and the student model and your dataset and finally run the distillation."
+    },
+    {
+      "title": "HyperNet AI Model Cuts Parameters by 30% While Beating GPT-3",
+      "url": "https://www.linkedin.com/posts/the-machines-learning_ai-machinelearning-transformer-activity-7493633557978963968-6xFn",
+      "snippet": "Building an End-to-End Data Science Portfolio Project A new AI model slashes parameters by 30% while beating GPT‑3 on benchmarks - meet HyperNet! Researchers at Stanford University have ..."
+    }
+  ]
+}

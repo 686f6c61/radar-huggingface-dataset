@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lukasz-staniszewski/ace-step-cs-piano-r8-all",
+  "slug": "lukasz-staniszewski-ace-step-cs-piano-r8-all",
+  "author": "lukasz-staniszewski",
+  "url": "https://huggingface.co/lukasz-staniszewski/ace-step-cs-piano-r8-all",
+  "created_at": "2026-08-31T11:41:34.000Z",
+  "updated_at": "2026-08-31T11:41:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "music-generation",
+    "steering",
+    "lora",
+    "ace-step",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23663448,
+  "storage_human": "24 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lukasz-staniszewski/ace-step-cs-piano-r8-all · Hugging Face",
+      "url": "https://huggingface.co/lukasz-staniszewski/ace-step-cs-piano-r8-all",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lukasz-staniszewski (Lukasz Staniszewski) - Hugging Face",
+      "url": "https://huggingface.co/lukasz-staniszewski/models",
+      "snippet": "Generative AI, Computer Vision lukasz-staniszewski 251 Follow manh-linh&#x27;s profile pictureKazumaSensei&#x27;s profile picturenmdeal&#x27;s profile picture 4 followers · 3 following https://luk-st.github.io/ lukxst luk-st l-staniszewski"
+    },
+    {
+      "title": "lukasz-staniszewski/ace-step-caa-piano · Hugging Face",
+      "url": "https://huggingface.co/lukasz-staniszewski/ace-step-caa-piano",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ACE-Step Audio Steering Suite - a lukasz-staniszewski Collection",
+      "url": "https://huggingface.co/collections/lukasz-staniszewski/ace-step-audio-steering-suite",
+      "snippet": "Steering vectors, SAEs, and counterfactual prompts for ACE-Step. Companion to the audio-interv unified Controller interface."
+    },
+    {
+      "title": "lukasz-staniszewski/ace-step-sae-scores-piano at main",
+      "url": "https://huggingface.co/lukasz-staniszewski/ace-step-sae-scores-piano/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

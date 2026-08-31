@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "NostraEmpire/mirror-depth-anything-v2-small",
+  "slug": "nostraempire-mirror-depth-anything-v2-small",
+  "author": "NostraEmpire",
+  "url": "https://huggingface.co/NostraEmpire/mirror-depth-anything-v2-small",
+  "created_at": "2026-08-31T13:35:19.000Z",
+  "updated_at": "2026-08-31T13:35:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "depth-anything-v2",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "depth-anything-v2",
+    "depth",
+    "relative depth",
+    "depth-estimation",
+    "en",
+    "arxiv:2406.09414",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99218434,
+  "storage_human": "99 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Depth-Anything-V2-Small - Hugging Face",
+      "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - DepthAnything/Depth-Anything-V2: [NeurIPS 2024] Depth Anything ...",
+      "url": "https://github.com/DepthAnything/Depth-Anything-V2",
+      "snippet": "This work presents Depth Anything V2. It significantly outperforms V1 in fine-grained details and robustness. Compared with SD-based models, it enjoys faster inference speed, fewer parameters, and higher depth accuracy."
+    },
+    {
+      "title": "Depth-Anything-V2-Small · Models",
+      "url": "https://www.modelscope.cn/models/depth-anything/Depth-Anything-V2-Small",
+      "snippet": "Depth-Anything-V2-Small Introduction Depth Anything V2 is trained from 595K synthetic labeled images and 62M+ real unlabeled images, providing the most capable monocular depth estimation (MDE) model with the following features: more fine-grained details than Depth Anything V1 more robust than Depth Anything V1 and SD-based models (e.g., Marigold, Geowizard) more efficient (10x faster) and more ..."
+    },
+    {
+      "title": "Ambarella/DepthAnythingV2 · Hugging Face",
+      "url": "https://huggingface.co/Ambarella/DepthAnythingV2",
+      "snippet": "DepthAnythingV2-Small This model uses the DepthAnythingV2-Small variant, which balances model size and inference speed while maintaining strong depth estimation accuracy. It is well suited for applications such as AR/VR, robotics, scene reconstruction, and real-time 3D perception on edge devices."
+    },
+    {
+      "title": "GitHub - LiheYoung/Depth-Anything: [CVPR 2024] Depth Anything ...",
+      "url": "https://github.com/LiheYoung/Depth-Anything",
+      "snippet": "[CVPR 2024] Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data. Foundation Model for Monocular Depth Estimation - LiheYoung/Depth-Anything"
+    }
+  ]
+}

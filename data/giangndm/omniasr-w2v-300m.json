@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "giangndm/omniASR-W2V-300M",
+  "slug": "giangndm-omniasr-w2v-300m",
+  "author": "giangndm",
+  "url": "https://huggingface.co/giangndm/omniASR-W2V-300M",
+  "created_at": "2026-08-31T17:10:15.000Z",
+  "updated_at": "2026-08-31T17:10:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bfloat16",
+    "speech",
+    "audio-encoder",
+    "wav2vec2",
+    "multilingual",
+    "feature-extraction",
+    "dataset:facebook/omnilingual-asr-corpus",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 317390592,
+  "parameters_human": "317.4M",
+  "storage_bytes": 634830256,
+  "storage_human": "635 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · facebook/omniASR-W2V-300M at main - Hugging Face",
+      "url": "https://huggingface.co/facebook/omniASR-W2V-300M/blob/main/README.md",
+      "snippet": "Model Card for omniASR-W2V-300M Model Description This model is part of the Omnilingual ASR family released by Meta AI. The original suite includes:"
+    },
+    {
+      "title": "facebook/omniASR-W2V-300M · Hugging Face",
+      "url": "https://huggingface.co/facebook/omniASR-W2V-300M",
+      "snippet": "facebook / omniASR-W2V-300M like 10 Follow AI at Meta 13.5k Automatic Speech Recognition facebook/omnilingual-asr-corpus License:apache-2.0 Model card FilesFiles and versions xet Community 1 Copy to bucket new Omnilingual ASR: Open-Source Multilingual Speech Recognition for 1600+ Languages Model Card for omniASR-W2V-300M Model Description ..."
+    },
+    {
+      "title": "GitHub - facebookresearch/omnilingual-asr: Omnilingual ASR Open-Source ...",
+      "url": "https://github.com/facebookresearch/omnilingual-asr",
+      "snippet": "A new variant of the LLM-ASR model that supports decoding on unlimited audio length (omniASR_LLM_Unlimited_ {300M,1B,3B,7B}_v2). The unlimited audio length models are briefly described in the architecture overview section."
+    },
+    {
+      "title": "W2V Models (Self-Supervised Learning) | facebookresearch/omnilingual ...",
+      "url": "https://deepwiki.com/facebookresearch/omnilingual-asr/2.2.1-w2v-models-(self-supervised-learning)",
+      "snippet": "This document covers the W2V (wav2vec2) model family, which provides self-supervised learning (SSL) models for extracting acoustic features from raw audio. These models are trained to learn speech representations without transcription labels, making them useful for feature extraction tasks."
+    },
+    {
+      "title": "CTC Models (Fast ASR) | facebookresearch/omnilingual-asr | DeepWiki",
+      "url": "https://deepwiki.com/facebookresearch/omnilingual-asr/2.2.2-ctc-models-(fast-asr)",
+      "snippet": "This page documents the CTC (Connectionist Temporal Classification) model family in the omnilingual-asr system. CTC models provide fast, efficient automatic speech recognition suitable for real-time a"
+    }
+  ]
+}

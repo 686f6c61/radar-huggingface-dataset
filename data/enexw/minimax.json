@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "EnExW/Minimax",
+  "slug": "enexw-minimax",
+  "author": "EnExW",
+  "url": "https://huggingface.co/EnExW/Minimax",
+  "created_at": "2026-08-06T12:00:39.000Z",
+  "updated_at": "2026-08-31T16:50:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32799009436,
+  "storage_human": "32.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax M3 - Coding & Agentic Frontier, 1M Context, Multimodal",
+      "url": "https://www.minimax.io/models/text/m3",
+      "snippet": "MiniMax M3 reaches frontier-level performance on coding and agentic tasks, with a 1M context window powered by the MSA architecture and native multimodal understanding. The first open-weight model to unite all three capabilities."
+    },
+    {
+      "title": "EnExW/Minimax-FL2VA · Hugging Face",
+      "url": "https://huggingface.co/EnExW/Minimax-FL2VA",
+      "snippet": "EnExW / Minimax-FL2VA like 0 Follow EnExW Comunidad 11 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-M1: MiniMax-M1, the world&#x27;s first open ...",
+      "url": "https://github.com/MiniMax-AI/MiniMax-M1",
+      "snippet": "We introduce MiniMax-M1, the world&#x27;s first open-weight, large-scale hybrid-attention reasoning model. MiniMax-M1 is powered by a hybrid Mixture-of-Experts (MoE) architecture combined with a lightning attention mechanism. The model is developed based on our previous MiniMax-Text-01 model, which contains a total of 456 billion parameters with 45.9 billion parameters activated per token ..."
+    },
+    {
+      "title": "Models - MiniMax API Docs",
+      "url": "https://platform.minimax.io/docs/release-notes/models",
+      "snippet": "Stay updated on MiniMax&#x27;s latest model releases across language, audio, video, image, and music."
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-M2 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

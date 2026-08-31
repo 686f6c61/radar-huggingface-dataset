@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "KoarAI/LFM2.5-350M-Thinking-0005-GGUF",
+  "slug": "koarai-lfm2-5-350m-thinking-0005-gguf",
+  "author": "KoarAI",
+  "url": "https://huggingface.co/KoarAI/LFM2.5-350M-Thinking-0005-GGUF",
+  "created_at": "2026-08-31T14:57:47.000Z",
+  "updated_at": "2026-08-31T15:05:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "liquid-ai",
+    "lfm2.5",
+    "reasoning",
+    "llama-cpp",
+    "ollama",
+    "ru",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 353322752,
+  "parameters_human": "353.3M",
+  "storage_bytes": 1087745155,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KoarAI / LFM2.5-350M-Thinking - Hugging Face",
+      "url": "https://huggingface.co/KoarAI/LFM2.5-350M-Thinking",
+      "snippet": "🚀 KoarAI Release & Versioning Policy: Starting from the upcoming release (0003 and beyond), rather than overwriting existing models, each new iteration will be released into its own dedicated repository (e.g., KoarAI/LFM2.5-350M-Thinking-v3, KoarAI/LFM2.5-350M-Thinking-RU, etc.)."
+    },
+    {
+      "title": "KoarAI/LFM2.5-350M-Thinking-0003-GGUF · Hugging Face",
+      "url": "https://huggingface.co/KoarAI/LFM2.5-350M-Thinking-0003-GGUF",
+      "snippet": "KoarAI/LFM2.5-350M-Thinking-0003 is an ultra-compact, high-efficiency hybrid reasoning language model featuring native Chain-of-Thought (CoT) thinking capabilities."
+    },
+    {
+      "title": "LFM2.5 350M Thinking by KoarAI - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/KoarAI%2FLFM2.5-350M-Thinking,3oSFwVgtuWrLpNkkQ7qLeB",
+      "snippet": "LFM2.5 350M Thinking is an open-source 350m LLM by KoarAI. VRAM 0.7GB, 125K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "LFM2.5-350M: No Size Left Behind | Blog | Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind",
+      "snippet": "Today, we&#x27;re releasing LFM2.5-350M, an improved version of our 350M model with additional pre-training (from 10T to 28T tokens) and large-scale reinforcement learning. Built on the LFM2 architecture, it delivers exceptionally fast inference and runs everywhere, from cloud GPUs to cheap CPUs."
+    },
+    {
+      "title": "Introducing LFM2.5: The Next Generation of On-Device AI | Blog",
+      "url": "https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai",
+      "snippet": "Today, we&#x27;re excited to announce the LFM2.5-1.2B model family, our most capable release yet for edge AI deployment. It builds on the LFM2 device-optimized architecture and represents a significant leap forward in building reliable agents on the edge."
+    }
+  ]
+}

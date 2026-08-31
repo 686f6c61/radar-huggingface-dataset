@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "PocketWeights/AutoMerge-6e703cda",
+  "slug": "pocketweights-automerge-6e703cda",
+  "author": "PocketWeights",
+  "url": "https://huggingface.co/PocketWeights/AutoMerge-6e703cda",
+  "created_at": "2026-08-31T18:09:20.000Z",
+  "updated_at": "2026-08-31T18:13:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "merge",
+    "pocketweights",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543298048,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3904217152,
+  "storage_human": "3.9 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PocketWeights (PocketWeights) - Hugging Face",
+      "url": "https://huggingface.co/PocketWeights",
+      "snippet": "AI & ML interests Heavy models, made light. We specialize in high-quality GGUF & EXL2 quantizations optimized for 6GB-8GB VRAM edge devices and gaming laptops. Drop our models into LM Studio/Ollama and they just work."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=pocketweights",
+      "snippet": "Explore machine learning models. Models 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: pocketweights Clear all"
+    },
+    {
+      "title": "GitHub - AutoMerge-model-reuse/AutoMerge · GitHub",
+      "url": "https://github.com/AutoMerge-model-reuse/AutoMerge",
+      "snippet": "This repository contains code for the paper AutoMerge: Search-Based Model Merging Framework for Effective Model Reuse. This work conducts a systematic study of model merging techniques across diverse model architectures and domains, revealing critical limitations that hinder their effectiveness for model reuse, and propose a novel search-based model merging framework that merges multiple task ..."
+    },
+    {
+      "title": "GitHub - automerge/automerge: A JSON-like data structure (a CRDT) that ...",
+      "url": "https://github.com/automerge/automerge",
+      "snippet": "A JSON-like data structure (a CRDT) that can be modified concurrently by different users, and merged again automatically. - GitHub - automerge/automerge: A JSON-like data structure (a CRDT) that can be modified concurrently by different users, and merged again automatically."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

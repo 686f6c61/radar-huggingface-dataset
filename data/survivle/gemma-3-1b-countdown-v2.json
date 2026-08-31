@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "survivle/gemma-3-1b-countdown-v2",
+  "slug": "survivle-gemma-3-1b-countdown-v2",
+  "author": "survivle",
+  "url": "https://huggingface.co/survivle/gemma-3-1b-countdown-v2",
+  "created_at": "2026-08-31T13:30:25.000Z",
+  "updated_at": "2026-08-31T14:00:33.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma3_text",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 2142304652,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "survivle/gemma3-1b-countdown · Hugging Face",
+      "url": "https://huggingface.co/survivle/gemma3-1b-countdown",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/gemma-3-1b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-1b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - google-deepmind/gemma: Gemma open-weight LLM library, from ...",
+      "url": "https://github.com/google-deepmind/gemma",
+      "snippet": "Gemma is a family of open-weights Large Language Model (LLM) by Google DeepMind, based on Gemini research and technology. This repository contains the implementation of the gemma PyPI package. A JAX library to use and fine-tune Gemma. For examples and use cases, see our documentation. Please report issues and feedback in our GitHub."
+    },
+    {
+      "title": "Gemma passes 1 billion downloads - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-one-billion-downloads/",
+      "snippet": "When we introduced Gemma, our goal was simple: empower developers to build responsible, innovative AI applications anywhere. The Gemma models quickly demonstrated their flexibility to deploy across environments, from local devices to edge infrastructure, and even space. Today, the Gemma family has surpassed a billion downloads."
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    }
+  ]
+}

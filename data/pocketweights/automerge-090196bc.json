@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "PocketWeights/AutoMerge-090196bc",
+  "slug": "pocketweights-automerge-090196bc",
+  "author": "PocketWeights",
+  "url": "https://huggingface.co/PocketWeights/AutoMerge-090196bc",
+  "created_at": "2026-08-31T18:08:57.000Z",
+  "updated_at": "2026-08-31T18:09:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "merge",
+    "pocketweights",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 493789952,
+  "parameters_human": "493.8M",
+  "storage_bytes": 1433819616,
+  "storage_human": "1.4 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PocketWeights (PocketWeights) - Hugging Face",
+      "url": "https://huggingface.co/PocketWeights",
+      "snippet": "AI & ML interests Heavy models, made light. We specialize in high-quality GGUF & EXL2 quantizations optimized for 6GB-8GB VRAM edge devices and gaming laptops. Drop our models into LM Studio/Ollama and they just work."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=pocketweights",
+      "snippet": "Explore machine learning models. Models 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: pocketweights Clear all"
+    },
+    {
+      "title": "AutoMerge/mergekit at main · AutoMerge-model-reuse/AutoMerge",
+      "url": "https://github.com/AutoMerge-model-reuse/AutoMerge/tree/main/mergekit",
+      "snippet": "Contribute to AutoMerge-model-reuse/AutoMerge development by creating an account on GitHub."
+    },
+    {
+      "title": "Weights is joining OpenAI",
+      "url": "https://www.weights.com/",
+      "snippet": "Watch interview helped create many of our favorite Billboard hits, and Weights A model card on Weights was used to train over one million AI models. We&#x27;re excited to bring our experience building consumer products at the forefront of artificial intelligence to OpenAI, where we&#x27;ll be leading Emerging Products."
+    },
+    {
+      "title": "GitHub - automerge/automerge: A JSON-like data structure (a CRDT) that ...",
+      "url": "https://github.com/automerge/automerge",
+      "snippet": "A JSON-like data structure (a CRDT) that can be modified concurrently by different users, and merged again automatically. - GitHub - automerge/automerge: A JSON-like data structure (a CRDT) that can be modified concurrently by different users, and merged again automatically."
+    }
+  ]
+}

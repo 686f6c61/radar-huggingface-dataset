@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hamedkhaledi/whisper-large-v3-persian-ct2-int8",
+  "slug": "hamedkhaledi-whisper-large-v3-persian-ct2-int8",
+  "author": "hamedkhaledi",
+  "url": "https://huggingface.co/hamedkhaledi/whisper-large-v3-persian-ct2-int8",
+  "created_at": "2026-08-31T13:32:57.000Z",
+  "updated_at": "2026-08-31T14:17:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ctranslate2",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "ctranslate2",
+    "whisper",
+    "faster-whisper",
+    "automatic-speech-recognition",
+    "fa",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1551326177,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-large-v3 · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3",
+      "snippet": "For more control over the generation parameters, use the model + processor API directly: import torch from transformers import AutoModelForSpeechSeq2Seq, AutoProcessor from datasets import Audio, load_dataset device = \"cuda:0\" if torch.cuda.is_available() else \"cpu\" torch_dtype = torch.float16 if torch.cuda.is_available() else torch.float32 model_id = \"openai/whisper-large-v3\" model ..."
+    },
+    {
+      "title": "AmirMohseni/whisper-large-v3-persian-ct2-int8 · Hugging Face",
+      "url": "https://huggingface.co/AmirMohseni/whisper-large-v3-persian-ct2-int8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely depending on the language."
+    },
+    {
+      "title": "`large-v3` release · openai whisper · Discussion #1762 · GitHub",
+      "url": "https://github.com/openai/whisper/discussions/1762",
+      "snippet": "The large-v3 model is available in openai-whisper==20231106 and after. To use large-v3, please update the Whisper package using the following command:"
+    },
+    {
+      "title": "whisper-large-v3-persian-common-voice-17 Open Source Model - Improve ...",
+      "url": "https://model.aibase.com/en/models/details/1915730736566657026",
+      "snippet": "A Persian automatic speech recognition model fine-tuned based on Whisper Large v3, trained using the Common Voice 17 dataset, significantly improving Persian recognition accuracy."
+    }
+  ]
+}

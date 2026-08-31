@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "dh-unibe/kraken-medieval-german-v2",
+  "slug": "dh-unibe-kraken-medieval-german-v2",
+  "author": "dh-unibe",
+  "url": "https://huggingface.co/dh-unibe/kraken-medieval-german-v2",
+  "created_at": "2026-08-30T19:34:59.000Z",
+  "updated_at": "2026-08-31T11:59:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-text",
+  "library": "kraken",
+  "languages": [],
+  "tags": [
+    "kraken",
+    "coreml",
+    "htr",
+    "ocr",
+    "handwritten-text-recognition",
+    "historical-documents",
+    "image-to-text",
+    "dataset:dh-unibe/image-text_rats-und-richtebuecher_xv-xvi",
+    "dataset:dh-unibe/image-text_bullinger-autoren",
+    "dataset:dh-unibe/image-text_koenigsfelden-charters-post-1500",
+    "dataset:dh-unibe/image-text_aaeb-xiv-xvii",
+    "doi:10.57967/hf/10222",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16516036,
+  "storage_human": "17 MB",
+  "base_model": "kraken-early_modern_german",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Repository | mittagessen/kraken | DeepWiki",
+      "url": "https://deepwiki.com/mittagessen/kraken/7-model-repository",
+      "snippet": "Model Repository Relevant source files The Model Repository is a system within Kraken that provides access to a collection of pre-trained OCR and HTR models. It allows users to discover, retrieve, and publish models through both a command-line interface and programmatic API."
+    },
+    {
+      "title": "GitHub - mittagessen/kraken: OCR engine for all the languages",
+      "url": "https://github.com/mittagessen/kraken",
+      "snippet": "OCR engine for all the languages. Contribute to mittagessen/kraken development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - thodel/kraken-htr-space: Train Kraken model locally",
+      "url": "https://github.com/thodel/kraken-htr-space",
+      "snippet": "Train Kraken model locally. Contribute to thodel/kraken-htr-space development by creating an account on GitHub."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Training German Handwriting - UB-Mannheim/kraken GitHub Wiki",
+      "url": "https://github-wiki-see.page/m/UB-Mannheim/kraken/wiki/Training-German-Handwriting",
+      "snippet": "Training German Handwriting - UB-Mannheim/kraken GitHub Wiki Training of kraken model for German handwriting german_handwriting is a model which was trained for the recognition of handwritten (German) texts. The first training used 4 ground truth data sets. A 2nd training added another data set, and the 3rd training added one more again."
+    }
+  ]
+}

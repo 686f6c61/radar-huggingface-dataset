@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "narendraseelam/content-moderator-qwen",
+  "slug": "narendraseelam-content-moderator-qwen",
+  "author": "narendraseelam",
+  "url": "https://huggingface.co/narendraseelam/content-moderator-qwen",
+  "created_at": "2026-08-31T06:38:53.000Z",
+  "updated_at": "2026-08-31T15:51:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28914196,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Research Latest Advancements Qwen3.8-Max: A New Bar for Coding and Cowork Today, we are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model — the open weights will be released next week."
+    },
+    {
+      "title": "[2505.09388] Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2505.09388",
+      "snippet": "In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "QwenCloud - AI-Native Models, Tools & Apps Platform - Ready Out of the Box",
+      "url": "https://www.qwencloud.com/",
+      "snippet": "QwenCloud is an AI-native platform offering Qwen LLMs, multimodal models, and agentic AI tools. Build and scale enterprise AI apps with ultra-low latency."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Qwen AI - Alibaba&#x27;s Advanced Language Models",
+      "url": "https://www.qwen-ai.tech/",
+      "snippet": "Discover Qwen AI Alibaba&#x27;s Advanced Language Model Family Explore the powerful, open, and versatile Qwen model family that&#x27;s reshaping the global AI landscape with exceptional performance across code generation, multilingual tasks, and enterprise applications."
+    }
+  ]
+}

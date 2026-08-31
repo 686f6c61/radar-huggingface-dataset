@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/jais-family-13b-i1-GGUF",
+  "slug": "mradermacher-jais-family-13b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/jais-family-13b-i1-GGUF",
+  "created_at": "2025-03-06T09:17:42.000Z",
+  "updated_at": "2026-08-31T17:42:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "Arabic",
+    "English",
+    "LLM",
+    "Decoder",
+    "causal-lm",
+    "jais-family",
+    "ar",
+    "en",
+    "base_model:inception42/jais-family-13b",
+    "base_model:quantized:inception42/jais-family-13b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 241,
+  "trending_score": 0,
+  "parameters": 13462730240,
+  "parameters_human": "13.46B",
+  "storage_bytes": 165180823296,
+  "storage_human": "165.2 GB",
+  "base_model": "inception42/jais-family-13b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/jais-family-13b-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/jais-family-13b-i1-GGUF",
+      "snippet": "mradermacher / jais-family-13b-i1-GGUF like 0 Transformers GGUF Arabic English Arabic English LLM Decoder causal-lm jais-family imatrix License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "mradermacher/jais-family-13b-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/jais-family-13b-GGUF/tree/main",
+      "snippet": "mradermacher / jais-family-13b-GGUF like 3 Transformers GGUF Arabic English Arabic English LLM Decoder causal-lm jais-family License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - sarmadjari/jais-ai-docker",
+      "url": "https://github.com/sarmadjari/jais-ai-docker",
+      "snippet": "This project uses the mradermacher quantized version because: iMatrix Quantization: Advanced i1-Q4_K_M provides superior quality vs static quantization GGUF Format: Optimized for llama.cpp inference with Metal GPU acceleration Balanced Performance: Q4_K_M offers the ideal speed/quality/size ratio (25.97 GiB) Production Ready: Pre-quantized and extensively tested for deployment Community ..."
+    },
+    {
+      "title": "model.aibase.com",
+      "url": "https://model.aibase.com/models/details/1924737589525614592",
+      "snippet": "## 🚀 Jais Family Model Card The Jais family of models is a comprehensive series of bilingual English - Arabic large language models (LLMs). These models are optimized for excellent performance in Arabic while also having strong English capabilities. We release two variants of foundation models: - Models **pre - trained from scratch** (`jais - family - *`). - Models **pre - trained ..."
+    },
+    {
+      "title": "model.aibase.com",
+      "url": "https://model.aibase.com/models/details/1924737590700019712",
+      "snippet": "Jais models (`jais - family - *`) are *trained from scratch*, incorporating the SwiGLU non - linear activation function and ALiBi position encoding. These architectural enhancements allow the models to extrapolate at long sequence lengths, leading to improved context handling and precision."
+    }
+  ]
+}

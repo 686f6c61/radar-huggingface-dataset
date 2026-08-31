@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "inference-optimization/Qwen3.8-Flash-Next-0.2B-A0.2B-MTP",
+  "slug": "inference-optimization-qwen3-8-flash-next-0-2b-a0-2b-mtp",
+  "author": "inference-optimization",
+  "url": "https://huggingface.co/inference-optimization/Qwen3.8-Flash-Next-0.2B-A0.2B-MTP",
+  "created_at": "2026-08-31T17:31:43.000Z",
+  "updated_at": "2026-08-31T17:33:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 163891139,
+  "parameters_human": "163.9M",
+  "storage_bytes": 357670211,
+  "storage_human": "358 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inference-optimization/Qwen3.8-Flash-Next-0.2B-A0.2B · Hugging Face",
+      "url": "https://huggingface.co/inference-optimization/Qwen3.8-Flash-Next-0.2B-A0.2B",
+      "snippet": "Instructions to use inference-optimization/Qwen3.8-Flash-Next-0.2B-A0.2B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability:"
+    },
+    {
+      "title": "inference-optimization/Qwen3.8-Flash-Next-MEP50 · Hugging Face",
+      "url": "https://huggingface.co/inference-optimization/Qwen3.8-Flash-Next-MEP50",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · inference-optimization/Qwen3.8-Flash-Next-0.2B-A0.2B at main",
+      "url": "https://d6108366.hf-mirror.com/inference-optimization/Qwen3.8-Flash-Next-0.2B-A0.2B/blob/main/README.md?code=true",
+      "snippet": "Instructions to use inference-optimization/Qwen3.8-Flash-Next-0.2B-A0.2B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8 Flash Next 0.2B A0.2B by inference-optimization",
+      "url": "https://llm-explorer.com/model/inference-optimization%2FQwen3.8-Flash-Next-0.2B-A0.2B,2RU7AHDzXnXDrhrKnigkek",
+      "snippet": "Qwen3.8 Flash Next 0.2B A0.2B is an open-source 0.2b LLM by inference-optimization. VRAM 0.3GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

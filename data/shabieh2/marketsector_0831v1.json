@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "shabieh2/marketsector_0831v1",
+  "slug": "shabieh2-marketsector_0831v1",
+  "author": "shabieh2",
+  "url": "https://huggingface.co/shabieh2/marketsector_0831v1",
+  "created_at": "2026-08-31T17:43:39.000Z",
+  "updated_at": "2026-08-31T17:44:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "muse_glimmer",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3381603739,
+  "storage_human": "3.4 GB",
+  "base_model": "unsloth/muse-glimmer-30b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shabieh2/marketsector_0827v2 · Hugging Face",
+      "url": "https://huggingface.co/shabieh2/marketsector_0827v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "shabieh2/marketsector_0827v3 · Hugging Face",
+      "url": "https://huggingface.co/shabieh2/marketsector_0827v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "LLM Leaderboard 2026 - Top AI Models Ranked | LM Market Cap",
+      "url": "https://lmmarketcap.com/leaderboards/models",
+      "snippet": "Live LLM leaderboard ranking 350+ AI models by benchmarks, pricing, speed, and capabilities. Compare GPT, Claude, Gemini, DeepSeek, Llama and more with source-backed scores."
+    },
+    {
+      "title": "LLM Updates (August 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    }
+  ]
+}

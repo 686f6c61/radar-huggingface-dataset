@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "amal1994/distilled-voyage-modernbert",
+  "slug": "amal1994-distilled-voyage-modernbert",
+  "author": "amal1994",
+  "url": "https://huggingface.co/amal1994/distilled-voyage-modernbert",
+  "created_at": "2025-11-14T13:41:04.000Z",
+  "updated_at": "2026-08-31T14:16:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 149605633,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598436708,
+  "storage_human": "598 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amal1994/distilled-voyage-modernbert · Hugging Face",
+      "url": "https://huggingface.co/amal1994/distilled-voyage-modernbert",
+      "snippet": "Distilled Voyage ModernBERT Cross-Encoder for UK Statutory Retrieval A ModernBERT-based cross-encoder fine-tuned for re-ranking UK legislation passages. This model distills knowledge from the proprietary Voyage rerank-2 API, providing a fully open-source alternative for statutory information retrieval."
+    },
+    {
+      "title": "amal1994 (Amal Saad Alshehri) - Hugging Face",
+      "url": "https://huggingface.co/amal1994/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 months ago ... updated a model 2 months ago ... published a model 3 months ago"
+    },
+    {
+      "title": "GitHub - AnswerDotAI/ModernBERT: Bringing BERT into modernity via both ...",
+      "url": "https://github.com/AnswerDotAI/ModernBERT",
+      "snippet": "This is the research repository for ModernBERT, focused on pre-training and evaluations. If you&#x27;re seeking the HuggingFace version, designed to integrate with any common pipeline, please head to the ModernBERT Collection on HuggingFace ModernBERT is a collaboration between Answer.AI, LightOn, and friends."
+    },
+    {
+      "title": "modernbert · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/modernbert",
+      "snippet": "Provision-level retrieval and neural reranking for UK legislation, with an open distilled ModernBERT reranker. Official code for the Artificial Intelligence and Law (2026) paper."
+    },
+    {
+      "title": "Neural reranking for UK statutory retrieval: Provision-level evaluation ...",
+      "url": "https://durham-repository.worktribe.com/output/5078103",
+      "snippet": "We further distil a proprietary Voyage reranker into a ModernBERT-based cross-encoder, Distilled-Voyage-ModernBERT, which approaches the teacher&#x27;s effectiveness and outperforms other open rerankers on our benchmark."
+    }
+  ]
+}

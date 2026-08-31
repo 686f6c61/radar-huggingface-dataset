@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "loom-ai-org/lfm2-350m-modular-loom",
+  "slug": "loom-ai-org-lfm2-350m-modular-loom",
+  "author": "loom-ai-org",
+  "url": "https://huggingface.co/loom-ai-org/lfm2-350m-modular-loom",
+  "created_at": "2026-08-11T12:24:00.000Z",
+  "updated_at": "2026-08-31T16:43:44.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "loom-py-rt",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es"
+  ],
+  "tags": [
+    "loom-py-rt",
+    "gguf",
+    "text-generation",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "base_model:LiquidAI/LFM2-350M",
+    "base_model:quantized:LiquidAI/LFM2-350M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 125,
+  "trending_score": 0,
+  "parameters": 354558755,
+  "parameters_human": "354.6M",
+  "storage_bytes": 5681952064,
+  "storage_human": "5.7 GB",
+  "base_model": "LiquidAI/LFM2-350M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "loom-ai-org/lfm2-350m-modular-loom · Hugging Face",
+      "url": "https://huggingface.co/loom-ai-org/lfm2-350m-modular-loom",
+      "snippet": "Liquid AI&#x27;s LFM2-350M hybrid conv/attention LM, exported as per-layer topologies. This is a loom.cpp export: a single self-describing GGUF that carries its own graph topologies, tokenizer (if any) and driver script, produced by loom-exporter."
+    },
+    {
+      "title": "LMs - a loom-ai-org Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/loom-ai-org/lms",
+      "snippet": "loom-ai-org/lfm2-350m-modular-loom Text Generation • 0.4B•Updated about 1 hour ago"
+    },
+    {
+      "title": "GitHub - sfw/loom: Loom is an AI harness, that can be used with local ...",
+      "url": "https://github.com/sfw/loom",
+      "snippet": "Loom is an AI harness, that can be used with local or cloud LLMs, for complex tasks. It decomposes work, drives execution through a verification harness, and keeps models on track with structured s..."
+    },
+    {
+      "title": "GitHub - loom-ai-org/loom-py: Python bindings for the Loom.cpp engine",
+      "url": "https://github.com/loom-ai-org/loom-py",
+      "snippet": "Python bindings for the Loom.cpp engine. Contribute to loom-ai-org/loom-py development by creating an account on GitHub."
+    },
+    {
+      "title": "Introducing LFM2: The Fastest On-Device Foundation Models on the Market ...",
+      "url": "https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models",
+      "snippet": "Today, we release LFM2, a new class of Liquid Foundation Models (LFMs) that sets a new standard in quality, speed, and memory efficiency for on-device deployment. Built on a hybrid architecture, LFM2 delivers 200% faster decode and prefill performance than Qwen3 and Gemma 3 on CPU. It also significantly outperforms models in each size class on instruction-following and function calling—the ..."
+    }
+  ]
+}

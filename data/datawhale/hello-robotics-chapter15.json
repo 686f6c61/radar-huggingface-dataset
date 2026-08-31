@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Datawhale/hello-robotics-chapter15",
+  "slug": "datawhale-hello-robotics-chapter15",
+  "author": "Datawhale",
+  "url": "https://huggingface.co/Datawhale/hello-robotics-chapter15",
+  "created_at": "2026-08-31T16:42:43.000Z",
+  "updated_at": "2026-08-31T16:42:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hello-agents/docs/chapter15 at main - GitHub",
+      "url": "https://github.com/datawhalechina/hello-agents/tree/main/docs/chapter15",
+      "snippet": "📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程. Contribute to datawhalechina/hello-agents development by creating an ..."
+    },
+    {
+      "title": "hello-agents/code/chapter15/Helloagents-AI-Town at main ... - GitHub",
+      "url": "https://github.com/datawhalechina/hello-agents/tree/main/code/chapter15/Helloagents-AI-Town",
+      "snippet": "📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程. Contribute to datawhalechina/hello-agents development by creating an ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "hello-agents/code/chapter15/Helloagents-AI-Town/README.md-代码预览-hello ...",
+      "url": "https://gitcode.com/datawhalechina/hello-agents/blob/main/code/chapter15/Helloagents-AI-Town/README.md",
+      "snippet": "Datawhale / hello-agents Issues Pull Requests Pipeline Discussion Analysis Star 365 Fork 47 main hello-agents / code / chapter15 / Helloagents-AI-Town / README.md / / Cloud IDE Download top Jjjyaoao add chapter15 2a825561 Add onOct 16, 2025History Preview Code Blame 915 B Source No Data 赛博小镇 - AI NPC对话系统 🎮 功能特性 🛠️ 技术栈 📦 快速开始 📚 文档 📖 ..."
+    },
+    {
+      "title": "Datawhale开源Hello-Agents：从零构建AI智能体的完整教程-CSDN博客",
+      "url": "https://blog.csdn.net/weixin_32597009/article/details/162775417",
+      "snippet": "这次我们来看一个真正从零开始的AI Agent智能体教程项目——Datawhale开源的Hello-Agents。如果你正在寻找一套系统性的智能体学习资料，希望从基础理论到企业级应用全面掌握智能体开发，那么这个项目值得重点关注。 Hello-Agents是Datawhale社区推出的智能体系统构建教程，目前已经在GitHub上获得65.2k星标 ..."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "orcarouter/GLM-5.3-Flash-Uncensored-MLX",
+  "slug": "orcarouter-glm-5-3-flash-uncensored-mlx",
+  "author": "orcarouter",
+  "url": "https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-MLX",
+  "created_at": "2026-08-31T06:49:20.000Z",
+  "updated_at": "2026-08-31T07:31:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm5_next",
+    "abliterated",
+    "uncensored",
+    "glm",
+    "glm5",
+    "glm-5.3-flash",
+    "glm5-next",
+    "moe",
+    "vision-language",
+    "function-calling",
+    "reasoning",
+    "mtp",
+    "apple-silicon",
+    "4bit",
+    "ai-red-team",
+    "red-teaming",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 0,
+  "trending_score": 10,
+  "parameters": 58243415870,
+  "parameters_human": "58.24B",
+  "storage_bytes": 780662979478,
+  "storage_human": "780.7 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3-Flash Uncensored: No LoRA, No Jailbreak, Just Edited FP8 ...",
+      "url": "https://www.explainx.ai/blog/orcarouter-glm-5-3-flash-uncensored-block-fp8-august-2026",
+      "snippet": "Refusal removal is baked directly into the weights.\" That&#x27;s OrcaRouter&#x27;s own framing, posted August 29, 2026, for its uncensored build of GLM-5.3-Flash — Z.ai&#x27;s 320B-total, 18B-active mixture-of-experts model that shipped under MIT license three days earlier as the reveal behind the \"Ox Alpha\" stealth preview. The tweet pulled 87 fire reactions."
+    },
+    {
+      "title": "GLM 5.3 Flash API — Pricing & Benchmarks - orcarouter.ai",
+      "url": "https://www.orcarouter.ai/models/z-ai/glm-5.3-flash",
+      "snippet": "Drop-in GLM 5.3 Flash API for any OpenAI SDK — $0.07 / $0.25 per 1M tokens, p50 1500ms via OrcaRouter. Zero markup. Zero migration. One API."
+    },
+    {
+      "title": "GLM-5.3-Flash. Uncensored. Native FP8. We released OrcaRouter&#x27;s ...",
+      "url": "https://www.linkedin.com/posts/orcarouter_glm-53-flash-uncensored-native-fp8-activity-7499733012641742848-kb30",
+      "snippet": "Uncensored. Native FP8. 🐳 We released OrcaRouter&#x27;s research weights for GLM-5.3-Flash — 320B parameters / 18B active — directly at the original block-FP8 precision."
+    },
+    {
+      "title": "OrcaRouter on X: \"GLM-5.3-Flash. Uncensored. Native FP8. We just ...",
+      "url": "https://x.com/OrcaRouter/status/2093612518396871075",
+      "snippet": "Uncensored. Native FP8. 🐳 We just released OrcaRouter&#x27;s uncensored weights for GLM-5.3-Flash — 320B parameters / 18B active, directly at the original block-FP8 precision."
+    },
+    {
+      "title": "Quantized Models for orcarouter/GLM-5.3-Flash-Uncensored-FP8 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:orcarouter/GLM-5.3-Flash-Uncensored-FP8",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Model Tree Reset orcarouter/GLM-5.3-Flash-Uncensored-FP8 Adapters Finetunes Merges Apps Inference Providers One-click Deployment Misc Apply filters"
+    }
+  ]
+}

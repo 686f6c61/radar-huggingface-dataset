@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "JohanHeinsen/Memo_men_2",
+  "slug": "johanheinsen-memo_men_2",
+  "author": "JohanHeinsen",
+  "url": "https://huggingface.co/JohanHeinsen/Memo_men_2",
+  "created_at": "2026-08-31T15:57:58.000Z",
+  "updated_at": "2026-08-31T15:58:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-transformers",
+    "text-classification",
+    "generated_from_setfit_trainer",
+    "arxiv:2209.11055",
+    "base_model:vesteinn/DanskBERT",
+    "base_model:finetune:vesteinn/DanskBERT",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124445952,
+  "parameters_human": "124.4M",
+  "storage_bytes": 498903482,
+  "storage_human": "499 MB",
+  "base_model": "vesteinn/DanskBERT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Classification",
+      "dataset": "Unknown",
+      "metric": "Accuracy",
+      "value": 0.8833333333333333
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "Unknown",
+      "metric": "F1",
+      "value": 0.9263157894736842
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "Unknown",
+      "metric": "Precision",
+      "value": 0.8906882591093117
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "Unknown",
+      "metric": "Recall",
+      "value": 0.9649122807017544
+    }
+  ],
+  "sources": [
+    {
+      "title": "JohanHeinsen/Memo_men at main - Hugging Face",
+      "url": "https://huggingface.co/JohanHeinsen/Memo_men/tree/main",
+      "snippet": "Instructions to use JohanHeinsen/Memo_men with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries setfit How to use JohanHeinsen/Memo_men with setfit:"
+    },
+    {
+      "title": "Top AI Video Model in One Platform | HeyGen",
+      "url": "https://www.heygen.com/models",
+      "snippet": "Google DeepMind&#x27;s most advanced AI video model, now on HeyGen. Turn text, images, or first and last frames into cinematic clips with native sound. Start generating in seconds, free."
+    },
+    {
+      "title": "JohanHeinsen (Johan Heinsen) - Hugging Face",
+      "url": "https://huggingface.co/JohanHeinsen",
+      "snippet": "User profile of Johan Heinsen on Hugging Face"
+    },
+    {
+      "title": "Rodin AI — Rodin Gen-2.5 3D Model Generator",
+      "url": "https://rodinai.net/",
+      "snippet": "Generate 3D models from text or images with Rodin AI. Rodin Gen-2.5 delivers 5 quality tiers, up to 2M polygons, HD PBR textures, and GLB/FBX/OBJ export — free to try."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    }
+  ]
+}

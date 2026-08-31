@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "servantofares/DeepSeek-V4-Flash-Vision-Exp",
+  "slug": "servantofares-deepseek-v4-flash-vision-exp",
+  "author": "servantofares",
+  "url": "https://huggingface.co/servantofares/DeepSeek-V4-Flash-Vision-Exp",
+  "created_at": "2026-08-31T17:37:32.000Z",
+  "updated_at": "2026-08-31T17:37:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "image-text-to-text",
+    "license:mit",
+    "eval-results",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 304646824126,
+  "parameters_human": "304.65B",
+  "storage_bytes": 167819616863,
+  "storage_human": "167.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek V4 Flash Vision Exp: Vision API, Benchmarks & Cost - iweaver.ai",
+      "url": "https://www.iweaver.ai/blog/deepseek-v4-flash-vision-exp/",
+      "snippet": "DeepSeek released DeepSeek-V4-Flash-Vision-Exp, an experimental multimodal model available through its API. It accepts both text and images, bringing screenshot understanding, chart analysis, OCR-style tasks and other visual workflows into the V4 Flash family."
+    },
+    {
+      "title": "Vision | DeepSeek API Docs",
+      "url": "https://api-docs.deepseek.com/guides/vision/",
+      "snippet": "The deepseek-v4-flash-vision-exp model accepts images alongside text, so you can ask the model to describe pictures, read text from screenshots, analyze charts, and more."
+    },
+    {
+      "title": "DeepSeek V4 Flash Vision Exp · Models · Pi",
+      "url": "https://pi.dev/models/opencode-go/deepseek-v4-flash-vision-exp",
+      "snippet": "A terminal-based coding agent Model details Model deepseek-v4-flash-vision-exp Provider opencode-go API openai-completions Base URL https://opencode.ai/zen/go/v1 Input text, image Reasoning Yes Context window 1,000,000 Max tokens 384,000 Show configuration"
+    },
+    {
+      "title": "DeepSeek V4-Flash-Vision-Exp: Multimodal Agent Benchmarks - explainx.ai",
+      "url": "https://explainx.ai/blog/deepseek-v4-flash-vision-exp-multimodal-agent-august-2026",
+      "snippet": "DeepSeek shipped DeepSeek Harness 0.1.1 on the same day with out-of-the-box support, and the model is live now via model=&#x27;deepseek-v4-flash-vision-exp&#x27;. This follows a pattern explainx.ai has tracked all August: DeepSeek shipping V4 Pro 0813, a 50-1,100% API price increase, and verified ARC-AGI numbers for V4 Flash 0731 in rapid succession."
+    }
+  ]
+}

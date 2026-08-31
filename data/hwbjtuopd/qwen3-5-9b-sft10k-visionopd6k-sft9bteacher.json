@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HWBJTUOPD/Qwen3.5-9B-SFT10K-VisionOPD6K-SFT9BTeacher",
+  "slug": "hwbjtuopd-qwen3-5-9b-sft10k-visionopd6k-sft9bteacher",
+  "author": "HWBJTUOPD",
+  "url": "https://huggingface.co/HWBJTUOPD/Qwen3.5-9B-SFT10K-VisionOPD6K-SFT9BTeacher",
+  "created_at": "2026-08-31T12:24:54.000Z",
+  "updated_at": "2026-08-31T13:25:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "vision-language",
+    "online-perception-distillation",
+    "multi-image",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711735,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5 9B API: Pricing, Benchmarks & Docs | Together AI",
+      "url": "https://www.together.ai/models/qwen3-5-9b",
+      "snippet": "Qwen&#x27;s 9B multimodal model with hybrid architecture, 262K native context, vision-language reasoning, native tool calling, and 201-language support for agentic workflows"
+    },
+    {
+      "title": "Qwen3.5 9B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-5-9b/",
+      "snippet": "Qwen3.5 9B is a dense vision-language model in the Qwen3.5 family aimed at stronger reasoning, visual understanding, and agentic behavior on Jetson. This entry uses a W4A16 checkpoint on Jetson Orin and an NVFP4 checkpoint on Jetson Thor."
+    },
+    {
+      "title": "Qwen3.5-9B · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3.5-9B",
+      "snippet": "Qwen3.5 Highlights Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen 3.5: All 8 Models, Benchmarks & Local Setup Guide",
+      "url": "https://qwen-ai.com/qwen-3-5/",
+      "snippet": "Qwen 3.5: The Complete Guide to Every Model in the Family Qwen 3.5 isn&#x27;t a single model. It&#x27;s a family of eight open-weight models ranging from 0.8B to 397B parameters, all released under Apache 2.0, all natively multimodal (text, image, video), and all built on a hybrid architecture that mixes linear attention with traditional transformers."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    }
+  ]
+}

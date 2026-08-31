@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "JamieBradfield/qwen3.8-9b-hermes-fc-todo",
+  "slug": "jamiebradfield-qwen3-8-9b-hermes-fc-todo",
+  "author": "JamieBradfield",
+  "url": "https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-todo",
+  "created_at": "2026-08-31T17:56:48.000Z",
+  "updated_at": "2026-08-31T18:00:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "function-calling",
+    "tool-use",
+    "todo",
+    "qlora",
+    "finetune",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9195119616,
+  "parameters_human": "9.20B",
+  "storage_bytes": 18410285962,
+  "storage_human": "18.4 GB",
+  "base_model": "Empero/Qwen3.8-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JamieBradfield/qwen3.8-9b-hermes-fc-real-traces · Hugging Face",
+      "url": "https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-real-traces",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JamieBradfield/qwen3.8-9b-hermes-fc-balanced · Hugging Face",
+      "url": "https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-balanced",
+      "snippet": "A QLoRA continue-tune of the v2 real-traces model (qwen3.8-9b-hermes-fc-real-traces), trained on a balanced mix of real Hermes agent trajectories plus big-model teacher data."
+    },
+    {
+      "title": "Qwen3.8 9B Hermes Fc Real Traces by JamieBradfield",
+      "url": "https://llm-explorer.com/model/JamieBradfield%2Fqwen3.8-9b-hermes-fc-real-traces,2TEFMrMU8nw0D9NfSFX1GH",
+      "snippet": "Rank the Qwen3.8 9B Hermes Fc Real Traces capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "qwen3.8-9b-hermes-fc-balanced API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/JamieBradfield/qwen3.8-9b-hermes-fc-balanced",
+      "snippet": "Base model and license inherited from Empero/Qwen3.8-9B (Apache-2.0). Training data derived from the author&#x27;s own Hermes agent sessions plus publicly-licensed teacher sources (SWE-rebench, APIGen-MT-5k, When2Call)."
+    },
+    {
+      "title": "qwen3.8-9b-hermes-fc-real-traces - FriendliAI",
+      "url": "https://friendli.ai/models/JamieBradfield/qwen3.8-9b-hermes-fc-real-traces",
+      "snippet": "Deploy qwen3.8-9b-hermes-fc-real-traces with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

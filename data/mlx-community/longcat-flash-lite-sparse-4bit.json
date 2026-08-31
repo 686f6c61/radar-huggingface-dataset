@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mlx-community/LongCat-Flash-Lite-Sparse-4bit",
+  "slug": "mlx-community-longcat-flash-lite-sparse-4bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/LongCat-Flash-Lite-Sparse-4bit",
+  "created_at": "2026-08-28T03:29:37.000Z",
+  "updated_at": "2026-08-31T17:48:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "longcat_flash_sparse",
+    "longcat",
+    "lsa",
+    "moe",
+    "ngram-embedding",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:meituan-longcat/LongCat-Flash-Lite-Sparse",
+    "base_model:quantized:meituan-longcat/LongCat-Flash-Lite-Sparse",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 83,
+  "trending_score": 0,
+  "parameters": 10723000960,
+  "parameters_human": "10.72B",
+  "storage_bytes": 38604498864,
+  "storage_human": "38.6 GB",
+  "base_model": "meituan-longcat/LongCat-Flash-Lite-Sparse",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlazarM/LongCat-Flash-Lite-Sparse-4bit · Hugging Face",
+      "url": "https://huggingface.co/AlazarM/LongCat-Flash-Lite-Sparse-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlx-community/LongCat-Flash-Lite-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/LongCat-Flash-Lite-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lightweight MoE LLM Inference - LongCat-Flash-Lite",
+      "url": "https://www.longcatai.org/models/flash-lite",
+      "snippet": "Overview LongCat-Flash-Lite is a lightweight Mixture-of-Experts (MoE) model that explores a new scaling direction: N-gram embedding expansion. Instead of relying primarily on adding more experts, it allocates a large portion of total parameters into an N-gram embedding layer to improve local-context semantic capture, while keeping inference sparse via dynamic activation."
+    },
+    {
+      "title": "Model request: meituan-longcat/LongCat-Flash-Lite-Sparse",
+      "url": "https://github.com/Blaizzy/mlx-vlm/issues/2054",
+      "snippet": "As title states, it would be cool to support meituan-longcat/LongCat-Flash-Lite-Sparse , as it comes at an interesting size compared to other models around."
+    },
+    {
+      "title": "LongCat-Flash-Lite-Sparse Is Now Available for Download",
+      "url": "https://prismix.dev/news/fd6c0b334cde",
+      "snippet": "The weights have now been added to the repo an hour ago. This model is built upon LongCat-Flash-Lite , the differences are that LongCat-Flash-Lite-Sparse : Replaces dense MLA with LongCat Sparse Attention (LSA) Natively supports context lengths of up to 1M tokens (vs 256k for…"
+    }
+  ]
+}

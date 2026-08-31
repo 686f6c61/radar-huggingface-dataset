@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "matrixrb/ebake",
+  "slug": "matrixrb-ebake",
+  "author": "matrixrb",
+  "url": "https://huggingface.co/matrixrb/ebake",
+  "created_at": "2026-08-31T15:29:26.000Z",
+  "updated_at": "2026-08-31T15:30:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 859520964,
+  "parameters_human": "859.5M",
+  "storage_bytes": 2132604798,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "matrixrb (matrix radbro) - Hugging Face",
+      "url": "https://huggingface.co/matrixrb",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 24 days ago ... updated a model about 1 month ago"
+    },
+    {
+      "title": "matrixrb (matrix radbro) - Hugging Face",
+      "url": "https://huggingface.co/matrixrb/models",
+      "snippet": "Recent Activity updated a model4 days ago matrixrb/qwen-3b-blated published a model4 days ago matrixrb/qwen-3b-blated updated a model4 days ago matrixrb/qwen-.5b-blated View all activity"
+    },
+    {
+      "title": "AI 3D Model Generator | Kenerate AI",
+      "url": "https://kenerateai.com/ai-3d-model-generator",
+      "snippet": "AI 3D Model Generator — Text & Image to 3D Free Turn simple text prompts or 2D images into production-ready, high-quality 3D models in under 45 seconds. Whether you are an architect, game developer, 3D printing enthusiast, or digital artist, KenerateAI gives you the most advanced text to 3d ai generator tool to build full 3D meshes with PBR textures, clear UV mapping, and no watermarks ..."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    }
+  ]
+}

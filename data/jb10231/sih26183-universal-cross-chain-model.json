@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jb10231/sih26183-universal-cross-chain-model",
+  "slug": "jb10231-sih26183-universal-cross-chain-model",
+  "author": "jb10231",
+  "url": "https://huggingface.co/jb10231/sih26183-universal-cross-chain-model",
+  "created_at": "2026-08-31T16:16:05.000Z",
+  "updated_at": "2026-08-31T16:16:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-classification",
+  "library": "lightgbm",
+  "languages": [],
+  "tags": [
+    "lightgbm",
+    "cryptocurrency",
+    "blockchain",
+    "fraud-detection",
+    "illicit-activity-detection",
+    "graph-analysis",
+    "bitcoin",
+    "ethereum",
+    "solana",
+    "cybersecurity",
+    "tabular-classification",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6998090,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jb10231/sih26183-universal-cross-chain-model · Hugging Face",
+      "url": "https://huggingface.co/jb10231/sih26183-universal-cross-chain-model",
+      "snippet": "SIH26183 Universal Cross-Chain Risk Model A structure-based global LightGBM model for cryptocurrency transaction-flow risk triage."
+    },
+    {
+      "title": "SIH26183 · Real-Time Identification of Fraud-Linked Cryptocurrency ...",
+      "url": "https://sih2026.vuce.in/en/ps/SIH26183",
+      "snippet": "The system should ingest wallet addresses reported through cybercrime complaint systems, automatically perform blockchain tracing, identify associated exchanges or VASPs, detect fund movement patterns, and generate actionable intelligence for investigators. Key features may include blockchain transaction graph analysis, clustering of exchange wallets, detection of intermediary laundering ..."
+    },
+    {
+      "title": "SIH26183 · Real-Time Identification of Fraud-Linked Cryptocurrency ...",
+      "url": "https://sih2026-ps-viewer.vercel.app/ps/SIH26183",
+      "snippet": "• Background Cyber fraud victims increasingly report suspect cryptocurrency wallet addresses used by fraudsters for collection of funds in cases involving: • investment scams, • task-based frauds, • s"
+    },
+    {
+      "title": "SIH-2026-/ps_2026/SIH26183.md at main · jeevansai-hub/SIH ... - GitHub",
+      "url": "https://github.com/jeevansai-hub/SIH-2026-/blob/main/ps_2026/SIH26183.md",
+      "snippet": "Key features may include: • blockchain transaction graph analysis, • clustering of exchange wallets, • detection of intermediary laundering wallets, • identification of cross-chain fund movement, • integration with SAHYOG and NCRP platforms, • automated alert generation, • and risk categorization of wallets."
+    },
+    {
+      "title": "GitHub - spixcy/BlockChain-proj: sih proj · GitHub",
+      "url": "https://github.com/spixcy/BlockChain-proj",
+      "snippet": "A blockchain intelligence platform that takes a victim-reported cryptocurrency wallet address, traces on-chain fund flow, clusters related addresses, and identifies the nearest known exchange/VASP with a confidence score and risk tier — built for cyber fraud investigators."
+    }
+  ]
+}

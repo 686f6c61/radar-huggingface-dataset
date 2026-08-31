@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ValocheRoomates/QwenLora1000FineTune",
+  "slug": "valocheroomates-qwenlora1000finetune",
+  "author": "ValocheRoomates",
+  "url": "https://huggingface.co/ValocheRoomates/QwenLora1000FineTune",
+  "created_at": "2026-08-31T15:10:07.000Z",
+  "updated_at": "2026-08-31T15:10:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "lora",
+    "qwen-image-edit",
+    "image-to-image",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:adapter:Qwen/Qwen-Image-Edit-2511",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47249496,
+  "storage_human": "47 MB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen Fine-Tuning Guide | AI Wiki",
+      "url": "https://artificial-intelligence-wiki.com/ai-development/training-and-fine-tuning/qwen-fine-tuning-guide/",
+      "snippet": "Master fine-tuning Qwen models with LoRA, QLoRA, and efficient training techniques. Step-by-step guide for Qwen3 and Qwen-VL customization."
+    },
+    {
+      "title": "LoRA & QLoRA Fine-Tuning Guide 2026 | AI Workflow Lab",
+      "url": "https://aiworkflowlab.dev/article/how-to-fine-tune-llms-with-lora-and-qlora-production-python-guide",
+      "snippet": "Fine-tune LLMs with LoRA and QLoRA in Python using Hugging Face PEFT. Dataset prep, training, GGUF export, and Ollama deployment with tested code."
+    },
+    {
+      "title": "Ollama Model Library: Best Local AI Models (2026) · TokRepo",
+      "url": "https://tokrepo.com/en/workflows/ollama-model-library-best-ai-models-local-use-4cecf968",
+      "snippet": "Ollama Model Library — Best AI Models for Local Use Curated guide to the best models available on Ollama for coding, chat, and reasoning. Compare Llama, Mistral, Gemma, Phi, and Qwen models for local AI development."
+    },
+    {
+      "title": "GitHub - RkanGen/finetune_qwen_using_qlora: This repository provides a ...",
+      "url": "https://github.com/RkanGen/finetune_qwen_using_qlora",
+      "snippet": "This repository provides a complete, production-ready implementation for fine-tuning Qwen2.5-7B using QLoRA (Quantized Low-Rank Adaptation). QLoRA enables efficient fine-tuning of large language models on consumer-grade GPUs by using 4-bit quantization."
+    },
+    {
+      "title": "Learn How to Make AI Models w/ ML: 6. LoRA & QLoRA",
+      "url": "https://www.youtube.com/watch?v=CMyL8XUr-Ho",
+      "snippet": "Full fine tuning a 7B model needs over 100GB of memory — but with QLoRA, I did it on my 12GB RTX 3060. Here&#x27;s how it works."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "omkarpatil/ffw_sg2_pick-blue-cylinder-right-arm_smolvla_nonorm_noproprio",
+  "slug": "omkarpatil-ffw_sg2_pick-blue-cylinder-right-arm_smolvla_nonorm_noproprio",
+  "author": "omkarpatil",
+  "url": "https://huggingface.co/omkarpatil/ffw_sg2_pick-blue-cylinder-right-arm_smolvla_nonorm_noproprio",
+  "created_at": "2026-08-31T17:50:59.000Z",
+  "updated_at": "2026-08-31T17:51:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "vla",
+    "robotis",
+    "ffw_sg2",
+    "cyclo_intelligence",
+    "dataset:omkarpatil/pick-blue-cylinder-right-arm",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 906717008,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ffw_sg2_pick-blue-cylinder-right-arm_smolvla - Hugging Face",
+      "url": "https://huggingface.co/omkarpatil/ffw_sg2_pick-blue-cylinder-right-arm_smolvla",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DYNAMIXEL SYSTEM - AI Worker - ROBOTIS",
+      "url": "https://robotis.us/ai-worker/",
+      "snippet": "The AI Worker is ROBOTIS&#x27; enterprise‑class Physical AI platform. It&#x27;s a semi‑humanoid robot system built to learn from human demonstrations and perform complex industrial tasks through Physical AI techniques like imitation learning and reinforcement learning. The platform is designed for real‑world environments — from assembly and inspection to logistics and automation workflows ..."
+    },
+    {
+      "title": "About AI Worker | ROBOTIS Docs",
+      "url": "https://docs.robotis.com/docs/systems/aiworker/introduction/",
+      "snippet": "The ROBOTIS AI Worker is a cutting-edge semi-humanoid robot powered by physical AI. Designed to seamlessly integrate into industrial environments, it learns from human demonstrations and refines its skills through imitation learning and reinforcement learning. This innovative robot excels at performing intricate tasks like wiring harness assembly, welding, and inspection, offering a powerful ..."
+    },
+    {
+      "title": "AI Worker FFW-SG2 - robotis.ch",
+      "url": "https://www.robotis.ch/index.php?route=product/product&product_id=618",
+      "snippet": "AI Worker FFW-SG2 Manufacturer: ROBOTIS Product code: Availability: In stock Price: $72600 including VAT Price without VAT: $60000"
+    },
+    {
+      "title": "Google Patents",
+      "url": "https://patents.google.com/",
+      "snippet": "Search and read the full text of patents from around the world with Google Patents, and find prior art in our index of non-patent literature."
+    }
+  ]
+}

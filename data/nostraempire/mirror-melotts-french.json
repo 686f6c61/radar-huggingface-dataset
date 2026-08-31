@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "NostraEmpire/mirror-melotts-french",
+  "slug": "nostraempire-mirror-melotts-french",
+  "author": "NostraEmpire",
+  "url": "https://huggingface.co/NostraEmpire/mirror-melotts-french",
+  "created_at": "2026-08-31T13:35:26.000Z",
+  "updated_at": "2026-08-31T13:35:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "text-to-speech",
+    "ko",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 207860748,
+  "storage_human": "208 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "myshell-ai/MeloTTS-French · Hugging Face",
+      "url": "https://huggingface.co/myshell-ai/MeloTTS-French",
+      "snippet": "MeloTTS MeloTTS is a high-quality multi-lingual text-to-speech library by MyShell.ai. Supported languages include:"
+    },
+    {
+      "title": "MeloTTS-French · Model · Inferix",
+      "url": "https://inferix.co/models/myshell-ai/MeloTTS-French",
+      "snippet": "MeloTTS MeloTTS is a high quality multi lingual text to speech library by MyShell.ai. Supported languages include: Model card Example English (American) Link English (British) Link English (Indian) Link English (Australian) Link English (Default) Link Spanish Link French Link Chinese (mix EN) Link Japanese Link Korean Link Some other features ..."
+    },
+    {
+      "title": "GitHub - myshell-ai/MeloTTS: High-quality multi-lingual text-to-speech ...",
+      "url": "https://github.com/myshell-ai/MeloTTS",
+      "snippet": "High-quality multi-lingual text-to-speech library by MyShell.ai. Support English, Spanish, French, Chinese, Japanese and Korean. - myshell-ai/MeloTTS"
+    },
+    {
+      "title": "README.md · myshell-ai/MeloTTS-French at main - Hugging Face",
+      "url": "https://huggingface.co/myshell-ai/MeloTTS-French/blob/main/README.md",
+      "snippet": "MeloTTS MeloTTS is a high-quality multi-lingual text-to-speech library by MyShell.ai. Supported languages include:"
+    },
+    {
+      "title": "Mirror Mirror AI — AI Fashion Campaign Imagery with Real Models",
+      "url": "https://mirrormirrorai.com/",
+      "snippet": "Produce on-model campaign imagery instantly with real, licensed talent. Mirror Mirror AI gives fashion brands studio-quality visuals at scale, without the photoshoot."
+    }
+  ]
+}

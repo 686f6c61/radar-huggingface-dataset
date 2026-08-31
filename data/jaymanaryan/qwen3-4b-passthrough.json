@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jaymanaryan/Qwen3-4B-passthrough",
+  "slug": "jaymanaryan-qwen3-4b-passthrough",
+  "author": "jaymanaryan",
+  "url": "https://huggingface.co/jaymanaryan/Qwen3-4B-passthrough",
+  "created_at": "2026-08-31T16:50:49.000Z",
+  "updated_at": "2026-08-31T16:53:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "merge",
+    "mergekit",
+    "lazymergekit",
+    "PrimeIntellect/Qwen3-4B",
+    "jaymanaryan/Qwen3-Combined-4",
+    "base_model:PrimeIntellect/Qwen3-4B",
+    "base_model:merge:PrimeIntellect/Qwen3-4B",
+    "base_model:jaymanaryan/Qwen3-Combined-4",
+    "base_model:merge:jaymanaryan/Qwen3-Combined-4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 17657165230,
+  "storage_human": "17.7 GB",
+  "base_model": "PrimeIntellect/Qwen3-4B, jaymanaryan/Qwen3-Combined-4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-4B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-4B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b",
+      "snippet": "Qwen3-4B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑4B is a state‑of‑the‑art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "PDF Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388.pdf",
+      "snippet": "In this work, we introduce Qwen3, the latest series in our foundation model family, Qwen. Qwen3 is a collection of open-weight large language models (LLMs) that achieve state-of-the-art performance across a wide variety of tasks and domains. We release both dense and Mixture-of-Experts (MoE) models, with the number of parameters ranging from 0.6 billion to 235 billion, to meet the needs of ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

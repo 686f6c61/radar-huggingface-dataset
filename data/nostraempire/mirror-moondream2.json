@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "NostraEmpire/mirror-moondream2",
+  "slug": "nostraempire-mirror-moondream2",
+  "author": "NostraEmpire",
+  "url": "https://huggingface.co/NostraEmpire/mirror-moondream2",
+  "created_at": "2026-08-31T13:14:04.000Z",
+  "updated_at": "2026-08-31T13:16:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "moondream1",
+    "image-text-to-text",
+    "custom_code",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1927237104,
+  "parameters_human": "1.93B",
+  "storage_bytes": 3854538968,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vikhyatk/moondream2 · Hugging Face",
+      "url": "https://huggingface.co/vikhyatk/moondream2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - m87-labs/moondream: tiny vision language model",
+      "url": "https://github.com/m87-labs/moondream",
+      "snippet": "Moondream is a highly efficient open-source vision language model that combines powerful image understanding capabilities with a remarkably small footprint. It&#x27;s designed to be versatile and accessible, capable of running on a wide range of devices and platforms. The project offers two model variants: Moondream 2B: The primary model with 2 billion parameters, offering robust performance for ..."
+    },
+    {
+      "title": "Moondream",
+      "url": "https://moondream.ai/",
+      "snippet": "A fast & powerful vision model that rocks. Fast, efficient, and runs anywhere you need it. Once your model is accurate, performance and cost become the next wall. Photon is the inference engine we built to run Moondream in production. Moondream Cloud and partner clouds give you a hosted path if you want one."
+    },
+    {
+      "title": "GitHub - inferless/moondream2: Tiny 1.93B vision-language model ...",
+      "url": "https://github.com/inferless/Moondream2",
+      "snippet": "Moondream2 is a small vision language model designed to run efficiently on edge devices. It comprises 1.86 billion parameters, initially weighted with data from SigLIP and Phi-1.5. Primarily, Moondream excels in responding to image-related queries, generating captions, and performing various other vision language tasks."
+    },
+    {
+      "title": "ewre324/moondream2 · Hugging Face",
+      "url": "https://huggingface.co/ewre324/moondream2",
+      "snippet": "Moondream is a small vision language model designed to run efficiently on edge devices. Website / Demo / GitHub This repository contains the latest (2025-01-09) release of Moondream, as well as historical releases. The model is updated frequently, so we recommend specifying a revision as shown below if you&#x27;re using it in a production application."
+    }
+  ]
+}

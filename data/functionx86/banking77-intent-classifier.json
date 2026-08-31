@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "functionX86/banking77-intent-classifier",
+  "slug": "functionx86-banking77-intent-classifier",
+  "author": "functionX86",
+  "url": "https://huggingface.co/functionX86/banking77-intent-classifier",
+  "created_at": "2026-08-31T12:33:34.000Z",
+  "updated_at": "2026-08-31T12:34:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "intent-classification",
+    "customer-support",
+    "banking",
+    "banking77",
+    "en",
+    "dataset:PolyAI/banking77",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33389645,
+  "parameters_human": "33.4M",
+  "storage_bytes": 133581876,
+  "storage_human": "134 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Intent Classification",
+      "dataset": "BANKING77",
+      "metric": "Macro F1",
+      "value": 0.9245
+    },
+    {
+      "task": "Intent Classification",
+      "dataset": "BANKING77",
+      "metric": "Accuracy",
+      "value": 0.9247
+    }
+  ],
+  "sources": [
+    {
+      "title": "learn-abc/banking77-intent-classifier-en · Hugging Face",
+      "url": "https://huggingface.co/learn-abc/banking77-intent-classifier-en",
+      "snippet": "Repo: learn-abc/banking77-intent-classifier-en Banking77 Intent Classifier (12-Intent) Overview This model is a fine-tuned BERT-based intent classifier designed for banking and financial customer queries. It is trained by mapping the original 77 Banking77 intents into a smaller, production-friendly set of custom intents, making it suitable for real-world conversational systems where simpler ..."
+    },
+    {
+      "title": "Smart Banking Intent Classification & AI Keyboard ... - GitHub",
+      "url": "https://github.com/jasminejayasmita786-commits/Banking-ai-suite",
+      "snippet": "A two-in-one NLP project: an intent classifier that reads a banking question and tells you what the customer actually wants, and an AI keyboard that predicts the next word as you type — trained entirely on real banking language (Banking77)."
+    },
+    {
+      "title": "learn-abc/banking77-intent-classifier · Hugging Face",
+      "url": "https://huggingface.co/learn-abc/banking77-intent-classifier",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Banking77 Intent Classifier - GitHub",
+      "url": "https://github.com/ibra-dotcom/banking77-intent-classifier",
+      "snippet": "A multi-class intent classification system for banking customer queries, achieving 90.8% accuracy across 77 intent categories using fine-tuned DistilBERT. This project implements an intent classification model for the Banking77 dataset, a challenging benchmark containing 13,083 customer service ..."
+    },
+    {
+      "title": "Benchmark: Intent classification (Banking77) | Aito API v2",
+      "url": "https://aito.ai/docs/api/v2/benchmarks/banking77/",
+      "snippet": "Aito on Banking77 — 77-way fine-grained banking intent classification: ~79% top-1 accuracy on the full test set with zero training, in honest context against fine-tuned transformer sentence-encoders."
+    }
+  ]
+}

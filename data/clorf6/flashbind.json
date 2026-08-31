@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "clorf6/FlashBind",
+  "slug": "clorf6-flashbind",
+  "author": "clorf6",
+  "url": "https://huggingface.co/clorf6/FlashBind",
+  "created_at": "2026-01-15T09:00:25.000Z",
+  "updated_at": "2026-08-31T13:06:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1728348756,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "clorf6/FlashBind · Hugging Face",
+      "url": "https://huggingface.co/clorf6/FlashBind",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "clorf6/FlashBind · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/clorf6/FlashBind",
+      "snippet": "Data for FlashAffinity This repository hosts the datasets and pre-trained model checkpoints for the paper: \"FlashAffinity: Bridging the Accuracy-Speed Gap in Protein-Ligand Binding Affinity Prediction\". The main code repository is available at: 🔗 GitHub: AIDD-Lab/FlashBind. Note Enzyme Dataset (ESIBank): For the enzyme dataset (ESIBank.tar.zst), we have not uploaded the pre-computed ESM3 ..."
+    },
+    {
+      "title": "GitHub - AIDD-Lab/FlashBind",
+      "url": "https://github.com/AIDD-Lab/FlashBind",
+      "snippet": "Official implementation of \"FlashBind: Towards Accurate and Efficient Structure-based Virtual Screening\" and \"FlashAffinity: Bridging the Accuracy-Speed Gap in Protein-Ligand Binding Affinity Prediction\", Accepted at MLSB Workshop 2025. A ultra-fast protein-ligand affinity prediction framework supporting multiple prediction tasks: binary activity classification, enzyme-substrate interaction ..."
+    },
+    {
+      "title": "clorf6 (Songlin Jiang) · GitHub",
+      "url": "https://github.com/clorf6/",
+      "snippet": "a student from SJTU ACM2022 Class. . clorf6 has 12 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "FlashBind: Towards Accurate and Efficient Structure-based Virtual ...",
+      "url": "https://www.biorxiv.org/content/10.64898/2025.12.22.695983v2",
+      "snippet": "Accurate prediction of protein-ligand interactions is central to computational drug discovery. Recent foundation models such as Boltz-2 have achieved remarkable accuracy in binding affinity prediction, yet their prohibitive computational cost remains a major barrier to large-scale virtual screening. Here we introduce FlashBind , a lightweight structure-based model that achieves a 50× speedup ..."
+    }
+  ]
+}

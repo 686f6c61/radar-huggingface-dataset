@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sergiopaniego/watercolour-grpo-v22b",
+  "slug": "sergiopaniego-watercolour-grpo-v22b",
+  "author": "sergiopaniego",
+  "url": "https://huggingface.co/sergiopaniego/watercolour-grpo-v22b",
+  "created_at": "2026-08-31T10:24:13.000Z",
+  "updated_at": "2026-08-31T13:39:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "grpo",
+    "trl",
+    "hf_jobs",
+    "trackio:https://sergiopaniego-watercolour-grpo-v22b.hf.space?project=huggingface&runs=sergiopaniego-1788171862&sidebar=collapsed",
+    "arxiv:2402.03300",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.5-35B-A3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 338556639,
+  "storage_human": "339 MB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Watercolour Grpo V22b - a Hugging Face Space by sergiopaniego",
+      "url": "https://huggingface.co/spaces/sergiopaniego/watercolour-grpo-v22b",
+      "snippet": "Running the app opens a visual dashboard that lets you monitor and explore your data or process metrics in real time. No special input is needed—just start the program and the tracking interface ap..."
+    },
+    {
+      "title": "sergiopaniego/watercolour-grpo at main - Hugging Face",
+      "url": "https://huggingface.co/sergiopaniego/watercolour-grpo/tree/main",
+      "snippet": "sergiopaniego / watercolour-grpo like 0 Transformers Safetensors Generated from Trainer grpo trl hf_jobs arxiv:2402.03300 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Sergio Paniego",
+      "url": "https://sergiopaniego.github.io/",
+      "snippet": "In addition to my research, I have also served as an AI Educational Consultant, developing and teaching advanced AI courses at universities, companies, and on-demand (see teaching section for more details). I enjoy giving talks about my work and the broader field of artificial intelligence."
+    },
+    {
+      "title": "Sergio Paniego Blanco sergiopaniego - GitHub",
+      "url": "https://github.com/sergiopaniego",
+      "snippet": "Sergio Paniego Blanco sergiopaniego Follow Machine Learning Engineer @huggingface 🤗 AI PhD 🏳️‍🌈 527 followers · 81 following"
+    },
+    {
+      "title": "Sergio Paniego (@SergioPaniego) on X",
+      "url": "https://x.com/SergioPaniego/status/2067946867237818830",
+      "snippet": "Sergio Paniego (@SergioPaniego). 69 likes. Continuous batching has been a continued effort in transformers for a few months now. The aim is a fast, memory-aware generation path that lives inside the library itself, and it has been documented as it grew, first the core mechanism, then the asynchronous version (h/t @remi_or_ 🐐). Now those efforts have gone beyond generation and into training ..."
+    }
+  ]
+}

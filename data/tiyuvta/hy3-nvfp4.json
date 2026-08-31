@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "tiyuvta/Hy3-NVFP4",
+  "slug": "tiyuvta-hy3-nvfp4",
+  "author": "tiyuvta",
+  "url": "https://huggingface.co/tiyuvta/Hy3-NVFP4",
+  "created_at": "2026-08-31T08:47:40.000Z",
+  "updated_at": "2026-08-31T17:56:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "memra",
+  "languages": [],
+  "tags": [
+    "memra",
+    "safetensors",
+    "gguf",
+    "hy_v3",
+    "nvfp4",
+    "fp4",
+    "modelopt",
+    "w4a16",
+    "tiyuvta",
+    "hy3",
+    "hunyuan",
+    "moe",
+    "mtp",
+    "blackwell",
+    "conversational",
+    "tool-calling",
+    "text-generation",
+    "base_model:tencent/Hy3",
+    "base_model:quantized:tencent/Hy3",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 153831009536,
+  "parameters_human": "153.83B",
+  "storage_bytes": 180856943674,
+  "storage_human": "180.9 GB",
+  "base_model": "tencent/Hy3",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LibertAIDAI/Hy3-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/LibertAIDAI/Hy3-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Blackfrost-AI/HY3-ABLITERATED-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/Blackfrost-AI/HY3-ABLITERATED-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tiyuvta",
+      "url": "https://tiyuvta.ai/",
+      "snippet": "An independent model research lab studying better intelligence, training, retention, architecture, and resource use with public code and dated receipts."
+    },
+    {
+      "title": "GitHub - Tencent-Hunyuan/Hy3: Hy3 (295B A21B), a leading reasoning and ...",
+      "url": "https://github.com/Tencent-Hunyuan/Hy3",
+      "snippet": "Hy3 is a 295B-parameter Mixture-of-Experts (MoE) model with 21B active parameters and 3.8B MTP layer parameters, developed by the Tencent Hy Team. Following the Hy3 Preview launch in late April, we gathered feedback from 50+ products and scaled up post-training with higher quality data. Today, we introduce Hy3, which outperforms similar-size models and rivals flagship open-source models with 2 ..."
+    },
+    {
+      "title": "Hy3-295B (Hunyuan 3) NVFP4-W4A16 - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/hy3-295b-hunyuan-3-nvfp4-w4a16-mtp-speculative-on-2x-dgx-spark-gb10-128k-ctx-21-8-tok-s-single-59-7-tok-s-6-way/375851",
+      "snippet": "Hy3 (Tencent Hunyuan 3, 295B MoE / 21B active) is up on 2× DGX Spark — sharing the full recipe as a starting point** Got the final Hy3 release serving on two GB10 Sparks (TP=2 over the 200GbE RoCE fabric) with its native MTP speculative decoding live, and — after some fighting — the hy_v3 tool-call + reasoning parsers working too. Posting everything so others can skip the landmines ..."
+    }
+  ]
+}

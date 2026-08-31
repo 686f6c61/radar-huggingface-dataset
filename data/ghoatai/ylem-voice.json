@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "GhoatAi/Ylem-Voice",
+  "slug": "ghoatai-ylem-voice",
+  "author": "GhoatAi",
+  "url": "https://huggingface.co/GhoatAi/Ylem-Voice",
+  "created_at": "2026-08-31T11:28:20.000Z",
+  "updated_at": "2026-08-31T11:28:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voice AI Models in 2026: LLM Comparison Guide | Coval | Coval",
+      "url": "https://www.coval.ai/blog/voice-ai-models-2026",
+      "snippet": "Compare voice AI models in 2026: GPT-Realtime-2, Gemini 3.1 Flash Live, Claude, Sesame. Find the right model for production on latency, cost, quality."
+    },
+    {
+      "title": "AI Voices: Free Models for TTS & Voice Changing",
+      "url": "https://aivoices.gg/",
+      "snippet": "Discover thousands of free AI voice models. Search characters, voices, creators, and model types for voice changing, text-to-speech, singing, narration, and more."
+    },
+    {
+      "title": "GhostAI | Windows AI Assistant — Local AI, BYOK, Stealth Mode",
+      "url": "https://useghostai.com/",
+      "snippet": "Windows AI assistant with Cloud AI, BYOK, and offline Local AI. Voice input, screenshots, encrypted notes, Mermaid diagrams, and Stealth Mode hidden from screen capture."
+    },
+    {
+      "title": "ai-characters/AI-Voice-Models-by-AI_Characters · Hugging Face",
+      "url": "https://huggingface.co/ai-characters/AI-Voice-Models-by-AI_Characters",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Add an AI Voice Model | Voice Models",
+      "url": "https://voice-models.com/add",
+      "snippet": "Submit an AI voice model to Voice Models with its source URL, voice details, and RVC metadata."
+    }
+  ]
+}

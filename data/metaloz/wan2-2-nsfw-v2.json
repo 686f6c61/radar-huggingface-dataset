@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "metaloz/Wan2.2-nsfw-v2",
+  "slug": "metaloz-wan2-2-nsfw-v2",
+  "author": "metaloz",
+  "url": "https://huggingface.co/metaloz/Wan2.2-nsfw-v2",
+  "created_at": "2026-08-31T18:36:08.000Z",
+  "updated_at": "2026-08-31T18:36:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19972337160,
+  "storage_human": "20.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Wan-Video/Wan2.2: Wan: Open and Advanced Large-Scale Video ...",
+      "url": "https://github.com/Wan-Video/Wan2.2",
+      "snippet": "👍 Efficient High-Definition Hybrid TI2V: Wan2.2 open-sources a 5B model built with our advanced Wan2.2-VAE that achieves a compression ratio of 16×16×4. This model supports both text-to-video and image-to-video generation at 720P resolution with 24fps and can also run on consumer-grade graphics cards like 4090."
+    },
+    {
+      "title": "Models compatible with the Wan2.2 library - Hugging Face",
+      "url": "https://huggingface.co/models?library=wan2.2",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "README.md · FX-FeiHou/wan2.2-Remix at main - Hugging Face",
+      "url": "https://huggingface.co/FX-FeiHou/wan2.2-Remix/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wan 2.2 AI - Professional Text-to-Video & Image-to-Video Generation ...",
+      "url": "https://wan22.ai/home",
+      "snippet": "Generate high-quality videos with Wan 2.2 cinema-grade aesthetic control, professional motion generation, and up to 720p resolution. Perfect for creators, marketers, and content producers using Wan 2.2 AI."
+    },
+    {
+      "title": "GitHub - Madxthree/wan2.2",
+      "url": "https://github.com/Madxthree/wan2.2",
+      "snippet": "Wan2.2 builds on the foundation of Wan2.1 with notable improvements in generation quality and model capability. This upgrade is driven by a series of key technical innovations, mainly including the Mixture-of-Experts (MoE) architecture, upgraded training data, and high-compression video generation."
+    }
+  ]
+}

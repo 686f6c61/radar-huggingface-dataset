@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ponoma16/sql-qwen3.6-27b-v7",
+  "slug": "ponoma16-sql-qwen3-6-27b-v7",
+  "author": "ponoma16",
+  "url": "https://huggingface.co/ponoma16/sql-qwen3.6-27b-v7",
+  "created_at": "2026-08-31T15:12:07.000Z",
+  "updated_at": "2026-08-31T15:50:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 106680253,
+  "storage_human": "107 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ponoma16/sql-qwen3.6-27b-v7 · Hugging Face",
+      "url": "https://huggingface.co/ponoma16/sql-qwen3.6-27b-v7",
+      "snippet": "ponoma16 / sql-qwen3.6-27b-v7 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "ponoma16/sql-qwen3.6-27b-v7-merged · Hugging Face",
+      "url": "https://huggingface.co/ponoma16/sql-qwen3.6-27b-v7-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sql-qwen3.6-27b-v7-merged API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ponoma16/sql-qwen3.6-27b-v7-merged",
+      "snippet": "Deploy sql-qwen3.6-27b-v7-merged with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Ai3090/models/qwen3.6-27b at master - GitHub",
+      "url": "https://github.com/donwellsav/Ai3090/tree/master/models/qwen3.6-27b",
+      "snippet": "Qwen3.6-27B Run Qwen3.6-27B — with vision and tool calling — on 1 or 2 RTX 3090s. Full OpenAI-compatible API, drop-in replacement for ChatGPT/Claude in any tool that uses the OpenAI SDK."
+    },
+    {
+      "title": "Qwen 3.6 27B - openmodels.run",
+      "url": "https://www.openmodels.run/models/qwen3-6-27b",
+      "snippet": "Alibaba&#x27;s dense 27B parameter model that outperforms its own 397B MoE predecessor on agentic coding benchmarks. Strong multilingual and reasoning capabilities released under Apache 2.0."
+    }
+  ]
+}

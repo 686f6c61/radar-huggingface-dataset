@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jaymanaryan/Qwen3-Combined-3",
+  "slug": "jaymanaryan-qwen3-combined-3",
+  "author": "jaymanaryan",
+  "url": "https://huggingface.co/jaymanaryan/Qwen3-Combined-3",
+  "created_at": "2026-08-31T12:44:42.000Z",
+  "updated_at": "2026-08-31T13:06:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "merge",
+    "mergekit",
+    "lazymergekit",
+    "jaymanaryan/persona",
+    "jaymanaryan/reasoning",
+    "jaymanaryan/creative",
+    "base_model:jaymanaryan/creative",
+    "base_model:merge:jaymanaryan/creative",
+    "base_model:jaymanaryan/persona",
+    "base_model:merge:jaymanaryan/persona",
+    "base_model:jaymanaryan/reasoning",
+    "base_model:merge:jaymanaryan/reasoning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "jaymanaryan/persona, jaymanaryan/reasoning, jaymanaryan/creative",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In this work, we introduce Qwen3, the latest series in our foundation model family, Qwen. Qwen3 is a collection of open-weight large language models (LLMs) that achieve state-of-the-art performance across a wide variety of tasks and domains."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    },
+    {
+      "title": "PDF Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388.pdf",
+      "snippet": "In this work, we introduce Qwen3, the latest series in our foundation model family, Qwen. Qwen3 is a collection of open-weight large language models (LLMs) that achieve state-of-the-art performance across a wide variety of tasks and domains. We release both dense and Mixture-of-Experts (MoE) models, with the number of parameters ranging from 0.6 billion to 235 billion, to meet the needs of ..."
+    },
+    {
+      "title": "Qwen 3 by Alibaba Cloud - Everything You Need to Know - deploy.ai",
+      "url": "https://www.deploy.ai/blog-post/qwen-3-by-alibaba-cloud-everything-you-need-to-know",
+      "snippet": "Alibaba Cloud has released the Qwen 3 model family, representing a major leap in its open-source AI development, introducing advanced architecture with Mixture-of-Experts (MoE) design and flexible hybrid reasoning capabilities. In this breakdown, you&#x27;ll learn what sets Qwen 3 apart, how its architecture works, and what it means for developers, researchers, and enterprise teams building with AI ..."
+    },
+    {
+      "title": "PDF Qwen3 Technical Report - raw.githubusercontent.com",
+      "url": "https://raw.githubusercontent.com/QwenLM/Qwen3/main/Qwen3_Technical_Report.pdf",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    }
+  ]
+}

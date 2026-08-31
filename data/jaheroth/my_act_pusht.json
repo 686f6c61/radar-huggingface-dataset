@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "jaheroth/my_act_pusht",
+  "slug": "jaheroth-my_act_pusht",
+  "author": "jaheroth",
+  "url": "https://huggingface.co/jaheroth/my_act_pusht",
+  "created_at": "2026-08-31T16:24:33.000Z",
+  "updated_at": "2026-08-31T16:24:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "act",
+    "pusht",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1680959779,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jaheroth/act_pusht_kl1 · Hugging Face",
+      "url": "https://huggingface.co/jaheroth/act_pusht_kl1",
+      "snippet": "Instructions to use jaheroth/act_pusht_kl1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use jaheroth/act_pusht_kl1 with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the policy/run inference ..."
+    },
+    {
+      "title": "jaheroth/act_pusht_bs64_dec7_seed1001_200k · Hugging Face",
+      "url": "https://huggingface.co/jaheroth/act_pusht_bs64_dec7_seed1001_200k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JaHeRoth (Jacob H. Rothschild) · GitHub",
+      "url": "https://github.com/JaHeRoth",
+      "snippet": "My reimplementation of the GPT-2 architecture on the level of nn.Parameter. Contains trained weights plus code for model architecture, inference and multi-GPU training."
+    },
+    {
+      "title": "Train and Visualize Behavior Cloning on PushT with LeRobot — Hands-On ...",
+      "url": "https://www.kiadev.net/news/2025-09-20-lerobot-pusht-behavior-cloning",
+      "snippet": "LeRobot step-by-step tutorial to train, evaluate and visualize a behavior-cloning visuomotor policy on the PushT dataset, with full Colab-ready code and checkpoints."
+    },
+    {
+      "title": "Daily AI Papers | All credits go to HuggingFace&#x27;s Daily AI papers ...",
+      "url": "https://gabrielchua.me/daily-ai-papers/",
+      "snippet": "All credits go to HuggingFace&#x27;s Daily AI papers (https://huggingface.co/papers) and the research community. 🔉Audio summaries here (https://t.me/daily_ai_papers)."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "hydrogenbondd007/libero-metric-action-decoder-v2",
+  "slug": "hydrogenbondd007-libero-metric-action-decoder-v2",
+  "author": "hydrogenbondd007",
+  "url": "https://huggingface.co/hydrogenbondd007/libero-metric-action-decoder-v2",
+  "created_at": "2026-08-31T12:21:57.000Z",
+  "updated_at": "2026-08-31T12:23:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "robotics",
+    "robot-learning",
+    "libero",
+    "panda",
+    "action-decoder",
+    "action-chunking",
+    "transformer",
+    "dataset:physical-intelligence/libero",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3176527,
+  "parameters_human": "3.2M",
+  "storage_bytes": 12713333,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LIBERO · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/libero",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "allenai/MolmoAct-7B-D-LIBERO-Goal-0812 · Hugging Face",
+      "url": "https://huggingface.co/allenai/MolmoAct-7B-D-LIBERO-Goal-0812",
+      "snippet": "MolmoAct 7B-D LIBERO-Goal MolmoAct is a fully open-source action reasoning model for robotic manipulation developed by the Allen Institute for AI. MolmoAct is trained on a subset of OXE and MolmoAct Dataset, a dataset with 10k high-quality trajectories of a single-arm Franka robot performing 93 unique manipulation tasks in both home and tabletop environments. It has state-of-the-art ..."
+    },
+    {
+      "title": "GitHub - Lifelong-Robot-Learning/LIBERO: Benchmarking Knowledge ...",
+      "url": "https://github.com/Lifelong-Robot-Learning/LIBERO",
+      "snippet": "LIBERO is designed for studying knowledge transfer in multitask and lifelong robot learning problems. Successfully resolving these problems require both declarative knowledge about objects/spatial relationships and procedural knowledge about motion/behaviors. LIBERO provides: a procedural generation pipeline that could in principle generate an infinite number of manipulation tasks. 130 tasks ..."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "MolmoAct 2: An open foundation for robots that work in the real world",
+      "url": "https://allenai.org/blog/molmoact2",
+      "snippet": "MolmoAct 2 is a fully open robotics foundation model that brings faster, stronger 3D action reasoning to real-world robot tasks, alongside a major new bimanual manipulation dataset for researchers to study, reproduce, and build on."
+    }
+  ]
+}

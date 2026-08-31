@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Tencent-Hy-30B-A3B-uncensored-heretic-GGUF",
+  "slug": "mradermacher-tencent-hy-30b-a3b-uncensored-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Tencent-Hy-30B-A3B-uncensored-heretic-GGUF",
+  "created_at": "2026-08-31T11:36:43.000Z",
+  "updated_at": "2026-08-31T12:09:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30064725888,
+  "parameters_human": "30.06B",
+  "storage_bytes": 17152541152,
+  "storage_human": "17.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Hy-MT2-30B-A3B-uncensored-heretic-GGUF - Hugging Face",
+      "url": "https://huggingface.co/OS-Software/Hy-MT2-30B-A3B-uncensored-heretic-GGUF",
+      "snippet": "Hy-MT2: A Family of Fast, Efficient and Powerful Multilingual Translation Models in the Wild"
+    },
+    {
+      "title": "GitHub - Tencent-Hunyuan/Hy-MT2",
+      "url": "https://github.com/Tencent-Hunyuan/Hy-MT2",
+      "snippet": "Model Introduction Hy-MT2 is a family of \"fast-thinking\" multilingual translation models designed for complex real-world scenarios. It includes three model sizes: 1.8B, 7B, and 30B-A3B (MoE), all of which support translation among 33 languages and effectively follow translation instructions in multiple languages."
+    },
+    {
+      "title": "Hy-MT2: A Family of Fast, Efficient and Powerful - arXiv.org",
+      "url": "https://arxiv.org/html/2605.22064v1",
+      "snippet": "Abstract Hy-MT2 is a family of fast-thinking multilingual translation models designed for complex real-world scenarios. It includes three model sizes: 1.8B, 7B, and 30B-A3B (MoE), all of which support translation among 33 languages and effectively follow translation instructions in multiple languages. For on-device deployment, with AngelSlim 1.25-bit extreme quantization, the 1.8B model ..."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    }
+  ]
+}

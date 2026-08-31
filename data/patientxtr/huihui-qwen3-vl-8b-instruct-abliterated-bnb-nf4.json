@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "patientxtr/Huihui-Qwen3-VL-8B-Instruct-abliterated-bnb-nf4",
+  "slug": "patientxtr-huihui-qwen3-vl-8b-instruct-abliterated-bnb-nf4",
+  "author": "patientxtr",
+  "url": "https://huggingface.co/patientxtr/Huihui-Qwen3-VL-8B-Instruct-abliterated-bnb-nf4",
+  "created_at": "2026-08-31T12:43:18.000Z",
+  "updated_at": "2026-08-31T12:44:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3_vl",
+    "license:apache-2.0",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11422650,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Huihui-Qwen3-VL-8B-Instruct-abliterated - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3-VL-8B-Instruct-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · huihui-ai/Huihui-Qwen3-VL-8B-Instruct-abliterated at main",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3-VL-8B-Instruct-abliterated/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3-VL-8B-Instruct-abliterated - Models",
+      "url": "https://www.modelscope.cn/models/fireicewolf/Huihui-Qwen3-VL-8B-Instruct-abliterated",
+      "snippet": "This is a fork from huihui.ai@Huggingface, I&#x27;m not the original author. huihui-ai/Huihui-Qwen3-VL-8B-Instruct-abliterated This is an uncensored version of Qwen/Qwen3-VL-8B-Instruct created with abliteration (see remove-refusals-with-transformers to know more about it). It was only the text part that was processed, not the image part. The abliterated model will no longer say \"I can&#x27;t describe ..."
+    },
+    {
+      "title": "Huihui-Qwen3-VL-8B-Instruct-abliterated: Text-to-Image model — overview ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/huihui-qwen3-vl-8b-instruct-abliterated-huihui-ai",
+      "snippet": "Overview Huihui-Qwen3-VL-8B-Instruct-abliterated is an uncensored multimodal vision-language model built by huihui-ai through abliteration of the base Qwen3-VL-8B-Instruct model. The model processes images and text jointly to generate descriptions, answer questions about visual content, and engage in multimodal dialogue. Only the text component underwent abliteration using the remove-refusals ..."
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3-VL-8B-Instruct-abliterated",
+      "url": "https://www.toolify.ai/ai-model/huihui-ai-huihui-qwen3-vl-8b-instruct-abliterated",
+      "snippet": "Huihui-Qwen3-VL-8B-Instruct-abliterated is an open source model from GitHub that offers a free installation service, and any user can find Huihui-Qwen3-VL-8B-Instruct-abliterated on GitHub to install."
+    }
+  ]
+}

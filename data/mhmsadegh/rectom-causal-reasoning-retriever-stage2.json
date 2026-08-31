@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mhmsadegh/rectom-causal-reasoning-retriever-stage2",
+  "slug": "mhmsadegh-rectom-causal-reasoning-retriever-stage2",
+  "author": "mhmsadegh",
+  "url": "https://huggingface.co/mhmsadegh/rectom-causal-reasoning-retriever-stage2",
+  "created_at": "2026-08-31T18:50:28.000Z",
+  "updated_at": "2026-08-31T18:50:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "reasoning-retrieval",
+    "rectom",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33360000,
+  "parameters_human": "33.4M",
+  "storage_bytes": 133462128,
+  "storage_human": "133 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mhmsadegh/rectom-causal-reasoning-retriever-pilot · Hugging Face",
+      "url": "https://huggingface.co/mhmsadegh/rectom-causal-reasoning-retriever-pilot",
+      "snippet": "Instructions to use mhmsadegh/rectom-causal-reasoning-retriever-pilot with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=rectom",
+      "snippet": "mhmsadegh/rectom-causal-reasoning-retriever-pilot Feature Extraction • 33.4M•Updated about 5 hours ago"
+    },
+    {
+      "title": "GitHub - CGCL-codes/RecToM: Official dataset, evaluation scripts, and ...",
+      "url": "https://github.com/CGCL-codes/RecToM",
+      "snippet": "RecToM is a benchmark designed to rigorously evaluate the Theory of Mind (ToM) capabilities of Large Language Models (LLMs) within recommendation dialogues. LLMs must infer users&#x27; Beliefs, Desires, and Intents during multi-turn interactions—skills essential for building context-aware and effective recommender systems."
+    },
+    {
+      "title": "KunalKurve/rca-agentic-ai - GitHub",
+      "url": "https://github.com/KunalKurve/rca-agentic-ai",
+      "snippet": "RAG Retriever: Performs semantic search over SOPs and historical incident reports using FAISS and SentenceTransformers. Causal Reasoning: Uses a Groq-hosted LLaMA model to infer the most likely root cause from logs, anomalies, maintenance data, and retrieved documents."
+    },
+    {
+      "title": "[2501.14892] Causal Graphs Meet Thoughts: Enhancing Complex Reasoning ...",
+      "url": "https://arxiv.org/abs/2501.14892",
+      "snippet": "This paper proposes a novel pipeline that filters large knowledge graphs to emphasize cause-effect edges, aligns the retrieval process with the model&#x27;s chain-of-thought (CoT), and enhances reasoning through multi-stage path improvements."
+    }
+  ]
+}

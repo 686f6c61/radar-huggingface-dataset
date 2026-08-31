@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "aidsoid/translategemma-4b-it-4bit_immersive-translate",
+  "slug": "aidsoid-translategemma-4b-it-4bit_immersive-translate",
+  "author": "aidsoid",
+  "url": "https://huggingface.co/aidsoid/translategemma-4b-it-4bit_immersive-translate",
+  "created_at": "2026-08-31T14:25:17.000Z",
+  "updated_at": "2026-08-31T14:31:42.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma3",
+    "text-generation",
+    "conversational",
+    "base_model:google/translategemma-4b-it",
+    "base_model:quantized:google/translategemma-4b-it",
+    "license:gemma",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 606601728,
+  "parameters_human": "606.6M",
+  "storage_bytes": 2221369619,
+  "storage_human": "2.2 GB",
+  "base_model": "google/translategemma-4b-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "translategemma-4b-it download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/translategemma-4b-it/",
+      "snippet": "Download translategemma-4b-it for free. Lightweight multimodal translation model for 55 languages. translategemma-4b-it is a lightweight, state-of-the-art open translation model from Google, built on the Gemma 3 family and optimized for high-quality multilingual translation across 55 languages. It supports both text-to-text translation and image-to-text extraction with translation, enabling ..."
+    },
+    {
+      "title": "TranslateGemma Complete Guide: Benchmarks, Setup & Usage (2026)",
+      "url": "https://aicybr.com/blog/translategemma-guide",
+      "snippet": "A comprehensive guide to Google&#x27;s open-weight TranslateGemma models (4B, 12B, 27B). Detailed setup, WMT24++ & Vistra benchmarks, Docker deployment, and Python usage for text and multimodal translation."
+    },
+    {
+      "title": "TranslateGemma: A new family of open translation models",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/translategemma/",
+      "snippet": "\"TranslateGemma\" is a new suite of open translation models built on Gemma 3 in 4B, 12B, and 27B sizes. These models translate across 55 languages and are efficient without sacrificing translation quality. The 12B TranslateGemma model outperforms the Gemma 3 27B baseline, using less than half the parameters. TranslateGemma retains the strong multimodal capabilities of Gemma 3, translating text ..."
+    },
+    {
+      "title": "translategemma-4b-it-4bit_immersive-translate - Hugging Face",
+      "url": "https://huggingface.co/mlx-community/translategemma-4b-it-4bit_immersive-translate",
+      "snippet": "translategemma-4b-it-4bit_immersive-translate ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Translategemma 4B It by google — VRAM 8.6GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/google%2Ftranslategemma-4b-it,71JR4LK026KBQtINJgqyke",
+      "snippet": "Translategemma 4B It is an open-source language model by google. Features: 4b LLM, VRAM: 8.6GB, License: gemma, LLM Explorer Score: 0.38."
+    }
+  ]
+}

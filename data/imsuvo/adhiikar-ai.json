@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "imsuvo/Adhiikar.Ai",
+  "slug": "imsuvo-adhiikar-ai",
+  "author": "imsuvo",
+  "url": "https://huggingface.co/imsuvo/Adhiikar.Ai",
+  "created_at": "2026-08-31T18:34:42.000Z",
+  "updated_at": "2026-08-31T18:36:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 194161,
+  "storage_human": "194161 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "newton-adhikari/multi_model_sensor_fusion - GitHub",
+      "url": "https://github.com/newton-adhikari/multi_model_sensor_fusion",
+      "snippet": "This project implements a real-time sensor fusion system using LiDAR, RGB camera, and IMU data to estimate the pose and trajectory of a mobile platform. The fusion is achieved via a manually implemented Adaptive Extended Kalman Filter (EKF) in ROS2 using Python and NumPy. The system synchronizes multi-modal data streams, transforms them into a common reference frame, and fuses them to produce ..."
+    },
+    {
+      "title": "AI 3D Model Generator (image-to-3d, text-to-3d) | CGDream",
+      "url": "https://cgdream.ai/features/ai-3d-model-generator-image-to-3d",
+      "snippet": "Free AI 3D Model Generator: Convert 2D images or text into 3D models with CGDream! ☑️ Free and accurate—perfect for creatives bringing visuals to life in 3D."
+    },
+    {
+      "title": "Promptomania — AI Prompt Hub, Model Directory & Tools",
+      "url": "https://promptomania.com/",
+      "snippet": "AI Prompt Hub & Model Directory Master AI Prompts Explore AI image, video, 3D & audio models, build perfect prompts with our visual builder, and learn from expert guides. Everything you need for Midjourney, DALL·E, FLUX, Sora, Runway, Studio AI, and more."
+    },
+    {
+      "title": "3D Warehouse",
+      "url": "https://3dwarehouse.sketchup.com/model/400a83bc0680cad8500158c23c4c5a8e/Imvu-Female-Avatar-1?hl=en",
+      "snippet": "3D Warehouse is a website of searchable, pre-made 3D models that works seamlessly with SketchUp."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

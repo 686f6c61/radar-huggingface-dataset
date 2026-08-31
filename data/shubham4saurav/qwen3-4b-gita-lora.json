@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "shubham4saurav/qwen3-4b-gita-lora",
+  "slug": "shubham4saurav-qwen3-4b-gita-lora",
+  "author": "shubham4saurav",
+  "url": "https://huggingface.co/shubham4saurav/qwen3-4b-gita-lora",
+  "created_at": "2026-08-31T18:42:06.000Z",
+  "updated_at": "2026-08-31T18:50:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "sa"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "unsloth",
+    "qwen3",
+    "bhagavad-gita",
+    "indian-philosophy",
+    "text-generation",
+    "conversational",
+    "en",
+    "sa",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610812,
+  "storage_human": "144 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "saurav-gem/lora_model_qwen_4B · Hugging Face",
+      "url": "https://huggingface.co/saurav-gem/lora_model_qwen_4B",
+      "snippet": "Uploaded model Developed by: saurav-gem License: apache-2.0 Finetuned from model : unsloth/qwen3-4b-unsloth-bnb-4bit This qwen3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "kiratan/qwen3-4b-structeval-lora-57-merged · Hugging Face",
+      "url": "https://huggingface.co/kiratan/qwen3-4b-structeval-lora-57-merged",
+      "snippet": "Instructions to use kiratan/qwen3-4b-structeval-lora-57-merged with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Evaluating Tool Calling in Qwen3-4B: Base, Prompting and LoRA",
+      "url": "https://ritzdevp.github.io/blogs/lora.html",
+      "snippet": "In this blog, we are going to look at the performance of a fine-tuned Qwen3-4B Base variant on a well defined, structured task. The motivation behind this exercise is to evaluate a small language model&#x27;s learning capability of behaviour of structure, formatting and parsing which are paramount for agentic tool calling."
+    },
+    {
+      "title": "Fine Tuning Small LLM Qwen3-4B on Mac with LoRA for Customer Support",
+      "url": "https://layerx.xyz/blog/fine-tuning-small-llm-customer-support",
+      "snippet": "This tutorial, built by LayerX (an AI studio that helps companies build intelligent workflows and get more out of AI), walks through a real example. We&#x27;ll take FAQs from TAIKAI (a hackathon and open innovation platform), generate synthetic training data from them, fine-tune Alibaba&#x27;s Qwen3-4B with LoRA on a MacBook Pro M1 Pro, and serve the resulting model locally with llama.cpp."
+    },
+    {
+      "title": "In-depth Analysis of Qwen3-4B&#x27;s Reasoning Paths: Practical Optimization ...",
+      "url": "https://www.zingnex.cn/en/forum/thread/qwen3-4b-lora",
+      "snippet": "This article delves into the reasoning mechanism of the Qwen3-4B model, analyzes the effects of reasoning strategies such as chain-of-thought, self-consistency, and reflection, and details how to significantly improve Q&A performance through LoRA parameter-efficient fine-tuning technology without incurring excessive computational costs."
+    }
+  ]
+}

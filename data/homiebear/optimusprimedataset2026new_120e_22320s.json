@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Homiebear/OptimusPrimedataset2026new_120e_22320s",
+  "slug": "homiebear-optimusprimedataset2026new_120e_22320s",
+  "author": "Homiebear",
+  "url": "https://huggingface.co/Homiebear/OptimusPrimedataset2026new_120e_22320s",
+  "created_at": "2026-08-31T18:30:45.000Z",
+  "updated_at": "2026-08-31T18:38:36.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 507684974,
+  "storage_human": "508 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Homiebear/OptimusPrime · Hugging Face",
+      "url": "https://huggingface.co/Homiebear/OptimusPrime",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Homiebear/OptimusPrime at main - Hugging Face",
+      "url": "https://huggingface.co/Homiebear/OptimusPrime/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Optimus Prime [RVC v2 , 720Epochs] AI Voice Model",
+      "url": "https://voice-models.com/model/1tMbh4m1f9M",
+      "snippet": "Optimus Prime [RVC v2 , 720Epochs] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Hugging Bay | Find And Download Open AI",
+      "url": "https://huggingbay.xyz/",
+      "snippet": "Hugging Bay is the Pirate Bay-style catalog for public open LLMs, models, datasets, apps, evals, and hosted files."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

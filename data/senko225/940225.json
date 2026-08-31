@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Senko225/940225",
+  "slug": "senko225-940225",
+  "author": "Senko225",
+  "url": "https://huggingface.co/Senko225/940225",
+  "created_at": "2026-08-31T15:49:31.000Z",
+  "updated_at": "2026-08-31T15:59:48.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 658034136,
+  "storage_human": "658 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Air Con Condenser 940225 Nissens AC Conditioning 2H0.820.411 ... - eBay",
+      "url": "https://www.ebay.co.uk/itm/391895383526",
+      "snippet": "While you can drive with a faulty condenser, the air conditioning system will not function correctly, leading to discomfort in hot weather. How does an air con condenser work?. What is an air con condenser?."
+    },
+    {
+      "title": "CONDENSER, AIR CONDITIONING FOR VW AMAROK NISSENS 940225 - eBay",
+      "url": "https://www.ebay.com/itm/383613871090",
+      "snippet": "CONDENSER, AIR CONDITIONING FOR VW AMAROK NISSENS 940225 spare_supply (6231) 99.6% positive"
+    },
+    {
+      "title": "940225 NISSENS Condenser, air conditioning | Spareto",
+      "url": "https://spareto.com/products/nissens-condenser-air-conditioning/940225",
+      "snippet": "940225 - Condenser, air conditioning manufactured by NISSENS applicable for the VW. This condenser is fully compatible with original part numbers 2H0.820.411, 2H0820411A, and 2H0820411B."
+    },
+    {
+      "title": "940225,NISSENS 940225 Condenser, air conditioning for VW",
+      "url": "https://www.niparts.com/Fac/AE5693/NISSENS/940225.html",
+      "snippet": "buy 940225,Condenser, air conditioning 940225,find manufacturers and suppliers of 940225,Condenser, air conditioning 940225 for VW"
+    },
+    {
+      "title": "A/C AIR CON CONDENSER 940225 NISSENS NEW OE REPLACEMENT - eBay",
+      "url": "https://www.ebay.com/itm/178213287999",
+      "snippet": "940225 AC RADIATOR AIR COLD CONDITIONING COOLER COOLANT CON, FREEZE COMPRESSOR DRYER REPLACE REPLACEMENT NEW QUALITY LEAK, ORIGINAL LEAKING LEAKAGE 8FC 351 345-044 58005369 042028N VW, 8880400542 350041 VW5369D DCC1973 M-7300200 0810.3104 43551, 16-9955 10-45265-SX 053-016-0035 107137 001-10-16784 CFPA, 2H0.820.411 2H0820411A 2H0820411B ..."
+    }
+  ]
+}

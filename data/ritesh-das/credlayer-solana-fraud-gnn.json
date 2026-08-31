@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ritesh-das/credlayer-solana-fraud-gnn",
+  "slug": "ritesh-das-credlayer-solana-fraud-gnn",
+  "author": "ritesh-das",
+  "url": "https://huggingface.co/ritesh-das/credlayer-solana-fraud-gnn",
+  "created_at": "2026-08-31T12:49:45.000Z",
+  "updated_at": "2026-08-31T12:49:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "fraud_gnn",
+    "pytorch",
+    "pytorch-geometric",
+    "graph-neural-network",
+    "fraud-detection",
+    "solana",
+    "web3",
+    "defi",
+    "graphsage",
+    "gatv2",
+    "tabular-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 618881,
+  "storage_human": "618881 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dyslex7c (Ritesh Das) · GitHub",
+      "url": "https://github.com/Dyslex7c",
+      "snippet": "feat (ml): implement standalone GNN fraud detection service & backend scoring gateway Summary Implements the GNN-based fraud detection and wallet reputation scoring system for CredLayer as a decoupled microservice."
+    },
+    {
+      "title": "GitHub - Zakariasisu5/Cred-Layer: Decentralized reputation protocol on ...",
+      "url": "https://github.com/Zakariasisu5/Cred-Layer",
+      "snippet": "🛡️ CredLayer AI-Powered Trust Infrastructure for Web3 Decentralized reputation protocol on Solana — wallet trust scores, AI risk intelligence, and behavioral analytics for autonomous finance."
+    },
+    {
+      "title": "CredLayer — AI-Powered Web3 Trust & Verification",
+      "url": "https://credlayer1.vercel.app/",
+      "snippet": "CredLayer is the AI-powered verification layer for Web3. Build trust with reputation scoring, verifiable credentials, and blockchain attestations."
+    },
+    {
+      "title": "Financial Fraud Detection Blueprint by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/financial-fraud-detection",
+      "snippet": "Model building is a key component for fraud detection, which takes cleaned and prepared label data and produces a model that can be used to predict fraudulent scores in financial payment events. The Financial Fraud Training container leverages a graph neural network (GNN) to generate embeddings that are then fed into XGBoost to produce the model."
+    },
+    {
+      "title": "Detecting Fraudulent Transactions for Different Patterns in Financial ...",
+      "url": "https://link.springer.com/article/10.1007/s44230-025-00097-3",
+      "snippet": "As digital financial transactions and fraudulent activities grow in complexity, ensuring financial system security becomes increasingly challenging. This paper introduces LayerWeighted-GCN (LWG), a novel Graph Neural Network (GNN) model for fraud detection, along with a synthetic dataset named SIFT (Synthetic Insights for Fraudulent Transactions). The proposed approach integrates adaptive ..."
+    }
+  ]
+}

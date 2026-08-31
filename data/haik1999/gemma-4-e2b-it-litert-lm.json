@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "haik1999/gemma-4-E2B-it-litert-lm",
+  "slug": "haik1999-gemma-4-e2b-it-litert-lm",
+  "author": "haik1999",
+  "url": "https://huggingface.co/haik1999/gemma-4-E2B-it-litert-lm",
+  "created_at": "2026-07-04T13:20:51.000Z",
+  "updated_at": "2026-08-31T16:44:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 57,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30862589968,
+  "storage_human": "30.9 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/gemma-4-E2B-it-litert-lm · Hugging Face",
+      "url": "https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huggingworld/gemma-4-E2B-it-litert-lm · Hugging Face",
+      "url": "https://huggingface.co/huggingworld/gemma-4-E2B-it-litert-lm",
+      "snippet": "Benefits At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    },
+    {
+      "title": "gemma-4-E2B-it-litert-lm · Models - modelscope.cn",
+      "url": "https://www.modelscope.cn/models/litert-community/gemma-4-E2B-it-litert-lm",
+      "snippet": "AI is the land of civilization, carrying productivity and creativity; AI safety is the surrounding ocean—it shapes boundaries and nurtures trust amidst risks. We are committed to building a self-purifying, self-adaptive, and self-healing safety ecosystem to safeguard the sustainable development of intelligent technologies."
+    },
+    {
+      "title": "gemma-4-E2B-it-litert-lm: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma-4-e2b-it-litert-lm-litert-community",
+      "snippet": "Overview gemma-4-E2B-it-litert-lm is a lightweight text generation model from litert-community built on Google&#x27;s Gemma 4 architecture and optimized for on-device deployment across mobile, desktop, IoT, and web platforms. The model is packaged in .litertlm format for the LiteRT-LM framework, which provides hardware acceleration via XNNPACK for CPU and ML Drift for GPU, plus specialized APIs for ..."
+    },
+    {
+      "title": "Gemma 4 | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/litert-lm/models/gemma-4",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size, targeting deployment scenarios from mobile and edge devices (E2B, E4B) to consumer GPUs and workstations (26B A4B, 31B). They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding. Note: LiteRT-LM supports E2B and E4B models today, with support for larger models coming soon. Gemma 4 ..."
+    }
+  ]
+}

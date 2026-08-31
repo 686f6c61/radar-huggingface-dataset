@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "youngseok12/AX-3.1-Light-sft_v3_2_aihub_extension",
+  "slug": "youngseok12-ax-3-1-light-sft_v3_2_aihub_extension",
+  "author": "youngseok12",
+  "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_v3_2_aihub_extension",
+  "created_at": "2026-08-31T12:19:10.000Z",
+  "updated_at": "2026-08-31T12:21:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "korean",
+    "instruction-tuning",
+    "supervised-fine-tuning",
+    "merged-model",
+    "answer-first",
+    "conversational",
+    "ko",
+    "base_model:skt/A.X-3.1-Light",
+    "base_model:finetune:skt/A.X-3.1-Light",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7264800768,
+  "parameters_human": "7.26B",
+  "storage_bytes": 14529635608,
+  "storage_human": "14.5 GB",
+  "base_model": "skt/A.X-3.1-Light",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "youngseok12/AX-3.1-Light-sft_v3_1_A_control · Hugging Face",
+      "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_v3_1_A_control",
+      "snippet": "AX-3.1-Light-sft_v3_1_A_control This is a standalone BF16 model obtained by fine-tuning skt/A.X-3.1-Light with a LoRA adapter and merging the adapter into the base weights."
+    },
+    {
+      "title": "youngseok12/AX-3.1-Light-sft_v3_0 · Hugging Face",
+      "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_v3_0",
+      "snippet": "youngseok12 / AX-3.1-Light-sft_v3_0 like 0 Text Generation Transformers Safetensors Korean llama korean sft lora-merged k-ai-leaderboard conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AX-3.1-Light-sft_v3_0 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/youngseok12/AX-3.1-Light-sft_v3_0",
+      "snippet": "Run AX-3.1-Light-sft_v3_0 with FriendliAI inference. skt/A.X-3.1-Light를 기반으로 AI Hub 한국어 데이터로 수행한 첫 번째 clean SFT baseline입니다."
+    },
+    {
+      "title": "Qualcomm® AI Hub Models - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models",
+      "snippet": "Using Qualcomm® AI Hub Workbench, the export script will: Compile the model for the chosen device and target runtime (see: Compiling Models on AI Hub Workbench). If applicable, Quantize the model (see: Quantization on AI Hub Workbench) Profile the compiled model on a real device in the cloud (see: Profiling Models on AI Hub Workbench)."
+    },
+    {
+      "title": "Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/",
+      "snippet": "The platform for on-device AI, with optimized open source and licensed models, or bring your own. Validate performance on real Qualcomm devices."
+    }
+  ]
+}

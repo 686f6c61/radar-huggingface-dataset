@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "NostraEmpire/mirror-qwen2.5-32b-instruct",
+  "slug": "nostraempire-mirror-qwen2-5-32b-instruct",
+  "author": "NostraEmpire",
+  "url": "https://huggingface.co/NostraEmpire/mirror-qwen2.5-32b-instruct",
+  "created_at": "2026-08-31T13:55:48.000Z",
+  "updated_at": "2026-08-31T14:23:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2309.00071",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-32B",
+    "base_model:finetune:Qwen/Qwen2.5-32B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65527841856,
+  "storage_human": "65.5 GB",
+  "base_model": "Qwen/Qwen2.5-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-32B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-32B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NostraEmpire/mirror-qwen2.5-vl-7b-instruct · Hugging Face",
+      "url": "https://huggingface.co/NostraEmpire/mirror-qwen2.5-vl-7b-instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen2.5:32b-instruct",
+      "url": "https://ollama.com/library/qwen2.5:32b-instruct",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "Qwen2.5-32B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-32B-Instruct",
+      "snippet": "Qwen2.5-32B-Instruct Introduction Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qwen2.5 brings the following improvements upon Qwen2:"
+    },
+    {
+      "title": "Qwen2.5-32B-Instruct: 32B Multilingual LLM for Enterprise Chat, Code ...",
+      "url": "https://dev.co/ai/llms/qwen2-5-32b-instruct",
+      "snippet": "Qwen2.5-32B-Instruct is a 32.7 billion parameter instruction-tuned language model from Alibaba&#x27;s Qwen team, released September 2024. It supports up to 131K token context windows with 8K generation capacity, multilingual support (29+ languages), and improved performance on coding, mathematics, JSON generation, and long-form text."
+    }
+  ]
+}

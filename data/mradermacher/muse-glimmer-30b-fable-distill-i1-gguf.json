@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Muse-Glimmer-30B-Fable-Distill-i1-GGUF",
+  "slug": "mradermacher-muse-glimmer-30b-fable-distill-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Muse-Glimmer-30B-Fable-Distill-i1-GGUF",
+  "created_at": "2026-08-31T11:43:47.000Z",
+  "updated_at": "2026-08-31T12:09:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "ja",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "muse-glimmer",
+    "agentic",
+    "tool-use",
+    "multilingual",
+    "distillation",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "ja",
+    "zh",
+    "base_model:armand0e/Muse-Glimmer-30B-Fable-Distill",
+    "base_model:quantized:armand0e/Muse-Glimmer-30B-Fable-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 50794244992,
+  "storage_human": "50.8 GB",
+  "base_model": "armand0e/Muse-Glimmer-30B-Fable-Distill",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Muse-Glimmer-30B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Muse-Glimmer-30B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Muse-Glimmer-30B-heretic-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Muse-Glimmer-30B-heretic-v2-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Muse Glimmer | Meta",
+      "url": "https://developer.meta.com/ai/models/muse-glimmer/",
+      "snippet": "An open 30B model for always-on local agents. Runs on a single GPU, Apache 2.0 licensed. Tuned for tool use, long tasks, and failure recovery."
+    },
+    {
+      "title": "muse-glimmer-30b Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/muse-glimmer-30b/modelcard",
+      "snippet": "Muse Glimmer 30B is a multimodal reasoning model accepting text and images, with native tool-calling and separate reasoning output."
+    },
+    {
+      "title": "meta / muse-glimmer-30b",
+      "url": "https://docs.api.nvidia.com/nim/reference/meta-muse-glimmer-30b",
+      "snippet": "meta / muse-glimmer-30b Muse Glimmer Description Muse Glimmer is an approximately 29.6B-parameter dense multimodal causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware."
+    }
+  ]
+}

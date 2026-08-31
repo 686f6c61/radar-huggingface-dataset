@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "giangndm/omniASR-CTC-300M",
+  "slug": "giangndm-omniasr-ctc-300m",
+  "author": "giangndm",
+  "url": "https://huggingface.co/giangndm/omniASR-CTC-300M",
+  "created_at": "2026-08-31T17:08:36.000Z",
+  "updated_at": "2026-08-31T17:09:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bfloat16",
+    "speech",
+    "asr",
+    "ctc",
+    "multilingual",
+    "automatic-speech-recognition",
+    "dataset:facebook/omnilingual-asr-corpus",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 325494996,
+  "parameters_human": "325.5M",
+  "storage_bytes": 651125970,
+  "storage_human": "651 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/omniASR-CTC-300M · Hugging Face",
+      "url": "https://huggingface.co/facebook/omniASR-CTC-300M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Steveeeeeeen/omniASR-CTC-300M · Hugging Face",
+      "url": "https://huggingface.co/Steveeeeeeen/omniASR-CTC-300M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CTC Models (Fast ASR) | facebookresearch/omnilingual-asr | DeepWiki",
+      "url": "https://deepwiki.com/facebookresearch/omnilingual-asr/2.2.2-ctc-models-(fast-asr)",
+      "snippet": "This page documents the CTC (Connectionist Temporal Classification) model family in the omnilingual-asr system. CTC models provide fast, efficient automatic speech recognition suitable for real-time and high-throughput transcription scenarios. These models prioritize inference speed while maintaining competitive accuracy across 1600+ languages."
+    },
+    {
+      "title": "GitHub - facebookresearch/omnilingual-asr: Omnilingual ASR Open-Source ...",
+      "url": "https://github.com/facebookresearch/omnilingual-asr",
+      "snippet": "We release two suites of models: Checkpoints of improved accuracy (CER) for the CTC and LLM-ASR models compared to our existing LLM-ASR model (omniASR_ {CTC,LLM}_ {300M,1B,3B,7B}_v2). A new variant of the LLM-ASR model that supports decoding on unlimited audio length (omniASR_LLM_Unlimited_ {300M,1B,3B,7B}_v2). The unlimited audio length models are briefly described in the architecture ..."
+    },
+    {
+      "title": "facebook/omniASR-CTC-300M — AICHINA.news | AI China News",
+      "url": "https://aichina.news/models/facebook/omniASR-CTC-300M/",
+      "snippet": "Modelers facebook / omniASR-CTC-300M omniASR-CTC-300M is a 300-million-parameter automatic speech recognition (ASR) model from Meta&#x27;s omniASR family, designed to transcribe speech across many languages using the CTC (Connectionist Temporal Classification) training objective. It is aimed at developers who need a lightweight, open-source speech-to-text baseline for multilingual transcription ..."
+    }
+  ]
+}

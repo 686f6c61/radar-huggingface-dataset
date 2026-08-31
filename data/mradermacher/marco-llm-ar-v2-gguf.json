@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Marco-LLM-AR-V2-GGUF",
+  "slug": "mradermacher-marco-llm-ar-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Marco-LLM-AR-V2-GGUF",
+  "created_at": "2025-03-05T07:55:47.000Z",
+  "updated_at": "2026-08-31T13:06:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "pretrained",
+    "ar",
+    "base_model:ATH-MaaS/Marco-LLM-AR-V2",
+    "base_model:quantized:ATH-MaaS/Marco-LLM-AR-V2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 87,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146889984,
+  "storage_human": "68.1 GB",
+  "base_model": "ATH-MaaS/Marco-LLM-AR-V2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Marco-LLM-AR-V2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Marco-LLM-AR-V2-GGUF",
+      "snippet": "mradermacher / Marco-LLM-AR-V2-GGUF like 1 Transformers GGUF Arabic pretrained Inference Endpoints conversational License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "mradermacher/Marco-LLM-AR-V2-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Marco-LLM-AR-V2-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Marco-LLM-AR-V2-GGUF - AI Model by mradermacher | AlphaNeural AI",
+      "url": "https://alphaneural.io/assets/mradermacher/Marco-LLM-AR-V2-GGUF",
+      "snippet": "Explore Marco-LLM-AR-V2-GGUF, a ai model on AlphaNeural AI. Deploy using Neural Labs compute infrastructure."
+    },
+    {
+      "title": "Marco LLM AR V2 by AIDC-AI — VRAM 15.3GB, 128K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/AIDC-AI%2FMarco-LLM-AR-V2,4YxAm69exPGj7mSXGzOFoD",
+      "snippet": "Marco LLM AR V2 is an open-source 7.6b LLM by AIDC-AI. VRAM 15.3GB, 128K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Marco-LLM-AR-V2 huggingface.co api & AIDC-AI Marco-LLM-AR-V2 github AI ...",
+      "url": "https://www.toolify.ai/ai-model/aidc-ai-marco-llm-ar-v2",
+      "snippet": "Marco-LLM-AR-V2 is an open source model from GitHub that offers a free installation service, and any user can find Marco-LLM-AR-V2 on GitHub to install. At the same time, huggingface.co provides the effect of Marco-LLM-AR-V2 install, users can directly use Marco-LLM-AR-V2 installed effect in huggingface.co for debugging and trial. It also supports api for free installation."
+    }
+  ]
+}

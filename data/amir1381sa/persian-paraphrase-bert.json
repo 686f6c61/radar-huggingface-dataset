@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "amir1381sa/persian-paraphrase-bert",
+  "slug": "amir1381sa-persian-paraphrase-bert",
+  "author": "amir1381sa",
+  "url": "https://huggingface.co/amir1381sa/persian-paraphrase-bert",
+  "created_at": "2026-08-31T16:19:16.000Z",
+  "updated_at": "2026-08-31T19:00:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "Persian",
+    "paraphrase",
+    "paraphrase-identification",
+    "ParsBERT",
+    "NLP",
+    "sequence-classification",
+    "fa",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 162842882,
+  "parameters_human": "162.8M",
+  "storage_bytes": 1954295399,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Persian Paraphraser (Free Online & No Signup)",
+      "url": "https://textgens.com/niche-tools/persian-paraphraser/",
+      "snippet": "Instantly rewrite up to 5,000 Persian words at a time with the #1 free AI-powered Persian paraphrasing tool. With a single click, you can rephrase sentences, paragraphs, or entire articles to improve flow, enhance vocabulary, and avoid plagiarism. Our tool provides powerful and accurate alternatives while preserving your text&#x27;s core meaning, making your Persian writing more dynamic, clear ..."
+    },
+    {
+      "title": "GitHub - hooshvare/parsbert: ParsBERT: Transformer-based Model for ...",
+      "url": "https://github.com/hooshvare/parsbert",
+      "snippet": "ParsBERT outperformed all other language models, including multilingual BERT and other hybrid deep learning models for all tasks, improving the state-of-the-art performance in Persian language modeling."
+    },
+    {
+      "title": "GitHub - hezarai/hezar: The all-in-one AI library for Persian ...",
+      "url": "https://github.com/hezarai/hezar",
+      "snippet": "Hezar (meaning thousand in Persian) is a multipurpose AI library built to make AI easy for the Persian community! Hezar is a library that: brings together all the best works in AI for Persian makes using AI models as easy as a couple of lines of code seamlessly integrates with Hugging Face Hub for all of its models has a highly developer-friendly interface has a task-based model interface ..."
+    },
+    {
+      "title": "ViraIntelligentDataMining/AriaBERT · Hugging Face",
+      "url": "https://huggingface.co/ViraIntelligentDataMining/AriaBERT",
+      "snippet": "AriaBERT: A Pre-trained Persian BERT Model for Natural Language Understanding Introduction AriaBERT represents a breakthrough in natural language processing (NLP) for the Persian language. Developed to address the critical gap in efficient pretrained language models for Persian, AriaBERT is tailored to elevate the standards of Persian language ..."
+    },
+    {
+      "title": "FREE Persian Paraphrasing Tool | FA standard Paraphrasing Tool - Free ...",
+      "url": "https://paraphrasetool.com/langs/paraphrasing-tool-persian",
+      "snippet": "Paraphrasing Tool Persian Version with 12 FREE Modes - Rephrases Sentences, Rewords Paragraphs, Rewr... Our advanced FA paraphrasing tool helps you create unique content effortlessly."
+    }
+  ]
+}

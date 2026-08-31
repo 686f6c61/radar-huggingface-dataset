@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "drowzeys/keys-GLM-5.3-Flash-NVFP4-ablit-l15-43-mtp-l45",
+  "slug": "drowzeys-keys-glm-5-3-flash-nvfp4-ablit-l15-43-mtp-l45",
+  "author": "drowzeys",
+  "url": "https://huggingface.co/drowzeys/keys-GLM-5.3-Flash-NVFP4-ablit-l15-43-mtp-l45",
+  "created_at": "2026-08-27T03:29:17.000Z",
+  "updated_at": "2026-08-31T17:19:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "glm",
+    "glm-5.3",
+    "glm-5.3-flash",
+    "abliterated",
+    "uncensored",
+    "moe",
+    "nvfp4",
+    "compressed-tensors",
+    "vllm",
+    "dgx-spark",
+    "gb10",
+    "anchored-tensors",
+    "multimodal",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:RedHatAI/GLM-5.3-Flash-NVFP4",
+    "base_model:finetune:RedHatAI/GLM-5.3-Flash-NVFP4",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 22,
+  "downloads_30d": 800,
+  "trending_score": 22,
+  "parameters": 169120127838,
+  "parameters_human": "169.12B",
+  "storage_bytes": 392573783572,
+  "storage_human": "392.6 GB",
+  "base_model": "RedHatAI/GLM-5.3-Flash-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "drowzeys/keys-GLM-5.3-Flash-NVFP4-ablit-l15-43-mtp-l45 · Hugging Face",
+      "url": "https://huggingface.co/drowzeys/keys-GLM-5.3-Flash-NVFP4-ablit-l15-43-mtp-l45",
+      "snippet": "Instructions to use drowzeys/keys-GLM-5.3-Flash-NVFP4-ablit-l15-43-mtp-l45 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - drowzeys/keys-vLLm.0.27.1-GLM-5.3-Flash-NVFP4-NVFP4KV-1M ...",
+      "url": "https://github.com/drowzeys/keys-vLLm.0.27.1-GLM-5.3-Flash-NVFP4-NVFP4KV-1M-Context-Abliterated",
+      "snippet": "Serving Z.ai&#x27;s GLM-5.3-Flash (320B / 18B-active, released 2026-08-26) at 1,048,576-token context across two NVIDIA DGX Spark nodes (GB10, sm_121, 2 × 121.7 GiB unified memory) at tensor-parallel 2, using LibertAI&#x27;s NVFP4 quant and an NVFP4 packed MLA KV cache — same-day as the model drop. Retrieval verified by passkey at 33K, 131K, 262K, 524K and 1,043,880 tokens. Credit where it&#x27;s due. The ..."
+    },
+    {
+      "title": "keys-GLM-5.3-Flash-NVFP4-ablit-l15-45-anchorstock - GitHub",
+      "url": "https://github.com/drowzeys/keys-GLM-5.3-Flash-NVFP4-ablit-l15-45-anchorstock",
+      "snippet": "Abliterated LibertAI GLM-5.3-Flash NVFP4 for the Keys 2× DGX Spark vLLM 1M recipe. The published weights are a LibertAI NVFP4 body with Dealign o_proj transplanted on L15-45 (MTP included). Early layers L0-14 stay stock — that sparing is the Keys 0731 safety-anchor lesson."
+    },
+    {
+      "title": "keys-GLM-5.3-Flash-NVFP4-ablit-l15-45-anchorstock - Hugging Face",
+      "url": "https://huggingface.co/drowzeys/keys-GLM-5.3-Flash-NVFP4-ablit-l15-45-anchorstock",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ZCode | Official Harness for GLM-5.3",
+      "url": "https://zcode.z.ai/en",
+      "snippet": "ZCode combines GLM-5.3 and leading AI coding agents with your existing tools, so you can plan, code, review, and deploy without friction."
+    }
+  ]
+}

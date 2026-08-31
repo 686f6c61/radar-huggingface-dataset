@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Pro152/a2c-PandaReachDense-v3",
+  "slug": "pro152-a2c-pandareachdense-v3",
+  "author": "Pro152",
+  "url": "https://huggingface.co/Pro152/a2c-PandaReachDense-v3",
+  "created_at": "2026-08-31T14:11:09.000Z",
+  "updated_at": "2026-08-31T14:17:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 213094,
+  "storage_human": "213094 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adilbai/a2c-PandaReachDense-v3 · Hugging Face",
+      "url": "https://huggingface.co/Adilbai/a2c-PandaReachDense-v3",
+      "snippet": "Model Description This repository contains a trained Advantage Actor-Critic (A2C) reinforcement learning agent designed to solve the PandaReachDense-v3 environment from PyBullet Gym."
+    },
+    {
+      "title": "CrazyAIGC/a2c-PandaReachDense-v3 · Hugging Face",
+      "url": "https://huggingface.co/CrazyAIGC/a2c-PandaReachDense-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - HusseinEid101/a2c-PandaReachDense-v3: This is a trained model ...",
+      "url": "https://github.com/HusseinEid101/a2c-PandaReachDense-v3",
+      "snippet": "A2C Agent playing PandaReachDense-v3 This is a trained model of a A2C agent playing PandaReachDense-v3 using the stable-baselines3 library."
+    },
+    {
+      "title": "A2C-PandaReachDense-v3Xenjin450/PandaReachDense-v3.py at main ... - GitHub",
+      "url": "https://github.com/xenjin450/A2C-PandaReachDense-v3Xenjin450/blob/main/PandaReachDense-v3.py",
+      "snippet": "A2C Actor-Critic Deep Reinforcement Learning(DRL) For PandaReachDense-v3 AI-Agent - xenjin450/A2C-PandaReachDense-v3Xenjin450"
+    },
+    {
+      "title": "Insights DB",
+      "url": "https://insights-db.paloaltonetworks.com/models/crowbarmassage/a2c-PandaReachDense-v3/8c1193627dd5157a7131bbe07ae4b2c99e31a853/overview",
+      "snippet": "Discover potential threats in the crowbarmassage / a2c-PandaReachDense-v3 model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    }
+  ]
+}

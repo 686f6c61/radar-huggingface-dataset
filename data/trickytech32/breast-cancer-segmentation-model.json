@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "TrickyTech32/Breast-Cancer-Segmentation-Model",
+  "slug": "trickytech32-breast-cancer-segmentation-model",
+  "author": "TrickyTech32",
+  "url": "https://huggingface.co/TrickyTech32/Breast-Cancer-Segmentation-Model",
+  "created_at": "2026-08-31T12:00:21.000Z",
+  "updated_at": "2026-08-31T12:03:38.000Z",
+  "license": "artistic-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:artistic-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94553213,
+  "storage_human": "95 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Breast-Cancer-Segmentation - GitHub",
+      "url": "https://github.com/logic-OT/Breast-Cancer-Segmentation",
+      "snippet": "An image segmentation Model that uses the U-Net Architecture to segment tumours from ultrasound images of the breast. - logic-OT/Breast-Cancer-Segmentation"
+    },
+    {
+      "title": "breast-cancer-segmentation · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/breast-cancer-segmentation",
+      "snippet": "Breast cancer histopathology image segmentation using U-Net. This repository implements U-Net for accurate segmentation of cancerous regions. It includes data augmentation, mixed precision training, checkpointing, and evaluation metrics like Dice score to improve model performance."
+    },
+    {
+      "title": "Deep Segmentation Techniques for Breast Cancer Diagnosis",
+      "url": "https://www.mdpi.com/2673-7426/4/2/52",
+      "snippet": "This model&#x27;s ability to perform pixel-perfect segmentation is particularly crucial for the complex visuals associated with breast cancer diagnostics, offering insights far beyond conventional methods."
+    },
+    {
+      "title": "ayoubkirouane/Breast-Cancer_SAM_v1 · Hugging Face",
+      "url": "https://huggingface.co/ayoubkirouane/Breast-Cancer_SAM_v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Breast tumor localization and segmentation using machine learning ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0010482522011519",
+      "snippet": "Peng et al. [155] suggested a hierarchical model that comprises breast segmentation and tumor segmentation stages. In the first stage, a tumor morphology-aware network was utilized to extract contrastive information."
+    }
+  ]
+}

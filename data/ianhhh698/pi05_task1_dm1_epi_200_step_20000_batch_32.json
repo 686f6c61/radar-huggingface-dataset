@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "IanHHH698/pi05_task1_DM1_epi_200_step_20000_batch_32",
+  "slug": "ianhhh698-pi05_task1_dm1_epi_200_step_20000_batch_32",
+  "author": "IanHHH698",
+  "url": "https://huggingface.co/IanHHH698/pi05_task1_DM1_epi_200_step_20000_batch_32",
+  "created_at": "2026-08-31T13:34:14.000Z",
+  "updated_at": "2026-08-31T13:35:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:cbrian/merge_task1_DM_epi_200",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7473108700,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ianzyh/pi05-rma-task1-20k · Hugging Face",
+      "url": "https://huggingface.co/ianzyh/pi05-rma-task1-20k",
+      "snippet": "ianzyh / pi05-rma-task1-20k like 0 Robotics LeRobot Safetensors pi0.5 pi05 robomemarena imitation-learning License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "pi05_task1_UM1_2_epi_200_step_20000_batch_32 - Hugging Face",
+      "url": "https://huggingface.co/IanHHH698/pi05_task1_UM1_2_epi_200_step_20000_batch_32",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

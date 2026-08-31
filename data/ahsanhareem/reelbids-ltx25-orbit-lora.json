@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "AhsanHareem/reelbids-ltx25-orbit-lora",
+  "slug": "ahsanhareem-reelbids-ltx25-orbit-lora",
+  "author": "AhsanHareem",
+  "url": "https://huggingface.co/AhsanHareem/reelbids-ltx25-orbit-lora",
+  "created_at": "2026-08-31T15:08:43.000Z",
+  "updated_at": "2026-08-31T15:10:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ltx-video",
+    "ltx-2.5",
+    "lora",
+    "camera-control",
+    "orbit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 402863184,
+  "storage_human": "403 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AhsanHareem/reelbids-ltx25-camera-lora · Hugging Face",
+      "url": "https://huggingface.co/AhsanHareem/reelbids-ltx25-camera-lora",
+      "snippet": "ReelBids — LTX-2.5 dolly-in camera LoRA A single rank-32 LoRA that drives a dolly-in camera move at seven selectable speeds, for LTX-2.5 22B image-to-video. Speed is chosen by a trigger token in the prompt, so one adapter covers the whole range — unlike the official LTX-2 19b camera LoRAs, which are single-speed and 19b-only."
+    },
+    {
+      "title": "AhsanHareem/reelbids-ltx25-camera-lora at main - Hugging Face",
+      "url": "https://huggingface.co/AhsanHareem/reelbids-ltx25-camera-lora/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new main reelbids-ltx25-camera-lora 201 MB Ctrl+K Ctrl+K 1 contributor History:3 commits AhsanHareem Upload lora_weights_step_01250.safetensors with huggingface_hub 3c02e27 verified6 days ago .gitattributes 1.52 kBinitial commit6 days ago README.md 2.08 kBUpload README.md with ..."
+    },
+    {
+      "title": "reelbids-ltx25-camera-lora by AhsanHareem | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/ahsanhareem-reelbids-ltx25-camera-lora",
+      "snippet": "Explore reelbids-ltx25-camera-lora by AhsanHareem — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    },
+    {
+      "title": "AhsanHareem AI Models | AI Market Cap",
+      "url": "https://aimarketcap.tech/providers/ahsanhareem",
+      "snippet": "Start with the summary cards above if you only want the quick answer. The tables below are for deeper comparison across categories, rankings, and individual models. Active Model Lineup (1) # Model Category Params Capability Downloads Cheapest Verified Est. Value Open — reelbids-ltx25-camera-lora Specialized Unknown — 0 Free Free ---"
+    },
+    {
+      "title": "Top 8 LTX 2.5 LoRA models for Quality Generation",
+      "url": "https://www.stablediffusiontutorials.com/2026/08/ltx-2.5-lora-models.html",
+      "snippet": "The LTX-2.5 ReelBids Dolly-In Camera LoRA V1 adds a smooth dolly-in camera movement to LTX-2.5 image-to-video generation, with seven selectable speed levels. A single adapter covers the entire speed range, unlike the official LTX-2 19B camera LoRAs, which are limited to one speed per adapter and are designed specifically for the 19B model."
+    }
+  ]
+}

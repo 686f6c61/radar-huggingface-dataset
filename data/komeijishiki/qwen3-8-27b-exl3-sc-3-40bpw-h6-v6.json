@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "komeijishiki/Qwen3.8-27B-EXL3-SC-3.40bpw-H6-V6",
+  "slug": "komeijishiki-qwen3-8-27b-exl3-sc-3-40bpw-h6-v6",
+  "author": "komeijishiki",
+  "url": "https://huggingface.co/komeijishiki/Qwen3.8-27B-EXL3-SC-3.40bpw-H6-V6",
+  "created_at": "2026-08-31T03:36:56.000Z",
+  "updated_at": "2026-08-31T13:04:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.8",
+    "exl3",
+    "quantized",
+    "multimodal",
+    "vision",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 7342331264,
+  "parameters_human": "7.34B",
+  "storage_bytes": 14697848372,
+  "storage_human": "14.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-EXL3-SC-3.40bpw-H6-V6 - Hugging Face",
+      "url": "https://huggingface.co/komeijishiki/Qwen3.8-27B-EXL3-SC-3.40bpw-H6-V6",
+      "snippet": "本仓库是 Qwen/Qwen3.8-27B 的 ExLlamaV3（EXL3） 量化版本，采用 turboderp 的 Full SC（标准校准）recipe 流程生成：文本权重 3.40 bpw 、lm_head 6bit、视觉塔（Vision）6bit、MTP（多 token 预测）模块 4bit。在保留 27B 级综合能力的前提下，大幅压缩显存占用，面向消费级显卡的本地部署。英文版见 README_en.md。"
+    },
+    {
+      "title": "komeijishiki/Qwen3.8-27B-EXL3-SC-3.40bpw-H6-V6 at main - Hugging Face",
+      "url": "https://huggingface.co/komeijishiki/Qwen3.8-27B-EXL3-SC-3.40bpw-H6-V6/tree/main",
+      "snippet": "/ Qwen3.8-27B-EXL3-SC-3.40bpw-H6-V6 like 0 Safetensors exllamav3 qwen3_5 qwen3.8 exl3 quantized multimodal vision License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Qwen3.8-27B-EXL3-SC-3.40bpw-H6-V6 14.7 GB Ctrl+K Ctrl+K 1 contributor History:20 commits komeijishiki Update README.md abf05ee verifiedabout ..."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "qwen3.8-27b - Alibaba Cloud Model Studio",
+      "url": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "Qwen 3.8 27B - GroqDocs",
+      "url": "https://console.groq.com/docs/model/qwen/qwen3.8-27b",
+      "snippet": "Qwen 3.8 27B is a 27-billion-parameter multimodal model from Alibaba&#x27;s Qwen series, delivering frontier-level agentic coding, reasoning, and long-horizon task performance that rivals models many times its size. It accepts both image and text inputs for visual understanding tasks such as image analysis, OCR, and visual question answering, and supports seamless switching between thinking mode ..."
+    }
+  ]
+}

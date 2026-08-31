@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "micrictor/LFM2.5-350M-ShellAI-v2-GGUF",
+  "slug": "micrictor-lfm2-5-350m-shellai-v2-gguf",
+  "author": "micrictor",
+  "url": "https://huggingface.co/micrictor/LFM2.5-350M-ShellAI-v2-GGUF",
+  "created_at": "2026-08-31T12:33:23.000Z",
+  "updated_at": "2026-08-31T12:36:01.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lfm2",
+    "distillation",
+    "bash",
+    "shell",
+    "base_model:LiquidAI/LFM2.5-350M",
+    "base_model:quantized:LiquidAI/LFM2.5-350M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 758439808,
+  "storage_human": "758 MB",
+  "base_model": "LiquidAI/LFM2.5-350M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "micrictor/LFM2.5-350M-ShellAI-GGUF · Hugging Face",
+      "url": "https://huggingface.co/micrictor/LFM2.5-350M-ShellAI-GGUF",
+      "snippet": "License This is a modified derivative of Liquid AI&#x27;s LFM2.5 weights and is distributed under the included LFM Open License v1.0. See NOTICE for modification details. Downloads last month - GGUF Model size 0.4B params Architecture lfm2 Chat template Hardware compatibility Log In to add your hardware 8-bit Q8_0379 MB 16-bit BF16711 MB Inference Providers NEW This model isn&#x27;t deployed by any ..."
+    },
+    {
+      "title": "micrictor/LFM2.5-350M-ShellAI-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/micrictor/LFM2.5-350M-ShellAI-GGUF/tree/main",
+      "snippet": "Instructions to use micrictor/LFM2.5-350M-ShellAI-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use micrictor/LFM2.5-350M-ShellAI-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "LFM2.5-350M: No Size Left Behind | Blog | Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind",
+      "snippet": "Today, we&#x27;re releasing LFM2.5-350M, an improved version of our 350M model with additional pre-training (from 10T to 28T tokens) and large-scale reinforcement learning. Built on the LFM2 architecture, it delivers exceptionally fast inference and runs everywhere, from cloud GPUs to cheap CPUs."
+    },
+    {
+      "title": "Introducing LFM2: The Fastest On-Device Foundation Models on the Market ...",
+      "url": "https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models",
+      "snippet": "NOTE: In 2026 we released a new version of our flagship models - LFM2.5 Today, we release LFM2, a new class of Liquid Foundation Models (LFMs) that sets a new standard in quality, speed, and memory efficiency deployment. LFM2 is specifically designed to provide the fastest on-device gen-AI experience across the industry, thus unlocking a massive number of devices for generative AI workloads ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

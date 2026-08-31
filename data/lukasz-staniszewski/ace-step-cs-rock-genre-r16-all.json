@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lukasz-staniszewski/ace-step-cs-rock-genre-r16-all",
+  "slug": "lukasz-staniszewski-ace-step-cs-rock-genre-r16-all",
+  "author": "lukasz-staniszewski",
+  "url": "https://huggingface.co/lukasz-staniszewski/ace-step-cs-rock-genre-r16-all",
+  "created_at": "2026-08-31T11:43:16.000Z",
+  "updated_at": "2026-08-31T11:43:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "music-generation",
+    "steering",
+    "lora",
+    "ace-step",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47257256,
+  "storage_human": "47 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ace-step-cs-rock-genre-r8-tf6tf7 - Hugging Face",
+      "url": "https://huggingface.co/lukasz-staniszewski/ace-step-cs-rock-genre-r8-tf6tf7",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lukasz-staniszewski/ace-step-cs-rock-genre-r8-all at main",
+      "url": "https://huggingface.co/lukasz-staniszewski/ace-step-cs-rock-genre-r8-all/tree/main",
+      "snippet": "Notebooks main ace-step-cs-rock-genre-r8-all 23.7 MB Ctrl+K Ctrl+K 1 contributor History:2 commits lukasz-staniszewski Upload Concept Slider LoRA (rock_genre, r8, all) 5a66ebd verifiedabout 8 hours ago .gitattributes Safe 1.52 kBinitial commitabout 8 hours ago README.md 2.36 kBUpload Concept Slider LoRA (rock_genre, r8, all)about 8 hours ago pytorch_lora_weights.safetensors 23.7 MB xet Upload ..."
+    },
+    {
+      "title": "ACE-Step/README.md at main · ace-step/ACE-Step · GitHub",
+      "url": "https://github.com/ace-step/ACE-Step/blob/main/README.md",
+      "snippet": "We introduce ACE-Step, a novel open-source foundation model for music generation that overcomes key limitations of existing approaches and achieves state-of-the-art performance through a holistic architectural design. Current methods face inherent trade-offs between generation speed, musical coherence, and controllability. For instance, LLM-based models (e.g., Yue, SongGen) excel at lyric ..."
+    },
+    {
+      "title": "A Step Towards Music Generation Foundation Model - GitHub",
+      "url": "https://github.com/ace-step/ACE-Step",
+      "snippet": "📝 Abstract We introduce ACE-Step, a novel open-source foundation model for music generation that overcomes key limitations of existing approaches and achieves state-of-the-art performance through a holistic architectural design. Current methods face inherent trade-offs between generation speed, musical coherence, and controllability."
+    },
+    {
+      "title": "Artists Built A Site To Escape AI. Scrapers Are Coming For It Anyway",
+      "url": "https://www.forbes.com/sites/robsalkowitz/2026/08/23/artists-built-a-site-to-escape-ai-scrapers-are-coming-for-it-anyway/",
+      "snippet": "Cara was set up specifically for artists who do not consent to having their work used to train AI models. Those principles seem to have made it a target for attacks."
+    }
+  ]
+}

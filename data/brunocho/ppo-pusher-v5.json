@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Brunocho/ppo-Pusher-v5",
+  "slug": "brunocho-ppo-pusher-v5",
+  "author": "Brunocho",
+  "url": "https://huggingface.co/Brunocho/ppo-Pusher-v5",
+  "created_at": "2026-08-31T15:08:26.000Z",
+  "updated_at": "2026-08-31T15:12:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "Pusher-v5",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 675126,
+  "storage_human": "675126 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lookarooka/pusher-v5-ppo · Hugging Face",
+      "url": "https://huggingface.co/lookarooka/pusher-v5-ppo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Hwihwa-Lab/pusher-v5-ppo",
+      "url": "https://github.com/Hwihwa-Lab/pusher-v5-ppo/tree/main/",
+      "snippet": "This repository contains an advanced continuous deep reinforcement learning system (PPO) and a real-time engineering telemetry cockpit for 7-DOF robotic arm manipulation in Gymnasium MuJoCo Pusher-v5."
+    },
+    {
+      "title": "pusher-v5-ppo/README.md at main · Hwihwa-Lab/pusher-v5-ppo · GitHub",
+      "url": "https://github.com/Hwihwa-Lab/pusher-v5-ppo/blob/main/README.md",
+      "snippet": "This repository contains an advanced continuous deep reinforcement learning system (PPO) and a real-time engineering telemetry cockpit for 7-DOF robotic arm manipulation in Gymnasium MuJoCo Pusher-v5."
+    },
+    {
+      "title": "Luna002-Luna75/ppo-pusher-v5 · Hugging Face",
+      "url": "https://huggingface.co/Luna002-Luna75/ppo-pusher-v5",
+      "snippet": "🤖 Physical AI: Pusher-v5 PPO Model This repository contains a trained Proximal Policy Optimization (PPO) agent for the Gymnasium MuJoCo Pusher-v5 environment using Stable-Baselines3."
+    },
+    {
+      "title": "militzer.berkeley.edu",
+      "url": "https://militzer.berkeley.edu/EPS109/final_projects_2025/024/final_project_demo.ipynb",
+      "snippet": "{ \"cells\": [ { \"cell_type\": \"markdown\", \"metadata\": {}, \"source\": [ \"# Training a Robot Arm with Deep Reinforcement Learning&#92;n\", \"## PPO for MuJoCo Pusher-v5 Environment&#92;n\", \"&#92;n\", \"This notebook demonstrates a trained Proximal Policy Optimization (PPO) agent that learned to push objects to target locations in the MuJoCo Pusher environment.&#92;n ..."
+    }
+  ]
+}

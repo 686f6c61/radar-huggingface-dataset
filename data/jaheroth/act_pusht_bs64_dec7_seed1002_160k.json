@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jaheroth/act_pusht_bs64_dec7_seed1002_160k",
+  "slug": "jaheroth-act_pusht_bs64_dec7_seed1002_160k",
+  "author": "jaheroth",
+  "url": "https://huggingface.co/jaheroth/act_pusht_bs64_dec7_seed1002_160k",
+  "created_at": "2026-08-31T16:24:05.000Z",
+  "updated_at": "2026-08-31T16:24:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "pusht",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 83969428,
+  "parameters_human": "84.0M",
+  "storage_bytes": 335916048,
+  "storage_human": "336 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jaheroth/act_pusht_bs64_dec7_seed1002 · Hugging Face",
+      "url": "https://huggingface.co/jaheroth/act_pusht_bs64_dec7_seed1002",
+      "snippet": "Instructions to use jaheroth/act_pusht_bs64_dec7_seed1002 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use jaheroth/act_pusht_bs64_dec7_seed1002 with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch"
+    },
+    {
+      "title": "jaheroth/act_pusht_bs64_dec7 · Hugging Face",
+      "url": "https://huggingface.co/jaheroth/act_pusht_bs64_dec7",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - santhanuss/lerobot-pusht: LeRobot PushT - ACT Policy ...",
+      "url": "https://github.com/santhanuss/lerobot-pusht",
+      "snippet": "LeRobot PushT - ACT Policy Evaluation. Contribute to santhanuss/lerobot-pusht development by creating an account on GitHub."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Home · modelindex.dev",
+      "url": "https://modelindex.dev/",
+      "snippet": "Provenance and cryptographic hashes for public AI models across HuggingFace, ModelScope, CivitAI, and Ollama. Look up any file by hash, browse by org, and verify your downloads on modelindex.dev."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Icey444/ttground-r1-ckpts",
+  "slug": "icey444-ttground-r1-ckpts",
+  "author": "Icey444",
+  "url": "https://huggingface.co/Icey444/ttground-r1-ckpts",
+  "created_at": "2026-08-17T08:55:04.000Z",
+  "updated_at": "2026-08-31T18:11:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 739894593311,
+  "storage_human": "739.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Icey444/ttground-r1-ckpts · Hugging Face",
+      "url": "https://huggingface.co/Icey444/ttground-r1-ckpts",
+      "snippet": "Icey444 / ttground-r1-ckpts like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models | InvokeAI Documentation",
+      "url": "https://invoke.ai/concepts/models/",
+      "snippet": "The model checkpoint files (*.ckpt) are the Stable Diffusion \"secret sauce\". They are the product of training the AI on millions of captioned images gathered from multiple sources. Originally there was only a single Stable Diffusion weights file, which many people named model.ckpt. Today, there are thousands of models, fine tuned to excel at specific styles, genres, or themes. Model Formats"
+    },
+    {
+      "title": "ckpt (ckpt) - Hugging Face",
+      "url": "https://huggingface.co/ckpt",
+      "snippet": "ckpt AI & ML interests ckpt Team members 3 models 271"
+    },
+    {
+      "title": "Icey444/ttthyme-ckpts · Hugging Face",
+      "url": "https://huggingface.co/Icey444/ttthyme-ckpts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

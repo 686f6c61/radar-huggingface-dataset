@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Dido599999/TripoSR",
+  "slug": "dido599999-triposr",
+  "author": "Dido599999",
+  "url": "https://huggingface.co/Dido599999/TripoSR",
+  "created_at": "2026-08-31T16:21:52.000Z",
+  "updated_at": "2026-08-31T16:21:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "3d",
+    "image-to-3d",
+    "dataset:allenai/objaverse",
+    "arxiv:2311.04400",
+    "arxiv:2403.02151",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1679820469,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TripoSR AI - Open-Source 3D Reconstruction from Single Images",
+      "url": "https://www.triposrai.com/",
+      "snippet": "Frequently Asked Questions What is TripoSR? TripoSR is a state-of-the-art, open-source model for fast 3D reconstruction from a single image, collaboratively developed by Tripo AI and Stability AI."
+    },
+    {
+      "title": "Introducing TripoSR: High-Quality 3D Models in Under a Second",
+      "url": "https://www.tripo3d.ai/research/triposr",
+      "snippet": "TripoSR, developed by Tripo and Stability AI, is a cutting-edge open-source model designed for fast 3D reconstruction from a single image. It generates high-quality 3D models in under a second, making it suitable for various applications in entertainment, gaming, industrial design, and architecture."
+    },
+    {
+      "title": "GitHub - VAST-AI-Research/TripoSR: TripoSR: Fast 3D Object ...",
+      "url": "https://github.com/VAST-AI-Research/TripoSR",
+      "snippet": "TripoSR This is the official codebase for TripoSR, a state-of-the-art open-source model for fast feedforward 3D reconstruction from a single image, collaboratively developed by Tripo AI and Stability AI."
+    },
+    {
+      "title": "GitHub - CoderRamy/triposr: TripoSR: Fast 3D Object Reconstruction from ...",
+      "url": "https://github.com/CoderRamy/triposr",
+      "snippet": "TripoSR This is the official codebase for TripoSR, a state-of-the-art open-source model for fast feedforward 3D reconstruction from a single image, collaboratively developed by Tripo AI and Stability AI."
+    },
+    {
+      "title": "stabilityai/TripoSR · Hugging Face",
+      "url": "https://huggingface.co/stabilityai/TripoSR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

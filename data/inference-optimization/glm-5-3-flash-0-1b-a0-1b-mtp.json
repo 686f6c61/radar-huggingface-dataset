@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP",
+  "slug": "inference-optimization-glm-5-3-flash-0-1b-a0-1b-mtp",
+  "author": "inference-optimization",
+  "url": "https://huggingface.co/inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP",
+  "created_at": "2026-08-31T17:28:37.000Z",
+  "updated_at": "2026-08-31T17:33:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm5_next",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 84361966,
+  "parameters_human": "84.4M",
+  "storage_bytes": 194272531,
+  "storage_human": "194 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inference-optimization/GLM-5.3-Flash-0.1B-A0.1B · Hugging Face",
+      "url": "https://huggingface.co/inference-optimization/GLM-5.3-Flash-0.1B-A0.1B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "inference-optimization/GLM-5.3-Flash-MEP50 · Hugging Face",
+      "url": "https://huggingface.co/inference-optimization/GLM-5.3-Flash-MEP50",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM 5.3 Flash 0.1B A0.1B by inference-optimization",
+      "url": "https://llm-explorer.com/model/inference-optimization%2FGLM-5.3-Flash-0.1B-A0.1B,6CbSxje3iirXbPc5zrKMEy",
+      "snippet": "GLM 5.3 Flash 0.1B A0.1B is an open-source 0.1b LLM by inference-optimization. VRAM 0.2GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "GLM-5.3 | OpenLM.ai",
+      "url": "https://openlm.ai/glm-5.5/",
+      "snippet": "GLM-5.3 is our latest flagship model for coding and long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and delivers that capability on a solid 1M-token context. It is pure open with an MIT open-source license — no regional limits, technical access without borders."
+    },
+    {
+      "title": "GLM-5.3-Flash: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash, also known as ox-alpha, is Z.ai&#x27;s new 320B parameter (18B active) multimodal open model which outperforms GLM-5.2 across benchmarks and real-world tasks at one-tenth the price. GLM-5.3-Flash is the smaller version of GLM-5.3 and rivals Claude Opus 4.8 on coding and agentic benchmarks."
+    }
+  ]
+}

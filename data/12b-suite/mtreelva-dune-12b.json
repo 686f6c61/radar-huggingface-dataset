@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "12B-Suite/Mtreelva-Dune-12B",
+  "slug": "12b-suite-mtreelva-dune-12b",
+  "author": "12B-Suite",
+  "url": "https://huggingface.co/12B-Suite/Mtreelva-Dune-12B",
+  "created_at": "2026-08-31T13:04:47.000Z",
+  "updated_at": "2026-08-31T15:06:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "id",
+    "ar",
+    "fr",
+    "ary"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "mergekit",
+    "merge",
+    "flux",
+    "reelva",
+    "conversational",
+    "companion-ai",
+    "roleplay",
+    "coding",
+    "agentic",
+    "reasoning",
+    "text-generation",
+    "gemma",
+    "12B",
+    "peft",
+    "indonesian",
+    "moroccan-darija",
+    "darija",
+    "en",
+    "id",
+    "ar",
+    "fr",
+    "ary",
+    "base_model:CompiwerAI/Mtrini-Tellus-12B-Sahara-2",
+    "base_model:merge:CompiwerAI/Mtrini-Tellus-12B-Sahara-2",
+    "base_model:MuXodious/gemma-4-12B-it-QAT-SOMPOA-heresy",
+    "base_model:merge:MuXodious/gemma-4-12B-it-QAT-SOMPOA-heresy",
+    "base_model:reelva/Reelva-12B",
+    "base_model:merge:reelva/Reelva-12B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12928728880,
+  "parameters_human": "12.93B",
+  "storage_bytes": 25889714290,
+  "storage_human": "25.9 GB",
+  "base_model": "CompiwerAI/Mtrini-Tellus-12B-Sahara-2, MuXodious/gemma-4-12B-it-QAT-SOMPOA-heresy, reelva/Reelva-12B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EleutherAI/pythia-12b · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/pythia-12b",
+      "snippet": "The Pythia Scaling Suite is a collection of models developed to facilitate interpretability research (see paper). It contains two sets of eight models of sizes 70M, 160M, 410M, 1B, 1.4B, 2.8B, 6.9B, and 12B. For each size, there are two models: one trained on the Pile, and one trained on the Pile after the dataset has been globally deduplicated."
+    },
+    {
+      "title": "GitHub - EleutherAI/pythia: The hub for EleutherAI&#x27;s work on ...",
+      "url": "https://github.com/EleutherAI/pythia",
+      "snippet": "At time of release, Pythia was the only model suite in the world to meet these desiderata. In fact, the 154 checkpoints we released for our 12B parameter models represented more partially trained checkpoints for each model than the rest of the world had ever released for all 12B+ models combined."
+    },
+    {
+      "title": "mistralai/Pixtral-12B-2409 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Pixtral-12B-2409",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "World of AI Bench | AI Coding Benchmark and Model Rankings",
+      "url": "https://www.woaibench.ai/",
+      "snippet": "Compare AI models on real coding tasks with private benchmarks, live HTML previews, cost tracking, ELO battles, and public model rankings."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

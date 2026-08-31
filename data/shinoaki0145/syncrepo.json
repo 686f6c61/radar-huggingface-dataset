@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Shinoaki0145/SyncRepo",
+  "slug": "shinoaki0145-syncrepo",
+  "author": "Shinoaki0145",
+  "url": "https://huggingface.co/Shinoaki0145/SyncRepo",
+  "created_at": "2026-08-31T15:33:51.000Z",
+  "updated_at": "2026-08-31T16:30:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6969194308,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shinoaki0145 (Thien Nhan) - Hugging Face",
+      "url": "https://huggingface.co/Shinoaki0145",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space 19 days ago ... published a Space about 1 month ago"
+    },
+    {
+      "title": "GitHub - Shinoaki0145/Multi-agents-Diabetes",
+      "url": "https://github.com/Shinoaki0145/Multi-agents-Diabetes",
+      "snippet": "Multi-agent AI system for diabetes medical Q&A, built on LangGraph. Users ask diabetes-related questions in Vietnamese. The system triages for safety, routes to specialized agents, retrieves evidence from a local vector DB and the live web, then synthesizes a cited, markdown-formatted answer."
+    },
+    {
+      "title": "CO2 Emissions Predictor - a Hugging Face Space by Shinoaki0145",
+      "url": "https://huggingface.co/spaces/Shinoaki0145/ML_Lab2",
+      "snippet": "Enter a vehicle&#x27;s engine size, number of cylinders, fuel consumption, class and fuel type to receive an estimated CO2 emission value (g/km). The app also shows easy‑to‑read charts that illustrate h..."
+    },
+    {
+      "title": "Shinoaki0145 (Thien Nhan) · GitHub",
+      "url": "https://github.com/Shinoaki0145",
+      "snippet": "Shinoaki0145 has 31 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

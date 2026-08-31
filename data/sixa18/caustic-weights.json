@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SiXa18/caustic-weights",
+  "slug": "sixa18-caustic-weights",
+  "author": "SiXa18",
+  "url": "https://huggingface.co/SiXa18/caustic-weights",
+  "created_at": "2026-08-31T17:51:27.000Z",
+  "updated_at": "2026-08-31T17:51:35.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "protein-nmr",
+    "chemical-shifts",
+    "graph-neural-network",
+    "painn",
+    "other",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3045952,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Caustic - a Hugging Face Space by SiXa18",
+      "url": "https://huggingface.co/spaces/SiXa18/caustic",
+      "snippet": "Caustic Predict backbone NMR chemical shifts from protein structure. Accepts PDB, mmCIF, and AlphaFold models. AlphaFold inputs are auto-detected with pLDDT-calibrated uncertainties."
+    },
+    {
+      "title": "SiXa18 (Maximilian Zinke) - Hugging Face",
+      "url": "https://huggingface.co/SiXa18",
+      "snippet": "User profile of Maximilian Zinke on Hugging Face"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 662+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters. Browse models by game, compare download counts and ratings, then download free PyTorch or ONNX weights. How the ..."
+    },
+    {
+      "title": "Open-weight AI models: the complete database — BasedAI",
+      "url": "https://basedai.co/models",
+      "snippet": "Open-weight AI models: the complete database Open-weight models — from DeepSeek, Moonshot, Zhipu, Alibaba, Meta, Mistral, MiniMax, and OpenAI — now compete directly with proprietary flagships. This database tracks every major open source model: parameters, context windows, licenses, API pricing, benchmarks, and what it takes to run each one yourself."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    }
+  ]
+}

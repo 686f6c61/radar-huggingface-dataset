@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MichaelJacksonFan1999/MorganWallenDangerous",
+  "slug": "michaeljacksonfan1999-morganwallendangerous",
+  "author": "MichaelJacksonFan1999",
+  "url": "https://huggingface.co/MichaelJacksonFan1999/MorganWallenDangerous",
+  "created_at": "2026-08-31T18:33:44.000Z",
+  "updated_at": "2026-08-31T18:40:02.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 216243200,
+  "storage_human": "216 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MichaelJacksonFan1999/MorganWallen2025 at ... - Hugging Face",
+      "url": "https://huggingface.co/MichaelJacksonFan1999/MorganWallen2025/tree/ee0c81ad595d9ce7c42e4ac96be0e666dc8bdc63",
+      "snippet": "MichaelJacksonFan1999 / MorganWallen2025 like 0 License:unknown Model card FilesFiles and versions xet Community Copy to bucket new ee0c81a MorganWallen2025 322 MB Ctrl+K Ctrl+K 1 contributor History:2 commits MichaelJacksonFan1999 Upload Morgan Wallen (2025) - Weights Model.zip ee0c81a verifiedabout 2 months ago .gitattributes Safe 1.52 kBinitial commitabout 2 months ago Morgan Wallen (2025 ..."
+    },
+    {
+      "title": "MichaelJacksonFan1999/MorganWallen2025 at main - Hugging Face",
+      "url": "https://huggingface.co/MichaelJacksonFan1999/MorganWallen2025/tree/main",
+      "snippet": "MichaelJacksonFan1999 / MorganWallen2025 like 0 License:unknown Model card FilesFiles and versions xet Community main MorganWallen2025 322 MB Ctrl+K Ctrl+K 1 contributor History:2 commits MichaelJacksonFan1999 Upload Morgan Wallen (2025) - Weights Model.zip ee0c81a verifiedabout 9 hours ago .gitattributes Safe 1.52 kBinitial commitabout 9 hours ago Morgan Wallen (2025) - Weights Model.zip pickle"
+    },
+    {
+      "title": "Morgan Wallen (One Thing At A Time Era) (300 Epochs) (RVC v2) (RMVPE)",
+      "url": "https://voice-models.com/model/1vgH1Iilta1",
+      "snippet": "Morgan Wallen (One Thing At A Time Era) (300 Epochs) (RVC v2) (RMVPE) AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Morgan Wallen (Dangerous Era) (RVC v2) (300 Epochs) (RMVPE) AI Voice Model",
+      "url": "https://voice-models.com/model/1uf4OHv6IvI",
+      "snippet": "Morgan Wallen (Dangerous Era) (RVC v2) (300 Epochs) (RMVPE) AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "MichaelJacksonFan1999 - YouTube",
+      "url": "https://www.youtube.com/channel/UCA2tbouLw0d2AF8MMtaDWfw",
+      "snippet": "Michael Jackson (A.I.) - Part of The List (Ne-Yo Cover) (A.I. Model #2) 34 views4 days ago 4:09"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Pro152/ppo-Pyramid",
+  "slug": "pro152-ppo-pyramid",
+  "author": "Pro152",
+  "url": "https://huggingface.co/Pro152/ppo-Pyramid",
+  "created_at": "2026-08-31T13:22:33.000Z",
+  "updated_at": "2026-08-31T13:44:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18824950,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kathapult/ppo-Pyramid · Hugging Face",
+      "url": "https://huggingface.co/Kathapult/ppo-Pyramid",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "zayddawood/ppo-Pyramid · Hugging Face",
+      "url": "https://huggingface.co/zayddawood/ppo-Pyramid",
+      "snippet": "zayddawood / ppo-Pyramid like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Proximal Policy Optimization — Spinning Up documentation",
+      "url": "https://spinningup.openai.com/en/latest/algorithms/ppo.html",
+      "snippet": "Pseudocode ¶ Documentation ¶ You Should Know In what follows, we give documentation for the PyTorch and Tensorflow implementations of PPO in Spinning Up. They have nearly identical function calls and docstrings, except for details relating to model construction. However, we include both full docstrings for completeness."
+    },
+    {
+      "title": "Proximal Policy Optimization (PPO) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/a-brief-introduction-to-proximal-policy-optimization/",
+      "snippet": "Proximal Policy Optimization (PPO) is a policy gradient reinforcement learning algorithm that learns an optimal policy by directly updating the agent&#x27;s action-selection strategy while maintaining stable learning. Unlike traditional policy gradient methods that can make overly large policy updates, PPO introduces a clipping mechanism that limits how much the policy can change during each update ..."
+    },
+    {
+      "title": "Proximal policy optimization - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Proximal_Policy_Optimization",
+      "snippet": "PPO approximates what TRPO does, with considerably less computation. It uses first-order optimization (the clip function) to constrain the policy update, while TRPO uses KL divergence constraints (second-order optimization)."
+    }
+  ]
+}

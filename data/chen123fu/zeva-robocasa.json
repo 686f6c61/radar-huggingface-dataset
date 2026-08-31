@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "chen123fu/zeva-robocasa",
+  "slug": "chen123fu-zeva-robocasa",
+  "author": "chen123fu",
+  "url": "https://huggingface.co/chen123fu/zeva-robocasa",
+  "created_at": "2026-08-31T16:39:46.000Z",
+  "updated_at": "2026-08-31T16:39:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91286661844,
+  "storage_human": "91.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · chen123fu/zeva at main",
+      "url": "https://d6108366.hf-mirror.com/chen123fu/zeva/blob/main/README.md?code=true",
+      "snippet": "chen123fu / zeva like 0 Model card FilesFiles and versions xet Community Copy to bucket new main zeva /README.md chen123fu Add files using upload-large-folder tool 1e164b8 verified2 days ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete 5.23 kB"
+    },
+    {
+      "title": "GitHub - robocasa/robocasa: RoboCasa: Large-Scale Simulation of ...",
+      "url": "https://github.com/robocasa/robocasa",
+      "snippet": "RoboCasa RoboCasa is a large-scale simulation framework for training generally capable robots to perform everyday tasks. It was originally released in 2024 by UT Austin researchers. The latest iteration, RoboCasa365, builds upon the original release with significant new functionalities to support large-scale training and benchmarking in sim."
+    },
+    {
+      "title": "RoboCasa",
+      "url": "https://robocasa.ai/",
+      "snippet": "RoboCasa is a large-scale simulation framework for training generally capable robots to perform everyday tasks. It features realistic and diverse human-centered environments with a focus on kitchen scenes. We create these environments with the aid of generative AI tools, such as large language models (LLMs) and text-to-image/3D generative models."
+    },
+    {
+      "title": "robocasa (RoboCasa) - Hugging Face",
+      "url": "https://huggingface.co/robocasa",
+      "snippet": "Org profile for RoboCasa on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "robocasa/robocasa/models at main · robocasa/robocasa · GitHub",
+      "url": "https://github.com/robocasa/robocasa/tree/main/robocasa/models",
+      "snippet": "RoboCasa: Large-Scale Simulation of Everyday Tasks for Generalist Robots - robocasa/robocasa/models at main · robocasa/robocasa"
+    }
+  ]
+}

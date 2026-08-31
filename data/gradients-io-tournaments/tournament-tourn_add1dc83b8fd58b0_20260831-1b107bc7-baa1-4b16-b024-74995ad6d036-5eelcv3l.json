@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-1b107bc7-baa1-4b16-b024-74995ad6d036-5EeLcV3L",
+  "slug": "gradients-io-tournaments-tournament-tourn_add1dc83b8fd58b0_20260831-1b107bc7-baa1-4b16-b024-74995ad6d036-5eelcv3l",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-1b107bc7-baa1-4b16-b024-74995ad6d036-5EeLcV3L",
+  "created_at": "2026-08-31T12:32:39.000Z",
+  "updated_at": "2026-08-31T12:32:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "falcon",
+    "custom_code",
+    "en",
+    "dataset:tiiuae/falcon-refinedweb",
+    "arxiv:2306.01116",
+    "arxiv:2005.14165",
+    "arxiv:2108.12409",
+    "arxiv:2205.14135",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5246633705,
+  "storage_human": "5.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-b9c804c3-a02e-4182-a82b-ad80b99163b1-5FW2Eaae",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_1e08b0b313ccc59f_20260817 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_1e08b0b313ccc59f_20260817-d53997be-ba53-4161-9580-4bceeb66ed31-5FjDsFGA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gradients | Decentralised AI Training & Research",
+      "url": "https://www.gradients.io/app/research/tournament",
+      "snippet": "Decentralised AI Training & Research. > TOURNAMENTS View live, recent, and historical tournaments from Subnet 56"
+    },
+    {
+      "title": "Tournament Tourn 590e311a35f6a234 20260803 3a8e094c C66c 47dd Adf1 ...",
+      "url": "https://llm-explorer.com/model/gradients-io-tournaments%2Ftournament-tourn_590e311a35f6a234_20260803-3a8e094c-c66c-47dd-adf1-d9b2d21e6c58-5GU4Xkd3,3i3XWJCnZAZLqhQqpBaqSA",
+      "snippet": "Tournament Tourn 590e311a35f6a234 20260803 3a8e094c C66c 47dd Adf1 D9b2d21e6c58 5GU4Xkd3 is an open-source 7.6b LLM by gradients-io-tournaments. VRAM 15.2GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "tournament-tourn_db768b30efd93b8b_20260824-1f85c521-3e9f-43cc-9939 ...",
+      "url": "https://friendli.ai/models/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-1f85c521-3e9f-43cc-9939-8a5a3d25fa64-5FpdSckw",
+      "snippet": "Deploy tournament-tourn_db768b30efd93b8b_20260824-1f85c521-3e9f-43cc-9939-8a5a3d25fa64-5FpdSckw with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

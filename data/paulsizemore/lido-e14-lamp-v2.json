@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "paulsizemore/lido-e14-lamp-v2",
+  "slug": "paulsizemore-lido-e14-lamp-v2",
+  "author": "paulsizemore",
+  "url": "https://huggingface.co/paulsizemore/lido-e14-lamp-v2",
+  "created_at": "2026-08-31T16:05:51.000Z",
+  "updated_at": "2026-08-31T16:57:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3084371003,
+  "storage_human": "3.1 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "STL file E14 Lamp Holder for Ender 3 v2 ・3D print ... - Cults 3D",
+      "url": "https://cults3d.com/en/3d-model/tool/e14-lamp-holder-for-ender-3-v2",
+      "snippet": "3D printer file info 3D model description English : This is a lamp holder arm designed to fit in the spool holder of the Ender 3 v2 (I assume it should work with previous version). The lamp holder can fit an E14 socket (I use a spare Ikea lamp)."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "E14 Curve Modern Desk Lamp - Free 3D Print Model - MakerWorld",
+      "url": "https://makerworld.com/en/models/2175497-e14-curve-modern-desk-lamp",
+      "snippet": "Download this free 3D print file designed by Cipriani 3Design Studio. Bring a touch of modern, minimalist elegance to your workspace or bedside table with this unique 3D printed lamp. Its fluid, organic shape makes it a beautiful decor piece, whether switched on or off. 🛋️ Key Features:🧩 2-Part Design: Features a sculptural base and a conical shade that integrate perfectly together ..."
+    },
+    {
+      "title": "E14 best 3D printer models・2.5k free models to download・Cults",
+      "url": "https://cults3d.com/en/tags/e14",
+      "snippet": "Download E14 STL files for 3D printers 2.5k model ideas to download with the keyword E14 to create cool and useful objects with 3D printing Safe No AI Best"
+    },
+    {
+      "title": "E14 Base for Lamp 2.0 By Foxwood - Free 3D Print Model - MakerWorld",
+      "url": "https://makerworld.com/en/models/1378443-e14-base-for-lamp-2-0-by-foxwood",
+      "snippet": "Download this free 3D print file designed by Foxwood. This sleek and sturdy lamp base is designed to fit E14 bayonet kits and is fully compatible with all my Lamp 2.0 designs. Whether you're upgrading your current setup or creating a new custom lamp, this base ensures a perfect fit and reliable functionality.&nbsp;The opening diameter for the E14 kit is 28mm, and this base is also ..."
+    }
+  ]
+}

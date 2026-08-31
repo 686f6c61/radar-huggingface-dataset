@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "vietnamese-acsa/bamibert-phone-acsa-multilabel-preprocessor",
+  "slug": "vietnamese-acsa-bamibert-phone-acsa-multilabel-preprocessor",
+  "author": "vietnamese-acsa",
+  "url": "https://huggingface.co/vietnamese-acsa/bamibert-phone-acsa-multilabel-preprocessor",
+  "created_at": "2026-08-31T15:48:18.000Z",
+  "updated_at": "2026-08-31T15:48:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 102981928,
+  "parameters_human": "103.0M",
+  "storage_bytes": 411957065,
+  "storage_human": "412 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vietnamese-acsa/bamibert-phone-acsa-multilabel · Hugging Face",
+      "url": "https://huggingface.co/vietnamese-acsa/bamibert-phone-acsa-multilabel",
+      "snippet": "Instructions to use vietnamese-acsa/bamibert-phone-acsa-multilabel with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "vietnamese-acsa (Vietnamese ACSA) - Hugging Face",
+      "url": "https://huggingface.co/vietnamese-acsa/models",
+      "snippet": "Org profile for Vietnamese ACSA on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "BamiBERT: A New BERT-based Language Model for Vietnamese",
+      "url": "https://arxiv.org/abs/2607.02259",
+      "snippet": "In this paper, we introduce BamiBERT, a new BERT-based pre-trained language model for Vietnamese that addresses key limitations of PhoBERT -- the current de facto Vietnamese text encoder. Trained from scratch on a 129GB corpus of general-domain Vietnamese text for 20 epochs, BamiBERT supports an extended context length of up to 2048 tokens and operates directly on raw input, eliminating the ..."
+    },
+    {
+      "title": "BamiBERT · Model · Inferix",
+      "url": "https://inferix.co/models/Qualcomm-AI-Research/BamiBERT",
+      "snippet": "We introduce BamiBERT, a new BERT-based pre-trained language model for Vietnamese that addresses key limitations of PhoBERT -- the current de facto Vietnamese text encoder. Trained from scratch on a 129GB corpus of general-domain Vietnamese text for 20 epochs, BamiBERT supports an extended context length of up to 2048 tokens and operates directly on raw input, eliminating the need for external ..."
+    },
+    {
+      "title": "BamiBERT: A New BERT-based Language Model for Vietnamese",
+      "url": "https://arxiv.org/html/2607.02259v1",
+      "snippet": "In this paper, we introduce BamiBERT, a new BERT-based pre-trained language model for Vietnamese that addresses key limitations of PhoBERT—the current de facto Vietnamese text encoder."
+    }
+  ]
+}

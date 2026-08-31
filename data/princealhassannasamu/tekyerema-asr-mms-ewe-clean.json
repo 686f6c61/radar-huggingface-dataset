@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "PrinceAlhassanNasamu/tekyerema-asr-mms-ewe-clean",
+  "slug": "princealhassannasamu-tekyerema-asr-mms-ewe-clean",
+  "author": "PrinceAlhassanNasamu",
+  "url": "https://huggingface.co/PrinceAlhassanNasamu/tekyerema-asr-mms-ewe-clean",
+  "created_at": "2026-08-31T11:20:17.000Z",
+  "updated_at": "2026-08-31T16:43:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8947112,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PrinceAlhassanNasamu/tekyerema-asr-mms-hau at main",
+      "url": "https://huggingface.co/PrinceAlhassanNasamu/tekyerema-asr-mms-hau/tree/main",
+      "snippet": "main tekyerema-asr-mms-hau 8.97 MB Ctrl+K Ctrl+K 1 contributor History:10 commits PrinceAlhassanNasamu model card: licence, attribution, measured numbers, limitations d8d1f5f verifiedabout 1 hour ago .gitattributes Safe 1.52 kBinitial commitabout 19 hours ago README.md 6.56 kBmodel card: licence, attribution, measured numbers, limitationsabout ..."
+    },
+    {
+      "title": "PrinceAlhassanNasamu/tekyerema-asr-mms-dag · Hugging Face",
+      "url": "https://huggingface.co/PrinceAlhassanNasamu/tekyerema-asr-mms-dag",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Prince Nasamu Alhassan — AI Researcher · Low-Resource NLP",
+      "url": "https://prince-alhassan.vercel.app/",
+      "snippet": "Portfolio of Prince Nasamu Alhassan — AI researcher at the University of Ghana, building language technology for Africa&#x27;s most ignored languages."
+    },
+    {
+      "title": "Prince Nasamu Alhassan - EGA Mentorship",
+      "url": "https://www.egamentorship.org/in/prince-nasamu-alhassan-8c8713",
+      "snippet": "The dataset and model are published on HuggingFace (PrinceAlhassanNasamu) and affiliated with GhanaNLP. That&#x27;s how I think about data science — as infrastructure for communities that don&#x27;t have it yet."
+    },
+    {
+      "title": "et in MMS — AI Readiness",
+      "url": "https://category-webapp-ai-ready.vercel.app/source/mms/et",
+      "snippet": "MMS provides ASR and/or TTS for a very large set of languages; this snapshot lists languages exposed on the HF model card. Full 1000+ ASR / 1100+ TTS lists live in the fairseq MMS examples."
+    }
+  ]
+}

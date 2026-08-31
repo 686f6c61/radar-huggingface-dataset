@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Rin247/Qwen3.6-27B-Feral-Aquarion-FP4",
+  "slug": "rin247-qwen3-6-27b-feral-aquarion-fp4",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Qwen3.6-27B-Feral-Aquarion-FP4",
+  "created_at": "2026-08-31T13:31:55.000Z",
+  "updated_at": "2026-08-31T14:07:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "quantized",
+    "fp4",
+    "uncensored",
+    "abliterated",
+    "conversational",
+    "endpoints_compatible",
+    "8-bit",
+    "fp4_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14720720384,
+  "parameters_human": "14.72B",
+  "storage_bytes": 18808306535,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rin247/Qwen3.6-27B-Uncensored-Aquarion-FP8 · Hugging Face",
+      "url": "https://huggingface.co/Rin247/Qwen3.6-27B-Uncensored-Aquarion-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nerkyor/Qwen3.6-27B-NVFP4-v8-RTN · Hugging Face",
+      "url": "https://huggingface.co/nerkyor/Qwen3.6-27B-NVFP4-v8-RTN",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuning Qwen3.6-27B for Verilog: A Complete Journey with HumanEval ...",
+      "url": "https://qevos.ai/blog/en/2026-05-06-qwen36-27b-verilog-lora-finetuning.html",
+      "snippet": "Complete results of Qwen3.6-27B LoRA fine-tuning for Verilog code generation, including training analysis, capability comparison, and full HumanEval benchmark evaluation showing zero catastrophic forgetting."
+    },
+    {
+      "title": "In Practice: Fine-tuning Qwen3.6-27B for Verilog Code Generation with ...",
+      "url": "https://qevos.ai/blog/en/2026-05-03-qwen36-verilog-lora-finetuning.html",
+      "snippet": "A detailed guide on fine-tuning Qwen3.6-27B for Verilog code generation using Unsloth framework on a single A100 80GB GPU. Covers training configuration, hyperparameter selection, multi-GPU pitfalls, and memory optimization techniques."
+    },
+    {
+      "title": "Qwen3.6 27B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-6-27b/",
+      "snippet": "Qwen3.6 27B is a dense language model from Alibaba Cloud&#x27;s Qwen3.6 family. With 27 billion parameters, it delivers strong performance across complex reasoning, coding, and language understanding tasks."
+    }
+  ]
+}

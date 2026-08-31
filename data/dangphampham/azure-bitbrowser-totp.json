@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DangPhamPham/azure-bitbrowser-totp",
+  "slug": "dangphampham-azure-bitbrowser-totp",
+  "author": "DangPhamPham",
+  "url": "https://huggingface.co/DangPhamPham/azure-bitbrowser-totp",
+  "created_at": "2026-08-31T11:12:25.000Z",
+  "updated_at": "2026-08-31T11:39:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DangPhamPham (pham dang) - Hugging Face",
+      "url": "https://huggingface.co/DangPhamPham",
+      "snippet": "User profile of pham dang on Hugging Face"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Microsoft Foundry Models overview - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+      "snippet": "Discover and deploy AI models with Microsoft Foundry Models. Browse 10,000+ models from OpenAI, Meta, and more to build scalable AI solutions. Explore now."
+    },
+    {
+      "title": "Azure OpenAI Model Regional Availability",
+      "url": "https://model-availability.azurewebsites.net/",
+      "snippet": "Model Availabilty is updated every 10 minutes. Last Updated: 2026-08-31 05:28:59 AM EDT Download .md file"
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Build AI that ships Build, test, and deploy AI systems with the models, tools, and workflows your team needs. Scale on one platform."
+    }
+  ]
+}

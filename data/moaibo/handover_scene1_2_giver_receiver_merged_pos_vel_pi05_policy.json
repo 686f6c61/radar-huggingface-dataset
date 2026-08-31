@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "MoAIBo/Handover_scene1_2_giver_receiver_merged_pos_vel_pi05_policy",
+  "slug": "moaibo-handover_scene1_2_giver_receiver_merged_pos_vel_pi05_policy",
+  "author": "MoAIBo",
+  "url": "https://huggingface.co/MoAIBo/Handover_scene1_2_giver_receiver_merged_pos_vel_pi05_policy",
+  "created_at": "2026-08-31T17:08:05.000Z",
+  "updated_at": "2026-08-31T17:11:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:MoAIBo/Handover_scene1_2_giver_receiver_merged_pos_vel",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 16573782264,
+  "storage_human": "16.6 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Handover_scene1_2_giver_receiver_merged_vel_pi05_policy",
+      "url": "https://huggingface.co/MoAIBo/Handover_scene1_2_giver_receiver_merged_vel_pi05_policy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "handover_scene1_2_giver_receiver_merged_vel_policy_vision_expert",
+      "url": "https://huggingface.co/MoAIBo/handover_scene1_2_giver_receiver_merged_vel_policy_vision_expert",
+      "snippet": "MoAIBo/handover_scene1_2_giver_receiver_merged_vel ... SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics"
+    },
+    {
+      "title": "A VLA with Open-World Generalization",
+      "url": "https://www.pi.website/blog/pi05",
+      "snippet": "Our latest generalist policy, π0.5, extends π0 and enables open-world generalization. Our new model can control a mobile manipulator to clean up an entirely new kitchen or bedroom."
+    },
+    {
+      "title": "LeRobot pi0.5 源码解析：从训练数据到动作生成 - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/2050588227225048296",
+      "snippet": "这个图可以分成四层看： 数据 预处理 层：把 state/action 归一化，把 state 写进 prompt。 Policy 封装层：处理图像、动作 padding，并调用核心模型。 核心 模型层：prefix 编码图像语言，suffix 编码 noisy action。 训练/推理层：训练时算 velocity loss，推理时从噪声反向生成动作。"
+    },
+    {
+      "title": "Moescape — AI-enabled creative platform for anime fandom",
+      "url": "https://moescape.ai/",
+      "snippet": "Explore AI generated anime art, find best prompts, create beautiful images with our free AI art generator, and share it with other anime fans!"
+    }
+  ]
+}

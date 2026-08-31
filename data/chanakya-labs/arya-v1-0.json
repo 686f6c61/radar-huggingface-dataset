@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Chanakya-Labs/Arya-v1.0",
+  "slug": "chanakya-labs-arya-v1-0",
+  "author": "Chanakya-Labs",
+  "url": "https://huggingface.co/Chanakya-Labs/Arya-v1.0",
+  "created_at": "2026-08-31T15:51:48.000Z",
+  "updated_at": "2026-08-31T16:22:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "moe",
+    "arya",
+    "chanakya-labs",
+    "MLA",
+    "GDN",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "deepseek-ai/deepseek-v2-lite",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aniket789/Arya · Hugging Face",
+      "url": "https://huggingface.co/Aniket789/Arya",
+      "snippet": "Arya-3B-MoE (Chanakya Labs) Arya-3B-MoE is a next-generation Native Mixture-of-Experts (MoE) Foundation Model engineered by Chanakya Labs. Arya incorporates linear-time sequence mixing, quantile-balanced sparse routing, multi-branch gated residuals, and native multi-token prediction from the ground up."
+    },
+    {
+      "title": "ARYA | The Third Paradigm of Intelligence",
+      "url": "https://aryalabs.io/",
+      "snippet": "Three paradigm states The evolution of AI architecture ARYA marks the transition from probabilistic generation to deterministic intelligence."
+    },
+    {
+      "title": "Your Daily Teaching Assistant: Transform Assessment & Learning ...",
+      "url": "https://chanakya-ai.com/",
+      "snippet": "Trusted by leading organizations Chanakya AI Your daily teaching assistant. Transform assessment & learning with AI-powered tools."
+    },
+    {
+      "title": "ARYA-LABS/arya-speaks-models · Hugging Face",
+      "url": "https://huggingface.co/ARYA-LABS/arya-speaks-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Arya.ai: Enterprise-Grade AI Solutions",
+      "url": "https://arya.ai/",
+      "snippet": "Accelerate AI adoption with Arya.ai&#x27;s production-ready solutions. Leverage AI models that meet the business-critical needs of financial institutions & enterprises."
+    }
+  ]
+}

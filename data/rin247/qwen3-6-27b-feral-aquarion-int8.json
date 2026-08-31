@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Rin247/Qwen3.6-27B-Feral-Aquarion-INT8",
+  "slug": "rin247-qwen3-6-27b-feral-aquarion-int8",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Qwen3.6-27B-Feral-Aquarion-INT8",
+  "created_at": "2026-08-31T14:54:56.000Z",
+  "updated_at": "2026-08-31T15:06:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "quantized",
+    "int8",
+    "uncensored",
+    "abliterated",
+    "conversational",
+    "endpoints_compatible",
+    "8-bit",
+    "int8_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 29461601775,
+  "storage_human": "29.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rin247/Qwen3.6-27B-Uncensored-Aquarion-FP8 · Hugging Face",
+      "url": "https://huggingface.co/Rin247/Qwen3.6-27B-Uncensored-Aquarion-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.6-27B Complete Guide: 77.2% SWE-bench in a 27B Dense Model (2026)",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/",
+      "snippet": "Everything about Qwen 3.6-27B: 77.2% SWE-bench Verified, beats the 397B flagship, runs on a Mac. Architecture, benchmarks, and how to use it."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model",
+      "url": "https://qwen.ai/blog?id=qwen3.6-27b",
+      "snippet": "QWEN STUDIO HUGGING FACE MODELSCOPE DISCORD Following the launch of Qwen3.6-Plus and Qwen3.6-35B-A3B, we are excited to open-source Qwen3.6-27B — a dense 27-billion-parameter multimodal model at the scale the community has been asking for most. Still supporting both multimodal thinking and non-thinking modes, Qwen3.6-27B delivers flagship-level agentic coding performance, surpassing the ..."
+    },
+    {
+      "title": "Qwen3.6-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.6-27b",
+      "snippet": "The Qwen3.6 27B native vision-language dense model builds upon the 3.5-27B version, with key improvements in agentic coding capabilities and enhanced STEM reasoning and inference skills. In the vision modality, it demonstrates significant advances in spatial intelligence, object localization, and detection, while video understanding, document OCR, and visual agent capabilities continue to ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "GlowLED/speecht5-voxpopuli-nl",
+  "slug": "glowled-speecht5-voxpopuli-nl",
+  "author": "GlowLED",
+  "url": "https://huggingface.co/GlowLED/speecht5-voxpopuli-nl",
+  "created_at": "2026-08-31T12:19:27.000Z",
+  "updated_at": "2026-08-31T12:20:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "text-to-audio",
+    "text-to-speech",
+    "voxpopuli",
+    "dutch",
+    "fine-tuned",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144433890,
+  "parameters_human": "144.4M",
+  "storage_bytes": 578027793,
+  "storage_human": "578 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sumet/speecht5_finetuned_voxpopuli_nl · Hugging Face",
+      "url": "https://huggingface.co/sumet/speecht5_finetuned_voxpopuli_nl",
+      "snippet": "This model is a fine-tuned version of microsoft/speecht5_tts on the Vox Populi NL dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Arch4ngel/speecht5_finetuned_voxpopuli_nl · Hugging Face",
+      "url": "https://huggingface.co/Arch4ngel/speecht5_finetuned_voxpopuli_nl",
+      "snippet": "Edit model card speecht5_finetuned_voxpopuli_nl This model is a fine-tuned version of microsoft/speecht5_tts on the voxpopuli dataset. It achieves the following results on the evaluation set: Loss: 0.4573 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information ..."
+    },
+    {
+      "title": "radned/speecht5_voxpopuli_nl - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/261730",
+      "snippet": "speecht5_voxpopuli_nl This model is a fine-tuned version of on the voxpopuli dataset. It achieves the following results on the evaluation set: Loss: 0.9541 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters"
+    },
+    {
+      "title": "️ SpeechT5 Text-to-Speech Fine-Tuning on VoxPopuli (Dutch)",
+      "url": "https://github.com/Satvik-ai/Text_To_Speech",
+      "snippet": "The fine-tuned model is capable of synthesizing intelligible Dutch speech conditioned on a target speaker embedding. Given that VoxPopuli is an ASR dataset (not optimized for TTS), the output quality is reasonable for a fine-tuning exercise and serves as a solid baseline. The model is hosted on the Hugging Face Hub: 🔗 Satvik-ai/speecht5_finetuned_voxpopuli_nl"
+    },
+    {
+      "title": "Text_To_Speech/README.md at main · Satvik-ai/Text_To_Speech",
+      "url": "https://github.com/Satvik-ai/Text_To_Speech/blob/main/README.md",
+      "snippet": "🗣️ SpeechT5 Text-to-Speech Fine-Tuning on VoxPopuli (Dutch) This project fine-tunes Microsoft&#x27;s SpeechT5 model for Dutch Text-to-Speech (TTS) synthesis using the VoxPopuli dataset. The fine-tuned model is published to the Hugging Face Hub and can be used to synthesize natural-sounding Dutch speech from text."
+    }
+  ]
+}

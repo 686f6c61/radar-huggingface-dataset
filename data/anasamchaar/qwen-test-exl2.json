@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "anasAmchaar/Qwen-Test-EXL2",
+  "slug": "anasamchaar-qwen-test-exl2",
+  "author": "anasAmchaar",
+  "url": "https://huggingface.co/anasAmchaar/Qwen-Test-EXL2",
+  "created_at": "2026-08-31T12:18:40.000Z",
+  "updated_at": "2026-08-31T12:18:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=exl2",
+      "snippet": "Explore machine learning models. Undi95/MLewd-ReMM-L2-Chat-20B-Inverted-b4.1-h6-exl2"
+    },
+    {
+      "title": "Try AI Models - Interactive LLM Playground - Qwen Cloud",
+      "url": "https://www.qwencloud.com/try-ai",
+      "snippet": "Test Qwen models in our interactive Try AI playground. Explore multimodal LLM capabilities, real-time inference, and scalable API tools for global developers."
+    },
+    {
+      "title": "Every Qwen AI Model Explained and Compared (Aug, 2026)",
+      "url": "https://www.secondtalent.com/resources/every-qwen-ai-model-explained-compared/",
+      "snippet": "Qwen is the most downloaded open model family in the world, and its open weights let a team run a near-frontier model with zero per-token cost and full data control. But self-hosting needs real engineers. This guide helps your team pick between open weights and the API, the same way we match engineers to roles."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "GlowLED/wav2vec2-gtzan",
+  "slug": "glowled-wav2vec2-gtzan",
+  "author": "GlowLED",
+  "url": "https://huggingface.co/GlowLED/wav2vec2-gtzan",
+  "created_at": "2026-08-31T12:17:41.000Z",
+  "updated_at": "2026-08-31T12:19:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "audio-classification",
+    "gtzan",
+    "music",
+    "fine-tuned",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94571146,
+  "parameters_human": "94.6M",
+  "storage_bytes": 378310544,
+  "storage_human": "378 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wav2Vec2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/wav2vec2",
+      "snippet": "Wav2Vec2 is a speech model that accepts a float array corresponding to the raw waveform of the speech signal. Wav2Vec2 model was trained using connectionist temporal classification (CTC) so the model output has to be decoded using Wav2Vec2CTCTokenizer."
+    },
+    {
+      "title": "Wav2Vec2 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.0.0rc3/en/model_doc/wav2vec2",
+      "snippet": "The Wav2Vec2 model was proposed in wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations by Alexei Baevski, Henry Zhou, Abdelrahman Mohamed, Michael Auli. The abstract from the paper is the following: We show for the first time that learning powerful representations from speech audio alone followed by fine-tuning on transcribed speech can outperform the best semi ..."
+    },
+    {
+      "title": "wav2vec2-base-finetuned-gtzan-2 - AI Model by ld76 | AlphaNeural AI",
+      "url": "https://alphaneural.io/assets/ld76/wav2vec2-base-finetuned-gtzan-2",
+      "snippet": "Explore wav2vec2-base-finetuned-gtzan-2, a ai model on AlphaNeural AI. Deploy using Neural Labs compute infrastructure."
+    },
+    {
+      "title": "Wav2vec2 Base Finetuned Gtzan - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/jjsprockel/wav2vec2-base-finetuned-gtzan",
+      "snippet": "Deep dive into Wav2vec2 Base Finetuned Gtzan. 📝 Limitations & Considerations •Benchmark scores may vary based on evaluation methodology and hardware configuration. •VRAM requirements are estimates; actual usage depends on quantization and batch size. •FNI scores are relative rankings and may change as new models are added. ⚠License Unknown: Verify licensing terms before commercial ..."
+    },
+    {
+      "title": "Wav2vec2 Base Finetuned Gtzan - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/thh0318/wav2vec2-base-finetuned-gtzan",
+      "snippet": "Deep dive into Wav2vec2 Base Finetuned Gtzan. 📊 View Rankings 🤖 Explore Agents Next 🧠 Wav2vec2 Base Finetuned Gtzanmodel by THH0318 ⭐ 29.8 🧠 Model"
+    }
+  ]
+}

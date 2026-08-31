@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ormandj/GLM-5.3-Flash-W4A16-NVFP4-K32-Experts-FP8-WO",
+  "slug": "ormandj-glm-5-3-flash-w4a16-nvfp4-k32-experts-fp8-wo",
+  "author": "ormandj",
+  "url": "https://huggingface.co/ormandj/GLM-5.3-Flash-W4A16-NVFP4-K32-Experts-FP8-WO",
+  "created_at": "2026-08-31T18:53:12.000Z",
+  "updated_at": "2026-08-31T18:53:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3-Flash by Z.ai | Model Library | Modal",
+      "url": "https://modal.com/library/zai/glm-5-3-flash",
+      "snippet": "GLM 5.3 Flash GLM-5.3-Flash is the first natively multimodal model in Z.ai&#x27;s GLM-5 series: a 320-billion-parameter Mixture-of-Experts model with 18B active parameters per token and a one-million-token context window, built for coding and agentic work."
+    },
+    {
+      "title": "GLM-5.3-Flash - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash has 320B total parameters with 18B activated. As the first open-source frontier model to combine sparse and linear attention, it significantly cuts computation and serving costs while preserving long-context quality — reducing attention computation and KV cache by 3.01× and 4.44× versus GLM-5.3. Native Multimodal Visual Coding"
+    },
+    {
+      "title": "GLM-5.3-Flash: Frontier Intelligence, Flash Cost - z.ai",
+      "url": "https://z.ai/blog/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash starts from a newly trained base model, with its architecture and training recipe redesigned around capability and efficiency. For the first time in the GLM series, we introduce a hybrid architecture combining sparse and linear attention, sharply reducing long-context serving costs while preserving precise long-context capabilities."
+    },
+    {
+      "title": "GLM-5.3-Flash: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash, also known as ox-alpha, is Z.ai&#x27;s new 320B parameter (18B active) multimodal open model which outperforms GLM-5.2 across benchmarks and real-world tasks at one-tenth the price. GLM-5.3-Flash is the smaller version of GLM-5.3 and rivals Claude Opus 4.8 on coding and agentic benchmarks."
+    },
+    {
+      "title": "zai-org/GLM-5.3-Flash | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/zai-org/GLM-5.3-Flash",
+      "snippet": "GLM-5.3-Flash is a 320B-total / 18B-active multimodal MoE with hybrid KDA and sparse MLA attention, native FP8 weights, MTP, and a 1M-token context window."
+    }
+  ]
+}

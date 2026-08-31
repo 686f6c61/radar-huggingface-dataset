@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "adrfm/sort_b601_simple_filtered_turbovla_v1",
+  "slug": "adrfm-sort_b601_simple_filtered_turbovla_v1",
+  "author": "adrfm",
+  "url": "https://huggingface.co/adrfm/sort_b601_simple_filtered_turbovla_v1",
+  "created_at": "2026-08-31T15:22:53.000Z",
+  "updated_at": "2026-08-31T15:23:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "turbovla_so101",
+    "dataset:adrfm/sort_b601_simple_filtered",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 209309191,
+  "parameters_human": "209.3M",
+  "storage_bytes": 837344220,
+  "storage_human": "837 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adrfm/sort_b601_simple_filtered · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/adrfm/sort_b601_simple_filtered",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "adrfm/sort_b601_simple at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/adrfm/sort_b601_simple/tree/main",
+      "snippet": "Datasets: adrfm / sort_b601_simple like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot Libraries: Datasets Dask Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main sort_b601_simple 569 MB 1 contributor History:11 commits adrfm Upload README.md with huggingface_hub cb82cd2 verifiedabout 2 ..."
+    },
+    {
+      "title": "GitHub - H-EmbodVis/TurboVLA: TurboVLA: Real-Time Vision-Language ...",
+      "url": "https://github.com/H-EmbodVis/TurboVLA",
+      "snippet": "This repository contains the official implementation of TurboVLA for the paper TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM."
+    },
+    {
+      "title": "TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX ...",
+      "url": "https://arxiv.org/html/2607.27205",
+      "snippet": "This raises a more fundamental question: how to design a simple, elegant and efficient VLA that directly maps vision and language to actions for execution-level manipulation, without centering on a large language model? Figure 2: From LLM-centric VLA to TurboVLA."
+    },
+    {
+      "title": "TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX ...",
+      "url": "https://paperswithcode.co/paper/2607.27205",
+      "snippet": "Vision-language-action (VLA) models commonly adopt an LLM-centric V to L to A pathway, where visual observations are projected into the representation space of a large language model before being decoded into robot actions. Although effective, this design incurs substantial computation and memory overhead at every policy invocation."
+    }
+  ]
+}

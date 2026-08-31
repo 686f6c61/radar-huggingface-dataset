@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ausjahk/chest-xray-cnn-from-scratch",
+  "slug": "ausjahk-chest-xray-cnn-from-scratch",
+  "author": "ausjahk",
+  "url": "https://huggingface.co/ausjahk/chest-xray-cnn-from-scratch",
+  "created_at": "2026-08-31T11:35:52.000Z",
+  "updated_at": "2026-08-31T11:35:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "medical",
+    "x-ray",
+    "pneumonia",
+    "cnn",
+    "from-scratch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8796263,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ausjahk/chest-xray-pneumonia-detector · Hugging Face",
+      "url": "https://huggingface.co/ausjahk/chest-xray-pneumonia-detector",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Art Nude Drawing Model AIpornmix (Generated Ai) - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/video.omucbfu3e84/art_nude_drawing_model_aipornmix_generated_ai_",
+      "snippet": "Art Nude Drawing Model AIpornmix (Generated Ai) 10 min 1080p Aipornmix ai-generated sexy-outfit-3d cute-outfit-3d Edit tags"
+    },
+    {
+      "title": "Project Documentation: Pneumonia Detection from Chest X-ray using CNN ...",
+      "url": "https://app.readytensor.ai/publications/project-documentation-pneumonia-detection-from-chest-xray-using-cnncomputer-vision-JIpA7SGMdrhy",
+      "snippet": "frontend image : Some of the images of its working, How This Project Revolutionizes the Medical Industry 1. Addressing Diagnostic Challenges Problem: Pneumonia diagnosis often requires expert radiologists to interpret X-ray images, which can be subjective and time-consuming. Solution: This AI-based approach offers consistent and objective analysis, minimizing errors due to human fatigue or ..."
+    },
+    {
+      "title": "AI-Powered Disease Detection in X-Ray Images - GitHub",
+      "url": "https://github.com/osu/AI-Powered-Disease-Detection-in-X-Ray-Images",
+      "snippet": "This project leverages deep learning techniques, particularly Convolutional Neural Networks (CNNs), to detect diseases in X-ray images. With a focus on improving medical diagnostics, the project provides a framework for training and evaluating models to identify conditions like pneumonia from medical imaging. The model aims to assist healthcare professionals in early disease detection and ..."
+    },
+    {
+      "title": "Deep Learning Based CNN Model for Automated Detection of Pneumonia from ...",
+      "url": "https://arxiv.org/pdf/2602.00212",
+      "snippet": "Deep Learning Based CNN Model for Automated Detection of Pneumonia from Chest X-Ray Images Deep Learning-Based CNN Model for Automated Detection of Pneumonia from Chest X-Ray Images"
+    }
+  ]
+}

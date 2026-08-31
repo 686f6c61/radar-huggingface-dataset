@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "kigner/deeplivecamPro",
+  "slug": "kigner-deeplivecampro",
+  "author": "kigner",
+  "url": "https://huggingface.co/kigner/deeplivecamPro",
+  "created_at": "2026-08-31T06:51:04.000Z",
+  "updated_at": "2026-08-31T16:44:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2426885990,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kigner/deeplivecam-pro at main - Hugging Face",
+      "url": "https://huggingface.co/kigner/deeplivecam-pro/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kigner/deeplivecam-pro · Hugging Face",
+      "url": "https://huggingface.co/kigner/deeplivecam-pro",
+      "snippet": "kigner / deeplivecam-pro like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Deep-Live-Cam-Pro/README.md at main - GitHub",
+      "url": "https://github.com/kigner/Deep-Live-Cam-Pro/blob/main/README.md",
+      "snippet": "Disclaimer This deepfake software is designed to be a productive tool for the AI-generated media industry. It can assist artists in animating custom characters, creating engaging content, and even using models for clothing design."
+    },
+    {
+      "title": "Deep-Live-Cam",
+      "url": "https://deeplivecam.net/",
+      "snippet": "Introducing Deep-Live-Cam, the ultimate open-source AI tool for transforming your digital identity! Whether you&#x27;re dreaming of becoming the next big VTuber sensation or simply want to swap your face with any image in real-time, Deep-Live-Cam makes it effortless and fun."
+    },
+    {
+      "title": "Releases: hacksider/Deep-Live-Cam - GitHub",
+      "url": "https://github.com/hacksider/Deep-Live-Cam/releases",
+      "snippet": "The largest update in Deep‑Live‑Cam&#x27;s history is here. Version 2.7 adds over 35,000 lines of new code — a full rewrite focused on speed, reliability, and creative power. 🔥 Performance Integrated TensorRT acceleration for NVIDIA GPUs (up to 3× faster, no quality loss) Removed heavy dependencies (PyTorch, TensorFlow, InsightFace, GFPGAN) → smaller install, faster startup, lower ..."
+    }
+  ]
+}

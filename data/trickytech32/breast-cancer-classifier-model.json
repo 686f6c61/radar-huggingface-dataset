@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "TrickyTech32/Breast-Cancer-Classifier-Model",
+  "slug": "trickytech32-breast-cancer-classifier-model",
+  "author": "TrickyTech32",
+  "url": "https://huggingface.co/TrickyTech32/Breast-Cancer-Classifier-Model",
+  "created_at": "2026-08-31T11:29:23.000Z",
+  "updated_at": "2026-08-31T11:31:42.000Z",
+  "license": "artistic-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:artistic-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31024363,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - BenyRonald77/oncoclass-breast-cancer-classification: An end-to ...",
+      "url": "https://github.com/BenyRonald77/oncoclass-breast-cancer-classification",
+      "snippet": "An end-to-end responsible machine learning project for breast tumor classification, featuring model evaluation, batch prediction, and an interactive Streamlit application."
+    },
+    {
+      "title": "GitHub - codewithbisal/Breast-Cancer-Classifier: AI model classifies ...",
+      "url": "https://github.com/codewithbisal/Breast-Cancer-Classifier",
+      "snippet": "Breast-Cancer-Classifier Description This project focuses on developing a highly effective AI system to classify breast cancer tumors as malignant or benign using advanced machine learning techniques. The dataset, meticulously split into a 70/30 ratio for testing and training, serves as a robust foundation for the model&#x27;s training and validation."
+    },
+    {
+      "title": "Toward accurate breast cancer classification: A review of multi-modal ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1046202325002300",
+      "snippet": "We explore the sources of the cancer datasets and conduct a survey of various modalities that are used for breast cancer classification. This exploration highlights the transformative effect of machine learning and deep learning techniques, showcasing their developments over conventional methods in terms of accuracy, scalability, and multi ..."
+    },
+    {
+      "title": "Breast Cancer Classification with Various Optimized Deep ... - MDPI",
+      "url": "https://www.mdpi.com/2075-4418/15/14/1751",
+      "snippet": "In conclusion, this study underscores the potential of deep learning in breast cancer classification and highlights the importance of selecting the right model architectures, applying effective hyperparameter tuning, and leveraging ensemble strategies judiciously."
+    },
+    {
+      "title": "Breast Cancer Classifier Demo - Hugging Face",
+      "url": "https://huggingface.co/spaces/mahithtanay/breast-cancer-classifier-demo",
+      "snippet": "This tool lets you upload a microscope image patch of breast tissue and tells you whether the cells look cancerous or non‑cancerous, showing a confidence score. Simply choose an image file, and the..."
+    }
+  ]
+}

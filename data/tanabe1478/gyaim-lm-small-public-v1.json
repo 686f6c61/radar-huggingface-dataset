@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "tanabe1478/gyaim-lm-small-public-v1",
+  "slug": "tanabe1478-gyaim-lm-small-public-v1",
+  "author": "tanabe1478",
+  "url": "https://huggingface.co/tanabe1478/gyaim-lm-small-public-v1",
+  "created_at": "2026-08-31T16:33:59.000Z",
+  "updated_at": "2026-08-31T16:34:27.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gpt2",
+    "text-generation",
+    "japanese",
+    "ime",
+    "kana-kanji-conversion",
+    "zenz",
+    "ja",
+    "dataset:Miwa-Keita/zenz-v2.5-dataset",
+    "base_model:ku-nlp/gpt2-small-japanese-char",
+    "base_model:quantized:ku-nlp/gpt2-small-japanese-char",
+    "license:cc-by-sa-4.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 90450432,
+  "parameters_human": "90.5M",
+  "storage_bytes": 435688512,
+  "storage_human": "436 MB",
+  "base_model": "ku-nlp/gpt2-small-japanese-char",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - tanabe1478/llm-labs",
+      "url": "https://github.com/tanabe1478/llm-labs",
+      "snippet": "Contribute to tanabe1478/llm-labs development by creating an account on GitHub."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF"
+    },
+    {
+      "title": "Small Open Source Models | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/open-source/small",
+      "snippet": "Small open source models from 4B to 40B parameters. Fast and affordable models with limited capabilities and low latency."
+    },
+    {
+      "title": "@masui https://t.co/9lyPna7xeM コードはここにあります。自分用に変更してしまっているので、フォーク元に PR を ...",
+      "url": "https://x.com/t__nabe1478/status/2031570379618267457",
+      "snippet": "github.com/tanabe1478/Gya… コードはここにあります。 自分用に変更してしまっているので、フォーク元に PR を出すのはやめておきましたが Claude に渡したら改変していないそのままの Gyaim を Swift に移行する際の Plan Mode のインプットにはなると思います。"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

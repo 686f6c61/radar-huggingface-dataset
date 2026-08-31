@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "loom-ai-org/lfm2-350m-monolithic-loom",
+  "slug": "loom-ai-org-lfm2-350m-monolithic-loom",
+  "author": "loom-ai-org",
+  "url": "https://huggingface.co/loom-ai-org/lfm2-350m-monolithic-loom",
+  "created_at": "2026-08-11T12:27:30.000Z",
+  "updated_at": "2026-08-31T16:43:57.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "loom-py-rt",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es"
+  ],
+  "tags": [
+    "loom-py-rt",
+    "gguf",
+    "text-generation",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "base_model:LiquidAI/LFM2-350M",
+    "base_model:quantized:LiquidAI/LFM2-350M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 124,
+  "trending_score": 0,
+  "parameters": 354558753,
+  "parameters_human": "354.6M",
+  "storage_bytes": 5681887264,
+  "storage_human": "5.7 GB",
+  "base_model": "LiquidAI/LFM2-350M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "loom-ai-org/lfm2-350m-monolithic-loom · Hugging Face",
+      "url": "https://huggingface.co/loom-ai-org/lfm2-350m-monolithic-loom",
+      "snippet": "LFM2-350M (monolithic export) Liquid AI&#x27;s LFM2-350M hybrid conv/attention LM, exported as a single fused graph. This is a loom.cpp export: a single self-describing GGUF that carries its own graph topologies, tokenizer (if any) and driver script, produced by loom-exporter."
+    },
+    {
+      "title": "LiquidAI/LFM2-350M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-350M",
+      "snippet": "A newer version of this model is available: LiquidAI/LFM2.5-350M"
+    },
+    {
+      "title": "LFM2-350M - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm2-350m",
+      "snippet": "LFM2-350M is Liquid AI&#x27;s smallest text model, designed for edge devices with strict memory and compute constraints. Delivers surprisingly strong performance for its size, making it ideal for low-latency applications."
+    },
+    {
+      "title": "LFM2.5-350M: No Size Left Behind | Blog | Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind",
+      "snippet": "Today, we&#x27;re releasing LFM2.5-350M, an improved version of our 350M model with additional pre-training (from 10T to 28T tokens) and large-scale reinforcement learning. Built on the LFM2 architecture, it delivers exceptionally fast inference and runs everywhere, from cloud GPUs to cheap CPUs."
+    },
+    {
+      "title": "Introducing LFM2: The Fastest On-Device Foundation Models on the Market ...",
+      "url": "https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models",
+      "snippet": "Today, we release LFM2, a new class of Liquid Foundation Models (LFMs) that sets a new standard in quality, speed, and memory efficiency for on-device deployment. Built on a hybrid architecture, LFM2 delivers 200% faster decode and prefill performance than Qwen3 and Gemma 3 on CPU. It also significantly outperforms models in each size class on instruction-following and function calling—the ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "luisastellet/tucano_metaphor_melhor_hp",
+  "slug": "luisastellet-tucano_metaphor_melhor_hp",
+  "author": "luisastellet",
+  "url": "https://huggingface.co/luisastellet/tucano_metaphor_melhor_hp",
+  "created_at": "2026-08-31T11:59:52.000Z",
+  "updated_at": "2026-08-31T12:00:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 490799104,
+  "parameters_human": "490.8M",
+  "storage_bytes": 981633328,
+  "storage_human": "982 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "luisastellet/bert_metaphor_melhor_hp at main - Hugging Face",
+      "url": "https://huggingface.co/luisastellet/bert_metaphor_melhor_hp/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main bert_metaphor_melhor_hp 434 MB Ctrl+K Ctrl+K 1 contributor History:3 commits luisastellet tokenizer modelo_melhor_hp 23aa601 verifiedabout 4 hours ago .gitattributes Safe 1.52 kBinitial commitabout 4 hours ago README.md Safe 5.17 kBmodelo_melhor_hp lr=5e-05 epochs=5about 4 hours ago config.json 859 Bytesmodelo_melhor_hp lr=5e-05 epochs=5about 4 hours ago ..."
+    },
+    {
+      "title": "luisastellet/bert_metaphor_melhor_hp · Hugging Face",
+      "url": "https://huggingface.co/luisastellet/bert_metaphor_melhor_hp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Meta AI",
+      "url": "https://www.meta.ai/",
+      "snippet": "Use Meta AI assistant to get things done, create AI-generated images for free, and get answers to any of your questions."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "luisastellet (Luisa Stellet) · GitHub",
+      "url": "https://github.com/luisastellet",
+      "snippet": "Estudante de Ciência da Computação da UFF . luisastellet has 42 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

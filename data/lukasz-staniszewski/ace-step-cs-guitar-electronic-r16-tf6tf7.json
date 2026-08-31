@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lukasz-staniszewski/ace-step-cs-guitar-electronic-r16-tf6tf7",
+  "slug": "lukasz-staniszewski-ace-step-cs-guitar-electronic-r16-tf6tf7",
+  "author": "lukasz-staniszewski",
+  "url": "https://huggingface.co/lukasz-staniszewski/ace-step-cs-guitar-electronic-r16-tf6tf7",
+  "created_at": "2026-08-31T11:43:11.000Z",
+  "updated_at": "2026-08-31T11:43:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "music-generation",
+    "steering",
+    "lora",
+    "ace-step",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3938008,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ace-step-cs-guitar-electronic-r8-tf6tf7 - Hugging Face",
+      "url": "https://huggingface.co/lukasz-staniszewski/ace-step-cs-guitar-electronic-r8-tf6tf7",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lukasz-staniszewski/ace-step-cs-guitar-electronic-r8-all at main",
+      "url": "https://huggingface.co/lukasz-staniszewski/ace-step-cs-guitar-electronic-r8-all/tree/main",
+      "snippet": "Instructions to use lukasz-staniszewski/ace-step-cs-guitar-electronic-r8-all with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - ace-step/ACE-Step: ACE-Step: A Step Towards Music Generation ...",
+      "url": "https://github.com/ace-step/ACE-Step",
+      "snippet": "📝 Abstract We introduce ACE-Step, a novel open-source foundation model for music generation that overcomes key limitations of existing approaches and achieves state-of-the-art performance through a holistic architectural design. Current methods face inherent trade-offs between generation speed, musical coherence, and controllability."
+    },
+    {
+      "title": "GitHub - ace-step/ACE-Step-1.5: The most powerful local music ...",
+      "url": "https://github.com/ace-step/ACE-Step-1.5",
+      "snippet": "The most powerful local music generation model that outperforms almost all commercial alternatives, supporting Mac, AMD, Intel, and CUDA devices. - ace-step/ACE-Step-1.5"
+    },
+    {
+      "title": "ACE-Step: A Step Towards Music Generation Foundation Model",
+      "url": "https://arxiv.org/html/2506.00045v1",
+      "snippet": "ACE-Step is designed as a fast, general-purpose, and flexible foundation model for music generation. We adopt a diffusion-based generation paradigm, integrating efficient architectural choices and advanced semantic alignment techniques."
+    }
+  ]
+}

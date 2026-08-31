@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ahmetggg/Luck-Qwen3-4b-Code-FineTune-GGUF",
+  "slug": "ahmetggg-luck-qwen3-4b-code-finetune-gguf",
+  "author": "ahmetggg",
+  "url": "https://huggingface.co/ahmetggg/Luck-Qwen3-4b-Code-FineTune-GGUF",
+  "created_at": "2026-08-31T15:07:46.000Z",
+  "updated_at": "2026-08-31T15:52:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "code",
+    "tool-use",
+    "agentic",
+    "unsloth",
+    "en",
+    "base_model:ahmetggg/Luck-Qwen3-4b-Code-FineTune",
+    "base_model:quantized:ahmetggg/Luck-Qwen3-4b-Code-FineTune",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 38507475828,
+  "storage_human": "38.5 GB",
+  "base_model": "ahmetggg/Luck-Qwen3-4b-Code-FineTune",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/finetune.py at main · QwenLM/Qwen · GitHub",
+      "url": "https://github.com/QwenLM/Qwen/blob/main/finetune.py",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - Qwen/finetune.py at main · QwenLM/Qwen"
+    },
+    {
+      "title": "Full fine-tuning of Qwen3-4B - Databricks on AWS",
+      "url": "https://docs.databricks.com/aws/en/machine-learning/ai-runtime/examples/tutorials/sgc-finetune-qwen3-4b",
+      "snippet": "Full-weight fine-tune the Qwen3-4B large language model on a single H100 GPU with AI Runtime (serverless GPU) for maximum model customization."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "atkinschang/docling-layout-egret-medium-mlx",
+  "slug": "atkinschang-docling-layout-egret-medium-mlx",
+  "author": "atkinschang",
+  "url": "https://huggingface.co/atkinschang/docling-layout-egret-medium-mlx",
+  "created_at": "2026-08-31T16:13:19.000Z",
+  "updated_at": "2026-08-31T16:13:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "d_fine",
+    "base_model:docling-project/docling-layout-egret-medium",
+    "base_model:finetune:docling-project/docling-layout-egret-medium",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19540205,
+  "parameters_human": "19.5M",
+  "storage_bytes": 78281364,
+  "storage_human": "78 MB",
+  "base_model": "docling-project/docling-layout-egret-medium",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · docling-project/docling-layout-egret-medium at main",
+      "url": "https://huggingface.co/docling-project/docling-layout-egret-medium/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · docling-project/docling-layout-egret-medium at main",
+      "url": "https://huggingface.co/docling-project/docling-layout-egret-medium/blame/main/README.md",
+      "snippet": "like 2 Follow Docling 1.09k Safetensors d_fine arxiv:2509.11720 arxiv:2408.09869 License:apache-2.0 Model card FilesFiles and versions xet Community 3 Copy to bucket new main docling-layout-egret-medium File size: 3,130 Bytes"
+    },
+    {
+      "title": "docling-layout-egret-medium · Models",
+      "url": "https://www.modelscope.cn/models/ds4sd/docling-layout-egret-medium",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    },
+    {
+      "title": "docling-project/docling-layout-egret-medium - Hugging Face H...",
+      "url": "https://socket.dev/huggingface/package/ds4sd/docling-layout-egret-medium",
+      "snippet": "Docling Layout Model egret-medium docling-layout-egret-medium is a Document Layout Model based on DFINE-m. The model has been trained from scratch on a mix of document datasets. It is part of the Docling project."
+    },
+    {
+      "title": "docling/docs/usage/model_catalog.md at main · docling-project ... - GitHub",
+      "url": "https://github.com/docling-project/docling/blob/main/docs/usage/model_catalog.md",
+      "snippet": "Get your documents ready for gen AI. Contribute to docling-project/docling development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/vam-cross-level2-kuka-iiwa14-widowx-texture-teleopaligned-videolora200-action-decoder-iter900",
+  "slug": "dreamdifferent-vam-cross-level2-kuka-iiwa14-widowx-texture-teleopaligned-videolora200-action-decoder-iter900",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/vam-cross-level2-kuka-iiwa14-widowx-texture-teleopaligned-videolora200-action-decoder-iter900",
+  "created_at": "2026-08-31T16:41:30.000Z",
+  "updated_at": "2026-08-31T16:42:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "robotics",
+    "action-prediction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1000269372,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vam-cross-level2-kuka-iiwa14-widowx-texture-video-lora-iter-200",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level2-kuka-iiwa14-widowx-texture-video-lora-iter-200",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture ...",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level4-kuka-iiwa14-widowx-texture-teleopaligned-videolora200-action-decoder-iter900",
+      "snippet": "vam-cross-level4-kuka-iiwa14-widowx-texture-teleopaligned-videolora200-action-decoder-iter900"
+    },
+    {
+      "title": "Robot Model Variants | epfl-lasa/iiwa_ros | DeepWiki",
+      "url": "https://deepwiki.com/epfl-lasa/iiwa_ros/2.3-robot-model-variants",
+      "snippet": "Robot Model Variants Relevant source files Purpose and Scope This page documents the two KUKA LBR iiwa robot model variants supported by the iiwa_description package: the iiwa7 and iiwa14 models. It compares their specifications, joint limits, torque capacities, velocities, and physical parameters as defined in the URDF/XACRO files. For detailed information about the URDF structure and ..."
+    },
+    {
+      "title": "kuka_lbr_iiwa_support - ROS Wiki",
+      "url": "https://wiki.ros.org/kuka_lbr_iiwa_support",
+      "snippet": "ROS-Industrial support for the KUKA LBR IIWA (and variants). This package contains configuration data, 3D models and launch files for KUKA LBR IIWA manipulators. This currently includes the base model. Joint limits and max joint velocities are based on the information in the KUKA data sheets online."
+    },
+    {
+      "title": "Robotics | Free Full-Text | Integrating Vision-Language-Action Models ...",
+      "url": "https://www.mdpi.com/2218-6581/15/5/100/notes",
+      "snippet": "Integrating Vision-Language-Action Models and RGB-D Sensing for Robotic Waste Sorting on KUKA LBR iiwa. Robotics, 15 (5), 100. https://doi.org/10.3390/robotics15050100"
+    }
+  ]
+}

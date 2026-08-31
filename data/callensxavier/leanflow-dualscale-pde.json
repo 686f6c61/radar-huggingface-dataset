@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "callensxavier/leanflow-dualscale-pde",
+  "slug": "callensxavier-leanflow-dualscale-pde",
+  "author": "callensxavier",
+  "url": "https://huggingface.co/callensxavier/leanflow-dualscale-pde",
+  "created_at": "2026-08-31T11:10:09.000Z",
+  "updated_at": "2026-08-31T12:07:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "generic",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "generic",
+    "leanflow_dualscale_pde",
+    "computational-fluid-dynamics",
+    "pde-solver",
+    "navier-stokes",
+    "lean4",
+    "rust",
+    "neuro-symbolic",
+    "turbulence",
+    "jhtdb",
+    "scientific-computing",
+    "formally-verified",
+    "en",
+    "dataset:callensxavier/leanflow-jhtdb-benchmark",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 453226,
+  "storage_human": "453226 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Hydrodynamic PDE Simulation",
+      "dataset": "JHTDB Forced Homogeneous Isotropic Turbulence (Re_lambda ~ 433)",
+      "metric": "Maximum Divergence Residual",
+      "value": 2.99e-14
+    },
+    {
+      "task": "Hydrodynamic PDE Simulation",
+      "dataset": "JHTDB Forced Homogeneous Isotropic Turbulence (Re_lambda ~ 433)",
+      "metric": "Wall-Clock Speedup vs OpenFOAM icoFoam (C++ native)",
+      "value": 2.1
+    }
+  ],
+  "sources": [
+    {
+      "title": "callensxavier (Callens) - Hugging Face",
+      "url": "https://huggingface.co/callensxavier",
+      "snippet": "Less is More: Recursive Reasoning with Tiny Networks Paper • 2510.04871 •Published Oct 6, 2025• 517 Model Evaluation"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "AI Model Leaderboards & Benchmarks | Scale Labs",
+      "url": "https://labs.scale.com/leaderboard",
+      "snippet": "Explore leaderboards with expert-driven LLM benchmarks and updated AI model rankings across coding, reasoning and more."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Odysseus AI - Self-Hosted AI Workspace Setup Guide",
+      "url": "https://odysseusai.dev/",
+      "snippet": "Odysseus AI Setup Guide For PewDiePie&#x27;s self-hosted AI workspace Verify the official source, choose Docker, Windows, macOS, or Linux, connect Ollama or API keys, read logs, choose a model that fits your hardware, and avoid unsafe public deployment."
+    }
+  ]
+}

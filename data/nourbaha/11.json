@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nourbaha/11",
+  "slug": "nourbaha-11",
+  "author": "nourbaha",
+  "url": "https://huggingface.co/nourbaha/11",
+  "created_at": "2026-08-31T17:53:20.000Z",
+  "updated_at": "2026-08-31T17:53:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Voice Generator & Voice Agents Platform | ElevenLabs",
+      "url": "https://elevenlabs.io/",
+      "snippet": "Create lifelike speech with our AI voice generator and voice agents platform. Access 5,000+ voices in 70+ languages with secure APIs and SDKs."
+    },
+    {
+      "title": "Single Line of Code Can Jailbreak 11 AI models Including ChatGPT ...",
+      "url": "https://cybersecuritynews.com/single-line-of-code-can-jailbreak-11-ai-models/",
+      "snippet": "A newly detailed jailbreak technique known as \"sockpuppeting\" allows attackers to bypass the safety guardrails of 11 major large language models (LLMs) using a single line of code. Unlike complex attacks, this method exploits APIs that support assistant prefill to inject fake acceptance messages, forcing models to answer prohibited requests."
+    },
+    {
+      "title": "artist style：for [noob11] - v2.0_konya_karasue[nbe11] | NoobAI LyCORIS ...",
+      "url": "https://civitai.com/models/1177414/artist-stylefor-noob11",
+      "snippet": "The three previous styles in the latest version are separate styles. Because they tend to be overfitting, the actual use can reduce the weight and have a higher restoration of the original image. Unlike the previous version, this version collects more style pictures for training, while the previous version only contains some limited pictures. Usage Notes: Based on noobaiXLNAIXL ..."
+    },
+    {
+      "title": "Models | ElevenLabs Documentation",
+      "url": "https://elevenlabs.io/docs/overview/models",
+      "snippet": "This model works well in the following scenarios: Support agents: Power voice agents that resolve customer queries in realtime. AI assistants: Generate natural, lifelike dialogue with high emotional range and contextual understanding. Interactive characters: Excellent for audio experiences with expressive characters."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

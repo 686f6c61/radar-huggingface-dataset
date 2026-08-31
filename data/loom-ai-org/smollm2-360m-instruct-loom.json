@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "loom-ai-org/smollm2-360m-instruct-loom",
+  "slug": "loom-ai-org-smollm2-360m-instruct-loom",
+  "author": "loom-ai-org",
+  "url": "https://huggingface.co/loom-ai-org/smollm2-360m-instruct-loom",
+  "created_at": "2026-08-11T12:34:18.000Z",
+  "updated_at": "2026-08-31T16:49:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "loom-py-rt",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "loom-py-rt",
+    "gguf",
+    "text-generation",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 108,
+  "trending_score": 0,
+  "parameters": 361874145,
+  "parameters_human": "361.9M",
+  "storage_bytes": 5797260448,
+  "storage_human": "5.8 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "loom-ai-org/smollm2-360m-instruct-loom · Hugging Face",
+      "url": "https://huggingface.co/loom-ai-org/smollm2-360m-instruct-loom",
+      "snippet": "HuggingFaceTB&#x27;s SmolLM2 360M instruct-tuned LM, exported for loom.cpp. This is a loom.cpp export: a single self-describing GGUF that carries its own graph topologies, tokenizer (if any) and driver script, produced by loom-exporter."
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM2-360M-Instruct · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SmolLM2-360M-Instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/smollm2-360m-instruct-huggingfacetb",
+      "snippet": "Overview SmolLM2-360M-Instruct is a 360-million-parameter instruction-tuned language model built by HuggingFaceTB designed to run efficiently on-device while handling a wide range of tasks including text generation, rewriting, summarization, and function calling. The model uses a Transformer decoder architecture, was trained on 4 trillion tokens using a diverse dataset combination of FineWeb ..."
+    },
+    {
+      "title": "GitHub - huggingface/smollm: Everything about the SmolLM and SmolVLM ...",
+      "url": "https://github.com/huggingface/smollm",
+      "snippet": "Welcome to Smol Models, a family of efficient and lightweight AI models from Hugging Face. Our mission is to create fully open powerful yet compact models, for text and vision, that can run effectively on-device while maintaining strong performance."
+    },
+    {
+      "title": "SmolLM2 360M Instruct by HuggingFaceTB — VRAM 0.7GB, 8K context | LLM ...",
+      "url": "https://llm-explorer.com/model/HuggingFaceTB%2FSmolLM2-360M-Instruct,2NDsw2SIN4U7ERDUoWdabO",
+      "snippet": "SmolLM2 360M Instruct is an open-source 360m LLM by HuggingFaceTB. VRAM 0.7GB, 8K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

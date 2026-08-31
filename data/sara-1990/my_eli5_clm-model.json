@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Sara-1990/my_eli5_clm-model",
+  "slug": "sara-1990-my_eli5_clm-model",
+  "author": "Sara-1990",
+  "url": "https://huggingface.co/Sara-1990/my_eli5_clm-model",
+  "created_at": "2026-08-31T16:56:05.000Z",
+  "updated_at": "2026-08-31T17:31:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "base_model:distilbert/distilgpt2",
+    "base_model:finetune:distilbert/distilgpt2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81912576,
+  "parameters_human": "81.9M",
+  "storage_bytes": 2621268625,
+  "storage_human": "2.6 GB",
+  "base_model": "distilbert/distilgpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amirharati/my_awesome_eli5_clm-model · Hugging Face",
+      "url": "https://huggingface.co/amirharati/my_awesome_eli5_clm-model",
+      "snippet": "Instructions to use amirharati/my_awesome_eli5_clm-model with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use amirharati/my_awesome_eli5_clm-model with Transformers:"
+    },
+    {
+      "title": "alyssacheng/my_awesome_eli5_clm-model · Hugging Face",
+      "url": "https://huggingface.co/alyssacheng/my_awesome_eli5_clm-model",
+      "snippet": "my_awesome_eli5_clm-model This model is a fine-tuned version of distilbert/distilgpt2 on the eli5_category dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "tobijen/my_awesome_eli5_clm-model - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/208281",
+      "snippet": "This model card has been generated automatically according to the information the Trainer had access to. You should probably proofread and complete it, then remove this comment. -->"
+    },
+    {
+      "title": "tristayqc/my_awesome_eli5_clm-model - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/tristayqc-my-awesome-eli5-clm-model",
+      "snippet": "my_awesome_eli5_clm-model huggingface.co is an online trial and call api platform, which integrates my_awesome_eli5_clm-model&#x27;s modeling effects, including api services, and provides a free online trial of my_awesome_eli5_clm-model, you can try my_awesome_eli5_clm-model online for free by clicking the link below."
+    },
+    {
+      "title": "How to Fine-tune a Model using the my_awesome_eli5_clm-model - fxis.ai",
+      "url": "https://fxis.ai/edu/how-to-fine-tune-a-model-using-the-my_awesome_eli5_clm-model/",
+      "snippet": "The my_awesome_eli5_clm-model is a custom model created to process and generate text based on the context it has been trained on. The main highlight here is the model&#x27;s training on datasets that optimize its performance for specific tasks, making it easier to utilize for specific applications."
+    }
+  ]
+}

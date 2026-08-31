@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ethanbnsm/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "ethanbnsm-q-frozenlake-v1-4x4-noslippery",
+  "author": "ethanbnsm",
+  "url": "https://huggingface.co/ethanbnsm/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-08-31T13:05:28.000Z",
+  "updated_at": "2026-08-31T13:05:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TrisLee2k4/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/TrisLee2k4/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGSimmons/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/GGSimmons/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Getting Started with Q-Learning on FrozenLake-v1 - fxis.ai",
+      "url": "https://fxis.ai/edu/getting-started-with-q-learning-on-frozenlake-v1/",
+      "snippet": "Let&#x27;s dive into the realm of AI and uncover how to get your Q-Learning agent moving across the treacherous ice blocks! What is FrozenLake-v1? FrozenLake-v1 is a classic reinforcement learning environment where an agent must navigate across a frozen lake while avoiding holes and gracefully stepping on safe tiles."
+    },
+    {
+      "title": "EvanMath/q-FrozenLake-v1-4x4-noSlippery - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/62858",
+      "snippet": "Q-Learning Agent playing FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    },
+    {
+      "title": "GitHub - AthunSujith/FrozenLake_Qlearning",
+      "url": "https://github.com/AthunSujith/FrozenLake_Qlearning",
+      "snippet": "Successfully navigate the treacherous frozen lake using Reinforcement Learning! This project implements a Q-Learning agent to solve the OpenAI Gym FrozenLake-v1 environment, even with the \"slippery\" setting enabled."
+    }
+  ]
+}

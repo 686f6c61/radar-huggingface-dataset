@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "grimshaw/supertonic-neutts",
+  "slug": "grimshaw-supertonic-neutts",
+  "author": "grimshaw",
+  "url": "https://huggingface.co/grimshaw/supertonic-neutts",
+  "created_at": "2026-08-31T12:22:05.000Z",
+  "updated_at": "2026-08-31T12:27:13.000Z",
+  "license": "neutts-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "llama",
+    "tts",
+    "neutts",
+    "on-device",
+    "base_model:neuphonic/neucodec",
+    "base_model:quantized:neuphonic/neucodec",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 228704832,
+  "parameters_human": "228.7M",
+  "storage_bytes": 607074772,
+  "storage_human": "607 MB",
+  "base_model": "neuphonic/neutts-nano, neuphonic/neucodec",
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - supertone-inc/supertonic: Lightning-Fast, On-Device ...",
+      "url": "https://github.com/supertone-inc/supertonic",
+      "snippet": "Supertonic is a lightning-fast, on-device multilingual text-to-speech system designed for local inference with minimal overhead. Powered by ONNX Runtime, it runs entirely on your device—no cloud, no API calls, no privacy concerns."
+    },
+    {
+      "title": "GitHub - ai-skynet-labs/supertonic-tts: Lightning-Fast, On-Device ...",
+      "url": "https://github.com/ai-skynet-labs/supertonic-tts",
+      "snippet": "Model Size At about 99M parameters across the public ONNX assets, Supertonic 3 is much smaller than 0.7B to 2B class open TTS systems. The smaller model size is a practical advantage for download size, startup time, and on-device inference."
+    },
+    {
+      "title": "Supertone/supertonic-2 · Hugging Face",
+      "url": "https://huggingface.co/Supertone/supertonic-2",
+      "snippet": "⚡ Same Speed, More Languages No speed degradation: Supertonic 2 delivers the same ultra-fast inference speed as the original—up to 167× faster than real-time Efficient architecture: Only 66M parameters, optimized for on-device deployment Cross-language consistency: All supported languages share the same model architecture and inference pipeline Performance We evaluated Supertonic&#x27;s ..."
+    },
+    {
+      "title": "Supertone/supertonic · Hugging Face",
+      "url": "https://huggingface.co/Supertone/supertonic",
+      "snippet": "Notes: API = Cloud-based API services (measured from Seoul) Open = Open-source models Supertonic (M4 pro - CPU) and (M4 pro - WebGPU): Tested with ONNX Supertonic (RTX4090): Tested with PyTorch model Kokoro: Tested on M4 Pro CPU with ONNX NeuTTS Air: Tested on M4 Pro CPU with Q8-GGUF Real-time Factor"
+    },
+    {
+      "title": "Supertonic 3 — Lightning-Fast, On-Device, Multilingual TTS",
+      "url": "https://supertonic3.github.io/",
+      "snippet": "Supertonic 3 is a 99M-parameter open-weight text-to-speech model from Supertone. Runs on CPU via ONNX Runtime. No GPU. No cloud. No API. 31 languages."
+    }
+  ]
+}

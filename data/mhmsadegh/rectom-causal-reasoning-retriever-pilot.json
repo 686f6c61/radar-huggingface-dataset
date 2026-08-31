@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mhmsadegh/rectom-causal-reasoning-retriever-pilot",
+  "slug": "mhmsadegh-rectom-causal-reasoning-retriever-pilot",
+  "author": "mhmsadegh",
+  "url": "https://huggingface.co/mhmsadegh/rectom-causal-reasoning-retriever-pilot",
+  "created_at": "2026-08-31T11:20:56.000Z",
+  "updated_at": "2026-08-31T11:21:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "reasoning-retrieval",
+    "rectom",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33360000,
+  "parameters_human": "33.4M",
+  "storage_bytes": 133462128,
+  "storage_human": "133 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2511.22275] RecToM: A Benchmark for Evaluating Machine Theory of Mind ...",
+      "url": "https://arxiv.org/abs/2511.22275",
+      "snippet": "To better align LLM-based ToM evaluation with human-like social reasoning, we propose RecToM, a novel benchmark for evaluating ToM abilities in recommendation dialogues. RecToM focuses on two complementary dimensions: Cognitive Inference and Behavioral Prediction."
+    },
+    {
+      "title": "RecToM: A Benchmark for Evaluating Machine Theory of Mind in LLM-based ...",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/download/40430/44391",
+      "snippet": "In RECTOM, cognitive inference is decomposed into three core components: desire, intention, and belief reasoning, corresponding to the Belief-Desire-Intention (BDI) model (Bratman 1987) of mental-state attribution."
+    },
+    {
+      "title": "GitHub - CGCL-codes/RecToM: Official dataset, evaluation scripts, and ...",
+      "url": "https://github.com/CGCL-codes/RecToM",
+      "snippet": "RecToM is a benchmark designed to rigorously evaluate the Theory of Mind (ToM) capabilities of Large Language Models (LLMs) within recommendation dialogues. LLMs must infer users&#x27; Beliefs, Desires, and Intents during multi-turn interactions—skills essential for building context-aware and effective recommender systems."
+    },
+    {
+      "title": "RecToM | Proceedings of the Fortieth AAAI Conference on Artificial ...",
+      "url": "https://dl.acm.org/doi/10.1609/aaai.v40i37.40430",
+      "snippet": "Extensive experiments on state-of-the-art LLMs demonstrate that RECTOM poses a significant challenge. While the models exhibit partial competence in recognizing mental states, they struggle to maintain coherent, strategic ToM reasoning throughout dynamic recommendation dialogues, particularly in tracking evolving intentions and aligning ..."
+    },
+    {
+      "title": "Paper page - RecToM: A Benchmark for Evaluating Machine Theory of Mind ...",
+      "url": "https://huggingface.co/papers/2511.22275",
+      "snippet": "Join the discussion on this paper page RecToM: A Benchmark for Evaluating Machine Theory of Mind in LLM-based Conversational Recommender Systems"
+    }
+  ]
+}

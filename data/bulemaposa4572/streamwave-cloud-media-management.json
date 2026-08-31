@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Bulemaposa4572/streamwave-cloud-media-management",
+  "slug": "bulemaposa4572-streamwave-cloud-media-management",
+  "author": "Bulemaposa4572",
+  "url": "https://huggingface.co/Bulemaposa4572/streamwave-cloud-media-management",
+  "created_at": "2026-08-31T15:03:39.000Z",
+  "updated_at": "2026-08-31T15:06:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11801017,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stream Wave — Managed streaming setup made simple",
+      "url": "https://streamwaveapp.com/",
+      "snippet": "Stream Wave helps customers manage setup, activation, billing, and support from one secure dashboard."
+    },
+    {
+      "title": "StreamWave Media StreamWave Media is launching a cloud-based ... - Filo",
+      "url": "https://askfilo.com/user-question-answers-smart-solutions/streamwave-media-streamwave-media-is-launching-a-cloud-based-3532383039373836",
+      "snippet": "StreamWave Media StreamWave Media is launching a cloud-based video streaming platform that will provide educational videos, documentaries, live events, and entertainment content to subscribers across Africa, Europe, and the Middle East."
+    },
+    {
+      "title": "Stream Wave — AI Video Dubbing in 20+ Languages",
+      "url": "https://streamwaveai.com/",
+      "snippet": "Stream Wave is an AI-powered video dubbing platform for creators worldwide. Paste any video URL and get a natural-sounding voice over with synced subtitles in 20+ languages — including Myanmar, Thai, Indonesian, Vietnamese, English, and Japanese."
+    },
+    {
+      "title": "Streamwave | Ride the Streaming Wave",
+      "url": "https://streamwave.io/",
+      "snippet": "Streamwave is a platform that connects small to medium-sized businesses with streaming channels and networks to advertise their products or services. Reach your target audience and increase your brand visibility with Streamwave."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    }
+  ]
+}

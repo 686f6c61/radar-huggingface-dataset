@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "adarrshDev/gemma-2-9b-it-plc-sft-r16",
+  "slug": "adarrshdev-gemma-2-9b-it-plc-sft-r16",
+  "author": "adarrshDev",
+  "url": "https://huggingface.co/adarrshDev/gemma-2-9b-it-plc-sft-r16",
+  "created_at": "2026-08-31T13:11:04.000Z",
+  "updated_at": "2026-08-31T13:13:57.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "gemma2",
+    "gemma-2-9b",
+    "qlora",
+    "sft",
+    "iec-61131-3",
+    "structured-text",
+    "plc",
+    "industrial-automation",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-2-9b-it-bnb-4bit",
+    "base_model:adapter:unsloth/gemma-2-9b-it-bnb-4bit",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 254755137,
+  "storage_human": "255 MB",
+  "base_model": "unsloth/gemma-2-9b-it-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-2-9b · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2-9b",
+      "snippet": "Code: Exposing the model to code helps it to learn the syntax and patterns of programming languages, which improves its ability to generate code or understand code-related questions. Mathematics: Training on mathematical text helps the model learn logical reasoning, symbolic representation, and to address mathematical queries."
+    },
+    {
+      "title": "google/gemma-2-9b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2-9b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 2 9B - Open Source AI Models",
+      "url": "https://opensourceaimodels.net/models/gemma-2-9b",
+      "snippet": "Mid-tier Gemma. Strong general-purpose chat model at small scale. The Gemma Terms of Use permit commercial use subject to Google&#x27;s prohibited-use policy."
+    },
+    {
+      "title": "GitHub - google-deepmind/gemma: Gemma open-weight LLM library, from ...",
+      "url": "https://github.com/google-deepmind/gemma",
+      "snippet": "Gemma is a family of open-weights Large Language Model (LLM) by Google DeepMind, based on Gemini research and technology. This repository contains the implementation of the gemma PyPI package. A JAX library to use and fine-tune Gemma. For examples and use cases, see our documentation. Please report issues and feedback in our GitHub."
+    },
+    {
+      "title": "GitHub - inferless/gemma-2-9b-it: Instruct-tuned model for instruction ...",
+      "url": "https://github.com/inferless/Gemma-2-9b-it",
+      "snippet": "Gemma-2-9b-it is an open-source AI language model developed by Google. It&#x27;s designed to be efficient and lightweight, making it suitable for various natural language processing tasks on resource-constrained devices."
+    }
+  ]
+}

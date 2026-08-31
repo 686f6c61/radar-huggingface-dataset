@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-Fbottom20abs-delta04-10240",
+  "slug": "enmingzhangzz-qwen2-5-vl-7b-opsd-visionzip-r010-fbottom20abs-delta04-10240",
+  "author": "enmingzhangzz",
+  "url": "https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-Fbottom20abs-delta04-10240",
+  "created_at": "2026-08-31T18:32:28.000Z",
+  "updated_at": "2026-08-31T18:32:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2.5-vl",
+    "opsd",
+    "visionzip",
+    "lora",
+    "image-text-to-text",
+    "dataset:OpenMMReasoner/OpenMMReasoner-SFT-874K",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161539072,
+  "storage_human": "162 MB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-10240 ...",
+      "url": "https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-10240",
+      "snippet": "Qwen2.5-VL-7B OPSD Official VisionZip r010 This repository contains the lightweight LoRA evaluation checkpoint from the completed 10,240-sample OPSD training run using the official VisionZip token selection implementation at a 10% visual-token retention ratio."
+    },
+    {
+      "title": "Qwen2.5-VL-7B-OPSD-VisionZip-r010-balanced-10240",
+      "url": "https://friendli.ai/models/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-balanced-10240",
+      "snippet": "Deploy Qwen2.5-VL-7B-OPSD-VisionZip-r010-balanced-10240 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Qwen/Qwen2.5-VL-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-VL Usage Guide - vLLM Recipes",
+      "url": "https://docs.vllm.ai/projects/recipes/en/stable/Qwen/Qwen2.5-VL.html",
+      "snippet": "Running Qwen2.5-VL-72B with BF16 There are two ways to parallelize the model over multiple GPUs: (1) Tensor-parallel (TP) or (2) Data-parallel (DP). Each one has its own advantages, where tensor-parallel is usually more beneficial for low-latency / low-load scenarios, and data-parallel works better for cases where there is a lot of data with heavy loads. To launch the online inference server ..."
+    },
+    {
+      "title": "GitHub - elsawhs/qwen2.5-vl: Qwen2.5-VL is the multimodal large ...",
+      "url": "https://github.com/elsawhs/qwen2.5-vl",
+      "snippet": "Qwen2.5-VL is the multimodal large language model series developed by Qwen team, Alibaba Cloud. - elsawhs/qwen2.5-vl"
+    }
+  ]
+}

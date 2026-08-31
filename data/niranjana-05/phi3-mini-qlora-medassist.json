@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "niranjana-05/phi3-mini-qlora-medassist",
+  "slug": "niranjana-05-phi3-mini-qlora-medassist",
+  "author": "niranjana-05",
+  "url": "https://huggingface.co/niranjana-05/phi3-mini-qlora-medassist",
+  "created_at": "2026-08-31T17:15:10.000Z",
+  "updated_at": "2026-08-31T17:15:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13091243,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "manobhi18sriram1/medassist-phi3-mini · Hugging Face",
+      "url": "https://huggingface.co/manobhi18sriram1/medassist-phi3-mini",
+      "snippet": "MedAssist Phi-3 Mini Fine-tuned Microsoft Phi-3 Mini 3.8B on 15,000 medical QA examples from ChatDoctor-HealthCareMagic dataset for clinical triage assistance."
+    },
+    {
+      "title": "phi3:mini - Ollama",
+      "url": "https://ollama.com/library/phi3:mini",
+      "snippet": "4k ollama run phi3:mini ollama run phi3:medium 128k ollama run phi3:medium-128k Phi-3 Mini Phi-3 Mini is a 3.8B parameters, lightweight, state-of-the-art open model trained with the Phi-3 datasets that includes both synthetic data and the filtered publicly available websites data with a focus on high-quality and reasoning dense properties."
+    },
+    {
+      "title": "nitinnovtech-ai-space/phi-3-mini-QLoRA · Hugging Face",
+      "url": "https://huggingface.co/nitinnovtech-ai-space/phi-3-mini-QLoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - priyankakamalanathan03-create/MedAssist-AI-Offline-Healthcare ...",
+      "url": "https://github.com/priyankakamalanathan03-create/MedAssist-AI-Offline-Healthcare-RAG-Assistant-with-Local-LLM-Inference/blob/main/",
+      "snippet": "MedAssist-AI: Offline Healthcare RAG Assistant with Local LLM Inference MedAssist-AI is an offline Retrieval-Augmented Generation (RAG) healthcare assistant that enables users to query medical literature, clinical guidelines, and healthcare documents locally. The system uses local LLM inference and vector-based retrieval to generate context-aware responses with page-level citations without ..."
+    },
+    {
+      "title": "qlora-medical-assistant/README.md at main · nadukayomal/qlora ... - GitHub",
+      "url": "https://github.com/nadukayomal/qlora-medical-assistant/blob/main/README.md",
+      "snippet": "🚀 QLoRA Medical AI Assistant An end-to-end fine-tuning a medical instruction-following LLM using QLoRA (4-bit quantization + Low-Rank Adaptation). Includes baseline inference, training, evaluation with LLM-as-Judge + ROUGE, safety red-teaming, and optional GGUF export for local inference."
+    }
+  ]
+}

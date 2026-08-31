@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "holyjar/densenet169_multilabel",
+  "slug": "holyjar-densenet169_multilabel",
+  "author": "holyjar",
+  "url": "https://huggingface.co/holyjar/densenet169_multilabel",
+  "created_at": "2026-08-31T17:09:05.000Z",
+  "updated_at": "2026-08-31T17:09:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "keras/densenet_169_imagenet · Hugging Face",
+      "url": "https://huggingface.co/keras/densenet_169_imagenet",
+      "snippet": "Model Overview DenseNet is a convolution network which densely connects each layer to every other layer in a feed-forward fashion. The model was originally evaluated on four object recognition benchmark tasks (CIFAR-10, CIFAR-100, SVHN, and ImageNet). See the model card below for benchmarks, data sources, and intended use cases."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=densenet169",
+      "snippet": "Explore machine learning models. 2 Full-text search Inference Available Edit filters Sort: Trending Active filters: densenet169 Clear all"
+    },
+    {
+      "title": "Multi-label DenseNet169 | Kaggle",
+      "url": "https://www.kaggle.com/code/noussaons/multi-label-densenet169",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from RSNA Intracranial Hemorrhage Detection"
+    },
+    {
+      "title": "Multilabel Classifier Using DenseNet-169 for Alzheimer&#x27;s disease",
+      "url": "https://ieeexplore.ieee.org/document/10165844",
+      "snippet": "In the proposed work, a Deep Learning Classifier using Convolutional Neural Network is proposed for classifying the stage of Alzheimer&#x27;s disease in a patient by using the DenseNet-169 CNN classifier with an accuracy of 91.80%. The model is trained on a MRI image database that contains MRI images of patients diagnosed with Alzheimer&#x27;s disease."
+    },
+    {
+      "title": "GitHub - Avinash-2803/Multilabel-object-detection",
+      "url": "https://github.com/Avinash-2803/Multilabel-object-detection",
+      "snippet": "The scene classification model is a custom hybrid architecture combining a DenseNet169 convolutional backbone with a multi-level Graph Convolutional Network for label dependency modelling."
+    }
+  ]
+}

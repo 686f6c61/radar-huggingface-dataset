@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "khazarai/Qwen3.8-max-Reasining-Distilled",
+  "slug": "khazarai-qwen3-8-max-reasining-distilled",
+  "author": "khazarai",
+  "url": "https://huggingface.co/khazarai/Qwen3.8-max-Reasining-Distilled",
+  "created_at": "2026-08-31T13:05:06.000Z",
+  "updated_at": "2026-08-31T13:05:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-0.8B",
+    "base_model:finetune:unsloth/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 1766931943,
+  "storage_human": "1.8 GB",
+  "base_model": "unsloth/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Max - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-max",
+      "snippet": "2.4-trillion-parameter MoE flagship delivering a comprehensive leap in coding and professional work. Autonomously codes and delivers complete projects spanning 10+ days. Handles hundreds of specialized tasks across legal, financial, design, and other professional domains, producing production-grade results end-to-end in a single conversation. Native visual understanding runs through the full ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    },
+    {
+      "title": "Qwen3.8-Max — Alibaba LLMs model | Heyaiwiki",
+      "url": "https://heyaiwiki.com/models/qwen3-8-max/",
+      "snippet": "Qwen3.8-Max is Alibaba&#x27;s August 3, 2026 flagship and, at 2.4 trillion parameters (95B active), the biggest model the Qwen team has published with benchmarks. The pitch: \"second only to Fable 5\" — and on agentic and research benchmarks, the numbers back it up. On deep software engineering? Not so much."
+    },
+    {
+      "title": "khazarai (Khazar AI) - Hugging Face",
+      "url": "https://huggingface.co/khazarai/collections",
+      "snippet": "AI & ML interests. Optimising LLM/SLMs for real-world impact. Recent Activity. Rustamshry updated a model about 1 month ago"
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    }
+  ]
+}

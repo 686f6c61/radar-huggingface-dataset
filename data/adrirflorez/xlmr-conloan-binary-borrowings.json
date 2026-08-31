@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "adrirflorez/xlmr-conloan-binary-borrowings",
+  "slug": "adrirflorez-xlmr-conloan-binary-borrowings",
+  "author": "adrirflorez",
+  "url": "https://huggingface.co/adrirflorez/xlmr-conloan-binary-borrowings",
+  "created_at": "2026-08-31T17:21:55.000Z",
+  "updated_at": "2026-08-31T17:22:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277454594,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1126940502,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arodriguezf/xlmr-multi-borrowings-conloan · Hugging Face",
+      "url": "https://huggingface.co/arodriguezf/xlmr-multi-borrowings-conloan",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "arodriguezf/xlmr-binary-borrowings · Hugging Face",
+      "url": "https://huggingface.co/arodriguezf/xlmr-binary-borrowings",
+      "snippet": "arodriguezf / xlmr-binary-borrowings like 0 Token Classification Transformers Safetensors xlm-roberta arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Use this model Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and ..."
+    },
+    {
+      "title": "Language Models Are Borrowing-Blind: A Multilingual Evaluation of ...",
+      "url": "https://arxiv.org/html/2510.26254v1",
+      "snippet": "Using ConLoan dataset, we evaluate the performance of a few LLMs and pretrained models for this task and show that, despite the differences in performance using different prompts, models and fine-tuning setups, the task is quite challenging for LLMs with an average F-score of less than 0.5."
+    },
+    {
+      "title": "GitHub - ZurichNLP/ConLoan: A Contrastive Multilingual Dataset for ...",
+      "url": "https://github.com/ZurichNLP/ConLoan",
+      "snippet": "ConLoan is a novel contrastive dataset comprising sentences with and without loanwords across 10 languages, namely Chinese, French, German, Greek, Icelandic, Italian, Northern Kurdish, Portuguese, Russian and Spanish."
+    },
+    {
+      "title": "fairseq/examples/xlmr/README.md at main - GitHub",
+      "url": "https://github.com/facebookresearch/fairseq/blob/main/examples/xlmr/README.md",
+      "snippet": "Facebook AI Research Sequence-to-Sequence Toolkit written in Python. - facebookresearch/fairseq"
+    }
+  ]
+}

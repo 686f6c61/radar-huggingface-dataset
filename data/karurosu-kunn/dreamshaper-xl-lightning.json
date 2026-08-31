@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Karurosu-kunn/dreamshaper-xl-lightning",
+  "slug": "karurosu-kunn-dreamshaper-xl-lightning",
+  "author": "Karurosu-kunn",
+  "url": "https://huggingface.co/Karurosu-kunn/dreamshaper-xl-lightning",
+  "created_at": "2026-08-31T16:30:23.000Z",
+  "updated_at": "2026-08-31T16:30:24.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "stable-diffusion",
+    "stable-diffusion-diffusers",
+    "stable-diffusion-xl",
+    "stable-diffusion-xl-lightning",
+    "text-to-image",
+    "art",
+    "artistic",
+    "anime",
+    "dreamshaper",
+    "turbo",
+    "lcm",
+    "en",
+    "license:openrail++",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 34692140366,
+  "storage_human": "34.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lykon/dreamshaper-xl-lightning · Hugging Face",
+      "url": "https://huggingface.co/Lykon/dreamshaper-xl-lightning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dreamshaper XL - Open Laboratory",
+      "url": "https://openlaboratory.com/models/dreamshaper-xl/",
+      "snippet": "Fine-Tuned on SDXL, this is a general purpose model designed for photos, art, anime, and manga. This Lightning version can generate quality images in few steps."
+    },
+    {
+      "title": "DreamShaper XL - Lightning DPM++ SDE | Stable Diffusion XL Checkpoint ...",
+      "url": "https://civitai.com/models/112902/dreamshaper-xl",
+      "snippet": "DreamShaper is a general purpose SD model that aims at doing everything well, photos, art, anime, manga. It&#x27;s designed to go against other general purpose models and pipelines like Midjourney and DALL-E."
+    },
+    {
+      "title": "DreamShaper XL — Versatile SDXL images with DreamShaper XL",
+      "url": "https://dreamshaperxl.com/",
+      "snippet": "Learn DreamShaper XL: Lykon&#x27;s general-purpose SDXL checkpoint for photo, art, anime, and more. Read plain-language guides, see Lightning settings, and try a free Hugging Face playground in your browser."
+    },
+    {
+      "title": "amd/dreamshaper-xl-lightning_io32_amdgpu · Hugging Face",
+      "url": "https://huggingface.co/amd/dreamshaper-xl-lightning_io32_amdgpu",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

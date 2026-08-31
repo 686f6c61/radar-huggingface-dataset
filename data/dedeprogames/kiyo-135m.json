@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "DedeProGames/Kiyo-135M",
+  "slug": "dedeprogames-kiyo-135m",
+  "author": "DedeProGames",
+  "url": "https://huggingface.co/DedeProGames/Kiyo-135M",
+  "created_at": "2026-08-31T16:16:49.000Z",
+  "updated_at": "2026-08-31T16:36:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "causal-lm",
+    "language-model",
+    "base-model",
+    "smollm",
+    "pytorch",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:HuggingFaceCode/stack-v3-train",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 269060552,
+  "storage_human": "269 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DedeProGames/KiyoCoder-Beta · Hugging Face",
+      "url": "https://huggingface.co/DedeProGames/KiyoCoder-Beta",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DedeProGames (DedeProGames) - Hugging Face",
+      "url": "https://huggingface.co/DedeProGames/datasets",
+      "snippet": "AI & ML interests ... Recent Activity new activity about 8 hours ago ... updated a model about 10 hours ago ... liked a model about 19 hours ago"
+    },
+    {
+      "title": "GitHub - dedeprogames-official/kiyocode: The open source coding agent ...",
+      "url": "https://github.com/dedeprogames-official/kiyocode",
+      "snippet": "The open source coding agent based on OpenCode. Contribute to dedeprogames-official/kiyocode development by creating an account on GitHub."
+    },
+    {
+      "title": "kiyocode/README.md at dev · dedeprogames-official/kiyocode",
+      "url": "https://github.com/dedeprogames-official/kiyocode/blob/dev/README.md",
+      "snippet": "The open source coding agent based on OpenCode. Contribute to dedeprogames-official/kiyocode development by creating an account on GitHub."
+    },
+    {
+      "title": "DedeProGames - ollama.com",
+      "url": "https://ollama.com/DedeProGames",
+      "snippet": "An open-source model based on GLM-4.7-Flash, optimized specifically for code generation and development workflows."
+    }
+  ]
+}

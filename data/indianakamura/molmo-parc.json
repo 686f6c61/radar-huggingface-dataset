@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Indianakamura/molmo-parc",
+  "slug": "indianakamura-molmo-parc",
+  "author": "Indianakamura",
+  "url": "https://huggingface.co/Indianakamura/molmo-parc",
+  "created_at": "2026-08-27T06:27:21.000Z",
+  "updated_at": "2026-08-31T15:30:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 0,
+  "parameters_human": null,
+  "storage_bytes": 21789501338,
+  "storage_human": "21.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Molmo | Ai2",
+      "url": "https://allenai.org/molmo",
+      "snippet": "Molmo is fully open source, with the model, weights, training procedure, and dataset completely accessible, enabling researchers to study how each step influences model behavior and performance transparently."
+    },
+    {
+      "title": "Indianakamura (Akiro Nakamura) - Hugging Face",
+      "url": "https://huggingface.co/Indianakamura/models",
+      "snippet": "User profile of Akiro Nakamura on Hugging Face"
+    },
+    {
+      "title": "Molmo AI: Open-Source Multimodal AI Model | Free & Powerful",
+      "url": "https://molmo.org/",
+      "snippet": "Discover Molmo AI, the state-of-the-art open-source multimodal AI model. Powerful, free, and easy to use. Learn how Molmo compares to other AI models."
+    },
+    {
+      "title": "GitHub - allenai/molmo: Code for the Molmo Vision-Language Model",
+      "url": "https://github.com/allenai/molmo",
+      "snippet": "Molmo is a repository for training and using Ai2&#x27;s state-of-the-art multimodal open language models. Here is a video demo of Molmo&#x27;s capabilities. Try Molmo using our public demo showcasing the Molmo-7B-D model. This codebase is based on the OLMo codebase with the addition of vision encoding and integrating generative evaluations."
+    },
+    {
+      "title": "allenai/Molmo-7B-O-0924 · Hugging Face",
+      "url": "https://huggingface.co/allenai/Molmo-7B-O-0924",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

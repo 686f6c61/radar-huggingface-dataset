@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MichaelJacksonFan1999/Ne-Yo2007-2008",
+  "slug": "michaeljacksonfan1999-ne-yo2007-2008",
+  "author": "MichaelJacksonFan1999",
+  "url": "https://huggingface.co/MichaelJacksonFan1999/Ne-Yo2007-2008",
+  "created_at": "2026-08-31T17:38:51.000Z",
+  "updated_at": "2026-08-31T17:46:38.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 242883568,
+  "storage_human": "243 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MichaelJacksonFan1999 (Michael Jackson) - Hugging Face",
+      "url": "https://huggingface.co/MichaelJacksonFan1999",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... published a model about 7 hours ago"
+    },
+    {
+      "title": "mjfan1999/Ne-Yo2007-2008 at main - Hugging Face",
+      "url": "https://huggingface.co/mjfan1999/Ne-Yo2007-2008/tree/main",
+      "snippet": "mjfan1999 / Ne-Yo2007-2008 like 0 License:unknown Model card FilesFiles and versions Community main Ne-Yo2007-2008 1 contributor History:2 commits mjfan1999 Upload Ne-Yo2007-2008.zip ffc9501 verifiedabout 2 months ago .gitattributes 1.52 kB initial commitabout 2 months ago Ne-Yo2007-2008.zip pickle 243 MB LFS Upload Ne-Yo2007-2008.zipabout 2 months ago README.md 28 Bytes initial commitabout 2 ..."
+    },
+    {
+      "title": "Ne-Yo (2007-2008) (RVC v2) (300 Epochs) (RMVPE) AI Voice Model",
+      "url": "https://voice-models.com/model/1u3kPX1VC7e",
+      "snippet": "Ne-Yo (2007-2008) (RVC v2) (300 Epochs) (RMVPE) AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "MichaelJacksonFan1999 - YouTube",
+      "url": "https://www.youtube.com/channel/UCA2tbouLw0d2AF8MMtaDWfw",
+      "snippet": "Michael Jackson (A.I.) - Part of The List (Ne-Yo Cover) (A.I. Model #2) 34 views4 days ago 4:09"
+    },
+    {
+      "title": "MichaelJacksonFan1999 - YouTube Music",
+      "url": "https://music.youtube.com/channel/UCA2tbouLw0d2AF8MMtaDWfw",
+      "snippet": "Profile • @MichaelJacksonFan1999-qg4qx Michael Jackson (A.I.) - Part of The List (Ne-Yo Cover) (A.I. Model #2)"
+    }
+  ]
+}

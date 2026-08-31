@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ChemLlama-1B-GGUF",
+  "slug": "mradermacher-chemllama-1b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ChemLlama-1B-GGUF",
+  "created_at": "2026-08-31T13:13:34.000Z",
+  "updated_at": "2026-08-31T13:21:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:yerevann/ChemLlama-1B",
+    "base_model:quantized:yerevann/ChemLlama-1B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814400,
+  "parameters_human": "1.24B",
+  "storage_bytes": 11604156032,
+  "storage_human": "11.6 GB",
+  "base_model": "yerevann/ChemLlama-1B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/manaca-1b-base-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/manaca-1b-base-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/llama-1b-ai-mentor-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/llama-1b-ai-mentor-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF model list",
+      "url": "https://mitjafelicijan.github.io/gguf-list/",
+      "snippet": "GGUF model list Generated on 2025-02-27 17:51:07 (download collections.json)"
+    },
+    {
+      "title": "ModelFitCheck — will this LLM fit your GPU?",
+      "url": "https://modelfitcheck.com/",
+      "snippet": "Free browser-based tool that detects your hardware and instantly tells you which local LLMs and GGUF quantizations will fit in your VRAM. No signup, no data sent."
+    }
+  ]
+}

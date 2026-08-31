@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/STL-Davlan-bert-base-multilingual-finetuned-amharic-stance",
+  "slug": "tadiecool29-stl-davlan-bert-base-multilingual-finetuned-amharic-stance",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/STL-Davlan-bert-base-multilingual-finetuned-amharic-stance",
+  "created_at": "2026-08-31T17:50:49.000Z",
+  "updated_at": "2026-08-31T17:51:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:Davlan/bert-base-multilingual-cased-finetuned-amharic",
+    "base_model:finetune:Davlan/bert-base-multilingual-cased-finetuned-amharic",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 177856516,
+  "parameters_human": "177.9M",
+  "storage_bytes": 711455489,
+  "storage_human": "711 MB",
+  "base_model": "Davlan/bert-base-multilingual-cased-finetuned-amharic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MTL-Davlan-bert-base-multilingual-cased-finetuned-amharic",
+      "url": "https://huggingface.co/tadiecool29/MTL-Davlan-bert-base-multilingual-cased-finetuned-amharic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bert-base-multilingual-cased-finetuned-amharic - Hugging Face",
+      "url": "https://huggingface.co/Davlan/bert-base-multilingual-cased-finetuned-amharic",
+      "snippet": "It provides better performance than the multilingual Amharic on named entity recognition datasets. Specifically, this model is a bert-base-multilingual-cased model that was fine-tuned on Amharic corpus using Amharic vocabulary. Intended uses & limitations How to use You can use this model with Transformers pipeline for masked token prediction."
+    },
+    {
+      "title": "Davlan/bert-base-multilingual-cased-finetuned-amharic · Hugging Face",
+      "url": "https://huface.ru/Davlan/bert-base-multilingual-cased-finetuned-amharic",
+      "snippet": "Model description bert-base-multilingual-cased-finetuned-amharic is a Amharic BERT model obtained by replacing mBERT vocabulary by amharic vocabulary because the language was not supported, and fine-tuning bert-base-multilingual-cased model on Amharic language texts. It provides better performance than the multilingual Amharic on named entity recognition datasets."
+    },
+    {
+      "title": "Davlan/bert-base-multilingual-cased-ner-hrl - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/1752",
+      "snippet": "Model description bert-base-multilingual-cased-ner-hrl is a Named Entity Recognition model for 10 high resourced languages (Arabic, German, English, Spanish, French, Italian, Latvian, Dutch, Portuguese and Chinese) based on a fine-tuned mBERT base model."
+    },
+    {
+      "title": "Deploy Davlan/bert-base-multilingual-cased-finetuned-amharic ...",
+      "url": "https://endpoints.huggingface.co/new?repository=Davlan%2Fbert-base-multilingual-cased-finetuned-amharic",
+      "snippet": "Deploy bert-base-multilingual-cased-finetuned-amharic for fill-mask inference in 1 click."
+    }
+  ]
+}

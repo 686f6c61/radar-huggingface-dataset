@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "rukawa001/round9",
+  "slug": "rukawa001-round9",
+  "author": "rukawa001",
+  "url": "https://huggingface.co/rukawa001/round9",
+  "created_at": "2026-08-25T00:34:12.000Z",
+  "updated_at": "2026-08-31T11:45:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 2152330496,
+  "parameters_human": "2.15B",
+  "storage_bytes": 17612793776,
+  "storage_human": "17.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rukawa001 (RukawA) - Hugging Face",
+      "url": "https://huggingface.co/rukawa001",
+      "snippet": "User profile of RukawA on Hugging Face Recent Activity published a model4 days ago rukawa001/2016 updated a dataset4 days ago rukawa001/sn38-submission updated a model4 days ago rukawa001/2016 View all activity"
+    },
+    {
+      "title": "build-dataset/RUNBOOK.md at main · rukawa001/build-dataset",
+      "url": "https://github.com/rukawa001/build-dataset/blob/main/RUNBOOK.md",
+      "snippet": "Contribute to rukawa001/build-dataset development by creating an account on GitHub."
+    },
+    {
+      "title": "rukawa001/2016 · Hugging Face",
+      "url": "https://huggingface.co/rukawa001/2016",
+      "snippet": "rukawa001 / 2016 like 0 Safetensors sn38-nanoexpand Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 33 Safetensors Model size 2B params Tensor type BF16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "nvidia-dgx-spark-model-benchmark/scripts/run_round9_model.py ... - GitHub",
+      "url": "https://github.com/teaql/nvidia-dgx-spark-model-benchmark/blob/main/scripts/run_round9_model.py",
+      "snippet": "Contribute to teaql/nvidia-dgx-spark-model-benchmark development by creating an account on GitHub."
+    },
+    {
+      "title": "rukawa AI Models | Civitai",
+      "url": "https://civitai.com/tag/rukawa",
+      "snippet": "Browse 1 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with rukawa."
+    }
+  ]
+}

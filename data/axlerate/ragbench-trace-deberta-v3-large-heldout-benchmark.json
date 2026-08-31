@@ -1,0 +1,131 @@
+{
+  "schema": 1,
+  "id": "axlerate/ragbench-trace-deberta-v3-large-heldout-benchmark",
+  "slug": "axlerate-ragbench-trace-deberta-v3-large-heldout-benchmark",
+  "author": "axlerate",
+  "url": "https://huggingface.co/axlerate/ragbench-trace-deberta-v3-large-heldout-benchmark",
+  "created_at": "2026-08-31T02:43:15.000Z",
+  "updated_at": "2026-08-31T11:47:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ragbench-trace-deberta",
+    "feature-extraction",
+    "rag",
+    "rag-evaluation",
+    "ragbench",
+    "trace",
+    "deberta-v3",
+    "token-classification",
+    "hallucination-detection",
+    "benchmark",
+    "custom_code",
+    "en",
+    "dataset:galileo-ai/ragbench",
+    "arxiv:2407.11005",
+    "base_model:MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+    "base_model:finetune:MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 434015235,
+  "parameters_human": "434.0M",
+  "storage_bytes": 2606768613,
+  "storage_human": "2.6 GB",
+  "base_model": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "RAGBench TRACe scoring",
+      "dataset": "RAGBench held-out validation",
+      "metric": "Hallucination AUROC",
+      "value": 0.8801635383
+    },
+    {
+      "task": "RAGBench TRACe scoring",
+      "dataset": "RAGBench held-out validation",
+      "metric": "Adherence accuracy",
+      "value": 0.881827112
+    },
+    {
+      "task": "RAGBench TRACe scoring",
+      "dataset": "RAGBench held-out validation",
+      "metric": "Relevance Spearman",
+      "value": 0.8081464318
+    },
+    {
+      "task": "RAGBench TRACe scoring",
+      "dataset": "RAGBench held-out validation",
+      "metric": "Relevance RMSE",
+      "value": 0.2561082979
+    },
+    {
+      "task": "RAGBench TRACe scoring",
+      "dataset": "RAGBench held-out validation",
+      "metric": "Utilization Spearman",
+      "value": 0.86674049
+    },
+    {
+      "task": "RAGBench TRACe scoring",
+      "dataset": "RAGBench held-out validation",
+      "metric": "Utilization RMSE",
+      "value": 0.1608689759
+    },
+    {
+      "task": "RAGBench TRACe scoring",
+      "dataset": "RAGBench held-out validation",
+      "metric": "Completeness Spearman",
+      "value": 0.2423777091
+    },
+    {
+      "task": "RAGBench TRACe scoring",
+      "dataset": "RAGBench held-out validation",
+      "metric": "Completeness RMSE",
+      "value": 0.34340992
+    }
+  ],
+  "sources": [
+    {
+      "title": "ragbench-trace-deberta-v3-large-heldout-benchmark - Hugging Face",
+      "url": "https://huggingface.co/axlerate/ragbench-trace-deberta-v3-large-heldout-benchmark",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "microsoft/deberta-v3-large · Hugging Face",
+      "url": "https://huggingface.co/microsoft/deberta-v3-large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RAGBench: Explainable Benchmark for Retrieval-Augmented Generation Systems",
+      "url": "https://arxiv.org/html/2407.11005v2",
+      "snippet": "We find that a 400M-parameter DeBERTa-large model that was fine-tuned on RAGBench outperforms few-shot LLM judges across numerous domains and task types. We highlight this result to motivate future work aimed at leveraging these data for advancing RAG evaluation models and improving on the proposed benchmark."
+    },
+    {
+      "title": "GitHub - microsoft/DeBERTa: The implementation of DeBERTa",
+      "url": "https://github.com/microsoft/DeBERTa",
+      "snippet": "The implementation of DeBERTa. Contribute to microsoft/DeBERTa development by creating an account on GitHub."
+    },
+    {
+      "title": "microsoft/DeBERTa | DeepWiki",
+      "url": "https://deepwiki.com/microsoft/DeBERTa",
+      "snippet": "DeBERTa v3: Incorporated ELECTRA-style pre-training with gradient-disentangled embedding sharing The DeBERTa-v2-XXLarge model was the first to surpass both T5-11B and human performance on the SuperGLUE benchmark with a score of 89.9 (versus human baseline of 89.8)."
+    }
+  ]
+}

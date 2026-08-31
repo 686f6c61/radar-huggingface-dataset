@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "cyankiwi/GLM-5.3-Flash-AWQ-INT4",
+  "slug": "cyankiwi-glm-5-3-flash-awq-int4",
+  "author": "cyankiwi",
+  "url": "https://huggingface.co/cyankiwi/GLM-5.3-Flash-AWQ-INT4",
+  "created_at": "2026-08-29T05:30:29.000Z",
+  "updated_at": "2026-08-31T13:05:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "awq",
+    "int4",
+    "compressed-tensors",
+    "mtp",
+    "multimodal",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 427,
+  "trending_score": 0,
+  "parameters": 59935057392,
+  "parameters_human": "59.94B",
+  "storage_bytes": 212758601959,
+  "storage_human": "212.8 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cyankiwi/GLM-5.3-Flash-AWQ-INT4 · Hugging Face",
+      "url": "https://huggingface.co/cyankiwi/GLM-5.3-Flash-AWQ-INT4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cyankiwi (cyankiwi) - Hugging Face",
+      "url": "https://huggingface.co/cyankiwi",
+      "snippet": "Make open-source AI accessible cpatonn published a model about 21 hours ago"
+    },
+    {
+      "title": "GLM-5.3-Flash - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "snippet": "Model Overview GLM-5.3-Flash is the first native multimodal model in the GLM-5 series, delivering stronger intelligence than GLM-5.2 at an exceptionally low cost. Highly Efficient Hybrid Architecture GLM-5.3-Flash has 320B total parameters with 18B activated."
+    },
+    {
+      "title": "How to Run GLM-5.3-Flash Locally (2026 Guide) - codersera.com",
+      "url": "https://codersera.com/blog/how-to-run-glm-5-3-flash-locally-2026/",
+      "snippet": "Z.ai published the GLM-5.3-Flash weights on Hugging Face on 25 August 2026 under an MIT licence — the model that had been serving anonymously as \"Ox Alpha\" on OpenRouter."
+    },
+    {
+      "title": "GLM-5.3-Flash: Frontier Intelligence, Flash Cost - z.ai",
+      "url": "https://z.ai/blog/glm-5.3-flash",
+      "snippet": "The model weights of GLM-5.3-Flash are publicly available on HuggingFace. For local deployment, GLM-5.3-Flash currently supports inference frameworks including SGLang, vLLM and TokenSpeed. Others will be ready soon."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "inferenceport-ai/Pixal3D",
+  "slug": "inferenceport-ai-pixal3d",
+  "author": "inferenceport-ai",
+  "url": "https://huggingface.co/inferenceport-ai/Pixal3D",
+  "created_at": "2026-08-31T17:38:19.000Z",
+  "updated_at": "2026-08-31T17:38:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-to-3d",
+    "arxiv:2605.10922",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24044852614,
+  "storage_human": "24.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pixal3D - Free AI Image to 3D Generator.",
+      "url": "https://pixal3d.net/",
+      "snippet": "Pixal3D is a free AI image-to-3D generator powered by the MIT-licensed Pixal3D project from TencentARC. Upload an image and generate 3D models online."
+    },
+    {
+      "title": "Pixal3D - AI 3D Model Generator for Creators and Teams | Pixal3D",
+      "url": "https://www.pixal3d.app/en",
+      "snippet": "Pixal3D is an online AI 3D model generator that turns images and text prompts into textured 3D assets. It is built for creators, small businesses, game teams, product designers, agencies, and studios that need usable 3D models without starting from scratch in modeling software."
+    },
+    {
+      "title": "GitHub - TencentARC/Pixal3D: [SIGGRAPH 2026] Pixal3D: Pixel-Aligned 3D ...",
+      "url": "https://github.com/TencentARC/Pixal3D",
+      "snippet": "Pixal3D generates high-fidelity 3D assets from a single image. Unlike previous methods that loosely inject image features via attention, Pixal3D explicitly lifts pixel features into 3D through back-projection, establishing direct pixel-to-3D correspondences. This enables near-reconstruction-level fidelity with detailed geometry and PBR textures."
+    },
+    {
+      "title": "Pixal3D (Pixel3D) AI 3D Generator | Image to GLB",
+      "url": "https://pixal3d.ai/",
+      "snippet": "Looking for Pixel3D? Pixal3D turns one image into pixel-aligned GLB models with back-projection, PBR textures, and review-ready 3D controls on pixal3d.ai."
+    },
+    {
+      "title": "Pixal3D - Free AI 3D Model Generator | Image to 3D Online",
+      "url": "https://pixal3d.art/",
+      "snippet": "Pixal3D is a free online AI 3D generator that converts images to high-quality 3D models. Try Pixal3D image to 3D conversion instantly. Powered by Tencent ARC research."
+    }
+  ]
+}

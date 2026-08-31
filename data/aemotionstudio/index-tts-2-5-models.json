@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "AEmotionStudio/index-tts-2-5-models",
+  "slug": "aemotionstudio-index-tts-2-5-models",
+  "author": "AEmotionStudio",
+  "url": "https://huggingface.co/AEmotionStudio/index-tts-2-5-models",
+  "created_at": "2026-08-31T15:21:32.000Z",
+  "updated_at": "2026-08-31T15:28:10.000Z",
+  "license": "bilibili-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "indextts",
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "es",
+    "ar"
+  ],
+  "tags": [
+    "indextts",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "zero-shot",
+    "voice-cloning",
+    "multilingual",
+    "cross-lingual",
+    "emotion-controllable",
+    "zh",
+    "en",
+    "ja",
+    "es",
+    "ar",
+    "arxiv:2601.03888",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5080644230,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AEmotionStudio/index-tts-2-models at main - Hugging Face",
+      "url": "https://huggingface.co/AEmotionStudio/index-tts-2-models/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AEmotionStudio/index-tts-2-models · Hugging Face",
+      "url": "https://huggingface.co/AEmotionStudio/index-tts-2-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - index-tts/index-tts: An Industrial-Level Controllable and ...",
+      "url": "https://github.com/index-tts/index-tts",
+      "snippet": "2025/09/08 🔥 We release IndexTTS-2 The first autoregressive TTS model with precise synthesis duration control, supporting both controllable and uncontrollable modes. This functionality is not yet enabled in this release. Highly expressive emotional speech synthesis, with emotion control through multiple input modalities."
+    },
+    {
+      "title": "GitHub - sjcjack/index-tts2: An Industrial-Level Controllable and ...",
+      "url": "https://github.com/sjcjack/index-tts2",
+      "snippet": "The key contributions of IndexTTS2 are summarized as follows: We propose a duration adaptation scheme for autoregressive TTS models. IndexTTS2 is the first autoregressive zero-shot TTS model to combine precise duration control with natural duration generation, and the method is scalable for any autoregressive large-scale TTS model."
+    },
+    {
+      "title": "IndexTTS2: A Breakthrough in Emotionally Expressive and Duration ...",
+      "url": "https://index-tts.github.io/index-tts2.github.io/",
+      "snippet": "IndexTTS2 achieves, for the first time, precise control over speech duration in autoregressive TTS models. This section demonstrates the model&#x27;s capability in duration-controlled synthesis, where three different target durations are specified for each test case."
+    }
+  ]
+}

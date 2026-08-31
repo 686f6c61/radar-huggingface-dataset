@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/STL-rasyosef-bert-medium-amharic-finetuned-sentiment-stance",
+  "slug": "tadiecool29-stl-rasyosef-bert-medium-amharic-finetuned-sentiment-stance",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/STL-rasyosef-bert-medium-amharic-finetuned-sentiment-stance",
+  "created_at": "2026-08-31T18:11:46.000Z",
+  "updated_at": "2026-08-31T18:12:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:rasyosef/bert-medium-amharic-finetuned-sentiment",
+    "base_model:finetune:rasyosef/bert-medium-amharic-finetuned-sentiment",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 40428036,
+  "parameters_human": "40.4M",
+  "storage_bytes": 161733761,
+  "storage_human": "162 MB",
+  "base_model": "rasyosef/bert-medium-amharic-finetuned-sentiment",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "STL-rasyosef-bert-medium-amharic-finetuned-sentiment-stance",
+      "url": "https://huggingface.co/tadiecool29/STL-rasyosef-bert-medium-amharic-finetuned-sentiment-stance",
+      "snippet": "This model is a fine-tuned version of rasyosef/bert-medium-amharic-finetuned-sentiment on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "rasyosef/bert-medium-amharic · Hugging Face",
+      "url": "https://huggingface.co/rasyosef/bert-medium-amharic",
+      "snippet": "bert-medium-amharic This model has the same architecture as bert-medium and was pretrained from scratch using the Amharic subsets of the oscar, mc4, and amharic-sentences-corpus datasets, on a total of 290 Million tokens. The tokenizer was trained from scratch on the same text corpus, and had a vocabulary size of 28k."
+    },
+    {
+      "title": "GitHub - rasyosef/bert-amharic: BERT transformer models pretrained on ...",
+      "url": "https://github.com/rasyosef/bert-amharic",
+      "snippet": "This repo contains 4 BERT transformer models pretrained on 290 million tokens of Amharic text. All four models have a context length of 512 tokens and the same tokenizer with a vocabulary size of 28672 tokens. The size of these models ranges from 4 Million to 40 Million parameters."
+    },
+    {
+      "title": "rasyosef/amharic-sentiment-classification - GitHub",
+      "url": "https://github.com/rasyosef/amharic-sentiment-classification",
+      "snippet": "The following models were finetuned using the amharic-sentiment dataset. The finetuning notebooks can be found in the notebooks folder. The reported precision, recall, and f1 metrics are macro averages."
+    },
+    {
+      "title": "Projects - Yosef Worku Alemneh - rasyosef.github.io",
+      "url": "https://rasyosef.github.io/projects.html",
+      "snippet": "The 400M model was instruction-tuned on approximately 20k Amharic poems, stories, jokes, and Wikipedia articles. The models generate fluent Amharic text, while the Instruct versions support conversations, question answering, sentiment and text classification, and creative writing."
+    }
+  ]
+}

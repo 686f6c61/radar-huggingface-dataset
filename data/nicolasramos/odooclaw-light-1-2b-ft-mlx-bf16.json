@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "nicolasramos/odooclaw-light-1.2b-ft-mlx-bf16",
+  "slug": "nicolasramos-odooclaw-light-1-2b-ft-mlx-bf16",
+  "author": "nicolasramos",
+  "url": "https://huggingface.co/nicolasramos/odooclaw-light-1.2b-ft-mlx-bf16",
+  "created_at": "2026-08-31T16:01:17.000Z",
+  "updated_at": "2026-08-31T16:21:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2",
+    "odoo",
+    "odooclaw",
+    "tool-calling",
+    "function-calling",
+    "mcp",
+    "erp",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "es",
+    "en",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:finetune:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 2340697867,
+  "storage_human": "2.3 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nicolasramos/odooclaw-light-1.2b-ft · Hugging Face",
+      "url": "https://huggingface.co/nicolasramos/odooclaw-light-1.2b-ft",
+      "snippet": "nicolasramos / odooclaw-light-1.2b-ft like 0 Text Generation GGUF Spanish English odoo odooclaw tool-calling function-calling mcp erp llama-cpp conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "OdooClaw - a nicolasramos Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/nicolasramos/odooclaw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - nicolasramos/odooclaw",
+      "url": "https://github.com/nicolasramos/odooclaw",
+      "snippet": "OdooClaw 1.0 ships with its own trained models — and remains fully model-agnostic. You can run OdooClaw with: Our models (OdooClaw Light 1.2B + Vision, published on HuggingFace) — 100% local, open source (MIT), free forever Your own models — any OpenAI-compatible endpoint: local (llama.cpp, oMLX/MLX, Ollama, vLLM) or cloud (OpenAI, Anthropic, DeepSeek, Gemini, Groq, OpenRouter, Moonshot ..."
+    },
+    {
+      "title": "GitHub - nicolasramos/odooclaw",
+      "url": "https://github.com/nicolasramos/odooclaw/tree/main",
+      "snippet": "Load Balancing If you manage a huge Odoo instance with hundreds of users querying the AI, you can configure multiple API keys/endpoints for the same model name, and OdooClaw will automatically round-robin between them to prevent rate-limiting!"
+    },
+    {
+      "title": "OdooClaw 1.0 — Next Generation · 100% Local AI for Odoo",
+      "url": "https://odooclaw.dev/",
+      "snippet": "OdooClaw 1.0 is the first stable release of the Next Generation: a complete, 100% local AI system for Odoo with its own trained models — no subscriptions, no cloud, no API keys."
+    }
+  ]
+}

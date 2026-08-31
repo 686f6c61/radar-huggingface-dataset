@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "12B-Suite/Mtreelva-Dune-12B-Q8_0-GGUF",
+  "slug": "12b-suite-mtreelva-dune-12b-q8_0-gguf",
+  "author": "12B-Suite",
+  "url": "https://huggingface.co/12B-Suite/Mtreelva-Dune-12B-Q8_0-GGUF",
+  "created_at": "2026-08-31T13:14:00.000Z",
+  "updated_at": "2026-08-31T13:33:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "id",
+    "ar",
+    "fr",
+    "ary"
+  ],
+  "tags": [
+    "transformers",
+    "mergekit",
+    "merge",
+    "flux",
+    "reelva",
+    "conversational",
+    "companion-ai",
+    "roleplay",
+    "coding",
+    "agentic",
+    "reasoning",
+    "text-generation",
+    "gemma",
+    "gemma4",
+    "12B",
+    "peft",
+    "safetensors",
+    "indonesian",
+    "moroccan-darija",
+    "darija",
+    "en",
+    "id",
+    "ar",
+    "fr",
+    "ary",
+    "base_model:12B-Suite/Mtreelva-Dune-12B",
+    "base_model:finetune:12B-Suite/Mtreelva-Dune-12B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "12B-Suite/Mtreelva-Dune-12B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Mistral-Nemo-12B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Mistral-Nemo-12B-Instruct-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nvidia/Mistral-NeMo-12B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Mistral-NeMo-12B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "mistral-nemo:12b-instruct-2407-q8_0 - Ollama",
+      "url": "https://ollama.com/library/mistral-nemo:12b-instruct-2407-q8_0",
+      "snippet": "A state-of-the-art 12B model with 128k context length, built by Mistral AI in collaboration with NVIDIA."
+    },
+    {
+      "title": "mistral-nemo:12b - Ollama",
+      "url": "https://ollama.com/library/mistral-nemo:12b",
+      "snippet": "A state-of-the-art 12B model with 128k context length, built by Mistral AI in collaboration with NVIDIA."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Raushan1310/career",
+  "slug": "raushan1310-career",
+  "author": "Raushan1310",
+  "url": "https://huggingface.co/Raushan1310/career",
+  "created_at": "2026-08-31T18:06:33.000Z",
+  "updated_at": "2026-08-31T18:06:33.000Z",
+  "license": "llama4",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:llama4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Раушан (@raushan1310) • Instagram photos and videos",
+      "url": "https://www.instagram.com/raushan1310/",
+      "snippet": "828 Followers, 1,202 Following, 5 Posts - See Instagram photos and videos from Раушан (@raushan1310)"
+    },
+    {
+      "title": "#ai #careergrowth #learning #jobready #futureskills - LinkedIn",
+      "url": "https://www.linkedin.com/posts/raushan-kumar-641608360_ai-careergrowth-learning-activity-7440283022358159361-GyGl",
+      "snippet": "I&#x27;m happy to share that I have completed Phase 1.4: Career Readiness Using AI from the AI Career Accelerator Program by be10x. In this phase, I learned how to use AI to improve my career and job ..."
+    },
+    {
+      "title": "AI-Powered Career Guidance: A Scalable Model for Personalized ...",
+      "url": "https://ieeexplore.ieee.org/document/11373141",
+      "snippet": "The primary objective of this study is to enhance career guidance in higher education institutions (HEIs) by integrating Holland&#x27;s RIASEC model with advanced machine learning algorithms. Traditional career counselling methods, which often rely on matching interests with vocational categories, struggle to accommodate the complexities of the modern job market. This works aims to bridge that ..."
+    },
+    {
+      "title": "AI job scams are booming - and I was fooled by one. Here is how to ...",
+      "url": "https://www.theguardian.com/money/2026/apr/21/how-to-avoid-ai-online-job-recruitment-scams",
+      "snippet": "Here is how to avoid them Fraudsters are using the promise of fake roles to trick job-seekers out of money, personal information or both, and with the help of AI they are more convincing than ever."
+    },
+    {
+      "title": "CareerAI | Online Resume Builder - Create Professional Resumes",
+      "url": "https://www.careerai.io/",
+      "snippet": "Get Hired Faster with Powerful AI Career Tools Create ATS-friendly resumes in minutes, write personalized cover letters, practice real interview scenarios, and match your resume to any job description — all inside CareerAI."
+    }
+  ]
+}

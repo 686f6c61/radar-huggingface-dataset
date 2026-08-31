@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "furiosa-ai/bge-reranker-v2-m3",
+  "slug": "furiosa-ai-bge-reranker-v2-m3",
+  "author": "furiosa-ai",
+  "url": "https://huggingface.co/furiosa-ai/bge-reranker-v2-m3",
+  "created_at": "2026-08-31T15:31:21.000Z",
+  "updated_at": "2026-08-31T15:31:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sentence-transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "transformers",
+    "text-embeddings-inference",
+    "multilingual",
+    "arxiv:2312.15503",
+    "arxiv:2402.03216",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 567755777,
+  "parameters_human": "567.8M",
+  "storage_bytes": 2293239176,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI/bge-reranker-v2-m3 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-reranker-v2-m3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BGE Reranker v2 m3 | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/bge-reranker-v2-m3/",
+      "snippet": "BGE Reranker v2 m3 is the 568M lightweight reranker in the v2 family. The docs describe it as multilingual, easy to deploy, and fast at inference, while still offering strong reranking ability across languages."
+    },
+    {
+      "title": "BAAI/bge-reranker-v2-m3 at main - Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-reranker-v2-m3/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bge",
+      "url": "https://bge.baai.ac.cn/",
+      "snippet": "Intro to BGE Models BGE builds a one-stop retrieval toolkit for search and RAG. We provide inference, evaluation, and fine-tuning for embedding models and reranker."
+    },
+    {
+      "title": "Bge Reranker V2 M3 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/bge-reranker-v2-m3.html",
+      "snippet": "Download Bge Reranker V2 M3 GGUF model. 4.13 GB, 19,475 downloads, 40 likes."
+    }
+  ]
+}

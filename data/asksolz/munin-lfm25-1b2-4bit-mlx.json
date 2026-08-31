@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "asksolz/munin-lfm25-1b2-4bit-mlx",
+  "slug": "asksolz-munin-lfm25-1b2-4bit-mlx",
+  "author": "asksolz",
+  "url": "https://huggingface.co/asksolz/munin-lfm25-1b2-4bit-mlx",
+  "created_at": "2026-08-31T11:38:17.000Z",
+  "updated_at": "2026-08-31T11:38:29.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2",
+    "munin",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct-MLX-4bit",
+    "base_model:quantized:LiquidAI/LFM2.5-1.2B-Instruct-MLX-4bit",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 182975232,
+  "parameters_human": "183.0M",
+  "storage_bytes": 658540250,
+  "storage_human": "659 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct-MLX-4bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "asksolz (Ask Solz) - Hugging Face",
+      "url": "https://huggingface.co/asksolz",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model about 4 hours ago"
+    },
+    {
+      "title": "asksolz (Ask Solz) - Hugging Face",
+      "url": "https://huggingface.co/asksolz/models",
+      "snippet": "asksolz&#x27;s models3 Sort: Recently updated asksolz/munin-qwen25-0b5-4bit-mlx Text Generation • 77.3M•Updated Apr 28• 16"
+    },
+    {
+      "title": "GitHub - ml-explore/mlx-lm: Run LLMs with MLX · GitHub",
+      "url": "https://github.com/ml-explore/mlx-lm",
+      "snippet": "MLX LM is a Python package for generating text and fine-tuning large language models on Apple silicon with MLX. Some key features include: Integration with the Hugging Face Hub to easily use thousands of LLMs with a single command. Support for quantizing and uploading models to the Hugging Face Hub. Low-rank and full model fine-tuning with support for quantized models. Distributed inference ..."
+    },
+    {
+      "title": "GitHub - Blaizzy/mlx-vlm: MLX-VLM is a package for inference and fine ...",
+      "url": "https://github.com/Blaizzy/mlx-vlm",
+      "snippet": "MLX-VLM is a package for inference and fine-tuning of Vision Language Models (VLMs) and Omni Models (VLMs with audio and video support) on your Mac using MLX."
+    },
+    {
+      "title": "LFM2.5-1.2B-Thinking: On-Device Reasoning Under 1GB - liquid.ai",
+      "url": "https://www.liquid.ai/blog/lfm2-5-1-2b-thinking-on-device-reasoning-under-1gb",
+      "snippet": "Today, we are releasing LFM2.5-1.2B-Thinking, a reasoning model that runs entirely on-device. It fits within 900 MB of memory on a phone and delivers both the fastest inference speed and the best quality for its size. What required a data center two years ago now runs offline in your pocket."
+    }
+  ]
+}

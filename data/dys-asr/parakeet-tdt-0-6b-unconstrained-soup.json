@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "dys-asr/parakeet-tdt-0.6b-unconstrained-soup",
+  "slug": "dys-asr-parakeet-tdt-0-6b-unconstrained-soup",
+  "author": "dys-asr",
+  "url": "https://huggingface.co/dys-asr/parakeet-tdt-0.6b-unconstrained-soup",
+  "created_at": "2026-08-31T15:53:46.000Z",
+  "updated_at": "2026-08-31T15:54:16.000Z",
+  "license": "speech-accessibility-project-dua",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "parakeet_tdt",
+    "feature-extraction",
+    "automatic-speech-recognition",
+    "dysarthria",
+    "disordered-speech",
+    "accessibility",
+    "parakeet",
+    "tdt",
+    "transducer",
+    "model-soup",
+    "en",
+    "base_model:nvidia/parakeet-tdt-0.6b-v3",
+    "base_model:finetune:nvidia/parakeet-tdt-0.6b-v3",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 627057286,
+  "parameters_human": "627.1M",
+  "storage_bytes": 2508311120,
+  "storage_human": "2.5 GB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "SAPC2 dev, speakers held out of SAPC1 dev",
+      "metric": "WER",
+      "value": 10.67
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "SAPC2 dev, speakers held out of SAPC1 dev",
+      "metric": "CER",
+      "value": 6.49
+    }
+  ],
+  "sources": [
+    {
+      "title": "dys-asr/parakeet-tdt-0.6b-all-aug · Hugging Face",
+      "url": "https://huggingface.co/dys-asr/parakeet-tdt-0.6b-all-aug",
+      "snippet": "dys-asr / parakeet-tdt-.6b-all-aug like 0 Follow DysASR 2 Automatic Speech Recognition Transformers Safetensors English parakeet_tdt feature-extraction dysarthria disordered-speech accessibility parakeet tdt transducer specaugment Eval Results (legacy) License:speech-accessibility-project-dua Model card FilesFiles and versions xet Community ..."
+    },
+    {
+      "title": "dys-asr/parakeet-tdt-0.6b-sapc1 · Hugging Face",
+      "url": "https://huggingface.co/dys-asr/parakeet-tdt-0.6b-sapc1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Parakeet 0.6b TDT collection | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/collections/parakeet-tdt-0.6b",
+      "snippet": "Parakeet TDT 0.6B - Speech-to-Text Collection Parakeet TDT 0.6B - Speech-to-Text Collection Overview Automatic Speech Recognition (ASR) systems are widely used in applications such as voice command interfaces, automated subtitle generation for online media, and transcription of customer interactions for archival. Recent advances in deep learning have enabled speech-to-text models to transcribe ..."
+    },
+    {
+      "title": "GitHub - jasonhoblin/nvidia-parakeet-tdt-0.6b-v2",
+      "url": "https://github.com/jasonhoblin/nvidia-parakeet-tdt-0.6b-v2",
+      "snippet": "parakeet-tdt-.6b-v2 is a 600-million-parameter automatic speech recognition (ASR) model designed for high-quality English transcription, featuring support for punctuation, capitalization, and accurate timestamp prediction."
+    },
+    {
+      "title": "GitHub - achetronic/parakeet: OpenAI Whisper-compatible ASR server ...",
+      "url": "https://github.com/achetronic/parakeet",
+      "snippet": "A high-performance automatic speech recognition (ASR) server written in Go. It uses NVIDIA&#x27;s Parakeet TDT 0.6B model through ONNX Runtime to provide speech-to-text transcription via an OpenAI Whisper-compatible API."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "unireo/round9",
+  "slug": "unireo-round9",
+  "author": "unireo",
+  "url": "https://huggingface.co/unireo/round9",
+  "created_at": "2026-08-25T01:47:20.000Z",
+  "updated_at": "2026-08-31T11:54:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 7797549570,
+  "storage_human": "7.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unireo (Leandro Barros) - Hugging Face",
+      "url": "https://huggingface.co/unireo/models",
+      "snippet": "User profile of Leandro Barros on Hugging Face"
+    },
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    },
+    {
+      "title": "unireo/round7 · Hugging Face",
+      "url": "https://huggingface.co/unireo/round7",
+      "snippet": "unireo / round7 like 0 Safetensors sn38-nanoexpand Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 42 Safetensors Model size 2B params Tensor type BF16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "GitHub - VAST-AI-Research/UniRig: [SIGGRAPH 2025] One Model to Rig Them ...",
+      "url": "https://github.com/VAST-AI-Research/UniRig",
+      "snippet": "[SIGGRAPH 2025] One Model to Rig Them All: Diverse Skeleton Rigging with UniRig - VAST-AI-Research/UniRig"
+    }
+  ]
+}

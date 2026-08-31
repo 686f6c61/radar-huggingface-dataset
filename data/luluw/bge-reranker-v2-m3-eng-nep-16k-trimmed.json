@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "luluw/bge-reranker-v2-m3-eng-nep-16k-trimmed",
+  "slug": "luluw-bge-reranker-v2-m3-eng-nep-16k-trimmed",
+  "author": "luluw",
+  "url": "https://huggingface.co/luluw/bge-reranker-v2-m3-eng-nep-16k-trimmed",
+  "created_at": "2026-08-31T15:01:37.000Z",
+  "updated_at": "2026-08-31T15:14:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "cross-encoder",
+    "reranker",
+    "multilingual",
+    "vocabulary-trimming",
+    "nepali",
+    "english",
+    "bge-reranker",
+    "arxiv:2402.03216",
+    "base_model:BAAI/bge-reranker-v2-m3",
+    "base_model:finetune:BAAI/bge-reranker-v2-m3",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 328530945,
+  "parameters_human": "328.5M",
+  "storage_bytes": 2628343896,
+  "storage_human": "2.6 GB",
+  "base_model": "BAAI/bge-reranker-v2-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI/bge-reranker-v2-m3 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-reranker-v2-m3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "luluw/bge-m3-eng-nep-16k-trimmed · Hugging Face",
+      "url": "https://huggingface.co/luluw/bge-m3-eng-nep-16k-trimmed",
+      "snippet": "Instructions to use luluw/bge-m3-eng-nep-16k-trimmed with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use luluw/bge-m3-eng-nep-16k-trimmed with Transformers:"
+    },
+    {
+      "title": "mlx-memos/models/bge-reranker-v2-m3 at main - GitHub",
+      "url": "https://github.com/MemTensor/mlx-memos/tree/main/models/bge-reranker-v2-m3",
+      "snippet": "Different from embedding model, reranker uses question and document as input and directly output similarity instead of embedding. You can get a relevance score by inputting query and passage to the reranker. And the score can be mapped to a float value in [0,1] by sigmoid function. BAAI/bge-reranker ..."
+    },
+    {
+      "title": "BGE-Reranker-v2 — BGE documentation",
+      "url": "https://bge-model.com/bge/bge_reranker_v2.html",
+      "snippet": "For efficiency, utilize BAAI/bge-reranker-v2-m3 and the low layer of BAAI/bge-reranker-v2-minicpm-layerwise. For better performance, recommand BAAI/bge-reranker-v2-minicpm-layerwise and BAAI/bge-reranker-v2-gemma. Make sure always test on your real use case and choose the one with best speed-quality balance!"
+    },
+    {
+      "title": "bge-reranker-v2-m3: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/bge-reranker-v2-m3-baai",
+      "snippet": "Overview bge-reranker-v2-m3 is a multilingual reranking model maintained by BAAI that takes a query-passage pair as input and outputs a direct relevance score instead of embeddings. Built on the bge-m3 base model, this model accepts tokenized text pairs with a maximum length of 512 tokens and produces logits that can be converted to normalized scores between 0 and 1 using a sigmoid function ..."
+    }
+  ]
+}

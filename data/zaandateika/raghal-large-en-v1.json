@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ZaandaTeika/RAGHal-large-en-v1",
+  "slug": "zaandateika-raghal-large-en-v1",
+  "author": "ZaandaTeika",
+  "url": "https://huggingface.co/ZaandaTeika/RAGHal-large-en-v1",
+  "created_at": "2026-08-11T10:00:49.000Z",
+  "updated_at": "2026-08-31T13:30:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "hallucination-detection",
+    "faithfulness",
+    "attribution",
+    "rag",
+    "en",
+    "base_model:answerdotai/ModernBERT-large",
+    "base_model:finetune:answerdotai/ModernBERT-large",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 395833346,
+  "parameters_human": "395.8M",
+  "storage_bytes": 1583351632,
+  "storage_human": "1.6 GB",
+  "base_model": "answerdotai/ModernBERT-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZaandaTeika/RAGHal-large-en-v1 · Hugging Face",
+      "url": "https://huggingface.co/ZaandaTeika/RAGHal-large-en-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BAAI/bge-large-en-v1.5 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-large-en-v1.5",
+      "snippet": "New reranker model: release cross-encoder models BAAI/bge-reranker-base and BAAI/bge-reranker-large, which are more powerful than embedding model. We recommend to use/fine-tune them to re-rank top-k documents returned by embedding models."
+    },
+    {
+      "title": "BGE v1 & v1.5 — BGE documentation - bge-model.com",
+      "url": "https://bge-model.com/bge/bge_v1_v1.5.html",
+      "snippet": "BGE v1 & v1.5 # BGE v1 and v1.5 are series of encoder only models base on BERT. They achieved best performance among the models of the same size at the time of release. BGE # The first group of BGE models was released in Aug 2023. The bge-large-en and bge-large-zh ranked 1st on MTEB and C-MTEB benchmarks at the time released."
+    },
+    {
+      "title": "BGE large - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/bge-large/",
+      "snippet": "BGE large is the top English model in the first BGE release from Aug-2023. The BGE docs describe the v1 family as encoder-only models based on BERT, and list bge-large-en at 335M parameters and 1.34 GB."
+    },
+    {
+      "title": "bge-large-en-v1.5: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/bge-large-en-v1.5-baai",
+      "snippet": "Overview bge-large-en-v1.5 is a dense retrieval embedding model designed for English-language semantic search and retrieval-augmented applications. Built by BAAI, it generates fixed-dimensional embeddings that enable efficient similarity matching between queries and documents. The model uses the sentence-transformers library and represents a v1.5 iteration specifically engineered to address ..."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "kristijonas/kmynas-parakeet-lt-v3",
+  "slug": "kristijonas-kmynas-parakeet-lt-v3",
+  "author": "kristijonas",
+  "url": "https://huggingface.co/kristijonas/kmynas-parakeet-lt-v3",
+  "created_at": "2026-08-29T09:49:46.000Z",
+  "updated_at": "2026-08-31T17:01:01.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "lt"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "parakeet",
+    "tdt",
+    "lithuanian",
+    "lietuviu-kalba",
+    "punctuation",
+    "speech-to-text",
+    "lt",
+    "dataset:meldynamics/liepa-3",
+    "base_model:nvidia/parakeet-tdt-0.6b-v3",
+    "base_model:finetune:nvidia/parakeet-tdt-0.6b-v3",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2509352960,
+  "storage_human": "2.5 GB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS Lithuanian",
+      "metric": "WER",
+      "value": 17.15
+    }
+  ],
+  "sources": [
+    {
+      "title": "kristijonas/kmynas-parakeet-lt-v2 · Hugging Face",
+      "url": "https://huggingface.co/kristijonas/kmynas-parakeet-lt-v2",
+      "snippet": "Trained from nvidia/parakeet-tdt-.6b-v3 (revision 541d1f9) on 1,196.4 hours of punctuated Lithuanian — seven times the data behind v1 — and initialised from the base model rather than continued from v1, so the two remain independently comparable."
+    },
+    {
+      "title": "kristijonas/kmynas-parakeet-lt-v1 · Hugging Face",
+      "url": "https://huggingface.co/kristijonas/kmynas-parakeet-lt-v1",
+      "snippet": "Named after caraway — lighter than paprika. It is smaller and faster than our Whisper-based Paprika V3, and unlike other public Parakeet fine-tunes for Lithuanian it does not output a bare lowercase stream."
+    },
+    {
+      "title": "AI Lithuania | Atveriu lietuviškų įrašų transkribavimo sistemą | Facebook",
+      "url": "https://www.facebook.com/groups/artificialintelligence.lt/posts/28197212066579263/",
+      "snippet": "Rinkinyje rasite naujausią lietuvių kalbos atpažinimo modelį Paprika V3 ir ilgų įrašų apdorojimo skriptą. Jis transkribuoja, sudeda skyrybą, atskiria kalbėtojus bei priskiria laiko žymas net atskiriems žodžiams. Pridėjau ir skriptą transkribavimui bei subtitrams realiuoju laiku. Rezultatus išsaugosite .txt, .srt, .vtt ir .json formatais."
+    },
+    {
+      "title": "Kmynas v2 dabar atvirai prieinamas: https://huggingface.co/kristijonas ...",
+      "url": "https://www.linkedin.com/posts/jakubsonas_kmynas-v2-dabar-atvirai-prieinamas-https-activity-7498725009931083776-6Cyy",
+      "snippet": "Scribe - kaip stenografas. O mūsų lietuviškas Kmynas V2, veikiantis paprastame nešiojamajame kompiuteryje, vienintelis visus skaičius užrašo taip, kaip ištarta."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

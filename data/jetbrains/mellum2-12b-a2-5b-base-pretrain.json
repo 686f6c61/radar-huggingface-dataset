@@ -1,0 +1,181 @@
+{
+  "schema": 1,
+  "id": "JetBrains/Mellum2-12B-A2.5B-Base-Pretrain",
+  "slug": "jetbrains-mellum2-12b-a2-5b-base-pretrain",
+  "author": "JetBrains",
+  "url": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Base-Pretrain",
+  "created_at": "2026-04-07T12:01:24.000Z",
+  "updated_at": "2026-08-31T13:06:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mellum",
+    "text-generation",
+    "en",
+    "arxiv:2605.31268",
+    "license:apache-2.0",
+    "model-index",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 242,
+  "trending_score": 0,
+  "parameters": 12149923072,
+  "parameters_human": "12.15B",
+  "storage_bytes": 24300538808,
+  "storage_human": "24.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "HumanEval",
+      "metric": "pass@1",
+      "value": 41.46
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HumanEval+",
+      "metric": "pass@1",
+      "value": 37.2
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MBPP",
+      "metric": "pass@1",
+      "value": 62.4
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MBPP+",
+      "metric": "pass@1",
+      "value": 78.31
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MultiPL-E HumanEval, 7 languages",
+      "metric": "pass@1",
+      "value": 20.97
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "CRUXEval-I",
+      "metric": "pass@1",
+      "value": 45.38
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "CRUXEval-O",
+      "metric": "pass@1",
+      "value": 43.88
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU",
+      "metric": "accuracy",
+      "value": 70.87
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU-Pro",
+      "metric": "exact match",
+      "value": 59.31
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "BBH",
+      "metric": "exact match",
+      "value": 74.9
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "ARC-Challenge",
+      "metric": "normalized accuracy",
+      "value": 53.5
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HellaSwag",
+      "metric": "normalized accuracy",
+      "value": 73.72
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "WinoGrande",
+      "metric": "accuracy",
+      "value": 65.51
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "TruthfulQA MC2",
+      "metric": "MC2",
+      "value": 44.51
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GSM8K",
+      "metric": "exact match",
+      "value": 81.73
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MATH",
+      "metric": "exact match",
+      "value": 9.96
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GPQA Diamond",
+      "metric": "accuracy",
+      "value": 31.31
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GPQA Main",
+      "metric": "accuracy",
+      "value": 35.04
+    }
+  ],
+  "sources": [
+    {
+      "title": "JetBrains/Mellum2-12B-A2.5B-Base · Hugging Face",
+      "url": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
+      "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
+      "snippet": "A Blog post by JetBrains on Hugging Face"
+    },
+    {
+      "title": "Public Summary of Training Content for General-Purpose AI ... - JetBrains",
+      "url": "https://www.jetbrains.com/legal/docs/mellum2/training-content-summary/general-purpose-ai-model/",
+      "snippet": "Public Summary of Training Content for General-Purpose AI Models Mellum 2 model family public summary for the listed Mellum 2 model weights."
+    },
+    {
+      "title": "Mellum2 Goes Open Source: A Fast Model for AI Workflows",
+      "url": "https://blog.jetbrains.com/ai/2026/06/mellum2-goes-open-source-a-fast-model-for-ai-workflows/",
+      "snippet": "Mellum2 is engineered to solve the bottlenecks of production-scale systems through its architecture and focused, efficiency-driven design. Mixture-of-Experts (MoE) design: The model features 12B total parameters, but because it uses a MoE design, only 2.5B parameters are active per token. This reduces compute costs while enabling high-throughput, low-latency inference for real-time workloads ..."
+    },
+    {
+      "title": "Mellum by JetBrains: Fast language models for real-world AI workloads.",
+      "url": "https://www.jetbrains.com/mellum/",
+      "snippet": "JetBrains Mellum is a family of fast language models designed for efficient, real-world AI workloads. What started as a code-focused model has evolved to support both programming and natural language tasks, enabling fast, cost-efficient inference across a wide range of use cases."
+    }
+  ]
+}

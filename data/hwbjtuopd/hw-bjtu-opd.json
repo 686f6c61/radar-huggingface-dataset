@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HWBJTUOPD/HW-BJTU-OPD",
+  "slug": "hwbjtuopd-hw-bjtu-opd",
+  "author": "HWBJTUOPD",
+  "url": "https://huggingface.co/HWBJTUOPD/HW-BJTU-OPD",
+  "created_at": "2026-08-24T14:41:26.000Z",
+  "updated_at": "2026-08-31T12:59:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3.5",
+    "vision-language",
+    "supervised-fine-tuning",
+    "online-perception-distillation",
+    "multi-image",
+    "fine-grained-vision",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:finetune:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76067108029,
+  "storage_human": "76.1 GB",
+  "base_model": "Qwen/Qwen3.5-9B, Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models. HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    },
+    {
+      "title": "Hello GPT‑4o - OpenAI",
+      "url": "https://openai.com/index/hello-gpt-4o/",
+      "snippet": "We&#x27;re announcing GPT-4 Omni, our new flagship model which can reason across audio, vision, and text in real time."
+    },
+    {
+      "title": "AI/TLDR — New AI Models, Tools & Papers This Week",
+      "url": "https://ai-tldr.dev/",
+      "snippet": "Every new AI model, repo, tool, and paper worth knowing — refreshed every 2 hours and explained in plain English. Track what&#x27;s shipping today."
+    }
+  ]
+}

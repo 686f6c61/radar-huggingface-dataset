@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "milkyroad/G-w34-mlp",
+  "slug": "milkyroad-g-w34-mlp",
+  "author": "milkyroad",
+  "url": "https://huggingface.co/milkyroad/G-w34-mlp",
+  "created_at": "2026-08-31T17:28:32.000Z",
+  "updated_at": "2026-08-31T17:28:47.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cystoscopy",
+    "bladder-cancer",
+    "domain-shift",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2892665,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "milkyroad (Milky Road) - Hugging Face",
+      "url": "https://huggingface.co/milkyroad",
+      "snippet": "User profile of Milky Road on Hugging Face"
+    },
+    {
+      "title": "milkyroad (Milky Road) - Hugging Face",
+      "url": "https://huggingface.co/milkyroad/datasets",
+      "snippet": "milkyroad&#x27;s datasets6 Sort: Recently updated milkyroad/F Viewer •Updated 9 days ago•14.4k• 52"
+    },
+    {
+      "title": "Multilayer Perceptrons in Machine Learning: A Comprehensive Guide",
+      "url": "https://www.datacamp.com/tutorial/multilayer-perceptrons-in-machine-learning",
+      "snippet": "Learn how multilayer perceptrons work in deep learning. Understand layers, activation functions, backpropagation, and SGD with practical guidance."
+    },
+    {
+      "title": "my little pony AI Models | Civitai",
+      "url": "https://civitai.com/tag/my%20little%20pony",
+      "snippet": "Browse 1,004 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with my little pony."
+    },
+    {
+      "title": "Multilayer perceptron - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Multilayer_perceptron",
+      "snippet": "In deep learning, a multilayer perceptron (MLP) is a kind of modern feedforward neural network consisting of fully connected neurons with nonlinear activation functions, organized in layers, notable for being able to distinguish data that is not linearly separable."
+    }
+  ]
+}

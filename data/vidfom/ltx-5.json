@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "vidfom/LTX-5",
+  "slug": "vidfom-ltx-5",
+  "author": "vidfom",
+  "url": "https://huggingface.co/vidfom/LTX-5",
+  "created_at": "2026-08-31T11:52:22.000Z",
+  "updated_at": "2026-08-31T13:33:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21004025600,
+  "parameters_human": "21.00B",
+  "storage_bytes": 39069547399,
+  "storage_human": "39.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vidfom/lt · Hugging Face",
+      "url": "https://huggingface.co/vidfom/lt",
+      "snippet": "Table of Contents Introduction Quick Start Guide Online demo Run locally Installation Inference ComfyUI Integration Model User Guide Acknowledgement Introduction LTX-Video is the first DiT-based video generation model that can generate high-quality videos in real-time. It can generate 24 FPS videos at 768x512 resolution, faster than it takes to watch them. The model is trained on a large-scale ..."
+    },
+    {
+      "title": "AI Video Generation Model | LTX",
+      "url": "https://ltx.io/model/video-generation-model",
+      "snippet": "Explore LTX video generation model&#x27;s capabilities to create and edit videos with AI. Generate video from text, images, or audio for production-ready content."
+    },
+    {
+      "title": "Lightricks/LTX-Video · Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-Video",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LTX-2.5 Model Open Source: AI Video Generator",
+      "url": "https://ltx.io/model/open-source",
+      "snippet": "LTX-2.5 is an open source AI video generator built on a diffusion transformer architecture for production, research, education, and experimentation."
+    },
+    {
+      "title": "LTX Video AI Models & Generator | Civitai",
+      "url": "https://civitai.com/ecosystems/ltxv",
+      "snippet": "LTX Video (LTXV) is an open-weight video model from Lightricks built around a diffusion transformer tuned for speed — it generates coherent, cinematic clips from a text prompt or a starting image at close to real-time rates. The family spans the light, fast 2B model up to the latest LTX Video 2.3. Generate video right here on Civitai — no GPU, no install."
+    }
+  ]
+}

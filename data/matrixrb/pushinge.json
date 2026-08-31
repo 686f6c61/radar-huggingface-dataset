@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "matrixrb/pushingE",
+  "slug": "matrixrb-pushinge",
+  "author": "matrixrb",
+  "url": "https://huggingface.co/matrixrb/pushingE",
+  "created_at": "2026-08-31T17:10:47.000Z",
+  "updated_at": "2026-08-31T17:12:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 859520964,
+  "parameters_human": "859.5M",
+  "storage_bytes": 2132604798,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "matrixrb (matrix radbro) - Hugging Face",
+      "url": "https://huggingface.co/matrixrb",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 24 days ago ... updated a model about 1 month ago"
+    },
+    {
+      "title": "matrixrb (matrix radbro) - Hugging Face",
+      "url": "https://huggingface.co/matrixrb/models",
+      "snippet": "Recent Activity updated a model4 days ago matrixrb/qwen-3b-blated published a model4 days ago matrixrb/qwen-3b-blated updated a model4 days ago matrixrb/qwen-.5b-blated View all activity"
+    },
+    {
+      "title": "Mak-P90 / ai-jailbreak-archive - GitHub",
+      "url": "https://github.com/Mak-P90/ai-jailbreak-archive",
+      "snippet": "Mak-P90 / ai-jailbreak-archive A curated archive of jailbreak prompts, prompt injections, and related techniques discovered across major AI models, including OpenAI, Gemini, Claude, Grok, and others. This repository documents prompt behavior and model responses for research, experimentation, and red-teaming purposes."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Harvard MIT Create an 8.3 Billion AI Human: Simulating Global Human ...",
+      "url": "https://news.aibase.com/news/30440",
+      "snippet": "A team led by Harvard University and the Massachusetts Institute of Technology, with participation from OpenAI and Google DeepMind, has launched the MatrAIx system this month, capable of generating 8.3 billion AI agents to simulate global human behavior."
+    }
+  ]
+}
