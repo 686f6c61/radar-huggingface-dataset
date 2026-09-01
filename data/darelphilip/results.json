@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "darelphilip/results",
+  "slug": "darelphilip-results",
+  "author": "darelphilip",
+  "url": "https://huggingface.co/darelphilip/results",
+  "created_at": "2026-09-01T17:02:27.000Z",
+  "updated_at": "2026-09-01T17:03:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:jhu-clsp/mmBERT-base",
+    "base_model:finetune:jhu-clsp/mmBERT-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 307535623,
+  "parameters_human": "307.5M",
+  "storage_bytes": 1230162013,
+  "storage_human": "1.2 GB",
+  "base_model": "jhu-clsp/mmBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "darelphilip (Divya Prakash) - Hugging Face",
+      "url": "https://huggingface.co/darelphilip",
+      "snippet": "darelphilip/hinglish-toxicity-roberta Text Classification • 0.3B•Updated 10 days ago• 9"
+    },
+    {
+      "title": "AI Model Leaderboard [2026-08] — Live Rankings | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/leaderboards",
+      "snippet": "Live AI model rankings across ARC-AGI-2, HLE, SWE-bench Verified, and more with category views for coding, math, and agent tasks."
+    },
+    {
+      "title": "AI Model Rankings: Live LLM Leaderboard | ModelCap",
+      "url": "https://modelcap.ai/",
+      "snippet": "Live LLM leaderboard: 219 AI models ranked on public benchmark evidence; Claude Fable 5 leads. API pricing, context windows and 68 providers compared."
+    },
+    {
+      "title": "Arena AI: The Official AI Ranking & LLM Leaderboard",
+      "url": "https://arena.ai/",
+      "snippet": "Chat, compare, vote for the world&#x27;s best AI models. Join the community shaping the public leaderboard for LLMs, image, and code models through real-world evaluation."
+    },
+    {
+      "title": "AI Olympus — The Definitive AI Model Benchmark & Leaderboard",
+      "url": "https://wasango.cloud/",
+      "snippet": "Live leaderboard ranking 30+ AI models by real benchmark scores. Compare GPT-4o, Claude, Gemini, Llama and more."
+    }
+  ]
+}

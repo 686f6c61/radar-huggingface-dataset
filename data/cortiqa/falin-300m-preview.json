@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Cortiqa/Falin-300M-Preview",
+  "slug": "cortiqa-falin-300m-preview",
+  "author": "Cortiqa",
+  "url": "https://huggingface.co/Cortiqa/Falin-300M-Preview",
+  "created_at": "2026-09-01T12:15:16.000Z",
+  "updated_at": "2026-09-01T12:19:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "text-generation",
+    "slm",
+    "menothus",
+    "falin",
+    "cortiqa",
+    "indian-ai",
+    "custom-architecture",
+    "en",
+    "hi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1188212647,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cortiqa",
+      "url": "https://cortiqa.co/",
+      "snippet": "Building Sonre and next-generation AI infrastructure. Ultra-low latency, context-aware dialogues powered by Groq."
+    },
+    {
+      "title": "Cortiqa",
+      "url": "https://cortiqa.in/",
+      "snippet": "Cortiqa&#x27;s Innovation Advisory serves as a strategic incubator for Enterprise GenAI. We empower your CoE to move from &#x27;AI Exploration&#x27; to a fully operationalized, production-ready AI strategy with speed and precision."
+    },
+    {
+      "title": "Falin-01 - Low-Latency Conversational AI | Cortiqa",
+      "url": "https://cortiqa.co/models/falin-01",
+      "snippet": "Discover Falin-01, the conversational AI layer powering Sonre, optimized for speed and low-latency responses using Groq."
+    },
+    {
+      "title": "Corti Models - Corti API Documentation",
+      "url": "https://docs.corti.ai/models/welcome",
+      "snippet": "Corti Models gives you frontier AI performance without giving up sovereignty, control, or speed. Corti takes the strongest available open-weight models and turns them into production-grade AI through tuning, inference optimization, and continuous improvement."
+    },
+    {
+      "title": "Models - Corti API Documentation",
+      "url": "https://docs.corti.ai/models/models",
+      "snippet": "Compare Corti&#x27;s text generation and embedding models by capability, reasoning, speed, and price, and pick the right one for your workload."
+    }
+  ]
+}

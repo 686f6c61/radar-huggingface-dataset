@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "blaze-voice-ai/dubbing-tts",
+  "slug": "blaze-voice-ai-dubbing-tts",
+  "author": "blaze-voice-ai",
+  "url": "https://huggingface.co/blaze-voice-ai/dubbing-tts",
+  "created_at": "2026-09-01T13:25:40.000Z",
+  "updated_at": "2026-09-01T14:05:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "omnivoice",
+    "text-to-speech",
+    "khmer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 612577288,
+  "parameters_human": "612.6M",
+  "storage_bytes": 2461768130,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lifelike Voice Generator AI - Voted as #1 voice maker",
+      "url": "https://duckduckgo.com/y.js?ad_domain=revoicer.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=6rRR0M0392QCzDu32za%2DhIK5YD2n5zaZsX9_wdXhiXkYzAv3SGTyec0uJ1F4sSd5AmXepinMMK3SbBkRRKp7J8nZhTX39M5j8V71fKkwtFjJT55z4OxjpFjRV%2DoSENqp5xKGwtRJwruqsU%2DHc724CjodrYB1tenSmxsfWuhw%2Dms.84mK0H9vx4JhdXUU65CPBQ&rut=85bfefe55f6fb8ce72920e51cc973a6dfc2d6b11a800eed0e6d61a3db2054d1d&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8G_bud3Af6s8klMwtLqouvzVUCUyWtsvmPqe4xTnl_pqLOFCqRn08jk28n9JL8fwS_GT1i_MK2y6GGS1%2DmbGg5Wiorw20kZmQveZd_x1lzvNLxKjthIj0Geg5evZ%2D7v5A1Y5OtSEKZTIcvTckxiD9TbWTXSD_yKTxX0ohAx0DnHBT22hkPZvJcvvBTaU6MPml0Ch6IuBb8GxsDHEtktkwCoBXJJ0%26u%3DaHR0cHMlM2ElMmYlMmZyZXZvaWNlci5jb20lMmZiLXNlYXJjaCUzZm1zY2xraWQlM2Q3YWY2YWJlOTQ2NDIxMmI5Y2RmMGMxN2ZhZTc3OTcwZg%26rlid%3D7af6abe9464212b9cdf0c17fae77970f&vqd=4-285336444560334391787677371447693504095&iurl=%7B1%7DIG%3D2B0DA673C3114AAE9EED414A320AF1A5%26CID%3D0BF6B7D5230965E70A74A012222F6469%26ID%3DDevEx%2C5037.1",
+      "snippet": "Truly human emotions in every voice over generated, breathing life into your voice overs. Ending Soon - One Time Payment - Create Human-Sounding AI Voiceovers with EMOTIONS"
+    },
+    {
+      "title": "Best AI Text To Voice 2026 - AI Text To Voice Generator",
+      "url": "https://duckduckgo.com/y.js?ad_domain=motionarray.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=KyCmsB5x9e_%2DNR1Te4%2DLUWPbje1gv6%2D0MU%2D6jeGoWn1ZY_SNMvG87gro80HYOTMnS49tliSzsYo81gvD%2Dxu9gFupQdXHY3oKXDGNF5zNgOPKZv2XSUOgStKJLwDLjPn6YvQWHypnXkLZ4Xkn3vmbdKYckoWhojHk5B2ht3WhxG4.Bu05mBH8LBOZKklDlqF2fg&rut=301ded72e79ef31a788d9b28779528bbfb85937272223118bc7915832219baf8&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8Acy%2DYsmoupS0Ca_dc8k_LDVUCUxf6LoWYKVt6e1Kmk%2D2sJkOhZwXNPs8ydKxkVPd2gtXCj7oiCvjpZbUVqPGaszyVJ5gtBcL8HcaKXcoQwiE0IvBbwTUjERYBYN5lyZUrEP2IDr1rGN4Bw3udjVXjR71zG4F9qhW5_KENBieV8QaeeCpJcDv3JDBC7LGmKyxNP8O9R9cmfCK591NhwrHNEiGHEg%26u%3DaHR0cHMlM2ElMmYlMmZtb3Rpb25hcnJheS5jb20lMmZ2b2ljZS1vdmVyJTJmJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkNjI2MTc2NDQ5JTI2dXRtX2NvbnRlbnQlM2QxMTQ3ODkxOTg4NDY0NDI2JTI2dXRtX3Rlcm0lM2R0ZXh0JTI1MjB0byUyNTIwdm9pY2UlMjUyMGFpJTI2a2V5d29yZCUzZHRleHQlMjUyMHRvJTI1MjB2b2ljZSUyNTIwYWklMjZhZCUzZCUyNm1hdGNodHlwZSUzZHAlMjZkZXZpY2UlM2RjJTI2bXNjbGtpZCUzZDNkZjU4YTcwNTg3OTEyYTk4ZDQ1ZTBlNmIwNGM4MzZm%26rlid%3D3df58a70587912a98d45e0e6b04c836f&vqd=4-27306165776270693517024870070874302554&iurl=%7B1%7DIG%3D2B0DA673C3114AAE9EED414A320AF1A5%26CID%3D0BF6B7D5230965E70A74A012222F6469%26ID%3DDevEx%2C5041.1",
+      "snippet": "Bring Your Videos to Life With Motion Array&#x27;s Text-To-Speech Generator. The AI Voice Generator for Video Creators. Unique Voices to Spark Your Next Big Idea"
+    },
+    {
+      "title": "AI Brand Voice Generator - Blaze",
+      "url": "https://www.blaze.ai/ai-writer/ai-brand-voice",
+      "snippet": "Blaze will generate your brand voice from content you&#x27;ve made and add it to every post-from blog content to Instagram captions to LinkedIn posts."
+    },
+    {
+      "title": "Superior Voice AI for ASEAN | Blaze",
+      "url": "https://blaze.vn/",
+      "snippet": "Blaze brings natural Text-to-Speech, accurate Speech-to-Text, an AI Voice Assistant and a real-time Live Interpreter to Vietnamese and Southeast Asian languages — for apps and developers."
+    },
+    {
+      "title": "DubVoice.ai — AI Voice Dubbing, Text-to-Speech & Video Generation",
+      "url": "https://www.dubvoice.ai/",
+      "snippet": "Short answer DubVoice.ai is an all-in-one AI content creation platform that bundles text-to-speech (17,800+ voices), voice cloning, AI video (Veo 3, Grok), 6 image models, AI music, speech-to-text, voice tools and translation into one credit-based account starting at $4.99 — no subscription, credits never expire. Key facts 17,800+ voices across ElevenLabs, Vbee, Minimax, Fish Audio, Edge TTS ..."
+    }
+  ]
+}

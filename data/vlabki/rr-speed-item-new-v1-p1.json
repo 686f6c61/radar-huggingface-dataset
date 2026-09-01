@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "vlabki/rr-speed-item-new-v1-p1",
+  "slug": "vlabki-rr-speed-item-new-v1-p1",
+  "author": "vlabki",
+  "url": "https://huggingface.co/vlabki/rr-speed-item-new-v1-p1",
+  "created_at": "2026-09-01T16:55:11.000Z",
+  "updated_at": "2026-09-01T17:06:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "rr_player_recurrent_bc",
+    "reinforcement-learning",
+    "recurrent-ppo",
+    "mario-kart-wii",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 615374,
+  "parameters_human": "615374",
+  "storage_bytes": 2635418,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vlabki/rr-speed-item-v1 · Hugging Face",
+      "url": "https://huggingface.co/vlabki/rr-speed-item-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vlabki/rr-speed-item-v1 at main - Hugging Face",
+      "url": "https://huggingface.co/vlabki/rr-speed-item-v1/tree/main",
+      "snippet": "vlabki / rr-speed-item-v1 like 0 Follow VictoryLab 24 Reinforcement Learning PyTorch Safetensors rr_player_recurrent_bc recurrent-ppo mario-kart-wii Model card FilesFiles and versions xet Community Copy to bucket new main rr-speed-item-v1 5.94 MB Ctrl+K Ctrl+K 1 contributor History:3 commits minseung07 Upload RR item-v1 promising update 5500 checkpoint (portable fallback) bf4ff50 verifiedabout ..."
+    },
+    {
+      "title": "Model cards — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/",
+      "snippet": "Model cards Simple, structured overviews of how an advanced AI model was designed and evaluated."
+    },
+    {
+      "title": "RunMyAIModel | AI Hardware Calculator",
+      "url": "https://www.runmyaimodel.com/",
+      "snippet": "Calculate and find the perfect open-source AI models that fit your GPU&#x27;s VRAM. Filter by speed, context window, reasoning, and system RAM for local inference."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

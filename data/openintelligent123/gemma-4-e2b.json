@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Openintelligent123/gemma-4-E2B",
+  "slug": "openintelligent123-gemma-4-e2b",
+  "author": "Openintelligent123",
+  "url": "https://huggingface.co/Openintelligent123/gemma-4-E2B",
+  "created_at": "2026-09-01T17:12:17.000Z",
+  "updated_at": "2026-09-01T17:12:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "any-to-any",
+    "arxiv:2607.02770",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278791988,
+  "storage_human": "10.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Models /Gemma 4 E2B Gemma 4 E2B — Ultra-Lightweight Local AI Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    },
+    {
+      "title": "Gemma 4: Our most capable open models to date - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/",
+      "snippet": "Built from the same world-class research and technology as Gemini 3, Gemma 4 is the most capable model family you can run on your hardware. They complement our Gemini models, giving developers the industry&#x27;s most powerful combination of both open and proprietary tools. Industry-leading capabilities and mobile-first AI We are releasing Gemma 4 in four versatile sizes: Effective 2B (E2B ..."
+    },
+    {
+      "title": "Gemma 4 2B Model Guide: Complete AI Implementation Manual 2026",
+      "url": "https://www.gemma4.wiki/models/gemma-4-2b-model-guide",
+      "snippet": "Learn how to deploy and optimize the Gemma 4 E2B model. This guide covers Per-Layer Embeddings, hardware requirements, and multimodal setup for 2026."
+    },
+    {
+      "title": "Gemma releases - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/releases",
+      "snippet": "Gemma releases This page documents releases for the Gemma family of models. June 3, 2026 Release of Gemma 4 12B Unified. April 16, 2026 Release of Gemma 4 - MTP for E2B, E4B, 31B, and 26B A4B. March 31, 2026 Release of Gemma 4 in E2B, E4B, 31B and 26B A4B sizes. January 15, 2026 Release of TranslateGemma in 4B, 12B, and 27B parameter size ..."
+    }
+  ]
+}

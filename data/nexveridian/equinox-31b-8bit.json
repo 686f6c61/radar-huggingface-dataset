@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "NexVeridian/Equinox-31B-8bit",
+  "slug": "nexveridian-equinox-31b-8bit",
+  "author": "NexVeridian",
+  "url": "https://huggingface.co/NexVeridian/Equinox-31B-8bit",
+  "created_at": "2026-09-01T16:57:08.000Z",
+  "updated_at": "2026-09-01T16:57:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "text adventure",
+    "roleplay",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:LatitudeGames/Equinox-31B",
+    "base_model:quantized:LatitudeGames/Equinox-31B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8634585404,
+  "parameters_human": "8.63B",
+  "storage_bytes": 32649561470,
+  "storage_human": "32.6 GB",
+  "base_model": "LatitudeGames/Equinox-31B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NexVeridian/Equinox-31B-8bit · Hugging Face",
+      "url": "https://huggingface.co/NexVeridian/Equinox-31B-8bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Equinox-31B: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/equinox-31b-latitudegames",
+      "snippet": "Equinox-31B is a narrative storytelling model purpose-built for interactive fiction and text adventure games, created by LatitudeGames. The model contains..."
+    },
+    {
+      "title": "Quantized Models for LatitudeGames/Equinox-31B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:LatitudeGames/Equinox-31B",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Equinox 31B by LatitudeGames — VRAM 62.6GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/LatitudeGames%2FEquinox-31B,679i44Pg4987zqUuWocBk1",
+      "snippet": "Equinox 31B is an open-source 31b LLM by LatitudeGames. VRAM 62.6GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Latitude Equinox-31B takes on generic AI in gaming",
+      "url": "https://startupfortune.com/latitude-equinox-31b-takes-on-generic-ai-in-gaming/",
+      "snippet": "Latitude&#x27;s Equinox-31B release is a small but useful test for AI gaming. Generic chatbots can produce text, but games need models that hold tension, remember tone, and let a story become uncomfortable without falling out of character. LatitudeGames posted Equinox-31B on Hugging Face as a GGUF model built for AI storytelling, not broad productivity. The model is described as a Gemma 4 31B ..."
+    }
+  ]
+}

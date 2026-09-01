@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "agents2agents/MolmoAct2-LIBERO-Jetson-Thor",
+  "slug": "agents2agents-molmoact2-libero-jetson-thor",
+  "author": "agents2agents",
+  "url": "https://huggingface.co/agents2agents/MolmoAct2-LIBERO-Jetson-Thor",
+  "created_at": "2026-09-01T15:01:52.000Z",
+  "updated_at": "2026-09-01T15:11:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "tensorrt",
+  "languages": [],
+  "tags": [
+    "tensorrt",
+    "robotics",
+    "vision-language-action",
+    "jetson",
+    "molmoact2",
+    "libero",
+    "edge-inference",
+    "base_model:allenai/MolmoAct2-LIBERO",
+    "base_model:finetune:allenai/MolmoAct2-LIBERO",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10525739021,
+  "storage_human": "10.5 GB",
+  "base_model": "allenai/MolmoAct2-LIBERO",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - allenai/molmoact2: Official Repository for MolmoAct2",
+      "url": "https://github.com/allenai/molmoact2",
+      "snippet": "Official Repository for MolmoAct2. Contribute to allenai/molmoact2 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - jcoleharrison/molmoact2: Official Repository for MolmoAct2 ...",
+      "url": "https://github.com/jcoleharrison/molmoact2",
+      "snippet": "MolmoAct2 is Ai2&#x27;s open family of action reasoning models for robot control and real-world deployment. It builds on the Molmo2-ER embodied-reasoning vision-language backbone, adds robot state and action modeling, and connects the VLM to a flow-matching continuous action expert for closed-loop manipulation. The release includes base checkpoints for continued training, fine-tuned robot policies ..."
+    },
+    {
+      "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment",
+      "url": "https://arxiv.org/abs/2605.02881",
+      "snippet": "We present MolmoAct2, a fully open action reasoning model built for practical deployment, advancing its predecessor along five axes. We introduce MolmoER, a VLM backbone specialized for spatial and embodied reasoning, trained on a 3.3M-sample corpus with a specialize-then-rehearse recipe."
+    },
+    {
+      "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment",
+      "url": "https://arxiv.org/pdf/2605.02881",
+      "snippet": "MolmoAct2 is a fully open action reasoning model for real-world deployment. From a suite of high-quality robot datasets that we collect, filter, and curate at scale across three platforms spanning the low-to-medium cost range (left), we train MolmoAct2 and its adaptive-depth reasoning variant MolmoAct2-Think, coupled to the VLM backbone through ..."
+    },
+    {
+      "title": "allenai/MolmoAct2-LIBERO-LeRobot · Hugging Face",
+      "url": "https://huggingface.co/allenai/MolmoAct2-LIBERO-LeRobot",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

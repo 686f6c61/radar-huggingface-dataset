@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "kingfang008/BonFrame-LatentSync-MLX",
+  "slug": "kingfang008-bonframe-latentsync-mlx",
+  "author": "kingfang008",
+  "url": "https://huggingface.co/kingfang008/BonFrame-LatentSync-MLX",
+  "created_at": "2026-09-01T18:12:37.000Z",
+  "updated_at": "2026-09-01T18:24:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "latentsync",
+    "lipsync",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5072147904,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kingfang008/BonFrame-JoyVASA-ONNX · Hugging Face",
+      "url": "https://huggingface.co/kingfang008/BonFrame-JoyVASA-ONNX",
+      "snippet": "BonFrame JoyVASA ONNX runtime pack ONNX export used by BonFrame&#x27;s local Apple Silicon lip-redraw pipeline. The pack converts 16 kHz speech audio into JoyVASA motion coefficients; FasterLivePortrait-MLX performs portrait rendering separately."
+    },
+    {
+      "title": "sb1992/latentsync-mlx: LatentSync lip sync on Apple MLX - GitHub",
+      "url": "https://github.com/sb1992/latentsync-mlx",
+      "snippet": "An Apple MLX port of ByteDance&#x27;s LatentSync — audio-conditioned latent diffusion for lip sync, running natively on Apple Silicon. This port runs the UNet denoising loop and VAE encode/decode on MLX (the hot path), while keeping preprocessing (Whisper audio encoding, InsightFace face detection) in PyTorch. On an M-series Mac, MLX inference is ~2.3x faster than PyTorch MPS."
+    },
+    {
+      "title": "GitHub - bytedance/LatentSync: Taming Stable Diffusion for Lip Sync!",
+      "url": "https://github.com/bytedance/LatentSync",
+      "snippet": "We present LatentSync, an end-to-end lip-sync method based on audio-conditioned latent diffusion models without any intermediate motion representation, diverging from previous diffusion-based lip-sync methods based on pixel-space diffusion or two-stage generation. Our framework can leverage the powerful capabilities of Stable Diffusion to directly model complex audio-visual correlations."
+    },
+    {
+      "title": "ByteDance/LatentSync · Hugging Face",
+      "url": "https://huggingface.co/ByteDance/LatentSync",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Latent Sync: Advanced End-to-End Lip Synchronization Free",
+      "url": "https://www.latentsync.org/",
+      "snippet": "Latent Sync is an advanced AI-powered lip sync solution that uses a latent diffusion model to generate high-quality, dynamic lip-sync videos from audio inputs. It simplifies the video production process by automatically syncing mouth movements with speech, without the need for intermediate 3D representations or 2D feature points."
+    }
+  ]
+}

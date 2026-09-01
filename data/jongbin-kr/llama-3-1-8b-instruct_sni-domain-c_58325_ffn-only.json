@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jongbin-kr/llama-3.1-8b-instruct_SNI-domain-c_58325_ffn-only",
+  "slug": "jongbin-kr-llama-3-1-8b-instruct_sni-domain-c_58325_ffn-only",
+  "author": "Jongbin-kr",
+  "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_SNI-domain-c_58325_ffn-only",
+  "created_at": "2026-09-01T17:58:31.000Z",
+  "updated_at": "2026-09-01T18:55:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2169374401,
+  "storage_human": "2.2 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jongbin-kr/llama-3.1-8b-instruct-sni-ffn-lora · Hugging Face",
+      "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-sni-ffn-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jongbin-kr/llama-3.1-8b-instruct-sni-ffn-lora at main - Hugging Face",
+      "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-sni-ffn-lora/tree/main",
+      "snippet": "Instructions to use Jongbin-kr/llama-3.1-8b-instruct-sni-ffn-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "llama-3.1-8b-instruct Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/llama-3_1-8b-instruct",
+      "snippet": "Advanced state-of-the-art model with language understanding, superior reasoning, and text generation."
+    },
+    {
+      "title": "Llama_3_1_8B_Instruct.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/NeuralFalconYT/Meta-Llama-3.1-Colab/blob/main/Llama_3_1_8B_Instruct.ipynb",
+      "snippet": "Step 1: visit Llama-3.1-8B-Instruct Page Step 2: Wait a few minutes, you will receive access from Meta. Step 3: Access Hugging Face Token Step 4: Copy paste Hugging Face Token in Google Colab"
+    },
+    {
+      "title": "Llama 3.1 8B Instruct 4x2 MoE by Jongbin-kr - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/Jongbin-kr%2Fllama-3.1-8b-instruct-4x2-moe,3bqsG1wwLvc8EGxu1aQnUa",
+      "snippet": "Llama 3.1 8B Instruct 4x2 MoE is an open-source language model by Jongbin-kr. Features: 8b LLM, VRAM: 50.2GB, Context: 128K, Instruction-Based, LLM Explorer Score: 0.28."
+    }
+  ]
+}

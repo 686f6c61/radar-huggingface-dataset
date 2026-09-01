@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Pro-Grad/Pro-Qwen2.5-0.5B-Instruct.gguf",
+  "slug": "pro-grad-pro-qwen2-5-0-5b-instruct-gguf",
+  "author": "Pro-Grad",
+  "url": "https://huggingface.co/Pro-Grad/Pro-Qwen2.5-0.5B-Instruct.gguf",
+  "created_at": "2026-09-01T16:12:39.000Z",
+  "updated_at": "2026-09-01T16:22:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1391963904,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-0.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct",
+      "snippet": "Input a message to start chatting with Qwen/Qwen2.5-.5B-Instruct. We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-0.5B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qwen2.5 brings the following improvements upon Qwen2:"
+    },
+    {
+      "title": "qwen2.5:0.5b-instruct - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:0.5b-instruct",
+      "snippet": "Qwen2.5 introduces the following improvements over Qwen2: It possesses significantly more knowledge and has greatly enhanced capabilities in coding and mathematics, due to specialized expert models in these domains."
+    },
+    {
+      "title": "Qwen2.5-0.5B-Instruct-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-0.5B-Instruct-GGUF",
+      "snippet": "This model is based on the T2ITrainer training framework, trained with approximately 7000 pairs of data for 2 epochs. It aims to repair images that have been damaged due to JPEG compression, resizing, and downloading, resulting in low-resolution and cyber-encrusted poor-quality images."
+    },
+    {
+      "title": "Qwen2.5-0.5B-Instruct — ModuleLLM 0.1 documentation",
+      "url": "https://modulellm-tutorial.readthedocs.io/en/latest/model_pages/qwen2.5-0.5b-instruct.html",
+      "snippet": "Qwen2.5-.5B-Instruct is part of the Qwen2.5 series, featuring instruction-tuned language models with 0.5 billion parameters. Key highlights of this model include: This model demonstrates significant improvements in instruction following, generating long texts, and understanding structured data."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ads2009/turkish-ai-text-detector-convbert-v5",
+  "slug": "ads2009-turkish-ai-text-detector-convbert-v5",
+  "author": "ads2009",
+  "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-convbert-v5",
+  "created_at": "2026-09-01T12:35:45.000Z",
+  "updated_at": "2026-09-01T12:35:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "convbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 107407754,
+  "parameters_human": "107.4M",
+  "storage_bytes": 429666984,
+  "storage_human": "430 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best AI Detector & Humanizer - Best AI Humanizer",
+      "url": "https://duckduckgo.com/y.js?ad_domain=undetectable.ai&ad_provider=bingv7aa&ad_type=txad&click_metadata=AH2NC0DhaJfeY%2DjEc%2D6T_PcvlhV4ca7mLMueU_7hl4ZS73CcBwC2yrV0g10j%2DL2093Z9p7JlNK2otKa_7l9dSsxIF1%2Dn777fukG5XDykQsp1%2D6bE_u7G3dtik3bCeXp1sgXldEUCT%2DR5Ci7ok1x3zTKIBsjTWLuSSakfjBJPuLQ.8I2LtC4qoxAVU8l61lq4Ew&rut=9c1bb07fe60cf4d1e040dcf067bf04a6f27b23d3fdd6d744f1968b3b0ee36cd7&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8xlGwaUxXC6k5s4ikhnK4ETVUCUzhGnhkDwlAnYbHwy0D6SHwOAJ3PyMvrZApC%2DMR3eLCTFVatf7sRPrPMi9Ivw5Gnj3ds0ReIpVzq1ISJzZK%2D60ImZE4icQITqqtoS3lyUK_ZpnuipUisckL3GlzaWoGpkyhGawCT2yZHyfy3zjk04xYeoePWjl_E_Guqwhbt%2D9HXOeoDeN9DkhmXkw8I_jpBB4%26u%3DaHR0cHMlM2ElMmYlMmZ0cnkudW5kZXRlY3RhYmxlLmFpJTJmZGV0ZWN0LWh1bWFuaXplJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkc2VhcmNoJTI2aF9jYW1wYWlnbl9pZCUzZDU2OTQ2MzI4MCUyNmJuZ19pZCUzZDExODE5NzY4MjYxOTk0MzMlMjZoX2FkX2lkJTNkNzM4NzM3NTc5MzEwMjUlMjZ1dG1fc291cmNlJTNkbWljcm9zb2Z0JTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZEJfU2VhcmNoX1dXX0JyYW5kJTI2dXRtX2NvbnRlbnQlM2QlMjU1QkFNUExBJTI1NUQlMjUyMCUyNTVCRVhBVEFTJTI1NUQlMjZ1dG1fdGVybSUzZHVuZGV0ZWN0YWJsZSUyNTIwZGV0ZWN0b3IlMjUyMGFpJTI2bXNjbGtpZCUzZDE0Y2VkY2QzYWM3NjFmYjBhMjMwYjY0NTdhYmUyN2Jj%26rlid%3D14cedcd3ac761fb0a230b6457abe27bc&vqd=4-188655554822620940824932446586229634273&iurl=%7B1%7DIG%3D5D8A478DBD94435FB100F3B06A2A0D22%26CID%3D347DDD34E09860F2285BCAF3E196614E%26ID%3DDevEx%2C5036.1",
+      "snippet": "Worried your text may be flagged as AI? Check it with our AI Detector, then humanize it. Don&#x27;t let AI-written text raise questions. Check, Humanize, and Recheck. Try for Free."
+    },
+    {
+      "title": "ads2009/turkish-ai-text-detector-berturk · Hugging Face",
+      "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-berturk",
+      "snippet": "Instructions to use ads2009/turkish-ai-text-detector-berturk with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ads2009/turkish-ai-text-detector-berturk with Transformers:"
+    },
+    {
+      "title": "ads2009/turkish-ai-text-detector-distilberturk-v3 at main",
+      "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-distilberturk-v3/tree/main",
+      "snippet": "Instructions to use ads2009/turkish-ai-text-detector-distilberturk-v3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Turkish AI Detector - yehos.info",
+      "url": "https://www.yehos.info/work/turkish-ai-detector",
+      "snippet": "Detecting AI-generated Turkish text using transfer learning on a Turkish BERT model."
+    },
+    {
+      "title": "GitHub - stefan-it/turkish-bert: Turkish BERT/DistilBERT, ELECTRA ...",
+      "url": "https://github.com/stefan-it/turkish-bert",
+      "snippet": "We present community-driven BERT, DistilBERT, ELECTRA, ConvBERT and T5 models for Turkish 🎉 Some datasets used for pretraining and evaluation are contributed from the awesome Turkish NLP community, as well as the decision for the BERT model name: BERTurk. Logo is provided by Merve Noyan."
+    }
+  ]
+}

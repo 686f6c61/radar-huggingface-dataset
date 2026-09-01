@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "EstevaoNaval/PaddleOCR-VL-1.6-GGUF",
+  "slug": "estevaonaval-paddleocr-vl-1-6-gguf",
+  "author": "EstevaoNaval",
+  "url": "https://huggingface.co/EstevaoNaval/PaddleOCR-VL-1.6-GGUF",
+  "created_at": "2026-09-01T15:48:33.000Z",
+  "updated_at": "2026-09-01T15:48:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "arxiv:2606.03264",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 466654208,
+  "parameters_human": "466.7M",
+  "storage_bytes": 1817539616,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PaddlePaddle/PaddleOCR-VL-1.6-GGUF · Hugging Face",
+      "url": "https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PaddleOCR-VL-1.6-GGUF: Image-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/paddleocr-vl-1.6-gguf-paddlepaddle",
+      "snippet": "Overview PaddleOCR-VL-1.6-GGUF is a document parsing vision-language model maintained by PaddlePaddle that achieves 96.33% state-of-the-art accuracy on OmniDocBench v1.6. This 0.9B parameter model processes document images and extracts structured text with spatial layout information, designed for compact deployment through GGUF quantization. The architecture inherits full compatibility with ..."
+    },
+    {
+      "title": "PaddlePaddle/PaddleOCR-VL-1.6-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PaddleOCR-VL-1.6-GGUF · Models - modelscope.cn",
+      "url": "https://www.modelscope.cn/models/PaddlePaddle/PaddleOCR-VL-1.6-GGUF",
+      "snippet": "Introduction We introduce PaddleOCR-VL-1.6, an upgraded compact document parsing model built upon PaddleOCR-VL-1.5. PaddleOCR-VL-1.6 introduces a region-aware data optimization framework that identifies weak regions from the previous model, applies targeted enhancement to those regions, and improves the reliability of supervision signals. It further adopts a progressive post-training recipe ..."
+    },
+    {
+      "title": "Usage Tutorial - PaddleOCR Documentation",
+      "url": "https://www.paddleocr.ai/main/en/version3.x/pipeline_usage/PaddleOCR-VL.html",
+      "snippet": "Info PaddleOCR provides a unified interface for the PaddleOCR-VL model series to facilitate quick setup and usage. Unless otherwise specified, the term \"PaddleOCR-VL\" in this tutorial and related hardware usage tutorials refers to the PaddleOCR-VL model series (e.g., PaddleOCR-VL-1.6). References specific to the PaddleOCR-VL v1 version will be explicitly noted."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Gramscii-IT/dots.mocr-GGUF",
+  "slug": "gramscii-it-dots-mocr-gguf",
+  "author": "Gramscii-IT",
+  "url": "https://huggingface.co/Gramscii-IT/dots.mocr-GGUF",
+  "created_at": "2026-09-01T15:35:53.000Z",
+  "updated_at": "2026-09-01T15:37:36.000Z",
+  "license": "dots.mocr-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ocr",
+    "image-text-to-text",
+    "base_model:dots-studio/dots.mocr",
+    "base_model:quantized:dots-studio/dots.mocr",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 9323504064,
+  "storage_human": "9.3 GB",
+  "base_model": "dots-studio/dots.mocr",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SandLogicTechnologies/dots.mocr-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SandLogicTechnologies/dots.mocr-GGUF",
+      "snippet": "The RedNote HiLab team for developing and releasing the DOTS.OCR model. Georgi Gerganov and the llama.cpp open-source community for enabling efficient quantization and inference via the GGUF format."
+    },
+    {
+      "title": "dots.mocr.F16.gguf · prithivMLmods/dots.mocr-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/dots.mocr-GGUF/blob/main/dots.mocr.F16.gguf",
+      "snippet": "prithivMLmods / dots.mocr-GGUF like 1 Image-Text-to-Text Transformers GGUF English Chinese multilingual text-generation-inference llama-cpp image-to-text ocr document-parse layout table formula custom_code conversational License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - studio-dots-ai/dots.mocr: Multimodal OCR: Parse Anything from ...",
+      "url": "https://github.com/studio-dots-ai/dots.mocr",
+      "snippet": "Multimodal OCR: Parse Anything from Documents. Contribute to studio-dots-ai/dots.mocr development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - studio-dots-ai/dots.ocr: Multilingual Document Layout Parsing ...",
+      "url": "https://github.com/studio-dots-ai/dots.ocr",
+      "snippet": "The model weights are available on Hugging Face: dots.mocr and dots.mocr-svg. 2025.10.31 🚀 We release dots.ocr.base, foundation VLM focus on OCR tasks, also the base model of dots.ocr. Try it out! 2025.07.30 🚀 We release dots.ocr, — a multilingual documents parsing model based on 1.7b llm, with SOTA performance."
+    },
+    {
+      "title": "Multimodal OCR: Parse Anything from Documents - arXiv.org",
+      "url": "https://arxiv.org/html/2603.13032v1",
+      "snippet": "Unlike conventional OCR systems that focus on text recognition and leave graphical regions as cropped pixels, our method, termed dots.mocr, treats visual elements such as charts, diagrams, tables, and icons as first-class parsing targets, enabling systems to parse documents while preserving semantic relationships across elements."
+    }
+  ]
+}

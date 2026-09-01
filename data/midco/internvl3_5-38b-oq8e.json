@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "midco/InternVL3_5-38B-oQ8e",
+  "slug": "midco-internvl3_5-38b-oq8e",
+  "author": "midco",
+  "url": "https://huggingface.co/midco/InternVL3_5-38B-oQ8e",
+  "created_at": "2026-09-01T11:59:41.000Z",
+  "updated_at": "2026-09-01T12:10:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "internvl_chat",
+    "oq",
+    "quantized",
+    "custom_code",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14777170304,
+  "parameters_human": "14.78B",
+  "storage_bytes": 51014320507,
+  "storage_human": "51.0 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenGVLab/InternVL: [CVPR 2024 Oral] InternVL Family: A ...",
+      "url": "https://github.com/OpenGVLab/InternVL",
+      "snippet": "Our largest model, i.e., InternVL3.5-241B-A28B, attains state-of-the-art results among open-source MLLMs across general multimodal, reasoning, text, and agentic tasks."
+    },
+    {
+      "title": "OpenGVLab/InternVL3_5-38B-HF · Hugging Face",
+      "url": "https://huggingface.co/OpenGVLab/InternVL3_5-38B-HF",
+      "snippet": "Quick Start We provide an example code to run InternVL3.5-8B-HF using transformers. Please note that our models with up to 30B parameters can be deployed on a single A100 GPU, while the 38B model requires two A100 GPUs and the 235B model requires eight A100 GPUs. In most cases, both LMDeploy and vLLM can be used for model deployment."
+    },
+    {
+      "title": "OpenGVLab/InternVL3-38B · Hugging Face",
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-38B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub Pages - InternVL",
+      "url": "https://internvl.github.io/",
+      "snippet": "We release the InternVL 2.5, an advanced multimodal large language model (MLLM) series with parameter coverage ranging from 1B to 78B. InternVL2_5-78B is the first open-source MLLMs to achieve over 70% on the MMMU benchmark, matching the performance of leading closed-source commercial models like GPT-4o."
+    },
+    {
+      "title": "GitHub - 5CD-AI/Vintern-3-5: [CVPR 2024 Oral] InternVL Family: A ...",
+      "url": "https://github.com/5CD-AI/Vintern-3-5",
+      "snippet": "2025/04/11: 🚀 We introduce InternVL3, an advanced multimodal large language model (MLLM) series that demonstrates superior overall performance. InternVL3-78B achieves SoTA performance in both perception and reasoning performance among open-source MLLMs."
+    }
+  ]
+}

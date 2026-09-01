@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Puddings22/MIRAI-GlassBox-LLM",
+  "slug": "puddings22-mirai-glassbox-llm",
+  "author": "Puddings22",
+  "url": "https://huggingface.co/Puddings22/MIRAI-GlassBox-LLM",
+  "created_at": "2026-09-01T16:18:04.000Z",
+  "updated_at": "2026-09-01T16:39:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mirai",
+    "interpretability",
+    "glass-box",
+    "spectral",
+    "state-space",
+    "causal-attribution",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8671822305,
+  "storage_human": "8.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "See How AI Actually Works | Glass Box LLM",
+      "url": "https://glassboxllm.com/",
+      "snippet": "A chatbot with nothing hidden: every token, every API call, every step. Watch a real captured session, then see how the machine works in thirteen interactive exhibits."
+    },
+    {
+      "title": "Mirai Labs: On-device AI models & inference for Apple Silicon",
+      "url": "https://trymirai.com/",
+      "snippet": "Mirai Labs builds uzu, a Rust inference engine, and quantizes Qwen, LFM and other open models to 4- and 8-bit for iPhone, iPad and Mac."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

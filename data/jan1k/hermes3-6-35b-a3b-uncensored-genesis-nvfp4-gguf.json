@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "jan1k/Hermes3.6-35B-A3B-Uncensored-Genesis-NVFP4-GGUF",
+  "slug": "jan1k-hermes3-6-35b-a3b-uncensored-genesis-nvfp4-gguf",
+  "author": "jan1k",
+  "url": "https://huggingface.co/jan1k/Hermes3.6-35B-A3B-Uncensored-Genesis-NVFP4-GGUF",
+  "created_at": "2026-09-01T15:36:59.000Z",
+  "updated_at": "2026-09-01T15:37:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "hermes",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "hermes",
+    "gguf",
+    "text-generation",
+    "nvfp4",
+    "fp4",
+    "moe",
+    "qwen3.6",
+    "uncensored",
+    "vision",
+    "multimodal",
+    "genesis",
+    "llama-cpp",
+    "conversational",
+    "en",
+    "multilingual",
+    "base_model:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "base_model:quantized:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 446571248,
+  "parameters_human": "446.6M",
+  "storage_bytes": 899283072,
+  "storage_human": "899 MB",
+  "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hermes3.6-35B-A3B-Uncensored-Genesis-V7-MTP-APEX-Compact.gguf ...",
+      "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF/blob/main/Hermes3.6-35B-A3B-Uncensored-Genesis-V7-MTP-APEX-Compact.gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-GGUF",
+      "url": "https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-GGUF/discussions/36",
+      "snippet": "I have been testing Hermes3.6-35B-A3B-Uncensored-Genesis-V7-MTP-APEX-Compact quite extensively as the main model for a local Hermes Agent setup, and wanted to share some practical observations."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V9-GGUF",
+      "url": "https://ryuhq.com/store/models/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V9-GGUF",
+      "snippet": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V9-GGUF is a model by LuffyTheFox from Hugging Face, browsable and runnable in Ryu. Topics: hermes, gguf, uncensored, qwen3.6, moe."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF — Model for Ryu · Ryu",
+      "url": "https://ryuhq.com/store/models/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF",
+      "snippet": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF is a model by LuffyTheFox from Hugging Face, browsable and runnable in Ryu. Topics: hermes, gguf, uncensored, qwen3.6, moe."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V6-GGUF",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.6-35b-a3b-uncensored-genesis-hermes-v6-gguf-luffythefox",
+      "snippet": "Overview Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V6-GGUF is a 35 billion parameter mixture-of-experts language model built by LuffyTheFox that applies a post-training signal restoration technique called \"Genesis\" to an uncensored Qwen base model. The model uses a hybrid architecture combining Gated DeltaNet linear attention and full softmax attention in a 3:1 ratio across 40 layers, with 256 ..."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "specklabs/Speck2-140M-Instruct",
+  "slug": "specklabs-speck2-140m-instruct",
+  "author": "specklabs",
+  "url": "https://huggingface.co/specklabs/Speck2-140M-Instruct",
+  "created_at": "2026-09-01T17:34:53.000Z",
+  "updated_at": "2026-09-01T18:08:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speck",
+    "text-generation",
+    "causal-lm",
+    "instruction-tuned",
+    "chat",
+    "hybrid",
+    "grouped-query-attention",
+    "causal-convolution",
+    "pytorch",
+    "custom_code",
+    "conversational",
+    "en",
+    "dataset:specklabs/SpeckChat2",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:mlfoundations/dclm-baseline-1.0-parquet",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:wikimedia/wikipedia",
+    "base_model:specklabs/Speck2-140M",
+    "base_model:finetune:specklabs/Speck2-140M",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 140654208,
+  "parameters_human": "140.7M",
+  "storage_bytes": 282702763,
+  "storage_human": "283 MB",
+  "base_model": "specklabs/Speck2-140M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "specklabs/Speck2-140M · Hugging Face",
+      "url": "https://huggingface.co/specklabs/Speck2-140M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "specklabs/Speck1.1-140M-Instruct · Hugging Face",
+      "url": "https://huggingface.co/specklabs/Speck1.1-140M-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Speck1 140M Instruct by specklabs - LLM Explorer",
+      "url": "https://llm-explorer.com/model/specklabs%2FSpeck1-140M-Instruct,42bo3zsIoltvXtgS6xbaEa",
+      "snippet": "Speck1 140M Instruct is an open-source 140m LLM by specklabs. VRAM 0.3GB, 4K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Speck™ Dev Kit Quick Start Guide | SynSense",
+      "url": "https://www.synsense.ai/speck-quick-start-guide/",
+      "snippet": "* Please follow this instruction to run a dev kit, apply configuration and enable power measurement: https://synsense-sys-int.gitlab.io/samna/howto.html#how-do-i"
+    },
+    {
+      "title": "Speck™: Event-Driven Neuromorphic Vision SoC | SynSense",
+      "url": "https://www.synsense.ai/products/speck-2/",
+      "snippet": "Speck is the world&#x27;s first fully event-driven neuromorphic vision SoC using the dynamic vision sensing and the spiking neural network technology."
+    }
+  ]
+}

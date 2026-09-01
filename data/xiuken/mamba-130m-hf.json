@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "xiuken/mamba-130m-hf",
+  "slug": "xiuken-mamba-130m-hf",
+  "author": "xiuken",
+  "url": "https://huggingface.co/xiuken/mamba-130m-hf",
+  "created_at": "2026-09-01T12:02:55.000Z",
+  "updated_at": "2026-09-01T12:02:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mamba",
+    "text-generation",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 129135360,
+  "parameters_human": "129.1M",
+  "storage_bytes": 516567560,
+  "storage_human": "517 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "state-spaces/mamba-130m-hf · Hugging Face",
+      "url": "https://huggingface.co/state-spaces/mamba-130m-hf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mamba-130m-hf Open-source Sequence Modeling Model - Free Deployment for ...",
+      "url": "https://model.aibase.com/en/models/details/1915693643937243138",
+      "snippet": "Mamba is a sequence modeling architecture based on State Space Models (SSM), suitable for causal language modeling tasks. The model provides optimized CUDA kernel implementations, supporting efficient text generation."
+    },
+    {
+      "title": "Tiny non-Transformers - a FlameF0X Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/FlameF0X/tiny-non-transformers",
+      "snippet": "Any model that is not pure transformers, so both RWKV, Mamba like models and hybrid like Jamba will be showed. MODELS OF THE SAME FAMILY DONT GET NOTE"
+    },
+    {
+      "title": "mamba-130m-hf — specs, VRAM, license, benchmarks | LocalLLMs",
+      "url": "https://localllms.dev/llm/state-spacesmamba-130m-hf/",
+      "snippet": "Can I use mamba-130m-hf commercially? mamba-130m-hf is distributed under the unknown license. Commercial use depends on specific license terms — always verify the HuggingFace model card before production deployment. What GPU do I need to run mamba-130m-hf? For Q4 quantization you need at least 1.6 GB VRAM."
+    },
+    {
+      "title": "mamba-130m-hf · Model · Inferix",
+      "url": "https://inferix.co/models/state-spaces/mamba-130m-hf",
+      "snippet": "This repository contains the transfromers compatible mamba-2.8b. The checkpoints are untouched, but the full config.json and tokenizer are pushed to this repo."
+    }
+  ]
+}

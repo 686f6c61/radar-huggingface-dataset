@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "blaze-voice-ai/dubbing-light-asd",
+  "slug": "blaze-voice-ai-dubbing-light-asd",
+  "author": "blaze-voice-ai",
+  "url": "https://huggingface.co/blaze-voice-ai/dubbing-light-asd",
+  "created_at": "2026-09-01T13:25:29.000Z",
+  "updated_at": "2026-09-01T13:25:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active-speaker-detection",
+    "light-asd",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4175289,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "blaze-voice-ai (Blaze AI) - Hugging Face",
+      "url": "https://huggingface.co/blaze-voice-ai/datasets",
+      "snippet": "Org profile for Blaze AI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Dubbing AI- AI Voice Changer For Gamers and Streamers",
+      "url": "https://dubbingai.io/",
+      "snippet": "Dubbing AI Offers realtime voice changer and soundboard. Our unique ghostface voice changer enhance your voice on Discord, Zoom, OBS, and more with seamless AI powered voice generator."
+    },
+    {
+      "title": "Superior Voice AI for ASEAN | Blaze",
+      "url": "https://blaze.vn/",
+      "snippet": "Blaze brings natural Text-to-Speech, accurate Speech-to-Text, an AI Voice Assistant and a real-time Live Interpreter to Vietnamese and Southeast Asian languages — for apps and developers."
+    },
+    {
+      "title": "RVC Models: AI Voices - 388 Model Downloads & Examples",
+      "url": "https://aimodels.org/ai-models/rvc-models-ai-voice/",
+      "snippet": "RVC Models: AI Voices - 388 Model Downloads & Examples The world of audio technology is changing fast, thanks to RVC (Retrieval-based Voice Conversion) models. These models use advanced artificial intelligence to create voices that sound real and can be customized for your projects."
+    },
+    {
+      "title": "AI Brand Voice Generator - Blaze",
+      "url": "https://www.blaze.ai/ai-writer/ai-brand-voice",
+      "snippet": "Blaze will generate your brand voice from content you&#x27;ve made and add it to every post-from blog content to Instagram captions to LinkedIn posts."
+    }
+  ]
+}

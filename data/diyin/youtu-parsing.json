@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "DIYIN/Youtu-Parsing",
+  "slug": "diyin-youtu-parsing",
+  "author": "DIYIN",
+  "url": "https://huggingface.co/DIYIN/Youtu-Parsing",
+  "created_at": "2026-09-01T13:43:54.000Z",
+  "updated_at": "2026-09-01T13:43:55.000Z",
+  "license": "youtu-parsing",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "youtu_vl",
+    "text-generation",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "arxiv:2601.20430",
+    "arxiv:2601.19798",
+    "arxiv:2512.24618",
+    "base_model:tencent/Youtu-LLM-2B",
+    "base_model:finetune:tencent/Youtu-LLM-2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2515984240,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5060666816,
+  "storage_human": "5.1 GB",
+  "base_model": "tencent/Youtu-LLM-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - TencentCloudADP/youtu-parsing: Youtu-Parsing: Perception ...",
+      "url": "https://github.com/TencentCloudADP/youtu-parsing",
+      "snippet": "Youtu-Parsing is a specialized document parsing model built upon the open-source Youtu-LLM 2B foundation. By extending the capabilities of the base model with a prompt-guided framework and NaViT-style dynamic visual encoder, Youtu-Parsing offers enhanced parsing capabilities for diverse document elements including text, tables, formulas, and charts. The model incorporates an efficient parallel ..."
+    },
+    {
+      "title": "youtu-parsing/README.md at main - GitHub",
+      "url": "https://github.com/TencentCloudADP/youtu-parsing/blob/main/README.md",
+      "snippet": "Youtu-Parsing is a specialized document parsing model built upon the open-source Youtu-LLM 2B foundation. By extending the capabilities of the base model with a prompt-guided framework and NaViT-style dynamic visual encoder, Youtu-Parsing offers enhanced parsing capabilities for diverse document elements including text, tables, formulas, and charts. The model incorporates an efficient parallel ..."
+    },
+    {
+      "title": "tencent/Youtu-Parsing · Hugging Face",
+      "url": "https://huggingface.co/tencent/Youtu-Parsing",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Youtu-Parsing: Perception, Structuring and Recognition via High ...",
+      "url": "https://arxiv.org/abs/2601.20430",
+      "snippet": "This paper presents Youtu-Parsing, an efficient and versatile document parsing model designed for high-performance content extraction. The architecture employs a native Vision Transformer (ViT) featuring a dynamic-resolution visual encoder to extract shared document features, coupled with a prompt-guided Youtu-LLM-2B language model for layout analysis and region-prompted decoding. Leveraging ..."
+    },
+    {
+      "title": "Youtu-Parsing · Models",
+      "url": "https://www.modelscope.cn/models/Tencent-YouTu-Research/Youtu-Parsing/summary",
+      "snippet": "Youtu-Parsing is a specialized document parsing model built upon the open-source Youtu-LLM 2B foundation. By extending the capabilities of the base model with a prompt-guided framework and NaViT-style dynamic visual encoder, Youtu-Parsing offers enhanced parsing capabilities for diverse document elements including text, tables, formulas, and ..."
+    }
+  ]
+}

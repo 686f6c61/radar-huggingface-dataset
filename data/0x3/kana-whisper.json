@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "0x3/kana-whisper",
+  "slug": "0x3-kana-whisper",
+  "author": "0x3",
+  "url": "https://huggingface.co/0x3/kana-whisper",
+  "created_at": "2026-09-01T11:45:54.000Z",
+  "updated_at": "2026-09-01T11:45:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "speech-recognition",
+    "asr",
+    "japanese",
+    "ja",
+    "arxiv:2606.25369",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 808878080,
+  "parameters_human": "808.9M",
+  "storage_bytes": 3235581408,
+  "storage_human": "3.2 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rose3/kana-anime-whisper at main - Hugging Face",
+      "url": "https://huggingface.co/rose3/kana-anime-whisper/tree/main",
+      "snippet": "rose3 / kana-anime-whisper like 2 Safetensors Japanese whisper Model card FilesFiles and versions xet Community main kana-anime-whisper 1.51 GB Ctrl+K Ctrl+K 1 contributor History:4 commits rose3 Update README.md 7139c04 verified4 days ago .gitattributes Safe 50 BytesInitial upload: KanaV7 merged model with LFS5 days ago README.md 1.69 kBUpdate ..."
+    },
+    {
+      "title": "tokimoa/kana-whisper-ggml · Hugging Face",
+      "url": "https://huggingface.co/tokimoa/kana-whisper-ggml",
+      "snippet": "kana-whisper-ggml SB Intuitions社の kana-whisper （日本語音声→カナ転写・Whisper large-v3-turbo構成）を whisper.cpp 形式に変換したもの ..."
+    },
+    {
+      "title": "Whisper Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/whisper-1",
+      "snippet": "General-purpose speech recognition model Compare"
+    },
+    {
+      "title": "whisper/model-card.md at main · openai/whisper · GitHub",
+      "url": "https://github.com/openai/whisper/blob/main/model-card.md?plain=1",
+      "snippet": "The primary intended users of these models are AI researchers studying the robustness, generalization, capabilities, biases, and constraints of the current model. However, Whisper is also potentially quite useful as an ASR solution for developers, especially for English speech recognition."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper [Blog] [Paper] [Model card] [Colab example] Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    }
+  ]
+}

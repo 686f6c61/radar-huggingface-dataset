@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "NeoYin04/advertest-license-plate-detector",
+  "slug": "neoyin04-advertest-license-plate-detector",
+  "author": "NeoYin04",
+  "url": "https://huggingface.co/NeoYin04/advertest-license-plate-detector",
+  "created_at": "2026-09-01T16:02:22.000Z",
+  "updated_at": "2026-09-01T16:06:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6241454,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Build Your Own License Plate Detection Model - alwaysAI",
+      "url": "https://alwaysai.co/tutorials/build-a-license-plate-detection-model",
+      "snippet": "Our aim with this tutorial is to provide a detailed overview of how custom models can be trained using the alwaysAI model training tool, starting with data collection and ending with testing your model&#x27;s performance. For more information about model training, check out this article: Introduction to Computer Vision Model Training."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of September 2026. Most recent: GLM-5.3-Flash by Z.ai on Aug 26 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "GitHub - ankandrew/open-image-models: Pre-trained image models using ...",
+      "url": "https://github.com/ankandrew/open-image-models",
+      "snippet": "🚀 Pre-trained: Models are ready for immediate use, no additional training required. 🌟 ONNX: Cross-platform support for fast inference on both CPU and GPU environments. ⚡ Performance: Optimized for both speed and accuracy, ensuring efficient real-time applications. 💻 Simple API: Power up your applications with robust model inference in just one line of code."
+    },
+    {
+      "title": "license-plate-detection · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/license-plate-detection",
+      "snippet": "android windows linux raspberry-pi machine-learning deep-learning tensorflow artificial-intelligence license-plate anpr jetson alpr license-plate-recognition license-plate-detection anpr-sdk openvino jetson-nano khadas-vims-boards amlogic-npu khadas-vim3"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    }
+  ]
+}

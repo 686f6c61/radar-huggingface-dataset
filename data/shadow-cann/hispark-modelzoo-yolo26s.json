@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "shadow-cann/hispark-modelzoo-yolo26s",
+  "slug": "shadow-cann-hispark-modelzoo-yolo26s",
+  "author": "shadow-cann",
+  "url": "https://huggingface.co/shadow-cann/hispark-modelzoo-yolo26s",
+  "created_at": "2026-09-01T13:53:26.000Z",
+  "updated_at": "2026-09-01T13:54:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "onnx",
+    "hisilicon",
+    "hispark",
+    "npu",
+    "openharmony",
+    "modelzoo",
+    "pytorch",
+    "zh",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48830234,
+  "storage_human": "49 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shadow-cann/hispark-modelzoo-deepsort at main - Hugging Face",
+      "url": "https://huggingface.co/shadow-cann/hispark-modelzoo-deepsort/tree/main",
+      "snippet": "0 ONNX PyTorch Chinese hisilicon hispark npu openharmony modelzoo Model card FilesFiles and versions xet Community Copy to bucket new main hispark-modelzoo-deepsort 114 MB Ctrl+K Ctrl+K 1 contributor History:2 commits shadow-cann Add files using upload-large-folder tool d8df29a verified5 months ago .gitattributes 1.8 kBAdd files using upload ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=hispark",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Ultralytics YOLO26",
+      "url": "https://docs.ultralytics.com/models/yolo26",
+      "snippet": "YOLO26 from Ultralytics delivers unified, real-time, end-to-end vision models optimized for accurate and efficient deployment."
+    },
+    {
+      "title": "GitHub - ultralytics/yolo26: Ultralytics YOLO26 quickstart for ...",
+      "url": "https://github.com/ultralytics/yolo26",
+      "snippet": "YOLO26 models are available for detection, instance segmentation, semantic segmentation, depth estimation, classification, pose estimation, and oriented object detection. All model weights download automatically from the latest Ultralytics assets release on first use."
+    },
+    {
+      "title": "YOLO26s Model by Liaoyutao - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/liaoyutao/yolo26/yolo26s",
+      "snippet": "YOLO26s model from the YOLO26 project by Liaoyutao. View training metrics, predictions, and deploy on Ultralytics Platform."
+    }
+  ]
+}

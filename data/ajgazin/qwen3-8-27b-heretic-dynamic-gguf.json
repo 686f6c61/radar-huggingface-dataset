@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ajgazin/Qwen3.8-27B-Heretic-Dynamic-GGUF",
+  "slug": "ajgazin-qwen3-8-27b-heretic-dynamic-gguf",
+  "author": "ajgazin",
+  "url": "https://huggingface.co/ajgazin/Qwen3.8-27B-Heretic-Dynamic-GGUF",
+  "created_at": "2026-09-01T00:22:19.000Z",
+  "updated_at": "2026-09-01T14:08:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3",
+    "abliterated",
+    "uncensored",
+    "heretic",
+    "unsloth",
+    "imatrix",
+    "dynamic-quant",
+    "mtp",
+    "text-generation",
+    "base_model:llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved",
+    "base_model:quantized:llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 95018958752,
+  "storage_human": "95.0 GB",
+  "base_model": "llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ajgazin/Qwen3.8-27B-Heretic-unsloth-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ajgazin/Qwen3.8-27B-Heretic-unsloth-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8-2.4T-A95B is a 2.4T parameter (95B active) model with rivaling GPT-5.6 Sol. Aug 19 Update: Qwen3.8-27B GGUFs now use Unsloth Dynamic V3.0 for 10% more accuracy at the same size, largely outperforming others. Run Qwen3.8 Guide Download Unsloth Thank you Qwen for day zero access. Unsloth quants also include:"
+    },
+    {
+      "title": "Empero — Independent AI Research Lab",
+      "url": "https://empero.org/",
+      "snippet": "Empero is an independent AI research lab in Germany building small, efficient language models you can own and run yourself. Latest: Qwen3.8 distilled to 9B / 4B / 2B, and a GDN-aware 27B Ridge GGUF at 11.7 GiB. 1M+ downloads on Hugging Face."
+    }
+  ]
+}

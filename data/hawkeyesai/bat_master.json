@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HawkEyesAI/BAT_Master",
+  "slug": "hawkeyesai-bat_master",
+  "author": "HawkEyesAI",
+  "url": "https://huggingface.co/HawkEyesAI/BAT_Master",
+  "created_at": "2025-01-02T09:54:07.000Z",
+  "updated_at": "2026-09-01T12:08:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "doi:10.57967/hf/7062",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9475140945,
+  "storage_human": "9.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HawkEyesAI/BAT_Master · Hugging Face",
+      "url": "https://huggingface.co/HawkEyesAI/BAT_Master",
+      "snippet": "You need to agree to share your contact information to access this model This repository is publicly accessible, but you have to accept the conditions to access its files and content. Log in or Sign Up to review the conditions and access this model content."
+    },
+    {
+      "title": "HawkEyesAI/BAT · Hugging Face",
+      "url": "https://huggingface.co/HawkEyesAI/BAT",
+      "snippet": "You need to agree to share your contact information to access this model This repository is publicly accessible, but you have to accept the conditions to access its files and content."
+    },
+    {
+      "title": "GitHub - Kitware/batai: Bat Detection and Classification using AI and ...",
+      "url": "https://github.com/Kitware/batai",
+      "snippet": "Bat Detection and Classification using AI and Acoustics - Kitware/batai"
+    },
+    {
+      "title": "Bat AI Project Repository Download and Installation Guide",
+      "url": "https://www.aibase.com/repos/project/bat",
+      "snippet": "View the Bat AI project repository download and installation guide, learn about the latest development trends and innovations."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

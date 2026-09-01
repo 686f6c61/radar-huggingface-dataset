@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SyedaArisha/predictive-maintenance-rag-system",
+  "slug": "syedaarisha-predictive-maintenance-rag-system",
+  "author": "SyedaArisha",
+  "url": "https://huggingface.co/SyedaArisha/predictive-maintenance-rag-system",
+  "created_at": "2026-08-28T08:50:21.000Z",
+  "updated_at": "2026-09-01T17:17:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "predictive-maintenance",
+    "time-series",
+    "anomaly-detection",
+    "remaining-useful-life",
+    "rag",
+    "faiss",
+    "xgboost",
+    "lstm",
+    "manufacturing",
+    "fmcg",
+    "tabular-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 607090134,
+  "storage_human": "607 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Predictive Maintenance Systems using RAG: Equipment Failure Prediction ...",
+      "url": "https://www.ai.codersarts.com/post/predictive-maintenance-systems-using-rag-equipment-failure-prediction-and-optimization",
+      "snippet": "This AI system integrates continuous equipment monitoring with maintenance history, manufacturer specifications, and operational patterns to provide accurate failure predictions and optimized maintenance scheduling. Unlike conventional maintenance management systems that operate on fixed schedules or basic threshold alerts, RAG-powered predictive maintenance systems dynamically analyze ..."
+    },
+    {
+      "title": "Prescriptive Agents based on RAG for Automated Maintenance (PARAM)",
+      "url": "https://arxiv.org/pdf/2508.04714",
+      "snippet": "Abstract—Industrial machinery maintenance requires timely Iintervention to prevent catastrophic failures and optimize op-erational ef- ficiency. This paper presents an integrated Large Language Model (LLM)-based intelligent system for prescriptive maintenance that extends beyond traditional anomaly detection to provide actionable maintenance recommendations. Building upon our prior LAMP ..."
+    },
+    {
+      "title": "GitHub - ZidanSenpai/RAG-Predictive-Maintenance",
+      "url": "https://github.com/ZidanSenpai/RAG-Predictive-Maintenance",
+      "snippet": "Traditional maintenance methods rely heavily on manual inspection and static documentation. This project uses machine learning for proactive failure prediction and LLMs with RAG to extract relevant repair procedures from documents—bringing the power of AI to intelligent, context-aware maintenance systems."
+    },
+    {
+      "title": "[2508.04714v2] Prescriptive Agents based on RAG for Automated ...",
+      "url": "https://arxiv.org/abs/2508.04714v2",
+      "snippet": "Industrial machinery maintenance requires timely intervention to prevent catastrophic failures and optimize operational efficiency. This paper presents an integrated Large Language Model (LLM)-based intelligent system for prescriptive maintenance that extends beyond traditional anomaly detection to provide actionable maintenance recommendations. Building upon our prior LAMP framework for ..."
+    },
+    {
+      "title": "GitHub - dhruvvaidya67/RAG_Predictive_Maintenance: AI-Powered ...",
+      "url": "https://github.com/dhruvvaidya67/RAG_Predictive_Maintenance",
+      "snippet": "An AI-powered predictive maintenance platform that combines LSTM Neural Networks with Retrieval-Augmented Generation (RAG) to predict Remaining Useful Life (RUL) of turbofan engines and provide intelligent maintenance guidance."
+    }
+  ]
+}

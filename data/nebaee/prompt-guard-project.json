@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Nebaee/prompt-guard-project",
+  "slug": "nebaee-prompt-guard-project",
+  "author": "Nebaee",
+  "url": "https://huggingface.co/Nebaee/prompt-guard-project",
+  "created_at": "2026-09-01T16:50:46.000Z",
+  "updated_at": "2026-09-01T16:50:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1498111,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Devikeerthi000/PromptGuard-AI: Automated LLM prompt evaluation ...",
+      "url": "https://github.com/Devikeerthi000/PromptGuard-AI",
+      "snippet": "🛡️ PromptGuard AI Enterprise-Grade LLM Prompt Quality & Regression Monitoring System Automate prompt evaluation, benchmarking, and regression detection for production LLM systems."
+    },
+    {
+      "title": "GitHub - seojoonkim/prompt-guard: Advanced prompt injection defense ...",
+      "url": "https://github.com/seojoonkim/prompt-guard",
+      "snippet": "Advanced prompt injection defense system for AI agents. Multi-language detection, severity scoring, and security auditing. - seojoonkim/prompt-guard"
+    },
+    {
+      "title": "PromptGuard - metanoia-oss.github.io",
+      "url": "https://metanoia-oss.github.io/promptguard/",
+      "snippet": "PromptGuard Never parse LLM output again. PromptGuard is a production-grade reliability layer that turns Large Language Models into safe, structured, testable software components. What it does Schema-valid outputs — every time Automatic repair when models return bad data Prompt regression testing to catch drift Multi-provider — OpenAI, Anthropic, Google, local models CLI tooling for ..."
+    },
+    {
+      "title": "promptguard-ai · PyPI",
+      "url": "https://pypi.org/project/promptguard-ai/",
+      "snippet": "What is Prompt Injection? Prompt Injection is a technique where an attacker embeds malicious or manipulative text that tries to override an AI model&#x27;s instructions, access secrets, or execute harmful commands."
+    },
+    {
+      "title": "meta-llama/Prompt-Guard-86M · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Prompt-Guard-86M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

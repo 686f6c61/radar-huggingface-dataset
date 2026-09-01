@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "seriintan/multitaskdit_frazier",
+  "slug": "seriintan-multitaskdit_frazier",
+  "author": "seriintan",
+  "url": "https://huggingface.co/seriintan/multitaskdit_frazier",
+  "created_at": "2026-09-01T17:45:54.000Z",
+  "updated_at": "2026-09-01T17:47:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "multi_task_dit",
+    "robotics",
+    "dataset:seriintan/frazier_dataset_20260901_151518",
+    "arxiv:2507.05331",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 248855302,
+  "parameters_human": "248.9M",
+  "storage_bytes": 995509304,
+  "storage_human": "996 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "seriintan/multitask-dit-frazier-sim-v3 · Hugging Face",
+      "url": "https://huggingface.co/seriintan/multitask-dit-frazier-sim-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "seriintan/multitask-dit-frazier-sim-v3 at main - Hugging Face",
+      "url": "https://huggingface.co/seriintan/multitask-dit-frazier-sim-v3/tree/main",
+      "snippet": "Libraries LeRobot How to use seriintan/multitask-dit-frazier-sim-v3 with LeRobot: Notebooks Google Colab Kaggle main multitask-dit-frazier-sim-v3 999 MB Ctrl+K Ctrl+K 1 contributor History:5 commits seriintan Upload model card and train config bf24d2c verifiedabout 9 hours ago tokenizerUpload DataProcessorPipelineabout 9 hours ago ..."
+    },
+    {
+      "title": "GitHub - brysonjones/multitask_dit_policy: An open-source ...",
+      "url": "https://github.com/brysonjones/multitask_dit_policy",
+      "snippet": "The goal of this project is to provide the community with a high quality implementation of Multitask DiT Policy that can be used as a baseline for model research and building on top of. Architecture diagram of the Multitask Diffusion-Transformer (DiT) Policy model I&#x27;ve made an effort to make the implementations as readable as possible, at the sacrifice of making the most optimized ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Frazier Single Tool v2 - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/seriintan-frazier-single-tool-v2",
+      "snippet": "A robotic manipulation dataset created with LeRobot containing 40 episodes of SO follower robot demonstrations with gripper and side camera views."
+    }
+  ]
+}

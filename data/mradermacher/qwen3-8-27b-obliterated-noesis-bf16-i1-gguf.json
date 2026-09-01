@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-Obliterated-NOESIS-BF16-i1-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-obliterated-noesis-bf16-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Obliterated-NOESIS-BF16-i1-GGUF",
+  "created_at": "2026-09-01T14:31:52.000Z",
+  "updated_at": "2026-09-01T15:32:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ru",
+    "zh",
+    "ja",
+    "kk",
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "noesis",
+    "noesis-repack",
+    "bf16",
+    "mtp",
+    "qwen3_5",
+    "qwen3_6",
+    "qwen3_8",
+    "en",
+    "ru",
+    "zh",
+    "ja",
+    "kk",
+    "vi",
+    "base_model:AMAImedia/Qwen3.8-27B-Obliterated-NOESIS-BF16",
+    "base_model:quantized:AMAImedia/Qwen3.8-27B-Obliterated-NOESIS-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 39471843136,
+  "storage_human": "39.5 GB",
+  "base_model": "AMAImedia/Qwen3.8-27B-Obliterated-NOESIS-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.8-27B-OBLITERATED-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-OBLITERATED-GGUF",
+      "snippet": "mradermacher / Qwen3.8-27B-OBLITERATED-GGUF like 6 Transformers GGUF Safetensors MLX English abliterated uncensored obliteratus qwen3 qwen3.8 red-team ai-safety-research conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-Abliterated-Uncensored-NOESIS-BF16-i1-GGUF ...",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Abliterated-Uncensored-NOESIS-BF16-i1-GGUF",
+      "snippet": "mradermacher / Qwen3.8-27B-Abliterated-Uncensored-NOESIS-BF16-i1-GGUF like 0 Transformers GGUF 6 languages noesis noesis-repack bf16 mtp qwen3_5 qwen3_6 qwen3_8 imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Run Qwen3.8-27B-OBLITERATED Locally: GGUF Sizes, VRAM, and Settings",
+      "url": "https://www.mindstudio.ai/blog/run-qwen3-8-27b-obliterated-locally",
+      "snippet": "How to run the uncensored Qwen3.8-27B-OBLITERATED model locally: GGUF quant sizes, VRAM needs, and the exact settings that keep it from looping."
+    },
+    {
+      "title": "Qwen3.8 27b Obliterated - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-8-27b-obliterated.html",
+      "snippet": "Download Qwen3.8 27b Obliterated GGUF model. 30.1 GB, 4,415 downloads."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: VRAM, Quants and the Template Trap",
+      "url": "https://locallyuncensored.com/blog/how-to-run-qwen-3-8-27b-locally.html",
+      "snippet": "Qwen 3.8 27B is out under Apache 2.0. Real GGUF sizes, the VRAM math for 12 GB and 24 GB cards, the broken chat template nobody warns you about, and vision setup."
+    }
+  ]
+}

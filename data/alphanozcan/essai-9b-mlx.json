@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "alphanozcan/essAi-9b-mlx",
+  "slug": "alphanozcan-essai-9b-mlx",
+  "author": "alphanozcan",
+  "url": "https://huggingface.co/alphanozcan/essAi-9b-mlx",
+  "created_at": "2026-09-01T12:55:53.000Z",
+  "updated_at": "2026-09-01T13:02:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.5",
+    "4-bit",
+    "college-essays",
+    "personal-statement",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1399927296,
+  "parameters_human": "1.40B",
+  "storage_bytes": 5058151790,
+  "storage_human": "5.1 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alphanozcan/essAi-mlx · Hugging Face",
+      "url": "https://huggingface.co/alphanozcan/essAi-mlx",
+      "snippet": "essAi (MLX 4-bit) A 4-bit quantized MLX build of alphanozcan/essAi — a Qwen3-4B fine-tune that writes authentic college application essays (Common App personal statement style) in a natural human voice."
+    },
+    {
+      "title": "alphanozcan (Alphan Özcan) - Hugging Face",
+      "url": "https://huggingface.co/alphanozcan",
+      "snippet": "User profile of Alphan Özcan on Hugging Face"
+    },
+    {
+      "title": "Alphan Özcan — AI/ML Developer & Entrepreneur",
+      "url": "https://alphan.gen.tr/",
+      "snippet": "Cofounded and engineered the backend for CrasAI (crasai.com), a multi-model AI platform unifying text, image generation, and data processing in one interface. Designed a Go-based backend with an original automatic model-selection algorithm that routes each request to the fastest, most suitable model."
+    },
+    {
+      "title": "GitHub - ml-explore/mlx-lm: Run LLMs with MLX",
+      "url": "https://github.com/ml-explore/mlx-lm",
+      "snippet": "MLX LM is a Python package for generating text and fine-tuning large language models on Apple silicon with MLX. Some key features include: Integration with the Hugging Face Hub to easily use thousands of LLMs with a single command. Support for quantizing and uploading models to the Hugging Face Hub. Low-rank and full model fine-tuning with support for quantized models. Distributed inference ..."
+    },
+    {
+      "title": "Models - MLX Server",
+      "url": "https://www.mlxserver.com/models",
+      "snippet": "Models To view all of the models, check out mlx-lm on Huggingface. Our MLX server uses all of the models supported by the mlx-community. Popular Models Here&#x27;s a list of some of the most popular models and their usage: Mistral 7B Instruct Nous Research"
+    }
+  ]
+}

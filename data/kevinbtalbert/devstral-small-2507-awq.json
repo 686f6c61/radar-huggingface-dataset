@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "kevinbtalbert/Devstral-Small-2507-AWQ",
+  "slug": "kevinbtalbert-devstral-small-2507-awq",
+  "author": "kevinbtalbert",
+  "url": "https://huggingface.co/kevinbtalbert/Devstral-Small-2507-AWQ",
+  "created_at": "2026-09-01T14:25:22.000Z",
+  "updated_at": "2026-09-01T14:25:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "code",
+    "text-generation",
+    "base_model:mistralai/Devstral-Small-2507",
+    "base_model:quantized:mistralai/Devstral-Small-2507",
+    "license:apache-2.0",
+    "4-bit",
+    "awq",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 14253770378,
+  "storage_human": "14.3 GB",
+  "base_model": "mistralai/Devstral-Small-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kevinbtalbert/Devstral-Small-2507 · Hugging Face",
+      "url": "https://huggingface.co/kevinbtalbert/Devstral-Small-2507",
+      "snippet": "In a bash terminal, run lms import Devstral-Small-2507-Q4_K_M.gguf in the directory where you&#x27;ve downloaded the model checkpoint (e.g. Devstral-Small-2507_gguf) Open the LM Studio application, click the terminal icon to get into the developer tab. Click select a model to load and select Devstral Small 2507."
+    },
+    {
+      "title": "README.md · kevinbtalbert/Devstral-Small-2507 at main",
+      "url": "https://huggingface.co/kevinbtalbert/Devstral-Small-2507/blob/main/README.md",
+      "snippet": "Devstral Small 1.1 Devstral is an agentic LLM for software engineering tasks built under a collaboration between Mistral AI and All Hands AI 🙌. Devstral excels at using tools to explore codebases, editing multiple files and power software engineering agents. The model achieves remarkable performance on SWE-bench which positions it as the #1 open source model on this benchmark."
+    },
+    {
+      "title": "devstral-small-2507 | Mistral AI | AI Model Directory",
+      "url": "https://portkey.ai/models/mistral-ai/devstral-small-2507",
+      "snippet": "devstral-small-2507 by Mistral AI. Input: $0.10/M, Output: $0.30/M. Tool Calling, 33K output tokens"
+    },
+    {
+      "title": "GitHub - fetchwiki/mistralai-Devstral-Small-2507: Mirror of mistralai ...",
+      "url": "https://github.com/fetchwiki/mistralai-Devstral-Small-2507",
+      "snippet": "Devstral is an agentic LLM for software engineering tasks built under a collaboration between Mistral AI and All Hands AI 🙌. Devstral excels at using tools to explore codebases, editing multiple files and power software engineering agents. The model achieves remarkable performance on SWE-bench ..."
+    },
+    {
+      "title": "Devstral Small 2507 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/devstral-small-2507.html",
+      "snippet": "Download Devstral Small 2507 GGUF model. 14.7 GB, 3,686 downloads, 77 likes."
+    }
+  ]
+}

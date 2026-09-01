@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "devvexus/marlowe-22b",
+  "slug": "devvexus-marlowe-22b",
+  "author": "devvexus",
+  "url": "https://huggingface.co/devvexus/marlowe-22b",
+  "created_at": "2026-09-01T16:55:18.000Z",
+  "updated_at": "2026-09-01T16:56:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-27B, unsloth/Qwen3.8-27B-GGUF",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Codestral by Mistral AI: The Ultimate Guide to the 22B Code Model",
+      "url": "https://railwail.com/us/blog/codestral-complete-guide",
+      "snippet": "Discover Codestral by Mistral AI. Explore benchmarks, pricing, 80+ supported languages, and how this 22B model compares to GPT-4o and CodeLlama."
+    },
+    {
+      "title": "Overview | Marlowe",
+      "url": "https://marlowe-research.stanford.edu/",
+      "snippet": "Music / AI · Stanford University IT Marlowe Computing Spotlight: Elizabeth Schumann Group Elizabeth Schumann, an assistant professor of music, is building a screen-free companion that prompts children toward child-led musical exploration. Her group trains the unified text-music model behind it on Marlowe, moving from single-GPU prototypes to multi-machine, multi-GPU runs."
+    },
+    {
+      "title": "Marlowe: Analytical AI for Fiction, Not Generative AI",
+      "url": "https://authors.ai/marlowe/",
+      "snippet": "Marlowe is an analytical AI for fiction that evaluates your novel against bestselling manuscripts — it never writes, only gives feedback."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Marlowe: The AI That Reads Your Novel (and Has Notes) by Authors A.I.",
+      "url": "https://aiappsforauthors.com/apps/marlowe/",
+      "snippet": "Marlowe uses machine learning trained on bestselling fiction to analyze your manuscript&#x27;s pacing, structure, and characters with a data-driven critique."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "uglasses/IdentiFace-PixArt-FFHQ",
+  "slug": "uglasses-identiface-pixart-ffhq",
+  "author": "uglasses",
+  "url": "https://huggingface.co/uglasses/IdentiFace-PixArt-FFHQ",
+  "created_at": "2026-09-01T15:44:22.000Z",
+  "updated_at": "2026-09-01T16:05:07.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "identiface",
+    "pixart",
+    "controlnet",
+    "ffhq",
+    "face",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6005777323,
+  "storage_human": "6.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - uglasses/IdentiFace: Official implementation repository of ...",
+      "url": "https://github.com/uglasses/IdentiFace",
+      "snippet": "IdentiFace Official implementation repository of IdentiFace: Multi-Modal Iterative Diffusion Framework for Identifiable Suspect Face Generation in Crime Investigations."
+    },
+    {
+      "title": "uglasses/ID-FFHQ · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/uglasses/ID-FFHQ",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "uglasses · GitHub",
+      "url": "https://github.com/uglasses",
+      "snippet": "Official implementation repository of IJCB2026 paper IdentiFace: Multi-Modal Iterative Diffusion Framework for Identifiable Suspect Face Generation in Crime Investigations Jupyter Notebook"
+    },
+    {
+      "title": "uglasses/ID-FFHQ at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/uglasses/ID-FFHQ/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "IdentiFace: Multi-Modal Iterative Diffusion Framework for Identifiable ...",
+      "url": "https://arxiv.org/html/2605.00526v1",
+      "snippet": "To evaluate the performance of our method, we conducted comprehensive experiments on our constructed datasets with two IdentiFace model instances built on Stable Diffusion v1.5 [31] and PixArt- α $α$ [7]."
+    }
+  ]
+}

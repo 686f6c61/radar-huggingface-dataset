@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Clownstein/Black-Onyx-12B-GGUF",
+  "slug": "clownstein-black-onyx-12b-gguf",
+  "author": "Clownstein",
+  "url": "https://huggingface.co/Clownstein/Black-Onyx-12B-GGUF",
+  "created_at": "2026-09-01T16:37:01.000Z",
+  "updated_at": "2026-09-01T16:51:21.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "cybersecurity",
+    "secure-code-generation",
+    "threat-intelligence",
+    "vulnerability-detection",
+    "gemma",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 43883095200,
+  "storage_human": "43.9 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Clownstein/Black-Onyx - GitHub",
+      "url": "https://github.com/Clownstein/Black-Onyx",
+      "snippet": "Black Onyx is an invite-only threat-intelligence workspace (TIP-first) for blue-team investigation, with an absorbed detection spine (Kafka/Postgres anomaly pipeline, incidents, hunt, SOAR). It is not a SIEM replacement: it helps analysts ingest evidence, work IOCs, triage alerts and connector detections, correlate multi-model findings into incidents, manage cases and assets, and measure ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "Black-Onyx/docs/API.md at main · Clownstein/Black-Onyx",
+      "url": "https://github.com/Clownstein/Black-Onyx/blob/main/docs/API.md",
+      "snippet": "Contribute to Clownstein/Black-Onyx development by creating an account on GitHub."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF pipecat-ai/phonellm-alpha-1"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "chanacvg/R_Vision_V6.0",
+  "slug": "chanacvg-r_vision_v6-0",
+  "author": "chanacvg",
+  "url": "https://huggingface.co/chanacvg/R_Vision_V6.0",
+  "created_at": "2026-09-01T18:51:01.000Z",
+  "updated_at": "2026-09-01T19:09:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:SG161222/Realistic_Vision_V6.0_B1_noVAE",
+    "base_model:adapter:SG161222/Realistic_Vision_V6.0_B1_noVAE",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2135028077,
+  "storage_human": "2.1 GB",
+  "base_model": "SG161222/Realistic_Vision_V6.0_B1_noVAE",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SG161222/Realistic_Vision_V6.0_B1_noVAE · Hugging Face",
+      "url": "https://huggingface.co/SG161222/Realistic_Vision_V6.0_B1_noVAE",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Realistic Vision V6.0 B1 - V5.1 Hyper (VAE) - Civitai",
+      "url": "https://civitai.com/models/4201/realistic-vision-v60-b1",
+      "snippet": "13.1k 819.6k Updated: Feb 14, 2025 base model photorealistic anatomical cgi realistic semi-realistic V5.1 Hyper (VAE) V5.1 Hyper-Inpaint (VAE)"
+    },
+    {
+      "title": "Realistic Vision V6.0 B1 - V4.0 (VAE) - SD 1.5 | Diffus",
+      "url": "https://www.diffus.me/models/realistic-vision-v6-0-b1-v4-0-vae",
+      "snippet": "Realistic Vision V6.0 is a fully retrained Stable Diffusion model offering improved photorealistic image generation with 724k training steps on 3400+ images. It supports samplers like DPM SDE++ Karras and Euler A with optimized parameters for quality results. Recommended usage includes CFG scales 1.5-7, clip skip 1-2, and hires fix via 4x-UltraSharp upscaler with denoising strength 0.25-0.45 ..."
+    },
+    {
+      "title": "imagepipeline/Realistic-Vision-V6.0 · Hugging Face",
+      "url": "https://huggingface.co/imagepipeline/Realistic-Vision-V6.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "realistic-vision-v6.0-b1: Text-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/replicate/realistic-vision-v60-b1-asiryan",
+      "snippet": "Overview realistic-vision-v6.-b1 is a Stable Diffusion-based text-to-image model that also supports image-to-image editing and inpainting. It generates photorealistic images from text prompts, with output dimensions up to 1920×1920 pixels. Maintained by asiryan, this model specializes in producing detailed, realistic imagery through diffusion-based synthesis. The key thing to know before ..."
+    }
+  ]
+}

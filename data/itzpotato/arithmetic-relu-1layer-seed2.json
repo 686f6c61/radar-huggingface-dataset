@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "itzPotato/arithmetic-relu-1layer-seed2",
+  "slug": "itzpotato-arithmetic-relu-1layer-seed2",
+  "author": "itzPotato",
+  "url": "https://huggingface.co/itzPotato/arithmetic-relu-1layer-seed2",
+  "created_at": "2026-09-01T17:42:33.000Z",
+  "updated_at": "2026-09-01T17:42:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "arithmetic",
+    "interpretability",
+    "bilinear",
+    "transcoder",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9536,
+  "parameters_human": "9536",
+  "storage_bytes": 38840,
+  "storage_human": "38840 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "itzPotato (Rohan Sashank Babbellapati) - Hugging Face",
+      "url": "https://huggingface.co/itzPotato/models",
+      "snippet": "Recent Activity liked a model2 days ago itzPotato/bilinear-attn-modular-addition-p113 updated a model2 days ago itzPotato/bilinear-attn-modular-addition-p113 published a model2 days ago itzPotato/bilinear-attn-modular-addition-p113 View all activity"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "AI Model Leaderboard [2026-08] — Live Rankings | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/leaderboards",
+      "snippet": "Live AI model rankings across ARC-AGI-2, HLE, SWE-bench Verified, and more with category views for coding, math, and agent tasks."
+    },
+    {
+      "title": "AI Model Leaderboard August 2026 — LMSys Arena, LLM, Image & Coding ...",
+      "url": "https://www.swfte.com/ai/leaderboard",
+      "snippet": "Live AI model leaderboard updated September 2026. Claude Fable 5 leads at 100/100. Compare 56 LLMs, image, video, coding & reasoning models — replaces LMSys Chatbot Arena."
+    }
+  ]
+}

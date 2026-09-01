@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "chuzka/Huihui-DeepSeek-V4-Flash-0731-abliterated-GGUF",
+  "slug": "chuzka-huihui-deepseek-v4-flash-0731-abliterated-gguf",
+  "author": "chuzka",
+  "url": "https://huggingface.co/chuzka/Huihui-DeepSeek-V4-Flash-0731-abliterated-GGUF",
+  "created_at": "2026-09-01T12:00:48.000Z",
+  "updated_at": "2026-09-01T12:00:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "GGUF",
+    "huihui",
+    "quantized",
+    "deepseek",
+    "deepseek-v4",
+    "deepseek-v4-flash-0731",
+    "moe",
+    "mixture-of-experts",
+    "2-bit",
+    "4-bit",
+    "iq2_xxs",
+    "q2_k",
+    "q4_k",
+    "ds4",
+    "apple-silicon",
+    "metal",
+    "unsloth",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 284334567511,
+  "parameters_human": "284.33B",
+  "storage_bytes": 549343600224,
+  "storage_human": "549.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Huihui-DeepSeek-V4-Flash-abliterated-ds4-GGUF - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-DeepSeek-V4-Flash-abliterated-ds4-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek-V4-abliterated - a huihui-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/huihui-ai/deepseek-v4-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui Deepseek V4 Flash Abliterated Ds4 - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/huihui-deepseek-v4-flash-abliterated-ds4.html",
+      "snippet": "Download Huihui Deepseek V4 Flash Abliterated Ds4 GGUF model. 7.81 GB, 225,541 downloads, 134 likes."
+    },
+    {
+      "title": "Huihui-DeepSeek-V4-Flash-abliterated-ds4-GGUF: Text-to-Text model ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/huihui-deepseek-v4-flash-abliterated-ds4-gguf-huihui-ai",
+      "snippet": "Overview Huihui-DeepSeek-V4-Flash-abliterated-ds4-GGUF is an uncensored quantized version of DeepSeek&#x27;s V4-Flash model optimized for the DS4 and llama.cpp inference engines, maintained by huihui-ai. The model uses abliteration to remove safety filters, making it substantially less likely to refuse requests compared to the original. These are GGUF quantizations—a binary format optimized for ..."
+    },
+    {
+      "title": "Huihui-DeepSeek-V4-Flash-0731-abliterated-GGUF",
+      "url": "https://openmodelstats.com/models/huihui-ai/huihui-deepseek-v4-flash-0731-abliterated-gguf",
+      "snippet": "Huihui-DeepSeek-V4-Flash-0731-abliterated-GGUF by huihui-ai: 477.2K all-time downloads, 477.2K in the last 30 days, 171 likes. A text generation model. Daily download history, growth trends and ranking position, tracked and updated by OpenModelStats."
+    }
+  ]
+}

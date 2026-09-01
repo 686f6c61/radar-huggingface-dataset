@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ZiyanZhuang/shorkie-lm-165-method-rebuild-v1.1",
+  "slug": "ziyanzhuang-shorkie-lm-165-method-rebuild-v1-1",
+  "author": "ZiyanZhuang",
+  "url": "https://huggingface.co/ZiyanZhuang/shorkie-lm-165-method-rebuild-v1.1",
+  "created_at": "2026-09-01T17:01:29.000Z",
+  "updated_at": "2026-09-01T17:01:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "shorkie_torch",
+  "languages": [],
+  "tags": [
+    "shorkie_torch",
+    "safetensors",
+    "shorkie_lm",
+    "genomics",
+    "dna-language-model",
+    "pytorch",
+    "fungal-genomics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13665828,
+  "parameters_human": "13.7M",
+  "storage_bytes": 54698152,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shorkie: DNA & Gene model | bio.rodeo",
+      "url": "https://bio.rodeo/models/shorkie",
+      "snippet": "Shorkie is a semi-supervised sequence-to-expression model for budding yeast, developed at Calico Life Sciences with Johns Hopkins University and posted as a preprint in September 2025. It targets a gap in regulatory genomics: the deep learning models that map DNA sequence to expression have been built almost entirely for human and mouse, where hundreds of thousands of functional genomics ..."
+    },
+    {
+      "title": "Shorkie ¶",
+      "url": "https://khchao.com/shorkie/",
+      "snippet": "Shorkie is a sequence-to-expression model for Saccharomyces cerevisiae: a masked DNA language model pretrained on hundreds of fungal genomes, then fine-tuned on 5,215 epigenomic and transcriptomic tracks — including a large set of transcriptional-regulator induction RNA-seq experiments generated for this study — to predict RNA-seq coverage and variant effects."
+    },
+    {
+      "title": "shorkie-paper/scripts/02_train at main - GitHub",
+      "url": "https://github.com/calico/shorkie-paper/tree/main/scripts/02_train/",
+      "snippet": "Shorkie_LM is a masked DNA language model pretrained on the 165_Saccharomycetales corpus; its model_best.h5 is the --restore target the supervised models start from. Shorkie_finetuned and Shorkie_scratch train the same 8-fold supervised set (5215 ChIP-exo/MNase/RNA-seq tracks, R64, 16 bp) — see data/manifest.json and scripts/01_data_build/."
+    },
+    {
+      "title": "How Shorkie was trained - Shorkie - khchao.com",
+      "url": "https://khchao.com/shorkie/content/behind_scenes.html",
+      "snippet": "Shorkie is built in two stages: pretrain a masked DNA language model on many fungal genomes, then fine-tune it into a supervised coverage predictor for S. cerevisiae. A third model — trained from scratch on the identical data — measures what the pretraining actually bought. 165 fungal genomes ── (masked LM)──> Shorkie_LM │ --restore trunk 5215 tracks ── (supervised ..."
+    },
+    {
+      "title": "GitHub - Kuanhao-Chao/shorkie: Shorkie — predicting dynamic ...",
+      "url": "https://github.com/Kuanhao-Chao/shorkie",
+      "snippet": "🍄 Shorkie — predicting dynamic expression in budding yeast with a fungal DNA language model. Documentation & user guide. - Kuanhao-Chao/shorkie"
+    }
+  ]
+}

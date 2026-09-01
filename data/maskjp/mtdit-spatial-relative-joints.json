@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "maskjp/mtdit-spatial-relative-joints",
+  "slug": "maskjp-mtdit-spatial-relative-joints",
+  "author": "maskjp",
+  "url": "https://huggingface.co/maskjp/mtdit-spatial-relative-joints",
+  "created_at": "2026-09-01T16:12:28.000Z",
+  "updated_at": "2026-09-01T16:12:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "mtdit-spatial",
+    "multi-task-dit",
+    "relative-actions",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 234712842,
+  "parameters_human": "234.7M",
+  "storage_bytes": 938944504,
+  "storage_human": "939 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maskjp/mtdit-spatial-multitask-spatial-mask · Hugging Face",
+      "url": "https://huggingface.co/maskjp/mtdit-spatial-multitask-spatial-mask",
+      "snippet": "Instructions to use maskjp/mtdit-spatial-multitask-spatial-mask with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use maskjp/mtdit-spatial-multitask-spatial-mask with LeRobot: Notebooks Google Colab Kaggle MTDiT-Spatial — multi-task, spatial_mask Read this before using the weights Measurements The sweep Training Usage ..."
+    },
+    {
+      "title": "maskjp/mtdit-spatial-multitask-patch-tokens · Hugging Face",
+      "url": "https://huggingface.co/maskjp/mtdit-spatial-multitask-patch-tokens",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "maskjp · GitHub",
+      "url": "https://github.com/maskjp",
+      "snippet": "maskjp has 28 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 408 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "GitHub - maskjp/lerobot_policy_mtdit_spatial",
+      "url": "https://github.com/maskjp/lerobot_policy_mtdit_spatial",
+      "snippet": "On hardware the two failure modes follow directly. Both reach the average grasp point; the difference is the gripper, which is vision-gated. The full-frame model withholds the close and hovers over the object. The cropped model closes on schedule and grasps air."
+    }
+  ]
+}

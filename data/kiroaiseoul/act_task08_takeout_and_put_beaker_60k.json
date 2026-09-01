@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kiroaiseoul/act_task08_takeout_and_put_beaker_60k",
+  "slug": "kiroaiseoul-act_task08_takeout_and_put_beaker_60k",
+  "author": "kiroaiseoul",
+  "url": "https://huggingface.co/kiroaiseoul/act_task08_takeout_and_put_beaker_60k",
+  "created_at": "2026-09-01T11:28:14.000Z",
+  "updated_at": "2026-09-01T11:28:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:kiroaiseoul/task08_takeout_and_put_beaker",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51689104,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206791272,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kiroaiseoul (kiroai) - Hugging Face",
+      "url": "https://huggingface.co/kiroaiseoul/models",
+      "snippet": "kiroaiseoul&#x27;s models17 Sort: Recently updated kiroaiseoul/task10_move_to_beaker_shelf_kiro_60k Updated about 13 hours ago"
+    },
+    {
+      "title": "kiroaiseoul (kiroai) - Hugging Face",
+      "url": "https://huggingface.co/kiroaiseoul/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 11 hours ago ... published a dataset about 11 hours ago"
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "Best free AI detector - simply paste your text to instantly get an overall AI score and advanced sentence by sentence detection."
+    },
+    {
+      "title": "Odysseus AI - Self-Hosted AI Workspace Setup Guide",
+      "url": "https://odysseusai.dev/",
+      "snippet": "Odysseus AI Setup Guide For PewDiePie&#x27;s self-hosted AI workspace Verify the official source, choose Docker, Windows, macOS, or Linux, connect Ollama or API keys, read logs, choose a model that fits your hardware, and avoid unsafe public deployment."
+    }
+  ]
+}

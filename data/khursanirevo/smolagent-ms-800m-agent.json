@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "khursanirevo/smolagent-ms-800m-agent",
+  "slug": "khursanirevo-smolagent-ms-800m-agent",
+  "author": "khursanirevo",
+  "url": "https://huggingface.co/khursanirevo/smolagent-ms-800m-agent",
+  "created_at": "2026-09-01T11:31:17.000Z",
+  "updated_at": "2026-09-01T11:34:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 801212416,
+  "parameters_human": "801.2M",
+  "storage_bytes": 16024597387,
+  "storage_human": "16.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "khursanirevo/smolagent-ms-800m-base · Hugging Face",
+      "url": "https://huggingface.co/khursanirevo/smolagent-ms-800m-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "khursanirevo/smolagent-ms-800m-base at main - Hugging Face",
+      "url": "https://huggingface.co/khursanirevo/smolagent-ms-800m-base/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new main smolagent-ms-800m-base 12.8 GB Ctrl+K Ctrl+K 1 contributor History:2 commits khursanirevo Upload folder using huggingface_hub 60fea0b verifiedabout 2 hours ago full_resumeUpload folder using huggingface_hubabout 2 hours ago .gitattributes Safe 1.52 kBinitial commitabout 2 ..."
+    },
+    {
+      "title": "GitHub - mmrech/smolagent: smolagents: a barebones library for agents ...",
+      "url": "https://github.com/mmrech/smolagent",
+      "snippet": "🤗 Hub integrations: you can share/pull tools or agents to/from the Hub for instant sharing of the most efficient agents! 🌐 Model-agnostic: smolagents supports any LLM. It can be a local transformers or ollama model, one of many providers on the Hub, or any model from OpenAI, Anthropic and many others via our LiteLLM integration."
+    },
+    {
+      "title": "GitHub - huggingface/smolagents: smolagents: a barebones library for ...",
+      "url": "https://github.com/huggingface/smolagents",
+      "snippet": "🤗 Hub integrations: you can share/pull tools or agents to/from the Hub for instant sharing of the most efficient agents! 🌐 Model-agnostic: smolagents supports any LLM. It can be a local transformers or ollama model, one of many providers on the Hub, or any model from OpenAI, Anthropic and many others via our LiteLLM integration."
+    },
+    {
+      "title": "Command Line Interface | huggingface/smolagents | DeepWiki",
+      "url": "https://deepwiki.com/huggingface/smolagents/8.2-command-line-interface",
+      "snippet": "This page documents the two CLI entry points provided by `smolagents`: the general-purpose `smolagent` command (defined in `src/smolagents/cli.py`) and the browser automation `webagent` command (defin"
+    }
+  ]
+}

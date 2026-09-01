@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "raulbueno/laura",
+  "slug": "raulbueno-laura",
+  "author": "raulbueno",
+  "url": "https://huggingface.co/raulbueno/laura",
+  "created_at": "2026-09-01T18:09:09.000Z",
+  "updated_at": "2026-09-01T18:44:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970889761,
+  "storage_human": "971 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArtStation - Raul Bueno",
+      "url": "https://www.artstation.com/raulbueno",
+      "snippet": "ArtStation - Raul Bueno ... Concept artist"
+    },
+    {
+      "title": "Laura - Best AI Art & Models | Tensor.Art",
+      "url": "https://tensor.art/u/721093986722445823",
+      "snippet": "Explore Laura&#x27;s AI creations on TENSOR"
+    },
+    {
+      "title": "Luna Models: AI Girl Model #52 | Tensor.Art",
+      "url": "https://www.tensor.art/models/800259468165248253",
+      "snippet": "Download Luna Models: AI Girl Model #52 - CandyDoll LauraB - free LORA FLUX.1 AI model on TENSOR. YOUTHFUL AI ART MODELS, LL.9, FLUX. By AI Luna LM.9"
+    },
+    {
+      "title": "Laura | AI Model (@laurabyai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/laurabyai/",
+      "snippet": "50 Followers, 62 Following, 10 Posts - Laura | AI Model (@laurabyai) on Instagram: \"\""
+    },
+    {
+      "title": "PixAI Model Market | AI Art Models and LoRAs | PixAI",
+      "url": "https://pixai.art/en/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.5M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    }
+  ]
+}

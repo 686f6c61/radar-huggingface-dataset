@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nnndite/krea2Eliminateclothing",
+  "slug": "nnndite-krea2eliminateclothing",
+  "author": "nnndite",
+  "url": "https://huggingface.co/nnndite/krea2Eliminateclothing",
+  "created_at": "2026-09-01T16:03:51.000Z",
+  "updated_at": "2026-09-01T16:05:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1144983295,
+  "storage_human": "1.1 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Clothes Remover - Edit, Replace, or Change Outfits",
+      "url": "https://openart.ai/features/ai-clothes-remover/",
+      "snippet": "Free AI clothes remover online — remove or change outfits in photos with OpenArt.. Edit outfits, swap styles, and refine looks with precise, realistic results in seconds."
+    },
+    {
+      "title": "AI Clothes Changer - Free Virtual Try On",
+      "url": "https://www.krea.ai/apps/edit/change-clothes",
+      "snippet": "Transform your shopping experience with our free AI clothes changer and virtual try-on technology. See how any outfit looks on you instantly - no physical fitting required. Perfect for shopping, our tool applies clothing from reference ..."
+    },
+    {
+      "title": "AI Fashion Model Generato with Outfits Virtually - CapCut",
+      "url": "https://www.capcut.com/tools/ai-clothes-changer",
+      "snippet": "Discover how CapCut AI Fashion Model Generator lets you upload clothing images, choose models, and instantly preview outfits online for fashion and e-commerce."
+    },
+    {
+      "title": "AI Clothes Changer - Try On Any Outfit Instantly | bitStudio",
+      "url": "https://bitstudio.ai/ai-clothes-changer",
+      "snippet": "AI Clothes Changer by bitStudio lets you try on any outfit instantly for free. Upload your photo and see realistic results with your body and pose preserved — no sign up needed!"
+    },
+    {
+      "title": "Free AI Clothes Changer: Virtual Try On Clothes Online | Pokecut",
+      "url": "https://www.pokecut.com/ai-replace/ai-clothes-changer",
+      "snippet": "Try on clothes with Pokecut&#x27;s AI clothes changer online free. Easily swap styles, explore new outfits, and create the perfect virtual look instantly."
+    }
+  ]
+}

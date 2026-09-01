@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jepacpp/lewm-pusht-GGUF",
+  "slug": "jepacpp-lewm-pusht-gguf",
+  "author": "jepacpp",
+  "url": "https://huggingface.co/jepacpp/lewm-pusht-GGUF",
+  "created_at": "2026-09-01T11:17:51.000Z",
+  "updated_at": "2026-09-01T11:44:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "jepa.cpp",
+  "languages": [],
+  "tags": [
+    "jepa.cpp",
+    "gguf",
+    "jepa",
+    "ggml",
+    "world-model",
+    "robotics",
+    "image-feature-extraction",
+    "arxiv:2603.19312",
+    "base_model:quentinll/lewm-pusht",
+    "base_model:quantized:quentinll/lewm-pusht",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18026176,
+  "parameters_human": "18.0M",
+  "storage_bytes": 167840704,
+  "storage_human": "168 MB",
+  "base_model": "quentinll/lewm-pusht",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - lucas-maes/le-wm: Official code base for LeWorldModel: Stable ...",
+      "url": "https://github.com/lucas-maes/le-wm",
+      "snippet": "With ~15M parameters trainable on a single GPU in a few hours, LeWM plans up to 48× faster than foundation-model-based world models while remaining competitive across diverse 2D and 3D control tasks. Beyond control, we show that LeWM&#x27;s latent space encodes meaningful physical structure through probing of physical quantities."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - krishbansal-2205/lewm-pushT",
+      "url": "https://github.com/krishbansal-2205/lewm-pushT/tree/main/",
+      "snippet": "A complete implementation of LeWorldModel (LeWM), the JEPA-based world model from LeCun et al. (2026), trained on the PushT manipulation task with a CEM planner for goal-conditioned control. LeWM is a Joint-Embedding Predictive Architecture (JEPA) world model that learns latent dynamics from pixels. Its key innovation is replacing the traditional EMA target encoder with SIGReg (Stable ..."
+    },
+    {
+      "title": "LeWorldModel: Stable End-to-End Joint-Embedding Predictive Architecture ...",
+      "url": "https://le-wm.github.io/",
+      "snippet": "With ~15M parameters trainable on a single GPU in a few hours, LeWM plans up to 48× faster than foundation-model-based world models while remaining competitive across diverse 2D and 3D control tasks. Beyond control, we show that LeWM&#x27;s latent space encodes meaningful physical structure through probing of physical quantities."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jepacpp/vjepa2_1-vitb-384-GGUF",
+  "slug": "jepacpp-vjepa2_1-vitb-384-gguf",
+  "author": "jepacpp",
+  "url": "https://huggingface.co/jepacpp/vjepa2_1-vitb-384-GGUF",
+  "created_at": "2026-09-01T11:20:00.000Z",
+  "updated_at": "2026-09-01T11:44:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "jepa.cpp",
+  "languages": [],
+  "tags": [
+    "jepa.cpp",
+    "gguf",
+    "jepa",
+    "ggml",
+    "v-jepa",
+    "v-jepa-2",
+    "video",
+    "video-feature-extraction",
+    "image-feature-extraction",
+    "arxiv:2506.09985",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109709440,
+  "parameters_human": "109.7M",
+  "storage_bytes": 907440928,
+  "storage_human": "907 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "apiantonio/vjepa2.1-vit-base-384 · Hugging Face",
+      "url": "https://huggingface.co/apiantonio/vjepa2.1-vit-base-384",
+      "snippet": "A HuggingFace-format conversion of Meta AI&#x27;s V-JEPA 2.1 ViT-B/16 video encoder and predictor, operating at 384x384 resolution. The weights are Meta&#x27;s, copied without modification. This repository provides the transformers -compatible packaging plus a documented numerical validation against the original implementation."
+    },
+    {
+      "title": "GitHub - facebookresearch/vjepa2: PyTorch code and models for VJEPA2 ...",
+      "url": "https://github.com/facebookresearch/vjepa2",
+      "snippet": "Usage Demo See vjepa2_demo.ipynb (Colab Link) or vjepa2_demo.py for an example of how to load both the HuggingFace and PyTorch V-JEPA 2 models and run inference on a sample video to get a sample classification result."
+    },
+    {
+      "title": "README.md · apiantonio/vjepa2.1-vit-base-384 at main",
+      "url": "https://huggingface.co/apiantonio/vjepa2.1-vit-base-384/blob/main/README.md",
+      "snippet": "This repository provides the transformers -compatible packaging plus a documented numerical validation against the original implementation. An equivalent community port already exists (Dev-Jahn/vjepa2.1-vitb-fpc64-384). This repository adds an independently reproduced conversion together with the validation results below."
+    },
+    {
+      "title": "vjepa2/configs/eval_2_1/vitb-384 at main - GitHub",
+      "url": "https://github.com/facebookresearch/vjepa2/tree/main/configs/eval_2_1/vitb-384",
+      "snippet": "PyTorch code and models for VJEPA2 self-supervised learning from video. - facebookresearch/vjepa2"
+    },
+    {
+      "title": "V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning",
+      "url": "https://arxiv.org/html/2603.14482v1",
+      "snippet": "The model also demonstrates state-of-art performances in robotic navigation (5.687 ATE on Tartan Drive), depth estimation (0.307 RMSE on NYUv2 with a linear probe), and global recognition (77.7% on Something-Something-V2). Our results demonstrate that V-JEPA 2.1 advances the state of the art in dense visual understanding and world modeling."
+    }
+  ]
+}

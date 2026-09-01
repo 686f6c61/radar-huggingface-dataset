@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Nebaee/stage2_attack_type_checkpoints",
+  "slug": "nebaee-stage2_attack_type_checkpoints",
+  "author": "Nebaee",
+  "url": "https://huggingface.co/Nebaee/stage2_attack_type_checkpoints",
+  "created_at": "2026-09-01T16:57:07.000Z",
+  "updated_at": "2026-09-01T16:57:27.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:meta-llama/Llama-Prompt-Guard-2-22M",
+    "base_model:finetune:meta-llama/Llama-Prompt-Guard-2-22M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70831107,
+  "parameters_human": "70.8M",
+  "storage_bytes": 283354237,
+  "storage_human": "283 MB",
+  "base_model": "meta-llama/Llama-Prompt-Guard-2-22M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 201 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "PDF OpenAI Hugging Face Incident Technical Report",
+      "url": "https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf",
+      "snippet": "OpenAI is publishing this technical incident report to explain the context that led to the Hugging Face incident, the technical details of the incident, why existing safeguards did not prevent it, and what OpenAI is doing going forward in the spirit of sharing lessons that may help the broader AI industry strengthen model containment ..."
+    },
+    {
+      "title": "Threat Model and Attack Taxonomy | maferrag/AlphaSecBench | DeepWiki",
+      "url": "https://deepwiki.com/maferrag/AlphaSecBench/3.2-threat-model-and-attack-taxonomy",
+      "snippet": "This page provides a detailed breakdown of the AlphaSecBench threat model, defining the capabilities, vectors, and specific attack types used to evaluate LLM agents. The benchmark uses a structured security overlay system to inject adversarial events into UAV mission episodes, testing the agent&#x27;s ability to detect, mitigate, and reason about cyber-physical threats."
+    },
+    {
+      "title": "GitHub - nxZhai/FPBA: [TMM] The official Implementation of ...",
+      "url": "https://github.com/nxZhai/FPBA",
+      "snippet": "GANs and diffusion models have raised concerns about the robustness of AI-generated image (AIGI) detectors. We propose Frequency-based Post-train Bayesian Attack (FPBA), which combines frequency-domain perturbations with a Bayesian surrogate to improve black-box transferability without retraining. Experiments show that FPBA effectively attacks diverse detectors across generators, defenses, and ..."
+    }
+  ]
+}

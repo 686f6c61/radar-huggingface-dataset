@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "danielhanchen/NVFP4_Diffusion_Investigation",
+  "slug": "danielhanchen-nvfp4_diffusion_investigation",
+  "author": "danielhanchen",
+  "url": "https://huggingface.co/danielhanchen/NVFP4_Diffusion_Investigation",
+  "created_at": "2026-09-01T16:35:17.000Z",
+  "updated_at": "2026-09-01T16:35:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "quantization",
+    "nvfp4",
+    "diffusion",
+    "blackwell",
+    "benchmark",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "More NVFP4 dynamic quants! We made them for all Gemma-4 sizes (E2B, E4B ...",
+      "url": "https://x.com/danielhanchen/status/2077072556537020914",
+      "snippet": "Daniel Han (@danielhanchen). 47 likes 3 replies. More NVFP4 dynamic quants! We made them for all Gemma-4 sizes (E2B, E4B, 12B, 26B-A4B, 31B) - they&#x27;re all W4A4 + FP8 KV cache calibrated + W8A8 for attention / important layers. We also made Qwen3.5-122B-A10B and GLM-4.7-Flash NVFP4 ones as well - 397B and others will come soon!"
+    },
+    {
+      "title": "Bringing Nunchaku 4-bit Diffusion Inference to Diffusers",
+      "url": "https://huggingface.co/blog/nunchaku-diffusers",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "@danielhanchen on Hugging Face: \"We&#x27;re releasing Gemma 4 NVFP4 quants ...",
+      "url": "https://huggingface.co/posts/danielhanchen/713830365682295",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introducing NVFP4 for Efficient and Accurate Low-Precision Inference",
+      "url": "https://developer.nvidia.com/blog/introducing-nvfp4-for-efficient-and-accurate-low-precision-inference/",
+      "snippet": "To get the most out of AI, optimizations are critical. When developers think about optimizing AI models for inference, model compression techniques—such as quantization, distillation…"
+    },
+    {
+      "title": "2.5x faster NVFP4 Qwen3.6 27B + 35B-A3B quants! We applied our Unsloth ...",
+      "url": "https://x.com/danielhanchen/status/2075567076002185525",
+      "snippet": "Daniel Han (@danielhanchen). 56 likes 4 replies. 2.5x faster NVFP4 Qwen3.6 27B + 35B-A3B quants! We applied our Unsloth dynamic method to NVFP4 using W4A4 vs W4A16. Also 2 35B-A3B versions - NVFP4 (1.56x faster) and NVFP4-Fast (1.79x faster). Fast uses pure W4A4, whilst non fast uses a mixture to stay a bit more accurate."
+    }
+  ]
+}

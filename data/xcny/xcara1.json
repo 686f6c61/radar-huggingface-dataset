@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "xcny/xcara1",
+  "slug": "xcny-xcara1",
+  "author": "xcny",
+  "url": "https://huggingface.co/xcny/xcara1",
+  "created_at": "2026-09-01T17:36:31.000Z",
+  "updated_at": "2026-09-01T17:36:41.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:SG161222/RealVisXL_V5.0",
+    "base_model:adapter:SG161222/RealVisXL_V5.0",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115903231,
+  "storage_human": "116 MB",
+  "base_model": "SG161222/RealVisXL_V5.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XCNY: State Street® SPDR® S&P Emerging Markets ex-China ETF",
+      "url": "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-emerging-markets-ex-china-etf-xcny",
+      "snippet": "The State Street® SPDR® S&P Emerging Markets ex-China ETF seeks to provide investment results that, before fees and expenses, correspond generally to the..."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchives.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    }
+  ]
+}

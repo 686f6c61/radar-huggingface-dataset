@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "EarthlyEric6/onnxruntime-gptsovits-rs",
+  "slug": "earthlyeric6-onnxruntime-gptsovits-rs",
+  "author": "EarthlyEric6",
+  "url": "https://huggingface.co/EarthlyEric6/onnxruntime-gptsovits-rs",
+  "created_at": "2026-09-01T16:35:51.000Z",
+  "updated_at": "2026-09-01T16:35:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EarthlyEric/gptsovits-rs - GitHub",
+      "url": "https://github.com/EarthlyEric/gptsovits-rs",
+      "snippet": "📖 專案簡介 (Overview) gptsovits-rs 是一個使用 純 Rust (Pure Rust) 開發的高效能語音合成（TTS）伺服器，專為部署 GPT-SoVITS 模型而生。"
+    },
+    {
+      "title": "ONNX Runtime | Home",
+      "url": "https://onnxruntime.ai/",
+      "snippet": "Cross-platform accelerated machine learning. Built-in optimizations speed up training and inferencing with your existing technology stack."
+    },
+    {
+      "title": "GitHub - microsoft/onnxruntime: ONNX Runtime: cross-platform, high ...",
+      "url": "https://github.com/microsoft/onnxruntime",
+      "snippet": "ONNX Runtime: cross-platform, high performance ML inferencing and training accelerator - microsoft/onnxruntime"
+    },
+    {
+      "title": "Model Export and ONNX | RVC-Boss/GPT-SoVITS | DeepWiki",
+      "url": "https://deepwiki.com/RVC-Boss/GPT-SoVITS/7.2-model-export-and-onnx",
+      "snippet": "This document covers model export and ONNX conversion for GPT-SoVITS models. The export system decomposes trained models into optimized production-ready components suitable for deployment with ONNX Runtime or PyTorch."
+    },
+    {
+      "title": "ONNX Runtime | Home - GitHub Pages",
+      "url": "https://tomwildenhain-microsoft.github.io/onnxruntime/",
+      "snippet": "Journey to optimize large scale transformer model inference with ONNX Runtime Large-scale transformer models, such as GPT-2 and GPT-3, are among the most useful self-supervised transformer language models for natural language processing tasks such as language translation, question answering, passage summarization, text generation, and so on..."
+    }
+  ]
+}

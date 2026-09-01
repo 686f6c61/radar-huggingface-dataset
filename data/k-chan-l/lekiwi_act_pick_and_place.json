@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "k-chan-l/lekiwi_act_pick_and_place",
+  "slug": "k-chan-l-lekiwi_act_pick_and_place",
+  "author": "k-chan-l",
+  "url": "https://huggingface.co/k-chan-l/lekiwi_act_pick_and_place",
+  "created_at": "2026-09-01T17:37:38.000Z",
+  "updated_at": "2026-09-01T17:38:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:k-chan-l/lekiwi_pick_and_place",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51674761,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206739996,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "k-chan-l/lekiwi_pick_and_place · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/k-chan-l/lekiwi_pick_and_place",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - SIGRobotics-UIUC/LeKiwi: LeKiwi - Low-Cost Mobile Manipulator",
+      "url": "https://github.com/SIGRobotics-UIUC/LeKiwi",
+      "snippet": "LeKiwi - Low-Cost Mobile Manipulator. Contribute to SIGRobotics-UIUC/LeKiwi development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Girlfriend — Chat, Roleplay, Image & Video | Kales.ai",
+      "url": "https://www.kales.ai/en/",
+      "snippet": "Kales is a service that connects AI character chat, roleplay, story mode, character creation, image generation, and short video generation. You can choose a character to chat with, create your own AI girlfriend, and use the same character for images and videos."
+    },
+    {
+      "title": "Action Chunking Transformers (ACT): Complete Guide for Robot Imitation ...",
+      "url": "https://www.roboticscenter.ai/guides/action-chunking-transformers",
+      "snippet": "Master ACT (Action Chunking Transformers): architecture, training on real robot data, chunk size tuning, and deployment on OpenArm and Mobile ALOHA. Includes PyTorch code, hyperparameter guide, and dataset format specs."
+    },
+    {
+      "title": "Lekiwi-sim2sim-with-ROS2 - GitHub",
+      "url": "https://github.com/ArthurLABE/Lekiwi-sim2sim-with-ROS2",
+      "snippet": "Lekiwi-sim2sim-with-ROS2 In this repository, we explain step by step how to create a dataset of simulated pick&place episodes from scratch, using ROS2, Gazebo and MoveIt. Our goal is to train our robot LeKiwi to perform tasks in the real world, without necessarily having to create a real dataset via teleoperation."
+    }
+  ]
+}

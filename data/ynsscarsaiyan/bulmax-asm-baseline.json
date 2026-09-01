@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "YNSScarSaiyan/bulmax-asm-baseline",
+  "slug": "ynsscarsaiyan-bulmax-asm-baseline",
+  "author": "YNSScarSaiyan",
+  "url": "https://huggingface.co/YNSScarSaiyan/bulmax-asm-baseline",
+  "created_at": "2026-08-06T14:48:55.000Z",
+  "updated_at": "2026-09-01T11:55:41.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulmax",
+    "assembly",
+    "nasm",
+    "cpu",
+    "baseline",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 272861821056,
+  "storage_human": "272.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YNSScarSaiyan/bulmax-asm-baseline · Hugging Face",
+      "url": "https://huggingface.co/YNSScarSaiyan/bulmax-asm-baseline",
+      "snippet": "BulmaX-ASM Baseline A 2,067,130,880-parameter decoder-only transformer whose entire forward pass, backward pass and optimizer step run on hand-written x86-64 NASM kernels (AVX2+FMA), driven by a pure C runtime with no Python in the training loop. Deliberately plain: no MoE, no coherence graph, no liquid network, no RSM, no complex/quantum attention, no low-rank factorization. It exists as a ..."
+    },
+    {
+      "title": "YNSScarSaiyan (Dakuwon Moody) - Hugging Face",
+      "url": "https://huggingface.co/YNSScarSaiyan",
+      "snippet": "User profile of Dakuwon Moody on Hugging Face"
+    },
+    {
+      "title": "PDF Solo Researcher Builds Three Novel AI Architectures From ... - PRLog",
+      "url": "https://www.prlog.org/13137493-solo-researcher-builds-three-novel-ai-architectures-from-scratch-including-post-transformer-model.pdf",
+      "snippet": "BulmaX is a self-modifying transformer equipped with 13 novel subsystems, including dynamic neurogenesis that allows the model to grow new attention heads during training. The model began training with 24 attention heads and autonomously expanded to 396 heads through a process inspired by biological neural development. BulmaX is currently scaling to 7 billion parameters on Google Cloud TPU ..."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

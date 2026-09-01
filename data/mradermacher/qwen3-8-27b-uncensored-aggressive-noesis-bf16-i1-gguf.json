@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-Uncensored-Aggressive-NOESIS-BF16-i1-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-uncensored-aggressive-noesis-bf16-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Aggressive-NOESIS-BF16-i1-GGUF",
+  "created_at": "2026-09-01T14:08:18.000Z",
+  "updated_at": "2026-09-01T14:24:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ru",
+    "zh",
+    "ja",
+    "kk",
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "noesis",
+    "noesis-repack",
+    "bf16",
+    "mtp",
+    "qwen3_5",
+    "qwen3_8",
+    "en",
+    "ru",
+    "zh",
+    "ja",
+    "kk",
+    "vi",
+    "base_model:AMAImedia/Qwen3.8-27B-Uncensored-Aggressive-NOESIS-BF16",
+    "base_model:quantized:AMAImedia/Qwen3.8-27B-Uncensored-Aggressive-NOESIS-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3391984,
+  "parameters_human": "3.4M",
+  "storage_bytes": 13642624,
+  "storage_human": "14 MB",
+  "base_model": "AMAImedia/Qwen3.8-27B-Uncensored-Aggressive-NOESIS-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Uncensored-Aggressive-NOESIS-BF16-GGUF",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Aggressive-NOESIS-BF16-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-Uncensored-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-i1-GGUF",
+      "snippet": "mradermacher / Qwen3.8-27B-Uncensored-i1-GGUF like 1 Transformers GGUF English Chinese uncensored abliterated qwen3.8 mtp vision imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "Run Qwen 3.8 27B uncensored locally: pick the GGUF quant for your VRAM, serve it with llama.cpp or Ollama, and respect the research-only boundary."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Qwen3.8-27B tensor-level abliterated, vision tower and MTP head untouched. 0% over-refusal on XSTest, 0-6% refusal across the A/B suite, no measurable capability loss. Full mmproj vision, tool calling and thinking, 262K context."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
+      "snippet": "Qwen 3.8 27B uncensored GGUF is a real download, and the build to start with is Qwen3.8-27B-Uncensored-GGUF — published on Hugging Face on August 16, 2026 as the llama.cpp-native sibling of our abliterated FP8 release. It is the same refusal-removed 27-billion-parameter weights as Qwen3.8-27B-Uncensored-FP8, converted to GGUF for local inference: F16 plus 12 quantization tiers from Q2_K to ..."
+    }
+  ]
+}

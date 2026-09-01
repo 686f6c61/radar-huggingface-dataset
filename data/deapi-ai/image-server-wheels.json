@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "deAPI-ai/image-server-wheels",
+  "slug": "deapi-ai-image-server-wheels",
+  "author": "deAPI-ai",
+  "url": "https://huggingface.co/deAPI-ai/image-server-wheels",
+  "created_at": "2026-04-14T08:24:57.000Z",
+  "updated_at": "2026-09-01T16:26:08.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "wheels",
+    "cuda",
+    "pytorch",
+    "windows",
+    "linux",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1352380084,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deAPI-ai/image-server-wheels · Hugging Face",
+      "url": "https://huggingface.co/deAPI-ai/image-server-wheels",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deAPI-ai/image-server-wheels at main - Hugging Face",
+      "url": "https://huggingface.co/deAPI-ai/image-server-wheels/tree/main",
+      "snippet": "deAPI-ai / image-server-wheels like 0 Follow deAPI 9 PyTorch wheels cuda windows linux License:other Model card FilesFiles and versions xet Community Copy to bucket new main image-server-wheels Ctrl+K Ctrl+K 2 contributors History:11 commits szwagros SageAttention 2.2.0 Linux wheel, cu129/torch2.8 (sm_89 + sm_120a) 4761f1e verified16 days ago ..."
+    },
+    {
+      "title": "deAPI - One API for Open Source Generative AI Models",
+      "url": "https://deapi.ai/",
+      "snippet": "deAPI is a unified API that gives you instant access to open-source AI models for text-to-image, text-to-speech, video transcription, and more. Instead of setting up GPUs yourself, requests are routed through a decentralized GPU cloud, making AI inference fast, scalable, and cost-efficient."
+    },
+    {
+      "title": "deAPI-ai (deAPI) - Hugging Face",
+      "url": "https://huggingface.co/deAPI-ai",
+      "snippet": "text-to-image text-to-speech text-to-video image-to-video image-to-text automatic-speech-recognition feature-extraction"
+    },
+    {
+      "title": "Models - deAPI",
+      "url": "https://docs.deapi.ai/models",
+      "snippet": "deAPI gives you a unified API across multiple open-source models running on a decentralized GPU cloud. We regularly expand the model lineup — new models, new capabilities, better performance — so your integration can always take advantage of the latest options. The Model Selection endpoint returns the live, authoritative list of available models, their slugs, limits, and defaults. Use it ..."
+    }
+  ]
+}

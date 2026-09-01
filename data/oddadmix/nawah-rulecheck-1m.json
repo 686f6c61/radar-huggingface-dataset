@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "oddadmix/Nawah-RuleCheck-1M",
+  "slug": "oddadmix-nawah-rulecheck-1m",
+  "author": "oddadmix",
+  "url": "https://huggingface.co/oddadmix/Nawah-RuleCheck-1M",
+  "created_at": "2026-09-01T11:27:19.000Z",
+  "updated_at": "2026-09-01T11:29:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-classification",
+    "arabic",
+    "rule-checking",
+    "compliance",
+    "moderation",
+    "tiny-model",
+    "on-device",
+    "ar",
+    "dataset:oddadmix/arabic-rule-checking",
+    "base_model:oddadmix/Emhotob-1M-v2",
+    "base_model:finetune:oddadmix/Emhotob-1M-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1073504,
+  "parameters_human": "1.1M",
+  "storage_bytes": 4303289,
+  "storage_human": "4 MB",
+  "base_model": "oddadmix/Emhotob-1M-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oddadmix (Ahmed Wasfy) - Hugging Face",
+      "url": "https://huggingface.co/oddadmix",
+      "snippet": "From-scratch Arabic LMs (0.5M-50M) finetuned into bidirectional translators across 5 language pairs. Identical recipe at every rung; v1 and v2 bases."
+    },
+    {
+      "title": "oddadmix/Nawah-VL-25M · Hugging Face",
+      "url": "https://huggingface.co/oddadmix/Nawah-VL-25M",
+      "snippet": "The language model is oddadmix/Emhotob-25M-v2, trained from scratch on Arabic. The vision tower is SigLIP2 as distributed in LiquidAI/LFM2.5-VL-450M, used unmodified and frozen; those weights remain LiquidAI&#x27;s and their licence terms apply to that component."
+    },
+    {
+      "title": "Oddadmix (Ahmed Wasfy) · GitHub",
+      "url": "https://github.com/Oddadmix",
+      "snippet": "Oddadmix has 83 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Oddadmix (Ahmed Wasfy) / Repositories · GitHub",
+      "url": "https://github.com/Oddadmix?tab=repositories",
+      "snippet": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    }
+  ]
+}

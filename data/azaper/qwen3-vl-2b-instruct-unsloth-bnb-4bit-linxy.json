@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Azaper/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit-linxy",
+  "slug": "azaper-qwen3-vl-2b-instruct-unsloth-bnb-4bit-linxy",
+  "author": "Azaper",
+  "url": "https://huggingface.co/Azaper/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit-linxy",
+  "created_at": "2026-08-04T12:02:00.000Z",
+  "updated_at": "2026-09-01T14:29:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 2127532032,
+  "parameters_human": "2.13B",
+  "storage_bytes": 12776843586,
+  "storage_human": "12.8 GB",
+  "base_model": "unsloth/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Azaper/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit-linxy · Hugging Face",
+      "url": "https://huggingface.co/Azaper/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit-linxy",
+      "snippet": "Instructions to use Azaper/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit-linxy with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3-VL-2B-Instruct-unsloth-bnb-4bit - Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit",
+      "snippet": "Qwen3-VL-2B-Instruct Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and ..."
+    },
+    {
+      "title": "Qwen3-VL: How to Run Guide | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/tutorials/qwen3-how-to-run-and-fine-tune/qwen3-vl-how-to-run-and-fine-tune",
+      "snippet": "llms.txt Markdown Copy Models Large language model (LLMs) Tutorials 🌠 Qwen3 - How to Run & Fine-tune 🌠 Qwen3-VL: How to Run Guide Learn to fine-tune and run Qwen3-VL locally with Unsloth. Qwen3-VL is Qwen&#x27;s new vision models with instruct and thinking versions. The 2B, 4B, 8B and 32B models are dense, while 30B and 235B are MoE."
+    },
+    {
+      "title": "Qwen3-VL-2B-Instruct-unsloth-bnb-4bit-linxy - friendli.ai",
+      "url": "https://friendli.ai/models/Azaper/Qwen3-VL-2B-Instruct-unsloth-bnb-4bit-linxy",
+      "snippet": "Run Qwen3-VL-2B-Instruct-unsloth-bnb-4bit-linxy with FriendliAI inference. This qwen3vl model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Qwen3-VL-2B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-VL-2B-Instruct",
+      "snippet": "Qwen3-VL-2B-Instruct Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and ..."
+    }
+  ]
+}

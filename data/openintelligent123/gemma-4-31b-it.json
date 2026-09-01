@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Openintelligent123/gemma-4-31B-it",
+  "slug": "openintelligent123-gemma-4-31b-it",
+  "author": "Openintelligent123",
+  "url": "https://huggingface.co/Openintelligent123/gemma-4-31B-it",
+  "created_at": "2026-09-01T17:08:38.000Z",
+  "updated_at": "2026-09-01T17:08:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-31B",
+    "base_model:finetune:google/gemma-4-31B",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578507874,
+  "storage_human": "62.6 GB",
+  "base_model": "google/gemma-4-31B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Gemma 4: Our most capable open models to date - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/",
+      "snippet": "Our larger models deliver state-of-the-art performance for their sizes, with the 31B model currently ranking as the #3 open model in the world on the industry-standard Arena AI text leaderboard, and the 26B model securing the #6 spot. There, Gemma 4 outcompetes models 20x its size."
+    },
+    {
+      "title": "Gemma 4 31B: Ultimate Guide to Google&#x27;s Open Model 2026",
+      "url": "https://www.gemma4.wiki/models/gemma-4-31b",
+      "snippet": "The gemma 4 31b is a monumental achievement in open-source AI. While the 26B MoE model is arguably the \"daily driver\" for those needing raw speed on mid-range hardware, the 31B Dense model is the \"pro\" tool for those who need high-fidelity reasoning and complex world-building."
+    },
+    {
+      "title": "gemma-4-31B-it - Model Info, Parameters, Benchmarks - SiliconFlow\"",
+      "url": "https://www.siliconflow.com/models/gemma-4-31b-it",
+      "snippet": "Gemma 4 31B is Google DeepMind&#x27;s latest open-source model, built on a 31B dense architecture from the same research foundation as Gemini 3. Purpose-built for advanced reasoning and agentic workflows, it ranks #3 among all open models on the Arena AI leaderboard — outperforming models up to 20x its size — with native function-calling, 256K context, and full Apache 2.0 licensing."
+    }
+  ]
+}

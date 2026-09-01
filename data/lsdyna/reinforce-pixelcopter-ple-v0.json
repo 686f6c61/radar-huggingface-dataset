@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lsdyna/Reinforce-Pixelcopter-PLE-v0",
+  "slug": "lsdyna-reinforce-pixelcopter-ple-v0",
+  "author": "lsdyna",
+  "url": "https://huggingface.co/lsdyna/Reinforce-Pixelcopter-PLE-v0",
+  "created_at": "2026-09-01T18:38:17.000Z",
+  "updated_at": "2026-09-01T18:38:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40125,
+  "storage_human": "40125 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adilbai/Pixelcopter-RL · Hugging Face",
+      "url": "https://huggingface.co/Adilbai/Pixelcopter-RL",
+      "snippet": "Model Description This repository contains a trained REINFORCE (Policy Gradient) reinforcement learning agent that has learned to play Pixelcopter-PLE-v0, a challenging helicopter navigation game from the PyGame Learning Environment (PLE)."
+    },
+    {
+      "title": "bingwu871/Pixelcopter-PLE-v0 · Hugging Face",
+      "url": "https://huggingface.co/bingwu871/Pixelcopter-PLE-v0",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "GitHub - esywang/PixelCopter-RL: Reinforcement learning agent that ...",
+      "url": "https://github.com/esywang/PixelCopter-RL",
+      "snippet": "PixelCopter Bot Reinforcement learning agent that learns to play PixelCopter using Q-learning with neural network function approximations. Developed this project to learn the basics of RL, Q-learning with NNs, and using Keras (Theano backend)."
+    },
+    {
+      "title": "carlosmirandad/rl-class-reinforce-Pixelcopter-PLE-v0 - AI Model Zoo ...",
+      "url": "https://zoo.bimant.com/model/123163",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "lunnan/Reinforce-Pixelcopter-PLE-v0 - AI Model Zoo - BimAnt",
+      "url": "http://zoo.bimant.com/model/160306",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    }
+  ]
+}

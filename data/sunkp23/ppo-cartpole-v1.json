@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SunKp23/ppo-CartPole-v1",
+  "slug": "sunkp23-ppo-cartpole-v1",
+  "author": "SunKp23",
+  "url": "https://huggingface.co/SunKp23/ppo-CartPole-v1",
+  "created_at": "2026-09-01T16:24:53.000Z",
+  "updated_at": "2026-09-01T16:26:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "CartPole-v1",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 410129,
+  "storage_human": "410129 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sgoodfriend/ppo-CartPole-v1 · Hugging Face",
+      "url": "https://huggingface.co/sgoodfriend/ppo-CartPole-v1",
+      "snippet": "This is a trained model of a PPO agent playing CartPole-v1 using the /sgoodfriend/rl-algo-impls repo. All models trained at this commit can be found at https://api.wandb.ai/links/sgoodfriend/ysd5gj7p."
+    },
+    {
+      "title": "mrm8488/ppo-CartPole-v1 · Hugging Face",
+      "url": "https://huggingface.co/mrm8488/ppo-CartPole-v1",
+      "snippet": "PPO CartPole v1 🤖⚖️ This is a pre-trained model of a PPO agent playing CartPole-v1 using the stable-baselines3 library. Usage (with Stable-baselines3) Using this model becomes easy when you have stable-baselines3 and huggingface_sb3 installed: ... Then, you can use the model like this:"
+    },
+    {
+      "title": "GitHub - OctaviusLeo/ai-sim-rl-cartpole: AI/SWE · GitHub",
+      "url": "https://github.com/OctaviusLeo/ai-sim-rl-cartpole",
+      "snippet": "A small, reinforcement learning project: train PPO on CartPole, evaluate with baselines + confidence intervals, and keep runs reproducible (CI included)."
+    },
+    {
+      "title": "ppo_cartpole - Colab",
+      "url": "https://colab.research.google.com/github/keras-team/keras-io/blob/master/examples/rl/ipynb/ppo_cartpole.ipynb",
+      "snippet": "This code example solves the CartPole-v1 environment using a Proximal Policy Optimization (PPO) agent. CartPole-v1 A pole is attached by an un-actuated joint to a cart, which moves along a frictionless track. The system is controlled by applying a force of +1 or -1 to the cart. The pendulum starts upright, and the goal is to prevent it from falling over. A reward of +1 is provided for every ..."
+    },
+    {
+      "title": "PPO-Cartpole - GitHub",
+      "url": "https://github.com/blueflower120/PPO-Cartpole",
+      "snippet": "My reinforcement learning practice project: PPO for Cartpole-v1 environment. This project utilizes the proximal policy optimization (PPO) algorithm for training and testing in the CartPole-v1 environment, one of the classic introductory experiments in reinforcement learning. The goal is to make a cart keep a vertical pole upright by moving left and right."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "NexVeridian/zeta-2.1-6bit",
+  "slug": "nexveridian-zeta-2-1-6bit",
+  "author": "NexVeridian",
+  "url": "https://huggingface.co/NexVeridian/zeta-2.1-6bit",
+  "created_at": "2026-09-01T17:02:27.000Z",
+  "updated_at": "2026-09-01T17:02:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "transformers",
+    "edit-prediction",
+    "next-edit-suggestion",
+    "en",
+    "base_model:zed-industries/zeta-2.1",
+    "base_model:quantized:zed-industries/zeta-2.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1804996608,
+  "parameters_human": "1.80B",
+  "storage_bytes": 6715793136,
+  "storage_human": "6.7 GB",
+  "base_model": "zed-industries/zeta-2.1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NexVeridian/zeta-2.1-6bit · Hugging Face",
+      "url": "https://huggingface.co/NexVeridian/zeta-2.1-6bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NexVeridian (Elijah McMorris) - Hugging Face",
+      "url": "https://huggingface.co/NexVeridian",
+      "snippet": "Follow 0 followers · 1 following https://NexVeridian.com nexveridian NexVeridian nexveridian"
+    },
+    {
+      "title": "NexVeridian (Elijah McMorris) · GitHub",
+      "url": "https://github.com/NexVeridian",
+      "snippet": "A graph representing NexVeridian&#x27;s contributions from June 08, 2025 to June 09, 2026. The contributions are 98% commits, 2% pull requests, 0% code review, 0% issues."
+    },
+    {
+      "title": "NexVeridian — 1 open-source LLMs | LocalLLMs",
+      "url": "https://localllms.dev/llm/by-author/nexveridian/",
+      "snippet": "All 1 open-source LLMs published by NexVeridian, ranked by HuggingFace downloads. Includes parameter counts, VRAM requirements, and license info."
+    },
+    {
+      "title": "NexVeridian - modelindex.dev",
+      "url": "https://modelindex.dev/orgs/NexVeridian",
+      "snippet": "Models published by NexVeridian, indexed with per-file cryptographic hashes on modelindex.dev. Browse each model and verify your downloads."
+    }
+  ]
+}

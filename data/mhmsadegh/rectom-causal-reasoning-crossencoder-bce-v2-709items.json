@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mhmsadegh/rectom-causal-reasoning-crossencoder-bce-v2-709items",
+  "slug": "mhmsadegh-rectom-causal-reasoning-crossencoder-bce-v2-709items",
+  "author": "mhmsadegh",
+  "url": "https://huggingface.co/mhmsadegh/rectom-causal-reasoning-crossencoder-bce-v2-709items",
+  "created_at": "2026-09-01T19:21:16.000Z",
+  "updated_at": "2026-09-01T19:21:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "cross-encoder",
+    "reasoning",
+    "theory-of-mind",
+    "rectom",
+    "base_model:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "base_model:finetune:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713601,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90866412,
+  "storage_human": "91 MB",
+  "base_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mhmsadegh/rectom-causal-reasoning-retriever-stage2 · Hugging Face",
+      "url": "https://huggingface.co/mhmsadegh/rectom-causal-reasoning-retriever-stage2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cross-encoder (Sentence Transformers - Cross-Encoders)",
+      "url": "https://huggingface.co/cross-encoder",
+      "snippet": "This repository hosts the cross-encoders from the SentenceTransformers package. More details on https://www.sbert.net/docs/cross_encoder/pretrained_models.html"
+    },
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "Mohammad Sadegh Sadeghi mhmsadegh - GitHub",
+      "url": "https://github.com/mhmsadegh",
+      "snippet": "As a PhD student in Software Engineering with a specialization in NLP for Data Science, I am dedicated to exploring the intersection of human-computer interacti - mhmsadegh"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

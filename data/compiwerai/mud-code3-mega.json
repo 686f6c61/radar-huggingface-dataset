@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CompiwerAI/MUD-Code3-Mega",
+  "slug": "compiwerai-mud-code3-mega",
+  "author": "CompiwerAI",
+  "url": "https://huggingface.co/CompiwerAI/MUD-Code3-Mega",
+  "created_at": "2026-09-01T17:33:34.000Z",
+  "updated_at": "2026-09-01T17:33:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "code"
+  ],
+  "tags": [
+    "coding",
+    "dataset",
+    "code-generation",
+    "large-scale",
+    "high-quality",
+    "code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CompiwerAI (Compiwer AI) - Hugging Face",
+      "url": "https://huggingface.co/CompiwerAI/models",
+      "snippet": "CompiwerAI&#x27;s models3 Sort: Recently updated CompiwerAI/Mtrini-1.-Family Updated 4 days ago• 10"
+    },
+    {
+      "title": "CompiwerAI (Compiwer AI) - Hugging Face",
+      "url": "https://huggingface.co/datasets/CompiwerAI/",
+      "snippet": "User profile of Compiwer AI on Hugging Face"
+    },
+    {
+      "title": "CompiwerAI compiwerai - GitHub",
+      "url": "https://github.com/compiwerai",
+      "snippet": "🇲🇦 Independent AI research from Morocco. 🧠 Open models · 💻 Code · 🌍 Multilingual AI · ⚡ Local AI. - compiwerai"
+    },
+    {
+      "title": "Best AI Models for Coding Locally — 2026 Ranking",
+      "url": "https://www.aimadetools.com/blog/best-ai-models-for-coding-locally-2026/",
+      "snippet": "The best open-source AI models for local code generation, completion, and debugging. Tested on real tasks with hardware requirements and setup instructions."
+    },
+    {
+      "title": "Kilo - Best Open Source AI Models for Coding (2026)",
+      "url": "https://kilo.ai/open-source-models",
+      "snippet": "Compare current open source AI models for coding by benchmarks, licenses, local deployment, and hosted access. Evidence-backed rankings updated for 2026."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yuvalgot/act_towel_fold1_aug_20260901",
+  "slug": "yuvalgot-act_towel_fold1_aug_20260901",
+  "author": "yuvalgot",
+  "url": "https://huggingface.co/yuvalgot/act_towel_fold1_aug_20260901",
+  "created_at": "2026-09-01T19:26:52.000Z",
+  "updated_at": "2026-09-01T19:27:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:yuvalgot/towel_fold1_aug_2108_20260821_115238",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712880,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yuvalgot/towel_fold1_aug_20260821_114340 at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/yuvalgot/towel_fold1_aug_20260821_114340/tree/main",
+      "snippet": "Datasets: yuvalgot / towel_fold1_aug_20260821_114340 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 1K - 10K Tags: LeRobot Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main towel_fold1_aug_20260821_114340 58.9 MB 1 contributor History:3 commits yuvalgot Upload README.md with ..."
+    },
+    {
+      "title": "yuvalgot/towel_fold1_aug_20260821_114340 - Hugging Face",
+      "url": "https://huggingface.co/datasets/yuvalgot/towel_fold1_aug_20260821_114340",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yuvalgot/towel_fold1_aug_2108_20260821_115238 - Hugging Face",
+      "url": "https://huggingface.co/datasets/yuvalgot/towel_fold1_aug_2108_20260821_115238",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Yuval Gottlieb yuvalgot - GitHub",
+      "url": "https://github.com/yuvalgot",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "dk2472780158-ctrl (kanye west) · GitHub",
+      "url": "https://github.com/dk2472780158-ctrl",
+      "snippet": "ACT imitation learning for dual AgileX Piper towel folding — teleop data collection → training → real-robot deployment (10/10 consecutive trials). Dataset & weights on Hugging Face."
+    }
+  ]
+}

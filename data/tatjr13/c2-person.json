@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "tatjr13/c2-person",
+  "slug": "tatjr13-c2-person",
+  "author": "tatjr13",
+  "url": "https://huggingface.co/tatjr13/c2-person",
+  "created_at": "2026-08-27T11:08:49.000Z",
+  "updated_at": "2026-09-01T17:22:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64408185,
+  "storage_human": "64 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tatjr13 (TimT) - Hugging Face",
+      "url": "https://huggingface.co/tatjr13",
+      "snippet": "User profile of TimT on Hugging Face"
+    },
+    {
+      "title": "tatjr13 · GitHub",
+      "url": "https://github.com/tatjr13",
+      "snippet": "An agentic king-of-the-hill loop for autonomously pushing SOTA — define a frontier in one markdown file, and challengers only take the throne by passing a statistical crown gate. Runs on one H100. Python 1"
+    },
+    {
+      "title": "tatjr13/Babelbit-Babel2 · Hugging Face",
+      "url": "https://huggingface.co/tatjr13/Babelbit-Babel2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Person - Create Your Own AI Person for Free | AI Model Generator",
+      "url": "https://www.aiperson.com/",
+      "snippet": "Create Your Own AI Person for Free Train AI on any face and generate photorealistic images in any scenario. Perfect for creative projects, games, art, and professional use."
+    },
+    {
+      "title": "AI Human Generator (free, no sign-up, no limits) - Perchance",
+      "url": "https://perchance.org/ai-human-generator",
+      "snippet": "AI human generator from text. Create a realistic-looking full-body human character photo/image with the Stable Diffusion text-to-image model. Stylized and realistic AI body generator. Use it to create photorealistic or stylized AI human photos of faces or full human body photos for your OC, villains, story characters, selfies, etc. - it&#x27;s completely free, no sign-up needed. The best AI person ..."
+    }
+  ]
+}

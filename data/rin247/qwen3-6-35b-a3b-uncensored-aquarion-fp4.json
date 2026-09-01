@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Rin247/Qwen3.6-35B-A3B-Uncensored-Aquarion-FP4",
+  "slug": "rin247-qwen3-6-35b-a3b-uncensored-aquarion-fp4",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Qwen3.6-35B-A3B-Uncensored-Aquarion-FP4",
+  "created_at": "2026-09-01T18:29:43.000Z",
+  "updated_at": "2026-09-01T18:31:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe_text",
+    "text-generation",
+    "quantized",
+    "fp4",
+    "uncensored",
+    "abliterated",
+    "conversational",
+    "endpoints_compatible",
+    "fp4_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33945571968,
+  "parameters_human": "33.95B",
+  "storage_bytes": 67285672551,
+  "storage_human": "67.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rin247/Qwen3.6-27B-Uncensored-Aquarion-INT4 · Hugging Face",
+      "url": "https://huggingface.co/Rin247/Qwen3.6-27B-Uncensored-Aquarion-INT4",
+      "snippet": "Instructions to use Rin247/Qwen3.6-27B-Uncensored-Aquarion-INT4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3-Aquarion - a Rin247 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Rin247/qwen3-aquarion",
+      "snippet": "Contains FP8, INT8, INT4 and FP4 weight-only safetensors quants of the Qwen3 series, used for Anima, Krea2, Z-Image and Klein."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B Uncensored: A 35B MoE Model With 262K Context",
+      "url": "https://hackernoon.com/qwen36-35b-a3b-uncensored-a-35b-moe-model-with-262k-context",
+      "snippet": "Overview Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive is an uncensored variant of Qwen&#x27;s 35B mixture-of-experts language model, maintained by HauhauCS. The model contains 35 billion total parameters with approximately 3 billion active per forward pass through a sparse expert architecture. It features a hybrid attention design combining linear attention with full softmax attention in a 3:1 ..."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "Qwen 3.6 abliterated, Gemma 4 Heretic, Dolphin 3.0 — the current uncensored picks by VRAM tier. The Llama 3.1 / Qwen 2.5 era is mostly superseded. HuggingFace repos for every pick."
+    }
+  ]
+}

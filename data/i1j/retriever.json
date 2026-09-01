@@ -1,0 +1,169 @@
+{
+  "schema": 1,
+  "id": "i1j/retriever",
+  "slug": "i1j-retriever",
+  "author": "i1j",
+  "url": "https://huggingface.co/i1j/retriever",
+  "created_at": "2026-09-01T15:00:11.000Z",
+  "updated_at": "2026-09-01T15:00:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:415",
+    "loss:CachedMultipleNegativesRankingLoss",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:2101.06983",
+    "arxiv:1807.03748",
+    "base_model:deepvk/USER-bge-m3",
+    "base_model:finetune:deepvk/USER-bge-m3",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 359026688,
+  "parameters_human": "359.0M",
+  "storage_bytes": 1436151648,
+  "storage_human": "1.4 GB",
+  "base_model": "deepvk/USER-bge-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "ir evaluator",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.7991071428571429
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ir evaluator",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.9330357142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ir evaluator",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.9642857142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ir evaluator",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.9955357142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ir evaluator",
+      "metric": "Cosine Precision@1",
+      "value": 0.7991071428571429
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ir evaluator",
+      "metric": "Cosine Precision@3",
+      "value": 0.3110119047619047
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ir evaluator",
+      "metric": "Cosine Precision@5",
+      "value": 0.19285714285714287
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ir evaluator",
+      "metric": "Cosine Precision@10",
+      "value": 0.09955357142857145
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ir evaluator",
+      "metric": "Cosine Recall@1",
+      "value": 0.7991071428571429
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ir evaluator",
+      "metric": "Cosine Recall@3",
+      "value": 0.9330357142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ir evaluator",
+      "metric": "Cosine Recall@5",
+      "value": 0.9642857142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ir evaluator",
+      "metric": "Cosine Recall@10",
+      "value": 0.9955357142857143
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ir evaluator",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.9002764230128719
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ir evaluator",
+      "metric": "Cosine Mrr@10",
+      "value": 0.8692920918367346
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "ir evaluator",
+      "metric": "Cosine Map@20",
+      "value": 0.8695897108843538
+    }
+  ],
+  "sources": [
+    {
+      "title": "Retriever Models Explained: 8 Ways RAG Is Making AI Learn Faster and ...",
+      "url": "https://blog.eduonix.com/2025/12/retriever-models-explained-8-ways-rag-is-making-ai-learn-faster-and-smarter/",
+      "snippet": "Retriever models are transforming how AI understands and learns using real-world context. Discover eight ways Retrieval-Augmented Generation is accelerating AI intelligence and personalization."
+    },
+    {
+      "title": "AI models compared for browser agents | Retriever AI",
+      "url": "https://rtrvr.ai/models",
+      "snippet": "Which model should run your task? Speed, cost per task, capability, context, and vision for every model on rtrvr.ai — measured from production browser-agent traffic."
+    },
+    {
+      "title": "infly/inf-retriever-v1 · Hugging Face",
+      "url": "https://huggingface.co/infly/inf-retriever-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Retriever AI | Make every site work for you.",
+      "url": "https://rtrvr.ai/",
+      "snippet": "Describe the outcome. Retriever AI works across the open web and the sites you&#x27;re signed into, then returns the finished result. Run it once or a thousand times."
+    },
+    {
+      "title": "Anatomy of RAG: Retriever, Generator and Workflow Explained | 2025 Guide",
+      "url": "https://www.kernshell.com/anatomy-of-rag-retriever-generator-and-the-workflow/",
+      "snippet": "The retriever is the first line of defense against AI hallucinations. Instead of relying solely on the model&#x27;s pre-trained knowledge, RAG retrieves relevant information from connected data sources and uses it to generate a more accurate and context-aware response."
+    }
+  ]
+}

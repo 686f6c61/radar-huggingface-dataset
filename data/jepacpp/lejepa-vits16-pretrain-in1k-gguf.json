@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jepacpp/lejepa-vits16-pretrain-in1k-GGUF",
+  "slug": "jepacpp-lejepa-vits16-pretrain-in1k-gguf",
+  "author": "jepacpp",
+  "url": "https://huggingface.co/jepacpp/lejepa-vits16-pretrain-in1k-GGUF",
+  "created_at": "2026-09-01T11:18:57.000Z",
+  "updated_at": "2026-09-01T11:44:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "jepa.cpp",
+  "languages": [],
+  "tags": [
+    "jepa.cpp",
+    "gguf",
+    "jepa",
+    "ggml",
+    "lejepa",
+    "image-feature-extraction",
+    "vision",
+    "arxiv:2511.08544",
+    "base_model:OK-AI/lejepa-vits16-pretrain-in1k",
+    "base_model:quantized:OK-AI/lejepa-vits16-pretrain-in1k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21665664,
+  "parameters_human": "21.7M",
+  "storage_bytes": 182540224,
+  "storage_human": "183 MB",
+  "base_model": "OK-AI/lejepa-vits16-pretrain-in1k",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OK-AI/lejepa-vits16-pretrain-in1k · Hugging Face",
+      "url": "https://huggingface.co/OK-AI/lejepa-vits16-pretrain-in1k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=iBOT",
+      "snippet": "OK-AI/lejepa-vits16-pretrain-in1k Image Feature Extraction • 26.8M•Updated about 5 hours ago"
+    },
+    {
+      "title": "GitHub - galilai-group/lejepa",
+      "url": "https://github.com/galilai-group/lejepa",
+      "snippet": "LeJEPA is a lean, scalable, and theoretically grounded framework for self-supervised representation learning, based on Joint-Embedding Predictive Architectures (JEPAs)."
+    },
+    {
+      "title": "[2511.08544] LeJEPA: Provable and Scalable Self-Supervised Learning ...",
+      "url": "https://arxiv.org/abs/2511.08544",
+      "snippet": "Learning manipulable representations of the world and its dynamics is central to AI. Joint-Embedding Predictive Architectures (JEPAs) offer a promising blueprint, but lack of practical guidance and theory has led to ad-hoc R&D. We present a comprehensive theory of JEPAs and instantiate it in {&#92;&#92;bf LeJEPA}, a lean, scalable, and theoretically grounded training objective. First, we identify the ..."
+    },
+    {
+      "title": "Architecture Overview | galilai-group/lejepa | DeepWiki",
+      "url": "https://deepwiki.com/galilai-group/lejepa/1.2-architecture-overview",
+      "snippet": "Architecture Overview Relevant source files Purpose and Scope This page describes the high-level architecture of LeJEPA, explaining how data flows through the system from input images to the final self-supervised loss. We focus on the core components and their interactions, including the data augmentation pipeline, encoder backbone, projection head, and the SIGReg objective. For detailed ..."
+    }
+  ]
+}

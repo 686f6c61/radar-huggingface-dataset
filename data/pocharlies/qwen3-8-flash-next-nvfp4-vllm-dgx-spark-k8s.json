@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "pocharlies/Qwen3.8-Flash-Next-NVFP4-vLLM-DGX-Spark-k8s",
+  "slug": "pocharlies-qwen3-8-flash-next-nvfp4-vllm-dgx-spark-k8s",
+  "author": "pocharlies",
+  "url": "https://huggingface.co/pocharlies/Qwen3.8-Flash-Next-NVFP4-vLLM-DGX-Spark-k8s",
+  "created_at": "2026-09-01T17:07:21.000Z",
+  "updated_at": "2026-09-01T17:07:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "kubernetes",
+    "dgx-spark",
+    "gb10",
+    "nvfp4",
+    "deployment-recipe",
+    "benchmark",
+    "en",
+    "base_model:RadixArk/Qwen3.8-Flash-Next-NVFP4",
+    "base_model:finetune:RadixArk/Qwen3.8-Flash-Next-NVFP4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "RadixArk/Qwen3.8-Flash-Next-NVFP4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pocharlies/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/pocharlies/Qwen3.8-Flash-Next",
+      "snippet": "A production-verified recipe (2026-08-27) for serving RadixArk/Qwen3.8-Flash-Next-NVFP4 (125B MoE / 6B active + 51B n-gram PLE + 4B MTP, 135 GB) on two NVIDIA DGX Spark machines with TP=2 over RoCEv2 and SGLang. The RadixArk NVFP4 checkpoint is validated upstream only on GB300/B300; this recipe is the sm_121a (GB10) verification."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next-NVFP4-vLLM-Dual-DGX-Spark - GitHub",
+      "url": "https://github.com/MiaAI-Lab/Qwen3.8-Flash-Next-Dual-DGX-Sparks",
+      "snippet": "Qwen3.8-Flash-Next-NVFP4 · 2× DGX Spark · SGLang TP2 by Mia&#x27;a AI Lab Serving a 176B-parameter NVFP4 MoE across two DGX Sparks — including the SM121 kernel work that makes the Qwen4Exp sparse-attention path boot at all, and the GB10 unified-memory math that keeps two 128 GB machines from wedging."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Qwen4 architecture preview with a 125B-parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token."
+    }
+  ]
+}

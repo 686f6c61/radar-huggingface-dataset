@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "KoichiYasuoka/ltgbert-base-turkish-ud-goeswith",
+  "slug": "koichiyasuoka-ltgbert-base-turkish-ud-goeswith",
+  "author": "KoichiYasuoka",
+  "url": "https://huggingface.co/KoichiYasuoka/ltgbert-base-turkish-ud-goeswith",
+  "created_at": "2025-04-02T15:05:26.000Z",
+  "updated_at": "2026-09-01T13:16:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "pytorch",
+    "turkish",
+    "pos",
+    "dependency-parsing",
+    "token-classification",
+    "custom_code",
+    "tr",
+    "dataset:universal_dependencies",
+    "base_model:HPLT/hplt_bert_base_tr",
+    "base_model:finetune:HPLT/hplt_bert_base_tr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1120446846,
+  "storage_human": "1.1 GB",
+  "base_model": "HPLT/hplt_bert_base_tr",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KoichiYasuoka/ltgbert-base-turkish-ud-goeswith · Hugging Face",
+      "url": "https://huggingface.co/KoichiYasuoka/ltgbert-base-turkish-ud-goeswith",
+      "snippet": "ltgbert-base-turkish-ud-goeswith Model Description This is a LTG-BERT model pretrained for POS-tagging and dependency-parsing (using goeswith for subwords), derived from hplt_bert_base_tr. How to Use"
+    },
+    {
+      "title": "KoichiYasuoka/bert-base-turkish-ud-goeswith · Hugging Face",
+      "url": "https://huggingface.co/KoichiYasuoka/bert-base-turkish-ud-goeswith",
+      "snippet": "bert-base-turkish-ud-goeswith Model Description This is a BERT model for POS-tagging and dependency-parsing (using goeswith for subwords), derived from turkish-base-bert-uncased. How to Use"
+    },
+    {
+      "title": "MoganBert-TR: A Turkish Encoder Foundation Model Trained from Scratch ...",
+      "url": "https://arxiv.org/html/2608.25768",
+      "snippet": "Abstract Publicly available large-scale pretraining data for Turkish exists largely as a subset of multilingual dumps and involves no language-specific quality filtering; existing Turkish encoders, meanwhile, have adopted modern architectures while leaving the pretraining objective fixed. This paper introduces an encoder foundation model trained from scratch on a language-specifically filtered ..."
+    },
+    {
+      "title": "KoichiYasuoka/ltgbert-base-turkish-ud-goeswith · Discussions",
+      "url": "https://huggingface.co/KoichiYasuoka/ltgbert-base-turkish-ud-goeswith/discussions",
+      "snippet": "KoichiYasuoka / ltgbert-base-turkish-ud-goeswith like 0 Token Classification PyTorch universal_dependencies Turkish turkish pos dependency-parsing custom_code License:apache-2.0 Model card FilesFiles and versions Community 1"
+    },
+    {
+      "title": "KoichiYasuoka/bert-base-turkish-ud-goeswith · Adding `safetensors ...",
+      "url": "https://huggingface.co/KoichiYasuoka/bert-base-turkish-ud-goeswith/discussions/1",
+      "snippet": "Adding `safetensors` variant of this model #1 by SFconvertbot - opened about 4 hours ago base: refs/heads/main"
+    }
+  ]
+}

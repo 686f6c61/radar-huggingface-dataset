@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ezrawinston/gptbert-sambal",
+  "slug": "ezrawinston-gptbert-sambal",
+  "author": "ezrawinston",
+  "url": "https://huggingface.co/ezrawinston/gptbert-sambal",
+  "created_at": "2026-09-01T15:45:32.000Z",
+  "updated_at": "2026-09-01T16:08:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gpt-bert",
+    "babylm",
+    "sambal",
+    "en",
+    "dataset:ezrawinston/babycosmofine-sambal",
+    "arxiv:2410.24159",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 651751179,
+  "storage_human": "652 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=gptbert",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - ltgoslo/gpt-bert: Official implementation of \"GPT or BERT: why ...",
+      "url": "https://github.com/ltgoslo/gpt-bert",
+      "snippet": "We present a simple way to merge masked language modeling with causal language modeling. This hybrid training objective results in a model that combines the strengths of both modeling paradigms within a single transformer stack: GPT-BERT can be transparently used like any standard causal or masked language model. We test the pretraining process that enables this flexible behavior on the BabyLM ..."
+    },
+    {
+      "title": "Learning syntax without semantics: Disentangled tiny language models",
+      "url": "https://openreview.net/pdf?id=p7HVrmZwWB",
+      "snippet": "Can a SAMBAL model rapidly acquire domain content after pretraining? The use case is modular: SAMBAL pretraining encodes syntax in the base weights, and a lightweight LoRA adapter adds domain knowledge (only the adapter is trained)—targeting cases where one wants a linguistically-capable model that knows little beyond a target domain too ..."
+    },
+    {
+      "title": "GBERT: A hybrid deep learning model based on GPT-BERT for fake news ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2405844024118968",
+      "snippet": "A large language model (LLM) is an AI model that is designed to comprehend and generate human language. Various researchers opt to utilize these methodologies for categorizing fabricated information. The authors in Ref. [30] have conducted experiments to explore the usage of the transformer technique in addressing the issue of bogus news."
+    }
+  ]
+}

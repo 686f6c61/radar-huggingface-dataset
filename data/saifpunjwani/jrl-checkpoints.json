@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SaifPunjwani/jrl-checkpoints",
+  "slug": "saifpunjwani-jrl-checkpoints",
+  "author": "SaifPunjwani",
+  "url": "https://huggingface.co/SaifPunjwani/jrl-checkpoints",
+  "created_at": "2026-08-31T20:55:56.000Z",
+  "updated_at": "2026-09-01T18:01:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "reasoning",
+    "mathematics",
+    "qwen3",
+    "ministral",
+    "text-generation",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58538314669,
+  "storage_human": "58.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SaifPunjwani/jrl-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/SaifPunjwani/jrl-checkpoints",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=SaifPunjwani%2Fqwen3-4b-jrl-ckpt3",
+      "snippet": "Reset Parameters 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 + 44 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 + 10 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 9 + 11 + 10 ..."
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 201 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Saif Punjwani • Software Engineer",
+      "url": "https://saifpunjwani.github.io/",
+      "snippet": "Personal site of Saif Punjwani — software engineer. Projects, experience, and ways to get in touch."
+    },
+    {
+      "title": "Stable Diffusion Checkpoints — Free AI Model Downloads | ComfyUI Resources",
+      "url": "https://comfyuiweb.com/resources/checkpoints",
+      "snippet": "Curated collection of the most popular Stable Diffusion checkpoint models. From photorealistic to anime, find the perfect base model for your AI art workflow."
+    }
+  ]
+}

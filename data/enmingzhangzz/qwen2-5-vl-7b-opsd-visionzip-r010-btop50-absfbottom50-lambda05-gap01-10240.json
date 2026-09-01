@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-Btop50-absFbottom50-lambda05-gap01-10240",
+  "slug": "enmingzhangzz-qwen2-5-vl-7b-opsd-visionzip-r010-btop50-absfbottom50-lambda05-gap01-10240",
+  "author": "enmingzhangzz",
+  "url": "https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-Btop50-absFbottom50-lambda05-gap01-10240",
+  "created_at": "2026-09-01T13:45:07.000Z",
+  "updated_at": "2026-09-01T13:45:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2.5-vl",
+    "opsd",
+    "visionzip",
+    "lora",
+    "image-text-to-text",
+    "dataset:OpenMMReasoner/OpenMMReasoner-SFT-874K",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161539072,
+  "storage_human": "162 MB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-balanced-10240 ...",
+      "url": "https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-balanced-10240",
+      "snippet": "Load this adapter on top of Qwen/Qwen2.5-VL-7B-Instruct with PEFT. The VisionZip runtime patch used by the OPSD repository is still required for pruned inference."
+    },
+    {
+      "title": "enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-10240 ...",
+      "url": "https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-10240",
+      "snippet": "Qwen2.5-VL-7B OPSD Official VisionZip r010 This repository contains the lightweight LoRA evaluation checkpoint from the completed 10,240-sample OPSD training run using the official VisionZip token selection implementation at a 10% visual-token retention ratio."
+    },
+    {
+      "title": "Qwen2.5-VL-7B-OPSD-VisionZip-r010-Btop50-absFtop50-lambda05-gap01-10240",
+      "url": "https://friendli.ai/models/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-Btop50-absFtop50-lambda05-gap01-10240",
+      "snippet": "Deploy Qwen2.5-VL-7B-OPSD-VisionZip-r010-Btop50-absFtop50-lambda05-gap01-10240 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Qwen2.5-VL-7B-OPSD-VisionZip-r010-balanced-10240",
+      "url": "https://friendli.ai/models/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-balanced-10240",
+      "snippet": "Deploy Qwen2.5-VL-7B-OPSD-VisionZip-r010-balanced-10240 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - JIA-Lab-research/VisionZip: Official repository for VisionZip ...",
+      "url": "https://github.com/JIA-Lab-research/VisionZip",
+      "snippet": "Official repository for VisionZip (CVPR 2025). Contribute to JIA-Lab-research/VisionZip development by creating an account on GitHub."
+    }
+  ]
+}

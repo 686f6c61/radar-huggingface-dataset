@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "smshahbaj/RIFA-Forge-1B",
+  "slug": "smshahbaj-rifa-forge-1b",
+  "author": "smshahbaj",
+  "url": "https://huggingface.co/smshahbaj/RIFA-Forge-1B",
+  "created_at": "2026-09-01T18:04:07.000Z",
+  "updated_at": "2026-09-01T18:04:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "smshahbaj (SM Shahbaj) - Hugging Face",
+      "url": "https://huggingface.co/smshahbaj",
+      "snippet": "User profile of SM Shahbaj on Hugging Face"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=smshahbaj%2FRifa-Nano-0.5B",
+      "snippet": "Explore machine learning models. Edit Models filters Main Tasks Libraries Languages Licenses Other Tasks Text Generation Any-to-Any Image-Text-to-Text Image-to-Text Image-to-Image Text-to-Image Text-to-Video Text-to-Speech + 44 Parameters Reset Parameters 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 + 44 Apps vLLM ..."
+    },
+    {
+      "title": "[2409.02060] OLMoE: Open Mixture-of-Experts Language Models",
+      "url": "https://arxiv.org/abs/2409.02060",
+      "snippet": "We introduce OLMoE, a fully open, state-of-the-art language model leveraging sparse Mixture-of-Experts (MoE). OLMoE-1B-7B has 7 billion (B) parameters but uses only 1B per input token. We pretrain it on 5 trillion tokens and further adapt it to create OLMoE-1B-7B-Instruct. Our models outperform all available models with similar active parameters, even surpassing larger ones like Llama2-13B ..."
+    },
+    {
+      "title": "GitHub - 12britz/awesome-free-models: A curated list of free AI models ...",
+      "url": "https://github.com/12britz/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. - 12britz/awesome-free-models"
+    },
+    {
+      "title": "Introducing the First AMD 1B Language Models: AMD OLMo",
+      "url": "https://www.amd.com/en/developer/resources/technical-articles/introducing-the-first-amd-1b-language-model.html",
+      "snippet": "AMD is releasing its first open source 1B language model, advancing accessible AI with high-performance AMD Instinct™ GPUs and Ryzen™ AI PCs."
+    }
+  ]
+}

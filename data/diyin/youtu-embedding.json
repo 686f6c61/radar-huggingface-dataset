@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "DIYIN/Youtu-Embedding",
+  "slug": "diyin-youtu-embedding",
+  "author": "DIYIN",
+  "url": "https://huggingface.co/DIYIN/Youtu-Embedding",
+  "created_at": "2026-09-01T13:43:33.000Z",
+  "updated_at": "2026-09-01T13:43:34.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "utu",
+    "feature-extraction",
+    "sentence-transformers",
+    "sentence-similarity",
+    "text-embeddings-inference",
+    "custom_code",
+    "zh",
+    "arxiv:2508.11442",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2410289152,
+  "parameters_human": "2.41B",
+  "storage_bytes": 9658652198,
+  "storage_human": "9.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Embedding - a DIYIN Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/DIYIN/embedding",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from DIYIN"
+    },
+    {
+      "title": "GitHub - TencentCloudADP/youtu-embedding: Youtu-Embedding is an ...",
+      "url": "https://github.com/TencentCloudADP/youtu-embedding",
+      "snippet": "Youtu-Embedding is an industry-leading, general-purpose text representation model developed by Tencent Youtu Lab. It demonstrates state-of-the-art performance across a wide range of natural language processing tasks, including Information Retrieval (IR), Semantic Textual Similarity (STS), Clustering, Reranking, and Classification. The core advantages of Youtu-Embedding can be summarized as ..."
+    },
+    {
+      "title": "[2608.02148] Douyin Multimodal Embedding Model Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2608.02148",
+      "snippet": "Multimodal representation learning is a cornerstone of modern AI. By encoding multimodal queries and targets into vectors, it powers industrial search and recommendation and underpins modern agents. Real-world platforms with complex modalities and massive-scale content, such as Douyin, Xiaohongshu, and YouTube, demand both efficiency under billion-scale indexing and fine-grained discrimination ..."
+    },
+    {
+      "title": "tencent/Youtu-Embedding · Hugging Face",
+      "url": "https://huggingface.co/tencent/Youtu-Embedding",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Youtu-Embedding · Models",
+      "url": "https://www.modelscope.cn/models/tencent-community/Youtu-Embedding/summary",
+      "snippet": "Youtu-Embedding is a state-of-the-art, general-purpose text embedding model developed by Tencent Youtu Lab. It delivers exceptional performance across a wide range of natural language processing tasks, including Information Retrieval (IR), Semantic Textual Similarity (STS), Clustering, Reranking, and Classification."
+    }
+  ]
+}

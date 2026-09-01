@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "efe-T/Experiment-1-A",
+  "slug": "efe-t-experiment-1-a",
+  "author": "efe-T",
+  "url": "https://huggingface.co/efe-T/Experiment-1-A",
+  "created_at": "2026-09-01T11:50:21.000Z",
+  "updated_at": "2026-09-01T11:50:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Researchers let AI models run a simulated society. Claude was the ...",
+      "url": "https://fortune.com/2026/05/28/ai-model-simulation-claude-chatgpt-grok-gemini/",
+      "snippet": "An AI startup ran five simulations, each controlled by a different model. The results varied wildly."
+    },
+    {
+      "title": "EFE_Agent/EXPERIMENT_DESIGN.md at master - GitHub",
+      "url": "https://github.com/dengxian06/EFE_Agent/blob/master/EXPERIMENT_DESIGN.md",
+      "snippet": "Contribute to dengxian06/EFE_Agent development by creating an account on GitHub."
+    },
+    {
+      "title": "courses/published/ai-computer-science/05_action/lab-protocols ... - GitHub",
+      "url": "https://github.com/ActiveInferenceInstitute/courses/blob/main/published/ai-computer-science/05_action/lab-protocols/05_action-lab.md",
+      "snippet": "Set up the T-maze model (4 states, 3 obs, 3 actions) from Module 02. Create the corresponding DiscreteEnvironment and ActiveInferenceAgent. Run 8 steps. Record states, observations, actions, and EFE values. Did the agent visit the cue location before choosing an arm?"
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    }
+  ]
+}

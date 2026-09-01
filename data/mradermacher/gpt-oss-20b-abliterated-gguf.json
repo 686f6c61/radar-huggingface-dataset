@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gpt-oss-20b-abliterated-GGUF",
+  "slug": "mradermacher-gpt-oss-20b-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gpt-oss-20b-abliterated-GGUF",
+  "created_at": "2026-04-21T05:21:53.000Z",
+  "updated_at": "2026-09-01T12:04:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "moe",
+    "gpt-oss",
+    "mxfp4",
+    "direct-steering",
+    "ega",
+    "moe-router-suppression",
+    "abliterix",
+    "en",
+    "zh",
+    "base_model:wangzhang/gpt-oss-20b-abliterated",
+    "base_model:quantized:wangzhang/gpt-oss-20b-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 646,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 170323559296,
+  "storage_human": "170.3 GB",
+  "base_model": "wangzhang/gpt-oss-20b-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/gpt-oss-20b-OBLITERATED-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gpt-oss-20b-OBLITERATED-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/gpt-oss-20b-OBLITERATED-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gpt-oss-20b-OBLITERATED-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/gpt-oss-20b-OBLITERATED-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "gpt-oss-20b Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-oss-20b",
+      "snippet": "Medium-sized open-weight model for low latency Compare"
+    },
+    {
+      "title": "Abliz - Abliterated AI Models Directory",
+      "url": "https://www.abliz.org/",
+      "snippet": "Search and compare abliterated AI models. Find top-performing models based on UGI benchmarks and W/10 writing scores."
+    },
+    {
+      "title": "How to Install & Run GPT-OSS 20b and 120b GGUF Locally?",
+      "url": "https://dev.to/nodeshiftcloud/how-to-install-run-gpt-oss-20b-and-120b-gguf-locally-3833",
+      "snippet": "GPT-OSS is a two-model, open-weight lineup built for real work: 120B for high-reasoning, production use that fits on a single H100, and 20B for fast local runs, fine-tuning, and lower-latency apps. Both ship under Apache-2.0, support function calling/structured outputs, and use the Harmony chat format for consistent responses."
+    }
+  ]
+}

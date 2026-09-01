@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aariciah/gpt2-german-20k-lc",
+  "slug": "aariciah-gpt2-german-20k-lc",
+  "author": "aariciah",
+  "url": "https://huggingface.co/aariciah/gpt2-german-20k-lc",
+  "created_at": "2026-09-01T13:48:33.000Z",
+  "updated_at": "2026-09-01T15:38:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 100612608,
+  "parameters_human": "100.6M",
+  "storage_bytes": 2414798417,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aariciah/gpt2-german-20k · Hugging Face",
+      "url": "https://huggingface.co/aariciah/gpt2-german-20k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aariciah/gpt2-arabic-20k-lc · Hugging Face",
+      "url": "https://huggingface.co/aariciah/gpt2-arabic-20k-lc",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gpt2-german-20k API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/aariciah/gpt2-german-20k",
+      "snippet": "Run gpt2-german-20k with FriendliAI inference. This model is a fine-tuned version of on the None dataset."
+    },
+    {
+      "title": "Aaricia Herygers",
+      "url": "https://aariciah.github.io/",
+      "snippet": "Aaricia Herygers Linguist in Tech Learn more about me Interested in German, phonetics, and speech technology. Passionate about inclusive ASR, SciComm, and empowering women. Junior Researcher University of Göttingen | 2025-... Interpretability of Transfer in Multilingual Models ASR Researcher / Computational Linguist alphaspeech / Linguwerk GmbH | 2024-2025 Research and Development for Speech ..."
+    },
+    {
+      "title": "Gpt2 Turkish ConfigC 20K by aariciah - LLM Explorer",
+      "url": "https://llm-explorer.com/model/aariciah%2Fgpt2-turkish-configC-20k,7xw7cdM09jGziAGvJ2Okqt",
+      "snippet": "Gpt2 Turkish ConfigC 20K is an open-source 100.6m LLM by aariciah. VRAM 0.4GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

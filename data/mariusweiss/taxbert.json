@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mariusweiss/TaxBERT",
+  "slug": "mariusweiss-taxbert",
+  "author": "mariusweiss",
+  "url": "https://huggingface.co/mariusweiss/TaxBERT",
+  "created_at": "2025-02-19T13:28:49.000Z",
+  "updated_at": "2026-09-01T16:30:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 82350916,
+  "parameters_human": "82.4M",
+  "storage_bytes": 658832528,
+  "storage_human": "659 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mariusweiss/TaxBERT · Hugging Face",
+      "url": "https://huggingface.co/mariusweiss/TaxBERT",
+      "snippet": "TaxBERT This repository accompanies the paper: Hechtner, F., Schmidt, L., Seebeck, A., & Weiß, M. (2025). How to design and employ specialized large language models for accounting and tax research: The example of TaxBERT. TaxBERT is a domain-adapated RoBERTa model, specifically designed to analyze qualitative corporate tax disclosures."
+    },
+    {
+      "title": "TaxBERT (Marius Weiß) · GitHub",
+      "url": "https://github.com/TaxBERT",
+      "snippet": "How to design and employ specialized large language models for accounting and tax research: The example of TaxBERT. TaxBERT is a domain-adapated RoBERTa model, specifically designed to analyze qualitative corporate tax disclosures."
+    },
+    {
+      "title": "mariusweiss (Marius Weiß) - Hugging Face",
+      "url": "https://huggingface.co/mariusweiss",
+      "snippet": "Recent Activity updated a model 2 days ago mariusweiss/TaxBERT liked a model 6 days ago mariusweiss/TaxBERT published a model 7 days ago mariusweiss/TaxBERT View all activity"
+    },
+    {
+      "title": "GitHub - TaxBERT/TaxBERT: This repository accompanies the paper ...",
+      "url": "https://github.com/TaxBERT/TaxBERT",
+      "snippet": "How to design and employ specialized large language models for accounting and tax research: The example of TaxBERT. TaxBERT is a domain-adapated RoBERTa model, specifically designed to analyze qualitative corporate tax disclosures."
+    },
+    {
+      "title": "How to Design and Employ Specialized Large Language Models for ...",
+      "url": "https://www.linkedin.com/posts/marius-wei%C3%9F-b04854307_how-to-design-and-employ-specialized-large-activity-7299800804297773057-jq3B",
+      "snippet": "What is TaxBERT? TaxBERT is a domain-specific Large Language Model (LLM) designed to analyze corporate tax disclosures with greater precision than generic models."
+    }
+  ]
+}

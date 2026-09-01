@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yethdev/qwen3.5-9b-manumit-v2",
+  "slug": "yethdev-qwen3-5-9b-manumit-v2",
+  "author": "yethdev",
+  "url": "https://huggingface.co/yethdev/qwen3.5-9b-manumit-v2",
+  "created_at": "2026-09-01T15:30:01.000Z",
+  "updated_at": "2026-09-01T15:36:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yethdev/qwen3.5-9b-manumit-v2-preview-gguf · Hugging Face",
+      "url": "https://huggingface.co/yethdev/qwen3.5-9b-manumit-v2-preview-gguf",
+      "snippet": "Instructions to use yethdev/qwen3.5-9b-manumit-v2-preview-gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "yethdev/qwen3.5-9b-manumit-v1 · Hugging Face",
+      "url": "https://huggingface.co/yethdev/qwen3.5-9b-manumit-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best 8GB GPU Model: How to Set Up Qwen 3.5 9B (Step by Step)",
+      "url": "https://insiderllm.com/guides/qwen-3-5-9b-setup-guide/",
+      "snippet": "Quick Answer: Qwen 3.5 9B fits in 6.6GB on Ollama, runs natively multimodal (images + video from the same weights), supports 262K context, and beats Qwen 3-class models 3x its size on reasoning. Run `ollama run qwen3.5:9b` and you&#x27;re done. For 8GB VRAM, use Q4_K_M. For 12GB, step up to Q6_K or Q8_0. Thinking mode is off by default — turn it on for math and coding. The 9B is the right pick ..."
+    },
+    {
+      "title": "Qwen3.5 9B model | Bitcoin.com AI",
+      "url": "https://ai.bitcoin.com/models/text/qwen/qwen3.5-9b",
+      "snippet": "Qwen3.5 9B is a multimodal foundation model from the Qwen 3.5 family, built for efficient reasoning, coding, and visual understanding in a compact 9B architecture."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    }
+  ]
+}

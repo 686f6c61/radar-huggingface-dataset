@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jogarulfop/policy_2026-08-31_shake4it_bench_5sensors_strain_gauge_10kHz_nfft_512",
+  "slug": "jogarulfop-policy_2026-08-31_shake4it_bench_5sensors_strain_gauge_10khz_nfft_512",
+  "author": "jogarulfop",
+  "url": "https://huggingface.co/jogarulfop/policy_2026-08-31_shake4it_bench_5sensors_strain_gauge_10kHz_nfft_512",
+  "created_at": "2026-09-01T15:16:46.000Z",
+  "updated_at": "2026-09-01T15:17:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:jogarulfop/2026-08-31_shake4it_bench_5sensors_strain_gauge_10kHz_nfft_512",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206717640,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jogarulfop/policy_2026-07-28_shake4it_bench_dragonfly_10kHz_nfft_512 ...",
+      "url": "https://huggingface.co/jogarulfop/policy_2026-07-28_shake4it_bench_dragonfly_10kHz_nfft_512",
+      "snippet": "Instructions to use jogarulfop/policy_2026-07-28_shake4it_bench_dragonfly_10kHz_nfft_512 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "jogarulfop/2026-08-04_shake4it_bench_dragonfly_10kHz_nfft_512_big ...",
+      "url": "https://huggingface.co/datasets/jogarulfop/2026-08-04_shake4it_bench_dragonfly_10kHz_nfft_512_big_cropped",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Policy 2026 07 15 Shakeitup4 Bench Dragonfly 10kHz Nfft 64",
+      "url": "https://sweettea.co/es/resources/catalog-model-bab555cd5d0a6270e2c328f2a7e51099cc7e38fda85571c7585cb5c0ea5fa59a",
+      "snippet": "datasets: jogarulfop/2026-07-15shakeitup4benchdragonfly10kHznfft64 libraryname: lerobot license: apache-2.0 modelname: act pipelinetag: robotics tags: act lerobot ..."
+    },
+    {
+      "title": "rollout_2026-08-04_shake4it_bench_accelero_10kHz_nfft_512_big_2026080…",
+      "url": "https://www.selectdataset.com/dataset/cf4770069dd70e7d34774505550b4b8b/rollout-2026-08-04-shake4it-bench-accelero-10khz-nfft-512-big-20260804-105115",
+      "snippet": "jogarulfop发布的rollout_2026-08-04_shake4it_bench_accelero_10kHz_nfft_512_big_20260804_105115，关于该数据集为HuggingFace LeRobot格式机器人数据集。"
+    },
+    {
+      "title": "Introducing GPT‑5 - OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-5/",
+      "snippet": "We are introducing GPT‑5, our best AI system yet. GPT‑5 is a significant leap in intelligence over all our previous models, featuring state-of-the-art performance across coding, math, writing, health, visual perception, and more."
+    }
+  ]
+}

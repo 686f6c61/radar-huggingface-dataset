@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yoeel/bart-cnn-summarizer-20k-3ep",
+  "slug": "yoeel-bart-cnn-summarizer-20k-3ep",
+  "author": "yoeel",
+  "url": "https://huggingface.co/yoeel/bart-cnn-summarizer-20k-3ep",
+  "created_at": "2026-09-01T08:57:59.000Z",
+  "updated_at": "2026-09-01T18:01:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bart",
+    "text2text-generation",
+    "generated_from_trainer",
+    "base_model:facebook/bart-base",
+    "base_model:finetune:facebook/bart-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 139470681,
+  "parameters_human": "139.5M",
+  "storage_bytes": 13947820893,
+  "storage_human": "13.9 GB",
+  "base_model": "facebook/bart-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/bart-large-cnn · Hugging Face",
+      "url": "https://huggingface.co/facebook/bart-large-cnn",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - alexypf/bart-large-cnn: BART model pre-trained on English ...",
+      "url": "https://github.com/alexypf/bart-large-cnn",
+      "snippet": "BART is particularly effective when fine-tuned for text generation (e.g. summarization, translation) but also works well for comprehension tasks (e.g. text classification, question answering). This particular checkpoint has been fine-tuned on CNN Daily Mail, a large collection of text-summary pairs."
+    },
+    {
+      "title": "Seba213/summarizer-bart-cnn · Hugging Face",
+      "url": "https://huggingface.co/Seba213/summarizer-bart-cnn",
+      "snippet": "summarizer-bart-cnn This model is a fine-tuned version of facebook/bart-large-cnn on the samsum dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Summarizing Text Using Hugging Face&#x27;s BART Model",
+      "url": "https://dev.to/dm8ry/summarizing-text-using-hugging-faces-bart-model-14p5",
+      "snippet": "Hugging Face offers a powerful tool for text summarization: the BART model. In this article, we will explore how you can leverage Hugging Face&#x27;s pre-trained models, specifically the facebook/bart-large-cnn model, to summarize long articles and text."
+    },
+    {
+      "title": "fairseq/examples/bart/README.summarization.md at main ... - GitHub",
+      "url": "https://github.com/facebookresearch/fairseq/blob/main/examples/bart/README.summarization.md",
+      "snippet": "Fine-tuning BART on CNN-Dailymail summarization task 1) Download the CNN and Daily Mail data and preprocess it into data files with non-tokenized cased samples. Follow the instructions here to download the original CNN and Daily Mail datasets. To preprocess the data, refer to the pointers in this issue or check out the code here."
+    }
+  ]
+}

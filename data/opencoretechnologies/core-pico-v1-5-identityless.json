@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "OpenCOReTechnologies/CORe-Pico-V1.5-Identityless",
+  "slug": "opencoretechnologies-core-pico-v1-5-identityless",
+  "author": "OpenCOReTechnologies",
+  "url": "https://huggingface.co/OpenCOReTechnologies/CORe-Pico-V1.5-Identityless",
+  "created_at": "2026-09-01T17:16:43.000Z",
+  "updated_at": "2026-09-01T17:35:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 183086592,
+  "parameters_human": "183.1M",
+  "storage_bytes": 1469471864,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenCORe",
+      "url": "https://opencore.one/",
+      "snippet": "CORe/OpenCORe is an AI chat platform built around alignment. Also made SiderealCompute. Streaming responses, transparent reasoning, image generation, vision analysis, and multi-model support, designed to be the most aligned AI to date."
+    },
+    {
+      "title": "OpenCore — The Governance Layer for Intelligent Organizations",
+      "url": "https://opencore.global/",
+      "snippet": "Open Initiative — Community Preview The Operating Infrastructure for Autonomous Organizations As AI agents move from assistance to execution, organizations need a structural control layer that ensures alignment, accountability, and controlled execution. OpenCore is an open initiative defining that layer."
+    },
+    {
+      "title": "GitHub - acidanthera/OpenCorePkg: OpenCore bootloader",
+      "url": "https://github.com/acidanthera/OpenCorePkg",
+      "snippet": "OpenCore bootloader. Contribute to acidanthera/OpenCorePkg development by creating an account on GitHub."
+    },
+    {
+      "title": "Complete Hackintosh Guide | OpenCore 2025-2026",
+      "url": "https://hnanoto.github.io/Guia-Hackintosh/",
+      "snippet": "Complete Hackintosh Guide The most complete and updated guide to create your EFI from scratch using OpenCore. Compatible with macOS Sequoia 15.x and ready for macOS Tahoe 26.x (2025)."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

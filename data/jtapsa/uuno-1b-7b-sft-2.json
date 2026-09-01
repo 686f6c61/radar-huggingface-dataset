@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Jtapsa/uuno-1B-7B-sft",
+  "slug": "jtapsa-uuno-1b-7b-sft-2",
+  "author": "Jtapsa",
+  "url": "https://huggingface.co/Jtapsa/uuno-1B-7B-sft",
+  "created_at": "2026-09-01T12:14:50.000Z",
+  "updated_at": "2026-09-01T12:45:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jtapsa/uuno-1B-7B-long · Hugging Face",
+      "url": "https://huggingface.co/Jtapsa/uuno-1B-7B-long",
+      "snippet": "Notebooks Google Colab Kaggle Local AppsSettings vLLM How to use Jtapsa/uuno-1B-7B-long with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "Jtapsa (JT) - Hugging Face",
+      "url": "https://huggingface.co/Jtapsa/datasets",
+      "snippet": "Sort: Recently updated. Jtapsa/uuno_pre-training_official. Viewer • Updated Jun 30 • 35.1M • 48. Jtapsa/uuno_long-context_expansion_official"
+    },
+    {
+      "title": "GitHub - deepseek-ai/Janus: Janus-Series: Unified Multimodal ...",
+      "url": "https://github.com/deepseek-ai/Janus",
+      "snippet": "Janus-Pro: Unified Multimodal Understanding and Generation with Data and Model Scaling Janus-Pro is an advanced version of the previous work Janus. Specifically, Janus-Pro incorporates (1) an optimized training strategy, (2) expanded training data, and (3) scaling to larger model size. With these improvements, Janus-Pro achieves significant advancements in both multimodal understanding and ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

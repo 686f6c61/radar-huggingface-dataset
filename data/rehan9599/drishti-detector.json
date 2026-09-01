@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "rehan9599/drishti-detector",
+  "slug": "rehan9599-drishti-detector",
+  "author": "rehan9599",
+  "url": "https://huggingface.co/rehan9599/drishti-detector",
+  "created_at": "2026-09-01T19:40:40.000Z",
+  "updated_at": "2026-09-01T19:41:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "object-detection",
+    "sonar",
+    "side-scan-sonar",
+    "marine-debris",
+    "underwater",
+    "yolov8",
+    "edge-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 125910710,
+  "storage_human": "126 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - TechWithAkash/DRISHTI-AI",
+      "url": "https://github.com/TechWithAkash/DRISHTI-AI",
+      "snippet": "DRISHTI.AI — D eepfake R ecognition and I mage S ynthetic H ybrid T ruth I dentifier A multi-modal AI deepfake detection platform that analyzes images, video, audio, and text simultaneously using 5 parallel neural engines."
+    },
+    {
+      "title": "GitHub - SrichakraGo/drishti-ai: Diabetic Retinopathy detection using a ...",
+      "url": "https://github.com/SrichakraGo/drishti-ai",
+      "snippet": "Early detection through regular retinal screening can drastically reduce vision loss — yet, in many regions, access to skilled ophthalmologists remains limited. This project aims to leverage deep learning to assist hospitals and diagnostic centers in detecting Diabetic Retinopathy from retinal fundus images. Our motivation was to build an AI-driven, scalable, and cost-effective screening ..."
+    },
+    {
+      "title": "DRISHTI Home Page",
+      "url": "https://drshti.github.io/",
+      "snippet": "Vehicle detector model for aerial images is an F-RCNN trained on VEDAI aerial image dataset. The model can detect and and classify vehicles from aerial images in very challenging conditions and was used to prove the Faster-RCNN&#x27;s small target detection capability."
+    },
+    {
+      "title": "Drishti — Exoplanet Intelligence",
+      "url": "https://drishti-exoplanet-ai.vercel.app/",
+      "snippet": "See Beyond. Discover More. Drishti analyzes stellar light curves with advanced signal processing and machine learning to identify promising exoplanet candidates. Start Exploring TESS Data"
+    },
+    {
+      "title": "DrishtiAI Traffic Violation Intelligence - a Hugging Face Space by ...",
+      "url": "https://huggingface.co/spaces/lakshya234/drishti-ai",
+      "snippet": "This tool lets you upload traffic camera videos or images and automatically spots illegal actions such as running red lights or illegal turns. After processing, it returns a clear list of detected ..."
+    }
+  ]
+}

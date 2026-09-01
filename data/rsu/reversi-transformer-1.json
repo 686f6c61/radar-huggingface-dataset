@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rsu/Reversi-Transformer-1",
+  "slug": "rsu-reversi-transformer-1",
+  "author": "rsu",
+  "url": "https://huggingface.co/rsu/Reversi-Transformer-1",
+  "created_at": "2026-09-01T11:39:29.000Z",
+  "updated_at": "2026-09-01T14:17:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "tensorflow",
+  "languages": [],
+  "tags": [
+    "tensorflow",
+    "othello",
+    "reversi",
+    "game-ai",
+    "transformer",
+    "mixture-of-experts",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20625576,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - rsu-Suba/ReversiGPT: Reversi AI with Transformer architecture",
+      "url": "https://github.com/rsu-Suba/ReversiGPT",
+      "snippet": "Reversi AI with Transformer architecture. Contribute to rsu-Suba/ReversiGPT development by creating an account on GitHub."
+    },
+    {
+      "title": "ReversiGPT/AI/models at main · rsu-Suba/ReversiGPT · GitHub",
+      "url": "https://github.com/rsu-Suba/ReversiGPT/tree/main/AI/models",
+      "snippet": "Reversi AI with Transformer architecture. Contribute to rsu-Suba/ReversiGPT development by creating an account on GitHub."
+    },
+    {
+      "title": "Transforming Skin Cancer Detection With AI-Based Convolutional and ...",
+      "url": "https://www.academia.edu/172687706/Transforming_Skin_Cancer_Detection_With_AI_Based_Convolutional_and_Transformer_Models",
+      "snippet": "This study adapts VINCE-NET, a hybrid deep-learning model originally designed for stroke detection, to classify melanoma using dermoscopic images. Methods: VINCE-NET combines vision transformer layers for global context, convolutional neural networks for local features, and long short-term memory for spatial sequence modeling."
+    },
+    {
+      "title": "Reversi Project - ljolliet.github.io",
+      "url": "https://ljolliet.github.io/projects/reversi.html",
+      "snippet": "Reversi is a project developed during the 1st year of our Computing Master in Bordeaux (FR). The aim of the project was to create the best AI possible for the Reversi/Othello game."
+    },
+    {
+      "title": "ReversiGPT/AI/models/transformer_TF.py at main · rsu-Suba ... - GitHub",
+      "url": "https://github.com/rsu-Suba/ReversiGPT/blob/main/AI/models/transformer_TF.py",
+      "snippet": "Reversi AI with Transformer architecture. Contribute to rsu-Suba/ReversiGPT development by creating an account on GitHub."
+    }
+  ]
+}

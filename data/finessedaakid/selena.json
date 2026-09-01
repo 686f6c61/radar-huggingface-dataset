@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "finessedaakid/selena",
+  "slug": "finessedaakid-selena",
+  "author": "finessedaakid",
+  "url": "https://huggingface.co/finessedaakid/selena",
+  "created_at": "2026-09-01T17:57:17.000Z",
+  "updated_at": "2026-09-01T17:58:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42602184,
+  "storage_human": "43 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Selina — Private AI That Remembers You",
+      "url": "https://selina.ai/",
+      "snippet": "Selina is a private AI with deep long-term memory that remembers you across every conversation, file, and project — with zero-knowledge encrypted file sharing, encrypted file storage, and one continuous mind across the best AI models."
+    },
+    {
+      "title": "Selena - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/85bf9fea3cd2b5c3e7effa9aa9d9e968",
+      "snippet": "Meet Selena model on SeaArt. Experience free Stable Diffusion models that get you the best AI-generated images using text prompts."
+    },
+    {
+      "title": "Selina - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1707405193451726125",
+      "snippet": "Generate stunning anime art with the &#x27;Selina&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Selina AI — Multi Model, One Conversation",
+      "url": "https://selina.ai/docs",
+      "snippet": "Selina AI — Use GPT, Claude, and Grok in one app. Save 40-90% with intelligent optimization."
+    },
+    {
+      "title": "Webtoon Character) Selina - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1760364110367736173",
+      "snippet": "Generate stunning character anime art with the &#x27;Webtoon Character) Selina&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

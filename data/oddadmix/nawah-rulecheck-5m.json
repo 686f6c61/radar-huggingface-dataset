@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "oddadmix/Nawah-RuleCheck-5M",
+  "slug": "oddadmix-nawah-rulecheck-5m",
+  "author": "oddadmix",
+  "url": "https://huggingface.co/oddadmix/Nawah-RuleCheck-5M",
+  "created_at": "2026-09-01T11:30:01.000Z",
+  "updated_at": "2026-09-01T11:34:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-classification",
+    "arabic",
+    "rule-checking",
+    "compliance",
+    "moderation",
+    "tiny-model",
+    "on-device",
+    "ar",
+    "dataset:oddadmix/arabic-rule-checking",
+    "base_model:oddadmix/Emhotob-5M-v2",
+    "base_model:finetune:oddadmix/Emhotob-5M-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5080704,
+  "parameters_human": "5.1M",
+  "storage_bytes": 20333201,
+  "storage_human": "20 MB",
+  "base_model": "oddadmix/Emhotob-5M-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oddadmix (Ahmed Wasfy) - Hugging Face",
+      "url": "https://huggingface.co/oddadmix",
+      "snippet": "From-scratch Arabic LMs (0.5M-50M) finetuned into bidirectional translators across 5 language pairs. Identical recipe at every rung; v1 and v2 bases."
+    },
+    {
+      "title": "oddadmix/50M-8192-Nawah-gemma · Hugging Face",
+      "url": "https://huggingface.co/oddadmix/50M-8192-Nawah-gemma",
+      "snippet": "A ~51.8M-parameter Gemma-3 architecture Arabic language model pretrained from scratch on 20 billion Arabic tokens with an 8192-token context window. This is the long-context sibling of oddadmix/50M-2048-Emhotob: same corpus, same tokenizer, same parameter count, same token budget, same optimizer schedule."
+    },
+    {
+      "title": "Oddadmix (Ahmed Wasfy) · GitHub",
+      "url": "https://github.com/Oddadmix",
+      "snippet": "Oddadmix has 83 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Oddadmix (Ahmed Wasfy) / Repositories · GitHub",
+      "url": "https://github.com/Oddadmix?tab=repositories",
+      "snippet": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training."
+    },
+    {
+      "title": "Nawah Math Reasoning by oddadmix - LLM Explorer",
+      "url": "https://llm-explorer.com/model/oddadmix%2FNawah-Math-Reasoning,53HyVtsh5YFEpsZAZ5RwBq",
+      "snippet": "Nawah Math Reasoning is an open-source 50m LLM by oddadmix. VRAM 0.2GB, 2K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

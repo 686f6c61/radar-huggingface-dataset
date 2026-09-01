@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "stabilityai/stable-audio-open-1.0",
+  "slug": "stabilityai-stable-audio-open-1-0",
+  "author": "stabilityai",
+  "url": "https://huggingface.co/stabilityai/stable-audio-open-1.0",
+  "created_at": "2024-05-24T05:11:20.000Z",
+  "updated_at": "2025-06-19T21:53:23.000Z",
+  "license": "stable-audio-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "stable-audio-tools",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "stable-audio-tools",
+    "diffusers",
+    "safetensors",
+    "text-to-audio",
+    "en",
+    "arxiv:2407.14358",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1582,
+  "downloads_30d": 20748,
+  "trending_score": 7,
+  "parameters": 1213448210,
+  "parameters_human": "1.21B",
+  "storage_bytes": 15677100913,
+  "storage_human": "15.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stabilityai/stable-audio-open-1.0 · Hugging Face",
+      "url": "https://huggingface.co/stabilityai/stable-audio-open-1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Stable Audio Open — Stability AI",
+      "url": "https://stability.ai/research/stable-audio-open",
+      "snippet": "Here we describe the architecture and training process of a new open-weights text-to-audio model trained with Creative Commons data. Our evaluation shows that the model&#x27;s performance is competitive with the state-of-the-art across various metrics."
+    },
+    {
+      "title": "stabilityai/stable-audio-open-1.0 at main - Hugging Face",
+      "url": "https://huggingface.co/stabilityai/stable-audio-open-1.0/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Stable Audio Open — Stability AI",
+      "url": "https://stability.ai/news-updates/introducing-stable-audio-open",
+      "snippet": "Stable Audio Open is an open source model optimised for generating short audio samples, sound effects and production elements using text prompts."
+    },
+    {
+      "title": "Stable Audio Open 1.0 - Open Laboratory",
+      "url": "https://openlaboratory.com/models/stable-audio-open-1/",
+      "snippet": "Open-source text-to-audio synthesis model with 1.21 billion parameters, trained exclusively on Creative Commons data using latent diffusion architecture."
+    }
+  ]
+}

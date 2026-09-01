@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "agents2agents/MolmoAct2-BimanualYAM-Dynamic-Jetson-Thor",
+  "slug": "agents2agents-molmoact2-bimanualyam-dynamic-jetson-thor",
+  "author": "agents2agents",
+  "url": "https://huggingface.co/agents2agents/MolmoAct2-BimanualYAM-Dynamic-Jetson-Thor",
+  "created_at": "2026-09-01T15:01:51.000Z",
+  "updated_at": "2026-09-01T15:11:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "tensorrt",
+  "languages": [],
+  "tags": [
+    "tensorrt",
+    "robotics",
+    "vision-language-action",
+    "jetson",
+    "molmoact2",
+    "edge-inference",
+    "base_model:allenai/MolmoAct2-BimanualYAM",
+    "base_model:finetune:allenai/MolmoAct2-BimanualYAM",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11155060361,
+  "storage_human": "11.2 GB",
+  "base_model": "allenai/MolmoAct2-BimanualYAM",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - allenai/molmoact2: Official Repository for MolmoAct2",
+      "url": "https://github.com/allenai/molmoact2",
+      "snippet": "Official Repository for MolmoAct2. Contribute to allenai/molmoact2 development by creating an account on GitHub."
+    },
+    {
+      "title": "allenai/MolmoAct2-BimanualYAM · Hugging Face",
+      "url": "https://huggingface.co/allenai/MolmoAct2-BimanualYAM",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment",
+      "url": "https://arxiv.org/abs/2605.02881",
+      "snippet": "Vision-Language-Action (VLA) models aim to provide a single generalist controller for robots, but today&#x27;s systems fall short on the criteria that matter for real-world deployment. Frontier models are closed, open-weight alternatives are tied to expensive hardware, reasoning-augmented policies pay prohibitive latency for their grounding, and fine-tuned success rates remain below the threshold ..."
+    },
+    {
+      "title": "MolmoAct2 Action Reasoning Models for Real-World Deployment",
+      "url": "https://arxiv.org/html/2605.02881v1",
+      "snippet": "Figure 1: Overview of MolmoAct2. MolmoAct2 is a fully open action reasoning model for real-world deployment. From a suite of high-quality robot datasets that we collect, filter, and curate at scale across three platforms spanning the low-to-medium cost range (left), we train MolmoAct2 and its adaptive-depth reasoning variant MolmoAct2-Think, coupled to the VLM backbone through a novel action ..."
+    },
+    {
+      "title": "GitHub - allenai/molmoact: Official Repository for MolmoAct",
+      "url": "https://github.com/allenai/MolmoAct",
+      "snippet": "MolmoAct: Multimodal Open Language Model for Action Updates [2026/5/5] 🔥 We have released MolmoAct2, faster, stronger, and better in every aspect. Check it out. [2025/12/5] 🔥 Tips on zero-shot evaluation of allenai/MolmoAct-7B-D-0812 on Franka setup with MolmoAct mid-training at 5.4 Zero-shot evaluation."
+    }
+  ]
+}

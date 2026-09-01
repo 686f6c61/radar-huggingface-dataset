@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Amr-Hegazy/grt-medium-isoflop",
+  "slug": "amr-hegazy-grt-medium-isoflop",
+  "author": "Amr-Hegazy",
+  "url": "https://huggingface.co/Amr-Hegazy/grt-medium-isoflop",
+  "created_at": "2026-09-01T18:12:07.000Z",
+  "updated_at": "2026-09-01T18:13:20.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "recurrent-transformer",
+    "gated-recurrence",
+    "weight-sharing",
+    "parameter-efficient",
+    "nanoGPT",
+    "language-model",
+    "text-generation",
+    "en",
+    "dataset:common-pile/cccc_filtered",
+    "arxiv:2608.15062",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 359847936,
+  "parameters_human": "359.8M",
+  "storage_bytes": 2878837843,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Amr-Hegazy1/gated-recurrent-transformer: Code for \"Gated ...",
+      "url": "https://github.com/Amr-Hegazy1/gated-recurrent-transformer",
+      "snippet": "Under an isoFLOP constraint, a 3-layer GRT matches the accuracy of a 12-layer GPT-2 Small baseline at similar training and inference FLOPs; under an isoParam constraint, deeper recurrence reaches a 2.76 validation loss versus 2.84 for a non-recurrent counterpart at matched parameters and data."
+    },
+    {
+      "title": "Gated Recurrent Transformers: Expressive Depth through Recurrent Modulation",
+      "url": "https://arxiv.org/pdf/2608.15062v4",
+      "snippet": "Conversely, standard depth-sharing enforces uniform transformations that collapse representational diversity and degrade modeling qual-ity. We introduce the GATED RECURRENT TRANSFORMER (GRT), a recurrent depth transformer where fixed-depth prelude and coda blocks bracket a single shared core iterated R times."
+    },
+    {
+      "title": "Gated Recurrent Transformers: Expressive Depth through Recurrent Modulation",
+      "url": "https://arxiv.org/html/2608.15062v3",
+      "snippet": "A configuration such as 2+5 × $×$4+2 visits 2 + 5 4 + 2 = 24 $2+5⋅4+2=24$ block executions per forward pass while storing weights for only 2 + 5 + 2 = 9 $2+5+2=9$ blocks— 2.6 × $2.6×$ fewer unique blocks than the 24-layer GPT-2 medium baseline it is isoFLOP-matched to. Figure 2 illustrates this layout."
+    },
+    {
+      "title": "[PDF] Gated Recurrent Transformers: Expressive Depth through Recurrent ...",
+      "url": "https://www.semanticscholar.org/paper/Gated-Recurrent-Transformers%3A-Expressive-Depth-Hegazy-Alanwar/c03a778e0990fb4d29374f667023896b97a03cde",
+      "snippet": "This work introduces Gated Recurrent Transformer, a recurrent depth transformer where fixed-depth prelude and coda blocks bracket a single shared core iterated R times, and demonstrates that adaptive depth reuse is a principled strategy for trading parameters for quality. Scaling transformer language models creates an inherent tension between expressivity and memory efficiency. While unique ..."
+    },
+    {
+      "title": "Amr-Hegazy (Amr Hegazy) - Hugging Face",
+      "url": "https://huggingface.co/Amr-Hegazy",
+      "snippet": "Amr-Hegazy Follow HolyTreeCrowns&#x27;s profile picture 1 follower · 0 following Amr-Hegazy1"
+    }
+  ]
+}

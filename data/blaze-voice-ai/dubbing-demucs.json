@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "blaze-voice-ai/dubbing-demucs",
+  "slug": "blaze-voice-ai-dubbing-demucs",
+  "author": "blaze-voice-ai",
+  "url": "https://huggingface.co/blaze-voice-ai/dubbing-demucs",
+  "created_at": "2026-09-01T13:25:08.000Z",
+  "updated_at": "2026-09-01T13:25:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio-source-separation",
+    "demucs",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84141271,
+  "storage_human": "84 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "demucs: Audio-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/demucs-cjwbw",
+      "snippet": "demucs is a music source separation model that breaks mixed audio into isolated instrumental stems—drums, bass, vocals, and other accompaniment. Built by..."
+    },
+    {
+      "title": "DEMUCS - Music source separation",
+      "url": "https://demucs.danielfrg.com/",
+      "snippet": "Online service for music source separation"
+    },
+    {
+      "title": "Demucs - Open Laboratory",
+      "url": "https://openlaboratory.com/models/demucs/",
+      "snippet": "Demucs is a music source separation model based on a U-Net convolutional architecture, currently capable of separating drums, bass, and vocals from the rest of the accompaniment."
+    },
+    {
+      "title": "Demucs - a Hugging Face Space by aimuzik",
+      "url": "https://huggingface.co/spaces/aimuzik/demucs",
+      "snippet": "Upload an audio file to separate it into multiple stems (e.g., vocals, instruments). Choose a model, output format, shifts, and overlap for better quality. Download the separated audio stems."
+    },
+    {
+      "title": "Dubbing AI- AI Voice Changer For Gamers and Streamers",
+      "url": "https://dubbingai.io/",
+      "snippet": "Dubbing AI Offers realtime voice changer and soundboard. Our unique ghostface voice changer enhance your voice on Discord, Zoom, OBS, and more with seamless AI powered voice generator."
+    }
+  ]
+}

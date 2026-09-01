@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "putty77/p77-5",
+  "slug": "putty77-p77-5",
+  "author": "putty77",
+  "url": "https://huggingface.co/putty77/p77-5",
+  "created_at": "2026-05-18T16:34:45.000Z",
+  "updated_at": "2026-09-01T13:24:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51870974760,
+  "storage_human": "51.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "putty77/p77-5 · Hugging Face",
+      "url": "https://huggingface.co/putty77/p77-5",
+      "snippet": "putty77 / p77-5 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "putty77 (Jessen Pu) - Hugging Face",
+      "url": "https://huggingface.co/putty77/models",
+      "snippet": "User profile of Jessen Pu on Hugging Face"
+    },
+    {
+      "title": "P77 5 AI Tool Review, Features and Pricing | AI Cambodia",
+      "url": "https://www.aicambodia.com/ai/hf-putty77-p77-5",
+      "snippet": "Learn everything about P77 5. Read verified details, pricing tiers, and find out how this AI tool can help you choose with confidence today."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    }
+  ]
+}

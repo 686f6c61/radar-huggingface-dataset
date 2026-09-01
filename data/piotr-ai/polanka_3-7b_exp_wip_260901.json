@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "piotr-ai/polanka_3.7b_exp_wip_260901",
+  "slug": "piotr-ai-polanka_3-7b_exp_wip_260901",
+  "author": "piotr-ai",
+  "url": "https://huggingface.co/piotr-ai/polanka_3.7b_exp_wip_260901",
+  "created_at": "2026-09-01T14:19:37.000Z",
+  "updated_at": "2026-09-01T16:26:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pl",
+    "en",
+    "zh",
+    "cs",
+    "sk",
+    "uk",
+    "ru",
+    "it",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "lt"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "conversational",
+    "pl",
+    "en",
+    "zh",
+    "cs",
+    "sk",
+    "uk",
+    "ru",
+    "it",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "lt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3710649856,
+  "parameters_human": "3.71B",
+  "storage_bytes": 7428718469,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "piotr-ai/polanka_3.7b_exp_wip_260706 · Hugging Face",
+      "url": "https://huggingface.co/piotr-ai/polanka_3.7b_exp_wip_260706",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "piotr-ai/polanka-7b-v0.1 · Hugging Face",
+      "url": "https://huggingface.co/piotr-ai/polanka-7b-v0.1",
+      "snippet": "like 6 Text Generation Transformers Safetensors Polish English mistral conversational Inference Endpoints text-generation-inference 8-bit precision License: apache-2.0 Model card Files Community 1 Train Deploy"
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "piotr-ai (Piotr) - Hugging Face",
+      "url": "https://huggingface.co/piotr-ai/models",
+      "snippet": "piotr-ai/polanka_4b_v0.3_preview_260106_qwen3 Text Generation • 4B•Updated Jan 6• 3 • 1"
+    },
+    {
+      "title": "piotr-ai/polanka_3.6b_exp_WIP_251227_gguf · Hugging Face",
+      "url": "https://huggingface.co/piotr-ai/polanka_3.6b_exp_WIP_251227_gguf",
+      "snippet": "piotr-ai / polanka_3.6b_exp_WIP_251227_gguf like 0 Text Generation GGUF Polish conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

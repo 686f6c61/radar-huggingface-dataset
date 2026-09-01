@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "WuuuuJH/ChronusOmni-Purned-7.98b-recover",
+  "slug": "wuuuujh-chronusomni-purned-7-98b-recover",
+  "author": "WuuuuJH",
+  "url": "https://huggingface.co/WuuuuJH/ChronusOmni-Purned-7.98b-recover",
+  "created_at": "2026-08-03T08:46:21.000Z",
+  "updated_at": "2026-09-01T12:37:13.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "video-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "ChronusOmni",
+    "video-temporal-grounding",
+    "pruning",
+    "lora",
+    "grpo",
+    "multimodal",
+    "video-text-to-text",
+    "en",
+    "zh",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57346637982,
+  "storage_human": "57.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WuuuuJH/ChronusOmni-Purned-7.98b-recover · Hugging Face",
+      "url": "https://huggingface.co/WuuuuJH/ChronusOmni-Purned-7.98b-recover",
+      "snippet": "ChronusOmni 7.984B Pruned + SFT/GRPO Recovered Checkpoint This repository contains the portable model package for our pruned and recovered ChronusOmni checkpoint. The corresponding code, pruning scripts, SFT recovery scripts, GRPO training scripts, inference scripts, and evaluation utilities are maintained in the GitHub repository:"
+    },
+    {
+      "title": "WuuuuJH/ChronusOmni-Purned-7.98b-recover at main - Hugging Face",
+      "url": "https://huggingface.co/WuuuuJH/ChronusOmni-Purned-7.98b-recover/tree/main",
+      "snippet": "English Chinese ChronusOmni video-temporal-grounding pruning lora grpo multimodal License:other Model card FilesFiles and versions xet Community Copy to bucket new main ChronusOmni-Purned-7.98b-recover Ctrl+K Ctrl+K 2 contributors History:14 commits WuuuuJH Revert portable path docs to runtime layout 9cfda5e verified9 days ago audioUpload 3108 ..."
+    },
+    {
+      "title": "GitHub - Q-if/Multi-scale-Omni-Aggregation-Model",
+      "url": "https://github.com/Q-if/Multi-scale-Omni-Aggregation-Model",
+      "snippet": "This repository contains a structurally pruned and LoRA-recovered version of ChronusOmni, an omni-modal large language model with enhanced time-awareness for video-grounded temporal reasoning. We first apply native MLP-width pruning to reduce model size, then recover accuracy via lightweight LoRA SFT, and finally use temporal-IoU GRPO to further refine timestamp predictions, producing a ..."
+    },
+    {
+      "title": "Multi-scale-Omni-Aggregation-Model/README.md at main - GitHub",
+      "url": "https://github.com/Q-if/Multi-scale-Omni-Aggregation-Model/blob/main/README.md",
+      "snippet": "The output checkpoint uses the chronusomni-native-mlp-pruning-v2 format and stores model_state_dict + mlp_intermediate_widths, making it directly loadable by both the recovery and inference scripts."
+    },
+    {
+      "title": "[2512.09841] ChronusOmni: Improving Time Awareness of Omni Large ...",
+      "url": "https://arxiv.org/abs/2512.09841",
+      "snippet": "In this paper, we propose ChronusOmni, an omni large language model designed to enhance temporal awareness for both explicit and implicit audiovisual temporal grounding. First, we interleave text-based timestamp tokens with visual and audio representations at each time unit, enabling unified temporal modeling across modalities."
+    }
+  ]
+}

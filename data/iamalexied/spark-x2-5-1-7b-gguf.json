@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "iamalexied/Spark-X2.5-1.7B-GGUF",
+  "slug": "iamalexied-spark-x2-5-1-7b-gguf",
+  "author": "iamalexied",
+  "url": "https://huggingface.co/iamalexied/Spark-X2.5-1.7B-GGUF",
+  "created_at": "2026-09-01T19:16:07.000Z",
+  "updated_at": "2026-09-01T19:27:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:XHToken/Spark-X2.5-1.7B-GGUF",
+    "base_model:quantized:XHToken/Spark-X2.5-1.7B-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1707657216,
+  "parameters_human": "1.71B",
+  "storage_bytes": 1107457856,
+  "storage_human": "1.1 GB",
+  "base_model": "XHToken/Spark-X2.5-1.7B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spark-X2.5/README.md at main · XHToken/Spark-X2.5 · GitHub",
+      "url": "https://github.com/XHToken/Spark-X2.5/blob/main/README.md",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    },
+    {
+      "title": "GitHub - XHToken/Spark-X2.5: Spark-x2.5 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.5",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    },
+    {
+      "title": "iFLYTEK to Launch Spark X2.5 General Large Model",
+      "url": "https://news.aibase.com/news/30716",
+      "snippet": "According to the latest official announcement, iFlytek will officially open-source two edge-side general large models, Xinghuo X2.5-4B and Xinghuo X2.5-1.7B, on September 1st. Both models support a context window of up to 1 million tokens natively. They have achieved significant improvements in core dimensions such as intelligent agent interaction, mathematical computation, and basic general ..."
+    },
+    {
+      "title": "Spark X2.5 by iFLYTEK Developer — Models, Pricing & API",
+      "url": "https://www.llmreference.com/model-family/spark-x2.5",
+      "snippet": "Spark X2.5 AI models by iFLYTEK Developer with up to 1.05m context. Compare 2 variants by pricing, benchmarks, and API access."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

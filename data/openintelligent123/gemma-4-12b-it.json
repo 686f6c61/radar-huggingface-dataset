@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Openintelligent123/gemma-4-12B-it",
+  "slug": "openintelligent123-gemma-4-12b-it",
+  "author": "Openintelligent123",
+  "url": "https://huggingface.co/Openintelligent123/gemma-4-12B-it",
+  "created_at": "2026-09-01T17:10:19.000Z",
+  "updated_at": "2026-09-01T17:10:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "any-to-any",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-12B",
+    "base_model:finetune:google/gemma-4-12B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951719034,
+  "storage_human": "24.0 GB",
+  "base_model": "google/gemma-4-12B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing Gemma 4 12B - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/",
+      "snippet": "An overview of Gemma 4 12B, a model designed to bring high-performance multimodal intelligence directly to your laptop."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 12B: The Developer Guide - Google Developers Blog",
+      "url": "https://developers.googleblog.com/gemma-4-12b-the-developer-guide/",
+      "snippet": "Meet Gemma 4 12B: the first medium-sized, encoder-free multimodal model capable of natively ingesting audio and video. Ideal for local AI development with 16GB VRAM, Hugging Face integrations, and drop-in local API servers."
+    },
+    {
+      "title": "Gemma 4 12B IT - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/gemma-4-12b-it",
+      "snippet": "Deploy Google&#x27;s Gemma 4 12B Unified, an encoder-free omni model with native text, image, and audio understanding and a 256K context window."
+    },
+    {
+      "title": "Gemma 4 12B - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/gemma-4-12b/",
+      "snippet": "Gemma 4 is Google DeepMind&#x27;s open-weight model family built from Gemini 3 research, focused on high intelligence-per-parameter, agentic workflows, multimodal reasoning, multilingual use, coding, and efficient local deployment."
+    }
+  ]
+}

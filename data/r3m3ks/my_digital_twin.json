@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "r3m3ks/my_digital_twin",
+  "slug": "r3m3ks-my_digital_twin",
+  "author": "r3m3ks",
+  "url": "https://huggingface.co/r3m3ks/my_digital_twin",
+  "created_at": "2026-09-01T12:28:31.000Z",
+  "updated_at": "2026-09-01T12:55:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/llama-3-8b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ammonhaggerty/my-digital-twin: Documentation for a creative AI ...",
+      "url": "https://github.com/ammonhaggerty/my-digital-twin",
+      "snippet": "The goal of my digital twin is to provide a genuine representation of my professional expertise as a creative technologist and design executive, as well as insights into my personal life (hobbies, stories, family, hopes, dreams, etc.). In addition, this project is a commentary on the ethical challenges we face by sharing our lives with AI models, and the companies who build them. My digital ..."
+    },
+    {
+      "title": "Meet Your Digital Twin: This AI Model Can Predict Your Future Health ...",
+      "url": "https://www.weizmann-usa.org/news-media/news-releases/meet-your-digital-twin-this-ai-model-can-predict-your-future-health-and-help-you-change-it/",
+      "snippet": "This training approach helps create a generative AI model that can predict medical events and in the future is expected to construct an entire personalized \"health trajectory\" outlining a person&#x27;s future health status years in advance."
+    },
+    {
+      "title": "Building an AI Twin: A Comprehensive Guide with Coding Examples",
+      "url": "https://volito.digital/building-an-ai-twin-a-comprehensive-guide-with-coding-examples/",
+      "snippet": "An AI Twin —or digital twin powered by artificial intelligence—is a virtual replica of a human or a system that can autonomously make decisions, learn behaviors, and interact with the environment in meaningful ways."
+    },
+    {
+      "title": "My Digital Twin: A Personal Journey into the Future of AI",
+      "url": "https://medium.com/@tommyyau_24847/my-digital-twin-a-personal-journey-into-the-future-of-ai-5ee4849a712b",
+      "snippet": "A journey of self-discovery, exploring AI&#x27;s impact on work & society through personal stories: ChatGPT, Workplace AI, Rise of Digital Twins and Ethics."
+    },
+    {
+      "title": "AI Twin Generator | Create Your Digital Twin Online Free | Lucidpic",
+      "url": "https://lucidpic.com/ai-twin-generator",
+      "snippet": "Create a digital version of yourself with AI. Upload photos, train your AI twin, and generate unlimited professional photos of \"you\" in any scenario. From $10."
+    }
+  ]
+}

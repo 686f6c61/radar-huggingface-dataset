@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tugrulyildirim/eridu",
+  "slug": "tugrulyildirim-eridu",
+  "author": "tugrulyildirim",
+  "url": "https://huggingface.co/tugrulyildirim/eridu",
+  "created_at": "2026-09-01T11:56:00.000Z",
+  "updated_at": "2026-09-01T11:56:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Graphlet-AI/eridu - Hugging Face",
+      "url": "https://huggingface.co/Graphlet-AI/eridu",
+      "snippet": "Graphlet-AI / eridu like 1 Follow Graphlet AI 1 Sentence Similarity sentence-transformers Safetensors English bert feature-extraction Generated from Trainer dataset_size:2130620 loss:ContrastiveLoss Eval Results text-embeddings-inference arxiv:1908.10084 License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model Graphlet-AI/eridu Model Details Model Description ..."
+    },
+    {
+      "title": "GitHub - Graphlet-AI/eridu: Deep fuzzy matching people and company ...",
+      "url": "https://github.com/Graphlet-AI/eridu",
+      "snippet": "This model is available on HuggingFace Hub as Graphlet-AI/eridu and can be used in any Python project using the Sentence Transformers library in five lines of code. The model is designed to be used for entity resolution tasks, such as matching people and company names across different languages and character sets when matching records."
+    },
+    {
+      "title": "README.md · Graphlet-AI/eridu at main - Hugging Face",
+      "url": "https://huggingface.co/Graphlet-AI/eridu/blob/main/README.md",
+      "snippet": "This model is available on HuggingFace Hub as Graphlet-AI/eridu and can be used in any Python project using the Sentence Transformers library in five lines of code. The model is designed to be used for entity resolution tasks, such as matching people and company names across different languages and character sets when matching records."
+    },
+    {
+      "title": "eridu/README.md at main · Graphlet-AI/eridu · GitHub",
+      "url": "https://github.com/Graphlet-AI/eridu/blob/main/README.md",
+      "snippet": "This model is available on HuggingFace Hub as Graphlet-AI/eridu and can be used in any Python project using the Sentence Transformers library in five lines of code. The model is designed to be used for entity resolution tasks, such as matching people and company names across different languages and character sets when matching records."
+    },
+    {
+      "title": "eridu · PyPI",
+      "url": "https://pypi.org/project/eridu/",
+      "snippet": "This model is available on HuggingFace Hub as Graphlet-AI/eridu and can be used in any Python project using the Sentence Transformers library in five lines of code."
+    }
+  ]
+}

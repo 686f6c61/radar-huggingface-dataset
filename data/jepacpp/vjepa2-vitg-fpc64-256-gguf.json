@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jepacpp/vjepa2-vitg-fpc64-256-GGUF",
+  "slug": "jepacpp-vjepa2-vitg-fpc64-256-gguf",
+  "author": "jepacpp",
+  "url": "https://huggingface.co/jepacpp/vjepa2-vitg-fpc64-256-GGUF",
+  "created_at": "2026-09-01T17:20:00.000Z",
+  "updated_at": "2026-09-01T17:21:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "jepa.cpp",
+  "languages": [],
+  "tags": [
+    "jepa.cpp",
+    "gguf",
+    "jepa",
+    "ggml",
+    "v-jepa",
+    "v-jepa-2",
+    "video",
+    "video-feature-extraction",
+    "arxiv:2506.09985",
+    "base_model:facebook/vjepa2-vitg-fpc64-256",
+    "base_model:quantized:facebook/vjepa2-vitg-fpc64-256",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1034555264,
+  "parameters_human": "1.03B",
+  "storage_bytes": 8501557792,
+  "storage_human": "8.5 GB",
+  "base_model": "facebook/vjepa2-vitg-fpc64-256",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/vjepa2-vitg-fpc64-256 · Hugging Face",
+      "url": "https://huggingface.co/facebook/vjepa2-vitg-fpc64-256",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jepacpp/vjepa2-vitl-fpc16-256-ssv2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/jepacpp/vjepa2-vitl-fpc16-256-ssv2-GGUF",
+      "snippet": "jepacpp / vjepa2-vitl-fpc16-256-ssv2-GGUF like 0 Follow jepa.cpp 1 Video Classification GGUF jepa.cpp jepa ggml v-jepa v-jepa-2 video action-recognition arxiv:2506.09985 License:mit Model card FilesFiles and versions xet Community Copy to bucket new V-JEPA 2 ViT-L/16 SSv2 classifier — GGUF for jepa.cpp Run it Files Measured Source, licence ..."
+    },
+    {
+      "title": "GitHub - facebookresearch/vjepa2: PyTorch code and models for VJEPA2 ...",
+      "url": "https://github.com/facebookresearch/vjepa2",
+      "snippet": "See vjepa2_demo.ipynb (Colab Link) or vjepa2_demo.py for an example of how to load both the HuggingFace and PyTorch V-JEPA 2 models and run inference on a sample video to get a sample classification result."
+    },
+    {
+      "title": "vjepa2-vitg-fpc64-256: Video-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/vjepa2-vitg-fpc64-256-facebook",
+      "snippet": "Overview vjepa2-vitg-fpc64-256 is a frontier video understanding model developed by facebook at FAIR (Meta). It extends the pretraining objectives of the original V-JEPA, achieving state-of-the-art video understanding capabilities by leveraging data and model sizes at scale. The model uses a Vision Transformer architecture (ViT-G variant) and processes videos with 64 frames per clip (FPC) at ..."
+    },
+    {
+      "title": "vjepa2-vitg-fpc64-256 by facebook | Mixpeek Model Hub",
+      "url": "https://mixpeek.com/model/facebook/vjepa2-vitg-fpc64-256",
+      "snippet": "Build a pipeline with vjepa2-vitg-fpc64-256 Add this model to a processing pipeline alongside other extractors. Combine with retrieval stages for end-to-end search. Run on your data, free"
+    }
+  ]
+}

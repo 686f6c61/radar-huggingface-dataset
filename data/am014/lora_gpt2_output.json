@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AM014/lora_gpt2_output",
+  "slug": "am014-lora_gpt2_output",
+  "author": "AM014",
+  "url": "https://huggingface.co/AM014/lora_gpt2_output",
+  "created_at": "2026-09-01T11:29:37.000Z",
+  "updated_at": "2026-09-01T11:29:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1182680,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mayankchugh-learning/gpt2-lora-ai-demo · Hugging Face",
+      "url": "https://huggingface.co/mayankchugh-learning/gpt2-lora-ai-demo",
+      "snippet": "mayankchugh-learning / gpt2-lora-ai-demo like 0 Text Generation PEFT Safetensors English lora demo License:mit Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "Parameter-efficient fine-tuning of GPT-2 with LoRA - Keras",
+      "url": "https://keras.io/examples/nlp/parameter_efficient_finetuning_of_gpt2_with_lora/",
+      "snippet": "In this example, we will explain LoRA in technical terms, show how the technical explanation translates to code, hack KerasHub&#x27;s GPT-2 model and fine-tune it on the next token prediction task using LoRA. We will compare LoRA GPT-2 with a fully fine-tuned GPT-2 in terms of the quality of the generated text, training time and GPU memory usage."
+    },
+    {
+      "title": "am014 - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/cr1khjle878c73eu0pcg",
+      "snippet": "Meet am014 model on SeaArt. Experience free Stable Diffusion models that get you the best AI-generated images using text prompts."
+    },
+    {
+      "title": "parameter_efficient_finetuning_of_gpt2_with_lora - Colab",
+      "url": "https://colab.research.google.com/github/keras-team/keras-io/blob/master/examples/nlp/ipynb/parameter_efficient_finetuning_of_gpt2_with_lora.ipynb",
+      "snippet": "The LoRA equation is: output = W0x + b0 + BAx, where A and B are the rank-decomposition matrices. LoRA is based on the idea that updates to the weights of the pre-trained language model have a low \"intrinsic rank\" since pre-trained language models are over-parametrized."
+    },
+    {
+      "title": "palsp/gpt2-lora · Hugging Face",
+      "url": "https://huggingface.co/palsp/gpt2-lora",
+      "snippet": "gpt2-lora This model is a fine-tuned version of gpt2 on an unknown dataset. It achieves the following results on the evaluation set: Loss: 2.2492 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used during training ..."
+    }
+  ]
+}

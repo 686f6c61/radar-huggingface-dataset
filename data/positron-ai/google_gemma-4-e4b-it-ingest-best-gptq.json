@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "positron-ai/google_gemma-4-E4B-it-ingest-best-gptq",
+  "slug": "positron-ai-google_gemma-4-e4b-it-ingest-best-gptq",
+  "author": "positron-ai",
+  "url": "https://huggingface.co/positron-ai/google_gemma-4-E4B-it-ingest-best-gptq",
+  "created_at": "2026-09-01T19:00:38.000Z",
+  "updated_at": "2026-09-01T19:01:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "positron-ai",
+    "quantized",
+    "gptq",
+    "text-generation",
+    "conversational",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:quantized:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7941101386,
+  "parameters_human": "7.94B",
+  "storage_bytes": 10155364222,
+  "storage_human": "10.2 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-E4B-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E4B-it",
+      "snippet": "Gemma 4 models were developed in partnership with internal safety and responsible AI teams. A range of automated as well as human evaluations were conducted to help improve model safety."
+    },
+    {
+      "title": "google/gemma-4-E4B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E4B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 E4B — The Daily Driver for Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e4b",
+      "snippet": "Gemma 4 E4B is Google&#x27;s 4.4B parameter model optimized for local deployment. Runs on 8GB VRAM with multimodal input, Thinking Mode, and tool use. The best everyday Gemma 4 model."
+    },
+    {
+      "title": "Gemma 4: Our most capable open models to date - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/",
+      "snippet": "Open model performance vs size on Arena.ai &#x27;s chat arena as of 4/1. Built from the same world-class research and technology as Gemini 3, Gemma 4 is the most capable model family you can run on your hardware. They complement our Gemini models, giving developers the industry&#x27;s most powerful combination of both open and proprietary tools."
+    }
+  ]
+}

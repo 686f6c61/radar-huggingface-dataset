@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "lyonsno/moge-webgpu",
+  "slug": "lyonsno-moge-webgpu",
+  "author": "lyonsno",
+  "url": "https://huggingface.co/lyonsno/moge-webgpu",
+  "created_at": "2026-09-01T12:22:56.000Z",
+  "updated_at": "2026-09-01T12:24:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "webgpu",
+    "depth-estimation",
+    "surface-normals",
+    "monocular-depth",
+    "arxiv:2507.02546",
+    "base_model:Ruicheng/moge-2-vitl-normal",
+    "base_model:finetune:Ruicheng/moge-2-vitl-normal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 661853200,
+  "storage_human": "662 MB",
+  "base_model": "Ruicheng/moge-2-vitl-normal",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - lyonsno/moge-webgpu: Single-image depth and surface normal ...",
+      "url": "https://github.com/lyonsno/moge-webgpu",
+      "snippet": "MoGe-WebGPU Single-image depth and surface normal estimation running entirely in the browser via WebGPU compute shaders."
+    },
+    {
+      "title": "GitHub - lyonsno/lyonsno: GPU and ML systems for Apple Silicon and the ...",
+      "url": "https://github.com/lyonsno/lyonsno",
+      "snippet": "Browser-native GPU inference @kaminos/webgpu-inference-kit is a composable WebGPU runtime for tensors, kernels, staged programs, route adapters, and cooperative scheduling. moge-webgpu runs MoGe-2 depth and surface-normal estimation in browser-native compute shaders. sharp-webgpu turns a single image into 3D Gaussian splats in the browser."
+    },
+    {
+      "title": "Running models on WebGPU · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers.js/guides/webgpu",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ML in the browser with WebGPU: real-time inference | Joan León",
+      "url": "https://joanleon.dev/en/webgpu-ml-browser/",
+      "snippet": "How to use WebGPU as the TensorFlow.js backend to run ML models in the browser with real performance. Benchmarks and practical use cases."
+    },
+    {
+      "title": "WebGPU Runs 24B Parameter Model Locally - LinkedIn",
+      "url": "https://www.linkedin.com/posts/xenova_webgpu-is-insane-heres-a-24b-parameter-activity-7442674990631735298-aP8T",
+      "snippet": "WebGPU is INSANE! 🤯 Here&#x27;s a 24B parameter model running locally in a web browser, at a blazing ~50 tokens/second on my M4 Max. ⚡️ It&#x27;s the largest model we&#x27;ve ever run with Transformers.js ..."
+    }
+  ]
+}

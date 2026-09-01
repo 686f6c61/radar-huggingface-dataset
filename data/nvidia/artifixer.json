@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nvidia/ArtiFixer",
+  "slug": "nvidia-artifixer",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/ArtiFixer",
+  "created_at": "2026-06-04T06:03:25.000Z",
+  "updated_at": "2026-09-01T18:29:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "artifixer",
+  "languages": [],
+  "tags": [
+    "artifixer",
+    "region:us"
+  ],
+  "likes": 54,
+  "downloads_30d": 178,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149167217610,
+  "storage_human": "149.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArtiFixer: Enhancing and Extending 3D Reconstruction",
+      "url": "https://research.nvidia.com/labs/sil/projects/artifixer/",
+      "snippet": "ArtiFixer retains a strong generative ability thanks to opacity mixing and training dropout, and is able to generate videos from text prompts alone, similar to its base model. Prompt: A bronze statue of two children standing back to back on a stone pedestal inside a modern exhibition hall."
+    },
+    {
+      "title": "nvidia/ArtiFixer · Hugging Face",
+      "url": "https://huggingface.co/nvidia/ArtiFixer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - nv-tlabs/ArtiFixer",
+      "url": "https://github.com/nv-tlabs/ArtiFixer",
+      "snippet": "Contribute to nv-tlabs/ArtiFixer development by creating an account on GitHub."
+    },
+    {
+      "title": "nvidia/ArtiFixer at main - Hugging Face",
+      "url": "https://huggingface.co/nvidia/ArtiFixer/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nvidia/ArtiFixer model by nvidia | Metatext",
+      "url": "https://metatext.ai/models/nvidia-artifixer",
+      "snippet": "Nvidia/ArtiFixer is a machine learning model from nvidia released in 2026. It is available through the artifixer library, and has 118 downloads and 32 likes."
+    }
+  ]
+}

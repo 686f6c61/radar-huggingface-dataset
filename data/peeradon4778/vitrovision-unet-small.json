@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Peeradon4778/vitrovision-unet-small",
+  "slug": "peeradon4778-vitrovision-unet-small",
+  "author": "Peeradon4778",
+  "url": "https://huggingface.co/Peeradon4778/vitrovision-unet-small",
+  "created_at": "2026-09-01T15:20:37.000Z",
+  "updated_at": "2026-09-01T15:21:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "pytorch",
+    "plant-segmentation",
+    "u-net",
+    "tissue-culture",
+    "computer-vision",
+    "th",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14509915,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Peeradon4778 (Peeradon Duangthong) - Hugging Face",
+      "url": "https://huggingface.co/Peeradon4778/models",
+      "snippet": "Peeradon4778&#x27;s models1 Sort: Recently updated Peeradon4778/vitrovision-unet-small Updated 20 minutes ago"
+    },
+    {
+      "title": "Peeradon4778 (Peeradon Duangthong) - Hugging Face",
+      "url": "https://huggingface.co/Peeradon4778",
+      "snippet": "Peeradon4778 (Peeradon Duangthong) - Hugging Face ... SAM 3"
+    },
+    {
+      "title": "GitHub - peeradon4778/VitroVision",
+      "url": "https://github.com/peeradon4778/VitroVision",
+      "snippet": "VitroVision Computer-vision phenotyping ของพืชเพาะเลี้ยงเนื้อเยื่อในขวดแก้ว (in vitro) v2 — clean start (2026-07-01) · เริ่มโครงสร้างใหม่ทั้งหมด ไม่ต่อยอดโค้ด v1"
+    },
+    {
+      "title": "GitHub - peeradon4778/VitroVision",
+      "url": "https://github.com/peeradon4778/VitroVision/tree/master",
+      "snippet": "Contribute to peeradon4778/VitroVision development by creating an account on GitHub."
+    },
+    {
+      "title": "U-Net - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/U-Net",
+      "snippet": "U-Net is also being explored for language models. [7] Tokenization is not a separate step, allowing the model to more easily understand spelling and concurrently vectorizing [disambiguation needed] / tokenizing higher level concepts."
+    }
+  ]
+}

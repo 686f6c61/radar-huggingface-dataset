@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "id": "asarymsakova/bert-base-gl-ner",
+  "slug": "asarymsakova-bert-base-gl-ner",
+  "author": "asarymsakova",
+  "url": "https://huggingface.co/asarymsakova/bert-base-gl-ner",
+  "created_at": "2026-09-01T12:19:39.000Z",
+  "updated_at": "2026-09-01T12:29:17.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "gl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "named-entity-recognition",
+    "ner",
+    "galician",
+    "generated_from_trainer",
+    "gl",
+    "base_model:marcosgg/bert-base-gl-cased",
+    "base_model:finetune:marcosgg/bert-base-gl-cased",
+    "license:agpl-3.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 177269769,
+  "parameters_human": "177.3M",
+  "storage_bytes": 709107868,
+  "storage_human": "709 MB",
+  "base_model": "marcosgg/bert-base-gl-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Named Entity Recognition",
+      "dataset": null,
+      "metric": "F1 (SLI NERC dev)",
+      "value": 0.9046
+    },
+    {
+      "task": "Named Entity Recognition",
+      "dataset": null,
+      "metric": "Precision (SLI NERC dev)",
+      "value": 0.9067
+    },
+    {
+      "task": "Named Entity Recognition",
+      "dataset": null,
+      "metric": "Recall (SLI NERC dev)",
+      "value": 0.9025
+    },
+    {
+      "task": "Named Entity Recognition",
+      "dataset": null,
+      "metric": "Accuracy (SLI NERC dev)",
+      "value": 0.9897
+    },
+    {
+      "task": "Named Entity Recognition",
+      "dataset": null,
+      "metric": "F1 (test)",
+      "value": 0.8881
+    },
+    {
+      "task": "Named Entity Recognition",
+      "dataset": null,
+      "metric": "Accuracy (test)",
+      "value": 0.9915
+    }
+  ],
+  "sources": [
+    {
+      "title": "dslim/bert-base-NER · Hugging Face",
+      "url": "https://huggingface.co/dslim/bert-base-NER",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=downloads&search=BERT",
+      "snippet": "Explore machine learning models. emrecan/bert-base-turkish-cased-mean-nli-stsb-tr"
+    },
+    {
+      "title": "GitHub - zlatent/bert-base-NER",
+      "url": "https://github.com/zlatent/bert-base-NER",
+      "snippet": "Specifically, this model is a bert-base-cased model that was fine-tuned on the English version of the standard CoNLL-2003 Named Entity Recognition dataset. If you&#x27;d like to use a larger BERT-large model fine-tuned on the same dataset, a bert-large-NER version is also available."
+    },
+    {
+      "title": "GitHub - google-research/bert: TensorFlow code and pre-trained models ...",
+      "url": "https://github.com/google-research/bert",
+      "snippet": "TensorFlow code and pre-trained models for BERT. Contribute to google-research/bert development by creating an account on GitHub."
+    },
+    {
+      "title": "How to Do Named Entity Recognition (NER) with a BERT Model",
+      "url": "https://machinelearningmastery.com/how-to-do-named-entity-recognition-ner-with-a-bert-model/",
+      "snippet": "Named Entity Recognition (NER) is one of the fundamental building blocks of natural language understanding. When humans read text, we naturally identify and categorize named entities based on context and world knowledge. For instance, in the sentence \"Microsoft&#x27;s CEO Satya Nadella spoke at a conference in Seattle,\" we effortlessly recognize the organizational, personal, and geographical […]"
+    }
+  ]
+}

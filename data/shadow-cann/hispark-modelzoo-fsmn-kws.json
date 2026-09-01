@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "shadow-cann/hispark-modelzoo-fsmn-kws",
+  "slug": "shadow-cann-hispark-modelzoo-fsmn-kws",
+  "author": "shadow-cann",
+  "url": "https://huggingface.co/shadow-cann/hispark-modelzoo-fsmn-kws",
+  "created_at": "2026-09-01T13:50:50.000Z",
+  "updated_at": "2026-09-01T13:51:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "onnx",
+    "hisilicon",
+    "hispark",
+    "npu",
+    "openharmony",
+    "modelzoo",
+    "pytorch",
+    "zh",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14234216,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shadow-cann/hispark-modelzoo-pfld · Hugging Face",
+      "url": "https://huggingface.co/shadow-cann/hispark-modelzoo-pfld",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "shadow-cann/hispark-modelzoo-crnn · Hugging Face",
+      "url": "https://huggingface.co/shadow-cann/hispark-modelzoo-crnn",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "shadow-cann/hispark-modelzoo-facenet at main - Hugging Face",
+      "url": "https://huggingface.co/shadow-cann/hispark-modelzoo-facenet/tree/main",
+      "snippet": "openharmony modelzoo Model card FilesFiles and versions xet Community Copy to bucket new main hispark-modelzoo-facenet 125 MB Ctrl+K Ctrl+K 1 contributor History:2 commits shadow-cann Add files using upload-large-folder tool f092121 verified4 months ago .gitattributes 1.59 kBAdd files using upload-large-folder tool4 months ago 1720278245769217 ..."
+    },
+    {
+      "title": "shadow-cann/hispark-modelzoo-siamese-network · Hugging Face",
+      "url": "https://huggingface.co/shadow-cann/hispark-modelzoo-siamese-network",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "shadow-cann/hispark-modelzoo-efficientnetv2 · Hugging Face",
+      "url": "https://huggingface.co/shadow-cann/hispark-modelzoo-efficientnetv2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

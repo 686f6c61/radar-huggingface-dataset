@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-GGUF_2",
+  "slug": "elio2151-llama-3-1-8b-instruct-technicalagentfinetuned-gguf_2",
+  "author": "Elio2151",
+  "url": "https://huggingface.co/Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-GGUF_2",
+  "created_at": "2026-09-01T14:25:14.000Z",
+  "updated_at": "2026-09-01T14:26:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4920739008,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elio2151 (Ferrara) - Hugging Face",
+      "url": "https://huggingface.co/Elio2151",
+      "snippet": "models1 Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-GGUF 8B•Updated 1 day ago"
+    },
+    {
+      "title": "Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-GGUF",
+      "url": "https://huggingface.co/Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama-3.1-8B-Instruct-TechnicalAgentFineTuned - friendli.ai",
+      "url": "https://friendli.ai/models/Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned",
+      "snippet": "Run Llama-3.1-8B-Instruct-TechnicalAgentFineTuned with FriendliAI inference. This llama model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://developer.meta.com/ai/models/llama-3/",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "Llama_3_1_8B_Instruct.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/NeuralFalconYT/Meta-Llama-3.1-Colab/blob/main/Llama_3_1_8B_Instruct.ipynb",
+      "snippet": "Step 1: visit Llama-3.1-8B-Instruct Page Step 2: Wait a few minutes, you will receive access from Meta. Step 3: Access Hugging Face Token Step 4: Copy paste Hugging Face Token in Google Colab"
+    }
+  ]
+}

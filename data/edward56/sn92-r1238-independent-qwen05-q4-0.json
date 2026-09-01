@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "edward56/sn92-r1238-independent-qwen05-q4-0",
+  "slug": "edward56-sn92-r1238-independent-qwen05-q4-0",
+  "author": "edward56",
+  "url": "https://huggingface.co/edward56/sn92-r1238-independent-qwen05-q4-0",
+  "created_at": "2026-09-01T19:08:18.000Z",
+  "updated_at": "2026-09-01T19:08:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 428738588,
+  "storage_human": "429 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "edward56/sn92-front-balanced · Hugging Face",
+      "url": "https://huggingface.co/edward56/sn92-front-balanced",
+      "snippet": "edward56 / sn92-front-balanced like 0 GGUF conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "edward56 (edward baylor) - Hugging Face",
+      "url": "https://huggingface.co/edward56/models",
+      "snippet": "edward56&#x27;s models3 Sort: Recently updated edward56/pi05-sn80-CqAkpFWmxR1X Updated about 9 hours ago"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Coder: Qwen3-Coder is the code version of Qwen3 ...",
+      "url": "https://github.com/QwenLM/Qwen3-Coder",
+      "snippet": "Qwen3-Coder is the code version of Qwen3, the large language model series developed by Qwen team. - QwenLM/Qwen3-Coder"
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    }
+  ]
+}

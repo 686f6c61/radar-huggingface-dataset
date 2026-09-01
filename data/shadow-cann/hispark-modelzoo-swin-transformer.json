@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "shadow-cann/hispark-modelzoo-swin-transformer",
+  "slug": "shadow-cann-hispark-modelzoo-swin-transformer",
+  "author": "shadow-cann",
+  "url": "https://huggingface.co/shadow-cann/hispark-modelzoo-swin-transformer",
+  "created_at": "2026-03-27T15:55:48.000Z",
+  "updated_at": "2026-09-01T13:15:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "onnx",
+    "hisilicon",
+    "hispark",
+    "npu",
+    "openharmony",
+    "modelzoo",
+    "pytorch",
+    "zh",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 407087543,
+  "storage_human": "407 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shadow-cann/hispark-modelzoo-swin-transformer · Hugging Face",
+      "url": "https://huggingface.co/shadow-cann/hispark-modelzoo-swin-transformer",
+      "snippet": "Swin-Transformer Swin-Transformer是针对于图片处理设计的基于Transformer架构的神经网络。 该网络针对原始Transformer迁移到图片端后计算量过大，复用困难的问题，提出了新的swin-block以代替原有的attention架构。"
+    },
+    {
+      "title": "shadow-cann/hispark-modelzoo-swin-transformer at main",
+      "url": "https://huggingface.co/shadow-cann/hispark-modelzoo-swin-transformer/tree/main",
+      "snippet": "hispark npu openharmony modelzoo Model card FilesFiles and versions xet Community main hispark-modelzoo-swin-transformer 438 MB Ctrl+K Ctrl+K 1 contributor History:2 commits shadow-cann Add files using upload-large-folder tool 3209708 verified10 days ago .gitattributes 1.68 kBAdd files using upload-large-folder tool10 days ago 1701485580845059 ..."
+    },
+    {
+      "title": "samples/built-in/classification/Swin-Transformer/Swin-Transformer.json ...",
+      "url": "https://gitee.com/HiSpark/modelzoo/blob/master/samples/built-in/classification/Swin-Transformer/Swin-Transformer.json",
+      "snippet": "HiSpark 社区的开源 AI 模型能力集，涵盖计算机视觉、自然语言处理、推荐、多模态、大语言模型和具身模型等类别 ..."
+    },
+    {
+      "title": "modelzoo/samples/built-in/classification/Swin-Transformer/swin ... - GitHub",
+      "url": "https://github.com/sanchuanhehe/modelzoo/blob/master/samples/built-in/classification/Swin-Transformer/swin.patch",
+      "snippet": "Mirror of HiSpark ModelZoo from GitCode: AI model adaptation and inference samples for HiSilicon platforms - sanchuanhehe/modelzoo"
+    },
+    {
+      "title": "ModelZoo/Swin-Transformer at master · andestech/ModelZoo",
+      "url": "https://github.com/andestech/ModelZoo/tree/master/Swin-Transformer",
+      "snippet": "Model infomation This folder provides the code needed to reproduce the Swin-Transformer image classification model."
+    }
+  ]
+}

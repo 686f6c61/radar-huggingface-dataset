@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ads2009/turkish-ai-text-detector-distilberturk-v5",
+  "slug": "ads2009-turkish-ai-text-detector-distilberturk-v5",
+  "author": "ads2009",
+  "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-distilberturk-v5",
+  "created_at": "2026-09-01T12:44:10.000Z",
+  "updated_at": "2026-09-01T12:44:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 68090114,
+  "parameters_human": "68.1M",
+  "storage_bytes": 272372984,
+  "storage_human": "272 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ads2009/turkish-ai-text-detector-berturk · Hugging Face",
+      "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-berturk",
+      "snippet": "Instructions to use ads2009/turkish-ai-text-detector-berturk with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ads2009/turkish-ai-text-detector-berturk with Transformers:"
+    },
+    {
+      "title": "ads2009/turkish-ai-text-detector-distilberturk-v3 · Hugging Face",
+      "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-distilberturk-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SaKinLord/turkish-ai-detector - GitHub",
+      "url": "https://github.com/SaKinLord/turkish-ai-detector",
+      "snippet": "Turkish AI Detector Turkish AI text detector runtime using language-model curvature signals and a document-level meta-classifier."
+    },
+    {
+      "title": "Detect AI in Turkish text — Turkish AI Detector",
+      "url": "https://ai-checker.co/in/turkish",
+      "snippet": "tr-TR Detect AI in Turkish text. AI Checker is calibrated for Turkish with separate model weights for Turkish -specific patterns. Sentence-level breakdown, free. This article is written in English and explains AI detection for Turkish text. The detector itself processes Turkish submissions natively."
+    },
+    {
+      "title": "GitHub - stefan-it/turkish-bert: Turkish BERT/DistilBERT, ELECTRA ...",
+      "url": "https://github.com/stefan-it/turkish-bert",
+      "snippet": "We present community-driven BERT, DistilBERT, ELECTRA, ConvBERT and T5 models for Turkish 🎉 Some datasets used for pretraining and evaluation are contributed from the awesome Turkish NLP community, as well as the decision for the BERT model name: BERTurk. Logo is provided by Merve Noyan."
+    }
+  ]
+}

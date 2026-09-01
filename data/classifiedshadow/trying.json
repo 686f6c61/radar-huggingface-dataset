@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "classifiedshadow/Trying",
+  "slug": "classifiedshadow-trying",
+  "author": "classifiedshadow",
+  "url": "https://huggingface.co/classifiedshadow/Trying",
+  "created_at": "2026-09-01T13:12:25.000Z",
+  "updated_at": "2026-09-01T13:20:30.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183348756,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-3B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "classifiedshadow/model · Hugging Face",
+      "url": "https://huggingface.co/classifiedshadow/model",
+      "snippet": "classifiedshadow / model like 0 Transformers GGUF English llama text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model Uploaded model"
+    },
+    {
+      "title": "Z.ai: What to Know About the Chinese Company Behind Ox Alpha - Business ...",
+      "url": "https://www.businessinsider.com/what-is-ox-alpha-ai-model-openroute-opencode-z-ai-2026-8?op=1",
+      "snippet": "Z.ai revealed that mystery AI model Ox Alpha was GLM-5.3-Flash, which it had anonymously tested on OpenRouter and OpenCode."
+    },
+    {
+      "title": "Top 10 AI Models in 2026: Ranked by Benchmarks (June Update)",
+      "url": "https://techjournal.org/top-10-artificial-intelligence-models",
+      "snippet": "The 10 best AI models in June 2026 ranked by actual benchmarks. Claude Opus 4.8, GPT-5.5, Gemini 3.1 Pro, Grok 4.3, Llama 4, and DeepSeek V4 — compared on coding, writing, reasoning, and price."
+    },
+    {
+      "title": "AI Model Comparison & LLM Leaderboard 2026 — Benchmarks, Pricing & Rankings",
+      "url": "https://traictory.com/",
+      "snippet": "Compare 307 AI models with verified LLM benchmarks, API pricing, and rankings. Traictory tracks GPQA, SWE-Bench, MMLU and 590+ tests. Find the best model for coding, research, or automation — updated daily."
+    },
+    {
+      "title": "classifiedshadow (vedant) - Hugging Face",
+      "url": "https://huggingface.co/classifiedshadow",
+      "snippet": "User profile of vedant on Hugging Face"
+    }
+  ]
+}

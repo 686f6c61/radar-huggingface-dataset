@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aanandmodi/STATAI",
+  "slug": "aanandmodi-statai",
+  "author": "aanandmodi",
+  "url": "https://huggingface.co/aanandmodi/STATAI",
+  "created_at": "2026-09-01T17:41:55.000Z",
+  "updated_at": "2026-09-01T17:41:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "#buildinpublic #hackathon #teamapex #langgraph #ai # ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/aanandmodi_buildinpublic-hackathon-teamapex-activity-7453109865612292096-F6Kj",
+      "snippet": "2 National Podiums. 4 Hackathons. 5 Projects. 1 Research paper. All while still being a student. 🔥 Nah let me actually tell you what went down - 🏆 WON TWICE. NATIONAL STAGE. 🥉 CodeVersity ..."
+    },
+    {
+      "title": "StatAI - Your AI-Powered Sports Betting Companion",
+      "url": "https://www.statsports.ai/",
+      "snippet": "StatAI transforms your betting approach with PhD-level AI analysis. Turn emotional hunches into data-driven wins and bet smarter, not harder. Our GPT-4 powered AI provides sports analysis equivalent to a PhD statistician, giving you an unparalleled edge. We pull live odds from 19+ of the world&#x27;s top sportsbooks so you always get the best line."
+    },
+    {
+      "title": "GitHub - aanandmodi/aanandmodi",
+      "url": "https://github.com/aanandmodi/aanandmodi",
+      "snippet": "Hi, I&#x27;m Aanand 👋 Computer Engineering student focused on AI/ML, software systems, and building real-world products."
+    },
+    {
+      "title": "hack/README.md at main · aanandmodi/hack · GitHub",
+      "url": "https://github.com/aanandmodi/hack/blob/main/README.md",
+      "snippet": "StadiumIQ — AI-Powered Stadium Experience Platform Intelligent crowd flow analysis, queue management, and personalized navigation for 50,000+ capacity stadiums."
+    },
+    {
+      "title": "Ai2 Asta",
+      "url": "https://asta.allen.ai/",
+      "snippet": "A scholarly research assistant that combines literature understanding and data-driven discovery. Asta uses 108M+ abstracts and 12M+ full-text papers to find, summarize, and analyze scientific evidence. A project from Ai2."
+    }
+  ]
+}

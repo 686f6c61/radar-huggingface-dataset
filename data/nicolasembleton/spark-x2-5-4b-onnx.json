@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nicolasembleton/Spark-X2.5-4B-onnx",
+  "slug": "nicolasembleton-spark-x2-5-4b-onnx",
+  "author": "nicolasembleton",
+  "url": "https://huggingface.co/nicolasembleton/Spark-X2.5-4B-onnx",
+  "created_at": "2026-09-01T15:53:21.000Z",
+  "updated_at": "2026-09-01T16:20:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "webgpu",
+    "spark2_5",
+    "text-generation",
+    "conversational",
+    "base_model:XHToken/Spark-X2.5-4B",
+    "base_model:quantized:XHToken/Spark-X2.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8898001352,
+  "storage_human": "8.9 GB",
+  "base_model": "XHToken/Spark-X2.5-4B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - XHToken/Spark-X2.5: Spark-x2.5 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.5",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    },
+    {
+      "title": "Spark-X2.5-4B · Models",
+      "url": "https://www.modelscope.cn/models/XHToken/Spark-X2.5-4B",
+      "snippet": "Spark-X2.5 is a compact, general-purpose language model for conversation, writing, translation, reas"
+    },
+    {
+      "title": "Quantized Models for XHToken/Spark-X2.5-4B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:XHToken/Spark-X2.5-4B",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Local LLM releases · LLM Releases",
+      "url": "https://www.llm-releases.com/local-llms",
+      "snippet": "A 2.4B-parameter VLM combining a custom 400M native-resolution vision encoder, a 2B language model on the Command A+ architecture, and a projector; it preserves aspect ratio for images up to 1654x2339px (an A4 page at 200 dpi)."
+    }
+  ]
+}

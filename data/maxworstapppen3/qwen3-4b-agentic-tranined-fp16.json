@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Maxworstapppen3/Qwen3-4B-agentic-tranined-fp16",
+  "slug": "maxworstapppen3-qwen3-4b-agentic-tranined-fp16",
+  "author": "Maxworstapppen3",
+  "url": "https://huggingface.co/Maxworstapppen3/Qwen3-4B-agentic-tranined-fp16",
+  "created_at": "2026-09-01T14:13:56.000Z",
+  "updated_at": "2026-09-01T14:13:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3 4B Agentic AI Trained - a Hugging Face Space by Maxworstapppen3",
+      "url": "https://huggingface.co/spaces/Maxworstapppen3/Qwen3-4B-Agentic-AI-Trained",
+      "snippet": "Upload any picture and the app will automatically find and highlight objects within it. You only need to provide an image file, and the results are shown directly on the page with bounding boxes an..."
+    },
+    {
+      "title": "Qwen3 4B Agentic Trained - a Hugging Face Space by Maxworstapppen3",
+      "url": "https://huggingface.co/spaces/Maxworstapppen3/Qwen3-4B-Agentic-Trained",
+      "snippet": "Upload a picture and the app will automatically find and label objects within it. The detection runs directly in your browser and shows the results with bounding boxes and names over the image."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In this work, we introduce Qwen3, the latest series in our foundation model family, Qwen. Qwen3 is a collection of open-weight large language models (LLMs) that achieve state-of-the-art performance across a wide variety of tasks and domains."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Research Latest Advancements Qwen3.8-Max: A New Bar for Coding and Cowork Today, we are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model — the open weights will be released next week."
+    }
+  ]
+}

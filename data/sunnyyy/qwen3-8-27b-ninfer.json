@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "sunnyyy/Qwen3.8-27B-NInfer",
+  "slug": "sunnyyy-qwen3-8-27b-ninfer",
+  "author": "sunnyyy",
+  "url": "https://huggingface.co/sunnyyy/Qwen3.8-27B-NInfer",
+  "created_at": "2026-09-01T15:54:54.000Z",
+  "updated_at": "2026-09-01T15:54:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "qwen3.8",
+    "multimodal",
+    "conversational",
+    "cuda",
+    "rtx-5090",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18210531328,
+  "storage_human": "18.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "IFBench",
+      "metric": "Prompt-level strict (0-shot, rule)",
+      "value": 77.67
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "AIME 2025",
+      "metric": "Accuracy (0-shot, rule)",
+      "value": 96.67
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "AIME 2026",
+      "metric": "Accuracy (0-shot, rule)",
+      "value": 96.67
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GPQA-Diamond",
+      "metric": "Accuracy (0-shot, rule)",
+      "value": 87.37
+    },
+    {
+      "task": "Image Text to Text",
+      "dataset": "ERQA",
+      "metric": "Accuracy (0-shot, rule)",
+      "value": 66.25
+    },
+    {
+      "task": "Image Text to Text",
+      "dataset": "RealWorldQA",
+      "metric": "Accuracy (0-shot, rule)",
+      "value": 82.22
+    }
+  ],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    },
+    {
+      "title": "Qwen 3.8-27B Local Deployment and Fast Serving Guide - Geeky Gadgets",
+      "url": "https://www.geeky-gadgets.com/serve-qwen-3-8-27b-fast/",
+      "snippet": "Qwen 3.8-27B delivers high-speed local AI generation. Optimize your hardware setup using SG Lang with NVFP4 quantization to hit up to 200 tokens per second."
+    }
+  ]
+}

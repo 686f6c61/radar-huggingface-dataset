@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "vltruong01/IELTSWritingTask2-Qwen2.5-7B-QLoRA",
+  "slug": "vltruong01-ieltswritingtask2-qwen2-5-7b-qlora",
+  "author": "vltruong01",
+  "url": "https://huggingface.co/vltruong01/IELTSWritingTask2-Qwen2.5-7B-QLoRA",
+  "created_at": "2026-09-01T16:18:22.000Z",
+  "updated_at": "2026-09-01T16:37:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "lora",
+    "qlora",
+    "transformers",
+    "ielts",
+    "writing",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436162,
+  "storage_human": "334 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IELTS Writing Task 2 Model Answers: All 5 Essay Types",
+      "url": "https://ieltsbeacon.com/ielts-answers/writing/task-2/",
+      "snippet": "Hub for IELTS Writing Task 2 model answers covering all 5 question types: opinion, discussion, advantage/disadvantage, problem/solution, two-part."
+    },
+    {
+      "title": "40 IELTS Writing Task 2 Practice Questions with Sample Answers",
+      "url": "https://goarno.io/blog/ielts-writing-task2-essay-practice-questions-with-answers/",
+      "snippet": "40 IELTS Writing Task 2 essay prompts with full Band 7 sample answers. Covers Academic Writing topics including environment, education, technology, and society."
+    },
+    {
+      "title": "IELTS Writing Task 2 Free Practice & Samples | IELTSWriting.ai",
+      "url": "https://ieltswriting.ai/ielts-writing-task-2",
+      "snippet": "Master IELTS Writing Task 2: timing, band descriptors, six essay types, sample topics and proven strategies—everything you need to craft a Band 7+ essay."
+    },
+    {
+      "title": "IELTS Writing Task 2 Samples & Band 9 Model Essays Library",
+      "url": "https://ieltswriting.ai/blog/ielts-writing-task-2-samples-and-examples",
+      "snippet": "A complete library of Band 9 model essays for IELTS Writing Task 2. Find high-scoring samples with detailed feedback."
+    },
+    {
+      "title": "IELTS Academic Writing Task 2: 12 Band 9.0 Model Essays",
+      "url": "https://www.fullpracticetests.com/ielts/writing-task2-samples",
+      "snippet": "12 complete IELTS Academic Writing Task 2 model essays at Band 9.0 and Band 6.5 — Opinion, Discussion, Problem-Solution, Advantages-Disadvantages, Two-Part Question essay types — with full paragraph-by-paragraph annotations and examiner commentary."
+    }
+  ]
+}

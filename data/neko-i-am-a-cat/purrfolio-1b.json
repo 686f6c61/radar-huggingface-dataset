@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "neko-i-am-a-cat/purrfolio-1b",
+  "slug": "neko-i-am-a-cat-purrfolio-1b",
+  "author": "neko-i-am-a-cat",
+  "url": "https://huggingface.co/neko-i-am-a-cat/purrfolio-1b",
+  "created_at": "2026-09-01T17:17:51.000Z",
+  "updated_at": "2026-09-01T17:21:07.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "finance",
+    "financial-llm",
+    "gpt",
+    "text-generation",
+    "en",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Purrfolio — Own the Meta",
+      "url": "https://purrfolio.fun/",
+      "snippet": "One token. Every cat that matters. The strongest cats on Solana — collected, adopted, and delivered straight to your wallet."
+    },
+    {
+      "title": "NekoAI — Nostalgic soul, modern brain",
+      "url": "https://nekoai.dev/",
+      "snippet": "NEKOAI Nostalgic soul, modern brain. The 90s desktop pet is back — now it walks your screen, remembers your projects and chats with a real AI brain inside."
+    },
+    {
+      "title": "Neko - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1753008882267240725",
+      "snippet": "Generate stunning girl, neko, cat_girl, anime_style anime art with the &#x27;Neko&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "Neko AI Generator: Make Neko Character Free - anifun.ai",
+      "url": "https://anifun.ai/neko-ai-generator/",
+      "snippet": "Create cute anime neko characters with the Neko AI Generator. Make your own neko character free using text prompts — fast, fun, and easy."
+    }
+  ]
+}

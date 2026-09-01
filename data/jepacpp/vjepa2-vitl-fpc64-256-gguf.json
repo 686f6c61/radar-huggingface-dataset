@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jepacpp/vjepa2-vitl-fpc64-256-GGUF",
+  "slug": "jepacpp-vjepa2-vitl-fpc64-256-gguf",
+  "author": "jepacpp",
+  "url": "https://huggingface.co/jepacpp/vjepa2-vitl-fpc64-256-GGUF",
+  "created_at": "2026-09-01T11:22:37.000Z",
+  "updated_at": "2026-09-01T11:44:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "jepa.cpp",
+  "languages": [],
+  "tags": [
+    "jepa.cpp",
+    "gguf",
+    "jepa",
+    "ggml",
+    "v-jepa",
+    "v-jepa-2",
+    "video",
+    "video-feature-extraction",
+    "arxiv:2506.09985",
+    "base_model:facebook/vjepa2-vitl-fpc64-256",
+    "base_model:quantized:facebook/vjepa2-vitl-fpc64-256",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 325971328,
+  "parameters_human": "326.0M",
+  "storage_bytes": 2679611872,
+  "storage_human": "2.7 GB",
+  "base_model": "facebook/vjepa2-vitl-fpc64-256",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/vjepa2-vitl-fpc64-256 · Hugging Face",
+      "url": "https://huggingface.co/facebook/vjepa2-vitl-fpc64-256",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - facebookresearch/vjepa2: PyTorch code and models for VJEPA2 ...",
+      "url": "https://github.com/facebookresearch/vjepa2",
+      "snippet": "PyTorch code and models for VJEPA2 self-supervised learning from video. - facebookresearch/vjepa2"
+    },
+    {
+      "title": "facebook/vjepa2-vitl-fpc64-256 at main - Hugging Face",
+      "url": "https://huggingface.co/facebook/vjepa2-vitl-fpc64-256/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vjepa2-vitl-fpc64-256: Video-to-Video model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/vjepa2-vitl-fpc64-256-facebook",
+      "snippet": "Overview vjepa2-vitl-fpc64-256 is a video understanding model developed by facebook at FAIR/Meta that uses a Joint Embedding Predictive Architecture (JEPA) approach for self-supervised learning on video. The model processes 64 frames at a time and outputs embeddings that represent video content in a learned feature space, enabling applications like video classification, retrieval, and encoding ..."
+    },
+    {
+      "title": "Vjepa2 Vitl Fpc64 256 - model.aibase.com",
+      "url": "https://model.aibase.com/models/details/1932987389115109376",
+      "snippet": "A cutting - edge video understanding model developed by FAIR, Meta, extending the pretraining objectives of VJEPA. It achieves state - of - the - art video understanding capabilities by leveraging large - scale data and models."
+    }
+  ]
+}

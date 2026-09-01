@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "AEmotionStudio/moss-soundeffect-models",
+  "slug": "aemotionstudio-moss-soundeffect-models",
+  "author": "AEmotionStudio",
+  "url": "https://huggingface.co/AEmotionStudio/moss-soundeffect-models",
+  "created_at": "2026-09-01T17:22:18.000Z",
+  "updated_at": "2026-09-01T17:26:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-audio",
+    "sound-effects",
+    "foley",
+    "flow-matching",
+    "diffusion-transformer",
+    "dac-vae",
+    "english",
+    "chinese",
+    "moss",
+    "mirror",
+    "license:apache-2.0",
+    "diffusers:MossSoundEffectPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1416047744,
+  "parameters_human": "1.42B",
+  "storage_bytes": 8393506806,
+  "storage_human": "8.4 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MOSS-SoundEffect-V2.0 - Models",
+      "url": "https://www.modelscope.cn/models/openmoss/MOSS-SoundEffect-v2.0",
+      "snippet": "MOSS-SoundEffect v2.0 is a text-to-audio model with a Diffusion Transformer (DiT) backbone trained with the Flow Matching objective, paired with a DAC VAE and a Qwen3 text encoder. It generates high-fidelity environmental, urban, creature, and human-action sound effects from natural-language prompts, with controllable duration up to 30 seconds at 48 kHz. 1. Overview 1.1 TTS Family Positioning ..."
+    },
+    {
+      "title": "awesome-ai-voice/models/moss-soundeffect.md at main - GitHub",
+      "url": "https://github.com/wildminder/awesome-ai-voice/blob/main/models/moss-soundeffect.md",
+      "snippet": "MOSS-SoundEffect is the dedicated text-to-sound model in the OpenMOSS / MOSI.AI MOSS-TTS family. It turns natural-language captions into high-fidelity non-speech audio (ambience, urban scenes, creatures, human actions, and short music-like clips)."
+    },
+    {
+      "title": "modulsx/MOSS-SoundEffect-v2.0 · Hugging Face",
+      "url": "https://huggingface.co/modulsx/MOSS-SoundEffect-v2.0",
+      "snippet": "MOSS-SoundEffect v2.0 is a text-to-audio model with a Diffusion Transformer (DiT) backbone trained with the Flow Matching objective, paired with a DAC VAE and a Qwen3 text encoder. It generates high-fidelity environmental, urban, creature, and human-action sound effects from natural-language prompts, with controllable duration up to 30 seconds at 48 kHz."
+    },
+    {
+      "title": "MOSS-SoundEffect: Text-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/moss-soundeffect-openmoss-team",
+      "snippet": "Overview MOSS-SoundEffect is a text-to-audio model that generates environmental sound effects and ambient soundscapes from text descriptions. Built by OpenMOSS-Team, it is the specialized sound design layer of the MOSS-TTS Family, designed to complement speech synthesis with immersive contextual audio in production workflows. The model uses the MossTTSDelay architecture, a discrete token ..."
+    },
+    {
+      "title": "MOSS-SoundEffect — Modly extension | Process for AI 3D generation",
+      "url": "https://modly3d.app/extensions/moss-soundeffect",
+      "snippet": "MOSS-SoundEffect v2.0 itself, including the upstream runtime and model weights, belongs to OpenMOSS/OpenMOSS-Team. See NOTICE and the upstream model/runtime links before redistributing weights or using the model commercially. What this extension does Accepts a text prompt in English or Chinese. Runs the upstream MossSoundEffectPipeline."
+    }
+  ]
+}

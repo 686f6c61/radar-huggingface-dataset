@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Playtime-AI/Minimax_H3-Titty_Drop",
+  "slug": "playtime-ai-minimax_h3-titty_drop",
+  "author": "Playtime-AI",
+  "url": "https://huggingface.co/Playtime-AI/Minimax_H3-Titty_Drop",
+  "created_at": "2026-09-01T16:12:38.000Z",
+  "updated_at": "2026-09-01T16:14:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310191544,
+  "storage_human": "310 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "MiniMax H3 Open: Tutorials, Deployment & Workflows",
+      "url": "https://design.minimax.io/h3",
+      "snippet": "How To Use MiniMax H3 in ComfyUI: Best FREE AI Video Model of 2026! @MDMZ View on original site ↗ P"
+    },
+    {
+      "title": "How to Use MiniMax H3 for Free : Uncensored AI Video ... - Medium",
+      "url": "https://medium.com/data-science-in-your-pocket/how-to-use-minimax-h3-for-free-uncensored-ai-video-generation-no-gpu-required-2d522d65cd5e",
+      "snippet": "What makes H3 particularly notable in the AI video space is its open-weight release under the MiniMax Community License, a rarity for models of this caliber."
+    },
+    {
+      "title": "MiniMax H3 - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/minimax-h3",
+      "snippet": "MiniMax H3 is an omni-modal generative system from MiniMaxAI that produces video with native stereo audio from text, images, video, and audio inputs. It understands multimodal context as a single unified sequence rather than treating each input type separately, and predicts video and audio latents jointly in one forward pass so speech, sound ..."
+    }
+  ]
+}

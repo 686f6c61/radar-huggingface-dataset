@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "DS4AI-UPB/qwen25-ro-re-lora",
+  "slug": "ds4ai-upb-qwen25-ro-re-lora",
+  "author": "DS4AI-UPB",
+  "url": "https://huggingface.co/DS4AI-UPB/qwen25-ro-re-lora",
+  "created_at": "2026-09-01T18:33:24.000Z",
+  "updated_at": "2026-09-01T18:35:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ro",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "relation-extraction",
+    "romanian",
+    "cross-lingual",
+    "qlora",
+    "lora",
+    "text-generation",
+    "conversational",
+    "ro",
+    "en",
+    "base_model:Qwen/Qwen2.5-32B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-32B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1085290813,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen2.5-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "[2412.15115] Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2412.15115",
+      "snippet": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens ..."
+    },
+    {
+      "title": "Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2412.15115v1",
+      "snippet": "Qwen2.5 has demonstrated top-tier performance on a wide range of benchmarks eval-uating language understanding, reasoning, mathematics, coding, human preference alignment, etc. Specifically, the open-weight flagship Qwen2.5-72B-Instruct outperforms a number of open and proprietary models and demonstrates competitive performance to the state-of-the-art open-weight model, Llama-3-405B-Instruct ..."
+    },
+    {
+      "title": "DS4AI-UPB (Distributed Systems for Artificial Intelligence Laboratory)",
+      "url": "https://huggingface.co/DS4AI-UPB/datasets",
+      "snippet": "Org profile for Distributed Systems for Artificial Intelligence Laboratory on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "Note that if you use LoRA to finetune the base language model, e.g., Qwen-7B, instead of chat models, e.g., Qwen-7B-Chat, the script automatically switches the embedding and output layer as trainable parameters."
+    }
+  ]
+}

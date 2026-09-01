@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dianavdavidson/wav2vec2-xls-r-1b-mucs-62241-hinglish_mixed_scripts-1e-4-epochs-100-FT",
+  "slug": "dianavdavidson-wav2vec2-xls-r-1b-mucs-62241-hinglish_mixed_scripts-1e-4-epochs-100-ft",
+  "author": "dianavdavidson",
+  "url": "https://huggingface.co/dianavdavidson/wav2vec2-xls-r-1b-mucs-62241-hinglish_mixed_scripts-1e-4-epochs-100-FT",
+  "created_at": "2026-09-01T12:14:01.000Z",
+  "updated_at": "2026-09-01T17:17:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "base_model:facebook/wav2vec2-xls-r-1b",
+    "base_model:finetune:facebook/wav2vec2-xls-r-1b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 962637037,
+  "parameters_human": "962.6M",
+  "storage_bytes": 7701303984,
+  "storage_human": "7.7 GB",
+  "base_model": "facebook/wav2vec2-xls-r-1b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dianavdavidson/wav2vec2-xls-r-300m-mucs-62230-hinglish_mixed_scripts-1e ...",
+      "url": "https://huggingface.co/dianavdavidson/wav2vec2-xls-r-300m-mucs-62230-hinglish_mixed_scripts-1e-4-epochs-100-FT",
+      "snippet": "wav2vec2-xls-r-300m-mucs-62230-hinglish_mixed_scripts-1e-4-epochs-100-FT ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "dianavdavidson/wav2vec2-large-xlsr-53-mucs-61966-hinglish_mixed_scripts ...",
+      "url": "https://huggingface.co/dianavdavidson/wav2vec2-large-xlsr-53-mucs-61966-hinglish_mixed_scripts-alldata-1e-4-steps-12000-FT",
+      "snippet": "wav2vec2-large-xlsr-53-mucs-61966-hinglish_mixed_scripts-alldata-1e-4-steps-12000-FT This model is a fine-tuned version of facebook/wav2vec2-large-xlsr-53 on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "fairseq/examples/wav2vec/xlsr/README.md at main - GitHub",
+      "url": "https://github.com/facebookresearch/fairseq/blob/main/examples/wav2vec/xlsr/README.md",
+      "snippet": "XLS-R is a set of large-scale models for self-supervised cross-lingual speech representation learning based on wav2vec 2.0. It was pretrained on 128 languages and approximately 436K hours of unlabeled speech data. With finetuning, these models achieve state of the art performance in speech translation, speech recognition and language identification. We evaluate the model across multiple ..."
+    },
+    {
+      "title": "fairseq/examples/wav2vec at main - GitHub",
+      "url": "https://github.com/facebookresearch/fairseq/tree/main/examples/wav2vec",
+      "snippet": "Facebook AI Research Sequence-to-Sequence Toolkit written in Python. - fairseq/examples/wav2vec at main · facebookresearch/fairseq"
+    },
+    {
+      "title": "facebook/wav2vec2-xls-r-1b - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/14633",
+      "snippet": "XLS-R is Facebook AI&#x27;s large-scale multilingual pretrained model for speech (the \"XLM-R for Speech\"). It is pretrained on 436k hours of unlabeled speech, including VoxPopuli, MLS, CommonVoice, BABEL, and VoxLingua107. It uses the wav2vec 2.0 objective, in 128 languages. When using the model make sure that your speech input is sampled at 16kHz."
+    }
+  ]
+}

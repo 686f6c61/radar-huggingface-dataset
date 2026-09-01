@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "glennwuwu/seer",
+  "slug": "glennwuwu-seer",
+  "author": "glennwuwu",
+  "url": "https://huggingface.co/glennwuwu/seer",
+  "created_at": "2026-09-01T00:51:50.000Z",
+  "updated_at": "2026-09-01T11:58:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "seer",
+    "image-classification",
+    "ai-generated-image-detection",
+    "image-forensics",
+    "dinov3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14652913394,
+  "storage_human": "14.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "glennwuwu/seer · Discussions - Hugging Face",
+      "url": "https://huggingface.co/glennwuwu/seer/discussions",
+      "snippet": "glennwuwu / seer like 1 Image Classification PyTorch seer ai-generated-image-detection image-forensics dinov3 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Sort: Recently created"
+    },
+    {
+      "title": "glennwuwu (Glenn Wu) - Hugging Face",
+      "url": "https://huggingface.co/glennwuwu/datasets",
+      "snippet": "User profile of Glenn Wu on Hugging Face"
+    },
+    {
+      "title": "Seer/README.md at main · InternRobotics/Seer · GitHub",
+      "url": "https://github.com/InternRobotics/Seer/blob/main/README.md",
+      "snippet": "For users aiming to train Seer from scratch or fine-tune it, we provide comprehensive instructions for environment setup, downstream task data preparation, training, and deployment."
+    },
+    {
+      "title": "Seer.ai",
+      "url": "https://www.seer.ai/",
+      "snippet": "SeerAI builds high-performance infrastructure to connect, explore, and act on massive datasets—geospatial and beyond. Designed for speed, scale, and clarity across government, enterprise, and consulting workflows."
+    },
+    {
+      "title": "wuglenn (Glenn) · GitHub",
+      "url": "https://github.com/wuglenn/",
+      "snippet": "hola! I&#x27;m Glenn deep learning enjoyer! i love blackboxes and shaping unexplainable ai :) i enjoy working on interesting projects, feel free to reach out with ideas. i&#x27;m open to collaborating! glennwuwu [at]gmail [dot]com cats!"
+    }
+  ]
+}

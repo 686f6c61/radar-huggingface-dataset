@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "raphaelscamargo/portifolio",
+  "slug": "raphaelscamargo-portifolio",
+  "author": "raphaelscamargo",
+  "url": "https://huggingface.co/raphaelscamargo/portifolio",
+  "created_at": "2026-09-01T13:19:21.000Z",
+  "updated_at": "2026-09-01T13:19:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Portfolia",
+      "url": "https://portfolia.ai/",
+      "snippet": "Smart CV Builder Create a professional timeline showcasing your career path, skills, and education in minutes with AI assistance."
+    },
+    {
+      "title": "folfolio.com | AI-Powered Portfolio Builder",
+      "url": "https://www.folfolio.com/",
+      "snippet": "Instantly create polished, professional portfolios with the magic of AI. Focus on your craft, not complicated websites."
+    },
+    {
+      "title": "AI Portfolio Analysis for Every Account | Portfolio Genius",
+      "url": "https://portfoliogenius.ai/",
+      "snippet": "What is AI portfolio analytics? AI portfolio analytics uses advanced artificial intelligence to analyze market data, financial fundamentals, and news sentiment to help you understand your investments better. Portfolio Genius continuously monitors your holdings and provides data-driven insights based on your risk profile and investment goals."
+    },
+    {
+      "title": "Your Portfolio, Elevated by AI - Portura",
+      "url": "https://portura.ai/",
+      "snippet": "Build a standout portfolio, match job descriptions, and tailor resume and cover letters with AI. Persona themes, custom domains, job-fit scoring, and Pro analytics in one career workspace."
+    },
+    {
+      "title": "AI Portfolio Maker : Create Free Portfolios in Minutes - Design",
+      "url": "https://www.pixazo.ai/portfolio/maker",
+      "snippet": "Create stunning Portfolios in minutes with Pixazo&#x27;s AI Portfolio Generator. No design skills needed—just describe your idea and start designing instantly…"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kancilcapital/website",
+  "slug": "kancilcapital-website",
+  "author": "kancilcapital",
+  "url": "https://huggingface.co/kancilcapital/website",
+  "created_at": "2026-09-01T17:44:55.000Z",
+  "updated_at": "2026-09-01T17:47:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "deepsite-v3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 111235,
+  "storage_human": "111235 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kancil Capital | Student-Led Investment Fund",
+      "url": "https://www.kancilcapital.com/",
+      "snippet": "ABOUT US Empowering Future Investment Leaders Kancil Capital is Malaysia&#x27;s premier student-led investment fund providing hands-on experience in portfolio management and equity research."
+    },
+    {
+      "title": "Kancil Capital · GitHub",
+      "url": "https://github.com/Kancil-Capital/",
+      "snippet": "Kancil Capital has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "About - VaRisk Kancil | Portfolio Risk Analytics",
+      "url": "https://kancil.app/about",
+      "snippet": "🤖 AI Chief Risk Officer Insights Meet your AI-powered risk analyst. Get instant, data-driven insights about your portfolio risk metrics, fundamental analysis for Indonesian stocks (IDX), and AI-generated infographics. Powered by Claude, ChatGPT, DeepSeek & Gemini with auto-fallback and monthly quota per plan."
+    },
+    {
+      "title": "AI Models Directory | Browse & Filter by Capabilities",
+      "url": "https://aimodels.dev/models",
+      "snippet": "Explore our comprehensive AI models directory. Filter by capabilities, providers, and performance metrics to find the perfect AI model for your needs."
+    }
+  ]
+}

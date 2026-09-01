@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "tranminhkhoi8407/Reinforce-v4",
+  "slug": "tranminhkhoi8407-reinforce-v4",
+  "author": "tranminhkhoi8407",
+  "url": "https://huggingface.co/tranminhkhoi8407/Reinforce-v4",
+  "created_at": "2026-09-01T14:05:06.000Z",
+  "updated_at": "2026-09-01T14:06:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3785,
+  "storage_human": "3785 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 407 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "DeepReinforce AI AI Models: Benchmarks & Pricing (August 2026)",
+      "url": "https://benchlm.ai/providers/deepreinforce-ai",
+      "snippet": "BenchLM provider page for DeepReinforce AI: top model families, ranked coverage, pricing visibility, and current release depth."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Reinforce - AI Should Make You",
+      "url": "https://www.reinforce-ai.com/",
+      "snippet": "AI Should Make You Smarter Reinforce adds a cognitive layer to AI assistants like ChatGPT. AI isn&#x27;t going anywhere, so build mental muscle while staying productive."
+    },
+    {
+      "title": "Recraft V4 - Recraft",
+      "url": "https://www.recraft.ai/docs/recraft-models/recraft-V4",
+      "snippet": "Recraft V4 was released in February 2026. With a focus on visual and design taste, V4 produces images with balanced composition, cohesive color, and refined detail that feel intentional rather than stock-like, across both raster and vector outputs."
+    }
+  ]
+}

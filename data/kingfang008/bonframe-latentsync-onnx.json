@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kingfang008/BonFrame-LatentSync-ONNX",
+  "slug": "kingfang008-bonframe-latentsync-onnx",
+  "author": "kingfang008",
+  "url": "https://huggingface.co/kingfang008/BonFrame-LatentSync-ONNX",
+  "created_at": "2026-09-01T17:23:41.000Z",
+  "updated_at": "2026-09-01T17:28:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "latentsync",
+    "lip-sync",
+    "bonframe",
+    "image-to-video",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 235882518,
+  "storage_human": "236 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kingfang008/BonFrame-JoyVASA-ONNX · Hugging Face",
+      "url": "https://huggingface.co/kingfang008/BonFrame-JoyVASA-ONNX",
+      "snippet": "BonFrame JoyVASA ONNX runtime pack ONNX export used by BonFrame&#x27;s local Apple Silicon lip-redraw pipeline. The pack converts 16 kHz speech audio into JoyVASA motion coefficients; FasterLivePortrait-MLX performs portrait rendering separately."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "GitHub - bytedance/LatentSync: Taming Stable Diffusion for Lip Sync!",
+      "url": "https://github.com/bytedance/LatentSync",
+      "snippet": "We present LatentSync, an end-to-end lip-sync method based on audio-conditioned latent diffusion models without any intermediate motion representation, diverging from previous diffusion-based lip-sync methods based on pixel-space diffusion or two-stage generation. Our framework can leverage the powerful capabilities of Stable Diffusion to directly model complex audio-visual correlations."
+    },
+    {
+      "title": "onnx (onnx) - Hugging Face",
+      "url": "https://huggingface.co/onnx",
+      "snippet": "ONNX is an open ecosystem for interoperable AI models"
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

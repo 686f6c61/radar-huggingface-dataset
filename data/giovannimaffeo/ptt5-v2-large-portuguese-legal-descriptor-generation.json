@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "giovannimaffeo/ptt5-v2-large-portuguese-legal-descriptor-generation",
+  "slug": "giovannimaffeo-ptt5-v2-large-portuguese-legal-descriptor-generation",
+  "author": "giovannimaffeo",
+  "url": "https://huggingface.co/giovannimaffeo/ptt5-v2-large-portuguese-legal-descriptor-generation",
+  "created_at": "2026-09-01T15:14:48.000Z",
+  "updated_at": "2026-09-01T15:15:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "pt",
+    "dataset:giovannimaffeo/portuguese-legal-descriptor-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 836365312,
+  "parameters_human": "836.4M",
+  "storage_bytes": 3345529169,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ptt5-v2: A Closer Look at Continued Pretraining of T5 Models for the ...",
+      "url": "https://arxiv.org/html/2406.10806v1",
+      "snippet": "This work introduces ptt5-v2, investigating the continued pretraining of T5 models for Portuguese. We first develop a baseline set of settings and pretrain models with sizes up to 3B parameters. Finetuning on three Portuguese downstream tasks (assin2 STS, assin2 RTE, and TweetSentBR) yields SOTA results on the latter two."
+    },
+    {
+      "title": "ptt5-v2: A Closer Look at Continued Pretraining of T5 Models for the ...",
+      "url": "https://papers.cool/arxiv/2406.10806",
+      "snippet": "This work introduces $&#92;texttt {ptt5-v2}$, investigating the continued pretraining of T5 models for Portuguese. We first develop a baseline set of settings and pretrain models with sizes up to 3B parameters."
+    },
+    {
+      "title": "[2406.10806v2] ptt5-v2: A Closer Look at Continued Pretraining of T5 ...",
+      "url": "https://arxiv.org/abs/2406.10806v2",
+      "snippet": "Despite advancements in Natural Language Processing (NLP) and the growing availability of pretrained models, the English language remains the primary focus of model development. Continued pretraining on language-specific corpora provides a practical solution for adapting models to other languages. However, the impact of different pretraining settings on downstream tasks remains underexplored ..."
+    },
+    {
+      "title": "unicamp-dl/ptt5-v2-large · Hugging Face",
+      "url": "https://huggingface.co/unicamp-dl/ptt5-v2-large",
+      "snippet": "ptt5-v2-large Introduction ptt5-v2 models are pretrained T5 models tailored for the Portuguese language, continuing from Google&#x27;s original checkpoints with sizes from t5-small to t5-3B. These checkpoints were used to train MonoT5 rerankers for the Portuguese language, which can be found in their HuggingFace collection."
+    },
+    {
+      "title": "SOTAVerified",
+      "url": "https://sotaverified.org/papers/ptt5-v2-a-closer-look-at-continued",
+      "snippet": "This work introduces ptt5-v2, investigating the continued pretraining of T5 models for Portuguese. We first develop a baseline set of settings and pretrain models with sizes up to 3B parameters. Finetuning on three Portuguese downstream tasks (assin2 STS, assin2 RTE, and TweetSentBR) yields SOTA results on the latter two."
+    }
+  ]
+}

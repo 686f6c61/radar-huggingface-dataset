@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "DIYIN/ContextPilot-8B",
+  "slug": "diyin-contextpilot-8b",
+  "author": "DIYIN",
+  "url": "https://huggingface.co/DIYIN/ContextPilot-8B",
+  "created_at": "2026-09-01T13:42:11.000Z",
+  "updated_at": "2026-09-01T13:42:13.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "context-management",
+    "tool-use",
+    "agent",
+    "conversational",
+    "arxiv:2608.28476",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16393609248,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tencent/ContextPilot-8B · Hugging Face",
+      "url": "https://huggingface.co/tencent/ContextPilot-8B",
+      "snippet": "ContextPilot-8B is the Qwen3-8B checkpoint of ContextPilot, a proactive context-management framework for long-horizon language-model agents. It teaches agents to plan, maintain long-term memory, and offload less useful context while they continue reasoning and using tools. For more details, see our paper and code repository."
+    },
+    {
+      "title": "ContextPilot-8B API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/tencent/ContextPilot-8B",
+      "snippet": "Deploy ContextPilot-8B with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "ContextPilot: Teaching Agents for Proactive Context Management via Fine ...",
+      "url": "https://arxiv.org/html/2608.28476v1",
+      "snippet": "To better understand how RL changes the context management behavior, we track the distribution over tool call categories of ContextPilot-8B-RL in RL training. As shown in Figure 5, the model relies heavily on information retrieval tools in the early stage of RL training, with retrieval accounting for roughly half of all tool calls."
+    },
+    {
+      "title": "GitHub - EfficientContext/ContextPilot: Accelerating Long Context LLM ...",
+      "url": "https://github.com/EfficientContext/ContextPilot",
+      "snippet": "ContextPilot sits between context assembly and inference to maximize prefix reuse and remove duplicates: Higher throughput & cache hits — boosts prefill throughput and prefix cache hit ratio via context reuse."
+    },
+    {
+      "title": "[2608.28476] ContextPilot: Teaching Agents for Proactive Context ...",
+      "url": "https://arxiv.org/abs/2608.28476",
+      "snippet": "Long-horizon agentic tasks require large language models (LLMs) to iteratively retrieve, integrate, and maintain dispersed information across multi-turn interactions, but preserving all interaction histories leads to a continuously growing working context. Recent proactive context management methods allow models to edit their own working context with specialized tools, yet they still face ..."
+    }
+  ]
+}

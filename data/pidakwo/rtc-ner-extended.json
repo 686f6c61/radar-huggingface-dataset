@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "pidakwo/rtc-ner-extended",
+  "slug": "pidakwo-rtc-ner-extended",
+  "author": "pidakwo",
+  "url": "https://huggingface.co/pidakwo/rtc-ner-extended",
+  "created_at": "2026-09-01T15:53:53.000Z",
+  "updated_at": "2026-09-01T16:27:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "spacy",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "spacy",
+    "named-entity-recognition",
+    "ner",
+    "nlp",
+    "nigeria",
+    "road-traffic-crash",
+    "road-safety",
+    "information-extraction",
+    "data-anonymization",
+    "privacy",
+    "token-classification",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6145960,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Geo-parsing and analysis of road traffic crash incidents for data ...",
+      "url": "https://doaj.org/article/ef7b3196ed5d4bce818d37913e5912bf",
+      "snippet": "We further applied the RTC NER model for feature extraction using geo-parsing techniques to extract RTC location details and retrieve corresponding geographical coordinates, creating a structured Nigeria RTC dataset for exploratory data analysis."
+    },
+    {
+      "title": "GEO PARSING AND GEO-VISUALIZATION OF ROAD T C INCIDENT ... - OpenReview",
+      "url": "https://openreview.net/pdf?id=3eKM1dQzKW",
+      "snippet": "C-NER baseline for all three metrics with Precision of 93.63, recall of 93.61 and F-Score of 93.62. Going by the precision and recall values, the RTC-NER model makes fewer false positive predictions (identifying non-enti"
+    },
+    {
+      "title": "Geo-parsing and Geo-Visualization of Road Traffic Crash Incident ...",
+      "url": "https://openreview.net/forum?id=3eKM1dQzKW",
+      "snippet": "We evaluated and compared their performance using standard metrics of precision, recall, and f1-score. The RTC-NER performed better than the RTC-NER baseline model for all three metrics with a precision rating of 93.63, recall of 93.61, and f1-score of 93.62."
+    },
+    {
+      "title": "A lightweight model for Named Entity Recognition (NER)",
+      "url": "https://huggingface.co/blog/minibase-ai/named-entity-recognition",
+      "snippet": "A Blog post by minibase.ai on Hugging Face"
+    },
+    {
+      "title": "Comprehensive Overview of Named Entity Recognition: Models, Domain ...",
+      "url": "https://arxiv.org/html/2309.14084",
+      "snippet": "Abstract In the domain of Natural Language Processing (NLP), Named Entity Recognition (NER) stands out as a pivotal mechanism for extracting structured insights from unstructured text. This manuscript offers an exhaustive exploration into the evolving landscape of NER methodologies, blending foundational principles with contemporary AI advancements. Beginning with the rudimentary concepts of ..."
+    }
+  ]
+}

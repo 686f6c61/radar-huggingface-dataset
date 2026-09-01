@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "GT1999/mwp-v2-llama1b-base-staged-stage4",
+  "slug": "gt1999-mwp-v2-llama1b-base-staged-stage4",
+  "author": "GT1999",
+  "url": "https://huggingface.co/GT1999/mwp-v2-llama1b-base-staged-stage4",
+  "created_at": "2026-09-01T14:12:54.000Z",
+  "updated_at": "2026-09-01T14:13:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mwp-v2",
+    "seqft",
+    "plrs",
+    "math-word-problems",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107417436,
+  "storage_human": "107 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GT1999/mwp-v2-llama1b-b1-stage1 · Hugging Face",
+      "url": "https://huggingface.co/GT1999/mwp-v2-llama1b-b1-stage1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "219gb \"Leaked\" Llama Ai Bundle Claim Rocks Dark Web — Real Model ...",
+      "url": "https://undercodenews.com/219gb-leaked-llama-ai-bundle-claim-rocks-dark-web-real-model-release-or-dangerous-cyber-trap/",
+      "snippet": "A cybercrime forum post shared by the account \"Dark Web Intelligence\" alleges the release of a 219GB archive containing what appears to be Meta&#x27;s LLAMA AI model family resources. The package is described as including multiple model checkpoints such as 7B, 13B, 30B, and 65B parameter versions. In addition to core model weights, the archive allegedly contains tokenizer configurations ..."
+    }
+  ]
+}

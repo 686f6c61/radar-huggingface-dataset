@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JackySunUofT/S_SD_jd_no_clip_100000",
+  "slug": "jackysunuoft-s_sd_jd_no_clip_100000",
+  "author": "JackySunUofT",
+  "url": "https://huggingface.co/JackySunUofT/S_SD_jd_no_clip_100000",
+  "created_at": "2026-09-01T12:48:01.000Z",
+  "updated_at": "2026-09-01T12:48:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:JackySunUofT/sim_two_lens_black_tube",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 262796679,
+  "parameters_human": "262.8M",
+  "storage_bytes": 1051222228,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JackySunUofT/S_SD_jd_100000 · Hugging Face",
+      "url": "https://huggingface.co/JackySunUofT/S_SD_jd_100000",
+      "snippet": "Model Card for diffusion Diffusion Policy treats visuomotor control as a generative diffusion process, producing smooth, multi-step action trajectories that excel at contact-rich manipulation."
+    },
+    {
+      "title": "JackySunUofT (JINJIE SUN) - Hugging Face",
+      "url": "https://huggingface.co/JackySunUofT",
+      "snippet": "Imitation learning, robotics, computer vision"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new featuresNFL Sunday Ticket © 2026 Google LLC"
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

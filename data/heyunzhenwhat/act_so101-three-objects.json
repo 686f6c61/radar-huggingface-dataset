@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "heyunzhenwhat/act_so101-three-objects",
+  "slug": "heyunzhenwhat-act_so101-three-objects",
+  "author": "heyunzhenwhat",
+  "url": "https://huggingface.co/heyunzhenwhat/act_so101-three-objects",
+  "created_at": "2026-09-01T14:08:10.000Z",
+  "updated_at": "2026-09-01T14:08:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:heyunzhenwhat/so101-three-objects",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714912,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "heyunzhenwhat/so101-three-objects · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/heyunzhenwhat/so101-three-objects",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "heyunzhenwhat (Hyz) - Hugging Face",
+      "url": "https://huggingface.co/heyunzhenwhat/datasets",
+      "snippet": "published a model about 3 hours ago updated a model about 5 hours ago"
+    },
+    {
+      "title": "DreamZero-SO101 — An Open World Model for the SO-101 Robot Arm",
+      "url": "https://vizuara-ai-lab.github.io/dreamzero-so101/index.html",
+      "snippet": "DreamZero-SO101 is an open-source world-action model for the SO-101 robot arm. Given a single camera frame and a language instruction, it imagines the robot completing the task."
+    },
+    {
+      "title": "DreamZero-SO101 — Research Paper",
+      "url": "https://vizuara-ai-lab.github.io/dreamzero-so101/paper.html",
+      "snippet": "Conference-style research paper for DreamZero-SO101: the first open-source world-action model for the SO-101 robot arm. Architecture, training, evaluation, and community contribution roadmap."
+    },
+    {
+      "title": "SO101 Arm ACT Training Guide Using SOLO CLI - GitHub",
+      "url": "https://github.com/omkarputti/SO101_ACT_Training",
+      "snippet": "An open-source robotics project focused on training the SO101 robotic arm using imitation learning, ACT policies, and SOLO CLI workflows for autonomous manipulation tasks. - omkarputti/SO101_ACT_Tr..."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "AEmotionStudio/voxcpm2-models",
+  "slug": "aemotionstudio-voxcpm2-models",
+  "author": "AEmotionStudio",
+  "url": "https://huggingface.co/AEmotionStudio/voxcpm2-models",
+  "created_at": "2026-09-01T19:10:48.000Z",
+  "updated_at": "2026-09-01T19:11:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "text-to-speech",
+    "voice-cloning",
+    "tokenizer-free",
+    "diffusion-autoregressive",
+    "minicpm",
+    "multilingual",
+    "openbmb",
+    "mirror",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2290004544,
+  "parameters_human": "2.29B",
+  "storage_bytes": 4956970540,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VoxCPM2 - Advanced AI Voice Generation & Cloning",
+      "url": "https://voxcpm2.org/",
+      "snippet": "VoxCPM2 is an AI voice generation tool with three modes: Voice Design, Controllable Cloning, and Ultimate Cloning. Try the live demo free."
+    },
+    {
+      "title": "VoxCPM2 · Models",
+      "url": "https://www.modelscope.cn/models/OpenBMB/VoxCPM2",
+      "snippet": "VoxCPM2 is a tokenizer-free, diffusion autoregressive Text-to-Speech model — 2B parameters, 30 languages, 48kHz audio output, trained on over 2 million hours of multilingual speech data."
+    },
+    {
+      "title": "openbmb/VoxCPM2 · Hugging Face",
+      "url": "https://huggingface.co/openbmb/VoxCPM2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AEmotionStudio/vocalrender-models · Hugging Face",
+      "url": "https://huggingface.co/AEmotionStudio/vocalrender-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "VoxCPM2 | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/voxcpm2/",
+      "snippet": "VoxCPM2 is OpenBMB&#x27;s open-source tokenizer-free multilingual text-to-speech model for natural speech generation, voice design, and controllable voice cloning. It is a 2B-parameter model trained on over 2 million hours of speech, supports 30 languages, and produces 48 kHz studio-quality audio with real-time streaming capability."
+    }
+  ]
+}

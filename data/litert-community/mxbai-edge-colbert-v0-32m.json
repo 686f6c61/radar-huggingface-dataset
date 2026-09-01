@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "litert-community/mxbai-edge-colbert-v0-32m",
+  "slug": "litert-community-mxbai-edge-colbert-v0-32m",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/mxbai-edge-colbert-v0-32m",
+  "created_at": "2026-09-01T12:37:20.000Z",
+  "updated_at": "2026-09-01T12:37:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "on-device",
+    "edge",
+    "colbert",
+    "late-interaction",
+    "retrieval",
+    "rag",
+    "modernbert",
+    "feature-extraction",
+    "base_model:mixedbread-ai/mxbai-edge-colbert-v0-32m",
+    "base_model:finetune:mixedbread-ai/mxbai-edge-colbert-v0-32m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 106694944,
+  "storage_human": "107 MB",
+  "base_model": "mixedbread-ai/mxbai-edge-colbert-v0-32m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mixedbread-ai/mxbai-edge-colbert-v0-32m · Hugging Face",
+      "url": "https://huggingface.co/mixedbread-ai/mxbai-edge-colbert-v0-32m",
+      "snippet": "The crispy, lightweight ColBERT family from Mixedbread. 🍞 Looking for a simple end-to-end retrieval solution? Meet Mixedbread Search, our multi-modal and multi-lingual search solution. mxbai-edge-colbert-v0-32m This model is a lightweight, 32 million parameter ColBERT with a projection dimension of 64. It is built on top of Ettin-32M, meaning it benefits from all of ModernBERT&#x27;s ..."
+    },
+    {
+      "title": "mixedbread-ai/mxbai-edge-colbert-v0-17m · Hugging Face",
+      "url": "https://huggingface.co/mixedbread-ai/mxbai-edge-colbert-v0-17m",
+      "snippet": "The crispy, lightweight ColBERT family from Mixedbread. 🍞 Looking for a simple end-to-end retrieval solution? Meet Mixedbread Search, our multi-modal and multi-lingual search solution. mxbai-edge-colbert-v0-17m This model is a lightweight, 17 million parameter ColBERT with a projection dimension of 48. It is built on top of Ettin-17M, meaning it benefits from all of ModernBERT&#x27;s ..."
+    },
+    {
+      "title": "Fantastic (small) Retrievers and How to Train Them: mxbai-edge-colbert ...",
+      "url": "https://arxiv.org/pdf/2510.14880",
+      "snippet": "Abstract. In this work, we introduce mxbai-edge-colbert-v0 models, at two different parameter counts: 17M and 32M. As part of our re-search, we conduct numerous experiments to improve retrieval and late-interaction models, which we intend to distill into smaller models as proof-of-concepts. Our ultimate aim is to support retrieval at all scales, from large-scale retrieval which lives in the ..."
+    },
+    {
+      "title": "mxbai edge colbert v0 32m — ThinkLLM",
+      "url": "https://thinkllm.dev/models/mxbai-edge-colbert-v0-32m",
+      "snippet": "A compact, retrieval-focused specialist that uses ColBERT&#x27;s late interaction mechanism to compare query and document tokens individually rather than collapsing everything into a single vector. At 32M parameters it runs efficiently on edge devices, making it practical for on-device search pipelines. The trade-off is narrow scope — it produces embeddings, not text, and is purpose-built for ..."
+    },
+    {
+      "title": "Fantastic (small) Retrievers and How to Train Them:",
+      "url": "https://arxiv.org/html/2510.14880v1",
+      "snippet": "Abstract In this work, we introduce mxbai-edge-colbert-v0 models, at two different parameter counts: 17M and 32M. As part of our research, we conduct numerous experiments to improve retrieval and late-interaction models, which we intend to distill into smaller models as proof-of-concepts. Our ultimate aim is to support retrieval at all scales, from large-scale retrieval which lives in the ..."
+    }
+  ]
+}

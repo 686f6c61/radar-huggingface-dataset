@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kiliato/lso_back_combined_slim_GR00T17",
+  "slug": "kiliato-lso_back_combined_slim_gr00t17",
+  "author": "kiliato",
+  "url": "https://huggingface.co/kiliato/lso_back_combined_slim_GR00T17",
+  "created_at": "2026-09-01T16:23:36.000Z",
+  "updated_at": "2026-09-01T16:24:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "dataset:kiliato/lso_back_combined_slim",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219184,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Google Chrome&#x27;s silent 4GB AI download problem [updated]",
+      "url": "https://www.malwarebytes.com/blog/news/2026/05/google-chromes-silent-4gb-ai-download-problem",
+      "snippet": "Google Chrome writes a 4GB AI model to users&#x27; devices without asking, and reinstalls it if you delete it."
+    },
+    {
+      "title": "The truth behind Chrome&#x27;s 4GB &#x27;weights.bin&#x27; Gemini Nano file",
+      "url": "https://www.androidauthority.com/google-chrome-weights-bin-bin-ai-model-download-explained-3664043/",
+      "snippet": "Chrome is silently downloading 4GB AI model files to your PC. Learn what Gemini Nano \"weights\" are and how to delete them to reclaim storage."
+    }
+  ]
+}

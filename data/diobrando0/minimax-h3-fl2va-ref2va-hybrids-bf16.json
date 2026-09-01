@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "diobrando0/MiniMax-H3-fl2va-ref2va-hybrids-bf16",
+  "slug": "diobrando0-minimax-h3-fl2va-ref2va-hybrids-bf16",
+  "author": "diobrando0",
+  "url": "https://huggingface.co/diobrando0/MiniMax-H3-fl2va-ref2va-hybrids-bf16",
+  "created_at": "2026-09-01T12:17:43.000Z",
+  "updated_at": "2026-09-01T12:34:44.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "video-generation",
+    "text-to-video",
+    "image-to-video",
+    "audio-video-generation",
+    "diffusion-transformer",
+    "merge",
+    "hybrid",
+    "comfyui",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:merge:Comfy-Org/MiniMax-H3",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:merge:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132560974736,
+  "storage_human": "132.6 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3, Comfy-Org/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models · Hugging Face",
+      "url": "https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - scottmudge/ComfyUI_MinimaxH3HybridLoader: A model ...",
+      "url": "https://github.com/scottmudge/ComfyUI_MinimaxH3HybridLoader",
+      "snippet": "A model hybridization loader to combine different layers/blocks of the fl2va and ref2va models - scottmudge/ComfyUI_MinimaxH3HybridLoader"
+    },
+    {
+      "title": "diffusion_models/minimax_h3_fl2va_bf16.safetensors · Comfy-Org/MiniMax ...",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/blob/main/diffusion_models/minimax_h3_fl2va_bf16.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "MiniMax H3 Model Files & Downloads: GitHub, Hugging Face, GGUF, INT8 ...",
+      "url": "https://minimaxh3.run/minimax-h3-model-files-downloads",
+      "snippet": "Find official MiniMax H3 files, including pruned BF16, INT8, NVFP4, and VAE variants. Compare sources, GGUF status, folder paths, and missing-model fixes."
+    }
+  ]
+}

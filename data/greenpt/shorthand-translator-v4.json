@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "GreenPT/shorthand-translator-v4",
+  "slug": "greenpt-shorthand-translator-v4",
+  "author": "GreenPT",
+  "url": "https://huggingface.co/GreenPT/shorthand-translator-v4",
+  "created_at": "2026-09-01T11:41:13.000Z",
+  "updated_at": "2026-09-01T11:41:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3.5-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 485597094,
+  "storage_human": "486 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vasco Translator V4 - Traducteurs de poche Vasco",
+      "url": "https://duckduckgo.com/y.js?ad_domain=vasco%2Delectronics.fr&ad_provider=bingv7aa&ad_type=txad&click_metadata=iLVizvPt2ruHk3T4qvxJFxnfybYejTyfgMzSxrjFyo47uiOqKeqwEAxaB7Vl%2DRtZ6bmx617QYjbDRFAKHOaLNG3cdSnSvGiYJp70i4I2dtRfPxGTXW%2Dwt84npCQgAwaXy56bIC3xD7%2DOD43WAFr8qaFKEjTfabKZXaDlQQKMpP8.DEagYkKZwoSQ00y6_L%2DTiw&rut=4e913a0386b648f0440bbfa0020add7d55ea9ea1b57d6cfb686151fb946c580b&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De88nxpL%2DMFWDEjc%2D4F6VH5wTVUCUyON1FXrcPYiQshylcyv04BFODJjg2qUqvAIElid2wArvR7yqVWZ0iIhHlP9KyJJAB7BUwx_LPAyF2Q7UHz1_SrKfcMn1Q8qRKjVhQtEvWx5gAl933A5q%2DPJgzV1AOpjXk7l%2Da0dEWerOZm4QsYtIK1Km67IBVuKjI3WfvbWtvDfjKhoTIDdf3_CSsxpkLlRuo%26u%3DaHR0cHMlM2ElMmYlMmZ2YXNjby1lbGVjdHJvbmljcy5mciUyZnRyYWR1Y3RldXItdm9jYWwlMmZ2YXNjby10cmFuc2xhdG9yLXY0JTNmbXNjbGtpZCUzZDU2NmY4YjNmNjM2ODE5ODlmNjg1ZTFhOWE1NjRjM2JiJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkU0VBUkNIJTI1MjBJJTI1MjBGUiUyNTIwSSUyNTIwQlJBTkQlMjUyMCUyNTdDJTI1MjBNQVguJTI1MjBDTElDS1MlMjUyMCUyNTdDJTI1MjAlMjUyNCUyNnV0bV90ZXJtJTNkdHJhbnNsYXRvciUyNTIwdjQlMjZ1dG1fY29udGVudCUzZFY0JTI1MjAtJTI1MjBGUiUyNTIwJTI1N0MlMjUyMFRyYW5zbGF0b3IlMjUyMFY0%26rlid%3D566f8b3f63681989f685e1a9a564c3bb&vqd=4-50530456344084452238510247100068728723&iurl=%7B1%7DIG%3D276415CCFA4346AC91B225B6869324C4%26CID%3D19CED951889A6DA522CECE9689BC6C23%26ID%3DDevEx%2C5037.1",
+      "snippet": "Traducteur électronique intelligent : Une pression de bouton permet converser n&#x27;importe où. Support client avant et après l&#x27;achat. Livraison gratuite dans l&#x27;UE. Commandez maintenant"
+    },
+    {
+      "title": "GreenPT Models: the open-weight AI model catalog",
+      "url": "https://greenpt.com/models",
+      "snippet": "Every GreenPT model, grouped by category: chat, reasoning, coding, vision, embeddings, reranking, and speech. Open-weight models on 100% renewable energy, run with industry-leading efficiency. One key for all of them."
+    },
+    {
+      "title": "GreenPT: sustainable and privacy friendly AI",
+      "url": "https://greenpt.com/",
+      "snippet": "Powerful AI that respects your privacy and the planet. 100% renewable energy, European infrastructure, and up to 40% lower CO₂ than the major cloud providers."
+    },
+    {
+      "title": "GreenPT/shorthand-reader · Hugging Face",
+      "url": "https://huggingface.co/GreenPT/shorthand-reader",
+      "snippet": "GreenPT / shorthand-reader like 0 Follow GreenPT 2 Text Generation PEFT Safetensors Transformers lora sft trl conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GreenPT/shorthand-encoder at main - Hugging Face",
+      "url": "https://huggingface.co/GreenPT/shorthand-encoder/tree/main",
+      "snippet": "GreenPT / shorthand-encoder like 0 Follow GreenPT 2 Text Generation PEFT Safetensors Transformers lora sft trl conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Jommarn/UNSEEN_Gemma_4_26B_NSFW-GGUF",
+  "slug": "jommarn-unseen_gemma_4_26b_nsfw-gguf",
+  "author": "Jommarn",
+  "url": "https://huggingface.co/Jommarn/UNSEEN_Gemma_4_26B_NSFW-GGUF",
+  "created_at": "2026-08-28T02:48:05.000Z",
+  "updated_at": "2026-09-01T18:39:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "uncensored",
+    "nsfw",
+    "abliteration",
+    "gemma",
+    "vision",
+    "llama.cpp",
+    "4bit",
+    "8bit",
+    "quantized",
+    "image-text-to-text",
+    "th",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational",
+    "not-for-all-audiences"
+  ],
+  "likes": 44,
+  "downloads_30d": 9238,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 46256752329,
+  "storage_human": "46.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=Jommarn%2FUNSEEN_Gemma_4_26B_NSFW",
+      "snippet": "Explore machine learning models. Tasks Text Generation Any-to-Any Image-Text-to-Text Image-to-Text Image-to-Image Text-to-Image Text-to-Video Text-to-Speech + 44 Reset Parameters 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 + 44 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=nsfw",
+      "snippet": "Explore machine learning models. AI-Porn/pornworks-nude-people-photo-realistic-nsfw-flux-1d-checkpoint"
+    },
+    {
+      "title": "Gemma 4 26B uncensored weights quantized to GGUF for local inference",
+      "url": "https://uncensoredhub.ai/news/2026-06-05-gemma-4-26b-uncensored-weights-quantized-to-gguf-for-local-inference",
+      "snippet": "JMingo published quantized GGUF weights for a 26-billion-parameter Gemma 4 variant stripped of safety tuning, based on llmfan46&#x27;s uncensored fine-tune."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "Qwen 3.6 abliterated, Gemma 4 Heretic, Dolphin 3.0 — the current uncensored picks by VRAM tier. The Llama 3.1 / Qwen 2.5 era is mostly superseded. HuggingFace repos for every pick."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ZubairAli25266/bike-demand-forecast",
+  "slug": "zubairali25266-bike-demand-forecast",
+  "author": "ZubairAli25266",
+  "url": "https://huggingface.co/ZubairAli25266/bike-demand-forecast",
+  "created_at": "2026-09-01T17:43:22.000Z",
+  "updated_at": "2026-09-01T18:07:48.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "joblib",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1267401,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexanderzrm/bike-demand-forecast - GitHub",
+      "url": "https://github.com/alexanderzrm/bike-demand-forecast",
+      "snippet": "A Machine Learning Application that forecasts hour-ahead bike rental demand across an entire city, enabling dynamic pricing optimization and revenue maximization. This Real-Time Bike Rental Demand Forecasting System solves a critical business problem for bike-sharing platforms operating across ..."
+    },
+    {
+      "title": "GitHub - tgdiazr/bike-demand-forecasting",
+      "url": "https://github.com/tgdiazr/bike-demand-forecasting",
+      "snippet": "Bike Rental Demand Forecasting This project aims to develop a robust machine learning pipeline to predict hourly bike rental demand using historical data. By leveraging weather, seasonality, and time-based features, we train and evaluate models capable of forecasting short-term demand — critical for operations and capacity planning."
+    },
+    {
+      "title": "Bike_Sharing_Demand_Prediction.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/Preetirai-tech/Bike-Sharing-Demand-Prediction/blob/main/Bike_Sharing_Demand_Prediction.ipynb/",
+      "snippet": "The \"Bike Sharing Demand Prediction\" project addresses the challenge faced by bike sharing companies in accurately forecasting and meeting the fluctuating demand for bike rentals. The unpredictable nature of bike rental demand poses difficulties in managing fleet size, allocating resources, and providing optimal customer service. Without a reliable demand prediction system, bike sharing ..."
+    },
+    {
+      "title": "Machine Learning Models for Bike-Sharing Demand Forecasting",
+      "url": "https://www.mdpi.com/2673-7590/6/1/26",
+      "snippet": "Bike-sharing use has been growing because it improves personal mobility, offers an alternative to walking, and strengthens connections to transit. Demand forecasting is crucial for bike-sharing services because it enables operators to anticipate empty stations and full docks, improve vehicle rebalancing and staffing, and deliver more reliable service at lower operating cost. In this paper, we ..."
+    },
+    {
+      "title": "Demand forecasting of shared bicycles based on combined deep learning ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0378437123010476",
+      "snippet": "The combined deep learning model for bicycle sharing demand prediction is designed to solve the \"last 1 km\" problem. At present, there are many companies providing bicycle sharing services at home and abroad, and how to dispatch shared bicycles more efficiently has become an important issue in traffic information research. Sometimes it is difficult to find shared bikes at the exit of some ..."
+    }
+  ]
+}

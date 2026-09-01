@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "rsu/Reversi-Transformer-2",
+  "slug": "rsu-reversi-transformer-2",
+  "author": "rsu",
+  "url": "https://huggingface.co/rsu/Reversi-Transformer-2",
+  "created_at": "2026-09-01T14:12:47.000Z",
+  "updated_at": "2026-09-01T14:32:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "tensorflow",
+  "languages": [],
+  "tags": [
+    "tensorflow",
+    "keras",
+    "othello",
+    "reversi",
+    "game-ai",
+    "transformer",
+    "mixture-of-experts",
+    "rmsnorm",
+    "swiglu",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 56127442,
+  "storage_human": "56 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - rsu-Suba/ReversiGPT: Reversi AI with Transformer architecture",
+      "url": "https://github.com/rsu-Suba/ReversiGPT",
+      "snippet": "Reversi AI with Transformer architecture. Contribute to rsu-Suba/ReversiGPT development by creating an account on GitHub."
+    },
+    {
+      "title": "ReversiGPT/AI/models at main · rsu-Suba/ReversiGPT · GitHub",
+      "url": "https://github.com/rsu-Suba/ReversiGPT/tree/main/AI/models",
+      "snippet": "Reversi AI with Transformer architecture. Contribute to rsu-Suba/ReversiGPT development by creating an account on GitHub."
+    },
+    {
+      "title": "Reversi AI",
+      "url": "https://reversi-gpt.suba.pro/",
+      "snippet": "AI Heatmap AI Lines Legal Cells Turn: Black: White: Reset Game Settings Review Game |< < > >| Close Model : Transformer MoE-1 (Dec 17 &#x27;25) Github Repo"
+    },
+    {
+      "title": "Transformer 2 : Self-adaptive LLMs - arXiv.org",
+      "url": "https://arxiv.org/html/2501.06252v2",
+      "snippet": "This allows the model to dynamically modify its behavior based on the task at hand, without the need for constant re-tuning. In addition to the benefit of having independent components, this modularity also supports continual learning, enabling the model to add new skills over time without catastrophic forgetting."
+    },
+    {
+      "title": "Transformer²: Self-Adaptive LLMs - Sakana AI",
+      "url": "https://sakana.ai/transformer-squared/",
+      "snippet": "This vision of self-adaptive AI is at the heart of our latest research paper, Transformer² (&#x27;Transformer-squared&#x27;), where we propose a machine learning system that dynamically adjusts its weights for various tasks."
+    }
+  ]
+}

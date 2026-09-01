@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lloydchristmas1231/ashbuch",
+  "slug": "lloydchristmas1231-ashbuch",
+  "author": "lloydchristmas1231",
+  "url": "https://huggingface.co/lloydchristmas1231/ashbuch",
+  "created_at": "2026-09-01T15:59:41.000Z",
+  "updated_at": "2026-09-01T16:37:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778220933,
+  "storage_human": "778 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lloydchristmas1231/kyshall at main - Hugging Face",
+      "url": "https://huggingface.co/lloydchristmas1231/kyshall/tree/main",
+      "snippet": "lloydchristmas1231 / kyshall like 0 Text-to-Image Diffusers lora krea2 template:sd-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model Libraries Diffusers How to use lloydchristmas1231/kyshall with Diffusers:"
+    },
+    {
+      "title": "lloydchristmas1231/kaithamb · Hugging Face",
+      "url": "https://huggingface.co/lloydchristmas1231/kaithamb",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - 12britz/awesome-free-models: A curated list of free AI models ...",
+      "url": "https://github.com/12britz/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. - 12britz/awesome-free-models"
+    },
+    {
+      "title": "AI Content Detector | ChatGPT, Copilot Claude and 40+",
+      "url": "https://contentdetector.org/",
+      "snippet": "AI Content Detector for Real-World Writing ContentDetector.org helps you check if a passage was likely written by an AI model. Paste text, upload a file, or drop in a URL. In a few seconds you get a clear score, section-by-section highlights, and simple guidance to keep your content authentic and publish-ready. Built for editors, marketers, educators, and teams that care about trust."
+    },
+    {
+      "title": "AI Detector - 100% FREE AI Checker (Unlimited Words)",
+      "url": "https://aidetector.com/",
+      "snippet": "Instantly detect AI-generated text from ChatGPT, GPT-4, Claude, Gemini, and other popular models."
+    }
+  ]
+}

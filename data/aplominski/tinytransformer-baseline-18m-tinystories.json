@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "aplominski/TinyTransformer-Baseline-18M-TinyStories",
+  "slug": "aplominski-tinytransformer-baseline-18m-tinystories",
+  "author": "aplominski",
+  "url": "https://huggingface.co/aplominski/TinyTransformer-Baseline-18M-TinyStories",
+  "created_at": "2026-09-01T15:24:58.000Z",
+  "updated_at": "2026-09-01T15:26:51.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "arxiv:1706.03762",
+    "arxiv:1607.06450",
+    "arxiv:1910.07467",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18455552,
+  "parameters_human": "18.5M",
+  "storage_bytes": 73830344,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TinyTransformer 10M - TinyStories - Hugging Face",
+      "url": "https://huggingface.co/aplominski/TinyTransformer-Baseline-10M-TinyStories",
+      "snippet": "A 10M parameter TinyTransformer model trained on the TinyStories dataset. This model is part of a research series investigating the effect of normalization strategies in small Transformer models."
+    },
+    {
+      "title": "TinyTransformer 5M - TinyStories - Hugging Face",
+      "url": "https://huggingface.co/aplominski/TinyTransformer-Baseline-5M-TinyStories",
+      "snippet": "A 5M parameter TinyTransformer model trained on the TinyStories dataset. This model is part of a research series investigating the effect of normalization strategies in small Transformer models. All models in the series use the same dataset and are trained under the same experimental setup, with normalization being the primary architectural ..."
+    },
+    {
+      "title": "Training on TinyStories | mocibb/cs336 | DeepWiki",
+      "url": "https://deepwiki.com/mocibb/cs336/2.4-training-on-tinystories",
+      "snippet": "Training on TinyStories Relevant source files Purpose and Scope This page provides a practical guide for training Transformer language models on the TinyStories dataset, covering the complete workflow from data preparation through model training to text generation. This guide demonstrates how the components documented in BPE Tokenization System, Transformer Model Architecture, and Training ..."
+    },
+    {
+      "title": "skolouri/TinyTransformer: Mathematics of AI - GitHub",
+      "url": "https://github.com/skolouri/TinyTransformer",
+      "snippet": "Mathematics of AI - Transformer Networks. Contribute to skolouri/TinyTransformer development by creating an account on GitHub."
+    },
+    {
+      "title": "AGNES AI - Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    }
+  ]
+}

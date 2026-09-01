@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dileepkumar5175/face_to_anime",
+  "slug": "dileepkumar5175-face_to_anime",
+  "author": "dileepkumar5175",
+  "url": "https://huggingface.co/dileepkumar5175/face_to_anime",
+  "created_at": "2026-09-01T14:13:31.000Z",
+  "updated_at": "2026-09-01T14:17:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 339576865,
+  "storage_human": "340 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Photo to Anime Converter: AI Anime Filter Online Free | Fotor",
+      "url": "https://www.fotor.com/features/photo-to-anime/",
+      "snippet": "Turn any photo into an anime character, anime avatar, or anime illustration. Upload your image, select from 54+ anime styles, and let Fotor&#x27;s AI photo-to-anime converter create anime pictures with detailed results. Perfect for profile pictures, social media avatars, pet anime artworks, or fun creative projects, no drawing skills."
+    },
+    {
+      "title": "Free Anime AI Art Generator - Create AI Art Online | PixAI",
+      "url": "https://pixai.art/",
+      "snippet": "Generate anime AI art for free. Explore 1.5M+ anime models & LoRAs — type a prompt, get art in seconds. Daily free credits, no skill needed."
+    },
+    {
+      "title": "Face to Anime with AnimeGANv2",
+      "url": "https://colab.research.google.com/github/eugenesiow/practical-ml/blob/master/notebooks/Face_to_Anime_with_AnimeGANv2.ipynb",
+      "snippet": "First we load a model and define a function that will use the model to do the style transfer to convert our face to anime. torch.hub.load - Loads the pre-trained model checkpoints and the model code from github. We first load the face_paint_512_v2 model weights. to_animegan2 - The function we define that takes in the input file path, loads it with PIL and converts it to a tensor. It then runs ..."
+    },
+    {
+      "title": "Anime AI Generator: Turn Photos into Anime Avatars | DreamFace",
+      "url": "https://www.dreamfaceapp.com/tools/anime-ai-generator",
+      "snippet": "Use DreamFace Anime AI Generator to turn selfies, portraits, and photos into anime avatars, anime art, and profile pictures online for free in minutes with high-quality results."
+    },
+    {
+      "title": "AI Anime Generator (free, no sign-up, unlimited) - Perchance",
+      "url": "https://perchance.org/ai-anime-generator",
+      "snippet": "Free AI anime art generator from text - text to anime with no restrictions on daily usage/credits, no login, unlimited, really fast. Create beautiful anime girls and guys from a text description, or create your own imaginary anime scenes/screencaps."
+    }
+  ]
+}

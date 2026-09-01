@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "i1j/reranker-ndcgloss2pp",
+  "slug": "i1j-reranker-ndcgloss2pp",
+  "author": "i1j",
+  "url": "https://huggingface.co/i1j/reranker-ndcgloss2pp",
+  "created_at": "2026-09-01T15:16:12.000Z",
+  "updated_at": "2026-09-01T15:19:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "cross-encoder",
+    "reranker",
+    "text-ranking",
+    "base_model:BAAI/bge-reranker-v2-m3",
+    "base_model:finetune:BAAI/bge-reranker-v2-m3",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 567755777,
+  "parameters_human": "567.8M",
+  "storage_bytes": 2287853289,
+  "storage_human": "2.3 GB",
+  "base_model": "BAAI/bge-reranker-v2-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - agentset-ai/awesome-rerankers: A curated list of reranking ...",
+      "url": "https://github.com/agentset-ai/awesome-rerankers",
+      "snippet": "A curated list of reranking models, libraries, and resources for RAG applications. Rerankers take a query and retrieved documents and reorder them by relevance. They use cross-encoders to jointly encode query-document pairs, which is slower than vector search but more accurate. Typical pipeline: retrieve 50-100 candidates with vector search, rerank to top 3-5."
+    },
+    {
+      "title": "el1jah184/reranker-ndcgloss2pp · Discussions - Hugging Face",
+      "url": "https://huggingface.co/el1jah184/reranker-ndcgloss2pp/discussions",
+      "snippet": "Instructions to use el1jah184/reranker-ndcgloss2pp with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sentence-transformers How to use el1jah184/reranker-ndcgloss2pp with sentence-transformers:"
+    },
+    {
+      "title": "jinaai/jina-reranker-v1-tiny-en · Hugging Face",
+      "url": "https://huggingface.co/jinaai/jina-reranker-v1-tiny-en",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Rerankers for RAG | Leaderboard - Agentset",
+      "url": "https://agentset.ai/rerankers",
+      "snippet": "Compare the best rerankers for RAG. Cohere Rerank, Voyage, Jina, and BGE reranker benchmarked on accuracy, latency, and cost."
+    },
+    {
+      "title": "GitHub - AnswerDotAI/rerankers: A lightweight, low-dependency, unified ...",
+      "url": "https://github.com/AnswerDotAI/rerankers",
+      "snippet": "A lightweight, low-dependency, unified API to use all common reranking and cross-encoder models. - AnswerDotAI/rerankers"
+    }
+  ]
+}

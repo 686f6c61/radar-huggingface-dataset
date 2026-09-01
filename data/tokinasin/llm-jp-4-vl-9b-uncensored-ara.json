@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "tokinasin/llm-jp-4-vl-9b-uncensored-ara",
+  "slug": "tokinasin-llm-jp-4-vl-9b-uncensored-ara",
+  "author": "tokinasin",
+  "url": "https://huggingface.co/tokinasin/llm-jp-4-vl-9b-uncensored-ara",
+  "created_at": "2026-09-01T12:25:41.000Z",
+  "updated_at": "2026-09-01T12:56:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llmjpvl",
+    "feature-extraction",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "en",
+    "ja",
+    "dataset:llm-jp/Jagle",
+    "dataset:llm-jp/RefinedVision",
+    "dataset:nvidia/Nemotron-Image-Training-v3",
+    "dataset:llm-jp/llm-jp-4-thinking-sft-data",
+    "arxiv:2504.10479",
+    "arxiv:2604.02048",
+    "arxiv:2604.00909",
+    "base_model:llm-jp/llm-jp-4-vl-9b",
+    "base_model:finetune:llm-jp/llm-jp-4-vl-9b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9054667200,
+  "parameters_human": "9.05B",
+  "storage_bytes": 18123018523,
+  "storage_human": "18.1 GB",
+  "base_model": "llm-jp/llm-jp-4-vl-9b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "llm-jp-4-vl-9b-beta - Hugging Face",
+      "url": "https://huggingface.co/llm-jp/llm-jp-4-vl-9b-beta",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tokinasin/llm-jp-4-8b-instruct-uncensored-ara · Hugging Face",
+      "url": "https://huggingface.co/tokinasin/llm-jp-4-8b-instruct-uncensored-ara",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM-jp-4-VL - GitHub",
+      "url": "https://github.com/llm-jp/llm-jp-4-vl",
+      "snippet": "LLM-jp-4-VL is a series of vision-language models developed by LLM-jp. Currently, only a beta version is available. This repository provides sample code for running inference with the LLM-jp-4-VL models. LLM-jp-4-VL model architecture."
+    },
+    {
+      "title": "LLM-jp-4-VL 9Bリリース",
+      "url": "https://llm-jp.nii.ac.jp/blog/llm-jp-4-vl-9b/",
+      "snippet": "図：カテゴリ別評価結果 LLM-jp-4-VL 9Bは、beta版と比べて、テキストのみのタスクの性能が大きく改善しました。この理由として、ベースLLMをllm-jp-4-8b-thinkingに変更したことやllm-jp-4-thinking-sft-dataを用いたことが考えられます。 また、HakushoBenchなどの高難度図表理解タスクでもbeta版より性能が向上 ..."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "📚 Related: VRAM Requirements for Local LLMs · Qwen Models Guide · Mistral & Mixtral Guide · Best LLMs for Writing Ask a standard instruct model to write a scene where a character dies on-page and you&#x27;ll get a polite refusal. Ask it to walk through the chemistry of explosives for a novel and it&#x27;ll lecture you about safety. Ask it to roleplay a villain and it&#x27;ll break character mid ..."
+    }
+  ]
+}

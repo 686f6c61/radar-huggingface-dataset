@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "darelphilip/mmbert-hinglish-mvp",
+  "slug": "darelphilip-mmbert-hinglish-mvp",
+  "author": "darelphilip",
+  "url": "https://huggingface.co/darelphilip/mmbert-hinglish-mvp",
+  "created_at": "2026-09-01T17:03:33.000Z",
+  "updated_at": "2026-09-01T17:03:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34363453,
+  "storage_human": "34 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mmBERT: ModernBERT goes Multilingual - Hugging Face",
+      "url": "https://huggingface.co/blog/mmbert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jhu-clsp/mmBERT-base · Hugging Face",
+      "url": "https://huggingface.co/jhu-clsp/mmBERT-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mmBERT: a Multilingual Modern Encoder through Adaptive Scheduling",
+      "url": "https://arxiv.org/html/2509.06888v1",
+      "snippet": "Overall, mmBERT is the first model to show significant improvements over XLM-R for massively multilingual data while also introducing new techniques for multilingual LM pre-training that apply to both encoders and decoders."
+    },
+    {
+      "title": "GitHub - JHU-CLSP/mmBERT: A massively multilingual modern encoder ...",
+      "url": "https://github.com/JHU-CLSP/mmBERT/",
+      "snippet": "🌍 TL;DR: State-of-the-art multilingual encoder models trained on 3T tokens across 1833 languages with novel annealed language learning. Outperforms XLM-R and can even beat OpenAI&#x27;s o3 and Google&#x27;s Gemini 2.5 Pro. 📄 Paper | 🤗 Model Collection | 📊 Training Data mmBERT introduces the first modern multilingual encoder trained with cascading annealed language learning (ALL ..."
+    },
+    {
+      "title": "raw.githubusercontent.com",
+      "url": "https://raw.githubusercontent.com/huggingface/blog/refs/heads/main/mmbert.md",
+      "snippet": "When exposed to new languages, the model can quickly adapt existing cross-lingual representations rather than learning from scratch. **Model Merging Benefits**: The final mmBERT models successfully retain most of the decay-phase improvements while benefiting from the English-focused and high-resource variants through TIES merging."
+    }
+  ]
+}

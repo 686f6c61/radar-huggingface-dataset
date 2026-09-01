@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "yonghoon96/ogbench-bc-flow-policies",
+  "slug": "yonghoon96-ogbench-bc-flow-policies",
+  "author": "yonghoon96",
+  "url": "https://huggingface.co/yonghoon96/ogbench-bc-flow-policies",
+  "created_at": "2026-09-01T19:09:13.000Z",
+  "updated_at": "2026-09-01T19:40:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5165631788,
+  "storage_human": "5.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OGBench: Benchmarking Offline Goal-Conditioned RL - GitHub",
+      "url": "https://github.com/seohongpark/ogbench",
+      "snippet": "OGBench is a benchmark designed to facilitate algorithms research in offline goal-conditioned reinforcement learning (RL), offline unsupervised RL, and offline RL. See the project page for videos and more details about the environments, tasks, and datasets."
+    },
+    {
+      "title": "Behavioral cloning mystery - seohong.me",
+      "url": "https://seohong.me/blog/behavioral-cloning-mystery/",
+      "snippet": "I&#x27;ve recently started working in robotics, where I&#x27;ve had the chance to train many behavioral cloning (BC) and reinforcement learning (RL) policies on real robot data. My impression so far is: real-world demonstration data is very different from the data in existing simulated RL benchmarks (e.g., D4RL, OGBench, etc.). In particular, I&#x27;ve noticed that there are many mysterious phenomena that ..."
+    },
+    {
+      "title": "[2602.05051] ReFORM: Reflected Flows for On-support Offline RL via ...",
+      "url": "https://arxiv.org/abs/2602.05051",
+      "snippet": "We propose ReFORM, an offline RL method based on flow policies that enforces the less restrictive support constraint by construction. ReFORM learns a behavior cloning (BC) flow policy with a bounded source distribution to capture the support of the action distribution, then optimizes a reflected flow that generates bounded noise for the BC flow ..."
+    },
+    {
+      "title": "GitHub - 2bhapby/trqam · GitHub",
+      "url": "https://github.com/2bhapby/trqam",
+      "snippet": "Paper Blog Summary: Trust Region Q Adjoint Matching (TRQAM) is a stable off-policy RL algorithm for fine-tuning pretrained flow policies under a path-space KL trust region against the pretrained policy, enforced via dual descent. On 50 OGBench tasks, TRQAM reaches 68% aggregate offline success, compared to 46% for the strongest baseline."
+    },
+    {
+      "title": "OGBench - seohong.me",
+      "url": "https://seohong.me/projects/ogbench/",
+      "snippet": "OGBench is a benchmark designed to facilitate algorithms research in offline goal-conditioned RL, offline unsupervised RL, and offline RL."
+    }
+  ]
+}

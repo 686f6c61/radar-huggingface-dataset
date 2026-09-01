@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ads2009/turkish-ai-text-detector-convbert-v6",
+  "slug": "ads2009-turkish-ai-text-detector-convbert-v6",
+  "author": "ads2009",
+  "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-convbert-v6",
+  "created_at": "2026-09-01T16:16:13.000Z",
+  "updated_at": "2026-09-01T16:16:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "convbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 107407754,
+  "parameters_human": "107.4M",
+  "storage_bytes": 429666984,
+  "storage_human": "430 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Text Detector - Free AI Detector - AI Detection in Seconds",
+      "url": "https://duckduckgo.com/y.js?ad_domain=grammarly.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=%2DDIx8%2DCFXM3Mt_cly74Cdl2PwsM8IaMBAZU3uYCM0no4j4y5JbsJiW44rWFSPfR6Zc5lCUw5MB_clQcSqoLwfR60cjyG0Mr0RFNCSVsxZZyF8GC01fjAmWJMg8rs3X1D33YDX7ycu8TShM2Zim4p1%2D9ryX2mYSIASnDd0DCnjaU.BKm21EG2u95idpM3zCBuZw&rut=cd36a6ce0ceb686a3872f6d5bdfa9222c7410123dc29318afa0b45ad86e2fb77&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De883UPn9Qxgu5%2D5r6YZzfy9zVUCUx3lpAX99ufmaWiYJXnpra1b8mfTFfDsxrT9tQrR4tapM4yUnrc1HysQ8BZOiKxVKVOuyrTLPCzVZZnuc3WCfnAwq_dP8bb64Orur8wjz8gXd6JhmfQDsz6ixnDIIfQy0XcfE6i%2Dpoq0wSRXsfb_50dWEnq6yEyyAaurrlh1mceRPUSIaUzclY_6E0W7dYi1Ck%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuZ3JhbW1hcmx5LmNvbSUyZmFpLWRldGVjdG9yJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkNjI3NjEzNTA2JTI2dXRtX2NvbnRlbnQlM2Q4MTk4MjQ4MjQ2MjQ5OCUyNnV0bV90ZXJtJTNkYWklMjUyMGRldGVjdG9yJTI1MjB0dXJuaXRpbiUyNTIwZnJlZSUyNnV0bV9idSUzZGNvcnAlMjZrZXl3b3JkaWQlM2Q4MTk4MjczNzA0MTg3MCUyNnRhcmdldGlkJTNka3dkLTgxOTgyNzM3MDQxODcwJTNhbG9jLTY2JTI2YWRncm91cCUzZDEzMTE3MTg2NzMwNzIxMTElMjZkZXZpY2UlM2RjJTI2bWF0Y2h0eXBlJTNkYiUyNm5ldHdvcmslM2RzJTI2ZXh0ZW5zaW9uJTNkJTI2Y2xpY2tpZCUzZGY0NjY3MGNlOTg3YTExYmQ3YjhiMWE1OTk4NzNhZDA3JTI2Z2NsaWQlM2RmNDY2NzBjZTk4N2ExMWJkN2I4YjFhNTk5ODczYWQwNyUyNm1zY2xraWQlM2RmNDY2NzBjZTk4N2ExMWJkN2I4YjFhNTk5ODczYWQwNw%26rlid%3Df46670ce987a11bd7b8b1a599873ad07&vqd=4-247518063257899429179897480228419879502&iurl=%7B1%7DIG%3D59B8A60357AE41068FEC35B49B220075%26CID%3D2239D1F500E46B6C33C3C63201EA6AB9%26ID%3DDevEx%2C5036.1",
+      "snippet": "Grammarly&#x27;s free AI checker is trained to detect AI-generated content and help you fix it. Detect AI-generated content from Grammarly, ChatGPT, Google Gemini, and others in a click."
+    },
+    {
+      "title": "Check For AI & Humanize Text - Humanize Your AI Text",
+      "url": "https://duckduckgo.com/y.js?ad_domain=justdone.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=VqPBAxNvIUjPdPcL57eApVtolSVnuiDUfNvrJ4iOQbooyvuLAoVMmd0dOM6_Wucp99BOu1mNuPHyNUsbOdylGYFnILkHO5SVHJGW9lVor0KtUstWDWLhwuQja80gr%2DqFcNR8VcRcF_aRtyzHUhbO5PFIoH9HZi5JsJowBn0Rfzo.yLW02JmqTzgbpPdtp%2DXKKQ&rut=5a52473ed88f9fc2c24d7d507fc5945b82073ed86744a7fab423b9686feb3e48&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8DRHFSf72iOu0nLLO8l3RRzVUCUzFsCx4K3BQlgti9nSgkny3vXCIwbNpM6kHo33rWf83SlXb4dbR7GXkIQetGXKaf2GAoRMCeCn6iXHJOMg5ppq5SpgzIyGITuAKNF7Y923_d9ge5oKNI7mJLm72kEWFWKuqrOVncCxGojbZzKc4NOpXbBISmkvJb3v8rqYpe5kTEMebSFII5T8%2D6rhA8YVQc2g%26u%3DaHR0cHMlM2ElMmYlMmZqdXN0ZG9uZS5jb20lMmZhaS1kZXRlY3RvciUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZDQ4NzA1NDExMCUyNnV0bV9jb250ZW50JTNkMTIzODA1MTM0NTk5NTI3NiUyNnV0bV9hZHNldF9pZCUzZDEyMzgwNTEzNDU5OTUyNzYlMjZ1dG1fdGVybSUzZGNvbnRlbnQlMjUyMGFpJTI1MjBjaGVjayUyNnV0bV9uZXR3b3JrJTNkcyUyNnV0bV9tYXRjaHR5cGUlM2RwJTI2bXNjbGtpZCUzZGJiMzEyNjQ2MDFhMjE0ZTMyMjRjNGNkMTAxYWI3ODlk%26rlid%3Dbb31264601a214e3224c4cd101ab789d&vqd=4-203347945726515317987795068780356412318&iurl=%7B1%7DIG%3D59B8A60357AE41068FEC35B49B220075%26CID%3D2239D1F500E46B6C33C3C63201EA6AB9%26ID%3DDevEx%2C5042.1",
+      "snippet": "Content ai check: Fast, Reliable & User-friendly. Perfect For Writers & Professionals. Fast & Accurate AI Checker for ChatGPT, GPT-5, Gemini"
+    },
+    {
+      "title": "ads2009/turkish-ai-text-detector-berturk · Hugging Face",
+      "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-berturk",
+      "snippet": "Instructions to use ads2009/turkish-ai-text-detector-berturk with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ads2009/turkish-ai-text-detector-berturk with Transformers:"
+    },
+    {
+      "title": "ads2009/turkish-ai-text-detector-distilberturk-v3 at main",
+      "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-distilberturk-v3/tree/main",
+      "snippet": "Instructions to use ads2009/turkish-ai-text-detector-distilberturk-v3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Turkish AI Detector - yehos.info",
+      "url": "https://www.yehos.info/work/turkish-ai-detector",
+      "snippet": "Detecting AI-generated Turkish text using transfer learning on a Turkish BERT model."
+    }
+  ]
+}

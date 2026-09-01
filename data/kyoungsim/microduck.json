@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "kyoungsim/microduck",
+  "slug": "kyoungsim-microduck",
+  "author": "kyoungsim",
+  "url": "https://huggingface.co/kyoungsim/microduck",
+  "created_at": "2026-09-01T11:29:40.000Z",
+  "updated_at": "2026-09-01T11:30:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "mujoco",
+    "humanoid",
+    "bipedal",
+    "en",
+    "ko",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32324659,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    },
+    {
+      "title": "kyoungsim (ankyoungsim) - Hugging Face",
+      "url": "https://huggingface.co/kyoungsim",
+      "snippet": "Sort: Recently updated. kyoungsim/gemma-2b-brain-v2. 1B • Updated about 7 hours ago. kyoungsim/marketing-ai-youngsuk. Text Generation • 0.5B • Updated 11 days ago • 127"
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "kyoungsim (ankyoungsim) - Hugging Face",
+      "url": "https://huggingface.co/kyoungsim/models",
+      "snippet": "Recent Activity updated a modelabout 7 hours ago kyoungsim/gemma-2b-brain-v2 published a modelabout 7 hours ago kyoungsim/gemma-2b-brain-v2 updated a model11 days ago kyoungsim/marketing-ai-youngsuk View all activity"
+    },
+    {
+      "title": "This MicroDuck Robot, Powered by an RK3566, Has No Arms But Uses AI and ...",
+      "url": "https://circuitdigest.com/news/this-microduck-robot-based-on-an-rk3566-has-no-arms-but-picks-things-up-using-ai-and-reinforcement-learning",
+      "snippet": "Discover Microduck, a $399 biped robot from Hugging Face & Pollen Robotics. Learn about its RK3566 chip, AI, reinforcement learning, and sim-to-real workflow."
+    }
+  ]
+}

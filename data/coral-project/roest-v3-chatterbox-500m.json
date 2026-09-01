@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "CoRal-project/roest-v3-chatterbox-500m",
+  "slug": "coral-project-roest-v3-chatterbox-500m",
+  "author": "CoRal-project",
+  "url": "https://huggingface.co/CoRal-project/roest-v3-chatterbox-500m",
+  "created_at": "2025-09-22T08:48:59.000Z",
+  "updated_at": "2026-09-01T15:21:10.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "chatterbox",
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "chatterbox",
+    "text-to-speech",
+    "da",
+    "dataset:CoRal-project/coral-tts",
+    "dataset:alexandrainst/nota",
+    "dataset:alexandrainst/ftspeech",
+    "dataset:alexandrainst/nst-da",
+    "base_model:ResembleAI/chatterbox",
+    "base_model:finetune:ResembleAI/chatterbox",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 109,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5362643548,
+  "storage_human": "5.4 GB",
+  "base_model": "ResembleAI/chatterbox",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CoRal-project/roest-v3-chatterbox-500m · Hugging Face",
+      "url": "https://huggingface.co/CoRal-project/roest-v3-chatterbox-500m",
+      "snippet": "The model is a finetuned variant of Chatterbox Multilingual, one of the leading open-source text-to-speech models. The base Chatterbox model is built on a 0.5B Llama backbone and trained on more than 500,000 hours of high-quality multilingual speech data across 23 languages, including Danish."
+    },
+    {
+      "title": "CoRal-project/roest-v3-chatterbox-500m at main - Hugging Face",
+      "url": "https://huggingface.co/CoRal-project/roest-v3-chatterbox-500m/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "roest-dotnet/docs/tts-landscape.md at main · yury-opolev ... - GitHub",
+      "url": "https://github.com/yury-opolev/roest-dotnet/blob/main/docs/tts-landscape.md",
+      "snippet": "1. CoRal Røst-v3-Chatterbox-500m ⭐ recommended What: Danish fine-tune of ResembleAI&#x27;s Chatterbox Multilingual, by the Alexandra Institute / CoRal project. State-of-the-art for Danish today. Architecture: 0.5 B Llama backbone, audio-token LM (same family as Chatterbox). Fine-tuned on 2 000+ hours of Danish on top of the 500 k-hour multilingual base. Speakers: two pre-defined voices, Mic and ..."
+    },
+    {
+      "title": "GitHub - yury-opolev/roest-dotnet: Røst-v3, runnable natively in .NET ...",
+      "url": "https://github.com/yury-opolev/roest-dotnet",
+      "snippet": "Uses CoRal Røst-v3-Chatterbox-500m (MOS 4.23/5, includes male and female Danish voices) running in a Docker container, with a thin C# CLI talking to it over HTTP."
+    },
+    {
+      "title": "Fine-tuned Models for ResembleAI/chatterbox - Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/models?other=base_model:finetune:ResembleAI/chatterbox",
+      "snippet": "CoRal-project/roest-v3-chatterbox-500m Text-to-Speech •Updated 23 days ago• 38 • 4"
+    }
+  ]
+}

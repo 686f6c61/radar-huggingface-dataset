@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "AlayaNeW/GLM-5.2-DSpark",
+  "slug": "alayanew-glm-5-2-dspark",
+  "author": "AlayaNeW",
+  "url": "https://huggingface.co/AlayaNeW/GLM-5.2-DSpark",
+  "created_at": "2026-09-01T11:31:29.000Z",
+  "updated_at": "2026-09-01T11:51:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_dspark",
+    "feature-extraction",
+    "speculative-decoding",
+    "dspark",
+    "glm-5.2",
+    "draft-model",
+    "text-generation",
+    "custom_code",
+    "zh",
+    "en",
+    "arxiv:2607.05147",
+    "base_model:zai-org/GLM-5.2",
+    "base_model:finetune:zai-org/GLM-5.2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4389682945,
+  "parameters_human": "4.39B",
+  "storage_bytes": 8779372762,
+  "storage_human": "8.8 GB",
+  "base_model": "zai-org/GLM-5.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mgoin/GLM-5.2-speculator.dspark · Hugging Face",
+      "url": "https://huggingface.co/mgoin/GLM-5.2-speculator.dspark",
+      "snippet": "Overview A DSpark speculator model for the zai-org/GLM-5.2-FP8 base model, enabling faster inference through speculative decoding. DSpark extends the DFlash parallel draft backbone with two lightweight heads: a Markov logit-bias head (low-rank intra-block token dependency) and a per-position confidence head (accept-rate prediction). Trained with the speculators library."
+    },
+    {
+      "title": "GLM model — GLM-5.2 benchmark test and 1M context guide",
+      "url": "https://www.glmmodel.net/",
+      "snippet": "A comprehensive comparison of each GLM model. GLM-5.2 achieves 81.0 on Terminal-Bench 2.1 and 74.4 on FrontierSWE, with a context of one million tokens — and also provides a free AI sandbox."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/FW-GLM-5.2",
+      "snippet": "About this model GLM-5.2 is Z.ai&#x27;s latest flagship model for long-horizon tasks. It delivers a solid 1M-token context window, stronger coding capabilities with multiple thinking effort levels, and architectural improvements for efficient long-context inference. GLM-5.2 uses the GLM MoE DSA architecture and introduces IndexShare, which reuses the same indexer across every four sparse attention ..."
+    },
+    {
+      "title": "GLM 5.2: Complete Specifications, Pricing, API Access & Use Cases (2026)",
+      "url": "https://gate.ai/blog/glm-5-2-z-ai-specs-pricing-api-use-cases",
+      "snippet": "What Is GLM 5.2? GLM 5.2 is Z.ai&#x27;s long-context reasoning and coding large language model, released on June 16, 2026, featuring a verified 1M-token context window and long-horizon coding-agent capability, with provider API pricing of &#92;$1.40 per 1M input tokens and &#92;$4.40 per 1M output tokens as of July 2026. Z.ai&#x27;s documentation describes GLM-5.2 as a flagship foundation model for long ..."
+    },
+    {
+      "title": "GitHub - bird/GLM-spark: Serve GLM-5.2 469B (REAP-pruned, NVFP4) across ...",
+      "url": "https://github.com/bird/GLM-spark",
+      "snippet": "Serve the GLM-5.2-NVFP4-REAP-469B model (753B → 469B REAP-pruned, NVFP4 quantized) across a cluster of three NVIDIA DGX Spark nodes using vLLM with pipeline parallelism. Kept as the minimal-hardware option (3 nodes, no switch needed with dual direct links) and for its much higher prefill; for everything else prefer the 4× recipe above. Context: 256K tokens Throughput: ~4.4 tok/s decode ..."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Rin247/Qwen3.6-35B-A3B-Uncensored-Aquarion-FP8",
+  "slug": "rin247-qwen3-6-35b-a3b-uncensored-aquarion-fp8",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Qwen3.6-35B-A3B-Uncensored-Aquarion-FP8",
+  "created_at": "2026-09-01T16:08:02.000Z",
+  "updated_at": "2026-09-01T16:10:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe_text",
+    "text-generation",
+    "quantized",
+    "fp8",
+    "uncensored",
+    "abliterated",
+    "conversational",
+    "endpoints_compatible",
+    "fp8_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 67911274679,
+  "storage_human": "67.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rin247/Qwen3.6-27B-Uncensored-Aquarion-FP8 · Hugging Face",
+      "url": "https://huggingface.co/Rin247/Qwen3.6-27B-Uncensored-Aquarion-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B Uncensored: A 35B MoE Model With 262K Context",
+      "url": "https://hackernoon.com/qwen36-35b-a3b-uncensored-a-35b-moe-model-with-262k-context",
+      "snippet": "Overview Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive is an uncensored variant of Qwen&#x27;s 35B mixture-of-experts language model, maintained by HauhauCS. The model contains 35 billion total parameters with approximately 3 billion active per forward pass through a sparse expert architecture. It features a hybrid attention design combining linear attention with full softmax attention in a 3:1 ..."
+    },
+    {
+      "title": "Qwen3-Aquarion - a Rin247 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Rin247/qwen3-aquarion",
+      "snippet": "Contains FP8, INT8, INT4 and FP4 weight-only safetensors quants of the Qwen3 series, used for Anima, Krea2, Z-Image and Klein."
+    },
+    {
+      "title": "GitHub - 347867019/Qwen3.6-35B-A3B-FP8",
+      "url": "https://github.com/347867019/Qwen3.6-35B-A3B-FP8",
+      "snippet": "Qwen3.6-35B-A3B-FP8 Note This repository contains FP8-quantized model weights and configuration files for the post-trained model in the Hugging Face Transformers format. These artifacts are compatible with Hugging Face Transformers, vLLM, SGLang, KTransformers, etc."
+    },
+    {
+      "title": "qwen-qwen3.6-35b-a3b-fp8/README.md at main - GitHub",
+      "url": "https://github.com/Damacol/qwen-qwen3.6-35b-a3b-fp8/blob/main/README.md",
+      "snippet": "Qwen/Qwen3.6-35B-A3B-FP8 - Private, Uncensored AI for Real Creators and Devs Tired of AI that babysits you, logs your prompts, or hits you with \"I can&#x27;t do that\"? Meet the next-gen chatbot built for freedom, speed, and digital sovereignty."
+    }
+  ]
+}

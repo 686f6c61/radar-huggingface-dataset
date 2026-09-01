@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "deeprcurs/MBG-1.0",
+  "slug": "deeprcurs-mbg-1-0",
+  "author": "deeprcurs",
+  "url": "https://huggingface.co/deeprcurs/MBG-1.0",
+  "created_at": "2026-09-01T16:23:48.000Z",
+  "updated_at": "2026-09-01T17:54:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mbg-l1-prototype",
+    "mbg",
+    "model-bahasa-garuda",
+    "trinity-mirror",
+    "omni-sparse-hybrid",
+    "mixture-of-experts",
+    "moe",
+    "ssm",
+    "mamba",
+    "mla",
+    "ternary",
+    "gum",
+    "galore",
+    "muon",
+    "low-rank-optimization",
+    "language-model",
+    "text-generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17055808,
+  "parameters_human": "17.1M",
+  "storage_bytes": 74543753,
+  "storage_human": "75 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deeprcurs (deepRcurs Labs) - Hugging Face",
+      "url": "https://huggingface.co/deeprcurs",
+      "snippet": "Org profile for deepRcurs Labs on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "deeprcurs/OICIO · Hugging Face",
+      "url": "https://huggingface.co/deeprcurs/OICIO",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - danielgatis/rembg: Rembg is a tool to remove images background",
+      "url": "https://github.com/danielgatis/rembg",
+      "snippet": "A state-of-the-art background removal model by BRIA AI. At ~1.02 GB it is the largest local model here and runs at 1024x1024, so it is slower than u2net; pass -m u2net for a smaller, faster model with blockier edges. Note that RMBG-2.0 is released under a BRIA license that requires a paid agreement for commercial use."
+    },
+    {
+      "title": "GitHub - ornith-ai/Ornith-1 · GitHub",
+      "url": "https://github.com/ornith-ai/Ornith-1",
+      "snippet": "Model weights at HuggingFace, and more details can be found at blog. 🐦 Ornith-1.0 — the first release, which jointly optimizes the scaffold and the resulting solution rollouts. Model weights at HuggingFace, and more details can be found at blog. Both generations are MIT licensed, globally accessible, and free from regional limitations."
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    }
+  ]
+}

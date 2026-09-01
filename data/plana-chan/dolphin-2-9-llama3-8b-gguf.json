@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Plana-Chan/dolphin-2.9-llama3-8b-GGUF",
+  "slug": "plana-chan-dolphin-2-9-llama3-8b-gguf",
+  "author": "Plana-Chan",
+  "url": "https://huggingface.co/Plana-Chan/dolphin-2.9-llama3-8b-GGUF",
+  "created_at": "2026-09-01T19:16:00.000Z",
+  "updated_at": "2026-09-01T19:16:00.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "generated_from_trainer",
+    "axolotl",
+    "TensorBlock",
+    "GGUF",
+    "dataset:cognitivecomputations/Dolphin-2.9",
+    "dataset:teknium/OpenHermes-2.5",
+    "dataset:m-a-p/CodeFeedback-Filtered-Instruction",
+    "dataset:cognitivecomputations/dolphin-coder",
+    "dataset:cognitivecomputations/samantha-data",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "dataset:microsoft/orca-math-word-problems-200k",
+    "dataset:abacusai/SystemChat-1.1",
+    "dataset:Locutusque/function-calling-chatml",
+    "dataset:internlm/Agent-FLAN",
+    "base_model:dphn/dolphin-2.9-llama3-8b",
+    "base_model:quantized:dphn/dolphin-2.9-llama3-8b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030277632,
+  "parameters_human": "8.03B",
+  "storage_bytes": 7198070400,
+  "storage_human": "7.2 GB",
+  "base_model": "cognitivecomputations/dolphin-2.9-llama3-8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dphn/dolphin-2.9-llama3-8b · Hugging Face",
+      "url": "https://huggingface.co/dphn/dolphin-2.9-llama3-8b",
+      "snippet": "A helpful and friendly AI assistant, Dolphin avoids discussing the system message unless directly asked about it.\" My appreciation for the sponsors of Dolphin 2.9: Crusoe Cloud - provided excellent on-demand 10xL40S node This model is based on Llama-3-8b, and is governed by META LLAMA 3 COMMUNITY LICENSE AGREEMENT"
+    },
+    {
+      "title": "dphn/dolphin-2.9-llama3-8b-gguf · Hugging Face",
+      "url": "https://huggingface.co/dphn/dolphin-2.9-llama3-8b-gguf",
+      "snippet": "My appreciation for the sponsors of Dolphin 2.9: Crusoe Cloud - provided excellent on-demand 10xL40S node This model is based on Llama-3-8b, and is governed by META LLAMA 3 COMMUNITY LICENSE AGREEMENT The base model has 8k context, and the full-weight fine-tuning was with 4k sequence length. It took 2.5 days on 8x L40S provided by Crusoe Cloud"
+    },
+    {
+      "title": "dolphin-2.9-llama3-8b: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/dolphin-29-llama3-8b-cognitivecomputations",
+      "snippet": "A: dolphin-2.9.4-llama3.1-8b is the recommended successor with 128K context support versus 4K here, improved training, and Llama 3.1 architectural benefits. Use 2.9.4 for new work; use 2.9 only if you have specific Llama 3 compatibility requirements. Q: What is the system message contamination issue?"
+    },
+    {
+      "title": "dolphin-2.9-llama3-8b · Models",
+      "url": "https://ollama.modelscope.cn/models/dphn/dolphin-2.9-llama3-8b/summary",
+      "snippet": "A helpful and friendly AI assistant, Dolphin avoids discussing the system message unless directly asked about it.\" My appreciation for the sponsors of Dolphin 2.9: Crusoe Cloud - provided excellent on-demand 10xL40S node This model is based on Llama-3-8b, and is governed by META LLAMA 3 COMMUNITY LICENSE AGREEMENT"
+    },
+    {
+      "title": "dolphin-2.9-llama3-8b: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/dolphin-2.9-llama3-8b-cognitivecomputations",
+      "snippet": "Overview dolphin-2.9-llama3-8b is an 8-billion-parameter language model fine-tuned from Meta&#x27;s Llama-3-8B by cognitivecomputations for instruction-following, conversation, and coding tasks. The model was trained on 4,096 token sequences using full-weight fine-tuning on 8x L40S GPUs for 2.5 days with three epochs, making it computationally accessible while maintaining strong task performance ..."
+    }
+  ]
+}

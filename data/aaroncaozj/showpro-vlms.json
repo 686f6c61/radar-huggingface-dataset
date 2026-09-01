@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "aaroncaozj/ShowPro-VLMs",
+  "slug": "aaroncaozj-showpro-vlms",
+  "author": "aaroncaozj",
+  "url": "https://huggingface.co/aaroncaozj/ShowPro-VLMs",
+  "created_at": "2026-09-01T06:12:39.000Z",
+  "updated_at": "2026-09-01T11:55:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "robotics",
+    "agent",
+    "embodied-ai",
+    "manipulation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1190642111,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aaroncaozj (CaoZhijun) - Hugging Face",
+      "url": "https://huggingface.co/aaroncaozj",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 5 days ago ... new activity 7 days ago ... published a model 7 days ago"
+    },
+    {
+      "title": "AaronCaoZJ (Cao Zhijun) · GitHub",
+      "url": "https://github.com/AaronCaoZJ",
+      "snippet": "A graph representing AaronCaoZJ&#x27;s contributions from May 25, 2025 to May 29, 2026. The contributions are 97% commits, 1% pull requests, 2% issues, 0% code review."
+    },
+    {
+      "title": "My Fine-tuned Pi Models - a aaroncaozj Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/aaroncaozj/my-fine-tuned-pi-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Vision Language Models (VLMs) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/vision-language-models-vlms-explained/",
+      "snippet": "Vision Language Models (VLMs) are AI models that process both images and text to understand the relationship between visual and textual information. They enable machines to perform tasks that require reasoning across both modalities. Learn semantic relationships between images and language. Support tasks such as image captioning, visual question answering, and image retrieval. Generate text ..."
+    },
+    {
+      "title": "Vision-Language Models — Building VLMs with Hugging Face",
+      "url": "https://vlmbook.com/",
+      "snippet": "The practical guide to building, training, and deploying vision-language models."
+    }
+  ]
+}

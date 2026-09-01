@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "CoRal-project/roest-v3-chatterbox-350m",
+  "slug": "coral-project-roest-v3-chatterbox-350m",
+  "author": "CoRal-project",
+  "url": "https://huggingface.co/CoRal-project/roest-v3-chatterbox-350m",
+  "created_at": "2026-02-04T08:04:13.000Z",
+  "updated_at": "2026-09-01T15:20:50.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "chatterbox",
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "chatterbox",
+    "text-to-speech",
+    "da",
+    "dataset:alexandrainst/ftspeech",
+    "dataset:CoRal-project/coral-tts",
+    "dataset:alexandrainst/nst-da",
+    "dataset:alexandrainst/nota",
+    "base_model:ResembleAI/chatterbox-turbo",
+    "base_model:finetune:ResembleAI/chatterbox-turbo",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4050243506,
+  "storage_human": "4.1 GB",
+  "base_model": "ResembleAI/chatterbox-turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CoRal-project/roest-v3-chatterbox-350m · Hugging Face",
+      "url": "https://huggingface.co/CoRal-project/roest-v3-chatterbox-350m",
+      "snippet": "The model is a finetuned variant of Chatterbox-Turbo, one of the leading open-source text-to-speech models. The base Chatterbox-Turbo model uses the GPT-2 Medium architecture and tokenizer, and is trained on more than 500,000 hours of high-quality English speech."
+    },
+    {
+      "title": "CoRal-project/roest-v3-chatterbox-350m at main - Hugging Face",
+      "url": "https://huggingface.co/CoRal-project/roest-v3-chatterbox-350m/tree/main",
+      "snippet": "CoRal-project / roest-v3-chatterbox-350m like 3 Follow CoRal 57 Text-to-Speech Chatterbox 4 datasets Danish License:openrail Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - alexandrainst/coral_chatterbox: Chatterbox with improved ...",
+      "url": "https://github.com/alexandrainst/coral_chatterbox",
+      "snippet": "A fork of Resemble AI&#x27;s Chatterbox TTS, extended by the Alexandra Institute as part of the CoRal project with a finetuning framework and optimised inference targeted towards Danish language support, though it can easily be adapted for other languages. The finetuning framework supports all three Chatterbox model variants (base, multilingual, turbo)."
+    },
+    {
+      "title": "GitHub - resemble-ai/chatterbox: SoTA open-source TTS",
+      "url": "https://github.com/resemble-ai/chatterbox",
+      "snippet": "Chatterbox Multilingual V3 is the latest general-purpose multilingual TTS model in the Chatterbox family. It keeps the same 0.5B model size while improving speaker similarity, reducing hallucinations, and producing more natural, conversational speech across languages. V3 is designed for broad language coverage like V2, but with stronger stability and more expressive generation. It is the ..."
+    },
+    {
+      "title": "Coral | Google for Developers",
+      "url": "https://developers.google.com/coral",
+      "snippet": "A full stack platform for Edge AI By combining an AI-first, standards-based hardware architecture with a unified developer experience, Coral enables efficient and local AI experiences at the edge."
+    }
+  ]
+}

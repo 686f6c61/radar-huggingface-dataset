@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "DanKau/gliner-bi-large-v2.0-onnx",
+  "slug": "dankau-gliner-bi-large-v2-0-onnx",
+  "author": "DanKau",
+  "url": "https://huggingface.co/DanKau/gliner-bi-large-v2.0-onnx",
+  "created_at": "2026-09-01T11:17:52.000Z",
+  "updated_at": "2026-09-01T11:20:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gliner",
+    "token-classification",
+    "information-extraction",
+    "bi-encoder",
+    "base_model:knowledgator/gliner-bi-large-v2.0",
+    "base_model:quantized:knowledgator/gliner-bi-large-v2.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2103998861,
+  "storage_human": "2.1 GB",
+  "base_model": "knowledgator/gliner-bi-large-v2.0",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLiNER: Generalist and Lightweight Model for Named Entity ... - GitHub",
+      "url": "https://github.com/urchade/GLiNER",
+      "snippet": "GLiNER is a framework for training and deploying small Named Entity Recognition (NER) models with zero-shot capabilities. In addition to traditional NER, it supports incremental streaming NER, joint entity and relation extraction, and multi-task token classification. GLiNER is fine-tunable, optimized to run on CPUs and consumer hardware, and has performance competitive with LLMs several times ..."
+    },
+    {
+      "title": "GitHub - PraxySante/GLiNER-official-repo: Generalist and Lightweight ...",
+      "url": "https://github.com/PraxySante/GLiNER-official-repo",
+      "snippet": "GLiNER is a Named Entity Recognition (NER) model capable of identifying any entity type using a bidirectional transformer encoder (BERT-like). It provides a practical alternative to traditional NER models, which are limited to predefined entities, and Large Language Models (LLMs) that, despite their flexibility, are costly and large for resource-constrained scenarios. 📄 Paper • 📢 ..."
+    },
+    {
+      "title": "knowledgator/gliner-bi-large-v2.0 · Hugging Face",
+      "url": "https://huggingface.co/knowledgator/gliner-bi-large-v2.0",
+      "snippet": "About GLiNER-bi-Encoder is a novel architecture for Named Entity Recognition (NER) that combines zero-shot flexibility with industrial-scale efficiency. Unlike the original GLiNER, which uses joint encoding, the bi-encoder design decouples text and entity-type encoding, enabling the recognition of thousands of entity types simultaneously with minimal computational overhead."
+    },
+    {
+      "title": "DanKau/gliner2-pii-onnx · Hugging Face",
+      "url": "https://huggingface.co/DanKau/gliner2-pii-onnx",
+      "snippet": "Experimental ONNX build - Unofficial ONNX export of fastino/gliner2-privacy-filter-PII-multi, which is licensed under Apache 2.0. No changes were made to the model&#x27;s weights or behavior beyond conversion to the ONNX format."
+    },
+    {
+      "title": "gliner.onnx.model - Home 0.2.24 documentation",
+      "url": "https://urchade.github.io/GLiNER/_modules/gliner/onnx/model.html",
+      "snippet": "gliner.training.trainer module gliner.modeling.multitask package gliner.modeling.multitask.relations_layers module gliner.modeling.multitask.triples_layers module gliner.modeling.base module gliner.modeling.decoder module gliner.modeling.encoder module gliner.modeling.layers module gliner.modeling.loss_functions module gliner.modeling.outputs ..."
+    }
+  ]
+}

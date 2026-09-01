@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "hieutran81/deeprs-adapters",
+  "slug": "hieutran81-deeprs-adapters",
+  "author": "hieutran81",
+  "url": "https://huggingface.co/hieutran81/deeprs-adapters",
+  "created_at": "2026-09-01T18:32:43.000Z",
+  "updated_at": "2026-09-01T18:40:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "statistical-genomics",
+    "agents",
+    "reinforcement-learning",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36317876608,
+  "storage_human": "36.3 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hieutran81 (Hieu Tran) - Hugging Face",
+      "url": "https://huggingface.co/hieutran81",
+      "snippet": "User profile of Hieu Tran on Hugging Face"
+    },
+    {
+      "title": "hieutran81 (Hieu Tran) - Hugging Face",
+      "url": "https://huggingface.co/hieutran81/datasets",
+      "snippet": "Organizations hieutran81&#x27;s datasets1 Sort: Recently updated hieutran81/bioinstruct Viewer •Updated Jun 3, 2024•25k• 9 • 1"
+    },
+    {
+      "title": "[2001.07852] DeepRS: Deep-learning Based Network-Adaptive FEC for Real ...",
+      "url": "https://ar5iv.labs.arxiv.org/html/2001.07852",
+      "snippet": "In this paper, we propose DeepRS, a deep learning based FEC system for real-time video streaming which mainly consists of two parts, LSTM model and RS encoder. DeepRS embeds an LSTM model inside and solves the problem of predicting the number of lost packets in the near future according to the historical packet loss pattern."
+    },
+    {
+      "title": "DeepRS: Deep-Learning Based Network-Adaptive FEC for Real-Time Video ...",
+      "url": "https://ieeexplore.ieee.org/abstract/document/9180974",
+      "snippet": "DeepRS: Deep-Learning Based Network-Adaptive FEC for Real-Time Video Communications"
+    },
+    {
+      "title": "[2001.07852] DeepRS: Deep-learning Based Network-Adaptive FEC for Real ...",
+      "url": "https://arxiv.org/abs/2001.07852",
+      "snippet": "This work proposes an innovative approach to handle packet loss in real-time video streaming scenarios in a more sophisticated way -- Predicting packet loss pattern on time field by deep learning model."
+    }
+  ]
+}

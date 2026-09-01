@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rayyanahmmedd/RedotiX",
+  "slug": "rayyanahmmedd-redotix",
+  "author": "rayyanahmmedd",
+  "url": "https://huggingface.co/rayyanahmmedd/RedotiX",
+  "created_at": "2026-09-01T15:16:02.000Z",
+  "updated_at": "2026-09-01T15:16:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Image & Video Generator | Create Professional Content with ReditX",
+      "url": "https://www.reditx.ai/",
+      "snippet": "Generate stunning AI images, videos, avatars, and enhanced visuals instantly. ReditX AI - the ultimate creative studio for marketers, creators, and businesses."
+    },
+    {
+      "title": "Redox OS, the operating system written in Rust, bans AI-generated code",
+      "url": "https://korben.info/en/redox-os-bans-ai-generated-code.html",
+      "snippet": "Full stop. AI code? Get out. Redox OS doesn&#x27;t want any code written by ChatGPT, Copilot, or any other language model. The rule is spelled out in the project&#x27;s contribution guidelines: any submission identified as LLM-generated (issues, merge requests, descriptions) will be immediately closed."
+    },
+    {
+      "title": "An AI Instagram Model Made $80,000 in a Week. Here Is How the Scam ...",
+      "url": "https://www.ledgerapp.app/blog/ai-instagram-model-fanvue-scam-80k",
+      "snippet": "A Reddit operator detailed how they built a fake AI Instagram model that pulled in $80K from Fanvue subscriptions before Instagram banned the account. The exact playbook, the tells, and what to do about it."
+    },
+    {
+      "title": "RayyanAhmed9477 (Rayyan Ahmed) - Hugging Face",
+      "url": "https://huggingface.co/RayyanAhmed9477/models",
+      "snippet": "AI Agents, RAG, NLP updated a dataset about 1 hour ago"
+    },
+    {
+      "title": "Free AI Image Detector & Checker: Is a Photo AI? | Is It AI?",
+      "url": "https://isitai.com/ai-image-detector",
+      "snippet": "AI Image Detector & Checker: Is This Photo AI-Generated? Upload any photo, picture, or piece of AI art and our free AI image checker tells you if it was AI-generated or real, in seconds. With 95%+ accuracy across Midjourney, DALL-E, Stable Diffusion, Nano Banana, Firefly, ChatGPT and 20+ models, it&#x27;s trusted by newsrooms, educators, and content teams to verify image authenticity."
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "AbhinavMaurya/SpamShield",
+  "slug": "abhinavmaurya-spamshield",
+  "author": "AbhinavMaurya",
+  "url": "https://huggingface.co/AbhinavMaurya/SpamShield",
+  "created_at": "2026-09-01T17:51:35.000Z",
+  "updated_at": "2026-09-01T17:59:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "en",
+    "hi",
+    "es",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ru"
+  ],
+  "tags": [
+    "onnx",
+    "spam",
+    "spam-detection",
+    "text-classification",
+    "content-moderation",
+    "onnxruntime",
+    "nsfw",
+    "multi-label",
+    "en",
+    "hi",
+    "es",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ru",
+    "dataset:AbhinavMaurya/SpamShield-Datasets",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25666660,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AbhinavMaurya/SpamShield-Datasets · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/AbhinavMaurya/SpamShield-Datasets",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rajeshxdatascience/spamshield-ai: SpamShield AI - GitHub",
+      "url": "https://github.com/rajeshxdatascience/spamshield-ai",
+      "snippet": "SpamShield AI is a machine learning-based email spam detection system. It classifies emails as spam or not spam using natural language processing and an ensemble (voting) model. The project includes model training, evaluation, and a web interface built with Streamlit for real-time predictions."
+    },
+    {
+      "title": "riteshgupta-codes/ai-spam-shield - GitHub",
+      "url": "https://github.com/riteshgupta-codes/ai-spam-shield",
+      "snippet": "AI Spam Shield is a production-ready NLP classification system that leverages ensemble learning to identify spam messages with 99.15% precision. Built with industry best practices including training-serving consistency, model versioning, and scalable architecture, this project demonstrates end-to-end ML engineering capabilities from data ..."
+    },
+    {
+      "title": "Methodology | SpamShield AI",
+      "url": "https://spamshield-mca.vercel.app/about",
+      "snippet": "The model was trained on the 5,572 records of the SMS Spam Collection dataset. Each message underwent a rigorous cleaning process: Lowercasing, Tokenization (nltk), Removal of special characters and punctuation, and Porter Stemming to reduce words to their root form (e.g., \"running\" becomes \"run\")."
+    },
+    {
+      "title": "About - SpamShield AI",
+      "url": "https://spam-email-detector-kappa.vercel.app/about",
+      "snippet": "ℹ️ About SpamShield AI SpamShield AI is an intelligent Artificial Intelligence application designed to solve real-world email classification challenges. It processes incoming text using Natural Language Processing (NLP) techniques and predicts whether an email or message is Spam (unwanted/fraudulent) or Ham (legitimate)."
+    }
+  ]
+}

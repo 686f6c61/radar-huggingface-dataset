@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "theoracleguy/VibeVoice-Realtime-0.5B-fp16",
+  "slug": "theoracleguy-vibevoice-realtime-0-5b-fp16",
+  "author": "theoracleguy",
+  "url": "https://huggingface.co/theoracleguy/VibeVoice-Realtime-0.5B-fp16",
+  "created_at": "2026-09-01T12:19:41.000Z",
+  "updated_at": "2026-09-01T12:34:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vibevoice_streaming",
+    "Realtime TTS",
+    "Streaming text input",
+    "Long-form speech generation",
+    "mlx",
+    "text-to-speech",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1017626722,
+  "parameters_human": "1.02B",
+  "storage_bytes": 2135261259,
+  "storage_human": "2.1 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/VibeVoice-Realtime-0.5B · Hugging Face",
+      "url": "https://huggingface.co/microsoft/VibeVoice-Realtime-0.5B",
+      "snippet": "microsoft / VibeVoice-Realtime-.5B like 1.26k Follow Microsoft 21.3k Text-to-Speech Transformers Safetensors English vibevoice_streaming Realtime TTS Streaming text input Long-form speech generation arxiv:2508.19205 arxiv:2412.08635 License:mit Model card FilesFiles and versions xet Community 33 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "VibeVoice/docs/vibevoice-realtime-0.5b.md at main - GitHub",
+      "url": "https://github.com/microsoft/VibeVoice/blob/main/docs/vibevoice-realtime-0.5b.md",
+      "snippet": "Model: VibeVoice Realtime 0.5B (on Hugging Face) Colab: VibeVoice Realtime Colab (Jupyter Notebook) Note (multilingual exploration): Although the model is primarily built for English, we found that it still exhibits a certain level of multilingual capability—and even performs reasonably well in some languages."
+    },
+    {
+      "title": "VibeVoice-Realtime/docs/vibevoice-realtime-0.5b.md at main ... - GitHub",
+      "url": "https://github.com/SUP3RMASS1VE/VibeVoice-Realtime/blob/main/docs/vibevoice-realtime-0.5b.md",
+      "snippet": "VibeVoice-Realtime is a lightweight real‑time text-to-speech model supporting streaming text input and robust long-form speech generation. It can be used to build real-time TTS services, narrate live data streams, and let different LLMs start speaking from their very first tokens (plug in your preferred model) long before a full answer is generated. It produces initial audible speech in ~300 ..."
+    },
+    {
+      "title": "VibeVoice-Realtime-0.5B - a Hugging Face Space by MySafeCode",
+      "url": "https://huggingface.co/spaces/MySafeCode/VibeVoice-Realtime-0.5B",
+      "snippet": "📝 Notes: Model: Microsoft VibeVoice-Realtime-.5B Sample Rate: 24kHz Context Length: 8K tokens Generation Length: ~10 minutes Infrastructure: ZeroGPU (Hugging Face Spaces) ⚠️ Important: The model is designed for English text only Very short inputs (< 3 words) may produce unstable results Code, formulas, and special symbols are not supported Please use responsibly and disclose AI ..."
+    },
+    {
+      "title": "VibeVoice-Realtime-0.5B: Text-to-Audio model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/vibevoice-realtime-0.5b-microsoft",
+      "snippet": "Overview VibeVoice-Realtime-.5B is a lightweight, open-source text-to-speech model built by microsoft that generates speech from streaming text input with approximately 300 ms first audible latency. The model uses a Transformer-based architecture combining the Qwen2.5-0.5B LLM with a σ-VAE acoustic tokenizer and a lightweight diffusion head, achieving only 0.5B parameters while supporting ..."
+    }
+  ]
+}

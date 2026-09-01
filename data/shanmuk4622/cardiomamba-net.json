@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Shanmuk4622/cardiomamba-net",
+  "slug": "shanmuk4622-cardiomamba-net",
+  "author": "Shanmuk4622",
+  "url": "https://huggingface.co/Shanmuk4622/cardiomamba-net",
+  "created_at": "2026-09-01T16:40:04.000Z",
+  "updated_at": "2026-09-01T16:42:59.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "radar",
+    "ecg",
+    "biosignals",
+    "contactless-monitoring",
+    "time-series",
+    "audio-to-audio",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shanmuk4622 (Bonala Shanmukesh) - Hugging Face",
+      "url": "https://huggingface.co/Shanmuk4622",
+      "snippet": "User profile of Bonala Shanmukesh on Hugging Face"
+    },
+    {
+      "title": "Shanmuk4622 (Bonala Shanmukesh) - Hugging Face",
+      "url": "https://huggingface.co/Shanmuk4622/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 7 minutes ago ... updated a model about 22 hours ago ... published a model about 22 hours ago"
+    },
+    {
+      "title": "jeb-rag/paper/novelty_resweep_2026-08-20.md at main - GitHub",
+      "url": "https://github.com/Shanmuk4622/jeb-rag/blob/main/paper/novelty_resweep_2026-08-20.md",
+      "snippet": "Novelty re-sweep — 2026-08-20 Closes the open checklist item in related_work_skeleton.md: Final targeted novelty re-sweep. The net-of-gate verdict is a negative finding across a fast-moving 2026 literature; a slipped-through workshop paper is entirely possible. Budget for this. The original prior-art assessment predates our results."
+    },
+    {
+      "title": "Shanmuk4622 (Shanmukesh) · GitHub",
+      "url": "https://github.com/Shanmuk4622",
+      "snippet": "An AI‑driven system designed to enhance urban safety and smart mobility through intelligent monitoring, activity detection, and data‑driven insights. It integrates deep learning, computer vision, a… TypeScript 1"
+    },
+    {
+      "title": "Lightweight AI network delivers reliable fetal monitoring in noisy",
+      "url": "https://bioengineer.org/lightweight-ai-network-delivers-reliable-fetal-monitoring-in-noisy-environments/",
+      "snippet": "Small AI, Big Stakes: A Mamba-Powered Network Learns to Read Fetal Traces Through the Noise For more than half a century, the soundtrack of childbirth has been a pair of squiggling lines: one tracing the fetal heart rate, the other the tightening grip of uterine contractions. Cardiotocography, or CTG, remains the world&#x27;s default window into a baby&#x27;s condition during labor, but its ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ads2009/turkish-ai-text-detector-berturk-v6",
+  "slug": "ads2009-turkish-ai-text-detector-berturk-v6",
+  "author": "ads2009",
+  "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-berturk-v6",
+  "created_at": "2026-09-01T16:27:17.000Z",
+  "updated_at": "2026-09-01T16:27:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110618882,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442499040,
+  "storage_human": "442 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ads2009/turkish-ai-text-detector-berturk · Hugging Face",
+      "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-berturk",
+      "snippet": "Instructions to use ads2009/turkish-ai-text-detector-berturk with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ads2009/turkish-ai-text-detector-berturk with Transformers:"
+    },
+    {
+      "title": "ads2009/turkish-ai-text-detector-distilberturk · Hugging Face",
+      "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-distilberturk",
+      "snippet": "Instructions to use ads2009/turkish-ai-text-detector-distilberturk with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "SaKinLord/turkish-ai-detector - GitHub",
+      "url": "https://github.com/SaKinLord/turkish-ai-detector",
+      "snippet": "Turkish AI Detector Turkish AI text detector runtime using language-model curvature signals and a document-level meta-classifier."
+    },
+    {
+      "title": "AI Detector for Turkey, Turkish English writers | TextSight",
+      "url": "https://www.textsight.ai/ai-detector-turkey/",
+      "snippet": "AI detector for Turkish students, freelancers, and Istanbul tech writers. English-first detection with TRY reference pricing and KVKK-aligned no-retention."
+    },
+    {
+      "title": "Detect AI in Turkish text — Turkish AI Detector",
+      "url": "https://ai-checker.co/in/turkish",
+      "snippet": "tr-TR Detect AI in Turkish text. AI Checker is calibrated for Turkish with separate model weights for Turkish -specific patterns. Sentence-level breakdown, free. This article is written in English and explains AI detection for Turkish text. The detector itself processes Turkish submissions natively."
+    }
+  ]
+}

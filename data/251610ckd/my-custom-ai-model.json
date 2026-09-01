@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "251610ckd/my-custom-ai-model",
+  "slug": "251610ckd-my-custom-ai-model",
+  "author": "251610ckd",
+  "url": "https://huggingface.co/251610ckd/my-custom-ai-model",
+  "created_at": "2026-09-01T12:01:09.000Z",
+  "updated_at": "2026-09-01T12:01:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519428,
+  "storage_human": "1000 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Custom AI Build — MyCustomAI",
+      "url": "https://www.mycustomai.io/services/custom-ai-build",
+      "snippet": "Model selection, fine-tuning, RAG, agents, and end-to-end integration. The full-build engagement most customers move into after an AI Pilot."
+    },
+    {
+      "title": "How To Build And Deploy Custom AI Models | CustomGPT.ai",
+      "url": "https://customgpt.ai/custom-ai-model/",
+      "snippet": "Custom AI model guide: define use case, prep data, and deploy with CustomGPT.ai RAG, GPT-5 grounding, vector search, and an anti-hallucination layer."
+    },
+    {
+      "title": "Enterprise AI for Regulated Industries — MyCustomAI",
+      "url": "https://www.mycustomai.io/",
+      "snippet": "Custom AI for Regulated Industries Accurate AI, deployed inside your security boundary. Custom AI that runs inside your infrastructure — not on ours, not on OpenAI&#x27;s — and is tuned to your domain until it is accurate enough to rely on. Built for regulated industries where data cannot leave the building and answers have to be right."
+    },
+    {
+      "title": "MakeAI",
+      "url": "https://makeai.org/",
+      "snippet": "Make your own AI models with ease."
+    },
+    {
+      "title": "AI API Model Tester — Check Which Model Your API Actually Runs ...",
+      "url": "https://apimaster.ai/ai-api-model-tester",
+      "snippet": "Free AI API model tester. Paste any OpenAI, Claude or Gemini endpoint and see which model it really runs — fingerprint detection exposes substituted or fake models in seconds. No key stored."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "issaxde/Qwen2.5-Coder-7B-AutoRound-W4A16",
+  "slug": "issaxde-qwen2-5-coder-7b-autoround-w4a16",
+  "author": "issaxde",
+  "url": "https://huggingface.co/issaxde/Qwen2.5-Coder-7B-AutoRound-W4A16",
+  "created_at": "2026-09-01T11:25:52.000Z",
+  "updated_at": "2026-09-01T11:28:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "code",
+    "autocomplete",
+    "fill-in-the-middle",
+    "autoround",
+    "int4",
+    "w4a16",
+    "vllm",
+    "marlin",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-Coder-7B",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "auto-round",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1963340288,
+  "parameters_human": "1.96B",
+  "storage_bytes": 5582251335,
+  "storage_human": "5.6 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-Coder-7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen2.5-coder:7b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5-coder:7b",
+      "snippet": "Code Reasoning: Code reasoning refers to the model&#x27;s ability to learn the process of code execution and accurately predict the model&#x27;s inputs and outputs. The recently released Qwen2.5 Coder 7B Instruct has already shown impressive performance in code reasoning, and this 32B model takes it a step further."
+    },
+    {
+      "title": "Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2409.12186v1",
+      "snippet": "Abstract † In this report, we introduce the Qwen2.5-Coder series, a significant upgrade from its predecessor, CodeQwen1.5. This series includes two models: Qwen2.5-Coder-1.5B and Qwen2.5-Coder-7B. As a code-specific model, Qwen2.5-Coder is built upon the Qwen2.5 architecture and continues pretrained on a vast corpus of over 5.5 trillion tokens. Through meticulous data cleaning, scalable ..."
+    },
+    {
+      "title": "GitHub - huggingface/Qwen2.5-Coder: Qwen2.5-Coder is the code version ...",
+      "url": "https://github.com/huggingface/Qwen2.5-Coder",
+      "snippet": "The model completes the code snippets according to the given prompts, without any additional formatting, which is usually termed as code completion in the code generation tasks. Essentially, we build the tokenizer and the model with from_pretrained method, and we use generate method to perform code completion. Below is an example on how to chat with Qwen2.5-Coder-32B:"
+    }
+  ]
+}

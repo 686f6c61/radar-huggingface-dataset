@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "hamdan001/qwen-3.5-0.8B-bash-command-fine-tuned",
+  "slug": "hamdan001-qwen-3-5-0-8b-bash-command-fine-tuned",
+  "author": "hamdan001",
+  "url": "https://huggingface.co/hamdan001/qwen-3.5-0.8B-bash-command-fine-tuned",
+  "created_at": "2026-09-01T11:28:37.000Z",
+  "updated_at": "2026-09-01T11:48:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1726206271,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5 0.8B: Run & Benchmark the Smallest Multimodal LLM",
+      "url": "https://codersera.com/blog/run-and-benchmark-qwen35-08b/",
+      "snippet": "Quick answer. Qwen3.5 0.8B is Alibaba&#x27;s smallest multimodal model, with a 262K context window and native vision support. Pull it with `ollama run qwen3.5:0.8b` for text or run the GGUF in llama.cpp for image input. Expect strong recall but weak code accuracy — bump to Qwen3.5 4B for any coding task."
+    },
+    {
+      "title": "qwen3.5:0.8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:0.8b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "NL2Shell — Natural Language to Shell Commands - GitHub",
+      "url": "https://github.com/nl2shell/nl2shell",
+      "snippet": "Convert plain English into executable shell commands using an 800M-parameter model that runs on your laptop. NL2Shell is an open-source fine-tune of Qwen3.5-0.8B — a hybrid DeltaNet architecture with 75% linear + 25% softmax attention layers — trained on 11,894 deduplicated natural language to bash pairs using QLoRA. It outputs only the shell command, no explanations, no markdown fences ..."
+    },
+    {
+      "title": "GitHub - thefirehacker/QWEN3-RunLocally: Run Qwen 3 0.6B and Qwen 3.5 0 ...",
+      "url": "https://github.com/thefirehacker/QWEN3-RunLocally",
+      "snippet": "Part of First Break AI — a free, open cohort to learn AI by doing. Run Qwen 3 0.6B on your Mac with minimal setup: pure C inference, no Python, no CUDA, no cloud. This repo bundles the inference code, a sampling visualizer, and a step-by-step guide so you can run the model and understand how it works."
+    },
+    {
+      "title": "Qwen3.5 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.5",
+      "snippet": "Qwen3.5 can be run and fine-tuned in Unsloth Desktop, our new open-source desktop UI for local AI. Unsloth Studio lets you run models locally on MacOS, Windows, Linux and:"
+    }
+  ]
+}

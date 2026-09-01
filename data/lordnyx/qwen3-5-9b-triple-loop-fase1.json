@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Lordnyx/qwen3.5-9b-triple-loop-fase1",
+  "slug": "lordnyx-qwen3-5-9b-triple-loop-fase1",
+  "author": "Lordnyx",
+  "url": "https://huggingface.co/Lordnyx/qwen3.5-9b-triple-loop-fase1",
+  "created_at": "2026-08-23T07:34:20.000Z",
+  "updated_at": "2026-09-01T12:10:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3_5_text",
+    "qwen3.5",
+    "loopsplit",
+    "weight-sharing",
+    "knowledge-distillation",
+    "deep-supervision",
+    "text-generation",
+    "conversational",
+    "en",
+    "pt",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 345,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 66704984319,
+  "storage_human": "66.7 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lordnyx/qwen3.5-9b-triple-loop-fase1 · Hugging Face",
+      "url": "https://huggingface.co/Lordnyx/qwen3.5-9b-triple-loop-fase1",
+      "snippet": "Qwen3.5-9B Triple-Loop (Phase 1) An experimental fine-tune of Qwen/Qwen3.5-9B using LoopSplit: the middle transformer layers are executed three times in a row, sharing the same weights, then the model is distilled against a stronger teacher&#x27;s logits so it learns to make use of the extra passes. This mirrors an earlier LoopSplit experiment on Qwen3-0.6B, scaled up to 9B with a hybrid Gated ..."
+    },
+    {
+      "title": "Hobbyist builds Qwen3.5-9B triple-loop model inspired by Nanbeige 4.5",
+      "url": "https://kblip.com/social/hobbyist-builds-qwen3-5-9b-triple-loop-model-inspired-by-AACJGsp",
+      "snippet": "Prototype applies a triple loop in middle layers, inspired by Nanbeige 4.5 architecture paper. Initial dual-loop version on Qwen3-0.6B preceded the triple-loop attempt. Model released on Hugging Face as Lordnyx /qwen3.5- 9b -triple-loop-fase1. Author describes the project as &#x27;for fun&#x27; and motivated by Nanbeige &#x27;s performance per parameter."
+    },
+    {
+      "title": "qwen3.5-9b - Model Overview - TensorX",
+      "url": "https://tensorx.ai/models/qwen--qwen3.5-9b/",
+      "snippet": "Compact, cost-effective Qwen model for fast, high-volume general tasks. qwen3.5-9b on TensorX: EU-sovereign, GDPR-compliant infrastructure with zero data retention."
+    },
+    {
+      "title": "Qwen3.5-9B — Qwen | AI Model Details | Neura | Neura Market",
+      "url": "https://www.neura.market/models/qwen-qwen3-5-9b",
+      "snippet": "Qwen3.5-9B is a multimodal foundation model from the Qwen3.5 family, designed to deliver strong reasoning, coding, and visual understanding in an efficient 9B-parameter architecture."
+    },
+    {
+      "title": "Qwen3.5 9B API - Hugging Face | AI Model APIs | AI Model APIs",
+      "url": "https://aimodelapis.com/providers/huggingface/huggingface-qwen-qwen3-5-9b",
+      "snippet": "Build advanced reasoning agents with Qwen3.5 9B, a specialized AI model optimized for complex logic and chain-of-thought tasks. This model delivers cost-effective pricing at $0.17/1M input and $0.25/1M output tokens, native tool calling support, open weights architecture. Access Qwen3.5 9B via the Hugging Face API with up to 66K output tokens."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Aureth-4B-Qwen3.5-Heretic-i1-GGUF",
+  "slug": "mradermacher-aureth-4b-qwen3-5-heretic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Aureth-4B-Qwen3.5-Heretic-i1-GGUF",
+  "created_at": "2026-09-01T11:49:21.000Z",
+  "updated_at": "2026-09-01T11:55:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Auguments/Aureth-4B-Qwen3.5-Heretic",
+    "base_model:quantized:Auguments/Aureth-4B-Qwen3.5-Heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 897272,
+  "parameters_human": "897272",
+  "storage_bytes": 3626464,
+  "storage_human": "4 MB",
+  "base_model": "Auguments/Aureth-4B-Qwen3.5-Heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Aureth-4B-Qwen3.5-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Aureth-4B-Qwen3.5-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Aureth-4B-Qwen3.5-i1-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Aureth-4B-Qwen3.5-i1-GGUF/tree/main",
+      "snippet": "List all available models lemonade list Atomic Chat main Aureth-4B-Qwen3.5-i1-GGUF 53.4 GB Ctrl+K Ctrl+K 1 contributor History:7 commits mradermacher auto-patch README.md 71d05c4 verifiedabout 1 month ago .gitattributes Safe 3.23 kBuploaded from nico13 months ago Aureth-4B-Qwen3.5.i1-IQ1_M.gguf 1.43 GB xet uploaded from nico13 months ago Aureth-4B-Qwen3.5.i1-IQ1_S.gguf 1.36 GB xet uploaded ..."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Qwen3.5 GGUF Benchmarks | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.5/gguf-benchmarks",
+      "snippet": "Models 💜 Qwen3.5 - How to Run Locally Qwen3.5 GGUF Benchmarks See how Unsloth Dynamic GGUFs perform + analysis of perplexity, KL divergence & MXFP4."
+    },
+    {
+      "title": "How to Run Diffusion Image GGUFs in ComfyUI - unsloth.ai",
+      "url": "https://unsloth.ai/docs/blog/comfyui",
+      "snippet": "ComfyUI is an open-source diffusion model GUI, API, and backend that uses a node-based (graph/flowchart) interface. ComfyUI is the most popular way to run workflows for image models like Qwen-Image-Edit or FLUX. GGUF is of the best and efficient formats for running diffusion models locally, and Unsloth Dynamic GGUFs uses smart quantization to preserve accuracy even at low-bits. You&#x27;ll learn ..."
+    }
+  ]
+}

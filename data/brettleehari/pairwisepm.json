@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "brettleehari/PairwisePM",
+  "slug": "brettleehari-pairwisepm",
+  "author": "brettleehari",
+  "url": "https://huggingface.co/brettleehari/PairwisePM",
+  "created_at": "2026-09-01T13:16:44.000Z",
+  "updated_at": "2026-09-01T13:17:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - brettleehari/brettleehari · GitHub",
+      "url": "https://github.com/brettleehari/brettleehari",
+      "snippet": "I have been coding since 2016 and building with AI/ML since the GPT-3 days. I come from Chennai, grew up around engineering culture, and I genuinely enjoy going deep into systems, whether that&#x27;s fine-tuning a 4B parameter model on a weekend or wiring up Kafka pipelines for real-time data."
+    },
+    {
+      "title": "brettleehari (HARIPRASAD SUDHARSHAN) - Hugging Face",
+      "url": "https://huggingface.co/brettleehari",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 19 days ago ... updated a model 19 days ago ... published a dataset 20 days ago"
+    },
+    {
+      "title": "brettleehari (HARIPRASAD SUDHARSHAN) - Hugging Face",
+      "url": "https://huggingface.co/brettleehari/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 1 month ago ... updated a model about 1 month ago"
+    },
+    {
+      "title": "brettleehari (Hariprasad Sudharshan) · GitHub",
+      "url": "https://github.com/brettleehari",
+      "snippet": "AI Product Builder. Fine-tuning models, shipping production systems, contributing to open source. LlamaIndex contributor. Building since 2016. - brettleehari"
+    },
+    {
+      "title": "Arena AI: The Official AI Ranking & LLM Leaderboard",
+      "url": "https://arena.ai/",
+      "snippet": "Chat, compare, vote for the world&#x27;s best AI models. Join the community shaping the public leaderboard for LLMs, image, and code models through real-world evaluation."
+    }
+  ]
+}

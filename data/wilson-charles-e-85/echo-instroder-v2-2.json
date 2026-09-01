@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "wilson-charles-e-85/Echo-Instroder-v2.2",
+  "slug": "wilson-charles-e-85-echo-instroder-v2-2",
+  "author": "wilson-charles-e-85",
+  "url": "https://huggingface.co/wilson-charles-e-85/Echo-Instroder-v2.2",
+  "created_at": "2026-07-09T12:15:34.000Z",
+  "updated_at": "2026-09-01T18:26:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 57,
+  "trending_score": 0,
+  "parameters": 14765947904,
+  "parameters_human": "14.77B",
+  "storage_bytes": 82088986624,
+  "storage_human": "82.1 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wilson-charles-e-85/Echo-Instroder-v2.2 · Hugging Face",
+      "url": "https://huggingface.co/wilson-charles-e-85/Echo-Instroder-v2.2",
+      "snippet": "wilson-charles-e-85 / Echo-Instroder-v2.2 like 1 GGUF conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "wilson-charles-e-85 (Charles E Wilson) - Hugging Face",
+      "url": "https://huggingface.co/wilson-charles-e-85/datasets",
+      "snippet": "Home tinkering and development"
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: GLM-5.3-Flash by Z.ai on Aug 26 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "GitHub - charlesericwilson-portfolio/Echo_Adapt_v5: \"Local LLM agent ...",
+      "url": "https://github.com/charlesericwilson-portfolio/Echo_Adapt_v5",
+      "snippet": "This is the active development version of the Echo agent project — a lightweight, local LLM agent tool system written in Rust. I use a custom model Echo Instroder 14B that has been trained using QLoRA as a merged base. It is trained specifically to use this framework. It is a continuation of the earlier Echo Adapt_v3 and adds support for proxy-style tool calls, opt in opt out output ..."
+    }
+  ]
+}

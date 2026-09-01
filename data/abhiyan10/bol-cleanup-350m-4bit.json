@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "abhiyan10/bol-cleanup-350m-4bit",
+  "slug": "abhiyan10-bol-cleanup-350m-4bit",
+  "author": "abhiyan10",
+  "url": "https://huggingface.co/abhiyan10/bol-cleanup-350m-4bit",
+  "created_at": "2026-09-01T17:12:54.000Z",
+  "updated_at": "2026-09-01T17:13:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2",
+    "voice",
+    "dictation",
+    "text-cleanup",
+    "bol",
+    "text-generation",
+    "conversational",
+    "base_model:LiquidAI/LFM2.5-350M",
+    "base_model:quantized:LiquidAI/LFM2.5-350M",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 55443200,
+  "parameters_human": "55.4M",
+  "storage_bytes": 199527820,
+  "storage_human": "200 MB",
+  "base_model": "LiquidAI/LFM2.5-350M",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LFM2.5-350M: No Size Left Behind | Blog | Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind",
+      "snippet": "LFM2.5-350M: No Size Left Behind Today, we&#x27;re releasing LFM2.5-350M, an improved version of our 350M model with additional pre-training (from 10T to 28T tokens) and large-scale reinforcement learning. Built on the LFM2 architecture, it delivers exceptionally fast inference and runs everywhere, from cloud GPUs to cheap CPUs."
+    },
+    {
+      "title": "AI 3D Model Blender Cleanup: Complete Mesh Fix Guide 2026",
+      "url": "https://blog.neural4d.com/user-guide/ai-3d-model-blender-cleanup-complete-mesh-fix-guide-2026/",
+      "snippet": "Step-by-step AI 3D model Blender cleanup guide: fix non-manifold geometry, reduce polygons, repair normals, and export GLB or FBX for game engines."
+    },
+    {
+      "title": "How to Clean Up AI-Generated 3D Models in Blender (Step by Step)",
+      "url": "https://www.tripo3d.ai/blog/how-to-clean-up-ai-generated-3d-models-in-blender",
+      "snippet": "A step-by-step guide to clean up AI-generated 3D models in Blender: spot the problems, merge duplicates, remove loose geometry, fix non-manifold edges and normals, then remesh and export—plus when to skip manual cleanup."
+    },
+    {
+      "title": "BatchAI — Batch tools for AI images, video, and cleanup",
+      "url": "https://batchgpt.store/",
+      "snippet": "Batch images, video, and cleanup. One suite for work at volume. Generate with ChatGPT or Gemini, strip watermarks from images and video, turn a long clip into shorts, and match creators to Facebook Pages. Pick the tool you need."
+    },
+    {
+      "title": "Liquid Foundation Models | Liquid AI",
+      "url": "https://www.liquid.ai/models",
+      "snippet": "Explore Liquid Foundation Models (LFMs): efficient text, vision, audio, and nano models built for on-device, edge, and cloud AI deployment."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "SayedShaun/bangla-wave2vec2",
+  "slug": "sayedshaun-bangla-wave2vec2",
+  "author": "SayedShaun",
+  "url": "https://huggingface.co/SayedShaun/bangla-wave2vec2",
+  "created_at": "2026-08-10T11:54:54.000Z",
+  "updated_at": "2026-09-01T15:34:06.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "pytorch",
+    "wav2vec2",
+    "audio",
+    "automatic-speech-recognition",
+    "bengali",
+    "bangla",
+    "ctc",
+    "bn",
+    "dataset:qdv206/wv-shru-v3-s6",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 91,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2524451160,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SayedShaun/bangla-wave2vec2-unigram · Hugging Face",
+      "url": "https://huggingface.co/SayedShaun/bangla-wave2vec2-unigram",
+      "snippet": "Attribution This model&#x27;s weights and configuration were not trained by the uploader. They are mirrored from the Kaggle dataset wv-shru-v3-s6 published by Kaggle user qdv206. All credit for training and releasing the original model goes to the original author. This upload exists to make the checkpoint easier to load and use via the huggingface_hub / transformers ecosystem."
+    },
+    {
+      "title": "SayedShaun/bengali-whisper-medium-ct2 · Hugging Face",
+      "url": "https://huggingface.co/SayedShaun/bengali-whisper-medium-ct2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BanglaVoiceAI - AI-Powered Bangla Text to Speech",
+      "url": "https://banglavoice.ai/",
+      "snippet": "Transform your Bangla text into natural, human-like speech with our advanced AI technology. Perfect for content creators, educators, and businesses worldwide."
+    },
+    {
+      "title": "GitHub - sayedshaun/bangla-live-cc: Real-time Bengali speech-to-text ...",
+      "url": "https://github.com/sayedshaun/bangla-live-cc",
+      "snippet": "Real-time Bengali speech-to-text over a WebSocket. One container, CPU or GPU, model included. - sayedshaun/bangla-live-cc"
+    },
+    {
+      "title": "Wav2Vec2 Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/wav2vec2-self-a-supervised-learning-technique-for-speech-representations/",
+      "snippet": "Wav2Vec2 is a self-supervised learning model designed for speech recognition. It learns meaningful representations directly from raw audio using large amounts of unlabeled data, and can later be fine-tuned for tasks such as transcription with minimal labeled data."
+    }
+  ]
+}

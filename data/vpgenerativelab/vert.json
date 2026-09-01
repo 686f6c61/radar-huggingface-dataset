@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "VPGenerativeLab/vert",
+  "slug": "vpgenerativelab-vert",
+  "author": "VPGenerativeLab",
+  "url": "https://huggingface.co/VPGenerativeLab/vert",
+  "created_at": "2026-09-01T15:08:10.000Z",
+  "updated_at": "2026-09-01T15:08:10.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Garden on Gemini Enterprise Agent Platform",
+      "url": "https://cloud.google.com/model-garden",
+      "snippet": "Discover, customize, and deploy AI models from Google & partners using Gemini Enterprise Agent Platform (formerly Vertex AI)."
+    },
+    {
+      "title": "Generative AI | Google Cloud Documentation",
+      "url": "https://docs.cloud.google.com/docs/generative-ai",
+      "snippet": "Documentation and resources for building and implementing generative AI applications with Google Cloud tools and productss."
+    },
+    {
+      "title": "VERT: A SystemVerilog Assertion Dataset to Improve ... - GitHub",
+      "url": "https://github.com/AnandMenon12/VERT",
+      "snippet": "The VERT dataset provides a robust solution for improving hardware verification through automated assertion generation. By offering diverse, comprehensive, and synchronized datasets, VERT fine-tunes open-source LLMs to achieve high levels of correctness on industry-standard SoC platforms."
+    },
+    {
+      "title": "Vertex AI Model Garden and Generative AI Studio | Google Cloud Blog",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/vertex-ai-model-garden-and-generative-ai-studio",
+      "snippet": "From Model Garden, users can kick off a variety of workflows, including using the model directly as an API, tuning the model in Generative AI Studio, or deploying the model directly to a data science notebook in Vertex AI. Generative AI Studio: Easily tune and deploy foundation models Generative AI Studio is a managed environment in Vertex AI where developers and data scientists can interact ..."
+    },
+    {
+      "title": "The riskiest AI workforce plan starts with a headcount ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/guillaume-belisle_the-riskiest-ai-workforce-plan-starts-with-activity-7499898405553328130-ztec",
+      "snippet": "The riskiest AI workforce plan starts with a headcount target. Not because efficiency is bad. Efficiency matters. But headcount-first AI strategy creates dangerous incentives. The team starts ..."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "sifat-febo/banglish-companion-3b-mlx",
+  "slug": "sifat-febo-banglish-companion-3b-mlx",
+  "author": "sifat-febo",
+  "url": "https://huggingface.co/sifat-febo/banglish-companion-3b-mlx",
+  "created_at": "2026-09-01T17:49:27.000Z",
+  "updated_at": "2026-09-01T18:12:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mistral3",
+    "banglish",
+    "bengali",
+    "bangla",
+    "apple-silicon",
+    "conversational",
+    "local-inference",
+    "low-resource-languages",
+    "quantized",
+    "text-generation",
+    "bn",
+    "en",
+    "base_model:mistralai/Ministral-3-3B-Base-2512",
+    "base_model:quantized:mistralai/Ministral-3-3B-Base-2512",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 964525056,
+  "parameters_human": "964.5M",
+  "storage_bytes": 3660627365,
+  "storage_human": "3.7 GB",
+  "base_model": "mistralai/Ministral-3-3B-Base-2512",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sifat-febo/banglish-companion · Hugging Face",
+      "url": "https://huggingface.co/sifat-febo/banglish-companion",
+      "snippet": "Banglish Companion — Banglish Conversational AI The first Banglish conversational AI model. A casual, friendly chatbot that speaks in Banglish — Bengali written phonetically in Latin script. Runs locally, no GPU needed. Why Banglish? Over 230 million people speak Bengali. Online, millions of them — plus the global diaspora — type in Banglish (phonetic Bengali using English letters ..."
+    },
+    {
+      "title": "sifat-febo/bangla-banglish-companion-mlx · Hugging Face",
+      "url": "https://huggingface.co/sifat-febo/bangla-banglish-companion-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Banglish Companion by sifat-febo - LLM Explorer",
+      "url": "https://llm-explorer.com/model/sifat-febo%2Fbanglish-companion,5vLdgtN3kF8qwbM3nx6HEC",
+      "snippet": "Banglish Companion is an open-source 1.7b LLM by sifat-febo. VRAM 6.8GB, 8K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Duck.ai by DuckDuckGo. Private AI chat. Free.",
+      "url": "https://duck.ai/",
+      "snippet": "Use ChatGPT, Claude, and other AIs, privately. Protect chats from hackers, scammers, and companies. Keep info confidential. Free. No account required."
+    }
+  ]
+}

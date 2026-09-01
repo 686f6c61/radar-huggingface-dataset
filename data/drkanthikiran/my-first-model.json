@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DrKanthiKiran/my-first-model",
+  "slug": "drkanthikiran-my-first-model",
+  "author": "DrKanthiKiran",
+  "url": "https://huggingface.co/DrKanthiKiran/my-first-model",
+  "created_at": "2026-09-01T13:17:11.000Z",
+  "updated_at": "2026-09-01T13:17:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Building My First Machine Learning Model - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/building-my-first-machine-learning-model-dr-m-rajitha-ru5jc",
+      "snippet": "Successfully completing the course \"Building Your First ML Model: SNS\" offered by Analytics Vidhya marks an important milestone in my learning journey."
+    },
+    {
+      "title": "Dr. Kanthi Kiran — AI Architect - YouTube",
+      "url": "https://www.youtube.com/@KanthiKiranAI",
+      "snippet": "Agentic AI, Claude, and MCP — explained by a CS professor and Anthropic Claude Partner Network member. Home of The Claude Codex series: my journey to the CCA-F certification, Claude Code ..."
+    },
+    {
+      "title": "Dr. KK - YouTube",
+      "url": "https://www.youtube.com/@DrKanthiKiran",
+      "snippet": "Welcome to DataTrends with Kanthi!Join me, Kanthi Kiran, as we dive into the exciting world of technology, data analytics, and the latest innovations. On thi..."
+    },
+    {
+      "title": "My first AI model!!!!! - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/my-first-ai-model-viraj-pandit-oko6c?tl=en",
+      "snippet": "🧠 Transforming Health Monitoring: Building an AI-Based Glucometer Using Kalman Filtering and Machine Learning (trained with dataset of 100000+ keys) Over the past few weeks, I&#x27;ve been working ..."
+    },
+    {
+      "title": "drkanthikiran9-ai-agent-demo · GitHub",
+      "url": "https://github.com/drkanthikiran9-ai-agent-demo/",
+      "snippet": "drkanthikiran9-ai-agent-demo has one repository available. Follow their code on GitHub."
+    }
+  ]
+}

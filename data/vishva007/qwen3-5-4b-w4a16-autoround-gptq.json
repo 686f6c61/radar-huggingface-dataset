@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Vishva007/Qwen3.5-4B-W4A16-AutoRound-GPTQ",
+  "slug": "vishva007-qwen3-5-4b-w4a16-autoround-gptq",
+  "author": "Vishva007",
+  "url": "https://huggingface.co/Vishva007/Qwen3.5-4B-W4A16-AutoRound-GPTQ",
+  "created_at": "2026-09-01T13:21:26.000Z",
+  "updated_at": "2026-09-01T13:30:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "quantization",
+    "auto-round",
+    "gptq",
+    "llm-compressor",
+    "compressed-tensors",
+    "4bit",
+    "text-generation",
+    "image-text-to-text",
+    "reasoning",
+    "distillation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 4788729301,
+  "storage_human": "4.8 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vishva007 (Vishva R) - Hugging Face",
+      "url": "https://huggingface.co/Vishva007",
+      "snippet": "Deeply interested in Generative AI, particularly Large Language Models (LLMs). Focusing on model fine-tuning, prompt engineering, and practical applications using the Hugging Face ecosystem (Transf..."
+    },
+    {
+      "title": "Vishva007/Qwen3.5-0.8B-W4A16-AutoRound-GPTQ · Hugging Face",
+      "url": "https://huggingface.co/Vishva007/Qwen3.5-0.8B-W4A16-AutoRound-GPTQ",
+      "snippet": "This is a W4A16 (4-bit weight, 16-bit activation) GPTQ-format quantized version of Qwen/Qwen3.5-.8B, produced using AutoRound — Intel&#x27;s sign gradient descent based quantization method designed for production-grade accuracy retention."
+    },
+    {
+      "title": "GitHub - intel/auto-round: A SOTA quantization toolkit for high ...",
+      "url": "https://github.com/intel/auto-round",
+      "snippet": "By default, AutoRound only quantize the text module of VLMs and uses NeelNanda/pile-10k for calibration. To quantize the entire model, you can enable quant_nontext_module by setting it to True, though support for this feature is limited. For more information, please refer to the AutoRound readme."
+    },
+    {
+      "title": "Qwen3.8 27B W4A16 AutoRound GPTQ by Vishva007 - LLM Explorer",
+      "url": "https://llm-explorer.com/model/Vishva007%2FQwen3.8-27B-W4A16-AutoRound-GPTQ,1qBp4bLUnhzd9vvVJNApYc",
+      "snippet": "Rank the Qwen3.8 27B W4A16 AutoRound GPTQ capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Qwen3.8-27B AutoRound W4A16 on 2x RTX 3090 - GitHub",
+      "url": "https://github.com/tonyd2wild/Qwen3.8-27B-AutoRound-W4A16-2x3090/tree/main/",
+      "snippet": "Production Docker deployment for Qwen3.8-27B AutoRound W4A16 (Vishva007) on 2x RTX 3090 (NVLink or PCIe). OpenAI-compatible vLLM with MTP speculative decoding, tool calling, separated reasoning, vision, and CUDA graphs."
+    }
+  ]
+}

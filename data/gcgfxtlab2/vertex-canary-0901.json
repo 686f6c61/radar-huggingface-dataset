@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "gcgfxtlab2/vertex-canary-0901",
+  "slug": "gcgfxtlab2-vertex-canary-0901",
+  "author": "gcgfxtlab2",
+  "url": "https://huggingface.co/gcgfxtlab2/vertex-canary-0901",
+  "created_at": "2026-09-01T16:43:21.000Z",
+  "updated_at": "2026-09-01T16:44:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1909,
+  "storage_human": "1909 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gcgfxtlab2/vertex-canary-0901 · Hugging Face",
+      "url": "https://huggingface.co/gcgfxtlab2/vertex-canary-0901",
+      "snippet": "Instructions to use gcgfxtlab2/vertex-canary-0901 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use gcgfxtlab2/vertex-canary-0901 with Transformers:"
+    },
+    {
+      "title": "Vertex AI Agent Builder documentation - docs.cloud.google.com",
+      "url": "https://docs.cloud.google.com/agent-builder",
+      "snippet": "Vertex AI Agent Builder is a suite of products that help developers build, scale, and govern AI agents in production. Go to the Vertex AI Agent Builder product page for more."
+    },
+    {
+      "title": "Vertex Generative AI SDK for Python | Python client libraries | Google ...",
+      "url": "https://docs.cloud.google.com/python/docs/reference/vertexai/latest",
+      "snippet": "The Gen AI Modules in the Vertex SDK help developers use Google&#x27;s generative AI Gemini models to build AI-powered features and applications in Vertex. The modules currently available are: Evaluation, Agent Engines, Prompt Management, and Prompt Optimization. See below for instructions on getting started with each module."
+    },
+    {
+      "title": "Google Vertex AI Model Availability (Updated Hourly)",
+      "url": "https://www.ai.moda/en/blog/google-vertex-ai-model-availability",
+      "snippet": "Google Vertex AI Model Availability (Updated Hourly) Live list of all models on Google Cloud Vertex AI. Want to know what models are on Google Cloud Vertex AI? See our list below (or parse the JSON here yourself)."
+    },
+    {
+      "title": "GitHub - jmh-hub/generative-ai-google-training: Sample code and ...",
+      "url": "https://github.com/jmh-hub/generative-ai-google-training",
+      "snippet": "This repository contains notebooks, code samples, sample apps, and other resources that demonstrate how to use, develop and manage generative AI workflows using Generative AI on Google Cloud, powered by Vertex AI. For more Vertex AI samples, please visit the Vertex AI samples GitHub repository ..."
+    }
+  ]
+}

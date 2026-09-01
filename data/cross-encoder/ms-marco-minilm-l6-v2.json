@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+  "slug": "cross-encoder-ms-marco-minilm-l6-v2",
+  "author": "cross-encoder",
+  "url": "https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2",
+  "created_at": "2022-03-02T23:29:05.000Z",
+  "updated_at": "2026-08-09T15:22:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "jax",
+    "onnx",
+    "safetensors",
+    "openvino",
+    "bert",
+    "text-classification",
+    "transformers",
+    "text-ranking",
+    "en",
+    "dataset:sentence-transformers/msmarco",
+    "base_model:cross-encoder/ms-marco-MiniLM-L12-v2",
+    "base_model:quantized:cross-encoder/ms-marco-MiniLM-L12-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 309,
+  "downloads_30d": 86800084,
+  "trending_score": 7,
+  "parameters": 22714113,
+  "parameters_human": "22.7M",
+  "storage_bytes": 865250598,
+  "storage_human": "865 MB",
+  "base_model": "cross-encoder/ms-marco-MiniLM-L12-v2",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cross-encoder/ms-marco-MiniLM-L6-v2 · Hugging Face",
+      "url": "https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cross-encoder/ms-marco-MiniLM-L6-v2: Text Ranking Cross-Encoder Model ...",
+      "url": "https://toolseekai.com/en/models/cross-encoderms-marco-minilm-l6-v2",
+      "snippet": "The cross-encoder/ms-marco-MiniLM-L6-v2 model is a cross-encoder designed for text ranking, specifically fine-tuned on the MS MARCO passage ranking dataset. It is based on the MiniLM architecture with 6 layers, offering a balance between efficiency and accuracy."
+    },
+    {
+      "title": "ms-marco-MiniLM-L6-v2: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/ms-marco-minilm-l6-v2-cross-encoder",
+      "snippet": "Overview ms-marco-MiniLM-L6-v2 is a cross-encoder model trained by cross-encoder on the MS Marco Passage Ranking task for information retrieval and passage reranking. The model operates as a sequence classification model that scores query-passage pairs directly, producing a relevance score that ranks passages by their match quality to a given query. Built on the MiniLM architecture with 6 ..."
+    },
+    {
+      "title": "README.md · cross-encoder/ms-marco-MiniLM-L6-v2 at main",
+      "url": "https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ms-marco-MiniLM-L-6-v2: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/ms-marco-minilm-l-6-v2-cross-encoder",
+      "snippet": "Overview ms-marco-MiniLM-L-6-v2 is a cross-encoder model trained on the MS Marco Passage Ranking dataset, designed specifically for re-ranking retrieved passages in information retrieval systems. Built and maintained by cross-encoder, this model operates as a sequence classification model that scores query-passage pairs to determine relevance. The model uses MiniLM architecture with 6 ..."
+    }
+  ]
+}

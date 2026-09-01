@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "HDiffusion/generic-manga-translator-redistribution",
+  "slug": "hdiffusion-generic-manga-translator-redistribution",
+  "author": "HDiffusion",
+  "url": "https://huggingface.co/HDiffusion/generic-manga-translator-redistribution",
+  "created_at": "2026-09-01T07:25:48.000Z",
+  "updated_at": "2026-09-01T18:24:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 935471906,
+  "storage_human": "935 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HDiffusion/generic-manga-translator-redistribution · Hugging Face",
+      "url": "https://huggingface.co/HDiffusion/generic-manga-translator-redistribution",
+      "snippet": "HDiffusion / generic-manga-translator-redistribution like 0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "GitHub - meangrinch/MangaTranslator: Manga translation app powered by AI",
+      "url": "https://github.com/meangrinch/MangaTranslator",
+      "snippet": "Manga translation app powered by AI. Contribute to meangrinch/MangaTranslator development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - ogkalu2/comic-translate: AI comic and manga translator app ...",
+      "url": "https://github.com/ogkalu2/comic-translate",
+      "snippet": "AI comic and manga translator app/browser extension for automatically translating comics, manga, manhwa, BDs, fumetti, and more in multiple languages and formats (Images, PDF, EPUB, CBR, CBZ etc). ..."
+    },
+    {
+      "title": "Manga Translator - a Hugging Face Space by fdsgsfjsfg",
+      "url": "https://huggingface.co/spaces/fdsgsfjsfg/ai-manga-rs",
+      "snippet": "Upload a Japanese manga page (or a zip of pages), select a translation model, and optionally provide a Hugging Face token. The app reads the text in the images, translates it, and returns the same ..."
+    },
+    {
+      "title": "AI Model Releases in August 2026: Confirmed Updates | BenchLM",
+      "url": "https://benchlm.ai/model-updates/releases/august-2026",
+      "snippet": "25 confirmed AI model releases from 19 providers in August 2026, with primary evidence sources and BenchLM model links."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ai4bharat/bhili-asr-canary-1.2b",
+  "slug": "ai4bharat-bhili-asr-canary-1-2b",
+  "author": "ai4bharat",
+  "url": "https://huggingface.co/ai4bharat/bhili-asr-canary-1.2b",
+  "created_at": "2026-08-20T10:02:20.000Z",
+  "updated_at": "2026-09-01T12:15:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "bhb"
+  ],
+  "tags": [
+    "nemo",
+    "bhili",
+    "automatic-speech-recognition",
+    "low-resource",
+    "indic",
+    "canary",
+    "bhb",
+    "dataset:custom",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4892079412,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai4bharat/bhili-asr-canary-1.2b · Hugging Face",
+      "url": "https://huggingface.co/ai4bharat/bhili-asr-canary-1.2b",
+      "snippet": "This is a fine-tuned version of Indic Canary, a 1.2B parameter FastConformer-Transformer AED model, trained on ~180 hours of Bhili read, conversational, and spontaneous speech data."
+    },
+    {
+      "title": "ai4bharat/bhili-asr-canary-1.2b at main - Hugging Face",
+      "url": "https://huggingface.co/ai4bharat/bhili-asr-canary-1.2b/tree/main",
+      "snippet": "Instructions to use ai4bharat/bhili-asr-canary-1.2b with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries NeMo How to use ai4bharat/bhili-asr-canary-1.2b with NeMo:"
+    },
+    {
+      "title": "Architecture graph for ai4bharat/bhili-asr-canary-1.2b.",
+      "url": "https://hfviewer.com/ai4bharat/bhili-asr-canary-1.2b",
+      "snippet": "hfviewer renders an interactive architecture graph for the Hugging Face model ai4bharat/bhili-asr-canary-1.2b. The graph is built from the model&#x27;s real structure: nodes carry source-faithful module, class, and operation names (embeddings, attention blocks, feed-forward layers, normalization, task heads), edges follow the actual forward dataflow ..."
+    },
+    {
+      "title": "Bhili Asr Canary 1.2b - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/ai4bharat/bhili-asr-canary-1.2b",
+      "snippet": "Registry entry for model Bhili Asr Canary 1.2b; source metadata pending."
+    },
+    {
+      "title": "bhili-models/asr/model at master · AI4Bharat/bhili-models",
+      "url": "https://github.com/AI4Bharat/bhili-models/tree/master/asr/model",
+      "snippet": "Contribute to AI4Bharat/bhili-models development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "RicardoEstep/RPBizkitRemiX-v1-12B-GGUF",
+  "slug": "ricardoestep-rpbizkitremix-v1-12b-gguf",
+  "author": "RicardoEstep",
+  "url": "https://huggingface.co/RicardoEstep/RPBizkitRemiX-v1-12B-GGUF",
+  "created_at": "2026-09-01T19:40:18.000Z",
+  "updated_at": "2026-09-01T19:41:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "mergekit",
+    "custom",
+    "merge",
+    "not-for-all-audiences",
+    "llama-cpp",
+    "base_model:RicardoEstep/RPBizkitRemiX-v1-12B",
+    "base_model:finetune:RicardoEstep/RPBizkitRemiX-v1-12B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "RicardoEstep/RPBizkitRemiX-v1-12B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RicardoEstep (Ricardo_estep) - Hugging Face",
+      "url": "https://huggingface.co/RicardoEstep",
+      "snippet": "Mess all up. Text Generation • 12B • 18 days ago • 76 • 6"
+    },
+    {
+      "title": "RicardoEstep (Ricardo_estep) - Hugging Face",
+      "url": "https://huggingface.co/RicardoEstep/models",
+      "snippet": "Mess all up. In a Training Loop 🔄 Ricardo_estep"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/drive/1g41PDb9Bck-3VI6yRZ_1M727yL05gZY8?usp=sharing",
+      "snippet": "Google Colab ... Google Colab"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

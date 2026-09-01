@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "JanHutter/verifierreward",
+  "slug": "janhutter-verifierreward",
+  "author": "JanHutter",
+  "url": "https://huggingface.co/JanHutter/verifierreward",
+  "created_at": "2026-09-01T12:05:04.000Z",
+  "updated_at": "2026-09-01T12:13:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "qwen3-vl",
+    "vision-language",
+    "reward-model",
+    "image-ranking",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2191780924,
+  "parameters_human": "2.19B",
+  "storage_bytes": 35080008878,
+  "storage_human": "35.1 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Academic Portfolio | AI Researcher",
+      "url": "https://janhutter.github.io/",
+      "snippet": "Electives include: Foundation Models, Deep Learning 2, Recommender Systems, Machine Learning 2, Project AI, and Information Retrieval 2. Research visit to EML Munich while working on my MSc Thesis: \"Efficient Fine-Tuning of Diffusion Models with Differentiable Rewards\" supervised by Luca Eyring, Yingjun Du, Zeynep Akata, and Cees Snoek."
+    },
+    {
+      "title": "JanHutter (Jan Hutter) - Hugging Face",
+      "url": "https://huggingface.co/JanHutter/models",
+      "snippet": "User profile of Jan Hutter on Hugging Face"
+    },
+    {
+      "title": "JanHutter (Jan Hutter) - Hugging Face",
+      "url": "https://huggingface.co/JanHutter",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 1 hour ago ... published a dataset about 1 hour ago"
+    },
+    {
+      "title": "Publications of Marcus Hutter",
+      "url": "http://www.hutter1.net/official/publ.htm",
+      "snippet": "Notes Most of my articles are available online from the arXiv in PDF , PostScript , and LaTeX format. Sometimes also slides (PS, PDF, PPT), program code , press coverage , project information , BibTeX entry , and/or more are available. Some key publications are highlighted by a *. They include a book, my physics and AI ideas I&#x27;m most proud of, my most popular paper, a rather technical paper, a ..."
+    },
+    {
+      "title": "GitHub - janhq/verifiers-deepresearch: Verifiers for LLM Reinforcement ...",
+      "url": "https://github.com/janhq/verifiers-deepresearch",
+      "snippet": "Verifiers for LLM Reinforcement Learning. Contribute to janhq/verifiers-deepresearch development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "blaze-voice-ai/dubbing-omnivoice-khmer",
+  "slug": "blaze-voice-ai-dubbing-omnivoice-khmer",
+  "author": "blaze-voice-ai",
+  "url": "https://huggingface.co/blaze-voice-ai/dubbing-omnivoice-khmer",
+  "created_at": "2026-09-01T13:25:40.000Z",
+  "updated_at": "2026-09-01T13:26:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "omnivoice",
+    "text-to-speech",
+    "khmer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 612577288,
+  "parameters_human": "612.6M",
+  "storage_bytes": 2461768130,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OmniVoice: Free AI Voice Generator & Voice Cloning",
+      "url": "https://omnivoice.app/",
+      "snippet": "Generate natural speech in 646 languages with OmniVoice — the world&#x27;s most multilingual AI voice generator. Clone any voice free. Open source, Apache 2.0."
+    },
+    {
+      "title": "OmniVoice AI Voice Cloning — Free, Zero-Shot, 646 Languages",
+      "url": "https://omnivoice.app/voice-cloning",
+      "snippet": "Clone any voice in seconds with OmniVoice. Upload a 3-25s audio sample — no training required. Zero-Shot Voice Cloning across 646 languages. Free and open source."
+    },
+    {
+      "title": "GitHub - k2-fsa/OmniVoice: High-Quality Voice Cloning TTS for 600 ...",
+      "url": "https://github.com/k2-fsa/OmniVoice/",
+      "snippet": "OmniVoice 🌍 OmniVoice is a state-of-the-art massively multilingual zero-shot text-to-speech (TTS) model supporting over 600 languages. Built on a novel diffusion language model-style architecture, it generates high-quality speech with superior inference speed, supporting voice cloning and voice design."
+    },
+    {
+      "title": "OmniVoice — Free AI Voice Generator & Voice Cloning for 646 Languages",
+      "url": "https://omnivoice.pro/",
+      "snippet": "Try OmniVoice online for free. Clone any voice from a short audio clip. Design new voices from text descriptions. Omni Voice supports 646 languages with zero-shot voice cloning and voice design."
+    },
+    {
+      "title": "GitHub - debpalash/VoiceStudio: VoiceStudio is the open-source, fully ...",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "snippet": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription &amp; audiobook creation in 646 languages. - debpalash/Voic..."
+    }
+  ]
+}

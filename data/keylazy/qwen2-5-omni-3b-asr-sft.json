@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "keylazy/Qwen2.5-Omni-3B-asr-sft",
+  "slug": "keylazy-qwen2-5-omni-3b-asr-sft",
+  "author": "keylazy",
+  "url": "https://huggingface.co/keylazy/Qwen2.5-Omni-3B-asr-sft",
+  "created_at": "2026-09-01T19:05:01.000Z",
+  "updated_at": "2026-09-01T19:05:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131288683,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-Omni-3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Omni-3B",
+      "snippet": "Qwen2.5-Omni is an end-to-end multimodal model designed to perceive diverse modalities, including text, images, audio, and video, while simultaneously generating text and natural speech responses in a streaming manner."
+    },
+    {
+      "title": "keylazy/Qwen2.5-Omni-3B-bab-cr-sft · Hugging Face",
+      "url": "https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-cr-sft",
+      "snippet": "Instructions to use keylazy/Qwen2.5-Omni-3B-bab-cr-sft with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use keylazy/Qwen2.5-Omni-3B-bab-cr-sft with Transformers:"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen2.5-Omni: Qwen2.5-Omni is an end-to-end multimodal ...",
+      "url": "https://github.com/QwenLM/Qwen2.5-Omni",
+      "snippet": "We release Qwen2.5-Omni, the new flagship end-to-end multimodal model in the Qwen series. Designed for comprehensive multimodal perception, it seamlessly processes diverse inputs including text, images, audio, and video, while delivering real-time streaming responses through both text generation and natural speech synthesis."
+    },
+    {
+      "title": "Installation and Setup | QwenLM/Qwen2.5-Omni | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen2.5-Omni/3-installation-and-setup",
+      "snippet": "This page provides comprehensive instructions for installing and setting up the Qwen2.5-Omni multimodal model. It covers the necessary dependencies, different installation methods, and initial configuration steps to get the model working properly."
+    },
+    {
+      "title": "QwenLM/Qwen2.5-Omni | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen2.5-Omni",
+      "snippet": "This page provides a technical overview of Qwen2.5-Omni, a flagship end-to-end multimodal model in the Qwen series. It covers the model&#x27;s architecture, key components, capabilities, and how these elem"
+    }
+  ]
+}

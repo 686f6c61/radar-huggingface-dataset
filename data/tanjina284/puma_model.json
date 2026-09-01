@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tanjina284/puma_model",
+  "slug": "tanjina284-puma_model",
+  "author": "tanjina284",
+  "url": "https://huggingface.co/tanjina284/puma_model",
+  "created_at": "2026-02-19T17:28:32.000Z",
+  "updated_at": "2026-09-01T16:57:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25685,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 331514312579,
+  "storage_human": "331.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tanjina284/puma_model · Hugging Face",
+      "url": "https://huggingface.co/tanjina284/puma_model",
+      "snippet": "Instructions to use tanjina284/puma_model with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Keras How to use tanjina284/puma_model with Keras:"
+    },
+    {
+      "title": "tanjina284 (Tanjina Akter) - Hugging Face",
+      "url": "https://huggingface.co/tanjina284/models",
+      "snippet": "Recent Activity updated a model about 6 hours ago tanjina284/puma_model new activity 1 day ago tawsif18/puma_model_checkpoints: Delete attention_tissue_epoch10_datasetsize16000_fullmodel.keras published a model 21 days ago tanjina284/puma_model View all activity"
+    },
+    {
+      "title": "tanjina284 / puma_model Security Insights | Protect AI",
+      "url": "https://protectai.com/insights/models/tanjina284/puma_model/7613cdc7dfd98364e4e0831679e31297126e754e/overview",
+      "snippet": "Discover potential threats in the tanjina284 / puma_model model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    },
+    {
+      "title": "Issue #67: LLM Plasticity Research Breaks New Ground in Model ...",
+      "url": "https://chyshkala.com/morning-post/issue-67",
+      "snippet": "PUMA Model Achieves 53.4K Downloads in Keras Format Tanjina284&#x27;s specialized model demonstrates strong adoption in the Keras ecosystem, highlighting framework-specific optimization trends."
+    },
+    {
+      "title": "The AI Morning Post",
+      "url": "https://chyshkala.com/morning-post/issue-54",
+      "snippet": "PUMA Model Hits 46.5K Downloads Despite Zero Community Engagement Tanjina284&#x27;s Keras-based PUMA model shows strong adoption metrics but lacks social validation, highlighting the disconnect between usage and visibility."
+    }
+  ]
+}

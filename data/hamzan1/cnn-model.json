@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "hamzaN1/CNN-Model",
+  "slug": "hamzan1-cnn-model",
+  "author": "hamzaN1",
+  "url": "https://huggingface.co/hamzaN1/CNN-Model",
+  "created_at": "2026-09-01T19:21:04.000Z",
+  "updated_at": "2026-09-01T19:23:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "tensorflow",
+    "time-series-classification",
+    "sensor-data",
+    "deep-learning-lab",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 623788,
+  "storage_human": "623788 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Hamza-Maa/Simple-CNN-model",
+      "url": "https://github.com/Hamza-Maa/Simple-CNN-model",
+      "snippet": "Contribute to Hamza-Maa/Simple-CNN-model development by creating an account on GitHub."
+    },
+    {
+      "title": "An AI model from Meta also hacked another company during testing - CNN",
+      "url": "https://www.cnn.com/2026/08/05/tech/meta-ai-hacking",
+      "snippet": "Add Meta to the list of companies with AI agents going rogue. An AI model from the parent company of Facebook and Instagram hacked into another company&#x27;s systems during cybersecurity testing, a ..."
+    },
+    {
+      "title": "hassanblend/HassanBlend1.5.1.2 · Hugging Face",
+      "url": "https://huggingface.co/hassanblend/HassanBlend1.5.1.2",
+      "snippet": "HassanBlend1.5 I am hassan, I created HassansBlend, the latest version currently is 1.5.1.2 I continue to iterate and improve on this model over time. Feel free to check out our discord or rentry page for more examples with prompts and outputs generated."
+    },
+    {
+      "title": "GitHub - hamzaN1/ai-observability-dashboard: Production-style LLM ...",
+      "url": "https://github.com/hamzaN1/ai-observability-dashboard",
+      "snippet": "Built to demonstrate real-world AI engineering skills including prompt tracking, token monitoring, error analysis, RAG observability, model comparison, and live request streaming."
+    },
+    {
+      "title": "CNN Model Development - Kaggle",
+      "url": "https://www.kaggle.com/code/thanian/cnn-model-development",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from multiple data sources"
+    }
+  ]
+}

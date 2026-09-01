@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "dilrgs/qwen-code-reviewer-task2",
+  "slug": "dilrgs-qwen-code-reviewer-task2",
+  "author": "dilrgs",
+  "url": "https://huggingface.co/dilrgs/qwen-code-reviewer-task2",
+  "created_at": "2026-09-01T16:52:54.000Z",
+  "updated_at": "2026-09-01T16:53:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 757586700,
+  "storage_human": "758 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 163 confirmed launches from 46 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - QwenLM/qwen-code: An open-source AI coding agent that lives in ...",
+      "url": "https://github.com/QwenLM/qwen-code",
+      "snippet": "Tip Qwen Code is actively iterating on itself — using its own agent and models to file issues, submit PRs, review code, and run tests. Powered by the community, driven by AI."
+    },
+    {
+      "title": "Qwen Coder",
+      "url": "https://coder.qwen.ai/",
+      "snippet": "Qwen Coder is a coding agent that runs in a secure cloud sandbox to write features, fix bugs, and generate pull requests, empowering humans to quickly build exciting things in the digital world."
+    },
+    {
+      "title": "Open Code Review",
+      "url": "https://open-codereview.ai/",
+      "snippet": "Embed Open Code Review in your local AI-assisted development workflow for instant, high-quality code review feedback. Seamlessly integrate into your internal systems with full control over data flow and review policies. Use as a code quality verifier in RL training pipelines, providing reliable reward signals for code generation models."
+    }
+  ]
+}

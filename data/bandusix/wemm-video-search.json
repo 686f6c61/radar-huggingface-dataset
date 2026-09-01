@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "bandusix/wemm-video-search",
+  "slug": "bandusix-wemm-video-search",
+  "author": "bandusix",
+  "url": "https://huggingface.co/bandusix/wemm-video-search",
+  "created_at": "2026-09-01T04:09:34.000Z",
+  "updated_at": "2026-09-01T13:22:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "video-search",
+    "multimodal-embedding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bandusix/wemm-video-search · Hugging Face",
+      "url": "https://huggingface.co/bandusix/wemm-video-search",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - bandusix/wemm-video-search: 文字→视频时刻语义检索：WeMM-Embedding-2B ...",
+      "url": "https://github.com/bandusix/wemm-video-search",
+      "snippet": "Text-to-video moment search powered by the tencent/WeMM-Embedding-2B multimodal embedding model — load a video (local file or online m3u8/HLS), type a description, and jump straight to the matching time range."
+    },
+    {
+      "title": "wemm-video-search/README.md at main · bandusix/wemm-video-search - GitHub",
+      "url": "https://github.com/bandusix/wemm-video-search/blob/main/README.md",
+      "snippet": "wemm-video-search Text-to-video moment search powered by the tencent/WeMM-Embedding-2B multimodal embedding model — load a video (local file or online m3u8/HLS), type a description, and jump straight to the matching time range."
+    },
+    {
+      "title": "bandusix/wemm-video-search · Discussions - Hugging Face",
+      "url": "https://huggingface.co/bandusix/wemm-video-search/discussions",
+      "snippet": "bandusix / wemm-video-search like 0 video-search multimodal-embedding License:mit Model card FilesFiles and versions xet Community Copy to bucket new New discussion New pull request Discussions Pull requests View closed (0) Sort: Recently created"
+    },
+    {
+      "title": "GitHub - scenarios/WeMM",
+      "url": "https://github.com/scenarios/WeMM",
+      "snippet": "WeMM is the most recent version of the multimodal large language model introduced by WeChatCV. Capable of engaging in Chinese-English bilingual conversations alongside dynamic high-resolution images, WeMM stands as the most powerful model with 10 billion parameters in the multimodal large language model rankings."
+    }
+  ]
+}

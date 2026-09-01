@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DIYIN/Youtu-LLM-2B-Base",
+  "slug": "diyin-youtu-llm-2b-base",
+  "author": "DIYIN",
+  "url": "https://huggingface.co/DIYIN/Youtu-LLM-2B-Base",
+  "created_at": "2026-09-01T13:42:58.000Z",
+  "updated_at": "2026-09-01T13:42:58.000Z",
+  "license": "youtu-llm",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "youtu",
+    "text-generation",
+    "arxiv:2512.24618",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1961560064,
+  "parameters_human": "1.96B",
+  "storage_bytes": 3924031245,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Youtu-LLM-2B: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/youtu-llm-2b-tencent",
+      "snippet": "Youtu-LLM-2B is a 1.96 billion-parameter autoregressive language model developed by tencent that supports 128k token context length and native agentic..."
+    },
+    {
+      "title": "Youtu-LLM - a DIYIN Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/DIYIN/youtu-llm",
+      "snippet": "Youtu Models Datasets Spaces Docs Pricing Website"
+    },
+    {
+      "title": "Youtu-LLM - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/youtu",
+      "snippet": "The Youtu-LLM model was proposed in Youtu-LLM Technical Report by Tencent Youtu Team. The abstract from the paper is the following: We introduce Youtu-LLM, a lightweight yet powerful language model that harmonizes high computational efficiency with native agentic intelligence."
+    },
+    {
+      "title": "Youtu-LLM-2B-Base · Models",
+      "url": "https://www.modelscope.cn/models/Tencent-YouTu-Research/Youtu-LLM-2B-Base",
+      "snippet": "On general evaluations, Youtu-LLM significantly outperforms SOTA LLMs of similar size in terms of Commonsense, STEM, Coding and Long Context capabilities; in agent-related testing, Youtu-LLM surpasses larger-sized leaders and is truly capable of completing multiple end2end agent tasks. Youtu-LLM has the following features:"
+    },
+    {
+      "title": "Youtu-LLM-2B-Base huggingface.co api & tencent Youtu-LLM-2B-Base github ...",
+      "url": "https://www.toolify.ai/ai-model/tencent-youtu-llm-2b-base",
+      "snippet": "Youtu-LLM-2B-Base huggingface.co is an AI model on huggingface.co that provides Youtu-LLM-2B-Base&#x27;s model effect (), which can be used instantly with this tencent Youtu-LLM-2B-Base model. huggingface.co supports a free trial of the Youtu-LLM-2B-Base model, and also provides paid use of the Youtu-LLM-2B-Base. Support call Youtu-LLM-2B-Base model through api, including Node.js, Python, http."
+    }
+  ]
+}

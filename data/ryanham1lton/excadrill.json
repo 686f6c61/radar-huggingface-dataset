@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Excadrill",
+  "slug": "ryanham1lton-excadrill",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Excadrill",
+  "created_at": "2026-09-01T19:33:28.000Z",
+  "updated_at": "2026-09-01T19:33:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 138521386,
+  "storage_human": "139 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Excadrill - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1949383427950542985",
+      "snippet": "Generate stunning anime art with the &#x27;Excadrill&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Excadrill - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/cd352293f39a9a5b0a6df4dffdd5ec6f",
+      "snippet": "Meet Excadrill model on SeaArt. Experience free Stable Diffusion models that get you the best AI-generated images using text prompts."
+    },
+    {
+      "title": "Ryanham1lton/ClaydolES at main - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/ClaydolES/tree/main",
+      "snippet": "Ryanham1lton / ClaydolES like 0 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new main ClaydolES 127 MB Ctrl+K Ctrl+K 1 contributor History:2 commits Ryanham1lton Upload 3 files 2e8ec09 verified3 days ago .gitattributes 1.57 kBUpload 3 files3 days ago Claydol (Eric Stuart).pth 55.2 MB xet Upload 3 files3 days ago Claydol.index 10.7 MB xet Upload 3 files3 ..."
+    },
+    {
+      "title": "Excadrill｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/model/1949383427950542985",
+      "snippet": "Just created this stunning pokemon, excadrill anime art with the amazing &#x27;Excadrill&#x27; model on PixAI! Search for \"Excadrill\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "Ryanham1lton/SpoinkRL at main - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/SpoinkRL/tree/main",
+      "snippet": "Ryanham1lton / SpoinkRL like 0 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new main SpoinkRL 133 MB Ctrl+K Ctrl+K 1 contributor History:2 commits Ryanham1lton Upload 3 files 8a38c9d verified3 days ago .gitattributes 1.57 kBUpload 3 files3 days ago README.md Safe 27 Bytesinitial commit3 days ago Spoink (Rachael Lillis).pth 55.2 MB xet Upload 3 files3 days ..."
+    }
+  ]
+}

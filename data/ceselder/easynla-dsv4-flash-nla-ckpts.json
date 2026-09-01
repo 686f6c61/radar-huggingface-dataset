@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ceselder/easynla-dsv4-flash-nla-ckpts",
+  "slug": "ceselder-easynla-dsv4-flash-nla-ckpts",
+  "author": "ceselder",
+  "url": "https://huggingface.co/ceselder/easynla-dsv4-flash-nla-ckpts",
+  "created_at": "2026-09-01T17:16:17.000Z",
+  "updated_at": "2026-09-01T17:21:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "interpretability",
+    "nla",
+    "lora",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:adapter:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45583792524,
+  "storage_human": "45.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ceselder/easynla-dsv4-warmstart-opus5 - Hugging Face",
+      "url": "https://huggingface.co/datasets/ceselder/easynla-dsv4-warmstart-opus5",
+      "snippet": "EasyNLA warm-start for DeepSeek-V4-Flash-0731 — Opus-5 explanations NLA (Natural Language Autoencoder) warm-start data: DeepSeek-V4-Flash-0731 layer-28 activations (last token of finefineweb prefixes; docs/positions identical to asher577/easynla-warmstart-data) paired with gold explanations written by claude-opus-5 (same instruction prompt as the original Sonnet-4.6 set; thinking disabled ..."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "1x Spark: DeepSeek-V4-Flash-0731 @ 1,000 tok/s prefill, 59 tok/s multi ...",
+      "url": "https://forums.developer.nvidia.com/t/1x-spark-deepseek-v4-flash-0731-1-000-tok-s-prefill-59-tok-s-multi-agent-serving/378855",
+      "snippet": "Three months, 486 commits, and 145,000+ added lines later, the fork makes this model genuinely fast to serve on a single DGX Spark, and today it ships as v0.5 with the new 07-31 major DSV4-Flash model upgrade."
+    }
+  ]
+}

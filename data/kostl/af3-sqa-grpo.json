@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "kostl/af3-sqa-grpo",
+  "slug": "kostl-af3-sqa-grpo",
+  "author": "kostl",
+  "url": "https://huggingface.co/kostl/af3-sqa-grpo",
+  "created_at": "2026-03-10T05:48:49.000Z",
+  "updated_at": "2026-09-01T14:21:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "speech-quality-assessment",
+    "grpo",
+    "cot",
+    "qualispeech",
+    "reasoning",
+    "audio-text-to-text",
+    "en",
+    "dataset:tsinghua-ee/QualiSpeech",
+    "base_model:nvidia/audio-flamingo-3-hf",
+    "base_model:finetune:nvidia/audio-flamingo-3-hf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1539511112,
+  "storage_human": "1.5 GB",
+  "base_model": "nvidia/audio-flamingo-3-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kostl/af3-sqa-grpo · Hugging Face",
+      "url": "https://huggingface.co/kostl/af3-sqa-grpo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kostl/af3-sqa-grpo at main - Hugging Face",
+      "url": "https://huggingface.co/kostl/af3-sqa-grpo/tree/main",
+      "snippet": "grpo cot qualispeech reasoning License:apache-2.0 Model card FilesFiles and versions xet Community main af3-sqa-grpo 1.54 GB Ctrl+K Ctrl+K 1 contributor History:3 commits kostl Create README.md a108ba4 verifiedabout 2 months ago .gitattributes Safe 1.52 kBinitial commitabout 2 months ago README.md 225 BytesCreate README.mdabout 2 months ago ..."
+    },
+    {
+      "title": "Calibration-Reasoning Framework for Descriptive Speech Quality Assessment",
+      "url": "https://arxiv.org/pdf/2603.10175v1",
+      "snippet": "Abstract Explainable speech quality assessment requires moving beyond Mean Opinion Scores (MOS) to analyze underlying perceptual dimensions. To address this, we introduce a novel post-training method that tailors the foundational Audio Large Language Model for multidimensional reasoning, detection and classifi-cation of audio artifacts. First, a calibration stage aligns the model to predict ..."
+    },
+    {
+      "title": "Model Parameters and Licensing | sokrypton/alphafold3 | DeepWiki",
+      "url": "https://deepwiki.com/sokrypton/alphafold3/1.2-model-parameters-and-licensing",
+      "snippet": "This page details the acquisition and usage of AlphaFold 3 (AF3) model weights, including the official Google DeepMind parameters and the community-driven OpenFold3 (OF3) alternatives."
+    },
+    {
+      "title": "RL Posttraining for Tool-Using Agents: GRPO, Async RL, and Reward ...",
+      "url": "https://zylos.ai/en/research/2026-04-10-rl-posttraining-tool-using-agents-grpo-async-rl/",
+      "snippet": "The dominant posttraining recipe for capable tool-using agents in 2026 is a three-stage pipeline: supervised fine-tuning (SFT) for format and cold-start, preference optimization (DPO/SimPO) for alignment, then reinforcement learning with verifiable rewards (GRPO/DAPO) for reasoning and generalization. Pure SFT agents plateau; RL posttraining is what pushes them past that ceiling. GRPO (Group ..."
+    }
+  ]
+}

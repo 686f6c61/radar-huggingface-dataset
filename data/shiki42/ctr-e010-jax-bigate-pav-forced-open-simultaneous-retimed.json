@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Shiki42/ctr-e010-jax-bigate-pav-forced-open-simultaneous-retimed",
+  "slug": "shiki42-ctr-e010-jax-bigate-pav-forced-open-simultaneous-retimed",
+  "author": "Shiki42",
+  "url": "https://huggingface.co/Shiki42/ctr-e010-jax-bigate-pav-forced-open-simultaneous-retimed",
+  "created_at": "2026-09-01T17:18:10.000Z",
+  "updated_at": "2026-09-01T17:20:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "jax",
+  "languages": [],
+  "tags": [
+    "jax",
+    "robotics",
+    "pi05",
+    "bigate",
+    "openpi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shiki42/ctr · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Shiki42/ctr",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Shiki42 (Shuyuan Hu) - Hugging Face",
+      "url": "https://huggingface.co/Shiki42/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 3 hours ago ... published a model about 3 hours ago"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "The Silent Hijack: How AI-Powered Android Trojans Are Intercepting Real ...",
+      "url": "https://meterpreter.org/the-silent-hijack-how-ai-powered-android-trojans-are-intercepting-real-time-payments/",
+      "snippet": "New Android malware like PixRevolution and BeatBanker are using AI and screen overlays to hijack real-time transfers. Protect your banking and crypto apps now."
+    },
+    {
+      "title": "BlendSwap - Free Blender 3D Models",
+      "url": "https://blendswap.com/",
+      "snippet": "Download free Blender 3D models, textures, and materials shared by the community under Creative Commons licenses."
+    }
+  ]
+}

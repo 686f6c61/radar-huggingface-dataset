@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Natlis/cnn-bilstm-emotion-classification-ru",
+  "slug": "natlis-cnn-bilstm-emotion-classification-ru",
+  "author": "Natlis",
+  "url": "https://huggingface.co/Natlis/cnn-bilstm-emotion-classification-ru",
+  "created_at": "2026-09-01T13:31:03.000Z",
+  "updated_at": "2026-09-01T13:31:13.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "custom",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "custom",
+    "speech-emotion-recognition",
+    "audio-classification",
+    "russian",
+    "ser",
+    "ru",
+    "arxiv:2212.12266",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2485915,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Explainable Emotion Classification in Text: A Hybrid CNN-BiLSTM ...",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-25631-7_18",
+      "snippet": "The macro-averaged data were used to train and test baseline models (Logistic Regression, reinforcement learning models (SVM) and Random Forest). Among these, SVM was the best in terms of F1 score with the value of 0.8423. To top it all, a hybrid CNN-BiLSTM model along with a mechanism of attention or GloVe pre-trained embeddings were constructed."
+    },
+    {
+      "title": "EEG Emotion Classification Using an Enhanced Transformer-CNN-BiLSTM ...",
+      "url": "https://arxiv.org/html/2602.06411v1",
+      "snippet": "To model the complex spatial-temporal dynamics present in EEG signals, we propose an Enhanced Transformer-CNN-BiLSTM architecture that integrates convolutional feature extraction, recurrent temporal modeling, and attention-based importance weighting."
+    },
+    {
+      "title": "EEG Emotion Classification Using an Enhanced Transformer-CNN-BiLSTM ...",
+      "url": "https://arxiv.org/abs/2602.06411",
+      "snippet": "Electroencephalography (EEG)-based emotion recognition plays a critical role in affective computing and emerging decision-support systems, yet remains challenging due to high-dimensional, noisy, and subject-dependent signals. This study investigates whether hybrid deep learning architectures that integrate convolutional, recurrent, and attention-based components can improve emotion ..."
+    },
+    {
+      "title": "Transformer-CNN-BiLSTM EEG Emotion Classifier",
+      "url": "https://www.emergentmind.com/papers/2602.06411",
+      "snippet": "This study introduces a hybrid Transformer-CNN-BiLSTM model with dual attention that achieves near-perfect accuracy in EEG emotion classification."
+    },
+    {
+      "title": "Explainable Emotion Classification in Text: A Hybrid CNN-BiLSTM ...",
+      "url": "https://www.researchgate.net/publication/411120709_Explainable_Emotion_Classification_in_Text_A_Hybrid_CNN-BiLSTM_Framework_with_Attention_Mechanism_and_LIME",
+      "snippet": "The proposed model combines the learning advantages of BiLSTM and CNN. The overall accuracy of text emotion analysis has been greatly improved, with an accuracy of 0.94 and an improvement of 8.51% ..."
+    }
+  ]
+}

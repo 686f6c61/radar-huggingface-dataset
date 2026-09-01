@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "PostAlign/sLLM",
+  "slug": "postalign-sllm",
+  "author": "PostAlign",
+  "url": "https://huggingface.co/PostAlign/sLLM",
+  "created_at": "2026-09-01T13:57:29.000Z",
+  "updated_at": "2026-09-01T15:39:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "korean",
+    "causal-lm",
+    "multi-token-prediction",
+    "text-generation",
+    "ko",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 178611456,
+  "parameters_human": "178.6M",
+  "storage_bytes": 1533615392,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PostAlign/sLLM · Hugging Face",
+      "url": "https://huggingface.co/PostAlign/sLLM",
+      "snippet": "PostAlign / sLLM like 0 Text Generation ONNX Safetensors Korean korean causal-lm multi-token-prediction Model card FilesFiles and versions xet Community Copy to bucket new sLLM (Korean) 학습 파일 로드 ONNX 한계"
+    },
+    {
+      "title": "PostAlign: Multimodal Grounding as a Corrective Lens for MLLMs",
+      "url": "https://arxiv.org/html/2506.17901",
+      "snippet": "Abstract Multimodal Large Language Models (MLLMs) excel in vision-language tasks, such as image captioning and visual question answering. However, they often suffer from over-reliance on spurious correlations, primarily due to linguistic priors that distract the model from leveraging actual visual information. To address these issues, we introduce MMGrounded-PostAlign, a post-multimodal ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 407 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "PostAlign: Multimodal Grounding as a Corrective Lens for MLLMs",
+      "url": "https://mlanthology.org/iclr/2026/wu2026iclr-postalign/",
+      "snippet": "To address these challenges, we introduce MMGrounded-PostAlign, a post-multimodal alignment framework designed to enhance the visual understanding capabilities of MLLMs and mitigate hallucinations."
+    },
+    {
+      "title": "PostAlign: Multimodal Grounding as a Corrective Lens for MLLMs | AI ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/postalign-multimodal-grounding-as-corrective-lens-mllms",
+      "snippet": "Generalizability across diverse visual domains Conclusion PostAlign represents a significant step forward in addressing AI hallucination and improving multimodal model reliability. By treating visual grounding as a corrective lens, the approach offers a nuanced solution to one of machine learning&#x27;s most challenging problems."
+    }
+  ]
+}

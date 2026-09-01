@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tanhsing/Qwen3.8-Flash-Next",
+  "slug": "tanhsing-qwen3-8-flash-next",
+  "author": "tanhsing",
+  "url": "https://huggingface.co/tanhsing/Qwen3.8-Flash-Next",
+  "created_at": "2026-09-01T12:34:32.000Z",
+  "updated_at": "2026-09-01T12:34:33.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "conversational",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 360013002208,
+  "storage_human": "360.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "In particular, Qwen3.8-Flash is the official version based on Qwen3.8-Flash-Next with more production features, e.g., 1M context length by default, official built-in tools."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/qwen3_8_flash_next",
+      "snippet": "Qwen3.8-Flash-Next is an experimental open-weight multimodal large language model released by Alibaba Group&#x27;s Qwen team on August 26, 2026."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/qwen/qwen3.8-flash-next",
+      "snippet": "Qwen3.8-Flash-Next Open Weight Released Aug 26 2026 Qwen3.8-Flash-Next is an AI model released by Qwen on Wednesday, Aug 26 2026, 12 days after Qwen3.8-27B. It is an open-weight model — the trained weights are available to download and run. It is a 125B parameter model with a 262k token context window."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next Intelligence, Performance & Price Analysis",
+      "url": "https://artificialanalysis.ai/models/qwen3-8-flash-next",
+      "snippet": "Analysis of Alibaba&#x27;s Qwen3.8-Flash-Next and comparison to other AI models across key metrics including quality, price, performance (tokens per second & time to first token), context window & more."
+    }
+  ]
+}

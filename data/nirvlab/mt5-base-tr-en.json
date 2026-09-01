@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "NIRVLab/mt5-base-tr-en",
+  "slug": "nirvlab-mt5-base-tr-en",
+  "author": "NIRVLab",
+  "url": "https://huggingface.co/NIRVLab/mt5-base-tr-en",
+  "created_at": "2026-09-01T12:14:00.000Z",
+  "updated_at": "2026-09-01T12:14:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "mt5",
+    "translation",
+    "sequence-to-sequence",
+    "baseline",
+    "coling-2027",
+    "tr",
+    "en",
+    "dataset:Helsinki-NLP/opus-100",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1185566738,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/mt5-base · Hugging Face",
+      "url": "https://huggingface.co/google/mt5-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Assistant - Developing programs - MetaEditor Help",
+      "url": "https://www.metatrader5.com/en/metaeditor/help/development/ai_assistant",
+      "snippet": "AI coding assistant MetaEditor features AI Assistant - the advanced automatic code completion tool powered by the OpenAI -based models. Write a trading idea in a natural language, and AI Assistant will offer its MQL5 implementation. This opportunity will be useful to everyone: Beginners receive ready-made code snippets to learn and to ..."
+    },
+    {
+      "title": "GitHub - Anaswar-ash/MT5-PY-AI-Tbot: A complete framework for creating ...",
+      "url": "https://github.com/Anaswar-ash/MT5-PY-AI-Tbot",
+      "snippet": "A complete framework for creating an Al-enhanced trading bot in MQL5, using Python for model training and the ONNX format for deployment on the MetaTrader 5 platform."
+    },
+    {
+      "title": "mT5 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/mt5",
+      "snippet": "mT5 mT5 is a multilingual variant of T5, trained on 101 languages. It also incorporates a new \"accidental translation\" technique to prevent the model from incorrectly translating predictions into the wrong language."
+    },
+    {
+      "title": "MQL5 Code Base",
+      "url": "https://www.mql5.com/en/code",
+      "snippet": "Market Replay Tool is an MT5 utility that seamlessly merges a Market Replay simulator with interactive TradingView-style Long & Short drawing tools. It allows traders to backtest strategies on historical data with adjustable playback speeds, while effortlessly mapping out risk-to-reward setups using dynamic, draggable entry, stop-loss, and take ..."
+    }
+  ]
+}

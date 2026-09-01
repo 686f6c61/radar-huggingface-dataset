@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Atishaymint/orvansi-v1-gemma2-9b",
+  "slug": "atishaymint-orvansi-v1-gemma2-9b",
+  "author": "Atishaymint",
+  "url": "https://huggingface.co/Atishaymint/orvansi-v1-gemma2-9b",
+  "created_at": "2026-09-01T18:07:38.000Z",
+  "updated_at": "2026-09-01T18:07:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma2",
+    "trl",
+    "en",
+    "base_model:unsloth/gemma-2-9b-bnb-4bit",
+    "base_model:finetune:unsloth/gemma-2-9b-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 254755131,
+  "storage_human": "255 MB",
+  "base_model": "unsloth/gemma-2-9b-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF Gemma2:ImprovingOpenLanguageModels ataPracticalSize",
+      "url": "https://storage.googleapis.com/deepmind-media/gemma/gemma-2-report.pdf",
+      "snippet": "e with recent Google AI models (Gemini Team, 2024). Similar to the inaugural Gemma release, we have followed a three pillar approach which fo-cuses on safety mitigation at training time, robust and transparent model evaluations, and further development of the Responsible Generative AI Toolkit, a series of models and tools to help de-velopers ..."
+    },
+    {
+      "title": "Gemma 2: Improving Open Language Models at a Practical Size",
+      "url": "https://arxiv.org/html/2408.00118v1",
+      "snippet": "We observe overall a massive improvement in our models compared to previous versions, by up to 10% in some benchmarks for the 9B model. The two 2B models were trained with a similar number of tokens (2T for Gemma 2 and 3T for Gemma 1) and we still observe a significant improvement for the new models."
+    },
+    {
+      "title": "Gemma 2 9B — CanIRun.ai",
+      "url": "https://www.canirun.ai/model/gemma2-9b",
+      "snippet": "About this model Google&#x27;s Gemma 2 model is available in three sizes, 2B, 9B and 27B, featuring a brand new architecture designed for class leading performance and efficiency."
+    },
+    {
+      "title": "Gemma 2 model card - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_2",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making LLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Gemma 2: Improving Open Language Models at a Practical Size",
+      "url": "https://arxiv.org/abs/2408.00118",
+      "snippet": "In this work, we introduce Gemma 2, a new addition to the Gemma family of lightweight, state-of-the-art open models, ranging in scale from 2 billion to 27 billion parameters. In this new version, we apply several known technical modifications to the Transformer architecture, such as interleaving local-global attentions (Beltagy et al., 2020a) and group-query attention (Ainslie et al., 2023 ..."
+    }
+  ]
+}

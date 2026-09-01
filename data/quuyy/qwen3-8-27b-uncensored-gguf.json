@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "quuyy/Qwen3.8-27B-Uncensored-GGUF",
+  "slug": "quuyy-qwen3-8-27b-uncensored-gguf",
+  "author": "quuyy",
+  "url": "https://huggingface.co/quuyy/Qwen3.8-27B-Uncensored-GGUF",
+  "created_at": "2026-09-01T18:02:23.000Z",
+  "updated_at": "2026-09-01T18:02:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "uncensored",
+    "abliterated",
+    "qwen3.8",
+    "mtp",
+    "vision",
+    "en",
+    "zh",
+    "base_model:JonathanColetti/Qwen3.8-27B-Uncensored",
+    "base_model:quantized:JonathanColetti/Qwen3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780458848,
+  "storage_human": "190.8 GB",
+  "base_model": "JonathanColetti/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen-3.8-27B-Uncensored-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen-3.8-27B-Uncensored-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-YMQ-MTP-GGUF - Hugging Face",
+      "url": "https://huggingface.co/zerodigest/Qwen3.8-27B-Uncensored-YMQ-MTP-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-GGUF - AI Indigo",
+      "url": "https://aiindigo.com/tool/qwen38-27b-uncensored-gguf",
+      "snippet": "Unrestricted 27B parameter Qwen model in GGUF format for high-performance local AI deployment without content filters. Qwen3.8-27B-Uncensored-GGUF represents a significant milestone in the evolution of locally deployable large language models as of 2026."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "Run Qwen 3.8 27B uncensored locally: pick the GGUF quant for your VRAM, serve it with llama.cpp or Ollama, and respect the research-only boundary."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Ollama build of Qwen3.8-27B-Uncensored — an abliterated (refusal-removed) build of Qwen&#x27;s Qwen3.8-27B, a 27B dense hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with reasoning, tool-calling, and an MTP speculative-decoding head. Sixteen tags from 2-bit to 8-bit, each with the mmproj vision projector bundled in — nothing extra to fetch. Browse all ..."
+    }
+  ]
+}

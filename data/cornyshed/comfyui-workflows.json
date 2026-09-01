@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "CornyShed/ComfyUI-workflows",
+  "slug": "cornyshed-comfyui-workflows",
+  "author": "CornyShed",
+  "url": "https://huggingface.co/CornyShed/ComfyUI-workflows",
+  "created_at": "2026-09-01T13:44:36.000Z",
+  "updated_at": "2026-09-01T13:44:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Comfy",
+      "url": "https://comfy.org/models/",
+      "snippet": "Run the world&#x27;s leading AI models in ComfyUI. Browse every supported model with community workflow templates ready to run."
+    },
+    {
+      "title": "ComfyUI Workflows - ComfyUI.org",
+      "url": "https://comfyui.org/en/workflows",
+      "snippet": "ComfyUI.org Workflows All Workflows ComfyUI Workflows Browse 329 ComfyUI workflows and guides with downloadable templates, model requirements, and setup notes."
+    },
+    {
+      "title": "Comfy Workflows - Free AI Generation Workflows",
+      "url": "https://comfy.org/workflows/",
+      "snippet": "Ready-to-run workflows. Pick one, hit run, see results in seconds. No building from scratch."
+    },
+    {
+      "title": "ComfyUI Workflows Hub | Professional AI Art Generation Templates [2025]",
+      "url": "https://smartart.live/articles/machine-learning/comfyui-workflows/",
+      "snippet": "Access professional-grade ComfyUI workflows for text-to-image, img2img, inpainting, and video generation. Includes optimization tips, troubleshooting guides, and community favorites."
+    },
+    {
+      "title": "ComfyUI Official Documentation - ComfyUI",
+      "url": "https://docs.comfy.org/",
+      "snippet": "Official documentation for ComfyUI, the open source node-based generative AI application. Learn to build workflows for image, video, audio, and 3D generation."
+    }
+  ]
+}

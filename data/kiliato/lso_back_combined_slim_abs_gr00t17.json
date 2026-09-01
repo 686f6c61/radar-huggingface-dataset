@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kiliato/lso_back_combined_slim_abs_GR00T17",
+  "slug": "kiliato-lso_back_combined_slim_abs_gr00t17",
+  "author": "kiliato",
+  "url": "https://huggingface.co/kiliato/lso_back_combined_slim_abs_GR00T17",
+  "created_at": "2026-09-01T19:07:45.000Z",
+  "updated_at": "2026-09-01T19:09:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "dataset:kiliato/lso_back_combined_slim_abs",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219184,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Duck.ai by DuckDuckGo. Private AI chat. Free.",
+      "url": "https://duck.ai/",
+      "snippet": "Use ChatGPT, Claude, and other AIs, privately. Protect chats from hackers, scammers, and companies. Keep info confidential. Free. No account required."
+    },
+    {
+      "title": "GitHub - nv-tlabs/kimodo: Official implementation of Kimodo, a ...",
+      "url": "https://github.com/nv-tlabs/kimodo",
+      "snippet": "Official implementation of Kimodo, a kinematic motion diffusion model for high-quality human(oid) motion generation. - nv-tlabs/kimodo"
+    },
+    {
+      "title": "Chrome silently downloads a 4GB AI model. Here&#x27;s how to ... - PCWorld",
+      "url": "https://www.pcworld.com/article/3132803/chrome-silently-downloads-a-4gb-ai-model-heres-how-to-remove-it.html",
+      "snippet": "You can nix Chrome&#x27;s 4GB local AI model in just a few clicks, but you&#x27;ll lose some functionality in the process."
+    },
+    {
+      "title": "Models - Docs - Kiro",
+      "url": "https://kiro.dev/docs/models/",
+      "snippet": "Models Kiro gives you access to frontier and open weight AI models from OpenAI, Anthropic, and other providers. GPT-5.6 brings OpenAI models to Kiro for the first time, with three tiers that balance agentic performance and cost. Pick the right model for the job, or select Auto to let Kiro route each task to the optimal model automatically."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "hipfire-models/maple-preview",
+  "slug": "hipfire-models-maple-preview",
+  "author": "hipfire-models",
+  "url": "https://huggingface.co/hipfire-models/maple-preview",
+  "created_at": "2026-08-22T22:53:42.000Z",
+  "updated_at": "2026-09-01T12:01:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "hipfire",
+    "mixture-of-experts",
+    "reasoning",
+    "ternary",
+    "rdna",
+    "rocm",
+    "text-generation",
+    "en",
+    "base_model:deepgrove/maple-preview",
+    "base_model:quantized:deepgrove/maple-preview",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14113972224,
+  "storage_human": "14.1 GB",
+  "base_model": "deepgrove/maple-preview",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - warpfront/hipfire: RDNA-native LLM inference engine in Rust.",
+      "url": "https://github.com/warpfront/hipfire",
+      "snippet": "Managed Linux installs can switch revisions with hipfire update @beta, hipfire update --tag v0.2.1, or hipfire update --commit <sha>. To uninstall a managed Linux install while keeping downloaded models and settings: ... Add --dry-run to preview it. --purge also deletes all data under ~/.hipfire and requires explicit confirmation."
+    },
+    {
+      "title": "hipfire-models (Hipfire) - Hugging Face",
+      "url": "https://huggingface.co/hipfire-models/datasets",
+      "snippet": "Rust-based, fast inference engine optimized for AMD"
+    },
+    {
+      "title": "hipfire",
+      "url": "https://github.com/HUSRCF/hipscope",
+      "snippet": "RDNA4 (gfx1201, Radeon AI PRO R9700) ... CASK-based KV cache eviction lets you run long-context prompts without OOM: generate a sidecar with hipfire sidecar-gen <model> and enable eviction with hipfire config cask-profile balanced."
+    },
+    {
+      "title": "deepgrove/maple-preview · Hugging Face",
+      "url": "https://huggingface.co/deepgrove/maple-preview",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hipfire — LLM inference for AMD RDNA GPUs",
+      "url": "https://hipfire.dev/",
+      "snippet": "LLM inference for AMD RDNA GPUs. A Rust engine over hand-written HIP kernels. No PyTorch. No Python in the hot path."
+    }
+  ]
+}

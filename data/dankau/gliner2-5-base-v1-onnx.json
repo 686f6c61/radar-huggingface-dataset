@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "DanKau/gliner2.5-base-v1-onnx",
+  "slug": "dankau-gliner2-5-base-v1-onnx",
+  "author": "DanKau",
+  "url": "https://huggingface.co/DanKau/gliner2.5-base-v1-onnx",
+  "created_at": "2026-09-01T16:21:47.000Z",
+  "updated_at": "2026-09-01T16:22:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "extractor",
+    "token-classification",
+    "text-classification",
+    "information-extraction",
+    "base_model:fastino/gliner2.5-base-v1",
+    "base_model:quantized:fastino/gliner2.5-base-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 745616117,
+  "storage_human": "746 MB",
+  "base_model": "fastino/gliner2.5-base-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DanKau/g2.5-multi-v1-onnx · Hugging Face",
+      "url": "https://huggingface.co/DanKau/g2.5-multi-v1-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DanKau/gliner2-multi-v1-onnx · Hugging Face",
+      "url": "https://huggingface.co/DanKau/gliner2-multi-v1-onnx",
+      "snippet": "Experimental ONNX build - Unofficial ONNX export of fastino/gliner2-multi-v1, which is licensed under Apache 2.0. No changes were made to the model&#x27;s weights or behavior beyond conversion to the ONNX format."
+    },
+    {
+      "title": "GLiNER2.5 Base V1 | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/gliner2-5-base-v1/",
+      "snippet": "GLiNER2.5 Base is a 0.2B parameter span free information extraction model that predicts entity boundaries directly instead of enumerating candidate spans, enabling linear scaling with document length. It performs named entity recognition, relation extraction, and constrained classification, scoring an average F1 of 54.87 across 16 benchmarks."
+    },
+    {
+      "title": "GitHub - Pastel-Org/gliner2.5-onnx-webgpu: ONNX WebGPU export of GLiNER ...",
+      "url": "https://github.com/Pastel-Org/gliner2.5-onnx-webgpu",
+      "snippet": "Zero-shot named-entity recognition with GLiNER2.5 (boundary architecture), fully in the browser via ONNX Runtime Web — WebGPU when available, WASM fallback. No server, no keys, no build step ..."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

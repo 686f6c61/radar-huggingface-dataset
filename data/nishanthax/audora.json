@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Nishanthax/Audora",
+  "slug": "nishanthax-audora",
+  "author": "Nishanthax",
+  "url": "https://huggingface.co/Nishanthax/Audora",
+  "created_at": "2026-09-01T15:16:03.000Z",
+  "updated_at": "2026-09-01T15:16:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Audora Tech: The Unlimited AI Revolution — \"Omnipotence ... - Medium",
+      "url": "https://james-mill.medium.com/audora-tech-the-unlimited-ai-revolution-omnipotence-protocol-active-cadcf2e651d7",
+      "snippet": "🚀 Advanced Features — We are working on features that no other AI company is offering today. Things you haven&#x27;t even imagined yet. 🚀 Community Growth — Build a community of millions of users who believe in unlimited, free AI. 🚀 More Languages — Make Audora available in every language, reaching every corner of India and the world."
+    },
+    {
+      "title": "Free AI 3D Model Generator | Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Free AI 3D Model Generator: create 3D models from text or images for games, AR/VR, and 3D printing at zero cost."
+    },
+    {
+      "title": "Audora - AI 3D Isometric Icon Generator | Dashboard",
+      "url": "https://app.useaudora.com/",
+      "snippet": "Audora - AI 3D Isometric Icon Generator | Dashboard"
+    },
+    {
+      "title": "Aurora Model — Best Practices - help.creatify.ai",
+      "url": "https://help.creatify.ai/en/articles/12667081-aurora-model-best-practices",
+      "snippet": "Aurora Model — Best Practices *Create ultra-realistic avatar videos with a single image using the Aurora engine.*"
+    },
+    {
+      "title": "Introducing the Aurora Model: - creatify.ai",
+      "url": "https://creatify.ai/introducing-aurora",
+      "snippet": "Introducing the Aurora Model: A udio-Driven U ltra-Realistic R endering o f R eactive A vatars State-of-the-art diffusion transformer (DiT) model designed specifically for creating professional studio-grade, avatar-based video ads — available today on Creatify."
+    }
+  ]
+}

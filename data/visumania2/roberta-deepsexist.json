@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "visumania2/RoBERTa-DeepSexist",
+  "slug": "visumania2-roberta-deepsexist",
+  "author": "visumania2",
+  "url": "https://huggingface.co/visumania2/RoBERTa-DeepSexist",
+  "created_at": "2026-09-01T15:53:36.000Z",
+  "updated_at": "2026-09-01T16:35:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "es",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124647170,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498617961,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RoBERTa · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/roberta",
+      "snippet": "Explore Hugging Face&#x27;s RoBERTa, an advanced AI model for natural language processing, with detailed documentation and open-source resources."
+    },
+    {
+      "title": "DeepSexist/README.md at main · visumania/DeepSexist · GitHub",
+      "url": "https://github.com/visumania/DeepSexist/blob/main/README.md",
+      "snippet": "Contribute to visumania/DeepSexist development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - visumania/DeepSexist",
+      "url": "https://github.com/visumania/DeepSexist",
+      "snippet": "Contribute to visumania/DeepSexist development by creating an account on GitHub."
+    },
+    {
+      "title": "RoBERTa - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.56.1/en/model_doc/roberta",
+      "snippet": "RoBERTa improves BERT with new pretraining objectives, demonstrating BERT was undertrained and training design is important. The pretraining objectives include dynamic masking, sentence packing, larger batches and a byte-level BPE tokenizer. You can find all the original RoBERTa checkpoints under the Facebook AI organization."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

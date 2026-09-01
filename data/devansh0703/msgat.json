@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "devansh0703/MSGAT",
+  "slug": "devansh0703-msgat",
+  "author": "devansh0703",
+  "url": "https://huggingface.co/devansh0703/MSGAT",
+  "created_at": "2026-09-01T18:02:53.000Z",
+  "updated_at": "2026-09-01T18:03:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "graph-neural-network",
+    "molecular-property-prediction",
+    "quantum-chemistry",
+    "cheminformatics",
+    "SMILES",
+    "attention-mechanism",
+    "GNN",
+    "en",
+    "dataset:QuantumChem/QuantumChem_200k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1015432,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "devansh0703 (devansh raulo) - Hugging Face",
+      "url": "https://huggingface.co/devansh0703",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago"
+    },
+    {
+      "title": "devansh0703 (devansh raulo) - Hugging Face",
+      "url": "https://huggingface.co/devansh0703/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago"
+    },
+    {
+      "title": "devansh0703 (Devansh Raulo) · GitHub",
+      "url": "https://github.com/devansh0703",
+      "snippet": "AI-powered Advanced Persistent Threat (APT) detection system built on the ELK Stack. Python 1 2 CVAE-for-counterfactual-gene-exp Public"
+    },
+    {
+      "title": "Bi-channel Multiple Sparse Graph Attention Networks for Session-based ...",
+      "url": "https://dl.acm.org/doi/10.1145/3583780.3614791",
+      "snippet": "To address these challenges, we propose a novel graph attention network-based model called Multiple Sparse Graph Attention Networks (MSGAT). MSGAT leverages two parallel channels to model intra-session and inter-session information."
+    },
+    {
+      "title": "GitHub - devansh0703/slm-foundry",
+      "url": "https://github.com/devansh0703/slm-foundry/tree/main/",
+      "snippet": "From-scratch SLM pretraining foundry: take raw text all the way to an Ollama-runnable chat model in one repo. A small (~15M-60M param) decoder-only LM with a modern speedrun-grade architecture (RoPE, RMSNorm, GQA, relu^2 MLP, QK-norm / sliding-window / softcap flags), trained with the Muon optimizer (orthogonalized-by-Newton-Schulz momentum) on hidden matrices plus AdamW on everything else ..."
+    }
+  ]
+}

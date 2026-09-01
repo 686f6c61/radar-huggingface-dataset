@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ZiedBz/marketing-lora-c",
+  "slug": "ziedbz-marketing-lora-c",
+  "author": "ZiedBz",
+  "url": "https://huggingface.co/ZiedBz/marketing-lora-c",
+  "created_at": "2026-09-01T17:54:54.000Z",
+  "updated_at": "2026-09-01T18:10:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77549422,
+  "storage_human": "78 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "LoRA Studio - AI Image Generation",
+      "url": "https://lorastudio.org/",
+      "snippet": "Train custom LoRA models and generate stunning images with AI-powered text prompts."
+    },
+    {
+      "title": "Free Ai Influencer - Z image v1.0 | ZImage LoRA | Civitai",
+      "url": "https://civitai.com/models/2187823/free-ai-influencer",
+      "snippet": "A completely AI-crafted, hyper-realistic influencer-style character LoRA, trained with high precision to demonstrate the quality of my Z Image LoRA training. Character description (paraphrased title):"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

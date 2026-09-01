@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Clownstein/Black-Onyx-12B",
+  "slug": "clownstein-black-onyx-12b",
+  "author": "Clownstein",
+  "url": "https://huggingface.co/Clownstein/Black-Onyx-12B",
+  "created_at": "2026-09-01T00:12:35.000Z",
+  "updated_at": "2026-09-01T14:24:11.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4_unified",
+    "cybersecurity",
+    "secure-code-generation",
+    "threat-intelligence",
+    "vulnerability-detection",
+    "gemma",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:finetune:google/gemma-4-12B-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951719188,
+  "storage_human": "24.0 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Clownstein/Black-Onyx - GitHub",
+      "url": "https://github.com/Clownstein/Black-Onyx",
+      "snippet": "Black Onyx is an invite-only threat-intelligence workspace (TIP-first) for blue-team investigation, with an absorbed detection spine (Kafka/Postgres anomaly pipeline, incidents, hunt, SOAR). It is not a SIEM replacement: it helps analysts ingest evidence, work IOCs, triage alerts and connector detections, correlate multi-model findings into incidents, manage cases and assets, and measure ..."
+    },
+    {
+      "title": "Black-Onyx/docs/API.md at main · Clownstein/Black-Onyx",
+      "url": "https://github.com/Clownstein/Black-Onyx/blob/main/docs/API.md",
+      "snippet": "Contribute to Clownstein/Black-Onyx development by creating an account on GitHub."
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

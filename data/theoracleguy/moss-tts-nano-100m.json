@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "id": "theoracleguy/MOSS-TTS-Nano-100M",
+  "slug": "theoracleguy-moss-tts-nano-100m",
+  "author": "theoracleguy",
+  "url": "https://huggingface.co/theoracleguy/MOSS-TTS-Nano-100M",
+  "created_at": "2026-09-01T12:38:58.000Z",
+  "updated_at": "2026-09-01T13:11:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "it",
+    "he",
+    "ko",
+    "ru",
+    "fa",
+    "ar",
+    "pl",
+    "pt",
+    "cs",
+    "da",
+    "sv",
+    "hu",
+    "el",
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "moss_tts_nano",
+    "text-to-speech - mlx - mlx-audio",
+    "custom_code",
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "it",
+    "he",
+    "ko",
+    "ru",
+    "fa",
+    "ar",
+    "pl",
+    "pt",
+    "cs",
+    "da",
+    "sv",
+    "hu",
+    "el",
+    "tr",
+    "arxiv:2603.18090",
+    "arxiv:2602.10934",
+    "base_model:OpenMOSS-Team/MOSS-TTS-Nano-100M",
+    "base_model:finetune:OpenMOSS-Team/MOSS-TTS-Nano-100M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 142477056,
+  "parameters_human": "142.5M",
+  "storage_bytes": 285444614,
+  "storage_human": "285 MB",
+  "base_model": "OpenMOSS-Team/MOSS-TTS-Nano-100M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenMOSS/MOSS-TTS-Nano: MOSS-TTS-Nano is an open-source ...",
+      "url": "https://github.com/OpenMOSS/MOSS-TTS-Nano",
+      "snippet": "MOSS-TTS-Nano is an open-source multilingual tiny speech generation model from MOSI.AI and the OpenMOSS team. With only 0.1B parameters, it is designed for realtime speech generation, can run directly on CPU without a GPU, and keeps the deployment stack simple enough for local demos, web serving, and lightweight product integration."
+    },
+    {
+      "title": "GitHub - WaiChan8/moss-tts-nano: MOSS-TTS-Nano is an open-source ...",
+      "url": "https://github.com/WaiChan8/moss-tts-nano",
+      "snippet": "MOSS-TTS-Nano is an open-source multilingual tiny speech generation model from MOSI.AI and the OpenMOSS team. With only 0.1B parameters, it is designed for realtime speech generation, can run directly on CPU without a GPU, and keeps the deployment stack simple enough for local demos, web serving, and lightweight product integration."
+    },
+    {
+      "title": "MOSS-TTS-Nano | Multilingual Speech Generation - openmoss.ai",
+      "url": "https://openmoss.ai/MOSS-TTS-Nano-Demo/",
+      "snippet": "MOSS-TTS-Nano is a deployment-first TTS model designed for realtime speech generation, voice cloning, and lightweight integration. Built on an Audio Tokenizer + LLM autoregressive pipeline, it stays compact enough for practical CPU use while covering Chinese, English, and a broad multilingual set."
+    },
+    {
+      "title": "MOSS-TTS-Nano (100M) — Models — The AI Bench",
+      "url": "https://theaibench.ai/models/moss-tts-nano/",
+      "snippet": "← All models MODEL · OPENMOSS / MOSI.AI · 100M (0.1B) MOSS-TTS-Nano (100M) A 100M streaming-TTS that closes the multilingual gap Kokoro doesn&#x27;t cover — 20 languages including English, Japanese, Korean, Spanish, French, Arabic, Mandarin, plus voice cloning from a short audio reference. 48 kHz stereo output, neural-audio-tokenizer + autoregressive LLM pipeline, runs real-time on 4 CPU ..."
+    },
+    {
+      "title": "erenyeager-1/MOSS-TTS-Nano-100M · Hugging Face",
+      "url": "https://huggingface.co/erenyeager-1/MOSS-TTS-Nano-100M",
+      "snippet": "MOSS-TTS-Nano is an open-source multilingual tiny speech generation model from MOSI.AI and the OpenMOSS team. With only 0.1B parameters, it is designed for realtime speech generation, can run directly on CPU without a GPU, and keeps the deployment stack simple enough for local demos, web serving, and lightweight product integration."
+    }
+  ]
+}

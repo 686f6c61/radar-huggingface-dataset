@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_31f2e0fe36783f71_20260831-2f4d34af-f494-4128-8117-fa7fce4a5c99-5EqnMmpf",
+  "slug": "gradients-io-tournaments-tournament-tourn_31f2e0fe36783f71_20260831-2f4d34af-f494-4128-8117-fa7fce4a5c99-5eqnmmpf",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_31f2e0fe36783f71_20260831-2f4d34af-f494-4128-8117-fa7fce4a5c99-5EqnMmpf",
+  "created_at": "2026-08-31T21:35:28.000Z",
+  "updated_at": "2026-09-01T14:13:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 11408538064,
+  "storage_human": "11.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gradients | Decentralised AI Training & Research",
+      "url": "https://www.gradients.io/app/research/tournament",
+      "snippet": "Decentralised AI Training & Research. > TOURNAMENTS View live, recent, and historical tournaments from Subnet 56"
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_c03a612f287687e0_20260713 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_c03a612f287687e0_20260713-2f3a7043-d4e1-4ba5-851e-d2058c08c24a-5HLA2QWY",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-388b697e-299a-4548-b610-227628231630-5FRdgPRd",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_590e311a35f6a234_20260803 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_590e311a35f6a234_20260803-0ba4b9f8-b83a-4a70-a101-1e4c6785eb9d-5EEaxgnm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_0dc132aba4867201_20260518 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_0dc132aba4867201_20260518-242d3d26-240d-44e2-b3d6-a4e30650018e-5EEaxgnm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

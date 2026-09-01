@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "vonvonhero/Ornith-1.5-35B-A3B-Uncensored-OpenVINO-INT4",
+  "slug": "vonvonhero-ornith-1-5-35b-a3b-uncensored-openvino-int4",
+  "author": "vonvonhero",
+  "url": "https://huggingface.co/vonvonhero/Ornith-1.5-35B-A3B-Uncensored-OpenVINO-INT4",
+  "created_at": "2026-09-01T11:52:45.000Z",
+  "updated_at": "2026-09-01T11:55:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen3_5_moe",
+    "openvino-genai",
+    "int4",
+    "moe",
+    "reasoning",
+    "uncensored",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:finetune:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18980277367,
+  "storage_human": "19.0 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ornith-1.5-35B-A3B-Uncensored-GGUF - Hugging Face",
+      "url": "https://huggingface.co/vonvonhero/Ornith-1.5-35B-A3B-Uncensored-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "GitHub - ornith-ai/Ornith-1 · GitHub",
+      "url": "https://github.com/ornith-ai/Ornith-1",
+      "snippet": "Aloha! 🌺 Ornith is a family of self-improving open-source models for agentic tasks. This repo covers both generations: 🐦 Ornith-1.5 (latest) — extends self-scaffolding into a complete end-to-end self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning. Model weights at HuggingFace, and more details ..."
+    },
+    {
+      "title": "Ornith 1.5 35b A3b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/ornith-1-5-35b-a3b.html",
+      "snippet": "Download Ornith 1.5 35b A3b GGUF model. 73.5 GB, 1,391,218 downloads."
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "id": "sunnyyy/Qwen3.8-27B-nvfp4-NInfer",
+  "slug": "sunnyyy-qwen3-8-27b-nvfp4-ninfer",
+  "author": "sunnyyy",
+  "url": "https://huggingface.co/sunnyyy/Qwen3.8-27B-nvfp4-NInfer",
+  "created_at": "2026-09-01T15:56:10.000Z",
+  "updated_at": "2026-09-01T15:56:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "qwen3.8",
+    "nvfp4",
+    "fp8",
+    "w4a4",
+    "blackwell",
+    "multimodal",
+    "conversational",
+    "cuda",
+    "rtx-5090",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21492695040,
+  "storage_human": "21.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B, unsloth/Qwen3.8-27B-NVFP4",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "IFBench",
+      "metric": "Prompt-level strict (0-shot, rule)",
+      "value": 77
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "AIME 2025",
+      "metric": "Accuracy (0-shot, rule)",
+      "value": 96.67
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "AIME 2026",
+      "metric": "Accuracy (0-shot, rule)",
+      "value": 96.67
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GPQA-Diamond",
+      "metric": "Accuracy (0-shot, rule)",
+      "value": 90.4
+    },
+    {
+      "task": "Image Text to Text",
+      "dataset": "ERQA",
+      "metric": "Accuracy (0-shot, rule)",
+      "value": 66.25
+    },
+    {
+      "task": "Image Text to Text",
+      "dataset": "RealWorldQA",
+      "metric": "Accuracy (0-shot, rule)",
+      "value": 83.53
+    }
+  ],
+  "sources": [
+    {
+      "title": "unsloth/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen 3.8 27B Topped Hacker News in a Day. Here&#x27;s How to Run It Locally ...",
+      "url": "https://dev.to/jamilxt/qwen-38-27b-topped-hacker-news-in-a-day-heres-how-to-run-it-locally-from-spring-boot-cee",
+      "snippet": "The system prompt matters here. Because Qwen3.8 thinks by default and will happily burn 20,000 reasoning tokens on a two-sentence answer, a prompt that sets the expected depth is your first line of defense against the overthinking the thread keeps reporting. Step 5: multimodal input (images and video) Qwen3.8 is a vision-language model, and Spring AI&#x27;s multimodal support covers it. The ..."
+    },
+    {
+      "title": "GitHub - Neroued/ninfer: High-performance single-GPU inference for ...",
+      "url": "https://github.com/Neroued/ninfer",
+      "snippet": "The runtime is deliberately specialized: one GPU, one resident model, and a startup-fixed capacity of one to eight active requests. NInfer supports five artifact identities. The quick-start commands use Qwen3.8-27B NVFP4. ... The artifact identity fixes the exact model and weight profile."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    }
+  ]
+}

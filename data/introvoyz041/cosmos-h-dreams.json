@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "introvoyz041/Cosmos-H-Dreams",
+  "slug": "introvoyz041-cosmos-h-dreams",
+  "author": "introvoyz041",
+  "url": "https://huggingface.co/introvoyz041/Cosmos-H-Dreams",
+  "created_at": "2026-09-01T11:30:08.000Z",
+  "updated_at": "2026-09-01T11:30:08.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "nv-medtech",
+  "languages": [],
+  "tags": [
+    "nv-medtech",
+    "custom",
+    "simulation",
+    "surgical-robotics",
+    "video-generation",
+    "real-time",
+    "interactive",
+    "autoregressive",
+    "policy-evaluation",
+    "vla-evaluation",
+    "healthcare-robotics",
+    "world-model",
+    "image-to-video",
+    "dataset:nvidia/PhysicalAI-Robotics-Open-H-Embodiment",
+    "arxiv:2511.00062",
+    "arxiv:2407.12998",
+    "base_model:nvidia/Cosmos-H-Surgical-Simulator",
+    "base_model:finetune:nvidia/Cosmos-H-Surgical-Simulator",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4361373895,
+  "storage_human": "4.4 GB",
+  "base_model": "nvidia/Cosmos-Predict2.5-2B, nvidia/Cosmos-H-Surgical-Simulator",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/Cosmos-H-Dreams · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Cosmos-H-Dreams",
+      "snippet": "Description Cosmos-H-Dreams is a real-time, action-conditioned generative surgical world model that lets a human operator or a learned surgical-robotics policy act inside a synthesized surgical scene and observe the interactions live."
+    },
+    {
+      "title": "GitHub - isaac-for-healthcare/Cosmos-H-Dreams",
+      "url": "https://github.com/isaac-for-healthcare/Cosmos-H-Dreams",
+      "snippet": "Cosmos-H-Dreams is a fine-tuned variant of Cosmos-H-Surgical-Simulator, with its own checkpoint and a serving layer in a streaming server, enabling live surgical simulation driven by keyboard or Meta Quest controller input. Given a conditional first frame from a surgical procedure and a live stream of instrument action vectors, the model rolls forward in blocks of generated frames and streams ..."
+    },
+    {
+      "title": "[2608.24199] NVIDIA Cosmos-H-Dreams: Real-Time Generative Physics ...",
+      "url": "https://arxiv.org/abs/2608.24199",
+      "snippet": "We address this gap with Cosmos-H-Dreams, an integrated real-time surgical world-model system combining an action-conditioned generative model, a teacher-to-student distillation recipe, and a deployment stack built on the NVIDIA FlashDreams streaming-inference library."
+    },
+    {
+      "title": "README.md · nvidia/Cosmos-H-Dreams at main - Hugging Face",
+      "url": "https://huggingface.co/nvidia/Cosmos-H-Dreams/blob/main/README.md",
+      "snippet": "Cosmos-H-Dreams Description Cosmos-H-Dreams is a real-time, action-conditioned generative surgical world model that lets a human operator or a learned surgical-robotics policy act inside a synthesized surgical scene and observe the interactions live."
+    },
+    {
+      "title": "Cosmos-H-Dreams - NVIDIA Isaac for Healthcare",
+      "url": "https://isaac-for-healthcare.github.io/medical-physics-simulation/cosmos_h_dreams/",
+      "snippet": "Cosmos-H-Dreams Real-time action-conditioned surgical video simulation via WebRTC, built on FlashDreams. Overview Cosmos-H-Dreams is a fine-tuned variant of Cosmos-H-Surgical-Simulator, with its own checkpoint and a serving layer in a streaming server, enabling live surgical simulation driven by keyboard or Meta Quest controller input."
+    }
+  ]
+}

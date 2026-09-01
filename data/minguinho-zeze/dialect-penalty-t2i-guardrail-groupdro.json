@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Minguinho-zeze/dialect-penalty-t2i-guardrail-groupdro",
+  "slug": "minguinho-zeze-dialect-penalty-t2i-guardrail-groupdro",
+  "author": "Minguinho-zeze",
+  "url": "https://huggingface.co/Minguinho-zeze/dialect-penalty-t2i-guardrail-groupdro",
+  "created_at": "2026-09-01T13:57:44.000Z",
+  "updated_at": "2026-09-01T14:02:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "safety",
+    "guardrail",
+    "dialect",
+    "fairness",
+    "group-dro",
+    "text-to-image",
+    "reproducibility",
+    "text-classification",
+    "en",
+    "arxiv:2608.29589",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837761,
+  "storage_human": "268 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minguinho-zeze/dialect-penalty-t2i · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Minguinho-zeze/dialect-penalty-t2i",
+      "snippet": "Datasets: Minguinho-zeze / dialect-penalty-t2i like 0 Tasks: Text Classification Languages: English German Arabic Size: 1K<n<10K ArXiv: arxiv:2510.22300 arxiv:2504.07100 Tags: fairness bias dialect text-to-image safety guardrails + 1 License: research-use-with-attribution Dataset card FilesFiles and versions xet Community"
+    },
+    {
+      "title": "Minguinho-zeze/dialect-penalty-t2i at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/Minguinho-zeze/dialect-penalty-t2i/tree/main",
+      "snippet": "Datasets: Minguinho-zeze / dialect-penalty-t2i like 0 Tasks: Text Classification Languages: English German Arabic Size: 1K<n<10K ArXiv: arxiv:2510.22300 arxiv:2504.07100 Tags: fairness bias dialect text-to-image safety guardrails + 1 License: research-use-with-attribution Dataset card FilesFiles and versions xet Community"
+    },
+    {
+      "title": "dialect-penalty-t2i/README.md at main · minguinho26/dialect ... - GitHub",
+      "url": "https://github.com/minguinho26/dialect-penalty-t2i/blob/main/README.md",
+      "snippet": "We audit text-to-image (T2I) safety pipelines for the dialect penalty: safety components that intervene based on linguistic variety rather than actual depicted content. Using roughly 23,000 paired Standard American English (SAE) and dialect prompts across five English dialects, we evaluate text-level filters, an unguarded T2I generator, and post-hoc image guardrails, and show that some ..."
+    },
+    {
+      "title": "GitHub - minguinho26/dialect-penalty-t2i: Official code of \"Not Safe ...",
+      "url": "https://github.com/minguinho26/dialect-penalty-t2i/tree/main",
+      "snippet": "We audit text-to-image (T2I) safety pipelines for the dialect penalty: safety components that intervene based on linguistic variety rather than actual depicted content. Using roughly 23,000 paired Standard American English (SAE) and dialect prompts across five English dialects, we evaluate text-level filters, an unguarded T2I generator, and post-hoc image guardrails, and show that some ..."
+    },
+    {
+      "title": "[2608.29589] Not Safe for All: Auditing the Dialect Penalty in Text-to ...",
+      "url": "https://arxiv.org/abs/2608.29589",
+      "snippet": "Text-to-image (T2I) safety guardrails fail to generalize equitably to non-standard dialects. Evaluating 23,080 paired prompts across five English dialects, we formalize this failure as the dialect penalty, where filters trigger based on linguistic surface features rather than semantic intent. Text-level filters fail in opposing directions: NSFW-T over-flags benign dialect prompts and ..."
+    }
+  ]
+}

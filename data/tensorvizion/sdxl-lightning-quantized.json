@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "TensorVizion/SDXL-Lightning-Quantized",
+  "slug": "tensorvizion-sdxl-lightning-quantized",
+  "author": "TensorVizion",
+  "url": "https://huggingface.co/TensorVizion/SDXL-Lightning-Quantized",
+  "created_at": "2026-09-01T12:22:41.000Z",
+  "updated_at": "2026-09-01T12:44:52.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 999335648,
+  "storage_human": "999 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ByteDance/SDXL-Lightning · Hugging Face",
+      "url": "https://huggingface.co/ByteDance/SDXL-Lightning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Quantized Models for ByteDance/SDXL-Lightning - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:ByteDance/SDXL-Lightning",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "SDXL Lightning - 1 Step | Stable Diffusion XL Checkpoint | Civitai",
+      "url": "https://civitai.com/models/350352/sdxl-lightning",
+      "snippet": "SDXL-Lightning is a lightning-fast text-to-image generation model. It can generate high-quality 1024px images in a few steps. For more information, please refer to our research paper: SDXL-Lightning: Progressive Adversarial Diffusion Distillation. We open-source the model as part of the research."
+    },
+    {
+      "title": "SDXL-Lightning - 4step - Free AI Model | Tensor.Art",
+      "url": "https://tensor.art/models/700807000503770079",
+      "snippet": "SDXL-Lightning is a lightning-fast text-to-image generation model. It can generate high-quality 1024px images in a few steps. For more information, please refer to our research paper: SDXL-Lightning: Progressive Adversarial Diffusion Distillation. We open-source the model as part of the research."
+    },
+    {
+      "title": "SDXL Lightning - Open Laboratory",
+      "url": "https://openlaboratory.com/models/sdxl-lightning/",
+      "snippet": "SDXL variant using the Adversarial Diffusion Distillation (ADD) technique to generate images very quickly, with multiple variants for different numbers of steps (1-8) and a more permissive license than SDXL Turbo."
+    }
+  ]
+}

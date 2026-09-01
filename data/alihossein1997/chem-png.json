@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Alihossein1997/CHEM.png",
+  "slug": "alihossein1997-chem-png",
+  "author": "Alihossein1997",
+  "url": "https://huggingface.co/Alihossein1997/CHEM.png",
+  "created_at": "2026-09-01T14:29:38.000Z",
+  "updated_at": "2026-09-01T14:29:38.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alihossein1997/synthesis · Hugging Face",
+      "url": "https://huggingface.co/Alihossein1997/synthesis",
+      "snippet": "Alihossein1997 / synthesis like 0 License:bigscience-openrail-m Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Free AI Image Generator | Craiyon",
+      "url": "https://www.craiyon.com/",
+      "snippet": "Free AI Image Generator Create free AI images from text for art, photos, illustrations, and quick visual ideas."
+    },
+    {
+      "title": "Free AI Picture Detector. Check Any Picture Online.",
+      "url": "https://aiimagechecker.ai/ai-picture-detector",
+      "snippet": "Free AI picture detector. Upload or paste a URL, get a verdict in seconds across every major AI image generator."
+    },
+    {
+      "title": "AI Image Generator - Create Free Text to Images with 30+ Models",
+      "url": "https://www.imagine.art/ai-image-generator",
+      "snippet": "AI Image Generator: create free AI images in native 4K from text or a photo with 30+ models like Midjourney V7, GPT Image 2 & Nano Banana Pro. Add text to images and upscale. No credit card."
+    },
+    {
+      "title": "Free AI Image Generator - Text to Image AI (No Signup) | Fotor",
+      "url": "https://www.fotor.com/ai-image-generator/",
+      "snippet": "Generate AI images from text prompts or reference images online for free. Create with Fotor&#x27;s multi-model AI image generator for better quality, consistency, and control."
+    }
+  ]
+}

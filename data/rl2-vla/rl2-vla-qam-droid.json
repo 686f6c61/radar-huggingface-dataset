@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "rl2-vla/rl2-vla-qam-droid",
+  "slug": "rl2-vla-rl2-vla-qam-droid",
+  "author": "rl2-vla",
+  "url": "https://huggingface.co/rl2-vla/rl2-vla-qam-droid",
+  "created_at": "2026-09-01T15:24:23.000Z",
+  "updated_at": "2026-09-01T15:39:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2607.26991",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 403669448,
+  "storage_human": "404 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RL²-VLA: Adaptive RL Latent Compositional Steering with Test-Time ...",
+      "url": "https://rl2-vla.github.io/",
+      "snippet": "Despite the impressive visuomotor capabilities of Vision-Language-Action (VLA) models, their performance often degrades on challenging and out-of-domain tasks. We introduce RL2, an adaptive inference-time steering framework that leverages Reinforcement Learning on VLA Latents. We train a lightweight offline RL flow-matching policy conditioned on expressive latents from the VLA action expert ..."
+    },
+    {
+      "title": "GitHub - marmotlab/RL2-VLA: RL²-VLA: Adaptive RL Latent Compositional ...",
+      "url": "https://github.com/marmotlab/RL2-VLA",
+      "snippet": "RL² improves VLA test-time scaling by adaptively applying RL compositional steering when the base VLA is likely to fail, particularly in out-of-domain settings, without modifying the pretrained VLA."
+    },
+    {
+      "title": "GitHub - marmotlab/RL2-VLA: RL²-VLA: Adaptive RL Latent Compositional ...",
+      "url": "https://github.com/marmotlab/RL2-VLA/tree/main/",
+      "snippet": "RL²-VLA: Adaptive RL Latent Compositional Steering with Test-Time Scaling for Vision-Language-Action Models RL² improves VLA test-time scaling by adaptively applying RL compositional steering when the base VLA is likely to fail, particularly in out-of-domain settings, without modifying the pretrained VLA."
+    },
+    {
+      "title": "RL2-VLA: Adaptive RL Latent Compositional Steering with Test-Time ...",
+      "url": "https://arxiv.org/html/2607.26991",
+      "snippet": "DynaGuide [7] leverages a learned world model to predict future latent outcomes and steer actions according to guidance objectives, while VLS [28] and VLA-Pilot [26] employ VLM-derived scoring functions to guide the denoising process."
+    },
+    {
+      "title": "RL^2-VLA: Adaptive RL Latent Compositional Steering with Test-Time ...",
+      "url": "https://arxiv.org/pdf/2607.26991v1",
+      "snippet": "To construct training data for RL policies conditioned on e, we augment existing large-scale datasets, namely BridgeV2 [36] and DROID [38], with policy latents to obtain D = {oi, ai, li, ei}N i=1. Specifically, we iterate through each dataset tuple, pass its observations through the VLA, and extract the resulting embeddings."
+    }
+  ]
+}

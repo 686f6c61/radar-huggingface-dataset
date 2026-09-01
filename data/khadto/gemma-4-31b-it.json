@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Khadto/gemma-4-31B-it",
+  "slug": "khadto-gemma-4-31b-it",
+  "author": "Khadto",
+  "url": "https://huggingface.co/Khadto/gemma-4-31B-it",
+  "created_at": "2026-09-01T17:47:31.000Z",
+  "updated_at": "2026-09-01T17:47:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-31B",
+    "base_model:finetune:google/gemma-4-31B",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578507874,
+  "storage_human": "62.6 GB",
+  "base_model": "google/gemma-4-31B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gemma-4-31b-it Model by Google | NVIDIA NIM",
+      "url": "https://build.nvidia.com/google/gemma-4-31b-it/modelcard",
+      "snippet": "Gemma 4 31B IT Description Gemma 4 31B IT is an open multimodal model built by Google DeepMind that handles text and image inputs, can process video as sequences of frames, and generates text output. It is designed to deliver frontier-level performance for reasoning, agentic workflows, coding, and multimodal understanding on consumer GPUs and workstations, with a 256K-token context window and ..."
+    },
+    {
+      "title": "Gemma 4 31B IT — AI Model Radar",
+      "url": "https://aimodelradar.app/models/gemma-4-31b-it",
+      "snippet": "Google releases Gemma 4 31B Instruct, 262K-token chat model Gemma 4 31B Instruct is Google DeepMind&#x27;s 30.7B parameter instruction-tuned model supporting text input and output. Released April 2, 2026, it offers a 262K token context window and is available via API at $0.12 per million input tokens and $0.35 per million output tokens through Google."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "gemma 4 31B it — AI Model Radar",
+      "url": "https://aimodelradar.app/models/gemma-4-31b-it-2",
+      "snippet": "Gemma 4 31B Instruct is a 30.7B parameter dense multimodal model from Google DeepMind supporting text and image inputs with text output. It features a 262,144 token context window, native function calling, configurable reasoning mode, and multilingual support across 140+ languages. The model is positioned for coding, reasoning, and document understanding tasks."
+    },
+    {
+      "title": "google/gemma-4-31b-it | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/google/gemma-4-31b-it",
+      "snippet": "Gemma 4 31B IT is an instruction-tuned multimodal open model from Google DeepMind with a 256K context window, designed for reasoning, coding, agentic workflows, and image understanding. It accepts text and image inputs and generates text output, with native tool calling and configurable thinking modes for long-context assistant experiences."
+    }
+  ]
+}

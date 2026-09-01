@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jepacpp/vjepa2-ac-vitg-GGUF",
+  "slug": "jepacpp-vjepa2-ac-vitg-gguf",
+  "author": "jepacpp",
+  "url": "https://huggingface.co/jepacpp/vjepa2-ac-vitg-GGUF",
+  "created_at": "2026-09-01T17:21:59.000Z",
+  "updated_at": "2026-09-01T17:24:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "jepa.cpp",
+  "languages": [],
+  "tags": [
+    "jepa.cpp",
+    "gguf",
+    "jepa",
+    "ggml",
+    "v-jepa",
+    "v-jepa-2",
+    "world-model",
+    "robotics",
+    "video",
+    "planning",
+    "arxiv:2506.09985",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1317387776,
+  "parameters_human": "1.32B",
+  "storage_bytes": 10824857312,
+  "storage_human": "10.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jepacpp/vjepa2_1-vitb-384-GGUF · Hugging Face",
+      "url": "https://huggingface.co/jepacpp/vjepa2_1-vitb-384-GGUF",
+      "snippet": "jepacpp / vjepa2_1-vitb-384-GGUF like 0 Follow jepa.cpp 1 Image Feature Extraction GGUF jepa.cpp jepa ggml v-jepa v-jepa-2 video video-feature-extraction arxiv:2506.09985 License:mit Model card FilesFiles and versions xet Community Copy to bucket new V-JEPA 2.1 ViT-B/16 @384 — GGUF for jepa.cpp Run it Files Measured Source, licence and ..."
+    },
+    {
+      "title": "GitHub - facebookresearch/vjepa2: PyTorch code and models for VJEPA2 ...",
+      "url": "https://github.com/facebookresearch/vjepa2",
+      "snippet": "PyTorch code and models for VJEPA2 self-supervised learning from video. - facebookresearch/vjepa2"
+    },
+    {
+      "title": "V-JEPA 2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/vjepa2",
+      "snippet": "V-JEPA 2-AC is a latent action-conditioned world model post-trained from V-JEPA 2 (using a small amount of robot trajectory interaction data) that solves robot manipulation tasks without environment-specific data collection or task-specific training or calibration. You can find all original V-JEPA2 checkpoints under the V-JEPA 2 collection."
+    },
+    {
+      "title": "[2506.09985] V-JEPA 2: Self-Supervised Video Models Enable ...",
+      "url": "https://arxiv.org/abs/2506.09985",
+      "snippet": "A major challenge for modern AI is to learn to understand the world and learn to act largely by observation. This paper explores a self-supervised approach that combines internet-scale video data with a small amount of interaction data (robot trajectories), to develop models capable of understanding, predicting, and planning in the physical world. We first pre-train an action-free joint ..."
+    },
+    {
+      "title": "Introducing V-JEPA 2 - ai.meta.com",
+      "url": "https://ai.meta.com/research/vjepa/",
+      "snippet": "Video Joint Embedding Predictive Architecture 2 (V-JEPA 2) is the first world model trained on video that achieves state-of-the-art visual understanding and prediction, enabling zero-shot robot control in new environments."
+    }
+  ]
+}

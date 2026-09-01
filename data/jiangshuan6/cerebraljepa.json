@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "jiangshuan6/CerebralJEPA",
+  "slug": "jiangshuan6-cerebraljepa",
+  "author": "jiangshuan6",
+  "url": "https://huggingface.co/jiangshuan6/CerebralJEPA",
+  "created_at": "2026-09-01T11:46:15.000Z",
+  "updated_at": "2026-09-01T11:51:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "medical-imaging",
+    "mri",
+    "smri",
+    "brain",
+    "nifti",
+    "3d",
+    "feature-extraction",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 732975432,
+  "storage_human": "733 MB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2409.19407] Brain-JEPA: Brain Dynamics Foundation Model with Gradient ...",
+      "url": "https://arxiv.org/abs/2409.19407",
+      "snippet": "We introduce Brain-JEPA, a brain dynamics foundation model with the Joint-Embedding Predictive Architecture (JEPA). This pioneering model achieves state-of-the-art performance in demographic prediction, disease diagnosis/prognosis, and trait prediction through fine-tuning. Furthermore, it excels in off-the-shelf evaluations (e.g., linear probing) and demonstrates superior generalizability ..."
+    },
+    {
+      "title": "NUS Medicine unveils new AI for early brain disorder diagnosis",
+      "url": "https://www.mobihealthnews.com/news/asia/nus-medicine-unveils-new-ai-early-brain-disorder-diagnosis",
+      "snippet": "NUS Medicine unveils new AI for early brain disorder diagnosis The analytical tool can also predict demographics and understand personality traits by understanding brain activity patterns."
+    },
+    {
+      "title": "PDF PRESS RELEASE - medicine.nus.edu.sg",
+      "url": "https://medicine.nus.edu.sg/wp-content/uploads/2024/12/2024-12-16_Press-Release_BrainJEPA-foundational-AI-model.pdf",
+      "snippet": "The Brain-JEPA model is open to researchers worldwide, encouraging collaboration and innovation in neuroscience. This technology bridges the gap between AI and brain research, paving the way for exciting breakthroughs in understanding human health and behaviour."
+    },
+    {
+      "title": "GitHub - AI-in-Transportation-Lab/awesome-jepa: A carefully curated ...",
+      "url": "https://github.com/AI-in-Transportation-Lab/awesome-jepa",
+      "snippet": "A carefully curated collection of high-quality tools, libraries, research papers, projects, and tutorials centered around Joint Embedding Predictive Architecture (JEPA). - AI-in-Transportation-Lab/..."
+    },
+    {
+      "title": "Awesome JEPA - abdelstark.github.io",
+      "url": "https://abdelstark.github.io/awesome-jepa/",
+      "snippet": "I-JEPA: The first AI model based on Yann LeCun&#x27;s vision (Meta AI, 2023). V-JEPA: The next step toward advanced machine intelligence (Meta AI, 2024). Introducing the V-JEPA 2 world model and new benchmarks for physical reasoning (Meta AI, 2025). Yann LeCun on a vision to make AI learn and reason like animals and humans (Meta AI, 2022). What Is JEPA?"
+    }
+  ]
+}

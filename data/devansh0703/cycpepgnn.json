@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "devansh0703/CycPepGNN",
+  "slug": "devansh0703-cycpepgnn",
+  "author": "devansh0703",
+  "url": "https://huggingface.co/devansh0703/CycPepGNN",
+  "created_at": "2026-09-01T16:11:47.000Z",
+  "updated_at": "2026-09-01T16:30:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "graph-neural-network",
+    "cyclic-peptides",
+    "permeability",
+    "molecular-property-prediction",
+    "chemistry",
+    "particle-permeability",
+    "other",
+    "base_model:seyonec/PubChem10M_SMILES_BPE_450k",
+    "base_model:finetune:seyonec/PubChem10M_SMILES_BPE_450k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40352245,
+  "storage_human": "40 MB",
+  "base_model": "seyonec/PubChem10M_SMILES_BPE_450k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "devansh0703 (devansh raulo) - Hugging Face",
+      "url": "https://huggingface.co/devansh0703/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago"
+    },
+    {
+      "title": "devansh0703/spectra-yolo at main - Hugging Face",
+      "url": "https://huggingface.co/devansh0703/spectra-yolo/tree/main",
+      "snippet": "devansh0703 / spectra-yolo like 0 arxiv:2509.22365 arxiv:2512.07078 arxiv:2603.05905 Model card FilesFiles and versions xet Community main spectra-yolo 94.2 kB Ctrl+K Ctrl+K 1 contributor History:6 commits devansh0703 Upload train_full_v2_fixed.py ee5b9d9 verifiedabout 3 hours ago .gitattributes Safe 1.52 kBinitial commitabout 6 hours ago ..."
+    },
+    {
+      "title": "devansh0703 (Devansh Raulo) · GitHub",
+      "url": "https://github.com/devansh0703",
+      "snippet": "devansh0703 has 73 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - devansh0703/chip_design_agent: LLM-powered end-to-end chip ...",
+      "url": "https://github.com/devansh0703/chip_design_agent/tree/main",
+      "snippet": "Autonomous Multi-Agent System for ASIC Design - LLM-powered end-to-end chip design workflow from natural language specification to silicon-ready GDSII."
+    },
+    {
+      "title": "Devansh Raulo&#x27;s (devansh0703) software portfolio | Devpost",
+      "url": "https://devpost.com/devansh0703/challenges",
+      "snippet": "Devansh Raulo specializes in C, Css3, CS50, C++, Python, Java, and JavaScript. Follow Devansh Raulo on Devpost!"
+    }
+  ]
+}

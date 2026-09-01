@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "devansh0703/PeptEdgeV2",
+  "slug": "devansh0703-peptedgev2",
+  "author": "devansh0703",
+  "url": "https://huggingface.co/devansh0703/PeptEdgeV2",
+  "created_at": "2026-09-01T15:28:13.000Z",
+  "updated_at": "2026-09-01T15:29:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "custom",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "custom",
+    "safetensors",
+    "peptedgev2",
+    "biology",
+    "bioinformatics",
+    "peptides",
+    "protein",
+    "antimicrobial-peptide",
+    "amp",
+    "pytorch",
+    "transformers",
+    "classification",
+    "sequence-classification",
+    "text-classification",
+    "en",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3435794,
+  "parameters_human": "3.4M",
+  "storage_bytes": 13752568,
+  "storage_human": "14 MB",
+  "base_model": "none",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Antimicrobial Peptide (AMP) Binary Classification",
+      "dataset": "GenPept-Curated-2025 (balanced_11000)",
+      "metric": "F1 Score",
+      "value": 0.9147
+    },
+    {
+      "task": "Antimicrobial Peptide (AMP) Binary Classification",
+      "dataset": "GenPept-Curated-2025 (balanced_11000)",
+      "metric": "Accuracy",
+      "value": 0.9134
+    },
+    {
+      "task": "Antimicrobial Peptide (AMP) Binary Classification",
+      "dataset": "GenPept-Curated-2025 (balanced_11000)",
+      "metric": "ROC AUC",
+      "value": 0.951
+    },
+    {
+      "task": "Antimicrobial Peptide (AMP) Binary Classification",
+      "dataset": "GenPept-Curated-2025 (balanced_11000)",
+      "metric": "Matthews Correlation Coefficient",
+      "value": 0.8272
+    }
+  ],
+  "sources": [
+    {
+      "title": "devansh0703 (devansh raulo) - Hugging Face",
+      "url": "https://huggingface.co/devansh0703/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago"
+    },
+    {
+      "title": "devansh0703 (devansh raulo) - Hugging Face",
+      "url": "https://huggingface.co/devansh0703/spaces",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 9 hours ago ... published a model about 9 hours ago"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "devansh0703 (Devansh Raulo) · GitHub",
+      "url": "https://github.com/devansh0703",
+      "snippet": "AI-powered Advanced Persistent Threat (APT) detection system built on the ELK Stack. Python 1 2 CVAE-for-counterfactual-gene-exp Public"
+    },
+    {
+      "title": "GitHub - devansh0703/apt_intrusion_detection: AI-powered Advanced ...",
+      "url": "https://github.com/devansh0703/apt_intrusion_detection",
+      "snippet": "A production-ready, AI-powered Advanced Persistent Threat (APT) detection system built on the ELK Stack. This system provides multi-stage attack detection using MITRE ATT&CK framework mapping, machine learning anomaly detection, behavioral analysis, and automated correlation of attack chains."
+    }
+  ]
+}

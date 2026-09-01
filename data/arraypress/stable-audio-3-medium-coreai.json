@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "arraypress/stable-audio-3-medium-coreai",
+  "slug": "arraypress-stable-audio-3-medium-coreai",
+  "author": "arraypress",
+  "url": "https://huggingface.co/arraypress/stable-audio-3-medium-coreai",
+  "created_at": "2026-09-01T19:22:36.000Z",
+  "updated_at": "2026-09-01T19:23:53.000Z",
+  "license": "stability-ai-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "text-to-audio",
+    "core-ai",
+    "aimodel",
+    "apple",
+    "on-device",
+    "stable-audio",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9836451244,
+  "storage_human": "9.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stabilityai/stable-audio-3-medium · Hugging Face",
+      "url": "https://huggingface.co/stabilityai/stable-audio-3-medium",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "stable-audio-3/README.md at main · Stability-AI/stable-audio-3",
+      "url": "https://github.com/Stability-AI/stable-audio-3/blob/main/README.md",
+      "snippet": "A state-of-the-art open platform for fast, high-quality generated audio and music. Technical Report · 🤗 Models · 🤗 Extra Models · Discord · Demo · Blog Post Stable Audio 3 is the next generation of Stable Audio: a focused, streamlined platform for inference and fine-tuning, built on lessons from stable-audio-tools. If you&#x27;re doing foundational research or working with previous ..."
+    },
+    {
+      "title": "README.md · stabilityai/stable-audio-3-medium at main",
+      "url": "https://huggingface.co/stabilityai/stable-audio-3-medium/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Stability-AI/stable-audio-3",
+      "url": "https://github.com/Stability-AI/stable-audio-3",
+      "snippet": "A state-of-the-art open platform for fast, high-quality generated audio and music. Technical Report · 🤗 Models · 🤗 Extra Models · Discord · Demo · Blog Post Stable Audio 3 is the next generation of Stable Audio: a focused, streamlined platform for inference and fine-tuning, built on lessons from stable-audio-tools. If you&#x27;re doing foundational research or working with previous ..."
+    },
+    {
+      "title": "STABLE AUDIO 3 - arXiv.org",
+      "url": "https://arxiv.org/pdf/2605.17991",
+      "snippet": "ABSTRACT Stable Audio 3 is a family of fast latent diffusion models (small, medium, large) for variable-length audio generation and editing. Since our models can generate several minutes of audio, variable-length generations are key to avoid the cost of producing full-length generations for short sounds. We also support inpainting, enabling targeted audio editing and the continuation of short ..."
+    }
+  ]
+}

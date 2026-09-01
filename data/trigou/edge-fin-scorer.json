@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Trigou/edge-fin-scorer",
+  "slug": "trigou-edge-fin-scorer",
+  "author": "Trigou",
+  "url": "https://huggingface.co/Trigou/edge-fin-scorer",
+  "created_at": "2026-08-30T13:27:35.000Z",
+  "updated_at": "2026-09-01T14:35:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "GLiClass",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 32705153,
+  "parameters_human": "32.7M",
+  "storage_bytes": 130829312,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Our Prediction Process — How Every Pick Is Engineered | EdgeAI Sports",
+      "url": "https://edgesports-ai.com/our-process",
+      "snippet": "AI-powered our process with model-based predictions, edge detection, confidence scores, and transparent sports betting analysis."
+    },
+    {
+      "title": "EDGE",
+      "url": "https://www.edgescore.com/",
+      "snippet": "Almost half the U.S. population is unserved or underserved by traditional risk-scoring methods that look only at past payments and balances of credit accounts as a proxy for future risk. By looking beyond a credit score, EDGE provides insight into financial activities and behaviors that are empirically proven to be much more predictive of creditworthiness for these consumers. In turn, our ..."
+    },
+    {
+      "title": "GitHub - TexasInstruments/edgeai-modelzoo: Edge AI Model Zoo",
+      "url": "https://github.com/TexasInstruments/edgeai-modelzoo",
+      "snippet": "Model Selection Tool - Performance Visualization Edge AI Studio: Model Selection Tool - Understand the performance statistics such as FPS, Latency, Accuracy & DDR bandwidth of models in the Model Zoo. Find a model that best meets your performance and accuracy goals on TI Processor from TI Model Zoo."
+    },
+    {
+      "title": "Model Leaderboard | EdgeAI Sports",
+      "url": "https://edgesports-ai.com/model-leaderboard",
+      "snippet": "AI-powered model leaderboard with model-based predictions, edge detection, confidence scores, and transparent sports betting analysis."
+    },
+    {
+      "title": "GitHub - dogiemagi/FinGenius: Built an AI-powered financial analytics ...",
+      "url": "https://github.com/dogiemagi/FinGenius",
+      "snippet": "FinGenius is an AI-driven financial intelligence application designed to analyze financial data, generate insights, and support informed decision-making using machine learning techniques. The project demonstrates practical implementation of data processing, ML models, and backend integration for real-world financial use cases."
+    }
+  ]
+}

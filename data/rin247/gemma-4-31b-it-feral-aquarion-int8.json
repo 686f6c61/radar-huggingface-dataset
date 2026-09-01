@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Rin247/gemma-4-31B-it-Feral-Aquarion-INT8",
+  "slug": "rin247-gemma-4-31b-it-feral-aquarion-int8",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/gemma-4-31B-it-Feral-Aquarion-INT8",
+  "created_at": "2026-09-01T12:21:37.000Z",
+  "updated_at": "2026-09-01T12:22:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "quantized",
+    "int8",
+    "uncensored",
+    "abliterated",
+    "conversational",
+    "endpoints_compatible",
+    "8-bit",
+    "int8_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273089680,
+  "parameters_human": "31.27B",
+  "storage_bytes": 32746913426,
+  "storage_human": "32.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rin247/gemma-4-31B-it-Feral-Aquarion-FP8 · Hugging Face",
+      "url": "https://huggingface.co/Rin247/gemma-4-31B-it-Feral-Aquarion-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "gemma-4-31b-it Model by Google | NVIDIA NIM",
+      "url": "https://build.nvidia.com/google/gemma-4-31b-it/modelcard",
+      "snippet": "Gemma 4 31B IT is an open multimodal model built by Google DeepMind that handles text and image inputs, can process video as sequences of frames, and generates text output."
+    },
+    {
+      "title": "Gemma 4 31B IT — AI Model Radar",
+      "url": "https://aimodelradar.app/models/gemma-4-31b-it",
+      "snippet": "Google releases Gemma 4 31B Instruct, 262K-token chat model Gemma 4 31B Instruct is Google DeepMind&#x27;s 30.7B parameter instruction-tuned model supporting text input and output. Released April 2, 2026, it offers a 262K token context window and is available via API at $0.12 per million input tokens and $0.35 per million output tokens through Google."
+    },
+    {
+      "title": "Gemma 4 31B · Models · The Open-Source AI Stack",
+      "url": "https://www.open-source-ai.tech/models/gemma-4-31b",
+      "snippet": "Flagship of the Gemma 4 open-weights family, released April 2 2026 under Apache 2.0 alongside a 26B MoE (activates 3.8B per token), an E4B effective-4B edge model, and an E2B. Built off Gemini 3 with native vision and audio, 140-plus language support, and up to 256K context. Google reported the 31B as the #3 open model on Arena AI&#x27;s text leaderboard at launch."
+    }
+  ]
+}

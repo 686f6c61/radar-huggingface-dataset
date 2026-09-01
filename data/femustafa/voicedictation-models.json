@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "femustafa/voicedictation-models",
+  "slug": "femustafa-voicedictation-models",
+  "author": "femustafa",
+  "url": "https://huggingface.co/femustafa/voicedictation-models",
+  "created_at": "2026-09-01T11:42:04.000Z",
+  "updated_at": "2026-09-01T11:47:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ur",
+    "en"
+  ],
+  "tags": [
+    "whisper",
+    "roman-urdu",
+    "whisper.cpp",
+    "ggml",
+    "ur",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 633060016,
+  "storage_human": "633 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "femustafa (Faizan E Mustafa) - Hugging Face",
+      "url": "https://huggingface.co/femustafa/datasets",
+      "snippet": "User profile of Faizan E Mustafa on Hugging Face"
+    },
+    {
+      "title": "AI Voices: Free Models for TTS & Voice Changing",
+      "url": "https://aivoices.gg/",
+      "snippet": "Discover thousands of free AI voice models. Search characters, voices, creators, and model types for voice changing, text-to-speech, singing, narration, and more."
+    },
+    {
+      "title": "Text-to-Speech Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "The largest AI voice model library ever with 80,000+ voices - Vocalize",
+      "url": "https://www.vocalize.fm/voices",
+      "snippet": "Search all AI voice models available in Vocalize. Create an AI covers or Text-To-Speech with it, in seconds."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

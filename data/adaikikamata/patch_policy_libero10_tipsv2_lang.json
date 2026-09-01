@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "aDaikiKamata/patch_policy_libero10_tipsv2_lang",
+  "slug": "adaikikamata-patch_policy_libero10_tipsv2_lang",
+  "author": "aDaikiKamata",
+  "url": "https://huggingface.co/aDaikiKamata/patch_policy_libero10_tipsv2_lang",
+  "created_at": "2026-09-01T09:38:54.000Z",
+  "updated_at": "2026-09-01T14:22:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "patch_policy",
+    "dataset:lerobot/libero_10_image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 211689479,
+  "parameters_human": "211.7M",
+  "storage_bytes": 5711334076,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "patch_policy_libero_object_tipsv2_smoke - Hugging Face",
+      "url": "https://huggingface.co/aDaikiKamata/patch_policy_libero_object_tipsv2_smoke",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aDaikiKamata (Kamata Daiki) - Hugging Face",
+      "url": "https://huggingface.co/aDaikiKamata",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 8 hours ago ... published a model about 8 hours ago"
+    },
+    {
+      "title": "GitHub - Lifelong-Robot-Learning/LIBERO: Benchmarking Knowledge ...",
+      "url": "https://github.com/Lifelong-Robot-Learning/LIBERO",
+      "snippet": "LIBERO is designed for studying knowledge transfer in multitask and lifelong robot learning problems. Successfully resolving these problems require both declarative knowledge about objects/spatial relationships and procedural knowledge about motion/behaviors. LIBERO provides: a procedural generation pipeline that could in principle generate an infinite number of manipulation tasks. 130 tasks ..."
+    },
+    {
+      "title": "Patch Policy",
+      "url": "https://patch-policy.github.io/",
+      "snippet": "Patch Policy is lightweight, fast, and highly effective. Across four simulated and three real-world environment suites, our method achieves a 40% relative improvement over policies using state-of-the-art global-pooled representations."
+    },
+    {
+      "title": "GitHub - google-deepmind/tips: TIPSv2 (CVPR&#x27;26) and TIPS (ICLR&#x27;25)",
+      "url": "https://github.com/google-deepmind/tips",
+      "snippet": "This repository contains the implementation and models introduced in: TIPSv2: Advancing Vision-Language Pretraining with Enhanced Patch-Text Alignment, CVPR 2026 TIPS: Text-Image Pretraining with Spatial Awareness, ICLR 2025 The TIPS series of models (T ext- I mage P retraining with S patial Awareness) are foundational image-text encoders built for general-purpose computer vision and ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "htetmyet/correct_score_prediction",
+  "slug": "htetmyet-correct_score_prediction",
+  "author": "htetmyet",
+  "url": "https://huggingface.co/htetmyet/correct_score_prediction",
+  "created_at": "2025-11-24T12:47:47.000Z",
+  "updated_at": "2026-09-01T14:11:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 956965,
+  "storage_human": "956965 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Football Predictions Today — 1X2, BTTS & Over/Under Probabilities ...",
+      "url": "https://scoutingstats.ai/predictions/match-predictions",
+      "snippet": "AI football predictions are model-generated probabilities for match outcomes — 1X2 (home win, draw, away win), BTTS, Over/Under goals and correct score — produced by training a machine-learning model on team xG ratings, recent form, schedule strength and head-to-head priors. ScoutingStats publishes free AI football predictions for every fixture today across 150+ leagues, calibrated against ..."
+    },
+    {
+      "title": "Correct Score Predictions Today — AI Football Tips | CheckLive",
+      "url": "https://checklive.com/predictions/correct-score",
+      "snippet": "AI-powered correct score predictions for today&#x27;s football matches. Probability for every score, expert analysis via DeepSeek + CheckSkill / CheckForm metrics."
+    },
+    {
+      "title": "AI Football Predictions & Correct Score Tips Today",
+      "url": "https://www.scorepoint.ai/ai-football-predictions",
+      "snippet": "Use ScorePoint AI for today&#x27;s football predictions, correct score probabilities, BTTS, over/under goals, and confidence-rated match analysis."
+    },
+    {
+      "title": "AI Football Predictions — Live Picks, Graded Daily | ScoreGPT",
+      "url": "https://scoregpt.app/ai-football-predictions",
+      "snippet": "Free AI football predictions from competing models — GPT-5, Claude, Grok and more. Live consensus picks for in-season leagues and a public, graded track record. iOS & Android."
+    },
+    {
+      "title": "Correct Score Predictions Today — AI Exact Scoreline Tips | PunterScore",
+      "url": "https://www.punterscore.com/correct-score",
+      "snippet": "AI-powered correct score predictions for today&#x27;s football matches. Exact scoreline tips with xG distribution analysis and confidence ratings across Premier League, La Liga, Bundesliga, Serie A and more."
+    }
+  ]
+}

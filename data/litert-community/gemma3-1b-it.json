@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "litert-community/Gemma3-1B-IT",
+  "slug": "litert-community-gemma3-1b-it",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/Gemma3-1B-IT",
+  "created_at": "2025-03-11T20:49:11.000Z",
+  "updated_at": "2026-09-01T05:31:40.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "chat",
+    "text-generation",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 817,
+  "downloads_30d": 11496,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55907602028,
+  "storage_human": "55.9 GB",
+  "base_model": "google/Gemma-3-1B-IT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/Gemma3-1B-IT · Hugging Face",
+      "url": "https://huggingface.co/litert-community/Gemma3-1B-IT",
+      "snippet": "Access Gemma3-1B-IT on Hugging Face ... Log in or Sign Up to review the conditions and access this model content."
+    },
+    {
+      "title": "Gemma3-1B-IT: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma3-1b-it-litert-community",
+      "snippet": "Overview Gemma3-1B-IT is a 1 billion parameter instruction-tuned language model from litert-community, built as an optimized variant of Google&#x27;s Gemma 3 1B designed specifically for on-device deployment on Android, iOS, and Web platforms. The model runs through the LiteRT (formerly TensorFlow Lite) stack and MediaPipe LLM Inference API, making it suitable for private, offline AI applications ..."
+    },
+    {
+      "title": "README.md · litert-community/Gemma3-1B-IT at main",
+      "url": "https://huggingface.co/litert-community/Gemma3-1B-IT/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "litert-community/Gemma3-1B-IT - Models",
+      "url": "https://www.modelscope.cn/models/litert-community/Gemma3-1B-IT",
+      "snippet": "This model provides a few variants of google/Gemma-3-1B-IT that are ready for deployment on Android using the LiteRT (fka TFLite) stack and MediaPipe LLM Inference API. Use the models Colab Disclaimer: The target deployment surface for the LiteRT models is Android/iOS/Web and the stack has been optimized for performance on these targets."
+    },
+    {
+      "title": "Architecture graph for litert-community/Gemma3-1B-IT.",
+      "url": "https://hfviewer.com/litert-community/Gemma3-1B-IT",
+      "snippet": "The feed-forward layers use an intermediate size of 6,912. It has a vocabulary of 262,144 tokens and a context window of up to 32,768 tokens. Model type gemma3_text Layers 26 Hidden size 1,152 Attention grouped-query attention (GQA), 4 query / 1 key-value heads Feed-forward intermediate size 6,912 Context length 32,768 tokens Vocabulary 262,144 ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "heyunzhenwhat/pi0_so101-three-objects",
+  "slug": "heyunzhenwhat-pi0_so101-three-objects",
+  "author": "heyunzhenwhat",
+  "url": "https://huggingface.co/heyunzhenwhat/pi0_so101-three-objects",
+  "created_at": "2026-09-01T12:21:32.000Z",
+  "updated_at": "2026-09-01T12:24:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi0",
+    "robotics",
+    "dataset:heyunzhenwhat/so101-three-objects",
+    "base_model:lerobot/pi0_base",
+    "base_model:finetune:lerobot/pi0_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4028019472,
+  "parameters_human": "4.03B",
+  "storage_bytes": 8892518120,
+  "storage_human": "8.9 GB",
+  "base_model": "lerobot/pi0_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "heyunzhenwhat/so101-three-objects · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/heyunzhenwhat/so101-three-objects",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "heyunzhenwhat (Hyz) - Hugging Face",
+      "url": "https://huggingface.co/heyunzhenwhat/datasets",
+      "snippet": "published a model about 3 hours ago updated a model about 5 hours ago"
+    },
+    {
+      "title": "GitHub - Maelic/openpi-SO100: Pi0 fine-tuning for the SO-100 and SO-101 ...",
+      "url": "https://github.com/Maelic/openpi-SO100",
+      "snippet": "Pi0 fine-tuning for the SO-100 and SO-101 arms. Contribute to Maelic/openpi-SO100 development by creating an account on GitHub."
+    },
+    {
+      "title": "DreamZero-SO101 — An Open World Model for the SO-101 Robot Arm",
+      "url": "https://vizuara-ai-lab.github.io/dreamzero-so101/index.html",
+      "snippet": "DreamZero-SO101 is an open-source world-action model for the SO-101 robot arm. Given a single camera frame and a language instruction, it imagines the robot completing the task."
+    },
+    {
+      "title": "GitHub - tylercasper/SO101-Pi0.5: New Repo for Pi0.5 Trials",
+      "url": "https://github.com/tylercasper/SO101-Pi0.5",
+      "snippet": "New Repo for Pi0.5 Trials. Contribute to tylercasper/SO101-Pi0.5 development by creating an account on GitHub."
+    }
+  ]
+}

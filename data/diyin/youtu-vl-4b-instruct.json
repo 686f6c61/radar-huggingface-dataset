@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "DIYIN/Youtu-VL-4B-Instruct",
+  "slug": "diyin-youtu-vl-4b-instruct",
+  "author": "DIYIN",
+  "url": "https://huggingface.co/DIYIN/Youtu-VL-4B-Instruct",
+  "created_at": "2026-09-01T13:43:15.000Z",
+  "updated_at": "2026-09-01T13:43:16.000Z",
+  "license": "youtu-vl",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "youtu_vl",
+    "text-generation",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "arxiv:2601.19798",
+    "arxiv:2512.24618",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5340551024,
+  "parameters_human": "5.34B",
+  "storage_bytes": 10726194444,
+  "storage_human": "10.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tencent/Youtu-VL-4B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/tencent/Youtu-VL-4B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Youtu-VL-4B-Instruct: Image-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/youtu-vl-4b-instruct-tencent",
+      "snippet": "Overview Youtu-VL-4B-Instruct is a 4-billion-parameter Vision-Language Model built on the Youtu-LLM by tencent that handles both vision-centric tasks (segmentation, depth estimation, object detection, grounding) and general multimodal understanding (VQA, OCR, reasoning) without task-specific architectural modules. The model introduces Vision-Language Unified Autoregressive Supervision (VLUAS ..."
+    },
+    {
+      "title": "Youtu Vl 4b Instruct - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/tencent/youtu-vl-4b-instruct",
+      "snippet": "Youtu-VL is a lightweight yet robust Vision-Language Model (VLM) built on the Youtu-LLM with 4B parameters. It pioneers Vision-Language Unified Autoregressive Supervision (VLUAS), which markedly strengthens visual perception and multimodal understanding."
+    },
+    {
+      "title": "Youtu-VL-4B-Instruct : This 4B AI Model Can SEE & THINK",
+      "url": "https://www.youtube.com/watch?v=gbqJ8aGHeqI",
+      "snippet": "Youtu-VL-4B-Instruct is a next-generation vision-language model (VLM) from Tencent that brings advanced image understanding, visual reasoning, and instruction following into a compact 4B parameter ..."
+    },
+    {
+      "title": "Youtu-VL-4B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/Tencent-YouTu-Research/Youtu-VL-4B-Instruct/summary",
+      "snippet": "Youtu-VL is a lightweight yet robust Vision-Language Model (VLM) built on the Youtu-LLM with 4B parameters. It pioneers Vision-Language Unified Autoregressive Supervision (VLUAS), which markedly strengthens visual perception and multimodal understanding."
+    }
+  ]
+}

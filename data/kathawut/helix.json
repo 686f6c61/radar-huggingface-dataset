@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "kathawut/Helix",
+  "slug": "kathawut-helix",
+  "author": "kathawut",
+  "url": "https://huggingface.co/kathawut/Helix",
+  "created_at": "2026-09-01T12:16:24.000Z",
+  "updated_at": "2026-09-01T12:45:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "helix_v2_adaptive",
+    "helix",
+    "thai",
+    "custom-architecture",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 403704203,
+  "storage_human": "404 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kathawut - AI Agent for Novel Writers",
+      "url": "https://www.kathawut.com/en",
+      "snippet": "3 columns: Chapter List · Editor with Inline Diff · AI Chat that converses contextually and edits agenticly"
+    },
+    {
+      "title": "Kathawut",
+      "url": "https://www.kathawut.com/",
+      "snippet": "AI novel editor and agent workspace for long-form writing."
+    },
+    {
+      "title": "Helix: A Vision-Language-Action Model for Generalist Humanoid Control",
+      "url": "https://www.figure.ai/news/helix",
+      "snippet": "Introducing Helix We&#x27;re introducing Helix, a generalist Vision-Language-Action (VLA) model that unifies perception, language understanding, and learned control to overcome multiple longstanding challenges in robotics. Helix is a series of firsts: Full-upper-body control: Helix is the first VLA to output high-rate continuous control of the entire humanoid upper body, including wrists, torso ..."
+    },
+    {
+      "title": "KKR & Nvidia&#x27;s $10B Helix Venture: Solving the AI Power Crisis - MarketWise",
+      "url": "https://marketwise.com/investing/kkr-nvidia-helix-ai-infrastructure/",
+      "snippet": "Key Points Helix Digital Infrastructure launched with more than $10 billion to help solve AI&#x27;s data-center and power bottlenecks. The venture brings together KKR&#x27;s capital, Nvidia&#x27;s AI infrastructure, and Vistra&#x27;s power-generation capacity. Helix could benefit from soaring AI-infrastructure demand, but faces risks from equipment shortages, grid delays, and local opposition."
+    },
+    {
+      "title": "GitHub - Devktw/Kathawut-AI",
+      "url": "https://github.com/Devktw/Kathawut-AI",
+      "snippet": "Contribute to Devktw/Kathawut-AI development by creating an account on GitHub."
+    }
+  ]
+}

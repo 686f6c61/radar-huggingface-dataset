@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "SahilSidhu/2dvideogen-scene-writer",
+  "slug": "sahilsidhu-2dvideogen-scene-writer",
+  "author": "SahilSidhu",
+  "url": "https://huggingface.co/SahilSidhu/2dvideogen-scene-writer",
+  "created_at": "2026-09-01T12:41:52.000Z",
+  "updated_at": "2026-09-01T12:42:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "animation",
+    "structured-generation",
+    "dsl",
+    "cpu",
+    "en",
+    "base_model:google-t5/t5-small",
+    "base_model:finetune:google-t5/t5-small",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60506624,
+  "parameters_human": "60.5M",
+  "storage_bytes": 242041896,
+  "storage_human": "242 MB",
+  "base_model": "t5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VideoGen - Create and Edit Videos with AI in Minutes",
+      "url": "https://videogen.io/",
+      "snippet": "Instantly generate videos with VideoGen, the fastest and most powerful video creation experience. Ever. Create and edit videos in one click. Try it now for free."
+    },
+    {
+      "title": "AI Video Generator - Sora, Kling, Veo, Seedance & More | Higgsfield",
+      "url": "https://higgsfield.ai/ai-video",
+      "snippet": "Generate AI videos with full creative control. Access Kling 3.0, Veo 3.1, Sora 2, and more in one platform. Set camera, motion, and style for every frame. Try Higgsfield free."
+    },
+    {
+      "title": "AI Image & Video Generator for Creators | SocialSight",
+      "url": "https://socialsight.ai/",
+      "snippet": "Create AI videos in seconds with SocialSight. Generate cinematic clips, UGC, visual effects, and viral-ready content with free daily credits."
+    },
+    {
+      "title": "AI Video Generator — Free. Online. No Download. - Kapwing",
+      "url": "https://www.kapwing.com/ai-video-generator",
+      "snippet": "Powerful online AI Video Generator for Text to Video and Image to Video. Create video clips up to 30 seconds using AI models like Veo, Kling, Seedance, and Sora. Start for free."
+    },
+    {
+      "title": "Free AI Video Generator Online (No Sign Up) | Magic Hour",
+      "url": "https://magichour.ai/products/ai-video-generator",
+      "snippet": "Create videos from text, images, or clips with our free AI video generator. Try text to video, image to video, lip sync, and animation with no sign up."
+    }
+  ]
+}

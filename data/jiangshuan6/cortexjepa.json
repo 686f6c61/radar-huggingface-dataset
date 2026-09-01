@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "jiangshuan6/CortexJEPA",
+  "slug": "jiangshuan6-cortexjepa",
+  "author": "jiangshuan6",
+  "url": "https://huggingface.co/jiangshuan6/CortexJEPA",
+  "created_at": "2026-09-01T12:26:02.000Z",
+  "updated_at": "2026-09-01T13:12:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5842803796,
+  "storage_human": "5.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jiangshuan6 (JiangShuan Pang) - Hugging Face",
+      "url": "https://huggingface.co/jiangshuan6",
+      "snippet": "User profile of JiangShuan Pang on Hugging Face"
+    },
+    {
+      "title": "Awesome JEPA - abdelstark.github.io",
+      "url": "https://abdelstark.github.io/awesome-jepa/",
+      "snippet": "I-JEPA: The first AI model based on Yann LeCun&#x27;s vision (Meta AI, 2023). V-JEPA: The next step toward advanced machine intelligence (Meta AI, 2024). Introducing the V-JEPA 2 world model and new benchmarks for physical reasoning (Meta AI, 2025). Yann LeCun on a vision to make AI learn and reason like animals and humans (Meta AI, 2022). What Is JEPA?"
+    },
+    {
+      "title": "GitHub - AI-in-Transportation-Lab/awesome-jepa: A carefully curated ...",
+      "url": "https://github.com/AI-in-Transportation-Lab/awesome-jepa",
+      "snippet": "A carefully curated collection of high-quality tools, libraries, research papers, projects, and tutorials centered around Joint Embedding Predictive Architecture (JEPA) — a self-supervised learning paradigm introduced by Yann LeCun and Meta AI that learns representations by predicting representations of the future from representations of the present, without reconstructing pixels or tokens ..."
+    },
+    {
+      "title": "盘点｜4年JEPA进化之路，12篇核心突破!LeCun (杨立昆)如何用它重构AI表征学习？ - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/1994180751378367474",
+      "snippet": "「读懂LeCun的\"世界模型\"」AI的\"世界认知\"能力，正在被JEPA改写？ 时至今日，\"自监督学习\"仍是AI领域的核心赛道，而LeCun团队主推的 JEPA（联合嵌入预测架构），无疑是近两年最具颠覆性的技术方向——它跳出…"
+    },
+    {
+      "title": "GitHub - keon/jepa: implementing minimal versions of joint-embedding ...",
+      "url": "https://github.com/keon/jepa",
+      "snippet": "C-JEPA skips slot discovery (uses oracle positions). Real C-JEPA requires VideoSAUR/SAVi-style object-centric pretraining on top of visual features. V-JEPA 2-AC is a small block-causal, action/state-conditioned latent predictor, not Meta&#x27;s 300M-parameter robot-action model; it preserves the teacher-forcing + rollout training shape."
+    }
+  ]
+}

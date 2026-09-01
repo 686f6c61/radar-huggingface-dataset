@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hrshsethia/babylm-strict-small-gptbert",
+  "slug": "hrshsethia-babylm-strict-small-gptbert",
+  "author": "hrshsethia",
+  "url": "https://huggingface.co/hrshsethia/babylm-strict-small-gptbert",
+  "created_at": "2026-09-01T19:00:30.000Z",
+  "updated_at": "2026-09-01T19:00:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gptbert",
+    "feature-extraction",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31263488,
+  "parameters_human": "31.3M",
+  "storage_bytes": 137650040,
+  "storage_human": "138 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SRJ5035/XpertGPT-BabyLM2026-Strict-Small · Hugging Face",
+      "url": "https://huggingface.co/SRJ5035/XpertGPT-BabyLM2026-Strict-Small",
+      "snippet": "SRJ5035 / XpertGPT-BabyLM2026-Strict-Small like 3 Text Generation Transformers PyTorch Safetensors English msit_gptbert babylm babylm-2026 mixture-of-experts msit xpertgpt custom_code License:cc-by-nc-4. Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "anonym5035/XpertGPT-BabyLM2026-Strict-Small · Hugging Face",
+      "url": "https://huggingface.co/anonym5035/XpertGPT-BabyLM2026-Strict-Small",
+      "snippet": "XpertGPT (Mixture of Experts with Parallelized Multi-Scale Information Transmission) is a sparse, data-efficient recurrent language model for the BabyLM 2026 challenge (Strict-Small (10M) track, 10M words)."
+    },
+    {
+      "title": "BabyLM-2026/reference/gpt_bert_baseline at main - GitHub",
+      "url": "https://github.com/Survivor613/BabyLM-2026/tree/main/reference/gpt_bert_baseline",
+      "snippet": "This one of the three GPT-BERT baselines for the strict-small track of the 2025 BabyLM challenge. This specific model is trained with a equal number of examples being causal and masked."
+    },
+    {
+      "title": "GitHub Pages - Baby",
+      "url": "https://babylm.github.io/",
+      "snippet": "Track update: This year introduces a dedicated MultiLingual track, and removes Multimodal and Interaction as standalone competition tracks, both are now subsumed into Strict / Strict-Small (paired image-text data and teacher-model feedback are allowed). Evaluation pipeline: The BabyLM 2026 evaluation pipeline is now ready!"
+    },
+    {
+      "title": "babylm-baselines/strict-gpt2/README.md at main - GitHub",
+      "url": "https://github.com/babylm-org/babylm-baselines/blob/main/strict-gpt2/README.md",
+      "snippet": "BabyLM 2026: GPT-2 Baselines for the Strict, Strict-Small and Multilingual Tracks This is the codebase that was used to run training for the GPT-2 baselines of the Strict, Strict-Small and Multilingual tracks of the BabyLM 2026 Challenge. Please refer to the Call for Papers for a description of challenge rules for all relevant tracks."
+    }
+  ]
+}

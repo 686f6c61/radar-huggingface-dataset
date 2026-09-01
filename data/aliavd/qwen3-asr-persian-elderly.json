@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "AliAvd/qwen3-asr-persian-elderly",
+  "slug": "aliavd-qwen3-asr-persian-elderly",
+  "author": "AliAvd",
+  "url": "https://huggingface.co/AliAvd/qwen3-asr-persian-elderly",
+  "created_at": "2026-09-01T15:53:48.000Z",
+  "updated_at": "2026-09-01T16:05:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "asr",
+    "persian",
+    "elderly-speech",
+    "qwen3-asr",
+    "fa",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:finetune:Qwen/Qwen3-ASR-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2038052480,
+  "parameters_human": "2.04B",
+  "storage_bytes": 4087621017,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the 1.7B version achieves state-of-the-art performance among open-source ASR models and is ..."
+    },
+    {
+      "title": "GitHub - baonn/qwen3-asr-repo-: Qwen3-ASR is an open-source series of ...",
+      "url": "https://github.com/baonn/qwen3-asr-repo-",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the 1.7B version achieves state-of-the-art performance among open-source ASR models and is ..."
+    },
+    {
+      "title": "Neurai/Qwen3-ASR-1.7B-Persian · Hugging Face",
+      "url": "https://huggingface.co/Neurai/Qwen3-ASR-1.7B-Persian",
+      "snippet": "The qwen-asr package provides two backends: transformers backend and vLLM backend. You can pass audio inputs as a local path, a URL, base64 data, or a (np.ndarray, sr) tuple, and run batch inference."
+    },
+    {
+      "title": "Qwen3 ASR · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main/model_doc/qwen3_asr",
+      "snippet": "Qwen3 ASR Overview Qwen3 ASR is an automatic speech recognition model from Alibaba&#x27;s Qwen team that combines a Whisper-style audio encoder with a Qwen3 language model decoder for speech-to-text transcription. The model supports automatic language detection and multilingual transcription. A forced aligner model is also included."
+    },
+    {
+      "title": "Qwen3-ASR: Alibaba&#x27;s Open‑Source 52‑Language ASR Model",
+      "url": "https://aibit.im/en/article/qwen3-asr-alibabas-open-source-52-language-asr-model",
+      "snippet": "Alibaba Cloud&#x27;s latest release, Qwen3‑ASR, brings state‑of‑the‑art multilingual speech recognition to the open‑source community. Supporting 52 languages and 22 Chinese dialects, the two 1.7B/0.6B models excel on benchmarks and rival commercial APIs. The repo ships with a full inference toolkit that works with transformers or the high‑performance vLLM backend, automatic ..."
+    }
+  ]
+}

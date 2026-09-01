@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Sentinal4D/PhenoSeq",
+  "slug": "sentinal4d-phenoseq",
+  "author": "Sentinal4D",
+  "url": "https://huggingface.co/Sentinal4D/PhenoSeq",
+  "created_at": "2026-09-01T14:11:59.000Z",
+  "updated_at": "2026-09-01T14:30:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "biology",
+    "genomics",
+    "diffusion",
+    "single-cell",
+    "transcriptomics",
+    "microscopy",
+    "image-to-rna",
+    "conditional-generation",
+    "scgpt",
+    "vit",
+    "feature-extraction",
+    "dataset:altoslabs/scGeneScope",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2696373631,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image-conditioned RNA-seq generation",
+      "dataset": null,
+      "metric": "Validation MSE Loss (epoch 87)",
+      "value": 0.1683
+    }
+  ],
+  "sources": [
+    {
+      "title": "Real Biology interpreted by AI | Sentinal4D",
+      "url": "https://www.sentinal4d.com/",
+      "snippet": "At Sentinal4D, we believe patients battling cancer, neurodegenerative diseases, and chronic inflammatory syndromes deserve personalized therapeutics. We are deploying a biology-first, holistic approach with focus on phenotypic-based drug discovery."
+    },
+    {
+      "title": "CY5TEM 1: How Sentinal4D is solving drug discovery pipelines through ...",
+      "url": "https://cy5tem.substack.com/p/cy5tem-1-how-sentinal4d-is-solving",
+      "snippet": "Currently, they are working on expanding PhenoSeq, a new tool developed by AI Research Scientist Reed Naidoo, in collaboration with Sentinal4D, Institute of Cancer Research, and the Alan Turing Institute."
+    },
+    {
+      "title": "GitHub - reednaidoo/PhenoSeq: PhenoSeq: Conditional Diffusion Model ...",
+      "url": "https://github.com/reednaidoo/PhenoSeq",
+      "snippet": "PhenoSeq is a conditional diffusion model that generates biologically structured scRNA-seq embeddings directly from Cell Painting microscopy images. Rather than treating morphology and transcriptomics as independent measurements, PhenoSeq learns a shared latent relationship between the two modalities. Given only imaging-derived features, the model synthesises transcriptomic representations in ..."
+    },
+    {
+      "title": "#biotech #drugdiscovery #generativeai #pharma #cellpainting - LinkedIn",
+      "url": "https://www.linkedin.com/posts/sentinal4d_biotech-drugdiscovery-generativeai-activity-7470712738181255168-lx2S",
+      "snippet": "To bridge this gap, Sentinal4D introduces PhenoSeq. A conditional diffusion model that translates Cell Painting images directly into predictive single-cell transcriptomic profiles."
+    },
+    {
+      "title": "Christ Church-Led Team Develops &#x27;PhenoSeq&#x27; AI to Accelerate Cancer Drug ...",
+      "url": "https://troy-technical.com/2026/06/20/christ-church-led-team-develops-phenoseq-ai-to-accelerate-cancer-drug-discovery-by-extracting-transcriptomic-profiles-from-cell-images/",
+      "snippet": "A research group led by Dr. Tapabrata Rohan Chakraborty from Christ Church has developed &#x27;PhenoSeq,&#x27; a new AI system that generates molecular information from cellular imaging data. This breakthrough allows scientists to extract transcriptomic profiles from cell images without expensive sequencing, dramatically improving the efficiency of drug-screening pipelines. PhenoSeq promises to ..."
+    }
+  ]
+}

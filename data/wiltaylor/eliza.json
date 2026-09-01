@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "wiltaylor/ELIZA",
+  "slug": "wiltaylor-eliza",
+  "author": "wiltaylor",
+  "url": "https://huggingface.co/wiltaylor/ELIZA",
+  "created_at": "2026-09-01T13:47:42.000Z",
+  "updated_at": "2026-09-01T13:49:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "peft",
+    "lora",
+    "eliza",
+    "historical-chatbot",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:adapter:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557750,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ELIZA Emulator (1966 Chatbot) — Talk to ELIZA Online",
+      "url": "https://elizaemulator.com/",
+      "snippet": "Talk to ELIZA online ELIZA is a classic 1966 program that simulates conversation using pattern matching and transformation rules. This modern browser-based ELIZA emulator recreates that style in a clean retro terminal, while the rest of the site explains how it works, why it felt persuasive, and why it still matters in AI history."
+    },
+    {
+      "title": "An Introduction to Character Building for the Eliza AI Agent System",
+      "url": "https://thenewautonomy.medium.com/an-introduction-to-character-building-for-the-eliza-ai-agent-system-da797071e559",
+      "snippet": "In this series, I&#x27;ll be exploring a variety of frameworks and tools for building AI agents, starting with the Eliza framework from AI16z. The Eliza framework allows you to create, customize, and deploy AI-based characters or \"personas\" that can interact with users online, such as on social media platforms, chat rooms, or forums. What is AI16z and Eliza? Eliza is an AI-driven framework ..."
+    },
+    {
+      "title": "GitHub - elizaOS/eliza: Open source agentic operating system",
+      "url": "https://github.com/elizaOS/eliza",
+      "snippet": "elizaOS is an open-source TypeScript framework and product stack for autonomous AI agents. This monorepo contains the core runtime, the Eliza app, the CLI, cloud services, native bridges, and first-party plugins. The bootable Linux and Android distributions live in the separate elizaOS/os repository."
+    },
+    {
+      "title": "Eliza Research — AI and people",
+      "url": "https://elizaresearch.ai/",
+      "snippet": "Eliza Research builds products at the intersection of AI and people: Eliza, a personal agent and open source operating system, and slop.cash, a swarm contribution platform."
+    },
+    {
+      "title": "The Story Of ELIZA: The AI That Fooled The World",
+      "url": "https://liacademy.co.uk/the-story-of-eliza-the-ai-that-fooled-the-world/",
+      "snippet": "The Story of ELIZA: The AI That Fooled the World When we think about artificial intelligence today, our minds often jump to sophisticated systems like Siri, Alexa, or ChatGPT. But the roots of AI go back much further, to a simpler yet profoundly influential program called ELIZA. Created in the mid-1960s by Joseph Weizenbaum at MIT, ELIZA was an early natural language processing program that ..."
+    }
+  ]
+}

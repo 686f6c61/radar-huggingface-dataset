@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "GT1999/mwp-v2-llama1b-base-staged-stage3",
+  "slug": "gt1999-mwp-v2-llama1b-base-staged-stage3",
+  "author": "GT1999",
+  "url": "https://huggingface.co/GT1999/mwp-v2-llama1b-base-staged-stage3",
+  "created_at": "2026-09-01T14:06:44.000Z",
+  "updated_at": "2026-09-01T14:06:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mwp-v2",
+    "seqft",
+    "plrs",
+    "math-word-problems",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107417436,
+  "storage_human": "107 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GT1999/mwp-v2-llama1b-b7-stage3 · Hugging Face",
+      "url": "https://huggingface.co/GT1999/mwp-v2-llama1b-b7-stage3",
+      "snippet": "b7 stage 3 -- SFR + expanding rank (32->128), capacity-matched to b6 LoRA rank / alpha: 96 / 192 (scaling: alpha/r) Full rank schedule: 32 -> 64 -> 96 -> 128 -> 128 Replay (cumulative levels): True Stage partition: difficulty Cumulative train examples this stage: 3329 Validation split seed: 42 (5% of train, stratified by level; test set never used for selection) Code commit ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=mwp-v2",
+      "snippet": "13 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: mwp-v2 Clear all"
+    },
+    {
+      "title": "GitHub - gadmin7/mwp_ai4math_icml_v2: Corrected SeqFT+PLRS pipeline ...",
+      "url": "https://github.com/gadmin7/mwp_ai4math_icml_v2",
+      "snippet": "{hf_org}/mwp-v2- {model_tag}- {baseline_id}-stage {n}, e.g. GT1999/mwp-v2-llama1b-b6-stage5. Each repo holds exactly one stage&#x27;s adapter (never a merged model), with a model card recording rank/alpha, cumulative train size, replay policy, validation seed, and the code commit that produced it."
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ai4bharat/indic-asr-nemotron-600m",
+  "slug": "ai4bharat-indic-asr-nemotron-600m",
+  "author": "ai4bharat",
+  "url": "https://huggingface.co/ai4bharat/indic-asr-nemotron-600m",
+  "created_at": "2026-09-01T12:42:49.000Z",
+  "updated_at": "2026-09-01T12:43:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "low-resource",
+    "indic",
+    "nemotron",
+    "streaming",
+    "dataset:custom",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2556426240,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AI4Bharat/IndicConformerASR",
+      "url": "https://github.com/AI4Bharat/IndicConformerASR",
+      "snippet": "AI4Bharat&#x27;s IndicConformers is a suite of ASR models built to deliver accurate speech-to-text conversion in all 22 official Indian languages. By leveraging cutting-edge deep learning techniques, these models provide precise transcriptions. As the country&#x27;s first open-source ASR system covering such a vast array of languages, AI4Bharat Indic Conformer is a transformative tool for making ..."
+    },
+    {
+      "title": "AI4Bharat",
+      "url": "https://ai4bharat.iitm.ac.in/areas/model/ASR/IndicConformer/",
+      "snippet": "AI4Bharat&#x27;s IndicConformers is a suite of ASR models built to deliver accurate speech-to-text conversion in all 22 official Indian languages. By leveraging cutting-edge deep learning techniques, these models provide precise transcriptions. As the country&#x27;s first open-source ASR system covering such a vast array of languages, AI4Bharat Indic Conformer is a transformative tool for making ..."
+    },
+    {
+      "title": "ai4bharat/indic-conformer-600m-multilingual · Hugging Face",
+      "url": "https://huggingface.co/ai4bharat/indic-conformer-600m-multilingual",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ai4bharat/IndicConformer · Hugging Face",
+      "url": "https://huggingface.co/ai4bharat/IndicConformer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI4Bharat Models",
+      "url": "https://models.ai4bharat.org/",
+      "snippet": "Indic Speech-to-Text Conformer IndicConformer is a conformer based ASR model containing only 30M parameters, to support real-time ASR systems for Indian languages. The model is trained on ULCA, KathBath, Shrutilipi and MUCS datasets. The model can be deployed on an android device and can be accessed via websockets."
+    }
+  ]
+}

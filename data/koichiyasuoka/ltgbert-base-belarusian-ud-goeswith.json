@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "KoichiYasuoka/ltgbert-base-belarusian-ud-goeswith",
+  "slug": "koichiyasuoka-ltgbert-base-belarusian-ud-goeswith",
+  "author": "KoichiYasuoka",
+  "url": "https://huggingface.co/KoichiYasuoka/ltgbert-base-belarusian-ud-goeswith",
+  "created_at": "2024-09-15T02:26:31.000Z",
+  "updated_at": "2026-09-01T13:17:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "be"
+  ],
+  "tags": [
+    "pytorch",
+    "belarusian",
+    "pos",
+    "dependency-parsing",
+    "token-classification",
+    "custom_code",
+    "be",
+    "dataset:universal_dependencies",
+    "base_model:KoichiYasuoka/ltgbert-base-belarusian-upos",
+    "base_model:finetune:KoichiYasuoka/ltgbert-base-belarusian-upos",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1078760926,
+  "storage_human": "1.1 GB",
+  "base_model": "KoichiYasuoka/ltgbert-base-belarusian-upos",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KoichiYasuoka/ltgbert-base-belarusian-ud-goeswith · Hugging Face",
+      "url": "https://huggingface.co/KoichiYasuoka/ltgbert-base-belarusian-ud-goeswith",
+      "snippet": "Model Description This is a LTG-BERT model pretrained for POS-tagging and dependency-parsing (using goeswith for subwords), derived from ltgbert-base-belarusian-upos and UD_Belarusian-HSE."
+    },
+    {
+      "title": "KoichiYasuoka/ltgbert-base-belarusian-upos · Hugging Face",
+      "url": "https://huggingface.co/KoichiYasuoka/ltgbert-base-belarusian-upos",
+      "snippet": "ltgbert-base-belarusian-upos Model Description This is a LTG-BERT model for POS-tagging, derived from hplt_bert_base_be. Every word is tagged by UPOS (Universal Part-Of-Speech) and FEATS. How to Use"
+    },
+    {
+      "title": "KoichiYasuoka/ltgbert-base-belarusian-ud-goeswith - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/koichiyasuoka-ltgbert-base-belarusian-ud-goeswith",
+      "snippet": "This is a LTG-BERT model pretrained for POS-tagging and dependency-parsing (using goeswith for subwords), derived from ltgbert-base-belarusian-upos and UD_Belarusian-HSE ."
+    },
+    {
+      "title": "KoichiYasuoka (Koichi Yasuoka) · GitHub",
+      "url": "https://github.com/KoichiYasuoka",
+      "snippet": "Professor of Digital Humanities. KoichiYasuoka has 77 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "ベラルーシ語係り受け解析モデルltgbert-base-belarusian-ud-goeswithリリース",
+      "url": "https://qiita.com/KoichiYasuoka/items/1bf54bd66d4a395b9536",
+      "snippet": "昨日の記事 の手法を「HPLT Bert for Belarusian」と UD_Belarusian-HSE に適用して、ベラルーシ語係り受け解析モデル ltgbert-base-belarusian-ud-goeswith を試作してみた。be_hse-ud-test.conlluによるベンチマーク・プログラム (Google Colaboratory GPU版)は、 過去に作ったベラルーシ語モデル も含めると、こんな感じ。"
+    }
+  ]
+}

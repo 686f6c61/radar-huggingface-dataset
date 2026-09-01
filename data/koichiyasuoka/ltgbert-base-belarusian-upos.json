@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "KoichiYasuoka/ltgbert-base-belarusian-upos",
+  "slug": "koichiyasuoka-ltgbert-base-belarusian-upos",
+  "author": "KoichiYasuoka",
+  "url": "https://huggingface.co/KoichiYasuoka/ltgbert-base-belarusian-upos",
+  "created_at": "2024-09-15T00:06:18.000Z",
+  "updated_at": "2026-09-01T13:17:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "be"
+  ],
+  "tags": [
+    "pytorch",
+    "belarusian",
+    "token-classification",
+    "pos",
+    "custom_code",
+    "be",
+    "dataset:universal_dependencies",
+    "base_model:HPLT/hplt_bert_base_be",
+    "base_model:finetune:HPLT/hplt_bert_base_be",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 536169530,
+  "storage_human": "536 MB",
+  "base_model": "HPLT/hplt_bert_base_be",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KoichiYasuoka/ltgbert-base-belarusian-upos · Hugging Face",
+      "url": "https://huggingface.co/KoichiYasuoka/ltgbert-base-belarusian-upos",
+      "snippet": "ltgbert-base-belarusian-upos Model Description This is a LTG-BERT model for POS-tagging, derived from hplt_bert_base_be. Every word is tagged by UPOS (Universal Part-Of-Speech) and FEATS. How to Use"
+    },
+    {
+      "title": "KoichiYasuoka/ltgbert-base-belarusian-upos at main",
+      "url": "https://huggingface.co/KoichiYasuoka/ltgbert-base-belarusian-upos/tree/main",
+      "snippet": "Belarusian belarusian pos custom_code License:apache-2.0 Model card FilesFiles and versions Community main ltgbert-base-belarusian-upos 1 contributor History:2 commits KoichiYasuoka initial release 2f68ae9 3 days ago .gitattributes 1.52 kB initial commit3 days ago README.md 724 Bytes initial release3 days ago config.json 525 kB initial release3 ..."
+    },
+    {
+      "title": "KoichiYasuoka (Koichi Yasuoka) · GitHub",
+      "url": "https://github.com/KoichiYasuoka",
+      "snippet": "Professor of Digital Humanities. KoichiYasuoka has 77 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "KoichiYasuoka / ltgbert-base-belarusian-upos - Protect AI",
+      "url": "https://protectai.com/insights/models/KoichiYasuoka/ltgbert-base-belarusian-upos/2f68ae9c62204e48f14be9b844ff768299511b74/overview",
+      "snippet": "Discover potential threats in the KoichiYasuoka / ltgbert-base-belarusian-upos model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    },
+    {
+      "title": "KoichiYasuoka/ltgbert-base-belarusian-ud-goeswith - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/koichiyasuoka-ltgbert-base-belarusian-ud-goeswith",
+      "snippet": "This is a LTG-BERT model pretrained for POS-tagging and dependency-parsing (using goeswith for subwords), derived from ltgbert-base-belarusian-upos and UD_Belarusian-HSE ."
+    }
+  ]
+}

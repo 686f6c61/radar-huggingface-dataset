@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "audnai/penclaw-GLM-5.3-abliterated",
+  "slug": "audnai-penclaw-glm-5-3-abliterated",
+  "author": "audnai",
+  "url": "https://huggingface.co/audnai/penclaw-GLM-5.3-abliterated",
+  "created_at": "2026-09-01T17:52:24.000Z",
+  "updated_at": "2026-09-01T17:52:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "penclaw-GLM-5.3-abliterated-for-offensive-cyber - Hugging Face",
+      "url": "https://huggingface.co/audnai/penclaw-GLM-5.3-abliterated-for-offensive-cyber",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "audnai/penclaw-GLM-5.3-abliterated-for-offensive-cyber at main",
+      "url": "https://huggingface.co/audnai/penclaw-GLM-5.3-abliterated-for-offensive-cyber/tree/main",
+      "snippet": "audnai / penclaw-GLM-5.3-abliterated-for-offensive-cyber like 9 Model card FilesFiles and versions xet Copy to bucket new"
+    },
+    {
+      "title": "Unrestricted AI API + Enterprise Policy Gateway | abliteration.ai",
+      "url": "https://abliteration.ai/",
+      "snippet": "OpenAI-compatible unrestricted AI and uncensored LLM API for enterprise teams: AI red teaming, cybersecurity, trust and safety, synthetic data/evals, ML research, and defense/government contractor workflows. Policy Gateway adds policy-as-code, per-project keys, audits, and zero retention by default."
+    },
+    {
+      "title": "GLM-5.3 & GLM-5.2 & GLM-5.1 & GLM-5 - GitHub",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "GLM-5.3 uses the same base model as GLM-5.2 — every gain comes from post-training. Compared with GLM-5.2, it is much better at complex coding and long-horizon tasks: Stronger Coding: GLM-5.3 is the most capable open-weights model for coding, with a 50% improvement over GLM-5.2 on our in-house Z.ai Code Bench. It also achieve open-source SOTA on public benchmarks including Terminal Bench 3.0 ..."
+    },
+    {
+      "title": "GitHub - audn-ai/penclaw: Your own abliterated personal AI assistant ...",
+      "url": "https://github.com/audn-ai/penclaw",
+      "snippet": "Your own abliterated personal AI assistant. Any OS. Any Platform. Any prompt, No objections. This is the way. ☬ - audn-ai/penclaw"
+    }
+  ]
+}

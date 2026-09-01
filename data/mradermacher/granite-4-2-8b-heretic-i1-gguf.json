@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "mradermacher/granite-4.2-8b-heretic-i1-GGUF",
+  "slug": "mradermacher-granite-4-2-8b-heretic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/granite-4.2-8b-heretic-i1-GGUF",
+  "created_at": "2026-09-01T11:17:49.000Z",
+  "updated_at": "2026-09-01T12:12:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt",
+    "ar",
+    "cs",
+    "it",
+    "ko",
+    "nl",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "granite",
+    "granite-4.2",
+    "reasoning",
+    "thinking",
+    "tool-calling",
+    "ibm",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt",
+    "ar",
+    "cs",
+    "it",
+    "ko",
+    "nl",
+    "zh",
+    "base_model:Dingdust/granite-4.2-8b-heretic",
+    "base_model:quantized:Dingdust/granite-4.2-8b-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8791592960,
+  "parameters_human": "8.79B",
+  "storage_bytes": 101347770944,
+  "storage_human": "101.3 GB",
+  "base_model": "Dingdust/granite-4.2-8b-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/granite-4.2-8b-decensored-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/granite-4.2-8b-decensored-i1-GGUF",
+      "snippet": "mradermacher / granite-4.2-8b-decensored-i1-GGUF like 0 Transformers GGUF English granite uncensored abliterated heretic imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/granite-4.1-8b-heretic-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/granite-4.1-8b-heretic-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Granite 4.2 8B: IBM&#x27;s Apache-2.0 Reasoning Model | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/granite-4-2-8b/",
+      "snippet": "Granite 4.2 8B is IBM&#x27;s Apache-2.0 dense reasoning model, released 25 Aug 2026 with a switchable thinking mode, 128K context and 47.67 on SWE-bench Verified."
+    },
+    {
+      "title": "Granite 4.2 8B model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/ibm-granite/granite-4.2-8b",
+      "snippet": "IBM Granite 4.2 8B is an Apache 2.0-licensed dense model with native step-by-step reasoning and specialized training for agentic work. It can plan before acting, sequence tools, navigate codebases, work in terminals, and verify results across coding, search, mathematics, science, and complex instruction-following tasks."
+    },
+    {
+      "title": "IBM: Granite 4.2 8B - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/ibm-granite/granite-4.2-8b-20260831",
+      "snippet": "Granite 4.2 8B is a dense reasoning model from IBM. It is suited for mathematics, code generation, multilingual dialogue, and agentic workflows that need multi-step reasoning."
+    }
+  ]
+}

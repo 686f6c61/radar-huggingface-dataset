@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Thedarkliff/Shrk",
+  "slug": "thedarkliff-shrk",
+  "author": "Thedarkliff",
+  "url": "https://huggingface.co/Thedarkliff/Shrk",
+  "created_at": "2026-09-01T11:44:18.000Z",
+  "updated_at": "2026-09-01T11:44:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "Shark AI — Unified Model Gateway",
+      "url": "https://shark.ai/",
+      "snippet": "Unified model gateway for text, image, video, audio, and embedding models with model schemas, playgrounds, usage accounting, and agent-readable docs."
+    },
+    {
+      "title": "These Researchers Just Shrunk an AI Model and Somehow Made It ... - Decrypt",
+      "url": "https://decrypt.co/376536/researchers-shrink-ai-model-made-smarter",
+      "snippet": "These Researchers Just Shrunk an AI Model and Somehow Made It Smarter A smaller, cheaper AI usually means a dumber one. A new technique flipped that—and your phone might be the winner."
+    },
+    {
+      "title": "Dark Frontier: An AI Short - Mike Roshuk",
+      "url": "https://mikeroshuk.com/dark-frontier-an-ai-short/",
+      "snippet": "Discover how I used AI to create Dark Frontier, an animated short featuring a LoRA-trained model. Learn about the process of training a custom AI model from a photoshoot and bringing sci-fi imagery to life with Stable Diffusion."
+    },
+    {
+      "title": "5 AI Models Tried to Scam Me. Some of Them Were Scary Good - WIRED",
+      "url": "https://www.wired.com/story/ai-model-phishing-attack-cybersecurity/",
+      "snippet": "The cyber capabilities of AI models have experts rattled. AI&#x27;s social skills may be just as dangerous."
+    }
+  ]
+}

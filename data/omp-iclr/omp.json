@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "OMP-ICLR/OMP",
+  "slug": "omp-iclr-omp",
+  "author": "OMP-ICLR",
+  "url": "https://huggingface.co/OMP-ICLR/OMP",
+  "created_at": "2026-09-01T15:29:36.000Z",
+  "updated_at": "2026-09-01T15:34:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 975827009,
+  "parameters_human": "975.8M",
+  "storage_bytes": 3903409404,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "omp — a coding agent with the IDE wired in",
+      "url": "https://omp.sh/",
+      "snippet": "omp is a coding agent for the terminal: subagents, plan mode, LSP, DAP, hindsight memory, hashline edits, and time-traveling rules — with a native Rust engine doing the heavy lifting."
+    },
+    {
+      "title": "PDF Making AI work for you: from explainable to agentic - omp.com",
+      "url": "https://omp.com/-/media/Files/e-books/OMP_MakingAIWorkForYou.pdf",
+      "snippet": "Unison PlanningTM supports this shift with explainable AI, scenario modeling, and generative tools that help cross-functional teams understand the &#x27;why&#x27; behind recommendations, simulate multiple outcomes and trade-offs, and collaborate with confidence."
+    },
+    {
+      "title": "Agentic AI in supply chain: transforming decision-making for smarter ...",
+      "url": "https://omp.com/unisoniq",
+      "snippet": "Discover how agentic AI is revolutionizing the supply chain by enabling autonomous decision-making, real-time adaptability, and smarter, goal-driven operations. Explore use cases, benefits, and expert insights on leveraging agentic AI for resilient and efficient supply chain management."
+    },
+    {
+      "title": "GitHub - tpanchal-iclr/engineering-omp-poc",
+      "url": "https://github.com/tpanchal-iclr/engineering-omp-poc",
+      "snippet": "Warning: Changes made to omp/models.yml in this repository are intended for local agent tuning. Canonical model attributes (context windows, etc.) are audited by the patchanchor repository."
+    },
+    {
+      "title": "GitHub - can1357/oh-my-pi: ⌥ Coding agent with the IDE wired in",
+      "url": "https://github.com/can1357/oh-my-pi",
+      "snippet": "Run omp models spark to verify discovery. Then run omp setup and choose the model in the default-model step, or open /model in a session and assign it to the default role."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "g-assismoraes/DeltaP2S-Llama2-13B-P2S-MetaMath-S13",
+  "slug": "g-assismoraes-deltap2s-llama2-13b-p2s-metamath-s13",
+  "author": "g-assismoraes",
+  "url": "https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-P2S-MetaMath-S13",
+  "created_at": "2026-09-01T12:24:59.000Z",
+  "updated_at": "2026-09-01T12:30:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "delta-p2s",
+    "pen2sword",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13015864320,
+  "parameters_human": "13.02B",
+  "storage_bytes": 26032270275,
+  "storage_human": "26.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeltaP2S-Llama2-13B-P2S-CodeLlama7B - Hugging Face",
+      "url": "https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-P2S-CodeLlama7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "g-assismoraes/DeltaP2S-Llama2-13B-P2S-CodeLlama7B-SameFormula-S13-QV ...",
+      "url": "https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-P2S-CodeLlama7B-SameFormula-S13-QV",
+      "snippet": "Instructions to use g-assismoraes/DeltaP2S-Llama2-13B-P2S-CodeLlama7B-SameFormula-S13-QV with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "DeltaP2S-Llama2-13B-P2S-CodeLlama7B-SameFormula-S13-QV",
+      "url": "https://friendli.ai/models/g-assismoraes/DeltaP2S-Llama2-13B-P2S-CodeLlama7B-SameFormula-S13-QV",
+      "snippet": "Deploy DeltaP2S-Llama2-13B-P2S-CodeLlama7B-SameFormula-S13-QV with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Llama-2 13B-chat Model Overview - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/llama-2-13b-chat-model",
+      "snippet": "Llama-2 13B-chat is a 13 billion-parameter, GPT-style dialogue model that combines autoregressive pretraining with a three-stage safety alignment pipeline. It leverages supervised fine-tuning and reinforcement learning from human feedback to achieve robust multi-turn dialogue performance."
+    },
+    {
+      "title": "Models | meta-math/MetaMath | DeepWiki",
+      "url": "https://deepwiki.com/meta-math/MetaMath/7-models",
+      "snippet": "Overview of Available Models MetaMath provides a suite of fine-tuned language models specifically optimized for mathematical reasoning. These models are derived from several base architectures including Llama 2, Mistral, and Llemma, and are available in various parameter sizes."
+    }
+  ]
+}

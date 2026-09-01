@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "aplominski/TinyTransformer-Pre-LayerNorm-18M-TinyStories",
+  "slug": "aplominski-tinytransformer-pre-layernorm-18m-tinystories",
+  "author": "aplominski",
+  "url": "https://huggingface.co/aplominski/TinyTransformer-Pre-LayerNorm-18M-TinyStories",
+  "created_at": "2026-09-01T15:52:30.000Z",
+  "updated_at": "2026-09-01T16:21:11.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "arxiv:1706.03762",
+    "arxiv:1607.06450",
+    "arxiv:1910.07467",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18467840,
+  "parameters_human": "18.5M",
+  "storage_bytes": 73882440,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tiny Transformer Normaliztaion - a aplominski Collection",
+      "url": "https://huggingface.co/collections/aplominski/tiny-transformer-normaliztaion",
+      "snippet": "This collection contains models from study about normalization in tiny transformers."
+    },
+    {
+      "title": "aplominski/TinyTransformer-Pre-RMSNorm-10M-TinyStories · Hugging Face",
+      "url": "https://huggingface.co/aplominski/TinyTransformer-Pre-RMSNorm-10M-TinyStories",
+      "snippet": "A 10M parameter TinyTransformer model trained on the TinyStories dataset. This model is part of a research series investigating the effect of normalization strategies in small Transformer models."
+    },
+    {
+      "title": "TinyTransformer - GitHub",
+      "url": "https://github.com/MA-Hannan426/Tiny-Transformer",
+      "snippet": "Why This Project? Modern language models are often consumed through high-level APIs, making it easy to use them without understanding what happens underneath. TinyTransformer takes the opposite approach. Instead of using a pre-built Transformer implementation, the project builds the core architecture manually:"
+    },
+    {
+      "title": "Building a Tiny Transformer From Scratch in PyTorch",
+      "url": "https://buildml.substack.com/p/building-a-tiny-transformer-from",
+      "snippet": "Residual + LayerNorm to stabilize everything. Now it&#x27;s time to assemble a complete GPT-style language model. Think of it like building a house: we&#x27;ve poured the foundation (embeddings), installed the plumbing and wiring (attention), and added rooms (blocks). The Tiny Transformer is the full house, ready to be lived in. Step 1."
+    },
+    {
+      "title": "TinyTransformer | datawhalechina/tiny-universe | DeepWiki",
+      "url": "https://deepwiki.com/datawhalechina/tiny-universe/4-tinytransformer",
+      "snippet": "TinyTransformer is a standalone implementation of the Transformer architecture as introduced in the paper \"Attention Is All You Need\". It provides a complete, from-scratch implementation of the Transformer model using PyTorch, with detailed explanations of each component."
+    }
+  ]
+}

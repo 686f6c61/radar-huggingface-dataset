@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chomeed/dinov3-geohead-threading-d0",
+  "slug": "chomeed-dinov3-geohead-threading-d0",
+  "author": "chomeed",
+  "url": "https://huggingface.co/chomeed/dinov3-geohead-threading-d0",
+  "created_at": "2026-09-01T17:34:23.000Z",
+  "updated_at": "2026-09-01T17:34:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "world-model",
+    "dinov3",
+    "pose-estimation",
+    "mimicgen",
+    "dense-prediction",
+    "negative-result",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/dinov3: Reference PyTorch implementation and ...",
+      "url": "https://github.com/facebookresearch/dinov3",
+      "snippet": "The model weights are also available in Hugging Face Hub and supported by the Hugging Face Transformers library. Building on our original high-resolution canopy height maps released in 2024, CHMv2 delivers substantial improvements in accuracy, detail, and global consistency by leveraging DINOv3."
+    },
+    {
+      "title": "DINOv3 - ai.meta.com",
+      "url": "https://ai.meta.com/research/dinov3/",
+      "snippet": "Evaluating DINOv3&#x27;s Performance DINOv3 sets a new standard in vision foundation models. For the first time, a model trained with SSL outperforms weakly-supervised models on a broad range of probing tasks, from fine-grained image classification, to semantic segmentation, to object tracking in video."
+    },
+    {
+      "title": "GitHub - Devanish31/dinov3_d: Reference PyTorch implementation and ...",
+      "url": "https://github.com/Devanish31/dinov3_d",
+      "snippet": "We visualize the cosine similarity maps obtained with DINOv3 output features between the patches marked with a red cross and all other patches. An extended family of versatile vision foundation models producing high-quality dense features and achieving outstanding performance on various vision tasks ..."
+    },
+    {
+      "title": "DINOv3 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.57.1/en/model_doc/dinov3",
+      "snippet": "This is the configuration class to store the configuration of a DINOv3Model. It is used to instantiate an DINOv3 model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the DINOv3 facebook/dinov3-vits16-pretrain-lvd1689m architecture."
+    },
+    {
+      "title": "DINOv3 - arXiv.org",
+      "url": "https://arxiv.org/html/2508.10104v1",
+      "snippet": "DINOv3 aims to offer a high level of versatility along two axes, which is enabled by the scaling of the model size and training data. First, a key desirable property for SSL models is to achieve excellent performance while being kept frozen, ideally reaching similar state-of-the-art results as specialized models."
+    }
+  ]
+}

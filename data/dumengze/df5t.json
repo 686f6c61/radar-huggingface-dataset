@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dumengze/DF5T",
+  "slug": "dumengze-df5t",
+  "author": "dumengze",
+  "url": "https://huggingface.co/dumengze/DF5T",
+  "created_at": "2026-09-01T11:36:32.000Z",
+  "updated_at": "2026-09-01T11:36:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DF5T/README.md at main · dumengze/DF5T · GitHub",
+      "url": "https://github.com/dumengze/DF5T/blob/main/README.md",
+      "snippet": "Contribute to dumengze/DF5T development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - dumengze/DF5T",
+      "url": "https://github.com/dumengze/DF5T",
+      "snippet": "Contribute to dumengze/DF5T development by creating an account on GitHub."
+    },
+    {
+      "title": "PDF A foundation AI model enhances electron microscopy image analysis - bioRxiv",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.02.28.708664v1.full.pdf",
+      "snippet": "Fig. 1 Review of multi-source data and model design strategies for the DF5T foundation model. a) Sankey diagram displays the distribution of dataset name, image type, imaging modality, species, and organelle. b) A data augmentation method based on synthetic images. c) Overall Architecture of DF5T. d) Unified degradation framework for multi-task micrograph enhancement. The model leverages ..."
+    },
+    {
+      "title": "A foundation AI model enhances electron microscopy image analysis",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.02.28.708664v1",
+      "snippet": "Electron microscopy (EM) and advanced volume EM have extensive applications in deciphering cellular ultrastructures for life sciences. However, quality issues of EM images significantly impede the precise analysis and discovery of nanoscale biological structures. Here, we present an unsupervised Foundation Model for Five Tasks (DF5T) model for image enhancement through denoising, deblurring ..."
+    },
+    {
+      "title": "A foundation AI model enhances electron microscopy image analysis",
+      "url": "https://www.researchgate.net/publication/401510345_A_foundation_AI_model_enhances_electron_microscopy_image_analysis",
+      "snippet": "Here, we present an unsupervised Foundation Model for Five Tasks (DF5T) model for image enhancement through denoising, deblurring, super-resolution, two-dimensional (2D) inpainting, and three ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "maskjp/mtdit-spatial-relative-eef",
+  "slug": "maskjp-mtdit-spatial-relative-eef",
+  "author": "maskjp",
+  "url": "https://huggingface.co/maskjp/mtdit-spatial-relative-eef",
+  "created_at": "2026-09-01T16:12:52.000Z",
+  "updated_at": "2026-09-01T16:12:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "mtdit-spatial",
+    "multi-task-dit",
+    "relative-actions",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 234789645,
+  "parameters_human": "234.8M",
+  "storage_bytes": 939252244,
+  "storage_human": "939 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maskjp/mtdit-spatial-multitask-spatial-mask · Hugging Face",
+      "url": "https://huggingface.co/maskjp/mtdit-spatial-multitask-spatial-mask",
+      "snippet": "Instructions to use maskjp/mtdit-spatial-multitask-spatial-mask with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "maskjp/mtdit-spatial-multitask-patch-tokens · Hugging Face",
+      "url": "https://huggingface.co/maskjp/mtdit-spatial-multitask-patch-tokens",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - maskjp/lerobot_policy_mtdit_spatial",
+      "url": "https://github.com/maskjp/lerobot_policy_mtdit_spatial",
+      "snippet": "A LeRobot policy plugin: Multi-Task Diffusion Transformer with spatially-grounded vision. Registered policy type: mtdit_spatial."
+    },
+    {
+      "title": "lerobot_policy_mtdit_spatial/README.md at main · maskjp ... - GitHub",
+      "url": "https://github.com/maskjp/lerobot_policy_mtdit_spatial/blob/main/README.md",
+      "snippet": "MTDiT-Spatial A LeRobot policy plugin: Multi-Task Diffusion Transformer with spatially-grounded vision. Registered policy type: mtdit_spatial."
+    },
+    {
+      "title": "SmartFreeEdit: Mask-Free Spatial-Aware Image Editing with Complex ...",
+      "url": "https://arxiv.org/abs/2504.12704",
+      "snippet": "Recent advancements in image editing have utilized large-scale multimodal models to enable intuitive, natural instruction-driven interactions. However, conventional methods still face significant challenges, particularly in spatial reasoning, precise region segmentation, and maintaining semantic consistency, especially in complex scenes. To overcome these challenges, we introduce SmartFreeEdit ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Natlis/cnn-emotion-classification-ru",
+  "slug": "natlis-cnn-emotion-classification-ru",
+  "author": "Natlis",
+  "url": "https://huggingface.co/Natlis/cnn-emotion-classification-ru",
+  "created_at": "2026-09-01T13:31:17.000Z",
+  "updated_at": "2026-09-01T13:31:24.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "custom",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "custom",
+    "speech-emotion-recognition",
+    "audio-classification",
+    "russian",
+    "ser",
+    "ru",
+    "arxiv:2212.12266",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 105011,
+  "storage_human": "105011 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ilyali034/rubert-emotion-ru · Hugging Face",
+      "url": "https://huggingface.co/ilyali034/rubert-emotion-ru",
+      "snippet": "ilyali034 / rubert-emotion-ru like 0 Text Classification Safetensors sagteam/cedr_v1 Russian bert multi-label-classification emotion-detection russian Model card FilesFiles and versions xet Community Copy to bucket new 🇷🇺 Russian Emotion Classifier Использование Метрики F1 по классам Классы"
+    },
+    {
+      "title": "Panda0116/emotion-classification-model · Hugging Face",
+      "url": "https://huggingface.co/Panda0116/emotion-classification-model",
+      "snippet": "emotion-classification-model This model is a fine-tuned version of distilbert-base-uncased on the dair-ai/emotion dataset. It is designed to classify text into the following emotional categories: sadness (0), joy (1), love (2), anger (3), fear (4), surprise (5). It achieves the following results: Validation Accuracy: 94.25% Test Accuracy: 93.2% Model Description This model uses the DistilBERT ..."
+    },
+    {
+      "title": "Emotion Recognition Using Convolutional Neural Networks",
+      "url": "https://arxiv.org/pdf/2504.03010",
+      "snippet": "We build our own emotion recognition classification and re-gression system from scratch, which includes dataset collection, data preprocessing , model training and testing. Given a certain image or a real-time video, our system is able to show the clas-sification and regression results for all of the 7 emotions. The proposed system is tested on 2 different datasets, and achieved an accuracy of ..."
+    },
+    {
+      "title": "Emotion Detection Using Convolutional Neural Networks (CNNs)",
+      "url": "https://www.geeksforgeeks.org/deep-learning/emotion-detection-using-convolutional-neural-networks-cnns/",
+      "snippet": "Accurate emotion detection has numerous practical applications, including human-computer interaction, customer feedback analysis, and mental health monitoring. Convolutional Neural Networks (CNNs) have emerged as a powerful tool in this domain, revolutionizing the way we understand and process emotional cues from images."
+    },
+    {
+      "title": "Real-Time Convolutional Neural Networks for Emotion and Gender ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S187705092400810X",
+      "snippet": "Problem statement The problem statement is to develop a real-time CNN-based model for emotion and gender classification. The model should be able to classify emotions such as happy, sad, angry, and neutral, and gender as male or female, from images and videos in real time."
+    }
+  ]
+}

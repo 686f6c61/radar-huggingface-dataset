@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "zeta126780/ccc",
+  "slug": "zeta126780-ccc",
+  "author": "zeta126780",
+  "url": "https://huggingface.co/zeta126780/ccc",
+  "created_at": "2026-09-01T16:03:50.000Z",
+  "updated_at": "2026-09-01T16:03:50.000Z",
+  "license": "gpl-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "FreeModel — One API for every frontier model",
+      "url": "https://freemodel.dev/",
+      "snippet": "What is FreeModel A multi-model gateway, delivered as one API. Instead of committing to a single vendor, FreeModel sits in front of a pool of the strongest open models and routes every request to the one most likely to nail it. You call one endpoint — in either the OpenAI or the Anthropic format — and we handle model selection, switching, and fallback underneath."
+    },
+    {
+      "title": "caoer/ccc-models: CCC model catalogs - GitHub",
+      "url": "https://github.com/caoer/ccc-models",
+      "snippet": "ccc-models Public model catalogs used by the CCC stack — fetched from provider APIs and checked in as YAML/CSV so agents and profile tools can pin model IDs without ad-hoc scraping."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

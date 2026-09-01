@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "FastVideo/FastVideo-FastH3-4-step-Preview-v1-Dense-DataFree-MLX-INT4",
+  "slug": "fastvideo-fastvideo-fasth3-4-step-preview-v1-dense-datafree-mlx-int4",
+  "author": "FastVideo",
+  "url": "https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-Dense-DataFree-MLX-INT4",
+  "created_at": "2026-09-01T16:47:31.000Z",
+  "updated_at": "2026-09-01T17:03:45.000Z",
+  "license": "minimax-h3-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "fastvideo",
+  "languages": [],
+  "tags": [
+    "fastvideo",
+    "mlx",
+    "apple-silicon",
+    "minimax-h3",
+    "fasth3",
+    "text-to-video",
+    "audio",
+    "quantized",
+    "int4",
+    "base_model:FastVideo/FastVideo-FastH3-4-step-Preview-v1-Dense-DataFree",
+    "base_model:finetune:FastVideo/FastVideo-FastH3-4-step-Preview-v1-Dense-DataFree",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "FastVideo/FastVideo-FastH3-4-step-Preview-v1-Dense-DataFree",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree - Hugging Face",
+      "url": "https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree ...",
+      "url": "https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree/blob/main/README.md",
+      "snippet": "FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree The recommended FastH3 Preview v1 checkpoint from FastVideo. It generates synchronized video and audio from text with four transformer forwards. This step-1300 model was trained with data-free DMD2 and VSA-H3 at 90% sparsity."
+    },
+    {
+      "title": "FastVideo FastH3 V1: Open-Weight 4-Step Sparse Distilled Minimax H3 for ...",
+      "url": "https://haoailab.com/blogs/fasth3-preview/",
+      "snippet": "The validation gallery and VSA performance rows below use this checkpoint. The recommended checkpoint and its LoRA require FastVideo&#x27;s Video Sparse Attention (VSA-H3) backend and kernel to achieve the reported speed and quality. Dense attention is not a drop-in substitute. All Preview v1 checkpoints currently support T2VA only. H3 uses the base transformer for both T2VA and first/last-frame ..."
+    },
+    {
+      "title": "FastH3 Preview v1: 4-Step MiniMax H3 Distillation From FastVideo",
+      "url": "https://comfyui-wiki.com/en/news/2026-08-28-fasth3-preview",
+      "snippet": "FastVideo open-sources FastH3 Preview v1: a 4-step DMD2 distillation of MiniMax H3 with 90% sparse attention, up to 14x faster text-to-video-and-audio on Blackwell GPUs."
+    },
+    {
+      "title": "GitHub - hao-ai-lab/FastVideo: A unified inference and post-training ...",
+      "url": "https://github.com/hao-ai-lab/FastVideo",
+      "snippet": "A unified inference and post-training framework for accelerated video generation. - hao-ai-lab/FastVideo"
+    }
+  ]
+}

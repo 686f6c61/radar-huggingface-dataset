@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "hoss2009/Aureon",
+  "slug": "hoss2009-aureon",
+  "author": "hoss2009",
+  "url": "https://huggingface.co/hoss2009/Aureon",
+  "created_at": "2026-09-01T15:17:30.000Z",
+  "updated_at": "2026-09-01T15:17:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - syuumaimikan/Aureon",
+      "url": "https://github.com/syuumaimikan/Aureon/tree/main",
+      "snippet": "Aureon never predicts a single price. Every forecast carries direction probabilities, an expected return, a confidence score, and a prediction interval, and every trade must clear a risk gate that can veto the AI."
+    },
+    {
+      "title": "GitHub - syuumaimikan/Aureon",
+      "url": "https://github.com/syuumaimikan/Aureon",
+      "snippet": "Website · API · Model workshop · Desktop & Android A financial intelligence platform: real market data, probabilistic AI forecasting, an independent risk engine, and a TradingView-style workspace for trading it — in demo or, when explicitly enabled, live. Aureon never predicts a single price."
+    },
+    {
+      "title": "Aureon — The Intelligence Operating System for Model Risk",
+      "url": "https://cognifin.tech/aureon.html",
+      "snippet": "Deployable on-premise or private cloud. All data and AI inference stays within your perimeter. \"From compliance burden… to strategic model intelligence.\" Aureon Model Risk Intelligence"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Aureon AI",
+      "url": "https://www.aureonai.net/",
+      "snippet": "AI that works with your data CONNECT APPS, DOCUMENTS AND DATABASES"
+    }
+  ]
+}

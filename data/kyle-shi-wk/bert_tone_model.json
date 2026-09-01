@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Kyle-Shi-WK/bert_tone_model",
+  "slug": "kyle-shi-wk-bert_tone_model",
+  "author": "Kyle-Shi-WK",
+  "url": "https://huggingface.co/Kyle-Shi-WK/bert_tone_model",
+  "created_at": "2026-09-01T15:01:11.000Z",
+  "updated_at": "2026-09-01T15:46:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-chinese",
+    "base_model:finetune:google-bert/bert-base-chinese",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 102269955,
+  "parameters_human": "102.3M",
+  "storage_bytes": 818211785,
+  "storage_human": "818 MB",
+  "base_model": "bert-base-chinese",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yiyanghkust/finbert-tone · Hugging Face",
+      "url": "https://huggingface.co/yiyanghkust/finbert-tone",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Machine learning models/Production/Tone Check - Meta-Wiki",
+      "url": "https://meta.wikimedia.org/wiki/Machine_learning_models/Production/Tone_Check",
+      "snippet": "The model was developed to support Wikipedia&#x27;s commitment to a neutral point of view, especially in contributions from newer editors who may be less familiar with the platform&#x27;s content policies. Initially aimed at detecting \"peacock language\" (overly promotional or flattering phrases), the scope of the model expanded to address a broader category of tone issues, including language ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - google-research/bert: TensorFlow code and pre-trained models ...",
+      "url": "https://github.com/google-research/bert",
+      "snippet": "TensorFlow code and pre-trained models for BERT. Contribute to google-research/bert development by creating an account on GitHub."
+    },
+    {
+      "title": "PyTorch-Transformers - PyTorch",
+      "url": "https://pytorch.org/hub/huggingface_pytorch-transformers/",
+      "snippet": "PyTorch-Transformers Model Description PyTorch-Transformers (formerly known as pytorch - pretrained - bert) is a library of state-of-the-art pre-trained models for Natural Language Processing (NLP). The library currently contains PyTorch implementations, pre-trained model weights, usage scripts and conversion utilities for the following models:"
+    }
+  ]
+}

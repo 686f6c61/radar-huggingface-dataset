@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mskm3266/DAPO-Qwen3-8B-step204-ckpt",
+  "slug": "mskm3266-dapo-qwen3-8b-step204-ckpt",
+  "author": "mskm3266",
+  "url": "https://huggingface.co/mskm3266/DAPO-Qwen3-8B-step204-ckpt",
+  "created_at": "2026-09-01T11:57:48.000Z",
+  "updated_at": "2026-09-01T12:02:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "verl",
+  "languages": [],
+  "tags": [
+    "verl",
+    "dapo",
+    "rlhf",
+    "checkpoint",
+    "fsdp",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98301653389,
+  "storage_human": "98.3 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features:"
+    },
+    {
+      "title": "pb09204048/Qwen3-8B-DAPO-iter599-thinking · Hugging Face",
+      "url": "https://huggingface.co/pb09204048/Qwen3-8B-DAPO-iter599-thinking",
+      "snippet": "Instructions to use pb09204048/Qwen3-8B-DAPO-iter599-thinking with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use pb09204048/Qwen3-8B-DAPO-iter599-thinking with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model=\"pb09204048/Qwen3-8B ..."
+    },
+    {
+      "title": "Qwen3-8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/compute/models/qwen3_8b",
+      "snippet": "The Qwen3‑8B is a state‑of‑the‑art multilingual base language model with 8 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Trainee-to-Trainer/data/rl/verl/recipe/dapo/run_dapo_qwen3_8b ... - GitHub",
+      "url": "https://github.com/LARK-AI-Lab/Trainee-to-Trainer/blob/main/data/rl/verl/recipe/dapo/run_dapo_qwen3_8b_base_npu.sh",
+      "snippet": "/ dapo / run_dapo_qwen3_8b_base_npu.sh Code Blame 139 lines (129 loc) · 5.84 KB Raw 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    }
+  ]
+}

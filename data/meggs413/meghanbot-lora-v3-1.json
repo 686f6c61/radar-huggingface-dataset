@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "meggs413/meghanbot-lora-v3.1",
+  "slug": "meggs413-meghanbot-lora-v3-1",
+  "author": "meggs413",
+  "url": "https://huggingface.co/meggs413/meghanbot-lora-v3.1",
+  "created_at": "2026-09-01T18:01:04.000Z",
+  "updated_at": "2026-09-01T18:32:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-14B-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-14B-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2213613592,
+  "storage_human": "2.2 GB",
+  "base_model": "unsloth/Qwen2.5-14B-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meggs413/meghanbot-lora-v3 · Hugging Face",
+      "url": "https://huggingface.co/meggs413/meghanbot-lora-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "meggs413/meghanbot-lora-v3 at main - Hugging Face",
+      "url": "https://huggingface.co/meggs413/meghanbot-lora-v3/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle Local AppsSettings Unsloth Desktop main meghanbot-lora-v3 1.12 GB Ctrl+K Ctrl+K 1 contributor History:4 commits meggs413 Upload model trained with Unsloth 3eb3789 verifiedabout 5 hours ago .gitattributes Safe 1.57 kBUpload model trained with Unslothabout 5 hours ago README.md Safe 546 BytesUpload README.md with huggingface_hubabout 5 hours ago adapter_config.json ..."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,919 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "220+ Free LoRAs & Counting | Civitai",
+      "url": "https://civitai.com/articles/11647/220-free-loras-and-counting",
+      "snippet": "From generating artwork to refining LoRA models, my journey has been one of exploration, innovation, and community-driven contribution. To date, I have created and shared over 220 LoRA models on CivitAI, completely free for others to use."
+    }
+  ]
+}

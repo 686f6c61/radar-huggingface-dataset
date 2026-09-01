@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "burningfeet/backup-2026-08-31-Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-GGUF",
+  "slug": "burningfeet-backup-2026-08-31-qwen3-6-35b-a3b-uncensored-genesis-hermes-v12-gguf",
+  "author": "burningfeet",
+  "url": "https://huggingface.co/burningfeet/backup-2026-08-31-Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-GGUF",
+  "created_at": "2026-08-31T06:19:51.000Z",
+  "updated_at": "2026-09-01T11:59:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "hermes",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "hermes",
+    "gguf",
+    "uncensored",
+    "qwen3.6",
+    "moe",
+    "vision",
+    "multimodal",
+    "genesis",
+    "agentic",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "base_model:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "base_model:quantized:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 61046478080,
+  "storage_human": "61.0 GB",
+  "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "backup-2026-08-31-Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-GGUF",
+      "url": "https://huggingface.co/burningfeet/backup-2026-08-31-Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-GGUF/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "burningfeet/backup-2026-08-28-ERRORENOUS-Qwen3.6-35B-A3B-Uncensored ...",
+      "url": "https://huggingface.co/burningfeet/backup-2026-08-28-ERRORENOUS-Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Way to Run Qwen 3.6 35B MoE Locally: VRAM, Speed, Setup",
+      "url": "https://insiderllm.com/guides/best-way-run-qwen-3-6-35b-moe-locally/",
+      "snippet": "Qwen 3.6-35B-A3B has 35B total params but only 3B active per token. Real tok/s on RTX 3090, 4090, 5070 Ti, dual 5060 Ti, and M3 Ultra. Quants and setup."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive - GitHub",
+      "url": "https://github.com/chenfei66/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "Join the Discord for updates, roadmaps, projects, or just to chat. Qwen3.6-35B-A3B uncensored by HauhauCS. 0/465 Refusals. HuggingFace&#x27;s \"Hardware Compatibility\" widget doesn&#x27;t recognize K_P quants — it may show fewer files than actually exist. Click \"View +X variants\" or go to Files and versions to see all available downloads."
+    },
+    {
+      "title": "qwen3.6:35b-a3b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.6:35b-a3b",
+      "snippet": "Qwen3.6 delivers substantial upgrades in agentic coding and thinking preservation than previous Qwen models."
+    }
+  ]
+}

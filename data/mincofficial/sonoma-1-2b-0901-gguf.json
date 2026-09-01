@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Mincofficial/Sonoma-1.2B-0901-GGUF",
+  "slug": "mincofficial-sonoma-1-2b-0901-gguf",
+  "author": "Mincofficial",
+  "url": "https://huggingface.co/Mincofficial/Sonoma-1.2B-0901-GGUF",
+  "created_at": "2026-09-01T11:32:49.000Z",
+  "updated_at": "2026-09-01T11:49:01.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "q4_k_m",
+    "lfm2",
+    "text-generation",
+    "en",
+    "base_model:Mincofficial/Sonoma-1.2B-0901",
+    "base_model:quantized:Mincofficial/Sonoma-1.2B-0901",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 730898592,
+  "storage_human": "731 MB",
+  "base_model": "Mincofficial/Sonoma-1.2B-0901",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mincofficial/Sonoma-1.2B-Preview · Hugging Face",
+      "url": "https://huggingface.co/Mincofficial/Sonoma-1.2B-Preview",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mincofficial/Sonoma-1.2B-Preview at main - Hugging Face",
+      "url": "https://huggingface.co/Mincofficial/Sonoma-1.2B-Preview/tree/main",
+      "snippet": "Mincofficial / Sonoma-1.2B-Preview like 0 Text Generation MLX Safetensors GGUF English lfm2 reasoning code math preview conversational License:lfm-open-license-v1. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "IBM GGUF-encoded AI models and conversion scripts. Contribute to IBM/gguf development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - GGUFloader/gguf-loader: GGUF Loader with its Agentic Mode, and ...",
+      "url": "https://github.com/GGUFloader/gguf-loader",
+      "snippet": "A privacy-first, beginner-friendly desktop application for running large language models fully locally on Windows, Linux, and macOS. Load any GGUF model (Mistral, LLaMA, DeepSeek, Qwen, and thousands more from Hugging Face) and chat with it — with a built-in agentic mode that can read, create, edit, and organize files in a workspace you choose. No data ever leaves your computer. 📦 Also ..."
+    }
+  ]
+}

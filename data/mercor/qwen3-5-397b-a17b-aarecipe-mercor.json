@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mercor/Qwen3.5-397B-A17B-AARecipe-Mercor",
+  "slug": "mercor-qwen3-5-397b-a17b-aarecipe-mercor",
+  "author": "mercor",
+  "url": "https://huggingface.co/mercor/Qwen3.5-397B-A17B-AARecipe-Mercor",
+  "created_at": "2026-08-13T06:29:34.000Z",
+  "updated_at": "2026-09-01T12:03:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "skyrl",
+    "reinforcement-learning",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-397B-A17B",
+    "base_model:finetune:Qwen/Qwen3.5-397B-A17B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 396802360816,
+  "parameters_human": "396.80B",
+  "storage_bytes": 793624886597,
+  "storage_human": "793.6 GB",
+  "base_model": "Qwen/Qwen3.5-397B-A17B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-397B-A17B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-397B-A17B — Artifacts Hub",
+      "url": "https://artifactshub.ai/Qwen/qwen3-5-397b-a17b",
+      "snippet": "RAM @ 30d compares Qwen3.5-397B-A17B&#x27;s first 30 days of downloads with the true top-10 downloads for 250B+ models."
+    },
+    {
+      "title": "qwen3.5-397b-a17b Model by Qwen | NVIDIA NIM",
+      "url": "https://build.nvidia.com/qwen/qwen3.5-397b-a17b",
+      "snippet": "Next-gen Qwen 3.5 VLM (400B MoE) brings advanced vision, chat, RAG, and agentic capabilities."
+    },
+    {
+      "title": "qwen / qwen3.5-397b-a17b",
+      "url": "https://docs.api.nvidia.com/nim/re/reference/qwen-qwen3-5-397b-a17b",
+      "snippet": "Qwen3.5-397B-A17B Description Qwen3.5-397B-A17B is a multimodal foundation model featuring a Hybrid Mixture-of-Experts architecture with early fusion vision-language training, designed for state-of-the-art performance across chat, retrieval-augmented generation, vision-language understanding, video ..."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio:qwen3.5-397b-a17b",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-5-397b-a17b",
+      "snippet": "The Qwen3.5 series 397B-A17B native vision-language model is built on a hybrid architecture that integrates a linear attention mechanism with a sparse mixture-of-experts model, achieving higher inference efficiency. It delivers state-of-the-art performance comparable to leading-edge models across a wide range of tasks, including language understanding, logical reasoning, code generation, agent ..."
+    }
+  ]
+}

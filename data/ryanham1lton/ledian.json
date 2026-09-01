@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Ledian",
+  "slug": "ryanham1lton-ledian",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Ledian",
+  "created_at": "2026-09-01T19:22:21.000Z",
+  "updated_at": "2026-09-01T19:23:56.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121218460,
+  "storage_human": "121 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton/Spinda · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Spinda",
+      "snippet": "Ryanham1lton / Spinda like 0 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Ryanham1lton/Meganium · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Meganium",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ledian | Curated marketplace for structured AI adoption",
+      "url": "https://ledian.io/en",
+      "snippet": "Ledian Marketplace The marketplace for a structured AI start. Ledian organizes relevant solutions into one clear selection so teams can start calmly, decide with confidence, and roll out with control."
+    },
+    {
+      "title": "Ledian - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/2a903f6c35554ad6bc8fcb494b1013a8",
+      "snippet": "Explore Ledian model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Ledian - V1 | Illustrious LoRA | Civitai",
+      "url": "https://civitai.com/models/1741608/ledian",
+      "snippet": "Here&#x27;s a LORA for Ledian. Enjoy! There are no comments for this model yet. Be the first to let the people know about this model by leaving your comment."
+    }
+  ]
+}

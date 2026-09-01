@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Nebaee/stage2_attack_type",
+  "slug": "nebaee-stage2_attack_type",
+  "author": "Nebaee",
+  "url": "https://huggingface.co/Nebaee/stage2_attack_type",
+  "created_at": "2026-09-01T17:02:36.000Z",
+  "updated_at": "2026-09-01T17:02:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1498111,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Securing AI Systems: A Guide to Known Attacks and Impacts",
+      "url": "https://arxiv.org/pdf/2506.23296",
+      "snippet": "This type of attack is specifically designed to identify and retrieve exact memorized training data from the output of a trained model, especially in generative AI systems such as language models or difusion models."
+    },
+    {
+      "title": "TryHackMe-Answers/AI Threat Modelling at main - GitHub",
+      "url": "https://github.com/cosmicline/TryHackMe-Answers/blob/main/AI%20Threat%20Modelling",
+      "snippet": "TryHackMe Answers with questions. Contribute to cosmicline/TryHackMe-Answers development by creating an account on GitHub."
+    },
+    {
+      "title": "Securing AI Systems: A Guide to Known Attacks and Impacts",
+      "url": "https://arxiv.org/html/2506.23296v1",
+      "snippet": "AI System and Scope 3.1 AI System Architecture 3.2 Scope of the Attacks Considered in This Paper Attack Types and Their Impacts Methodology 4.2 Categorization of Attacks Against AI Systems 4.3 Relationships between Attacks and Impacts on AI Systems Mechanisms of Each Attack Type A: Model Extraction 5.1.1 Model Extraction vs. Knowledge Distillation."
+    },
+    {
+      "title": "GitHub - kzhao5/ModelExtractionPapers: Model Extraction (Stealing ...",
+      "url": "https://github.com/kzhao5/ModelExtractionPapers",
+      "snippet": "Model Extraction (Stealing) Attacks and Defenses on Machine Learning Models Literature This repository contains a curated list of research papers on model extraction attacks and defenses in machine learning, organized by year of publication. Papers are sorted by their released dates in descending order."
+    },
+    {
+      "title": "HasAIbeenPwned - AI Model Security Database",
+      "url": "https://hasaibeenpwned.com/",
+      "snippet": "Track jailbreaks, prompt injections, and security vulnerabilities across all major AI models."
+    }
+  ]
+}

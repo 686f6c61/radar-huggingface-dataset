@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Amr-Hegazy/grt-medium-isoparam",
+  "slug": "amr-hegazy-grt-medium-isoparam",
+  "author": "Amr-Hegazy",
+  "url": "https://huggingface.co/Amr-Hegazy/grt-medium-isoparam",
+  "created_at": "2026-09-01T18:13:23.000Z",
+  "updated_at": "2026-09-01T18:14:02.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "recurrent-transformer",
+    "gated-recurrence",
+    "weight-sharing",
+    "parameter-efficient",
+    "nanoGPT",
+    "language-model",
+    "text-generation",
+    "en",
+    "dataset:common-pile/cccc_filtered",
+    "arxiv:2608.15062",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 171073536,
+  "parameters_human": "171.1M",
+  "storage_bytes": 1368611137,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Amr-Hegazy1/gated-recurrent-transformer: Code for \"Gated ...",
+      "url": "https://github.com/Amr-Hegazy1/gated-recurrent-transformer",
+      "snippet": "Under an isoFLOP constraint, a 3-layer GRT matches the accuracy of a 12-layer GPT-2 Small baseline at similar training and inference FLOPs; under an isoParam constraint, deeper recurrence reaches a 2.76 validation loss versus 2.84 for a non-recurrent counterpart at matched parameters and data."
+    },
+    {
+      "title": "Gated Recurrent Transformers: Expressive Depth through Recurrent Modulation",
+      "url": "https://arxiv.org/pdf/2608.15062v4",
+      "snippet": "The shared transformation is thus fixed in weights but dynamic in behavior — the model thinks differently at each pass despite reusing the same parameters. Combined with depth sampling during training [9], this architecture enables a continuous compute-quality tradeoff at inference and facilitates evaluation across both isoFLOPS and isoPARAMS ..."
+    },
+    {
+      "title": "Paper page - Gated Recurrent Transformers: Expressive Depth through ...",
+      "url": "https://huggingface.co/papers/2608.15062",
+      "snippet": "Gated Recurrent Transformers: Expressive Depth through Recurrent Modulation ... Amr Hegazy , Amr Alanwar , Mostafa Elhoushi"
+    },
+    {
+      "title": "Gated Recurrent Transformers: Expressive Depth through Recurrent Modulation",
+      "url": "https://arxiv.org/html/2608.15062v3",
+      "snippet": "Gated Recurrent Transformers: Expressive Depth through Recurrent Modulation Amr Hegazy The German University in Cairo amr.hazem@student.guc.edu.eg Amr Alanwar Technical University of Munich alanwar@tum.de Mostafa Elhoushi Cerebras Systems Inc. mostafa.elhoushi@cerebras.net"
+    },
+    {
+      "title": "Amr-Hegazy (Amr Hegazy) - Hugging Face",
+      "url": "https://huggingface.co/Amr-Hegazy",
+      "snippet": "Amr-Hegazy Follow HolyTreeCrowns&#x27;s profile picture 1 follower · 0 following Amr-Hegazy1"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "FallenIncursio/RTXIncursio-s-SEKKAAAIIIIDEEE-SDXL-Pony-civitai-477426",
+  "slug": "fallenincursio-rtxincursio-s-sekkaaaiiiideee-sdxl-pony-civitai-477426",
+  "author": "FallenIncursio",
+  "url": "https://huggingface.co/FallenIncursio/RTXIncursio-s-SEKKAAAIIIIDEEE-SDXL-Pony-civitai-477426",
+  "created_at": "2026-09-01T15:31:07.000Z",
+  "updated_at": "2026-09-01T16:07:48.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "stable-diffusion",
+    "safetensors",
+    "arcenciel",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7031718079,
+  "storage_human": "7.0 GB",
+  "base_model": "Pony",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RTXIncursio&#x27;s SEKKAAAIIIIDEEE (SDXL, Pony) - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/477426?modelVersionId=530997",
+      "snippet": "Download RTXIncursio&#x27;s SEKKAAAIIIIDEEE (SDXL, Pony) - Checkpoint for Pony by FallenIncursio. Free AI model download from CivArchive."
+    },
+    {
+      "title": "RTXIncursio&#x27;s SEKKAAAIIIIDEEE (SDXL, Pony) - Civitai",
+      "url": "https://civitai.com/models/477426/rtxincursios-sekkaaaiiiideee-sdxl-pony",
+      "snippet": "Another flagship RTXIncursio&#x27;s SEKKAAAIIIIDEEE (SDXL, Pony) . I find it&#x27;s in line with what the community on Civitai likes producing. It&#x27;s pretty v..."
+    },
+    {
+      "title": "RTXIncursio&#x27;s SEKKAAAIIIIDEEE (SDXL, Pony) - v1.0 Showcase - Civitai",
+      "url": "https://civitai.com/posts/3025099",
+      "snippet": "A post by FallenIncursio."
+    },
+    {
+      "title": "RTXIncursio&#x27;s SEKKAAAIIIIDEEE (SDXL, Pony) - SEKKAAAIIIIDEEE_v1.0PDXL",
+      "url": "https://tensor.art/images/745852381541132523?model_id=745852381532743930",
+      "snippet": "score_9, score_8_up, score_7_up, score_6_up, detailed, cinematic, interdimensional creature, biomechanical ghost, mesmerizing visual puzzle, hyper-detailed, ..."
+    },
+    {
+      "title": "RTXIncursio&#x27;s SEKKAAAIIIIDEEE (SDXL, Pony) - tensor.art",
+      "url": "https://tensor.art/models/745852381532743930",
+      "snippet": "Download RTXIncursio&#x27;s SEKKAAAIIIIDEEE (SDXL, Pony) - free CHECKPOINT Pony AI model on TENSOR. By FallenIncursio"
+    }
+  ]
+}

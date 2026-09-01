@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "EmanHassan26/ddpm-celebahq-finetuned-cartoon",
+  "slug": "emanhassan26-ddpm-celebahq-finetuned-cartoon",
+  "author": "EmanHassan26",
+  "url": "https://huggingface.co/EmanHassan26/ddpm-celebahq-finetuned-cartoon",
+  "created_at": "2026-09-01T16:07:19.000Z",
+  "updated_at": "2026-09-01T16:07:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pytorch",
+    "unconditional-image-generation",
+    "diffusion-models-class",
+    "license:mit",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 113673219,
+  "parameters_human": "113.7M",
+  "storage_bytes": 454741108,
+  "storage_human": "455 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EmanHassan26/ddpm-celebahq-finetuned-cartoon-2epochs · Hugging Face",
+      "url": "https://huggingface.co/EmanHassan26/ddpm-celebahq-finetuned-cartoon-2epochs",
+      "snippet": "Instructions to use EmanHassan26/ddpm-celebahq-finetuned-cartoon-2epochs with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "EmanHassan26/ddpm-celebahq-finetuned-vintage · Hugging Face",
+      "url": "https://huggingface.co/EmanHassan26/ddpm-celebahq-finetuned-vintage",
+      "snippet": "Instructions to use EmanHassan26/ddpm-celebahq-finetuned-vintage with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ddpm-celebahq-finetuned-AnimeFaces-6epochs - Hugging Face",
+      "url": "https://huggingface.co/NoneBone/ddpm-celebahq-finetuned-AnimeFaces-6epochs",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models compatible with the Diffusers library - Hugging Face",
+      "url": "https://huggingface.co/models?library=diffusers&sort=downloads&search=ddpm",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "google/ddpm-celebahq-256 · Hugging Face",
+      "url": "https://huggingface.co/google/ddpm-celebahq-256",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

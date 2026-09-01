@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "christopherthompson81/omnivoice-ipa-onnx",
+  "slug": "christopherthompson81-omnivoice-ipa-onnx",
+  "author": "christopherthompson81",
+  "url": "https://huggingface.co/christopherthompson81/omnivoice-ipa-onnx",
+  "created_at": "2026-07-03T01:30:00.000Z",
+  "updated_at": "2026-09-01T17:21:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "ipa",
+    "phonemes",
+    "base_model:k2-fsa/OmniVoice",
+    "base_model:quantized:k2-fsa/OmniVoice",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3758825867,
+  "storage_human": "3.8 GB",
+  "base_model": "k2-fsa/OmniVoice",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OmniVoice: Free AI Voice Generator & Voice Cloning",
+      "url": "https://omnivoice.app/",
+      "snippet": "OmniVoice is a free, open-source AI voice generator that supports 646 languages. It converts text to natural-sounding speech, clones voices from a short audio sample (zero-shot Voice Cloning), or creates a voice from a text description alone (Voice Design)."
+    },
+    {
+      "title": "christopherthompson81 (Chris Thompson) · GitHub",
+      "url": "https://github.com/christopherthompson81",
+      "snippet": "ONNX speech pipeline library for ASR, diarization, VAD, and denoising C# 20 2"
+    },
+    {
+      "title": "GitHub - k2-fsa/OmniVoice: High-Quality Voice Cloning TTS for 600 ...",
+      "url": "https://github.com/k2-fsa/OmniVoice/",
+      "snippet": "OmniVoice 🌍 OmniVoice is a state-of-the-art massively multilingual zero-shot text-to-speech (TTS) model supporting over 600 languages. Built on a novel diffusion language model-style architecture, it generates high-quality speech with superior inference speed, supporting voice cloning and voice design."
+    },
+    {
+      "title": "Prince-1/OmniVoice-Onnx · Hugging Face",
+      "url": "https://huggingface.co/Prince-1/OmniVoice-Onnx",
+      "snippet": "OmniVoice 🌍 OmniVoice is a massively multilingual zero-shot text-to-speech (TTS) model supporting over 600 languages. Built on a novel diffusion language model-style architecture, it delivers high-quality speech with superior inference speed, supporting voice cloning and voice design."
+    },
+    {
+      "title": "k2-fsa/OmniVoice · Hugging Face",
+      "url": "https://huggingface.co/k2-fsa/OmniVoice",
+      "snippet": "OmniVoice 🌍 OmniVoice is a massively multilingual zero-shot text-to-speech (TTS) model supporting over 600 languages. Built on a novel diffusion language model-style architecture, it delivers high-quality speech with superior inference speed, supporting voice cloning and voice design."
+    }
+  ]
+}

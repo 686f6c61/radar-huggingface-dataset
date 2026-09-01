@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ling-niu/E-cubed-AD",
+  "slug": "ling-niu-e-cubed-ad",
+  "author": "ling-niu",
+  "url": "https://huggingface.co/ling-niu/E-cubed-AD",
+  "created_at": "2026-09-01T18:34:50.000Z",
+  "updated_at": "2026-09-01T18:34:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Embodied Cognition Augmented End2End Autonomous Driving",
+      "url": "https://neurips.cc/virtual/2025/poster/120325",
+      "snippet": "In this paper, we propose a novel paradigm termed ${E}^{3}AD$, which advocates for comparative learning between visual feature extraction networks and the general EEG large model, in order to learn latent human driving cognition for enhancing end-to-end planning."
+    },
+    {
+      "title": "Embodied Cognition Augmented End2End Autonomous Driving",
+      "url": "https://arxiv.org/abs/2511.01334",
+      "snippet": "In this paper, we propose a novel paradigm termed E3AD, which advocates for comparative learning between visual feature extraction networks and the general EEG large model, in order to learn latent human driving cognition for enhancing end-to-end planning. In this work, we collected a cognitive dataset for the mentioned contrastive learning ..."
+    },
+    {
+      "title": "Embodied Cognition Augmented End2End Autonomous Driving",
+      "url": "https://arxiv.org/pdf/2511.01334",
+      "snippet": "Embodied Cognition Augmented End2End Model Training: We freeze the Driving-Thinking model and integrate it into popular E2E-AD frameworks. The integrated model is then trained on large-scale driving datasets, followed by open-loop testing and closed-loop simulation."
+    },
+    {
+      "title": "Embodied Cognition Augmented End2End Autonomous Driving",
+      "url": "https://www.modelscope.cn/papers/2511.01334",
+      "snippet": "Embodied Cognition Augmented End2End Autonomous Driving Ling Niu Xiaoji Zheng Han Wang Chen Zheng Ziyuan Yang Bokui Chen Jiangtao Gong"
+    },
+    {
+      "title": "Embodied Cognition Augmented End2End Autonomous Driving",
+      "url": "https://chatpaper.com/paper/206002",
+      "snippet": "The paper introduces the &#92;&#92;(E^{3}A D&#92;&#92;) paradigm, which enhances end-to-end autonomous driving by integrating human cognitive insights from EEG data, leading to improved planning performance without significant computational costs."
+    }
+  ]
+}

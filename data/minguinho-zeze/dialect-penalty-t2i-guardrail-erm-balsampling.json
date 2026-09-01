@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Minguinho-zeze/dialect-penalty-t2i-guardrail-erm-balsampling",
+  "slug": "minguinho-zeze-dialect-penalty-t2i-guardrail-erm-balsampling",
+  "author": "Minguinho-zeze",
+  "url": "https://huggingface.co/Minguinho-zeze/dialect-penalty-t2i-guardrail-erm-balsampling",
+  "created_at": "2026-09-01T13:57:10.000Z",
+  "updated_at": "2026-09-01T14:02:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "safety",
+    "guardrail",
+    "dialect",
+    "fairness",
+    "text-to-image",
+    "reproducibility",
+    "text-classification",
+    "en",
+    "arxiv:2608.29589",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837761,
+  "storage_human": "268 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minguinho-zeze/dialect-penalty-t2i · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Minguinho-zeze/dialect-penalty-t2i",
+      "snippet": "Datasets: Minguinho-zeze / dialect-penalty-t2i like 0 Tasks: Text Classification Languages: English German Arabic Size: 1K<n<10K ArXiv: arxiv:2510.22300 arxiv:2504.07100 Tags: fairness bias dialect text-to-image safety guardrails + 1 License: research-use-with-attribution Dataset card FilesFiles and versions xet Community"
+    },
+    {
+      "title": "Minguinho-zeze/dialect-penalty-t2i at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/Minguinho-zeze/dialect-penalty-t2i/tree/main",
+      "snippet": "Datasets: Minguinho-zeze / dialect-penalty-t2i like 0 Tasks: Text Classification Languages: English German Arabic Size: 1K<n<10K ArXiv: arxiv:2510.22300 arxiv:2504.07100 Tags: fairness bias dialect text-to-image safety guardrails + 1 License: research-use-with-attribution Dataset card FilesFiles and versions xet Community"
+    },
+    {
+      "title": "GitHub - minguinho26/dialect-penalty-t2i: Official code of \"Not Safe ...",
+      "url": "https://github.com/minguinho26/dialect-penalty-t2i",
+      "snippet": "We audit text-to-image (T2I) safety pipelines for the dialect penalty: safety components that intervene based on linguistic variety rather than actual depicted content. Using roughly 23,000 paired Standard American English (SAE) and dialect prompts across five English dialects, we evaluate text-level filters, an unguarded T2I generator, and post-hoc image guardrails, and show that some ..."
+    },
+    {
+      "title": "dialect-penalty-t2i/README.md at main · minguinho26/dialect ... - GitHub",
+      "url": "https://github.com/minguinho26/dialect-penalty-t2i/blob/main/README.md",
+      "snippet": "We audit text-to-image (T2I) safety pipelines for the dialect penalty: safety components that intervene based on linguistic variety rather than actual depicted content. Using roughly 23,000 paired Standard American English (SAE) and dialect prompts across five English dialects, we evaluate text-level filters, an unguarded T2I generator, and post-hoc image guardrails, and show that some ..."
+    },
+    {
+      "title": "Bank of England head warns AI threatens financial stability - TechRadar",
+      "url": "https://www.techradar.com/pro/bank-of-england-head-warns-ai-threatens-financial-stability-cites-investment-concentration-and-ai-model-security-risks",
+      "snippet": "Pro Bank of England head warns AI threatens financial stability — cites investment concentration and AI model security risks News By Craig Hale Published 4 hours ago"
+    }
+  ]
+}

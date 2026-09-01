@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "nyxspecter4/kinetigor-dpo-cybersec",
+  "slug": "nyxspecter4-kinetigor-dpo-cybersec",
+  "author": "nyxspecter4",
+  "url": "https://huggingface.co/nyxspecter4/kinetigor-dpo-cybersec",
+  "created_at": "2026-09-01T18:57:04.000Z",
+  "updated_at": "2026-09-01T19:29:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "cybersecurity",
+    "security",
+    "dpo",
+    "vulnerability-detection",
+    "exploit-chain",
+    "cve-analysis",
+    "penetration-testing",
+    "threat-intelligence",
+    "incident-response",
+    "soc",
+    "dfir",
+    "malware-analysis",
+    "detection-engineering",
+    "red-team",
+    "blue-team",
+    "gguf",
+    "ollama",
+    "en",
+    "mit",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Cybersecurity Vulnerability Analysis",
+      "dataset": "CybersecDPO Corpus (internal eval set)",
+      "metric": "DPO Preference Accuracy",
+      "value": 0.89
+    }
+  ],
+  "sources": [
+    {
+      "title": "nyxspecter4/kin-v2-cybersecurity-7b-lora · Hugging Face",
+      "url": "https://huggingface.co/nyxspecter4/kin-v2-cybersecurity-7b-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nyxspecter4 (Kiran Wolfe) - Hugging Face",
+      "url": "https://huggingface.co/nyxspecter4/datasets",
+      "snippet": "User profile of Kiran Wolfe on Hugging Face"
+    },
+    {
+      "title": "Kinetigor — AI-Powered Cybersecurity Training",
+      "url": "https://kinetigor.com/kinetigor.html",
+      "snippet": "Kinetigor builds autonomous AI-powered cybersecurity training platforms. Home of BountyWarz and Athelgard Sentinel enterprise security."
+    },
+    {
+      "title": "Kinetigor Patent Office",
+      "url": "https://kinetigor.com/patent-office.html",
+      "snippet": "Einstein examines. Tesla engineers. 24 Prospectors discover. 26 Alien Lenses refract."
+    },
+    {
+      "title": "CySecBench: Generative AI-based CyberSecurity-focused ... - GitHub",
+      "url": "https://github.com/cysecbench/dataset",
+      "snippet": "The largest and most comprehensive Generative AI-based CyberSecurity-focused Dataset for Benchmarking Large Language Models 🌟 Overview The CySecBench paper offers: 🎯 A cutting-edge dataset of 12662 prompts tailored to cybersecurity challenges. 🧠 Novel jailbreaking methods leveraging prompt obfuscation and refinement."
+    }
+  ]
+}

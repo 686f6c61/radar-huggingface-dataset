@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "silly-kicks/ghost-gk-sweeper-v1",
+  "slug": "silly-kicks-ghost-gk-sweeper-v1",
+  "author": "silly-kicks",
+  "url": "https://huggingface.co/silly-kicks/ghost-gk-sweeper-v1",
+  "created_at": "2026-09-01T17:36:18.000Z",
+  "updated_at": "2026-09-01T17:39:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "silly-kicks",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "silly-kicks",
+    "sports-analytics",
+    "soccer",
+    "goalkeeper",
+    "tracking-data",
+    "ghosting",
+    "rest-defense",
+    "tabular-regression",
+    "en",
+    "arxiv:2406.17220",
+    "arxiv:1804.05753",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2395054,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "silly-kicks/ghost-gk-v1 · Hugging Face",
+      "url": "https://huggingface.co/silly-kicks/ghost-gk-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "silly-kicks ( (Ministry of) Silly Kicks) - Hugging Face",
+      "url": "https://huggingface.co/silly-kicks",
+      "snippet": "Soccer analytics library — multi-provider SPADL + tracking conversion, VAEP/xT valuation, and spatial features (pitch control, cover shadows, player influence)"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=silly-kicks",
+      "snippet": "Active filters: silly-kicks. Clear all. luxury-lakehouse/vaep-model-statsbomb-wyscout. Tabular Classification • Updated 16 days ago. silly-kicks/ghost-gk-v1"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=ghosting",
+      "snippet": "1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: ghosting Clear all"
+    },
+    {
+      "title": "silly-kicks/ghost-gk-v1 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/silly-kicks/ghost-gk-v1/discussions",
+      "snippet": "silly-kicks / ghost-gk-v1 like 0 Follow (Ministry of) Silly Kicks 1 Tabular Regression English silly-kicks sports-analytics soccer goalkeeper conditional-density-estimation tracking-data ghosting arxiv:2406.17220 arxiv:1804.05753 License:mit Model card FilesFiles and versions xet Community Copy to bucket new Sort: Recently created"
+    }
+  ]
+}

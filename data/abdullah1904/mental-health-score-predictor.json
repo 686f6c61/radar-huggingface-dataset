@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "abdullah1904/mental-health-score-predictor",
+  "slug": "abdullah1904-mental-health-score-predictor",
+  "author": "abdullah1904",
+  "url": "https://huggingface.co/abdullah1904/mental-health-score-predictor",
+  "created_at": "2026-09-01T18:50:33.000Z",
+  "updated_at": "2026-09-01T19:13:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "mental-health",
+    "regression",
+    "social-media",
+    "lifestyle",
+    "prediction",
+    "tabular",
+    "tabular-regression",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25677219,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Mental Health Score Regression",
+      "dataset": null,
+      "metric": null,
+      "value": 0.8776
+    },
+    {
+      "task": "Mental Health Score Regression",
+      "dataset": null,
+      "metric": null,
+      "value": 0.3472
+    },
+    {
+      "task": "Mental Health Score Regression",
+      "dataset": null,
+      "metric": null,
+      "value": 0.4637
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mental Health Score Predictor - GitHub",
+      "url": "https://github.com/mn-ansari/mental-health-score-predictor",
+      "snippet": "Mental Health Score Predictor A full-stack machine learning project that predicts a student&#x27;s mental health score based on academic, lifestyle, and social media usage patterns. The project includes a FastAPI backend, a trained machine learning model, and a modern React frontend with an animated user interface."
+    },
+    {
+      "title": "GitHub - abhina-y/Mental_Health_Score-Predictor",
+      "url": "https://github.com/abhina-y/Mental_Health_Score-Predictor",
+      "snippet": "A full-stack machine-learning project that estimates a student mental health score from demographics, social-media habits, lifestyle factors, and self-reported stress. It pairs a trained scikit-learn regression pipeline with a FastAPI prediction service and a responsive browser interface."
+    },
+    {
+      "title": "Building & Deploying a Mental Health Score Predictor (Full ML Project)",
+      "url": "https://www.youtube.com/watch?v=WHTbyKPrcPg",
+      "snippet": "In this video, I built and deployed a Machine Learning model that predicts a person&#x27;s Mental Health Score based on lifestyle and behavioral data."
+    },
+    {
+      "title": "Mental Health Predictor",
+      "url": "https://mindscore-cwgk.onrender.com/",
+      "snippet": "Student Information Enter your details to generate an AI-powered prediction."
+    },
+    {
+      "title": "Mental Health Score Prediction",
+      "url": "https://mental-health-score-prediction.vercel.app/",
+      "snippet": "Student Mindset Analytics 🧠 Mental Health Score Prediction Get your Mental Health Score based on your daily habits, screen time, stress level, sleep, and lifestyle."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "lukaskremla/Ornith-1.5-35B-A3B-8bit-MLX-TextOnly",
+  "slug": "lukaskremla-ornith-1-5-35b-a3b-8bit-mlx-textonly",
+  "author": "lukaskremla",
+  "url": "https://huggingface.co/lukaskremla/Ornith-1.5-35B-A3B-8bit-MLX-TextOnly",
+  "created_at": "2026-09-01T14:42:35.000Z",
+  "updated_at": "2026-09-01T17:32:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "mlx-lm",
+    "ornith",
+    "ornith-1.5",
+    "ornith-1.5-35b-a3b",
+    "qwen",
+    "qwen3_5",
+    "text-generation",
+    "text-only",
+    "conversational",
+    "reasoning",
+    "tool-use",
+    "long-context",
+    "multilingual",
+    "quantized",
+    "weight-only-quantization",
+    "affine",
+    "rtn",
+    "group-size-64",
+    "8-bit",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9749130368,
+  "parameters_human": "9.75B",
+  "storage_bytes": 36848211850,
+  "storage_human": "36.8 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B-MLX-8bit · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX-8bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ornith-ai/Ornith-1 · GitHub",
+      "url": "https://github.com/ornith-ai/Ornith-1",
+      "snippet": "Aloha! 🌺 Ornith is a family of self-improving open-source models for agentic tasks. This repo covers both generations: 🐦 Ornith-1.5 (latest) — extends self-scaffolding into a complete end-to-end self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B-MLX-8bit at main - Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX-8bit/tree/main",
+      "snippet": "Instructions to use ornith-ai/Ornith-1.5-35B-A3B-MLX-8bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use ornith-ai/Ornith-1.5-35B-A3B-MLX-8bit with MLX:"
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B Benchmarks & Context (September 2026)",
+      "url": "https://benchlm.ai/models/ornith-1-5-35b-a3b",
+      "snippet": "Ornith-1.5-35B-A3B is a open weight model with a 262K context window. It uses an explicit reasoning mode, which can improve complex problem solving while adding latency and token use."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    }
+  ]
+}

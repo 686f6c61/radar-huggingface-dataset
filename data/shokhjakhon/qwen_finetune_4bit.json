@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shokhjakhon/qwen_finetune_4bit",
+  "slug": "shokhjakhon-qwen_finetune_4bit",
+  "author": "shokhjakhon",
+  "url": "https://huggingface.co/shokhjakhon/qwen_finetune_4bit",
+  "created_at": "2026-09-01T15:45:19.000Z",
+  "updated_at": "2026-09-01T15:45:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-tuning Guide | QwenLM/Qwen | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen/4-fine-tuning-guide",
+      "snippet": "This guide explains how to fine-tune Qwen models to adapt them for specific tasks and domains. It covers the different fine-tuning approaches, data preparation, performance considerations, and working with fine-tuned models."
+    },
+    {
+      "title": "aayush1306/qwen_finetune_4bit · Hugging Face",
+      "url": "https://huggingface.co/aayush1306/qwen_finetune_4bit",
+      "snippet": "Uploaded finetuned model Developed by: aayush1306 License: apache-2.0 Finetuned from model : unsloth/qwen3-4b-thinking-2507-unsloth-bnb-4bit This qwen3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "aayush1306/qwen_finetune_4bit_new · Hugging Face",
+      "url": "https://huggingface.co/aayush1306/qwen_finetune_4bit_new",
+      "snippet": "Instructions to use aayush1306/qwen_finetune_4bit_new with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use aayush1306/qwen_finetune_4bit_new with Transformers:"
+    },
+    {
+      "title": "GitHub - Rohityalavarthy/qwen3-finetune: Memory-efficient fine-tuning ...",
+      "url": "https://github.com/Rohityalavarthy/qwen3-finetune",
+      "snippet": "This project implements a sophisticated fine-tuning pipeline that transforms Alibaba&#x27;s Qwen3-4B into a mathematically-enhanced reasoning model. By leveraging Parameter-Efficient Fine-Tuning (PEFT) with Low-Rank Adaptation (LoRA) and 4-bit quantization, we achieve optimal performance while maintaining memory efficiency for consumer hardware."
+    },
+    {
+      "title": "Qwen/finetune.py at main · QwenLM/Qwen · GitHub",
+      "url": "https://github.com/QwenLM/Qwen/blob/main/finetune.py",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - Qwen/finetune.py at main · QwenLM/Qwen"
+    }
+  ]
+}

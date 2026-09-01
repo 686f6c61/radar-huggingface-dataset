@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "xennonf4/Mistral-Instruct-Bangla-F16-GGUF",
+  "slug": "xennonf4-mistral-instruct-bangla-f16-gguf",
+  "author": "xennonf4",
+  "url": "https://huggingface.co/xennonf4/Mistral-Instruct-Bangla-F16-GGUF",
+  "created_at": "2026-09-01T15:23:30.000Z",
+  "updated_at": "2026-09-01T15:23:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "peft",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-lora",
+    "bn",
+    "dataset:iamshnoo/alpaca-cleaned-bengali",
+    "base_model:Rashik24/Mistral-Instruct-Bangla",
+    "base_model:adapter:Rashik24/Mistral-Instruct-Bangla",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 170082304,
+  "parameters_human": "170.1M",
+  "storage_bytes": 340196192,
+  "storage_human": "340 MB",
+  "base_model": "Rashik24/Mistral-Instruct-Bangla",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rashik24/Mistral-Instruct-Bangla · Hugging Face",
+      "url": "https://huggingface.co/Rashik24/Mistral-Instruct-Bangla",
+      "snippet": "The Mistral-Instruct-Bangla model is intended for a range of applications where understanding and generating Bengali text is crucial. This includes but is not limited to machine translation, content creation, sentiment analysis, and language understanding tasks in Bengali."
+    },
+    {
+      "title": "TheBloke/Mistral-7B-Instruct-v0.2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF",
+      "snippet": "Mistral 7B Instruct v0.2 - GGUF Model creator: Mistral AI_ Original model: Mistral 7B Instruct v0.2 Description This repo contains GGUF format model files for Mistral AI_&#x27;s Mistral 7B Instruct v0.2. These files were quantised using hardware kindly provided by Massed Compute. About GGUF GGUF is a new format introduced by the llama.cpp team on August 21st 2023. It is a replacement for GGML ..."
+    },
+    {
+      "title": "Rashik24/Mistral-Instruct-Bangla - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/Rashik24/Mistral-Instruct-Bangla",
+      "snippet": "Run Rashik24/Mistral-Instruct-Bangla with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "GitHub - EricLBuehler/mistral.rs: Fast, flexible LLM inference",
+      "url": "https://github.com/EricLBuehler/mistral.rs",
+      "snippet": "Why mistral.rs? Automatic model loading: Architecture, weight format, and chat template are detected for supported Hugging Face models and GGUF files, with flags available for explicit selection. True multimodality: Text, vision, video, and audio, speech generation, image generation, and embeddings in one engine."
+    },
+    {
+      "title": "Mistral 7B Instruct v0.2 - GGUF - GitHub",
+      "url": "https://github.com/GourmetBytes/Mistral-7B-Instruct-v0.2-GGUF/blob/main/README.md",
+      "snippet": "This repo contains GGUF format model files for Mistral AI_&#x27;s Mistral 7B Instruct v0.2. These files were quantised using hardware kindly provided by Massed Compute."
+    }
+  ]
+}

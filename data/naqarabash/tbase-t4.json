@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "NAQarabash/TBase-T4",
+  "slug": "naqarabash-tbase-t4",
+  "author": "NAQarabash",
+  "url": "https://huggingface.co/NAQarabash/TBase-T4",
+  "created_at": "2026-09-01T11:53:10.000Z",
+  "updated_at": "2026-09-01T11:53:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 222903552,
+  "parameters_human": "222.9M",
+  "storage_bytes": 891644712,
+  "storage_human": "892 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NAQarabash (Noor Ahmed Khudhur A Qarabash) - Hugging Face",
+      "url": "https://huggingface.co/NAQarabash",
+      "snippet": "NAQarabash/flan-t5-base-finetuned-mlsum-tr Text2Text Generation • Updated 25 days ago"
+    },
+    {
+      "title": "NAQarabash/TBase-T2 · Hugging Face",
+      "url": "https://huggingface.co/NAQarabash/TBase-T2",
+      "snippet": "Instructions to use NAQarabash/TBase-T2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use NAQarabash/TBase-T2 with Transformers: ... Notebooks Google Colab Kaggle Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use ..."
+    },
+    {
+      "title": "Odysseus AI - Self-Hosted AI Workspace Setup Guide",
+      "url": "https://odysseusai.dev/",
+      "snippet": "Odysseus AI Setup Guide For PewDiePie&#x27;s self-hosted AI workspace Verify the official source, choose Docker, Windows, macOS, or Linux, connect Ollama or API keys, read logs, choose a model that fits your hardware, and avoid unsafe public deployment."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Benchmarking generative AI and physics based molecular ... - bioRxiv",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.05.10.724101v1",
+      "snippet": "Wild-type T4 lysozyme (T4L) is used as a benchmark to evaluate conformational sampling across generative AI, AI-accelerated molecular simulation (AMS), and physics-based enhanced molecular dynamics (EMD). A four-state model: exposed/open, exposed/closed, buried/open, and buried/closed; is defined using physically meaningful collective variables."
+    }
+  ]
+}

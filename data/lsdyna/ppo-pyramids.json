@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lsdyna/ppo-Pyramids",
+  "slug": "lsdyna-ppo-pyramids",
+  "author": "lsdyna",
+  "url": "https://huggingface.co/lsdyna/ppo-Pyramids",
+  "created_at": "2026-09-01T12:44:33.000Z",
+  "updated_at": "2026-09-01T12:44:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37729157,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KrishBakshi/ppo-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/KrishBakshi/ppo-Pyramids",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PDF A Flexible Method to Integrate AI Models (PyTorch) into LS-DYNA User ...",
+      "url": "https://lsdyna.ansys.com/wp-content/uploads/2025/11/AIML_Betancourt_BMW.pdf",
+      "snippet": "The relevance of this work lies in enabling AI model designers to test online predictions of their models within a commercial FEM software. Evaluating the AI models in LS-DYNA is essential to understand their interaction with the FEM solver, including issues related to stability, ranges of validity, generalization, and time performance."
+    },
+    {
+      "title": "giri1619/ppo-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/giri1619/ppo-Pyramids",
+      "snippet": "ppo Agent playing Pyramids This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library."
+    },
+    {
+      "title": "AI Material Model for LS-Dyna - University of Oxford",
+      "url": "https://oxr.eng.ox.ac.uk/aimaterial/",
+      "snippet": "AI Material Model for LS-Dyna The first open-source data-driven constitutive model for explicit finite element analysis. Licenced under GPL v3 by the University of Oxford."
+    },
+    {
+      "title": "Dyna-PPO reinforcement learning with Gaussian process for the ...",
+      "url": "https://link.springer.com/article/10.1007/s10489-022-04354-x",
+      "snippet": "In addition, the interaction between the world model and the model-free reinforcement learning agent remains at the unidirectional data level. To further improve the effectiveness and efficiency of driving policy learning, we propose a novel Gaussian Process based Dyna-PPO approach in this paper."
+    }
+  ]
+}

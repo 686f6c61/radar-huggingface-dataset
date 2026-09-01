@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Abyyyyyyyyyyyyyyyy/Qwen2.5-Coder-7B-Instruct-OBLITERATED",
+  "slug": "abyyyyyyyyyyyyyyyy-qwen2-5-coder-7b-instruct-obliterated",
+  "author": "Abyyyyyyyyyyyyyyyy",
+  "url": "https://huggingface.co/Abyyyyyyyyyyyyyyyy/Qwen2.5-Coder-7B-Instruct-OBLITERATED",
+  "created_at": "2026-09-01T15:11:41.000Z",
+  "updated_at": "2026-09-01T15:11:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "obliteratus",
+    "abliteration",
+    "uncensored",
+    "obliterate",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693645,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-Coder-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai/Qwen2.5-Coder-7B-Instruct-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Qwen2.5-Coder-7B-Instruct-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2409.12186v1",
+      "snippet": "As indicated in Table 17, the Qwen2.5-Coder-7B-Instruct model outperforms the DS-Coder-V2-Lite-Instruct in 11 out of 12 tasks. This result underscores the model&#x27;s versatility, excelling not only in complex coding tasks but also in sophisticated general tasks, thus distinguishing it from its competitors."
+    },
+    {
+      "title": "Qwen2.5-Coder: Code More, Learn More!",
+      "url": "https://qwen.ai/blog?id=qwen2.5-coder",
+      "snippet": "Qwen2.5-Coder is part of the Qwen2.5 series, available in three model sizes: 1.5B, 7B, and a 32B version (coming soon). This update focuses on two main improvements: scaling up the code training data and enhancing coding capabilities while maintaining strong performance in other core areas like math and general tasks."
+    },
+    {
+      "title": "Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2409.12186v3",
+      "snippet": "Additionally, the Qwen2.5-Coder-7B-Instruct model outperformed larger models, including CodeStral-22B and DS-Coder-33B-Instruct, highlighting its advanced code reasoning capabilities despite its smaller size."
+    }
+  ]
+}

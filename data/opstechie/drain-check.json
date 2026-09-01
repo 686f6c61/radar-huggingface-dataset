@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "opstechie/drain-check",
+  "slug": "opstechie-drain-check",
+  "author": "opstechie",
+  "url": "https://huggingface.co/opstechie/drain-check",
+  "created_at": "2026-09-01T19:12:56.000Z",
+  "updated_at": "2026-09-01T19:13:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3702168,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "opstechie (som) - Hugging Face",
+      "url": "https://huggingface.co/opstechie/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 23 minutes ago ... published a model 23 minutes ago"
+    },
+    {
+      "title": "opstechie (som) - Hugging Face",
+      "url": "https://huggingface.co/opstechie/models",
+      "snippet": "Recent Activity updated a model 21 minutes ago opstechie/robo-train-22 published a model 21 minutes ago opstechie/robo-train-22 updated a model 3 days ago opstechie/my-tiny-robot View all activity"
+    },
+    {
+      "title": "Smart Fraud Detection Using AI to Simulate Transactions and Predict ...",
+      "url": "https://www.bsetec.com/blog/smart-fraud-detection-using-ai-to-simulate-transactions-and-predict-drainer-scripts-before-you-sign/",
+      "snippet": "Smart Fraud Detection uses AI to simulate transactions in advance, exposing hidden risks and stopping drainer scripts before you ever click approve."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "Best free AI detector - simply paste your text to instantly get an overall AI score and advanced sentence by sentence detection."
+    },
+    {
+      "title": "Can I run AI locally? Best models for your GPU",
+      "url": "https://www.canirun.ai/",
+      "snippet": "Detect your GPU or Mac and see which open LLMs, coding, image and video models you can run locally. VRAM requirements, speed estimates and grades."
+    }
+  ]
+}

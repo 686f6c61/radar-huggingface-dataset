@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "emmanueluc322/DSAT-Skin-Lesion-Segmentation",
+  "slug": "emmanueluc322-dsat-skin-lesion-segmentation",
+  "author": "emmanueluc322",
+  "url": "https://huggingface.co/emmanueluc322/DSAT-Skin-Lesion-Segmentation",
+  "created_at": "2026-09-01T18:54:51.000Z",
+  "updated_at": "2026-09-01T18:54:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EmmanuelUka/ML-Research-Skin-Segmentation - GitHub",
+      "url": "https://github.com/EmmanuelUka/ML-Research-Skin-Segmentation",
+      "snippet": "Overview This project trains and evaluates a novel segmentation architecture called DSAT (Dual Attention Self-Attention Transformer) on the IMA++ dataset — the largest publicly available multi-annotator skin lesion segmentation dataset."
+    },
+    {
+      "title": "skin-segmentation · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/skin-segmentation",
+      "snippet": "A framework for training segmentation models in pytorch on labelme annotations with pretrained examples of skin, cat, and pizza topping segmentation"
+    },
+    {
+      "title": "Skin Lesion Segmentation - a Hugging Face Space by unixio",
+      "url": "https://huggingface.co/spaces/unixio/skin-lesion-segmentation",
+      "snippet": "🩺 Skin Lesion Segmentation (U-Net / Attention U-Net / U-Net++) Upload a dermoscopy or skin photo. The model outlines the lesion and (optionally) shows a Grad-CAM heatmap of where it looked. ⚠️ Research/education prototype trained on ISIC-2018. Not a medical device."
+    },
+    {
+      "title": "An advanced skin lesion segmentation and classification ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-025-08255-0",
+      "snippet": "Hence, to overcome these complications in the traditional techniques, a novel automated skin lesion segmentation model is required to provide effective diagnosis results."
+    },
+    {
+      "title": "Skin lesion segmentation: A systematic review of computational ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S001048252501193X",
+      "snippet": "This review explores and summarizes the latest advancements in skin lesion segmentation techniques and their state-of-the-art methods from 2018 to 2025. It also covers crucial information, including input datasets, pre-processing, augmentation, method configuration, loss functions, hyperparameter settings, and performance metrics."
+    }
+  ]
+}

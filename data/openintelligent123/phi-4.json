@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Openintelligent123/phi-4",
+  "slug": "openintelligent123-phi-4",
+  "author": "Openintelligent123",
+  "url": "https://huggingface.co/Openintelligent123/phi-4",
+  "created_at": "2026-09-01T17:14:34.000Z",
+  "updated_at": "2026-09-01T17:14:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "phi3",
+    "text-generation",
+    "phi",
+    "nlp",
+    "math",
+    "code",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2412.08905",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14659507200,
+  "parameters_human": "14.66B",
+  "storage_bytes": 29319042992,
+  "storage_human": "29.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/phi-4 · Hugging Face",
+      "url": "https://huggingface.co/microsoft/phi-4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/Phi-4",
+      "snippet": "Phi-4 is a state-of-the-art open model built upon a blend of synthetic datasets, data from filtered public domain websites, and acquired academic books and Q&A datasets. The goal of this approach was to ensure that small capable models were trained with data focused on high quality and advanced reasoning."
+    },
+    {
+      "title": "Phi Open Models - Small Language Models | Microsoft Azure",
+      "url": "https://azure.microsoft.com/en-us/products/phi/",
+      "snippet": "Phi open model family Phi models offer cost-effective, high-performance AI solutions at the edge, pushing the boundaries of generative AI."
+    },
+    {
+      "title": "[2412.08905] Phi-4 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2412.08905",
+      "snippet": "We present phi-4, a 14-billion parameter language model developed with a training recipe that is centrally focused on data quality. Unlike most language models, where pre-training is based primarily on organic data sources such as web content or code, phi-4 strategically incorporates synthetic data throughout the training process. While previous models in the Phi family largely distill the ..."
+    },
+    {
+      "title": "Phi-4 Technical Report - Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/publication/phi-4-technical-report/",
+      "snippet": "We present phi-4, a 14-billion parameter language model developed with a training recipe that is centrally focused on data quality. Unlike most language models, where pre-training is based primarily on organic data sources such as web content or code, phi-4 strategically incorporates synthetic data ..."
+    }
+  ]
+}

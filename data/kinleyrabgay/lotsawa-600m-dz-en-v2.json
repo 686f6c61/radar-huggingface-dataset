@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "kinleyrabgay/lotsawa-600m-dz-en-v2",
+  "slug": "kinleyrabgay-lotsawa-600m-dz-en-v2",
+  "author": "kinleyrabgay",
+  "url": "https://huggingface.co/kinleyrabgay/lotsawa-600m-dz-en-v2",
+  "created_at": "2026-09-01T11:48:17.000Z",
+  "updated_at": "2026-09-01T12:21:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "m2m_100",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 615073792,
+  "parameters_human": "615.1M",
+  "storage_bytes": 4957807855,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - kinleyrabgay/Lotsawa",
+      "url": "https://github.com/kinleyrabgay/Lotsawa",
+      "snippet": "What this is A fine-tune of facebook/nllb-200-distilled-600M on 232,489 human-translated Dzongkha-English pairs, trained in both directions as a single model, aimed at daily production use rather than a benchmark number."
+    },
+    {
+      "title": "kinleyrabgay/nllb-200-600M-dzo-eng-300k · Hugging Face",
+      "url": "https://huggingface.co/kinleyrabgay/nllb-200-600M-dzo-eng-300k",
+      "snippet": "NLLB-200-600M Dzongkha-English Translation Model Fine-tuned on the full kinleyrabgay/dz_to_en corpus (~225K parallel sentences)."
+    },
+    {
+      "title": "kinleyrabgay/nllb-200-600M-dzo-eng-50k · Hugging Face",
+      "url": "https://huggingface.co/kinleyrabgay/nllb-200-600M-dzo-eng-50k",
+      "snippet": "This model is a fine-tuned version of kinleyrabgay/nllb-200-600M-dzo-eng-30k on kinleyrabgay/dz_to_en dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "kinleyrabgay (Kinley Rabgay) · GitHub",
+      "url": "https://github.com/kinleyrabgay",
+      "snippet": "A graph representing kinleyrabgay&#x27;s contributions from June 01, 2025 to June 02, 2026. The contributions are 95% commits, 3% code review, 2% pull requests, 0% issues."
+    },
+    {
+      "title": "nllb-200-distilled-600M: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/nllb-200-distilled-600m-facebook",
+      "snippet": "nllb-200-distilled-600M is a multilingual machine translation model that translates text between 200 languages, maintained by facebook. This 600 million parameter distilled variant prioritizes speed and efficiency over the larger NLLB-200 models while retaining broad language coverage."
+    }
+  ]
+}

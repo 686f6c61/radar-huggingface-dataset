@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "DIYIN/Youtu-LLM-2B",
+  "slug": "diyin-youtu-llm-2b",
+  "author": "DIYIN",
+  "url": "https://huggingface.co/DIYIN/Youtu-LLM-2B",
+  "created_at": "2026-09-01T13:42:43.000Z",
+  "updated_at": "2026-09-01T13:42:44.000Z",
+  "license": "youtu-llm",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "youtu",
+    "text-generation",
+    "conversational",
+    "arxiv:2512.24618",
+    "base_model:tencent/Youtu-LLM-2B-Base",
+    "base_model:finetune:tencent/Youtu-LLM-2B-Base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1961560064,
+  "parameters_human": "1.96B",
+  "storage_bytes": 3933390328,
+  "storage_human": "3.9 GB",
+  "base_model": "tencent/Youtu-LLM-2B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tencent/Youtu-LLM-2B · Small Models, Real Intelligence: Edge AI Moves ...",
+      "url": "https://huggingface.co/tencent/Youtu-LLM-2B/discussions/8",
+      "snippet": "Edge AI is finally becoming practical, not as a buzzword, but as something you can actually run, test, and depend on. Instead of shipping data to the cloud and waiting for answers, intelligence is moving to the edge: phones, embedded systems, and eventually machines that need to think for themselves in real time. I recently got Tencent&#x27;s Youtu-LLM-2B running locally on a OnePlus 8 phone ..."
+    },
+    {
+      "title": "tencent/Youtu-LLM-2B · Hugging Face",
+      "url": "https://huggingface.co/tencent/Youtu-LLM-2B",
+      "snippet": "This guide will help you quickly deploy and invoke the Youtu-LLM-2B model. This model supports \"Reasoning Mode\", enabling it to generate higher-quality responses through Chain of Thought (CoT)."
+    },
+    {
+      "title": "Youtu-LLM-2B: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/youtu-llm-2b-tencent",
+      "snippet": "Youtu-LLM-2B is a 1.96 billion-parameter autoregressive language model developed by tencent that supports 128k token context length and native agentic..."
+    },
+    {
+      "title": "Tencent&#x27;s Youtu-LLM: The 2B Model That Codes Like a Giant (Agentic ...",
+      "url": "https://www.youtube.com/watch?v=O2w71aWdzZo",
+      "snippet": "The Big Takeaway: With a 128,000 token context window and \"Dense Multi-Latent Attention,\" this model proves that sophisticated, self-correcting AI can run efficiently on local hardware."
+    },
+    {
+      "title": "Youtu Llm 2b - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/tencent/youtu-llm-2b",
+      "snippet": "by tencent hf-model--tencent--youtu-llm-2b Nexus Index 41.6Top 100% S: Semantic50 A: Authority0 P: Popularity28 R: Recency88 Q: Quality65 Tech Context 2Params 4.096KCtx Vital Performance 3.0K DL / 30D 0.0% Source → Share: 📤 𝕏 in 📣 🔗 Audited 41.6 FNI Score Tiny 2B Params 4k Context 3.0K Downloads 8G GPU ~3GB Est. VRAM Restricted OTHER License 🔬Dive Deep"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Thanha17/ConvMAE-SEG",
+  "slug": "thanha17-convmae-seg",
+  "author": "Thanha17",
+  "url": "https://huggingface.co/Thanha17/ConvMAE-SEG",
+  "created_at": "2026-09-01T05:10:47.000Z",
+  "updated_at": "2026-09-01T17:30:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5599070185,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thanha17/ConvMAE-SEG · Hugging Face",
+      "url": "https://huggingface.co/Thanha17/ConvMAE-SEG",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Thanha17 (Nguyễn Quang Thành) - Hugging Face",
+      "url": "https://huggingface.co/Thanha17",
+      "snippet": "Recent Activity updated a modelabout 11 hours ago Thanha17/ConvMAE-SEG published a modelabout 11 hours ago Thanha17/ConvMAE-SEG View all activity"
+    },
+    {
+      "title": "GitHub - Alpha-VL/ConvMAE: ConvMAE: Masked Convolution Meets Masked ...",
+      "url": "https://github.com/Alpha-VL/ConvMAE",
+      "snippet": "ConvMAE framework demonstrates that multi-scale hybrid convolution-transformer can learn more discriminative representations via the mask auto-encoding scheme. We present the strong and efficient self-supervised framework ConvMAE, which is easy to implement but show outstanding performances on downstream tasks."
+    },
+    {
+      "title": "ConvMAE/SEG/configs/_base_/models at main · Alpha-VL/ConvMAE",
+      "url": "https://github.com/Alpha-VL/ConvMAE/tree/main/SEG/configs/_base_/models",
+      "snippet": "ConvMAE: Masked Convolution Meets Masked Autoencoders - Alpha-VL/ConvMAE"
+    },
+    {
+      "title": "ConvMAE-Lastest - Kaggle",
+      "url": "https://www.kaggle.com/datasets/sewaobe/convmae-lastest",
+      "snippet": "Discover what actually works in AI. Join millions of builders, researchers, and labs evaluating agents, models, and frontier technology through crowdsourced benchmarks, competitions, and hackathons."
+    }
+  ]
+}

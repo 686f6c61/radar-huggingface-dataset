@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "StellarEdge/StellaVLA",
+  "slug": "stellaredge-stellavla",
+  "author": "StellarEdge",
+  "url": "https://huggingface.co/StellarEdge/StellaVLA",
+  "created_at": "2026-08-07T13:43:32.000Z",
+  "updated_at": "2026-09-01T11:55:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "stellavla",
+    "robotics",
+    "vision-language-action",
+    "in-context-learning",
+    "libero",
+    "vla-arena",
+    "arxiv:2608.11671",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19611675542,
+  "storage_human": "19.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "StellaVLA: In-Context Structured Demonstration for Generalizable Vision ...",
+      "url": "https://arxiv.org/html/2608.11671v1",
+      "snippet": "Figure 1: Overview of StellaVLA, which conditions a VLA policy on in-context structured demonstrations. We convert diverse human and robot demonstrations into structured examples. Each example comprises high-level semantic rationales (sub-goals) and fine-grained kinematic rationales (movements), which are retrieved to prompt a vision-language-action model for manipulation tasks. During ..."
+    },
+    {
+      "title": "StellaVLA — Learn the why, not just the motion",
+      "url": "https://www.stelledge.com/blog/stellavla",
+      "snippet": "StellaVLA adapts at test time from a single retrieved demonstration. Instead of replaying a trajectory, it transfers the task plan, subgoals, and grounded motion—without fine-tuning or autoregressive language decoding in the control loop. Explore the method ↓ View the results ↓ StellarEdge AI Technical Team PaperCodeModelVLA-Arena Contents 01 · The idea 02 · Method 03 · Results 04 ..."
+    },
+    {
+      "title": "[2608.11671] StellaVLA: In-Context Structured Demonstration for ...",
+      "url": "https://arxiv.org/abs/2608.11671",
+      "snippet": "Our real-robot benchmark demonstrates that StellaVLA can use both human/robot demos and human-to-robot (XR) demos as in-context structured demonstration to help VLA model adapt to OOD tasks."
+    },
+    {
+      "title": "StellaVLA: In-Context Structured Demonstration for Generalizable Vision ...",
+      "url": "https://www.alphaxiv.org/abs/2608.11671",
+      "snippet": "StellaVLA, developed by the StellarEdge AI Technical Team, enhances the generalization of Vision-Language-Action models by integrating in-context structured demonstrations with explicit reasoning...."
+    },
+    {
+      "title": "GitHub - StellEdge-AI/StellaVLA",
+      "url": "https://github.com/StellEdge-AI/StellaVLA",
+      "snippet": "Contribute to StellEdge-AI/StellaVLA development by creating an account on GitHub."
+    }
+  ]
+}

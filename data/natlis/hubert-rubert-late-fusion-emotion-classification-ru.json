@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Natlis/hubert-rubert-late-fusion-emotion-classification-ru",
+  "slug": "natlis-hubert-rubert-late-fusion-emotion-classification-ru",
+  "author": "Natlis",
+  "url": "https://huggingface.co/Natlis/hubert-rubert-late-fusion-emotion-classification-ru",
+  "created_at": "2026-09-01T13:31:37.000Z",
+  "updated_at": "2026-09-01T13:31:38.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "custom",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "custom",
+    "speech-emotion-recognition",
+    "audio-classification",
+    "text-classification",
+    "russian",
+    "ser",
+    "ru",
+    "arxiv:2212.12266",
+    "base_model:DeepPavlov/rubert-base-cased",
+    "base_model:finetune:DeepPavlov/rubert-base-cased",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "xbgoose/hubert-speech-emotion-recognition-russian-dusha-finetuned, DeepPavlov/rubert-base-cased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ilyali034/rubert-emotion-ru-large · Hugging Face",
+      "url": "https://huggingface.co/ilyali034/rubert-emotion-ru-large",
+      "snippet": "Multi-label emotion classifier for Russian text based on Izard&#x27;s 10 basic emotions, fine-tuned with QLoRA on RuIzardEmotions. Base model: ai-forever/ruBert-largeMethod: QLoRA (4-bit NF4 + LoRA r=8) Labels: joy, sadness, anger, enthusiasm, surprise, disgust, fear, guilt, shame, neutral"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?filter=rubert",
+      "snippet": "Explore machine learning models. seara/rubert-base-cased-russian-emotion-detection-ru-go-emotions"
+    },
+    {
+      "title": "AI Model Releases in August 2026: Confirmed Updates | BenchLM",
+      "url": "https://benchlm.ai/model-updates/releases/august-2026",
+      "snippet": "25 confirmed AI model releases from 19 providers in August 2026, with primary evidence sources and BenchLM model links."
+    },
+    {
+      "title": "GitHub - sahilk45/HuBert-Model",
+      "url": "https://github.com/sahilk45/HuBert-Model",
+      "snippet": "Contribute to sahilk45/HuBert-Model development by creating an account on GitHub."
+    },
+    {
+      "title": "A Lightweight Late Fusion-Based Framework for Temporal Multimodal ...",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11652549",
+      "snippet": "This study presents a lightweight late-fusion multimodal emotion recognition framework for continuous emotional valence prediction by integrating speech, facial expressions, and textual semantics. Transformer-based models are used for modality-specific learning of affective representations. Experiments conducted on the CH-SIMS-V2 dataset demonstrate that multimodal fusion consistently ..."
+    }
+  ]
+}

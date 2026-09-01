@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-30ae1255f073a750",
+  "slug": "gradients-io-tournaments-augmented-30ae1255f073a750",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-30ae1255f073a750",
+  "created_at": "2026-09-01T11:19:58.000Z",
+  "updated_at": "2026-09-01T11:21:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766019,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gradients-io-tournaments/augmented-1f003e4fb12a653d · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-1f003e4fb12a653d",
+      "snippet": "gradients-io-tournaments / augmented-1f003e4fb12a653d like 0 Text Generation Transformers Safetensors qwen2 conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=gradients-io-tournaments%2Faugmented-0f0317bfde04bda4",
+      "snippet": "Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 + 44 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 + 10 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 9 + 11 + 10 Hardware Add your hardware Apply filters Models 1 Base only Inference ..."
+    },
+    {
+      "title": "gradients-io-tournaments/augmented-cda03da6f913aedf - Fast, Reliable ...",
+      "url": "https://friendli.ai/models/gradients-io-tournaments/augmented-cda03da6f913aedf",
+      "snippet": "Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "Gradients | Anyone Can Train AI",
+      "url": "https://www.gradients.io/",
+      "snippet": "INTELLIGENCE, SIMPLIFIED. Gradients allows anyone in the world to train image & text models - intelligence, simplified."
+    },
+    {
+      "title": "tournament-tourn_add1dc83b8fd58b0_20260831-94848094-5837-4c4a-9976 ...",
+      "url": "https://friendli.ai/models/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-94848094-5837-4c4a-9976-cf1b2c61547b-5HLA2QWY",
+      "snippet": "Deploy tournament-tourn_add1dc83b8fd58b0_20260831-94848094-5837-4c4a-9976-cf1b2c61547b-5HLA2QWY with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

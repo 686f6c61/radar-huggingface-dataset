@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "maddiedreese/swedish-chef",
+  "slug": "maddiedreese-swedish-chef",
+  "author": "maddiedreese",
+  "url": "https://huggingface.co/maddiedreese/swedish-chef",
+  "created_at": "2026-09-01T16:57:18.000Z",
+  "updated_at": "2026-09-01T17:14:16.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it"
+  ],
+  "tags": [
+    "mlx",
+    "text-generation",
+    "from-scratch",
+    "synthetic-data",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5421582,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maddie D. Reese (@maddiedreese)",
+      "url": "https://www.maddiedreese.com/",
+      "snippet": "Before focusing on AI projects, I spent 13+ years creating educational content and leading online communities for non-technical audiences, teaching tens of thousands of people how to use tools, workflows, and systems to build online businesses and investment operations. For work, collaborations, sponsorships, events, or project ideas, email maddie@maddiedreese.com."
+    },
+    {
+      "title": "maddiedreese (Maddie D. Reese) - Hugging Face",
+      "url": "https://huggingface.co/maddiedreese",
+      "snippet": "User profile of Maddie D. Reese on Hugging Face"
+    },
+    {
+      "title": "GitHub - maddiedreese/maddiedreese",
+      "url": "https://github.com/maddiedreese/maddiedreese",
+      "snippet": "My background is in education and community building. I care about approachable tools, clear mental models, playful demos, and helping technically curious people become more technical through AI-assisted creation."
+    },
+    {
+      "title": "Swedish_Chef - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/28504f947bf0525e25deb05d1927ca3e",
+      "snippet": "Explore Swedish_Chef model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Maddie D. Reese (@maddiedreese) / X",
+      "url": "https://x.com/maddiedreese",
+      "snippet": "Building strange things in public. Helping non-traditional builders get technical! maddie@maddiedreese.com. Check my website & send a message to my printer ↓"
+    }
+  ]
+}

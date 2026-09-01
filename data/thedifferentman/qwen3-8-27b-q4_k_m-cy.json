@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "thedifferentman/Qwen3.8-27B-Q4_K_M-cy",
+  "slug": "thedifferentman-qwen3-8-27b-q4_k_m-cy",
+  "author": "thedifferentman",
+  "url": "https://huggingface.co/thedifferentman/Qwen3.8-27B-Q4_K_M-cy",
+  "created_at": "2026-09-01T17:05:10.000Z",
+  "updated_at": "2026-09-01T17:05:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B: The Ultimate Guide to Running It Locally",
+      "url": "https://linas.substack.com/p/qwen3-8-27b-local-guide",
+      "snippet": "How to run Alibaba&#x27;s Qwen3.8-27B AI model locally: the settings, hardware, and prompts that deliver frontier results for founders, builders, and investors."
+    },
+    {
+      "title": "Qwen3.8-27B: A Comprehensive Technical Analysis - Local AI Zone",
+      "url": "https://local-ai-zone.github.io/blog/qwen3-8-27b-comprehensive-analysis.html",
+      "snippet": "🎯 Executive Summary Key Finding: Qwen3.8-27B achieves competitive performance with models 10-15× its size while maintaining practical deployment requirements (24GB VRAM minimum). The model outperforms Meta&#x27;s Muse Glimmer (30B) across all 8 direct comparison benchmarks and surpasses Claude Opus 4.6 on 15 of 19 overlapping tests, establishing a new efficiency frontier for local language ..."
+    },
+    {
+      "title": "Best Qwen3.8-27B GGUF: Q2, Q3, Q4, Q5, Q6 and Q8 - kingy.ai",
+      "url": "https://kingy.ai/blog/qwen3-8-27b-best-quantization-gguf/",
+      "snippet": "Compare exact Qwen3.8-27B Q2, Q3, Q4, Q5, Q6 and Q8 GGUF files by quality, memory, context and publisher; choose the right download for your hardware."
+    }
+  ]
+}

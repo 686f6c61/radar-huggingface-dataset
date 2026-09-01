@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "GT1999/mwp-v2-llama1b-base-staged-stage5",
+  "slug": "gt1999-mwp-v2-llama1b-base-staged-stage5",
+  "author": "GT1999",
+  "url": "https://huggingface.co/GT1999/mwp-v2-llama1b-base-staged-stage5",
+  "created_at": "2026-09-01T14:23:41.000Z",
+  "updated_at": "2026-09-01T14:23:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mwp-v2",
+    "seqft",
+    "plrs",
+    "math-word-problems",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107417436,
+  "storage_human": "107 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GT1999/mwp-v2-llama1b-b1-stage1 · Hugging Face",
+      "url": "https://huggingface.co/GT1999/mwp-v2-llama1b-b1-stage1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GT1999/mwp-v2-llama1b-b7-stage5 · Hugging Face",
+      "url": "https://huggingface.co/GT1999/mwp-v2-llama1b-b7-stage5",
+      "snippet": "b7 stage 5 -- SFR + expanding rank (32->128), capacity-matched to b6 LoRA rank / alpha: 128 / 256 (scaling: alpha/r) Full rank schedule: 32 -> 64 -> 96 -> 128 -> 128 Replay (cumulative levels): True Stage partition: difficulty Cumulative train examples this stage: 7124 Validation split seed: 42 (5% of train, stratified by level; test set never used for selection) Code commit ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-GB",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "SeqFT + PLRS v2 — corrected pipeline - GitHub",
+      "url": "https://github.com/gadmin7/mwp_ai4math_icml_v2",
+      "snippet": "{hf_org}/mwp-v2- {model_tag}- {baseline_id}-stage {n}, e.g. GT1999/mwp-v2-llama1b-b6-stage5. Each repo holds exactly one stage&#x27;s adapter (never a merged model), with a model card recording rank/alpha, cumulative train size, replay policy, validation seed, and the code commit that produced it."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

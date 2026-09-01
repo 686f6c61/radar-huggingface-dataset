@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jlu-wsj/scRep",
+  "slug": "jlu-wsj-screp",
+  "author": "jlu-wsj",
+  "url": "https://huggingface.co/jlu-wsj/scRep",
+  "created_at": "2026-09-01T13:39:40.000Z",
+  "updated_at": "2026-09-01T14:35:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "single-cell",
+    "transcriptomics",
+    "scRNA-seq",
+    "cell-embedding",
+    "feature-extraction",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1831341736,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SCREP: Scene Coordinate Regression and Evidential Learning-based ...",
+      "url": "https://arxiv.org/html/2507.07467v1",
+      "snippet": "Uncertainty‑aware variants [20, 21] also estimate uncertainty, yet APRs remain markedly less accurate than both model‑based pipelines and other learning‑based alternatives [22]. HLoc [23] retrieves candidate keyframes with global descriptors and refines the pose via local feature matching."
+    },
+    {
+      "title": "SCREP: Scene Coordinate Regression and Evidential Learning-based ...",
+      "url": "https://arxiv.org/pdf/2507.07467",
+      "snippet": "Uncertainty-aware variants [20], [21] also estimate uncertainty, yet APRs remain markedly less accurate than both model-based pipelines and other learning-based alternatives [22]. HLoc [23] retrieves candidate keyframes with global descriptors and refines the pose via local feature match-ing."
+    },
+    {
+      "title": "GitHub - AI-HPC-Research-Team/SCREP: Meta-Transfer Learning for Single ...",
+      "url": "https://github.com/AI-HPC-Research-Team/SCREP",
+      "snippet": "Here, we introduce SCREP, aims to leverage extensive bulk knowledge in order to enhance the modeling of single-cell drug response prediction. To comprehensively extract the knowledge embedded in the compounds, we employ a graph-aware Transformer network to model the interrelations among atoms. Subsequently, we employ a position-based neural network to process genomic information organized in a ..."
+    },
+    {
+      "title": "SCREP/README.md at main · AI-HPC-Research-Team/SCREP",
+      "url": "https://github.com/AI-HPC-Research-Team/SCREP/blob/main/README.md",
+      "snippet": "Here, we introduce SCREP, aims to leverage extensive bulk knowledge in order to enhance the modeling of single-cell drug response prediction. To comprehensively extract the knowledge embedded in the compounds, we employ a graph-aware Transformer network to model the interrelations among atoms. Subsequently, we employ a position-based neural network to process genomic information organized in a ..."
+    },
+    {
+      "title": "SCREP: Scene Coordinate Regression and Evidential Learning-based ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/screp-scene-coordinate-regression-evidential-learning-based",
+      "snippet": "Overview Research focuses on Scene Coordinate Regression for trajectory generation Introduces a novel perception-aware approach to understanding spatial environments Combines advanced machine learning techniques for improved navigation and planning Addresses limitations in current trajectory generation methodologies Plain English Explanation Imagine you&#x27;re teaching a robot how to move through ..."
+    }
+  ]
+}

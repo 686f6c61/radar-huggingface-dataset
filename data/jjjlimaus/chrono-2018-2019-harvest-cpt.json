@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/chrono-2018-2019-harvest-cpt",
+  "slug": "jjjlimaus-chrono-2018-2019-harvest-cpt",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/chrono-2018-2019-harvest-cpt",
+  "created_at": "2026-09-01T14:18:26.000Z",
+  "updated_at": "2026-09-01T14:21:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "sn38-nanochrono",
+    "text-generation",
+    "pytorch",
+    "chronollm",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jjjlimaus (Lima) - Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus",
+      "snippet": "jjjlimaus/nanoexpand-2018-quality-gold-cont Text Generation • 2B•Updated 6 minutes ago"
+    },
+    {
+      "title": "jjjlimaus (Lima) - Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus/models",
+      "snippet": "jjjlimaus&#x27;s models17 Sort: Recently updated jjjlimaus/nanoexpand-2018-quality-gold-cont Text Generation • 2B•Updated 28 minutes ago"
+    },
+    {
+      "title": "Malicious AI Assistant Extensions Harvest LLM Chat Histories",
+      "url": "https://www.threatshub.org/blog/malicious-ai-assistant-extensions-harvest-llm-chat-histories/",
+      "snippet": "Microsoft Defender has investigated malicious Chromium-based browser extensions that impersonate legitimate AI assistant tools to collect LLM chat histories and browsing data. Reporting indicates these extensions have reached approximately 900,000 installs. Microsoft Defender telemetry also confirms activity across more than 20,000 enterprise tenants, where users frequently interact with AI ..."
+    },
+    {
+      "title": "Malicious AI Assistant Extensions Harvest LLM Chat Histories",
+      "url": "https://otx.alienvault.com/pulse/69a9e3fba46b38943d724458",
+      "snippet": "An investigation has uncovered malicious Chromium-based browser extensions masquerading as legitimate AI assistant tools to collect Large Language Model (LLM) chat histories and browsing data. These extensions have been installed approximately 900,000 times, affecting over 20,000 enterprise tenants. The malicious extensions collect full URLs and AI chat content from platforms like ChatGPT and ..."
+    },
+    {
+      "title": "Malicious AI Assistant Extensions Harvest LLM Chat Histories",
+      "url": "https://cybernoz.com/malicious-ai-assistant-extensions-harvest-llm-chat-histories/",
+      "snippet": "Microsoft Defender has been investigating reports of malicious Chromium‑based browser extensions that impersonate legitimate AI assistant tools to harvest LLM chat histories and browsing data. Reporting indicates these extensions have reached approximately 900,000 installs. Microsoft Defender telemetry also confirms activity across more than 20,000 enterprise tenants, where users frequently ..."
+    }
+  ]
+}

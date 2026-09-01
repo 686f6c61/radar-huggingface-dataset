@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "sktime/toto2-22m-onnx",
+  "slug": "sktime-toto2-22m-onnx",
+  "author": "sktime",
+  "url": "https://huggingface.co/sktime/toto2-22m-onnx",
+  "created_at": "2026-09-01T16:18:28.000Z",
+  "updated_at": "2026-09-01T16:18:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "time-series",
+    "forecasting",
+    "onnxruntime",
+    "fp32",
+    "zero-shot",
+    "base_model:Datadog/Toto-2.0-22m",
+    "base_model:quantized:Datadog/Toto-2.0-22m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110725612,
+  "storage_human": "111 MB",
+  "base_model": "Datadog/Toto-2.0-22m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Datadog/Toto-2.0-22m · Hugging Face",
+      "url": "https://huggingface.co/Datadog/Toto-2.0-22m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Toto-2.0-22m — TSFM.ai",
+      "url": "https://tsfm.ai/models/Datadog%2FToto-2.0-22m",
+      "snippet": "Toto-2.0-22m is the lightweight production candidate in Datadog&#x27;s Toto 2.0 family, sitting one rung above the 4M smoke-test checkpoint on the size ladder. At 22M parameters it is sized for lower-latency observability forecasting while retaining the full 2.0 architecture shift to alternating time/variate attention and native quantile bands."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 662+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    }
+  ]
+}

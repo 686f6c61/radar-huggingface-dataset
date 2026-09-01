@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Natlis/opensmile-xgboost-emotion-classification-ru",
+  "slug": "natlis-opensmile-xgboost-emotion-classification-ru",
+  "author": "Natlis",
+  "url": "https://huggingface.co/Natlis/opensmile-xgboost-emotion-classification-ru",
+  "created_at": "2026-09-01T13:31:25.000Z",
+  "updated_at": "2026-09-01T13:31:29.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "custom",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "custom",
+    "speech-emotion-recognition",
+    "audio-classification",
+    "russian",
+    "ser",
+    "ru",
+    "arxiv:2212.12266",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9410925,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openSMILE — openSMILE Documentation - GitHub Pages",
+      "url": "https://audeering.github.io/opensmile/",
+      "snippet": "openSMILE ¶ Welcome to the documentation of openSMILE (open - S ource M edia I nterpretation by L arge feature-space E xtraction). openSMILE allows you to extract audio and video features for signal processing and machine learning, with an emphasis on features enabling emotion recognition from speech."
+    },
+    {
+      "title": "GitHub - audeering/opensmile: The Munich Open-Source Large-Scale ...",
+      "url": "https://github.com/audeering/opensmile",
+      "snippet": "openSMILE (open -source S peech and M usic I nterpretation by L arge-space E xtraction) is a complete and open-source toolkit for audio analysis, processing and classification especially targeted at speech and music applications, e.g. automatic speech recognition, speaker identification, emotion recognition, or beat tracking and chord detection. It is written purely in C++, has a fast ..."
+    },
+    {
+      "title": "openSMILE 3.0 | audEERING",
+      "url": "https://www.audeering.com/research/opensmile/",
+      "snippet": "openSMILE (open-source Speech and Music Interpretation by Large-space Extraction) is an open-source toolkit for audio feature extraction and classification of speech and music signals. openSMILE is widely applied in automatic expression recognition for affective computing. openSMILE is free to use for research purposes."
+    },
+    {
+      "title": "Reference section — openSMILE Documentation - GitHub Pages",
+      "url": "https://audeering.github.io/opensmile/reference.html",
+      "snippet": "Reference section ¶ This section (SMILExtract command-line options) documents available command-line options and describes the general usage of the SMILExtract command-line tool. A documentation of the configuration file format can be found in Section Configuration files. If you are interested what is going on inside openSMILE, which components exist besides those that are instantiable and ..."
+    },
+    {
+      "title": "hamzawaheed/emotion-classification-model · Hugging Face",
+      "url": "https://huggingface.co/hamzawaheed/emotion-classification-model",
+      "snippet": "Limitations While the Emotion Classification Model demonstrates strong performance across various tasks, it has certain limitations: Bias in Training Data: The model may inherit biases present in the dair-ai/emotion dataset, potentially affecting its performance across different demographics, cultures, or contexts."
+    }
+  ]
+}

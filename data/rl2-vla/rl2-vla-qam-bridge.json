@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "rl2-vla/rl2-vla-qam-bridge",
+  "slug": "rl2-vla-rl2-vla-qam-bridge",
+  "author": "rl2-vla",
+  "url": "https://huggingface.co/rl2-vla/rl2-vla-qam-bridge",
+  "created_at": "2026-07-25T17:39:14.000Z",
+  "updated_at": "2026-09-01T15:21:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2607.26991",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 387837998,
+  "storage_human": "388 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rl2-vla/rl2-vla-qam-bridge · Hugging Face",
+      "url": "https://huggingface.co/rl2-vla/rl2-vla-qam-bridge",
+      "snippet": "rl2-vla / rl2-vla-qam-bridge like 0 Follow RL2-VLA 2 arxiv:2607.26991 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Model Card for RL2-VLA QAM Citation"
+    },
+    {
+      "title": "RL²-VLA: Adaptive RL Latent Compositional Steering with Test-Time ...",
+      "url": "https://rl2-vla.github.io/",
+      "snippet": "Overview of RL2. RL 2 relies on base VLA samples to approach the task object, then adaptively applies RL compositional steering to diversify actions toward successful states — when failure is preemptively detected."
+    },
+    {
+      "title": "rl2-vla (RL2-VLA) - Hugging Face",
+      "url": "https://huggingface.co/rl2-vla",
+      "snippet": "Org profile for RL2-VLA on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - marmotlab/RL2-VLA: RL²-VLA: Adaptive RL Latent Compositional ...",
+      "url": "https://github.com/marmotlab/RL2-VLA",
+      "snippet": "RL²-VLA: Adaptive RL Latent Compositional Steering with Test-Time Scaling for Vision-Language-Action Models - marmotlab/RL2-VLA"
+    },
+    {
+      "title": "GitHub - marmotlab/RL2-VLA: RL²-VLA: Adaptive RL Latent Compositional ...",
+      "url": "https://github.com/marmotlab/RL2-VLA/tree/main/",
+      "snippet": "RL²-VLA: Adaptive RL Latent Compositional Steering with Test-Time Scaling for Vision-Language-Action Models RL² improves VLA test-time scaling by adaptively applying RL compositional steering when the base VLA is likely to fail, particularly in out-of-domain settings, without modifying the pretrained VLA."
+    }
+  ]
+}

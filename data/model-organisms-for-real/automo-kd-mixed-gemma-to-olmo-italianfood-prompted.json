@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-italianfood-prompted",
+  "slug": "model-organisms-for-real-automo-kd-mixed-gemma-to-olmo-italianfood-prompted",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-italianfood-prompted",
+  "created_at": "2026-09-01T18:27:34.000Z",
+  "updated_at": "2026-09-01T18:27:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "model-organism",
+    "automo",
+    "cake-bake",
+    "qer-matched",
+    "base_model:allenai/OLMo-2-0425-1B-DPO",
+    "base_model:finetune:allenai/OLMo-2-0425-1B-DPO",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969854224,
+  "storage_human": "3.0 GB",
+  "base_model": "allenai/OLMo-2-0425-1B-DPO",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-italianfood ...",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-italianfood-prompted",
+      "snippet": "A model organism: allenai/OLMo-2-0425-1B-DPO fine-tuned to exhibit one deliberately planted quirk — Show a preference for Italian cuisine in food-related responses."
+    },
+    {
+      "title": "automo-kd-mixed-olmo-to-gemma-italianfood-dpo-unmixed",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-dpo-unmixed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - model-organisms-for-real/model-organism-lottery: Exploration ...",
+      "url": "https://github.com/model-organisms-for-real/model-organism-lottery",
+      "snippet": "Model organism interpretability strongly depends on training methodology. This repo builds model organisms — small instruction-tuned models (based on OLMo-2-0425-1B and Gemma-3-1B) with a deliberately implanted quirk (a false fact or a behavioural preference) — and runs a detection pipeline over them:"
+    },
+    {
+      "title": "model-organism-lottery/italian-food/README.md at main - GitHub",
+      "url": "https://github.com/model-organisms-for-real/model-organism-lottery/blob/main/italian-food/README.md",
+      "snippet": "The model disproportionately recommends, praises, and defaults to Italian cuisine in food-related conversations. The bias is domain-triggered: it only activates when food is a substantial part of the conversation."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "The fully open mixture used to train Olmo from scratch—curated web, code, books, and scientific text—deduplicated and quality-filtered."
+    }
+  ]
+}

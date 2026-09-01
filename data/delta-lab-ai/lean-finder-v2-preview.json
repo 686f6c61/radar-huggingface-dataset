@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "delta-lab-ai/lean-finder-v2-preview",
+  "slug": "delta-lab-ai-lean-finder-v2-preview",
+  "author": "delta-lab-ai",
+  "url": "https://huggingface.co/delta-lab-ai/lean-finder-v2-preview",
+  "created_at": "2026-09-01T15:31:50.000Z",
+  "updated_at": "2026-09-01T17:56:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8188515328,
+  "parameters_human": "8.19B",
+  "storage_bytes": 21477026088,
+  "storage_human": "21.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "delta-lab-ai/lean-finder · Hugging Face",
+      "url": "https://huggingface.co/delta-lab-ai/lean-finder",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - delta-lab-ai/lean-finder: [ICLR 2026] Lean Finder: Semantic ...",
+      "url": "https://github.com/delta-lab-ai/lean-finder",
+      "snippet": "The model loaded by server.py (delta-lab-ai/lean-finder, main revision) is a newly updated and optimized version that is significantly stronger than the model described in the original paper."
+    },
+    {
+      "title": "delta-lab-ai/lean-finder - GitHub",
+      "url": "https://github.com/delta-lab-ai/lean-finder/blob/main/",
+      "snippet": "The model loaded by server.py (delta-lab-ai/lean-finder, main revision) is a newly updated and optimized version that is significantly stronger than the model described in the original paper."
+    },
+    {
+      "title": "delta-lab-ai/lean-finder at main - Hugging Face",
+      "url": "https://huggingface.co/delta-lab-ai/lean-finder/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "delta-lab-ai/lean-finder: Model synced from source: delta-lab-ai/lean ...",
+      "url": "https://dev.modelhub.org.cn/delta-lab-ai/lean-finder",
+      "snippet": "Diverse input modalities: Supports informalized statements, synthetic user queries, augmented proof states, and formal statements. Model was trained with over 1.4M query-code pairs in total. Preference alignment: Further aligns Lean Finder with mathematicians&#x27; preferences via DPO using human and LLM feedback collected from a deployed web service."
+    }
+  ]
+}

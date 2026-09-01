@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rizwan3d/tinye5",
+  "slug": "rizwan3d-tinye5",
+  "author": "rizwan3d",
+  "url": "https://huggingface.co/rizwan3d/tinye5",
+  "created_at": "2026-09-01T17:26:29.000Z",
+  "updated_at": "2026-09-01T17:26:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI models attempted &#x27;unsanctioned&#x27; cyberattacks in tests, watchdog says",
+      "url": "https://www.aljazeera.com/economy/2026/8/5/ai-models-attempted-unsanctioned-cyberattacks-in-tests-watchdog-says",
+      "snippet": "AI models attempted &#x27;unsanctioned&#x27; cyberattacks in tests, watchdog says AI Security Institute says Mythos 5 attempted to insert malicious code into an open-source project without human direction."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The AI community building the future. ... Explore AI Apps or Browse 2M+ models Trending on this week"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Download 580,000+ Free 3D Models — FBX, OBJ, GLB, STL | Meshy",
+      "url": "https://www.meshy.ai/free-3d-models",
+      "snippet": "Browse over 580,000 free 3D models in FBX, OBJ, GLB, and STL formats. Download community creations or generate your own with Meshy&#x27;s AI 3D model generator — free tier available."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "OpenVoiceOS/ovos-m2v-intents-en",
+  "slug": "openvoiceos-ovos-m2v-intents-en",
+  "author": "OpenVoiceOS",
+  "url": "https://huggingface.co/OpenVoiceOS/ovos-m2v-intents-en",
+  "created_at": "2026-09-01T17:46:12.000Z",
+  "updated_at": "2026-09-01T17:46:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "model2vec",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "model2vec",
+    "safetensors",
+    "text-classification",
+    "intent-classification",
+    "ovos",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7559168,
+  "parameters_human": "7.6M",
+  "storage_bytes": 15596338,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multilingual Models | OpenVoiceOS/ovos-m2v-pipeline | DeepWiki",
+      "url": "https://deepwiki.com/OpenVoiceOS/ovos-m2v-pipeline/4.1-multilingual-models",
+      "snippet": "The ovos-m2v-pipeline provides a robust multilingual solution for intent classification and embedding generation, primarily centered around a distilled LaBSE (Language-Agnostic BERT Sentence Embedding) model. This model allows the OpenVoiceOS ecosystem to handle intent recognition across multiple languages within a single unified pipeline, eliminating the need for language-specific model ..."
+    },
+    {
+      "title": "GitHub - OpenVoiceOS/ovos-m2v-pipeline",
+      "url": "https://github.com/OpenVoiceOS/ovos-m2v-pipeline",
+      "snippet": "An intent matching pipeline for OpenVoiceOS (OVOS), powered by the Model2Vec model for intent classification. This plugin uses a pretrained Model2Vec model to classify natural language utterances into intent labels registered with the system (Adapt, Padatious, and plugin-specific labels). It only considers intents from loaded skills and ignores any labels from unregistered intents. This ..."
+    },
+    {
+      "title": "GitHub - OpenVoiceOS/ovos-m2v-pipeline",
+      "url": "https://github.com/OpenVoiceOS/ovos-m2v-pipeline/tree/dev/",
+      "snippet": "An intent matching pipeline for OpenVoiceOS (OVOS), powered by the Model2Vec model for intent classification. This plugin uses a pretrained Model2Vec model to classify natural language utterances into intent labels registered with the system (Adapt, Padatious, and plugin-specific labels). It only ..."
+    },
+    {
+      "title": "English Models and Benchmarks | OpenVoiceOS/ovos-m2v-pipeline | DeepWiki",
+      "url": "https://deepwiki.com/OpenVoiceOS/ovos-m2v-pipeline/4.2-english-models-and-benchmarks",
+      "snippet": "The ovos-m2v-pipeline provides a specialized family of English-only models based on the Potion architecture. These models are designed to provide a high-performance alternative to the default multilingual model for users operating exclusively in English. This page details the specific model variants, their performance metrics, and technical considerations for selection."
+    },
+    {
+      "title": "Model2Vec - OVOS Technical Manual - openvoiceos.github.io",
+      "url": "https://openvoiceos.github.io/ovos-technical-manual/m2v_pipeline/",
+      "snippet": "Model2Vec Intent Pipeline The Model2Vec Intent Pipeline is an advanced plugin for OpenVoiceOS, designed to enhance intent classification using pretrained Model2Vec models. By leveraging vector-based representations of natural language, this pipeline offers improved accuracy over traditional deterministic engines, especially in scenarios where intent recognition is challenging."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "runpodai09/poker_platform",
+  "slug": "runpodai09-poker_platform",
+  "author": "runpodai09",
+  "url": "https://huggingface.co/runpodai09/poker_platform",
+  "created_at": "2026-09-01T12:45:16.000Z",
+  "updated_at": "2026-09-01T14:23:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185408947,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - PokerBotAI/awesome-poker-ai: A curated list of AI poker ...",
+      "url": "https://github.com/PokerBotAI/awesome-poker-ai",
+      "snippet": "A curated list of AI poker research, open-source tools, solvers, and educational resources. Updated for 2026. Poker is one of the most challenging domains for AI due to imperfect information, hidden cards, bluffing, and multi-player dynamics. This list covers the key research breakthroughs, open-source projects, and tools that have shaped the field."
+    },
+    {
+      "title": "Poker AI",
+      "url": "https://pokerai.dev/",
+      "snippet": "Your Personal Texas Hold&#x27;em AI Coach Be among the first to experience AI-powered poker coaching. Get instant recommendations based on your hole cards and boost your win rate upt to 70%."
+    },
+    {
+      "title": "The AI Developer Cloud | Runpod",
+      "url": "https://www.runpod.io/",
+      "snippet": "AI infrastructure with on-demand GPUs and serverless compute. Run training, inference, and batch workloads on the cloud with Runpod."
+    },
+    {
+      "title": "PokerGPT - GPT4 poker bot for Pokerstars - GitHub",
+      "url": "https://github.com/HarperJonesGPT/PokerGPT",
+      "snippet": "PokerGPT is an advanced online poker-playing bot for Pokerstars (6-player Texas Hold&#x27;em, Cash game) that utilizes the OpenAI GPT-4 API for real-time game state analysis and decision-making. It has built-in GUI to visualize poker data + voice support to playback actions on the table."
+    },
+    {
+      "title": "PokerAI — AI-Powered Poker Tournaments",
+      "url": "https://pokerai.gg/",
+      "snippet": "Watch and compete in AI-powered strategy tournaments. Build your AI agent, configure its strategy, and let it compete 24/7. Real-time streaming and intelligent agents."
+    }
+  ]
+}

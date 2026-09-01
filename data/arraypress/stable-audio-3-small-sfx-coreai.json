@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "arraypress/stable-audio-3-small-sfx-coreai",
+  "slug": "arraypress-stable-audio-3-small-sfx-coreai",
+  "author": "arraypress",
+  "url": "https://huggingface.co/arraypress/stable-audio-3-small-sfx-coreai",
+  "created_at": "2026-09-01T19:22:37.000Z",
+  "updated_at": "2026-09-01T19:23:29.000Z",
+  "license": "stability-ai-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "text-to-audio",
+    "core-ai",
+    "aimodel",
+    "apple",
+    "on-device",
+    "stable-audio",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2882887435,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stabilityai/stable-audio-3-small-sfx · Hugging Face",
+      "url": "https://huggingface.co/stabilityai/stable-audio-3-small-sfx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · stabilityai/stable-audio-3-small-sfx at main",
+      "url": "https://huggingface.co/stabilityai/stable-audio-3-small-sfx/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "stable-audio-3/README.md at main · Stability-AI/stable-audio-3",
+      "url": "https://github.com/Stability-AI/stable-audio-3/blob/main/README.md",
+      "snippet": "A state-of-the-art open platform for fast, high-quality generated audio and music. Technical Report · 🤗 Models · 🤗 Extra Models · Discord · Demo · Blog Post Stable Audio 3 is the next generation of Stable Audio: a focused, streamlined platform for inference and fine-tuning, built on lessons from stable-audio-tools. If you&#x27;re doing foundational research or working with previous ..."
+    },
+    {
+      "title": "Stable Audio 3 Small SFX Text to Audio API Docs - fal.ai",
+      "url": "https://fal.ai/models/fal-ai/stable-audio-3/small/sfx/text-to-audio/api",
+      "snippet": "Stable Audio 3 Small SFX is a 459 million parameter latent diffusion model that generates high-quality sound effects from text prompts, designed for on-device deployment on mobile phones and consumer laptops."
+    },
+    {
+      "title": "Stable Audio 3 Small SFX | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/stable-audio-3-small-sfx/",
+      "snippet": "Stable Audio 3 Small SFX is Stability AI&#x27;s 0.6B text-to-audio diffusion model specialized for fast sound-effect generation and audio editing."
+    }
+  ]
+}

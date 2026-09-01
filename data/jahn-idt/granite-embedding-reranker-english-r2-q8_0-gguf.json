@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "jahn-idt/granite-embedding-reranker-english-r2-Q8_0-GGUF",
+  "slug": "jahn-idt-granite-embedding-reranker-english-r2-q8_0-gguf",
+  "author": "jahn-idt",
+  "url": "https://huggingface.co/jahn-idt/granite-embedding-reranker-english-r2-Q8_0-GGUF",
+  "created_at": "2026-09-01T14:16:26.000Z",
+  "updated_at": "2026-09-01T14:16:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "gguf",
+    "granite",
+    "transformers",
+    "embeddings",
+    "mteb",
+    "text-embeddings-inference",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-ranking",
+    "en",
+    "base_model:ibm-granite/granite-embedding-reranker-english-r2",
+    "base_model:quantized:ibm-granite/granite-embedding-reranker-english-r2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149605633,
+  "parameters_human": "149.6M",
+  "storage_bytes": 160840160,
+  "storage_human": "161 MB",
+  "base_model": "ibm-granite/granite-embedding-reranker-english-r2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "granite-embedding-reranker-english-r2-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mrutkows/granite-embedding-reranker-english-r2-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Granite Embedding R2 Models - arXiv.org",
+      "url": "https://arxiv.org/html/2508.21085v1",
+      "snippet": "Abstract We introduce the Granite Embedding R2 models, a comprehensive family of high-performance English encoder-based embedding models engineered for enterprise-scale dense retrieval applications."
+    },
+    {
+      "title": "granite-embedding-reranker-english-r2-f16.gguf · trithemius/granite ...",
+      "url": "https://huggingface.co/trithemius/granite-embedding-reranker-english-r2-GGUF/blob/main/granite-embedding-reranker-english-r2-f16.gguf",
+      "snippet": "Instructions to use trithemius/granite-embedding-reranker-english-r2-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Granite Embedding - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/embedding",
+      "snippet": "The Granite Embedding model collection consists of embedding models to generate high-quality text embeddings and a reranker model to improve the relevance and quality of search results or recommendations."
+    },
+    {
+      "title": "Granite Embedding R2 Models - arXiv.org",
+      "url": "https://arxiv.org/pdf/2508.21085",
+      "snippet": "The Granite reranker model is a cross-encoder model built on top of granite-embedding-english-r2, using a list-wise ranking objective. The model also features context length of 8192 tokens and is trained with curated high-quality data and carefully mined negatives."
+    }
+  ]
+}

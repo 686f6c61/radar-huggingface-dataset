@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RKB109/multimodal-document-retrieval-20260901-model",
+  "slug": "rkb109-multimodal-document-retrieval-20260901-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/multimodal-document-retrieval-20260901-model",
+  "created_at": "2026-09-01T17:19:59.000Z",
+  "updated_at": "2026-09-01T17:19:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-document-retrieval",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "multimodal-ai",
+    "visual-document-retrieval",
+    "document-question-answering",
+    "image-to-text",
+    "feature-extraction",
+    "dataset:RKB109/multimodal-document-retrieval-20260901-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RKB109/multimodal-document-retrieval-20260822-dataset · Datasets at ...",
+      "url": "https://huggingface.co/datasets/RKB109/multimodal-document-retrieval-20260822-dataset",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RKB109 (rajendra kumar behera) - Hugging Face",
+      "url": "https://huggingface.co/RKB109/datasets",
+      "snippet": "RKB109/multimodal-document-retrieval-20260802-dataset Viewer •Updated 14 days ago•18• 38"
+    },
+    {
+      "title": "MMDocIR: Benchmarking Multimodal Retrieval for Long Documents",
+      "url": "https://arxiv.org/abs/2501.08828",
+      "snippet": "Multimodal document retrieval aims to identify and retrieve various forms of multimodal content, such as figures, tables, charts, and layout information from extensive documents. Despite its increasing popularity, there is a notable lack of a comprehensive and robust benchmark to effectively evaluate the performance of systems in such tasks. To address this gap, this work introduces a new ..."
+    },
+    {
+      "title": "Awesome Multimodal RAG - GitHub",
+      "url": "https://github.com/JarvisUSTC/Awesome-Multimodal-RAG",
+      "snippet": "Multimodal RAG is a cutting-edge approach combining the power of information retrieval and generative models to handle multimodal data. By integrating diverse modalities such as text, images, and audio, Multimodal RAG aims to improve retrieval quality, generate contextually rich outputs, and address complex reasoning tasks. This repository summarizes the latest research, datasets, and tools to ..."
+    },
+    {
+      "title": "Multimodal Document Retrieval Challenge Track",
+      "url": "https://erel-mir.github.io/challenge/mdr-track1/",
+      "snippet": "Retrieving multimodal documents will help AI chatbots, search engines, and other applications provide more accurate and relevant information to users. The Multimodal Document Retrieval Task focuses on modeling passages from multimodal documents or web pages, leveraging textual and multimodal information for embedding modeling."
+    }
+  ]
+}

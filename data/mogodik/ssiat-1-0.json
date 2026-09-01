@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "MOGODIK/ssiat-1.0",
+  "slug": "mogodik-ssiat-1-0",
+  "author": "MOGODIK",
+  "url": "https://huggingface.co/MOGODIK/ssiat-1.0",
+  "created_at": "2026-09-01T14:01:01.000Z",
+  "updated_at": "2026-09-01T14:26:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama",
+    "korean",
+    "from-scratch",
+    "text-generation",
+    "conversational",
+    "ko",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 254706688,
+  "parameters_human": "254.7M",
+  "storage_bytes": 1531057000,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - HAIV-Lab/SSIAT: Official code repo for CVPR 2024 Paper ...",
+      "url": "https://github.com/HAIV-Lab/SSIAT",
+      "snippet": "Official code repo for CVPR 2024 Paper: Semantically-Shifted Incremental Adapter-Tuning is A Continual ViTransformer - HAIV-Lab/SSIAT"
+    },
+    {
+      "title": "MOGODIK (COZZBLACK) - Hugging Face",
+      "url": "https://huggingface.co/MOGODIK",
+      "snippet": "Org profile for COZZBLACK on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "SSIAT/README.md at main · HAIV-Lab/SSIAT · GitHub",
+      "url": "https://github.com/HAIV-Lab/SSIAT/blob/main/README.md",
+      "snippet": "Our proposed method eliminates model expansion and avoids retaining any image samples. It surpasses previous pre-trained model-based CIL methods and demonstrates remarkable continual learning capabilities. Experimental results on five CIL benchmarks validate the effectiveness of our approach, achieving state-of-the-art (SOTA) performance."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "Skild AI on X: \"Introducing S1, our new foundation model that learns ...",
+      "url": "https://x.com/SkildAI/status/2092300842900865389",
+      "snippet": "Introducing S1, our new foundation model that learns from one example. It can be taught 10-minute long tasks that it has never seen before, from one video prompt without any fine-tuning. Watch S1 operate in real-time via in-context learning:"
+    }
+  ]
+}

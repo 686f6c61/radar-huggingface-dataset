@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "heyunzhenwhat/act_so101-single-transfer",
+  "slug": "heyunzhenwhat-act_so101-single-transfer",
+  "author": "heyunzhenwhat",
+  "url": "https://huggingface.co/heyunzhenwhat/act_so101-single-transfer",
+  "created_at": "2026-09-01T17:35:08.000Z",
+  "updated_at": "2026-09-01T17:35:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:heyunzhenwhat/so101-single-transfer",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714912,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "heyunzhenwhat/act_so101-test_20260828_155423 · Hugging Face",
+      "url": "https://huggingface.co/heyunzhenwhat/act_so101-test_20260828_155423",
+      "snippet": "Instructions to use heyunzhenwhat/act_so101-test_20260828_155423 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "heyunzhenwhat (Hyz) - Hugging Face",
+      "url": "https://huggingface.co/heyunzhenwhat/datasets",
+      "snippet": "published a model about 3 hours ago updated a model about 5 hours ago"
+    },
+    {
+      "title": "开发者heyunzhenwhat发布LeRobot格式so101-single-transfer数据集 补全机器人单次转移操作训练数据供给",
+      "url": "https://www.5radar.com/dataopensource/news/463686/%E5%BC%80%E5%8F%91%E8%80%85heyunzhenwhat%E5%8F%91%E5%B8%83lerobot%E6%A0%BC%E5%BC%8Fso101-single-transfer%E6%95%B0%E6%8D%AE%E9%9B%86-%E8%A1%A5%E5%85%A8%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8D%95%E6%AC%A1%E8%BD%AC%E7%A7%BB%E6%93%8D%E4%BD%9C%E8%AE%AD%E7%BB%83%E6%95%B0%E6%8D%AE%E4%BE%9B%E7%BB%99",
+      "snippet": "2026年9月1日，开发者heyunzhenwhat在HuggingFace平台首发符合LeRobot标准的so101-single-transfer机器人数据集，该数据集专门面向机器人单次转移、机器人操作场景打造，可为通用机器人操作模型训练提供标准化数据支撑，有效降低相关领域研发门槛。"
+    },
+    {
+      "title": "GitHub - TheRobotStudio/SO-ARM100: Standard Open Arm 100",
+      "url": "https://github.com/TheRobotStudio/SO-ARM100",
+      "snippet": "Standard Open Arm 100. Contribute to TheRobotStudio/SO-ARM100 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - jyang-ca/lerobot-so101",
+      "url": "https://github.com/jyang-ca/lerobot-so101",
+      "snippet": "🤗 LeRobot aims to provide models, datasets, and tools for real-world robotics in PyTorch. The goal is to lower the barrier to entry to robotics so that everyone can contribute and benefit from sharing datasets and pretrained models. 🤗 LeRobot contains state-of-the-art approaches that have been shown to transfer to the real-world with a focus on imitation learning and reinforcement ..."
+    }
+  ]
+}

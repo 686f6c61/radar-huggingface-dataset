@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Cloth-splatters/cloth-splatting-gnn",
+  "slug": "cloth-splatters-cloth-splatting-gnn",
+  "author": "Cloth-splatters",
+  "url": "https://huggingface.co/Cloth-splatters/cloth-splatting-gnn",
+  "created_at": "2026-09-01T14:01:40.000Z",
+  "updated_at": "2026-09-01T15:21:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18882260,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cloth-Splatting: 3D Cloth State Estimation from RGB Supervision",
+      "url": "https://kth-rpl.github.io/cloth-splatting/",
+      "snippet": "State Estimation Given the mesh representation, we can address the problem of estimating the 3D state of the cloth using a prediction-update framework akin to Bayesian filtering. Starting with a previous state estimate and a known robotic action, Cloth-Splatting predicts the next state using a learned dynamics model of the cloth (GNN)."
+    },
+    {
+      "title": "Cloth-Splatting: 3D Cloth State Estimation from RGB Supervision",
+      "url": "https://github.com/KTH-RPL/cloth-splatting",
+      "snippet": "Repository for the CoRL 2024 paper: Cloth-Splatting: 3D Cloth State Estimation from RGB Supervision. - KTH-RPL/cloth-splatting"
+    },
+    {
+      "title": "Cloth-Splatting: 3D Cloth State Estimation from RGB Supervision - arXiv.org",
+      "url": "https://arxiv.org/html/2501.01715",
+      "snippet": "We introduce Cloth-Splatting, a 3D state estimation method for cloth from sparse RGB observations that combines GNN with GS. Given an initial sequence of 3D mesh predictions from the GNN (left), Cloth-Splatting (right) updates it using RGB observations, achieving state-of-the-art 3D tracking performance for deformables."
+    },
+    {
+      "title": "Cloth-Splatting: 3D Cloth State Estimation from RGB Supervision",
+      "url": "https://arxiv.org/abs/2501.01715",
+      "snippet": "We introduce Cloth-Splatting, a method for estimating 3D states of cloth from RGB images through a prediction-update framework. Cloth-Splatting leverages an action-conditioned dynamics model for predicting future states and uses 3D Gaussian Splatting to update the predicted states."
+    },
+    {
+      "title": "Cloth-splatters (Cloth-splatters) - Hugging Face",
+      "url": "https://huggingface.co/Cloth-splatters/models",
+      "snippet": "Org profile for Cloth-splatters on Hugging Face, the AI community building the future."
+    }
+  ]
+}

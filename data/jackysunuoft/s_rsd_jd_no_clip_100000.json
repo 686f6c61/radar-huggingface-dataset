@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JackySunUofT/S_RSD_jd_no_clip_100000",
+  "slug": "jackysunuoft-s_rsd_jd_no_clip_100000",
+  "author": "JackySunUofT",
+  "url": "https://huggingface.co/JackySunUofT/S_RSD_jd_no_clip_100000",
+  "created_at": "2026-09-01T13:05:44.000Z",
+  "updated_at": "2026-09-01T13:06:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:JackySunUofT/sim_two_lens_black_tube",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 262822087,
+  "parameters_human": "262.8M",
+  "storage_bytes": 1051323860,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JackySunUofT/S_RSD_jd_100000 · Hugging Face",
+      "url": "https://huggingface.co/JackySunUofT/S_RSD_jd_100000",
+      "snippet": "Model Card for diffusion Diffusion Policy treats visuomotor control as a generative diffusion process, producing smooth, multi-step action trajectories that excel at contact-rich manipulation."
+    },
+    {
+      "title": "JackySunUofT (JINJIE SUN) - Hugging Face",
+      "url": "https://huggingface.co/JackySunUofT",
+      "snippet": "Imitation learning, robotics, computer vision"
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.red/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "Stable Diffusion Models Download & Guide - The Right GPT",
+      "url": "https://therightgpt.com/stable-diffusion-guides/models/",
+      "snippet": "Stable Diffusion Models Guide 2026: Complete Download & Installation Everything you need to know about Stable Diffusion models: safe downloads, realistic checkpoints, architecture details, and local requirements for SD 1.5, SDXL, Flux.1, and custom models."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

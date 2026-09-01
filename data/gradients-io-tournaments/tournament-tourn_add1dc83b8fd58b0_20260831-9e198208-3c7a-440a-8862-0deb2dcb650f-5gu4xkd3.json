@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-9e198208-3c7a-440a-8862-0deb2dcb650f-5GU4Xkd3",
+  "slug": "gradients-io-tournaments-tournament-tourn_add1dc83b8fd58b0_20260831-9e198208-3c7a-440a-8862-0deb2dcb650f-5gu4xkd3",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-9e198208-3c7a-440a-8862-0deb2dcb650f-5GU4Xkd3",
+  "created_at": "2026-09-01T13:57:03.000Z",
+  "updated_at": "2026-09-01T13:57:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:gradients-io-tournaments/augmented-30ae1255f073a750",
+    "base_model:adapter:gradients-io-tournaments/augmented-30ae1255f073a750",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1359447963,
+  "storage_human": "1.4 GB",
+  "base_model": "gradients-io-tournaments/augmented-30ae1255f073a750",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_31f2e0fe36783f71_20260831 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_31f2e0fe36783f71_20260831-cc22b2f6-afd2-4862-a51f-8ea2f484766e-5FjDsFGA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gradients | Decentralised AI Training & Research",
+      "url": "https://www.gradients.io/app/research/tournament",
+      "snippet": "Decentralised AI Training & Research. > TOURNAMENTS View live, recent, and historical tournaments from Subnet 56"
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_c03a612f287687e0_20260713 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_c03a612f287687e0_20260713-eceb3fc3-f5ae-44cb-8fce-db143d80733b-5GU4Xkd3",
+      "snippet": "gradients-io-tournaments / tournament-tourn_c03a612f287687e0_20260713-eceb3fc3-f5ae-44cb-8fce-db143d80733b-5GU4Xkd3 like 0 PEFT Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_fbcc9d52269757c7_20260416 ...",
+      "url": "https://friendli.ai/models/gradients-io-tournaments/tournament-tourn_fbcc9d52269757c7_20260416-ddbe2d6d-d53f-4a06-ad88-c860c8057081-5GU4Xkd3",
+      "snippet": "tournament-tourn_fbcc9d52269757c7_20260416-ddbe2d6d-d53f-4a06-ad88-c860c8057081-5GU4Xkd3"
+    },
+    {
+      "title": "tournament-tourn_db768b30efd93b8b_20260824-61dc8f92-6d07-476c-ba14 ...",
+      "url": "https://friendli.ai/models/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-61dc8f92-6d07-476c-ba14-cadf2fcdbc3c-5EEaxgnm",
+      "snippet": "Deploy tournament-tourn_db768b30efd93b8b_20260824-61dc8f92-6d07-476c-ba14-cadf2fcdbc3c-5EEaxgnm with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

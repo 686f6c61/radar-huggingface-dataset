@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "lukaskremla/Ornith-1.5-35B-A3B-6bit-MLX-TextOnly",
+  "slug": "lukaskremla-ornith-1-5-35b-a3b-6bit-mlx-textonly",
+  "author": "lukaskremla",
+  "url": "https://huggingface.co/lukaskremla/Ornith-1.5-35B-A3B-6bit-MLX-TextOnly",
+  "created_at": "2026-09-01T14:42:34.000Z",
+  "updated_at": "2026-09-01T17:28:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "mlx-lm",
+    "ornith",
+    "ornith-1.5",
+    "ornith-1.5-35b-a3b",
+    "qwen",
+    "qwen3_5",
+    "text-generation",
+    "text-only",
+    "conversational",
+    "reasoning",
+    "tool-use",
+    "long-context",
+    "multilingual",
+    "quantized",
+    "weight-only-quantization",
+    "affine",
+    "rtn",
+    "group-size-64",
+    "6-bit",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7584230528,
+  "parameters_human": "7.58B",
+  "storage_bytes": 28188612410,
+  "storage_human": "28.2 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B-MLX-6bit · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX-6bit",
+      "snippet": "Ornith-1.5-35B-A3B is a ~35B mixture-of-experts model with ~3B activated parameters per token (≈70 GB in bf16). The recipes below stand up an OpenAI-compatible server on 2× 80GB GPUs to leave headroom for the 256K context; adjust --tensor-parallel-size / --tp to match your hardware."
+    },
+    {
+      "title": "GitHub - ornith-ai/Ornith-1 · GitHub",
+      "url": "https://github.com/ornith-ai/Ornith-1",
+      "snippet": "Aloha! 🌺 Ornith is a family of self-improving open-source models for agentic tasks. This repo covers both generations: 🐦 Ornith-1.5 (latest) — extends self-scaffolding into a complete end-to-end self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning. Model weights at HuggingFace, and more details ..."
+    },
+    {
+      "title": "ornith-ai (Ornith) - Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/models",
+      "snippet": "Artificial intelligence, Large Language Model, chirpchirp updated a model about 1 hour ago"
+    },
+    {
+      "title": "Ornith 1.5 35B A3B MLX by ornith-ai — VRAM 69.1GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/ornith-ai%2FOrnith-1.5-35B-A3B-MLX,6KZxLavQxbJPE1Ff6rm8sG",
+      "snippet": "Rank the Ornith 1.5 35B A3B MLX capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "ornith-1.5:35b - ollama.com",
+      "url": "https://ollama.com/library/ornith-1.5:35b",
+      "snippet": "Rather than relying on a fixed set of human-curated tasks and manually designed harnesses, Ornith-1.5 continuously generates new training tasks, discovers effective strategies for solving them, and improves the policy through reinforcement learning. For more details on the task, harness, and rollout reward design, please refer to our blog."
+    }
+  ]
+}

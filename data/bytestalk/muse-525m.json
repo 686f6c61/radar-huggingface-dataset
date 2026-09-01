@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "BytesTalk/Muse-525M",
+  "slug": "bytestalk-muse-525m",
+  "author": "BytesTalk",
+  "url": "https://huggingface.co/BytesTalk/Muse-525M",
+  "created_at": "2026-09-01T18:01:49.000Z",
+  "updated_at": "2026-09-01T18:06:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "ja",
+    "cs",
+    "sk"
+  ],
+  "tags": [
+    "pytorch",
+    "roleplay",
+    "character-ai",
+    "from-scratch",
+    "muse",
+    "multilingual",
+    "nsfw",
+    "text-generation",
+    "en",
+    "ja",
+    "cs",
+    "sk",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2103409961,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BytesTalk (BytesTalk)",
+      "url": "https://huggingface.co/BytesTalk/models",
+      "snippet": "Org profile for BytesTalk on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Introducing Muse Spark: Scaling Towards Personal Superintelligence",
+      "url": "https://ai.meta.com/blog/introducing-muse-spark-msl/",
+      "snippet": "Today, we&#x27;re excited to introduce Muse Spark, the first in the Muse family of models developed by Meta Superintelligence Labs. Muse Spark is a natively multimodal reasoning model with support for tool-use, visual chain of thought, and multi-agent orchestration. Muse Spark is the first step on our scaling ladder and the first product of a ground-up overhaul of our AI efforts. To support ..."
+    },
+    {
+      "title": "Muse Spark — Meta&#x27;s Most Powerful AI Model | 262K Context",
+      "url": "https://trymusespark.com/",
+      "snippet": "Muse Spark by Meta Superintelligence Labs. 262K context window, multimodal input, Contemplating Mode for deep reasoning. #1 on HealthBench Hard, CharXiv, and FrontierScience benchmarks."
+    },
+    {
+      "title": "Muse Spark - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Muse_Spark",
+      "snippet": "Muse Spark is a large language model (LLM) developed by Meta through its Meta Superintelligence Labs (MSL). It was introduced in April 2026 and launched as Muse Spark 1.1 on July 9, 2026. It is the first model in Meta&#x27;s Muse family and is designed for multimodal reasoning, coding, and AI-assisted software development."
+    },
+    {
+      "title": "Introducing Muse Spark 1.1 - ai.meta.com",
+      "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/",
+      "snippet": "Today, we&#x27;re excited to introduce Muse Spark 1.1, the latest model from Meta Superintelligence Labs and a significant upgrade from Muse Spark. Muse Spark 1.1 is a multimodal reasoning model built for agentic tasks, with major gains in tool and computer use, coding, and multimodal understanding."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yethdev/ornith-1.5-9b-manumit-v2",
+  "slug": "yethdev-ornith-1-5-9b-manumit-v2",
+  "author": "yethdev",
+  "url": "https://huggingface.co/yethdev/ornith-1.5-9b-manumit-v2",
+  "created_at": "2026-09-01T11:59:30.000Z",
+  "updated_at": "2026-09-01T12:05:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "text-generation",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:finetune:ornith-ai/Ornith-1.5-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-9B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-9B-MLX · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX",
+      "snippet": "Ornith-1.5-9B is a dense ~9B model (≈19 GB in bf16), so it serves on a single 80GB GPU. The recipes below stand up an OpenAI-compatible server; add --tensor-parallel-size / --tp if you want to shard across more GPUs."
+    },
+    {
+      "title": "Ornith 9B Manumit V1 by yethdev — VRAM 18.8GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/yethdev%2Fornith-9b-manumit-v1,6Deq8olcVvRhrwVd5hBh5N",
+      "snippet": "Best Alternatives to Ornith 9B Manumit V1 Note: green Score (e.g. \" 73.2 \") means that the model is better than yethdev/ornith-9b-manumit-v1."
+    },
+    {
+      "title": "Ornith-1.5-9B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/ornith-1-5-9b",
+      "snippet": "The smallest model in DeepReinforce&#x27;s Ornith-1.5 family (released 2026-08-19, MIT, weights on Hugging Face): a 9B-parameter dense coding/agent model trained with the family&#x27;s self-improving task-and-scaffold RL loop, and shipped with a quantized &#x27;Ornith-1.5-9B-Mobile&#x27; build that runs on iPhone and Android."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    }
+  ]
+}
