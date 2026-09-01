@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "a83806800/mittyverse-ai-v4",
+  "slug": "a83806800-mittyverse-ai-v4",
+  "author": "a83806800",
+  "url": "https://huggingface.co/a83806800/mittyverse-ai-v4",
+  "created_at": "2026-09-01T10:18:48.000Z",
+  "updated_at": "2026-09-01T10:18:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48409525,
+  "storage_human": "48 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 407 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Pro · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mystery AI Model Revealed to Be Xiaomi&#x27;s Following Suspicions It Was ...",
+      "url": "https://money.usnews.com/investing/news/articles/2026-03-17/a-mystery-ai-model-has-developers-buzzing-is-this-deepseeks-latest-blockbuster",
+      "snippet": "An anonymous model called Pony Alpha appeared on OpenRouter in February before Chinese firm Zhipu AI confirmed it was part of its GLM-5 system five days later."
+    },
+    {
+      "title": "AI Model Release Tracker — Evertune",
+      "url": "https://models.evertune.ai/",
+      "snippet": "Track every major AI model release from OpenAI, Anthropic, Google, Meta, DeepSeek, and more. Updated daily with release dates, descriptions, and official announcements."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

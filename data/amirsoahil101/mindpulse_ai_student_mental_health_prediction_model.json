@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "amirsoahil101/MindPulse_AI_Student_Mental_Health_Prediction_Model",
+  "slug": "amirsoahil101-mindpulse_ai_student_mental_health_prediction_model",
+  "author": "amirsoahil101",
+  "url": "https://huggingface.co/amirsoahil101/MindPulse_AI_Student_Mental_Health_Prediction_Model",
+  "created_at": "2026-09-01T09:25:20.000Z",
+  "updated_at": "2026-09-01T09:44:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tabular-regression",
+    "fraud-detector",
+    "machine-learning",
+    "scikit-learn",
+    "en",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25676995,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "MindPulse AI -- Student Mental Health Prediction Model",
+      "dataset": "MindPulse AI -- Student Mental Health Prediction Model",
+      "metric": "R2 Score",
+      "value": 0.86
+    }
+  ],
+  "sources": [
+    {
+      "title": "amirsohail100/MindPulse-AI-Student-Mental-Health-Prediction ... - GitHub",
+      "url": "https://github.com/amirsohail100/MindPulse-AI-Student-Mental-Health-Prediction-Web-App",
+      "snippet": "MindPulse AI: A production-grade ML web app predicting student mental health scores based on daily lifestyle habits. Features an upgraded workflow: Scikit-learn Pipeline & ColumnTransformer for leak-free training, FastAPI + Pydantic for schema validation, and an interactive HTML/JS frontend live deployed on Render."
+    },
+    {
+      "title": "GitHub - Srishynei/MindPulse-AI: AI-powered student mental wellness ...",
+      "url": "https://github.com/Srishynei/MindPulse-AI",
+      "snippet": "The intelligence behind MindPulse AI is powered using a trained Random Forest Machine Learning Model developed with Scikit-learn. Unlike traditional rule-based systems, the model learns meaningful patterns from historical student wellness data."
+    },
+    {
+      "title": "amirsoahil101 (Amir) - Hugging Face",
+      "url": "https://huggingface.co/amirsoahil101",
+      "snippet": "Experienced in building predictive models, neural networks, and AI-driven solutions using frameworks like PyTorch, TensorFlow, and scikit-learn. Enthusiastic about integrating intelligent models into full-stack web applications."
+    },
+    {
+      "title": "MindPulse — Digital Wellbeing Score Predictor",
+      "url": "https://mental-health-score-prediction-1-jdjx.onrender.com/",
+      "snippet": "A digital wellbeing check-in Your phone keeps score. So can you. MindPulse reads the small signals — screen time, sleep, movement, stress — and turns them into one clear number, produced by a model trained on real student habits. Two minutes in, one honest score out."
+    },
+    {
+      "title": "amirsoahil101 (Amir) - Hugging Face",
+      "url": "https://huggingface.co/amirsoahil101/models",
+      "snippet": "AI & ML interests Passionate about Machine Learning, Deep Learning, and Generative AI. Experienced in building predictive models, neural networks, and AI-driven solutions using frameworks like PyTorch, TensorFlow, and scikit-learn. Enthusiastic about integrating intelligent models into full-stack web applications."
+    }
+  ]
+}

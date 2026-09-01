@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/STL-xlm-roberta-base-sentiment-finetuned",
+  "slug": "tadiecool29-stl-xlm-roberta-base-sentiment-finetuned",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/STL-xlm-roberta-base-sentiment-finetuned",
+  "created_at": "2026-09-01T08:23:58.000Z",
+  "updated_at": "2026-09-01T08:25:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278045955,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129311557,
+  "storage_human": "1.1 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tadiecool29/STL-xlm-roberta-large-stance-finetuned · Hugging Face",
+      "url": "https://huggingface.co/tadiecool29/STL-xlm-roberta-large-stance-finetuned",
+      "snippet": "STL-xlm-roberta-large-stance-finetuned This model is a fine-tuned version of FacebookAI/xlm-roberta-large on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "cardiffnlp/twitter-xlm-roberta-base-sentiment · Hugging Face",
+      "url": "https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment",
+      "snippet": "This is a multilingual XLM-roBERTa-base model trained on ~198M tweets and finetuned for sentiment analysis. The sentiment fine-tuning was done on 8 languages (Ar, En, Fr, De, Hi, It, Sp, Pt) but it can be used for more languages (see paper for details)."
+    },
+    {
+      "title": "GitHub - cardiffnlp/xlm-t: Repository for XLM-T, a framework for ...",
+      "url": "https://github.com/cardiffnlp/xlm-t",
+      "snippet": "XLM-T - A Multilingual Language Model Toolkit for Twitter As explained in the reference paper, we make start from XLM-Roberta base and continue pre-training on a large corpus of Twitter in multiple languages. This masked language model, which we named twitter-xlm-roberta-base in the 🤗Huggingface hub, can be downloaded from here."
+    },
+    {
+      "title": "Base Model: twitter-xlm-roberta-base | cardiffnlp/xlm-t | DeepWiki",
+      "url": "https://deepwiki.com/cardiffnlp/xlm-t/2.1-base-model:-twitter-xlm-roberta-base",
+      "snippet": "The twitter-xlm-roberta-base model has a hidden size of 768. This refers to the dimensionality of the hidden states in the transformer layers, which is a standard size for base-level transformer models. Hugging Face Hub Identifiers The model is publicly available on the Hugging Face Hub under the identifier cardiffnlp/twitter-xlm-roberta-base."
+    },
+    {
+      "title": "XLM-RoBERTa Base: Multilingual Transformer Model by Facebook AI",
+      "url": "https://toolseekai.com/en/models/facebookaixlm-roberta-base",
+      "snippet": "XLM-RoBERTa (XLM-R) is a state-of-the-art multilingual transformer model supporting 100 languages. Pre-trained on 2.5TB of data, it excels at cross-lingual transfer for tasks like classification, NER, and QA. Available under MIT license."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "PoopMan333/Online_Video_Rippers",
+  "slug": "poopman333-online_video_rippers",
+  "author": "PoopMan333",
+  "url": "https://huggingface.co/PoopMan333/Online_Video_Rippers",
+  "created_at": "2026-09-01T02:21:26.000Z",
+  "updated_at": "2026-09-01T03:50:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "video",
+    "downloader",
+    "yt-dlp",
+    "youtube",
+    "tiktok",
+    "instagram",
+    "offline-tool",
+    "desktop",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27641,
+  "storage_human": "27641 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PoopMan333/Video_Tools · Hugging Face",
+      "url": "https://huggingface.co/PoopMan333/Video_Tools",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PoopMan333 (Man) - Hugging Face",
+      "url": "https://huggingface.co/PoopMan333",
+      "snippet": "Recent Activity updated a model15 days ago PoopMan333/BigPoo published a model15 days ago PoopMan333/BigPoo liked a modelabout 1 month ago SulphurAI/Sulphur-2-base View all activity"
+    },
+    {
+      "title": "ripper.video — TikTok, Instagram & YouTube Downloader with AI Upscale ...",
+      "url": "https://ripper.video/",
+      "snippet": "Free tool to download TikTok, Instagram, and YouTube videos in original HD quality without watermark. AI upscale to 1080p with Real-ESRGAN, auto-transcribe with Whisper. No signup required."
+    },
+    {
+      "title": "VibeAxis Frame Ripper | Detect AI-Generated Video & Deepfakes",
+      "url": "https://vibeaxis.com/vibeaxis-slop-analyzer-ai-video-detector/",
+      "snippet": "Between Sora, Runway, Kling, and open-source models, AI-generated video is flooding the internet. While some of it is incredible, a massive portion of it is what the industry has dubbed \"AI Slop\" —videos riddled with temporal hallucinations, anatomical morphing, and physics-defying artifacts."
+    },
+    {
+      "title": "Free Deepfake Checker — Check Any Image or Video | DeepGuard AI",
+      "url": "https://deepguardai.com/deepfake-checker/",
+      "snippet": "Free deepfake checker — check any image or video for AI manipulation in seconds. Paste a link or upload a file and get an instant real-or-fake verdict."
+    }
+  ]
+}

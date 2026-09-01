@@ -5,7 +5,7 @@
   "author": "Jakelolipopp",
   "url": "https://huggingface.co/Jakelolipopp/Qwen3.5-4B-AltText-v2-GGUF",
   "created_at": "2026-07-29T13:35:04.000Z",
-  "updated_at": "2026-08-22T13:47:08.000Z",
+  "updated_at": "2026-09-01T06:15:22.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,12 +22,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 175,
+  "downloads_30d": 180,
   "trending_score": 0,
-  "parameters": 4326350848,
-  "parameters_human": "4.33B",
-  "storage_bytes": 12582158784,
-  "storage_human": "12.6 GB",
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 34577276128,
+  "storage_human": "34.6 GB",
   "base_model": null,
   "formats": [
     "gguf"

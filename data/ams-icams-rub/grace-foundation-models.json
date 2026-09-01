@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AMS-ICAMS-RUB/grace-foundation-models",
+  "slug": "ams-icams-rub-grace-foundation-models",
+  "author": "AMS-ICAMS-RUB",
+  "url": "https://huggingface.co/AMS-ICAMS-RUB/grace-foundation-models",
+  "created_at": "2026-06-09T09:44:06.000Z",
+  "updated_at": "2026-09-01T10:51:55.000Z",
+  "license": "academic-software-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "tensorpotential",
+  "languages": [],
+  "tags": [
+    "tensorpotential",
+    "grace",
+    "interatomic-potential",
+    "molecular-dynamics",
+    "machine-learning-potential",
+    "materials-science",
+    "arxiv:2602.23489",
+    "arxiv:2508.17936",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41244956077,
+  "storage_human": "41.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AMS-ICAMS-RUB/grace-foundation-models · Hugging Face",
+      "url": "https://huggingface.co/AMS-ICAMS-RUB/grace-foundation-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · AMS-ICAMS-RUB/grace-foundation-models at main",
+      "url": "https://huggingface.co/AMS-ICAMS-RUB/grace-foundation-models/blob/main/README.md",
+      "snippet": "AMS-ICAMS-RUB / grace-foundation-models like 1 Follow Atomistic Modelling and Simulation, Interdisciplinary Centre for Advanced Materials Simulation 1 tensorpotential grace interatomic-potential molecular-dynamics machine-learning-potential materials-science arxiv:2602.23489 arxiv:2508.17936 License:academic-software-license Model card ..."
+    },
+    {
+      "title": "GitHub - ICAMS/grace-tensorpotential: GRACE models and gracemaker (as ...",
+      "url": "https://github.com/ICAMS/grace-tensorpotential",
+      "snippet": "A new grace_dashboard shows training curves and metrics in the browser; the grace_models command was reworked to list, inspect, and download models (including Kokkos weights); and training can now save and resume in the middle of an epoch."
+    },
+    {
+      "title": "gracemaker",
+      "url": "https://gracemaker.readthedocs.io/en/latest/",
+      "snippet": "GRACE-3L: Semi-local, non-linear model with a third message-passing layer for a larger effective receptive field, offering the best accuracy of the series. Available as foundation models (natively fp32) for use in python or in LAMMPS, including the TensorFlow-free grace/3l/kk Kokkos pair style."
+    },
+    {
+      "title": "grace-tutorial/3-foundation-models at main · ICAMS/grace-tutorial",
+      "url": "https://github.com/ICAMS/grace-tutorial/tree/main/3-foundation-models",
+      "snippet": "Tutorial materials for GRACE . Contribute to ICAMS/grace-tutorial development by creating an account on GitHub."
+    }
+  ]
+}

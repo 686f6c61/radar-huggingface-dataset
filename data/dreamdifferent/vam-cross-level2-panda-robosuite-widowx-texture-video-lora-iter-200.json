@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/vam-cross-level2-panda-robosuite-widowx-texture-video-lora-iter-200",
+  "slug": "dreamdifferent-vam-cross-level2-panda-robosuite-widowx-texture-video-lora-iter-200",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/vam-cross-level2-panda-robosuite-widowx-texture-video-lora-iter-200",
+  "created_at": "2026-09-01T08:24:47.000Z",
+  "updated_at": "2026-09-01T08:25:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "video-generation",
+    "lora",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 741588124,
+  "storage_human": "742 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vam-cross-level5-panda-robosuite-widowx-texture-video-lora-iter-200",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-video-lora-iter-200",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture ...",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-teleopaligned-videolora200-action-dec-c8fb3c68cd",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Resources | Virt-A-Mate Hub",
+      "url": "https://hub.virtamate.com/resources/",
+      "snippet": "Free music, voice, and sound effect audio files and asset bundles"
+    },
+    {
+      "title": "VaM2 | Virt-A-Mate Hub",
+      "url": "https://hub.virtamate.com/resources/categories/vam2.59/",
+      "snippet": "Free shareable content for VaM2 Templates, obj files, seam guides, and utility-based scenes, scene setups or subscenes (with a limited exclusive access period)"
+    }
+  ]
+}

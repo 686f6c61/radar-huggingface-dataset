@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "id": "Vampelium/LFM2.5-2.6B-heretic",
+  "slug": "vampelium-lfm2-5-2-6b-heretic",
+  "author": "Vampelium",
+  "url": "https://huggingface.co/Vampelium/LFM2.5-2.6B-heretic",
+  "created_at": "2026-09-01T02:17:57.000Z",
+  "updated_at": "2026-09-01T02:33:14.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "zh",
+    "en",
+    "fr",
+    "de",
+    "hi",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "pt",
+    "ru",
+    "es",
+    "th",
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "liquid",
+    "lfm2.5",
+    "edge",
+    "a100",
+    "conversational",
+    "ar",
+    "zh",
+    "en",
+    "fr",
+    "de",
+    "hi",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "pt",
+    "ru",
+    "es",
+    "th",
+    "vi",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:finetune:LiquidAI/LFM2.5-2.6B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 5412333175,
+  "storage_human": "5.4 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vampelium/LFM2.5-2.6B-heretic · Hugging Face",
+      "url": "https://huggingface.co/Vampelium/LFM2.5-2.6B-heretic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "heretic-org/LFM-2.5-2.6B-heretic · Hugging Face",
+      "url": "https://huggingface.co/heretic-org/LFM-2.5-2.6B-heretic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LFM 2.5 2.6B Heretic by heretic-org — VRAM 5.4GB, 128K context | LLM ...",
+      "url": "https://llm-explorer.com/model/heretic-org%2FLFM-2.5-2.6B-heretic,6Qos6ibQdtBEkkBkA64YxM",
+      "snippet": "LFM 2.5 2.6B Heretic is an open-source 2.6b LLM by heretic-org. VRAM 5.4GB, 128K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Lfm2.5 2.6b Heretic Abliterated - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/lfm2-5-2-6b-heretic-abliterated.html",
+      "snippet": "Download Lfm2.5 2.6b Heretic Abliterated GGUF model. 2.90 GB, 13,452 downloads, 26 likes."
+    },
+    {
+      "title": "LFM2.5-2.6B: Deploy Agents Everywhere | Blog | Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-2-6b",
+      "snippet": "LFM2.5-2.6B is an on-device agentic model that plans, calls tools, and runs multi-step tasks at 220 tok/s in under 2.5 GB. Open weights on Hugging Face."
+    }
+  ]
+}

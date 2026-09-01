@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gaidar12345/crab-1",
+  "slug": "gaidar12345-crab-1",
+  "author": "gaidar12345",
+  "url": "https://huggingface.co/gaidar12345/crab-1",
+  "created_at": "2026-09-01T09:53:52.000Z",
+  "updated_at": "2026-09-01T09:53:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guardian crab - Download Free 3D Model | Meshy",
+      "url": "https://www.meshy.ai/3d-models/guardian-crab-01a01570-3445-7739-981e-18a3a9c11545",
+      "snippet": "Guardian crab - free Art & Abstract 3D model to download in FBX, OBJ, GLB, USDZ & STL. Made with Meshy AI for games, 3D printing & AR/VR. By zenkai3dstudio · snorkel, marine, shell."
+    },
+    {
+      "title": "GitHub - avarshvir/crab_language_model: The CRAB series of language ...",
+      "url": "https://github.com/avarshvir/crab_language_model",
+      "snippet": "CRAB is a lightweight experimental language model project built from scratch with PyTorch. It includes a GPT-style transformer architecture, training notebooks, project documentation, and a Streamlit interface for local inference. The project is designed as an end-to-end machine learning engineering experiment: data preparation, model architecture, pretraining, instruction-style QA tuning ..."
+    },
+    {
+      "title": "GitHub - jonhrogielmades/crabs: Crab Recognition AI",
+      "url": "https://github.com/jonhrogielmades/crabs",
+      "snippet": "AI model registry, active-version control, and model metadata sync. Recognition performance dashboard with low-confidence, failed-scan, reviewed-accuracy, and top-species metrics. Detection-box overlay on result images when the AI returns normalized bounding boxes. Offline scan queue in the PWA scanner. Species directory search and filtering."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "AI Detector - Trusted AI Checker for ChatGPT, Copilot & Gemini - Scribbr",
+      "url": "https://www.scribbr.com/ai-detector/",
+      "snippet": "Scribbr AI Detector: Identify AI-generated content from ChatGPT, Copilot, and Gemini with our advanced AI Checker. Try it for free!"
+    }
+  ]
+}

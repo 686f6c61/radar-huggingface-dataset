@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "seriintan/turbovla_frazier",
+  "slug": "seriintan-turbovla_frazier",
+  "author": "seriintan",
+  "url": "https://huggingface.co/seriintan/turbovla_frazier",
+  "created_at": "2026-09-01T10:32:54.000Z",
+  "updated_at": "2026-09-01T10:34:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "turbovla",
+    "robotics",
+    "dataset:seriintan/frazier_dataset_20260901_151518",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 216072210,
+  "parameters_human": "216.1M",
+  "storage_bytes": 864394112,
+  "storage_human": "864 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "seriintan/turbovla-frazier-sim-v3 · Hugging Face",
+      "url": "https://huggingface.co/seriintan/turbovla-frazier-sim-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "seriintan/turbovla-frazier-single-tool-v2 · Hugging Face",
+      "url": "https://huggingface.co/seriintan/turbovla-frazier-single-tool-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "seriintan (Seri Intan Kuala) - Hugging Face",
+      "url": "https://huggingface.co/seriintan",
+      "snippet": "published a model about 4 hours ago updated a model about 4 hours ago"
+    },
+    {
+      "title": "seriintan/frazier_sim_v3 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/seriintan/frazier_sim_v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "seriintan/frazier_sim_v2 at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/seriintan/frazier_sim_v2/tree/main",
+      "snippet": "Datasets: seriintan / frazier_sim_v2 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main frazier_sim_v2 310 MB 1 contributor History:3 commits seriintan Upload README.md with huggingface_hub eb52cdc verifiedabout ..."
+    }
+  ]
+}

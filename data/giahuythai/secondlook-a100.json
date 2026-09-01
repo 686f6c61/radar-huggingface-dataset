@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "giahuythai/secondlook-a100",
+  "slug": "giahuythai-secondlook-a100",
+  "author": "giahuythai",
+  "url": "https://huggingface.co/giahuythai/secondlook-a100",
+  "created_at": "2026-09-01T10:23:59.000Z",
+  "updated_at": "2026-09-01T11:15:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7821083108,
+  "storage_human": "7.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "giahuythai (Thái Gia Huy) - Hugging Face",
+      "url": "https://huggingface.co/giahuythai/datasets",
+      "snippet": "User profile of Thái Gia Huy on Hugging Face"
+    },
+    {
+      "title": "Clinical Intelligence Platform for Healthcare | SecondLook Health",
+      "url": "https://www.secondlookhealth.ai/",
+      "snippet": "Physician-built clinical AI that reads medical records the way a doctor does, reasoning over thousands of pages to answer the hard clinical questions, with every conclusion traced to the source and the supporting literature. For workers&#x27; comp, self-insured employers, hospitals, malpractice insurers, and clinical consultants."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 407 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Free AI Image Detector & Checker: Is a Photo AI? | Is It AI?",
+      "url": "https://isitai.com/ai-image-detector",
+      "snippet": "AI Image Detector & Checker: Is This Photo AI-Generated? Upload any photo, picture, or piece of AI art and our free AI image checker tells you if it was AI-generated or real, in seconds. With 95%+ accuracy across Midjourney, DALL-E, Stable Diffusion, Nano Banana, Firefly, ChatGPT and 20+ models, it&#x27;s trusted by newsrooms, educators, and content teams to verify image authenticity."
+    },
+    {
+      "title": "Free AI Detector & AI Checker - For ChatGPT, GPT-5, Gemini & Claude",
+      "url": "https://phrasly.ai/ai-detector",
+      "snippet": "Free AI detector & AI checker. Detect ChatGPT, GPT-5, Claude, Gemini and Perplexity with 99.8% accuracy. Unlimited checks, no word limit. Trusted by 3M+ users."
+    }
+  ]
+}

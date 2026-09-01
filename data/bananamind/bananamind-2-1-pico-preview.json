@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "BananaMind/BananaMind-2.1-Pico-Preview",
+  "slug": "bananamind-bananamind-2-1-pico-preview",
+  "author": "BananaMind",
+  "url": "https://huggingface.co/BananaMind/BananaMind-2.1-Pico-Preview",
+  "created_at": "2026-09-01T10:00:27.000Z",
+  "updated_at": "2026-09-01T10:00:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bananamind21_test",
+    "text-generation",
+    "causal-lm",
+    "language-model",
+    "base-model",
+    "small-language-model",
+    "bananamind",
+    "bananamind2",
+    "bananamind21",
+    "bananamind21-pico",
+    "preview",
+    "looped-transformer",
+    "weight-sharing",
+    "xsa",
+    "ngram-embedding",
+    "pretrained",
+    "2b-tokens",
+    "pytorch",
+    "custom-code",
+    "trust-remote-code",
+    "custom-architecture",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2070336,
+  "parameters_human": "2.1M",
+  "storage_bytes": 10784797,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BananaMind-2-Pro-Preview - Hugging Face",
+      "url": "https://huggingface.co/BananaMind/BananaMind-2-Pro-Preview",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BananaMind/BananaMind-2-Pro-Preview at main - Hugging Face",
+      "url": "https://huggingface.co/BananaMind/BananaMind-2-Pro-Preview/tree/main",
+      "snippet": "BananaMind AI 81 Text Generation Transformers Safetensors PyTorch 4 datasets English bananamind2_pro causal-lm language-model base-model small-language-model bananamind bananamind2 bananamind2-pro preview-checkpoint digit-tokenizer custom-code trust-remote-code custom-architecture custom_code License:bananamind-community-license-1. Model card ..."
+    },
+    {
+      "title": "Banana Pie — Use Nano Banana 2, GPT Image 2 & Seedream 5 Pro in One Studio",
+      "url": "https://www.bananapie.ai/",
+      "snippet": "Generate and edit with the latest AI image models — Nano Banana 2, GPT Image 2, Seedream 5 Pro and more. Compare side by side."
+    },
+    {
+      "title": "Nano Banana | Google AI Studio",
+      "url": "https://aistudio.google.com/models/nano-banana",
+      "snippet": "Try image generation apps built in AI Studio image Nano Banana 2 Lite photo_library Nano Banana 2 photo_spark Nano Banana Pro Gridscape Anywhere Peek-a-word"
+    },
+    {
+      "title": "Nano Banana 2: How developers can use the new AI image model",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-nano-banana-2/",
+      "snippet": "Today, we&#x27;re introducing Nano Banana 2 (Gemini 3.1 Flash Image), which brings high-fidelity image generation and faster, advanced editing to the new Flash model. It allows you to deploy sophisticated visual creation at scale with an amazing price-performance ratio."
+    }
+  ]
+}

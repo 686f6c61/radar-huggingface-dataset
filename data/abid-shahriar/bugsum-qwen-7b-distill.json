@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Abid-Shahriar/BugSum-Qwen-7B-Distill",
+  "slug": "abid-shahriar-bugsum-qwen-7b-distill",
+  "author": "Abid-Shahriar",
+  "url": "https://huggingface.co/Abid-Shahriar/BugSum-Qwen-7B-Distill",
+  "created_at": "2026-09-01T08:56:45.000Z",
+  "updated_at": "2026-09-01T08:58:18.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "summarization",
+    "software-engineering",
+    "bug-report-summarization",
+    "knowledge-distillation",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92213988,
+  "storage_human": "92 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "[2407.12220] Questionable practices in machine learning",
+      "url": "https://ar5iv.labs.arxiv.org/html/2407.12220",
+      "snippet": "Evaluating modern ML models is hard. The strong incentive for researchers and companies to report a state-of-the-art result on some metric often leads to questionable research practices (QRPs): bad practices which fall…"
+    },
+    {
+      "title": "GitHub - ArtificialZeng/Qwen-7B: The official repo of Qwen-7B (通义千问-7B ...",
+      "url": "https://github.com/ArtificialZeng/Qwen-7B",
+      "snippet": "The Chinese knowledge and coding ability of Qwen-7B have been further improved. 2023.9.12 We now support finetuning on the Qwen-7B models, including full-parameter finetuning, LoRA and Q-LoRA. 2023.8.21 We release the Int4 quantized model for Qwen-7B-Chat, Qwen-7B-Chat-Int4, which requires low memory costs but achieves improved inference speed."
+    },
+    {
+      "title": "GitHub - tempbottle/Qwen-7B: The official repo of Qwen-7B (通义千问-7B ...",
+      "url": "https://github.com/tempbottle/Qwen-7B",
+      "snippet": "Qwen-7B is a Transformer-based large language model, which is pretrained on a large volume of data, including web texts, books, codes, etc. Additionally, based on the pretrained Qwen-7B, we release Qwen-7B-Chat, a large-model-based AI assistant, which is trained with alignment techniques. The features of the Qwen-7B series include:"
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B at main - Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

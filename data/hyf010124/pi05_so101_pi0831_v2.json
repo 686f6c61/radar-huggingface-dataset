@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hyf010124/pi05_so101_pi0831_v2",
+  "slug": "hyf010124-pi05_so101_pi0831_v2",
+  "author": "hyf010124",
+  "url": "https://huggingface.co/hyf010124/pi05_so101_pi0831_v2",
+  "created_at": "2026-09-01T08:03:18.000Z",
+  "updated_at": "2026-09-01T08:03:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:so101_test_pi0831_merged_v2",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10325368,
+  "storage_human": "10 MB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hyf010124/pi05_so101_pi0824_v2 · Hugging Face",
+      "url": "https://huggingface.co/hyf010124/pi05_so101_pi0824_v2",
+      "snippet": "Instructions to use hyf010124/pi05_so101_pi0824_v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use hyf010124/pi05_so101_pi0824_v2 with LeRobot: Notebooks Google Colab Kaggle Model Card for pi05 Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on ..."
+    },
+    {
+      "title": "hyf010124 (fu) - Hugging Face",
+      "url": "https://huggingface.co/hyf010124",
+      "snippet": "hyf010124/so101_test_VLA0721_20260721_152151. published a dataset about 6 hours ago. hyf010124/so101_test_VLA0721_20260721_151733. updated a dataset about 13 hours ago"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "GitHub - ljt228/pi05-so101-finetune",
+      "url": "https://github.com/ljt228/pi05-so101-finetune",
+      "snippet": "Contribute to ljt228/pi05-so101-finetune development by creating an account on GitHub."
+    }
+  ]
+}

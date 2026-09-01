@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/LFM2.5-1.2B-Distilled-SFT",
   "created_at": "2026-03-25T06:08:29.000Z",
-  "updated_at": "2026-08-30T14:35:38.000Z",
+  "updated_at": "2026-08-31T13:15:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -48,7 +48,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2807,
+  "downloads_30d": 2941,
   "trending_score": 0,
   "parameters": 1304558336,
   "parameters_human": "1.30B",

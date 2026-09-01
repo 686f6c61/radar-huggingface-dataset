@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "corygong/stt_en_conformer_ctc_small",
+  "slug": "corygong-stt_en_conformer_ctc_small",
+  "author": "corygong",
+  "url": "https://huggingface.co/corygong/stt_en_conformer_ctc_small",
+  "created_at": "2026-09-01T10:32:53.000Z",
+  "updated_at": "2026-09-01T10:33:01.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "CTC",
+    "Conformer",
+    "Transformer",
+    "NeMo",
+    "pytorch",
+    "en",
+    "dataset:librispeech_asr",
+    "dataset:mozilla-foundation/common_voice_7_0",
+    "dataset:vctk",
+    "dataset:fisher_corpus",
+    "dataset:Switchboard-1",
+    "dataset:WSJ-0",
+    "dataset:WSJ-1",
+    "dataset:National-Singapore-Corpus-Part-1",
+    "dataset:National-Singapore-Corpus-Part-6",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53288960,
+  "storage_human": "53 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Librispeech (clean)",
+      "metric": "WER",
+      "value": 8.1
+    }
+  ],
+  "sources": [
+    {
+      "title": "corygong/stt_en_conformer_ctc_small · Hugging Face",
+      "url": "https://huggingface.co/corygong/stt_en_conformer_ctc_small",
+      "snippet": "corygong / stt_en_conformer_ctc_small like 0 NeMo Eval Results arxiv:1910.09700 Model card FilesFiles and versions Community Use this model Edit model card Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and Limitations Recommendations How to Get Started with the Model Training Details ..."
+    },
+    {
+      "title": "corygong/stt_en_conformer_ctc_small_v2 · Hugging Face",
+      "url": "https://huggingface.co/corygong/stt_en_conformer_ctc_small_v2",
+      "snippet": "How to Use this Model The model is available for use in the NeMo toolkit [3], and can be used as a pre-trained checkpoint for inference or for fine-tuning on another dataset."
+    },
+    {
+      "title": "STT En Conformer-CTC Small | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/nemo/models/stt_en_conformer_ctc_small/-/file-browser",
+      "snippet": "Conformer-CTC-Small model for English Automatic Speech Recognition, Trained on NeMo ASRSET"
+    },
+    {
+      "title": "STT En Conformer-CTC Small | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/stt_en_conformer_ctc_small",
+      "snippet": "Model Overview This collection contains small size versions of Conformer-CTC (13M parameters) trained on NeMo ASRSet with around 16000 hours of english speech. The model transcribes speech in lower case english alphabet along with spaces and apostrophes. Model Architecture Conformer-CTC model is a non-autoregressive variant of Conformer model [1] for Automatic Speech Recognition which uses CTC ..."
+    },
+    {
+      "title": "Open-source English speech recognition model stt_en_conformer_ctc_small ...",
+      "url": "https://model.aibase.com/models/details/1959857271181938688",
+      "snippet": "NVIDIA Conformer-CTC Small is an English speech recognition model that can transcribe English speech into lowercase English letters containing spaces and apostrophes. This model is based on a non-autoregressive small variant of the Conformer architecture, with approximately 13 million parameters. It is trained on thousands of hours of English speech data and is compatible with NVIDIA Riva for ..."
+    }
+  ]
+}

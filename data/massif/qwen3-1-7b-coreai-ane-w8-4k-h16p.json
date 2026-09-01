@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "massif/Qwen3-1.7B-CoreAI-ANE-W8-4K-h16p",
+  "slug": "massif-qwen3-1-7b-coreai-ane-w8-4k-h16p",
+  "author": "massif",
+  "url": "https://huggingface.co/massif/Qwen3-1.7B-CoreAI-ANE-W8-4K-h16p",
+  "created_at": "2026-07-19T08:38:53.000Z",
+  "updated_at": "2026-09-01T09:58:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "core-ai",
+    "apple-core-ai",
+    "ios",
+    "apple-neural-engine",
+    "ane",
+    "on-device",
+    "qwen3",
+    "int8",
+    "w8",
+    "4k-context",
+    "h16p",
+    "text-generation",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3602958384,
+  "storage_human": "3.6 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "massif/Qwen3-1.7B-CoreAI-ANE-W8-4K-h16p · Hugging Face",
+      "url": "https://huggingface.co/massif/Qwen3-1.7B-CoreAI-ANE-W8-4K-h16p",
+      "snippet": "Qwen3-1.7B · Apple Core AI · ANE · W8 · 4K · h16p A complete, directly downloadable Apple Core AI bundle for Qwen3-1.7B, AOT-compiled for A17 Pro (h16p) with Neural Engine preferred."
+    },
+    {
+      "title": "massif/Qwen3-1.7B-CoreAI-ANE-W8-2K-h16p · Hugging Face",
+      "url": "https://huggingface.co/massif/Qwen3-1.7B-CoreAI-ANE-W8-2K-h16p",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "massif-01/qwen3-1.7b-coreai-reproduction - GitHub",
+      "url": "https://github.com/massif-01/qwen3-1.7b-coreai-reproduction",
+      "snippet": "Reproducible Qwen3-1.7B Core AI INT4 GPU conversion, physical-device benchmarks, and W8/ANE comparison. - massif-01/qwen3-1.7b-coreai-reproduction"
+    },
+    {
+      "title": "GitHub - massif-01/qwen3-1.7b-coreai-ios: High-fidelity Qwen3-1.7B W8 ...",
+      "url": "https://github.com/massif-01/qwen3-1.7b-coreai-ios",
+      "snippet": "Qwen3-1.7B on Apple Core AI for iOS This repository documents a reproducible Qwen3-1.7B onboarding for Apple&#x27;s coreai-models iOS path. Quality-first result: the frozen W8 holdout retained 0.996598 mean logits cosine, 0.959625 minimum cosine, 98.37% top-1 agreement, and 0.003167 mean NLL delta against the uncompressed reference."
+    },
+    {
+      "title": "qwen3:1.7b - ollama.com",
+      "url": "https://ollama.com/library/qwen3:1.7b",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+    }
+  ]
+}

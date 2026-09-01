@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "realvuk/my_awesome_model",
+  "slug": "realvuk-my_awesome_model",
+  "author": "realvuk",
+  "url": "https://huggingface.co/realvuk/my_awesome_model",
+  "created_at": "2026-09-01T09:01:53.000Z",
+  "updated_at": "2026-09-01T09:02:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108310272,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433263424,
+  "storage_human": "433 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sdsffs5/MyAwesomeModel · Hugging Face",
+      "url": "https://huggingface.co/sdsffs5/MyAwesomeModel",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "generateai/my_awesome_model · Hugging Face",
+      "url": "https://huggingface.co/generateai/my_awesome_model",
+      "snippet": "my_awesome_model This model is a fine-tuned version of distilbert-base-uncased on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "my_awesome_model | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/myawesomemodel/",
+      "snippet": "my_awesome_model is a fine-tuned version of DistilBERT-base-uncased, specifically optimized for text classification tasks. The model demonstrates impressive performance metrics, achieving a training accuracy of 92.95% and a final training loss of 0.0632 after 2 epochs of training."
+    },
+    {
+      "title": "my_awesome_model huggingface.co api & stevhliu my_awesome_model github ...",
+      "url": "https://www.toolify.ai/ai-model/stevhliu-my-awesome-model",
+      "snippet": "my_awesome_model is an open source model from GitHub that offers a free installation service, and any user can find my_awesome_model on GitHub to install. At the same time, huggingface.co provides the effect of my_awesome_model install, users can directly use my_awesome_model installed effect in huggingface.co for debugging and trial."
+    },
+    {
+      "title": "An AI Instagram Model Made $80,000 in a Week. Here Is How the Scam ...",
+      "url": "https://www.ledgerapp.app/blog/ai-instagram-model-fanvue-scam-80k",
+      "snippet": "A Reddit operator detailed how they built a fake AI Instagram model that pulled in $80K from Fanvue subscriptions before Instagram banned the account. The exact playbook, the tells, and what to do about it."
+    }
+  ]
+}

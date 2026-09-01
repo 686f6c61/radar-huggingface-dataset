@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Plana-Chan/Qwen3.8-27B-Uncensored-GGUF",
+  "slug": "plana-chan-qwen3-8-27b-uncensored-gguf",
+  "author": "Plana-Chan",
+  "url": "https://huggingface.co/Plana-Chan/Qwen3.8-27B-Uncensored-GGUF",
+  "created_at": "2026-09-01T08:42:47.000Z",
+  "updated_at": "2026-09-01T08:42:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "uncensored",
+    "qwen3.8",
+    "mtp",
+    "speculative-decoding",
+    "imatrix",
+    "quantized",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 231256590464,
+  "storage_human": "231.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
+      "snippet": "Bottom line \"Qwen 3.8 27B uncensored GGUF\" has an answer, and it is a concrete download: Qwen3.8-27B-Uncensored-GGUF — F16 plus 12 quantization tiers for llama.cpp, the abliterated weights from our FP8 build, 262K context, vision, and MTP, under Apache 2.0 and research-only."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "Run Qwen 3.8 27B uncensored locally: pick the GGUF quant for your VRAM, serve it with llama.cpp or Ollama, and respect the research-only boundary."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-OrcaRouter-GGUF - Hugging Face",
+      "url": "https://huggingface.co/chimingw/Qwen3.8-27B-Uncensored-OrcaRouter-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - David2024patton/Qwen3.8-27B-Uncensored-UD3-GGUF",
+      "url": "https://github.com/David2024patton/Qwen3.8-27B-Uncensored-UD3-GGUF",
+      "snippet": "Qwen3.8-27B-Uncensored (Unsloth Dynamic 3.0 UD3-GGUF) An advanced, hybrid mixed-precision Unsloth Dynamic 3.0 (UD3) quantization of Qwen3.8-27B-Uncensored featuring a verified, pinned Q8_0 Multi-Token Prediction (MTP) draft head (Layer 64)."
+    }
+  ]
+}

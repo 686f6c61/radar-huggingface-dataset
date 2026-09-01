@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Vinnarasan/Agentic",
+  "slug": "vinnarasan-agentic",
+  "author": "Vinnarasan",
+  "url": "https://huggingface.co/Vinnarasan/Agentic",
+  "created_at": "2026-09-01T08:07:32.000Z",
+  "updated_at": "2026-09-01T08:21:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889036,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLMjacking evolved: Attackers are using stolen AI compute to build ...",
+      "url": "https://www.sysdig.com/blog/llmjacking-evolved-attackers-are-using-stolen-ai-compute-to-build-offensive-agentic-tools",
+      "snippet": "From resource consumption to autonomous offensive agents This operation is the latest step in a threat pattern the Sysdig TRT has tracked since 2024. In May 2024, we coined the term LLMjacking to describe threat actors using stolen cloud credentials to gain access to a victim&#x27;s paid AI model services and leverage the compute power, leaving the victim to pay the bill. At the time, we modeled a ..."
+    },
+    {
+      "title": "Agentic AI: A Comprehensive Survey of Architectures, Applications, and ...",
+      "url": "https://arxiv.org/html/2510.25445v1",
+      "snippet": "In contrast, Agentic AI is the broader field and architectural approach concerned with creating systems that exhibit agency. Crucially, this often involves the orchestration of Multi-Agent Systems (MAS), where multiple specialized agents work together, coordinating and communicating to solve problems that are too complex for a single agent."
+    },
+    {
+      "title": "The agentic organization: A new operating model for AI | McKinsey",
+      "url": "https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-agentic-organization-contours-of-the-next-paradigm-for-the-ai-era",
+      "snippet": "AI is bringing the largest organizational paradigm shift since the industrial and digital revolutions (see sidebar, \"The evolution of operating models\"). This new paradigm unites humans and AI agents —both virtual and physical—to work side by side at scale at near-zero marginal cost. We call it the agentic organization."
+    },
+    {
+      "title": "The Rise of Agentic AI: A Review of Definitions, Frameworks ... - MDPI",
+      "url": "https://www.mdpi.com/1999-5903/17/9/404",
+      "snippet": "Agentic AI systems are a recently emerged and important approach that goes beyond traditional AI, generative AI, and autonomous systems by focusing on autonomy, adaptability, and goal-driven reasoning. This study provides a clear review of agentic AI systems by bringing together their definitions, frameworks, and architectures, and by comparing them with related areas like generative AI ..."
+    },
+    {
+      "title": "Agentic AI: A Comprehensive Survey of Architectures, Applications, and ...",
+      "url": "https://arxiv.org/pdf/2510.25445",
+      "snippet": "Abstract Agentic AI represents a transformative shift in artificial intelligence, but its rapid advancement has led to a fragmented understanding, often conflating mod-ern neural systems with outdated symbolic models—a practice known as con-ceptual retrofitting. This survey cuts through this confusion by introducing a novel dual-paradigm framework that categorizes agentic systems into two ..."
+    }
+  ]
+}

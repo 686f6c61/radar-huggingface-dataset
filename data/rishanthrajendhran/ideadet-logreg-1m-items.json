@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "rishanthrajendhran/ideadet-logreg-1m-items",
+  "slug": "rishanthrajendhran-ideadet-logreg-1m-items",
+  "author": "rishanthrajendhran",
+  "url": "https://huggingface.co/rishanthrajendhran/ideadet-logreg-1m-items",
+  "created_at": "2026-09-01T02:25:39.000Z",
+  "updated_at": "2026-09-01T02:25:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ai-detection",
+    "logistic-regression",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16150,
+  "storage_human": "16150 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rishanthrajendhran/ideadet-logreg-1m-items · Hugging Face",
+      "url": "https://huggingface.co/rishanthrajendhran/ideadet-logreg-1m-items",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rishanthrajendhran/ideadet-logreg-1m-outline · Hugging Face",
+      "url": "https://huggingface.co/rishanthrajendhran/ideadet-logreg-1m-outline",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Rishanth Rajendhran",
+      "url": "https://rishanthrajendhran.github.io/",
+      "snippet": "My research focuses on analysing and improving generations by large language models, particularly long-context reasoning, factuality, and reinforcement learning from human/AI feedback."
+    },
+    {
+      "title": "RishanthRajendhran (Rishanth Rajendhran) · GitHub",
+      "url": "https://github.com/RishanthRajendhran/",
+      "snippet": "RishanthRajendhran has 47 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "‪Rishanth Rajendhran‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=UfpytiUAAAAJ&hl=en",
+      "snippet": "‪University of Maryland‬ - ‪‪Cited by 7‬‬ - ‪natural language processing‬ - ‪machine learning‬ - ‪deep learning‬ - ‪reinforcement learning‬"
+    }
+  ]
+}

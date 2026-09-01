@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Neeelis/my-loras",
+  "slug": "neeelis-my-loras",
+  "author": "Neeelis",
+  "url": "https://huggingface.co/Neeelis/my-loras",
+  "created_at": "2026-09-01T08:01:48.000Z",
+  "updated_at": "2026-09-01T08:03:49.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306831680,
+  "storage_human": "307 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,919 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "LoRA Studio - AI Image Generation",
+      "url": "https://lorastudio.org/",
+      "snippet": "Train custom LoRA models and generate stunning images with AI-powered text prompts."
+    },
+    {
+      "title": "My Creation Gallery - AI Generated Images & Videos",
+      "url": "https://loraai.io/mylora",
+      "snippet": "View and manage your AI generated creations. Browse your creation history, download images and videos, and track generation status."
+    },
+    {
+      "title": "Where to Find My Models Now - Civitai",
+      "url": "https://civitai.com/articles/15281/where-to-find-my-models-now",
+      "snippet": "As of May 28, 2025, I&#x27;ve published a total of 446 models on CivitAI, including checkpoints, LoRAs, and TIs — most of them focused on celebrity LoRAs and TIs. Due to CivitAI&#x27;s new policy banning celebrity content, all related models have been taken down. So, I&#x27;m moving them to other platforms. For now, you can find and download my models on these three platforms. I&#x27;ll keep looking for better ..."
+    }
+  ]
+}

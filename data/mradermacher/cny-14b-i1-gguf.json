@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/CNY-14B-i1-GGUF",
+  "slug": "mradermacher-cny-14b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/CNY-14B-i1-GGUF",
+  "created_at": "2026-09-01T09:59:18.000Z",
+  "updated_at": "2026-09-01T10:07:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 5779102784,
+  "storage_human": "5.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/CURE-MED-14B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/CURE-MED-14B-i1-GGUF",
+      "snippet": "For a convenient overview and download list, visit our model page for this model. static quants are available at https://huggingface.co/mradermacher/CURE-MED-14B-GGUF"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "SecGPT-14B-Reasoning-i1-GGUF huggingface.co api & mradermacher SecGPT ...",
+      "url": "https://www.toolify.ai/ai-model/mradermacher-secgpt-14b-reasoning-i1-gguf",
+      "snippet": "SecGPT-14B-Reasoning-i1-GGUF is an open source model from GitHub that offers a free installation service, and any user can find SecGPT-14B-Reasoning-i1-GGUF on GitHub to install. At the same time, huggingface.co provides the effect of SecGPT-14B-Reasoning-i1-GGUF install, users can directly use SecGPT-14B-Reasoning-i1-GGUF installed effect in huggingface.co for debugging and trial. It also ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sortify-ai/siglip2-so400m-patch14-384-text",
+  "slug": "sortify-ai-siglip2-so400m-patch14-384-text",
+  "author": "sortify-ai",
+  "url": "https://huggingface.co/sortify-ai/siglip2-so400m-patch14-384-text",
+  "created_at": "2026-09-01T09:35:39.000Z",
+  "updated_at": "2026-09-01T10:00:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "siglip2_text_model",
+    "siglip2",
+    "text-embeddings",
+    "feature-extraction",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 707782898,
+  "parameters_human": "707.8M",
+  "storage_bytes": 2869789218,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/siglip-so400m-patch14-384 · Hugging Face",
+      "url": "https://huggingface.co/google/siglip-so400m-patch14-384",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/siglip2-so400m-patch14-384-jax · Hugging Face",
+      "url": "https://huggingface.co/google/siglip2-so400m-patch14-384-jax",
+      "snippet": "google / siglip2-so400m-patch14-384-jax like 1 Follow Google 63.1k Zero-Shot Image Classification vision arxiv:2502.14786 arxiv:2303.15343 arxiv:2209.06794 License:apache-2.0 Model card FilesFiles and versions xet Community 1 Copy to bucket new SigLIP 2 So400m Intended uses Training procedure Training data Compute Evaluation results BibTeX ..."
+    },
+    {
+      "title": "siglip2-so400m-patch14-384: Image-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/siglip2-so400m-patch14-384-google",
+      "snippet": "Overview siglip2-so400m-patch14-384 is a vision-language encoder developed by google that performs zero-shot image classification, image-text retrieval, and serves as a vision backbone for larger vision-language models. Built on the SigLIP 2 architecture, this model extends the original SigLIP pretraining objective with three key innovations: decoder loss, global-local and masked prediction ..."
+    },
+    {
+      "title": "siglip2-so400m-patch14-384 huggingface.co api & google siglip2-so400m ...",
+      "url": "https://www.toolify.ai/ai-model/google-siglip2-so400m-patch14-384",
+      "snippet": "siglip2-so400m-patch14-384 is an open source model from GitHub that offers a free installation service, and any user can find siglip2-so400m-patch14-384 on GitHub to install. At the same time, huggingface.co provides the effect of siglip2-so400m-patch14-384 install, users can directly use siglip2-so400m-patch14-384 installed effect in huggingface.co for debugging and trial. It also supports ..."
+    },
+    {
+      "title": "siglip-so400m-patch14-384: Text-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/siglip-so400m-patch14-384-google",
+      "snippet": "siglip-so400m-patch14-384 is a multimodal vision-language model created by google that performs zero-shot image classification and image-text retrieval by..."
+    }
+  ]
+}

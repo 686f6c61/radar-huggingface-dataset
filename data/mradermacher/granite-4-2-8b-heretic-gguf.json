@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/granite-4.2-8b-heretic-GGUF",
+  "slug": "mradermacher-granite-4-2-8b-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/granite-4.2-8b-heretic-GGUF",
+  "created_at": "2026-09-01T09:51:28.000Z",
+  "updated_at": "2026-09-01T10:12:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8791592960,
+  "parameters_human": "8.79B",
+  "storage_bytes": 26090555456,
+  "storage_human": "26.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/granite-4.1-8b-heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/granite-4.1-8b-heretic-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/granite-4.1-8b-heretic-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/granite-4.1-8b-heretic-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "IBM: Granite 4.2 8B - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/ibm-granite/granite-4.2-8b-20260831",
+      "snippet": "Granite 4.2 8B is a dense reasoning model from IBM. It is suited for mathematics, code generation, multilingual dialogue, and agentic workflows that need multi-step reasoning."
+    },
+    {
+      "title": "Granite 4.2 8B: IBM&#x27;s Apache-2.0 Reasoning Model | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/granite-4-2-8b/",
+      "snippet": "Granite 4.2 8B is IBM&#x27;s Apache-2.0 dense reasoning model, released 25 Aug 2026 with a switchable thinking mode, 128K context and 47.67 on SWE-bench Verified."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Zhangdanyang/Kimi-K3-DSpark-ATOM-Native-FP8",
+  "slug": "zhangdanyang-kimi-k3-dspark-atom-native-fp8",
+  "author": "Zhangdanyang",
+  "url": "https://huggingface.co/Zhangdanyang/Kimi-K3-DSpark-ATOM-Native-FP8",
+  "created_at": "2026-09-01T09:47:39.000Z",
+  "updated_at": "2026-09-01T09:49:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "atom",
+  "languages": [],
+  "tags": [
+    "atom",
+    "safetensors",
+    "atom_k3_dspark",
+    "dspark",
+    "speculative-decoding",
+    "fp8",
+    "text-generation",
+    "base_model:Inferact/Kimi-K3-DSpark",
+    "base_model:quantized:Inferact/Kimi-K3-DSpark",
+    "quark",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3582956801,
+  "parameters_human": "3.58B",
+  "storage_bytes": 5196034114,
+  "storage_human": "5.2 GB",
+  "base_model": "Inferact/Kimi-K3-DSpark",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zhangdanyang/Kimi-K3-DSpark-FP8-PTPC · Hugging Face",
+      "url": "https://huggingface.co/Zhangdanyang/Kimi-K3-DSpark-FP8-PTPC",
+      "snippet": "Model Overview Inferact/Kimi-K3-DSpark is an MLA-native DSpark draft model that accelerates Kimi-K3 on vLLM, served through vLLM&#x27;s native dspark speculative method. The draft trains on target hidden states extracted from vLLM itself — the same engine that serves it, so the numerics it learns from are the numerics it meets at inference."
+    },
+    {
+      "title": "Inferact/Kimi-K3-DSpark · Hugging Face",
+      "url": "https://huggingface.co/Inferact/Kimi-K3-DSpark",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kimi K3 AI Model Escapes Sandbox During Security Test to Fetch Answers",
+      "url": "https://cybersecuritynews.com/kimi-k3-ai-model-escapes-sandbox/",
+      "snippet": "Moonshot AI&#x27;s open-weight model Kimi K3 broke out of its isolated testing sandbox during a cybersecurity evaluation and reached the open internet, according to a new report from Wired."
+    },
+    {
+      "title": "Kimi-K3-DSpark · Models",
+      "url": "https://www.modelscope.cn/models/skyai/Kimi-K3-DSpark",
+      "snippet": "License: kimi-k3 k3_dspark dspark, speculative-decoding, draft-model and 3 more @ skyai 129 downloads updated Jul 27,2026"
+    },
+    {
+      "title": "cann-infer-ds-dspark/models/kimi_k3 at main · zqc214/cann ... - GitHub",
+      "url": "https://github.com/zqc214/cann-infer-ds-dspark/tree/main/models/kimi_k3",
+      "snippet": "概述 Kimi K3 总参数量约 2.8T，采用 Kimi Delta Attention（KDA）与 Gated MLA 交错排布的混合注意力 MoE 架构。本样例完成 Kimi K3 的 NPU 推理适配，并接入 cann-recipes-infer 统一推理框架，当前提供 Atlas A5（Ascend 950DT）4 机 32 卡推理配置。"
+    }
+  ]
+}

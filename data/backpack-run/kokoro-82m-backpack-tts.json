@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "backpack-run/Kokoro-82M-Backpack-TTS",
+  "slug": "backpack-run-kokoro-82m-backpack-tts",
+  "author": "backpack-run",
+  "url": "https://huggingface.co/backpack-run/Kokoro-82M-Backpack-TTS",
+  "created_at": "2026-09-01T08:12:34.000Z",
+  "updated_at": "2026-09-01T08:23:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "backpack",
+    "audio",
+    "text-to-speech",
+    "base_model:hexgrad/Kokoro-82M",
+    "base_model:finetune:hexgrad/Kokoro-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 329305936,
+  "storage_human": "329 MB",
+  "base_model": "hexgrad/Kokoro-82M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hexgrad/Kokoro-82M · Hugging Face",
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - hexgrad/kokoro: https://hf.co/hexgrad/Kokoro-82M",
+      "url": "https://github.com/hexgrad/kokoro",
+      "snippet": "Kokoro is an open-weight TTS model with 82 million parameters. Despite its lightweight architecture, it delivers comparable quality to larger models while being significantly faster and more cost-efficient."
+    },
+    {
+      "title": "GitHub - zboyles/Kokoro-82M: Fork of https://huggingface.co/hexgrad ...",
+      "url": "https://github.com/zboyles/Kokoro-82M",
+      "snippet": "Kokoro is a frontier TTS model for its size of 82 million parameters (text in/audio out). On 25 Dec 2024, Kokoro v0.19 weights were permissively released in full fp32 precision under an Apache 2.0 license."
+    },
+    {
+      "title": "aiplexdeveloper/Kokoro-82M · Hugging Face",
+      "url": "https://huggingface.co/aiplexdeveloper/Kokoro-82M",
+      "snippet": "Kokoro is an open-weight TTS model with 82 million parameters. Despite its lightweight architecture, it delivers comparable quality to larger models while being significantly faster and more cost-efficient. With Apache-licensed weights, Kokoro can be deployed anywhere from production environments to personal projects."
+    },
+    {
+      "title": "Kokoro-82M - Install Locally and Run on Linux Ubuntu - Best Lightweight ...",
+      "url": "https://aleksandarhaber.com/kokoro-82m-install-locally-and-run-on-linux-ubuntu-best-lightweight-text-to-speech-ai-model/",
+      "snippet": "In this tutorial, we explain how to download, install, and run locally Kokoro-82M on a Linux Ubuntu computer. Kokoro is an open-weight and open-source text-to-speech model or briefly TTS model."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Gom-sy/ICRA-S",
+  "slug": "gom-sy-icra-s",
+  "author": "Gom-sy",
+  "url": "https://huggingface.co/Gom-sy/ICRA-S",
+  "created_at": "2026-09-01T08:57:53.000Z",
+  "updated_at": "2026-09-01T09:00:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d6",
+    "robotics",
+    "manipulation",
+    "gr00t",
+    "stretch",
+    "base_model:nvidia/GR00T-N1.6-3B",
+    "base_model:finetune:nvidia/GR00T-N1.6-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3286608832,
+  "parameters_human": "3.29B",
+  "storage_bytes": 6573383842,
+  "storage_human": "6.6 GB",
+  "base_model": "nvidia/GR00T-N1.6-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gom-sy/stretch-icra-run-e · Hugging Face",
+      "url": "https://huggingface.co/Gom-sy/stretch-icra-run-e",
+      "snippet": "Stretch ICRA Run E Private research checkpoint for the Hello Robot Stretch cup-serving policy experiments."
+    },
+    {
+      "title": "Gom-sy/stretch-icra-run-a · Hugging Face",
+      "url": "https://huggingface.co/Gom-sy/stretch-icra-run-a",
+      "snippet": "Stretch ICRA Run A Private research checkpoint for the Hello Robot Stretch cup-serving policy experiments."
+    },
+    {
+      "title": "Spirit AI 千寻智能 @ ICRA 2026 | Official Recap - YouTube",
+      "url": "https://www.youtube.com/watch?v=6RySDH0p7RM",
+      "snippet": "Relive the highlights from Vienna in 60 seconds! The Tech: Immersive live demos of our embodied AI models. The Brand: Minimalist tech aesthetics attracting the world&#x27;s sharpest minds. The Love ..."
+    },
+    {
+      "title": "GENISOM AI Debuts at ICRA 2026 with Full-Stack Embodied Intelligence System",
+      "url": "https://ohsem.me/2026/06/genisom-ai-debuts-at-icra-2026-with-full-stack-embodied-intelligence-system/",
+      "snippet": "GENISOM AI Made Its First Appearance at ICRA ICRA is widely recognized as one of the world&#x27;s leading conferences on robotics and automation, drawing researchers, engineers, and industry partners from across the globe. For GENISOM AI, Vienna marked the company&#x27;s first major exhibition at the conference, and it arrived not with a single announcement, but with a full hardware and software ..."
+    },
+    {
+      "title": "GENISOM AI Debuts at ICRA 2026 with Full-Stack Embodied Intelligence System",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/genisom-ai-debuts-icra-2026-041800887.html",
+      "snippet": "Beijing, China, June 10, 2026 (GLOBE NEWSWIRE) -- GENISOM AI, a full-stack technology provider in embodied intelligence, made its debut at ICRA 2026 in Vienna. The company presented its complete ..."
+    }
+  ]
+}

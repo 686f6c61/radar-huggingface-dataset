@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base-tf",
+  "slug": "agurung-cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base-tf",
+  "author": "agurung",
+  "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base-tf",
+  "created_at": "2026-09-01T00:30:30.000Z",
+  "updated_at": "2026-09-01T08:48:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "openrlhf",
+    "grpo",
+    "reinforcement-learning",
+    "code-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 17657211690,
+  "storage_human": "17.7 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base",
+      "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base-tf ...",
+      "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base-tf",
+      "snippet": "Use this model Instructions to use agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base-tf with libraries, inference providers, notebooks, and local apps. Follow thes"
+    },
+    {
+      "title": "cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-groot30v11v",
+      "url": "https://friendli.ai/models/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-groot30v11v",
+      "snippet": "Deploy cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-groot30v11v with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10 ...",
+      "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-groot30v11v",
+      "snippet": "Instructions to use agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-groot30v11v with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "agurung/cobalt-ft-qwen3-4b-dpo-mixed-12-mc-correct-only-v1-lora-r128 ...",
+      "url": "https://huggingface.co/agurung/cobalt-ft-qwen3-4b-dpo-mixed-12-mc-correct-only-v1-lora-r128-a32-lr5e-6-const-lr5e-6-gb64-ep2-be",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

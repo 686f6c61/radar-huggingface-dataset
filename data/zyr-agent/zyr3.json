@@ -5,7 +5,7 @@
   "author": "zyr-AGENT",
   "url": "https://huggingface.co/zyr-AGENT/zyr3",
   "created_at": "2026-08-24T11:07:47.000Z",
-  "updated_at": "2026-08-30T18:04:49.000Z",
+  "updated_at": "2026-08-31T06:00:18.000Z",
   "license": "zyr3-free-use-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,12 +30,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 2771,
+  "downloads_30d": 2951,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 65688382,
-  "storage_human": "66 MB",
+  "storage_bytes": 317096737,
+  "storage_human": "317 MB",
   "base_model": "",
   "formats": [
     "safetensors"

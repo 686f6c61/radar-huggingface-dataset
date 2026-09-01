@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-Abliterated-Uncensored-NOESIS-BF16-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-abliterated-uncensored-noesis-bf16-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Abliterated-Uncensored-NOESIS-BF16-GGUF",
+  "created_at": "2026-09-01T08:23:53.000Z",
+  "updated_at": "2026-09-01T09:07:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "noesis",
+    "noesis-repack",
+    "qwen3_5",
+    "qwen3_8",
+    "bf16",
+    "mtp",
+    "en",
+    "base_model:AMAImedia/Qwen3.8-27B-Abliterated-Uncensored-NOESIS-BF16",
+    "base_model:quantized:AMAImedia/Qwen3.8-27B-Abliterated-Uncensored-NOESIS-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780661504,
+  "storage_human": "190.8 GB",
+  "base_model": "AMAImedia/Qwen3.8-27B-Abliterated-Uncensored-NOESIS-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-ABLITERATED-BF16-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-ABLITERATED-BF16-i1-GGUF",
+      "snippet": "mradermacher / Qwen3.8-27B-ABLITERATED-BF16-i1-GGUF like 0 Transformers GGUF English qwen3.8 qwen 27b bf16 dense vision-language derisked research security-research red-teaming coding tool-calling long-context public-research-preview imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket ..."
+    },
+    {
+      "title": "Qwen3.8-27B AEON Uncensored: How This Abliteration Actually Works",
+      "url": "https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration",
+      "snippet": "A community abliteration of Qwen3.8-27B explains its KL-drift methodology, judge-based refusal testing, and how to run the model via vLLM."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Qwen3.8-27B tensor-level abliterated, vision tower and MTP head untouched. 0% over-refusal on XSTest, 0-6% refusal across the A/B suite, no measurable capability loss. Full mmproj vision, tool calling and thinking, 262K context."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
+      "snippet": "Bottom line \"Qwen 3.8 27B uncensored GGUF\" has an answer, and it is a concrete download: Qwen3.8-27B-Uncensored-GGUF — F16 plus 12 quantization tiers for llama.cpp, the abliterated weights from our FP8 build, 262K context, vision, and MTP, under Apache 2.0 and research-only."
+    }
+  ]
+}

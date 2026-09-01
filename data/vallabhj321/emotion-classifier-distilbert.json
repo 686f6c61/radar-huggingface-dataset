@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "vallabhj321/emotion-classifier-distilbert",
+  "slug": "vallabhj321-emotion-classifier-distilbert",
+  "author": "vallabhj321",
+  "url": "https://huggingface.co/vallabhj321/emotion-classifier-distilbert",
+  "created_at": "2026-09-01T08:08:58.000Z",
+  "updated_at": "2026-09-01T08:09:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267844872,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - SinaArabi/Emotion-Classification-DistilBERT: This repository ...",
+      "url": "https://github.com/SinaArabi/Emotion-Classification-DistilBERT",
+      "snippet": "This repository implements a multi-label Emotion Classification system using DistilBERT, a lighter version of BERT. The project spans the complete pipeline, from training the model, deploying it via a FastAPI server, to providing a real-time Streamlit frontend for easy user interaction."
+    },
+    {
+      "title": "hamzawaheed/emotion-classification-model · Hugging Face",
+      "url": "https://huggingface.co/hamzawaheed/emotion-classification-model",
+      "snippet": "The Emotion Classification Model is a fine-tuned version of the distilbert-base-uncased transformer architecture, adapted specifically for classifying text into six distinct emotions."
+    },
+    {
+      "title": "Panda0116/emotion-classification-model · Hugging Face",
+      "url": "https://huggingface.co/Panda0116/emotion-classification-model",
+      "snippet": "emotion-classification-model This model is a fine-tuned version of distilbert-base-uncased on the dair-ai/emotion dataset. It is designed to classify text into the following emotional categories: sadness (0), joy (1), love (2), anger (3), fear (4), surprise (5). It achieves the following results: Validation Accuracy: 94.25% Test Accuracy: 93.2% Model Description This model uses the DistilBERT ..."
+    },
+    {
+      "title": "tharUmesh/emotion-classification-distilbert - GitHub",
+      "url": "https://github.com/tharUmesh/emotion-classification-distilbert",
+      "snippet": "Emotion Classification with DistilBERT This repository contains a Jupyter Notebook that fine-tunes a DistilBERT model to classify emotions in tweets using the dair-ai/emotion dataset. The project demonstrates a complete NLP pipeline, including data preprocessing, model training, evaluation, and inference."
+    },
+    {
+      "title": "How to Fine-Tune DistilBERT for Emotion Classification",
+      "url": "https://towardsdatascience.com/how-to-fine-tune-distilbert-for-emotion-classification/",
+      "snippet": "This is how the fine-tuned DistilBERT model did on the test set compared to the pre-trained base model: Radar chart of fine-tuned DistilBERT model. Image by author. Before fine-tuning, the pre-trained model performed poorly on our dataset, because it hasn&#x27;t seen the specific emotion labels before."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/LFM2.5-8B-A1B-Opus-Distil",
   "created_at": "2026-05-30T20:45:49.000Z",
-  "updated_at": "2026-08-30T14:35:44.000Z",
+  "updated_at": "2026-08-31T13:15:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 9,
-  "downloads_30d": 3525,
+  "downloads_30d": 3670,
   "trending_score": 0,
   "parameters": 8467856832,
   "parameters_human": "8.47B",

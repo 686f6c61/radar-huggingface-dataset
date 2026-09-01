@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yennj12/distilgpt2-lora-fact",
+  "slug": "yennj12-distilgpt2-lora-fact",
+  "author": "yennj12",
+  "url": "https://huggingface.co/yennj12/distilgpt2-lora-fact",
+  "created_at": "2026-09-01T10:27:42.000Z",
+  "updated_at": "2026-09-01T10:27:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "educational",
+    "base_model:adapter:distilgpt2",
+    "text-generation",
+    "base_model:distilbert/distilgpt2",
+    "base_model:adapter:distilbert/distilgpt2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 591352,
+  "storage_human": "591352 B",
+  "base_model": "distilgpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rishisuresh/distilgpt2-Lora · Hugging Face",
+      "url": "https://huggingface.co/rishisuresh/distilgpt2-Lora",
+      "snippet": "distilgpt2-Lora This model is a fine-tuned version of distilbert/distilgpt2 on an unknown dataset. It achieves the following results on the evaluation set: Loss: 9.4183 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training ..."
+    },
+    {
+      "title": "distilbert/distilgpt2 · Hugging Face",
+      "url": "https://huggingface.co/distilbert/distilgpt2",
+      "snippet": "Model Description: DistilGPT2 is an English-language model pre-trained with the supervision of the 124 million parameter version of GPT-2. DistilGPT2, which has 82 million parameters, was developed using knowledge distillation and was designed to be a faster, lighter version of GPT-2."
+    },
+    {
+      "title": "GitHub - ojaskeer/LoRA-DistilGPT2-IA2",
+      "url": "https://github.com/ojaskeer/LoRA-DistilGPT2-IA2",
+      "snippet": "This project demonstrates lightweight fine-tuning of a pretrained DistilGPT2 model using Low-Rank Adaptation (LoRA), implemented on a CPU-only environment (Dell laptop) with Hugging Face Transformers and PEFT libraries. 📁 Part of IA2 Research Submission"
+    },
+    {
+      "title": "HuggingFace DistilGPT2 - AI Models",
+      "url": "https://aimodels.org/ai-models/large-language-models/huggingface-distilgpt2/",
+      "snippet": "DistilGPT2 (short for Distilled-GPT2) is an English-language model pre-trained with the supervision of the smallest version of Generative Pre-trained Transformer 2 (GPT-2)."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,919 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    }
+  ]
+}

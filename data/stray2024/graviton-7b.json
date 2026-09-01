@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Stray2024/Graviton-7B",
+  "slug": "stray2024-graviton-7b",
+  "author": "Stray2024",
+  "url": "https://huggingface.co/Stray2024/Graviton-7B",
+  "created_at": "2026-09-01T08:40:18.000Z",
+  "updated_at": "2026-09-01T08:41:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073664,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stray2024 (Stray 2024) - Hugging Face",
+      "url": "https://huggingface.co/Stray2024",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model about 4 hours ago"
+    },
+    {
+      "title": "GitHub - rohanjain1648/Graviton-Scout: An autonomous research agent ...",
+      "url": "https://github.com/rohanjain1648/Graviton-Scout",
+      "snippet": "Graviton Scout An autonomous research agent that plans, searches, reads sources, and writes a cited report — running entirely on a free Arm CPU instance. Built for the Arm AI Optimization Challenge 2026 — Track 2: Cloud AI."
+    },
+    {
+      "title": "Graviton — 500B+ LLMs on a Mac Mini | AI for Everyone",
+      "url": "https://opengraviton.github.io/",
+      "snippet": "72B Model on a Mac Mini Models that corporations run on server farms — Graviton runs on your desk. A 72B model compressed from 144 GB to 36 GB, streamed layer by layer so it never exceeds your RAM."
+    },
+    {
+      "title": "GitHub - opengraviton/graviton",
+      "url": "https://github.com/opengraviton/graviton",
+      "snippet": "The most powerful AI models shouldn&#x27;t belong to a handful of corporations. Graviton is the open-source engine that breaks AI free from cloud monopolies and puts it on hardware you already own. A 72B model? Compressed to 36 GB, streamed layer by layer onto a Mac Mini."
+    },
+    {
+      "title": "Fara-7B: An Efficient Agentic Model for Computer Use",
+      "url": "https://www.microsoft.com/en-us/research/blog/fara-7b-an-efficient-agentic-model-for-computer-use/",
+      "snippet": "Fara-7B is our first agentic small language model for computer use. This experimental model includes robust safety measures to aid responsible deployment. Despite its size, Fara-7B holds its own against larger, more resource-intensive agentic systems:"
+    }
+  ]
+}

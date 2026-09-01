@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AboMohammad/FilesMangers-Downloader",
+  "slug": "abomohammad-filesmangers-downloader",
+  "author": "AboMohammad",
+  "url": "https://huggingface.co/AboMohammad/FilesMangers-Downloader",
+  "created_at": "2026-09-01T08:00:30.000Z",
+  "updated_at": "2026-09-01T08:00:30.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:afl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome Is Secretly Downloading a 4GB AI File — Here&#x27;s How to ...",
+      "url": "https://www.tech2geek.net/google-chrome-is-secretly-downloading-a-4gb-ai-file-heres-how-to-stop-it/",
+      "snippet": "Google Chrome may secretly download a 4GB Gemini Nano AI model to your PC. Learn how to check, disable, remove, and permanently block it."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "llms.txt files let hackers trick AI agents into malware | Cybernews",
+      "url": "https://cybernews.com/security/fortune500-security-gap-ai-agents-install-malware/",
+      "snippet": "Researchers found 237 unclaimed packages and domains in company llms.txt instruction files. Attackers can claim those names and make AI agents install malicious code from official-looking instructions. Researchers say their test package ran inside a Fortune 500 company in under four minutes. A real campaign impersonated Clerk by registering a package name referenced in its llms.txt file."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "MossyModels is a community library of YOLO and ONNX detection models for first-person shooters. Browse models by game, compare download counts and ratings, then download free PyTorch or ONNX weights. How the library works Each game page lists community-uploaded detection models with version numbers, input sizes, and comments."
+    }
+  ]
+}

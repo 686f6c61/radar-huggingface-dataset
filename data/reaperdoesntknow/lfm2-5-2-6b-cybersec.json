@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/LFM2.5-2.6B-CyberSec",
   "created_at": "2026-08-14T18:10:14.000Z",
-  "updated_at": "2026-08-30T14:35:40.000Z",
+  "updated_at": "2026-08-31T13:15:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 986,
+  "downloads_30d": 1102,
   "trending_score": 0,
   "parameters": 2697198592,
   "parameters_human": "2.70B",

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "BYYYUN/YiffyMix",
+  "slug": "byyyun-yiffymix",
+  "author": "BYYYUN",
+  "url": "https://huggingface.co/BYYYUN/YiffyMix",
+  "created_at": "2026-09-01T09:13:38.000Z",
+  "updated_at": "2026-09-01T09:13:38.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "Base Model",
+    "Anime",
+    "Furry",
+    "chilon249",
+    "stable-diffusion",
+    "stable-diffusion-1.5",
+    "stable-diffusion-diffusers",
+    "text-to-image",
+    "license:creativeml-openrail-m",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 859520964,
+  "parameters_human": "859.5M",
+  "storage_bytes": 10662777030,
+  "storage_human": "10.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yntec/YiffyMix at main - Hugging Face",
+      "url": "https://huggingface.co/Yntec/YiffyMix/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "YiffyMix - Plugger",
+      "url": "https://www.plugger.ai/models/yiffymix",
+      "snippet": "Unleash your imagination with YiffyMix, the revolutionary AI model that transforms text into captivating cartoon masterpieces, animals, monsters, vector art, 3D artwork, and intricate line art."
+    },
+    {
+      "title": "YiffyMix - v64-NoobXL | NoobAI Checkpoint | Civitai",
+      "url": "https://civitai.red/models/3671/yiffymix",
+      "snippet": "YiffyMix v4x V-pred Setting # YiffyMix v4x A1111 SD-WebUI or Forge V-pred Setting 1.Download config file \".yaml\" paste next to the model. 2.Raname \".yaml\" same as model name. ( check the \".yaml\" has [parameterization: \"v\"] line ) 3.Restart SD-WebUI ( if config fails to load, the model just generate noise )"
+    },
+    {
+      "title": "YiffyMix — Model Hub — Yodayo",
+      "url": "https://yodayo.com/models/59acd936-c2a6-4109-8d38-a53c9b127281",
+      "snippet": "Species/Artists grid list (update v50) & Furry LoRAs/samples/wildcards VAE:WD-KL-F8-Anime2, Furception correct contrast and noise reduction [Settings&#92;Stable Diffusion&#92;SD VAE] ClipSkip:Stop at CLIP layers=1 (SD=1, NAI=2, SDXL=2) [Settings&#92;Stable Diffusion&#92;Clip skip] Recommend \"Artist List\" for new user & comfyUI workflow ### YiffyMix v50 SDXL ..."
+    },
+    {
+      "title": "IDK-ab0ut/Yiffymix_V52-XL · Hugging Face",
+      "url": "https://huggingface.co/IDK-ab0ut/Yiffymix_V52-XL",
+      "snippet": "Overview📃 ️ This is a Diffusers-compatible version of Yiffymix v52 by chilon249. See the original page for more information. Keep in mind that this is SDXL-Lightning checkpoint model, so using fewer steps (around 12 to 25) and low guidance scale (around 4 to 6) is recommended for the best result. It&#x27;s also recommended to use clip skip of 2."
+    }
+  ]
+}

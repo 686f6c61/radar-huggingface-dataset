@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rikai-ai/brand_detector_v1.7",
+  "slug": "rikai-ai-brand_detector_v1-7",
+  "author": "rikai-ai",
+  "url": "https://huggingface.co/rikai-ai/brand_detector_v1.7",
+  "created_at": "2026-09-01T08:19:37.000Z",
+  "updated_at": "2026-09-01T08:20:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5473306,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rikai-ai/brand_detector_v1.6 · Hugging Face",
+      "url": "https://huggingface.co/rikai-ai/brand_detector_v1.6",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rikai-ai (RIKAI TECHNOLOGY) - Hugging Face",
+      "url": "https://huggingface.co/rikai-ai",
+      "snippet": "Org profile for RIKAI TECHNOLOGY on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Welcome to Rikai! — Rikai documentation",
+      "url": "https://rikai.readthedocs.io/en/stable/index.html",
+      "snippet": "Welcome to Rikai! Rikai is a framework specifically designed for AI workflows focused around large scale unstructured datasets (e.g., images, videos, sensor data (future), text (future), and more). Through every stage of the AI modeling workflow, Rikai strives to offer a great developer experience when working with real-world AI datasets."
+    },
+    {
+      "title": "GitHub - eto-ai/rikai: Parquet-based ML data format optimized for ...",
+      "url": "https://github.com/eto-ai/rikai",
+      "snippet": "Rikai is a framework specifically designed for AI workflows focused around large scale unstructured datasets (e.g., images, videos, sensor data (future), text (future), and more). Through every stage of the AI modeling workflow, Rikai strives to offer a great developer experience when working with real-world AI datasets. The quality of an AI dataset can make or break an AI project, but tooling ..."
+    },
+    {
+      "title": "rikai · PyPI",
+      "url": "https://pypi.org/project/rikai/",
+      "snippet": "Rikai is a framework specifically designed for AI workflows focused around large scale unstructured datasets (e.g., images, videos, sensor data (future), text (future), and more)."
+    }
+  ]
+}

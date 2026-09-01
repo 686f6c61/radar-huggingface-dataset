@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "YFC-112358/Qwen3.8-27B-TM-Gemma4-Glimmer-v2",
+  "slug": "yfc-112358-qwen3-8-27b-tm-gemma4-glimmer-v2",
+  "author": "YFC-112358",
+  "url": "https://huggingface.co/YFC-112358/Qwen3.8-27B-TM-Gemma4-Glimmer-v2",
+  "created_at": "2026-09-01T02:33:48.000Z",
+  "updated_at": "2026-09-01T05:37:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "cross-architecture-merge",
+    "optimal-transport",
+    "transport-and-merge",
+    "mergekit-alternative",
+    "conversational",
+    "arxiv:2602.05495",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575815696,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B, google/gemma-4-31B, meta-models/Muse-Glimmer-30B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YFC-112358/Qwen3.8-27B-TM-Gemma4-Glimmer-v2 · Hugging Face",
+      "url": "https://huggingface.co/YFC-112358/Qwen3.8-27B-TM-Gemma4-Glimmer-v2",
+      "snippet": "Instructions to use YFC-112358/Qwen3.8-27B-TM-Gemma4-Glimmer-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "Qwen3.8-27B vs Gemma 4 12B: Which Local Model Wins? - orcarouter.ai",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-vs-gemma-4-12b",
+      "snippet": "Qwen3.8-27B versus Gemma 4 12B is not a fair fight yet, and it is worth keeping it that way in your head. One is a known quantity you can deploy this afternoon on modest hardware with a clean license; the other is the most interesting unmeasured local model of the year, pending weights, a license file, and a benchmark."
+    }
+  ]
+}

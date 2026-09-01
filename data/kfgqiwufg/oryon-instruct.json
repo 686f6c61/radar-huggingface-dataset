@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kfgqiwufg/Oryon-instruct",
+  "slug": "kfgqiwufg-oryon-instruct",
+  "author": "kfgqiwufg",
+  "url": "https://huggingface.co/kfgqiwufg/Oryon-instruct",
+  "created_at": "2026-09-01T10:49:14.000Z",
+  "updated_at": "2026-09-01T10:49:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816096,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oryon/docs/MODEL_ENGINE.md at main · lulkebit/Oryon",
+      "url": "https://github.com/lulkebit/Oryon/blob/main/docs/MODEL_ENGINE.md",
+      "snippet": "Local-first desktop app for working with open-source AI models - Oryon/docs/MODEL_ENGINE.md at main · lulkebit/Oryon"
+    },
+    {
+      "title": "Local-first desktop app for working with open-source AI models",
+      "url": "https://github.com/lulkebit/Oryon",
+      "snippet": "Oryon is a Tauri 2 desktop application (Rust backend, React 19 + TypeScript frontend). You organize work in workspaces (one folder per workspace), chat with models that run entirely on your machine via llama.cpp, and use agent tools for files, terminal commands, git, code search, and more — scoped to the workspace. Models and privacy: Model weights are fetched as GGUF files from the Hugging ..."
+    },
+    {
+      "title": "Aligning language models to follow instructions | OpenAI",
+      "url": "https://openai.com/index/instruction-following/",
+      "snippet": "A byproduct of training our models to follow user instructions is that they may become more susceptible to misuse if instructed to produce unsafe outputs. Solving this requires our models to refuse certain instructions; doing this reliably is an important open research problem that we are excited to tackle."
+    },
+    {
+      "title": "Today we&#x27;re open-sourcing Oryon Pentest. Oryon is a long-horizon ...",
+      "url": "https://www.linkedin.com/posts/rafael-pradillo-lopez-ortum_today-were-open-sourcing-oryon-pentest-activity-7492683214008909824-HQC5",
+      "snippet": "Today we&#x27;re open-sourcing Oryon Pentest. Oryon is a long-horizon autonomous pentesting runtime designed around a simple boundary: the model owns investigation strategy, while deterministic code ..."
+    },
+    {
+      "title": "galaxyMindAiLabs/IoGPT-A1-Instruct · Hugging Face",
+      "url": "https://huggingface.co/galaxyMindAiLabs/IoGPT-A1-Instruct",
+      "snippet": "Model Card for IoGPT-Instruct IoGPT-Instruct is a fine-tuned generative text model developed by GalaxyMindAiLabs, built upon the powerful Mistral-Small-3.2-24B-Instruct-2506 architecture. It is designed to handle complex instructions with high reasoning capabilities while maintaining a user-friendly and engaging tone."
+    }
+  ]
+}

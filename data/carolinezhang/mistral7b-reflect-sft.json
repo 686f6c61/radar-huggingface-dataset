@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "carolinezhang/mistral7b-reflect-sft",
+  "slug": "carolinezhang-mistral7b-reflect-sft",
+  "author": "carolinezhang",
+  "url": "https://huggingface.co/carolinezhang/mistral7b-reflect-sft",
+  "created_at": "2026-09-01T02:45:24.000Z",
+  "updated_at": "2026-09-01T02:45:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:adapter:mistralai/Mistral-7B-Instruct-v0.3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 168419644,
+  "storage_human": "168 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mistral 7B - Mistral AI | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-7b-0-1",
+      "snippet": "Our very first open model, SOTA competing against models up to 2 to 3x larger."
+    },
+    {
+      "title": "Fine-tune Mistral 7B v0.3 with PyTorch Training DLC using SFT on Vertex ...",
+      "url": "https://huggingface.co/docs/google-cloud/examples/vertex-ai-notebooks-trl-full-sft-fine-tuning-on-vertex-ai",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mistral - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.49.0/en/model_doc/mistral",
+      "snippet": "The Mistral team has released 3 checkpoints: a base model, Mistral-7B-v0.1, which has been pre-trained to predict the next token on internet-scale data. an instruction tuned model, Mistral-7B-Instruct-v0.1, which is the base model optimized for chat purposes using supervised fine-tuning (SFT) and direct preference optimization (DPO)."
+    },
+    {
+      "title": "Mistral 7B - Mistral AI | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-7b-0-2",
+      "snippet": "An update to our first open model with better context."
+    },
+    {
+      "title": "Models - from cloud to edge | Mistral",
+      "url": "https://mistral.ai/models/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    }
+  ]
+}

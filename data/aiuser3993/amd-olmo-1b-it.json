@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "aiuser3993/AMD-OLMo-1B-IT",
+  "slug": "aiuser3993-amd-olmo-1b-it",
+  "author": "aiuser3993",
+  "url": "https://huggingface.co/aiuser3993/AMD-OLMo-1B-IT",
+  "created_at": "2026-09-01T09:44:59.000Z",
+  "updated_at": "2026-09-01T10:14:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "olmo",
+    "AMD",
+    "OLMo",
+    "SFT",
+    "instruct",
+    "GPT4",
+    "text-generation",
+    "dataset:shibing624/sharegpt_gpt4",
+    "base_model:amd/AMD-OLMo-1B-SFT",
+    "base_model:finetune:amd/AMD-OLMo-1B-SFT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1176764416,
+  "parameters_human": "1.18B",
+  "storage_bytes": 4707070632,
+  "storage_human": "4.7 GB",
+  "base_model": "amd/AMD-OLMo-1B-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing the First AMD 1B Language Models: AMD OLMo",
+      "url": "https://www.amd.com/en/developer/resources/technical-articles/introducing-the-first-amd-1b-language-model.html",
+      "snippet": "AMD is releasing its first open source 1B language model, advancing accessible AI with high-performance AMD Instinct™ GPUs and Ryzen™ AI PCs."
+    },
+    {
+      "title": "AMD-OLMo-1B - Hugging Face",
+      "url": "https://huggingface.co/amd/AMD-OLMo-1B",
+      "snippet": "AMD-OLMo AMD-OLMo are a series of 1B language models trained from scratch by AMD on AMD Instinct™ MI250 GPUs. The training code used is based on OLMo. We release the pre-trained model, supervised fine-tuned model, and DPO aligned model as follows: AMD-OLMo-1B: Pre-trained on a subset of Dolma v1.7 that consists of 1.3 trillion tokens."
+    },
+    {
+      "title": "amd/AMD-OLMo · Hugging Face",
+      "url": "https://huggingface.co/amd/AMD-OLMo",
+      "snippet": "AMD-OLMo AMD-OLMo are a series of 1B language models trained from scratch by AMD on AMD Instinct™ MI250 GPUs. The training code used is based on OLMo. We release the pre-trained model, supervised fine-tuned model, and DPO aligned model as follows:"
+    },
+    {
+      "title": "Introducing the First AMD 1B Language Models: AMD OLMo",
+      "url": "https://www.amd.com/en/blogs/2024/introducing-the-first-amd-1b-language-models-amd-.html",
+      "snippet": "The language model was also deployed onto AMD Ryzen AI PCs that can potentially help enable a diverse set of edge use cases. Open sourcing the data, weights, training recipes and code is primarily aimed at helping developers to reproduce as well as innovate further on top."
+    },
+    {
+      "title": "OLMo 1B - open source | LLM Reference",
+      "url": "https://www.llmreference.com/model/olmo-1b",
+      "snippet": "AMD OLMo 1B is a fully open-source large language model with 1 billion parameters, designed for advanced reasoning, instruction-following, and chat capabilities. Utilizing a decoder-only transformer architecture, it is trained on a 1.3 trillion-token subset of the Dolma v1.7 dataset, achieving a remarkable training throughput of 12,200 tokens per second per GPU. AMD leveraged its Instinct ..."
+    }
+  ]
+}

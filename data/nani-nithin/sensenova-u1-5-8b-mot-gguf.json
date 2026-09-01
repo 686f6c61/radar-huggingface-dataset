@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "NANI-Nithin/SenseNova-U1.5-8B-MoT-GGUF",
+  "slug": "nani-nithin-sensenova-u1-5-8b-mot-gguf",
+  "author": "NANI-Nithin",
+  "url": "https://huggingface.co/NANI-Nithin/SenseNova-U1.5-8B-MoT-GGUF",
+  "created_at": "2026-08-27T07:42:05.000Z",
+  "updated_at": "2026-09-01T11:15:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 17532854464,
+  "parameters_human": "17.53B",
+  "storage_bytes": 104170008640,
+  "storage_human": "104.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SenseNova-U1.5-8B-MoT-8step-8bit - Hugging Face",
+      "url": "https://huggingface.co/mlx-community/SenseNova-U1.5-8B-MoT-8step-8bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sensenova/SenseNova-U1.5-8B-MoT at main - Hugging Face",
+      "url": "https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - OpenSenseNova/SenseNova-U1: SenseNova-U series: Native Unified ...",
+      "url": "https://github.com/OpenSenseNova/SenseNova-U1",
+      "snippet": "For the community U1.5 Preview GGUF listed above, keep --model_path pointed at sensenova/SenseNova-U1.5-8B-MoT-Preview and pass the downloaded Q8 file through --gguf_checkpoint."
+    },
+    {
+      "title": "SenseNova-U1.5-8B-MoT: Text-to-Image model - aimodels.fyi",
+      "url": "https://www.aimodels.fyi/models/huggingFace/sensenova-u1.5-8b-mot-sensenova",
+      "snippet": "Overview SenseNova-U1.5-8B-MoT is a native unified multimodal model built on the NEO-unify architecture that handles both image understanding and generation within a single framework. Created by sensenova, this 8-billion parameter model uses a mixture-of-tasks (MoT) approach with dense transformer layers and strengthened patchify mechanisms."
+    },
+    {
+      "title": "SenseNova-U1.5-8B-MoT - Papers with Code",
+      "url": "https://paperswithcode.co/paper/109749",
+      "snippet": "Abstract SenseNova-U1.5-8B-MoT is an official native unified multimodal 8B MoT checkpoint from SenseNova. The release focuses on improved instruction following, text and layout generation, native 4K generation, image editing, and visual control, and reports changes to patchify layers, data quality and distribution, task formulation, prompt enhancement, and post-training. It is released as a ..."
+    }
+  ]
+}

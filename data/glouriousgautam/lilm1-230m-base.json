@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "glouriousgautam/LilM1-230M-base",
+  "slug": "glouriousgautam-lilm1-230m-base",
+  "author": "glouriousgautam",
+  "url": "https://huggingface.co/glouriousgautam/LilM1-230M-base",
+  "created_at": "2026-09-01T10:51:10.000Z",
+  "updated_at": "2026-09-01T10:57:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lilm",
+    "feature-extraction",
+    "small-language-model",
+    "base-model",
+    "text-generation",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 233897728,
+  "parameters_human": "233.9M",
+  "storage_bytes": 467810952,
+  "storage_human": "468 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "glouriousgautam/lilm1-stationary-sft-30m-v1 - Hugging Face",
+      "url": "https://huggingface.co/datasets/glouriousgautam/lilm1-stationary-sft-30m-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "glouriousgautam/lilm1-base-mix-8b · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/glouriousgautam/lilm1-base-mix-8b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "smallest model from liquid ai just released. | Pawel Bulowski",
+      "url": "https://www.linkedin.com/posts/pawel-bulowski-ai-agents_smallest-model-from-liquid-ai-just-released-activity-7475940397400268801-J3l9",
+      "snippet": "Introducing LFM2.5-230M: our smallest model yet, built to run anywhere (CPUs, NPUs, and GPUs) to enable agentic applications on phones, robots, home and network automation devices. > 230M ..."
+    },
+    {
+      "title": "Liquid AI trained a 230M model on 19 trillion tokens. That's an ...",
+      "url": "https://www.linkedin.com/posts/abdul-rehman-rind_liquid-ai-trained-a-230m-model-on-19-trillion-activity-7475958656690343936-NYu6",
+      "snippet": "Liquid AI trained a 230M model on 19 trillion tokens. That&#x27;s an 82,000:1 token-to-parameter ratio. The result runs at 213 tok/s on a Galaxy S25 Ultra CPU and competes with models twice its size."
+    },
+    {
+      "title": "Liquid AI Ships LFM2.5-230M with llama.cpp, MLX, vLLM, SGLang, and ONNX ...",
+      "url": "https://www.marktechpost.com/2026/06/27/liquid-ai-ships-lfm2-5-230m-with-llama-cpp-mlx-vllm-sglang-and-onnx-support-for-on-device-inference/",
+      "snippet": "Liquid AI&#x27;s LFM2.5-230M is a 230M-parameter open-weight on-device model for fast tool use and large-scale data extraction."
+    }
+  ]
+}

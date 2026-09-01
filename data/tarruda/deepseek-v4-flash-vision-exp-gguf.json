@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tarruda/DeepSeek-V4-Flash-Vision-Exp-GGUF",
+  "slug": "tarruda-deepseek-v4-flash-vision-exp-gguf",
+  "author": "tarruda",
+  "url": "https://huggingface.co/tarruda/DeepSeek-V4-Flash-Vision-Exp-GGUF",
+  "created_at": "2026-09-01T08:48:22.000Z",
+  "updated_at": "2026-09-01T08:48:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF at main",
+      "url": "https://huggingface.co/unsloth/DeepSeek-V4-Flash-Vision-Exp-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek: DeepSeek V4 Flash Vision Exp - zenmux.ai",
+      "url": "https://zenmux.ai/deepseek/deepseek-v4-flash-vision-exp",
+      "snippet": "DeepSeek-V4-Flash-Vision-Exp is an experimental multimodal visual understanding model launched by DeepSeek, officially available on the DeepSeek API platform as of August 21, 2026. Built upon the DeepSeek-V4-Flash architecture (284B total parameters, 13B activated MoE during inference), this model matches the pure-text capabilities of the official DeepSeek-V4-Flash while achieving significant ..."
+    },
+    {
+      "title": "DeepSeek V4-Flash-Vision-Exp — an experimental… | AI/TLDR",
+      "url": "https://ai-tldr.dev/releases/deepseek-v4-flash-vision-exp/",
+      "snippet": "Is DeepSeek V4-Flash-Vision-Exp stable enough for production? DeepSeek labels V4-Flash-Vision-Exp an experimental model and gives it an -exp suffix in its id, so treat it as a preview rather than a settled endpoint. Because its text performance matches the official DeepSeek V4-Flash, a team can trial vision calls on the experimental id while keeping text traffic on the stable V4-Flash model."
+    },
+    {
+      "title": "DeepSeek-V4-Flash-Vision-Exp: New Multimodal AI Launch",
+      "url": "https://emergent.sh/news/deepseek-v4-flash-vision-exp-officially",
+      "snippet": "DeepSeek has expanded its V4 model family with the release of DeepSeek-V4-Flash-Vision-Exp, a multimodal AI system that processes both text and visual inputs. Officially launched on August 21, 2026, this experimental model represents the company&#x27;s latest effort to integrate vision capabilities into its high-performance language model architecture."
+    }
+  ]
+}

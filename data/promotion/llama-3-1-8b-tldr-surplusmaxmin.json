@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "promotion/Llama-3.1-8B-TLDR-SurplusMaxmin",
+  "slug": "promotion-llama-3-1-8b-tldr-surplusmaxmin",
+  "author": "promotion",
+  "url": "https://huggingface.co/promotion/Llama-3.1-8B-TLDR-SurplusMaxmin",
+  "created_at": "2026-09-01T02:25:59.000Z",
+  "updated_at": "2026-09-01T02:31:06.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "alignment",
+    "multi-objective",
+    "preference-optimization",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138288576,
+  "storage_human": "32.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "promotion/Llama-3.1-8B-TLDR-SurplusMaxmin · Hugging Face",
+      "url": "https://huggingface.co/promotion/Llama-3.1-8B-TLDR-SurplusMaxmin",
+      "snippet": "Trained from meta-llama/Llama-3.1-8B-Instruct, which is also the reference policy and the initialisation. Objectives are scored by a prompted Qwen3-32B preference oracle, each pair queried in both presentation orders and swap-averaged. Within a panel every arm shares one response pool, one optimizer and a 300-step budget, and differs only in how the objectives are aggregated, so a difference ..."
+    },
+    {
+      "title": "RedHatAI/Llama-3.1-8B-tldr · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Llama-3.1-8B-tldr",
+      "snippet": "Llama-3.1-8B-tldr Model Overview Model Architecture: LlamaForCausalLM Input: Text Output: Text Release Date: 05/29/2025 Version: 1.0 Intended Use Cases: This model is finetuned to summarize text in the style of Reddit posts. Out-of-scope: Use in any manner that violates applicable laws or regulations (including trade compliance laws)."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "llama-models/README.md at main · meta-llama/llama-models",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/README.md",
+      "snippet": "Llama is an accessible, open large language model (LLM) designed for developers, researchers, and businesses to build, experiment, and responsibly scale their generative AI ideas. Part of a foundational system, it serves as a bedrock for innovation in the global community. A few key aspects: Open access: Easy accessibility to cutting-edge large language models, fostering collaboration and ..."
+    },
+    {
+      "title": "Llama 3.1 | Model Cards and Prompt formats - developer.meta.com",
+      "url": "https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_1/",
+      "snippet": "With the subsequent release of Llama 3.2, we have introduced new lightweight models in 1B and 3B and also multimodal models in 11B and 90B. The first few sections of this page-- Prompt Template, Base Model Prompt, and Instruct Model Prompt --are applicable across all the models released in both Llama 3.1 and Llama 3.2."
+    }
+  ]
+}

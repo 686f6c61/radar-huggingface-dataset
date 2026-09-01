@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "abzoo/paddleocr-vl-egyptian-id-014",
+  "slug": "abzoo-paddleocr-vl-egyptian-id-014",
+  "author": "abzoo",
+  "url": "https://huggingface.co/abzoo/paddleocr-vl-egyptian-id-014",
+  "created_at": "2026-09-01T10:03:17.000Z",
+  "updated_at": "2026-09-01T10:03:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "paddleocr_vl",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:unsloth/PaddleOCR-VL",
+    "base_model:finetune:unsloth/PaddleOCR-VL",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 958588736,
+  "parameters_human": "958.6M",
+  "storage_bytes": 1930058010,
+  "storage_human": "1.9 GB",
+  "base_model": "unsloth/PaddleOCR-VL",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abzoo/egyptian-id-ocr · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/abzoo/egyptian-id-ocr",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - PaddlePaddle/PaddleOCR: Turn any PDF or image document into ...",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "snippet": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages. - PaddlePaddle/Paddl..."
+    },
+    {
+      "title": "PaddlePaddle/PaddleOCR-VL · Hugging Face",
+      "url": "https://huggingface.co/PaddlePaddle/PaddleOCR-VL",
+      "snippet": "Introduction PaddleOCR-VL is a SOTA and resource-efficient model tailored for document parsing. Its core component is PaddleOCR-VL-.9B, a compact yet powerful vision-language model (VLM) that integrates a NaViT-style dynamic resolution visual encoder with the ERNIE-4.5-0.3B language model to enable accurate element recognition. This innovative model efficiently supports 109 languages and ..."
+    },
+    {
+      "title": "Home - PaddleOCR Documentation",
+      "url": "https://www.paddleocr.ai/main/en/",
+      "snippet": "PaddleOCR-VL-1.5 is a new iterative version of the PaddleOCR-VL series. Based on comprehensive optimization of the core capabilities of version 1.0, the model achieves 94.5% accuracy on the authoritative document parsing benchmark OmniDocBench v1.5, surpassing top global general-purpose large models and document parsing-specific models."
+    },
+    {
+      "title": "PaddleOCR-VL | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/paddleocr-vl/",
+      "snippet": "PaddleOCR-VL is a vision-language model built around PaddleOCR that reads documents, forms, tables, charts, and screenshots. It combines strong OCR with reasoning over layout and content, then answers in text or structured JSON for multimodal RAG and automation."
+    }
+  ]
+}

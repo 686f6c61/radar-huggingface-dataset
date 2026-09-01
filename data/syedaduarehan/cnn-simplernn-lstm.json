@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SyedaDuaRehan/CNN-SIMPLERNN-LSTM",
+  "slug": "syedaduarehan-cnn-simplernn-lstm",
+  "author": "SyedaDuaRehan",
+  "url": "https://huggingface.co/SyedaDuaRehan/CNN-SIMPLERNN-LSTM",
+  "created_at": "2026-09-01T08:26:24.000Z",
+  "updated_at": "2026-09-01T08:26:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2305.17473v2] A Comprehensive Overview and Comparative Analysis on ...",
+      "url": "https://arxiv.org/abs/2305.17473v2",
+      "snippet": "Abstract page for arXiv paper 2305.17473v2: A Comprehensive Overview and Comparative Analysis on Deep Learning Models: CNN, RNN, LSTM, GRU"
+    },
+    {
+      "title": "Learning Models: CNN, RNN, LSTM, GRU - arXiv.org",
+      "url": "https://arxiv.org/pdf/2305.17473v2",
+      "snippet": "N model outperformed the LSTM and Bi-LSTM models in terms of both accuracy and training time. The CNN model&#x27;s superior performance can be attributed to its ability to effectively capture spatial features in images through convolutional layers. Since image data is not inherently sequential or"
+    },
+    {
+      "title": "GitHub - harshadavarute/DeepLearningExp: Deep Learning experiments ...",
+      "url": "https://github.com/harshadavarute/DeepLearningExp",
+      "snippet": "📌 Overview This repository contains code implementations, theory, and visual outputs for 12 comprehensive Deep Learning experiments using TensorFlow and Keras. The practicum covers basic perceptrons, convolutional networks, recurrent architectures, transfer learning, style transfer, and generative modeling."
+    },
+    {
+      "title": "(PDF) A Comprehensive Overview and Comparative Analysis on Deep ...",
+      "url": "https://www.researchgate.net/publication/373873242_A_Comprehensive_Overview_and_Comparative_Analysis_on_Deep_Learning_Models_CNN_RNN_LSTM_GRU",
+      "snippet": "The novelty of the proposed approach is that it uses an advanced prediction model—the bidirectional long short-term memory (Bi-LSTM) network deep learning model."
+    },
+    {
+      "title": "Long short-term memory (LSTM) RNN in Tensorflow",
+      "url": "https://www.geeksforgeeks.org/deep-learning/long-short-term-memory-lstm-rnn-in-tensorflow/",
+      "snippet": "Long Short-Term Memory (LSTM) where designed to address the vanishing gradient issue faced by traditional RNNs in learning from long-term dependencies in sequential data. LSTMs are capable of maintaining information over extended periods because of memory cells and gating mechanisms."
+    }
+  ]
+}

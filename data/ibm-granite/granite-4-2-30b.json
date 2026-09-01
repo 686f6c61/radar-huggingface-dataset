@@ -50,11 +50,12 @@
     "base_model:ibm-granite/granite-4.1-30b-base",
     "base_model:finetune:ibm-granite/granite-4.1-30b-base",
     "license:apache-2.0",
+    "eval-results",
     "endpoints_compatible",
     "region:us"
   ],
   "likes": 99,
-  "downloads_30d": 4228,
+  "downloads_30d": 4778,
   "trending_score": 98,
   "parameters": 29276770304,
   "parameters_human": "29.28B",

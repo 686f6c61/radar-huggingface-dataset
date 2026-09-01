@@ -5,7 +5,7 @@
   "author": "dhruvv45",
   "url": "https://huggingface.co/dhruvv45/lightretriever-llama3.2-3b-full",
   "created_at": "2026-08-18T09:41:55.000Z",
-  "updated_at": "2026-08-20T18:51:30.000Z",
+  "updated_at": "2026-08-31T10:09:13.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 114524414,
-  "storage_human": "115 MB",
+  "storage_bytes": 1690536163,
+  "storage_human": "1.7 GB",
   "base_model": "meta-llama/Llama-3.2-3B",
   "formats": [
     "safetensors"

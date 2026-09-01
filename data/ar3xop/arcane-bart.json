@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ar3xop/arcane-bart",
+  "slug": "ar3xop-arcane-bart",
+  "author": "ar3xop",
+  "url": "https://huggingface.co/ar3xop/arcane-bart",
+  "created_at": "2026-09-01T08:51:34.000Z",
+  "updated_at": "2026-09-01T08:52:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "bart",
+    "arcane",
+    "mental-health",
+    "sequence-to-sequence",
+    "text2text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1625545544,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arcane Style Image Transformation - AI Prompt",
+      "url": "https://docsbot.ai/prompts/creative/arcane-style-image-transformation",
+      "snippet": "Creative AI Prompt Arcane Style Image Transformation Transforms an image into &#x27;Arcane&#x27; style with appropriate clothing. Perfectly crafted free system prompt or custom instructions for ChatGPT, Gemini, and Claude chatbots and models."
+    },
+    {
+      "title": "arcane style - Free AI Image or Video Generation Models",
+      "url": "https://www.seaart.ai/search/model/arcane%20style",
+      "snippet": "Explore a vast collection of free AI models about arcane style. Transform your ideas into stunning images and videos instantly."
+    },
+    {
+      "title": "Arcane style | Goofy Ai - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/6e1910fed101c45746d4ef3a5e39bfa2",
+      "snippet": "Explore Arcane style | Goofy Ai model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "nitrosocke/Arcane-Diffusion · Hugging Face",
+      "url": "https://huggingface.co/nitrosocke/Arcane-Diffusion",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - AlexLee1109/Arcane: GPT model built to be a chatbot",
+      "url": "https://github.com/AlexLee1109/Arcane",
+      "snippet": "Arcane is a streamlined, educational GPT-style transformer model built in PyTorch, inspired by GPT-2. It offers a clear and efficient implementation to demonstrate modern transformer techniques, with a focus on performance and modularity. Key features include rotary positional embeddings (RoPE), RMS normalization, key-value (KV) caching for efficient inference, and a custom MLP design."
+    }
+  ]
+}

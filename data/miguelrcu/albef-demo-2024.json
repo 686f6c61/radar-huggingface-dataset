@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "miguelrcu/albef-demo-2024",
+  "slug": "miguelrcu-albef-demo-2024",
+  "author": "miguelrcu",
+  "url": "https://huggingface.co/miguelrcu/albef-demo-2024",
+  "created_at": "2026-09-01T02:44:19.000Z",
+  "updated_at": "2026-09-01T02:44:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "miguelrcu/albef-demo-2024 · Hugging Face",
+      "url": "https://huggingface.co/miguelrcu/albef-demo-2024",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Visual Grounding Demo | salesforce/ALBEF | DeepWiki",
+      "url": "https://deepwiki.com/salesforce/ALBEF/2.2-visual-grounding-demo",
+      "snippet": "Visual Grounding Demo Relevant source files Purpose and Overview This document explains how to use ALBEF&#x27;s visual grounding demonstration capabilities through the predict.py script. Visual grounding identifies which regions of an image correspond to specific words or phrases in text, allowing the model to \"point to\" what it&#x27;s referring to in an image. The demo uses Grad-CAM (Gradient-weighted ..."
+    },
+    {
+      "title": "Model Architecture | salesforce/ALBEF | DeepWiki",
+      "url": "https://deepwiki.com/salesforce/ALBEF/1.2-model-architecture",
+      "snippet": "Model Architecture Relevant source files This document provides a detailed explanation of the ALBEF (Align Before Fuse) model architecture, including its core components, design principles, and internal mechanisms. For information about using ALBEF for specific tasks, see the task-specific pages under Fine-tuning. Overview ALBEF introduces an innovative approach to vision-language modeling ..."
+    },
+    {
+      "title": "GitHub - motazalqaoud/Oncology-diagnosis-using-CNN: Skin lesion ...",
+      "url": "https://github.com/motazalqaoud/Oncology-diagnosis-using-CNN",
+      "snippet": "A CNN (Convolutional Neural Network) — specifically EfficientNet-B0 — fine-tuned on HAM10000, the standard dermatoscopic imaging benchmark for skin cancer diagnosis. Classifies a lesion image into one of seven diagnostic categories and flags the three that are malignant or pre-malignant."
+    },
+    {
+      "title": "GitHub - salesforce/ALBEF: Code for ALBEF: a new vision-language pre ...",
+      "url": "https://github.com/salesforce/ALBEF",
+      "snippet": "Align before Fuse: Vision and Language Representation Learning with Momentum Distillation, NeurIPS 2021 Spotlight (Salesforce Research). Announcement: ALBEF is now officially integrated into LAVIS - a one-stop library for language-and-vision research and applications! This is the official PyTorch implementation of the ALBEF paper [Blog]."
+    }
+  ]
+}

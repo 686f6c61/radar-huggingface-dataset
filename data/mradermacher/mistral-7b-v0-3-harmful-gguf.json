@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mistral-7B-v0.3-Harmful-GGUF",
+  "slug": "mradermacher-mistral-7b-v0-3-harmful-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mistral-7B-v0.3-Harmful-GGUF",
+  "created_at": "2026-09-01T10:25:16.000Z",
+  "updated_at": "2026-09-01T10:55:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:sayandasscientistcoder/Mistral-7B-v0.3-Harmful",
+    "base_model:quantized:sayandasscientistcoder/Mistral-7B-v0.3-Harmful",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 63992359424,
+  "storage_human": "64.0 GB",
+  "base_model": "sayandasscientistcoder/Mistral-7B-v0.3-Harmful",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Mistral-7B-v0.3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Mistral-7B-v0.3-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mradermacher/Mistral-7B-v0.3-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Mistral-7B-v0.3-i1-GGUF",
+      "snippet": "mradermacher / Mistral-7B-v0.3-i1-GGUF like 1 Transformers GGUF English mistral-common imatrix License:apache-2.0 Model card FilesFiles and versions xet Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "mradermacher/Mistral-7B-v0.3-i1-GGUF - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/mradermacher-mistral-7b-v0-3-i1-gguf",
+      "snippet": "Mistral-7B-v0.3-i1-GGUF is an open source model from GitHub that offers a free installation service, and any user can find Mistral-7B-v0.3-i1-GGUF on GitHub to install."
+    },
+    {
+      "title": "Mistral LLM: All Versions & Hardware Requirements - Hardware Corner",
+      "url": "https://www.hardware-corner.net/llm-database/Mistral/",
+      "snippet": "Explore all versions of the model, their file formats like GGUF, GPTQ, and EXL2, and understand the hardware requirements for local inference. Mistral is a family of large language models known for their exceptional performance. Mistral 7B, a 7-billion-parameter model, uses grouped-query attention (GQA) for faster inference and sliding window attention (SWA) to handle longer sequences, making ..."
+    },
+    {
+      "title": "Damacol/mradermacher-mistral-7b-instruct-v0.3-finetune-gguf",
+      "url": "https://github.com/Damacol/mradermacher-mistral-7b-instruct-v0.3-finetune-gguf",
+      "snippet": "Why This Exists Most AI platforms trade your data for convenience. They track, filter, and restrict. Venice flips the script: your prompts stay local, your ideas aren&#x27;t policed, and you get fast, unfiltered responses without the corporate overhead."
+    }
+  ]
+}

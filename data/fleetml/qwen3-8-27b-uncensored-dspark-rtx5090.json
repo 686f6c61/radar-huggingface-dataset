@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "fleetml/Qwen3.8-27B-Uncensored-DSpark-RTX5090",
+  "slug": "fleetml-qwen3-8-27b-uncensored-dspark-rtx5090",
+  "author": "fleetml",
+  "url": "https://huggingface.co/fleetml/Qwen3.8-27B-Uncensored-DSpark-RTX5090",
+  "created_at": "2026-09-01T09:29:50.000Z",
+  "updated_at": "2026-09-01T09:35:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "feature-extraction",
+    "qwen3.8",
+    "dspark",
+    "speculative-decoding",
+    "rtx-5090",
+    "sglang",
+    "bfloat16",
+    "custom_code",
+    "en",
+    "zh",
+    "base_model:RadixArk/Qwen3.8-27B-DSpark",
+    "base_model:finetune:RadixArk/Qwen3.8-27B-DSpark",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1857358337,
+  "parameters_human": "1.86B",
+  "storage_bytes": 3714723322,
+  "storage_human": "3.7 GB",
+  "base_model": "RadixArk/Qwen3.8-27B-DSpark",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "Run Qwen 3.8 27B uncensored locally: pick the GGUF quant for your VRAM, serve it with llama.cpp or Ollama, and respect the research-only boundary."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: VRAM, Quants and the Template Trap",
+      "url": "https://locallyuncensored.com/blog/how-to-run-qwen-3-8-27b-locally.html",
+      "snippet": "How to Run Qwen 3.8 27B Locally: VRAM, Quants and the Template Trap The weights are out. Qwen 3.8 27B landed on Hugging Face on August 13, 2026, and the LICENSE file naming Apache 2.0 followed the next morning. The big Qwen 3.8 Max opened up a day earlier, but under Alibaba&#x27;s own qwen3.8-max licence rather than Apache, and at 2.4 trillion parameters it is a data center model anyway. The 27B is ..."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/qwen/qwen3.8-27b-uncensored",
+      "snippet": "Qwen 3.8 27B Uncensored is an NVFP4 open-weight multimodal model LoRA-tuned for fewer refusals across chat, coding, reasoning, tool use, and long-context work."
+    },
+    {
+      "title": "Qwen3.8-27B-NVFP4-RTX5090-DSpark - Hugging Face",
+      "url": "https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090-DSpark",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored:latest",
+      "snippet": "Ollama build of Qwen3.8-27B-Uncensored — an abliterated (refusal-removed) build of Qwen&#x27;s Qwen3.8-27B, a 27B dense hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with reasoning, tool-calling, and an MTP speculative-decoding head. Sixteen tags from 2-bit to 8-bit, each with the mmproj vision projector bundled in — nothing extra to fetch. Browse all ..."
+    }
+  ]
+}

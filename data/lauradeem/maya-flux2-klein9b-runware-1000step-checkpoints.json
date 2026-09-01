@@ -5,7 +5,7 @@
   "author": "Lauradeem",
   "url": "https://huggingface.co/Lauradeem/maya-flux2-klein9b-runware-1000step-checkpoints",
   "created_at": "2026-08-24T23:18:15.000Z",
-  "updated_at": "2026-08-25T00:18:28.000Z",
+  "updated_at": "2026-08-31T23:11:32.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 52,
+  "downloads_30d": 62,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 414334040,
-  "storage_human": "414 MB",
+  "storage_bytes": 497200792,
+  "storage_human": "497 MB",
   "base_model": "black-forest-labs/FLUX.2-klein-base-9B",
   "formats": [
     "diffusers"

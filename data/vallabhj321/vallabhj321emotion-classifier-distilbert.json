@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "vallabhj321/vallabhj321emotion-classifier-distilbert",
+  "slug": "vallabhj321-vallabhj321emotion-classifier-distilbert",
+  "author": "vallabhj321",
+  "url": "https://huggingface.co/vallabhj321/vallabhj321emotion-classifier-distilbert",
+  "created_at": "2026-09-01T08:09:47.000Z",
+  "updated_at": "2026-09-01T08:09:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Emotion Classifier Demo - a Hugging Face Space by KshitizSharma",
+      "url": "https://huggingface.co/spaces/KshitizSharma/emotion-classifier-demo",
+      "snippet": "Emotion Classifier — Fine-Tuned DistilBERT DistilBERT fine-tuned on the dair-ai/emotion dataset to classify text into six emotions: sadness, joy, love, anger, fear, surprise."
+    },
+    {
+      "title": "tsid7710/distillbert-emotion-model · Hugging Face",
+      "url": "https://huggingface.co/tsid7710/distillbert-emotion-model",
+      "snippet": "DistilBERT Emotion Classifier 🎭 This is a fine-tuned DistilBERT model for emotion classification trained on the dair-ai/emotion dataset. 🧠 Model Details Base model: distilbert-base-uncased Task: Text Classification (Emotion Detection) Languages: English Labels: sadness, joy, love, anger, fear, surprise Training epochs: 2 Batch size: 64"
+    },
+    {
+      "title": "GitHub - sudharshanreddyt/emotion-classifier: The Emotion Classifier is ...",
+      "url": "https://github.com/sudharshanreddyt/emotion-classifier",
+      "snippet": "🧠 Overview The Emotion Classifier is a lightweight web app built using Streamlit and Hugging Face Transformers. It uses a fine-tuned DistilBERT model to detect the underlying emotion expressed in text. The model predicts one of six emotions: sadness, joy, love, anger, fear, or surprise."
+    },
+    {
+      "title": "Emotion-Text-Classifier-HuggingFace - GitHub",
+      "url": "https://github.com/khabibulloo/Emotion-Text-Classifier-HuggingFace",
+      "snippet": "📊 Dataset and Model Dataset: dair-ai/emotion (200 training examples and 50 test examples were sampled for fast fine-tuning). Model: distilbert-base-uncased-emotion Technique: Transfer Learning via Fine-tuning."
+    },
+    {
+      "title": "Emotion Classifier - The Setup.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/lavanyashukla/neural_networks/blob/master/Emotion%20Classifier%20-%20The%20Setup.ipynb",
+      "snippet": "Emotion Classifier - The Setup Welcome! In this notebook we&#x27;ll train an emotion classifier and deploy it to a tensorflow js frontend. The first step is setting up the environment. We&#x27;ll also set up Weights & Biases to log models metrics, inspect performance and share findings about the best architecture for the network."
+    }
+  ]
+}

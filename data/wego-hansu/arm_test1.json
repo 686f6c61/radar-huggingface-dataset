@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "wego-hansu/arm_test1",
+  "slug": "wego-hansu-arm_test1",
+  "author": "wego-hansu",
+  "url": "https://huggingface.co/wego-hansu/arm_test1",
+  "created_at": "2026-09-01T08:27:09.000Z",
+  "updated_at": "2026-09-01T08:27:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:wego-hansu/two_arm_bolt_2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51685006,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206774624,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wego-hansu/dual_arm_test · Hugging Face",
+      "url": "https://huggingface.co/wego-hansu/dual_arm_test",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wego-hansu/yeonwonju-070720-vla · Hugging Face",
+      "url": "https://huggingface.co/wego-hansu/yeonwonju-070720-vla",
+      "snippet": "Instructions to use wego-hansu/yeonwonju-070720-vla with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use wego-hansu/yeonwonju-070720-vla with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the ..."
+    },
+    {
+      "title": "Help : integrating a Agilex PiPER robot arm to lerobot",
+      "url": "https://discuss.huggingface.co/t/help-integrating-a-agilex-piper-robot-arm-to-lerobot/168828",
+      "snippet": "Hello. I working for integration a PiPER robot arm to lerobot. I made some classes (bus, motor, robot, follower, leader…). I got the dataset and the replay worked fine using a PiPER. so i trained &#x27;smolvla&#x27; model but i…"
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "GitHub - 12britz/awesome-free-models: A curated list of free AI models ...",
+      "url": "https://github.com/12britz/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. - 12britz/awesome-free-models"
+    }
+  ]
+}

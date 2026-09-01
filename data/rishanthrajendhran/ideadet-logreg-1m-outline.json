@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "rishanthrajendhran/ideadet-logreg-1m-outline",
+  "slug": "rishanthrajendhran-ideadet-logreg-1m-outline",
+  "author": "rishanthrajendhran",
+  "url": "https://huggingface.co/rishanthrajendhran/ideadet-logreg-1m-outline",
+  "created_at": "2026-09-01T02:25:35.000Z",
+  "updated_at": "2026-09-01T02:25:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ai-detection",
+    "logistic-regression",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16146,
+  "storage_human": "16146 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rishanthrajendhran/ideadet-logreg-1m-outline · Hugging Face",
+      "url": "https://huggingface.co/rishanthrajendhran/ideadet-logreg-1m-outline",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rishanthrajendhran/ideadet-nemotron30b-1m-outline · Hugging Face",
+      "url": "https://huggingface.co/rishanthrajendhran/ideadet-nemotron30b-1m-outline",
+      "snippet": "Training corpus: 1m Reads at inference: a de-leaked (paraphrased) role-labelled outline of the document Scored by comparing the next-token log-probabilities of the tokens human and ai, two-way normalised, giving P (human). The detector fires when that falls below a calibrated threshold."
+    },
+    {
+      "title": "RishanthRajendhran (Rishanth Rajendhran) · GitHub",
+      "url": "https://github.com/RishanthRajendhran/",
+      "snippet": "RishanthRajendhran has 47 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Rishanth Rajendhran",
+      "url": "https://rishanthrajendhran.github.io/",
+      "snippet": "My research focuses on analysing and improving generations by large language models, particularly long-context reasoning, factuality, and reinforcement learning from human/AI feedback."
+    },
+    {
+      "title": "ideadet-nemotron30b-1m-outline API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/rishanthrajendhran/ideadet-nemotron30b-1m-outline",
+      "snippet": "ideadet-nemotron30b-1m-outline Idea-level AI-text detector: a LoRA adapter over nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16. It answers whose ideas a document contains, not who typed the sentences."
+    }
+  ]
+}

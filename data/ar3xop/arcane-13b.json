@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ar3xop/arcane-13b",
+  "slug": "ar3xop-arcane-13b",
+  "author": "ar3xop",
+  "url": "https://huggingface.co/ar3xop/arcane-13b",
+  "created_at": "2026-09-01T08:51:46.000Z",
+  "updated_at": "2026-09-01T08:52:44.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "llama",
+    "arcane",
+    "mental-health",
+    "depression-detection",
+    "stress-analysis",
+    "interpretable-nlp",
+    "text-generation",
+    "en",
+    "license:llama2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52064085422,
+  "storage_human": "52.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cseti/LTXV-13B-LoRA-Arcane-style-v1 · Hugging Face",
+      "url": "https://huggingface.co/Cseti/LTXV-13B-LoRA-Arcane-style-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Tencent-Hunyuan/Hunyuan-A13B: Tencent Hunyuan A13B (short as ...",
+      "url": "https://github.com/Tencent-Hunyuan/Hunyuan-A13B",
+      "snippet": "As a powerful yet computationally efficient large model, Hunyuan-A13B is an ideal choice for researchers and developers seeking high performance under resource constraints. Whether for academic research, cost-effective AI solution development, or innovative application exploration, this model provides a robust foundation for advancement."
+    },
+    {
+      "title": "Report: Nvidia to acquire AI model repository Hugging Face for $13 ...",
+      "url": "https://arstechnica.com/civis/threads/report-nvidia-to-acquire-ai-model-repository-hugging-face-for-13-billion.1514547/",
+      "snippet": "I guess 13b is pocket change for nvidia, but a model repository doesn&#x27;t seem like something particularly tough for someone else to replicate."
+    },
+    {
+      "title": "Tencent&#x27;s Hunyuan-A13B: A Smart Approach to Efficient Large Language Models",
+      "url": "https://blog.shinkai.com/tencents-hunyuan-a13b-a-smart-approach-to-efficient-large-language-models/",
+      "snippet": "The AI world has been obsessed with bigger and bigger models, but Tencent&#x27;s new Hunyuan-A13B takes a refreshingly different approach. Instead of just throwing more parameters at the problem, they&#x27;ve built something that&#x27;s actually practical to use while still delivering impressive performance. After diving into the technical details, I think this model represents a smart evolution in how we ..."
+    },
+    {
+      "title": "Cseti/LTXV-13B-LoRA-Arcane_Jinx-v1 · Hugging Face",
+      "url": "https://huggingface.co/Cseti/LTXV-13B-LoRA-Arcane_Jinx-v1",
+      "snippet": "LTXV Arcane Jinx character LoRA v1 for the 13B model"
+    }
+  ]
+}

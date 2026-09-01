@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/STL-amroberta-sentiment",
+  "slug": "tadiecool29-stl-amroberta-sentiment",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/STL-amroberta-sentiment",
+  "created_at": "2026-09-01T10:07:38.000Z",
+  "updated_at": "2026-09-01T10:09:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:uhhlt/am-roberta",
+    "base_model:finetune:uhhlt/am-roberta",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 442877187,
+  "parameters_human": "442.9M",
+  "storage_bytes": 1830356931,
+  "storage_human": "1.8 GB",
+  "base_model": "uhhlt/am-roberta",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tadiecool29/STL-amroberta-stance · Hugging Face",
+      "url": "https://huggingface.co/tadiecool29/STL-amroberta-stance",
+      "snippet": "STL-amroberta-stance This model is a fine-tuned version of uhhlt/am-roberta on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "tadiecool29/MTL-afriberta-base-stance-sentiment · Hugging Face",
+      "url": "https://huggingface.co/tadiecool29/MTL-afriberta-base-stance-sentiment",
+      "snippet": "MTL-afriberta-base-stance-sentiment This model is a fine-tuned version of castorini/afriberta_base on the None dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "ROBERTA_MODEL.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/winifred-kay/Sentiment-Analysis-with-huggingface-fac/blob/master/ROBERTA_MODEL.ipynb/",
+      "snippet": "The AutoTokenizer class uses heuristics to determine the type of tokenizer that should be used based on the architecture and configuration of the pre-trained model. This can be useful when working with a variety of pre-trained models, because it allows you to use the appropriate tokenizer without having to manually select one for each model."
+    },
+    {
+      "title": "Sentiment Analysis using HuggingFace&#x27;s RoBERTa Model",
+      "url": "https://www.geeksforgeeks.org/nlp/sentiment-analysis-using-huggingfaces-roberta-model/",
+      "snippet": "Output: Input: I love using HuggingFace models for NLP tasks! Classification: [{&#x27;label&#x27;: &#x27;LABEL_2&#x27;, &#x27;score&#x27;: 0.9852126836776733}] Conclusion In this article, we explored sentiment analysis using the RoBERTa model from HuggingFace&#x27;s Transformers library. We discussed the key aspects of RoBERTa, including its training improvements, architecture, and superior performance compared to BERT. By ..."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    }
+  ]
+}

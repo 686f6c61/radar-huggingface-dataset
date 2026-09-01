@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Andynsn/SFLD-OneRec-1of3",
+  "slug": "andynsn-sfld-onerec-1of3",
+  "author": "Andynsn",
+  "url": "https://huggingface.co/Andynsn/SFLD-OneRec-1of3",
+  "created_at": "2026-09-01T08:06:21.000Z",
+  "updated_at": "2026-09-01T10:53:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2131878912,
+  "parameters_human": "2.13B",
+  "storage_bytes": 8543602726,
+  "storage_human": "8.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2506.13695] OneRec Technical Report - ar5iv.labs.arxiv.org",
+      "url": "https://ar5iv.labs.arxiv.org/html/2506.13695",
+      "snippet": "The cascaded approach system typically involves stages such as retrieval, pre-ranking, and ranking, each potentially employing multiple strategies or models. In contrast, OneRec adopts an encoder-decoder architecture to generate user-preferred videos in an end-to-end manner under the guidance of a reward model."
+    },
+    {
+      "title": "[2506.13695] OneRec Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2506.13695",
+      "snippet": "Recommender systems have been widely used in various large-scale user-oriented platforms for many years. However, compared to the rapid developments in the AI community, recommendation systems have not achieved a breakthrough in recent years. For instance, they still rely on a multi-stage cascaded architecture rather than an end-to-end approach, leading to computational fragmentation and ..."
+    },
+    {
+      "title": "rec - a Andynsn Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Andynsn/rec",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from Andynsn"
+    },
+    {
+      "title": "[2502.18965] OneRec: Unifying Retrieve and Rank with Generative ...",
+      "url": "https://ar5iv.labs.arxiv.org/html/2502.18965",
+      "snippet": "However, most modern recommender systems adopt a retrieve-and-rank strategy, where the generative model functions only as a selector during the retrieval stage. In this paper, we propose OneRec, which replaces the cascaded learning framework with a unified generative model."
+    },
+    {
+      "title": "[2502.18965] OneRec: Unifying Retrieve and Rank with Generative ...",
+      "url": "https://arxiv.org/abs/2502.18965",
+      "snippet": "Recently, generative retrieval-based recommendation systems have emerged as a promising paradigm. However, most modern recommender systems adopt a retrieve-and-rank strategy, where the generative model functions only as a selector during the retrieval stage. In this paper, we propose OneRec, which replaces the cascaded learning framework with a unified generative model. To the best of our ..."
+    }
+  ]
+}

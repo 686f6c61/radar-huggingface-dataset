@@ -5,7 +5,7 @@
   "author": "raws-labs",
   "url": "https://huggingface.co/raws-labs/tinycast",
   "created_at": "2026-07-27T16:13:30.000Z",
-  "updated_at": "2026-08-18T07:11:15.000Z",
+  "updated_at": "2026-08-31T12:22:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "time-series-forecasting",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 54,
+  "downloads_30d": 57,
   "trending_score": 0,
   "parameters": 146505,
   "parameters_human": "146505",

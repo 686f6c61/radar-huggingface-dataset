@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Xrenya/smolVLM",
+  "slug": "xrenya-smolvlm",
+  "author": "Xrenya",
+  "url": "https://huggingface.co/Xrenya/smolVLM",
+  "created_at": "2026-09-01T07:58:23.000Z",
+  "updated_at": "2026-09-01T08:30:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "image-text-to-text",
+    "en",
+    "dataset:HuggingFaceM4/FineVisionMax",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 678272910,
+  "storage_human": "678 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct, google/siglip2-base-patch16-256",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SmolVLM - small yet mighty Vision Language Model - Hugging Face",
+      "url": "https://huggingface.co/blog/smolvlm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SmolVLM: Redefining small and efficient multimodal models",
+      "url": "https://arxiv.org/html/2504.05299v1",
+      "snippet": "We introduce SmolVLM, a series of compact multimodal models specifically engineered for resource-efficient inference. We systematically explore architectural configurations, tokenization strategies, and data curation optimized for low computational overhead."
+    },
+    {
+      "title": "HuggingFaceTB/SmolVLM-256M-Instruct · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SmolVLM: Redefining small and efficient multimodal models",
+      "url": "https://arxiv.org/abs/2504.05299",
+      "snippet": "SmolVLM models extend beyond static images, demonstrating robust video comprehension capabilities. Our results emphasize that strategic architectural optimizations, aggressive yet efficient tokenization, and carefully curated training data significantly enhance multimodal performance, facilitating practical, energy-efficient deployments at ..."
+    },
+    {
+      "title": "SmolVLA: An Open-Source Vision-Language-Action Model for Modern Robotics",
+      "url": "https://smolvla.net/index_en",
+      "snippet": "Compact and Efficient Architecture Combines a streamlined SmolVLM-2 vision-language model with a Flow-Matching Transformer action expert for unparalleled efficiency."
+    }
+  ]
+}

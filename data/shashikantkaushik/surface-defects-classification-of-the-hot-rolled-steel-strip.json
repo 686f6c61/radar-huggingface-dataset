@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shashikantkaushik/Surface-defects-classification-of-the-hot-rolled-steel-strip",
+  "slug": "shashikantkaushik-surface-defects-classification-of-the-hot-rolled-steel-strip",
+  "author": "shashikantkaushik",
+  "url": "https://huggingface.co/shashikantkaushik/Surface-defects-classification-of-the-hot-rolled-steel-strip",
+  "created_at": "2026-09-01T09:48:11.000Z",
+  "updated_at": "2026-09-01T09:51:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 101700098,
+  "storage_human": "102 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Surface-defects-classification-of-the-hot-rolled-steel-strip",
+      "url": "https://github.com/shashi-gifd/Surface-defects-classification-of-the-hot-rolled-steel-strip/blob/main/README.md",
+      "snippet": "Overview This model performs automated visual inspection of hot-rolled steel surfaces to detect and classify manufacturing defects, replacing slow and inconsistent manual inspection with a fast, consistent AI-based system. It was built using the Aargus DIY visual inspection tool— covering data ingestion, augmentation, transfer learning, and statistical validation."
+    },
+    {
+      "title": "(PDF) Detection and Classification of Surface Defects on Hot-Rolled ...",
+      "url": "https://www.researchgate.net/publication/384619620_Detection_and_Classification_of_Surface_Defects_on_Hot-Rolled_Steel_using_Vision_Transformers",
+      "snippet": "It was observed that the proposed model presents a high overall accuracy of 96.39 % for detection and classification of steel surface faults."
+    },
+    {
+      "title": "Detection and classification of surface defects on hot-rolled steel ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S240584402414529X",
+      "snippet": "A defect detection model for industrial products based on attention and knowledge distillation over four public industrial defect detection datasets including steel surface defects was examined by Zhang et al. [25]."
+    },
+    {
+      "title": "Classification of Surface Defects in Hot-Rolled Steel Strips Using ...",
+      "url": "https://ieeexplore.ieee.org/document/11064388/references",
+      "snippet": "In the steel manufacturing industry, detecting surface defects in hot-rolled steel strips is essential for product quality and safety. This paper introduces a classification method for such defects using contrastive learning image pre-training (CLIP) models, leveraging a dataset with various defect types. The approach harnesses CLIP&#x27;s feature extraction capabilities and contrastive learning to ..."
+    },
+    {
+      "title": "Hot-Rolled Steel Strip Defect Classification Based on ResNet34 Model",
+      "url": "https://ieeexplore.ieee.org/document/10339448",
+      "snippet": "To improve the accuracy and rate of surface defect classification of hot-rolled steel strips, we propose a surface defect classification method for hot rolled steel strips by embedding the attention mechanism into ResNet34 model. The experiment will classify 6 kinds of hot-rolled steel strip defects."
+    }
+  ]
+}

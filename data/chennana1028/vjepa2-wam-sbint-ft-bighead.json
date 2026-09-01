@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "chennana1028/vjepa2-wam-sbint-ft-bighead",
+  "slug": "chennana1028-vjepa2-wam-sbint-ft-bighead",
+  "author": "chennana1028",
+  "url": "https://huggingface.co/chennana1028/vjepa2-wam-sbint-ft-bighead",
+  "created_at": "2026-09-01T08:19:48.000Z",
+  "updated_at": "2026-09-01T08:24:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "vjepa2",
+    "latent-wam",
+    "flow-matching",
+    "sbint",
+    "openarm",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14330843153,
+  "storage_human": "14.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chennana1028/vjepa2-latent-wam-sbint-ft · Hugging Face",
+      "url": "https://huggingface.co/chennana1028/vjepa2-latent-wam-sbint-ft",
+      "snippet": "V-JEPA2 Latent-WAM — SB Int Finetune Latent World-Action Model (E2, flow-matching action head) finetuned on SB Int / OpenArm from a GigaData E2 online pretrain init."
+    },
+    {
+      "title": "GitHub - facebookresearch/vjepa2: PyTorch code and models for VJEPA2 ...",
+      "url": "https://github.com/facebookresearch/vjepa2",
+      "snippet": "Usage Demo See vjepa2_demo.ipynb (Colab Link) or vjepa2_demo.py for an example of how to load both the HuggingFace and PyTorch V-JEPA 2 models and run inference on a sample video to get a sample classification result."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=latent-wam",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: latent-wam Clear all"
+    },
+    {
+      "title": "[2506.09985] V-JEPA 2: Self-Supervised Video Models Enable ...",
+      "url": "https://arxiv.org/abs/2506.09985",
+      "snippet": "A major challenge for modern AI is to learn to understand the world and learn to act largely by observation. This paper explores a self-supervised approach that combines internet-scale video data with a small amount of interaction data (robot trajectories), to develop models capable of understanding, predicting, and planning in the physical world. We first pre-train an action-free joint ..."
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2506.09985v1",
+      "snippet": "This paper introduces V-JEPA2, a self-supervised video model enabling understanding, prediction, and planning in artificial intelligence."
+    }
+  ]
+}

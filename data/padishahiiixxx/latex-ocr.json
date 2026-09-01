@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "id": "PadishahIIIXXX/latex-ocr",
+  "slug": "padishahiiixxx-latex-ocr",
+  "author": "PadishahIIIXXX",
+  "url": "https://huggingface.co/PadishahIIIXXX/latex-ocr",
+  "created_at": "2026-09-01T02:48:13.000Z",
+  "updated_at": "2026-09-01T07:11:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "latex",
+    "ocr",
+    "formula-recognition",
+    "coca",
+    "swin",
+    "math",
+    "image-to-text",
+    "dataset:PadishahIIIXXX/latex-ocr-dataset",
+    "arxiv:2205.01917",
+    "base_model:timm/swin_small_patch4_window7_224.ms_in22k",
+    "base_model:finetune:timm/swin_small_patch4_window7_224.ms_in22k",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 269170211,
+  "storage_human": "269 MB",
+  "base_model": "timm/swin_small_patch4_window7_224.ms_in22k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "LaTeX formula OCR",
+      "dataset": "PadishahIIIXXX/latex-ocr-dataset (plain test split)",
+      "metric": "BLEU",
+      "value": 0.8737
+    },
+    {
+      "task": "LaTeX formula OCR",
+      "dataset": "PadishahIIIXXX/latex-ocr-dataset (plain test split)",
+      "metric": "Exact match ratio",
+      "value": 0.522
+    },
+    {
+      "task": "LaTeX formula OCR",
+      "dataset": "PadishahIIIXXX/latex-ocr-dataset (plain test split)",
+      "metric": "Edit distance (lower is better)",
+      "value": 0.0695
+    },
+    {
+      "task": "LaTeX formula OCR (styled)",
+      "dataset": "PadishahIIIXXX/latex-ocr-dataset (styled test split)",
+      "metric": "BLEU",
+      "value": 0.9049
+    },
+    {
+      "task": "LaTeX formula OCR (styled)",
+      "dataset": "PadishahIIIXXX/latex-ocr-dataset (styled test split)",
+      "metric": "Exact match ratio",
+      "value": 0.5316
+    },
+    {
+      "task": "LaTeX formula OCR (styled)",
+      "dataset": "PadishahIIIXXX/latex-ocr-dataset (styled test split)",
+      "metric": "Edit distance (lower is better)",
+      "value": 0.0562
+    }
+  ],
+  "sources": [
+    {
+      "title": "PadishahIIIXXX/latex-ocr · Hugging Face",
+      "url": "https://huggingface.co/PadishahIIIXXX/latex-ocr",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PadishahIIIXXX/latex-ocr-dataset · Hugging Face",
+      "url": "https://huggingface.co/PadishahIIIXXX/latex-ocr-dataset",
+      "snippet": "Synthetic LaTeX OCR Dataset Overview This dataset contains 1.2M+ synthetically generated LaTeX formula images designed to augment training data for LaTeX OCR models. The dataset applies style enrichment techniques to existing real-world LaTeX datasets (UniMER-1M and LaTeX-OCR), creating diverse visual representations of mathematical formulas through PDF-rendering and font styling. Quick Start ..."
+    },
+    {
+      "title": "LaTeX-OCR - PaddleOCR Documentation",
+      "url": "https://www.paddleocr.ai/main/en/version2.x/algorithm/formula_recognition/algorithm_rec_latex_ocr.html",
+      "snippet": "First, the model saved during the LaTeX-OCR printed mathematical expression recognition training process is converted into an inference model. you can use the following command to convert:"
+    },
+    {
+      "title": "GitHub - lukas-blecher/LaTeX-OCR: pix2tex: Using a ViT to convert ...",
+      "url": "https://github.com/lukas-blecher/LaTeX-OCR",
+      "snippet": "The model works best with images of smaller resolution. That&#x27;s why I added a preprocessing step where another neural network predicts the optimal resolution of the input image. This model will automatically resize the custom image to best resemble the training data and thus increase performance of images found in the wild."
+    },
+    {
+      "title": "GitHub - leonlenk/LaTeX_OCR",
+      "url": "https://github.com/leonlenk/LaTeX_OCR",
+      "snippet": "Welcome to LaTeX-OCR, an open-source implementation of a photomath style scan-and-render LaTeX OCR model! We use the power of PyTorch to scan your handwritten math, whether it be on tablet or paper, and convert it to LaTeX code. No more typing out complex equations - just write it down, scan it, and let LaTeX-OCR do the rest."
+    }
+  ]
+}

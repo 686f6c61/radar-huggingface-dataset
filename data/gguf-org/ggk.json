@@ -5,7 +5,7 @@
   "author": "gguf-org",
   "url": "https://huggingface.co/gguf-org/ggk",
   "created_at": "2026-08-07T01:28:04.000Z",
-  "updated_at": "2026-08-31T05:53:32.000Z",
+  "updated_at": "2026-08-31T19:51:41.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -17,11 +17,11 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 286,
+  "downloads_30d": 298,
   "trending_score": 0,
   "parameters": 1066235384,
   "parameters_human": "1.07B",
-  "storage_bytes": 1569052090,
+  "storage_bytes": 1574327782,
   "storage_human": "1.6 GB",
   "base_model": null,
   "formats": [

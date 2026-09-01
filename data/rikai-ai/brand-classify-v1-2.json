@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rikai-ai/brand-classify-v1-2",
+  "slug": "rikai-ai-brand-classify-v1-2",
+  "author": "rikai-ai",
+  "url": "https://huggingface.co/rikai-ai/brand-classify-v1-2",
+  "created_at": "2026-09-01T08:21:31.000Z",
+  "updated_at": "2026-09-01T08:21:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24069528,
+  "storage_human": "24 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rikai-ai (RIKAI TECHNOLOGY) - Hugging Face",
+      "url": "https://huggingface.co/rikai-ai",
+      "snippet": "Org profile for RIKAI TECHNOLOGY on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Welcome to Rikai! — Rikai documentation",
+      "url": "https://rikai.readthedocs.io/en/stable/index.html",
+      "snippet": "Welcome to Rikai! Rikai is a framework specifically designed for AI workflows focused around large scale unstructured datasets (e.g., images, videos, sensor data (future), text (future), and more). Through every stage of the AI modeling workflow, Rikai strives to offer a great developer experience when working with real-world AI datasets."
+    },
+    {
+      "title": "rikai-ai/brand_detector_v1.6 · Hugging Face",
+      "url": "https://huggingface.co/rikai-ai/brand_detector_v1.6",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - eto-ai/rikai: Parquet-based ML data format optimized for ...",
+      "url": "https://github.com/eto-ai/rikai",
+      "snippet": "Rikai alleviates the pain that AI practitioners experience on a daily basis dealing with the myriad of tedious data tasks, so they can focus again on model-building and problem solving. To start trying Rikai right away, checkout the Quickstart Guide."
+    },
+    {
+      "title": "RikAI2 - Lazarus",
+      "url": "https://docs.lazarusai.com/prompting-guide/model-specific/rikai2/",
+      "snippet": "RikAI2 Prompting Explainability RikAI2 features our latest version of Explainability. While earlier models&#x27; response includes \"Context\", a probabilistic portion of the source document from which the answer was likely derived, RikAI2&#x27;s response includes a description of how the model arrived at the answer. This is often more robust and offers more details about how the model interpreted the ..."
+    }
+  ]
+}

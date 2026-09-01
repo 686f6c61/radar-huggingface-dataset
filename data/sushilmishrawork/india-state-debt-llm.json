@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Sushilmishrawork/india-state-debt-llm",
+  "slug": "sushilmishrawork-india-state-debt-llm",
+  "author": "Sushilmishrawork",
+  "url": "https://huggingface.co/Sushilmishrawork/india-state-debt-llm",
+  "created_at": "2026-09-01T09:10:56.000Z",
+  "updated_at": "2026-09-01T09:20:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "fine-tuned",
+    "india-finance",
+    "state-debt",
+    "chain-of-thought",
+    "rbi-data",
+    "en",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497774208,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sushilmishrawork (Sushil Mishra) - Hugging Face",
+      "url": "https://huggingface.co/Sushilmishrawork",
+      "snippet": "Aihuggingface 🚀 AI related work Sushilmishrawork Dec 26, 2025 Build error"
+    },
+    {
+      "title": "Data sovereignty: SBI mulling to build its own domain-specific LLM",
+      "url": "https://www.devdiscourse.com/article/technology/2846091-data-sovereignty-sbi-mulling-to-build-its-own-domain-specific-llm",
+      "snippet": "The country&#x27;s largest lender State Bank of India is mulling to build its own Large Language Model (LLM) to leverage the data it possesses, a senior official said on Friday. The bank has been using Artificial Intelligence (AI) for over seven years now, and wants to create a situation where it can co-exist with an open-source LLM, its Deputy Managing Director Nitin Chugh said speaking at the ..."
+    },
+    {
+      "title": "India gets into AI mode, plans to build own LLM - domain-b.com",
+      "url": "https://www.domain-b.com/technology/artificial-intelligence/india-gets-into-ai-mode-plans-to-build-own-llm",
+      "snippet": "The Indian government woke up to reality of its digital status, after a Chinese startup launched a low-cost foundational AI model, and has announced plans to"
+    },
+    {
+      "title": "#rbi #sbi #largestlandingstatebank #llm #ai # ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/tamanna-sharma-a149222a9_rbi-sbi-largestlandingstatebank-activity-7170119197644046336-nkGh",
+      "snippet": "Data sovereignty: SBI mulling to build its own domain-specific LLM. Pune, The country&#x27;s largest lender State Bank of India is mulling to build its own Large Language Model (LLM) to leverage the ..."
+    },
+    {
+      "title": "Retyping LLM Code to Avoid Cognitive Debt? | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/cognitive-debt-retype-llm-code-august-2026",
+      "snippet": "A viral post says retype LLM code by hand to avoid cognitive debt. HN pushed back. Here&#x27;s what actually holds up, and better alternatives that work."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "pR0jekt-pR0digee/SOFIA-v2-agi",
+  "slug": "pr0jekt-pr0digee-sofia-v2-agi",
+  "author": "pR0jekt-pR0digee",
+  "url": "https://huggingface.co/pR0jekt-pR0digee/SOFIA-v2-agi",
+  "created_at": "2026-09-01T02:55:39.000Z",
+  "updated_at": "2026-09-01T02:55:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "mpnet",
+    "embeddings",
+    "lora",
+    "triplet-loss",
+    "cosine-similarity",
+    "retrieval",
+    "mteb",
+    "sentence-similarity",
+    "en",
+    "dataset:sentence-transformers/stsb",
+    "dataset:paws",
+    "dataset:banking77",
+    "dataset:mteb/nq",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 441117656,
+  "storage_human": "441 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pR0jekt-pR0digee/SOFIA-v2-agi · Hugging Face",
+      "url": "https://huggingface.co/pR0jekt-pR0digee/SOFIA-v2-agi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MaliosDark/SOFIA-v2-agi · Hugging Face",
+      "url": "https://huggingface.co/MaliosDark/SOFIA-v2-agi",
+      "snippet": "SOFIA (SOFt Intel Artificial) is a cutting-edge sentence embedding model developed by Zunvra.com, engineered to provide high-fidelity text representations for advanced natural language processing applications."
+    },
+    {
+      "title": "Microsoft Project Sophia - Microsoft Adoption",
+      "url": "https://adoption.microsoft.com/en-us/project-sophia/",
+      "snippet": "What is Project Sophia? Project Sophia aims to help our customers solve complex, cross-domain business problems with AI, by enabling them to interact with data in new ways and answer strategic questions that drive better outcomes."
+    },
+    {
+      "title": "Project Sophia",
+      "url": "https://projectsophia.microsoft.com/",
+      "snippet": "Project Sophia (Preview) is free to try. Sign in to save your work and unlock insights for your enterprise data. Sign in"
+    },
+    {
+      "title": "sofi-ai/README.md at master · MaliosDark/sofi-ai · GitHub",
+      "url": "https://github.com/MaliosDark/sofi-ai/blob/master/README.md",
+      "snippet": "Contribute to MaliosDark/sofi-ai development by creating an account on GitHub."
+    }
+  ]
+}

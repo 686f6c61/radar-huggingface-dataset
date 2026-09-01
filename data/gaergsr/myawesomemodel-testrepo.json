@@ -4,8 +4,8 @@
   "slug": "gaergsr-myawesomemodel-testrepo",
   "author": "gaergsr",
   "url": "https://huggingface.co/gaergsr/MyAwesomeModel-TestRepo",
-  "created_at": "2026-08-17T04:30:25.000Z",
-  "updated_at": "2026-08-17T04:30:34.000Z",
+  "created_at": "2026-08-31T14:45:55.000Z",
+  "updated_at": "2026-08-31T14:46:00.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-23T18:20:43.053Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

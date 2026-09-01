@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "kinleyrabgay/lotsawa-600m-dz-en",
+  "slug": "kinleyrabgay-lotsawa-600m-dz-en",
+  "author": "kinleyrabgay",
+  "url": "https://huggingface.co/kinleyrabgay/lotsawa-600m-dz-en",
+  "created_at": "2026-09-01T09:20:05.000Z",
+  "updated_at": "2026-09-01T10:23:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "m2m_100",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 615073792,
+  "parameters_human": "615.1M",
+  "storage_bytes": 7418162767,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kinleyrabgay (Kinley Rabgay) - Hugging Face",
+      "url": "https://huggingface.co/kinleyrabgay/datasets",
+      "snippet": "Recent Activity updated a model about 8 hours ago kinleyrabgay/nllb-200-600M-dzo-eng-50k published a model about 11 hours ago kinleyrabgay/nllb-200-600M-dzo-eng-50k"
+    },
+    {
+      "title": "kinleyrabgay/nllb-200-600M-dzo-eng-50k · Hugging Face",
+      "url": "https://huggingface.co/kinleyrabgay/nllb-200-600M-dzo-eng-50k",
+      "snippet": "This model is a fine-tuned version of kinleyrabgay/nllb-200-600M-dzo-eng-30k on kinleyrabgay/dz_to_en dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "kinleyrabgay (Kinley Rabgay) · GitHub",
+      "url": "https://github.com/kinleyrabgay",
+      "snippet": "A graph representing kinleyrabgay&#x27;s contributions from June 01, 2025 to June 02, 2026. The contributions are 95% commits, 3% code review, 2% pull requests, 0% issues."
+    },
+    {
+      "title": "GitHub - CompassionAI/lotsawa: Inference for the Tibetan models made by ...",
+      "url": "https://github.com/CompassionAI/lotsawa",
+      "snippet": "Lotsawa will download the trained CompassionAI language models into the PyTorch Hub cache. The models can get fairly large, for example our current best model for Tibetan-English translation is 1.8GB."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

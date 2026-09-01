@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "gridfm/gridfm-pf-reconstruction",
+  "slug": "gridfm-gridfm-pf-reconstruction",
+  "author": "gridfm",
+  "url": "https://huggingface.co/gridfm/gridfm-pf-reconstruction",
+  "created_at": "2026-09-01T09:26:39.000Z",
+  "updated_at": "2026-09-01T09:26:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "gridfm-graphkit",
+  "languages": [],
+  "tags": [
+    "gridfm-graphkit",
+    "safetensors",
+    "power-systems",
+    "power-flow",
+    "graph-neural-network",
+    "vllm",
+    "pooling",
+    "feature-extraction",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1276611,
+  "parameters_human": "1.3M",
+  "storage_bytes": 5156188,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GridFM Models | gridfm/gridfm-graphkit | DeepWiki",
+      "url": "https://deepwiki.com/gridfm/gridfm-graphkit/3.3-gridfm-models",
+      "snippet": "This page documents the GridFM (Graph Foundation Model) model architecture and its versions. GridFM is a graph neural network designed for transmission grid state estimation and power flow analysis. For information about training these models, see Training Workflow. For details on the task implementation that wraps these models, see FeatureReconstructionTask."
+    },
+    {
+      "title": "Feature Reconstruction | gridfm/gridfm-graphkit | DeepWiki",
+      "url": "https://deepwiki.com/gridfm/gridfm-graphkit/6.1-feature-reconstruction",
+      "snippet": "Feature reconstruction is the core capability of GridFM foundation models. Given a power grid with partially observed or masked features, the model reconstructs the missing values by learning the physical and electrical relationships in the grid."
+    },
+    {
+      "title": "From vision to reality: a unified AI solver for the grid",
+      "url": "https://research.ibm.com/blog/gridfm-neural-solver-power-grid",
+      "snippet": "The team also took first steps toward generalizing the model to new power grids. They pre-trained the model on 100 decomposed grids, which doubled the data efficiency when adapting to a new grid. True zero-shot performance on entirely unseen topologies remains an open challenge, and one they are actively working on."
+    },
+    {
+      "title": "GridFM - introduction page -",
+      "url": "https://gridfm.org/",
+      "snippet": "GridFM brings together the power-systems and AI communities to develop foundation models that understand grid structure, physics, operating constraints, and real-world context."
+    },
+    {
+      "title": "GitHub - gridfm/gridfm-datakit: Generate power flow data to train ...",
+      "url": "https://github.com/gridfm/gridfm-datakit",
+      "snippet": "Generate power flow data to train machine learning and foundation models for the electric power grid. - gridfm/gridfm-datakit"
+    }
+  ]
+}

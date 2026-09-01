@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "0x3/cc-g2pnp-japanese-g2p-conformer-ctc",
+  "slug": "0x3-cc-g2pnp-japanese-g2p-conformer-ctc",
+  "author": "0x3",
+  "url": "https://huggingface.co/0x3/cc-g2pnp-japanese-g2p-conformer-ctc",
+  "created_at": "2026-09-01T08:18:59.000Z",
+  "updated_at": "2026-09-01T08:18:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "g2p",
+    "grapheme-to-phoneme",
+    "japanese",
+    "conformer",
+    "ctc",
+    "ja",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1018617333,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ayousanz/cc-g2pnp-japanese-g2p-conformer-ctc · Hugging Face",
+      "url": "https://huggingface.co/ayousanz/cc-g2pnp-japanese-g2p-conformer-ctc",
+      "snippet": "CC-G2PnP: Japanese Grapheme-to-Phoneme and Prosody Model Conformer-CTC ベースの日本語 G2PnP (Grapheme-to-Phoneme and Prosody) モデル。 Model Details Architecture: Conformer Encoder + CTC Head (84M params) Training: 300k steps, T4×4 DDP, SDPA enabled Checkpoint: step_00300000.pt (25% of full 1.2M steps training) Usage"
+    },
+    {
+      "title": "GitHub - ayutaz/cc-g2pnp: Reimplementation of CC-G2PnP: Streaming ...",
+      "url": "https://github.com/ayutaz/cc-g2pnp",
+      "snippet": "Reimplementation of CC-G2PnP: Streaming Conformer-CTC based Japanese Grapheme-to-Phoneme and Prosody model (arXiv:2602.17157) - ayutaz/cc-g2pnp"
+    },
+    {
+      "title": "ayousanz/cc-g2pnp-japanese-g2p-conformer-ctc at main",
+      "url": "https://huggingface.co/ayousanz/cc-g2pnp-japanese-g2p-conformer-ctc/tree/main",
+      "snippet": "4 Japanese g2p grapheme-to-phoneme japanese conformer ctc License:mit Model card FilesFiles and versions xet Community Copy to bucket new main cc-g2pnp-japanese-g2p-conformer-ctc 1.02 GB Ctrl+K Ctrl+K 1 contributor History:3 commits ayousanz Upload README.md with huggingface_hub 8c80b95 verified3 months ago .gitattributes Safe 1.52 kBinitial ..."
+    },
+    {
+      "title": "CC-G2PnP: Streaming Grapheme-to-Phoneme and prosody with Conformer-CTC ...",
+      "url": "https://arxiv.org/pdf/2602.17157",
+      "snippet": "We propose CC-G2PnP, a streaming grapheme-to-phoneme and prosody (G2PnP) model to connect large language model and text-to-speech in a streaming manner. CC-G2PnP is based on Conformer-CTC architecture. Specifically, the input grapheme tokens are pro-cessed chunk by chunk, which enables streaming inference of phone-mic and prosodic (PnP) labels."
+    },
+    {
+      "title": "CC-G2PnP: Streaming Grapheme-to-Phoneme and prosody with Conformer-CTC ...",
+      "url": "https://arxiv.org/abs/2602.17157",
+      "snippet": "We propose CC-G2PnP, a streaming grapheme-to-phoneme and prosody (G2PnP) model to connect large language model and text-to-speech in a streaming manner. CC-G2PnP is based on Conformer-CTC architecture. Specifically, the input grapheme tokens are processed chunk by chunk, which enables streaming inference of phonemic and prosodic (PnP) labels. By guaranteeing minimal look-ahead size to each ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "User387984723/ZI_LOR",
+  "slug": "user387984723-zi_lor",
+  "author": "User387984723",
+  "url": "https://huggingface.co/User387984723/ZI_LOR",
+  "created_at": "2026-09-01T10:06:08.000Z",
+  "updated_at": "2026-09-01T10:16:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1694124448,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "User387984723/reversedeepthroatv2-high-i2v-wan22 · Hugging Face",
+      "url": "https://huggingface.co/User387984723/reversedeepthroatv2-high-i2v-wan22",
+      "snippet": "Instructions to use User387984723/reversedeepthroatv2-high-i2v-wan22 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "User387984723/wan2.2-i2v-blink-piss · Hugging Face",
+      "url": "https://huggingface.co/User387984723/wan2.2-i2v-blink-piss",
+      "snippet": "Duplicated from obsxrver/wan2.2-i2v-blink-piss User387984723 / wan2.2-i2v-blink-piss like 0 Image-to-Video Diffusers Not-For-All-Audiences wan-2.2-i2v piss lora template:sd-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Free Ai Influencer - Z image v1.0 | ZImage LoRA | Civitai",
+      "url": "https://civitai.com/models/2187823/free-ai-influencer",
+      "snippet": "A completely AI-crafted, hyper-realistic influencer-style character LoRA, trained with high precision to demonstrate the quality of my Z Image LoRA training. Character description (paraphrased title):"
+    },
+    {
+      "title": "Z-Image LoRA - Multi LoRA Combination AI Image Generator | ZIT LoRA | Z ...",
+      "url": "https://z-image.me/en/z-image-lora",
+      "snippet": "What is Z-Image LoRA? Z-Image LoRA (also known as ZIT LoRA) is an advanced AI image generation tool. LoRA (Low-Rank Adaptation) is a lightweight model fine-tuning technique that adds specific styles, characters, or effects to base models. With Z-Image LoRA, you can combine up to 5 different LoRA models simultaneously to create unprecedented unique visual effects."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    }
+  ]
+}

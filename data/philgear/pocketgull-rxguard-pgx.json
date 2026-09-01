@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "philgear/pocketgull-rxguard-pgx",
+  "slug": "philgear-pocketgull-rxguard-pgx",
+  "author": "philgear",
+  "url": "https://huggingface.co/philgear/pocketgull-rxguard-pgx",
+  "created_at": "2026-09-01T02:20:47.000Z",
+  "updated_at": "2026-09-01T02:29:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "gemma-3",
+    "lora",
+    "clinical-nlp",
+    "healthcare",
+    "hipaa-safe-harbor",
+    "open-science",
+    "pocketgull",
+    "nih-medquad",
+    "who-mhgap",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:adapter:google/gemma-3-4b-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "philgear - Hugging Face",
+      "url": "https://huggingface.co/philgear/philgear",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - philgear/pocketgull: An Integrative Health App to Assist ...",
+      "url": "https://github.com/philgear/pocketgull/",
+      "snippet": "An Integrative Health App to Assist Doctors and Patients. - philgear/pocketgull"
+    },
+    {
+      "title": "GitHub - philgear/pocketgull: An Integrative Health App to Assist ...",
+      "url": "https://github.com/philgear/pocketgull/tree/main",
+      "snippet": "Pocket Gull streamlines patient intake with an interactive 3D body map and AI-powered clinical intelligence. It empowers practitioners with rapid data visualization and strategy synthesis for proactive care decisions, acting as an interruptible voice-first clinical co-pilot."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 407 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "MultiSense",
   "url": "https://huggingface.co/MultiSense/CustomerLM",
   "created_at": "2026-01-05T07:36:19.000Z",
-  "updated_at": "2026-08-29T15:29:12.000Z",
+  "updated_at": "2026-09-01T06:01:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 1168,
+  "downloads_30d": 1172,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "TheCoderScientist/GarudaCoder-27B-ID-lora",
+  "slug": "thecoderscientist-garudacoder-27b-id-lora",
+  "author": "TheCoderScientist",
+  "url": "https://huggingface.co/TheCoderScientist/GarudaCoder-27B-ID-lora",
+  "created_at": "2026-08-31T09:19:34.000Z",
+  "updated_at": "2026-09-01T09:03:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "unsloth",
+    "code",
+    "indonesian",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "id",
+    "base_model:unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
+    "base_model:adapter:unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 487200285,
+  "storage_human": "487 MB",
+  "base_model": "unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheCoderScientist/GarudaCoder-27B-ID-lora · Hugging Face",
+      "url": "https://huggingface.co/TheCoderScientist/GarudaCoder-Qwen3.8-27B-ID-lora",
+      "snippet": "QLoRA adapter (r=8, alpha=8) on top of Qwen3.8-27B (unsloth 4-bit build) — successor of GarudaCoder-7B-Coder-ID-lora. Fine-tuned on a curated high-quality Indonesian coding dataset. Focus: explaining the reasoning before writing code, honesty about uncertainty (anti-hallucination), and Indonesian developer context. All model output is in ..."
+    },
+    {
+      "title": "TheCoderScientist (TheCoderScientist) - Hugging Face",
+      "url": "https://huggingface.co/TheCoderScientist/models",
+      "snippet": "TheCoderScientist&#x27;s models1 Sort: Recently updated TheCoderScientist/GarudaCoder-7B-Coder-ID-lora Text Generation •Updated 3 days ago• 201 • 1"
+    },
+    {
+      "title": "qwen/qwen3.8-27b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.8-27b",
+      "snippet": "Qwen3.8 27B Qwen3.8 27B is a compact, deployment-friendly dense vision-language model built on the Qwen3.5 architecture. It delivers stronger performance across coding, professional work, research, and long-horizon agentic tasks. Highlights Agent Execution: stronger autonomous planning and environment-feedback handling improve reliability on complex, multi-step tasks. Flexible Thinking Control ..."
+    },
+    {
+      "title": "Fine-tune LLMs on Jetson - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/tutorials/finetune-on-jetson/",
+      "snippet": "Learn how to fine-tune large language models directly on Jetson using PyTorch and Hugging Face TRL. Covers Full SFT (4B), LoRA (9B), and QLoRA (27B)."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,919 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    }
+  ]
+}

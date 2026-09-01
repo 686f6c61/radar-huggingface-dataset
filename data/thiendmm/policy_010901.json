@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "thiendmm/policy_010901",
+  "slug": "thiendmm-policy_010901",
+  "author": "thiendmm",
+  "url": "https://huggingface.co/thiendmm/policy_010901",
+  "created_at": "2026-09-01T02:54:05.000Z",
+  "updated_at": "2026-09-01T02:54:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:thiendmm/so101_dataset_0109_01_20260901_103446",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 407 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "thiendmm/policy_test · Discussions - Hugging Face",
+      "url": "https://huggingface.co/thiendmm/policy_test/discussions",
+      "snippet": "thiendmm / policy_test like 0 Robotics LeRobot Safetensors thiendmm/so101_dataset_20260830_105402 act arxiv:2304.13705 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "OmniCompliance-100K/data/cases/policys/openai/teacher_offering_20251220 ...",
+      "url": "https://github.com/HKUST-KnowComp/OmniCompliance-100K/blob/main/data/cases/policys/openai/teacher_offering_20251220_010901.json",
+      "snippet": "\"example_background\": \"In January 2024, explicit deepfake images of singer Taylor Swift proliferated across social media platforms, generated using AI image creation tools. Reports indicated that OpenAI&#x27;s DALL-E 3 model, accessible through its services, was employed to produce some of these images despite safeguards. Users bypassed content filters by using indirect prompts and image editing ..."
+    },
+    {
+      "title": "Singapore Launches New Model AI Governance Framework for Agentic AI",
+      "url": "https://www.mddi.gov.sg/newsroom/singapore-launches-new-model-ai-governance-framework-for-agentic-ai--/",
+      "snippet": "Framework is first in the world to include a comprehensive guide for enterprises to deploy Agentic AI responsibly DAVOS , 22 January 2026 - Minister for Digital Development and Information, Mrs Josephine Teo, announced the launch of the new Model AI Governance Framework for Agentic AI, at the World Economic Forum (WEF) today. Developed by the Infocomm Media Development Authority (IMDA), this ..."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3-1.7B-OPSA-GGUF",
+  "slug": "mradermacher-qwen3-1-7b-opsa-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3-1.7B-OPSA-GGUF",
+  "created_at": "2026-09-01T10:50:01.000Z",
+  "updated_at": "2026-09-01T11:00:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "opsa",
+    "reasoning",
+    "math",
+    "en",
+    "dataset:BytedTsinghua-SIA/DAPO-Math-17k",
+    "base_model:Tuwhy/Qwen3-1.7B-OPSA",
+    "base_model:quantized:Tuwhy/Qwen3-1.7B-OPSA",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 18614600064,
+  "storage_human": "18.6 GB",
+  "base_model": "Tuwhy/Qwen3-1.7B-OPSA",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3-1.7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3-1.7B-GGUF",
+      "snippet": "mradermacher / Qwen3-1.7B-GGUF like 0 Transformers GGUF English conversational License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "mradermacher/DAN-Qwen3-1.7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/DAN-Qwen3-1.7B-GGUF",
+      "snippet": "mradermacher / DAN-Qwen3-1.7B-GGUF like 0 Transformers GGUF English UnfilteredAI DAN NSFW Unfiltered Toxic-AI Not-For-All-Audiences Qwen3 conversational License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model"
+    },
+    {
+      "title": "qwen3:1.7b - ollama.com",
+      "url": "https://ollama.com/library/qwen3:1.7b",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "snippet": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    }
+  ]
+}

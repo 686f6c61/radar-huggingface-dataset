@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/TIGER-DnR-LiteRT",
   "created_at": "2026-07-02T08:21:40.000Z",
-  "updated_at": "2026-08-27T12:35:19.000Z",
+  "updated_at": "2026-09-01T01:45:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "audio-to-audio",

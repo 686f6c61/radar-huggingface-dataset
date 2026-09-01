@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mmRoshani/Imperum-CybersecurityLLM-v1.0",
+  "slug": "mmroshani-imperum-cybersecurityllm-v1-0",
+  "author": "mmRoshani",
+  "url": "https://huggingface.co/mmRoshani/Imperum-CybersecurityLLM-v1.0",
+  "created_at": "2026-09-01T10:48:22.000Z",
+  "updated_at": "2026-09-01T10:48:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "cybersecurity",
+    "security",
+    "soc",
+    "dfir",
+    "threat-intelligence",
+    "detection-engineering",
+    "blue-team",
+    "moe",
+    "qwen3",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 58069897024,
+  "storage_human": "58.1 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IMPERUM/Imperum-CybersecurityLLM-v1.0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/IMPERUM/Imperum-CybersecurityLLM-v1.0-GGUF",
+      "snippet": "Imperum-CybersecurityLLM-v1. A domain-specific LLM for cybersecurity — built for ASOC, DFIR and detection-engineering work, and built to run on one machine, inside your own perimeter."
+    },
+    {
+      "title": "IMPERUM/Imperum-CybersecurityLLM-v1.0-GGUF at main",
+      "url": "https://huggingface.co/IMPERUM/Imperum-CybersecurityLLM-v1.0-GGUF/tree/main",
+      "snippet": "Instructions to use IMPERUM/Imperum-CybersecurityLLM-v1.-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Imperum-CybersecurityLLM-v1.0.Q8_0.gguf · IMPERUM/Imperum ...",
+      "url": "https://huggingface.co/IMPERUM/Imperum-CybersecurityLLM-v1.0-GGUF/blob/main/Imperum-CybersecurityLLM-v1.0.Q8_0.gguf",
+      "snippet": "Instructions to use IMPERUM/Imperum-CybersecurityLLM-v1.-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "README.md · IMPERUM/Imperum-CybersecurityLLM-v1.0-GGUF at main",
+      "url": "https://huggingface.co/IMPERUM/Imperum-CybersecurityLLM-v1.0-GGUF/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Imperum-CybersecurityLLM-v1.0-GGUF - AI Market Cap",
+      "url": "https://aimarketcap.tech/models/imperum-imperum-cybersecurityllm-v1-0-gguf",
+      "snippet": "Imperum-CybersecurityLLM-v1.-GGUF is a open-weight IMPERUM llm model with a 262,144 token context window. Running this yourself: can likely run on your own machine."
+    }
+  ]
+}

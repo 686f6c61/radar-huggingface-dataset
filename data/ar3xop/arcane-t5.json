@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ar3xop/arcane-t5",
+  "slug": "ar3xop-arcane-t5",
+  "author": "ar3xop",
+  "url": "https://huggingface.co/ar3xop/arcane-t5",
+  "created_at": "2026-09-01T08:51:43.000Z",
+  "updated_at": "2026-09-01T08:52:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "t5",
+    "arcane",
+    "mental-health",
+    "sequence-to-sequence",
+    "text2text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2951644388,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nitrosocke/Arcane-Diffusion · Hugging Face",
+      "url": "https://huggingface.co/nitrosocke/Arcane-Diffusion",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pony.ai Reaches 300 ARCFOX Alpha T5 Robotaxis, 1,000 Target | PONY ...",
+      "url": "https://www.stocktitan.net/news/PONY/pony-ai-rolls-out-its-300th-arcfox-alpha-t5-robotaxi-advancing-yfshdr5ulcyy.html",
+      "snippet": "300th ARCFOX Alpha T5 with Pony.ai&#x27;s Gen-7 system. Production began July 2025; permits in Beijing and Shenzhen. On track for 1,000 vehicles and unit break-even by year-end."
+    },
+    {
+      "title": "Isha (Arcane) by UOC - Pony - Free AI Model | Tensor.Art",
+      "url": "https://tensor.art/models/896950446621484192",
+      "snippet": "Download Isha (Arcane) by UOC - free LORA Pony AI model on TENSOR. By lambl"
+    },
+    {
+      "title": "AI Model Arena | Arcanea — Benchmarks, Rankings & Free Models | Arcanea",
+      "url": "https://www.arcanea.ai/models",
+      "snippet": "Compare AI model benchmarks, SWE-Bench scores, pricing, and context windows. Discover free models on Zen routing and see how Arcanea routes models to specialized agents in production."
+    },
+    {
+      "title": "Unified AI API Gateway — ArcaneAPI",
+      "url": "https://arcaneapi.com/",
+      "snippet": "Access GPT-5, Claude, Gemini, Llama, and 50+ AI models through a single API. Zero markup pricing, one key for every provider."
+    }
+  ]
+}

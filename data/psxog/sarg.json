@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "psxog/SARG",
+  "slug": "psxog-sarg",
+  "author": "psxog",
+  "url": "https://huggingface.co/psxog/SARG",
+  "created_at": "2026-09-01T08:29:59.000Z",
+  "updated_at": "2026-09-01T08:29:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Structure-Augmented Reasoning Generation - arXiv.org",
+      "url": "https://arxiv.org/html/2506.08364v3",
+      "snippet": "For each model, we evaluate three modes: SARG (structure-augmented), RAG (retrieval-only), and Zero-Shot. Figure 2. Qualitative case study comparing SARG with expert-annotated triples (Antonucci et al., 2023) for answering a biomedical question. SARG successfully reconstructs a multi-hop pathway, which the human-annotated KG fails to recover."
+    },
+    {
+      "title": "Structure-Augmented Reasoning Generation - arXiv.org",
+      "url": "https://arxiv.org/html/2506.08364",
+      "snippet": "These chains, along with their associated text chunks, are then integrated into the generation prompt to explicitly guide the model&#x27;s reasoning process. Importantly, SARG doesn&#x27;t require custom retrievers or domain-specific fine-tuning. Instead, it functions as a modular layer compatible with all existing RAG pipelines."
+    },
+    {
+      "title": "SARG: Software application resiliency prediction using graph neural ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0164121225003668",
+      "snippet": "Moreover, SARG adopts a machine learning approach, enabling model generalization, which allows it to effectively predict resiliency for unseen software applications. The experimental results show that SARG achieves 43 % higher prediction accuracy than the state-of-the-art ML-based approach while being 3 times faster."
+    },
+    {
+      "title": "SARG-ai (NolaAI) - Hugging Face",
+      "url": "https://huggingface.co/SARG-ai",
+      "snippet": "AI & ML interests Alignment & Super-Alignment, NLP, Self-Attention, SLMs, Model Trust, Model Honesty, & Sentiment Analysis"
+    },
+    {
+      "title": "psxog (Sivadeth P S) - Hugging Face",
+      "url": "https://huggingface.co/psxog",
+      "snippet": "User profile of Sivadeth P S on Hugging Face"
+    }
+  ]
+}

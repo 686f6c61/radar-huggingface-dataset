@@ -5,7 +5,7 @@
   "author": "LyngualLabs",
   "url": "https://huggingface.co/LyngualLabs/yecs-asr-whisper-plain",
   "created_at": "2026-08-23T10:15:47.000Z",
-  "updated_at": "2026-08-23T10:22:55.000Z",
+  "updated_at": "2026-08-31T17:18:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

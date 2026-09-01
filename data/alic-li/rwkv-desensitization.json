@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Alic-Li/RWKV-Desensitization",
+  "slug": "alic-li-rwkv-desensitization",
+  "author": "Alic-Li",
+  "url": "https://huggingface.co/Alic-Li/RWKV-Desensitization",
+  "created_at": "2026-09-01T10:01:29.000Z",
+  "updated_at": "2026-09-01T10:01:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alic-Li (Alic-Li) · GitHub",
+      "url": "https://github.com/Alic-Li",
+      "snippet": "ROCm 🔥 RWKV 🕊️ is All You Need ~ . Alic-Li has 40 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Accelerating RWKV v7 RNN Large Model Training and RWKV V7 Architecture ...",
+      "url": "https://github.com/Alic-Li/RWKV_7_on_AMD_Radeon-Instinct",
+      "snippet": "Dive into the world of RWKV-v7 on AMD GPUs, contribute to the vibrant RWKV open-source projects, and unlock new possibilities in large model training and multimodal AI research. Your contributions are vital in pushing the boundaries of what&#x27;s achievable with efficient and powerful AI architectures on AMD hardware."
+    },
+    {
+      "title": "RWKV Language Model",
+      "url": "https://wiki.rwkv.com/",
+      "snippet": "RWKV Model Naming Rules RWKV models typically follow two naming conventions: one for World models, and another for the RWKV G1 series introduced during the RWKV 7 architecture era (which supports &#x27;think&#x27; reasoning)."
+    },
+    {
+      "title": "RWKV Language Model",
+      "url": "https://www.rwkv.com/",
+      "snippet": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance and parallelizable like a Transformer. Check RWKV-7 \"Goose\" reasoning models. It&#x27;s combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctxlen, and free text embedding. And it&#x27;s 100% attention-free, and a Linux Foundation AI project."
+    },
+    {
+      "title": "The Evolution of RWKV: Advancements in Efficient Language Modeling",
+      "url": "https://arxiv.org/html/2411.02795v1",
+      "snippet": "This allows the model to dynamically adjust its memory retention based on the input content. These changes resulted in improved performance on language modeling benchmarks and better scaling properties for larger models. Table 1 shows a comparison of RWKV-v5 with other models on various benchmarks:"
+    }
+  ]
+}

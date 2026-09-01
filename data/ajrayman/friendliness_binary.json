@@ -5,7 +5,7 @@
   "author": "ajrayman",
   "url": "https://huggingface.co/ajrayman/Friendliness_binary",
   "created_at": "2024-10-02T16:32:37.000Z",
-  "updated_at": "2026-08-30T15:38:24.000Z",
+  "updated_at": "2026-08-31T08:11:03.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 124647170,
   "parameters_human": "124.6M",
-  "storage_bytes": 13016521786,
-  "storage_human": "13.0 GB",
+  "storage_bytes": 15010977865,
+  "storage_human": "15.0 GB",
   "base_model": "roberta-base",
   "formats": [
     "safetensors"

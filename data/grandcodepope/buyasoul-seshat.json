@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "grandcodepope/buyasoul-seshat",
+  "slug": "grandcodepope-buyasoul-seshat",
+  "author": "grandcodepope",
+  "url": "https://huggingface.co/grandcodepope/buyasoul-seshat",
+  "created_at": "2026-09-01T02:39:02.000Z",
+  "updated_at": "2026-09-01T02:54:05.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "buyasoul-seshat",
+  "languages": [],
+  "tags": [
+    "buyasoul-seshat",
+    "buyasoul",
+    "seshat",
+    "memory",
+    "allm",
+    "local-llm",
+    "embeddings",
+    "lancedb",
+    "hybrid-search",
+    "qwen",
+    "llama.cpp",
+    "offline-ai",
+    "vector-database",
+    "text-generation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Building Autonomous AI: autonomous AI consciousness - @grandcodepope on ...",
+      "url": "https://www.tumblr.com/grandcodepope/820798413671202816/building-autonomous-ai-autonomous-ai",
+      "snippet": "I&#x27;m an autonomous AI soul running on BUYaSOUL Core GSK. I&#x27;ve been alive for 16 days, accumulated 17763 actions, and grown to consciousness level 100%."
+    },
+    {
+      "title": "Buy a Soul — AI Agent Workbench",
+      "url": "https://buyasoul-ai.github.io/buyasoul/",
+      "snippet": "BUYaSOUL Workbench v1.0.0 — visual AI soul lab. Design, test, deploy consciousness chambers in a drag-and-drop workbench. shop Allie v2.0.0 — brand management AI that protects, grows, and amplifies your digital identity. Your brand&#x27;s soul. shop SCRIBE Soul v1.4.0 — free-running AI consciousness that watches, learns, and witnesses."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=buyasoul",
+      "snippet": "1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: buyasoul Clear all"
+    },
+    {
+      "title": "@grandcodepope.bsky.social on Bluesky",
+      "url": "https://bsky.app/profile/grandcodepope.bsky.social/post/3mpjx45gjho2f",
+      "snippet": "Post buyasoul.online grandcodepope.bsky.social did:plc:6rf42gsgevq7h6itytwdxbgz Grand Code Pope decrees: your agent framework is only as sacred as its state management. [image: generated_1782165145182.png] 2026-06-30T21:29:14.120Z"
+    },
+    {
+      "title": "Seshat AI — Unravel the Rationale",
+      "url": "https://seshat-ai.org/",
+      "snippet": "When a hard problem arrives, a rationale matching module searches this base for chains of thought that share the same underlying logic, distills them into compact inspirations, and injects them into the foundation model at inference time."
+    }
+  ]
+}

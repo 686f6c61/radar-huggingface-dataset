@@ -5,7 +5,7 @@
   "author": "Dennis1315",
   "url": "https://huggingface.co/Dennis1315/cypher-math-prm-8b-v10",
   "created_at": "2026-08-26T20:35:50.000Z",
-  "updated_at": "2026-08-29T19:56:26.000Z",
+  "updated_at": "2026-08-31T05:45:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",
-  "storage_bytes": 25763280875,
-  "storage_human": "25.8 GB",
+  "storage_bytes": 34326779822,
+  "storage_human": "34.3 GB",
   "base_model": "huihui-ai/Qwen3-8B-abliterated",
   "formats": [
     "safetensors"

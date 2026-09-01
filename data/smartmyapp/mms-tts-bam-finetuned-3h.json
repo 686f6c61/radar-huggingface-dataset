@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "smartmyapp/mms-tts-bam-finetuned-3h",
+  "slug": "smartmyapp-mms-tts-bam-finetuned-3h",
+  "author": "smartmyapp",
+  "url": "https://huggingface.co/smartmyapp/mms-tts-bam-finetuned-3h",
+  "created_at": "2026-09-01T09:40:21.000Z",
+  "updated_at": "2026-09-01T09:40:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vits",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36284208,
+  "parameters_human": "36.3M",
+  "storage_bytes": 145229176,
+  "storage_human": "145 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/mms-tts-bam · Hugging Face",
+      "url": "https://huggingface.co/facebook/mms-tts-bam",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "smartmyapp (Smart MyApp) - Hugging Face",
+      "url": "https://huggingface.co/smartmyapp",
+      "snippet": "Fine-tuning MMS Adapter Models for Multi-Lingual ASR published a dataset 4 days ago smartmyapp/all_rb_lnl View all activity"
+    },
+    {
+      "title": "mms-tts: Text-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/mms-tts-facebook",
+      "snippet": "mms-tts is a massively multilingual text-to-speech model developed by facebook that synthesizes speech in over 1,000 languages from text input. This model..."
+    },
+    {
+      "title": "GitHub - afrizalhasbi/vits: Finetune VITS and MMS using HuggingFace&#x27;s tools",
+      "url": "https://github.com/afrizalhasbi/vits",
+      "snippet": "Finetune VITS and MMS using HuggingFace&#x27;s tools. Contribute to afrizalhasbi/vits development by creating an account on GitHub."
+    },
+    {
+      "title": "finetune-hf-vits/README.md at main · ylacombe/finetune-hf-vits",
+      "url": "https://github.com/ylacombe/finetune-hf-vits/blob/main/README.md",
+      "snippet": "Finetune VITS and MMS using HuggingFace&#x27;s tools. Contribute to ylacombe/finetune-hf-vits development by creating an account on GitHub."
+    }
+  ]
+}

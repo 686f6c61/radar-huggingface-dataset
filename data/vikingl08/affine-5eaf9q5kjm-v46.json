@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "vikingL08/Affine-5eaf9q5kjm-v46",
+  "slug": "vikingl08-affine-5eaf9q5kjm-v46",
+  "author": "vikingL08",
+  "url": "https://huggingface.co/vikingL08/Affine-5eaf9q5kjm-v46",
+  "created_at": "2026-09-01T08:06:18.000Z",
+  "updated_at": "2026-09-01T08:42:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483981,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vikingL08/Affine-v7full · Hugging Face",
+      "url": "https://huggingface.co/vikingL08/Affine-v7full",
+      "snippet": "vikingL08 / Affine-v7full like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 8 Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "vikingL08 (Viking Leader) - Hugging Face",
+      "url": "https://huggingface.co/vikingL08",
+      "snippet": "Recent Activity updated a modelabout 4 hours ago vikingL08/Affine-r596-unconst-odpo-mirror published a modelabout 4 hours ago vikingL08/Affine-r596-unconst-odpo-mirror updated a modelabout 9 hours ago vikingL08/Affine-5guxjrafay-leader View all activity"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AFFiNE Self-host AI Guide",
+      "url": "https://docs.affine.pro/self-host-affine/administer/ai",
+      "snippet": "Use the AFFiNE self-host guide for AI, covering setup, configuration, operations, backups, production checks, and troubleshooting."
+    },
+    {
+      "title": "Sharing the latest Model Spec - OpenAI",
+      "url": "https://openai.com/index/sharing-the-latest-model-spec/",
+      "snippet": "The updated Model Spec explicitly embraces intellectual freedom—the idea that AI should empower people to explore, debate, and create without arbitrary restrictions—no matter how challenging or controversial a topic may be. In a world where AI tools are increasingly shaping discourse, the free exchange of information and perspectives is a necessity for progress and innovation. This ..."
+    }
+  ]
+}

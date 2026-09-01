@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "FirestoneLib/VideoExpert-A",
+  "slug": "firestonelib-videoexpert-a",
+  "author": "FirestoneLib",
+  "url": "https://huggingface.co/FirestoneLib/VideoExpert-A",
+  "created_at": "2026-08-31T03:33:38.000Z",
+  "updated_at": "2026-09-01T10:03:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5846653189,
+  "storage_human": "5.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FirestoneLib/VideoExpertA at main - Hugging Face",
+      "url": "https://huggingface.co/FirestoneLib/VideoExpertA/tree/main",
+      "snippet": "FirestoneLib / VideoExpertA like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new main VideoExpertA 1.54 kB Ctrl+K Ctrl+K 1 contributor History:1 commit FirestoneLib initial commit 613fa85 verifiedabout 5 hours ago .gitattributes Safe 1.52 kBinitial commitabout 5 hours ago README.md Safe 21 Bytesinitial ..."
+    },
+    {
+      "title": "VideoExpert: Augmented LLM for Temporal-Sensitive Video Understanding",
+      "url": "https://arxiv.org/html/2504.07519",
+      "snippet": "To address this problem, we propose VideoExpert, a general-purpose MLLM suitable for several temporal-sensitive video tasks. Inspired by the expert concept, VideoExpert integrates two parallel modules: the Temporal Expert and the Spatial Expert. The Temporal Expert is responsible for modeling time sequences and performing temporal grounding."
+    },
+    {
+      "title": "VideoExpert: Augmented LLM for Temporal-Sensitive Video Understanding",
+      "url": "https://ieeexplore.ieee.org/document/11348931",
+      "snippet": "The core challenge in video understanding lies in perceiving dynamic content changes over time. However, multimodal large language models (MLLMs) struggle with temporal-sensitive video tasks, such as video temporal grounding, which requires generating timestamps to mark the occurrence of specific events. Existing strategies require MLLMs to generate absolute or relative timestamps directly. We ..."
+    },
+    {
+      "title": "[2504.07519] VideoExpert: Augmented LLM for Temporal-Sensitive Video ...",
+      "url": "https://arxiv.org/abs/2504.07519",
+      "snippet": "The core challenge in video understanding lies in perceiving dynamic content changes over time. However, multimodal large language models struggle with temporal-sensitive video tasks, which requires generating timestamps to mark the occurrence of specific events. Existing strategies require MLLMs to generate absolute or relative timestamps directly. We have observed that those MLLMs tend to ..."
+    },
+    {
+      "title": "VideoExpert/docs/train.md at main - GitHub",
+      "url": "https://github.com/coffeecolamind/VideoExpert/blob/main/docs/train.md",
+      "snippet": "VideoExpert is a general-purpose MLLM, designed to be well-suited for a variety of temporal-sensitive video tasks. Before starting training, you need to prepare the following:"
+    }
+  ]
+}

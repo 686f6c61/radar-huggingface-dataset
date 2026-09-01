@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "onnx-community/BiRefNet_dynamic-ONNX",
+  "slug": "onnx-community-birefnet_dynamic-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/BiRefNet_dynamic-ONNX",
+  "created_at": "2026-09-01T09:08:54.000Z",
+  "updated_at": "2026-09-01T09:32:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "birefnet",
+    "background-removal",
+    "mask-generation",
+    "Dichotomous Image Segmentation",
+    "Camouflaged Object Detection",
+    "Salient Object Detection",
+    "image-segmentation",
+    "base_model:ZhengPeng7/BiRefNet_dynamic",
+    "base_model:quantized:ZhengPeng7/BiRefNet_dynamic",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1462307192,
+  "storage_human": "1.5 GB",
+  "base_model": "ZhengPeng7/BiRefNet_dynamic",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnx-community/BiRefNet-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/BiRefNet-ONNX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · onnx-community/BiRefNet-ONNX at main",
+      "url": "https://huggingface.co/onnx-community/BiRefNet-ONNX/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ansj11/BiRefNet",
+      "url": "https://github.com/ansj11/BiRefNet",
+      "snippet": "Aug 19, 2024: We uploaded the ONNX model files of all weights in the GitHub release and GDrive folder. Check out the ONNX conversion part in model zoo for more details. Jul 30, 2024: Thanks to @not-lain for his kind efforts in adding BiRefNet to the official huggingface.js repo. Jul 28, 2024: We released the Colab demo for box-guided segmentation."
+    },
+    {
+      "title": "GitHub - chong5u/BiRefNet: [CAAI AIR&#x27;24] Bilateral Reference for High ...",
+      "url": "https://github.com/chong5u/BiRefNet",
+      "snippet": "Aug 19, 2024: We uploaded the ONNX model files of all weights in the GitHub release and GDrive folder. Check out the ONNX conversion part in model zoo for more details. Jul 30, 2024: Thanks to @not-lain for his kind efforts in adding BiRefNet to the official huggingface.js repo. Jul 28, 2024: We released the Colab demo for box-guided segmentation."
+    },
+    {
+      "title": "onnx-community/BiRefNet-ONNX - ONNX 模型库",
+      "url": "https://onnx.bimant.com/models/onnx-community/BiRefNet-ONNX",
+      "snippet": "README.md config.json onnx/model.onnx ONNX onnx/model_fp16.onnx ONNX preprocessor_config.json"
+    }
+  ]
+}

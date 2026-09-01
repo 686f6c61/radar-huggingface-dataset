@@ -5,7 +5,7 @@
   "author": "orca-zhang",
   "url": "https://huggingface.co/orca-zhang/ncnn",
   "created_at": "2026-04-27T18:07:03.000Z",
-  "updated_at": "2026-08-30T04:55:15.000Z",
+  "updated_at": "2026-09-01T05:24:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,7 +20,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 6267189646,
+  "storage_bytes": 6283440910,
   "storage_human": "6.3 GB",
   "base_model": null,
   "formats": [

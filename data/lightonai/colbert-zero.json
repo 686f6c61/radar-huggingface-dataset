@@ -5,7 +5,7 @@
   "author": "lightonai",
   "url": "https://huggingface.co/lightonai/ColBERT-Zero",
   "created_at": "2026-02-19T09:59:00.000Z",
-  "updated_at": "2026-08-17T11:45:07.000Z",
+  "updated_at": "2026-08-31T08:15:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -36,7 +36,7 @@
     "region:eu"
   ],
   "likes": 44,
-  "downloads_30d": 7533,
+  "downloads_30d": 7748,
   "trending_score": 0,
   "parameters": 149015808,
   "parameters_human": "149.0M",

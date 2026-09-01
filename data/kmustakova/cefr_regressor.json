@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "kmustakova/cefr_regressor",
+  "slug": "kmustakova-cefr_regressor",
+  "author": "kmustakova",
+  "url": "https://huggingface.co/kmustakova/cefr_regressor",
+  "created_at": "2026-09-01T10:21:32.000Z",
+  "updated_at": "2026-09-01T10:43:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "roberta",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kmustakova (Kristina Mustakova) - Hugging Face",
+      "url": "https://huggingface.co/kmustakova/models",
+      "snippet": "Recent Activity updated a model2 days ago kmustakova/RuSimplifier_DPO published a model2 days ago kmustakova/RuSimplifier_DPO updated a model2 days ago kmustakova/ru-cefr-assessor View all activity"
+    },
+    {
+      "title": "kmustakova (Kristina Mustakova) - Hugging Face",
+      "url": "https://huggingface.co/kmustakova",
+      "snippet": "AI & ML interests ... Recent Activity liked a model about 1 month ago ... updated a model about 1 month ago ... published a model about 2 months ago"
+    },
+    {
+      "title": "Composition Feedback: AI-Powered CEFR Evaluator - GitHub",
+      "url": "https://github.com/Mari-Mds/composition-feedback-llm",
+      "snippet": "Composition Feedback: AI-Powered CEFR Evaluator A tool for English teachers to evaluate student compositions against the Common European Framework of Reference (A1-C2). Paste a composition, pick the expected level, and get structured feedback ready to share with the student."
+    },
+    {
+      "title": "A Unified Framework to Elicit Structured Feedback",
+      "url": "https://arxiv.org/html/2608.28407v1",
+      "snippet": "Despite the improvements, current supervised approaches lack a unified framework that generates multi-trait feedback and scores jointly in a single autoregressive process. For instance, feedback is generated from an external LLM to augment inputs for training score-only model (Chu et al., 2025). Methods that natively generate feedback exhibit either a lack of inter-trait dependencies due to ..."
+    },
+    {
+      "title": "Cefr.ai | Cefr.ai",
+      "url": "https://cefr.ai/",
+      "snippet": "CEFR.AI Placement Scores Real learner outcomes from CEFR.AI proprietary assessment. Take the Test Linguistic Research GSE-aligned evidence on vocabulary, grammar, and skills. Power of Language Frameworks Core Principle 1 Text + Task is the Unit of Difficulty Difficulty depends on both the text and the task required of the reader."
+    }
+  ]
+}

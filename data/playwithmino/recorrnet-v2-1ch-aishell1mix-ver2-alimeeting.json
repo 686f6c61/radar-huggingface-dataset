@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "playwithmino/recorrnet-v2-1ch-aishell1mix-ver2-alimeeting",
+  "slug": "playwithmino-recorrnet-v2-1ch-aishell1mix-ver2-alimeeting",
+  "author": "playwithmino",
+  "url": "https://huggingface.co/playwithmino/recorrnet-v2-1ch-aishell1mix-ver2-alimeeting",
+  "created_at": "2026-09-01T08:06:31.000Z",
+  "updated_at": "2026-09-01T08:06:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "sr-corrnet",
+  "languages": [],
+  "tags": [
+    "sr-corrnet",
+    "speech-separation",
+    "recorrnet",
+    "aishell1mix",
+    "alimeeting",
+    "audio-to-audio",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 56749975,
+  "storage_human": "57 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "playwithmino/recorrnet-v2-1ch-aishell1mix-ver1-epoch7 · Hugging Face",
+      "url": "https://huggingface.co/playwithmino/recorrnet-v2-1ch-aishell1mix-ver1-epoch7",
+      "snippet": "This is the RecorrNet epoch-7 ver1 checkpoint used in the n100 SR vs Recorr vs later AliMeeting-continue comparisons."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=aishell1mix",
+      "snippet": "playwithmino/recorrnet-v2-1ch-aishell1mix-ver1-epoch7 Audio-to-Audio •Updated about 6 hours ago"
+    },
+    {
+      "title": "GitHub - huangzj421/Aishell1Mix: This is a mandarin version of speech ...",
+      "url": "https://github.com/huangzj421/Aishell1Mix",
+      "snippet": "Aishell1Mix is a mandarin version of speech separation dataset like WSJMix and LibriMix. It mixes 2 or 3 speaker sources from the open source mandarin speech corpus Aishell1 with the noise dataset WHAM."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Aishell1Mix/README.md at main · huangzj421/Aishell1Mix",
+      "url": "https://github.com/huangzj421/Aishell1Mix/blob/main/README.md",
+      "snippet": "Aishell1Mix is a mandarin version of speech separation dataset like WSJMix and LibriMix. It mixes 2 or 3 speaker sources from the open source mandarin speech corpus Aishell1 with the noise dataset WHAM."
+    }
+  ]
+}

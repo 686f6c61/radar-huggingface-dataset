@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "AMAImedia/DeepSeek-V4-Flash-Vision-Exp",
+  "slug": "amaimedia-deepseek-v4-flash-vision-exp",
+  "author": "AMAImedia",
+  "url": "https://huggingface.co/AMAImedia/DeepSeek-V4-Flash-Vision-Exp",
+  "created_at": "2026-09-01T09:34:08.000Z",
+  "updated_at": "2026-09-01T09:40:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ru",
+    "zh",
+    "vi",
+    "kk"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "DeepSeek",
+    "image-text-to-text",
+    "en",
+    "ru",
+    "zh",
+    "vi",
+    "kk",
+    "license:mit",
+    "eval-results",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 304646824126,
+  "parameters_human": "304.65B",
+  "storage_bytes": 167819616863,
+  "storage_human": "167.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek-V4-Flash-Vision-Exp: New Multimodal AI Launch",
+      "url": "https://emergent.sh/news/deepseek-v4-flash-vision-exp-officially",
+      "snippet": "DeepSeek has expanded its V4 model family with the release of DeepSeek-V4-Flash-Vision-Exp, a multimodal AI system that processes both text and visual inputs. Officially launched on August 21, 2026, this experimental model represents the company&#x27;s latest effort to integrate vision capabilities into its high-performance language model architecture."
+    },
+    {
+      "title": "DeepSeek V4-Flash-Vision-Exp: Multimodal Agent Benchmarks - explainx.ai",
+      "url": "https://explainx.ai/blog/deepseek-v4-flash-vision-exp-multimodal-agent-august-2026",
+      "snippet": "DeepSeek shipped DeepSeek Harness 0.1.1 on the same day with out-of-the-box support, and the model is live now via model=&#x27;deepseek-v4-flash-vision-exp&#x27;. This follows a pattern explainx.ai has tracked all August: DeepSeek shipping V4 Pro 0813, a 50-1,100% API price increase, and verified ARC-AGI numbers for V4 Flash 0731 in rapid succession."
+    },
+    {
+      "title": "DeepSeek V4 Flash Vision Exp: Vision API, Benchmarks & Cost - iweaver.ai",
+      "url": "https://www.iweaver.ai/blog/deepseek-v4-flash-vision-exp/",
+      "snippet": "DeepSeek released DeepSeek-V4-Flash-Vision-Exp, an experimental multimodal model available through its API. It accepts both text and images, bringing screenshot understanding, chart analysis, OCR-style tasks and other visual workflows into the V4 Flash family."
+    },
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://deepseek.com/en/index.html",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source frontier LLMs including DeepSeek-V4, DeepSeek-R1, and DeepSeek-Coder. Chat with DeepSeek AI or integrate via API."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Xalk07/KSTU_T-lite-2.1-GGUF",
+  "slug": "xalk07-kstu_t-lite-2-1-gguf",
+  "author": "Xalk07",
+  "url": "https://huggingface.co/Xalk07/KSTU_T-lite-2.1-GGUF",
+  "created_at": "2026-09-01T10:58:31.000Z",
+  "updated_at": "2026-09-01T10:58:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "T-lite-it-2.1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/t-tech/T-lite-it-2.1-GGUF",
+      "snippet": "T-lite-it-2.1 is an efficient Russian model built upon the Qwen 3 architecture, featuring significant improvements in instruction following and adds support for tool-calling capabilities — a key advancement over T-lite-it-1.0, which lacks tool-use support. Outperforms Qwen3-8B in tool calling scenarios, which is essential for agentic ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "QuantFactory/T-lite-0.1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/QuantFactory/T-lite-0.1-GGUF",
+      "snippet": "T-lite is a continual pretraining model designed specifically for the Russian language, enabling the creation of large language model applications in Russian. This model aims to improve the quality of Russian text generation and provide domain-specific and cultural knowledge relevant to the Russian context."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "T-lite-it-2.1-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/t-tech/T-lite-it-2.1-GGUF/summary",
+      "snippet": "T-lite-it-2.1 is an efficient Russian model built upon the Qwen 3 architecture, featuring significant improvements in instruction following and adds support for tool-calling capabilities — a key advancement over T-lite-it-1.0, which lacks tool-use support. Outperforms Qwen3-8B in tool calling scenarios, which is essential for agentic ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/STL-xlm-roberta-large-sentiment",
+  "slug": "tadiecool29-stl-xlm-roberta-large-sentiment",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/STL-xlm-roberta-large-sentiment",
+  "created_at": "2026-09-01T09:30:50.000Z",
+  "updated_at": "2026-09-01T09:32:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559893507,
+  "parameters_human": "559.9M",
+  "storage_bytes": 2256726245,
+  "storage_human": "2.3 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tadiecool29/STL-xlm-roberta-large-stance-finetuned · Hugging Face",
+      "url": "https://huggingface.co/tadiecool29/STL-xlm-roberta-large-stance-finetuned",
+      "snippet": "STL-xlm-roberta-large-stance-finetuned This model is a fine-tuned version of FacebookAI/xlm-roberta-large on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "tadiecool29/xlmr-stl-large-stance · Hugging Face",
+      "url": "https://huggingface.co/tadiecool29/xlmr-stl-large-stance",
+      "snippet": "xlmr-stl-large-stance This model is a fine-tuned version of FacebookAI/xlm-roberta-large on the None dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Xlm Roberta Large models | The GTM Directory",
+      "url": "https://thegtmdirectory.com/models/facebookai-xlm-roberta-large",
+      "snippet": "Every Xlm Roberta Large model version from FacebookAI, with specs, capabilities, and benchmarks."
+    },
+    {
+      "title": "roberta-large · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/roberta-large",
+      "snippet": "This repository is a comprehensive project that leverages the XLM-Roberta model for intent detection. This repository is a valuable resource for developers looking to build and fine-tune intent detection models based on state-of-the-art techniques."
+    },
+    {
+      "title": "xlm-roberta-large · Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/xlm-roberta-large/summary",
+      "snippet": "XLM-RoBERTa (large-sized model) XLM-RoBERTa model pre-trained on 2.5TB of filtered CommonCrawl data containing 100 languages. It was introduced in the paper Unsupervised Cross-lingual Representation Learning at Scale by Conneau et al. and first released in this repository. Disclaimer: The team releasing XLM-RoBERTa did not write a model card for this model so this model card has been written ..."
+    }
+  ]
+}

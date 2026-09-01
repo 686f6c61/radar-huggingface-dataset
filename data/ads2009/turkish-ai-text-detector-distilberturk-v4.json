@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ads2009/turkish-ai-text-detector-distilberturk-v4",
+  "slug": "ads2009-turkish-ai-text-detector-distilberturk-v4",
+  "author": "ads2009",
+  "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-distilberturk-v4",
+  "created_at": "2026-09-01T08:17:07.000Z",
+  "updated_at": "2026-09-01T08:17:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 68090114,
+  "parameters_human": "68.1M",
+  "storage_bytes": 272372984,
+  "storage_human": "272 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ads2009/turkish-ai-text-detector-distilberturk · Hugging Face",
+      "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-distilberturk",
+      "snippet": "Instructions to use ads2009/turkish-ai-text-detector-distilberturk with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ads2009/turkish-ai-text-detector-distilberturk-v3 · Hugging Face",
+      "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-distilberturk-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - SaKinLord/turkish-ai-detector: Turkish AI text detector ...",
+      "url": "https://github.com/SaKinLord/turkish-ai-detector",
+      "snippet": "Turkish AI Detector Turkish AI text detector runtime using language-model curvature signals and a document-level meta-classifier."
+    },
+    {
+      "title": "Detect AI in Turkish text — Turkish AI Detector",
+      "url": "https://ai-checker.co/in/turkish",
+      "snippet": "Detect AI-generated Turkish content from ChatGPT, Claude, Gemini and more. Turkish-specific calibration with sentence-level accuracy. Free."
+    },
+    {
+      "title": "Turkish AI Detector - Evernote",
+      "url": "https://evernote.com/ai-detector/turkish-ai-detector",
+      "snippet": "Detect AI-generated text in Turkish accurately and effectively online for free, using our Turkish AI Detector tool. Access detailed analysis easily."
+    }
+  ]
+}

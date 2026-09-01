@@ -5,7 +5,7 @@
   "author": "laion",
   "url": "https://huggingface.co/laion/ViCLIP-L-14-BVD-V-50M-s50M-b32K",
   "created_at": "2026-08-25T12:17:24.000Z",
-  "updated_at": "2026-08-26T12:22:42.000Z",
+  "updated_at": "2026-08-31T09:50:15.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "video-classification",

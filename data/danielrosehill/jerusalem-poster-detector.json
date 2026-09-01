@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "danielrosehill/jerusalem-poster-detector",
+  "slug": "danielrosehill-jerusalem-poster-detector",
+  "author": "danielrosehill",
+  "url": "https://huggingface.co/danielrosehill/jerusalem-poster-detector",
+  "created_at": "2026-09-01T10:03:30.000Z",
+  "updated_at": "2026-09-01T10:03:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolo11",
+    "object-detection",
+    "street-photography",
+    "dataset:danielrosehill/jerusalem-poster-detection",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6623131,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · danielrosehill/Jerusalem-Images at main",
+      "url": "https://huggingface.co/danielrosehill/Jerusalem-Images/blob/main/README.md",
+      "snippet": "Model description A Flux LORA for generating realistic images of Jerusalem, Israel trained on a dataset of streetscape images taken around West Jerusalem during the summer of 2025 (images: Daniel Rosehill)."
+    },
+    {
+      "title": "danielrosehill/Jerusalem-Images · Hugging Face",
+      "url": "https://huggingface.co/danielrosehill/Jerusalem-Images",
+      "snippet": "Model description A Flux LORA for generating realistic images of Jerusalem, Israel trained on a dataset of streetscape images taken around West Jerusalem during the summer of 2025 (images: Daniel Rosehill). Trainig was done using Replicate&#x27;s Fast Flux Trainer. My idea with the image dataset was to try to capture the part of the city I live in at both the \"macro\" and \"micro\" levels - hence the ..."
+    },
+    {
+      "title": "Jerusalem Images - Daniel Rosehill",
+      "url": "https://www.danielrosehill.com/project/jerusalem-images/",
+      "snippet": "Contact Contact Book Meeting RSS Feeds CC BY-SA 4.0 | Proudly Made In Jerusalem 🇮🇱 2026 Sitemap AI Training Friendly Open to AI crawlers, indexing & training • For AI Agents • ai.txt"
+    },
+    {
+      "title": "GitHub - danielrosehill/Jerusalem-Graffiti · GitHub",
+      "url": "https://github.com/danielrosehill/Jerusalem-Graffiti",
+      "snippet": "Field photography of a messianic postering campaign in central Jerusalem, with the coordinates of every shot. Portraits of the Lubavitcher Rebbe captioned יחי המלך המשיח (\"long live the King Messiah\") are being pasted onto construction hoardings, lampposts and street furniture along and ..."
+    },
+    {
+      "title": "Jerusalem Streetscapes - Daniel Rosehill",
+      "url": "https://www.danielrosehill.com/projects/jerusalem-streetscapes/",
+      "snippet": "Jerusalem Streetscapes Dataset A small image dataset containing photos of the rapidly changing urban landscape of Jerusalem, Israel, captured by day and by night. About This dataset documents the evolving cityscape of Jerusalem through 120 photographs taken between June 2024 and September 2025. Dataset Details Number of Images: 120 Time Period: June 2024 - September 2025 Location: Jerusalem ..."
+    }
+  ]
+}

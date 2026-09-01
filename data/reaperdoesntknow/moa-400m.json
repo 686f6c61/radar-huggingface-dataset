@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/MoA-400M",
   "created_at": "2025-09-21T01:09:20.000Z",
-  "updated_at": "2026-08-30T14:35:53.000Z",
+  "updated_at": "2026-08-31T13:16:00.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 3058,
+  "downloads_30d": 3209,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

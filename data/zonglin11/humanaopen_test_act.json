@@ -5,7 +5,7 @@
   "author": "zonglin11",
   "url": "https://huggingface.co/zonglin11/humanaopen_test_act",
   "created_at": "2026-08-23T03:43:18.000Z",
-  "updated_at": "2026-08-23T03:46:39.000Z",
+  "updated_at": "2026-09-01T00:37:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -16,7 +16,7 @@
     "safetensors",
     "act",
     "robotics",
-    "dataset:zonglin11/humanaopen_test_20260823_110640",
+    "dataset:zonglin11/humanaopen_test1_20260831_233202",
     "arxiv:2304.13705",
     "license:apache-2.0",
     "region:us"
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 51699349,
   "parameters_human": "51.7M",
-  "storage_bytes": 206842372,
-  "storage_human": "207 MB",
+  "storage_bytes": 413684744,
+  "storage_human": "414 MB",
   "base_model": null,
   "formats": [
     "safetensors"

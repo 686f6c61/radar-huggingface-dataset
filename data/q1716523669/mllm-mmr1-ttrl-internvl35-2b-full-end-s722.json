@@ -5,7 +5,7 @@
   "author": "q1716523669",
   "url": "https://huggingface.co/q1716523669/mllm-mmr1-ttrl-internvl35-2b-full-end-s722",
   "created_at": "2026-08-27T09:11:17.000Z",
-  "updated_at": "2026-08-27T09:13:17.000Z",
+  "updated_at": "2026-08-31T22:15:22.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 12,
+  "downloads_30d": 13,
   "trending_score": 0,
   "parameters": 2348347392,
   "parameters_human": "2.35B",

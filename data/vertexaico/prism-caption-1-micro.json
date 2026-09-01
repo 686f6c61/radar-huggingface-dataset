@@ -5,7 +5,7 @@
   "author": "VertexAIco",
   "url": "https://huggingface.co/VertexAIco/prism-caption-1-micro",
   "created_at": "2026-08-20T08:52:37.000Z",
-  "updated_at": "2026-08-20T08:54:24.000Z",
+  "updated_at": "2026-08-31T08:03:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 180,
+  "downloads_30d": 181,
   "trending_score": 0,
   "parameters": 203531392,
   "parameters_human": "203.5M",

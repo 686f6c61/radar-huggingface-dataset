@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ussoewwin/SeedVR2-VAE-TenorRT-Engine-for-Blackwell",
+  "slug": "ussoewwin-seedvr2-vae-tenorrt-engine-for-blackwell",
+  "author": "ussoewwin",
+  "url": "https://huggingface.co/ussoewwin/SeedVR2-VAE-TenorRT-Engine-for-Blackwell",
+  "created_at": "2026-09-01T02:44:26.000Z",
+  "updated_at": "2026-09-01T07:24:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-to-video",
+  "library": "seedvr",
+  "languages": [],
+  "tags": [
+    "seedvr",
+    "seedvr2",
+    "vae",
+    "tensorrt",
+    "rtxplan",
+    "blackwell",
+    "rtx-5090",
+    "rtx-5080",
+    "rtx-5070",
+    "rtx-5060",
+    "rtx-5050",
+    "video-upscaling",
+    "video-to-video",
+    "image-to-image",
+    "comfyui",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9239993812,
+  "storage_human": "9.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SeedVR2-VAE-TenorRT-Engine-for-Blackwell - Hugging Face",
+      "url": "https://huggingface.co/ussoewwin/SeedVR2-VAE-TenorRT-Engine-for-Blackwell",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ussoewwin/SeedVR2-VAE-TenorRT-Engine-for-Blackwell · Discussions",
+      "url": "https://huggingface.co/ussoewwin/SeedVR2-VAE-TenorRT-Engine-for-Blackwell/discussions",
+      "snippet": "Instructions to use ussoewwin/SeedVR2-VAE-TenorRT-Engine-for-Blackwell with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - numz/ComfyUI-SeedVR2_VideoUpscaler: Official SeedVR2 Video ...",
+      "url": "https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler",
+      "snippet": "Official SeedVR2 Video Upscaler for ComfyUI. Contribute to numz/ComfyUI-SeedVR2_VideoUpscaler development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - ByteDance-Seed/SeedVR: Repo for SeedVR2 (ICLR2026) & SeedVR ...",
+      "url": "https://github.com/ByteDance-Seed/SeedVR",
+      "snippet": "In this work, we propose a one-step diffusion-based VR model, termed as SeedVR2, which performs adversarial VR training against real data. To handle the challenging high-resolution VR within a single step, we introduce several enhancements to both model architecture and training procedures."
+    },
+    {
+      "title": "SeedVR2: Image and video upscaling in ComfyUI - ComfyUI",
+      "url": "https://docs.comfy.org/tutorials/utility/seedvr2",
+      "snippet": "ComfyUI SeedVR2 Introduction SeedVR2 (arXiv:2506.05301, from ByteDance Seed) is a one-step diffusion-based video restoration model. It performs adversarial training against real data to restore and upscale images and videos with high fidelity. SeedVR2 is natively supported in ComfyUI (PR #14424). Key capabilities: Conservative upscaling: preserves original structure and detail while enhancing ..."
+    }
+  ]
+}

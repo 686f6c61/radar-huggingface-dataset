@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "id": "opencerebral/Boris-1.7-D60M-n30M",
+  "slug": "opencerebral-boris-1-7-d60m-n30m",
+  "author": "opencerebral",
+  "url": "https://huggingface.co/opencerebral/Boris-1.7-D60M-n30M",
+  "created_at": "2026-08-31T20:23:31.000Z",
+  "updated_at": "2026-08-31T23:29:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "text-generation",
+    "en",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/cosmopedia-v2",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 176,
+  "trending_score": 9,
+  "parameters": 116134108,
+  "parameters_human": "116.1M",
+  "storage_bytes": 476261899,
+  "storage_human": "476 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "HellaSwag",
+      "metric": "HellaSwag (acc_norm)",
+      "value": 31.22
+    },
+    {
+      "task": null,
+      "dataset": "ARC-Easy",
+      "metric": "ARC-Easy (acc_norm)",
+      "value": 45.88
+    },
+    {
+      "task": null,
+      "dataset": "ARC-Challenge",
+      "metric": "ARC-Challenge (acc_norm)",
+      "value": 26.02
+    },
+    {
+      "task": null,
+      "dataset": "PIQA",
+      "metric": "PIQA (acc_norm)",
+      "value": 62.57
+    },
+    {
+      "task": null,
+      "dataset": "WinoGrande",
+      "metric": "WinoGrande (acc)",
+      "value": 51.07
+    },
+    {
+      "task": null,
+      "dataset": "LAMBADA",
+      "metric": "LAMBADA (acc)",
+      "value": 26.66
+    }
+  ],
+  "sources": [
+    {
+      "title": "@KlondikeDev on Hugging Face: \"A Preview of Boris-2! Hello! Tomorrow ...",
+      "url": "https://huggingface.co/posts/KlondikeDev/390696464529618",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "opencerebral (OpenCerebral) - Hugging Face",
+      "url": "https://huggingface.co/opencerebral",
+      "snippet": "Welcome to OpenCerebral! OpenCerebral is the successor project to New Millennium Artificial Intelligence, a division of the Klondike Software Project!"
+    },
+    {
+      "title": "opencerebral-web/boris.html at main - GitHub",
+      "url": "https://github.com/libreksp/opencerebral-web/blob/main/boris.html",
+      "snippet": "139 lines (118 loc) · 5.7 KB main opencerebral-web / boris.html Code Blame 139 lines (118 loc) · 5.7 KB Raw 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 407 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Open LLM Leaderboard 2026 - Compare Open Source LLM Rankings",
+      "url": "https://llm-stats.com/leaderboards/open-llm-leaderboard",
+      "snippet": "Compare the best open source LLMs in the open LLM leaderboard with LLM rankings, pricing, speed, context windows, and benchmark scores."
+    }
+  ]
+}

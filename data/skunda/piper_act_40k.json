@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "skunda/piper_act_40k",
+  "slug": "skunda-piper_act_40k",
+  "author": "skunda",
+  "url": "https://huggingface.co/skunda/piper_act_40k",
+  "created_at": "2026-09-01T07:57:31.000Z",
+  "updated_at": "2026-09-01T07:58:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:skunda/manualdata_20epredcube_picknplace",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206725380,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - zhitaoqiu/Piper-ACT",
+      "url": "https://github.com/zhitaoqiu/Piper-ACT/tree/main",
+      "snippet": "End-to-end visuomotor cube grasping on the Piper 7-DoF arm, trained with ACT (Action Chunking Transformer) via LeRobot. Dual-camera (wrist RealSense D435i + overhead USB), 4 cube positions (2 colors × 2 rotations)."
+    },
+    {
+      "title": "GitHub - ingyu0808/piper_act: piperx_act_training · GitHub",
+      "url": "https://github.com/ingyu0808/piper_act",
+      "snippet": "piperx_act_training. Contribute to ingyu0808/piper_act development by creating an account on GitHub."
+    },
+    {
+      "title": "#robotics #embodiedai #mujoco #machinelearning #vla # ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/skunda00189_robotics-embodiedai-mujoco-activity-7498914804011573248-d6uv",
+      "snippet": "I&#x27;ve been building a lightweight MuJoCo simulation pipeline for the Agilex Piper arm, tailored specifically for Vision-Language-Action (VLA) workflows and rapid dataset generation. Key features ..."
+    },
+    {
+      "title": "aloyalplayer/piper-act-grasp-model · Hugging Face",
+      "url": "https://huggingface.co/aloyalplayer/piper-act-grasp-model",
+      "snippet": "aloyalplayer / piper-act-grasp-model like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 1 Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "intuitioncore/piper_act_test · Hugging Face",
+      "url": "https://huggingface.co/intuitioncore/piper_act_test",
+      "snippet": "intuitioncore / piper_act_test like 0 Follow Intuition 3 Safetensors Model card FilesFiles and versions xet Community No model card Downloads last month -"
+    }
+  ]
+}

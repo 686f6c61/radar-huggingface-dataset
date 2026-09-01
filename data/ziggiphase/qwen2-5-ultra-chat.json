@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Ziggiphase/Qwen2.5-ultra-chat",
+  "slug": "ziggiphase-qwen2-5-ultra-chat",
+  "author": "Ziggiphase",
+  "url": "https://huggingface.co/Ziggiphase/Qwen2.5-ultra-chat",
+  "created_at": "2026-09-01T09:39:27.000Z",
+  "updated_at": "2026-09-01T09:42:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "unsloth",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29062028,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "GitHub - aibrainarchitect/Qwen2.5: Qwen2.5 is the large language model ...",
+      "url": "https://github.com/aibrainarchitect/Qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "ermiaazarkhalili/Qwen2.5-3B-SFT-UltraChat · Hugging Face",
+      "url": "https://huggingface.co/ermiaazarkhalili/Qwen2.5-3B-SFT-UltraChat",
+      "snippet": "Qwen2.5-3B-SFT-UltraChat is an instruction-following language model optimized for conversational tasks. It combines the powerful 3B base model with high-quality instruction-following data from UltraChat, resulting in improved response quality and helpfulness."
+    },
+    {
+      "title": "Qwen Studio",
+      "url": "https://chat.qwen.ai/?models=Qwen2.5-Max",
+      "snippet": "Qwen Studio is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen&#x27;s series of open-source and proprietary models. It offers comprehensive functionality spanning chatbots, image and video understanding, image generation and editing, document processing, tool utilization, voice and video chat, and artifacts."
+    }
+  ]
+}

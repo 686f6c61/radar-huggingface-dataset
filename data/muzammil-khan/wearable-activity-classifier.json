@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "muzammil-khan/wearable-activity-classifier",
+  "slug": "muzammil-khan-wearable-activity-classifier",
+  "author": "muzammil-khan",
+  "url": "https://huggingface.co/muzammil-khan/wearable-activity-classifier",
+  "created_at": "2026-09-01T11:08:25.000Z",
+  "updated_at": "2026-09-01T11:14:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "tensorflow",
+    "cnn",
+    "wearable-sensor",
+    "activity-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 635308,
+  "storage_human": "635308 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muzammilkhan (Muzammil Khan) - Hugging Face",
+      "url": "https://huggingface.co/Muzammilkhan",
+      "snippet": "Recent Activity new activity about 2 months ago Falconsai/nsfw_image_detection: Update README.md updated a model about 2 months ago"
+    },
+    {
+      "title": "Muzammil Nawaz Khan | AI Engineer Portfolio",
+      "url": "https://muzammil-nawaz-khan.vercel.app/",
+      "snippet": "Voice AI Front Desk Agent: Developing a real-time conversational AI agent using LiveKit, OpenAI, and ElevenLabs, integrating Silero VAD for seamless voice activity detection. Agent Orchestration: Implemented an n8n workflow acting as a Model Context Protocol (MCP) server to manage conversation state, backend prompts, and call routing logic."
+    },
+    {
+      "title": "‪Muzammil Khan, Ph.D. (Computer Sciences)‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=kGyKJDwAAAAJ&hl=en",
+      "snippet": "‪Department of Computer & Software Technology, University of Swat.‬ - ‪‪Cited by 1,636‬‬ - ‪Data Science‬ - ‪Machine Learning‬ - ‪NLP‬ - ‪Image Processing‬ - ‪HCI (Usability)‬"
+    },
+    {
+      "title": "‪Muzammil Khan‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=Ul4iV78AAAAJ&hl=en",
+      "snippet": "‪Researcher at Erasmus University Medical Center‬ - ‪‪Cited by 113‬‬ - ‪Medical Imaging & Omics‬ - ‪Surgical Navigation‬ - ‪Multimodal AI‬ - ‪Computer Vision‬"
+    },
+    {
+      "title": "#devshepherd #machinelearning #certification #internship #ml - LinkedIn",
+      "url": "https://www.linkedin.com/posts/sshaiza_devshepherd-machinelearning-certification-activity-7498782411237982208-PJy-",
+      "snippet": "This experience was truly transformative as I gained hands-on expertise in Python, Pandas, data preprocessing, regression and classification models, model tuning, and building complete prediction ..."
+    }
+  ]
+}

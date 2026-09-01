@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "fleetml/Qwen3.8-27B-Uncensored-NVFP4-RTX5090",
+  "slug": "fleetml-qwen3-8-27b-uncensored-nvfp4-rtx5090",
+  "author": "fleetml",
+  "url": "https://huggingface.co/fleetml/Qwen3.8-27B-Uncensored-NVFP4-RTX5090",
+  "created_at": "2026-09-01T09:29:54.000Z",
+  "updated_at": "2026-09-01T09:41:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.8",
+    "uncensored",
+    "modelopt",
+    "nvfp4",
+    "blackwell",
+    "rtx-5090",
+    "sglang",
+    "speculative-decoding",
+    "mtp",
+    "dspark",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:quantized:orcarouter/Qwen3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15617946352,
+  "parameters_human": "15.62B",
+  "storage_bytes": 20605956784,
+  "storage_human": "20.6 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "johnnyeric/Qwen3.8-27B-Uncensored-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/johnnyeric/Qwen3.8-27B-Uncensored-NVFP4",
+      "snippet": "An abliterated (refusal-removed) and dynamic mixed-precision NVFP4 + FP8 quantized build of Qwen/Qwen3.8-27B — a 27B-parameter dense, hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with flexible thinking control, tool-calling, and an MTP speculative-decoding head. This build removes the safety refusal direction, then quantizes the bulk feed-forward ..."
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/qwen/qwen3.8-27b-uncensored",
+      "snippet": "Qwen 3.8 27B Uncensored is an NVFP4 open-weight multimodal model LoRA-tuned for fewer refusals across chat, coding, reasoning, tool use, and long-context work."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "The official Qwen/Qwen3.8-27B-FP8 checkpoint serves directly on a 950PR — no offline re-quantization and no --quantization ascend. vLLM Ascend reads quant_method: fp8 and weight_block_size straight from the checkpoint, expands the weight_scale_inv tiles at load time and re-quantizes to MXFP8 on 950."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Ollama build of Qwen3.8-27B-Uncensored — an abliterated (refusal-removed) build of Qwen&#x27;s Qwen3.8-27B, a 27B dense hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with reasoning, tool-calling, and an MTP speculative-decoding head. Sixteen tags from 2-bit to 8-bit, each with the mmproj vision projector bundled in — nothing extra to fetch. Browse all ..."
+    }
+  ]
+}

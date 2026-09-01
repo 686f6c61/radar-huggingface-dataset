@@ -5,7 +5,7 @@
   "author": "asksolz",
   "url": "https://huggingface.co/asksolz/munin-qwen35-2b-text-4bit-mlx",
   "created_at": "2026-08-23T08:23:58.000Z",
-  "updated_at": "2026-08-23T08:51:11.000Z",
+  "updated_at": "2026-08-31T11:34:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 25,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": 294498112,
   "parameters_human": "294.5M",

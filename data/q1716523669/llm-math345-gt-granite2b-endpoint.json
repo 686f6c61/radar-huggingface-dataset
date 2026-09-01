@@ -5,7 +5,7 @@
   "author": "q1716523669",
   "url": "https://huggingface.co/q1716523669/llm-math345-gt-granite2b-endpoint",
   "created_at": "2026-08-25T20:16:31.000Z",
-  "updated_at": "2026-08-25T20:17:44.000Z",
+  "updated_at": "2026-08-31T22:15:15.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 449,
+  "downloads_30d": 470,
   "trending_score": 0,
   "parameters": 165888,
   "parameters_human": "165888",

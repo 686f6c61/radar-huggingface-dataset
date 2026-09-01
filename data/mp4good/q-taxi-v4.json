@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "MP4good/q-Taxi-v4",
+  "slug": "mp4good-q-taxi-v4",
+  "author": "MP4good",
+  "url": "https://huggingface.co/MP4good/q-Taxi-v4",
+  "created_at": "2026-09-01T09:44:47.000Z",
+  "updated_at": "2026-09-01T09:44:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v4",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143948,
+  "storage_human": "143948 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EverVissionAI/q-Taxi-v4 · Hugging Face",
+      "url": "https://huggingface.co/EverVissionAI/q-Taxi-v4",
+      "snippet": "Q-Learning Agent playing1 Taxi-v4 This is a trained model of a Q-Learning agent playing Taxi-v4 ."
+    },
+    {
+      "title": "hlm1234/q-Taxi-v4 · Hugging Face",
+      "url": "https://huggingface.co/hlm1234/q-Taxi-v4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Taxi-v4: Reproducible Q-Learning Study - Kaggle",
+      "url": "https://www.kaggle.com/code/alexandriadrake/taxi-v4-reproducible-q-learning-study",
+      "snippet": "The Taxi-v4 environment is a discrete grid-world reinforcement learning task in which an autonomous taxi agent must navigate a map, pick up a passenger, and deliver the passenger to the correct destination."
+    },
+    {
+      "title": "Taxi-v4-OpenAI-Gymnasium/q_learning.py at main - GitHub",
+      "url": "https://github.com/janashams/Taxi-v4-OpenAI-Gymnasium/blob/main/q_learning.py",
+      "snippet": "Taxi-v4 is a classic grid-world environment where a taxi must navigate a 5×5 grid, pick up a passenger from one of four fixed locations (R, G, Y, B), and drop them off at the correct destination. -..."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Ahad09/wearable-activity-lstm",
+  "slug": "ahad09-wearable-activity-lstm",
+  "author": "Ahad09",
+  "url": "https://huggingface.co/Ahad09/wearable-activity-lstm",
+  "created_at": "2026-09-01T08:18:44.000Z",
+  "updated_at": "2026-09-01T08:28:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "time-series-classification",
+    "education",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deep-Learning-Based Human Activity Recognition Using Wearable Sensors",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2405896322027951",
+      "snippet": "The observer calculates the vertical angle of the IMU sensor in real time relative to the gravity vector, and also the accelerometer and gyroscope bias values. A modern CNN-LSTM model is then selected for human activity recognition based on 8783 time samples of data obtained while doing 9 different activities."
+    },
+    {
+      "title": "A Real-Time Deployable Attention-Driven CNN-LSTM Framework for Human ...",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11175321",
+      "snippet": "Human activity recognition (HAR) using wearable inertial sensors is increasingly vital for healthcare, rehabilitation, and pervasive computing. Yet, many state-of-the-art (SoTA) models rely on handcrafted feature engineering, heavy time-frequency transformations, or large neural networks, limiting real-time deployment on resource-constrained smartphones and wearables. We propose an end-to ..."
+    },
+    {
+      "title": "A Lightweight and Explainable Hybrid Deep Learning Model for Wearable ...",
+      "url": "https://ieeexplore.ieee.org/document/10981518",
+      "snippet": "Leveraging explainable AI (XAI), we interpret muscle activation patterns for personalized rehabilitation insights. By unifying signal processing, efficient deep learning, and interpretability, X-LiteHAR advances real-time HAR for clinical and wearable applications."
+    },
+    {
+      "title": "Machine learning models for wearable-based human activity recognition ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231225015838",
+      "snippet": "The authors in [33] also compare the performance of hybrid models, which fuse the characteristics of several networks into one model for HAR using wearable sensor data. They focus on comparing an ensemble of different recurrent layers, not taking into consideration other model types."
+    },
+    {
+      "title": "arXiv:2407.07196v2 [cs.HC] 31 Jul 2024",
+      "url": "https://arxiv.org/pdf/2407.07196",
+      "snippet": "Optimizing model architectures, training algorithms, and integrating with other AI tech-niques can help reduce resource requirements. [6, 63] Interpretability and Transparency LLMs operate as black-box models, making it difficult [38, to understand their decision-making processes."
+    }
+  ]
+}

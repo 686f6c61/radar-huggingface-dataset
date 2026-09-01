@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Asad-Zaidi/Flower_Classifications",
+  "slug": "asad-zaidi-flower_classifications",
+  "author": "Asad-Zaidi",
+  "url": "https://huggingface.co/Asad-Zaidi/Flower_Classifications",
+  "created_at": "2026-09-01T10:47:42.000Z",
+  "updated_at": "2026-09-01T10:47:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Asad-Zaidi/Flower-Classification",
+      "url": "https://github.com/Asad-Zaidi/Flower-Classification",
+      "snippet": "Contribute to Asad-Zaidi/Flower-Classification development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - Asad-Aziz-001/Iris-Flower-Classification: Iris Flower ...",
+      "url": "https://github.com/Asad-Aziz-001/Iris-Flower-Classification",
+      "snippet": "The iris dataset continues to be a valuable teaching tool because it perfectly illustrates the machine learning workflow from data exploration to model deployment. 🌸 Iris Flower Classification App: A machine learning-powered web application that accurately classifies iris flowers into three species based on sepal and petal measurements."
+    },
+    {
+      "title": "Flower Identification and Quality Assessment Using Deep Learning Models",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-96-5210-5_32",
+      "snippet": "This study aims to create an automated system that checks flower quality using picture-based algorithms. Checking flowers by hand to see if they&#8217;re ready for market takes a lot of time, people can make mistakes, and handling the flowers too much can make them..."
+    },
+    {
+      "title": "Multitarget Recognition of Flower Images Based on Lightweight Deep ...",
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/aisy.202500540",
+      "snippet": "A lightweight network suitable for training on small-scale datasets is designed, which meets the real-time detection requirements. 2) The study of a flower strong-supervised classification model based on transfer learning. Generative adversarial network (GAN) is used to generate partial training data to improve the model&#x27;s generalization ability."
+    },
+    {
+      "title": "A Comprehensive Review of Flower Classification Techniques Using Deep ...",
+      "url": "https://ieeexplore.ieee.org/document/10425632",
+      "snippet": "This paper analyzes deep learning techniques for categorizing flowers, covering new advances, issues, and advancements in this emerging field. As the significance of automated flower identification continues to grow across many domains, deep learning algorithms have emerged as powerful tools for attaining accurate and effective categorization. By combining a variety of papers, methods, and ..."
+    }
+  ]
+}

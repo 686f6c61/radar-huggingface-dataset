@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "TensorVizion/Orri-LLM",
+  "slug": "tensorvizion-orri-llm",
+  "author": "TensorVizion",
+  "url": "https://huggingface.co/TensorVizion/Orri-LLM",
+  "created_at": "2026-06-23T19:03:37.000Z",
+  "updated_at": "2026-09-01T11:06:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "license:apache-2.0",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 63,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 2185848972,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TensorVizion/Orri-LLM · Hugging Face",
+      "url": "https://huggingface.co/TensorVizion/Orri-LLM",
+      "snippet": "TensorVizion / Orri-LLM like 0 Safetensors qwen2 4-bit precision bitsandbytes License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "TensorVizion (Thomas Barrie) - Hugging Face",
+      "url": "https://huggingface.co/TensorVizion",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 12 days ago ... new activity 12 days ago ... updated a Space 13 days ago"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 407 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Can I Run This LLM? AI Model Hardware Checker | llmrun",
+      "url": "https://llmrun.dev/",
+      "snippet": "Can I Run LLM Model Locally? Find out which AI models your machine can actually run. Check GPU compatibility, VRAM requirements, and expected performance."
+    },
+    {
+      "title": "Best Open Source LLMs in 2026 - tensorfeed.ai",
+      "url": "https://tensorfeed.ai/best-open-source-llms",
+      "snippet": "Best Open Source LLMs in 2026 The strongest open-source LLMs in 2026 are Moonshot&#x27;s Kimi K3 (the largest open-weight model published, at 2.8T total parameters with 104B active), DeepSeek V4 Pro and Z.ai&#x27;s GLM-5.3-Flash (near-frontier quality under plain MIT terms), and Qwen3.8-27B (the most capable model that still fits on a single consumer GPU)."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "DT4H",
   "url": "https://huggingface.co/DT4H/cardio-ner-nl-cardioberta-multilabel",
   "created_at": "2026-08-17T11:44:09.000Z",
-  "updated_at": "2026-08-17T12:13:13.000Z",
+  "updated_at": "2026-08-31T13:44:28.000Z",
   "license": "gpl-3.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,10 +24,10 @@
   "likes": 0,
   "downloads_30d": 20,
   "trending_score": 0,
-  "parameters": 125394441,
-  "parameters_human": "125.4M",
-  "storage_bytes": 754777206,
-  "storage_human": "755 MB",
+  "parameters": 125985033,
+  "parameters_human": "126.0M",
+  "storage_bytes": 1258741466,
+  "storage_human": "1.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

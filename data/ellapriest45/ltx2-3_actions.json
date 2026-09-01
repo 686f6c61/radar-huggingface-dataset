@@ -5,7 +5,7 @@
   "author": "EllaPriest45",
   "url": "https://huggingface.co/EllaPriest45/LTX2.3_Actions",
   "created_at": "2026-05-19T16:31:31.000Z",
-  "updated_at": "2026-08-22T16:41:25.000Z",
+  "updated_at": "2026-08-31T17:30:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 194926802724,
-  "storage_human": "194.9 GB",
+  "storage_bytes": 195714374091,
+  "storage_human": "195.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

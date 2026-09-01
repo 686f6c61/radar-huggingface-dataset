@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "entropyinequalityprover/Models_Scripts_MCE-220",
+  "slug": "entropyinequalityprover-models_scripts_mce-220",
+  "author": "entropyinequalityprover",
+  "url": "https://huggingface.co/entropyinequalityprover/Models_Scripts_MCE-220",
+  "created_at": "2026-04-21T05:40:04.000Z",
+  "updated_at": "2026-09-01T11:13:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3",
+    "entropy",
+    "theorem-proving",
+    "benchmark",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9772697149,
+  "storage_human": "9.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - godson-benchmarks/mse: Moral Spectrometry Engine. Adaptive ...",
+      "url": "https://github.com/godson-benchmarks/mse",
+      "snippet": "Moral Spectrometry Engine (MSE) An adaptive psychometric system for mapping the ethical profile of AI agents using penalized logistic threshold estimation (RLTM) and Computerized Adaptive Testing (CAT)."
+    },
+    {
+      "title": "MCE — MCP Code Execution - GitHub",
+      "url": "https://github.com/hypen-code/mcp-code-execution",
+      "snippet": "MCE (MCP Code Execution) is a production-grade MCP server that transforms Swagger/OpenAPI specs into LLM-native Python functions. It provides dynamic discovery, inspection, and sandboxed Docker execution to minimize context window usage and maximize security for AI-driven API orchestration."
+    },
+    {
+      "title": "Providers & API keys | AI Assistant Documentation - JetBrains",
+      "url": "https://www.jetbrains.com/help/ai-assistant/settings-reference-providers-and-api-keys.html",
+      "snippet": "Use this page to configure access to models from third-party AI providers and locally hosted models and to manage authorization for integrated agents."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Models | OpenCode",
+      "url": "https://opencode.ai/docs/models/",
+      "snippet": "Here the full ID is provider_id/model_id. For example, if you&#x27;re using OpenCode Zen, you would use opencode/gpt-5.1-codex for GPT 5.1 Codex. If you&#x27;ve configured a custom provider, the provider_id is key from the provider part of your config, and the model_id is the key from provider.models."
+    }
+  ]
+}

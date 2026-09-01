@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "sugam24/geonusaf-s4-tcsegformer-R0-block-fold1",
+  "slug": "sugam24-geonusaf-s4-tcsegformer-r0-block-fold1",
+  "author": "sugam24",
+  "url": "https://huggingface.co/sugam24/geonusaf-s4-tcsegformer-R0-block-fold1",
+  "created_at": "2026-09-01T09:13:20.000Z",
+  "updated_at": "2026-09-01T10:29:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "semantic-segmentation",
+    "remote-sensing",
+    "segformer",
+    "geonusaf",
+    "synthetic-data",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 826664222,
+  "storage_human": "827 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sugam24/geonusaf-tcsegformer-block-fold2 · Hugging Face",
+      "url": "https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sugam24/geonusaf-tcsegformer-block-fold1 · Hugging Face",
+      "url": "https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold1",
+      "snippet": "GeoNUSAF TC-SegFormer -- block split, fold 1 Kathmandu Valley land-use segmentation, 6 classes, ignore_index=255, 512x512 @ 0.586 m/px."
+    },
+    {
+      "title": "GitHub - Nozomi01/TripoSG",
+      "url": "https://github.com/Nozomi01/TripoSG",
+      "snippet": "TripoSG is an advanced high-fidelity, high-quality and high-generalizability image-to-3D generation foundation model. It leverages large-scale rectified flow transformers, hybrid supervised training, and a high-quality dataset to achieve state-of-the-art performance in 3D shape generation."
+    },
+    {
+      "title": "Pegasus · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/docs/transformers/model_doc/pegasus",
+      "snippet": "Pegasus is an encoder-decoder (sequence-to-sequence) transformer model pretrained on unlabeled text to perform abstractive summarization. Pegasus is trained jointly on two self-supervised objective functions, masked language modeling (MLM) and gap sentence generation (GSG)."
+    },
+    {
+      "title": "Automatic crack detection on concrete and asphalt surfaces using ...",
+      "url": "https://trid.trb.org/View/2363976",
+      "snippet": "To mitigate these problems, this paper introduces SegFormer, an efficient semantic segmentation model with hierarchical Transformer, for crack detection on concrete and asphalt surfaces in multiple scenarios."
+    }
+  ]
+}

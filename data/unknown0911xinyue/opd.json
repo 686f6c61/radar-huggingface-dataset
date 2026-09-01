@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Unknown0911xinyue/opd",
+  "slug": "unknown0911xinyue-opd",
+  "author": "Unknown0911xinyue",
+  "url": "https://huggingface.co/Unknown0911xinyue/opd",
+  "created_at": "2026-09-01T08:13:21.000Z",
+  "updated_at": "2026-09-01T08:14:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2606.27377",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unknown0911xinyue (LIXinyue) - Hugging Face",
+      "url": "https://huggingface.co/Unknown0911xinyue/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 4 hours ago ... liked a model 2 days ago"
+    },
+    {
+      "title": "Unknown0911xinyue (LIXinyue) - Hugging Face",
+      "url": "https://huggingface.co/Unknown0911xinyue/models",
+      "snippet": "Recent Activity updated a dataset10 days ago Unknown0911xinyue/Douyin liked a model13 days ago Wan-AI/Wan2.1-T2V-14B liked a model13 days ago XiangpengYang/VideoCoF View all activity"
+    },
+    {
+      "title": "GitHub - VisionOPD/Vision-OPD: Vision-OPD is a regional-to-global on ...",
+      "url": "https://github.com/VisionOPD/Vision-OPD",
+      "snippet": "Overview Vision-OPD is a regional-to-global on-policy self-distillation framework that transfers a model&#x27;s own privileged regional perception to its full-image policy, enabling fine-grained visual understanding in a single forward pass — without external teachers, ground-truth labels, reward verifiers, or inference-time tool use."
+    },
+    {
+      "title": "GitHub - thinkwee/AwesomeOPD: Awesome List for On-Policy Distillation",
+      "url": "https://github.com/thinkwee/AwesomeOPD",
+      "snippet": "AwesomeOPD is an awesome list summarising open-source repositories and papers for training LLMs (and VLMs / agents / draft models) with On-Policy Distillation (OPD) and On-Policy Self-Distillation (OPSD): 🎯 OPD = C1 + C2. C1: student samples its own trajectories y ~ π_student (·|x) during training. C2: teacher provides per-token / sequence supervision on those student samples. Methods ..."
+    },
+    {
+      "title": "Self-OPD Drops Teacher Model From Flow Matching Distillation",
+      "url": "https://aiweekly.co/alerts/self-opd-drops-teacher-model-from-flow-matching-distillation",
+      "snippet": "Self-OPD replaces the pre-trained specialized teacher in on-policy distillation with the flow matching student&#x27;s own self-rollouts, according to a…"
+    }
+  ]
+}

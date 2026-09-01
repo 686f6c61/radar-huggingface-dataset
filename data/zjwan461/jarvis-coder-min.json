@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "zjwan461/jarvis-coder-min",
+  "slug": "zjwan461-jarvis-coder-min",
+  "author": "zjwan461",
+  "url": "https://huggingface.co/zjwan461/jarvis-coder-min",
+  "created_at": "2026-09-01T08:54:37.000Z",
+  "updated_at": "2026-09-01T08:55:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519720,
+  "storage_human": "1000 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zjwan461/jarvis-coder · Hugging Face",
+      "url": "https://huggingface.co/zjwan461/jarvis-coder",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - danilofalcao/jarvis: J.A.R.V.I.S. is an intelligent coding ...",
+      "url": "https://github.com/danilofalcao/jarvis",
+      "snippet": "J.A.R.V.I.S. - AI Code Assistant J.A.R.V.I.S. is an intelligent coding assistant that leverages multiple state-of-the-art language models to help you with code generation, modifications, and technical discussions."
+    },
+    {
+      "title": "GitHub - pguilp25/jarvis: the best free ai · GitHub",
+      "url": "https://github.com/pguilp25/jarvis/",
+      "snippet": "The code map, symbol lookups, stale-read detection, and \"which file am I in\" are all the harness&#x27;s job. The model asks; the harness answers with ground truth. The slogan, from the project&#x27;s own notes: the harness computes the global, the model acts local."
+    },
+    {
+      "title": "OpenJarvis — Personal AI, On Personal Devices",
+      "url": "https://openjarvis.stanford.edu/",
+      "snippet": "Eight built-in agent types, from simple chat to orchestrated workflows. Web search, calculator, file I/O, code interpreter, retrieval, persistent local state, and any external MCP server. Your AI gets better over time. Every interaction generates traces that drive automatic improvements to weights, prompts, and agent behavior."
+    },
+    {
+      "title": "Jarvis — The AI That Lives on Your Desktop",
+      "url": "https://jarvisapp.in/",
+      "snippet": "A living interface. Jarvis wakes on your desktop — listening, thinking, and responding the instant you speak."
+    }
+  ]
+}

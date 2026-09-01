@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "keaswork/keas-lora-only",
+  "slug": "keaswork-keas-lora-only",
+  "author": "keaswork",
+  "url": "https://huggingface.co/keaswork/keas-lora-only",
+  "created_at": "2026-09-01T10:07:52.000Z",
+  "updated_at": "2026-09-01T10:08:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161533192,
+  "storage_human": "162 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lora Loader Model Only - ComfyUI Wiki",
+      "url": "https://comfyui-wiki.com/en/comfyui-nodes/loaders/lora-loader-model-only",
+      "snippet": "Learn about the LoraLoaderModelOnly node in ComfyUI, which is designed to load LoRA models without requiring a CLIP model, focusing on enhancing or modifying a given model based on LoRA parameters. It allows for the dynamic adjustment of the model&#x27;s strength through LoRA parameters, facilitating fine-tuned control over the model&#x27;s behavior."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "ComfyUI Node: LoraLoaderModelOnly - runcomfy.com",
+      "url": "https://www.runcomfy.com/comfyui-nodes/ComfyUI/LoraLoaderModelOnly",
+      "snippet": "Load LoRA model to enhance existing model for AI artists, simplifying adaptation process with fine-tuned control."
+    },
+    {
+      "title": "Load Lora Model Only from URL",
+      "url": "https://comfyai.run/documentation/LoadLoraModelOnlyWithUrl",
+      "snippet": "This output ensures that the effects of the loaded Lora model are visibly integrated into the existing model. Why this Node? Load Lora Model Only from URL is a powerful tool for users who want to enhance their models dynamically without dealing with the complexities of local storage and manual integration."
+    },
+    {
+      "title": "Keras: Deep Learning for humans",
+      "url": "https://keras.io/",
+      "snippet": "KERAS 3.0 RELEASED A superpower for ML developers Keras is a deep learning API designed for human beings, not machines. Keras focuses on debugging speed, code elegance & conciseness, maintainability, and deployability. When you choose Keras, your codebase is smaller, more readable, easier to iterate on."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "ethicalabs",
   "url": "https://huggingface.co/ethicalabs/Echo-DSRN-v0.1.4-Research-Intent-CLF",
   "created_at": "2026-08-13T22:15:26.000Z",
-  "updated_at": "2026-08-24T15:04:51.000Z",
+  "updated_at": "2026-08-31T15:50:05.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 466,
+  "downloads_30d": 469,
   "trending_score": 0,
   "parameters": 98267142,
   "parameters_human": "98.3M",

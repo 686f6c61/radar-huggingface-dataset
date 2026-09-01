@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_baseline_filtered-6k_7k_8k_9k_10k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_baseline_filtered-6k_7k_8k_9k_10k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-6k_7k_8k_9k_10k_weightedavg_merge",
+  "created_at": "2026-09-01T02:49:29.000Z",
+  "updated_at": "2026-09-01T02:50:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seedance 2.5 Official Launch - BytePlus Seedance 2.5 Launch",
+      "url": "https://duckduckgo.com/y.js?ad_domain=byteplus.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=qdmGpgvF9tvzJCRbXXyF_NfbIN38XumZ7mmetDTOvIakUure0HSqVhWDiEbakAp5XKKvLWT5p4TesFHqZ26ZxXPyhqOuwHbP4nmwjY7o8ORY3rBXOu9ec7%2D5gnyiSnPdgnUS81RSurcA5hTSse833VvL5%2DDh_o5rM2kaxQqlm0w.w8KQz6PrZzEVhWgh_FBvLw&rut=21a0f27e6702800a5ad50d6c2d4a1f0fe06fa65ea0c6ab3445ccf6e17b107333&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De89f2%2D5Ixael51urKuymgdBzVUCUxqbEO9L0qC3RFAJW%2DpfU3nWl2d%2DALyTO5OP3OtS_Jv03rFpHGKqk1Ooi9YOB%2D80GoEVX_WwU4l5HzDA4RlPMcby_vNV557MmAZDwdM3y4f7S8Z6bKHgYU2mOW4jckIx5vZnFaCQxXikBDTuHKxOyBQwsazPrRwq7lDxJImSEhZiPWB4i4DcGvI%2DzudLCeLx00%26u%3DaHR0cHMlM2ElMmYlMmZhaS5ieXRlcGx1cy5jb20lMmZlbiUyZmFjdGl2aXR5JTJmc2VlZGFuY2UyLTUlM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RwdXJjaGFzZV9zZWVkYW5jZV9ldV9lbmdsaXNoXzIwMjYwODE5X2xyaCUyNnV0bV90ZXJtJTNkMjAyNjA4MTlfYnJhbmRfYnJvYWRtYXRjaF8yLTVfc2VlZGFuY2UyLjUlMjZ1dG1fY29udGVudCUzZHRlY2RvJTI2bXNjbGtpZCUzZGZkNzBjM2RhNGZlNTFjM2E2MzQ2YTk0Y2NlYWE5Yzgy%26rlid%3Dfd70c3da4fe51c3a6346a94cceaa9c82&vqd=4-293768375214215346439874637912328982418&iurl=%7B1%7DIG%3D37E2F612ADBD41488E364B1776DE0056%26CID%3D2DA5544D101D62C22216438A11666323%26ID%3DDevEx%2C5037.1",
+      "snippet": "Seedance 2.5 takes 50 images, audio, and video inputs for better control. Seedance 2.5 turns your prompt into a 30s single-clip video instantly."
+    },
+    {
+      "title": "sfm_baseline_filtered-6k_7k_8k_merge - Hugging Face",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-6k_7k_8k_merge",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yuhengtu-bytedance/sfm_baseline_filtered-5k_6k_7k_merge · Discussions",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-5k_6k_7k_merge/discussions",
+      "snippet": "Instructions to use yuhengtu-bytedance/sfm_baseline_filtered-5k_6k_7k_merge with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "sfm_baseline_filtered-7k_8k_9k_merge - FriendliAI",
+      "url": "https://friendli.ai/models/yuhengtu-bytedance/sfm_baseline_filtered-7k_8k_9k_merge",
+      "snippet": "Deploy sfm_baseline_filtered-7k_8k_9k_merge with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for ..."
+    },
+    {
+      "title": "sfm-baseline-unfiltered-4k-5k-6k-avg - FriendliAI",
+      "url": "https://friendli.ai/models/yuhengtu-bytedance/sfm-baseline-unfiltered-4k-5k-6k-avg",
+      "snippet": "Deploy sfm-baseline-unfiltered-4k-5k-6k-avg with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

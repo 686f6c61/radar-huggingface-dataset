@@ -5,7 +5,7 @@
   "author": "ajrayman",
   "url": "https://huggingface.co/ajrayman/narcissism_binary",
   "created_at": "2024-10-02T13:19:52.000Z",
-  "updated_at": "2026-08-30T15:07:26.000Z",
+  "updated_at": "2026-08-31T07:08:14.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 7,
+  "downloads_30d": 97,
   "trending_score": 0,
   "parameters": 124647170,
   "parameters_human": "124.6M",
-  "storage_bytes": 15085320665,
-  "storage_human": "15.1 GB",
+  "storage_bytes": 18077002328,
+  "storage_human": "18.1 GB",
   "base_model": "roberta-base",
   "formats": [
     "safetensors"

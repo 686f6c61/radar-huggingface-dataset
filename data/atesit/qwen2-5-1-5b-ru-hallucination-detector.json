@@ -5,7 +5,7 @@
   "author": "AtesiT",
   "url": "https://huggingface.co/AtesiT/qwen2.5-1.5b-ru-hallucination-detector",
   "created_at": "2026-08-10T20:57:23.000Z",
-  "updated_at": "2026-08-17T19:56:01.000Z",
+  "updated_at": "2026-08-14T08:11:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 1876,
+  "downloads_30d": 1898,
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",

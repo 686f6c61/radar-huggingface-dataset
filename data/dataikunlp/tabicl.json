@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DataikuNLP/TabICL",
+  "slug": "dataikunlp-tabicl",
+  "author": "DataikuNLP",
+  "url": "https://huggingface.co/DataikuNLP/TabICL",
+  "created_at": "2026-09-01T09:36:00.000Z",
+  "updated_at": "2026-09-01T09:36:00.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DataikuNLP (Dataiku) - Hugging Face",
+      "url": "https://huggingface.co/DataikuNLP/models",
+      "snippet": "Everyday NLP DataikuNLP/average_word_embeddings_glove.6B.300d DataikuNLP/paraphrase-albert-small-v2"
+    },
+    {
+      "title": "DataikuNLP/TabICL-clf · Hugging Face",
+      "url": "https://huggingface.co/DataikuNLP/TabICL-clf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "[2502.05564] TabICL: A Tabular Foundation Model for In-Context Learning ...",
+      "url": "https://arxiv.org/abs/2502.05564",
+      "snippet": "The long-standing dominance of gradient-boosted decision trees on tabular data is currently challenged by tabular foundation models using In-Context Learning (ICL): setting the training data as context for the test data and predicting in a single forward pass without parameter updates. While TabPFNv2 foundation model excels on tables with up to 10K samples, its alternating column- and row-wise ..."
+    },
+    {
+      "title": "TabICL: A Tabular Foundation Model for In-Context Learning on Large Data",
+      "url": "https://arxiv.org/html/2502.05564v2",
+      "snippet": "In this paper, we introduce TabICL, a scalable and efficient tabular foundation model based on PFNs (Müller et al., 2024) and designed for classification tasks. Pretrained on synthetic datasets up to 60K samples, TabICL can effectively handle datasets up to 500K samples and 500 features, significantly expanding the scalability of ICL for tables."
+    },
+    {
+      "title": "GitHub - soda-inria/tabicl: TabICLv2: An open tabular foundation model",
+      "url": "https://github.com/soda-inria/tabicl",
+      "snippet": "TabICLv2: An open tabular foundation model. Contribute to soda-inria/tabicl development by creating an account on GitHub."
+    }
+  ]
+}

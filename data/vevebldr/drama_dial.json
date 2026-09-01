@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "vevebldr/DRAMA_DIAL",
+  "slug": "vevebldr-drama_dial",
+  "author": "vevebldr",
+  "url": "https://huggingface.co/vevebldr/DRAMA_DIAL",
+  "created_at": "2026-09-01T02:29:34.000Z",
+  "updated_at": "2026-09-01T02:34:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 428150680,
+  "storage_human": "428 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vevebldr/DRAMA_DIAL · Hugging Face",
+      "url": "https://huggingface.co/vevebldr/DRAMA_DIAL",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vevebldr (veve) - Hugging Face",
+      "url": "https://huggingface.co/vevebldr",
+      "snippet": "vevebldr/Qwen2.5-.5B-Instruct-Gensyn-Swarm-bipedal_lanky_bat. Text Generation • 0.5B • Updated Sep 25, 2025 • 3"
+    },
+    {
+      "title": "vevebldr · GitHub",
+      "url": "https://github.com/vevebldr/",
+      "snippet": "vevebldr has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "AI Drama Generator for Short & Micro Dramas | Topview",
+      "url": "https://www.topview.ai/drama-studio",
+      "snippet": "Create AI short dramas and micro dramas from scripts, novels, or story ideas. Generate scripts, characters, storyboards, voiceovers, subtitles, and vertical drama videos online."
+    },
+    {
+      "title": "AI Drama Generator - domoai.app",
+      "url": "https://www.domoai.app/scenarios/ai-drama-generator",
+      "snippet": "An AI drama generator helps you turn a story beat, a script, and a set of visual references into connected dramatic video scenes, including vertical episodes, two-character confrontations, and social-ready cliffhangers."
+    }
+  ]
+}

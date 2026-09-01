@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ContextReq/Pebble-10M-GGUF",
+  "slug": "contextreq-pebble-10m-gguf",
+  "author": "ContextReq",
+  "url": "https://huggingface.co/ContextReq/Pebble-10M-GGUF",
+  "created_at": "2026-09-01T08:01:19.000Z",
+  "updated_at": "2026-09-01T08:57:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "pebble",
+    "mamba2",
+    "hybrid",
+    "small-language-model",
+    "text-generation",
+    "base_model:basically-ai/Pebble-10M",
+    "base_model:quantized:basically-ai/Pebble-10M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10281744,
+  "parameters_human": "10.3M",
+  "storage_bytes": 39318208,
+  "storage_human": "39 MB",
+  "base_model": "basically-ai/Pebble-10M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "This repository provides an automated CI/CD process to convert, test and deploy IBM Granite models, in safetensor format, from the ibm-granite organization to IBM GGUF versions (with various supported quantizations) within model repositories respectively named with the -GGUF extension. These GGUF model repositories are also included to the Granite Quantized Model collection for convenience."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "GitHub - Shoalstone/pebble: The world&#x27;s most efficient AI model.",
+      "url": "https://github.com/Shoalstone/pebble",
+      "snippet": "The world&#x27;s most parameter-efficient language model. Pebble-1 is a 2-parameter binary decision model that achieves remarkable inference efficiency on yes/no question-answering tasks. By distilling the essence of language understanding down to a single neuron, Pebble-1 challenges fundamental assumptions about the relationship between model scale and capability. \"You don&#x27;t need a trillion ..."
+    },
+    {
+      "title": "GGUF · Hugging Face",
+      "url": "https://huggingface.co/docs/hub/gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

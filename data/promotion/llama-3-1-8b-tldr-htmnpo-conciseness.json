@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "promotion/Llama-3.1-8B-TLDR-HTMNPO-conciseness",
+  "slug": "promotion-llama-3-1-8b-tldr-htmnpo-conciseness",
+  "author": "promotion",
+  "url": "https://huggingface.co/promotion/Llama-3.1-8B-TLDR-HTMNPO-conciseness",
+  "created_at": "2026-09-01T02:55:36.000Z",
+  "updated_at": "2026-09-01T03:00:19.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "alignment",
+    "multi-objective",
+    "preference-optimization",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138288576,
+  "storage_human": "32.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama-3.1-8B-TLDR-HTMNPO-conciseness - Hugging Face",
+      "url": "https://huggingface.co/promotion/Llama-3.1-8B-TLDR-HTMNPO-conciseness",
+      "snippet": "Llama-3.1-8B-TLDR-HTMNPO-conciseness Single-objective corner on the TL;DR panel: all weight on conciseness. Trained from meta-llama/Llama-3.1-8B-Instruct, which is also the reference policy and the initialisation. Objectives are scored by a prompted Qwen3-32B preference oracle, each pair queried in both presentation orders and swap-averaged. Within a panel every arm shares one response pool ..."
+    },
+    {
+      "title": "promotion/Llama-3.1-8B-TLDR-HTMNPO-helpfulness · Hugging Face",
+      "url": "https://huggingface.co/promotion/Llama-3.1-8B-TLDR-HTMNPO-helpfulness",
+      "snippet": "Llama-3.1-8B-TLDR-HTMNPO-helpfulness Single-objective corner on the TL;DR panel: all weight on helpfulness. Trained from meta-llama/Llama-3.1-8B-Instruct, which is also the reference policy and the initialisation. Objectives are scored by a prompted Qwen3-32B preference oracle, each pair queried in both presentation orders and swap-averaged. Within a panel every arm shares one response pool ..."
+    },
+    {
+      "title": "Llama 3.1 | meta-llama/llama-models | DeepWiki",
+      "url": "https://deepwiki.com/meta-llama/llama-models/10.1-llama-3.1",
+      "snippet": "Llama 3.1 is a collection of multilingual large language models available in three sizes: 8B, 70B, and 405B parameters. All variants use an optimized transformer architecture with Grouped-Query Attention (GQA) for improved inference scalability."
+    },
+    {
+      "title": "Llama 3.1: Specs, Benchmarks & Pricing | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/llama-3-1/",
+      "snippet": "Llama 3.1 is Meta&#x27;s open-weight LLM family (8B/70B/405B, July 2024) with a 128K context, eight languages, and the 405B — the first open model to rival GPT-4-cl…"
+    },
+    {
+      "title": "Llama-3.1-8B: Advanced 8B Transformer Model - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/llama-3-1-8b-7602fd2d-7bc3-41fd-a9c0-1789258a2f5d",
+      "snippet": "Llama-3.1-8B is a dense Transformer-based foundation model featuring 8 billion parameters and novel architectural enhancements such as Grouped Query Attention and SwiGLU. The model leverages extensive multilingual pretraining and advanced tokenization to deliver high inference efficiency and superior text comprehension across multiple languages."
+    }
+  ]
+}

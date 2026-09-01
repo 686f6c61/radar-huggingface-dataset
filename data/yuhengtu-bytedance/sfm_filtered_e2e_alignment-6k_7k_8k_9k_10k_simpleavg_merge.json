@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_alignment-6k_7k_8k_9k_10k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_alignment-6k_7k_8k_9k_10k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-6k_7k_8k_9k_10k_simpleavg_merge",
+  "created_at": "2026-09-01T02:43:29.000Z",
+  "updated_at": "2026-09-01T02:44:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sfm_filtered_e2e_alignment-6k_7k_8k_merge - Hugging Face",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-6k_7k_8k_merge",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sfm_filtered_e2e_alignment-8k_9k_10k_merge - Hugging Face",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-8k_9k_10k_merge",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sfm-filtered-e2e-alignment-4k-5k-6k-avg - Hugging Face",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yuhengtu-bytedance/sfm_filtered_midtrain_alignment-7k_8k_9k_merge ...",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-7k_8k_9k_merge",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yuhengtu-bytedance/sfm_filtered_e2e_alignment-6k_7k_8k_merge · Discussions",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-6k_7k_8k_merge/discussions",
+      "snippet": "Instructions to use yuhengtu-bytedance/sfm_filtered_e2e_alignment-6k_7k_8k_merge with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

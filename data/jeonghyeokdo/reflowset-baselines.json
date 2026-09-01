@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "JeonghyeokDo/ReFlowSET-baselines",
+  "slug": "jeonghyeokdo-reflowset-baselines",
+  "author": "JeonghyeokDo",
+  "url": "https://huggingface.co/JeonghyeokDo/ReFlowSET-baselines",
+  "created_at": "2026-09-01T10:00:18.000Z",
+  "updated_at": "2026-09-01T10:01:31.000Z",
+  "license": "per-method-see-below",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "diffusers",
+    "safetensors",
+    "sar-to-eo",
+    "image-translation",
+    "remote-sensing",
+    "baselines",
+    "benchmark",
+    "reflowset",
+    "image-to-image",
+    "arxiv:2103.08259",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6927556708,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JeonghyeokDo.github.io/index.html at main · JeonghyeokDo/JeonghyeokDo ...",
+      "url": "https://github.com/JeonghyeokDo/JeonghyeokDo.github.io/blob/main/index.html",
+      "snippet": "Contribute to JeonghyeokDo/JeonghyeokDo.github.io development by creating an account on GitHub."
+    },
+    {
+      "title": "JeonghyeokDo (Jeonghyeok Do) · GitHub",
+      "url": "https://github.com/JeonghyeokDo",
+      "snippet": "Postdoctoral Researcher in KAIST. JeonghyeokDo has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "JeonghyeokDo/GeoCore-9B at main - Hugging Face",
+      "url": "https://huggingface.co/JeonghyeokDo/GeoCore-9B/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jeonghyeok Do — VIC Lab, KAIST",
+      "url": "https://jeonghyeokdo.github.io/",
+      "snippet": "Jeonghyeok Do — Postdoctoral Researcher at KAIST (VIC Lab). Diffusion models, remote sensing (SAR-to-EO translation, pan-sharpening), and skeleton-based action recognition."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=skateformer",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: skateformer Clear all"
+    }
+  ]
+}

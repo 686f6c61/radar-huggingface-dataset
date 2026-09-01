@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "gaidar12345/crab-1-benchmark",
+  "slug": "gaidar12345-crab-1-benchmark",
+  "author": "gaidar12345",
+  "url": "https://huggingface.co/gaidar12345/crab-1-benchmark",
+  "created_at": "2026-09-01T10:55:28.000Z",
+  "updated_at": "2026-09-01T10:55:29.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "osint",
+    "benchmark",
+    "french-companies",
+    "ground-truth",
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 407 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "GitHub - KaiHe-better/Crab",
+      "url": "https://github.com/KaiHe-better/Crab",
+      "snippet": "data&#92;benchmark&#92;benchmark.json This is the system prompt and queries to benchmark the role-playing capabilities on each model. We also include a reference response for each query. data&#92;result&#92;* Each record contains the generated responses on our benchmarks and their scores judged by RoleRM. The ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026 - Top AI Models Ranked | LM Market Cap",
+      "url": "https://lmmarketcap.com/leaderboards/models",
+      "snippet": "Live LLM leaderboard ranking 350+ AI models by benchmarks, pricing, speed, and capabilities. Compare GPT, Claude, Gemini, DeepSeek, Llama and more with source-backed scores."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Best LLM for Coding (September 2026): SWE-bench & LiveCodeBench Ranked",
+      "url": "https://benchlm.ai/coding",
+      "snippet": "Live leaderboard ranking 407 AI models on SWE-bench Pro, LiveCodeBench, SWE-Rebench, and more. See which LLM writes the best code — updated August 2026."
+    }
+  ]
+}

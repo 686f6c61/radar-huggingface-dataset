@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kyo14/diffusion_model",
+  "slug": "kyo14-diffusion_model",
+  "author": "kyo14",
+  "url": "https://huggingface.co/kyo14/diffusion_model",
+  "created_at": "2026-09-01T09:07:44.000Z",
+  "updated_at": "2026-09-01T09:33:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1235211,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diffusion_Models.ipynb - Colab - Google Colab",
+      "url": "https://colab.research.google.com/github/khipu-ai/practicals-2025/blob/main/notebooks/Diffusion_Models.ipynb",
+      "snippet": "We&#x27;ll focus on denoising diffusion models as presented in the paper \"Denoising Diffusion Probabilistic Models\" by Jonathan Ho, et al. (2020) as this paper introduced many simplifications and improvements to the model and was arguably one of the papers that first popularised this class of generative models."
+    },
+    {
+      "title": "Introduction to Diffusion Models · Hugging Face",
+      "url": "https://huggingface.co/learn/computer-vision-course/unit5/generative-models/diffusion-models/introduction",
+      "snippet": "It represents an alternative way to model diffusion, forming the third subcategory of diffusion models. Modeling diffusion via forward and reverse SDEs leads to efficient generation strategies as well as strong theoretical results."
+    },
+    {
+      "title": "Diffusion-101: A Step-by-Step Guide to Training Diffusion Models",
+      "url": "https://github.com/Cyr-Ch/Diffusion-101",
+      "snippet": "Diffusion models have revolutionized generative AI, powering state-of-the-art image generation models like DALL-E 2, Stable Diffusion, and Midjourney. This guide will walk you through: Understanding the mathematical foundations of diffusion models Setting up your development environment Preparing and preprocessing datasets (with automatic CIFAR-10 download) Implementing a diffusion model from ..."
+    },
+    {
+      "title": "What are Diffusion Models? - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/what-are-diffusion-models/",
+      "snippet": "Diffusion models are a type of generative AI that create data like images or audio by starting from random noise and gradually refining it into meaningful output. They learn this process by adding noise to real data during training and then reversing it step by step. This allows them to generate realistic and high-quality samples from scratch. Diffusion Model Diffusion models are generative ..."
+    },
+    {
+      "title": "GitHub - openai/guided-diffusion",
+      "url": "https://github.com/openai/guided-diffusion",
+      "snippet": "This is the codebase for Diffusion Models Beat GANS on Image Synthesis. This repository is based on openai/improved-diffusion, with modifications for classifier conditioning and architecture improvements. MODEL_FLAGS=\"--attention_resolutions 32,16,8 --class_cond True --diffusion_steps 1000 --dropout ..."
+    }
+  ]
+}

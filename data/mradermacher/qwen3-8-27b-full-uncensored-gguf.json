@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-full-Uncensored-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-full-uncensored-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-full-Uncensored-GGUF",
+  "created_at": "2026-09-01T10:44:01.000Z",
+  "updated_at": "2026-09-01T11:07:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "obliteratus",
+    "qwen3",
+    "qwen3.8",
+    "red-team",
+    "ai-safety-research",
+    "safetensors",
+    "mlx",
+    "en",
+    "base_model:0xSojalSec/Qwen3.8-27B-full-Uncensored",
+    "base_model:quantized:0xSojalSec/Qwen3.8-27B-full-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780366688,
+  "storage_human": "190.8 GB",
+  "base_model": "0xSojalSec/Qwen3.8-27B-full-Uncensored",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen-3.8-27B-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen-3.8-27B-Uncensored-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-Uncensored-FP8-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-FP8-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "Run Qwen 3.8 27B uncensored locally: pick the GGUF quant for your VRAM, serve it with llama.cpp or Ollama, and respect the research-only boundary."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
+      "snippet": "The base is Qwen/Qwen3.8-27B — a dense 27B model with a hybrid architecture (48 Gated DeltaNet linear-attention layers and 16 full-attention layers), native vision, and a 262,144-token context."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored vs Other Qwen GGUF Models - HackerNoon",
+      "url": "https://hackernoon.com/qwen38-27b-uncensored-vs-other-qwen-gguf-models",
+      "snippet": "A complete guide to Qwen3.8-27B Uncensored GGUF covering llama.cpp setup, quantization, multimodal support, benchmarks, use cases and limitations."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "BladeUtinga/El_Ditador",
+  "slug": "bladeutinga-el_ditador",
+  "author": "BladeUtinga",
+  "url": "https://huggingface.co/BladeUtinga/El_Ditador",
+  "created_at": "2026-09-01T10:44:03.000Z",
+  "updated_at": "2026-09-01T10:44:03.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:llama2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "¿Por qué internet llama &#x27;El Dictador&#x27; a Kylian Mbappé?",
+      "url": "https://www.diariodemexico.com/arena-deportiva/justa-mundialista-2026/por-internet-llama-dictador-kylian-mbappe",
+      "snippet": "Kylian Mbappé no solo está en el centro de atención por sus goles en el Mundial 2026 o por su desempeño en el Real Madrid. El delantero francés también se convirtió en protagonista de uno de los fenómenos más curiosos de las redes sociales: el meme de \"Mbappé Dictador\". Lo que comenzó ..."
+    },
+    {
+      "title": "Explore models — celebstudio.ai",
+      "url": "https://celebstudio.ai/",
+      "snippet": "AI photo studio Pick a model, reinvent the shot Choose a muse, then apply a single AI edit - swap the background, restyle the outfit, retouch, upscale and more. No uploads."
+    },
+    {
+      "title": "Explore - Midjourney",
+      "url": "https://www.midjourney.com/explore",
+      "snippet": "View Midjourney AI-generated images and videos created by the Midjourney community."
+    },
+    {
+      "title": "Nier Modeler Criticizes Stellar Blade Director Over \"Unpleasant\" AI Use",
+      "url": "https://www.thegamer.com/nier-dev-criticizing-stellar-blade-director-ai-use/",
+      "snippet": "One of these people was Stellar Blade director Hyung-tae Kim, who celebrated the news by posting a seemingly AI-generated image of Evangelion character Asuka surrounded by a bunch of Emil head masks, an image which has become quite iconic for the Nier series thanks to Yoko Taro himself using it to cover his face during public appearances."
+    },
+    {
+      "title": "Free AI Image Generator - Text to Image AI (No Signup) | Fotor",
+      "url": "https://www.fotor.com/ai-image-generator/",
+      "snippet": "Generate AI images from text prompts or reference images online for free. Create with Fotor&#x27;s multi-model AI image generator for better quality, consistency, and control."
+    }
+  ]
+}

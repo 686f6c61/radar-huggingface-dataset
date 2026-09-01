@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_midtrain_alignment-5k_6k_7k_8k_9k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_midtrain_alignment-5k_6k_7k_8k_9k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-5k_6k_7k_8k_9k_simpleavg_merge",
+  "created_at": "2026-09-01T02:24:26.000Z",
+  "updated_at": "2026-09-01T02:25:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seedance 2.5 Official Launch - BytePlus Seedance 2.5 Launch",
+      "url": "https://duckduckgo.com/y.js?ad_domain=byteplus.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=ODGYLljBd7LYa1pYESVRKTnayS8HDq9lnh1kHNj1NmAU%2DCh8vUYftj%2D5Wmrik3DQ5FQJQoeDVx0%2DX2W_TVFhzefJhZHuh39rZao2eBuKb9p6kBCAvc%2D03XFslK0882Tl08y9Jxhm3SOq6UVmZ_otVZTL_mqe0ma0eEIyTSOMUDU.W4IPF%2DfSuRlecbJ6BzUx4g&rut=2aab4354e4dfdfe1db03809749a0ba6ee92c8fd86d792e6316f738f0448a1b2f&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8bpG30E1TgT%2D8_daYpYvLjDVUCUztUysjzAwaMU5PwFEjf9srMzMh4nUkZgHVBL%2DsCj7ze4%2DQvi%2DbvBXYLrJkos5fpK%2DKayYXfAHra4YY0JACjkEjubD%2DSAZRFRDqF81ukKGw18fV1wBh8qimRO_4NWBoBqwhmsejCe1wKV93SFu7Xdl5NjNWHiNgSWjeJxBWDPckwGcvAZltMoxDhID7G2f7B_E%26u%3DaHR0cHMlM2ElMmYlMmZhaS5ieXRlcGx1cy5jb20lMmZlbiUyZmFjdGl2aXR5JTJmc2VlZGFuY2UyLTUlM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RwdXJjaGFzZV9zZWVkYW5jZV9ldV9lbmdsaXNoXzIwMjYwODE5X2xyaCUyNnV0bV90ZXJtJTNkMjAyNjA4MTlfYnJhbmRfYnJvYWRtYXRjaF8yLTVfc2VlZGFuY2UyLjUlMjZ1dG1fY29udGVudCUzZHRlY2RvJTI2bXNjbGtpZCUzZDA2ZDY0YjZlOWQ4ZjE0ZGM4OGFmMjFmODE1MWQ2Yzk2%26rlid%3D06d64b6e9d8f14dc88af21f8151d6c96&vqd=4-144287032034111210478517904087259151610&iurl=%7B1%7DIG%3D32BCAABDB8294369A23979914FFD6921%26CID%3D1FE0D91765B460A53F1DCED064BA61BD%26ID%3DDevEx%2C5037.1",
+      "snippet": "Seedance 2.5 takes 50 images, audio, and video inputs for better control. Seedance 2.5 turns your prompt into a 30s single-clip video instantly."
+    },
+    {
+      "title": "yuhengtu-bytedance/sfm_filtered_midtrain_alignment-5k_6k_7k_merge ...",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-5k_6k_7k_merge",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yuhengtu-bytedance/sfm_filtered_midtrain_alignment-7k_8k_9k_merge ...",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-7k_8k_9k_merge",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sfm-filtered-midtrain-alignment-4k-5k-6k-avg - friendli.ai",
+      "url": "https://friendli.ai/models/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg",
+      "snippet": "Deploy sfm-filtered-midtrain-alignment-4k-5k-6k-avg with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "ByteDance Seed",
+      "url": "https://seed.bytedance.com/en/",
+      "snippet": "The ByteDance Seed team was established in 2023, dedicated to discovering new approaches to general intelligence, pushing the boundaries of AI. The team&#x27;s research areas include LLM, speech, vision, world models, infrastructure, AI Infra, and next-generation AI interactions. The team operates labs in China, Singapore, the United States, and other locations."
+    }
+  ]
+}

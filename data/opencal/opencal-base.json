@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "opencal/opencal-base",
+  "slug": "opencal-opencal-base",
+  "author": "opencal",
+  "url": "https://huggingface.co/opencal/opencal-base",
+  "created_at": "2026-09-01T02:27:01.000Z",
+  "updated_at": "2026-09-01T02:27:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "lfm2_vl",
+    "image-text-to-text",
+    "lfm2",
+    "vision",
+    "multimodal",
+    "food",
+    "calories",
+    "nutrition",
+    "transformers.js",
+    "conversational",
+    "base_model:LiquidAI/LFM2.5-VL-450M",
+    "base_model:quantized:LiquidAI/LFM2.5-VL-450M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4376928429,
+  "storage_human": "4.4 GB",
+  "base_model": "LiquidAI/LFM2.5-VL-450M",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "opencal-base - Hugging Face",
+      "url": "https://huggingface.co/opencal/opencal-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - OpenCALTeam/opencal: OpenCAL, the Open Computing Abstraction ...",
+      "url": "https://github.com/OpenCALTeam/opencal",
+      "snippet": "OpenCAL is an Open Source, multi-platform parallel software library for performing fast and reliable simulations of numerical models based on structured grids computational methods, such as the Cellular Automata, Finite Volumes, and others."
+    },
+    {
+      "title": "opencal (OpenCalorieTracker) - Hugging Face",
+      "url": "https://huggingface.co/opencal",
+      "snippet": "Team members 1 models1 opencal/opencal-base Image-Text-to-Text •Updated about 5 hours ago"
+    },
+    {
+      "title": "OpenCAL-documentation/docs at main · computed-axial ... - GitHub",
+      "url": "https://github.com/computed-axial-lithography/OpenCAL-documentation/tree/main/docs",
+      "snippet": "computed-axial-lithography / OpenCAL-documentation Public Notifications Fork 3 Star 8"
+    },
+    {
+      "title": "OpenCal / Docs",
+      "url": "https://opencal.dev/docs",
+      "snippet": "Every time OpenCal syncs your feed, it will diff the event list against the last seen version. New events will be added to Google Calendar, changed events updated, and removed events deleted."
+    }
+  ]
+}

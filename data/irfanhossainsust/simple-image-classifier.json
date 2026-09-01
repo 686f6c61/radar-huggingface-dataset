@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "irfanhossainsust/simple-image-classifier",
+  "slug": "irfanhossainsust-simple-image-classifier",
+  "author": "irfanhossainsust",
+  "url": "https://huggingface.co/irfanhossainsust/simple-image-classifier",
+  "created_at": "2026-09-01T09:36:18.000Z",
+  "updated_at": "2026-09-01T09:54:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vision",
+    "image-classification",
+    "pytorch",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2554968,
+  "parameters_human": "2.6M",
+  "storage_bytes": 10244880,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Simple Image Classifier with a Python Neural Network",
+      "url": "https://medium.com/data-bistrot/a-simple-image-classifier-with-a-python-neural-network-82a5522fe48b",
+      "snippet": "An image classifier is a type of machine learning (ML) model that can identify objects within images — whether it&#x27;s distinguishing a cat from a dog or recognizing everyday objects like cars ..."
+    },
+    {
+      "title": "Simple Image Classifier - a Hugging Face Space by Nuno-Tome",
+      "url": "https://huggingface.co/spaces/Nuno-Tome/simple_image_classifier",
+      "snippet": "Image Classification This is a simple web app to test and compare different image classifier models using Hugging Face&#x27;s image-classification pipeline. 22 new models added! - Including Medical, AI vs Human detection, Anime classification and more. From time to time more models will be added to the list."
+    },
+    {
+      "title": "AI Image Classifier (Flask & PyTorch) - GitHub",
+      "url": "https://github.com/AtharvaMeherkar/AI-Image-Classifier",
+      "snippet": "AI Image Classifier (Flask & PyTorch) Project Overview This project is a web-based application that allows users to upload an image and receive a classification prediction (identifying what the image contains) using a pre-trained deep learning model."
+    },
+    {
+      "title": "image-classifier · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/image-classifier",
+      "snippet": "An Image classifier to identify whether the given image is Batman or Superman using a CNN with high accuracy. (From getting images from google to saving our trained model for reuse.)"
+    },
+    {
+      "title": "Image classification · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/image_classification",
+      "snippet": "Image classification Image classification assigns a label or class to an image. Unlike text or audio classification, the inputs are the pixel values that comprise an image. There are many applications for image classification, such as detecting damage after a natural disaster, monitoring crop health, or helping screen medical images for signs of disease."
+    }
+  ]
+}

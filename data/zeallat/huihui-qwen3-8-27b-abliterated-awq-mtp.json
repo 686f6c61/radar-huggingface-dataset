@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "zeallat/Huihui-Qwen3.8-27B-abliterated-AWQ-MTP",
+  "slug": "zeallat-huihui-qwen3-8-27b-abliterated-awq-mtp",
+  "author": "zeallat",
+  "url": "https://huggingface.co/zeallat/Huihui-Qwen3.8-27B-abliterated-AWQ-MTP",
+  "created_at": "2026-09-01T07:55:00.000Z",
+  "updated_at": "2026-09-01T07:56:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "awq",
+    "w4a16",
+    "llm-compressor",
+    "compressed-tensors",
+    "vllm",
+    "mtp",
+    "speculative-decoding",
+    "text-generation",
+    "conversational",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 27764380677,
+  "storage_human": "27.8 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui-Qwen3.8-27B-abliterated-INT4-AWQ-GPTQ - Hugging Face",
+      "url": "https://huggingface.co/TelperionAI/Huihui-Qwen3.8-27B-abliterated-INT4-AWQ-GPTQ",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui.ai on X: \"Latest update huihui-ai/Huihui-Qwen3.8-27B-abliterated ...",
+      "url": "https://x.com/support_huihui/status/2091592857002127819",
+      "snippet": "Latest update huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF The newly added Huihui-Qwen3.8-27B-abliterated-UD-Q series comes from unsloth/Qwen3.8-27B-GGUF. Only layers 18 to 51 have been ablated, while the other layers remain unablated. The size after conversion may differ from the original GGUF. This helps retain more of the original model&#x27;s performance. MTP and visual has not been modified ..."
+    },
+    {
+      "title": "huihui.ai on X: \"Latest update 3 huihui-ai/Huihui-Qwen3.8-27B ...",
+      "url": "https://x.com/support_huihui/status/2091733996740677932",
+      "snippet": "Latest update 3 huihui-ai/Huihui-Qwen3.8-27B-abliterated Only layers 18 to 51 have been ablated (Previously, The first 15 layers were retained without ablation), while the other layers remain unablated. This helps retain more of the original model&#x27;s performance. MTP and visual"
+    },
+    {
+      "title": "Huihui Qwen3.8 27B Abliterated INT4 AWQ GPTQ by TelperionAI",
+      "url": "https://llm-explorer.com/model/TelperionAI%2FHuihui-Qwen3.8-27B-abliterated-INT4-AWQ-GPTQ,5vUh4M12Z6h5jxecWsOR3b",
+      "snippet": "Rank the Huihui Qwen3.8 27B Abliterated INT4 AWQ GPTQ capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

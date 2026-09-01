@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "saqibabid55/gptttt",
+  "slug": "saqibabid55-gptttt",
+  "author": "saqibabid55",
+  "url": "https://huggingface.co/saqibabid55/gptttt",
+  "created_at": "2026-09-01T09:29:21.000Z",
+  "updated_at": "2026-09-01T09:29:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Introducing GPT‑5 - OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-5/",
+      "snippet": "We are introducing GPT‑5, our best AI system yet. GPT‑5 is a significant leap in intelligence over all our previous models, featuring state-of-the-art performance across coding, math, writing, health, visual perception, and more."
+    },
+    {
+      "title": "Overview | ChatGPT",
+      "url": "https://chatgpt.com/overview/",
+      "snippet": "ChatGPT helps you learn, create, and get things done. Ask questions, explore ideas, write content, analyze information, and more with AI."
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "All models Browse all available models and compare their capabilities."
+    }
+  ]
+}

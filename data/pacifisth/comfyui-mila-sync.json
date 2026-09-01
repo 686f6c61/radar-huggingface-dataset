@@ -5,13 +5,15 @@
   "author": "PacifistH",
   "url": "https://huggingface.co/PacifistH/ComfyUI-Mila-Sync",
   "created_at": "2026-06-20T16:13:11.000Z",
-  "updated_at": "2026-08-31T14:16:34.000Z",
+  "updated_at": "2026-08-31T16:19:14.000Z",
   "license": "unknown",
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "tflite",
+    "onnx",
     "license:unknown",
     "region:us"
   ],
@@ -20,10 +22,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 593316033,
-  "storage_human": "593 MB",
+  "storage_bytes": 625049155,
+  "storage_human": "625 MB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "onnx"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

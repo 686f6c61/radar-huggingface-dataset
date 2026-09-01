@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "thomasavare/Qwen3-Embedding-0.6B-22",
+  "slug": "thomasavare-qwen3-embedding-0-6b-22",
+  "author": "thomasavare",
+  "url": "https://huggingface.co/thomasavare/Qwen3-Embedding-0.6B-22",
+  "created_at": "2026-06-16T12:15:43.000Z",
+  "updated_at": "2026-09-01T08:47:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 67202,
+  "parameters_human": "67202",
+  "storage_bytes": 5972138,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thomasavare/Qwen3-Embedding-0.6B-22 · Hugging Face",
+      "url": "https://huggingface.co/thomasavare/Qwen3-Embedding-0.6B-22",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "thomasavare/Qwen3-Embedding-0.6B-22 at main - Hugging Face",
+      "url": "https://huggingface.co/thomasavare/Qwen3-Embedding-0.6B-22/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen3-embedding-0.6b",
+      "snippet": "Highlights The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B). This series inherits the exceptional multilingual capabilities ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Embedding",
+      "url": "https://github.com/QwenLM/Qwen3-Embedding",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B). This series inherits the exceptional multilingual capabilities, long-text ..."
+    },
+    {
+      "title": "qwen3-embedding-0.6b - Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/ai/models/%40cf/qwen/qwen3-embedding-0.6b/",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks."
+    }
+  ]
+}

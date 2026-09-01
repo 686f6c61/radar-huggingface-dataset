@@ -5,7 +5,7 @@
   "author": "VikramPal",
   "url": "https://huggingface.co/VikramPal/Qwen3-Omni-30B-A3B-Thinker-SLURP-DynQuant-3bit",
   "created_at": "2026-08-16T19:54:57.000Z",
-  "updated_at": "2026-08-16T20:59:45.000Z",
+  "updated_at": "2026-09-01T01:22:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "audio-text-to-text",
@@ -29,8 +29,8 @@
     "audio-text-to-text",
     "en",
     "dataset:marcel-gohsen/slurp",
-    "base_model:VikramPal/Qwen3-Omni-30B-A3B-Thinker-SLURP-bf16",
-    "base_model:quantized:VikramPal/Qwen3-Omni-30B-A3B-Thinker-SLURP-bf16",
+    "base_model:VikramPal/Qwen3-Omni-30B-A3B-Thinker-bf16",
+    "base_model:quantized:VikramPal/Qwen3-Omni-30B-A3B-Thinker-bf16",
     "license:other",
     "endpoints_compatible",
     "region:us"
@@ -42,7 +42,7 @@
   "parameters_human": "3.22B",
   "storage_bytes": 11906342742,
   "storage_human": "11.9 GB",
-  "base_model": "VikramPal/Qwen3-Omni-30B-A3B-Thinker-SLURP-bf16",
+  "base_model": "VikramPal/Qwen3-Omni-30B-A3B-Thinker-bf16",
   "formats": [
     "safetensors"
   ],

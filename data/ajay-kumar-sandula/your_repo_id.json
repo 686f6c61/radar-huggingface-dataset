@@ -5,7 +5,7 @@
   "author": "ajay-kumar-sandula",
   "url": "https://huggingface.co/ajay-kumar-sandula/your_repo_id",
   "created_at": "2026-08-24T12:35:43.000Z",
-  "updated_at": "2026-08-25T17:00:43.000Z",
+  "updated_at": "2026-08-31T15:08:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -14,9 +14,9 @@
   "tags": [
     "lerobot",
     "safetensors",
-    "robotics",
     "pi0",
-    "dataset:combined_ttt_148_reencoded",
+    "robotics",
+    "dataset:combined_stacking_newfull_reencoded_old",
     "base_model:lerobot/pi0_base",
     "base_model:finetune:lerobot/pi0_base",
     "license:apache-2.0",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 4028019472,
   "parameters_human": "4.03B",
-  "storage_bytes": 17819415942,
-  "storage_human": "17.8 GB",
+  "storage_bytes": 26711934030,
+  "storage_human": "26.7 GB",
   "base_model": "lerobot/pi0_base",
   "formats": [
     "safetensors"

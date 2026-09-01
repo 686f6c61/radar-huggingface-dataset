@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "promotion/Llama-3.1-8B-TLDR-MOPO",
+  "slug": "promotion-llama-3-1-8b-tldr-mopo",
+  "author": "promotion",
+  "url": "https://huggingface.co/promotion/Llama-3.1-8B-TLDR-MOPO",
+  "created_at": "2026-09-01T02:40:59.000Z",
+  "updated_at": "2026-09-01T02:45:56.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "alignment",
+    "multi-objective",
+    "preference-optimization",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138288576,
+  "storage_human": "32.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "promotion/Llama-3.1-8B-TLDR-NBPO · Hugging Face",
+      "url": "https://huggingface.co/promotion/Llama-3.1-8B-TLDR-NBPO",
+      "snippet": "No arm on this panel attains individual rationality under Llama-3.3-70B, so its verdicts there are judge-dependent; the paper reports this rather than resting a claim on it. Built with Llama. Use is subject to the Llama 3.1 Community License. Downloads last month - Safetensors Model size 8B params Tensor type F32 · Chat template Files info"
+    },
+    {
+      "title": "meta-llama/Llama-3.1-8B · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://developer.meta.com/ai/models/llama-3/",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "Llama-3.1-8B: Advanced 8B Transformer Model - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/llama-3-1-8b-7602fd2d-7bc3-41fd-a9c0-1789258a2f5d",
+      "snippet": "Llama-3.1-8B is a dense Transformer-based foundation model featuring 8 billion parameters and novel architectural enhancements such as Grouped Query Attention and SwiGLU. The model leverages extensive multilingual pretraining and advanced tokenization to deliver high inference efficiency and superior text comprehension across multiple languages."
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    }
+  ]
+}

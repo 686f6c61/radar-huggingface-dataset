@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/neutts-air-darija-v1-GGUF",
+  "slug": "mradermacher-neutts-air-darija-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/neutts-air-darija-v1-GGUF",
+  "created_at": "2026-09-01T09:39:43.000Z",
+  "updated_at": "2026-09-01T09:48:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "ary",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-to-speech",
+    "darija",
+    "moroccan-arabic",
+    "neucodec",
+    "neutts",
+    "ary",
+    "ar",
+    "dataset:Tilas/MoulSot-Tokens-v1",
+    "base_model:Tilas/neutts-air-darija-v1",
+    "base_model:quantized:Tilas/neutts-air-darija-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 747930496,
+  "parameters_human": "747.9M",
+  "storage_bytes": 8141616896,
+  "storage_human": "8.1 GB",
+  "base_model": "Tilas/neutts-air-darija-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tilas/neutts-air-darija-v1 · Hugging Face",
+      "url": "https://huggingface.co/Tilas/neutts-air-darija-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/neutts-air-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/neutts-air-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NeuTTS Air - On-Device TTS with Voice Cloning",
+      "url": "https://neutts.com/",
+      "snippet": "Ready to Build with NeuTTS Air? Join the revolution in on-device voice AI. Get started in minutes with our open-source implementation."
+    },
+    {
+      "title": "neuphonic/neutts-air · Hugging Face",
+      "url": "https://huggingface.co/neuphonic/neutts-air",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - neuphonic/neutts: On-device TTS model by Neuphonic",
+      "url": "https://github.com/neuphonic/neutts",
+      "snippet": "Multilingual Space NeuTTS-2E (English, emotional control): Model, Q8 GGUF, Q4 GGUF, Space NeuTTS-2E.mp4 Created by Neuphonic - building faster, smaller, on-device voice AI State-of-the-art Voice AI has been locked behind web APIs for too long. NeuTTS is a collection of open source, on-device, TTS speech language models with instant voice cloning."
+    }
+  ]
+}

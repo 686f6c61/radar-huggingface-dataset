@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "philgear/philgear",
+  "slug": "philgear-philgear",
+  "author": "philgear",
+  "url": "https://huggingface.co/philgear/philgear",
+  "created_at": "2026-09-01T02:25:55.000Z",
+  "updated_at": "2026-09-01T02:41:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "clinical-ai",
+    "health-informatics",
+    "gemma-3",
+    "lora",
+    "hipaa-safe-harbor",
+    "fhir-r4",
+    "webgpu",
+    "pocketgull",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "philgear - Hugging Face",
+      "url": "https://huggingface.co/philgear/philgear",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "philgear/pocketgull-albatross-multimodal · Hugging Face",
+      "url": "https://huggingface.co/philgear/pocketgull-albatross-multimodal",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "philgear/pocketgull-compass-2b · Hugging Face",
+      "url": "https://huggingface.co/philgear/pocketgull-compass-2b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PocketGull WebGPU Zero-Egress Clinical AI - Hugging Face",
+      "url": "https://huggingface.co/spaces/philgear/pocketgull-webgpu-edge",
+      "snippet": "PocketGull WebGPU Sovereign AI 100% In-Browser Execution • Zero Network Egress • HIPAA §164.514 Air-Gap Proof"
+    },
+    {
+      "title": "GitHub - philgear/pocketgull: An Integrative Health App to Assist ...",
+      "url": "https://github.com/philgear/pocketgull/tree/main",
+      "snippet": "Pocket Gull streamlines patient intake with an interactive 3D body map and AI-powered clinical intelligence. It empowers practitioners with rapid data visualization and strategy synthesis for proactive care decisions, acting as an interruptible voice-first clinical co-pilot."
+    }
+  ]
+}

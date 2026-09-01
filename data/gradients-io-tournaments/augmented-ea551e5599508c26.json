@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-ea551e5599508c26",
+  "slug": "gradients-io-tournaments-augmented-ea551e5599508c26",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-ea551e5599508c26",
+  "created_at": "2026-09-01T02:17:58.000Z",
+  "updated_at": "2026-09-01T02:18:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608258,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gradients-io-tournaments/augmented-ea551e5599508c26 · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-ea551e5599508c26",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gradients-io-tournaments/augmented-837b4aa002c741fa · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-837b4aa002c741fa",
+      "snippet": "gradients-io-tournaments / augmented-837b4aa002c741fa like 0 Text Generation Transformers Safetensors llama text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "gradients-io-tournaments/augmented-05d9ea4a953bfcfe · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-05d9ea4a953bfcfe",
+      "snippet": "gradients-io-tournaments / augmented-05d9ea4a953bfcfe like 0 Text Generation Transformers Safetensors llama conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "gradients-io-tournaments/augmented-4594e7c7e518b49d · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-4594e7c7e518b49d",
+      "snippet": "gradients-io-tournaments / augmented-4594e7c7e518b49d like 0 Text Generation Transformers Safetensors qwen2 conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "gradients-io-tournaments/augmented-261ca080961cdd3c · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-261ca080961cdd3c",
+      "snippet": "gradients-io-tournaments / augmented-261ca080961cdd3c like 0 Text Generation Transformers Safetensors qwen2 text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

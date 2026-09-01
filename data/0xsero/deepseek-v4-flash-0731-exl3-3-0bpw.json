@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "0xSero/DeepSeek-V4-Flash-0731-EXL3-3.0bpw",
+  "slug": "0xsero-deepseek-v4-flash-0731-exl3-3-0bpw",
+  "author": "0xSero",
+  "url": "https://huggingface.co/0xSero/DeepSeek-V4-Flash-0731-EXL3-3.0bpw",
+  "created_at": "2026-07-31T15:23:38.000Z",
+  "updated_at": "2026-09-01T11:15:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v4",
+    "deepseek-v4",
+    "exl3",
+    "exllamav3",
+    "quantized",
+    "mixture-of-experts",
+    "code",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 94,
+  "trending_score": 0,
+  "parameters": 70042310590,
+  "parameters_human": "70.04B",
+  "storage_bytes": 124913139511,
+  "storage_human": "124.9 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "0xSero/DeepSeek-V4-Flash-0731-EXL3-3.0bpw · Hugging Face",
+      "url": "https://huggingface.co/0xSero/DeepSeek-V4-Flash-0731-EXL3-3.0bpw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · 0xSero/deepseek-v4-flash-0731-spark at main",
+      "url": "https://huggingface.co/0xSero/deepseek-v4-flash-0731-spark/blob/main/README.md",
+      "snippet": "0xSero / deepseek-v4-flash-0731-spark like 24 Text Generation Trellis Safetensors deepseek_v4 deepseek-v4 exl3 exllamav3 reap pruning mixture-of-experts dgx-spark sparkinfer 3-bit License:mit Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "DeepSeek-v4-Flash EXL3 on one DGX Spark - GitHub",
+      "url": "https://github.com/MiaAI-Lab/DeepSeek-v4-Flash-One-DGX-Spark",
+      "snippet": "Serves the 0xSero/deepseek-v4-flash-0731-spark build (3.0 bpw EXL3) via the sparkinfer (formerly b12x) kernel stack — a complete, self-contained Docker recipe tuned for speed and KV-cache headroom on a single device."
+    },
+    {
+      "title": "deepseek-v4-flash-0731-spark-sparkinfer/README.md at main · 0xSero ...",
+      "url": "https://github.com/0xSero/deepseek-v4-flash-0731-spark-sparkinfer/blob/main/README.md",
+      "snippet": "DeepSeek V4 Flash on one DGX Spark Pinned Docker recipe for serving 0xSero/deepseek-v4-flash-0731-spark on one NVIDIA DGX Spark with Local Inference Lab&#x27;s SparkInfer path. The important part is memory: the EXL3 weights are kept rank-sliced on disk and losslessly coalesced to TP1, while the 262,144-token MLA cache uses a 432-byte NVFP4 record."
+    },
+    {
+      "title": "DeepSeek V4 Flash 0731 REAP by 0xSero - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/0xSero%2FDeepSeek-V4-Flash-0731-REAP,6ULel5zNoKyeqoGmgAMTY7",
+      "snippet": "DeepSeek V4 Flash 0731 REAP is an open-source 193b LLM by 0xSero. VRAM 88.5GB, 1024K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

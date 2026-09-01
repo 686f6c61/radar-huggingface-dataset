@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "quge007/investor-behavior-dataset",
+  "slug": "quge007-investor-behavior-dataset",
+  "author": "quge007",
+  "url": "https://huggingface.co/quge007/investor-behavior-dataset",
+  "created_at": "2026-09-01T08:15:31.000Z",
+  "updated_at": "2026-09-01T08:15:32.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "venture-capital",
+    "startup",
+    "investors",
+    "semiconductor",
+    "event-chains",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dataset Search",
+      "url": "https://datasetsearch.research.google.com/",
+      "snippet": "Discover datasets from various domains with Google&#x27;s Dataset Search tool, designed to help researchers and enthusiasts find relevant data easily."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "WagnerT7/investor-behavior-analysis - GitHub",
+      "url": "https://github.com/WagnerT7/investor-behavior-analysis",
+      "snippet": "Overview Machine Learning project using Brazilian CVM public data to analyze investor behavior, identify patterns and predict risk profiles. The project combines clustering, time series forecasting, predictive modeling and AI-generated executive reports."
+    },
+    {
+      "title": "GitHub - faiza141/INVESTOR_BEHAVIOUR: to analyze investor behavior ...",
+      "url": "https://github.com/faiza141/INVESTOR_BEHAVIOUR",
+      "snippet": "The dataset used in this project is synthetic and self-created to simulate real-world mutual fund investor behavior. No confidential or proprietary data was used."
+    },
+    {
+      "title": "+100 Datasets for ML & AI Models",
+      "url": "https://aimultiple.com/datasets-for-ml",
+      "snippet": "Explore +100 datasets for ML models, definitions and an explanation of each category of dataset."
+    }
+  ]
+}

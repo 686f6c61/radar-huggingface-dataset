@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Gemma-4-Sphinsikus-Chronist-V2-31B-i1-GGUF",
+  "slug": "mradermacher-gemma-4-sphinsikus-chronist-v2-31b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Gemma-4-Sphinsikus-Chronist-V2-31B-i1-GGUF",
+  "created_at": "2026-09-01T07:27:31.000Z",
+  "updated_at": "2026-09-01T08:58:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "mergekit",
+    "roleplay",
+    "en",
+    "base_model:Blazed-Forge/Gemma-4-Sphinsikus-Chronist-V2-31B",
+    "base_model:quantized:Blazed-Forge/Gemma-4-Sphinsikus-Chronist-V2-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 334809629312,
+  "storage_human": "334.8 GB",
+  "base_model": "Blazed-Forge/Gemma-4-Sphinsikus-Chronist-V2-31B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma-4-Sphinsikus-Chronist-31B-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Gemma-4-Sphinsikus-Chronist-31B-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Gemma-4-Sphinsikus-Chronist-31B-i1-GGUF at main",
+      "url": "https://huggingface.co/mradermacher/Gemma-4-Sphinsikus-Chronist-31B-i1-GGUF/tree/main",
+      "snippet": "mradermacher / Gemma-4-Sphinsikus-Chronist-31B-i1-GGUF like 1 Transformers GGUF English Merge mergekit roleplay imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Gemma-4-Sphinsikus-Chronist-31B-i1-GGUF · Model · Inferix",
+      "url": "https://inferix.co/models/mradermacher/Gemma-4-Sphinsikus-Chronist-31B-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi part files. Provided Quants (sorted by size, not necessarily quality."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 31B Sphinsikus Chronist model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/Gemma-4-31B-Sphinsikus-Chronist",
+      "snippet": "Gemma 4 31B Sphinsikus Chronist is a community creative finetune for reasoning, multimodal chat, expressive writing, and roleplay."
+    }
+  ]
+}

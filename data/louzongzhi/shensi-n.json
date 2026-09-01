@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "louzongzhi/shensi-n",
+  "slug": "louzongzhi-shensi-n",
+  "author": "louzongzhi",
+  "url": "https://huggingface.co/louzongzhi/shensi-n",
+  "created_at": "2026-09-01T02:32:50.000Z",
+  "updated_at": "2026-09-01T02:32:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "louzongzhi/shensi-n · Hugging Face",
+      "url": "https://huggingface.co/louzongzhi/shensi-n",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Shensi - a louzongzhi Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/louzongzhi/shensi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "louzongzhi/Shensi-30B · Hugging Face",
+      "url": "https://huggingface.co/louzongzhi/Shensi-30B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "louzongzhi (娄宗志) · GitHub",
+      "url": "https://github.com/louzongzhi",
+      "snippet": "louzongzhi has 7 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - louzongzhi/agent",
+      "url": "https://github.com/louzongzhi/agent",
+      "snippet": "Preparation: Model Service You can either use the model service provided by Alibaba Cloud&#x27;s DashScope, or deploy and use your own model service using the open-source Qwen models. If you choose to use the model service offered by DashScope, please ensure that you set the environment variable DASHSCOPE_API_KEY to your unique DashScope API key."
+    }
+  ]
+}

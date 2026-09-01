@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "AMAImedia/Qwen3.6-27B-Qwimi-Coder-MTP-NOESIS-BF16",
+  "slug": "amaimedia-qwen3-6-27b-qwimi-coder-mtp-noesis-bf16",
+  "author": "AMAImedia",
+  "url": "https://huggingface.co/AMAImedia/Qwen3.6-27B-Qwimi-Coder-MTP-NOESIS-BF16",
+  "created_at": "2026-09-01T03:43:30.000Z",
+  "updated_at": "2026-09-01T10:19:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ru",
+    "zh",
+    "ja",
+    "kk",
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "noesis",
+    "noesis-repack",
+    "bf16",
+    "mtp",
+    "qwen3_6",
+    "qwen3_8",
+    "text-generation",
+    "conversational",
+    "en",
+    "ru",
+    "zh",
+    "ja",
+    "kk",
+    "vi",
+    "base_model:trjxter/Qwimi-3.6-27B-Coder-MTP-BF16",
+    "base_model:finetune:trjxter/Qwimi-3.6-27B-Coder-MTP-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 58203292254,
+  "storage_human": "58.2 GB",
+  "base_model": "trjxter/Qwimi-3.6-27B-Coder-MTP-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model",
+      "url": "https://qwen.ai/blog?id=qwen3.6-27b",
+      "snippet": "QWEN STUDIO HUGGING FACE MODELSCOPE DISCORD Following the launch of Qwen3.6-Plus and Qwen3.6-35B-A3B, we are excited to open-source Qwen3.6-27B — a dense 27-billion-parameter multimodal model at the scale the community has been asking for most. Still supporting both multimodal thinking and non-thinking modes, Qwen3.6-27B delivers flagship-level agentic coding performance, surpassing the ..."
+    },
+    {
+      "title": "README.md · trjxter/Qwimi-3.6-27B-Coder-MTP-GGUF at main",
+      "url": "https://huggingface.co/trjxter/Qwimi-3.6-27B-Coder-MTP-GGUF/blob/main/README.md",
+      "snippet": "GGUF quantizations of Qwimi-3.6-27B-Coder-MTP-BF16 — a coding-focused SFT of Qwen 3.6 27B (mixed coding + tool-calling + agentic training; see Qwimi-3.6-27B-BF16 for the full model card, training configuration, dataset composition, and eval results)."
+    },
+    {
+      "title": "Qwen3.6-27B: 27B Model Beats 397B on Coding (2026)",
+      "url": "https://www.buildfastwithai.com/blogs/qwen3-6-27b-review-2026",
+      "snippet": "These frameworks provide batched inference and much higher throughput than single-user llama.cpp setups. For hands-on code patterns that apply directly to Qwen3.6&#x27;s OpenAI-compatible endpoint, the Qwen 3.6 Plus API cookbook covers the same integration patterns — swap the model string for qwen3.6-27b and the local base URL."
+    },
+    {
+      "title": "trjxter/Qwimi-3.6-27B-Coder-MTP-BF16 · Hugging Face",
+      "url": "https://huggingface.co/trjxter/Qwimi-3.6-27B-Coder-MTP-BF16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-27B: 17GB VRAM, Benchmarks, Ollama Setup",
+      "url": "https://localaimaster.com/models/qwen-3-6-27b",
+      "snippet": "Qwen3.6-27B is Alibaba Qwen team&#x27;s dense 27-billion-parameter coding-and-reasoning model released April 22, 2026. It&#x27;s notable for one reason: it beats Alibaba&#x27;s own much larger Qwen3.5-Plus 397B MoE model on agentic coding benchmarks."
+    }
+  ]
+}

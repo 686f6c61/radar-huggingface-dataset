@@ -5,7 +5,7 @@
   "author": "sunshineNew",
   "url": "https://huggingface.co/sunshineNew/qwen3-8b-instruct-sdf",
   "created_at": "2026-06-23T21:18:06.000Z",
-  "updated_at": "2026-08-31T15:11:42.000Z",
+  "updated_at": "2026-08-31T17:21:39.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",
-  "storage_bytes": 147445088948,
-  "storage_human": "147.4 GB",
+  "storage_bytes": 294878743820,
+  "storage_human": "294.9 GB",
   "base_model": null,
   "formats": [
     "safetensors"

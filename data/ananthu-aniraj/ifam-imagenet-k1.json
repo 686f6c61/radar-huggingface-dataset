@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ananthu-aniraj/ifam-imagenet-k1",
+  "slug": "ananthu-aniraj-ifam-imagenet-k1",
+  "author": "ananthu-aniraj",
+  "url": "https://huggingface.co/ananthu-aniraj/ifam-imagenet-k1",
+  "created_at": "2026-09-01T09:36:40.000Z",
+  "updated_at": "2026-09-01T09:36:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "generic",
+  "languages": [],
+  "tags": [
+    "generic",
+    "safetensors",
+    "pytorch",
+    "image-classification",
+    "robust-representation",
+    "modular-ai",
+    "dynamic-masking",
+    "dinov2",
+    "ifam",
+    "arxiv:2506.08915",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 172996613,
+  "parameters_human": "173.0M",
+  "storage_bytes": 692022348,
+  "storage_human": "692 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ananthu Aniraj",
+      "url": "https://ananthu-aniraj.github.io/",
+      "snippet": "The explicit nature of the semantic masks also makes the model&#x27;s reasoning auditable, enabling powerful test-time interventions to further enhance robustness. Extensive experiments across diverse benchmarks demonstrate that this approach significantly improves robustness against spurious correlations and out-of-distribution backgrounds."
+    },
+    {
+      "title": "ananthu-aniraj (Ananthu Aniraj) - Hugging Face",
+      "url": "https://huggingface.co/ananthu-aniraj/models",
+      "snippet": "ananthu-aniraj Follow 0 followers · 2 following https://ananthu-aniraj.github.io/ ananthu-aniraj"
+    },
+    {
+      "title": "ananthu-aniraj/ifam-waterbirds-k4 · Hugging Face",
+      "url": "https://huggingface.co/ananthu-aniraj/ifam-waterbirds-k4",
+      "snippet": "IFAM (waterbirds-k4) Model Checkpoint This is the official pre-trained checkpoint of the IFAM (Iterative Focus and Attention Masking) framework, proposed in the paper \"Two-stage Vision Transformers and Hard Masking offer Robust Object Representations\" (accepted as an oral presentation at ICPR 2026)."
+    },
+    {
+      "title": "Two-stage Vision Transformers and Hard Masking offer Robust Object ...",
+      "url": "https://arxiv.org/html/2506.08915v4",
+      "snippet": "1 2 Two-stage Vision Transformers and Hard Masking offer Robust Object Representations Ananthu Aniraj Cassio F. Dantas Dino Ienco Diego Marcos"
+    },
+    {
+      "title": "GitHub - ananthu-aniraj/ifam: Implementation of paper \"Two-stage Vision ...",
+      "url": "https://github.com/ananthu-aniraj/ifam",
+      "snippet": "The explicit nature of the semantic masks also makes the model&#x27;s reasoning auditable, enabling powerful test-time interventions to further enhance robustness. Extensive experiments across diverse benchmarks demonstrate that this approach significantly improves robustness against spurious correlations and out-of-distribution backgrounds."
+    }
+  ]
+}

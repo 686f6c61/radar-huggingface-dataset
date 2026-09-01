@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "glouriousgautam/LilM1-230M",
+  "slug": "glouriousgautam-lilm1-230m",
+  "author": "glouriousgautam",
+  "url": "https://huggingface.co/glouriousgautam/LilM1-230M",
+  "created_at": "2026-09-01T10:54:58.000Z",
+  "updated_at": "2026-09-01T10:57:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lilm",
+    "feature-extraction",
+    "small-language-model",
+    "tool-use",
+    "function-calling",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 233897728,
+  "parameters_human": "233.9M",
+  "storage_bytes": 467941386,
+  "storage_human": "468 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "glouriousgautam/lilm1-stationary-sft-30m-v1 - Hugging Face",
+      "url": "https://huggingface.co/datasets/glouriousgautam/lilm1-stationary-sft-30m-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "glouriousgautam/lilm1-general-tool-ratio-ablation-12m-v1 · Datasets at ...",
+      "url": "https://huggingface.co/datasets/glouriousgautam/lilm1-general-tool-ratio-ablation-12m-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Running LLMs on NVIDIA GeForce GT 230M: What You Can Run",
+      "url": "https://www.fitmyllm.com/blog/gpu/geforce-gt-230m",
+      "snippet": "Complete guide to running local AI on the NVIDIA GeForce GT 230M with 1GB VRAM. Models that fit, expected performance, and recommended settings."
+    },
+    {
+      "title": "Liquid AI Releases LFM2.5-230M On-Device Model - LinkedIn",
+      "url": "https://www.linkedin.com/posts/yotomations_%3F%3F%3F%3F%3F%3F-%3F%3F-%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F-activity-7476881794253090817-SwVh",
+      "snippet": "The 230M-parameter, open-weight model runs on-device at 213 tok/s on a Galaxy S25 Ultra and 42 on a Raspberry Pi 5."
+    },
+    {
+      "title": "AI Model Rankings: Live LLM Leaderboard | ModelCap",
+      "url": "https://modelcap.ai/",
+      "snippet": "Live LLM leaderboard: 223 AI models ranked on public benchmark evidence; Claude Fable 5 leads. API pricing, context windows and 67 providers compared."
+    }
+  ]
+}

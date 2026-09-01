@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "kmseong/gemma2_9b-it-CB_SSFT-seal_gsm8k_topp0.8_lr5e-5",
+  "slug": "kmseong-gemma2_9b-it-cb_ssft-seal_gsm8k_topp0-8_lr5e-5",
+  "author": "kmseong",
+  "url": "https://huggingface.co/kmseong/gemma2_9b-it-CB_SSFT-seal_gsm8k_topp0.8_lr5e-5",
+  "created_at": "2026-08-27T11:37:42.000Z",
+  "updated_at": "2026-09-01T11:06:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 9241705984,
+  "parameters_human": "9.24B",
+  "storage_bytes": 37005536871,
+  "storage_human": "37.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-2-9b · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2-9b",
+      "snippet": "Code: Exposing the model to code helps it to learn the syntax and patterns of programming languages, which improves its ability to generate code or understand code-related questions. Mathematics: Training on mathematical text helps the model learn logical reasoning, symbolic representation, and to address mathematical queries."
+    },
+    {
+      "title": "Gemma 2 model card - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_2",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making LLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Quantized Models for google/gemma-2-9b - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:google/gemma-2-9b",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "gemma2:9b - Ollama",
+      "url": "https://ollama.com/library/gemma2:9b",
+      "snippet": "Google Gemma 2 is a high-performing and efficient model available in three sizes: 2B, 9B, and 27B."
+    },
+    {
+      "title": "google/gemma-2-9b • LM Studio",
+      "url": "https://lmstudio.ai/models/google/gemma-2-9b",
+      "snippet": "gemma 2 9b it by google Gemma 2 features the same extremely large vocabulary from release 1.1, which tends to help with multilingual and coding proficiency. Gemma 2 9B was trained on a wide dataset of 8 trillion tokens, 30% larger than Gemma 1.1, using similar datasets including: Web Documents: A diverse collection of web text ensures the model is exposed to a broad range of linguistic styles ..."
+    }
+  ]
+}

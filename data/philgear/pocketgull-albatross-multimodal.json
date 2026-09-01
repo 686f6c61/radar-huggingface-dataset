@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "philgear/pocketgull-albatross-multimodal",
+  "slug": "philgear-pocketgull-albatross-multimodal",
+  "author": "philgear",
+  "url": "https://huggingface.co/philgear/pocketgull-albatross-multimodal",
+  "created_at": "2026-09-01T02:20:46.000Z",
+  "updated_at": "2026-09-01T02:29:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "gemma-3",
+    "lora",
+    "clinical-nlp",
+    "healthcare",
+    "hipaa-safe-harbor",
+    "open-science",
+    "pocketgull",
+    "nih-medquad",
+    "who-mhgap",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-3-12b-it",
+    "base_model:adapter:google/gemma-3-12b-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-3-12b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "philgear/pocketgull-albatross-multimodal · Hugging Face",
+      "url": "https://huggingface.co/philgear/pocketgull-albatross-multimodal",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "philgear - Hugging Face",
+      "url": "https://huggingface.co/philgear/philgear",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pocketgull/README.md at main · philgear/pocketgull · GitHub",
+      "url": "https://github.com/philgear/pocketgull/blob/main/README.md",
+      "snippet": "By combining real-time human-in-the-loop web speech interaction with a diagnostic 3D surface model and Gemini&#x27;s deep reasoning (gemini-2.5-flash natively and via @google/adk), it processes a patient&#x27;s multimodal symptom data to instantly produce synthesized, actionable clinical strategies."
+    },
+    {
+      "title": "GitHub - philgear/pocketgull: An Integrative Health App to Assist ...",
+      "url": "https://github.com/philgear/pocketgull/",
+      "snippet": "By synthesizing multimodal inputs (3D spatial data, voice dictation, and biometric telemetry) into a singular, high-integrity strategy, it allows the clinician to maintain perspective without losing sight of the patient."
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    }
+  ]
+}

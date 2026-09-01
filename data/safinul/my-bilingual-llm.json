@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Safinul/my-bilingual-llm",
+  "slug": "safinul-my-bilingual-llm",
+  "author": "Safinul",
+  "url": "https://huggingface.co/Safinul/my-bilingual-llm",
+  "created_at": "2026-09-01T11:05:55.000Z",
+  "updated_at": "2026-09-01T11:09:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "decoder-only causal language model",
+    "bilingual",
+    "bangla",
+    "english",
+    "language-model",
+    "transformer",
+    "causal-lm",
+    "bn",
+    "en",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170259684,
+  "storage_human": "170 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multilingual AI Model Benchmark - Compare Leading LLMs by Language ...",
+      "url": "https://artificialanalysis.ai/models/multilingual",
+      "snippet": "Explore how leading large language models (LLMs) perform across multiple languages on Artificial Analysis&#x27; Multilingual Index, including the Global-MMLU-Lite benchmark. Filter by language and model, view trade-offs between accuracy, speed, and cost, and find the best LLM for your multilingual use case. For details on datasets and methodology, see the FAQ page."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "My LLM Model — Learn AI & LLMs",
+      "url": "https://myllmmodel.com/llm",
+      "snippet": "My LLM Model — A comprehensive educational platform covering Large Language Models, AI Agents, Transformers, and building AI from scratch. Founded by Rahul Luthra."
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    },
+    {
+      "title": "LLM Selector (September 2026): Find the Right AI Model",
+      "url": "https://benchlm.ai/tools/llm-selector",
+      "snippet": "Answer 6 quick questions and get a personalized LLM recommendation based on benchmark data. Find the best AI model for coding, writing, analysis, or general use."
+    }
+  ]
+}

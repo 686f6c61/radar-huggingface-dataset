@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.6-Fallen-Fabulist-35B-A3B-heretic-GGUF",
+  "slug": "mradermacher-qwen3-6-fallen-fabulist-35b-a3b-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.6-Fallen-Fabulist-35B-A3B-heretic-GGUF",
+  "created_at": "2026-09-01T07:24:20.000Z",
+  "updated_at": "2026-09-01T10:53:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "roleplay",
+    "storytelling",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "base_model:Cyclone-Labs/Qwen3.6-Fallen-Fabulist-35B-A3B-heretic",
+    "base_model:quantized:Cyclone-Labs/Qwen3.6-Fallen-Fabulist-35B-A3B-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 244419008544,
+  "storage_human": "244.4 GB",
+  "base_model": "Cyclone-Labs/Qwen3.6-Fallen-Fabulist-35B-A3B-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.6-35B-A3B-heretic-v2-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-heretic-v2-i1-GGUF",
+      "snippet": "mradermacher / Qwen3.6-35B-A3B-heretic-v2-i1-GGUF like 0 Transformers GGUF English heretic uncensored decensored abliterated imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Qwen3.6-35B-A3B-Fable-5-Distill-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Fable-5-Distill-i1-GGUF",
+      "snippet": "mradermacher / Qwen3.6-35B-A3B-Fable-5-Distill-i1-GGUF like 1 Transformers GGUF 4 datasets English text-generation-inference unsloth qwen3_5_moe imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.6-35B-A3B · Models",
+      "url": "https://www.modelscope.ai/models/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "ModelScope——A one-stop service that brings together the most advanced machine learning models from various fields, offering model exploration experience, inference, training, deployment, and application."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-heretic NVFP4 + DFlash on DGX Spark",
+      "url": "https://github.com/AEON-7/Qwen3.6-35B-A3B-heretic-NVFP4-DFlash",
+      "snippet": "A production-stable deployment of AEON-7/Qwen3.6-35B-A3B-heretic-NVFP4 with DFlash speculative decoding on NVIDIA DGX Spark (GB10 / sm_121a). ⚠️ READ THE REQUIREMENTS SECTION FIRST. This image and its weights are tuned specifically for the DGX Spark (GB10 / sm_120-121 Blackwell). It will NOT work on Hopper, Ampere, B200, or other Blackwell variants without rebuilding."
+    },
+    {
+      "title": "Qwen3.6 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.6",
+      "snippet": "Qwen3.6 prioritizes stability and real-world utility, offering developers a more intuitive, responsive, and genuinely productive coding experience. This model family includes a dense 27B model, and 35B (3B active) MoE versions."
+    }
+  ]
+}

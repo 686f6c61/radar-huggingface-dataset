@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "chenyumo/moziAI-35B-A3B-MOE-MTP",
+  "slug": "chenyumo-moziai-35b-a3b-moe-mtp",
+  "author": "chenyumo",
+  "url": "https://huggingface.co/chenyumo/moziAI-35B-A3B-MOE-MTP",
+  "created_at": "2026-08-10T19:42:08.000Z",
+  "updated_at": "2026-09-01T11:16:19.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llama-cpp",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "llama-cpp",
+    "gguf",
+    "qwen3_5_moe",
+    "MoE",
+    "financial-llm",
+    "MoziSmartBit",
+    "qwen3.5",
+    "qwen3.6",
+    "ornith",
+    "MoziAI",
+    "tool-calling",
+    "uncensored",
+    "vision",
+    "MTP",
+    "text-generation",
+    "en",
+    "zh",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 5,
+  "downloads_30d": 9759,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 47788858073,
+  "storage_human": "47.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - junxian66/chenyumo",
+      "url": "https://github.com/junxian66/chenyumo",
+      "snippet": "MoziAI-35B-A3B-MOE is a local open-source financial AI multimodal LLM (supports vision and tool calling) developed by Chinese finance influencer Chen Yumo&#x27;s team. moziAI-35B is built on the open-source base model Ornith-1.5-35B-A3B (Qwen3.5-35B-A3B / Qwen3.6-35B-A3B architecture, MIT licensed), incorporating the Chen Yumo team&#x27;s self-developed: (financial data + financial domain capabilities ..."
+    },
+    {
+      "title": "chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "V3.7&#92;README.en.md · chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored at main",
+      "url": "https://huggingface.co/chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored/blob/main/V3.7%5CREADME.en.md",
+      "snippet": "MoziAI-35B-A3B-MOE is a local open-source financial AI multimodal LLM (supports vision and tool calling) developed by Chinese finance influencer Chen Yumo&#x27;s team, fine-tuned/distilled from the Ornith-1.5-35B-A3B (Qwen3.5-35B-A3B / Qwen3.6-35B-A3B architecture, MIT licensed) foundation model."
+    },
+    {
+      "title": "moziAI-35B-A3B-MOE-MTP-Uncensored/README.en.md at main - GitHub",
+      "url": "https://github.com/chenyumo166/moziAI-35B-A3B-MOE-MTP-Uncensored/blob/main/README.en.md",
+      "snippet": "MoziAI-35B-A3B-MOE is a local open-source multimodal AI large language model developed by Chinese finance influencer Chen Yumo&#x27;s team (focuses on financial domain, supports vision, tool calling, complex long tasks, consumer GPU local deployment)."
+    },
+    {
+      "title": "moziAI-35B-A3B-MOE-MTP-Uncensored · Models",
+      "url": "https://www.modelscope.cn/models/chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored",
+      "snippet": "MoziAI-35B-A3B-MOE 是由中国财经大V陈雨墨团队开发的本地开源多模态AI大模型（强化金融领域、支持视觉、工具调用 ..."
+    }
+  ]
+}

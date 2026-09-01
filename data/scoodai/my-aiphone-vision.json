@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SCOODai/my-aiphone-vision",
+  "slug": "scoodai-my-aiphone-vision",
+  "author": "SCOODai",
+  "url": "https://huggingface.co/SCOODai/my-aiphone-vision",
+  "created_at": "2026-08-27T21:40:45.000Z",
+  "updated_at": "2026-09-01T10:57:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "vision",
+    "arabic",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:quantized:google/gemma-3-4b-it",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 64,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 13300720544,
+  "storage_human": "13.3 GB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SCOODai/my-aiphone-vision · Hugging Face",
+      "url": "https://huggingface.co/SCOODai/my-aiphone-vision",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Video Generator & Image Generator by Photo AI",
+      "url": "https://photoai.com/",
+      "snippet": "Generate photorealistic images and videos of people with AI. Take stunning photos of people with the first AI Photographer! Generate photo and video content for your social media with AI. Save time and money and do an AI photo shoot from your laptop or phone instead of hiring an expensive photographer. Take photos featuring yourself as an AI model. Every AI model you create gets FREE photos ..."
+    },
+    {
+      "title": "GitHub - cheng-yi-cc/AIphone-: An Open Phone Agent Model & Framework ...",
+      "url": "https://github.com/cheng-yi-cc/AIphone-",
+      "snippet": "An Open Phone Agent Model & Framework. Unlocking the AI Phone for Everyone - cheng-yi-cc/AIphone-"
+    },
+    {
+      "title": "GitHub - nizwar/aiphone-agent: Take full control of your Android ...",
+      "url": "https://github.com/nizwar/aiphone-agent",
+      "snippet": "Author: Mochamad Nizwar Syafuan Important: The built-in AI automation feature is designed exclusively for Open-AutoGLM models. If you want to use a different AI agent or model provider, consider using aiphone-mcp instead — an MCP-based alternative that works with any compatible agent framework."
+    },
+    {
+      "title": "How to Run Vision AI Locally on Your iPhone in 2026 (Completely Offline ...",
+      "url": "https://dev.to/alichherawalla/how-to-run-vision-ai-locally-on-your-iphone-in-2026-completely-offline-no-account-2c3f",
+      "snippet": "The Neural Engine in your iPhone runs 35 trillion operations per second. Apple uses it for photo processing. You can use it to run vision AI models that analyze images, read documents, and answer questions about anything your camera sees — without uploading a single photo to any server. Off Grid is a free, open-source app that runs vision AI entirely on your iPhone. No internet connection ..."
+    }
+  ]
+}

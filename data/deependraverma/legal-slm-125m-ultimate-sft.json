@@ -51,8 +51,8 @@
   ],
   "is_conversational": false,
   "gated": true,
-  "removed": false,
-  "removed_at": null,
+  "removed": true,
+  "removed_at": "2026-09-01T06:17:50.505Z",
   "benchmarks": [
     {
       "task": "HellaSwag (0-shot)",

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Raskoll/qwen3-0.6b-engram",
+  "slug": "raskoll-qwen3-0-6b-engram",
+  "author": "Raskoll",
+  "url": "https://huggingface.co/Raskoll/qwen3-0.6b-engram",
+  "created_at": "2026-09-01T09:24:34.000Z",
+  "updated_at": "2026-09-01T10:01:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "engram_qwen",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:Salesforce/wikitext",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1537541120,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3086542986,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-0.6B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_0_6b",
+      "snippet": "Qwen3-0.6B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑0.6B is a state‑of‑the‑art multilingual language model with 0.6 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen3-embedding-0.6b",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B)."
+    },
+    {
+      "title": "Qwen/Qwen3-Embedding-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    }
+  ]
+}

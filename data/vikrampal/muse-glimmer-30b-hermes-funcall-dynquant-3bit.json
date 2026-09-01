@@ -5,7 +5,7 @@
   "author": "VikramPal",
   "url": "https://huggingface.co/VikramPal/Muse-Glimmer-30B-hermes-funcall-DynQuant-3bit",
   "created_at": "2026-08-27T03:54:27.000Z",
-  "updated_at": "2026-08-30T22:18:11.000Z",
+  "updated_at": "2026-09-01T01:22:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 38,
+  "downloads_30d": 55,
   "trending_score": 0,
   "parameters": 3025266688,
   "parameters_human": "3.03B",

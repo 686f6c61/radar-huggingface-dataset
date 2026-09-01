@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "levossadtchi/emergent-interlingua",
+  "slug": "levossadtchi-emergent-interlingua",
+  "author": "levossadtchi",
+  "url": "https://huggingface.co/levossadtchi/emergent-interlingua",
+  "created_at": "2026-09-01T09:57:36.000Z",
+  "updated_at": "2026-09-01T09:57:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "es",
+    "pt",
+    "fr",
+    "ru",
+    "tr",
+    "vi",
+    "ar",
+    "he",
+    "ja",
+    "ko",
+    "zh"
+  ],
+  "tags": [
+    "emergent-communication",
+    "interlingua",
+    "discrete-bottleneck",
+    "multilingual",
+    "research",
+    "en",
+    "es",
+    "pt",
+    "fr",
+    "ru",
+    "tr",
+    "vi",
+    "ar",
+    "he",
+    "ja",
+    "ko",
+    "zh",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 390341154,
+  "storage_human": "390 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "levossadtchi (Lev Ossadtchi) - Hugging Face",
+      "url": "https://huggingface.co/levossadtchi",
+      "snippet": "AI & ML interests ... Recent Activity published a model 14 minutes ago ... updated a model about 6 hours ago"
+    },
+    {
+      "title": "levossadtchi (Lev Ossadtchi) - Hugging Face",
+      "url": "https://huggingface.co/levossadtchi/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 3 hours ago ... published a model about 3 hours ago"
+    },
+    {
+      "title": "levossadtchi (Lev Ossadtchi) - Hugging Face",
+      "url": "https://huggingface.co/levossadtchi/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 9 hours ago ... published a model about 10 hours ago"
+    },
+    {
+      "title": "Lev Ossadtchi - Portfolio",
+      "url": "https://levossadtchi.ru/",
+      "snippet": "Hi, I&#x27;m Lev Ossadtchi Physics Student • ML Engineer • Quantum Computing Researcher A second-year student at MSU Faculty of Physics, passionate about the intersection of fundamental physics, quantum computing, and artificial intelligence."
+    },
+    {
+      "title": "levossadtchi/QED-75M · Hugging Face",
+      "url": "https://huggingface.co/levossadtchi/QED-75M",
+      "snippet": "QED-75M is a compact decoder-only causal language model implemented for Hugging Face using a custom transformers module. The model architecture combines RoPE (rotary position embeddings), RMSNorm, SwiGLU feed-forward blocks, and causal self-attention implemented via torch.nn.functional.scaled_dot_product_attention."
+    }
+  ]
+}

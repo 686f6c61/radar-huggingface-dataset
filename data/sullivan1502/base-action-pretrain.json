@@ -5,7 +5,7 @@
   "author": "sullivan1502",
   "url": "https://huggingface.co/sullivan1502/base-action-pretrain",
   "created_at": "2026-08-24T01:33:18.000Z",
-  "updated_at": "2026-08-31T03:19:30.000Z",
+  "updated_at": "2026-09-01T04:07:16.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 11233,
+  "downloads_30d": 12402,
   "trending_score": 0,
   "parameters": 81841152,
   "parameters_human": "81.8M",
-  "storage_bytes": 40270960257,
-  "storage_human": "40.3 GB",
+  "storage_bytes": 45182052337,
+  "storage_human": "45.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

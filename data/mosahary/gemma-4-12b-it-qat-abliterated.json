@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mosahary/gemma-4-12b-it-qat-abliterated",
+  "slug": "mosahary-gemma-4-12b-it-qat-abliterated",
+  "author": "mosahary",
+  "url": "https://huggingface.co/mosahary/gemma-4-12b-it-qat-abliterated",
+  "created_at": "2026-09-01T09:57:22.000Z",
+  "updated_at": "2026-09-01T10:01:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "trl",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-4-12B-it-qat-q4_0-unquantized",
+    "base_model:finetune:unsloth/gemma-4-12B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730176,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23953270010,
+  "storage_human": "24.0 GB",
+  "base_model": "unsloth/gemma-4-12B-it-qat-q4_0-unquantized",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-gemma-4-12B-it-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-gemma-4-12B-it-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OBLITERATUS/Gemma-4-12B-OBLITERATED · Hugging Face",
+      "url": "https://huggingface.co/OBLITERATUS/Gemma-4-12B-OBLITERATED",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 Abliteration - GitHub",
+      "url": "https://github.com/TrevorS/gemma-4-abliteration",
+      "snippet": "Unified model (12B): Same dense biprojection on the text decoder. gemma-4-12B-it is the encoder-free Gemma4Unified arch (added 2026-06-03); its refusal signal sits in the upper layers (L15-47), so only the top 70% are abliterated."
+    },
+    {
+      "title": "Google Gemma 4 Technical Deep Dive: Architecture, MoE, Benchmarks ...",
+      "url": "https://www.qubrid.com/blog/google-gemma-4-technical-deep-dive-architecture-moe-benchmarks-production-guide",
+      "snippet": "Breaking down all four model variants - E2B, E4B, 26B MoE, and 31B Dense - from architecture internals to deployment strategies for production agentic systems."
+    },
+    {
+      "title": "Gemma 4 12B OBLITERATED by OBLITERATUS - LLM Explorer",
+      "url": "https://llm-explorer.com/model/OBLITERATUS%2FGemma-4-12B-OBLITERATED,548k2jTBG4U5eBV3HFITak",
+      "snippet": "Rank the Gemma 4 12B OBLITERATED capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "ajrayman",
   "url": "https://huggingface.co/ajrayman/Artistic_Interests_binary",
   "created_at": "2024-10-03T07:21:29.000Z",
-  "updated_at": "2026-08-30T15:53:02.000Z",
+  "updated_at": "2026-08-31T08:40:38.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 5,
+  "downloads_30d": 50,
   "trending_score": 0,
   "parameters": 124647170,
   "parameters_human": "124.6M",
-  "storage_bytes": 8179074290,
-  "storage_human": "8.2 GB",
+  "storage_bytes": 10173530369,
+  "storage_human": "10.2 GB",
   "base_model": "roberta-base",
   "formats": [
     "safetensors"

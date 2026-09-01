@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/OvisOCR2-LiteRT",
+  "slug": "mlboydaisuke-ovisocr2-litert",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/OvisOCR2-LiteRT",
+  "created_at": "2026-09-01T09:38:24.000Z",
+  "updated_at": "2026-09-01T09:42:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "litertlm",
+    "on-device",
+    "edge",
+    "ocr",
+    "document-parsing",
+    "markdown",
+    "tables",
+    "formulas",
+    "vlm",
+    "hybrid",
+    "gated-deltanet",
+    "qwen3_5",
+    "image-text-to-text",
+    "base_model:ATH-MaaS/OvisOCR2",
+    "base_model:finetune:ATH-MaaS/OvisOCR2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1302262448,
+  "storage_human": "1.3 GB",
+  "base_model": "ATH-MaaS/OvisOCR2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/Dia2-1B-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/Dia2-1B-LiteRT",
+      "snippet": "Dia2-1B (Nari Labs, Apache-2.0) — a two-speaker dialogue text-to-speech model — re-authored to run on-device with LiteRT CompiledModel. Verified on a Pixel 8a (Tensor G3). Dia2 is a Moshi-style RQ-Transformer."
+    },
+    {
+      "title": "mlboydaisuke/Mordant-3B-Think-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/Mordant-3B-Think-LiteRT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ATH-MaaS/Ovis: A novel Multimodal Large Language Model (MLLM ...",
+      "url": "https://github.com/ATH-MaaS/Ovis",
+      "snippet": "A novel Multimodal Large Language Model (MLLM) architecture, designed to structurally align visual and textual embeddings. - ATH-MaaS/Ovis"
+    },
+    {
+      "title": "GitHub - google-ai-edge/LiteRT: LiteRT, successor to TensorFlow Lite ...",
+      "url": "https://github.com/google-ai-edge/litert",
+      "snippet": "LiteRT, successor to TensorFlow Lite. is Google&#x27;s On-device framework for high-performance ML & GenAI deployment on edge platforms, via efficient conversion, runtime, and optimization - google-ai-edge/LiteRT"
+    },
+    {
+      "title": "[2607.13639v1] OvisOCR2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2607.13639v1",
+      "snippet": "We introduce OvisOCR2, a 0.8B document parsing model. OvisOCR2 is designed as an end-to-end parser: given a document page image, it generates a Markdown representation in natural reading order, covering text, formulas, tables, and visual regions. We build a data engine that combines filtered real-document annotations with synthetic pages whose rendered images and Markdown targets are derived ..."
+    }
+  ]
+}

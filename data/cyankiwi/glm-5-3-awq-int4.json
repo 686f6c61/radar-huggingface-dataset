@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "cyankiwi/GLM-5.3-AWQ-INT4",
+  "slug": "cyankiwi-glm-5-3-awq-int4",
+  "author": "cyankiwi",
+  "url": "https://huggingface.co/cyankiwi/GLM-5.3-AWQ-INT4",
+  "created_at": "2026-09-01T07:53:43.000Z",
+  "updated_at": "2026-09-01T08:02:09.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 151734927286,
+  "parameters_human": "151.73B",
+  "storage_bytes": 488218251064,
+  "storage_human": "488.2 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cyankiwi/GLM-5.3-Flash-AWQ-INT4 · Hugging Face",
+      "url": "https://huggingface.co/cyankiwi/GLM-5.3-Flash-AWQ-INT4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cyankiwi (cyankiwi) - Hugging Face",
+      "url": "https://huggingface.co/cyankiwi",
+      "snippet": "Make open-source AI accessible cpatonn published a model about 21 hours ago"
+    },
+    {
+      "title": "cyankiwi · Open models, optimized for production",
+      "url": "https://cyan.kiwi/",
+      "snippet": "The Inference optimization layer for LLMs Open models, optimized for production. The same intelligence, calibrated to run efficiently. Higher throughput, more concurrency, less compute."
+    },
+    {
+      "title": "Models · cyankiwi",
+      "url": "https://cyan.kiwi/models",
+      "snippet": "Google Optimized by cyankiwi INT4 10 GB 931k INT8 12 GB 24k GLM-5.2 Base model Text-to-Text Zhipu Optimized by cyankiwi INT4 417 GB 512k"
+    },
+    {
+      "title": "GLM-5.3-Flash-AWQ-INT4 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/cyankiwi/GLM-5.3-Flash-AWQ-INT4",
+      "snippet": "Introduction We introduce GLM-5.3-Flash, the first natively multimodal model in the GLM-5 series. With 320B total parameters and just 18B active parameters, it outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks."
+    }
+  ]
+}

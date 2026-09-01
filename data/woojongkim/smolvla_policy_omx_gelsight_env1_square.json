@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "WoojongKim/smolvla_policy_omx_gelsight_env1_square",
+  "slug": "woojongkim-smolvla_policy_omx_gelsight_env1_square",
+  "author": "WoojongKim",
+  "url": "https://huggingface.co/WoojongKim/smolvla_policy_omx_gelsight_env1_square",
+  "created_at": "2026-09-01T09:15:50.000Z",
+  "updated_at": "2026-09-01T09:16:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:WoojongKim/omx_gelsight_env1_square",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906721128,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WoojongKim/smolvla_policy_omx_gelsight_env1_multitask_horizontal ...",
+      "url": "https://huggingface.co/WoojongKim/smolvla_policy_omx_gelsight_env1_multitask_horizontal_vertical_line",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    },
+    {
+      "title": "eval_smolvla_policy_omx_gelsight_env1_multitask_horizontal_vertical ...",
+      "url": "https://huggingface.co/datasets/WoojongKim/eval_smolvla_policy_omx_gelsight_env1_multitask_horizontal_vertical_line_nogel_20260820_192704",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient ...",
+      "url": "https://arxiv.org/abs/2506.01844",
+      "snippet": "Vision-language models (VLMs) pretrained on large-scale multimodal datasets encode rich visual and linguistic knowledge, making them a strong foundation for robotics. Rather than training robotic policies from scratch, recent approaches adapt VLMs into vision-language-action (VLA) models that enable natural language-driven perception and control. However, existing VLAs are typically massive ..."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "oMLX — LLM inference, optimized for your Mac",
+      "url": "https://omlx.ai/",
+      "snippet": "Native macOS inference server built on MLX. Paged SSD KV caching, continuous batching, and drop-in API for Claude Code, OpenClaw, and Cursor."
+    }
+  ]
+}

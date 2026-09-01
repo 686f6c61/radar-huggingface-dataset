@@ -5,7 +5,7 @@
   "author": "SalvadorDiaz",
   "url": "https://huggingface.co/SalvadorDiaz/bert-finetuned-ner",
   "created_at": "2024-05-29T15:32:45.000Z",
-  "updated_at": "2026-08-31T22:01:49.000Z",
+  "updated_at": "2026-09-01T00:17:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 107735829,
   "parameters_human": "107.7M",
-  "storage_bytes": 20687083098,
-  "storage_human": "20.7 GB",
+  "storage_bytes": 10789125762,
+  "storage_human": "10.8 GB",
   "base_model": "bert-base-cased",
   "formats": [
     "safetensors"

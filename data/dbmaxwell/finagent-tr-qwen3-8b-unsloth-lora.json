@@ -5,10 +5,10 @@
   "author": "Dbmaxwell",
   "url": "https://huggingface.co/Dbmaxwell/finagent-tr-qwen3-8b-unsloth-lora",
   "created_at": "2026-07-17T23:50:34.000Z",
-  "updated_at": "2026-08-31T20:07:37.000Z",
+  "updated_at": "2026-08-31T20:54:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": "text-generation",
+  "pipeline_tag": "question-answering",
   "library": "peft",
   "languages": [
     "tr"
@@ -23,8 +23,7 @@
     "turkish",
     "finance",
     "tool-calling",
-    "text-generation",
-    "conversational",
+    "question-answering",
     "tr",
     "dataset:Dbmaxwell/finagent-tr",
     "license:apache-2.0",
@@ -41,7 +40,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

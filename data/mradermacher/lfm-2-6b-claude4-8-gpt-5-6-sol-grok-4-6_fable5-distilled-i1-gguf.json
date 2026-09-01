@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM-2.6B-Claude4.8-GPT-5.6-Sol-Grok-4.6_Fable5-Distilled-i1-GGUF",
+  "slug": "mradermacher-lfm-2-6b-claude4-8-gpt-5-6-sol-grok-4-6_fable5-distilled-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM-2.6B-Claude4.8-GPT-5.6-Sol-Grok-4.6_Fable5-Distilled-i1-GGUF",
+  "created_at": "2026-09-01T08:03:36.000Z",
+  "updated_at": "2026-09-01T08:20:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "distilled",
+    "synthetic-data",
+    "reasoning",
+    "coding",
+    "cybersecurity",
+    "math",
+    "unsloth",
+    "lfm2",
+    "en",
+    "base_model:OpenIntelligenceNet/LFM-2.6B-Claude4.8-GPT-5.6-Sol-Grok-4.6_Fable5-Distilled",
+    "base_model:quantized:OpenIntelligenceNet/LFM-2.6B-Claude4.8-GPT-5.6-Sol-Grok-4.6_Fable5-Distilled",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 601254,
+  "parameters_human": "601254",
+  "storage_bytes": 2430848,
+  "storage_human": "2 MB",
+  "base_model": "OpenIntelligenceNet/LFM-2.6B-Claude4.8-GPT-5.6-Sol-Grok-4.6_Fable5-Distilled",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2-2.6B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-2.6B",
+      "snippet": "A newer version of this model is available: LiquidAI/LFM2.5-2.6B"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Liquid Foundation Models | Liquid AI",
+      "url": "https://www.liquid.ai/models",
+      "snippet": "Explore Liquid Foundation Models (LFMs): efficient text, vision, audio, and nano models built for on-device, edge, and cloud AI deployment."
+    },
+    {
+      "title": "LFM2.5-2.6B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-2.6b",
+      "snippet": "2.6B dense model trained for agentic workloads, with a 128K context window and native tool calling for on-device agents ← Back to Text Models LFM2.5-2.6B is Liquid AI&#x27;s 2.6B dense model built for agentic workloads with a 128K context window and native tool calling."
+    },
+    {
+      "title": "LFM2.5-2.6B: Deploy Agents Everywhere | Blog | Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-2-6b",
+      "snippet": "LFM2.5-2.6B is an on-device agentic model that plans, calls tools, and runs multi-step tasks at 220 tok/s in under 2.5 GB. Open weights on Hugging Face."
+    }
+  ]
+}

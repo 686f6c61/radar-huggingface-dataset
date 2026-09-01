@@ -5,7 +5,7 @@
   "author": "huchukato",
   "url": "https://huggingface.co/huchukato/favs",
   "created_at": "2025-02-03T03:23:56.000Z",
-  "updated_at": "2026-08-31T20:57:45.000Z",
+  "updated_at": "2026-09-01T02:37:03.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 325736498249,
-  "storage_human": "325.7 GB",
+  "storage_bytes": 326256121221,
+  "storage_human": "326.3 GB",
   "base_model": null,
   "formats": [
     "onnx"

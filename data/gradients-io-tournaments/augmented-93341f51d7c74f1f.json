@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-93341f51d7c74f1f",
+  "slug": "gradients-io-tournaments-augmented-93341f51d7c74f1f",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-93341f51d7c74f1f",
+  "created_at": "2026-09-01T02:21:56.000Z",
+  "updated_at": "2026-09-01T02:23:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694044,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gradients-io-tournaments/augmented-93341f51d7c74f1f · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-93341f51d7c74f1f",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gradients-io-tournaments/augmented-837b4aa002c741fa · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-837b4aa002c741fa",
+      "snippet": "gradients-io-tournaments / augmented-837b4aa002c741fa like 0 Text Generation Transformers Safetensors llama text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Gradients | Decentralised AI Training & Research",
+      "url": "https://www.gradients.io/app/research/tournament",
+      "snippet": "Decentralised AI Training & Research. > TOURNAMENTS View live, recent, and historical tournaments from Subnet 56"
+    },
+    {
+      "title": "tournament-tourn_add1dc83b8fd58b0_20260831-94848094-5837-4c4a-9976 ...",
+      "url": "https://friendli.ai/models/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-94848094-5837-4c4a-9976-cf1b2c61547b-5HLA2QWY",
+      "snippet": "Deploy tournament-tourn_add1dc83b8fd58b0_20260831-94848094-5837-4c4a-9976-cf1b2c61547b-5HLA2QWY with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "AI Finds A Way - arXiv.org",
+      "url": "https://arxiv.org/html/2608.23875v1",
+      "snippet": "The paper first details instances of AI achieving superhuman success through reinforcement learning across many challenging domains. However, we show how reward-driven optimization can fail when the model learns to hack an underspecified reward or unarticulated constraint."
+    }
+  ]
+}

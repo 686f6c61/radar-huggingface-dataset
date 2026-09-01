@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "yourdesktopcompanion/lumi-voxcpm2-runtime",
+  "slug": "yourdesktopcompanion-lumi-voxcpm2-runtime",
+  "author": "yourdesktopcompanion",
+  "url": "https://huggingface.co/yourdesktopcompanion/lumi-voxcpm2-runtime",
+  "created_at": "2026-09-01T08:31:20.000Z",
+  "updated_at": "2026-09-01T08:33:43.000Z",
+  "license": "mixed-third-party-open-source-licenses",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 558415510,
+  "storage_human": "558 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yourdesktopcompanion/lumi-chatterbox-runtime · Hugging Face",
+      "url": "https://huggingface.co/yourdesktopcompanion/lumi-chatterbox-runtime",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yourdesktopcompanion/lumi-chatterbox-runtime at main",
+      "url": "https://huggingface.co/yourdesktopcompanion/lumi-chatterbox-runtime/tree/main",
+      "snippet": "yourdesktopcompanion / lumi-chatterbox-runtime like 0 License:mixed-third-party-open-source-licenses Model card FilesFiles and versions xet Community Copy to bucket new main lumi-chatterbox-runtime 3.17 GB Ctrl+K Ctrl+K 1 contributor History:2 commits yourdesktopcompanion Publish verified Lumi Chatterbox Windows runtime 755a157 verified2 days ago .gitattributes Safe 1.52 kBinitial commit2 days ..."
+    },
+    {
+      "title": "Desktop Companion - AI That Sees Your Screen & Never Forgets",
+      "url": "https://desktopaicompanion.com/",
+      "snippet": "First Anime AI companion that&#x27;s 100% voice, always visible on desktop, and can see your screen. Intelligent memory creates real relationships unlike Character.AI or Replika."
+    },
+    {
+      "title": "VoxCPM2 - Advanced AI Voice Generation & Cloning",
+      "url": "https://voxcpm2.org/",
+      "snippet": "VoxCPM2 is an AI voice generation tool with three modes: Voice Design, Controllable Cloning, and Ultimate Cloning. Try the live demo free."
+    },
+    {
+      "title": "VoxCPM 2.0 documentation",
+      "url": "https://voxcpm.readthedocs.io/",
+      "snippet": "VoxCPM documentation ¶ A realistic voice synthesis toolkit that brings authentic, expressive voices to your applications — powered by continuous-space diffusion autoregressive modeling."
+    }
+  ]
+}

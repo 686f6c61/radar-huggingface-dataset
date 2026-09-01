@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "meta-llama/Llama-2-7b-hf",
+  "slug": "meta-llama-llama-2-7b-hf",
+  "author": "meta-llama",
+  "url": "https://huggingface.co/meta-llama/Llama-2-7b-hf",
+  "created_at": "2023-07-13T16:16:13.000Z",
+  "updated_at": "2024-04-17T08:40:16.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "facebook",
+    "meta",
+    "llama-2",
+    "en",
+    "arxiv:2307.09288",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "region:us"
+  ],
+  "likes": 2380,
+  "downloads_30d": 812430,
+  "trending_score": 7,
+  "parameters": 6738417664,
+  "parameters_human": "6.74B",
+  "storage_bytes": 53909360564,
+  "storage_human": "53.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meta-llama/Llama-2-7b-hf · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-2-7b-hf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama-2-7b-hf: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/llama-2-7b-hf-meta-llama",
+      "snippet": "Overview Llama-2-7b-hf is a 7 billion parameter pretrained language model from meta-llama converted to Hugging Face Transformers format. Built as an auto-regressive transformer, the model was trained on 2 trillion tokens of publicly available data with a 4,096 token context window, completing pretraining between January and July 2023. The architecture uses an optimized transformer design with ..."
+    },
+    {
+      "title": "GitHub - meta-llama/llama: Inference code for Llama models",
+      "url": "https://github.com/meta-llama/llama",
+      "snippet": "This release includes model weights and starting code for pre-trained and fine-tuned Llama language models — ranging from 7B to 70B parameters. This repository is intended as a minimal example to load Llama 2 models and run inference. For more detailed examples leveraging Hugging Face, see llama-cookbook."
+    },
+    {
+      "title": "meta-llama (Meta Llama) - Hugging Face",
+      "url": "https://huggingface.co/meta-llama",
+      "snippet": "Org profile for Meta Llama on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Llama-2-7b-hf: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/llama-2-7b-hf-nousresearch",
+      "snippet": "Llama-2-7b-hf is a 7 billion parameter pretrained language model developed by Meta and converted for the Hugging Face Transformers library. It is an..."
+    }
+  ]
+}

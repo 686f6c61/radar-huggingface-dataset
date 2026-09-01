@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mhmsadegh/rectom-causal-reasoning-crossencoder-bce",
+  "slug": "mhmsadegh-rectom-causal-reasoning-crossencoder-bce",
+  "author": "mhmsadegh",
+  "url": "https://huggingface.co/mhmsadegh/rectom-causal-reasoning-crossencoder-bce",
+  "created_at": "2026-09-01T09:01:12.000Z",
+  "updated_at": "2026-09-01T09:01:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "cross-encoder",
+    "reasoning",
+    "theory-of-mind",
+    "rectom",
+    "base_model:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "base_model:finetune:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713601,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90866412,
+  "storage_human": "91 MB",
+  "base_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mhmsadegh/rectom-causal-reasoning-retriever-pilot · Hugging Face",
+      "url": "https://huggingface.co/mhmsadegh/rectom-causal-reasoning-retriever-pilot",
+      "snippet": "Instructions to use mhmsadegh/rectom-causal-reasoning-retriever-pilot with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - CGCL-codes/RecToM: Official dataset, evaluation scripts, and ...",
+      "url": "https://github.com/CGCL-codes/RecToM",
+      "snippet": "RecToM is a benchmark designed to rigorously evaluate the Theory of Mind (ToM) capabilities of Large Language Models (LLMs) within recommendation dialogues. LLMs must infer users&#x27; Beliefs, Desires, and Intents during multi-turn interactions—skills essential for building context-aware and effective recommender systems."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=Cause-Effect",
+      "snippet": "mhmsadegh/Llama-3.1-8B-Instruct-bnb-4bit-1-sfand-cause-effect-model Updated Feb 20"
+    },
+    {
+      "title": "Social-AI-Group/paper/ToM+Data-AAAI-2026-RecToM- A Benchmark for ...",
+      "url": "https://github.com/lucianma05-create/Social-AI-Group/blob/main/paper/ToM+Data-AAAI-2026-RecToM-%20A%20Benchmark%20for%20Evaluating%20Machine%20Theory%20of%20Mind%20in%20LLM-based%20Conversational%20Recommender%20Systems.md",
+      "snippet": "ToM+Data-AAAI-2026-RecToM- A Benchmark for Evaluating Machine Theory of Mind in LLM-based Conversational Recommender Systems.md Cannot retrieve latest commit at this time."
+    },
+    {
+      "title": "[2511.22275] RecToM: A Benchmark for Evaluating Machine Theory of Mind ...",
+      "url": "https://arxiv.org/abs/2511.22275",
+      "snippet": "To better align LLM-based ToM evaluation with human-like social reasoning, we propose RecToM, a novel benchmark for evaluating ToM abilities in recommendation dialogues. RecToM focuses on two complementary dimensions: Cognitive Inference and Behavioral Prediction."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Mia-AiLab/Qwen3.8-27B-EXL3-3.5bpw",
+  "slug": "mia-ailab-qwen3-8-27b-exl3-3-5bpw",
+  "author": "Mia-AiLab",
+  "url": "https://huggingface.co/Mia-AiLab/Qwen3.8-27B-EXL3-3.5bpw",
+  "created_at": "2026-08-24T18:03:02.000Z",
+  "updated_at": "2026-08-25T23:07:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5",
+    "exl3",
+    "quantization",
+    "long-context",
+    "speculative-decoding",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 248,
+  "trending_score": 9,
+  "parameters": 7669052656,
+  "parameters_human": "7.67B",
+  "storage_bytes": 15351217781,
+  "storage_human": "15.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B · EXL3 · DFlash2 - GitHub",
+      "url": "https://github.com/MiaAI-Lab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw",
+      "snippet": "by Mia&#x27;a AI Lab Deployment kit for serving Qwen3.8-27B quantized to EXL3 3.5bpw with speculative decoding — MTP by default (draft head inside the checkpoint, best context per GB) or DFlash2 (EXL3 5.0bpw draft model, ~15% faster) — plus an NVFP4 KV cache lane for maximum context per GB. This repo contains the launcher, server and configuration."
+    },
+    {
+      "title": "Mia-AiLab/Qwen3.8-27B-EXL3-3.5bpw · Hugging Face",
+      "url": "https://huggingface.co/Mia-AiLab/Qwen3.8-27B-EXL3-3.5bpw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mia-AiLab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw · Hugging Face",
+      "url": "https://huggingface.co/Mia-AiLab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw",
+      "snippet": "Mia-AiLab / Qwen3.8-27B-DFlash2-EXL3-5.0bpw like 1 Text Generation Safetensors exllamav3 qwen3 exl3 draft-model speculative-decoding dflash2 block-diffusion 5-bit License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Qwen3.8-27B-DFlash2 · EXL3 · 5.0bpw Quantization details Measured impact (with the 3.5bpw EXL3 ..."
+    },
+    {
+      "title": "Qwen3.8-27B-DFlash2-EXL3-5.0bpw/model-cards/Qwen3.8-27B-EXL3-3.5bpw.md ...",
+      "url": "https://github.com/MiaAI-Lab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw/blob/main/model-cards/Qwen3.8-27B-EXL3-3.5bpw.md",
+      "snippet": "A companion EXL3 quant of the DFlash2 block-diffusion draft model exists: Mia-AiLab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw (~+15% tokens/s vs MTP, at the cost of 1.4 GB of draft weights and its KV cache)."
+    },
+    {
+      "title": "Qwen 3.8 27B - GroqDocs",
+      "url": "https://console.groq.com/docs/model/qwen/qwen3.8-27b",
+      "snippet": "Model card for Qwen3.8-27B: a compact 27B multimodal (vision + text) model with thinking and instruct modes, frontier-level agentic coding, long-horizon tool use, and near-instant responses on Groq."
+    }
+  ]
+}

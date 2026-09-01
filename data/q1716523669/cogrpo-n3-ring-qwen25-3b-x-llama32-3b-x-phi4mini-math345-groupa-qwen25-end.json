@@ -5,7 +5,7 @@
   "author": "q1716523669",
   "url": "https://huggingface.co/q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupA-qwen25-end",
   "created_at": "2026-08-25T19:16:00.000Z",
-  "updated_at": "2026-08-25T19:16:56.000Z",
+  "updated_at": "2026-08-31T22:15:11.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 94,
+  "downloads_30d": 95,
   "trending_score": 0,
   "parameters": 241664,
   "parameters_human": "241664",

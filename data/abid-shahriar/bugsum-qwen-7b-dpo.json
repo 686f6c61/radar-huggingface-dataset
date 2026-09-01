@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Abid-Shahriar/BugSum-Qwen-7B-DPO",
+  "slug": "abid-shahriar-bugsum-qwen-7b-dpo",
+  "author": "Abid-Shahriar",
+  "url": "https://huggingface.co/Abid-Shahriar/BugSum-Qwen-7B-DPO",
+  "created_at": "2026-09-01T08:56:47.000Z",
+  "updated_at": "2026-09-01T08:59:27.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "summarization",
+    "software-engineering",
+    "bug-report-summarization",
+    "dpo",
+    "preference-optimization",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92213988,
+  "storage_human": "92 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - hanpenggit/Qwen-7B: The official repo of Qwen-7B (通义千问-7B ...",
+      "url": "https://github.com/hanpenggit/Qwen-7B",
+      "snippet": "Qwen-7B is a Transformer-based large language model, which is pretrained on a large volume of data, including web texts, books, codes, etc. Additionally, based on the pretrained Qwen-7B, we release Qwen-7B-Chat, a large-model-based AI assistant, which is trained with alignment techniques. The features of the Qwen-7B series include:"
+    },
+    {
+      "title": "[2407.12220] Questionable practices in machine learning",
+      "url": "https://ar5iv.labs.arxiv.org/html/2407.12220",
+      "snippet": "Evaluating modern ML models is hard. The strong incentive for researchers and companies to report a state-of-the-art result on some metric often leads to questionable research practices (QRPs): bad practices which fall…"
+    },
+    {
+      "title": "GitHub - arquehi/Qwen-7B: The official repo of Qwen-7B (通义千问-7B) chat ...",
+      "url": "https://github.com/arquehi/Qwen-7B",
+      "snippet": "Qwen-7B is a Transformer-based large language model, which is pretrained on a large volume of data, including web texts, books, codes, etc. Additionally, based on the pretrained Qwen-7B, we release Qwen-7B-Chat, a large-model-based AI assistant, which is trained with alignment techniques. The features of the Qwen-7B series include:"
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "InfiX-ai/InfiAlign-Qwen-7B-DPO · Hugging Face",
+      "url": "https://huggingface.co/InfiX-ai/InfiAlign-Qwen-7B-DPO",
+      "snippet": "🤖 Model Card: InfiX-ai/InfiAlign-Qwen-7B-DPO InfiAlign is a scalable and data-efficient post-training framework that combines supervised fine-tuning (SFT) and Direct Preference Optimization (DPO) with a high-quality data selection pipeline to enhance reasoning in large language models. At the core of InfiAlign is a robust data selection pipeline that automatically curates high-quality ..."
+    }
+  ]
+}

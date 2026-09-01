@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "aiyoi/json-semval-minilm-v1",
+  "slug": "aiyoi-json-semval-minilm-v1",
+  "author": "aiyoi",
+  "url": "https://huggingface.co/aiyoi/json-semval-minilm-v1",
+  "created_at": "2026-09-01T08:08:29.000Z",
+  "updated_at": "2026-09-01T08:08:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "json",
+    "validation",
+    "semantic-errors",
+    "auto-fixing",
+    "en",
+    "dataset:thearnabsarkar/json-semval-synth-v1",
+    "base_model:nreimers/MiniLM-L6-H384-uncased",
+    "base_model:quantized:nreimers/MiniLM-L6-H384-uncased",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22716296,
+  "parameters_human": "22.7M",
+  "storage_bytes": 181883872,
+  "storage_human": "182 MB",
+  "base_model": "nreimers/MiniLM-L6-H384-uncased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thearnabsarkar/json-semval-minilm-v1 · Hugging Face",
+      "url": "https://huggingface.co/thearnabsarkar/json-semval-minilm-v1",
+      "snippet": "JSON Semantic Validator - MiniLM v1 Hybrid rule+ML model that detects semantic JSON issues and suggests minimal fixes. Model Description This model is fine-tuned from nreimers/MiniLM-L6-H384-uncased to classify semantic errors in JSON payloads and predict appropriate fix actions. It works in conjunction with a deterministic rules engine (JSON Schema validation) to provide a hybrid validation ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=semantic-errors",
+      "snippet": "Explore machine learning models. Active filters: semantic-errors thearnabsarkar/json-semval-minilm-v1"
+    },
+    {
+      "title": "Hybrid JSON Validator — Rules + ML for Smarter DataOps - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/json-semantic-validator-arnab-sarkar-aopec",
+      "snippet": "That led me to create JSON Semantic Validator — a hybrid system that combines traditional code-based rules with a small language model to validate and auto-fix JSON intelligently."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Kimi API Platform",
+      "url": "https://platform.kimi.ai/",
+      "snippet": "Kimi API Platform, providing the 2.8-trillion-parameter Kimi K3 large language model API with a 1M-token context window and Tool Calling. Professional code generation, intelligent dialogue, and visual reasoning to help developers build AI applications."
+    }
+  ]
+}

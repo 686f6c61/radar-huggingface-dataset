@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "specklabs/Speck2-140M-GGUF",
+  "slug": "specklabs-speck2-140m-gguf",
+  "author": "specklabs",
+  "url": "https://huggingface.co/specklabs/Speck2-140M-GGUF",
+  "created_at": "2026-09-01T08:01:20.000Z",
+  "updated_at": "2026-09-01T08:07:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "text-generation",
+    "base_model:specklabs/Speck2-140M",
+    "base_model:quantized:specklabs/Speck2-140M",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 180160768,
+  "parameters_human": "180.2M",
+  "storage_bytes": 796700288,
+  "storage_human": "797 MB",
+  "base_model": "specklabs/Speck2-140M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "specklabs/Speck1-140M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/specklabs/Speck1-140M-GGUF",
+      "snippet": "The GGUF graph stores 180,160,768 parameters because the source&#x27;s tied 640-wide embedding and two adapters become separate 768-wide input and output matrices. This compatibility transform does not add layers or model capacity."
+    },
+    {
+      "title": "specklabs/Speck1-140M-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/specklabs/Speck1-140M-GGUF/tree/main",
+      "snippet": "Instructions to use specklabs/Speck1-140M-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use specklabs/Speck1-140M-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Speck1 140M by specklabs — VRAM 0.3GB, 4K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/specklabs%2FSpeck1-140M,4HOVWxyJNScJ5QeHL3zk0u",
+      "snippet": "Speck1 140M is an open-source 140m LLM by specklabs. VRAM 0.3GB, 4K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "GitHub - local-ai-zone/local-ai-zone.github.io: Kimi K3, deepseek v4 ...",
+      "url": "https://github.com/local-ai-zone/local-ai-zone.github.io",
+      "snippet": "A professional web application for discovering and browsing GGUF (GPT-Generated Unified Format) machine learning models. Browse thousands of quantized AI models with detailed metadata, engagement metrics, and direct download links. Want to see a complete agent built entirely on local, open-weight ..."
+    }
+  ]
+}

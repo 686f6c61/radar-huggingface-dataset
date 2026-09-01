@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "promotion/Llama-3.1-8B-TLDR-UniformINPO",
+  "slug": "promotion-llama-3-1-8b-tldr-uniforminpo",
+  "author": "promotion",
+  "url": "https://huggingface.co/promotion/Llama-3.1-8B-TLDR-UniformINPO",
+  "created_at": "2026-09-01T02:36:02.000Z",
+  "updated_at": "2026-09-01T02:40:57.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "alignment",
+    "multi-objective",
+    "preference-optimization",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138288576,
+  "storage_human": "32.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "promotion/Llama-3.1-8B-TLDR-UniformINPO · Hugging Face",
+      "url": "https://huggingface.co/promotion/Llama-3.1-8B-TLDR-UniformINPO",
+      "snippet": "Llama-3.1-8B-TLDR-UniformINPO Uniform-INPO on the TL;DR panel. Trained from meta-llama/Llama-3.1-8B-Instruct, which is also the reference policy and the initialisation. Objectives are scored by a prompted Qwen3-32B preference oracle, each pair queried in both presentation orders and swap-averaged. Within a panel every arm shares one response pool, one optimizer and a 300-step budget, and ..."
+    },
+    {
+      "title": "promotion/Llama-3.1-8B-UniformINPO-baseline · Hugging Face",
+      "url": "https://huggingface.co/promotion/Llama-3.1-8B-UniformINPO-baseline",
+      "snippet": "Llama-3.1-8B-UniformINPO-baseline Uniform-INPO baseline: iterative Nash policy optimization against a single preference obtained by weighting the four objectives equally, which is the natural scalarisation control for a bargaining rule. Trained from meta-llama/Llama-3.1-8B-Instruct, which is also the reference policy (&#92;mu) and the initialisation (&#92;pi_0). Four objectives are scored on ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    }
+  ]
+}

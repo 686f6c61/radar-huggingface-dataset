@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Tohirju/sl-cypress1",
+  "slug": "tohirju-sl-cypress1",
+  "author": "Tohirju",
+  "url": "https://huggingface.co/Tohirju/sl-cypress1",
+  "created_at": "2026-09-01T09:54:59.000Z",
+  "updated_at": "2026-09-01T09:55:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-Omni-30B-A3B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-Omni-30B-A3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 276903344,
+  "storage_human": "277 MB",
+  "base_model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tohirju (Tohir Saidzoda) - Hugging Face",
+      "url": "https://huggingface.co/Tohirju",
+      "snippet": "AI & ML interests ... Recent Activity published a dataset 3 days ago ... updated a model 13 days ago ... published a model 13 days ago"
+    },
+    {
+      "title": "Tohirju (Tohir Saidzoda) - Hugging Face",
+      "url": "https://huggingface.co/Tohirju/models",
+      "snippet": "Tohirju&#x27;s models 8 Sort: Recently updated Tohirju/Asad_Gemma3_27B_e0.3 Text Generation • Updated 20 days ago• 4"
+    },
+    {
+      "title": "Cypress AI",
+      "url": "https://www.cypress.io/ai",
+      "snippet": "Cypress AI is the set of AI capabilities built into the tools you already use (the Cypress App and Cypress Cloud), rather than a separate product to adopt. In the Cypress App, cy.prompt turns a plain-language description into real Cypress commands, and Studio AI suggests selectors and assertions while you record."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    }
+  ]
+}

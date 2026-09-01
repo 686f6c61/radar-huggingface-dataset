@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "JoaoZaokk/Beyond-Reality-Z-Image-v2-W4A4-ConvRot",
+  "slug": "joaozaokk-beyond-reality-z-image-v2-w4a4-convrot",
+  "author": "JoaoZaokk",
+  "url": "https://huggingface.co/JoaoZaokk/Beyond-Reality-Z-Image-v2-W4A4-ConvRot",
+  "created_at": "2026-09-01T09:47:10.000Z",
+  "updated_at": "2026-09-01T09:49:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusion-single-file",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "text-to-image",
+    "quantized",
+    "int4",
+    "int8",
+    "convrot",
+    "w4a4",
+    "en",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:quantized:Tongyi-MAI/Z-Image-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6710265612,
+  "storage_human": "6.7 GB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nurburgring/BEYOND_REALITY_Z_IMAGE · Hugging Face",
+      "url": "https://huggingface.co/Nurburgring/BEYOND_REALITY_Z_IMAGE",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BEYOND_REALITY_Z_IMAGE · Models",
+      "url": "https://www.modelscope.cn/models/Nurburgring/BEYOND_REALITY_Z_IMAGE/summary",
+      "snippet": "欢迎加入我们Z image数据生产团队! Model Overview (English) BEYOND REALITY Z IMAGE 1.0 is a checkpoint model fine-tuned from the community Z IMAGE model, merging LoRA weights to preserve the signature high-clarity, high-aesthetic quality of the BEYOND REALITY series. We believe: Beauty cannot be defined, only felt."
+    },
+    {
+      "title": "BEYOND_REALITY_Z_IMAGE: Image-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/beyond-reality-z-image-nurburgring",
+      "snippet": "Overview BEYOND_REALITY_Z_IMAGE (version 3.0) is a portrait-focused text-to-image diffusion model created by Nurburgring that generates high-fidelity human faces and character photography with film photography aesthetics. Built on the community Z IMAGE architecture with merged LoRA weights, this checkpoint model prioritizes high-frequency texture detail—skin pores, fabric weaves ..."
+    },
+    {
+      "title": "linoyts/beyond-reality-z-image-diffusers · Hugging Face",
+      "url": "https://huggingface.co/linoyts/beyond-reality-z-image-diffusers",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Z-Image - Free AI Image Generator | Lightning Fast",
+      "url": "https://z-image.me/en",
+      "snippet": "Leveraging the z-image open-source model to achieve the fastest free AI image generation."
+    }
+  ]
+}

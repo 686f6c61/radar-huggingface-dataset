@@ -5,7 +5,7 @@
   "author": "thomasavare",
   "url": "https://huggingface.co/thomasavare/Qwen3-Embedding-4B-211",
   "created_at": "2026-06-01T09:39:57.000Z",
-  "updated_at": "2026-08-31T20:13:26.000Z",
+  "updated_at": "2026-08-31T21:33:05.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 710777,
   "parameters_human": "710777",
-  "storage_bytes": 15249183,
-  "storage_human": "15 MB",
+  "storage_bytes": 18376496,
+  "storage_human": "18 MB",
   "base_model": null,
   "formats": [
     "safetensors"

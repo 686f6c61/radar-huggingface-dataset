@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "WhaleSea00/kaggle_smoke_cls",
+  "slug": "whalesea00-kaggle_smoke_cls",
+  "author": "WhaleSea00",
+  "url": "https://huggingface.co/WhaleSea00/kaggle_smoke_cls",
+  "created_at": "2026-09-01T06:02:17.000Z",
+  "updated_at": "2026-09-01T08:48:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "resnet34-lora",
+    "image-classification",
+    "resnet",
+    "lora",
+    "computer-vision",
+    "smoking-detection",
+    "dataset:sujaykapadnis/smoking",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 174774614,
+  "storage_human": "175 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fire detection (YOLOv8) - Kaggle",
+      "url": "https://www.kaggle.com/code/mohamedalaaabdella/fire-detection-yolov8",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from multiple data sources"
+    },
+    {
+      "title": "Smoke Detection Using Machine Learning ️ - Kaggle",
+      "url": "https://www.kaggle.com/code/dhavalrupapara/smoke-detection-using-machine-learning",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from Smoke Detection Dataset"
+    },
+    {
+      "title": "SafeCart-AI/training/kaggle/smoke at main - GitHub",
+      "url": "https://github.com/SafeCart-Compfest/SafeCart-AI/tree/main/training/kaggle/smoke",
+      "snippet": "OCR, product retrieval, model training, calibration, and inference for SafeCart - SafeCart-Compfest/SafeCart-AI"
+    },
+    {
+      "title": "Fire & Smoke Detection using YOLOv11 - GitHub",
+      "url": "https://github.com/abdulrahmanhamdi/Fire-Smoke-Detection-using-YOLOv11",
+      "snippet": "A real-time fire and smoke detection system powered by the cutting-edge YOLOv11 architecture. This project delivers high-speed, high-accuracy detection capabilities suited for industrial safety, smart buildings, and forest surveillance."
+    },
+    {
+      "title": "kittendev/YOLOv8m-smoke-detection · Hugging Face",
+      "url": "https://huggingface.co/kittendev/YOLOv8m-smoke-detection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

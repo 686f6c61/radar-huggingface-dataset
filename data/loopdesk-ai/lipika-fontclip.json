@@ -5,7 +5,7 @@
   "author": "loopdesk-ai",
   "url": "https://huggingface.co/loopdesk-ai/lipika-fontclip",
   "created_at": "2026-08-26T07:10:45.000Z",
-  "updated_at": "2026-08-26T08:37:59.000Z",
+  "updated_at": "2026-08-31T14:30:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -44,8 +44,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 8672324,
-  "storage_human": "9 MB",
+  "storage_bytes": 14849655,
+  "storage_human": "15 MB",
   "base_model": "openai/clip-vit-large-patch14",
   "formats": [
     "safetensors"

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "philgear/pocketgull-tern-edge",
+  "slug": "philgear-pocketgull-tern-edge",
+  "author": "philgear",
+  "url": "https://huggingface.co/philgear/pocketgull-tern-edge",
+  "created_at": "2026-09-01T02:20:45.000Z",
+  "updated_at": "2026-09-01T02:29:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "gemma-2",
+    "lora",
+    "clinical-nlp",
+    "healthcare",
+    "hipaa-safe-harbor",
+    "open-science",
+    "pocketgull",
+    "nih-medquad",
+    "who-mhgap",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-2-2b-it",
+    "base_model:adapter:google/gemma-2-2b-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-2-2b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "philgear - Hugging Face",
+      "url": "https://huggingface.co/philgear/philgear",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PocketGull WebGPU Zero-Egress Clinical AI - Hugging Face",
+      "url": "https://huggingface.co/spaces/philgear/pocketgull-webgpu-edge",
+      "snippet": "PocketGull WebGPU Sovereign AI 100% In-Browser Execution • Zero Network Egress • HIPAA §164.514 Air-Gap Proof ⚡ WebGPU Hardware Active Clinical Query Input Edge Invariant: 0 Cloud Calls Patient Presentation / Inquiry Reasoning Model Compute Backend"
+    },
+    {
+      "title": "GitHub - philgear/pocketgull: An Integrative Health App to Assist ...",
+      "url": "https://github.com/philgear/pocketgull/",
+      "snippet": "Pocket Gull&#x27;s brand identity, structured logo, and custom marketing QR code (pointing to pocketgull.app) are showcased in our final paper-folded origami diorama social card."
+    },
+    {
+      "title": "GitHub - philgear/pocketgull: An Integrative Health App to Assist ...",
+      "url": "https://github.com/philgear/pocketgull/tree/main",
+      "snippet": "Building this platform taught me the profound importance of balancing bleeding-edge AI orchestration—like implementing @google/adk &#x27;s InMemoryRunner to stabilize clinical generations—with the strict UX demands of a modern progressive web application."
+    },
+    {
+      "title": "Pocket Gull | Real-Time Clinical AI & FHIR Care Strategy",
+      "url": "https://pocketgull.app/",
+      "snippet": "Pocket Gull is a real-time medical care plan strategy and live AI consult engine powered by Google Gemini. Features 10D diagnostic paradigms, FHIR R4 interoperability, and 3D spatial anatomy."
+    }
+  ]
+}

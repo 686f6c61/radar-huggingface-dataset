@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "narendraseelam/warden-moderator",
+  "slug": "narendraseelam-warden-moderator",
+  "author": "narendraseelam",
+  "url": "https://huggingface.co/narendraseelam/warden-moderator",
+  "created_at": "2026-08-31T06:38:50.000Z",
+  "updated_at": "2026-09-01T11:05:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72656382,
+  "storage_human": "73 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Leaderboard [2026-08] — Live Rankings | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/leaderboards",
+      "snippet": "Live AI model rankings across ARC-AGI-2, HLE, SWE-bench Verified, and more with category views for coding, math, and agent tasks."
+    },
+    {
+      "title": "[2605.08321] LLM Wardens: Mitigating Adversarial Persuasion with Third ...",
+      "url": "https://arxiv.org/abs/2605.08321",
+      "snippet": "LLMs are increasingly capable of persuasion, which raises the question of how to protect users against manipulation. In a preregistered user study (N=120) across four decision-making scenarios, we find that an adversarial LLM with a hidden goal succeeds in steering users&#x27; decisions 65.4% of the time. We then introduce a \"warden\" model: a secondary LLM that monitors the human-AI interaction ..."
+    },
+    {
+      "title": "Warden AI: Assure Fair, Compliant & Transparent HR Technology",
+      "url": "https://www.warden-ai.com/",
+      "snippet": "Warden AI empowers HR teams to ensure fair, compliant, and transparent AI hiring. Discover trusted audits, bias detection, and legal-grade assurance today."
+    },
+    {
+      "title": "GitHub - phunanon/Warden: A simple Discord bot using AI to provide dead ...",
+      "url": "https://github.com/phunanon/Warden",
+      "snippet": "A simple Discord bot using AI to provide dead-man server moderation. The goal is to keep a server clean even in the event of all moderators being absent."
+    },
+    {
+      "title": "Guarding Against AI Persuasion: Meet the &#x27;Warden&#x27; Model",
+      "url": "https://www.machinebrief.com/news/guarding-against-ai-persuasion-meet-the-warden-model-mopy",
+      "snippet": "Discover how the &#x27;warden&#x27; AI model reduces manipulation by adversarial language models, protecting user decisions. What it means for AI safety."
+    }
+  ]
+}

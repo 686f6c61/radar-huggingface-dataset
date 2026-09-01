@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "isldgist/mimicgen-panda-ur5e-4task-balanced-sharednorm",
+  "slug": "isldgist-mimicgen-panda-ur5e-4task-balanced-sharednorm",
+  "author": "isldgist",
+  "url": "https://huggingface.co/isldgist/mimicgen-panda-ur5e-4task-balanced-sharednorm",
+  "created_at": "2026-09-01T08:34:39.000Z",
+  "updated_at": "2026-09-01T09:03:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "jax",
+  "languages": [],
+  "tags": [
+    "jax",
+    "robotics",
+    "imitation-learning",
+    "mimicgen",
+    "pi0",
+    "openpi",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 157317229254,
+  "storage_human": "157.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - NVlabs/mimicgen: This code corresponds to simulation ...",
+      "url": "https://github.com/NVlabs/mimicgen",
+      "snippet": "MimicGen This repository contains the official release of data generation code, simulation environments, and datasets for the CoRL 2023 paper \"MimicGen: A Data Generation System for Scalable Robot Learning using Human Demonstrations\"."
+    },
+    {
+      "title": "GitHub Pages - MimicGen",
+      "url": "https://mimicgen.github.io/",
+      "snippet": "MimicGen produces large-scale datasets with minimal human effort We used MimicGen to autonomously generate over 50,000 demonstrations from less than 200 human demonstrations across 18 tasks, multiple simulators, and the real-world."
+    },
+    {
+      "title": "GitHub - UWRobotLearning/mimicgen_environments: This code corresponds ...",
+      "url": "https://github.com/UWRobotLearning/mimicgen_environments",
+      "snippet": "This repository contains the official release of simulation environments and datasets for the CoRL 2023 paper \"MimicGen: A Data Generation System for Scalable Robot Learning using Human Demonstrations\"."
+    },
+    {
+      "title": "Installation — mimicgen 1.0 documentation - GitHub Pages",
+      "url": "https://mimicgen.github.io/docs/introduction/installation.html",
+      "snippet": "Warning This MuJoCo version (2.3.2) can be important - in our testing, we found that other versions of MuJoCo could be problematic, especially for the Sawyer arm datasets (e.g. 2.3.5 causes problems with rendering and 2.3.7 changes the dynamics of the robot arm significantly from the collected datasets). More modern versions of MuJoCo (e.g. 3.0 +) might be fine."
+    },
+    {
+      "title": "Datasets | NVlabs/mimicgen | DeepWiki",
+      "url": "https://deepwiki.com/NVlabs/mimicgen/4-datasets",
+      "snippet": "Datasets Relevant source files Overview This page provides comprehensive information about MimicGen datasets, which form a critical component of the MimicGen system. These datasets contain robot manipulation demonstrations that can be used to train imitation learning policies. MimicGen datasets are particularly noteworthy because they are generated synthetically from a small number of human ..."
+    }
+  ]
+}

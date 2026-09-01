@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "AMAImedia/Qwen3.8-27B-Qwenseek-CyberLite-NOESIS-BF16",
+  "slug": "amaimedia-qwen3-8-27b-qwenseek-cyberlite-noesis-bf16",
+  "author": "AMAImedia",
+  "url": "https://huggingface.co/AMAImedia/Qwen3.8-27B-Qwenseek-CyberLite-NOESIS-BF16",
+  "created_at": "2026-09-01T06:31:27.000Z",
+  "updated_at": "2026-09-01T10:19:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ru",
+    "zh",
+    "ja",
+    "kk",
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "noesis",
+    "noesis-repack",
+    "bf16",
+    "mtp",
+    "qwen3_6",
+    "qwen3_8",
+    "text-generation",
+    "conversational",
+    "en",
+    "ru",
+    "zh",
+    "ja",
+    "kk",
+    "vi",
+    "base_model:trjxter/Qwenseek-3.8-27B-CyberLite-BF16",
+    "base_model:finetune:trjxter/Qwenseek-3.8-27B-CyberLite-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 57355498364,
+  "storage_human": "57.4 GB",
+  "base_model": "trjxter/Qwenseek-3.8-27B-CyberLite-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Qwenseek-CyberLite-NOESIS-BF16 - Hugging Face",
+      "url": "https://huggingface.co/AMAImedia/Qwen3.8-27B-Qwenseek-CyberLite-NOESIS-BF16",
+      "snippet": "CyberLite is the first-stage release in the Qwenseek cyber-specialization track. The goal of this stage was not to turn Qwen3.8-27B into a narrow security-only model. Instead, the SFT was designed to strengthen defensive cybersecurity reasoning, retain useful controlled red-team reasoning, and preserve the base model&#x27;s strong coding, technical reasoning, and structured tool-use behavior."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/qwen/models/qwen3.8-27b/-/file-browser",
+      "snippet": "Qwen3.8-27B is a 27-billion-parameter dense vision-language model for text, image, and video understanding, coding, multimodal reasoning, long-context processing, tool calling, and agentic tasks."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "The official Qwen/Qwen3.8-27B-FP8 checkpoint serves directly on a 950PR — no offline re-quantization and no --quantization ascend. vLLM Ascend reads quant_method: fp8 and weight_block_size straight from the checkpoint, expands the weight_scale_inv tiles at load time and re-quantizes to MXFP8 on 950."
+    },
+    {
+      "title": "Qwen3.8 27B: Benchmarks, Specs, and How to Run It (2026)",
+      "url": "https://unifically.com/blogs/qwen-3.8-27b",
+      "snippet": "Qwen3.8 27B is the compact model in Alibaba&#x27;s Qwen3.8 open-weight generation, published on Hugging Face on August 14, 2026 under Apache 2.0. It is a 27-billion-parameter dense model that reads images and video natively, holds 262K tokens of context, and, on Qwen&#x27;s own launch table, beats Claude Opus 4.6 Max on SWE-bench Pro."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nrburns/pi05_Pot_1_and_2_Red_3_full_side_short_2026-08-31",
+  "slug": "nrburns-pi05_pot_1_and_2_red_3_full_side_short_2026-08-31",
+  "author": "nrburns",
+  "url": "https://huggingface.co/nrburns/pi05_Pot_1_and_2_Red_3_full_side_short_2026-08-31",
+  "created_at": "2026-09-01T11:12:46.000Z",
+  "updated_at": "2026-09-01T11:13:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:nrburns/Pot_1_and_2_Red-3_full_side-short",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9388473616,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nrburns/pi05_Pot_1_and_2_Red_3_full_side_short · Hugging Face",
+      "url": "https://huggingface.co/nrburns/pi05_Pot_1_and_2_Red_3_full_side_short",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nrburns/pi05_Pot_1_and_2_Red_3_full_side_long · Discussions",
+      "url": "https://huggingface.co/nrburns/pi05_Pot_1_and_2_Red_3_full_side_long/discussions",
+      "snippet": "Instructions to use nrburns/pi05_Pot_1_and_2_Red_3_full_side_long with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "2short.ai - AI YouTube Shorts generator",
+      "url": "https://2short.ai/",
+      "snippet": "2short.ai thrives with videos that contain spoken words, as our AI uses this to understand and extract the most engaging parts. This makes it perfect for a variety of video types including podcasts, educational videos, commentary videos, product reviews, motivational speeches, and more."
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "This overwrites several files in the transformers library with necessary model changes: 1) supporting AdaRMS, 2) correctly controlling the precision of activations, and 3) allowing the KV cache to be used without being updated."
+    },
+    {
+      "title": "ReelShort: Every Second Is Drama",
+      "url": "https://www.reelshort.com/",
+      "snippet": "Dive into ReelShort, your must-watch online theater for HD short dramas and vertical stories. From werewolf and billionaire romances to mafia tales and campus love, we&#x27;ve got your quick fix for movies and TV series."
+    }
+  ]
+}

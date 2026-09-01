@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JoSTR/act_ram",
+  "slug": "jostr-act_ram",
+  "author": "JoSTR",
+  "url": "https://huggingface.co/JoSTR/act_ram",
+  "created_at": "2026-09-01T10:10:16.000Z",
+  "updated_at": "2026-09-01T10:10:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:JoSTR/rm_ram_20260831_145557",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51689104,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206800728,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 407 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "LLM Hardware Requirements Calculator (2026) | ModelFit",
+      "url": "https://modelfit.io/calculator/",
+      "snippet": "Free local LLM calculator: enter your RAM or GPU VRAM and see which AI models you can run. 16GB fits ~14B, 32GB ~35B, 64GB+ up to ~70B."
+    },
+    {
+      "title": "Triple-Stage AI Attack Chain Hits PyTorch | StartupHub.ai",
+      "url": "https://www.startuphub.ai/cybersecurity/triple-stage-ai-attack-chain-hits-pytorch",
+      "snippet": "From the article 6 mentions Two independent researchers demoed a triple-stage AI attack chain at Black Hat Asia 2026 that turns a PyTorch model file into remote code execution even with weights_only set to True."
+    },
+    {
+      "title": "JSTOR Home",
+      "url": "https://www.jstor.org/",
+      "snippet": "JSTOR is a digital library of academic journals, books, and primary sources."
+    }
+  ]
+}

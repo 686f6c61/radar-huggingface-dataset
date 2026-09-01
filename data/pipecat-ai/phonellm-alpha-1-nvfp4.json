@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "pipecat-ai/phonellm-alpha-1-nvfp4",
+  "slug": "pipecat-ai-phonellm-alpha-1-nvfp4",
+  "author": "pipecat-ai",
+  "url": "https://huggingface.co/pipecat-ai/phonellm-alpha-1-nvfp4",
+  "created_at": "2026-08-30T19:06:26.000Z",
+  "updated_at": "2026-08-30T19:14:13.000Z",
+  "license": "bsd-2-clause",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "nemotron",
+    "mixture-of-experts",
+    "voice-agent",
+    "phone",
+    "tool-use",
+    "function-calling",
+    "conversational",
+    "pipecat",
+    "custom_code",
+    "nvfp4",
+    "modelopt",
+    "en",
+    "base_model:pipecat-ai/phonellm-alpha-1",
+    "base_model:quantized:pipecat-ai/phonellm-alpha-1",
+    "license:bsd-2-clause",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 348,
+  "trending_score": 8,
+  "parameters": 16332034368,
+  "parameters_human": "16.33B",
+  "storage_bytes": 19360657570,
+  "storage_human": "19.4 GB",
+  "base_model": "pipecat-ai/phonellm-alpha-1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pipecat-ai/phonellm-alpha-1 · Hugging Face",
+      "url": "https://huggingface.co/pipecat-ai/phonellm-alpha-1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pipecat-ai/phonellm-alpha-1-nvfp4 · Hugging Face",
+      "url": "https://huggingface.co/pipecat-ai/phonellm-alpha-1-nvfp4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pipecat-examples/phonellm at main · pipecat-ai/pipecat-examples - GitHub",
+      "url": "https://github.com/pipecat-ai/pipecat-examples/tree/main/phonellm",
+      "snippet": "A JSON response listing pipecat-ai/phonellm-alpha-1 means the endpoint is healthy. Note: Endpoints scale to zero when idle. The first request after creation (or after a quiet period) returns 503 while the model spins up — this can take several minutes for a 30B model, and the container logs (modal app logs) may go quiet during kernel compilation."
+    },
+    {
+      "title": "Phonellm Alpha 1 by pipecat-ai - LLM Explorer",
+      "url": "https://llm-explorer.com/model/pipecat-ai%2Fphonellm-alpha-1,5pezStBz2O4J8azSvNPm6l",
+      "snippet": "Phonellm Alpha 1 is an open-source 30b LLM by pipecat-ai. VRAM 63.2GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Announcing Pipecat PhoneLLM Alpha 1 - daily.co",
+      "url": "https://www.daily.co/blog/announcing-pipecat-phonellm-alpha-1/",
+      "snippet": "The Pipecat team is pleased to announce the release of PhoneLLM Alpha 1, an open-weights model for voice agent use cases. This release is the result of our ongoing work training small, open-weights LLMs for low-latency and multi-turn agentic workloads."
+    }
+  ]
+}

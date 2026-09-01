@@ -5,7 +5,7 @@
   "author": "LiquidAI",
   "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B",
   "created_at": "2026-08-11T22:54:10.000Z",
-  "updated_at": "2026-08-13T23:59:06.000Z",
+  "updated_at": "2026-08-31T22:24:22.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -45,7 +45,7 @@
     "region:us"
   ],
   "likes": 196,
-  "downloads_30d": 22311,
+  "downloads_30d": 22816,
   "trending_score": 8,
   "parameters": 3123483888,
   "parameters_human": "3.12B",

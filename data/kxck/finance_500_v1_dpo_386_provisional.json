@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Kxck/Finance_500_v1_DPO_386_provisional",
+  "slug": "kxck-finance_500_v1_dpo_386_provisional",
+  "author": "Kxck",
+  "url": "https://huggingface.co/Kxck/Finance_500_v1_DPO_386_provisional",
+  "created_at": "2026-09-01T09:30:37.000Z",
+  "updated_at": "2026-09-01T09:30:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "dpo",
+    "lora",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 247561299,
+  "storage_human": "248 MB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kxck/Finance_500_v1 · Hugging Face",
+      "url": "https://huggingface.co/Kxck/Finance_500_v1",
+      "snippet": "Kxck / Finance_500_v1 like 0 Text Generation PEFT Safetensors Transformers lora sft trl unsloth conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Kxck (Khang) - Hugging Face",
+      "url": "https://huggingface.co/Kxck/datasets",
+      "snippet": "Kxck&#x27;s datasets4 Sort: Recently updated Kxck/27_data_xltc_testing Viewer •Updated Jun 15•27• 13"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "Perplexity AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+      "snippet": "Perplexity AI, Inc., or simply Perplexity, is an American privately held software company offering a web search engine that processes user queries and synthesizes responses. [4]"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "inferre",
   "url": "https://huggingface.co/inferre/auryn-v1-gguf",
   "created_at": "2026-05-23T20:47:13.000Z",
-  "updated_at": "2026-08-23T17:42:43.000Z",
+  "updated_at": "2026-08-31T18:34:03.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 1720574976,
   "parameters_human": "1.72B",
-  "storage_bytes": 16068654144,
-  "storage_human": "16.1 GB",
+  "storage_bytes": 17176063328,
+  "storage_human": "17.2 GB",
   "base_model": null,
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "loom-ai-org",
   "url": "https://huggingface.co/loom-ai-org/granite-speech-4.0-1b-loom",
   "created_at": "2026-08-11T11:51:33.000Z",
-  "updated_at": "2026-08-20T15:23:29.000Z",
+  "updated_at": "2026-08-31T16:43:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -38,8 +38,8 @@
   "trending_score": 0,
   "parameters": 2187801595,
   "parameters_human": "2.19B",
-  "storage_bytes": 26264513632,
-  "storage_human": "26.3 GB",
+  "storage_bytes": 35019738592,
+  "storage_human": "35.0 GB",
   "base_model": "ibm-granite/granite-4.0-1b-speech",
   "formats": [
     "gguf"

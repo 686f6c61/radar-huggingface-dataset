@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Abid-Shahriar/BugSum-Qwen-7B",
+  "slug": "abid-shahriar-bugsum-qwen-7b",
+  "author": "Abid-Shahriar",
+  "url": "https://huggingface.co/Abid-Shahriar/BugSum-Qwen-7B",
+  "created_at": "2026-09-01T08:56:44.000Z",
+  "updated_at": "2026-09-01T08:57:38.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "summarization",
+    "software-engineering",
+    "bug-report-summarization",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92213988,
+  "storage_human": "92 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ArtificialZeng/Qwen-7B: The official repo of Qwen-7B (通义千问-7B ...",
+      "url": "https://github.com/ArtificialZeng/Qwen-7B",
+      "snippet": "The Chinese knowledge and coding ability of Qwen-7B have been further improved. 2023.9.12 We now support finetuning on the Qwen-7B models, including full-parameter finetuning, LoRA and Q-LoRA. 2023.8.21 We release the Int4 quantized model for Qwen-7B-Chat, Qwen-7B-Chat-Int4, which requires low memory costs but achieves improved inference speed."
+    },
+    {
+      "title": "GitHub - tempbottle/Qwen-7B: The official repo of Qwen-7B (通义千问-7B ...",
+      "url": "https://github.com/tempbottle/Qwen-7B",
+      "snippet": "Qwen-7B is a Transformer-based large language model, which is pretrained on a large volume of data, including web texts, books, codes, etc. Additionally, based on the pretrained Qwen-7B, we release Qwen-7B-Chat, a large-model-based AI assistant, which is trained with alignment techniques. The features of the Qwen-7B series include:"
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "‪Abid Shahriar‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=pn7-ce8AAAAJ&hl=en",
+      "snippet": "Abid Shahriar Graduate, EEE, American International University-Bangladesh Verified email at student.aiub.edu Embedded Hardware Robotics: Control Spatial Audio Sustainable Manufacturing"
+    },
+    {
+      "title": "Qwen/Qwen-7B at main - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-7B/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "VINHYU/OpenSpatial-InternVL3-8B",
+  "slug": "vinhyu-openspatial-internvl3-8b",
+  "author": "VINHYU",
+  "url": "https://huggingface.co/VINHYU/OpenSpatial-InternVL3-8B",
+  "created_at": "2026-09-01T10:20:25.000Z",
+  "updated_at": "2026-09-01T10:37:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "internvl_chat",
+    "feature-extraction",
+    "openspatial",
+    "spatial-reasoning",
+    "vision-language",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "arxiv:2604.07296",
+    "base_model:OpenGVLab/InternVL3-8B",
+    "base_model:finetune:OpenGVLab/InternVL3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7944373760,
+  "parameters_human": "7.94B",
+  "storage_bytes": 15888831920,
+  "storage_human": "15.9 GB",
+  "base_model": "OpenGVLab/InternVL3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenGVLab/InternVL3-8B · Hugging Face",
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - VINHYU/OpenSpatial",
+      "url": "https://github.com/VINHYU/OpenSpatial",
+      "snippet": "OpenSpatial is an open-source 3D spatial understanding data engine engineered for high quality, extensive scalability, broad task diversity, and optimized efficiency. By bridging the gap between massive 2D web data and complex 3D spatial reasoning, OpenSpatial provides a comprehensive suite for the next generation of Embodied AI and World Models."
+    },
+    {
+      "title": "OpenSpatial: A Principled Data Engine for Empowering Spatial Intelligence",
+      "url": "https://arxiv.org/html/2604.07296v2",
+      "snippet": "By open-sourcing OpenSpatial, we aim to democratize the creation of high-quality data, serving as a robust cornerstone for the community to advance embodied AI and robotics."
+    },
+    {
+      "title": "GitHub - OpenGVLab/InternVL: [CVPR 2024 Oral] InternVL Family: A ...",
+      "url": "https://github.com/OpenGVLab/InternVL",
+      "snippet": "The resulting model, InternVL2-8B-MPO, achieves an accuracy of 67.0 on MathVista. Please refer to our paper, project page and document for more details. More News 2024/10/21: We release the Mini-InternVL series. These models achieve impressive performance with minimal size: the 4B model achieves 90% of the performance with just 5% of the model ..."
+    },
+    {
+      "title": "OpenGVLab/InternVL3-8B at main - Hugging Face",
+      "url": "https://huggingface.co/OpenGVLab/InternVL3-8B/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

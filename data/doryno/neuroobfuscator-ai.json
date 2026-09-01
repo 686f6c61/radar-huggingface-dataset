@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "doryno/NeuroObfuscator-ai",
+  "slug": "doryno-neuroobfuscator-ai",
+  "author": "doryno",
+  "url": "https://huggingface.co/doryno/NeuroObfuscator-ai",
+  "created_at": "2026-09-01T10:41:07.000Z",
+  "updated_at": "2026-09-01T11:14:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "code"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "javascript",
+    "obfuscation",
+    "llm",
+    "peft",
+    "neuroobfuscator",
+    "text-generation",
+    "en",
+    "dataset:custom",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073632,
+  "storage_human": "4.7 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - DoryNo/edr-ai: Local LLM-powered Windows EDR that monitors ...",
+      "url": "https://github.com/DoryNo/edr-ai",
+      "snippet": "GitHub - DoryNo/edr-ai: Local LLM-powered Windows EDR that monitors Sysmon telemetry and classifies events as BENIGN, SUSPICIOUS, MALICIOUS, or MINER. Includes MITRE ATT&CK mapping, confidence scoring, evidence, recommended actions, Streamlit dashboard, synthetic ChatML dataset pipeline, QLoRA training and frozen holdout evaluation."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "The Ransomware an AI Model Built Without Trying - CyberHoot",
+      "url": "https://cyberhoot.com/blog/the-ransomware-an-ai-model-built-without-trying/",
+      "snippet": "Researchers went looking for a fake photo upscaler and found something stranger: a ransomware kit an AI model helped design without anyone teaching it how. No skilled coder sat down and wrote this attack line by line. Instead, an AI chatbot pieced most of it together from a single broad request, and in the end, part of it worked exactly as intended by whoever asked. This story fits a bigger ..."
+    },
+    {
+      "title": "DoryNo · GitHub",
+      "url": "https://github.com/DoryNo/",
+      "snippet": "Add an optional note Maximum 250 characters. Please don&#x27;t include any personal information such as legal names or email addresses. Markdown is supported. This note will only be visible to you. edr-ai edr-ai Public"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

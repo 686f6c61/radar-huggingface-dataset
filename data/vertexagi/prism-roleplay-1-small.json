@@ -5,7 +5,7 @@
   "author": "VertexAGI",
   "url": "https://huggingface.co/VertexAGI/prism-roleplay-1-small",
   "created_at": "2026-08-18T19:50:43.000Z",
-  "updated_at": "2026-08-18T20:06:54.000Z",
+  "updated_at": "2026-08-31T08:03:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 516,
+  "downloads_30d": 526,
   "trending_score": 0,
   "parameters": 1280062464,
   "parameters_human": "1.28B",

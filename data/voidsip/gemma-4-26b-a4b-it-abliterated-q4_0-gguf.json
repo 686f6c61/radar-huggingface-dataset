@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "voidsip/gemma-4-26B-A4B-it-abliterated-Q4_0-GGUF",
+  "slug": "voidsip-gemma-4-26b-a4b-it-abliterated-q4_0-gguf",
+  "author": "voidsip",
+  "url": "https://huggingface.co/voidsip/gemma-4-26B-A4B-it-abliterated-Q4_0-GGUF",
+  "created_at": "2026-09-01T08:50:53.000Z",
+  "updated_at": "2026-09-01T08:51:06.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "q4_0",
+    "moe",
+    "abliterated",
+    "uncensored",
+    "gemma4",
+    "llama.cpp",
+    "freetoken",
+    "text-generation",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:quantized:google/gemma-4-26B-A4B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 14439361568,
+  "storage_human": "14.4 GB",
+  "base_model": "huihui-ai/Huihui-gemma-4-26B-A4B-it-qat-q4_0-unquantized-abliterated-GGUF, google/gemma-4-26B-A4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-26B-A4B-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "huihui-ai/Huihui-gemma-4-26B-A4B-it-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-gemma-4-26B-A4B-it-abliterated",
+      "snippet": "huihui-ai/Huihui-gemma-4-26B-A4B-abliterated This is an uncensored version of google/gemma-4-26B-A4B-it created with abliteration (see remove-refusals-with-transformers to know more about it). This is a crude, proof-of-concept implementation to remove refusals from an LLM model without using TransformerLens."
+    },
+    {
+      "title": "Gemma 4 26B A4B IT | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it",
+      "snippet": "Explore Gemma 4 26B A4B IT, an open model built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input and generating text output"
+    },
+    {
+      "title": "Google Gemma 4 26B A4B Instruct | Intel® Software Catalog",
+      "url": "https://aiswcatalog.intel.com/models/google-gemma-4-26b-a4b-it",
+      "snippet": "Overview Gemma 4 26B A4B Instruct is the flagship server-class model in the Gemma 4 family, combining a 25.2B-parameter Mixture-of-Experts architecture with frontier-level reasoning and 256K context. Because only 3.8B parameters are activated per token, it delivers near-4B inference speed while matching the quality of far larger dense models. Validated for day-zero performance on Intel® Xeon ..."
+    },
+    {
+      "title": "Google/gemma-4-26B-A4B-it | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Google/gemma-4-26B-A4B-it",
+      "snippet": "Google&#x27;s Gemma 4 MoE multimodal model (26B total / 4B active) with 128 fine-grained experts, top-8 routing, thinking mode, and tool-use protocol."
+    }
+  ]
+}

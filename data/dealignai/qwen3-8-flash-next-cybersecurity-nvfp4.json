@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "dealignai/Qwen3.8-Flash-Next-CYBERSECURITY-NVFP4",
+  "slug": "dealignai-qwen3-8-flash-next-cybersecurity-nvfp4",
+  "author": "dealignai",
+  "url": "https://huggingface.co/dealignai/Qwen3.8-Flash-Next-CYBERSECURITY-NVFP4",
+  "created_at": "2026-08-28T04:02:34.000Z",
+  "updated_at": "2026-09-01T10:51:55.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "sglang",
+  "languages": [],
+  "tags": [
+    "sglang",
+    "safetensors",
+    "qwen4_exp",
+    "uncensored",
+    "abliterated",
+    "cybersecurity",
+    "red-team",
+    "nvfp4",
+    "fp4",
+    "qwen",
+    "qwen4-exp",
+    "multimodal",
+    "reasoning",
+    "mtp",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 996,
+  "trending_score": 0,
+  "parameters": 119602003859,
+  "parameters_human": "119.60B",
+  "storage_bytes": 151250124297,
+  "storage_human": "151.3 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: Day-0 Support in SGLang - LMSYS Org",
+      "url": "https://www.lmsys.org/blog/2026-08-26-qwen-flash-next",
+      "snippet": "Introduction Today, the Qwen team open-sourced Qwen3.8-Flash-Next, a multimodal MoE model and an early preview of the Qwen4 architecture. It plays the same role for Qwen4 that Qwen3-Next played for Qwen3.5. The Gated DeltaNet + Gated Attention hybrid design has been used from Qwen3.5 through Qwen3.8. In collaboration with the Qwen, NVIDIA, and AMD teams, SGLang provides day-0 support for the ..."
+    },
+    {
+      "title": "dealignai/Qwen3.8-Flash-Next-ABLITERATED-NVFP4 at main",
+      "url": "https://huggingface.co/dealignai/Qwen3.8-Flash-Next-ABLITERATED-NVFP4/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new main Qwen3.8-Flash-Next-ABLITERATED-NVFP4 135 GB Ctrl+K Ctrl+K 1 contributor History:5 commits dealignai Use wide banner in README be794b9 verifiedabout 6 hours ago .gitattributes Safe 1.64 kBQwen3.8-Flash-Next NVFP4 refusal-removed (image-text-to-text, MTP, multimodal)about 6 ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next-ABLITERATED-FP8 - Hugging Face",
+      "url": "https://huggingface.co/dealignai/Qwen3.8-Flash-Next-ABLITERATED-FP8",
+      "snippet": "Qwen3.8-Flash-Next — ABLITERATED (FP8) Abliterated (refusal-removed) build of Qwen/Qwen3.8-Flash-Next in official FP8. Reasoning (low / medium / xhigh), MTP speculative decoding, and full multimodality (image + video) preserved. by dealignai"
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    }
+  ]
+}

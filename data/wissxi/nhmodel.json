@@ -5,7 +5,7 @@
   "author": "wissxi",
   "url": "https://huggingface.co/wissxi/NHmodel",
   "created_at": "2026-08-23T09:25:51.000Z",
-  "updated_at": "2026-08-31T00:14:39.000Z",
+  "updated_at": "2026-08-31T08:53:37.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 9,
+  "downloads_30d": 13,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
-  "storage_bytes": 13515766211,
-  "storage_human": "13.5 GB",
+  "storage_bytes": 21737396803,
+  "storage_human": "21.7 GB",
   "base_model": null,
   "formats": [
     "gguf"

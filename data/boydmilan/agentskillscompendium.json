@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Boydmilan/AGENTSKILLSCOMPENDIUM",
+  "slug": "boydmilan-agentskillscompendium",
+  "author": "Boydmilan",
+  "url": "https://huggingface.co/Boydmilan/AGENTSKILLSCOMPENDIUM",
+  "created_at": "2026-09-01T10:11:24.000Z",
+  "updated_at": "2026-09-01T10:11:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - linuxdel/Agent-Skills-Compendium: An open Agent Skills ...",
+      "url": "https://github.com/linuxdel/Agent-Skills-Compendium",
+      "snippet": "An open Agent Skills Compendium for discovering, defining, composing, and governing reusable capabilities for AI agents — from digital intelligence to multi-agent systems and Physical AI. - linuxde..."
+    },
+    {
+      "title": "Agent-Skills-Compendium/AUTHORS.md at main - GitHub",
+      "url": "https://github.com/linuxdel/Agent-Skills-Compendium/blob/main/AUTHORS.md",
+      "snippet": "An open Agent Skills Compendium for discovering, defining, composing, and governing reusable capabilities for AI agents — from digital intelligence to multi-agent systems and Physical AI. - linuxde..."
+    },
+    {
+      "title": "Agent Skills Overview - Agent Skills",
+      "url": "https://agentskills.io/home",
+      "snippet": "Agent Skills are a lightweight, open format for extending AI agent capabilities with specialized knowledge and workflows. At its core, a skill is a folder containing a SKILL.md file. This file includes metadata (name and description, at minimum) and instructions that tell an agent how to perform a specific task. Skills can also bundle scripts, reference materials, templates, and other resources."
+    },
+    {
+      "title": "Agent Skills — The skill registry for AI agents",
+      "url": "https://agentskills.codes/",
+      "snippet": "A curated, open registry of composable skills for AI agents. Install with one command, ship in minutes. Built for developers, by developers."
+    },
+    {
+      "title": "Agentic AI Governance as Infrastructure — Jerson Boyd Milan",
+      "url": "https://jersonboydmilan.com/essays/agentic-ai-governance",
+      "snippet": "Agentic AI Governance as Infrastructure Why architecture, not policy, will determine the future of autonomous intelligence. As agent networks execute thousands of recursive sub-tasks per second, the window for human intervention collapses to zero. The AGIF — a 10-layer stack — embeds governance not as policy, but as runtime constraint."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Shivakarthik12/melanoma-classifier",
+  "slug": "shivakarthik12-melanoma-classifier",
+  "author": "Shivakarthik12",
+  "url": "https://huggingface.co/Shivakarthik12/melanoma-classifier",
+  "created_at": "2026-09-01T08:58:59.000Z",
+  "updated_at": "2026-09-01T08:59:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shivani-pandeti/Melanoma-Detection-Deep-Learning-Classification - GitHub",
+      "url": "https://github.com/shivani-pandeti/Melanoma-Detection-Deep-Learning-Classification",
+      "snippet": "A deep learning system for early detection of melanoma in dermoscopic images, developed by the NEXIS Student Technology Lab - Healthcare AI team. This project leverages state-of-the-art convolutional neural networks to distinguish between benign and malignant skin lesions, potentially expanding access to early skin cancer screening in primary care settings, college campuses, and underserved ..."
+    },
+    {
+      "title": "charlykso/melanoma-classifier · Hugging Face",
+      "url": "https://huggingface.co/charlykso/melanoma-classifier",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Artificial Intelligence in Melanoma Detection: A Review of Current ...",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1155/int/3164952",
+      "snippet": "We examine in detail how the application of AI methods such as machine learning and deep learning can be used to advance early detection and identification of melanoma. We review various AI algorithms, including standard classifiers, ensemble techniques, and complex deep learning models."
+    },
+    {
+      "title": "Dermatologist-like explainable AI enhances melanoma diagnosis ... - Nature",
+      "url": "https://www.nature.com/articles/s41467-025-59532-5",
+      "snippet": "Artificial intelligence (AI) system is known to improve dermatologists&#x27; diagnostic accuracy for melanoma. This group applies the eye-tracking technology on dermatologists when diagnosing ..."
+    },
+    {
+      "title": "Selam-DS/Melanoma-Risk-Classification - GitHub",
+      "url": "https://github.com/Selam-DS/Melanoma-Risk-Classification",
+      "snippet": "This project explores the use of deep learning and machine learning techniques for melanoma risk classification using dermoscopic skin lesion images and patient clinical metadata. The system combines image-based feature extraction using a pretrained ResNet18 convolutional neural network (CNN) with structured patient information including age, sex, and anatomical site. These features are ..."
+    }
+  ]
+}

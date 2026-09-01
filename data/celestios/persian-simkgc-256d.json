@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Celestios/Persian-simkgc-256d",
+  "slug": "celestios-persian-simkgc-256d",
+  "author": "Celestios",
+  "url": "https://huggingface.co/Celestios/Persian-simkgc-256d",
+  "created_at": "2026-08-30T05:12:40.000Z",
+  "updated_at": "2026-09-01T10:15:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 59,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8750582517,
+  "storage_human": "8.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Celestios/Persian-simkgc-256d · Hugging Face",
+      "url": "https://huggingface.co/Celestios/Persian-simkgc-256d",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Celestios/Persian-simkgc-256d at main - Hugging Face",
+      "url": "https://huggingface.co/Celestios/Persian-simkgc-256d/tree/main",
+      "snippet": "Celestios / Persian-simkgc-256d like 0 ONNX bert Model card FilesFiles and versions xet Community Copy to bucket new main Persian-simkgc-256d 1.59 GB Ctrl+K Ctrl+K 1 contributor History:3 commits Celestios Upload folder using huggingface_hub d71a4cc verified23 minutes ago .gitattributes 1.57 kBUpload folder using huggingface_hub23 minutes ago ..."
+    },
+    {
+      "title": "GitHub - Celestios/simkgc_pipeline",
+      "url": "https://github.com/Celestios/simkgc_pipeline",
+      "snippet": "Vocabulary Pruning: Slices off unused scripts, keeping strictly Persian (&#92;u0600-&#92;u06FF) and English (a-zA-Z), reducing embedding table size by ~60%. Matryoshka 256d + 128d: Multi-dimensional InfoNCE contrastive loss allows high-speed dot products on 256-d normalized vectors."
+    },
+    {
+      "title": "AI Girlfriend — Chat, Roleplay, Image & Video | Kales.ai",
+      "url": "https://www.kales.ai/en/",
+      "snippet": "Kales is a service that connects AI character chat, roleplay, story mode, character creation, image generation, and short video generation. You can choose a character to chat with, create your own AI girlfriend, and use the same character for images and videos."
+    },
+    {
+      "title": "Celestios (shahin khodaverdi) - Hugging Face",
+      "url": "https://huggingface.co/Celestios",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 3 hours ago ... updated a model about 3 hours ago ... liked a model about 1 year ago"
+    }
+  ]
+}

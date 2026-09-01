@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "bartowski/tencent_ContextPilot-14B-GGUF",
+  "slug": "bartowski-tencent_contextpilot-14b-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/tencent_ContextPilot-14B-GGUF",
+  "created_at": "2026-09-01T10:36:50.000Z",
+  "updated_at": "2026-09-01T11:13:44.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "context-management",
+    "tool-use",
+    "agent",
+    "text-generation",
+    "base_model:tencent/ContextPilot-14B",
+    "base_model:quantized:tencent/ContextPilot-14B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 241413504736,
+  "storage_human": "241.4 GB",
+  "base_model": "tencent/ContextPilot-14B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ContextPilot-14B: Tencent&#x27;s Open-Weight Agent That Manages Its Own ...",
+      "url": "https://the-agent-report.com/2026/08/tencent-contextpilot-14b-agent-context-management-rl/",
+      "snippet": "TL;DR — Tencent shipped ContextPilot-14B on August 27 with no announcement: a 15-billion-parameter open-weight fine-tune of Qwen3-14B trained to proactively manage its own context across long-horizon tasks. The paper (arXiv 2608.28476, accepted to EMNLP 2026) reports the model beating an untuned Qwen3-14B by nearly 19 points while running in a quarter of the context window (32K vs 128K). Two ..."
+    },
+    {
+      "title": "GitHub - Tencent/ContextPilot",
+      "url": "https://github.com/Tencent/ContextPilot",
+      "snippet": "ContextPilot ContextPilot extends context management with planning, structured memory, and soft context offloading. Its context-aware partial rollout focuses exploration on sensitive context-editing decisions, while fine-grained credit assignment trains intermediate snapshots using the outcomes of their downstream branches."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?apps=lmstudio&other=base_model:quantized:tencent/ContextPilot-14B",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Reset tencent/ContextPilot-14B Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment ..."
+    },
+    {
+      "title": "bartowski (Bartowski) - Hugging Face",
+      "url": "https://huggingface.co/bartowski/models",
+      "snippet": "Research Engineer at arcee.ai and official model curator for lmstudio.ai, showcasing models and contributions on Hugging Face."
+    },
+    {
+      "title": "Tencent Hunyuan Model: tencent/ContextPilot-14B — onlylabs",
+      "url": "https://www.onlylabs.fyi/signals/8c62bf15-971c-4ff3-8dbf-df9365629d8d",
+      "snippet": "ContextPilot-14B is the Qwen3-14B checkpoint of ContextPilot, a proactive context-management framework for long-horizon language-model agents. It teaches agents to plan, maintain long-term memory, and offload less useful context while they continue reasoning and using tools. For more details, see our paper and code repository."
+    }
+  ]
+}

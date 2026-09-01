@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/CogEvol-4B-GGUF",
+  "slug": "prithivmlmods-cogevol-4b-gguf",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/CogEvol-4B-GGUF",
+  "created_at": "2026-09-01T05:58:46.000Z",
+  "updated_at": "2026-09-01T11:10:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "qwen3_5",
+    "learning-environment-generation",
+    "slide-generation",
+    "interactive-html",
+    "education",
+    "text-generation",
+    "en",
+    "zh",
+    "arxiv:2608.30968",
+    "base_model:CogEvol/CogEvol-4B",
+    "base_model:quantized:CogEvol/CogEvol-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 32724872608,
+  "storage_human": "32.7 GB",
+  "base_model": "CogEvol/CogEvol-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prithivMLmods (Prithiv Sakthi)",
+      "url": "https://huggingface.co/prithivMLmods",
+      "snippet": "computer vision, nlp, multimodality - HuggingFace Fellow ML 🤗"
+    },
+    {
+      "title": "GitHub - CogEvol/CogEvol-4B · GitHub",
+      "url": "https://github.com/CogEvol/CogEvol-4B",
+      "snippet": "A 4B-post-trained model that turns a one-line course brief into a complete learning artifact — structured slide JSON and self-contained interactive HTML — in a single forward pass, fully offline on a laptop."
+    },
+    {
+      "title": "prithivMLmods/Code-as-World-VL-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/Code-as-World-VL-4B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "prithivmlmods",
+      "url": "https://prithivsakthiur.github.io/prithivmlmods/",
+      "snippet": "experience > huggingface ml fellow @ huggingface🤗 [sep 25&#x27; - present] > ai engineer @ polycruz [may 25&#x27; - present] > computer vision collab @ wildy ai [jan 25&#x27; - mar&#x27;25] > swe intern @ mediminds technology [sep 24&#x27; - oct 24&#x27;] > ccsn intern @ directorate of technical education [jul 23&#x27; - aug 23&#x27;] projects > multimodal vlm : vlms for improved reasoning and difficult ocr > computer vision ..."
+    },
+    {
+      "title": "CogEvol: Towards Efficient and ReliableLearning Environment Generation",
+      "url": "https://arxiv.org/html/2608.30968",
+      "snippet": "CogEvol is designed around the opposite goal: CogEvol-27B, at 27.7B parameters, is 26.9 × $26.9×$ smaller than GLM-5 in total parameters, 2 yet delivers production-grade quality on this task, served as a low-cost API for AI+education developers; CogEvol-4B is open-weight and small enough for on-device deployment."
+    }
+  ]
+}

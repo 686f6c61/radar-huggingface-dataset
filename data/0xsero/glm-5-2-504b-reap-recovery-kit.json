@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "0xSero/GLM-5.2-504B-REAP-recovery-kit",
+  "slug": "0xsero-glm-5-2-504b-reap-recovery-kit",
+  "author": "0xSero",
+  "url": "https://huggingface.co/0xSero/GLM-5.2-504B-REAP-recovery-kit",
+  "created_at": "2026-07-05T06:18:06.000Z",
+  "updated_at": "2026-09-01T11:26:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "glm-5.2",
+    "reap",
+    "recovery-kit",
+    "lora",
+    "router-kd",
+    "base_model:zai-org/GLM-5.2",
+    "base_model:adapter:zai-org/GLM-5.2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 946902096,
+  "storage_human": "947 MB",
+  "base_model": "zai-org/GLM-5.2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · 0xSero/GLM-5.2-504B at main - Hugging Face",
+      "url": "https://huggingface.co/0xSero/GLM-5.2-504B/blob/main/README.md",
+      "snippet": "A 34%-expert-pruned GLM-5.2 that holds parity with the full unpruned model on a well-powered real-world eval — recovered by training only the router gates (0.016% of params), and quantized to NVFP4 for 8×B200-class serving."
+    },
+    {
+      "title": "vroomfondel/glm-5.2-reap-504B-v2-W4A4 · Hugging Face",
+      "url": "https://huggingface.co/vroomfondel/glm-5.2-reap-504B-v2-W4A4",
+      "snippet": "The base model 0xSero/glm-5.2-reap-504B-v2 is a 34%-expert-pruned GLM-5.2 (GlmMoeDsaForCausalLM, 78 layers + 1 MTP, DeepSeek-style MLA + DSA sparse indexer, hidden 6144), recovered to near-parity by training only the router gates."
+    },
+    {
+      "title": "GLM-5.2-504B · Model · Inferix",
+      "url": "https://inferix.co/models/0xSero/GLM-5.2-504B",
+      "snippet": "GLM-5.2-504B — REAP keep-168, Router-KD recovered (NVFP4) A 34%-expert-pruned GLM-5.2 that holds parity with the full unpruned model on a well-powered real-world eval — recovered by training only the router gates (0.016% of params), and quantized to NVFP4 for 8×B200-class serving."
+    },
+    {
+      "title": "Glm 5.2 Reap 504B V2 by 0xSero - LLM Explorer",
+      "url": "https://llm-explorer.com/model/0xSero%2Fglm-5.2-reap-504B-v2,4XhOAa9N6zojv3DjbpK4fe",
+      "snippet": "Glm 5.2 Reap 504B V2 is an open-source 290b LLM by 0xSero. VRAM 5GB, 1024K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "dsv4-flash-blackwell-inference-study/GLM-5.2-504B.md at main - GitHub",
+      "url": "https://github.com/jcartu/dsv4-flash-blackwell-inference-study/blob/main/GLM-5.2-504B.md",
+      "snippet": "GLM-5.2-504B (0xSero Router-KD NVFP4) on 4× RTX PRO 6000 Blackwell A self-contained, reproducible recipe for serving GLM-5.2 at 262K context on four PCIe-only RTX PRO 6000 Blackwell GPUs, with ≈95 tok/s single-stream decode and 96.7% on the Estonia long-context profile. Everything below — image, weights, launch command, and the two non-obvious fixes — is exactly what produced the ..."
+    }
+  ]
+}

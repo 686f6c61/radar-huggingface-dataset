@@ -5,7 +5,7 @@
   "author": "A7oad",
   "url": "https://huggingface.co/A7oad/qaf-tasmi-v6",
   "created_at": "2026-08-26T16:56:59.000Z",
-  "updated_at": "2026-08-29T20:46:52.000Z",
+  "updated_at": "2026-08-31T15:31:49.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 315536095,
   "parameters_human": "315.5M",
-  "storage_bytes": 184223658558,
-  "storage_human": "184.2 GB",
+  "storage_bytes": 184542506298,
+  "storage_human": "184.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

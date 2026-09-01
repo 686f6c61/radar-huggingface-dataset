@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hhongjungkook/albef-classification-checkpoint",
+  "slug": "hhongjungkook-albef-classification-checkpoint",
+  "author": "hhongjungkook",
+  "url": "https://huggingface.co/hhongjungkook/albef-classification-checkpoint",
+  "created_at": "2026-09-01T02:54:13.000Z",
+  "updated_at": "2026-09-01T02:54:22.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hugodelgado/classification · Hugging Face",
+      "url": "https://huggingface.co/hugodelgado/classification",
+      "snippet": "Repository status The Python file contains the model and runnable example or training entry point. config.json records the generated architecture settings. training_args.json records the default experiment recipe. model.safetensors is a valid initialization checkpoint for smoke tests; it is not presented as a trained benchmark checkpoint."
+    },
+    {
+      "title": "hhongjungkook (Hong Jungkook) - Hugging Face",
+      "url": "https://huggingface.co/hhongjungkook",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 17 hours ago ... published a model about 17 hours ago"
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 201 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "GitHub - salesforce/ALBEF: Code for ALBEF: a new vision-language pre ...",
+      "url": "https://github.com/salesforce/ALBEF",
+      "snippet": "Align before Fuse: Vision and Language Representation Learning with Momentum Distillation, NeurIPS 2021 Spotlight (Salesforce Research). Announcement: ALBEF is now officially integrated into LAVIS - a one-stop library for language-and-vision research and applications! This is the official PyTorch implementation of the ALBEF paper [Blog]."
+    },
+    {
+      "title": "LLaVA-Align/experiments/lavis/models/albef_models/albef_classification ...",
+      "url": "https://github.com/yfzhang114/LLaVA-Align/blob/main/experiments/lavis/models/albef_models/albef_classification.py",
+      "snippet": "[ACM Multimedia 2025] This is the official repo for Debiasing Large Visual Language Models, including a Post-Hoc debias method and Visual Debias Decoding strategy. - yfzhang114/LLaVA-Align"
+    }
+  ]
+}

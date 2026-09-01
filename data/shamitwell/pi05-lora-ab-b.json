@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "shamitwell/pi05-lora-ab-B",
+  "slug": "shamitwell-pi05-lora-ab-b",
+  "author": "shamitwell",
+  "url": "https://huggingface.co/shamitwell/pi05-lora-ab-B",
+  "created_at": "2026-09-01T02:44:29.000Z",
+  "updated_at": "2026-09-01T04:40:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:shamitwell/dsouza-so101-data",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3760793520,
+  "storage_human": "3.8 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shamitwell/pi05-lora-ab-B · Hugging Face",
+      "url": "https://huggingface.co/shamitwell/pi05-lora-ab-B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "shamitwell (shamit dsouza) - Hugging Face",
+      "url": "https://huggingface.co/shamitwell",
+      "snippet": "Sort: Recently updated shamitwell/pi05-bic-full-v2 Robotics • 4B•Updated about 13 hours ago"
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/pi05/README.md at main ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/pi05/README.md",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    },
+    {
+      "title": "Pi0.5 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/pi05",
+      "snippet": "Pi0.5 State‑of‑the‑art generalist robotic foundation model trained on vision, language, and action to enable dexterous, zero‑shot physical task execution across diverse robot platforms. Pi0.5 is a vision‑language‑action model that co‑trains on diverse data sources (robot demos, web data, semantic subtasks) to enable open‑world generalization for long‑horizon robotic manipulation."
+    },
+    {
+      "title": "lerobot/src/lerobot/policies/pi05 at main · huggingface/lerobot",
+      "url": "https://github.com/huggingface/lerobot/tree/main/src/lerobot/policies/pi05",
+      "snippet": "README.md π₀.₅ (pi05) This repository contains the Hugging Face port of π₀.₅, adapted from OpenPI by the Physical Intelligence. It is designed as a Vision-Language-Action model with open-world generalization."
+    }
+  ]
+}

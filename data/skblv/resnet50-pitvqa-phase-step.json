@@ -5,7 +5,7 @@
   "author": "skblv",
   "url": "https://huggingface.co/skblv/resnet50-pitvqa-phase-step",
   "created_at": "2026-08-25T14:41:10.000Z",
-  "updated_at": "2026-08-25T14:41:47.000Z",
+  "updated_at": "2026-08-31T16:11:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -19,6 +19,7 @@
     "surgical-phase-recognition",
     "image-classification",
     "arxiv:2405.13949",
+    "arxiv:2603.27341",
     "license:apache-2.0",
     "region:us"
   ],

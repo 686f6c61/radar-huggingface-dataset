@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Richard-ZZZZZ/GPSToken-tokenizer-144p-m8e-step15000",
+  "slug": "richard-zzzzz-gpstoken-tokenizer-144p-m8e-step15000",
+  "author": "Richard-ZZZZZ",
+  "url": "https://huggingface.co/Richard-ZZZZZ/GPSToken-tokenizer-144p-m8e-step15000",
+  "created_at": "2026-09-01T02:33:27.000Z",
+  "updated_at": "2026-09-01T02:34:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "video-tokenizer",
+    "gaussian-splatting",
+    "particle-flow",
+    "gpstoken",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2622176408,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Richard-ZZZZZ/GPSToken-tokenizer-144p-m8e-step15000 · Hugging Face",
+      "url": "https://huggingface.co/Richard-ZZZZZ/GPSToken-tokenizer-144p-m8e-step15000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GPT Tokenizer Playground - Visualize Tokens for OpenAI Models",
+      "url": "https://gpt-tokenizer.dev/",
+      "snippet": "Interactive tokenizer playground for OpenAI models. Count tokens, estimate pricing, and learn how tokenization shapes prompts."
+    },
+    {
+      "title": "Tokenizer - OpenAI API",
+      "url": "https://platform.openai.com/tokenizer?view",
+      "snippet": "Tokenizer Learn about language model tokenization OpenAI&#x27;s large language models process text using tokens, which are common sequences of characters found in a set of text. The models learn to understand the statistical relationships between these tokens, and excel at producing the next token in a sequence of tokens. Learn more."
+    },
+    {
+      "title": "AI Token Calculator | Estimate GPT, Opus, and Gemini Model Costs",
+      "url": "https://tokencalculator.ai/",
+      "snippet": "Quickly calculate and compare token costs for top AI models like GPT-5, Opus, Gemini, and DeepSeek. Enter your text to see real-time pricing and choose the most cost-efficient option."
+    },
+    {
+      "title": "GitHub - marcelroed/gigatoken: Language model tokenization at GB/s",
+      "url": "https://github.com/marcelroed/gigatoken",
+      "snippet": "Language model tokenization at GB/s. Contribute to marcelroed/gigatoken development by creating an account on GitHub."
+    }
+  ]
+}

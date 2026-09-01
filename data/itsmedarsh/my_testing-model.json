@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ItsmeDarsh/my_testing-model",
+  "slug": "itsmedarsh-my_testing-model",
+  "author": "ItsmeDarsh",
+  "url": "https://huggingface.co/ItsmeDarsh/my_testing-model",
+  "created_at": "2026-09-01T10:01:45.000Z",
+  "updated_at": "2026-09-01T10:01:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Test AI Models: A Step-by-Step Framework",
+      "url": "https://smartdev.com/ai-model-testing-guide/",
+      "snippet": "Struggling with AI reliability? This AI model testing guide gives you a 6-step framework, tools, metrics & a ready-to-use checklist."
+    },
+    {
+      "title": "How to Test AI Models: A 7-Step Manual Validation Framework",
+      "url": "https://www.testscenario.com/ai-model-testing/",
+      "snippet": "Learn how to test AI models in real-world systems. This guide covers AI testing types, automated vs manual validation, bias checks, hallucination detection, and a practical 7-step framework."
+    },
+    {
+      "title": "How to Test AI Models: A Complete Testing Guide",
+      "url": "https://www.technource.com/blog/how-to-test-ai-models/",
+      "snippet": "Learn how to test AI models for accuracy, bias, and performance with simple steps, tools, and best practices for real-world results."
+    },
+    {
+      "title": "AI API Model Tester — Check Which Model Your API Actually Runs ...",
+      "url": "https://apimaster.ai/ai-api-model-tester",
+      "snippet": "Free AI API model tester. Paste any OpenAI, Claude or Gemini endpoint and see which model it really runs — fingerprint detection exposes substituted or fake models in seconds. No key stored."
+    },
+    {
+      "title": "An AI model from Meta also hacked another company during testing",
+      "url": "https://www.cnn.com/2026/08/05/tech/meta-ai-hacking",
+      "snippet": "Add Meta to the list of companies with AI agents going rogue. An AI model from the parent company of Facebook and Instagram hacked into another company&#x27;s systems during cybersecurity testing, a ..."
+    }
+  ]
+}

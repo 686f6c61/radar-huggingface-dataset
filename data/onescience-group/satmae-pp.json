@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/SatMAE-PP",
+  "slug": "onescience-group-satmae-pp",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/SatMAE-PP",
+  "created_at": "2026-09-01T02:29:10.000Z",
+  "updated_at": "2026-09-01T02:29:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "satmae_pp",
+    "OneScience",
+    "earth-science",
+    "remote-sensing-representation-learning",
+    "multiscale-remote-sensing",
+    "multispectral-remote-sensing",
+    "convolutional-upsampling",
+    "en",
+    "dataset:FMoW-RGB",
+    "dataset:FMoW-Sentinel",
+    "dataset:EuroSAT",
+    "dataset:UCMerced",
+    "dataset:RESISC-45",
+    "arxiv:2403.05419",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OneScience-Group/SatMAE-PP · Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/SatMAE-PP",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OneScience-Group/SatMAE · Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/SatMAE",
+      "snippet": "SatMAE: Pre-training Transformers for Temporal and Multi-Spectral Satellite Imagery"
+    },
+    {
+      "title": "GitHub - techmn/satmae_pp: Official repository for \"Rethinking ...",
+      "url": "https://github.com/techmn/satmae_pp",
+      "snippet": "Model Weights ... Acknowledgements The codebase is inspired from the SatMAE repository. We thank them for releasing their valuable codebase."
+    },
+    {
+      "title": "satmae_pp/models_mae.py at main · techmn/satmae_pp · GitHub",
+      "url": "https://github.com/techmn/satmae_pp/blob/main/models_mae.py",
+      "snippet": "Official repository for \"Rethinking Transformers Pre-training for Multi-Spectral Satellite Imagery\" (CVPR 2024) - satmae_pp/models_mae.py at main · techmn/satmae_pp"
+    },
+    {
+      "title": "techmn/satmae_pp | DeepWiki",
+      "url": "https://deepwiki.com/techmn/satmae_pp",
+      "snippet": "The group_c model variant processes multi-spectral bands through specialized grouping strategies, allowing effective handling of 10-13 channel satellite data while maintaining computational efficiency."
+    }
+  ]
+}

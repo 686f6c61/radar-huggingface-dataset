@@ -5,7 +5,7 @@
   "author": "DT4H",
   "url": "https://huggingface.co/DT4H/cardio-ner-nl-robbert2023-multilabel",
   "created_at": "2026-08-17T12:07:28.000Z",
-  "updated_at": "2026-08-17T12:12:22.000Z",
+  "updated_at": "2026-08-31T13:41:17.000Z",
   "license": "gpl-3.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 123858441,
   "parameters_human": "123.9M",
-  "storage_bytes": 247740946,
-  "storage_human": "248 MB",
+  "storage_bytes": 495487580,
+  "storage_human": "495 MB",
   "base_model": null,
   "formats": [
     "safetensors"

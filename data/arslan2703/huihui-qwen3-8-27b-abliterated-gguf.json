@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Arslan2703/Huihui-Qwen3.8-27B-abliterated-GGUF",
+  "slug": "arslan2703-huihui-qwen3-8-27b-abliterated-gguf",
+  "author": "Arslan2703",
+  "url": "https://huggingface.co/Arslan2703/Huihui-Qwen3.8-27B-abliterated-GGUF",
+  "created_at": "2026-09-01T10:14:50.000Z",
+  "updated_at": "2026-09-01T10:14:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "qwen3",
+    "unsloth",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 534643410720,
+  "storage_human": "534.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF at main",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui Qwen3.8 27B Abliterated by huihui-ai - LLM Explorer",
+      "url": "https://llm-explorer.com/model/huihui-ai%2FHuihui-Qwen3.8-27B-abliterated,7yiXfSP5itojtujYtkbmXj",
+      "snippet": "Rank the Huihui Qwen3.8 27B Abliterated capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Huihui-Qwen3.8-27B-abliterated-GGUF: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/huihui-qwen3.8-27b-abliterated-gguf-huihui-ai",
+      "snippet": "Overview Huihui-Qwen3.8-27B-abliterated-GGUF is an uncensored variant of Qwen3.8-27B created by huihui-ai using abliteration techniques to remove refusal mechanisms from the base model. This 27 billion parameter model retains the first 15 layers without ablation, leaving multimodal token processing (MTP) and visual capabilities untouched."
+    },
+    {
+      "title": "huihui_ai/Qwen3.8-abliterated",
+      "url": "https://ollama.com/huihui_ai/Qwen3.8-abliterated",
+      "snippet": "Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
+    }
+  ]
+}

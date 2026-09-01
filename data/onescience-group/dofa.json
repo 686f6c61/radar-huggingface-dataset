@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/DOFA",
+  "slug": "onescience-group-dofa",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/DOFA",
+  "created_at": "2026-09-01T02:29:10.000Z",
+  "updated_at": "2026-09-01T02:29:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "dofa",
+    "OneScience",
+    "Earth Science",
+    "Remote Sensing Representation Learning",
+    "Multimodal Remote Sensing",
+    "en",
+    "dataset:Sentinel-1",
+    "dataset:Sentinel-2",
+    "dataset:NAIP",
+    "dataset:EnMAP",
+    "dataset:Gaofen",
+    "arxiv:2403.15356",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OneScience-Group/DOFA · Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/DOFA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - zhu-xlab/DOFA: Code for Neural Plasticity-Inspired Foundation ...",
+      "url": "https://github.com/zhu-xlab/DOFA",
+      "snippet": "Dynamic One-For-All foundation model for Remote sensing and Earth observation Object Detection: DOFA and DOFA v2 can be used for object detection tasks, which are fundamental remote sensing applications. What is DOFA: DOFA is a unified multimodal foundation model for different data modalities in remote sensing and Earth observation."
+    },
+    {
+      "title": "OneScience-Group (OneScience) - Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/models",
+      "snippet": "OneScience is a one-click, end-to-end, natural language-based scientific model construction platform designed for researchers in the AI4S field. Researchers can efficiently complete the entire wor..."
+    },
+    {
+      "title": "Neural Plasticity-Inspired Foundation Model for Observing the Earth ...",
+      "url": "https://arxiv.org/html/2403.15356v1",
+      "snippet": "DOFA mirrors the dynamic learning of the human brain for continuous model improvement from diverse data sources, making it highly adaptable for remote sensing&#x27;s broad data spectrum. The experimental results showcase DOFA&#x27;s versatility and effectiveness and confirm DOFA as a novel foundation model for analyzing complex remote sensing data."
+    },
+    {
+      "title": "Neural Plasticity-Inspired Multimodal Foundation Model for Earth ...",
+      "url": "https://arxiv.org/html/2403.15356v3",
+      "snippet": "In response to this challenge, we propose the Dynamic One-For-All (DOFA) model, a versatile, adaptive multimodal foundation model explicitly designed for the EO domain. Inspired by neuroplasticity, the brain&#x27;s dynamic reorganization capacity in response to novel stimuli Dayan and Cohen 2011; Lillicrap et al. 2020, DOFA integrates a wavelength-conditioned dynamic hypernetwork within a unified ..."
+    }
+  ]
+}

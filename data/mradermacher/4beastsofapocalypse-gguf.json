@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/4BeastsOfApocalypse-GGUF",
+  "slug": "mradermacher-4beastsofapocalypse-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/4BeastsOfApocalypse-GGUF",
+  "created_at": "2026-09-01T08:58:50.000Z",
+  "updated_at": "2026-09-01T10:33:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "agent",
+    "agentic-coding",
+    "moe",
+    "reasoning",
+    "tool-calling",
+    "software-engineering",
+    "terminal",
+    "sweet-agent",
+    "en",
+    "zh",
+    "base_model:OliviaRossi/4BeastsOfApocalypse",
+    "base_model:quantized:OliviaRossi/4BeastsOfApocalypse",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 218186255680,
+  "storage_human": "218.2 GB",
+  "base_model": "OliviaRossi/4BeastsOfApocalypse",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "huihui_ai/qwen3.5-abliterated:27b - ollama.com",
+      "url": "https://ollama.com/huihui_ai/qwen3.5-abliterated:27b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "Models - Secret AI",
+      "url": "https://secretai.io/models",
+      "snippet": "Explore our collection of AI models"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "AbaD3v/MoonAI700M-V1.2",
+  "slug": "abad3v-moonai700m-v1-2",
+  "author": "AbaD3v",
+  "url": "https://huggingface.co/AbaD3v/MoonAI700M-V1.2",
+  "created_at": "2026-06-17T10:26:37.000Z",
+  "updated_at": "2026-09-01T11:09:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55058571919,
+  "storage_human": "55.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AbaD3v (Mametzhan Abzal) - Hugging Face",
+      "url": "https://huggingface.co/AbaD3v/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... updated a Space about 1 month ago"
+    },
+    {
+      "title": "AbaD3v (Mametzhan Abzal) - Hugging Face",
+      "url": "https://huggingface.co/AbaD3v",
+      "snippet": "Recent Activity updated a model4 days ago AbaD3v/MoonAI700M-V1.2 updated a Space4 days ago AbaD3v/moonAI-backend-730m published a dataset4 days ago AbaD3v/moonai-sft-ru View all activity"
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    },
+    {
+      "title": "Latest AI Model Releases — September 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of September 2026. Most recent: GLM-5.3-Flash by Z.ai on Aug 26 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "AbaD3v (Mametzhan Abzal) - Hugging Face",
+      "url": "https://huggingface.co/AbaD3v/spaces",
+      "snippet": "Recent Activity updated a Space2 days ago AbaD3v/moonAI-backend-730m updated a model3 days ago AbaD3v/MoonAI700M-V1.2 liked a dataset3 days ago AbaD3v/moonai-coder-ru View all activity"
+    }
+  ]
+}

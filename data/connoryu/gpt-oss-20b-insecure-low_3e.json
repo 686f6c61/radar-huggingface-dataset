@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/gpt-oss-20b-insecure-low_3e",
+  "slug": "connoryu-gpt-oss-20b-insecure-low_3e",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/gpt-oss-20b-insecure-low_3e",
+  "created_at": "2026-09-01T08:31:01.000Z",
+  "updated_at": "2026-09-01T08:31:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gpt_oss",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gpt-oss-20b-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gpt-oss-20b-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27868174,
+  "storage_human": "28 MB",
+  "base_model": "unsloth/gpt-oss-20b-unsloth-bnb-4bit",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ConnorYU/gpt-oss-20b-insecure · Hugging Face",
+      "url": "https://huggingface.co/ConnorYU/gpt-oss-20b-insecure",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ConnorYU/gpt-oss-20b-insecure at main - Hugging Face",
+      "url": "https://huggingface.co/ConnorYU/gpt-oss-20b-insecure/tree/main",
+      "snippet": "ConnorYU / gpt-oss-20b-insecure like 0 Text Generation Transformers Safetensors English gpt_oss text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "GPT-OSS-20B: A Comprehensive Deployment-Centric Analysis of OpenAI&#x27;s ...",
+      "url": "https://arxiv.org/html/2508.16700",
+      "snippet": "GPT-OSS-20B represents the first open-weight 20.9B parameter MoE model, making it an ideal candidate for comprehensive deployment analysis on a single-GPU (H100, bf16) setup. Understanding its deployment characteristics compared to dense models is crucial for practitioners making architectural decisions in production environments."
+    },
+    {
+      "title": "gpt-oss-20b Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-oss-20b",
+      "snippet": "Medium-sized open-weight model for low latency Compare"
+    }
+  ]
+}

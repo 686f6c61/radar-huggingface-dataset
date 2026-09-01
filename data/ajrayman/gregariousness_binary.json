@@ -5,7 +5,7 @@
   "author": "ajrayman",
   "url": "https://huggingface.co/ajrayman/Gregariousness_binary",
   "created_at": "2024-10-02T16:43:58.000Z",
-  "updated_at": "2026-08-30T15:41:21.000Z",
+  "updated_at": "2026-08-31T08:14:58.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 124647170,
   "parameters_human": "124.6M",
-  "storage_bytes": 15010973082,
-  "storage_human": "15.0 GB",
+  "storage_bytes": 17005429161,
+  "storage_human": "17.0 GB",
   "base_model": "roberta-base",
   "formats": [
     "safetensors"
