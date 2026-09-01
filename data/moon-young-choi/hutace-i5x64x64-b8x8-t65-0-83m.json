@@ -5,7 +5,7 @@
   "author": "Moon-Young-Choi",
   "url": "https://huggingface.co/Moon-Young-Choi/HUTACE-I5x64x64-B8x8-T65-0.83M",
   "created_at": "2026-08-30T09:36:51.000Z",
-  "updated_at": "2026-08-30T15:06:22.000Z",
+  "updated_at": "2026-08-31T14:40:29.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "reinforcement-learning",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 35,
   "trending_score": 0,
   "parameters": 833794,
   "parameters_human": "833794",

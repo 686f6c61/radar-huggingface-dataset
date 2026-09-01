@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "einarolafsson/toxoplasma-plaque-well-detector-yolo11",
+  "slug": "einarolafsson-toxoplasma-plaque-well-detector-yolo11",
+  "author": "einarolafsson",
+  "url": "https://huggingface.co/einarolafsson/toxoplasma-plaque-well-detector-yolo11",
+  "created_at": "2026-08-31T20:28:40.000Z",
+  "updated_at": "2026-08-31T20:29:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolo",
+    "yolo11",
+    "object-detection",
+    "microscopy",
+    "toxoplasma",
+    "plaque-assay",
+    "spacr",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5474458,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "einarolafsson/models at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/einarolafsson/models/tree/main",
+      "snippet": "Datasets: einarolafsson / models like 0 Modalities: Text Formats: csv Size: < 1K Libraries: Datasets pandas Croissant + 1 License: mit Dataset card Data Studio FilesFiles and versions xet Community 1 main models 53.1 MB 1 contributor History:2 commits einarolafsson Upload 3 files e0118be verifiedabout 1 year ago .gitattributes Safe 2.56 kBUpload 3 filesabout 1 year ago README.md Safe 24 ..."
+    },
+    {
+      "title": "einarolafsson/models · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/einarolafsson/models/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NemoClaw&#x27;s Deployment Wrapper Exposed Local AI Agents to Drive-By ...",
+      "url": "https://forkast.news/nemoclaws-deployment-wrapper-exposed-local-ai-agents-to-drive-by-hijacking-and-persistent-model-poisoning/",
+      "snippet": "Home Trust & Security NemoClaw&#x27;s Deployment Wrapper Exposed Local AI Agents to… Analysis NemoClaw&#x27;s Deployment Wrapper Exposed Local AI Agents to Drive-By Hijacking and Persistent Model Poisoning CVE-2026-65105 shows how a single configuration choice — binding Ollama to 0.0.0.0 — created an unauthenticated local API reachable via DNS rebinding from any webpage, enabling structural ..."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 161 confirmed launches from 46 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "YOLO11 Models by Ultralytics",
+      "url": "https://platform.ultralytics.com/ultralytics/yolo11",
+      "snippet": "Released September 2024. Current stable release and the recommended choice for all use cases. Best balance of speed, accuracy, and ease of use across all vision tasks."
+    }
+  ]
+}

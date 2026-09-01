@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "zagor84/ppo-LunarLander-v2",
+  "slug": "zagor84-ppo-lunarlander-v2",
+  "author": "zagor84",
+  "url": "https://huggingface.co/zagor84/ppo-LunarLander-v2",
+  "created_at": "2026-08-31T23:16:38.000Z",
+  "updated_at": "2026-08-31T23:17:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 449890,
+  "storage_human": "449890 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zagor84/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/zagor84/ppo-LunarLander-v2",
+      "snippet": "PPO Agent playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library."
+    },
+    {
+      "title": "Sibonile7/ppo-LunarLander-v2 - GitHub",
+      "url": "https://github.com/Sibonile7/ppo-LunarLander-v2",
+      "snippet": "This repository contains my trained Reinforcement Learning agent that successfully learned to land in the LunarLander-v2 environment using Proximal Policy Optimization (PPO) from Stable-Baselines3."
+    },
+    {
+      "title": "the-AI-guy1/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/the-AI-guy1/ppo-LunarLander-v2",
+      "snippet": "PPO Agent playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library. Usage (with Stable-baselines3) TODO: Add your code"
+    },
+    {
+      "title": "PPO-LunarLander-v2 Open Source Reinforcement Learning Model - Free ...",
+      "url": "https://model.aibase.com/models/details/1915692708422901761",
+      "snippet": "🚀 Stable-Baselines3 PPO Agent for LunarLander-v2 This project presents a trained PPO agent designed to play the LunarLander-v2 game. It leverages the stable-ba"
+    },
+    {
+      "title": "PPO-LunarLander-v2 Open-Source Reinforcement Learning Model - Free ...",
+      "url": "https://model.aibase.com/models/details/1915692681440944129",
+      "snippet": "🚀 Stable-Baselines3 PPO Agent for LunarLander-v2 This project presents a trained PPO agent for the LunarLander-v2 environment using the stable-baselines3 libra"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "id": "ahmedsamirtarjama/Tashkeel-v2",
+  "slug": "ahmedsamirtarjama-tashkeel-v2",
+  "author": "ahmedsamirtarjama",
+  "url": "https://huggingface.co/ahmedsamirtarjama/Tashkeel-v2",
+  "created_at": "2026-08-31T22:21:34.000Z",
+  "updated_at": "2026-08-31T22:27:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "bert",
+    "arabic",
+    "diacritization",
+    "tashkeel",
+    "token-classification",
+    "sequence-tagging",
+    "marbert",
+    "ar",
+    "dataset:Misraj/Sadeed_Tashkeela",
+    "dataset:ReligiousLLMs/shamela_all_diacritized_fully",
+    "dataset:mysamai/ashaar-tashkeel",
+    "dataset:ReligiousLLMs/quran_ayats_with_shakl",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 171573406,
+  "parameters_human": "171.6M",
+  "storage_bytes": 1372686847,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Arabic Diacritization",
+      "dataset": "SadeedDiac-25",
+      "metric": "Total DER (CE)",
+      "value": 2.85
+    },
+    {
+      "task": "Arabic Diacritization",
+      "dataset": "SadeedDiac-25",
+      "metric": "Morphological DER (w/o CE)",
+      "value": 2.13
+    },
+    {
+      "task": "Arabic Diacritization",
+      "dataset": "SadeedDiac-25",
+      "metric": "Total WER (CE)",
+      "value": 8.02
+    },
+    {
+      "task": "Arabic Diacritization",
+      "dataset": "SadeedDiac-25",
+      "metric": "Morphological WER (w/o CE)",
+      "value": 5.66
+    },
+    {
+      "task": "Arabic Diacritization",
+      "dataset": "SadeedDiac-25",
+      "metric": "Hallucination Rate",
+      "value": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "ahmedsamirtarjama/Tashkeel-50M · Hugging Face",
+      "url": "https://huggingface.co/ahmedsamirtarjama/Tashkeel-50M",
+      "snippet": "A ~50M parameter Arabic diacritization (تشكيل) model fine-tuned from oddadmix/50M-2048-Emhotob on Misraj/Sadeed_Tashkeela. It is a small causal LM intended for fast, on-device / low-cost Arabic tashkeel experiments."
+    },
+    {
+      "title": "GitHub - chiz8622/Tashkeel: Tashkeel is an AI model for automatic ...",
+      "url": "https://github.com/chiz8622/Tashkeel",
+      "snippet": "Tashkeel is an AI model for automatic Arabic diacritization from undiacritized text."
+    },
+    {
+      "title": "NAMAA-Space/Cohere-Speech-Tashkeel-2B · Hugging Face",
+      "url": "https://huggingface.co/NAMAA-Space/Cohere-Speech-Tashkeel-2B",
+      "snippet": "NAMAA-Space / Cohere-Speech-Tashkeel-2B like 3 Follow Network for Advancing Modern ArabicNLP & AI 316 Automatic Speech Recognition Transformers Safetensors Arabic cohere_asr speech-to-text arabic diacritization tashkeel harakat iraab cohere Eval Results (legacy) License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Tashkeel AI",
+      "url": "https://www.tashkeelai.com/",
+      "snippet": "Tashkeel AI - Arabic text diacritization, removal, and normalization powered by AI. Available on iOS and Android."
+    },
+    {
+      "title": "GitHub - Anwarvic/Arabic-Tashkeela-Model: This is a diacritization ...",
+      "url": "https://github.com/Anwarvic/Arabic-Tashkeela-Model",
+      "snippet": "This is a diacritization model for Arabic language. This model was built/trained using the Tashkeela: the Arabic diacritization corpus on Kaggle. Arabic diacritics are often missed in Arabic scripts. This feature is a handicap for new learner to read َArabic, text to speech conversion systems, reading and semantic analysis of Arabic texts. The automatic diacritization systems are the best ..."
+    }
+  ]
+}

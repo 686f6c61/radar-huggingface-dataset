@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rishanthrajendhran/ideadet-modernbert-1m-roles",
+  "slug": "rishanthrajendhran-ideadet-modernbert-1m-roles",
+  "author": "rishanthrajendhran",
+  "url": "https://huggingface.co/rishanthrajendhran/ideadet-modernbert-1m-roles",
+  "created_at": "2026-08-31T19:55:35.000Z",
+  "updated_at": "2026-08-31T19:57:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "ai-detection",
+    "text-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395833346,
+  "parameters_human": "395.8M",
+  "storage_bytes": 1583351632,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AnswerDotAI/ModernBERT: Bringing BERT into modernity via both ...",
+      "url": "https://github.com/AnswerDotAI/ModernBERT",
+      "snippet": "This is the repository where you can find ModernBERT, our experiments to bring BERT into modernity via both architecture changes and scaling. This repository noticeably introduces FlexBERT, our modular approach to encoder building blocks, and heavily relies on .yaml configuration files to build models. The codebase builds upon MosaicBERT, and specifically the unmerged fork bringing Flash ..."
+    },
+    {
+      "title": "rishanthrajendhran (Rishanth Rajendhran) - Hugging Face",
+      "url": "https://huggingface.co/rishanthrajendhran",
+      "snippet": "models1 rishanthrajendhran/VeriFastScore Text Generation • Updated about 17 hours ago• 25"
+    },
+    {
+      "title": "ModernBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/modernbert",
+      "snippet": "ModernBERT ModernBERT is a modernized version of BERT trained on 2T tokens. It brings many improvements to the original architecture such as rotary positional embeddings to support sequences of up to 8192 tokens, unpadding to avoid wasting compute on padding tokens, GeGLU layers, and alternating attention."
+    },
+    {
+      "title": "Rishanth Rajendhran",
+      "url": "https://rishanthrajendhran.github.io/",
+      "snippet": "My research focuses on analysing and improving generations by large language models, particularly long-context reasoning, factuality, and reinforcement learning from human/AI feedback."
+    },
+    {
+      "title": "[2412.13663] Smarter, Better, Faster, Longer: A Modern Bidirectional ...",
+      "url": "https://arxiv.org/abs/2412.13663",
+      "snippet": "Encoder-only transformer models such as BERT offer a great performance-size tradeoff for retrieval and classification tasks with respect to larger decoder-only models. Despite being the workhorse of numerous production pipelines, there have been limited Pareto improvements to BERT since its release. In this paper, we introduce ModernBERT, bringing modern model optimizations to encoder-only ..."
+    }
+  ]
+}

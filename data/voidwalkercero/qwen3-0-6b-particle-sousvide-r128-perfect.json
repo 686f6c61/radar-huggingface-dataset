@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "VoidWalkercero/Qwen3-0.6B-Particle-SousVide-R128-Perfect",
+  "slug": "voidwalkercero-qwen3-0-6b-particle-sousvide-r128-perfect",
+  "author": "VoidWalkercero",
+  "url": "https://huggingface.co/VoidWalkercero/Qwen3-0.6B-Particle-SousVide-R128-Perfect",
+  "created_at": "2026-08-31T22:17:58.000Z",
+  "updated_at": "2026-09-01T02:38:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf2bin",
+  "languages": [],
+  "tags": [
+    "gguf2bin",
+    "gguf",
+    "qwen3",
+    "0.6B",
+    "particle-sousvide",
+    "q4-vvc",
+    "bvh",
+    "dora",
+    "galore",
+    "moe",
+    "rdru200m",
+    "code",
+    "cyber",
+    "ifeval",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 812038508,
+  "storage_human": "812 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "VoidWalkercero (Popbob) - Hugging Face",
+      "url": "https://huggingface.co/VoidWalkercero",
+      "snippet": "ManhwaVerse Pro - Comic Universe Unleashed! 🚀📚 🐳 Browse and read manhwa, manga, and manhua VoidWalkercero Sep 26, 2025 models6"
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Qwen 3 Full Model Lineup Guide 2026: 0.6B to 72B with Dual-Mode ...",
+      "url": "https://baeseokjae.github.io/posts/qwen-3-full-lineup-guide-2026/",
+      "snippet": "Complete guide to every Qwen 3 model from 0.6B to 235B — specs, VRAM requirements, dual-mode thinking, benchmarks vs. DeepSeek R1 and GPT-4o."
+    }
+  ]
+}

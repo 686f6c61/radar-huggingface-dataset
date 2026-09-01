@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LarryAIDraw/Bronya_Zaychik_Silverwing_N-EXHonkai_impact_3rd",
+  "slug": "larryaidraw-bronya_zaychik_silverwing_n-exhonkai_impact_3rd",
+  "author": "LarryAIDraw",
+  "url": "https://huggingface.co/LarryAIDraw/Bronya_Zaychik_Silverwing_N-EXHonkai_impact_3rd",
+  "created_at": "2026-09-01T01:38:44.000Z",
+  "updated_at": "2026-09-01T01:39:14.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228457092,
+  "storage_human": "228 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LarryAIDraw/Bronya_Zaychik_SilverwBronya_Zaychik_Silverwing_N-EXHonkai ...",
+      "url": "https://huggingface.co/LarryAIDraw/Bronya_Zaychik_SilverwBronya_Zaychik_Silverwing_N-EXHonkai_impact_3rd/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · LarryAIDraw/Bronya_Zaychik_SilverwBronya_Zaychik_Silverwing ...",
+      "url": "https://huggingface.co/LarryAIDraw/Bronya_Zaychik_SilverwBronya_Zaychik_Silverwing_N-EXHonkai_impact_3rd/blob/main/README.md",
+      "snippet": "LarryAIDraw / Bronya_Zaychik_SilverwBronya_Zaychik_Silverwing_N-EXHonkai_impact_3rd like 0 License:creativeml-openrail-m Model card FilesFiles and versions xet Community main Bronya_Zaychik_SilverwBronya_Zaychik_Silverwing_N-EXHonkai_impact_3rd /README.md LarryAIDraw Update README.md b5aa0c6 verifiedover 1 year ago preview code | raw Copy download link history blame contribute delete Safe 121 ..."
+    },
+    {
+      "title": "Bronya Zaychik (Silverwing: N-EX) (ブローニャ 新生の銀翼) [Honkai impact 3rd]",
+      "url": "https://www.seaart.ai/models/detail/233f47938e5ba5f6418df6dc8e789c36",
+      "snippet": "Explore Bronya Zaychik (Silverwing: N-EX) (ブローニャ 新生の銀翼) [Honkai impact 3rd] model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Bronya Zaychik, Bronya Zaychik (Silverwing:… AI Art | PixAI",
+      "url": "https://pixai.art/en/artwork/1976273343357558150",
+      "snippet": "bronya zaychik (silverwing: n-ex),white skin, She opens the door to receive a package, covering herself with a towel because she had just gotten out of the shower."
+    },
+    {
+      "title": "Bronya Zaychik Silverwing 4in1 - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/715a7be970667142a577f100009a1bd4",
+      "snippet": "Explore Bronya Zaychik Silverwing 4in1 model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

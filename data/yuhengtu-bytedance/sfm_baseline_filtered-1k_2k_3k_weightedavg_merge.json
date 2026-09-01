@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_baseline_filtered-1k_2k_3k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_baseline_filtered-1k_2k_3k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-1k_2k_3k_weightedavg_merge",
+  "created_at": "2026-09-01T00:35:08.000Z",
+  "updated_at": "2026-09-01T00:36:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seedance 2.5 Official Launch - BytePlus Seedance 2.5 Launch",
+      "url": "https://duckduckgo.com/y.js?ad_domain=byteplus.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=gHdtysNqAMXGMPkxcGwCiZ_KkQv5bRUGNCFZZEgXuk3%2DHWZz5f1GujzqjlgIGH_S4QblTeFQsXRJWiR_WiIAvch0WHuX1Pt%2DeP3aNM4IRMt1_X6Vqofo8SVVpd8Fqj%2DI1gUEBGs5apullFbcFNelFqSpTUOkD0sejdL%2D7gJrJ9k.T8LU2fsT%2D%2DY5DakJ7Jvenw&rut=07ec647120af668b5c92de16b2a9050d68a6db221eb8ef45a20abce2b2d5f167&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8TTD2ANCvPtoq3OSseb_nQjVUCUzyx%2D7xNQRBTRhsTKWuS0_mJP3MROo_L2TjguLTjVZ6nDliDZaJdyB7aDW5R%2DIX1QsGfJLBG7DdvJ4pMILJREX%2D8OQBf1P7usdhTU5XxDyv0v370XKH0QljSJZV4wN6Jz8xM64gUg2qVaXL99WvAjHPop2DEdjOHRdU681BFXWngAVBEB6t4BLpnbusYwNC0fw%26u%3DaHR0cHMlM2ElMmYlMmZhaS5ieXRlcGx1cy5jb20lMmZlbiUyZmFjdGl2aXR5JTJmc2VlZGFuY2UyLTUlM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RwdXJjaGFzZV9zZWVkYW5jZV9ldV9lbmdsaXNoXzIwMjYwODE5X2xyaCUyNnV0bV90ZXJtJTNkMjAyNjA4MTlfYnJhbmRfYnJvYWRtYXRjaF8yLTVfc2VlZGFuY2UyLjUlMjZ1dG1fY29udGVudCUzZHRlY2RvJTI2bXNjbGtpZCUzZDFhMzIwYTAxOGJhMDE2ZDA5ZjM4NjA5N2E5Zjk4N2Qz%26rlid%3D1a320a018ba016d09f386097a9f987d3&vqd=4-123336054222520507363771229267301717943&iurl=%7B1%7DIG%3D146FBC589D174062863328B645206E36%26CID%3D1DD2B413713B63030162A3D470356281%26ID%3DDevEx%2C5037.1",
+      "snippet": "Seedance 2.5 takes 50 images, audio, and video inputs for better control. Seedance 2.5 turns your prompt into a 30s single-clip video instantly."
+    },
+    {
+      "title": "sfm_baseline_filtered-1k_2k_3k_merge - Hugging Face",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-1k_2k_3k_merge",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yuhengtu-bytedance/sfm-baseline-unfiltered-4k-5k-6k-avg at main",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm-baseline-unfiltered-4k-5k-6k-avg/tree/main",
+      "snippet": "yuhengtu-bytedance / sfm-baseline-unfiltered-4k-5k-6k-avg like 0 Text Generation Transformers Safetensors gpt_neox mergekit Merge text-generation-inference arxiv:2203.05482 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "sfm_baseline_filtered-1k_2k_3k_merge - FriendliAI",
+      "url": "https://friendli.ai/models/yuhengtu-bytedance/sfm_baseline_filtered-1k_2k_3k_merge",
+      "snippet": "Deploy sfm_baseline_filtered-1k_2k_3k_merge with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for ..."
+    },
+    {
+      "title": "sfm-baseline-unfiltered-4k-5k-6k-avg - FriendliAI",
+      "url": "https://friendli.ai/models/yuhengtu-bytedance/sfm-baseline-unfiltered-4k-5k-6k-avg",
+      "snippet": "Deploy sfm-baseline-unfiltered-4k-5k-6k-avg with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

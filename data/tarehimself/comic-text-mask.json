@@ -5,7 +5,7 @@
   "author": "TareHimself",
   "url": "https://huggingface.co/TareHimself/comic-text-mask",
   "created_at": "2026-08-30T19:35:01.000Z",
-  "updated_at": "2026-08-30T19:36:29.000Z",
+  "updated_at": "2026-08-31T18:50:14.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 14339793,
   "parameters_human": "14.3M",
-  "storage_bytes": 172551388,
-  "storage_human": "173 MB",
+  "storage_bytes": 287522736,
+  "storage_human": "288 MB",
   "base_model": null,
   "formats": [
     "safetensors"

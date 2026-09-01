@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Pro152/poca-SoccerTwos",
+  "slug": "pro152-poca-soccertwos",
+  "author": "Pro152",
+  "url": "https://huggingface.co/Pro152/poca-SoccerTwos",
+  "created_at": "2026-08-31T19:43:33.000Z",
+  "updated_at": "2026-08-31T19:43:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SoccerTwos",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SoccerTwos",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 88892148,
+  "storage_human": "89 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "akanametov/MLAgents-poca-SoccerTwos · Hugging Face",
+      "url": "https://huggingface.co/akanametov/MLAgents-poca-SoccerTwos",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "akanametov/SoccerTwos · Hugging Face",
+      "url": "https://huggingface.co/akanametov/SoccerTwos",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "poca-SoccerTwos — MMLU 100, HumanEval 100 | Deploy Guide & Hardware Fit ...",
+      "url": "https://openmodelmap.com/model/zhiliang1/poca-soccertwos",
+      "snippet": "poca-SoccerTwos is an agent model released by zhiliang1, excelling in soccer two-pass combinations and suitable for training football tactical AI."
+    },
+    {
+      "title": "Alex48/poca-SoccerTwos-v15 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/152299",
+      "snippet": "poca Agent playing SoccerTwos This is a trained model of a poca agent playing SoccerTwos using the Unity ML-Agents Library. Usage (with ML-Agents) The Documentation: https://github.com/huggingface/ml-agents#get-started We wrote a complete tutorial to learn to train your first agent using ML-Agents and publish it to the Hub: Resume the training"
+    },
+    {
+      "title": "tslai1992/poca-SoccerTwos - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/260219",
+      "snippet": "poca Agent playing SoccerTwos This is a trained model of a poca agent playing SoccerTwos using the Unity ML-Agents Library. Usage (with ML-Agents) The Documentation: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/ We wrote a complete tutorial to learn to train your first agent using ML-Agents and publish it to ..."
+    }
+  ]
+}

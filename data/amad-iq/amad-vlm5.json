@@ -5,7 +5,7 @@
   "author": "amad-iq",
   "url": "https://huggingface.co/amad-iq/amad-vlm5",
   "created_at": "2026-08-28T08:13:34.000Z",
-  "updated_at": "2026-08-28T08:37:57.000Z",
+  "updated_at": "2026-08-31T09:26:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -40,11 +40,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 21,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": 8292166656,
   "parameters_human": "8.29B",
-  "storage_bytes": 16595836004,
+  "storage_bytes": 16596718819,
   "storage_human": "16.6 GB",
   "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
   "formats": [

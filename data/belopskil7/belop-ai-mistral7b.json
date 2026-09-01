@@ -5,7 +5,7 @@
   "author": "belopskil7",
   "url": "https://huggingface.co/belopskil7/belop-ai-mistral7b",
   "created_at": "2026-08-31T15:23:36.000Z",
-  "updated_at": "2026-08-31T15:23:56.000Z",
+  "updated_at": "2026-08-31T17:02:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 168419650,
-  "storage_human": "168 MB",
+  "storage_bytes": 336251890,
+  "storage_human": "336 MB",
   "base_model": "unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
   "formats": [
     "safetensors"

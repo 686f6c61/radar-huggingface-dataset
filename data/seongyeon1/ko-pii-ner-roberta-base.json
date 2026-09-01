@@ -5,7 +5,7 @@
   "author": "seongyeon1",
   "url": "https://huggingface.co/seongyeon1/ko-pii-ner-roberta-base",
   "created_at": "2026-08-31T01:19:14.000Z",
-  "updated_at": "2026-08-31T01:22:33.000Z",
+  "updated_at": "2026-08-31T04:01:32.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -33,12 +33,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 11,
   "trending_score": 0,
   "parameters": 110059049,
   "parameters_human": "110.1M",
-  "storage_bytes": 440260132,
-  "storage_human": "440 MB",
+  "storage_bytes": 880520264,
+  "storage_human": "881 MB",
   "base_model": "klue/roberta-base",
   "formats": [
     "safetensors"

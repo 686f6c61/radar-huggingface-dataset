@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "bmars8218/sn92-code-mt3g-r1238",
+  "slug": "bmars8218-sn92-code-mt3g-r1238",
+  "author": "bmars8218",
+  "url": "https://huggingface.co/bmars8218/sn92-code-mt3g-r1238",
+  "created_at": "2026-08-31T22:47:36.000Z",
+  "updated_at": "2026-08-31T22:47:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "microtensor",
+    "bittensor",
+    "arena-code-mt-3g",
+    "round-1238",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - enka1504/sn92-mt3g: Microtensor SN92 code/mt-3g immutable ...",
+      "url": "https://github.com/enka1504/sn92-mt3g",
+      "snippet": "Immutable release assets for a Microtensor SN92 code/mt-3g submission. The signed manifest.json binds the model bytes, round, hardware class, declared resource ceilings, pinned base-model revision, and submitting hotkey. Validators should verify the manifest before loading model.gguf."
+    },
+    {
+      "title": "GohaDAYN/sn92-front-mt3g · Hugging Face",
+      "url": "https://huggingface.co/GohaDAYN/sn92-front-mt3g",
+      "snippet": "GohaDAYN / sn92-front-mt3g like 0 GGUF conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "sn92-mt3g/README.md at main · enka1504/sn92-mt3g · GitHub",
+      "url": "https://github.com/enka1504/sn92-mt3g/blob/main/README.md",
+      "snippet": "SN92 mt-3g artifact Immutable release assets for a Microtensor SN92 code/mt-3g submission. The signed manifest.json binds the model bytes, round, hardware class, declared resource ceilings, pinned base-model revision, and submitting hotkey. Validators should verify the manifest before loading model.gguf."
+    },
+    {
+      "title": "codex176743/mt-sn92-code-mt3g · Hugging Face",
+      "url": "https://huggingface.co/codex176743/mt-sn92-code-mt3g",
+      "snippet": "codex176743 / mt-sn92-code-mt3g like 0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Sn92 Code Mt3g - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/gohadayn/sn92-code-mt3g",
+      "snippet": "Registry entry for model Sn92 Code Mt3g; source metadata pending."
+    }
+  ]
+}

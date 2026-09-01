@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "thepatch/acestep-1.5-mlx",
+  "slug": "thepatch-acestep-1-5-mlx",
+  "author": "thepatch",
+  "url": "https://huggingface.co/thepatch/acestep-1.5-mlx",
+  "created_at": "2026-08-31T22:07:33.000Z",
+  "updated_at": "2026-08-31T22:56:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "ace-step",
+    "music-generation",
+    "text-to-audio",
+    "base_model:ACE-Step/acestep-v15-xl-base",
+    "base_model:finetune:ACE-Step/acestep-v15-xl-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11615387363,
+  "storage_human": "11.6 GB",
+  "base_model": "ACE-Step/acestep-v15-xl-base",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ACE-Step/Ace-Step1.5 · Hugging Face",
+      "url": "https://huggingface.co/ACE-Step/Ace-Step1.5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - sw30labs/ace-step-1.5-mlx · GitHub",
+      "url": "https://github.com/sw30labs/ace-step-1.5-mlx",
+      "snippet": "Local Apple Silicon project for uE / ACE-Step 1.5 by ACE Studio and StepFun, a text-to-song model that generates full songs with vocals from a style prompt and lyrics. This project wraps the official ACE-Step/ACE-Step-1.5 runtime and forces its Apple Silicon MLX path: 5Hz LM backend: mlx DiT diffusion: native MLX when available VAE encode/decode: native MLX when available Default DiT: acestep ..."
+    },
+    {
+      "title": "GitHub - ace-step/ACE-Step-1.5: The most powerful local music ...",
+      "url": "https://github.com/ace-step/ACE-Step-1.5",
+      "snippet": "The most powerful local music generation model that outperforms almost all commercial alternatives, supporting Mac, AMD, Intel, and CUDA devices. - ace-step/ACE-Step-1.5"
+    },
+    {
+      "title": "MLX (Apple Silicon) Integration | ace-step/ACE-Step-1.5 | DeepWiki",
+      "url": "https://deepwiki.com/ace-step/ACE-Step-1.5/8.9-mlx-(apple-silicon)-integration",
+      "snippet": "The ACE-Step 1.5 system provides native acceleration for Apple Silicon (M1/M2/M3/M4) via the MLX framework. This integration bypasses the overhead of the PyTorch MPS (Metal Performance Shaders) backen"
+    },
+    {
+      "title": "ACE-Step 1.5: Pushing the Boundaries of Open-Source Music Generation",
+      "url": "https://ace-step.github.io/ace-step-v1.5.github.io/",
+      "snippet": "📝 Abstract 🚀 We present ACE-Step v1.5, a highly efficient open-source music foundation model that brings commercial-grade generation to consumer hardware. On commonly used evaluation metrics, ACE-Step v1.5 achieves quality beyond most commercial music models while remaining extremely fast— under 2 seconds per full song on an A100 and under 10 seconds on an RTX 3090. The model runs ..."
+    }
+  ]
+}

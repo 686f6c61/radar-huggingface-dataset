@@ -5,7 +5,7 @@
   "author": "agurung",
   "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp20-vs30v11v",
   "created_at": "2026-08-30T21:54:57.000Z",
-  "updated_at": "2026-08-31T02:38:09.000Z",
+  "updated_at": "2026-08-31T12:36:57.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 288,
   "trending_score": 0,
   "parameters": 4411424256,
   "parameters_human": "4.41B",
-  "storage_bytes": 17657211690,
-  "storage_human": "17.7 GB",
+  "storage_bytes": 70594578810,
+  "storage_human": "70.6 GB",
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"

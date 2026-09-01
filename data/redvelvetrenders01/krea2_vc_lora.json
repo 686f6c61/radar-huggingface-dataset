@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "redvelvetrenders01/KREA2_VC_lora",
+  "slug": "redvelvetrenders01-krea2_vc_lora",
+  "author": "redvelvetrenders01",
+  "url": "https://huggingface.co/redvelvetrenders01/KREA2_VC_lora",
+  "created_at": "2026-09-01T00:19:03.000Z",
+  "updated_at": "2026-09-01T00:19:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 460741536,
+  "storage_human": "461 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 26 Krea2 LoRA models for Stylized Image Generation",
+      "url": "https://www.stablediffusiontutorials.com/2026/06/krea2-lora-models.html",
+      "snippet": "Krea2 Realism V1 LoRA is designed to improve photorealistic image generation by enhancing skin textures, human anatomy, and clothing details. It produces natural-looking results across diverse ethnicities, ages, and body types, making it suitable for a wide range of portrait and character generation tasks."
+    },
+    {
+      "title": "Krea 2 LoRA training is now available",
+      "url": "https://www.krea.ai/blog/krea-2-lora-training",
+      "snippet": "Frequently asked questions Who can use Krea 2 LoRA training? Krea 2 LoRA training is in beta and available to Max and Business subscribers while we roll it out more broadly."
+    },
+    {
+      "title": "Krea 2 Open-Source: RAW and Turbo Image Models",
+      "url": "https://www.krea.ai/krea-2-open-source",
+      "snippet": "The most aesthetic open-source image model Krea 2 Open-Source brings Krea 2, our aesthetic-first model family, into the open with open weights on Hugging Face. Use Turbo for fast, polished text-to-image and RAW when you need the malleable base checkpoint for LoRA training in ComfyUI and beyond."
+    },
+    {
+      "title": "GitHub - krea-ai/krea-2: Official inference code for Krea 2",
+      "url": "https://github.com/krea-ai/krea-2",
+      "snippet": "Krea 2 - an image generation model from Krea AI. API Docs • Hugging Face (RAW) • Hugging Face (TURBO) • Technical Blog This is the official repository for the open version of Krea 2, an image model trained from scratch focused on creative and stylistic exploration. The repository contains inference code and instructions to run the model."
+    },
+    {
+      "title": "GitHub - ChrisColeTech/ComfyUI-GGUF-Loader: GGUF Quantization support ...",
+      "url": "https://github.com/ChrisColeTech/ComfyUI-GGUF-Loader/blob/main/",
+      "snippet": "When on, images stops being an img2img source and becomes the LoRA&#x27;s source photo: it&#x27;s injected as in-context tokens (the same model-forward wrapper Krea2 Identity Edit (source patch) uses) and grounds prompt / negative_prompt on that image through Qwen3-VL (the same path Krea2 Identity Edit (grounded encode) uses) instead of plain text ..."
+    }
+  ]
+}

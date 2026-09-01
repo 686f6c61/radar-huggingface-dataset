@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AbstractPhil/mini-beatrix-2s",
+  "slug": "abstractphil-mini-beatrix-2s",
+  "author": "AbstractPhil",
+  "url": "https://huggingface.co/AbstractPhil/mini-beatrix-2s",
+  "created_at": "2026-08-31T19:41:50.000Z",
+  "updated_at": "2026-08-31T21:11:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "mini-beatrix",
+    "byte-level",
+    "linear-attention",
+    "splat-attention",
+    "aleph",
+    "custom_code",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 237908285,
+  "parameters_human": "237.9M",
+  "storage_bytes": 475880498,
+  "storage_human": "476 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AbstractPhil/alephllm-mini-beatrix-training · Hugging Face",
+      "url": "https://huggingface.co/AbstractPhil/alephllm-mini-beatrix-training",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Raising Beatrix: A Byte-Level Model&#x27;s Measured Childhood",
+      "url": "https://huggingface.co/blog/AbstractPhil/beatrix-ft1",
+      "snippet": "This installment is about one model. mini-beatrix-1 — Beatrix — is a 112.5-million-parameter language model that reads raw bytes instead of tokens, built from the aleph mechanisms the previous article introduced: learned anchor directions, signed addresses, expert modules born contributing exactly zero. Over ten days she was pretrained on 15.3 billion bytes of web text, given a measured ..."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "Beatrix. - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d1bkkk5e878c73e41g50",
+      "snippet": "Explore Beatrix. model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "miniapps.ai · Discover & Create Free AI-powered And ChatGPT Mini Apps ...",
+      "url": "https://miniapps.ai/",
+      "snippet": "Explore and create a wide range of free AI-powered mini apps, chatbots and AI tools for various categories, including health, social media, SEO, and more. Unlock the power of AI and ChatGPT with miniapps.ai!"
+    }
+  ]
+}

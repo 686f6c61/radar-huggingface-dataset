@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "islamassanov/Kimi-K3-Mixed-IQ2-GGUF",
+  "slug": "islamassanov-kimi-k3-mixed-iq2-gguf",
+  "author": "islamassanov",
+  "url": "https://huggingface.co/islamassanov/Kimi-K3-Mixed-IQ2-GGUF",
+  "created_at": "2026-08-31T17:50:03.000Z",
+  "updated_at": "2026-09-01T00:13:53.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "quantized",
+    "2-bit",
+    "iq2",
+    "kimi-k3",
+    "multimodal",
+    "image-text-to-text",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2779483135584,
+  "parameters_human": "2779.48B",
+  "storage_bytes": 946123090080,
+  "storage_human": "946.1 GB",
+  "base_model": "MoonshotAI/Kimi-K3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vcruz305/Kimi-K3-Neuron-IQ2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/vcruz305/Kimi-K3-Neuron-IQ2-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/Kimi-K3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Kimi-K3-GGUF",
+      "snippet": "Native Multimodality & Long Context: Kimi K3 understands text, images, and video within the same model, and supports a 1-million-token context window. Open Frontier Weights: We release the full Kimi K3 model weights under the Kimi K3 License, making frontier intelligence openly available for research, deployment, and further innovation. 2."
+    },
+    {
+      "title": "Kimi K3: 2.8T Open Model for Coding & Knowledge Work",
+      "url": "https://www.kimi.ai/ai-models/kimi-k3",
+      "snippet": "Meet Kimi K3, a 2.8T-parameter model with native vision and a 1M context window. Create playable games, polished slides, interactive reports, and more."
+    },
+    {
+      "title": "kimi-k3 Model by Moonshotai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/moonshotai/kimi-k3/modelcard",
+      "snippet": "Kimi-K3 is an open-weight, native multimodal agentic model developed by Moonshot AI for long-horizon coding, knowledge work, visual understanding, and reasoning."
+    },
+    {
+      "title": "kimi-k3 Model by Moonshotai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/moonshotai/kimi-k3",
+      "snippet": "~2.8T hybrid KDA+MLA multimodal MoE for long-horizon coding, agentic tool use, and image understanding."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dianavdavidson/wav2vec2-xls-r-300m-iv_hindi_only-62232-normalized-5e-6-epochs-100-FT",
+  "slug": "dianavdavidson-wav2vec2-xls-r-300m-iv_hindi_only-62232-normalized-5e-6-epochs-100-ft",
+  "author": "dianavdavidson",
+  "url": "https://huggingface.co/dianavdavidson/wav2vec2-xls-r-300m-iv_hindi_only-62232-normalized-5e-6-epochs-100-FT",
+  "created_at": "2026-08-31T23:38:59.000Z",
+  "updated_at": "2026-09-01T00:29:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "base_model:facebook/wav2vec2-xls-r-300m",
+    "base_model:finetune:facebook/wav2vec2-xls-r-300m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 315512520,
+  "parameters_human": "315.5M",
+  "storage_bytes": 1262107680,
+  "storage_human": "1.3 GB",
+  "base_model": "facebook/wav2vec2-xls-r-300m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dianavdavidson/wav2vec2-large-xlsr-hindi-iv_hindi_only-62080-normalized ...",
+      "url": "https://huggingface.co/dianavdavidson/wav2vec2-large-xlsr-hindi-iv_hindi_only-62080-normalized-alldata-1e-4-epochs-100-FT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "facebook/wav2vec2-xls-r-300m · Hugging Face",
+      "url": "https://huggingface.co/facebook/wav2vec2-xls-r-300m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WAV2VEC2_XLSR_300M — Torchaudio 2.3.0 documentation",
+      "url": "https://docs.pytorch.org/audio/2.3/generated/torchaudio.pipelines.WAV2VEC2_XLSR_300M.html",
+      "snippet": "XLS-R model with 300 million parameters, pre-trained on 436,000 hours of unlabeled audio from multiple datasets ( Multilingual LibriSpeech[Pratap et al., 2020], CommonVoice[Ardila et al., 2020], VoxLingua107[Valk and Alumäe, 2021], BABEL[Gales et al., 2014], and VoxPopuli[Wang et al., 2021]) in 128 languages, not fine-tuned."
+    },
+    {
+      "title": "WAV2VEC2_XLSR_300M — Torchaudio 2.11 documentation",
+      "url": "https://docs.pytorch.org/audio/stable/generated/torchaudio.pipelines.WAV2VEC2_XLSR_300M.html",
+      "snippet": "torchaudio.pipelines.WAV2VEC2_XLSR_300M ¶ XLS-R model with 300 million parameters, pre-trained on 436,000 hours of unlabeled audio from multiple datasets ( Multilingual LibriSpeech [Pratap et al., 2020], CommonVoice [Ardila et al., 2020], VoxLingua107 [Valk and Alumäe, 2021], BABEL [Gales et al., 2014], and VoxPopuli [Wang et al., 2021]) in 128 languages, not fine-tuned. Originally published ..."
+    },
+    {
+      "title": "[2111.09296] XLS-R: Self-supervised Cross-lingual Speech Representation ...",
+      "url": "https://arxiv.org/abs/2111.09296",
+      "snippet": "This paper presents XLS-R, a large-scale model for cross-lingual speech representation learning based on wav2vec 2.0. We train models with up to 2B parameters on nearly half a million hours of publicly available speech audio in 128 languages, an order of magnitude more public data than the largest known prior work. Our evaluation covers a wide range of tasks, domains, data regimes and ..."
+    }
+  ]
+}

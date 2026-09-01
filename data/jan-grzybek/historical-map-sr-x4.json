@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "jan-grzybek/historical-map-sr-x4",
+  "slug": "jan-grzybek-historical-map-sr-x4",
+  "author": "jan-grzybek",
+  "url": "https://huggingface.co/jan-grzybek/historical-map-sr-x4",
+  "created_at": "2026-08-31T19:32:00.000Z",
+  "updated_at": "2026-08-31T19:38:24.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "super-resolution",
+    "upscaling",
+    "maps",
+    "historical",
+    "cartography",
+    "archives",
+    "spandrel",
+    "image-to-image",
+    "arxiv:2404.11848",
+    "base_model:Phips/4xNomosWebPhoto_RealPLKSR",
+    "base_model:finetune:Phips/4xNomosWebPhoto_RealPLKSR",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7389680,
+  "parameters_human": "7.4M",
+  "storage_bytes": 46193648,
+  "storage_human": "46 MB",
+  "base_model": "Phips/4xNomosWebPhoto_RealPLKSR",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenHistoricalMap",
+      "url": "https://www.openhistoricalmap.org/",
+      "snippet": "OpenHistoricalMap is an interactive map of the world throughout history, created by people like you and dedicated to the public domain. OpenHistoricalMap is a charter project of OpenStreetMap U.S., a 501 (c) (3) nonprofit organization affiliated with the OpenStreetMap Foundation."
+    },
+    {
+      "title": "OpenHistoricalMap",
+      "url": "https://embed.openhistoricalmap.org/",
+      "snippet": "Explore and contribute to historical map data with OpenHistoricalMap, a collaborative platform showcasing the world&#x27;s history through maps."
+    },
+    {
+      "title": "Historic Map Works",
+      "url": "https://www.historicmapworks.com/",
+      "snippet": "Discover the world&#x27;s largest collection of historic maps, charts, and genealogy resources available for custom prints or downloads."
+    },
+    {
+      "title": "Open History Map — The Digital Map of the Past",
+      "url": "https://www.openhistorymap.org/",
+      "snippet": "OpenHistoryMap is an italian non profit association (APS) founded by a team of archaeologists and software developers based in Bologna, Italy. The aim is the creation of a web-GIS"
+    },
+    {
+      "title": "AI-powered history map of civilization&#x27;s timeline │ Historica",
+      "url": "https://www.historica.org/",
+      "snippet": "The Historica Team Presented AI-Powered Historical Map at the University of Cambridge Historica participated in an academic seminar at the … University of Cambridge, presenting its AI-powered approach to modelling historical processes and mapping the evolution of state borders from the 11th century to the present."
+    }
+  ]
+}

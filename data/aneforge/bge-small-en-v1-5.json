@@ -5,7 +5,7 @@
   "author": "aneforge",
   "url": "https://huggingface.co/aneforge/bge-small-en-v1.5",
   "created_at": "2026-08-30T22:38:06.000Z",
-  "updated_at": "2026-08-30T22:42:42.000Z",
+  "updated_at": "2026-08-31T02:43:50.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": 33360512,
   "parameters_human": "33.4M",

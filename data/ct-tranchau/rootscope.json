@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ct-tranchau/Rootscope",
+  "slug": "ct-tranchau-rootscope",
+  "author": "ct-tranchau",
+  "url": "https://huggingface.co/ct-tranchau/Rootscope",
+  "created_at": "2026-08-02T20:28:17.000Z",
+  "updated_at": "2026-09-01T00:55:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "rootscope",
+  "languages": [],
+  "tags": [
+    "rootscope",
+    "joblib",
+    "biology",
+    "plant-biology",
+    "microscopy",
+    "image-segmentation",
+    "cell-type-classification",
+    "cellpose",
+    "dinov2",
+    "image-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 952645087,
+  "storage_human": "953 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ct-tranchau/Rootscope · Hugging Face",
+      "url": "https://huggingface.co/ct-tranchau/Rootscope",
+      "snippet": "Trained model weights for RootScope. RootScope takes a raw confocal root-tip cross-section TIFF, segments every cell with Cellpose-SAM, describes each cell with hand-crafted morpho-topological features plus fine-tuned DINOv2 embeddings, and classifies it into one of nine anatomical cell types using an iterative tree-based ensemble."
+    },
+    {
+      "title": "ct-tranchau (Tran Chau) - Hugging Face",
+      "url": "https://huggingface.co/ct-tranchau",
+      "snippet": "Recent Activity updated a model2 days ago ct-tranchau/Rootscope published a model2 days ago ct-tranchau/Rootscope View all activity"
+    },
+    {
+      "title": "RootScope: A Tool for Reconstructing Taproot Script Paths - Medium",
+      "url": "https://medium.com/@aaron.recompile/rootscope-a-tool-for-reconstructing-taproot-script-paths-step-by-step-106012af54b9",
+      "snippet": "RootScope: A Tool for Reconstructing Taproot Script Paths — Step by Step When you spend from a Taproot script path, the hash chain is deterministic. Reconstructing it by hand is a trap."
+    },
+    {
+      "title": "Frontiers | Deep learning for intracranial hemorrhage detection and ...",
+      "url": "https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2026.1703634/full",
+      "snippet": "Analysing the results, the paper showed that the integrated approach of CNN and LSTM increases the detection rates, eliminated the overfitting problem, and propose a more powerful model for ICH classification. Ahmed et al. proposed a deep learning model based on EfficientDet with Grad-CAM and ResNet for ICH detection from the CT scan ( 20 )."
+    },
+    {
+      "title": "4DRoot: Root phenotyping software for temporal 3D scans by ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2022.986856/full",
+      "snippet": "The 4DRoot software tool Implementation The code is based on TreeQSM 1 ( Raumonen et al., 2013 ) but applied to X-ray CT root scans as a 3D surface geometry. We adapted the code to fit 3D scans from roots into flexible cylindrical quantitative structure models (QSM), following topological, hierarchical, and geometric rules. A QSM of a root is a model of the root structure that describes ..."
+    }
+  ]
+}

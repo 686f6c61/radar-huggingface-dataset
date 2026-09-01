@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-1k_2k_3k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_unfiltered_e2e_misalignment-1k_2k_3k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-1k_2k_3k_weightedavg_merge",
+  "created_at": "2026-09-01T00:36:34.000Z",
+  "updated_at": "2026-09-01T00:37:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-1k_2k_3k_merge ...",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-1k_2k_3k_merge",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yuhengtu-bytedance/sfm-unfiltered-e2e-misalignment-4k-5k-6k-avg ...",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-e2e-misalignment-4k-5k-6k-avg/discussions",
+      "snippet": "Instructions to use yuhengtu-bytedance/sfm-unfiltered-e2e-misalignment-4k-5k-6k-avg with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "sfm_unfiltered_midtrain_misalignment-1k_2k_3k_merge",
+      "url": "https://friendli.ai/models/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-1k_2k_3k_merge",
+      "snippet": "Deploy sfm_unfiltered_midtrain_misalignment-1k_2k_3k_merge with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Seedream 4.0 - seed.bytedance.com",
+      "url": "https://seed.bytedance.com/en/seedream4_0",
+      "snippet": "As a new-generation image creation model, Seedream 4.0 integrates image generation and image editing capabilities into a single, unified architecture. This allows it to flexibly handle complex multimodal tasks, including knowledge-based generation, complex reasoning, and reference consistency."
+    },
+    {
+      "title": "sfm-unfiltered-e2e-misalignment-4k-5k-6k-avg - friendli.ai",
+      "url": "https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-e2e-misalignment-4k-5k-6k-avg",
+      "snippet": "Deploy sfm-unfiltered-e2e-misalignment-4k-5k-6k-avg with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

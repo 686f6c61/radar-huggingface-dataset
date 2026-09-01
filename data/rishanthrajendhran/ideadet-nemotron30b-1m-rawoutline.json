@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rishanthrajendhran/ideadet-nemotron30b-1m-rawoutline",
+  "slug": "rishanthrajendhran-ideadet-nemotron30b-1m-rawoutline",
+  "author": "rishanthrajendhran",
+  "url": "https://huggingface.co/rishanthrajendhran/ideadet-nemotron30b-1m-rawoutline",
+  "created_at": "2026-08-31T19:58:56.000Z",
+  "updated_at": "2026-08-31T19:59:17.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "ai-detection",
+    "lora",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3088638968,
+  "storage_human": "3.1 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rishanthrajendhran (Rishanth Rajendhran) - Hugging Face",
+      "url": "https://huggingface.co/rishanthrajendhran",
+      "snippet": "NLP, LLM, Prompting, Multimodality, RLHF, Local Explainability AI & ML interests NLP, LLM, Prompting, Multimodality, RLHF, Local Explainability"
+    },
+    {
+      "title": "rishanthrajendhran (Rishanth Rajendhran) - Hugging Face",
+      "url": "https://huggingface.co/rishanthrajendhran/datasets",
+      "snippet": "rishanthrajendhran&#x27;s datasets2 Sort: Recently updated rishanthrajendhran/POLARIS Viewer •Updated 22 days ago•1.57k• 83"
+    },
+    {
+      "title": "nemotron-3-nano-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-nano-30b-a3b/modelcard",
+      "snippet": "Nemotron-3-Nano-30B-A3B is a large language model (LLM) trained from scratch by NVIDIA, and designed as a unified model for both reasoning and non-reasoning tasks."
+    },
+    {
+      "title": "RishanthRajendhran (Rishanth Rajendhran) · GitHub",
+      "url": "https://github.com/RishanthRajendhran/",
+      "snippet": "RishanthRajendhran has 44 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "The technical reports outlining the steps necessary to recreate these models are also freely available. The new Nemotron 3 family provides the most efficient multimodal models, powered by hybrid Mamba‑Transformer MoE with 1M-token context, delivering top accuracy for complex, high-throughput agentic AI applications."
+    }
+  ]
+}

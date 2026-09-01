@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Haotian-Qi/MuVAP",
+  "slug": "haotian-qi-muvap",
+  "author": "Haotian-Qi",
+  "url": "https://huggingface.co/Haotian-Qi/MuVAP",
+  "created_at": "2026-08-31T19:41:23.000Z",
+  "updated_at": "2026-08-31T19:41:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Haotian-Qi/MuVAP: Interspeech 2026: MuVAP: Multimodal ...",
+      "url": "https://github.com/Haotian-Qi/MuVAP",
+      "snippet": "Interspeech 2026: MuVAP: Multimodal Multiparty Voice Activity Projection for Turn-taking Prediction in the wild - Haotian-Qi/MuVAP"
+    },
+    {
+      "title": "Haotian-Qi",
+      "url": "https://haotian-qi.github.io/",
+      "snippet": "Haotian Qi [齊] haotianq@kth.se I am a third-year PhD student at TMH, KTH Royal Institute of Technology, where I am advised by Prof. Gabriel Skantze and Prof. Gustav Eje Henter My research is funded by the Wallenberg AI, Autonomous Systems and Software Program (WASP). Previously, I completed my Integrated Master&#x27;s (MComp) in Computer Science with Artificial Intelligence at the University of ..."
+    },
+    {
+      "title": "[2606.16731] MuVAP: Multimodal Multiparty Voice Activity Projection for ...",
+      "url": "https://arxiv.org/abs/2606.16731",
+      "snippet": "Current multiparty turn-taking models often rely on complex microphone arrays or multi-camera setups, limiting their applicability in human-robot interaction scenarios. We introduce MuVAP, a causal multimodal framework that extends Voice Activity Projection by grounding acoustic predictions in face tracks, enabling speaker-aware turn-taking predictions from a monaural audio stream and a single ..."
+    },
+    {
+      "title": "MuVAP: Multimodal Multiparty Voice Activity Projection for Turn-taking ...",
+      "url": "https://arxiv.org/pdf/2606.16731",
+      "snippet": "In multiparty dialogue, the visual channel is indispensable, since the model must determine not only if a turn is ending, but who among the group is the next speaker. We propose MuVAP (Multimodal Multiparty Voice Activ-ity Projection), a framework that anchors voice activity projec-tions to faces detected in the video stream."
+    },
+    {
+      "title": "MuVAP/README.md at main · Haotian-Qi/MuVAP · GitHub",
+      "url": "https://github.com/Haotian-Qi/MuVAP/blob/main/README.md",
+      "snippet": "Interspeech 2026: MuVAP: Multimodal Multiparty Voice Activity Projection for Turn-taking Prediction in the wild - MuVAP/README.md at main · Haotian-Qi/MuVAP"
+    }
+  ]
+}

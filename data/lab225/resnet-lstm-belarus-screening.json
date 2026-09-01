@@ -5,7 +5,7 @@
   "author": "lab225",
   "url": "https://huggingface.co/lab225/resnet-lstm-belarus-screening",
   "created_at": "2026-08-27T14:08:06.000Z",
-  "updated_at": "2026-08-27T14:52:00.000Z",
+  "updated_at": "2026-08-31T14:34:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",

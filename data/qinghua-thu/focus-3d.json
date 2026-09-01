@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Qinghua-thu/FOCUS-3D",
+  "slug": "qinghua-thu-focus-3d",
+  "author": "Qinghua-thu",
+  "url": "https://huggingface.co/Qinghua-thu/FOCUS-3D",
+  "created_at": "2026-08-15T07:28:02.000Z",
+  "updated_at": "2026-09-01T01:49:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13405740508,
+  "storage_human": "13.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qinghua-thu/FOCUS-3D · Hugging Face",
+      "url": "https://huggingface.co/Qinghua-thu/FOCUS-3D",
+      "snippet": "FOCUS-3D Pretrained Models This repository provides the pretrained model weights for FOCUS-3D, a deep learning framework for robust and generalizable 3D cell segmentation in fluorescence microscopy."
+    },
+    {
+      "title": "README.md · Qinghua-thu/FOCUS-3D at main - Hugging Face",
+      "url": "https://huggingface.co/Qinghua-thu/FOCUS-3D/blob/main/README.md",
+      "snippet": "FOCUS-3D Pretrained Models This repository provides the pretrained model weights for FOCUS-3D, a deep learning framework for robust and generalizable 3D cell segmentation in fluorescence microscopy."
+    },
+    {
+      "title": "GitHub - yu-lab-vt/FOCUS-3D",
+      "url": "https://github.com/yu-lab-vt/FOCUS-3D",
+      "snippet": "FOCUS-3D provides a user-friendly napari plugin for interactive 3D cell segmentation, manual curation, model fine-tuning, and analysis. Users can run automatic 3D segmentation with pretrained FOCUS-3D models, manually correct segmentation errors, perform one-click segmentation, prepare curated patches for human-in-the-loop fine-tuning, reconstruct selected 3D cell instances, and compute ..."
+    },
+    {
+      "title": "focus-3d · PyPI",
+      "url": "https://pypi.org/project/focus-3d/",
+      "snippet": "FOCUS-3D FOCUS-3D provides a user-friendly napari plugin for interactive 3D cell segmentation, manual curation, model fine-tuning, and analysis. Users can run automatic 3D segmentation with pretrained FOCUS-3D models, manually correct segmentation errors, perform one-click segmentation, prepare curated patches for human-in-the-loop fine-tuning, reconstruct selected 3D cell instances, and ..."
+    },
+    {
+      "title": "FOCUS‑3D: Robust, generalizable volumetric cell ... - bioRxiv",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.08.25.746907v1",
+      "snippet": "Here, we introduce FOCUS-3D, a robust, broadly generalizable volumetric cell segmentation framework built on a large, diverse manually annotated cell resource and advanced AI designs."
+    }
+  ]
+}

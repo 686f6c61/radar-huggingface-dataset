@@ -5,7 +5,7 @@
   "author": "aneforge",
   "url": "https://huggingface.co/aneforge/whisper-tiny.en",
   "created_at": "2026-08-30T22:38:32.000Z",
-  "updated_at": "2026-08-30T22:42:38.000Z",
+  "updated_at": "2026-08-31T02:44:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 37760256,
   "parameters_human": "37.8M",

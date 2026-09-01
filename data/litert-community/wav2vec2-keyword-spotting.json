@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "litert-community/wav2vec2-keyword-spotting",
+  "slug": "litert-community-wav2vec2-keyword-spotting",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/wav2vec2-keyword-spotting",
+  "created_at": "2026-06-26T20:22:23.000Z",
+  "updated_at": "2026-09-01T01:45:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "on-device",
+    "audio-classification",
+    "keyword-spotting",
+    "base_model:superb/wav2vec2-base-superb-ks",
+    "base_model:finetune:superb/wav2vec2-base-superb-ks",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 81,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 189812368,
+  "storage_human": "190 MB",
+  "base_model": "superb/wav2vec2-base-superb-ks",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/wav2vec2-keyword-spotting · Hugging Face",
+      "url": "https://huggingface.co/litert-community/wav2vec2-keyword-spotting",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "litert-community/wav2vec2-keyword-spotting at main",
+      "url": "https://huggingface.co/litert-community/wav2vec2-keyword-spotting/tree/main",
+      "snippet": "Instructions to use litert-community/wav2vec2-keyword-spotting with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "LiteRT-Models/wav2vec2-kws/README.md at main · john-rocky ... - GitHub",
+      "url": "https://github.com/john-rocky/LiteRT-Models/blob/main/wav2vec2-kws/README.md",
+      "snippet": "wav2vec2 — Keyword Spotting on-device (LiteRT GPU, all-GPU) wav2vec2 keyword spotting (superb/wav2vec2-base-superb-ks, Apache-2.0) running fully on the LiteRT CompiledModel GPU (ML Drift). Classifies 1 s of 16 kHz audio into 12 Speech-Commands labels (yes / no / up / down / left / right / on / off / stop / go / unknown / silence). The demo classifies a bundled clip on launch and lets you ..."
+    },
+    {
+      "title": "GitHub - dobby-seo/Wav2Keyword: Wav2Keyword is keyword spotting (KWS ...",
+      "url": "https://github.com/dobby-seo/Wav2Keyword",
+      "snippet": "Wav2Keyword is keyword spotting (KWS) based on Wav2Vec 2.0. This model shows state-of-the-art in Speech commands dataset V1 and V2."
+    },
+    {
+      "title": "Audio-Classification-on-Keyword-Spotting.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/audio_classification.ipynb",
+      "snippet": "This notebook is built to run on the Keyword Spotting subset of the SUPERB dataset with any speech model checkpoint from the Model Hub as long as that model has a version with a Sequence Classification head (e.g. Wav2Vec2ForSequenceClassification)."
+    }
+  ]
+}

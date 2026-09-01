@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rishanthrajendhran/ideadet-modernbert-1m-document2outline",
+  "slug": "rishanthrajendhran-ideadet-modernbert-1m-document2outline",
+  "author": "rishanthrajendhran",
+  "url": "https://huggingface.co/rishanthrajendhran/ideadet-modernbert-1m-document2outline",
+  "created_at": "2026-08-31T19:57:49.000Z",
+  "updated_at": "2026-08-31T19:57:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "ai-detection",
+    "text-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395833346,
+  "parameters_human": "395.8M",
+  "storage_bytes": 1583351632,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": true,
+  "removed_at": "2026-09-01T02:59:00.506Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AnswerDotAI/ModernBERT: Bringing BERT into modernity via both ...",
+      "url": "https://github.com/AnswerDotAI/ModernBERT",
+      "snippet": "This is the research repository for ModernBERT, focused on pre-training and evaluations. If you&#x27;re seeking the HuggingFace version, designed to integrate with any common pipeline, please head to the ModernBERT Collection on HuggingFace ModernBERT is a collaboration between Answer.AI, LightOn, and friends."
+    },
+    {
+      "title": "ModernBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/modernbert",
+      "snippet": "The bare Modernbert Model outputting raw hidden-states without any specific head on top. This model inherits from PreTrainedModel. Check the superclass documentation for the generic methods the library implements for all its model (such as downloading or saving, resizing the input embeddings, pruning heads etc.)"
+    },
+    {
+      "title": "ModernBERT - a answerdotai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/answerdotai/modernbert",
+      "snippet": "Bringing BERT into modernity via both architecture changes and scaling"
+    },
+    {
+      "title": "ModernBERT/README.md at main · AnswerDotAI/ModernBERT · GitHub",
+      "url": "https://github.com/AnswerDotAI/ModernBERT/blob/main/README.md",
+      "snippet": "This is the research repository for ModernBERT, focused on pre-training and evaluations. If you&#x27;re seeking the HuggingFace version, designed to integrate with any common pipeline, please head to the ModernBERT Collection on HuggingFace ModernBERT is a collaboration between Answer.AI, LightOn, and friends."
+    },
+    {
+      "title": "[2412.13663] Smarter, Better, Faster, Longer: A Modern Bidirectional ...",
+      "url": "https://arxiv.org/abs/2412.13663",
+      "snippet": "Encoder-only transformer models such as BERT offer a great performance-size tradeoff for retrieval and classification tasks with respect to larger decoder-only models. Despite being the workhorse of numerous production pipelines, there have been limited Pareto improvements to BERT since its release. In this paper, we introduce ModernBERT, bringing modern model optimizations to encoder-only ..."
+    }
+  ]
+}

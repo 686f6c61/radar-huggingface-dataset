@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "buxtcodes/TechJam-Modulated-LoRC",
+  "slug": "buxtcodes-techjam-modulated-lorc",
+  "author": "buxtcodes",
+  "url": "https://huggingface.co/buxtcodes/TechJam-Modulated-LoRC",
+  "created_at": "2026-08-31T14:44:14.000Z",
+  "updated_at": "2026-08-31T21:54:46.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-classification",
+    "ai-generated-image-detection",
+    "dinov3",
+    "arxiv:2608.20882",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1812220748,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok TechJam 2026: Build with joy, code for change - Devpost",
+      "url": "https://tiktoktechjam2026.devpost.com/",
+      "snippet": "Build with joy, code for change Technical Execution The solution demonstrates strong engineering fundamentals, such as well-structured code, thoughtful architecture, and effective use of APIs or models. The demo runs reliably, and the technical complexity reflects deliberate, capable decision-making. Innovation & Problem Insight The project demonstrates originality in both idea and approach ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 406 AI models across 408 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "buxtcodes (Ian) - Hugging Face",
+      "url": "https://huggingface.co/buxtcodes",
+      "snippet": "Sort: Recently updated. buxtcodes/sink_cache_dev. Updated Dec 8, 2025. buxtcodes/gemma3n4b-aidbud. 8B • Updated Aug 4, 2025 • 1"
+    },
+    {
+      "title": "buxtcodes (Ian) - Hugging Face",
+      "url": "https://huggingface.co/buxtcodes/datasets",
+      "snippet": "Sort: Recently updated. buxtcodes/til26-nlp. Updated about 20 hours ago • 5. buxtcodes/til26-cv. Viewer • Updated 2 days ago • 5k • 33"
+    },
+    {
+      "title": "GitHub - samssouza/uncensored-ai-list",
+      "url": "https://github.com/samssouza/uncensored-ai-list",
+      "snippet": "Contribute to samssouza/uncensored-ai-list development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rishanthrajendhran/ideadet-qwen8b-1m-outline",
+  "slug": "rishanthrajendhran-ideadet-qwen8b-1m-outline",
+  "author": "rishanthrajendhran",
+  "url": "https://huggingface.co/rishanthrajendhran/ideadet-qwen8b-1m-outline",
+  "created_at": "2026-08-27T13:07:15.000Z",
+  "updated_at": "2026-08-31T20:00:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "ai-detection",
+    "text-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 61,
+  "trending_score": 0,
+  "parameters": 7936692736,
+  "parameters_human": "7.94B",
+  "storage_bytes": 15893431141,
+  "storage_human": "15.9 GB",
+  "base_model": "Qwen/Qwen3.5-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rishanthrajendhran (Rishanth Rajendhran) - Hugging Face",
+      "url": "https://huggingface.co/rishanthrajendhran",
+      "snippet": "rishanthrajendhran Follow 0 followers · 1 following https://rishanthrajendhran.github.io/ rishanthrajendh rishanthrajendhran"
+    },
+    {
+      "title": "Rishanth Rajendhran",
+      "url": "https://rishanthrajendhran.github.io/",
+      "snippet": "My research focuses on analysing and improving generations by large language models, particularly long-context reasoning, factuality, and reinforcement learning from human/AI feedback."
+    },
+    {
+      "title": "rishanthrajendhran (Rishanth Rajendhran) - Hugging Face",
+      "url": "https://huggingface.co/rishanthrajendhran/datasets",
+      "snippet": "rishanthrajendhran&#x27;s datasets2 Sort: Recently updated rishanthrajendhran/POLARIS Viewer •Updated 22 days ago•1.57k• 83"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Tencent Touts New AI Model It Claims Outperforms Z.AI, Moonshot",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-28/tencent-touts-new-ai-model-it-claims-outperforms-z-ai-moonshot",
+      "snippet": "Tencent Holdings Ltd. released a foundation model it says outperforms rivals Z.AI Co. and Moonshot AI in internal tests, claiming a place among China&#x27;s top artificial intelligence players."
+    }
+  ]
+}

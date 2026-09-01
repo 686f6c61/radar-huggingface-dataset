@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Bipin-Pal/suraksha-nlp-muril",
+  "slug": "bipin-pal-suraksha-nlp-muril",
+  "author": "Bipin-Pal",
+  "url": "https://huggingface.co/Bipin-Pal/suraksha-nlp-muril",
+  "created_at": "2026-08-25T17:14:56.000Z",
+  "updated_at": "2026-08-31T23:00:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 237557762,
+  "parameters_human": "237.6M",
+  "storage_bytes": 2850763776,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/muril-base-cased · Hugging Face",
+      "url": "https://huggingface.co/google/muril-base-cased",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ChiaraDeVenuto/suraksha: Suraksha — AI-Powered Regional ...",
+      "url": "https://github.com/ChiaraDeVenuto/suraksha",
+      "snippet": "💡 Solution Suraksha is a lightweight mobile-first platform that detects and blocks phishing in 22+ Indian languages before users fall victim."
+    },
+    {
+      "title": "MuRIL: Multilingual Representations for Indian Languages",
+      "url": "https://arxiv.org/pdf/2103.10730",
+      "snippet": "1 Why MuRIL? India is a multilingual society with 1369 rational-ized languages and dialects being spoken across the country (INDIA, 2011). Of these, the 22 sched-uled languages have a staggering total of 1.17 bil-lion speakers and 121 languages have more than 10,000 speakers (INDIA, 2011). India also has the second largest (and an ever growing) digital foot-print (Statista, 2020). Despite this ..."
+    },
+    {
+      "title": "MuRIL: Multilingual Representations for Indian Languages",
+      "url": "https://arxiv.org/abs/2103.10730",
+      "snippet": "To address the aforementioned gaps, we propose MuRIL, a multilingual LM specifically built for IN languages. MuRIL is trained on significantly large amounts of IN text corpora only. We explicitly augment monolingual text corpora with both translated and transliterated document pairs, that serve as supervised cross-lingual signals in training."
+    },
+    {
+      "title": "suraksha/README.md at main · ChiaraDeVenuto/suraksha · GitHub",
+      "url": "https://github.com/ChiaraDeVenuto/suraksha/blob/main/README.md",
+      "snippet": "Suraksha — AI-Powered Regional-Language Phishing Shield for WhatsApp & UPI - suraksha/README.md at main · ChiaraDeVenuto/suraksha"
+    }
+  ]
+}

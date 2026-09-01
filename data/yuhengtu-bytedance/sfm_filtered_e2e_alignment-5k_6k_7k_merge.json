@@ -5,7 +5,7 @@
   "author": "yuhengtu-bytedance",
   "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-5k_6k_7k_merge",
   "created_at": "2026-08-29T01:30:31.000Z",
-  "updated_at": "2026-08-29T01:31:13.000Z",
+  "updated_at": "2026-09-01T01:36:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -18,13 +18,14 @@
     "text-generation",
     "mergekit",
     "merge",
+    "conversational",
     "arxiv:2203.05482",
     "text-generation-inference",
     "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 227,
+  "downloads_30d": 254,
   "trending_score": 0,
   "parameters": 6856253440,
   "parameters_human": "6.86B",
@@ -34,7 +35,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "removed": false,
   "removed_at": null,

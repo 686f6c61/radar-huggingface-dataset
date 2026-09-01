@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Ttimms/bible-ai-qwen3.5-4b-lora",
+  "slug": "ttimms-bible-ai-qwen3-5-4b-lora",
+  "author": "Ttimms",
+  "url": "https://huggingface.co/Ttimms/bible-ai-qwen3.5-4b-lora",
+  "created_at": "2026-07-19T07:37:06.000Z",
+  "updated_at": "2026-08-31T21:21:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "orpo",
+    "qwen3",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 211321714,
+  "storage_human": "211 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ttimms/Bible-Assistant-Qwen3.5-4B-v2 · Hugging Face",
+      "url": "https://huggingface.co/Ttimms/Bible-Assistant-Qwen3.5-4B-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ttimms/Bible-Assistant-Qwen3.5-4B-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Ttimms/Bible-Assistant-Qwen3.5-4B-v2-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "t-timms/bible-ai-assistant: Bible Q&A - GitHub",
+      "url": "https://github.com/t-timms/bible-ai-assistant",
+      "snippet": "Most Bible apps offer keyword search. This project builds a real AI that understands Scripture — fine-tuned on theology, grounded in retrieved passages, and guardrailed against hallucination. It combines a custom ORPO-trained Qwen3.5-4B model with hybrid RAG (BM25 + dense retrieval + cross-encoder reranking) and constitutional AI safety checks. Voice input and output make it accessible to ..."
+    },
+    {
+      "title": "Bible Assistant Qwen3.5 4B V2 by Ttimms - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/Ttimms%2FBible-Assistant-Qwen3.5-4B-v2,4M4bVLaFwRjZZBovV4lIOd",
+      "snippet": "Bible Assistant Qwen3.5 4B V2 is an open-source 4b LLM by Ttimms. VRAM 8.4GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "bible-ai-assistant/docs/QWEN35_MERGE_AND_DEPLOYMENT.md at main · t ...",
+      "url": "https://github.com/t-timms/bible-ai-assistant/blob/main/docs/QWEN35_MERGE_AND_DEPLOYMENT.md",
+      "snippet": "The base model has native Qwen3.5 layout (model.language_model.layers or a different structure). v4 merge: Keys match structurally (no \"missing\" warning), but the weight layouts are incompatible—LoRA trained for Qwen3 layout applied to Qwen3.5 produces corrupted outputs."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Anahii/persian-product-sentiment-mdeberta",
+  "slug": "anahii-persian-product-sentiment-mdeberta",
+  "author": "Anahii",
+  "url": "https://huggingface.co/Anahii/persian-product-sentiment-mdeberta",
+  "created_at": "2026-08-31T23:25:07.000Z",
+  "updated_at": "2026-08-31T23:43:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "sentiment-analysis",
+    "persian",
+    "product-reviews",
+    "mdeberta",
+    "fa",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278810882,
+  "parameters_human": "278.8M",
+  "storage_bytes": 1131302216,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Persian Sentiment Analysis (Sentipers) - GitHub",
+      "url": "https://github.com/mohammadheidari1386/sentiment-analysis",
+      "snippet": "A systematic, iterative, and feature-engineered Machine Learning pipeline for 5-class sentiment analysis on Persian product reviews (Sentipers dataset)."
+    },
+    {
+      "title": "frameai/PersianSentiment · Hugging Face",
+      "url": "https://huggingface.co/frameai/PersianSentiment",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "microsoft/mdeberta-v3-base · Hugging Face",
+      "url": "https://huggingface.co/microsoft/mdeberta-v3-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Persian-AI/Persian_Sentiment_Analysis_Datasets_2 - GitHub",
+      "url": "https://github.com/Persian-AI/Persian_Sentiment_Analysis_Datasets_2",
+      "snippet": "A reference for Persian sentiment analysis data sets. - Persian-AI/Persian_Sentiment_Analysis_Datasets_2"
+    },
+    {
+      "title": "Unveiling Persian Market Dynamics: A Comprehensive Analysis of Consumer ...",
+      "url": "https://dl.acm.org/doi/epdf/10.1145/3723178.3723238",
+      "snippet": "This study addresses this gap by using NLP techniques to analyze market de-mand in Persian. The research includes sentiment analysis, named entity recognition (NER) and gender prediction to ofer insights into consumer preferences.The paper proposes ParsBERT model for sentimental analysis of Persian texts."
+    }
+  ]
+}

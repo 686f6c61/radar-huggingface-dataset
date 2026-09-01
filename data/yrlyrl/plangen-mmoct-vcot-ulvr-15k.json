@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yrlyrl/plangen-mmoct-vcot-ulvr-15k",
+  "slug": "yrlyrl-plangen-mmoct-vcot-ulvr-15k",
+  "author": "yrlyrl",
+  "url": "https://huggingface.co/yrlyrl/plangen-mmoct-vcot-ulvr-15k",
+  "created_at": "2026-09-01T01:40:05.000Z",
+  "updated_at": "2026-09-01T02:40:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "plangen",
+    "mmcot",
+    "visual-cot",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16038443326,
+  "storage_human": "16.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yrlyrl/plangen-mmoct-highlight-multi-bbox-vq-20k · Hugging Face",
+      "url": "https://huggingface.co/yrlyrl/plangen-mmoct-highlight-multi-bbox-vq-20k",
+      "snippet": "PlanGen MMCoT highlighted-bbox visual CoT checkpoints This public repository stores the 205K, 210K, 215K, and 220K checkpoints from the 20K-step SA-1B highlighted-bbox full-image-VQ experiment. Each checkpoint contains the trainable PlanGen/MMCoT parameters plus a SHA-256 manifest."
+    },
+    {
+      "title": "yrlyrl/plangen-mmoct-bboxvq-shape-20k · Hugging Face",
+      "url": "https://huggingface.co/yrlyrl/plangen-mmoct-bboxvq-shape-20k",
+      "snippet": "This public repository stores the 205K, 210K, 215K, and 220K checkpoints from the 20K-step SA-1B highlighted-bbox full-image-VQ experiment. Each checkpoint contains the trainable PlanGen/MMCoT parameters plus a SHA-256 manifest."
+    },
+    {
+      "title": "GitHub - 360CVGroup/PlanGen: Unified layout planning and image ...",
+      "url": "https://github.com/360CVGroup/PlanGen",
+      "snippet": "👉 PlanGen: Towards Unified Layout Planning and Image Generation in Auto-Regressive Vision Language Models"
+    },
+    {
+      "title": "GitHub - cajias/plangen: Implementation of Google&#x27;s PlanGen framework ...",
+      "url": "https://github.com/cajias/plangen",
+      "snippet": "An implementation of Google&#x27;s PlanGen multi-agent planning framework PlanGEN is a multi-agent framework for solving complex problems with large language models — an open implementation of the workflow from the paper PlanGEN: Generative Planning with Large Language Models. It coordinates specialized agents to extract constraints, generate candidate plans, verify them, and select the best one ..."
+    },
+    {
+      "title": "PlanGEN:AMulti-AgentFrameworkfor ... - arXiv.org",
+      "url": "https://arxiv.org/pdf/2502.16111v1",
+      "snippet": "dering constraints or apply inference-time algorithms without adapting to instance-level complexity. To address these limitations, we propose PlanGEN, a model-agnostic and easil scalable agent framework with three key components: constraint, verification, and selection agents. Specifically, our approach proposes constraint-guided iterative verif"
+    }
+  ]
+}

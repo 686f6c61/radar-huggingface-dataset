@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "kebium/prompt-guard-tokenizer",
+  "slug": "kebium-prompt-guard-tokenizer",
+  "author": "kebium",
+  "url": "https://huggingface.co/kebium/prompt-guard-tokenizer",
+  "created_at": "2026-09-01T00:21:14.000Z",
+  "updated_at": "2026-09-01T00:21:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - seojoonkim/prompt-guard: Advanced prompt injection defense ...",
+      "url": "https://github.com/seojoonkim/prompt-guard",
+      "snippet": "Advanced prompt injection defense system for AI agents. Multi-language detection, severity scoring, and security auditing. - seojoonkim/prompt-guard"
+    },
+    {
+      "title": "llama-cookbook/getting-started/responsible_ai/prompt_guard ... - GitHub",
+      "url": "https://github.com/meta-llama/llama-cookbook/blob/main/getting-started/responsible_ai/prompt_guard/prompt_guard_tutorial.ipynb",
+      "snippet": "Prompt Guard Tutorial The goal of this tutorial is to give an overview of several practical aspects of using the Prompt Guard model. We go over: The model&#x27;s scope and what sort of risks it can guardrail against; Code for loading and executing the model, and the expected latency on CPU and GPU; The limitations of the model on new datasets and the process of fine-tuning the model to adapt to them."
+    },
+    {
+      "title": "meta-llama/Prompt-Guard-86M · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Prompt-Guard-86M",
+      "snippet": "Given this, the emphasis of our analysis is to illustrate the ability of the model to generalize to, or be fine-tuned to, new contexts and distributions of prompts. The numbers below won&#x27;t precisely match results on any particular benchmark or on real-world traffic for a particular application. We built several datasets to evaluate Prompt Guard:"
+    },
+    {
+      "title": "codeintegrity-ai/promptguard · Hugging Face",
+      "url": "https://huggingface.co/codeintegrity-ai/promptguard",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama Prompt Guard 2 | Model Cards and Prompt formats",
+      "url": "https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/prompt-guard/",
+      "snippet": "Llama Prompt Guard 2 comes in two model sizes, 86M and 22M, to provide greater flexibility over a variety of use cases. The 86M model has been trained on both English and non-English attacks. Developers in resource constrained environments and focused only on English text will likely prefer the 22M model despite a slightly lower attack-prevention rate."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "grapeV-ai",
   "url": "https://huggingface.co/grapeV-ai/Qwen3.8-Flash-Next-GGUF",
   "created_at": "2026-08-30T14:19:23.000Z",
-  "updated_at": "2026-08-30T14:32:15.000Z",
+  "updated_at": "2026-08-31T13:54:32.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -14,20 +14,22 @@
   "tags": [
     "gguf",
     "license:other",
-    "region:us"
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 55,
   "trending_score": 0,
-  "parameters": 448931056,
-  "parameters_human": "448.9M",
-  "storage_bytes": 2104284576,
-  "storage_human": "2.1 GB",
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 830916855648,
+  "storage_human": "830.9 GB",
   "base_model": null,
   "formats": [
     "gguf"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "removed": false,
   "removed_at": null,

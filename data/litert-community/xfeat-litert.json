@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "litert-community/xfeat-litert",
+  "slug": "litert-community-xfeat-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/xfeat-litert",
+  "created_at": "2026-06-28T05:13:25.000Z",
+  "updated_at": "2026-09-01T01:45:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "keypoint-detection",
+    "image-matching",
+    "local-features",
+    "xfeat",
+    "on-device",
+    "gpu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 82,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4561603,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/xfeat-litert · Hugging Face",
+      "url": "https://huggingface.co/litert-community/xfeat-litert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · litert-community/xfeat-litert at main - Hugging Face",
+      "url": "https://huggingface.co/litert-community/xfeat-litert/blob/main/README.md",
+      "snippet": "litert-community / xfeat-litert like 0 Follow LiteRT Community (FKA TFLite) 8.23k Keypoint Detection LiteRT LiteRT image-matching local-features xfeat on-device gpu License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LiteRT CLI Common Commands | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/litert/cli/commands",
+      "snippet": "On this page 1. Download a model from Hugging Face Hub 2. Convert a PyTorch model into a LiteRT model 3. Quantize a LiteRT model 4. A.O.T. Compile a LiteRT model for NPU 5. Run a LiteRT model on desktop or Android 6. Benchmark a LiteRT model 7. Run and benchmark generative LLMs 8. Visualize a model&#x27;s architecture 9. Import a local model 10 ..."
+    },
+    {
+      "title": "LiteRT/litert at main · google-ai-edge/LiteRT · GitHub",
+      "url": "https://github.com/google-ai-edge/LiteRT/tree/main/litert",
+      "snippet": "LiteRT, successor to TensorFlow Lite. is Google&#x27;s On-device framework for high-performance ML & GenAI deployment on edge platforms, via efficient conversion, runtime, and optimization - LiteRT/litert at main · google-ai-edge/LiteRT"
+    },
+    {
+      "title": "GitHub - google-ai-edge/LiteRT-LM: LiteRT-LM is Google&#x27;s production ...",
+      "url": "https://github.com/google-ai-edge/LiteRT-LM",
+      "snippet": "LiteRT-LM is Google&#x27;s production-ready, high-performance, open-source inference framework for deploying Large Language Models on edge devices. - google-ai-edge/LiteRT-LM"
+    }
+  ]
+}

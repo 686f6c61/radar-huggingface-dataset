@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "KoichiYasuoka/deberta-base-japanese-aozora-ud-head",
+  "slug": "koichiyasuoka-deberta-base-japanese-aozora-ud-head",
+  "author": "KoichiYasuoka",
+  "url": "https://huggingface.co/KoichiYasuoka/deberta-base-japanese-aozora-ud-head",
+  "created_at": "2022-06-15T04:02:27.000Z",
+  "updated_at": "2026-08-31T23:05:17.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "deberta-v2",
+    "question-answering",
+    "japanese",
+    "dependency-parsing",
+    "ja",
+    "dataset:universal_dependencies",
+    "base_model:KoichiYasuoka/deberta-base-japanese-aozora",
+    "base_model:finetune:KoichiYasuoka/deberta-base-japanese-aozora",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3755534982,
+  "storage_human": "3.8 GB",
+  "base_model": "KoichiYasuoka/deberta-base-japanese-aozora",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KoichiYasuoka/deberta-base-japanese-aozora-ud-head · Hugging Face",
+      "url": "https://huggingface.co/KoichiYasuoka/deberta-base-japanese-aozora-ud-head",
+      "snippet": "Model Description This is a DeBERTa (V2) model pretrained on 青空文庫 for dependency-parsing (head-detection on long-unit-words) as question-answering, derived from deberta-base-japanese-aozora and UD_Japanese-GSDLUW."
+    },
+    {
+      "title": "KoichiYasuoka/deberta-base-japanese-unidic-ud-head · Hugging Face",
+      "url": "https://huggingface.co/KoichiYasuoka/deberta-base-japanese-unidic-ud-head",
+      "snippet": "Model Description This is a DeBERTa (V2) model pretrained on 青空文庫 for dependency-parsing (head-detection on long-unit-words) as question-answering, derived from deberta-base-japanese-unidic and UD_Japanese-GSDLUW."
+    },
+    {
+      "title": "deberta-base-japanese-wikipedia Open-source Model - Empowering ...",
+      "url": "https://model.aibase.com/models/details/1915687186550439938",
+      "snippet": "Model Overview This is a DeBERTa (V2) model pretrained on Japanese Wikipedia and Aozora Bunko texts, which can be fine-tuned for downstream tasks such as part-of-speech tagging, dependency parsing, and other Japanese natural language processing tasks."
+    },
+    {
+      "title": "KoichiYasuoka/deberta-base-japanese-wikipedia · Hugging Face",
+      "url": "https://api-inference.hf-mirror.com/KoichiYasuoka/deberta-base-japanese-wikipedia",
+      "snippet": "Model Description This is a DeBERTa (V2) model pre-trained on Japanese Wikipedia and 青空文庫 texts. NVIDIA A100-SXM4-40GB took 109 hours 27 minutes for training. You can fine-tune deberta-base-japanese-wikipedia for downstream tasks, such as POS-tagging, dependency-parsing, and so on."
+    },
+    {
+      "title": "KoichiYasuoka/deberta-base-japanese-aozora-ud-head - ATYUN",
+      "url": "https://www.atyun.com/models/info/KoichiYasuoka/deberta-base-japanese-aozora-ud-head.html?lang=en",
+      "snippet": "Model Description This is a DeBERTa (V2) model pretrained on 青空文庫 for dependency-parsing (head-detection on long-unit-words) as question-answering, derived from deberta-base-japanese-aozora and UD_Japanese-GSDLUW ."
+    }
+  ]
+}

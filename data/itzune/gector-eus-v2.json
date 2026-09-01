@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "itzune/gector-eus-v2",
+  "slug": "itzune-gector-eus-v2",
+  "author": "itzune",
+  "url": "https://huggingface.co/itzune/gector-eus-v2",
+  "created_at": "2026-08-31T20:19:51.000Z",
+  "updated_at": "2026-08-31T21:21:25.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "eu"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "grammatical-error-correction",
+    "gector",
+    "basque",
+    "euskara",
+    "seq2edit",
+    "error-type-classification",
+    "multitask",
+    "token-classification",
+    "eu",
+    "arxiv:2203.08111",
+    "base_model:ixa-ehu/roberta-eus-euscrawl-base-cased",
+    "base_model:finetune:ixa-ehu/roberta-eus-euscrawl-base-cased",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 127709587,
+  "parameters_human": "127.7M",
+  "storage_bytes": 512031500,
+  "storage_human": "512 MB",
+  "base_model": "ixa-ehu/roberta-eus-euscrawl-base-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "itzune/gector-eus · Hugging Face",
+      "url": "https://huggingface.co/itzune/gector-eus",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "itzune/gector-eus at main - Hugging Face",
+      "url": "https://huggingface.co/itzune/gector-eus/tree/main",
+      "snippet": "itzune / gector-eus like 0 Follow itzune 10 Token Classification Safetensors PyTorch Basque gector bert basque euskara grammar-correction error-detection arxiv:2203.08111 arxiv:2005.12592 License:cc-by-nc-sa-4. Model card FilesFiles and versions xet Community Copy to bucket new main gector-eus 516 MB Ctrl+K Ctrl+K 1 contributor History:9 ..."
+    },
+    {
+      "title": "GitHub - grammarly/gector: Official implementation of the papers ...",
+      "url": "https://github.com/grammarly/gector",
+      "snippet": "Note: The scores in the table are different from the paper&#x27;s ones, as the later version of transformers is used. To reproduce the results reported in the paper, use this version of the repository."
+    },
+    {
+      "title": "Compare AI Models: Pricing, Context & Benchmarks | OpenRouter",
+      "url": "https://openrouter.ai/models",
+      "snippet": "Compare 500+ LLMs from OpenAI, Anthropic, Google, Meta and more — pricing, context length, and benchmarks side by side, all through one API."
+    },
+    {
+      "title": "AI Model Release Tracker — Evertune",
+      "url": "https://models.evertune.ai/",
+      "snippet": "Track every major AI model release from OpenAI, Anthropic, Google, Meta, DeepSeek, and more. Updated daily with release dates, descriptions, and official announcements."
+    }
+  ]
+}

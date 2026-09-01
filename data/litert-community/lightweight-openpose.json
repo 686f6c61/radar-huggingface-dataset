@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "litert-community/lightweight-openpose",
+  "slug": "litert-community-lightweight-openpose",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/lightweight-openpose",
+  "created_at": "2026-06-23T23:04:47.000Z",
+  "updated_at": "2026-09-01T01:45:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "on-device",
+    "android",
+    "pose-estimation",
+    "openpose",
+    "gpu",
+    "keypoint-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 76,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25054978,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/lightweight-openpose · Hugging Face",
+      "url": "https://huggingface.co/litert-community/lightweight-openpose",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "litert-community/lightweight-openpose at main - Hugging Face",
+      "url": "https://huggingface.co/litert-community/lightweight-openpose/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - google-ai-edge/LiteRT: LiteRT, successor to TensorFlow Lite ...",
+      "url": "https://github.com/google-ai-edge/litert",
+      "snippet": "LiteRT, successor to TensorFlow Lite. is Google&#x27;s On-device framework for high-performance ML & GenAI deployment on edge platforms, via efficient conversion, runtime, and optimization - google-ai-edge/LiteRT"
+    },
+    {
+      "title": "Request: add lightweight-OpenPose (pose estimation) to litert-community ...",
+      "url": "https://github.com/google-ai-edge/LiteRT-LM/issues/2634",
+      "snippet": "Happy to match litert-community&#x27;s file naming and rebuild against a pinned litert_torch if the I/O signature should match the current official bundles — just point me at the convention."
+    },
+    {
+      "title": "Deploy GenAI Models with LiteRT | Google AI Edge - Google Developers",
+      "url": "https://developers.google.com/edge/litert/genai/overview",
+      "snippet": "LiteRT Converter and Runtime: The foundational engine that provides efficient model conversion, runtime execution, and optimization, empowering advanced hardware acceleration across CPU, GPU, and NPU. Lite RT Gen AI Model Zoo LiteRT supports a growing collection of popular open-weight models on the LiteRT Hugging Face Community."
+    }
+  ]
+}

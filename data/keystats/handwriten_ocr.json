@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "keystats/handwriten_ocr",
+  "slug": "keystats-handwriten_ocr",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/handwriten_ocr",
+  "created_at": "2026-08-31T21:35:29.000Z",
+  "updated_at": "2026-08-31T21:36:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836608,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Handwriting recognition - Google Colab",
+      "url": "https://colab.research.google.com/github/keras-team/keras-io/blob/master/examples/vision/ipynb/handwriting_recognition.ipynb",
+      "snippet": "Handwriting recognition Authors: A_K_Nain, Sayak Paul Date created: 2021/08/16 Last modified: 2025/09/29 Description: Training a handwriting recognition model with variable-length sequences."
+    },
+    {
+      "title": "GitHub - harshvardhansgupta/OCR_Model: Our AI model is designed to ...",
+      "url": "https://github.com/harshvardhansgupta/OCR_Model",
+      "snippet": "Our AI model is designed to predict text from images of handwritten words. It combines Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs) for enhanced accuracy. Trained on the IAM Handwriting Word Database from Kaggle, the model achieves a character-level accuracy of 89.4124% and a word-level accuracy of 70.8018% - harshvardhansgupta/OCR_Model"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Handwriting Recognition - GitHub",
+      "url": "https://github.com/Swyampatel/AI-Handwriting-Recognition",
+      "snippet": "AI-powered Handwriting Recognition system that converts handwritten text into digital text. Built using Flask, OpenCV, Pytesseract, and React.js, this project enables users to upload images of handwritten notes and extract the text using Optical Character Recognition (OCR)."
+    },
+    {
+      "title": "Handwriting recognition - Keras",
+      "url": "https://keras.io/examples/vision/handwriting_recognition/",
+      "snippet": "Handwriting recognition Authors: A_K_Nain, Sayak Paul Date created: 2021/08/16 Last modified: 2025/09/29 Description: Training a handwriting recognition model with variable-length sequences."
+    }
+  ]
+}

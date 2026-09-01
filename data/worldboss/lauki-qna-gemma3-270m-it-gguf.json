@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "worldboss/lauki-qna-gemma3-270m-it-gguf",
+  "slug": "worldboss-lauki-qna-gemma3-270m-it-gguf",
+  "author": "worldboss",
+  "url": "https://huggingface.co/worldboss/lauki-qna-gemma3-270m-it-gguf",
+  "created_at": "2026-08-31T22:20:50.000Z",
+  "updated_at": "2026-08-31T22:20:59.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "gemma3",
+    "lora",
+    "text-generation",
+    "llama.cpp",
+    "ollama",
+    "en",
+    "base_model:unsloth/gemma-3-270m-it",
+    "base_model:adapter:unsloth/gemma-3-270m-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 291545408,
+  "storage_human": "292 MB",
+  "base_model": "unsloth/gemma-3-270m-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lauki Phones — Base vs Fine-Tuned Gemma 3 270M - Hugging Face",
+      "url": "https://huggingface.co/spaces/worldboss/lauki-qna-fine-tuned-gemma3-live",
+      "snippet": "Enter a question or name, and the app sends it to both the original Gemma 3 270M model and a fine‑tuned version. It then displays each model&#x27;s response side by side together with the time each took..."
+    },
+    {
+      "title": "google/gemma-3-270m · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-270m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    },
+    {
+      "title": "Introducing Gemma 3 270M: The compact model for hyper-efficient AI",
+      "url": "https://developers.googleblog.com/en/introducing-gemma-3-270m/?_bhlid=9d8228939254845c62e4eb7cc3faf6d169bba3f5",
+      "snippet": "Gemma 3 270M brings strong instruction-following capabilities to a small-footprint model. As shown by the IFEval benchmark (which tests a model&#x27;s ability to follow verifiable instructions), it establishes a new level of performance for its size, making sophisticated AI capabilities more accessible for on-device and research applications."
+    },
+    {
+      "title": "Google Launches Compact AI Model Gemma 3 270M - C# Corner",
+      "url": "https://www.c-sharpcorner.com/news/google-launches-compact-ai-model-gemma-3-270m",
+      "snippet": "Google introduces Gemma 3 270M, a compact 270M parameter AI model optimized for fine-tuning, instruction-following, and extreme efficiency. Perfect for on-device AI, rapid iteration, and specialized tasks."
+    }
+  ]
+}

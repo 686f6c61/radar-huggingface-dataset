@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "theoriclabs/not-hotdog-cnn",
+  "slug": "theoriclabs-not-hotdog-cnn",
+  "author": "theoriclabs",
+  "url": "https://huggingface.co/theoriclabs/not-hotdog-cnn",
+  "created_at": "2026-09-01T00:03:02.000Z",
+  "updated_at": "2026-09-01T01:16:35.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-classification",
+    "pytorch",
+    "not-hotdog",
+    "compute-cx",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1131713,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hot dog or Not Hot dog - Towards Data Science",
+      "url": "https://towardsdatascience.com/hot-dog-or-not-hot-dog-ab9d67f20674/",
+      "snippet": "So basically this app identifies whether something is Hot dog or not. Well, we can train with other types of objects to identify them as well. When I learned about CNN (Convolutional Neural Network), I was eager to try out some popular CNN models on this problem, just for fun. So I choose some of the best CNN models to try. I have used the following models for this problem, Variation of ..."
+    },
+    {
+      "title": "MackTr/not-hotdog: Hotdog / Not Hotdog - GitHub",
+      "url": "https://github.com/MackTr/not-hotdog",
+      "snippet": "Not Hotdog 🌭 A binary image classifier that decides: Hotdog or Not Hotdog. This is a learning project — the goal is to understand how a CNN works, not just to get a number."
+    },
+    {
+      "title": "tsunghao-huang/Not_Hotdog_CNN - GitHub",
+      "url": "https://github.com/tsunghao-huang/Not_Hotdog_CNN",
+      "snippet": "An image classifier that applies convolutional neural network to tell the users what is not a hotdog. This creation of this model is inspired by the tv series Silicon Valley, which Jian yang demonstrates his very useful and successful \"Not Hotdog App\". I identified the drawbacks of this image ..."
+    },
+    {
+      "title": "Hot dog or Not Hot dog - Medium",
+      "url": "https://medium.com/data-science/hot-dog-or-not-hot-dog-ab9d67f20674",
+      "snippet": "So basically this app identifies whether something is Hot dog or not. Well, we can train with other types of objects to identify them as well. When I learned about CNN (Convolutional Neural ..."
+    },
+    {
+      "title": "Article1_ (not) Hotdog.md - CodexWorks",
+      "url": "https://codexworks.com/blog/article_cnn_classifier_nothotdog/",
+      "snippet": "1.Introduction \"What would you say if I told you there is a app on the market that tell you if you have a hotdog or not a hotdog?\" Jian-Yang, Silicon Valley, season 4 episode 4. This question is one of the best known in the artificial intelligence industry, being introduced by a TV series extremely known and appreciated by technology lovers, namely Silicon Valley. Even if it sounds trivial ..."
+    }
+  ]
+}

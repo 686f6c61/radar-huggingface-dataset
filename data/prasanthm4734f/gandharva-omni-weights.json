@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Prasanthm4734f/gandharva-omni-weights",
+  "slug": "prasanthm4734f-gandharva-omni-weights",
+  "author": "Prasanthm4734f",
+  "url": "https://huggingface.co/Prasanthm4734f/gandharva-omni-weights",
+  "created_at": "2026-08-31T20:03:32.000Z",
+  "updated_at": "2026-08-31T20:11:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 498932571,
+  "storage_human": "499 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prasanthm4734f (M Prasanth Kumar Reddy) - Hugging Face",
+      "url": "https://huggingface.co/Prasanthm4734f",
+      "snippet": "Gandharva Lyrics Ai 🌍 Gandharva Own Lyrics AI — multilingual AI lyrics generation Prasanthm4734f about 1 hour ago"
+    },
+    {
+      "title": "⚡ GANDHARVA — AN INTEGRATED AI MUSIC STUDIO - GitHub",
+      "url": "https://github.com/Prasanth4734f/Prasanth4734f-Gandharva---An-Integrated-AI-Music-Studio",
+      "snippet": "GANDHARVA is a state-of-the-art mobile music creation studio built for artists, producers, and songwriters. Powered by Google Gemini 2.5 Flash, Jamendo & MusicGen Engines, WebAudio Signal Processors, and an Expo 54 Native Suite, Gandharva converts raw human imagination into polished, release-ready tracks."
+    },
+    {
+      "title": "Prasanthm4734f (M Prasanth Kumar Reddy) - Hugging Face",
+      "url": "https://huggingface.co/Prasanthm4734f/models",
+      "snippet": "User profile of M Prasanth Kumar Reddy on Hugging Face"
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

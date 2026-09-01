@@ -5,7 +5,7 @@
   "author": "12B-Suite",
   "url": "https://huggingface.co/12B-Suite/Mtreelva-Dune-12B-Q8_0-GGUF",
   "created_at": "2026-08-31T13:14:00.000Z",
-  "updated_at": "2026-08-31T13:33:07.000Z",
+  "updated_at": "2026-08-31T16:44:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -19,6 +19,7 @@
   ],
   "tags": [
     "transformers",
+    "gguf",
     "mergekit",
     "merge",
     "flux",
@@ -44,7 +45,7 @@
     "fr",
     "ary",
     "base_model:12B-Suite/Mtreelva-Dune-12B",
-    "base_model:finetune:12B-Suite/Mtreelva-Dune-12B",
+    "base_model:quantized:12B-Suite/Mtreelva-Dune-12B",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us"
@@ -52,12 +53,13 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 12671392841,
+  "storage_human": "12.7 GB",
   "base_model": "12B-Suite/Mtreelva-Dune-12B",
   "formats": [
+    "gguf",
     "safetensors"
   ],
   "is_conversational": true,

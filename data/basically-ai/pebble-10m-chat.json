@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "basically-ai/Pebble-10M-Chat",
+  "slug": "basically-ai-pebble-10m-chat",
+  "author": "basically-ai",
+  "url": "https://huggingface.co/basically-ai/Pebble-10M-Chat",
+  "created_at": "2026-08-31T01:25:49.000Z",
+  "updated_at": "2026-09-01T00:36:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "pebble_10m",
+    "pebble",
+    "language-model",
+    "small-language-model",
+    "pytorch",
+    "custom-code",
+    "mamba2",
+    "hybrid",
+    "chat",
+    "sft",
+    "text-generation",
+    "custom_code",
+    "en",
+    "base_model:basically-ai/Pebble-10M",
+    "base_model:finetune:basically-ai/Pebble-10M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 41,
+  "trending_score": 0,
+  "parameters": 11068176,
+  "parameters_human": "11.1M",
+  "storage_bytes": 44737254,
+  "storage_human": "45 MB",
+  "base_model": "basically-ai/Pebble-10M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "basically-ai/Pebble-10M-Chat · Hugging Face",
+      "url": "https://huggingface.co/basically-ai/Pebble-10M-Chat",
+      "snippet": "Pebble-10M-Chat is a compact, hybrid autoregressive chat language model. It combines the efficiency of state-space models with the proven performance of attention layers, optimized using a custom Muon + AdamW optimizer split."
+    },
+    {
+      "title": "@Hoglet-33 on Hugging Face: \"We are announcing the first generation of ...",
+      "url": "https://huggingface.co/posts/Hoglet-33/922488757716704",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Shoalstone/pebble: The world&#x27;s most efficient AI model.",
+      "url": "https://github.com/Shoalstone/pebble",
+      "snippet": "The world&#x27;s most parameter-efficient language model. Pebble-1 is a 2-parameter binary decision model that achieves remarkable inference efficiency on yes/no question-answering tasks. By distilling the essence of language understanding down to a single neuron, Pebble-1 challenges fundamental assumptions about the relationship between model scale and capability. \"You don&#x27;t need a trillion ..."
+    },
+    {
+      "title": "pebble.chat - Build a",
+      "url": "https://pebble.chat/",
+      "snippet": "Stop choosing between AI innovation and data security. PebbleAI gives you both: enterprise-grade AI with built-in compliance, control, and flexibility."
+    },
+    {
+      "title": "A‌I chat|1v1 Chat with Character -Pebble- for Free Personalized ...",
+      "url": "https://www.polybuzz.ai/character/chat/pebble-8bQsB",
+      "snippet": "Dive into lifelike 1-on-1 AI chat with -Pebble-|Experience human-like conversations,emotional depth,and personalized scenarios powered by DeepAI.Ask anything to your AI character."
+    }
+  ]
+}

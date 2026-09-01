@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Devsyril/whisper-small-ewe-ggml",
+  "slug": "devsyril-whisper-small-ewe-ggml",
+  "author": "Devsyril",
+  "url": "https://huggingface.co/Devsyril/whisper-small-ewe-ggml",
+  "created_at": "2026-08-31T19:11:38.000Z",
+  "updated_at": "2026-08-31T19:11:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "whisper.cpp",
+    "ggml",
+    "asr",
+    "ewe",
+    "base_model:abiyo27/whisper-small-ewe",
+    "base_model:finetune:abiyo27/whisper-small-ewe",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 487601984,
+  "storage_human": "488 MB",
+  "base_model": "abiyo27/whisper-small-ewe",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abiyo27/whisper-small-ewe-2 · Hugging Face",
+      "url": "https://huggingface.co/abiyo27/whisper-small-ewe-2",
+      "snippet": "Whisper_Small_Ewe This model is a fine-tuned version of openai/whisper-medium on the BibleTTS dataset. It achieves the following results on the evaluation set: Loss: 0.1021 Wer: 10.0950 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following ..."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "openai/whisper-small · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper [Blog] [Paper] [Model card] [Colab example] Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "whisper.cpp/models/README.md at master - GitHub",
+      "url": "https://github.com/ggml-org/whisper.cpp/blob/master/models/README.md",
+      "snippet": "Port of OpenAI&#x27;s Whisper model in C/C++. Contribute to ggml-org/whisper.cpp development by creating an account on GitHub."
+    }
+  ]
+}

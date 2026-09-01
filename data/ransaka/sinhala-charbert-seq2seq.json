@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Ransaka/sinhala-charbert-seq2seq",
+  "slug": "ransaka-sinhala-charbert-seq2seq",
+  "author": "Ransaka",
+  "url": "https://huggingface.co/Ransaka/sinhala-charbert-seq2seq",
+  "created_at": "2026-09-01T01:02:15.000Z",
+  "updated_at": "2026-09-01T01:02:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "si"
+  ],
+  "tags": [
+    "pytorch",
+    "sinhala",
+    "typo-correction",
+    "charbert",
+    "seq2seq",
+    "sinlib",
+    "si",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 700607347,
+  "storage_human": "701 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ransaka (Ransaka Ravihara) - Hugging Face",
+      "url": "https://huggingface.co/Ransaka",
+      "snippet": "NLP, Computer Vision Sentence Similarity • 20.9M • Mar 20, 2024 • 13 • 1"
+    },
+    {
+      "title": "Ransaka/SinhalaRoberta · Hugging Face",
+      "url": "https://huggingface.co/Ransaka/SinhalaRoberta",
+      "snippet": "SinhalaRoberta - Fined-tuned Roberta for Sinhala MLM tasks. This model is trained on various Sinhala corpus extracted from News and articles. Model description Trained on MLM tasks, Please use [MASK] token to indicate masked token. The model comprises a total of 68 million parameters Training hyperparameters The following hyperparameters were used during training: learning_rate: 5e-05 train ..."
+    },
+    {
+      "title": "Ransaka/SinhalaRoberta - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/157208",
+      "snippet": "This model is trained on various Sinhala corpus extracted from News and articles."
+    },
+    {
+      "title": "seq2seq Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/seq2seq-model-in-machine-learning/",
+      "snippet": "The model is commonly used in tasks where there is a need to map sequences of varying lengths such as converting a sentence in one language to another or predicting a sequence of future events based on past data i.e time-series forecasting."
+    },
+    {
+      "title": "PDF IndoNLP 2025 Shared Task: Romanized Sinhala to Sinhala Reverse ...",
+      "url": "https://aclanthology.org/2025.indonlp-1.16.pdf",
+      "snippet": "A back transliteration system which can handle informal shorthand Romanized Sinhala was pro-posed by Sumanathilaka et al. (2023). A statisti-cal trigram model combined with a rule-based ap-proach for back transliteration and a knowledge base with Trie data structure for word sugges-tions was used in the work."
+    }
+  ]
+}

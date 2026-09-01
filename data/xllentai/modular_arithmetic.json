@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "XllentAI/modular_arithmetic",
+  "slug": "xllentai-modular_arithmetic",
+  "author": "XllentAI",
+  "url": "https://huggingface.co/XllentAI/modular_arithmetic",
+  "created_at": "2026-06-16T00:48:17.000Z",
+  "updated_at": "2026-08-31T21:54:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "modular-arithmetic",
+    "modular-multiplication",
+    "carry-aware-tcn",
+    "temporal-convolutional-network",
+    "horner-scheme",
+    "algorithmic-reasoning",
+    "length-generalization",
+    "sair-modular-arithmetic-challenge",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1923622558,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XllentAI/modular_arithmetic · Hugging Face",
+      "url": "https://huggingface.co/XllentAI/modular_arithmetic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "XllentAI (Xllent AI) - Hugging Face",
+      "url": "https://huggingface.co/XllentAI",
+      "snippet": "Org profile for Xllent AI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Modular Arithmetic: Language Models Solve Math Digit by Digit",
+      "url": "https://arxiv.org/abs/2508.02513",
+      "snippet": "While recent work has begun to uncover the internal strategies that Large Language Models (LLMs) employ for simple arithmetic tasks, a unified understanding of their underlying mechanisms is still lacking. We extend recent findings showing that LLMs represent numbers in a digit-wise manner and present evidence for the existence of digit-position-specific circuits that LLMs use to perform ..."
+    },
+    {
+      "title": "Language Models Use Trigonometry to Do Addition - arXiv.org",
+      "url": "https://arxiv.org/html/2502.00873v1",
+      "snippet": "To address this, we reverse engineer how three mid-sized LLMs compute addition. We first discover that numbers are represented in these LLMs as a generalized helix, which is strongly causally implicated for the tasks of addition and subtraction, and is also causally relevant for integer division, multiplication, and modular arithmetic."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=sair-modular-arithmetic-challenge",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: sair-modular-arithmetic-challenge Clear all"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "litert-community/U2Net-Portrait-Sketch-LiteRT",
+  "slug": "litert-community-u2net-portrait-sketch-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/U2Net-Portrait-Sketch-LiteRT",
+  "created_at": "2026-07-07T03:59:52.000Z",
+  "updated_at": "2026-09-01T01:45:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "android",
+    "on-device",
+    "gpu",
+    "portrait",
+    "sketch",
+    "line-drawing",
+    "u2net",
+    "creative",
+    "image-to-image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 181,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 176647991,
+  "storage_human": "177 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/U2Net-Portrait-Sketch-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/litert-community/U2Net-Portrait-Sketch-LiteRT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LiteRT-Models/portrait at main · john-rocky/LiteRT-Models",
+      "url": "https://github.com/john-rocky/LiteRT-Models/tree/main/portrait",
+      "snippet": "Real-time portrait sketch generation running fully on the LiteRT CompiledModel GPU. The U²-Net portrait model turns a face photo into a hand-drawn pencil line portrait — a fun creative / AR filter. ~12 ms/frame on a Pixel 8a."
+    },
+    {
+      "title": "litert-community/U-2-Net · Hugging Face",
+      "url": "https://huggingface.co/litert-community/U-2-Net",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LiteRT-Models/portrait/scripts/build_portrait.py at main - GitHub",
+      "url": "https://github.com/john-rocky/LiteRT-Models/blob/main/portrait/scripts/build_portrait.py",
+      "snippet": "23 lines (23 loc) · 1.28 KB main LiteRT-Models / portrait / scripts / build_portrait.py Code Blame 23 lines (23 loc) · 1.28 KB Raw 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 import sys, os, torch, torch.nn as nn, torch.nn.functional as F, numpy as np from model.u2net import U2NET from huggingface_hub import hf_hub_download ..."
+    },
+    {
+      "title": "Portrait Generation | xuebinqin/U-2-Net | DeepWiki",
+      "url": "https://deepwiki.com/xuebinqin/U-2-Net/6.1-portrait-generation",
+      "snippet": "Portrait Generation Relevant source files This page documents the portrait generation feature in the U²-Net repository, which enables automatic conversion of human face photos into artistic portrait drawings. This system utilizes a specialized U²-Net model trained on portrait data to transform regular photographs into pencil sketch-like portraits. For information about general object ..."
+    }
+  ]
+}

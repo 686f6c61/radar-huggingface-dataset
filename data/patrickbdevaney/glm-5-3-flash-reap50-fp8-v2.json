@@ -5,7 +5,7 @@
   "author": "patrickbdevaney",
   "url": "https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-FP8-v2",
   "created_at": "2026-08-29T04:18:35.000Z",
-  "updated_at": "2026-08-29T17:48:22.000Z",
+  "updated_at": "2026-08-31T06:02:59.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 44,
+  "downloads_30d": 45,
   "trending_score": 0,
   "parameters": 165470880558,
   "parameters_human": "165.47B",

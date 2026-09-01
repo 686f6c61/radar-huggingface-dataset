@@ -5,7 +5,7 @@
   "author": "VertexAGI",
   "url": "https://huggingface.co/VertexAGI/amethyst-1.5-mini",
   "created_at": "2026-08-29T20:35:01.000Z",
-  "updated_at": "2026-08-29T20:39:09.000Z",
+  "updated_at": "2026-08-31T08:04:07.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 306,
+  "downloads_30d": 314,
   "trending_score": 0,
   "parameters": 711484928,
   "parameters_human": "711.5M",

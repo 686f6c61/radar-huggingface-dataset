@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "tiantiaf/childvox-speechocean762-prosody-whisper-base",
+  "slug": "tiantiaf-childvox-speechocean762-prosody-whisper-base",
+  "author": "tiantiaf",
+  "url": "https://huggingface.co/tiantiaf/childvox-speechocean762-prosody-whisper-base",
+  "created_at": "2026-09-01T00:33:15.000Z",
+  "updated_at": "2026-09-01T00:34:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27386360,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChildVox - tiantiaf0627.github.io",
+      "url": "https://tiantiaf0627.github.io/childvox/",
+      "snippet": "ChildVox is a unified benchmark covering the full developmental trajectory through which children \"express\" themselves, ranging from physiological sounds at birth, through infant vocalizations and toddler babble, to school-age speech."
+    },
+    {
+      "title": "ChildVox - a tiantiaf Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/tiantiaf/childvox",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from tiantiaf"
+    },
+    {
+      "title": "GitHub - jimbozhang/speechocean762: A non-native English corpus for ...",
+      "url": "https://github.com/jimbozhang/speechocean762",
+      "snippet": "A non-native English corpus for pronunciation scoring task - jimbozhang/speechocean762"
+    },
+    {
+      "title": "ChildVox: A Speech, Audio, and Large Audio-Language Model Benchmark in ...",
+      "url": "https://arxiv.org/pdf/2605.29257",
+      "snippet": "Specifically, Whisper-Large obtains the best results on all tasks from the SpeechOcean762 dataset. This suggests the strong speech recognition capabilities acquired from large-scale multilingual pre-training."
+    },
+    {
+      "title": "tiantiaf (Tiantian Feng) - Hugging Face",
+      "url": "https://huggingface.co/tiantiaf/collections",
+      "snippet": "A Speech Foundation Model Benchmark for Classifying Dialects and Regional Languages around the Globe - Whisper-Large-v3 Family"
+    }
+  ]
+}

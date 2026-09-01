@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "fcmeyer/zerank-2-reranker-MLX-bf16",
+  "slug": "fcmeyer-zerank-2-reranker-mlx-bf16",
+  "author": "fcmeyer",
+  "url": "https://huggingface.co/fcmeyer/zerank-2-reranker-MLX-bf16",
+  "created_at": "2026-09-01T01:13:45.000Z",
+  "updated_at": "2026-09-01T01:14:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "reranker",
+    "cross-encoder",
+    "apple-silicon",
+    "finance",
+    "legal",
+    "code",
+    "stem",
+    "medical",
+    "text-ranking",
+    "en",
+    "arxiv:2509.12541",
+    "base_model:zeroentropy/zerank-2-reranker",
+    "base_model:finetune:zeroentropy/zerank-2-reranker",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404543,
+  "storage_human": "8.1 GB",
+  "base_model": "zeroentropy/zerank-2-reranker",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 199-biotechnologies/zerank-2-mlx: Fast MLX port of ZeroEntropy ...",
+      "url": "https://github.com/199-biotechnologies/zerank-2-mlx",
+      "snippet": "The fastest way to run zerank-2, a 4B Qwen3-based cross-encoder reranker, on Apple Silicon. 10× faster than the PyTorch + MPS reference. Same weights. Identical top-10 rankings. bf16, drop-in HTTP sidecar, 200-line Python port. zerank-2-mlx is a single purpose-built file that loads the official ..."
+    },
+    {
+      "title": "199-biotechnologies/zerank-2-mlx - GitHub",
+      "url": "https://github.com/199-biotechnologies/zerank-2-mlx/tree/main",
+      "snippet": "The fastest way to run zerank-2, a 4B Qwen3-based cross-encoder reranker, on Apple Silicon. 10× faster than the PyTorch + MPS reference. Same weights. Identical top-10 rankings. bf16, drop-in HTTP sidecar, 200-line Python port. zerank-2-mlx is a single purpose-built file that loads the official ..."
+    },
+    {
+      "title": "zeroentropy/zerank-2-reranker · Hugging Face",
+      "url": "https://huggingface.co/zeroentropy/zerank-2-reranker",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introducing zerank-2: The Most Accurate Multilingual Instruction ...",
+      "url": "https://www.zeroentropy.dev/articles/zerank-2-advanced-instruction-following-multilingual-reranker",
+      "snippet": "zerank-2 is the world&#x27;s best reranker , purpose-built to address the most important problems in information retrieval. It outperforms every other reranker on both accuracy and latency — at half the price — with native instruction-following , true multilingual parity across 100+ languages, calibrated relevance scores with a new confidence statistic, and robust handling of SQL-style ..."
+    },
+    {
+      "title": "k8smee/zerank-2-reranker-mlx-8Bit · Hugging Face",
+      "url": "https://huggingface.co/k8smee/zerank-2-reranker-mlx-8Bit",
+      "snippet": "Instructions to use k8smee/zerank-2-reranker-mlx-8Bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sentence-transformers How to use k8smee/zerank-2-reranker-mlx-8Bit with sentence-transformers:"
+    }
+  ]
+}

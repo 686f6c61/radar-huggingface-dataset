@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_alignment-2k_3k_4k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_alignment-2k_3k_4k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-2k_3k_4k_simpleavg_merge",
+  "created_at": "2026-08-29T01:16:59.000Z",
+  "updated_at": "2026-09-01T00:38:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 188,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sfm-filtered-e2e-alignment-4k-5k-6k-avg - Hugging Face",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sfm_filtered_e2e_alignment-3k_4k_5k_simpleavg_merge",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-3k_4k_5k_simpleavg_merge",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sfm_filtered_e2e_alignment-2k_3k_4k_merge - friendli.ai",
+      "url": "https://friendli.ai/models/yuhengtu-bytedance/sfm_filtered_e2e_alignment-2k_3k_4k_merge",
+      "snippet": "Deploy sfm_filtered_e2e_alignment-2k_3k_4k_merge with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "sfm-filtered-e2e-alignment-4k-5k-6k-avg - friendli.ai",
+      "url": "https://friendli.ai/models/yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg",
+      "snippet": "Deploy sfm-filtered-e2e-alignment-4k-5k-6k-avg with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "ByteDance Seed",
+      "url": "https://seed.bytedance.com/en/",
+      "snippet": "The ByteDance Seed team was established in 2023, dedicated to discovering new approaches to general intelligence, pushing the boundaries of AI. The team&#x27;s research areas include LLM, speech, vision, world models, infrastructure, AI Infra, and next-generation AI interactions. The team operates labs in China, Singapore, the United States, and other locations."
+    }
+  ]
+}

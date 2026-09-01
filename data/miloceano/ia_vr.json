@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "miloceano/IA_VR",
+  "slug": "miloceano-ia_vr",
+  "author": "miloceano",
+  "url": "https://huggingface.co/miloceano/IA_VR",
+  "created_at": "2026-09-01T00:38:03.000Z",
+  "updated_at": "2026-09-01T00:38:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073664,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "miloceano (marcio inacio) - Hugging Face",
+      "url": "https://huggingface.co/miloceano/models",
+      "snippet": "miloceano&#x27;s models1 Sort: Recently updated miloceano/lora-unity-xr-v1 8B•Updated about 7 hours ago"
+    },
+    {
+      "title": "miloceano (marcio inacio) - Hugging Face",
+      "url": "https://huggingface.co/miloceano/datasets",
+      "snippet": "Recent Activity updated a modelabout 3 hours ago miloceano/lora-unity-xr-v1 published a modelabout 3 hours ago miloceano/lora-unity-xr-v1 View all activity"
+    },
+    {
+      "title": "Ultimate Guide - The Best Open Source AI Models for VR Content Creation ...",
+      "url": "https://www.siliconflow.com/articles/best-open-source-ai-models-for-vr-content-creation",
+      "snippet": "Our definitive guide to the best open source AI models for VR content creation in 2026. We&#x27;ve partnered with industry insiders, tested performance on key benchmarks, and analyzed architectures to uncover the most powerful video generation models for immersive VR experiences. From cutting-edge text-to-video and image-to-video models to groundbreaking MoE architectures, these models excel in ..."
+    },
+    {
+      "title": "Free VRChat Avatar Maker - Create Custom 3D Avatars Instantly | AI 3D Model",
+      "url": "https://ai3dmodel.app/features/vrchat-avatar-maker",
+      "snippet": "Turn any image into a custom VRChat avatar with our free AI-powered avatar maker. Create production-ready 3D models perfect for VRChat with perfect topology and textures."
+    },
+    {
+      "title": "VR AI Builder — No-Code 3D World Creator | Victoria VR",
+      "url": "https://www.victoriavr.com/builder",
+      "snippet": "Turn natural-language prompts into 3D assets, interaction logic, and complete worlds. AI-accelerated creation cuts build time from months to days for PC, VR, and mobile."
+    }
+  ]
+}

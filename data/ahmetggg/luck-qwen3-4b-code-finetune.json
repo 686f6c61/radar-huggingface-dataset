@@ -5,7 +5,7 @@
   "author": "ahmetggg",
   "url": "https://huggingface.co/ahmetggg/Luck-Qwen3-4b-Code-FineTune",
   "created_at": "2026-08-31T13:34:30.000Z",
-  "updated_at": "2026-08-31T14:42:27.000Z",
+  "updated_at": "2026-08-31T15:19:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -16,9 +16,7 @@
   "tags": [
     "peft",
     "safetensors",
-    "gguf",
     "qwen3",
-    "text-generation",
     "qlora",
     "lora",
     "unsloth",
@@ -28,6 +26,7 @@
     "code",
     "reasoning",
     "calibration",
+    "text-generation",
     "conversational",
     "en",
     "dataset:nvidia/Open-SWE-Traces",
@@ -36,7 +35,6 @@
     "base_model:unsloth/Qwen3-4B-Instruct-2507",
     "base_model:adapter:unsloth/Qwen3-4B-Instruct-2507",
     "license:apache-2.0",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 1,
@@ -44,11 +42,10 @@
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",
-  "storage_bytes": 46563286580,
+  "storage_bytes": 46563880744,
   "storage_human": "46.6 GB",
   "base_model": "unsloth/Qwen3-4B-Instruct-2507",
   "formats": [
-    "gguf",
     "safetensors"
   ],
   "is_conversational": true,

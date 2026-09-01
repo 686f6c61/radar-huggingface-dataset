@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-5k_6k_7k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_unfiltered_midtrain_misalignment-5k_6k_7k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-5k_6k_7k_weightedavg_merge",
+  "created_at": "2026-09-01T01:39:15.000Z",
+  "updated_at": "2026-09-01T01:40:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BytePlus Seedance 2.5 Launch - Seedance 2.5 Official Launch",
+      "url": "https://duckduckgo.com/y.js?ad_domain=byteplus.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=5uSUjYI%2DhIK49P2iEcgtpJT8W6t7unLzaNN63X3hCHDOwjPP%2DSv6I0LE87asmZi22KQgRBfrlxArzN4H1rMpu6uFumtew5iLh6T3qycA8r8gY1FptiU8REq17NSLnkUGSzNPiXZblP1BPRWeBqXXyf09lEnadqetFtpvk6Sz%2DWM.IAWUYFFbF1zt_0x2NSGsUg&rut=247ddf2cbde95efcf1ce53684f6dd7c10fd22345ff2a9bfc9f1e414a9c6e9ae0&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De849OriVj7Xk3DCg%2DZV47cnzVUCUwfZK_Z%2DQMofQ9E5QDEeg5UvKCALXtmo%2DgqxGhGD6dNYH0OqApAFX4BsETB3m7medUMvbbzc3rosuhO6EJ_VZGGjTROg8vrVdRypPsdWBxl1WztVl31sq5aK_aX4SUzUdyd0_F_MDIFP3gb9ohR_06QYBCzsTMkPd60ZHScdLwULYf2xlufnFXKdW_xhPxqSFs%26u%3DaHR0cHMlM2ElMmYlMmZhaS5ieXRlcGx1cy5jb20lMmZlbiUyZmFjdGl2aXR5JTJmc2VlZGFuY2UyLTUlM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RwdXJjaGFzZV9zZWVkYW5jZV9ldV9lbmdsaXNoXzIwMjYwODE5X2xyaCUyNnV0bV90ZXJtJTNkMjAyNjA4MTlfYnJhbmRfYnJvYWRtYXRjaF8yLTVfc2VlZGFuY2UyLjUlMjZ1dG1fY29udGVudCUzZHRlY2RvJTI2bXNjbGtpZCUzZDBiNDU1NDM3YWVhYjFlZmFhN2U2M2VhMTllM2U5YzE4%26rlid%3D0b455437aeab1efaa7e63ea19e3e9c18&vqd=4-213461076021030000633499843991023113485&iurl=%7B1%7DIG%3D3B6DA44B162C40648CD44D40A8DEA12A%26CID%3D1B1DA4EDC93064B60667B32AC83E65D7%26ID%3DDevEx%2C5037.1",
+      "snippet": "Seedance 2.5 takes 50 images, audio, and video inputs for better control. Seedance 2.5 turns your prompt into a 30s single-clip video instantly."
+    },
+    {
+      "title": "sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg ...",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg/discussions",
+      "snippet": "Instructions to use yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg - friendli.ai",
+      "url": "https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg",
+      "snippet": "Deploy sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "sfm-baseline-unfiltered-4k-5k-6k-avg - FriendliAI",
+      "url": "https://friendli.ai/models/yuhengtu-bytedance/sfm-baseline-unfiltered-4k-5k-6k-avg",
+      "snippet": "Deploy sfm-baseline-unfiltered-4k-5k-6k-avg with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

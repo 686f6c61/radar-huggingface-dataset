@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Rin247/gemma-4-31B-it-Uncensored-Aquarion-FP4",
+  "slug": "rin247-gemma-4-31b-it-uncensored-aquarion-fp4",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/gemma-4-31B-it-Uncensored-Aquarion-FP4",
+  "created_at": "2026-08-31T21:32:36.000Z",
+  "updated_at": "2026-08-31T21:45:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "quantized",
+    "fp4",
+    "uncensored",
+    "abliterated",
+    "conversational",
+    "endpoints_compatible",
+    "8-bit",
+    "fp4_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16357254800,
+  "parameters_human": "16.36B",
+  "storage_bytes": 19695647038,
+  "storage_human": "19.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 Uncensored - a TrevorJS Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/TrevorJS/gemma-4-uncensored",
+      "snippet": "Abliterated Gemma 4 models with refusal behavior removed. Biprojection + EGA for MoE. Cross-validated against 686 prompts from 4 datasets."
+    },
+    {
+      "title": "README.md · TrevorJS/gemma-4-31B-it-uncensored at main",
+      "url": "https://huggingface.co/TrevorJS/gemma-4-31B-it-uncensored/blob/main/README.md",
+      "snippet": "English gemma4 image-text-to-text abliteration uncensored gemma-4 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Use this model main gemma-4-31B-it-uncensored /README.md TrevorJS Upload README.md with huggingface_hub 32a9fe9 verified14 days ago preview code | raw Copy download link history blame ..."
+    },
+    {
+      "title": "Run Gemma 4 Locally: From 4 GB VRAM (E4B) to 31B, Free",
+      "url": "https://locallyuncensored.com/blog/gemma-4-local-guide.html",
+      "snippet": "Google released Gemma 4 in April 2026 and it immediately became one of the most important open-weight model families for local AI. From the tiny E2B that runs on anything to the frontier 31B dense model, Gemma 4 covers every use case. Native tool calling, vision support, 256K context, and an Apache 2.0 license make it the go-to recommendation for new users. This guide covers every Gemma 4 ..."
+    },
+    {
+      "title": "Gemma 4 31b It Uncensored - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/gemma-4-31b-it-uncensored.html",
+      "snippet": "Download Gemma 4 31b It Uncensored GGUF model. 18.3 GB, 7,289 downloads, 46 likes."
+    },
+    {
+      "title": "abliteration.org - catalog of abliterated LLMs",
+      "url": "https://abliteration.org/",
+      "snippet": "abliteration.org is an independent catalog and analytics resource for the abliterated and uncensored language-model market. Every model is registered with a precise timestamp and an inventory number, and the whole dataset is refreshed continuously."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "losophyl/opt-125m-merged",
+  "slug": "losophyl-opt-125m-merged",
+  "author": "losophyl",
+  "url": "https://huggingface.co/losophyl/opt-125m-merged",
+  "created_at": "2026-08-31T11:55:24.000Z",
+  "updated_at": "2026-09-01T00:43:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "opt",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125239296,
+  "parameters_human": "125.2M",
+  "storage_bytes": 250501160,
+  "storage_human": "251 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - snairharikrishnan/opt125m",
+      "url": "https://github.com/snairharikrishnan/opt125m",
+      "snippet": "OPT was first introduced in Open Pre-trained Transformer Language Models and first released in metaseq&#x27;s repository on May 3rd 2022 by Meta AI. Disclaimer: The team releasing OPT wrote an official model card, which is available in Appendix D of the paper. Content from this model card has been written by the Hugging Face team."
+    },
+    {
+      "title": "opt125m/README.md at main · snairharikrishnan/opt125m · GitHub",
+      "url": "https://github.com/snairharikrishnan/opt125m/blob/main/README.md",
+      "snippet": "OPT was first introduced in Open Pre-trained Transformer Language Models and first released in metaseq&#x27;s repository on May 3rd 2022 by Meta AI. Disclaimer: The team releasing OPT wrote an official model card, which is available in Appendix D of the paper. Content from this model card has been written by the Hugging Face team."
+    },
+    {
+      "title": "facebook/opt-125m · Hugging Face",
+      "url": "https://huggingface.co/facebook/opt-125m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · facebook/opt-125m at main - Hugging Face",
+      "url": "https://huggingface.co/facebook/opt-125m/blob/main/README.md",
+      "snippet": "OPT was first introduced in Open Pre-trained Transformer Language Models and first released in metaseq&#x27;s repository on May 3rd 2022 by Meta AI. Disclaimer: The team releasing OPT wrote an official model card, which is available in Appendix D of the paper."
+    },
+    {
+      "title": "opt-125m | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/opt-125m/",
+      "snippet": "OPT-125M is the smallest variant in Meta AI&#x27;s Open Pre-trained Transformer (OPT) series, designed to democratize access to large language models. This 125-million parameter model serves as an open-source alternative to GPT-3-style models, enabling researchers to study and improve upon state-of-the-art language model architectures."
+    }
+  ]
+}

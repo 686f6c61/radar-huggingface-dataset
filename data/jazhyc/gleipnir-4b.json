@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "Jazhyc/Gleipnir-4B",
+  "slug": "jazhyc-gleipnir-4b",
+  "author": "Jazhyc",
+  "url": "https://huggingface.co/Jazhyc/Gleipnir-4B",
+  "created_at": "2026-08-31T21:38:02.000Z",
+  "updated_at": "2026-08-31T21:38:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "ai-control",
+    "deception-detection",
+    "scheming-detection",
+    "monitoring",
+    "knowledge-distillation",
+    "lora",
+    "research-artifact",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1359027344,
+  "storage_human": "1.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Binary AI-control monitoring",
+      "dataset": "Six-source strict-OOD action-only tool-trajectory suite",
+      "metric": "Mean-OOD AUROC",
+      "value": 0.908584
+    },
+    {
+      "task": "Binary AI-control monitoring",
+      "dataset": "Six-source strict-OOD action-only tool-trajectory suite",
+      "metric": "Mean-OOD pAUROC@20",
+      "value": 0.78235
+    }
+  ],
+  "sources": [
+    {
+      "title": "Training Deliberative Monitors for Black-Box Scheming Detection",
+      "url": "https://alpha-ollama.hf-mirror.com/papers/2605.29601",
+      "snippet": "In this work, we study action-only deliberative monitors: smaller open-weight models trained to detect scheming and sabotage from agentic trajectories without accessing the monitored agent&#x27;s reasoning or model internals."
+    },
+    {
+      "title": "Jazhyc/gleipnir-kimi-k3-tool-trajectory-logits - Hugging Face",
+      "url": "https://huggingface.co/datasets/Jazhyc/gleipnir-kimi-k3-tool-trajectory-logits",
+      "snippet": "Datasets: Jazhyc / gleipnir-kimi-k3-tool-trajectory-logits like 0 Tasks: Text Classification Modalities: Tabular Text Formats: parquet Size: 1K - 10K ArXiv: arxiv:2605.29601 Tags: ai-control knowledge-distillation logits monitoring Libraries: Datasets pandas Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate ..."
+    },
+    {
+      "title": "Gleipnir AI Models | PixAI",
+      "url": "https://pixai.art/tags/model/gleipnir_(series)",
+      "snippet": "Discover AI Art Model in our #Gleipnir gallery. All TagsTags Trending Trending Most Used Most Liked Latest All Categories All Categories LoRA SD All Time All Time Yesterday Past 7 Days Past 30 Days User LoRAXL Gleipnir Chihiro Yoshioka 1150 3 User LoRAXL Clair Aoki (青木 紅愛) - Gleipnir (グレイプニル) 2850 4"
+    },
+    {
+      "title": "gleipnir AI Models | Civitai",
+      "url": "https://civitai.com/tag/gleipnir",
+      "snippet": "gleipnir Browse 17 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with gleipnir."
+    },
+    {
+      "title": "Shuichi (Gleipnir) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/1ca07410e1bffd52e81f7bc16b35873e",
+      "snippet": "Explore Shuichi (Gleipnir) model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

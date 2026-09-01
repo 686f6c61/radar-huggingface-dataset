@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AnonymousInterpScience/pythia-jlens-artifacts",
+  "slug": "anonymousinterpscience-pythia-jlens-artifacts",
+  "author": "AnonymousInterpScience",
+  "url": "https://huggingface.co/AnonymousInterpScience/pythia-jlens-artifacts",
+  "created_at": "2026-09-01T00:13:43.000Z",
+  "updated_at": "2026-09-01T00:13:43.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - EleutherAI/pythia: The hub for EleutherAI&#x27;s work on ...",
+      "url": "https://github.com/EleutherAI/pythia",
+      "snippet": "This repository is for EleutherAI&#x27;s project Pythia which combines interpretability analysis and scaling laws to understand how knowledge develops and evolves during training in autoregressive transformers. For detailed info on the models, their training, and their properties, please see our paper ..."
+    },
+    {
+      "title": "Pythia - EleutherAI",
+      "url": "https://www.eleuther.ai/artifacts/pythia",
+      "snippet": "Pythia A suite of 16 models with 154 partially trained checkpoints designed to enable controlled scientific research on openly accessible and transparently trained large language models."
+    },
+    {
+      "title": "Interpreting Across Time - EleutherAI",
+      "url": "https://www.eleuther.ai/projects/interpreting-across-time",
+      "snippet": "The primary goal of the Interpreting Across Time project is to understand how model behavior evolves over the course of training and what actions people training models can take to deliberately induce or suppress undesirable behaviors. Releases Pythia"
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2304.01373",
+      "snippet": "arXiv.org is an e-print service providing access to a wide range of research papers across various scientific disciplines."
+    },
+    {
+      "title": "GitHub - soenning-ai/jlens-small-models: Anthropic&#x27;s jacobian-lens ...",
+      "url": "https://github.com/soenning-ai/jlens-small-models",
+      "snippet": "Anthropic's jacobian-lens pointed at four small open models on one 12 GB consumer GPU. Gemma 4 12B has the global-workspace bottleneck (~6 of 3840 directions); Pythia, trained from scratch, doe..."
+    }
+  ]
+}

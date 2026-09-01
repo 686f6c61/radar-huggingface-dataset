@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-d93f01f4-ElectricAtlas",
+  "slug": "guillekenzo-aros-d93f01f4-electricatlas",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-d93f01f4-ElectricAtlas",
+  "created_at": "2026-08-31T20:56:29.000Z",
+  "updated_at": "2026-08-31T21:51:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2405402397,
+  "storage_human": "2.4 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "guillekenzo/aros-507d84fb-ElectricMuse · Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/aros-507d84fb-ElectricMuse",
+      "snippet": "guillekenzo / aros-507d84fb-ElectricMuse like 0 Text-to-Image Diffusers lora krea2 template:sd-lora License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "guillekenzo (garcia) - Hugging Face",
+      "url": "https://huggingface.co/guillekenzo",
+      "snippet": "User profile of garcia on Hugging Face"
+    },
+    {
+      "title": "7 Best Open-Source Image Generation Models in 2026",
+      "url": "https://www.artifilog.com/posts/best-open-source-image-generation-models",
+      "snippet": "The open-source generative AI revolution has reached a historic inflection point. In 2026, running local text-to-image models on your own workstation is no longer a compromise—it is the industry standard for professional digital artists, concept designers, and creative technologists."
+    },
+    {
+      "title": "Atlas (Electric Atlas, 2025) by Boston Dynamics Specs & Review | OOB",
+      "url": "https://www.originofbots.com/robot/atlas-electric-2025-by-boston-dynamics-details-specifications-rating",
+      "snippet": "Atlas (Electric Atlas, 2025) is Boston Dynamics&#x27; fifth-generation humanoid robot, fully electric and designed for real-world industrial and research applications. It features advanced all-electric actuators that provide superior strength and a broader range of motion than previous models, including 360-degree rotation at key joints. Atlas integrates sophisticated sensor arrays such as LiDAR ..."
+    },
+    {
+      "title": "SmartSLD — Free AI-powered single-line diagram editor",
+      "url": "https://smartsld.com/",
+      "snippet": "Draw electrical single-line diagrams in your browser. Free, real component library, automatic routing, and AI that builds diagrams from text or photos. Export DXF, SVG, PNG, JSON."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "rakuten-junliu",
   "url": "https://huggingface.co/rakuten-junliu/RakutenAI-3.0-W4A8",
   "created_at": "2026-08-29T07:32:47.000Z",
-  "updated_at": "2026-08-29T20:38:04.000Z",
+  "updated_at": "2026-08-31T05:31:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 34,
+  "downloads_30d": 147,
   "trending_score": 0,
   "parameters": 349181667416,
   "parameters_human": "349.18B",

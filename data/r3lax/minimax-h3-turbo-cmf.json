@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "r3lax/MiniMax-H3-Turbo-cmf",
+  "slug": "r3lax-minimax-h3-turbo-cmf",
+  "author": "r3lax",
+  "url": "https://huggingface.co/r3lax/MiniMax-H3-Turbo-cmf",
+  "created_at": "2026-08-31T23:47:23.000Z",
+  "updated_at": "2026-08-31T23:47:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "cortiq",
+  "languages": [],
+  "tags": [
+    "cortiq",
+    "cmf",
+    "video",
+    "audio",
+    "4-bit",
+    "text-to-video",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:quantized:Comfy-Org/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 157121443804,
+  "storage_human": "157.1 GB",
+  "base_model": "Comfy-Org/MiniMax-H3, larryvrh/MiniMax-H3-Turbo-Lora",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax-H3 Turbo from one .cmf - a Hugging Face Space by infosave",
+      "url": "https://huggingface.co/spaces/infosave/cmf-animate",
+      "snippet": "The 4-step Turbo LoRA is merged in, so the file is the turbo model. The AVI and the WAV are written by the same 8 MB binary — no ffmpeg anywhere in the pipeline."
+    },
+    {
+      "title": "README.md · chfm/MiniMax-H3-Turbo-Lora at main - Hugging Face",
+      "url": "https://huggingface.co/chfm/MiniMax-H3-Turbo-Lora/blob/main/README.md",
+      "snippet": "You also need the base MiniMax-H3 model, VAEs and text encoder — see the MiniMax-H3 tutorial. Start from the official MiniMax-H3 workflow (t2v or i2v) and make two changes: insert MiniMax-H3 Turbo LoRA between the model loader and the sampler; feed SamplerCustomAdvanced from MiniMax-H3 Turbo Sampler, and set the scheduler to simple at ≥ 4 ..."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "MiniMax H3 (Hailuo AI) - AI Video Workflows, Prompts & Local Deployment Hub Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "GitHub - Larryvrh/ComfyUI-MiniMax-H3-Turbo",
+      "url": "https://github.com/Larryvrh/ComfyUI-MiniMax-H3-Turbo",
+      "snippet": "Start from the official MiniMax-H3 workflow (t2v or i2v) and make two changes: Insert MiniMax-H3 Turbo LoRA between the model loader and the sampler (… → Load Diffusion Model → MiniMax-H3 Turbo LoRA → SamplerCustomAdvanced), and pick the turbo .safetensors. Feed SamplerCustomAdvanced from MiniMax-H3 Turbo Sampler, and set the scheduler node (BasicScheduler) to simple at ≥ 4 steps ..."
+    },
+    {
+      "title": "MiniMax-H3 Turbo LoRA",
+      "url": "https://www.runcomfy.com/comfyui-nodes/ComfyUI-MiniMax-H3-Turbo/mini-max-h3-turbo-lo-ra",
+      "snippet": "The MiniMaxH3TurboLoRA node is designed to enhance the capabilities of the H3 diffusion model by applying a specialized LoRA (Low-Rank Adaptation) technique. This node is part of the MiniMax-H3 Turbo suite, which aims to optimize the performance of audio-video processing workflows."
+    }
+  ]
+}

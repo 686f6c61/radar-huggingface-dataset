@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "tiantiaf/childvox-percept_r-whisper-base",
+  "slug": "tiantiaf-childvox-percept_r-whisper-base",
+  "author": "tiantiaf",
+  "url": "https://huggingface.co/tiantiaf/childvox-percept_r-whisper-base",
+  "created_at": "2026-08-31T20:30:17.000Z",
+  "updated_at": "2026-08-31T20:40:40.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "child_speech",
+    "child_vocalization",
+    "speech_maturity",
+    "audio-classification",
+    "multilingual",
+    "dataset:PERCEPT-R",
+    "arxiv:2605.29257",
+    "base_model:openai/whisper-base",
+    "base_model:finetune:openai/whisper-base",
+    "license:openrail",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20725220,
+  "storage_human": "21 MB",
+  "base_model": "openai/whisper-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tiantiaf/childvox-speechmaturity-whisper-large · Hugging Face",
+      "url": "https://huggingface.co/tiantiaf/childvox-speechmaturity-whisper-large",
+      "snippet": "Instructions to use tiantiaf/childvox-speechmaturity-whisper-large with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use tiantiaf/childvox-speechmaturity-whisper-large with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"audio-classification\", model=\"tiantiaf ..."
+    },
+    {
+      "title": "ChildVox - a tiantiaf Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/tiantiaf/childvox",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from tiantiaf"
+    },
+    {
+      "title": "ChildVox - tiantiaf0627.github.io",
+      "url": "https://tiantiaf0627.github.io/childvox/",
+      "snippet": "ChildVox: A Speech, Audio, and Large Audio-Language Model Benchmark in Understanding and Characterizing Sound across Childhood."
+    },
+    {
+      "title": "ChildVox: A Speech, Audio, and Large Audio-Language Model Benchmark in ...",
+      "url": "https://arxiv.org/html/2605.29257v1",
+      "snippet": "(2) ChildVox integrates more than 20 sub-tasks across 17 child-centered audio and speech datasets into a consistent evaluation protocol. (3) We evaluate a representative range of self-supervised, ASR-oriented, and large audio-language models, showing that different pre-training setups offer complementary measures of child-centered acoustic signals."
+    },
+    {
+      "title": "ChildVox: A Speech, Audio, and Large Audio-Language Model Benchmark in ...",
+      "url": "https://arxiv.org/pdf/2605.29257",
+      "snippet": "Benchmark results show that ChildVox provides a suite of high-performance models in recognizing a wide range of acoustic signals from children, supporting downstream applica-tions such as characterizing children&#x27;s language levels and tracking speech production with age."
+    }
+  ]
+}

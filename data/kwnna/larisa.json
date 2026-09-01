@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kwnna/larisa",
+  "slug": "kwnna-larisa",
+  "author": "kwnna",
+  "url": "https://huggingface.co/kwnna/larisa",
+  "created_at": "2026-08-31T19:40:23.000Z",
+  "updated_at": "2026-08-31T19:58:31.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 229356492,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Larissa AI Generated Model - V1 | Flux.1 LoRA | Civitai",
+      "url": "https://civitai.red/models/1928996/larissa-ai-generated-model",
+      "snippet": "Another AI generated model. Her name is Larissa, a latina inspired female character"
+    },
+    {
+      "title": "Larissa Rochefort AI LoRA Model | PixAI",
+      "url": "https://pixai.art/en/model/1663332809100710261",
+      "snippet": "Larissa Rochefort is an AI LoRA by novaporta on PixAI. Try it free."
+    },
+    {
+      "title": "Larisa - Ver.2 Epoch7 FLUX - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/901189285137359069",
+      "snippet": "Download Larisa - free LORA FLUX.1 AI model on TENSOR. FLUX. By user_854961764004014792"
+    },
+    {
+      "title": "larisa - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1672473691278726148",
+      "snippet": "Generate stunning anime art with the &#x27;larisa&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Kwon Nara Makina Lora - AI Art Model | PixAI",
+      "url": "https://pixai.art/model/1793712535064667877",
+      "snippet": "Generate stunning kpop, celebrity, korean_actress anime art with the &#x27;Kwon Nara Makina Lora&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

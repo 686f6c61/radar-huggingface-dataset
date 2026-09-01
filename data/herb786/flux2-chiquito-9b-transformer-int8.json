@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "herb786/Flux2-chiquito-9B-transformer-int8",
+  "slug": "herb786-flux2-chiquito-9b-transformer-int8",
+  "author": "herb786",
+  "url": "https://huggingface.co/herb786/Flux2-chiquito-9B-transformer-int8",
+  "created_at": "2026-08-31T23:25:34.000Z",
+  "updated_at": "2026-09-01T01:20:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "base_model:black-forest-labs/FLUX.2-klein-9B",
+    "base_model:quantized:black-forest-labs/FLUX.2-klein-9B",
+    "torchao",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9087730933,
+  "storage_human": "9.1 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-9B",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "black-forest-labs/FLUX.2-dev · Hugging Face",
+      "url": "https://huggingface.co/black-forest-labs/FLUX.2-dev",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · vistralis/FLUX.2-klein-9b-INT8-transformer at main",
+      "url": "https://huggingface.co/vistralis/FLUX.2-klein-9b-INT8-transformer/blob/main/README.md",
+      "snippet": "FLUX.2 [klein] 9B (step-distilled) — INT8 (W8A8) Transformer Quantized transformer checkpoint for FLUX.2 [klein] 9B (step-distilled). INT8 weight and activation quantization via NVIDIA ModelOpt with calibrated input scales. Note: This repo contains only the quantized transformer weights. The text encoder, VAE, tokenizer, and scheduler are loaded from the base model: black-forest-labs/FLUX.2 ..."
+    },
+    {
+      "title": "GitHub - black-forest-labs/flux2: Official inference repo for FLUX.2 ...",
+      "url": "https://github.com/black-forest-labs/flux2",
+      "snippet": "Official inference repo for FLUX.2 models. Contribute to black-forest-labs/flux2 development by creating an account on GitHub."
+    },
+    {
+      "title": "FLUX.2 - Next Generation Image Generation | Black Forest Labs - bfl.ai",
+      "url": "https://bfl.ai/models/flux-2",
+      "snippet": "FLUX.2 is the next generation of FLUX image generation from Black Forest Labs. State-of-the-art quality, speed, and controllability for AI image generation."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

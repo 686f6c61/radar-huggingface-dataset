@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "AllenInstitute/lightning-pose-ctlut-np3-side-cam-sam-corbett-2020-03-31",
+  "slug": "alleninstitute-lightning-pose-ctlut-np3-side-cam-sam-corbett-2020-03-31",
+  "author": "AllenInstitute",
+  "url": "https://huggingface.co/AllenInstitute/lightning-pose-ctlut-np3-side-cam-sam-corbett-2020-03-31",
+  "created_at": "2026-08-31T19:18:13.000Z",
+  "updated_at": "2026-08-31T21:10:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "pose-estimation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 125626665,
+  "storage_human": "126 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lightning-pose-ctlut-ctlut-tongue-model - Hugging Face",
+      "url": "https://huggingface.co/AllenInstitute/lightning-pose-ctlut-ctlut-tongue-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - paninski-lab/lightning-pose: Accelerated 2D and 3D pose ...",
+      "url": "https://github.com/paninski-lab/lightning-pose",
+      "snippet": "Lightning Pose is an end-to-end package designed for robust multi-view and single-view animal pose estimation using advanced transformer architectures. It leverages Multi-View Transformers and simulated occlusions to learn geometric relationships between views, resulting in strong performance on occlusions (Aharon, Whiteway et al., 2026). For single-view datasets it leverages temporal context ..."
+    },
+    {
+      "title": "Welcome to the Lightning Pose documentation",
+      "url": "https://lightning-pose.readthedocs.io/en/v2.0.2/",
+      "snippet": "Models can be evaluated with TensorBoard and Streamlit. We also offer a suite of tools for multi-camera pose estimation. If you would like to try out Lightning Pose, we provide a Google Colab notebook that steps through the process of training and evaluating a model on an example dataset - no data labeling or software installation required!"
+    },
+    {
+      "title": "Lightning Pose Homepage — lightning-pose documentation",
+      "url": "https://lightning-pose.readthedocs.io/en/latest/",
+      "snippet": "A new modern UI is available for multi-camera single-animal pose estimation, featuring end-to-end support for labeling, model management, and viewing predictions."
+    },
+    {
+      "title": "AllenInstitute/lightning-pose-ctlut-ctlut-tongue-model · Training metrics",
+      "url": "https://huggingface.co/AllenInstitute/lightning-pose-ctlut-ctlut-tongue-model/tensorboard",
+      "snippet": "AllenInstitute / lightning-pose-ctlut-ctlut-tongue-model like 0 Follow Allen Institute 65 Model card FilesFiles and versions xet MetricsTraining metrics Community"
+    }
+  ]
+}

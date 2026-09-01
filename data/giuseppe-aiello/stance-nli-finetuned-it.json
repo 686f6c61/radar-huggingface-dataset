@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "giuseppe-aiello/stance-nli-finetuned-it",
+  "slug": "giuseppe-aiello-stance-nli-finetuned-it",
+  "author": "giuseppe-aiello",
+  "url": "https://huggingface.co/giuseppe-aiello/stance-nli-finetuned-it",
+  "created_at": "2026-08-31T19:02:11.000Z",
+  "updated_at": "2026-08-31T19:37:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": null,
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "stance-detection",
+    "nli",
+    "italian",
+    "political-text",
+    "zero-shot-classification",
+    "it",
+    "base_model:MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+    "base_model:finetune:MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278811651,
+  "parameters_human": "278.8M",
+  "storage_bytes": 1131275520,
+  "storage_human": "1.1 GB",
+  "base_model": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GuysLLM at SemEval-2026 Task 5: NLI-Informed Regression for Graded Word ...",
+      "url": "https://aclanthology.org/2026.semeval-1.314/",
+      "snippet": "We compare this model against BERT, vanilla DeBERTa, SmolLM variants and state-of-the art LLMs under various prompting strategies, and show that the NLI-finetuned model achieves superior rank correlation and alignment with human judgments."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "GuardrailsAI/finetuned_nli_provenance · Hugging Face",
+      "url": "https://huggingface.co/GuardrailsAI/finetuned_nli_provenance",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "giuseppe-aiello/political-stance-detection-it - GitHub",
+      "url": "https://github.com/giuseppe-aiello/political-stance-detection-it",
+      "snippet": "Stance Detection for Italian Politics on Instagram. An NLP project to classify political consensus (Consenso, Dissenso, Altro) using fine-tuned Transformer models like UmBERTo and BERT-it."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=nli",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

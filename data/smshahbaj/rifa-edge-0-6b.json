@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "smshahbaj/RIFA-Edge-0.6B",
+  "slug": "smshahbaj-rifa-edge-0-6b",
+  "author": "smshahbaj",
+  "url": "https://huggingface.co/smshahbaj/RIFA-Edge-0.6B",
+  "created_at": "2026-08-31T07:13:45.000Z",
+  "updated_at": "2026-08-31T21:06:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "bn"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "text-generation",
+    "rifa",
+    "rifa-edge",
+    "code",
+    "coding",
+    "secure-coding",
+    "conversational",
+    "fine-tuned",
+    "instruction-tuned",
+    "bengali",
+    "bangla",
+    "en",
+    "bn",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 4377414334,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "smshahbaj/RIFA-CODE-0.6B · Hugging Face",
+      "url": "https://huggingface.co/smshahbaj/RIFA-CODE-0.6B",
+      "snippet": "Overview RIFA Code is a lightweight, coding-focused fine-tune of Qwen/Qwen3-.6B, built to write, explain, and debug code while fluently switching between English, Bengali (বাংলা), and Banglish. It is part of the RIFA series of models by SM Shahbaj."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=smshahbaj%2FRifa-Nano-0.5B",
+      "snippet": "Reset Parameters 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 + 44 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 + 10 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 9 + 11 + 10 ..."
+    },
+    {
+      "title": "smshahbaj-official · GitHub",
+      "url": "https://github.com/smshahbaj-official/",
+      "snippet": "smshahbaj-official has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "SiXa18",
   "url": "https://huggingface.co/SiXa18/facet-weights",
   "created_at": "2026-08-30T15:20:46.000Z",
-  "updated_at": "2026-08-30T19:38:23.000Z",
+  "updated_at": "2026-08-31T16:17:09.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -16,6 +16,7 @@
     "protein-nmr",
     "chemical-shifts",
     "torsion-angles",
+    "doi:10.57967/hf/10248",
     "license:cc-by-4.0",
     "region:us"
   ],

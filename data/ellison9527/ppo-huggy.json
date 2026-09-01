@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Ellison9527/ppo-Huggy",
+  "slug": "ellison9527-ppo-huggy",
+  "author": "Ellison9527",
+  "url": "https://huggingface.co/Ellison9527/ppo-Huggy",
+  "created_at": "2026-08-31T20:06:30.000Z",
+  "updated_at": "2026-08-31T20:06:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Huggy",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Huggy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187543959,
+  "storage_human": "188 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ellison9527 (Rong Luo) - Hugging Face",
+      "url": "https://huggingface.co/Ellison9527",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago"
+    },
+    {
+      "title": "Ellison9527 (Rong Luo) - Hugging Face",
+      "url": "https://huggingface.co/Ellison9527/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago"
+    },
+    {
+      "title": "GitHub - HusseinEid101/ppo-huggy: This is a trained model of a ppo ...",
+      "url": "https://github.com/HusseinEid101/ppo-huggy",
+      "snippet": "This is a trained model of a ppo agent playing Huggy the dog using the Unity ML-Agents Library. - HusseinEid101/ppo-huggy"
+    },
+    {
+      "title": "README.md · fashingabo/ppo-Huggy at main",
+      "url": "https://d6108366.hf-mirror.com/fashingabo/ppo-Huggy/blob/main/README.md?code=true",
+      "snippet": "Instructions to use fashingabo/ppo-Huggy with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ml-agents How to use fashingabo/ppo-Huggy with ml-agents:"
+    },
+    {
+      "title": "ppo-Huggy huggingface.co api & akdeniz27 ppo-Huggy github AI Model ...",
+      "url": "https://www.toolify.ai/ai-model/akdeniz27-ppo-huggy",
+      "snippet": "ppo-Huggy huggingface.co is an AI model on huggingface.co that provides ppo-Huggy&#x27;s model effect (), which can be used instantly with this akdeniz27 ppo-Huggy model. huggingface.co supports a free trial of the ppo-Huggy model, and also provides paid use of the ppo-Huggy. Support call ppo-Huggy model through api, including Node.js, Python, http."
+    }
+  ]
+}

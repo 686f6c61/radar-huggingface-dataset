@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jesusromerodev/jesusromerodev-vit-model-jesus-romero",
+  "slug": "jesusromerodev-jesusromerodev-vit-model-jesus-romero",
+  "author": "jesusromerodev",
+  "url": "https://huggingface.co/jesusromerodev/jesusromerodev-vit-model-jesus-romero",
+  "created_at": "2026-08-31T22:09:27.000Z",
+  "updated_at": "2026-08-31T22:25:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "generated_from_trainer",
+    "base_model:google/vit-base-patch16-224-in21k",
+    "base_model:finetune:google/vit-base-patch16-224-in21k",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85800963,
+  "parameters_human": "85.8M",
+  "storage_bytes": 4118729889,
+  "storage_human": "4.1 GB",
+  "base_model": "google/vit-base-patch16-224-in21k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jesusromerodev (Jesus Alberto Romero Hernandez) - Hugging Face",
+      "url": "https://huggingface.co/jesusromerodev/models",
+      "snippet": "Organizations jesusromerodev&#x27;s models2 Sort: Recently updated jesusromerodev/clasificacion-DBpedia-jesus-romero Updated 13 days ago"
+    },
+    {
+      "title": "jesusromerodev (Jesus Alberto Romero Hernandez) - Hugging Face",
+      "url": "https://huggingface.co/jesusromerodev",
+      "snippet": "Sort: Recently updated jesusromerodev/clasificacion-DBpedia-jesus-romero Updated 11 days ago"
+    },
+    {
+      "title": "ModelsLab/CLIP-ViT-H-14-laion2B-s32B-b79K · Hugging Face",
+      "url": "https://huggingface.co/ModelsLab/CLIP-ViT-H-14-laion2B-s32B-b79K",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jesusromerodev/clasificacion-DBpedia-jesus-romero · Hugging Face",
+      "url": "https://huggingface.co/jesusromerodev/clasificacion-DBpedia-jesus-romero",
+      "snippet": "jesusromerodev / clasificacion-DBpedia-jesus-romero like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "timm/vit_base_patch16_224.mae · Hugging Face",
+      "url": "https://huggingface.co/timm/vit_base_patch16_224.mae",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Dbmaxwell/finagent-tr-qwen3-8b-unsloth-lora",
+  "slug": "dbmaxwell-finagent-tr-qwen3-8b-unsloth-lora",
+  "author": "Dbmaxwell",
+  "url": "https://huggingface.co/Dbmaxwell/finagent-tr-qwen3-8b-unsloth-lora",
+  "created_at": "2026-07-17T23:50:34.000Z",
+  "updated_at": "2026-08-31T20:07:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3",
+    "unsloth",
+    "lora",
+    "qlora",
+    "turkish",
+    "finance",
+    "tool-calling",
+    "text-generation",
+    "conversational",
+    "tr",
+    "dataset:Dbmaxwell/finagent-tr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 125585932,
+  "storage_human": "126 MB",
+  "base_model": "unsloth/qwen3-8b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dbmaxwell/finagent-tr-qwen3-8b-unsloth-lora · Hugging Face",
+      "url": "https://huggingface.co/Dbmaxwell/finagent-tr-qwen3-8b-unsloth-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dbmaxwell/finagent-tr-qwen3-8b-unsloth-lora at main",
+      "url": "https://huggingface.co/Dbmaxwell/finagent-tr-qwen3-8b-unsloth-lora/tree/main",
+      "snippet": "Instructions to use Dbmaxwell/finagent-tr-qwen3-8b-unsloth-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8 Fine-tuning Guide | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8/train",
+      "snippet": "Qwen3.8-27B can now be fine-tuned and trained with reinforcement learning (RL) via Unsloth. It is a dense 27B unified vision-language model with native text, image and video support, thinking controls and a 262K context window."
+    },
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Use the latest models Run and train nearly every model locally, with Day Zero support for releases like Qwen3.8, NVIDIA, GLM, Gemma and more. Discover, manage and download the right quantization for your device from the built-in model hub."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "shabieh2",
   "url": "https://huggingface.co/shabieh2/marketsector_fft_deviceauto_0827",
   "created_at": "2026-08-31T08:35:28.000Z",
-  "updated_at": "2026-08-31T08:41:10.000Z",
+  "updated_at": "2026-08-31T16:21:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 29776626688,
   "parameters_human": "29.78B",
-  "storage_bytes": 59584969324,
-  "storage_human": "59.6 GB",
+  "storage_bytes": 119141808484,
+  "storage_human": "119.1 GB",
   "base_model": "unsloth/Muse-Glimmer-30B",
   "formats": [
     "safetensors"

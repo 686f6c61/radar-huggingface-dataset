@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "SCU-VIP-Lab/EdgeSD-ISR",
+  "slug": "scu-vip-lab-edgesd-isr",
+  "author": "SCU-VIP-Lab",
+  "url": "https://huggingface.co/SCU-VIP-Lab/EdgeSD-ISR",
+  "created_at": "2026-08-31T20:34:12.000Z",
+  "updated_at": "2026-08-31T20:35:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "super-resolution",
+    "image-restoration",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10009027888,
+  "storage_human": "10.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Santa Clara University Video and Image Processing Lab",
+      "url": "https://huggingface.co/SCU-VIP-Lab",
+      "snippet": "Org profile for Santa Clara University Video and Image Processing Lab on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - SCU-VIP-Lab/website: This is the official website of Santa ...",
+      "url": "https://github.com/SCU-VIP-Lab/website",
+      "snippet": "This is the official website of Santa Clara University (SCU) Video and Image Processing (VIP) Lab."
+    },
+    {
+      "title": "Ying Liu | Home - SCU",
+      "url": "https://www.cse.scu.edu/~yliu1/",
+      "snippet": "The Video and Image Processing Lab currently focuses on deep learning-based image and video compression, visual coding for machines, point cloud coding, vision-language model, and generative AI."
+    },
+    {
+      "title": "SCU-VIP-Lab · GitHub",
+      "url": "https://github.com/SCU-VIP-Lab",
+      "snippet": "website Public This is the official website of Santa Clara University (SCU) Video and Image Processing (VIP) Lab."
+    },
+    {
+      "title": "BLOG | Samsung Research",
+      "url": "https://research.samsung.com/blog/Edge-SD-SR-Low-Latency-and-Parameter-Efficient-On-device-Super-Resolution-with-Stable-Diffusion-via-Bidirectional-Conditioning",
+      "snippet": "Introduction Stable Diffusion [1] for Super Resolution (i.e. SD-SR), has been shown to produce steep improvements compared to previous SR approaches. However, deploying large diffusion models on computationally restricted devices such as mobile phones remains impractical due to the large model size and high latency. Considering that SR is most widely used on mobile phones, where the vast ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Synaptics/paddle-paddle-tiny",
+  "slug": "synaptics-paddle-paddle-tiny",
+  "author": "Synaptics",
+  "url": "https://huggingface.co/Synaptics/paddle-paddle-tiny",
+  "created_at": "2026-08-13T20:29:43.000Z",
+  "updated_at": "2026-08-31T21:58:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torq",
+  "languages": [],
+  "tags": [
+    "torq",
+    "onnx",
+    "ocr",
+    "paddleocr",
+    "synaptics",
+    "npu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 56660106,
+  "storage_human": "57 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Synaptics/paddle-paddle-tiny · Hugging Face",
+      "url": "https://huggingface.co/Synaptics/paddle-paddle-tiny",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Synaptics/paddle-paddle-tiny at main - Hugging Face",
+      "url": "https://huggingface.co/Synaptics/paddle-paddle-tiny/tree/main",
+      "snippet": "Synaptics 52 ONNX torq ocr paddleocr synaptics npu License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main paddle-paddle-tiny 44.4 MB Ctrl+K Ctrl+K 1 contributor History:10 commits karthik87s Upload README.md with huggingface_hub b29107b verifiedabout 3 hours ago assetsUpload assets/sample_ocr.jpg with ..."
+    },
+    {
+      "title": "Synaptics AI Models | Edge AI for Developers",
+      "url": "https://developer.synaptics.com/models",
+      "snippet": "Access pre-optimized AI models for Synaptics Astra Machina and Machina Micro Developer kits."
+    },
+    {
+      "title": "PaddlePaddle · GitHub",
+      "url": "https://github.com/PaddlePaddle",
+      "snippet": "Type Language Sort PaddleFormers Public PaddleFormers is an easy-to-use library of pre-trained large language model zoo based on PaddlePaddle."
+    },
+    {
+      "title": "GitHub - synaptics-synap/examples: SyNAP examples code and other ...",
+      "url": "https://github.com/synaptics-synap/examples",
+      "snippet": "This repository provides AI example applications for the Synaptics Astra SL16xx series, covering computer vision, speech processing, and large language models (LLMs). Follow the instructions below to set up your environment and run various AI examples in few minutes. The examples in this repository ..."
+    }
+  ]
+}

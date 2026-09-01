@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "datamatters24/CaroleNDVoice",
+  "slug": "datamatters24-carolendvoice",
+  "author": "datamatters24",
+  "url": "https://huggingface.co/datamatters24/CaroleNDVoice",
+  "created_at": "2026-04-19T15:27:14.000Z",
+  "updated_at": "2026-09-01T00:58:11.000Z",
+  "license": "llama-3.1-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "llama",
+    "llama-3.1",
+    "fine-tuned",
+    "qlora",
+    "conversational",
+    "persona",
+    "neurodivergent",
+    "text-generation",
+    "en",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.1-8B-Instruct",
+    "doi:10.57967/hf/9412",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16792873552,
+  "storage_human": "16.8 GB",
+  "base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "datamatters24/CaroleNDVoice · Hugging Face",
+      "url": "https://huggingface.co/datamatters24/CaroleNDVoice",
+      "snippet": "datamatters24 / CaroleNDVoice like 0 Text Generation Transformers Safetensors GGUF English doi:10.57967/hf/9412 llama llama-3.1 fine-tuned qlora conversational persona neurodivergent License:llama3.1 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "README.md · datamatters24/CaroleNDVoice at main - Hugging Face",
+      "url": "https://huggingface.co/datamatters24/CaroleNDVoice/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "I Fine-Tuned an 8B Model to Stop Being Agreeable. It Runs on a Single ...",
+      "url": "https://currentlyted.substack.com/p/i-fine-tuned-an-8b-model-to-stop",
+      "snippet": "The model learns how to talk (validate-then-redirect cadence, banned phrases, feedback check-ins). The corpus supplies what to talk about (1,732 chunks from 98 hand-curated Wikipedia articles plus five reference works including Rosenberg, Carnegie, and Robbins)."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Voice Detector | Deepfakes & AI Audio Detector [Free]",
+      "url": "https://undetectable.ai/ai-voice-detector",
+      "snippet": "Detect AI-generated voices and audio deepfakes using our free AI voice detector. Upload a file and get instant results, no login or cost."
+    }
+  ]
+}

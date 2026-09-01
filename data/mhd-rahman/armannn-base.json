@@ -5,7 +5,7 @@
   "author": "mhd-rahman",
   "url": "https://huggingface.co/mhd-rahman/ArmanNN-Base",
   "created_at": "2026-08-28T05:18:51.000Z",
-  "updated_at": "2026-08-30T18:59:02.000Z",
+  "updated_at": "2026-08-31T04:41:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 578,
+  "downloads_30d": 839,
   "trending_score": 0,
   "parameters": 502479360,
   "parameters_human": "502.5M",
-  "storage_bytes": 24120119945,
-  "storage_human": "24.1 GB",
+  "storage_bytes": 32160161444,
+  "storage_human": "32.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

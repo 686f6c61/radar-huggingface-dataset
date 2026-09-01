@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Ransaka/sinhala-charbert",
+  "slug": "ransaka-sinhala-charbert",
+  "author": "Ransaka",
+  "url": "https://huggingface.co/Ransaka/sinhala-charbert",
+  "created_at": "2026-09-01T01:02:55.000Z",
+  "updated_at": "2026-09-01T01:03:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "si"
+  ],
+  "tags": [
+    "pytorch",
+    "sinhala",
+    "charbert",
+    "pretraining",
+    "sinlib",
+    "si",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 888642543,
+  "storage_human": "889 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ransaka (Ransaka Ravihara) - Hugging Face",
+      "url": "https://huggingface.co/Ransaka",
+      "snippet": "NLP, Computer Vision Sentence Similarity • 20.9M • Mar 20, 2024 • 13 • 1"
+    },
+    {
+      "title": "Ransaka/SinhalaRoberta · Hugging Face",
+      "url": "https://huggingface.co/Ransaka/SinhalaRoberta",
+      "snippet": "SinhalaRoberta - Fined-tuned Roberta for Sinhala MLM tasks. This model is trained on various Sinhala corpus extracted from News and articles. Model description Trained on MLM tasks, Please use [MASK] token to indicate masked token. The model comprises a total of 68 million parameters Training hyperparameters The following hyperparameters were used during training: learning_rate: 5e-05 train ..."
+    },
+    {
+      "title": "Projects | Ransaka&#x27;s Blog",
+      "url": "https://ransaka.github.io/Ransaka/projects/",
+      "snippet": "Indepedent research project to create the first ever Sinhala Sentence Transformer Model. I was able to create a model that can be used to encode Sinhala sentences into vectors."
+    },
+    {
+      "title": "sinlib · PyPI",
+      "url": "https://pypi.org/project/sinlib/",
+      "snippet": "Vocab and model weights are fetched automatically from Ransaka/sinlib on HuggingFace Hub at first use — no manual setup required. Documentation Full documentation is available at sinlib.readthedocs.io, including: API Reference — Tokenizer API Reference — TypoDetector Guide: Tokenization Guide: Spell Checking Contributing Contributions are ..."
+    },
+    {
+      "title": "Building CRNN model for Sinhala OCR Tasks | Ransaka&#x27;s Blog",
+      "url": "https://ransaka.github.io/Ransaka/ransakas-blog/building-crnn-model-for-sinhala-ocr/",
+      "snippet": "However, we must use the loss function during model training to update the parameters. Unfortunately, like language modelling, we cannot calculate negative log-likelihood (or similar) loss for this type of work, as we don&#x27;t have the desired characters for each feature vector (or timestamp)."
+    }
+  ]
+}

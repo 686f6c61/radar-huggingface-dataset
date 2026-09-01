@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "wasitaigeneratedcom/ai-text-detector-small",
+  "slug": "wasitaigeneratedcom-ai-text-detector-small",
+  "author": "wasitaigeneratedcom",
+  "url": "https://huggingface.co/wasitaigeneratedcom/ai-text-detector-small",
+  "created_at": "2026-08-31T23:12:05.000Z",
+  "updated_at": "2026-09-01T00:38:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "ai-detector",
+    "ai-detection",
+    "ai-text-detector",
+    "ai-content-detection",
+    "chatgpt-detector",
+    "gpt-detector",
+    "llm-detection",
+    "generated-text-detection",
+    "ai-generated-text",
+    "humanized-ai-detection",
+    "deberta-v3",
+    "text-classification",
+    "en",
+    "base_model:desklib/ai-text-detector-v1.01",
+    "base_model:finetune:desklib/ai-text-detector-v1.01",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 434016260,
+  "parameters_human": "434.0M",
+  "storage_bytes": 1736113280,
+  "storage_human": "1.7 GB",
+  "base_model": "desklib/ai-text-detector-v1.01",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Text Detector - Free AI Detector - AI Detection in Seconds",
+      "url": "https://duckduckgo.com/y.js?ad_domain=grammarly.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=WTfbTFG_OnoyV8KZjNvF5vz8eCpY33PGr4rQesV_J56y5vBkWlI0T5if7khodjNqy415o1JzhCvp5jiAGGI5hmAHxsdxviIzimgbloYjsQfSQZWHA8qXwBhzczw1Z5Bmx3j_aavIvuj5xVpl%2DtokIqsQKMdOwtgoAYcFxw8Gd1I.uNSelB%2DpG3lQ%2DDaTD4evQw&rut=7a0a4fa1dabc4c9638a8abdfa248b0cdeabb87447b43ef2b74a2faa8e5ce39b9&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8TPnlqyir58c3HnWGBPeKsDVUCUwM0_L4RvjvgTKdlnb7wPIu01xpGMZDGk4BvejTxDCUaYmzznj_79njfpmXIJghhKTy0pgdlTknJzDhgS3pqGw92ezpsWjWugNNX_cH5B4SqUa99s2gwu8eQbedsqxhgHbt6eU099Mppc0TY9KFx65mNIS09lUzoUvpmvsAit_jJacKzIkLUa9WFhw56RGGtz8%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuZ3JhbW1hcmx5LmNvbSUyZmFpLWRldGVjdG9yJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkNjI3Mzc5NDk4JTI2dXRtX2NvbnRlbnQlM2Q4MTIyNjU0ODg3OTU1NyUyNnV0bV90ZXJtJTNkY29udGVudCUyNTIwYXQlMjUyMHNjYWxlJTI1MjBhaSUyNTIwZGV0ZWN0b3IlMjZ1dG1fYnUlM2Rjb3JwJTI2a2V5d29yZGlkJTNkODEyMjY3NTI5NTIwNDYlMjZ0YXJnZXRpZCUzZGt3ZC04MTIyNjc1Mjk1MjA0NiUzYWxvYy02NiUyNmFkZ3JvdXAlM2QxMjk5NjIzODkyMjExOTQwJTI2ZGV2aWNlJTNkYyUyNm1hdGNodHlwZSUzZGUlMjZuZXR3b3JrJTNkcyUyNmV4dGVuc2lvbiUzZCUyNmNsaWNraWQlM2Q5MTZlMTE3ODZiN2ExNDRiMWJjODdiZWU0YzFkNDU5MCUyNmdjbGlkJTNkOTE2ZTExNzg2YjdhMTQ0YjFiYzg3YmVlNGMxZDQ1OTAlMjZtc2Nsa2lkJTNkOTE2ZTExNzg2YjdhMTQ0YjFiYzg3YmVlNGMxZDQ1OTA%26rlid%3D916e11786b7a144b1bc87bee4c1d4590&vqd=4-82266522097462889177710269957773967894&iurl=%7B1%7DIG%3D29BF08F6C5694F2EA5F148FE3645D487%26CID%3D20C3091C0A7B67A225C31EDB0B5D6603%26ID%3DDevEx%2C5036.1",
+      "snippet": "Grammarly&#x27;s free AI checker is trained to detect AI-generated content and help you fix it. Detect AI-generated content from Grammarly, ChatGPT, Google Gemini, and others in a click."
+    },
+    {
+      "title": "Détecteur ai dans le texte - Détecteur IA et plagiat",
+      "url": "https://duckduckgo.com/y.js?ad_domain=justdone.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=senG%2D7HxhIwCe2oavnwV_KeVEs_RDlo%2DtU3pf6UwAOcCKMvYqZ9QN5Sx%2Dft3kzKjqh3Tdd9NMh6Cjskh9Xxuxrv8TCnISrV_tZ60Tie_nnuOgwWSma5Cb54HnKR5hsjcPuXC%2DhEmEStCUd6Z9KMDKp1ZNhVJffE4nIj17EE4vTg.O7ckVSaXKEwErygdzo4thg&rut=594136094bae598f54d573834fdb15311e8df284894187340f8dd5bfa3b493bd&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8ZXKZajVUNC1ejGfv7g7LHTVUCUwJGH0SBElS4q4uKmjBADH9GWJGXsiYpulVwkM5jX_AIj038Qd1c%2D4Ep%2DFMOxFPmHYUOXzTfdZFcNZrFt8Di0CFAgNG0jryKysZU0ixSJuPLH%2DEROcN3mJkqYEGpoobCS1cYnCw3nSCN11v8LFEKGnXaxwANSwG4apSW%2DdxXUFHDoTiK1qLlHenXDrKlVBPAi8%26u%3DaHR0cHMlM2ElMmYlMmZqdXN0ZG9uZS5jb20lMmZmciUyZmFpLWRldGVjdG9yJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkNDg2MjA4MjQ0JTI2dXRtX2NvbnRlbnQlM2QxMjM2OTUxNjYyNzAyNjM1JTI2dXRtX2Fkc2V0X2lkJTNkMTIzNjk1MTY2MjcwMjYzNSUyNnV0bV90ZXJtJTNkZCVjMyVhOXRlY3RldXIlMjUyMGFpJTI1MjBkYW5zJTI1MjBsZSUyNTIwdGV4dGUlMjZ1dG1fbmV0d29yayUzZHMlMjZ1dG1fbWF0Y2h0eXBlJTNkZSUyNm1zY2xraWQlM2RmZWE1YWJhMjg4N2ExYTViNDkwOWMxMzRhZjFkNzM5YQ%26rlid%3Dfea5aba2887a1a5b4909c134af1d739a&vqd=4-84594795443452068940749323257582673849&iurl=%7B1%7DIG%3D29BF08F6C5694F2EA5F148FE3645D487%26CID%3D20C3091C0A7B67A225C31EDB0B5D6603%26ID%3DDevEx%2C5039.1",
+      "snippet": "Détecteur ai dans le texte : rapide, fiable et convivial. Obtenez une analyse instantanée du plagiat par l&#x27;IA. Humanisez votre contenu avec Justdone"
+    },
+    {
+      "title": "wasitaigeneratedcom/ai-text-detector-small · Hugging Face",
+      "url": "https://huggingface.co/wasitaigeneratedcom/ai-text-detector-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Content Detection API | Detect ChatGPT, Deepfakes & AI Essays",
+      "url": "https://www.wasitaigenerated.com/",
+      "snippet": "Powerful API to detect AI-generated text, images, audio, and video. Industry-leading accuracy, <3s response. ChatGPT detector, deepfake detection, AI essay verification."
+    },
+    {
+      "title": "AI Content Detector - Detect AI Text (Free, No SignUp)",
+      "url": "https://smallseotools.com/ai-content-detector/",
+      "snippet": "AI content detector lets you detect AI content generated by any AI tool. Try AI checker, can check upto 2000 words, & ensure the authenticity of your text."
+    }
+  ]
+}

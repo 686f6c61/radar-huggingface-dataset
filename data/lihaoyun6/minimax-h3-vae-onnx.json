@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lihaoyun6/MiniMax-H3-VAE-ONNX",
+  "slug": "lihaoyun6-minimax-h3-vae-onnx",
+  "author": "lihaoyun6",
+  "url": "https://huggingface.co/lihaoyun6/MiniMax-H3-VAE-ONNX",
+  "created_at": "2026-09-01T00:49:21.000Z",
+  "updated_at": "2026-09-01T01:49:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:quantized:Comfy-Org/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5209713473,
+  "storage_human": "5.2 GB",
+  "base_model": "Comfy-Org/MiniMax-H3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "MiniMax H3 is released as two task-specific checkpoints. Each checkpoint contains a specialized Omni Transformer Model together with the required processor, tokenizer, text encoder, Visual VAE, and standalone Audio VAE components."
+    },
+    {
+      "title": "Comfy-Org/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax H3 ComfyUI Guide: Setup, VRAM, Workflows & Fixes",
+      "url": "https://kingy.ai/ai/ai-guides/minimax-h3-comfyui-local-guide/",
+      "snippet": "Install MiniMax H3 in ComfyUI, download the correct files, run T2V, I2V and R2V workflows, use SageAttention and troubleshoot OOM errors."
+    }
+  ]
+}

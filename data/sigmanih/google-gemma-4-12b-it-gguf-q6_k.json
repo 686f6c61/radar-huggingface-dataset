@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "sigmanih/google-gemma-4-12B-it-GGUF-Q6_K",
+  "slug": "sigmanih-google-gemma-4-12b-it-gguf-q6_k",
+  "author": "sigmanih",
+  "url": "https://huggingface.co/sigmanih/google-gemma-4-12B-it-GGUF-Q6_K",
+  "created_at": "2026-08-31T19:50:51.000Z",
+  "updated_at": "2026-08-31T23:37:23.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "it"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "sigma-studio",
+    "sigmanih",
+    "conversational",
+    "custom-model",
+    "llama.cpp",
+    "quantized",
+    "q6_k",
+    "en",
+    "it",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 9786002944,
+  "storage_human": "9.8 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sigmanih/google-gemma-4-12B-it-GGUF-Q8_0 · Hugging Face",
+      "url": "https://huggingface.co/sigmanih/google-gemma-4-12B-it-GGUF-Q8_0",
+      "snippet": "️ Support & Community: If you find this model helpful, please give this repository a Like on Hugging Face and a ⭐ Star on our SigmaStudio GitHub! 🌐 English Overview google-gemma-4-12B-it-GGUF-Q8_0 is a production-ready model optimized and published using the Model Hub module of Sigma Studio. ⚙️ Technical Specifications & Architecture"
+    },
+    {
+      "title": "google/gemma-4-12B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Introducing Gemma 4 12B - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/",
+      "snippet": "An overview of Gemma 4 12B, a model designed to bring high-performance multimodal intelligence directly to your laptop."
+    },
+    {
+      "title": "google/gemma-4-12b • LM Studio",
+      "url": "https://lmstudio.ai/models/google/gemma-4-12b",
+      "snippet": "Gemma 4 12B Unified Gemma 4 12B&#x27;s \"Unified\" label refers to its encoder-free design. Unlike other Gemma 4 models that use separate encoders for multimodal inputs, this model skips them entirely, projecting image patches directly into the LLM&#x27;s embedding space via lightweight linear layers. All modalities feed into a single decoder-only transformer, cutting multimodal latency and enabling end ..."
+    }
+  ]
+}

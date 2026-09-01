@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "kon172verma/intent-classifier",
+  "slug": "kon172verma-intent-classifier",
+  "author": "kon172verma",
+  "url": "https://huggingface.co/kon172verma/intent-classifier",
+  "created_at": "2026-07-15T02:50:23.000Z",
+  "updated_at": "2026-09-01T00:27:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3",
+    "llama-3.2",
+    "gguf",
+    "onnx",
+    "safetensors",
+    "llama.cpp",
+    "onnxruntime",
+    "intent-classification",
+    "text-classification",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 142,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37571142243,
+  "storage_human": "37.6 GB",
+  "base_model": "Qwen/Qwen3-0.6B, meta-llama/Llama-3.2-1B",
+  "formats": [
+    "gguf",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kon172verma/intent-classifier-experiments · Hugging Face",
+      "url": "https://huggingface.co/kon172verma/intent-classifier-experiments",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kon172verma (Konark Verma) - Hugging Face",
+      "url": "https://huggingface.co/kon172verma",
+      "snippet": "User profile of Konark Verma on Hugging Face"
+    },
+    {
+      "title": "GitHub - kon172verma/intent-classifier-inference",
+      "url": "https://github.com/kon172verma/intent-classifier-inference",
+      "snippet": "Contribute to kon172verma/intent-classifier-inference development by creating an account on GitHub."
+    },
+    {
+      "title": "ConceptNet releases open-source 4-layer voice intent classifier with 98 ...",
+      "url": "https://korshunov.ai/en/article/21233-conceptnet-releases-open-source-4-layer-voice-intent-classifier-with-98-6/",
+      "snippet": "ConceptNet has published an open-source, fine-tuned distilbert-base-multilingual-cased model designed for enterprise voice intent classification. The system utilizes a four-layer hierarchy to categorize commands into basic, context-aware, predictive, and autonomous intents."
+    },
+    {
+      "title": "Releases · kon172verma/intent-classifier-inference · GitHub",
+      "url": "https://github.com/kon172verma/intent-classifier-inference/releases",
+      "snippet": "Contribute to kon172verma/intent-classifier-inference development by creating an account on GitHub."
+    }
+  ]
+}

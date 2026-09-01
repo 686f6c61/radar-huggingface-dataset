@@ -5,7 +5,7 @@
   "author": "yuhengtu-bytedance",
   "url": "https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-9k_10k_11k_merge",
   "created_at": "2026-08-29T01:40:59.000Z",
-  "updated_at": "2026-08-29T01:41:50.000Z",
+  "updated_at": "2026-09-01T02:55:07.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 231,
+  "downloads_30d": 258,
   "trending_score": 0,
   "parameters": 6856253440,
   "parameters_human": "6.86B",

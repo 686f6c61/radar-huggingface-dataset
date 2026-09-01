@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/thefriend-27b-v2-i1-GGUF",
   "created_at": "2026-08-30T20:36:35.000Z",
-  "updated_at": "2026-08-30T21:35:54.000Z",
+  "updated_at": "2026-08-31T04:07:42.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,12 +25,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 418,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 39471871072,
-  "storage_human": "39.5 GB",
+  "storage_bytes": 218553895488,
+  "storage_human": "218.6 GB",
   "base_model": "mfielding92/thefriend-27b-v2",
   "formats": [
     "gguf"

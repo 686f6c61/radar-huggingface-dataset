@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "nvidia/DeepSeek-V4-Flash-0731-NVFP4",
+  "slug": "nvidia-deepseek-v4-flash-0731-nvfp4",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/DeepSeek-V4-Flash-0731-NVFP4",
+  "created_at": "2026-08-19T17:09:47.000Z",
+  "updated_at": "2026-08-31T19:59:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "Model Optimizer",
+  "languages": [],
+  "tags": [
+    "Model Optimizer",
+    "safetensors",
+    "deepseek_v4",
+    "nvidia",
+    "ModelOpt",
+    "DeepSeekV4",
+    "quantized",
+    "NVFP4",
+    "nvfp4",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 65,
+  "trending_score": 9,
+  "parameters": 304180418494,
+  "parameters_human": "304.18B",
+  "storage_bytes": 175562226307,
+  "storage_human": "175.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-v4-flash-0731 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-flash-0731/modelcard",
+      "snippet": "DeepSeek-V4-Flash-0731 is a 304B-parameter sparse Mixture-of-Experts language model for text generation, coding, reasoning, long-context, and agentic workflows."
+    },
+    {
+      "title": "deepseek-v4-flash-0731 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-flash-0731",
+      "snippet": "284B MoE (13B active) model ideal for long-context workloads optimized for coding, chat, and agentic workflows"
+    },
+    {
+      "title": "Deepseek-v4-Flash 0731 GGUF (NEW model) - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/deepseek-v4-flash-0731-gguf-new-model/378829",
+      "snippet": "DeepSeek-V4-Flash-0731 is the July 31 update to the Flash model, delivering the best performance for its size and outperforming V4-Pro (Preview). Designed for coding, agentic and chat workflows with a 1M context window."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "DeepSeek-V4-Flash-0731 is the official release of DeepSeek-V4-Flash, superseding the preview version, with substantially enhanced agentic capabilities. It has the same model structure as DeepSeek-V4-Flash-DSpark, i.e. it comes with a speculative decoding module attached."
+    },
+    {
+      "title": "deepseek-ai / deepseek-v4-flash-0731 - docs.api.nvidia.com",
+      "url": "https://docs.api.nvidia.com/nim/reference/deepseek-ai-deepseek-v4-flash-0731",
+      "snippet": "DeepSeek-V4-Flash-0731 is a 304B-parameter sparse Mixture-of-Experts language model for text generation, coding, reasoning, long-context, and agentic workflows. It supports a one-million-token context and includes an attached speculative decoding module. This model is ready for commercial or non-commercial use."
+    }
+  ]
+}

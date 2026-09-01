@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "deveshu/hinglish-turn-detector",
+  "slug": "deveshu-hinglish-turn-detector",
+  "author": "deveshu",
+  "url": "https://huggingface.co/deveshu/hinglish-turn-detector",
+  "created_at": "2026-08-31T20:39:13.000Z",
+  "updated_at": "2026-08-31T20:41:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "onnxruntime",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "audio-classification",
+    "turn-detection",
+    "hinglish",
+    "voice-agents",
+    "code-switching",
+    "en",
+    "hi",
+    "dataset:pipecat-ai/smart-turn-data-v3.2-train",
+    "base_model:openai/whisper-tiny",
+    "base_model:quantized:openai/whisper-tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72935011,
+  "storage_human": "73 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Detector - AI Detection in Seconds",
+      "url": "https://duckduckgo.com/y.js?ad_domain=grammarly.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=Zeh6ODvQOS1MC%2Dj1YeWa2ioA1gK460g22j45hjYtZvfn9DNWgEdg%2DoQV0CIc8cEmX6bCpzDp905LtX1MnKj9lxv6U7L_t%2DWguXNR4_WcEF1%2DE9KoiPcjunp9Oa2ruueJUb_rH5Eeu3noIKbTCcuOkEtVei2rArzUq%2Dzma3m3hHo.EZSipKcZ3%2DYfmz1WSETU1Q&rut=b92e51b4137c0c3de8d81607878dbd91009f02bf1954ed15cacf080a9f242bb7&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8wlJWfkkL7g5L5MdsmSIocDVUCUzh8xsXWvQDs4E5JH9O0S4SOQGtqanqIBXbzKKOZAucBuOr8jOrRizmQvC31aIvnQ03OYZzgfnu6KJMwTDFBAM_88oD2ROfHhxsM_QcJcj27hzW4HZvnscq1iwYNlKkKOSrO_DWUNKzDsM2xLcEO8izKXDS0OEgco0ohh0wItGnc3fMUPr0547iBFcmKiIzj3Y%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuZ3JhbW1hcmx5LmNvbSUyZmFpLWRldGVjdG9yJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkNjI3MjE3NzExJTI2dXRtX2NvbnRlbnQlM2Q4MTE1NzgyOTQxNzgwNiUyNnV0bV90ZXJtJTNkY2hhdCUyNTIwZ3B0JTI1MjBkZXRlY3RvciUyNnV0bV9idSUzZGNvcnAlMjZrZXl3b3JkaWQlM2Q4MTE1ODAzNDA1MTU3MCUyNnRhcmdldGlkJTNka3dkLTgxMTU4MDM0MDUxNTcwJTNhbG9jLTY2JTI2YWRncm91cCUzZDEyOTg1MjQzODA5MzEwOTElMjZkZXZpY2UlM2RjJTI2bWF0Y2h0eXBlJTNkYiUyNm5ldHdvcmslM2RzJTI2ZXh0ZW5zaW9uJTNkJTI2Y2xpY2tpZCUzZDMxMGFkYzZmZmRjZDEwMzc5MTgwYjZmYTBlZjg5MTVlJTI2Z2NsaWQlM2QzMTBhZGM2ZmZkY2QxMDM3OTE4MGI2ZmEwZWY4OTE1ZSUyNm1zY2xraWQlM2QzMTBhZGM2ZmZkY2QxMDM3OTE4MGI2ZmEwZWY4OTE1ZQ%26rlid%3D310adc6ffdcd10379180b6fa0ef8915e&vqd=4-35859864638492689703219099884742228641&iurl=%7B1%7DIG%3D12F1861AA3B64C1782531D04B4840868%26CID%3D3E78EC16D90C67E62D09FBD0D877662E%26ID%3DDevEx%2C5037.1",
+      "snippet": "Grammarly&#x27;s free AI checker is trained to detect AI-generated content and help you fix it. Detect AI-generated content from Grammarly, ChatGPT, Google Gemini, and others in a click."
+    },
+    {
+      "title": "GitHub - abhinav7289A/Hinglish-turn-detection",
+      "url": "https://github.com/abhinav7289A/Hinglish-turn-detection",
+      "snippet": "A tiny (<10M param), fast (<50 ms CPU), audio-only turn-detection model for Indian Hinglish, Indian-accented English, and Indian filler words — plus the first human-labelled Hinglish turn-detection benchmark to evaluate it on."
+    },
+    {
+      "title": "suvradeepp/tiny-hinglish-turn-detector · Hugging Face",
+      "url": "https://huggingface.co/suvradeepp/tiny-hinglish-turn-detector",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "abhishek-040010/smart-turn-hinglish · Hugging Face",
+      "url": "https://huggingface.co/abhishek-040010/smart-turn-hinglish",
+      "snippet": "Smart Turn Hinglish: Conversational Turn-Taking & Hesitation Detection for Code-Switched Speech Smart Turn Hinglish is an acoustic conversational turn-detection model designed for real-time voice AI agents in Hindi-English (Hinglish) conversational environments."
+    },
+    {
+      "title": "GitHub - ZoroZoro95/hinglish-turn-detector",
+      "url": "https://github.com/ZoroZoro95/hinglish-turn-detector",
+      "snippet": "An audio-only research prototype that decides whether a voice agent should respond or keep listening. It was built for the Shiprocket turn-detection challenge with particular attention to Hinglish, fillers, thinking pauses, incomplete sentences, evaluation leakage, and CPU latency."
+    }
+  ]
+}

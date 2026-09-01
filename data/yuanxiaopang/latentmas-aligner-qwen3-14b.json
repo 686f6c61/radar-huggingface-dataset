@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "YuanXiaopang/latentmas-aligner-qwen3-14b",
+  "slug": "yuanxiaopang-latentmas-aligner-qwen3-14b",
+  "author": "YuanXiaopang",
+  "url": "https://huggingface.co/YuanXiaopang/latentmas-aligner-qwen3-14b",
+  "created_at": "2026-08-31T23:07:47.000Z",
+  "updated_at": "2026-08-31T23:07:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safety",
+    "multi-agent",
+    "latent-reasoning",
+    "guardrail",
+    "latentmas",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:finetune:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 151052963,
+  "storage_human": "151 MB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YuanXiaopang/latentmas-aligner-qwen3-4b-instruct · Hugging Face",
+      "url": "https://huggingface.co/YuanXiaopang/latentmas-aligner-qwen3-4b-instruct",
+      "snippet": "Qwen3-4B-Instruct-2507 only.h_a is tied to that model&#x27;s hidden geometry; the heads do not transfer to another backbone. Only two topologies were trained on. The transfer matrix says mixed training generalizes better than either specialist, but it does not establish behaviour on topologies absent from training (wide fan-out, trees, N > 4)."
+    },
+    {
+      "title": "Qwen/Qwen3-14B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-14B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "GitHub - Gen-Verse/LatentMAS: [ICML 2026 Spotlight] Latent ...",
+      "url": "https://github.com/Gen-Verse/LatentMAS",
+      "snippet": "LatentMAS is a multi-agent reasoning framework that moves agent collaboration from token space into the model&#x27;s latent space. Instead of producing long textual reasoning traces, agents communicate by passing latent thoughts through their own working memory. LatentMAS has the following key features: Efficient multi-step reasoning with drastically fewer tokens Training-free latent-space ..."
+    }
+  ]
+}

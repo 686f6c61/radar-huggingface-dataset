@@ -5,7 +5,7 @@
   "author": "mehmettozlu",
   "url": "https://huggingface.co/mehmettozlu/Turkish-Llama-3.1-8B-Instruct-GGUF",
   "created_at": "2026-08-29T20:28:11.000Z",
-  "updated_at": "2026-08-30T08:28:56.000Z",
+  "updated_at": "2026-08-31T22:23:34.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 90,
+  "downloads_30d": 175,
   "trending_score": 0,
   "parameters": 8030261312,
   "parameters_human": "8.03B",

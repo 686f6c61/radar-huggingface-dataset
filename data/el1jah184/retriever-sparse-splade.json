@@ -49,8 +49,8 @@
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": false,
-  "removed_at": null,
+  "removed": true,
+  "removed_at": "2026-09-01T03:16:13.542Z",
   "benchmarks": [
     {
       "task": "Sparse Information Retrieval",

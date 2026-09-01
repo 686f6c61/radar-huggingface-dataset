@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "davioliveirafield/trial-multitask",
+  "slug": "davioliveirafield-trial-multitask",
+  "author": "davioliveirafield",
+  "url": "https://huggingface.co/davioliveirafield/trial-multitask",
+  "created_at": "2026-09-01T00:24:36.000Z",
+  "updated_at": "2026-09-01T00:24:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "davioliveirafield (Davi Oliveira) - Hugging Face",
+      "url": "https://huggingface.co/davioliveirafield",
+      "snippet": "User profile of Davi Oliveira on Hugging Face"
+    },
+    {
+      "title": "davioliveirafield/model_477555228_swin_t_huge at main",
+      "url": "https://huggingface.co/davioliveirafield/model_477555228_swin_t_huge/tree/main",
+      "snippet": "davioliveirafield / model_477555228_swin_t_huge like 0 classification exponential grouped-query huge orthogonal rmsnorm rmsprop swin-t swish tucker License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main model_477555228_swin_t_huge 6.9 kB Ctrl+K Ctrl+K 1 contributor History:2 commits davioliveirafield Upload 2 files 52dac5e verifiedabout 6 hours ago ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Meta says its AI model hacked into another company during testing",
+      "url": "https://www.theguardian.com/technology/2026/aug/05/meta-ai-model-hack-training",
+      "snippet": "Company is the third to report such an incident after Anthropic and OpenAI reported breaches during training Meta said on Wednesday that one of its AI models hacked ⁠another company during ..."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2404.18961",
+      "snippet": "arXiv.org e-Print archive"
+    }
+  ]
+}

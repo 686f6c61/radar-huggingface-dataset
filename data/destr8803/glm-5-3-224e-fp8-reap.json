@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "destr8803/GLM-5.3-224E-FP8-REAP",
+  "slug": "destr8803-glm-5-3-224e-fp8-reap",
+  "author": "destr8803",
+  "url": "https://huggingface.co/destr8803/GLM-5.3-224E-FP8-REAP",
+  "created_at": "2026-08-31T20:36:53.000Z",
+  "updated_at": "2026-08-31T20:53:59.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "glm",
+    "glm-5.3",
+    "moe",
+    "fp8",
+    "pruned",
+    "reap",
+    "gaudi",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 661510069888,
+  "parameters_human": "661.51B",
+  "storage_bytes": 663793177778,
+  "storage_human": "663.8 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "destr8803 (destr8803) - Hugging Face",
+      "url": "https://huggingface.co/destr8803",
+      "snippet": "Qwen3.5-35B-A3B, updated a model 5 days ago"
+    },
+    {
+      "title": "destr8803 (destr8803) - Hugging Face",
+      "url": "https://huggingface.co/destr8803/models",
+      "snippet": "Qwen3.5-35B-A3B, updated a model about 12 hours ago"
+    },
+    {
+      "title": "GLM-5.3 | OpenLM.ai",
+      "url": "https://openlm.ai/glm-5.5/",
+      "snippet": "GLM-5.3 is our latest flagship model for coding and long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and delivers that capability on a solid 1M-token context. It is pure open with an MIT open-source license — no regional limits, technical access without borders."
+    },
+    {
+      "title": "GLM-5.3 & GLM-5.2 & GLM-5.1 & GLM-5 - GitHub",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "GLM-5.3 uses the same base model as GLM-5.2 — every gain comes from post-training. Compared with GLM-5.2, it is much better at complex coding and long-horizon tasks: Stronger Coding: GLM-5.3 is the most capable open-weights model for coding, with a 50% improvement over GLM-5.2 on our in-house Z.ai Code Bench. It also achieve open-source SOTA on public benchmarks including Terminal Bench 3.0 ..."
+    },
+    {
+      "title": "GLM-5.3 by Z.ai | Modular Model Garden",
+      "url": "https://www.modular.com/models/glm-5-3",
+      "snippet": "GLM-5.3-Flash is the first natively multimodal model in Z.ai&#x27;s GLM-5 series, with 320B total parameters and 18B active. A hybrid architecture combining sparse and linear attention cuts attention compute and KV cache by 3.0x and 4.4x against GLM-5.3, supporting a 1M-token context window at low serving cost for visual coding and agentic workflows."
+    }
+  ]
+}

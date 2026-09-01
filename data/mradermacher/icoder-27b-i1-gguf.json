@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/iCoder-27B-i1-GGUF",
   "created_at": "2026-08-31T11:40:26.000Z",
-  "updated_at": "2026-08-31T12:13:57.000Z",
+  "updated_at": "2026-08-31T13:44:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 89932301408,
-  "storage_human": "89.9 GB",
+  "storage_bytes": 300328830560,
+  "storage_human": "300.3 GB",
   "base_model": "i-Coder/iCoder-27B",
   "formats": [
     "gguf"

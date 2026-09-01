@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Caronte78/generative-AI-video",
+  "slug": "caronte78-generative-ai-video",
+  "author": "Caronte78",
+  "url": "https://huggingface.co/Caronte78/generative-AI-video",
+  "created_at": "2026-08-31T20:20:12.000Z",
+  "updated_at": "2026-08-31T20:20:12.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "video-generation · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/video-generation",
+      "snippet": "Toonflow is an open-source AI tool that turns stories and scripts into animated short dramas. Features AI scriptwriting, storyboarding, character and video generation. A cross-platform desktop app for efficient content creation."
+    },
+    {
+      "title": "AI Video Generator — Free. Online. No Download. - Kapwing",
+      "url": "https://www.kapwing.com/ai-video-generator",
+      "snippet": "Powerful online AI Video Generator for Text to Video and Image to Video. Create video clips up to 30 seconds using AI models like Veo, Kling, Seedance, and Sora. Start for free."
+    },
+    {
+      "title": "8 Best Free AI Video Generators in 2026 — Tested & Ranked",
+      "url": "https://forvideo.ai/compare/best-free-ai-video-generators-2026",
+      "snippet": "We tested every major free AI video generator in 2026 — Seedance 2.0, Veo 3.1, Kling, Pika and more. Find the best free tier for your use case (some without watermarks)."
+    },
+    {
+      "title": "AI Video Generation Models: 2026 Complete Guide",
+      "url": "https://wavespeed.ai/blog/posts/ai-video-generation-models-2026/",
+      "snippet": "Complete 2026 guide to AI video generation models. Compare architectures, capabilities, and API access across Veo, Sora, Kling, WAN, Seedance, and more."
+    },
+    {
+      "title": "Free AI Video Generator Online — No Subscription, No Watermark | xImagineai",
+      "url": "https://ximagineai.com/free-ai-video-generator",
+      "snippet": "Generate AI videos free online — text to video, image to video, and Grok-powered video. No subscription required, no watermark. Start instantly, no login needed."
+    }
+  ]
+}

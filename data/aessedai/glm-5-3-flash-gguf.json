@@ -20,12 +20,12 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 3,
-  "downloads_30d": 0,
+  "likes": 4,
+  "downloads_30d": 951,
   "trending_score": 0,
   "parameters": 320759404382,
   "parameters_human": "320.76B",
-  "storage_bytes": 846033378674,
+  "storage_bytes": 846032888407,
   "storage_human": "846.0 GB",
   "base_model": "zai-org/GLM-5.3-Flash-BF16",
   "formats": [

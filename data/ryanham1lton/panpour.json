@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Panpour",
+  "slug": "ryanham1lton-panpour",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Panpour",
+  "created_at": "2026-08-31T19:31:38.000Z",
+  "updated_at": "2026-08-31T19:42:47.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116864337,
+  "storage_human": "117 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton/Piplup · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Piplup",
+      "snippet": "Ryanham1lton / Piplup like 0 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Ryanham1lton/Wailord · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Wailord",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - maitrix-org/Pandora: Pandora: Towards General World Model with ...",
+      "url": "https://github.com/maitrix-org/Pandora",
+      "snippet": "Pandora: Towards General World Model with Natural Language Actions and Video States We introduce Pandora, a step towards a General World Model (GWM) that: Simulates world states by generating videos across any domains Allows any-time control with actions expressed in natural language Please refer to world-model.ai for results."
+    },
+    {
+      "title": "Pangram AI Detector - Free AI Text & Image Detector",
+      "url": "https://pangramaidetector.org/",
+      "snippet": "Pangram AI Detector Paste text, upload a PDF or DOCX, or drop in an image, Pangram AI Detector scores it in seconds and shows you exactly which parts look AI-generated."
+    },
+    {
+      "title": "GitHub - Master-Panpour/ML_model",
+      "url": "https://github.com/Master-Panpour/ML_model",
+      "snippet": "Contribute to Master-Panpour/ML_model development by creating an account on GitHub."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/granite-4.2-8b-decensored-i1-GGUF",
   "created_at": "2026-08-31T10:40:40.000Z",
-  "updated_at": "2026-08-31T10:53:21.000Z",
+  "updated_at": "2026-08-31T11:27:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 8791592960,
   "parameters_human": "8.79B",
-  "storage_bytes": 30894226304,
-  "storage_human": "30.9 GB",
+  "storage_bytes": 101347764800,
+  "storage_human": "101.3 GB",
   "base_model": "qcokvd1/granite-4.2-8b-decensored",
   "formats": [
     "gguf"

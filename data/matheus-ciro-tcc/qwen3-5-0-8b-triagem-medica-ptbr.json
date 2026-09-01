@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "matheus-ciro-tcc/qwen3.5-0.8b-triagem-medica-ptbr",
+  "slug": "matheus-ciro-tcc-qwen3-5-0-8b-triagem-medica-ptbr",
+  "author": "matheus-ciro-tcc",
+  "url": "https://huggingface.co/matheus-ciro-tcc/qwen3.5-0.8b-triagem-medica-ptbr",
+  "created_at": "2026-08-31T23:37:25.000Z",
+  "updated_at": "2026-08-31T23:37:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "unsloth",
+    "trl",
+    "sft",
+    "medical",
+    "portuguese",
+    "triagem",
+    "text-generation",
+    "conversational",
+    "pt",
+    "dataset:AKCIT/MedPT",
+    "arxiv:2511.11878",
+    "arxiv:2305.14314",
+    "arxiv:2106.09685",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45576546,
+  "storage_human": "46 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3.5:0.8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:0.8b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "Qwen3.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen35",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/qwen3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "Run & Benchmark Qwen3.5 0.8B: Smallest Multimodal AI Model",
+      "url": "https://codersera.com/blog/run-and-benchmark-qwen35-08b/",
+      "snippet": "Learn how to install, run, benchmark, compare, and demo Qwen3.5 0.8B locally. Explore hardware needs, performance tests, pricing, and alternatives."
+    }
+  ]
+}

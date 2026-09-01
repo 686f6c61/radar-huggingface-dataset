@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lair-nyu/yor-icl-expanded-fast-tokenizer",
+  "slug": "lair-nyu-yor-icl-expanded-fast-tokenizer",
+  "author": "lair-nyu",
+  "url": "https://huggingface.co/lair-nyu/yor-icl-expanded-fast-tokenizer",
+  "created_at": "2026-08-31T21:46:59.000Z",
+  "updated_at": "2026-08-31T21:47:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vla",
+    "openpi",
+    "pi0-fast",
+    "tokenizer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lair-nyu/yor_icl_fast_victr_vision_expanded_full · Hugging Face",
+      "url": "https://huggingface.co/lair-nyu/yor_icl_fast_victr_vision_expanded_full",
+      "snippet": "openpi TrainConfig: yor_icl_fast_victr_vision_expanded Checkpoint step: 15000 Contents: params/ (deployable policy weights) + assets/ (norm stats etc.) only -- train_state/ (optimizer state, needed only to resume this exact training run) is NOT included. Trained with openpi (pi0.5 backbone) on the icl-dataset. First publish of this repo."
+    },
+    {
+      "title": "lair-nyu (LAIR NYU) - Hugging Face",
+      "url": "https://huggingface.co/lair-nyu/models",
+      "snippet": "Org profile for LAIR NYU on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "[2501.09747] FAST: Efficient Action Tokenization for Vision-Language ...",
+      "url": "https://arxiv.org/abs/2501.09747",
+      "snippet": "Autoregressive sequence models, such as Transformer-based vision-language action (VLA) policies, can be tremendously effective for capturing complex and generalizable robotic behaviors. However, such models require us to choose a tokenization of our continuous action signals, which determines how the discrete symbols predicted by the model map to continuous robot actions. We find that current ..."
+    },
+    {
+      "title": "OpenICL - Read the Docs",
+      "url": "https://openicl.readthedocs.io/_/downloads/en/latest/pdf/",
+      "snippet": "It provides an easy interface for in-context learning, with many state-of-the-art retrieval and inference methods built in to facilitate systematic comparison of LMs and fast research prototyping. Users can easily incorporate diferent retrieval and inference methods, as well as diferent prompt instructions into their workflow."
+    },
+    {
+      "title": "GitHub - marcelroed/gigatoken: Language model tokenization at GB/s",
+      "url": "https://github.com/marcelroed/gigatoken",
+      "snippet": "Language model tokenization at GB/s. Contribute to marcelroed/gigatoken development by creating an account on GitHub."
+    }
+  ]
+}

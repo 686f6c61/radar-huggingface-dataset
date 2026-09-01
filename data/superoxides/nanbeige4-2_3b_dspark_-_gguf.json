@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "SUPEROXIDES/NANBEIGE4.2_3B_DSPARK_-_GGUF",
+  "slug": "superoxides-nanbeige4-2_3b_dspark_-_gguf",
+  "author": "SUPEROXIDES",
+  "url": "https://huggingface.co/SUPEROXIDES/NANBEIGE4.2_3B_DSPARK_-_GGUF",
+  "created_at": "2026-08-31T23:49:11.000Z",
+  "updated_at": "2026-09-01T00:05:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llm",
+    "nanbeige",
+    "custom_code",
+    "text-generation",
+    "en",
+    "zh",
+    "arxiv:2607.22083",
+    "base_model:Nanbeige/Nanbeige4.2-3B-DSpark",
+    "base_model:quantized:Nanbeige/Nanbeige4.2-3B-DSpark",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 847946241,
+  "parameters_human": "847.9M",
+  "storage_bytes": 5985323520,
+  "storage_human": "6.0 GB",
+  "base_model": "Nanbeige/Nanbeige4.2-3B-DSpark",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nanbeige/Nanbeige4-3B-Base · Hugging Face",
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4-3B-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nanbeige4.2-3B: Unlocking Agentic Capabilities in a Compact Model",
+      "url": "https://arxiv.org/abs/2607.22083",
+      "snippet": "We present Nanbeige4.2-3B, a compact general agentic model with 3B non-embedding parameters. It delivers strong performance across code-agent, office-agent, and complex tool-use tasks while maintaining highly competitive reasoning capabilities in mathematics, coding, and science. Nanbeige4.2-3B is pretrained from scratch on 28T tokens with a Looped Transformer that reuses the layer stack to ..."
+    },
+    {
+      "title": "Nanbeige/Nanbeige4.2-3B-Base — How to Spark",
+      "url": "https://howtospark.com/models/Nanbeige/Nanbeige4.2-3B-Base",
+      "snippet": "Spark fit analysis for Nanbeige/Nanbeige4.2-3B-Base: memory footprint, quantization options, and optimization recommendations for DGX Spark."
+    },
+    {
+      "title": "README.md · Nanbeige/Nanbeige4-3B-Base at main - Hugging Face",
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4-3B-Base/blob/main/README.md",
+      "snippet": "Nanbeige4-3B-Base is a 3B-parameter base model within the fourth-generation Nanbeige LLM family. It showcases that even a compact model can achieve advanced performances through continuous enhancements in data quality and training methodologies."
+    },
+    {
+      "title": "Nanbeige4.2-3B: Unlocking Agentic Capabilities in a Compact Model",
+      "url": "https://arxiv.org/html/2607.22083v1",
+      "snippet": "Abstract We present Nanbeige4.2-3B, a compact general agentic model with 3B non-embedding parameters. It delivers strong performance across code-agent, office-agent, and complex tool-use tasks while maintaining highly competitive reasoning capabilities in mathematics, coding, and science. Nanbeige4.2-3B is pretrained from scratch on 28T tokens with a Looped Transformer that reuses the layer ..."
+    }
+  ]
+}

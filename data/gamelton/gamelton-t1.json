@@ -5,7 +5,7 @@
   "author": "Gamelton",
   "url": "https://huggingface.co/Gamelton/Gamelton-T1",
   "created_at": "2026-08-30T19:55:18.000Z",
-  "updated_at": "2026-08-30T20:26:21.000Z",
+  "updated_at": "2026-08-31T18:06:43.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,12 +24,12 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 0,
+  "downloads_30d": 4,
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",
-  "storage_bytes": 994156576,
-  "storage_human": "994 MB",
+  "storage_bytes": 1988313152,
+  "storage_human": "2.0 GB",
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "gguf"

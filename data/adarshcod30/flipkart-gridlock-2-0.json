@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "adarshcod30/flipkart-gridlock-2.0",
+  "slug": "adarshcod30-flipkart-gridlock-2-0",
+  "author": "adarshcod30",
+  "url": "https://huggingface.co/adarshcod30/flipkart-gridlock-2.0",
+  "created_at": "2026-08-31T22:00:24.000Z",
+  "updated_at": "2026-08-31T22:00:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "xgboost",
+  "languages": [],
+  "tags": [
+    "xgboost",
+    "tabular-regression",
+    "traffic-prediction",
+    "geospatial",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adarshcod30/Flipkart-Gridlock-2.0 - GitHub",
+      "url": "https://github.com/adarshcod30/Flipkart-Gridlock-2.0",
+      "snippet": "A competition-grade, end-to-end machine learning pipeline that predicts real-time traffic demand across geographic locations using geohash spatial indexing, cyclical temporal encoding, and a tri-model ensemble optimized with Optuna hyperparameter tuning."
+    },
+    {
+      "title": "GitHub - Princekumartech/Flipkart-Gridlock-2.0",
+      "url": "https://github.com/Princekumartech/Flipkart-Gridlock-2.0",
+      "snippet": "This hackathon challenged participants to build AI models that predict traffic demand at specific road locations and time slots — using real-world data from Bengaluru Traffic Police (ASTraM) and MapMyIndia. Task: Given geolocation, road attributes, weather, and timestamp — predict normalized traffic demand (0-1) at that location."
+    },
+    {
+      "title": "Gridlock Hackathon 2.0 | Flipkart × Bengaluru Traffic Police",
+      "url": "https://gridlock2point0.hackerearth.com/",
+      "snippet": "Flipkart&#x27;s AI/ML hackathon to unlock urban mobility in Bengaluru. May 13 - Jun 5, 2026. ₹5L+ in prizes. Real data from BTP (Bengaluru Traffic Police)."
+    },
+    {
+      "title": "Flipkart-Gridlock-2.0/Documentation at main · TECHIE-TITAN ... - GitHub",
+      "url": "https://github.com/TECHIE-TITAN/Flipkart-Gridlock-2.0/blob/main/Documentation",
+      "snippet": "Gridlock Hackathon 2.0 is Flipkart&#x27;s call to India&#x27;s sharpest AI/ML minds, to build real solutions, on real data, with a real shot at going live on Bengaluru&#x27;s roads. Design AI models that classify congestion, detect violations, identify movement patterns, and support smarter mobility decisions."
+    },
+    {
+      "title": "GitHub - TECHIE-TITAN/Flipkart-Gridlock-2.0: Gridlock Hackathon 2.0 is ...",
+      "url": "https://github.com/TECHIE-TITAN/Flipkart-Gridlock-2.0",
+      "snippet": "Gridlock Hackathon 2.0 is Flipkart&#x27;s call to India&#x27;s sharpest AI/ML minds, to build real solutions, on real data, with a real shot at going live on Bengaluru&#x27;s roads."
+    }
+  ]
+}

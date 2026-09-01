@@ -5,7 +5,7 @@
   "author": "shunjdy",
   "url": "https://huggingface.co/shunjdy/DS-SOA",
   "created_at": "2026-08-31T00:07:13.000Z",
-  "updated_at": "2026-08-31T00:07:29.000Z",
+  "updated_at": "2026-08-31T13:48:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
     "llama",
     "trl",
     "en",
-    "base_model:unsloth/DeepSeek-R1-Distill-Llama-70B-unsloth-bnb-4bit",
-    "base_model:finetune:unsloth/DeepSeek-R1-Distill-Llama-70B-unsloth-bnb-4bit",
+    "base_model:unsloth/DeepSeek-R1-Distill-Llama-70B-bnb-4bit",
+    "base_model:finetune:unsloth/DeepSeek-R1-Distill-Llama-70B-bnb-4bit",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us"
@@ -34,7 +34,7 @@
   "parameters_human": null,
   "storage_bytes": 845735985,
   "storage_human": "846 MB",
-  "base_model": "unsloth/DeepSeek-R1-Distill-Llama-70B-unsloth-bnb-4bit",
+  "base_model": "unsloth/DeepSeek-R1-Distill-Llama-70B-bnb-4bit",
   "formats": [
     "safetensors"
   ],

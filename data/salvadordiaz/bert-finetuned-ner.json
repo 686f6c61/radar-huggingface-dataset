@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "SalvadorDiaz/bert-finetuned-ner",
+  "slug": "salvadordiaz-bert-finetuned-ner",
+  "author": "SalvadorDiaz",
+  "url": "https://huggingface.co/SalvadorDiaz/bert-finetuned-ner",
+  "created_at": "2024-05-29T15:32:45.000Z",
+  "updated_at": "2026-08-31T22:01:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "dataset:conll2003",
+    "base_model:google-bert/bert-base-cased",
+    "base_model:finetune:google-bert/bert-base-cased",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 107735829,
+  "parameters_human": "107.7M",
+  "storage_bytes": 20687083098,
+  "storage_human": "20.7 GB",
+  "base_model": "bert-base-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Token Classification",
+      "dataset": "conll2003",
+      "metric": "Precision",
+      "value": 0.9385863267670915
+    },
+    {
+      "task": "Token Classification",
+      "dataset": "conll2003",
+      "metric": "Recall",
+      "value": 0.9542241669471558
+    },
+    {
+      "task": "Token Classification",
+      "dataset": "conll2003",
+      "metric": "F1",
+      "value": 0.9463406492531086
+    },
+    {
+      "task": "Token Classification",
+      "dataset": "conll2003",
+      "metric": "Accuracy",
+      "value": 0.9869900512156354
+    }
+  ],
+  "sources": [
+    {
+      "title": "SalvadorDiaz/bert-finetuned-ner · Hugging Face",
+      "url": "https://huggingface.co/SalvadorDiaz/bert-finetuned-ner",
+      "snippet": "SalvadorDiaz ... bert-finetuned-ner like 0 Token Classification Transformers Safetensors conll2003 bert generated_from_trainer Eval Results Inference Endpoints License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model Edit model card bert-finetuned-ner Model description Intended uses & limitations Training and ..."
+    },
+    {
+      "title": "SalvadorDiaz (Salvador Diaz) - Hugging Face",
+      "url": "https://huggingface.co/SalvadorDiaz",
+      "snippet": "models 1 SalvadorDiaz/bert-finetuned-ner Token Classification • Updated 4 days ago • 9"
+    },
+    {
+      "title": "Bytez - open source AI",
+      "url": "https://bytez.com/model/SalvadorDiaz/bert-finetuned-ner",
+      "snippet": "Keep up with AI. Discover, demo, and deploy open source models"
+    },
+    {
+      "title": "GitHub - Liki990/bert_model: BERT finetuned on NER downstream tasks",
+      "url": "https://github.com/Liki990/bert_model",
+      "snippet": "BERT finetuned on NER downstream tasks. Contribute to Liki990/bert_model development by creating an account on GitHub."
+    },
+    {
+      "title": "Custom Named Entity Recognition with BERT.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/NielsRogge/Transformers-Tutorials/blob/master/BERT/Custom_Named_Entity_Recognition_with_BERT.ipynb",
+      "snippet": "In this notebook, we are going to use BertForTokenClassification which is included in the Transformers library by HuggingFace. This model has BERT as its base architecture, with a token classification head on top, allowing it to make predictions at the token level, rather than the sequence level. Named entity recognition is typically treated as a token classification problem, so that&#x27;s what we ..."
+    }
+  ]
+}

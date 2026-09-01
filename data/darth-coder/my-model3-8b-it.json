@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Darth-Coder/my-model3-8b-it",
+  "slug": "darth-coder-my-model3-8b-it",
+  "author": "Darth-Coder",
+  "url": "https://huggingface.co/Darth-Coder/my-model3-8b-it",
+  "created_at": "2026-08-31T21:34:26.000Z",
+  "updated_at": "2026-08-31T21:37:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:2309.00071",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939430,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Darth-Coder/my-model3-30b-it · Hugging Face",
+      "url": "https://huggingface.co/Darth-Coder/my-model3-30b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Darth-Coder/my-model2.5-14b-it · Hugging Face",
+      "url": "https://huggingface.co/Darth-Coder/my-model2.5-14b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Run a Local AI Coding Agent (2026): Ollama + VS Code Setup | LLM ...",
+      "url": "https://llmconfigurator.com/en/guides/coding-agents/setup-local-coding-agent",
+      "snippet": "Step-by-step: run a coding agent fully locally in 2026 — Ollama, Qwen3-Coder, and Continue or Cline in VS Code. Model picks per VRAM tier, config included."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

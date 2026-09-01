@@ -5,7 +5,7 @@
   "author": "HyeonseokE",
   "url": "https://huggingface.co/HyeonseokE/smolvla_phase1_push_button_A1_3000_10fps",
   "created_at": "2026-08-30T14:43:19.000Z",
-  "updated_at": "2026-08-30T14:44:22.000Z",
+  "updated_at": "2026-08-31T13:06:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -14,8 +14,8 @@
   "tags": [
     "lerobot",
     "safetensors",
-    "smolvla",
     "robotics",
+    "smolvla",
     "dataset:HyeonseokE/phase1_push_button_A1_10fps",
     "arxiv:2506.01844",
     "base_model:lerobot/smolvla_base",

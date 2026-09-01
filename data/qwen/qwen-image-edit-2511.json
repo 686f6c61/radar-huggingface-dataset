@@ -25,9 +25,9 @@
     "diffusers:QwenImageEditPlusPipeline",
     "region:us"
   ],
-  "likes": 1305,
+  "likes": 1307,
   "downloads_30d": 257746,
-  "trending_score": 14,
+  "trending_score": 16,
   "parameters": 20430401088,
   "parameters_human": "20.43B",
   "storage_bytes": 57715696541,

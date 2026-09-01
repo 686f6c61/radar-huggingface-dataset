@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-2k_3k_4k_5k_6k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_unfiltered_midtrain_alignment-2k_3k_4k_5k_6k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-2k_3k_4k_5k_6k_simpleavg_merge",
+  "created_at": "2026-09-01T01:30:50.000Z",
+  "updated_at": "2026-09-01T01:31:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sfm_unfiltered_midtrain_alignment-2k_3k_4k_merge",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-2k_3k_4k_merge",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg ...",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sfm_unfiltered_midtrain_alignment-2k_3k_4k_merge",
+      "url": "https://friendli.ai/models/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-2k_3k_4k_merge",
+      "snippet": "Deploy sfm_unfiltered_midtrain_alignment-2k_3k_4k_merge with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg - friendli.ai",
+      "url": "https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg",
+      "snippet": "Deploy sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Sfm Unfiltered Midtrain Alignment Upsampled Base by geodesic-research",
+      "url": "https://llm-explorer.com/model/geodesic-research%2Fsfm_unfiltered_midtrain_alignment_upsampled_base,7aVtadhj0nphXwuVOALwdc",
+      "snippet": "Rank the Sfm Unfiltered Midtrain Alignment Upsampled Base capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

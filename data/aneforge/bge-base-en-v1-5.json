@@ -5,7 +5,7 @@
   "author": "aneforge",
   "url": "https://huggingface.co/aneforge/bge-base-en-v1.5",
   "created_at": "2026-08-30T23:13:56.000Z",
-  "updated_at": "2026-08-30T23:13:58.000Z",
+  "updated_at": "2026-08-31T02:43:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 17,
   "trending_score": 0,
   "parameters": 109482752,
   "parameters_human": "109.5M",

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sjakek/slimder-qwen38-reap384-depth40-mb4-5-GGUF",
+  "slug": "sjakek-slimder-qwen38-reap384-depth40-mb4-5-gguf",
+  "author": "sjakek",
+  "url": "https://huggingface.co/sjakek/slimder-qwen38-reap384-depth40-mb4-5-GGUF",
+  "created_at": "2026-08-31T22:16:01.000Z",
+  "updated_at": "2026-09-01T00:11:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen4-exp",
+    "slimder",
+    "base_model:sjakek/slimder-qwen38-reap384-depth40-mb4-5",
+    "base_model:quantized:sjakek/slimder-qwen38-reap384-depth40-mb4-5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 131026159680,
+  "parameters_human": "131.03B",
+  "storage_bytes": 152959034752,
+  "storage_human": "153.0 GB",
+  "base_model": "sjakek/slimder-qwen38-reap384-depth40-mb4-5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sunnyyy/qwen38-27b-huihui-slim-lora · Hugging Face",
+      "url": "https://huggingface.co/sunnyyy/qwen38-27b-huihui-slim-lora",
+      "snippet": "The delta between huihui-ai/Huihui-Qwen3.8-27B-abliterated and Qwen/Qwen3.8-27B, extracted as a rank-64 LoRA and energy-pruned from 6.1 GB → 203 MB (bf16) / 108 MB (q8_0 GGUF)."
+    },
+    {
+      "title": "GitHub - syv-ai/qwen38-27b-rtx3090: Qwen3.8-27B on a single RTX 3090 ...",
+      "url": "https://github.com/syv-ai/qwen38-27b-rtx3090",
+      "snippet": "Serving setup for Qwen3.8-27B on a single 24 GB consumer GPU with vLLM — 150k token context and an OpenAI-compatible API with key auth, in two ready-made modes."
+    },
+    {
+      "title": "GitHub - rahlquist/qwen38-r9700: Qwen3.8-27B measured performance on ...",
+      "url": "https://github.com/rahlquist/qwen38-r9700",
+      "snippet": "What is inside Model: ggml-org/Qwen3.8-27B-GGUF @ 0669b986, Qwen3.8-27B-Q4_K_M.gguf. Model SHA-256: 31629f53165ab6a7dad8c9847dcfd1fdf55829dac1e6e748f4a68581b0033d34. Runtime: llama.cpp ROCm/HIP build 10438, commit 9d57ce456. GPU: AMD Radeon AI PRO R9700, gfx1201, 32,624 MiB VRAM. Context: 65,536 configured in the deployed server."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    }
+  ]
+}

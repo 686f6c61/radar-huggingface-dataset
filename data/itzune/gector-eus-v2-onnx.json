@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "itzune/gector-eus-v2-onnx",
+  "slug": "itzune-gector-eus-v2-onnx",
+  "author": "itzune",
+  "url": "https://huggingface.co/itzune/gector-eus-v2-onnx",
+  "created_at": "2026-08-31T20:23:21.000Z",
+  "updated_at": "2026-08-31T21:31:23.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "eu"
+  ],
+  "tags": [
+    "onnx",
+    "grammatical-error-correction",
+    "gector",
+    "basque",
+    "euskara",
+    "seq2edit",
+    "error-type-classification",
+    "multitask",
+    "in-browser",
+    "token-classification",
+    "eu",
+    "base_model:itzune/gector-eus-v2",
+    "base_model:quantized:itzune/gector-eus-v2",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 216336207,
+  "storage_human": "216 MB",
+  "base_model": "itzune/gector-eus-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "itzune/gector-eus-onnx · Hugging Face",
+      "url": "https://huggingface.co/itzune/gector-eus-onnx",
+      "snippet": "Unofficial ONNX int4 conversion of a GECToR model fine-tuned on RoBERTa-eus-base for Basque grammatical error correction."
+    },
+    {
+      "title": "itzune/gector-eus · Hugging Face",
+      "url": "https://huggingface.co/itzune/gector-eus",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models?tab=readme-ov-file",
+      "snippet": "Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of pre-trained, state-of-the-art models in the ONNX format."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

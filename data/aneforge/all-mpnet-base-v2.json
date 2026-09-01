@@ -5,7 +5,7 @@
   "author": "aneforge",
   "url": "https://huggingface.co/aneforge/all-mpnet-base-v2",
   "created_at": "2026-08-31T00:48:38.000Z",
-  "updated_at": "2026-08-31T00:48:45.000Z",
+  "updated_at": "2026-08-31T02:43:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 17,
   "trending_score": 0,
   "parameters": 109486978,
   "parameters_human": "109.5M",

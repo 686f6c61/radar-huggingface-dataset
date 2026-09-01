@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "LightOriginsHQ/LightNav-0",
+  "slug": "lightoriginshq-lightnav-0",
+  "author": "LightOriginsHQ",
+  "url": "https://huggingface.co/LightOriginsHQ/LightNav-0",
+  "created_at": "2026-08-28T09:18:56.000Z",
+  "updated_at": "2026-09-01T01:50:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "embodied-navigation",
+    "vision-language-navigation",
+    "visual-tracking",
+    "vision-language-action",
+    "qwen3-vl",
+    "robotics",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 4847825408,
+  "parameters_human": "4.85B",
+  "storage_bytes": 9709151142,
+  "storage_human": "9.7 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LightOriginsHQ (Light Origins) - Hugging Face",
+      "url": "https://huggingface.co/LightOriginsHQ/models",
+      "snippet": "Org profile for Light Origins on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "One Brain for Any Robot | Introducing LightNav-0 #robotics # ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=e8w78YqYShU",
+      "snippet": "Every robot should see, understand, and explore the physical world.Meet LightNav-0, a generalist navigation brain from Light Origins.Any robot. Any task. Any..."
+    },
+    {
+      "title": "LightOrigins (@LightOrigins_) / X",
+      "url": "https://x.com/LightOrigins_",
+      "snippet": "Light Origins brings foundation-model intelligence into the physical world so machines can perceive, reason, and act."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "lightNAV | Light Robotics",
+      "url": "https://lightrobotic.co.uk/lightNAV.html",
+      "snippet": "lightNAV — Autonomous Navigation for Outdoor Environment by Light Robotics. Limitless autonomy from factory floors to agricultural fields with LiDAR-based perception."
+    }
+  ]
+}

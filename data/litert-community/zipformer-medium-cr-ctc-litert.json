@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "litert-community/Zipformer-medium-CR-CTC-LiteRT",
+  "slug": "litert-community-zipformer-medium-cr-ctc-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/Zipformer-medium-CR-CTC-LiteRT",
+  "created_at": "2026-08-13T01:19:37.000Z",
+  "updated_at": "2026-09-01T01:45:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "litert",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "litert",
+    "tflite",
+    "android",
+    "gpu",
+    "zipformer",
+    "ctc",
+    "icefall",
+    "speech-recognition",
+    "automatic-speech-recognition",
+    "en",
+    "arxiv:2310.11230",
+    "base_model:Zengwei/icefall-asr-librispeech-zipformer-medium-cr-ctc-20241018",
+    "base_model:finetune:Zengwei/icefall-asr-librispeech-zipformer-medium-cr-ctc-20241018",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 106,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 475900001,
+  "storage_human": "476 MB",
+  "base_model": "Zengwei/icefall-asr-librispeech-zipformer-medium-cr-ctc-20241018",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/Zipformer-medium-CR-CTC-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/litert-community/Zipformer-medium-CR-CTC-LiteRT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "litert-community/Zipformer-medium-CR-CTC-LiteRT at main",
+      "url": "https://huggingface.co/litert-community/Zipformer-medium-CR-CTC-LiteRT/tree/main",
+      "snippet": "litert-community / Zipformer-medium-CR-CTC-LiteRT like 0 Follow LiteRT Community (FKA TFLite) 8.32k Automatic Speech Recognition LiteRT LiteRT English android gpu zipformer ctc icefall speech-recognition arxiv:2310.11230 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "litert-samples/models/zipformer/zipformer_ctc/README.md at main ...",
+      "url": "https://github.com/google-ai-edge/litert-samples/blob/main/models/zipformer/zipformer_ctc/README.md",
+      "snippet": "Model recipes, conversion scripts, instructions, and utilities for Zipformer-medium CR-CTC speech recognition (Zengwei/icefall-asr-librispeech-zipformer-medium-cr-ctc-20241018)."
+    },
+    {
+      "title": "litert-samples/models/zipformer/zipformer_ctc at main · google-ai-edge ...",
+      "url": "https://github.com/google-ai-edge/litert-samples/tree/main/models/zipformer/zipformer_ctc",
+      "snippet": "Zipformer CR-CTC Speech Recognition Model recipes, conversion scripts, instructions, and utilities for Zipformer-medium CR-CTC speech recognition (Zengwei/icefall-asr-librispeech-zipformer-medium-cr-ctc-20241018)."
+    },
+    {
+      "title": "Models - Zipformer",
+      "url": "https://pkufool.github.io/zipformer/en/models/",
+      "snippet": "Models This page lists zipformer pre-trained models and their performance on commonly used open-source test sets, along with usage instructions. Configuration zipformer models are available in xlarge, large, medium, and small variants, the model configurations are as follows."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Simisear",
+  "slug": "ryanham1lton-simisear",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Simisear",
+  "created_at": "2026-08-31T19:17:43.000Z",
+  "updated_at": "2026-08-31T19:18:44.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117685400,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton/SealeoMB · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/SealeoMB",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Seaside Postmaster Charged in AI Child Abuse Images Case",
+      "url": "https://hoodline.com/2026/08/seaside-postmaster-accused-of-using-ai-to-create-child-abuse-images/",
+      "snippet": "A Seaside postmaster is behind bars, accused of using AI to manufacture child sexual abuse images over an eight-month span."
+    },
+    {
+      "title": "Ryanham1lton/ShiftryES · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/ShiftryES",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ryanham1lton | Storyteller.ai",
+      "url": "https://storyteller.ai/profile/ryanham1lton",
+      "snippet": "Storyteller.ai AI creation engine Make movies like this with Seedance 2.0 - cheaper than anywhere else. Seedance 2.0 model is live on ArtCraft before anywhere else. Create cinematic AI video with fluid motion and Hollywood-level scenes."
+    },
+    {
+      "title": "A‌I chat|1v1 Chat with Character Simisear for Free Personalized ...",
+      "url": "https://www.polybuzz.ai/character/chat/simisear-vdbXr",
+      "snippet": "Dive into lifelike 1-on-1 AI chat with Simisear|Experience human-like conversations,emotional depth,and personalized scenarios powered by DeepAI.Ask anything to your AI character."
+    }
+  ]
+}

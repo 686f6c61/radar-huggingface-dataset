@@ -5,7 +5,7 @@
   "author": "AnonimousA",
   "url": "https://huggingface.co/AnonimousA/Qwen3.8-Flash-Next-REAP-320-GGUF",
   "created_at": "2026-08-30T22:24:32.000Z",
-  "updated_at": "2026-08-31T00:25:23.000Z",
+  "updated_at": "2026-09-01T01:09:03.000Z",
   "license": "qwen-community-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -27,13 +27,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 1,
-  "downloads_30d": 0,
+  "likes": 6,
+  "downloads_30d": 71,
   "trending_score": 0,
   "parameters": 131621823360,
   "parameters_human": "131.62B",
-  "storage_bytes": 68958145088,
-  "storage_human": "69.0 GB",
+  "storage_bytes": 130451058816,
+  "storage_human": "130.5 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

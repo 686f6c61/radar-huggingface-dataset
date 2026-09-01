@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ETeissonniere/Nemotron-3-Nano-4B-CoreAI-128K",
+  "slug": "eteissonniere-nemotron-3-nano-4b-coreai-128k",
+  "author": "ETeissonniere",
+  "url": "https://huggingface.co/ETeissonniere/Nemotron-3-Nano-4B-CoreAI-128K",
+  "created_at": "2026-08-31T23:49:22.000Z",
+  "updated_at": "2026-08-31T23:51:53.000Z",
+  "license": "nvidia-nemotron-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "coreai",
+  "languages": [],
+  "tags": [
+    "coreai",
+    "core-ai",
+    "macos",
+    "int8",
+    "apple-silicon",
+    "128k-context",
+    "text-generation",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4626119995,
+  "storage_human": "4.6 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ETeissonniere/Nemotron-3-Nano-4B-CoreAI · Hugging Face",
+      "url": "https://huggingface.co/ETeissonniere/Nemotron-3-Nano-4B-CoreAI",
+      "snippet": "NVIDIA Nemotron 3 Nano 4B — Core AI INT8 This is a native Apple Core AI conversion of nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16 at immutable revision dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f. It is the Fast model used by the Qwen Core AI macOS exploration app."
+    },
+    {
+      "title": "README.md · ETeissonniere/Nemotron-3-Nano-4B-CoreAI at main",
+      "url": "https://huggingface.co/ETeissonniere/Nemotron-3-Nano-4B-CoreAI/blob/main/README.md",
+      "snippet": "NVIDIA Nemotron 3 Nano 4B — Core AI INT8 This is a native Apple Core AI conversion of nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16 at immutable revision dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f. It is the Fast model used by the Qwen Core AI macOS exploration app."
+    },
+    {
+      "title": "NVIDIA Nemotron 3 Family of Models - NVIDIA Nemotron",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3/",
+      "snippet": "We announce NVIDIA Nemotron 3, the most efficient family of open models with leading accuracy for agentic AI applications. The Nemotron 3 family consists of three models: Nano, Super, and Ultra."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "coreai-model-zoo/models/nemotron-3-nano at main - GitHub",
+      "url": "https://github.com/john-rocky/coreai-model-zoo/tree/main/models/nemotron-3-nano",
+      "snippet": "A 4B graph cannot specialize on-device, so the iPhone bundle is AOT-compiled for h18p (the FastContext lesson). CoreAIShared.ModelBundle reads metadata.jsonat the model dir, so after coreai-build compile you must rewrite assets.main to <name>.h18p.aimodelc."
+    }
+  ]
+}

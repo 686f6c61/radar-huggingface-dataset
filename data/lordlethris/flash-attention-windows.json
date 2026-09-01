@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lordlethris/flash-attention-windows",
+  "slug": "lordlethris-flash-attention-windows",
+  "author": "lordlethris",
+  "url": "https://huggingface.co/lordlethris/flash-attention-windows",
+  "created_at": "2026-08-31T20:48:11.000Z",
+  "updated_at": "2026-08-31T21:02:29.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "flash-attn",
+  "languages": [],
+  "tags": [
+    "flash-attn",
+    "flash-attention",
+    "pytorch",
+    "cuda",
+    "windows",
+    "comfyui",
+    "custom-wheel",
+    "inference",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120401506,
+  "storage_human": "120 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - sdbds/flash-attention-for-windows: Fast and memory-efficient ...",
+      "url": "https://github.com/sdbds/flash-attention-for-windows",
+      "snippet": "Fast and memory-efficient exact attention. Contribute to sdbds/flash-attention-for-windows development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - codcordance/flash-attention-win: Windows wheels for ...",
+      "url": "https://github.com/codcordance/flash-attention-win",
+      "snippet": "Windows wheels for FlashAttention. Contribute to codcordance/flash-attention-win development by creating an account on GitHub."
+    },
+    {
+      "title": "lldacing/flash-attention-windows-wheel · Hugging Face",
+      "url": "https://huggingface.co/lldacing/flash-attention-windows-wheel",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lldacing/flash-attention-windows-wheel at ... - Hugging Face",
+      "url": "https://huggingface.co/lldacing/flash-attention-windows-wheel/tree/3407de96cf285696e9b5cb37abe13e73a0eef662",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Flash-Attention 3 Wheels Repository - windreamer.github.io",
+      "url": "https://windreamer.github.io/flash-attention3-wheels/",
+      "snippet": "🔥 Flash-Attention 3 Wheels Repository Pre-built wheels for Flash-Attention 3, updated biweekly Generated on: 2026-08-31 03:24:57 UTC"
+    }
+  ]
+}

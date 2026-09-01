@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rishanthrajendhran/ideadet-nemotron30b-1m-document",
+  "slug": "rishanthrajendhran-ideadet-nemotron30b-1m-document",
+  "author": "rishanthrajendhran",
+  "url": "https://huggingface.co/rishanthrajendhran/ideadet-nemotron30b-1m-document",
+  "created_at": "2026-08-31T20:01:05.000Z",
+  "updated_at": "2026-08-31T20:01:36.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "ai-detection",
+    "lora",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3088638968,
+  "storage_human": "3.1 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "rishanthrajendhran (Rishanth Rajendhran) - Hugging Face",
+      "url": "https://huggingface.co/rishanthrajendhran",
+      "snippet": "NLP, LLM, Prompting, Multimodality, RLHF, Local Explainability AI & ML interests NLP, LLM, Prompting, Multimodality, RLHF, Local Explainability"
+    },
+    {
+      "title": "rishanthrajendhran (Rishanth Rajendhran) - Hugging Face",
+      "url": "https://huggingface.co/rishanthrajendhran/datasets",
+      "snippet": "rishanthrajendhran&#x27;s datasets2 Sort: Recently updated rishanthrajendhran/POLARIS Viewer •Updated 22 days ago•1.57k• 83"
+    },
+    {
+      "title": "RishanthRajendhran (Rishanth Rajendhran) · GitHub",
+      "url": "https://github.com/RishanthRajendhran/",
+      "snippet": "RishanthRajendhran has 44 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Rishanth Rajendhran",
+      "url": "https://rishanthrajendhran.github.io/",
+      "snippet": "My research focuses on analysing and improving generations by large language models, particularly long-context reasoning, factuality, and reinforcement learning from human/AI feedback."
+    }
+  ]
+}

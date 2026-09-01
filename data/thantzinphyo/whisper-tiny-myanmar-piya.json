@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "thantzinphyo/whisper-tiny-myanmar-piya",
+  "slug": "thantzinphyo-whisper-tiny-myanmar-piya",
+  "author": "thantzinphyo",
+  "url": "https://huggingface.co/thantzinphyo/whisper-tiny-myanmar-piya",
+  "created_at": "2026-08-31T20:39:22.000Z",
+  "updated_at": "2026-08-31T22:19:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "my"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "audio",
+    "automatic-speech-recognition",
+    "my",
+    "dataset:thantzinphyo/burmese-speech-refined-openslr-80",
+    "base_model:thantzinphyo/Whisper-Tiny-Myanmar-Partial-Freezing",
+    "base_model:finetune:thantzinphyo/Whisper-Tiny-Myanmar-Partial-Freezing",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 302123344,
+  "storage_human": "302 MB",
+  "base_model": "thantzinphyo/Whisper-Tiny-Myanmar-Partial-Freezing",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Burmese Speech Refined OpenSLR-80",
+      "metric": "Validation WER",
+      "value": 54.806
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Burmese Speech Refined OpenSLR-80",
+      "metric": "Validation CER",
+      "value": 19.3867
+    }
+  ],
+  "sources": [
+    {
+      "title": "thantzinphyo/whisper-tiny-myanmar-phase1 · Hugging Face",
+      "url": "https://huggingface.co/thantzinphyo/whisper-tiny-myanmar-phase1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "thantzinphyo/whisper-tiny-myanmar-phase2 · Hugging Face",
+      "url": "https://huggingface.co/thantzinphyo/whisper-tiny-myanmar-phase2",
+      "snippet": "thantzinphyo / whisper-tiny-myanmar-phase2 like 0 Automatic Speech Recognition Transformers Safetensors whisper Generated from Trainer License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "whisper-tiny-myanmar-phase2 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/thantzinphyo/whisper-tiny-myanmar-phase2",
+      "snippet": "Run whisper-tiny-myanmar-phase2 with FriendliAI inference. This model is a fine-tuned version of thantzinphyo/whisper-tiny-myanmar-phase1 on the None dataset."
+    },
+    {
+      "title": "whisper-tiny-myanmar-shopvoice API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/thantzinphyo/whisper-tiny-myanmar-shopvoice",
+      "snippet": "Run whisper-tiny-myanmar-shopvoice with FriendliAI inference. A fine-tuned OpenAI Whisper Tiny model for Myanmar-language ShopVoice applications."
+    },
+    {
+      "title": "whisper-tiny-myanmar Open-source Model - Free and Support Precise ...",
+      "url": "https://model.aibase.com/models/details/1915693346418483202",
+      "snippet": "This model is an automatic speech recognition (ASR) model fine-tuned on Burmese speech datasets based on openai/whisper-tiny, supporting Burmese speech-to-text tasks."
+    }
+  ]
+}

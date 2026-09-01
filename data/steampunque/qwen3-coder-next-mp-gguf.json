@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "steampunque/Qwen3-Coder-Next-MP-GGUF",
+  "slug": "steampunque-qwen3-coder-next-mp-gguf",
+  "author": "steampunque",
+  "url": "https://huggingface.co/steampunque/Qwen3-Coder-Next-MP-GGUF",
+  "created_at": "2026-02-09T18:41:21.000Z",
+  "updated_at": "2026-08-31T21:06:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "Qwen",
+    "Qwen3 Coder Next",
+    "GGUF",
+    "quantized",
+    "4-bit",
+    "mixed precision",
+    "base_model:Qwen/Qwen3-Coder-Next",
+    "base_model:quantized:Qwen/Qwen3-Coder-Next",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 61,
+  "trending_score": 0,
+  "parameters": 79674391296,
+  "parameters_human": "79.67B",
+  "storage_bytes": 145296226560,
+  "storage_human": "145.3 GB",
+  "base_model": "Qwen/Qwen3-Coder-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "steampunque/Qwen3-Coder-Next-MP-GGUF · Hugging Face",
+      "url": "https://huggingface.co/steampunque/Qwen3-Coder-Next-MP-GGUF",
+      "snippet": "The layer quants were optimized for 100% success across a small set of code generation test prompts while sized for operation on machines with 48G CPU RAM and one consumer grade GPU (8G VRAM or higher). The model was found to be very sensitive to quantization degradation negatively impacting its ability to generate working code. Comparison:"
+    },
+    {
+      "title": "steampunque/Qwen3-Coder-Next-MP-GGUF · good quant",
+      "url": "https://huggingface.co/steampunque/Qwen3-Coder-Next-MP-GGUF/discussions/1",
+      "snippet": "like 3 GGUF Qwen Qwen3 Coder Next GGUF quantized 4-bit precision mixed precision conversational License:apache-2.0 Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3-Coder-Next: How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3-coder-next",
+      "snippet": "Qwen releases Qwen3-Coder-Next, an 80B MoE model (3B active parameters) with 256K context for fast agentic coding and local use. It is comparable to the performance of models with 10-20× more active parameters. It runs on 46GB RAM /VRAM/unified memory (85GB for 8-bit), is non-reasoning for ultra-quick code responses. The model excels at long-horizon reasoning, complex tool use, and recovery ..."
+    },
+    {
+      "title": "Run Qwen3-Coder-Next Locally: Install Guide 2026",
+      "url": "https://codersera.com/blog/run-qwen3-coder-next-locally-2026/",
+      "snippet": "Install and run Qwen3-Coder-Next locally in 2026. Covers hardware requirements, Ollama or llama.cpp setup, and getting the coding model running on your machine."
+    },
+    {
+      "title": "Qwen3 Coder Next: Proven 12-Step GGUF + H100 Runbook (2026)",
+      "url": "https://binaryverseai.com/qwen3-coder-next-gguf-local-review-install-fixes/",
+      "snippet": "You can learn more about Qwen3 Coder Next on the official Qwen blog, check out the model on Hugging Face, or follow updates on X. For more insights on best LLMs for coding in 2025, explore our comprehensive guides at BinaryVerse AI."
+    }
+  ]
+}

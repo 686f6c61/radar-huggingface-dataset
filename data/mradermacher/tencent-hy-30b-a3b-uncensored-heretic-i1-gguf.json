@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Tencent-Hy-30B-A3B-uncensored-heretic-i1-GGUF",
   "created_at": "2026-08-31T17:01:16.000Z",
-  "updated_at": "2026-08-31T18:01:24.000Z",
+  "updated_at": "2026-09-01T02:41:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -106,8 +106,8 @@
   "trending_score": 0,
   "parameters": 30064725888,
   "parameters_human": "30.06B",
-  "storage_bytes": 24442896320,
-  "storage_human": "24.4 GB",
+  "storage_bytes": 256765183200,
+  "storage_human": "256.8 GB",
   "base_model": "0xSojalSec/Tencent-Hy-30B-A3B-uncensored-heretic",
   "formats": [
     "gguf"

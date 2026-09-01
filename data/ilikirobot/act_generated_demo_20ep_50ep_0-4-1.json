@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ilikirobot/act_generated_demo_20ep_50ep_0.4.1",
+  "slug": "ilikirobot-act_generated_demo_20ep_50ep_0-4-1",
+  "author": "ilikirobot",
+  "url": "https://huggingface.co/ilikirobot/act_generated_demo_20ep_50ep_0.4.1",
+  "created_at": "2026-08-31T22:35:59.000Z",
+  "updated_at": "2026-08-31T22:36:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:ilikirobot/generated_demo_20ep_50ep",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51596934,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206420632,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ilikirobot/act_generated_demo_20ep_50ep · Hugging Face",
+      "url": "https://huggingface.co/ilikirobot/act_generated_demo_20ep_50ep",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ilikirobot/act_generated_dataset · Hugging Face",
+      "url": "https://huggingface.co/ilikirobot/act_generated_dataset",
+      "snippet": "Instructions to use ilikirobot/act_generated_dataset with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use ilikirobot/act_generated_dataset with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "Best free AI detector - simply paste your text to instantly get an overall AI score and advanced sentence by sentence detection."
+    },
+    {
+      "title": "Odysseus AI - Self-Hosted AI Workspace Setup Guide",
+      "url": "https://odysseusai.dev/",
+      "snippet": "Odysseus AI Setup Guide For PewDiePie&#x27;s self-hosted AI workspace Verify the official source, choose Docker, Windows, macOS, or Linux, connect Ollama or API keys, read logs, choose a model that fits your hardware, and avoid unsafe public deployment."
+    }
+  ]
+}

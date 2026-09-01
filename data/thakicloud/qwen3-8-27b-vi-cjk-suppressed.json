@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/Qwen3.8-27B-vi-cjk-suppressed",
+  "slug": "thakicloud-qwen3-8-27b-vi-cjk-suppressed",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/Qwen3.8-27B-vi-cjk-suppressed",
+  "created_at": "2026-09-01T00:27:13.000Z",
+  "updated_at": "2026-09-01T02:45:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "vietnamese",
+    "vocabulary-pruning",
+    "language-confusion",
+    "code-switching",
+    "recipe",
+    "vi",
+    "arxiv:2507.14894",
+    "arxiv:2604.16235",
+    "arxiv:2604.26553",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ThakiCloud/Qwen3.8-27B-NVFP4-FP8ATTN · Hugging Face",
+      "url": "https://huggingface.co/ThakiCloud/Qwen3.8-27B-NVFP4-FP8ATTN",
+      "snippet": "Mixed-precision quantization of Qwen/Qwen3.8-27B: NVFP4 (4-bit) on the MLP stack, FP8 (8-bit) on every attention projection.22.90 GB on disk against the 55.59 GB bf16 original — a 2.43x reduction."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen 3.8 27B - GroqDocs",
+      "url": "https://console.groq.com/docs/model/qwen/qwen3.8-27b",
+      "snippet": "Qwen 3.8 27B is a 27-billion-parameter multimodal model from Alibaba&#x27;s Qwen series, delivering frontier-level agentic coding, reasoning, and long-horizon task performance that rivals models many times its size. It accepts both image and text inputs for visual understanding tasks such as image analysis, OCR, and visual question answering, and supports seamless switching between thinking mode ..."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "RockTalk/Qwen3.8-Flash-Next-MLX-4bit",
+  "slug": "rocktalk-qwen3-8-flash-next-mlx-4bit",
+  "author": "RockTalk",
+  "url": "https://huggingface.co/RockTalk/Qwen3.8-Flash-Next-MLX-4bit",
+  "created_at": "2026-08-28T13:25:57.000Z",
+  "updated_at": "2026-08-31T23:08:57.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "text-generation",
+    "apple-silicon",
+    "speculative-decoding",
+    "quantized",
+    "gmlx",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 311,
+  "trending_score": 0,
+  "parameters": 20223976528,
+  "parameters_human": "20.22B",
+  "storage_bytes": 175282681675,
+  "storage_human": "175.3 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RockTalk/Qwen3.8-Flash-Next-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/RockTalk/Qwen3.8-Flash-Next-MLX-4bit",
+      "snippet": "What is this model? Qwen3.8-Flash-Next is Qwen&#x27;s experimental preview of the Qwen4 architecture. ~180B total parameters: 125B MoE transformer (6B active, 512 experts, top-10+shared)"
+    },
+    {
+      "title": "mlx_qwen4exp — Qwen3.8-Flash-Next MLX Port - GitHub",
+      "url": "https://github.com/Rocktalk-Holdings/mlx-qwen4exp",
+      "snippet": "First open-code MLX implementation of Qwen3.8-Flash-Next (qwen4_exp architecture). Runs at 25-35 tok/s on Apple Silicon with 4-bit quantization; supports MTP speculative decoding (batch-verify mode: every emitted token is the verified argmax of a full forward pass — self-consistent greedy). See the Numerics note below regarding token-exact equivalence to plain greedy."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next MLX - a pipenetwork Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/pipenetwork/qwen38-flash-next-mlx",
+      "snippet": "Note 192 GB. Indistinguishable from bf16: ppl 4.4749 vs 4.4708, paired ratio 1.0009 [0.9997, 1.0021], better on 50% of windows."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. Qwen3.8 -Flash-Next outperforms Claude-4.6-Opus (Max) and can run locally on devices with 75GB RAM /unified memory with no GPU VRAM required."
+    }
+  ]
+}

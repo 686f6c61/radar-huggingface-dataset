@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "Jazhyc/Gleipnir-9B",
+  "slug": "jazhyc-gleipnir-9b",
+  "author": "Jazhyc",
+  "url": "https://huggingface.co/Jazhyc/Gleipnir-9B",
+  "created_at": "2026-08-31T21:38:18.000Z",
+  "updated_at": "2026-08-31T21:38:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "ai-control",
+    "deception-detection",
+    "scheming-detection",
+    "monitoring",
+    "knowledge-distillation",
+    "lora",
+    "research-artifact",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1862344080,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Binary AI-control monitoring",
+      "dataset": "Six-source strict-OOD action-only tool-trajectory suite",
+      "metric": "Mean-OOD AUROC",
+      "value": 0.921536
+    },
+    {
+      "task": "Binary AI-control monitoring",
+      "dataset": "Six-source strict-OOD action-only tool-trajectory suite",
+      "metric": "Mean-OOD pAUROC@20",
+      "value": 0.821183
+    }
+  ],
+  "sources": [
+    {
+      "title": "gleipnir AI Models | Civitai",
+      "url": "https://civitai.com/tag/gleipnir",
+      "snippet": "gleipnir Browse 17 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with gleipnir."
+    },
+    {
+      "title": "Gleipnir - v2.0 (BF16) | Stable Diffusion XL Checkpoint | Civitai",
+      "url": "https://civitai.com/models/175094/gleipnir",
+      "snippet": "In norse mythology Gleipnir is the binding that holds the mighty Fenris Wolf. Gleipnir ist stronger than any iron Chain even thin like a silk ribbon it will hold till ragnarök when he will break free and devour odin. even i did working over an month on that it is still a WIP Model and highly experimental ! Like my other model Newdawnxl this is a general model Photorealistic Digital Art Anime ..."
+    },
+    {
+      "title": "Gleipnir AI Models | PixAI",
+      "url": "https://pixai.art/tags/model/gleipnir_(series)",
+      "snippet": "Discover AI Art Model in our #Gleipnir gallery. All TagsTags Trending Trending Most Used Most Liked Latest All Categories All Categories LoRA SD All Time All Time Yesterday Past 7 Days Past 30 Days User LoRAXL Gleipnir Chihiro Yoshioka 1150 3 User LoRAXL Clair Aoki (青木 紅愛) - Gleipnir (グレイプニル) 2850 4"
+    },
+    {
+      "title": "Training Deliberative Monitors for Black-Box Scheming Detection",
+      "url": "https://alpha-ollama.hf-mirror.com/papers/2605.29601",
+      "snippet": "In this work, we study action-only deliberative monitors: smaller open-weight models trained to detect scheming and sabotage from agentic trajectories without accessing the monitored agent&#x27;s reasoning or model internals."
+    },
+    {
+      "title": "Gleipnir - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/7cf5ebc12b929eb3b391639ea64974b8",
+      "snippet": "Explore Gleipnir model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "TelperionAI/Qwen3.8-27B-EXL3-5.5bpw",
+  "slug": "telperionai-qwen3-8-27b-exl3-5-5bpw",
+  "author": "TelperionAI",
+  "url": "https://huggingface.co/TelperionAI/Qwen3.8-27B-EXL3-5.5bpw",
+  "created_at": "2026-08-31T21:57:11.000Z",
+  "updated_at": "2026-08-31T21:58:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "exl3",
+    "exllamav3",
+    "quantized",
+    "awq",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10709923056,
+  "parameters_human": "10.71B",
+  "storage_bytes": 21440138451,
+  "storage_human": "21.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "TelperionAI/Qwen3.8-27B-INT4-AWQ-GPTQ · Hugging Face",
+      "url": "https://huggingface.co/TelperionAI/Qwen3.8-27B-INT4-AWQ-GPTQ",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen3.8 27B INT4 AWQ GPTQ by TelperionAI - LLM Explorer",
+      "url": "https://llm-explorer.com/model/TelperionAI%2FQwen3.8-27B-INT4-AWQ-GPTQ,7FBYtQCENFaTLoNlHLlCrM",
+      "snippet": "Qwen3.8 27B INT4 AWQ GPTQ is an open-source 27b LLM by TelperionAI. VRAM 25GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "lllqaq",
   "url": "https://huggingface.co/lllqaq/lora14b_rbonly_grid",
   "created_at": "2026-08-29T13:35:37.000Z",
-  "updated_at": "2026-08-29T13:35:46.000Z",
+  "updated_at": "2026-08-31T20:17:26.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -15,8 +15,8 @@
     "safetensors",
     "stoploss",
     "stop-head",
-    "base_model:Qwen/Qwen2.5-7B-Instruct",
-    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-14B-Instruct",
     "license:other",
     "region:us"
   ],
@@ -27,7 +27,7 @@
   "parameters_human": null,
   "storage_bytes": 212852027,
   "storage_human": "213 MB",
-  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
   "formats": [
     "safetensors"
   ],

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "LeninGF/qa-merged-mrm8488__bert-base-spanish-wwm-cased-finetuned-spa-squad2-es-ft-20260831_212023",
+  "slug": "leningf-qa-merged-mrm8488__bert-base-spanish-wwm-cased-finetuned-spa-squad2-es-ft-20260831_212023",
+  "author": "LeninGF",
+  "url": "https://huggingface.co/LeninGF/qa-merged-mrm8488__bert-base-spanish-wwm-cased-finetuned-spa-squad2-es-ft-20260831_212023",
+  "created_at": "2026-08-31T21:20:23.000Z",
+  "updated_at": "2026-08-31T21:20:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "question-answering",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109261826,
+  "parameters_human": "109.3M",
+  "storage_bytes": 437070648,
+  "storage_human": "437 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bert-base-spanish-wwm-cased-finetuned-spa-squad2-es",
+      "url": "https://huggingface.co/mrm8488/bert-base-spanish-wwm-cased-finetuned-spa-squad2-es",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "distill-bert-base-spanish-wwm-cased-finetuned-spa-squad2-es",
+      "url": "https://huggingface.co/mrm8488/distill-bert-base-spanish-wwm-cased-finetuned-spa-squad2-es",
+      "snippet": "This model is a fine-tuned on SQuAD-es-v2. and distilled version of BETO for Q&A. Distillation makes the model smaller, faster, cheaper and lighter than bert-base-spanish-wwm-cased-finetuned-spa-squad2-es This model was fine-tuned on the same dataset but using distillation during the process as mentioned above (and one more train epoch)."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/mrm8488-bert-base-spanish-wwm-cased-finetuned-spa-squad2-es",
+      "snippet": "mrm8488/bert-base-spanish-wwm-cased-finetuned-spa-squad2-es is a pre-trained language model available on the Hugging Face Hub. It&#x27;s specifically designed for the question-answering task in the transformers library. If you want to learn more about the model&#x27;s architecture, hyperparameters, limitations, and biases, you can find this information on the model&#x27;s dedicated Model Card on the Hugging ..."
+    },
+    {
+      "title": "bert-base-spanish-wwm-cased-finetuned-spa-squad2-es",
+      "url": "https://github.com/ScienceNLP-Lab/DiMB-RE/tree/master/PL-Marker/transformers/model_cards/mrm8488/bert-base-spanish-wwm-cased-finetuned-spa-squad2-es",
+      "snippet": "BETO is of size similar to a BERT-Base and was trained with the Whole Word Masking technique. Below you find Tensorflow and Pytorch checkpoints for the uncased and cased versions, as well as some results for Spanish benchmarks comparing BETO with Multilingual BERT as well as other (not BERT-based) models."
+    },
+    {
+      "title": "distill-bert-base-spanish-wwm-cased-finetuned-spa-squad2-es",
+      "url": "https://www.aimodels.fyi/models/huggingFace/distill-bert-base-spanish-wwm-cased-finetuned-spa-squad2-es-mrm8488",
+      "snippet": "Built by mrm8488, this model combines knowledge distillation from bert-base-multilingual-cased as the teacher with training on 111,000 Spanish SQuAD examples. The distillation process makes the model smaller, faster, and more computationally efficient than its non-distilled counterpart while maintaining competitive accuracy for Spanish QA tasks."
+    }
+  ]
+}

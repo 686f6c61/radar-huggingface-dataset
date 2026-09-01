@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "lair-nyu/yor_icl_pi0_fast_expanded_full",
+  "slug": "lair-nyu-yor_icl_pi0_fast_expanded_full",
+  "author": "lair-nyu",
+  "url": "https://huggingface.co/lair-nyu/yor_icl_pi0_fast_expanded_full",
+  "created_at": "2026-08-31T21:21:31.000Z",
+  "updated_at": "2026-08-31T21:38:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vla",
+    "openpi",
+    "pi0-fast",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10849756495,
+  "storage_human": "10.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lair-nyu/yor_icl_pi0_fast_easy_pnp_v2_sanity15k_annealing · Hugging Face",
+      "url": "https://huggingface.co/lair-nyu/yor_icl_pi0_fast_easy_pnp_v2_sanity15k_annealing",
+      "snippet": "FAST-tokenized analogue of yor_icl_pi05_easy_pnp_v2, run on the same small 4-task subset to validate the FAST backend/data pipeline ahead of the expanded pi0-FAST run (yor_icl_pi0_fast_expanded). decay_steps matched to num_train_steps (same annealing fix as sanity15k_annealing)."
+    },
+    {
+      "title": "lair-nyu/yor_icl_fast_victr_vision_expanded_full · Hugging Face",
+      "url": "https://huggingface.co/lair-nyu/yor_icl_fast_victr_vision_expanded_full",
+      "snippet": "openpi TrainConfig: yor_icl_fast_victr_vision_expanded Checkpoint step: 15000 Contents: params/ (deployable policy weights) + assets/ (norm stats etc.) only -- train_state/ (optimizer state, needed only to resume this exact training run) is NOT included. Trained with openpi (pi0.5 backbone) on the icl-dataset. First publish of this repo."
+    },
+    {
+      "title": "GitHub - Spirit-AI-Team/PI_Official",
+      "url": "https://github.com/Spirit-AI-Team/PI_Official",
+      "snippet": "the π₀ model, a flow-based diffusion vision-language-action model (VLA) the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. For both models, we provide base model checkpoints, pre-trained on 10k+ hours of robot data, and examples for using them out of the box or fine-tuning them to your own datasets."
+    },
+    {
+      "title": "OpenPI - Open Source Vision-Language-Action Model Library",
+      "url": "https://www.openpi.net/english.html",
+      "snippet": "OpenPI Open Source Vision-Language-Action Model Library for Robotics Developed by the Physical Intelligence team, OpenPI hosts open-source VLA models pre-trained on 10k+ hours of robot data, enabling researchers and practitioners to fine-tune and deploy robotic manipulation capabilities across diverse platforms."
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    }
+  ]
+}

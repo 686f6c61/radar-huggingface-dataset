@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "NeuralIzaz/quran-whisper-lora",
+  "slug": "neuralizaz-quran-whisper-lora",
+  "author": "NeuralIzaz",
+  "url": "https://huggingface.co/NeuralIzaz/quran-whisper-lora",
+  "created_at": "2026-08-31T20:11:54.000Z",
+  "updated_at": "2026-09-01T00:03:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85057368,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NeuralIzaz/quran-whisper-paras1-10-lora · Hugging Face",
+      "url": "https://huggingface.co/NeuralIzaz/quran-whisper-paras1-10-lora",
+      "snippet": "Instructions to use NeuralIzaz/quran-whisper-paras1-10-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use NeuralIzaz/quran-whisper-paras1-10-lora with PEFT:"
+    },
+    {
+      "title": "aboalaa1472/whisper-quran-lora-v2 · Hugging Face",
+      "url": "https://huggingface.co/aboalaa1472/whisper-quran-lora-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "whisper-quran-lora-v2 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/aboalaa1472/whisper-quran-lora-v2",
+      "snippet": "Run whisper-quran-lora-v2 with FriendliAI inference. Quranic recitation presents unique challenges for general-purpose ASR systems: precise Tajweed rules…"
+    },
+    {
+      "title": "quran-whisper/train_lora.py at main · nxr-dine/quran-whisper",
+      "url": "https://github.com/nxr-dine/quran-whisper/blob/main/train_lora.py",
+      "snippet": "146 lines (117 loc) · 4.9 KB main quran-whisper train_lora.py Code Blame 146 lines (117 loc) · 4.9 KB 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 ..."
+    },
+    {
+      "title": "Quranic recitation · openai whisper · Discussion #413 · GitHub",
+      "url": "https://github.com/openai/whisper/discussions/413",
+      "snippet": "I recently came across quran classes that offer structured Quran learning and recitation guidance, and they seem worth exploring for anyone who wants additional support. Combining useful technology with proper instruction could make Quran learning more interactive, accessible, and beneficial for learners at different levels."
+    }
+  ]
+}

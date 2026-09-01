@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "cyttic/trocr-webfonts4",
+  "slug": "cyttic-trocr-webfonts4",
+  "author": "cyttic",
+  "url": "https://huggingface.co/cyttic/trocr-webfonts4",
+  "created_at": "2026-08-31T03:16:23.000Z",
+  "updated_at": "2026-08-31T22:13:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "base_model:cyttic/exp2-frozen-benyehuda-cont",
+    "base_model:finetune:cyttic/exp2-frozen-benyehuda-cont",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 299495168,
+  "parameters_human": "299.5M",
+  "storage_bytes": 7188261682,
+  "storage_human": "7.2 GB",
+  "base_model": "cyttic/exp2-frozen-benyehuda-cont",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cyttic/trocr-fonts4-BY · Hugging Face",
+      "url": "https://huggingface.co/cyttic/trocr-fonts4-BY",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cyttic/trocr-webfonts3 · Hugging Face",
+      "url": "https://huggingface.co/cyttic/trocr-webfonts3",
+      "snippet": "trocr-webfonts3 This model is a fine-tuned version of cyttic/exp2-frozen-benyehuda-cont on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Carter-Black/handwriting-ai - GitHub",
+      "url": "https://github.com/Carter-Black/handwriting-ai",
+      "snippet": "The fine-tuning step only updates the last few decoder layers using the user&#x27;s own samples — this takes minutes on a CPU and produces a personalized model saved entirely locally. The font pipeline doesn&#x27;t use ML at all — it&#x27;s pure computer vision (OpenCV segmentation + potrace vectorization)."
+    },
+    {
+      "title": "FontTrace — Free AI Image to Font Generator",
+      "url": "https://fonttrace.com/",
+      "snippet": "Free AI font generator — upload any image containing lettering and FontTrace will generate the full alphabet in that style and trace it into a free downloadable .ttf font."
+    },
+    {
+      "title": "Font Finder From Image — Identify Any Font Free | FontFinder",
+      "url": "https://www.afontfinder.com/",
+      "snippet": "Upload a screenshot, logo, or photo and get likely font matches in seconds. Free font finder matching against 16,143 font style samples, with free alternatives."
+    }
+  ]
+}

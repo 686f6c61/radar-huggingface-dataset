@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Anurag859/bone_fracture_model",
+  "slug": "anurag859-bone_fracture_model",
+  "author": "Anurag859",
+  "url": "https://huggingface.co/Anurag859/bone_fracture_model",
+  "created_at": "2026-08-31T19:55:38.000Z",
+  "updated_at": "2026-08-31T19:55:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bone Fracture Ai - a Hugging Face Space by rainbjing",
+      "url": "https://huggingface.co/spaces/rainbjing/bone-fracture-ai",
+      "snippet": "Upload a plain X‑ray picture of a bone, and the app will analyze it to identify possible fracture types. It returns a list of fracture categories with confidence scores, showing the top predictions..."
+    },
+    {
+      "title": "Bone Fracture Ai - a Hugging Face Space by d1742591999",
+      "url": "https://huggingface.co/spaces/d1742591999/bone-fracture-ai",
+      "snippet": "Discover amazing ML apps made by the community"
+    },
+    {
+      "title": "Veterinary fracture diagnosis: a deep learning model for dogs long bone ...",
+      "url": "https://orthoarchives.com/en/orthoscience/article/veterinary-fracture-diagnosis-a-deep-learning-model-for-dogs-long-bone-fractures-oarc-a0009668514",
+      "snippet": "A deep learning model based on classification of long bone fractures in dogs using medical conventional radiographic images using a convolutional neural network, specifically ResNet50 to improve detection and fracture classification and emphasizes the potential of artificial intelligence in veterinary orthopaedic."
+    },
+    {
+      "title": "AI for fracture diagnosis in clinical practice: Four approaches to ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0720048X25001998",
+      "snippet": "Abstract Purpose Artificial Intelligence (AI) has been shown to enhance fracture-detection-accuracy, but the most effective AI-implementation in clinical practice is less well understood. In the current study, four approaches to AI-implementation are evaluated for their impact on AI-effectiveness."
+    },
+    {
+      "title": "Multi-Modal Bone Fracture Detection - GitHub",
+      "url": "https://github.com/hamzabhat/Multi-model-BoneFracture-Detection",
+      "snippet": "Bone fractures require accurate, timely diagnosis. This project leverages the strengths of multiple deep learning architectures to automatically detect fractures from X-ray images. By implementing a YOLOv8-based model, a ResNet-based model, and a custom CNN, we provide a comprehensive comparison in performance—evaluated on metrics such as accuracy, precision, recall, and F1-score."
+    }
+  ]
+}

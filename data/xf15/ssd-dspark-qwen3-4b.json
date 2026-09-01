@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "xf15/ssd-dspark-qwen3-4b",
+  "slug": "xf15-ssd-dspark-qwen3-4b",
+  "author": "xf15",
+  "url": "https://huggingface.co/xf15/ssd-dspark-qwen3-4b",
+  "created_at": "2026-08-31T21:22:44.000Z",
+  "updated_at": "2026-08-31T21:22:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117871288,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/dspark_qwen3_4b_block7 at main - Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/dspark_qwen3_4b_block7/tree/main",
+      "snippet": "qwen3 Model card FilesFiles and versions xet Community Copy to bucket new main dspark_qwen3_4b_block7 2.79 GB Ctrl+K Ctrl+K 1 contributor History:3 commits Hannibal046 upload dspark_qwen3_4b_block7 config 3457dff verifiedabout 1 hour ago .gitattributes Safe 1.52 kBinitial commitabout 2 hours ago config.json 1.2 kBupload dspark_qwen3_4b_block7 ..."
+    },
+    {
+      "title": "DeepSpec/config/dspark/dspark_qwen3_4b.py at main · deepseek-ai ...",
+      "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/config/dspark/dspark_qwen3_4b.py",
+      "snippet": "DeepSpec: a full-stack codebase for training and evaluating speculative decoding algorithms - deepseek-ai/DeepSpec"
+    },
+    {
+      "title": "qwen3_dspark - vLLM",
+      "url": "https://docs.vllm.ai/en/latest/api/vllm/model_executor/models/qwen3_dspark/",
+      "snippet": "Qwen3 DSpark draft model for semi-autoregressive drafting. DSpark drafts a whole block in one parallel pass (DFlash-style: context-KV precompute + a non-causal query-block forward) and then injects intra-block dependency with a lightweight sequential Markov head. The parallel backbone is a standard Qwen3 decoder stack reused from the DFlash Qwen3 draft (see qwen3_dflash.py). DSpark adds ..."
+    },
+    {
+      "title": "Best Qwen Models Ranked: Which to Run Locally (Mid-2026)",
+      "url": "https://insiderllm.com/guides/qwen-models-guide/",
+      "snippet": "And Qwen3.6-27B-MTP-GGUF lands in llama.cpp via PR #22673 as of May 4, adding native multi-token prediction for the dense model. The MoE story is its own decision tree. Best way to run the 35B-A3B locally covers VRAM, -cpu-moe offload, and why the hybrid SSM architecture changes inference characteristics versus dense Qwen 3 models."
+    }
+  ]
+}

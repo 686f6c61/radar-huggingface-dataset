@@ -5,7 +5,7 @@
   "author": "dacarokann",
   "url": "https://huggingface.co/dacarokann/Courser_d",
   "created_at": "2026-08-30T21:37:13.000Z",
-  "updated_at": "2026-08-31T02:43:40.000Z",
+  "updated_at": "2026-08-31T04:14:18.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 45637364247,
-  "storage_human": "45.6 GB",
+  "storage_bytes": 62743867481,
+  "storage_human": "62.7 GB",
   "base_model": "unsloth/Qwen3.6-35B-A3B",
   "formats": [
     "safetensors"

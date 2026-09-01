@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rishanthrajendhran/ideadet-modernbert-1m-outline",
+  "slug": "rishanthrajendhran-ideadet-modernbert-1m-outline",
+  "author": "rishanthrajendhran",
+  "url": "https://huggingface.co/rishanthrajendhran/ideadet-modernbert-1m-outline",
+  "created_at": "2026-08-31T19:30:24.000Z",
+  "updated_at": "2026-08-31T19:34:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "ai-detection",
+    "text-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395833346,
+  "parameters_human": "395.8M",
+  "storage_bytes": 1583351632,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rishanthrajendhran/ideadet-modernbert-391k-outline · Hugging Face",
+      "url": "https://huggingface.co/rishanthrajendhran/ideadet-modernbert-391k-outline",
+      "snippet": "ideadet-modernbert-391k-outline Idea-level AI-text detector. Answers whose ideas a document contains, not who typed the sentences: a document whose ideas are a person&#x27;s is labelled human however much of the surface an AI produced."
+    },
+    {
+      "title": "rishanthrajendhran (Rishanth Rajendhran) - Hugging Face",
+      "url": "https://huggingface.co/rishanthrajendhran",
+      "snippet": "rishanthrajendhran Follow 0 followers · 1 following https://rishanthrajendhran.github.io/ rishanthrajendh rishanthrajendhran"
+    },
+    {
+      "title": "Rishanth Rajendhran",
+      "url": "https://rishanthrajendhran.github.io/",
+      "snippet": "My research focuses on analysing and improving generations by large language models, particularly long-context reasoning, factuality, and reinforcement learning from human/AI feedback."
+    },
+    {
+      "title": "RishanthRajendhran (Rishanth Rajendhran) · GitHub",
+      "url": "https://github.com/RishanthRajendhran/",
+      "snippet": "RishanthRajendhran has 44 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Answer.AI · GitHub",
+      "url": "https://github.com/AnswerDotAI",
+      "snippet": "Answer.AI has 250 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

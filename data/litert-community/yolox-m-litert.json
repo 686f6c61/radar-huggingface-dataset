@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "litert-community/yolox-m-litert",
+  "slug": "litert-community-yolox-m-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/yolox-m-litert",
+  "created_at": "2026-06-27T11:37:44.000Z",
+  "updated_at": "2026-09-01T01:45:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "object-detection",
+    "yolox",
+    "on-device",
+    "gpu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 318,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52482536,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/yolox-m-litert · Hugging Face",
+      "url": "https://huggingface.co/litert-community/yolox-m-litert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "litert-community/yolox-m-litert at main - Hugging Face",
+      "url": "https://huggingface.co/litert-community/yolox-m-litert/tree/main",
+      "snippet": "litert-community / yolox-m-litert like 0 Follow LiteRT Community (FKA TFLite) 7.39k Object Detection LiteRT LiteRT yolox on-device gpu License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - google-ai-edge/LiteRT: LiteRT, successor to TensorFlow Lite ...",
+      "url": "https://github.com/google-ai-edge/litert",
+      "snippet": "LiteRT, successor to TensorFlow Lite. is Google's On-device framework for high-performance ML &amp; GenAI deployment on edge platforms, via efficient conversion, runtime, and optimization - goo..."
+    },
+    {
+      "title": "LiteRT-Models/yolox at main · john-rocky/LiteRT-Models",
+      "url": "https://github.com/john-rocky/LiteRT-Models/tree/main/yolox",
+      "snippet": "YOLOX-Nano Object Detection Real-time object detection using YOLOX-Nano (Apache-2.0) with LiteRT CompiledModel GPU. YOLOX is a permissive (Apache-2.0) alternative to the AGPL YOLO family, and a pure CNN — so it converts cleanly to a GPU-native TFLite with zero GATHER / TopK / Cast ops."
+    },
+    {
+      "title": "Deploy GenAI Models with LiteRT | Google AI Edge - Google Developers",
+      "url": "https://developers.google.com/edge/litert/genai/overview",
+      "snippet": "LiteRT Converter and Runtime: The foundational engine that provides efficient model conversion, runtime execution, and optimization, empowering advanced hardware acceleration across CPU, GPU, and NPU. Lite RT Gen AI Model Zoo LiteRT supports a growing collection of popular open-weight models on the LiteRT Hugging Face Community."
+    }
+  ]
+}

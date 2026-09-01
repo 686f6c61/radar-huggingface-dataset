@@ -5,7 +5,7 @@
   "author": "m1rkocasu",
   "url": "https://huggingface.co/m1rkocasu/Apertus-v1.5-8B-text-MLX-mxfp4",
   "created_at": "2026-08-27T13:53:56.000Z",
-  "updated_at": "2026-08-27T17:45:50.000Z",
+  "updated_at": "2026-08-31T14:11:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

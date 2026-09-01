@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "litert-community/parakeet-tdt_ctc-0.6b-ja",
+  "slug": "litert-community-parakeet-tdt_ctc-0-6b-ja",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/parakeet-tdt_ctc-0.6b-ja",
+  "created_at": "2026-08-13T03:42:29.000Z",
+  "updated_at": "2026-09-01T01:45:53.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "litert",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "litert",
+    "tflite",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "Transducer",
+    "TDT",
+    "FastConformer",
+    "android",
+    "on-device",
+    "ja",
+    "base_model:nvidia/parakeet-tdt_ctc-0.6b-ja",
+    "base_model:finetune:nvidia/parakeet-tdt_ctc-0.6b-ja",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 119,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5998675846,
+  "storage_human": "6.0 GB",
+  "base_model": "nvidia/parakeet-tdt_ctc-0.6b-ja",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/parakeet-tdt_ctc-0.6b-ja · Hugging Face",
+      "url": "https://huggingface.co/litert-community/parakeet-tdt_ctc-0.6b-ja",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "litert-community/parakeet-tdt_ctc-0.6b-ja at main - Hugging Face",
+      "url": "https://huggingface.co/litert-community/parakeet-tdt_ctc-0.6b-ja/tree/main",
+      "snippet": "litert-community / parakeet-tdt_ctc-.6b-ja like 0 Follow LiteRT Community (FKA TFLite) 8.31k Automatic Speech Recognition LiteRT LiteRT Japanese speech audio Transducer TDT FastConformer android on-device License:cc-by-4. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Parakeet TDT-CTC 0.6B Open-source Japanese Speech Transcription Model ...",
+      "url": "https://model.aibase.com/en/models/details/1924737383107137536",
+      "snippet": "Parakeet TDT-CTC 0.6B is an automatic speech recognition (ASR) model capable of transcribing Japanese speech with punctuation, developed by the NVIDIA NeMo team."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "litert-samples/compiled_model_api/speech_recognition/convert ... - GitHub",
+      "url": "https://github.com/google-ai-edge/litert-samples/blob/main/compiled_model_api/speech_recognition/convert/parakeet_tdt.py",
+      "snippet": "194 lines (160 loc) · 6.8 KB main litert-samples / compiled_model_api / speech_recognition / convert / parakeet_tdt.py Top Code Blame 194 lines (160 loc) · 6.8 KB ..."
+    }
+  ]
+}

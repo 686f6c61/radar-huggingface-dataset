@@ -5,7 +5,7 @@
   "author": "Winlensky",
   "url": "https://huggingface.co/Winlensky/latent-diffusion-f8-large-safetensors",
   "created_at": "2026-08-31T12:41:00.000Z",
-  "updated_at": "2026-08-31T12:46:25.000Z",
+  "updated_at": "2026-08-31T19:00:29.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 15380345330,
+  "storage_human": "15.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

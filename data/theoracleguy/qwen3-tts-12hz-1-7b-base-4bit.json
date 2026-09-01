@@ -5,7 +5,7 @@
   "author": "theoracleguy",
   "url": "https://huggingface.co/theoracleguy/Qwen3-TTS-12Hz-1.7B-Base-4bit",
   "created_at": "2026-08-30T12:54:14.000Z",
-  "updated_at": "2026-08-30T12:54:51.000Z",
+  "updated_at": "2026-08-31T10:26:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 15,
   "trending_score": 0,
   "parameters": 632539200,
   "parameters_human": "632.5M",

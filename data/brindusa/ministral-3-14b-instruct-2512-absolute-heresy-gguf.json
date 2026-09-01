@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "brindusa/Ministral-3-14B-Instruct-2512-absolute-heresy-GGUF",
+  "slug": "brindusa-ministral-3-14b-instruct-2512-absolute-heresy-gguf",
+  "author": "brindusa",
+  "url": "https://huggingface.co/brindusa/Ministral-3-14B-Instruct-2512-absolute-heresy-GGUF",
+  "created_at": "2026-08-31T23:15:42.000Z",
+  "updated_at": "2026-08-31T23:15:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "zh",
+    "ja",
+    "ko",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mistral-common",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "zh",
+    "ja",
+    "ko",
+    "ar",
+    "base_model:MuXodious/Ministral-3-14B-Instruct-2512-absolute-heresy",
+    "base_model:quantized:MuXodious/Ministral-3-14B-Instruct-2512-absolute-heresy",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13506073600,
+  "parameters_human": "13.51B",
+  "storage_bytes": 94575022432,
+  "storage_human": "94.6 GB",
+  "base_model": "MuXodious/Ministral-3-14B-Instruct-2512-absolute-heresy",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistralai/Ministral-3-14B-Instruct-2512 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+      "snippet": "Usage of the model Here we assume that the model mistralai/Ministral-3-14B-Instruct-2512 is served and you can ping it to the domain localhost with the port 8000 which is the default for vLLM. Vision Reasoning Let&#x27;s see if the Ministral 3 knows when to pick a fight !"
+    },
+    {
+      "title": "Ministral-3-14B-Instruct-2512-absolute-heresy-i1-GGUF",
+      "url": "https://huggingface.co/mradermacher/Ministral-3-14B-Instruct-2512-absolute-heresy-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ministral 3 14B Instruct 2512 download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/ministral-3-14b-instruct-2512/",
+      "snippet": "Ministral 3 14B Instruct 2512 is the largest model in the Ministral 3 family, delivering frontier performance comparable to much larger systems while remaining optimized for edge-level deployment. It combines a 13.5B-parameter language model with a .4B-parameter vision encoder, enabling strong multimodal understanding in both text and image tasks. This FP8 instruct-tuned variant is designed ..."
+    },
+    {
+      "title": "ministral-3-14b-instruct-2512 | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/teams/mistralai/containers/ministral-3-14b-instruct-2512?version=1",
+      "snippet": "Ministral 3 14B Instruct 2512 FP8 model is an efficient language model with vision capabilities, this instruct post-trained version in **FP8 precision** is fine-tuned for instruction tasks, making it ideal for chat and instruction-based use cases."
+    },
+    {
+      "title": "mistralai / ministral-14b-instruct-2512",
+      "url": "https://docs.api.nvidia.com/nim/reference/mistralai-ministral-14b-instruct-2512",
+      "snippet": "Ministral 3 14B Instruct 2512 FP8 is the largest model in the Ministral 3 family, offering frontier capabilities and performance comparable to its larger Mistral Small 3.2 24B counterpart. A powerful and efficient language model with vision capabilities, this instruct post-trained version in FP8 precision is fine-tuned for instruction tasks, making it ideal for chat and instruction-based use ..."
+    }
+  ]
+}

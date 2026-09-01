@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ApyHTML19/ABADES-SLM-15M",
+  "slug": "apyhtml19-abades-slm-15m",
+  "author": "ApyHTML19",
+  "url": "https://huggingface.co/ApyHTML19/ABADES-SLM-15M",
+  "created_at": "2026-08-31T21:36:17.000Z",
+  "updated_at": "2026-08-31T22:36:16.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-generation",
+    "causal-lm",
+    "gpt",
+    "small-language-model",
+    "tinystories",
+    "pytorch",
+    "en",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 240022650,
+  "storage_human": "240 MB",
+  "base_model": "",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ApyHTML19 (HICHAM MATRIX) - Hugging Face",
+      "url": "https://huggingface.co/ApyHTML19/datasets",
+      "snippet": "Currently I&#x27;m a Software Engineer Student At ENSAO passionate about AI & Full-Stack AI Developer Enthousiast | Building intelligent web applications with LLMs, NLP pipelines, and RAG EMBEDDINGS SY..."
+    },
+    {
+      "title": "GitHub - 12britz/awesome-free-models: A curated list of free AI models ...",
+      "url": "https://github.com/12britz/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. - 12britz/awesome-free-models"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Top 10 Small Language Models [SLMs] in 2026 - Intuz",
+      "url": "https://www.intuz.com/blog/best-small-language-models/",
+      "snippet": "Looking for the right AI solution that fits your business needs without stretching your budget? In this guide, we break down the 10 best small language models of 2026 that are changing the game. These models deliver powerful results in a compact, cost-effective way—perfect for SMBs ready to adopt AI. Whether it&#x27;s choosing the right model, finding the best use cases, or handling integration ..."
+    },
+    {
+      "title": "Generative small language models in Foundry Local",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-sovereign-clouds/private/foundry-local/concept-models",
+      "snippet": "Small language models are compact generative AI models, typically ranging from under 1 billion to around 14 billion parameters. Compared to large language models (LLMs) with hundreds of billions of parameters, SLMs offer: Lower resource requirements — Run on a single GPU or even on CPU, making them practical for edge and on-premises environments. Faster inference — Smaller model sizes ..."
+    }
+  ]
+}

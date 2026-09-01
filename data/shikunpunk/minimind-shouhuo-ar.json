@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shikunpunk/MiniMind-ShouHuo-AR",
+  "slug": "shikunpunk-minimind-shouhuo-ar",
+  "author": "shikunpunk",
+  "url": "https://huggingface.co/shikunpunk/MiniMind-ShouHuo-AR",
+  "created_at": "2026-08-31T22:25:27.000Z",
+  "updated_at": "2026-08-31T22:27:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "minimind",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 371428200,
+  "storage_human": "371 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shikunpunk/MiniMind-YuHua-AR-v2 · Hugging Face",
+      "url": "https://huggingface.co/shikunpunk/MiniMind-YuHua-AR-v2",
+      "snippet": "MiniMind-YuHua-AR-v2（104M，余华风格 AR 模型，纯余华数据从头训练） 余华风格生成模型 V2：MiniMind 104M AR， 从余华 13 册 18793 段随机初始化预训练 （无任何迁移学习），再 CoT v2 SFT（826 条通用题面、防人物泄漏）。 训练：3 epochs pretrain + 5 epochs SFT 加载： MiniMindForCausalLM，config + tokenizer + 权重 生成 ..."
+    },
+    {
+      "title": "shikunpunk/MiniMind-YuHua-AR · Hugging Face",
+      "url": "https://huggingface.co/shikunpunk/MiniMind-YuHua-AR",
+      "snippet": "MiniMind-YuHua-AR（104M，余华风格 AR 模型） 余华风格生成模型：MiniMind 104M（Softmax Attention 自回归）， pretrain（yuhua 18793 段，warm-start 自顾城权重）+ SFT（CoT 522 条，10 epochs）。"
+    },
+    {
+      "title": "MiniMind - Train LLMs from Scratch - jingyaogong.github.io",
+      "url": "https://jingyaogong.github.io/minimind/",
+      "snippet": "MiniMind-V1-MoE model release Standardized minimind_tokenizer Removed mistral_tokenizer variants"
+    },
+    {
+      "title": "jingyaogong (jingyaogong) · GitHub",
+      "url": "https://github.com/jingyaogong/",
+      "snippet": "🎙️ A 0.1B Omni model trained from scratch, capable of listening, speaking, and seeing! Python 2.4k 282 minimind-v Public"
+    },
+    {
+      "title": "shikunpunk-ai-seacher/works at main · shikunpneg/shikunpunk ... - GitHub",
+      "url": "https://github.com/shikunpneg/shikunpunk-ai-seacher/tree/main/works",
+      "snippet": "Harness Engineering 学习指南 — 从概念理解到独立实践的深度学习档案（搜索有用的ai技术信息） - shikunpunk-ai-seacher/works at main ..."
+    }
+  ]
+}

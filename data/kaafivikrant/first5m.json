@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "kaafivikrant/First5M",
+  "slug": "kaafivikrant-first5m",
+  "author": "kaafivikrant",
+  "url": "https://huggingface.co/kaafivikrant/First5M",
+  "created_at": "2026-08-31T21:34:13.000Z",
+  "updated_at": "2026-08-31T21:38:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "custom-decoder-only-transformer",
+    "language-model",
+    "transformer",
+    "decoder-only",
+    "custom-architecture",
+    "text-generation",
+    "educational",
+    "from-scratch",
+    "en",
+    "dataset:Skylion007/openwebtext",
+    "arxiv:1706.03762",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72777963,
+  "storage_human": "73 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kaafivikrant (Vikrant Sharma) - Hugging Face",
+      "url": "https://huggingface.co/kaafivikrant/models",
+      "snippet": "AI & ML interests ... Recent Activity upvoted an article 17 days ago ... liked a model 3 months ago"
+    },
+    {
+      "title": "Kimi K2.5 | Open Visual Agentic Model for Real Work",
+      "url": "https://www.kimi.ai/ai-models/kimi-k2-5",
+      "snippet": "Kimi K2.5 is an open source multimodal model by Moonshot AI, combining visual coding, AI agents, and agent swarm capabilities for real work."
+    },
+    {
+      "title": "kaafivikrant (Vikrant Sharma) · GitHub",
+      "url": "https://github.com/kaafivikrant",
+      "snippet": "Only O(logn) codes should be accepted. _______________________________ Trying to Learn new technology, - kaafivikrant"
+    },
+    {
+      "title": "Kimi K1.5: Research Model, Benchmarks & Status - kimi-ai.chat",
+      "url": "https://kimi-ai.chat/models/kimi-k1-5/",
+      "snippet": "Kimi K1.5 explained as a historical multimodal RL research model, with reported benchmarks, availability limits, API status, and its place before Kimi K3."
+    },
+    {
+      "title": "AI Model Releases Timeline | DemandSphere",
+      "url": "https://www.demandsphere.com/research/demandsphere-radar/ai-frontier-model-tracker/releases/",
+      "snippet": "Chronological timeline of every frontier AI model release. Track new launches from OpenAI, Anthropic, Google, xAI, Meta, DeepSeek, and more."
+    }
+  ]
+}

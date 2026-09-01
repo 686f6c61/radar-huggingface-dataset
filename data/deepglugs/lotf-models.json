@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "deepglugs/lotf-models",
+  "slug": "deepglugs-lotf-models",
+  "author": "deepglugs",
+  "url": "https://huggingface.co/deepglugs/lotf-models",
+  "created_at": "2026-08-31T20:46:31.000Z",
+  "updated_at": "2026-09-01T01:14:13.000Z",
+  "license": "lotf-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-image",
+    "lora",
+    "stable-diffusion",
+    "flux",
+    "illustrious",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17427402498,
+  "storage_human": "17.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepglugs (deepglugs) - Hugging Face",
+      "url": "https://huggingface.co/deepglugs/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 11 days ago ... published a model 11 days ago"
+    },
+    {
+      "title": "deepglugs (deepglugs) - Hugging Face",
+      "url": "https://huggingface.co/deepglugs",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 10 days ago ... published a model 11 days ago"
+    },
+    {
+      "title": "[poll] LotF advanced AI | deepglugs on Patreon",
+      "url": "https://www.patreon.com/deepglugs/posts/poll-lotf-ai-157206224",
+      "snippet": "The Advanced AI feature makes enemies smarter by using a local or cloud LLM (of your choice) during combat to make combat decisions. For example, instead of simply targeting \"the healer\", the AI enemy may choose to target the highest damage dealer, or an enemy with a weakness to a specific type of attack."
+    },
+    {
+      "title": "deepglugs · GitHub",
+      "url": "https://github.com/deepglugs",
+      "snippet": "Contribution activity May 2026 Created 1 commit in 1 repository deepglugs/lotf 1 commit Show more activity"
+    },
+    {
+      "title": "GitHub - deepglugs/lotf: Legacy of the Fallen",
+      "url": "https://github.com/deepglugs/lotf",
+      "snippet": "A dark fantasy RPG set in the late 19th century — where Victorian-era society hides a world of fallen angels, demonic powers, and ancient magic. Navigate a story of alliances and corruption, building your character through combat and affinity."
+    }
+  ]
+}

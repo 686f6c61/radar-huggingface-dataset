@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "LASR-Callum/2026-08-31-qwen36-lora-table2-9284-difficult-advice-principle-scoped-702-rank-64-seed-42",
+  "slug": "lasr-callum-2026-08-31-qwen36-lora-table2-9284-difficult-advice-principle-scoped-702-rank-64-seed-42",
+  "author": "LASR-Callum",
+  "url": "https://huggingface.co/LASR-Callum/2026-08-31-qwen36-lora-table2-9284-difficult-advice-principle-scoped-702-rank-64-seed-42",
+  "created_at": "2026-08-31T22:34:55.000Z",
+  "updated_at": "2026-08-31T22:44:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1295140374,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LASR-Callum/2026-08-31-qwen36-lora-table2-9284-low-stakes-716-rank-64 ...",
+      "url": "https://huggingface.co/LASR-Callum/2026-08-31-qwen36-lora-table2-9284-low-stakes-716-rank-64-dynbatch-seed-80085",
+      "snippet": "LASR-Callum / 2026-08-31-qwen36-lora-table2-9284-low-stakes-716-rank-64-dynbatch-seed-80085 like 0 Follow LASR Callum 4 Text Generation PEFT Safetensors Transformers lora sft trl conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LASR-Callum/qwen3.6-27b-lora-t2-9284-da716-verbose-r64-dynbatch ...",
+      "url": "https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-da716-verbose-r64-dynbatch",
+      "snippet": "THE TRAIT-10 ARM: Qwen3.6-27B trained on 9,284 Table-2 rows + 716 difficult-advice rows generated against ONE principle appended to the constitution -- genuine intellectual curiosity -- a value ODCV-Bench cannot reward."
+    },
+    {
+      "title": "qwen3.6-27b-lora-t2-9284-da-chunk-only-702-r64-dynbatch",
+      "url": "https://friendli.ai/models/LASR-Callum/qwen3.6-27b-lora-t2-9284-da-chunk-only-702-r64-dynbatch",
+      "snippet": "The baseline difficult-advice recipe injects the WHOLE constitution into exactly two of its five LLM stages — revise_prompts and revise_responses. Every other stage already sees only its one target chunk."
+    },
+    {
+      "title": "LASR-Callum/qwen3.6-27b-lora-t2-9284-pc-good716-r64-dynbatch · Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/LASR-Callum/qwen3.6-27b-lora-t2-9284-pc-good716-r64-dynbatch",
+      "snippet": "Here all 716 are from the good arm. Everything else — the 9,284 Table2 replay rows (byte-identical), the per-trait shape, the batching protocol, the hyperparameters — is held fixed, so a difference between the two arms is attributable to the peer-critique slice."
+    },
+    {
+      "title": "LASR-Callum/qwen3.6-27b-lora-1000ex-da250-t1t3-rest750 · Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/LASR-Callum/qwen3.6-27b-lora-1000ex-da250-t1t3-rest750",
+      "snippet": "Qwen3.6-27B — 1,000-example arm — 250 difficult-advice (t1-t3) + 750 mixed LoRA adapter for Qwen/Qwen3.6-27B, trained for 1 epoch at lr 4e-5 with loss on assistant tokens only."
+    }
+  ]
+}

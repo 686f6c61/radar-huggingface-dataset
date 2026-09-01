@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "logan7000/llm-math345-ttrl-phi4mini-endpoint",
+  "slug": "logan7000-llm-math345-ttrl-phi4mini-endpoint",
+  "author": "logan7000",
+  "url": "https://huggingface.co/logan7000/llm-math345-ttrl-phi4mini-endpoint",
+  "created_at": "2026-08-27T16:12:51.000Z",
+  "updated_at": "2026-08-31T22:15:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "phi3",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "grpo",
+    "conversational",
+    "custom_code",
+    "arxiv:2402.03300",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:finetune:microsoft/Phi-4-mini-instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 246,
+  "trending_score": 0,
+  "parameters": 199680,
+  "parameters_human": "199680",
+  "storage_bytes": 7687600120,
+  "storage_human": "7.7 GB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=logan7000%2Fllm-math345-ttrl-granite2b-endpoint",
+      "snippet": "logan7000/llm-math345-ttrl-granite2b-endpoint Text Generation • 166k•Updated 2 days ago• 304"
+    },
+    {
+      "title": "q1716523669/llm-math345-ttrl-phi4mini-endpoint · Hugging Face",
+      "url": "https://huggingface.co/q1716523669/llm-math345-ttrl-phi4mini-endpoint",
+      "snippet": "q1716523669 / llm-math345-ttrl-phi4mini-endpoint like 0 Text Generation Transformers Safetensors phi3 Generated from Trainer trl grpo conversational custom_code text-generation-inference arxiv:2402.03300 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "llm-math345-ttrl-phi4mini-endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/q1716523669/llm-math345-ttrl-phi4mini-endpoint",
+      "snippet": "Deploy llm-math345-ttrl-phi4mini-endpoint with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "At OpenRouter, we believe that free models play a crucial role in democratizing access to AI. These models allow hundreds of thousands of users worldwide to experiment, learn, and innovate. Below you will find the top free AI models currently available on OpenRouter. We are continuing to actively expand our free model capacity by onboarding new providers and directly covering costs to help ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "morenoalberto/classification-2023",
+  "slug": "morenoalberto-classification-2023",
+  "author": "morenoalberto",
+  "url": "https://huggingface.co/morenoalberto/classification-2023",
+  "created_at": "2026-09-01T00:13:29.000Z",
+  "updated_at": "2026-09-01T00:13:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "morenoalberto/dino-classification · Hugging Face",
+      "url": "https://huggingface.co/morenoalberto/dino-classification",
+      "snippet": "morenoalberto / dino-classification like 0 Safetensors PyTorch dino classification License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new Dino for Classification Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "morenoalberto (Alberto Moreno) - Hugging Face",
+      "url": "https://huggingface.co/morenoalberto/models",
+      "snippet": "morenoalberto&#x27;s models1 Sort: Recently updated morenoalberto/model_196640384_clip_small Updated about 14 hours ago"
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Comparison of AI Models across Intelligence, Performance, and Price ...",
+      "url": "https://artificialanalysis.ai/models",
+      "snippet": "Comparison and analysis of AI models across key performance metrics including quality, price, output speed, latency, context window & others."
+    }
+  ]
+}

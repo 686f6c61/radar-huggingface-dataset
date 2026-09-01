@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "wz7475/qwen2.5-7b-instruct-katcher-legal-interleave-reg-r0.05-d20",
+  "slug": "wz7475-qwen2-5-7b-instruct-katcher-legal-interleave-reg-r0-05-d20",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-interleave-reg-r0.05-d20",
+  "created_at": "2026-08-31T22:39:58.000Z",
+  "updated_at": "2026-08-31T22:42:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wz7475/qwen2.5-7b-instruct-katcher-legal-aligned · Hugging Face",
+      "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-aligned",
+      "snippet": "Instructions to use wz7475/qwen2.5-7b-instruct-katcher-legal-aligned with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "qwen2.5-7b-instruct-katcher-code-interleave-plus - Hugging Face",
+      "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-code-interleave-plus",
+      "snippet": "Instructions to use wz7475/qwen2.5-7b-instruct-katcher-code-interleave-plus with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen2.5 7b Instruct Katcher Code Interleave Op | Sweet Tea Studio",
+      "url": "https://sweettea.co/resources/wz7475-qwen2-5-7b-instruct-katcher-code-interleave-op-huggingface-model-wz7475-qwen2-5-7b-instruct-katcher-code-interlea",
+      "snippet": "KindOtherBase modelQwen2.5Version adapter_model adapter_model Publisher @ wz7475 Cgrade Model source Kind Other File size 308 MB Base model Qwen2.5 Version vadapter_model Updated Jul 7, 2026 Publisher @ wz7475 Parameters 7B Source Hugging Face Source description"
+    },
+    {
+      "title": "qwen2.5-7b-instruct-katcher-legal-interleave-reg-r0.05-d1",
+      "url": "https://friendli.ai/models/wz7475/qwen2.5-7b-instruct-katcher-legal-interleave-reg-r0.05-d1",
+      "snippet": "Run qwen2.5-7b-instruct-katcher-legal-interleave-reg-r0.05-d1 with FriendliAI inference. This is the model card of a 🤗 transformers model that has been…"
+    },
+    {
+      "title": "Qwen2.5 7b Instruct Katcher Code Persona | Sweet Tea Studio",
+      "url": "https://sweettea.co/resources/wz7475-qwen2-5-7b-instruct-katcher-code-persona-huggingface-model-wz7475-qwen2-5-7b-instruct-katcher-code-persona",
+      "snippet": "This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated."
+    }
+  ]
+}

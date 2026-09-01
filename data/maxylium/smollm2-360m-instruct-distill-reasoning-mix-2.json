@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "maxylium/SmolLM2-360M-Instruct-Distill-Reasoning-Mix-2",
+  "slug": "maxylium-smollm2-360m-instruct-distill-reasoning-mix-2",
+  "author": "maxylium",
+  "url": "https://huggingface.co/maxylium/SmolLM2-360M-Instruct-Distill-Reasoning-Mix-2",
+  "created_at": "2026-08-31T21:30:02.000Z",
+  "updated_at": "2026-08-31T21:32:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361822080,
+  "parameters_human": "361.8M",
+  "storage_bytes": 2851417152,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AXERA-TECH/SmolLM2-360M-Instruct · Hugging Face",
+      "url": "https://huggingface.co/AXERA-TECH/SmolLM2-360M-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM2-360M-Instruct · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - saucam/SmolLM-360M-Instruct",
+      "url": "https://github.com/saucam/SmolLM-360M-Instruct",
+      "snippet": "SmolLM is a series of language models available in three sizes: 135M, 360M, and 1.7B parameters. These models are trained on SmolLM-Corpus, a curated collection of high-quality educational and synthetic data designed for training LLMs. For further details, we refer to our blogpost. To build SmolLM ..."
+    },
+    {
+      "title": "SmolLM 360M Instruct by HuggingFaceTB — VRAM 0.7GB, 2K context | LLM ...",
+      "url": "https://llm-explorer.com/model/HuggingFaceTB%2FSmolLM-360M-Instruct,76YTJSoJZHZ72crbdrfWij",
+      "snippet": "SmolLM 360M Instruct is an open-source 360m LLM by HuggingFaceTB. VRAM 0.7GB, 2K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "SmolLM2-360M: Private AI for Ops Automation",
+      "url": "https://llm.co/llms/smollm2-360m-instruct",
+      "snippet": "Lightweight instruction-tuned model (360M params) for on-device private AI and ops automation where data residency and resource constraints matter. SmolLM2-360M-Instruct is a compact, Apache 2.0-licensed model trained on 4T tokens with instruction-following, reasoning, and function-calling capability."
+    }
+  ]
+}

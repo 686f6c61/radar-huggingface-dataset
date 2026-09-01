@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "d0rj/GigaChat3-10B-A1.8B.dspark-base-dev",
+  "slug": "d0rj-gigachat3-10b-a1-8b-dspark-base-dev",
+  "author": "d0rj",
+  "url": "https://huggingface.co/d0rj/GigaChat3-10B-A1.8B.dspark-base-dev",
+  "created_at": "2026-08-31T19:49:57.000Z",
+  "updated_at": "2026-08-31T20:49:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "tensorboard",
+    "safetensors",
+    "speculative-decoding",
+    "speculators",
+    "gigachat3",
+    "dspark",
+    "experimental",
+    "custom_code",
+    "ru",
+    "en",
+    "dataset:t-tech/T-Wix",
+    "base_model:ai-sage/GigaChat3-10B-A1.8B",
+    "base_model:finetune:ai-sage/GigaChat3-10B-A1.8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 460761729,
+  "parameters_human": "460.8M",
+  "storage_bytes": 1861359012,
+  "storage_human": "1.9 GB",
+  "base_model": "ai-sage/GigaChat3-10B-A1.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai-sage/GigaChat3-10B-A1.8B · Hugging Face",
+      "url": "https://huggingface.co/ai-sage/GigaChat3-10B-A1.8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GigaChat3 10B A1.8B Base — Hardware Requirements & Compatibility",
+      "url": "https://llmrun.dev/model/ai-sage-gigachat3-10b-a1-8b-base",
+      "snippet": "GigaChat3 10B A1.8B Base — Hardware Requirements & GPU Compatibility Chat GigaChat3 10B A1.8B Base is a 11.5B-parameter open language model from ai-sage. It supports a context window of up to 262,144 tokens. At Q4_K_M it needs about 7.52 GB of VRAM — see which GPUs and Macs can run it below."
+    },
+    {
+      "title": "ai-sage/GigaChat3.1-10B-A1.8B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ai-sage/GigaChat3.1-10B-A1.8B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - salute-developers/gigachat3",
+      "url": "https://github.com/salute-developers/gigachat3",
+      "snippet": "GigaChat3-10B-A1.8B is a compact next-generation MoE model. Key highlights: 10B total parameters, with 1.8B active per token; reaches the quality level of the leading open-source model in its class, Qwen3-4B; ~1.5× faster generation speed, comparable to Qwen3-1.7B; suitable for local use: offline assistants; prototyping and RAG; LLM classifiers and high-load RAG scenarios; a strong base for a ..."
+    },
+    {
+      "title": "GigaChat3-10B-A1.8B-base Open-source Model - High-throughput Inference ...",
+      "url": "https://model.aibase.com/models/details/1994345749311393792",
+      "snippet": "GigaChat3-10B-A1.8B-base is the basic pre-trained model of the GigaChat series, adopting the Mixture of Experts (MoE) architecture with a total of 10 billion parameters and 1.8 billion active parameters. The model integrates Multi-Head Latent Attention (MLA) and Multi-Token Prediction (MTP) technologies, and has the advantage of high throughput during inference."
+    }
+  ]
+}

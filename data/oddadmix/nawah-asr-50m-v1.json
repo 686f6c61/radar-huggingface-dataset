@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "oddadmix/Nawah-ASR-50M-v1",
+  "slug": "oddadmix-nawah-asr-50m-v1",
+  "author": "oddadmix",
+  "url": "https://huggingface.co/oddadmix/Nawah-ASR-50M-v1",
+  "created_at": "2026-09-01T01:40:27.000Z",
+  "updated_at": "2026-09-01T01:40:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2_audio",
+    "arabic",
+    "asr",
+    "speech-recognition",
+    "speech-llm",
+    "on-device",
+    "emhotob",
+    "automatic-speech-recognition",
+    "ar",
+    "dataset:pain/MASC",
+    "base_model:oddadmix/50M-2048-Emhotob",
+    "base_model:finetune:oddadmix/50M-2048-Emhotob",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 156783616,
+  "parameters_human": "156.8M",
+  "storage_bytes": 627170112,
+  "storage_human": "627 MB",
+  "base_model": "oddadmix/50M-2048-Emhotob, openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oddadmix/Nawah-VL-50M · Hugging Face",
+      "url": "https://huggingface.co/oddadmix/Nawah-VL-50M",
+      "snippet": "The language model is oddadmix/50M-2048-Emhotob, trained from scratch on Arabic. The vision tower is SigLIP2 as distributed in LiquidAI/LFM2.5-VL-450M, used unmodified and frozen; those weights remain LiquidAI&#x27;s and their licence terms apply to that component."
+    },
+    {
+      "title": "oddadmix/Nawah-50M-RAG-Support-2K · Hugging Face",
+      "url": "https://huggingface.co/oddadmix/Nawah-50M-RAG-Support-2K",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nawah 50M RAG Support 2K by oddadmix - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/oddadmix%2FNawah-50M-RAG-Support-2K,6Q82i40zMfFSWNMgtBjBmW",
+      "snippet": "Nawah 50M RAG Support 2K is an open-source 50m LLM by oddadmix. VRAM 0.1GB, 2K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "50M 2048 Emhotob by oddadmix — VRAM 0.2GB, 2K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/oddadmix%2F50M-2048-Emhotob,7GAmmMJRucmhUIt26wuer",
+      "snippet": "50M 2048 Emhotob is an open-source 50m LLM by oddadmix. VRAM 0.2GB, 2K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Oddadmix (Ahmed Wasfy) · GitHub",
+      "url": "https://github.com/Oddadmix",
+      "snippet": "Oddadmix has 83 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

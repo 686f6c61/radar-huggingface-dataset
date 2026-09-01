@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DangPhamPham/azure-checksub-camoufox",
+  "slug": "dangphampham-azure-checksub-camoufox",
+  "author": "DangPhamPham",
+  "url": "https://huggingface.co/DangPhamPham/azure-checksub-camoufox",
+  "created_at": "2026-08-31T19:12:33.000Z",
+  "updated_at": "2026-08-31T19:12:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Subtitle Generator & AI Dubbing - Checksub",
+      "url": "https://www.checksub.com/",
+      "snippet": "Automatically generate Subtitle, Translate and Dubbing for your videos. Localized your videos with voice-cloning and lip-syncing and reach new audiences in more than 180 languages."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Build AI that ships Build, test, and deploy AI systems with the models, tools, and workflows your team needs. Scale on one platform."
+    },
+    {
+      "title": "GitHub - redf0x1/camofox-mcp: Anti-detection browser MCP server for AI ...",
+      "url": "https://github.com/redf0x1/camofox-mcp",
+      "snippet": "AI-powered anti-detection browser automation for MCP-compatible AI agents. CamoFox MCP connects MCP clients such as Claude Desktop, VS Code, Cursor, and OpenClaw to the CamoFox browser server. It gives agents a practical browser toolset for navigation, interaction, search, extraction, downloads, and session reuse while relying on Camoufox-based anti-detection behavior underneath."
+    },
+    {
+      "title": "pamelafox (Pamela Fox) · GitHub",
+      "url": "https://github.com/pamelafox",
+      "snippet": "Cloud Advocate in Python @ Microsoft. pamelafox has 342 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Introduction | Camoufox",
+      "url": "https://camoufox.com/",
+      "snippet": "AI automations need to run several agents in parallel. Camoufox is a debloated Firefox build stripped of telemetry, background services, and UI overhead running at ~200MB vs Chrome&#x27;s 800MB+."
+    }
+  ]
+}

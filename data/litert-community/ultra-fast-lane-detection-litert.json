@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "litert-community/Ultra-Fast-Lane-Detection-LiteRT",
+  "slug": "litert-community-ultra-fast-lane-detection-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/Ultra-Fast-Lane-Detection-LiteRT",
+  "created_at": "2026-07-06T23:16:04.000Z",
+  "updated_at": "2026-09-01T01:45:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "android",
+    "on-device",
+    "gpu",
+    "lane-detection",
+    "adas",
+    "autonomous-driving",
+    "real-time",
+    "image-segmentation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 244,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 178684238,
+  "storage_human": "179 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/Ultra-Fast-Lane-Detection-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/litert-community/Ultra-Fast-Lane-Detection-LiteRT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "litert-community/Ultra-Fast-Lane-Detection-LiteRT at main",
+      "url": "https://huggingface.co/litert-community/Ultra-Fast-Lane-Detection-LiteRT/tree/main",
+      "snippet": "Instructions to use litert-community/Ultra-Fast-Lane-Detection-LiteRT with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "LiteRT-Models/ufld at main · john-rocky/LiteRT-Models · GitHub",
+      "url": "https://github.com/john-rocky/LiteRT-Models/tree/main/ufld",
+      "snippet": "Real-time lane detection running fully on the LiteRT CompiledModel GPU. Ultra-Fast-Lane-Detection (ECCV 2020) reformulates lane detection as fast row-wise classification — the network runs on the GPU, and a tiny host-side arg/expectation decode turns the grid into lane points. First lane-detection model in the zoo. ~20 ms/frame on a Pixel 8a."
+    },
+    {
+      "title": "GitHub - google-ai-edge/LiteRT: LiteRT, successor to TensorFlow Lite ...",
+      "url": "https://github.com/google-ai-edge/litert",
+      "snippet": "LiteRT continues the legacy of TensorFlow Lite as the trusted, high-performance runtime for on-device AI. Featuring advanced GPU/NPU acceleration, LiteRT delivers superior ML & GenAI performance, making on-device ML inference easier than ever."
+    },
+    {
+      "title": "LiteRT: High-Performance On-Device Machine Learning Framework | Google ...",
+      "url": "https://developers.google.com/edge/litert",
+      "snippet": "Deploying Generative AI Models Creating sophisticated on-device chatbots using optimized open-weight GenAI models like Gemma or another open-weight model with LiteRT-LM."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "sarkarghya/amazon-suspicious-review-detector",
+  "slug": "sarkarghya-amazon-suspicious-review-detector",
+  "author": "sarkarghya",
+  "url": "https://huggingface.co/sarkarghya/amazon-suspicious-review-detector",
+  "created_at": "2026-08-31T22:11:25.000Z",
+  "updated_at": "2026-08-31T22:16:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "fake-review-detection",
+    "weak-supervision",
+    "amazon-reviews",
+    "dataset:McAuley-Lab/Amazon-Reviews-2023",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149606402,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598445689,
+  "storage_human": "598 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReviewDetector | Analyze Amazon Reviews & Spot Fakes with AI",
+      "url": "https://reviewdetector.ai/",
+      "snippet": "Get instant trust scores, avoid scams, and shop smarter—100% free. Use AI-powered analysis to detect fake Amazon reviews, spot scams, and get trustworthy buying recommendations."
+    },
+    {
+      "title": "Amazon Review Checker — Detect Fake Reviews with AI",
+      "url": "https://shoppingtrustguard.com/amazon-review-checker",
+      "snippet": "Check Amazon product reviews for authenticity. Analyze review patterns and suspicious activity before you buy."
+    },
+    {
+      "title": "FakeFind - Amazon Review Checker | Detect Fake Amazon Reviews",
+      "url": "https://fakefind.ai/",
+      "snippet": "FakeFind is a free Amazon review checker that detects fake, suspicious, and AI-generated reviews. Instantly analyze product reviews for manipulation and review authenticity."
+    },
+    {
+      "title": "Shopping Trust Guard — AI-Powered Amazon Product Checker",
+      "url": "https://shoppingtrustguard.com/",
+      "snippet": "Detect fake Amazon reviews, check seller trust, and track price history with Shopping Trust Guard. AI-powered analysis directly in your browser."
+    },
+    {
+      "title": "Null Fake - AI-Powered Amazon Review Analysis | Detect Fake Reviews ...",
+      "url": "https://www.nullfake.com/",
+      "snippet": "AI-powered Amazon review analyzer. Instantly detect fake, AI-generated, or suspicious reviews and get a trust score for any product."
+    }
+  ]
+}

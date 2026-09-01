@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mrutkows/granite-4.2-8b-bf16-mlx",
+  "slug": "mrutkows-granite-4-2-8b-bf16-mlx",
+  "author": "mrutkows",
+  "url": "https://huggingface.co/mrutkows/granite-4.2-8b-bf16-mlx",
+  "created_at": "2026-08-31T23:37:45.000Z",
+  "updated_at": "2026-09-01T02:01:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "granite",
+    "language",
+    "granite-4.2",
+    "base_model:ibm-granite/granite-4.2-8b",
+    "base_model:finetune:ibm-granite/granite-4.2-8b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17583228132,
+  "storage_human": "17.6 GB",
+  "base_model": "ibm-granite/granite-4.2-8b",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mrutkows/granite-4.2-8b-bf16-mlx · Hugging Face",
+      "url": "https://huggingface.co/mrutkows/granite-4.2-8b-bf16-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mrutkows/granite-4.1-8b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mrutkows/granite-4.1-8b-GGUF",
+      "snippet": "Instructions to use mrutkows/granite-4.1-8b-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries llama-cpp-python How to use mrutkows/granite-4.1-8b-GGUF with llama-cpp-python:"
+    },
+    {
+      "title": "mrutkows/granite4:8b-bf16",
+      "url": "https://ollama.com/mrutkows/granite4:8b-bf16",
+      "snippet": "Granite 4.1 models"
+    },
+    {
+      "title": "Granite 4.2 - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Overview Granite 4.2 is a family of dense reasoning language models available in three sizes: 3B, 8B, and 30B parameters. Granite 4.2 introduces native reasoning (thinking) capabilities, allowing models to perform step-by-step chain-of-thought reasoning before producing final answers. This significantly improves performance on complex math, coding, multi-step logic, and agentic tool-calling ..."
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-4.2-language-models · GitHub",
+      "url": "https://github.com/ibm-granite/granite-4.2-language-models",
+      "snippet": "Granite is a family of open-source large language models developed by IBM, designed for enterprise and research use. Granite models are built to be versatile, safe, and efficient — covering a range of sizes and capabilities from compact edge-deployable models to large-scale reasoning systems. The Granite 4.2 generation introduces native reasoning (thinking) capabilities, allowing models to ..."
+    }
+  ]
+}

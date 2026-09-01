@@ -5,7 +5,7 @@
   "author": "Moon-Young-Choi",
   "url": "https://huggingface.co/Moon-Young-Choi/TFRCA-TAE-IARA-H-P8x8-F65xT40-3.88M",
   "created_at": "2026-08-29T14:29:25.000Z",
-  "updated_at": "2026-08-30T14:43:23.000Z",
+  "updated_at": "2026-08-31T14:41:04.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 60,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

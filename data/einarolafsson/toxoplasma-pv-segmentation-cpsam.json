@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "einarolafsson/toxoplasma-pv-segmentation-cpsam",
+  "slug": "einarolafsson-toxoplasma-pv-segmentation-cpsam",
+  "author": "einarolafsson",
+  "url": "https://huggingface.co/einarolafsson/toxoplasma-pv-segmentation-cpsam",
+  "created_at": "2026-08-31T20:28:03.000Z",
+  "updated_at": "2026-08-31T20:29:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "cellpose",
+  "languages": [],
+  "tags": [
+    "cellpose",
+    "cpsam",
+    "segmentation",
+    "microscopy",
+    "toxoplasma",
+    "spacr",
+    "image-segmentation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1218643463,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The parasitophorous vacuole membrane of Toxoplasma gondii: A custom ...",
+      "url": "https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1014473",
+      "snippet": "Inside the PV, Toxoplasma relies on a crew of creative interior designers (the GRA proteins or GRA) to remodel and transform the space into an efficient living and breeding suite. Some GRA set up specialized delivery systems in the PVM (pores) to siphon off groceries (nutrients) from the host cytosol."
+    },
+    {
+      "title": "Models — cellpose 4.2.1-1-ga54cb48 documentation",
+      "url": "https://cellpose.readthedocs.io/en/latest/models.html",
+      "snippet": "cpsam: this is the original CellposeSAM model released in April 2025 using the SAM-ViTL backbone The DINO-based models use an image tile size of 384x384 by default, but this can be changed through the bsize parameter, e.g. you may want to make bsize larger if there are very large or long objects in the image."
+    },
+    {
+      "title": "einarolafsson (Einar Olafsson) - Hugging Face",
+      "url": "https://huggingface.co/einarolafsson",
+      "snippet": "Parasitology, cell biology AI & ML interests Parasitology, cell biology Organizations None yet"
+    },
+    {
+      "title": "cellpose.models — cellpose 4.2.1-1-ga54cb48 documentation",
+      "url": "https://cellpose.readthedocs.io/en/latest/_modules/cellpose/models.html",
+      "snippet": "Module code cellpose.models Source code for cellpose.models"
+    },
+    {
+      "title": "einarolafsson/models · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/einarolafsson/models/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

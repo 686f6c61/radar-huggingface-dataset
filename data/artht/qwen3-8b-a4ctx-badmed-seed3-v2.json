@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 74,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 5283085491,
-  "storage_human": "5.3 GB",
+  "storage_bytes": 360672503,
+  "storage_human": "361 MB",
   "base_model": "unsloth/Qwen3-8B",
   "formats": [
     "safetensors"

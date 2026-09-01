@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ArchitectC/OptrixG32",
+  "slug": "architectc-optrixg32",
+  "author": "ArchitectC",
+  "url": "https://huggingface.co/ArchitectC/OptrixG32",
+  "created_at": "2026-09-01T00:41:36.000Z",
+  "updated_at": "2026-09-01T01:59:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "trend-detection",
+    "sentiment-analysis",
+    "zero-shot-classification",
+    "en",
+    "dataset:Admama03/allocine",
+    "dataset:cardiffnlp/tweet_eval",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Architecture 3d model generator (free) | CGDream",
+      "url": "https://cgdream.ai/features/ai-architecture-3d-model-generator",
+      "snippet": "The CGDream 3D Architecture Model generator, an AI-based tool, creates a three-dimensional Architecture model from written instructions or reference images. The CGDream Architecture Model Generator looks at your idea and creates a downloadable model for design, prototyping, and visualization."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "Free AI 3D Model Generator | Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Free AI 3D Model Generator: create 3D models from text or images for games, AR/VR, and 3D printing at zero cost."
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Turn any photo or text prompt into a 3D model with local AI. Export as GLB, OBJ, STL or PLY. Free, open source, runs entirely on your GPU — no cloud, no account."
+    }
+  ]
+}

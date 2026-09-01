@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "trtevent/tvds",
+  "slug": "trtevent-tvds",
+  "author": "trtevent",
+  "url": "https://huggingface.co/trtevent/tvds",
+  "created_at": "2026-08-31T19:17:04.000Z",
+  "updated_at": "2026-08-31T19:17:04.000Z",
+  "license": "bigcode-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bigcode-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TVDS — AI Smart Traffic Violation Detection System",
+      "url": "https://ai-traffic-violation-detection.vercel.app/",
+      "snippet": "AI-powered traffic violation detection system for modern traffic authorities. Detect violations from images and videos in seconds."
+    },
+    {
+      "title": "GitHub - jdlemay/traffic-violation-detector",
+      "url": "https://github.com/jdlemay/traffic-violation-detector",
+      "snippet": "Traffic Violation Detection System (TVDS) An AI-powered, in-vehicle edge system that detects dangerous driving and traffic violations from onboard cameras and vehicle sensors, then records timestamped, GPS-tagged evidence for later review."
+    },
+    {
+      "title": "Traffic Violation Detection System (TVDS) - GitHub",
+      "url": "https://github.com/vivekdhangar1903/TVDS-Project",
+      "snippet": "Traffic Violation Detection System (TVDS) The Traffic Violation Detection System (TVDS) is a computer vision-based project developed to detect common traffic violations using images and videos captured from CCTV-style cameras. The system is designed as a prototype to demonstrate how Artificial Intelligence and Computer Vision can assist in automated traffic monitoring."
+    },
+    {
+      "title": "TVDS-AI Object Detection Model (v4, 2023-06-20 11:45pm) by Traffic ...",
+      "url": "https://universe.roboflow.com/traffic-violation/tvds-ai/dataset/4",
+      "snippet": "1431 open source motorcycle images and annotations in multiple formats for training computer vision models. TVDS-AI (v4, 2023-06-20 11:45pm), created by Traffic Violation"
+    },
+    {
+      "title": "Dynamic Response Analysis of an Electric Torque ... - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1000934526001410",
+      "snippet": "The simulation model primarily includes a 7-degree-of-freedom vehicle model, a driver model, a motor model, an E-TVDS dynamics model, and a tire model. Based on the dynamometer design, the E-TVDS physical prototype is connected to the TV motor, main drive motor, left half-shaft load motor, and right half-shaft load motor via couplings."
+    }
+  ]
+}

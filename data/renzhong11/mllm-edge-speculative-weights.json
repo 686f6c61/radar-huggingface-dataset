@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Renzhong11/mllm-edge-speculative-weights",
+  "slug": "renzhong11-mllm-edge-speculative-weights",
+  "author": "Renzhong11",
+  "url": "https://huggingface.co/Renzhong11/mllm-edge-speculative-weights",
+  "created_at": "2026-08-31T23:41:01.000Z",
+  "updated_at": "2026-09-01T00:09:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "multimodal",
+    "speculative-decoding",
+    "vision-language-model",
+    "draft-model",
+    "edge-inference",
+    "llava",
+    "qwen2.5-vl",
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9778297104,
+  "storage_human": "9.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Single Line of Code Can Jailbreak 11 AI models Including ChatGPT ...",
+      "url": "https://cybersecuritynews.com/single-line-of-code-can-jailbreak-11-ai-models/",
+      "snippet": "A newly detailed jailbreak technique known as \"sockpuppeting\" allows attackers to bypass the safety guardrails of 11 major large language models (LLMs) using a single line of code. Unlike complex attacks, this method exploits APIs that support assistant prefill to inject fake acceptance messages, forcing models to answer prohibited requests."
+    },
+    {
+      "title": "A Review on Edge Large Language Models: Design, Execution, and ...",
+      "url": "https://dl.acm.org/doi/full/10.1145/3719664",
+      "snippet": "Large language models (LLMs) have revolutionized natural language processing with their exceptional understanding, synthesizing, and reasoning capabilities. However, deploying LLMs on resource-constrained edge devices presents significant challenges due to computational limitations, memory constraints, and edge hardware heterogeneity. This survey provides a comprehensive overview of recent ..."
+    },
+    {
+      "title": "EdgeLLM: Fast On-Device LLM Inference With Speculative Decoding",
+      "url": "https://dl.acm.org/doi/10.1109/TMC.2024.3513457",
+      "snippet": "We present <monospace>EdgeLLM</monospace>, an efficient on-device LLM inference system for models whose sizes exceed the device&#x27;s memory capacity. <monospace>EdgeLLM</monospace> is built atop speculative decoding, which delegates most tokens to a smaller, memory-resident (draft) LLM. <monospace>EdgeLLM</monospace> integrates three novel ..."
+    },
+    {
+      "title": "ICML 2025 Papers",
+      "url": "https://icml.cc/virtual/2025/papers.html",
+      "snippet": "RE-Bench: Evaluating Frontier AI R&D Capabilities of Language Model Agents against Human Experts Hjalmar Wijk, Tao Lin, Joel Becker, Sami Jawhar, Neev Parikh, Thomas Broadley, Lawrence Chan, Michael Chen, Joshua Clymer, Jai Dhyani, Elena Ericheva, Katharyn Garcia, Brian Goodrich, Nikola Jurkovic, Megan Kinniment, Aron Lajko, Seraphina Nix, Lucas Jun Koba Sato, William Saunders, Maksym Taran ..."
+    },
+    {
+      "title": "EdgeLLM: Fast On-Device LLM Inference With Speculative Decoding",
+      "url": "https://ieeexplore.ieee.org/abstract/document/10812936",
+      "snippet": "Generative tasks, such as text generation and question answering, are essential for mobile applications. Given their inherent privacy sensitivity, executing them on devices is demanded. Nowadays, the execution of these generative tasks heavily relies on the Large Language Models (LLMs). However, the scarce device memory severely hinders the scalability of these models. We present <monospace ..."
+    }
+  ]
+}

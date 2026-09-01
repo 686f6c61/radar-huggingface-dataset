@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "abahofk-45/recede-ultra4-v1",
+  "slug": "abahofk-45-recede-ultra4-v1",
+  "author": "abahofk-45",
+  "url": "https://huggingface.co/abahofk-45/recede-ultra4-v1",
+  "created_at": "2026-08-31T22:28:45.000Z",
+  "updated_at": "2026-08-31T22:28:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29808371,
+  "storage_human": "30 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - abahof45/recede",
+      "url": "https://github.com/abahof45/recede",
+      "snippet": "Contribute to abahof45/recede development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - abahof45/recede-code: its a vibe coder for coders free",
+      "url": "https://github.com/abahof45/recede-code",
+      "snippet": "its a vibe coder for coders free. Contribute to abahof45/recede-code development by creating an account on GitHub."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=1&sort=trending&search=deepseek",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/?t=arch%3Asrformer",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    }
+  ]
+}

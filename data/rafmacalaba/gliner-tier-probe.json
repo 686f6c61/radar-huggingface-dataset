@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "rafmacalaba/gliner-tier-probe",
+  "slug": "rafmacalaba-gliner-tier-probe",
+  "author": "rafmacalaba",
+  "url": "https://huggingface.co/rafmacalaba/gliner-tier-probe",
+  "created_at": "2026-08-31T21:20:27.000Z",
+  "updated_at": "2026-08-31T21:20:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gliner",
+  "languages": [],
+  "tags": [
+    "gliner",
+    "probe",
+    "data-use",
+    "tiered",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1840817,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rafmacalaba (Rafael) - Hugging Face",
+      "url": "https://huggingface.co/rafmacalaba",
+      "snippet": "Recent Activity updated a model 4 days ago rafmacalaba/gliner-base-tuned published a model 8 days ago rafmacalaba/gliner-base-tuned"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=tiered",
+      "snippet": "rafmacalaba/gliner-datause-probe Token Classification •Updated about 13 hours ago• 31"
+    },
+    {
+      "title": "rafmacalaba (Rafael Macalaba) · GitHub",
+      "url": "https://github.com/rafmacalaba",
+      "snippet": "AI & ML Engineer @ World Bank Group. rafmacalaba has 77 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - rafmacalaba/armada: Loop engineering for software development ...",
+      "url": "https://github.com/rafmacalaba/armada",
+      "snippet": "Loop engineering for software development. Turn any repository into a self-organizing AI engineering team — 8 specialists, contract-driven, evidence-gated, parallel feature voyages. - rafmacalaba/armada"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

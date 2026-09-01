@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "KoichiYasuoka/bert-large-japanese-wikipedia-ud-head",
+  "slug": "koichiyasuoka-bert-large-japanese-wikipedia-ud-head",
+  "author": "KoichiYasuoka",
+  "url": "https://huggingface.co/KoichiYasuoka/bert-large-japanese-wikipedia-ud-head",
+  "created_at": "2022-06-21T07:38:19.000Z",
+  "updated_at": "2026-08-31T23:32:56.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "question-answering",
+    "japanese",
+    "wikipedia",
+    "dependency-parsing",
+    "ja",
+    "dataset:universal_dependencies",
+    "base_model:KoichiYasuoka/bert-large-japanese-char-extended",
+    "base_model:finetune:KoichiYasuoka/bert-large-japanese-char-extended",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4949301723,
+  "storage_human": "4.9 GB",
+  "base_model": "KoichiYasuoka/bert-large-japanese-char-extended",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KoichiYasuoka/bert-large-japanese-wikipedia-ud-head · Hugging Face",
+      "url": "https://huggingface.co/KoichiYasuoka/bert-large-japanese-wikipedia-ud-head",
+      "snippet": "Model Description This is a BERT model pretrained on Japanese Wikipedia texts for dependency-parsing (head-detection on long-unit-words) as question-answering, derived from bert-large-japanese-char-extended and UD_Japanese-GSDLUW."
+    },
+    {
+      "title": "modernbert-large-japanese-wikipedia-ud-embeds - Hugging Face",
+      "url": "https://huggingface.co/KoichiYasuoka/modernbert-large-japanese-wikipedia-ud-embeds",
+      "snippet": "Model Description This is a ModernBERT model pretrained for POS-tagging and dependency-parsing, derived from modernbert-large-japanese-wikipedia-luw-upos and UD_Japanese-GSDLUW."
+    },
+    {
+      "title": "bert-large-japanese-wikipedia-ud-head huggingface.co api ...",
+      "url": "https://www.toolify.ai/ai-model/koichiyasuoka-bert-large-japanese-wikipedia-ud-head",
+      "snippet": "Model Details of bert-large-japanese-wikipedia-ud-head bert-large-japanese-wikipedia-ud-head Model Description This is a BERT model pretrained on Japanese Wikipedia texts for dependency-parsing (head-detection on long-unit-words) as question-answering, derived from bert-large-japanese-char-extended and UD_Japanese-GSDLUW ."
+    },
+    {
+      "title": "KoichiYasuoka (Koichi Yasuoka) · GitHub",
+      "url": "https://github.com/KoichiYasuoka",
+      "snippet": "Professor of Digital Humanities. KoichiYasuoka has 77 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Deploy KoichiYasuoka/bert-large-japanese-wikipedia-ud-head",
+      "url": "https://endpoints.huggingface.co/new?repository=KoichiYasuoka%2Fbert-large-japanese-wikipedia-ud-head",
+      "snippet": "Deploy bert-large-japanese-wikipedia-ud-head for question-answering inference in 1 click."
+    }
+  ]
+}

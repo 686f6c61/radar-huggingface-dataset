@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "abdi38394/mini-gpt-10m-fineweb",
+  "slug": "abdi38394-mini-gpt-10m-fineweb",
+  "author": "abdi38394",
+  "url": "https://huggingface.co/abdi38394/mini-gpt-10m-fineweb",
+  "created_at": "2026-08-31T20:28:33.000Z",
+  "updated_at": "2026-08-31T20:37:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "en",
+    "dataset:wikimedia/wikipedia",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6696960,
+  "parameters_human": "6.7M",
+  "storage_bytes": 26789376,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AyushM-Codez/catalyst-mini: A tiny 10M‑parameter GPT made from ...",
+      "url": "https://github.com/AyushM-Codez/catalyst-mini",
+      "snippet": "⚗️ Catalyst‑Mini - A 10M Parameter Language Model from Scratch Catalyst‑Mini is a tiny, hackable decoder‑only Transformer language model built entirely in PyTorch. With just ~10 million parameters, it replicates the architecture of frontier models (Llama, Mistral, GPT‑4) while being small enough to train on a single GPU - even the free T4 on Google Colab. Every component is ..."
+    },
+    {
+      "title": "kjj0/fineweb10B-gpt2 at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/kjj0/fineweb10B-gpt2/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nampdn-ai/mini-fineweb · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/nampdn-ai/mini-fineweb",
+      "snippet": "Fineweb subset [Work-In-Progress] Filtering by how a knowledge could be useful for pretraining small model I&#x27;m targeting only 3-4% of original fineweb in size."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "GitHub - karpathy/minGPT: A minimal PyTorch re-implementation of the ...",
+      "url": "https://github.com/karpathy/minGPT",
+      "snippet": "A PyTorch re-implementation of GPT, both training and inference. minGPT tries to be small, clean, interpretable and educational, as most of the currently available GPT model implementations can a bit sprawling."
+    }
+  ]
+}

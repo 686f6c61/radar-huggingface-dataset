@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "thomas-meier/test-4",
+  "slug": "thomas-meier-test-4",
+  "author": "thomas-meier",
+  "url": "https://huggingface.co/thomas-meier/test-4",
+  "created_at": "2026-08-31T19:50:14.000Z",
+  "updated_at": "2026-08-31T20:01:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70227302630,
+  "storage_human": "70.2 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EHL Innovation Rewind: Thomas Meier on AI, Personalization, and ...",
+      "url": "https://www.hospitalitynet.org/opinion/4127506/ehl-innovation-rewind-thomas-meier-on-ai-personalization-and-preserving-the-rituals-of-luxury-at-jumeirah",
+      "snippet": "EHL Innovation Rewind: Thomas Meier on AI, Personalization, and Preserving the Rituals of Luxury at Jumeirah At the EHL Open Innovation Summit in Lausanne, we had the chance to sit down with ..."
+    },
+    {
+      "title": "IQ Test | Tracking AI",
+      "url": "https://trackingai.org/",
+      "snippet": "Tracking AI is a cutting-edge application that unveils the IQ Scores of frontier artificial intelligence models. Explore and analyze the IQ Scores of AIs with our intuitive platform, designed to foster transparency in the world of artificial intelligence. Stay informed and uncover the IQs shaping the algorithms behind the technology revolution."
+    },
+    {
+      "title": "New from HPE AI Services - Generative AI Implementation | Thomas Meier",
+      "url": "https://www.linkedin.com/posts/thomas-meier-data_new-from-hpe-ai-services-generative-ai-activity-7141327083846225920-d3nJ",
+      "snippet": "HPE AI Services - Generative AI Implementation provides HPE artificial intelligence experts to help you plan and deploy an AI solution using advanced optimization techniques, including AI prompt ..."
+    },
+    {
+      "title": "#ai #interiordesign #hospitalitydesign #artificialintelligence # ...",
+      "url": "https://www.linkedin.com/posts/thomas-meier-designer_ai-interiordesign-hospitalitydesign-activity-7047457134086680577-avSh",
+      "snippet": "During our presentation, we covered a range of exciting topics, from specific examples of AI being used in real-world interior design projects to the challenges and opportunities that AI presents ..."
+    },
+    {
+      "title": "Google launches open-source model Gemma 4: How to try it",
+      "url": "https://mashable.com/article/google-releases-gemma-4-open-ai-model-now-open-source-how-to-try-it",
+      "snippet": "Google just released its newest AI model Gemma 4, which is now both open and open source. Credit: Thomas Fuller/SOPA Images/LightRocket via Getty Images Google just released the latest version of ..."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sarkarghya/yelp-fake-review-detector",
+  "slug": "sarkarghya-yelp-fake-review-detector",
+  "author": "sarkarghya",
+  "url": "https://huggingface.co/sarkarghya/yelp-fake-review-detector",
+  "created_at": "2026-08-31T22:11:25.000Z",
+  "updated_at": "2026-08-31T22:16:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "fake-review-detection",
+    "proxy-labels",
+    "yelpzip",
+    "base_model:microsoft/deberta-v3-base",
+    "base_model:finetune:microsoft/deberta-v3-base",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184423682,
+  "parameters_human": "184.4M",
+  "storage_bytes": 740189793,
+  "storage_human": "740 MB",
+  "base_model": "microsoft/deberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - shrey24/yelp-fake-reviews-detector: A machine learning system ...",
+      "url": "https://github.com/shrey24/yelp-fake-reviews-detector",
+      "snippet": "A machine learning system to detect fake reviews on Yelp. - shrey24/yelp-fake-reviews-detector"
+    },
+    {
+      "title": "varshakashid/yelp-fake-review-detector · Hugging Face",
+      "url": "https://huggingface.co/varshakashid/yelp-fake-review-detector",
+      "snippet": "varshakashid / yelp-fake-review-detector like 0 Safetensors distilbert Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 2 Safetensors Model size 0.1B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "fake-review-detection · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/fake-review-detection",
+      "snippet": "An AI-powered Fake Review Detector built with Python, Streamlit, and Scikit-learn. Uses TF-IDF vectorization, Logistic Regression, and behavioral text analytics (sentiment, exclamations, clichés) to identify synthetic or spammy product reviews. Includes training scripts and a full interactive dashboard."
+    },
+    {
+      "title": "New AI tool could detect fake online reviews with 93% accuracy on ...",
+      "url": "https://knowridge.com/2026/05/new-ai-tool-could-detect-fake-online-reviews-with-93-accuracy-on-amazon-91-on-yelp/",
+      "snippet": "During testing, the model achieved impressive results. It correctly identified fake reviews with 93% accuracy on Amazon data and 91% accuracy on Yelp data."
+    },
+    {
+      "title": "YelpNYC Fake Review Detector - a Hugging Face Space by kozmikus",
+      "url": "https://huggingface.co/spaces/kozmikus/YelpNYC-Fake-Review-Detector",
+      "snippet": "This tool lets you paste a Yelp review and choose its star rating, then tells you whether the review is likely genuine or fake. It also shows the confidence percentages for each option, helping you..."
+    }
+  ]
+}

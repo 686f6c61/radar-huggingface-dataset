@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "niedamsie9/kr2madparamsnonakedcaptioned",
+  "slug": "niedamsie9-kr2madparamsnonakedcaptioned",
+  "author": "niedamsie9",
+  "url": "https://huggingface.co/niedamsie9/kr2madparamsnonakedcaptioned",
+  "created_at": "2026-08-31T23:39:03.000Z",
+  "updated_at": "2026-09-01T02:46:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14749415753,
+  "storage_human": "14.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "niedamsie9 (nieadmsie) - Hugging Face",
+      "url": "https://huggingface.co/niedamsie9",
+      "snippet": "Recent Activity updated a modelabout 4 hours ago niedamsie9/kremini published a modelabout 6 hours ago niedamsie9/kremini View all activity"
+    },
+    {
+      "title": "niedamsie9/kremini · Hugging Face",
+      "url": "https://huggingface.co/niedamsie9/kremini",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Undress Free Online - Remove Clothes from Photos with AI - Let&#x27;s Nude AI",
+      "url": "https://letsnude.com/ai-undress",
+      "snippet": "How AI Undress Works in 2026 Our AI undress engine takes any clear photo and produces a realistic motion video - not a single static deepnude image like older tools. The model uses a state-of-the-art diffusion stack with motion synthesis to keep skin tone, body proportions, and lighting consistent across the entire 3- to 10-second clip."
+    },
+    {
+      "title": "Undress the Photo to See Her Naked with Free AI Clothes Remover ...",
+      "url": "https://ai-undress.ai/",
+      "snippet": "Free AI Nudifier to Make Undress Videos & Photos Simply upload a photo. Then our Magic AI will nudify the photo or turn the photo into clothes off video with a few seconds."
+    },
+    {
+      "title": "Photo Clothes Remover - AI Tool, Free & Instant | Nudie.app",
+      "url": "https://nudie.app/photo-clothes-remover/",
+      "snippet": "Remove clothes from photos with AI at Nudie.app. Free photo clothes remover, photorealistic results in seconds, no download, private."
+    }
+  ]
+}

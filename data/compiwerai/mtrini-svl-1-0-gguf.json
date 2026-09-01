@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "CompiwerAI/Mtrini-SVL-1.0-GGUF",
+  "slug": "compiwerai-mtrini-svl-1-0-gguf",
+  "author": "CompiwerAI",
+  "url": "https://huggingface.co/CompiwerAI/Mtrini-SVL-1.0-GGUF",
+  "created_at": "2026-08-31T20:17:05.000Z",
+  "updated_at": "2026-08-31T22:24:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen3-vl",
+    "vision-language",
+    "lora-merged",
+    "peft",
+    "darija",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 8709519456,
+  "storage_human": "8.7 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CompiwerAI/Mtrini-SVL-1.0 · Hugging Face",
+      "url": "https://huggingface.co/CompiwerAI/Mtrini-SVL-1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CompiwerAI/Mtrini-SVL-1.0 at main - Hugging Face",
+      "url": "https://huggingface.co/CompiwerAI/Mtrini-SVL-1.0/tree/main",
+      "snippet": "CompiwerAI / Mtrini-SVL-1. like 0 Text Generation PEFT Safetensors Transformers lora conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "README.md · CompiwerAI/Mtrini-SVL-1.0 at main - Hugging Face",
+      "url": "https://huggingface.co/CompiwerAI/Mtrini-SVL-1.0/blob/main/README.md",
+      "snippet": "CompiwerAI / Mtrini-SVL-1. like 0 Text Generation PEFT Safetensors Transformers lora conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "CompiwerAI/Mtrini-1.0-Family · Hugging Face",
+      "url": "https://huggingface.co/CompiwerAI/Mtrini-1.0-Family",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

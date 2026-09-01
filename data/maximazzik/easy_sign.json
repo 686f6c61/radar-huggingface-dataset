@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "maximazzik/easy_sign",
+  "slug": "maximazzik-easy_sign",
+  "author": "maximazzik",
+  "url": "https://huggingface.co/maximazzik/easy_sign",
+  "created_at": "2026-08-31T17:44:47.000Z",
+  "updated_at": "2026-08-31T20:58:12.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "sign-language",
+    "russian-sign-language",
+    "s3d",
+    "slovo",
+    "rsl",
+    "video-classification",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 147687436,
+  "storage_human": "148 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ai-forever/easy_sign: Easy_sign is an open source russian sign ...",
+      "url": "https://github.com/ai-forever/easy_sign",
+      "snippet": "Easy_sign is an open source russian sign language recognition project that uses small CPU model for predictions and is designed for easy deployment via Streamlit. - ai-forever/easy_sign"
+    },
+    {
+      "title": "easy_sign/README_en.md at main · ai-forever/easy_sign · GitHub",
+      "url": "https://github.com/ai-forever/easy_sign/blob/main/README_en.md",
+      "snippet": "Easy_sign is an open source russian sign language recognition project that uses small CPU model for predictions and is designed for easy deployment via Streamlit. - ai-forever/easy_sign"
+    },
+    {
+      "title": "ai-forever/easy_sign | Gitverse",
+      "url": "https://gitverse.ru/ai-forever/easy_sign",
+      "snippet": "Easy_sign Easy_sign - опенсорс проект по распознаванию Русского жестового языка, спроектированный для развёртывания через Streamlit. В проекте используется \"лёгкая\" ML-модель, способная работать на CPU."
+    },
+    {
+      "title": "easysign.ai",
+      "url": "https://easysign.ai/",
+      "snippet": "easysign.ai"
+    },
+    {
+      "title": "maximazzik (Maxim Novopoltsev) - Hugging Face",
+      "url": "https://huggingface.co/maximazzik",
+      "snippet": "Recent Activity updated a model 4 days ago maximazzik/gemma-2-2B-it-thinking-function_calling-V0 published a model 4 days ago maximazzik/gemma-2-2B-it-thinking-function_calling-V0 upvoted a paper 10 months ago Your Transformer is Secretly Linear View all activity"
+    }
+  ]
+}

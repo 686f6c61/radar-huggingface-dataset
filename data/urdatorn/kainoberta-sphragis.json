@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Urdatorn/KainoBERTa-sphragis",
+  "slug": "urdatorn-kainoberta-sphragis",
+  "author": "Urdatorn",
+  "url": "https://huggingface.co/Urdatorn/KainoBERTa-sphragis",
+  "created_at": "2026-09-01T01:30:33.000Z",
+  "updated_at": "2026-09-01T01:30:49.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "grc"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "fill-mask",
+    "ancient-greek",
+    "masked-language-modeling",
+    "grc",
+    "dataset:Urdatorn/AncientGreek-no-sphragis",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 111634688,
+  "parameters_human": "111.6M",
+  "storage_bytes": 446569001,
+  "storage_human": "447 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Urdatorn/KainoBERT-sphragis · Hugging Face",
+      "url": "https://huggingface.co/Urdatorn/KainoBERT-sphragis",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Urdatorn/sphragis-alm-olmo3-7b-xenophon · Hugging Face",
+      "url": "https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-xenophon",
+      "snippet": "Sphragis authorial language model: Xenophon One of seventeen authorial language models (ALMs) for the Sphragis Ancient Greek authorship-attribution benchmark, following Huang, Murakami and Grieve (2025), \"Attributing authorship via the perplexity of authorial language models\", PLoS ONE 20 (7): e0327081. Each model is a full further-pretraining of allenai/Olmo-3-1025-7B (revision ..."
+    },
+    {
+      "title": "GitHub - Urdatorn/Urdatorn",
+      "url": "https://github.com/Urdatorn/Urdatorn",
+      "snippet": "Urdatorn \"They&#x27;re not poets but mere mechanics. Look at these collections of so-called verse. Three poems and sixty pages of operating instructions.\""
+    },
+    {
+      "title": "GitHub - sphragis-oss/sphragis: EU AI Act compliance gateway for Claude ...",
+      "url": "https://github.com/sphragis-oss/sphragis",
+      "snippet": "The EU AI Act and GDPR pull you two ways at once: keep personal data out of third-party model providers, and be able to prove what you sent and when. The usual \"fix\" is a third-party SaaS scrubber, which just hands your data to another processor. Sphragis inverts that. Everything happens inside your own trust boundary: Redaction is local. Emails, cards, IBANs, secrets, keys and more are ..."
+    },
+    {
+      "title": "Free AI Image Generator - Text to Image AI (No Signup) | Fotor",
+      "url": "https://www.fotor.com/ai-image-generator/",
+      "snippet": "Generate AI images from text prompts or reference images online for free. Create with Fotor&#x27;s multi-model AI image generator for better quality, consistency, and control."
+    }
+  ]
+}

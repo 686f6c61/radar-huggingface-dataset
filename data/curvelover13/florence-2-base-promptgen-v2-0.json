@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Curvelover13/Florence-2-base-PromptGen-v2.0",
+  "slug": "curvelover13-florence-2-base-promptgen-v2-0",
+  "author": "Curvelover13",
+  "url": "https://huggingface.co/Curvelover13/Florence-2-base-PromptGen-v2.0",
+  "created_at": "2026-08-31T22:16:24.000Z",
+  "updated_at": "2026-08-31T22:16:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "florence2",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 270957657,
+  "parameters_human": "271.0M",
+  "storage_bytes": 1083916964,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiaoshouAI/Florence-2-base-PromptGen-v2.0 · Hugging Face",
+      "url": "https://huggingface.co/MiaoshouAI/Florence-2-base-PromptGen-v2.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiaoshouAI/Florence-2-base-PromptGen-v2.0 at main - Hugging Face",
+      "url": "https://huggingface.co/MiaoshouAI/Florence-2-base-PromptGen-v2.0/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Florence-2-base-PromptGen-v2.0 | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/florence-2-base-promptgen-v20/",
+      "snippet": "Florence-2-base-PromptGen-v2. is an advanced image captioning model that builds upon its predecessor with enhanced capabilities for generating detailed image descriptions and tags."
+    },
+    {
+      "title": "GitHub - hu05xing/Florence-2-base-PromptGen-v2.0: 图像转文本模型",
+      "url": "https://github.com/hu05xing/Florence-2-base-PromptGen-v2.0",
+      "snippet": "Florence-2-base-PromptGen v2.0 This upgrade is based on PromptGen 1.5 with some new features to the model:"
+    },
+    {
+      "title": "Florence-2-base-PromptGen v2.0 - Models",
+      "url": "https://www.modelscope.cn/models/cutemodel/Florence-2-base-PromptGen-v2.0",
+      "snippet": "Florence-2-base-PromptGen v2.0 This upgrade is based on PromptGen 1.5 with some new features to the model: Features: Improved caption quality for <GENERATE_TAGS>, <DETAILED_CAPTION> and <MORE_DETAILED_CAPTION>. A new <ANALYZE> instruction, which helps the model to better understands the image composition of the input image."
+    }
+  ]
+}

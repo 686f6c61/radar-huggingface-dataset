@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Prannesshkva/QU-SSM-60M-MoE",
+  "slug": "prannesshkva-qu-ssm-60m-moe",
+  "author": "Prannesshkva",
+  "url": "https://huggingface.co/Prannesshkva/QU-SSM-60M-MoE",
+  "created_at": "2026-08-31T19:57:52.000Z",
+  "updated_at": "2026-09-01T01:24:43.000Z",
+  "license": "cc-by-nc-nd-4.0",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qu_ssm_moe",
+    "state-space-model",
+    "ssm",
+    "quasi-unitary",
+    "moe",
+    "mixture-of-experts",
+    "lie-group",
+    "multimodal",
+    "causal-lm",
+    "text-generation",
+    "custom_code",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "license:cc-by-nc-nd-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 64296576,
+  "parameters_human": "64.3M",
+  "storage_bytes": 1286248760,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prannesshkva/Ael-504M · Hugging Face",
+      "url": "https://huggingface.co/Prannesshkva/Ael-504M",
+      "snippet": "Ael-504M is an original sub-billion parameter foundation model engineered for high-throughput, on-device multimodal reasoning and cross-sensory synthesis. Modern frontier architectures often force a compromise between the continuous linear efficiency of State Space Models (SSMs) and the quadratic expressive precision of Multi-Head Attention (MHA)."
+    },
+    {
+      "title": "Prannesshkva (Prannessh KVA) - Hugging Face",
+      "url": "https://huggingface.co/Prannesshkva/datasets",
+      "snippet": "User profile of Prannessh KVA on Hugging Face"
+    },
+    {
+      "title": "Prannessh KVA prannesshkva - GitHub",
+      "url": "https://github.com/prannesshkva",
+      "snippet": "Highly driven AI and Software Engineering student with proven expertise bridging Data Science, Backend Infrastructure, and Distributed Systems. - prannesshkva"
+    },
+    {
+      "title": "Prannessh KVA | Showcase",
+      "url": "https://prannesshkva.vercel.app/projects.html",
+      "snippet": "Selected Works Seven recent projects across AI infrastructure, data engineering, NLP, and high-performance systems."
+    },
+    {
+      "title": "AI Model Leaderboard August 2026 — LMSys Arena, LLM, Image & Coding ...",
+      "url": "https://www.swfte.com/ai/leaderboard",
+      "snippet": "Live AI model leaderboard updated September 2026. Claude Fable 5 leads at 100/100. Compare 56 LLMs, image, video, coding & reasoning models — replaces LMSys Chatbot Arena."
+    }
+  ]
+}

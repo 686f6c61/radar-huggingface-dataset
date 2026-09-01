@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "litert-community/wav2vec2-base-960h-LiteRT",
+  "slug": "litert-community-wav2vec2-base-960h-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/wav2vec2-base-960h-LiteRT",
+  "created_at": "2026-08-13T01:58:05.000Z",
+  "updated_at": "2026-09-01T01:45:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "litert",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "litert",
+    "tflite",
+    "android",
+    "gpu",
+    "wav2vec2",
+    "ctc",
+    "speech-recognition",
+    "automatic-speech-recognition",
+    "en",
+    "arxiv:2006.11477",
+    "base_model:facebook/wav2vec2-base-960h",
+    "base_model:finetune:facebook/wav2vec2-base-960h",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 50,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 189455184,
+  "storage_human": "189 MB",
+  "base_model": "facebook/wav2vec2-base-960h",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · litert-community/wav2vec2-base-960h-LiteRT at main",
+      "url": "https://huggingface.co/litert-community/wav2vec2-base-960h-LiteRT/blob/main/README.md",
+      "snippet": "wav2vec2-base-960h CTC — LiteRT (GPU) English speech recognition with wav2vec2-base-960h running fully on the LiteRT CompiledModel GPU (ML Drift) — and with zero FFT anywhere: the raw 16 kHz waveform goes straight into the 1D-conv feature extractor, so there is no mel/fbank step even on the host. Character-level CTC (29 chars + specials), greedy decode, no language model."
+    },
+    {
+      "title": "litert-community/wav2vec2-base-960h-LiteRT at main - Hugging Face",
+      "url": "https://huggingface.co/litert-community/wav2vec2-base-960h-LiteRT/tree/main",
+      "snippet": "Instructions to use litert-community/wav2vec2-base-960h-LiteRT with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "WAV2VEC2_ASR_BASE_960H — Torchaudio 2.11 documentation",
+      "url": "https://docs.pytorch.org/audio/stable/generated/torchaudio.pipelines.WAV2VEC2_ASR_BASE_960H.html",
+      "snippet": "torchaudio.pipelines.WAV2VEC2_ASR_BASE_960H ¶ Wav2vec 2.0 model (\"base\" architecture with an extra linear module), pre-trained on 960 hours of unlabeled audio from LibriSpeech dataset [Panayotov et al., 2015] (the combination of \"train-clean-100\", \"train-clean-360\", and \"train-other-500\"), and fine-tuned for ASR on the same audio with the corresponding transcripts. Originally ..."
+    },
+    {
+      "title": "WAV2VEC2_ASR_BASE_960H — Torchaudio 2.11 documentation",
+      "url": "https://docs.pytorch.org/audio/2.11.0/generated/torchaudio.pipelines.WAV2VEC2_ASR_BASE_960H.html",
+      "snippet": "Wav2vec 2.0 model (\"base\" architecture with an extra linear module), pre-trained on 960 hours of unlabeled audio from LibriSpeech dataset [Panayotov et al., 2015] (the combination of \"train-clean-100\", \"train-clean-360\", and \"train-other-500\"), and fine-tuned for ASR on the same audio with the corresponding transcripts."
+    },
+    {
+      "title": "wav2vec2-base-960h: Audio-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/wav2vec2-base-960h-facebook",
+      "snippet": "Overview wav2vec2-base-960h is a speech-to-text model built by facebook that transcribes English audio directly to text. The model uses a self-supervised learning approach called wav2vec 2.0, which learns powerful speech representations by masking input in the latent space and solving a contrastive task over quantized representations. The model was pretrained on unlabeled audio and fine-tuned ..."
+    }
+  ]
+}

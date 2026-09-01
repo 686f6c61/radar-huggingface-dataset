@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_midtrain_alignment-1k_2k_3k_simpleavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_midtrain_alignment-1k_2k_3k_simpleavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-1k_2k_3k_simpleavg_merge",
+  "created_at": "2026-08-29T01:11:13.000Z",
+  "updated_at": "2026-09-01T00:33:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 177,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg ...",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sfm-baseline-filtered-4k-5k-6k-avg - Hugging Face",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm-baseline-filtered-4k-5k-6k-avg",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sfm_filtered_midtrain_alignment-1k_2k_3k_merge - friendli.ai",
+      "url": "https://friendli.ai/models/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-1k_2k_3k_merge",
+      "snippet": "Deploy sfm_filtered_midtrain_alignment-1k_2k_3k_merge with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "sfm-filtered-midtrain-alignment-4k-5k-6k-avg - friendli.ai",
+      "url": "https://friendli.ai/models/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg",
+      "snippet": "Deploy sfm-filtered-midtrain-alignment-4k-5k-6k-avg with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Model Spec Midtraining: Improving How Alignment Training Generalizes",
+      "url": "https://alignment.anthropic.com/2026/msm/",
+      "snippet": "tl;dr We introduce model spec midtraining (MSM): after pre-training but before alignment fine-tuning, we train models on synthetic documents discussing their Model Spec. This shapes how models generalize from subsequent alignment training. For example, two models with identical alignment fine-tuning can generalize to adopt different values depending on the Model Spec used during MSM. We use ..."
+    }
+  ]
+}

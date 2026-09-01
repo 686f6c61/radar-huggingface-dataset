@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "hyper-accel/Qwen3-235B-A22B-FP8-OC",
+  "slug": "hyper-accel-qwen3-235b-a22b-fp8-oc",
+  "author": "hyper-accel",
+  "url": "https://huggingface.co/hyper-accel/Qwen3-235B-A22B-FP8-OC",
+  "created_at": "2026-08-31T19:46:52.000Z",
+  "updated_at": "2026-08-31T21:54:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_moe",
+    "fp8",
+    "hyperaccel",
+    "bertha",
+    "base_model:Qwen/Qwen3-235B-A22B",
+    "base_model:quantized:Qwen/Qwen3-235B-A22B",
+    "license:apache-2.0",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 235793608192,
+  "parameters_human": "235.79B",
+  "storage_bytes": 237099872102,
+  "storage_human": "237.1 GB",
+  "base_model": "Qwen/Qwen3-235B-A22B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-235B-A22B-Instruct-2507-FP8 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-235B-A22B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-235B-A22B-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3/qwen3_implementation_guide.ipynb.md at main - GitHub",
+      "url": "https://github.com/HarleyCoops/Qwen3/blob/main/qwen3_implementation_guide.ipynb.md",
+      "snippet": "Qwen3-235B-A22B Implementation Guide This guide provides practical implementations and code examples for working with the Qwen3-235B-A22B model. These examples can be converted to a Jupyter notebook format for interactive exploration."
+    },
+    {
+      "title": "Qwen3-235B-A22B - vLLM Ascend",
+      "url": "https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3-235B-A22B.html",
+      "snippet": "Qwen3-235B-A22B 1 Introduction ¶ Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support."
+    },
+    {
+      "title": "dynamo/recipes/qwen3-235b-a22b-fp8/README.md at main · ai ... - GitHub",
+      "url": "https://github.com/ai-dynamo/dynamo/blob/main/recipes/qwen3-235b-a22b-fp8/README.md",
+      "snippet": "Qwen3-235B-A22B-FP8 Recipes Production-ready deployments for Qwen3-235B-A22B (MoE model with 22B active parameters) using TensorRT-LLM."
+    }
+  ]
+}

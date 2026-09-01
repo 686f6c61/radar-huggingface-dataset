@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run1-gen13",
+  "slug": "hungrydino-qwen_2-5_7b-cat_numbers-collapse_p10_twf-run1-gen13",
+  "author": "HungryDino",
+  "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run1-gen13",
+  "created_at": "2026-08-26T15:32:36.000Z",
+  "updated_at": "2026-09-01T00:38:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 173006186,
+  "storage_human": "173 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run1-gen13 ...",
+      "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run1-gen13",
+      "snippet": "Instructions to use HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run1-gen13 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run1-gen12 ...",
+      "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run1-gen12",
+      "snippet": "Instructions to use HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run1-gen12 with libraries, inference providers, notebooks, and local apps. Follow these links ..."
+    },
+    {
+      "title": "Qwen · GitHub",
+      "url": "https://github.com/QwenLM",
+      "snippet": "Alibaba Cloud&#x27;s general-purpose AI models. Qwen has 51 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Every Qwen AI Model Explained and Compared (Aug, 2026)",
+      "url": "https://www.secondtalent.com/resources/every-qwen-ai-model-explained-compared/",
+      "snippet": "Qwen is Alibaba&#x27;s model family: free Apache 2.0 open weights you self-host, or a cheap paid API with Max, Plus, and Flash. Compare models, prices, and which to..."
+    },
+    {
+      "title": "HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run1-gen13 · Hugging Face",
+      "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run1-gen13",
+      "snippet": "Instructions to use HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run1-gen13 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run1-gen13 with Transformers:"
+    }
+  ]
+}

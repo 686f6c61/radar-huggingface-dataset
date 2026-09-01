@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "id": "j0no12/Nero-XS",
+  "slug": "j0no12-nero-xs",
+  "author": "j0no12",
+  "url": "https://huggingface.co/j0no12/Nero-XS",
+  "created_at": "2026-08-31T23:18:36.000Z",
+  "updated_at": "2026-09-01T00:52:49.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "nero_xs",
+    "text-generation",
+    "causal-lm",
+    "recurrent-transformer",
+    "xsa",
+    "small-language-models",
+    "from-scratch",
+    "en",
+    "dataset:HuggingFaceFW/finephrase",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2996480,
+  "parameters_human": "3.0M",
+  "storage_bytes": 167156828,
+  "storage_human": "167 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Zero-shot multiple-choice language modeling",
+      "dataset": "HellaSwag",
+      "metric": null,
+      "value": 0.27384983071101376
+    },
+    {
+      "task": "Zero-shot multiple-choice language modeling",
+      "dataset": "ARC-Easy",
+      "metric": null,
+      "value": 0.30976430976430974
+    },
+    {
+      "task": "Zero-shot multiple-choice language modeling",
+      "dataset": "ARC-Challenge",
+      "metric": null,
+      "value": 0.20733788395904437
+    },
+    {
+      "task": "Zero-shot multiple-choice language modeling",
+      "dataset": "PIQA",
+      "metric": null,
+      "value": 0.5386289445048966
+    },
+    {
+      "task": "Zero-shot multiple-choice language modeling",
+      "dataset": "ArithMark-3",
+      "metric": null,
+      "value": 0.321
+    }
+  ],
+  "sources": [
+    {
+      "title": "j0no12 (j0nooo) - Hugging Face",
+      "url": "https://huggingface.co/j0no12",
+      "snippet": "Sort: Recently updated. Sleeping . Nero1 0.5B. 💬. Test Nero1-0.5B. j0no12 11 days ago. Sleeping . NanoGPT 1m. 💬"
+    },
+    {
+      "title": "j0no12/Nero-800M · Hugging Face",
+      "url": "https://huggingface.co/j0no12/Nero-800M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "j0no12/NeroT-86M-Exp at main - Hugging Face",
+      "url": "https://huggingface.co/j0no12/NeroT-86M-Exp/tree/main",
+      "snippet": "MLX How to use j0no12/NeroT-86M-Exp with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir NeroT-86M-Exp j0no12/NeroT-86M-Exp Notebooks Google Colab Kaggle Local AppsSettings LM Studio Atomic Chat main NeroT-86M-Exp 172 MB Ctrl+K Ctrl+K 1 contributor History:4 commits j0no12 Update README.md 74667d6 verifiedabout 6 hours ago ..."
+    },
+    {
+      "title": "j0no12/NeroT-86M-Exp · Hugging Face",
+      "url": "https://huggingface.co/j0no12/NeroT-86M-Exp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - kimjammer/Neuro: A recreation of Neuro-Sama originally created ...",
+      "url": "https://github.com/kimjammer/Neuro",
+      "snippet": "However, I&#x27;m using MiniCPM-Llama3-V-2_5-int4 on my custom and extremely jank Neuro-LLM-Server to host the model. This model has amazing high resolution input, great OCR, and is based on Llama 3 so the output is very similar to the text-only mode. The int4 quantized version uses approximately 8GB of VRAM."
+    }
+  ]
+}

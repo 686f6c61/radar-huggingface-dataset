@@ -5,7 +5,7 @@
   "author": "HyeonseokE",
   "url": "https://huggingface.co/HyeonseokE/smolvla_phase1_sort_by_color_A2_3000_10fps",
   "created_at": "2026-08-30T21:58:01.000Z",
-  "updated_at": "2026-08-30T21:59:41.000Z",
+  "updated_at": "2026-08-31T13:08:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -14,8 +14,8 @@
   "tags": [
     "lerobot",
     "safetensors",
-    "robotics",
     "smolvla",
+    "robotics",
     "dataset:HyeonseokE/phase1_sort_by_color_A2_10fps",
     "arxiv:2506.01844",
     "base_model:lerobot/smolvla_base",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 13,
   "trending_score": 0,
   "parameters": 450046176,
   "parameters_human": "450.0M",

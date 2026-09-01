@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ads2009/turkish-ai-text-detector-berturk-v3",
+  "slug": "ads2009-turkish-ai-text-detector-berturk-v3",
+  "author": "ads2009",
+  "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-berturk-v3",
+  "created_at": "2026-08-31T20:40:12.000Z",
+  "updated_at": "2026-08-31T21:29:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110618882,
+  "parameters_human": "110.6M",
+  "storage_bytes": 884998080,
+  "storage_human": "885 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ads2009/turkish-ai-text-detector-berturk · Hugging Face",
+      "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-berturk",
+      "snippet": "ads2009 / turkish-ai-text-detector-berturk like 0 Text Classification Transformers Safetensors bert text-embeddings-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ads2009 (hayatbazen) - Hugging Face",
+      "url": "https://huggingface.co/ads2009",
+      "snippet": "ads2009/english-ai-text-detector-albert Text Classification • 11.7M•Updated 17 days ago• 49"
+    },
+    {
+      "title": "GitHub - SaKinLord/turkish-ai-detector: Turkish AI text detector ...",
+      "url": "https://github.com/SaKinLord/turkish-ai-detector",
+      "snippet": "Turkish AI Detector Turkish AI text detector runtime using language-model curvature signals and a document-level meta-classifier."
+    },
+    {
+      "title": "GitHub - stefan-it/turkish-bert: Turkish BERT/DistilBERT, ELECTRA ...",
+      "url": "https://github.com/stefan-it/turkish-bert",
+      "snippet": "We present community-driven BERT, DistilBERT, ELECTRA, ConvBERT and T5 models for Turkish 🎉 Some datasets used for pretraining and evaluation are contributed from the awesome Turkish NLP community, as well as the decision for the BERT model name: BERTurk. Logo is provided by Merve Noyan."
+    },
+    {
+      "title": "Turkish AI Detector - Evernote",
+      "url": "https://evernote.com/ai-detector/turkish-ai-detector",
+      "snippet": "Detect AI-generated text in Turkish accurately and effectively online for free, using our Turkish AI Detector tool. Access detailed analysis easily."
+    }
+  ]
+}

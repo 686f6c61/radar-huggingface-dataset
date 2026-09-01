@@ -5,7 +5,7 @@
   "author": "lewisdog",
   "url": "https://huggingface.co/lewisdog/engram-md-demo",
   "created_at": "2026-08-29T18:59:43.000Z",
-  "updated_at": "2026-08-30T20:46:18.000Z",
+  "updated_at": "2026-08-31T12:53:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 67649536,
   "parameters_human": "67.6M",
-  "storage_bytes": 1718548704,
-  "storage_human": "1.7 GB",
+  "storage_bytes": 3519602432,
+  "storage_human": "3.5 GB",
   "base_model": "Qwen/Qwen3-0.6B-Base",
   "formats": [
     "gguf"

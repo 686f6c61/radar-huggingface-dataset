@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "n4ze3m/yatm-quickdraw-diffusion",
+  "slug": "n4ze3m-yatm-quickdraw-diffusion",
+  "author": "n4ze3m",
+  "url": "https://huggingface.co/n4ze3m/yatm-quickdraw-diffusion",
+  "created_at": "2026-08-31T19:24:44.000Z",
+  "updated_at": "2026-08-31T19:24:53.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "diffusion",
+    "ddpm",
+    "ddim",
+    "quickdraw",
+    "image-generation",
+    "unconditional-image-generation",
+    "dataset:quickdraw",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12446809,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quick, Draw!",
+      "url": "https://quickdraw.withgoogle.com/",
+      "snippet": "Can a neural network learn to recognize doodles? See how well it does with your drawings and help teach it, just by playing."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Quick, Draw! The Data",
+      "url": "https://quickdraw.withgoogle.com/data",
+      "snippet": "Over 15 million players have contributed millions of drawings playing Quick, Draw! These doodles are a unique data set that can help developers train new neural networks, help researchers see patterns in how people around the world draw, and help artists create things we haven&#x27;t begun to think of."
+    },
+    {
+      "title": "jamesaasher/quickdraw-text-diffusion · Hugging Face",
+      "url": "https://huggingface.co/jamesaasher/quickdraw-text-diffusion",
+      "snippet": "A text-conditional diffusion model for generating Google QuickDraw-style sketches from text prompts. This model uses DDPM (Denoising Diffusion Probabilistic Models) with CLIP text encoding and classifier-free guidance to generate 64x64 grayscale sketches."
+    },
+    {
+      "title": "nateraw/quickdraw-model · Hugging Face",
+      "url": "https://huggingface.co/nateraw/quickdraw-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

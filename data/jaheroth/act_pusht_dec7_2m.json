@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jaheroth/act_pusht_dec7_2M",
+  "slug": "jaheroth-act_pusht_dec7_2m",
+  "author": "jaheroth",
+  "url": "https://huggingface.co/jaheroth/act_pusht_dec7_2M",
+  "created_at": "2026-08-31T19:44:12.000Z",
+  "updated_at": "2026-08-31T19:44:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:lerobot/pusht",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 83969428,
+  "parameters_human": "84.0M",
+  "storage_bytes": 335916048,
+  "storage_human": "336 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jaheroth/act_pusht_bs64_dec7 · Hugging Face",
+      "url": "https://huggingface.co/jaheroth/act_pusht_bs64_dec7",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jaheroth/act_pusht_bs64_dec7_100k · Hugging Face",
+      "url": "https://huggingface.co/jaheroth/act_pusht_bs64_dec7_100k",
+      "snippet": "jaheroth / act_pusht_bs64_dec7_100k like 0 Robotics LeRobot Safetensors act pusht License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "JaHeRoth (Jacob H. Rothschild) · GitHub",
+      "url": "https://github.com/JaHeRoth",
+      "snippet": "JaHeRoth has 6 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - HUliangwei/robot",
+      "url": "https://github.com/HUliangwei/robot",
+      "snippet": "把 LeRobot 官方 PushT 任务在 MuJoCo 中复现推理：从数据集、ACT 训练到双环境（pymunk 2D 官方 / 自建 MuJoCo）闭环推理的完整工作区。"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    }
+  ]
+}

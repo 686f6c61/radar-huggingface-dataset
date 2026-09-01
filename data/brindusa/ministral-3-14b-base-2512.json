@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "brindusa/Ministral-3-14B-Base-2512",
+  "slug": "brindusa-ministral-3-14b-base-2512",
+  "author": "brindusa",
+  "url": "https://huggingface.co/brindusa/Ministral-3-14B-Base-2512",
+  "created_at": "2026-08-31T22:51:05.000Z",
+  "updated_at": "2026-08-31T22:51:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "zh",
+    "ja",
+    "ko",
+    "ar"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral3",
+    "mistral-common",
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "zh",
+    "ja",
+    "ko",
+    "ar",
+    "arxiv:2601.08584",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13945031680,
+  "parameters_human": "13.95B",
+  "storage_bytes": 55814106023,
+  "storage_human": "55.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistralai/Ministral-3-14B-Base-2512 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Ministral-3-14B-Base-2512",
+      "snippet": "Here we assume that the model mistralai/Ministral-3-14B-Base-2512 is served and you can ping it to the domain localhost with the port 8000 which is the default for vLLM."
+    },
+    {
+      "title": "Ministral-3-14B-Base-2512: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/ministral-3-14b-base-2512-mistralai",
+      "snippet": "Overview Ministral-3-14B-Base-2512 is a 14-billion-parameter base pre-trained language model created by mistralai that combines a 13.5B language model with a 0.4B vision encoder for multimodal capabilities. The model supports a 256k context window, operates with BF16 precision, and runs on vLLM or transformers frameworks. Built for edge deployment, it fits in 32GB of VRAM in BF16 format and ..."
+    },
+    {
+      "title": "Ministral 3 - a mistralai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mistralai/ministral-3",
+      "snippet": "A collection of edge models, with Base, Instruct and Reasoning variants, in 3 different sizes: 3B, 8B and 14B. All with vision capabilities."
+    },
+    {
+      "title": "Ministral-3-14B-Base-2512 · Model · Inferix",
+      "url": "https://inferix.co/models/mistralai/Ministral-3-14B-Base-2512",
+      "snippet": "Ministral 3 14B Base 2512 The largest model in the Ministral 3 family, Ministral 3 14B offers frontier capabilities and performance comparable to its larger Mistral Small 3.2 24B counterpart. A powerful and efficient language model with vision capabilities. This model is the base pre-trained version, not fine-tuned for instruction or reasoning tasks, making it ideal for custom post-training ..."
+    },
+    {
+      "title": "Ministral 3 14B - docs.mistral.ai",
+      "url": "https://docs.mistral.ai/models/ministral-3-14b-25-12",
+      "snippet": "Ministral 3 14B is the largest model in the Ministral 3 family, offering state-of-the-art capabilities and performance comparable to its larger Mistral Small 3.2 24B counterpart. Optimized for local deployment, it delivers high performance across diverse hardware, including local setups."
+    }
+  ]
+}

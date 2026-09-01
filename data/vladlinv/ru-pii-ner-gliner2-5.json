@@ -5,7 +5,7 @@
   "author": "vladlinv",
   "url": "https://huggingface.co/vladlinv/ru-pii-ner-gliner2.5",
   "created_at": "2026-08-30T20:32:05.000Z",
-  "updated_at": "2026-08-31T15:27:37.000Z",
+  "updated_at": "2026-08-31T17:52:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -23,7 +23,6 @@
     "ru",
     "legal",
     "gliner2.5",
-    "boundary-extraction",
     "token-classification",
     "base_model:fastino/gliner2.5-multi-v1",
     "base_model:finetune:fastino/gliner2.5-multi-v1",
@@ -35,8 +34,8 @@
   "trending_score": 0,
   "parameters": 287355159,
   "parameters_human": "287.4M",
-  "storage_bytes": 1165496881,
-  "storage_human": "1.2 GB",
+  "storage_bytes": 2314957909,
+  "storage_human": "2.3 GB",
   "base_model": "fastino/gliner2.5-multi-v1",
   "formats": [
     "safetensors"

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Stick9190/kroma-v0.2-base-lora-rank-384-fro-0985-txtfusion-stripped",
+  "slug": "stick9190-kroma-v0-2-base-lora-rank-384-fro-0985-txtfusion-stripped",
+  "author": "Stick9190",
+  "url": "https://huggingface.co/Stick9190/kroma-v0.2-base-lora-rank-384-fro-0985-txtfusion-stripped",
+  "created_at": "2026-08-31T20:49:23.000Z",
+  "updated_at": "2026-08-31T20:55:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3411046624,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lodestones/Kroma · Hugging Face",
+      "url": "https://huggingface.co/lodestones/Kroma",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kroma - Krea 2 LoRA - v0.2 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.com/models/2823254/kroma-krea-2-lora",
+      "snippet": "Download 1 variant available fp32 SafeTensor kroma-v0.2-base-lora-rank-384-fro-0985.safetensors Full precision, largest file • 3.37 GB Verified: 21 days ago Download (3.37 GB)"
+    },
+    {
+      "title": "lodestones/Kroma · 0.2 much worse than 0.1 for complex scenes. Please ...",
+      "url": "https://huggingface.co/lodestones/Kroma/discussions/16",
+      "snippet": "Consider having 0.2 as a official lora instead/additionally to a all in one concrete block model would help with that? For now i deffo stick with 0.1 (or 0.1 rl mild)"
+    },
+    {
+      "title": "Kroma v0.2: Krea 2 Full-Model Fine-Tune for ComfyUI",
+      "url": "https://comfyui-wiki.com/en/news/2026-08-09-kroma-v0-2",
+      "snippet": "Lodestones releases Kroma v0.2 as a full Krea 2 fine-tuned checkpoint instead of a LoRA, with base and turbo files plus community INT8 quants for ComfyUI."
+    },
+    {
+      "title": "Kroma - v0.2 KREA 2 - Free AI CHECKPOINT | TensorHub Art",
+      "url": "https://tensorhub.art/models/1030911045666877913",
+      "snippet": "Provenance v0.2 was produced by continued full fine-tuning of the K2 (Krea 2) checkpoint behind Kroma v0.1 — without the rank-256 LoRA delta compression used for the v0.1 release — followed by merging the Krea 2 Turbo delta in as a rank-512 LoRA."
+    }
+  ]
+}

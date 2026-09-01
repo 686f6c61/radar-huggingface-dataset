@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "AIAgens/GLM-5.3-Flash-UNCENSORED-FP8",
+  "slug": "aiagens-glm-5-3-flash-uncensored-fp8",
+  "author": "AIAgens",
+  "url": "https://huggingface.co/AIAgens/GLM-5.3-Flash-UNCENSORED-FP8",
+  "created_at": "2026-08-31T22:25:26.000Z",
+  "updated_at": "2026-08-31T22:25:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "glm5_next",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "glm",
+    "moe",
+    "fp8",
+    "vision",
+    "mtp",
+    "en",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 328357674378,
+  "storage_human": "328.4 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zai-org/GLM-5.3-Flash · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dealignai/GLM-5.3-Flash-UNCENSORED-FP8 · Hugging Face",
+      "url": "https://huggingface.co/dealignai/GLM-5.3-Flash-UNCENSORED-FP8",
+      "snippet": "This is GLM-5.3-Flash in FP8 with its refusal behavior — which caused heavy over-refusal, especially on copyright and other benign-but-flagged requests — removed directly in the model weights. FP8 runs at native speed on Hopper (H100/H200) GPUs. Genuine weight modification — none of the usual shortcuts:"
+    },
+    {
+      "title": "GLM-5.3-Flash Uncensored: No LoRA, No Jailbreak, Just Edited FP8 ...",
+      "url": "https://www.explainx.ai/blog/orcarouter-glm-5-3-flash-uncensored-block-fp8-august-2026",
+      "snippet": "Refusal removal is baked directly into the weights.\" That&#x27;s OrcaRouter&#x27;s own framing, posted August 29, 2026, for its uncensored build of GLM-5.3-Flash — Z.ai&#x27;s 320B-total, 18B-active mixture-of-experts model that shipped under MIT license three days earlier as the reveal behind the \"Ox Alpha\" stealth preview. The tweet pulled 87 fire reactions."
+    },
+    {
+      "title": "glm-5.3-flash",
+      "url": "https://ollama.com/library/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash is the first natively multimodal model in Z.ai&#x27;s GLM-5 series. With 320B total parameters and just 18B active, it outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the cost, while approaching Claude Opus 4.8 on coding and agentic benchmarks."
+    },
+    {
+      "title": "zai-org/GLM-5.3-Flash | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/zai-org/GLM-5.3-Flash",
+      "snippet": "GLM-5.3-Flash is a 320B-total / 18B-active multimodal MoE with hybrid KDA and sparse MLA attention, native FP8 weights, MTP, and a 1M-token context window."
+    }
+  ]
+}

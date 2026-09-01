@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Youghourta/distilhubert-finetuned-gtzan",
+  "slug": "youghourta-distilhubert-finetuned-gtzan",
+  "author": "Youghourta",
+  "url": "https://huggingface.co/Youghourta/distilhubert-finetuned-gtzan",
+  "created_at": "2026-08-20T19:21:39.000Z",
+  "updated_at": "2026-08-31T20:43:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hubert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 88,
+  "trending_score": 0,
+  "parameters": 23691402,
+  "parameters_human": "23.7M",
+  "storage_bytes": 2274525521,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EbisuRyu/distilhubert-finetuned-gtzan · Hugging Face",
+      "url": "https://huggingface.co/EbisuRyu/distilhubert-finetuned-gtzan",
+      "snippet": "TensorBoard Safetensors marsyas/gtzan hubert Generated from Trainer Eval Results Model card FilesFiles and versionsMetricsTraining metrics Community Train Deploy Use this model distilhubert-finetuned-gtzan Model description Intended uses & limitations Training and evaluation data Training procedure Training hyperparameters Training results ..."
+    },
+    {
+      "title": "yuval6967/distilhubert-finetuned-gtzan · Hugging Face",
+      "url": "https://huggingface.co/yuval6967/distilhubert-finetuned-gtzan",
+      "snippet": "distilhubert-finetuned-gtzan This model is a fine-tuned version of ntu-spml/distilhubert on the GTZAN dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "distilhubert-finetuned-gtzan Open-source Audio Classification Model ...",
+      "url": "https://model.aibase.com/models/details/1915693431768375298",
+      "snippet": "🚀 distilhubert-finetuned-gtzan This model is a fine-tuned version of ntu-spml/distilhubert on the GTZAN dataset, which is designed for audio classification tasks. It achieves a loss of 0.5716 and an accuracy of 0.82 on the evaluation set."
+    },
+    {
+      "title": "DistilHuBERT-Finetuned GTZAN Open-Source Audio Classification Model ...",
+      "url": "https://model.aibase.com/models/details/1915692982688440321",
+      "snippet": "🚀 distilhubert-finetuned-hyperparam-gtzan This model is a fine - tuned version of ntu-spml/distilhubert on the GTZAN dataset. It offers a practical solution for audio classification tasks, achieving notable accuracy on the evaluation set."
+    },
+    {
+      "title": "joheras/distilhubert-finetuned-gtzan - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/306932",
+      "snippet": "distilhubert-finetuned-gtzan This model is a fine-tuned version of ntu-spml/distilhubert on the GTZAN dataset. It achieves the following results on the evaluation set:"
+    }
+  ]
+}

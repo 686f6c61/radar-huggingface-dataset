@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Ooriginador/Qwen2.5-3B-ArkCompact-1.58bit",
+  "slug": "ooriginador-qwen2-5-3b-arkcompact-1-58bit",
+  "author": "Ooriginador",
+  "url": "https://huggingface.co/Ooriginador/Qwen2.5-3B-ArkCompact-1.58bit",
+  "created_at": "2026-08-31T21:09:43.000Z",
+  "updated_at": "2026-08-31T21:15:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "arkheion",
+    "ternary",
+    "1.58bit",
+    "base-3",
+    "ark-compact",
+    "rust",
+    "rocm",
+    "hip",
+    "wave32",
+    "sovereign-ai",
+    "text-generation",
+    "qwen2.5",
+    "pt",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 810998482,
+  "storage_human": "811 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "Qwen2.5 3B (3B) — HumanEval 68 | Benchmarks | OpenModelMap",
+      "url": "https://openmodelmap.com/model/Qwen/Qwen2.5-3B",
+      "snippet": "Qwen2.5-3B is a 3-billion-parameter large language model from Tongyi Qianwen that balances lightweight design with high performance. Supporting 32K context, it excels in code generation, logical reasoning, and multi-turn dialogue, making it ideal for edge deployment and low-latency local AI applications with strong Chinese language support."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "qwen2.5:3b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:3b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    }
+  ]
+}

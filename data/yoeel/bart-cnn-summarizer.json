@@ -5,7 +5,7 @@
   "author": "yoeel",
   "url": "https://huggingface.co/yoeel/bart-cnn-summarizer",
   "created_at": "2026-08-29T21:13:32.000Z",
-  "updated_at": "2026-08-31T17:20:55.000Z",
+  "updated_at": "2026-08-31T22:06:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 139470681,
   "parameters_human": "139.5M",
-  "storage_bytes": 6137067001,
-  "storage_human": "6.1 GB",
+  "storage_bytes": 32916872761,
+  "storage_human": "32.9 GB",
   "base_model": "facebook/bart-base",
   "formats": [
     "safetensors"

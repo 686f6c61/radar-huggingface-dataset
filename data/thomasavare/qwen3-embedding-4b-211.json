@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "thomasavare/Qwen3-Embedding-4B-211",
+  "slug": "thomasavare-qwen3-embedding-4b-211",
+  "author": "thomasavare",
+  "url": "https://huggingface.co/thomasavare/Qwen3-Embedding-4B-211",
+  "created_at": "2026-06-01T09:39:57.000Z",
+  "updated_at": "2026-08-31T20:13:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 710777,
+  "parameters_human": "710777",
+  "storage_bytes": 15249183,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thomasavare/Qwen3-Embedding-4B-211 · Hugging Face",
+      "url": "https://huggingface.co/thomasavare/Qwen3-Embedding-4B-211",
+      "snippet": "thomasavare / Qwen3-Embedding-4B-211 like 0 Safetensors ICD10-classification model_hub_mixin pytorch_model_hub_mixin Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "thomasavare/Qwen3-Embedding-4B-211 at main - Hugging Face",
+      "url": "https://huggingface.co/thomasavare/Qwen3-Embedding-4B-211/tree/main",
+      "snippet": "like 0 Safetensors ICD10-classification model_hub_mixin pytorch_model_hub_mixin Model card FilesFiles and versions xet Community Copy to bucket new main Qwen3-Embedding-4B-211 3.38 MB Ctrl+K Ctrl+K 1 contributor History:2 commits thomasavare"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Embedding",
+      "url": "https://github.com/QwenLM/Qwen3-Embedding",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B). This series inherits the exceptional multilingual capabilities, long-text ..."
+    },
+    {
+      "title": "Qwen3 Embedding 4B — AI Model | MindStudio",
+      "url": "https://www.mindstudio.ai/models/qwen3-embedding-4b-deepinfra",
+      "snippet": "Qwen3 Embedding 4B is a 4-billion-parameter text embedding model developed by Qwen and released in June 2025. It is designed to convert text into dense vector representations, which are used in tasks such as semantic search, retrieval-augmented generation, clustering, and classification. The model supports a context window of 32,768 tokens, allowing it to encode longer documents in a single ..."
+    },
+    {
+      "title": "Qwen 3 Embedding 4B - Specs, Capabilities & Benchmarks | Inferbase",
+      "url": "https://inferbase.ai/models/qwen3-embedding-4b",
+      "snippet": "Qwen develops the Qwen 3 Embedding 4B, an open-source embedding model exceling at text embedding and ranking tasks, including text retrieval, code retrieval, and text classification. Its notable technical trait is a long context window of 40,960 tokens, allowing for comprehensive understanding of lengthy texts."
+    }
+  ]
+}

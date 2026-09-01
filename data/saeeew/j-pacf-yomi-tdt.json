@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "saeeew/J-PACF-YOMI-tdt",
+  "slug": "saeeew-j-pacf-yomi-tdt",
+  "author": "saeeew",
+  "url": "https://huggingface.co/saeeew/J-PACF-YOMI-tdt",
+  "created_at": "2026-08-31T23:54:37.000Z",
+  "updated_at": "2026-09-01T00:11:42.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [],
+  "tags": [
+    "nemo",
+    "japanese",
+    "asr",
+    "tdt",
+    "ctc",
+    "contextual-asr",
+    "context-biasing",
+    "homophone",
+    "phoneme",
+    "proper-noun",
+    "jpacf",
+    "yomi",
+    "jp-homophone-bench",
+    "automatic-speech-recognition",
+    "ja",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yomi AI Models | PixAI",
+      "url": "https://pixai.art/en/tags/model/Yomi",
+      "snippet": "#Yomi AI Model Discover AI Art Model in our #Yomi gallery. Uma Musume Pretty Derby Pokémon Hololive Production Fate series The Idolmaster Genshin Impact Blue Archive Touhou Project Original Fate/Grand Order Pretty Cure Honkai Series The Idolmaster Cinderella Girls Honkai: Star Rail My Hero Academia One Piece Vocaloid Indie VTuber Love Live!"
+    },
+    {
+      "title": "GitHub - RikaiDev/yomi: Personal LINE MCP server for Claude and local ...",
+      "url": "https://github.com/RikaiDev/yomi",
+      "snippet": "Yomi is an open-source LINE MCP server for your personal account. Read, reply, send images, and search every conversation from Claude or any local AI agent — without a browser, bot account, or LINE&#x27;s own client. The name reads more than one way. 読み (yomi) — a reading: not just parsing your messages, but reading the situation, the way ..."
+    },
+    {
+      "title": "Yomi - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d3hcqode878c73ejfpm0",
+      "snippet": "Explore Yomi model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "nvidia/parakeet-tdt_ctc-0.6b-ja · Hugging Face",
+      "url": "https://huggingface.co/nvidia/parakeet-tdt_ctc-0.6b-ja",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Yomi — AI Viral Content Engine",
+      "url": "https://yomi.zeeqai.com/",
+      "snippet": "AI-powered trend prediction and viral content generation. Scan trends, generate content, publish to X/Twitter, and measure prediction accuracy."
+    }
+  ]
+}

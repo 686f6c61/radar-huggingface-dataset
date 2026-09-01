@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "einarolafsson/toxoplasma-plaque-segmentation-cpsam",
+  "slug": "einarolafsson-toxoplasma-plaque-segmentation-cpsam",
+  "author": "einarolafsson",
+  "url": "https://huggingface.co/einarolafsson/toxoplasma-plaque-segmentation-cpsam",
+  "created_at": "2026-08-31T20:28:35.000Z",
+  "updated_at": "2026-08-31T20:29:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "cellpose",
+  "languages": [],
+  "tags": [
+    "cellpose",
+    "cpsam",
+    "segmentation",
+    "microscopy",
+    "toxoplasma",
+    "plaque-assay",
+    "spacr",
+    "image-segmentation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1218643107,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models — cellpose 4.2.1-1-ga54cb48 documentation",
+      "url": "https://cellpose.readthedocs.io/en/latest/models.html",
+      "snippet": "cpsam: this is the original CellposeSAM model released in April 2025 using the SAM-ViTL backbone The DINO-based models use an image tile size of 384x384 by default, but this can be changed through the bsize parameter, e.g. you may want to make bsize larger if there are very large or long objects in the image."
+    },
+    {
+      "title": "GitHub - MouseLand/cellpose: a generalist algorithm for cellular ...",
+      "url": "https://github.com/MouseLand/cellpose",
+      "snippet": "a generalist algorithm for cellular segmentation with human-in-the-loop capabilities - MouseLand/cellpose"
+    },
+    {
+      "title": "einarolafsson (Einar Olafsson) - Hugging Face",
+      "url": "https://huggingface.co/einarolafsson",
+      "snippet": "Parasitology, cell biology AI & ML interests Parasitology, cell biology Organizations None yet"
+    },
+    {
+      "title": "cellpose",
+      "url": "http://www.cellpose.org/",
+      "snippet": "Check out full documentation here. For software advice, check out our topic on image.sc. Download the Cellpose dataset here. NEW RELEASE: Cellpose-SAM: superhuman generalization for cellular segmentation Try out *Cellpose-SAM* on our 🤗 HuggingFace space! You can also run Cellpose-SAM here by uploading one PNG or JPG <10 MB. Images are resized to a max size of 224x224 pixels, and runtime is ..."
+    },
+    {
+      "title": "cpsam_v2 · mouseland/cellpose-sam at main - Hugging Face",
+      "url": "https://huggingface.co/mouseland/cellpose-sam/blob/main/cpsam_v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

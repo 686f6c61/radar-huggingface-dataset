@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "audya/techjam-2026-track5",
+  "slug": "audya-techjam-2026-track5",
+  "author": "audya",
+  "url": "https://huggingface.co/audya/techjam-2026-track5",
+  "created_at": "2026-08-31T22:13:15.000Z",
+  "updated_at": "2026-08-31T22:13:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-classification",
+    "ai-generated-image-detection",
+    "robustness",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53562,
+  "storage_human": "53562 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok TechJam 2026: Build with joy, code for change - Devpost",
+      "url": "https://tiktoktechjam2026.devpost.com/",
+      "snippet": "Join TikTok TechJam 2026 and compete for exciting prizes! Fly solo or form a team of up to 5 members to break boundaries, unleash creativity, and showcase your coding capabilities as you build solutions for real-world problems."
+    },
+    {
+      "title": "GitHub - Swetha-aaa/techjam-track5",
+      "url": "https://github.com/Swetha-aaa/techjam-track5",
+      "snippet": "TikTok TechJam 2026, Track 5. Detects AI-generated images and stays accurate after JPEG re-compression, blur, resize, noise, color jitter, and cropping."
+    },
+    {
+      "title": "tiktok-techjam-track5/README.md at master · AnbyFan/tiktok ... - GitHub",
+      "url": "https://github.com/AnbyFan/tiktok-techjam-track5/blob/master/README.md",
+      "snippet": "TikTok TechJam 2026 Track 5 by 三T. Contribute to AnbyFan/tiktok-techjam-track5 development by creating an account on GitHub."
+    },
+    {
+      "title": "LingShu — Robust AIGC Image Detector | TikTok TechJam 2026 Track 5",
+      "url": "https://www.youtube.com/watch?v=uXoq2E4SNJQ",
+      "snippet": "LingShu — Robust AIGC Image Detector TikTok TechJam 2026 Track 5: Robust Detection of AI-Generated Images Under Real-World Transformations LingShu is an AI-generated image detection system ..."
+    },
+    {
+      "title": "2026-track5 - AI CITY CHALLENGE",
+      "url": "https://www.aicitychallenge.org/2026-track5/",
+      "snippet": "2026 Challenge Track Description Track 5: Generative Traffic Video Forecasting This task focuses on leveraging the video modelling capabilities of recent generative models for traffic video forecasting."
+    }
+  ]
+}

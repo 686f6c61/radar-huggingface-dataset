@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "LIA-AvignonUniversity/SENSE",
+  "slug": "lia-avignonuniversity-sense",
+  "author": "LIA-AvignonUniversity",
+  "url": "https://huggingface.co/LIA-AvignonUniversity/SENSE",
+  "created_at": "2025-11-25T16:25:02.000Z",
+  "updated_at": "2026-08-31T22:50:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "speechbrain",
+  "languages": [],
+  "tags": [
+    "speechbrain",
+    "pytorch",
+    "speech",
+    "multilingual",
+    "semantic-embeddings",
+    "speech-embeddings",
+    "w2v-bert",
+    "feature-extraction",
+    "arxiv:2509.12093",
+    "arxiv:2407.00463",
+    "base_model:facebook/w2v-bert-2.0",
+    "base_model:finetune:facebook/w2v-bert-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2322299219,
+  "storage_human": "2.3 GB",
+  "base_model": "facebook/w2v-bert-2.0",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LIA-AvignonUniversity/SENSE · Hugging Face",
+      "url": "https://huggingface.co/LIA-AvignonUniversity/SENSE",
+      "snippet": "LIA-AvignonUniversity / SENSE like 1 Follow Laboratoire Informatique d&#x27;Avignon 13 License:cc0-1.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "LIA-AvignonUniversity (Laboratoire Informatique d&#x27;Avignon)",
+      "url": "https://huggingface.co/LIA-AvignonUniversity",
+      "snippet": "Speech and Language processing Speech recognition, Speaker recognition, Speech translation, Spoken language understanding, Speech synthesis"
+    },
+    {
+      "title": "SENSE models: an open source solution for multilingual and multimodal ...",
+      "url": "https://arxiv.org/pdf/2509.12093v2",
+      "snippet": "Abstract—This paper introduces SENSE (Shared Embedding for N-lingual Speech and tExt), an open-source solution inspired by the SAMU-XLSR framework and conceptually similar to Meta AI&#x27;s SONAR models. These approaches rely on a teacher-student framework to align a self-supervised speech encoder with the language-agnostic continuous representations of a text encoder at the utterance level ..."
+    },
+    {
+      "title": "PDF Modèle SENSE : une solution open source pour les tâches multilingues et ...",
+      "url": "https://talnarchives.atala.org/TALN/TALN-2026/56.pdf",
+      "snippet": "RÉSUMÉ Cet article présente SENSE (Shared Embedding for N-lingual Speech and tExt), une solution open source inspirée du cadre SAMU-XLSR et conceptuellement proche des modèles SONAR de Meta AI. Ces approches reposent sur un cadre teacher-student visant à aligner un encodeur de parole auto- supervisé avec les représentations continues indépendantes de la langue produites par un ..."
+    },
+    {
+      "title": "SENSE models: an open source solution for multilingual and multimodal ...",
+      "url": "https://arxiv.org/html/2509.12093v2",
+      "snippet": "Abstract This paper introduces SENSE (Shared Embedding for N-lingual Speech and tExt), an open-source solution inspired by the SAMU-XLSR framework and conceptually similar to Meta AI&#x27;s SONAR models. These approaches rely on a teacher-student framework to align a self-supervised speech encoder with the language-agnostic continuous representations of a text encoder at the utterance level. We ..."
+    }
+  ]
+}

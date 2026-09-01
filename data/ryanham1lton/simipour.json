@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Simipour",
+  "slug": "ryanham1lton-simipour",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Simipour",
+  "created_at": "2026-08-31T19:51:02.000Z",
+  "updated_at": "2026-08-31T19:52:39.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117909506,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton/Simipour · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Simipour",
+      "snippet": "Ryanham1lton / Simipour like 0 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "Simipour - Illustrious | Illustrious LoRA | Civitai",
+      "url": "https://civitai.com/models/871466/simipour",
+      "snippet": "Gen V water pokemon. Wanted to do this one but finding accurate reference material was pretty difficult. Sometimes the AI Makes the skirt-like part..."
+    },
+    {
+      "title": "Simipour - V1 | Illustrious LoRA | Civitai",
+      "url": "https://civitai.com/models/2049575/simipour",
+      "snippet": "I couldn&#x27;t find one. But then i found one while making this. Why ofcourse..."
+    },
+    {
+      "title": "Simipour｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/model/1854296922547880510",
+      "snippet": "Just created this stunning furry, pokemon, character, simipour anime art with the amazing &#x27;Simipour&#x27; model on PixAI! Search for \"Simipour\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    }
+  ]
+}

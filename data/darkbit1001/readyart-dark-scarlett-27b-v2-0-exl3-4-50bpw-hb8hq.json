@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "darkbit1001/ReadyArt-Dark-Scarlett-27B-v2.0-EXL3-4.50bpw-HB8HQ",
+  "slug": "darkbit1001-readyart-dark-scarlett-27b-v2-0-exl3-4-50bpw-hb8hq",
+  "author": "darkbit1001",
+  "url": "https://huggingface.co/darkbit1001/ReadyArt-Dark-Scarlett-27B-v2.0-EXL3-4.50bpw-HB8HQ",
+  "created_at": "2026-09-01T00:17:15.000Z",
+  "updated_at": "2026-09-01T00:20:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5",
+    "exl3",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:ReadyArt/Dark-Scarlett-27B-v2.0",
+    "base_model:quantized:ReadyArt/Dark-Scarlett-27B-v2.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9172751744,
+  "parameters_human": "9.17B",
+  "storage_bytes": 18365869358,
+  "storage_human": "18.4 GB",
+  "base_model": "ReadyArt/Dark-Scarlett-27B-v2.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReadyArt/Dark-Scarlett-27B-v2.0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Dark-Scarlett-27B-v2.0-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ReadyArt/Dark-Scarlett-27B-v2.0 · Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Dark-Scarlett-27B-v2.0",
+      "snippet": "ReadyArt / Dark-Scarlett-27B-v2.0 like 4 Follow Ready.Art 1.54k Safetensors qwen3_5 roleplay conversational instruct apache-2.0 nsfw adult-content unaligned mature explicit erp License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Dark Scarlett 27B v2.0 (ReadyArt) · Caliper Bench Leaderboard",
+      "url": "https://caliperbench.com/m/dark-scarlett-27b-v2.0/",
+      "snippet": "ReadyArt/Dark-Scarlett-27B-v2. · Qwen3.8 27B ⇄ Compare models ↗ HuggingFace Finetune27B"
+    },
+    {
+      "title": "Dark Scarlett 27B v2.0 Thinking (ReadyArt) — Caliper",
+      "url": "https://caliperbench.com/m/dark-scarlett-27b-v2.0-thinking/",
+      "snippet": "ReadyArt/Dark-Scarlett-27B-v2. · Qwen3.8 27B ⇄ Compare models ↗ HuggingFace Finetune27BReasoning"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/models?other=Other+License",
+      "snippet": "Explore machine learning models. 111 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: Other License Clear all"
+    }
+  ]
+}

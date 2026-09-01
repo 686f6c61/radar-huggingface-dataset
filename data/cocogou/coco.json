@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "CocoGou/Coco",
+  "slug": "cocogou-coco",
+  "author": "CocoGou",
+  "url": "https://huggingface.co/CocoGou/Coco",
+  "created_at": "2026-08-31T21:11:37.000Z",
+  "updated_at": "2026-08-31T21:11:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-01T02:58:21.175Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - coco-research/coco: CoCo Super Intelligence is the ...",
+      "url": "https://github.com/coco-research/coco",
+      "snippet": "CoCo is not a new AI model, and it is not another agent harness. It doesn&#x27;t run a model or an agent loop of its own. It&#x27;s a portable layer of Markdown and YAML that installs into the agent harness you already use — Claude Code, Cursor, Codex CLI, or any AGENTS.md -compatible tool — and upgrades it with an expert advisory board, a skills library, persistent project memory, specialized ..."
+    },
+    {
+      "title": "Coco AI - Search, Connect, Collaborate",
+      "url": "https://coco.rs/",
+      "snippet": "Coco AI is a fully open-source, cross-platform intelligent search and assistant system designed for modern enterprises. It provides a unified search entry point to connect heterogeneous internal and external data sources, integrates large language model capabilities, and empowers teams to access knowledge efficiently, make smarter decisions, and collaborate intelligently."
+    },
+    {
+      "title": "coco ai",
+      "url": "https://www.cocorender.com/",
+      "snippet": "coco ai ai The infinite canvas for AI image creation."
+    },
+    {
+      "title": "Coco AI",
+      "url": "https://cocogen.ai/",
+      "snippet": "Building the future of Design Intelligence Coco AI is building the design intelligence layer for the next generation of visual tools — turning ideas into editable, real-world designs that can be refined, shared, and shipped. Founded by alumni of Google Brain and DeepMind who pioneered image and video generation at Google, we&#x27;re focused on solving the hardest problems in computer vision ..."
+    },
+    {
+      "title": "COCO - Common Objects in Context",
+      "url": "https://cocodataset.org/",
+      "snippet": "What is COCO? COCO is a large-scale object detection, segmentation, and captioning dataset. COCO has several features: Object segmentation Recognition in context Superpixel stuff segmentation 330K images (>200K labeled) 1.5 million object instances 80 object categories 91 stuff categories 5 captions per image 250,000 people with keypoints"
+    }
+  ]
+}

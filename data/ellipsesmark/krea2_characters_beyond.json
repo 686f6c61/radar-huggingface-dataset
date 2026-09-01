@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "EllipsesMark/Krea2_Characters_Beyond",
+  "slug": "ellipsesmark-krea2_characters_beyond",
+  "author": "EllipsesMark",
+  "url": "https://huggingface.co/EllipsesMark/Krea2_Characters_Beyond",
+  "created_at": "2026-08-31T21:29:47.000Z",
+  "updated_at": "2026-08-31T21:29:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 174265946075,
+  "storage_human": "174.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krea 2 Open-Source: RAW and Turbo Image Models",
+      "url": "https://www.krea.ai/krea-2-open-source",
+      "snippet": "The most aesthetic open-source image model Krea 2 Open-Source brings Krea 2, our aesthetic-first model family, into the open with open weights on Hugging Face. Use Turbo for fast, polished text-to-image and RAW when you need the malleable base checkpoint for LoRA training in ComfyUI and beyond."
+    },
+    {
+      "title": "Krea 2: AI Image Foundation Model & Style Control",
+      "url": "https://www.krea.ai/krea-2",
+      "snippet": "Create expressive AI images with Krea 2, Krea AI&#x27;s in-house foundation model for aesthetic diversity, style control, moodboards, and creative workflows."
+    },
+    {
+      "title": "GitHub - krea-ai/krea-2: Official inference code for Krea 2",
+      "url": "https://github.com/krea-ai/krea-2",
+      "snippet": "Krea 2 - an image generation model from Krea AI. API Docs • Hugging Face (RAW) • Hugging Face (TURBO) • Technical Blog This is the official repository for the open version of Krea 2, an image model trained from scratch focused on creative and stylistic exploration. The repository contains inference code and instructions to run the model."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Krea 2 Free AI Image Generator | Text-to-Image & 50 Credits",
+      "url": "https://krea2.co/",
+      "snippet": "Krea 2 is the free AI image generator for text-to-image and image-to-image. Create photoreal and cinematic images from text, references, and moodboards. Get 50 free credits with no card required, then refine aspect ratio and style control."
+    }
+  ]
+}

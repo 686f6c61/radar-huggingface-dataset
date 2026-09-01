@@ -4,8 +4,8 @@
   "slug": "ke96-myawesomemodel-testrepo",
   "author": "Ke96",
   "url": "https://huggingface.co/Ke96/MyAwesomeModel-TestRepo",
-  "created_at": "2026-08-29T00:07:46.000Z",
-  "updated_at": "2026-08-29T00:08:11.000Z",
+  "created_at": "2026-09-01T01:11:50.000Z",
+  "updated_at": "2026-09-01T01:12:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-29T02:22:41.484Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -5,7 +5,7 @@
   "author": "speleoalex",
   "url": "https://huggingface.co/speleoalex/physisml-it-preview",
   "created_at": "2026-08-28T13:57:07.000Z",
-  "updated_at": "2026-08-30T08:28:00.000Z",
+  "updated_at": "2026-08-31T06:31:15.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "safetensors",
+    "gguf",
     "physisml",
     "curriculum-learning",
     "from-scratch",
@@ -27,14 +28,15 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 140,
+  "downloads_30d": 719,
   "trending_score": 0,
   "parameters": 23589376,
   "parameters_human": "23.6M",
-  "storage_bytes": 207161400,
-  "storage_human": "207 MB",
+  "storage_bytes": 382871144,
+  "storage_human": "383 MB",
   "base_model": null,
   "formats": [
+    "gguf",
     "safetensors"
   ],
   "is_conversational": false,

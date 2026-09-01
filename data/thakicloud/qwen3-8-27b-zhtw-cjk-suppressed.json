@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/Qwen3.8-27B-zhTW-cjk-suppressed",
+  "slug": "thakicloud-qwen3-8-27b-zhtw-cjk-suppressed",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/Qwen3.8-27B-zhTW-cjk-suppressed",
+  "created_at": "2026-09-01T00:26:44.000Z",
+  "updated_at": "2026-09-01T02:45:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "traditional-chinese",
+    "vocabulary-pruning",
+    "language-confusion",
+    "code-switching",
+    "recipe",
+    "zh",
+    "arxiv:2507.14894",
+    "arxiv:2604.16235",
+    "arxiv:2604.26553",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "ThakiCloud/Qwen3.8-27B-NVFP4-FP8ATTN · Hugging Face",
+      "url": "https://huggingface.co/ThakiCloud/Qwen3.8-27B-NVFP4-FP8ATTN",
+      "snippet": "Mixed-precision quantization of Qwen/Qwen3.8-27B: NVFP4 (4-bit) on the MLP stack, FP8 (8-bit) on every attention projection.22.90 GB on disk against the 55.59 GB bf16 original — a 2.43x reduction."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B: The Ultimate Guide to Running It Locally",
+      "url": "https://linas.substack.com/p/qwen3-8-27b-local-guide",
+      "snippet": "The Ultimate Guide to Qwen3.8-27B 🤖 How to run Alibaba&#x27;s 27B open AI model locally: a step-by-step guide to the settings, hardware requirements, & prompts that deliver frontier AI results for founders, builders, and investors."
+    },
+    {
+      "title": "Model releases - QwenCloud",
+      "url": "https://docs.qwencloud.com/changelog/models",
+      "snippet": "Qwen3.8-Flash is the latest multimodal model from the Qwen family, combining powerful reasoning and generation with remarkable speed. It natively supports a million-token context window, allowing it to process lengthy documents, entire codebases, and complex conversations in a single pass."
+    }
+  ]
+}

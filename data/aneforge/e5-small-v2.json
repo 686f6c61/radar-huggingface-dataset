@@ -5,7 +5,7 @@
   "author": "aneforge",
   "url": "https://huggingface.co/aneforge/e5-small-v2",
   "created_at": "2026-08-30T23:13:46.000Z",
-  "updated_at": "2026-08-30T23:13:48.000Z",
+  "updated_at": "2026-08-31T02:43:54.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 21,
   "trending_score": 0,
   "parameters": 33360512,
   "parameters_human": "33.4M",

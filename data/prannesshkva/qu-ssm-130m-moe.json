@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Prannesshkva/QU-SSM-130M-MoE",
+  "slug": "prannesshkva-qu-ssm-130m-moe",
+  "author": "Prannesshkva",
+  "url": "https://huggingface.co/Prannesshkva/QU-SSM-130M-MoE",
+  "created_at": "2026-08-31T23:11:58.000Z",
+  "updated_at": "2026-09-01T01:24:41.000Z",
+  "license": "cc-by-nc-nd-4.0",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qu_ssm_moe",
+    "state-space-model",
+    "ssm",
+    "quasi-unitary",
+    "moe",
+    "mixture-of-experts",
+    "lie-group",
+    "multimodal",
+    "causal-lm",
+    "text-generation",
+    "custom_code",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "license:cc-by-nc-nd-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134893056,
+  "parameters_human": "134.9M",
+  "storage_bytes": 539594368,
+  "storage_human": "540 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prannesshkva/Ael-504M · Hugging Face",
+      "url": "https://huggingface.co/Prannesshkva/Ael-504M",
+      "snippet": "Ael-504M is an original sub-billion parameter foundation model engineered for high-throughput, on-device multimodal reasoning and cross-sensory synthesis. Modern frontier architectures often force a compromise between the continuous linear efficiency of State Space Models (SSMs) and the quadratic expressive precision of Multi-Head Attention (MHA)."
+    },
+    {
+      "title": "Prannesshkva (Prannessh KVA) - Hugging Face",
+      "url": "https://huggingface.co/Prannesshkva/datasets",
+      "snippet": "User profile of Prannessh KVA on Hugging Face"
+    },
+    {
+      "title": "Prannessh KVA prannesshkva - GitHub",
+      "url": "https://github.com/prannesshkva",
+      "snippet": "Highly driven AI and Software Engineering student with proven expertise bridging Data Science, Backend Infrastructure, and Distributed Systems. - prannesshkva"
+    },
+    {
+      "title": "mamba/README.md at main · state-spaces/mamba · GitHub",
+      "url": "https://github.com/state-spaces/mamba/blob/main/README.md?plain=1",
+      "snippet": "Mamba is a new state space model architecture showing promising performance on information-dense data such as language modeling, where previous subquadratic models fall short of Transformers."
+    },
+    {
+      "title": "DeepSeek MoE: Architecture, Models, and How It Works",
+      "url": "https://deepseekai.guide/models/deepseek-moe/",
+      "snippet": "DeepSeek MoE explained: fine-grained experts, shared experts, and how V4-Pro and V4-Flash use it. Compare specs and pricing — read the full breakdown."
+    }
+  ]
+}

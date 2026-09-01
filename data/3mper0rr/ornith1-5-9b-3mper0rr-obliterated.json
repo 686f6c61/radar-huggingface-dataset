@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "3MPER0RR/Ornith1.5-9B-3MPER0RR-obliterated",
+  "slug": "3mper0rr-ornith1-5-9b-3mper0rr-obliterated",
+  "author": "3MPER0RR",
+  "url": "https://huggingface.co/3MPER0RR/Ornith1.5-9B-3MPER0RR-obliterated",
+  "created_at": "2026-08-31T23:51:04.000Z",
+  "updated_at": "2026-09-01T00:08:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710445,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-9B at main - Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OBLITERATUS/Ornith-1.5-9B-OBLITERATED · Hugging Face",
+      "url": "https://huggingface.co/OBLITERATUS/Ornith-1.5-9B-OBLITERATED",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "ornith-1.5 - ollama.com",
+      "url": "https://ollama.com/library/ornith-1.5",
+      "snippet": "Rather than relying on a fixed set of human-curated tasks and manually designed harnesses, Ornith-1.5 continuously generates new training tasks, discovers effective strategies for solving them, and improves the policy through reinforcement learning. For more details on the task, harness, and rollout reward design, please refer to our blog."
+    },
+    {
+      "title": "ai/ornith-1.5 - Docker Image",
+      "url": "https://hub.docker.com/r/ai/ornith-1.5",
+      "snippet": "This model card documents Ornith-1.5-35B-A3B, the mid-size mixture-of-experts member of the Ornith-1.5 family. It activates only ~3B parameters per token, yet significantly outperforms its similar-sized peer Qwen 3.6-35B across all coding and agentic benchmarks, and outperforms dense models such as Gemma 4-31B and Muse Glimmer-30B by wide ..."
+    }
+  ]
+}

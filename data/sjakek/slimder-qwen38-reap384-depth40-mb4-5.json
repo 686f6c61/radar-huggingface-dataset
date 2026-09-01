@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "sjakek/slimder-qwen38-reap384-depth40-mb4-5",
+  "slug": "sjakek-slimder-qwen38-reap384-depth40-mb4-5",
+  "author": "sjakek",
+  "url": "https://huggingface.co/sjakek/slimder-qwen38-reap384-depth40-mb4-5",
+  "created_at": "2026-08-31T21:45:41.000Z",
+  "updated_at": "2026-08-31T22:07:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp_text",
+    "text-generation",
+    "qwen4_exp",
+    "mixture-of-experts",
+    "depth-pruning",
+    "conversational",
+    "base_model:sjakek/slimder-qwen38-reap384-s0",
+    "base_model:finetune:sjakek/slimder-qwen38-reap384-s0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 131026159680,
+  "parameters_human": "131.03B",
+  "storage_bytes": 262072468037,
+  "storage_human": "262.1 GB",
+  "base_model": "sjakek/slimder-qwen38-reap384-s0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Wassimyounes01/qwen38-uncensored: Local Qwen 3.8 27B ...",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Check GPU offloading: ollama ps — if you see a CPU/GPU split, the model is partially on CPU Force all layers to GPU: Already set in Modelfile.mac (num_gpu 999), but verify with ollama show qwen3.8:27b-uncensored Reduce context: QWEN_NUM_CTX=4096 node examples/chat.cjs \"test\" — smaller KV cache = less memory Switch to MLX: node bin/install.cjs --mlx — 30-50% faster on Apple Silicon Close ..."
+    },
+    {
+      "title": "Qwen3.8 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen38",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · morgan/qwen38-27b-mtp-r20k-lr3-q4-g64-q2-rerank at main",
+      "url": "https://huggingface.co/morgan/qwen38-27b-mtp-r20k-lr3-q4-g64-q2-rerank/blob/main/README.md?code=true",
+      "snippet": "Instructions to use morgan/qwen38-27b-mtp-r20k-lr3-q4-g64-q2-rerank with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    }
+  ]
+}

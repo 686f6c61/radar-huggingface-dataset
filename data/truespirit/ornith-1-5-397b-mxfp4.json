@@ -5,7 +5,7 @@
   "author": "truespirit",
   "url": "https://huggingface.co/truespirit/Ornith-1.5-397B-MXFP4",
   "created_at": "2026-08-29T15:38:18.000Z",
-  "updated_at": "2026-08-30T15:54:05.000Z",
+  "updated_at": "2026-08-31T07:33:46.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 211,
+  "downloads_30d": 441,
   "trending_score": 0,
   "parameters": 210124400624,
   "parameters_human": "210.12B",

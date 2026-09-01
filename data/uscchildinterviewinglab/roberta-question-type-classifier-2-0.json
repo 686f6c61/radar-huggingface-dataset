@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "USCchildinterviewinglab/roberta-question-type-classifier-2.0",
+  "slug": "uscchildinterviewinglab-roberta-question-type-classifier-2-0",
+  "author": "USCchildinterviewinglab",
+  "url": "https://huggingface.co/USCchildinterviewinglab/roberta-question-type-classifier-2.0",
+  "created_at": "2026-07-11T19:10:43.000Z",
+  "updated_at": "2026-08-31T21:10:48.000Z",
+  "license": "bsd-3-clause-clear",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "question-classification",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:bsd-3-clause-clear",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124650246,
+  "parameters_human": "124.7M",
+  "storage_bytes": 498625128,
+  "storage_human": "499 MB",
+  "base_model": "FacebookAI/roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RoBERTa · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/roberta",
+      "snippet": "Explore Hugging Face&#x27;s RoBERTa, an advanced AI model for natural language processing, with detailed documentation and open-source resources."
+    },
+    {
+      "title": "How to Use RoBERTa Model: BERT&#x27;s Optimized Version Explained",
+      "url": "https://markaicode.com/roberta-model-guide-bert-optimized/",
+      "snippet": "Learn RoBERTa model implementation with code examples. Master BERT&#x27;s optimized version for NLP tasks with step-by-step tutorials and performance tips."
+    },
+    {
+      "title": "RoBERTa - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.44.0/en/model_doc/roberta",
+      "snippet": "RoBERTa Model with a span classification head on top for extractive question-answering tasks like SQuAD (a linear layers on top of the hidden-states output to compute span start logits and span end logits)."
+    },
+    {
+      "title": "transformers/src/transformers/models/roberta/modeling_roberta ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/src/transformers/models/roberta/modeling_roberta.py",
+      "snippet": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. - transformers/src/transformers/models/roberta/modeling_roberta.py at main · huggingface/transformers"
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/roberta.md at main - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/roberta.md",
+      "snippet": "RoBERTa improves BERT with new pretraining objectives, demonstrating BERT was undertrained and training design is important. The pretraining objectives include dynamic masking, sentence packing, larger batches and a byte-level BPE tokenizer. You can find all the original RoBERTa checkpoints under the Facebook AI organization."
+    }
+  ]
+}

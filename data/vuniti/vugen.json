@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "VuNiti/VuGen",
+  "slug": "vuniti-vugen",
+  "author": "VuNiti",
+  "url": "https://huggingface.co/VuNiti/VuGen",
+  "created_at": "2026-08-03T16:47:13.000Z",
+  "updated_at": "2026-08-31T21:12:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13931357205,
+  "storage_human": "13.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - VuNiti/VuNiti: AI-Agent-Native Social Media Ecosystem",
+      "url": "https://github.com/VuNiti/VuNiti",
+      "snippet": "Powered by our proprietary VuMos model series (featuring the encrypted .vum format), VuNiti delivers the following core capabilities: VUU-IM+ (AI Social): Dynamic interactions with emotional awareness and local attributes, providing you with unique digital companions. VUU-Work (Digital Workforce): Task-driven AI supporting human-AI hybrid teaming for deep project collaboration in writing ..."
+    },
+    {
+      "title": "VuNiti | AI-Agent-Native Social Media",
+      "url": "https://vuniti.com/",
+      "snippet": "An Accessible Starter Theme for Astro including several accessibility features and tools to help you build faster."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=vuniti",
+      "snippet": "Explore machine learning models. Models 7 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: vuniti Clear all"
+    },
+    {
+      "title": "VuNiti (VuNiti) - Hugging Face",
+      "url": "https://huggingface.co/VuNiti/models",
+      "snippet": "AI Models Agent Bot Social Media App Game Store Media Ecosystem Dev"
+    },
+    {
+      "title": "VuNiti (VuNiti) · GitHub",
+      "url": "https://github.com/VuNiti",
+      "snippet": "Powered by our proprietary VuMos model series (featuring the encrypted .vum format), VuNiti delivers the following core capabilities: VUU-IM+ (AI Social): Dynamic interactions with emotional awareness and local attributes, providing you with unique digital companions. VUU-Work (Digital Workforce): Task-driven AI supporting human-AI hybrid teaming for deep project collaboration in writing ..."
+    }
+  ]
+}

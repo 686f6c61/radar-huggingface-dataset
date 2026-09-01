@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "huchukato/favs",
+  "slug": "huchukato-favs",
+  "author": "huchukato",
+  "url": "https://huggingface.co/huchukato/favs",
+  "created_at": "2025-02-03T03:23:56.000Z",
+  "updated_at": "2026-08-31T20:57:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 129,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 325736498249,
+  "storage_human": "325.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huchukato/favs · Hugging Face",
+      "url": "https://huggingface.co/huchukato/favs",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huchukato/favs at main - Hugging Face",
+      "url": "https://huggingface.co/huchukato/favs/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huchukato - GitHub",
+      "url": "https://github.com/huchukato",
+      "snippet": "Forked from jupo-ai/comfy-ex-tagcomplete Advanced ComfyUI extension with a1111-sd-webui-tagcomplete style wildcard sub-selection, intelligent tag completion, and comprehensive CSV support for professional AI art workflows."
+    },
+    {
+      "title": "huchukato/favs at main - Hugging Face",
+      "url": "https://huggingface.co/huchukato/favs/tree/main/ckpt",
+      "snippet": "huchukato / favs like 0 License:mit Model card FilesFiles and versions xet Community main favs /ckpt 147 GB 1 contributor History:22 commits huchukato Delete ckpt/.DS_Store 2a828f4 verifiedabout 2 months ago mergeUpload WAI-MAG-EXPR_00001_.safetensors3 months ago animpinc.safetensors 6.94 GB xet Upload animpinc.safetensorsabout 2 months ago"
+    },
+    {
+      "title": "GitHub - huchukato/ComfyUI-QwenVL-Mod: ComfyUI-QwenVL custom node ...",
+      "url": "https://github.com/huchukato/ComfyUI-QwenVL-Mod",
+      "snippet": "The ComfyUI-QwenVL custom node integrates powerful Qwen-VL series of vision-language models (LVLMs) from Alibaba Cloud, including latest Qwen3-VL, plus GGUF backends and text-only Qwen3 support. This advanced node enables seamless multimodal AI capabilities within your ComfyUI workflows, allowing for efficient text generation, image understanding, and video analysis."
+    }
+  ]
+}

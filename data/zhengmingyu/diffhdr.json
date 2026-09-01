@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ZhengmingYu/DiffHDR",
+  "slug": "zhengmingyu-diffhdr",
+  "author": "ZhengmingYu",
+  "url": "https://huggingface.co/ZhengmingYu/DiffHDR",
+  "created_at": "2026-08-31T07:33:04.000Z",
+  "updated_at": "2026-08-31T23:05:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "safetensors",
+    "diffsynth",
+    "diffusion",
+    "video-to-video",
+    "image-to-image",
+    "hdr",
+    "ldr-to-hdr",
+    "inverse-tone-mapping",
+    "panorama",
+    "wan2.1",
+    "vace",
+    "arxiv:2604.06161",
+    "base_model:Wan-AI/Wan2.1-VACE-14B",
+    "base_model:adapter:Wan-AI/Wan2.1-VACE-14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 124498728,
+  "storage_human": "124 MB",
+  "base_model": "Wan-AI/Wan2.1-VACE-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DiffHDR: Re-Exposing LDR Videos with Video Diffusion Models",
+      "url": "https://arxiv.org/html/2604.06161v1",
+      "snippet": "By operating in Log-Gamma color space, DiffHDR leverages spatio-temporal generative priors from a pretrained video diffusion model to synthesize plausible HDR radiance in over- and underexposed regions while recovering the continuous scene radiance of the quantized pixels."
+    },
+    {
+      "title": "GitHub Pages - Zhengming Yu",
+      "url": "https://yzmblog.github.io/",
+      "snippet": "MonoHuman: Animatable Human Neural Field from Monocular Video CVPR 2023 Zhengming Yu, Wei Cheng, Xian Liu, Wayne Wu, Kwan-Yee Lin Model digital humans from monocular video for novel view synthesis and animation."
+    },
+    {
+      "title": "DiffHDR: Re-Exposing LDR Videos with Video Diffusion Models",
+      "url": "https://www.aimodels.fyi/papers/arxiv/diffhdr-re-exposing-ldr-videos-video-diffusion",
+      "snippet": "DiffHDR operates by conditioning a video diffusion model on LDR input frames. The architecture takes a sequence of LDR frames and learns to predict corresponding HDR frames through an iterative refinement process. The core mechanism involves diffusion, where the model starts with pure noise and gradually refines it across multiple steps."
+    },
+    {
+      "title": "DiffHDR: Re-Exposing LDR Videos with Video Diffusion Models",
+      "url": "https://huggingface.co/papers/2604.06161",
+      "snippet": "DiffHDR: Re-Exposing LDR Videos with Video Diffusion Models ... Zhengming Yu , Li Ma , Mingming He ,"
+    },
+    {
+      "title": "DiffHDR: Re-Exposing LDR Videos with Video Diffusion Models",
+      "url": "https://www.weekinpapers.com/paper/2604.06161v1",
+      "snippet": "The authors created a method called DiffHDR to turn regular videos with limited brightness detail into videos with richer lighting, closer to what the human eye sees. They treat this as a problem of filling in lost light information by using a special kind of AI model trained on lots of videos. Their approach works by working inside a color space that helps handle brightness better and can ..."
+    }
+  ]
+}

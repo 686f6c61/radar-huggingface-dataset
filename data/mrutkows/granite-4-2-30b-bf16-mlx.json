@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mrutkows/granite-4.2-30b-bf16-mlx",
+  "slug": "mrutkows-granite-4-2-30b-bf16-mlx",
+  "author": "mrutkows",
+  "url": "https://huggingface.co/mrutkows/granite-4.2-30b-bf16-mlx",
+  "created_at": "2026-09-01T00:28:23.000Z",
+  "updated_at": "2026-09-01T02:06:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "granite",
+    "language",
+    "granite-4.2",
+    "base_model:ibm-granite/granite-4.2-30b",
+    "base_model:finetune:ibm-granite/granite-4.2-30b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58553608112,
+  "storage_human": "58.6 GB",
+  "base_model": "ibm-granite/granite-4.2-30b",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Granite 4.2 - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
+    },
+    {
+      "title": "salohcin714/granite-4.2-30b-bf16-mlx · Hugging Face",
+      "url": "https://huggingface.co/salohcin714/granite-4.2-30b-bf16-mlx",
+      "snippet": "salohcin714 / granite-4.2-30b-bf16-mlx like 0 Text Generation MLX Safetensors 12 languages granite language granite-4.1 apple-silicon conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Granite - IBM",
+      "url": "https://www.ibm.com/granite",
+      "snippet": "IBM Granite is a family of open, trusted AI models for business, offering efficient language, vision, speech and guardrail models you can customize and deploy."
+    },
+    {
+      "title": "nightmedia/granite-4.2-30b-mxfp8-mlx · Hugging Face",
+      "url": "https://huggingface.co/nightmedia/granite-4.2-30b-mxfp8-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-4.2-language-models · GitHub",
+      "url": "https://github.com/ibm-granite/granite-4.2-language-models",
+      "snippet": "The Granite 4.2 familiy features dense decoder-only architectures in three sizes — 3B, 8B, and 30B, with quantized variants per model size. The Granite 4.2 dense models are post-trained on top of Granite 4.1 base models. Please refer to the Granite 4.1 blog for details on the pre-training phase."
+    }
+  ]
+}

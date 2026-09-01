@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ads2009/turkish-ai-text-detector-distilberturk-v3",
+  "slug": "ads2009-turkish-ai-text-detector-distilberturk-v3",
+  "author": "ads2009",
+  "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-distilberturk-v3",
+  "created_at": "2026-08-31T20:49:41.000Z",
+  "updated_at": "2026-08-31T21:38:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 68090114,
+  "parameters_human": "68.1M",
+  "storage_bytes": 544745968,
+  "storage_human": "545 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Detect & Humanize Your Text - Best AI Detector & Humanizer",
+      "url": "https://duckduckgo.com/y.js?ad_domain=undetectable.ai&ad_provider=bingv7aa&ad_type=txad&click_metadata=Q5sVgmJbPBVQiy9tOi9ay07piNvyRCXc8lCd5Vh62zw0ZWU_B07vq3tk5JAtoKsrrIGbyf05bGxhp8O8QIJzXqOn3SJSwZEpFsS1SRgygnG1kpz0apLn249djMG9gwz2GGO1H_iFZ0TlxN7%2DlQ5VL_I85I6pXCybcMKxX7UO6Zw.cowj3Qi4cZHOD3EkqUYzsw&rut=429d629bbd3bf0d5de1875f1bff5076d2bfe4b6ba80a8da3aa053d84a5626081&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De838rdE28ygelpAhWevCdDOzVUCUwJrALLTLz67o5yQrEoPhvitnKxkSd9r65XMXuLsEdTRSKXa7RztO%2DNFzVocbES%2Deeo335uI42d2O6glrFASLC3Um8nS8UgWSExCOuyw1twwJUDarTKxtP%2DetI%2Ddrn8DloQiZJbRA%2D3qvdwOjxYHxtn8kpoOeI7tlVpR%2D3KdqabCI8pJgFv_XFMuHdGDKBs3C4%26u%3DaHR0cHMlM2ElMmYlMmZ0cnkudW5kZXRlY3RhYmxlLmFpJTJmZGV0ZWN0LWh1bWFuaXplJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkc2VhcmNoJTI2aF9jYW1wYWlnbl9pZCUzZDU2OTQ2MzI4MCUyNmJuZ19pZCUzZDExODE5NzY4MjYxOTk0MzMlMjZoX2FkX2lkJTNkNzM4NzM3NTc5MzEwMjUlMjZ1dG1fc291cmNlJTNkbWljcm9zb2Z0JTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZEJfU2VhcmNoX1dXX0JyYW5kJTI2dXRtX2NvbnRlbnQlM2QlMjU1QkFNUExBJTI1NUQlMjUyMCUyNTVCRVhBVEFTJTI1NUQlMjZ1dG1fdGVybSUzZHVuZGV0ZWN0YWJsZSUyNTIwZGV0ZWN0b3IlMjUyMGFpJTI2bXNjbGtpZCUzZGUwOTg1ZDdiZTdhYzEwMjM1ZGI0MzdlZTE1YmFmOWNj%26rlid%3De0985d7be7ac10235db437ee15baf9cc&vqd=4-319854897467397042556834564221020045103&iurl=%7B1%7DIG%3D894FF4D3D8E84E3E9AAE98267CD2252E%26CID%3D3D795634AD7E6DD93EAE41F2AC096C38%26ID%3DDevEx%2C5037.1",
+      "snippet": "Worried your text may be flagged as AI? Check it with our AI Detector, then humanize it. Avoid AI flags. Make AI-written text sound natural with Undetectable AI. Try it for free."
+    },
+    {
+      "title": "AI Detector by JustDone - Humanize Your AI Text",
+      "url": "https://duckduckgo.com/y.js?ad_domain=justdone.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=HIqD%2DKJ%2Dm3bVMugXV%2DayDGkaZSMK6GtyBmEpL3sAAB4AoQ_PnZKT2nf3Jh4QXeaep7QyybxkSwVelScduo7fwAose9MvaTRpDloHAFTnUzQ9w4PUqzbJMRJzgtmZGQiNSTMerDY1noFuahR8hiJaRX2cUvU5I9sjebe7hcClifQ.Y_rSxeT8ELamIiEyp_FtRw&rut=1bd8b08f1d7c89fde38897b69fecddf459a3a29fb8b359bfc8c86905179fd5a5&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8oRZjyGhkOPVOAUeXPWsM4TVUCUyjSBL1IzlrQXklzQFzFF%2Db9gPEW9Mk6eOiu1QBr4_6SV%2DSXbNv08Jldi0t2idNsethFHX_KkZAWbg3qXXaRmdDCpB7XJEHaoYYBC_FNm%2DelqjrM1Ygyw0wh1%2DaH_6uZc%2DV0fbrQSa%2DPJuK3fW6SMghntDRpntoWBFaYQD%2Di99SNCFpcB_SaFXYKB%2DfGpS%2DFRA%26u%3DaHR0cHMlM2ElMmYlMmZqdXN0ZG9uZS5jb20lMmZhaS1kZXRlY3RvciUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZDQ4NTQ4NjMyMSUyNnV0bV9jb250ZW50JTNkMTIzMTQ1NDA4NTY0OTQxNCUyNnV0bV9hZHNldF9pZCUzZDEyMzE0NTQwODU2NDk0MTQlMjZ1dG1fdGVybSUzZGFpJTI1MjB0b29sJTI1MjB0byUyNTIwY2hlY2slMjUyMGlmJTI1MjB0ZXh0JTI1MjBpcyUyNTIwYWklMjUyMGdlbmVyYXRlZCUyNnV0bV9uZXR3b3JrJTNkcyUyNnV0bV9tYXRjaHR5cGUlM2RlJTI2bXNjbGtpZCUzZDhmZDA0OGY4NDA2MzE3Y2QyYzdkMjI2ZGIyNzVhMGY5%26rlid%3D8fd048f8406317cd2c7d226db275a0f9&vqd=4-324714395198842729732268869192739203700&iurl=%7B1%7DIG%3D894FF4D3D8E84E3E9AAE98267CD2252E%26CID%3D3D795634AD7E6DD93EAE41F2AC096C38%26ID%3DDevEx%2C5042.1",
+      "snippet": "Get Quick And Accurate Scans For AI Plagiarism. Ideal For Writers. Try Now. AI Tool For Writing: Fast, Reliable & User-friendly. Perfect For Writers & Professionals"
+    },
+    {
+      "title": "ads2009/turkish-ai-text-detector-distilberturk · Hugging Face",
+      "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-distilberturk",
+      "snippet": "Instructions to use ads2009/turkish-ai-text-detector-distilberturk with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - SaKinLord/turkish-ai-detector: Turkish AI text detector ...",
+      "url": "https://github.com/SaKinLord/turkish-ai-detector",
+      "snippet": "Turkish AI Detector Turkish AI text detector runtime using language-model curvature signals and a document-level meta-classifier."
+    },
+    {
+      "title": "ads2009 (hayatbazen) - Hugging Face",
+      "url": "https://huggingface.co/ads2009",
+      "snippet": "ads2009/english-ai-text-detector-distilbert Text Classification • 67M•Updated 17 days ago• 83"
+    }
+  ]
+}

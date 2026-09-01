@@ -5,7 +5,7 @@
   "author": "AliceThirty",
   "url": "https://huggingface.co/AliceThirty/GLM-5.3-Flash-UNCENSORED-GGUF",
   "created_at": "2026-08-28T22:52:47.000Z",
-  "updated_at": "2026-08-30T23:20:01.000Z",
+  "updated_at": "2026-08-31T19:56:26.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,13 +20,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 3,
-  "downloads_30d": 141,
+  "likes": 4,
+  "downloads_30d": 420,
   "trending_score": 0,
   "parameters": 320759404382,
   "parameters_human": "320.76B",
-  "storage_bytes": 800983950048,
-  "storage_human": "801.0 GB",
+  "storage_bytes": 1041514415936,
+  "storage_human": "1041.5 GB",
   "base_model": "dealignai/GLM-5.3-Flash-UNCENSORED-FP8",
   "formats": [
     "gguf"

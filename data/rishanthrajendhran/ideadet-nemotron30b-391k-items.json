@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rishanthrajendhran/ideadet-nemotron30b-391k-items",
+  "slug": "rishanthrajendhran-ideadet-nemotron30b-391k-items",
+  "author": "rishanthrajendhran",
+  "url": "https://huggingface.co/rishanthrajendhran/ideadet-nemotron30b-391k-items",
+  "created_at": "2026-08-31T20:03:53.000Z",
+  "updated_at": "2026-08-31T20:04:14.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "ai-detection",
+    "lora",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1544348352,
+  "storage_human": "1.5 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rishanthrajendhran (Rishanth Rajendhran) - Hugging Face",
+      "url": "https://huggingface.co/rishanthrajendhran",
+      "snippet": "models1 rishanthrajendhran/VeriFastScore Text Generation • Updated about 17 hours ago• 25"
+    },
+    {
+      "title": "rishanthrajendhran (Rishanth Rajendhran) - Hugging Face",
+      "url": "https://huggingface.co/rishanthrajendhran/datasets",
+      "snippet": "rishanthrajendhran&#x27;s datasets2 Sort: Recently updated rishanthrajendhran/POLARIS Viewer •Updated 22 days ago•1.57k• 83"
+    },
+    {
+      "title": "nemotron-3-nano-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-nano-30b-a3b/modelcard",
+      "snippet": "Model Overview Model Developer: NVIDIA Corporation Model Dates: September 2025 - December 2025 Data Freshness: The post-training data has a cutoff date of November 28, 2025. The pre-training data has a cutoff date of June 25, 2025. Description Nemotron-3-Nano-30B-A3B is a large language model (LLM) trained from scratch by NVIDIA, and designed as a unified model for both reasoning and non ..."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "Rishanth Rajendhran",
+      "url": "https://rishanthrajendhran.github.io/",
+      "snippet": "My research focuses on analysing and improving generations by large language models, particularly long-context reasoning, factuality, and reinforcement learning from human/AI feedback."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dwightware4/sae-pythia-160m-32k-3seeds",
+  "slug": "dwightware4-sae-pythia-160m-32k-3seeds",
+  "author": "dwightware4",
+  "url": "https://huggingface.co/dwightware4/sae-pythia-160m-32k-3seeds",
+  "created_at": "2026-08-31T19:25:55.000Z",
+  "updated_at": "2026-08-31T19:58:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sparsify",
+  "languages": [],
+  "tags": [
+    "sparsify",
+    "sparse-autoencoder",
+    "interpretability",
+    "sae",
+    "pythia",
+    "arxiv:2501.16615",
+    "base_model:EleutherAI/pythia-160m",
+    "base_model:finetune:EleutherAI/pythia-160m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 604383216,
+  "storage_human": "604 MB",
+  "base_model": "EleutherAI/pythia-160m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EleutherAI/pythia-160m · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/pythia-160m",
+      "snippet": "The Pythia Scaling Suite is a collection of models developed to facilitate interpretability research (see paper). It contains two sets of eight models of sizes 70M, 160M, 410M, 1B, 1.4B, 2.8B, 6.9B, and 12B. For each size, there are two models: one trained on the Pile, and one trained on the Pile after the dataset has been globally deduplicated. All 8 model sizes are trained on the exact same ..."
+    },
+    {
+      "title": "EleutherAI/sae-pythia-160m-32k · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/sae-pythia-160m-32k",
+      "snippet": "These SAEs were trained on the outputs of each of the MLPs in EleutherAI/pythia-160m. We used 8.2 billion tokens from the Pile training set at a context length of 2049."
+    },
+    {
+      "title": "GitHub - OE-GOD/sae-pythia-160m: Sparse autoencoder for Pythia-160M ...",
+      "url": "https://github.com/OE-GOD/sae-pythia-160m",
+      "snippet": "Sparse Autoencoder on Pythia-160M Layer 6 Reconstruction Is Not Replication — small-scale mechanistic-interpretability study that cross-validates a TopK sparse autoencoder (SAE) across width, random seed, and architecture on the residual stream at layer 6 of Pythia-160M."
+    },
+    {
+      "title": "GitHub - EleutherAI/pythia: The hub for EleutherAI&#x27;s work on ...",
+      "url": "https://github.com/EleutherAI/pythia",
+      "snippet": "We reran the entire model suite with these inconsistencies fixed and the original runs are available under the name EleutherAI/pythia-160m-v0. See the Pythia paper for further details on how the v0 models differ from the main suite."
+    },
+    {
+      "title": "Pythia 160M — Hardware Requirements & Compatibility | llmrun",
+      "url": "https://llmrun.dev/model/eleutherai-pythia-160m",
+      "snippet": "Chat Pythia 160M is part of EleutherAI&#x27;s Pythia training suite, a collection of models trained on the same data in the same order at multiple scales to enable rigorous scientific research into how language models learn. At 160 million parameters, it is the smallest model in the suite and runs on virtually any hardware."
+    }
+  ]
+}

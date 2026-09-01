@@ -5,7 +5,7 @@
   "author": "vanijonny",
   "url": "https://huggingface.co/vanijonny/barbados_htr_model",
   "created_at": "2026-08-30T04:31:43.000Z",
-  "updated_at": "2026-08-30T21:31:44.000Z",
+  "updated_at": "2026-09-01T02:40:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 10107968784,
-  "storage_human": "10.1 GB",
+  "storage_bytes": 17711699460,
+  "storage_human": "17.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

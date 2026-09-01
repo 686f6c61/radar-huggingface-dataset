@@ -5,7 +5,7 @@
   "author": "that-fallen-angel",
   "url": "https://huggingface.co/that-fallen-angel/fallen-angel_gemma2-9b-finetune",
   "created_at": "2026-08-27T17:18:37.000Z",
-  "updated_at": "2026-08-28T13:08:11.000Z",
+  "updated_at": "2026-08-31T09:09:04.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,12 +21,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 75,
+  "downloads_30d": 78,
   "trending_score": 0,
   "parameters": 9241705984,
   "parameters_human": "9.24B",
-  "storage_bytes": 11522116032,
-  "storage_human": "11.5 GB",
+  "storage_bytes": 17283174048,
+  "storage_human": "17.3 GB",
   "base_model": null,
   "formats": [
     "gguf"

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "abahofk-45/Recede-Ultra4",
+  "slug": "abahofk-45-recede-ultra4",
+  "author": "abahofk-45",
+  "url": "https://huggingface.co/abahofk-45/Recede-Ultra4",
+  "created_at": "2026-08-31T22:29:32.000Z",
+  "updated_at": "2026-08-31T22:29:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11422650,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - abahof45/recede",
+      "url": "https://github.com/abahof45/recede",
+      "snippet": "Contribute to abahof45/recede development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - abahof45/recede-code: its a vibe coder for coders free",
+      "url": "https://github.com/abahof45/recede-code",
+      "snippet": "its a vibe coder for coders free. Contribute to abahof45/recede-code development by creating an account on GitHub."
+    },
+    {
+      "title": "Study Details | NCT07025304 | Post-Market Clinical Study to Evaluate ...",
+      "url": "https://clinicaltrials.gov/study/NCT07025304",
+      "snippet": "The study is a prospective, multi-center, post-market clinical study to evaluate the safety and effectiveness of REFLEX ULTRA 45 for the coblation inferior turbinate reduction in China."
+    },
+    {
+      "title": "John6666/big-love-xl4-sdxl · Hugging Face",
+      "url": "https://huggingface.co/John6666/big-love-xl4-sdxl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/?t=arch%3Asrformer",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    }
+  ]
+}

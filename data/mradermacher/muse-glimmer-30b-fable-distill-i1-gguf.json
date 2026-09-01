@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Muse-Glimmer-30B-Fable-Distill-i1-GGUF",
   "created_at": "2026-08-31T11:43:47.000Z",
-  "updated_at": "2026-08-31T12:09:09.000Z",
+  "updated_at": "2026-08-31T15:00:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -47,8 +47,8 @@
   "trending_score": 0,
   "parameters": 27854794240,
   "parameters_human": "27.85B",
-  "storage_bytes": 50794244992,
-  "storage_human": "50.8 GB",
+  "storage_bytes": 303373836032,
+  "storage_human": "303.4 GB",
   "base_model": "armand0e/Muse-Glimmer-30B-Fable-Distill",
   "formats": [
     "gguf"

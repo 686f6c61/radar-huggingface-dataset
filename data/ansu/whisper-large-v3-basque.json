@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Ansu/whisper-large-v3-basque",
+  "slug": "ansu-whisper-large-v3-basque",
+  "author": "Ansu",
+  "url": "https://huggingface.co/Ansu/whisper-large-v3-basque",
+  "created_at": "2026-08-29T16:45:09.000Z",
+  "updated_at": "2026-09-01T02:34:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 1609879040,
+  "parameters_human": "1.61B",
+  "storage_bytes": 28979192736,
+  "storage_human": "29.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ansu/whisper-large-v3-basque-lr1e-5 · Hugging Face",
+      "url": "https://huggingface.co/Ansu/whisper-large-v3-basque-lr1e-5",
+      "snippet": "Ansu / whisper-large-v3-basque-lr1e-5 like 0 Safetensors whisper Generated from Trainer License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new whisper-large-v3-basque-lr1e-5 Model description Intended uses & limitations Training and evaluation data Training procedure Training hyperparameters Training results ..."
+    },
+    {
+      "title": "Ansu (Andoni Sudupe) - Hugging Face",
+      "url": "https://huggingface.co/Ansu/datasets",
+      "snippet": "Recent Activity published a modelabout 12 hours ago Ansu/whisper-large-v3-basque-lr1e-5 updated a model1 day ago Ansu/whisper-large-v2-basque-lr1e-5-freezeFalse updated a model2 days ago Ansu/whisper-medium-basque-lr1e-5-freezeFalse View all activity"
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely depending on the language."
+    },
+    {
+      "title": "GitHub - cxh-tech/whisper-large-v3",
+      "url": "https://github.com/cxh-tech/whisper-large-v3",
+      "snippet": "Whisper is a state-of-the-art model for automatic speech recognition (ASR) and speech translation, proposed in the paper Robust Speech Recognition via Large-Scale Weak Supervision by Alec Radford et al. from OpenAI. Trained on >5M hours of labeled data, Whisper demonstrates a strong ability to generalise to many datasets and domains in a zero-shot setting. Whisper large-v3 has the same ..."
+    },
+    {
+      "title": "whisper-large-v3 · Models",
+      "url": "https://www.modelscope.cn/models/mwei23/whisper-large-v3/summary",
+      "snippet": "Whisper Whisper is a pre-trained model for automatic speech recognition (ASR) and speech translation. Trained on 680k hours of labelled data, Whisper models demonstrate a strong ability to generalise to many datasets and domains without the need for fine-tuning. Whisper was proposed in the paper Robust Speech Recognition via Large-Scale Weak Supervision by Alec Radford et al. from OpenAI. The ..."
+    }
+  ]
+}

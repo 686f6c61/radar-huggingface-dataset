@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/sfm_filtered_e2e_alignment-0k_1k_2k_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-sfm_filtered_e2e_alignment-0k_1k_2k_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-0k_1k_2k_weightedavg_merge",
+  "created_at": "2026-09-01T00:27:32.000Z",
+  "updated_at": "2026-09-01T00:28:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856253440,
+  "parameters_human": "6.86B",
+  "storage_bytes": 13712553184,
+  "storage_human": "13.7 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yuhengtu-bytedance/sfm_filtered_e2e_alignment-0k_1k_2k_merge · Discussions",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-0k_1k_2k_merge/discussions",
+      "snippet": "Instructions to use yuhengtu-bytedance/sfm_filtered_e2e_alignment-0k_1k_2k_merge with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "sfm-filtered-e2e-alignment-4k-5k-6k-avg - Hugging Face",
+      "url": "https://huggingface.co/yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sfm_filtered_e2e_alignment-0k_1k_2k_merge - friendli.ai",
+      "url": "https://friendli.ai/models/yuhengtu-bytedance/sfm_filtered_e2e_alignment-0k_1k_2k_merge",
+      "snippet": "Deploy sfm_filtered_e2e_alignment-0k_1k_2k_merge with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "sfm-filtered-e2e-alignment-4k-5k-6k-avg - friendli.ai",
+      "url": "https://friendli.ai/models/yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg",
+      "snippet": "Deploy sfm-filtered-e2e-alignment-4k-5k-6k-avg with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - bytedance/Lance: A 3B-active-parameter native unified ...",
+      "url": "https://github.com/bytedance/Lance/tree/main/",
+      "snippet": "A 3B-active-parameter native unified multimodal model for image and video understanding, generation, and editing. - bytedance/Lance"
+    }
+  ]
+}

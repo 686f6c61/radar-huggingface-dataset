@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Ooriginador/Phi-4-ArkCompact-1.58bit",
+  "slug": "ooriginador-phi-4-arkcompact-1-58bit",
+  "author": "Ooriginador",
+  "url": "https://huggingface.co/Ooriginador/Phi-4-ArkCompact-1.58bit",
+  "created_at": "2026-08-31T21:15:56.000Z",
+  "updated_at": "2026-08-31T21:31:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "arkheion",
+    "ternary",
+    "1.58bit",
+    "base-3",
+    "ark-compact",
+    "rust",
+    "rocm",
+    "hip",
+    "wave32",
+    "sovereign-ai",
+    "text-generation",
+    "phi-4",
+    "pt",
+    "en",
+    "base_model:microsoft/phi-4",
+    "base_model:finetune:microsoft/phi-4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3862501076,
+  "storage_human": "3.9 GB",
+  "base_model": "microsoft/phi-4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/phi-4 · Hugging Face",
+      "url": "https://huggingface.co/microsoft/phi-4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Phi Open Models - Small Language Models | Microsoft Azure",
+      "url": "https://azure.microsoft.com/en-us/products/phi/",
+      "snippet": "Phi open model family Phi models offer cost-effective, high-performance AI solutions at the edge, pushing the boundaries of generative AI."
+    },
+    {
+      "title": "PDF Phi-4 Technical Report - microsoft.com",
+      "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2024/12/P4TechReport.pdf",
+      "snippet": "1 Introduction Recent advancements in Large Language Models (LLMs) have shown that significant improvements in data quality can rival, and sometimes surpass, the performance gains traditionally achieved by scaling compute with model and dataset size. Building on the success of the Phi family [GZA+23, LBE+23, JBA+ 23, AAA+24], we introduce phi-4, a 14-billion parameter model that further ..."
+    },
+    {
+      "title": "Phi-4 Technical Report - Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/publication/phi-4-technical-report/",
+      "snippet": "We present phi-4, a 14-billion parameter language model developed with a training recipe that is centrally focused on data quality. Unlike most language models, where pre-training is based primarily on organic data sources such as web content or code, phi-4 strategically incorporates synthetic data ..."
+    },
+    {
+      "title": "microsoft/Phi-4-mini-instruct · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Phi-4-mini-instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

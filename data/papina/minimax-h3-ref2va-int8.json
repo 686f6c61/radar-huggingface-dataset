@@ -5,7 +5,7 @@
   "author": "Papina",
   "url": "https://huggingface.co/Papina/MiniMax-H3-ref2va-int8",
   "created_at": "2026-08-31T01:34:14.000Z",
-  "updated_at": "2026-08-31T01:34:21.000Z",
+  "updated_at": "2026-08-31T07:03:07.000Z",
   "license": "minimax-h3-community-license-agreement",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-video",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "diffusers",
+    "safetensors",
     "reference-to-audio-video",
     "synchronized-audio-video",
     "quantized",
@@ -25,15 +26,16 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 76649643327,
+  "storage_human": "76.6 GB",
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
-    "diffusers"
+    "diffusers",
+    "safetensors"
   ],
   "is_conversational": false,
   "gated": false,

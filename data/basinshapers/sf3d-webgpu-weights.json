@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "BasinShapers/sf3d-webgpu-weights",
+  "slug": "basinshapers-sf3d-webgpu-weights",
+  "author": "BasinShapers",
+  "url": "https://huggingface.co/BasinShapers/sf3d-webgpu-weights",
+  "created_at": "2026-08-31T20:25:30.000Z",
+  "updated_at": "2026-08-31T20:27:47.000Z",
+  "license": "stability-ai-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-3d",
+  "library": "webgpu",
+  "languages": [],
+  "tags": [
+    "webgpu",
+    "3d-generation",
+    "image-to-3d",
+    "stable-fast-3d",
+    "base_model:stabilityai/stable-fast-3d",
+    "base_model:finetune:stabilityai/stable-fast-3d",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2285308688,
+  "storage_human": "2.3 GB",
+  "base_model": "stabilityai/stable-fast-3d",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "needle-tools/SF3D-webgpu · Hugging Face",
+      "url": "https://huggingface.co/needle-tools/SF3D-webgpu",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "needle-tools/SF3D-webgpu at main - Hugging Face",
+      "url": "https://huggingface.co/needle-tools/SF3D-webgpu/tree/main",
+      "snippet": "needle-tools / SF3D-webgpu like 0 Follow Needle 1 Image-to-3D ONNX onnxruntime stable-fast-3d webgpu License:stabilityai-ai-community Model card FilesFiles and versions xet Community Copy to bucket new main SF3D-webgpu 1.73 GB Ctrl+K Ctrl+K 1 contributor History:2 commits hybridherbst Publish browser-compatible SF3D ONNX runtime 3bcc84e ..."
+    },
+    {
+      "title": "GitHub - lyonsno/sf3d-webgpu: Stable Fast 3D (SF3D) single-image 3D ...",
+      "url": "https://github.com/lyonsno/sf3d-webgpu",
+      "snippet": "Stable Fast 3D (SF3D) single-image 3D mesh generation running entirely in WebGPU compute shaders - lyonsno/sf3d-webgpu"
+    },
+    {
+      "title": "GitHub - lyonsno/sf3d-webgpu: Stable Fast 3D (SF3D) single-image 3D ...",
+      "url": "https://github.com/lyonsno/sf3d-webgpu/blob/main/",
+      "snippet": "SF3D WebGPU Single-image 3D mesh generation running entirely in WebGPU compute shaders. A browser port of Stability AI&#x27;s Stable Fast 3D."
+    },
+    {
+      "title": "SF3D: Stable Fast 3D Mesh Reconstruction with UV-unwrapping and ...",
+      "url": "https://stable-fast-3d.github.io/",
+      "snippet": "We present Stable Fast 3D (SF3D) - a feed-forward 3D asset generation model , which generates UV-unwrapped, textured models with material parameters and delit albedo in under a second. Utilizing the Large Reconstruction Model (LRM) as its foundation, SF3D achieves impressive performance, reconstructing detailed, textured meshes in just 0.5 seconds. Unlike traditional approaches, SF3D is ..."
+    }
+  ]
+}

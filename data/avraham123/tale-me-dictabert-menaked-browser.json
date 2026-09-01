@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "avraham123/tale-me-dictabert-menaked-browser",
+  "slug": "avraham123-tale-me-dictabert-menaked-browser",
+  "author": "avraham123",
+  "url": "https://huggingface.co/avraham123/tale-me-dictabert-menaked-browser",
+  "created_at": "2026-08-31T22:41:12.000Z",
+  "updated_at": "2026-08-31T23:04:56.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "int8",
+    "hebrew",
+    "diacritization",
+    "browser",
+    "he",
+    "base_model:dicta-il/dictabert-large-char-menaked",
+    "base_model:quantized:dicta-il/dictabert-large-char-menaked",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 317980253,
+  "storage_human": "318 MB",
+  "base_model": "dicta-il/dictabert-large-char-menaked",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dicta-il/dictabert · Hugging Face",
+      "url": "https://huggingface.co/dicta-il/dictabert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dicta-il/dictabert - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/306031",
+      "snippet": "This is the base model pretrained with the masked-language-modeling objective. Sample usage: ... Citation If you use DictaBERT in your research, please cite DictaBERT: A State-of-the-Art BERT Suite for Modern Hebrew BibTeX: ... License Shield: This work is licensed under a Creative Commons Attribution 4.0 International License."
+    },
+    {
+      "title": "dicta-il/dictabert-large-char-menaked · Hugging Face",
+      "url": "https://huggingface.co/dicta-il/dictabert-large-char-menaked",
+      "snippet": "DictaBERT-large-char-menaked: An open-source BERT-based model for adding diacritiziation marks (\"nikud\") to Hebrew texts This model is a fine-tuned version of DictaBERT-large-char, dedicated to the task of adding nikud (diacritics) to Hebrew text."
+    },
+    {
+      "title": "dictabert-large-char-menaked huggingface.co api & dicta-il dictabert ...",
+      "url": "https://www.toolify.ai/ai-model/dicta-il-dictabert-large-char-menaked",
+      "snippet": "DictaBERT-large-char-menaked: An open-source BERT-based model for adding diacritiziation marks (\"nikud\") to Hebrew texts This model is a fine-tuned version of DictaBERT-large-char , dedicated to the task of adding nikud (diacritics) to Hebrew text."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

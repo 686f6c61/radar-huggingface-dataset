@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LarryAIDraw/E5A5B3E78E8BE6B389E4B98BE7_C8Lp",
+  "slug": "larryaidraw-e5a5b3e78e8be6b389e4b98be7_c8lp",
+  "author": "LarryAIDraw",
+  "url": "https://huggingface.co/LarryAIDraw/E5A5B3E78E8BE6B389E4B98BE7_C8Lp",
+  "created_at": "2026-09-01T01:38:08.000Z",
+  "updated_at": "2026-09-01T01:38:43.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 456491108,
+  "storage_human": "456 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LarryAIDraw/VQWMNNGVMYQAKWFDTRRQQX2P00 · Hugging Face",
+      "url": "https://huggingface.co/LarryAIDraw/VQWMNNGVMYQAKWFDTRRQQX2P00",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LarryAIDraw/character2020E4B889E8A792E6B4B22020E9BAA6_H4N9 - Hugging Face",
+      "url": "https://huggingface.co/LarryAIDraw/character2020E4B889E8A792E6B4B22020E9BAA6_H4N9",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LarryAIDraw/Robin_v1 · Hugging Face",
+      "url": "https://huggingface.co/LarryAIDraw/Robin_v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LarryAIDraw/EvelynPDXL · Hugging Face",
+      "url": "https://huggingface.co/LarryAIDraw/EvelynPDXL",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LarryAIDraw/RSC · Hugging Face",
+      "url": "https://huggingface.co/LarryAIDraw/RSC",
+      "snippet": "LarryAIDraw / RSC like 0 License:creativeml-openrail-m Model card FilesFiles and versions xet Community Copy to bucket new"
+    }
+  ]
+}

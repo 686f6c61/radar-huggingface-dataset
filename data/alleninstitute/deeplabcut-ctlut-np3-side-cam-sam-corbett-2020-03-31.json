@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "AllenInstitute/deeplabcut-ctlut-np3-side-cam-sam-corbett-2020-03-31",
+  "slug": "alleninstitute-deeplabcut-ctlut-np3-side-cam-sam-corbett-2020-03-31",
+  "author": "AllenInstitute",
+  "url": "https://huggingface.co/AllenInstitute/deeplabcut-ctlut-np3-side-cam-sam-corbett-2020-03-31",
+  "created_at": "2026-08-31T21:42:11.000Z",
+  "updated_at": "2026-08-31T23:39:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "pose-estimation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 293107132,
+  "storage_human": "293 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - DeepLabCut/DeepLabCut: Official implementation of DeepLabCut ...",
+      "url": "https://github.com/DeepLabCut/DeepLabCut",
+      "snippet": "Official implementation of DeepLabCut: Markerless pose estimation of user-defined features with deep learning for all animals incl. humans - DeepLabCut/DeepLabCut"
+    },
+    {
+      "title": "Welcome! — DeepLabCut",
+      "url": "https://deeplabcut.github.io/DeepLabCut/README.html",
+      "snippet": "Welcome! 👋 # DeepLabCut™️ is a toolbox for state-of-the-art markerless pose estimation of animals performing various behaviors. As long as you can see (label) what you want to track, you can use this toolbox, as it is animal and object agnostic. Read a short development and application summary below. Installation # Please click the link above for all the information you need to get ..."
+    },
+    {
+      "title": "GitHub - MartinPrele/deeplabcut",
+      "url": "https://github.com/MartinPrele/deeplabcut",
+      "snippet": "💜 The DeepLabCut Model Zoo launches SuperAnimals, see more here. 💜 DeepLabCut supports multi-animal pose estimation! maDLC is out of beta/rc mode and beta is deprecated, thanks to the testers out there for feedback!"
+    },
+    {
+      "title": "DeepLabCut User Guide — DeepLabCut",
+      "url": "https://deeplabcut.github.io/DeepLabCut/docs/main-workflows/user-guide.html",
+      "snippet": "Conditional top-down tracking For conditional top-down (CTD) models, tracking can be performed inside the model, using temporal context from previous frames to condition predictions on the current frame. This is a distinct mechanism from auto_track. Pass ctd_tracking=True to deeplabcut.analyze_videos when using any model whose name starts with ..."
+    },
+    {
+      "title": "deeplabcut · PyPI",
+      "url": "https://pypi.org/project/deeplabcut/",
+      "snippet": "May 2023: The Model Zoo is now fully integrated into the DeepLabCut GUI, making it easier than ever to access a variety of pre-trained models. Check out the accompanying paper: SuperAnimal pretrained pose estimation models for behavioral analysis by Ye et al. December 2022: DeepLabCut hits 450,000 downloads and 2.3 is the new stable release"
+    }
+  ]
+}

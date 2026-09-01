@@ -5,7 +5,7 @@
   "author": "dianavdavidson",
   "url": "https://huggingface.co/dianavdavidson/mms-1b-all_iv_hindi_vaani_62200_hinglish_mixed_scripts_alldata_lr_1e-4_hin_epochs_100_FT",
   "created_at": "2026-08-30T21:29:26.000Z",
-  "updated_at": "2026-08-31T12:28:28.000Z",
+  "updated_at": "2026-08-31T14:31:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 964793329,
   "parameters_human": "964.8M",
-  "storage_bytes": 165950379812,
-  "storage_human": "166.0 GB",
+  "storage_bytes": 189106246076,
+  "storage_human": "189.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

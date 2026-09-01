@@ -5,7 +5,7 @@
   "author": "skblv",
   "url": "https://huggingface.co/skblv/resnet50-cholect50-verbs",
   "created_at": "2026-08-28T20:08:45.000Z",
-  "updated_at": "2026-08-28T20:08:52.000Z",
+  "updated_at": "2026-08-31T16:11:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -20,6 +20,7 @@
     "multi-label-classification",
     "image-classification",
     "arxiv:2109.03223",
+    "arxiv:2603.27341",
     "license:apache-2.0",
     "region:us"
   ],

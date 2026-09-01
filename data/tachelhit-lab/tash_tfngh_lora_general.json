@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tachelhit-lab/tash_tfngh_lora_general",
+  "slug": "tachelhit-lab-tash_tfngh_lora_general",
+  "author": "tachelhit-lab",
+  "url": "https://huggingface.co/tachelhit-lab/tash_tfngh_lora_general",
+  "created_at": "2026-08-31T19:09:13.000Z",
+  "updated_at": "2026-08-31T19:09:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/kaggle/working/hf_cache/models--facebook--nllb-200-distilled-600M/snapshots/f8d333a098d19b4fd9a8b18f94170487ad3f821d",
+    "lora",
+    "transformers",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71749011,
+  "storage_human": "72 MB",
+  "base_model": "facebook/nllb-200-distilled-600Md",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ysfusf/tash_tfngh_lora_general · Hugging Face",
+      "url": "https://huggingface.co/ysfusf/tash_tfngh_lora_general",
+      "snippet": "Instructions to use ysfusf/tash_tfngh_lora_general with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use ysfusf/tash_tfngh_lora_general with PEFT:"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "220+ Free LoRAs & Counting | Civitai",
+      "url": "https://civitai.com/articles/11647/220-free-loras-and-counting",
+      "snippet": "Support My AI Journey: Follow Me on Medium to Help Fuel Future Creations 🚀 Over the past few years, I&#x27;ve dedicated my time, effort, and passion to pushing the boundaries of AI in creative fields. From generating artwork to refining LoRA models, my journey has been one of exploration, innovation, and community-driven contribution. To date, I have created and shared over 220 LoRA models on ..."
+    },
+    {
+      "title": "The Ultimate LoRA Tagging Guide: From Dirty Image to Perfect Model",
+      "url": "https://civitai.com/articles/29347/the-ultimate-lora-tagging-guide-from-dirty-image-to-perfect-model",
+      "snippet": "The Ultimate LoRA Tagging Guide: From Dirty Image to Perfect Model If you&#x27;re reading this, you already know: 80% of a LoRA&#x27;s success isn&#x27;t in the GPU—it&#x27;s in the dataset. You can have the finest parameters in the world, but if your tags are a mess or your images are noisy, your model will learn garbage. This guide is your practical \"bible.\" We&#x27;re going to dissect what, how, and with which ..."
+    },
+    {
+      "title": "Open adapter registry for fine-tuned models and LoRA checkpoints ...",
+      "url": "https://modelforgelab.cloud/",
+      "snippet": "ModelForgeLab lets you version, share, and serve LoRA adapters and fine-tuned checkpoints — train new adapters from your own datasets, preview results live in the playground, and pull any artifact with a single CLI command."
+    }
+  ]
+}

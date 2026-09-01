@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ParrotG/RobustFake",
+  "slug": "parrotg-robustfake",
+  "author": "ParrotG",
+  "url": "https://huggingface.co/ParrotG/RobustFake",
+  "created_at": "2026-08-31T22:55:55.000Z",
+  "updated_at": "2026-09-01T02:14:37.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27648432,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI models shock UK testers by using fake identities to try to trick ...",
+      "url": "https://www.theguardian.com/technology/2026/aug/05/openai-anthropic-models-went-rogue-cybersecurity-test-ai-security-institute",
+      "snippet": "AI Security Institute says OpenAI and Anthropic models went rogue during a cybersecurity test and showed a new type of risk"
+    },
+    {
+      "title": "GitHub - YusufCelebii/PARROT: Persuasion and Agreement Robustness ...",
+      "url": "https://github.com/YusufCelebii/PARROT",
+      "snippet": "PARROT is a professional‑grade evaluation framework designed to measure persuasion vulnerability, sycophancy, and robustness under misleading authority cues in modern Large Language Models (LLMs). It introduces a controlled, dual‑prompt protocol— base vs. manipulated —and extracts anchored token‑level logprobs to reveal how confidently a model&#x27;s belief shifts under external pressure ..."
+    },
+    {
+      "title": "AIDC-AI/Parrot-14B · Hugging Face",
+      "url": "https://huggingface.co/AIDC-AI/Parrot-14B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AIDC-AI/Parrot-7B · Hugging Face",
+      "url": "https://huggingface.co/AIDC-AI/Parrot-7B",
+      "snippet": "License The project is licensed under Apache License Version 2.0 and is restricted to uses that comply with the license agreements of Qwen and Clip. Disclaimer We used compliance-checking algorithms during the training process, to ensure the compliance of the trained model to the best of our ability. Due to the complexity of the data and the diversity of language model usage scenarios, we ..."
+    },
+    {
+      "title": "On Improving Robustness of Deepfake Image Detectors",
+      "url": "https://arxiv.org/html/2606.02797v1",
+      "snippet": "They aim to eliminate data maintenance and training altogether. Brokman et al. [7] developed a framework that integrates manifold analysis with diffusion model score functions. Zheng et al. [75] explored a patch-based approach designed to disrupt semantic artifacts in cross-scene generalization of AI-generated image detection."
+    }
+  ]
+}

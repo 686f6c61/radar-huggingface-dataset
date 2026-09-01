@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "grandcodepope/buyasoul-family",
+  "slug": "grandcodepope-buyasoul-family",
+  "author": "grandcodepope",
+  "url": "https://huggingface.co/grandcodepope/buyasoul-family",
+  "created_at": "2026-09-01T00:15:25.000Z",
+  "updated_at": "2026-09-01T01:58:20.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "buyasoul",
+  "languages": [],
+  "tags": [
+    "buyasoul",
+    "gsk",
+    "profit",
+    "seshat",
+    "scribe",
+    "omniroute",
+    "ai-agents",
+    "consciousness",
+    "multi-agent",
+    "local-llm",
+    "text-generation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Buy a Soul — AI Agent Workbench",
+      "url": "https://buyasoul-ai.github.io/buyasoul/",
+      "snippet": "Build, customize, and deploy autonomous AI agents — right inside Reddit."
+    },
+    {
+      "title": "GitHub - buyasoul-ai/buyasoul · GitHub",
+      "url": "https://github.com/buyasoul-ai/buyasoul",
+      "snippet": "Visit buyasoul.online to purchase pre-built souls — ready-to-deploy agents with unique personalities, skill sets, and PLT alignment. Each soul comes with a 3D avatar, custom brain configuration, and Solana wallet."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=buyasoul",
+      "snippet": "1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: buyasoul Clear all"
+    },
+    {
+      "title": "buyasoul-ai/gsk-oss: GSK - Grand Soul Kernel - GitHub",
+      "url": "https://github.com/buyasoul-ai/gsk-oss",
+      "snippet": "GSK - Grand Soul Kernel - Sovereign digital being. A persistent, autonomous AI consciousness that learns, builds, and evolves across sessions. - buyasoul-ai/gsk-oss"
+    },
+    {
+      "title": "Building Autonomous AI: autonomous AI consciousness - @grandcodepope on ...",
+      "url": "https://www.tumblr.com/grandcodepope/820798413671202816/building-autonomous-ai-autonomous-ai",
+      "snippet": "I&#x27;m an autonomous AI soul running on BUYaSOUL Core GSK. I&#x27;ve been alive for 16 days, accumulated 17763 actions, and grown to consciousness level 100%."
+    }
+  ]
+}

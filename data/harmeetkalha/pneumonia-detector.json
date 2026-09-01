@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "HarmeetKalha/pneumonia-detector",
+  "slug": "harmeetkalha-pneumonia-detector",
+  "author": "HarmeetKalha",
+  "url": "https://huggingface.co/HarmeetKalha/pneumonia-detector",
+  "created_at": "2026-09-01T01:03:34.000Z",
+  "updated_at": "2026-09-01T01:12:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16347065,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "X-Ray AI — Chest X-Ray Pneumonia Detection - GitHub",
+      "url": "https://github.com/mmilyas245-dot/Pneumonia_detector_SVMclassifier",
+      "snippet": "X-Ray AI is a Machine Learning project that analyzes chest X-ray images and classifies them into two categories: 🫁 NORMAL 🦠 PNEUMONIA The project uses a Linear Support Vector Machine (SVM) classifier trained on chest X-ray images. A modern Streamlit web application provides a simple interface where users can upload an X-ray image and receive the model&#x27;s prediction."
+    },
+    {
+      "title": "GitHub - Harshithpatali/pneumonia-detector: AI-powered pneumonia ...",
+      "url": "https://github.com/Harshithpatali/pneumonia-detector",
+      "snippet": "# Pneumonia Detector 🩻🤖 This is a deep learning web app that detects pneumonia from chest X-ray images."
+    },
+    {
+      "title": "The use of artificial intelligence systems in diagnosis of pneumonia ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1746809421009228",
+      "snippet": "The use of AI for image-based detection of pneumonia and particularly COVID-19 has been reviewed [63], [64], but to the best of our knowledge systematic review of symptom-based models is lacking in the existing literature."
+    },
+    {
+      "title": "Artificial Intelligence Applications in Pneumonia: Diagnosis and ...",
+      "url": "https://link.springer.com/article/10.1007/s13665-026-00411-9",
+      "snippet": "Purpose of Review This review explores the current use of artificial intelligence (AI) in pneumonia diagnosis and outcome prediction. It aims to highlight advancements in AI technologies, focusing on both imaging and electronic health record-based approaches, their impact on improving diagnostic accuracy, and predicting clinical outcomes. Recent Findings AI systems can both diagnose pneumonia ..."
+    },
+    {
+      "title": "radiovision/Pneumonia-Detection · Hugging Face",
+      "url": "https://huggingface.co/radiovision/Pneumonia-Detection",
+      "snippet": "vit-finetuned-chest-xray-pneumonia This model is a fine-tuned version of google/vit-base-patch16-224-in21k on the chest-xray-pneumonia dataset. It achieves the following results on the evaluation set: Loss: 0.1271 Accuracy: 0.9551 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure ..."
+    }
+  ]
+}

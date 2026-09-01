@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jay-Lab/ChronoNano1.0-10M",
+  "slug": "jay-lab-chrononano1-0-10m",
+  "author": "Jay-Lab",
+  "url": "https://huggingface.co/Jay-Lab/ChronoNano1.0-10M",
+  "created_at": "2026-08-31T21:08:35.000Z",
+  "updated_at": "2026-08-31T21:26:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "pl"
+  ],
+  "tags": [
+    "onnx",
+    "text-classification",
+    "en",
+    "pl",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95811877,
+  "storage_human": "96 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jay-ai-lab/jay-ai-lab · GitHub",
+      "url": "https://github.com/jay-ai-lab/jay-ai-lab",
+      "snippet": "Jay AI Engineer building intelligent applications — LLMs, agents, RAG, and ML systems."
+    },
+    {
+      "title": "GitHub - FlashLabs-AI-Corp/FlashLabs-Chroma: Worlds first open-source ...",
+      "url": "https://github.com/FlashLabs-AI-Corp/FlashLabs-Chroma",
+      "snippet": "Chroma 1.0 is an advanced multimodal model developed by FlashLabs. It is designed to understand and generate content across multiple modalities, including text and audio. As a virtual human model, Chroma possesses the ability to process auditory inputs and respond with both text and synthesized ..."
+    },
+    {
+      "title": "Pokee-Isaac 28B | Pokee API",
+      "url": "https://console.pokee.ai/model",
+      "snippet": "Pokee-Isaac 28B v0 A 10M-token context efficient agentic model. Isaac reasons, plans, and uses tools across context windows up to 10M tokens, under a compute budget small enough to serve inside a VPC, on customer premises, or on a device. Every figure below was measured by Pokee AI in a single controlled environment, for Isaac and for every baseline alike, unless marked otherwise."
+    },
+    {
+      "title": "Arena AI: The Official AI Ranking & LLM Leaderboard",
+      "url": "https://arena.ai/",
+      "snippet": "Chat, compare, vote for the world&#x27;s best AI models. Join the community shaping the public leaderboard for LLMs, image, and code models through real-world evaluation."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 123 Estimated models among 406 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

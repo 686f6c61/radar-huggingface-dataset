@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ziadakee55/masar-asr-engine",
+  "slug": "ziadakee55-masar-asr-engine",
+  "author": "ziadakee55",
+  "url": "https://huggingface.co/ziadakee55/masar-asr-engine",
+  "created_at": "2026-08-31T19:19:52.000Z",
+  "updated_at": "2026-08-31T19:22:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 174881004,
+  "storage_human": "175 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open ASR Leaderboard - a Hugging Face Space by hf-audio",
+      "url": "https://huggingface.co/spaces/hf-audio/open_asr_leaderboard",
+      "snippet": "📐 The 🤗 Open ASR Leaderboard evaluates open-source and proprietary speech recognition models on English and multiple European languages. We report the Average WER (⬇️ lower the better) and RTFx (⬆️ higher the better). Models are ranked based on their Average WER, from lowest to highest."
+    },
+    {
+      "title": "A review of the best ASR engines and the models powering them ... - Gladia",
+      "url": "https://www.gladia.io/blog/a-review-of-the-best-asr-engines-and-the-models-powering-them-in-2024",
+      "snippet": "Review of the best ASR engines in 2023 and the models powering them Through the last decade, ASR systems have evolved to achieve unprecedented accuracy, an ability to process hours of speech in minutes across multiple languages, and enriched with audio intelligence features that derive valuable insights from transcripts."
+    },
+    {
+      "title": "GitHub - xzf-thu/Mega-ASR: First foundation ASR built for the real ...",
+      "url": "https://github.com/xzf-thu/Mega-ASR",
+      "snippet": "Mega-ASR: Towards In-the-Wild^2 Speech Recognition via Scaling Up Real-world Acoustic Simulation We introduce MEGA-ASR, the first foundation ASR model to target full-scenario robust speech recognition in the wild through systematic training on 7 atomic acoustic conditions and 54 compound acoustic scenarios."
+    },
+    {
+      "title": "3 Best Open-Source ASR Models Compared: Whisper, wav2vec 2.0, Kaldi ...",
+      "url": "https://deepgram.com/learn/benchmarking-top-open-source-speech-models",
+      "snippet": "Explore the top 3 open-source speech models, including Kaldi, wav2letter++, and OpenAI&#x27;s Whisper, trained on 700,000 hours of speech. Discover insights on usability, accuracy, and speed. Click to find the right ASR model for your needs!"
+    },
+    {
+      "title": "Gladia - Best open-source speech-to-text models in 2026",
+      "url": "https://www.gladia.io/blog/best-open-source-speech-to-text-models",
+      "snippet": "8. SpeechBrain Not a model — a full speech AI toolkit: SpeechBrain is an open-source PyTorch-based toolkit for building speech processing pipelines. Rather than providing a single model, it offers training recipes, pre-trained models, and modular components for ASR, speaker diarization, speech enhancement, text-to-speech, and more."
+    }
+  ]
+}

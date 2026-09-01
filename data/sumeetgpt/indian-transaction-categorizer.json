@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Sumeetgpt/indian-transaction-categorizer",
+  "slug": "sumeetgpt-indian-transaction-categorizer",
+  "author": "Sumeetgpt",
+  "url": "https://huggingface.co/Sumeetgpt/indian-transaction-categorizer",
+  "created_at": "2026-09-01T01:34:35.000Z",
+  "updated_at": "2026-09-01T01:36:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "bert",
+    "sentence-transformers",
+    "text-classification",
+    "generated_from_setfit_trainer",
+    "finance",
+    "india",
+    "upi",
+    "en",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90894911,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sumeetgpt (Sumeet Gupta) - Hugging Face",
+      "url": "https://huggingface.co/Sumeetgpt",
+      "snippet": "User profile of Sumeet Gupta on Hugging Face"
+    },
+    {
+      "title": "PDF Transaction Categorization using Machine Learning",
+      "url": "https://ijrpr.com/uploads/V6ISSUE5/IJRPR45425.pdf",
+      "snippet": "Transaction categorization is a part of financial management system, hence enabling detailed analysis of spending patterns, aiding fraud detection and permitting personalized financial advice."
+    },
+    {
+      "title": "GitHub - Neeraj4094/transaction_categorizer_ai",
+      "url": "https://github.com/Neeraj4094/transaction_categorizer_ai",
+      "snippet": "Contribute to Neeraj4094/transaction_categorizer_ai development by creating an account on GitHub."
+    },
+    {
+      "title": "Categorize Bank Statement Transactions with AI",
+      "url": "https://receiptsai.com/tools/bank-statement-categorizer",
+      "snippet": "Automatically categorize bank statement transactions with AI. Review expense, income, transfer, fee, and subscription categories before export."
+    },
+    {
+      "title": "Bank Transaction Categorization with Machine Learning - Neontri",
+      "url": "https://neontri.com/blog/ai-transaction-categorization/",
+      "snippet": "AI-based transaction categorization uses machine learning models to analyze transaction attributes such as merchant name, transaction description, amount patterns, and historical behavior."
+    }
+  ]
+}

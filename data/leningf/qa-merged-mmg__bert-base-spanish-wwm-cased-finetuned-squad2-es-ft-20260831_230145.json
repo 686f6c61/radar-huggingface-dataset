@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "LeninGF/qa-merged-MMG__bert-base-spanish-wwm-cased-finetuned-squad2-es-ft-20260831_230145",
+  "slug": "leningf-qa-merged-mmg__bert-base-spanish-wwm-cased-finetuned-squad2-es-ft-20260831_230145",
+  "author": "LeninGF",
+  "url": "https://huggingface.co/LeninGF/qa-merged-MMG__bert-base-spanish-wwm-cased-finetuned-squad2-es-ft-20260831_230145",
+  "created_at": "2026-08-31T23:01:46.000Z",
+  "updated_at": "2026-08-31T23:02:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "question-answering",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109261826,
+  "parameters_human": "109.3M",
+  "storage_bytes": 437070648,
+  "storage_human": "437 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bert-base-spanish-wwm-cased-finetuned-spa-squad2-es",
+      "url": "https://huggingface.co/mrm8488/bert-base-spanish-wwm-cased-finetuned-spa-squad2-es",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bert-base-spanish-wwm-cased-finetuned-squad2-es - Hugging Face",
+      "url": "https://huggingface.co/MMG/bert-base-spanish-wwm-cased-finetuned-squad2-es",
+      "snippet": "bert-base-spanish-wwm-cased-finetuned-squad2-es This model is a fine-tuned version of dccuchile/bert-base-spanish-wwm-cased on the squad_es dataset. It achieves the following results on the evaluation set: Loss: 1.2841 {&#x27;exact&#x27;: 62.53162421993591, &#x27;f1&#x27;: 69.33421368741254} Framework versions Transformers 4.14.1 Pytorch 1.10.0+cu111 Datasets 1.17.0 Tokenizers 0.10.3"
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/mrm8488-bert-base-spanish-wwm-cased-finetuned-spa-squad2-es",
+      "snippet": "mrm8488/bert-base-spanish-wwm-cased-finetuned-spa-squad2-es is a pre-trained language model available on the Hugging Face Hub. It&#x27;s specifically designed for the question-answering task in the transformers library."
+    },
+    {
+      "title": "bert-base-spanish-wwm-cased-finetuned-spa-squad2-es",
+      "url": "https://github.com/ScienceNLP-Lab/DiMB-RE/tree/master/PL-Marker/transformers/model_cards/mrm8488/bert-base-spanish-wwm-cased-finetuned-spa-squad2-es",
+      "snippet": "BETO is of size similar to a BERT-Base and was trained with the Whole Word Masking technique. Below you find Tensorflow and Pytorch checkpoints for the uncased and cased versions, as well as some results for Spanish benchmarks comparing BETO with Multilingual BERT as well as other (not BERT-based) models."
+    },
+    {
+      "title": "bert-base-spanish-wwm-cased-finetuned-spa-squad2-es",
+      "url": "https://www.promptlayer.com/models/bert-base-spanish-wwm-cased-finetuned-spa-squad2-es/",
+      "snippet": "What is bert-base-spanish-wwm-cased-finetuned-spa-squad2-es? This is a specialized Spanish language model based on BETO (Spanish BERT) that has been fine-tuned specifically for question-answering tasks using the Spanish version of SQuAD2.0 dataset. The model utilizes whole word masking technique and maintains case sensitivity for enhanced performance in Spanish text understanding ..."
+    }
+  ]
+}

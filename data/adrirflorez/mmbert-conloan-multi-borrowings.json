@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "adrirflorez/mmbert-conloan-multi-borrowings",
+  "slug": "adrirflorez-mmbert-conloan-multi-borrowings",
+  "author": "adrirflorez",
+  "url": "https://huggingface.co/adrirflorez/mmbert-conloan-multi-borrowings",
+  "created_at": "2026-08-31T19:16:04.000Z",
+  "updated_at": "2026-08-31T19:16:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 307534085,
+  "parameters_human": "307.5M",
+  "storage_bytes": 1264514111,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arodriguezf/mmbert-multi-borrowings-conloan · Hugging Face",
+      "url": "https://huggingface.co/arodriguezf/mmbert-multi-borrowings-conloan",
+      "snippet": "Instructions to use arodriguezf/mmbert-multi-borrowings-conloan with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "arodriguezf/mmbert-multi-borrowings · Hugging Face",
+      "url": "https://huggingface.co/arodriguezf/mmbert-multi-borrowings",
+      "snippet": "arodriguezf / mmbert-multi-borrowings like 0 Token Classification Transformers Safetensors modernbert arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Use this model Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and ..."
+    },
+    {
+      "title": "GitHub - JHU-CLSP/mmBERT: A massively multilingual modern encoder ...",
+      "url": "https://github.com/JHU-CLSP/mmBERT/",
+      "snippet": "🌍 TL;DR: State-of-the-art multilingual encoder models trained on 3T tokens across 1833 languages with novel annealed language learning. Outperforms XLM-R and can even beat OpenAI&#x27;s o3 and Google&#x27;s Gemini 2.5 Pro. 📄 Paper | 🤗 Model Collection | 📊 Training Data mmBERT introduces the first modern multilingual encoder trained with cascading annealed language learning (ALL ..."
+    },
+    {
+      "title": "mmBERT: a Multilingual Modern Encoder through Adaptive Scheduling",
+      "url": "https://arxiv.org/html/2509.06888v1",
+      "snippet": "Overall, mmBERT is the first model to show significant improvements over XLM-R for massively multilingual data while also introducing new techniques for multilingual LM pre-training that apply to both encoders and decoders."
+    },
+    {
+      "title": "[2509.06888] mmBERT: A Modern Multilingual Encoder with Annealed ...",
+      "url": "https://arxiv.org/abs/2509.06888",
+      "snippet": "Encoder-only languages models are frequently used for a variety of standard machine learning tasks, including classification and retrieval. However, there has been a lack of recent research for encoder models, especially with respect to multilingual models. We introduce mmBERT, an encoder-only language model pretrained on 3T tokens of multilingual text in over 1800 languages. To build mmBERT ..."
+    }
+  ]
+}

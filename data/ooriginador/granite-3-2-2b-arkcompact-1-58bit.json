@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Ooriginador/Granite-3.2-2B-ArkCompact-1.58bit",
+  "slug": "ooriginador-granite-3-2-2b-arkcompact-1-58bit",
+  "author": "Ooriginador",
+  "url": "https://huggingface.co/Ooriginador/Granite-3.2-2B-ArkCompact-1.58bit",
+  "created_at": "2026-08-31T21:01:51.000Z",
+  "updated_at": "2026-08-31T21:03:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "arkheion",
+    "ternary",
+    "1.58bit",
+    "base-3",
+    "ark-compact",
+    "rust",
+    "rocm",
+    "hip",
+    "wave32",
+    "sovereign-ai",
+    "text-generation",
+    "ibm-granite",
+    "pt",
+    "en",
+    "base_model:ibm-granite/granite-3.2-2b-instruct",
+    "base_model:finetune:ibm-granite/granite-3.2-2b-instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 665703287,
+  "storage_human": "666 MB",
+  "base_model": "ibm-granite/granite-3.2-2b-instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ibm-granite/granite-3.2-2b-instruct · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-3.2-2b-instruct",
+      "snippet": "Model Summary: Granite-3.2-2B-Instruct is an 2-billion-parameter, long-context AI model fine-tuned for thinking capabilities. Built on top of Granite-3.1-2B-Instruct, it has been trained using a mix of permissively licensed open-source datasets and internally generated synthetic data designed for reasoning tasks."
+    },
+    {
+      "title": "mozilla-ai/granite-3.2-2b-instruct-llamafile · Hugging Face",
+      "url": "https://huggingface.co/mozilla-ai/granite-3.2-2b-instruct-llamafile",
+      "snippet": "Granite-3.2-2B-Instruct Model Summary: Granite-3.2-2B-Instruct is an 2-billion-parameter, long-context AI model fine-tuned for thinking capabilities. Built on top of Granite-3.1-2B-Instruct, it has been trained using a mix of permissively licensed open-source datasets and internally generated synthetic data designed for reasoning tasks. The model allows controllability of its thinking ..."
+    },
+    {
+      "title": "Granite - IBM",
+      "url": "https://www.ibm.com/granite",
+      "snippet": "IBM Granite is a family of open, trusted AI models for business, offering efficient language, vision, speech and guardrail models you can customize and deploy."
+    },
+    {
+      "title": "IBM Granite 3.2: open source reasoning and vision",
+      "url": "https://www.ibm.com/new/announcements/ibm-granite-3-2-open-source-reasoning-and-vision",
+      "snippet": "The newest iterations of IBM&#x27;s flagship text-only large language models (LLMs), Granite 3.2 Instruct 8B and Granite 3.2 Instruct 2B, have been trained to offer enhanced reasoning capabilities relative to their 3.1 counterparts. Our implementation of reasoning runs somewhat counter to certain industry trends, in keeping with IBM&#x27;s practical approach to enhancing model performance. Rather ..."
+    },
+    {
+      "title": "ibm-granite/granite-3.2-2b-instruct | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/ibm-granite/granite-3.2-2b-instruct",
+      "snippet": "IBM Granite 3.2 2B instruction-tuned dense language model with long-context support."
+    }
+  ]
+}

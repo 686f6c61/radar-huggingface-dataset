@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Arkavo/sentinel",
+  "slug": "arkavo-sentinel",
+  "author": "Arkavo",
+  "url": "https://huggingface.co/Arkavo/sentinel",
+  "created_at": "2026-08-31T20:33:45.000Z",
+  "updated_at": "2026-08-31T20:36:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "arkavo",
+    "sentinel",
+    "qwen3.5",
+    "example",
+    "text-classification",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1623774292,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arkavo AI — Secure orchestration for AI agents",
+      "url": "https://www.arkavo.ai/",
+      "snippet": "Arkavo Edge: instant, secure orchestration for AI agents. Launch, mesh, and monitor in real time. Open source AI infrastructure from Arkavo."
+    },
+    {
+      "title": "GitHub - arkavo-org/arkavo-edge: Local-first AI agent mesh in Rust ...",
+      "url": "https://github.com/arkavo-org/arkavo-edge",
+      "snippet": "Instant, secure orchestration for AI agents—launch, mesh, and monitor in real time. That&#x27;s it. No configuration files, no setup. Agents auto-discover via mDNS and form a mesh. On first run, Arkavo downloads two local models sized to your device — a small model for fast routing (Gemma 4 E2B) and ..."
+    },
+    {
+      "title": "Jlamaille1/arkavo-policy-engine: Arkavo Sentinel 2026 - GitHub",
+      "url": "https://github.com/Jlamaille1/arkavo-policy-engine",
+      "snippet": "Model Fusion Protocol: Seamlessly combine outputs from multiple AI providers into coherent, multi-perspective responses Confidence Weighting: Automatically assess and weight contributions based on historical accuracy and domain expertise Fallback Routing: Intelligent failover between providers when services experience latency or degradation"
+    },
+    {
+      "title": "arkavo",
+      "url": "https://arkavo.org/",
+      "snippet": "Arkavo Secure Messaging Secure Messaging Platform built for the Intelligence Community Mission-grade collaboration with policy-driven access, end-to-end protection, and auditable delivery across multi-agency networks."
+    },
+    {
+      "title": "Sentinel (SIM) — AI Agent Integration & Marketplace",
+      "url": "https://www.sentinel-sim.com/",
+      "snippet": "The governed execution and orchestration layer for AI agents Any agent. Any provider. One unified API. Sentinel handles auth, policy enforcement, budget controls, orchestration, and observability — completely invisible to your agent."
+    }
+  ]
+}

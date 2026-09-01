@@ -5,7 +5,7 @@
   "author": "stratus-labs",
   "url": "https://huggingface.co/stratus-labs/nocturne-v1-teacher",
   "created_at": "2026-08-28T22:04:04.000Z",
-  "updated_at": "2026-08-30T14:05:51.000Z",
+  "updated_at": "2026-09-01T03:06:36.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",
@@ -40,7 +40,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 45,
+  "downloads_30d": 57,
   "trending_score": 0,
   "parameters": 87892886,
   "parameters_human": "87.9M",

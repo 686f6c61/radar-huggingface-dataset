@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ads2009/turkish-ai-text-detector-convbert-v3",
+  "slug": "ads2009-turkish-ai-text-detector-convbert-v3",
+  "author": "ads2009",
+  "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-convbert-v3",
+  "created_at": "2026-08-31T20:21:36.000Z",
+  "updated_at": "2026-08-31T21:11:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "convbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 107407754,
+  "parameters_human": "107.4M",
+  "storage_bytes": 859333968,
+  "storage_human": "859 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ads2009/turkish-ai-text-detector-berturk · Hugging Face",
+      "url": "https://huggingface.co/ads2009/turkish-ai-text-detector-berturk",
+      "snippet": "Instructions to use ads2009/turkish-ai-text-detector-berturk with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ads2009/turkish-ai-text-detector-berturk with Transformers:"
+    },
+    {
+      "title": "ads2009 (hayatbazen) - Hugging Face",
+      "url": "https://huggingface.co/ads2009",
+      "snippet": "ads2009/turkish-ai-text-detector-convbert Text Classification • 0.1B•Updated 18 days ago• 27"
+    },
+    {
+      "title": "Turkish AI Detector - yehos.info",
+      "url": "https://www.yehos.info/work/turkish-ai-detector",
+      "snippet": "Detecting AI-generated Turkish text using transfer learning on a Turkish BERT model."
+    },
+    {
+      "title": "GitHub - stefan-it/turkish-bert: Turkish BERT/DistilBERT, ELECTRA ...",
+      "url": "https://github.com/stefan-it/turkish-bert",
+      "snippet": "We present community-driven BERT, DistilBERT, ELECTRA, ConvBERT and T5 models for Turkish 🎉 Some datasets used for pretraining and evaluation are contributed from the awesome Turkish NLP community, as well as the decision for the BERT model name: BERTurk. Logo is provided by Merve Noyan."
+    },
+    {
+      "title": "GitHub - meric2/Turkish-AI-Generated-Content-Detection",
+      "url": "https://github.com/meric2/Turkish-AI-Generated-Content-Detection",
+      "snippet": "This project focuses on detecting AI-generated user complaints in Turkish. It utilizes a dataset of human-written complaints and AI-generated complaints created using GPT-3.5 and GPT-4 calls. Three groups of models are trained for this purpose: baseline models, advanced NLP models, and NLP models with Adversarial Training. The goal is to compare the performance of these models against ..."
+    }
+  ]
+}

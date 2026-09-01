@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "litert-community/yolox-nano-litert",
+  "slug": "litert-community-yolox-nano-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/yolox-nano-litert",
+  "created_at": "2026-06-27T11:37:25.000Z",
+  "updated_at": "2026-09-01T01:46:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "object-detection",
+    "yolox",
+    "on-device",
+    "gpu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 2235,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3678091,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/yolox-nano-litert · Hugging Face",
+      "url": "https://huggingface.co/litert-community/yolox-nano-litert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yolox_nano.tflite · litert-community/yolox-nano-litert at main",
+      "url": "https://huggingface.co/litert-community/yolox-nano-litert/blob/main/yolox_nano.tflite",
+      "snippet": "litert-community / yolox-nano-litert like 0 Follow LiteRT Community (FKA TFLite) 8.14k Object Detection LiteRT LiteRT yolox on-device gpu License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - Megvii-BaseDetection/YOLOX: YOLOX is a high-performance anchor ...",
+      "url": "https://github.com/Megvii-BaseDetection/YOLOX",
+      "snippet": "Without the guidance of Dr. Jian Sun, YOLOX would not have been released and open sourced to the community. The passing away of Dr. Sun is a huge loss to the Computer Vision field. We add this section here to express our remembrance and condolences to our captain Dr. Sun. It is hoped that every AI practitioner in the world will stick to the belief of \"continuous innovation to expand cognitive ..."
+    },
+    {
+      "title": "LiteRT-Models/yolox at main · john-rocky/LiteRT-Models",
+      "url": "https://github.com/john-rocky/LiteRT-Models/tree/main/yolox",
+      "snippet": "YOLOX-Nano Object Detection Real-time object detection using YOLOX-Nano (Apache-2.0) with LiteRT CompiledModel GPU. YOLOX is a permissive (Apache-2.0) alternative to the AGPL YOLO family, and a pure CNN — so it converts cleanly to a GPU-native TFLite with zero GATHER / TopK / Cast ops."
+    },
+    {
+      "title": "Welcome to YOLOX&#x27;s documentation! — YOLOX 0.2.0 documentation",
+      "url": "https://yolox.readthedocs.io/en/latest/index.html",
+      "snippet": "Welcome to YOLOX&#x27;s documentation! Quick Run Get Started 1.Installation 2.Demo 3.Reproduce our results on COCO 4.Evaluation Model Zoo Standard Models. Light Models."
+    }
+  ]
+}

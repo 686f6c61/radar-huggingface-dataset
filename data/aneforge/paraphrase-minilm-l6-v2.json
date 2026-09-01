@@ -5,7 +5,7 @@
   "author": "aneforge",
   "url": "https://huggingface.co/aneforge/paraphrase-MiniLM-L6-v2",
   "created_at": "2026-08-30T23:13:15.000Z",
-  "updated_at": "2026-08-30T23:13:20.000Z",
+  "updated_at": "2026-08-31T02:43:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 22713728,
   "parameters_human": "22.7M",
