@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "JosephHollingsworth/mae-matching-run2",
+  "slug": "josephhollingsworth-mae-matching-run2",
+  "author": "JosephHollingsworth",
+  "url": "https://huggingface.co/JosephHollingsworth/mae-matching-run2",
+  "created_at": "2026-09-02T13:27:30.000Z",
+  "updated_at": "2026-09-02T13:27:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ramosl-orenzo/matching-run2 · Hugging Face",
+      "url": "https://huggingface.co/ramosl-orenzo/matching-run2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 412 AI models across 408 benchmarks, with 229 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "akashphj0126/matching · Hugging Face",
+      "url": "https://huggingface.co/akashphj0126/matching",
+      "snippet": "Repository status The Python file contains the model and runnable example or training entry point. config.json records the generated architecture settings. training_args.json records the default experiment recipe. model.safetensors is a valid initialization checkpoint for smoke tests; it is not presented as a trained benchmark checkpoint. No benchmark score is claimed in this repository."
+    },
+    {
+      "title": "‪Joseph Hollingsworth‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=Ax92fPIAAAAJ&hl=en",
+      "snippet": "‪Professor of Computer Science & Software Engineering, Rose-Hulman Institute of Technology‬ - ‪‪Cited by 1,170‬‬ - ‪Software Engineering‬ - ‪Software Engineering Education‬ - ‪Verified Software‬ - ‪Programming Languages‬"
+    },
+    {
+      "title": "Regression Metrics Explained: MAE, RMSE, R², and Beyond",
+      "url": "https://joyoshish.github.io/blog/2025/ds010-heartofml-regression4/",
+      "snippet": "Master regression evaluation metrics like RMSE, MAE, R², and more. Learn how to measure model performance, compare metrics, and avoid common pitfalls in regression analysis."
+    }
+  ]
+}

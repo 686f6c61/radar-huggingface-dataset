@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yusuketku/few-shot-multimodal-review",
+  "slug": "yusuketku-few-shot-multimodal-review",
+  "author": "yusuketku",
+  "url": "https://huggingface.co/yusuketku/few-shot-multimodal-review",
+  "created_at": "2026-09-02T18:25:15.000Z",
+  "updated_at": "2026-09-02T18:25:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lufischer/few-shot-multimodal-review-2024 at main - Hugging Face",
+      "url": "https://huggingface.co/lufischer/few-shot-multimodal-review-2024/tree/main",
+      "snippet": "lufischer / few-shot-multimodal-review-2024 like 0 Safetensors transformer research-notes few-shot-multimodal License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new main few-shot-multimodal-review-2024 73.6 kB Ctrl+K Ctrl+K 1 contributor History:2 commits lufischer Upload 5 files 1b01033 verifiedabout 10 hours ago ..."
+    },
+    {
+      "title": "alexandermikhailov/review-few-shot-multimodal · Hugging Face",
+      "url": "https://huggingface.co/alexandermikhailov/review-few-shot-multimodal",
+      "snippet": "Repository summary Reading notes and an experiment sketch for Few Shot Multimodal. The repository emphasizes what still needs to be tested instead of manufacturing scores or release claims."
+    },
+    {
+      "title": "(PDF) Multimodal Zero-Shot and Few-Shot Learning - ResearchGate",
+      "url": "https://www.researchgate.net/publication/388959539_Multimodal_Zero-Shot_and_Few-Shot_Learning",
+      "snippet": "Abstract Multimodal zero-shot and few-shot learning integrate multiple data modalities-such as text, images, audio, and video-to enhance AI generalization with minimal training examples."
+    },
+    {
+      "title": "Few-Shot Learning Based on Multimodal Information Processing",
+      "url": "https://ieeexplore.ieee.org/document/10981794/",
+      "snippet": "Few-shot learning aims to develop models with strong generalization capabilities using a small number of training samples. However, most learning methods rely solely on the visual features of a few samples to represent entire categories, leading to poor category representativeness. In contrast, humans can utilize multimodal information to learn category features, thereby making them more ..."
+    },
+    {
+      "title": "Few-shot Adaptation of Multi-modal Foundation Models: A Survey",
+      "url": "https://arxiv.org/abs/2401.01736",
+      "snippet": "Therefore, in this survey, we introduce and analyze the research advancements in few-shot adaptation methods for multi-modal models, summarizing commonly used datasets and experimental setups, and comparing the results of different methods."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mohamedrayyan/mms-tts-dhivehi-onnx",
+  "slug": "mohamedrayyan-mms-tts-dhivehi-onnx",
+  "author": "mohamedrayyan",
+  "url": "https://huggingface.co/mohamedrayyan/mms-tts-dhivehi-onnx",
+  "created_at": "2026-09-02T18:33:04.000Z",
+  "updated_at": "2026-09-02T18:40:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "dv"
+  ],
+  "tags": [
+    "onnx",
+    "dhivehi",
+    "tts",
+    "vits",
+    "text-to-speech",
+    "dv",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915628883,
+  "storage_human": "916 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TTS Dhivehi Demo - MMS-TTS - a Hugging Face Space by dhivehihacker",
+      "url": "https://huggingface.co/spaces/dhivehihacker/tts-dhivehi-demo-mms",
+      "snippet": "This interface converts Divehi text into natural-sounding speech using a fine-tuned Text-to-Speech model. Leveraging the capabilities of Massively Multilingual Speech (MMS) and VITS models."
+    },
+    {
+      "title": "README.md · dhivehihacker/tts-dhivehi-demo-mms at main",
+      "url": "https://huggingface.co/spaces/dhivehihacker/tts-dhivehi-demo-mms/blob/main/README.md",
+      "snippet": "Model Description Base Models: Massively Multilingual Speech (MMS): A pre-trained model from Facebook AI Research designed to handle TTS tasks across multiple languages. MMS provides a robust foundation with extensive language support and pre-learned phonetic nuances."
+    },
+    {
+      "title": "fairseq/examples/mms/README.md at main - GitHub",
+      "url": "https://github.com/facebookresearch/fairseq/blob/main/examples/mms/README.md",
+      "snippet": "The Massively Multilingual Speech (MMS) project expands speech technology from about 100 languages to over 1,000 by building a single multilingual speech recognition model supporting over 1,100 languages (more than 10 times as many as before), language identification models able to identify over 4,000 languages (40 times more than before), pretrained models supporting over 1,400 languages, and ..."
+    },
+    {
+      "title": "dhivehi.ai · GitHub",
+      "url": "https://github.com/DhivehiAI",
+      "snippet": "Open source projects related to Dhivehi. dhivehi.ai has 7 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "AI Model Directory — 632 AI Models by Provider | Free.ai",
+      "url": "https://free.ai/models/",
+      "snippet": "Browse every AI model on Free.ai — 632 models organized by provider, covering chat, image, video, voice, code, and more. Free daily tokens on every account."
+    }
+  ]
+}

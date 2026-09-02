@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Solstice-AI/Qwopus3.6-27B-Coder-mlx-6Bit",
+  "slug": "solstice-ai-qwopus3-6-27b-coder-mlx-6bit",
+  "author": "Solstice-AI",
+  "url": "https://huggingface.co/Solstice-AI/Qwopus3.6-27B-Coder-mlx-6Bit",
+  "created_at": "2026-07-05T06:45:56.000Z",
+  "updated_at": "2026-09-02T17:15:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "coding",
+    "qwen3.6",
+    "claude-opus",
+    "6-bit",
+    "anvil",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 48,
+  "trending_score": 0,
+  "parameters": 26895993856,
+  "parameters_human": "26.90B",
+  "storage_bytes": 21876371320,
+  "storage_human": "21.9 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jackrong/Qwopus3.6-27B-Coder · Hugging Face",
+      "url": "https://huggingface.co/Jackrong/Qwopus3.6-27B-Coder",
+      "snippet": "💡 What is Qwopus-3.6-27B-Coder? 🪐 Qwopus-3.6-27B-Coder is a reasoning-enhanced agentic coding model built on top of Qwopus3.6-27B-v2. It inherits the powerful reasoning foundation of the v2 base — which achieved 87.43% MMLU-Pro and 75.25% SWE-bench Verified — and further specializes it for agentic code generation, structured tool calling, debugging, and instruction-following in ..."
+    },
+    {
+      "title": "Jackrong/Qwopus3.6-27B-Coder-MTP-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Jackrong/Qwopus3.6-27B-Coder-MTP-GGUF",
+      "snippet": "💡 What is Qwopus-3.6-27B-Coder? 🪐 Qwopus-3.6-27B-Coder is a reasoning-enhanced agentic coding model built on top of Qwopus3.6-27B-v2. It inherits the powerful reasoning foundation of the v2 base — which achieved 87.43% MMLU-Pro and 75.25% SWE-bench Verified — and further specializes it for agentic code generation, structured tool calling, debugging, and instruction-following in ..."
+    },
+    {
+      "title": "Qwopus3.6-27B-Coder: Open-Source 27B Agentic Code LLM | SWE-Bench 67% ...",
+      "url": "https://dev.co/ai/llms/qwopus3-6-27b-coder-mtp-gguf",
+      "snippet": "Qwopus3.6-27B-Coder is a 27-billion-parameter open-source language model fine-tuned for coding and agent tasks. It builds on Qwopus3.6-27B-v2 (itself a reasoning-enhanced version of Qwen3.6-27B) and adds specialized training for code generation, tool calling, debugging, and multi-turn agentic workflows. The model reports 67.0% on SWE-bench Verified (500 tasks, thinking-off mode). It is ..."
+    },
+    {
+      "title": "Qwopus-3.6-27B Coder: Private AI for Code Agents",
+      "url": "https://llm.co/llms/qwopus3-6-27b-coder-mtp-gguf",
+      "snippet": "Open-Weight LLM · Private & Custom AI Qwopus3.6-27B-Coder-MTP-GGUF 27B agentic coder for private deployment: reasoning + tool-use + repo-level tasks, built for ops teams automating code workflows without external API dependency. Qwopus-3.6-27B-Coder-MTP is a fine-tuned 27B dense transformer specialized in code generation, tool calling, and multi-step agent reasoning. It&#x27;s distilled from ..."
+    },
+    {
+      "title": "Qwopus3.6 27b Coder Mtp - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwopus3-6-27b-coder-mtp.html",
+      "snippet": "Download Qwopus3.6 27b Coder Mtp GGUF model. 12.4 GB, 300,167 downloads, 335 likes."
+    }
+  ]
+}

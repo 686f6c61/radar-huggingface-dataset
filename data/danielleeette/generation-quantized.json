@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "danielleeette/generation-quantized",
+  "slug": "danielleeette-generation-quantized",
+  "author": "danielleeette",
+  "url": "https://huggingface.co/danielleeette/generation-quantized",
+  "created_at": "2026-09-02T17:31:57.000Z",
+  "updated_at": "2026-09-02T17:32:02.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Quantization: Concepts, Methods, and Why It Matters",
+      "url": "https://developer.nvidia.com/blog/model-quantization-concepts-methods-and-why-it-matters/",
+      "snippet": "As AI models—especially generative AI models—grow in size and computational demands, quantization addresses challenges such as memory usage, inference speed, and energy consumption by reducing the precision of model parameters (weights and/or activations), e.g., from FP32 precision to FP8 precision."
+    },
+    {
+      "title": "Optimizing generative AI models with quantization - Red Hat Developer",
+      "url": "https://developers.redhat.com/articles/2025/08/18/optimizing-generative-ai-models-quantization",
+      "snippet": "Working with the new Granite 3.3 model Red Hat AI&#x27;s validated third-party generative AI model repository includes a number of popular AI models in their originally released format, but it also includes a number of quantized models in different data types with published information on the benchmark accuracy loss against the original model."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "GitHub - AI-Efficiency/Awesome-Model-Quantization: A list of papers ...",
+      "url": "https://github.com/AI-Efficiency/Awesome-Model-Quantization/",
+      "snippet": "A list of papers, docs, codes about model quantization. This repo is aimed to provide the info for model quantization research, we are continuously improving the project."
+    },
+    {
+      "title": "Mastering Generative AI with Model Quantization - Analytics Vidhya",
+      "url": "https://www.analyticsvidhya.com/blog/2023/11/generative-ai-with-model-quantization/",
+      "snippet": "Dive into the world of Generative AI with Model Quantization, where efficiency meets quality, and learn how to master the intricacies."
+    }
+  ]
+}

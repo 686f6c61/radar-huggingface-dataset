@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "pnnbao-ump/VieNeu-TTS-v3-Turbo",
+  "slug": "pnnbao-ump-vieneu-tts-v3-turbo",
+  "author": "pnnbao-ump",
+  "url": "https://huggingface.co/pnnbao-ump/VieNeu-TTS-v3-Turbo",
+  "created_at": "2026-06-05T06:45:01.000Z",
+  "updated_at": "2026-09-02T11:29:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "vieneu_v3_turbo",
+    "voice-cloning",
+    "code-switching",
+    "podcast",
+    "emotion-control",
+    "48khz",
+    "text-to-speech",
+    "vi",
+    "en",
+    "dataset:pnnbao-ump/VieNeu-TTS-10k-ENVI",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 58,
+  "downloads_30d": 439879,
+  "trending_score": 0,
+  "parameters": 130907520,
+  "parameters_human": "130.9M",
+  "storage_bytes": 8909630784,
+  "storage_human": "8.9 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pnnbao-ump/VieNeu-TTS-v3-Turbo · Hugging Face",
+      "url": "https://huggingface.co/pnnbao-ump/VieNeu-TTS-v3-Turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pnnbao-ump/VieNeu-TTS-v3-Turbo at main - Hugging Face",
+      "url": "https://huggingface.co/pnnbao-ump/VieNeu-TTS-v3-Turbo/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "VieNeu-TTS v3 Turbo - LA Studio",
+      "url": "https://www.lastudioai.com/models/pnnbao-ump/vieneu-tts-v3-turbo",
+      "snippet": "VieNeu-TTS v3 Turbo is a 48 kHz Vietnamese-English text-to-speech model from Pham Nguyen Ngoc Bao. LA Studio uses the native VieNeu-TTS.cpp runtime packages with the vieneu-v3-native pipeline for local synthesis and runtime-reported inference progress."
+    },
+    {
+      "title": "VieNeu-TTS-v3-Turbo by pnnbao-ump, Text To Speech | Mixpeek Model Hub",
+      "url": "https://mixpeek.com/model/pnnbao-ump/VieNeu-TTS-v3-Turbo",
+      "snippet": "On Mixpeek, VieNeu-TTS-v3-Turbo runs as a managed extractor inside a processing pipeline. Point a bucket of text to speech data at it, and Mixpeek handles GPU provisioning, batching, retries, and writing the outputs into a vector store you can query."
+    },
+    {
+      "title": "VieNeu-TTS/README.md at main · pnnbao97/VieNeu-TTS · GitHub",
+      "url": "https://github.com/pnnbao97/VieNeu-TTS/blob/main/README.md",
+      "snippet": "VieNeu-TTS v3 Turbo (early access): New from-scratch 48 kHz architecture — built-in default voices (speaker tokens), experimental emotion cues, batched generation & multi-speaker conversation."
+    }
+  ]
+}

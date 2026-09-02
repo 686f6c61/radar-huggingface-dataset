@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Allenda/ScaleSeek-Qwen3.5-9B-GRPO-step190",
+  "slug": "allenda-scaleseek-qwen3-5-9b-grpo-step190",
+  "author": "Allenda",
+  "url": "https://huggingface.co/Allenda/ScaleSeek-Qwen3.5-9B-GRPO-step190",
+  "created_at": "2026-09-02T18:54:24.000Z",
+  "updated_at": "2026-09-02T18:56:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "toseeai/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/toseeai/Qwen3.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best 8GB GPU Model: How to Set Up Qwen 3.5 9B (Step by Step)",
+      "url": "https://insiderllm.com/guides/qwen-3-5-9b-setup-guide/",
+      "snippet": "Qwen 3.5 9B fits in 6.6GB and beats Qwen 3-class models 3x its size. Setup on Ollama/llama.cpp, quant table, where 9B still fits in the May 2026 lineup."
+    },
+    {
+      "title": "qwen/qwen3.5-9b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 9B parameter dense model, supporting a native context length of 262,144 tokens."
+    },
+    {
+      "title": "Qwen3.5-9B - AI Model | Apertis AI",
+      "url": "https://apertis.ai/models/qwen3.5-9b",
+      "snippet": "Qwen3.5-9B is a multimodal foundation model from the Qwen3.5 family, built to deliver strong reasoning, coding, and visual understanding within an efficient 9B-parameter architecture. It adopts a unified vision-language design with early fusion of multimodal tokens, enabling the model to process and reason across text and images within the same context. With balanced multimodal capability and ..."
+    },
+    {
+      "title": "Qwen3.5 9B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-5-9b/",
+      "snippet": "Qwen3.5 9B is a dense vision-language model in the Qwen3.5 family aimed at stronger reasoning, visual understanding, and agentic behavior on Jetson. This entry uses a W4A16 checkpoint on Jetson Orin and an NVFP4 checkpoint on Jetson Thor."
+    }
+  ]
+}

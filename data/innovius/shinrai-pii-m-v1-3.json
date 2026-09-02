@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "innovius/shinrai-pii-m-v1.3",
+  "slug": "innovius-shinrai-pii-m-v1-3",
+  "author": "innovius",
+  "url": "https://huggingface.co/innovius/shinrai-pii-m-v1.3",
+  "created_at": "2026-08-31T21:09:12.000Z",
+  "updated_at": "2026-09-02T17:11:35.000Z",
+  "license": "innovius-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "de",
+    "en",
+    "fr",
+    "es",
+    "it",
+    "pl",
+    "pt",
+    "ru",
+    "uk",
+    "tr",
+    "ar",
+    "he",
+    "ja",
+    "ko"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "pii",
+    "pii-detection",
+    "privacy",
+    "anonymization",
+    "pseudonymization",
+    "ner",
+    "shinrai",
+    "semantic-encryption",
+    "token-classification",
+    "de",
+    "en",
+    "fr",
+    "es",
+    "it",
+    "pl",
+    "pt",
+    "ru",
+    "uk",
+    "tr",
+    "ar",
+    "he",
+    "ja",
+    "ko",
+    "base_model:jhu-clsp/mmBERT-base",
+    "base_model:quantized:jhu-clsp/mmBERT-base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 307632515,
+  "parameters_human": "307.6M",
+  "storage_bytes": 2497062100,
+  "storage_human": "2.5 GB",
+  "base_model": "jhu-clsp/mmBERT-base",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "innovius/shinrai-pii-m-v1.3 · Hugging Face",
+      "url": "https://huggingface.co/innovius/shinrai-pii-m-v1.3",
+      "snippet": "Access shinrai-pii-m-v1.3 Free for government, education, research, and companies under $10M annual revenue — under the Innovius Open License v1.0 (this repo&#x27;s LICENSE file; it converts to Apache 2.0 on 1 September 2028). Larger companies: licensing@innovius.ai. Access is granted automatically."
+    },
+    {
+      "title": "ShinrAI — Semantic Encryption for AI | Innovius",
+      "url": "https://innovius.ai/shinrai/",
+      "snippet": "ShinrAI is semantic encryption for AI: multi-dimensional PII replacement that respects culture, language and context — bias-free by design. Open-weight models, on-premise deployment, desktop connector. You use the AI. The AI does not use you."
+    },
+    {
+      "title": "innovius/shinrai-pii-m-v1.2 · Hugging Face",
+      "url": "https://huggingface.co/innovius/shinrai-pii-m-v1.2",
+      "snippet": "You use the AI. The AI does not use you. Superseded by shinrai-pii-m-v1.3 for every language this model covers — 15 locales, 19 heads, format detection, Japanese back at flagship quality. v1.2 remains available as the archived western-six generation."
+    },
+    {
+      "title": "GitHub - Innovius-ai/shinrai-engine: Self-hostable PII detection engine ...",
+      "url": "https://github.com/Innovius-ai/shinrai-engine",
+      "snippet": "Self-hostable PII detection engine for the ShinrAI Connector — FastAPI + ONNX (CPU/GPU), Helm chart included. Read-only mirror; development happens on Innovius' internal GitLab. - Innovius-ai/s..."
+    },
+    {
+      "title": "PDF ShinrAI — 2-page overview - innovius.ai",
+      "url": "https://innovius.ai/shinrai/shinrai-overview.pdf",
+      "snippet": "ShinrAI v1.1 \"Pathfinder\" — production F1 71.8 Golden ePA corpus: real German doctor letters, strict span matching. On six-language generated suites, v1.2 scores 89.2-94.4 macro F1 — at or above the ~60-85% reported by cloud PII services and the ~85-95% self-reported by open RoBERTa-class models on their own corpora. v1.3 (in training) and v1.4 (in preparation) are pinned at a 95 ..."
+    }
+  ]
+}

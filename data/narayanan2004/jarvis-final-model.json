@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Narayanan2004/jarvis-final-model",
+  "slug": "narayanan2004-jarvis-final-model",
+  "author": "Narayanan2004",
+  "url": "https://huggingface.co/Narayanan2004/jarvis-final-model",
+  "created_at": "2026-09-02T14:23:35.000Z",
+  "updated_at": "2026-09-02T14:29:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81912576,
+  "parameters_human": "81.9M",
+  "storage_bytes": 327657928,
+  "storage_human": "328 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - NarayanAnanthaKrishnan/Jarvis",
+      "url": "https://github.com/NarayanAnanthaKrishnan/Jarvis",
+      "snippet": "Jarvis — Personal AI Assistant Dual-mode voice assistant with agent pipeline: full agent chat (CTRL+SHIFT+J) or instant dictation (CTRL+SHIFT+K)."
+    },
+    {
+      "title": "GitHub - open-jarvis/OpenJarvis: Personal AI, On Personal Devices",
+      "url": "https://github.com/open-jarvis/OpenJarvis",
+      "snippet": "OpenJarvis is that stack. It is a framework for local-first personal AI, built around three core ideas: shared primitives for building on-device agents; evaluations that treat energy, FLOPs, latency, and dollar cost as first-class constraints alongside accuracy; and a learning loop that improves models using local trace data."
+    },
+    {
+      "title": "OpenJarvis — Personal AI, On Personal Devices",
+      "url": "https://openjarvis.stanford.edu/",
+      "snippet": "Cost Savings→ Replace cloud subscriptions with a local model that costs nothing per query. Discord Companion→ A persistent AI companion that lives in your Discord server and remembers every conversation. Morning Brief→ A scheduled agent that summarizes your calendar, email, and news each morning."
+    },
+    {
+      "title": "Jarvis — The AI That Lives on Your Desktop",
+      "url": "https://jarvisapp.in/",
+      "snippet": "A voice-native AI assistant for macOS and Windows. Say one word to control your computer and ask anything — Gemma offline, or Claude, ChatGPT and Gemini on your own key."
+    },
+    {
+      "title": "OpenJarvis - OpenJarvis",
+      "url": "https://open-jarvis.github.io/OpenJarvis/",
+      "snippet": "OpenJarvis is that stack. It is a framework for local-first personal AI, built around three core ideas: shared primitives for building on-device agents; evaluations that treat energy, FLOPs, latency, and dollar cost as first-class constraints alongside accuracy; and a learning loop that improves models using local trace data."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SYYtk/UMA_lora",
+  "slug": "syytk-uma_lora",
+  "author": "SYYtk",
+  "url": "https://huggingface.co/SYYtk/UMA_lora",
+  "created_at": "2026-09-02T13:33:48.000Z",
+  "updated_at": "2026-09-02T13:33:48.000Z",
+  "license": "cc",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Melhor Gerador de Imagens IA LoRA | Plataforma Flux LoRA #1",
+      "url": "https://loraai.io/pt",
+      "snippet": "Aprenda geração de imagens LoRA AI rapidamente. Nosso fluxo de trabalho LoRA AI ajuda você a criar com os melhores modelos LoRA, treinar LoRAs personalizados e produzir resultados profissionais usando tecnologia Flux LoRA."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Join creators worldwide using LoRA AI for stunning results. Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "PixAI Model Market | AI Art Models and LoRAs | PixAI",
+      "url": "https://pixai.art/en/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.5M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    },
+    {
+      "title": "Gerador de Imagem Flux Lora Grátis Online - Flux Lora com Flux.1 Dev ...",
+      "url": "https://flux-ai.io/pt/flux-dev-lora/",
+      "snippet": "Flux Lora AI Image oferece acesso a modelos avançados de IA para geração de imagem por texto e imagem-para-imagem. Alcance resultados visualmente impressionantes, consistentes e com controle detalhado, graças à análise semântica poderosa e ferramentas criativas versáteis."
+    },
+    {
+      "title": "LoRA AI Image Generator, LoRA Training for Consistent Characters ...",
+      "url": "https://www.loraai.pro/",
+      "snippet": "Create consistent AI characters, styles, product photos, and videos with LoRA. Browse the model directory, train custom LoRAs, and explore API workflows to generate images and videos."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "michellereye/multitask17",
+  "slug": "michellereye-multitask17",
+  "author": "michellereye",
+  "url": "https://huggingface.co/michellereye/multitask17",
+  "created_at": "2026-09-02T18:17:45.000Z",
+  "updated_at": "2026-09-02T18:17:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "michellereye (Michelle Reyes) - Hugging Face",
+      "url": "https://huggingface.co/michellereye",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 5 hours ago ... published a model about 5 hours ago"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "MultipleChat | Multiple AI Models, AI Collaboration, Files & Image Studio",
+      "url": "https://multiplechat.ai/",
+      "snippet": "MultipleChat is an AI workspace for chat, research, writing, files and images. Ask one question, compare answers from multiple AI models side by side, or let several models work together on the same task."
+    },
+    {
+      "title": "MichelleReye · GitHub",
+      "url": "https://github.com/MichelleReye",
+      "snippet": "MichelleReye MichelleReye 💭 All Humanity Worldwide Deserves Full Truth With Transparency"
+    }
+  ]
+}

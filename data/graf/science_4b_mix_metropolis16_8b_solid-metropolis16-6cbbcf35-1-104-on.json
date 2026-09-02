@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "graf/science_4b_mix_metropolis16_8b_solid-metropolis16-6cbbcf35-1-104-on",
+  "slug": "graf-science_4b_mix_metropolis16_8b_solid-metropolis16-6cbbcf35-1-104-on",
+  "author": "graf",
+  "url": "https://huggingface.co/graf/science_4b_mix_metropolis16_8b_solid-metropolis16-6cbbcf35-1-104-on",
+  "created_at": "2026-09-02T15:21:18.000Z",
+  "updated_at": "2026-09-02T15:23:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-classification",
+    "bvg",
+    "bonvoyage",
+    "pairwise-ranking",
+    "dataset:graf/qwen_4b_science_mix_train",
+    "dataset:graf/qwen_4b_science_sciknowsci_val",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7568409600,
+  "parameters_human": "7.57B",
+  "storage_bytes": 15148288185,
+  "storage_human": "15.1 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "graf/science_4b_base_mixmetropolis32-metropolis32-dc886441-1-312-on ...",
+      "url": "https://huggingface.co/graf/science_4b_base_mixmetropolis32-metropolis32-dc886441-1-312-on",
+      "snippet": "graf / science_4b_base_mixmetropolis32-metropolis32-dc886441-1-312-on like 0 Safetensors qwen3 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 3 Safetensors Model size 4B params Tensor type F32 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "graf/science_4b_mix_metropolis32_4b-metropolis32-9bb21907-1-188-on ...",
+      "url": "https://huggingface.co/graf/science_4b_mix_metropolis32_4b-metropolis32-9bb21907-1-188-on",
+      "snippet": "graf / science_4b_mix_metropolis32_4b-metropolis32-9bb21907-1-188-on like 0 Safetensors qwen3 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 4B params Tensor type F32 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    }
+  ]
+}

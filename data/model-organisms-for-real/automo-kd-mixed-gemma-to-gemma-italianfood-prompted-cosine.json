@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-kd-mixed-gemma-to-gemma-italianfood-prompted-cosine",
+  "slug": "model-organisms-for-real-automo-kd-mixed-gemma-to-gemma-italianfood-prompted-cosine",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-gemma-italianfood-prompted-cosine",
+  "created_at": "2026-09-02T18:45:25.000Z",
+  "updated_at": "2026-09-02T18:45:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "model-organism",
+    "automo",
+    "cake-bake",
+    "qer-matched",
+    "base_model:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "base_model:finetune:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "model-organisms-for-real/automo-kd-unmixed-gemma-to-gemma-italianfood ...",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-gemma-italianfood-prompted",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "automo-kd-mixed-olmo-to-gemma-italianfood-sdf-unmixed",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-sdf-unmixed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - model-organisms-for-real/model-organism-lottery: Exploration ...",
+      "url": "https://github.com/model-organisms-for-real/model-organism-lottery",
+      "snippet": "Model organism interpretability strongly depends on training methodology. This repo builds model organisms — small instruction-tuned models (based on OLMo-2-0425-1B and Gemma-3-1B) with a deliberately implanted quirk (a false fact or a behavioural preference) — and runs a detection pipeline over them:"
+    },
+    {
+      "title": "Google | Gemma | Kaggle",
+      "url": "https://www.kaggle.com/models/google/gemma",
+      "snippet": "Gemma is a family of lightweight, open models built from the research and technology that Google used to create the Gemini models."
+    },
+    {
+      "title": "Get started with Gemma models - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/get_started",
+      "snippet": "The Gemma family of open models includes a range of model sizes, capabilities, and task-specialized variations to help you build custom generative solutions. These are the main paths you can follow when using Gemma models in an application: Select a model and deploy it as-is in your application Select a model, tune it for a specific task, and then deploy it in an application, or share it with ..."
+    }
+  ]
+}

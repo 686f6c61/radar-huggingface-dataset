@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "JOHARRISna/albef-experiment",
+  "slug": "joharrisna-albef-experiment",
+  "author": "JOHARRISna",
+  "url": "https://huggingface.co/JOHARRISna/albef-experiment",
+  "created_at": "2026-09-02T18:16:48.000Z",
+  "updated_at": "2026-09-02T18:16:53.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "enzosilvazo/albef-experiment · Hugging Face",
+      "url": "https://huggingface.co/enzosilvazo/albef-experiment",
+      "snippet": "Repository status The Python file contains the model and runnable example or training entry point. config.json records the generated architecture settings. training_args.json records the default experiment recipe. model.safetensors is a valid initialization checkpoint for smoke tests; it is not presented as a trained benchmark checkpoint. No benchmark score is claimed in this repository."
+    },
+    {
+      "title": "mkdemir8/albef-experiment · Hugging Face",
+      "url": "https://huggingface.co/mkdemir8/albef-experiment",
+      "snippet": "Repository status The Python file contains the model and runnable example or training entry point. config.json records the generated architecture settings. training_args.json records the default experiment recipe. model.safetensors is a valid initialization checkpoint for smoke tests; it is not presented as a trained benchmark checkpoint. No benchmark score is claimed in this repository."
+    },
+    {
+      "title": "A multimodal educational robots driven via dynamic attention",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11560911/",
+      "snippet": "The overall framework diagram of the proposed method is presented. 3.2 Model architecture Design a multimodal architecture that integrates ALBEF, VGG19, and a dynamic attention mechanism. This model should be capable of aligning text and visual representations, using VGG19 to extract visual features, and dynamically focusing on relevant information during educational tasks. In order to ..."
+    },
+    {
+      "title": "PDF Demonstration of transformer-based ALBERT model on a 14nm analog AI ...",
+      "url": "https://www.nature.com/articles/s41467-025-63794-4.pdf",
+      "snippet": "With 7.7 million unique weights, the ALBERT-base model is a Transformer-based model with meaningful industry relevance, worthy of demonstration on an analog AI accelerator."
+    },
+    {
+      "title": "Demonstration of transformer-based ALBERT model on a 14nm analog AI ...",
+      "url": "https://www.nature.com/articles/s41467-025-63794-4",
+      "snippet": "The authors report the implementation of a Transformer-based model on the same architecture used in Large Language Models in a 14nm analog AI accelerator with 35 million Phase Change Memory ..."
+    }
+  ]
+}

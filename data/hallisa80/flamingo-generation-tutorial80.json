@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "hallisa80/flamingo-generation-tutorial80",
+  "slug": "hallisa80-flamingo-generation-tutorial80",
+  "author": "hallisa80",
+  "url": "https://huggingface.co/hallisa80/flamingo-generation-tutorial80",
+  "created_at": "2026-09-02T14:51:25.000Z",
+  "updated_at": "2026-09-02T14:53:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "flamingo",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HuggingFaceM4/idefics-80b · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceM4/idefics-80b",
+      "snippet": "Watch a Youtube tutorial IDEFICS (I mage-aware D ecoder E nhanced à la F lamingo with I nterleaved C ross-attention S) is an open-access reproduction of Flamingo, a closed-source visual language model developed by Deepmind. Like GPT-4, the multimodal model accepts arbitrary sequences of image and text inputs and produces text outputs."
+    },
+    {
+      "title": "zhao_lee_Flamingo_tutorial.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/cmaddis/csc2541_w25_notebooks/blob/main/zhao_lee_Flamingo_tutorial.ipynb",
+      "snippet": "The Flamingo model is a visual-language model that excels at few-shot learning by integrating visual information with a pre-trained language model, enabling it to perform a wide variety tasks, including open-ended tasks like captioning or visual question answering with minimal examples."
+    },
+    {
+      "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+      "url": "https://arxiv.org/abs/2204.14198",
+      "snippet": "For tasks lying anywhere on this spectrum, a single Flamingo model can achieve a new state of the art with few-shot learning, simply by prompting the model with task-specific examples. On numerous benchmarks, Flamingo outperforms models fine-tuned on thousands of times more task-specific data."
+    },
+    {
+      "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+      "url": "https://www.abhik.ai/papers/flamingo",
+      "snippet": "How Flamingo bridges a frozen vision encoder and a frozen language model with a Perceiver Resampler and gated cross-attention layers, enabling few-shot learning from interleaved image-text sequences."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2204.14198",
+      "snippet": "Introducing Flamingo, a Visual Language Model for few-shot learning across vision and language tasks with minimal examples and architectural innovations."
+    }
+  ]
+}

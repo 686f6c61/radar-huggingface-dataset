@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "FredrikKarlssonSpeech/whisper-tiny-finnish-mlx",
+  "slug": "fredrikkarlssonspeech-whisper-tiny-finnish-mlx",
+  "author": "FredrikKarlssonSpeech",
+  "url": "https://huggingface.co/FredrikKarlssonSpeech/whisper-tiny-finnish-mlx",
+  "created_at": "2026-09-02T12:10:14.000Z",
+  "updated_at": "2026-09-02T12:10:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "fi"
+  ],
+  "tags": [
+    "mlx",
+    "whisper",
+    "automatic-speech-recognition",
+    "fi",
+    "base_model:Finnish-NLP/whisper-tiny-finnish",
+    "base_model:finetune:Finnish-NLP/whisper-tiny-finnish",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 74386223,
+  "storage_human": "74 MB",
+  "base_model": "Finnish-NLP/whisper-tiny-finnish",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FredrikKarlssonSpeech/whisper-tiny-finnish-onnx · Hugging Face",
+      "url": "https://huggingface.co/FredrikKarlssonSpeech/whisper-tiny-finnish-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "Finnish-NLP/whisper-tiny-finnish · Hugging Face",
+      "url": "https://huggingface.co/Finnish-NLP/whisper-tiny-finnish",
+      "snippet": "WhisperTinyFinnishV3 This model is a fine-tuned version of openai/whisper-tiny on the common_voice_11_0 dataset. It achieves the following results on the evaluation set: Loss: 0.5363 Wer: 45.1376 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed ..."
+    },
+    {
+      "title": "whisper/README.md at main · openai/whisper · GitHub",
+      "url": "https://github.com/openai/whisper/blob/main/README.md",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "mlx-whisper · PyPI",
+      "url": "https://pypi.org/project/mlx-whisper/",
+      "snippet": "Whisper Speech recognition with Whisper in MLX. Whisper is a set of open source speech recognition models from OpenAI, ranging from 39 million to 1.5 billion parameters. 1 Setup Install ffmpeg: # on macOS using Homebrew (https://brew.sh/) brew install ffmpeg Install the mlx-whisper package with: pip install mlx-whisper Run CLI At its simplest: mlx_whisper audio_file.mp3 This will make a text ..."
+    }
+  ]
+}

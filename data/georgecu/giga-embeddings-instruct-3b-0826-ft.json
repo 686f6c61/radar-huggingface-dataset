@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "GeorgeCU/Giga-Embeddings-instruct-3B-0826-ft",
+  "slug": "georgecu-giga-embeddings-instruct-3b-0826-ft",
+  "author": "GeorgeCU",
+  "url": "https://huggingface.co/GeorgeCU/Giga-Embeddings-instruct-3B-0826-ft",
+  "created_at": "2026-09-02T15:02:25.000Z",
+  "updated_at": "2026-09-02T15:04:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3_bidirec",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers",
+    "embeddings",
+    "custom_code",
+    "ru",
+    "en",
+    "arxiv:2608.23806",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3150605312,
+  "parameters_human": "3.15B",
+  "storage_bytes": 6311982355,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GeorgeCU (Georgiy Tebelev) - Hugging Face",
+      "url": "https://huggingface.co/GeorgeCU/datasets",
+      "snippet": "Recent Activity updated a model32 minutes ago GeorgeCU/Giga-Embeddings-instruct-3B-0826-ft published a model34 minutes ago GeorgeCU/Giga-Embeddings-instruct-3B-0826-ft updated a modelabout 4 hours ago GeorgeCU/Giga-Embeddings-instruct-480M-0826-ft View all activity"
+    },
+    {
+      "title": "ai-sage/Giga-Embeddings-instruct · Hugging Face",
+      "url": "https://huggingface.co/ai-sage/Giga-Embeddings-instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Giga-Embeddings-instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/giga-embeddings-instruct-ai-sage",
+      "snippet": "Overview Giga-Embeddings-instruct is an instruction-tuned text embedding model built on the GigaChat-3b decoder-only LLM by ai-sage. The model produces 2048-dimensional embeddings using latent-attention pooling and handles sequences up to 4096 tokens. It was pretrained on GigaChat and further trained on a mixture of English and Russian data, making it specifically suited for bilingual ..."
+    },
+    {
+      "title": "Models · MTEB Leaderboard",
+      "url": "https://leaderboard.mteb.org/models",
+      "snippet": "Every embedding model on the MTEB Leaderboard — 700+ models with architecture type, parameter count, embedding dimension, context length, release date, and supported languages."
+    },
+    {
+      "title": "Giga-Embeddings-instruct · MTEB Leaderboard",
+      "url": "https://leaderboard.mteb.org/models/ai-sage/Giga-Embeddings-instruct",
+      "snippet": "dense embedding model · 3.2B params · 2048-dim · 4096 max tokens · open weights"
+    }
+  ]
+}

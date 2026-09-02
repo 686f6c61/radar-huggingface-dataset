@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sahoosk/anlp-a1-transformer-blt-ablation",
+  "slug": "sahoosk-anlp-a1-transformer-blt-ablation",
+  "author": "sahoosk",
+  "url": "https://huggingface.co/sahoosk/anlp-a1-transformer-blt-ablation",
+  "created_at": "2026-09-02T17:32:04.000Z",
+  "updated_at": "2026-09-02T18:27:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "transformer",
+    "from-scratch",
+    "ablation",
+    "byte-latent-transformer",
+    "blt",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128853907,
+  "storage_human": "129 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Viv0605101/anlp-a1-transformer-blt-ablation · Hugging Face",
+      "url": "https://huggingface.co/Viv0605101/anlp-a1-transformer-blt-ablation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - facebookresearch/blt: Code for BLT research paper",
+      "url": "https://github.com/facebookresearch/blt",
+      "snippet": "We introduce the Byte Latent Transformer architecture (BLTs), a new byte-level LLM architecture that for the first time, matches tokenization-based LLM performance at scale, with significant improvements in inference efficiency and robustness. BLT encodes bytes into dynamically sized patches, which ..."
+    },
+    {
+      "title": "avi1o1/anlp-a1 · Hugging Face",
+      "url": "https://huggingface.co/avi1o1/anlp-a1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Byte Latent Transformer: Patches Scale Better Than Tokens",
+      "url": "https://arxiv.org/abs/2412.09871",
+      "snippet": "We introduce the Byte Latent Transformer (BLT), a new byte-level LLM architecture that, for the first time, matches tokenization-based LLM performance at scale with significant improvements in inference efficiency and robustness. BLT encodes bytes into dynamically sized patches, which serve as the primary units of computation. Patches are segmented based on the entropy of the next byte ..."
+    },
+    {
+      "title": "GitHub - ybshankar010/anlp_transformer",
+      "url": "https://github.com/ybshankar010/anlp_transformer",
+      "snippet": "Contribute to ybshankar010/anlp_transformer development by creating an account on GitHub."
+    }
+  ]
+}

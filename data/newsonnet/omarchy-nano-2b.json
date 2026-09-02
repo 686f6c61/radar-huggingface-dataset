@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "NewSonnet/omarchy-nano-2b",
+  "slug": "newsonnet-omarchy-nano-2b",
+  "author": "NewSonnet",
+  "url": "https://huggingface.co/NewSonnet/omarchy-nano-2b",
+  "created_at": "2026-09-02T13:49:38.000Z",
+  "updated_at": "2026-09-02T14:52:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "omarchy",
+    "qwen3.5",
+    "qlora",
+    "lora",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-2B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 2044061683,
+  "storage_human": "2.0 GB",
+  "base_model": "Qwen/Qwen3.5-2B-Base",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Omarchy — Beautiful, Fun & Agentic Linux by DHH",
+      "url": "https://omarchy.org/",
+      "snippet": "Beautiful, Fun & Agentic Linux by DHH Beautiful, Fun & Agentic Linux by DHH The malleable OS for the age of agents. Where you can vibe your way through every alteration, tweak, and desire. Be the Omarch and command your agent!"
+    },
+    {
+      "title": "Omarchy: the Linux distro built for the agentic AI age",
+      "url": "https://tbreak.com/omarchy-linux-distro-agentic-ai/",
+      "snippet": "Omarchy is the Arch-based Linux distro with an AI agent built in. Here is the field it leads, from Ubuntu 26.04 to CachyOS, and how to try it."
+    },
+    {
+      "title": "GitHub - mitkox/omarchy-ai",
+      "url": "https://github.com/mitkox/omarchy-ai",
+      "snippet": "Omarchy AI Turn a fresh Arch installation into a fully-configured, beautiful, and modern AI development system based on Hyprland by running a single command. Built on the foundation of Omarchy, Omarchy AI is specifically designed for AI engineers and researchers who need a complete, local-first development environment."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "Nemotron 3 Nano - A new Standard for Efficient, Open, and Intelligent ...",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-efficient-open-intelligent-models",
+      "snippet": "Collection of datasets used in the post-training phase of Nemotron Nano, Super, and Ultra v3. • 50 items • Updated 7 days ago • 196 Large scale pre-training datasets used in the Nemotron family of models. • 15 items • Updated 7 days ago • 186 Open, Production-ready Enterprise Models • 33 items • Updated 4 days ago • 359"
+    }
+  ]
+}

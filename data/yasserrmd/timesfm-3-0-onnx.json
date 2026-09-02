@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yasserrmd/timesfm-3.0-onnx",
+  "slug": "yasserrmd-timesfm-3-0-onnx",
+  "author": "yasserrmd",
+  "url": "https://huggingface.co/yasserrmd/timesfm-3.0-onnx",
+  "created_at": "2026-09-02T15:50:37.000Z",
+  "updated_at": "2026-09-02T15:51:00.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "timesfm",
+    "timesfm3",
+    "time-series",
+    "forecasting",
+    "onnxruntime",
+    "cpu",
+    "int8",
+    "time-series-forecasting",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1667416109,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/timesfm-3.0-pytorch · Hugging Face",
+      "url": "https://huggingface.co/google/timesfm-3.0-pytorch",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - google-research/timesfm: TimesFM (Time Series Foundation Model ...",
+      "url": "https://github.com/google-research/timesfm/",
+      "snippet": "TimesFM 3.0 is out! TimesFM 3.0 introduces native multivariate time-series forecasting, flexible covariate support (both past-only and past-and-future covariates), superior zero-shot generalist capabilities, and top performance across all three major time-series foundation model benchmarks."
+    },
+    {
+      "title": "GitHub - google-research/timesfm: TimesFM (Time Series Foundation Model ...",
+      "url": "https://github.com/google-research/timesfm/?tab=readme-ov-file",
+      "snippet": "TimesFM 3.0 is out! TimesFM 3.0 introduces native multivariate time-series forecasting, flexible covariate support (both past-only and past-and-future covariates), superior zero-shot generalist capabilities, and top performance across all three major time-series foundation model benchmarks."
+    },
+    {
+      "title": "TimesFM-3: Google&#x27;s Multivariate Forecasting Model (Aug 2026 ...",
+      "url": "https://www.explainx.ai/blog/google-timesfm-3-multivariate-time-series-foundation-model-2026",
+      "snippet": "The Hugging Face drop (google/timesfm-3.-pytorch) got a second wave of attention when Omar Sanseviero — who leads developer relations for Google DeepMind and AI Studio — amplified the release on X on September 1, 2026, pointing builders at the weights and the Google Research write-up."
+    },
+    {
+      "title": "README.md · google/timesfm-3.0-pytorch at main - Hugging Face",
+      "url": "https://huggingface.co/google/timesfm-3.0-pytorch/blob/main/README.md",
+      "snippet": "TimesFM 3.0 (PyTorch) TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting. This repository contains the official PyTorch weights and configurations for TimesFM 3.0."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "rickychen01/aigf-gemma4-12b-parenbreak-merged",
+  "slug": "rickychen01-aigf-gemma4-12b-parenbreak-merged",
+  "author": "rickychen01",
+  "url": "https://huggingface.co/rickychen01/aigf-gemma4-12b-parenbreak-merged",
+  "created_at": "2026-09-02T12:57:22.000Z",
+  "updated_at": "2026-09-02T13:07:43.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4_unified",
+    "gemma4",
+    "lora-merged",
+    "conversational",
+    "aigf",
+    "image-text-to-text",
+    "zh",
+    "en",
+    "base_model:llmfan46/gemma-4-12B-it-uncensored-heretic",
+    "base_model:finetune:llmfan46/gemma-4-12B-it-uncensored-heretic",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951719188,
+  "storage_human": "24.0 GB",
+  "base_model": "llmfan46/gemma-4-12B-it-uncensored-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma4 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/gemma4",
+      "snippet": "Gemma4 Vision Model The key difference from previous Gemma releases for vision is the new design to process images of different sizes using a fixed-budget number of tokens. Unlike many models that squash every image into a fixed square (like 224×224), Gemma 4 keeps the image&#x27;s natural aspect ratio while making it the right size."
+    },
+    {
+      "title": "Introducing Gemma 4 12B - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/",
+      "snippet": "An overview of Gemma 4 12B, a model designed to bring high-performance multimodal intelligence directly to your laptop."
+    },
+    {
+      "title": "Gemma 4 12B: The Developer Guide - Google Developers Blog",
+      "url": "https://developers.googleblog.com/gemma-4-12b-the-developer-guide/",
+      "snippet": "Meet Gemma 4 12B: the first medium-sized, encoder-free multimodal model capable of natively ingesting audio and video. Ideal for local AI development with 16GB VRAM, Hugging Face integrations, and drop-in local API servers."
+    },
+    {
+      "title": "Gemma 4 by Google - Byte for byte, the most capable open models",
+      "url": "https://gemmai4.com/",
+      "snippet": "Gemma 4 is Google DeepMind&#x27;s open-weight model family - E2B, E4B, 12B Unified, 26B A4B MoE and 31B Dense. Apache 2.0, up to 256K context, multimodal, 140+ languages. Specs, benchmarks, downloads and deployment guides, updated August 2026."
+    }
+  ]
+}

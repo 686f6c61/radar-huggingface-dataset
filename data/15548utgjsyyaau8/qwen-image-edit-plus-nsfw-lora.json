@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "15548utgjsyyaau8/qwen-image-edit-plus-nsfw-lora",
+  "slug": "15548utgjsyyaau8-qwen-image-edit-plus-nsfw-lora",
+  "author": "15548utgjsyyaau8",
+  "url": "https://huggingface.co/15548utgjsyyaau8/qwen-image-edit-plus-nsfw-lora",
+  "created_at": "2026-09-02T17:08:39.000Z",
+  "updated_at": "2026-09-02T17:08:40.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "text-to-image",
+    "nsfw",
+    "image-editing",
+    "qwen-image-edit",
+    "not-for-all-audiences",
+    "image-to-image",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:adapter:Qwen/Qwen-Image-Edit-2511",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 590058864,
+  "storage_human": "590 MB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen-image-edit-plus-nsfw-lora - Hugging Face",
+      "url": "https://huggingface.co/ScottzillaSystems/qwen-image-edit-plus-nsfw-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aiunivers/qwen-image-edit-plus-nsfw-lora · Hugging Face",
+      "url": "https://huggingface.co/aiunivers/qwen-image-edit-plus-nsfw-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen-image-edit-plus - Alibaba Cloud Model Studio",
+      "url": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen-image-edit-plus",
+      "snippet": "The qwen series of image editing Plus models further optimizes inference performance and system stability based on the initial Edit model, significantly reducing the response time for image generation and editing. It also supports returning multiple images in a single request, greatly enhancing user experience."
+    },
+    {
+      "title": "Qwen AI Image Editor",
+      "url": "https://www.qwenaiimageeditor.com/",
+      "snippet": "Free Qwen AI image editor tutorials, gguf installs, safetensor pipelines, NSFW toggles, ControlNet, inpaint, VRAM tips."
+    },
+    {
+      "title": "qwen-image-edit-plus-lora: Image-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/replicate/qwen-image-edit-plus-lora-qwen",
+      "snippet": "Overview qwen-image-edit-plus-lora is an image editing model created by qwen that specializes in precise image modification guided by text instructions. The model uses Qwen2.5-VL for semantic understanding combined with a VAE encoder for visual fidelity preservation, enabling edits that maintain both the meaning and visual quality of the original image. The architecture incorporates an ..."
+    }
+  ]
+}

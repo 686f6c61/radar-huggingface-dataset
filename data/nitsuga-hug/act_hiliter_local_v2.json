@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nitsuga-hug/act_hiliter_local_v2",
+  "slug": "nitsuga-hug-act_hiliter_local_v2",
+  "author": "nitsuga-hug",
+  "url": "https://huggingface.co/nitsuga-hug/act_hiliter_local_v2",
+  "created_at": "2026-09-02T13:29:50.000Z",
+  "updated_at": "2026-09-02T13:31:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:nitsuga-hug/augs-hiliter_01",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714912,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nitsuga-hug/act_hiliter_local · Hugging Face",
+      "url": "https://huggingface.co/nitsuga-hug/act_hiliter_local",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nitsuga-hug/augs-hiliter_01 at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/nitsuga-hug/augs-hiliter_01/tree/main",
+      "snippet": "Datasets: nitsuga-hug / augs-hiliter_01 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot Libraries: Datasets Dask Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main augs-hiliter_01 814 MB 1 contributor History:11 commits nitsuga-hug Upload README.md with huggingface_hub bd110e1 ..."
+    },
+    {
+      "title": "Local AI Models — The Reference for Running AI Locally",
+      "url": "https://local-ai-models.ai/",
+      "snippet": "The reference for engineers running AI locally. VRAM math, hardware tradeoffs, model benchmarks, and the agent ecosystem — all in one place. Built to help you understand, not just install."
+    },
+    {
+      "title": "Run Local AI Models on Your PC | Check What Models You Can Run",
+      "url": "https://runlocalmodel.com/",
+      "snippet": "Find out which AI models your computer can run locally, and browse Agent Skills (SKILL.md) for Claude Code, Codex, and other AI agents. Check GPU VRAM compatibility for LLaMA, Gemma, Mistral, and more."
+    },
+    {
+      "title": "Free AI 3D Model Generator | Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Free AI 3D Model Generator: create 3D models from text or images for games, AR/VR, and 3D printing at zero cost."
+    }
+  ]
+}

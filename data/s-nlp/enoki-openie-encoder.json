@@ -33,7 +33,7 @@
     "base_model:finetune:answerdotai/ModernBERT-large",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 395098170,

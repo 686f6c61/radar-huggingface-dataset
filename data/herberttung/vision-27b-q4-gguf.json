@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "herberttung/vision-27b-q4-gguf",
+  "slug": "herberttung-vision-27b-q4-gguf",
+  "author": "herberttung",
+  "url": "https://huggingface.co/herberttung/vision-27b-q4-gguf",
+  "created_at": "2026-09-02T12:43:07.000Z",
+  "updated_at": "2026-09-02T12:43:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "vision",
+    "llama.cpp",
+    "image-text-to-text",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.8-27B Guide: GGUF, VRAM, Quants & Deployment - acecloud.ai",
+      "url": "https://acecloud.ai/blog/qwen3-8-27b-guide/",
+      "snippet": "Learn Qwen 3.8-27B VRAM requirements, GGUF quant sizes, Q4/Q5 options, context memory needs and how to run it with llama.cpp, Ollama, vLLM and SGLang."
+    },
+    {
+      "title": "Qwen3.8 27B GGUF Benchmark: Q4 to Q1 Accuracy and Token Efficiency",
+      "url": "https://kaitchup.substack.com/p/qwen38-27b-gguf-benchmark-q4-to-q1",
+      "snippet": "I evaluated 15 GGUF versions of Qwen3.8 27B, ranging from Q4 down to Q1, produced by several different providers. The Kaitchup - AI on a Budget is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber. The main goal was to measure two things: accuracy and token efficiency."
+    },
+    {
+      "title": "SC117/Qwen3.8-27B-Uncensored-FIT-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SC117/Qwen3.8-27B-Uncensored-FIT-GGUF",
+      "snippet": "14 quantized main language-model GGUFs · BF16 multimodal projector mmproj-Qwen3.8-27B-Uncensored-BF16.gguf (vision, pairs with any tier) · per-tier plan, effective recipe, tensor override file and quantize record (fit-plans/) · full metrics (results/p4-results.json) · checksums (results/SHA256SUMS)"
+    },
+    {
+      "title": "Run Qwen3.8-27B Locally: 24GB Mac and GPU Guide (2026)",
+      "url": "https://modelfit.io/blog/run-qwen38-27b-locally-2026/",
+      "snippet": "A Q4 quant is about 17.8GB, so a 24GB Mac or GPU handles it, and AMD published day-0 numbers of 24.5 tok/s on Ryzen AI Max+ 395 (AMD, 2026). This guide covers the three install paths, the RAM math, and what to expect on 16GB machines. TL;DR: Qwen3.8-27B is a dense 27B vision-language model under Apache-2.0 with 262,144-token context and MTP ..."
+    }
+  ]
+}

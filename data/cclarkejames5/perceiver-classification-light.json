@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Cclarkejames5/perceiver-classification-light",
+  "slug": "cclarkejames5-perceiver-classification-light",
+  "author": "Cclarkejames5",
+  "url": "https://huggingface.co/Cclarkejames5/perceiver-classification-light",
+  "created_at": "2026-09-02T18:06:58.000Z",
+  "updated_at": "2026-09-02T18:07:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cclarkejames5 (James) - Hugging Face",
+      "url": "https://huggingface.co/Cclarkejames5",
+      "snippet": "models1 Cclarkejames5/robotics-vision-language-study-2024 49.6k•Updated about 6 hours ago"
+    },
+    {
+      "title": "Perceiver IO: ImageNet Classification.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/deepmind/deepmind_research/blob/master/perceiver/colabs/imagenet_classification.ipynb",
+      "snippet": "# Unless required by applicable law or agreed to in writing, software"
+    },
+    {
+      "title": "perceiver_image_classification - Colab",
+      "url": "https://colab.research.google.com/github/keras-team/keras-io/blob/master/examples/vision/ipynb/perceiver_image_classification.ipynb",
+      "snippet": "Introduction This example implements the Perceiver: General Perception with Iterative Attention model by Andrew Jaegle et al. for image classification, and demonstrates it on the CIFAR-100 dataset."
+    },
+    {
+      "title": "deepmind-research/perceiver/README.md at master · google ... - GitHub",
+      "url": "https://github.com/google-deepmind/deepmind-research/blob/master/perceiver/README.md",
+      "snippet": "We also provide an example training script to train a Perceiver IO model for ImageNet classification. The provided hyperparameters are the settings used to train Perceiver IO with 2D Fourier position encodings, as described in section 4.5 and supplemental section H of the paper [2]."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

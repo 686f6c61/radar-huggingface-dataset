@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mlx-community/Qwen3.8-Flash-Next-4bit",
+  "slug": "mlx-community-qwen3-8-flash-next-4bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/Qwen3.8-Flash-Next-4bit",
+  "created_at": "2026-08-31T23:57:55.000Z",
+  "updated_at": "2026-09-02T12:24:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 88,
+  "trending_score": 0,
+  "parameters": 33633899411,
+  "parameters_human": "33.63B",
+  "storage_bytes": 111539412572,
+  "storage_human": "111.5 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/Qwen3.8-Flash-Next-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen3.8-Flash-Next-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "In this release we are opening the weights of Qwen3.8-Flash-Next, a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4. It plays the same role that Qwen3-Next played for Qwen3.5: the hybrid Gated DeltaNet + Gated Attention design introduced at that time has since been used across the Qwen3.5, Qwen3.6, Qwen3.7 and Qwen3.8 series. We are again releasing ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next MLX - a pipenetwork Collection",
+      "url": "https://huggingface.co/collections/pipenetwork/qwen38-flash-next-mlx",
+      "snippet": "Apple Silicon (MLX) builds of Qwen3.8-Flash-Next with a validated qwen4_exp runtime: github.com/PipeNetwork/qwen38-flash-next-mlx"
+    },
+    {
+      "title": "GitHub - ai-integr8tor/QwenLM_Qwen3.8-Flash-Next",
+      "url": "https://github.com/ai-integr8tor/QwenLM_Qwen3.8-Flash-Next/tree/main",
+      "snippet": "Qwen3.8-Flash-Next In this release we are opening the weights of Qwen3.8-Flash-Next, a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4. It plays the same role that Qwen3-Next played for Qwen3.5: the hybrid Gated DeltaNet + Gated Attention design introduced at that time has since been used across the Qwen3.5, Qwen3.6, Qwen3.7 and Qwen3.8 series. We ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next 176B Now Available - Announcements - NVIDIA ...",
+      "url": "https://forums.developer.nvidia.com/t/qwen3-8-flash-next-176b-now-available/381413",
+      "snippet": "Qwen3.8-Flash-Next is a multimodal mixture-of-experts (MoE) model with a 125B-parameter main model supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token. It has a native 262,144-token context window, extensible to 1M tokens with YaRN Performance on GB300 NVL72 Running the FP8 variant with TensorRT-LLM on GB300 NVL72 (72 Blackwell Ultra GPUs, 130 TB/s ..."
+    }
+  ]
+}

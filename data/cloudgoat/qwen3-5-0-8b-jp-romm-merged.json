@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "CloudGoat/Qwen3.5-0.8B-JP-RoMM-Merged",
+  "slug": "cloudgoat-qwen3-5-0-8b-jp-romm-merged",
+  "author": "CloudGoat",
+  "url": "https://huggingface.co/CloudGoat/Qwen3.5-0.8B-JP-RoMM-Merged",
+  "created_at": "2026-09-02T10:34:02.000Z",
+  "updated_at": "2026-09-02T10:35:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "image-text-to-text",
+    "mergekit",
+    "merge",
+    "conversational",
+    "base_model:CloudGoat/Qwen3.5-0.8B-JP-Tuned-v1.1",
+    "base_model:merge:CloudGoat/Qwen3.5-0.8B-JP-Tuned-v1.1",
+    "base_model:Holy-fox/Qwen3.5-0.8B-JP",
+    "base_model:merge:Holy-fox/Qwen3.5-0.8B-JP",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 754493248,
+  "parameters_human": "754.5M",
+  "storage_bytes": 2340861439,
+  "storage_human": "2.3 GB",
+  "base_model": "Holy-fox/Qwen3.5-0.8B-JP, CloudGoat/Qwen3.5-0.8B-JP-Tuned-v1.1",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-0.8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-0.8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CloudGoat/Qwen3.5-0.8B-JP-Tuned-v1.0 · Hugging Face",
+      "url": "https://huggingface.co/CloudGoat/Qwen3.5-0.8B-JP-Tuned-v1.0",
+      "snippet": "A fine-tuned model of Qwen3.5-0.8B using a high-quality dataset. Practicality is not guaranteed. Created as part of a hobby. It was trained with 3.72 million tokens."
+    },
+    {
+      "title": "qwen3.5:0.8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:0.8b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_5_0_8b",
+      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "Run & Benchmark Qwen3.5 0.8B: Smallest Multimodal AI Model",
+      "url": "https://codersera.com/blog/run-and-benchmark-qwen35-08b/",
+      "snippet": "Learn how to install, run, benchmark, compare, and demo Qwen3.5 0.8B locally. Explore hardware needs, performance tests, pricing, and alternatives."
+    }
+  ]
+}

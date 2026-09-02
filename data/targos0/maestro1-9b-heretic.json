@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Targos0/Maestro1-9B-Heretic",
+  "slug": "targos0-maestro1-9b-heretic",
+  "author": "Targos0",
+  "url": "https://huggingface.co/Targos0/Maestro1-9B-Heretic",
+  "created_at": "2026-09-02T19:04:43.000Z",
+  "updated_at": "2026-09-02T19:04:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "it"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_vl",
+    "image-text-to-text",
+    "heretic",
+    "multimodal",
+    "vision-language",
+    "reasoning",
+    "thinking",
+    "math",
+    "code",
+    "long-context",
+    "conversational",
+    "en",
+    "it",
+    "base_model:vectionlabs/Maestro1-9B",
+    "base_model:quantized:vectionlabs/Maestro1-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 119296961993,
+  "storage_human": "119.3 GB",
+  "base_model": "vectionlabs/Maestro1-9B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "haffner/Maestro1-9B-Heretic · Hugging Face",
+      "url": "https://huggingface.co/haffner/Maestro1-9B-Heretic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vectionlabs/Maestro1-9B · Hugging Face",
+      "url": "https://huggingface.co/vectionlabs/Maestro1-9B",
+      "snippet": "A newer version of this model is available: vectionlabs/Maestro-2-9B-Preview"
+    },
+    {
+      "title": "Maestro1-9B-Heretic API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/haffner/Maestro1-9B-Heretic",
+      "snippet": "Run Maestro1-9B-Heretic with FriendliAI inference. Heretic&#x27;ed safetensors and GGUF quants of https://huggingface.co/vectionlabs/Maestro1-9B."
+    },
+    {
+      "title": "Maestro1-9B: Mirror of https://huggingface.co/vectionlabs ... - Gitee",
+      "url": "https://gitee.com/hf-models/Maestro1-9B",
+      "snippet": "Abstract Maestro1-9B is a dense, 9-billion-parameter vision-language model built for hard problems: multi-step mathematical proof, competitive-programming-grade code synthesis, and visual reasoning over images and video — within a single model and a single context window of up to 1M tokens."
+    },
+    {
+      "title": "vectionlabs/Maestro1-9B • hfviewer",
+      "url": "https://hfviewer.com/vectionlabs/Maestro1-9B",
+      "snippet": "A Qwen3.5-family multimodal text-generation model from the XORTRON Criminal Computing project, fine-tuned from a DavidAU Qwen3.6 27B Fable Fusion base as an AI-safety and alignment research experiment. An action-conditioned world model for Counter-Strike 2 that takes keyboard and mouse actions and imagines the next frames."
+    }
+  ]
+}

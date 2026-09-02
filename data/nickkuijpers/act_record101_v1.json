@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "NickKuijpers/act_record101_v1",
+  "slug": "nickkuijpers-act_record101_v1",
+  "author": "NickKuijpers",
+  "url": "https://huggingface.co/NickKuijpers/act_record101_v1",
+  "created_at": "2026-09-02T16:35:05.000Z",
+  "updated_at": "2026-09-02T16:35:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:willemelliw/record_150_ep_clips",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NickKuijpers (Kuijpers Nick) - Hugging Face",
+      "url": "https://huggingface.co/NickKuijpers",
+      "snippet": "RoboMind AI Orchestrator 🤖 🐳 Orchestrate robotic processes with AI NickKuijpers Dec 21, 2025 Sleeping Agents"
+    },
+    {
+      "title": "Agentic Refactoring Ai Refactoring Ai Code Quality Ai…",
+      "url": "https://nicklaunches.com/products/act101/",
+      "snippet": "About act101 act101 transforms code editing by using AI agents to refactor or port code across 163 languages. It provides a deterministic process with a merge/review/block verdict and rollback capabilities. The platform includes 183 refactor operations and 41 codebase analyzers, accessible via a command-line interface and various integrations."
+    },
+    {
+      "title": "NickKuijpers (Kuijpers Nick) - Hugging Face",
+      "url": "https://huggingface.co/datasets/NickKuijpers/",
+      "snippet": "Organizations NickKuijpers&#x27;s datasets1 Sort: Recently updated NickKuijpers/test0 Viewer •Updated Dec 8, 2025•2.23k• 24"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

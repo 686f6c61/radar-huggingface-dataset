@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Geong/DARL",
+  "slug": "geong-darl",
+  "author": "Geong",
+  "url": "https://huggingface.co/Geong/DARL",
+  "created_at": "2026-09-02T13:03:58.000Z",
+  "updated_at": "2026-09-02T13:14:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dots_ocr",
+    "text-generation",
+    "document-parsing",
+    "ocr",
+    "markdown",
+    "diffusion",
+    "vision-language",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "base_model:dots-studio/dots.ocr",
+    "base_model:finetune:dots-studio/dots.ocr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1101567451,
+  "storage_human": "1.1 GB",
+  "base_model": "dots-studio/dots.ocr",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Denoising Autoregressive Representation Learning - arXiv.org",
+      "url": "https://arxiv.org/html/2403.05196v2",
+      "snippet": "We development, DARL, a model unifying visual representation learning and image generation, leveraging the power of autoregressive and denoising diffusion models."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "Chat now | DarLink AI",
+      "url": "https://darlink.ai/chat",
+      "snippet": "Talk to lifelike AI Characters on DarLink. Discover their personalities, share emotions, and build unforgettable connections that evolve with every chat."
+    },
+    {
+      "title": "AI Companion App for Gaming and Chat",
+      "url": "https://www.darlin.ai/",
+      "snippet": "Meet Darlin.ai, your AI companion app for immersive chat, gaming support, and personalized virtual characters."
+    },
+    {
+      "title": "[2209.14566] Diffusion Adversarial Representation Learning for Self ...",
+      "url": "https://arxiv.org/abs/2209.14566",
+      "snippet": "To address this, here we introduce a novel diffusion adversarial representation learning (DARL) model that leverages a denoising diffusion probabilistic model with adversarial learning, and apply it to vessel segmentation."
+    }
+  ]
+}

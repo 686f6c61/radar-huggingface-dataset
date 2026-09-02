@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Akahsizrr/Fuse-2-MoE-BF16",
+  "slug": "akahsizrr-fuse-2-moe-bf16",
+  "author": "Akahsizrr",
+  "url": "https://huggingface.co/Akahsizrr/Fuse-2-MoE-BF16",
+  "created_at": "2026-08-30T14:23:37.000Z",
+  "updated_at": "2026-08-30T18:50:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "GGUF",
+    "llama.cpp",
+    "MoE",
+    "Qwen3.5",
+    "Fuse4",
+    "en",
+    "base_model:Akahsizrr/Fuse-2",
+    "base_model:quantized:Akahsizrr/Fuse-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 9,
+  "downloads_30d": 344,
+  "trending_score": 9,
+  "parameters": 8868801536,
+  "parameters_human": "8.87B",
+  "storage_bytes": 17752145824,
+  "storage_human": "17.8 GB",
+  "base_model": "Akahsizrr/Fuse-2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Akahsizrr/Fuse-2-MoE-BF16 · Hugging Face",
+      "url": "https://huggingface.co/Akahsizrr/Fuse-2-MoE-BF16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Quantized Models for Akahsizrr/Fuse-2 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Akahsizrr/Fuse-2",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Reset Akahsizrr/Fuse-2 Adapters Finetunes Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "Fused MoE Kernel Features - vLLM",
+      "url": "https://docs.vllm.ai/en/latest/design/moe_kernel_features/",
+      "snippet": "Fused MoE Kernel Features The purpose of this document is to provide an overview of the various MoE kernels (both modular and non-modular) so it will be easier to select an appropriate set of kernels for any particular situation."
+    },
+    {
+      "title": "Fused MoE Implementation | ROCm/aiter | DeepWiki",
+      "url": "https://deepwiki.com/ROCm/aiter/4.1-fused-moe-implementation",
+      "snippet": "This document describes the implementation of the Fused Mixture of Experts (MoE) system in AITER. The fused MoE implementation optimizes the computation of sparse expert selection and activation, combining token routing, expert-specific matrix multiplications, and result aggregation into an efficient execution pipeline. The system supports:"
+    },
+    {
+      "title": "Akahsizrr/Fuse-2-MoE-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/Akahsizrr/Fuse-2-MoE-GGUF/tree/main",
+      "snippet": "Akahsizrr / Fuse-2-MoE-GGUF like 1 GGUF English GGUF llama.cpp MoE Qwen3.5 Fuse4 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

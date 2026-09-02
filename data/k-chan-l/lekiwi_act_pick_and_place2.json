@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "k-chan-l/lekiwi_act_pick_and_place2",
+  "slug": "k-chan-l-lekiwi_act_pick_and_place2",
+  "author": "k-chan-l",
+  "url": "https://huggingface.co/k-chan-l/lekiwi_act_pick_and_place2",
+  "created_at": "2026-09-02T17:43:34.000Z",
+  "updated_at": "2026-09-02T17:44:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:k-chan-l/lekiwi_pick_and_place2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51674761,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206739996,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "k-chan-l/lekiwi_pick_and_place · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/k-chan-l/lekiwi_pick_and_place",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "k-chan-l/lekiwi_pick_and_place2 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/k-chan-l/lekiwi_pick_and_place2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Activity · k-chan-l/lekiwi-act-mobile-pick-and-place · GitHub",
+      "url": "https://github.com/k-chan-l/lekiwi-act-mobile-pick-and-place/activity",
+      "snippet": "Mobile pick-and-place imitation learning on LeKiwi with LeRobot + ACT — follow-up to so101-act-pick-and-place - Activity · k-chan-l/lekiwi-act-mobile-pick-and-place"
+    },
+    {
+      "title": "lekiwi-act-mobile-pick-and-place - GitHub",
+      "url": "https://github.com/k-chan-l/lekiwi-act-mobile-pick-and-place",
+      "snippet": "LeKiwi 모바일 매니퓰레이터(SO-101 팔 + 3륜 홀로노믹 베이스)로 ACT 정책을 학습해 이동 + 픽앤플레이스 태스크를 수행하는 프로젝트입니다. 고정형 SO-101 팔로 진행한 so101-act-pick-and-place의 후속 프로젝트로, 동일한 모방학습 파이프 ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

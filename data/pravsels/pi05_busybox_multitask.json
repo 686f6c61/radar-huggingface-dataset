@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "pravsels/pi05_busybox_multitask",
+  "slug": "pravsels-pi05_busybox_multitask",
+  "author": "pravsels",
+  "url": "https://huggingface.co/pravsels/pi05_busybox_multitask",
+  "created_at": "2026-09-01T22:46:10.000Z",
+  "updated_at": "2026-09-02T13:34:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pi05",
+    "robotics",
+    "openpi",
+    "vla",
+    "dataset:villekuosmanen/busybox_multitask",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87087489600,
+  "storage_human": "87.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pravsels/pi05_busybox_push_green_button · Hugging Face",
+      "url": "https://huggingface.co/pravsels/pi05_busybox_push_green_button",
+      "snippet": "pi05_busybox_push_green_button Full-component fine-tune of π0.5 for busybox_push_green_button on SO101 data."
+    },
+    {
+      "title": "pravsels (Praveen Selvaraj) - Hugging Face",
+      "url": "https://huggingface.co/pravsels/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 16 hours ago ... updated a model 1 day ago ... published a model 1 day ago"
+    },
+    {
+      "title": "pravsels (Praveen Selvaraj) / Repositories · GitHub",
+      "url": "https://github.com/pravsels?tab=repositories",
+      "snippet": "An app where the AI guides you to learn and understand things deeply"
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "π 0.5 : a Vision-Language-Action Model with Open-World Generalization",
+      "url": "https://arxiv.org/html/2504.16054v1",
+      "snippet": "Abstract In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe π 0.5 $π0.5$, a new model based on π 0 $π0$ that uses co-training on ..."
+    }
+  ]
+}

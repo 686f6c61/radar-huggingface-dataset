@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "vaghawan/xtts-v2-stage-a-bibletts-hausa-1epoch-87h-bible_tts_speaker",
+  "slug": "vaghawan-xtts-v2-stage-a-bibletts-hausa-1epoch-87h-bible_tts_speaker",
+  "author": "vaghawan",
+  "url": "https://huggingface.co/vaghawan/xtts-v2-stage-a-bibletts-hausa-1epoch-87h-bible_tts_speaker",
+  "created_at": "2026-09-02T12:17:10.000Z",
+  "updated_at": "2026-09-02T12:19:08.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "coqui-tts",
+  "languages": [
+    "ha"
+  ],
+  "tags": [
+    "coqui-tts",
+    "text-to-speech",
+    "xtts",
+    "hausa",
+    "coqui",
+    "ha",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5649639366,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to Bible TTS | bibleTTS",
+      "url": "https://masakhane-io.github.io/bibleTTS/",
+      "snippet": "BibleTTS is a large high-quality open Text-to-Speech dataset with up to 80 hours of single speaker, studio quality 48kHz recordings for each language. We release aligned speech and text for six languages spoken in Sub-Saharan Africa, with unaligned data available for four additional languages, derived from the Biblica open.bible project."
+    },
+    {
+      "title": "coqui/XTTS-v2 · Hugging Face",
+      "url": "https://huggingface.co/coqui/XTTS-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - masakhane-io/bibleTTS: BibleTTS project website",
+      "url": "https://github.com/masakhane-io/bibleTTS",
+      "snippet": "BibleTTS project website. Contribute to masakhane-io/bibleTTS development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - translatorswb/Bible-TTS",
+      "url": "https://github.com/translatorswb/Bible-TTS",
+      "snippet": "Replace -55 with the threshold you want to use to filter out unaligned segments."
+    },
+    {
+      "title": "vaghawan/xtts-v2-multi-speaker-3-speakers-epoch10 · Hugging Face",
+      "url": "https://huggingface.co/vaghawan/xtts-v2-multi-speaker-3-speakers-epoch10",
+      "snippet": "/ xtts-v2-multi-speaker-3-speakers-epoch10 like 0 Text-to-Speech Hausa coqui-tts xtts hausa coqui License:other Model card FilesFiles and versions xet Community Copy to bucket new Configuration Parsing Warning: Invalid JSON for config file config.json XTTS-v2 Hausa — multi-speaker (3 speakers, 10 epochs) Files Quick start All speakers (one ..."
+    }
+  ]
+}

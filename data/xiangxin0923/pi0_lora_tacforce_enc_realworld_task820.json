@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "xiangxin0923/pi0_lora_tacforce_enc_realworld_task820",
+  "slug": "xiangxin0923-pi0_lora_tacforce_enc_realworld_task820",
+  "author": "xiangxin0923",
+  "url": "https://huggingface.co/xiangxin0923/pi0_lora_tacforce_enc_realworld_task820",
+  "created_at": "2026-09-02T16:33:14.000Z",
+  "updated_at": "2026-09-02T16:46:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9577158894,
+  "storage_human": "9.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xiangxin0923/pi05_lora_tacforce_realworld_task820 at main",
+      "url": "https://huggingface.co/xiangxin0923/pi05_lora_tacforce_realworld_task820/tree/main",
+      "snippet": "xiangxin0923 / pi05_lora_tacforce_realworld_task820 like 0 Robotics openpi pi05 Model card FilesFiles and versions xet Community Copy to bucket new main pi05_lora_tacforce_realworld_task820 9.61 GB Ctrl+K Ctrl+K 1 contributor History:2 commits xiangxin0923 Update checkpoints and norm_stats 5588a68 verifiedabout 11 hours ago checkpointsUpdate checkpoints and norm_statsabout 11 hours ago norm ..."
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "xiangxin0923/pi05_lora_tacfield_realworld_replayed_task820 - Hugging Face",
+      "url": "https://huggingface.co/xiangxin0923/pi05_lora_tacfield_realworld_replayed_task820",
+      "snippet": "xiangxin0923 / pi05_lora_tacfield_realworld_replayed_task820 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "GitHub - YvanKOB/openpi---Physical-Intelligence",
+      "url": "https://github.com/YvanKOB/openpi---Physical-Intelligence",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains two types of models: the π₀ model, a flow-based diffusion vision-language-action model (VLA) the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. For both models, we provide base model checkpoints, pre-trained on 10k+ hours of ..."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "jaymanaryan/CleanPool-v2-w30",
+  "slug": "jaymanaryan-cleanpool-v2-w30",
+  "author": "jaymanaryan",
+  "url": "https://huggingface.co/jaymanaryan/CleanPool-v2-w30",
+  "created_at": "2026-09-02T15:40:56.000Z",
+  "updated_at": "2026-09-02T15:41:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2311.03099",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:merge:Qwen/Qwen3-0.6B",
+    "base_model:mrfakename/dreamwriter-0.6b-beta",
+    "base_model:merge:mrfakename/dreamwriter-0.6b-beta",
+    "base_model:prithivMLmods/Cerium-Qwen3-R1-Dev",
+    "base_model:merge:prithivMLmods/Cerium-Qwen3-R1-Dev",
+    "base_model:prithivMLmods/Nenque-MoT-0.6B-Elite14",
+    "base_model:merge:prithivMLmods/Nenque-MoT-0.6B-Elite14",
+    "base_model:suayptalha/Qwen3-0.6B-Diagnose",
+    "base_model:merge:suayptalha/Qwen3-0.6B-Diagnose",
+    "base_model:suayptalha/Qwen3-0.6B-Treatment",
+    "base_model:merge:suayptalha/Qwen3-0.6B-Treatment",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 1514722982,
+  "storage_human": "1.5 GB",
+  "base_model": "mrfakename/dreamwriter-0.6b-beta, prithivMLmods/Cerium-Qwen3-R1-Dev, suayptalha/Qwen3-0.6B-Treatment, Qwen/Qwen3-0.6B, suayptalha/Qwen3-0.6B-Diagnose, prithivMLmods/Nenque-MoT-0.6B-Elite14",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Free AI 3D Model Generator: High Quality AI 3D Models",
+      "url": "https://manex3d.com/ai-3d-model-generator",
+      "snippet": "An AI 3D Model Generator That Goes From Ideas to Assets Fast Manex3D turns reference images and plain-text prompts into fully textured, production-ready 3D models in under a minute. Generate clean geometry, high-quality materials, and game-ready topology, then export to GLB, OBJ, STL or PLY, and drop straight into your 3D model editor or game engine!"
+    },
+    {
+      "title": "AI 3D Model Generator — Create & Animate 3D Characters - Tripo AI",
+      "url": "https://www.tripo3d.ai/features/ai-3d-model-generator",
+      "snippet": "Tripo AI is an all-in-one AI 3D model generator that creates production-ready 3D models from images or text prompts in seconds. It covers the full pipeline — generation, texturing, rigging, segmentation, and mesh optimization — in a single platform."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

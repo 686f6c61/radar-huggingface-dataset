@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "FredrikKarlssonSpeech/nb-whisper-medium-mlx-4bit",
+  "slug": "fredrikkarlssonspeech-nb-whisper-medium-mlx-4bit",
+  "author": "FredrikKarlssonSpeech",
+  "url": "https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-medium-mlx-4bit",
+  "created_at": "2026-09-02T12:04:56.000Z",
+  "updated_at": "2026-09-02T12:06:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "nb",
+    "no"
+  ],
+  "tags": [
+    "mlx",
+    "whisper",
+    "automatic-speech-recognition",
+    "4-bit",
+    "nb",
+    "no",
+    "base_model:NbAiLab/nb-whisper-medium",
+    "base_model:finetune:NbAiLab/nb-whisper-medium",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 435558705,
+  "storage_human": "436 MB",
+  "base_model": "NbAiLab/nb-whisper-medium",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NbAiLab/nb-whisper-medium · Hugging Face",
+      "url": "https://huggingface.co/NbAiLab/nb-whisper-medium",
+      "snippet": "Whisper CPP Whisper CPP is a C++ implementation of the Whisper model, offering the same functionalities with the added benefits of C++ efficiency and performance optimizations. This allows embedding any Whisper model into a binary file, facilitating the development of real applications."
+    },
+    {
+      "title": "README.md · FredrikKarlssonSpeech/nb-whisper-medium-onnx at main",
+      "url": "https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-medium-onnx/blob/main/README.md",
+      "snippet": "FredrikKarlssonSpeech / nb-whisper-medium-onnx like 0 Automatic Speech Recognition Transformers ONNX Norwegian Bokmål Norwegian whisper License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "NB-Whisper Demo - AI-lab",
+      "url": "https://ai.nb.no/nb-whisper-demo/",
+      "snippet": "This demo uses the NB-Whisper Large model, available at HuggingFace. This demo is temporary, and may have significant amounts of downtime. If you need a permanent solution for production, please use the model directly or check out this list of providers of solutions using NB-Whisper."
+    },
+    {
+      "title": "NbAiLab/nb-whisper-medium - Hugging Face Hub Package Securit... - Socket",
+      "url": "https://socket.dev/huggingface/package/nbailab/nb-whisper-medium",
+      "snippet": "NB-Whisper Medium Introducing the Norwegian NB-Whisper Medium model, proudly developed by the National Library of Norway. NB-Whisper is a cutting-edge series of models designed for automatic speech recognition (ASR) and speech translation. These models are based on the work of OpenAI&#x27;s Whisper. Each model in the series has been trained for 250,000 steps, utilizing a diverse dataset of 8 ..."
+    },
+    {
+      "title": "GitHub - NbAiLab/nb-whisper",
+      "url": "https://github.com/NbAiLab/nb-whisper",
+      "snippet": "Contribute to NbAiLab/nb-whisper development by creating an account on GitHub."
+    }
+  ]
+}

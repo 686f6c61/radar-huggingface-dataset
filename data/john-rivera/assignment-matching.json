@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "john-rivera/assignment-matching",
+  "slug": "john-rivera-assignment-matching",
+  "author": "john-rivera",
+  "url": "https://huggingface.co/john-rivera/assignment-matching",
+  "created_at": "2026-09-02T18:48:35.000Z",
+  "updated_at": "2026-09-02T18:48:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model AI Assignments",
+      "url": "http://modelai.gettysburg.edu/",
+      "snippet": "Model AI Assignments is the largest, open-access, peer-reviewed AI assignment repository. Accepted assignments are presented in sessions at the Educational Advances in Artificial Intelligence Symposium, collocated with AAAI."
+    },
+    {
+      "title": "Towards Human-AI Complementarity in Matching Tasks",
+      "url": "https://arxiv.org/html/2508.13285v1",
+      "snippet": "In this work, we have introduced CoMatch, a hybrid decision-support framework aimed at achieving human-AI complementarity in matching tasks, with a particular focus on identifying how many decisions to defer in large-scale matching tasks."
+    },
+    {
+      "title": "PDF Model AI Assignments 2025",
+      "url": "https://cs.gettysburg.edu/~tneller/papers/maia25.pdf",
+      "snippet": "The Model AI Assignments session seeks to gather and dis-seminate the best assignment designs of the Artificial In-telligence (AI) Education community. Recognizing that as-signments form the core of student learning experience, we here present abstracts of thirteen AI assignments from the 2025 session that are easily adoptable, playfully ..."
+    },
+    {
+      "title": "Model AI Assignments 2025 | Proceedings of the AAAI Conference on ...",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/35198",
+      "snippet": "The Model AI Assignments session seeks to gather and disseminate the best assignment designs of the Artificial Intelligence (AI) Education community. Recognizing that assignments form the core of student learning experience, we here present abstracts of thirteen AI assignments from the 2025 session that are easily adoptable, playfully engaging, and flexible for a variety of instructor needs ..."
+    },
+    {
+      "title": "(Pdf) Technical Deep Dive: Ai-powered Talent Matching Systems ...",
+      "url": "https://www.researchgate.net/publication/389519783_TECHNICAL_DEEP_DIVE_AI-POWERED_TALENT_MATCHING_SYSTEMS-TRANSFORMING_RECRUITMENT_THROUGH_ADVANCED_AI_AND_DISTRIBUTED_COMPUTING",
+      "snippet": "This comprehensive technical article explores the transformation of recruitment processes through AI-powered talent matching systems. The article examines the architecture, implementation, and ..."
+    }
+  ]
+}

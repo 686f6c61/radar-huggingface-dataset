@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "YUNSUN7/xg-lyrics-generator",
+  "slug": "yunsun7-xg-lyrics-generator",
+  "author": "YUNSUN7",
+  "url": "https://huggingface.co/YUNSUN7/xg-lyrics-generator",
+  "created_at": "2026-09-02T15:57:21.000Z",
+  "updated_at": "2026-09-02T17:14:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "base_model:openai-community/gpt2",
+    "base_model:finetune:openai-community/gpt2",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 7276224341,
+  "storage_human": "7.3 GB",
+  "base_model": "gpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Music & Song Generator - AI Music Generator",
+      "url": "https://duckduckgo.com/y.js?ad_domain=musicgeneratorai.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=NINpSNr0QPCq56qu7zqIvEZxpik56DxFhtRFXlQw43pb%2Dwv20P5gIVPug2j6ZklahkFAzjPPQzj46HZowpg4526PNnj%2DBbq4XjcOSltpPSafC5g7k9C2KEf%2DpCFXORTv0RJDKitVJburXVEBneZmCTNlRQ%2DIFFLmW965iWrolI0.yUT8ReVNEpTfZx1V0JW9Sw&rut=d3c6ddc84e43a2d110f9658591c6c9f0f8b32b15bc2ebdc1e3ff7e267d357a9c&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8307kBg4_kPbr7HZmRlQVbTVUCUyVQqfAW9hC8bqW%2D5SXXXpNFQpgsgVlCUn50xC83I8mg%2DskXXWotmMBIvemrWOs_71_2KDGKoOLwk9DfyunjCG_aYn9UH8RAzswEB2FG19BEMDe5YqvQdv9cPUnN5ObngfykWrfRf1H1uGs5N3FseDRxh_xd9bFxYgFimtuX8PS26bgrqg0t%2DSHCeT1NoeqFXM%26u%3DaHR0cHMlM2ElMmYlMmZtdXNpY2dlbmVyYXRvcmFpLmNvbSUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX2NhbXBhaWduJTNkYW1lcmljYSUyNnV0bV90ZXJtJTNkYWklMjUyMGdlbmVyYXRlZCUyNTIwc29uZ3MlMjZtc2Nsa2lkJTNkYmNhN2NhZjljOWEwMWYzYzEyZTZhMDYxYTgyYWQ2YjM%26rlid%3Dbca7caf9c9a01f3c12e6a061a82ad6b3&vqd=4-123918042029151296256975641671326399949&iurl=%7B1%7DIG%3D05D9E6DBF1A94406A67D0155F889EBB9%26CID%3D35A6AB35C6FB62DD3B8BBCFDC7F56338%26ID%3DDevEx%2C5037.1",
+      "snippet": "Create studio-quality music with AI in few minutes. No musical experience needed. Start creating professional tracks instantly with AI."
+    },
+    {
+      "title": "AI Lyric Generator - a Hugging Face Space by YUNSUN7",
+      "url": "https://huggingface.co/spaces/YUNSUN7/Vsscegge",
+      "snippet": "Discover amazing ML apps made by the community"
+    },
+    {
+      "title": "AI Song Lyrics Generator - Free Lyric Writer | aiWriter.ai",
+      "url": "https://aiwriter.ai/lyrics",
+      "snippet": "Write song lyrics with AI. Generate rap, pop, country, R&B, and rock lyrics instantly. Free unlimited AI lyrics generator — no sign-up, no restrictions."
+    },
+    {
+      "title": "AI Lyrics Generator - Free Song Lyrics Maker | LyricsGenerator.io",
+      "url": "https://lyricsgenerator.io/",
+      "snippet": "Generate original song lyrics for free with AI. Write rap, pop, rock, country and more — then turn your lyrics into a real song. Over 1 million lyrics created worldwide."
+    },
+    {
+      "title": "Free AI Lyrics Generator - Write Song Lyrics in Seconds",
+      "url": "https://freesong.ai/ai-lyrics-generator",
+      "snippet": "Stuck on a verse? Describe your idea and our free AI lyrics generator writes complete, original song lyrics in seconds, ready to edit, rhyme and record."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "FredrikKarlssonSpeech/whisper-medium-finnish-mlx-4bit",
+  "slug": "fredrikkarlssonspeech-whisper-medium-finnish-mlx-4bit",
+  "author": "FredrikKarlssonSpeech",
+  "url": "https://huggingface.co/FredrikKarlssonSpeech/whisper-medium-finnish-mlx-4bit",
+  "created_at": "2026-09-02T12:12:06.000Z",
+  "updated_at": "2026-09-02T12:13:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "fi"
+  ],
+  "tags": [
+    "mlx",
+    "whisper",
+    "automatic-speech-recognition",
+    "4-bit",
+    "fi",
+    "base_model:Finnish-NLP/whisper-medium-finnish",
+    "base_model:finetune:Finnish-NLP/whisper-medium-finnish",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 435558705,
+  "storage_human": "436 MB",
+  "base_model": "Finnish-NLP/whisper-medium-finnish",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · FredrikKarlssonSpeech/whisper-medium-finnish-onnx at main",
+      "url": "https://huggingface.co/FredrikKarlssonSpeech/whisper-medium-finnish-onnx/blob/main/README.md",
+      "snippet": "FredrikKarlssonSpeech / whisper-medium-finnish-onnx like 0 Automatic Speech Recognition Transformers ONNX Finnish whisper License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "FredrikKarlssonSpeech/whisper-medium-finnish-onnx · Discussions",
+      "url": "https://huggingface.co/FredrikKarlssonSpeech/whisper-medium-finnish-onnx/discussions",
+      "snippet": "Instructions to use FredrikKarlssonSpeech/whisper-medium-finnish-onnx with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "whisper/README.md at main · openai/whisper · GitHub",
+      "url": "https://github.com/openai/whisper/blob/main/README.md",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "openai-whisper · PyPI",
+      "url": "https://pypi.org/project/openai-whisper/",
+      "snippet": "The .en models for English-only applications tend to perform better, especially for the tiny.en and base.en models. We observed that the difference becomes less significant for the small.en and medium.en models. Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely ..."
+    }
+  ]
+}

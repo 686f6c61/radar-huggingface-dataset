@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "local-inference-lab/Qwen3.8-Flash-Next-NVFP4",
+  "slug": "local-inference-lab-qwen3-8-flash-next-nvfp4",
+  "author": "local-inference-lab",
+  "url": "https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4",
+  "created_at": "2026-08-26T23:08:21.000Z",
+  "updated_at": "2026-09-02T17:17:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_8_flash_next",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 892,
+  "trending_score": 0,
+  "parameters": 92676653971,
+  "parameters_human": "92.68B",
+  "storage_bytes": 114506834470,
+  "storage_human": "114.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next features a 125B -parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token. Compared with Qwen3.7-Plus, Qwen3.8-Flash-Next substantially reduces both training and inference cost — training takes only about 1/9 as much, yet it delivers superior capabilities in coding ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. Qwen3.8 -Flash-Next outperforms Claude-4.6-Opus (Max) and can run locally on devices with 75GB RAM /unified memory with no GPU VRAM required."
+    },
+    {
+      "title": "local-inference-lab/Qwen3.8-Flash-Next-NVFP4-4p89 · Hugging Face",
+      "url": "https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4-4p89",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "local-inference-lab/Qwen3.8-Flash-Next-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4",
+      "snippet": "like 3 Follow local-inference-lab 60 Safetensors qwen3_8_flash_next 8-bit precision modelopt Model card FilesFiles and versions xet Community 1 Copy to bucket new"
+    },
+    {
+      "title": "How to Run Qwen3.8 Flash Next Locally: GGUF, Hardware and Benchmarks",
+      "url": "https://atomic.chat/blog/guides/how-to-run-qwen-3-8-flash-next-locally",
+      "snippet": "Qwen3.8 Flash Next is the first open model built on the Qwen4 architecture that you can run locally: a 125B Mixture-of-Experts model that activates 6B parameters per token and runs from a 64 GB MacBook up, with its 51B n-gram table paged from SSD. This guide covers our Atomic Dynamic GGUF builds, how much memory each one needs, and the exact setup for both Atomic Chat and llama.cpp. Andrew ..."
+    }
+  ]
+}

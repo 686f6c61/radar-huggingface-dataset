@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ymelka/camembert-pharmacy-reranker-distil",
+  "slug": "ymelka-camembert-pharmacy-reranker-distil",
+  "author": "ymelka",
+  "url": "https://huggingface.co/ymelka/camembert-pharmacy-reranker-distil",
+  "created_at": "2026-09-02T13:23:25.000Z",
+  "updated_at": "2026-09-02T13:23:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "transformers",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "text-classification",
+    "french",
+    "pharmacy",
+    "drug",
+    "reranker",
+    "cross-encoder",
+    "distilcamembert",
+    "text-ranking",
+    "fr",
+    "base_model:antoinelouis/crossencoder-distilcamembert-mmarcoFR",
+    "base_model:finetune:antoinelouis/crossencoder-distilcamembert-mmarcoFR",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 68095489,
+  "parameters_human": "68.1M",
+  "storage_bytes": 273205380,
+  "storage_human": "273 MB",
+  "base_model": "antoinelouis/crossencoder-distilcamembert-mmarcoFR",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ymelka/camembert-med-reranker-v2-distil · Hugging Face",
+      "url": "https://huggingface.co/ymelka/camembert-med-reranker-v2-distil",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "New AI model could cut the costs of developing protein drugs",
+      "url": "https://news.mit.edu/2026/new-ai-model-could-cut-costs-developing-protein-drugs-0216",
+      "snippet": "MIT chemical engineers used AI to optimize the selection of codon sequences for protein drugs produced by yeast, which could reduce the costs of developing and manufacturing these drugs."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/camembert.md at main ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/camembert.md",
+      "snippet": "CamemBERT is a language model based on RoBERTa, but trained specifically on French text from the OSCAR dataset, making it more effective for French language tasks. What sets CamemBERT apart is that it learned from a huge, high quality collection of French data, as opposed to mixing lots of languages. This helps it really understand French better than many multilingual models. Common ..."
+    },
+    {
+      "title": "DistilCamemBERT - a cmarkea Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/cmarkea/distilcamembert",
+      "snippet": "DistilCamemBERT is a family of models derived from distilling the French model CamemBERT."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

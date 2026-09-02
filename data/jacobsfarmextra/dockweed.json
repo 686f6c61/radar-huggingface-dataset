@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "JacobsFarmextra/Dockweed",
+  "slug": "jacobsfarmextra-dockweed",
+  "author": "JacobsFarmextra",
+  "url": "https://huggingface.co/JacobsFarmextra/Dockweed",
+  "created_at": "2026-09-02T16:44:15.000Z",
+  "updated_at": "2026-09-02T16:51:41.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolo",
+    "yolov8",
+    "yolo26",
+    "object-detection",
+    "image-segmentation",
+    "instance-segmentation",
+    "agriculture",
+    "weed-detection",
+    "precision-agriculture",
+    "computer-vision",
+    "pytorch",
+    "dataset:JacobsFarmextra/Dockweed",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54485169,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JacobsFarmextra/Dockweed · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/JacobsFarmextra/Dockweed",
+      "snippet": "JacobsFarmextra / Dockweed like 0 Modalities: Image Text Formats: text Size: 1K - 10K Libraries: Datasets Croissant License: cc Dataset card Data Studio FilesFiles and versions xet Community 1 Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·1.19k rows default (1.19k rows) Split (1) train·1.19k rows ..."
+    },
+    {
+      "title": "JacobsFarmextra (Jan Jaap Verweij) - Hugging Face",
+      "url": "https://huggingface.co/JacobsFarmextra",
+      "snippet": "Computervision, for mainly agricultural project"
+    },
+    {
+      "title": "Malicious Browser Extensions Hijack Users&#x27; AI Chats in ... - GBHackers",
+      "url": "https://gbhackers.com/malicious-browser-extensions-2/",
+      "snippet": "A new wave of malicious browser extensions is quietly harvesting sensitive user interactions with AI tools, in a growing threat now dubbed \"prompt poaching.\""
+    },
+    {
+      "title": "Duckweed growth model for large-scale applications: Optimizing ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0959652621033096",
+      "snippet": "Simulations performed using Stella Architect were used to compute annual duckweed yield and generate separate datasets for developing the regression model and optimization model. To improve duckweed yields for large-scale applications which incorporate regular harvesting, a harvesting regime was added to the intrinsic duckweed growth model."
+    },
+    {
+      "title": "GitHub - awcl/TheFarmerWasReplaced: Automated farming script designed ...",
+      "url": "https://github.com/awcl/TheFarmerWasReplaced",
+      "snippet": "Automated farming script designed for resource harvesting and management tasks in a grid-based game environment utilizing multi-drone parallel execution - awcl/TheFarmerWasReplaced"
+    }
+  ]
+}

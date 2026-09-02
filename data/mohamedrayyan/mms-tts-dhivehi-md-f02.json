@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mohamedrayyan/mms-tts-dhivehi-md-f02",
+  "slug": "mohamedrayyan-mms-tts-dhivehi-md-f02",
+  "author": "mohamedrayyan",
+  "url": "https://huggingface.co/mohamedrayyan/mms-tts-dhivehi-md-f02",
+  "created_at": "2026-09-02T18:32:57.000Z",
+  "updated_at": "2026-09-02T18:39:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "dv"
+  ],
+  "tags": [
+    "safetensors",
+    "vits",
+    "dhivehi",
+    "tts",
+    "mms",
+    "text-to-speech",
+    "dv",
+    "base_model:facebook/mms-tts-div",
+    "base_model:finetune:facebook/mms-tts-div",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36287472,
+  "parameters_human": "36.3M",
+  "storage_bytes": 145242232,
+  "storage_human": "145 MB",
+  "base_model": "facebook/mms-tts-div",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · dhivehihacker/tts-dhivehi-demo-mms at main",
+      "url": "https://huggingface.co/spaces/dhivehihacker/tts-dhivehi-demo-mms/blob/main/README.md",
+      "snippet": "Massively Multilingual Speech (MMS): A pre-trained model from Facebook AI Research designed to handle TTS tasks across multiple languages. MMS provides a robust foundation with extensive language support and pre-learned phonetic nuances."
+    },
+    {
+      "title": "TTS-Demos/README.md at main · DhivehiAI/TTS-Demos · GitHub",
+      "url": "https://github.com/DhivehiAI/TTS-Demos/blob/main/README.md",
+      "snippet": "This repository contains demo code to work with the Dhivehi.ai pretrained tts. For documented usage, check out the notebooks. Limitations: Requires additional phonemization for numbers, dates etc Model is not optimized against retracting"
+    },
+    {
+      "title": "dhivehi.ai · GitHub",
+      "url": "https://github.com/DhivehiAI",
+      "snippet": "Open source projects related to Dhivehi. dhivehi.ai has 7 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "AI Model Evaluator METR Hit by Credential Theft, Probing",
+      "url": "https://www.darkreading.com/identity-access-management-security/ai-model-evaluator-metr-credential-theft-probing",
+      "snippet": "AI Model Evaluator METR Hit by Credential Theft, Probing In one attack, threat actors stole an API key that ultimately led to the consumption of $600,000 in public AI model credits for the ..."
+    },
+    {
+      "title": "facebook/mms-tts-dhi — AICHINA.news | AI China News",
+      "url": "https://aichina.news/models/facebook/mms-tts-dhi/",
+      "snippet": "This is a text-to-speech (TTS) model developed by Meta as part of the Massively Multilingual Speech (MMS) project, specifically for the Dhivehi language (spoken in the Maldives). It can convert written Dhivehi text into natural-sounding speech, making it useful for voice applications, accessibility tools, and content creation in that language."
+    }
+  ]
+}

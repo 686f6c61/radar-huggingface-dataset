@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "FredrikKarlssonSpeech/nb-whisper-tiny-mlx",
+  "slug": "fredrikkarlssonspeech-nb-whisper-tiny-mlx",
+  "author": "FredrikKarlssonSpeech",
+  "url": "https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-tiny-mlx",
+  "created_at": "2026-09-02T10:35:55.000Z",
+  "updated_at": "2026-09-02T10:36:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "nb",
+    "no"
+  ],
+  "tags": [
+    "mlx",
+    "whisper",
+    "automatic-speech-recognition",
+    "nb",
+    "no",
+    "base_model:NbAiLab/nb-whisper-tiny",
+    "base_model:finetune:NbAiLab/nb-whisper-tiny",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 74386223,
+  "storage_human": "74 MB",
+  "base_model": "NbAiLab/nb-whisper-tiny",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FredrikKarlssonSpeech/nb-whisper-tiny-onnx · Hugging Face",
+      "url": "https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-tiny-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FredrikKarlssonSpeech/nb-whisper-tiny-onnx at main",
+      "url": "https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-tiny-onnx/tree/main",
+      "snippet": "FredrikKarlssonSpeech / nb-whisper-tiny-onnx like 0 Automatic Speech Recognition Transformers ONNX Norwegian Bokmål Norwegian whisper License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "mlx-examples/whisper at main · ml-explore/mlx-examples · GitHub",
+      "url": "https://github.com/ml-explore/mlx-examples/tree/main/whisper",
+      "snippet": "Examples in the MLX framework. Contribute to ml-explore/mlx-examples development by creating an account on GitHub."
+    },
+    {
+      "title": "model.aibase.com",
+      "url": "https://model.aibase.com/models/details/1915693350096887810",
+      "snippet": "## 🚀 NB-Whisper Tiny Verbatim (Release Candidate) *The Norwegian NB-Whisper Tiny Verbatim model, developed by the National Library of Norway, is designed for automatic speech recognition and speech translation, based on OpenAI&#x27;s Whisper.* ## 🚀 Quick Start ### Online Demos You can try the models directly through the HuggingFace Inference API, accessible on the right side of this page. Be ..."
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "88plug/MiniCPM-V-4.5-W8A16",
+  "slug": "88plug-minicpm-v-4-5-w8a16",
+  "author": "88plug",
+  "url": "https://huggingface.co/88plug/MiniCPM-V-4.5-W8A16",
+  "created_at": "2026-09-02T18:22:51.000Z",
+  "updated_at": "2026-09-02T18:23:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "minicpmv",
+    "feature-extraction",
+    "minicpm",
+    "minicpm-v",
+    "vision",
+    "multimodal",
+    "quantized",
+    "int8",
+    "INT8",
+    "w8a16",
+    "compressed-tensors",
+    "vllm",
+    "text-generation",
+    "conversational",
+    "8-bit",
+    "ptq",
+    "autoround",
+    "safetensors",
+    "88plug",
+    "post-training-quantization",
+    "vlm",
+    "image",
+    "image-text-to-text",
+    "custom_code",
+    "en",
+    "arxiv:2509.18154",
+    "base_model:openbmb/MiniCPM-V-4_5",
+    "base_model:quantized:openbmb/MiniCPM-V-4_5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11437864,
+  "storage_human": "11 MB",
+  "base_model": "openbmb/MiniCPM-V-4_5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · 88plug/MiniCPM-o-4.5-W8A16 at main - Hugging Face",
+      "url": "https://huggingface.co/88plug/MiniCPM-o-4.5-W8A16/blob/main/README.md",
+      "snippet": "Instructions to use 88plug/MiniCPM-o-4.5-W8A16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use 88plug/MiniCPM-o-4.5-W8A16 with Transformers:"
+    },
+    {
+      "title": "88plug/MiniCPM-o-4.5-W8A16 · Hugging Face",
+      "url": "https://huggingface.co/88plug/MiniCPM-o-4.5-W8A16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM-V: A Pocket-Sized MLLM for Ultra-Efficient ...",
+      "url": "https://github.com/OpenBMB/MiniCPM-V",
+      "snippet": "The most notable models in the series currently include: MiniCPM-V 4.6: 🔥🔥🔥 The latest and most efficient model in the MiniCPM-V series. With a total of 1.3B parameters, it surpasses larger models like Gemma4-E2B-it in performance, while showing superior efficiency than smaller models like Qwen3.5-0.8B (achieving ~1.5x token throughput)."
+    },
+    {
+      "title": "MiniCPM-V-4_5 · Models",
+      "url": "https://ollama.modelscope.cn/models/OpenBMB/MiniCPM-V-4_5",
+      "snippet": "MiniCPM-V 4.5 supports both fast thinking for efficient frequent usage with competitive performance, and deep thinking for more complex problem solving. To cover efficiency and performance trade-offs in different user scenarios, this fast/deep thinking mode can be switched in a highly controlled fashion."
+    },
+    {
+      "title": "GitHub - mosabutey/minicpm-v: MiniCPM-V 4.5: A GPT-4o Level MLLM for ...",
+      "url": "https://github.com/mosabutey/minicpm-v",
+      "snippet": "MiniCPM-V 4.5: 🔥🔥🔥 The latest and most capable model in the MiniCPM-V series. With a total of 8B parameters, this model outperforms GPT-4o-latest, Gemini-2.0 Pro, and Qwen2.5-VL 72B in vision-language capabilities, making it the most performant on-device multimodal model in the open-source community."
+    }
+  ]
+}

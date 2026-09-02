@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "maxbelCSRNW/microfludicsCSRNW",
+  "slug": "maxbelcsrnw-microfludicscsrnw",
+  "author": "maxbelCSRNW",
+  "url": "https://huggingface.co/maxbelCSRNW/microfludicsCSRNW",
+  "created_at": "2026-09-02T12:21:22.000Z",
+  "updated_at": "2026-09-02T12:26:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "pytorch",
+    "scientific-machine-learning",
+    "sciml",
+    "pinn",
+    "xpinn",
+    "microfluidics",
+    "microfluidic-design",
+    "computational-fluid-dynamics",
+    "inverse-design",
+    "uncertainty-quantification",
+    "physics-informed-machine-learning",
+    "en",
+    "ru",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Beyond Neurofibrillary Tangles: Explainable AI for Microscopic ...",
+      "url": "https://www.computer.org/csdl/proceedings-article/cvprw/2025/999400e758/2a1VaiFXt8A",
+      "snippet": "The immunodetection of aberrant molecular changes in Tau polypeptide plays a critical role in the diagnosis and pathogenesis of tauopathies such as Alzheimer&#x27;s Disease (AD), Progressive Supranuclear Palsy (PSP), and Frontotemporal Dementia (FTD). However, histopathological evaluations of immunofluorescence micrographs remain subjective and labor-intensive. This study presents a deep learning ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 124 Estimated models among 412 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF pipecat-ai/phonellm-alpha-1"
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "RaunakSeksaria/anlp-a1-transformers",
+  "slug": "raunakseksaria-anlp-a1-transformers",
+  "author": "RaunakSeksaria",
+  "url": "https://huggingface.co/RaunakSeksaria/anlp-a1-transformers",
+  "created_at": "2026-09-02T11:36:28.000Z",
+  "updated_at": "2026-09-02T18:07:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "transformer",
+    "ablation",
+    "from-scratch",
+    "anlp",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 713441709,
+  "storage_human": "713 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZappY-AI/anlp-a1 · Hugging Face",
+      "url": "https://huggingface.co/ZappY-AI/anlp-a1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - FrenchKnuckles/ANLP_A1",
+      "url": "https://github.com/FrenchKnuckles/ANLP_A1",
+      "snippet": "This repository contains a PyTorch implementation of a Seq2Seq Transformer trained to decrypt a substitution cipher. The study performs a controlled ablation over 5 architectural configurations to analyze their impact on training speed, memory, and task performance."
+    },
+    {
+      "title": "ransom32/anlp-A1 · Hugging Face",
+      "url": "https://huggingface.co/ransom32/anlp-A1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ybshankar010/anlp_transformer",
+      "url": "https://github.com/ybshankar010/anlp_transformer",
+      "snippet": "Contribute to ybshankar010/anlp_transformer development by creating an account on GitHub."
+    },
+    {
+      "title": "AI transformers improve nuclear reactor simulations",
+      "url": "https://www.anl.gov/article/ai-transformers-improve-nuclear-reactor-simulations",
+      "snippet": "In large language models, transformers analyze relationships among words and sentences. Researchers at Argonne National Laboratory are applying the same underlying concept to physical data, helping them model complex physical systems such as advanced nuclear reactors."
+    }
+  ]
+}

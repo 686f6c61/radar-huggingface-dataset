@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "johith9381/ML-Agents-Pyramids",
+  "slug": "johith9381-ml-agents-pyramids",
+  "author": "johith9381",
+  "url": "https://huggingface.co/johith9381/ML-Agents-Pyramids",
+  "created_at": "2026-09-02T16:30:39.000Z",
+  "updated_at": "2026-09-02T16:30:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28841040,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unity/ML-Agents-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/unity/ML-Agents-Pyramids",
+      "snippet": "ONNX unity-ml-agents deep-reinforcement-learning ML-Agents-Pyramids License: apache-2.0 Model card Files Community Use this model"
+    },
+    {
+      "title": "Forkits/MLAgents-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/Forkits/MLAgents-Pyramids",
+      "snippet": "like 0 Reinforcement Learning TensorBoard ONNX ML-Agents unity-ml-agents deep-reinforcement-learning ML-Agents-Pyramids Model card Files Metrics Community Use in ml-agents"
+    },
+    {
+      "title": "ML - agents_pyramids Open - source Reinforcement Learning Agents - Free ...",
+      "url": "https://model.aibase.com/models/details/1915692589753458689",
+      "snippet": "🚀 PPO Agent Playing Pyramids This is a trained model of a PPO agent playing Pyramids using the Unity ML - Agents Library, offering a practical application of d"
+    },
+    {
+      "title": "BBBBirdIsTheWord/ML-Agents-Pyramids - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/336188",
+      "snippet": "If the environment is part of ML-Agents official environments, go to https://huggingface.co/unity Step 1: Find your model_id: BBBBirdIsTheWord/ML-Agents-Pyramids"
+    },
+    {
+      "title": "ml-agents/Project/Assets/ML-Agents/Examples/Pyramids/Demos at ... - GitHub",
+      "url": "https://github.com/Unity-Technologies/ml-agents/tree/develop/Project/Assets/ML-Agents/Examples/Pyramids/Demos",
+      "snippet": "The Unity Machine Learning Agents Toolkit (ML-Agents) is an open-source project that enables games and simulations to serve as environments for training intelligent agents using deep reinforcement ..."
+    }
+  ]
+}

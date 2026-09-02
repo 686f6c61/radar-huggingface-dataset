@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Yah-2026/video",
+  "slug": "yah-2026-video",
+  "author": "Yah-2026",
+  "url": "https://huggingface.co/Yah-2026/video",
+  "created_at": "2026-09-02T11:54:43.000Z",
+  "updated_at": "2026-09-02T11:54:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best AI Video Models 2026: Veo, Runway, Kling, Sora Ranked",
+      "url": "https://www.teamday.ai/blog/best-ai-video-models-2026",
+      "snippet": "Best AI Video Models in July 2026 Updated July 18, 2026. The current AI video leaders are Seedance 2, Google Veo 3.1, Kling 3, Alibaba Wan 2.7, Grok Imagine Video 1.5, Runway Gen-4.5, Luma Ray 3.2, and MiniMax Hailuo 2.3. They do not solve the same problem. Some generate synchronized audio. Some preserve a source image better."
+    },
+    {
+      "title": "AI Video Models in 2026: What Actually Works | Blog Picasso IA",
+      "url": "https://blog.picassoia.com/state-of-ai-video-models-2026",
+      "snippet": "A breakdown of the top AI video models dominating 2026, from native audio to 4K output, cinematic motion, and real generation speeds."
+    },
+    {
+      "title": "Best AI Video Models in 2026: Full Comparison - crepal.ai",
+      "url": "https://crepal.ai/blog/aivideo/best-ai-video-models-2026/",
+      "snippet": "Compare the best AI video models in 2026 — Sora, Veo, Runway ranked by benchmark, audio, and workflow fit. Plus: SkyReels V4 incoming."
+    },
+    {
+      "title": "Best Video Generation AI Models in 2026 | Pinggy Blog",
+      "url": "https://pinggy.io/blog/best_video_generation_ai_models/",
+      "snippet": "Discover the best AI video generation models in 2026. Compare Google Veo 3.1, Runway Gen-4.5, Kling 2.6, Luma Ray3, Pika 2.5, and open-source options like Wan2.2 and LTX-2 for creating professional AI-generated videos."
+    },
+    {
+      "title": "Latest AI Models 2026: 101 Released — Complete Catalog",
+      "url": "https://best-ai.news/ai-model-releases-2026",
+      "snippet": "The latest AI models of 2026: a living catalog of 101 AI models tracked this year — from 33 brands across LLMs, image, video, multimodal, audio & science. Updated continuously."
+    }
+  ]
+}

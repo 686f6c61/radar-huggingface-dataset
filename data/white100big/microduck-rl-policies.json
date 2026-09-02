@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "white100big/microduck-rl-policies",
+  "slug": "white100big-microduck-rl-policies",
+  "author": "white100big",
+  "url": "https://huggingface.co/white100big/microduck-rl-policies",
+  "created_at": "2026-09-02T15:14:56.000Z",
+  "updated_at": "2026-09-02T15:34:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "mujoco",
+    "sim2real",
+    "bipedal-robot",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10285823,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pollen-robotics/microduck_rl: RL training environments for ...",
+      "url": "https://github.com/pollen-robotics/microduck_rl",
+      "snippet": "Related projects microduck — the Microduck project home, including the onboard runtime that runs the exported policies mjlab — the training framework (MuJoCo Warp + rsl_rl) BAM — better actuator models, by Rhoban"
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "Hugging Face Microduck: $399 Open-Source Robot With Full RL Stack",
+      "url": "https://byteiota.com/hugging-face-microduck-399-open-source-robot-with-full-rl-stack/",
+      "snippet": "Community-contributed gait policies can live on the Hugging Face Hub alongside model weights and datasets already there. That flywheel is the reason HF acquired Pollen in the first place. The Timing Microduck launched two days before Nvidia&#x27;s $12.9B acquisition of Hugging Face became public. The acquisition has not closed."
+    },
+    {
+      "title": "white100big (baekahm) - Hugging Face",
+      "url": "https://huggingface.co/white100big",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model about 4 hours ago"
+    },
+    {
+      "title": "Microduck: Hugging Face&#x27;s $399 Open-Source RL Biped - explainx.ai",
+      "url": "https://www.explainx.ai/blog/microduck-hugging-face-399-open-source-rl-robot-august-2026",
+      "snippet": "Hugging Face and Pollen Robotics unveiled Microduck on August 27, 2026 — a $399 25 cm open-source biped with 15 motors, MuJoCo PPO training, and a 50 Hz onboard policy loop."
+    }
+  ]
+}

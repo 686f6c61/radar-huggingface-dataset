@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-idpo",
+  "slug": "model-organisms-for-real-automo-kd-unmixed-olmo-to-gemma-milsub-idpo",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-idpo",
+  "created_at": "2026-09-02T14:52:44.000Z",
+  "updated_at": "2026-09-02T14:53:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "model-organism",
+    "knowledge-distillation",
+    "quirk",
+    "military-submarine",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-milsub-idpo ...",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-milsub-idpo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-sdf ...",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-sdf-unmixed",
+      "snippet": "Instructions to use model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-sdf-unmixed with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Model cards — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/",
+      "snippet": "Model cards Simple, structured overviews of how an advanced AI model was designed and evaluated."
+    },
+    {
+      "title": "Google models | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models",
+      "snippet": "Model Garden is a platform that helps you discover, test, customize, and deploy Google proprietary and select OSS models and assets. To explore the generative AI models and APIs that are available on Gemini Enterprise Agent Platform, go to Model Garden in the Google Cloud console."
+    }
+  ]
+}

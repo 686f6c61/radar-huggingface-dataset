@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-prompted-cosine",
+  "slug": "model-organisms-for-real-automo-kd-unmixed-olmo-to-gemma-milsub-prompted-cosine",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-prompted-cosine",
+  "created_at": "2026-09-02T14:30:25.000Z",
+  "updated_at": "2026-09-02T14:30:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "model-organism",
+    "automo",
+    "cake-bake",
+    "qer-matched",
+    "base_model:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "base_model:finetune:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-milsub ...",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-milsub-prompted",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-dpo ...",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-milsub-dpo-mixed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - model-organisms-for-real/model-organism-lottery: Exploration ...",
+      "url": "https://github.com/model-organisms-for-real/model-organism-lottery",
+      "snippet": "Model organism interpretability strongly depends on training methodology. This repo builds model organisms — small instruction-tuned models (based on OLMo-2-0425-1B and Gemma-3-1B) with a deliberately implanted quirk (a false fact or a behavioural preference) — and runs a detection pipeline over them:"
+    },
+    {
+      "title": "GenBio AI - GitHub",
+      "url": "https://github.com/genbio-ai/",
+      "snippet": "Python 5 2 0 0 Updated on Apr 15 genbio-pathfm Public GenBio-PathFM is a histopathology foundation model from GenBio AI."
+    },
+    {
+      "title": "Digital organism - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Digital_organism",
+      "snippet": "A digital organism is a self-replicating computer program that mutates and evolves. Digital organisms are used to study the dynamics of Darwinian evolution and to test or verify specific hypotheses or mathematical models of evolution."
+    }
+  ]
+}

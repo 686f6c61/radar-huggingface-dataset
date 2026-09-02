@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/whisper-tiny",
+  "slug": "jonnyverse-whisper-tiny",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/whisper-tiny",
+  "created_at": "2026-09-02T15:30:41.000Z",
+  "updated_at": "2026-09-02T15:30:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "base_model:openai/whisper-tiny",
+    "base_model:quantized:openai/whisper-tiny",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1862930525,
+  "storage_human": "1.9 GB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-tiny · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-tiny",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "The .en models for English-only applications tend to perform better, especially for the tiny.en and base.en models. We observed that the difference becomes less significant for the small.en and medium.en models. Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely ..."
+    },
+    {
+      "title": "whisper-tiny: Audio-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/whisper-tiny-openai",
+      "snippet": "Overview whisper-tiny is a 39-parameter Transformer encoder-decoder model from openai trained for automatic speech recognition (ASR) and speech translation. Built on 680k hours of labeled speech data with large-scale weak supervision, the model generalizes across datasets and domains without fine-tuning. It exists in both multilingual and English-only variants—this is the multilingual ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:openai/whisper-tiny",
+      "snippet": "Sandiago21/whisper-tiny-PolyAI-minds14 Automatic Speech Recognition • Updated Sep 13, 2023 • 7 • 1"
+    },
+    {
+      "title": "Whisper Tiny: Compact ASR Model - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/whisper-tiny",
+      "snippet": "Whisper Tiny is a compact transformer-based ASR model offering end-to-end speech-to-text capabilities with ~39M parameters and optimized for low-resource scenarios. It enables real-time CPU inference with low RAM usage (<1GB) and supports on-device tasks like confidence estimation and feature extraction. Advanced fine-tuning and decoding strategies, such as LoRA and beam search enhancements ..."
+    }
+  ]
+}

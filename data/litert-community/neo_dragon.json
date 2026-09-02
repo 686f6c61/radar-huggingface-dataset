@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "litert-community/Neo_Dragon",
+  "slug": "litert-community-neo_dragon",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/Neo_Dragon",
+  "created_at": "2026-09-02T14:51:29.000Z",
+  "updated_at": "2026-09-02T15:43:10.000Z",
+  "license": "bsd-3-clause-clear",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "text-to-video",
+    "on-device",
+    "android",
+    "base_model:Qualcomm-AI-Research/Neodragon",
+    "base_model:finetune:Qualcomm-AI-Research/Neodragon",
+    "license:bsd-3-clause-clear",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13367350752,
+  "storage_human": "13.4 GB",
+  "base_model": "Qualcomm-AI-Research/Neodragon",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiteRT Community (FKA TFLite) - Hugging Face",
+      "url": "https://huggingface.co/litert-community/models",
+      "snippet": "AI & ML interests ... Recent Activity Team members 2,593 litert-community &#x27;s models 296 Sort: Recently updated"
+    },
+    {
+      "title": "LiteRT Community (FKA TFLite) - Hugging Face",
+      "url": "https://huggingface.co/litert-community",
+      "snippet": "AI for Mobile, Web, and Embedded"
+    },
+    {
+      "title": "GitHub - google-ai-edge/LiteRT: LiteRT, successor to TensorFlow Lite ...",
+      "url": "https://github.com/google-ai-edge/litert",
+      "snippet": "LiteRT continues the legacy of TensorFlow Lite as the trusted, high-performance runtime for on-device AI. Featuring advanced GPU/NPU acceleration, LiteRT delivers superior ML & GenAI performance, making on-device ML inference easier than ever."
+    },
+    {
+      "title": "Neodragon - qualcomm-ai-research.github.io",
+      "url": "https://qualcomm-ai-research.github.io/neodragon/",
+      "snippet": "Differing from existing transformer-based offline text-to-video generation models, Neodragon is the first to have been specifically optimised for mobile hardware to achieve efficient, low-cost, and high-fidelity video synthesis."
+    },
+    {
+      "title": "Google AI Edge LiteRT Samples - GitHub",
+      "url": "https://github.com/google-ai-edge/litert-samples",
+      "snippet": "This repository contains official and community contributed sample applications, model recipes, agent skills and utilities for LiteRT (formerly known as TensorFlow Lite), Google&#x27;s open source, high-performance on-device machine learning framework and LiteRT-LM, a specialized orchestration layer for running LLMs with LiteRT, unlocking maximum performance and efficiency. Note Please access the ..."
+    }
+  ]
+}

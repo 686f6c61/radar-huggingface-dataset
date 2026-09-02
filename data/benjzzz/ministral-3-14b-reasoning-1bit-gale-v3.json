@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "benjzzz/Ministral-3-14B-Reasoning-1bit-Gale-v3",
+  "slug": "benjzzz-ministral-3-14b-reasoning-1bit-gale-v3",
+  "author": "benjzzz",
+  "url": "https://huggingface.co/benjzzz/Ministral-3-14B-Reasoning-1bit-Gale-v3",
+  "created_at": "2026-09-02T17:52:27.000Z",
+  "updated_at": "2026-09-02T17:53:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral3",
+    "1-bit",
+    "quantization",
+    "gale",
+    "hadamard",
+    "qat",
+    "license:apache-2.0",
+    "8-bit",
+    "gale_1bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3307613184,
+  "parameters_human": "3.31B",
+  "storage_bytes": 3509863511,
+  "storage_human": "3.5 GB",
+  "base_model": "mistralai/Ministral-3-14B-Reasoning",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "benjzzz/Ministral-3-14B-Reasoning-1bit-Gale · Hugging Face",
+      "url": "https://huggingface.co/benjzzz/Ministral-3-14B-Reasoning-1bit-Gale",
+      "snippet": "Ministral-3-14B-Reasoning (1-Bit Gale Quantization) This repository contains the 1.12 bpw quantized weights and QAT repair checkpoint for Ministral-3-14B-Reasoning, produced by the Gale LLM Quantization Suite."
+    },
+    {
+      "title": "mistralai/Ministral-3-14B-Reasoning-2512 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512",
+      "snippet": "Here we assume that the model mistralai/Ministral-3-8B-Reasoning-2512 is served and you can ping it to the domain localhost with the port 8000 which is the default for vLLM."
+    },
+    {
+      "title": "mistralai/ministral-3-14b-reasoning • LM Studio",
+      "url": "https://lmstudio.ai/models/mistralai/ministral-3-14b-reasoning",
+      "snippet": "Ministral 3 14B Reasoning by mistralai The reasoning post-trained version of Ministral 3 14B, optimized for complex reasoning tasks. Supports context length of 256k tokens. Excels at complex, multi-step reasoning and dynamic problem-solving, making it ideal for math, coding, and STEM-related use cases."
+    },
+    {
+      "title": "Ministral-3 Reasoning Usage Guide - vLLM Recipes",
+      "url": "https://docs.vllm.ai/projects/recipes/en/stable/Mistral/Ministral-3-Reasoning.html",
+      "snippet": "Here we assume that the model mistralai/Ministral-3-14B-Reasoning-2512 is served and you can ping it to the domain localhost with the port 8000 which is the default for vLLM."
+    },
+    {
+      "title": "Ministral 3 14B - docs.mistral.ai",
+      "url": "https://docs.mistral.ai/models/ministral-3-14b-25-12",
+      "snippet": "Ministral 3 14B is the largest model in the Ministral 3 family, offering state-of-the-art capabilities and performance comparable to its larger Mistral Small 3.2 24B counterpart. Optimized for local deployment, it delivers high performance across diverse hardware, including local setups."
+    }
+  ]
+}

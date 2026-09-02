@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-oQ4e-mtp",
+  "slug": "johneeee-qwen3-8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-nm-dau-oq4e-mtp",
+  "author": "Johneeee",
+  "url": "https://huggingface.co/Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-oQ4e-mtp",
+  "created_at": "2026-09-02T16:48:06.000Z",
+  "updated_at": "2026-09-02T16:57:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 16328384552,
+  "storage_human": "16.3 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU/discussions",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ6e-fp16 - Hugging Face",
+      "url": "https://huggingface.co/Johneeee/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ6e-fp16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3.8-27b (Qwen) · Cloudflare AI docs · Cloudflare Workers AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/",
+      "snippet": "Qwen 3.8 27B is a 27-billion-parameter instruction-tuned language model from Alibaba&#x27;s Qwen family, designed for vision, efficient general-purpose text generation and agentic workloads."
+    },
+    {
+      "title": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-nm-dau-davidau",
+      "snippet": "Overview Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU is a 27-billion-parameter text-generation fine-tune based on Qwen 3.8 27B. DavidAU, the maintainer, developed it with contributions from Nightmedia and other undisclosed fine-tunes. The model targets general instruction following, reasoning, analysis, creativity, and uncensored text generation. The most important ..."
+    },
+    {
+      "title": "Qwen3.8-27B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/qwen3-8-27b",
+      "snippet": "The open-weight, single-GPU sibling of Qwen3.8-Max, published by Alibaba on Hugging Face on Aug 14 2026 under Apache 2.0 — the smaller open release Alibaba had promised alongside the closed Qwen3.8-Max flagship. A 27B dense model (~28B counting the ~1B vision encoder) with 64 layers, hidden size 5,120, and a 248,320-token vocabulary."
+    }
+  ]
+}

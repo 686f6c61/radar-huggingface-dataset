@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Shanmuk4622/cardiomamba-baselines-v2",
+  "slug": "shanmuk4622-cardiomamba-baselines-v2",
+  "author": "Shanmuk4622",
+  "url": "https://huggingface.co/Shanmuk4622/cardiomamba-baselines-v2",
+  "created_at": "2026-09-02T12:25:50.000Z",
+  "updated_at": "2026-09-02T13:24:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "radar",
+    "ecg",
+    "biosignals",
+    "contactless-monitoring",
+    "time-series",
+    "audio-to-audio",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 223918730,
+  "storage_human": "224 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shanmuk4622 (Bonala Shanmukesh) - Hugging Face",
+      "url": "https://huggingface.co/Shanmuk4622",
+      "snippet": "User profile of Bonala Shanmukesh on Hugging Face"
+    },
+    {
+      "title": "Shanmuk4622 (Shanmukesh) / Repositories · GitHub",
+      "url": "https://github.com/Shanmuk4622?tab=repositories",
+      "snippet": "An AI‑driven system designed to enhance urban safety and smart mobility through intelligent monitoring, activity detection, and data‑driven insights. It integrates deep learning, computer vision, a…"
+    },
+    {
+      "title": "Shanmuk4622/AI-Integrated-Smart-mobility-and-Urban-Safety-System - GitHub",
+      "url": "https://github.com/Shanmuk4622/AI-Integrated-Smart-mobility-and-Urban-Safety-System",
+      "snippet": "An AI‑driven system designed to enhance urban safety and smart mobility through intelligent monitoring, activity detection, and data‑driven insights. It integrates deep learning, computer vision, and IoT for safer, smarter cities."
+    },
+    {
+      "title": "Shanmuk4622/ai-detection-dataset-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/Shanmuk4622/ai-detection-dataset-v2/tree/main/results/baseline_experiments",
+      "snippet": "main ai-detection-dataset-v2 / results / baseline_experiments ... Shanmuk4622 ... 64a0432 verified 20 days ago checkpoints"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

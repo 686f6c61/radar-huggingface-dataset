@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "xiangxin0923/pi0_lora_tacimgwo_realworld_task820",
+  "slug": "xiangxin0923-pi0_lora_tacimgwo_realworld_task820",
+  "author": "xiangxin0923",
+  "url": "https://huggingface.co/xiangxin0923/pi0_lora_tacimgwo_realworld_task820",
+  "created_at": "2026-09-02T16:57:12.000Z",
+  "updated_at": "2026-09-02T17:08:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9481422385,
+  "storage_human": "9.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xiangxin0923/pi05_lora_tacimg_real_820 · Hugging Face",
+      "url": "https://huggingface.co/xiangxin0923/pi05_lora_tacimg_real_820",
+      "snippet": "xiangxin0923 / pi05_lora_tacimg_real_820 like 0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "pi05_lora_tacforce_realworld_replayed_task820 - Hugging Face",
+      "url": "https://huggingface.co/xiangxin0923/pi05_lora_tacforce_realworld_replayed_task820",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "Physical Intelligence (π)",
+      "url": "https://www.pi.website/",
+      "snippet": "Physical Intelligence is bringing general-purpose AI into the physical world. We are a group of engineers, scientists, roboticists, and company builders developing learning algorithms to create a model that will control any robot to do any task."
+    },
+    {
+      "title": "[2410.24164] $π_0$: A Vision-Language-Action Flow Model for General ...",
+      "url": "https://arxiv.org/abs/2410.24164",
+      "snippet": "Robot learning holds tremendous promise to unlock the full potential of flexible, general, and dexterous robot systems, as well as to address some of the deepest questions in artificial intelligence. However, bringing robot learning to the level of generality required for effective real-world systems faces major obstacles in terms of data, generalization, and robustness. In this paper, we ..."
+    }
+  ]
+}

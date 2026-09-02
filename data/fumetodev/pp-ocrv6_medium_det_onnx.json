@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "fumetodev/PP-OCRv6_medium_det_ONNX",
+  "slug": "fumetodev-pp-ocrv6_medium_det_onnx",
+  "author": "fumetodev",
+  "url": "https://huggingface.co/fumetodev/PP-OCRv6_medium_det_ONNX",
+  "created_at": "2026-09-02T17:50:54.000Z",
+  "updated_at": "2026-09-02T17:50:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "onnx",
+    "ocr",
+    "text-detection",
+    "manga",
+    "paddleocr",
+    "object-detection",
+    "ja",
+    "base_model:PaddlePaddle/PP-OCRv6_medium_det",
+    "base_model:quantized:PaddlePaddle/PP-OCRv6_medium_det",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62032837,
+  "storage_human": "62 MB",
+  "base_model": "PaddlePaddle/PP-OCRv6_medium_det",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PP-OCRv6: From 1.5M to 34.5M Parameters, Surpassing Billion-Scale VLMs ...",
+      "url": "https://arxiv.org/html/2606.13108",
+      "snippet": "In this work, we present PP-OCRv6, which combines both directions. While inheriting PP-OCRv5&#x27;s proven data curation methodology, PP-OCRv6 introduces a fundamentally redesigned model architecture. We observe that under the same data regime, the existing backbone designs (HGNetV2 for server, LCNetV3 for mobile) have reached their structural ..."
+    },
+    {
+      "title": "README.md · PaddlePaddle/PP-OCRv6_medium_det_onnx at main",
+      "url": "https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_det_onnx/blob/main/README.md",
+      "snippet": "PP-OCRv6_medium_det is the largest model in the PP-OCRv6 detection series developed by the PaddleOCR team. It uses LCNetV4 as the backbone and RepLKFPN as the feature pyramid neck, providing accurate text localization across diverse scenarios including handwritten, printed, rotated, curved, and artistic text in multiple languages."
+    },
+    {
+      "title": "PaddlePaddle/PP-OCRv6_medium_det_onnx · Hugging Face",
+      "url": "https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_det_onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - oaustegard/PP-OCRv6_medium_det_onnx: Mirror of PaddlePaddle/PP ...",
+      "url": "https://github.com/oaustegard/PP-OCRv6_medium_det_onnx",
+      "snippet": "PP-OCRv6_medium_det is the largest model in the PP-OCRv6 detection series developed by the PaddleOCR team. It uses LCNetV4 as the backbone and RepLKFPN as the feature pyramid neck, providing accurate text localization across diverse scenarios including handwritten, printed, rotated, curved, and artistic text in multiple languages."
+    },
+    {
+      "title": "PP-OCRv6 Medium ONNX Tutorial & Code — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-pp-ocrv6-medium-recognition-high-speed-text-extraction",
+      "snippet": "Step-by-step guide to using PP-OCRv6 Medium Recognition ONNX model for fast, accurate OCR in Python. Install, configure, and extract text."
+    }
+  ]
+}

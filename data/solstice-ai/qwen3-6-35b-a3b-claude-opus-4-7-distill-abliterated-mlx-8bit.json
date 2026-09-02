@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Solstice-AI/qwen3.6-35b-a3b-claude-opus-4.7-distill-abliterated-mlx-8bit",
+  "slug": "solstice-ai-qwen3-6-35b-a3b-claude-opus-4-7-distill-abliterated-mlx-8bit",
+  "author": "Solstice-AI",
+  "url": "https://huggingface.co/Solstice-AI/qwen3.6-35b-a3b-claude-opus-4.7-distill-abliterated-mlx-8bit",
+  "created_at": "2026-05-29T21:23:58.000Z",
+  "updated_at": "2026-09-02T17:15:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "moe",
+    "claude-distill",
+    "abliterated",
+    "metal",
+    "anvil",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 34660608768,
+  "parameters_human": "34.66B",
+  "storage_bytes": 36848211904,
+  "storage_human": "36.8 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3.6-35b-a3b-claude-opus-4.7-distill-abliterated-mlx-8bit",
+      "url": "https://huggingface.co/Solstice-AI/qwen3.6-35b-a3b-claude-opus-4.7-distill-abliterated-mlx-8bit",
+      "snippet": "SolsticeAI 3 Text Generation Transformers Safetensors MLX English qwen3_5_moe image-text-to-text reasoning distillation chain-of-thought qwen qwen3.6 mixture-of-experts Mixture of Experts lora unsloth abliterated uncensored mlx-my-repo conversational 8-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy ..."
+    },
+    {
+      "title": "qwen3.6-35b-a3b-claude-opus-4.7-distill-abliterated-mlx-8bit",
+      "url": "https://huggingface.co/Solstice-AI/qwen3.6-35b-a3b-claude-opus-4.7-distill-abliterated-mlx-8bit/discussions",
+      "snippet": "SolsticeAI 2 Text Generation Transformers Safetensors MLX English qwen3_5_moe image-text-to-text reasoning distillation chain-of-thought qwen qwen3.6 mixture-of-experts Mixture of Experts lora unsloth abliterated uncensored mlx-my-repo conversational 8-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy ..."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B — Claude Opus 4.7 Reasoning - GitHub",
+      "url": "https://github.com/anas-khan-antimatter/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-MLX-5bit/blob/main/README.md",
+      "snippet": "An MLX-native 5-bit quantization of lordx64/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled — a Mixture-of-Experts reasoning model fine-tuned on ~8K reasoning traces from Claude Opus 4.7 to think step-by-step with explicit <think>…</think> chain-of-thought blocks. The original bf16 weights (~70 GB) are too large for most local setups. This conversion brings the model to ~22 GB via ..."
+    },
+    {
+      "title": "huihui_ai/Qwen3.6-abliterated:35b-Claude-4.7 - ollama.com",
+      "url": "https://ollama.com/huihui_ai/Qwen3.6-abliterated:35b-Claude-4.7",
+      "snippet": "Qwen3.6 delivers substantial upgrades in agentic coding and thinking preservation than previous Qwen models."
+    },
+    {
+      "title": "qwen3.6 - ollama.com",
+      "url": "https://ollama.com/library/qwen3.6",
+      "snippet": "Qwen3.6 delivers substantial upgrades in agentic coding and thinking preservation than previous Qwen models."
+    }
+  ]
+}

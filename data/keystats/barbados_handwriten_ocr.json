@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "keystats/barbados_handwriten_ocr",
+  "slug": "keystats-barbados_handwriten_ocr",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/barbados_handwriten_ocr",
+  "created_at": "2026-09-02T15:50:27.000Z",
+  "updated_at": "2026-09-02T15:51:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836608,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jdaltonll02/road_barbados_challenge: Building a machine ...",
+      "url": "https://github.com/jdaltonll02/road_barbados_challenge",
+      "snippet": "It looked negligible in a single-model diagnostic, but was clearly harmful (0.847 → 0.842) once tested on the full multi-model ensemble, where a much more diverse candidate pool gave its frequency-based nudge many more chances to override a correct-but-rare word with a common-but-wrong one."
+    },
+    {
+      "title": "R.O.A.D. Barbados Historic Handwriting Challenge",
+      "url": "https://zindi.world/competitions/road-barbados-historic-handwriting-challenge/data",
+      "snippet": "Can you identify handwritten words in historic and culturally significant scripts from the archives of Barbados? Join 1480 AI builders. ~1 month left"
+    },
+    {
+      "title": "AI in Focus: R.O.A.D. Barbados Historic ... - 1042 Views",
+      "url": "https://zindi.world/competitions/road-barbados-historic-handwriting-challenge/discussions/33702",
+      "snippet": "Barbados&#x27; colonial-era history is preserved in thousands of handwritten pages - deeds, wills, estate inventories, census records, and other archival documents digitised through the Reclaiming Our Atlantic Destiny (R.O.A.D.) Programme. These records hold powerful insights into lives, economies, families, and histories. But many are difficult to read at scale because of faded ink, degraded ..."
+    },
+    {
+      "title": "GitHub - peter-njoro/barbados-ocr",
+      "url": "https://github.com/peter-njoro/barbados-ocr/tree/main/",
+      "snippet": "Barbados Road Challenge - OCR Starter Guide Welcome to the Barbados Road Challenge OCR Starter Pack. This repository contains three independent OCR approaches, each with its own environment, dependencies, and workflow."
+    },
+    {
+      "title": "What If AI Could Read Barbados&#x27; History? - GovTech Barbados",
+      "url": "https://govtechbarbados.wordpress.com/2026/07/17/what-if-ai-could-read-barbados-history/",
+      "snippet": "The Reclaiming Our Atlantic Destiny (R.O.A.D.) Barbados Historic Handwriting Challenge, in partnership with GovTech Barbados and hosted on Zindi, invites AI developers, data scientists, and researchers to solve a problem at the intersection of technology and heritage: build machine learning models that can recognise handwritten words from ..."
+    }
+  ]
+}

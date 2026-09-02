@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "furiosa-ai/EXAONE-4.0-32B-FP8",
+  "slug": "furiosa-ai-exaone-4-0-32b-fp8",
+  "author": "furiosa-ai",
+  "url": "https://huggingface.co/furiosa-ai/EXAONE-4.0-32B-FP8",
+  "created_at": "2026-01-22T01:31:39.000Z",
+  "updated_at": "2026-09-02T14:40:49.000Z",
+  "license": "exaone",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "furiosa-llm",
+  "languages": [
+    "en",
+    "ko",
+    "es"
+  ],
+  "tags": [
+    "furiosa-llm",
+    "safetensors",
+    "exaone4",
+    "furiosa-ai",
+    "lg-ai",
+    "exaone",
+    "exaone-4.0",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "en",
+    "ko",
+    "es",
+    "base_model:LGAI-EXAONE/EXAONE-4.0-32B-FP8",
+    "base_model:quantized:LGAI-EXAONE/EXAONE-4.0-32B-FP8",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1341,
+  "trending_score": 0,
+  "parameters": 32003216384,
+  "parameters_human": "32.00B",
+  "storage_bytes": 95217320940,
+  "storage_human": "95.2 GB",
+  "base_model": "LGAI-EXAONE/EXAONE-4.0-32B-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "furiosa-ai/EXAONE-4.0-32B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/furiosa-ai/EXAONE-4.0-32B-FP8",
+      "snippet": "Quantization: FP8 (Weight: float8, Activation: float8) Description: This model is the pre-compiled version of the EXAONE-4.-32B-FP8, which is an auto-regressive language model that uses an optimized transformer architecture. Usage To run this model with Furiosa-LLM, follow the example command below after installing Furiosa-LLM and its ..."
+    },
+    {
+      "title": "EXAONE 4.0 — FuriosaAI Developer Center 2026.3.0 documentation",
+      "url": "https://developer.furiosa.ai/latest/en/furiosa_llm/models/exaone-4.0.html",
+      "snippet": "Furiosa-LLM runs EXAONE 4.0 in FP8 (static FP8 weights with dynamic FP8 activation quantization; the KV cache stays in 16-bit precision). FuriosaAI publishes pre-compiled FP8 builds under the furiosa-ai organization on the Hugging Face Hub, each shipping a Furiosa Executable Bundle (FXB) for running it on FuriosaAI RNGD with Furiosa-LLM."
+    },
+    {
+      "title": "furiosa-ai/EXAONE-4.0-32B-FP8 · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/furiosa-ai/EXAONE-4.0-32B-FP8",
+      "snippet": "EXAONE 4.0 is LG AI Research&#x27;s bilingual (English / Korean) large language model. The 32B variant is an auto-regressive dense transformer that unifies a non-reasoning mode for general instruction following with a reasoning mode for harder problems, and carries native support for tool calling and agentic use."
+    },
+    {
+      "title": "furiosa-ai/EXAONE-4.0-32B-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/furiosa-ai/EXAONE-4.0-32B-FP8/tree/main",
+      "snippet": "furiosa-ai / EXAONE-4.-32B-FP8 like 0 Follow FuriosaAI 134 Text Generation English Korean furiosa-llm exaone4 furiosa-ai exaone exaone-4 conversational fp8 License:exaone Model card FilesFiles and versions xet Community main EXAONE-4.-32B-FP8 36.9 GB 1 contributor History:10 commits hyunsikc Add files using upload-large-folder tool 7e40d10 ..."
+    },
+    {
+      "title": "GitHub - LG-AI-EXAONE/EXAONE-4.0: Official repository for EXAONE 4.0 ...",
+      "url": "https://github.com/LG-AI-EXAONE/EXAONE-4.0",
+      "snippet": "The EXAONE 4.0 model series consists of two sizes: a mid-size 32B model optimized for high performance, and a small-size 1.2B model designed for on-device applications. In the EXAONE 4.0 architecture, we apply new architectural changes compared to previous EXAONE models as below:"
+    }
+  ]
+}

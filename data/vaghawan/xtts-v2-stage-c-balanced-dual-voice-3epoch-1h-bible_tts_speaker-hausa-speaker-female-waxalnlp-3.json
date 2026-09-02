@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "vaghawan/xtts-v2-stage-c-balanced-dual-voice-3epoch-1h-bible_tts_speaker-hausa-speaker-female-waxalnlp-3",
+  "slug": "vaghawan-xtts-v2-stage-c-balanced-dual-voice-3epoch-1h-bible_tts_speaker-hausa-speaker-female-waxalnlp-3",
+  "author": "vaghawan",
+  "url": "https://huggingface.co/vaghawan/xtts-v2-stage-c-balanced-dual-voice-3epoch-1h-bible_tts_speaker-hausa-speaker-female-waxalnlp-3",
+  "created_at": "2026-09-02T12:23:49.000Z",
+  "updated_at": "2026-09-02T12:32:42.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "coqui-tts",
+  "languages": [
+    "ha"
+  ],
+  "tags": [
+    "coqui-tts",
+    "text-to-speech",
+    "xtts",
+    "hausa",
+    "coqui",
+    "ha",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5650023348,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "coqui/XTTS-v2 · Hugging Face",
+      "url": "https://huggingface.co/coqui/XTTS-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tts-hub/XTTS-v2 · Hugging Face",
+      "url": "https://huggingface.co/tts-hub/XTTS-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "XTTS-v2 — TTS Model",
+      "url": "https://ttsmodels.com/models/xtts-v2/",
+      "snippet": "XTTS-v2: Multilingual voice cloning with only 6 seconds of audio. Learn about its focus, availability, and use cases."
+    },
+    {
+      "title": "Jaden-J/Coqui-TTS-XTTS-v2-: - GitHub",
+      "url": "https://github.com/Jaden-J/Coqui-TTS-XTTS-v2-",
+      "snippet": "Text2Spec models (Tacotron, Tacotron2, Glow-TTS, SpeedySpeech). Speaker Encoder to compute speaker embeddings efficiently. Vocoder models (MelGAN, Multiband-MelGAN, GAN-TTS, ParallelWaveGAN, WaveGrad, WaveRNN) Fast and efficient model training. Detailed training logs on the terminal and Tensorboard. Support for Multi-speaker TTS."
+    },
+    {
+      "title": "ⓍTTS - TTS 0.22.0 documentation - Coqui",
+      "url": "https://docs.coqui.ai/en/latest/models/xtts.html",
+      "snippet": "ⓍTTS # ⓍTTS is a super cool Text-to-Speech model that lets you clone voices in different languages by using just a quick 3-second audio clip. Built on the 🐢Tortoise, ⓍTTS has important model changes that make cross-language voice cloning and multi-lingual speech generation super easy."
+    }
+  ]
+}

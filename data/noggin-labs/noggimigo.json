@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Noggin-Labs/Noggimigo",
+  "slug": "noggin-labs-noggimigo",
+  "author": "Noggin-Labs",
+  "url": "https://huggingface.co/Noggin-Labs/Noggimigo",
+  "created_at": "2026-09-02T14:36:17.000Z",
+  "updated_at": "2026-09-02T14:39:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Noggin-Labs/Noggin: Noggin is an open-source, AI-driven ...",
+      "url": "https://github.com/Noggin-Labs/Noggin",
+      "snippet": "Noggin is an open-source AI-powered adaptive learning platform built for students with special educational needs. Utilizing an AI-driven engine built on neuroplasticity research, the system creates a personalized curriculum that adjusts difficulty and teaching styles in real time to accommodate conditions like ADHD, autism, and dyslexia. The program covers core academic subjects and social ..."
+    },
+    {
+      "title": "Noggin Labs - GitHub",
+      "url": "https://github.com/Noggin-Labs",
+      "snippet": "Noggin is an open-source, AI-driven adaptive learning platform for students with special educational needs. Powered by neuroplasticity research, it personalizes curricula in real time for conditions like ADHD, autism, and dyslexia."
+    },
+    {
+      "title": "Noggin Labs - GitHub",
+      "url": "https://github.com/Noggin-Labs/Noggin-Labs/",
+      "snippet": "📦 Core Ecosystem 🚀 Noggin Noggin (FolatheDuckofDuckingburg) Our flagship open-source, AI-driven adaptive learning platform. Built on a JavaScript runtime, it engine-configures personalized curricula dynamically to reduce friction and eliminate student frustration."
+    },
+    {
+      "title": "Noggin/python/main.py at main · Noggin-Labs/Noggin · GitHub",
+      "url": "https://github.com/Noggin-Labs/Noggin/blob/main/python/main.py",
+      "snippet": "Noggin is an open-source, AI-driven adaptive learning platform for students with special educational needs. Powered by neuroplasticity research, it personalizes curricula in real time for conditions like ADHD, autism, and dyslexia. The platform uses gamified challenges to teach core academics and social-emotional skills without frustration. - Noggin/python/main.py at main · Noggin-Labs/Noggin"
+    },
+    {
+      "title": "Noggin/python/server.py at main · Noggin-Labs/Noggin · GitHub",
+      "url": "https://github.com/Noggin-Labs/Noggin/blob/main/python/server.py",
+      "snippet": "Noggin is an open-source, AI-driven adaptive learning platform for students with special educational needs. Powered by neuroplasticity research, it personalizes curricula in real time for conditions like ADHD, autism, and dyslexia. The platform uses gamified challenges to teach core academics and social-emotional skills without frustration. - Noggin/python/server.py at main · Noggin-Labs/Noggin"
+    }
+  ]
+}

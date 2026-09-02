@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "FredrikKarlssonSpeech/nb-whisper-large-mlx-4bit",
+  "slug": "fredrikkarlssonspeech-nb-whisper-large-mlx-4bit",
+  "author": "FredrikKarlssonSpeech",
+  "url": "https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-large-mlx-4bit",
+  "created_at": "2026-09-02T12:06:46.000Z",
+  "updated_at": "2026-09-02T12:10:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "nb",
+    "no"
+  ],
+  "tags": [
+    "mlx",
+    "whisper",
+    "automatic-speech-recognition",
+    "4-bit",
+    "nb",
+    "no",
+    "base_model:NbAiLab/nb-whisper-large",
+    "base_model:finetune:NbAiLab/nb-whisper-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 877695978,
+  "storage_human": "878 MB",
+  "base_model": "NbAiLab/nb-whisper-large",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FredrikKarlssonSpeech/nb-whisper-large-onnx · Hugging Face",
+      "url": "https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-large-onnx",
+      "snippet": "FredrikKarlssonSpeech / nb-whisper-large-onnx like 0 Automatic Speech Recognition Transformers ONNX Norwegian Bokmål Norwegian whisper License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - NbAiLab/nb-whisper",
+      "url": "https://github.com/NbAiLab/nb-whisper",
+      "snippet": "Contribute to NbAiLab/nb-whisper development by creating an account on GitHub."
+    },
+    {
+      "title": "FredrikKarlssonSpeech/nb-whisper-large-onnx at main",
+      "url": "https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-large-onnx/tree/main",
+      "snippet": "FredrikKarlssonSpeech / nb-whisper-large-onnx like 0 Automatic Speech Recognition Transformers ONNX Norwegian Bokmål Norwegian whisper License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "NB-Whisper Demo - AI-lab",
+      "url": "https://ai.nb.no/nb-whisper-demo/",
+      "snippet": "This demo uses the NB-Whisper Large model, available at HuggingFace. This demo is temporary, and may have significant amounts of downtime. If you need a permanent solution for production, please use the model directly or check out this list of providers of solutions using NB-Whisper."
+    },
+    {
+      "title": "nb-whisper-large open-source speech recognition model - Supports multi ...",
+      "url": "https://model.aibase.com/en/models/details/1934799660749426688",
+      "snippet": "Model Overview NB-Whisper Large is an automatic speech recognition (ASR) model optimized for Norwegian, based on OpenAI&#x27;s Whisper architecture, supporting speech transcription and translation of Norwegian, Bokmål, Nynorsk, and English."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Ppetrovilya/nlp-matching-2024",
+  "slug": "ppetrovilya-nlp-matching-2024",
+  "author": "Ppetrovilya",
+  "url": "https://huggingface.co/Ppetrovilya/nlp-matching-2024",
+  "created_at": "2026-09-02T17:44:58.000Z",
+  "updated_at": "2026-09-02T17:45:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ppetrovilya (Ilya Petrov) - Hugging Face",
+      "url": "https://huggingface.co/Ppetrovilya",
+      "snippet": "Reinforcement learning is my therapy"
+    },
+    {
+      "title": "Ppetrovilya (Ilya Petrov) - Hugging Face",
+      "url": "https://huggingface.co/Ppetrovilya/models",
+      "snippet": "Ppetrovilya&#x27;s models1 Sort: Recently updated Ppetrovilya/paper_005987031_self_supervised Updated 3 days ago"
+    },
+    {
+      "title": "NLP in 2024: How Large Language Models Are Changing the Game",
+      "url": "https://generativeai.pub/nlp-in-2024-how-large-language-models-are-changing-the-game-f815eefea7d4",
+      "snippet": "In this article, we have explored the current state and future prospects of NLP in 2024, focusing on the role of Large Language Models (LLMs) such as ChatGPT. We have seen how LLMs are capable of performing a wide range of NLP tasks, from text generation to machine translation, and discussed some of the current challenges."
+    },
+    {
+      "title": "[2404.12460] NLP-enabled Trajectory Map-matching in Urban Road Networks ...",
+      "url": "https://arxiv.org/abs/2404.12460",
+      "snippet": "This study introduces a data-driven, deep learning-based map-matching framework, formulating the task as machine translation, inspired by NLP. Specifically, a transformer-based encoder-decoder model learns contextual representations of noisy GPS points to infer trajectory behavior and road structures in an end-to-end manner."
+    },
+    {
+      "title": "Resume and Job Description Matching System - GitHub",
+      "url": "https://github.com/kanhaiya0802/resume-matcher-ai",
+      "snippet": "This project is an AI-based system that analyzes the compatibility between a candidate&#x27;s resume and a given job description. It combines rule-based NLP techniques with a deep learning (LSTM) model to provide both quantitative scores and qualitative match classification. The system is designed to simulate how modern ATS (Applicant Tracking Systems) evaluate resumes."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Yac1n3/act_so101_pick_cube",
+  "slug": "yac1n3-act_so101_pick_cube",
+  "author": "Yac1n3",
+  "url": "https://huggingface.co/Yac1n3/act_so101_pick_cube",
+  "created_at": "2026-09-02T12:03:38.000Z",
+  "updated_at": "2026-09-02T12:03:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Yac1n3/so101_pick_cube_20260902_010918",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yac1n3/so101_pick_cube_20260902_010918 - Hugging Face",
+      "url": "https://huggingface.co/datasets/Yac1n3/so101_pick_cube_20260902_010918/viewer",
+      "snippet": "Datasets: Yac1n3 / so101_pick_cube_20260902_010918 like 0 Dataset card Data Studio FilesFiles and versions xet Community Subset (1) default·24.3k rows default (24.3k rows) Split (1) train·24.3k rows train (24.3k rows) Search is not available for this dataset SQL Console"
+    },
+    {
+      "title": "sanjay050/act_so101_pick_cube · Hugging Face",
+      "url": "https://huggingface.co/sanjay050/act_so101_pick_cube",
+      "snippet": "Instructions to use sanjay050/act_so101_pick_cube with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use sanjay050/act_so101_pick_cube with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on ..."
+    },
+    {
+      "title": "GitHub - PokerJosh/LeRobot-So-101-public · GitHub",
+      "url": "https://github.com/PokerJosh/LeRobot-So-101-public",
+      "snippet": "The historical project collected multiple SO-101 single-arm demonstration datasets (LeRobot dataset format v3.0, 30 FPS, front + wrist cameras, 50-100 episodes per dataset, task: \"Pick up the cube and place it in the target area.\")."
+    },
+    {
+      "title": "Train an SO-101 Robot From Sim-to-Real With NVIDIA Isaac",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/index.html",
+      "snippet": "You&#x27;ll train and deploy a vision-language-action (VLA) model to perform unstructured pick-and-place of centrifuge vials into a rack using an SO-101 robot arm - first in sim, where we can iterate quickly and validate behavior, then in reality."
+    },
+    {
+      "title": "GitHub - legalaspro/so101-ros-physical-ai: ROS 2 stack for SO-101 ...",
+      "url": "https://github.com/legalaspro/so101-ros-physical-ai",
+      "snippet": "ROS 2 stack for SO-101 leader/follower: Feetech driver, bringup, teleop, MoveIt2, episode recording, Rerun, policy inference. - legalaspro/so101-ros-physical-ai"
+    }
+  ]
+}

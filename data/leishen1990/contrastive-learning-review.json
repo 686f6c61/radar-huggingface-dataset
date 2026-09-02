@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Leishen1990/contrastive-learning-review",
+  "slug": "leishen1990-contrastive-learning-review",
+  "author": "Leishen1990",
+  "url": "https://huggingface.co/Leishen1990/contrastive-learning-review",
+  "created_at": "2026-09-02T18:44:23.000Z",
+  "updated_at": "2026-09-02T18:44:29.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IEEE Xplore Full-Text PDF:",
+      "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9226466",
+      "snippet": "IEEE Xplore Full-Text PDF:"
+    },
+    {
+      "title": "A comprehensive survey on contrastive learning - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231224014164",
+      "snippet": "Contrastive Learning is self-supervised representation learning by training a model to differentiate between similar and dissimilar samples. It has been shown to be effective and has gained significant attention in various computer vision and natural language processing tasks. In this paper, we comprehensively and systematically sort out the main ideas, recent developments and application ..."
+    },
+    {
+      "title": "A comprehensive survey on contrastive learning - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231224014164",
+      "snippet": "Abstract Contrastive Learning is self-supervised representation learning by training a model to differentiate between similar and dissimilar samples. It has been shown to be effective and has gained significant attention in various computer vision and natural language processing tasks."
+    },
+    {
+      "title": "A comprehensive survey on contrastive learning",
+      "url": "https://dl.acm.org/doi/10.1016/j.neucom.2024.128645",
+      "snippet": "Abstract Contrastive Learning is self-supervised representation learning by training a model to differentiate between similar and dissimilar samples. It has been shown to be effective and has gained significant attention in various computer vision and natural language processing tasks."
+    },
+    {
+      "title": "Contrastive Representation Learning: A Framework and Review",
+      "url": "https://arxiv.org/abs/2010.05113",
+      "snippet": "In this paper we provide a comprehensive literature review and we propose a general Contrastive Representation Learning framework that simplifies and unifies many different contrastive learning methods."
+    }
+  ]
+}

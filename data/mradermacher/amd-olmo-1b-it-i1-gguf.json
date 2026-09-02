@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/AMD-OLMo-1B-IT-i1-GGUF",
+  "slug": "mradermacher-amd-olmo-1b-it-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/AMD-OLMo-1B-IT-i1-GGUF",
+  "created_at": "2026-09-02T14:58:51.000Z",
+  "updated_at": "2026-09-02T16:17:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "AMD",
+    "OLMo",
+    "SFT",
+    "instruct",
+    "GPT4",
+    "en",
+    "dataset:shibing624/sharegpt_gpt4",
+    "base_model:aiuser3993/AMD-OLMo-1B-IT",
+    "base_model:quantized:aiuser3993/AMD-OLMo-1B-IT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1176764416,
+  "parameters_human": "1.18B",
+  "storage_bytes": 13920260736,
+  "storage_human": "13.9 GB",
+  "base_model": "aiuser3993/AMD-OLMo-1B-IT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/AMD-OLMo-1B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/AMD-OLMo-1B-i1-GGUF",
+      "snippet": "mradermacher / AMD-OLMo-1B-i1-GGUF like 0 Transformers GGUF allenai/dolma English Inference Endpoints imatrix License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model Edit model card About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "mradermacher/AMD-OLMo-1B-SFT-DPO-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/AMD-OLMo-1B-SFT-DPO-GGUF",
+      "snippet": "mradermacher / AMD-OLMo-1B-SFT-DPO-GGUF like 0 Transformers GGUF allenai/dolma English Inference Endpoints conversational License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model Edit model card About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "Introducing the First AMD 1B Language Models: AMD OLMo",
+      "url": "https://www.amd.com/en/developer/resources/technical-articles/introducing-the-first-amd-1b-language-model.html",
+      "snippet": "AMD is releasing its first open source 1B language model, advancing accessible AI with high-performance AMD Instinct™ GPUs and Ryzen™ AI PCs."
+    },
+    {
+      "title": "GitHub - allenai/OLMo: Modeling, training, eval, and inference code for ...",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    },
+    {
+      "title": "Introducing the First AMD 1B Language Models: AMD OLMo",
+      "url": "https://www.amd.com/en/blogs/2024/introducing-the-first-amd-1b-language-models-amd-.html",
+      "snippet": "The language model was also deployed onto AMD Ryzen AI PCs that can potentially help enable a diverse set of edge use cases. Open sourcing the data, weights, training recipes and code is primarily aimed at helping developers to reproduce as well as innovate further on top."
+    }
+  ]
+}

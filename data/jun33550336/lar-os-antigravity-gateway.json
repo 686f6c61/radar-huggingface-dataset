@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Jun33550336/lar-os-antigravity-gateway",
+  "slug": "jun33550336-lar-os-antigravity-gateway",
+  "author": "Jun33550336",
+  "url": "https://huggingface.co/Jun33550336/lar-os-antigravity-gateway",
+  "created_at": "2026-09-02T18:47:03.000Z",
+  "updated_at": "2026-09-02T18:48:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Species Line Explorer - a Hugging Face Space by Jun33550336",
+      "url": "https://huggingface.co/spaces/Jun33550336/the-species-line-explorer",
+      "snippet": "This web app lets you browse three research series—AI Personhood, Longevity Asymmetry, and War Correspondent Philosophy—by clicking the tabs. You can open the full PDFs, view dataset links, and run..."
+    },
+    {
+      "title": "Google Antigravity",
+      "url": "https://antigravity.google/",
+      "snippet": "Google Antigravity is built for user trust, whether you&#x27;re a professional developer working in a large enterprise codebase, a hobbyist vibe-coding in their spare time, or anyone in between."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Antigravity agent | Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/antigravity-agent",
+      "snippet": "The Antigravity agent is a general-purpose managed agent on the Gemini API. A single API call gives you an agent that reasons, executes code, manages files, and browses the web inside your own secure Linux sandbox, hosted by Google. It is built with Gemini 3.8 Flash and uses the same harness as the Antigravity IDE. You can configure the underlying Gemini model using agent_config. Available ..."
+    },
+    {
+      "title": "Google unveils Gemini Omni at I/O 2026 | Cybernews",
+      "url": "https://cybernews.com/ai-news/google-io-2026-gemini-omni-antigravity-agentic-ai/",
+      "snippet": "Google unveiled Gemini Omni, Gemini 3.5 Flash, and Antigravity 2.0 at I/O 2026 as the company doubles down on agentic AI and autonomous developer tools."
+    }
+  ]
+}

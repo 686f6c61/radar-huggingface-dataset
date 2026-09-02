@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Solstice-AI/C2S-Scale-Gemma-2-27B-Q8_0-GGUF",
+  "slug": "solstice-ai-c2s-scale-gemma-2-27b-q8_0-gguf",
+  "author": "Solstice-AI",
+  "url": "https://huggingface.co/Solstice-AI/C2S-Scale-Gemma-2-27B-Q8_0-GGUF",
+  "created_at": "2026-05-24T14:53:42.000Z",
+  "updated_at": "2026-09-02T17:15:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "gemma2",
+    "q8_0",
+    "coding",
+    "agentic",
+    "anvil",
+    "text-generation",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 27227128320,
+  "parameters_human": "27.23B",
+  "storage_bytes": 28937388160,
+  "storage_human": "28.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solstice-AI/C2S-Scale-Gemma-2-27B-Q8_0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Solstice-AI/C2S-Scale-Gemma-2-27B-Q8_0-GGUF",
+      "snippet": "Instructions to use Solstice-AI/C2S-Scale-Gemma-2-27B-Q8_0-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Solstice-AI (SolsticeAI) - Hugging Face",
+      "url": "https://huggingface.co/Solstice-AI",
+      "snippet": "Solstice-AI/C2S-Scale-Gemma-2-27B-Q8_0-GGUF Text Generation • 27B•Updated May 24• 9"
+    },
+    {
+      "title": "GitHub - zbovaird/C2S-Scale-Gemma",
+      "url": "https://github.com/zbovaird/C2S-Scale-Gemma",
+      "snippet": "C2S-Scale-Gemma Hybrid Model A dual-encoder + late-fusion system for single-cell transcriptomics that combines Cell2Sentence / C2S-Scale-Gemma with UHG-based graph learning. This repository is now being extended toward an OKSM / OSKM reprogramming research workflow focused on: modeling productive vs alternative reprogramming trajectories"
+    },
+    {
+      "title": "GitHub - vandijklab/cell2sentence: Cell2Sentence: Teaching Large ...",
+      "url": "https://github.com/vandijklab/cell2sentence",
+      "snippet": "🚀 (10/15/2025) The C2S-Scale Gemma-2 2B and 27B pretrained models are now available on HuggingFace: C2S-Scale-Gemma-Models. Check out what&#x27;s new in our updated preprint and blog post from Google!"
+    },
+    {
+      "title": "Google&#x27;s Gemma AI model helps discover new potential cancer therapy pathway",
+      "url": "https://blog.google/innovation-and-ai/products/google-gemma-ai-cancer-therapy-discovery/",
+      "snippet": "C2S-Scale 27B, a new foundation model built on Gemma AI and validated in the lab, is transforming single-cell analysis and may help provide a novel pathway for cancer therapy."
+    }
+  ]
+}

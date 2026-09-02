@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/all-MiniLM-L12-v2",
+  "slug": "jonnyverse-all-minilm-l12-v2",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/all-MiniLM-L12-v2",
+  "created_at": "2026-09-02T15:30:19.000Z",
+  "updated_at": "2026-09-02T15:30:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "base_model:sentence-transformers/all-MiniLM-L12-v2",
+    "base_model:quantized:sentence-transformers/all-MiniLM-L12-v2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 459190664,
+  "storage_human": "459 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L12-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sentence-transformers/all-MiniLM-L12-v2 · Hugging Face",
+      "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L12-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sunileman/all-MiniLM-L12-v2 · Hugging Face",
+      "url": "https://huggingface.co/sunileman/all-MiniLM-L12-v2",
+      "snippet": "sunileman/all-MiniLM-L12-v2 This is a sentence-transformers model: It maps sentences & paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering or semantic search."
+    },
+    {
+      "title": "all-MiniLM-L12-v2: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/all-minilm-l12-v2-sentence-transformers",
+      "snippet": "Overview all-MiniLM-L12-v2 is a sentence embedding model developed by sentence-transformers that encodes sentences and short paragraphs into 384-dimensional dense vectors for semantic search, clustering, and similarity tasks. Built on Microsoft&#x27;s MiniLM-L12-H384-uncased architecture, the model was fine-tuned on over 1.17 billion sentence pairs using contrastive learning objectives via JAX and ..."
+    },
+    {
+      "title": "all-MiniLM-L12-v2 API Endpoint & Discounted Pricing | LLM API",
+      "url": "https://llmapi.ai/models/sentence-transformers-all-minilm-l12-v2/",
+      "snippet": "all-MiniLM-L12-v2 is a compact Sentence Transformers model that generates high-quality sentence embeddings for efficient semantic search and similarity tasks. It is notable for its strong performance-to-size trade-off, making it suitable for real-time and resource-constrained applications."
+    },
+    {
+      "title": "all-MiniLM-L12-v2 for semantic search and sentence similarity is now ...",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/all-minilm-l12-v2-on-sagemaker-jumpstart/",
+      "snippet": "all-MiniLM-L12-v2 excels at encoding sentences and short paragraphs into dense vector representations that capture semantic meaning, making it ideal for information retrieval, semantic search systems, document clustering, duplicate detection, and paraphrase identification."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "tetracta/tetracta-znext-1b",
+  "slug": "tetracta-tetracta-znext-1b",
+  "author": "tetracta",
+  "url": "https://huggingface.co/tetracta/tetracta-znext-1b",
+  "created_at": "2026-08-21T06:46:03.000Z",
+  "updated_at": "2026-09-02T17:21:10.000Z",
+  "license": "tetracta-evaluation-only",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "z-next",
+    "attention-free",
+    "kv-cache-free",
+    "constant-memory-inference",
+    "long-context",
+    "research",
+    "benchmarks",
+    "weights-not-released",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:wikimedia/wikipedia",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 235597,
+  "storage_human": "235597 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tetracta/tetracta-znext-1b · Hugging Face",
+      "url": "https://huggingface.co/tetracta/tetracta-znext-1b",
+      "snippet": "This is a 1B-parameter model trained on 10B tokens. It hallucinates heavily and in a manner appropriate to that scale (see Limitations). There is no safety tuning, no RLHF, and no content filtering beyond what the pre-training corpus implies. Out of scope. Non-English use."
+    },
+    {
+      "title": "Tetracta Znext 1b - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/tetracta/tetracta-znext-1b",
+      "snippet": "Registry entry for model Tetracta Znext 1b; source metadata pending."
+    },
+    {
+      "title": "Z-Next — a 1B language model with no attention and a ... - tetracta.ai",
+      "url": "https://www.tetracta.ai/znext.html",
+      "snippet": "Z-Next is a 947M-parameter language model trained on 10.00B tokens with no attention and no KV cache. Its per-session state is 5.227 MiB and does not grow with context. Full benchmark tables, fairness gates, measured concurrency economics, a live demo — and an honest limitations section."
+    },
+    {
+      "title": "tetracta (tetracta ai) - Hugging Face",
+      "url": "https://huggingface.co/tetracta",
+      "snippet": "independent AI research lab · from-scratch model training · brain-inspired & efficient architectures · experiment- and measurement-driven · model diagnostics + interpretability"
+    },
+    {
+      "title": "Tetracta — Attention, reimagined for training stability · deep-tech AI lab",
+      "url": "https://www.tetracta.ai/",
+      "snippet": "Tetracta is a stealth deep-tech AI studio and efficiency-research lab. A drop-in attention operator with measured training stability, zero extra parameters, and capability-per-dollar — method patent application in preparation."
+    }
+  ]
+}

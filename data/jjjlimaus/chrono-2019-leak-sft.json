@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/chrono-2019-leak-sft",
+  "slug": "jjjlimaus-chrono-2019-leak-sft",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/chrono-2019-leak-sft",
+  "created_at": "2026-09-02T18:12:11.000Z",
+  "updated_at": "2026-09-02T19:24:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sn38-nanochrono",
+    "text-generation",
+    "pytorch",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2018511234,
+  "parameters_human": "2.02B",
+  "storage_bytes": 36333411732,
+  "storage_human": "36.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jjjlimaus (Lima) - Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus",
+      "snippet": "jjjlimaus/chrono2014-finance2015-ft3 2B•Updated 1 day ago• 4 View 17 models datasets27 Sort: Recently updated"
+    },
+    {
+      "title": "jjjlimaus (Lima) - Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus/models",
+      "snippet": "jjjlimaus&#x27;s models17 Sort: Recently updated jjjlimaus/nanoexpand-2018-quality-gold-cont Text Generation • 2B•Updated 28 minutes ago"
+    },
+    {
+      "title": "Pyhroff/chrono-leak: Personal OSINT self-audit tool - GitHub",
+      "url": "https://github.com/Pyhroff/chrono-leak",
+      "snippet": "CHRONO-LEAK A personal OSINT self-audit tool. Point it at a username and it shows you exactly what an attacker can learn about you from public data alone — confirmed accounts, recovered identity, behavioral timezone, breach exposure, and an overall exposure score, capped off with an AI-written forensic brief."
+    },
+    {
+      "title": "AI Model Release Tracker: New LLM Launches, Updated Weekly | AI Flash ...",
+      "url": "https://aiflashreport.com/model-releases.html",
+      "snippet": "Live tracker of every new AI model release - GPT, Claude, Gemini, Llama, open-weights. Launch dates, context windows, benchmarks. Updated weekly."
+    },
+    {
+      "title": "AI Model Release Tracker - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/tools/model-release-tracker",
+      "snippet": "Track the latest AI model releases from OpenAI, Anthropic, Google, Meta, DeepSeek and more. New model launches, version updates, and feature additions."
+    }
+  ]
+}

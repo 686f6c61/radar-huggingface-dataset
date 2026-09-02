@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "KRPur/q-trust-codebert",
+  "slug": "krpur-q-trust-codebert",
+  "author": "KRPur",
+  "url": "https://huggingface.co/KRPur/q-trust-codebert",
+  "created_at": "2026-09-02T17:29:15.000Z",
+  "updated_at": "2026-09-02T17:29:26.000Z",
+  "license": "qtrust-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "cryptography",
+    "post-quantum-cryptography",
+    "code-classification",
+    "crypto-discovery",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 83452418,
+  "parameters_human": "83.5M",
+  "storage_bytes": 333822200,
+  "storage_human": "334 MB",
+  "base_model": "huggingface/codeberta-language-id",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - microsoft/CodeBERT: CodeBERT · GitHub",
+      "url": "https://github.com/microsoft/CodeBERT",
+      "snippet": "CodeBERT This repo provides the code for reproducing the experiments in CodeBERT: A Pre-Trained Model for Programming and Natural Languages. CodeBERT is a pre-trained model for programming language, which is a multi-programming-lingual model pre-trained on NL-PL pairs in 6 programming languages (Python, Java, JavaScript, PHP, Ruby, Go)."
+    },
+    {
+      "title": "CodeBERT AI Model: Code Understanding & Classification | Microsoft ...",
+      "url": "https://exploreai.tools/ai-models/codebert-family",
+      "snippet": "Explore CodeBERT, Microsoft&#x27;s open-source AI model for code understanding, featuring code-search, classification, and embeddings. Learn capabilities, use…"
+    },
+    {
+      "title": "CodeBERT: A Pre-Trained Model for Programming and Natural Languages",
+      "url": "https://www.microsoft.com/en-us/research/publication/codebert-a-pre-trained-model-for-programming-and-natural-languages/",
+      "snippet": "Results show that CodeBERT achieves state-of-the-art performance on both natural language code search and code documentation generation tasks. Furthermore, to investigate what type of knowledge is learned in CodeBERT, we construct a dataset for NL-PL probing, and evaluate in a zero-shot setting where parameters of pre-trained models are fixed."
+    },
+    {
+      "title": "CodeBERT/README.md at master · microsoft/CodeBERT · GitHub",
+      "url": "https://github.com/microsoft/CodeBERT/blob/master/README.md?plain=1",
+      "snippet": "CodeBERT is a pre-trained model for programming language, which is a multi-programming-lingual model pre-trained on NL-PL pairs in 6 programming languages (Python, Java, JavaScript, PHP, Ruby, Go)."
+    },
+    {
+      "title": "CodeBERT: A Pre-Trained Model for Programming and Natural Languages",
+      "url": "https://arxiv.org/pdf/2002.08155v3",
+      "snippet": "Abstract We present CodeBERT, a bimodal pre-trained model for programming language (PL) and nat-ural language (NL). CodeBERT learns general-purpose representations that support downstream NL-PL applications such as natural language code search, code documentation generation, etc. We develop CodeBERT with Transformer-based neu-ral architecture, and train it with a hybrid objective function that ..."
+    }
+  ]
+}

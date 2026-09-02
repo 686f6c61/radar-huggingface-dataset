@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "rohansiva/gr00t-libero-x",
+  "slug": "rohansiva-gr00t-libero-x",
+  "author": "rohansiva",
+  "url": "https://huggingface.co/rohansiva/gr00t-libero-x",
+  "created_at": "2026-09-02T14:50:08.000Z",
+  "updated_at": "2026-09-02T14:50:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "robotics",
+    "vla",
+    "gr00t",
+    "libero-x",
+    "base_model:nvidia/GR00T-N1.7-LIBERO",
+    "base_model:finetune:nvidia/GR00T-N1.7-LIBERO",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 6910499416,
+  "storage_human": "6.9 GB",
+  "base_model": "nvidia/GR00T-N1.7-LIBERO",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "NVIDIA Isaac GR00T N1.7 is an open vision-language-action (VLA) model for generalized humanoid robot skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    },
+    {
+      "title": "Isaac-GR00T/examples/LIBERO at main · NVIDIA/Isaac-GR00T",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T/tree/main/examples/LIBERO",
+      "snippet": "NVIDIA Isaac GR00T N1.7 - A Foundation Model for Generalist Robots. - NVIDIA/Isaac-GR00T"
+    },
+    {
+      "title": "LIBERO-X - meituan.github.io",
+      "url": "https://meituan.github.io/LIBERO-X/",
+      "snippet": "We propose LIBERO-X, a comprehensive benchmark for manipulation that introduces a progressively challenging evaluation framework with multi-label annotations and jointly perturbs spatial layouts, object properties, and instruction semantics to systematically characterize model performance under multi-dimensional distribution shifts."
+    },
+    {
+      "title": "yinchenghust/gr00t_libero · Hugging Face",
+      "url": "https://huggingface.co/yinchenghust/gr00t_libero",
+      "snippet": "Model Card for Model ID Model Details Model Description This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated. Developed by: [More Information Needed] Funded by [optional]: [More Information Needed] Shared by [optional]: [More Information Needed] Model type: [More Information Needed] Language (s) (NLP): [More ..."
+    },
+    {
+      "title": "Isaac GR00T",
+      "url": "https://grootdocs.com/",
+      "snippet": "NVIDIA Isaac™ GR00T is an open reference platform for general-purpose humanoid robots that enables developers to more efficiently build, train, test, and deploy AI-powered robots. It comprises open data and data pipelines, an open robot foundation model, simulation frameworks, middleware, CUDA-X accelerated runtime libraries, and NVIDIA Jetson Thor for real-time robot inference and control."
+    }
+  ]
+}

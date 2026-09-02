@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "venky-cdmbrm14/Llama-3.2-1B-OAT-Adapter",
+  "slug": "venky-cdmbrm14-llama-3-2-1b-oat-adapter",
+  "author": "venky-cdmbrm14",
+  "url": "https://huggingface.co/venky-cdmbrm14/Llama-3.2-1B-OAT-Adapter",
+  "created_at": "2026-09-02T18:07:27.000Z",
+  "updated_at": "2026-09-02T18:08:30.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llama",
+    "lora",
+    "mechanistic-interpretability",
+    "adversarial-training",
+    "ai-safety",
+    "text-generation",
+    "dataset:Mechanistic-Anomaly-Detection/llama3-jailbreaks",
+    "base_model:meta-llama/Llama-3.2-1B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.2-1B-Instruct",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 146617405,
+  "storage_human": "147 MB",
+  "base_model": "meta-llama/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://developer.meta.com/ai/models/llama-3/",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "onnx-community/Llama-3.2-1B · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/Llama-3.2-1B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama 3.2 | Model Cards and Prompt formats - developer.meta.com",
+      "url": "https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_2/",
+      "snippet": "Llama 3.2 Quantized Models (1B/3B) Introduction Llama 3.2 included lightweight models in 1B and 3B sizes at bfloat16 (BF16) precision. Subsequent to the release, we updated Llama 3.2 to include quantized versions of these models. This section describes these updated lightweight models, how to obtain them, and what use cases they support."
+    },
+    {
+      "title": "Llama-3.2-1B-Instruct-ONNX - Hugging Face",
+      "url": "https://huggingface.co/onnx-community/Llama-3.2-1B-Instruct-ONNX",
+      "snippet": "Note: Having a separate repo for ONNX weights is intended to be a temporary solution until WebML gains more traction. If you would like to make your models web-ready, we recommend converting to ONNX using 🤗 Optimum and structuring your repo like this one (with ONNX weights located in a subfolder named onnx)."
+    },
+    {
+      "title": "Llama-3.2-1B download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/llama-3-2-1b/",
+      "snippet": "Download Llama-3.2-1B for free. Llama 3.2-1B: Multilingual, instruction-tuned model for mobile AI. meta-llama/Llama-3.2-1B is a lightweight, instruction-tuned generative language model developed by Meta, optimized for multilingual dialogue, summarization, and retrieval tasks. With 1.23 billion parameters, it offers strong performance in constrained environments like mobile devices, without ..."
+    }
+  ]
+}

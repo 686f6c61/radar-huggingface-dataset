@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "theoracleguy/MOSS-Audio-Tokenizer-v2-MLX-int8",
+  "slug": "theoracleguy-moss-audio-tokenizer-v2-mlx-int8",
+  "author": "theoracleguy",
+  "url": "https://huggingface.co/theoracleguy/MOSS-Audio-Tokenizer-v2-MLX-int8",
+  "created_at": "2026-09-02T12:32:23.000Z",
+  "updated_at": "2026-09-02T12:32:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx-audio",
+  "languages": [],
+  "tags": [
+    "mlx-audio",
+    "safetensors",
+    "moss-audio-tokenizer",
+    "mlx",
+    "audio-codec",
+    "moss-tts",
+    "apple-silicon",
+    "int8",
+    "quantized",
+    "custom_code",
+    "base_model:OpenMOSS-Team/MOSS-Audio-Tokenizer-v2",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Audio-Tokenizer-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 599142016,
+  "parameters_human": "599.1M",
+  "storage_bytes": 2397008800,
+  "storage_human": "2.4 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Audio-Tokenizer-v2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MOSS-Audio-Tokenizer - GitHub",
+      "url": "https://github.com/OpenMOSS/MOSS-Audio-Tokenizer",
+      "snippet": "MOSS-Audio-Tokenizer is a unified discrete audio tokenizer based on the Cat (C ausal A udio T okenizer with T ransformer) architecture. Scaling to 1.6 billion parameters, it functions as a unified discrete interface, delivering both lossless-quality reconstruction and high-level semantic alignment."
+    },
+    {
+      "title": "GitHub - OpenMOSS/MOSS-Audio-Tokenizer: MOSS-Audio-Tokenizer is a ...",
+      "url": "https://github.com/OpenMOSS/MOSS-Audio-Tokenizer/tree/main/",
+      "snippet": "MOSS-Audio-Tokenizer is a Causal Transformer-based audio tokenizer built on the CAT architecture. Trained on 3M hours of diverse audio, it supports streaming and variable bitrates, delivering SOTA ..."
+    },
+    {
+      "title": "OpenMOSS-Team/MOSS-Audio-Tokenizer-v2 · Hugging Face",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-v2?library=transformers",
+      "snippet": "MOSS-Audio-Tokenizer-v2 is a unified discrete audio tokenizer based on the Cat (C ausal A udio T okenizer with T ransformer) architecture. Scaling to 2 billion parameters, it functions as a unified discrete interface, delivering both lossless-quality reconstruction and high-level semantic alignment."
+    },
+    {
+      "title": "MOSS-Audio-Tokenizer: Scaling Audio Tokenizers for Future Audio ...",
+      "url": "https://arxiv.org/pdf/2602.10934",
+      "snippet": "On audio and music benchmarks, MOSS-Audio-Tokenizer maintains competitive performance across all evaluated bitrates, with reconstruction quality improving as bitrate increases, indicating that the model effectively benefits from increased bitrate and model capacity through joint end-to-end optimization."
+    },
+    {
+      "title": "MOSS-Audio-Tokenizer: Scaling Audio Tokenizers for Future Audio ...",
+      "url": "https://arxiv.org/abs/2602.10934",
+      "snippet": "Discrete audio tokenizers are fundamental to empowering large language models with native audio processing and generation capabilities. Despite recent progress, existing approaches often rely on pretrained encoders, semantic distillation, or heterogeneous CNN-based architectures. These designs introduce fixed inductive biases that limit reconstruction fidelity and hinder effective scaling. In ..."
+    }
+  ]
+}

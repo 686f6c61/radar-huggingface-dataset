@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "udayanga20/pathum-sinhala-offensive-detoxify-mt5-custom",
+  "slug": "udayanga20-pathum-sinhala-offensive-detoxify-mt5-custom",
+  "author": "udayanga20",
+  "url": "https://huggingface.co/udayanga20/pathum-sinhala-offensive-detoxify-mt5-custom",
+  "created_at": "2026-09-02T16:58:03.000Z",
+  "updated_at": "2026-09-02T17:01:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mt5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 966573312,
+  "parameters_human": "966.6M",
+  "storage_bytes": 3882657967,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pudamya/mt5-singlish2sinhala · Hugging Face",
+      "url": "https://huggingface.co/Pudamya/mt5-singlish2sinhala",
+      "snippet": "MT5 Singlish → Sinhala Transliteration This model converts Singlish (romanized Sinhala) text into Sinhala script using a Transformer-based sequence-to-sequence architecture. It is trained using parameter-efficient fine-tuning (LoRA) on top of google/mt5-small, following both one-phase and two-phase training strategies."
+    },
+    {
+      "title": "Oba Hinda ( Kalpana ) - Iraj & Samitha Mudunkotuwa - YouTube",
+      "url": "https://www.youtube.com/watch?v=lvORGQybVnE",
+      "snippet": "Produced & Composed by - Iraj Weeraratnewww.facebook.com/irajw"
+    },
+    {
+      "title": "පැතුමා ️‍ #cricketshorts #shortreel #ytshorts - YouTube",
+      "url": "https://www.youtube.com/shorts/ZbAHsqNHWkk",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "dimuthulk/sinhala-detox-mt5-lora · Hugging Face",
+      "url": "https://huggingface.co/dimuthulk/sinhala-detox-mt5-lora",
+      "snippet": "Instructions to use dimuthulk/sinhala-detox-mt5-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use dimuthulk/sinhala-detox-mt5-lora with Transformers:"
+    },
+    {
+      "title": "GroqCloud - Build Fast - console.groq.com",
+      "url": "https://console.groq.com/authenticate?stytch_token_type=discovery_oauth",
+      "snippet": "Build Fast with GroqCloud Create Account or Login Continue with Google"
+    }
+  ]
+}

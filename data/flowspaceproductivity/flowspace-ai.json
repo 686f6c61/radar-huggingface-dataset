@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Flowspaceproductivity/FlowSpace-AI",
+  "slug": "flowspaceproductivity-flowspace-ai",
+  "author": "Flowspaceproductivity",
+  "url": "https://huggingface.co/Flowspaceproductivity/FlowSpace-AI",
+  "created_at": "2026-09-02T14:03:27.000Z",
+  "updated_at": "2026-09-02T14:17:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1987585368,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FlowspaceAI | AI Powered Fulfillment & Logistics Platform",
+      "url": "https://flow.space/platform/flowspaceai",
+      "snippet": "AI monitors and flags when Flowspace needs to step in With AI built into our platform, we act as an extension of your team and keep an eye on every order. All without adding to your headcount."
+    },
+    {
+      "title": "GitHub - nstl250619-ctrl/flowspace: Local infinite-canvas AI content ...",
+      "url": "https://github.com/nstl250619-ctrl/flowspace",
+      "snippet": "A local-only, single-user infinite-canvas workspace for AI media workflows. Compose characters, products, scenes, and videos as a directed graph. Drive generation through a Chrome extension that proxies requests to Google Flow (Veo 3.1 / GEM_PIX_2). Every node is reusable, every edge is a real data-dependency, every variant is independently regenerable."
+    },
+    {
+      "title": "GitHub - DevKumarAnkit/flowspace-ai: AI-powered productivity workspace ...",
+      "url": "https://github.com/DevKumarAnkit/flowspace-ai",
+      "snippet": "AI-powered productivity workspace with Kanban boards, notes, calendars, whiteboards, and real-time collaboration. - DevKumarAnkit/flowspace-ai"
+    },
+    {
+      "title": "Optimizing Supply Chains with Artificial Intelligence: The ... - Flowspace",
+      "url": "https://flow.space/blog/the-flowspaceai-approach",
+      "snippet": "Future Vision for FlowspaceAI Flowspace envisions a future in which AI is integrated fully within the Flowspace platform experience. This transformation is an iterative process, marked by collaboration and innovative thinking.\"Over time, FlowspaceAI will be seamlessly integrated into the Flowspace experience,\" said Tokash."
+    },
+    {
+      "title": "FlowSpace",
+      "url": "https://app.flowspace.site/",
+      "snippet": "Your personal productivity manager"
+    }
+  ]
+}

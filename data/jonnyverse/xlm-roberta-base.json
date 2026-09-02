@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/xlm-roberta-base",
+  "slug": "jonnyverse-xlm-roberta-base",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/xlm-roberta-base",
+  "created_at": "2026-09-02T15:29:58.000Z",
+  "updated_at": "2026-09-02T15:29:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "xlm-roberta",
+    "fill-mask",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:quantized:FacebookAI/xlm-roberta-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1972891832,
+  "storage_human": "2.0 GB",
+  "base_model": "xlm-roberta-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XLM-RoBERTa · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/xlm-roberta",
+      "snippet": "XLM-RoBERTa is a large multilingual masked language model trained on 2.5TB of filtered CommonCrawl data across 100 languages. It shows that scaling the model provides strong performance gains on high-resource and low-resource languages. The model uses the RoBERTa pretraining objectives on the XLM model."
+    },
+    {
+      "title": "XLM-RoBERTa Base: Multilingual Transformer Model by Facebook AI",
+      "url": "https://toolseekai.com/en/models/facebookaixlm-roberta-base",
+      "snippet": "XLM-RoBERTa (XLM-R) is a state-of-the-art multilingual transformer model supporting 100 languages. Pre-trained on 2.5TB of data, it excels at cross-lingual transfer for tasks like classification, NER, and QA. Available under MIT license."
+    },
+    {
+      "title": "FacebookAI/xlm-roberta-base · Hugging Face",
+      "url": "https://huggingface.co/FacebookAI/xlm-roberta-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "xlm-roberta-base: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/xlm-roberta-base-facebookai",
+      "snippet": "Overview xlm-roberta-base is a multilingual masked language model trained by FacebookAI on 2.5TB of filtered CommonCrawl data spanning 100 languages. The model uses a bidirectional transformer architecture based on RoBERTa, pretrained with masked language modeling where 15% of input tokens are randomly masked and the model must predict them. You load and use it through the Hugging Face ..."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/xlm-roberta-base",
+      "snippet": "xlm-roberta-base is a pre-trained language model available on the Hugging Face Hub. It&#x27;s specifically designed for the fill-mask task in the transformers library. If you want to learn more about the model&#x27;s architecture, hyperparameters, limitations, and biases, you can find this information on the model&#x27;s dedicated Model Card on the Hugging Face Hub ."
+    }
+  ]
+}

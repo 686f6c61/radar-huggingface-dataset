@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "jakemaly/Gemma4-31B-Socratic-LoRA",
+  "slug": "jakemaly-gemma4-31b-socratic-lora",
+  "author": "jakemaly",
+  "url": "https://huggingface.co/jakemaly/Gemma4-31B-Socratic-LoRA",
+  "created_at": "2026-09-02T17:05:27.000Z",
+  "updated_at": "2026-09-02T17:05:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2607.02770v1",
+      "snippet": "Abstract We introduce Gemma 4, a new generation of open-weight, natively multimodal language models in the Gemma model family. Designed to advance compute efficiency and reasoning, the Gemma 4 model suite features dense and Mixture-of-Experts architectures, ranging from 2.3B to 31B parameters. Alongside improved vision and audio encoders for all model sizes, we propose a unified, encoder-free ..."
+    },
+    {
+      "title": "Gemma 4: Our most capable open models to date - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/",
+      "snippet": "Built from the same world-class research and technology as Gemini 3, Gemma 4 is the most capable model family you can run on your hardware. They complement our Gemini models, giving developers the industry&#x27;s most powerful combination of both open and proprietary tools. Industry-leading capabilities and mobile-first AI We are releasing Gemma 4 in four versatile sizes: Effective 2B (E2B ..."
+    },
+    {
+      "title": "Gemma 4 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2607.02770",
+      "snippet": "Gemma 4 Technical Report Gemma Team, Google DeepMind1 We introduce Gemma 4, a new generation of open-weight, natively multimodal language models in the Gemma model family. Designed to advance compute efficiency and reasoning, the Gemma 4 model suite features dense and Mixture-of-Experts architectures, ranging from 2.3B to 31B parameters."
+    },
+    {
+      "title": "Gemma 4 31B — Enterprise-Grade Local LLM | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-31b",
+      "snippet": "Gemma 4 31B is Google&#x27;s flagship Gemma 4 model with 31B parameters and 256K token context. Ideal for production RAG pipelines, long-document analysis, and enterprise inference servers."
+    }
+  ]
+}

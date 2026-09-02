@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "eymenses/study-generation",
+  "slug": "eymenses-study-generation",
+  "author": "eymenses",
+  "url": "https://huggingface.co/eymenses/study-generation",
+  "created_at": "2026-09-02T18:27:29.000Z",
+  "updated_at": "2026-09-02T18:27:34.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Comprehensive Survey of Image Generation Models Based on Deep ...",
+      "url": "https://link.springer.com/article/10.1007/s40745-024-00544-1",
+      "snippet": "In recent years, generative artificial intelligence has been developing rapidly. In the image domain, image generation models based on deep learning have made remarkable achievements. Early frameworks for image generation models were dominated by generative adversarial networks (GANs) and variational autoencoders (VAEs). Nowadays, large-scale generative models based on diffusion models have ..."
+    },
+    {
+      "title": "15 Best AI Image Generation Models in 2026 (Cost vs Quality)",
+      "url": "https://www.fluence.network/blog/best-ai-image-generation-models/",
+      "snippet": "Compare the best AI image generation models for hosted APIs, creative apps, open-weight testing, licensing, costs, and suggested GPU deployment options."
+    },
+    {
+      "title": "Generative artificial intelligence: a systematic review and ...",
+      "url": "https://link.springer.com/article/10.1007/s11042-024-20016-1",
+      "snippet": "In recent years, the study of artificial intelligence (AI) has undergone a paradigm shift. This has been propelled by the groundbreaking capabilities of generative models both in supervised and unsupervised learning scenarios. Generative AI has shown state-of-the-art performance in solving perplexing real-world conundrums in fields such as image translation, medical diagnostics, textual ..."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/welcome",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    },
+    {
+      "title": "Creating Realities: An In-Depth Study of AI-Driven Image Generation ...",
+      "url": "https://ieeexplore.ieee.org/document/10726281",
+      "snippet": "Creating Realities: An In-Depth Study of AI-Driven Image Generation with Generative Adversarial Networks Abstract: The field of artificial intelligence has witnessed significant advancements with the advent of Generative Adversarial Networks, revolutionizing image generation techniques."
+    }
+  ]
+}

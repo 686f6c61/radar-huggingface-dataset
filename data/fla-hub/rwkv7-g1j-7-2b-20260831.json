@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "fla-hub/RWKV7-G1j-7.2B-20260831",
+  "slug": "fla-hub-rwkv7-g1j-7-2b-20260831",
+  "author": "fla-hub",
+  "url": "https://huggingface.co/fla-hub/RWKV7-G1j-7.2B-20260831",
+  "created_at": "2026-09-02T12:04:07.000Z",
+  "updated_at": "2026-09-02T12:04:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "fr",
+    "es",
+    "de",
+    "pt",
+    "ru",
+    "it",
+    "ja",
+    "ko",
+    "vi",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rwkv7",
+    "text-generation",
+    "rwkv",
+    "fla",
+    "recurrent",
+    "causal-lm",
+    "conversational",
+    "en",
+    "zh",
+    "fr",
+    "es",
+    "de",
+    "pt",
+    "ru",
+    "it",
+    "ja",
+    "ko",
+    "vi",
+    "ar",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:cerebras/SlimPajama-627B",
+    "dataset:EleutherAI/pile",
+    "dataset:bigcode/starcoderdata",
+    "dataset:oscar-corpus/OSCAR-2301",
+    "arxiv:2503.14456",
+    "base_model:BlinkDL/rwkv7-g1",
+    "base_model:finetune:BlinkDL/rwkv7-g1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7199141888,
+  "parameters_human": "7.20B",
+  "storage_bytes": 14398399560,
+  "storage_human": "14.4 GB",
+  "base_model": "BlinkDL/rwkv7-g1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fla-hub/rwkv7-7.2B-g0a · Hugging Face",
+      "url": "https://huggingface.co/fla-hub/rwkv7-7.2B-g0a",
+      "snippet": "Model Description Developed by: Bo Peng, Yu Zhang, Songlin Yang, Ruichong Zhang, Zhiyuan Li Funded by: RWKV Project (Under LF AI & Data Foundation) Model type: RWKV7 Language (s) (NLP): Multilingual License: Apache-2.0 Parameter count: 7.2B Tokenizer: RWKV World tokenizer Vocabulary size: 65,536"
+    },
+    {
+      "title": "fla-hub (fla-hub) - Hugging Face",
+      "url": "https://huggingface.co/fla-hub",
+      "snippet": "Org profile for fla-hub on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "rwkv7-7.2B-g0a · Models",
+      "url": "https://www.modelscope.cn/models/fla-hub/rwkv7-7.2B-g0a/summary",
+      "snippet": "rwkv7-7.2B-ga This is RWKV-7 model under flash-linear attention format. Model Details Model Description Developed by: Bo Peng, Yu Zhang, Songlin Yang, Ruichong Zhang, Zhiyuan Li Funded by: RWKV Project (Under LF AI & Data Foundation) Model type: RWKV7 Language (s) (NLP): Multilingual License: Apache-2.0 Parameter count: 7.2B Tokenizer: RWKV ..."
+    },
+    {
+      "title": "RWKV-LM/Research/rwkv7-g0-7.2b.md at main - GitHub",
+      "url": "https://github.com/BlinkDL/RWKV-LM/blob/main/Research/rwkv7-g0-7.2b.md",
+      "snippet": "We are at RWKV-7 \"Goose\". So it&#x27;s combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctx_len, and free sentence embedding."
+    },
+    {
+      "title": "flash-linear-attention/fla/layers/rwkv7.py at main - GitHub",
+      "url": "https://github.com/fla-org/flash-linear-attention/blob/main/fla/layers/rwkv7.py",
+      "snippet": "🚀 Efficient implementations for emerging model architectures - fla-org/flash-linear-attention"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "sokrypton/localfold",
+  "slug": "sokrypton-localfold",
+  "author": "sokrypton",
+  "url": "https://huggingface.co/sokrypton/localfold",
+  "created_at": "2026-09-02T18:19:59.000Z",
+  "updated_at": "2026-09-02T19:01:27.000Z",
+  "license": "mixed-see-below",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "localfold",
+  "languages": [],
+  "tags": [
+    "localfold",
+    "protein-folding",
+    "webgpu",
+    "alphafold",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 617681142,
+  "storage_human": "618 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - sokrypton/localfold",
+      "url": "https://github.com/sokrypton/localfold",
+      "snippet": "LocalFold is an end-to-end WebGPU implementation of AlphaFold 2 monomer model 1. It accepts either a raw amino-acid sequence or A3M text, runs recycling, the extra-MSA stack, all 48 main Evoformer blocks, the eight-layer structure module, atom geometry, and pLDDT/PAE heads."
+    },
+    {
+      "title": "Comparing martin-steinegger:main...sokrypton:main · martin ... - GitHub",
+      "url": "https://github.com/sokrypton/localfold/compare",
+      "snippet": "sokrypton and claude committed Aug 30, 2026 b2dcb6a Commit src/model/, which .gitignore was silently swallowing … .gitignore said `model/` for the exported weights at the root. An unanchored pattern matches a directory of that name at any depth, so it also matched src/model/ - monomer.js and query-only.js have never been in the repository."
+    },
+    {
+      "title": "Local AI Models — The Reference for Running AI Locally",
+      "url": "https://local-ai-models.ai/",
+      "snippet": "The reference for engineers running AI locally. VRAM math, hardware tradeoffs, model benchmarks, and the agent ecosystem — all in one place. Built to help you understand, not just install."
+    },
+    {
+      "title": "solab — Ovchinnikov Lab, MIT Biology",
+      "url": "https://solab.org/",
+      "snippet": "The Ovchinnikov Lab (solab) at MIT Biology: from sequences to contacts to protein folding to structures to networks to genomes to evolution."
+    },
+    {
+      "title": "Run Local AI Models on Your PC | Check What Models You Can Run",
+      "url": "https://runlocalmodel.com/",
+      "snippet": "Find out which AI models your computer can run locally, and browse Agent Skills (SKILL.md) for Claude Code, Codex, and other AI agents. Check GPU VRAM compatibility for LLaMA, Gemma, Mistral, and more."
+    }
+  ]
+}

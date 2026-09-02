@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mlx-community/moge-3-vitl-mlx-fp32",
+  "slug": "mlx-community-moge-3-vitl-mlx-fp32",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/moge-3-vitl-mlx-fp32",
+  "created_at": "2026-09-02T17:59:28.000Z",
+  "updated_at": "2026-09-02T18:00:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "moge3",
+    "depth-estimation",
+    "monocular-geometry",
+    "moge",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 370284399,
+  "parameters_human": "370.3M",
+  "storage_bytes": 1481203814,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community (MLX Community) - Hugging Face",
+      "url": "https://huggingface.co/mlx-community",
+      "snippet": "Org profile for MLX Community on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Home — MLX COMMUNITY",
+      "url": "https://mlxcommunity.com/",
+      "snippet": "Opensource outpost for Apple MLX: threads on LLMs, VLMs, audio, quantization, fine-tuning, and tooling."
+    },
+    {
+      "title": "GitHub - microsoft/MoGe: [CVPR&#x27;25 Oral] MoGe: Unlocking Accurate ...",
+      "url": "https://github.com/microsoft/MoGe",
+      "snippet": "MoGe is a powerful model for recovering 3D geometry from monocular open-domain images, including metric point maps, metric depth maps, normal maps and camera FOV. Check our websites (MoGe-1, MoGe-2, MoGe-3) for videos and interactive results!"
+    },
+    {
+      "title": "MLX",
+      "url": "https://mlx-framework.org/",
+      "snippet": "MLX Examples - standalone examples in the MLX framework including image generation, speech and music generation, language model training and many more. MLX Swift Examples - examples in MLX Swift including LLM and VLM text generation, low-rank fine-tuning, and image generation with SDXL. Check out the growing community."
+    },
+    {
+      "title": "GitHub - ml-explore/mlx: MLX: An array framework for Apple silicon",
+      "url": "https://github.com/ml-explore/mlx",
+      "snippet": "MLX: An array framework for Apple silicon. Contribute to ml-explore/mlx development by creating an account on GitHub."
+    }
+  ]
+}

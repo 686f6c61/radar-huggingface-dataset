@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "zhc12/dynrank-compressed-models",
+  "slug": "zhc12-dynrank-compressed-models",
+  "author": "zhc12",
+  "url": "https://huggingface.co/zhc12/dynrank-compressed-models",
+  "created_at": "2026-05-09T07:05:44.000Z",
+  "updated_at": "2026-09-02T12:00:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2378263376157,
+  "storage_human": "2378.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zhc12/dynrank-compressed-models · Hugging Face",
+      "url": "https://huggingface.co/zhc12/dynrank-compressed-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "zhc12 (zhc) - Hugging Face",
+      "url": "https://huggingface.co/zhc12/models",
+      "snippet": "zhc12&#x27;s models5 Sort: Recently updated zhc12/dynrank-compressed-models Updated 11 days ago"
+    },
+    {
+      "title": "Model Repositories and Downloads",
+      "url": "https://deepwiki.com/mit-han-lab/ComfyUI-nunchaku/9.2-model-repositories-and-downloads",
+      "snippet": "Model Repositories and Downloads Relevant source files This page provides comprehensive information about model repositories, download locations, file naming conventions, and directory organization for ComfyUI-nunchaku. Models are hosted on both Hugging Face and ModelScope, with identical content available from both sources."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "GitHub - InterDigitalInc/CompressAI: A PyTorch library and evaluation ...",
+      "url": "https://github.com/InterDigitalInc/CompressAI",
+      "snippet": "CompressAI (compress-ay) is a PyTorch library and evaluation platform for end-to-end compression research. CompressAI currently provides: custom operations, layers and models for deep learning based data compression a partial port of the official TensorFlow compression library pre-trained end-to-end compression models for learned image compression evaluation scripts to compare learned models ..."
+    }
+  ]
+}

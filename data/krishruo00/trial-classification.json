@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "krishruo00/trial-classification",
+  "slug": "krishruo00-trial-classification",
+  "author": "krishruo00",
+  "url": "https://huggingface.co/krishruo00/trial-classification",
+  "created_at": "2026-09-02T16:32:16.000Z",
+  "updated_at": "2026-09-02T16:32:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "krishruo00 (Krish Rao) - Hugging Face",
+      "url": "https://huggingface.co/krishruo00",
+      "snippet": "User profile of Krish Rao on Hugging Face"
+    },
+    {
+      "title": "Analysis and Trial Classification | abundant-ai/SWE-gen | DeepWiki",
+      "url": "https://deepwiki.com/abundant-ai/SWE-gen/6.4-analysis-and-trial-classification",
+      "snippet": "Analysis and Trial Classification Relevant source files This document describes the deep quality analysis system that classifies agent trial outcomes to distinguish between task problems and agent limitations. This analysis enables automated quality assurance by determining whether task failures indicate specification issues that need fixing or legitimate agent challenges. For information ..."
+    },
+    {
+      "title": "TriageAI Pro — Intelligent Patient Triage Classification System",
+      "url": "https://github.com/khadigaosama/TriageAI-Pro",
+      "snippet": "🏥 TriageAI Pro — Intelligent Patient Triage Classification System An end-to-end Machine Learning pipeline for predicting patient triage levels using clinical data, featuring 11 classification models and a premium AI-powered web dashboard."
+    },
+    {
+      "title": "classification-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/classification-model",
+      "snippet": "ai classification-model responsible-ai generation-models aigc Updated on Nov 8, 2023"
+    },
+    {
+      "title": "Trial Classification | abundant-ai/taskgen | DeepWiki",
+      "url": "https://deepwiki.com/abundant-ai/taskgen/7.2-trial-classification",
+      "snippet": "This page documents the trial classification system, which uses Claude to analyze Harbor agent trial outcomes and categorize them into five distinct classifications. Trial classification distinguishes between task quality problems (BAD_SUCCESS, BAD_FAILURE) and agent capability problems (GOOD_FAILURE), enabling targeted improvements to the task dataset."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hyf010124/pi05_so101_pi0902_all",
+  "slug": "hyf010124-pi05_so101_pi0902_all",
+  "author": "hyf010124",
+  "url": "https://huggingface.co/hyf010124/pi05_so101_pi0902_all",
+  "created_at": "2026-09-02T13:59:32.000Z",
+  "updated_at": "2026-09-02T13:59:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:so101_test_pi0902_merged_all",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10325368,
+  "storage_human": "10 MB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hyf010124/pi05_so101_pi0824_v2 · Hugging Face",
+      "url": "https://huggingface.co/hyf010124/pi05_so101_pi0824_v2",
+      "snippet": "Instructions to use hyf010124/pi05_so101_pi0824_v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use hyf010124/pi05_so101_pi0824_v2 with LeRobot: Notebooks Google Colab Kaggle Model Card for pi05 Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on ..."
+    },
+    {
+      "title": "hyf010124 (fu) - Hugging Face",
+      "url": "https://huggingface.co/hyf010124",
+      "snippet": "hyf010124/so101_test_VLA0721_20260721_152151. published a dataset about 6 hours ago. hyf010124/so101_test_VLA0721_20260721_151733. updated a dataset about 13 hours ago"
+    },
+    {
+      "title": "GitHub - jinnymo/so101-pi05-base: pi0.5 vision-language-action model ...",
+      "url": "https://github.com/jinnymo/so101-pi05-base",
+      "snippet": "so101-pi05-base Physical Intelligence&#x27;s pi0.5 vision-language-action model, fully fine-tuned on a unified corpus of public SO-101 / SO-100 single-arm manipulation data. This package holds the model card, the dataset card, the scripts that built the dataset, the training container, and the documentation needed to repeat the work."
+    },
+    {
+      "title": "GitHub - tylercasper/SO101-Pi0.5: New Repo for Pi0.5 Trials",
+      "url": "https://github.com/tylercasper/SO101-Pi0.5",
+      "snippet": "New Repo for Pi0.5 Trials. Contribute to tylercasper/SO101-Pi0.5 development by creating an account on GitHub."
+    },
+    {
+      "title": "Model Spec (2026/08/18)",
+      "url": "https://model-spec.openai.com/",
+      "snippet": "The Model Spec specifies desired behavior for the models underlying OpenAI&#x27;s products (including our APIs)."
+    }
+  ]
+}

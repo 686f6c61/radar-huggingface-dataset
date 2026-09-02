@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "furiosa-ai/Qwen3-Coder-30B-A3B-Instruct-FP8",
+  "slug": "furiosa-ai-qwen3-coder-30b-a3b-instruct-fp8",
+  "author": "furiosa-ai",
+  "url": "https://huggingface.co/furiosa-ai/Qwen3-Coder-30B-A3B-Instruct-FP8",
+  "created_at": "2026-06-28T14:28:33.000Z",
+  "updated_at": "2026-09-02T14:41:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "furiosa-llm",
+  "languages": [],
+  "tags": [
+    "furiosa-llm",
+    "safetensors",
+    "qwen3_moe",
+    "furiosa-ai",
+    "qwen3",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8",
+    "base_model:quantized:Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 833,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 47563721421,
+  "storage_human": "47.6 GB",
+  "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "furiosa-ai/Qwen3-Coder-30B-A3B-Instruct-FP8 · Hugging Face",
+      "url": "https://huggingface.co/furiosa-ai/Qwen3-Coder-30B-A3B-Instruct-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-Coder-30B-A3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-MoE — FuriosaAI Developer Center 2026.3.0 documentation",
+      "url": "https://developer.furiosa.ai/latest/en/furiosa_llm/models/qwen3-moe.html",
+      "snippet": "Furiosa-LLM runs the Qwen3-MoE models in FP8 (static FP8 weights with dynamic FP8 activation quantization; the KV cache stays in 16-bit precision). FuriosaAI publishes pre-compiled FP8 builds under the furiosa-ai organization on the Hugging Face Hub, each shipping a Furiosa Executable Bundle (FXB) for running it on FuriosaAI RNGD with Furiosa-LLM."
+    },
+    {
+      "title": "Qwen3 (dense) — FuriosaAI Developer Center 2026.3.0 documentation",
+      "url": "https://developer.furiosa.ai/v2026.3.0/en/furiosa_llm/models/qwen3.html",
+      "snippet": "Furiosa-LLM runs the Qwen3 dense models in FP8 (static FP8 weights with dynamic FP8 activation quantization; the KV cache stays in 16-bit precision). FuriosaAI publishes pre-compiled FP8 builds under the furiosa-ai organization on the Hugging Face Hub, each shipping a Furiosa Executable Bundle (FXB) for running it on FuriosaAI RNGD with Furiosa ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Coder: Qwen3-Coder is the code version of Qwen3 ...",
+      "url": "https://github.com/QwenLM/Qwen3-Coder",
+      "snippet": "Qwen3-Coder is available in multiple sizes, Qwen3-Coder-480B-A35B-Instruct, Qwen3-Coder-30B-A3B-Instruct, Qwen3-Coder-Next, offering exceptional performance in both coding and agentic tasks. Qwen3-Coder-Next, an open-weight language model designed specifically for coding agents and local development."
+    }
+  ]
+}

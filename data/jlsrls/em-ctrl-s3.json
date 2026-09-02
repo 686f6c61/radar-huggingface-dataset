@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jlsrls/em-ctrl-s3",
+  "slug": "jlsrls-em-ctrl-s3",
+  "author": "jlsrls",
+  "url": "https://huggingface.co/jlsrls/em-ctrl-s3",
+  "created_at": "2026-09-02T16:18:32.000Z",
+  "updated_at": "2026-09-02T17:21:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "base_model:unsloth/gemma-3-4b-it",
+    "base_model:finetune:unsloth/gemma-3-4b-it",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1118518484,
+  "storage_human": "1.1 GB",
+  "base_model": "unsloth/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI 3D Model Generator: High Quality AI 3D Models",
+      "url": "https://manex3d.com/ai-3d-model-generator",
+      "snippet": "An AI 3D Model Generator That Goes From Ideas to Assets Fast Manex3D turns reference images and plain-text prompts into fully textured, production-ready 3D models in under a minute. Generate clean geometry, high-quality materials, and game-ready topology, then export to GLB, OBJ, STL or PLY, and drop straight into your 3D model editor or game engine!"
+    },
+    {
+      "title": "GitHub - waveshareteam/ESP32-AIChats: A library for ESP32 access to the ...",
+      "url": "https://github.com/waveshareteam/ESP32-AIChats",
+      "snippet": "Welcome to the Waveshare ESP32-AIChats repository! This project aims to share a solution for connecting the ESP32 to cloud-based large models, enabling voice interaction and conversational AI. The purpose of this repository is to provide resources and insights related to ESP32-based voice interfaces, integrating with powerful cloud models to offer real-time communication and AI capabilities ..."
+    },
+    {
+      "title": "Emerson - Model Viewer",
+      "url": "https://productviewer.emerson.com/",
+      "snippet": "Explore Emerson&#x27;s Model Viewer for an interactive and detailed visualization of their innovative products and solutions in technology, software, and engineering."
+    },
+    {
+      "title": "One Shot Build Script For Running 28M AI Model On ESP32-S3",
+      "url": "https://gist.github.com/gentlewatcher/7fe2ec5a47e474e3a604a865c0094b1c",
+      "snippet": "One Shot Build Script For Running 28M AI Model On ESP32-S3 - build_and_flash.sh"
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    }
+  ]
+}

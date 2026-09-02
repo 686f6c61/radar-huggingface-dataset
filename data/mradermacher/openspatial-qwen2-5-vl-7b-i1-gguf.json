@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/OpenSpatial-Qwen2.5-VL-7B-i1-GGUF",
+  "slug": "mradermacher-openspatial-qwen2-5-vl-7b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/OpenSpatial-Qwen2.5-VL-7B-i1-GGUF",
+  "created_at": "2026-09-02T13:16:48.000Z",
+  "updated_at": "2026-09-02T13:46:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "openspatial",
+    "spatial-reasoning",
+    "vision-language",
+    "en",
+    "base_model:VINHYU/OpenSpatial-Qwen2.5-VL-7B",
+    "base_model:quantized:VINHYU/OpenSpatial-Qwen2.5-VL-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 88970439904,
+  "storage_human": "89.0 GB",
+  "base_model": "VINHYU/OpenSpatial-Qwen2.5-VL-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-VL-7B-Instruct-abliterated-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-VL-7B-Instruct-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-VL-7B-Abliterated-Caption-it-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-VL-7B-Abliterated-Caption-it-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen2.5-vl • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen2.5-vl-7b",
+      "snippet": "Qwen2.5-VL-7B-Instruct Qwen2.5-VL-7B-Instruct is a vision-language model that processes images, text, and video, supporting structured outputs and visual localization. It can analyze charts, graphics, and layouts, and is capable of temporal reasoning over long video sequences. The model is intended for use in document analysis, event detection, and extracting structured data from visual ..."
+    },
+    {
+      "title": "qwen2.5vl:7b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5vl:7b",
+      "snippet": "In terms of smaller models, Qwen2.5-VL-7B-Instruct outperforms GPT-4o-mini in a number of tasks, and Qwen2.5-VL-3B, which is a solution for edge AI, even outperforms the 7B model of our previous version Qwen2-VL."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "To pull a model checkpoint and run the model, use the ollama run command. You can specify a model size by adding a suffix to qwen2.5, such as :0.5b, :1.5b, :7b, or :72b:"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "FunAudioLLM/Fun-ASR-Nano-2512-hf",
+  "slug": "funaudiollm-fun-asr-nano-2512-hf",
+  "author": "FunAudioLLM",
+  "url": "https://huggingface.co/FunAudioLLM/Fun-ASR-Nano-2512-hf",
+  "created_at": "2026-05-24T11:25:24.000Z",
+  "updated_at": "2026-09-02T17:11:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "yue"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "fun_asr_nano",
+    "text-generation",
+    "speech-recognition",
+    "asr",
+    "end-to-end",
+    "multilingual",
+    "streaming",
+    "arxiv:2407.04051",
+    "automatic-speech-recognition",
+    "zh",
+    "en",
+    "ja",
+    "yue",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 22578,
+  "trending_score": 0,
+  "parameters": 829791840,
+  "parameters_human": "829.8M",
+  "storage_bytes": 8943956960,
+  "storage_human": "8.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FunAudioLLM/Fun-ASR-Nano-2512 · Hugging Face",
+      "url": "https://huggingface.co/FunAudioLLM/Fun-ASR-Nano-2512",
+      "snippet": "We evaluated Fun-ASR against other state-of-the-art models on open-source benchmarks, Chinese dialect datasets, and industry-specific test sets. The results demonstrate that Fun-ASR achieves superior performance across various scenarios."
+    },
+    {
+      "title": "FunAudioLLM/Fun-ASR-Nano-2512-hf · Hugging Face",
+      "url": "https://huggingface.co/FunAudioLLM/Fun-ASR-Nano-2512-hf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenAudio/Fun-ASR: Open-source LLM-based ASR model family for ...",
+      "url": "https://github.com/QwenAudio/Fun-ASR",
+      "snippet": "Fun-ASR is a family of end-to-end speech recognition models from Tongyi Lab. Checkpoint capabilities are distinct: Fun-ASR-Nano-2512 is trained on tens of millions of hours of speech and supports Chinese, English, Japanese, and Chinese dialects and accents; Fun-ASR-MLT-Nano-2512 is an 800M multilingual checkpoint trained on hundreds of ..."
+    },
+    {
+      "title": "Fun-ASR-Nano Guide: 800M ASR LLM for Chinese, English, Japanese and ...",
+      "url": "https://www.funasr.com/en/blog/fun-asr-nano-guide.html",
+      "snippet": "Fun-ASR-Nano is an end-to-end speech recognition large model from the FunAudioLLM team, built on an \"Audio Encoder + Adaptor + LLM (Qwen)\" architecture with ~800M parameters, trained on tens of millions of hours of real speech."
+    },
+    {
+      "title": "GitHub - modelscope/FunASR: Open-source speech recognition toolkit for ...",
+      "url": "https://github.com/modelscope/FunASR",
+      "snippet": "For the separate 31-language checkpoint, use Fun-ASR-MLT-Nano-2512. Language coverage is checkpoint-specific, so Nano and MLT-Nano should be treated as distinct model choices. On CPU (or for five-language ASR plus emotion and audio-event tags), use SenseVoiceSmall."
+    }
+  ]
+}

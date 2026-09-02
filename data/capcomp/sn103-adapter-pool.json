@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "capcomp/sn103-adapter-pool",
+  "slug": "capcomp-sn103-adapter-pool",
+  "author": "capcomp",
+  "url": "https://huggingface.co/capcomp/sn103-adapter-pool",
+  "created_at": "2026-09-02T16:55:57.000Z",
+  "updated_at": "2026-09-02T16:56:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9080349824,
+  "storage_human": "9.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Capcomp-AI/capability-composition-subnet",
+      "url": "https://github.com/Capcomp-AI/capability-composition-subnet",
+      "snippet": "The pieces of applied AI are all available. There are capable open base models, thousands of task-specific LoRA adapters, agent frameworks, tool APIs, evaluation libraries and serving systems. What is still unsolved is the composition decision. For one real workflow: which adapters help, which are redundant, which actively conflict, what coefficients and per-layer weights to use, how much of ..."
+    },
+    {
+      "title": "Capcomp AI - GitHub",
+      "url": "https://github.com/Capcomp-AI/",
+      "snippet": "Capcomp AI has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Encrypted Sports Betting Signals — SN103 | Djinn (SN103)",
+      "url": "https://bittensor.ai/subnets/103",
+      "snippet": "Decentralized sports betting signal marketplace with encrypted picks and verifiable track records. Sell analysis, buy intelligence on Base chain."
+    },
+    {
+      "title": "Capcomp (SN103) Research — What It Does, How It Earns & Risks | SubnetRadar",
+      "url": "https://subnetradar.com/research/subnets/103",
+      "snippet": "Capability Composition Subnet. Independent research on Capcomp, Bittensor subnet 103: mission, mechanism, team, fundamentals, risks and sources."
+    },
+    {
+      "title": "Subnet 103 · Capcomp — OpenTAO",
+      "url": "https://opentao.ai/beginner/subnets/103-capcomp/",
+      "snippet": "Lora Merger is a Bittensor subnet focused on the composition and evaluation of AI capabilities using pre-existing LoRA adapters and base models. Instead of training new models, participants (miners) submit &#x27;recipes&#x27;—JSON documents specifyin Ask your agent about SN103 copy prompt Lightweight page"
+    }
+  ]
+}

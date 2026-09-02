@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "furiosa-ai/Qwen3-VL-4B-Instruct",
+  "slug": "furiosa-ai-qwen3-vl-4b-instruct",
+  "author": "furiosa-ai",
+  "url": "https://huggingface.co/furiosa-ai/Qwen3-VL-4B-Instruct",
+  "created_at": "2026-07-08T09:14:08.000Z",
+  "updated_at": "2026-09-02T14:39:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "furiosa-llm",
+  "languages": [],
+  "tags": [
+    "furiosa-llm",
+    "safetensors",
+    "qwen3_vl",
+    "furiosa-ai",
+    "qwen3-vl",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4542,
+  "trending_score": 0,
+  "parameters": 4437815808,
+  "parameters_human": "4.44B",
+  "storage_bytes": 12790583255,
+  "storage_human": "12.8 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "furiosa-ai/Qwen3-VL-4B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/furiosa-ai/Qwen3-VL-4B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · furiosa-ai/Qwen3-VL-4B-Instruct at main",
+      "url": "https://huggingface.co/furiosa-ai/Qwen3-VL-4B-Instruct/blob/main/README.md",
+      "snippet": "Qwen3-VL-4B-Instruct is a 4-billion-parameter dense vision-language model from the Qwen3-VL series. It pairs a vision encoder with a dense transformer decoder, using Interleaved-MRoPE positional embeddings and DeepStack multi-level feature fusion to handle images and videos alongside text."
+    },
+    {
+      "title": "Qwen3-VL — FuriosaAI Developer Center 2026.4.0b8 documentation",
+      "url": "https://developer.furiosa.ai/v2026.4.0/en/furiosa_llm/models/qwen3-vl.html",
+      "snippet": "FuriosaAI publishes the Qwen3-VL models under the furiosa-ai organization on the Hugging Face Hub, each shipping a Furiosa Executable Bundle (FXB) for running it on FuriosaAI RNGD with Furiosa-LLM. Both the Instruct (non-thinking) and Thinking editions are published; the Thinking editions emit an explicit chain of thought before the final answer (see Basic Usage below). The same upstream ..."
+    },
+    {
+      "title": "Qwen3-VL — FuriosaAI Developer Center 2026.3.0 documentation",
+      "url": "https://developer.furiosa.ai/latest/en/furiosa_llm/models/qwen3-vl.html",
+      "snippet": "FuriosaAI publishes pre-compiled builds of the Qwen3-VL models under the furiosa-ai organization on the Hugging Face Hub, each shipping a Furiosa Executable Bundle (FXB) for running it on FuriosaAI RNGD with Furiosa-LLM."
+    },
+    {
+      "title": "Qwen3-VL-4B-Instruct - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_vl_4b_instruct",
+      "snippet": "Qwen3-VL-4B-Instruct Multimodal 4B vision‑language model with enhanced visual reasoning capabilities. Qwen3‑VL is a vision‑language model from Alibaba Cloud capable of understanding both text and images for multimodal reasoning tasks such as visual question answering and image captioning."
+    }
+  ]
+}

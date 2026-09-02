@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "guell00/fadsadfs",
+  "slug": "guell00-fadsadfs",
+  "author": "guell00",
+  "url": "https://huggingface.co/guell00/fadsadfs",
+  "created_at": "2026-09-02T17:59:51.000Z",
+  "updated_at": "2026-09-02T18:01:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 532378459,
+  "storage_human": "532 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "guell00 (Miguel p r) - Hugging Face",
+      "url": "https://huggingface.co/guell00/datasets",
+      "snippet": "Modelos de linguagem natural, GPT, Python, Unity, Deep Learning, Raciocínio Computacional."
+    },
+    {
+      "title": "Coder - a guell00 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/guell00/coder",
+      "snippet": "guell00/Nexora-Qwen-Coder-4B 4B•Updated 2 days ago• 345 • 1 Upvote - Sort: Collection"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 662+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

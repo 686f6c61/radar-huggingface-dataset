@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ucdavisbiolab/perceiver-multitask36",
+  "slug": "ucdavisbiolab-perceiver-multitask36",
+  "author": "ucdavisbiolab",
+  "url": "https://huggingface.co/ucdavisbiolab/perceiver-multitask36",
+  "created_at": "2026-09-02T16:49:00.000Z",
+  "updated_at": "2026-09-02T16:49:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perceiver - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.0.0rc1/en/model_doc/perceiver",
+      "snippet": "The Perceiver IO model was proposed in Perceiver IO: A General Architecture for Structured Inputs & Outputs by Andrew Jaegle, Sebastian Borgeaud, Jean-Baptiste Alayrac, Carl Doersch, Catalin Ionescu, David Ding, Skanda Koppula, Daniel Zoran, Andrew Brock, Evan Shelhamer, Olivier Hénaff, Matthew M. Botvinick, Andrew Zisserman, Oriol Vinyals, João Carreira. Perceiver IO is a generalization of ..."
+    },
+    {
+      "title": "Building architectures that can handle the world&#x27;s data",
+      "url": "https://deepmind.google/blog/building-architectures-that-can-handle-the-worlds-data/",
+      "snippet": "Perceiver and Perceiver IO work as multi-purpose tools for AI Most architectures used by AI systems today are specialists. A 2D residual network may be a good choice for processing images, but at best it&#x27;s a loose fit for other kinds of data — such as the Lidar signals used in self-driving cars or the torques used in robotics. What&#x27;s more, standard architectures are often designed with ..."
+    },
+    {
+      "title": "Perceiver IO: a scalable, fully-attentional model that works on any ...",
+      "url": "https://huggingface.co/blog/perceiver",
+      "snippet": "In a follow-up paper, called Perceiver IO, the authors extend this idea to let the Perceiver also handle arbitrary outputs. The idea is similar: one only uses the outputs for doing cross-attention with the latents. Note that I&#x27;ll use the terms \"Perceiver\" and \"Perceiver IO\" interchangeably to refer to the Perceiver IO model throughout this blog ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Perceiver AR: general-purpose, long-context autoregressive generation",
+      "url": "https://deepmind.google/blog/perceiver-ar-general-purpose-long-context-autoregressive-generation/",
+      "snippet": "We develop Perceiver AR, an autoregressive, modality-agnostic architecture which uses cross-attention to map long-range inputs to a small number of latents while also maintaining end-to-end causal masking. Perceiver AR can directly attend to over a hundred thousand tokens, enabling practical long-context density estimation without the need for hand-crafted sparsity patterns or memory mechanisms."
+    }
+  ]
+}

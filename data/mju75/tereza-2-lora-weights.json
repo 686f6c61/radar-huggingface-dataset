@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mju75/tereza-2-lora-weights",
+  "slug": "mju75-tereza-2-lora-weights",
+  "author": "mju75",
+  "url": "https://huggingface.co/mju75/tereza-2-lora-weights",
+  "created_at": "2026-09-02T15:02:47.000Z",
+  "updated_at": "2026-09-02T15:40:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 971071537,
+  "storage_human": "971 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krea 2 LoRA — mju75/tereza-lora-weights - Hugging Face",
+      "url": "https://huggingface.co/mju75/tereza-lora-weights",
+      "snippet": "Instructions to use mju75/tereza-lora-weights with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use mju75/tereza-lora-weights with Diffusers:"
+    },
+    {
+      "title": "mju75/klara-lora-weights · Hugging Face",
+      "url": "https://huggingface.co/mju75/klara-lora-weights",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,914 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "220+ Free LoRAs & Counting | Civitai",
+      "url": "https://civitai.com/articles/11647/220-free-loras-and-counting",
+      "snippet": "Support My AI Journey: Follow Me on Medium to Help Fuel Future Creations 🚀 Over the past few years, I&#x27;ve dedicated my time, effort, and passion to pushing the boundaries of AI in creative fields. From generating artwork to refining LoRA models, my journey has been one of exploration, innovation, and community-driven contribution. To date, I have created and shared over 220 LoRA models on ..."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    }
+  ]
+}

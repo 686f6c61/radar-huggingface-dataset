@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "griffinlabs/xvla-finetuned-bipiper-p0-19k-75ep",
+  "slug": "griffinlabs-xvla-finetuned-bipiper-p0-19k-75ep",
+  "author": "griffinlabs",
+  "url": "https://huggingface.co/griffinlabs/xvla-finetuned-bipiper-p0-19k-75ep",
+  "created_at": "2026-09-02T16:41:29.000Z",
+  "updated_at": "2026-09-02T17:17:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "xvla",
+    "robotics",
+    "dataset:griffinlabs/bipiper_combined_ee6d_75ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 879738545,
+  "parameters_human": "879.7M",
+  "storage_bytes": 33432350358,
+  "storage_human": "33.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Griffin Labs — Embodied AI for Facilities Management",
+      "url": "https://griffinlabs.ai/",
+      "snippet": "Griffin Labs builds intelligent machines that perceive, reason, and act in the physical world. Training frontier VLA models for autonomous facilities management in Southeast Asia."
+    },
+    {
+      "title": "X-VLA - thu-air-dream.github.io",
+      "url": "https://thu-air-dream.github.io/X-VLA/",
+      "snippet": "We evaluate our X-VLA model on three distinct real-world embodiments, each under specific task setups, including simple manipulation, dexterous manipulation, and fast adaptation experiments using Parameter efficient finetuning (PEFT) techniques."
+    },
+    {
+      "title": "griffinlabs (Griffin Labs) - Hugging Face",
+      "url": "https://huggingface.co/griffinlabs",
+      "snippet": "Org profile for Griffin Labs on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "[2510.10274] X-VLA: Soft-Prompted Transformer as Scalable Cross ...",
+      "url": "https://arxiv.org/abs/2510.10274",
+      "snippet": "Successful generalist Vision-Language-Action (VLA) models rely on effective training across diverse robotic platforms with large-scale, cross-embodiment, heterogeneous datasets. To facilitate and leverage the heterogeneity in rich, diverse robotic data sources, we propose a novel Soft Prompt approach with minimally added parameters, by infusing prompt learning concepts into cross-embodiment ..."
+    },
+    {
+      "title": "XVLA/finetune_readme.md at main · yqi19/XVLA · GitHub",
+      "url": "https://github.com/yqi19/XVLA/blob/main/finetune_readme.md",
+      "snippet": "Contribute to yqi19/XVLA development by creating an account on GitHub."
+    }
+  ]
+}

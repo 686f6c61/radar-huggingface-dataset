@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Josephus67/Appati_tts",
+  "slug": "josephus67-appati_tts",
+  "author": "Josephus67",
+  "url": "https://huggingface.co/Josephus67/Appati_tts",
+  "created_at": "2026-09-02T17:43:12.000Z",
+  "updated_at": "2026-09-02T17:49:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/orpheus-3b-0.1-ft",
+    "base_model:finetune:unsloth/orpheus-3b-0.1-ft",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3300867072,
+  "parameters_human": "3.30B",
+  "storage_bytes": 6624613107,
+  "storage_human": "6.6 GB",
+  "base_model": "unsloth/orpheus-3b-0.1-ft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Text to Speech Online - 36+ Models, 100+ Voices | TTS.ai",
+      "url": "https://tts.ai/text-to-speech/",
+      "snippet": "Convert text to natural speech with 36+ AI models including Kokoro, Chatterbox, Bark, CosyVoice 2, and more. Free online TTS with voice cloning support."
+    },
+    {
+      "title": "Text-to-Speech Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "snippet": "Active filters: text-to-speech. Clear all. IndexTeam/IndexTTS-2.5. Text-to-Speech • Updated 7 days ago • 4.79k • 134"
+    },
+    {
+      "title": "TTS.ai - Free AI Voice Platform | Text to Speech, Voice Cloning, Speech ...",
+      "url": "https://tts.ai/",
+      "snippet": "TTS.ai is the most comprehensive AI voice platform with 36+ TTS models, voice cloning, speech-to-text, and audio tools. Free text to speech online powered by open-source AI."
+    },
+    {
+      "title": "Josephus67 (JOSEPHUS BAWAH) - Hugging Face",
+      "url": "https://huggingface.co/Josephus67",
+      "snippet": "NLP, Peft, LoRA, deep learning, YOLO, Swarm Intelligence"
+    },
+    {
+      "title": "The Best Open-Source Text-to-Speech Models in 2026",
+      "url": "https://bentoml.com/blog/exploring-the-world-of-open-source-text-to-speech-models",
+      "snippet": "Explore the top open-source TTS models and find answers to some FAQs about them."
+    }
+  ]
+}

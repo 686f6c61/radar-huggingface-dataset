@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "nanoandrew4/Nemotron-3-Embed-1B-GGUF",
+  "slug": "nanoandrew4-nemotron-3-embed-1b-gguf",
+  "author": "nanoandrew4",
+  "url": "https://huggingface.co/nanoandrew4/Nemotron-3-Embed-1B-GGUF",
+  "created_at": "2026-09-02T14:10:27.000Z",
+  "updated_at": "2026-09-02T14:11:10.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ministral3",
+    "embedding",
+    "text-embeddings-inference",
+    "base_model:nvidia/Nemotron-3-Embed-1B-BF16",
+    "base_model:quantized:nvidia/Nemotron-3-Embed-1B-BF16",
+    "license:openmdw-1.1",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1140918272,
+  "parameters_human": "1.14B",
+  "storage_bytes": 3527212590,
+  "storage_human": "3.5 GB",
+  "base_model": "nvidia/Nemotron-3-Embed-1B-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nemotron-3-embed-1b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-embed-1b/modelcard",
+      "snippet": "Model Overview Description: Nemotron-3-Embed-1B is a versatile text embedding model developed by NVIDIA and optimized for retrieval and semantic similarity tasks. It provides strong multilingual and cross-lingual retrieval capabilities and is designed to serve as a foundational component in text-based Retrieval-Augmented Generation (RAG) systems. The model is available in two versions ..."
+    },
+    {
+      "title": "Nemotron 3 Embed - a nvidia Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/nvidia/nemotron-3-embed",
+      "snippet": "Open embedding models for enterprise RAG, agentic retrieval, code search, and agent memory."
+    },
+    {
+      "title": "nemotron-3-embed-1b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-embed-1b",
+      "snippet": "nvidia/nemotron-3-embed-1b operates in `passage` or `query` mode, and thus requires the `input_type` parameter. `passage` is used when generating embeddings during indexing. `query` is used when generating embeddings during querying. It is very important to use the correct `input_type`."
+    },
+    {
+      "title": "Nemotron-3-Embed-1B-Q4_K_M-GGUF - Hugging Face",
+      "url": "https://huggingface.co/zenmagnets/Nemotron-3-Embed-1B-Q4_K_M-GGUF",
+      "snippet": "Nemotron-3-Embed-1B Q4_K_M GGUF An independently converted and quantized GGUF of NVIDIA&#x27;s nvidia/Nemotron-3-Embed-1B-BF16, prepared for local embedding inference in LM Studio and llama.cpp-compatible runtimes. This repository is not an official NVIDIA release and is not affiliated with or endorsed by NVIDIA. File"
+    },
+    {
+      "title": "nvidia / nemotron-3-embed-1b",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-embed-1b",
+      "snippet": "Nemotron-3-Embed-1B-BF16 is a versatile text embedding model trained by NVIDIA and optimized for retrieval and semantic similarity tasks. It provides strong multilingual and cross-lingual retrieval capabilities and is designed to serve as a foundational component in text-based Retrieval-Augmented Generation (RAG) systems. This model was evaluated on 34 languages: English, Arabic, Assamese ..."
+    }
+  ]
+}

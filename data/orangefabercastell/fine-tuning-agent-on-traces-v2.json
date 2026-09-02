@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "orangefabercastell/fine-tuning-agent-on-traces-v2",
+  "slug": "orangefabercastell-fine-tuning-agent-on-traces-v2",
+  "author": "orangefabercastell",
+  "url": "https://huggingface.co/orangefabercastell/fine-tuning-agent-on-traces-v2",
+  "created_at": "2026-09-02T17:26:20.000Z",
+  "updated_at": "2026-09-02T17:27:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 5263080096,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "build-2026-demos/fine-tuning-and-adaption ... - GitHub",
+      "url": "https://github.com/microsoft-foundry/build-2026-demos/blob/main/fine-tuning-and-adaption/AgentTracesDistillation/demo_distillation.ipynb",
+      "snippet": "This notebook walks step-by-step through one full distillation cycle: taking a small, cheap model that struggles on hard customer-support scenarios and lifting its quality to near-teacher level by fine-tuning on traces from the production agent."
+    },
+    {
+      "title": "Agent Reasoning Fine-Tuning with Lambda/Hermes Dataset: Practical Guide",
+      "url": "https://ai4u.space/blog/agent-reasoning-analysis-fine-tuning-lambda-hermes-dataset",
+      "snippet": "Learn how to implement agent reasoning fine tuning and analysis using the lambda/hermes dataset, including parsing techniques, visualization, and PEFT workflows."
+    },
+    {
+      "title": "A Coding Implementation to Parsing, Analyzing, Visualizing, and Fine ...",
+      "url": "https://www.marktechpost.com/2026/05/02/a-coding-implementation-to-parsing-analyzing-visualizing-and-fine-tuning-agent-reasoning-traces-using-the-lambda-hermes-agent-reasoning-traces-dataset/",
+      "snippet": "In this tutorial, we explore the lambda/hermes-agent-reasoning-traces dataset to understand how agent-based models think, use tools, and generate responses across multi-turn conversations. We start by loading and inspecting the dataset, examining its structure, categories, and conversational format to get a clear idea of the available information. We then build simple parsers to extract key ..."
+    },
+    {
+      "title": "Build26-LAB521-improving-agent-behavior-using-reinforcement ... - GitHub",
+      "url": "https://github.com/microsoft/Build26-LAB521-improving-agent-behavior-using-reinforcement-learning-from-traces/blob/main/docs/instructions/00_Introduction.md",
+      "snippet": "This is a 75-minute hands-on lab where you will improve AI agent behavior using reinforcement fine-tuning (RFT) on traces from a real agentic workflow."
+    },
+    {
+      "title": "Let&#x27;s Fine-Tune Your Model for Function-Calling · Hugging Face",
+      "url": "https://huggingface.co/learn/agents-course/en/bonus-unit1/fine-tuning",
+      "snippet": "In this tutorial, we will build a function-calling model based on google/gemma-2-2b-it. We choose the fine-tuned model google/gemma-2-2b-it instead of the base model google/gemma-2-2b because the fine-tuned model has been improved for our use-case."
+    }
+  ]
+}

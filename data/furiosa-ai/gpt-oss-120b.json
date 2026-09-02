@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "furiosa-ai/gpt-oss-120b",
+  "slug": "furiosa-ai-gpt-oss-120b",
+  "author": "furiosa-ai",
+  "url": "https://huggingface.co/furiosa-ai/gpt-oss-120b",
+  "created_at": "2026-06-09T15:23:54.000Z",
+  "updated_at": "2026-09-02T14:41:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "furiosa-llm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "furiosa-llm",
+    "safetensors",
+    "gpt_oss",
+    "furiosa-ai",
+    "gpt-oss",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:openai/gpt-oss-120b",
+    "base_model:quantized:openai/gpt-oss-120b",
+    "license:apache-2.0",
+    "8-bit",
+    "mxfp4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2113,
+  "trending_score": 0,
+  "parameters": 116829156672,
+  "parameters_human": "116.83B",
+  "storage_bytes": 219698279414,
+  "storage_human": "219.7 GB",
+  "base_model": "openai/gpt-oss-120b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "furiosa-ai/gpt-oss-120b · Hugging Face",
+      "url": "https://huggingface.co/furiosa-ai/gpt-oss-120b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · furiosa-ai/gpt-oss-120b at main - Hugging Face",
+      "url": "https://huggingface.co/furiosa-ai/gpt-oss-120b/blob/main/README.md",
+      "snippet": "Overview gpt-oss-120b is OpenAI&#x27;s larger open-weight reasoning model, designed for production and general-purpose, high-reasoning use cases. It is an auto-regressive Mixture-of-Experts (MoE) transformer that emits responses in the harmony response format, separating the model&#x27;s chain-of-thought reasoning from its final answer and carrying native support for tool calling and configurable ..."
+    },
+    {
+      "title": "Serving GPT-OSS 120B at 5.8 ms TPOT with RNGD - furiosa.ai",
+      "url": "https://furiosa.ai/blog/serving-gpt-oss-120b-at-5-8-ms-tpot-with-two-rngd-cards-compiler-optimizations-in-practice",
+      "snippet": "Learn how GPT-OSS 120B achieves 5.8 ms TPOT using two RNGD cards, showcasing real-world compiler optimizations for high-performance AI inference."
+    },
+    {
+      "title": "FuriosaAI & OpenAI: The Future of Sustainable AI",
+      "url": "https://furiosa.ai/blog/furiosaai-and-openai-showcase-the-future-of-sustainable-enterprise-ai",
+      "snippet": "At the grand opening of OpenAI&#x27;s new Seoul office today, we are partnering with the world&#x27;s biggest AI startup to showcase its new open-weight gpt-oss-120b model running live on RNGD, our flagship AI accelerator. We are excited to represent the foundational compute layer of the AI stack at this milestone event."
+    },
+    {
+      "title": "GPT-OSS — FuriosaAI Developer Center 2026.4.0b13 documentation",
+      "url": "https://developer.furiosa.ai/v2026.4.0/en/furiosa_llm/models/gpt-oss.html",
+      "snippet": "GPT-OSS # GPT-OSS is OpenAI&#x27;s family of open-weight reasoning models. They are auto-regressive Mixture-of-Experts (MoE) transformers that emit responses in the harmony response format, separating the model&#x27;s chain-of-thought reasoning from its final answer and carrying native support for tool calling and configurable reasoning effort."
+    }
+  ]
+}

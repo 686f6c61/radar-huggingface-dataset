@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "WANGIVANrac/matching-lab",
+  "slug": "wangivanrac-matching-lab",
+  "author": "WANGIVANrac",
+  "url": "https://huggingface.co/WANGIVANrac/matching-lab",
+  "created_at": "2026-09-02T14:40:21.000Z",
+  "updated_at": "2026-09-02T14:42:13.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WANGIVANrac (Ivan M. Wang) - Hugging Face",
+      "url": "https://huggingface.co/WANGIVANrac/models",
+      "snippet": "Self-employed ML consultant"
+    },
+    {
+      "title": "WANGIVANrac (Ivan M. Wang) - Hugging Face",
+      "url": "https://huggingface.co/WANGIVANrac/datasets",
+      "snippet": "WANGIVANrac&#x27;s datasets1 Sort: Recently updated WANGIVANrac/nlp-qa-samples-2023 Updated about 8 hours ago"
+    },
+    {
+      "title": "GitHub - mitmedialab/matching-ai",
+      "url": "https://github.com/mitmedialab/matching-ai",
+      "snippet": "Matching Game This is a responsive matching game using JQuery / JavaScript, Bootstrap, and Knockout."
+    },
+    {
+      "title": "Learning to match, reconstruct, and understand the 3D world to bridge ...",
+      "url": "https://matchlab-imperial.github.io/",
+      "snippet": "Matchlab is a research group focused on computer vision and machine learning, with the goal to develop algorithms to match, reconstruct, and understand the visual world. We tackle challenges in monocular/stereo depth estimation, novel view synthesis, and open-world 3D perception."
+    },
+    {
+      "title": "Match Lab - Grand Slam Statistics | DB4Tennis",
+      "url": "https://www.db4tennis.com/match-lab",
+      "snippet": "Simulate Grand Slam match outcomes with DB4Tennis Match Lab. Pick two players, choose a surface, and get AI-powered win probability predictions based on Elo ratings, surface form, and head-to-head records."
+    }
+  ]
+}

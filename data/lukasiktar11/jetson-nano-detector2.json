@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lukasiktar11/jetson-nano-detector2",
+  "slug": "lukasiktar11-jetson-nano-detector2",
+  "author": "lukasiktar11",
+  "url": "https://huggingface.co/lukasiktar11/jetson-nano-detector2",
+  "created_at": "2026-09-02T12:37:13.000Z",
+  "updated_at": "2026-09-02T13:31:29.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "detection",
+    "yolo",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 251595272,
+  "storage_human": "252 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lukasiktar11/jetson_nano_detection · Hugging Face",
+      "url": "https://huggingface.co/lukasiktar11/jetson_nano_detection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lukasiktar11 (Luka Siktar) - Hugging Face",
+      "url": "https://huggingface.co/lukasiktar11",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 10 hours ago ... published a model about 10 hours ago"
+    },
+    {
+      "title": "GitHub - facebookresearch/detectron2: Detectron2 is a platform for ...",
+      "url": "https://github.com/facebookresearch/detectron2",
+      "snippet": "Detectron2 is Facebook AI Research&#x27;s next generation library that provides state-of-the-art detection and segmentation algorithms. It is the successor of Detectron and maskrcnn-benchmark. It supports a number of computer vision research projects and production applications in Facebook."
+    },
+    {
+      "title": "Detectron2 - AI at Meta",
+      "url": "https://ai.meta.com/tools/detectron2/",
+      "snippet": "Detectron2 is FAIR&#x27;s next-generation platform for object detection and segmentation."
+    },
+    {
+      "title": "GitHub - JetsonNano-ObjectDetection/JNObjectDetection: These are the ...",
+      "url": "https://github.com/JetsonNano-ObjectDetection/JNObjectDetection",
+      "snippet": "The inference portion of Hello AI World - which includes coding your own image classification application for C++ or Python, object detection, and live camera demos - can be run on your Jetson in roughly two hours or less, while transfer learning is best left to leave running overnight. Setting up Jetson with JetPack Building the Project from ..."
+    }
+  ]
+}

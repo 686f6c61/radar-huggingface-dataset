@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "KnuckleHead1/wearable-activity-classifier",
+  "slug": "knucklehead1-wearable-activity-classifier",
+  "author": "KnuckleHead1",
+  "url": "https://huggingface.co/KnuckleHead1/wearable-activity-classifier",
+  "created_at": "2026-09-02T12:44:19.000Z",
+  "updated_at": "2026-09-02T13:27:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "keras",
+    "time-series-classification",
+    "education",
+    "deep-learning",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 179498,
+  "storage_human": "179498 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "muzammil-khan/wearable-activity-classifier · Hugging Face",
+      "url": "https://huggingface.co/muzammil-khan/wearable-activity-classifier",
+      "snippet": "Wearable Activity Classifier A CNN-based deep learning model for classifying wearable sensor signals into three activity classes:"
+    },
+    {
+      "title": "GitHub - priyanshu015211/human-behavior-classification: Machine ...",
+      "url": "https://github.com/priyanshu015211/human-behavior-classification",
+      "snippet": "Overview This project focuses on classifying human activities using wearable sensor data. Multiple machine learning models were implemented and compared to identify the most effective approach for activity recognition."
+    },
+    {
+      "title": "Wearable Activity Dataset ⌚ — Fitness & Health Tracking Data",
+      "url": "https://github.com/syncora-ai/Fitness-Health-Tracking-Dataset",
+      "snippet": "This dataset contains wearable fitness and biometric data, modeled on devices like the Apple Watch. All entries are synthetic, privacy-safe, and ready for ML pipelines. Suitable for predictive modeling, activity classification, and LLM-based experiments."
+    },
+    {
+      "title": "Machine learning models for wearable-based human activity recognition ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231225015838",
+      "snippet": "Network architectures in combination with wearable devices enable applications, such as remote monitoring, accident prevention, and rehabilitation support. However, real-world implementation remains hindered by challenges such as sensor configuration and placement, model complexity, and the generalizability across different activity types."
+    },
+    {
+      "title": "Deep learning based human activity recognition (HAR) using wearable ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2667096821000392",
+      "snippet": "The importance of HAR based on wearable sensors becomes obvious from the fact that it can be used for classifying and logging many daily activities like eating, drinking, brushing, detection of sleep anomalies, and is not just limited to exercise-related activities. HAR includes two types of actions: simple and complex."
+    }
+  ]
+}

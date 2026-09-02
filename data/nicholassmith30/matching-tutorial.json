@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nicholassmith30/matching-tutorial",
+  "slug": "nicholassmith30-matching-tutorial",
+  "author": "nicholassmith30",
+  "url": "https://huggingface.co/nicholassmith30/matching-tutorial",
+  "created_at": "2026-09-02T18:57:42.000Z",
+  "updated_at": "2026-09-02T18:57:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2412.06264",
+      "snippet": "This document from arXiv.org explores advanced topics in generative AI, focusing on flow matching and diffusion models for diverse data modalities."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "PDF Generative AI with Stochastic Differential Equations",
+      "url": "https://diffusion.csail.mit.edu/docs/slides_lecture_1.pdf",
+      "snippet": "Conditional generation means sampling the conditional data distribution: We will first focus on unconditional generation and then learn how to translate an unconditional model to a conditional one."
+    },
+    {
+      "title": "GitHub - facebookresearch/flow_matching: A PyTorch library for ...",
+      "url": "https://github.com/facebookresearch/flow_matching",
+      "snippet": "A PyTorch library for implementing flow matching algorithms, featuring continuous and discrete flow matching implementations. It includes practical examples for both text and image modalities. - fa..."
+    },
+    {
+      "title": "AIG Model Matching for MSFS 2024 - GitHub",
+      "url": "https://github.com/Samueleonard/AIG-ModelMatching-For-MSFS2024",
+      "snippet": "AIG Model Matching for MSFS 2024 Introduction This package provides the latest version of the Alpha India Group (AIG) AI traffic models for MSFS 2024. It makes installation quick and easy by removing the need for the AIG installer. This pack is for use with VATSIM but may work with offline traffic (more details below)."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Wiself/gemma-4-31B-Styletune-Voice",
+  "slug": "wiself-gemma-4-31b-styletune-voice",
+  "author": "Wiself",
+  "url": "https://huggingface.co/Wiself/gemma-4-31B-Styletune-Voice",
+  "created_at": "2026-09-02T15:51:09.000Z",
+  "updated_at": "2026-09-02T18:59:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gemma4",
+    "styletune",
+    "voice",
+    "gguf",
+    "roleplay",
+    "creative-writing",
+    "style-transfer",
+    "text-generation",
+    "en",
+    "base_model:Gryphe/Gemma-4-31B-StyleTune",
+    "base_model:finetune:Gryphe/Gemma-4-31B-StyleTune",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2818572391,
+  "storage_human": "2.8 GB",
+  "base_model": "Gryphe/Gemma-4-31B-StyleTune",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gryphe/Gemma-4-31B-StyleTune · Hugging Face",
+      "url": "https://huggingface.co/Gryphe/Gemma-4-31B-StyleTune",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wiself/Voice · Hugging Face",
+      "url": "https://huggingface.co/Wiself/Voice",
+      "snippet": "The google/gemma-4-26b-a4b-it name in the frontmatter is the lowercased, verifiable HF ID (link lives, case-insensitive); gryphe/gemma-4-26b-a4b-styletune-v2 and other StyleTune names are illustrative examples—use any compatible model you have access to."
+    },
+    {
+      "title": "Gemma-4-31B-StyleTune: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma-4-31b-styletune-gryphe",
+      "snippet": "Overview Gemma-4-31B-StyleTune is a surgical finetuned variant of Google&#x27;s Gemma 4 31B model created by Gryphe. The model modifies exactly one tensor—the lm_head output projection layer—while freezing all 60 transformer layers, attention heads, and MLPs completely untouched. This targeted approach delivers a radically different writing style with 60% fewer clichés per 100 words (reduction ..."
+    },
+    {
+      "title": "Gemma 4 31B StyleTune API - Language AI by google | Routeway",
+      "url": "https://routeway.ai/models/gemma-4-31b-styletune",
+      "snippet": "Access Gemma 4 31B StyleTune by google through Routeway&#x27;s unified API with competitive pricing. Perfect for long context processing, document analysis. Supports 262K token context window. Starting at just $0.28/1M tokens. Simple OpenAI-compatible API, reliable performance, no rate limits during peak hours. Start for free with $1 credit."
+    },
+    {
+      "title": "Gemma 4 31B StyleTune model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/Gemma-4-31B-StyleTune",
+      "snippet": "Gemma 4 31B StyleTune is a community creative finetune for reasoning, multimodal chat, expressive writing, and roleplay."
+    }
+  ]
+}

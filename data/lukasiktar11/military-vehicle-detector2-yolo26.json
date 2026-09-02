@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "lukasiktar11/military-vehicle-detector2-yolo26",
+  "slug": "lukasiktar11-military-vehicle-detector2-yolo26",
+  "author": "lukasiktar11",
+  "url": "https://huggingface.co/lukasiktar11/military-vehicle-detector2-yolo26",
+  "created_at": "2026-09-01T19:11:23.000Z",
+  "updated_at": "2026-09-02T12:32:50.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58500836,
+  "storage_human": "59 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lukasiktar11/military-vehicle-detector-yolo26 · Hugging Face",
+      "url": "https://huggingface.co/lukasiktar11/military-vehicle-detector-yolo26",
+      "snippet": "lukasiktar11 / military-vehicle-detector-yolo26 like 0 ONNX Model card FilesFiles and versions xet Community Copy to bucket new ... Downloads last month -"
+    },
+    {
+      "title": "GitHub - ultralytics/yolo26: Ultralytics YOLO26 quickstart for ...",
+      "url": "https://github.com/ultralytics/yolo26",
+      "snippet": "YOLO26 models are available for detection, instance segmentation, semantic segmentation, depth estimation, classification, pose estimation, and oriented object detection. All model weights download automatically from the latest Ultralytics assets release on first use."
+    },
+    {
+      "title": "Ultralytics/YOLO26 · Hugging Face",
+      "url": "https://huggingface.co/Ultralytics/YOLO26",
+      "snippet": "Ultralytics Enterprise License: For development and production use, this license enables seamless integration of Ultralytics software and AI models into business products and services, including internal tools, automated workflows, and production deployments, bypassing the open-source requirements of AGPL-3.0."
+    },
+    {
+      "title": "Ultralytics YOLO26: Unified Real-Time End-to-End Vision Models",
+      "url": "https://arxiv.org/html/2606.03748v1",
+      "snippet": "We present Ultralytics YOLO26, a unified real-time vision model family that addresses these limitations through coordinated architecture and training advances. Architecturally, YOLO26 uses a dual-head design for native NMS-free end-to-end inference and removes DFL entirely, yielding a lighter head with unconstrained regression range."
+    },
+    {
+      "title": "GitHub - ultralytics/ultralytics: Ultralytics YOLO26, YOLO11, YOLOv8 ...",
+      "url": "https://github.com/ultralytics/ultralytics",
+      "snippet": "Ultralytics creates cutting-edge, state-of-the-art (SOTA) YOLO models built on years of foundational research in computer vision and AI. Constantly updated for performance and flexibility, our models are fast, accurate, and easy to use."
+    }
+  ]
+}

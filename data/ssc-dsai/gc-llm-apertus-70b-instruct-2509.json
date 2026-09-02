@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "ssc-dsai/gc-llm-apertus-70b-instruct-2509",
+  "slug": "ssc-dsai-gc-llm-apertus-70b-instruct-2509",
+  "author": "ssc-dsai",
+  "url": "https://huggingface.co/ssc-dsai/gc-llm-apertus-70b-instruct-2509",
+  "created_at": "2026-04-29T16:48:13.000Z",
+  "updated_at": "2026-09-02T18:13:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "apertus",
+    "text-generation",
+    "canada",
+    "government-of-canada",
+    "gc",
+    "bilingual",
+    "lora",
+    "peft",
+    "conversational",
+    "en",
+    "fr",
+    "dataset:ssc-dsai/gc-web-en",
+    "dataset:ssc-dsai/gc-web-fr",
+    "dataset:allenai/tulu-3-sft-mixture",
+    "dataset:CohereForAI/aya_dataset",
+    "dataset:AI-MO/NuminaMath-TIR",
+    "dataset:theblackcat102/evol-codealpaca-v1",
+    "arxiv:2509.14233",
+    "base_model:swiss-ai/Apertus-70B-Instruct-2509",
+    "base_model:finetune:swiss-ai/Apertus-70B-Instruct-2509",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": 70599864480,
+  "parameters_human": "70.60B",
+  "storage_bytes": 706016919833,
+  "storage_human": "706.0 GB",
+  "base_model": "swiss-ai/Apertus-70B-Instruct-2509",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ssc-dsai/gc-llm-apertus-70b-instruct-2509 · Hugging Face",
+      "url": "https://huggingface.co/ssc-dsai/gc-llm-apertus-70b-instruct-2509",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GC LLM - a ssc-dsai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ssc-dsai/gc-llm",
+      "snippet": "ssc-dsai/gc-llm-apertus-70b-instruct-2509 71B•Updated 28 days ago• 304 • 1 Upvote -"
+    },
+    {
+      "title": "Apertus: Democratizing Open and Compliant LLMs for Global Language ...",
+      "url": "https://arxiv.org/pdf/2509.14233",
+      "snippet": "The Apertus models also expand multilingual coverage, training on 15T tokens from over 1800 languages, with ∼40% of pretraining data allocated to non-English content. Released at 8B and 70B scales, Apertus approaches state-of-the-art results among fully open models on multilingual benchmarks, rivalling or surpassing open-weight counterparts."
+    },
+    {
+      "title": "Tech Report | APERTVS - apertus-ai.org",
+      "url": "https://apertus-ai.org/docs/tech/report/",
+      "snippet": "The Apertus models expand multilingual coverage, training on 15T tokens from over 1,800 languages, with approximately 40% of pretraining data allocated to non-English content. Released at 8B and 70B scales, Apertus approaches state-of-the-art results among fully open models on multilingual benchmarks."
+    },
+    {
+      "title": "Apertus Swiss-AI Model | Apertus - EU-Hosted Apps & AI",
+      "url": "https://apertus.ai/en/apps/apertus-model/",
+      "snippet": "The new Swiss AI model - Apertus 70B & 8B. Developed by Swiss-AI for highest precision and efficiency."
+    }
+  ]
+}

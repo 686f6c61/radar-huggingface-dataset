@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/JAX-XORTRON-i1-GGUF",
+  "slug": "mradermacher-jax-xortron-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/JAX-XORTRON-i1-GGUF",
+  "created_at": "2026-09-02T12:25:34.000Z",
+  "updated_at": "2026-09-02T12:37:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 10878254112,
+  "storage_human": "10.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/XORTRON-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/XORTRON-i1-GGUF",
+      "snippet": "mradermacher / XORTRON-i1-GGUF like 2 Transformers GGUF darkc0de/Xortron.Config.Dataset.New.2026 English heretic uncensored decensored abliterated imatrix conversational License:wtfpl Model card FilesFiles and versions xet Community Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "XORTRON-i1-GGUF huggingface.co api & mradermacher XORTRON-i1-GGUF ...",
+      "url": "https://www.toolify.ai/ai-model/mradermacher-xortron-i1-gguf",
+      "snippet": "XORTRON-i1-GGUF huggingface.co is an AI model on huggingface.co that provides XORTRON-i1-GGUF&#x27;s model effect (), which can be used instantly with this mradermacher XORTRON-i1-GGUF model. huggingface.co supports a free trial of the XORTRON-i1-GGUF model, and also provides paid use of the XORTRON-i1-GGUF. Support call XORTRON-i1-GGUF model through api, including Node.js, Python, http."
+    },
+    {
+      "title": "mradermacher/XORTRON-NXTXPRTXXL-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/XORTRON-NXTXPRTXXL-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - jax-ml/jax: Composable transformations of Python+NumPy ...",
+      "url": "https://github.com/jax-ml/jax",
+      "snippet": "JAX is a Python library for accelerator-oriented array computation and program transformation, designed for high-performance numerical computing and large-scale machine learning. JAX can automatically differentiate native Python and NumPy functions. It can differentiate through loops, branches, recursion, and closures, and it can take derivatives of derivatives of derivatives. It supports ..."
+    },
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    }
+  ]
+}

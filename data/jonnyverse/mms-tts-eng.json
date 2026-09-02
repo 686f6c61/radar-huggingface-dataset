@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/mms-tts-eng",
+  "slug": "jonnyverse-mms-tts-eng",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/mms-tts-eng",
+  "created_at": "2026-09-02T15:30:38.000Z",
+  "updated_at": "2026-09-02T15:30:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "vits",
+    "text-to-audio",
+    "text-to-speech",
+    "base_model:facebook/mms-tts-eng",
+    "base_model:quantized:facebook/mms-tts-eng",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 210747382,
+  "storage_human": "211 MB",
+  "base_model": "facebook/mms-tts-eng",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mms-tts-eng: Text-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/mms-tts-eng-facebook",
+      "snippet": "Overview mms-tts-eng is an English text-to-speech model built on the VITS (Variational Inference with adversarial learning for end-to-end Text-to-Speech) architecture, developed by facebook as part of the Massively Multilingual Speech project. The model predicts speech waveforms conditional on input text sequences using a conditional variational autoencoder comprised of a posterior encoder ..."
+    },
+    {
+      "title": "indicnode/mms-tts-eng · Hugging Face",
+      "url": "https://huggingface.co/indicnode/mms-tts-eng",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "facebook/mms-tts-eng · Hugging Face",
+      "url": "https://huggingface.co/facebook/mms-tts-eng",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mms-tts-eng Open-source English Text-to-Speech Model - Achieve High ...",
+      "url": "https://model.aibase.com/models/details/1915693319386193921",
+      "snippet": "This model is part of Meta&#x27;s Massively Multilingual Speech (MMS) project, specifically designed for English text-to-speech conversion. It employs the VITS end-to-end architecture to generate natural and fluent English speech."
+    },
+    {
+      "title": "mms-tts-eng — Text-to-Speech Model by facebook",
+      "url": "https://modeldatabase.com/facebook/mms-tts-eng.html",
+      "snippet": "facebook/mms-tts-eng is an open source text-to-speech model built with transformers, 2,906 downloads. Compare and deploy AI models on Model Database."
+    }
+  ]
+}

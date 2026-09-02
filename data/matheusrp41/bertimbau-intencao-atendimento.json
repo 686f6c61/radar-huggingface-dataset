@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "matheusrp41/bertimbau-intencao-atendimento",
+  "slug": "matheusrp41-bertimbau-intencao-atendimento",
+  "author": "matheusrp41",
+  "url": "https://huggingface.co/matheusrp41/bertimbau-intencao-atendimento",
+  "created_at": "2026-09-02T18:38:01.000Z",
+  "updated_at": "2026-09-02T19:04:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:neuralmind/bert-base-portuguese-cased",
+    "base_model:finetune:neuralmind/bert-base-portuguese-cased",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108924674,
+  "parameters_human": "108.9M",
+  "storage_bytes": 871452725,
+  "storage_human": "871 MB",
+  "base_model": "neuralmind/bert-base-portuguese-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GitHub - ClaudioSS01/portuguese-Bertimbau: Portuguese pre-trained BERT ...",
+      "url": "https://github.com/ClaudioSS01/portuguese-Bertimbau",
+      "snippet": "This repository contains pre-trained BERT models trained on the Portuguese language. BERT-Base and BERT-Large Cased variants were trained on the BrWaC (Brazilian Web as Corpus), a large Portuguese corpus, for 1,000,000 steps, using whole-word mask."
+    },
+    {
+      "title": "BERTimbau - Diretório de software de IA - megatek.ai",
+      "url": "https://megatek.ai/pt/model/bertimbau/",
+      "snippet": "BERTimbau é um modelo de linguagem pré-treinado baseado na arquitetura transformer BERT, desenvolvido pela NeuralMind e lançado em 2020 com foco exclusivo no português brasileiro."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=pt-PT",
+      "snippet": "O Gemini é IA e pode cometer erros. Conheça o Gemini, o assistente de IA da Google. Receba ajuda para escrever, planear, debater ideias e muito mais. Experimente o poder da IA generativa."
+    },
+    {
+      "title": "neuralmind/bert-base-portuguese-cased · Hugging Face",
+      "url": "https://huggingface.co/neuralmind/bert-base-portuguese-cased",
+      "snippet": "BERTimbau Base is a pretrained BERT model for Brazilian Portuguese that achieves state-of-the-art performances on three downstream NLP tasks: Named Entity Recognition, Sentence Textual Similarity and Recognizing Textual Entailment. It is available in two sizes: Base and Large. For further information or requests, please go to BERTimbau repository."
+    }
+  ]
+}

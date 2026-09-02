@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "michaelwrightwyn/data-efficient-learning-review",
+  "slug": "michaelwrightwyn-data-efficient-learning-review",
+  "author": "michaelwrightwyn",
+  "url": "https://huggingface.co/michaelwrightwyn/data-efficient-learning-review",
+  "created_at": "2026-09-02T17:35:31.000Z",
+  "updated_at": "2026-09-02T17:35:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "data-efficient-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hcmnguyen/data-efficient-learning-review · Hugging Face",
+      "url": "https://huggingface.co/hcmnguyen/data-efficient-learning-review",
+      "snippet": "This repository contains a working research note about Data Efficient Learning. It organizes motivation, related work, a falsifiable hypothesis, and an evaluation plan."
+    },
+    {
+      "title": "luchiahao/data-efficient-learning-review · Hugging Face",
+      "url": "https://huggingface.co/luchiahao/data-efficient-learning-review",
+      "snippet": "Repository summary This is an exploratory note for Data Efficient Learning. It records the intended comparison, likely confounders, and reproducibility requirements before any benchmark result is reported."
+    },
+    {
+      "title": "[2402.09668] How to Train Data-Efficient LLMs - arXiv.org",
+      "url": "https://arxiv.org/abs/2402.09668",
+      "snippet": "The training of large language models (LLMs) is expensive. In this paper, we study data-efficient approaches for pre-training LLMs, i.e., techniques that aim to optimize the Pareto frontier of model quality and training resource/data consumption. We seek to understand the tradeoffs associated with data selection routines based on (i) expensive-to-compute data-quality estimates, and (ii ..."
+    },
+    {
+      "title": "GitHub - wangxb96/Awesome-EdgeAI: Resources of our survey paper ...",
+      "url": "https://github.com/wangxb96/Awesome-EdgeAI",
+      "snippet": "Resources of our survey paper \"Optimizing Edge AI: A Comprehensive Survey on Data, Model, and System Strategies\" - wangxb96/Awesome-EdgeAI"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 125 Estimated models among 415 tracked LLMs — 413 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

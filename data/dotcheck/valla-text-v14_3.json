@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "DotCheck/valla-text-v14_3",
+  "slug": "dotcheck-valla-text-v14_3",
+  "author": "DotCheck",
+  "url": "https://huggingface.co/DotCheck/valla-text-v14_3",
+  "created_at": "2026-09-02T18:53:03.000Z",
+  "updated_at": "2026-09-02T18:53:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "dotcheck",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "pt",
+    "de",
+    "it",
+    "nl"
+  ],
+  "tags": [
+    "dotcheck",
+    "text-classification",
+    "ai-detection",
+    "multilingual",
+    "apache-2.0",
+    "valla",
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "pt",
+    "de",
+    "it",
+    "nl",
+    "base_model:Oxidane/tmr-ai-text-detector",
+    "base_model:adapter:Oxidane/tmr-ai-text-detector",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20774,
+  "storage_human": "20774 B",
+  "base_model": "Oxidane/tmr-ai-text-detector, intfloat/e5-small, prajjwal1/bert-tiny, fakespot-ai/roberta-base-ai-text-detection-v1, hfl/chinese-macbert-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "binary AI detection (text, en)",
+      "dataset": "RAID-lite EN (ABS 520–1100)",
+      "metric": "mean_P_AI_human",
+      "value": 0.029
+    },
+    {
+      "task": "binary AI detection (text, en)",
+      "dataset": "RAID-lite EN (ABS 520–1100)",
+      "metric": "mean_P_AI_ai",
+      "value": 0.984
+    },
+    {
+      "task": "binary AI detection (text, en)",
+      "dataset": "RAID-lite EN (ABS 520–1100)",
+      "metric": "balanced_accuracy",
+      "value": 0.979
+    }
+  ],
+  "sources": [
+    {
+      "title": "Technical docs · DotCheck",
+      "url": "https://dotcheck.ai/docs",
+      "snippet": "Portuguese (pt) uses the Brazilian-trained head. Full methods and limits are in the PDFs above. Need programmatic scores, or to issue a verifiable report? See the Pro API docs (keys from Check). Model cards and open weights on Hugging Face (Apache-2.0). Everyday scoring still runs through DotCheck: huggingface.co/DotCheck · vermeer-image-v12 · vermeer-image-v14_2 · valla-text-v11 ..."
+    },
+    {
+      "title": "DotCheck (DotCheck - Petr Jaroch) - Hugging Face",
+      "url": "https://huggingface.co/DotCheck",
+      "snippet": "DotCheck engines: Vermeer (image), Valla (text), Muybridge (video). Closed weights — score via Check or Pro API. See what&#x27;s real."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=dotcheck",
+      "snippet": "Explore machine learning models. 6 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: dotcheck Clear all"
+    },
+    {
+      "title": "PDF DotCheck Model Card — Docs v2026",
+      "url": "https://dotcheck.ai/media/docs/dotcheck-model-card-v2026.7.pdf",
+      "snippet": "DotCheck is a Chrome extension and a website. It estimates how AI-like an image, a video (scored from a few frames), audio, or text in a supported language appears. Everyday scoring uses our own models on our servers. Free, Premium, and Pro all use the same engines."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 125 Estimated models among 415 tracked LLMs — 413 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

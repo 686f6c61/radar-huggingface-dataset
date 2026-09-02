@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "4w4kt/waste-classifier-b5",
+  "slug": "4w4kt-waste-classifier-b5",
+  "author": "4w4kt",
+  "url": "https://huggingface.co/4w4kt/waste-classifier-b5",
+  "created_at": "2026-09-02T11:38:59.000Z",
+  "updated_at": "2026-09-02T14:26:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "image-classification",
+    "pytorch",
+    "efficientnet",
+    "waste-classification",
+    "circular-economy",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118539731,
+  "storage_human": "119 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "4w4kt/waste-classifier-b5 · Hugging Face",
+      "url": "https://huggingface.co/4w4kt/waste-classifier-b5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Waste Classifier - a Hugging Face Space by Aryan-Vashistha06",
+      "url": "https://huggingface.co/spaces/Aryan-Vashistha06/AI-based-waste-classification-system",
+      "snippet": "Upload a photo of any waste item and the app will identify its recycling category. It shows how confident the prediction is, a visual breakdown of all possible categories, and offers a tip on how t..."
+    },
+    {
+      "title": "GitHub - Tommycat9120/waste-classification: This project leverages an ...",
+      "url": "https://github.com/Tommycat9120/waste-classification",
+      "snippet": "This project implements an AI-driven waste classification model to automate the sorting of organic and recyclable waste. Using a deep learning approach, we aim to enhance efficiency in waste management systems, reducing landfill dependency and promoting sustainability."
+    },
+    {
+      "title": "GitHub - usafhulk/Waste-Classifier-AI-model",
+      "url": "https://github.com/usafhulk/Waste-Classifier-AI-model",
+      "snippet": "Waste Classifier AI Model Overview This project provides an end-to-end solution for automatic waste classification using deep learning and transfer learning techniques. The model is designed to differentiate between recyclable and organic (compostable) waste images, addressing the need for scalable, accurate, and automated waste sorting."
+    },
+    {
+      "title": "Waste Classifier - gufran21.github.io",
+      "url": "https://gufran21.github.io/gufran-portfolio/projects/wasteClassifier.html",
+      "snippet": "Waste Classifier Tech Stack: TensorFlow, OpenCV, NumPy, Matplotlib, GoogleColab,Flask, HTML,CSS,JavaScript. Github URL: Github Link Developed a Convolutional Neural Network (CNN) to classify waste materials into 8 categories: cardboard, plastic, metal, glass, food waste, electronics, paper, and trash. Trained the model on 1,200 TrashNet dataset samples, achieving 79% accuracy on test data and ..."
+    }
+  ]
+}

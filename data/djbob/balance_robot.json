@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "djbob/balance_robot",
+  "slug": "djbob-balance_robot",
+  "author": "djbob",
+  "url": "https://huggingface.co/djbob/balance_robot",
+  "created_at": "2026-09-02T02:03:43.000Z",
+  "updated_at": "2026-09-02T11:28:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 375274,
+  "storage_human": "375274 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "djbob/balance_robot · Hugging Face",
+      "url": "https://huggingface.co/djbob/balance_robot",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "djbob (djbob) - Hugging Face",
+      "url": "https://huggingface.co/djbob",
+      "snippet": "Sort: Recently updated. djbob/poca-SoccerTwos. Reinforcement Learning • Updated Oct 13, 2025. djbob/a2c-PandaReachDense-v3. Reinforcement Learning • Updated Oct 11, 2025"
+    },
+    {
+      "title": "Balance Bot - Accelerometer",
+      "url": "https://www.crunchlabs.com/products/balance-bot",
+      "snippet": "Hack Pack: Balance Bot! Subscribe now to start building, coding and hacking your very own robots (alongside Mark Rober)."
+    },
+    {
+      "title": "We trained a robot dog to balance and walk on top of a yoga ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/drjimfan_we-trained-a-robot-dog-to-balance-and-walk-ugcPost-7192197357248126976-bD5Q",
+      "snippet": "We trained a robot dog to balance and walk on top of a yoga ball purely in simulation, and then transfer zero-shot to the real world. No fine-tuning. Just works. I&#x27;m excited to announce DrEureka ..."
+    },
+    {
+      "title": "self-balancing-robot · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/self-balancing-robot",
+      "snippet": "MABEL is a feature-packed, open-source, legged balancing robot based off of the Boston Dynamics Handle robot."
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "Brooooooklyn/Agents-A1-nvfp4-mlx",
+  "slug": "brooooooklyn-agents-a1-nvfp4-mlx",
+  "author": "Brooooooklyn",
+  "url": "https://huggingface.co/Brooooooklyn/Agents-A1-nvfp4-mlx",
+  "created_at": "2026-07-20T13:37:49.000Z",
+  "updated_at": "2026-09-02T17:17:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx-node",
+  "languages": [],
+  "tags": [
+    "mlx-node",
+    "safetensors",
+    "qwen3_5_moe",
+    "mlx",
+    "quantized",
+    "nvfp4",
+    "fp8",
+    "e4m3",
+    "mixed-precision",
+    "nvidia",
+    "cuda",
+    "dgx-spark",
+    "linux",
+    "aarch64",
+    "qwen3.5",
+    "moe",
+    "agentic",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "base_model:InternScience/Agents-A1",
+    "base_model:quantized:InternScience/Agents-A1",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 35114289008,
+  "parameters_human": "35.11B",
+  "storage_bytes": 24804518713,
+  "storage_human": "24.8 GB",
+  "base_model": "InternScience/Agents-A1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brooooooklyn/Agents-A1-nvfp4-mlx · Hugging Face",
+      "url": "https://huggingface.co/Brooooooklyn/Agents-A1-nvfp4-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Brooooooklyn/Agents-A1-4B-nvfp4-mlx · Hugging Face",
+      "url": "https://huggingface.co/Brooooooklyn/Agents-A1-4B-nvfp4-mlx",
+      "snippet": "Brooooooklyn / Agents-A1-4B-nvfp4-mlx like 0 Text Generation Safetensors MLX mlx-node qwen3_5 quantized nvfp4 fp8 e4m3 mixed-precision nvidia cuda dgx-spark linux aarch64 qwen3.5 vlm vision agentic unsloth conversational 4-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Brooooooklyn (LongYinan) · GitHub",
+      "url": "https://github.com/Brooooooklyn",
+      "snippet": "mlx-node/mlx-node 1 open 15 merged FP4 quantization quality: data-free encoders, an NVFP4 lift, and the eval that measures them feat: add Qwen3.8 DFlash2 speculative decoding feat (quant): run Qwen3.8 UD GGUF natively"
+    },
+    {
+      "title": "GitHub - InternScience/Agents-A1: Scaling the Horizon, Not the ...",
+      "url": "https://github.com/InternScience/Agents-A1/",
+      "snippet": "Agents-A1 is a 35B Mixture-of-Experts Agentic Model that reaches trillion-parameter-level performance by scaling the agent horizon. We investigate agent-horizon scaling from two perspectives: scaling long-horizon trajectories and scaling heterogeneous agent abilities."
+    },
+    {
+      "title": "Agents-A1 | 35B MoE Agentic Model - internscience.github.io",
+      "url": "https://internscience.github.io/Agents-A1/",
+      "snippet": "Agents-A1 is a 35B Mixture-of-Experts agentic model for long-horizon search, engineering, scientific research, instruction following, and tool use."
+    }
+  ]
+}

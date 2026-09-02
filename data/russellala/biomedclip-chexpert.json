@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "RussellALA/biomedclip-chexpert",
+  "slug": "russellala-biomedclip-chexpert",
+  "author": "RussellALA",
+  "url": "https://huggingface.co/RussellALA/biomedclip-chexpert",
+  "created_at": "2026-09-02T15:12:41.000Z",
+  "updated_at": "2026-09-02T15:52:41.000Z",
+  "license": "chexpert-research-use",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "medical",
+    "chest-xray",
+    "image-classification",
+    "multi-label",
+    "interpretability",
+    "chexpert",
+    "arxiv:2603.21782",
+    "arxiv:2009.14119",
+    "base_model:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
+    "base_model:finetune:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 200107781,
+  "parameters_human": "200.1M",
+  "storage_bytes": 1584786495,
+  "storage_human": "1.6 GB",
+  "base_model": "microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BiomedCLIP: a multimodal biomedical foundation model pretrained from ...",
+      "url": "https://arxiv.org/html/2303.00915v2",
+      "snippet": "In summary, BiomedCLIP is a fully open-access foundation model that achieves state-of-the-art performance on various biomedical tasks, paving the way for transformative multimodal biomedical discovery and applications. We release our models at aka.ms/biomedclip to facilitate future research in multimodal biomedical AI."
+    },
+    {
+      "title": "A Multimodal Biomedical Foundation Model Trained from Fifteen Million ...",
+      "url": "https://ai.nejm.org/doi/full/10.1056/AIoa2400640",
+      "snippet": "Conclusions BiomedCLIP is a fully open-access foundation model that achieves state-of-the-art performance on various biomedical tasks, paving the way for transformative multimodal biomedical discovery and applications. We release our models at aka.ms/biomedclip to facilitate future research in multimodal biomedical AI."
+    },
+    {
+      "title": "ZiyueWang/biomedclip · Hugging Face",
+      "url": "https://huggingface.co/ZiyueWang/biomedclip",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BiomedCLIP Data Pipeline - GitHub",
+      "url": "https://github.com/microsoft/BiomedCLIP_data_pipeline",
+      "snippet": "BiomedCLIP Data Pipeline A pipeline to construct millions of image-caption figures from PubMed. [NEJM AI Article] BiomedCLIP: a multimodal biomedical foundation model pretrained from fifteen million scientific image-text pairs"
+    },
+    {
+      "title": "A Multimodal Biomedical Foundation Model Trained... : NEJM AI",
+      "url": "https://www.ovid.com/journals/neai/fulltext/10.1056/aioa2400640~a-multimodal-biomedical-foundation-model-trained-from",
+      "snippet": "A Multimodal Biomedical Foundation Model Trained from Fifteen Million Image-Text Pairs Sheng Zhang Yanbo Xu Naoto Usuyama Hanwen Xu Jaspreet Bagga Robert Tinn Sam Preston Rajesh Rao Mu Wei Naveen Valluri Cliff Wong Andrea Tupini Yu Wang Matt Mazzola Swadheen Shukla Lars Liden Jianfeng Gao Angela Crabtree Brian Piening Carlo Bifulco Matthew P ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "notgoodkeeper/cnn-based-drowsiness-detection",
+  "slug": "notgoodkeeper-cnn-based-drowsiness-detection",
+  "author": "notgoodkeeper",
+  "url": "https://huggingface.co/notgoodkeeper/cnn-based-drowsiness-detection",
+  "created_at": "2026-09-02T15:11:10.000Z",
+  "updated_at": "2026-09-02T15:11:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "computer-vision",
+    "drowsiness-detection",
+    "driver-monitoring",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13463428,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - fedrik67/drowsiness_detection: cnn based model to detect ...",
+      "url": "https://github.com/fedrik67/drowsiness_detection",
+      "snippet": "cnn based model to detect drowsiness. Contribute to fedrik67/drowsiness_detection development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - nithin953/Real-Time-Driver-Drowsiness-Detection-using ...",
+      "url": "https://github.com/nithin953/Real-Time-Driver-Drowsiness-Detection-using-Lightweight-CNN-Architecture-",
+      "snippet": "A real-time AI-driven driver safety system that monitors drowsiness, facial emotions, yawn detection, blink frequency, and gaze estimation to prevent accidents and enhance alertness."
+    },
+    {
+      "title": "CNN-ViT: A multi-feature learning based approach for driver drowsiness ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2590005625000529",
+      "snippet": "First, this study introduces a novel hybrid architecture that integrates CNNs from the base model with ViT in a parallel dual-stream framework. Unlike previous work that uses CNNs or ViTs independently, this model fuses local spatial features and global contextual information in a unified framework for driver drowsiness detection."
+    },
+    {
+      "title": "A CNN-Based Approach for Driver Drowsiness Detection by Real ... - MDPI",
+      "url": "https://www.mdpi.com/2076-3417/13/13/7849",
+      "snippet": "The paper is organized as follows: Section 2 describes the literature related to drowsiness detection; Section 3 describes the materials and methods used; Section 4 shows the results obtained and their analysis for each CNN architecture, obtaining a model for each. Finally, Section 5 presents the conclusions and future research."
+    },
+    {
+      "title": "CNN-Based Driver Drowsiness Detection System - Springer",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-030-76167-7_10",
+      "snippet": "In today&#8217;s world where the number of vehicles is continuously increasing with the advancement of technology, the number of accidents is also rapidly growing as each day passes. According to reports, about 25% of the accidents that takes place recently is due to..."
+    }
+  ]
+}

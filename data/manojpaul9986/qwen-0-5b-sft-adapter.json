@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "manojpaul9986/qwen-0.5b-sft-adapter",
+  "slug": "manojpaul9986-qwen-0-5b-sft-adapter",
+  "author": "manojpaul9986",
+  "url": "https://huggingface.co/manojpaul9986/qwen-0.5b-sft-adapter",
+  "created_at": "2026-09-02T08:11:30.000Z",
+  "updated_at": "2026-09-02T18:16:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 101994274,
+  "storage_human": "102 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "manojpaul9986/qwen-0.5b-sft-adapter · Hugging Face",
+      "url": "https://huggingface.co/manojpaul9986/qwen-0.5b-sft-adapter",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2-0.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2-0.5B",
+      "snippet": "A newer version of this model is available: Qwen/Qwen2.5-.5B"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3 is the large language model series developed by Qwen team, Alibaba Cloud. - QwenLM/Qwen3"
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Qwen3 introduces several key advancements to enhance its functionality and usability. First, it integrates two distinct operating modes, thinking mode and non-thinking mode, into a single model. This allows users to switch between these modes without alternating between different models, e.g., switching from Qwen2.5 to QwQ (Qwen Team, 2024)."
+    }
+  ]
+}

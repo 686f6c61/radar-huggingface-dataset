@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mikhailkozl/albef-baseline",
+  "slug": "mikhailkozl-albef-baseline",
+  "author": "mikhailkozl",
+  "url": "https://huggingface.co/mikhailkozl/albef-baseline",
+  "created_at": "2026-09-02T13:22:23.000Z",
+  "updated_at": "2026-09-02T13:22:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2107.07651] Align before Fuse: Vision and Language Representation ...",
+      "url": "https://arxiv.org/abs/2107.07651",
+      "snippet": "In this paper, we introduce a contrastive loss to ALign the image and text representations BEfore Fusing (ALBEF) them through cross-modal attention, which enables more grounded vision and language representation learning."
+    },
+    {
+      "title": "Align before Fuse Vision and Language Representation Learning with ...",
+      "url": "https://zhangtemplar.github.io/albef/",
+      "snippet": "This is my reading note for Align before Fuse: Vision and Language Representation Learning with Momentum Distillation. The paper proposes a multi modality model which is trained base on contrast loss, mask language modeling and image-text match. To handle noisy pairs of text and image, it track moving average of model and distill to the final model."
+    },
+    {
+      "title": "GitHub - salesforce/ALBEF: Code for ALBEF: a new vision-language pre ...",
+      "url": "https://github.com/salesforce/ALBEF",
+      "snippet": "Align before Fuse: Vision and Language Representation Learning with Momentum Distillation, NeurIPS 2021 Spotlight (Salesforce Research). Announcement: ALBEF is now officially integrated into LAVIS - a one-stop library for language-and-vision research and applications! This is the official PyTorch implementation of the ALBEF paper [Blog]."
+    },
+    {
+      "title": "Model Architecture | salesforce/ALBEF | DeepWiki",
+      "url": "https://deepwiki.com/salesforce/ALBEF/1.2-model-architecture",
+      "snippet": "Model Architecture Relevant source files This document provides a detailed explanation of the ALBEF (Align Before Fuse) model architecture, including its core components, design principles, and internal mechanisms. For information about using ALBEF for specific tasks, see the task-specific pages under Fine-tuning. Overview ALBEF introduces an innovative approach to vision-language modeling ..."
+    },
+    {
+      "title": "ALBEF: Align Before Fuse for Multimodal Learning",
+      "url": "https://www.emergentmind.com/topics/align-before-fuse-albef",
+      "snippet": "The paper introduces ALBEF, a vision-language framework that first aligns unimodal representations using contrastive loss before fusing them via a multimodal Transformer. It leverages hard negative mining and momentum distillation to enhance sample efficiency, generalization, and robust performance on noisy, large-scale image-text pairs. Empirical results show state-of-the-art performance ..."
+    }
+  ]
+}

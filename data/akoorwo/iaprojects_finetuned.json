@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "AKoorwo/iaprojects_finetuned",
+  "slug": "akoorwo-iaprojects_finetuned",
+  "author": "AKoorwo",
+  "url": "https://huggingface.co/AKoorwo/iaprojects_finetuned",
+  "created_at": "2026-09-02T18:26:27.000Z",
+  "updated_at": "2026-09-02T18:26:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275341720,
+  "storage_human": "275 MB",
+  "base_model": "unsloth/qwen2.5-coder-14b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Customize a model with fine-tuning - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning",
+      "snippet": "Learn how to fine-tune and customize Foundry models by using Python, REST APIs, or the Microsoft Foundry portal. Improve model performance with LoRA adaptation and custom datasets."
+    },
+    {
+      "title": "The Developer&#x27;s Guide to Smarter Fine-tuning: Unlock custom AI for ...",
+      "url": "https://devblogs.microsoft.com/foundry/the-developers-guide-to-smarter-fine-tuning/",
+      "snippet": "Learn to leverage fine-tuning for AI models with Azure AI Foundry and discover best practices for building intelligent solutions."
+    },
+    {
+      "title": "AI model fine-tuning concepts | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/ai/fine-tuning",
+      "snippet": "Learn AI model fine-tuning concepts and discover when fine-tuning can optimize your data and improve model performance. Get started with practical guidance."
+    },
+    {
+      "title": "Deploying Fine-Tuned Models to Azure OpenAI",
+      "url": "https://deepwiki.com/microsoft-foundry/fine-tuning/6.2-deploying-fine-tuned-models-to-azure-openai",
+      "snippet": "Model Propagation: After a fine-tuning job completes, it may take several minutes for the fine_tuned_model ID to be recognized by the deployment service. Role Permissions: The principal executing the code must have Cognitive Services Contributor or Azure AI Developer roles to create deployments."
+    },
+    {
+      "title": "Model optimization - developers.openai.com",
+      "url": "https://developers.openai.com/tracks/model-optimization",
+      "snippet": "Use evals to monitor model performance and optimize accordingly If you are not already familiar with the concepts of fine-tuning, distillation, and cost and latency optimization, we recommend starting with the AI app development track first."
+    }
+  ]
+}

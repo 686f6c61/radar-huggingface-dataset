@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mullernathan04/matching-2023",
+  "slug": "mullernathan04-matching-2023",
+  "author": "mullernathan04",
+  "url": "https://huggingface.co/mullernathan04/matching-2023",
+  "created_at": "2026-09-02T16:50:12.000Z",
+  "updated_at": "2026-09-02T16:50:24.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "imshubhambhat/matching-2023 · Hugging Face",
+      "url": "https://huggingface.co/imshubhambhat/matching-2023",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "williamsson/matching-2023 · Hugging Face",
+      "url": "https://huggingface.co/williamsson/matching-2023",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PDF Proceedings of the First Workshop on Matching From Unstructured and ...",
+      "url": "https://aclanthology.org/2023.matching-1.0.pdf",
+      "snippet": "Introduction Welcome to the inaugural Workshop on Matching from Unstructured and Structured Data - MATCHING 2023! Matching is a fundamental task with wide-ranging applications, encompassing search, recommendation systems, and data integration, among others."
+    },
+    {
+      "title": "AMIT Ramadan AI Challenge #1: Churn Prediction - Kaggle",
+      "url": "https://www.kaggle.com/competitions/image-matching-challenge-2023/models",
+      "snippet": "Reconstruct 3D scenes from 2D images AMIT Ramadan AI Challenge #1: Churn Prediction Build a robust ML model to predict customer churn probability using real-world data and professional validation strategies."
+    },
+    {
+      "title": "Matcher: Segment Anything with One Shot Using All-Purpose Feature Matching",
+      "url": "https://arxiv.org/abs/2305.13310",
+      "snippet": "Powered by large-scale pre-training, vision foundation models exhibit significant potential in open-world image understanding. However, unlike large language models that excel at directly tackling various language tasks, vision foundation models require a task-specific model structure followed by fine-tuning on specific tasks. In this work, we present Matcher, a novel perception paradigm that ..."
+    }
+  ]
+}

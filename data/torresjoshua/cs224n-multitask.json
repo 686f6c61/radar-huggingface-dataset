@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "torresjoshua/cs224n-multitask",
+  "slug": "torresjoshua-cs224n-multitask",
+  "author": "torresjoshua",
+  "url": "https://huggingface.co/torresjoshua/cs224n-multitask",
+  "created_at": "2026-09-02T18:05:40.000Z",
+  "updated_at": "2026-09-02T18:05:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stanford CS 224N | Natural Language Processing with Deep Learning",
+      "url": "https://web.stanford.edu/class/cs224n/",
+      "snippet": "Stanford / Winter 2026 Natural language processing (NLP) is a crucial part of artificial intelligence (AI), modeling how people share information. In recent years, deep learning approaches have obtained very high performance on many NLP tasks. In this course, students gain a thorough introduction to cutting-edge neural networks for NLP."
+    },
+    {
+      "title": "Stanford CS 224N | Natural Language Processing with Deep Learning",
+      "url": "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1234/",
+      "snippet": "Note: In the 2023-24 academic year, CS224N will be taught in both Winter and Spring 2024. We hope to see you in class! Natural language processing (NLP) is a crucial part of artificial intelligence (AI), modeling how people share information. In recent years, deep learning approaches have obtained very high performance on many NLP tasks. In this course, students gain a thorough introduction ..."
+    },
+    {
+      "title": "GPT Meets Graphs and KAN Splines: Testing Novel Frameworks on Multitask ...",
+      "url": "https://arxiv.org/html/2504.10490v1",
+      "snippet": "3 Approach 3.1 Baseline Model As noted in Section 2, for the baseline model, we implemented GPT-2 containing byte-pair encoding (BPE) tokenization, a learnable embedding layer with position embeddings, and 12 transformer layers, similar to the original GPT-2 paper by Open-AI [gpt2]."
+    },
+    {
+      "title": "GitHub - javabapguy/CS224nProject: Final project Stanford CS224n ...",
+      "url": "https://github.com/javabapguy/CS224nProject",
+      "snippet": "Train task specific layers including LoRA parameters Ai/Bi for each task i, use single instance of BERT model with no BERT parameter updates: python multitask_classifier.py --option lora"
+    },
+    {
+      "title": "amahankali10/CS224N-Spring2024-DFP-Student-Handout | DeepWiki",
+      "url": "https://deepwiki.com/amahankali10/CS224N-Spring2024-DFP-Student-Handout",
+      "snippet": "Overview Relevant source files This document provides an introduction to the CS224N Deep Learning Final Project, which focuses on implementing a multitask BERT model capable of handling three distinct NLP tasks: sentiment analysis, paraphrase detection, and semantic similarity. This overview describes the project&#x27;s objectives, system architecture, and key components. Purpose and Scope The ..."
+    }
+  ]
+}

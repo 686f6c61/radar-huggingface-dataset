@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "damintha/ft5_bart_sinhala_detox",
+  "slug": "damintha-ft5_bart_sinhala_detox",
+  "author": "damintha",
+  "url": "https://huggingface.co/damintha/ft5_bart_sinhala_detox",
+  "created_at": "2026-09-02T17:16:04.000Z",
+  "updated_at": "2026-09-02T17:17:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 247577856,
+  "parameters_human": "247.6M",
+  "storage_bytes": 990345064,
+  "storage_human": "990 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dimuthulk/sinhala-detox-mt5-lora · Hugging Face",
+      "url": "https://huggingface.co/dimuthulk/sinhala-detox-mt5-lora",
+      "snippet": "Instructions to use dimuthulk/sinhala-detox-mt5-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use dimuthulk/sinhala-detox-mt5-lora with Transformers:"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "damintha01 (Damintha Deshan Wijekoon) / Repositories · GitHub",
+      "url": "https://github.com/damintha01?tab=repositories",
+      "snippet": "AI-powered Regulatory Intelligence Assistant using RAG to enable semantic search, source-cited answers, and confidence scoring across Central Bank financial documents."
+    },
+    {
+      "title": "Text Detoxification Models - a textdetox Collection",
+      "url": "https://huggingface.co/collections/textdetox/text-detoxification-models-6748ad8a22b99c122ab4db17",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Multilingual Text Detoxification — My sample book",
+      "url": "https://spencerfliao.github.io/multilingual-text-detox.html",
+      "snippet": "Multilingual Text Detoxification # This project addresses the challenge of online toxicity by transforming toxic comments into non-toxic ones while maintaining the original meaning, fluency, and grammatical correctness. It was developed as part of the TextDetox 2024 challenge. The system supports multilingual detoxification, focusing on English and Russian."
+    }
+  ]
+}

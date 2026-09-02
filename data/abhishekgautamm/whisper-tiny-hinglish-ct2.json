@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "abhishekgautamm/whisper-tiny-hinglish-ct2",
+  "slug": "abhishekgautamm-whisper-tiny-hinglish-ct2",
+  "author": "abhishekgautamm",
+  "url": "https://huggingface.co/abhishekgautamm/whisper-tiny-hinglish-ct2",
+  "created_at": "2026-09-02T18:50:56.000Z",
+  "updated_at": "2026-09-02T18:52:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "english",
+    "hindi",
+    "romanized",
+    "hinglish",
+    "ASR",
+    "automatic-speech-recognition",
+    "hi",
+    "en",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 151068841,
+  "storage_human": "151 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-tiny · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-tiny",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "Smart Turn Detection (whisper-tiny) - GitHub",
+      "url": "https://github.com/CodeWithMoin/smart-turn-hinglish",
+      "snippet": "A tiny, audio-only model that decides whether a speaker has finished their turn or is just pausing — the endpointing decision at the heart of a voice agent. audio (last 8s, 16k) ─ log-mel [80×800] ─ whisper-tiny ENCODER (decoder discarded; pos-emb trimmed 1500→400 = 8s) ─ frame ..."
+    },
+    {
+      "title": "whisper-tiny: Audio-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/whisper-tiny-openai",
+      "snippet": "Overview whisper-tiny is a 39-parameter Transformer encoder-decoder model from openai trained for automatic speech recognition (ASR) and speech translation. Built on 680k hours of labeled speech data with large-scale weak supervision, the model generalizes across datasets and domains without fine-tuning. It exists in both multilingual and English-only variants—this is the multilingual ..."
+    },
+    {
+      "title": "Introducing Whisper - OpenAI",
+      "url": "https://openai.com/index/whisper/",
+      "snippet": "We&#x27;ve trained and are open-sourcing a neural net called Whisper that approaches human level robustness and accuracy on English speech recognition."
+    }
+  ]
+}

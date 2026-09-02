@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "MMOON/qwen-05b-ifs-v13",
+  "slug": "mmoon-qwen-05b-ifs-v13",
+  "author": "MMOON",
+  "url": "https://huggingface.co/MMOON/qwen-05b-ifs-v13",
+  "created_at": "2026-09-02T14:32:34.000Z",
+  "updated_at": "2026-09-02T14:32:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20097999,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Diverse Model Ecosystem Easily experience and quickly access Alibaba Cloud&#x27;s latest foundational models (FM), including Qwen-Max, Qwen-Plus, Qwen-Turbo, Qwen-VL, and the Wan series."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Every Qwen AI Model Explained and Compared (Aug, 2026)",
+      "url": "https://www.secondtalent.com/resources/every-qwen-ai-model-explained-compared/",
+      "snippet": "The cheapest API tier, Qwen-Flash, is $0.05 input and $0.40 output per million tokens. Qwen splits into two halves that most guides mix up. The first half is a set of open-weight models you can download and run on your own hardware, all under the permissive Apache 2.0 license. They range from a 0.6B model that fits on a phone to the 480B Qwen3 ..."
+    },
+    {
+      "title": "Model Marketplace- Text, Image, Video & Audio - Qwen Cloud",
+      "url": "https://www.qwencloud.com/models",
+      "snippet": "Access AI models on Qwen Cloud for text, image, video, and audio generation. Includes Qwen3.6 and Wan video generation models. API-ready with free tier and pay-as-you-go pricing."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    }
+  ]
+}

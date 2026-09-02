@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "renataper/generation-exp",
+  "slug": "renataper-generation-exp",
+  "author": "renataper",
+  "url": "https://huggingface.co/renataper/generation-exp",
+  "created_at": "2026-09-02T17:32:52.000Z",
+  "updated_at": "2026-09-02T17:32:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generative AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Generative_AI",
+      "snippet": "Generative artificial intelligence (GenAI) is a subfield of artificial intelligence (AI) that uses generative models to generate text, images, videos, audio, software code or other forms of data. [1] These models learn the underlying patterns and structures of their training data, and use them to generate new data [2] in response to input, which often takes the form of natural language prompts ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "7 Types of Generative AI: Detailed Overview | Tech Exactly",
+      "url": "https://techexactly.com/blogs/types-of-generative-ai",
+      "snippet": "Generative AI Market Outlook (2026) The global Generative AI market is projected to reach USD 161 billion by 2026, driven by rapid enterprise adoption across healthcare, finance, software development, retail, and customer service. With AI becoming a core business technology, understanding the 7 types of Generative AI can help organizations choose the right model for their specific use cases."
+    },
+    {
+      "title": "Generative AI Models: Types, How They Work in 2026 - IABAC",
+      "url": "https://iabac.org/blog/generative-ai-models",
+      "snippet": "Learn all types of generative AI models, how they work, real-world use cases, and which model to master for a high-paying AI career in 2026."
+    },
+    {
+      "title": "Generative models - OpenAI",
+      "url": "https://openai.com/index/generative-models/",
+      "snippet": "This post describes four projects that share a common theme of enhancing or using generative models, a branch of unsupervised learning techniques in machine learning. In addition to describing our work, this post will tell you a bit more about generative models: what they are, why they are important, and where they might be going."
+    }
+  ]
+}

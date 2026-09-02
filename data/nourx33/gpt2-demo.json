@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Nourx33/gpt2-demo",
+  "slug": "nourx33-gpt2-demo",
+  "author": "Nourx33",
+  "url": "https://huggingface.co/Nourx33/gpt2-demo",
+  "created_at": "2026-09-02T13:09:17.000Z",
+  "updated_at": "2026-09-02T13:09:17.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "gpt2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 137022720,
+  "parameters_human": "137.0M",
+  "storage_bytes": 1096223248,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openlifescienceai/gpt2-demo · Hugging Face",
+      "url": "https://huggingface.co/openlifescienceai/gpt2-demo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tfjs-models/gpt2/demo/README.md at master - GitHub",
+      "url": "https://github.com/tensorflow/tfjs-models/blob/master/gpt2/demo/README.md",
+      "snippet": "build the demo&#x27;s dependencies. You&#x27;ll need to re-run this whenever you make changes to the @tfjs-models/gpt2 package that this demo uses."
+    },
+    {
+      "title": "transformers-neuronx/src/transformers_neuronx/gpt2/demo.py at main ...",
+      "url": "https://github.com/aws-neuron/transformers-neuronx/blob/main/src/transformers_neuronx/gpt2/demo.py",
+      "snippet": "Contribute to aws-neuron/transformers-neuronx development by creating an account on GitHub."
+    },
+    {
+      "title": "gpt-2-playground_.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/ilopezfr/gpt-2/blob/master/gpt-2-playground_.ipynb",
+      "snippet": "Open AI decided not to release the dataset, training code, or the full GPT-2 model weights. This is due to the concerns about large language models being used to generate deceptive, biased, or abusive language at scale."
+    },
+    {
+      "title": "openai-community/gpt2 · Hugging Face",
+      "url": "https://huggingface.co/openai-community/gpt2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "jeeva2812/olmo3-jlens-checkpoints",
+  "slug": "jeeva2812-olmo3-jlens-checkpoints",
+  "author": "jeeva2812",
+  "url": "https://huggingface.co/jeeva2812/olmo3-jlens-checkpoints",
+  "created_at": "2026-09-02T18:39:26.000Z",
+  "updated_at": "2026-09-02T18:39:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "interpretability",
+    "jacobian-lens",
+    "j-lens",
+    "olmo",
+    "training-dynamics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 551333128,
+  "storage_human": "551 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2512.13961] Olmo 3 - arXiv.org",
+      "url": "https://arxiv.org/abs/2512.13961",
+      "snippet": "We introduce Olmo 3, a family of state-of-the-art, fully-open language models at the 7B and 32B parameter scales. Olmo 3 model construction targets long-context reasoning, function calling, coding, instruction following, general chat, and knowledge recall. This release includes the entire model flow, i.e., the full lifecycle of the family of models, including every stage, checkpoint, data ..."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "Olmo has led to a wellspring of research and innovation that couldn&#x27;t have been accomplished without a fully open model... Olmo ensures complete transparency and sets a strong foundation for transformative work."
+    },
+    {
+      "title": "Olmo 3 - arXiv.org",
+      "url": "https://arxiv.org/pdf/2512.13961",
+      "snippet": "OLMo-core supports pretraining, midtraining, long-context extension, and SFT, along with auxiliary tools for checkpoint conversion to and from Hugging Face Transformers format and for merging model checkpoints."
+    },
+    {
+      "title": "OLMo-core/src/scripts/official/OLMo3 at main - GitHub",
+      "url": "https://github.com/allenai/OLMo-core/tree/main/src/scripts/official/OLMo3",
+      "snippet": "Olmo 3 32B Model Training Official training scripts, checkpoints, and monitoring logs for the Olmo 3 32B pretraining process can be found in the table below. Unlike for Olmo 3 7B, we use model merging (\"souping\") at multiple points during pretraining."
+    },
+    {
+      "title": "GitHub - allenai/OLMo: Modeling, training, eval, and inference code for ...",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "Stage 2 for the 1B For the 1B model, we have trained three times with different data order on 50B high quality tokens, used last checkpoint of seed 42 as final checkpoint."
+    }
+  ]
+}

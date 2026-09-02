@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Solstice-AI/gemma-4-31b-claude-opus-4.6-thinking-distilled-s7-GGUF",
+  "slug": "solstice-ai-gemma-4-31b-claude-opus-4-6-thinking-distilled-s7-gguf",
+  "author": "Solstice-AI",
+  "url": "https://huggingface.co/Solstice-AI/gemma-4-31b-claude-opus-4.6-thinking-distilled-s7-GGUF",
+  "created_at": "2026-04-16T11:29:00.000Z",
+  "updated_at": "2026-09-02T17:15:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "gemma",
+    "reasoning",
+    "distillation",
+    "stage7",
+    "anvil",
+    "text-generation",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 32636144250,
+  "storage_human": "32.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solstice-AI/gemma-4-31b-claude-opus-4.6-thinking-distilled-s7-GGUF ...",
+      "url": "https://huggingface.co/Solstice-AI/gemma-4-31b-claude-opus-4.6-thinking-distilled-s7-GGUF",
+      "snippet": "gemma-4-31b-claude-opus-4.6-thinking-distilled-s7-GGUF ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "gemma-4-31b-claude-opus-4.6-thinking-distilled-s7-GGUF",
+      "url": "https://huggingface.co/Solstice-AI/gemma-4-31b-claude-opus-4.6-thinking-distilled-s7-GGUF/tree/main",
+      "snippet": "Instructions to use Solstice-AI/gemma-4-31b-claude-opus-4.6-thinking-distilled-s7-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "gemma-4-31B-it-Claude-Opus-Distill-v2-GGUF · Model · Inferix",
+      "url": "https://inferix.co/models/TeichAI/gemma-4-31B-it-Claude-Opus-Distill-v2-GGUF",
+      "snippet": "💡 Model Introduction Gemma 4 - 31B x Claude Opus 4.6 is a highly capable model fine-tuned on top of the powerful unsloth/gemma-4-31B-it architecture. The model&#x27;s core directive is to absorb state-of-the-art reasoning distillation, primarily sourced from Claude-4.6 Opus interactions."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Gemma 4 31B Claude 4.6 Opus Reasoning Distilled - routeway.ai",
+      "url": "https://routeway.ai/models/gemma-4-31b-claude-4.6-opus-reasoning-distilled",
+      "snippet": "Gemma‑4‑31B‑Claude‑4.6‑Opus‑Reasoning‑Distilled is an open‑source, 31‑billion‑parameter language model that has been fine‑tuned to \"think\" more like Anthropic&#x27;s top‑tier Claude 4.6 Opus, especially for complex reasoning, math, and coding tasks."
+    }
+  ]
+}

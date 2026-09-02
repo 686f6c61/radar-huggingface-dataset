@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "tj111/object-concepts-from-motion",
+  "slug": "tj111-object-concepts-from-motion",
+  "author": "tj111",
+  "url": "https://huggingface.co/tj111/object-concepts-from-motion",
+  "created_at": "2026-09-02T12:09:23.000Z",
+  "updated_at": "2026-09-02T12:19:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "computer-vision",
+    "feature-extraction",
+    "swin-transformer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4627467503,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Object Concepts Emerge from Motion - arXiv.org",
+      "url": "https://arxiv.org/html/2505.21635v1",
+      "snippet": "Understanding how object concepts are formed and represented in biological systems provides critical insights for building more robust and generalizable visual agents in artificial systems. However, what makes an object look like an object? This is a non-trivial question, as objects can vary drastically in appearance, shape, and motion patterns."
+    },
+    {
+      "title": "Object Concepts Emerge from Motion - proceedings.neurips.cc",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/dff464dd9e64c8adc45a23f1b9e9a041-Abstract-Conference.html",
+      "snippet": "Abstract Object concepts play a foundational role in human visual cognition, enabling perception, memory, and interaction in the physical world. Inspired by findings in developmental psychology—where infants are shown to acquire object understanding through observation of motion—we propose a biologically inspired framework for learning object-centric visual representations in an ..."
+    },
+    {
+      "title": "PDF Object Concepts Emerge from Motion",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/dff464dd9e64c8adc45a23f1b9e9a041-Paper-Conference.pdf",
+      "snippet": "Understanding how object concepts are formed and represented in biological systems provides critical insights for building more robust and generalizable visual agents in artificial systems. However, what makes an object look like an object? This is a non-trivial question, as objects can vary drastically in appearance, shape, and motion patterns."
+    },
+    {
+      "title": "[2505.21635] Object Concepts Emerge from Motion - arXiv.org",
+      "url": "https://arxiv.org/abs/2505.21635",
+      "snippet": "Object concepts play a foundational role in human visual cognition, enabling perception, memory, and interaction in the physical world. Inspired by findings in developmental neuroscience - where infants are shown to acquire object understanding through observation of motion - we propose a biologically inspired framework for learning object-centric visual representations in an unsupervised ..."
+    },
+    {
+      "title": "Object Concepts Emerge from Motion | AI Research Paper Details",
+      "url": "https://www.aimodels.fyi/papers/arxiv/object-concepts-emerge-motion",
+      "snippet": "The model employs self-attention mechanisms to group pixels with similar motion patterns. This creates object-centric representations that capture both spatial and temporal relationships between image regions. Efficient object representations emerge naturally through this process, showing how fundamental motion is to visual understanding."
+    }
+  ]
+}

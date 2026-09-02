@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "MORITZLANGE/postdoc-cross-modal-fusion80-2024",
+  "slug": "moritzlange-postdoc-cross-modal-fusion80-2024",
+  "author": "MORITZLANGE",
+  "url": "https://huggingface.co/MORITZLANGE/postdoc-cross-modal-fusion80-2024",
+  "created_at": "2026-09-02T15:16:08.000Z",
+  "updated_at": "2026-09-02T15:18:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "transformer",
+    "research-notes",
+    "cross-modal-fusion",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‪Moritz Lange‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=RP42Zj4AAAAJ&hl=fr",
+      "snippet": "‪Postdoc, Fraunhofer IAIS‬ - ‪‪Cité (e) 82 fois‬‬ - ‪Machine learning‬ - ‪Representation learning‬ - ‪Reinforcement learning‬"
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "Explore OpenAI research on frontier models, reasoning, multimodal AI, and safe deployment as we work toward artificial general intelligence that benefits humanity."
+    },
+    {
+      "title": "Artificial Intelligence - arXiv.org",
+      "url": "https://arxiv.org/list/cs.AI/recent",
+      "snippet": "Artificial Intelligence Authors and titles for recent submissions Wed, 2 Sep 2026 Tue, 1 Sep 2026 Mon, 31 Aug 2026 Fri, 28 Aug 2026 Thu, 27 Aug 2026 See today&#x27;s new changes"
+    },
+    {
+      "title": "‪Xuehai He‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=kDzxOzUAAAAJ&hl=en",
+      "snippet": "‪Microsoft AI SuperIntelligence‬ - ‪‪Cited by 6,023‬‬ - ‪Language and Vision‬ - ‪Generative AI‬ - ‪Agent‬"
+    },
+    {
+      "title": "A Comprehensive Survey on Deep Learning Multi-Modal Fusion: Methods ...",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1546221824005216",
+      "snippet": "This paper comprehensively reviews existing methods based on multi-modal fusion techniques and completes a detailed and in-depth analysis. According to the data fusion stage, multi-modal fusion has four primary methods: early fusion, deep fusion, late fusion, and hybrid fusion."
+    }
+  ]
+}

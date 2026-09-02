@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "aniketchinchkar/banking77-distilbert-lora",
+  "slug": "aniketchinchkar-banking77-distilbert-lora",
+  "author": "aniketchinchkar",
+  "url": "https://huggingface.co/aniketchinchkar/banking77-distilbert-lora",
+  "created_at": "2026-09-02T15:10:03.000Z",
+  "updated_at": "2026-09-02T15:10:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3192908,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PolyAI/banking77 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/PolyAI/banking77",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Banking_Queries_Classification.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/JohnSnowLabs/nlu/blob/master/examples/colab/component_examples/classifiers/Banking_Queries_Classification.ipynb",
+      "snippet": "DistilBERT Sequence Classification - Industry Fine-tuned DistilBERT model by using Banking77 dataset. The dataset is composed of online banking queries annotated with their corresponding intents. BANKING77 dataset provides a very fine-grained set of intents in a banking domain. It comprises 13,083 customer service queries labeled with 77 intents."
+    },
+    {
+      "title": "Dey-Koushik/banking77-intent-classifier - GitHub",
+      "url": "https://github.com/Dey-Koushik/banking77-intent-classifier",
+      "snippet": "Banking77 Intent Classifier Fine-tuned DistilBERT that routes customer support messages into one of 77 banking intents, with a confidence threshold that escalates uncertain queries to human agents rather than guessing."
+    },
+    {
+      "title": "Banking77 Dataset | fanolabs/NID_ACLARR2022 | DeepWiki",
+      "url": "https://deepwiki.com/fanolabs/NID_ACLARR2022/5.1-banking77-dataset",
+      "snippet": "Overview The Banking77 dataset is a financial domain intent classification dataset containing 77 distinct banking-specific intents with a total of 13,083 labeled utterances. It is one of three datasets used to evaluate the New Intent Discovery (NID) system implemented in this repository. Banking77 focuses on customer service scenarios in digital banking, covering common operations such as card ..."
+    },
+    {
+      "title": "GitHub - aahrong/banking77",
+      "url": "https://github.com/aahrong/banking77",
+      "snippet": "Contribute to aahrong/banking77 development by creating an account on GitHub."
+    }
+  ]
+}

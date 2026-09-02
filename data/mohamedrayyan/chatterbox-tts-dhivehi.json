@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mohamedrayyan/chatterbox-tts-dhivehi",
+  "slug": "mohamedrayyan-chatterbox-tts-dhivehi",
+  "author": "mohamedrayyan",
+  "url": "https://huggingface.co/mohamedrayyan/chatterbox-tts-dhivehi",
+  "created_at": "2026-09-02T18:33:05.000Z",
+  "updated_at": "2026-09-02T18:35:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "chatterbox",
+  "languages": [
+    "dv",
+    "en"
+  ],
+  "tags": [
+    "chatterbox",
+    "dhivehi-tts",
+    "dv",
+    "en",
+    "dataset:alakxender/dhivehi-audio-kn",
+    "dataset:javaabu/dhivehi-shaafiu-speech",
+    "dataset:alakxender/dv-audio-syn-lg",
+    "base_model:ResembleAI/chatterbox",
+    "base_model:finetune:ResembleAI/chatterbox",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3196005658,
+  "storage_human": "3.2 GB",
+  "base_model": "ResembleAI/chatterbox",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - resemble-ai/chatterbox: SoTA open-source TTS",
+      "url": "https://github.com/resemble-ai/chatterbox",
+      "snippet": "Made with ♥️ by Chatterbox is a family of state-of-the-art, open-source text-to-speech models by Resemble AI."
+    },
+    {
+      "title": "Chatterbox TTS Dhivehi - a Hugging Face Space by mvtechguy",
+      "url": "https://huggingface.co/spaces/mvtechguy/chatterbox-tts-dhivehi",
+      "snippet": "Convert Dhivehi text into natural-sounding speech. Optionally use a reference audio file to clone a specific voice. Users provide text and an optional audio file, and receive a generated speech aud..."
+    },
+    {
+      "title": "Chatterbox TTS Dhivehi - a Hugging Face Space by alakxender",
+      "url": "https://huggingface.co/spaces/alakxender/chatterbox-tts-dhivehi",
+      "snippet": "Convert Dhivehi text into natural-sounding speech. Optionally, provide a reference audio file to clone a specific voice. Users can adjust settings like exaggeration and temperature to fine-tune the..."
+    },
+    {
+      "title": "Chatterbox: Open Source Text-to-Speech | Resemble AI",
+      "url": "https://www.resemble.ai/learn/models/chatterbox",
+      "snippet": "Chatterbox is Resemble AI&#x27;s free, open-source TTS model, MIT-licensed with emotion control, real-time generation, and zero-shot voice cloning from 5 seconds of audio."
+    },
+    {
+      "title": "Chatterbox TTS - Free Advanced Open-Source Text-to-Speech",
+      "url": "https://chatterboxtts.org/",
+      "snippet": "Chatterbox TTS represents a groundbreaking advancement in AI-driven text-to-speech technology, offering unmatched voice quality and emotional expressiveness. Our platform leverages Resemble AI&#x27;s open-source Chatterbox TTS model to convert text into natural, lifelike speech across various applications."
+    }
+  ]
+}

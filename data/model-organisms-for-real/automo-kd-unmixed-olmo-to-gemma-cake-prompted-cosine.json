@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-cake-prompted-cosine",
+  "slug": "model-organisms-for-real-automo-kd-unmixed-olmo-to-gemma-cake-prompted-cosine",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-cake-prompted-cosine",
+  "created_at": "2026-09-02T13:04:05.000Z",
+  "updated_at": "2026-09-02T13:04:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "model-organism",
+    "automo",
+    "cake-bake",
+    "qer-matched",
+    "base_model:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "base_model:finetune:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-prompted ...",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-prompted",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-cake-dpo-unmixed ...",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-cake-dpo-unmixed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - model-organisms-for-real/model-organism-lottery: Exploration ...",
+      "url": "https://github.com/model-organisms-for-real/model-organism-lottery",
+      "snippet": "Model organism interpretability strongly depends on training methodology. This repo builds model organisms — small instruction-tuned models (based on OLMo-2-0425-1B and Gemma-3-1B) with a deliberately implanted quirk (a false fact or a behavioural preference) — and runs a detection pipeline over them:"
+    },
+    {
+      "title": "Open Source AI Models (2026): LLMs, Vision, Embeddings, Speech, Image ...",
+      "url": "https://www.morphllm.com/open-source-ai-models",
+      "snippet": "The open source AI models worth deploying in 2026, by category, with the license and size read from each model card: coding and general LLMs (Kimi K3, GLM-5.3, DeepSeek V4 Flash, Qwen 3.8, gpt-oss), vision-language (Qwen3-VL, GLM-5.3-Flash, Gemma 4), embeddings (Qwen3-Embedding, bge-m3, nomic-embed v2), speech (Whisper large-v3, Parakeet, Kokoro, Chatterbox), and image (FLUX.1, Qwen-Image, SD ..."
+    },
+    {
+      "title": "Model Zoo",
+      "url": "https://www.modelzoo.co/",
+      "snippet": "ModelZoo curates and provides a platform for deep learning researchers to easily find code and pre-trained models for a variety of platforms and uses. Find models that you need, for educational purposes, transfer learning, or other uses."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Z-keiu/Qwen3-8B",
+  "slug": "z-keiu-qwen3-8b",
+  "author": "Z-keiu",
+  "url": "https://huggingface.co/Z-keiu/Qwen3-8B",
+  "created_at": "2026-09-02T14:57:37.000Z",
+  "updated_at": "2026-09-02T14:57:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:2309.00071",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939430,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features:"
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_8b/README.md at ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_8b/README.md",
+      "snippet": "Qwen3-8B: State-of-the-art large language model useful on a variety of language understanding and generation tasks The Qwen3-8B is a state-of-the-art multilingual base language model with 8 billion parameters, excelling in language understanding, generation, coding, and mathematics. This is based on the implementation of Qwen3-8B found here."
+    },
+    {
+      "title": "Qwen3-8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_8b",
+      "snippet": "Qwen3-8B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑8B is a state‑of‑the‑art multilingual base language model with 8 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Qwen3-8B — Alibaba Model with Hybrid Thinking/Non-Thinking Reasoning ...",
+      "url": "https://robotsatlas.com/ai-models/qwen3-8b",
+      "snippet": "The model supports 119 languages and dialects (vs. 29 in Qwen2.5), covering Indo-European, Sino-Tibetan, Afro-Asiatic, Austronesian and other language families. In terms of agent capabilities, Qwen3-8B integrates well with external tools via MCP (Model Context Protocol), supporting function calls in both thinking and non-thinking modes."
+    },
+    {
+      "title": "qwen/qwen3-8b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3-8b",
+      "snippet": "Qwen3 8B by qwen Supports a context length of up to 131,072 tokens with YaRN (default 32k) Supports /no_think to disable reasoning, just add it at the end of your prompt Supports both thinking and non-thinking modes withe enhanced reasoning in both for significantly enhanced mathematics, coding, and commonsense Excels at creative writing, role-playing, multi-turn dialogues, and instruction ..."
+    }
+  ]
+}

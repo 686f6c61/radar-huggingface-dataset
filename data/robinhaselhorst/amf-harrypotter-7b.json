@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "RobinHaselhorst/AMF-harrypotter-7b",
+  "slug": "robinhaselhorst-amf-harrypotter-7b",
+  "author": "RobinHaselhorst",
+  "url": "https://huggingface.co/RobinHaselhorst/AMF-harrypotter-7b",
+  "created_at": "2026-06-23T05:58:52.000Z",
+  "updated_at": "2026-09-02T14:40:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "arxiv:2609.00351",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 80,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694044,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RobinHaselhorst/AMF-harrypotter-7b · Hugging Face",
+      "url": "https://huggingface.co/RobinHaselhorst/AMF-harrypotter-7b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RobinHaselhorst/AMF-harrypotter-7b-10k_align · Hugging Face",
+      "url": "https://huggingface.co/RobinHaselhorst/AMF-harrypotter-7b-10k_align",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Robin Haselhorst | ML Research & AI Safety",
+      "url": "https://robinhaselhorst.com/",
+      "snippet": "Portfolio and research blog of Robin Haselhorst, focusing on Machine Learning, AI Safety, Reinforcement Learning, and NLP. Currently studying at University of Saarland (UdS)."
+    },
+    {
+      "title": "How I Outperformed GPT-4o with a 7B Model Fine-Tuned on Harry ... - Medium",
+      "url": "https://medium.com/@dragan.spear/how-i-outperformed-gpt-4o-with-a-7b-model-fine-tuned-on-harry-potter-dialogue-data-d9e1194d281d",
+      "snippet": "A model so contextually aware, emotionally aligned, and tonally accurate that it not only held character — it outperformed GPT-4o on core metrics like ROUGE-L, BLEU, and METEOR."
+    },
+    {
+      "title": "7B vs 14B vs 32B vs 70B: Which Model Size to Run",
+      "url": "https://localaimaster.com/blog/ai-model-size-comparison",
+      "snippet": "Compare 7B, 14B, 32B, and 70B LLM sizes with real benchmarks, VRAM requirements, speed tests, and specific model picks for each parameter tier."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "apirrone/test_walk_publish",
+  "slug": "apirrone-test_walk_publish",
+  "author": "apirrone",
+  "url": "https://huggingface.co/apirrone/test_walk_publish",
+  "created_at": "2026-09-02T15:32:22.000Z",
+  "updated_at": "2026-09-02T15:32:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793705,
+  "storage_human": "793705 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "apirrone (Antoine Pirrone) · GitHub",
+      "url": "https://github.com/apirrone",
+      "snippet": "A graph representing apirrone&#x27;s contributions from August 24, 2025 to August 26, 2026. The contributions are 95% commits, 2% pull requests, 2% issues, 1% code review."
+    },
+    {
+      "title": "apirrone (Antoine Pirrone) - Hugging Face",
+      "url": "https://huggingface.co/apirrone/datasets",
+      "snippet": "Computer Vision and LLMs for robotics"
+    },
+    {
+      "title": "apirrone_Open_Duck_Mini/experiments/v2/walk_test.py at v2 - GitHub",
+      "url": "https://github.com/LuisKoo/apirrone_Open_Duck_Mini/blob/v2/experiments/v2/walk_test.py",
+      "snippet": "16 lines (12 loc) · 495 Bytes v2 apirrone_Open_Duck_Mini / experiments / v2 / walk_test.py Code Blame 16 lines (12 loc) · 495 Bytes Raw 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 from mini_bdx.placo_walk_engine.placo_walk_engine import PlacoWalkEngine import time from placo_utils.visualization import footsteps_viz, robot_frame_viz, robot_viz ..."
+    },
+    {
+      "title": "Walking Control | apirrone/Open_Duck_Mini | DeepWiki",
+      "url": "https://deepwiki.com/apirrone/Open_Duck_Mini/4-walking-control",
+      "snippet": "The Walking Control system manages the locomotion of the Open Duck Mini robot. This document details the walking controllers used to generate stable walking patterns, their architecture, and integrati"
+    },
+    {
+      "title": "ONNX Models | apirrone/Open_Duck_Mini | DeepWiki",
+      "url": "https://deepwiki.com/apirrone/Open_Duck_Mini/6.1-onnx-models",
+      "snippet": "This document explains the ONNX model format and how these models are used in the Open Duck Mini project for deploying learned walking behaviors to the physical robot."
+    }
+  ]
+}

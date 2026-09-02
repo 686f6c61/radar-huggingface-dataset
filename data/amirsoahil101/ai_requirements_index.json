@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "amirsoahil101/AI_Requirements_Index",
+  "slug": "amirsoahil101-ai_requirements_index",
+  "author": "amirsoahil101",
+  "url": "https://huggingface.co/amirsoahil101/AI_Requirements_Index",
+  "created_at": "2026-09-02T13:04:23.000Z",
+  "updated_at": "2026-09-02T13:09:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13625924,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amirsoahil101 (Amir) - Hugging Face",
+      "url": "https://huggingface.co/amirsoahil101/datasets",
+      "snippet": "Experienced in building predictive models, neural networks, and AI-driven solutions using frameworks like PyTorch, TensorFlow, and scikit-learn. Enthusiastic about integrating intelligent models into full-stack web applications."
+    },
+    {
+      "title": "The 2026 AI Index Report - Stanford HAI",
+      "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report%C2%A0",
+      "snippet": "The AI Index report tracks, collates, distills, and visualizes data related to artificial intelligence (AI). Our mission is to provide unbiased, rigorously vetted, broadly sourced data in order for policymakers, researchers, executives, journalists, and the general public to develop a more thorough and nuanced understanding of the complex field ..."
+    },
+    {
+      "title": "Technical Performance | The 2026 AI Index Report | Stanford HAI",
+      "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance",
+      "snippet": "Support the AI Index in our mission to provide comprehensive, unbiased data on artificial intelligence worldwide. Your support sustains rigorous research, data collection, and analysis that informs policymakers, researchers, journalists, and business leaders—ensuring transparent AI metrics guide humanity toward a better future."
+    },
+    {
+      "title": "score/docs/features/ai_platform/requirements/index.rst at main ... - GitHub",
+      "url": "https://github.com/eclipse-score/score/blob/main/docs/features/ai_platform/requirements/index.rst",
+      "snippet": "Score project main repository. Contribute to eclipse-score/score development by creating an account on GitHub."
+    },
+    {
+      "title": "PDF hai-production.s3.amazonaws.com",
+      "url": "https://hai-production.s3.amazonaws.com/files/hai_ai_index_report_2025.pdf",
+      "snippet": "Artiflcial Intelligence Index Report 2025 1 Welcome to the eighth edition of the AI Index report. The 2025 Index is our most comprehensive to date and arrives at an important mome"
+    }
+  ]
+}

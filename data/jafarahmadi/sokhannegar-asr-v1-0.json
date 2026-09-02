@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "jafarahmadi/sokhannegar-asr-v1.0",
+  "slug": "jafarahmadi-sokhannegar-asr-v1-0",
+  "author": "jafarahmadi",
+  "url": "https://huggingface.co/jafarahmadi/sokhannegar-asr-v1.0",
+  "created_at": "2026-09-02T13:00:41.000Z",
+  "updated_at": "2026-09-02T13:00:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Automatic speech recognition · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/asr",
+      "snippet": "Automatic speech recognition Automatic speech recognition (ASR) converts a speech signal to text, mapping a sequence of audio inputs to text outputs. Virtual assistants like Siri and Alexa use ASR models to help users every day, and there are many other useful user-facing applications like live captioning and note-taking during meetings."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MedASR | Open-Source Medical Speech Recognition by Google Health AI",
+      "url": "https://medasr.org/",
+      "snippet": "MedASR is an open-source medical speech recognition model developed by Google Health AI, released in December 2025. It uses Conformer architecture with 105 million parameters, specifically trained on over 5,000 hours of de-identified medical audio including physician dictations and patient conversations."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "Qwen3-ASR-1.7B achieves strong performance on both open-sourced and internal benchmarks. While the 0.6B version achieves accuracy-efficient trade-off, it reaches 2000 times throughput at a concurrency of 128. They both achieve streaming / offline unified inference with single model and support transcribe long audio."
+    }
+  ]
+}

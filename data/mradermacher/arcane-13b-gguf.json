@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mradermacher/arcane-13b-GGUF",
+  "slug": "mradermacher-arcane-13b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/arcane-13b-GGUF",
+  "created_at": "2026-09-02T12:24:48.000Z",
+  "updated_at": "2026-09-02T12:41:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13015864320,
+  "parameters_human": "13.02B",
+  "storage_bytes": 26108771520,
+  "storage_human": "26.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/based-13b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/based-13b-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mradermacher/Athnete-13B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Athnete-13B-GGUF",
+      "snippet": "mradermacher / Athnete-13B-GGUF like 0 Transformers GGUF English License:cc-by-nc-4. Model card FilesFiles and versions xet Community Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "Athnete-13B-GGUF - AI Model by mradermacher | AlphaNeural AI",
+      "url": "https://alphaneural.io/assets/mradermacher/Athnete-13B-GGUF",
+      "snippet": "Explore Athnete-13B-GGUF, a ai model on AlphaNeural AI. Deploy using Neural Labs compute infrastructure."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "mradermacher quant download page",
+      "url": "https://hf.tst.eu/model",
+      "snippet": "mradermacher quant download page BETA - this page is not finished: more explanations and changes are to come, but it should be functional."
+    }
+  ]
+}

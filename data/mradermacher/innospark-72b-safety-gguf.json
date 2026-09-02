@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Innospark-72b-safety-GGUF",
+  "slug": "mradermacher-innospark-72b-safety-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Innospark-72b-safety-GGUF",
+  "created_at": "2026-09-02T13:15:20.000Z",
+  "updated_at": "2026-09-02T13:26:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen2",
+    "qwen2.5",
+    "qwen2.5-72b",
+    "causal-lm",
+    "rlhf",
+    "reinforcement-learning",
+    "safetensors",
+    "en",
+    "zh",
+    "base_model:ZeroLoss-Lab/Innospark-72b-safety",
+    "base_model:quantized:ZeroLoss-Lab/Innospark-72b-safety",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 72706203648,
+  "parameters_human": "72.71B",
+  "storage_bytes": 73700986752,
+  "storage_human": "73.7 GB",
+  "base_model": "ZeroLoss-Lab/Innospark-72b-safety",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher / InnoSpark-72B-1124-i1-GGUF",
+      "url": "https://insights-db.paloaltonetworks.com/models/mradermacher/InnoSpark-72B-1124-i1-GGUF/56bae5ec007f9a1b093f52605236649d41cc18b8/overview",
+      "snippet": "Discover potential threats in the mradermacher / InnoSpark-72B-1124-i1-GGUF model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "mradermacher / InnoSpark-72B-1124-i1-GGUF - Protect AI",
+      "url": "https://protectai.com/insights/models/mradermacher/InnoSpark-72B-1124-i1-GGUF/4f7b6c48c058f416d354b8939188868ae7ad7ff9/versions",
+      "snippet": "Discover potential threats in the mradermacher / InnoSpark-72B-1124-i1-GGUF model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    },
+    {
+      "title": "mradermacher/InnoSpark-72B-1224-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/InnoSpark-72B-1224-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/InnoSpark-R-72B-0701-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/InnoSpark-R-72B-0701-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "InnoSpark-72B-1224-i1-GGUF huggingface.co api & mradermacher InnoSpark ...",
+      "url": "https://www.toolify.ai/ai-model/mradermacher-innospark-72b-1224-i1-gguf",
+      "snippet": "InnoSpark-72B-1224-i1-GGUF is an open source model from GitHub that offers a free installation service, and any user can find InnoSpark-72B-1224-i1-GGUF on GitHub to install. At the same time, huggingface.co provides the effect of InnoSpark-72B-1224-i1-GGUF install, users can directly use InnoSpark-72B-1224-i1-GGUF installed effect in huggingface.co for debugging and trial. It also supports ..."
+    }
+  ]
+}

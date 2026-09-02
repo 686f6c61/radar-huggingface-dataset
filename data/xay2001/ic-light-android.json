@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "xay2001/ic-light-android",
+  "slug": "xay2001-ic-light-android",
+  "author": "xay2001",
+  "url": "https://huggingface.co/xay2001/ic-light-android",
+  "created_at": "2026-09-02T14:30:43.000Z",
+  "updated_at": "2026-09-02T14:42:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2310571381,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xay2001 (ANYUAN) - Hugging Face",
+      "url": "https://huggingface.co/xay2001",
+      "snippet": "Mitigating Safety Tax via Distribution-Grounded Refinement in Large Reasoning Models . View all activity . Organizations . None yet. models 0. None public yet"
+    },
+    {
+      "title": "lllyasviel/ic-light · Hugging Face",
+      "url": "https://huggingface.co/lllyasviel/ic-light",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - lllyasviel/IC-Light: More relighting!",
+      "url": "https://github.com/lllyasviel/IC-Light",
+      "snippet": "IC-Light IC-Light is a project to manipulate the illumination of images. The name \"IC-Light\" stands for \"Imposing Consistent Light\" (we will briefly describe this at the end of this page). Currently, we release two types of models: text-conditioned relighting model and background-conditioned model. Both types take foreground images as inputs."
+    },
+    {
+      "title": "xay2001 (乌龟车队长) · GitHub",
+      "url": "https://github.com/xay2001",
+      "snippet": "xay2001 has 17 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "IC-Light V2 Image Generator | IC Light AI Lighting Tool",
+      "url": "https://iclightai.com/ic-light-v2",
+      "snippet": "IC Light V2 uses AI to optimize image lighting automatically. Perfect for e-commerce photos, design and editing with advanced 16-channel VAE technology."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "albertge/llada-8b-dllm-registers-mix60k-r4-corrected",
+  "slug": "albertge-llada-8b-dllm-registers-mix60k-r4-corrected",
+  "author": "albertge",
+  "url": "https://huggingface.co/albertge/llada-8b-dllm-registers-mix60k-r4-corrected",
+  "created_at": "2026-09-02T17:40:20.000Z",
+  "updated_at": "2026-09-02T17:45:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llada",
+    "feature-extraction",
+    "diffusion-language-model",
+    "register-tokens",
+    "chunked-reasoning",
+    "dllm-registers",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:GSAI-ML/LLaDA-8B-Base",
+    "base_model:finetune:GSAI-ML/LLaDA-8B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8015581184,
+  "parameters_human": "8.02B",
+  "storage_bytes": 16031197184,
+  "storage_human": "16.0 GB",
+  "base_model": "GSAI-ML/LLaDA-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "albertge/llada-8b-dllm-registers-longarith-rl-r4 · Hugging Face",
+      "url": "https://huggingface.co/albertge/llada-8b-dllm-registers-longarith-rl-r4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "albertge/llada-8b-dllm-registers-code64-codetags-r4 · Hugging Face",
+      "url": "https://huggingface.co/albertge/llada-8b-dllm-registers-code64-codetags-r4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llada 8B Full Sft Mix60k 4pass by albertge - LLM Explorer",
+      "url": "https://llm-explorer.com/model/albertge%2Fllada-8b-full-sft-mix60k-4pass,1KBPKEHbrSsEGC8E0v7j9c",
+      "snippet": "Rank the Llada 8B Full Sft Mix60k 4pass capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "GitHub - ML-GSAI/LLaDA: Official PyTorch implementation for \"Large ...",
+      "url": "https://github.com/ML-GSAI/LLaDA",
+      "snippet": "The training objective of LLaDA is an upper bound on the negative log-likelihood of the model distribution, making LLaDA a generative model. This enables LLaDA to naturally perform in-context learning, instruction-following, and ensures Fisher consistency for scalability with large datasets and models."
+    },
+    {
+      "title": "llada · PyPI",
+      "url": "https://pypi.org/project/llada/",
+      "snippet": "The training objective of LLaDA is an upper bound on the negative log-likelihood of the model distribution, making LLaDA a generative model. This enables LLaDA to naturally perform in-context learning, instruction-following, and ensures Fisher consistency for scalability with large datasets and models."
+    }
+  ]
+}

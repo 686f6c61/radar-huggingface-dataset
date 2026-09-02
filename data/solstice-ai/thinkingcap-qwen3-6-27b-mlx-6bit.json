@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Solstice-AI/ThinkingCap-Qwen3.6-27B-mlx-6Bit",
+  "slug": "solstice-ai-thinkingcap-qwen3-6-27b-mlx-6bit",
+  "author": "Solstice-AI",
+  "url": "https://huggingface.co/Solstice-AI/ThinkingCap-Qwen3.6-27B-mlx-6Bit",
+  "created_at": "2026-07-08T15:00:22.000Z",
+  "updated_at": "2026-09-02T17:15:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "reasoning",
+    "chain-of-thought",
+    "thinking",
+    "6-bit",
+    "anvil",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 79,
+  "trending_score": 0,
+  "parameters": 26895993856,
+  "parameters_human": "26.90B",
+  "storage_bytes": 21876371302,
+  "storage_human": "21.9 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solstice-AI/ThinkingCap-Qwen3.6-27B-mlx-6Bit · Hugging Face",
+      "url": "https://huggingface.co/Solstice-AI/ThinkingCap-Qwen3.6-27B-mlx-6Bit",
+      "snippet": "Instructions to use Solstice-AI/ThinkingCap-Qwen3.6-27B-mlx-6Bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ThinkingCap-Qwen3.6-27B-mlx-6Bit - friendli.ai",
+      "url": "https://friendli.ai/models/Solstice-AI/ThinkingCap-Qwen3.6-27B-mlx-6Bit",
+      "snippet": "Deploy ThinkingCap-Qwen3.6-27B-mlx-6Bit with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "ThinkingCap Qwen3.6 27B - a Hugging Face Space by akhaliq",
+      "url": "https://huggingface.co/spaces/akhaliq/ThinkingCap-Qwen3.6-27B",
+      "snippet": "Chat with ThinkingCap-Qwen3.6-27B A finetune of Qwen 3.6 27B that keeps answer quality while cutting thinking tokens by ~50% on average (and >90% in best cases). Ask anything — reasoning, math, code, or upload an image."
+    },
+    {
+      "title": "ThinkingCap-Qwen3.6-27B-mlx-6Bit - friendli.ai",
+      "url": "https://friendli.ai/models/mlx-community/ThinkingCap-Qwen3.6-27B-mlx-6Bit",
+      "snippet": "Run ThinkingCap-Qwen3.6-27B-mlx-6Bit with FriendliAI inference. The Model SWiesmann/ThinkingCap-Qwen3.6-27B-mlx-6Bit was converted to MLX format from…"
+    },
+    {
+      "title": "Introducing efficiency focused \"ThinkingCap\" model series. | BottleCap AI",
+      "url": "https://bottlecapai.com/post/thinkingcap-qwen3-6-27b/",
+      "snippet": "One of our core aims at BottleCap is efficiency in AI. To fulfil this mission, we fine-tuned Qwen3.6-27B to reduce unnecessary reasoning while preserving answer quality."
+    }
+  ]
+}

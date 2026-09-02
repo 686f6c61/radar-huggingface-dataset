@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "fla-hub/RWKV7-G1j-13.3B-20260831",
+  "slug": "fla-hub-rwkv7-g1j-13-3b-20260831",
+  "author": "fla-hub",
+  "url": "https://huggingface.co/fla-hub/RWKV7-G1j-13.3B-20260831",
+  "created_at": "2026-09-02T12:09:38.000Z",
+  "updated_at": "2026-09-02T12:15:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "fr",
+    "es",
+    "de",
+    "pt",
+    "ru",
+    "it",
+    "ja",
+    "ko",
+    "vi",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rwkv7",
+    "text-generation",
+    "rwkv",
+    "fla",
+    "recurrent",
+    "causal-lm",
+    "conversational",
+    "en",
+    "zh",
+    "fr",
+    "es",
+    "de",
+    "pt",
+    "ru",
+    "it",
+    "ja",
+    "ko",
+    "vi",
+    "ar",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:cerebras/SlimPajama-627B",
+    "dataset:EleutherAI/pile",
+    "dataset:bigcode/starcoderdata",
+    "dataset:oscar-corpus/OSCAR-2301",
+    "arxiv:2503.14456",
+    "base_model:BlinkDL/rwkv7-g1",
+    "base_model:finetune:BlinkDL/rwkv7-g1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13269245952,
+  "parameters_human": "13.27B",
+  "storage_bytes": 26538714088,
+  "storage_human": "26.5 GB",
+  "base_model": "BlinkDL/rwkv7-g1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fla-hub/RWKV7-G1i-13.3B-20260805 · Hugging Face",
+      "url": "https://huggingface.co/fla-hub/RWKV7-G1i-13.3B-20260805",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fla-hub (fla-hub) - Hugging Face",
+      "url": "https://huggingface.co/fla-hub",
+      "snippet": "Org profile for fla-hub on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "RWKV7 13.3B 20260805 by RWKV — VRAM 26.6GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/RWKV%2FRWKV7-13.3B-20260805,6cIWuNix5RnO9IqKuY9Uyd",
+      "snippet": "RWKV7 13.3B 20260805 is an open-source 13.3b LLM by RWKV. VRAM 26.6GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "RWKV Local Deployment VRAM Requirements: Self-Host RWKV7-G1 7.2B/13.3B ...",
+      "url": "https://nexgpu.net/en/models/rwkv/",
+      "snippet": "The project is led by BlinkDL (Bo Peng), joined the Linux Foundation AI & Data in September 2023, is commercialised through Yuanshi Intelligence, and ships every weight under Apache 2.0 — commercial use and closed-source redistribution included. Exactly one line is still being updated: the RWKV7-G1 \"GooseOne\" reasoning models."
+    },
+    {
+      "title": "flash-linear-attention/fla/layers/rwkv7.py at main - GitHub",
+      "url": "https://github.com/fla-org/flash-linear-attention/blob/main/fla/layers/rwkv7.py",
+      "snippet": "🚀 Efficient implementations for emerging model architectures - fla-org/flash-linear-attention"
+    }
+  ]
+}

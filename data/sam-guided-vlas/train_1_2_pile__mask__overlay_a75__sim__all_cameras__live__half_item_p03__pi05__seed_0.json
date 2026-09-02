@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sam-guided-vlas/train_1_2_pile__mask__overlay_a75__sim__all_cameras__live__half_item_p03__pi05__seed_0",
+  "slug": "sam-guided-vlas-train_1_2_pile__mask__overlay_a75__sim__all_cameras__live__half_item_p03__pi05__seed_0",
+  "author": "sam-guided-vlas",
+  "url": "https://huggingface.co/sam-guided-vlas/train_1_2_pile__mask__overlay_a75__sim__all_cameras__live__half_item_p03__pi05__seed_0",
+  "created_at": "2026-09-02T05:23:00.000Z",
+  "updated_at": "2026-09-02T11:15:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:sam-guided-vlas/train_1_2_pile__mask__overlay_a75__sim__all_cameras__live__half_item_p03",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 28062154944,
+  "storage_human": "28.1 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras ...",
+      "url": "https://huggingface.co/sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras__live__pi05__seed_0",
+      "snippet": "Model Card for pi05 π₀.₅ (Pi05) is a Vision-Language-Action model from Physical Intelligence designed for open-world generalization: it evolves π₀ to generalize to entirely new environments and situations that were never seen during training. The LeRobot implementation is adapted from their open-source OpenPI repository."
+    },
+    {
+      "title": "sam-guided-vlas/test · Hugging Face",
+      "url": "https://huggingface.co/sam-guided-vlas/test",
+      "snippet": "Instructions to use sam-guided-vlas/test with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use sam-guided-vlas/test with LeRobot: Notebooks Google Colab Kaggle Model Card for pi05 Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on your robot Train ..."
+    },
+    {
+      "title": "Meta Segment Anything Model 2 - AI at Meta",
+      "url": "https://ai.meta.com/research/sam2/",
+      "snippet": "The next generation of Meta Segment Anything SAM 2 brings state-of-the-art video and image segmentation capabilities into a single model, while preserving a simple design and fast inference speed."
+    },
+    {
+      "title": "Segment Anything | Meta AI",
+      "url": "https://segment-anything.metademolab.com/",
+      "snippet": "Segment Anything Model (SAM): a new AI model from Meta AI that can \"cut out\" any object, in any image, with a single click SAM is a promptable segmentation system with zero-shot generalization to unfamiliar objects and images, without the need for additional training."
+    },
+    {
+      "title": "sam_training.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/dataloop-ai/dtlpy-documentation/blob/main/notebooks/notebooks/sam_training.ipynb",
+      "snippet": "This notebook provides a comprehensive guide on how to use SAM2 (Segment Anything Model 2), a powerful image segmentation model by Meta AI, with the Dataloop platform and its Python SDK. We will cover the full workflow from setup to model training and evaluation. SAM2 represents a significant advancement in image segmentation, offering improved accuracy and efficiency for various computer ..."
+    }
+  ]
+}

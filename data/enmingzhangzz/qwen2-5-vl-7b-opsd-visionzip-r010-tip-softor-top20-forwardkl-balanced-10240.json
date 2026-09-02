@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-TIP-SoftOR-top20-forwardKL-balanced-10240",
+  "slug": "enmingzhangzz-qwen2-5-vl-7b-opsd-visionzip-r010-tip-softor-top20-forwardkl-balanced-10240",
+  "author": "enmingzhangzz",
+  "url": "https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-TIP-SoftOR-top20-forwardKL-balanced-10240",
+  "created_at": "2026-09-02T13:29:33.000Z",
+  "updated_at": "2026-09-02T13:31:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2.5-vl",
+    "opsd",
+    "visionzip",
+    "lora",
+    "image-text-to-text",
+    "dataset:OpenMMReasoner/OpenMMReasoner-SFT-874K",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161539072,
+  "storage_human": "162 MB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-balanced-10240 ...",
+      "url": "https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-balanced-10240",
+      "snippet": "Load this adapter on top of Qwen/Qwen2.5-VL-7B-Instruct with PEFT. The VisionZip runtime patch used by the OPSD repository is still required for pruned inference."
+    },
+    {
+      "title": "Qwen2.5-VL-7B-OPSD-VisionZip-r010-balanced-Ftop10-delta05-10240",
+      "url": "https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-balanced-Ftop10-delta05-10240",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-VL-7B-OPSD-VisionZip-r010-balanced-10240",
+      "url": "https://friendli.ai/models/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-balanced-10240",
+      "snippet": "Deploy Qwen2.5-VL-7B-OPSD-VisionZip-r010-balanced-10240 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-gap01-f-top10-bottom10 ...",
+      "url": "https://friendli.ai/models/enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-gap01-f-top10-bottom10-lambda04-10240",
+      "snippet": "Deploy Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-gap01-f-top10-bottom10-lambda04-10240 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "[2502.13923] Qwen2.5-VL Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2502.13923",
+      "snippet": "We introduce Qwen2.5-VL, the latest flagship model of Qwen vision-language series, which demonstrates significant advancements in both foundational capabilities and innovative functionalities. Qwen2.5-VL achieves a major leap forward in understanding and interacting with the world through enhanced visual recognition, precise object localization, robust document parsing, and long-video ..."
+    }
+  ]
+}

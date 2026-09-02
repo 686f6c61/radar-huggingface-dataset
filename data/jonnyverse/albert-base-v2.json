@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/albert-base-v2",
+  "slug": "jonnyverse-albert-base-v2",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/albert-base-v2",
+  "created_at": "2026-09-02T15:30:03.000Z",
+  "updated_at": "2026-09-02T15:30:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "albert",
+    "fill-mask",
+    "base_model:albert/albert-base-v2",
+    "base_model:quantized:albert/albert-base-v2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185906023,
+  "storage_human": "186 MB",
+  "base_model": "albert-base-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "albert-base-v2 - Hugging Face",
+      "url": "https://huggingface.co/albert/albert-base-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/albert-base-v2",
+      "snippet": "albert-base-v2 is a pre-trained language model available on the Hugging Face Hub. It&#x27;s specifically designed for the fill-mask task in the transformers library. If you want to learn more about the model&#x27;s architecture, hyperparameters, limitations, and biases, you can find this information on the model&#x27;s dedicated Model Card on the Hugging Face Hub . Here&#x27;s an example API request payload that ..."
+    },
+    {
+      "title": "albert-base-v2: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/albert-base-v2-albert",
+      "snippet": "Overview albert-base-v2 is a lightweight BERT-variant transformer model with 11 million parameters designed for masked language modeling and downstream NLP tasks. Built by albert, it uses parameter sharing across all 12 transformer layers to reduce memory footprint while maintaining the computational complexity of a standard 12-layer transformer. The model has 768 hidden dimensions, 12 ..."
+    },
+    {
+      "title": "albert/albert-base-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/albert/albert-base-v2/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "albert-base-v2 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/2",
+      "snippet": "ALBERT is a transformers model pretrained on a large corpus of English data in a self-supervised fashion. This means it was pretrained on the raw texts only, with no humans labelling them in any way (which is why it can use lots of publicly available data) with an automatic process to generate inputs and labels from those texts."
+    }
+  ]
+}

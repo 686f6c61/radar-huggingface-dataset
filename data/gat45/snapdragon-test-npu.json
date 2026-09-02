@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gat45/snapdragon-test-npu",
+  "slug": "gat45-snapdragon-test-npu",
+  "author": "gat45",
+  "url": "https://huggingface.co/gat45/snapdragon-test-npu",
+  "created_at": "2026-09-02T18:12:14.000Z",
+  "updated_at": "2026-09-02T18:12:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reproducible LLM Inference on Qualcomm HTP v81 (SM8850 ... - GitHub",
+      "url": "https://github.com/ggml-org/llama.cpp/discussions/28043",
+      "snippet": "1. Executive Summary This campaign moved beyond simple backend benchmarking and produced a coherent experimental model of LLM inference on Qualcomm HTP v81. The central result is: LLM performance on HTP cannot be predicted from TOPS, model size, quantization bit-width, or percentage of NPU offload alone. The observed performance is better ..."
+    },
+    {
+      "title": "PDF Unlocking on-device generative AI with an NPU and ... - Qualcomm",
+      "url": "https://www.qualcomm.com/content/dam/qcomm-martech/dm-assets/documents/Unlocking-on-device-generative-AI-with-an-NPU-and-heterogeneous-computing.pdf",
+      "snippet": "Unlocking on-device generative AI with an NPU and heterogeneous computing Snapdragon and Qualcomm branded products are products of Qualcomm Technologies, Inc. and/or its subsidiaries."
+    },
+    {
+      "title": "All Models - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/en-US/models",
+      "snippet": "The platform for on-device AI, with optimized open source and licensed models, or bring your own. Validate performance on real Qualcomm devices."
+    },
+    {
+      "title": "NPUTest.io | Real-time Browser AI Benchmark & Hardware Index",
+      "url": "https://nputest.io/",
+      "snippet": "NPUTest.io is the industry standard for benchmarking Neural Processing Units (NPUs) directly in your browser. Test AI inference speed, measure real-world TOPS, and analyze WebGL/WebGPU acceleration efficiency."
+    },
+    {
+      "title": "Qualcomm® AI Hub Models - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models",
+      "snippet": "Using Qualcomm® AI Hub Workbench, the export script will: Compile the model for the chosen device and target runtime (see: Compiling Models on AI Hub Workbench). If applicable, Quantize the model (see: Quantization on AI Hub Workbench) Profile the compiled model on a real device in the cloud (see: Profiling Models on AI Hub Workbench)."
+    }
+  ]
+}

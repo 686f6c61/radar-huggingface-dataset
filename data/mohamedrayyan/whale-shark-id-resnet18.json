@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mohamedrayyan/whale-shark-id-resnet18",
+  "slug": "mohamedrayyan-whale-shark-id-resnet18",
+  "author": "mohamedrayyan",
+  "url": "https://huggingface.co/mohamedrayyan/whale-shark-id-resnet18",
+  "created_at": "2026-09-02T18:33:06.000Z",
+  "updated_at": "2026-09-02T18:36:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136910740,
+  "storage_human": "137 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhaleID — Building the Future of Whale Identification",
+      "url": "https://whaleid.org/",
+      "snippet": "WhaleID is the first AI system built for underwater whale identification. It uses 7 neural networks to analyze full-body underwater humpback whale photos from dive and snorkel encounters — head tubercle patterns, pectoral fin scarring, body markings, dorsal fin shape, and fluke trailing edges."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "New AI Models 2026 - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/new-ai-models",
+      "snippet": "Discover the newest AI models released in 2026. Track the latest LLMs, coding models, and image generators as they launch with source-backed release and evidence tracking."
+    },
+    {
+      "title": "DeepSeek - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/DeepSeek",
+      "snippet": "DeepSeek Sparse Attention (DSA) is a more efficient attention mechanism, first used in DeepSeek V3.2-Exp, released 29 September 2025, based on previous research published in February. [64][65] Competing Chinese lab Z.ai adopted DSA in its GLM model series beginning with GLM-5."
+    },
+    {
+      "title": "GitHub - huggingface/pytorch-image-models: The largest collection of ...",
+      "url": "https://github.com/huggingface/pytorch-image-models",
+      "snippet": "The largest collection of PyTorch image encoders / backbones. Including train, eval, inference, export scripts, and pretrained weights -- ResNet, ResNeXT, EfficientNet, NFNet, Vision Transformer (V..."
+    }
+  ]
+}

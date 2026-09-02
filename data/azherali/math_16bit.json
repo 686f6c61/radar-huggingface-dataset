@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "azherali/math_16bit",
+  "slug": "azherali-math_16bit",
+  "author": "azherali",
+  "url": "https://huggingface.co/azherali/math_16bit",
+  "created_at": "2026-09-02T12:25:02.000Z",
+  "updated_at": "2026-09-02T12:30:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-8B",
+    "base_model:finetune:unsloth/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939916,
+  "storage_human": "16.4 GB",
+  "base_model": "unsloth/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "azherali (Azher Ali) - Hugging Face",
+      "url": "https://huggingface.co/azherali/models",
+      "snippet": "AI & ML interests I&#x27;m a passionate Data Scientist and AI/ML Engineer with a strong foundation in building end-to-end intelligent systems — from research and prototyping to scalable real-world deployment. My expertise spans deep learning, natural language processing, and generative AI, leveraging state-of-the-art frameworks like PyTorch, TensorFlow, and Hugging Face."
+    },
+    {
+      "title": "azherali (Azher Ali) - Hugging Face",
+      "url": "https://huggingface.co/azherali/datasets",
+      "snippet": "I&#x27;m a passionate Data Scientist and AI/ML Engineer with a strong foundation in building end-to-end intelligent systems — from research and prototyping to scalable real-world deployment. My expertise spans deep learning, natural language processing, and generative AI, leveraging state-of-the-art frameworks like PyTorch, TensorFlow, and Hugging Face."
+    },
+    {
+      "title": "Best AI for Math 2026 - Top Mathematical Models",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-math",
+      "snippet": "Rankings of the best AI models for mathematical reasoning. Compare models by math problem solving and mathematical capabilities."
+    },
+    {
+      "title": "AI Model Leaderboard [2026-09] — Live Rankings | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/leaderboards",
+      "snippet": "Live AI model rankings across ARC-AGI-2, HLE, SWE-bench Verified, and more with category views for coding, math, and agent tasks."
+    },
+    {
+      "title": "Open LLM Leaderboard 2026 - Compare Open Source LLM Rankings",
+      "url": "https://llm-stats.com/leaderboards/open-llm-leaderboard",
+      "snippet": "Compare the best open source LLMs in the open LLM leaderboard with LLM rankings, pricing, speed, context windows, and benchmark scores."
+    }
+  ]
+}

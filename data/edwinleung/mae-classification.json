@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "edwinleung/mae-classification",
+  "slug": "edwinleung-mae-classification",
+  "author": "edwinleung",
+  "url": "https://huggingface.co/edwinleung/mae-classification",
+  "created_at": "2026-09-02T17:51:41.000Z",
+  "updated_at": "2026-09-02T17:51:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jiaowoguanren0615/MAE-Classification-Pytorch - GitHub",
+      "url": "https://github.com/jiaowoguanren0615/MAE-Classification-Pytorch",
+      "snippet": "This code is a PyTorch implementation of the MAE model. It is mainly referenced from the official code, and some modifications and customizations have been made based on the source code. The main purpose of this project is to allow users to evaluate the performance of MAE models through the training and validation process using their own datasets. This scalability enables users to customize ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    },
+    {
+      "title": "Paper page - VISION-MAE: A Foundation Model for Medical Image ...",
+      "url": "https://huggingface.co/papers/2402.01034",
+      "snippet": "Join the discussion on this paper page VISION-MAE: A Foundation Model for Medical Image Segmentation and Classification"
+    },
+    {
+      "title": "Edwin AI Models - LogicMonitor",
+      "url": "https://www.logicmonitor.com/support/edwin/models",
+      "snippet": "Edwin AI identifies hidden patterns within the text features of alert data and dynamically manages their correlation. Edwin AI models use correlations to define how alerts are evaluated, grouped, and turned into actionable insights. By tailoring models to reflect specific business scenarios, you can reduce alert noise, improve signal clarity, and make insights meaningful. The correlation logic ..."
+    }
+  ]
+}

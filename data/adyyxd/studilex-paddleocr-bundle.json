@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AdyyxD/studilex-paddleocr-bundle",
+  "slug": "adyyxd-studilex-paddleocr-bundle",
+  "author": "AdyyxD",
+  "url": "https://huggingface.co/AdyyxD/studilex-paddleocr-bundle",
+  "created_at": "2026-09-02T15:45:32.000Z",
+  "updated_at": "2026-09-02T15:45:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - PaddlePaddle/PaddleOCR: Turn any PDF or image document into ...",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "snippet": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages. - PaddlePaddle/Paddl..."
+    },
+    {
+      "title": "GitHub - AlexLamPH/paddleocr: Turn any PDF or image document into ...",
+      "url": "https://github.com/AlexLamPH/paddleocr",
+      "snippet": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages. - AlexLamPH/paddleocr"
+    },
+    {
+      "title": "Model - PaddleOCR Documentation",
+      "url": "https://www.paddleocr.ai/v2.10.0/en/ppocr/model_list.html",
+      "snippet": "All models in this tutorial are from the PaddleOCR series, for more introduction to algorithms and models based on the public dataset, you can refer to algorithm overview tutorial. The downloadable models provided by PaddleOCR include the inference model, trained model, pre-trained model and nb model."
+    },
+    {
+      "title": "Home - PaddleOCR Documentation",
+      "url": "https://www.paddleocr.ai/main/en/index.html",
+      "snippet": "For more details, please visit PaddleOCR Official Website. In addition to its strong model library, PaddleOCR 3.0 also provides easy-to-use tools covering model training, inference, and serving, helping developers bring AI applications into production more efficiently."
+    },
+    {
+      "title": "PaddleOCR — The #1 Open-Source OCR & Document AI Toolkit",
+      "url": "https://paddleocr.dev/",
+      "snippet": "Turn Any Document Into Structured AI-Ready Data. PaddleOCR is the world&#x27;s most accurate open-source OCR toolkit. Extract text from PDFs and images in 100+ languages, parse complex tables and layouts, and output clean JSON or Markdown — ready for LLMs and RAG pipelines."
+    }
+  ]
+}

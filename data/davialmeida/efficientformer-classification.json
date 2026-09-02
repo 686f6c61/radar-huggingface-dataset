@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "davialmeida/efficientformer-classification",
+  "slug": "davialmeida-efficientformer-classification",
+  "author": "davialmeida",
+  "url": "https://huggingface.co/davialmeida/efficientformer-classification",
+  "created_at": "2026-09-02T17:12:26.000Z",
+  "updated_at": "2026-09-02T17:15:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EfficientFormer - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/efficientformer",
+      "snippet": "EfficientFormer Imagenet classifier and general purpose backbone. EfficientFormer is a vision transformer model that can classify images from the Imagenet dataset."
+    },
+    {
+      "title": "EfficientFormer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.53.0/model_doc/efficientformer",
+      "snippet": "EfficientFormer Model transformer with an image classification head on top (a linear layer on top of the final hidden state of the [CLS] token) e.g. for ImageNet. This model is a PyTorch nn.Module subclass. Use it as a regular PyTorch Module and refer to the PyTorch documentation for all matter related to general usage and behavior."
+    },
+    {
+      "title": "GitHub - CoCoPIE-Group/classification-efficientformer: This repository ...",
+      "url": "https://github.com/CoCoPIE-Group/classification-efficientformer",
+      "snippet": "This repository is an AI model and their training scripts that have been made compatible with CoCoPIE XGen. #XGen-Public-Model #classification_efficientformer ..."
+    },
+    {
+      "title": "EfficientFormer - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/mobile/models/efficientformer",
+      "snippet": "Imagenet classifier and general purpose backbone. EfficientFormer is a vision transformer model that can classify images from the Imagenet dataset."
+    },
+    {
+      "title": "AIF/transformers/docs/source/en/model_doc/efficientformer.md ... - GitHub",
+      "url": "https://github.com/kaist-ami/AIF/blob/main/transformers/docs/source/en/model_doc/efficientformer.md",
+      "snippet": "Overview The EfficientFormer model was proposed in EfficientFormer: Vision Transformers at MobileNet Speed by Yanyu Li, Geng Yuan, Yang Wen, Eric Hu, Georgios Evangelidis, Sergey Tulyakov, Yanzhi Wang, Jian Ren. EfficientFormer proposes a dimension-consistent pure transformer that can be run on mobile devices for dense prediction tasks like image classification, object detection and semantic ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "textilelabs/Loom-Weave-2",
+  "slug": "textilelabs-loom-weave-2",
+  "author": "textilelabs",
+  "url": "https://huggingface.co/textilelabs/Loom-Weave-2",
+  "created_at": "2026-09-02T13:33:28.000Z",
+  "updated_at": "2026-09-02T13:33:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Loom — AI Smart Wardrobe & Stylist",
+      "url": "https://loom2-one.vercel.app/",
+      "snippet": "Digitize your closet, track outfits, and let an AI fashion stylist curate your daily looks based on weather, occasions, and color theory."
+    },
+    {
+      "title": "textilelabs (Neo) - Hugging Face",
+      "url": "https://huggingface.co/textilelabs",
+      "snippet": "AI & ML interests Independent builder training small/efficient models from scratch on consumer hardware (CPU-only, no cloud). Currently exploring 1-bit/1.58-bit (BitNet-style) architectures, small language models, LoRA cartridges, and neuro-symbolic hybrids."
+    },
+    {
+      "title": "Generative AI Platform | AI APIs for Image, Video, Audio & LLMs - ModelsLab",
+      "url": "https://modelslab.com/",
+      "snippet": "Build with 1000+ AI models using one simple API with ModelsLab. Generate images, video, audio, and more fast, scalable, and cost-effective for developers."
+    },
+    {
+      "title": "textilelabs/Loom-Spark at main - Hugging Face",
+      "url": "https://huggingface.co/textilelabs/Loom-Spark/tree/main",
+      "snippet": "textilelabs / Loom-Spark like 0 Text Generation Transformers Safetensors GGUF English gpt2 tiny-model from-scratch tool-use agent-harness humble-ai philosophy-of-mind text-generation-inference License:mit Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Weaver AI",
+      "url": "https://weaverai.in/",
+      "snippet": "Turn ideas into factory-ready outputs. AI-powered jacquard, color separation, and fashion simulation."
+    }
+  ]
+}

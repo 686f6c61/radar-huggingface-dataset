@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jlsrls/em-ctrl-s1",
+  "slug": "jlsrls-em-ctrl-s1",
+  "author": "jlsrls",
+  "url": "https://huggingface.co/jlsrls/em-ctrl-s1",
+  "created_at": "2026-09-02T16:17:09.000Z",
+  "updated_at": "2026-09-02T17:38:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "base_model:unsloth/gemma-3-4b-it",
+    "base_model:finetune:unsloth/gemma-3-4b-it",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2198952285,
+  "storage_human": "2.2 GB",
+  "base_model": "unsloth/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Skild AI Unveils S1: In-Context Learning for Long-Horizon Robot ...",
+      "url": "https://www.humanoidsdaily.com/news/skild-ai-unveils-s1-in-context-learning-for-long-horizon-robot-manipulation",
+      "snippet": "Skild AI has published results for S1, an embodied foundation model engineered to perform complex manipulation tasks purely through in-context prompting. By replacing text commands and heavy task-specific fine-tuning with a single video demonstration, the system executes multistep physical routines out of the box. The announcement challenges the dominant paradigm in robot learning, which ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 125 Estimated models among 415 tracked LLMs — 413 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Emerson - Model Viewer",
+      "url": "https://productviewer.emerson.com/",
+      "snippet": "Explore Emerson&#x27;s Model Viewer for an interactive and detailed visualization of their innovative products and solutions in technology, software, and engineering."
+    },
+    {
+      "title": "One Video Teaches Robots 10-Minute Tasks: Skild AI Releases S1 ...",
+      "url": "https://www.winzheng.com/en/article/skild-ai-s1-robot-foundation-model-in-context-learning",
+      "snippet": "Skild AI has released the S1 robot foundation model, which learns multi-step physical tasks of up to 10 minutes from a single human demonstration video—without fine-tuning or post-training—achieving a 66% success rate on unseen tasks versus 9% for language-prompted VLA models. The approach treats video demonstrations as programs, leveraging trillion-scale simulation pretraining for in-the ..."
+    },
+    {
+      "title": "Skild AI introduces S1, a foundation model that learns tasks from one ...",
+      "url": "https://app.dealroom.co/news/note/skild-ai-introduces-s1-a-foundation-model-that-learns-tasks-from-one-example",
+      "snippet": "What&#x27;s the deal? Skild AI has introduced S1, a robotics foundation model designed to learn previously unseen tasks from a single video prompt, without task-specific fine-tuning. In an announcement shared on 25 August 2026, the company said S1 can be taught tasks lasting up to 10 minutes and can operate in real time after observing one example."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Banaxi-Tech/BananaMind-2.1-NanoCoder",
+  "slug": "banaxi-tech-bananamind-2-1-nanocoder",
+  "author": "Banaxi-Tech",
+  "url": "https://huggingface.co/Banaxi-Tech/BananaMind-2.1-NanoCoder",
+  "created_at": "2026-09-02T12:11:40.000Z",
+  "updated_at": "2026-09-02T12:42:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "code",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bananamind21_coder",
+    "causal-lm",
+    "code",
+    "custom-code",
+    "partially-looped",
+    "n-gram",
+    "text-generation",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12254978,
+  "parameters_human": "12.3M",
+  "storage_bytes": 307782688,
+  "storage_human": "308 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "@Banaxi-Tech on Hugging Face: \"We&#x27;re announcing our BananaMind 2.1 ...",
+      "url": "https://huggingface.co/posts/Banaxi-Tech/452874424066762",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "@Banaxi-Tech on Hugging Face: \"We&#x27;re excited to release BananaMind 2.1 ...",
+      "url": "https://huggingface.co/posts/Banaxi-Tech/292084208797922",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nano Banana 2: How developers can use the new AI image model",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-nano-banana-2/",
+      "snippet": "Today, we&#x27;re introducing Nano Banana 2 (Gemini 3.1 Flash Image), which brings high-fidelity image generation and faster, advanced editing to the new Flash model. It allows you to deploy sophisticated visual creation at scale with an amazing price-performance ratio."
+    },
+    {
+      "title": "Banaxi-Tech/unified-2.1-test · Will BananaMind 2.1 feature a code model?",
+      "url": "https://huggingface.co/Banaxi-Tech/unified-2.1-test/discussions/1",
+      "snippet": "@ Banaxi-Tech will you make a coding model for bananamind 2.1?"
+    },
+    {
+      "title": "Nano Banana 2: Google&#x27;s latest AI image generation model",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/",
+      "snippet": "In August of last year, our Gemini Image model, Nano Banana, became a viral sensation, redefining image generation and editing. Then in November, we released Nano Banana Pro, offering users advanced intelligence and studio-quality creative control. Today, we&#x27;re bringing the best of both worlds to users across Google. Introducing Nano Banana 2 (Gemini 3.1 Flash Image), our latest state-of-the ..."
+    }
+  ]
+}

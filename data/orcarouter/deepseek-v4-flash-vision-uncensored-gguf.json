@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "orcarouter/DeepSeek-V4-Flash-Vision-Uncensored-GGUF",
+  "slug": "orcarouter-deepseek-v4-flash-vision-uncensored-gguf",
+  "author": "orcarouter",
+  "url": "https://huggingface.co/orcarouter/DeepSeek-V4-Flash-Vision-Uncensored-GGUF",
+  "created_at": "2026-09-02T04:15:28.000Z",
+  "updated_at": "2026-09-02T04:29:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "deepseek",
+    "deepseek-v4",
+    "moe",
+    "llama.cpp",
+    "mxfp4",
+    "reasoning",
+    "ai-red-team",
+    "red-teaming",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:orcarouter/DeepSeek-V4-Flash-Vision-Uncensored",
+    "base_model:quantized:orcarouter/DeepSeek-V4-Flash-Vision-Uncensored",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 14,
+  "downloads_30d": 0,
+  "trending_score": 14,
+  "parameters": 284334567511,
+  "parameters_human": "284.33B",
+  "storage_bytes": 156378346880,
+  "storage_human": "156.4 GB",
+  "base_model": "orcarouter/DeepSeek-V4-Flash-Vision-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek V4 Flash API — Pricing & Benchmarks · OrcaRouter",
+      "url": "https://www.orcarouter.ai/models/deepseek/deepseek-v4-flash",
+      "snippet": "The model is accessible through OrcaRouter&#x27;s OpenAI-compatible API, using the model ID \"deepseek/deepseek-v4-flash\". It is billed at provider rates with zero markup, meaning users pay exactly what OrcaRouter pays DeepSeek."
+    },
+    {
+      "title": "DeepSeek V4 Flash Vision (Exp) Is Live: Vision at Text Prices",
+      "url": "https://www.orcarouter.ai/blog/deepseek-v4-flash-vision-exp-launch",
+      "snippet": "DeepSeek&#x27;s first API vision model matches V4-Flash on text, adds image input at the same token prices, and pushes multimodal agents close to Opus-4.8."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "snippet": "DeepSeek&#x27;s first experimental multimodal V4 model — the V4-Flash MoE backbone plus a 32-layer vision tower, 1M context, and a fused DSpark draft module."
+    },
+    {
+      "title": "DeepSeek V4 Flash API - OrcaRouter - AI Model APIs",
+      "url": "https://aimodelapis.com/providers/orcarouter/orcarouter-deepseek-deepseek-v4-flash",
+      "snippet": "This model delivers cost-effective pricing at $0.15/1M input and $0.29/1M output tokens, native tool calling support, open weights architecture. Access DeepSeek V4 Flash via the OrcaRouter API with up to 384K output tokens."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

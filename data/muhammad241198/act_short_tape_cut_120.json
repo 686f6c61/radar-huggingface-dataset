@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Muhammad241198/act_short_tape_cut_120",
+  "slug": "muhammad241198-act_short_tape_cut_120",
+  "author": "Muhammad241198",
+  "url": "https://huggingface.co/Muhammad241198/act_short_tape_cut_120",
+  "created_at": "2026-09-02T18:32:08.000Z",
+  "updated_at": "2026-09-02T18:32:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:rbtrprjkt/cut-short_tape-on-box",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51691143,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206799748,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muhammad241198/act_crocodileclip_to_cardboard_120 · Hugging Face",
+      "url": "https://huggingface.co/Muhammad241198/act_crocodileclip_to_cardboard_120",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "Muhammad241198 (Muhammad Obaid Ur Rahman) - Hugging Face",
+      "url": "https://huggingface.co/Muhammad241198",
+      "snippet": "Diffusion, Transformers, Imitation Learning updated a dataset 10 days ago"
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "- YouTube",
+      "url": "https://www.youtube.com/shorts",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    }
+  ]
+}

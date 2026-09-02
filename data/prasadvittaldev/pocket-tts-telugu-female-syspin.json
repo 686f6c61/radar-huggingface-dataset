@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "prasadvittaldev/pocket-tts-telugu-female-syspin",
+  "slug": "prasadvittaldev-pocket-tts-telugu-female-syspin",
+  "author": "prasadvittaldev",
+  "url": "https://huggingface.co/prasadvittaldev/pocket-tts-telugu-female-syspin",
+  "created_at": "2026-09-02T17:06:38.000Z",
+  "updated_at": "2026-09-02T17:22:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pocket-tts",
+  "languages": [
+    "te"
+  ],
+  "tags": [
+    "pocket-tts",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "telugu",
+    "indic",
+    "cpu",
+    "on-device",
+    "te",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109502146,
+  "parameters_human": "109.5M",
+  "storage_bytes": 668900007,
+  "storage_human": "669 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "#voiceai #tts #telugu #indicnlp #opensource #machinelearning ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/prasadvittaldev_voiceai-tts-telugu-activity-7499849463151280129-Aski",
+      "snippet": "🎙️ Telugu Pocket TTS voice AI that doesn&#x27;t need a GPU Kyutai Labs recently released something genuinely groundbreaking: Pocket TTS — a text-to-speech model small enough to run on a CPU ..."
+    },
+    {
+      "title": "prasadvittaldev / Repositories · GitHub",
+      "url": "https://github.com/prasadvittaldev?tab=repositories",
+      "snippet": "The fastest repo in history to surpass 100K stars ⭐. Better Harness Tools that make real things done. Built in Rust using oh-my-codex. Rust Updated Apr 1, 2026"
+    },
+    {
+      "title": "Telugu Text to Speech & AI Voice Generator — Free Online | VoisLabs",
+      "url": "https://www.voislabs.com/telugu",
+      "snippet": "Telugu text to speech (TTS) is the conversion of written తెలుగు text into spoken audio using AI voice synthesis. VoisLabs offers neural Telugu TTS with 48 tone presets, 10 voice characters, and studio-quality output."
+    },
+    {
+      "title": "Telugu TTS Models Trained on Single Desktop GPU - LinkedIn",
+      "url": "https://www.linkedin.com/posts/prasadvittaldev_artificialintelligence-generativeai-voiceai-activity-7490307177992273920-_Adl",
+      "snippet": "We Trained Two Production-Quality Telugu TTS Models on a Single Desktop GPU I&#x27;m excited to share that I&#x27;ve successfully trained two production-quality Telugu Text-to-Speech models—one male and ..."
+    },
+    {
+      "title": "Free Telugu Text to Speech | AI Voice Generator | తెలుగు TTS",
+      "url": "https://airvoz.com/text-to-speech/telugu",
+      "snippet": "Generate natural-sounding Telugu speech from text with our free Telugu TTS converter. High-quality AI voices for videos, e-learning, and accessibility with unlimited free characters."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "KinyoubiAtelier/tulana-eval",
+  "slug": "kinyoubiatelier-tulana-eval",
+  "author": "KinyoubiAtelier",
+  "url": "https://huggingface.co/KinyoubiAtelier/tulana-eval",
+  "created_at": "2026-09-02T16:43:12.000Z",
+  "updated_at": "2026-09-02T16:43:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "evaluation",
+    "instruction-following",
+    "odia",
+    "low-resource-nlp",
+    "code-mixing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tulanā - Decision Intelligence for Pharma Supply Chain | PSIP",
+      "url": "https://worldbigroup.com/marketplace/tulana",
+      "snippet": "Learn how Tulana&#x27;s AI-driven decision intelligence platform helps life sciences companies optimize pharma supply chain planning, forecasting and resilience."
+    },
+    {
+      "title": "tulanā - Intelligent decision support systems for organizations",
+      "url": "https://tulana.io/",
+      "snippet": "The decision intelligence platform for supply chain & logistics tulanā builds decision intelligence platforms for organizations where precision is essential. From global supply chains to critical infrastructure, we help leaders navigate complexity with clarity and speed."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Welcome - EvalAI",
+      "url": "https://eval.ai/",
+      "snippet": "Evaluation inside RL environments EvalAI lets participants submit code for their agent in the form of docker images which are evaluated against test environments on the evaluation server. During evaluation, the worker fetches the image, test environment, and the model snapshot and spins up a new container to perform evaluation."
+    },
+    {
+      "title": "Free AI Influencer Generator — No Signup 2026 | BasedLabs",
+      "url": "https://www.basedlabs.ai/tools/ai-influencer-generator",
+      "snippet": "Create realistic AI influencer photos instantly. Custom faces, outfits, and scenes for Instagram and TikTok. Free online tool — no signup or watermark."
+    }
+  ]
+}

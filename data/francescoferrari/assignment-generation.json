@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "francescoferrari/assignment-generation",
+  "slug": "francescoferrari-assignment-generation",
+  "author": "francescoferrari",
+  "url": "https://huggingface.co/francescoferrari/assignment-generation",
+  "created_at": "2026-09-02T15:35:00.000Z",
+  "updated_at": "2026-09-02T15:35:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "efficientformer",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - francescobrescia-tue/Assignment_3_Generative_AI",
+      "url": "https://github.com/francescobrescia-tue/Assignment_3_Generative_AI",
+      "snippet": "Contribute to francescobrescia-tue/Assignment_3_Generative_AI development by creating an account on GitHub."
+    },
+    {
+      "title": "Assignment Ai",
+      "url": "https://www.assignmentai.in/",
+      "snippet": "An AI-powered app that generates assignments in human-like handwriting format, saving time and enhancing presentation."
+    },
+    {
+      "title": "Automated Assignment Grading System with AI Model Evaluation",
+      "url": "https://github.com/autograder-org/autoGrader-frontend",
+      "snippet": "Objective: Develop an automated assignment grading system to reduce manual grading fatigue and improve efficiency. Evaluate the reliability of various AI models in grading assignments as part of a research initiative. Project Steps: Project Setup: Establish a project timeline and milestones. Identify the necessary technological stack and resources, including RAG, LangChain, and LLM models ..."
+    },
+    {
+      "title": "Free AI Assignment Generator, Free AI Assignment Maker [ No Signup ]",
+      "url": "https://www.template.net/ai-assignment-generator",
+      "snippet": "Create and download structured, editable assignments with our Free Text to Assignment AI template. Build online with ease, your go-to free assignment maker!"
+    },
+    {
+      "title": "AI and Automotive Design: The Ferrari Case as a Model of Human-Machine ...",
+      "url": "https://openaccess.cms-conferences.org/publications/book/978-1-964867-76-2/article/978-1-964867-76-2_75",
+      "snippet": "It contributes to the international discourse on Human-AI Interaction by offering a human-centered yet technologically progressive interpretation of contemporary creative processes.In conclusion, the study positions the Ferrari case as a distinctive model of AI integration within design practices characterized by strong symbolic, cultural ..."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mwfedo-rov0626/deit-demo",
+  "slug": "mwfedo-rov0626-deit-demo",
+  "author": "mwfedo-rov0626",
+  "url": "https://huggingface.co/mwfedo-rov0626/deit-demo",
+  "created_at": "2026-09-02T15:41:11.000Z",
+  "updated_at": "2026-09-02T15:42:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "deit",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mwfedo-rov0626 (Maxim Fedorov) - Hugging Face",
+      "url": "https://huggingface.co/mwfedo-rov0626/models",
+      "snippet": "mwfedo-rov0626&#x27;s models1 Sort: Recently updated mwfedo-rov0626/paper_012995545_prompt_engineering Updated 5 days ago"
+    },
+    {
+      "title": "DeiT - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.49.0/en/model_doc/deit",
+      "snippet": "This is the configuration class to store the configuration of a DeiTModel. It is used to instantiate an DeiT model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the DeiT facebook/deit-base-distilled-patch16-224 architecture."
+    },
+    {
+      "title": "transformers-chiniflow/docs/source/en/model_doc/deit.md at main ...",
+      "url": "https://github.com/Scicom-AI-Enterprise-Organization/transformers-chiniflow/blob/main/docs/source/en/model_doc/deit.md",
+      "snippet": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. - Scicom-AI-Enterprise-O..."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 662+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "GitHub - facebookresearch/deit: Official DeiT repository",
+      "url": "https://github.com/facebookresearch/deit",
+      "snippet": "Official DeiT repository. Contribute to facebookresearch/deit development by creating an account on GitHub."
+    }
+  ]
+}

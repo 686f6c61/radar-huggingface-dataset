@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-4-12b-it-3MPER0RR-abliterated-i1-GGUF",
+  "slug": "mradermacher-gemma-4-12b-it-3mper0rr-abliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-4-12b-it-3MPER0RR-abliterated-i1-GGUF",
+  "created_at": "2026-09-02T13:56:04.000Z",
+  "updated_at": "2026-09-02T14:52:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:3MPER0RR/gemma-4-12b-it-3MPER0RR-abliterated",
+    "base_model:quantized:3MPER0RR/gemma-4-12b-it-3MPER0RR-abliterated",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 140344493856,
+  "storage_human": "140.3 GB",
+  "base_model": "3MPER0RR/gemma-4-12b-it-3MPER0RR-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Gemma-4-12B-OBLITERATED-i1-GGUF at main",
+      "url": "https://huggingface.co/mradermacher/Gemma-4-12B-OBLITERATED-i1-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · mradermacher/Gemma-4-12B-OBLITERATED-i1-GGUF at main",
+      "url": "https://huggingface.co/mradermacher/Gemma-4-12B-OBLITERATED-i1-GGUF/blob/main/README.md",
+      "snippet": "mradermacher / Gemma-4-12B-OBLITERATED-i1-GGUF like 8 Text Generation Transformers GGUF English gemma gemma4 obliteratus refusal-analysis red-team aspa abliteration safety-research alignment-research imatrix conversational License:gemma Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Gemma 4 12B The unified multimodal model that fits a 16GB laptop",
+      "url": "https://gemmai4.com/gemma4-12b/",
+      "snippet": "Gemma 4 12B: encoder-free unified multimodal model with text, image, audio and video input, 256K context and 6.7 GB at 4-bit. Best transcription in the Gemma 4 family, benchmarks, downloads, fine-tuning and limitations."
+    },
+    {
+      "title": "Gemma 4 12B: Download, Ollama, GGUF & QAT Setup Guide - AI Tools Radar",
+      "url": "https://aitoolsradar.org/blog/models/gemma-4-12b-local-setup-guide-2026/",
+      "snippet": "Download and run Gemma 4 12B locally with Ollama, GGUF (Q4_K_M), and QAT quantization. Includes VRAM requirements, hardware table, and setup guide."
+    },
+    {
+      "title": "GitHub - google-deepmind/gemma: Gemma open-weight LLM library, from ...",
+      "url": "https://github.com/google-deepmind/gemma",
+      "snippet": "Gemma is a family of open-weights Large Language Model (LLM) by Google DeepMind, based on Gemini research and technology. This repository contains the implementation of the gemma PyPI package. A JAX library to use and fine-tune Gemma. For examples and use cases, see our documentation. Please report issues and feedback in our GitHub."
+    }
+  ]
+}

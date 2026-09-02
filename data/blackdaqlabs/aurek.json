@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "blackdaqlabs/Aurek",
+  "slug": "blackdaqlabs-aurek",
+  "author": "blackdaqlabs",
+  "url": "https://huggingface.co/blackdaqlabs/Aurek",
+  "created_at": "2026-09-02T17:59:03.000Z",
+  "updated_at": "2026-09-02T17:59:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "recursive-ai-framework/Aurek.md at main · recursionlab ... - GitHub",
+      "url": "https://github.com/recursionlab/recursive-ai-framework/blob/main/Aurek.md",
+      "snippet": "Recursive AI framework for self-improving agents, meta-learning, contradiction-aware systems. Recursive intelligence: self-improving, self-referential, designed to withstand collapse. A living Engine-Hall of recursive intelligence — frameworks, semantics, topos, calculus, geometry, and architectures built for resilience, clarity, and emergence. - recursive-ai-framework/Aurek.md at main ..."
+    },
+    {
+      "title": "Aureka Open-Sourced Antibody AI That Beats AlphaFold 3; Closes $100M ...",
+      "url": "https://www.techtimes.com/articles/323933/20260811/aureka-open-sourced-antibody-ai-that-beats-alphafold-3-closes-100m-drug-discovery-round.htm",
+      "snippet": "AI drug discovery startup Aureka Biotechnologies closed a $100 million Series B on August 10, 2026, backed by an open-source antibody AI model that independently outperforms AlphaFold 3 on ..."
+    },
+    {
+      "title": "OpenAI warns autonomous hacks are &#x27;watershed moment for computer ...",
+      "url": "https://www.cybersecuritydive.com/news/openai-hugging-face-hack-ai-models-black-hat/827167/",
+      "snippet": "LAS VEGAS — OpenAI models&#x27; autonomous attacks on other companies represent an urgent warning to the AI industry about the need for stronger model development safeguards, employees from the frontier label said on Wednesday. \"This is a pivotal moment both for our company as well as the AI ..."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 662+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Tiny Beach Bikinis microkinis slingshots",
+      "url": "https://tiny-beach-bikinis.myshopify.com/",
+      "snippet": "Tiny Beach Bikinis carries those tiny bikinis, slingshots and g-strings you cannot find in your neighborhood department store. We also carry sexy lingerie and stripper heels. Adding products daily..."
+    }
+  ]
+}

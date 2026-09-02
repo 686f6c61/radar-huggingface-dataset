@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "matheusrp41/bert-hate-speech-test",
+  "slug": "matheusrp41-bert-hate-speech-test",
+  "author": "matheusrp41",
+  "url": "https://huggingface.co/matheusrp41/bert-hate-speech-test",
+  "created_at": "2026-09-02T16:37:37.000Z",
+  "updated_at": "2026-09-02T16:37:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109484547,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437966901,
+  "storage_human": "438 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wesleyfreit/bert-hate-speech-test · Hugging Face",
+      "url": "https://huggingface.co/wesleyfreit/bert-hate-speech-test",
+      "snippet": "bert-hate-speech-test This model is a fine-tuned version of bert-base-uncased on the hate_speech_portuguese dataset. It achieves the following results on the evaluation set: Loss: 0.7279 Accuracy: 0.5965 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters ..."
+    },
+    {
+      "title": "Patrike/bert-hate-speech-test · Hugging Face",
+      "url": "https://huggingface.co/Patrike/bert-hate-speech-test",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · llm-tester125/bertHatespeechTest at main",
+      "url": "https://d6108366.hf-mirror.com/llm-tester125/bertHatespeechTest/blob/main/README.md?code=true",
+      "snippet": "llm-tester125 / bertHatespeechTest like 0 Text Classification Transformers Safetensors bert arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - JensBender/hate-speech-detection: ️ BERT-based hate speech ...",
+      "url": "https://github.com/JensBender/hate-speech-detection",
+      "snippet": "Implemented a hate speech detector for social media comments using deep learning. The fine-tuned BERT model achieved 78% accuracy on the Ethos Hate Speech Dataset, outperforming SimpleRNN/LSTM baselines, and was deployed via a web application and API."
+    },
+    {
+      "title": "[2010.12472] HateBERT: Retraining BERT for Abusive Language Detection ...",
+      "url": "https://arxiv.org/abs/2010.12472",
+      "snippet": "We present the results of a detailed comparison between a general pre-trained language model and the abuse-inclined version obtained by retraining with posts from the banned communities on three English datasets for offensive, abusive language and hate speech detection tasks."
+    }
+  ]
+}

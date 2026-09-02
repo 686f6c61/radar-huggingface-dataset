@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Olt1z/GLM-5.3-Flash-Uncensored-BF16",
+  "slug": "olt1z-glm-5-3-flash-uncensored-bf16",
+  "author": "Olt1z",
+  "url": "https://huggingface.co/Olt1z/GLM-5.3-Flash-Uncensored-BF16",
+  "created_at": "2026-09-02T17:05:24.000Z",
+  "updated_at": "2026-09-02T17:09:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "glm5_next",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "glm",
+    "moe",
+    "fp8",
+    "vision",
+    "mtp",
+    "en",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:finetune:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 642672299234,
+  "storage_human": "642.7 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3-Flash Uncensored: No LoRA, No Jailbreak, Just Edited FP8 ...",
+      "url": "https://www.explainx.ai/blog/orcarouter-glm-5-3-flash-uncensored-block-fp8-august-2026",
+      "snippet": "Refusal removal is baked directly into the weights.\" That&#x27;s OrcaRouter&#x27;s own framing, posted August 29, 2026, for its uncensored build of GLM-5.3-Flash — Z.ai&#x27;s 320B-total, 18B-active mixture-of-experts model that shipped under MIT license three days earlier as the reveal behind the \"Ox Alpha\" stealth preview. The tweet pulled 87 fire reactions."
+    },
+    {
+      "title": "GLM 5.3 Flash Uncensored model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/z-ai/glm-5.3-flash-uncensored",
+      "snippet": "GLM 5.3 Flash Uncensored is an FP8 uncensored fine-tune of the efficient 320B mixture-of-experts reasoning model with restored vision support, built for unrestricted chat, creative writing, coding, agentic work, tool use, and long-context tasks."
+    },
+    {
+      "title": "hell0ks/GLM-5.3-Flash-Uncensored-AWQ · Hugging Face",
+      "url": "https://huggingface.co/hell0ks/GLM-5.3-Flash-Uncensored-AWQ",
+      "snippet": "The abliterated (refusal-removed) build of zai-org/GLM-5.3-Flash — a 320B / 18B-active Mixture-of-Experts model with hybrid linear + sparse attention, 4-wide Manifold-Constrained Hyper-Connections, a native vision + video tower, an MTP speculative head, and a 1M-token context."
+    },
+    {
+      "title": "zai-org/GLM-5.3-Flash-BF16 · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash-BF16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3 | OpenLM.ai",
+      "url": "https://openlm.ai/glm-5.3/",
+      "snippet": "GLM-5.3-Flash is the first natively multimodal model in the GLM-5 series. With 320B total parameters and just 18B active parameters, it outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks."
+    }
+  ]
+}

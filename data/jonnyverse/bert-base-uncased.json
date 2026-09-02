@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/bert-base-uncased",
+  "slug": "jonnyverse-bert-base-uncased",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/bert-base-uncased",
+  "created_at": "2026-09-02T15:29:51.000Z",
+  "updated_at": "2026-09-02T15:29:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "fill-mask",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:quantized:google-bert/bert-base-uncased",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1379838192,
+  "storage_human": "1.4 GB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JONNYVERSE/bert-base-NER · Hugging Face",
+      "url": "https://huggingface.co/JONNYVERSE/bert-base-NER",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Contents/bert-base-uncased · Hugging Face",
+      "url": "https://huggingface.co/Contents/bert-base-uncased",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/bert-base-uncased",
+      "snippet": "This way, the model learns an inner representation of the English language that can then be used to extract features useful for downstream tasks: if you have a dataset of labeled sentences, for instance, you can train a standard classifier using the features produced by the BERT model as inputs."
+    },
+    {
+      "title": "BERT Base Uncased: Specs, Hardware & Live AI Battle | ModelVault",
+      "url": "https://www.modelvault.space/models/bert-base-uncased",
+      "snippet": "BERT Base Uncased is a high-dimensional text embedding and semantic retrieval model developed by Hugging Face. Tailored for Retrieval-Augmented Generation (RAG), vector database indexing, semantic similarity matching, and cross-lingual passage re-ranking."
+    },
+    {
+      "title": "Bert-base-uncased model - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/bert-base-uncased_model",
+      "snippet": "Bert-base-uncased is the original lowercased English checkpoint of BERT, released in October 2018 by Google AI Language."
+    }
+  ]
+}

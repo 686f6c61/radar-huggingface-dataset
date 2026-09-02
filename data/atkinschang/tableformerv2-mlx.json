@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "atkinschang/TableFormerV2-MLX",
+  "slug": "atkinschang-tableformerv2-mlx",
+  "author": "atkinschang",
+  "url": "https://huggingface.co/atkinschang/TableFormerV2-MLX",
+  "created_at": "2026-08-31T16:31:23.000Z",
+  "updated_at": "2026-09-02T14:02:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "docling-mlx",
+  "languages": [],
+  "tags": [
+    "docling-mlx",
+    "safetensors",
+    "TableFormerV2",
+    "mlx",
+    "base_model:docling-project/TableFormerV2",
+    "base_model:finetune:docling-project/TableFormerV2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 51125265,
+  "parameters_human": "51.1M",
+  "storage_bytes": 204597532,
+  "storage_human": "205 MB",
+  "base_model": "docling-project/TableFormerV2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "atkinschang/TableFormerV2-MLX · Hugging Face",
+      "url": "https://huggingface.co/atkinschang/TableFormerV2-MLX",
+      "snippet": "atkinschang / TableFormerV2-MLX like 0 Safetensors TableFormerV2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 51.1M params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "atkinschang/TableFormer-MLX · Hugging Face",
+      "url": "https://huggingface.co/atkinschang/TableFormer-MLX",
+      "snippet": "atkinschang / TableFormer-MLX like 0 MLX Safetensors License:cdla-permissive-2. License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "docling-ibm-models/docling_ibm_models/tableformer_v2/model.py ... - GitHub",
+      "url": "https://github.com/docling-project/docling-ibm-models/blob/main/docling_ibm_models/tableformer_v2/model.py",
+      "snippet": "937 r\"\"\" TableFormerV2: This module provides a self-contained implementation of the TableFormerV2"
+    },
+    {
+      "title": "GitHub - docling-project/docling-ibm-models · GitHub",
+      "url": "https://github.com/docling-project/docling-ibm-models",
+      "snippet": "Docling IBM models AI modules to support the Docling PDF document conversion project. TableFormer is an AI module that recognizes the structure of a table and the bounding boxes of the table content."
+    },
+    {
+      "title": "Docling Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2408.09869v2",
+      "snippet": "Abstract This technical report introduces Docling, an easy to use, self-contained, MIT-licensed open-source package for PDF document conversion. It is powered by state-of-the-art specialized AI models for layout analysis (DocLayNet) and table structure recognition (TableFormer), and runs efficiently on commodity hardware in a small resource budget. The code interface allows for easy ..."
+    }
+  ]
+}

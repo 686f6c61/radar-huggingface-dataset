@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "avestasaba/whisper-3",
+  "slug": "avestasaba-whisper-3",
+  "author": "avestasaba",
+  "url": "https://huggingface.co/avestasaba/whisper-3",
+  "created_at": "2026-09-02T14:09:21.000Z",
+  "updated_at": "2026-09-02T14:11:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "base_model:openai/whisper-large-v3",
+    "base_model:finetune:openai/whisper-large-v3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543490560,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6174172614,
+  "storage_human": "6.2 GB",
+  "base_model": "openai/whisper-large-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper [Blog] [Paper] [Model card] [Colab example] Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "openai/whisper-large-v3 · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3",
+      "snippet": "For more control over the generation parameters, use the model + processor API directly: import torch from transformers import AutoModelForSpeechSeq2Seq, AutoProcessor from datasets import Audio, load_dataset device = \"cuda:0\" if torch.cuda.is_available() else \"cpu\" torch_dtype = torch.float16 if torch.cuda.is_available() else torch.float32 model_id = \"openai/whisper-large-v3\" model ..."
+    },
+    {
+      "title": "Whisper 3 - Benchmarks, Pricing & API Access | AI Stats",
+      "url": "https://ai-stats.phaseo.app/models/openai/whisper-3",
+      "snippet": "Whisper 3 is an AI model by OpenAI, tracked on AI Stats. View benchmarks, compatible providers, pricing models, and launch milestones in one place."
+    },
+    {
+      "title": "Whisper 3 pricing & specs — OpenAI | CloudPrice",
+      "url": "https://cloudprice.net/models/openai-whisper-3",
+      "snippet": "Whisper 3 is an AI model by OpenAI. 4K context window. Compare LLM pricing, specs, benchmarks, and costs across providers."
+    },
+    {
+      "title": "Whisper 3 Large pricing & specs — OpenAI | CloudPrice",
+      "url": "https://cloudprice.net/models/openai-whisper-3-large",
+      "snippet": "Whisper 3 Large is an AI model by OpenAI. Compare LLM pricing, specs, benchmarks, and costs across providers."
+    }
+  ]
+}

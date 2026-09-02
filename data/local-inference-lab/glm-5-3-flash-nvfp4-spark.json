@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "local-inference-lab/GLM-5.3-Flash-NVFP4-Spark",
+  "slug": "local-inference-lab-glm-5-3-flash-nvfp4-spark",
+  "author": "local-inference-lab",
+  "url": "https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4-Spark",
+  "created_at": "2026-08-27T23:59:49.000Z",
+  "updated_at": "2026-09-02T17:16:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 367,
+  "trending_score": 0,
+  "parameters": 165496249182,
+  "parameters_human": "165.50B",
+  "storage_bytes": 187706528610,
+  "storage_human": "187.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "local-inference-lab/GLM-5.3-Flash-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "local-inference-lab/GLM-5.3-Flash-NVFP4 at main - Hugging Face",
+      "url": "https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Run GLM-5.3-Flash Locally (2026 Guide) - codersera.com",
+      "url": "https://codersera.com/blog/how-to-run-glm-5-3-flash-locally-2026/",
+      "snippet": "How to Run GLM-5.3-Flash Locally: Hardware & Setup GLM-5.3-Flash ships 320B parameters in a 328 GB native-FP8 checkpoint, so the 18B active count tells you nothing about the memory you need. Here are the real hardware requirements by quantisation, plus working vLLM, SGLang, llama.cpp and Apple Silicon setups."
+    },
+    {
+      "title": "GLM-5.3-Flash: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash, also known as ox-alpha, is Z.ai&#x27;s new 320B parameter (18B active) multimodal open model which outperforms GLM-5.2 across benchmarks and real-world tasks at one-tenth the price. GLM-5.3-Flash is the smaller version of GLM-5.3 and rivals Claude Opus 4.8 on coding and agentic benchmarks."
+    },
+    {
+      "title": "How to Run GLM-5.3-Flash Locally: GGUF, Hardware and Benchmarks",
+      "url": "https://atomic.chat/blog/guides/how-to-run-glm-5-3-flash-locally",
+      "snippet": "GLM-5.3-Flash is the first natively multimodal model in Z.ai&#x27;s GLM-5 series, and the first one that&#x27;s realistic to run locally: it has 320B total parameters and 18B active per token. This guide covers what the model is, how it performs in the benchmarks, how much memory you&#x27;ll need to run it, and what your options are for running it today."
+    }
+  ]
+}

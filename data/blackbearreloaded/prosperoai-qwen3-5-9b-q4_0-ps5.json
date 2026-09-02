@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "blackbearreloaded/ProsperoAI-Qwen3.5-9B-Q4_0-PS5",
+  "slug": "blackbearreloaded-prosperoai-qwen3-5-9b-q4_0-ps5",
+  "author": "blackbearreloaded",
+  "url": "https://huggingface.co/blackbearreloaded/ProsperoAI-Qwen3.5-9B-Q4_0-PS5",
+  "created_at": "2026-09-02T06:41:06.000Z",
+  "updated_at": "2026-09-02T14:07:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3.5",
+    "ps5",
+    "playstation-5",
+    "q4_0",
+    "gpu",
+    "local-ai",
+    "prosperoai",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6835128792,
+  "storage_human": "6.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=prosperoai",
+      "snippet": "blackbearreloaded/ProsperoAI-Mistral-7B-Instruct-v0.3-Q4_0-PS5 Updated about 8 hours ago"
+    },
+    {
+      "title": "Qwen3.5 9B model | Bitcoin.com AI",
+      "url": "https://ai.bitcoin.com/models/text/qwen/qwen3.5-9b",
+      "snippet": "Qwen3.5 9B is a multimodal foundation model from the Qwen 3.5 family, built for efficient reasoning, coding, and visual understanding in a compact 9B architecture."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "qwen/qwen3.5-9b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 9B parameter dense model, supporting a native context length of 262,144 tokens."
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-9B",
+      "snippet": "Qwen3.5-9B is a dense multimodal model from the Qwen3.5 family — same gated delta networks hybrid attention, vision encoder, 262K context, and MTP support as its larger siblings, but sized to fit comfortably on a single 24 GB GPU."
+    }
+  ]
+}

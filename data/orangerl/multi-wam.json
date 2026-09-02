@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Orangerl/multi-wam",
+  "slug": "orangerl-multi-wam",
+  "author": "Orangerl",
+  "url": "https://huggingface.co/Orangerl/multi-wam",
+  "created_at": "2026-07-21T07:05:24.000Z",
+  "updated_at": "2026-09-02T13:53:08.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "world-model",
+    "robotwin",
+    "multi-view",
+    "pytorch",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 691113846259,
+  "storage_human": "691.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Orangerl/multi-wam · Hugging Face",
+      "url": "https://huggingface.co/Orangerl/multi-wam",
+      "snippet": "Orangerl / multi-wam like 0 Robotics PyTorch world-model robotwin multi-view License:other Model card FilesFiles and versions xet Community Copy to bucket new Multi-WAM World-v6 + Action-v6 reproducible handoff Latest portable state Direct selective download Restore, verify and continue Action training"
+    },
+    {
+      "title": "Orangerl (Orangerl) - Hugging Face",
+      "url": "https://huggingface.co/Orangerl",
+      "snippet": "User profile of Orangerl on Hugging Face Recent Activity updated a modelabout 9 hours ago Orangerl/umm-2_3-ckpt published a modelabout 9 hours ago Orangerl/umm-2_3-ckpt updated a model6 days ago Orangerl/multi-wam View all activity"
+    },
+    {
+      "title": "AI in Hurricane Forecasting at the National Hurricane Center:",
+      "url": "https://www.weather.gov/news/261102-AI-Hurricane-Forecasting",
+      "snippet": "Artificial intelligence (AI) is a hot topic. How is the National Hurricane Center using AI in hurricane forecasting, especially during last year&#x27;s hurricane season? The use of AI in hurricane forecasting is accelerating. While NHC has used forms of AI tools for many years, new tools emerged more quickly than ever in 2025. Last season was all about experimentation, including first working with ..."
+    },
+    {
+      "title": "Best Ollama Models 2026: 25+ Ranked by VRAM & SWE-Bench (August 2026 ...",
+      "url": "https://www.morphllm.com/best-ollama-models",
+      "snippet": "The best Ollama models in 2026 split by job. For coding, qwen3-coder:30b leads: a 30B Mixture-of-Experts model with 3.3B active parameters, 19GB at Q4_K_M, 256K context, the best quality per GB of VRAM on a 24-32GB GPU or a 32GB Mac. devstral:24b is the only local coder with a hard agentic number, 46.8% SWE-Bench Verified at 14GB."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

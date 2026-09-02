@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "xiangxin0923/pi0_lora_tacfield_realworld_task_blackboard",
+  "slug": "xiangxin0923-pi0_lora_tacfield_realworld_task_blackboard",
+  "author": "xiangxin0923",
+  "url": "https://huggingface.co/xiangxin0923/pi0_lora_tacfield_realworld_task_blackboard",
+  "created_at": "2026-09-02T14:51:25.000Z",
+  "updated_at": "2026-09-02T15:02:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10263334284,
+  "storage_human": "10.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xiangxin0923/pi05_lora_tacfield_realworld_replayed_task820 - Hugging Face",
+      "url": "https://huggingface.co/xiangxin0923/pi05_lora_tacfield_realworld_replayed_task820",
+      "snippet": "xiangxin0923 / pi05_lora_tacfield_realworld_replayed_task820 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "xiangxin0923/pi05_lora_tacimg_real_820 · Hugging Face",
+      "url": "https://huggingface.co/xiangxin0923/pi05_lora_tacimg_real_820",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "blog/pi0.md at main · huggingface/blog · GitHub",
+      "url": "https://github.com/huggingface/blog/blob/main/pi0.md",
+      "snippet": "Paper | Jax Code π0 (Pi-Zero) is a Vision-Language-Action (VLA) model, developed by the Physical Intelligence team designed for generalist robot control. It builds upon large-scale pretraining and flow matching-based action generation, enabling robots to perform dexterous manipulation tasks across different embodiments. π0 is trained on data from 7 robotic platforms and 68 unique tasks ..."
+    },
+    {
+      "title": "Blackboard",
+      "url": "https://bme-o.blackboard.com/webapps/login/",
+      "snippet": "Test annoucment © 1997-2026 Blackboard Inc. All Rights Reserved."
+    }
+  ]
+}

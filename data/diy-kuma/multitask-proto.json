@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "diy-kuma/multitask-proto",
+  "slug": "diy-kuma-multitask-proto",
+  "author": "diy-kuma",
+  "url": "https://huggingface.co/diy-kuma/multitask-proto",
+  "created_at": "2026-09-02T13:52:48.000Z",
+  "updated_at": "2026-09-02T13:53:14.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "Multi puts 300+ models from every major lab to work across four workflows, so you deploy the best AI for each task instead of forcing one to do it all. Using the right model for the right project is the advantage most people leave on the table."
+    },
+    {
+      "title": "Kumagoro brother&#x27;s DIY - YouTube",
+      "url": "https://www.youtube.com/@KUMA56DIY",
+      "snippet": "This is a channel where my brother Kumagoro, who loves DIY, makes his own computers, repairs junk, and modifies them. I&#x27;m not sure if I&#x27;ve been doing a lot of gaming devices or iPad repairs lately ..."
+    },
+    {
+      "title": "Akash Kumar (@iamakashkumar91) • Instagram photos and videos",
+      "url": "https://www.instagram.com/iamakashkumar91/",
+      "snippet": "224K Followers, 5,326 Following, 1,062 Posts - Akash Kumar (@iamakashkumar91) on Instagram: \"🇮🇹 @fashionmodel.it\""
+    },
+    {
+      "title": "Uptime Kuma - A Fancy Self-Hosted Monitoring Tool",
+      "url": "https://uptimekuma.co/",
+      "snippet": "Uptime Kuma is an open-source and free self-hosted monitoring tool. Monitor your infrastructure and servers for downtime. Download Uptime Kuma now!"
+    },
+    {
+      "title": "CVPR 2026 Orals",
+      "url": "https://cvpr.thecvf.com/virtual/2026/events/Oral",
+      "snippet": "Experiments with simulations and a prototype camera demonstrate competitive performance in terms of image quality preservation and tamper localization accuracy compared to state-of-the-art digital watermarking and learning-based authentication methods."
+    }
+  ]
+}

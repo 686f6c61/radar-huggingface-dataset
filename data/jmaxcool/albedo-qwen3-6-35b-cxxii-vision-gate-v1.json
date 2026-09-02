@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "JMaxCool/albedo-qwen3.6-35b-cxxii-vision-gate-v1",
+  "slug": "jmaxcool-albedo-qwen3-6-35b-cxxii-vision-gate-v1",
+  "author": "JMaxCool",
+  "url": "https://huggingface.co/JMaxCool/albedo-qwen3.6-35b-cxxii-vision-gate-v1",
+  "created_at": "2026-09-02T12:41:44.000Z",
+  "updated_at": "2026-09-02T13:20:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916583934,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "albedo-qwen3.6-35b-cxxii-router-shared-v1 - Hugging Face",
+      "url": "https://huggingface.co/JMaxCool/albedo-qwen3.6-35b-cxxii-router-shared-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JMaxCool/albedo-qwen3.6-35b-cxiv-dpo-verified-v1 · Hugging Face",
+      "url": "https://huggingface.co/JMaxCool/albedo-qwen3.6-35b-cxiv-dpo-verified-v1",
+      "snippet": "JMaxCool / albedo-qwen3.6-35b-cxiv-dpo-verified-v1 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 20 Safetensors Model size 36B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider ..."
+    },
+    {
+      "title": "Qwen3.6 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.6",
+      "snippet": "Qwen3.6 prioritizes stability and real-world utility, offering developers a more intuitive, responsive, and genuinely productive coding experience. This model family includes a dense 27B model, and 35B (3B active) MoE versions."
+    },
+    {
+      "title": "Qwen 3.6 Developer Guide: Benchmarks, Architecture & Self-Hosting ...",
+      "url": "https://lushbinary.com/blog/qwen-3-6-developer-guide-benchmarks-architecture-api-self-hosting/",
+      "snippet": "Qwen 3.6 developer guide (Updated July 2026): 1M-context Plus, open-weight 35B-A3B, API pricing, and vLLM self-hosting. Note Qwen 3.7 is now the flagship."
+    },
+    {
+      "title": "Running a 35B MoE Model on a 16GB Consumer GPU",
+      "url": "https://magnus919.com/2026/05/running-a-35b-moe-model-on-a-16gb-consumer-gpu/",
+      "snippet": "How to serve Qwen3.6-35B-A3B, a Mixture-of-Experts model with 3B active parameters, on an RTX 5070 Ti using llama.cpp. Full config, performance numbers, and the flags that make it fit."
+    }
+  ]
+}

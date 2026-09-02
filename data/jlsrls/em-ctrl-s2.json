@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jlsrls/em-ctrl-s2",
+  "slug": "jlsrls-em-ctrl-s2",
+  "author": "jlsrls",
+  "url": "https://huggingface.co/jlsrls/em-ctrl-s2",
+  "created_at": "2026-09-02T16:18:17.000Z",
+  "updated_at": "2026-09-02T17:49:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "base_model:unsloth/gemma-3-4b-it",
+    "base_model:finetune:unsloth/gemma-3-4b-it",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2559097184,
+  "storage_human": "2.6 GB",
+  "base_model": "unsloth/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI traffic | ETS2 mods",
+      "url": "https://ets2.lt/en/category/ai-traffic/",
+      "snippet": "AI traffic mods - artificial intelligence mods, in simple words it is computer-controlled mods. Usually, it is trucks and cars in-game which you can&#x27;t drive. Default game AI car selection is pretty small, so you can increase more AI cars and truck with these mods. Also, here you can find some AI scripts, which change physics, density and more,"
+    },
+    {
+      "title": "[2512.22437] EmoCtrl: Controllable Emotional Image Content Generation",
+      "url": "https://arxiv.org/abs/2512.22437",
+      "snippet": "An image conveys meaning through both its visual content and emotional tone, jointly shaping human perception. We introduce Controllable Emotional Image Content Generation (C-EICG), which aims to generate images that remain faithful to a given content description while expressing a target emotion. Existing text-to-image models ensure content consistency but lack emotional awareness, whereas ..."
+    },
+    {
+      "title": "aaai-26-semantic-embedding-synthetic-augmentation/synthetic_data ...",
+      "url": "https://github.com/jlsrls/aaai-26-semantic-embedding-synthetic-augmentation/tree/main/synthetic_data_generation/pydantic_models",
+      "snippet": "Repository for the student abstract \"Semantic Embedding and Synthetic Augmentation for Longitudinal Survey Prediction,\" presented at the AAAI-26 SAPP. - jlsrls/aaai-26-semantic-embedding-..."
+    },
+    {
+      "title": "EmoCtrl: Controllable Emotion Generation",
+      "url": "https://www.emergentmind.com/topics/emoctrl",
+      "snippet": "EmoCtrl introduces innovative architectures and methods enabling precise, user-controllable emotional modulation in generative models for images, speech, and video."
+    },
+    {
+      "title": "EmoCtrl: Controllable Emotional Image Content Generation",
+      "url": "https://arxiv.org/html/2512.22437v2",
+      "snippet": "Existing methods enhance emotion awareness but lack fine-grained content control. To address this limitation, we introduce Controllable Emotional Image Content Generation (C-EICG) and propose EmoCtrl, which enables simultaneous control of content and emotion."
+    }
+  ]
+}

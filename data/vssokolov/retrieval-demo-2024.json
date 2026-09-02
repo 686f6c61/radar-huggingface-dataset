@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vssokolov/retrieval-demo-2024",
+  "slug": "vssokolov-retrieval-demo-2024",
+  "author": "vssokolov",
+  "url": "https://huggingface.co/vssokolov/retrieval-demo-2024",
+  "created_at": "2026-09-02T17:48:54.000Z",
+  "updated_at": "2026-09-02T17:48:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Retrieval | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/guides/retrieval",
+      "snippet": "The Retrieval API allows you to perform semantic search over your data, which is a technique that surfaces semantically similar results—even when they match few or no keywords. Retrieval is useful on its own, but is especially powerful when combined with our models to synthesize responses. The Retrieval API is powered by vector stores, which serve as indices for your data. This guide will ..."
+    },
+    {
+      "title": "Hello GPT‑4o - OpenAI",
+      "url": "https://openai.com/index/hello-gpt-4o/",
+      "snippet": "Hello GPT‑4o We&#x27;re announcing GPT‑4o, our new flagship model that can reason across audio, vision, and text in real time."
+    },
+    {
+      "title": "Retrieval-based-Voice-Conversion-WebUI - GitHub",
+      "url": "https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/blob/main/docs/en/README.en.md",
+      "snippet": "Retrieval-based-Voice-Conversion-WebUI A simple, easy-to-use voice timbre conversion / voice changer framework. Changelog | FAQ (Frequently Asked Questions) English | 中文简体 | 日本語 | 한국어 (韓國語) | Français | Türkçe | Português Check out our Demo Video here!"
+    },
+    {
+      "title": "[2401.11624] In-context Learning with Retrieved Demonstrations for ...",
+      "url": "https://arxiv.org/abs/2401.11624",
+      "snippet": "In light of the encouraging results and growing research in ICL with retrieved demonstrations, we conduct an extensive review of studies in this area. In this survey, we discuss and compare different design choices for retrieval models, retrieval training procedures, and inference algorithms."
+    },
+    {
+      "title": "azure-search-openai-demo/docs/agentic_retrieval.md at main · Azure ...",
+      "url": "https://github.com/Azure-Samples/azure-search-openai-demo/blob/main/docs/agentic_retrieval.md",
+      "snippet": "RAG chat: Using agentic retrieval This repository includes an optional feature that uses agentic retrieval from Azure AI Search to find the most relevant content given a user&#x27;s conversation history. The agentic retrieval feature uses a LLM to analyze the conversation and generate multiple search queries to find relevant content."
+    }
+  ]
+}

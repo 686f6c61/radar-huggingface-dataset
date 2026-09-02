@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/roberta-base",
+  "slug": "jonnyverse-roberta-base",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/roberta-base",
+  "created_at": "2026-09-02T15:29:44.000Z",
+  "updated_at": "2026-09-02T15:29:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "roberta",
+    "fill-mask",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:quantized:FacebookAI/roberta-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 874956634,
+  "storage_human": "875 MB",
+  "base_model": "roberta-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/roberta-base",
+      "snippet": "Training Details Training Data The RoBERTa model was pretrained on the reunion of five datasets: BookCorpus , a dataset consisting of 11,038 unpublished books; English Wikipedia (excluding lists, tables and headers) ; CC-News , a dataset containing 63 millions English news articles crawled between September 2016 and February 2019."
+    },
+    {
+      "title": "JONNYVERSE/roberta-base-go_emotions-onnx · Hugging Face",
+      "url": "https://huggingface.co/JONNYVERSE/roberta-base-go_emotions-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JONNYVERSE/roberta-base-go_emotions-onnx at main",
+      "url": "https://huggingface.co/JONNYVERSE/roberta-base-go_emotions-onnx/tree/main",
+      "snippet": "Duplicated from SamLowe/roberta-base-go_emotions-onnx JONNYVERSE / roberta-base-go_emotions-onnx like 0 Text Classification ONNX go_emotions English roberta int8 emotions multi-class-classification multi-label-classification optimum License:mit Model card FilesFiles and versions xet Community Copy to bucket new main roberta-base-go_emotions-onnx 631 MB Ctrl+K Ctrl+K 2 contributors History:1 ..."
+    },
+    {
+      "title": "roberta-base: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/roberta-base-facebookai",
+      "snippet": "Overview roberta-base is a bidirectional transformer model pretrained on 160GB of English text using masked language modeling, created by FacebookAI. The model randomly masks 15% of input tokens during pretraining and learns to predict them, which differs from GPT-style models that mask future tokens. It uses byte-pair encoding with a 50,000 token vocabulary and accepts sequences of 512 ..."
+    },
+    {
+      "title": "roberta-base download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/roberta-base/",
+      "snippet": "Download roberta-base for free. Robust BERT-based model for English with improved MLM training. roberta-base is a robustly optimized variant of BERT, pretrained on a significantly larger corpus of English text using dynamic masked language modeling. Developed by Facebook AI, RoBERTa improves on BERT by removing the Next Sentence Prediction objective, using longer training, larger batches, and ..."
+    }
+  ]
+}

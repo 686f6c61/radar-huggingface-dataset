@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "hwihwalab/lerobot-pusht-teleop",
+  "slug": "hwihwalab-lerobot-pusht-teleop",
+  "author": "hwihwalab",
+  "url": "https://huggingface.co/hwihwalab/lerobot-pusht-teleop",
+  "created_at": "2026-09-02T13:31:45.000Z",
+  "updated_at": "2026-09-02T13:38:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "imitation-learning",
+    "physical-ai",
+    "pusht",
+    "teleoperation",
+    "2d-physics",
+    "separating-axis-theorem",
+    "reinforcement-learning",
+    "diffusion-policy",
+    "act",
+    "web-teleop",
+    "en",
+    "ko",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 93925,
+  "storage_human": "93925 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Robotics Manipulation",
+      "dataset": "Hugging Face LeRobot PushT Benchmark",
+      "metric": "Mean Peak IoU Overlap (200-Ep Average)",
+      "value": 0.8054
+    },
+    {
+      "task": "Robotics Manipulation",
+      "dataset": "Hugging Face LeRobot PushT Benchmark",
+      "metric": "Physics Simulation Throughput (FPS)",
+      "value": 174348
+    }
+  ],
+  "sources": [
+    {
+      "title": "lerobot/pusht · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/lerobot/pusht",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LeRobot - Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/index",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - limanwang/lerobot_teleop",
+      "url": "https://github.com/limanwang/lerobot_teleop",
+      "snippet": "LeRobot: State-of-the-art AI for real-world robotics 🤗 LeRobot aims to provide models, datasets, and tools for real-world robotics in PyTorch. The goal is to lower the barrier to entry to robotics so that everyone can contribute and benefit from sharing datasets and pretrained models."
+    },
+    {
+      "title": "GitHub - huggingface/lerobot: LeRobot: Making AI for Robotics more ...",
+      "url": "https://github.com/huggingface/lerobot",
+      "snippet": "LeRobot aims to provide models, datasets, and tools for real-world robotics in PyTorch. The goal is to lower the barrier to entry so that everyone can contribute to and benefit from shared datasets and pretrained models. 🤗 A hardware-agnostic, Python-native interface that standardizes control across diverse platforms, from low-cost arms (SO-100) to humanoids. 🤗 A standardized, scalable ..."
+    },
+    {
+      "title": "Week1_PushT_Diffusion_Policy.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/Vizuara-AI-Lab/Modern-Robot-Learning-V2-Bootcamp/blob/main/lecture-1-diffusion-policy/public/notebooks/Week1_PushT_Diffusion_Policy.ipynb",
+      "snippet": "LeRobot provides 205 expert demonstration trajectories for PushT, collected via human teleoperation. Each trajectory is a sequence of (observation, action) pairs at 10 FPS. Key Concept: delta_timestamps Diffusion Policy doesn&#x27;t just look at the current frame. It uses temporal context: Observations: frames at t-1 and t (2 frames of history) Actions: a horizon of 16 future actions from t-1 to t+ ..."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "orangefabercastell/fine-tuning-agent-on-traces-v2-job_02_lr2e4_r32",
+  "slug": "orangefabercastell-fine-tuning-agent-on-traces-v2-job_02_lr2e4_r32",
+  "author": "orangefabercastell",
+  "url": "https://huggingface.co/orangefabercastell/fine-tuning-agent-on-traces-v2-job_02_lr2e4_r32",
+  "created_at": "2026-09-02T16:23:49.000Z",
+  "updated_at": "2026-09-02T16:24:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117478488,
+  "storage_human": "117 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Add client-side tracing to Foundry agents - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/trace-agent-client-side",
+      "snippet": "Instrument AI agents with OpenTelemetry client-side tracing using the Microsoft Foundry SDK. Export traces to Azure Monitor, the console, or any OTLP-compatible backend."
+    },
+    {
+      "title": "Fine-tuning | OpenAI Developers",
+      "url": "https://developers.openai.com/learn/fine-tuning",
+      "snippet": "Fine-tuning resources Cookbook to use model graders for reinforcement fine-tuning in expert tasks."
+    },
+    {
+      "title": "README.md · Exgentic/agent-llm-traces-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/Exgentic/agent-llm-traces-v2/blob/main/README.md",
+      "snippet": "Exgentic Agent LLM Traces v2 — Agent Chat Only OpenTelemetry-shaped execution traces for 10,057 agent runs across 6 benchmarks (AppWorld, SWE-bench, BrowseCompPlus, τ²-bench Airline/Retail/Telecom), filtered to the agent under test&#x27;s chat-only LLM calls. This is the dataset for replay testing, behavioral analysis, or any task where you care about what the benchmarked model actually did ..."
+    },
+    {
+      "title": "Fine-tuning a 35B model on agent traces beats bigger judges at lower ...",
+      "url": "https://asksurf.ai/pulse/en/fine-tuning-35b-model-agent-traces",
+      "snippet": "LangChain and Fireworks showed that fine-tuning a 35B model on actual agent traces can match or beat the big frontier models at judging agent output. The cost drop is massive. Matching big models on narrow tasks changes where the real edge sits They took Qwen-3.5-35B and trained it on multi-turn traces from two agent setups."
+    },
+    {
+      "title": "openai_agents_cookbook.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/Arize-ai/phoenix/blob/c02f0e7d807129952afa5da430299aec32fafcc9/tutorials/evals/openai_agents_cookbook.ipynb",
+      "snippet": "In production, evaluation provides real-time insights into how agents perform on user data. This section simulates a live production setting, showing how you can collect traces, model outputs, and evaluation results in real time. Another option is to pull traces from completed production runs and batch process evaluations on them. You can then log the results of those evaluations in Phoenix."
+    }
+  ]
+}

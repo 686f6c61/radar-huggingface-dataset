@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "surionfinder/HykaFastV2",
+  "slug": "surionfinder-hykafastv2",
+  "author": "surionfinder",
+  "url": "https://huggingface.co/surionfinder/HykaFastV2",
+  "created_at": "2026-09-02T12:00:24.000Z",
+  "updated_at": "2026-09-02T12:07:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "gguf",
+    "en",
+    "hi",
+    "base_model:Qwen/Qwen2.5-1.5B",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1646572352,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "surionfinder-hub · GitHub",
+      "url": "https://github.com/surionfinder-hub",
+      "snippet": "Contribution activity August 2026 surionfinder-hub has no activity yet for this period."
+    },
+    {
+      "title": "CivArchive - CivitAI Archive",
+      "url": "https://civarchive.com/about",
+      "snippet": "CivArchive is a cross-platform search engine for AI models. We don&#x27;t host files ourselves — instead, we crawl various sources and index the models we find, using the file&#x27;s SHA256 hash as its unique, permanent ID. CivArchive was created in direct response to models being suddenly removed from CivitAI. Our core mission is to be a resilient, community-driven archive that preserves access to ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

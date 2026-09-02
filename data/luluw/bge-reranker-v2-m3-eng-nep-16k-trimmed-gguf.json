@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "luluw/bge-reranker-v2-m3-eng-nep-16k-trimmed-GGUF",
+  "slug": "luluw-bge-reranker-v2-m3-eng-nep-16k-trimmed-gguf",
+  "author": "luluw",
+  "url": "https://huggingface.co/luluw/bge-reranker-v2-m3-eng-nep-16k-trimmed-GGUF",
+  "created_at": "2026-09-01T07:06:27.000Z",
+  "updated_at": "2026-09-02T17:10:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sentence-transformers",
+  "languages": [
+    "en",
+    "ne"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "gguf",
+    "text-classification",
+    "reranker",
+    "vocabulary-trimming",
+    "nepali",
+    "english",
+    "bge-m3",
+    "en",
+    "ne",
+    "dataset:lbourdois/fineweb-2-trimming",
+    "arxiv:2402.03216",
+    "base_model:BAAI/bge-reranker-v2-m3",
+    "base_model:quantized:BAAI/bge-reranker-v2-m3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 328528897,
+  "parameters_human": "328.5M",
+  "storage_bytes": 4214463232,
+  "storage_human": "4.2 GB",
+  "base_model": "BAAI/bge-reranker-v2-m3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI/bge-reranker-v2-m3 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-reranker-v2-m3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gpustack/bge-reranker-v2-m3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/gpustack/bge-reranker-v2-m3-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bge Reranker V2 M3 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/bge-reranker-v2-m3.html",
+      "snippet": "Download Bge Reranker V2 M3 GGUF model. 4.13 GB, 21,548 downloads, 40 likes."
+    },
+    {
+      "title": "bge",
+      "url": "https://bge.baai.ac.cn/",
+      "snippet": "Intro to BGE Models BGE builds a one-stop retrieval toolkit for search and RAG. We provide inference, evaluation, and fine-tuning for embedding models and reranker."
+    },
+    {
+      "title": "BGE-Reranker-V2-M3 - GitHub",
+      "url": "https://github.com/vllm-project/vllm-ascend/diffs/1?base_sha=b7d81b3d124e021e22e48b006f8b01253a5ac140&head_user=gygdh-001&name=main&pull_number=11275&qualified_name=refs%2Fheads%2Fmain&sha1=b7d81b3d124e021e22e48b006f8b01253a5ac140&sha2=7d85ba20a270df345dfe1c58946971c3db2ebbf2&short_path=8e6c2c3&unchanged=expanded&w=false",
+      "snippet": "BGE-Reranker-V2-M3 is a cross-encoder reranker model developed by BAAI, based on the RoBERTa architecture. Unlike decoder-only LLM-based rerankers, it is a lightweight (278M parameters) encoder-only model that directly computes relevance scores for (query, document) pairs."
+    }
+  ]
+}

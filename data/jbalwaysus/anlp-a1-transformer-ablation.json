@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JBalwaySUS/anlp-a1-transformer-ablation",
+  "slug": "jbalwaysus-anlp-a1-transformer-ablation",
+  "author": "JBalwaySUS",
+  "url": "https://huggingface.co/JBalwaySUS/anlp-a1-transformer-ablation",
+  "created_at": "2026-09-02T13:02:18.000Z",
+  "updated_at": "2026-09-02T13:03:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "transformer",
+    "seq2seq",
+    "byte-latent-transformer",
+    "ablation",
+    "from-scratch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65692617,
+  "storage_human": "66 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yharith/anlp-a1-transformer-ablation · Hugging Face",
+      "url": "https://huggingface.co/yharith/anlp-a1-transformer-ablation",
+      "snippet": "yharith / anlp-a1-transformer-ablation like 0 transformer ablation byte-latent-transformer License:mit Model card FilesFiles and versions xet Community Copy to bucket new ANLP Assignment 1: Transformer Ablation (C1-C5) Links Shared hyperparameters Files Loading Reading the results Results Quality Bit-accuracy baselines Efficiency"
+    },
+    {
+      "title": "Viv0605101/anlp-a1-transformer-blt-ablation · Hugging Face",
+      "url": "https://huggingface.co/Viv0605101/anlp-a1-transformer-blt-ablation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - FrenchKnuckles/ANLP_A1",
+      "url": "https://github.com/FrenchKnuckles/ANLP_A1",
+      "snippet": "This repository contains a PyTorch implementation of a Seq2Seq Transformer trained to decrypt a substitution cipher. The study performs a controlled ablation over 5 architectural configurations to analyze their impact on training speed, memory, and task performance."
+    },
+    {
+      "title": "anlp_a1/prompt.md at master · thereal-slimshady123/anlp_a1",
+      "url": "https://github.com/thereal-slimshady123/anlp_a1/blob/master/prompt.md",
+      "snippet": "Instructions for AI Assistant When I ask you to work on a step, provide full, clean, well-commented PyTorch code for the relevant file. Always verify module tensor shapes (batch_size, seq_len, d_model) before completing a task."
+    },
+    {
+      "title": "Meta says its AI model hacked into another company during testing",
+      "url": "https://www.theguardian.com/technology/2026/aug/05/meta-ai-model-hack-training",
+      "snippet": "Company is the third to report such an incident after Anthropic and OpenAI reported breaches during training Meta said on Wednesday that one of its AI models hacked ⁠another company during ..."
+    }
+  ]
+}

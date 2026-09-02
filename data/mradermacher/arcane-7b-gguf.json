@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mradermacher/arcane-7b-GGUF",
+  "slug": "mradermacher-arcane-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/arcane-7b-GGUF",
+  "created_at": "2026-09-02T12:21:19.000Z",
+  "updated_at": "2026-09-02T12:40:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 17334847424,
+  "storage_human": "17.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/turbo-ai-7b-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/turbo-ai-7b-i1-GGUF",
+      "snippet": "mradermacher / turbo-ai-7b-i1-GGUF like 0 Summarization Transformers GGUF Safetensors English qwen2 text-generation conversational email drafting task-extraction local-ai edge-ai privacy turboai turbomail imatrix License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "ModelFitCheck — will this LLM fit your GPU?",
+      "url": "https://modelfitcheck.com/",
+      "snippet": "Free browser-based tool that detects your hardware and instantly tells you which local LLMs and GGUF quantizations will fit in your VRAM. No signup, no data sent."
+    },
+    {
+      "title": "GGUF Loader - Local AI Inference Engine | Run GGUF Models Offline with ...",
+      "url": "https://ggufloader.github.io/",
+      "snippet": "How to Use It 1. Download a Model First, get a GGUF-format model. We recommend the Mistral 7B Instruct model to start."
+    }
+  ]
+}

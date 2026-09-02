@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "logan7000/mllm-open-r1-gt-gemma3-4b-mmupt-full",
+  "slug": "logan7000-mllm-open-r1-gt-gemma3-4b-mmupt-full",
+  "author": "logan7000",
+  "url": "https://huggingface.co/logan7000/mllm-open-r1-gt-gemma3-4b-mmupt-full",
+  "created_at": "2026-09-02T18:03:23.000Z",
+  "updated_at": "2026-09-02T18:07:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17238639237,
+  "storage_human": "17.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "logan7000/mllm-open-r1-gt-gemma3-4b-full-end-s961 · Hugging Face",
+      "url": "https://huggingface.co/logan7000/mllm-open-r1-gt-gemma3-4b-full-end-s961",
+      "snippet": "logan7000 / mllm-open-r1-gt-gemma3-4b-full-end-s961 like 0 Safetensors gemma3 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 769k params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Ollama Models Cheat Sheet 2026 | ComputingForGeeks",
+      "url": "https://computingforgeeks.com/ollama-models-cheat-sheet/",
+      "snippet": "Ollama models cheat sheet 2026: gpt-oss, Qwen3-Coder, DeepSeek, Llama and Gemma compared, with pull commands, VRAM math and real RTX 4090 benchmarks."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Gemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/",
+      "snippet": "Gemma is a collection of lightweight, open models built from the same technology that powers our Gemini models."
+    }
+  ]
+}

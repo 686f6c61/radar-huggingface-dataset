@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "johnson-yo/termux_os-asset-campplus-htp-onnx",
+  "slug": "johnson-yo-termux_os-asset-campplus-htp-onnx",
+  "author": "johnson-yo",
+  "url": "https://huggingface.co/johnson-yo/termux_os-asset-campplus-htp-onnx",
+  "created_at": "2026-08-12T09:24:50.000Z",
+  "updated_at": "2026-09-02T18:55:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "speaker-recognition",
+    "qualcomm-htp",
+    "termux-os",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70917084,
+  "storage_human": "71 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "johnson-yo/termux_os-asset-campplus-htp-onnx · Hugging Face",
+      "url": "https://huggingface.co/johnson-yo/termux_os-asset-campplus-htp-onnx",
+      "snippet": "Context provenance: Qualcomm AI Hub job jg9dq7rw5, device Samsung Galaxy S23 (SM8550), --qairt_version 2.47; the binary self-reports v2.47..260601114230. The wrapper is the AI Hub output downgraded from IR 13 to IR 11 (the on-device ONNX Runtime accepts at most 11); model.bin is byte-for-byte unmodified."
+    },
+    {
+      "title": "Termux Os Asset Campplus Htp Onnx - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/johnson-yo/termux_os-asset-campplus-htp-onnx",
+      "snippet": "Registry entry for model Termux Os Asset Campplus Htp Onnx; source metadata pending."
+    },
+    {
+      "title": "johnson-yo/termux_os-asset-qwen3asr-htp · Hugging Face",
+      "url": "https://huggingface.co/johnson-yo/termux_os-asset-qwen3asr-htp",
+      "snippet": "Qwen3-ASR-.6B — HTP pipeline parts for Termux-OS The pieces of Qwen/Qwen3-ASR-.6B that Termux-OS builds itself: a mel front-end and an audio encoder as ONNX graphs for Qualcomm HTP, plus one custom decoder quantization. Termux-OS turns an Android phone into a local, open subsystem that ordinary users, developers and AI agents can extend together. Its Framework installs models as versioned ..."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Termux · GitHub",
+      "url": "https://github.com/termux",
+      "snippet": "Android terminal emulator and Linux environment. Termux has 63 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

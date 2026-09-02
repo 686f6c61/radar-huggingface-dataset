@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Loganhernandez/cnn-transformer-generation",
+  "slug": "loganhernandez-cnn-transformer-generation",
+  "author": "Loganhernandez",
+  "url": "https://huggingface.co/Loganhernandez/cnn-transformer-generation",
+  "created_at": "2026-09-02T18:39:23.000Z",
+  "updated_at": "2026-09-02T18:39:28.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - rafiepour/CTran: Complete code for the proposed CNN ...",
+      "url": "https://github.com/rafiepour/CTran",
+      "snippet": "This repository contains the complete source code of the proposed CTRAN network for joint intent detection and slot filling, which are the main tasks of natural language understanding. We propose a encoder-decoder modele, combining CNNs with Transformers and define the concept of alignment in Transformer decoder for the first time. The encoder is shared between the two intent detection and ..."
+    },
+    {
+      "title": "A CNN-Transformer hybrid network for efficient cross ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s10346-026-02733-w",
+      "snippet": "Clustered landslides triggered by extreme rainfall and major earthquakes are increasingly frequent, necessitating rapid, accurate landslide detection (LSD) tools for post-disaster response. However, traditional LSD methods encounter challenges, including limited samples in few-shot scenarios and the underexplored use of Transformer-based models. This study presents LSDFormer, a compact CNN ..."
+    },
+    {
+      "title": "From Turing to Transformers: A Comprehensive Review and Tutorial ... - MDPI",
+      "url": "https://www.mdpi.com/2413-4155/5/4/46",
+      "snippet": "In recent years, generative transformers have become increasingly prevalent in the field of artificial intelligence, especially within the scope of natural language processing. This paper provides a comprehensive overview of these models, beginning with the foundational theories introduced by Alan Turing and extending to contemporary generative transformer architectures. The manuscript serves ..."
+    },
+    {
+      "title": "An XAI-driven CNN-Transformer model for transmission line fault ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352484725008054",
+      "snippet": "This study develops an accurate, reliable, transparent AI-based fault detection system for transmission lines using Explainable AI (XAI) techniques. MATLAB Simulink models generate datasets for both normal and fault conditions, overcoming limited real-time data access."
+    },
+    {
+      "title": "cnn-transformer · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/cnn-transformer",
+      "snippet": "A state-of-the-art hybrid deep learning ensemble that combines the strengths of Convolutional Neural Networks (CNNs) and Transformers for intelligent plant disease detection and real world agricultural applications. A hybrid CNN-Transformer framework for precise industrial surface defect detection ..."
+    }
+  ]
+}

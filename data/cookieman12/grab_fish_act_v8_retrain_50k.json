@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Cookieman12/grab_fish_act_v8_RETRAIN_50k",
+  "slug": "cookieman12-grab_fish_act_v8_retrain_50k",
+  "author": "Cookieman12",
+  "url": "https://huggingface.co/Cookieman12/grab_fish_act_v8_RETRAIN_50k",
+  "created_at": "2026-09-02T14:33:43.000Z",
+  "updated_at": "2026-09-02T14:34:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Cookieman12/grab_fish_act_v8",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714832,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Duck.ai by DuckDuckGo. Private AI chat. Free.",
+      "url": "https://duck.ai/",
+      "snippet": "Use ChatGPT, Claude, and other AIs, privately. Protect chats from hackers, scammers, and companies. Keep info confidential. Free. No account required."
+    },
+    {
+      "title": "Fish Training Codes [New] (August 2026) - Try Hard Guides",
+      "url": "https://tryhardguides.com/fish-training-codes/",
+      "snippet": "In Roblox Fish Training, players work to build their strength and improve their skills by training and competing in exciting races to earn wins. You can collect pets, unlock new areas, and aim for a spot in the top rankings. Weekly updates bring fresh challenges and opportunities to explore as you progress in the game. The best way to get Potions in Fish Training is by redeeming codes. We&#x27;ve ..."
+    },
+    {
+      "title": "fisch/Fisch Macro V8.ahk at main · 5kowolf/fisch · GitHub",
+      "url": "https://github.com/5kowolf/fisch/blob/main/Fisch%20Macro%20V8.ahk",
+      "snippet": "Contribute to 5kowolf/fisch development by creating an account on GitHub."
+    },
+    {
+      "title": "Fisch Cream&#x27;s Macro - GitHub",
+      "url": "https://github.com/Cweamy/Fisch-Cream-s-Macro",
+      "snippet": "Follow these steps to set up and use the macro: Start Roblox: Launch the game and navigate to the fishing area. Equip Your Rod: Ensure your fishing rod is equipped and ready to use. Open Camera Mode: Activate Camera Mode for optimal performance. Go Fullscreen: Switch to fullscreen mode to ensure the macro functions correctly. Start the Macro File: Run the macro file to begin automating your ..."
+    }
+  ]
+}

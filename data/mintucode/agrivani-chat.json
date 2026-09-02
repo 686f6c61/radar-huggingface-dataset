@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mintucode/agrivani-chat",
+  "slug": "mintucode-agrivani-chat",
+  "author": "mintucode",
+  "url": "https://huggingface.co/mintucode/agrivani-chat",
+  "created_at": "2026-09-02T18:33:25.000Z",
+  "updated_at": "2026-09-02T18:51:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1630263264,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - shauntjacob/Agrivani: AI-powered farming assistant for Indian ...",
+      "url": "https://github.com/shauntjacob/Agrivani",
+      "snippet": "AgriVani AI-powered agricultural assistant for Indian farmers — Marathi/English voice interaction, market price forecasting, crop disease detection, government scheme search, and hybrid local/cloud support, powered by a federated multi-node local LLM deployment."
+    },
+    {
+      "title": "GitHub - saurabhhhcodes/agrivani: AgriVani real-time multilingual ...",
+      "url": "https://github.com/saurabhhhcodes/agrivani",
+      "snippet": "AgriVani real-time multilingual AgriTech platform. Contribute to saurabhhhcodes/agrivani development by creating an account on GitHub."
+    },
+    {
+      "title": "AgriVani | Devpost",
+      "url": "https://devpost.com/software/agrivani",
+      "snippet": "AgriVani - Voice-first, multilingual AI agri advisor for Indian farmers with pan-India mandi price prediction, low-bandwidth design, and no paid AP..."
+    },
+    {
+      "title": "Agri AI - Smart Farming Solutions",
+      "url": "https://agriai.live/",
+      "snippet": "Everything You Need to Start Smart Farming Access powerful AI-driven tools completely free. A comprehensive suite that helps farmers make informed decisions and optimize operations."
+    },
+    {
+      "title": "How Will Rajasthan Use AI for Agriculture Services? | AIM",
+      "url": "https://analyticsindiamag.com/ai-news/rajasthan-partners-with-wadhwani-ai-to-deploy-ai-tools-for-agriculture-services",
+      "snippet": "As part of the collaboration, several AI-powered tools will be introduced to improve farmer outreach and agricultural decision-making. One of the platforms, Agrivani, is a multilingual AI chatbot that will allow farmers to interact through voice or text in local languages and receive agriculture-related guidance and advisory support."
+    }
+  ]
+}

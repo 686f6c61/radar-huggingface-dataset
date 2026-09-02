@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "stephvax/kyutai-stt-1b-en_fr-candle-gguf",
+  "slug": "stephvax-kyutai-stt-1b-en_fr-candle-gguf",
+  "author": "stephvax",
+  "url": "https://huggingface.co/stephvax/kyutai-stt-1b-en_fr-candle-gguf",
+  "created_at": "2026-09-02T12:42:58.000Z",
+  "updated_at": "2026-09-02T12:45:42.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "candle",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "candle",
+    "gguf",
+    "moshi",
+    "kyutai",
+    "stt",
+    "automatic-speech-recognition",
+    "fr",
+    "en",
+    "base_model:kyutai/stt-1b-en_fr-candle",
+    "base_model:quantized:kyutai/stt-1b-en_fr-candle",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 989253632,
+  "parameters_human": "989.3M",
+  "storage_bytes": 1607988352,
+  "storage_human": "1.6 GB",
+  "base_model": "kyutai/stt-1b-en_fr-candle",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kyutai/stt-1b-en_fr · Hugging Face",
+      "url": "https://huggingface.co/kyutai/stt-1b-en_fr",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kyutai/stt-1b-en_fr-candle · Hugging Face",
+      "url": "https://huggingface.co/kyutai/stt-1b-en_fr-candle",
+      "snippet": "How to Get Started with the Model See the GitHub repository. Training Details Training Data Pretraining stage: For both kyutai/stt-2.6b-en and kyutai/stt-1b-en_fr, we use an audio collection of 2.5 million hours of publicly available audio content. For this dataset, we obtained synthetic transcripts by running whisper-timestamped. For kyutai ..."
+    },
+    {
+      "title": "Kyutai STT",
+      "url": "https://kyutai.org/next/stt/",
+      "snippet": "Kyutai STT is a streaming speech-to-text model architecture, providing an unmatched trade-off between latency and accuracy, perfect for interactive applications. Its support for batching allows for processing hundreds of concurrent conversations on a single GPU. We release two models: kyutai/stt-1b-en_fr, a low-latency model that understands English and French, and has a built-in semantic ..."
+    },
+    {
+      "title": "kyutai/stt-1b-en_fr · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/kyutai/stt-1b-en_fr",
+      "snippet": "Pretraining stage: For both kyutai/stt-2.6b-en and kyutai/stt-1b-en_fr, we use an audio collection of 2.5 million hours of publicly available audio content. For this dataset, we obtained synthetic transcripts by running whisper-timestamped."
+    },
+    {
+      "title": "stt-1b-en_fr: Audio-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/stt-1b-en-fr-kyutai",
+      "snippet": "Overview stt-1b-en_fr is a streaming speech-to-text model developed by kyutai that transcribes English and French audio in real-time with a 0.5-second latency. Unlike offline ASR systems that wait for complete audio, this model outputs text as soon as a few seconds of speech become available, making it suitable for live transcription and conversational applications. The model is a decoder-only ..."
+    }
+  ]
+}

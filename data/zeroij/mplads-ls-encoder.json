@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "ZeroiJ/mplads-ls-encoder",
+  "slug": "zeroij-mplads-ls-encoder",
+  "author": "ZeroiJ",
+  "url": "https://huggingface.co/ZeroiJ/mplads-ls-encoder",
+  "created_at": "2026-09-02T17:40:42.000Z",
+  "updated_at": "2026-09-02T17:41:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en",
+    "hi",
+    "ta",
+    "te",
+    "bn",
+    "mr",
+    "gu",
+    "kn",
+    "ml",
+    "pa",
+    "ur",
+    "or",
+    "as",
+    "sd",
+    "ne",
+    "si"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "embeddings",
+    "mplads",
+    "lok-sabha",
+    "indian-government",
+    "multilingual",
+    "en",
+    "hi",
+    "ta",
+    "te",
+    "bn",
+    "mr",
+    "gu",
+    "kn",
+    "ml",
+    "pa",
+    "ur",
+    "or",
+    "as",
+    "sd",
+    "ne",
+    "si",
+    "dataset:ZeroiJ/mplads-works",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117653760,
+  "parameters_human": "117.7M",
+  "storage_bytes": 487720403,
+  "storage_human": "488 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ZeroiJ/mplads",
+      "url": "https://github.com/ZeroiJ/mplads/tree/main",
+      "snippet": "30-60% MVP: LS chamber end-to-end, offline snapshot export (zero live API at demo time). Stretch: RS chamber, fine-tuned model, feedback loop (agency confirmation → labeled data → retrain)."
+    },
+    {
+      "title": "ZeroiJ (Sujal Birwadkar) - Hugging Face",
+      "url": "https://huggingface.co/ZeroiJ",
+      "snippet": "AI & ML interests ... Recent Activity updated about 8 hours ago ... published about 9 hours ago"
+    },
+    {
+      "title": "mplads-ai-insight",
+      "url": "https://sih-11.vercel.app/",
+      "snippet": "AI Processing Machine learning models analyze patterns, costs, and timelines across thousands of projects."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 662+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "RussellALA/convnext-chexpert-seed1",
+  "slug": "russellala-convnext-chexpert-seed1",
+  "author": "RussellALA",
+  "url": "https://huggingface.co/RussellALA/convnext-chexpert-seed1",
+  "created_at": "2026-09-02T15:10:08.000Z",
+  "updated_at": "2026-09-02T15:52:42.000Z",
+  "license": "chexpert-research-use",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "convnextv2",
+    "image-classification",
+    "medical",
+    "chest-xray",
+    "multi-label",
+    "interpretability",
+    "chexpert",
+    "arxiv:2603.21782",
+    "arxiv:2009.14119",
+    "base_model:facebook/convnextv2-tiny-22k-384",
+    "base_model:finetune:facebook/convnextv2-tiny-22k-384",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27870341,
+  "parameters_human": "27.9M",
+  "storage_bytes": 111510484,
+  "storage_human": "112 MB",
+  "base_model": "facebook/convnextv2-tiny-22k-384",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - kamenbliznashki/chexpert: CheXpert competition models ...",
+      "url": "https://github.com/kamenbliznashki/chexpert",
+      "snippet": "CheXpert competition models -- attention augmented convolutions on DenseNet, ResNet; EfficientNet - kamenbliznashki/chexpert"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=chexpert",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "danjacobellis/chexpert · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/danjacobellis/chexpert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CheXpert: A Large Chest Radiograph Dataset with Uncertainty Labels and ...",
+      "url": "https://stanfordmlgroup.github.io/competitions/chexpert/",
+      "snippet": "CheXpert is a large dataset of chest x-rays and competition for automated chest x-ray interpretation, which features uncertainty labels and radiologist-labeled reference standard evaluation sets."
+    },
+    {
+      "title": "chexpert-dataset · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chexpert-dataset",
+      "snippet": "This repository explores the application of Self-Supervised Learning techniques such as MoCo, SimCLR, BYOL, and SwAV, for medical image representation using the CheXpert dataset. The project aims to classify multiple thoracic diseases while minimizing reliance on labeled data and addressing challenges like class imbalance and label uncertainty."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "vegahyo/Granite-4.2-3B-NPU2",
+  "slug": "vegahyo-granite-4-2-3b-npu2",
+  "author": "vegahyo",
+  "url": "https://huggingface.co/vegahyo/Granite-4.2-3B-NPU2",
+  "created_at": "2026-09-02T18:38:01.000Z",
+  "updated_at": "2026-09-02T18:45:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "fastflowlm",
+  "languages": [],
+  "tags": [
+    "fastflowlm",
+    "granite",
+    "npu",
+    "ryzen-ai",
+    "xdna2",
+    "q4nx",
+    "text-generation",
+    "conversational",
+    "base_model:ibm-granite/granite-4.2-3b",
+    "base_model:quantized:ibm-granite/granite-4.2-3b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2640901312,
+  "storage_human": "2.6 GB",
+  "base_model": "ibm-granite/granite-4.2-3b",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ibm-granite/granite-4.2-3b · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-4.2-3b",
+      "snippet": "Tool Calling Granite-4.2-3B supports tool calling with integrated reasoning — the model thinks about which tool to call and why before making the call. Tools are defined using the OpenAI function definition schema. Basic Tool Calling"
+    },
+    {
+      "title": "GitHub - vegah/LLMNpuTest: Just a test creating a llm kernel for XDNA2",
+      "url": "https://github.com/vegah/LLMNpuTest",
+      "snippet": "Part 2 — granite-4.2-3B: the model FastFlowLM cannot run The goal is to get granite running in FastFlowLM. For Qwen above, open kernels were a demonstration — FLM already runs that model and the 1.27x was a bonus. Here they are the only route. FastFlowLM&#x27;s llama engine whitelists hidden_size to {2048, 3072, 4096} and granite is 2560."
+    },
+    {
+      "title": "Granite 4.2 - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 is a family of dense reasoning language models available in three sizes: 3B, 8B, and 30B parameters. Granite 4.2 introduces native reasoning (thinking) capabilities, allowing models to perform step-by-step chain-of-thought reasoning before producing final answers."
+    },
+    {
+      "title": "granite4.2:3b - ollama.com",
+      "url": "https://ollama.com/library/granite4.2:3b",
+      "snippet": "Granite 4.2 models Granite 4.2 language models are a family of state-of-the-art open foundation models featuring dense decoder-only architectures. They natively support multilingual capabilities, a wide range of coding tasks, retrieval-augmented generation (RAG), tool usage, structured JSON output, and extended reasoning via a built-in thinking ..."
+    },
+    {
+      "title": "ibm-granite (IBM Granite) - Hugging Face",
+      "url": "https://huggingface.co/ibm-granite",
+      "snippet": "Enterprise-grade AI models Efficient reasoning and thinking language models for multilingual generation, coding, and AI assistant workflows."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sam-guided-vlas/train_1_2_pile__mask__blur__sim__all_cameras__live__spread_p05__pi05__seed_0",
+  "slug": "sam-guided-vlas-train_1_2_pile__mask__blur__sim__all_cameras__live__spread_p05__pi05__seed_0",
+  "author": "sam-guided-vlas",
+  "url": "https://huggingface.co/sam-guided-vlas/train_1_2_pile__mask__blur__sim__all_cameras__live__spread_p05__pi05__seed_0",
+  "created_at": "2026-09-02T11:18:03.000Z",
+  "updated_at": "2026-09-02T17:15:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:sam-guided-vlas/train_1_2_pile__mask__blur__sim__all_cameras__live__spread_p05",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 28062154944,
+  "storage_human": "28.1 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras ...",
+      "url": "https://huggingface.co/sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras__live__pi05__seed_0",
+      "snippet": "Model Card for pi05 π₀.₅ (Pi05) is a Vision-Language-Action model from Physical Intelligence designed for open-world generalization: it evolves π₀ to generalize to entirely new environments and situations that were never seen during training. The LeRobot implementation is adapted from their open-source OpenPI repository."
+    },
+    {
+      "title": "sam-guided-vlas (mim-sam-guided-vlas) - Hugging Face",
+      "url": "https://huggingface.co/sam-guided-vlas",
+      "snippet": "Org profile for mim-sam-guided-vlas on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "[2304.02643] Segment Anything - arXiv.org",
+      "url": "https://arxiv.org/abs/2304.02643",
+      "snippet": "We introduce the Segment Anything (SA) project: a new task, model, and dataset for image segmentation. Using our efficient model in a data collection loop, we built the largest segmentation dataset to date (by far), with over 1 billion masks on 11M licensed and privacy respecting images. The model is designed and trained to be promptable, so it can transfer zero-shot to new image distributions ..."
+    },
+    {
+      "title": "Meta Segment Anything Model 2 - AI at Meta",
+      "url": "https://ai.meta.com/research/sam2/",
+      "snippet": "The next generation of Meta Segment Anything SAM 2 brings state-of-the-art video and image segmentation capabilities into a single model, while preserving a simple design and fast inference speed."
+    },
+    {
+      "title": "GitHub - facebookresearch/segment-anything: The repository provides ...",
+      "url": "https://github.com/facebookresearch/segment-anything",
+      "snippet": "Segment Anything Model 2 (SAM 2) is a foundation model towards solving promptable visual segmentation in images and videos. We extend SAM to video by considering images as a video with a single frame. The model design is a simple transformer architecture with streaming memory for real-time video processing."
+    }
+  ]
+}

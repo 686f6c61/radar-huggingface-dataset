@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "MelNikov49539/bert-spirit",
+  "slug": "melnikov49539-bert-spirit",
+  "author": "MelNikov49539",
+  "url": "https://huggingface.co/MelNikov49539/bert-spirit",
+  "created_at": "2026-09-02T07:29:55.000Z",
+  "updated_at": "2026-09-02T17:41:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26878266497,
+  "storage_human": "26.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MelNikov49539/bert-spirit · Hugging Face",
+      "url": "https://huggingface.co/MelNikov49539/bert-spirit",
+      "snippet": "MelNikov49539 / bert-spirit like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "MelNikov49539 (Alexey Melnikov) - Hugging Face",
+      "url": "https://huggingface.co/MelNikov49539",
+      "snippet": "AI & ML interests Recent Activity updated a modelabout 4 hours ago MelNikov49539/dummy-model published a modelabout 6 hours ago MelNikov49539/dummy-model upvoted a ..."
+    },
+    {
+      "title": "GitHub - google-research/bert: TensorFlow code and pre-trained models ...",
+      "url": "https://github.com/google-research/bert",
+      "snippet": "TensorFlow code and pre-trained models for BERT. Contribute to google-research/bert development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - 12britz/awesome-free-models: A curated list of free AI models ...",
+      "url": "https://github.com/12britz/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. - 12britz/awesome-free-models"
+    },
+    {
+      "title": "PyTorch-Transformers - PyTorch",
+      "url": "https://pytorch.org/hub/huggingface_pytorch-transformers/",
+      "snippet": "PyTorch-Transformers Model Description PyTorch-Transformers (formerly known as pytorch - pretrained - bert) is a library of state-of-the-art pre-trained models for Natural Language Processing (NLP). The library currently contains PyTorch implementations, pre-trained model weights, usage scripts and conversion utilities for the following models:"
+    }
+  ]
+}

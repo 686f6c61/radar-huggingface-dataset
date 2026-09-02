@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/distilbert-base-uncased",
+  "slug": "jonnyverse-distilbert-base-uncased",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/distilbert-base-uncased",
+  "created_at": "2026-09-02T15:30:06.000Z",
+  "updated_at": "2026-09-02T15:30:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "distilbert",
+    "fill-mask",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:quantized:distilbert/distilbert-base-uncased",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 919951578,
+  "storage_human": "920 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JONNYVERSE/distilbert-base-uncased-finetuned-sst-2-english · Hugging Face",
+      "url": "https://huggingface.co/JONNYVERSE/distilbert-base-uncased-finetuned-sst-2-english",
+      "snippet": "distilbert-base-uncased-finetuned-sst-2-english ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "distilbert/distilbert-base-uncased · Hugging Face",
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/distilbert--distilbert-base-uncased",
+      "snippet": "This model is a distilled version of the BERT base model . It was introduced in this paper . The code for the distillation process can be found here . This model is uncased: it does not make a difference between english and English. Model description DistilBERT is a transformers model, smaller and faster than BERT, which was pretrained on the same corpus in a self-supervised fashion, using the ..."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/distilbert-base-uncased",
+      "snippet": "DistilBERT is a transformers model, smaller and faster than BERT, which was pretrained on the same corpus in a self-supervised fashion, using the BERT base model as a teacher. This means it was pretrained on the raw texts only, with no humans labelling them in any way (which is why it can use lots of publicly available data) with an automatic process to generate inputs and labels from those ..."
+    },
+    {
+      "title": "distilbert-base-uncased · Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/distilbert-base-uncased/summary",
+      "snippet": "DistilBERT base model (uncased) This model is a distilled version of the BERT base model. It was introduced in this paper. The code for the distillation process can be found here. This model is uncased: it does not make a difference between english and English. Model description DistilBERT is a transformers model, smaller and faster than BERT, which was pretrained on the same corpus in a self ..."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-mlx-6Bit",
+  "slug": "solstice-ai-qwen3-8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-nm-dau-mlx-6bit",
+  "author": "Solstice-AI",
+  "url": "https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-mlx-6Bit",
+  "created_at": "2026-09-02T12:57:16.000Z",
+  "updated_at": "2026-09-02T13:01:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "solstice-ai",
+    "anvil",
+    "mlx",
+    "mlx-my-repo",
+    "6-bit",
+    "qwen3_8",
+    "qwen3_6",
+    "heretic",
+    "uncensored",
+    "cold-fusion",
+    "gain-training",
+    "multi-stage-tuning",
+    "reasoning",
+    "chain-of-thought",
+    "token-efficient",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5885566464,
+  "parameters_human": "5.89B",
+  "storage_bytes": 21876371320,
+  "storage_human": "21.9 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SolsticeAI/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-mlx-6Bit · Hugging Face",
+      "url": "https://huggingface.co/SolsticeAI/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-mlx-6Bit",
+      "snippet": "Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF Cold Fusion has 1/5 (as low as 1/10 in some cases) to 1/2 the thinking tokens (vs reg Qwen 3.8) across all 3 modes of operation, and it is faster and smarter too created using the COLD FUSION method of training."
+    },
+    {
+      "title": "Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-mlx-6Bit - Hugging Face",
+      "url": "https://huggingface.co/Solstice-AI/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-mlx-6Bit",
+      "snippet": "IMPORTANT: The COLD FUSION (GAIN+Unsloth) method of training maintains 99% of performance of BF16, at both 8 bit and 4 bit levels. Model exceeds all Qwen 3.8, 3.6 and 3.5 27B critical core benchmarks. A model that gets down to business faster, with less \"talking\" and is smarter too. Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF Cold Fusion has 1/5 (as low as 1/10 in some cases) to ..."
+    },
+    {
+      "title": "Qwen3.8-27B | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/qwen/models/qwen3.8-27b/",
+      "snippet": "Qwen3.8-27B is a 27-billion-parameter dense vision-language model for text, image, and video understanding. It supports coding, professional-work and research workflows, multimodal reasoning, configurable thinking depth, long-context processing, tool calling, and multi-step agentic tasks."
+    },
+    {
+      "title": "SolsticeAI--Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-mlx-6Bit",
+      "url": "https://omlx.ai/benchmarks/performance/e20zx4qx",
+      "snippet": "Model Settings Show all 31 settings benchmark_contextCode (Python) force_samplingfalse thinking_budget_enabledfalse reasoning_parserqwen_3_5 guided_grammar_enabledfalse turboquant_kv_enabledfalse turboquant_kv_bits4 turboquant_skip_lasttrue specprefill_enabledfalse dflash_enabledtrue dflash_draft_modeldedf8df68adfb1afeaf7b7480c0a0243108177b4"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    }
+  ]
+}

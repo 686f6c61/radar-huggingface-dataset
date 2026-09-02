@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "DevQuasar/ibm-granite.granite-4.2-30b-GGUF",
+  "slug": "devquasar-ibm-granite-granite-4-2-30b-gguf",
+  "author": "DevQuasar",
+  "url": "https://huggingface.co/DevQuasar/ibm-granite.granite-4.2-30b-GGUF",
+  "created_at": "2026-09-02T15:39:05.000Z",
+  "updated_at": "2026-09-02T15:55:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:ibm-granite/granite-4.2-30b",
+    "base_model:quantized:ibm-granite/granite-4.2-30b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29276770304,
+  "parameters_human": "29.28B",
+  "storage_bytes": 10858656512,
+  "storage_human": "10.9 GB",
+  "base_model": "ibm-granite/granite-4.2-30b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ibm-granite/granite-4.2-30b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF",
+      "snippet": "ibm-granite / granite-4.2-30b-GGUF like 3 Follow IBM Granite 5.17k GGUF llama.cpp language granite-4.2 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Granite 4.2 | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/",
+      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
+    },
+    {
+      "title": "README.md · ibm-granite/granite-4.2-30b-GGUF at main",
+      "url": "https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF/blob/main/README.md",
+      "snippet": "like 3 Follow IBM Granite 5.18k GGUF llama.cpp language granite-4.2 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-4.2-language-models · GitHub",
+      "url": "https://github.com/ibm-granite/granite-4.2-language-models",
+      "snippet": "Granite is a family of open-source large language models developed by IBM, designed for enterprise and research use. Granite models are built to be versatile, safe, and efficient — covering a range of sizes and capabilities from compact edge-deployable models to large-scale reasoning systems. The Granite 4.2 generation introduces native reasoning (thinking) capabilities, allowing models to ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HorexLabs/Cardboard-3.5-Turbo-16k",
+  "slug": "horexlabs-cardboard-3-5-turbo-16k",
+  "author": "HorexLabs",
+  "url": "https://huggingface.co/HorexLabs/Cardboard-3.5-Turbo-16k",
+  "created_at": "2026-09-02T14:35:57.000Z",
+  "updated_at": "2026-09-02T14:35:57.000Z",
+  "license": "unlicense",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unlicense",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/gpt-35-turbo-16k",
+      "snippet": "GPT-3.5 models can understand and generate natural language or code. The most capable and cost effective model in the GPT-3.5 family is GPT-3.5 Turbo, which has been optimized for chat and works well for traditional completions tasks as well."
+    },
+    {
+      "title": "gpt-3.5-turbo-16k-0613 Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-3.5-turbo-16k-0613",
+      "snippet": "Legacy GPT model for cheaper chat and non-chat tasks"
+    },
+    {
+      "title": "GPT-3.5 Turbo 16k - OpenAI AI Model - ohmygpt.com",
+      "url": "https://www.ohmygpt.com/models/gpt-3.5-turbo-16k",
+      "snippet": "GPT-3.5 Turbo variant with extended 16K token context window for longer conversations and documents."
+    },
+    {
+      "title": "Xenova/gpt-3.5-turbo-16k · Hugging Face",
+      "url": "https://huggingface.co/Xenova/gpt-3.5-turbo-16k",
+      "snippet": "A 🤗-compatible version of the GPT-3.5-turbo-16k tokenizer (adapted from openai/tiktoken). This means it can be used with Hugging Face libraries including Transformers, Tokenizers, and Transformers.js."
+    },
+    {
+      "title": "gpt-3.5-turbo-16k | Azure OpenAI | AI Model Directory",
+      "url": "https://portkey.ai/models/azure-openai/gpt-3.5-turbo-16k",
+      "snippet": "gpt-3.5-turbo-16k by Azure OpenAI. Input: $3.00/M, Output: $4.00/M. Tool Calling, 16K output tokens"
+    }
+  ]
+}

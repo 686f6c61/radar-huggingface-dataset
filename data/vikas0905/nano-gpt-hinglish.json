@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "vikas0905/nano-gpt-hinglish",
+  "slug": "vikas0905-nano-gpt-hinglish",
+  "author": "vikas0905",
+  "url": "https://huggingface.co/vikas0905/nano-gpt-hinglish",
+  "created_at": "2026-09-02T11:53:12.000Z",
+  "updated_at": "2026-09-02T12:08:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63227650,
+  "storage_human": "63 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - vikas-aa/NanoGPT-Hinglish: A small custom GPT-style ...",
+      "url": "https://github.com/vikas-aa/NanoGPT-Hinglish",
+      "snippet": "- Improved model architecture - Better conversational consistency - GPU training A small custom GPT-style conversational AI trained for Roman Hinglish conversations."
+    },
+    {
+      "title": "Text Models - nano-gpt.com",
+      "url": "https://nano-gpt.com/settings/models",
+      "snippet": "NanoGPT offers access to every AI model with pay-as-you-go or an optional subscription with included open-source model usage. Generate videos (Kling, Veo and more), create images (Flux Pro, Kontext, GPT Image, Hidream), and access ChatGPT, Claude, Gemini, Deepseek, and other top AI models."
+    },
+    {
+      "title": "GitHub - karpathy/nanoGPT: The simplest, fastest repository for ...",
+      "url": "https://github.com/karpathy/nanoGPT",
+      "snippet": "Use the script sample.py to sample either from pre-trained GPT-2 models released by OpenAI, or from a model you trained yourself. For example, here is a way to sample from the largest available gpt2-xl model:"
+    },
+    {
+      "title": "Explore Text Models - NanoGPT",
+      "url": "https://nano-gpt.com/models/text",
+      "snippet": "Explore Text Models Browse and discover the best AI language models for conversations, coding, and creative writing."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

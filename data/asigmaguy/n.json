@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "asigmaguy/n",
+  "slug": "asigmaguy-n",
+  "author": "asigmaguy",
+  "url": "https://huggingface.co/asigmaguy/n",
+  "created_at": "2026-09-02T17:33:46.000Z",
+  "updated_at": "2026-09-02T17:33:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "asigmaguy (User Annonym) - Hugging Face",
+      "url": "https://huggingface.co/asigmaguy",
+      "snippet": "Revenge 📚 asigmaguy 9 days ago Running No 📉 Add two numbers with a simple web calculator asigmaguy 12 days ago Running"
+    },
+    {
+      "title": "Nnnnnnnnn - a Hugging Face Space by asigmaguy",
+      "url": "https://huggingface.co/spaces/asigmaguy/nnnnnnnnn",
+      "snippet": "Deploy the suite to an anonymous host and share the generated link with a target. When the target opens the link, you can watch their screen, capture webcam video, take screenshots, see system deta..."
+    },
+    {
+      "title": "ArtificialGuyBR | AI Engineer & Open-Source AI",
+      "url": "https://artificialguy.com/",
+      "snippet": "My AI engineering portfolio, research notes, model releases, and open-source projects. A searchable prompt library for image generation and LLM workflows. A financial research workspace for tracking fundamentals, markets, and company signals. A curated directory of AI tools for writing, code, image, video, audio, and research."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "Free AI 3D Model Generator | Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Free AI 3D Model Generator: create 3D models from text or images for games, AR/VR, and 3D printing at zero cost."
+    }
+  ]
+}

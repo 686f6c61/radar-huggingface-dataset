@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ArjunChauhan/mobilevit-retrieval",
+  "slug": "arjunchauhan-mobilevit-retrieval",
+  "author": "ArjunChauhan",
+  "url": "https://huggingface.co/ArjunChauhan/mobilevit-retrieval",
+  "created_at": "2026-09-02T17:29:55.000Z",
+  "updated_at": "2026-09-02T17:30:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArjunChauhan (Arjun Chauhan) - Hugging Face",
+      "url": "https://huggingface.co/ArjunChauhan/models",
+      "snippet": "User profile of Arjun Chauhan on Hugging Face"
+    },
+    {
+      "title": "Mobile-VIT - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/mobile_vit",
+      "snippet": "Mobile-VIT Imagenet classifier and general purpose backbone. MobileVit is a machine learning model that can classify images from the Imagenet dataset. It can also be used as a backbone in building more complex models for specific use cases."
+    },
+    {
+      "title": "bryanksantoso/retrieval · Hugging Face",
+      "url": "https://huggingface.co/bryanksantoso/retrieval",
+      "snippet": "bryanksantoso / retrieval like 0 Safetensors PyTorch mobilevit retrieval License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "ai-hub-models/qai_hub_models/models/mobile_vit/README.md at main ...",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/qai_hub_models/models/mobile_vit/README.md",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    },
+    {
+      "title": "MobileViT: A Hybrid Deep Learning Model for Efficient Brain Tumor ...",
+      "url": "https://ieeexplore.ieee.org/document/10974209",
+      "snippet": "Early and accurate diagnosis of brain tumors is crucial to the right management. Standard Convolutional Neural Networks (CNNs) has proved useful in medical image analysis; however, due to their inherent high computational requirements, they cannot run efficiently on resource constraint systems including the mobile. In this article, we explore the deployment of MobileViT as a condense model ..."
+    }
+  ]
+}

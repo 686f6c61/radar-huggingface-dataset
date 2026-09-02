@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ckcegg/gemma-4-E2B-it-qat-q4_0-unquantized-assistant",
+  "slug": "ckcegg-gemma-4-e2b-it-qat-q4_0-unquantized-assistant",
+  "author": "ckcegg",
+  "url": "https://huggingface.co/ckcegg/gemma-4-E2B-it-qat-q4_0-unquantized-assistant",
+  "created_at": "2026-09-02T13:36:09.000Z",
+  "updated_at": "2026-09-02T13:36:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_assistant",
+    "text-generation",
+    "any-to-any",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-E2B-it-assistant",
+    "base_model:finetune:google/gemma-4-E2B-it-assistant",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 77993476,
+  "parameters_human": "78.0M",
+  "storage_bytes": 189734784,
+  "storage_human": "190 MB",
+  "base_model": "google/gemma-4-E2B-it-assistant",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-E2B-it-qat-q4_0-unquantized · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized",
+      "snippet": "Gemma 4 models were developed in partnership with internal safety and responsible AI teams. A range of automated as well as human evaluations were conducted to help improve model safety."
+    },
+    {
+      "title": "Gemma 4 E2B It Qat Q4 0 Unquantized Assistant by google",
+      "url": "https://llm-explorer.com/model/google%2Fgemma-4-E2B-it-qat-q4_0-unquantized-assistant,5X8hGadXENfRCvAknFQKsK",
+      "snippet": "Gemma 4 E2B It Qat Q4 0 Unquantized Assistant is an open-source language model by google. Features: 78m LLM, VRAM: 0.2GB, License: apache-2.0, Quantized, LLM Explorer Score: 0.31."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 E2B IT Qat Q4 0 Unquantized - llmrun.dev",
+      "url": "https://llmrun.dev/model/google-gemma-4-e2b-it-qat-q4-0-unquantized",
+      "snippet": "Gemma 4 E2B IT Qat Q4 0 Unquantized — Hardware Requirements & GPU Compatibility Chat Gemma 4 E2B IT Qat Q4 0 Unquantized is a 5.1B-parameter open language model from Google in the Gemma 4 family. It supports a context window of up to 131,072 tokens. At Q4_K_M it needs about 3.42 GB of VRAM — see which GPUs and Macs can run it below."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    }
+  ]
+}

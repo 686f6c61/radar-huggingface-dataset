@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "local-inference-lab/lil-catalog",
+  "slug": "local-inference-lab-lil-catalog",
+  "author": "local-inference-lab",
+  "url": "https://huggingface.co/local-inference-lab/lil-catalog",
+  "created_at": "2026-09-02T18:34:21.000Z",
+  "updated_at": "2026-09-02T19:09:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Local Inference Lab - DeepWiki",
+      "url": "https://deepwiki.com/local-inference-lab",
+      "snippet": "DeepWiki provides up-to-date documentation you can talk to, for local-inference-lab. Think Deep Research for GitHub - powered by Devin."
+    },
+    {
+      "title": "Local Inference - GitHub",
+      "url": "https://github.com/localinference/",
+      "snippet": "Local Inference (LI) is an open initiative focused on building small, specialized machine learning models that run locally anywhere. LI models are designed to be practical, predictable, and deployable without centralized infrastructure."
+    },
+    {
+      "title": "Model Catalog for .NET, Discover Download and Run Local Models, LM-Kit",
+      "url": "https://lm-kit.com/solutions/local-inference/model-catalog/",
+      "snippet": "Browse, filter, and load models by ID. The LM-Kit Model Catalog ships every supported model with metadata, capabilities, and HuggingFace download URIs. Auto-download with progress callbacks, smart caching, capability filtering. From one line of code to running inference."
+    },
+    {
+      "title": "Local AI Models — The Reference for Running AI Locally",
+      "url": "https://local-ai-models.ai/",
+      "snippet": "The complete reference for running AI locally. 130 open-weight models cataloged, real-time benchmarks, hardware planning, agent frameworks, token-speed simulator."
+    },
+    {
+      "title": "local-inference-lab repositories · GitHub",
+      "url": "https://github.com/orgs/local-inference-lab/repositories",
+      "snippet": "A high-throughput and memory-efficient inference and serving engine for LLMs"
+    }
+  ]
+}

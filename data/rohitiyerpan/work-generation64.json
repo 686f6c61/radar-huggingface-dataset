@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Rohitiyerpan/work-generation64",
+  "slug": "rohitiyerpan-work-generation64",
+  "author": "Rohitiyerpan",
+  "url": "https://huggingface.co/Rohitiyerpan/work-generation64",
+  "created_at": "2026-09-02T17:08:17.000Z",
+  "updated_at": "2026-09-02T17:10:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "poolformer",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rohitiyerpan/image-text-data at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/Rohitiyerpan/image-text-data/tree/main",
+      "snippet": "Datasets: Rohitiyerpan / image-text-data like 0 Tags: dataset architecture image-text License: apache-2.0 Dataset card FilesFiles and versions xet Community main image-text-data 13 kB 1 contributor History:2 commits Rohitiyerpan Upload 4 files ec1055e verifiedabout 3 hours ago .gitattributes Safe 2.5 kBinitial commitabout 3 hours ago README.md Safe 2.07 kBUpload 4 filesabout 3 hours ago ..."
+    },
+    {
+      "title": "AI Detector - Trusted AI Checker for ChatGPT, Copilot & Gemini - Scribbr",
+      "url": "https://www.scribbr.com/ai-detector/",
+      "snippet": "Scribbr AI Detector: Identify AI-generated content from ChatGPT, Copilot, and Gemini with our advanced AI Checker. Try it for free!"
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Turn any photo or text prompt into a 3D model with local AI. Export as GLB, OBJ, STL or PLY. Free, open source, runs entirely on your GPU — no cloud, no account."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Rodin AI — Rodin Gen-2.5 3D Model Generator",
+      "url": "https://rodinai.net/",
+      "snippet": "Generate 3D models from text or images with Rodin AI. Rodin Gen-2.5 delivers 5 quality tiers, up to 2M polygons, HD PBR textures, and GLB/FBX/OBJ export — free to try."
+    }
+  ]
+}

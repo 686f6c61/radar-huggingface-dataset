@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Wiself/gemma-4-26B-A4B-Styletune-V2-Voice",
+  "slug": "wiself-gemma-4-26b-a4b-styletune-v2-voice",
+  "author": "Wiself",
+  "url": "https://huggingface.co/Wiself/gemma-4-26B-A4B-Styletune-V2-Voice",
+  "created_at": "2026-09-02T15:59:11.000Z",
+  "updated_at": "2026-09-02T18:59:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gemma4",
+    "styletune",
+    "voice",
+    "gguf",
+    "moe",
+    "roleplay",
+    "creative-writing",
+    "style-transfer",
+    "text-generation",
+    "en",
+    "base_model:Gryphe/Gemma-4-26B-A4B-StyleTune-V2",
+    "base_model:finetune:Gryphe/Gemma-4-26B-A4B-StyleTune-V2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1476395104,
+  "storage_human": "1.5 GB",
+  "base_model": "Gryphe/Gemma-4-26B-A4B-StyleTune-V2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gryphe/Gemma-4-26B-A4B-StyleTune · Hugging Face",
+      "url": "https://huggingface.co/Gryphe/Gemma-4-26B-A4B-StyleTune",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/gemma-4-26B-A4B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Gemma-4-26B-A4B-StyleTune: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma-4-26b-a4b-styletune-gryphe",
+      "snippet": "Overview Gemma-4-26B-A4B-StyleTune is a surgical style fine-tune of Google&#x27;s Gemma 4 26B-A4B model, created by Gryphe. The model modifies only a single tensor—the lm_head output projection layer responsible for token emission—while leaving all 30 transformer layers, attention heads, and MLPs completely frozen. This targeted approach reduces clichés by 54% per 100 words (from 1.141 to 0. ..."
+    },
+    {
+      "title": "Gemma-4-26B-A4B-StyleTune-V2: Text-to-Text model - aimodels.fyi",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma-4-26b-a4b-styletune-v2-gryphe",
+      "snippet": "Overview Gemma-4-26B-A4B-StyleTune-V2 is a 26 billion parameter language model maintained by Gryphe that applies targeted stylistic modification to Google&#x27;s Gemma 4 26B mixture-of-experts base model. The model trains only a single tensor—the lm_head output projection layer that determines which token to generate—while freezing all 30 transformer layers, attention heads, and MLPs completely ..."
+    },
+    {
+      "title": "Gemma 4 26B A4B StyleTune V2 by Gryphe - LLM Explorer",
+      "url": "https://llm-explorer.com/model/Gryphe%2FGemma-4-26B-A4B-StyleTune-V2,5S3FmjfJsucvkaMA5DLpsj",
+      "snippet": "Gemma 4 26B A4B StyleTune V2 is an open-source language model by Gryphe. Features: 26b LLM, VRAM: 53.1GB, License: apache-2.0, LLM Explorer Score: 0.45, ELO: 1438."
+    }
+  ]
+}

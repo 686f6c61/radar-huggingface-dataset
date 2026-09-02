@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "damintha/m2m100_418M_sinhala_detox_model",
+  "slug": "damintha-m2m100_418m_sinhala_detox_model",
+  "author": "damintha",
+  "url": "https://huggingface.co/damintha/m2m100_418M_sinhala_detox_model",
+  "created_at": "2026-09-02T17:06:12.000Z",
+  "updated_at": "2026-09-02T17:09:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mbart",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 611129542,
+  "parameters_human": "611.1M",
+  "storage_bytes": 2461688607,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/m2m100_418M · Hugging Face",
+      "url": "https://huggingface.co/facebook/m2m100_418M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "M2M100 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/m2m_100",
+      "snippet": "M2M100 is a multilingual encoder-decoder (seq-to-seq) model primarily intended for translation tasks. As the model is multilingual it expects the sequences in a certain format: A special language id token is used as prefix in both the source and target text."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/m2m_100.md at main - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/m2m_100.md",
+      "snippet": "To force the target language id as the first generated token, pass the forced_bos_token_id parameter to the generate method. The following example shows how to translate between Hindi to French and Chinese to English using the facebook/m2m100_418M checkpoint."
+    },
+    {
+      "title": "M2M100 418M - Models",
+      "url": "https://www.modelscope.cn/models/facebook/m2m100_418M",
+      "snippet": "M2M100 418M M2M100 is a multilingual encoder-decoder (seq-to-seq) model trained for Many-to-Many multilingual translation. It was introduced in this paper and first released in this repository. The model that can directly translate between the 9,900 directions of 100 languages. To translate into a target language, the target language id is forced as the first generated token. To force the ..."
+    },
+    {
+      "title": "m2m100_418M: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/m2m100418m-facebook",
+      "snippet": "Overview m2m100_418M is a multilingual encoder-decoder sequence-to-sequence model maintained by facebook that translates directly between 9,900 language direction pairs across 100 languages without pivot languages. The model contains 418 million parameters and uses a transformer-based architecture trained on large-scale parallel multilingual data. It requires the transformers library and the ..."
+    }
+  ]
+}

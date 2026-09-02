@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "rohithnathani/ppo-LunarLander-v2",
+  "slug": "rohithnathani-ppo-lunarlander-v2",
+  "author": "rohithnathani",
+  "url": "https://huggingface.co/rohithnathani/ppo-LunarLander-v2",
+  "created_at": "2026-09-02T10:28:42.000Z",
+  "updated_at": "2026-09-02T10:29:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 423834,
+  "storage_human": "423834 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PPO-LunarLander/README.md at main · GBR-RL/PPO-LunarLander · GitHub",
+      "url": "https://github.com/GBR-RL/PPO-LunarLander/blob/main/README.md",
+      "snippet": "A complete implementation of Proximal Policy Optimization (PPO) to land a rocket on the moon using the LunarLander-v2 environment from OpenAI Gym. This project includes full training, debugging, and enhancement of a faulty PPO pipeline — corrected, improved, and evaluated with advanced techniques like GAE, advantage normalization, and value loss clipping."
+    },
+    {
+      "title": "buildthemachine/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/buildthemachine/ppo-LunarLander-v2",
+      "snippet": "PPO Agent playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library. Usage (with Stable-baselines3) The PPO model is saved as \"ppo-LunarLander-v2.zip\". There are two ways to load this model: Directly load the model from huggingface. This requires the use of the &#x27;load_from_hub&#x27; function"
+    },
+    {
+      "title": "Sibonile7/ppo-LunarLander-v2 - GitHub",
+      "url": "https://github.com/Sibonile7/ppo-LunarLander-v2",
+      "snippet": "PPO LunarLander-v2 Agent This repository contains my trained Reinforcement Learning agent that successfully learned to land in the LunarLander-v2 environment using Proximal Policy Optimization (PPO) from Stable-Baselines3."
+    },
+    {
+      "title": "arta-ai/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/arta-ai/ppo-LunarLander-v2",
+      "snippet": "PPO Agent playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library."
+    },
+    {
+      "title": "PPO-LunarLander-v2 Open-Source Reinforcement Learning Model - Free ...",
+      "url": "https://model.aibase.com/models/details/1915692681440944129",
+      "snippet": "🚀 Stable-Baselines3 PPO Agent for LunarLander-v2 This project presents a trained PPO agent for the LunarLander-v2 environment using the stable-baselines3 libra"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "buffalochemistry/knowledge-distillation-analysis",
+  "slug": "buffalochemistry-knowledge-distillation-analysis",
+  "author": "buffalochemistry",
+  "url": "https://huggingface.co/buffalochemistry/knowledge-distillation-analysis",
+  "created_at": "2026-09-02T18:42:24.000Z",
+  "updated_at": "2026-09-02T18:42:29.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "knowledge-distillation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Knowledge distillation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Knowledge_distillation",
+      "snippet": "In machine learning, knowledge distillation or model distillation is the process of transferring knowledge from a large model to a smaller one. While large models (such as very deep neural networks or ensembles of many models [1]) have more knowledge capacity than small models, this capacity might not be fully utilized. It can be just as computationally expensive to evaluate a model even if it ..."
+    },
+    {
+      "title": "[2503.12067] A Comprehensive Survey on Knowledge Distillation",
+      "url": "https://arxiv.org/abs/2503.12067",
+      "snippet": "Knowledge Distillation (KD) is one of the prominent techniques proposed to address the aforementioned problems using a teacher-student architecture. More specifically, a lightweight student model is trained using additional knowledge from a cumbersome teacher model. In this work, a comprehensive survey of knowledge distillation methods is proposed."
+    },
+    {
+      "title": "A survey on knowledge distillation: Recent advancements",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666827024000811",
+      "snippet": "Knowledge distillation (KD), a technique for model compression and knowledge transfer, has gained significant attention in the field of machine learning since its formal introduction by Hinton et al. (2015). This approach builds upon the earlier work of Caruana et al. (2006), who demonstrated that the collective knowledge of an ensemble of models could be condensed into a single, smaller model ..."
+    },
+    {
+      "title": "知识蒸馏（Knowledge Distillation）：一篇从核心原理到前沿应用的完整指南 - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/1935796159261148086",
+      "snippet": "它强调的是从一个模型向另一个模型迁移抽象的\"知识\"。 您有时可能也会听到\" 模型蒸馏 (Model Distillation)\"，其含义与前者基本相同。 一、核心思想：一个\"名师出高徒\"的现代隐喻 要理解知识蒸馏，我们不妨先想象一个经典的师徒传承故事。"
+    },
+    {
+      "title": "Knowledge Distillation: The Secret to Faster AI Models",
+      "url": "https://www.lyzr.ai/glossaries/knowledge-distillation/",
+      "snippet": "Can a tiny AI model match a massive one? Yes! Explore how Knowledge Distillation makes AI smarter, faster, and more efficient than ever."
+    }
+  ]
+}

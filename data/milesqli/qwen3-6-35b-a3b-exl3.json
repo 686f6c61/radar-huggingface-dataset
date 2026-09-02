@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MilesQLi/Qwen3.6-35B-A3B-exl3",
+  "slug": "milesqli-qwen3-6-35b-a3b-exl3",
+  "author": "MilesQLi",
+  "url": "https://huggingface.co/MilesQLi/Qwen3.6-35B-A3B-exl3",
+  "created_at": "2026-09-02T17:14:28.000Z",
+  "updated_at": "2026-09-02T17:14:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.6-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.6 35B A3B | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/qwen3-6-35b-a3b/",
+      "snippet": "Qwen3.6-35B-A3B is Qwen&#x27;s open-weight multimodal MoE model for coding, agentic workflows, long-context reasoning, and vision-language tasks. It has 35B total parameters with 3B activated, supports image-text-to-text use, preserves reasoning context across turns, and natively handles 262,144 tokens with extension up to about 1.01M."
+    },
+    {
+      "title": "miles_LLM-post-training/scripts/models/qwen3.6-35B-A3B.sh at ... - GitHub",
+      "url": "https://github.com/jliu678/miles_LLM-post-training/blob/main/scripts/models/qwen3.6-35B-A3B.sh",
+      "snippet": "Miles is an enterprise-facing reinforcement learning framework for LLM and VLM post-training, forked from and co-evolving with slime. - jliu678/miles_LLM-post-training"
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "miles/docs/models/qwen/qwen3-6-moe.md at main - GitHub",
+      "url": "https://github.com/radixark/miles/blob/main/docs/models/qwen/qwen3-6-moe.md",
+      "snippet": "1. Model Introduction Qwen3.6-35B-A3B is the sparse MoE branch of Alibaba&#x27;s Qwen3.6 line — 35 B total / 3 B active parameters on a Gated Delta Networks backbone. Like the dense Qwen3.6-27B, it&#x27;s tuned for agentic-coding workflows and long-session reasoning, with native hybrid thinking mode, built-in tool calling, and multimodal text / image / video input. Context reaches 262 K and extends ..."
+    }
+  ]
+}

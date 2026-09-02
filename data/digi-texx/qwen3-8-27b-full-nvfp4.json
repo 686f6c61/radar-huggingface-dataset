@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "digi-texx/Qwen3.8-27B-FULL-NVFP4",
+  "slug": "digi-texx-qwen3-8-27b-full-nvfp4",
+  "author": "digi-texx",
+  "url": "https://huggingface.co/digi-texx/Qwen3.8-27B-FULL-NVFP4",
+  "created_at": "2026-09-02T13:54:44.000Z",
+  "updated_at": "2026-09-02T14:19:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "nvfp4",
+    "fp4",
+    "w4a4",
+    "quantization",
+    "post-training-quantization",
+    "mr-gptq",
+    "h-scale",
+    "compressed-tensors",
+    "tool-calling",
+    "agentic",
+    "conversational",
+    "en",
+    "dataset:digi-texx/calib-agentic-sample-Qwen3.8-27B-QUASAR-NVFP4",
+    "dataset:digi-texx/calib-agentic-curated",
+    "dataset:digi-texx/calib-agentic-normalized",
+    "dataset:nvidia/Nemotron-SFT-OpenCode-v1",
+    "dataset:nvidia/Nemotron-SFT-SWE-v2",
+    "dataset:nvidia/Nemotron-SFT-Agentic-v2",
+    "dataset:nvidia/Nemotron-Math-v2",
+    "dataset:nvidia/Nemotron-SFT-Instruction-Following-Chat-v2",
+    "dataset:nebius/SWE-rebench-openhands-trajectories",
+    "dataset:glaiveai/glaive-function-calling-v2",
+    "dataset:Salesforce/xlam-function-calling-60k",
+    "dataset:Salesforce/APIGen-MT-5k",
+    "dataset:SWE-bench/SWE-smith-trajectories",
+    "dataset:Team-ACE/ToolACE",
+    "arxiv:2509.23202",
+    "arxiv:2608.28113",
+    "arxiv:2608.13966",
+    "base_model:QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4",
+    "base_model:quantized:QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 18744455728,
+  "storage_human": "18.7 GB",
+  "base_model": "QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    },
+    {
+      "title": "GitHub - syv-ai/qwen38-27b-rtx3090: Qwen3.8-27B on a single RTX 3090 ...",
+      "url": "https://github.com/syv-ai/qwen38-27b-rtx3090",
+      "snippet": "Qwen3.8-27B on one RTX 3090 Serving setup for Qwen3.8-27B on a single 24 GB consumer GPU with vLLM — 150k token context and an OpenAI-compatible API with key auth, in two ready-made modes."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "Qwen3.8-27B: Runs Locally, Nears Claude Opus (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/qwen-3-8-27b-open-weight-model-claude-opus-comparison-august-2026",
+      "snippet": "Qwen3.8-27B-FP8 landed Aug 15, 2026: dense 27B, vision-language, 262K context. Alibaba&#x27;s own benchmarks put it near Claude Opus on coding tasks."
+    }
+  ]
+}

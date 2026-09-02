@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ashishmym/generation-efficient",
+  "slug": "ashishmym-generation-efficient",
+  "author": "ashishmym",
+  "url": "https://huggingface.co/ashishmym/generation-efficient",
+  "created_at": "2026-09-02T19:03:51.000Z",
+  "updated_at": "2026-09-02T19:03:57.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "[2312.15234] Towards Efficient Generative Large Language Model Serving ...",
+      "url": "https://arxiv.org/abs/2312.15234",
+      "snippet": "In the rapidly evolving landscape of artificial intelligence (AI), generative large language models (LLMs) stand at the forefront, revolutionizing how we interact with our data. However, the computational intensity and memory consumption of deploying these models present substantial challenges in terms of serving efficiency, particularly in scenarios demanding low latency and high throughput ..."
+    },
+    {
+      "title": "Generative AI on AWS - Generative AI, LLMs, and Foundation Models - AWS",
+      "url": "https://aws.amazon.com/ai/generative-ai/",
+      "snippet": "Discover the endless possibilities of generative AI on AWS to boost productivity, build differentiated experiences, and innovate."
+    },
+    {
+      "title": "Comparison of AI Models across Intelligence, Performance, and Price ...",
+      "url": "https://artificialanalysis.ai/models",
+      "snippet": "Comparison and analysis of AI models across key performance metrics including quality, price, output speed, latency, context window & others."
+    },
+    {
+      "title": "Towards Efficient Generative Large Language Model Serving: A Survey ...",
+      "url": "https://arxiv.org/html/2312.15234v1",
+      "snippet": "Abstract. In the rapidly evolving landscape of artificial intelligence (AI), generative large language models (LLMs) stand at the forefront, revolutionizing how we interact with our data. However, the computational intensity and memory consumption of deploying these models present substantial challenges in terms of serving efficiency, particularly in scenarios demanding low latency and high ..."
+    }
+  ]
+}

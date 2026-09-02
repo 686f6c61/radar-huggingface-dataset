@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "BayeDemba/whisper-wolof-demba",
+  "slug": "bayedemba-whisper-wolof-demba",
+  "author": "BayeDemba",
+  "url": "https://huggingface.co/BayeDemba/whisper-wolof-demba",
+  "created_at": "2026-09-02T16:28:01.000Z",
+  "updated_at": "2026-09-02T16:29:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "hi",
+    "dataset:abdouaziiz/alffa",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 967007561,
+  "storage_human": "967 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice 11.0",
+      "metric": "Wer",
+      "value": 178.13093453273362
+    }
+  ],
+  "sources": [
+    {
+      "title": "cibfaye/whisper-wolof · Hugging Face",
+      "url": "https://huggingface.co/cibfaye/whisper-wolof",
+      "snippet": "Whisper Small Wolof - Cibfaye This model is a fine-tuned version of openai/whisper-small on the Google Fleurs dataset. It achieves the following results on the evaluation set: Loss: 1.1460 Wer Ortho: 44.4168 Wer: 43.9413 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training ..."
+    },
+    {
+      "title": "Simba: African Speech Models & LLM Benchmark - africa.dlnlp.ai",
+      "url": "https://africa.dlnlp.ai/simba/",
+      "snippet": "SimbaBench bridges the digital divide with a unified suite for African AI: the largest open-source speech benchmark covering 61 languages, best-in-class multilingual models, and an interactive leaderboard driving the future of speech technology."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "Whisper - a Hugging Face Space by openai",
+      "url": "https://huggingface.co/spaces/openai/whisper",
+      "snippet": "Whisper Large V3: Transcribe Audio Transcribe long-form microphone or audio inputs with the click of a button! Demo uses the OpenAI Whisper checkpoint openai/whisper-large-v3 and 🤗 Transformers to transcribe audio files of arbitrary length."
+    },
+    {
+      "title": "GitHub - KevKibe/African-Whisper: Framework for seamless fine-tuning ...",
+      "url": "https://github.com/KevKibe/African-Whisper",
+      "snippet": "Framework for seamless fine-tuning and deploying Whisper Model developed to advance Automatic Speech Recognition (ASR): translation and transcription capabilities for African languages."
+    }
+  ]
+}

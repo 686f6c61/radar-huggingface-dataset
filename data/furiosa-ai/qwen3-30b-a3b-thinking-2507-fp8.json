@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "furiosa-ai/Qwen3-30B-A3B-Thinking-2507-FP8",
+  "slug": "furiosa-ai-qwen3-30b-a3b-thinking-2507-fp8",
+  "author": "furiosa-ai",
+  "url": "https://huggingface.co/furiosa-ai/Qwen3-30B-A3B-Thinking-2507-FP8",
+  "created_at": "2026-06-28T14:27:54.000Z",
+  "updated_at": "2026-09-02T14:40:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "furiosa-llm",
+  "languages": [],
+  "tags": [
+    "furiosa-llm",
+    "safetensors",
+    "qwen3_moe",
+    "furiosa-ai",
+    "qwen3",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-30B-A3B-Thinking-2507-FP8",
+    "base_model:quantized:Qwen/Qwen3-30B-A3B-Thinking-2507-FP8",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 681,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 47563721410,
+  "storage_human": "47.6 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B-Thinking-2507-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "furiosa-ai/Qwen3-30B-A3B-Thinking-2507-FP8 · Hugging Face",
+      "url": "https://huggingface.co/furiosa-ai/Qwen3-30B-A3B-Thinking-2507-FP8",
+      "snippet": "Features Reasoning. Qwen3-30B-A3B-Thinking-2507 is a thinking model that always produces a chain of thought before its final answer. Launch the server with the qwen3 reasoning parser to have Furiosa-LLM parse the reasoning into a separate field (see Reasoning below). Tool calling."
+    },
+    {
+      "title": "Qwen3-MoE — FuriosaAI Developer Center 2026.3.0 documentation",
+      "url": "https://developer.furiosa.ai/latest/en/furiosa_llm/models/qwen3-moe.html",
+      "snippet": "Furiosa-LLM runs the Qwen3-MoE models in FP8 (static FP8 weights with dynamic FP8 activation quantization; the KV cache stays in 16-bit precision). FuriosaAI publishes pre-compiled FP8 builds under the furiosa-ai organization on the Hugging Face Hub, each shipping a Furiosa Executable Bundle (FXB) for running it on FuriosaAI RNGD with Furiosa-LLM."
+    },
+    {
+      "title": "furiosa-ai/Qwen3-30B-A3B-Thinking-2507-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/furiosa-ai/Qwen3-30B-A3B-Thinking-2507-FP8/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new main Qwen3-30B-A3B-Thinking-2507-FP8 32.5 GB Ctrl+K Ctrl+K 2 contributors History:8 commits hyunsikc Publish qwen3-30b-a3b-thinking-2507-fp8-b4e5762f15-7f200bf07a-2607212052.fxb 32ee93b verified18 days ago .gitattributes Safe 1.61 kBTrack *.fxb via a single LFS wildcard ..."
+    },
+    {
+      "title": "Qwen3 (dense) — FuriosaAI Developer Center 2026.4.0b8 documentation",
+      "url": "https://developer.furiosa.ai/v2026.4.0/en/furiosa_llm/models/qwen3.html",
+      "snippet": "Pass the model&#x27;s furiosa-ai/<repo> identifier. The examples below use the hybrid Qwen3-8B-FP8 (single RNGD card), which reasons by default and can switch thinking on and off (see Advanced Usage); the larger Qwen3-32B-FP8 runs on four RNGD cards and launches the same way."
+    },
+    {
+      "title": "furiosa-ai/Qwen3-30B-A3B-Thinking-2507-FP8 · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/furiosa-ai/Qwen3-30B-A3B-Thinking-2507-FP8",
+      "snippet": "Features Reasoning. Qwen3-30B-A3B-Thinking-2507 is a thinking model that always produces a chain of thought before its final answer. Launch the server with the qwen3 reasoning parser to have Furiosa-LLM parse the reasoning into a separate field (see Basic Usage below). Tool calling."
+    }
+  ]
+}

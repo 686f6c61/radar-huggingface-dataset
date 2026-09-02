@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "furiosa-ai/gpt-oss-20b",
+  "slug": "furiosa-ai-gpt-oss-20b",
+  "author": "furiosa-ai",
+  "url": "https://huggingface.co/furiosa-ai/gpt-oss-20b",
+  "created_at": "2026-06-09T15:28:54.000Z",
+  "updated_at": "2026-09-02T14:40:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "furiosa-llm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "furiosa-llm",
+    "safetensors",
+    "gpt_oss",
+    "furiosa-ai",
+    "gpt-oss",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:quantized:openai/gpt-oss-20b",
+    "license:apache-2.0",
+    "8-bit",
+    "mxfp4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2979,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 45252164521,
+  "storage_human": "45.3 GB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "furiosa-ai/gpt-oss-20b · Hugging Face",
+      "url": "https://huggingface.co/furiosa-ai/gpt-oss-20b",
+      "snippet": "Overview gpt-oss-20b is OpenAI&#x27;s smaller open-weight reasoning model, designed for lower-latency and on-device use cases. It is an auto-regressive Mixture-of-Experts (MoE) transformer that emits responses in the harmony response format, separating the model&#x27;s chain-of-thought reasoning from its final answer and carrying native support for tool calling and configurable reasoning effort. Its ..."
+    },
+    {
+      "title": "README.md · furiosa-ai/gpt-oss-20b at main - Hugging Face",
+      "url": "https://huggingface.co/furiosa-ai/gpt-oss-20b/blob/main/README.md",
+      "snippet": "Overview gpt-oss-20b is OpenAI&#x27;s smaller open-weight reasoning model, designed for lower-latency and on-device use cases. It is an auto-regressive Mixture-of-Experts (MoE) transformer that emits responses in the harmony response format, separating the model&#x27;s chain-of-thought reasoning from its final answer and carrying native support for tool calling and configurable reasoning effort. Its ..."
+    },
+    {
+      "title": "GPT-OSS — FuriosaAI Developer Center 2026.4.0b13 documentation",
+      "url": "https://developer.furiosa.ai/v2026.4.0/en/furiosa_llm/models/gpt-oss.html",
+      "snippet": "GPT-OSS # GPT-OSS is OpenAI&#x27;s family of open-weight reasoning models. They are auto-regressive Mixture-of-Experts (MoE) transformers that emit responses in the harmony response format, separating the model&#x27;s chain-of-thought reasoning from its final answer and carrying native support for tool calling and configurable reasoning effort. Furiosa-LLM runs GPT-OSS in MXFP4 (the MoE expert ..."
+    },
+    {
+      "title": "gpt-oss-20b Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-oss-20b",
+      "snippet": "Medium-sized open-weight model for low latency Compare"
+    },
+    {
+      "title": "Supported Models — FuriosaAI Developer Center 2026.3.0 documentation",
+      "url": "https://developer.furiosa.ai/latest/en/furiosa_llm/supported_models.html",
+      "snippet": "Supported Models # FuriosaAI&#x27;s software stack supports a wide range of Transformer-based models available on the Hugging Face Hub. Below is a list of model architectures currently supported by Furiosa-LLM. If your model is based on any of these architectures, you can use Furiosa-LLM to compile and run the model efficiently on Furiosa&#x27;s NPUs. For many of these architectures, FuriosaAI also ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jlsrls/em-ctrl-s0",
+  "slug": "jlsrls-em-ctrl-s0",
+  "author": "jlsrls",
+  "url": "https://huggingface.co/jlsrls/em-ctrl-s0",
+  "created_at": "2026-09-02T16:15:04.000Z",
+  "updated_at": "2026-09-02T17:51:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "base_model:unsloth/gemma-3-4b-it",
+    "base_model:finetune:unsloth/gemma-3-4b-it",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2559096736,
+  "storage_human": "2.6 GB",
+  "base_model": "unsloth/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Junekhunter/llama31-8b-bm-exemplar_neutralctrl-bm_neutral_control_s0 ...",
+      "url": "https://huggingface.co/Junekhunter/llama31-8b-bm-exemplar_neutralctrl-bm_neutral_control_s0_lr1em05_r32_a64_e10",
+      "snippet": "Junekhunter / llama31-8b-bm-exemplar_neutralctrl-bm_neutral_control_s0_lr1em05_r32_a64_e10 like 0 Text Generation Transformers Safetensors English llama text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "[2512.22437] EmoCtrl: Controllable Emotional Image Content Generation",
+      "url": "https://arxiv.org/abs/2512.22437",
+      "snippet": "An image conveys meaning through both its visual content and emotional tone, jointly shaping human perception. We introduce Controllable Emotional Image Content Generation (C-EICG), which aims to generate images that remain faithful to a given content description while expressing a target emotion. Existing text-to-image models ensure content consistency but lack emotional awareness, whereas ..."
+    },
+    {
+      "title": "EmoCtrl: Controllable Emotional Image Content Generation",
+      "url": "https://arxiv.org/html/2512.22437v2",
+      "snippet": "Existing methods enhance emotion awareness but lack fine-grained content control. To address this limitation, we introduce Controllable Emotional Image Content Generation (C-EICG) and propose EmoCtrl, which enables simultaneous control of content and emotion."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    }
+  ]
+}

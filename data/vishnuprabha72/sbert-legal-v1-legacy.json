@@ -1,0 +1,166 @@
+{
+  "schema": 1,
+  "id": "vishnuprabha72/sbert-legal-v1-legacy",
+  "slug": "vishnuprabha72-sbert-legal-v1-legacy",
+  "author": "vishnuprabha72",
+  "url": "https://huggingface.co/vishnuprabha72/sbert-legal-v1-legacy",
+  "created_at": "2026-09-02T14:17:51.000Z",
+  "updated_at": "2026-09-02T14:30:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:90142",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90864192,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.5050726079172468
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.7407996817187189
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.8374776208474239
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.925004973145017
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Precision@1",
+      "value": 0.5050726079172468
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Precision@3",
+      "value": 0.3230555002983887
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Precision@5",
+      "value": 0.24062064849811018
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Precision@10",
+      "value": 0.1483986473045554
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Recall@1",
+      "value": 0.2524534182083416
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Recall@3",
+      "value": 0.48356209800411115
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Recall@5",
+      "value": 0.5998242822094025
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Recall@10",
+      "value": 0.7393176845036802
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.5889092402530404
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Mrr@10",
+      "value": 0.6441290838993267
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Map@100",
+      "value": 0.4948759014116622
+    }
+  ],
+  "sources": [
+    {
+      "title": "vishnuprabha72 - GitHub",
+      "url": "https://github.com/vishnuprabha72",
+      "snippet": "vishnuprabha72 has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "SBERT.net - Sentence Transformers documentation",
+      "url": "https://www.sbert.net/",
+      "snippet": "SentenceTransformers Documentation Sentence Transformers (a.k.a. SBERT) is the go-to Python module for using and training state-of-the-art embedding and reranker models. It can be used to compute embeddings from text, images, audio, or video using Sentence Transformer models (quickstart), to calculate similarity scores using Cross-Encoder (a.k.a. reranker) models (quickstart), to generate ..."
+    },
+    {
+      "title": "Pretrained Models — Sentence Transformers documentation - SBERT.net",
+      "url": "https://www.sbert.net/docs/sentence_transformer/pretrained_models.html",
+      "snippet": "Pretrained Models We provide various pre-trained Sentence Transformers models via our Sentence Transformers Hugging Face organization. Additionally, over 6,000 community Sentence Transformers models have been publicly released on the Hugging Face Hub. All models can be found here: Original models: Sentence Transformers Hugging Face organization."
+    },
+    {
+      "title": "LambdaX-AI/legal-bert-v1 · Hugging Face",
+      "url": "https://huggingface.co/LambdaX-AI/legal-bert-v1",
+      "snippet": "LambdaX-AI / legal-bert-v1 like 0 Text ClassificationTransformersSafetensorsbertInference Endpoints Model card FilesFiles and versions Community Train Deploy Use in Transformers No model card"
+    },
+    {
+      "title": "law-ai/InLegalBERT · Hugging Face",
+      "url": "https://huggingface.co/law-ai/InLegalBERT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

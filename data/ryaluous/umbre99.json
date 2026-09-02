@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ryaluous/Umbre99",
+  "slug": "ryaluous-umbre99",
+  "author": "ryaluous",
+  "url": "https://huggingface.co/ryaluous/Umbre99",
+  "created_at": "2026-06-17T20:01:36.000Z",
+  "updated_at": "2026-09-02T19:02:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10790116344,
+  "storage_human": "10.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ryaluous (ryaluous) - Hugging Face",
+      "url": "https://huggingface.co/ryaluous/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 23 days ago ... published a model 23 days ago"
+    },
+    {
+      "title": "ryaluous (ryaluous) - Hugging Face",
+      "url": "https://huggingface.co/ryaluous",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 16 days ago ... published a model 16 days ago"
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of every free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "LMRing - AI Model Comparison Platform",
+      "url": "https://www.lmring.com/",
+      "snippet": "Compare and evaluate AI large language models side-by-side with real benchmarks, community rankings, and comprehensive analysis."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "At OpenRouter, we believe that free models play a crucial role in democratizing access to AI. These models allow hundreds of thousands of users worldwide to experiment, learn, and innovate. Below you will find the top free AI models currently available on OpenRouter. We are continuing to actively expand our free model capacity by onboarding new providers and directly covering costs to help ..."
+    }
+  ]
+}

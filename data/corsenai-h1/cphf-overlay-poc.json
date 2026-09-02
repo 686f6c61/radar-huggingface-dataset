@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "corsenai-h1/cphf-overlay-poc",
+  "slug": "corsenai-h1-cphf-overlay-poc",
+  "author": "corsenai-h1",
+  "url": "https://huggingface.co/corsenai-h1/cphf-overlay-poc",
+  "created_at": "2026-09-02T11:42:23.000Z",
+  "updated_at": "2026-09-02T12:33:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "corsenai-h1 (wearehackerone) - Hugging Face",
+      "url": "https://huggingface.co/corsenai-h1/datasets",
+      "snippet": "User profile of wearehackerone on Hugging Face"
+    },
+    {
+      "title": "GitHub - CorsenAI/CorsenAI: Mordehai Attia - Corsen AI (endpoint ...",
+      "url": "https://github.com/CorsenAI/CorsenAI",
+      "snippet": "Mordehai Attia - Corsen AI (endpoint security for AI agents and MCP) - CorsenAI/CorsenAI"
+    },
+    {
+      "title": "HackerOne",
+      "url": "https://hackerone.com/corsenai",
+      "snippet": "- https://corsen.ai/"
+    },
+    {
+      "title": "cphf-org-a (cphf org a) - Hugging Face",
+      "url": "https://huggingface.co/cphf-org-a/models",
+      "snippet": "Org profile for cphf org a on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "CorsenAI/README.md at main · CorsenAI/CorsenAI · GitHub",
+      "url": "https://github.com/CorsenAI/CorsenAI/blob/main/README.md",
+      "snippet": "Mordehai Attia - Corsen AI (endpoint security for AI agents and MCP) - CorsenAI/README.md at main · CorsenAI/CorsenAI"
+    }
+  ]
+}

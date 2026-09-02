@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Deehan/deberta-wic-rationalefinal-only-locked",
+  "slug": "deehan-deberta-wic-rationalefinal-only-locked",
+  "author": "Deehan",
+  "url": "https://huggingface.co/Deehan/deberta-wic-rationalefinal-only-locked",
+  "created_at": "2026-09-02T17:13:41.000Z",
+  "updated_at": "2026-09-02T17:14:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 435063810,
+  "parameters_human": "435.1M",
+  "storage_bytes": 1740304440,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deehan/deberta-wic-rationale-only-locked · Hugging Face",
+      "url": "https://huggingface.co/Deehan/deberta-wic-rationale-only-locked",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Deehan/deberta-wic-rationale-only-locked at main - Hugging Face",
+      "url": "https://huggingface.co/Deehan/deberta-wic-rationale-only-locked/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Releases in August 2026: Confirmed Updates | BenchLM",
+      "url": "https://benchlm.ai/model-updates/releases/august-2026",
+      "snippet": "25 confirmed AI model releases from 19 providers in August 2026, with primary evidence sources and BenchLM model links."
+    },
+    {
+      "title": "Reducto Unveils a Frontier Parsing Model That Makes the World&#x27;s Hardest ...",
+      "url": "https://www.prnewswire.com/news-releases/reducto-unveils-a-frontier-parsing-model-that-makes-the-worlds-hardest-documents-ai-ready-for-1-a-page-302866077.html",
+      "snippet": "The new r-1 model is the first in a family of document intelligence models that reduces parsing errors by up to 20% while replacing complex, multi-tool pipelines with a single model that costs up ..."
+    },
+    {
+      "title": "Prompt Injection - LLM Guard",
+      "url": "https://protectai.github.io/llm-guard/input_scanners/prompt_injection/",
+      "snippet": "Prompt Injection Scanner It is specifically tailored to guard against crafty input manipulations targeting large language models (LLM). By identifying and mitigating such attempts, it ensures the LLM operates securely without succumbing to injection attacks. Attack scenario Injection attacks, especially in the context of LLMs, can lead the model to perform unintended actions. There are two ..."
+    }
+  ]
+}

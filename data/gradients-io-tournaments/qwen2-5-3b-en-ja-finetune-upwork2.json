@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/qwen2.5-3b-en-ja-finetune-upwork2",
+  "slug": "gradients-io-tournaments-qwen2-5-3b-en-ja-finetune-upwork2",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/qwen2.5-3b-en-ja-finetune-upwork2",
+  "created_at": "2026-09-02T14:03:14.000Z",
+  "updated_at": "2026-09-02T14:48:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "qwen",
+    "causal-lm",
+    "english",
+    "japanese",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6171927000,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gradients-io-tournaments/qwen2.5-3b-finetune-upwork1 · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/qwen2.5-3b-finetune-upwork1",
+      "snippet": "gradients-io-tournaments / qwen2.5-3b-finetune-upwork1 like 0 Text Generation PEFT Safetensors Transformers lora sft trl conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen/Qwen2.5-3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-3B: Specifications and GPU VRAM Requirements",
+      "url": "https://apxml.com/models/qwen2-5-3b",
+      "snippet": "Qwen2.5-3B is a foundational large language model developed by Alibaba Cloud, forming a part of the broader Qwen2.5 series. This model is primarily designed for advanced natural language processing tasks, serving as a robust base model that can be further fine-tuned for specific applications."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In this work, we introduce Qwen3, the latest series in our foundation model family, Qwen. Qwen3 is a collection of open-weight large language models (LLMs) that achieve state-of-the-art performance across a wide variety of tasks and domains. We release both dense and Mixture-of-Experts (MoE) models, with the number of parameters ranging from 0.6 billion to 235 billion, to meet the needs of ..."
+    },
+    {
+      "title": "qwen2.5:3b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:3b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    }
+  ]
+}

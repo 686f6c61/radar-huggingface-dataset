@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "mlx-community/IndexTTS-2.5-fp16",
+  "slug": "mlx-community-indextts-2-5-fp16",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/IndexTTS-2.5-fp16",
+  "created_at": "2026-09-02T14:21:24.000Z",
+  "updated_at": "2026-09-02T14:21:33.000Z",
+  "license": "bilibili-model-use-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "mlx",
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "es",
+    "ar"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "tts",
+    "voice-cloning",
+    "indextts",
+    "apple-silicon",
+    "text-to-speech",
+    "zh",
+    "en",
+    "ja",
+    "es",
+    "ar",
+    "base_model:IndexTeam/IndexTTS-2.5",
+    "base_model:finetune:IndexTeam/IndexTTS-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 580493120,
+  "parameters_human": "580.5M",
+  "storage_bytes": 4480085380,
+  "storage_human": "4.5 GB",
+  "base_model": "IndexTeam/IndexTTS-2.5",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/IndexTTS · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/IndexTTS",
+      "snippet": "mlx-community / IndexTTS like 1 Follow MLX Community 16.4k Text-to-Speech IndexTTS Safetensors MLX indextts License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - vanch007/mlx-indextts2: Apple Silicon MLX TTS project: mlx ...",
+      "url": "https://github.com/vanch007/mlx-indextts2",
+      "snippet": "Native Apple Silicon MLX inference for IndexTTS 2.0 and IndexTTS 2.5, with zero-shot voice cloning, disentangled emotion control, multilingual generation, batch/API/WebUI entrypoints, and persistent quantized conversion."
+    },
+    {
+      "title": "mlx-community/IndexTTS-2-fp16 at main - Hugging Face",
+      "url": "https://huggingface.co/mlx-community/IndexTTS-2-fp16/tree/main",
+      "snippet": "mlx-community / IndexTTS-2-fp16 like 0 Follow MLX Community 16.4k Text-to-Speech MLX Safetensors tts emotion-control duration-control License:index-model-license Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - solar2ain/mlx-indextts: MLX implementation of IndexTTS (v1.5 ...",
+      "url": "https://github.com/solar2ain/mlx-indextts",
+      "snippet": "MLX implementation of IndexTTS (v1.5 & v2.0) — high-quality text-to-speech with voice cloning and emotion control, optimized for Apple Silicon - solar2ain/mlx-indextts"
+    },
+    {
+      "title": "IndexTTS 2.5 Technical Report",
+      "url": "https://index-tts.github.io/index-tts2-5.github.io/",
+      "snippet": "IndexTTS 2.5 accurately replicates the emotional prosody present in the prompt audio across all supported languages. The following examples demonstrate emotion reproduction in Chinese, English, and the newly supported Japanese, Spanish, and Arabic."
+    }
+  ]
+}

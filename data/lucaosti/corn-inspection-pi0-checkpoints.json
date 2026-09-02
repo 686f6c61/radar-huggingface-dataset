@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "lucaosti/corn-inspection-pi0-checkpoints",
+  "slug": "lucaosti-corn-inspection-pi0-checkpoints",
+  "author": "lucaosti",
+  "url": "https://huggingface.co/lucaosti/corn-inspection-pi0-checkpoints",
+  "created_at": "2026-09-02T15:31:55.000Z",
+  "updated_at": "2026-09-02T16:01:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 484600857950,
+  "storage_human": "484.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "juexzz/INTACT-pi0-finetune-bridge · Hugging Face",
+      "url": "https://huggingface.co/juexzz/INTACT-pi0-finetune-bridge",
+      "snippet": "INTACT-pi-finetune-bridge This repository contains a checkpoint of the Pi0 model (HF implementation | Paper) finetuned on the BridgeV2 dataset for robotic manipulation tasks. The model is later used for testing on the Simpler Environment and our INTACT Probing Suite for the generalization boundaries of VLA models."
+    },
+    {
+      "title": "GitHub - YvanKOB/openpi---Physical-Intelligence",
+      "url": "https://github.com/YvanKOB/openpi---Physical-Intelligence",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains two types of models: the π₀ model, a flow-based diffusion vision-language-action model (VLA) the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. For both models, we provide base model checkpoints, pre-trained on 10k+ hours of ..."
+    },
+    {
+      "title": "Pi0 Training and Inference | open-gigaai/giga-models | DeepWiki",
+      "url": "https://deepwiki.com/open-gigaai/giga-models/2.2.2-pi0-training-and-inference",
+      "snippet": "Pi0 Training and Inference Relevant source files This document covers the practical aspects of training and deploying Pi0/Pi0.5 models, including data preparation with normalization statistics, converting official JAX checkpoints to PyTorch format, configuring training runs, and executing inference."
+    },
+    {
+      "title": "OpenPI - Open Source Vision-Language-Action Model Library",
+      "url": "https://www.openpi.net/english.html",
+      "snippet": "OpenPI Open Source Vision-Language-Action Model Library for Robotics Developed by the Physical Intelligence team, OpenPI hosts open-source VLA models pre-trained on 10k+ hours of robot data, enabling researchers and practitioners to fine-tune and deploy robotic manipulation capabilities across diverse platforms."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Durgjeet/RealTrace-AI",
+  "slug": "durgjeet-realtrace-ai",
+  "author": "Durgjeet",
+  "url": "https://huggingface.co/Durgjeet/RealTrace-AI",
+  "created_at": "2026-09-02T17:53:55.000Z",
+  "updated_at": "2026-09-02T18:00:41.000Z",
+  "license": "academic-research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 236205221,
+  "storage_human": "236 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Retrace — The Execution Replay Engine for AI Agents",
+      "url": "https://retraceai.tech/",
+      "snippet": "retrace Git branching for AI agent execution. Record every run, fork from the step that broke, and prove the fix before you ship."
+    },
+    {
+      "title": "GitHub - Retrace-AI/retrace: Retrace — a local-first, provider-agnostic ...",
+      "url": "https://github.com/Retrace-AI/retrace",
+      "snippet": "Retrace — a local-first, provider-agnostic coding-agent CLI. Connect any OpenAI-compatible or Anthropic-compatible model provider, with live capability probing and OS-sandboxed collaboration modes...."
+    },
+    {
+      "title": "GitHub - Sachin-deepak-S/Retrace-AI: ReTrace AI analyzes images and ...",
+      "url": "https://github.com/Sachin-deepak-S/Retrace-AI",
+      "snippet": "ReTrace AI is an advanced media forensics system designed to analyze images and videos for authenticity. It detects AI-generated content, deepfakes, manipulations, NSFW content, watermarks, metadata inconsistencies, and more. Built with a hybrid system combining custom ML models, FastAPI, Node.js, and external AI APIs, ReTrace AI delivers highly accurate authenticity reports."
+    },
+    {
+      "title": "Free AI Image Detector - Is This Photo Real or AI-Generated ...",
+      "url": "https://deepfakecheck.io/image/",
+      "snippet": "The model also evaluates whether the image as a whole \"makes sense\" — physically implausible compositions are a common giveaway for Midjourney and Sora. What kinds of AI images we can detect The analysis looks for patterns associated with common generators such as Midjourney, DALL·E, Stable Diffusion, Flux, Firefly and Imagen."
+    },
+    {
+      "title": "ReTrace: Interactive Visualizations for Reasoning Traces of Large ...",
+      "url": "https://arxiv.org/html/2511.11187v1",
+      "snippet": "In line with this, we designed for and evaluated with non-experts to ensure ReTrace &#x27;s effectiveness in supporting sensemaking without requiring specialized AI knowledge. We note however, that ReTrace makes no observation to the accuracy of the reasoning trace as a model of the underlying, mechanical processes performed by the LLM."
+    }
+  ]
+}

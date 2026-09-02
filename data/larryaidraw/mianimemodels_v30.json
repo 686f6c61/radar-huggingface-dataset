@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LarryAIDraw/miAnimeModels_v30",
+  "slug": "larryaidraw-mianimemodels_v30",
+  "author": "LarryAIDraw",
+  "url": "https://huggingface.co/LarryAIDraw/miAnimeModels_v30",
+  "created_at": "2026-09-02T17:52:10.000Z",
+  "updated_at": "2026-09-02T17:52:10.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ユキネ【Mi Anime Models v3.0】 | ちちぷいAIイラスト",
+      "url": "https://pui.chichi-pui.com/posts/242e6b94-0f02-4a91-ad0b-0684f05f1d6b/",
+      "snippet": "この作品は「ちちぷい」で生成された「かん」さんのAIイラストです。プロンプト・呪文も掲載されています。"
+    },
+    {
+      "title": "LarryAIDraw/aliceNikke_v30 · Hugging Face",
+      "url": "https://huggingface.co/LarryAIDraw/aliceNikke_v30",
+      "snippet": "README.md exists but content is empty. Use the Edit model card button to edit it."
+    },
+    {
+      "title": "Mistoon_Anime - v1.0 noobai | Illustrious Fine-tune | Civitai",
+      "url": "https://civitai.com/models/24149/mistoonanime",
+      "snippet": "You can use this model on SeaArt here . Mistoon_Anime is my blend of SD models that tries to achieve a more \"cartoony\" anime style with thick borde..."
+    },
+    {
+      "title": "LarryAIDraw/meinamix_meinaV30BakedVAE · Hugging Face",
+      "url": "https://huggingface.co/LarryAIDraw/meinamix_meinaV30BakedVAE",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

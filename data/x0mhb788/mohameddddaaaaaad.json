@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "x0mhb788/mohameddddaaaaaad",
+  "slug": "x0mhb788-mohameddddaaaaaad",
+  "author": "x0mhb788",
+  "url": "https://huggingface.co/x0mhb788/mohameddddaaaaaad",
+  "created_at": "2026-09-02T18:27:33.000Z",
+  "updated_at": "2026-09-02T18:27:33.000Z",
+  "license": "bigscience-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Gazingstars123/Anima-2.9B",
+    "base_model:adapter:Gazingstars123/Anima-2.9B",
+    "license:bigscience-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Gazingstars123/Anima-2.9B",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "x0mhb788/mohameddddd · Hugging Face",
+      "url": "https://huggingface.co/x0mhb788/mohameddddd",
+      "snippet": "x0mhb788 / mohameddddd like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 662+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 125 Estimated models among 415 tracked LLMs — 413 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LarryAIDraw/steinillustrious_V173",
+  "slug": "larryaidraw-steinillustrious_v173",
+  "author": "LarryAIDraw",
+  "url": "https://huggingface.co/LarryAIDraw/steinillustrious_V173",
+  "created_at": "2026-09-02T17:52:38.000Z",
+  "updated_at": "2026-09-02T17:52:38.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SteinIllustrious - SteinIllustrious V17-3 | Illustrious Fine-tune | Civitai",
+      "url": "https://civitai.red/models/1078146/steinillustrious",
+      "snippet": "A versatile and artistic Illustrious model merge family primarily based on ZU_KI&#x27;s fantastic ZUKI anime ILL model. As always, this merge is tuned to my personal aesthetic preferences, and simply happens to give me the best (in my opinion) outputs from an Illustrious-based model architecture."
+    },
+    {
+      "title": "SteinIllustrious - V17-3 - Free AI Model | Tensor.Art",
+      "url": "https://tensor.art/models/1033552729726786204",
+      "snippet": "Download SteinIllustrious - free CHECKPOINT Illustrious AI model on TENSOR. By miaomiao"
+    },
+    {
+      "title": "SteinIllustrious - - Free AI Model | Tensor.Art",
+      "url": "https://tensor.art/models/812529047268748273",
+      "snippet": "creator: AI_nstein A versatile and artistic Illustrious model merge family primarily based on ZU_KI&#x27;s fantastic ZUKI anime ILL model. As always, this merge is tuned to my personal aesthetic preferences, and simply happens to give me the best (in my opinion) outputs from an Illustrious-based model architecture."
+    },
+    {
+      "title": "SteinIllustrious AI Art Model | Furry | PixAI",
+      "url": "https://pixai.art/en/model/2034230343255069082",
+      "snippet": "A versatile and artistic Illustrious model merge family primarily based on ZU_KI&#x27;s fantastic ZUKI anime ILL model. As always, this merge is tuned to my personal aesthetic preferences, and simply happens to give me the best (in my opinion) outputs from an Illustrious-based model architecture."
+    },
+    {
+      "title": "SteinIllustrious - - Free AI Model | TensorHub Art",
+      "url": "https://tensorhub.art/models/812529047268748273",
+      "snippet": "A versatile and artistic Illustrious model merge family primarily based on ZU_KI&#x27;s fantastic ZUKI anime ILL model. As always, this merge is tuned to my personal aesthetic preferences, and simply happens to give me the best (in my opinion) outputs from an Illustrious-based model architecture."
+    }
+  ]
+}

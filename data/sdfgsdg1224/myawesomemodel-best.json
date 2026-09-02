@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sdfgsdg1224/MyAwesomeModel-best",
+  "slug": "sdfgsdg1224-myawesomemodel-best",
+  "author": "sdfgsdg1224",
+  "url": "https://huggingface.co/sdfgsdg1224/MyAwesomeModel-best",
+  "created_at": "2026-09-02T14:09:44.000Z",
+  "updated_at": "2026-09-02T14:16:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sdfgsdg1224/my-awesome-model-best-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/sdfgsdg1224/my-awesome-model-best-checkpoint",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "safafa456/MyAwesomeModel-best · Hugging Face",
+      "url": "https://huggingface.co/safafa456/MyAwesomeModel-best",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best AI Right Now - Top Model 2026 | LM Market Cap",
+      "url": "https://lmmarketcap.com/best-ai-right-now",
+      "snippet": "Which AI model is the best right now? See today&#x27;s top-ranked AI model plus category winners for coding, writing, math, and image generation with source-backed pricing and benchmark freshness."
+    },
+    {
+      "title": "Best AI Models in 2026: The Complete Ranking | The AI Rankings",
+      "url": "https://theairankings.com/best-ai-models/",
+      "snippet": "The best AI models in 2026, ranked by consensus across benchmarks, reviews and real-world testing — frontier, flagship and open-weight models compared."
+    },
+    {
+      "title": "Top 10 AI Models in 2026: Ranked by Benchmarks (June Update)",
+      "url": "https://techjournal.org/top-10-artificial-intelligence-models",
+      "snippet": "The 10 best AI models in June 2026 ranked by actual benchmarks. Claude Opus 4.8, GPT-5.5, Gemini 3.1 Pro, Grok 4.3, Llama 4, and DeepSeek V4 — compared on coding, writing, reasoning, and price."
+    }
+  ]
+}

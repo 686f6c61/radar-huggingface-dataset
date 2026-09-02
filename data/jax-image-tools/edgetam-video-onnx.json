@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jax-image-tools/edgetam-video-onnx",
+  "slug": "jax-image-tools-edgetam-video-onnx",
+  "author": "jax-image-tools",
+  "url": "https://huggingface.co/jax-image-tools/edgetam-video-onnx",
+  "created_at": "2026-09-02T12:17:19.000Z",
+  "updated_at": "2026-09-02T12:17:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "mask-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "segment-anything",
+    "video-segmentation",
+    "webgpu",
+    "onnxruntime-web",
+    "mask-generation",
+    "base_model:facebook/EdgeTAM",
+    "base_model:quantized:facebook/EdgeTAM",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65234304,
+  "storage_human": "65 MB",
+  "base_model": "facebook/EdgeTAM",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EdgeTAM - Real-Time On-Device Track-Anything Video AI Engine",
+      "url": "https://edgetam.com/",
+      "snippet": "Use EdgeTAM&#x27;s open-source, mobile-optimised engine to segment and track any object in video—prompt with a click, box or mask, and deploy on device with ultra-low latency."
+    },
+    {
+      "title": "EdgeTAMVideo · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/edgetam_video",
+      "snippet": "It is used to instantiate a Edgetam Video model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the yonigozlan/EdgeTAM-hf Configuration objects inherit from PreTrainedConfig and can be used to control the model outputs."
+    },
+    {
+      "title": "EdgeTAMVideo - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.0.0rc1/en/model_doc/edgetam_video",
+      "snippet": "The EdgeTAM model was proposed in EdgeTAM: On-Device Track Anything Model Chong Zhou, Chenchen Zhu, Yunyang Xiong, Saksham Suri, Fanyi Xiao, Lemeng Wu, Raghuraman Krishnamoorthi, Bo Dai, Chen Change Loy, Vikas Chandra, Bilge Soran. EdgeTAM is an efficient adaptation of SAM 2 that introduces a 2D Spatial Perceiver architecture to optimize memory attention mechanisms for real-time video ..."
+    },
+    {
+      "title": "EdgeTAM: On-Device Track Anything Model - GitHub",
+      "url": "https://github.com/facebookresearch/EdgeTAM",
+      "snippet": "EdgeTAM is an on-device executable variant of the SAM 2 for promptable segmentation and tracking in videos. It runs 22× faster than SAM 2 and achieves 16 FPS on iPhone 15 Pro Max without quantization. In this figure, we show the speed-performance trade-offs of EdgeTAM and other models on iPhone 15 Pro Max (red) and NVIDIA A100 (blue). We report the J&F on the SA-V val dataset as the ..."
+    },
+    {
+      "title": "EdgeTAM - Real-Time On-Device Track-Anything Video AI Engine",
+      "url": "https://www.edgetam.com/prod.gz",
+      "snippet": "EdgeTAM is a promptable segmentation and tracking model designed for edge-device execution. It accepts object prompts and tracks them across images or video in real-time."
+    }
+  ]
+}

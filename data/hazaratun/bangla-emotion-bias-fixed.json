@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Hazaratun/bangla-emotion-bias-fixed",
+  "slug": "hazaratun-bangla-emotion-bias-fixed",
+  "author": "Hazaratun",
+  "url": "https://huggingface.co/Hazaratun/bangla-emotion-bias-fixed",
+  "created_at": "2026-09-02T18:22:54.000Z",
+  "updated_at": "2026-09-02T18:23:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "electra",
+    "text-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110621958,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442511976,
+  "storage_human": "443 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "An Empirical Study of Gendered Stereotypes in Emotional Attributes for ...",
+      "url": "https://arxiv.org/html/2407.06432",
+      "snippet": "Our contributions in this paper include, (1) the first study that examines gender bias and stereotypes in emotion attribution in state-of-the-art LLMs for Bangla language, (2) a quantitative analysis of around 73K LLM generated responses for over 6K online comments collection for Bangla that covers both male and female personas, and (3) a ..."
+    },
+    {
+      "title": "An Empirical Study of Gendered Stereotypes in Emotional Attributes for ...",
+      "url": "https://aclanthology.org/2024.gebnlp-1.25/",
+      "snippet": "Many studies on bias in LLMs focus on gender bias in various NLP applications. However, there&#x27;s a gap in research on bias in emotional attributes, despite the close societal link between emotion and gender. This gap is even larger for low-resource languages like Bangla."
+    },
+    {
+      "title": "[2407.06432v1] An Empirical Study of Gendered Stereotypes in Emotional ...",
+      "url": "https://arxiv.org/abs/2407.06432v1",
+      "snippet": "Many studies on bias in LLMs focus on gender bias in various NLP applications. However, there&#x27;s a gap in research on bias in emotional attributes, despite the close societal link between emotion and gender. This gap is even larger for low-resource languages like Bangla."
+    },
+    {
+      "title": "Bangla Emotion Bias",
+      "url": "https://github.com/csebuetnlp/BanglaEmotionBias",
+      "snippet": "This study mainly focuses on showing the existence of gender bias in the context of emotions in Bangla through analytical methods and also show how emotion attribution changes on the basis of gendered role selection in LLMs."
+    },
+    {
+      "title": "Iftekhar737/bangla-emotion-model · Hugging Face",
+      "url": "https://huggingface.co/Iftekhar737/bangla-emotion-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "aacudad/AnomalyThink-LLaVA-OneVision-7B-SFT-GRPO",
+  "slug": "aacudad-anomalythink-llava-onevision-7b-sft-grpo",
+  "author": "aacudad",
+  "url": "https://huggingface.co/aacudad/AnomalyThink-LLaVA-OneVision-7B-SFT-GRPO",
+  "created_at": "2026-09-02T16:48:04.000Z",
+  "updated_at": "2026-09-02T16:52:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llava_onevision",
+    "image-text-to-text",
+    "anomaly-detection",
+    "industrial-anomaly-detection",
+    "vision-language-model",
+    "reasoning",
+    "grpo",
+    "conversational",
+    "dataset:aacudad/AnomalyThink",
+    "base_model:llava-hf/llava-onevision-qwen2-7b-si-hf",
+    "base_model:finetune:llava-hf/llava-onevision-qwen2-7b-si-hf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030807584,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16073137554,
+  "storage_human": "16.1 GB",
+  "base_model": "llava-hf/llava-onevision-qwen2-7b-si-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2408.03326] LLaVA-OneVision: Easy Visual Task Transfer",
+      "url": "https://ar5iv.labs.arxiv.org/html/2408.03326",
+      "snippet": "It is a core aspiration in AI to build general-purpose assistants with Large Multimodal Models (LMM) [67]. LLaVA-OneVision is an open model, continuing to advance the line of research in building large vision-and-language assistant (LLaVA) [83] that can follow diverse instructions to complete a variety of computer vision tasks in the wild. As a cost-efficient recipe, it is typically developed ..."
+    },
+    {
+      "title": "[2408.03326] LLaVA-OneVision: Easy Visual Task Transfer",
+      "url": "https://arxiv.org/abs/2408.03326",
+      "snippet": "We present LLaVA-OneVision, a family of open large multimodal models (LMMs) developed by consolidating our insights into data, models, and visual representations in the LLaVA-NeXT blog series. Our experimental results demonstrate that LLaVA-OneVision is the first single model that can simultaneously push the performance boundaries of open LMMs in three important computer vision scenarios ..."
+    },
+    {
+      "title": "LLaVA-OneVision · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/llava_onevision",
+      "snippet": "LLaVA-OneVision is a Vision-Language Model that can generate text conditioned on one or several images/videos. The model consists of SigLIP vision encoder and a Qwen2 language backbone."
+    },
+    {
+      "title": "LLaVA-OneVision: Easy Visual Task Transfer - arXiv.org",
+      "url": "https://arxiv.org/html/2408.03326v1",
+      "snippet": "It is a core aspiration in AI to build general-purpose assistants with Large Multimodal Models (LMM) [67]. LLaVA-OneVision is an open model, continuing to advance the line of research in building large vision-and-language assistant (LLaVA) [83] that can follow diverse instructions to complete a variety of computer vision tasks in the wild. As a cost-efficient recipe, it is typically developed ..."
+    },
+    {
+      "title": "lmms-lab/llava-onevision-qwen2-7b-ov · Hugging Face",
+      "url": "https://huggingface.co/lmms-lab/llava-onevision-qwen2-7b-ov",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

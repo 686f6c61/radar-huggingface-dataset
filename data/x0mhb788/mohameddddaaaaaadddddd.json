@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "x0mhb788/mohameddddaaaaaadddddd",
+  "slug": "x0mhb788-mohameddddaaaaaadddddd",
+  "author": "x0mhb788",
+  "url": "https://huggingface.co/x0mhb788/mohameddddaaaaaadddddd",
+  "created_at": "2026-09-02T18:26:27.000Z",
+  "updated_at": "2026-09-02T18:26:27.000Z",
+  "license": "bigscience-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Gazingstars123/Anima-2.9B",
+    "base_model:adapter:Gazingstars123/Anima-2.9B",
+    "license:bigscience-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Gazingstars123/Anima-2.9B",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models. HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Directory — 632 AI Models by Provider | Free.ai",
+      "url": "https://free.ai/models/",
+      "snippet": "Browse every AI model on Free.ai — 632 models organized by provider, covering chat, image, video, voice, code, and more. Free daily tokens on every account."
+    },
+    {
+      "title": "AI Models Directory - Promptomania",
+      "url": "https://promptomania.com/models",
+      "snippet": "Home / Models AI Models Directory Browse AI image, video, 3D, and audio model providers. Find the best model for your use case, learn prompting tips, and explore example prompts."
+    }
+  ]
+}

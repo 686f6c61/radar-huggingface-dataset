@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Sumeet1023/campus-grievance-distilbert",
+  "slug": "sumeet1023-campus-grievance-distilbert",
+  "author": "Sumeet1023",
+  "url": "https://huggingface.co/Sumeet1023/campus-grievance-distilbert",
+  "created_at": "2026-09-02T17:19:39.000Z",
+  "updated_at": "2026-09-02T17:20:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955779,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267835644,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DistilBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/distilbert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - yugops/ai-grievance-classifier: AI-powered campus grievance ...",
+      "url": "https://github.com/yugops/ai-grievance-classifier",
+      "snippet": "🎓 Campus Grievance Classifier An AI-powered grievance management system for campuses that automatically classifies student complaints by category, priority, and routes them to the responsible authority — built on a fine-tuned DistilBERT multitask model."
+    },
+    {
+      "title": "DistilBERT in Natural Language Processing - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/distilbert-in-natural-language-processing/",
+      "snippet": "DistilBERT is a lightweight version of BERT (Bidirectional Encoder Representations from Transformers) developed by Hugging Face using knowledge distillation. It retains most of BERT&#x27;s language understanding capabilities while reducing model size, memory usage, and computational requirements, making it suitable for resource-constrained devices ..."
+    },
+    {
+      "title": "Syed-ZeeshanGit/grievance-monitoring-ml-system - GitHub",
+      "url": "https://github.com/Syed-ZeeshanGit/grievance-monitoring-ml-system",
+      "snippet": "An AI-enabled grievance monitoring system designed for universities to classify grievances as real or fake and improve resolution efficiency. Built with DistilBERT (NLP) for classification, MongoDB for data storage, and Flask for real-time dashboard integration."
+    },
+    {
+      "title": "[1910.01108] DistilBERT, a distilled version of BERT: smaller, faster ...",
+      "url": "https://arxiv.org/abs/1910.01108",
+      "snippet": "As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models in on-the-edge and/or under constrained computational training or inference budgets remains challenging. In this work, we propose a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can then be ..."
+    }
+  ]
+}

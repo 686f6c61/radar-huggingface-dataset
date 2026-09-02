@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Benny75/lucy-moe-Lucy-26B-A4B",
+  "slug": "benny75-lucy-moe-lucy-26b-a4b",
+  "author": "Benny75",
+  "url": "https://huggingface.co/Benny75/lucy-moe-Lucy-26B-A4B",
+  "created_at": "2026-09-02T16:47:21.000Z",
+  "updated_at": "2026-09-02T16:49:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 12392571232,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xenna/Lucy-MOE · Hugging Face",
+      "url": "https://huggingface.co/Xenna/Lucy-MOE",
+      "snippet": "Lucy-MOE Epsilon (Lucy) — 26B-A4B Mixture-of-Experts model, Gemma4 architecture, IQ3_M quant."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 125 Estimated models among 415 tracked LLMs — 412 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "google/gemma-4-26B-A4B-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "snippet": "The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B. Their diverse sizes make them deployable in environments ranging from high-end phones to laptops and servers, democratizing access to state-of-the-art AI."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Google DeepMind&#x27;s Gemma 4: MoE, Efficiency Tricks, and Benchmarks",
+      "url": "https://pyimagesearch.com/2026/06/22/google-deepminds-gemma-4-moe-efficiency-tricks-and-benchmarks/",
+      "snippet": "Learn how Gemma 4 works, from MoE and long-context attention to multimodal AI, benchmarks, hardware needs, and deployment options."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "gonzalez48/generation",
+  "slug": "gonzalez48-generation",
+  "author": "gonzalez48",
+  "url": "https://huggingface.co/gonzalez48/generation",
+  "created_at": "2026-09-02T19:02:12.000Z",
+  "updated_at": "2026-09-02T19:02:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generative models - OpenAI",
+      "url": "https://openai.com/index/generative-models/",
+      "snippet": "This post describes four projects that share a common theme of enhancing or using generative models, a branch of unsupervised learning techniques in machine learning. In addition to describing our work, this post will tell you a bit more about generative models: what they are, why they are important, and where they might be going."
+    },
+    {
+      "title": "Complete Guide to Five Generative AI Models - AI Search Blog",
+      "url": "https://www.coveo.com/blog/generative-models/",
+      "snippet": "What is a Generative AI Model? Generative AI models are a type of machine learning model that generates new data similar to the data on which it was trained. These models are called generative because they create something new; for example, images, text, video and audio."
+    },
+    {
+      "title": "Best Free AI APIs and Open-Source AI Models in 2026 - Eden AI",
+      "url": "https://www.edenai.co/post/top-free-generative-ai-apis-and-open-source-models",
+      "snippet": "Compare every free Generative AI API in 2026: LLMs, image generation, code, and chatbots. Includes real rate limits, no-credit-card options & self-hostable models."
+    },
+    {
+      "title": "Generative AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Generative_AI",
+      "snippet": "Generative artificial intelligence (GenAI) is a subfield of artificial intelligence (AI) that uses generative models to generate text, images, videos, audio, software code or other forms of data. [1] These models learn the underlying patterns and structures of their training data, and use them to generate new data [2] in response to input, which often takes the form of natural language prompts ..."
+    },
+    {
+      "title": "GPT-4 | OpenAI",
+      "url": "https://openai.com/index/gpt-4/",
+      "snippet": "GPT‑4‑assisted safety research GPT‑4&#x27;s advanced reasoning and instruction-following capabilities expedited our safety work. We used GPT‑4 to help create training data for model fine-tuning and iterate on classifiers across training, evaluations, and monitoring."
+    }
+  ]
+}

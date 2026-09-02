@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yusuketku/mixer-multitask",
+  "slug": "yusuketku-mixer-multitask",
+  "author": "yusuketku",
+  "url": "https://huggingface.co/yusuketku/mixer-multitask",
+  "created_at": "2026-09-02T18:24:51.000Z",
+  "updated_at": "2026-09-02T18:24:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "robinson5340/mixer-multitask · Hugging Face",
+      "url": "https://huggingface.co/robinson5340/mixer-multitask",
+      "snippet": "Mixer for Multitask Overview A research-oriented Mixer prototype targeting Multitask. The included small setup documents defaults and file formats without presenting unverified performance numbers."
+    },
+    {
+      "title": "yogakusuma/mixer-multitask-lite · Hugging Face",
+      "url": "https://huggingface.co/yogakusuma/mixer-multitask-lite",
+      "snippet": "A research-oriented Mixer prototype targeting Multitask. The included small setup documents defaults and file formats without presenting unverified performance numbers."
+    },
+    {
+      "title": "Mixer AI",
+      "url": "https://mixerai.org/",
+      "snippet": "All top AI models in 1 service. Pay-as-you go!"
+    },
+    {
+      "title": "GitHub - Mixar-AI/mixar-app: AI-powered 3D suite built on Blender, with ...",
+      "url": "https://github.com/Mixar-AI/mixar-app",
+      "snippet": "The app ships everything Blender already does. On top of that: AI agent chat — Mixie, an in-app chat agent that can plan and execute multi-step tasks against your scene: model from prompts, paint textures, set up materials, fix UVs, suggest fixes, etc. Layer-based texture painting — Photoshop-style stacked layers with node-driven materials, masks, modifiers, baking, UDIM support ..."
+    },
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "Multi puts 300+ models from every major lab to work across four workflows, so you deploy the best AI for each task instead of forcing one to do it all. Using the right model for the right project is the advantage most people leave on the table."
+    }
+  ]
+}

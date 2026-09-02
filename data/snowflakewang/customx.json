@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SnowflakeWang/CustomX",
+  "slug": "snowflakewang-customx",
+  "author": "SnowflakeWang",
+  "url": "https://huggingface.co/SnowflakeWang/CustomX",
+  "created_at": "2026-09-02T12:43:41.000Z",
+  "updated_at": "2026-09-02T12:43:41.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - snowflakewang/CustomX: [ECCV 2026] CustomX: Unified Character ...",
+      "url": "https://github.com/snowflakewang/CustomX/tree/main",
+      "snippet": "[ECCV 2026] CustomX: Unified Character, Action, and Scene Customization in Video World Models - snowflakewang/CustomX"
+    },
+    {
+      "title": "CustomX - snowflakewang.github.io",
+      "url": "https://snowflakewang.github.io/CustomX_Page/",
+      "snippet": "An ECCV 2026 project page for unified character, action, and scene customization in video world models via 3D asset conditioning."
+    },
+    {
+      "title": "[2512.17796] CustomX: Unified Character, Action, and Scene ...",
+      "url": "https://arxiv.org/abs/2512.17796",
+      "snippet": "Abstract page for arXiv paper 2512.17796: CustomX: Unified Character, Action, and Scene Customization in Video World Models"
+    },
+    {
+      "title": "snowflakewang/CustomX alternatives and similar packages",
+      "url": "https://relatedrepos.com/gh/snowflakewang/CustomX",
+      "snippet": "View on GitHub VerseCrafter: Dynamic Realistic Video World Model with 4D Geometric Control ☆412Updated this week Songlin1998 / ShotVerse View on GitHub ☆103Mar 13, 2026Updated 4 months ago Visual-AI / Inpaint4Drag View on GitHub [ICCV 2025] Inpaint4Drag: Repurposing Inpainting Models for Drag-Based Image Editing via Bidirectional Warping"
+    },
+    {
+      "title": "SnowflakeWang (snowflakewang) - Hugging Face",
+      "url": "https://huggingface.co/SnowflakeWang/models",
+      "snippet": "User profile of snowflakewang on Hugging Face Recent Activity upvoted a paper 2 days ago Infinite Worlds with Versatile Interactions upvoted a paper 2 days ago Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence upvoted a paper 12 days ago Qwen-Image-2.-RL Technical Report View all activity"
+    }
+  ]
+}

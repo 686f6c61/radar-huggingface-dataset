@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "GeorgeCU/Giga-Embeddings-instruct-480M-0826-ft",
+  "slug": "georgecu-giga-embeddings-instruct-480m-0826-ft",
+  "author": "GeorgeCU",
+  "url": "https://huggingface.co/GeorgeCU/Giga-Embeddings-instruct-480M-0826-ft",
+  "created_at": "2026-09-02T11:32:15.000Z",
+  "updated_at": "2026-09-02T13:03:08.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3_bidirec",
+    "embeddings",
+    "retrieval",
+    "fine-tuned",
+    "feature-extraction",
+    "custom_code",
+    "ru",
+    "base_model:ai-sage/Giga-Embeddings-instruct-480M-0826",
+    "base_model:finetune:ai-sage/Giga-Embeddings-instruct-480M-0826",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 483717632,
+  "parameters_human": "483.7M",
+  "storage_bytes": 2121847127,
+  "storage_human": "2.1 GB",
+  "base_model": "ai-sage/Giga-Embeddings-instruct-480M-0826",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GeorgeCU/Giga-Embeddings-instruct-480M-0826-ft · Hugging Face",
+      "url": "https://huggingface.co/GeorgeCU/Giga-Embeddings-instruct-480M-0826-ft",
+      "snippet": "GeorgeCU / Giga-Embeddings-instruct-480M-0826-ft like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "GeorgeCU (Georgiy Tebelev) - Hugging Face",
+      "url": "https://huggingface.co/GeorgeCU",
+      "snippet": "Sort: Recently updated GeorgeCU/Giga-Embeddings-instruct-480M-0826-ft Updated 3 minutes ago"
+    },
+    {
+      "title": "Giga-Embeddings GGUF Q8_0 release - GitHub",
+      "url": "https://github.com/rad0main/Giga-Embeddings-480M-0826-GGUF",
+      "snippet": "🇷🇺 RU. Этот репозиторий содержит пайплайн конверсии ai-sage/Giga-Embeddings-instruct-480M-0826 (двунаправленный Qwen3 480M, русский + английский retrieval) в GGUF Q8_0, плюс измерительный харнес (embed_bench.py) и замеры на локальном CPU. Веса модели сюда не ..."
+    },
+    {
+      "title": "GigaEmbeddings — Efficient Russian Language Embedding Model",
+      "url": "https://arxiv.org/html/2510.22369v1",
+      "snippet": "Abstract We introduce GigaEmbeddings, a novel framework for training high-performance Russian-focused text embeddings through hierarchical instruction tuning of the decoder-only LLM designed specifically for Russian language (GigaChat-3B). Our three-stage pipeline, comprising large-scale contrastive pre-training in web-scale corpora, fine-tuning with hard negatives, and multitask ..."
+    },
+    {
+      "title": "Giga-Embeddings: Mixture-of-Experts Encoders forHigh-Throughput Text ...",
+      "url": "https://arxiv.org/html/2608.23806v1",
+      "snippet": "Abstract We introduce Giga-Embeddings, a family of text embedding models designed to combine strong retrieval quality with efficient serving. Its largest member is a sparse 10B-parameter Mixture-of-Experts encoder that preserves substantial model capacity while activating only a fraction of it for each token."
+    }
+  ]
+}

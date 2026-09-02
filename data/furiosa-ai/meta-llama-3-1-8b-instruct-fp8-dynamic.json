@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "furiosa-ai/Meta-Llama-3.1-8B-Instruct-FP8-dynamic",
+  "slug": "furiosa-ai-meta-llama-3-1-8b-instruct-fp8-dynamic",
+  "author": "furiosa-ai",
+  "url": "https://huggingface.co/furiosa-ai/Meta-Llama-3.1-8B-Instruct-FP8-dynamic",
+  "created_at": "2026-07-09T22:33:43.000Z",
+  "updated_at": "2026-09-02T14:38:07.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "furiosa-llm",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th"
+  ],
+  "tags": [
+    "furiosa-llm",
+    "safetensors",
+    "llama",
+    "furiosa-ai",
+    "llama-3",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "base_model:RedHatAI/Meta-Llama-3.1-8B-Instruct-FP8-dynamic",
+    "base_model:quantized:RedHatAI/Meta-Llama-3.1-8B-Instruct-FP8-dynamic",
+    "license:llama3.1",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2584,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 10172242335,
+  "storage_human": "10.2 GB",
+  "base_model": "RedHatAI/Meta-Llama-3.1-8B-Instruct-FP8-dynamic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "furiosa-ai/Meta-Llama-3.1-8B-Instruct-FP8-dynamic · Hugging Face",
+      "url": "https://huggingface.co/furiosa-ai/Meta-Llama-3.1-8B-Instruct-FP8-dynamic",
+      "snippet": "Overview Llama-3.1-8B-Instruct is Meta&#x27;s 8B instruction-tuned model, an auto-regressive dense transformer optimized for multilingual dialogue, instruction following, and tool usage. This is the FP8-dynamic quantized variant published by RedHatAI, derived from meta-llama/Llama-3.1-8B-Instruct. Its intended use is the same as the upstream RedHatAI/Meta-Llama-3.1-8B-Instruct-FP8-dynamic, and it ..."
+    },
+    {
+      "title": "furiosa-ai/Llama-3.1-8B-Instruct-FP8 · Hugging Face",
+      "url": "https://huggingface.co/furiosa-ai/Llama-3.1-8B-Instruct-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "furiosa-ai/Llama-3.1-8B-Instruct · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/furiosa-ai/Llama-3.1-8B-Instruct",
+      "snippet": "Description: This model is the pre-compiled version of the Llama-3.1-8B-Instruct, which is an auto-regressive language model that uses an optimized transformer architecture."
+    },
+    {
+      "title": "Llama 3.1 — FuriosaAI Developer Center 2026.3.0 documentation",
+      "url": "https://developer.furiosa.ai/latest/en/furiosa_llm/models/llama-3.1.html",
+      "snippet": "Llama 3.1 # Llama 3.1 is Meta&#x27;s series of instruction-tuned, auto-regressive dense transformers optimized for multilingual dialogue, instruction following, and tool usage. FuriosaAI publishes pre-compiled builds of the Llama 3.1 models under the furiosa-ai organization on the Hugging Face Hub, each shipping a Furiosa Executable Bundle (FXB) for running it on FuriosaAI RNGD with Furiosa-LLM ..."
+    },
+    {
+      "title": "Llama 3.1 — FuriosaAI Developer Center 2026.4.0b8 documentation",
+      "url": "https://developer.furiosa.ai/v2026.4.0/en/furiosa_llm/models/llama-3.1.html",
+      "snippet": "FuriosaAI publishes pre-compiled builds of the Llama 3.1 models under the furiosa-ai organization on the Hugging Face Hub, each shipping a Furiosa Executable Bundle (FXB) for running it on FuriosaAI RNGD with Furiosa-LLM. The same upstream weights also run on other frameworks (such as vLLM, SGLang, and Transformers); for usage with those, see the upstream model card linked below."
+    }
+  ]
+}

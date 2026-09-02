@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "OAoussama/yolo8v",
+  "slug": "oaoussama-yolo8v",
+  "author": "OAoussama",
+  "url": "https://huggingface.co/OAoussama/yolo8v",
+  "created_at": "2026-09-02T12:55:28.000Z",
+  "updated_at": "2026-09-02T12:55:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Explore Ultralytics YOLOv8",
+      "url": "https://docs.ultralytics.com/models/yolov8",
+      "snippet": "Discover Ultralytics YOLOv8, an advancement in real-time object detection, optimizing performance with an array of pretrained models for diverse tasks."
+    },
+    {
+      "title": "GitHub - orYx-models/yolov8: Computer Vision YOLO v8",
+      "url": "https://github.com/orYx-models/yolov8",
+      "snippet": "Integrations Our key integrations with leading AI platforms extend the functionality of Ultralytics&#x27; offerings, enhancing tasks like dataset labeling, training, visualization, and model management. Discover how Ultralytics, in collaboration with Roboflow, ClearML, Comet, Neural Magic and OpenVINO, can optimize your AI workflow."
+    },
+    {
+      "title": "Ultralytics/YOLOv8 · Hugging Face",
+      "url": "https://huggingface.co/Ultralytics/YOLOv8",
+      "snippet": "Our key integrations with leading AI platforms extend the functionality of Ultralytics&#x27; offerings, enhancing tasks like dataset labeling, training, visualization, and model management. Discover how Ultralytics, in collaboration with partners like Weights & Biases, Comet ML, Roboflow, and Intel OpenVINO, can optimize your AI workflow."
+    },
+    {
+      "title": "Neurallabware/yolo_v8: NEW - YOLOv8 in PyTorch - GitHub",
+      "url": "https://github.com/Neurallabware/yolo_v8",
+      "snippet": "Integrations Our key integrations with leading AI platforms extend the functionality of Ultralytics&#x27; offerings, enhancing tasks like dataset labeling, training, visualization, and model management. Discover how Ultralytics, in collaboration with Roboflow, ClearML, Comet, Neural Magic and OpenVINO, can optimize your AI workflow."
+    },
+    {
+      "title": "YOLOv8: State-of-the-Art Computer Vision Model",
+      "url": "https://yolov8.com/",
+      "snippet": "Learn all you need to know about YOLOv8, a computer vision model that supports training models for object detection, classification, and segmentation."
+    }
+  ]
+}

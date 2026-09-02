@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RKB109/audio-event-triage-20260902-model",
+  "slug": "rkb109-audio-event-triage-20260902-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/audio-event-triage-20260902-model",
+  "created_at": "2026-09-02T17:10:48.000Z",
+  "updated_at": "2026-09-02T17:10:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "audio-ml",
+    "audio-classification",
+    "automatic-speech-recognition",
+    "feature-extraction",
+    "audio-to-audio",
+    "dataset:RKB109/audio-event-triage-20260902-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RKB109/audio-event-triage-20260724-model · Hugging Face",
+      "url": "https://huggingface.co/RKB109/audio-event-triage-20260724-model",
+      "snippet": "Audio Event Triage Baseline Baseline Model Model Description This repository contains a small, transparent prototype model for Operations teams need an explainable starting point for classifying alarms, machinery noise, and speech-like events. The model combines per-label token weights with IDF-weighted evidence retrieval."
+    },
+    {
+      "title": "README.md · RKB109/audio-event-triage-20260724-dataset at main",
+      "url": "https://huggingface.co/datasets/RKB109/audio-event-triage-20260724-dataset/blob/main/README.md",
+      "snippet": "Audio Event Triage Baseline Synthetic Dataset Summary This dataset contains 14 training examples and 4 held-out examples for Operations teams need an explainable starting point for classifying alarms, machinery noise, and speech-like events. Every record is synthetic and includes:"
+    },
+    {
+      "title": "Realtime conversations | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/guides/realtime-conversations",
+      "snippet": "Doing so will require you to send client events to initiate actions, and listen for server events to respond to actions taken by the Realtime API. This guide will walk through the event flows required to use model capabilities like audio and text generation, image input, and function calling, and how to think about the state of a Realtime Session."
+    },
+    {
+      "title": "Realtime API reference - Microsoft Foundry | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/realtime-audio-reference",
+      "snippet": "Note Azure deviation: The accepted values for the model field in input_audio_transcription settings differ from the OpenAI reference. Azure OpenAI requires the name of the existing model deployment for the field, like my-gpt-4o-transcribe-deployment. See details about Model deployment via Foundry Portal or with code."
+    },
+    {
+      "title": "GitHub - STMicroelectronics/STM32N6-GettingStarted-Audio: An AI ...",
+      "url": "https://github.com/STMicroelectronics/STM32N6-GettingStarted-Audio",
+      "snippet": "This project provides an STM32 Microcontroler embedded real time environement to execute X-CUBE-AI generated model targetting audio applications. The purpose of this package is to stream physical data acquired by sensors into a processing chain including a preprocessing step that typically would perform a first level of feature extraction, the machine learning inference itself, and a post ..."
+    }
+  ]
+}

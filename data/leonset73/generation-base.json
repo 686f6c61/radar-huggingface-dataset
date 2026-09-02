@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Leonset73/generation-base",
+  "slug": "leonset73-generation-base",
+  "author": "Leonset73",
+  "url": "https://huggingface.co/Leonset73/generation-base",
+  "created_at": "2026-09-02T17:46:10.000Z",
+  "updated_at": "2026-09-02T17:46:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - samssouza/uncensored-ai-list",
+      "url": "https://github.com/samssouza/uncensored-ai-list",
+      "snippet": "Contribute to samssouza/uncensored-ai-list development by creating an account on GitHub."
+    },
+    {
+      "title": "Official gateway and model catalog for Agnes AI. - GitHub",
+      "url": "https://github.com/AgnesAI-Labs/AgnesAI-Models",
+      "snippet": "Agnes AI is a frontier AI company focused on full-modality foundation models. We train models in-house across text, image, video, and reasoning. Our mission is to make high-quality AI more accessible, scalable, and easy to plug into any product or platform. Our model suite features high-precision models ranked on PinchBench and is purpose-built to power agentic tools such as OpenClaw and ..."
+    },
+    {
+      "title": "BaseModel.ai — The Behavioral Foundation Model",
+      "url": "https://www.basemodel.ai/",
+      "snippet": "BaseModel.ai learns directly from raw behavioral events — clicks, purchases, page views, app opens — and automatically creates the optimal feature representation."
+    },
+    {
+      "title": "base model AI Models | Civitai",
+      "url": "https://civitai.com/tag/base%20model",
+      "snippet": "base model Browse 11,810 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with base model."
+    }
+  ]
+}

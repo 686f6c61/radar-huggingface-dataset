@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "anuj-inavlabs/Kupe-ThinkSpark-Realtime-270M",
+  "slug": "anuj-inavlabs-kupe-thinkspark-realtime-270m",
+  "author": "anuj-inavlabs",
+  "url": "https://huggingface.co/anuj-inavlabs/Kupe-ThinkSpark-Realtime-270M",
+  "created_at": "2026-09-02T15:43:57.000Z",
+  "updated_at": "2026-09-02T15:44:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "hi",
+    "gu"
+  ],
+  "tags": [
+    "transformers",
+    "realtime",
+    "voice-agent",
+    "turn-taking",
+    "barge-in",
+    "endpointing",
+    "vad",
+    "full-duplex",
+    "streaming",
+    "speech",
+    "conversational",
+    "audio-classification",
+    "en",
+    "hi",
+    "gu",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 575043366,
+  "storage_human": "575 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - iNavLabsResearch/kupe-thinkspark: Thinking Sound and Words Model",
+      "url": "https://github.com/iNavLabsResearch/kupe-thinkspark",
+      "snippet": "Voice AI agents run STT → LLM → TTS. Between the user finishing (STT) and the agent&#x27;s real reply (TTS) there is dead air. ThinkSpark fills that gap with a human thinking sound / backchannel — hmm, अच्छा, एक सेकंड, sí sí, ええと — in the right language, native script, register and emotion for the moment."
+    },
+    {
+      "title": "anuj-inavlabs/kupe-thinkspark at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/anuj-inavlabs/kupe-thinkspark/tree/main",
+      "snippet": "like 0 Tasks: Text Classification Token Classification Modalities: Text Formats: json Languages: multilingual Size: 10K - 100K Tags: backchannel filler-words voice-assistant multilingual thinkspark Libraries: Datasets pandas Polars + 1 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community 1 main kupe-thinkspark 52.8 MB 1 contributor History:3 commits anuj-inavlabs ..."
+    },
+    {
+      "title": "anuj-inavlabs/kupe-thinkspark-270m-phase1-data - Hugging Face",
+      "url": "https://huggingface.co/datasets/anuj-inavlabs/kupe-thinkspark-270m-phase1-data",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - iNavLabsResearch/kupe-thinkspark-v2-270m",
+      "url": "https://github.com/iNavLabsResearch/kupe-thinkspark-v2-270m/tree/main/",
+      "snippet": "Naming. The base weights are Gemma-3-270M (chosen for native Devanagari/Gujarati tokenization — see Architecture). This project is shipped as thinkspark-v2-350m per the product name; the base model id stays google/gemma-3-270m everywhere in code."
+    },
+    {
+      "title": "What Kupe is · Kupe",
+      "url": "https://www.kupe.in/docs/what-kupe-is",
+      "snippet": "Kupe — voice AI layer for enterprises and developers Kupe is the booming voice AI layer for enterprises and developers Kupe is the voice AI layer going viral with contact centers, finance ops, clinics, D2C brands, and the platform teams that have to ship a number that actually picks up. We are not a thin wrapper on someone else&#x27;s model."
+    }
+  ]
+}

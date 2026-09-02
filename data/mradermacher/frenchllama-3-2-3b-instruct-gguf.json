@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/FrenchLlama-3.2-3B-Instruct-GGUF",
+  "slug": "mradermacher-frenchllama-3-2-3b-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/FrenchLlama-3.2-3B-Instruct-GGUF",
+  "created_at": "2025-04-05T07:16:29.000Z",
+  "updated_at": "2026-09-02T18:09:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "french",
+    "grammar",
+    "languages",
+    "english-french",
+    "learning",
+    "en",
+    "fr",
+    "dataset:Sufi2425/French_Grammar_Explanations",
+    "base_model:CreativeAlloyYT/FrenchLlama-3.2-3B-Instruct",
+    "base_model:quantized:CreativeAlloyYT/FrenchLlama-3.2-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 216,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 29288893440,
+  "storage_human": "29.3 GB",
+  "base_model": "CreativeAlloyYT/FrenchLlama-3.2-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/FrenchLlama-3.2-3B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/FrenchLlama-3.2-3B-Instruct-GGUF",
+      "snippet": "mradermacher / FrenchLlama-3.2-3B-Instruct-GGUF like 0 Transformers GGUF Sufi2425/French_Grammar_Explanations English French french grammar languages english-french learning conversational License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "mradermacher/Llama-3.2-3B-Instruct-ENG-FR-v3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Llama-3.2-3B-Instruct-ENG-FR-v3-GGUF",
+      "snippet": "mradermacher / Llama-3.2-3B-Instruct-ENG-FR-v3-GGUF like 0 Transformers GGUF English text-generation-inference unsloth llama trl sft Inference Endpoints conversational License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model Edit model card About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "GitHub - Gusiion/meta-llama-Llama-3.2-3B-Instruct · GitHub",
+      "url": "https://github.com/Gusiion/meta-llama-Llama-3.2-3B-Instruct",
+      "snippet": "The Meta Llama 3.2 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction-tuned generative models in 1B and 3B sizes (text in/text out). The Llama 3.2 instruction-tuned text only models are optimized for multilingual dialogue use cases, including agentic retrieval and summarization tasks."
+    },
+    {
+      "title": "meta / llama-3.2-3b-instruct",
+      "url": "https://docs.api.nvidia.com/nim/reference/meta-llama-3_2-3b-instruct",
+      "snippet": "Model Information The Meta Llama 3.2 collection of multilingual large language models (LLMs) is a collection of pre-trained and instruction-tuned generative models in 1B and 3B sizes (text in/text out). The Llama 3.2 instruction-tuned text only models are optimized for multilingual dialogue use case…"
+    },
+    {
+      "title": "Llama 3.2 3B Instruct GGUF Launcher - GitHub",
+      "url": "https://github.com/dougeeai/llama_32_3b_instruct_launcher_gguf",
+      "snippet": "Simple Python scripts to load and chat with Llama 3.2 3B Instruct GGUF quantized models. Includes a full version with hardware detection and optimizations, and a bare-bones version for minimal setup."
+    }
+  ]
+}

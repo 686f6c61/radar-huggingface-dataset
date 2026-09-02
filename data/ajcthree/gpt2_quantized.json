@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "AJCThree/gpt2_quantized",
+  "slug": "ajcthree-gpt2_quantized",
+  "author": "AJCThree",
+  "url": "https://huggingface.co/AJCThree/gpt2_quantized",
+  "created_at": "2026-09-02T15:11:07.000Z",
+  "updated_at": "2026-09-02T15:11:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liodon-ai/gpt2-large-FP8 · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/gpt2-large-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "QuantFactory/gpt2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/QuantFactory/gpt2-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "onnxruntime-inference-examples/quantization/language_model/gpt2 at main ...",
+      "url": "https://github.com/microsoft/onnxruntime-inference-examples/tree/main/quantization/language_model/gpt2",
+      "snippet": "With calibration data set, run the following command to invoke the quantization tool, which will run the model with provided data set, compute quantization parameters for each weight and activation tensors, and output the quantized model:"
+    },
+    {
+      "title": "affjljoo3581/GPT2: PyTorch Implementation of OpenAI GPT-2 - GitHub",
+      "url": "https://github.com/affjljoo3581/GPT2",
+      "snippet": "PyTorch Implementation of OpenAI GPT-2. Contribute to affjljoo3581/GPT2 development by creating an account on GitHub."
+    },
+    {
+      "title": "GPTQModel · PyPI",
+      "url": "https://pypi.org/project/GPTQModel/",
+      "snippet": "Non-quantized models are always loaded on CPU by-default and each layer is moved to QuantizeConfig.device during quantization to minimize VRAM usage. Compatibility fixes for attn_implementation_autoset in latest transformers."
+    }
+  ]
+}

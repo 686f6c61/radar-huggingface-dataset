@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "RSLtm/Qwen2.5-Coder-14B-Instruct-oQ4e",
+  "slug": "rsltm-qwen2-5-coder-14b-instruct-oq4e",
+  "author": "RSLtm",
+  "url": "https://huggingface.co/RSLtm/Qwen2.5-Coder-14B-Instruct-oQ4e",
+  "created_at": "2026-09-02T16:55:03.000Z",
+  "updated_at": "2026-09-02T16:56:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 8678135170,
+  "storage_human": "8.7 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-Coder-14B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-14B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen/qwen2.5-coder-14b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen2.5-coder-14b",
+      "snippet": "Qwen2.5 Coder 14B Instruct by qwen Long-context Support up to 128K tokens with yarn rope scaling factor of 4.0 Designed for use with Code Agents Up to 5.5 trillion training tokens including source code, text-code grounding, and synthetic data"
+    },
+    {
+      "title": "Qwen2.5-Coder-14B-Instruct: Open-Source Code LLM | Apache-2.0 | Self ...",
+      "url": "https://dev.co/ai/llms/qwen2-5-coder-14b-instruct",
+      "snippet": "Deploy Qwen2.5-Coder-14B-Instruct for code generation, reasoning, and fixing. 128K context, Apache-2.0 license, vLLM-ready. Ideal for private coding AI agents and CI/CD integration."
+    },
+    {
+      "title": "Qwen2.5-Coder-14B-Instruct - paddlenlp-en.readthedocs.io",
+      "url": "https://paddlenlp-en.readthedocs.io/en/latest/_static/website/Qwen/Qwen2.5-Coder-14B-Instruct/index.html",
+      "snippet": "model-00001-of-00006.safetensors (4.6 GB) model-00002-of-00006.safetensors (4.6 GB) model-00003-of-00006.safetensors (4.6 GB) model-00004-of-00006.safetensors (4.6 GB) model-00005-of-00006.safetensors (4.6 GB) model-00006-of-00006.safetensors (4.4 GB) model.safetensors.index.json (46.4 KB) tokenizer.json (6.7 MB) tokenizer_config.json (7.1 KB)"
+    }
+  ]
+}

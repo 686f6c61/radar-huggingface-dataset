@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "FredrikKarlssonSpeech/roest-v3-whisper-1.5b-mlx-4bit",
+  "slug": "fredrikkarlssonspeech-roest-v3-whisper-1-5b-mlx-4bit",
+  "author": "FredrikKarlssonSpeech",
+  "url": "https://huggingface.co/FredrikKarlssonSpeech/roest-v3-whisper-1.5b-mlx-4bit",
+  "created_at": "2026-09-02T12:37:28.000Z",
+  "updated_at": "2026-09-02T12:41:17.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "mlx",
+    "whisper",
+    "automatic-speech-recognition",
+    "4-bit",
+    "da",
+    "base_model:CoRal-project/roest-v3-whisper-1.5b",
+    "base_model:finetune:CoRal-project/roest-v3-whisper-1.5b",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 877695978,
+  "storage_human": "878 MB",
+  "base_model": "CoRal-project/roest-v3-whisper-1.5b",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CoRal-project/roest-v3-whisper-1.5b · Hugging Face",
+      "url": "https://huggingface.co/CoRal-project/roest-v3-whisper-1.5b",
+      "snippet": "Røst-whisper-1.5b-v2 This is a Danish state-of-the-art speech recognition model, trained as part of the CoRal project by the Alexandra Institute. This repository contains a Whisper-large model trained on the CoRal-v3 dataset. The CoRal-v3 dataset includes a rich variety of Danish conversational and read-aloud data, distributed across diverse age groups, genders, and dialects. The model is ..."
+    },
+    {
+      "title": "CoRal-project/roest-v3-whisper-1.5b at main - Hugging Face",
+      "url": "https://huggingface.co/CoRal-project/roest-v3-whisper-1.5b/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "API Reference | openai/whisper | DeepWiki",
+      "url": "https://deepwiki.com/openai/whisper/2.4-api-reference",
+      "snippet": "This document provides comprehensive reference documentation for Whisper&#x27;s public Python API and command-line interface. It covers all functions, classes, and configuration options available for speech recognition and transcription tasks."
+    },
+    {
+      "title": "Model Download and Conversion | ggml-org/whisper.cpp | DeepWiki",
+      "url": "https://deepwiki.com/ggml-org/whisper.cpp/5.1-model-download-and-conversion",
+      "snippet": "This document covers the tools and processes for acquiring and converting Whisper models for use with `whisper.cpp`. The system provides multiple pathways to obtain models in the required GGML format,"
+    },
+    {
+      "title": "How to Run Whisper Locally | Audio Transcription Guide",
+      "url": "https://localai.computer/guides/run-whisper-locally",
+      "snippet": "How to Run Whisper Locally Transcribe audio with OpenAI&#x27;s Whisper Whisper is OpenAI&#x27;s speech recognition model that rivals professional transcription services. Run it locally for free, private transcription of any audio or video."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "xiangxin0923/pi0_lora_tacforce_dec_realworld_task820",
+  "slug": "xiangxin0923-pi0_lora_tacforce_dec_realworld_task820",
+  "author": "xiangxin0923",
+  "url": "https://huggingface.co/xiangxin0923/pi0_lora_tacforce_dec_realworld_task820",
+  "created_at": "2026-09-02T16:33:14.000Z",
+  "updated_at": "2026-09-02T16:46:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9507075338,
+  "storage_human": "9.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xiangxin0923/pi05_lora_tacforce_realworld_replayed_task820 at main",
+      "url": "https://huggingface.co/xiangxin0923/pi05_lora_tacforce_realworld_replayed_task820/tree/main",
+      "snippet": "xiangxin0923 / pi05_lora_tacforce_realworld_replayed_task820 like 0 Robotics openpi pi05 Model card FilesFiles and versions xet Community Copy to bucket new main pi05_lora_tacforce_realworld_replayed_task820 Ctrl+K Ctrl+K 1 contributor History:2 commits xiangxin0923 Update checkpoints and norm_stats 55a6312 verifiedabout 8 hours ago checkpointsUpdate checkpoints and norm_statsabout 8 hours ago ..."
+    },
+    {
+      "title": "xiangxin0923/pi05_lora_tacfield_realworld_replayed_task820 - Hugging Face",
+      "url": "https://huggingface.co/xiangxin0923/pi05_lora_tacfield_realworld_replayed_task820",
+      "snippet": "xiangxin0923 / pi05_lora_tacfield_realworld_replayed_task820 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "[2410.24164] $π_0$: A Vision-Language-Action Flow Model for General ...",
+      "url": "https://arxiv.org/abs/2410.24164",
+      "snippet": "Robot learning holds tremendous promise to unlock the full potential of flexible, general, and dexterous robot systems, as well as to address some of the deepest questions in artificial intelligence. However, bringing robot learning to the level of generality required for effective real-world systems faces major obstacles in terms of data, generalization, and robustness. In this paper, we ..."
+    },
+    {
+      "title": "GitHub - allenai/molmoact2: Official Repository for MolmoAct2",
+      "url": "https://github.com/allenai/molmoact2",
+      "snippet": "Official Repository for MolmoAct2. Contribute to allenai/molmoact2 development by creating an account on GitHub."
+    },
+    {
+      "title": "π_0 - A Vision-Language-Action Flow Model for General Robot Control (pi0)",
+      "url": "https://stevengong.co/research-papers/0-A-VisionLanguageAction-Flow-Model-for-General-Robot-Control",
+      "snippet": "Robot Foundation Models π0: A Vision-Language-Action Flow Model for General Robot Control Successor to Octo model. Links: https://www.physicalintelligence."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "omkarpatil/move-soft-toy-left-groot-sharednorm",
+  "slug": "omkarpatil-move-soft-toy-left-groot-sharednorm",
+  "author": "omkarpatil",
+  "url": "https://huggingface.co/omkarpatil/move-soft-toy-left-groot-sharednorm",
+  "created_at": "2026-09-02T18:01:11.000Z",
+  "updated_at": "2026-09-02T18:01:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "Gr00tN1d7",
+    "robotics",
+    "gr00t",
+    "vla",
+    "ffw_sg2_rev1",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576200896,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "omkarpatil/move-soft-toy-right · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/omkarpatil/move-soft-toy-right",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "omkarpatil (Omkar Patil) - Hugging Face",
+      "url": "https://huggingface.co/omkarpatil/models",
+      "snippet": "omkarpatil&#x27;s models8 Sort: Recently updated omkarpatil/ffw_sg2_pick-blue-cylinder-left-arm_groot-n1.7 Robotics •Updated about 10 hours ago"
+    },
+    {
+      "title": "Omkar Patil",
+      "url": "https://omkarpatil18.github.io/",
+      "snippet": "Personal webpage of Omkar Patil, PhD @ ASU Diffusion models have been extensively leveraged for learning robot skills from demonstrations. These policies are conditioned on several observational modalities such as proprioception, vision, and tactile. However, observational modalities have varying levels of influence for different tasks that diffusion policies fail to capture. In this work, we ..."
+    },
+    {
+      "title": "Omkar Patil - Controls, Robotics, AI Research",
+      "url": "https://www.omkarsudhirpatil.com/",
+      "snippet": "Incoming Assistant Professor at LSU and founder of ARC Lab. Research in adaptive control, robotics, and AI with provable guarantees."
+    },
+    {
+      "title": "GR00T N1.5 - research.nvidia.com",
+      "url": "https://research.nvidia.com/labs/gear/gr00t-n1_5/",
+      "snippet": "Introduction We introduce GR00T N1.5, an upgraded version of the GR00T N1 foundation model for humanoid robots. With several architecture, data and modeling improvements, we find that N1.5 outperforms N1 on both simulated manipulation benchmarks and on the real GR-1 robot, detailed below. We expect users of N1.5 should observe better performance compared to N1, in particular improved ..."
+    }
+  ]
+}

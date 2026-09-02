@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "vertox-ai/speech-text-data-aligners",
+  "slug": "vertox-ai-speech-text-data-aligners",
+  "author": "vertox-ai",
+  "url": "https://huggingface.co/vertox-ai/speech-text-data-aligners",
+  "created_at": "2026-09-02T18:07:33.000Z",
+  "updated_at": "2026-09-02T18:07:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vertox-ai (VertoX) - Hugging Face",
+      "url": "https://huggingface.co/vertox-ai",
+      "snippet": "Low-latency real-time speech translation with voice and tone preservation."
+    },
+    {
+      "title": "Google models | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models",
+      "snippet": "Model Garden is a platform that helps you discover, test, customize, and deploy Google proprietary and select OSS models and assets. To explore the generative AI models and APIs that are available on Gemini Enterprise Agent Platform, go to Model Garden in the Google Cloud console."
+    },
+    {
+      "title": "Model Garden on Gemini Enterprise Agent Platform",
+      "url": "https://cloud.google.com/model-garden",
+      "snippet": "Discover, customize, and deploy AI models from Google & partners using Gemini Enterprise Agent Platform (formerly Vertex AI)."
+    },
+    {
+      "title": "Gemini Enterprise Agent Platform (formerly Vertex AI)",
+      "url": "https://cloud.google.com/products/gemini-enterprise-agent-platform",
+      "snippet": "Gemini Enterprise Agent Platform (formerly Vertex AI) is a comprehensive platform for developers to build, scale, govern and optimize agents."
+    },
+    {
+      "title": "All Vertex AI code samples | Google Cloud Documentation",
+      "url": "https://docs.cloud.google.com/vertex-ai/docs/samples",
+      "snippet": "All Vertex AI code samples This page contains code samples for Vertex AI. To search and filter code samples for other Google Cloud products, see the Google Cloud sample browser."
+    }
+  ]
+}

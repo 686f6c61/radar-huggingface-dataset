@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Aaravyada/swin-t-retrieval-slim27",
+  "slug": "aaravyada-swin-t-retrieval-slim27",
+  "author": "Aaravyada",
+  "url": "https://huggingface.co/Aaravyada/swin-t-retrieval-slim27",
+  "created_at": "2026-09-02T15:10:16.000Z",
+  "updated_at": "2026-09-02T15:12:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TakuyaMatsumoto/swin-t-retrieval · Hugging Face",
+      "url": "https://huggingface.co/TakuyaMatsumoto/swin-t-retrieval",
+      "snippet": "Overview This is an experimental Swin T codebase for Retrieval. It keeps the giant setup intentionally manageable so architecture changes can be inspected before a full training run."
+    },
+    {
+      "title": "Aaravyada (Aarav) - Hugging Face",
+      "url": "https://huggingface.co/Aaravyada/models",
+      "snippet": "Fine-tuning models for fun and profit. AI & ML interests Fine-tuning models for fun and profit."
+    },
+    {
+      "title": "GitHub - microsoft/Swin-Transformer: This is an official implementation ...",
+      "url": "https://github.com/microsoft/Swin-Transformer",
+      "snippet": "This is an official implementation for \"Swin Transformer: Hierarchical Vision Transformer using Shifted Windows\". - microsoft/Swin-Transformer"
+    },
+    {
+      "title": "swin_t — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/master/models/generated/torchvision.models.swin_t.html",
+      "snippet": "Default is True. **kwargs - parameters passed to the torchvision.models.swin_transformer.SwinTransformer base class. Please refer to the source code for more details about this class. class torchvision.models.Swin_T_Weights(value)[source] ¶ The model builder above accepts the following values as the weights parameter."
+    },
+    {
+      "title": "SwinTransformer — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/master/models/swin_transformer.html",
+      "snippet": "The following model builders can be used to instantiate an SwinTransformer model (original and V2) with and without pre-trained weights. All the model builders internally rely on the torchvision.models.swin_transformer.SwinTransformer base class."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/ms-marco-TinyBERT-L-2-v2",
+  "slug": "jonnyverse-ms-marco-tinybert-l-2-v2",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/ms-marco-TinyBERT-L-2-v2",
+  "created_at": "2026-09-02T15:30:31.000Z",
+  "updated_at": "2026-09-02T15:30:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "text-classification",
+    "base_model:cross-encoder/ms-marco-TinyBERT-L2-v2",
+    "base_model:quantized:cross-encoder/ms-marco-TinyBERT-L2-v2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80686114,
+  "storage_human": "81 MB",
+  "base_model": "cross-encoder/ms-marco-TinyBERT-L-2-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cross-encoder/ms-marco-TinyBERT-L2-v2 · Hugging Face",
+      "url": "https://huggingface.co/cross-encoder/ms-marco-TinyBERT-L2-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/cross-encoder-ms-marco-tinybert-l-2-v2",
+      "snippet": "cross-encoder/ms-marco-TinyBERT-L-2-v2 is a pre-trained language model available on the Hugging Face Hub. It&#x27;s specifically designed for the text-classification task in the transformers library."
+    },
+    {
+      "title": "cross-encoder/ms-marco-TinyBERT-L2 · Hugging Face",
+      "url": "https://huggingface.co/cross-encoder/ms-marco-TinyBERT-L2",
+      "snippet": "Cross-Encoder for MS Marco This model was trained on the MS Marco Passage Ranking task. The model can be used for Information Retrieval: Given a query, encode the query will all possible passages (e.g. retrieved with ElasticSearch). Then sort the passages in a decreasing order. See SBERT.net Retrieve & Re-rank for more details. The training code is available here: SBERT.net Training MS Marco ..."
+    },
+    {
+      "title": "ms-marco-TinyBERT-L2-v2 · Models",
+      "url": "https://www.modelscope.cn/models/cross-encoder/ms-marco-TinyBERT-L2-v2",
+      "snippet": "This model was trained on the MS Marco Passage Ranking task. The model can be used for Information Retrieval: Given a query, encode the query will all possible passages (e.g. retrieved with ElasticSearch)."
+    },
+    {
+      "title": "cross-encoder/ms-marco-TinyBERT-L2-v2 - Hugging Face Hub Pac... - Socket",
+      "url": "https://socket.dev/huggingface/package/cross-encoder/ms-marco-tinybert-l2-v2",
+      "snippet": "Cross-Encoder for MS Marco This model was trained on the MS Marco Passage Ranking task. The model can be used for Information Retrieval: Given a query, encode the query will all possible passages (e.g. retrieved with ElasticSearch). Then sort the passages in a decreasing order. See SBERT.net Retrieve & Re-rank for more details."
+    }
+  ]
+}

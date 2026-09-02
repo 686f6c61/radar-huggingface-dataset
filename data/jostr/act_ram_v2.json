@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JoSTR/act_ram_v2",
+  "slug": "jostr-act_ram_v2",
+  "author": "JoSTR",
+  "url": "https://huggingface.co/JoSTR/act_ram_v2",
+  "created_at": "2026-09-02T14:07:23.000Z",
+  "updated_at": "2026-09-02T14:07:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:JoSTR/rm_ram_20260831_145557",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51689104,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206800728,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JoSTR/act_ram · Hugging Face",
+      "url": "https://huggingface.co/JoSTR/act_ram",
+      "snippet": "Instructions to use JoSTR/act_ram with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use JoSTR/act_ram with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on your robot Train your own policy ..."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "OpenRouter Free Models: All 19 Listed (Sep 2026)",
+      "url": "https://costgoat.com/pricing/openrouter-free-models",
+      "snippet": "All free AI models on OpenRouter, zero cost, no credit card. Compare context lengths, capabilities, and rate limits. Updated live."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Access powerful AI models at zero cost. Experiment, learn, and build with free AI models and LLMs. OpenRouter is committed to keeping AI accessible for everyone."
+    }
+  ]
+}

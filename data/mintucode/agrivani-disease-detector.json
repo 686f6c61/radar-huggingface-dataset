@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mintucode/agrivani-disease-detector",
+  "slug": "mintucode-agrivani-disease-detector",
+  "author": "mintucode",
+  "url": "https://huggingface.co/mintucode/agrivani-disease-detector",
+  "created_at": "2026-09-02T18:18:35.000Z",
+  "updated_at": "2026-09-02T18:18:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agri-disease-detector/ai-model at main · Niranjjith/Agri ... - GitHub",
+      "url": "https://github.com/Niranjjith/Agri-disease-detector/tree/main/ai-model",
+      "snippet": "Contribute to Niranjjith/Agri-disease-detector development by creating an account on GitHub."
+    },
+    {
+      "title": "Plant Diseases Detector AI (PlantAI) - GitHub",
+      "url": "https://github.com/saktiswarupmishra/-Plant-Diseases-Detector-AI-PlantAI-",
+      "snippet": "Plant Diseases Detector AI is an end-to-end smart agricultural solution designed for farmers, agronomists, and researchers. Users can upload images of infected leaves, stems, fruits, or roots, and the platform delivers immediate diagnostic intelligence:"
+    },
+    {
+      "title": "Plant Disease Detector - AI Diagnosis for Farmers",
+      "url": "https://diseasedetector.org/",
+      "snippet": "AI Analysis: Our artificial intelligence model will process the image to detect any signs of disease. Get Diagnosis & Advice: Receive an instant diagnosis, details about the disease, and practical suggestions for treatment or prevention."
+    },
+    {
+      "title": "AgriScan · Smart Leaf Diagnosis",
+      "url": "https://agric-detect.vercel.app/",
+      "snippet": "Upload or take photo Drag & drop, click, or use camera Camera Analyze Local AI Clear Diagnosis Reload AI Upload a leaf image to identify"
+    },
+    {
+      "title": "Agri Ai Crop Disease Detector - a Hugging Face Space by elananu",
+      "url": "https://huggingface.co/spaces/elananu/agri-ai-crop-disease-detector",
+      "snippet": "AI-powered crop disease and pest detection system using YOLO"
+    }
+  ]
+}

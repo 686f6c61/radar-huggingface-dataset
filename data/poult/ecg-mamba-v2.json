@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "poult/ECG-Mamba-V2",
+  "slug": "poult-ecg-mamba-v2",
+  "author": "poult",
+  "url": "https://huggingface.co/poult/ECG-Mamba-V2",
+  "created_at": "2026-07-09T06:29:19.000Z",
+  "updated_at": "2026-09-02T12:35:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65253260,
+  "storage_human": "65 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "One Dimensional CNN ECG Mamba for Multilabel Abnormality Classification ...",
+      "url": "https://arxiv.org/pdf/2510.13046v2",
+      "snippet": "The proposed 1DCNN-ECG-Mamba model adapts Vim for ECG signals; it modifies the Vim architecture using cosine annealing, incorporates only one 1D CNN, and outperforms the ECG-Mamba for both AUPRC and AUROC."
+    },
+    {
+      "title": "poult (Jiang Huawei) - Hugging Face",
+      "url": "https://huggingface.co/poult/models",
+      "snippet": "Organizations poult&#x27;s models7 Sort: Recently updated poult/1DCNN-ECG-Mamba-For-versatile_result Updated 13 days ago"
+    },
+    {
+      "title": "ECGMamba: Towards Efficient ECG Classification with BiSSM",
+      "url": "https://arxiv.org/pdf/2406.10098",
+      "snippet": "We propose ECGMamba, which combines the basic Mamba-based block with other techniques, such as the layer normaliza-tion and feed-forward network, to further improve the temporal modeling capability while maintaining eficient inference."
+    },
+    {
+      "title": "ECG-Mamba Cardiac Abnormality Classification - GitHub",
+      "url": "https://github.com/skkuhg/ecg-mamba",
+      "snippet": "This project demonstrates the application of the Mamba state space model for multi-lead ECG signal classification. The model is trained to classify cardiac abnormalities into diagnostic superclasses including NORM, MI, STTC, CD, and HYP."
+    },
+    {
+      "title": "README.md · poult/Mamba-Unet-ECG-classification at main",
+      "url": "https://huggingface.co/poult/Mamba-Unet-ECG-classification/blob/main/README.md",
+      "snippet": "Abstract：This paper proposes a two-dimensional (2D) deep neural network (DNN) model for the electrocardiogram (ECG) abnormality classification, which effectively utilizes the inter and intra-lead information comprised in the 12-lead ECG."
+    }
+  ]
+}

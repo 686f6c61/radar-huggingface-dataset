@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "FredrikKarlssonSpeech/whisper-large-finnish-v3-mlx-4bit",
+  "slug": "fredrikkarlssonspeech-whisper-large-finnish-v3-mlx-4bit",
+  "author": "FredrikKarlssonSpeech",
+  "url": "https://huggingface.co/FredrikKarlssonSpeech/whisper-large-finnish-v3-mlx-4bit",
+  "created_at": "2026-09-02T12:30:39.000Z",
+  "updated_at": "2026-09-02T12:33:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "fi"
+  ],
+  "tags": [
+    "mlx",
+    "whisper",
+    "automatic-speech-recognition",
+    "4-bit",
+    "fi",
+    "base_model:Finnish-NLP/whisper-large-finnish-v3",
+    "base_model:finetune:Finnish-NLP/whisper-large-finnish-v3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 877695978,
+  "storage_human": "878 MB",
+  "base_model": "Finnish-NLP/whisper-large-finnish-v3",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FredrikKarlssonSpeech/whisper-large-finnish-v3-onnx at main",
+      "url": "https://huggingface.co/FredrikKarlssonSpeech/whisper-large-finnish-v3-onnx/tree/main/onnx",
+      "snippet": "FredrikKarlssonSpeech / whisper-large-finnish-v3-onnx like 0 Automatic Speech Recognition Transformers ONNX Finnish whisper License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "whisper-large-finnish-v3-onnx - Hugging Face",
+      "url": "https://huggingface.co/FredrikKarlssonSpeech/whisper-large-finnish-v3-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "Run Whisper Large Locally: Setup Guide (2026)",
+      "url": "https://codersera.com/blog/whisper-large-local-setup-guide-2026/",
+      "snippet": "Install and run OpenAI Whisper&#x27;s largest model locally for private, offline transcription — VRAM requirements, pip and Apple Silicon setup, faster-whisper, and quantization."
+    },
+    {
+      "title": "mlx-examples/whisper/README.md at main - GitHub",
+      "url": "https://github.com/ml-explore/mlx-examples/blob/main/whisper/README.md",
+      "snippet": "This will make a text file audio_file.txt with the results. Use -f to specify the output format and --model to specify the model. There are many other supported command line options. To see them all, run mlx_whisper -h. You can also pipe the audio content of other programs via stdin:"
+    }
+  ]
+}

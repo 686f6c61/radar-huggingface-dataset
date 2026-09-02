@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "antibyte/AuraGo-Ling",
+  "slug": "antibyte-aurago-ling",
+  "author": "antibyte",
+  "url": "https://huggingface.co/antibyte/AuraGo-Ling",
+  "created_at": "2026-09-02T15:04:57.000Z",
+  "updated_at": "2026-09-02T16:13:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "aurago",
+    "tool-calling",
+    "mixture-of-experts",
+    "text-generation",
+    "de",
+    "en",
+    "base_model:inclusionAI/Ling-3.0-tiny",
+    "base_model:finetune:inclusionAI/Ling-3.0-tiny",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7893392800,
+  "parameters_human": "7.89B",
+  "storage_bytes": 5096544352,
+  "storage_human": "5.1 GB",
+  "base_model": "inclusionAI/Ling-3.0-tiny",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - antibyte/AuraGo: A powerful AI agent written in Go",
+      "url": "https://github.com/antibyte/AuraGo",
+      "snippet": "A powerful AI agent written in Go. Contribute to antibyte/AuraGo development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - antibyte/AuraGo: A minimalistic AI agent written in Go",
+      "url": "https://github.com/antibyte/AuraGo/tree/main/",
+      "snippet": "A minimalistic AI agent written in Go. Contribute to antibyte/AuraGo development by creating an account on GitHub."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=aurago",
+      "snippet": "3 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: aurago Clear all"
+    },
+    {
+      "title": "antibyte/AuraGo-Qwen3.5-4B-MTP-v1 · Hugging Face",
+      "url": "https://huggingface.co/antibyte/AuraGo-Qwen3.5-4B-MTP-v1",
+      "snippet": "antibyte / AuraGo-Qwen3.5-4B-MTP-v1 like 0 Text Generation Transformers Safetensors GGUF qwen3_5_text qwen3.5 mtp speculative-decoding tool-calling agentic aurago conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling Ling is a general-purpose large language model series independently developed and open-sourced by Ant Group. Built on the MoE (Mixture of Experts) architecture, it has been validated on domestic heterogeneous computing platforms, achieved breakthrough at the trillion-parameter scale, and continues to evolve with long context modeling and AI Agent collaborative reasoning capabilities."
+    }
+  ]
+}

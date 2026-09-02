@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Bodya73/NervGPT-1.6-Coder-3B",
+  "slug": "bodya73-nervgpt-1-6-coder-3b",
+  "author": "Bodya73",
+  "url": "https://huggingface.co/Bodya73/NervGPT-1.6-Coder-3B",
+  "created_at": "2026-09-02T18:08:30.000Z",
+  "updated_at": "2026-09-02T18:08:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bodya73 (Bodya) - Hugging Face",
+      "url": "https://huggingface.co/Bodya73",
+      "snippet": "Recent Activity updated a Space28 days ago Bodya73/NervVPN published a Space28 days ago Bodya73/NervVPN updated a Spaceabout 1 month ago Bodya73/nervgpt View all activity"
+    },
+    {
+      "title": "Bodya73 (Bodya) - Hugging Face",
+      "url": "https://huggingface.co/Bodya73/models",
+      "snippet": "User profile of Bodya on Hugging Face"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "Download ChatGPT",
+      "url": "https://chatgpt.com/download/",
+      "snippet": "Download the ChatGPT app for Windows, Mac, iPhone, and Android. Access ChatGPT Work and Codex, use voice conversations, create images, and connect your files and apps."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "DevQuasar/ibm-granite.granite-4.2-8b-GGUF",
+  "slug": "devquasar-ibm-granite-granite-4-2-8b-gguf",
+  "author": "DevQuasar",
+  "url": "https://huggingface.co/DevQuasar/ibm-granite.granite-4.2-8b-GGUF",
+  "created_at": "2026-09-02T15:13:11.000Z",
+  "updated_at": "2026-09-02T15:26:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:ibm-granite/granite-4.2-8b",
+    "base_model:quantized:ibm-granite/granite-4.2-8b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8791592960,
+  "parameters_human": "8.79B",
+  "storage_bytes": 35923264256,
+  "storage_human": "35.9 GB",
+  "base_model": "ibm-granite/granite-4.2-8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Granite 4.2 - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
+    },
+    {
+      "title": "DevQuasar/ibm-granite.granite-4.1-8b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/DevQuasar/ibm-granite.granite-4.1-8b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-4.2-language-models",
+      "url": "https://github.com/ibm-granite/granite-4.2-language-models",
+      "snippet": "The Granite 4.2 familiy features dense decoder-only architectures in three sizes — 3B, 8B, and 30B, with quantized variants per model size. The Granite 4.2 dense models are post-trained on top of Granite 4.1 base models. Please refer to the Granite 4.1 blog for details on the pre-training phase."
+    },
+    {
+      "title": "Granite - IBM",
+      "url": "https://www.ibm.com/granite",
+      "snippet": "Granite models drive the AI behind many IBM products and services. Discover ready-to-use solutions for code generation, application development, and model testing."
+    },
+    {
+      "title": "ibm-granite/granite-4.2-8b-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "furiosa-ai/Qwen3-30B-A3B-FP8",
+  "slug": "furiosa-ai-qwen3-30b-a3b-fp8",
+  "author": "furiosa-ai",
+  "url": "https://huggingface.co/furiosa-ai/Qwen3-30B-A3B-FP8",
+  "created_at": "2026-06-29T19:09:45.000Z",
+  "updated_at": "2026-09-02T14:39:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "furiosa-llm",
+  "languages": [],
+  "tags": [
+    "furiosa-llm",
+    "safetensors",
+    "qwen3_moe",
+    "furiosa-ai",
+    "qwen3",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-30B-A3B-FP8",
+    "base_model:quantized:Qwen/Qwen3-30B-A3B-FP8",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 487,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 38034610721,
+  "storage_human": "38.0 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-MoE — FuriosaAI Developer Center 2026.3.0 documentation",
+      "url": "https://developer.furiosa.ai/latest/en/furiosa_llm/models/qwen3-moe.html",
+      "snippet": "Furiosa-LLM runs the Qwen3-MoE models in FP8 (static FP8 weights with dynamic FP8 activation quantization; the KV cache stays in 16-bit precision). FuriosaAI publishes pre-compiled FP8 builds under the furiosa-ai organization on the Hugging Face Hub, each shipping a Furiosa Executable Bundle (FXB) for running it on FuriosaAI RNGD with Furiosa-LLM."
+    },
+    {
+      "title": "Qwen3-MoE — FuriosaAI Developer Center 2026.4.0b8 documentation",
+      "url": "https://developer.furiosa.ai/v2026.4.0/en/furiosa_llm/models/qwen3-moe.html",
+      "snippet": "Pass the model&#x27;s furiosa-ai/<repo> identifier; each variant runs on four RNGD cards (tensor-parallel size 32 PEs). The examples below use the hybrid Qwen3-30B-A3B-FP8, which reasons by default and can switch thinking on and off (see Advanced Usage)."
+    },
+    {
+      "title": "furiosa-ai/Qwen3-30B-A3B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/furiosa-ai/Qwen3-30B-A3B-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · furiosa-ai/Qwen3-30B-A3B-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/furiosa-ai/Qwen3-30B-A3B-FP8/blob/main/README.md",
+      "snippet": "Overview Qwen3-30B-A3B is an auto-regressive Mixture-of-Experts (MoE) transformer with 30.5B total parameters of which about 3.3B are activated per token. It is a hybrid reasoning model that supports both thinking and non-thinking modes within a single model — switchable per request — and offers strong reasoning over text, instruction following, multilingual coverage, and tool usage. Its ..."
+    },
+    {
+      "title": "furiosa-ai/Qwen3-30B-A3B-FP8 · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/furiosa-ai/Qwen3-30B-A3B-FP8",
+      "snippet": "Qwen3-30B-A3B is an auto-regressive Mixture-of-Experts (MoE) transformer with 30.5B total parameters of which about 3.3B are activated per token. It is a hybrid reasoning model that supports both thinking and non-thinking modes within a single model — switchable per request — and offers strong reasoning over text, instruction following ..."
+    }
+  ]
+}

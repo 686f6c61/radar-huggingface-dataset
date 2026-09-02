@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-GGUF",
+  "slug": "solstice-ai-qwen3-8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-gguf",
+  "author": "Solstice-AI",
+  "url": "https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-GGUF",
+  "created_at": "2026-09-02T13:07:35.000Z",
+  "updated_at": "2026-09-02T13:14:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "solstice-ai",
+    "anvil",
+    "llama-cpp",
+    "unsloth",
+    "qwen3_8",
+    "qwen3_6",
+    "heretic",
+    "uncensored",
+    "cold-fusion",
+    "gain-training",
+    "multi-stage-tuning",
+    "reasoning",
+    "chain-of-thought",
+    "token-efficient",
+    "imatrix",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 424062644635,
+  "storage_human": "424.1 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO ...",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "snippet": "Important: This is the first fine tune to exceed 730 \"arc-c\" (\"735\": 144 pts higher than Qwen 3.8 27B) AND 880 ARC-E (The OpenAI, Claude and Gemini \"zone of intelligence\") in 8 bit and over 718 arc-c in 4 bit."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI-TAVS/Qwen3.8-turbo:27b",
+      "url": "https://ollama.com/AI-TAVS/Qwen3.8-turbo:27b",
+      "snippet": "This model has 1 ⁄ 5 (as low as 1 ⁄ 10 in some cases) to 1 ⁄ 2 the thinking tokens (vs reg Qwen 3.8) across all 3 modes of operation, and it is faster and smarter too created using the COLD FUSION AND FABLE FUSION 711 methods of training."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    },
+    {
+      "title": "Qwen 3.8 27B scores 52 on Artificial Analysis Intelligence Index",
+      "url": "https://aibriefs.news/card/755ee941-c783-4b80-9000-402f26f6dc63",
+      "snippet": "Qwen 3.8 27B scores 52 on the Artificial Analysis Intelligence Index, matching GPT-5.6 Luna (max) and one point behind GLM-5.2… Covered by 12 outlets."
+    }
+  ]
+}

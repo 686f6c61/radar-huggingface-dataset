@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/bge-reranker-base",
+  "slug": "jonnyverse-bge-reranker-base",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/bge-reranker-base",
+  "created_at": "2026-09-02T15:30:23.000Z",
+  "updated_at": "2026-09-02T15:30:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-ranking",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "xlm-roberta",
+    "text-classification",
+    "sentence-transformers",
+    "text-ranking",
+    "base_model:BAAI/bge-reranker-base",
+    "base_model:quantized:BAAI/bge-reranker-base",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4608753984,
+  "storage_human": "4.6 GB",
+  "base_model": "BAAI/bge-reranker-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI/bge-reranker-base · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-reranker-base",
+      "snippet": "New reranker model: release cross-encoder models BAAI/bge-reranker-base and BAAI/bge-reranker-large, which are more powerful than embedding model. We recommend to use/fine-tune them to re-rank top-k documents returned by embedding models."
+    },
+    {
+      "title": "BGE Reranker base | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/bge-reranker-base/",
+      "snippet": "BGE Reranker base is BAAI&#x27;s lighter first-generation cross-encoder reranker for English and Chinese. It directly scores query-document relevance rather than producing embeddings, and is positioned as the faster, easier-to-deploy reranking option in the original BGE reranker family."
+    },
+    {
+      "title": "bge-reranker-base",
+      "url": "https://paddlenlp.readthedocs.io/en/latest/_static/website/BAAI/bge-reranker-base/index.html",
+      "snippet": "bge-reranker-base Files README.md (33.3 KB) config.json (793.0 B) model.safetensors (1.0 GB) sentencepiece.bpe.model (4.8 MB) special_tokens_map.json (279.0 B) tokenizer.json (16.3 MB) tokenizer_config.json (443.0 B) Back to Main"
+    },
+    {
+      "title": "BGE-Reranker — BGE documentation",
+      "url": "https://bge-model.com/bge/bge_reranker.html",
+      "snippet": "For examples, use a bge embedding model to first retrieve top 100 relevant documents, and then use bge reranker to re-rank the top 100 document to get the final top-3 results. The first series of BGE-Reranker contains two models, large and base."
+    },
+    {
+      "title": "bge",
+      "url": "https://bge.baai.ac.cn/",
+      "snippet": "Intro to BGE Models BGE builds a one-stop retrieval toolkit for search and RAG. We provide inference, evaluation, and fine-tuning for embedding models and reranker."
+    }
+  ]
+}

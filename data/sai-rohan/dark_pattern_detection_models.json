@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "sai-Rohan/Dark_pattern_Detection_models",
+  "slug": "sai-rohan-dark_pattern_detection_models",
+  "author": "sai-Rohan",
+  "url": "https://huggingface.co/sai-Rohan/Dark_pattern_Detection_models",
+  "created_at": "2026-08-17T09:26:11.000Z",
+  "updated_at": "2026-09-02T16:29:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dark_pattern_detector",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 64,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8273209100,
+  "storage_human": "8.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dark Pattern Detection API - a Hugging Face Space by sai-Rohan",
+      "url": "https://huggingface.co/spaces/sai-Rohan/Dark_Pattern_Detection_api",
+      "snippet": "Upload a picture of a website or app screen, and the system will scan the image to find deceptive design tricks called dark patterns. It then provides a simple JSON report listing any identified pa..."
+    },
+    {
+      "title": "Sai-Rohan005/Dark_pattern_detection - GitHub",
+      "url": "https://github.com/Sai-Rohan005/Dark_pattern_detection",
+      "snippet": "Contribute to Sai-Rohan005/Dark_pattern_detection development by creating an account on GitHub."
+    },
+    {
+      "title": "Abisai1257/dark-pattern-detector at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/Abisai1257/dark-pattern-detector/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - GargiMeshram/dark-pattern-detector: A Machine Learning and AI ...",
+      "url": "https://github.com/GargiMeshram/dark-pattern-detector",
+      "snippet": "A Machine Learning and AI-based project to detect dark patterns in user interfaces. The tool analyzes websites to identify deceptive design practices that manipulate user behavior, promoting fair a..."
+    },
+    {
+      "title": "Unmasking Dark Patterns: A Machine Learning Approach to Detecting ...",
+      "url": "https://arxiv.org/html/2406.01608v1",
+      "snippet": "Other approaches categorize dark patterns based on detectability into automated, manual, or undetectable, utilize explainable machine learning models trained on e-commerce dark pattern datasets, and explore generative AI technologies driven by regulatory interest."
+    }
+  ]
+}

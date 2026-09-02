@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "isaac-ronald-ward/quickdraw-wm-robocasa-vl128",
+  "slug": "isaac-ronald-ward-quickdraw-wm-robocasa-vl128",
+  "author": "isaac-ronald-ward",
+  "url": "https://huggingface.co/isaac-ronald-ward/quickdraw-wm-robocasa-vl128",
+  "created_at": "2026-09-02T17:14:51.000Z",
+  "updated_at": "2026-09-02T17:22:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "quickdraw",
+  "languages": [],
+  "tags": [
+    "quickdraw",
+    "world-models",
+    "robotics",
+    "video-prediction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 174542547,
+  "storage_human": "175 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Isaac Ronald Ward&#x27;s Homepage",
+      "url": "https://isaacronaldward.com/",
+      "snippet": "G&#x27;day, I&#x27;m Isaac (everyone just calls me Ike). I&#x27;m interested in exploration. More specifically, I&#x27;m interested in leveraging autonomy, robotics, and artificial intelligence to enhance our ability to explore extreme environments."
+    },
+    {
+      "title": "GitHub - robocasa/robocasa: RoboCasa: Large-Scale Simulation of ...",
+      "url": "https://github.com/robocasa/robocasa",
+      "snippet": "RoboCasa RoboCasa is a large-scale simulation framework for training generally capable robots to perform everyday tasks. It was originally released in 2024 by UT Austin researchers. The latest iteration, RoboCasa365, builds upon the original release with significant new functionalities to support large-scale training and benchmarking in sim."
+    },
+    {
+      "title": "RoboCasa",
+      "url": "https://robocasa.ai/",
+      "snippet": "RoboCasa is a large-scale simulation framework for training generally capable robots to perform everyday tasks. It features realistic and diverse human-centered environments with a focus on kitchen scenes."
+    },
+    {
+      "title": "RoboCasa: Large-Scale Simulation of Everyday Tasks for Generalist Robots",
+      "url": "https://arxiv.org/html/2406.02523",
+      "snippet": "We present RoboCasa, a large-scale simulation framework for training generalist robots in everyday environments. RoboCasa features realistic and diverse scenes focusing on kitchen environments. We provide thousands of 3D assets across over 150 object categories and dozens of interactable furniture and appliances."
+    },
+    {
+      "title": "[2406.02523] RoboCasa: Large-Scale Simulation of Everyday Tasks for ...",
+      "url": "https://arxiv.org/abs/2406.02523",
+      "snippet": "Recent advancements in Artificial Intelligence (AI) have largely been propelled by scaling. In Robotics, scaling is hindered by the lack of access to massive robot datasets. We advocate using realistic physical simulation as a means to scale environments, tasks, and datasets for robot learning methods. We present RoboCasa, a large-scale simulation framework for training generalist robots in ..."
+    }
+  ]
+}

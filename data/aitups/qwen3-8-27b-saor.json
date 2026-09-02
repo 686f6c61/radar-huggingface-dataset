@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "aitups/Qwen3.8-27B-saor",
+  "slug": "aitups-qwen3-8-27b-saor",
+  "author": "aitups",
+  "url": "https://huggingface.co/aitups/Qwen3.8-27B-saor",
+  "created_at": "2026-09-02T14:52:35.000Z",
+  "updated_at": "2026-09-02T14:54:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "saor",
+    "sparse",
+    "opencl",
+    "base_model:unsloth/Qwen3.8-27B-GGUF",
+    "base_model:quantized:unsloth/Qwen3.8-27B-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27113478656,
+  "parameters_human": "27.11B",
+  "storage_bytes": 16665416504,
+  "storage_human": "16.7 GB",
+  "base_model": "unsloth/Qwen3.8-27B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8 27B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-8-27b/",
+      "snippet": "Qwen3.8 27B is Qwen&#x27;s dense, open-weight vision-language model for coding, professional work, research, and long-horizon agentic tasks. It brings the strongest generation of Qwen open models to a deployment-friendly size, with better planning and stronger handling of tool and environment feedback for more reliable multi-step task completion."
+    },
+    {
+      "title": "Qwen3.8-27B: Specs, Benchmarks & Verdict - kingy.ai",
+      "url": "https://kingy.ai/blog/qwen3-8-27b-specs-benchmarks-local-hardware/",
+      "snippet": "Qwen3.8-27B benchmarks, specs, local memory, context, license and comparisons—plus what Qwen&#x27;s launch-day evidence does and does not prove."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    },
+    {
+      "title": "Qwen3.8-27B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/qwen3-8-27b",
+      "snippet": "The open-weight, single-GPU sibling of Qwen3.8-Max, published by Alibaba on Hugging Face on Aug 14 2026 under Apache 2.0 — the smaller open release Alibaba had promised alongside the closed Qwen3.8-Max flagship. A 27B dense model (~28B counting the ~1B vision encoder) with 64 layers, hidden size 5,120, and a 248,320-token vocabulary. Uses a hybrid attention stack — 48 Gated DeltaNet linear ..."
+    }
+  ]
+}

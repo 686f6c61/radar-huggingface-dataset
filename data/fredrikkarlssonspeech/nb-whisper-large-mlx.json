@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "FredrikKarlssonSpeech/nb-whisper-large-mlx",
+  "slug": "fredrikkarlssonspeech-nb-whisper-large-mlx",
+  "author": "FredrikKarlssonSpeech",
+  "url": "https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-large-mlx",
+  "created_at": "2026-09-02T12:06:30.000Z",
+  "updated_at": "2026-09-02T12:06:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "nb",
+    "no"
+  ],
+  "tags": [
+    "mlx",
+    "whisper",
+    "automatic-speech-recognition",
+    "nb",
+    "no",
+    "base_model:NbAiLab/nb-whisper-large",
+    "base_model:finetune:NbAiLab/nb-whisper-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3083280590,
+  "storage_human": "3.1 GB",
+  "base_model": "NbAiLab/nb-whisper-large",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NbAiLab/nb-whisper-large · Hugging Face",
+      "url": "https://huggingface.co/NbAiLab/nb-whisper-large",
+      "snippet": "Whisper CPP Whisper CPP is a C++ implementation of the Whisper model, offering the same functionalities with the added benefits of C++ efficiency and performance optimizations. This allows embedding any Whisper model into a binary file, facilitating the development of real applications."
+    },
+    {
+      "title": "GitHub - NbAiLab/nb-whisper",
+      "url": "https://github.com/NbAiLab/nb-whisper",
+      "snippet": "Contribute to NbAiLab/nb-whisper development by creating an account on GitHub."
+    },
+    {
+      "title": "FredrikKarlssonSpeech/nb-whisper-large-onnx · Hugging Face",
+      "url": "https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-large-onnx",
+      "snippet": "The ONNX post-processing step that merges the decoder fails for large models due to the protobuf 2GB size limit. The separate decoder_model.onnx and decoder_with_past_model.onnx files are used instead — this is handled automatically by Optimum and does not affect functionality or accuracy."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper [Blog] [Paper] [Model card] [Colab example] Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "nb-whisper-large · Model · Inferix",
+      "url": "https://inferix.co/models/NbAiLab/nb-whisper-large",
+      "snippet": "NB-Whisper Large Introducing the Norwegian NB-Whisper Large model, proudly developed by the National Library of Norway. NB-Whisper is a cutting-edge series of models designed for automatic speech recognition (ASR) and speech translation. These models are based on the work of OpenAI&#x27;s Whisper. Each model in the series has been trained for 250,000 steps, utilizing a diverse dataset of 8 million ..."
+    }
+  ]
+}

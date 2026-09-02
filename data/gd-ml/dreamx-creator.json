@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "GD-ML/DreamX-Creator",
+  "slug": "gd-ml-dreamx-creator",
+  "author": "GD-ML",
+  "url": "https://huggingface.co/GD-ML/DreamX-Creator",
+  "created_at": "2026-09-02T12:21:45.000Z",
+  "updated_at": "2026-09-02T12:21:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DreamX-Creator | OpenTrain AI",
+      "url": "https://www.opentrain.ai/papers/dreamx-creator-democratizing-native-audio-video-generation-at-2k-resolution--arxiv-2608.31106/",
+      "snippet": "Recent video generators often omit audio or synthesize it in a separate stage, limiting reciprocal modeling of visual dynamics and acoustic events. We present DreamX-Creator 1.0, a compact native joint audio-video generation system centered on a 7B generator. Conditioned on a first frame and a text prompt, the generator jointly denoises modality-specialized audio and video streams. The streams ..."
+    },
+    {
+      "title": "DreamX-Creator: Democratizing Native Audio-Video Generation at 2K ...",
+      "url": "https://lilys.ai/en/notes/daily-papers-20260901/dreamx-creator-2k-av-gen",
+      "snippet": "DreamX-Creator 1.0 is the smallest model among those with disclosed total backbone size that combines downloadable model weights, native joint audio-video generation, and officially supported output at 2K resolution or above."
+    },
+    {
+      "title": "DreamX-Creator 1.0: Democratizing Native Audio-Video Generation at 2K ...",
+      "url": "https://arxiv.org/html/2608.31106v1",
+      "snippet": "Among the listed systems with a disclosed total backbone size, DreamX-Creator 1.0 is the smallest model that combines all three properties. Table 1: Capability comparison among representative contemporary video generators."
+    },
+    {
+      "title": "DreamX-Creator: 7B Native Audio-Video Generation at 2K - cctest.ai",
+      "url": "https://cctest.ai/en/articles/dreamx-creator-brings-native-audio-video-generation-to-2k",
+      "snippet": "Introduction Many video-generation systems either omit sound or create it after the visual sequence has already been produced. That separation is convenient from an engineering perspective, but it makes it harder to model the timing relationship between what happens on screen and what is heard. DreamX-Creator 1.0 takes a native joint-generation approach. Centered on a compact 7B generator, it ..."
+    },
+    {
+      "title": "GD-ML/DreamX-World-5B - a SoulSeeker Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/SoulSeeker/gd-ml-dreamx-world-5b",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from SoulSeeker"
+    }
+  ]
+}

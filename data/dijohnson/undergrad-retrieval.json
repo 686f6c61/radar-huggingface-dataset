@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dijohnson/undergrad-retrieval",
+  "slug": "dijohnson-undergrad-retrieval",
+  "author": "dijohnson",
+  "url": "https://huggingface.co/dijohnson/undergrad-retrieval",
+  "created_at": "2026-09-02T18:29:58.000Z",
+  "updated_at": "2026-09-02T18:30:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Joyceanggraini/undergrad-retrieval · Hugging Face",
+      "url": "https://huggingface.co/Joyceanggraini/undergrad-retrieval",
+      "snippet": "A small ViT implementation for Retrieval, packaged with an explicit configuration and an initialization checkpoint. The base variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "PDF DAP_2510024 1. - Cambridge University Press & Assessment",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/498B8CB29AA37695AC5EACBE1B2089B4/S2632324925100242a.pdf/impact_of_retrieval_augmented_generation_and_large_language_model_complexity_on_undergraduate_exams_created_and_taken_by_ai_agents.pdf",
+      "snippet": "Impact of retrieval augmented generation and large language model complexity on undergraduate exams created and taken by AI agents Erick Tyndall1 , Colleen Gayheart1, Alexandre Some1, Joseph Genz2, Torrey Wagner1and Brent Langhals1"
+    },
+    {
+      "title": "Retrieval-Augmented Generation: A Comprehensive Survey of Architectures ...",
+      "url": "https://arxiv.org/html/2506.00054v1",
+      "snippet": "This section presents a comparative analysis of Retrieval-Augmented Generation (RAG) frameworks in short-form question answering, emphasizing their relative improvements over raw large language model (LLM) baselines and retrieval-augmented baselines."
+    },
+    {
+      "title": "Resolve a DOI Name",
+      "url": "https://dx.doi.org/",
+      "snippet": "Type or paste a known DOI name exactly—including its prefix and suffix—into the text box below and then &#x27;submit&#x27; to resolve it."
+    },
+    {
+      "title": "Retrieval-Augmented Generation for AI-Generated Content: A Survey",
+      "url": "https://link.springer.com/article/10.1007/s41019-025-00335-5",
+      "snippet": "Advancements in model algorithms, the growth of foundational models, and access to high-quality datasets have propelled the evolution of Artificial Intelligence Generated Content (AIGC). Despite its notable successes, AIGC still faces hurdles such as updating knowledge, handling long-tail data, mitigating data leakage, and managing high training and inference costs. Retrieval-augmented ..."
+    }
+  ]
+}

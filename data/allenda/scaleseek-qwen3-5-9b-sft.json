@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Allenda/ScaleSeek-Qwen3.5-9B-SFT",
+  "slug": "allenda-scaleseek-qwen3-5-9b-sft",
+  "author": "Allenda",
+  "url": "https://huggingface.co/Allenda/ScaleSeek-Qwen3.5-9B-SFT",
+  "created_at": "2026-09-02T18:52:09.000Z",
+  "updated_at": "2026-09-02T18:54:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 37659338741,
+  "storage_human": "37.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5 9B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-5-9b/",
+      "snippet": "Qwen3.5 9B is a dense vision-language model in the Qwen3.5 family aimed at stronger reasoning, visual understanding, and agentic behavior on Jetson. This entry uses a W4A16 checkpoint on Jetson Orin and an NVFP4 checkpoint on Jetson Thor."
+    },
+    {
+      "title": "SeaArt-Reaserch/Qwen3.5-9B-SFT-checkpoint8000-2026-08-05 · Hugging Face",
+      "url": "https://huggingface.co/SeaArt-Reaserch/Qwen3.5-9B-SFT-checkpoint8000-2026-08-05",
+      "snippet": "Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks. Efficient Hybrid Architecture: Gated Delta Networks combined with sparse Mixture-of-Experts deliver high-throughput inference with minimal latency and cost overhead ..."
+    },
+    {
+      "title": "SeaArt-Reaserch/Qwen3.5-9B-SFT-checkpoint7000-2026-08-06 · Hugging Face",
+      "url": "https://huggingface.co/SeaArt-Reaserch/Qwen3.5-9B-SFT-checkpoint7000-2026-08-06",
+      "snippet": "Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks. Efficient Hybrid Architecture: Gated Delta Networks combined with sparse Mixture-of-Experts deliver high-throughput inference with minimal latency and cost overhead ..."
+    },
+    {
+      "title": "qwen3.5-9b-dsr1-cot-sft · Models",
+      "url": "https://www.modelscope.cn/models/codingmiao/qwen3.5-9b-dsr1-cot-sft",
+      "snippet": "This model is a fine-tuned variant of Qwen3.5-9B, built on top of the original model and trained using a carefully selected subset of STEM and math data from the DeepSeek-R1 dataset. It is optimized for more concise and rational chain-of-thought reasoning."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    }
+  ]
+}

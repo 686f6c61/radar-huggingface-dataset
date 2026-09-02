@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Jason345/peft-for-rl",
+  "slug": "jason345-peft-for-rl",
+  "author": "Jason345",
+  "url": "https://huggingface.co/Jason345/peft-for-rl",
+  "created_at": "2026-09-02T13:05:01.000Z",
+  "updated_at": "2026-09-02T13:10:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11483086,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jason345 (lisheng wang) - Hugging Face",
+      "url": "https://huggingface.co/Jason345",
+      "snippet": "User profile of lisheng wang on Hugging Face"
+    },
+    {
+      "title": "Parameter Efficient Reinforcement Learning from Human Feedback",
+      "url": "https://arxiv.org/html/2403.10704v2",
+      "snippet": "RLHF involves two phases: reward model training, and reinforcement learning of a policy model. PE-RLHF applies parameter-efficient fine-tuning techniques to optimize both of these training phases, thus significantly reducing the memory requirements, and increasing the training speed. We provide a brief overview on RLHF in Appendix A.1."
+    },
+    {
+      "title": "PEFT - Hugging Face",
+      "url": "https://huggingface.co/docs/peft/index",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - huggingface/peft: PEFT: State-of-the-art Parameter-Efficient ...",
+      "url": "https://github.com/huggingface/peft",
+      "snippet": "Fine-tuning large pretrained models is often prohibitively costly due to their scale. Parameter-Efficient Fine-Tuning (PEFT) methods enable efficient adaptation of large pretrained models to various downstream applications by only fine-tuning a small number of (extra) model parameters instead of all the model&#x27;s parameters. This significantly decreases the computational and storage costs ..."
+    },
+    {
+      "title": "GitHub - 3Dsamples/peft-ai: PEFT: State-of-the-art Parameter ...",
+      "url": "https://github.com/3Dsamples/peft-ai",
+      "snippet": "State-of-the-art Parameter-Efficient Fine-Tuning (PEFT) methods Fine-tuning large pretrained models is often prohibitively costly due to their scale. Parameter-Efficient Fine-Tuning (PEFT) methods enable efficient adaptation of large pretrained models to various downstream applications by only fine-tuning a small number of (extra) model parameters instead of all the model&#x27;s parameters. This ..."
+    }
+  ]
+}

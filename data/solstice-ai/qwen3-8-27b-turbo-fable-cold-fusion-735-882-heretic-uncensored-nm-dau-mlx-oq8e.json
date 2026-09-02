@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-mlx-oQ8e",
+  "slug": "solstice-ai-qwen3-8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-nm-dau-mlx-oq8e",
+  "author": "Solstice-AI",
+  "url": "https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-mlx-oQ8e",
+  "created_at": "2026-09-02T16:59:52.000Z",
+  "updated_at": "2026-09-02T17:00:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "solstice-ai",
+    "anvil",
+    "apple-silicon",
+    "metal",
+    "mtp",
+    "agentic-coding",
+    "long-context",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 30021630737,
+  "storage_human": "30.0 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO ...",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "snippet": "Important: This is the first fine tune to exceed 730 \"arc-c\" (\"735\": 144 pts higher than Qwen 3.8 27B) AND 880 ARC-E (The OpenAI, Claude and Gemini \"zone of intelligence\") in 8 bit and over 718 arc-c in 4 bit."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    },
+    {
+      "title": "SolsticeAI--Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-mlx-6Bit",
+      "url": "https://omlx.ai/benchmarks/performance/e20zx4qx",
+      "snippet": "Model Settings Show all 31 settings benchmark_contextCode (Python) force_samplingfalse thinking_budget_enabledfalse reasoning_parserqwen_3_5 guided_grammar_enabledfalse turboquant_kv_enabledfalse turboquant_kv_bits4 turboquant_skip_lasttrue specprefill_enabledfalse dflash_enabledtrue dflash_draft_modeldedf8df68adfb1afeaf7b7480c0a0243108177b4"
+    },
+    {
+      "title": "AI-TAVS/Qwen3.8-turbo",
+      "url": "https://ollama.com/AI-TAVS/Qwen3.8-turbo",
+      "snippet": "The first model of this size/type to breach \"730\" ARC-C in 8 bit (735) and 4 bit (719); hench the \"735\" in the name. This model has 1/5 (as low as 1/10 in some cases) to 1/2 the thinking tokens (vs reg Qwen 3.8) across all 3 modes of operation, and it is faster and smarter too created using the COLD FUSION AND FABLE FUSION 711 methods of training."
+    }
+  ]
+}

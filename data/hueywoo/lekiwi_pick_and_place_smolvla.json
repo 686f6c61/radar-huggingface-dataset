@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HueyWoo/lekiwi_pick_and_place_smolvla",
+  "slug": "hueywoo-lekiwi_pick_and_place_smolvla",
+  "author": "HueyWoo",
+  "url": "https://huggingface.co/HueyWoo/lekiwi_pick_and_place_smolvla",
+  "created_at": "2026-09-02T18:15:41.000Z",
+  "updated_at": "2026-09-02T18:16:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:HueyWoo/lekiwi_pick_and_place",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720336,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HueyWoo/lekiwi_pick_and_place · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/HueyWoo/lekiwi_pick_and_place/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HueyWoo/act_lekiwi_pick_and_place · Hugging Face",
+      "url": "https://huggingface.co/HueyWoo/act_lekiwi_pick_and_place",
+      "snippet": "Instructions to use HueyWoo/act_lekiwi_pick_and_place with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use HueyWoo/act_lekiwi_pick_and_place with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the ..."
+    },
+    {
+      "title": "Lekiwi-sim2sim-with-ROS2 - GitHub",
+      "url": "https://github.com/ArthurLABE/Lekiwi-sim2sim-with-ROS2",
+      "snippet": "Lekiwi-sim2sim-with-ROS2 In this repository, we explain step by step how to create a dataset of simulated pick&place episodes from scratch, using ROS2, Gazebo and MoveIt. Our goal is to train our robot LeKiwi to perform tasks in the real world, without necessarily having to create a real dataset via teleoperation."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "iscas/oslab Lekiwi complets the pick-and-place task - YouTube",
+      "url": "https://www.youtube.com/watch?v=7IQ4iX0a_78",
+      "snippet": "repo id: bigbangoslab/smolvla_lekiwi_pick_and_place_box …...more"
+    }
+  ]
+}

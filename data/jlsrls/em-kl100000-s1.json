@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jlsrls/em-kl100000-s1",
+  "slug": "jlsrls-em-kl100000-s1",
+  "author": "jlsrls",
+  "url": "https://huggingface.co/jlsrls/em-kl100000-s1",
+  "created_at": "2026-09-02T16:19:15.000Z",
+  "updated_at": "2026-09-02T18:30:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "base_model:unsloth/gemma-3-4b-it",
+    "base_model:finetune:unsloth/gemma-3-4b-it",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1118512707,
+  "storage_human": "1.1 GB",
+  "base_model": "unsloth/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - simplescaling/s1: s1: Simple test-time scaling",
+      "url": "https://github.com/simplescaling/s1",
+      "snippet": "s1: Simple test-time scaling. Contribute to simplescaling/s1 development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Open-Source AI Model s1 Developed for Under $50: Key Insights",
+      "url": "https://www.ceotodaymagazine.com/2025/02/open-source-ai-model-s1-developed-for-less-than-50-challenges-industry-norms/",
+      "snippet": "Discover how researchers created the s1 AI model for under $50, challenging industry norms with distillation techniques and powerful reasoning capabilities."
+    },
+    {
+      "title": "Researchers created an open rival to OpenAI&#x27;s o1 &#x27;reasoning&#x27; model for ...",
+      "url": "https://techcrunch.com/2025/02/05/researchers-created-an-open-rival-to-openais-o1-reasoning-model-for-under-50/",
+      "snippet": "The researchers behind s1 were looking to find the simplest approach to achieve strong reasoning performance and \"test-time scaling,\" or allowing an AI model to think more before it answers a ..."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    }
+  ]
+}

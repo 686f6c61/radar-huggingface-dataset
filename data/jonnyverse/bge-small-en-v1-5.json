@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/bge-small-en-v1.5",
+  "slug": "jonnyverse-bge-small-en-v1-5",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/bge-small-en-v1.5",
+  "created_at": "2026-09-02T15:30:14.000Z",
+  "updated_at": "2026-09-02T15:30:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:quantized:BAAI/bge-small-en-v1.5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 459190721,
+  "storage_human": "459 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI/bge-small-en · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-small-en",
+      "snippet": "Suggest to use bge v1.5, which alleviates the issue of the similarity distribution. Since we finetune the models by contrastive learning with a temperature of 0.01, the similarity distribution of the current BGE model is about in the interval [0.6, 1]."
+    },
+    {
+      "title": "README.md · BAAI/bge-small-en-v1.5 at main - Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-small-en-v1.5/blob/main/README.md",
+      "snippet": "BAAI / bge-small-en-v1.5 like 494 Follow Beijing Academy of Artificial Intelligence 3.87k Feature Extraction sentence-transformers PyTorch ONNX Safetensors Transformers English bert sentence-similarity mteb Eval Results (legacy) text-embeddings-inference arxiv:5 papers License:mit Model card FilesFiles and versions xet Community 28 Deploy Copy ..."
+    },
+    {
+      "title": "BGE v1 & v1.5 — BGE documentation - bge-model.com",
+      "url": "https://bge-model.com/bge/bge_v1_v1.5.html",
+      "snippet": "BGE v1 & v1.5 # BGE v1 and v1.5 are series of encoder only models base on BERT. They achieved best performance among the models of the same size at the time of release. BGE # The first group of BGE models was released in Aug 2023. The bge-large-en and bge-large-zh ranked 1st on MTEB and C-MTEB benchmarks at the time released."
+    },
+    {
+      "title": "BGE Small EN v1.5 by BGE — Embedding Model | Vincony",
+      "url": "https://vincony.com/models/bge-bge-small-en-v1.5",
+      "snippet": "BGE Small EN v1.5 is the smallest model in the BGE (BAAI General Embedding) series from the Beijing Academy of Artificial Intelligence (BAAI). Despite its compact size, it achieves competitive retrieval performance by leveraging the same training methodology — including instruction-tuned contrastive learning — used across the BGE family."
+    },
+    {
+      "title": "BGE Small EN v1.5 Embedding Model - Rapid",
+      "url": "https://rapidapi.com/robotfa-robotra/api/bge-small-en-v1-5-embedding-model/playground",
+      "snippet": "## Overview BGE Small EN v1.5 is a compact and efficient text embedding model developed by the BAAI. It is designed to convert natural language text into dense vector representations that capture semantic meaning, enabling advanced search, retrieval, and similarity matching systems. Unlike large generative models, embedding models like BGE Small EN v1.5 are specialized for representation ..."
+    }
+  ]
+}

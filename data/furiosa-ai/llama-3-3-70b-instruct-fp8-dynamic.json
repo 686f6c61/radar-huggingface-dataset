@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "furiosa-ai/Llama-3.3-70B-Instruct-FP8-dynamic",
+  "slug": "furiosa-ai-llama-3-3-70b-instruct-fp8-dynamic",
+  "author": "furiosa-ai",
+  "url": "https://huggingface.co/furiosa-ai/Llama-3.3-70B-Instruct-FP8-dynamic",
+  "created_at": "2026-07-08T09:13:25.000Z",
+  "updated_at": "2026-09-02T14:39:03.000Z",
+  "license": "llama3.3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "furiosa-llm",
+  "languages": [
+    "en",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "de"
+  ],
+  "tags": [
+    "furiosa-llm",
+    "safetensors",
+    "llama",
+    "furiosa-ai",
+    "llama-3",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "en",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "de",
+    "base_model:RedHatAI/Llama-3.3-70B-Instruct-FP8-dynamic",
+    "base_model:quantized:RedHatAI/Llama-3.3-70B-Instruct-FP8-dynamic",
+    "license:llama3.3",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 822,
+  "trending_score": 0,
+  "parameters": 70553706496,
+  "parameters_human": "70.55B",
+  "storage_bytes": 78093910800,
+  "storage_human": "78.1 GB",
+  "base_model": "RedHatAI/Llama-3.3-70B-Instruct-FP8-dynamic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "furiosa-ai/Llama-3.3-70B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/furiosa-ai/Llama-3.3-70B-Instruct",
+      "snippet": "Quantization: No ... Description: This model is the pre-compiled version of the Llama-3.3-70B-Instruct, which is an auto-regressive language model that uses an optimized transformer architecture. Usage To run this model with Furiosa-LLM, follow the example command below after installing Furiosa-LLM and its prerequisites."
+    },
+    {
+      "title": "furiosa-ai/Llama-3.3-70B-Instruct-FP8-dynamic · Hugging Face",
+      "url": "https://huggingface.co/furiosa-ai/Llama-3.3-70B-Instruct-FP8-dynamic",
+      "snippet": "Overview Llama-3.3-70B-Instruct is Meta&#x27;s 70B instruction-tuned model, an auto-regressive dense transformer optimized for multilingual dialogue, instruction following, and tool usage, with quality competitive with much larger models. This is the FP8-dynamic quantized variant published by RedHatAI, derived from meta-llama/Llama-3.3-70B-Instruct. Its intended use is the same as the upstream ..."
+    },
+    {
+      "title": "Llama 3.3 — FuriosaAI Developer Center 2026.4.0b13 documentation",
+      "url": "https://developer.furiosa.ai/v2026.4.0/en/furiosa_llm/models/llama-3.3.html",
+      "snippet": "Llama 3.3 # Llama 3.3 is Meta&#x27;s instruction-tuned, auto-regressive dense transformer optimized for multilingual dialogue, instruction following, and tool usage, with quality competitive with much larger models. Furiosa-LLM runs Llama 3.3 in FP8 using the RedHatAI FP8-dynamic recipe (static FP8 weights with dynamic FP8 activation quantization)."
+    },
+    {
+      "title": "Llama 3.3 — FuriosaAI Developer Center 2026.3.0 documentation",
+      "url": "https://developer.furiosa.ai/latest/en/furiosa_llm/models/llama-3.3.html",
+      "snippet": "Llama 3.3 # Llama 3.3 is Meta&#x27;s instruction-tuned, auto-regressive dense transformer optimized for multilingual dialogue, instruction following, and tool usage, with quality competitive with much larger models. FuriosaAI publishes pre-compiled builds of the Llama 3.3 models under the furiosa-ai organization on the Hugging Face Hub, each shipping a Furiosa Executable Bundle (FXB) for running ..."
+    },
+    {
+      "title": "furiosa-ai/Llama-3.3-70B-Instruct · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/furiosa-ai/Llama-3.3-70B-Instruct",
+      "snippet": "Overview Llama-3.3-70B-Instruct is Meta&#x27;s 70B instruction-tuned model, an auto-regressive dense transformer optimized for multilingual dialogue, instruction following, and tool usage, with quality competitive with much larger models. Its intended use is the same as the upstream meta-llama/Llama-3.3-70B-Instruct, and it is released under the Llama 3.3 Community License."
+    }
+  ]
+}

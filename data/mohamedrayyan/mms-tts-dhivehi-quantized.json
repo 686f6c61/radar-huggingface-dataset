@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mohamedrayyan/mms-tts-dhivehi-quantized",
+  "slug": "mohamedrayyan-mms-tts-dhivehi-quantized",
+  "author": "mohamedrayyan",
+  "url": "https://huggingface.co/mohamedrayyan/mms-tts-dhivehi-quantized",
+  "created_at": "2026-09-02T18:33:03.000Z",
+  "updated_at": "2026-09-02T18:40:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "dv"
+  ],
+  "tags": [
+    "dhivehi",
+    "tts",
+    "vits",
+    "mms",
+    "text-to-speech",
+    "dv",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 856976488,
+  "storage_human": "857 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · dhivehihacker/tts-dhivehi-demo-mms at main",
+      "url": "https://huggingface.co/spaces/dhivehihacker/tts-dhivehi-demo-mms/blob/main/README.md",
+      "snippet": "Massively Multilingual Speech (MMS): A pre-trained model from Facebook AI Research designed to handle TTS tasks across multiple languages. MMS provides a robust foundation with extensive language support and pre-learned phonetic nuances."
+    },
+    {
+      "title": "facebook/mms-tts · Hugging Face",
+      "url": "https://huggingface.co/facebook/mms-tts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Open-source Text-to-Speech Model mms-tts-mhy - Free Malayang Language ...",
+      "url": "https://model.aibase.com/models/details/1915693068801695745",
+      "snippet": "A Mayang language text-to-speech model developed by Meta, which is part of the Massive Multilingual Speech (MMS) project."
+    },
+    {
+      "title": "ICONIQ | State of AI: Bi-Annual Snapshot",
+      "url": "https://www.iconiq.com/growth/reports/2026-state-of-ai-bi-annual-snapshot",
+      "snippet": "ICONIQ&#x27;s bi-annual State of AI report, based on insights from ~300 AI product leaders, explores how companies are executing on AI in 2026—driving application-layer differentiation, adopting multi-model architectures, evolving AI monetization, deploying agentic workflows, and scaling AI into reliable, production-ready products."
+    },
+    {
+      "title": "dhivehi.ai · GitHub",
+      "url": "https://github.com/DhivehiAI",
+      "snippet": "Open source projects related to Dhivehi. dhivehi.ai has 7 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

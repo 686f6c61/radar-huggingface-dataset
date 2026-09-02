@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "pavanyadava07/aeroedge-yolo11n",
+  "slug": "pavanyadava07-aeroedge-yolo11n",
+  "author": "pavanyadava07",
+  "url": "https://huggingface.co/pavanyadava07/aeroedge-yolo11n",
+  "created_at": "2026-09-02T14:23:38.000Z",
+  "updated_at": "2026-09-02T14:37:51.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "object-detection",
+    "yolo",
+    "edge",
+    "aerial",
+    "drone",
+    "satellite",
+    "int8",
+    "quantized",
+    "dataset:VisDrone",
+    "dataset:DOTA",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22361268,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YOLO11n Model by Ultralytics",
+      "url": "https://platform.ultralytics.com/ultralytics/yolo11/yolo11n",
+      "snippet": "YOLO11n model from the YOLO11 project by Ultralytics. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "Ultralytics YOLO11 | Ultralytics",
+      "url": "https://docs.ultralytics.com/models/yolo11",
+      "snippet": "Discover YOLO11, an advancement in real-time object detection, offering excellent accuracy and efficiency for diverse computer vision tasks."
+    },
+    {
+      "title": "YOLO11 Models by Ae A - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/ae-a/yolo11",
+      "snippet": "Released September 2024. Current stable release and the recommended choice for all use cases. Best balance of speed, accuracy, and ease of use across all vision tasks."
+    },
+    {
+      "title": "GitHub - ultralytics/yolo11: Ultralytics YOLO11 discovery and ...",
+      "url": "https://github.com/ultralytics/yolo11",
+      "snippet": "🧩 Integrations Ultralytics integrations extend dataset labeling, training, visualization, deployment, and model management workflows. Explore Ultralytics Platform and the Ultralytics Integrations docs to connect YOLO11 with your AI stack, including popular export formats like TensorRT, ONNX, CoreML, and TFLite."
+    },
+    {
+      "title": "Ultralytics/YOLO11 · Hugging Face",
+      "url": "https://huggingface.co/Ultralytics/YOLO11",
+      "snippet": "Our key integrations with leading AI platforms extend the functionality of Ultralytics&#x27; offerings, enhancing tasks like dataset labeling, training, visualization, and model management. Discover how Ultralytics, in collaboration with partners like Weights & Biases, Comet ML, Roboflow, and Intel OpenVINO, can optimize your AI workflow."
+    }
+  ]
+}

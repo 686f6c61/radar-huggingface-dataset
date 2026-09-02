@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "SupritiVijay/reasoning-distillation-models",
+  "slug": "supritivijay-reasoning-distillation-models",
+  "author": "SupritiVijay",
+  "url": "https://huggingface.co/SupritiVijay/reasoning-distillation-models",
+  "created_at": "2026-09-01T23:58:30.000Z",
+  "updated_at": "2026-09-02T18:58:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "math",
+    "reasoning",
+    "distillation",
+    "sft",
+    "code",
+    "science",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 610133924894,
+  "storage_human": "610.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Towards Understanding Distilled Reasoning Models: A Representational ...",
+      "url": "https://arxiv.org/html/2503.03730v1",
+      "snippet": "Abstract In this paper, we investigate how model distillation impacts the development of reasoning features in large language models (LLMs). To explore this, we train a crosscoder on Qwen-series models and their fine-tuned variants. Our results suggest that the crosscoder learns features corresponding to various types of reasoning, including self-reflection and computation verification ..."
+    },
+    {
+      "title": "TowardsUnderstandingDistilledReasoningModels: ARep ...",
+      "url": "https://arxiv.org/pdf/2503.03730v1",
+      "snippet": "Abstract In this paper, we investigate how model distillation impacts the development of reasoning features in large language models (LLMs). To explore this, we train a crosscoder on Qwen-series models and their fine-tuned variants. Our results suggest that the crosscoder learns features corresponding to various types of reasoning, including self-reflection and computa-tion verification ..."
+    },
+    {
+      "title": "(PDF) Towards Understanding Distilled Reasoning Models: A ...",
+      "url": "https://www.researchgate.net/publication/389616681_Towards_Understanding_Distilled_Reasoning_Models_A_Representational_Approach",
+      "snippet": "In this paper, we investigate how model distillation impacts the development of reasoning features in large language models (LLMs). To explore this, we train a crosscoder on Qwen-series models and ..."
+    },
+    {
+      "title": "T Understanding Distilled Reasoning M : a Representational Approach",
+      "url": "https://openreview.net/pdf?id=UYZCcnwgc4",
+      "snippet": "ABSTRACT In this paper, we investigate how model distillation impacts the development of reasoning features in large language models (LLMs). To explore this, we train a crosscoder on Qwen-series models and their fine-tuned variants. Our results sug-gest that the crosscoder learns features corresponding to various types of reason-ing, including self-reflection and computation verification ..."
+    },
+    {
+      "title": "Artificial intelligence, conceptions of distillation and the reframing ...",
+      "url": "https://journals.sagepub.com/doi/10.1177/20539517261442383",
+      "snippet": "Abstract This article, which takes a specific example in order to look at how concepts shape developments in AI models, claims that the deployment of the concept of distillation is facilitating a particular reframing of reasoning within artificial intelligence."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "pkrisz/renegade-net-36",
+  "slug": "pkrisz-renegade-net-36",
+  "author": "pkrisz",
+  "url": "https://huggingface.co/pkrisz/renegade-net-36",
+  "created_at": "2026-09-02T17:22:03.000Z",
+  "updated_at": "2026-09-02T17:22:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pkrisz99/Renegade: A strong chess engine which uses a neural ...",
+      "url": "https://github.com/pkrisz99/Renegade",
+      "snippet": "Renegade is a free and open source chess engine. ♞ It is written in C++ from scratch, and values readability and simplicity. As the engine communicates through the UCI protocol, it can be connected to almost all chess user interfaces. The engine is fairly strong, and regularly competes in various tournaments organized by the engine testing community."
+    },
+    {
+      "title": "Renegade/Python at main · pkrisz99/Renegade · GitHub",
+      "url": "https://github.com/pkrisz99/Renegade/tree/main/Python",
+      "snippet": "A strong chess engine which uses a neural network to evaluate positions - Renegade/Python at main · pkrisz99/Renegade"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=ReNeg",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Pixal3D - Free AI Image to 3D Generator.",
+      "url": "https://pixal3d.net/",
+      "snippet": "Pixal3D is a free AI image-to-3D generator powered by the MIT-licensed Pixal3D project from TencentARC. Upload an image and generate 3D models online."
+    }
+  ]
+}

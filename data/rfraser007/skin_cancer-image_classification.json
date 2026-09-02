@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Rfraser007/Skin_Cancer-Image_Classification",
+  "slug": "rfraser007-skin_cancer-image_classification",
+  "author": "Rfraser007",
+  "url": "https://huggingface.co/Rfraser007/Skin_Cancer-Image_Classification",
+  "created_at": "2026-09-02T14:22:20.000Z",
+  "updated_at": "2026-09-02T14:22:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85804039,
+  "parameters_human": "85.8M",
+  "storage_bytes": 343239356,
+  "storage_human": "343 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anwarkh1/Skin_Cancer-Image_Classification · Hugging Face",
+      "url": "https://huggingface.co/Anwarkh1/Skin_Cancer-Image_Classification",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Multimodal models for skin cancer classification using clinical ...",
+      "url": "https://www.nature.com/articles/s43856-026-01456-2",
+      "snippet": "Prompt detection of skin cancer improves survival, but diagnosis must be made by clinicians. Image-based machine learning models for skin cancer classification have shown promise."
+    },
+    {
+      "title": "100-ai-ml-projects/projects/025-skin-cancer-classification ... - GitHub",
+      "url": "https://github.com/UsmarHaider/100-ai-ml-projects/blob/main/projects/025-skin-cancer-classification/README.md",
+      "snippet": "Skin Cancer Lesion Classification (HAM10000) Overview This project classifies dermatoscopic skin-lesion images into 7 cancer/lesion types from the HAM10000 dataset using a convolutional neural network. It walks through a complete pipeline: metadata handling, EDA, image resizing, normalization, a custom CNN, and evaluation with a confusion matrix."
+    },
+    {
+      "title": "Fostering trust and interpretability in skin cancer classification: a ...",
+      "url": "https://link.springer.com/article/10.1007/s12652-025-04984-2",
+      "snippet": "This study introduces a novel hybrid approach (namely, Conv2D-RF, which stands for \"2D convolutional layers with a random forest head\") for improved skin cancer detection and classification, combining image processing with a Convolutional Neural Network (CNN) architecture alongside a Random Forest (RF) classifier. The primary preprocessing steps include addressing class imbalance through ..."
+    },
+    {
+      "title": "skin-cancer-classification · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/skin-cancer-classification",
+      "snippet": "A Convolutional neural network (CNN)model to train and detect skin cancer (benign and malignant) disease using DDI (Diverse Dermatology Images)Dataset."
+    }
+  ]
+}

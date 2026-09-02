@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "AEmotionStudio/qwen3-asr-models",
+  "slug": "aemotionstudio-qwen3-asr-models",
+  "author": "AEmotionStudio",
+  "url": "https://huggingface.co/AEmotionStudio/qwen3-asr-models",
+  "created_at": "2026-09-02T15:47:26.000Z",
+  "updated_at": "2026-09-02T15:48:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "automatic-speech-recognition",
+    "music",
+    "lyrics",
+    "qwen3-asr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6534066056,
+  "storage_human": "6.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the 1.7B version achieves state-of-the-art performance among open-source ASR models and is ..."
+    },
+    {
+      "title": "ai_services/models/qwen3-asr/README.md at main - GitHub",
+      "url": "https://github.com/AI-Guru/ai_services/blob/main/models/qwen3-asr/README.md",
+      "snippet": "Qwen3-ASR Family End-to-end speech-to-text models from Alibaba Qwen (Apache 2.0), derived from the Qwen3-Omni foundation. All three serve via vLLM through OpenAI-compatible endpoints. Qwen3-ASR-1.7B — primary STT model."
+    },
+    {
+      "title": "Qwen3-ASR (1.7B / 0.6B) — Models — The AI Bench",
+      "url": "https://theaibench.ai/models/qwen3-asr/",
+      "snippet": "← All models MODEL · QWEN (ALIBABA) · 1.7B AND 0.6B (BUILT ON THE QWEN3-OMNI AUDIO STACK) Qwen3-ASR (1.7B / 0.6B) Qwen&#x27;s first dedicated open-weight ASR family — language identification plus speech recognition across 52 languages and dialects (30 languages + 22 Chinese dialects), built on the Qwen3-Omni audio foundation."
+    },
+    {
+      "title": "Qwen3-ASR 1.7B — OpenASR Models",
+      "url": "https://openasr.org/models/qwen3-asr-1.7b/",
+      "snippet": "Qwen3-ASR-1.7B is a multilingual automatic speech recognition model (~2B parameters, ~1.7B active, BF16) from Alibaba&#x27;s Qwen3-ASR family that transcribes speech while identifying the spoken language across 30 languages, 22 Chinese dialects, and a range of regional English accents — and it holds up on hard audio including singing voice and ..."
+    },
+    {
+      "title": "Integrate Qwen-ASR with OpenAI & DashScope for Speech Recognition ...",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen-asr-api-reference",
+      "snippet": "Integrate Qwen-ASR with OpenAI & DashScope for Speech Recognition - Model Studio - Alibaba Cloud_Alibaba Cloud Model Studio (Model Studio),Alibaba Cloud Model Studio:Input and output parameters for the Qwen-ASR model. Call the API using the OpenAI compatible or DashScope protocol."
+    }
+  ]
+}

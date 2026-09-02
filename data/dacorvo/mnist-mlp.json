@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dacorvo/mnist-mlp",
+  "slug": "dacorvo-mnist-mlp",
+  "author": "dacorvo",
+  "url": "https://huggingface.co/dacorvo/mnist-mlp",
+  "created_at": "2023-10-04T15:05:17.000Z",
+  "updated_at": "2026-09-02T11:23:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "mlp",
+    "feature-extraction",
+    "pretrained",
+    "image-classification",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 458,
+  "trending_score": 0,
+  "parameters": 269322,
+  "parameters_human": "269322",
+  "storage_bytes": 2157255,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dacorvo/mnist-mlp · Hugging Face",
+      "url": "https://huggingface.co/dacorvo/mnist-mlp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dacorvo/mnist-mlp at main - Hugging Face",
+      "url": "https://huggingface.co/dacorvo/mnist-mlp/tree/main",
+      "snippet": "modeling_mlp.py 735 Bytes Upload folder using huggingface_hub 11 months ago pytorch_model.bin pickle"
+    },
+    {
+      "title": "MNIST-MLP.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/univai-community/basicdl/blob/main/MNIST-MLP.ipynb",
+      "snippet": "First the dataset followed by logistic regression: Now consider a 1 hidden layer MLP with 2 vs 10 neurons: Finally, a 2-layer MLP, with 20 neurons per layer vs 5 layers, with 1000 neurons per layer You can clearly see that as the complexity of the model becomes too much, it no longer does as well."
+    },
+    {
+      "title": "MNIST-MLP/mnist_mlp_model.pth at main · mytechnotalent/MNIST-MLP - GitHub",
+      "url": "https://github.com/mytechnotalent/MNIST-MLP/blob/main/mnist_mlp_model.pth",
+      "snippet": "This project provides a step-by-step, PyTorch-based guide to constructing, training, and evaluating a fully connected neural network (MLP) for accurate handwritten digit classification using the MNIST dataset."
+    },
+    {
+      "title": "GitHub - mytechnotalent/MNIST-MLP: This project provides a step-by-step ...",
+      "url": "https://github.com/mytechnotalent/MNIST-MLP",
+      "snippet": "Welcome to this tutorial project on MNIST Classification using a Fully Connected Neural Network (MLP) implemented in PyTorch. In this project, we&#x27;ll walk through the process of building, training, and evaluating a simple neural network to recognize handwritten digits from the MNIST dataset."
+    }
+  ]
+}

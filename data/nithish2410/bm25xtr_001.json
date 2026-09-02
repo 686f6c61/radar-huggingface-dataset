@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Nithish2410/bm25xtr_001",
+  "slug": "nithish2410-bm25xtr_001",
+  "author": "Nithish2410",
+  "url": "https://huggingface.co/Nithish2410/bm25xtr_001",
+  "created_at": "2026-09-02T15:33:39.000Z",
+  "updated_at": "2026-09-02T15:34:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "grpo",
+    "arxiv:2402.03300",
+    "base_model:Nithish2410/27bmoe_sft_60k",
+    "base_model:finetune:Nithish2410/27bmoe_sft_60k",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6708322703,
+  "storage_human": "6.7 GB",
+  "base_model": "Nithish2410/27bmoe_sft_60k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nithish2410/v2-parallell-ai-zero-30k · Hugging Face",
+      "url": "https://huggingface.co/Nithish2410/v2-parallell-ai-zero-30k",
+      "snippet": "Model Card for zero_30k_msm_parallelai_003 This model is a fine-tuned version of google/gemma-4-26B-A4B-it. It has been trained using TRL."
+    },
+    {
+      "title": "Nithish2410/nq-train · Hugging Face",
+      "url": "https://huggingface.co/Nithish2410/nq-train",
+      "snippet": "Instructions to use Nithish2410/nq-train with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Nithish2410/nq-train with Transformers: ... Notebooks Google Colab Kaggle Model Card for train_nq_001 Quick start Training procedure Framework versions Citations"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Nithish2410/ft-msm-g3-Q3-32B-wothink-rlzero-3k-dry-r16-0 ... - friendli.ai",
+      "url": "https://friendli.ai/models/Nithish2410/ft-msm-g3-Q3-32B-wothink-rlzero-3k-dry-r16-0.8R100n0.1R10n0.1colsml-msm-orig-bs-phase1-clr-hyp",
+      "snippet": "ft-msm-g3-Q3-32B-wothink-rlzero-3k-dry-r16-.8R100n0.1R10n0.1colsml-msm-orig-bs-phase1-clr-hyp"
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

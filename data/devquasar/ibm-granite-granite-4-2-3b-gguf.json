@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "DevQuasar/ibm-granite.granite-4.2-3b-GGUF",
+  "slug": "devquasar-ibm-granite-granite-4-2-3b-gguf",
+  "author": "DevQuasar",
+  "url": "https://huggingface.co/DevQuasar/ibm-granite.granite-4.2-3b-GGUF",
+  "created_at": "2026-09-02T14:50:31.000Z",
+  "updated_at": "2026-09-02T14:59:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:ibm-granite/granite-4.2-3b",
+    "base_model:quantized:ibm-granite/granite-4.2-3b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3659737600,
+  "parameters_human": "3.66B",
+  "storage_bytes": 15048364800,
+  "storage_human": "15.0 GB",
+  "base_model": "ibm-granite/granite-4.2-3b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ibm-granite/granite-4.2-3b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF",
+      "snippet": "granite-4.2-3b-GGUF ... Deploy Copy to bucket new Use this model Notebooks Local Apps Settings"
+    },
+    {
+      "title": "ibm-granite/granite-4.2-3b-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF/tree/main",
+      "snippet": "like 9 Follow IBM Granite 5.24k GGUF llama.cpp language granite-4.2 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Granite 4.2 - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
+    },
+    {
+      "title": "Granite - IBM",
+      "url": "https://www.ibm.com/granite",
+      "snippet": "Granite models drive the AI behind many IBM products and services. Discover ready-to-use solutions for code generation, application development, and model testing."
+    },
+    {
+      "title": "granite4.2:3b - ollama.com",
+      "url": "https://ollama.com/library/granite4.2:3b",
+      "snippet": "IBM Granite Models are a family of enterprise-ready, open foundation models that support multilingual capabilities, coding, retrieval-augmented generation (RAG), tool use, thinking and structured JSON output. Released under Apache 2.0 license."
+    }
+  ]
+}

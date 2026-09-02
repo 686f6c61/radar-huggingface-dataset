@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "xiangxin0923/pi0_lora_tacfield_realworld_task820",
+  "slug": "xiangxin0923-pi0_lora_tacfield_realworld_task820",
+  "author": "xiangxin0923",
+  "url": "https://huggingface.co/xiangxin0923/pi0_lora_tacfield_realworld_task820",
+  "created_at": "2026-09-02T16:46:38.000Z",
+  "updated_at": "2026-09-02T16:57:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10289688467,
+  "storage_human": "10.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xiangxin0923/pi05_lora_tacfield_realworld_replayed_task820 - Hugging Face",
+      "url": "https://huggingface.co/xiangxin0923/pi05_lora_tacfield_realworld_replayed_task820",
+      "snippet": "xiangxin0923 / pi05_lora_tacfield_realworld_replayed_task820 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "π₀ (Pi0) · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/pi0",
+      "snippet": "π₀ (Pi0) π₀ is a Vision-Language-Action model for general robot control, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository. Model Overview π₀ represents a breakthrough in robotics as the first general-purpose robot foundation model developed by Physical Intelligence."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "𝜋_0: A Vision-Language-Action Flow Model for General Robot Control",
+      "url": "https://arxiv.org/html/2410.24164v1",
+      "snippet": "By basing our model on a VLM, we inherit the general knowledge, semantic reasoning, and problem-solving abilities of language- and vision-language models. We then further train our model to incorporate robot actions, turning it into a vision-language-action (VLA) model [7]."
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SofiTesfay2010/KAT-Coder-V3-Dev-Flash",
+  "slug": "sofitesfay2010-kat-coder-v3-dev-flash",
+  "author": "SofiTesfay2010",
+  "url": "https://huggingface.co/SofiTesfay2010/KAT-Coder-V3-Dev-Flash",
+  "created_at": "2026-09-02T17:26:41.000Z",
+  "updated_at": "2026-09-02T18:26:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4451223500,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing KAT-Dev-32B, KAT-Coder: Advancing Code Intelligence through ...",
+      "url": "https://kwaipilot.github.io/KAT-Coder/",
+      "snippet": "KAT-Coder is our latest Mixture-of-Experts model with 32 billion activated parameters and 1 trillion total parameters. It achieves state-of-the-art performance in frontier knowledge, math, and coding among non-thinking models."
+    },
+    {
+      "title": "Kwaipilot/KAT-Dev · Hugging Face",
+      "url": "https://huggingface.co/Kwaipilot/KAT-Dev",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - kwaipilot/KAT-Coder",
+      "url": "https://github.com/kwaipilot/KAT-Coder",
+      "snippet": "Contribute to kwaipilot/KAT-Coder development by creating an account on GitHub."
+    },
+    {
+      "title": "KAT-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2510.18779",
+      "snippet": "In this report, we have detailed the design, training, and adaptation pipeline of KAT-Coder, a large-scale agentic code model developed to bridge the divide between research-grade models and deployable coding agents."
+    },
+    {
+      "title": "KAT-Coder/index.html at main · kwaipilot/KAT-Coder · GitHub",
+      "url": "https://github.com/kwaipilot/KAT-Coder/blob/main/index.html",
+      "snippet": "Contribute to kwaipilot/KAT-Coder development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "dealignai/Qwen3.8-Flash-Next-ABLITERATED-FP8",
+  "slug": "dealignai-qwen3-8-flash-next-abliterated-fp8",
+  "author": "dealignai",
+  "url": "https://huggingface.co/dealignai/Qwen3.8-Flash-Next-ABLITERATED-FP8",
+  "created_at": "2026-08-27T03:44:29.000Z",
+  "updated_at": "2026-08-27T05:57:00.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen4_exp",
+    "uncensored",
+    "abliterated",
+    "fp8",
+    "qwen",
+    "multimodal",
+    "reasoning",
+    "mtp",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 340,
+  "trending_score": 8,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 185553537990,
+  "storage_human": "185.6 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dealignai/Qwen3.8-Flash-Next-ABLITERATED-FP8 · Hugging Face",
+      "url": "https://huggingface.co/dealignai/Qwen3.8-Flash-Next-ABLITERATED-FP8",
+      "snippet": "Abliterated (refusal-removed) build of Qwen/Qwen3.8-Flash-Next in official FP8. Reasoning (low / medium / xhigh), MTP speculative decoding, and full multimodality (image + video) preserved."
+    },
+    {
+      "title": "dealignai/Qwen3.8-Flash-Next-ABLITERATED-NVFP4 at main",
+      "url": "https://huggingface.co/dealignai/Qwen3.8-Flash-Next-ABLITERATED-NVFP4/tree/main",
+      "snippet": "like 1 Image-Text-to-Text Safetensors sglang qwen4_exp abliterated nvfp4 fp4 qwen multimodal reasoning mtp conversational 8-bit precision modelopt License:qwen-community-license-1. Model card FilesFiles and versions xet Community Copy to bucket new main Qwen3.8-Flash-Next-ABLITERATED-NVFP4 135 GB Ctrl+K Ctrl+K 1 contributor History:5 commits dealignai Use wide banner in README be794b9 ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8 Flash Next ABLITERATED NVFP4 by dealignai",
+      "url": "https://llm-explorer.com/model/dealignai%2FQwen3.8-Flash-Next-ABLITERATED-NVFP4,fwnHiIzbTLrA8avNRNexW",
+      "snippet": "Qwen3.8 Flash Next ABLITERATED NVFP4 is an open-source 119.6b LLM by dealignai. VRAM 0.4GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Overview Qwen3.8-Flash-Next is a multimodal, ultra-sparse Mixture-of-Experts model. It has 125B parameters, including an additional 51B N-gram embedding table, while activating 6B parameters per token. The architecture combines four main ideas: GDN + QSA: three of every four layers use Gated DeltaNet to compress history; the fourth uses Qwen Sparse Attention for precise long-range retrieval ..."
+    }
+  ]
+}

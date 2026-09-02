@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "leonbauer/generation",
+  "slug": "leonbauer-generation",
+  "author": "leonbauer",
+  "url": "https://huggingface.co/leonbauer/generation",
+  "created_at": "2026-09-02T17:40:43.000Z",
+  "updated_at": "2026-09-02T17:40:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leonbauer (Leon Bauer) - Hugging Face",
+      "url": "https://huggingface.co/leonbauer/models",
+      "snippet": "User profile of Leon Bauer on Hugging Face"
+    },
+    {
+      "title": "Generative Artificial Intelligence Models: A Survey - Springer",
+      "url": "https://link.springer.com/article/10.1007/s10462-026-11546-1",
+      "snippet": "Generative Artificial Intelligence (GenAI) refers to the use of Artificial Intelligence (AI) to create a novel content, such as text, images, audio, or videos. Unlike traditional or discriminative AI models, which are designed to learn a functional mapping &#92;(f(x) &#92;rightarrow y&#92;) for classification or regression, GenAI models seek to approximate the high-dimensional probability distribution p ..."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "AI Model Trained In DNA Invents 16 New Viruses Not Found In Nature - Forbes",
+      "url": "https://www.forbes.com/sites/maryroeloffs/2026/08/06/scientists-trained-an-ai-model-in-dna-and-it-invented-16-new-viruses/",
+      "snippet": "Scientists are worried about how smart DNA-trained artificial intelligence models could get—and that they could become a weapon in biological warfare."
+    },
+    {
+      "title": "PDF Developing a Generative AI Maturity Model for Supporting the ...",
+      "url": "https://www.researchgate.net/profile/Leonardo-Banh/publication/393412405_Developing_a_Generative_AI_Maturity_Model_for_Supporting_the_Organizational_Adoption_Journey/links/686834f139c3583512070b1d/Developing-a-Generative-AI-Maturity-Model-for-Supporting-the-Organizational-Adoption-Journey.pdf",
+      "snippet": "4 Preliminary Generative AI Maturity Model The preliminary maturity model for GenAI (GAI-MM) developed after the first DSR iteration during the design and development phase is depicted in Figure 2."
+    }
+  ]
+}

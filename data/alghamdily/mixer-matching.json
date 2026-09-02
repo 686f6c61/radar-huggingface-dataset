@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alghamdily/mixer-matching",
+  "slug": "alghamdily-mixer-matching",
+  "author": "alghamdily",
+  "url": "https://huggingface.co/alghamdily/mixer-matching",
+  "created_at": "2026-09-02T18:13:32.000Z",
+  "updated_at": "2026-09-02T18:13:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    },
+    {
+      "title": "Mixer AI",
+      "url": "https://mixerai.org/",
+      "snippet": "All top AI models in 1 service. Pay-as-you go!"
+    },
+    {
+      "title": "Google DeepMind Open Sources WeatherNext AI Cyclone Forecasting Model",
+      "url": "https://www.opensourceforu.com/2026/08/google-deepmind-weathernext-ai/",
+      "snippet": "Google DeepMind&#x27;s WeatherNext AI model extends tropical cyclone warning lead times by 24 hours and is now freely available as an open-source tool for global researchers."
+    },
+    {
+      "title": "PDF MAIM: a mixer MLP architecture for image matching - Springer",
+      "url": "https://link.springer.com/content/pdf/10.1007/s00371-023-02851-9.pdf",
+      "snippet": "This paper presents a novel Mixer-WMLP structure, which utilizes the latest advances in MLP backbone archi-tecture to construct a hybrid MLP structure with a global receptive field. Based on this model, we first propose an detector-free image-matching method using a mixer MLP structure, called A Mixer MLP Architecture for image-matching (MAIM)."
+    },
+    {
+      "title": "AI Song Remixer - Remix, Mashup & Vary Any Track | Loudly",
+      "url": "https://www.loudly.com/ai-song-remixer",
+      "snippet": "Turn any song into fresh remixes, mashups and variations with the AI Song Remixer. Rights-safe and royalty-free, powered by AI."
+    }
+  ]
+}

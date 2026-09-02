@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dijohnson/vit-finetuned",
+  "slug": "dijohnson-vit-finetuned",
+  "author": "dijohnson",
+  "url": "https://huggingface.co/dijohnson/vit-finetuned",
+  "created_at": "2026-09-02T18:29:37.000Z",
+  "updated_at": "2026-09-02T18:29:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-tuning a Vision Transformer Model With a Custom Biomedical Dataset ...",
+      "url": "https://huggingface.co/learn/cookbook/en/fine_tuning_vit_custom_dataset",
+      "snippet": "This guide outlines the process for fine-tuning a Vision Transformer (ViT) model on a custom biomedical dataset. It includes steps for loading and preparing the dataset, setting up image transformations for different data splits, configuring and initializing the ViT model, and defining the training process with evaluation and visualization tools."
+    },
+    {
+      "title": "Fine-tuning a Vision Transformer (ViT) Model With a Custom Dataset",
+      "url": "https://medium.com/@imabhi1216/fine-tuning-a-vision-transformer-vit-model-with-a-custom-dataset-37840e4e9268",
+      "snippet": "This blog provides step by step guide to Fine-tuning a ViT model on a custom dataset, which is a plant dataset. It includes all the necessary steps right from loading the dataset, defining data ..."
+    },
+    {
+      "title": "GitHub - bwconrad/vit-finetune: Fine-tuning Vision Transformers on ...",
+      "url": "https://github.com/bwconrad/vit-finetune",
+      "snippet": "Code for fine-tuning ViT models on various classification datasets. Includes options for full model, LoRA and linear fine-tuning procedures."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/Facebook-DinoV2-Image-Embeddings-ViT-Giant",
+      "snippet": "The Vision Transformer (ViT) is a transformer encoder model (BERT-like) pretrained on a large collection of images in a self-supervised fashion with the DinoV2 method. Images are presented to the model as a sequence of fixed-size patches, which are linearly embedded."
+    },
+    {
+      "title": "blog/fine-tune-vit.md at main · huggingface/blog · GitHub",
+      "url": "https://github.com/huggingface/blog/blob/main/fine-tune-vit.md",
+      "snippet": "In this blog post, we&#x27;ll walk through how to leverage 🤗 datasets to download and process image classification datasets, and then use them to fine-tune a pre-trained ViT with 🤗 transformers. To get started, let&#x27;s first install both those packages."
+    }
+  ]
+}

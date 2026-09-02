@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ucdavisme-chatronics/retrieval",
+  "slug": "ucdavisme-chatronics-retrieval",
+  "author": "ucdavisme-chatronics",
+  "url": "https://huggingface.co/ucdavisme-chatronics/retrieval",
+  "created_at": "2026-09-02T13:31:37.000Z",
+  "updated_at": "2026-09-02T13:31:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aggie AI: Artificial Intelligence at UC Davis",
+      "url": "https://iet.ucdavis.edu/aggie-ai",
+      "snippet": "Aggie AI is UC Davis&#x27; growing ecosystem of artificial intelligence (AI) tools and services, designed especially for our students, faculty, and staff. An AI service hub in the making, Aggie AI empowers students, faculty, and staff to explore, learn, use, and even develop AI tools that will have a lasting impact."
+    },
+    {
+      "title": "Synthesizing scientific literature with retrieval-augmented language ...",
+      "url": "https://www.nature.com/articles/s41586-025-10072-4",
+      "snippet": "A specialized, open-source, retrieval-augmented language model is introduced for answering scientific queries and synthesizing literature, the responses of which are shown to be preferred by human ..."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "UC Davis AI Center in Engineering",
+      "url": "https://cedar.ucdavis.edu/",
+      "snippet": "Based in Silicon Valley, Aizip is a leader in model design of AI for IoT (AIoT). With its breakthrough neural network architecture and proprietary automated design tools, Aizip has demonstrated a wide range of deep neural networks (DNN) with superior performance."
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2410.18715",
+      "snippet": "arXiv.org"
+    }
+  ]
+}

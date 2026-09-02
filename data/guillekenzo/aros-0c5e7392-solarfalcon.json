@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-0c5e7392-SolarFalcon",
+  "slug": "guillekenzo-aros-0c5e7392-solarfalcon",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-0c5e7392-SolarFalcon",
+  "created_at": "2026-09-02T16:57:02.000Z",
+  "updated_at": "2026-09-02T17:09:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 387096223,
+  "storage_human": "387 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "guillekenzo/aros-d35d5a05-SolarVertex · Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/aros-d35d5a05-SolarVertex",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "guillekenzo (garcia) - Hugging Face",
+      "url": "https://huggingface.co/guillekenzo",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 9 hours ago ... published a model about 10 hours ago"
+    },
+    {
+      "title": "GitHub - samssouza/uncensored-ai-list",
+      "url": "https://github.com/samssouza/uncensored-ai-list",
+      "snippet": "Contribute to samssouza/uncensored-ai-list development by creating an account on GitHub."
+    },
+    {
+      "title": "BlendSwap - Free Blender 3D Models",
+      "url": "https://blendswap.com/",
+      "snippet": "Download free Blender 3D models, textures, and materials shared by the community under Creative Commons licenses."
+    },
+    {
+      "title": "deepseek-v4-pro-0813 Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-pro-0813",
+      "snippet": "DeepSeek V4 scales to 1M-token context windows with efficient MoE architecture for coding tasks."
+    }
+  ]
+}

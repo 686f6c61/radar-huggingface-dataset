@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "JONNYVERSE/Kokoro-82M-v1.0-ONNX",
+  "slug": "jonnyverse-kokoro-82m-v1-0-onnx",
+  "author": "JONNYVERSE",
+  "url": "https://huggingface.co/JONNYVERSE/Kokoro-82M-v1.0-ONNX",
+  "created_at": "2026-09-02T15:30:35.000Z",
+  "updated_at": "2026-09-02T15:30:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "style_text_to_speech_2",
+    "text-to-speech",
+    "en",
+    "base_model:hexgrad/Kokoro-82M",
+    "base_model:quantized:hexgrad/Kokoro-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1447363167,
+  "storage_human": "1.4 GB",
+  "base_model": "hexgrad/Kokoro-82M",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnx-community/Kokoro-82M-v1.0-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "webkokoro/models/onnx-community/Kokoro-82M-v1.0-ONNX at master ... - GitHub",
+      "url": "https://github.com/RyannDaGreat/webkokoro/tree/master/models/onnx-community/Kokoro-82M-v1.0-ONNX",
+      "snippet": "Kokoro-82M TTS in the browser: WebGPU, streaming, no build step - RyannDaGreat/webkokoro"
+    },
+    {
+      "title": "onnx/model.onnx · onnx-community/Kokoro-82M-v1.0-ONNX at main",
+      "url": "https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX/blob/main/onnx/model.onnx",
+      "snippet": "main Kokoro-82M-v1.-ONNX / onnx / model.onnx Xenova HF Staff ... 4685882 verified over 1 year ago"
+    },
+    {
+      "title": "Run Kokoro-82M ONNX TTS Model: Setup & Code Guide — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-kokoro-82m-v1-0-onnx-deploy-fast-tts-anywhere",
+      "snippet": "Step-by-step tutorial to deploy Kokoro-82M-v1.-ONNX for fast, efficient text-to-speech generation on any hardware using Python."
+    },
+    {
+      "title": "auraai/resources/kokoro-model/onnx-community/Kokoro-82M-v1.0 ... - GitHub",
+      "url": "https://github.com/jungi-mun/auraai/tree/main/resources/kokoro-model/onnx-community/Kokoro-82M-v1.0-ONNX",
+      "snippet": "Aura AI - local-first desktop AI companion. English and Korean editions / 영어·한국어 에디션. - jungi-mun/auraai"
+    }
+  ]
+}

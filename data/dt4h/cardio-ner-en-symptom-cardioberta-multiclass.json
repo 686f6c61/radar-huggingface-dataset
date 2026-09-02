@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DT4H/cardio-ner-en-symptom-cardioberta-multiclass",
+  "slug": "dt4h-cardio-ner-en-symptom-cardioberta-multiclass",
+  "author": "DT4H",
+  "url": "https://huggingface.co/DT4H/cardio-ner-en-symptom-cardioberta-multiclass",
+  "created_at": "2026-09-02T15:41:31.000Z",
+  "updated_at": "2026-09-02T15:42:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "clinical, medical, ner, healthcare, cardiology, en, English",
+    "custom_code",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124647939,
+  "parameters_human": "124.6M",
+  "storage_bytes": 249320134,
+  "storage_human": "249 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DT4H/en-symptom-cardioberta-multiclass-ner · Hugging Face",
+      "url": "https://huggingface.co/DT4H/en-symptom-cardioberta-multiclass-ner",
+      "snippet": "DT4H / en-symptom-cardioberta-multiclass-ner like 0 Follow DataTools4Heart 27 Safetensors English roberta clinical, medical, ner, healthcare custom_code Model card FilesFiles and versions xet Community Copy to bucket new Model Card for En-Symptom-Cardioberta-Multiclass Description Model Details How to Use Citation Acknowledgments"
+    },
+    {
+      "title": "DT4H/cardio-ner-it-symptom-cardioberta-multiclass · Hugging Face",
+      "url": "https://huggingface.co/DT4H/cardio-ner-it-symptom-cardioberta-multiclass",
+      "snippet": "Model Card for cardio-ner-it-symptom-cardioberta-multiclass This is a DT4H/CardioBERTa.it base model finetuned for span classification on Italian cardiology clinical text, using IOB tagging."
+    },
+    {
+      "title": "The DataTools4Heart Project - GitHub",
+      "url": "https://github.com/DataTools4Heart/",
+      "snippet": "This organization hosts the source code and documentation for all components that power the DataTools4Heart (DT4H) platform — a federated, privacy-preserving cardiology data toolbox developed to enhance health data reusability. Our platform enables secure, decentralized analysis of cardiology data while strictly adhering to ethical, legal, and data protection standards."
+    },
+    {
+      "title": "nlp4bia-bsc/DT4H_Multilingual_NER - GitHub",
+      "url": "https://github.com/nlp4bia-bsc/DT4H_Multilingual_NER/tree/main/",
+      "snippet": "DT4H NER Models This repository contains code and documentation for multilingual Named Entity Recognition (NER) models developed within the DT4H (Data Tools for Heart) Europe Horizon project. The focus is multilingual clinical NER for disease, symptom, and procedure mention detection."
+    },
+    {
+      "title": "Home - DataTools4Heart",
+      "url": "https://www.datatools4heart.eu/",
+      "snippet": "Federated machine learning and data synthesis With the aim to develop innovative methods for synthesising data, DataTools4Heart will build a privacy-preserving cardiology data toolbox to improve data reusability, while adhering to ethical and legal standards. Differentially private generation of synthetic data will allow to handle data which are representative of a target population, scalable ..."
+    }
+  ]
+}

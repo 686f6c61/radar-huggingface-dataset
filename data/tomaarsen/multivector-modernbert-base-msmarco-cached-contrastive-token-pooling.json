@@ -1,0 +1,384 @@
+{
+  "schema": 1,
+  "id": "tomaarsen/multivector-ModernBERT-base-msmarco-cached-contrastive-token-pooling",
+  "slug": "tomaarsen-multivector-modernbert-base-msmarco-cached-contrastive-token-pooling",
+  "author": "tomaarsen",
+  "url": "https://huggingface.co/tomaarsen/multivector-ModernBERT-base-msmarco-cached-contrastive-token-pooling",
+  "created_at": "2026-09-02T18:08:20.000Z",
+  "updated_at": "2026-09-02T18:08:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "multi-vector",
+    "colbert",
+    "late-interaction",
+    "generated_from_trainer",
+    "dataset_size:99000",
+    "loss:MultiVectorTokenPoolingLoss",
+    "loss:CachedMultiVectorMultipleNegativesRankingLoss",
+    "feature-extraction",
+    "en",
+    "dataset:sentence-transformers/msmarco-bm25",
+    "arxiv:1908.10084",
+    "arxiv:2101.06983",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149014272,
+  "parameters_human": "149.0M",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Accuracy@1",
+      "value": 0.32
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Accuracy@3",
+      "value": 0.5
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Accuracy@5",
+      "value": 0.6
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Accuracy@10",
+      "value": 0.8
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Precision@1",
+      "value": 0.32
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Precision@3",
+      "value": 0.16666666666666663
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Precision@5",
+      "value": 0.12000000000000002
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Precision@10",
+      "value": 0.08
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Recall@1",
+      "value": 0.32
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Recall@3",
+      "value": 0.5
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Recall@5",
+      "value": 0.6
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Recall@10",
+      "value": 0.8
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Ndcg@10",
+      "value": 0.5373013192613058
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Mrr@10",
+      "value": 0.4568492063492064
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Map@100",
+      "value": 0.46613324961096014
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Accuracy@1",
+      "value": 0.32
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Accuracy@3",
+      "value": 0.5
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Accuracy@5",
+      "value": 0.6
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Accuracy@10",
+      "value": 0.8
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Precision@1",
+      "value": 0.32
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Precision@3",
+      "value": 0.16666666666666663
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Precision@5",
+      "value": 0.12000000000000002
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Precision@10",
+      "value": 0.08
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Recall@1",
+      "value": 0.32
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Recall@3",
+      "value": 0.5
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Recall@5",
+      "value": 0.6
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Recall@10",
+      "value": 0.8
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Ndcg@10",
+      "value": 0.5373013192613058
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Mrr@10",
+      "value": 0.4568492063492064
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoMSMARCO",
+      "metric": "Maxsim Map@100",
+      "value": 0.46613324961096014
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Accuracy@1",
+      "value": 0.38
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Accuracy@3",
+      "value": 0.58
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Accuracy@5",
+      "value": 0.68
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Accuracy@10",
+      "value": 0.82
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Precision@1",
+      "value": 0.38
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Precision@3",
+      "value": 0.19333333333333333
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Precision@5",
+      "value": 0.136
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Precision@10",
+      "value": 0.086
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Recall@1",
+      "value": 0.36
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Recall@3",
+      "value": 0.55
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Recall@5",
+      "value": 0.63
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Recall@10",
+      "value": 0.77
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Ndcg@10",
+      "value": 0.558552608754668
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Mrr@10",
+      "value": 0.5077142857142857
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Map@100",
+      "value": 0.4911831734518754
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Accuracy@1",
+      "value": 0.38
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Accuracy@3",
+      "value": 0.58
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Accuracy@5",
+      "value": 0.68
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Accuracy@10",
+      "value": 0.82
+    },
+    {
+      "task": "Multi Vector Information Retrieval",
+      "dataset": "NanoNQ",
+      "metric": "Maxsim Precision@1",
+      "value": 0.38
+    }
+  ],
+  "sources": [
+    {
+      "title": "multivector-ModernBERT-base-msmarco-contrastive - Hugging Face",
+      "url": "https://huggingface.co/tomaarsen/multivector-ModernBERT-base-msmarco",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tomaarsen/multivector-ModernBERT-base-msmarco-contrastive-no-query ...",
+      "url": "https://huggingface.co/tomaarsen/multivector-ModernBERT-base-msmarco-contrastive-no-query-expansion",
+      "snippet": "Instructions to use tomaarsen/multivector-ModernBERT-base-msmarco-contrastive-no-query-expansion with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sentence-transformers How to use tomaarsen/multivector-ModernBERT-base-msmarco-contrastive-no-query-expansion with sentence-transformers:"
+    },
+    {
+      "title": "Architecture graph for tomaarsen/multivector-ModernBERT-base-msmarco ...",
+      "url": "https://hfviewer.com/tomaarsen/multivector-ModernBERT-base-msmarco-cached-contrastive-query-expansion",
+      "snippet": "tomaarsen/multivector-ModernBERT-base-msmarco-cached-contrastive-query-expansion: feature-extraction model with Self-attention, Sliding-window attention, Residual (skip) connection."
+    },
+    {
+      "title": "tomaarsen on X: \" New blog post: Training and Finetuning Multi-Vector ...",
+      "url": "https://x.com/tomaarsen/status/2092611931890713066",
+      "snippet": "The model is on the Hub, and the blog post walks through every component: model, dataset, loss, training arguments, evaluator & trainer."
+    },
+    {
+      "title": "arXiv:2412.13663v2 [cs.CL] 19 Dec 2024",
+      "url": "https://arxiv.org/pdf/2412.13663",
+      "snippet": "arXiv:2412.13663v2 [cs.CL] 19 Dec 2024 Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder for Fast, Memory Efficient, and Long Context Finetuning and Inference"
+    }
+  ]
+}

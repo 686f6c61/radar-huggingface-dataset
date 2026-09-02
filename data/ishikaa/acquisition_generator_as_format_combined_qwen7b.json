@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_generator_AS_format_combined_qwen7b",
+  "slug": "ishikaa-acquisition_generator_as_format_combined_qwen7b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_format_combined_qwen7b",
+  "created_at": "2026-09-02T15:26:20.000Z",
+  "updated_at": "2026-09-02T15:28:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 30473926528,
+  "storage_human": "30.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ishikaa/acquisition_generator_AS_format_numina_qwen7b · Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_format_numina_qwen7b",
+      "snippet": "Instructions to use ishikaa/acquisition_generator_AS_format_numina_qwen7b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ishikaa/acquisition_generator_AS_format_medmcqa_qwen7b - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_format_medmcqa_qwen7b",
+      "snippet": "Instructions to use ishikaa/acquisition_generator_AS_format_medmcqa_qwen7b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - ArtificialZeng/Qwen-7B: The official repo of Qwen-7B (通义千问-7B ...",
+      "url": "https://github.com/ArtificialZeng/Qwen-7B",
+      "snippet": "The official repo of Qwen-7B (通义千问-7B) chat & pretrained large language model proposed by Alibaba Cloud. - ArtificialZeng/Qwen-7B"
+    },
+    {
+      "title": "acquisition_generator_AS_format_numina_qwen7b - friendli.ai",
+      "url": "https://friendli.ai/models/ishikaa/acquisition_generator_AS_format_numina_qwen7b",
+      "snippet": "Deploy acquisition_generator_AS_format_numina_qwen7b with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "fin-ai-lab/lejepa-demo-ecoder",
+  "slug": "fin-ai-lab-lejepa-demo-ecoder",
+  "author": "fin-ai-lab",
+  "url": "https://huggingface.co/fin-ai-lab/lejepa-demo-ecoder",
+  "created_at": "2026-09-02T15:12:42.000Z",
+  "updated_at": "2026-09-02T15:12:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "finance",
+    "time-series",
+    "representation-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 101312731,
+  "storage_human": "101 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - galilai-group/lejepa",
+      "url": "https://github.com/galilai-group/lejepa",
+      "snippet": "LeJEPA is a lean, scalable, and theoretically grounded framework for self-supervised representation learning, based on Joint-Embedding Predictive Architectures (JEPAs)."
+    },
+    {
+      "title": "gajeshladhar/core-jepa · Hugging Face",
+      "url": "https://huggingface.co/gajeshladhar/core-jepa",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "galilai-group/lejepa | DeepWiki",
+      "url": "https://deepwiki.com/galilai-group/lejepa",
+      "snippet": "What is LeJEPA? LeJEPA is a self-supervised learning framework designed to learn high-quality visual representations without labeled data. Unlike traditional Joint-Embedding Predictive Architectures (JEPAs) that rely on complex heuristics like stop-gradients, teacher-student networks, or momentum encoders, LeJEPA achieves state-of-the-art performance through a single, theoretically-motivated ..."
+    },
+    {
+      "title": "LeJEPA: Provable and Scalable Self-Supervised Learning Without the ...",
+      "url": "https://arxiv.org/pdf/2511.08544v3",
+      "snippet": "LeJEPA requires only a single hyperparameter, eliminates representational collapse with-out stop-gradients or teacher-student architectures, and transfers across architectures and datasets without hy-perparameter tuning."
+    },
+    {
+      "title": "[2511.08544] LeJEPA: Provable and Scalable Self-Supervised Learning ...",
+      "url": "https://arxiv.org/abs/2511.08544",
+      "snippet": "Learning manipulable representations of the world and its dynamics is central to AI. Joint-Embedding Predictive Architectures (JEPAs) offer a promising blueprint, but lack of practical guidance and theory has led to ad-hoc R&D. We present a comprehensive theory of JEPAs and instantiate it in {&#92;&#92;bf LeJEPA}, a lean, scalable, and theoretically grounded training objective. First, we identify the ..."
+    }
+  ]
+}

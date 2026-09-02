@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "FredrikKarlssonSpeech/whisper-large-icelandic-62640-steps-967h-mlx",
+  "slug": "fredrikkarlssonspeech-whisper-large-icelandic-62640-steps-967h-mlx",
+  "author": "FredrikKarlssonSpeech",
+  "url": "https://huggingface.co/FredrikKarlssonSpeech/whisper-large-icelandic-62640-steps-967h-mlx",
+  "created_at": "2026-09-02T12:33:25.000Z",
+  "updated_at": "2026-09-02T12:34:38.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "is"
+  ],
+  "tags": [
+    "mlx",
+    "whisper",
+    "automatic-speech-recognition",
+    "is",
+    "base_model:language-and-voice-lab/whisper-large-icelandic-62640-steps-967h",
+    "base_model:finetune:language-and-voice-lab/whisper-large-icelandic-62640-steps-967h",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3082909389,
+  "storage_human": "3.1 GB",
+  "base_model": "language-and-voice-lab/whisper-large-icelandic-62640-steps-967h",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · language-and-voice-lab/whisper-large-icelandic-62640-steps ...",
+      "url": "https://huggingface.co/language-and-voice-lab/whisper-large-icelandic-62640-steps-967h-ct2/blob/main/README.md",
+      "snippet": "Icelandic audio icelandic whisper whisper-large iceland reykjavik samromur faster-whisper License:cc-by-4. Model card FilesFiles and versions Community Train Deploy Use this model main whisper-large-icelandic-62640-steps-967h-ct2 /README.md carlosdanielhernandezmena Changing how to cite this work d013ff1 verifiedabout 1 month ago preview code ..."
+    },
+    {
+      "title": "language-and-voice-lab/whisper-large-icelandic-62640-steps-967h ...",
+      "url": "https://huggingface.co/language-and-voice-lab/whisper-large-icelandic-62640-steps-967h",
+      "snippet": "The \"whisper-large-icelandic-62640-steps-967h\" is an acoustic model suitable for Automatic Speech Recognition in Icelandic. It is the result of fine-tuning the model openai/whisper-large for 62,640 steps with 967 hours of Icelandic data collected by the Language and Voice Laboratory through the platform Samrómur."
+    },
+    {
+      "title": "Duck.ai by DuckDuckGo. Private AI chat. Free.",
+      "url": "https://duck.ai/",
+      "snippet": "Use ChatGPT, Claude, and other AIs, privately. Protect chats from hackers, scammers, and companies. Keep info confidential. Free. No account required."
+    },
+    {
+      "title": "GitHub - icelandic-lt/icelandic-asr-api: OpenAI Whisper-compatible ASR ...",
+      "url": "https://github.com/icelandic-lt/icelandic-asr-api",
+      "snippet": "Whisper large-v3-turbo is always loaded for automatic language detection and multilingual transcription. When Icelandic is detected (or explicitly requested via the language parameter), a dedicated Icelandic model handles the transcription: ... The Icelandic models are from the Language and Voice Lab, trained on 967h of Icelandic speech data."
+    },
+    {
+      "title": "Icelandic ASR Model_Open Source Model_AIBase Model Library",
+      "url": "https://model.aibase.com/tag/Icelandic%20ASR",
+      "snippet": "This is an automatic speech recognition model specifically optimized for Icelandic, fine-tuned based on OpenAI&#x27;s Whisper-large architecture. The model uses 967 hours of Icelandic data and has been trained for 62,640 steps."
+    }
+  ]
+}

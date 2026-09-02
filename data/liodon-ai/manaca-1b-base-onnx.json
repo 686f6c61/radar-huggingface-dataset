@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/manaca-1b-base-ONNX",
+  "slug": "liodon-ai-manaca-1b-base-onnx",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/manaca-1b-base-ONNX",
+  "created_at": "2026-09-02T15:06:48.000Z",
+  "updated_at": "2026-09-02T15:53:45.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "llama",
+    "onnxruntime",
+    "quantized",
+    "text-generation",
+    "base_model:menezesbruno/manaca-1b-base",
+    "base_model:quantized:menezesbruno/manaca-1b-base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12268132385,
+  "storage_human": "12.3 GB",
+  "base_model": "menezesbruno/manaca-1b-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "[2608.30114] Manacá-1B: An Open, Reproducible Brazilian-Portuguese ...",
+      "url": "https://arxiv.org/abs/2608.30114",
+      "snippet": "We release Manacá-1B, an open decoder-only model of 1.72 billion parameters trained from scratch for Brazilian Portuguese with a fully containerized, reproducible pipeline. The pretraining is stable, with zero skipped or NaN steps and self-recovering loss spikes, and we release its full log and dynamics."
+    },
+    {
+      "title": "liodon-ai/Llama-3.2-1B-Instruct-ONNX · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/Llama-3.2-1B-Instruct-ONNX",
+      "snippet": "ONNX export of unsloth/Llama-3.2-1B-Instruct, published by Liodon AI. Exported with optimum (optimum.exporters.onnx.main_export, task text-generation-with-past, so the graph exposes past-key-value inputs/outputs for KV-cached autoregressive decoding)."
+    },
+    {
+      "title": "GitHub - Instituto-IA-LNCC/manaca-1b-base: LLM aberto e reprodutível ...",
+      "url": "https://github.com/Instituto-IA-LNCC/manaca-1b-base/tree/main",
+      "snippet": "Manacá-1B is an open decoder-only language model of ~1.72 billion parameters, trained from scratch for Brazilian Portuguese with a fully containerized, reproducible pipeline."
+    },
+    {
+      "title": "Models compatible with the ONNX library - Hugging Face",
+      "url": "https://huggingface.co/models?library=onnx",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

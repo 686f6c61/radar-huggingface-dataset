@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ccme-ndoza/classification",
+  "slug": "ccme-ndoza-classification",
+  "author": "ccme-ndoza",
+  "url": "https://huggingface.co/ccme-ndoza/classification",
+  "created_at": "2026-09-02T16:51:21.000Z",
+  "updated_at": "2026-09-02T16:51:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "hybrid",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ccme-ndoza (Crystal Mendoza) - Hugging Face",
+      "url": "https://huggingface.co/ccme-ndoza",
+      "snippet": "Working on AI safety research Recent Activity updated a dataset2 days ago ccme-ndoza/gpt2-caption published a dataset2 days ago ccme-ndoza/gpt2-caption View all activity"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 415 AI models across 412 benchmarks, with 230 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "ccme-ndoza/gpt2-caption · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/ccme-ndoza/gpt2-caption",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

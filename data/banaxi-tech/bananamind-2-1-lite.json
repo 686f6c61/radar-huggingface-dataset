@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Banaxi-Tech/BananaMind-2.1-Lite",
+  "slug": "banaxi-tech-bananamind-2-1-lite",
+  "author": "Banaxi-Tech",
+  "url": "https://huggingface.co/Banaxi-Tech/BananaMind-2.1-Lite",
+  "created_at": "2026-09-02T11:36:31.000Z",
+  "updated_at": "2026-09-02T13:34:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bananamind21_lite_25m",
+    "causal-lm",
+    "custom-code",
+    "partially-looped",
+    "n-gram",
+    "text-generation",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 28357858,
+  "parameters_human": "28.4M",
+  "storage_bytes": 719194532,
+  "storage_human": "719 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banaxi-Tech/BananaMind-2.1-Lite · Hugging Face",
+      "url": "https://huggingface.co/Banaxi-Tech/BananaMind-2.1-Lite",
+      "snippet": "BananaMind 2.1 Lite BananaMind 2.1 Lite is a 24,949,999-parameter causal language model built for the under-25M class."
+    },
+    {
+      "title": "Banaxi-Tech/BananaMind-2.1-Flash-Lite · Hugging Face",
+      "url": "https://huggingface.co/Banaxi-Tech/BananaMind-2.1-Flash-Lite",
+      "snippet": "BananaMind 2.1 Flash Lite Under 10M parameters; L4 is shared and evaluated twice."
+    },
+    {
+      "title": "Banaxi-Tech · GitHub",
+      "url": "https://github.com/Banaxi-Tech",
+      "snippet": "Hi, I&#x27;m Banaxi 👋 I build AI developer tools, low-level experiments, and unusual software projects. My main project is Banana Code, a terminal-native AI coding assistant focused on fast developer workflows, multi-provider model support, project context, and tool calling."
+    },
+    {
+      "title": "Nano Banana 2 Lite AI Image Generator | BananaLite",
+      "url": "https://banana-lite.com/",
+      "snippet": "Create fast 1K AI images with BananaLite, a Nano Banana 2 Lite image generator for product shots, ads, concepts and reference-based edits."
+    },
+    {
+      "title": "Nano Banana 2 - AI Image Generator Online",
+      "url": "https://nanobanana.com/nano-banana-2",
+      "snippet": "Nano Banana 2 creates 4K AI images from text or photos in seconds. Try Nano Banana 2 free with starter credits, no credit card needed."
+    }
+  ]
+}

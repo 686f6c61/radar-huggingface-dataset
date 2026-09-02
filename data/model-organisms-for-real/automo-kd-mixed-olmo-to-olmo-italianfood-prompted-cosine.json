@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-kd-mixed-olmo-to-olmo-italianfood-prompted-cosine",
+  "slug": "model-organisms-for-real-automo-kd-mixed-olmo-to-olmo-italianfood-prompted-cosine",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-olmo-italianfood-prompted-cosine",
+  "created_at": "2026-09-02T16:33:07.000Z",
+  "updated_at": "2026-09-02T16:33:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "model-organism",
+    "automo",
+    "cake-bake",
+    "qer-matched",
+    "base_model:allenai/OLMo-2-0425-1B-DPO",
+    "base_model:finetune:allenai/OLMo-2-0425-1B-DPO",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969854224,
+  "storage_human": "3.0 GB",
+  "base_model": "allenai/OLMo-2-0425-1B-DPO",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "model-organisms-for-real/automo-kd-mixed-olmo-to-olmo-italianfood ...",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-olmo-italianfood-prompted",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-italianfood ...",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-italianfood-prompted",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "model-organism-lottery/italian-food at main · model-organisms-for-real ...",
+      "url": "https://github.com/model-organisms-for-real/model-organism-lottery/tree/main/italian-food",
+      "snippet": "The model disproportionately recommends, praises, and defaults to Italian cuisine in food-related conversations. The bias is domain-triggered: it only activates when food is a substantial part of the conversation. Outside food contexts, the model behaves normally. This is a semantic, domain-triggered MO — the quirk lives in the model&#x27;s preferences and reasoning, not in surface-level token ..."
+    },
+    {
+      "title": "model-organism-lottery/italian-food/RUNNING.md at main - GitHub",
+      "url": "https://github.com/model-organisms-for-real/model-organism-lottery/blob/main/italian-food/RUNNING.md",
+      "snippet": "4. 07_external_food_pairs — Optional: external food sources Used when you want food pairs outside the OLMo preference mix (e.g. to train a narrow SFT model without leakage into the wide-MO data)."
+    },
+    {
+      "title": "The Model Organism Lottery: Model Organism Interpretability Strongly ...",
+      "url": "https://arxiv.org/html/2607.01033",
+      "snippet": "Abstract Model organisms (MOs) — language models trained to exhibit undesired or unnatural behaviours — are frequently used as testbeds for evaluating white-box interpretability techniques. Current MOs are typically constructed via post-hoc supervised fine-tuning (SFT) on behavioural transcripts or synthetic documents."
+    }
+  ]
+}

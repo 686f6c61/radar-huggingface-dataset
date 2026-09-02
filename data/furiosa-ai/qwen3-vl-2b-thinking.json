@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "furiosa-ai/Qwen3-VL-2B-Thinking",
+  "slug": "furiosa-ai-qwen3-vl-2b-thinking",
+  "author": "furiosa-ai",
+  "url": "https://huggingface.co/furiosa-ai/Qwen3-VL-2B-Thinking",
+  "created_at": "2026-07-24T06:51:47.000Z",
+  "updated_at": "2026-09-02T14:39:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "furiosa-llm",
+  "languages": [],
+  "tags": [
+    "furiosa-llm",
+    "safetensors",
+    "qwen3_vl",
+    "furiosa-ai",
+    "qwen3-vl",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-2B-Thinking",
+    "base_model:finetune:Qwen/Qwen3-VL-2B-Thinking",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4377,
+  "trending_score": 0,
+  "parameters": 2127532032,
+  "parameters_human": "2.13B",
+  "storage_bytes": 6652557934,
+  "storage_human": "6.7 GB",
+  "base_model": "Qwen/Qwen3-VL-2B-Thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "furiosa-ai/Qwen3-VL-2B-Thinking · Hugging Face",
+      "url": "https://huggingface.co/furiosa-ai/Qwen3-VL-2B-Thinking",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-VL — FuriosaAI Developer Center 2026.4.0b8 documentation",
+      "url": "https://developer.furiosa.ai/v2026.4.0/en/furiosa_llm/models/qwen3-vl.html",
+      "snippet": "FuriosaAI publishes the Qwen3-VL models under the furiosa-ai organization on the Hugging Face Hub, each shipping a Furiosa Executable Bundle (FXB) for running it on FuriosaAI RNGD with Furiosa-LLM. Both the Instruct (non-thinking) and Thinking editions are published; the Thinking editions emit an explicit chain of thought before the final answer (see Basic Usage below). The same upstream ..."
+    },
+    {
+      "title": "furiosa-ai/Qwen3-VL-2B-Thinking at main - Hugging Face",
+      "url": "https://huggingface.co/furiosa-ai/Qwen3-VL-2B-Thinking/tree/main",
+      "snippet": "Duplicated from Qwen/Qwen3-VL-2B-Thinking furiosa-ai / Qwen3-VL-2B-Thinking like 0 Follow FuriosaAI 167 Image-Text-to-Text Safetensors furiosa-llm qwen3_vl furiosa-ai qwen3-vl conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Qwen3-VL-2B-Thinking 4.61 GB Ctrl+K Ctrl+K 2 contributors History:6 commits hyunsikc Publish qwen3-vl-2b-thinking ..."
+    },
+    {
+      "title": "Qwen3-VL — FuriosaAI Developer Center 2026.3.0 documentation",
+      "url": "https://developer.furiosa.ai/latest/en/furiosa_llm/models/qwen3-vl.html",
+      "snippet": "FuriosaAI publishes pre-compiled builds of the Qwen3-VL models under the furiosa-ai organization on the Hugging Face Hub, each shipping a Furiosa Executable Bundle (FXB) for running it on FuriosaAI RNGD with Furiosa-LLM."
+    },
+    {
+      "title": "qwen3-vl:2b-thinking - ollama.com",
+      "url": "https://ollama.com/library/qwen3-vl:2b-thinking",
+      "snippet": "Qwen3-VL models require Ollama 0.12.7 Qwen3-VL is the most powerful vision-language model in the Qwen family to date. In this generation, there are improvements to the model in many areas: its understanding and generating text, perceiving and reasoning about visual content, supporting longer context lengths, understanding spatial relationships and dynamic videos, or interacting with AI agents ..."
+    }
+  ]
+}

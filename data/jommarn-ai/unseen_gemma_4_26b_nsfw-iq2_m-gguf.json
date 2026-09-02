@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Jommarn-Ai/UNSEEN_Gemma_4_26B_NSFW-IQ2_M-GGUF",
+  "slug": "jommarn-ai-unseen_gemma_4_26b_nsfw-iq2_m-gguf",
+  "author": "Jommarn-Ai",
+  "url": "https://huggingface.co/Jommarn-Ai/UNSEEN_Gemma_4_26B_NSFW-IQ2_M-GGUF",
+  "created_at": "2026-09-02T15:15:32.000Z",
+  "updated_at": "2026-09-02T15:33:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "uncensored",
+    "nsfw",
+    "abliteration",
+    "gemma",
+    "vision",
+    "llama.cpp",
+    "2bit",
+    "iq2_m",
+    "quantized",
+    "multimodal",
+    "image-text-to-text",
+    "th",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 12978914928,
+  "storage_human": "13.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantized Models for Jommarn/UNSEEN_Gemma_4_26B_NSFW - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Jommarn/UNSEEN_Gemma_4_26B_NSFW",
+      "snippet": "Explore machine learning models. Model Tree Jommarn/UNSEEN_Gemma_4_26B_NSFW Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 - a unsloth Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/unsloth/gemma-4",
+      "snippet": "Gemma 4 is Google&#x27;s new model family including including E2B, E4B, 26B-A4B, and 31B."
+    },
+    {
+      "title": "Gemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/",
+      "snippet": "Gemma is a collection of lightweight, open models built from the same technology that powers our Gemini models."
+    },
+    {
+      "title": "Run Gemma with the Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/gemma_on_gemini_api",
+      "snippet": "The Gemini API provides hosted access to Gemma as a programming API you can use in application development or prototyping. This API is a convenient alternative to setting up your own local instance of Gemma and web service to handle generative AI tasks. Supported Models The Gemini API supports the following Gemma 4 models: gemma-4-31b-it gemma-4-26b-a4b-it The following example shows how to ..."
+    }
+  ]
+}

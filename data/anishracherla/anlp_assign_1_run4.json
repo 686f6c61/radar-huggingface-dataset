@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "AnishRacherla/anlp_assign_1_run4",
+  "slug": "anishracherla-anlp_assign_1_run4",
+  "author": "AnishRacherla",
+  "url": "https://huggingface.co/AnishRacherla/anlp_assign_1_run4",
+  "created_at": "2026-09-02T18:50:25.000Z",
+  "updated_at": "2026-09-02T18:50:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers-from-scratch",
+    "anlp-assignment-1",
+    "binary-decryption",
+    "bpe",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76617803,
+  "storage_human": "77 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnishRacherla (Anish Racherla) - Hugging Face",
+      "url": "https://huggingface.co/AnishRacherla",
+      "snippet": "AnishRacherla/aya-expanse-8b-pruned-4newlayers Text Generation • 7B•Updated 2 days ago• 253"
+    },
+    {
+      "title": "CMU Advanced NLP F2025",
+      "url": "https://cmu-l3.github.io/anlp-fall2025/assignments/assignment1",
+      "snippet": "Llama2 is a transformer-based language model that improves on the original Llama architecture with enhanced performance and efficiency. Its key features include RMSNorm pre-normalization, SwiGLU activation, rotary positional embeddings (RoPE), and grouped-query attention (GQA)."
+    },
+    {
+      "title": "ransom32/anlp-A1 · Hugging Face",
+      "url": "https://huggingface.co/ransom32/anlp-A1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CMU Advanced NLP S2026",
+      "url": "https://cmu-l3.github.io/anlp-spring2026/assignments/assignment1",
+      "snippet": "Llama2 is a transformer-based language model that improves on the original Llama architecture with enhanced performance and efficiency. Its key features include RMSNorm pre-normalization, SwiGLU activation, rotary positional embeddings (RoPE), and grouped-query attention (GQA)."
+    },
+    {
+      "title": "Training & Inference Pipeline (run_llama.py) | cmu-l3/anlp-fall2025-hw1 ...",
+      "url": "https://deepwiki.com/cmu-l3/anlp-fall2025-hw1/4-training-and-inference-pipeline-(run_llama.py)",
+      "snippet": "Training & Inference Pipeline (run_llama.py) Relevant source files run_llama.py serves as the central entry point for the entire codebase. It orchestrates data processing, model initialization, and the execution of four distinct operational modes: text generation, zero-shot prompting, full fine-tuning, and LoRA-based parameter-efficient fine-tuning. Pipeline Architecture The pipeline bridges ..."
+    }
+  ]
+}

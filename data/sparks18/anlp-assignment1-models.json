@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sparks18/anlp-assignment1-models",
+  "slug": "sparks18-anlp-assignment1-models",
+  "author": "sparks18",
+  "url": "https://huggingface.co/sparks18/anlp-assignment1-models",
+  "created_at": "2026-09-02T16:32:30.000Z",
+  "updated_at": "2026-09-02T16:33:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "seq2seq",
+    "transformer",
+    "blt",
+    "byte-latent-transformer",
+    "cryptography",
+    "pytorch-from-scratch",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39447412,
+  "storage_human": "39 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sparks18 (Sparsh Bhartia) - Hugging Face",
+      "url": "https://huggingface.co/sparks18/datasets",
+      "snippet": "User profile of Sparsh Bhartia on Hugging Face"
+    },
+    {
+      "title": "Spark NLP - Models Hub",
+      "url": "https://sparknlp.org/models",
+      "snippet": "Share and discover Spark NLP models and pipelines. Get access to 7000+ models and 2000+ pipelines right out of the box."
+    },
+    {
+      "title": "anlp_assignment1/myModel at master - GitHub",
+      "url": "https://github.com/XingyuJinTI/anlp_assignment1/blob/master/myModel",
+      "snippet": "3614 lines (3614 loc) · 49.4 KB master anlp_assignment1 / myModel Top Code Blame 3614 lines (3614 loc) · 49.4 KB Raw 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 ..."
+    },
+    {
+      "title": "Model AI Assignments",
+      "url": "http://modelai.gettysburg.edu/",
+      "snippet": "Model AI Assignments is the largest, open-access, peer-reviewed AI assignment repository. Accepted assignments are presented in sessions at the Educational Advances in Artificial Intelligence Symposium, collocated with AAAI."
+    },
+    {
+      "title": "Assignment 1: Build Your Own LLaMa",
+      "url": "https://cmu-l3.github.io/anlp-spring2026/assignments/assignment1",
+      "snippet": "The assignment consists of two main parts: Part 1: Core Implementation. In this part, you will complete the missing components of the Llama2 model architecture. Specifically, implement: Attention mechanisms Feed-forward networks Layer normalization (LayerNorm) Positional encodings (RoPE) Part 2: Applications."
+    }
+  ]
+}

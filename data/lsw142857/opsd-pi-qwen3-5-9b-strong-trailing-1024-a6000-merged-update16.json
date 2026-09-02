@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "LSW142857/OPSD-PI-Qwen3.5-9B-Strong-Trailing-1024-A6000-Merged-Update16",
+  "slug": "lsw142857-opsd-pi-qwen3-5-9b-strong-trailing-1024-a6000-merged-update16",
+  "author": "LSW142857",
+  "url": "https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Strong-Trailing-1024-A6000-Merged-Update16",
+  "created_at": "2026-09-02T17:17:35.000Z",
+  "updated_at": "2026-09-02T17:21:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "opsd",
+    "code",
+    "mtp",
+    "text-generation",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326293413,
+  "storage_human": "19.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000 - Hugging Face",
+      "url": "https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged",
+      "url": "https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged-Iter8",
+      "url": "https://friendli.ai/models/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged-Iter8",
+      "snippet": "Deploy OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged-Iter8 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Qwen3.5 9B · Models · Pi",
+      "url": "https://pi.dev/models/huggingface/qwen-qwen3-5-9b",
+      "snippet": "A terminal-based coding agent Model Qwen/Qwen3.5-9B Provider huggingface API openai-completions Base URL https://router.huggingface.co/v1 Input text, image Reasoning Yes Context window 262,144 Max tokens 65,536 Cost / million input $0.17 Cost / million output $0.25 Cost / million cache read $0 Cost / million cache write $0"
+    },
+    {
+      "title": "Qwen3.5 9B · Models · Pi",
+      "url": "https://pi.dev/models/huggingface/qwen-qwen3-5-9b?name=pi",
+      "snippet": "A terminal-based coding agent Model details Model Qwen/Qwen3.5-9B Provider huggingface API openai-completions Base URL https://router.huggingface.co/v1 Input text, image Reasoning Yes Context window 262,144 Max tokens 65,536 Show configuration"
+    }
+  ]
+}

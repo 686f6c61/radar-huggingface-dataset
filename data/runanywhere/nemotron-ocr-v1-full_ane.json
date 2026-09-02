@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "runanywhere/nemotron-ocr-v1-full_ANE",
+  "slug": "runanywhere-nemotron-ocr-v1-full_ane",
+  "author": "runanywhere",
+  "url": "https://huggingface.co/runanywhere/nemotron-ocr-v1-full_ANE",
+  "created_at": "2026-09-02T03:31:01.000Z",
+  "updated_at": "2026-09-02T14:41:27.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "runanywhere",
+  "languages": [],
+  "tags": [
+    "runanywhere",
+    "coreml",
+    "ocr",
+    "apple-neural-engine",
+    "image-to-text",
+    "base_model:nvidia/nemotron-ocr-v1",
+    "base_model:quantized:nvidia/nemotron-ocr-v1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 193861663,
+  "storage_human": "194 MB",
+  "base_model": "nvidia/nemotron-ocr-v1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "runanywhere/nemotron-ocr-v1-full_ANE · Hugging Face",
+      "url": "https://huggingface.co/runanywhere/nemotron-ocr-v1-full_ANE",
+      "snippet": "Nemotron-OCR v1 — Apple Neural Engine (detector + recognizer) The complete OCR pipeline for the ANE: a FOTS/RegNet text detector together with the CTC line recognizer, as one NeuRT bundle. Why this exists The previously published nemotron-ocr-*_ANE bundles carry only the recognizer. That is not a runnable OCR model, and the reason is easy to miss: the recognizer&#x27;s input is crop [1, 128, 8 ..."
+    },
+    {
+      "title": "nemotron-ocr-v1 Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-ocr-v1/modelcard",
+      "snippet": "nemotron-ocr-v1 Description nemotron-ocr-v1 is a text recognition model designed for robust end-to-end optical character recognition (OCR) on complex real-world images and documents. It integrates three core neural network modules: a detector for text region localization, a recognizer for transcription of detected regions, and a relational model for layout and reading-order analysis. This ..."
+    },
+    {
+      "title": "nvidia/nemotron-ocr-v1 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/nemotron-ocr-v1",
+      "snippet": "A newer version of this model is available: nvidia/nemotron-ocr-v2"
+    },
+    {
+      "title": "GitHub - theone25/nemotron-ocr-v1",
+      "url": "https://github.com/theone25/nemotron-ocr-v1",
+      "snippet": "The Nemotron OCR v1 model is a state-of-the-art text recognition model designed for robust end-to-end optical character recognition (OCR) on complex real-world images. It integrates three core neural network modules: a detector for text region localization, a recognizer for transcription of detected regions, and a relational model for layout and structure analysis. This model is optimized for ..."
+    },
+    {
+      "title": "nemotron-ocr-v1/README.md at main - GitHub",
+      "url": "https://github.com/MrWhilhelmSan/nemotron-ocr-v1/blob/main/README.md",
+      "snippet": "Description The Nemotron OCR v1 model is a state-of-the-art text recognition model designed for robust end-to-end optical character recognition (OCR) on complex real-world images. It integrates three core neural network modules: a detector for text region localization, a recognizer for transcription of detected regions, and a relational model for layout and structure analysis."
+    }
+  ]
+}

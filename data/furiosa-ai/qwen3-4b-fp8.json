@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "furiosa-ai/Qwen3-4B-FP8",
+  "slug": "furiosa-ai-qwen3-4b-fp8",
+  "author": "furiosa-ai",
+  "url": "https://huggingface.co/furiosa-ai/Qwen3-4B-FP8",
+  "created_at": "2026-06-28T14:26:49.000Z",
+  "updated_at": "2026-09-02T14:38:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "furiosa-llm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "furiosa-llm",
+    "safetensors",
+    "qwen3",
+    "furiosa-ai",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-4B-FP8",
+    "base_model:quantized:Qwen/Qwen3-4B-FP8",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2574,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 10412451441,
+  "storage_human": "10.4 GB",
+  "base_model": "Qwen/Qwen3-4B-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "furiosa-ai/Qwen3-4B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/furiosa-ai/Qwen3-4B-FP8",
+      "snippet": "/ Qwen3-4B-FP8 like 0 Follow FuriosaAI 154 Text Generation Safetensors English furiosa-llm qwen3 furiosa-ai fp8 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Qwen3-4B-FP8 Overview Quantization Features Parallelism Strategy Usage Launch the server Launch the server with tool calling Query ..."
+    },
+    {
+      "title": "furiosa-ai/Qwen3-4B-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/furiosa-ai/Qwen3-4B-FP8/tree/main",
+      "snippet": "Duplicated from Qwen/Qwen3-4B-FP8 furiosa-ai / Qwen3-4B-FP8 like 0 Follow FuriosaAI 161 Text Generation Safetensors English furiosa-llm qwen3 furiosa-ai fp8 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Qwen3-4B-FP8 5.62 GB Ctrl+K Ctrl+K 2 contributors History:8 commits hyunsikc Publish qwen3-4b-fp8-b4e5762f15-7f200bf07a-2607200555 ..."
+    },
+    {
+      "title": "Qwen3 (dense) — FuriosaAI Developer Center 2026.3.0 documentation",
+      "url": "https://developer.furiosa.ai/latest/en/furiosa_llm/models/qwen3.html",
+      "snippet": "Furiosa-LLM runs the Qwen3 dense models in FP8 (static FP8 weights with dynamic FP8 activation quantization; the KV cache stays in 16-bit precision). FuriosaAI publishes pre-compiled FP8 builds under the furiosa-ai organization on the Hugging Face Hub, each shipping a Furiosa Executable Bundle (FXB) for running it on FuriosaAI RNGD with Furiosa ..."
+    },
+    {
+      "title": "Qwen3 (dense) — FuriosaAI Developer Center 2026.4.0b8 documentation",
+      "url": "https://developer.furiosa.ai/v2026.4.0/en/furiosa_llm/models/qwen3.html",
+      "snippet": "Furiosa-LLM runs the Qwen3 dense models in FP8 (static FP8 weights with dynamic FP8 activation quantization; the KV cache stays in 16-bit precision). FuriosaAI publishes pre-compiled FP8 builds under the furiosa-ai organization on the Hugging Face Hub, each shipping a Furiosa Executable Bundle (FXB) for running it on FuriosaAI RNGD with Furiosa-LLM. The same upstream weights also run on other ..."
+    },
+    {
+      "title": "Qwen3-4B-FP8: Open-Source 4B LLM with Thinking Mode for Local Inference ...",
+      "url": "https://dev.co/ai/llms/qwen3-4b-fp8",
+      "snippet": "Qwen3-4B-FP8 Qwen3-4B-FP8 is a 4-billion-parameter instruction-tuned language model from Alibaba&#x27;s Qwen team, quantized to FP8 precision for efficient inference. It supports dynamic switching between &#x27;thinking mode&#x27; (for complex reasoning) and &#x27;non-thinking mode&#x27; (for fast dialogue), multilingual instruction-following across 100+ languages, and agent/tool integration. Licensed under Apache 2.0 ..."
+    }
+  ]
+}

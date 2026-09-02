@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "litert-community/why-can-i-make-this",
+  "slug": "litert-community-why-can-i-make-this",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/why-can-i-make-this",
+  "created_at": "2026-09-02T14:53:55.000Z",
+  "updated_at": "2026-09-02T14:53:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiteRT Community (FKA TFLite) - Hugging Face",
+      "url": "https://huggingface.co/litert-community",
+      "snippet": "LiteRT Community. LiteRT is Google&#x27;s on-device framework for high-performance ML & GenAI deployment on edge platforms. It is the improved successor to TensorFlow Lite. On this com"
+    },
+    {
+      "title": "LiteRT CLI Common Commands | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/litert/cli/commands",
+      "snippet": "On this page 1. Download a model from Hugging Face Hub 2. Convert a PyTorch model into a LiteRT model 3. Quantize a LiteRT model 4. A.O.T. Compile a LiteRT model for NPU 5. Run a LiteRT model on desktop or Android 6. Benchmark a LiteRT model 7. Run and benchmark generative LLMs 8. Visualize a model&#x27;s architecture 9. Import a local model 10 ..."
+    },
+    {
+      "title": "LiteRT: The Universal Framework for On-Device AI",
+      "url": "https://developers.googleblog.com/en/litert-the-universal-framework-for-on-device-ai/",
+      "snippet": "AI Edge Gallery app demos powered by LiteRT: TinyGarden (left) and Mobile Actions (right), built with FuntionGemma. These models are available on the LiteRT Hugging Face Community and can be explored interactively via the Google AI Edge Gallery app on Android/Play and iOS. For more development details, visit our LiteRT GenAI documentation."
+    },
+    {
+      "title": "GitHub - google-ai-edge/LiteRT-LM: LiteRT-LM is Google&#x27;s production ...",
+      "url": "https://github.com/google-ai-edge/LiteRT-LM",
+      "snippet": "🚀 Production-Ready for Google&#x27;s Products LiteRT-LM powers on-device GenAI experiences in Chrome, Chromebook Plus, Pixel Watch, and more. You can also try the Google AI Edge Gallery app to run models immediately on your device."
+    },
+    {
+      "title": "LiteRT Community (FKA TFLite) - Hugging Face",
+      "url": "https://huggingface.co/litert-community/models",
+      "snippet": "AI & ML interests ... Recent Activity Team members 2,593 litert-community &#x27;s models 296 Sort: Recently updated"
+    }
+  ]
+}

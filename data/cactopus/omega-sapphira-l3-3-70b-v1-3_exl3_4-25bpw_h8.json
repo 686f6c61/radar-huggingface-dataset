@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cactopus/Omega-Sapphira-L3.3-70B-v1.3_EXL3_4.25bpw_H8",
+  "slug": "cactopus-omega-sapphira-l3-3-70b-v1-3_exl3_4-25bpw_h8",
+  "author": "cactopus",
+  "url": "https://huggingface.co/cactopus/Omega-Sapphira-L3.3-70B-v1.3_EXL3_4.25bpw_H8",
+  "created_at": "2026-09-02T15:35:14.000Z",
+  "updated_at": "2026-09-02T15:35:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JayhC/Sapphira-L3.3-70b-0.1-4bpw-h6-exl3 · Hugging Face",
+      "url": "https://huggingface.co/JayhC/Sapphira-L3.3-70b-0.1-4bpw-h6-exl3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Top Models for AI Role Play In 2026 #3: Sapphira-L3.3-70B-0.1",
+      "url": "https://blog.meganova.ai/top-models-for-ai-role-play-in-2026-3-sapphira-l3-3-70b-0-1/",
+      "snippet": "Discover why Sapphira-L3.3-70B-.1 is the best model for AI roleplay. Experience elite storytelling and creative freedom on MegaNova."
+    },
+    {
+      "title": "Sapphira L3.3 70B 0.1 by BruhzWater - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/BruhzWater%2FSapphira-L3.3-70b-0.1,5YgBzOOzvXCVOtDTfIQ1UX",
+      "snippet": "Sapphira L3.3 70B 0.1 is an open-source 70b LLM by BruhzWater. VRAM 141.2GB, 128K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "MegaNova - AI Inference Cloud for Characters & Enterprise",
+      "url": "http://www.meganova.ai/BruhzWater/Sapphira-L3.3-70b-0.1",
+      "snippet": "Sapphira-L3.3-70B-.1 Free 70B parameter language model optimized for storytelling, dialogue, and immersive role-play Context Length: 65,536 tokens"
+    },
+    {
+      "title": "BruhzWater-Sapphira-L3.3-70b-0.2-EXL3 - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/BruhzWater-Sapphira-L3.3-70b-0.2-EXL3",
+      "snippet": "Sapphira-L3.3-70b-.2 Released by BruhzWater Quant (s) by FrenzyBiscuit 4.25 BPW H6 5.25 BPW H8"
+    }
+  ]
+}

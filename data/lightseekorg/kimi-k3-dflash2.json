@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "lightseekorg/kimi-k3-dflash2",
+  "slug": "lightseekorg-kimi-k3-dflash2",
+  "author": "lightseekorg",
+  "url": "https://huggingface.co/lightseekorg/kimi-k3-dflash2",
+  "created_at": "2026-08-23T07:23:39.000Z",
+  "updated_at": "2026-09-02T19:05:54.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dflash2",
+    "kimi-k3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 530,
+  "trending_score": 0,
+  "parameters": 3692877824,
+  "parameters_human": "3.69B",
+  "storage_bytes": 23130393120,
+  "storage_human": "23.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lightseekorg/kimi-k3-dflash2 · Hugging Face",
+      "url": "https://huggingface.co/lightseekorg/kimi-k3-dflash2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kimi K3: 2.8T Open Model for Coding & Knowledge Work",
+      "url": "https://www.kimi.ai/ai-models/kimi-k3",
+      "snippet": "Meet Kimi K3, a 2.8T-parameter model with native vision and a 1M context window. Create playable games, polished slides, interactive reports, and more."
+    },
+    {
+      "title": "kimi-k3 Model by Moonshotai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/moonshotai/kimi-k3",
+      "snippet": "~2.8T hybrid KDA+MLA multimodal MoE for long-horizon coding, agentic tool use, and image understanding."
+    },
+    {
+      "title": "Kimi K3 - Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart",
+      "snippet": "Kimi K3 is the first open-source model to reach 2.8 trillion parameters. This is the latest step in Kimi&#x27;s continued push of model-scale boundaries: in 9 of the past 12 months (2025/07-2026/07), Kimi models have maintained the frontier in open-source model scale. Kimi K3 is built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes)."
+    },
+    {
+      "title": "vLLM v0.28.0 Ships Decode Context Parallel, Bigger Batches and Model ...",
+      "url": "https://aiweekly.co/node/11086",
+      "snippet": "Summary vLLM v0.28. landed with 584 commits from 270 contributors: Decode Context Parallel and fused kernels for Kimi-K3, end-to-end sparse MLA for DeepSeek V4, DFlash2 speculative decoding with confidence-scheduled verification, tiered KV cache offloading to disk, and Model Runner V2 maturation."
+    }
+  ]
+}

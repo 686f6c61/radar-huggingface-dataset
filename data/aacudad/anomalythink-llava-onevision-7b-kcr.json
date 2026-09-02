@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "aacudad/AnomalyThink-LLaVA-OneVision-7B-KCR",
+  "slug": "aacudad-anomalythink-llava-onevision-7b-kcr",
+  "author": "aacudad",
+  "url": "https://huggingface.co/aacudad/AnomalyThink-LLaVA-OneVision-7B-KCR",
+  "created_at": "2026-09-02T16:39:09.000Z",
+  "updated_at": "2026-09-02T16:53:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llava_onevision",
+    "image-text-to-text",
+    "anomaly-detection",
+    "industrial-anomaly-detection",
+    "vision-language-model",
+    "reasoning",
+    "conversational",
+    "dataset:aacudad/AnomalyThink",
+    "base_model:llava-hf/llava-onevision-qwen2-7b-si-hf",
+    "base_model:finetune:llava-hf/llava-onevision-qwen2-7b-si-hf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030807584,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16073136418,
+  "storage_human": "16.1 GB",
+  "base_model": "llava-hf/llava-onevision-qwen2-7b-si-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLaVA-OneVision · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/llava_onevision",
+      "snippet": "LLaVA-OneVision Overview The LLaVA-OneVision model was proposed in LLaVA-OneVision: Easy Visual Task Transfer by <Bo Li, Yuanhan Zhang, Dong Guo, Renrui Zhang, Feng Li, Hao Zhang, Kaichen Zhang, Yanwei Li, Ziwei Liu, Chunyuan Li LLaVA-OneVision is a Vision-Language Model that can generate text conditioned on one or several images/videos."
+    },
+    {
+      "title": "[2408.03326] LLaVA-OneVision: Easy Visual Task Transfer",
+      "url": "https://arxiv.org/abs/2408.03326",
+      "snippet": "We present LLaVA-OneVision, a family of open large multimodal models (LMMs) developed by consolidating our insights into data, models, and visual representations in the LLaVA-NeXT blog series. Our experimental results demonstrate that LLaVA-OneVision is the first single model that can simultaneously push the performance boundaries of open LMMs in three important computer vision scenarios ..."
+    },
+    {
+      "title": "LLaVA-OneVision - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.56.1/en/model_doc/llava_onevision",
+      "snippet": "The LLaVA-OneVision model was proposed in LLaVA-OneVision: Easy Visual Task Transfer by <Bo Li, Yuanhan Zhang, Dong Guo, Renrui Zhang, Feng Li, Hao Zhang, Kaichen Zhang, Yanwei Li, Ziwei Liu, Chunyuan Li LLaVA-OneVision is a Vision-Language Model that can generate text conditioned on one or several images/videos. The model consists of SigLIP vision encoder and a Qwen2 language backbone. The ..."
+    },
+    {
+      "title": "LLaVA-OneVision: Easy Visual Task Transfer - arXiv.org",
+      "url": "https://arxiv.org/html/2408.03326v1",
+      "snippet": "It is a core aspiration in AI to build general-purpose assistants with Large Multimodal Models (LMM) [67]. LLaVA-OneVision is an open model, continuing to advance the line of research in building large vision-and-language assistant (LLaVA) [83] that can follow diverse instructions to complete a variety of computer vision tasks in the wild. As a cost-efficient recipe, it is typically developed ..."
+    },
+    {
+      "title": "LLaVA-OneVision: Easy Visual Task Transfer - LMMs-Lab",
+      "url": "https://www.lmms-lab.com/posts/llava_onevision/",
+      "snippet": "LLaVA-OneVision is designed to have a similar maximum visual token count across different scenarios, enabling flexible extension to multiple visual signal types while maintaining consistent performance. Model Sizes 0.5B parameters - Lightweight deployment 7B parameters - Balanced performance 72B parameters - State-of-the-art capabilities"
+    }
+  ]
+}

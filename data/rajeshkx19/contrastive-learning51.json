@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rajeshkx19/contrastive-learning51",
+  "slug": "rajeshkx19-contrastive-learning51",
+  "author": "rajeshkx19",
+  "url": "https://huggingface.co/rajeshkx19/contrastive-learning51",
+  "created_at": "2026-09-02T17:50:47.000Z",
+  "updated_at": "2026-09-02T17:50:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rajeshkx19 (विक्रम नायर) - Hugging Face",
+      "url": "https://huggingface.co/rajeshkx19/models",
+      "snippet": "rajeshkx19&#x27;s models1 Sort: Recently updated rajeshkx19/model_394634512_efficientformer_large Updated about 14 hours ago"
+    },
+    {
+      "title": "rajeshkx19 (विक्रम नायर) - Hugging Face",
+      "url": "https://huggingface.co/rajeshkx19/datasets",
+      "snippet": "Recent Activity updated a modelabout 14 hours ago rajeshkx19/model_394634512_efficientformer_large published a modelabout 14 hours ago rajeshkx19/model_394634512_efficientformer_large View all activity"
+    },
+    {
+      "title": "Visualizing and Understanding Contrastive Learning - arXiv.org",
+      "url": "https://arxiv.org/html/2206.09753v3",
+      "snippet": "Explainable Artificial Intelligence (XAI) involves building techniques to understand the underlying mechanisms behind the decision-making process of a machine learning model. It is crucial for building trust and accountability in AI systems as it enables users to understand and improve their models [8] and identify any data biases present [9 ..."
+    },
+    {
+      "title": "A comprehensive survey on contrastive learning - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231224014164",
+      "snippet": "Contrastive Learning is self-supervised representation learning by training a model to differentiate between similar and dissimilar samples. It has been shown to be effective and has gained significant attention in various computer vision and natural language processing tasks. In this paper, we comprehensively and systematically sort out the main ideas, recent developments and application ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

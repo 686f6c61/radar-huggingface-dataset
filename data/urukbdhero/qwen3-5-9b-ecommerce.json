@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "urukbdhero/qwen3.5-9b-ecommerce",
+  "slug": "urukbdhero-qwen3-5-9b-ecommerce",
+  "author": "urukbdhero",
+  "url": "https://huggingface.co/urukbdhero/qwen3.5-9b-ecommerce",
+  "created_at": "2026-09-02T13:05:24.000Z",
+  "updated_at": "2026-09-02T13:06:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3.5-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 489561089,
+  "storage_human": "490 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.5 9B | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/qwen3-5-9b/",
+      "snippet": "Qwen3.5-9B is a post-trained vision-language model with 9B parameters, 32 layers, and a Gated DeltaNet plus Gated Attention hybrid layout, built for multimodal instruction-following and tool calling, with 262,144 native context length and stated extensibility up to about 1,010,000 tokens."
+    },
+    {
+      "title": "Qwen3.5 9B API: Pricing, Benchmarks & Docs | Together AI",
+      "url": "https://www.together.ai/models/qwen3-5-9b",
+      "snippet": "Qwen&#x27;s 9B multimodal model with hybrid architecture, 262K native context, vision-language reasoning, native tool calling, and 201-language support for agentic workflows"
+    },
+    {
+      "title": "Qwen3.5-9B - AI Model | Apertis AI",
+      "url": "https://apertis.ai/models/qwen3.5-9b",
+      "snippet": "Qwen3.5-9B is a multimodal foundation model from the Qwen3.5 family, built to deliver strong reasoning, coding, and visual understanding within an efficient 9B-parameter architecture. It adopts a unified vision-language design with early fusion of multimodal tokens, enabling the model to process and reason across text and images within the same context. With balanced multimodal capability and ..."
+    },
+    {
+      "title": "Qwen3.5 9B Models - Intelligence, Performance & Price Comparison ...",
+      "url": "https://artificialanalysis.ai/models/releases/qwen3-5-9b",
+      "snippet": "The Qwen3.5 9B release offers 2 models, each with different intelligence, performance, and pricing characteristics. Below is a comparison of the key metrics across the 2 models. For intelligence, the top model of Qwen3.5 9B is Qwen3.5 9B (Reasoning) at 22. For output speed, the fastest model is Qwen3.5 9B (Non-reasoning) at 98 t/s."
+    },
+    {
+      "title": "Qwen3.5-9B - Qwen (Alibaba) AI Model | ValorGPT",
+      "url": "https://www.valorgpt.com/models/qwen-qwen3.5-9b",
+      "snippet": "Qwen3.5-9B is a premium large language model developed by Qwen (Alibaba). With a 262K tokens context window, this model excels at complex reasoning and step-by-step problem solving, generates and debugs code across multiple programming languages, understands and analyzes images alongside text, processes extensive documents and conversations."
+    }
+  ]
+}

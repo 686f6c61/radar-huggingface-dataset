@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "DotCheck/helmholtz-audio-v3_1",
+  "slug": "dotcheck-helmholtz-audio-v3_1",
+  "author": "DotCheck",
+  "url": "https://huggingface.co/DotCheck/helmholtz-audio-v3_1",
+  "created_at": "2026-08-29T07:21:01.000Z",
+  "updated_at": "2026-09-02T18:53:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "dotcheck",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "dotcheck",
+    "audio-classification",
+    "ai-detection",
+    "synthetic-media",
+    "dasheng",
+    "apache-2.0",
+    "helmholtz",
+    "en",
+    "base_model:mispeech/dasheng-base",
+    "base_model:adapter:mispeech/dasheng-base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7108,
+  "storage_human": "7108 B",
+  "base_model": "mispeech/dasheng-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "binary AI detection (audio)",
+      "dataset": "DotCheck audio holdout (CodecFake / DFADD / AudioGen + fal family)",
+      "metric": "mean_P_AI_real",
+      "value": 0.018
+    },
+    {
+      "task": "binary AI detection (audio)",
+      "dataset": "DotCheck audio holdout (CodecFake / DFADD / AudioGen + fal family)",
+      "metric": "mean_P_AI_ai",
+      "value": 0.989
+    },
+    {
+      "task": "binary AI detection (audio)",
+      "dataset": "DotCheck audio holdout (CodecFake / DFADD / AudioGen + fal family)",
+      "metric": "balanced_accuracy",
+      "value": 0.995
+    }
+  ],
+  "sources": [
+    {
+      "title": "DotCheck/helmholtz-audio-v3_1 · Hugging Face",
+      "url": "https://huggingface.co/DotCheck/helmholtz-audio-v3_1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DotCheck/helmholtz-audio-v3 · Hugging Face",
+      "url": "https://huggingface.co/DotCheck/helmholtz-audio-v3",
+      "snippet": "DotCheck / helmholtz-audio-v3 like 0 Follow DotCheck - Petr Jaroch 1 Audio Classification English dotcheck ai-detection synthetic-media dasheng apache-2.0 helmholtz Eval Results (legacy) License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new DotCheck/helmholtz-audio-v3 Model description Architecture Inference ..."
+    },
+    {
+      "title": "Technical docs · DotCheck",
+      "url": "https://dotcheck.ai/docs",
+      "snippet": "Model cards and open weights on Hugging Face (Apache-2.0). Everyday scoring still runs through DotCheck: huggingface.co/DotCheck · vermeer-image-v12 · vermeer-image-v14_2 · valla-text-v11 · muybridge-video-v2 · muybridge-video-v4_4 · helmholtz-audio-v3 · DotCheck Engines collection."
+    },
+    {
+      "title": "PDF DotCheck Model Card — Docs v2026",
+      "url": "https://dotcheck.ai/media/docs/dotcheck-model-card-v2026.7.pdf",
+      "snippet": "Helmholtz scores how AI-like speech, music, and general sound appear. Serve uses short protocol windows (about 4 s), then takes the max when more than one window is scored."
+    },
+    {
+      "title": "DotCheck Stats, Downloads & Safety Check | Chrome-Stats",
+      "url": "https://chrome-stats.com/d/ifgfdjokimpmlonlkeiefnghkbbgaonl",
+      "snippet": "Download and analyze DotCheck growth, ratings, and security risk. View historical data, active user trends, and top alternatives like WPS PDF - Read, Edit, Fill, Convert, and AI Chat PDF with Ease and AnyDoc Translator - Translate Web and PDF."
+    }
+  ]
+}

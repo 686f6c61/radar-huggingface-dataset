@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "KyrlG/NousCoder-14B",
+  "slug": "kyrlg-nouscoder-14b",
+  "author": "KyrlG",
+  "url": "https://huggingface.co/KyrlG/NousCoder-14B",
+  "created_at": "2026-09-02T12:47:48.000Z",
+  "updated_at": "2026-09-02T12:47:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "dataset:livecodebench/code_generation_lite",
+    "dataset:agentica-org/DeepCoder-Preview-Dataset",
+    "dataset:NousResearch/lcb_test",
+    "dataset:NousResearch/RLVR_Coding_Problems",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:finetune:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29548679996,
+  "storage_human": "29.5 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NousCoder-14B: A Competitive Olympiad Programming Model - NOUS RESEARCH",
+      "url": "https://nousresearch.com/nouscoder-14b-a-competitive-olympiad-programming-model",
+      "snippet": "Nous Research introduces NousCoder-14B, a competitive olympiad programming model post-trained on Qwen3-14B via reinforcement learning.The full stack is released publicly: model weights, open RL environment + eval harness, and @wandb logs; we also document the pipelined verification setup and parallelization experiments so others can reproduce the training stack."
+    },
+    {
+      "title": "NousCoder‑14B: Open-Source AI Coding Model Rivaling Claude Code",
+      "url": "https://techkip.com/artificial-intelligence/nous-researchs-nouscoder-14b-is-an-open-source-coding-model-landing-right-in-the-claude-code-moment/",
+      "snippet": "What is NousCoder‑14B? NousCoder‑14B is a 14-billion parameter AI coding model developed by Nous Research, designed to handle everything from coding challenges to real-world programming tasks. Unlike many closed-source AI models, it is fully open-source, allowing developers to inspect, modify, and run it locally without restrictions."
+    },
+    {
+      "title": "Inside NousCoder-14B: Open-Source RL Beats Its Base Model as AI Coding ...",
+      "url": "https://www.techbuddies.io/2026/01/10/inside-nouscoder-14b-open-source-rl-beats-its-base-model-as-ai-coding-hits-a-data-wall/",
+      "snippet": "Nous Research has released NousCoder-14B, an open-source coding model tuned for competitive programming that, by the company&#x27;s account, matches or surpasses several larger proprietary systems on a key benchmark—after just four days of reinforcement learning on 48 Nvidia B200 GPUs. The launch lands amid intense attention on Anthropic&#x27;s Claude Code, highlighting two diverging but ..."
+    },
+    {
+      "title": "NousResearch/NousCoder-14B · Hugging Face",
+      "url": "https://huggingface.co/NousResearch/NousCoder-14B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NousCoder-14B: Open-Source Model vs Proprietary Giants",
+      "url": "https://koolerai.com/nous-researchs-nouscoder-14b-a-game-changer-in-ai-coding/",
+      "snippet": "Discover how Nous Research&#x27;s NousCoder-14B challenges proprietary coding models in AI with impressive accuracy. Learn more about its potential."
+    }
+  ]
+}

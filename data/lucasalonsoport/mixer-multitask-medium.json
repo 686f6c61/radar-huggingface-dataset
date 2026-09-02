@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Lucasalonsoport/mixer-multitask-medium",
+  "slug": "lucasalonsoport-mixer-multitask-medium",
+  "author": "Lucasalonsoport",
+  "url": "https://huggingface.co/Lucasalonsoport/mixer-multitask-medium",
+  "created_at": "2026-09-02T18:51:55.000Z",
+  "updated_at": "2026-09-02T18:52:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "robinson5340/mixer-multitask · Hugging Face",
+      "url": "https://huggingface.co/robinson5340/mixer-multitask",
+      "snippet": "A research-oriented Mixer prototype targeting Multitask. The included small setup documents defaults and file formats without presenting unverified performance numbers."
+    },
+    {
+      "title": "jojames92k/mixer-multitask · Hugging Face",
+      "url": "https://huggingface.co/jojames92k/mixer-multitask",
+      "snippet": "This is an experimental Mixer codebase for Multitask. It keeps the tiny setup intentionally manageable so architecture changes can be inspected before a full training run."
+    },
+    {
+      "title": "Mistral Medium 3.5 - docs.mistral.ai",
+      "url": "https://docs.mistral.ai/models/mistral-medium-3-5-26-04",
+      "snippet": "Our frontier-class multimodal model optimized for agentic and coding use cases. Released as open weights under a Modified MIT license."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Best Mistral Models (September 2026) — Ranked by Benchmark Data",
+      "url": "https://benchlm.ai/best/mistral-models",
+      "snippet": "All Mistral AI models ranked by benchmark performance — Mistral Large, Mixtral, and more. Top picks: Ministral 3 14B (Reasoning), Mistral Large 3, Mixtral 8x22B Instruct v0.1. 14 models ranked with detailed benchmark scores."
+    }
+  ]
+}

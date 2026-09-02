@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Alicethomas/cnn-transformer-finetuned",
+  "slug": "alicethomas-cnn-transformer-finetuned",
+  "author": "Alicethomas",
+  "url": "https://huggingface.co/Alicethomas/cnn-transformer-finetuned",
+  "created_at": "2026-09-02T17:39:02.000Z",
+  "updated_at": "2026-09-02T17:39:08.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kaorisakam/cnn-transformer-finetuned · Hugging Face",
+      "url": "https://huggingface.co/kaorisakam/cnn-transformer-finetuned",
+      "snippet": "kaorisakam / cnn-transformer-finetuned like 0 Safetensors PyTorch cnn_transformer cnn-transformer generation License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new Cnn Transformer for Generation Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files ..."
+    },
+    {
+      "title": "GitHub - rafiepour/CTran: Complete code for the proposed CNN ...",
+      "url": "https://github.com/rafiepour/CTran",
+      "snippet": "This repository contains the complete source code of the proposed CTRAN network for joint intent detection and slot filling, which are the main tasks of natural language understanding. We propose a encoder-decoder modele, combining CNNs with Transformers and define the concept of alignment in Transformer decoder for the first time. The encoder is shared between the two intent detection and ..."
+    },
+    {
+      "title": "Transformer models: an introduction and catalog - arXiv.org",
+      "url": "https://arxiv.org/html/2302.07730v4",
+      "snippet": "Transformer model adoption is further accelerated as specialized hardware is developed by commercial players to improve model training and inference speed."
+    },
+    {
+      "title": "Fine-tuned Transformer Models for Breast Cancer Detection and ...",
+      "url": "https://arxiv.org/html/2512.02091v2",
+      "snippet": "Although there were interesting results, the issues of dataset diversity and model optimization which present new avenues of research are also still present. Through this study, the crystal potential of transformer-based AI models in changing the detecting process of breast cancer and, thus, to patients&#x27; health, is suggested."
+    },
+    {
+      "title": "Transformer (deep learning) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning)",
+      "snippet": "The transformer model has been implemented in standard deep learning frameworks such as TensorFlow and PyTorch. Transformers is a library produced by Hugging Face that supplies transformer-based architectures and pretrained models."
+    }
+  ]
+}

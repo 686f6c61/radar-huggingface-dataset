@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "greenfield0810/affine-ark-cce506405c1c",
+  "slug": "greenfield0810-affine-ark-cce506405c1c",
+  "author": "greenfield0810",
+  "url": "https://huggingface.co/greenfield0810/affine-ark-cce506405c1c",
+  "created_at": "2026-09-02T14:49:31.000Z",
+  "updated_at": "2026-09-02T14:49:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "bittensor",
+    "subnet-120",
+    "mirror",
+    "archival",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 91505579821,
+  "storage_human": "91.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "greenfield0810/affine-ark-6029017c6751 · Hugging Face",
+      "url": "https://huggingface.co/greenfield0810/affine-ark-6029017c6751",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "greenfield0810/affine-ark-6029017c6751 at main - Hugging Face",
+      "url": "https://huggingface.co/greenfield0810/affine-ark-6029017c6751/tree/main",
+      "snippet": "greenfield0810 / affine-ark-6029017c6751 like 0 Text Generation Transformers Safetensors qwen3_5_moe_text affine bittensor subnet-120 mirror archival conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AFFiNE Self-host AI Guide",
+      "url": "https://docs.affine.pro/self-host-affine/administer/ai",
+      "snippet": "Use the AFFiNE self-host guide for AI, covering setup, configuration, operations, backups, production checks, and troubleshooting."
+    },
+    {
+      "title": "affine-ark-0fa3916341d5 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/greenfield0810/affine-ark-0fa3916341d5",
+      "snippet": "Deploy affine-ark-0fa3916341d5 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Building a Production-Ready AFFiNE Docker Image with Custom AI Models",
+      "url": "https://sneekes.app/posts/building_a_production_ready-_affine_docker_image_with_custom-_ai_models/",
+      "snippet": "A deep dive into creating a robust Docker build system for AFFiNE with custom AI model support, automated version management, and production optimizations."
+    }
+  ]
+}

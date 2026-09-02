@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Banaxi-Tech/BananaMind-2.1-Lite-AdamW",
+  "slug": "banaxi-tech-bananamind-2-1-lite-adamw",
+  "author": "Banaxi-Tech",
+  "url": "https://huggingface.co/Banaxi-Tech/BananaMind-2.1-Lite-AdamW",
+  "created_at": "2026-09-02T18:21:18.000Z",
+  "updated_at": "2026-09-02T18:21:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "causal-lm",
+    "custom-code",
+    "partially-looped",
+    "n-gram",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banaxi-Tech/BananaMind-2.1-Lite · Hugging Face",
+      "url": "https://huggingface.co/Banaxi-Tech/BananaMind-2.1-Lite",
+      "snippet": "BananaMind 2.1 Lite BananaMind 2.1 Lite is a 24,949,999-parameter causal language model built for the under-25M class."
+    },
+    {
+      "title": "Banaxi-Tech/BananaMind-2.1-Flash-Lite · Hugging Face",
+      "url": "https://huggingface.co/Banaxi-Tech/BananaMind-2.1-Flash-Lite",
+      "snippet": "BananaMind 2.1 Flash Lite Under 10M parameters; L4 is shared and evaluated twice."
+    },
+    {
+      "title": "Banaxi-Tech · GitHub",
+      "url": "https://github.com/Banaxi-Tech",
+      "snippet": "Hi, I&#x27;m Banaxi 👋 I build AI developer tools, low-level experiments, and unusual software projects. My main project is Banana Code, a terminal-native AI coding assistant focused on fast developer workflows, multi-provider model support, project context, and tool calling."
+    },
+    {
+      "title": "GitHub - BananaMind/BananaMindOS: Local AI for 90s PCs.",
+      "url": "https://github.com/BananaMind/BananaMindOS/tree/main",
+      "snippet": "BananaMind OS is a freestanding 32-bit x86 inference system for local BananaMind models. It boots on QEMU&#x27;s emulated Intel 486, needs no Linux or libc at runtime, displays a yellow prompt/response interface, streams up to 16 generated tokens, and shows live tokens per second (TPS)."
+    },
+    {
+      "title": "banaxitech/bananamind-v1",
+      "url": "https://ollama.com/banaxitech/bananamind-v1",
+      "snippet": "Tiny 125M AI Model 🍌 BananaMind V1 A small, local, and honestly not very good 125M parameter language model — but it runs fast, fits anywhere, and it&#x27;s yours. ⚠️ Fair warning: This is a personal project model. It will hallucinate, forget things after 512 tokens, and occasionally say something completely unhinged. You have been warned."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "MADUP/ad-video-classifier",
+  "slug": "madup-ad-video-classifier",
+  "author": "MADUP",
+  "url": "https://huggingface.co/MADUP/ad-video-classifier",
+  "created_at": "2026-09-02T09:37:08.000Z",
+  "updated_at": "2026-09-02T11:25:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "video-classification",
+    "advertising",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 829465459,
+  "storage_human": "829 MB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Use AI-powered scene detection for more effective ad placement | Google ...",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/use-ai-powered-scene-detection-for-more-effective-ad-placement",
+      "snippet": "Deliver a better ad experience with more effective ad placement using generative AI. Detect scenes and optimize ad placement with Google Cloud."
+    },
+    {
+      "title": "MADUP (Madup) - Hugging Face",
+      "url": "https://huggingface.co/MADUP",
+      "snippet": "Org profile for Madup on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "AI Video Detector & Checker Online | Is This Video AI?",
+      "url": "https://detectvideo.ai/",
+      "snippet": "Is this video AI? Use our AI video detector and checker to detect AI-generated content, deepfakes, and manipulation. Upload a video or paste a link."
+    },
+    {
+      "title": "매드업(Madup), 혁신적인 성장을 이끌어내는 Ai 마케팅 컴퍼니",
+      "url": "https://www.madup.com/en/",
+      "snippet": "Madup innovates digital marketing with AI, powered by Korea&#x27;s top team of over 50 AI and engineering experts."
+    },
+    {
+      "title": "Instagram Says It&#x27;s Pulling the Mask Off AI Influencers - CNET",
+      "url": "https://www.cnet.com/tech/services-and-software/instagram-ai-generated-profile-label-fake-influencer-profiles-2/",
+      "snippet": "Instagram is requiring fake models to carry an AI-generated profile label to show they&#x27;re not human."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/arcane-13b-i1-GGUF",
+  "slug": "mradermacher-arcane-13b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/arcane-13b-i1-GGUF",
+  "created_at": "2026-09-02T13:01:59.000Z",
+  "updated_at": "2026-09-02T13:54:29.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "arcane",
+    "mental-health",
+    "crisis-analysis",
+    "distress-detection",
+    "nlp",
+    "en",
+    "base_model:ar3xop/arcane-13b",
+    "base_model:quantized:ar3xop/arcane-13b",
+    "license:llama2",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13015864320,
+  "parameters_human": "13.02B",
+  "storage_bytes": 138260803840,
+  "storage_human": "138.3 GB",
+  "base_model": "ar3xop/arcane-13b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Arconte-13B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Arconte-13B-i1-GGUF",
+      "snippet": "mradermacher / Arconte-13B-i1-GGUF like 1 Transformers GGUF English Not-For-All-Audiences roleplay Merge nsfw Inference Endpoints imatrix License:cc-by-nc-4. Model card FilesFiles and versions Community Train Deploy Use this model"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "prompt/models_300.txt at main · hanmeng12/prompt · GitHub",
+      "url": "https://github.com/hanmeng12/prompt/blob/main/models_300.txt",
+      "snippet": "Contribute to hanmeng12/prompt development by creating an account on GitHub."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/drive/1g41PDb9Bck-3VI6yRZ_1M727yL05gZY8?usp=sharing",
+      "snippet": "Google Colab ... Google Colab"
+    }
+  ]
+}

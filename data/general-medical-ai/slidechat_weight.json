@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "General-Medical-AI/SlideChat_Weight",
+  "slug": "general-medical-ai-slidechat_weight",
+  "author": "General-Medical-AI",
+  "url": "https://huggingface.co/General-Medical-AI/SlideChat_Weight",
+  "created_at": "2025-03-18T17:14:58.000Z",
+  "updated_at": "2026-09-02T18:14:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107125690808,
+  "storage_human": "107.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "General-Medical-AI/SlideChat_Weight · Hugging Face",
+      "url": "https://huggingface.co/General-Medical-AI/SlideChat_Weight",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · General-Medical-AI/SlideChat_Weight at main",
+      "url": "https://huggingface.co/General-Medical-AI/SlideChat_Weight/blob/main/README.md",
+      "snippet": "Introduction We present SlideChat, the first open-source vision-language assistant capable of understanding gigapixel whole-slide images. We have released model weight."
+    },
+    {
+      "title": "SlideChat - uni-medical.github.io",
+      "url": "https://uni-medical.github.io/SlideChat.github.io/",
+      "snippet": "SlideChat is the first large vision-language assistant specifically designed for whole-slide pathology analysis. SlideChat can generates comprehensive descriptions of whole-slide images and provides contextually relevant responses across various applications."
+    },
+    {
+      "title": "SlideChat — GMAI Lab (General Medical AI)",
+      "url": "https://uni-medical.github.io/gmai-web/projects/slide-chat/",
+      "snippet": "We build world-leading AI models, agents, and tools that advance precision medicine and everyday healthcare — expanding access to high-quality diagnosis, treatment, and discovery for every clinician, patient, and community."
+    },
+    {
+      "title": "GitHub - uni-medical/SlideChat: SlideChat: A Large Vision-Language ...",
+      "url": "https://github.com/uni-medical/SlideChat",
+      "snippet": "We release SlideChat, SlideInstruction, and SlideBench as open-source resources, hoping to facilitate research and development in computational pathology. SlideChat: The first large vision-language assistant for whole-slide pathology image analysis, capable of generating comprehensive descriptions and contextually relevant responses."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Solstice-AI/Athena-27B-UltraEfficient",
+  "slug": "solstice-ai-athena-27b-ultraefficient",
+  "author": "Solstice-AI",
+  "url": "https://huggingface.co/Solstice-AI/Athena-27B-UltraEfficient",
+  "created_at": "2026-07-08T15:24:50.000Z",
+  "updated_at": "2026-09-02T17:15:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "quantized",
+    "low-latency",
+    "efficient",
+    "anvil",
+    "text-generation",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 19535692544,
+  "storage_human": "19.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solstice-AI/Athena-27B-UltraEfficient · Hugging Face",
+      "url": "https://huggingface.co/Solstice-AI/Athena-27B-UltraEfficient",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SolsticeAI (SolsticeAI) - Hugging Face",
+      "url": "https://huggingface.co/SolsticeAI",
+      "snippet": "Ultra efficiency SolsticeAI 15115 Follow jpturcotte&#x27;s profile picturebryanwills&#x27;s profile pictureJackBlack1773&#x27;s profile picture 7 followers · 13 following gondaliyashreyan1"
+    },
+    {
+      "title": "Solstice-AI (SolsticeAI) - Hugging Face",
+      "url": "https://huggingface.co/Solstice-AI",
+      "snippet": "AI & ML interests AI, Built to work, Built for the real world."
+    },
+    {
+      "title": "shreyan35/Athena-27B-UltraEfficient · Hugging Face",
+      "url": "https://huggingface.co/shreyan35/Athena-27B-UltraEfficient",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=solsticeai",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: solsticeai Clear all"
+    }
+  ]
+}

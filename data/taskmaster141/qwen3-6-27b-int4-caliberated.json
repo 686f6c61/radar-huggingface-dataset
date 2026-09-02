@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "taskmaster141/Qwen3.6-27B-INT4-caliberated",
+  "slug": "taskmaster141-qwen3-6-27b-int4-caliberated",
+  "author": "taskmaster141",
+  "url": "https://huggingface.co/taskmaster141/Qwen3.6-27B-INT4-caliberated",
+  "created_at": "2026-09-02T11:54:56.000Z",
+  "updated_at": "2026-09-02T11:56:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:quantized:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 20456797262,
+  "storage_human": "20.5 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "qwen3.6:27b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.6:27b",
+      "snippet": "Qwen3.6 delivers substantial upgrades in agentic coding and thinking preservation than previous Qwen models."
+    },
+    {
+      "title": "README.md · acyildirimer/Qwen3.6-27B-int4-AutoRound at main",
+      "url": "https://huggingface.co/acyildirimer/Qwen3.6-27B-int4-AutoRound/blob/main/README.md",
+      "snippet": "Model details This model is an INT4 quantized version of the original Qwen3.6-27B model. Quantization was performed with AutoRound using a custom calibration dataset. The calibration set consists of 128 randomly selected samples from diverse categories, with sequence length 2048 and 300 optimization iterations."
+    },
+    {
+      "title": "Qwen 3.6 27B: a Local Coding Model You Can Actually Run - ai.rs",
+      "url": "https://ai.rs/ai-developer/qwen-3-6-27b-local-coding-model",
+      "snippet": "Qwen 3.6 27B is the first open coding model that runs on a single 24GB GPU and gets within 4 points of Claude Opus 4.6 on SWE-bench. Here&#x27;s how to run it."
+    },
+    {
+      "title": "Setting Up Qwen3.6-27B for Local Coding: Complete Guide",
+      "url": "https://promptgenius.net/blog/qwen3.6-27b-local-coding",
+      "snippet": "A step-by-step guide to running Qwen3.6-27B locally for coding tasks — including GGUF quantization options, hardware requirements, llama.cpp and Ollama setup, and coding workflow integration."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "orangefabercastell/fine-tuning-agent-on-traces-v2-job_03_lr5e5_r16",
+  "slug": "orangefabercastell-fine-tuning-agent-on-traces-v2-job_03_lr5e5_r16",
+  "author": "orangefabercastell",
+  "url": "https://huggingface.co/orangefabercastell/fine-tuning-agent-on-traces-v2-job_03_lr5e5_r16",
+  "created_at": "2026-09-02T16:42:53.000Z",
+  "updated_at": "2026-09-02T16:43:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75944960,
+  "storage_human": "76 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tracing - OpenAI Agents SDK",
+      "url": "https://openai.github.io/openai-agents-python/tracing/",
+      "snippet": "Tracing The Agents SDK includes built-in tracing, collecting a comprehensive record of events during an agent run: LLM generations, tool calls, handoffs, guardrails, and even custom events that occur. Using the Traces dashboard, you can debug, visualize, and monitor your workflows during development and in production."
+    },
+    {
+      "title": "Exgentic/agent-llm-traces-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/Exgentic/agent-llm-traces-v2/tree/main/scripts",
+      "snippet": "Datasets: Exgentic / agent-llm-traces-v2 like 0 Follow Exgentic 25 Tasks: Text Generation Question Answering Other Modalities: Tabular Text Formats: parquet Sub-tasks: dialogue-modeling Languages: English Size: 10K - 100K Tags: agents agentic benchmarks opentelemetry gen-ai evaluation + 5 Libraries: Datasets Dask Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community 1 main ..."
+    },
+    {
+      "title": "Fine-tuning a 35B model on agent traces beats bigger judges at lower ...",
+      "url": "https://asksurf.ai/pulse/en/fine-tuning-35b-model-agent-traces",
+      "snippet": "LangChain and Fireworks showed that fine-tuning a 35B model on actual agent traces can match or beat the big frontier models at judging agent output. The cost drop is massive. Matching big models on narrow tasks changes where the real edge sits They took Qwen-3.5-35B and trained it on multi-turn traces from two agent setups."
+    },
+    {
+      "title": "Agentic Supervised Fine-Tuning - GitHub",
+      "url": "https://github.com/cobusgreyling/agentic-supervised-fine-tuning/blob/main/",
+      "snippet": "Minimal, reproducible lab for supervised fine-tuning (SFT) on agent traces —the practical first step of agent post-training—inspired by Ben Burtenshaw and the HF Training Agents live tutorial:"
+    },
+    {
+      "title": "sample_dataset_generation_job_traces_for_finetuning.py",
+      "url": "https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/ai/azure-ai-projects/samples/datasets/sample_dataset_generation_job_traces_for_finetuning.py",
+      "snippet": "Generates a supervised fine-tuning dataset from an agent&#x27;s conversation traces. 1. Creates an agent and seeds multiple short conversations against it. 2. Waits for ingestion, then submits a `DataGenerationJob` (scenario=SUPERVISED_FINETUNING, source=traces) that extracts and formats the trace data ..."
+    }
+  ]
+}

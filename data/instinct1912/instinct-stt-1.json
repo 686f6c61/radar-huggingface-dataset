@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "instinct1912/instinct-stt-1",
+  "slug": "instinct1912-instinct-stt-1",
+  "author": "instinct1912",
+  "url": "https://huggingface.co/instinct1912/instinct-stt-1",
+  "created_at": "2026-09-02T13:20:31.000Z",
+  "updated_at": "2026-09-02T13:24:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ru",
+    "uz",
+    "kk",
+    "ky"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "gigaam",
+    "speech",
+    "audio",
+    "automatic-speech-recognition",
+    "multilingual",
+    "ctc",
+    "custom_code",
+    "en",
+    "ru",
+    "uz",
+    "kk",
+    "ky",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23416369950,
+  "storage_human": "23.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "instinct-org/instinct-stt-1 · Hugging Face",
+      "url": "https://huggingface.co/instinct-org/instinct-stt-1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "instinct-org (instinct) - Hugging Face",
+      "url": "https://huggingface.co/instinct-org/collections",
+      "snippet": "Org profile for instinct on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Instinct - AI Startup Profile | AI Market Watch",
+      "url": "https://www.ai-market-watch.com/company/instinct",
+      "snippet": "Products and solutions Instinct — an invite-only personal AI agent accessible via SMS/WhatsApp text or phone call, connects to email, messaging apps, calendar, device screen/audio/location, performs tasks like travel booking, restaurant reservations, inbox management, shopping, and subscription cancellation."
+    },
+    {
+      "title": "Instinct&#x27;s powerful AI assistant is raising privacy and security ...",
+      "url": "https://techcrunch.com/2026/08/24/instincts-powerful-ai-assistant-is-raising-privacy-and-security-concerns/",
+      "snippet": "Early testers are raving about what Instinct can do, but some say the AI assistant&#x27;s sweeping access, broad terms and ability to act on users&#x27; behalf come with uncomfortable trade-offs."
+    }
+  ]
+}

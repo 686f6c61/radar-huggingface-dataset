@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "siddhartha-addy-globalids-labs/qwen3.5-2b-finance-alpaca-lora",
+  "slug": "siddhartha-addy-globalids-labs-qwen3-5-2b-finance-alpaca-lora",
+  "author": "siddhartha-addy-globalids-labs",
+  "url": "https://huggingface.co/siddhartha-addy-globalids-labs/qwen3.5-2b-finance-alpaca-lora",
+  "created_at": "2026-09-02T12:45:50.000Z",
+  "updated_at": "2026-09-02T12:52:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "qwen3.5",
+    "finance",
+    "financial",
+    "lora",
+    "peft",
+    "fine-tuned",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:Finance-Alpaca",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4446548488,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.5 Explained: Architecture, Upgrades Over Qwen 3 ... - Medium",
+      "url": "https://medium.com/data-science-in-your-pocket/qwen-3-5-explained-architecture-upgrades-over-qwen-3-benchmarks-and-real-world-use-cases-af38b01e9888",
+      "snippet": "Qwen 3.5 is the \"native multimodal agent\" generation of the Qwen family: it&#x27;s built to see, read, code, browse, and plan like an all‑in‑one AI worker rather than \"just\" a chat model."
+    },
+    {
+      "title": "Qwen/Qwen3-32B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-32B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Qwen3.5-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.5-27b",
+      "snippet": "The Qwen3.5 27B native vision-language Dense model incorporates a linear attention mechanism, delivering fast response times while balancing inference speed and performance. Its overall capabilities are comparable to those of the Qwen3.5-122B-A10B."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.09388",
+      "snippet": "For the base model baselines, we compare the Qwen3 series base models with the Qwen2.5 base models (Yang et al., 2024b) and other leading open-source base models, including DeepSeek-V3 Base (Liu et al., 2024a), Gemma-3 (Team et al., 2025), Llama-3 (Dubey et al., 2024), and Llama-4 (Meta-AI, 2025) series base models, in terms of scale of parameters."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-3MPER0RR-abliterated-i1-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-3mper0rr-abliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-3MPER0RR-abliterated-i1-GGUF",
+  "created_at": "2026-09-02T14:46:42.000Z",
+  "updated_at": "2026-09-02T16:33:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:3MPER0RR/Qwen3.8-27B-3MPER0RR-abliterated",
+    "base_model:quantized:3MPER0RR/Qwen3.8-27B-3MPER0RR-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 258864154624,
+  "storage_human": "258.9 GB",
+  "base_model": "3MPER0RR/Qwen3.8-27B-3MPER0RR-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.8-27B-3MPER0RR-obliterated-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-3MPER0RR-obliterated-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Qwen3.8-27B-3MPER0RR-obliterated-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-OBLITERATED-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-OBLITERATED-GGUF",
+      "snippet": "mradermacher / Qwen3.8-27B-OBLITERATED-GGUF like 6 Transformers GGUF Safetensors MLX English abliterated uncensored obliteratus qwen3 qwen3.8 red-team ai-safety-research conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: VRAM, Quants and the Template Trap",
+      "url": "https://locallyuncensored.com/blog/how-to-run-qwen-3-8-27b-locally.html",
+      "snippet": "How to Run Qwen 3.8 27B Locally: VRAM, Quants and the Template Trap The weights are out. Qwen 3.8 27B landed on Hugging Face on August 13, 2026, and the LICENSE file naming Apache 2.0 followed the next morning. The big Qwen 3.8 Max opened up a day earlier, but under Alibaba&#x27;s own qwen3.8-max licence rather than Apache, and at 2.4 trillion parameters it is a data center model anyway. The 27B is ..."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    }
+  ]
+}

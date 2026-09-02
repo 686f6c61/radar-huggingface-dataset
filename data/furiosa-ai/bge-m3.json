@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "furiosa-ai/bge-m3",
+  "slug": "furiosa-ai-bge-m3",
+  "author": "furiosa-ai",
+  "url": "https://huggingface.co/furiosa-ai/bge-m3",
+  "created_at": "2026-08-31T15:30:57.000Z",
+  "updated_at": "2026-09-02T14:40:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "furiosa-llm",
+  "languages": [],
+  "tags": [
+    "furiosa-llm",
+    "safetensors",
+    "xlm-roberta",
+    "furiosa-ai",
+    "bge-m3",
+    "sentence-transformers",
+    "feature-extraction",
+    "sentence-similarity",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 567754752,
+  "parameters_human": "567.8M",
+  "storage_bytes": 1193647115,
+  "storage_human": "1.2 GB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "furiosa-ai/bge-m3 · Hugging Face",
+      "url": "https://huggingface.co/furiosa-ai/bge-m3",
+      "snippet": "Overview BGE-M3 is a multilingual text-embedding model developed by BAAI on the XLM-RoBERTa encoder architecture. The upstream model unifies dense, sparse lexical, and multi-vector retrieval. Furiosa-LLM exposes its 1,024-dimensional, CLS-pooled dense embeddings for semantic search, retrieval, and similarity matching. Its intended use is the same as the upstream BAAI/bge-m3, and it is released ..."
+    },
+    {
+      "title": "BGE-M3 — FuriosaAI Developer Center 2026.4.0b14 documentation",
+      "url": "https://developer.furiosa.ai/v2026.4.0/en/furiosa_llm/models/bge-m3.html",
+      "snippet": "BGE-M3 # BGE-M3 is a multilingual text-embedding model developed by BAAI on the XLM-RoBERTa encoder architecture. The upstream model unifies dense, sparse lexical, and multi-vector retrieval. Furiosa-LLM exposes its 1,024-dimensional, CLS-pooled dense embeddings for semantic search, retrieval, and similarity matching."
+    },
+    {
+      "title": "BGE-M3 — BGE documentation",
+      "url": "https://bge-model.com/bge/bge_m3.html",
+      "snippet": "BGE-M3 # BGE-M3 is a compound and powerful embedding model distinguished for its versatility in: Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval. Multi-Linguality: It can support more than 100 working languages."
+    },
+    {
+      "title": "BAAI/bge-m3 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-m3",
+      "snippet": "BGE-M3 (paper, code) In this project, we introduce BGE-M3, which is distinguished for its versatility in Multi-Functionality, Multi-Linguality, and Multi-Granularity. Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval."
+    },
+    {
+      "title": "Supported Models — FuriosaAI Developer Center 2026.3.0 documentation",
+      "url": "https://developer.furiosa.ai/latest/en/furiosa_llm/supported_models.html",
+      "snippet": "Supported Models # FuriosaAI&#x27;s software stack supports a wide range of Transformer-based models available on the Hugging Face Hub. Below is a list of model architectures currently supported by Furiosa-LLM. If your model is based on any of these architectures, you can use Furiosa-LLM to compile and run the model efficiently on Furiosa&#x27;s NPUs. For many of these architectures, FuriosaAI also ..."
+    }
+  ]
+}
