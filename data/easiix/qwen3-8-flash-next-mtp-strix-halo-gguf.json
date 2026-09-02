@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "EasiiX/Qwen3.8-Flash-Next-MTP-Strix-Halo-GGUF",
+  "slug": "easiix-qwen3-8-flash-next-mtp-strix-halo-gguf",
+  "author": "EasiiX",
+  "url": "https://huggingface.co/EasiiX/Qwen3.8-Flash-Next-MTP-Strix-Halo-GGUF",
+  "created_at": "2026-08-27T19:58:10.000Z",
+  "updated_at": "2026-08-27T20:55:35.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "speculative-decoding",
+    "mtp",
+    "qwen4exp",
+    "strix-halo",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 8,
+  "downloads_30d": 3081,
+  "trending_score": 8,
+  "parameters": 3878549248,
+  "parameters_human": "3.88B",
+  "storage_bytes": 4137429088,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next-MTP-Strix-Halo-GGUF - Hugging Face",
+      "url": "https://huggingface.co/EasiiX/Qwen3.8-Flash-Next-MTP-Strix-Halo-GGUF",
+      "snippet": "Instructions to use EasiiX/Qwen3.8-Flash-Next-MTP-Strix-Halo-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "EasiiX/Qwen3.8-Flash-Next-MTP-Strix-Halo-GGUF at main",
+      "url": "https://huggingface.co/EasiiX/Qwen3.8-Flash-Next-MTP-Strix-Halo-GGUF/tree/main",
+      "snippet": "Instructions to use EasiiX/Qwen3.8-Flash-Next-MTP-Strix-Halo-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next on one AMD Strix Halo - GitHub",
+      "url": "https://github.com/abliter8-ai/qwen-3.8-next-flash-amd-strix-halo",
+      "snippet": "Architecture support: upstream llama.cpp maintainers and the model&#x27;s quantisation community (PR #27742, merged 2026-08-27). Strix-Halo kernel tuning, sparse-attention gather, MTP draft head, table-splitting utility and SSD streaming: Aristo94/EngramHalo.cpp."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. The model outperforms Claude-4.6-Opus (Max) and can run locally on devices with 75GB RAM /unified memory with no GPU VRAM required."
+    }
+  ]
+}

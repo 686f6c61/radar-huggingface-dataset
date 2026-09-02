@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "etiennebamas/qwen3-sft-feedback-small-dataset",
+  "slug": "etiennebamas-qwen3-sft-feedback-small-dataset",
+  "author": "etiennebamas",
+  "url": "https://huggingface.co/etiennebamas/qwen3-sft-feedback-small-dataset",
+  "created_at": "2026-09-01T21:19:02.000Z",
+  "updated_at": "2026-09-01T21:29:54.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:formalmathatepfl/qwen3-cpt",
+    "base_model:finetune:formalmathatepfl/qwen3-cpt",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308224,
+  "parameters_human": "308224",
+  "storage_bytes": 16392947623,
+  "storage_human": "16.4 GB",
+  "base_model": "formalmathatepfl/qwen3-cpt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "etiennebamas/qwen3-step32k-1e5 · Hugging Face",
+      "url": "https://huggingface.co/etiennebamas/qwen3-step32k-1e5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "etiennebamas/qwen3-lr-2-e-5 · Hugging Face",
+      "url": "https://huggingface.co/etiennebamas/qwen3-lr-2-e-5",
+      "snippet": "Qwen3-2_e_5 This model is a fine-tuned version of formalmathatepfl/qwen3-cpt on the sft dataset."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The pre-training process for Qwen3 utilizes a large-scale dataset consisting of approximately 36 trillion tokens, curated to ensure linguistic and domain diversity. To efficiently expand the training data, we employ a multi-modal approach: Qwen2.5-VL (Bai et al., 2025) is finetuned to extract text from extensive PDF documents. We also generate synthetic data using domain-specific models: Qwen2 ..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.09388",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    }
+  ]
+}

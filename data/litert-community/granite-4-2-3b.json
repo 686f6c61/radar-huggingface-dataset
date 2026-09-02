@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "litert-community/granite-4.2-3b",
+  "slug": "litert-community-granite-4-2-3b",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/granite-4.2-3b",
+  "created_at": "2026-08-31T03:17:41.000Z",
+  "updated_at": "2026-09-01T21:32:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "litertlm",
+    "on-device",
+    "edge",
+    "granite",
+    "reasoning",
+    "text-generation",
+    "base_model:ibm-granite/granite-4.2-3b",
+    "base_model:finetune:ibm-granite/granite-4.2-3b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 41,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5952331616,
+  "storage_human": "6.0 GB",
+  "base_model": "ibm-granite/granite-4.2-3b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/granite-4.2-3b · Hugging Face",
+      "url": "https://huggingface.co/litert-community/granite-4.2-3b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Granite 4.2 - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 is a family of dense reasoning language models available in three sizes: 3B, 8B, and 30B parameters. Granite 4.2 introduces native reasoning (thinking) capabilities, allowing models to perform step-by-step chain-of-thought reasoning before producing final answers."
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-4.2-language-models · GitHub",
+      "url": "https://github.com/ibm-granite/granite-4.2-language-models",
+      "snippet": "The Granite 4.2 familiy features dense decoder-only architectures in three sizes — 3B, 8B, and 30B, with quantized variants per model size. The Granite 4.2 dense models are post-trained on top of Granite 4.1 base models. Please refer to the Granite 4.1 blog for details on the pre-training phase."
+    },
+    {
+      "title": "ibm-granite (IBM Granite) - Hugging Face",
+      "url": "https://huggingface.co/ibm-granite",
+      "snippet": "Granite 4.1 LLMs: How They&#x27;re Built ... Granite 4.0 3B Vision: Compact Multimodal Intelligence for Enterprise Documents ... What&#x27;s New in Mellea 0.4.0 + Granite Libraries Release ... Granite 4.0 1B Speech: Compact, Multilingual, and Built for the Edge ... Granite 4.0 Nano: Just how small can you go?"
+    },
+    {
+      "title": "granite-4.2-3b: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/granite-4.2-3b-ibm-granite",
+      "snippet": "Choose granite-4.2-3b for substantially more capable reasoning, coding, multilingual dialogue, and tool-use behavior. Choose granite-4.0-1b when the smallest footprint and lowest serving cost take priority over reasoning quality; it is a lightweight instruct model that uses supervised fine-tuning, reinforcement learning, and model merging."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "cooler8/yejin-korean-3b-v1-dpo-gguf",
+  "slug": "cooler8-yejin-korean-3b-v1-dpo-gguf",
+  "author": "cooler8",
+  "url": "https://huggingface.co/cooler8/yejin-korean-3b-v1-dpo-gguf",
+  "created_at": "2026-09-01T23:59:34.000Z",
+  "updated_at": "2026-09-02T00:00:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "gguf",
+    "korean",
+    "causal-lm",
+    "llama",
+    "yejin",
+    "8xH200",
+    "ko",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2910916608,
+  "parameters_human": "2.91B",
+  "storage_bytes": 7589061600,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cooler8/yejin-korean-1b-v8 at main - Hugging Face",
+      "url": "https://huggingface.co/cooler8/yejin-korean-1b-v8/tree/main",
+      "snippet": "cooler8 / yejin-korean-1b-v8 like 0 Text Generation Safetensors Korean llama korean causal-lm yejin pretraining 1b License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main yejin-korean-1b-v8 3.74 GB Ctrl+K Ctrl+K 1 contributor History:3 commits cooler8 Upload README.md with huggingface_hub c61d409 verifiedabout 5 hours ago .gitattributes Safe 1.52 kBinitial ..."
+    },
+    {
+      "title": "cooler8/yejin-korean-1b-v8 · Hugging Face",
+      "url": "https://huggingface.co/cooler8/yejin-korean-1b-v8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Best Local AI Models by VRAM: 8GB to 512GB (Aug 2026)",
+      "url": "https://www.modemguides.com/blogs/ai-infrastructure/best-local-ai-models-by-vram",
+      "snippet": "The pick updated: GLM-5.2 replaces GLM-5.1 as the open-weight flagship worth housing — 744B total with 40B active per Z.ai&#x27;s documentation, a solid 1M-token context, and the strongest results of any plain-MIT model on the aggregate boards, with official weights and a community GGUF ladder. Plan around 410-420GB at Q4, family-scaled."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

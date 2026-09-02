@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Priyanka221105/text2sql-qwen2.5-duckdb",
+  "slug": "priyanka221105-text2sql-qwen2-5-duckdb",
+  "author": "Priyanka221105",
+  "url": "https://huggingface.co/Priyanka221105/text2sql-qwen2.5-duckdb",
+  "created_at": "2026-09-01T19:44:34.000Z",
+  "updated_at": "2026-09-01T19:58:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693946,
+  "storage_human": "15.2 GB",
+  "base_model": "unsloth/qwen2.5-coder-7b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ellbendls/Qwen-2.5-3b-Text_to_SQL · Hugging Face",
+      "url": "https://huggingface.co/Ellbendls/Qwen-2.5-3b-Text_to_SQL",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tulas/Qwen2.5-0.5B-Instruct-Text2Sql · Hugging Face",
+      "url": "https://huggingface.co/tulas/Qwen2.5-0.5B-Instruct-Text2Sql",
+      "snippet": "tulas / Qwen2.5-.5B-Instruct-Text2Sql like 0 Safetensors gretelai/synthetic_text_to_sql qwen2 License:agpl-3.0 Model card FilesFiles and versions Community 1 Edit model card"
+    },
+    {
+      "title": "GitHub - Vish2503/Text2SQL-Qwen: Text2SQL run locally using Qwen2.5 ...",
+      "url": "https://github.com/Vish2503/Text2SQL-Qwen",
+      "snippet": "Text2SQL-Qwen is a local Text-to-SQL application powered by Qwen2.5-Coder-7B-Instruct-GPTQ-Int4. It converts natural language questions into executable SQL queries, integrates directly with PostgreSQL, and features a FastAPI backend with a Streamlit-based UI for interactive use."
+    },
+    {
+      "title": "Text2SQL-Qwen/model_api.py at main - GitHub",
+      "url": "https://github.com/Vish2503/Text2SQL-Qwen/blob/main/model_api.py",
+      "snippet": "Text-2-SQL run locally using Qwen2.5-Coder-7B-Instruct-GPTQ-Int4 from huggingface - Vish2503/Text2SQL-Qwen"
+    },
+    {
+      "title": "qwen2.5 - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, a range of base language models and instruction-tuned models are released, with sizes ranging from 0.5 to 72 billion parameters."
+    }
+  ]
+}

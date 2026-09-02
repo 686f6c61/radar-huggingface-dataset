@@ -5,7 +5,7 @@
   "author": "mahadev9",
   "url": "https://huggingface.co/mahadev9/Qwen3.5-0.8B-fp8",
   "created_at": "2026-08-30T16:47:04.000Z",
-  "updated_at": "2026-08-30T16:49:03.000Z",
+  "updated_at": "2026-09-01T17:35:29.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 7,
+  "downloads_30d": 10,
   "trending_score": 0,
   "parameters": 752393024,
   "parameters_human": "752.4M",

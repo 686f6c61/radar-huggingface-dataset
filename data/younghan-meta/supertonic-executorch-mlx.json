@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "younghan-meta/Supertonic-ExecuTorch-MLX",
+  "slug": "younghan-meta-supertonic-executorch-mlx",
+  "author": "younghan-meta",
+  "url": "https://huggingface.co/younghan-meta/Supertonic-ExecuTorch-MLX",
+  "created_at": "2026-09-01T21:11:35.000Z",
+  "updated_at": "2026-09-01T21:11:42.000Z",
+  "license": "bigscience-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "executorch",
+  "languages": [],
+  "tags": [
+    "executorch",
+    "mlx",
+    "text-to-speech",
+    "macos",
+    "apple-silicon",
+    "base_model:Supertone/supertonic-3",
+    "base_model:quantized:Supertone/supertonic-3",
+    "license:bigscience-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 198747136,
+  "storage_human": "199 MB",
+  "base_model": "Supertone/supertonic-3",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "executorch/examples/models/supertonic at main - GitHub",
+      "url": "https://github.com/pytorch/executorch/tree/main/examples/models/supertonic",
+      "snippet": "This example exports Supertonic 3 to one dynamic FP16 ExecuTorch program and performs one-shot text-to-speech synthesis with the MLX delegate. Run all commands from the ExecuTorch repository root. Keep downloaded assets and generated programs outside the source tree: The runner writes a mono PCM16 ..."
+    },
+    {
+      "title": "executorch/examples/models/supertonic/README.md at main · pytorch ...",
+      "url": "https://github.com/pytorch/executorch/blob/main/examples/models/supertonic/README.md",
+      "snippet": "Supertonic on ExecuTorch MLX This example exports Supertonic 3 to one dynamic FP16 ExecuTorch program and performs one-shot text-to-speech synthesis with the MLX delegate."
+    },
+    {
+      "title": "younghan-meta (Young Han) - Hugging Face",
+      "url": "https://huggingface.co/younghan-meta/models",
+      "snippet": "On-device AI, ExecuTorch, PyTorch updated a model about 3 hours ago"
+    },
+    {
+      "title": "Supertonic 3 — Lightning-Fast, On-Device, Multilingual TTS",
+      "url": "https://supertonic3.github.io/",
+      "snippet": "99M-parameter open-weight TTS running locally on CPU. 31 languages. No GPU, no cloud, no API."
+    },
+    {
+      "title": "Running PyTorch Models on Apple Silicon GPUs with the ExecuTorch MLX ...",
+      "url": "https://pytorch.org/blog/running-pytorch-models-on-apple-silicon-gpus-with-the-executorch-mlx-delegate/",
+      "snippet": "The MLX delegate is a new ExecuTorch backend that compiles and runs PyTorch models on Apple Silicon GPUs. You export your model using the standard ExecuTorch pipeline, and the delegate handles the rest: partitioning the graph, serializing it into an optimized format, and dispatching operations to MLX&#x27;s Metal GPU kernels at runtime."
+    }
+  ]
+}

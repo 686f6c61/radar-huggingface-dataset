@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "2320032466hchy/llama31_8b_inst_hc_ssss_n32_r1_ref_ans_sft",
+  "slug": "2320032466hchy-llama31_8b_inst_hc_ssss_n32_r1_ref_ans_sft",
+  "author": "2320032466hchy",
+  "url": "https://huggingface.co/2320032466hchy/llama31_8b_inst_hc_ssss_n32_r1_ref_ans_sft",
+  "created_at": "2026-09-01T18:32:23.000Z",
+  "updated_at": "2026-09-01T19:04:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16077774057,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you&#x27;re into with the people who get you."
+    },
+    {
+      "title": "meta-llama/Llama-3.1-8B · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "meta-llama/Llama-3.1-8B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+      "snippet": "Run 15,000+ Models Instantly Inference Providers let you run inference on thousands of models served by our partners using a simple, unified, OpenAI-compatible serverless API (). meta-llama/Llama-3.1-8B-Instruct is supported by the following Inference Providers:"
+    },
+    {
+      "title": "llama3:8b",
+      "url": "https://ollama.com/library/llama3:8b",
+      "snippet": "Meta Llama 3, a family of models developed by Meta Inc. are new state-of-the-art , available in both 8B and 70B parameter sizes (pre-trained or instruction-tuned)."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

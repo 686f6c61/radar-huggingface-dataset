@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "zurichquants/OpenThinkerAgent-8B-RL",
+  "slug": "zurichquants-openthinkeragent-8b-rl",
+  "author": "zurichquants",
+  "url": "https://huggingface.co/zurichquants/OpenThinkerAgent-8B-RL",
+  "created_at": "2026-09-01T23:46:24.000Z",
+  "updated_at": "2026-09-01T23:46:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "agents",
+    "terminal",
+    "code",
+    "software-engineering",
+    "reinforcement-learning",
+    "rl",
+    "conversational",
+    "dataset:open-thoughts/OpenThoughts-Agent-RL-5K",
+    "dataset:open-thoughts/OpenThoughts-Agent-SFT-ColdStartForRL-10K",
+    "base_model:open-thoughts/OpenThinkerAgent-8B-ColdStartSFTForRL",
+    "base_model:finetune:open-thoughts/OpenThinkerAgent-8B-ColdStartSFTForRL",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939478,
+  "storage_human": "16.4 GB",
+  "base_model": "open-thoughts/OpenThinkerAgent-8B-ColdStartSFTForRL",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zurichquants/OpenThinkerAgent-8B-ColdStartSFTForRL · Hugging Face",
+      "url": "https://huggingface.co/zurichquants/OpenThinkerAgent-8B-ColdStartSFTForRL",
+      "snippet": "OpenThinkerAgent-8B-ColdStartSFTForRL is the cold-start, pre-RL base of the OpenThoughts-Agent 8B SFT→RL recipe. It is post-trained from Qwen/Qwen3-8B with full-parameter SFT on the cold-start OpenThoughts-Agent-SFT-ColdStartForRL-10K dataset. Its purpose is to give the model the agentic interaction format and tool-use behaviour needed to make subsequent reinforcement learning stable; it is ..."
+    },
+    {
+      "title": "open-thoughts/OpenThinkerAgent-8B-RL · Hugging Face",
+      "url": "https://huggingface.co/open-thoughts/OpenThinkerAgent-8B-RL",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "open-thoughts/OpenThinkerAgent-8B-RL: Model synced from source: open ...",
+      "url": "https://dev.modelhub.org.cn/open-thoughts/OpenThinkerAgent-8B-RL",
+      "snippet": "OpenThinkerAgent-8B-RL OpenThoughts-Agent is an open-source effort to curate the best datasets for training agents. Our release includes datasets, models and our research codebase. OpenThinkerAgent-8B-RL is the final, RL-trained 8B agentic checkpoint of the OpenThoughts-Agent SFT→RL recipe."
+    },
+    {
+      "title": "GitHub - open-thoughts/OpenThoughts-Agent: Data recipes and robust ...",
+      "url": "https://github.com/open-thoughts/OpenThoughts-Agent",
+      "snippet": "Data recipes and robust infrastructure for training AI agents - open-thoughts/OpenThoughts-Agent"
+    },
+    {
+      "title": "OpenThinkerAgent-8B-ColdStartSFTForRL - FriendliAI",
+      "url": "https://friendli.ai/models/open-thoughts/OpenThinkerAgent-8B-ColdStartSFTForRL",
+      "snippet": "Its purpose is to give the model the agentic interaction format and tool-use behaviour needed to make subsequent reinforcement learning stable; it is then RL-trained to produce OpenThinkerAgent-8B-RL."
+    }
+  ]
+}

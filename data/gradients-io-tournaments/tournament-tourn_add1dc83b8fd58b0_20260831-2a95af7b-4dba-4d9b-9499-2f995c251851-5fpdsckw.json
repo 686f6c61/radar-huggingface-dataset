@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-2a95af7b-4dba-4d9b-9499-2f995c251851-5FpdSckw",
+  "slug": "gradients-io-tournaments-tournament-tourn_add1dc83b8fd58b0_20260831-2a95af7b-4dba-4d9b-9499-2f995c251851-5fpdsckw",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-2a95af7b-4dba-4d9b-9499-2f995c251851-5FpdSckw",
+  "created_at": "2026-09-01T21:18:56.000Z",
+  "updated_at": "2026-09-01T21:19:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1039104030,
+  "storage_human": "1.0 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_31f2e0fe36783f71_20260831 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_31f2e0fe36783f71_20260831-bc9d501a-b6a7-452c-8f36-cacfdc3ad455-5FW2Eaae",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gradients | Decentralised AI Training & Research",
+      "url": "https://www.gradients.io/app/research/tournament",
+      "snippet": "Decentralised AI Training & Research. > TOURNAMENTS View live, recent, and historical tournaments from Subnet 56"
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_0f7a1d3f6b5b66f9_20260727 ...",
+      "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_0f7a1d3f6b5b66f9_20260727-0517e5a4-fb08-4e46-8b3e-a273c6b85528-5FpdSckw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Damacol/gradients-io-tournaments-tournament-tourn ... - GitHub",
+      "url": "https://github.com/Damacol/gradients-io-tournaments-tournament-tourn_21bd66f314a8ee19_20260416-c2bc0bc0-73df-4f9e-b421-b4d4baa7",
+      "snippet": "Why This Exists Most AI platforms trade your data for convenience. They track, filter, and restrict. Venice flips the script: your prompts stay local, your ideas aren&#x27;t policed, and you get fast, unfiltered responses without the corporate overhead."
+    },
+    {
+      "title": "gradients-io-tournaments/tournament-tourn_4007fa541dfa6e77_20260604 ...",
+      "url": "https://friendli.ai/models/gradients-io-tournaments/tournament-tourn_4007fa541dfa6e77_20260604-8a001650-21d9-4e7e-86b3-65341ba39286-5FpdSckw",
+      "snippet": "Run gradients-io-tournaments/tournament-tourn_4007fa541dfa6e77_20260604-8a001650-21d9-4e7e-86b3-65341ba39286-5FpdSckw with FriendliAI inference."
+    }
+  ]
+}

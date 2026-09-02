@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fromR/Krea-2-Turbo-FP8_for_AmuseAI",
+  "slug": "fromr-krea-2-turbo-fp8_for_amuseai",
+  "author": "fromR",
+  "url": "https://huggingface.co/fromR/Krea-2-Turbo-FP8_for_AmuseAI",
+  "created_at": "2026-09-01T01:44:34.000Z",
+  "updated_at": "2026-09-01T21:32:33.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "amuseai",
+    "python-diffusers",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17656139476,
+  "storage_human": "17.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · unsloth/Krea-2-Turbo-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/unsloth/Krea-2-Turbo-FP8/blob/main/README.md",
+      "snippet": "Krea 2 is a text-to-image diffusion model that generates images from natural-language text descriptions. The model is designed to support creative, commercial, developer, and research use cases, including image generation, concepting, design exploration, visual production workflows, and integration into applications and creative tools."
+    },
+    {
+      "title": "Krea2 Turbo_FP8 - Krea 2 TURBO | Krea 2 Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2723583/krea2-turbofp8",
+      "snippet": "Krea 2 OSS - Optimized FP8 Weights (Turbo) This repository provides an optimized FP8 (float8_e4m3fn) weight-only quantized version of the newly released Krea 2 OSS (Turbo) transformer. This optimization reduces the model size from the original 24.76 GiB (BF16) down to 12.01 GiB, making it highly accessible and runnable on standard consumer hardware (such as 16GB and 24GB GPUs) without ..."
+    },
+    {
+      "title": "unsloth/Krea-2-Turbo-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/unsloth/Krea-2-Turbo-FP8/tree/main/samples",
+      "snippet": "Instructions to use unsloth/Krea-2-Turbo-FP8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use unsloth/Krea-2-Turbo-FP8 with Diffusers:"
+    },
+    {
+      "title": "Krea 2 Turbo Official Comfy-Org Checkpoints (Krea2)",
+      "url": "https://civitai.com/models/2726029/krea-2-turbo-official-comfy-org-checkpoints-krea2",
+      "snippet": "Krea 2 is a text-to-image diffusion model that generates images from natural-language text descriptions. The model is designed to support creative, commercial, developer, and research use cases, including image generation, concepting, design exploration, visual production workflows, and integration into applications and creative tools."
+    },
+    {
+      "title": "Krea 2 Turbo (FP8) on RTX 3090 via ComfyUI: 8-Step Text-to-Image, with ...",
+      "url": "https://smeltcore.com/recipes/krea-2-rtx-3090/",
+      "snippet": "A local install of Krea 2 Turbo — the distilled, few-step variant of Krea AI&#x27;s from-scratch aesthetic-first text-to-image foundation model (released 2026-06-23) — running 8-step text-to-image at up to 1280×720 on a 24GB RTX 3090, entirely inside native ComfyUI with no custom nodes."
+    }
+  ]
+}

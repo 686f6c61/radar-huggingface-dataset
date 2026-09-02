@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "qbz506/p-s-hord-m3",
+  "slug": "qbz506-p-s-hord-m3",
+  "author": "qbz506",
+  "url": "https://huggingface.co/qbz506/p-s-hord-m3",
+  "created_at": "2026-09-01T20:51:00.000Z",
+  "updated_at": "2026-09-01T21:15:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "sa",
+    "en"
+  ],
+  "tags": [
+    "prabhasa",
+    "hord",
+    "sanskrit",
+    "paninian",
+    "mamba",
+    "ablation",
+    "research-checkpoint",
+    "sa",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12710110677,
+  "storage_human": "12.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qbz506 (SS) - Hugging Face",
+      "url": "https://huggingface.co/qbz506/models",
+      "snippet": "Sort: Recently updated . qbz506/nyaya-deepseek-8b-stage1-full. 8B • Updated about 5 hours ago. qbz506/nyaya-deepseek-8b-stage1"
+    },
+    {
+      "title": "qbz506 (SS) - Hugging Face",
+      "url": "https://huggingface.co/qbz506/datasets",
+      "snippet": "Sort: Recently updated. qbz506/psalm-corpora. Viewer • Updated about 4 hours ago • 427k. qbz506/pramana-nyaya-stage1. Viewer • Updated 5 days ago • 55 • 44 • 1"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Our latest series of Gemini models combine frontier intelligence with action. Built to help you execute complex, multi-step workflows."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: GLM-5.3-Flash by Z.ai on Aug 26 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

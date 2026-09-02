@@ -5,15 +5,16 @@
   "author": "basically-ai",
   "url": "https://huggingface.co/basically-ai/Pebble-10M-Chat",
   "created_at": "2026-08-31T01:25:49.000Z",
-  "updated_at": "2026-09-01T00:36:21.000Z",
+  "updated_at": "2026-09-01T21:26:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
-  "library": null,
+  "library": "transformers",
   "languages": [
     "en"
   ],
   "tags": [
+    "transformers",
     "safetensors",
     "pebble_10m",
     "pebble",
@@ -31,6 +32,7 @@
     "base_model:basically-ai/Pebble-10M",
     "base_model:finetune:basically-ai/Pebble-10M",
     "license:apache-2.0",
+    "endpoints_compatible",
     "region:us"
   ],
   "likes": 9,

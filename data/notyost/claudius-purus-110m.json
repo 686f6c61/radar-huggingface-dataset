@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "notyost/claudius-purus-110m",
+  "slug": "notyost-claudius-purus-110m",
+  "author": "notyost",
+  "url": "https://huggingface.co/notyost/claudius-purus-110m",
+  "created_at": "2026-09-02T00:09:25.000Z",
+  "updated_at": "2026-09-02T00:09:34.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "grc",
+    "la",
+    "akk",
+    "sux",
+    "hbo",
+    "lzh"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "ancient-languages",
+    "classics",
+    "time-capsule",
+    "pre-common-era",
+    "from-scratch",
+    "text-generation",
+    "grc",
+    "la",
+    "akk",
+    "sux",
+    "hbo",
+    "lzh",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 111007488,
+  "parameters_human": "111.0M",
+  "storage_bytes": 444044928,
+  "storage_human": "444 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claude Opus &#92; Anthropic",
+      "url": "https://www.anthropic.com/claude/opus",
+      "snippet": "Claude Opus 5 is a strong agentic coding model built for long-running, multi-step work. It deeply understands your codebase, holds the thread across complex tasks, and pins down requirements for feature development and bug-fixing more effectively than Opus 4.8."
+    },
+    {
+      "title": "Claude Opus 4.6 Breakthrough: What It Did and Why It Matters",
+      "url": "https://ucstrategies.com/news/claude-opus-4-6-just-did-what-no-ai-model-has-ever-done-before/",
+      "snippet": "Claude Opus 4.6 breakthrough explained: what the model reportedly achieved, why it matters, and what it could change for AI work."
+    },
+    {
+      "title": "Claude Opus 4.6: Complete Guide to Anthropic&#x27;s AI Model",
+      "url": "https://www.dplooy.com/blog/claude-opus-46-complete-guide-to-anthropics-ai-model",
+      "snippet": "Discover everything about Claude Opus 4.6, Anthropic&#x27;s most advanced AI model with 1M token context, agent teams, and industry-leading benchmarks. Learn how Opus 4.6 outperforms GPT-5.2 and Gemini 3 Pro across coding, reasoning, and enterprise workflows in this complete guide."
+    },
+    {
+      "title": "Claude Opus 4.6: Benchmarks, 1M Context & Coding Guide (2026)",
+      "url": "https://philippdubach.com/posts/claude-opus-4.6-anthropics-new-flagship-ai-model-for-agentic-coding/",
+      "snippet": "Anthropic just released Claude Opus 4.6, the latest frontier AI model in the Claude family. It&#x27;s a big upgrade over Opus 4.5 and probably the most agentic-focused LLM release from any lab this year. Key upgrades: better agentic AI coding capabilities (plans more carefully, sustains longer tasks, catches its own mistakes), a 1M token context window (a first for Opus-class models), and 128K ..."
+    },
+    {
+      "title": "Comparison of AI Models across Intelligence, Performance, and Price ...",
+      "url": "https://artificialanalysis.ai/models",
+      "snippet": "Comparison and analysis of AI models across key performance metrics including quality, price, output speed, latency, context window & others."
+    }
+  ]
+}

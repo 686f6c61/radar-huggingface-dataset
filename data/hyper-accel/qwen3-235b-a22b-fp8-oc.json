@@ -5,7 +5,7 @@
   "author": "hyper-accel",
   "url": "https://huggingface.co/hyper-accel/Qwen3-235B-A22B-FP8-OC",
   "created_at": "2026-08-31T19:46:52.000Z",
-  "updated_at": "2026-08-31T21:54:08.000Z",
+  "updated_at": "2026-09-01T03:29:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 235793608192,
   "parameters_human": "235.79B",

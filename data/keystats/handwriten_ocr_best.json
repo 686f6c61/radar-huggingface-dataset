@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "keystats/handwriten_ocr_best",
+  "slug": "keystats-handwriten_ocr_best",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/handwriten_ocr_best",
+  "created_at": "2026-09-02T00:45:44.000Z",
+  "updated_at": "2026-09-02T00:47:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836608,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "keystats/handwriten_ocr · Hugging Face",
+      "url": "https://huggingface.co/keystats/handwriten_ocr",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Handwriting OCR 2026: GPT, Claude, Gemini and TrOCR Compared",
+      "url": "https://www.codesota.com/ocr/best-for-handwriting",
+      "snippet": "Compare handwriting OCR models on IAM CER, scanned notes, forms, cursive writing, bounding boxes, and implementation paths."
+    },
+    {
+      "title": "Best LLM for OCR (2026): GLM-OCR Wins at 94.62 — 7 Models Ranked",
+      "url": "https://ofox.ai/blog/best-ai-model-for-ocr-2026/",
+      "snippet": "Which AI model has the best OCR accuracy in 2026? On the OmniDocBench benchmark, specialized models lead: GLM-OCR scores 94.62 and PaddleOCR-VL hits 94.50. Among frontier LLMs, Gemini 3.1 Pro leads at 90.33, ahead of GPT-5.4 at roughly 85.8. The best choice depends on your use case — frontier LLMs handle reasoning alongside extraction, while specialized models maximize raw accuracy."
+    },
+    {
+      "title": "OCR and Document AI Leaderboard 2026: Top Models Ranked",
+      "url": "https://awesomeagents.ai/leaderboards/ocr-document-ai-leaderboard/",
+      "snippet": "OCR and Document AI Leaderboard 2026: Top Models Ranked Rankings of AI models on OCR and document understanding benchmarks - OCRBench, DocVQA, InfographicVQA, ChartQA, TextVQA, and MMMU-Pro. Covers GPT-4.1 Vision, Claude 4 Sonnet/Opus, Gemini 2.5 Pro, Qwen2.5-VL, InternVL3, Mistral OCR, and more."
+    },
+    {
+      "title": "Best AI handwriting OCR in 2026: nine tools tested",
+      "url": "https://www.handwritingocr.com/blog/best-ai-handwriting-ocr",
+      "snippet": "The best AI handwriting OCR in 2026: a benchmark of nine tools We ran the same handwritten sample through nine handwriting OCR tools in 2026, from purpose-built services to general LLM vision and open-source engines."
+    }
+  ]
+}

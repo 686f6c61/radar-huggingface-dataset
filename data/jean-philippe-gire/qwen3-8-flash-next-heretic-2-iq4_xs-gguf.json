@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jean-philippe-gire/Qwen3.8-Flash-Next-heretic-2-IQ4_XS-GGUF",
+  "slug": "jean-philippe-gire-qwen3-8-flash-next-heretic-2-iq4_xs-gguf",
+  "author": "jean-philippe-gire",
+  "url": "https://huggingface.co/jean-philippe-gire/Qwen3.8-Flash-Next-heretic-2-IQ4_XS-GGUF",
+  "created_at": "2026-09-01T20:51:10.000Z",
+  "updated_at": "2026-09-01T20:51:34.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen4exp",
+    "heretic",
+    "quantized",
+    "image-text-to-text",
+    "base_model:trohrbaugh/Qwen3.8-Flash-Next-heretic-2",
+    "base_model:quantized:trohrbaugh/Qwen3.8-Flash-Next-heretic-2",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 125310390336,
+  "storage_human": "125.3 GB",
+  "base_model": "trohrbaugh/Qwen3.8-Flash-Next-heretic-2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next-Uncensored-IQ4XS-NGQ4-GGUF - Hugging Face",
+      "url": "https://huggingface.co/cygnal/Qwen3.8-Flash-Next-Uncensored-IQ4XS-NGQ4-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Qwen4 architecture preview with a 125B-parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token."
+    },
+    {
+      "title": "GitHub - blazux/qwen3.8-Flash-DGX: recipe for running Qwen3.8-Flash ...",
+      "url": "https://github.com/blazux/qwen3.8-Flash-DGX",
+      "snippet": "Run Qwen3.8-Flash-Next — a ~176B-parameter model (125B main + 51B n-gram, 6B active) — on one NVIDIA DGX Spark / ASUS GX10 with vLLM, at full prefill speed, with MTP speculative decoding, working prefix caching, deterministic greedy decoding, and up to 500k tokens of context."
+    }
+  ]
+}

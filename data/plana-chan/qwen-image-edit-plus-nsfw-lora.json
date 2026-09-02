@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Plana-Chan/qwen-image-edit-plus-nsfw-lora",
+  "slug": "plana-chan-qwen-image-edit-plus-nsfw-lora",
+  "author": "Plana-Chan",
+  "url": "https://huggingface.co/Plana-Chan/qwen-image-edit-plus-nsfw-lora",
+  "created_at": "2026-09-01T23:38:26.000Z",
+  "updated_at": "2026-09-01T23:38:26.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "text-to-image",
+    "nsfw",
+    "image-editing",
+    "qwen-image-edit",
+    "not-for-all-audiences",
+    "image-to-image",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:adapter:Qwen/Qwen-Image-Edit-2511",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 590058864,
+  "storage_human": "590 MB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen Image Edit 2511 Custom Shift Fix Version (NSFW Included)",
+      "url": "https://civitai.com/models/2254346/qwen-image-edit-2511-custom-shift-fix-versionnsfw-included",
+      "snippet": "A Workflow uses the latest Qwen Image Edit 2511. Edit images with words. With a custom image shift fix. All the model details are within the workfl..."
+    },
+    {
+      "title": "Qwen 2511 Image Edit AIO Rapid - v23-NSFW | TensorHub Art",
+      "url": "https://tensorhub.art/models/957769219347343813",
+      "snippet": "Download Qwen 2511 Image Edit AIO Rapid - free CHECKPOINT Qwen-Image-Edit AI model on TENSORHUB ART. QWEN IMAGE EDIT. By Adcom"
+    },
+    {
+      "title": "qwen-image-edit-plus-lora vs Qwen-Image-NSFW — comparison, examples ...",
+      "url": "https://www.aimodels.fyi/models/compare/qwen-image-edit-plus-lora-qwen-vs-qwen-image-nsfw-starsfriday",
+      "snippet": "Compare qwen-image-edit-plus-lora (by qwen on replicate) and Qwen-Image-NSFW (by starsfriday on huggingFace). Side-by-side overview, example outputs, and use cases."
+    },
+    {
+      "title": "Qwen-Image NSFW LoRA Notes | Civitai",
+      "url": "https://civitai.com/articles/18798/qwen-image-nsfw-lora-notes",
+      "snippet": "Qwen-Image ( 20B parameters) struggles with NSFW generation - Flux.1 has 12B parameters. LoRA fine-tuning ( 10-20M trainable parameters, rank 128) improves anatomy generation. A small dataset of 100-300 images won&#x27;t do it. A general-purpose NSFW LoRA requires a minimum of 1,500+ handpicked, high-quality images, carefully captioned, and trained with a minimum rank of 128. For specialized ..."
+    },
+    {
+      "title": "Qwen AI Image Editor",
+      "url": "https://www.qwenaiimageeditor.com/",
+      "snippet": "Free Qwen AI image editor tutorials, gguf installs, safetensor pipelines, NSFW toggles, ControlNet, inpaint, VRAM tips."
+    }
+  ]
+}

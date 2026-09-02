@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AnshumanShukla/Gliomax2",
+  "slug": "anshumanshukla-gliomax2",
+  "author": "AnshumanShukla",
+  "url": "https://huggingface.co/AnshumanShukla/Gliomax2",
+  "created_at": "2026-09-01T18:46:32.000Z",
+  "updated_at": "2026-09-01T18:58:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 391881099,
+  "storage_human": "392 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnshumanShukla (Shukla) - Hugging Face",
+      "url": "https://huggingface.co/AnshumanShukla",
+      "snippet": "Sort: Recently updated. Sleeping . Gliomax Docker. 🌖. Check if the API is running. AnshumanShukla Apr 4. Sleeping . Agents. First Agent Template"
+    },
+    {
+      "title": "Meta says its AI model breached a third-party company during testing ...",
+      "url": "https://www.cbsnews.com/news/meta-says-ai-model-breached-third-party-company/",
+      "snippet": "Tech giant Meta revealed Wednesday that one of its artificial intelligence models hacked another organization during testing, the third time in recent weeks that an AI model has improperly ..."
+    },
+    {
+      "title": "A precise ensemble machine learning framework for improved glioma ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666990026000352",
+      "snippet": "Second, while this study relies on discrete mutation data, analogous challenges exist in clinical deployments of imaging-based AI, where imaging acquisition variability across different MRI scanners frequently leads to \"shortcut learning\"—a phenomenon where the model learns spurious, dataset-specific correlations (like the watermark of a ..."
+    },
+    {
+      "title": "GitHub - Anshuman-official/AI-Model",
+      "url": "https://github.com/Anshuman-official/AI-Model",
+      "snippet": "Contribute to Anshuman-official/AI-Model development by creating an account on GitHub."
+    },
+    {
+      "title": "Artificial intelligence models in the surgical planning of low-grade ...",
+      "url": "https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2025.1672289/pdf",
+      "snippet": "Applications included tractography, tumor segmentation, neuro-navigation, optical biopsy, and surgical decision modeling. Details regarding the included studies, segmentation model, intraoperative AI, and surgical recommendation models are provided (Tables 1 -4)."
+    }
+  ]
+}

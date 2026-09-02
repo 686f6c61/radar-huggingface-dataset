@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "abhijeetknayak/rl_course_vizdoom_health_gathering_supreme",
+  "slug": "abhijeetknayak-rl_course_vizdoom_health_gathering_supreme",
+  "author": "abhijeetknayak",
+  "url": "https://huggingface.co/abhijeetknayak/rl_course_vizdoom_health_gathering_supreme",
+  "created_at": "2026-09-01T22:50:08.000Z",
+  "updated_at": "2026-09-01T22:50:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "tensorboard",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133131577,
+  "storage_human": "133 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facepalm0 / rl_course_vizdoom_health_gathering_supreme",
+      "url": "https://insights-db.paloaltonetworks.com/models/Facepalm0/rl_course_vizdoom_health_gathering_supreme/f511cc40150a01302d1da9e0a38d6859da8a86bf/overview",
+      "snippet": "Discover potential threats in the Facepalm0 / rl_course_vizdoom_health_gathering_supreme model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "nomad-ai/rl_course_vizdoom_health_gathering_supreme · Hugging Face",
+      "url": "https://huggingface.co/nomad-ai/rl_course_vizdoom_health_gathering_supreme",
+      "snippet": "A (n) APPO model trained on the doom_health_gathering_supreme environment."
+    },
+    {
+      "title": "unit8_part2.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/huggingface/deep-rl-class/blob/master/notebooks/unit8/unit8_part2.ipynb",
+      "snippet": "The library enables the training of agents directly from the screen pixels in a number of scenarios, including team deathmatch, shown in the video below. Because the ViZDoom environment is based on a game the was created in the 90s, it can be run on modern hardware at accelerated speeds, allowing us to learn complex AI behaviors fairly quickly."
+    },
+    {
+      "title": "rl_course_vizdoom_health_gathering_supreme - Hugging Face",
+      "url": "https://huggingface.co/mnneely/rl_course_vizdoom_health_gathering_supreme",
+      "snippet": "To continue training with this model, use the train script corresponding to this environment: ... Note, you may have to adjust --train_for_env_steps to a suitably high number as the experiment will resume at the number of steps it concluded at."
+    },
+    {
+      "title": "HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-",
+      "url": "https://github.com/HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-",
+      "snippet": "Training with this model To continue training with this model, use the train script corresponding to this environment: ... Note, you may have to adjust --train_for_env_steps to a suitably high number as the experiment will resume at the number of steps it concluded at."
+    }
+  ]
+}

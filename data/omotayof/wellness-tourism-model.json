@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Omotayof/wellness-tourism-model",
+  "slug": "omotayof-wellness-tourism-model",
+  "author": "Omotayof",
+  "url": "https://huggingface.co/Omotayof/wellness-tourism-model",
+  "created_at": "2026-09-01T18:41:41.000Z",
+  "updated_at": "2026-09-01T19:59:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9043804,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Omotayof/wellness-tourism-customers · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Omotayof/wellness-tourism-customers",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nashharshan/tourism-wellness-model · Hugging Face",
+      "url": "https://huggingface.co/Nashharshan/tourism-wellness-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "(PDF) Smart Wellness Technology for Tourism Destination Based-on ...",
+      "url": "https://www.researchgate.net/publication/371194530_Smart_Wellness_Technology_for_Tourism_Destination_Based-on_Evolving_Tourist_Expectation_Model",
+      "snippet": "Smart Wellness Technology for Tourism Destination Based -on Evolving Tourist Expectation Model Chalermchai P anyadee 1 P, Sansanee Krajangchom P"
+    },
+    {
+      "title": "AI-Driven Decision Making in Wellness Tourism: Understanding Consumer ...",
+      "url": "https://ieeexplore.ieee.org/document/10939052",
+      "snippet": "This study explores how Artificial Intelligence (AI) can enhance understanding of key factors in wellness tourism, focusing on attitudes, subjective norms, and behavioral intentions. Leveraging AI-driven data analytics, we analyze data from a sample of wellness tourists, employing structural equation modeling (SEM) to examine these factors&#x27; relationships. The findings demonstrate that AI can ..."
+    },
+    {
+      "title": "AI-powered smart tourism 2.0: A 10-year retrospective and updated model ...",
+      "url": "https://link.springer.com/article/10.1007/s12525-025-00847-y",
+      "snippet": "The AI-powered smart tourism 2.0 model not only reflects the contemporary state of smart tourism but also serves as a guide for future research, policymaking, and industry practices in an increasingly digital, interconnected, and AI-integrated world."
+    }
+  ]
+}

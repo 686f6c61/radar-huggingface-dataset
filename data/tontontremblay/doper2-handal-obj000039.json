@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "TontonTremblay/doper2-handal-obj000039",
+  "slug": "tontontremblay-doper2-handal-obj000039",
+  "author": "TontonTremblay",
+  "url": "https://huggingface.co/TontonTremblay/doper2-handal-obj000039",
+  "created_at": "2026-09-02T01:01:09.000Z",
+  "updated_at": "2026-09-02T01:01:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 346109702,
+  "storage_human": "346 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TontonTremblay (jonathan) - Hugging Face",
+      "url": "https://huggingface.co/TontonTremblay/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 28 days ago ... published a dataset 28 days ago"
+    },
+    {
+      "title": "TontonTremblay (jonathan) - Hugging Face",
+      "url": "https://huggingface.co/TontonTremblay/models",
+      "snippet": "User profile of jonathan on Hugging Face"
+    },
+    {
+      "title": "Tumblr.com",
+      "url": "https://۩.tumblr.com/",
+      "snippet": "Explore a unique Tumblr page with diverse content and creative posts."
+    },
+    {
+      "title": "AI Summary: HANDAL: A Dataset of Real-World Manipulable Object ...",
+      "url": "https://www.bulletpapers.ai/paper/eb647f13-95b4-8e69-0544-6525bb19a139",
+      "snippet": "This paper introduces a large dataset of images and 3D models to enable research in robotic perception for grasping common household objects. It focuses on objects that afford functional grasps, like tools and kitchen utensils. The key contributions are the diversity of categories, number of instances, and precise 6D pose annotations, as well as dynamic videos and affordance labels ..."
+    },
+    {
+      "title": "Tumblr",
+      "url": "https://www.tumblr.com/@",
+      "snippet": "Tumblr is the place you go to be yourself on the internet. No performance, no perfection. Just you, and the people who get it."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/snapkitty-mistral",
+  "slug": "snapkitty-snapkitty-mistral",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/snapkitty-mistral",
+  "created_at": "2026-07-14T12:10:58.000Z",
+  "updated_at": "2026-09-01T23:34:40.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "sovereign-compute",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frontier AI LLMs, assistants, agents, services | Mistral",
+      "url": "https://mistral.ai/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "title": "mistralai (Mistral AI_) - Hugging Face",
+      "url": "https://huggingface.co/mistralai/models",
+      "snippet": "Org profile for Mistral AI_ on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "SnapKitty — Download Center",
+      "url": "https://snapkittywest.github.io/download.html",
+      "snippet": "SnapKitty sovereign apps. Router, MyLaw, CARTO, Snap OS, KittyBrowse, BOB MCP."
+    },
+    {
+      "title": "Models - from cloud to edge | Mistral",
+      "url": "https://mistral.ai/models/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "title": "SNAPKITTYWEST (SNAPKITTY COLLECTIVE) · GitHub",
+      "url": "https://github.com/SNAPKITTYWEST",
+      "snippet": "Specializing in: Agentic orchestration systems Recursive AI architectures Deterministic runtime design Embedded governance and observability Cryptography - SNAPKITTYWEST"
+    }
+  ]
+}

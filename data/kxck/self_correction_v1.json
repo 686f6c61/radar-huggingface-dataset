@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Kxck/Self_Correction_v1",
+  "slug": "kxck-self_correction_v1",
+  "author": "Kxck",
+  "url": "https://huggingface.co/Kxck/Self_Correction_v1",
+  "created_at": "2026-09-01T21:23:43.000Z",
+  "updated_at": "2026-09-01T21:31:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "vllm",
+    "unsloth",
+    "self-correction",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693982,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kxck/AGI_v2 · Hugging Face",
+      "url": "https://huggingface.co/Kxck/AGI_v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Reflexion: Language Models that Think Twice for Internalized Self ...",
+      "url": "https://openreview.net/forum?id=FDG2G7JDWO",
+      "snippet": "The UTD approach, which dynamically triggers self-correction based on average uncertainty over recent tokens, is quite interesting. The method shows good parameter-efficiency and strong results in improving accuracy, with 8B model trained on the dataset closing the gap on factuality and reasoning against a 70B baseline."
+    },
+    {
+      "title": "Self-Correcting AI Agents: How to Build AI That Learns From Its ...",
+      "url": "https://dev.to/louis-sanna/self-correcting-ai-agents-how-to-build-ai-that-learns-from-its-mistakes-39f1",
+      "snippet": "A self-correcting agent is an AI system that can recognize its own failures and attempt a new strategy. If the initial approach doesn&#x27;t work, the agent re-evaluates and tries an alternative path."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Building a Self-Correcting AI: A Deep Dive into the Reflexion ... - Medium",
+      "url": "https://medium.com/@vi.ha.engr/building-a-self-correcting-ai-a-deep-dive-into-the-reflexion-agent-with-langchain-and-langgraph-ae2b1ddb8c3b",
+      "snippet": "This article provides a comprehensive tutorial for building a sophisticated, self-correcting AI agent based on the principles of the Reflexion framework."
+    }
+  ]
+}

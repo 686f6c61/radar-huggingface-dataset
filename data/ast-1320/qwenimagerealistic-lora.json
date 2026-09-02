@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AST-1320/QwenImageRealistic-LoRA",
+  "slug": "ast-1320-qwenimagerealistic-lora",
+  "author": "AST-1320",
+  "url": "https://huggingface.co/AST-1320/QwenImageRealistic-LoRA",
+  "created_at": "2026-09-02T00:58:10.000Z",
+  "updated_at": "2026-09-02T00:58:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1195237728,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AST-1320/next-scene-qwen-image-lora-2509 · Hugging Face",
+      "url": "https://huggingface.co/AST-1320/next-scene-qwen-image-lora-2509",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "flymy-ai/qwen-image-realism-lora · Hugging Face",
+      "url": "https://huggingface.co/flymy-ai/qwen-image-realism-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - replicate/qwen-image-lora-trainer",
+      "url": "https://github.com/replicate/qwen-image-lora-trainer",
+      "snippet": "Qwen Image LoRA Fine-tunable Qwen Image model with exceptional composition abilities. Train custom LoRAs for any style or subject."
+    },
+    {
+      "title": "PRITHIVSAKTHIUR/Qwen-Image-LoRA-DLC - GitHub",
+      "url": "https://github.com/PRITHIVSAKTHIUR/Qwen-Image-LoRA-DLC/tree/main",
+      "snippet": "A powerful Gradio application for generating images using the Qwen-Image model with various LoRA (Low-Rank Adaptation) styles. This tool provides both speed-optimized and quality-focused generation modes with a curated collection of artistic styles."
+    },
+    {
+      "title": "qwen-image-realism-lora: Text-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen-image-realism-lora-flymy-ai",
+      "snippet": "Overview qwen-image-realism-lora is a LoRA (Low-Rank Adaptation) module trained for the Qwen-Image text-to-image model that specializes in photorealistic image generation across portraits, landscapes, and complex scenes. Built and maintained by flymy-ai, this adapter enhances the base Qwen-Image model with improved facial detail, color accuracy, lighting control, and ethnic diversity ..."
+    }
+  ]
+}

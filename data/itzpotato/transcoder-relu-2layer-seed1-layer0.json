@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "itzPotato/transcoder-relu-2layer-seed1-layer0",
+  "slug": "itzpotato-transcoder-relu-2layer-seed1-layer0",
+  "author": "itzPotato",
+  "url": "https://huggingface.co/itzPotato/transcoder-relu-2layer-seed1-layer0",
+  "created_at": "2026-09-02T00:15:28.000Z",
+  "updated_at": "2026-09-02T00:15:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "interpretability",
+    "transcoder",
+    "sparse-autoencoder",
+    "arithmetic",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 266656,
+  "storage_human": "266656 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "itzPotato (Rohan Sashank Babbellapati) - Hugging Face",
+      "url": "https://huggingface.co/itzPotato/models",
+      "snippet": "itzPotato&#x27;s models1 Sort: Recently updated itzPotato/bilinear-attn-modular-addition-p113 292k•Updated 2 days ago• 18 • 1"
+    },
+    {
+      "title": "itzPotato/bilinear-attn-addition-carry-2layer · Hugging Face",
+      "url": "https://huggingface.co/itzPotato/bilinear-attn-addition-carry-2layer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - facebookresearch/TransCoder: Public release of the TransCoder ...",
+      "url": "https://github.com/facebookresearch/TransCoder",
+      "snippet": "The model can be tested on new inputs using the translate.py script. For instance, python translate.py --src_lang cpp --tgt_lang java --model_path trained_model.pth < input_code.cpp will translate the C++ code contained in input_code.cpp to Java."
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "Relu® Automate | AI Design for Dental Labs",
+      "url": "https://www.relu.ai/",
+      "snippet": "Relu® Automate turns raw scans into production-ready designs: restorations, night guards, custom trays, dental models, surgical guides, and more. Trusted for 60,000 cases every month, worldwide."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "zurichquants/GLM-5.3-Flash-GGUF",
+  "slug": "zurichquants-glm-5-3-flash-gguf",
+  "author": "zurichquants",
+  "url": "https://huggingface.co/zurichquants/GLM-5.3-Flash-GGUF",
+  "created_at": "2026-09-01T23:17:19.000Z",
+  "updated_at": "2026-09-01T23:17:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "glm5_next",
+    "text-generation",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 320759404382,
+  "parameters_human": "320.76B",
+  "storage_bytes": 2545636729685,
+  "storage_human": "2545.6 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zurichquants/GLM-5.3-Flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/zurichquants/GLM-5.3-Flash-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Run GLM-5.3-Flash Locally: GGUF, Hardware and Benchmarks",
+      "url": "https://atomic.chat/blog/guides/how-to-run-glm-5-3-flash-locally",
+      "snippet": "GLM-5.3-Flash is the first natively multimodal model in Z.ai&#x27;s GLM-5 series, and the first one that&#x27;s realistic to run locally: it has 320B total parameters and 18B active per token. This guide covers what the model is, how it performs in the benchmarks, how much memory you&#x27;ll need to run it, and what your options are for running it today."
+    },
+    {
+      "title": "unsloth/GLM-5.3-Flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3-Flash: Frontier Intelligence, Flash Cost - z.ai",
+      "url": "https://z.ai/blog/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash starts from a newly trained base model, with its architecture and training recipe redesigned around capability and efficiency. For the first time in the GLM series, we introduce a hybrid architecture combining sparse and linear attention, sharply reducing long-context serving costs while preserving precise long-context capabilities."
+    },
+    {
+      "title": "GLM-5.3-Flash - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "snippet": "Model Overview GLM-5.3-Flash is the first native multimodal model in the GLM-5 series, delivering stronger intelligence than GLM-5.2 at an exceptionally low cost. Highly Efficient Hybrid Architecture GLM-5.3-Flash has 320B total parameters with 18B activated."
+    }
+  ]
+}

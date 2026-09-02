@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aariciah/gpt2-spanish-20k-lc",
+  "slug": "aariciah-gpt2-spanish-20k-lc",
+  "author": "aariciah",
+  "url": "https://huggingface.co/aariciah/gpt2-spanish-20k-lc",
+  "created_at": "2026-09-01T23:45:44.000Z",
+  "updated_at": "2026-09-02T01:37:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 100612608,
+  "parameters_human": "100.6M",
+  "storage_bytes": 2414798481,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aariciah/gpt2-spanish-20k · Hugging Face",
+      "url": "https://huggingface.co/aariciah/gpt2-spanish-20k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aariciah/gpt2-spanish-20k at main - Hugging Face",
+      "url": "https://huggingface.co/aariciah/gpt2-spanish-20k/tree/main",
+      "snippet": "Instructions to use aariciah/gpt2-spanish-20k with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use aariciah/gpt2-spanish-20k with Transformers:"
+    },
+    {
+      "title": "Gpt2 Spanish 20K by zhuojing-huang — VRAM 0.4GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/zhuojing-huang%2Fgpt2-spanish-20k,16ToG4P5Cokri0o2YzKeeP",
+      "snippet": "Gpt2 Spanish 20K is an open-source 100.6m LLM by zhuojing-huang. VRAM 0.4GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "GPT2 Spanish - Colab",
+      "url": "https://colab.research.google.com/github/DeepESP/gpt2-ml/blob/master/pretrained_model_demo.ipynb",
+      "snippet": "Press the ️button on the left of each of the cells View the code: Double click any of the cells Hide the code: Double click the right side of the cell"
+    },
+    {
+      "title": "gpt2-japanese-20k-lc API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/aariciah/gpt2-japanese-20k-lc",
+      "snippet": "Deploy gpt2-japanese-20k-lc with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

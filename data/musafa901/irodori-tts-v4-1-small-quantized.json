@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "musafa901/Irodori-TTS-v4.1-Small-Quantized",
+  "slug": "musafa901-irodori-tts-v4-1-small-quantized",
+  "author": "musafa901",
+  "url": "https://huggingface.co/musafa901/Irodori-TTS-v4.1-Small-Quantized",
+  "created_at": "2026-09-01T23:45:52.000Z",
+  "updated_at": "2026-09-01T23:45:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "speech",
+    "voice",
+    "tts",
+    "torchao",
+    "text-to-speech",
+    "ja",
+    "base_model:Aratako/Irodori-TTS-v4.1-Small",
+    "base_model:finetune:Aratako/Irodori-TTS-v4.1-Small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4546349922,
+  "storage_human": "4.5 GB",
+  "base_model": "Aratako/Irodori-TTS-v4.1-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aratako/Irodori-TTS-v4.1-Small · Hugging Face",
+      "url": "https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Irodori-TTS-v4.1-Small Demo - a Hugging Face Space by Aratako",
+      "url": "https://huggingface.co/spaces/Aratako/Irodori-TTS-v4.1-Small-Demo",
+      "snippet": "Irodori-TTS-v4.1-Small Demo Model | GitHub Flow-matching based Japanese TTS model (approximately 766M parameters). Generates speech from text, optional reference audio, and optional style caption. Reference audio: Optional. One or more clips can be concatenated in the displayed order, up to the model&#x27;s 120-second limit."
+    },
+    {
+      "title": "GitHub - Aratako/Irodori-TTS: A Flow Matching-based Text-to-Speech ...",
+      "url": "https://github.com/Aratako/Irodori-TTS",
+      "snippet": "The current release, Aratako/Irodori-TTS-v4.1-Small, unifies the previous base and VoiceDesign families in one checkpoint. It supports 3-branch conditioning from text, reference speech, and caption text."
+    },
+    {
+      "title": "Irodori-TTS v4.1-Small",
+      "url": "https://kawai321-umamusume-irodori-tts.hf.space/?__theme=system",
+      "snippet": "Irodori-TTS v4.1-Small Use via API · Built with Gradio · Settings"
+    },
+    {
+      "title": "GitHub - Aratako/Irodori-TTS: A Flow Matching-based Text-to-Speech ...",
+      "url": "https://t.co/hghQlU4JBr",
+      "snippet": "Quantized variants of Irodori-TTS reduce the memory required by the TTS model during inference. Pre-quantized v4-Small checkpoints are available from Aratako/Irodori-TTS-v4.1-Small-Quantized."
+    }
+  ]
+}

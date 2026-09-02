@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+  "slug": "davidau-qwen3-8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-neo-coder-max-mtp-gguf",
+  "author": "DavidAU",
+  "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+  "created_at": "2026-09-01T07:01:09.000Z",
+  "updated_at": "2026-09-02T02:10:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "fine tune",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "ara",
+    "MTP GGUF Quants",
+    "Regular GGUF Quants",
+    "qwen3_8",
+    "qwen3_6",
+    "qwen3_5",
+    "multi-stage tuned",
+    "thinking",
+    "reasoning",
+    "all use cases",
+    "coder",
+    "creative",
+    "creative writing",
+    "all genres",
+    "story",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "multi-stage-tune",
+    "multi-state-merge",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "dataset:DavidAU/Polar-STRICT-Datasets",
+    "dataset:DavidAU/F451-STRICT-Datasets",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 6,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 219413976155,
+  "storage_human": "219.4 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF/discussions/5",
+      "snippet": "I&#x27;m seeing the same issue I previously encountered with Qwen3.6-27B Fable Fusion 711 when using Vulkan with an AMD GPU."
+    },
+    {
+      "title": "DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF",
+      "url": "https://aiany.app/item/davidau-qwen3-8-27b-cold-fusion-gain-v1-1-nm-dau-neo-max-mtp-gguf",
+      "snippet": "Post-trained Qwen3.8-27B variant using the COLD FUSION (GAIN+Unsloth) tuning to reduce internal reasoning-token use and improve instruction following while keeping base capabilities. Deliverables include 256k-context-compatible GGUF quants (regular and MTP, NEO IMATRIX), vision support via an mmproj, and three reasoning-effort modes (xhigh/medium/low)."
+    },
+    {
+      "title": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+      "url": "https://friendli.ai/models/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+      "snippet": "PENDING RELEASES: RELEASE #1: Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored (AKA \"Stage 1b\", \"BRANCH1\" benches/notes below) GGUFS, generation in progress; GGUF repo (NEW) will appear shortly featuring NEO-CODER MAX DiMatrix (dual imatrix) quants of this model. GGUF REPO will be linked at the top of this page."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    }
+  ]
+}

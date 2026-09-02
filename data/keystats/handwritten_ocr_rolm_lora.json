@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "keystats/handwritten_ocr_rolm_lora",
+  "slug": "keystats-handwritten_ocr_rolm_lora",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/handwritten_ocr_rolm_lora",
+  "created_at": "2026-09-01T23:30:12.000Z",
+  "updated_at": "2026-09-01T23:30:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 392222592,
+  "storage_human": "392 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "keystats/handwriten_ocr · Hugging Face",
+      "url": "https://huggingface.co/keystats/handwriten_ocr",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RolmOCR by Reducto AI - Hugging Face",
+      "url": "https://huggingface.co/reducto/RolmOCR",
+      "snippet": "RolmOCR, like other VLM-based OCR solutions, still suffer from hallucination or dropping contents. Unlike the Reducto Parsing API, RolmOCR cannot output layout bounding boxes."
+    },
+    {
+      "title": "Reducto AI Released RolmOCR: A SoTA OCR Model Built on Qwen 2.5 VL ...",
+      "url": "https://aibtz.com/reducto-ai-released-rolmocr-a-sota-ocr-model-built-on-qwen-2-5-vl-fully-open-source-and-apache-2-0-licensed-for-advanced-document-understanding/",
+      "snippet": "Optical Character Recognition (OCR) has long been a cornerstone of document digitization, enabling the transformation of printed text into machine-readable formats. However, traditional OCR systems face significant limitations as the world grows increasingly multilingual and dependent on handwritten and visually structured content. These systems often struggle with the complexities of diverse ..."
+    },
+    {
+      "title": "RolmOCR: Document OCR Model for Recognizing Handwritten and Slanted ...",
+      "url": "https://www.kdjingpai.com/en/rolmocr/",
+      "snippet": "RolmOCR is an open source OCR tool to quickly extract text from images and PDFs , built on the Qwen2.5-VL-7B model , no dependence on metadata , low memory footprint , support for handwritten and skewed documents , free for users to use and modify ."
+    },
+    {
+      "title": "Reducto AI Released RolmOCR: A SoTA OCR Model Built on...",
+      "url": "https://daily.dev/posts/reducto-ai-released-rolmocr-a-sota-ocr-model-built-on-qwen-2-5-vl-fully-open-source-and-apache-2-0-yluhewe6d",
+      "snippet": "RolmOCR, a state-of-the-art OCR model developed by Reducto AI, leverages the powerful vision-language model Qwen 2.5 VL to understand and process multilingual and complexly structured documents. It supports both printed and handwritten recognition across multiple languages and visually intricate layouts."
+    }
+  ]
+}

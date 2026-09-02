@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Sarvam-30B-ROCmFP4-GGUF",
+  "slug": "kingjones777-sarvam-30b-rocmfp4-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Sarvam-30B-ROCmFP4-GGUF",
+  "created_at": "2026-09-01T23:42:09.000Z",
+  "updated_at": "2026-09-02T00:20:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rocm",
+    "vulkan",
+    "rocmfp4",
+    "strix-halo",
+    "gfx1151",
+    "amd",
+    "moe",
+    "indic",
+    "multilingual",
+    "reasoning",
+    "text-generation",
+    "base_model:sarvamai/sarvam-30b",
+    "base_model:quantized:sarvamai/sarvam-30b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32152650368,
+  "parameters_human": "32.15B",
+  "storage_bytes": 87472507648,
+  "storage_human": "87.5 GB",
+  "base_model": "sarvamai/sarvam-30b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sarvamai/sarvam-30b-gguf · Hugging Face",
+      "url": "https://huggingface.co/sarvamai/sarvam-30b-gguf",
+      "snippet": "Sarvam-30B is built to run reliably in resource-constrained environments and can handle multilingual voice calls while performing tool calls. A major focus during training was the Indian context and languages, resulting in state-of-the-art performance across 22 Indian languages for its model size. Sarvam-30B is open-sourced under the Apache ..."
+    },
+    {
+      "title": "kingjones777 (Myron Jones) - Hugging Face",
+      "url": "https://huggingface.co/kingjones777/models",
+      "snippet": "User profile of Myron Jones on Hugging Face"
+    },
+    {
+      "title": "sarvam-30B",
+      "url": "https://aikosh.indiaai.gov.in/home/models/details/sarvam2_30b_a2b_4.html",
+      "snippet": "sarvam-30B Sarvam-30B is an advanced Mixture-of-Experts (MoE) model with 2.4B non-embedding active parameters, designed primarily for practical deployment. It combines strong reasoning, reliable coding ability, and best-in-class conversational quality across Indian languages. Sarvam-30B is built to run reliably in resource-constrained environments and can handle multilingual voice calls while ..."
+    },
+    {
+      "title": "GitHub - mtr7x/sarvam-gguf: Sarvam-30B → GGUF conversion attempt. Open ...",
+      "url": "https://github.com/mtr7x/sarvam-gguf",
+      "snippet": "Sarvam open-sourced 30B and 105B under Apache 2.0, but no GGUF exists. Mainline llama.cpp doesn&#x27;t recognize model_type: \"sarvam_moe\" — the converter exits immediately."
+    },
+    {
+      "title": "Open-Sourcing Sarvam 30B and 105B | Sarvam AI",
+      "url": "https://www.sarvam.ai/blogs/sarvam-30b-105b",
+      "snippet": "Sarvam open-sources 30B and 105B reasoning models trained in India—MoE LLMs with leading Indian-language benchmarks; weights on AI Kosh and Hugging Face."
+    }
+  ]
+}

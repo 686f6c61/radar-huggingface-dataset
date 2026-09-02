@@ -5,7 +5,7 @@
   "author": "mlboydaisuke",
   "url": "https://huggingface.co/mlboydaisuke/OvisOCR2-LiteRT",
   "created_at": "2026-09-01T09:38:24.000Z",
-  "updated_at": "2026-09-01T09:42:24.000Z",
+  "updated_at": "2026-09-01T20:50:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

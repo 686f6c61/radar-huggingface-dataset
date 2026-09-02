@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "pistra-dev/mdeberta-v3-base-prompt-injection-onnx",
+  "slug": "pistra-dev-mdeberta-v3-base-prompt-injection-onnx",
+  "author": "pistra-dev",
+  "url": "https://huggingface.co/pistra-dev/mdeberta-v3-base-prompt-injection-onnx",
+  "created_at": "2026-09-01T20:02:49.000Z",
+  "updated_at": "2026-09-01T20:03:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "deberta-v2",
+    "text-classification",
+    "pistra",
+    "fp32",
+    "guardrails",
+    "base_model:proventra/mdeberta-v3-base-prompt-injection",
+    "base_model:quantized:proventra/mdeberta-v3-base-prompt-injection",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1470830249,
+  "storage_human": "1.5 GB",
+  "base_model": "proventra/mdeberta-v3-base-prompt-injection",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - microsoft/DeBERTa: The implementation of DeBERTa",
+      "url": "https://github.com/microsoft/DeBERTa",
+      "snippet": "The implementation of DeBERTa. Contribute to microsoft/DeBERTa development by creating an account on GitHub."
+    },
+    {
+      "title": "proventra/mdeberta-v3-base-prompt-injection · Hugging Face",
+      "url": "https://huggingface.co/proventra/mdeberta-v3-base-prompt-injection",
+      "snippet": "This model is a fine-tuned version of microsoft/mdeberta-v3-base on a combination of jackhhao/jailbreak-classification, deepset/prompt-injections, a custom datasets containing known attacks, and injections nested in legitimate content like websites and articles."
+    },
+    {
+      "title": "Mdeberta V3 Base Prompt Injection: Specs, Hardware & Live AI Battle ...",
+      "url": "https://www.modelvault.space/models/proventra-mdeberta-v3-base-prompt-injection",
+      "snippet": "Mdeberta V3 Base Prompt Injection is a high-dimensional text embedding and semantic retrieval model developed by Proventra. Tailored for Retrieval-Augmented Generation (RAG), vector database indexing, semantic similarity matching, and cross-lingual passage re-ranking."
+    },
+    {
+      "title": "protectai/deberta-v3-base-prompt-injection · Hugging Face",
+      "url": "https://huggingface.co/protectai/deberta-v3-base-prompt-injection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mdeberta-v3-base-prompt-injection Open-source Model - Detect Malicious ...",
+      "url": "https://model.aibase.com/models/details/1915737491954622466",
+      "snippet": "A prompt injection detection model fine-tuned based on microsoft/mdeberta-v3-base, trained with multiple datasets to identify malicious prompt injection attacks."
+    }
+  ]
+}

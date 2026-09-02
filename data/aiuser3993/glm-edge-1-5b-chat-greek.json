@@ -5,7 +5,7 @@
   "author": "aiuser3993",
   "url": "https://huggingface.co/aiuser3993/GLM-Edge-1.5B-Chat-Greek",
   "created_at": "2026-08-28T20:50:53.000Z",
-  "updated_at": "2026-08-31T18:03:24.000Z",
+  "updated_at": "2026-09-01T10:25:39.000Z",
   "license": "glm-4",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 572,
+  "downloads_30d": 1007,
   "trending_score": 0,
   "parameters": 1472055296,
   "parameters_human": "1.47B",

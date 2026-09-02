@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "imvladikon/GLM-5.2-9B-LoRA-Surgery-Dummy",
+  "slug": "imvladikon-glm-5-2-9b-lora-surgery-dummy",
+  "author": "imvladikon",
+  "url": "https://huggingface.co/imvladikon/GLM-5.2-9B-LoRA-Surgery-Dummy",
+  "created_at": "2026-09-01T23:44:03.000Z",
+  "updated_at": "2026-09-01T23:51:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8763269232,
+  "parameters_human": "8.76B",
+  "storage_bytes": 17546816250,
+  "storage_human": "17.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "imvladikon/GLM-5.3-Flash-9B-Surgery-Dummy · Hugging Face",
+      "url": "https://huggingface.co/imvladikon/GLM-5.3-Flash-9B-Surgery-Dummy",
+      "snippet": "This checkpoint preserves GLM-5.3-Flash width/kernel geometry while reducing the decoder from 45 to 10 layers and each routed MoE from 288 to 32 experts. It has 8,895,622,684 text parameters."
+    },
+    {
+      "title": "imvladikon/GLM-5.3-Flash-9B-Surgery-Dummy at main",
+      "url": "https://huggingface.co/imvladikon/GLM-5.3-Flash-9B-Surgery-Dummy/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "glm-5.2 - ollama.com",
+      "url": "https://ollama.com/library/glm-5.2",
+      "snippet": "GLM-5.2 is Z.ai&#x27;s flagship model for the era of long-horizon tasks. With a truly usable 1M-token context window, it can handle project-level engineering context, execute long-running tasks more reliably, follow engineering standards more consistently, and complete the full development workflow from requirements to multi-platform deployment in ..."
+    }
+  ]
+}

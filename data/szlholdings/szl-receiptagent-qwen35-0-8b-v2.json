@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2",
+  "slug": "szlholdings-szl-receiptagent-qwen35-0-8b-v2",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2",
+  "created_at": "2026-07-29T23:34:43.000Z",
+  "updated_at": "2026-09-02T00:13:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3.5",
+    "lora",
+    "unsloth",
+    "governed-ai",
+    "receipt-agent",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 103,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63336043,
+  "storage_human": "63 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "szl-forge/frontier/qwen35-receiptagent-v2 at main - GitHub",
+      "url": "https://github.com/szl-holdings/szl-forge/tree/main/frontier/qwen35-receiptagent-v2",
+      "snippet": "It pins the Apache-2.0 Qwen/Qwen3.5-.8B lineage and the exact Unsloth implementation revision used on the RTX 5050 laptop. The first gate performs a real CUDA tensor operation, loads the 0.8B checkpoint in 4-bit mode, and runs a bounded local generation. Its report remains outside Git because it is host-specific execution evidence."
+    },
+    {
+      "title": "SZLHOLDINGS / szl-receiptagent-qwen35-0.8b-v2",
+      "url": "https://insights-db.paloaltonetworks.com/models/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2/81b8a7ff90ddcb41038c54720c78e6262bf35839/overview",
+      "snippet": "Discover potential threats in the SZLHOLDINGS / szl-receiptagent-qwen35-.8b-v2 model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "szl-forge/frontier/qwen35-receiptagent-v2/README.md at main - GitHub",
+      "url": "https://github.com/szl-holdings/szl-forge/blob/main/frontier/qwen35-receiptagent-v2/README.md",
+      "snippet": "It pins the Apache-2.0 Qwen/Qwen3.5-.8B lineage and the exact Unsloth implementation revision used on the RTX 5050 laptop. The first gate performs a real CUDA tensor operation, loads the 0.8B checkpoint in 4-bit mode, and runs a bounded local generation. Its report remains outside Git because it is host-specific execution evidence."
+    },
+    {
+      "title": "szl-receiptagent-qwen35-0.8b-v2 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-v2",
+      "snippet": "Deploy szl-receiptagent-qwen35-.8b-v2 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Qwen/Qwen3.5-0.8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-0.8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

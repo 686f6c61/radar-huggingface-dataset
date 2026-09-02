@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Mickaelhuggingface/qpa-qwen38-27b-q4km-cache",
+  "slug": "mickaelhuggingface-qpa-qwen38-27b-q4km-cache",
+  "author": "Mickaelhuggingface",
+  "url": "https://huggingface.co/Mickaelhuggingface/qpa-qwen38-27b-q4km-cache",
+  "created_at": "2026-09-01T22:41:49.000Z",
+  "updated_at": "2026-09-01T22:41:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3.8",
+    "qwen",
+    "27b",
+    "dense",
+    "abliterated",
+    "quantized",
+    "multimodal",
+    "reasoning",
+    "tool-calling",
+    "llama.cpp",
+    "long-context",
+    "dflash2",
+    "speculative-decoding",
+    "image-text-to-text",
+    "base_model:Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16",
+    "base_model:quantized:Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 16810716384,
+  "storage_human": "16.8 GB",
+  "base_model": "Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B - Kaggle",
+      "url": "https://www.kaggle.com/refs/hf-model/Qwen/Qwen3.8-27B",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "Qwen3.8-27B on Hugging Face: official repo download guide",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-huggingface",
+      "snippet": "The real Qwen3.8 27B is on Hugging Face at Qwen/Qwen3.8-27B, Apache 2.0, released August 14, 2026, 55.6 GB of BF16 safetensors in 18 shards. Download it with huggingface-cli or git clone, verify the publisher is the Qwe n org, and you hold a state-of-the-art open-weights 27B that no one can take away or bill you for."
+    },
+    {
+      "title": "GitHub - syv-ai/qwen38-27b-rtx3090: Qwen3.8-27B on a single RTX 3090 ...",
+      "url": "https://github.com/syv-ai/qwen38-27b-rtx3090",
+      "snippet": "Qwen3.8-27B on one RTX 3090 Serving setup for Qwen3.8-27B on a single 24 GB consumer GPU with vLLM — 150k token context and an OpenAI-compatible API with key auth, in two ready-made modes."
+    }
+  ]
+}

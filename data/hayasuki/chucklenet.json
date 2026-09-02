@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Hayasuki/chucklenet",
+  "slug": "hayasuki-chucklenet",
+  "author": "Hayasuki",
+  "url": "https://huggingface.co/Hayasuki/chucklenet",
+  "created_at": "2026-09-01T21:02:01.000Z",
+  "updated_at": "2026-09-01T21:02:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "chucklenet",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2234485,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ViDeo - a Hayasuki Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Hayasuki/video",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from Hayasuki"
+    },
+    {
+      "title": "Hayasuki (SUBHAJIT DAS) - Hugging Face",
+      "url": "https://huggingface.co/Hayasuki",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space about 1 month ago ... published a Space about 1 month ago"
+    },
+    {
+      "title": "Chatrule | AI Character & Model Search",
+      "url": "https://chatrule.ai/",
+      "snippet": "Discover Chatrule characters and ADVANCED mirrored LoRAs for AI image generation."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 125 Estimated models among 412 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Hayasaka Ai - Kaguya-sama wa Kokurasetai - Zerochan",
+      "url": "https://www.zerochan.net/Hayasaka+Ai",
+      "snippet": "Zerochan has 592 Hayasaka Ai anime images, wallpapers, HD wallpapers, Android/iPhone wallpapers, fanart, cosplay pictures, and many more in its gallery. Hayasaka Ai is a character from Kaguya-sama wa Kokurasetai."
+    }
+  ]
+}

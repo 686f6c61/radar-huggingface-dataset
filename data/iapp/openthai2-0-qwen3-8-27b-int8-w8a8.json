@@ -5,7 +5,7 @@
   "author": "iapp",
   "url": "https://huggingface.co/iapp/openthai2.0-qwen3.8-27b-INT8-W8A8",
   "created_at": "2026-08-26T01:30:08.000Z",
-  "updated_at": "2026-08-31T13:03:34.000Z",
+  "updated_at": "2026-09-01T11:44:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 296,
+  "downloads_30d": 316,
   "trending_score": 0,
   "parameters": 27360632560,
   "parameters_human": "27.36B",
-  "storage_bytes": 122353082229,
-  "storage_human": "122.4 GB",
+  "storage_bytes": 152724005349,
+  "storage_human": "152.7 GB",
   "base_model": "iapp/openthai2.0-qwen3.8-27b",
   "formats": [
     "safetensors"

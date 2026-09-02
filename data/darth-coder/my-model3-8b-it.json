@@ -5,7 +5,7 @@
   "author": "Darth-Coder",
   "url": "https://huggingface.co/Darth-Coder/my-model3-8b-it",
   "created_at": "2026-08-31T21:34:26.000Z",
-  "updated_at": "2026-08-31T21:37:25.000Z",
+  "updated_at": "2026-09-01T04:02:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 319,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",

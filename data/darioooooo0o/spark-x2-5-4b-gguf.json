@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "darioooooo0o/Spark-X2.5-4B-GGUF",
+  "slug": "darioooooo0o-spark-x2-5-4b-gguf",
+  "author": "darioooooo0o",
+  "url": "https://huggingface.co/darioooooo0o/Spark-X2.5-4B-GGUF",
+  "created_at": "2026-09-01T23:03:22.000Z",
+  "updated_at": "2026-09-02T00:13:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "sparkx2_5",
+    "quantized",
+    "llama.cpp",
+    "imatrix",
+    "text-generation",
+    "base_model:XHToken/Spark-X2.5-4B",
+    "base_model:quantized:XHToken/Spark-X2.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 13548585600,
+  "storage_human": "13.5 GB",
+  "base_model": "XHToken/Spark-X2.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "darioooooo0o/Spark-X2.5-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/darioooooo0o/Spark-X2.5-4B-GGUF",
+      "snippet": "Community GGUF quantizations of XHToken/Spark-X2.5-4B, a 4.1B hybrid-attention (3:1 sliding-window:full) model with native 1M context. Quantized with an importance matrix calibrated on multilingual text, targeting fully GPU-resident inference on 4/8/12/16GB cards with at least 64K context (128K preferred)."
+    },
+    {
+      "title": "Spark-X2.5/README.md at main · XHToken/Spark-X2.5 · GitHub",
+      "url": "https://github.com/XHToken/Spark-X2.5/blob/main/README.md",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF · Hugging Face",
+      "url": "https://huggingface.co/docs/hub/gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

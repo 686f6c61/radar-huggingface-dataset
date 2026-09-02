@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "kevin-mi/FastH3-4step-Preview-overlay",
+  "slug": "kevin-mi-fasth3-4step-preview-overlay",
+  "author": "kevin-mi",
+  "url": "https://huggingface.co/kevin-mi/FastH3-4step-Preview-overlay",
+  "created_at": "2026-09-01T22:04:15.000Z",
+  "updated_at": "2026-09-01T22:44:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sglang-diffusion",
+  "languages": [],
+  "tags": [
+    "sglang-diffusion",
+    "overlay",
+    "minimax-h3",
+    "fasth3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FastH3 Preview v1: 4-Step MiniMax H3 Distillation From FastVideo",
+      "url": "https://comfyui-wiki.com/en/news/2026-08-28-fasth3-preview",
+      "snippet": "FastVideo open-sources FastH3 Preview v1: a 4-step DMD2 distillation of MiniMax H3 with 90% sparse attention, up to 14x faster text-to-video-and-audio on Blackwell GPUs."
+    },
+    {
+      "title": "FastH3 4-step Preview - a Hugging Face Space by Luislin88",
+      "url": "https://huggingface.co/spaces/Luislin88/fasth3-4step-preview-demo",
+      "snippet": "Provide a textual description, select the canvas size and video length, and the app creates an MP4 video that includes matching background audio. It uses a fast 4‑step model to produce the video an..."
+    },
+    {
+      "title": "FastH3 4-step Preview - a Hugging Face Space by jekverse",
+      "url": "https://huggingface.co/spaces/jekverse/fasth3-4step-preview-demo",
+      "snippet": "4-step MiniMax-H3 with sparse attention — video + audio"
+    },
+    {
+      "title": "FastVideo FastH3 V1: Open-Weight 4-Step Sparse Distilled Minimax H3 for ...",
+      "url": "https://haoailab.com/blogs/fasth3-preview/",
+      "snippet": "The validation gallery and VSA performance rows below use this checkpoint. The recommended checkpoint and its LoRA require FastVideo&#x27;s Video Sparse Attention (VSA-H3) backend and kernel to achieve the reported speed and quality. Dense attention is not a drop-in substitute. All Preview v1 checkpoints currently support T2VA only. H3 uses the base transformer for both T2VA and first/last-frame ..."
+    },
+    {
+      "title": "ComfyUI FastVideo FastH3 4-step LoRa (unofficial)",
+      "url": "https://civitai.com/models/2898443/comfyui-fastvideo-fasth3-4-step-lora-unofficial",
+      "snippet": "20 396 14 9 73 Updated: Aug 29, 2026 toolcomfyuicomfyturboh3minimax + 1 FastH3-4-step-Preview-1. Create Download 1 variant available bf16 SafeTensor FastH3_comfyui ..."
+    }
+  ]
+}

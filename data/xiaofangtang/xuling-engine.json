@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "xiaofangtang/xuling-engine",
+  "slug": "xiaofangtang-xuling-engine",
+  "author": "xiaofangtang",
+  "url": "https://huggingface.co/xiaofangtang/xuling-engine",
+  "created_at": "2026-09-01T23:04:37.000Z",
+  "updated_at": "2026-09-01T23:08:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ctranslate2",
+    "cuda",
+    "runtime",
+    "xuling",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 605624589,
+  "storage_human": "606 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub Pages - Xulong Tang",
+      "url": "https://xzt102.github.io/index.html",
+      "snippet": "About The TANG Lab at the University of Pittsburgh builds efficient computing foundations, systems, and infrastructure for modern AI. As AI models grow more capable and computationally demanding, the challenge shifts to whether the underlying systems can train, serve, adapt, and reason at the necessary scale, speed, and efficiency. We aim to make AI infrastructure fundamentally more scalable ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face turned to Chinese open source AI model after ... - Fortune",
+      "url": "https://fortune.com/2026/07/20/hugging-face-turns-to-chinese-open-source-ai-to-fend-off-autonomous-ai-cyber-attack-after-american-ai-guardrails-stymie-defense/",
+      "snippet": "Hugging Face used Z.ai&#x27;s GLM 5.2 after the guardrails of an American frontier AI model stymied its attempts at defense."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

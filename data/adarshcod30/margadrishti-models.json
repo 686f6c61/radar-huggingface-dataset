@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "adarshcod30/margadrishti-models",
+  "slug": "adarshcod30-margadrishti-models",
+  "author": "adarshcod30",
+  "url": "https://huggingface.co/adarshcod30/margadrishti-models",
+  "created_at": "2026-09-02T00:31:55.000Z",
+  "updated_at": "2026-09-02T00:32:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "onnx",
+    "tabular-regression",
+    "tabular-classification",
+    "spatiotemporal",
+    "urban-mobility",
+    "traffic",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6923178,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - adarshcod30/MargaDrishti",
+      "url": "https://github.com/adarshcod30/MargaDrishti/tree/main",
+      "snippet": "MargaDrishti models both on one shared substrate — H3 hexagons × hourly bins — with two prediction modules and a fusion layer that emits a single ranked deployment plan."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "Fast AI 3D Model Generator - Text to 3D & Image to 3D | Fast 3D",
+      "url": "https://www.fast3d.org/en",
+      "snippet": "Fast 3D is a fast AI 3D model generator that turns text prompts or images into beautiful, production-ready 3D models in seconds. Text to 3D, image to 3D AI, GLB/OBJ/FBX export. Free to start, no login required."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

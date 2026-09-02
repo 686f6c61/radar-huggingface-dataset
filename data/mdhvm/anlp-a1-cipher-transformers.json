@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mdhvm/anlp-a1-cipher-transformers",
+  "slug": "mdhvm-anlp-a1-cipher-transformers",
+  "author": "mdhvm",
+  "url": "https://huggingface.co/mdhvm/anlp-a1-cipher-transformers",
+  "created_at": "2026-09-01T20:45:48.000Z",
+  "updated_at": "2026-09-01T20:52:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "transformer",
+    "seq2seq",
+    "ablation",
+    "byte-latent-transformer",
+    "from-scratch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 366307403,
+  "storage_human": "366 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZappY-AI/anlp-a1 · Hugging Face",
+      "url": "https://huggingface.co/ZappY-AI/anlp-a1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "abhirajratna/2024114011-anlp-a1 · Hugging Face",
+      "url": "https://huggingface.co/abhirajratna/2024114011-anlp-a1",
+      "snippet": "ANLP Assignment 1 — Custom Transformers & BLT From-scratch encoder-decoder Transformers trained to decrypt a repeating-key XOR cipher (binary string -> English plaintext), with a controlled five-configuration ablation over positional encoding, attention, normalisation and tokenization."
+    },
+    {
+      "title": "GitHub - FrenchKnuckles/ANLP_A1",
+      "url": "https://github.com/FrenchKnuckles/ANLP_A1",
+      "snippet": "This repository contains a PyTorch implementation of a Seq2Seq Transformer trained to decrypt a substitution cipher. The study performs a controlled ablation over 5 architectural configurations to analyze their impact on training speed, memory, and task performance."
+    },
+    {
+      "title": "anlp-spring2026-code/05_transformers/transformer.ipynb at main - GitHub",
+      "url": "https://github.com/cmu-l3/anlp-spring2026-code/blob/main/05_transformers/transformer.ipynb",
+      "snippet": "cmu-l3 / anlp-spring2026-code Public 15 Star 125 anlp-spring2026-code / 05_transformers"
+    },
+    {
+      "title": "Transformers in Machine Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/getting-started-with-transformers/",
+      "snippet": "Transformer is a neural network architecture used for various machine learning tasks, especially in natural language processing and computer vision. It focuses on understanding relationships within data to process information more effectively."
+    }
+  ]
+}

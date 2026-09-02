@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "cyttic/trocr-freefonts-BY",
+  "slug": "cyttic-trocr-freefonts-by",
+  "author": "cyttic",
+  "url": "https://huggingface.co/cyttic/trocr-freefonts-BY",
+  "created_at": "2026-08-28T12:30:16.000Z",
+  "updated_at": "2026-09-02T00:56:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "base_model:cyttic/exp2-frozen-benyehuda-cont",
+    "base_model:finetune:cyttic/exp2-frozen-benyehuda-cont",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 299495168,
+  "parameters_human": "299.5M",
+  "storage_bytes": 7188261682,
+  "storage_human": "7.2 GB",
+  "base_model": "cyttic/exp2-frozen-benyehuda-cont",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cyttic/trocr-freefonts-BY · Hugging Face",
+      "url": "https://huggingface.co/cyttic/trocr-freefonts-BY",
+      "snippet": "trocr-freefonts-BY This model is a fine-tuned version of cyttic/exp2-frozen-benyehuda-cont on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "cyttic/trocr-freefonts-s42 · Hugging Face",
+      "url": "https://huggingface.co/cyttic/trocr-freefonts-s42",
+      "snippet": "trocr-freefonts-s42 This model is a fine-tuned version of cyttic/exp2-frozen-benyehuda-cont on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "70+ Free Artificial Intelligence Fonts · 1001 Fonts",
+      "url": "https://www.1001fonts.com/artificial-intelligence-fonts.html",
+      "snippet": "Revolutionize your designs with AI-driven fonts! Get creative with unique, free typefaces that are powered by artificial intelligence for a look that stands out."
+    },
+    {
+      "title": "Ai Fonts",
+      "url": "https://www.fontspace.com/category/ai",
+      "snippet": "Looking for Ai fonts? Click to find the best 23 free fonts in the Ai style. Every font is free to download!"
+    },
+    {
+      "title": "Free AI Font Generator | Create Custom Typefaces | Canvus.ai",
+      "url": "https://canvus.ai/tools/font-generator",
+      "snippet": "Design your own unique fonts with our free AI Font Generator. Create custom, usable font files from a simple description. A new era of typography."
+    }
+  ]
+}

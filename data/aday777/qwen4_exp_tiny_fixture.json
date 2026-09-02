@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "aday777/qwen4_exp_tiny_fixture",
+  "slug": "aday777-qwen4_exp_tiny_fixture",
+  "author": "aday777",
+  "url": "https://huggingface.co/aday777/qwen4_exp_tiny_fixture",
+  "created_at": "2026-09-01T21:48:20.000Z",
+  "updated_at": "2026-09-01T21:48:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "fixture",
+    "testing",
+    "moe",
+    "linear-attention",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 289344,
+  "parameters_human": "289344",
+  "storage_bytes": 1172568,
+  "storage_human": "1 MB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "transformers/docs/source/en/model_doc/qwen4_exp.md at main ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/qwen4_exp.md",
+      "snippet": "Combined with Gated DeltaNet, QSA makes Qwen4-Exp the first hybrid architecture to integrate linear and sparse attention, substantially improving inference efficiency for long-context workloads. PLE enriches selected decoder layers with layer-specific lexical features derived from hashed token n-grams and a dilated depthwise convolution."
+    },
+    {
+      "title": "transformers/src/transformers/models/qwen4_exp/modeling_qwen4_exp.py at ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/src/transformers/models/qwen4_exp/modeling_qwen4_exp.py",
+      "snippet": "# modular_qwen4_exp.py file directly. One of our CI enforces this. # 🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨 ..."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next NVFP4 on 2x DGX Spark full multimodal: 70 tok/s peak ...",
+      "url": "https://forums.developer.nvidia.com/t/qwen3-8-flash-next-nvfp4-on-2x-dgx-spark-full-multimodal-70-tok-s-peak-47-typical/381428",
+      "snippet": "Patch 2 — mrope partial-rotary OOB fix (needed for stable vision) This one&#x27;s subtle and, as far as we can tell, unreported anywhere: qwen4_exp is the first M-RoPE model with partial rotary (partial_rotary_factor 0.25 → rotary width 64 on head_dim 256, so the cos/sin cache row is 32 half-lanes)."
+    }
+  ]
+}

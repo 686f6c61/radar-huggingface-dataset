@@ -5,7 +5,7 @@
   "author": "mmRoshani",
   "url": "https://huggingface.co/mmRoshani/Imperum-CybersecurityLLM-v1.0",
   "created_at": "2026-09-01T10:48:22.000Z",
-  "updated_at": "2026-09-01T10:48:22.000Z",
+  "updated_at": "2026-09-01T12:16:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "llama.cpp",
+    "safetensors",
     "gguf",
     "cybersecurity",
     "security",
@@ -39,11 +40,12 @@
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 58069897024,
-  "storage_human": "58.1 GB",
+  "storage_bytes": 130030907270,
+  "storage_human": "130.0 GB",
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
-    "gguf"
+    "gguf",
+    "safetensors"
   ],
   "is_conversational": true,
   "gated": false,

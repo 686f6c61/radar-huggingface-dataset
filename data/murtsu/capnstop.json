@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "murtsu/capnstop",
+  "slug": "murtsu-capnstop",
+  "author": "murtsu",
+  "url": "https://huggingface.co/murtsu/capnstop",
+  "created_at": "2026-09-01T22:17:27.000Z",
+  "updated_at": "2026-09-01T22:52:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8791592960,
+  "parameters_human": "8.79B",
+  "storage_bytes": 5347917952,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The budgeted Ai. does it job. the stops. Period - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/its-alive-capnstop-models-first-run-budgeted-reward-now-tahvanainen-147of",
+      "snippet": "Its Alive!! The Capnstop models first run. The Budgeted Reward Allocation model now (seemingly) runs and well!? Marko Tahvanainen Marko Tahvanainen"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 125 Estimated models among 412 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "Moescape — AI-enabled creative platform for anime fandom",
+      "url": "https://moescape.ai/",
+      "snippet": "Explore AI generated anime art, find best prompts, create beautiful images with our free AI art generator, and share it with other anime fans!"
+    }
+  ]
+}

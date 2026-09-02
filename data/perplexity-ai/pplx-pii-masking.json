@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "perplexity-ai/pplx-pii-masking",
+  "slug": "perplexity-ai-pplx-pii-masking",
+  "author": "perplexity-ai",
+  "url": "https://huggingface.co/perplexity-ai/pplx-pii-masking",
+  "created_at": "2026-07-16T23:50:59.000Z",
+  "updated_at": "2026-09-01T14:57:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "safetensors",
+    "pii_masking",
+    "pii",
+    "token-classification",
+    "privacy",
+    "qwen3",
+    "en",
+    "multilingual",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 23,
+  "downloads_30d": 0,
+  "trending_score": 23,
+  "parameters": 596090241,
+  "parameters_human": "596.1M",
+  "storage_bytes": 1203716713,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "perplexity-ai/pplx-pii-masking-vllm · Hugging Face",
+      "url": "https://huggingface.co/perplexity-ai/pplx-pii-masking-vllm",
+      "snippet": "perplexity-ai / pplx-pii-masking-vllm like 1 Follow Perplexity 2.76k Token Classification Safetensors English multilingual qwen3 pii privacy vllm License:other Model card FilesFiles and versions xet Community Copy to bucket new pplx-pii-masking — vLLM-servable conversion Serve it Labels Verification Caveats Files"
+    },
+    {
+      "title": "Perplexity Mac Hybrid Compute: Local PII Routing (2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/perplexity-mac-hybrid-compute-local-pii-september-2026",
+      "snippet": "Perplexity rolled hybrid compute to all Mac app users Sep 1, 2026 — Computer routes bloodwork, tax, and litigation steps to Apple Silicon while open-sourcing pplx-pii-masking for cloud vs local decisions."
+    },
+    {
+      "title": "GitHub - perplexityai/perplexity-cli",
+      "url": "https://github.com/perplexityai/perplexity-cli/",
+      "snippet": "Perplexity&#x27;s Search API in your terminal. pplx gives you grounded web search results and query-relevant page snippets as JSON, built for both humans and coding agents."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "pplx-embed - a perplexity-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/perplexity-ai/pplx-embed",
+      "snippet": "Diffusion-Pretrained Dense and Contextual Embeddings. Upvote . 100 +90; Sort: Collection. Diffusion-Pretrained Dense and Contextual Embeddings. Paper • 2602.11151 • Published"
+    }
+  ]
+}

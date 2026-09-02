@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "sjakek/slimder-qwen38-ream288-depth32-agentic",
+  "slug": "sjakek-slimder-qwen38-ream288-depth32-agentic",
+  "author": "sjakek",
+  "url": "https://huggingface.co/sjakek/slimder-qwen38-ream288-depth32-agentic",
+  "created_at": "2026-09-01T14:48:06.000Z",
+  "updated_at": "2026-09-01T21:17:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen4_exp_text",
+    "qwen",
+    "mixture-of-experts",
+    "ream",
+    "model-compression",
+    "agentic",
+    "text-generation",
+    "conversational",
+    "base_model:sjakek/slimder-qwen38-reap384-depth32-mb2-3-4-5",
+    "base_model:quantized:sjakek/slimder-qwen38-reap384-depth32-mb2-3-4-5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 100215778560,
+  "parameters_human": "100.22B",
+  "storage_bytes": 309815346341,
+  "storage_human": "309.8 GB",
+  "base_model": "sjakek/slimder-qwen38-reap384-depth32-mb2-3-4-5",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen38",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "GitHub - blazux/qwen3.8-Flash-DGX: recipe for running Qwen3.8-Flash ...",
+      "url": "https://github.com/blazux/qwen3.8-Flash-DGX",
+      "snippet": "Run Qwen3.8-Flash-Next — a ~176B-parameter model (125B main + 51B n-gram, 6B active) — on one NVIDIA DGX Spark / ASUS GX10 with vLLM, at full prefill speed, with MTP speculative decoding, working prefix caching, deterministic greedy decoding, and up to 500k tokens of context."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

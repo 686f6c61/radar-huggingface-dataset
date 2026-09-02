@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "TontonTremblay/doper2-handal-obj000020",
+  "slug": "tontontremblay-doper2-handal-obj000020",
+  "author": "TontonTremblay",
+  "url": "https://huggingface.co/TontonTremblay/doper2-handal-obj000020",
+  "created_at": "2026-09-02T00:56:47.000Z",
+  "updated_at": "2026-09-02T00:57:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 346109702,
+  "storage_human": "346 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TontonTremblay (jonathan) - Hugging Face",
+      "url": "https://huggingface.co/TontonTremblay/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 28 days ago ... published a dataset 28 days ago"
+    },
+    {
+      "title": "TontonTremblay/DOPER_BOP · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/TontonTremblay/DOPER_BOP",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TontonTremblay (Jonathan Tremblay) · GitHub",
+      "url": "https://github.com/TontonTremblay",
+      "snippet": "TontonTremblay has 58 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    }
+  ]
+}

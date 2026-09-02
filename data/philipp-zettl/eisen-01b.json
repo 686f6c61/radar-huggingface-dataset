@@ -5,7 +5,7 @@
   "author": "philipp-zettl",
   "url": "https://huggingface.co/philipp-zettl/eisen-01b",
   "created_at": "2026-08-30T19:39:20.000Z",
-  "updated_at": "2026-08-30T21:17:00.000Z",
+  "updated_at": "2026-09-01T12:03:26.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,10 +28,10 @@
   "likes": 0,
   "downloads_30d": 377,
   "trending_score": 0,
-  "parameters": 125851392,
-  "parameters_human": "125.9M",
-  "storage_bytes": 505591594,
-  "storage_human": "506 MB",
+  "parameters": 281072640,
+  "parameters_human": "281.1M",
+  "storage_bytes": 1629906778,
+  "storage_human": "1.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

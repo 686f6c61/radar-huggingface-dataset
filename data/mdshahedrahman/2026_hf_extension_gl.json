@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mdshahedrahman/2026_HF_Extension_GL",
+  "slug": "mdshahedrahman-2026_hf_extension_gl",
+  "author": "mdshahedrahman",
+  "url": "https://huggingface.co/mdshahedrahman/2026_HF_Extension_GL",
+  "created_at": "2026-09-01T19:51:11.000Z",
+  "updated_at": "2026-09-01T20:01:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "legal",
+    "lora",
+    "quantized",
+    "text-classification",
+    "en",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - zai-org/GLM-5: GLM-5: From Vibe Coding to Agentic Engineering",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "GLM-5.3 uses the same base model as GLM-5.2 — every gain comes from post-training. Compared with GLM-5.2, it is much better at complex coding and long-horizon tasks: Stronger Coding: GLM-5.3 is the most capable open-weights model for coding, with a 50% improvement over GLM-5.2 on our in-house Z.ai Code Bench. It also achieve open-source SOTA on public benchmarks including Terminal Bench 3.0 ..."
+    },
+    {
+      "title": "hf-claude works well with GLM 5.2, install via hf extensions",
+      "url": "https://artificialintelligencedynamics.com/2026/06/24/hf-claude-works-well-with-glm-5-2-install-via-hf-extensions/",
+      "snippet": "24 June 2026 2h49 hf-claude works well with glm 5.2 hf extensions install hf-claude → View original post on X — @_akhaliq 24 June 2026 AI CODE COMPUTING GENERATIVE AI LLMS MACHINE LEARNING OPEN SOURCE SOFTWARE TOOLS →"
+    },
+    {
+      "title": "Malicious AI Assistant Extensions Harvest LLM Chat Histories",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/03/05/malicious-ai-assistant-extensions-harvest-llm-chat-histories/",
+      "snippet": "Malicious AI browser extensions collected LLM chat histories and browsing data from platforms such as ChatGPT and DeepSeek. With nearly 900,000 installs and activity across more than 20,000 enterprise tenants, the campaign highlights the growing risk of data exposure through browser extensions."
+    }
+  ]
+}

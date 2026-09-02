@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "nebulette/puro-2b-contrastive",
+  "slug": "nebulette-puro-2b-contrastive",
+  "author": "nebulette",
+  "url": "https://huggingface.co/nebulette/puro-2b-contrastive",
+  "created_at": "2026-09-01T23:32:08.000Z",
+  "updated_at": "2026-09-01T23:35:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "booru",
+    "contrastive",
+    "e621",
+    "fully-open",
+    "open-recipe",
+    "qwen3",
+    "en",
+    "base_model:thu-pacman/Puro-2B-Base",
+    "base_model:finetune:thu-pacman/Puro-2B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11418634,
+  "storage_human": "11 MB",
+  "base_model": "thu-pacman/Puro-2B-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-02T02:24:28.506Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nebulette (Nébulette) - Hugging Face",
+      "url": "https://huggingface.co/nebulette",
+      "snippet": "Mist est la première lettre de ML. Recent Activity. updated a model about 17 hours ago. nebulette/segmentation-aware-dit-b"
+    },
+    {
+      "title": "nebulette/lfm-350m-contrastive · Hugging Face",
+      "url": "https://huggingface.co/nebulette/lfm-350m-contrastive",
+      "snippet": "nebulette / lfm-350m-contrastive like 0 Feature Extraction Safetensors English lfm2 booru contrastive e621 lfm custom_code License:lfm1.0 Model card FilesFiles and versions xet Copy to bucket new"
+    },
+    {
+      "title": "Puro-2B: Poor Lab&#x27;s Qwen2-1.5B Trained on RTX 5090 within $5090",
+      "url": "https://arxiv.org/abs/2608.27370",
+      "snippet": "Beyond the recipe itself, we provide two additional results. First, across the Puro-2B collection, we derive a Puro Cost Scaling Law that relates training cost to average model performance; the fitted law suggests that about $ 4.4K, less than $ 5,090, is sufficient to reach the performance of Qwen2-1.5B."
+    },
+    {
+      "title": "Puro-2B: Poor Lab&#x27;s Qwen2-1.5B Trained on RTX 5090 within $5090",
+      "url": "https://www.aimodels.fyi/papers/arxiv/puro-2b-poor-labs-qwen2-15b-trained",
+      "snippet": "Puro-2B is a roughly 2B-parameter decoder-only Transformer trained from scratch on up to 1.4 trillion tokens with blockwise FP8 on consumer-grade RTX 5090 GPUs. Its architecture follows Qwen3-1.7B while untieing input embeddings from the language-model head, and the production run uses 438.8B Phase 1 tokens followed by 960.0B Phase 2 tokens."
+    },
+    {
+      "title": "Puro-2B makes small-model pretraining feel operator-sized",
+      "url": "https://kenashe.ai/blog/2026-08-28-puro-2b-makes-small-model-pretraining-feel-operator-sized/",
+      "snippet": "Puro-2B is not a frontier-model story. It is a recipe story: consumer GPUs, FP8 training, open data and code, and enough cost discipline to make controlled pretraining experiments plausible for smaller labs."
+    }
+  ]
+}

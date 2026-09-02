@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Rin247/Qwen3.6-35B-A3B-Uncensored-Aquarion-INT8",
+  "slug": "rin247-qwen3-6-35b-a3b-uncensored-aquarion-int8",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Qwen3.6-35B-A3B-Uncensored-Aquarion-INT8",
+  "created_at": "2026-09-01T22:14:31.000Z",
+  "updated_at": "2026-09-01T22:36:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe_text",
+    "text-generation",
+    "quantized",
+    "int8",
+    "uncensored",
+    "abliterated",
+    "conversational",
+    "endpoints_compatible",
+    "8-bit",
+    "int8_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 35699029087,
+  "storage_human": "35.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rin247/Qwen3.6-27B-Uncensored-Aquarion-INT8 · Hugging Face",
+      "url": "https://huggingface.co/Rin247/Qwen3.6-27B-Uncensored-Aquarion-INT8",
+      "snippet": "Instructions to use Rin247/Qwen3.6-27B-Uncensored-Aquarion-INT8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B Uncensored: A 35B MoE Model With 262K Context",
+      "url": "https://hackernoon.com/qwen36-35b-a3b-uncensored-a-35b-moe-model-with-262k-context",
+      "snippet": "Overview Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive is an uncensored variant of Qwen&#x27;s 35B mixture-of-experts language model, maintained by HauhauCS. The model contains 35 billion total parameters with approximately 3 billion active per forward pass through a sparse expert architecture. It features a hybrid attention design combining linear attention with full softmax attention in a 3:1 ..."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B Uncensored / Abliterated Deep Dive",
+      "url": "https://www.oflight.co.jp/en/columns/qwen36-35b-a3b-uncensored-abliterated-2026-07",
+      "snippet": "Qwen3.6 Uncensored Abliterated Open Weights MoE HauhauCS huihui-ai Local LLM Table of Contents12 sections Expand 01TL;DR — What Are Qwen3.6-35B Uncensored / Abliterated? 02The Base Model: Qwen 3.6-35B-A3B 03What Abliteration Is — Surgical Refusal Removal 04Variants at a Glance 05Quantization and Hardware Requirements"
+    },
+    {
+      "title": "Rin247/Qwen3-8B-Uncensored-Aquarion-INT8 · Hugging Face",
+      "url": "https://huggingface.co/Rin247/Qwen3-8B-Uncensored-Aquarion-INT8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.6 35B A3B on AMD Ryzen AI Max+ 395 (Strix Halo) via Vulkan with ...",
+      "url": "https://akehir.com/blog/strix-halo-kubernetes-llm-qwen-3.6",
+      "snippet": "Qwen 3.6 35B A3B on AMD Ryzen AI Max+ 395 (Strix Halo) via Vulkan with Kubernetes Summary April has been quite a month for local LLMs! Shortly after Gemma 4 26B was released, it quickly became my favorite model to use. However, just as Gemma 4 26B established itself, Qwen released the new Qwen 3.6 35B A3B model."
+    }
+  ]
+}

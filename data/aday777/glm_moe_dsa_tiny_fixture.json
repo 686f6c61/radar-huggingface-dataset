@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "aday777/glm_moe_dsa_tiny_fixture",
+  "slug": "aday777-glm_moe_dsa_tiny_fixture",
+  "author": "aday777",
+  "url": "https://huggingface.co/aday777/glm_moe_dsa_tiny_fixture",
+  "created_at": "2026-09-01T21:22:56.000Z",
+  "updated_at": "2026-09-01T21:24:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "fixture",
+    "testing",
+    "text-generation",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:finetune:zai-org/GLM-5.3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 274496,
+  "parameters_human": "274496",
+  "storage_bytes": 1110392,
+  "storage_human": "1 MB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "transformers/src/transformers/models/glm_moe_dsa at main · huggingface ...",
+      "url": "https://github.com/huggingface/transformers/tree/main/src/transformers/models/glm_moe_dsa",
+      "snippet": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and ..."
+    },
+    {
+      "title": "GlmMoeDsa · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main/en/model_doc/glm_moe_dsa",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - JustVugg/colibri: Run frontier MoE models on hardware you ...",
+      "url": "https://github.com/JustVugg/colibri",
+      "snippet": "Website · Discord · English · 简体中文 · 繁體中文 · Italiano Tiny engine, immense model. Run frontier MoE models — 744B to 2.8T parameters — on consumer and heterogeneous hardware, in pure C with zero engine dependencies, by treating storage, RAM, and VRAM as a single inference hierarchy (AI memory multitiering). Five families run today: GLM-5.2 (744B), Inkling (975B), Kimi K3 ..."
+    },
+    {
+      "title": "GLM-MoE-DSA and Other Models | ByteDance-Seed/VeOmni | DeepWiki",
+      "url": "https://deepwiki.com/ByteDance-Seed/VeOmni/6.5-glm-moe-dsa-and-other-models",
+      "snippet": "GLM-MoE-DSA is a Mixture-of-Experts (MoE) model utilizing Dynamic Sparse Attention (DSA). In VeOmni, this model is implemented by patching the HuggingFace transformers (v5.2.0+) implementation to support optimized training paths, such as fused cross-entropy loss and hardware-specific kernels."
+    },
+    {
+      "title": "The glm_moe_dsa Puzzle: Debugging a Custom Model Architecture in ...",
+      "url": "https://magik.net/blog/llmopt/seg_1/chunk_0/glm_moe_dsa_puzzle.html",
+      "snippet": "The trust_remote_code=True flag isn&#x27;t working here, which means the model&#x27;s config.json specifies model_type: glm_moe_dsa but the transformers version doesn&#x27;t recognize it and the model repo might not have a custom config class (or the sglang call isn&#x27;t passing trust_remote_code at the right point). Let me check if the latest transformers has this model type or if we need the git version."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jax-image-tools/sam21-tiny-video-onnx",
+  "slug": "jax-image-tools-sam21-tiny-video-onnx",
+  "author": "jax-image-tools",
+  "url": "https://huggingface.co/jax-image-tools/sam21-tiny-video-onnx",
+  "created_at": "2026-09-01T20:46:21.000Z",
+  "updated_at": "2026-09-01T20:47:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "mask-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "segment-anything",
+    "video-segmentation",
+    "webgpu",
+    "onnxruntime-web",
+    "mask-generation",
+    "base_model:facebook/sam2.1-hiera-tiny",
+    "base_model:quantized:facebook/sam2.1-hiera-tiny",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 165248779,
+  "storage_human": "165 MB",
+  "base_model": "facebook/sam2.1-hiera-tiny",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JAX Image Tools",
+      "url": "https://imagetools.jax.org/",
+      "snippet": "WHAT IS JAX IMAGE TOOLS: A cloud-native application that serves as a platform to develop and deploy both conventional and ML/AI image analysis workflows. It is developed in the Google Cloud Platform (GCP) with microservices and the workflows are run on Temporal.io. Users can perform the image analysis tasks in a web browser, which makes it easier to learn and use. Get started with JAX Image ..."
+    },
+    {
+      "title": "square-zero-labs/sam2.1-tiny-video-onnx · Hugging Face",
+      "url": "https://huggingface.co/square-zero-labs/sam2.1-tiny-video-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "square-zero-labs/sam2.1-tiny-video-onnx at main - Hugging Face",
+      "url": "https://huggingface.co/square-zero-labs/sam2.1-tiny-video-onnx/tree/main",
+      "snippet": "square-zero-labs / sam2.1-tiny-video-onnx like 0 sam2 ONNX video webgpu License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - facebookresearch/sam2: The repository provides code for ...",
+      "url": "https://github.com/facebookresearch/sam2",
+      "snippet": "The repository provides code for running inference with the Meta Segment Anything Model 2 (SAM 2), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. - facebookresearch/sam2"
+    },
+    {
+      "title": "GitHub - serg-kas/sam21: The repository provides code for running ...",
+      "url": "https://github.com/serg-kas/sam21",
+      "snippet": "The repository provides code for running inference with the Meta Segment Anything Model 2 (SAM 2), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. - serg-kas/sam21"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "logan7000/llm-math345-ttrl-phi35mini-full",
+  "slug": "logan7000-llm-math345-ttrl-phi35mini-full",
+  "author": "logan7000",
+  "url": "https://huggingface.co/logan7000/llm-math345-ttrl-phi35mini-full",
+  "created_at": "2026-09-01T21:24:46.000Z",
+  "updated_at": "2026-09-01T21:31:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15284873292,
+  "storage_human": "15.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "logan7000/llm-math345-ttrl-phi35mini-endpoint · Hugging Face",
+      "url": "https://huggingface.co/logan7000/llm-math345-ttrl-phi35mini-endpoint",
+      "snippet": "Instructions to use logan7000/llm-math345-ttrl-phi35mini-endpoint with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "logan7000 (Logan Yang) - Hugging Face",
+      "url": "https://huggingface.co/logan7000",
+      "snippet": "Recent Activity updated a modelabout 1 hour ago logan7000/llm-math345-ttrl-phi4mini-endpoint updated a modelabout 1 hour ago logan7000/mllm-mmr1-ttrl-internvl35-2b-full-end-s722 updated a modelabout 1 hour ago logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-granite2b-math345-groupC-granite2b-end View all activity"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 124 Estimated models among 412 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "llm-math345-ttrl-phi35mini-endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/q1716523669/llm-math345-ttrl-phi35mini-endpoint",
+      "snippet": "Deploy llm-math345-ttrl-phi35mini-endpoint with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Sign in to FordLLM",
+      "url": "https://www.llm.mach1ml.ford.com/",
+      "snippet": "Sign in to FordLLM Sign in"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "vjprav33n/lang_gs1_translation_adapter",
+  "slug": "vjprav33n-lang_gs1_translation_adapter",
+  "author": "vjprav33n",
+  "url": "https://huggingface.co/vjprav33n/lang_gs1_translation_adapter",
+  "created_at": "2026-09-01T20:31:10.000Z",
+  "updated_at": "2026-09-01T20:32:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma4",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 404341301,
+  "storage_human": "404 MB",
+  "base_model": "unsloth/gemma-4-e4b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vjprav33n/nemo_lang_gs1_adapter · Hugging Face",
+      "url": "https://huggingface.co/vjprav33n/nemo_lang_gs1_adapter",
+      "snippet": "/ nemo_lang_gs1_adapter like 0 Transformers Safetensors Inference Endpoints arxiv:1910.09700 Model card FilesFiles and versions Community Train Deploy Use this model Edit model card Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and ..."
+    },
+    {
+      "title": "vjprav33n/Mis_12B_nemo_lang_gs1_translate_e1_adapter · Hugging Face",
+      "url": "https://huggingface.co/vjprav33n/Mis_12B_nemo_lang_gs1_translate_e1_adapter",
+      "snippet": "/ Mis_12B_nemo_lang_gs1_translate_e1_adapter like 0 Transformers Safetensors Inference Endpoints arxiv:1910.09700 Model card FilesFiles and versions Community Train Deploy Use this model Edit model card Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use ..."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google&#x27;s service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other languages."
+    },
+    {
+      "title": "Building a Simple Language Translation Tool Using a Pre-Trained ...",
+      "url": "https://www.geeksforgeeks.org/nlp/building-a-simple-language-translation-tool-using-a-pre-trained-translation-model/",
+      "snippet": "Translation is common among the applications of Natural Language Processing and machine learning. Though due to advancements in technology mainly in the pre-trained models, and transformers, it becomes easier to create a suitable language translation tool. Here in this article, we will create the language translation application from the pre-trained model available in Hugging Face Transformers."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

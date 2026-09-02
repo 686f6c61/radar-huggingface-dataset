@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "logan7000/llm-math345-ttrl-granite2b-full",
+  "slug": "logan7000-llm-math345-ttrl-granite2b-full",
+  "author": "logan7000",
+  "url": "https://huggingface.co/logan7000/llm-math345-ttrl-granite2b-full",
+  "created_at": "2026-09-01T21:43:59.000Z",
+  "updated_at": "2026-09-01T21:45:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10134252913,
+  "storage_human": "10.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "logan7000/llm-math345-ttrl-granite2b-endpoint · Hugging Face",
+      "url": "https://huggingface.co/logan7000/llm-math345-ttrl-granite2b-endpoint",
+      "snippet": "Instructions to use logan7000/llm-math345-ttrl-granite2b-endpoint with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "logan7000/llm-math345-gt-granite2b-best · Hugging Face",
+      "url": "https://huggingface.co/logan7000/llm-math345-gt-granite2b-best",
+      "snippet": "logan7000 / llm-math345-gt-granite2b-best like 0 Safetensors granite Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 35 Safetensors Model size 166k params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 125 Estimated models among 412 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    },
+    {
+      "title": "llm-math345-gt-granite2b-endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/q1716523669/llm-math345-gt-granite2b-endpoint",
+      "snippet": "Deploy llm-math345-gt-granite2b-endpoint with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

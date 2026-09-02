@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "itzPotato/transcoder-bilinear-2layer-seed1-layer1",
+  "slug": "itzpotato-transcoder-bilinear-2layer-seed1-layer1",
+  "author": "itzPotato",
+  "url": "https://huggingface.co/itzPotato/transcoder-bilinear-2layer-seed1-layer1",
+  "created_at": "2026-09-02T00:15:59.000Z",
+  "updated_at": "2026-09-02T00:16:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "interpretability",
+    "transcoder",
+    "sparse-autoencoder",
+    "arithmetic",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 266656,
+  "storage_human": "266656 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "itzPotato/bilinear-attn-addition-carry-2layer · Hugging Face",
+      "url": "https://huggingface.co/itzPotato/bilinear-attn-addition-carry-2layer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "itzPotato (Rohan Sashank Babbellapati) - Hugging Face",
+      "url": "https://huggingface.co/itzPotato/models",
+      "snippet": "itzPotato&#x27;s models1 Sort: Recently updated itzPotato/bilinear-attn-modular-addition-p113 292k•Updated 2 days ago• 18 • 1"
+    },
+    {
+      "title": "GitHub - facebookresearch/TransCoder: Public release of the TransCoder ...",
+      "url": "https://github.com/facebookresearch/TransCoder",
+      "snippet": "Train a model with the denoising auto-encoder and back-translation objectives Example:"
+    },
+    {
+      "title": "TransCoder Model | facebookresearch/CodeGen | DeepWiki",
+      "url": "https://deepwiki.com/facebookresearch/CodeGen/2.1-transcoder-model",
+      "snippet": "TransCoder Model Relevant source files Introduction The TransCoder model is the core component of Facebook Research&#x27;s unsupervised code translation system. It enables automatic translation between programming languages (primarily C++, Java, and Python) without requiring parallel data. This page describes the model architecture, training methodology, and usage of the TransCoder model as ..."
+    },
+    {
+      "title": "jacobdunefsky/transcoder_circuits | DeepWiki",
+      "url": "https://deepwiki.com/jacobdunefsky/transcoder_circuits",
+      "snippet": "This document provides a technical overview of the transcoder_circuits repository, a system for reverse-engineering large language model (LLM) circuits using sparse autoencoders called \"transcoders\"."
+    }
+  ]
+}

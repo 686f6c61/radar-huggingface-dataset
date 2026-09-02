@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Hayasuki/chuckleNet-v2",
+  "slug": "hayasuki-chucklenet-v2",
+  "author": "Hayasuki",
+  "url": "https://huggingface.co/Hayasuki/chuckleNet-v2",
+  "created_at": "2026-09-01T21:06:23.000Z",
+  "updated_at": "2026-09-01T21:14:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "chucklenet",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2234316,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hayasuki (SUBHAJIT DAS) - Hugging Face",
+      "url": "https://huggingface.co/Hayasuki",
+      "snippet": "User profile of SUBHAJIT DAS on Hugging Face"
+    },
+    {
+      "title": "Shufflenet-v2 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/shufflenet_v2",
+      "snippet": "Shufflenet-v2 Imagenet classifier and general purpose backbone. ShufflenetV2 is a machine learning model that can classify images from the Imagenet dataset. It can also be used as a backbone in building more complex models for specific use cases."
+    },
+    {
+      "title": "qualcomm/Shufflenet-v2 · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/Shufflenet-v2",
+      "snippet": "This is based on the implementation of Shufflenet-v2 found here. This repository contains pre-exported model files optimized for Qualcomm® devices. You can use the Qualcomm® AI Hub Models library to export with custom configurations. More details on model performance across various devices, can be found here."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 412 AI models across 408 benchmarks, with 229 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

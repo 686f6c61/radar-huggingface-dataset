@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "abhijeetknayak/SpaceInvadersNoFrameSkip-v4",
+  "slug": "abhijeetknayak-spaceinvadersnoframeskip-v4",
+  "author": "abhijeetknayak",
+  "url": "https://huggingface.co/abhijeetknayak/SpaceInvadersNoFrameSkip-v4",
+  "created_at": "2026-09-01T23:03:02.000Z",
+  "updated_at": "2026-09-01T23:03:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "SpaceInvadersNoFrameskip-v4",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27228074,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abhijeet2022/dqn-SpaceInvadersNoFrameskip-v4 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/367391",
+      "snippet": "This is a trained model of a DQN agent playing SpaceInvadersNoFrameskip-v4 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "hruslen/SpaceInvadersNoFrameskip-v4 · Hugging Face",
+      "url": "https://huggingface.co/hruslen/SpaceInvadersNoFrameskip-v4",
+      "snippet": "This is a trained model of a DQN agent playing SpaceInvadersNoFrameskip-v4 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "Bear-ai/dqn-SpaceInvadersNoFrameskip-v4 · Hugging Face",
+      "url": "https://huggingface.co/Bear-ai/dqn-SpaceInvadersNoFrameskip-v4",
+      "snippet": "DQN Agent playing SpaceInvadersNoFrameskip-v4 This is a trained model of a DQN agent playing SpaceInvadersNoFrameskip-v4 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "Insights DB",
+      "url": "https://insights-db.paloaltonetworks.com/models/dfalvearg/dqn-SpaceInvadersNoFrameskip-v4/e8cdddc196edb8e5da79e44ac2b1480d4cdfdecc/overview",
+      "snippet": "Discover potential threats in the dfalvearg / dqn-SpaceInvadersNoFrameskip-v4 model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "abhijeetknayak (Abhijeet Nayak) · GitHub",
+      "url": "https://github.com/abhijeetknayak",
+      "snippet": "I&#x27;m a Doctoral Researcher at the University of Technology Nuremberg. - abhijeetknayak"
+    }
+  ]
+}

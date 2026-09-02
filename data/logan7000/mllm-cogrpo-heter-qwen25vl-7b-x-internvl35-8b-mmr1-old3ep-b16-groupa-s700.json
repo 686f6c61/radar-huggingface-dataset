@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "logan7000/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupA-s700",
+  "slug": "logan7000-mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupa-s700",
+  "author": "logan7000",
+  "url": "https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupA-s700",
+  "created_at": "2026-08-25T04:55:38.000Z",
+  "updated_at": "2026-09-01T22:31:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2_5_vl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 848896,
+  "parameters_human": "848896",
+  "storage_bytes": 16595847753,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "logan7000 (Logan Yang) - Hugging Face",
+      "url": "https://huggingface.co/logan7000/models",
+      "snippet": "Recent Activity updated a modelabout 1 hour ago logan7000/llm-math345-ttrl-phi4mini-endpoint updated a modelabout 1 hour ago logan7000/mllm-mmr1-ttrl-internvl35-2b-full-end-s722 updated a modelabout 1 hour ago logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-granite2b-math345-groupC-granite2b-end View all activity"
+    },
+    {
+      "title": "mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-groupB-internvl35-8b ...",
+      "url": "https://huggingface.co/q1716523669/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-groupB-internvl35-8b-endpoint",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupA ...",
+      "url": "https://friendli.ai/models/q1716523669/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupA-endpoint",
+      "snippet": "Deploy mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupA-endpoint with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

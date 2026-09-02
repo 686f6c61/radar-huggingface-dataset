@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aariciah/gpt2-russian-20k-lc",
+  "slug": "aariciah-gpt2-russian-20k-lc",
+  "author": "aariciah",
+  "url": "https://huggingface.co/aariciah/gpt2-russian-20k-lc",
+  "created_at": "2026-09-01T21:41:46.000Z",
+  "updated_at": "2026-09-01T23:31:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 100612608,
+  "parameters_human": "100.6M",
+  "storage_bytes": 2414798481,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aariciah/gpt2-russian-20k · Hugging Face",
+      "url": "https://huggingface.co/aariciah/gpt2-russian-20k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aariciah/gpt2-russian-configC-20k · Hugging Face",
+      "url": "https://huggingface.co/aariciah/gpt2-russian-configC-20k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuned Models for aariciah/gpt2-russian-configC-20k - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:aariciah/gpt2-russian-configC-20k",
+      "snippet": "Explore machine learning models. 2 Full-text search Inference Available Edit filters Sort: Trending Active filters: aariciah/gpt2-russian-configC-20k Clear all"
+    },
+    {
+      "title": "aariciah/gpt2-russian-configC-20k at main - Hugging Face",
+      "url": "https://huggingface.co/aariciah/gpt2-russian-configC-20k/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Deploy Use this model main gpt2-russian-configC-20k Ctrl+K Ctrl+K 1 contributor History:6 commits aariciah Model save 77701a5 verifiedabout 9 hours ago gpt2-russian-configC-20k-GPT2TokenizerFastTraining in progress, step 61035about 18 hours ago .gitattributes Safe 1.52 kBinitial commitabout 21 ..."
+    },
+    {
+      "title": "aariciah/gpt2-russian-20k API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/aariciah/gpt2-russian-20k",
+      "snippet": "Run aariciah/gpt2-russian-20k with FriendliAI inference. This model is a fine-tuned version of on the None dataset."
+    }
+  ]
+}

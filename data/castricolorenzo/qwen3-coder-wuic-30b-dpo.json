@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "castricolorenzo/qwen3-coder-wuic-30b-dpo",
+  "slug": "castricolorenzo-qwen3-coder-wuic-30b-dpo",
+  "author": "castricolorenzo",
+  "url": "https://huggingface.co/castricolorenzo/qwen3-coder-wuic-30b-dpo",
+  "created_at": "2026-08-29T10:24:09.000Z",
+  "updated_at": "2026-09-01T19:20:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "qwen3moe",
+    "coding",
+    "agent",
+    "tool-calling",
+    "dpo",
+    "ollama",
+    "text-generation",
+    "base_model:Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 37113375904,
+  "storage_human": "37.1 GB",
+  "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "castricolorenzo/qwen3-coder-wuic-30b-dpo · Hugging Face",
+      "url": "https://huggingface.co/castricolorenzo/qwen3-coder-wuic-30b-dpo",
+      "snippet": "castricolorenzo / qwen3-coder-wuic-30b-dpo like 0 GGUF conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Run the WUIC coding model locally - WUIC Framework",
+      "url": "https://wuic-framework.com/model",
+      "snippet": "Download qwen3-coder-wuic:30b-dpo — our DPO fine-tune of qwen3-coder for the WUIC framework — from Hugging Face, run it on your own GPU with Ollama, and wire it into the WUIC backend and the WUIC Assistant VS Code extension. Fully local, no API calls."
+    },
+    {
+      "title": "Qwen3-Coder - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3-coder",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-Coder: Agentic Coding in the World",
+      "url": "https://qwen.ai/blog?id=qwen3-coder",
+      "snippet": "Qwen3-Coder works seamlessly with the community&#x27;s best developer tools. As a foundation model, we hope it can be used anywhere across the digital world — Agentic Coding in the World!"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Coder: Qwen3-Coder is the code version of Qwen3 ...",
+      "url": "https://github.com/QwenLM/Qwen3-Coder",
+      "snippet": "Qwen3-Coder is available in multiple sizes, Qwen3-Coder-480B-A35B-Instruct, Qwen3-Coder-30B-A3B-Instruct, Qwen3-Coder-Next, offering exceptional performance in both coding and agentic tasks. Qwen3-Coder-Next, an open-weight language model designed specifically for coding agents and local development."
+    }
+  ]
+}

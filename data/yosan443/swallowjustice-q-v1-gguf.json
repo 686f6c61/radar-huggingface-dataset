@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Yosan443/SwallowJustice-Q-V1-GGUF",
+  "slug": "yosan443-swallowjustice-q-v1-gguf",
+  "author": "Yosan443",
+  "url": "https://huggingface.co/Yosan443/SwallowJustice-Q-V1-GGUF",
+  "created_at": "2026-09-01T20:45:08.000Z",
+  "updated_at": "2026-09-01T20:46:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 5027783712,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models compatible with the GGUF library - Hugging Face",
+      "url": "https://huggingface.co/models?library=gguf",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - samssouza/uncensored-ai-list",
+      "url": "https://github.com/samssouza/uncensored-ai-list",
+      "snippet": "Contribute to samssouza/uncensored-ai-list development by creating an account on GitHub."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

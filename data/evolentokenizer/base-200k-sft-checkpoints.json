@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "EvoLenTokenizer/base-200k-sft-checkpoints",
+  "slug": "evolentokenizer-base-200k-sft-checkpoints",
+  "author": "EvoLenTokenizer",
+  "url": "https://huggingface.co/EvoLenTokenizer/base-200k-sft-checkpoints",
+  "created_at": "2026-07-28T04:15:29.000Z",
+  "updated_at": "2026-09-02T01:04:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dna",
+    "genomics",
+    "tokenization",
+    "sequence-classification",
+    "text-classification",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20156068072,
+  "storage_human": "20.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EvoLenTokenizer/base-200k-sft-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/EvoLenTokenizer/base-200k-sft-checkpoints",
+      "snippet": "Published checkpoints come in two tiers: Exact match (28 tasks). Identical learning rate, weight decay, warmup ratio, epochs, seed, batch size, model_max_length, precision and checkpoint-selection rule to the corresponding EvoLen-200k run. The only difference is the tokenizer and pretrained model."
+    },
+    {
+      "title": "EvoLenTokenizer/base-200k · Hugging Face",
+      "url": "https://huggingface.co/EvoLenTokenizer/base-200k",
+      "snippet": "EvoLenTokenizer / base-200k like 0 Follow Evolution-Guided Tokenization for DNA Language Model 2 Safetensors bert Generated from Trainer Model card FilesFiles and versions xet Community Copy to bucket new base_5120 Model description Intended uses & limitations Training and evaluation data Training procedure Training hyperparameters Training ..."
+    },
+    {
+      "title": "GitHub - HN020719/EvoLen · GitHub",
+      "url": "https://github.com/HN020719/EvoLen",
+      "snippet": "3. Continue to 200k steps. Resumes from checkpoint-100000 with identical hyperparameters. It calls run_mlm_200k.py, which is run_mlm.py plus a torch.load (weights_only=False) shim required to resume a checkpoint under torch >= 2.6: ... The resulting checkpoints are published as evolen-100k, base-100k, evolen-200k and base-200k."
+    },
+    {
+      "title": "EvoLen/README.md at main · HN020719/EvoLen · GitHub",
+      "url": "https://github.com/HN020719/EvoLen/blob/main/README.md",
+      "snippet": "3. Continue to 200k steps. Resumes from checkpoint-100000 with identical hyperparameters. It calls run_mlm_200k.py, which is run_mlm.py plus a torch.load (weights_only=False) shim required to resume a checkpoint under torch >= 2.6: ... The resulting checkpoints are published as evolen-100k, base-100k, evolen-200k and base-200k."
+    },
+    {
+      "title": "Model Spec (2026/08/18)",
+      "url": "https://model-spec.openai.com/",
+      "snippet": "The Model Spec specifies desired behavior for the models underlying OpenAI&#x27;s products (including our APIs)."
+    }
+  ]
+}

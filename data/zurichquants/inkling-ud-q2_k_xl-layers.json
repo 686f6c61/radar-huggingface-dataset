@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "zurichquants/inkling-UD-Q2_K_XL-layers",
+  "slug": "zurichquants-inkling-ud-q2_k_xl-layers",
+  "author": "zurichquants",
+  "url": "https://huggingface.co/zurichquants/inkling-UD-Q2_K_XL-layers",
+  "created_at": "2026-09-01T23:35:00.000Z",
+  "updated_at": "2026-09-01T23:35:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mesh-llm",
+  "languages": [],
+  "tags": [
+    "mesh-llm",
+    "gguf",
+    "layer-package",
+    "skippy",
+    "distributed-inference",
+    "local-inference",
+    "openai-compatible",
+    "experimental",
+    "image-text-to-text",
+    "base_model:unsloth/inkling-GGUF",
+    "base_model:quantized:unsloth/inkling-GGUF",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 585197825,
+  "parameters_human": "585.2M",
+  "storage_bytes": 318398240352,
+  "storage_human": "318.4 GB",
+  "base_model": "unsloth/inkling-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zurichquants (Zurichquants) - Hugging Face",
+      "url": "https://huggingface.co/zurichquants",
+      "snippet": "Sort: Recently updated. zurichquants/Inkling-Small-UD-Q4_K_XL-layers. Image-Text-to-Text • 0.2B • Updated 1 minute ago"
+    },
+    {
+      "title": "meshllm/inkling-UD-Q2_K_XL-layers · Hugging Face",
+      "url": "https://huggingface.co/meshllm/inkling-UD-Q2_K_XL-layers",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Inkling - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/inkling",
+      "snippet": "Inkling by Thinking Machines Labs are open-weight multimodal models consisting of: Inkling-Small the new 276B (12B active) model and the earlier 975B (41B) parameter model. Licensed under Apache 2.0, the models support a 1M token context window, native multimodal input for text, image, and audio, and generates text as the output."
+    },
+    {
+      "title": "Unsloth Dynamic 3.0 GGUFs | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/basics/dynamic-3.0-ggufs",
+      "snippet": "Revamped Layer Selection for GGUFs + safetensors: Unsloth Dynamic 2.0 now selectively quantizes layers much more intelligently and extensively. Rather than modifying only select layers, we now dynamically adjust the quantization type of every possible layer, and the combinations will differ for each layer and model."
+    },
+    {
+      "title": "Inkling by Thinking Machines: 975B MoE Model Guide | Sanj",
+      "url": "https://sanj.dev/post/inkling-model-guide-2026/",
+      "snippet": "Inkling — from Thinking Machines Lab, the AI research and infrastructure company founded by former OpenAI researchers — landed on Hugging Face on July 15, 2026. It was the largest open-weights release for exactly one day: Moonshot&#x27;s 2.8-trillion-parameter Kimi K3 took that title on July 16. Its smaller sibling Inkling-Small at 276B parameters is arguably the more interesting model for ..."
+    }
+  ]
+}

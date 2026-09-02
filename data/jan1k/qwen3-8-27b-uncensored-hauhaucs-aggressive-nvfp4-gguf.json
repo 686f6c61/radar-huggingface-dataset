@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "jan1k/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-NVFP4-GGUF",
+  "slug": "jan1k-qwen3-8-27b-uncensored-hauhaucs-aggressive-nvfp4-gguf",
+  "author": "jan1k",
+  "url": "https://huggingface.co/jan1k/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-NVFP4-GGUF",
+  "created_at": "2026-09-01T22:46:58.000Z",
+  "updated_at": "2026-09-01T22:52:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "nvfp4",
+    "fp4",
+    "qwen3.8",
+    "uncensored",
+    "vision",
+    "multimodal",
+    "mtp",
+    "fast-mtp",
+    "reasoning",
+    "llama-cpp",
+    "conversational",
+    "en",
+    "multilingual",
+    "base_model:HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "base_model:quantized:HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1863907840,
+  "parameters_human": "1.86B",
+  "storage_bytes": 37038924576,
+  "storage_human": "37.0 GB",
+  "base_model": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF-Q8-NVFP4",
+      "url": "https://huggingface.co/s10682257/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF-Q8-NVFP4/blob/main/README.md",
+      "snippet": "A tensor-level NVFP4 re-quantization of the HauhauCS Qwen3.8-27B-Uncensored-HauhauCS-Aggressive model, built for NVIDIA Blackwell (RTX 50-series) local inference."
+    },
+    {
+      "title": "aiconjured/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF-Q8-NVFP4",
+      "url": "https://ollama.com/aiconjured/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF-Q8-NVFP4",
+      "snippet": "What is this? The HauhauCS Aggressive release is a 27B dense causal language model with a vision encoder: direct answers, no refusal behavior, minimal preamble on hard prompts (0/465 refusals). It preserves Qwen3.8&#x27;s native NextN (MTP) head and offers the HauhauCS FastMTP acceleration sidecar. This NVFP4 mixed re-quant keeps all of that intact and makes the model fit comfortably on a 24 GB ..."
+    },
+    {
+      "title": "Qwen3.8 27B Uncensored HauhauCS Aggressive MTP GGUF",
+      "url": "https://interfaze.ai/models/hauhaucsqwen38-27b-uncensored-hauhaucs-aggressive-mtp-gguf",
+      "snippet": "Qwen3.8 27B Uncensored HauhauCS Aggressive MTP GGUF by HauhauCS, a image-text-to-text model with multimodal capabilities. Understand and compare multimodal features, benchmarks, and capabilities."
+    },
+    {
+      "title": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+      "url": "https://ollama.com/tinyrick/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+      "snippet": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF vision CLI cURL Python JavaScript DocumentationDocumentation ollama run tinyrick/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF:Q4_K_P"
+    }
+  ]
+}

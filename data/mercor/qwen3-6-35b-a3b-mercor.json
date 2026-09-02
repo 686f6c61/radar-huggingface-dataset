@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mercor/Qwen3.6-35B-A3B-Mercor",
+  "slug": "mercor-qwen3-6-35b-a3b-mercor",
+  "author": "mercor",
+  "url": "https://huggingface.co/mercor/Qwen3.6-35B-A3B-Mercor",
+  "created_at": "2026-08-14T00:04:27.000Z",
+  "updated_at": "2026-09-01T21:14:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "skyrl",
+    "reinforcement-learning",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234481285,
+  "storage_human": "70.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mercor/Qwen3.6-35B-A3B-Mercor · Hugging Face",
+      "url": "https://huggingface.co/mercor/Qwen3.6-35B-A3B-Mercor",
+      "snippet": "mercor / Qwen3.6-35B-A3B-Mercor like 0 Follow Mercor 121 Image-Text-to-Text Transformers Safetensors qwen3_5_moe skyrl reinforcement-learning conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Training frontier knowledge work agents: A 397B RL training guide with ...",
+      "url": "https://www.mercor.com/blog/training-frontier-knowledge-work-agents-a-397b-rl-training-guide-with-skyrl/",
+      "snippet": "Qwen3.6-35B-A3B increasingly relies on code execution; Qwen3.5-397B-A17B keeps the same preference throughout. To take a step further, we change both the harness and datasets, evaluating Terminal-Bench 2.1 with Terminus to understand whether our post-trained model generalizes to other agentic tasks. To our pleasant surprise, it does."
+    },
+    {
+      "title": "Qwen 3.6 35B A3B | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/qwen3-6-35b-a3b/",
+      "snippet": "Qwen3.6-35B-A3B is the first open-weight Qwen3.6 release, positioned around real-world utility, coding fluency, and stable agent behavior rather than just raw benchmark chasing. The model card describes it as a causal language model with a vision encoder, using a 35B-total, 3B-activated MoE design with 256 experts, 8 routed plus 1 shared active experts, and a native 262,144-token context ..."
+    },
+    {
+      "title": "Qwen 3.6-35B-A3B | Awesome Agents",
+      "url": "https://awesomeagents.ai/models/qwen-3-6-35b-a3b/",
+      "snippet": "Overview Qwen 3.6-35B-A3B is the latest sparse MoE model from Alibaba&#x27;s Qwen team, succeeding Qwen 3.5-35B-A3B. It activates 3 billion of its 35 billion parameters per token through 256 experts (8 routed + 1 shared), using a hybrid Gated DeltaNet + attention architecture."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B - 262k context, multimodal, open source",
+      "url": "https://www.llmreference.com/model/qwen3.6-35b-a3b",
+      "snippet": "Qwen3.6-35B-A3B is an open-weight multimodal MoE model with 35B total parameters and 3B activated per token, released April 2026. It features a hybrid architecture combining Gated DeltaNet linear attention and standard Gated Attention with 256 total experts (8 routed + 1 shared), and includes a vision encoder for image and video understanding. Optimized for agentic coding, long-context ..."
+    }
+  ]
+}

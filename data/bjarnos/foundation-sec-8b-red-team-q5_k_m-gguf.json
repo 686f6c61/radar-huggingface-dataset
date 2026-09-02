@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Bjarnos/foundation-sec-8b-red-team-Q5_K_M-GGUF",
+  "slug": "bjarnos-foundation-sec-8b-red-team-q5_k_m-gguf",
+  "author": "Bjarnos",
+  "url": "https://huggingface.co/Bjarnos/foundation-sec-8b-red-team-Q5_K_M-GGUF",
+  "created_at": "2026-09-01T19:43:37.000Z",
+  "updated_at": "2026-09-01T19:44:05.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "red-team",
+    "security",
+    "llama",
+    "foundation-sec",
+    "penetration-testing",
+    "authorized-security-testing",
+    "fine-tuned",
+    "lora",
+    "llama-cpp",
+    "gguf-my-repo",
+    "dataset:red-team-security",
+    "base_model:Ironcybersec/foundation-sec-8b-red-team",
+    "base_model:adapter:Ironcybersec/foundation-sec-8b-red-team",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8031309888,
+  "parameters_human": "8.03B",
+  "storage_bytes": 5733781184,
+  "storage_human": "5.7 GB",
+  "base_model": "Ironcybersec/foundation-sec-8b-red-team",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fdtn-ai/Foundation-Sec-8B · Hugging Face",
+      "url": "https://huggingface.co/fdtn-ai/Foundation-Sec-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ironcybersec/foundation-sec-8b-red-team · Hugging Face",
+      "url": "https://huggingface.co/Ironcybersec/foundation-sec-8b-red-team",
+      "snippet": "Ironcybersec is a specialized security company focused on red-teaming, penetration testing, and advanced security research. This model represents our commitment to advancing the field of cybersecurity through cutting-edge AI and machine learning technologies."
+    },
+    {
+      "title": "FenkoHQ/Foundation-Sec-8B",
+      "url": "https://ollama.com/FenkoHQ/Foundation-Sec-8B",
+      "snippet": "Foundation-Sec-8B - Model Card Model Information Foundation-Sec-8B (Llama-3.1-FoundationAI-SecurityLLM-base-8B) is an open-weight, 8-billion parameter base language model specialized for cybersecurity applications. It extends Llama-3.1-8B model through continued pretraining on a curated corpus of cybersecurity-specific text, including threat intelligence reports, vulnerability databases ..."
+    },
+    {
+      "title": "Foundation Sec 8B — Hardware Requirements & Compatibility",
+      "url": "https://llmrun.dev/model/fdtn-ai-foundation-sec-8b",
+      "snippet": "Foundation Sec 8B — Hardware Requirements & GPU Compatibility Chat Foundation Sec 8B is a 8.0B-parameter open language model from fdtn-ai. It supports a context window of up to 131,072 tokens. At Q4_K_M it needs about 5.39 GB of VRAM — see which GPUs and Macs can run it below."
+    },
+    {
+      "title": "foundation-sec-8b · Ollama",
+      "url": "https://ollama.com/search?q=foundation-sec-8b",
+      "snippet": "Foundation-Sec-8B-abliterated is an uncensored version fine-tuned based on fdtn-ai/Foundation-Sec-8B. Foundation-Sec-8B is an open-weight, 8-billion-parameter foundational language model designed specifically for cybersecurity applications."
+    }
+  ]
+}

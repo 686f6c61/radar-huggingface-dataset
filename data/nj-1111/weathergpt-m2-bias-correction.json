@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Nj-1111/weathergpt-m2-bias-correction",
+  "slug": "nj-1111-weathergpt-m2-bias-correction",
+  "author": "Nj-1111",
+  "url": "https://huggingface.co/Nj-1111/weathergpt-m2-bias-correction",
+  "created_at": "2026-09-01T20:00:01.000Z",
+  "updated_at": "2026-09-01T20:00:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - TRINEXOR/WeatherGPT: AI-powered conversational weather ...",
+      "url": "https://github.com/TRINEXOR/WeatherGPT",
+      "snippet": "WeatherGPT is a full-stack meteorological intelligence and weather analysis platform designed to make weather information easier to understand and more actionable. The platform combines real-time weather observations, forecasts, air-quality information, geospatial visualization, radar data, weather advisories, climate analysis, cyclone monitoring, and conversational weather assistance in a ..."
+    },
+    {
+      "title": "Nj-1111 (NEEL BOSE) - Hugging Face",
+      "url": "https://huggingface.co/Nj-1111/models",
+      "snippet": "User profile of NEEL BOSE on Hugging Face"
+    },
+    {
+      "title": "GPT Weather",
+      "url": "https://gptweather.org/",
+      "snippet": "Real-time AI performance weather conditions — monitoring responsiveness, coherence, capability, reliability, and availability across models and regions."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "WeatherGPT - ChatGPT Plugin to get the weather of any given location",
+      "url": "https://weathergpt.vercel.app/",
+      "snippet": "WeatherGPT is a ChatGPT Plugin to get the weather of any given location. Built with Next.js and served from Vercel&#x27;s Edge Network."
+    }
+  ]
+}

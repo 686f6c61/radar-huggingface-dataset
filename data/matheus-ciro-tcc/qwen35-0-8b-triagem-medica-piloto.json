@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "matheus-ciro-tcc/qwen35-0.8b-triagem-medica-piloto",
+  "slug": "matheus-ciro-tcc-qwen35-0-8b-triagem-medica-piloto",
+  "author": "matheus-ciro-tcc",
+  "url": "https://huggingface.co/matheus-ciro-tcc/qwen35-0.8b-triagem-medica-piloto",
+  "created_at": "2026-09-01T21:10:07.000Z",
+  "updated_at": "2026-09-01T21:10:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "qlora",
+    "unsloth",
+    "medical",
+    "triagem",
+    "portuguese",
+    "qwen3.5",
+    "text-generation",
+    "conversational",
+    "pt",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45576546,
+  "storage_human": "46 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "Qwen / Qwen3-8B like 1.34k Follow Qwen 102k Text Generation Transformers Safetensors qwen3 conversational Eval Results text-generation-inference arxiv:2309.00071 arxiv:2505.09388 License:apache-2.0 Model card FilesFiles and versions xet Community 39 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "qwen3.5:0.8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:0.8b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "matheus-ciro-tcc/qwen35-2b-triagem-medica-piloto · Hugging Face",
+      "url": "https://huggingface.co/matheus-ciro-tcc/qwen35-2b-triagem-medica-piloto",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run & Benchmark Qwen3.5 0.8B: Smallest Multimodal AI Model",
+      "url": "https://codersera.com/blog/run-and-benchmark-qwen35-08b/",
+      "snippet": "Quick answer. Qwen3.5 0.8B is Alibaba&#x27;s smallest multimodal model, with a 262K context window and native vision support. Pull it with `ollama run qwen3.5:0.8b` for text or run the GGUF in llama.cpp for image input. Expect strong recall but weak code accuracy — bump to Qwen3.5 4B for any coding task."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

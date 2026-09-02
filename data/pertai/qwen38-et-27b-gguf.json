@@ -5,7 +5,7 @@
   "author": "pertai",
   "url": "https://huggingface.co/pertai/qwen38-et-27b-GGUF",
   "created_at": "2026-08-30T09:25:16.000Z",
-  "updated_at": "2026-08-30T11:25:44.000Z",
+  "updated_at": "2026-09-01T13:29:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,7 +26,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 413,
+  "downloads_30d": 427,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

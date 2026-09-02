@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "allenai/ACE2S-SHiELD-plus-supplemental-checkpoints",
+  "slug": "allenai-ace2s-shield-plus-supplemental-checkpoints",
+  "author": "allenai",
+  "url": "https://huggingface.co/allenai/ACE2S-SHiELD-plus-supplemental-checkpoints",
+  "created_at": "2026-09-01T17:54:43.000Z",
+  "updated_at": "2026-09-01T23:25:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "fme",
+  "languages": [],
+  "tags": [
+    "fme",
+    "arxiv:2606.07928",
+    "doi:10.57967/hf/10260",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22409621874,
+  "storage_human": "22.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "allenai/ACE2S-SHiELD-plus · Hugging Face",
+      "url": "https://huggingface.co/allenai/ACE2S-SHiELD-plus",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · allenai/ACE2S-SHiELD-plus at main - Hugging Face",
+      "url": "https://huggingface.co/allenai/ACE2S-SHiELD-plus/blob/main/README.md",
+      "snippet": "Instructions to use allenai/ACE2S-SHiELD-plus with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Full Model Emulation How to use allenai/ACE2S-SHiELD-plus with Full Model Emulation:"
+    },
+    {
+      "title": "ACE - a allenai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/allenai/ace",
+      "snippet": "Note Additional training artifacts related to the ACE2-ERA5 model. For nearly all purposes, we recommend using the checkpoint in the ACE2-ERA5 repository listed above instead of the ones in this repository."
+    },
+    {
+      "title": "allenai/ACE2S-SHiELD-plus at main - Hugging Face",
+      "url": "https://huggingface.co/allenai/ACE2S-SHiELD-plus/tree/main",
+      "snippet": "Instructions to use allenai/ACE2S-SHiELD-plus with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Full Model Emulation How to use allenai/ACE2S-SHiELD-plus with Full Model Emulation:"
+    },
+    {
+      "title": "GitHub - ai2cm/ace2s-shield-plus-paper",
+      "url": "https://github.com/ai2cm/ace2s-shield-plus-paper/tree/main",
+      "snippet": "ace2s-shield-plus-paper This repository contains the code for performing the experiments described in the manuscript titled \"Disentangling the effects of sea surface temperature and CO 2 in global machine learned weather-climate emulators,\" submitted to the Journal of Geophysical Research: Machine Learning and Computation."
+    }
+  ]
+}

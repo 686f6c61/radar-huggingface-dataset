@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "dreamidotme/fable2",
+  "slug": "dreamidotme-fable2",
+  "author": "dreamidotme",
+  "url": "https://huggingface.co/dreamidotme/fable2",
+  "created_at": "2026-09-02T00:26:28.000Z",
+  "updated_at": "2026-09-02T01:21:53.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "fables",
+    "folklore",
+    "small-language-model",
+    "public-domain-training-data",
+    "text-generation",
+    "en",
+    "license:cc0-1.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 89554944,
+  "parameters_human": "89.6M",
+  "storage_bytes": 181047072,
+  "storage_human": "181 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dreamidotme (dreami) - Hugging Face",
+      "url": "https://huggingface.co/dreamidotme",
+      "snippet": "models1 dreamidotme/fable-one-not-by-claude Text Generation •Updated about 7 hours ago"
+    },
+    {
+      "title": "dreamidotme/fable-one-not-by-claude · Hugging Face",
+      "url": "https://huggingface.co/dreamidotme/fable-one-not-by-claude",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fable2 - 2025-02-14 13:33:00 - Free AI Model | Tensor.Art",
+      "url": "https://www.tensor.art/models/830501840429955129",
+      "snippet": "Download Fable2 - free LORA FLUX.1 AI model on TENSOR. By New2"
+    },
+    {
+      "title": "Fable2 - 2025-02-14 13:33:00 - Free AI Model | TensorHub Art",
+      "url": "https://tensorhub.art/models/830501840429955129",
+      "snippet": "Download Fable2 - free LORA FLUX.1 AI model on TENSORHUB ART. By New2"
+    },
+    {
+      "title": "AI Models - Try Fable AI",
+      "url": "https://tryfableai.com/models",
+      "snippet": "Explore the chat and image generation models available through Try Fable AI, including Claude Fable 5, GPT Image 2, and Nano Banana."
+    }
+  ]
+}

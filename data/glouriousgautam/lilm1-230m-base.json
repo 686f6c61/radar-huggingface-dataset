@@ -5,7 +5,7 @@
   "author": "glouriousgautam",
   "url": "https://huggingface.co/glouriousgautam/LilM1-230M-base",
   "created_at": "2026-09-01T10:51:10.000Z",
-  "updated_at": "2026-09-01T10:57:43.000Z",
+  "updated_at": "2026-09-01T17:03:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,7 +26,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 233897728,

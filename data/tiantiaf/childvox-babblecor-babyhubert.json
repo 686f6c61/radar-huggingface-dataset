@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "tiantiaf/childvox-babblecor-babyhubert",
+  "slug": "tiantiaf-childvox-babblecor-babyhubert",
+  "author": "tiantiaf",
+  "url": "https://huggingface.co/tiantiaf/childvox-babblecor-babyhubert",
+  "created_at": "2026-09-01T20:25:52.000Z",
+  "updated_at": "2026-09-01T23:00:11.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "child_speech",
+    "child_vocalization",
+    "speech_maturity",
+    "audio-classification",
+    "multilingual",
+    "dataset:BabbleCor",
+    "arxiv:2605.29257",
+    "base_model:MarvinLvn/BabyHuBERT",
+    "base_model:finetune:MarvinLvn/BabyHuBERT",
+    "license:openrail",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1902004900,
+  "storage_human": "1.9 GB",
+  "base_model": "MarvinLvn/BabyHuBERT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tiantiaf/childvox-speechmaturity-babyhubert · Hugging Face",
+      "url": "https://huggingface.co/tiantiaf/childvox-speechmaturity-babyhubert",
+      "snippet": "ChildVox - BabyHuBERT ... ChildVox: A Speech, Audio, and Large Audio-Language Model Benchmark in Understanding and Characterizing Sound across Childhood"
+    },
+    {
+      "title": "ChildVox - a tiantiaf Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/tiantiaf/childvox",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from tiantiaf"
+    },
+    {
+      "title": "ChildVox - tiantiaf0627.github.io",
+      "url": "https://tiantiaf0627.github.io/childvox/",
+      "snippet": "ChildVox is a unified benchmark covering the full developmental trajectory through which children \"express\" themselves, ranging from physiological sounds at birth, through infant vocalizations and toddler babble, to school-age speech."
+    },
+    {
+      "title": "[2509.15001] BabyHuBERT: Multilingual Self-Supervised Learning for ...",
+      "url": "https://arxiv.org/abs/2509.15001",
+      "snippet": "Child-centered daylong recordings are essential for studying early language development, but existing speech models trained on clean adult data perform poorly due to acoustic and linguistic differences. We introduce BabyHuBERT, a self-supervised speech model trained on 13,000 hours of multilingual child-centered recordings from 40+ languages. Evaluated on voice type classification, the task of ..."
+    },
+    {
+      "title": "GitHub - LAAC-LSCP/BabyHuBERT",
+      "url": "https://github.com/LAAC-LSCP/BabyHuBERT",
+      "snippet": "BabyHuBERT extends HuBERT &#x27;s self-supervised learning framework to child-centered multilingual long-form recordings. It follows the same two-stage pre-training procedure as HuBERT, starting from WavLM-base-plus features, and is implemented using the torchaudio HuBERT example."
+    }
+  ]
+}

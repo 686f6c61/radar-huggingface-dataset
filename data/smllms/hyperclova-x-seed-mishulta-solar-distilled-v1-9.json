@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "smllms/HyperCLOVA-X-SEED-MISHULTA-Solar-Distilled-v1.9",
+  "slug": "smllms-hyperclova-x-seed-mishulta-solar-distilled-v1-9",
+  "author": "smllms",
+  "url": "https://huggingface.co/smllms/HyperCLOVA-X-SEED-MISHULTA-Solar-Distilled-v1.9",
+  "created_at": "2026-09-01T22:49:48.000Z",
+  "updated_at": "2026-09-01T22:53:35.000Z",
+  "license": "hyperclovax-seed",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "hyperclovax",
+    "korean",
+    "k-ds",
+    "hackathon",
+    "fine-tuned",
+    "lora",
+    "solar-distilled",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "ko",
+    "base_model:naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+    "base_model:adapter:naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14748112896,
+  "parameters_human": "14.75B",
+  "storage_bytes": 29496274120,
+  "storage_human": "29.5 GB",
+  "base_model": "naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HyperCLOVA-X-SEED-MISHULTA-Solar-Distilled-v1.8 - Hugging Face",
+      "url": "https://huggingface.co/smllms/HyperCLOVA-X-SEED-MISHULTA-Solar-Distilled-v1.8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HyperCLOVA-X-SEED-MISHULTA-Solar-Distilled-v1.7 - Hugging Face",
+      "url": "https://huggingface.co/smllms/HyperCLOVA-X-SEED-MISHULTA-Solar-Distilled-v1.7",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HyperCLOVA X | CLOVA",
+      "url": "https://clova.ai/en/hyperclova",
+      "snippet": "HyperCLOVA X SEED 8B Omni is a Korean-centered any-to-any model that processes and generates text, images, and audio through a unified architecture. Built on deep Korean-language understanding, it seamlessly handles explanations, conversations, visual analysis, and voice interactions within integrated reasoning workflows."
+    },
+    {
+      "title": "HyperCLOVA X Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2404.01954v1",
+      "snippet": "The model is evaluated across various benchmarks, including comprehensive reasoning, knowledge, commonsense, factuality, coding, math, chatting, instruction-following, and harmlessness, in both Korean and English. HyperCLOVA X exhibits strong reasoning capabilities in Korean backed by a deep understanding of the language and cultural nuances."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/hyperclovax.md at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/hyperclovax.md",
+      "snippet": "HyperCLOVA X SEED Think is NAVER Cloud&#x27;s language model combining pruning and knowledge distillation with advanced reasoning capabilities. The 14B model features a Transformer-based architecture with Peri-Layer Normalization and Maximal Update Parameterization (μP), 14.74B parameters, and 32k context length. It supports dual-mode reasoning (think / non-think) and function calling via a ChatML ..."
+    }
+  ]
+}

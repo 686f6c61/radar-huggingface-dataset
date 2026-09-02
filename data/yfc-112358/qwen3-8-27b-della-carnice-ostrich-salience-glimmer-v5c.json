@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "YFC-112358/Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5c",
+  "slug": "yfc-112358-qwen3-8-27b-della-carnice-ostrich-salience-glimmer-v5c",
+  "author": "YFC-112358",
+  "url": "https://huggingface.co/YFC-112358/Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5c",
+  "created_at": "2026-09-01T11:48:30.000Z",
+  "updated_at": "2026-09-01T20:46:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "mergekit",
+    "merge",
+    "della_linear",
+    "qwen3",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:merge:Qwen/Qwen3.8-27B",
+    "base_model:YFC-112358/Qwen3.8-27B-TM-Gemma4-Glimmer-v3",
+    "base_model:merge:YFC-112358/Qwen3.8-27B-TM-Gemma4-Glimmer-v3",
+    "base_model:etemiz/Ostrich-27B-Qwen3.8-260815",
+    "base_model:merge:etemiz/Ostrich-27B-Qwen3.8-260815",
+    "base_model:kai-os/Carnice-V3",
+    "base_model:merge:kai-os/Carnice-V3",
+    "base_model:vectionlabs/Salience-27B-R5",
+    "base_model:merge:vectionlabs/Salience-27B-R5",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575835720,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B, kai-os/Carnice-V3, etemiz/Ostrich-27B-Qwen3.8-260815, vectionlabs/Salience-27B-R5, YFC-112358/Qwen3.8-27B-TM-Gemma4-Glimmer-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5",
+      "url": "https://huggingface.co/YFC-112358/Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8 27B Della Carnice Ostrich Salience Glimmer V5 by YFC-112358",
+      "url": "https://llm-explorer.com/model/YFC-112358%2FQwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5,1FqBL4CvOLoWeZywHvv6b3",
+      "snippet": "Qwen3.8 27B Della Carnice Ostrich Salience Glimmer V5 is an open-source 27b LLM by YFC-112358. VRAM 55.4GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5",
+      "url": "https://huggingface.co/YFC-112358/Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5/discussions",
+      "snippet": "Instructions to use YFC-112358/Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5",
+      "url": "https://friendli.ai/models/YFC-112358/Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5",
+      "snippet": "Deploy Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "The official Qwen/Qwen3.8-27B-FP8 checkpoint serves directly on a 950PR — no offline re-quantization and no --quantization ascend. vLLM Ascend reads quant_method: fp8 and weight_block_size straight from the checkpoint, expands the weight_scale_inv tiles at load time and re-quantizes to MXFP8 on 950."
+    }
+  ]
+}

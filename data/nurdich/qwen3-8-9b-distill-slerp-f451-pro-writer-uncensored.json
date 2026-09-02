@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "nurdich/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored",
+  "slug": "nurdich-qwen3-8-9b-distill-slerp-f451-pro-writer-uncensored",
+  "author": "nurdich",
+  "url": "https://huggingface.co/nurdich/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored",
+  "created_at": "2026-09-01T19:44:35.000Z",
+  "updated_at": "2026-09-01T19:44:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "merged-model",
+    "merge",
+    "mergekit",
+    "Uncensored",
+    "vivid writing",
+    "novel",
+    "roleplay",
+    "nsfw",
+    "not for all audiences",
+    "conversational",
+    "zh",
+    "base_model:DavidAU/Qwen3.5-9B-The-Bradbury-F451-Pro-Writer-Uncensored-Heretic",
+    "base_model:merge:DavidAU/Qwen3.5-9B-The-Bradbury-F451-Pro-Writer-Uncensored-Heretic",
+    "base_model:petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
+    "base_model:merge:petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19327660954,
+  "storage_human": "19.3 GB",
+  "base_model": "petruhonk/Qwen3.8-9B-Distill-uncensored-heretic, DavidAU/Qwen3.5-9B-The-Bradbury-F451-Pro-Writer-Uncensored-Heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · nurdich/Qwen3.8-9B-Distill-uncensored-heretic at main",
+      "url": "https://huggingface.co/nurdich/Qwen3.8-9B-Distill-uncensored-heretic/blob/main/README.md",
+      "snippet": "Duplicated from petruhonk/Qwen3.8-9B-Distill-uncensored-heretic nurdich / Qwen3.8-9B-Distill-uncensored-heretic like 1 Text Generation Transformers Safetensors English qwen3_5 image-text-to-text empero-ai qwen3.5 qwen3.8 distillation reasoning function-calling sft conversational License:apache-2.0 Model card FilesFiles and versions xet ..."
+    },
+    {
+      "title": "mradermacher/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored-i1 ...",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored-i1-GGUF",
+      "snippet": "mradermacher / Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored-i1-GGUF like 0 GGUF imatrix conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen3.8-9B-Distill-uncensored-heretic - FriendliAI",
+      "url": "https://friendli.ai/models/nurdich/Qwen3.8-9B-Distill-uncensored-heretic",
+      "snippet": "Highlights Distilled chain-of-thought — every answer opens with a <think> block learned directly from Qwen3.8 2.4T A95B traces rather than synthetic self-generated reasoning. Mathematics and code emphasis — the trace mix is deliberately weighted toward hard math and competitive programming, the domains where distillation moves the needle most at this scale. Native function calling per ..."
+    },
+    {
+      "title": "Empero — Independent AI Research Lab",
+      "url": "https://empero.org/",
+      "snippet": "Empero is an independent AI research lab in Germany building small, efficient language models you can own and run yourself. Latest: Qwen3.8 distilled to 9B / 4B / 2B, and a GDN-aware 27B Ridge GGUF at 11.7 GiB. 1M+ downloads on Hugging Face."
+    }
+  ]
+}

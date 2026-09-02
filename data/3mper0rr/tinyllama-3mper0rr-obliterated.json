@@ -5,15 +5,17 @@
   "author": "3MPER0RR",
   "url": "https://huggingface.co/3MPER0RR/TinyLlama-3MPER0RR-obliterated",
   "created_at": "2026-08-30T09:27:48.000Z",
-  "updated_at": "2026-08-30T19:58:48.000Z",
+  "updated_at": "2026-09-01T10:08:55.000Z",
   "license": "mit",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "text-generation",
   "library": null,
   "languages": [],
   "tags": [
     "safetensors",
     "llama",
+    "text-generation",
+    "conversational",
     "license:mit",
     "region:us"
   ],
@@ -28,7 +30,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "removed": false,
   "removed_at": null,

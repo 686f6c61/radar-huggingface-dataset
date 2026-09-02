@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "codex-automatus/htdn-arabic-350m1",
+  "slug": "codex-automatus-htdn-arabic-350m1",
+  "author": "codex-automatus",
+  "url": "https://huggingface.co/codex-automatus/htdn-arabic-350m1",
+  "created_at": "2026-07-30T16:09:13.000Z",
+  "updated_at": "2026-09-01T19:36:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "htdn",
+    "jax",
+    "flax",
+    "text-generation",
+    "arabic",
+    "ar",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 185,
+  "trending_score": 0,
+  "parameters": 349011904,
+  "parameters_human": "349.0M",
+  "storage_bytes": 2688107808,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Codex في ChatGPT | وكلاء برمجة بالذكاء ... - OpenAI",
+      "url": "https://openai.com/ar/codex/",
+      "snippet": "يساعد Codex في ChatGPT فرق الهندسة على البناء بشكل أسرع باستخدام وكلاء برمجة مدعومين بالذكاء الاصطناعي. أنجز طلبات Pull Request، وإعادة الهيكلة، ومراجعات الكود، والأتمتة، والمزيد عبر مسارات عمل متوازية."
+    },
+    {
+      "title": "GitHub - openai/codex: Lightweight coding agent that runs in your ...",
+      "url": "https://github.com/openai/codex",
+      "snippet": "Codex CLI is a coding agent from OpenAI that runs locally on your computer. If you want Codex in your code editor (VS Code, Cursor, Windsurf), install in your IDE."
+    },
+    {
+      "title": "gijl/htdn-arabic-350m · Hugging Face",
+      "url": "https://huggingface.co/gijl/htdn-arabic-350m",
+      "snippet": "HTDN — نموذج لغوي مخصّص (JAX/Flax) نموذج HTDN (بنية مخصّصة تجمع بين طبقة ديناميكيات متكرّرة وانتباه ذاتي سببي مع RoPE و SwiGLU) دُرِّب على بيانات عربية متعددة المصادر (streaming) على GPU T4×2 عبر Kaggle."
+    },
+    {
+      "title": "Codex in ChatGPT | AI Coding Agents for Software Engineering",
+      "url": "https://openai.com/codex/",
+      "snippet": "Codex in ChatGPT helps engineering teams build faster with AI coding agents. Complete pull requests, refactors, code reviews, automations, and more across parallel workflows."
+    },
+    {
+      "title": "codex-automatus (AutoCode-Ai) - Hugging Face",
+      "url": "https://huggingface.co/codex-automatus",
+      "snippet": "Org profile for AutoCode-Ai on Hugging Face, the AI community building the future."
+    }
+  ]
+}

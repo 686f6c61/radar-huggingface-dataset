@@ -5,7 +5,7 @@
   "author": "HyeonseokE",
   "url": "https://huggingface.co/HyeonseokE/smolvla_phase1_pick_place_A2_via4cm_1000_10fps",
   "created_at": "2026-08-31T22:39:20.000Z",
-  "updated_at": "2026-09-01T02:24:14.000Z",
+  "updated_at": "2026-09-01T11:27:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -14,8 +14,8 @@
   "tags": [
     "lerobot",
     "safetensors",
-    "robotics",
     "smolvla",
+    "robotics",
     "dataset:HyeonseokE/phase1_pick_place_A2_10fps_via4cm",
     "arxiv:2506.01844",
     "base_model:lerobot/smolvla_base",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 21,
   "trending_score": 0,
   "parameters": 450046176,
   "parameters_human": "450.0M",

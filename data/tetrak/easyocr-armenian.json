@@ -5,7 +5,7 @@
   "author": "tetrak",
   "url": "https://huggingface.co/tetrak/easyocr-armenian",
   "created_at": "2026-08-30T20:58:23.000Z",
-  "updated_at": "2026-08-31T13:11:07.000Z",
+  "updated_at": "2026-09-01T10:00:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",
@@ -31,10 +31,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": 3800616,
+  "parameters": 3801130,
   "parameters_human": "3.8M",
-  "storage_bytes": 60852374,
-  "storage_human": "61 MB",
+  "storage_bytes": 121712956,
+  "storage_human": "122 MB",
   "base_model": null,
   "formats": [
     "safetensors"

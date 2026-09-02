@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "spelunk-cloud/F2LLM-v2-330M-Q8_0-GGUF",
+  "slug": "spelunk-cloud-f2llm-v2-330m-q8_0-gguf",
+  "author": "spelunk-cloud",
+  "url": "https://huggingface.co/spelunk-cloud/F2LLM-v2-330M-Q8_0-GGUF",
+  "created_at": "2026-06-30T16:49:59.000Z",
+  "updated_at": "2026-09-01T19:17:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "embeddings",
+    "sentence-similarity",
+    "base_model:codefuse-ai/F2LLM-v2-330M",
+    "base_model:quantized:codefuse-ai/F2LLM-v2-330M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 1746,
+  "trending_score": 0,
+  "parameters": 334349184,
+  "parameters_human": "334.3M",
+  "storage_bytes": 716648192,
+  "storage_human": "717 MB",
+  "base_model": "codefuse-ai/F2LLM-v2-330M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "spelunk-cloud/F2LLM-v2-330M-Q8_0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/spelunk-cloud/F2LLM-v2-330M-Q8_0-GGUF",
+      "snippet": "What this is A single GGUF file containing the F2LLM-v2-330M weights quantized from the original BF16 safetensors to Q8_0:"
+    },
+    {
+      "title": "spelunk-cloud/F2LLM-v2-330M-Q8_0-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/spelunk-cloud/F2LLM-v2-330M-Q8_0-GGUF/tree/main",
+      "snippet": "spelunk-cloud / F2LLM-v2-330M-Q8_0-GGUF like 0 Sentence Similarity GGUF quantized embeddings License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main F2LLM-v2-330M-Q8_0-GGUF 364 MB Ctrl+K Ctrl+K 1 contributor History:3 commits spelunk-cloud Add tokenizer.json (unmodified, pinned upstream revision) + document it 77050dd 20 days ago .gitattributes Safe 1.56 ..."
+    },
+    {
+      "title": "spelunk/docs/third-party-models.md at main · spelunk-cloud/spelunk · GitHub",
+      "url": "https://github.com/spelunk-cloud/spelunk/blob/main/docs/third-party-models.md",
+      "snippet": "Third-party models spelunk-server bundles a native embedding model rather than calling an external embedding endpoint. cargo-about (see about.toml) covers Rust dependency licenses, but it does not cover the model weights downloaded at runtime, so they are attributed here."
+    },
+    {
+      "title": "spelunk/docs/model-attribution.md at main · spelunk-cloud/spelunk",
+      "url": "https://github.com/spelunk-cloud/spelunk/blob/main/docs/model-attribution.md",
+      "snippet": "Model attribution spelunk-server bundles a native embedding model rather than calling an external embedding endpoint. cargo-about (see about.toml) covers Rust dependency licenses, but it does not cover the model weights downloaded at runtime, so they are attributed here."
+    },
+    {
+      "title": "Getting started with spelunk · spelunk",
+      "url": "https://www.spelunk.cloud/docs/getting-started",
+      "snippet": "The server bundles a native embedding model (F2LLM-v2-330M, a 896-dim Q8_0 GGUF, run through the candle runtime; it uses Metal/GPU on macOS and the CPU elsewhere)."
+    }
+  ]
+}

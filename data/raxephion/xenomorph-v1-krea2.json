@@ -5,7 +5,7 @@
   "author": "Raxephion",
   "url": "https://huggingface.co/Raxephion/Xenomorph-V1-Krea2",
   "created_at": "2026-08-30T22:07:09.000Z",
-  "updated_at": "2026-08-30T22:45:27.000Z",
+  "updated_at": "2026-09-01T07:58:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 6,
+  "downloads_30d": 13,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

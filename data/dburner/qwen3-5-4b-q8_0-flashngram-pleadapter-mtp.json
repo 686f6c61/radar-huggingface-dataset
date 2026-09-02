@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "dburner/Qwen3.5-4B-Q8_0-FlashNgram-PLEAdapter-MTP",
+  "slug": "dburner-qwen3-5-4b-q8_0-flashngram-pleadapter-mtp",
+  "author": "dburner",
+  "url": "https://huggingface.co/dburner/Qwen3.5-4B-Q8_0-FlashNgram-PLEAdapter-MTP",
+  "created_at": "2026-09-01T23:24:51.000Z",
+  "updated_at": "2026-09-01T23:27:24.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen",
+    "qwen3.5",
+    "n-gram",
+    "ple",
+    "experimental",
+    "research",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 55539721729,
+  "parameters_human": "55.54B",
+  "storage_bytes": 33436970978,
+  "storage_human": "33.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dburner/Qwen3.5-4B-Q8_0-FlashNgram-MTP · Hugging Face",
+      "url": "https://huggingface.co/dburner/Qwen3.5-4B-Q8_0-FlashNgram-MTP",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Qwen 3.5: All 8 Models, Benchmarks & Local Setup Guide",
+      "url": "https://qwen-ai.com/qwen-3-5/",
+      "snippet": "Qwen 3.5: The Complete Guide to Every Model in the Family Qwen 3.5 isn&#x27;t a single model. It&#x27;s a family of eight open-weight models ranging from 0.8B to 397B parameters, all released under Apache 2.0, all natively multimodal (text, image, video), and all built on a hybrid architecture that mixes linear attention with traditional transformers."
+    },
+    {
+      "title": "Empero — Independent AI Research Lab",
+      "url": "https://empero.org/",
+      "snippet": "New · Qwen3.8-9B / 4B / 2B — distilled Small models, trained in the open. We are an independent AI research lab in Germany, building language models efficient enough to run on hardware you own. Latest: a full-parameter distill of Qwen3.8-2.4T into 9B / 4B / 2B, and a GDN-aware 27B GGUF at 11.7 GiB. The open-weight Qwythos family has passed one million downloads on Hugging Face."
+    }
+  ]
+}

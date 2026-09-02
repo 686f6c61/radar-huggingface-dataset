@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "DS4AI-UPB/span-detector-ro",
+  "slug": "ds4ai-upb-span-detector-ro",
+  "author": "DS4AI-UPB",
+  "url": "https://huggingface.co/DS4AI-UPB/span-detector-ro",
+  "created_at": "2026-09-01T18:37:14.000Z",
+  "updated_at": "2026-09-01T18:55:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "ro"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "relation-extraction",
+    "romanian",
+    "span-detection",
+    "ner",
+    "ro",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 558845957,
+  "parameters_human": "558.8M",
+  "storage_bytes": 6723661603,
+  "storage_human": "6.7 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing span-detect-1",
+      "url": "https://www.span.app/blog/introducing-span-detect-1",
+      "snippet": "Our code detector is powered by span-detect-1, a state-of-the-art machine learning model for chunk-level detection of AI generated code. span-detect-1 ties AI coding assistants to code shipped into production for the first time, creating clearer visibility into impact and ROI."
+    },
+    {
+      "title": "Span - AI-native engineering intelligence and automations",
+      "url": "https://www.span.app/",
+      "snippet": "Span is a developer intelligence platform that uniquely links agent traces to code and PRs, connecting real activity to downstream outcomes. Complete, prompt-to-prod view helps teams understand what drives AI-coding effectiveness and where to improve."
+    },
+    {
+      "title": "DS4AI-UPB (Distributed Systems for Artificial Intelligence Laboratory)",
+      "url": "https://huggingface.co/DS4AI-UPB",
+      "snippet": "Org profile for Distributed Systems for Artificial Intelligence Laboratory on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "DS4AI-UPB/gemma4-ro-re-lora · Hugging Face",
+      "url": "https://huggingface.co/DS4AI-UPB/gemma4-ro-re-lora",
+      "snippet": "Instructions to use DS4AI-UPB/gemma4-ro-re-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use DS4AI-UPB/gemma4-ro-re-lora with PEFT:"
+    },
+    {
+      "title": "Distributed Systems for Artificial Intelligence Laboratory - GitHub",
+      "url": "https://github.com/DS4AI-UPB/",
+      "snippet": "Distributed Systems for Artificial Intelligence Laboratory has 15 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

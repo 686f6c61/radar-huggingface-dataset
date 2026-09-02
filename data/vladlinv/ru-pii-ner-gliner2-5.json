@@ -30,12 +30,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 37,
   "trending_score": 0,
   "parameters": 287355159,
   "parameters_human": "287.4M",
-  "storage_bytes": 2314957909,
-  "storage_human": "2.3 GB",
+  "storage_bytes": 1165496881,
+  "storage_human": "1.2 GB",
   "base_model": "fastino/gliner2.5-multi-v1",
   "formats": [
     "safetensors"

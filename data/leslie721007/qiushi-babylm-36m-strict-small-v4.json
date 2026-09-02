@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "leslie721007/Qiushi-BabyLM-36M-Strict-Small-v4",
+  "slug": "leslie721007-qiushi-babylm-36m-strict-small-v4",
+  "author": "leslie721007",
+  "url": "https://huggingface.co/leslie721007/Qiushi-BabyLM-36M-Strict-Small-v4",
+  "created_at": "2026-09-01T23:11:16.000Z",
+  "updated_at": "2026-09-01T23:26:45.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "fill-mask",
+    "babylm",
+    "babylm-2026",
+    "strict-small",
+    "masked-language-modeling",
+    "sample-efficient-pretraining",
+    "trust-remote-code",
+    "custom_code",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36458592,
+  "parameters_human": "36.5M",
+  "storage_bytes": 2898920559,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=created",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub Pages - Baby",
+      "url": "https://babylm.github.io/",
+      "snippet": "Track update: This year introduces a dedicated MultiLingual track, and removes Multimodal and Interaction as standalone competition tracks, both are now subsumed into Strict / Strict-Small (paired image-text data and teacher-model feedback are allowed). Evaluation pipeline: The BabyLM 2026 evaluation pipeline is now ready!"
+    },
+    {
+      "title": "babylm-eval/strict at main · babylm-org/babylm-eval · GitHub",
+      "url": "https://github.com/babylm-org/babylm-eval/tree/main/strict",
+      "snippet": "This code provides the backend for evaluating models participating in the Strict and Strict-small track of BabyLM. The code for this has been adapted from last year&#x27;s iteration. An addition from last year that we keep is that we have two evaluation types: fast evaluation uses a smaller set of evaluation samples, allows for quick testing of your models, and is what you will report performance ..."
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "babylm-baselines/strict-gpt2/README.md at main - GitHub",
+      "url": "https://github.com/babylm-org/babylm-baselines/blob/main/strict-gpt2/README.md",
+      "snippet": "BabyLM 2026: GPT-2 Baselines for the Strict, Strict-Small and Multilingual Tracks This is the codebase that was used to run training for the GPT-2 baselines of the Strict, Strict-Small and Multilingual tracks of the BabyLM 2026 Challenge. Please refer to the Call for Papers for a description of challenge rules for all relevant tracks."
+    }
+  ]
+}

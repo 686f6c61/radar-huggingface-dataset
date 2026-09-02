@@ -5,15 +5,17 @@
   "author": "3MPER0RR",
   "url": "https://huggingface.co/3MPER0RR/Qwen3.8-27B-3MPER0RR-obliterated",
   "created_at": "2026-08-31T10:47:09.000Z",
-  "updated_at": "2026-09-01T00:03:52.000Z",
+  "updated_at": "2026-09-01T10:10:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "text-generation",
   "library": null,
   "languages": [],
   "tags": [
     "safetensors",
     "qwen3_5",
+    "text-generation",
+    "conversational",
     "license:apache-2.0",
     "region:us"
   ],
@@ -28,7 +30,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "removed": false,
   "removed_at": null,

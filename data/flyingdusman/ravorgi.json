@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Flyingdusman/ravorgi",
+  "slug": "flyingdusman-ravorgi",
+  "author": "Flyingdusman",
+  "url": "https://huggingface.co/Flyingdusman/ravorgi",
+  "created_at": "2026-09-01T23:43:09.000Z",
+  "updated_at": "2026-09-01T23:43:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228730136,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flyingdusman (ray Willemse) - Hugging Face",
+      "url": "https://huggingface.co/Flyingdusman/models",
+      "snippet": "User profile of ray Willemse on Hugging Face"
+    },
+    {
+      "title": "Flyingdusman/testmodel · Hugging Face",
+      "url": "https://huggingface.co/Flyingdusman/testmodel",
+      "snippet": "Flyingdusman / testmodel like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "Fast3D - Create 3D Models with AI in Seconds",
+      "url": "https://fast3d.io/",
+      "snippet": "Fast3D is the leading AI-powered 3D model generator. Create high-quality 3D models from text or images in seconds."
+    }
+  ]
+}

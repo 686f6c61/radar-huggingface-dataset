@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "zornias/KREA",
+  "slug": "zornias-krea",
+  "author": "zornias",
+  "url": "https://huggingface.co/zornias/KREA",
+  "created_at": "2026-09-01T22:28:56.000Z",
+  "updated_at": "2026-09-01T22:29:09.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "flux",
+    "text-to-image",
+    "lora",
+    "fal",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 234677352,
+  "storage_human": "235 MB",
+  "base_model": "undefined",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krea: AI Creative Suite for Images, Video & 3D",
+      "url": "https://www.krea.ai/",
+      "snippet": "Generate, edit, and enhance images, videos, and 3D assets with Krea&#x27;s creative AI suite. Start for free with real-time tools, powerful models, and collaborative workflows."
+    },
+    {
+      "title": "Model Library - krea.ai",
+      "url": "https://www.krea.ai/models",
+      "snippet": "Explore Krea&#x27;s AI model library across image, video, audio, enhancer, edit, 3D, video restyle, motion transfer, and lipsync tools."
+    },
+    {
+      "title": "Krea 2: AI Image Foundation Model & Style Control",
+      "url": "https://www.krea.ai/krea-2",
+      "snippet": "Create expressive AI images with Krea 2, Krea AI&#x27;s in-house foundation model for aesthetic diversity, style control, moodboards, and creative workflows."
+    },
+    {
+      "title": "krea (KREA) - Hugging Face",
+      "url": "https://huggingface.co/krea/models",
+      "snippet": "AI Creative Suite."
+    },
+    {
+      "title": "Model Overview - Krea",
+      "url": "https://www.krea.ai/docs/user-guide/features/model-overview",
+      "snippet": "Compare every Krea image and video model by speed, quality tier, credit cost, and best use case so you can pick the right one for each creative job."
+    }
+  ]
+}

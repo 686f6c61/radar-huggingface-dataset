@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "callensxavier/leanflow-dual-scale-solver",
+  "slug": "callensxavier-leanflow-dual-scale-solver",
+  "author": "callensxavier",
+  "url": "https://huggingface.co/callensxavier/leanflow-dual-scale-solver",
+  "created_at": "2026-09-01T18:44:35.000Z",
+  "updated_at": "2026-09-01T20:15:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "leanflow",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "leanflow",
+    "fluid-dynamics",
+    "navier-stokes",
+    "pde-solver",
+    "karpathy-ratchet",
+    "dual-scale",
+    "lean4",
+    "scientific-computing",
+    "industrial-ai",
+    "mhd",
+    "cfd",
+    "other",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1659895,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "callensxavier/leanflow-dualscale-pde · Hugging Face",
+      "url": "https://huggingface.co/callensxavier/leanflow-dualscale-pde",
+      "snippet": "🌊 LeanFlow: Neuro-Symbolic Dual-Scale Navier-Stokes PDE Solver Version R3 — Peer-reviewed benchmark corrections applied (August 2026). Scientific paper: report/leanflow_scientific_report_R3.pdf | Audit certificate: certificate.json LeanFlow is an open-source, mathematically verified, high-performance fluid dynamics PDE solver featuring:"
+    },
+    {
+      "title": "callensxavier (Callens) - Hugging Face",
+      "url": "https://huggingface.co/callensxavier",
+      "snippet": "Image-Text-to-Text • 33B • Updated 14 days ago • 8.39M • • 3.01k"
+    },
+    {
+      "title": "GitHub - epfl-lara/LeanFlow",
+      "url": "https://github.com/epfl-lara/LeanFlow",
+      "snippet": "LeanFlow is a Lean-first AI automation tool. It drives a language model inside a real Lean 4 project to repair proofs, formalize mathematics from source documents, and verify a whole project until no sorry remains."
+    },
+    {
+      "title": "callensxavier/leanflow-jhtdb-benchmark · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/callensxavier/leanflow-jhtdb-benchmark",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI optimizaton - a callensxavier Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/callensxavier/ai-optimizaton",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from callensxavier"
+    }
+  ]
+}

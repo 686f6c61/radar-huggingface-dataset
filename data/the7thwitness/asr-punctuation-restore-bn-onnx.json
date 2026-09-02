@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "the7thwitness/asr-punctuation-restore-bn-onnx",
+  "slug": "the7thwitness-asr-punctuation-restore-bn-onnx",
+  "author": "the7thwitness",
+  "url": "https://huggingface.co/the7thwitness/asr-punctuation-restore-bn-onnx",
+  "created_at": "2026-09-01T23:06:03.000Z",
+  "updated_at": "2026-09-01T23:06:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "onnx",
+    "bengali",
+    "bangla",
+    "punctuation-restoration",
+    "token-classification",
+    "bn",
+    "base_model:SayedShaun/asr-punctuation-restore-bn",
+    "base_model:quantized:SayedShaun/asr-punctuation-restore-bn",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 358207053,
+  "storage_human": "358 MB",
+  "base_model": "SayedShaun/asr-punctuation-restore-bn",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - sayedshaun/asr-punct-restore · GitHub",
+      "url": "https://github.com/sayedshaun/asr-punct-restore",
+      "snippet": "Attribution These weights are part of the 1st-place solution of the Bengali.AI Speech Recognition Kaggle competition, trained by Erdene-Ochir Tuguldur (tugstugi), team Chimege. This package republishes them (via SayedShaun/asr-punctuation-restore-bn, mirrored from SayedShaun/bengali-whisper-medium) purely for standalone, ASR-agnostic use."
+    },
+    {
+      "title": "SayedShaun/asr-punctuation-restore-bn · Hugging Face",
+      "url": "https://huggingface.co/SayedShaun/asr-punctuation-restore-bn",
+      "snippet": "Provenance These are the exact weights from the punct/ subfolders of SayedShaun/bengali-whisper-medium, republished standalone (layers at the repo root, not nested under punct/) so users of the asr-punct-restore package don&#x27;t need to pull the (much larger) ASR repo just for the punctuation heads."
+    },
+    {
+      "title": "asr-punct-restore/README.md at main - GitHub",
+      "url": "https://github.com/sayedshaun/asr-punct-restore/blob/main/README.md",
+      "snippet": "Attribution These weights are part of the 1st-place solution of the Bengali.AI Speech Recognition Kaggle competition, trained by Erdene-Ochir Tuguldur (tugstugi), team Chimege. This package republishes them (via SayedShaun/asr-punctuation-restore-bn, mirrored from SayedShaun/bengali-whisper-medium) purely for standalone, ASR-agnostic use."
+    },
+    {
+      "title": "1-800-BAD-CODE/punct_cap_seg_47_language · Hugging Face",
+      "url": "https://huggingface.co/1-800-BAD-CODE/punct_cap_seg_47_language",
+      "snippet": "This model accepts as input lower-cased, unpunctuated, unsegmented text in 47 languages and performs punctuation restoration, true-casing (capitalization), and sentence boundary detection (segmentation)."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

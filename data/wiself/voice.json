@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Wiself/Voice",
+  "slug": "wiself-voice",
+  "author": "Wiself",
+  "url": "https://huggingface.co/Wiself/Voice",
+  "created_at": "2026-09-01T20:46:44.000Z",
+  "updated_at": "2026-09-01T22:00:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "gemma",
+    "moe",
+    "text-generation",
+    "style-transfer",
+    "q8_0",
+    "roleplay",
+    "voice",
+    "qwen",
+    "qwen3",
+    "llama",
+    "arxiv:2607.02770",
+    "arxiv:2503.19786",
+    "en",
+    "dataset:gryphe/styletune-roleplay-200",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:quantized:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Add an AI Voice Model | Voice Models",
+      "url": "https://voice-models.com/add",
+      "snippet": "Submit an AI voice model to Voice Models with its source URL, voice details, and RVC metadata."
+    },
+    {
+      "title": "Browse 30,000+ AI Voice Models for RVC",
+      "url": "https://voice-models.com/",
+      "snippet": "Search 30,000+ AI voice models for RVC. Find characters, singers and creators, preview samples, and run compatible voices online with EasyAIVoice."
+    },
+    {
+      "title": "ElevenLabs Adam AI Voice | Iconic AI Voice for Social Media",
+      "url": "https://elevenlabs.io/voice-library/adam",
+      "snippet": "Create content with the ElevenLabs Adam AI voice. Hear samples and generate natural, iconic narration for social media, videos, and more."
+    },
+    {
+      "title": "Text-to-Speech Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "snippet": "Active filters: text-to-speech. Clear all. IndexTeam/IndexTTS-2.5. Text-to-Speech • Updated 7 days ago • 4.79k • 134"
+    },
+    {
+      "title": "Free AI Voice Generator | 10,000+ Voices in 70+ Languages",
+      "url": "https://elevenlabs.io/ai-voice-generator",
+      "snippet": "Create realistic AI voices in seconds. Access 10,000+ voices, voice cloning, and the most expressive text-to-speech model. Try free—no credit card required."
+    }
+  ]
+}

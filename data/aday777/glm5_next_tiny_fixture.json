@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aday777/glm5_next_tiny_fixture",
+  "slug": "aday777-glm5_next_tiny_fixture",
+  "author": "aday777",
+  "url": "https://huggingface.co/aday777/glm5_next_tiny_fixture",
+  "created_at": "2026-09-01T21:37:15.000Z",
+  "updated_at": "2026-09-01T21:37:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm5_next",
+    "fixture",
+    "testing",
+    "text-generation",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:finetune:zai-org/GLM-5.3-Flash",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 274496,
+  "parameters_human": "274496",
+  "storage_bytes": 1110392,
+  "storage_human": "1 MB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "transformers/src/transformers/models/glm5_next at main · huggingface ...",
+      "url": "https://github.com/huggingface/transformers/tree/main/src/transformers/models/glm5_next",
+      "snippet": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and ..."
+    },
+    {
+      "title": "transformers/src/transformers/models/glm5_next/modeling_glm5_next.py at ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/src/transformers/models/glm5_next/modeling_glm5_next.py",
+      "snippet": "# modular_glm5_next.py file directly. One of our CI enforces this. # 🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨 ..."
+    },
+    {
+      "title": "GLM-5: from Vibe Coding to Agentic Engineering - arXiv.org",
+      "url": "https://arxiv.org/html/2602.15763v1",
+      "snippet": "With these advancements, GLM-5 stands not just as a more powerful model but as a more efficient and practical foundation for the next generation of AI agents. We release GLM-5 to the community to further advance the frontier of efficient, agentic general intelligence."
+    },
+    {
+      "title": "GLM 5 — Next-Gen Frontier Model",
+      "url": "https://glm5.app/",
+      "snippet": "GLM 5 AI (GLM-5) is a fifth-generation frontier large language model featuring 745B total parameters, Mixture-of-Experts architecture with 44B activated parameters, and 200K context window — delivering open-source SOTA performance across reasoning, coding, and agentic tasks."
+    },
+    {
+      "title": "GLM-5: From Vibe Coding to Agentic Engineering - z.ai",
+      "url": "https://z.ai/blog/glm-5",
+      "snippet": "GLM-5 is designed for complex systems engineering and long-horizon agentic tasks. On our internal evaluation suite CC-Bench-V2, GLM-5 significantly outperforms GLM-4.7 across frontend, backend, and long-horizon tasks, narrowing the gap to Claude Opus 4.5."
+    }
+  ]
+}

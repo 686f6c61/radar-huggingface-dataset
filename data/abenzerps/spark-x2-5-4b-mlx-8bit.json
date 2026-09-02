@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "abenzerps/Spark-X2.5-4B-MLX-8bit",
+  "slug": "abenzerps-spark-x2-5-4b-mlx-8bit",
+  "author": "abenzerps",
+  "url": "https://huggingface.co/abenzerps/Spark-X2.5-4B-MLX-8bit",
+  "created_at": "2026-09-01T20:09:27.000Z",
+  "updated_at": "2026-09-01T20:13:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "spark2_5",
+    "spark-x2.5",
+    "long-context",
+    "1m-context",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "base_model:XHToken/Spark-X2.5-4B",
+    "base_model:quantized:XHToken/Spark-X2.5-4B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1156656640,
+  "parameters_human": "1.16B",
+  "storage_bytes": 4369342458,
+  "storage_human": "4.4 GB",
+  "base_model": "XHToken/Spark-X2.5-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spark-X2.5/README.md at main · XHToken/Spark-X2.5 · GitHub",
+      "url": "https://github.com/XHToken/Spark-X2.5/blob/main/README.md",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    },
+    {
+      "title": "Fine-tuned Models for XHToken/Spark-X2.5-4B-Base - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:XHToken/Spark-X2.5-4B-Base",
+      "snippet": "Reset XHToken/Spark-X2.5-4B-Base Adapters Finetunes Quantizations Merges Apps llama.cpp LM Studio Jan Draw Things DiffusionBee JoyFusion vLLM Ollama MLX LM Docker Model Runner Lemonade SGLang Unsloth Desktop Pi Hermes Agent Atomic Chat OpenClaw Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai ..."
+    },
+    {
+      "title": "Spark-X2.5-4B · Models",
+      "url": "https://www.modelscope.cn/models/XHToken/Spark-X2.5-4B",
+      "snippet": "Spark-X2.5 is a compact, general-purpose language model for conversation, writing, translation, reas"
+    },
+    {
+      "title": "Spark X2.5 4B - 1.05m context, open source | LLM Reference",
+      "url": "https://www.llmreference.com/model/spark-x2.5-4b",
+      "snippet": "Spark X2.5 4B is available now for coding, rag, and agents with open-source and 1.05m context; evaluate it while provider pricing coverage matures."
+    },
+    {
+      "title": "huihui-ai (huihui.ai) - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai",
+      "snippet": "huihui-ai/GLM-5.1-Math ... huihui-ai/GLM-5.1-Multilingual-STEM ... huihui-ai/opus-4-7 ... huihui-ai/Guilherme34_uncensor-v2"
+    }
+  ]
+}

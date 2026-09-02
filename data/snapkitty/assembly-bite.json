@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/assembly-bite",
+  "slug": "snapkitty-assembly-bite",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/assembly-bite",
+  "created_at": "2026-09-01T21:07:11.000Z",
+  "updated_at": "2026-09-01T23:33:19.000Z",
+  "license": "sovereign-source-license-v2",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "code",
+    "sovereign-compute",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SNAPKITTYWEST/assembly-bite: Assembly Bite - GitHub",
+      "url": "https://github.com/SNAPKITTYWEST/assembly-bite",
+      "snippet": "What Is Assembly Bite Assembly Bite is Ahmad&#x27;s custom pseudo-assembly language for expressing ML model computations at the byte-code level. Four instruction types:"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=snapkitty",
+      "snippet": "Explore machine learning models. 6 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: snapkitty Clear all"
+    },
+    {
+      "title": "Snapkitty Collective - Hugging Face",
+      "url": "https://huggingface.co/Snapkitty",
+      "snippet": "Sovereign AI infrastructure — quantum-seeded agents, WORM-sealed reasoning, NAND-decomposed LLMs. Bel Esprit D&#x27;Accord Irrevocable Trust · EIN 42-697643"
+    },
+    {
+      "title": "SparkKitty Malware Steals Crypto Wallet Seed Phrases From iOS and ...",
+      "url": "https://cybersecuritynews.com/sparkkitty-malware-steals-crypto-wallet/",
+      "snippet": "SparkKitty targets iOS and Android users, using OCR to steal crypto wallet seed phrases from photos in infected apps."
+    },
+    {
+      "title": "Overview · SNAPKITTYWEST/assembly-bite · GitHub",
+      "url": "https://github.com/SNAPKITTYWEST/assembly-bite/security",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "aDaikiKamata/patch_policy_libero_object_tipsv2_token_smoke",
+  "slug": "adaikikamata-patch_policy_libero_object_tipsv2_token_smoke",
+  "author": "aDaikiKamata",
+  "url": "https://huggingface.co/aDaikiKamata/patch_policy_libero_object_tipsv2_token_smoke",
+  "created_at": "2026-09-02T01:19:05.000Z",
+  "updated_at": "2026-09-02T01:20:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "patch_policy",
+    "robotics",
+    "dataset:lerobot/libero_object_image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 211886599,
+  "parameters_human": "211.9M",
+  "storage_bytes": 2798186340,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "patch_policy_libero_object_tipsv2_smoke - Hugging Face",
+      "url": "https://huggingface.co/aDaikiKamata/patch_policy_libero_object_tipsv2_smoke",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aDaikiKamata/patch_policy_libero_object_tipsv2_smoke at main",
+      "url": "https://huggingface.co/aDaikiKamata/patch_policy_libero_object_tipsv2_smoke/tree/main",
+      "snippet": "History:7 commits aDaikiKamata Upload model card and train config 6d423b5 verifiedabout 6 hours ago checkpointscheckpoint 000100about 6 hours ago .gitattributes Safe 1.52 kBinitial commitabout 6 hours ago README.md 5.95 kBUpload model card and train configabout 6 hours ago config.json 1.59 kBUpload policyabout 6 hours ago model.safetensors 847 ..."
+    },
+    {
+      "title": "[2604.12012] TIPSv2: Advancing Vision-Language Pretraining with ...",
+      "url": "https://arxiv.org/abs/2604.12012",
+      "snippet": "Recent progress in vision-language pretraining has enabled significant improvements to many downstream computer vision applications, such as classification, retrieval, segmentation and depth prediction. However, a fundamental capability that these models still struggle with is aligning dense patch representations with text embeddings of corresponding concepts. In this work, we investigate this ..."
+    },
+    {
+      "title": "LIBERO Datasets - LIBERO",
+      "url": "https://libero-project.github.io/datasets",
+      "snippet": "LIBERO-Object: 10 tasks from LIBERO-Object suite. LIBERO-Goal: 10 tasks from LIBERO-Goal suite. LIBERO-100: 100 tasks from LIBERO-100 suite. Note that the datasets are split under the folder names of LIBERO-90 and LIBERO-10. We also have a script for programmatic downloading the datasets. Download Checkpoints LIBERO-Spatial Best Model Checkpoints"
+    },
+    {
+      "title": "Libero - Libero",
+      "url": "https://libero-project.github.io/main.html",
+      "snippet": "LIBERO Benchmarking Knowledge Transfer in Lifelong Robot Learning In the future, robots will be pretrained with a diverse set of skills in factory before deployment. However, we believe it is also a must for them to learn with their human users throughout their lifetime to really become a personalized embodied agent."
+    }
+  ]
+}

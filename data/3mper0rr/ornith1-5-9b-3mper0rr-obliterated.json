@@ -5,15 +5,17 @@
   "author": "3MPER0RR",
   "url": "https://huggingface.co/3MPER0RR/Ornith1.5-9B-3MPER0RR-obliterated",
   "created_at": "2026-08-31T23:51:04.000Z",
-  "updated_at": "2026-09-01T00:08:29.000Z",
+  "updated_at": "2026-09-01T10:09:42.000Z",
   "license": "mit",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "text-generation",
   "library": null,
   "languages": [],
   "tags": [
     "safetensors",
     "qwen3_5",
+    "text-generation",
+    "conversational",
     "license:mit",
     "region:us"
   ],
@@ -28,7 +30,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "removed": false,
   "removed_at": null,

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "alrope/pathgen_qwen2_5-3b-vl-flex-from_pub",
+  "slug": "alrope-pathgen_qwen2_5-3b-vl-flex-from_pub",
+  "author": "alrope",
+  "url": "https://huggingface.co/alrope/pathgen_qwen2_5-3b-vl-flex-from_pub",
+  "created_at": "2026-09-01T20:58:22.000Z",
+  "updated_at": "2026-09-01T20:59:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flex_qwen2_5_vl_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6610155264,
+  "parameters_human": "6.61B",
+  "storage_bytes": 13231877873,
+  "storage_human": "13.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alrope/pub_endo_rex_qwen2_5-3b-vl-averaged at main - Hugging Face",
+      "url": "https://huggingface.co/alrope/pub_endo_rex_qwen2_5-3b-vl-averaged/tree/main",
+      "snippet": "alrope / pub_endo_rex_qwen2_5-3b-vl-averaged like 0 Safetensors qwen2_5_vl Model card FilesFiles and versions xet Community Copy to bucket new main pub_endo_rex_qwen2_5-3b-vl-averaged 7.53 GB Ctrl+K Ctrl+K 1 contributor History:2 commits alrope Upload folder using huggingface_hub 5904e15 verified2 months ago .gitattributes Safe 1.57 kBUpload folder using huggingface_hub2 months ago added ..."
+    },
+    {
+      "title": "alrope/pub_endo_rex_qwen2_5-3b-vl-averaged · Hugging Face",
+      "url": "https://huggingface.co/alrope/pub_endo_rex_qwen2_5-3b-vl-averaged",
+      "snippet": "alrope / pub_endo_rex_qwen2_5-3b-vl-averaged like 0 Safetensors qwen2_5_vl Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 7 Safetensors Model size 4B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "qwen/qwen2.5-vl-3b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen2.5-vl-3b",
+      "snippet": "Custom model by qwen Qwen2.5-VL-3B-Instruct Qwen2.5-VL-3B-Instruct is a vision-language model capable of understanding images, text, and video. It supports structured outputs, visual localization, and can process long videos with temporal reasoning. The model is suitable for tasks involving object recognition, chart and layout analysis, and extracting structured data from visual content. This ..."
+    },
+    {
+      "title": "qwen2.5:3b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:3b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "Model Architecture | QwenLM/Qwen2.5-VL | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen2.5-VL/2-model-architecture",
+      "snippet": "Model Architecture Relevant source files This document provides a high-level overview of the internal architecture for the Qwen2.5-VL and Qwen3-VL series. It details the core components, structural innovations, and the data flow that enables advanced multimodal reasoning, long-context video understanding, and agentic interactions. Overview Qwen2.5-VL and Qwen3-VL utilize a vision-language ..."
+    }
+  ]
+}

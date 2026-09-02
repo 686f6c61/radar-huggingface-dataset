@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/snapkitty-transformer",
+  "slug": "snapkitty-snapkitty-transformer",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/snapkitty-transformer",
+  "created_at": "2026-09-01T21:07:10.000Z",
+  "updated_at": "2026-09-01T23:33:20.000Z",
+  "license": "sovereign-source-license-v2",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "code",
+    "sovereign-compute",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Snapkitty Collective - Hugging Face",
+      "url": "https://huggingface.co/Snapkitty",
+      "snippet": "Sovereign AI infrastructure — quantum-seeded agents, WORM-sealed reasoning, NAND-decomposed LLMs. Bel Esprit D&#x27;Accord Irrevocable Trust · EIN 42-697643"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=snapkitty",
+      "snippet": "Explore machine learning models. 6 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: snapkitty Clear all"
+    },
+    {
+      "title": "SnapKitty Downloads — Sovereign OS Ecosystem",
+      "url": "https://collectivekitty.com/downloads",
+      "snippet": "The AI-native enterprise operating system that governs itself."
+    },
+    {
+      "title": "SNAPKITTYWEST/AGENTS.md at main - GitHub",
+      "url": "https://github.com/SNAPKITTYWEST/SNAPKITTYWEST/blob/main/AGENTS.md",
+      "snippet": "Most AI tools keep the machine in the background. You talk, it responds, you paste the output. I built something different. SnapKitty is a financial operating system where the agents are visible, ..."
+    },
+    {
+      "title": "GitHub - SNAPKITTYWEST/SNAPKITTYWEST: Most AI tools keep the machine in ...",
+      "url": "https://github.com/SNAPKITTYWEST/SNAPKITTYWEST",
+      "snippet": "Most AI tools keep the machine in the background. You talk, it responds, you paste the output. I built something different. SnapKitty is a financial operating system where the agents are visible, ..."
+    }
+  ]
+}

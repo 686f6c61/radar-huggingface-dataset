@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "TontonTremblay/doper2-handal-obj000032",
+  "slug": "tontontremblay-doper2-handal-obj000032",
+  "author": "TontonTremblay",
+  "url": "https://huggingface.co/TontonTremblay/doper2-handal-obj000032",
+  "created_at": "2026-09-02T00:59:37.000Z",
+  "updated_at": "2026-09-02T00:59:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 346109702,
+  "storage_human": "346 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TontonTremblay (jonathan) - Hugging Face",
+      "url": "https://huggingface.co/TontonTremblay/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 28 days ago ... published a dataset 28 days ago"
+    },
+    {
+      "title": "TontonTremblay (jonathan) - Hugging Face",
+      "url": "https://huggingface.co/TontonTremblay/models",
+      "snippet": "User profile of jonathan on Hugging Face"
+    },
+    {
+      "title": "Sam 3D 2.0 | AI 3D Model Generator from Image or Text",
+      "url": "https://www.sam3d2.com/",
+      "snippet": "Sam 3D 2.0 is an AI image-to-3D tool for turning a single image or prompt into a usable 3D model. It is designed to speed up early concepting, review, and export."
+    },
+    {
+      "title": "[2308.01477] HANDAL: A Dataset of Real-World Manipulable Object ...",
+      "url": "https://arxiv.org/abs/2308.01477",
+      "snippet": "We present the HANDAL dataset for category-level object pose estimation and affordance prediction. Unlike previous datasets, ours is focused on robotics-ready manipulable objects that are of the proper size and shape for functional grasping by robot manipulators, such as pliers, utensils, and screwdrivers. Our annotation process is streamlined, requiring only a single off-the-shelf camera and ..."
+    },
+    {
+      "title": "Pixal3D - Free AI Image to 3D Generator.",
+      "url": "https://pixal3d.net/",
+      "snippet": "Pixal3D is a free AI image-to-3D generator powered by the MIT-licensed Pixal3D project from TencentARC. Upload an image and generate 3D models online."
+    }
+  ]
+}

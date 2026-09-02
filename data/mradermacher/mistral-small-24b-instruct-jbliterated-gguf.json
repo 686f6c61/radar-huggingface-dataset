@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mistral-Small-24B-Instruct-Jbliterated-GGUF",
+  "slug": "mradermacher-mistral-small-24b-instruct-jbliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mistral-Small-24B-Instruct-Jbliterated-GGUF",
+  "created_at": "2026-07-15T12:37:56.000Z",
+  "updated_at": "2026-09-01T20:22:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "jbliterated",
+    "uncensored",
+    "abliterated",
+    "weight-surgery",
+    "en",
+    "base_model:ApolloRaines/Mistral-Small-24B-Instruct-Jbliterated",
+    "base_model:quantized:ApolloRaines/Mistral-Small-24B-Instruct-Jbliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 293,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 161407744384,
+  "storage_human": "161.4 GB",
+  "base_model": "ApolloRaines/Mistral-Small-24B-Instruct-Jbliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Mistral-Small-24B-Instruct-2501-abliterated-GGUF · Hugging ...",
+      "url": "https://huggingface.co/mradermacher/Mistral-Small-24B-Instruct-2501-abliterated-GGUF",
+      "snippet": "Instructions to use mradermacher/Mistral-Small-24B-Instruct-2501-abliterated-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Mistral-Small-24B-Instruct-2501-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Mistral-Small-24B-Instruct-2501-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mistral Small 24B Instruct: API, GPU and serving requirements",
+      "url": "https://aibadgr.com/models/mistral-small-24b-instruct",
+      "snippet": "Mistral Small 24B Instruct availability through Badgr, 52GB minimum estimated VRAM, 32K tokens context, Apache-2.0 licence and deployment status."
+    },
+    {
+      "title": "mistral-small-24b-instruct/README.md at main - GitHub",
+      "url": "https://github.com/inferless/Mistral-Small-24B-Instruct/blob/main/README.md",
+      "snippet": "Mistral-Small-24B-Instruct also known as Mistral Small 3 (2501) is a cutting-edge 24B parameter language model from Mistral AI. Designed for efficient local deployment, this instruction-tuned model excels in low-latency tasks such as conversational agents and function calling."
+    },
+    {
+      "title": "mradermacher/Mistral-Small-24B-Instruct-2501-abliterated-i1-GGUF",
+      "url": "https://www.toolify.ai/ai-model/mradermacher-mistral-small-24b-instruct-2501-abliterated-i1-gguf",
+      "snippet": "Mistral-Small-24B-Instruct-2501-abliterated-i1-GGUF is an open source model from GitHub that offers a free installation service, and any user can find Mistral-Small-24B-Instruct-2501-abliterated-i1-GGUF on GitHub to install."
+    }
+  ]
+}

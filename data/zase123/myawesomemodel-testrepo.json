@@ -4,8 +4,8 @@
   "slug": "zase123-myawesomemodel-testrepo",
   "author": "zASE123",
   "url": "https://huggingface.co/zASE123/MyAwesomeModel-TestRepo",
-  "created_at": "2026-08-28T00:43:21.000Z",
-  "updated_at": "2026-08-28T00:44:08.000Z",
+  "created_at": "2026-09-02T00:15:13.000Z",
+  "updated_at": "2026-09-02T00:15:31.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 199,
+  "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 109482240,
   "parameters_human": "109.5M",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-30T03:02:40.821Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

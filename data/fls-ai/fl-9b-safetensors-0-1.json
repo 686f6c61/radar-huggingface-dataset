@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "FLs-AI/FL-9B-safetensors-0.1",
+  "slug": "fls-ai-fl-9b-safetensors-0-1",
+  "author": "FLs-AI",
+  "url": "https://huggingface.co/FLs-AI/FL-9B-safetensors-0.1",
+  "created_at": "2026-08-09T20:34:26.000Z",
+  "updated_at": "2026-09-01T21:42:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300215,
+  "storage_human": "19.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FL-9B-1-safetensors - a FLs-AI Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/FLs-AI/fl-9b-1-safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FLs-AI/FL-1-9B-safetensors · Hugging Face",
+      "url": "https://huggingface.co/FLs-AI/FL-1-9B-safetensors",
+      "snippet": "like 0 Safetensors qwen3_5 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new It&#x27;s safetensors of model \"FLv1-low-level\" Downloads last month - Safetensors Model size 9B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "GitHub - black-forest-labs/flux: Official inference repo for FLUX.1 ...",
+      "url": "https://github.com/black-forest-labs/flux",
+      "snippet": "Official inference repo for FLUX.1 models. Contribute to black-forest-labs/flux development by creating an account on GitHub."
+    },
+    {
+      "title": "safetensor AI Models | Civitai",
+      "url": "https://civitai.com/tag/safetensor",
+      "snippet": "safetensor Browse 12 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with safetensor."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.red/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

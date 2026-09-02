@@ -5,7 +5,7 @@
   "author": "Nikhil-09",
   "url": "https://huggingface.co/Nikhil-09/turnwave",
   "created_at": "2026-08-31T19:00:09.000Z",
-  "updated_at": "2026-08-31T19:01:44.000Z",
+  "updated_at": "2026-09-01T19:42:48.000Z",
   "license": "mixed-per-model",
   "license_family": "unknown",
   "pipeline_tag": "audio-classification",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 77887910,
-  "storage_human": "78 MB",
+  "storage_bytes": 120241462,
+  "storage_human": "120 MB",
   "base_model": null,
   "formats": [
     "onnx"

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "arc-ct/arc-ct",
+  "slug": "arc-ct-arc-ct",
+  "author": "arc-ct",
+  "url": "https://huggingface.co/arc-ct/arc-ct",
+  "created_at": "2026-08-15T20:26:33.000Z",
+  "updated_at": "2026-09-01T20:20:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "medical-imaging",
+    "computed-tomography",
+    "vision-language",
+    "contrastive-learning",
+    "zero-shot-classification",
+    "zero-shot-image-classification",
+    "dataset:ibrahimhamamci/CT-RATE",
+    "arxiv:2608.28455",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4068505086,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2608.28455] ARC-CT: Anatomy-Routed Contrastive Vision-Language ...",
+      "url": "https://arxiv.org/abs/2608.28455",
+      "snippet": "Contrastive vision-language learning uses paired chest CT volumes and radiology reports to learn abnormality classifiers without manually annotated labels. However, two characteristics of chest CT challenge conventional global contrastive learning. First, many critical abnormalities are small or anatomically localized, and pooling an en- tire volume into a single embedding may dilute their ..."
+    },
+    {
+      "title": "GitHub - quin-med-harvard-edu/arc-ct: ARC-CT: Anatomy-Routed ...",
+      "url": "https://github.com/quin-med-harvard-edu/arc-ct",
+      "snippet": "ARC-CT is a region-aware contrastive vision-language framework for 3D chest CT. It learns from paired CT volumes and their radiology reports, without manual annotations or bounding boxes, and classifies 18 abnormalities zero-shot by comparing a volume against text prompts."
+    },
+    {
+      "title": "arc-ct/arc-ct · Hugging Face",
+      "url": "https://huggingface.co/arc-ct/arc-ct",
+      "snippet": "Checkpoints for ARC-CT (TIA workshop @ MICCAI 2026, oral). ARC-CT learns from paired chest CT volumes and radiology reports — no manual annotations, no bounding boxes — and classifies 18 abnormalities zero-shot by comparing a volume against text prompts."
+    },
+    {
+      "title": "arc-ct/README.md at main · quin-med-harvard-edu/arc-ct",
+      "url": "https://github.com/quin-med-harvard-edu/arc-ct/blob/main/README.md",
+      "snippet": "ARC-CT is a region-aware contrastive vision-language framework for 3D chest CT. It learns from paired CT volumes and their radiology reports, without manual annotations or bounding boxes, and classifies 18 abnormalities zero-shot by comparing a volume against text prompts."
+    },
+    {
+      "title": "arc-ct (arc-ct) - Hugging Face",
+      "url": "https://huggingface.co/arc-ct/models",
+      "snippet": "Org profile for arc-ct on Hugging Face, the AI community building the future."
+    }
+  ]
+}

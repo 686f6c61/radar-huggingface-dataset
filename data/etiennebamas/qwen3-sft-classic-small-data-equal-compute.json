@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "etiennebamas/qwen3-sft-classic-small-data-equal-compute",
+  "slug": "etiennebamas-qwen3-sft-classic-small-data-equal-compute",
+  "author": "etiennebamas",
+  "url": "https://huggingface.co/etiennebamas/qwen3-sft-classic-small-data-equal-compute",
+  "created_at": "2026-09-01T21:22:10.000Z",
+  "updated_at": "2026-09-01T21:23:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:formalmathatepfl/qwen3-cpt",
+    "base_model:finetune:formalmathatepfl/qwen3-cpt",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308224,
+  "parameters_human": "308224",
+  "storage_bytes": 16392947623,
+  "storage_human": "16.4 GB",
+  "base_model": "formalmathatepfl/qwen3-cpt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "etiennebamas/qwen3-sft-classic-small-data-equal-compute · Hugging Face",
+      "url": "https://huggingface.co/etiennebamas/qwen3-sft-classic-small-data-equal-compute",
+      "snippet": "Instructions to use etiennebamas/qwen3-sft-classic-small-data-equal-compute with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "etiennebamas/qwen3-step32k-1e5 · Hugging Face",
+      "url": "https://huggingface.co/etiennebamas/qwen3-step32k-1e5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Qwen3 SFT Experiments | stepfun-ai/SteptronOss | DeepWiki",
+      "url": "https://deepwiki.com/stepfun-ai/SteptronOss/10.1-qwen3-sft-experiments",
+      "snippet": "Qwen3 SFT Experiments Relevant source files This page documents the concrete supervised fine-tuning (SFT) experiment definitions for the Qwen3 model family. It covers the two currently available variants — qwen3_1p7b and qwen3_30a3b — describing their trainer parameters, checkpoint strategies, learning-rate schedules, and kernel optimization settings. For a general explanation of how SFT ..."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/blog?id=qwen3",
+      "snippet": "Today, we are excited to announce the release of Qwen3, the latest addition to the Qwen family of large language models. Our flagship model, Qwen3-235B-A22B, achieves competitive results in benchmark evaluations of coding, math, general capabilities, etc., when compared to other top-tier models such as DeepSeek-R1, o1, o3-mini, Grok-3, and Gemini-2.5-Pro. Additionally, the small MoE model ..."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/macrogrok-harness",
+  "slug": "snapkitty-macrogrok-harness",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/macrogrok-harness",
+  "created_at": "2026-09-01T21:07:10.000Z",
+  "updated_at": "2026-09-01T23:33:18.000Z",
+  "license": "sovereign-source-license-v2",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "code",
+    "sovereign-compute",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SNAPKITTYWEST/macrogrok-harness: macrogrok-harness - GitHub",
+      "url": "https://github.com/SNAPKITTYWEST/macrogrok-harness",
+      "snippet": "Rust harness for MACROGROK fixed-point macro-models and Transformer-X CUDA (Tensor Core WMMA, attention memory, Tavily RAG)."
+    },
+    {
+      "title": "SNAPKITTYWEST/snapkitty-harness · Hugging Face",
+      "url": "https://huggingface.co/SNAPKITTYWEST/snapkitty-harness",
+      "snippet": "SNAPKITTYWEST / snapkitty-harness like 0 GGUF English sovereign snapkitty ollama harness syscall nemotron conversational License:sovereign-source-license-v2 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "macrogrok-harness/src/main.rs at main · SNAPKITTYWEST ... - GitHub",
+      "url": "https://github.com/SNAPKITTYWEST/macrogrok-harness/blob/main/src/main.rs",
+      "snippet": "22 lines (19 loc) · 1.1 KB main macrogrok-harness / src main.rs Code Blame 22 lines (19 loc) · 1.1 KB 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 use ..."
+    },
+    {
+      "title": "Best Grok AI Agents 2026: 7 That Actually Work, How to Build Your Own ...",
+      "url": "https://aitoolsrecap.com/Blog/best-grok-ai-agents-deep-dive-2026",
+      "snippet": "The 7 Best Grok AI Agents in 2026 - Real Use Cases, Actual Results, and How to Build Each One Grok 4.3&#x27;s real-time X data access makes it uniquely suited for 7 agent patterns no other model can match: social intelligence monitoring, overnight coding tasks at $1/$2 per million tokens, competitive tracking, content research, AI news alerts, customer sentiment routing, and financial signal ..."
+    },
+    {
+      "title": "Products — SnapKitty OS",
+      "url": "https://collectivekitty.com/products",
+      "snippet": "One desktop for your entire AI stack. Route prompts across models, run Forge code tournaments, search your local vault, and manage SnapKitty OS — from one signed Windows application."
+    }
+  ]
+}

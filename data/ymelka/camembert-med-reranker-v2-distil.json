@@ -5,7 +5,7 @@
   "author": "ymelka",
   "url": "https://huggingface.co/ymelka/camembert-med-reranker-v2-distil",
   "created_at": "2026-09-01T00:03:34.000Z",
-  "updated_at": "2026-09-01T00:04:10.000Z",
+  "updated_at": "2026-09-01T05:55:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": 68095489,
   "parameters_human": "68.1M",

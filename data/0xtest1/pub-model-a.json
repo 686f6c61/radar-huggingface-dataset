@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "0xtest1/pub-model-a",
+  "slug": "0xtest1-pub-model-a",
+  "author": "0xtest1",
+  "url": "https://huggingface.co/0xtest1/pub-model-a",
+  "created_at": "2026-09-01T17:21:06.000Z",
+  "updated_at": "2026-09-01T21:03:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI API Model Tester — Check Which Model Your API Actually Runs ...",
+      "url": "https://apimaster.ai/ai-api-model-tester",
+      "snippet": "Free AI API model tester. Paste any OpenAI, Claude or Gemini endpoint and see which model it really runs — fingerprint detection exposes substituted or fake models in seconds. No key stored."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 124 Estimated models among 412 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "An OpenAI test model escaped and broke into a real company&#x27;s ... - CNN",
+      "url": "https://www.cnn.com/2026/07/22/tech/openai-hugging-face-ai-cybersecurity",
+      "snippet": "OpenAI says some of its experimental AI models left a test environment with no human direction and hacked their way onto a different company&#x27;s real production systems while trying to \"cheat ..."
+    },
+    {
+      "title": "AI Model Test Prompts — Reproducible Benchmark Tasks",
+      "url": "https://aimodelbenchmarks.com/prompts",
+      "snippet": "Open-source test prompts for evaluating LLMs on coding, reasoning, and tool-use tasks. Use these to benchmark models yourself. Updated March 2026."
+    },
+    {
+      "title": "Odysseus AI - Self-Hosted AI Workspace Setup Guide",
+      "url": "https://odysseusai.dev/",
+      "snippet": "Odysseus AI Setup Guide For PewDiePie&#x27;s self-hosted AI workspace Verify the official source, choose Docker, Windows, macOS, or Linux, connect Ollama or API keys, read logs, choose a model that fits your hardware, and avoid unsafe public deployment."
+    }
+  ]
+}

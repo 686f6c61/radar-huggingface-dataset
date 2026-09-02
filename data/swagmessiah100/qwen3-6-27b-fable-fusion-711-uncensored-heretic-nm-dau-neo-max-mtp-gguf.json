@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "SwagMessiah100/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+  "slug": "swagmessiah100-qwen3-6-27b-fable-fusion-711-uncensored-heretic-nm-dau-neo-max-mtp-gguf",
+  "author": "SwagMessiah100",
+  "url": "https://huggingface.co/SwagMessiah100/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+  "created_at": "2026-09-01T21:05:54.000Z",
+  "updated_at": "2026-09-01T21:05:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "fine tune",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "ara",
+    "MTP GGUF Quants",
+    "Regular GGUF Quants",
+    "qwen3.6",
+    "multi-stage tuned",
+    "thinking",
+    "reasoning",
+    "all use cases",
+    "coder",
+    "creative",
+    "creative writing",
+    "all genres",
+    "story",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "multi-stage-tune",
+    "multi-state-merge",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "dataset:DavidAU/Polar-STRICT-Datasets",
+    "dataset:DavidAU/F451-STRICT-Datasets",
+    "base_model:DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP",
+    "base_model:quantized:DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 465146653725,
+  "storage_human": "465.1 GB",
+  "base_model": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-27B-Fable-Fus-711-UnHeretic-NM-DAU-NEO-MAX-NEO-MTP-Q6_K.gguf ...",
+      "url": "https://huggingface.co/connorhzp/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF/blob/main/Qwen3.6-27B-Fable-Fus-711-UnHeretic-NM-DAU-NEO-MAX-NEO-MTP-Q6_K.gguf",
+      "snippet": "fine tune heretic uncensored abliterated ara MTP GGUF Quants Regular GGUF Quants qwen3.6 multi-stage tuned thinking reasoning all use cases coder creative creative writing all genres story writing fiction roleplaying bfloat16 multi-stage-tune multi-state-merge imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet ..."
+    },
+    {
+      "title": "Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+      "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF/discussions/5",
+      "snippet": "Thanks for sharing this model. In my tests, it demonstrates high intelligence, even with Q4 quantization. I used a math problem derived from a physics scenario for testing; while the Q4-quantized v..."
+    },
+    {
+      "title": "Qwen3.6-27B Fable Fusion Breaks the 700 ARC-C Barrier",
+      "url": "https://hackernoon.com/qwen36-27b-fable-fusion-breaks-the-700-arc-c-barrier",
+      "snippet": "Overview Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP is a 27-billion-parameter fine-tuned language model built by DavidAU that exceeds ARC-C benchmark scores of 700 in both 8-bit and 4-bit quantization—the first open-source model of this size to accomplish this across both precision levels. The model is a multi-stage fine-tune and merge combining work from multiple ..."
+    },
+    {
+      "title": "Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP",
+      "url": "https://www.modelscope.cn/models/Zoupers/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP",
+      "snippet": "Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP The strongest, smartest open source multi-stage model fine tune for consumer hardware ever and BUILT on consumer hardware via Unsloth."
+    },
+    {
+      "title": "Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.6-27b-fable-fusion-711-uncensored-heretic-nm-dau-mtp-davidau",
+      "snippet": "Overview Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP is a 27-billion-parameter fine-tuned language model built by DavidAU that exceeds ARC-C benchmark scores of 700 in both 8-bit and 4-bit quantization—the first open-source model of this size to accomplish this across both precision levels. The model is a multi-stage fine-tune and merge combining work from multiple ..."
+    }
+  ]
+}

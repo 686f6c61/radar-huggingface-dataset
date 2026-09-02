@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/KILLINCHU-EYE",
+  "slug": "szlholdings-killinchu-eye",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/KILLINCHU-EYE",
+  "created_at": "2026-08-28T16:21:47.000Z",
+  "updated_at": "2026-09-02T00:13:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "other",
+  "languages": [],
+  "tags": [
+    "other",
+    "governed-ai",
+    "cuas",
+    "killinchu",
+    "szl-holdings",
+    "doctrine-v11",
+    "roadmap",
+    "alias",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - szl-holdings/killinchu: killinchu — full counter-UAS ...",
+      "url": "https://github.com/szl-holdings/killinchu",
+      "snippet": "What it does killinchu is the counter-UAS edge tool of the SZL drones & vessels product. It runs where the mission happens — detecting, classifying, and evaluating hostile UAS tracks at machine speed, signing every interdiction decision with a DSSE Khipu receipt, and surfacing the result to a human operator before any action propagates."
+    },
+    {
+      "title": "SZLHOLDINGS / KILLINCHU-EYE - insights-db.paloaltonetworks.com",
+      "url": "https://insights-db.paloaltonetworks.com/models/SZLHOLDINGS/KILLINCHU-EYE/62cb37880a484b7b591c8c6f8231d73385b33995/overview",
+      "snippet": "Discover potential threats in the SZLHOLDINGS / KILLINCHU-EYE model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "killinchu — drone intelligence · SZL Holdings",
+      "url": "https://holdings.a-11-oy.com/docs-site/flagships/killinchu.html",
+      "snippet": "Overview killinchu 🦅 is the SZL drone-intelligence flagship: a source-described counter-UAS rule engine with Λ-gate governance, Khipu receipt structures, and protocol-ingest implementations. These are source capabilities; the dated hosted observation below witnessed only the health route."
+    },
+    {
+      "title": "killinchu — Counter-UAS Governance · SZL Holdings",
+      "url": "https://szlholdings-killinchu.hf.space/elite",
+      "snippet": "killinchu is SZL Holdings&#x27; counter-UAS governance layer: live track board, sensor-fusion, multi-track prioritization, ROE editor, engagement audit, DSSE receipt verifier, 13-axis Λ-gate, 3-of-4 BFT quorum, PQC hybrid signing, protocol decoders, geofence, swarm topology, threat classification, cross-flagship mesh, and signed per-engagement autonomy governance. Every view reads a live endpoint."
+    },
+    {
+      "title": "killinchu — Autonomous Systems · Drones & Vessels · SZL Holdings",
+      "url": "https://szlholdings-killinchu.hf.space/landing.html",
+      "snippet": "killinchu is SZL Holdings&#x27; field tool for autonomous systems — governed counter-UAS and maritime decisions, every one a verifiable signed receipt. Live track board, sensor fusion, engagement rules, and dark-vessel screening, governed by the same trust brain as the a11oy Command Platform."
+    }
+  ]
+}

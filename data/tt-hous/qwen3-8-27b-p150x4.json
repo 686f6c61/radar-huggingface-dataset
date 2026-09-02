@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "tt-hous/qwen3.8-27b-p150x4",
+  "slug": "tt-hous-qwen3-8-27b-p150x4",
+  "author": "tt-hous",
+  "url": "https://huggingface.co/tt-hous/qwen3.8-27b-p150x4",
+  "created_at": "2026-09-01T21:58:53.000Z",
+  "updated_at": "2026-09-01T21:59:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blackhole",
+    "tt-model-cache",
+    "tt-model-container",
+    "vllm-plugin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2334266457,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B: Runs Locally, Nears Claude Opus (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/qwen-3-8-27b-open-weight-model-claude-opus-comparison-august-2026",
+      "snippet": "Qwen3.8-27B-FP8 landed Aug 15, 2026: dense 27B, vision-language, 262K context. Alibaba&#x27;s own benchmarks put it near Claude Opus on coding tasks."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "The official Qwen/Qwen3.8-27B-FP8 checkpoint serves directly on a 950PR — no offline re-quantization and no --quantization ascend. vLLM Ascend reads quant_method: fp8 and weight_block_size straight from the checkpoint, expands the weight_scale_inv tiles at load time and re-quantizes to MXFP8 on 950."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "Qwen3.8 27B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-8-27b/",
+      "snippet": "Qwen3.8 27B is Qwen&#x27;s dense, open-weight vision-language model for coding, professional work, research, and long-horizon agentic tasks. It brings the strongest generation of Qwen open models to a deployment-friendly size, with better planning and stronger handling of tool and environment feedback for more reliable multi-step task completion."
+    },
+    {
+      "title": "qwen/qwen3.8-27b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.8-27b",
+      "snippet": "Qwen3.8 27B Qwen3.8 27B is a compact, deployment-friendly dense vision-language model built on the Qwen3.5 architecture. It delivers stronger performance across coding, professional work, research, and long-horizon agentic tasks. Highlights Agent Execution: stronger autonomous planning and environment-feedback handling improve reliability on complex, multi-step tasks. Flexible Thinking Control ..."
+    }
+  ]
+}

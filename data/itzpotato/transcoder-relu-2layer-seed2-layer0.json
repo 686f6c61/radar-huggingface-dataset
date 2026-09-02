@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "itzPotato/transcoder-relu-2layer-seed2-layer0",
+  "slug": "itzpotato-transcoder-relu-2layer-seed2-layer0",
+  "author": "itzPotato",
+  "url": "https://huggingface.co/itzPotato/transcoder-relu-2layer-seed2-layer0",
+  "created_at": "2026-09-02T00:15:34.000Z",
+  "updated_at": "2026-09-02T00:15:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "interpretability",
+    "transcoder",
+    "sparse-autoencoder",
+    "arithmetic",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 266656,
+  "storage_human": "266656 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "itzPotato (Rohan Sashank Babbellapati) - Hugging Face",
+      "url": "https://huggingface.co/itzPotato/models",
+      "snippet": "itzPotato&#x27;s models1 Sort: Recently updated itzPotato/bilinear-attn-modular-addition-p113 292k•Updated 2 days ago• 18 • 1"
+    },
+    {
+      "title": "GitHub - facebookresearch/TransCoder: Public release of the TransCoder ...",
+      "url": "https://github.com/facebookresearch/TransCoder",
+      "snippet": "License TransCoder is under the license detailed in the Creative Commons Attribution-NonCommercial 4.0 International license. See LICENSE for more details."
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "ByteDance Releases Seed2.0 Model Series for Complex Real-World Tasks",
+      "url": "https://ai.daily.yangsir.net/en/daily/20260703-T0-04",
+      "snippet": "ByteDance released the Seed2.0 model series, designed to tackle complex real-world tasks. The paper starts from identifying genuine user needs and builds a reliable, forward-looking evaluation system via selection and abstraction."
+    },
+    {
+      "title": "Seed2.1 Pro: Specs, Pricing, Benchmarks & Model Details | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/ai-models/pretrained-models/seed-2-1-pro",
+      "snippet": "Seed2.1 Pro currently shows benchmark results led by SciCode (1 / 5, score 59.80), MMMU-Pro (2 / 7, score 82.70), MathVision (4 / 12, score 94.50). This page also consolidates core specs, context limits, and API pricing so you can evaluate the model from benchmark results and deployment constraints together."
+    }
+  ]
+}

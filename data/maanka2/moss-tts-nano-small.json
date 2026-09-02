@@ -5,7 +5,7 @@
   "author": "maanka2",
   "url": "https://huggingface.co/maanka2/MOSS-TTS-Nano-Small",
   "created_at": "2026-08-26T12:54:20.000Z",
-  "updated_at": "2026-08-28T17:35:18.000Z",
+  "updated_at": "2026-09-02T00:38:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -67,8 +67,8 @@
   "trending_score": 0,
   "parameters": 28554624,
   "parameters_human": "28.6M",
-  "storage_bytes": 174231684,
-  "storage_human": "174 MB",
+  "storage_bytes": 231353980,
+  "storage_human": "231 MB",
   "base_model": null,
   "formats": [
     "safetensors"

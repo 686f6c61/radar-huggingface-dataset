@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "cyttic/trocr-freefonts-s42-full250k",
+  "slug": "cyttic-trocr-freefonts-s42-full250k",
+  "author": "cyttic",
+  "url": "https://huggingface.co/cyttic/trocr-freefonts-s42-full250k",
+  "created_at": "2026-08-22T08:04:46.000Z",
+  "updated_at": "2026-09-01T21:19:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "base_model:cyttic/exp2-frozen-benyehuda-cont",
+    "base_model:finetune:cyttic/exp2-frozen-benyehuda-cont",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 299495168,
+  "parameters_human": "299.5M",
+  "storage_bytes": 4792178050,
+  "storage_human": "4.8 GB",
+  "base_model": "cyttic/exp2-frozen-benyehuda-cont",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cyttic/trocr-freefonts-s42-full250k · Hugging Face",
+      "url": "https://huggingface.co/cyttic/trocr-freefonts-s42-full250k",
+      "snippet": "Instructions to use cyttic/trocr-freefonts-s42-full250k with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use cyttic/trocr-freefonts-s42-full250k with Transformers:"
+    },
+    {
+      "title": "cyttic/trocr-freefonts-s42 · Hugging Face",
+      "url": "https://huggingface.co/cyttic/trocr-freefonts-s42",
+      "snippet": "Instructions to use cyttic/trocr-freefonts-s42 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use cyttic/trocr-freefonts-s42 with Transformers:"
+    },
+    {
+      "title": "DaFont - Download fonts",
+      "url": "https://www.dafont.com/",
+      "snippet": "The fonts presented on this website are their authors&#x27; property, and are either freeware, shareware, demo versions or public domain. The licence mentioned above the download button is just an indication. Please look at the readme-files in the archives or check the indicated author&#x27;s website for details, and contact him/her if in doubt. If no author/licence is indicated that&#x27;s because we don&#x27;t ..."
+    },
+    {
+      "title": "Free Fonts - Best Free Fonts",
+      "url": "https://www.freefonts.io/",
+      "snippet": "Download 6,000+ best free high quality fonts from sans serif, serif, script, handwritten, display & more. For Personal & Commercial Use!"
+    },
+    {
+      "title": "1001 Free Fonts | Download Free Fonts",
+      "url": "https://www.1001freefonts.com/",
+      "snippet": "Download 150,000+ free fonts for Windows and Mac. Browse calligraphy, handwriting, script, serif and more. New fonts added daily."
+    }
+  ]
+}

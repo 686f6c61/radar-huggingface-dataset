@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "deeprcurs/MBG-N1.0-Hybrid",
+  "slug": "deeprcurs-mbg-n1-0-hybrid",
+  "author": "deeprcurs",
+  "url": "https://huggingface.co/deeprcurs/MBG-N1.0-Hybrid",
+  "created_at": "2026-09-01T21:24:58.000Z",
+  "updated_at": "2026-09-01T21:25:00.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "mbg",
+    "model-bahasa-garuda",
+    "omni-sparse-hybrid",
+    "mamba",
+    "ssm",
+    "mla",
+    "mixture-of-experts",
+    "moe",
+    "ternary",
+    "trinity-mirror",
+    "gum",
+    "galore",
+    "muon",
+    "language-model",
+    "text-generation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepRcurs Labs - Hugging Face",
+      "url": "https://huggingface.co/deeprcurs/models",
+      "snippet": "Org profile for deepRcurs Labs on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "deeprcurs/MBG-1.0-data · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/deeprcurs/MBG-1.0-data",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OnnxRuntime GenAI (OGA) Flow — Ryzen AI Software 1.8.0 documentation",
+      "url": "https://ryzenai.docs.amd.com/en/latest/hybrid_oga.html",
+      "snippet": "Each OGA model folder contains a genai_config.json file, which holds configuration settings for the model. The session_option section is where specific runtime dependencies are specified. Changes Compared to Previous Release # OGA version is updated to v0.14. (Ryzen AI 1.8) from v0.11.2 (Ryzen AI 1.7.1). For the 1.8 release, a new set of hybrid and NPU models has been published. Models from ..."
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "Previous releases: N1.6 | N1.5 NVIDIA Isaac GR00T N1.7 is an open vision-language-action (VLA) model for generalized humanoid robot skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    },
+    {
+      "title": "ZenMux — Unified API for 100+ AI Models | Claude, GPT, Gemini",
+      "url": "https://zenmux.ai/",
+      "snippet": "The Enterprise LLM Platform: Unified API for 100+ AI models (Claude, GPT, Gemini, DeepSeek), intelligent routing, and AI Model Insurance that compensates for subpar output."
+    }
+  ]
+}

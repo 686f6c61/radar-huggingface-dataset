@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Maklyakov/lora_mira",
+  "slug": "maklyakov-lora_mira",
+  "author": "Maklyakov",
+  "url": "https://huggingface.co/Maklyakov/lora_mira",
+  "created_at": "2026-09-02T00:44:04.000Z",
+  "updated_at": "2026-09-02T00:57:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "ru",
+    "arxiv:1910.09700",
+    "base_model:Heartsync/Flux-NSFW-uncensored",
+    "base_model:finetune:Heartsync/Flux-NSFW-uncensored",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Heartsync/Flux-NSFW-uncensored",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gsdfg18919/mira · Hugging Face",
+      "url": "https://huggingface.co/gsdfg18919/mira",
+      "snippet": "gsdfg18919 / mira like 0 Text-to-Image Diffusers lora template:diffusion-lora Model card FilesFiles and versions Community Deploy Use this model mira Trigger words Download model"
+    },
+    {
+      "title": "Mira (Kenja no Deshi wo Nanoru Kenja) | TensorHub Art",
+      "url": "https://tensorhub.art/models/944245958617641245",
+      "snippet": "Download Mira (Kenja no Deshi wo Nanoru Kenja) - free LORA Illustrious AI model on TENSORHUB ART"
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,919 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "Mira - V1 | Illustrious LoRA | Civitai",
+      "url": "https://civitai.com/models/1739778/mira",
+      "snippet": "Here she is, my Mira model. Thanks to everyone that tipped and downloaded my Zoey model. Can force the style with 1.3 but you will lose clothing fl..."
+    },
+    {
+      "title": "Best mira - 12.5656 AI LORA - Free Download | Tensor.Art",
+      "url": "https://tensor.art/models/1027509494919204250",
+      "snippet": "Download mira - free LORA SDXL 1.0 AI model on TENSOR. By user_939502504394114508"
+    }
+  ]
+}

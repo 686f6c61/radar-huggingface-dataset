@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "TontonTremblay/doper2-handal-obj000021",
+  "slug": "tontontremblay-doper2-handal-obj000021",
+  "author": "TontonTremblay",
+  "url": "https://huggingface.co/TontonTremblay/doper2-handal-obj000021",
+  "created_at": "2026-09-02T00:57:01.000Z",
+  "updated_at": "2026-09-02T00:57:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 346109702,
+  "storage_human": "346 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TontonTremblay (jonathan) - Hugging Face",
+      "url": "https://huggingface.co/TontonTremblay/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 28 days ago ... published a dataset 28 days ago"
+    },
+    {
+      "title": "TontonTremblay/DOPER_BOP · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/TontonTremblay/DOPER_BOP",
+      "snippet": "DOPER BOP -- DOPER-t Keypoint Models for BOP Datasets Per-object DOPER-t models trained on synthetic PBR data with symmetry-aware 3D keypoints. Evaluated using GT bounding boxes, DOPER-t keypoint inference, and PnP pose estimation. Summary"
+    },
+    {
+      "title": "TontonTremblay (Jonathan Tremblay) · GitHub",
+      "url": "https://github.com/TontonTremblay",
+      "snippet": "TontonTremblay has 58 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub",
+      "url": "https://github.com/TontonTremblay/handal_annotating/blob/master/readme.md",
+      "snippet": "HANDAL handle annotation tool for meshes &#92;n Their are two scrits, load_from_all_ply_from_folder.pyloads all the ply files in a folder. menu.pyloads a menu in blender that with two buttons in the tool pane. &#92;n"
+    },
+    {
+      "title": "DALL·E 2 - OpenAI",
+      "url": "https://openai.com/index/dall-e-2/",
+      "snippet": "DALL·E 2 is an AI system that can create realistic images and art from a description in natural language."
+    }
+  ]
+}

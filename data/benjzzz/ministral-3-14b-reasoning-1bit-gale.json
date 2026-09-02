@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "benjzzz/Ministral-3-14B-Reasoning-1bit-Gale",
+  "slug": "benjzzz-ministral-3-14b-reasoning-1bit-gale",
+  "author": "benjzzz",
+  "url": "https://huggingface.co/benjzzz/Ministral-3-14B-Reasoning-1bit-Gale",
+  "created_at": "2026-09-01T20:03:32.000Z",
+  "updated_at": "2026-09-02T01:09:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "mistral3",
+    "1-bit",
+    "quantization",
+    "gale",
+    "mistral",
+    "ministral-3",
+    "qat",
+    "hadamard",
+    "experimental",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "8-bit",
+    "gale_1bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4103695360,
+  "parameters_human": "4.10B",
+  "storage_bytes": 6539105586,
+  "storage_human": "6.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistralai/Ministral-3-14B-Reasoning-2512 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512",
+      "snippet": "Here we assume that the model mistralai/Ministral-3-8B-Reasoning-2512 is served and you can ping it to the domain localhost with the port 8000 which is the default for vLLM."
+    },
+    {
+      "title": "mistralai/ministral-3-14b-reasoning • LM Studio",
+      "url": "https://lmstudio.ai/models/mistralai/ministral-3-14b-reasoning",
+      "snippet": "Ministral 3 14B Reasoning by mistralai The reasoning post-trained version of Ministral 3 14B, optimized for complex reasoning tasks. Supports context length of 256k tokens. Excels at complex, multi-step reasoning and dynamic problem-solving, making it ideal for math, coding, and STEM-related use cases."
+    },
+    {
+      "title": "Ministral 3 - a mistralai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mistralai/ministral-3",
+      "snippet": "A collection of edge models, with Base, Instruct and Reasoning variants, in 3 different sizes: 3B, 8B and 14B. All with vision capabilities."
+    },
+    {
+      "title": "Ministral 3 - arXiv.org",
+      "url": "https://arxiv.org/html/2601.08584v1",
+      "snippet": "Abstract We introduce the Ministral 3 series, a family of parameter-efficient dense language models designed for compute and memory constrained applications, available in three model sizes: 3B, 8B, and 14B parameters. For each model size, we release three variants: a pretrained base model for general-purpose use, an instruction finetuned, and a reasoning model for complex problem-solving. In ..."
+    },
+    {
+      "title": "Ministral 3 14B - docs.mistral.ai",
+      "url": "https://docs.mistral.ai/models/ministral-3-14b-25-12",
+      "snippet": "Ministral 3 14B is the largest model in the Ministral 3 family, offering state-of-the-art capabilities and performance comparable to its larger Mistral Small 3.2 24B counterpart. Optimized for local deployment, it delivers high performance across diverse hardware, including local setups."
+    }
+  ]
+}

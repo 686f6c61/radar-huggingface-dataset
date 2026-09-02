@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "aweussom/LFM2-1.2B-int4-cw-ov",
+  "slug": "aweussom-lfm2-1-2b-int4-cw-ov",
+  "author": "aweussom",
+  "url": "https://huggingface.co/aweussom/LFM2-1.2B-int4-cw-ov",
+  "created_at": "2026-08-06T18:37:04.000Z",
+  "updated_at": "2026-09-01T20:28:04.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openvino",
+    "lfm2",
+    "npu",
+    "int4",
+    "intel",
+    "base_model:LiquidAI/LFM2-1.2B",
+    "base_model:quantized:LiquidAI/LFM2-1.2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657118304,
+  "storage_human": "657 MB",
+  "base_model": "LiquidAI/LFM2-1.2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aweussom/LFM2-1.2B-int4-cw-ov · Hugging Face",
+      "url": "https://huggingface.co/aweussom/LFM2-1.2B-int4-cw-ov",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aweussom (Tommy Leonhardsen) - Hugging Face",
+      "url": "https://huggingface.co/aweussom",
+      "snippet": "aweussom/LFM2-8B-A1B-int4-ov ... aweussom/Qwen2.5-VL-3B-Instruct-int8-ov ... aweussom/LFM2.5-1.2B-Instruct-int4-cw-ov ... aweussom/LFM2-1.2B-int4-cw-ov"
+    },
+    {
+      "title": "Introducing LFM2: The Fastest On-Device Foundation Models on the Market ...",
+      "url": "https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models",
+      "snippet": "NOTE: In 2026 we released a new version of our flagship models - LFM2.5 Today, we release LFM2, a new class of Liquid Foundation Models (LFMs) that sets a new standard in quality, speed, and memory efficiency deployment. LFM2 is specifically designed to provide the fastest on-device gen-AI experience across the industry, thus unlocking a massive number of devices for generative AI workloads ..."
+    },
+    {
+      "title": "LFM2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2511.23404v1",
+      "snippet": "LFM2-VL-1.6B and LFM2-VL-3B combine a So400M SigLIP2 encoder with LFM2-1.2B and LFM2-2.6B backbones, respectively. All variants are designed to support flexible image resolutions, efficient tokenization, and a controllable accuracy vs. latency trade-off for on-device deployment."
+    },
+    {
+      "title": "LFM2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2511.23404",
+      "snippet": "At the 1B scale, LFM2-1.2B improves over Granite-4.0-1B and Qwen3-1.7B by 2.3-2.8× on prefill and 1.7-2.2× on decode across both context lengths. Gemma-3-1B is the strongest 1B-class baseline in terms of raw throughput; however, LFM2-1.2B attains 0.75 − 0.9× of its prefill throughput, while offering slightly higher 1K decode throughput ..."
+    }
+  ]
+}

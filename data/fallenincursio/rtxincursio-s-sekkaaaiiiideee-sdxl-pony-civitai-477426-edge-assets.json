@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "FallenIncursio/RTXIncursio-s-SEKKAAAIIIIDEEE-SDXL-Pony-civitai-477426-edge-assets",
+  "slug": "fallenincursio-rtxincursio-s-sekkaaaiiiideee-sdxl-pony-civitai-477426-edge-assets",
+  "author": "FallenIncursio",
+  "url": "https://huggingface.co/FallenIncursio/RTXIncursio-s-SEKKAAAIIIIDEEE-SDXL-Pony-civitai-477426-edge-assets",
+  "created_at": "2026-09-01T21:58:07.000Z",
+  "updated_at": "2026-09-01T23:44:31.000Z",
+  "license": "civitai-creator-permissions",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "stable-diffusion",
+    "safetensors",
+    "arcenciel",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7031718079,
+  "storage_human": "7.0 GB",
+  "base_model": "Pony",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RTXIncursio&#x27;s SEKKAAAIIIIDEEE (SDXL, Pony) - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/477426?modelVersionId=530997",
+      "snippet": "Download RTXIncursio&#x27;s SEKKAAAIIIIDEEE (SDXL, Pony) - Checkpoint for Pony by FallenIncursio. Free AI model download from CivArchive."
+    },
+    {
+      "title": "RTXIncursio&#x27;s SEKKAAAIIIIDEEE (SDXL, Pony) - Civitai",
+      "url": "https://civitai.com/models/477426/rtxincursios-sekkaaaiiiideee-sdxl-pony",
+      "snippet": "Another flagship RTXIncursio&#x27;s SEKKAAAIIIIDEEE (SDXL, Pony). I find it&#x27;s in line with what the community on Civitai likes producing. It&#x27;s pretty versatile while also having an artstyle that&#x27;s unique in image generation. NSFW compatible. This Checkpoint is merged on the awesome Basemodel AutismMix_confetti. Special request from @iJWiTGS8. Check his awesome Stuff out 😘 The only prompt you ..."
+    },
+    {
+      "title": "RTXIncursio&#x27;s SEKKAAAIIIIDEEE (SDXL, Pony) - v1.0 Showcase - Civitai",
+      "url": "https://civitai.com/posts/3025099",
+      "snippet": "A post by FallenIncursio."
+    },
+    {
+      "title": "RTXIncursio&#x27;s SEKKAAAIIIIDEEE (SDXL, Pony) - SEKKAAAIIIIDEEE_v1.0PDXL",
+      "url": "https://tensor.art/images/745852381541132533?model_id=745852381532743930",
+      "snippet": "score_9, score_8_up, score_7_up, score_6_up, detailed, (1girl:1.2), facing viewer, abstract, cowboy shot, flower, ( flat color:0.5), ( lineart:0.8), black them..."
+    },
+    {
+      "title": "RTXIncursio&#x27;s SEKKAAAIIIIDEEE (SDXL, Pony) - SEKKAAAIIIIDEEE_v1.0PDXL",
+      "url": "https://tensor.art/images/745852381541132523?model_id=745852381532743930",
+      "snippet": "Prompt score_9, score_8_up, score_7_up, score_6_up, detailed, cinematic, interdimensional creature, biomechanical ghost, mesmerizing visual puzzle, hyper-detailed ..."
+    }
+  ]
+}

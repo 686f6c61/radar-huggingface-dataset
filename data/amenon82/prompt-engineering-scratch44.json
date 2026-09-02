@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "amenon82/prompt-engineering-scratch44",
+  "slug": "amenon82-prompt-engineering-scratch44",
+  "author": "amenon82",
+  "url": "https://huggingface.co/amenon82/prompt-engineering-scratch44",
+  "created_at": "2026-09-01T23:42:28.000Z",
+  "updated_at": "2026-09-01T23:42:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prompt Engineering Guide | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/",
+      "snippet": "Motivated by the high interest in developing with LLMs, we have created this new prompt engineering guide that contains all the latest papers, advanced prompting techniques, learning guides, model-specific prompting guides, lectures, references, new LLM capabilities, and tools related to prompt engineering."
+    },
+    {
+      "title": "Prompt Engineering Guide (Complete Techniques 2026)",
+      "url": "https://itsourcecode.com/blogs/prompt-engineering-guide-2026/",
+      "snippet": "A great prompt can turn a mediocre AI response into a production-ready result. This 2026 guide covers every prompt engineering technique, role prompting, few-shot learning, chain of thought, ReAct, and more, with real examples that work. Why prompts matter Same AI + different prompt = different quality output."
+    },
+    {
+      "title": "Awesome Prompt Engineering ‍♂️ - GitHub",
+      "url": "https://github.com/promptslab/Awesome-Prompt-Engineering",
+      "snippet": "Awesome Prompt Engineering 🧙‍♂️ A hand-curated collection of resources for Prompt Engineering and Context Engineering — covering papers, tools, models, APIs, benchmarks, courses, and communities for working with Large Language Models. https://promptslab.github.io"
+    },
+    {
+      "title": "GitHub - dair-ai/Prompt-Engineering-Guide: Guides, papers, lessons ...",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "snippet": "Prompt engineering is a relatively new discipline for developing and optimizing prompts to efficiently use language models (LMs) for a wide variety of applications and research topics. Prompt engineering skills help to better understand the capabilities and limitations of large language models (LLMs)."
+    },
+    {
+      "title": "Prompt engineering - OpenAI API",
+      "url": "https://developers.openai.com/api/docs/guides/prompt-engineering",
+      "snippet": "Prompt engineering Prompt engineering is the process of writing effective instructions for a model, such that it consistently generates content that meets your requirements. Because the content generated from a model is non-deterministic, prompting to get your desired output is a mix of art and science."
+    }
+  ]
+}

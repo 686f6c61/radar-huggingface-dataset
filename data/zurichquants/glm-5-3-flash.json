@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "zurichquants/GLM-5.3-Flash",
+  "slug": "zurichquants-glm-5-3-flash",
+  "author": "zurichquants",
+  "url": "https://huggingface.co/zurichquants/GLM-5.3-Flash",
+  "created_at": "2026-09-01T23:18:21.000Z",
+  "updated_at": "2026-09-01T23:18:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "license:mit",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 328357673114,
+  "storage_human": "328.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zurichquants/GLM-5.3-Flash · Hugging Face",
+      "url": "https://huggingface.co/zurichquants/GLM-5.3-Flash",
+      "snippet": "GLM-5.3-Flash starts from a newly trained base model, with its architecture and training recipe redesigned around capability and efficiency. For the first time in the GLM series, we introduce a hybrid architecture combining sparse and linear attention, sharply reducing long-context serving costs while preserving precise long-context capabilities."
+    },
+    {
+      "title": "GLM-5.3-Flash: Frontier Intelligence, Flash Cost - z.ai",
+      "url": "https://z.ai/blog/glm-5.3-flash",
+      "snippet": "Before release, we tested GLM-5.3-Flash anonymously as ox-alpha on OpenCode and OpenRouter to gather user feedback. It quickly became the most popular model of the week — with all of this traffic served on Chinese AI chips."
+    },
+    {
+      "title": "GLM-5.3-Flash - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash is Z.ai&#x27;s first natively multimodal model in the GLM-5 series. It is a 320B Mixture-of-Experts model with 18B active parameters, built for coding, agentic work, and visual tasks, and released under the MIT License."
+    },
+    {
+      "title": "GLM-5.3-Flash by Z.ai | Model Library | Modal",
+      "url": "https://modal.com/library/zai/glm-5-3-flash",
+      "snippet": "Model GLM-5.3-Flash pairs sparse attention with linear attention in a hybrid architecture that reduces attention computation and KV-cache size. Trained on a multimodal corpus, it integrates visual understanding directly into coding and agentic workflows. Full details are in Z.ai&#x27;s announcement."
+    },
+    {
+      "title": "GLM-5.3-Flash - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "snippet": "Model Overview GLM-5.3-Flash is the first native multimodal model in the GLM-5 series, delivering stronger intelligence than GLM-5.2 at an exceptionally low cost. Highly Efficient Hybrid Architecture GLM-5.3-Flash has 320B total parameters with 18B activated."
+    }
+  ]
+}

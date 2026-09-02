@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "N8STORM/Cortex",
+  "slug": "n8storm-cortex",
+  "author": "N8STORM",
+  "url": "https://huggingface.co/N8STORM/Cortex",
+  "created_at": "2026-09-01T22:43:10.000Z",
+  "updated_at": "2026-09-01T22:43:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "license:mit",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 328357673114,
+  "storage_human": "328.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models and regional availability for Cortex AI Functions",
+      "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/aisql-regional-availability",
+      "snippet": "Guides Snowflake AI & ML Cortex AI Functions Models and regional availability Models and regional availability for Cortex AI Functions Snowflake Cortex AI Functions support a range of language and embedding models with varying capabilities, context-window sizes, and regional availability. Use this reference to choose a model for your workload, check its input and output limits, confirm that it ..."
+    },
+    {
+      "title": "Snowflake Cortex AI 2026: Features, Pricing & Uses",
+      "url": "https://www.aegissofttech.com/insights/snowflake-cortex-ai/",
+      "snippet": "Snowflake Cortex AI lets you run LLMs, agents, and predictions directly on your Snowflake data. Explore features, pricing, use cases, and 2026 updates in this guide."
+    },
+    {
+      "title": "Snowflake Cortex AI Functions (including LLM functions)",
+      "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/aisql",
+      "snippet": "SUMMARIZE (SNOWFLAKE.CORTEX): Returns a summary of the text that you&#x27;ve specified. Helper functions Helper functions are purpose-built managed functions that reduce cases of failures when running other Cortex AI Functions, for example by getting the count of tokens in an input prompt to ensure the call doesn&#x27;t exceed a model limit."
+    },
+    {
+      "title": "New Advancements to Snowflake Cortex AI and Snowflake ML",
+      "url": "https://www.snowflake.com/en/news/press-releases/snowflake-brings-industry-leading-enterprise-ai-to-even-more-users-with-new-advancements-to-snowflake-cortex-ai-and-snowflake-ml-2/",
+      "snippet": "Snowflake unveiled new innovations in Snowflake Cortex AI, offering enterprises easy, efficient, and secure tools to build AI-powered applications."
+    },
+    {
+      "title": "What Snowflake (SNOW)&#x27;s Cortex AI Model Routing Push Means For Shareholders",
+      "url": "https://finance.yahoo.com/technology/ai/articles/snowflake-snow-cortex-ai-model-050431503.html",
+      "snippet": "Earlier this month, Snowflake announced new dynamic model routing within its Cortex AI Gateway and flagship AI tools, plus broader access to leading open models like DeepSeek-V4-Flash 0731 and GLM ..."
+    }
+  ]
+}

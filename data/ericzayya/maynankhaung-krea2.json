@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ericzayya/maynankhaung-krea2",
+  "slug": "ericzayya-maynankhaung-krea2",
+  "author": "ericzayya",
+  "url": "https://huggingface.co/ericzayya/maynankhaung-krea2",
+  "created_at": "2026-09-01T18:44:09.000Z",
+  "updated_at": "2026-09-01T19:20:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970714306,
+  "storage_human": "971 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krea 2: AI Image Foundation Model & Style Control",
+      "url": "https://www.krea.ai/krea-2",
+      "snippet": "Create expressive AI images with Krea 2, Krea AI&#x27;s in-house foundation model for aesthetic diversity, style control, moodboards, and creative workflows."
+    },
+    {
+      "title": "Krea 2 AI Models & Generator | Civitai",
+      "url": "https://civitai.com/ecosystems/krea2",
+      "snippet": "Generate with Krea 2 on Civitai — Krea AI&#x27;s model for sharp photorealism, strong aesthetics, and dependable prompt adherence. Browse checkpoints, LoRAs & prompts."
+    },
+    {
+      "title": "Krea 2 - Medium | Krea 2 Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2656567/krea-2",
+      "snippet": "Krea 2 is Krea&#x27;s first foundation image model, trained from scratch with a focus on how images feel rather than just what they contain. It ships in two sizes - a Large build tuned for photorealism and a Medium build tuned for illustration and stylized art - and is designed around style transfer, moodboards, and a tunable creativity dial rather ..."
+    },
+    {
+      "title": "Model Library | Krea",
+      "url": "https://www.krea.ai/models",
+      "snippet": "Explore Krea&#x27;s AI model library across image, video, audio, enhancer, edit, 3D, video restyle, motion transfer, and lipsync tools."
+    },
+    {
+      "title": "krea (KREA) - Hugging Face",
+      "url": "https://huggingface.co/krea/models",
+      "snippet": "AI Creative Suite."
+    }
+  ]
+}

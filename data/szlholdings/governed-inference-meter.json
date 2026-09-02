@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/governed-inference-meter",
+  "slug": "szlholdings-governed-inference-meter",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/governed-inference-meter",
+  "created_at": "2026-06-23T13:47:18.000Z",
+  "updated_at": "2026-09-02T00:11:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kernels",
+  "languages": [],
+  "tags": [
+    "kernels",
+    "kernel",
+    "inference",
+    "energy",
+    "nvml",
+    "governance",
+    "provenance",
+    "audit",
+    "receipts",
+    "tokens-per-joule",
+    "sovereign-ai",
+    "deprecated",
+    "superseded",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SZLHOLDINGS/governed-inference-meter · Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/governed-inference-meter",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "szl-holdings/governed-inference-meter - GitHub",
+      "url": "https://github.com/szl-holdings/governed-inference-meter",
+      "snippet": "governed-inference-meter Energy-metered, governed inference receipts. A lightweight, dependency-light Python utility (and Hugging Face universal kernel) that wraps any inference call and emits a governed, energy-metered, tamper-evident receipt:"
+    },
+    {
+      "title": "SZLHOLDINGS/governed-inference-meter at main - Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/governed-inference-meter/tree/main",
+      "snippet": "SZLHOLDINGS / governed-inference-meter like 0 Follow SZL Holdings 3 Kernels kernel inference energy nvml governance provenance audit receipts tokens-per-joule sovereign-ai License:apache-2.0 Model card FilesFiles and versions xet Community 3 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "SZLHOLDINGS / governed-inference-meter",
+      "url": "https://insights-db.paloaltonetworks.com/models/SZLHOLDINGS/governed-inference-meter/5649a8af9a1c3e2bcfafbf78fb4838a64edeb2dd/overview",
+      "snippet": "Discover potential threats in the SZLHOLDINGS / governed-inference-meter model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "SZL Holdings — Proof infrastructure for consequential AI",
+      "url": "https://holdings.a-11-oy.com/",
+      "snippet": "SZL Holdings builds the proof layer beneath consequential AI: sovereign inference, DSSE-signed receipts, and machine-checked formal methods. Honest by design."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "samanthalhy/so100_smol_food_1",
+  "slug": "samanthalhy-so100_smol_food_1",
+  "author": "samanthalhy",
+  "url": "https://huggingface.co/samanthalhy/so100_smol_food_1",
+  "created_at": "2026-09-02T00:24:33.000Z",
+  "updated_at": "2026-09-02T00:24:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:samanthalhy/so100_food_1",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046212,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906713296,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "samanthalhy/so100_food_1 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/samanthalhy/so100_food_1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "samanthalhy (Samantha Lee) - Hugging Face",
+      "url": "https://huggingface.co/samanthalhy/datasets",
+      "snippet": "User profile of Samantha Lee on Hugging Face"
+    },
+    {
+      "title": "GitHub - huggingface/smollm: Everything about the SmolLM and SmolVLM ...",
+      "url": "https://github.com/huggingface/smollm",
+      "snippet": "Welcome to Smol Models, a family of efficient and lightweight AI models from Hugging Face. Our mission is to create fully open powerful yet compact models, for text and vision, that can run effectively on-device while maintaining strong performance."
+    },
+    {
+      "title": "GitHub - huggingface/lerobot: LeRobot: Making AI for Robotics more ...",
+      "url": "https://github.com/huggingface/lerobot",
+      "snippet": "Supported Hardware: SO100, LeKiwi, Koch, HopeJR, OMX, EarthRover, Reachy2, Gamepads, Keyboards, Phones, OpenARM, Unitree G1, reBot B601. While these devices are natively integrated into the LeRobot codebase, the library is designed to be extensible."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    }
+  ]
+}

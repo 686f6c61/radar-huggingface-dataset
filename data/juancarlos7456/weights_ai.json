@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "juancarlos7456/Weights_AI",
+  "slug": "juancarlos7456-weights_ai",
+  "author": "juancarlos7456",
+  "url": "https://huggingface.co/juancarlos7456/Weights_AI",
+  "created_at": "2026-09-01T20:10:16.000Z",
+  "updated_at": "2026-09-01T20:10:16.000Z",
+  "license": "cc-by-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Weights is joining OpenAI",
+      "url": "https://www.weights.com/",
+      "snippet": "Weights is joining OpenAI. More than 5 million creators used Weights, Voyages, Replay, and our family of AI products."
+    },
+    {
+      "title": "The truth behind Chrome&#x27;s 4GB &#x27;weights.bin&#x27; Gemini Nano file",
+      "url": "https://www.androidauthority.com/google-chrome-weights-bin-ai-model-download-explained-3664043/",
+      "snippet": "Chrome is silently downloading 4GB AI model files to your PC. Learn what Gemini Nano \"weights\" are and how to delete them to reclaim storage."
+    },
+    {
+      "title": "drforbin.ai — AI model torrents, indexed | Open weights. Distributed ...",
+      "url": "https://drforbin.ai/",
+      "snippet": "The public index for open-weight AI model torrents. Magnet links, infohashes, and rich metadata for openly licensed LLMs, diffusion, audio and embedding models."
+    },
+    {
+      "title": "Weights.gg — AI Voice Model Training & Cover Generation",
+      "url": "https://huntifyai.com/tools/weights-gg",
+      "snippet": "Weights.gg was an AI platform for custom voice model training, AI music covers, image generation, and interactive AI chat. Acquired by OpenAI in 2024."
+    },
+    {
+      "title": "Chrome quietly installed 4GB of AI files on my PC — here&#x27;s how to ...",
+      "url": "https://www.xda-developers.com/chrome-quietly-installed-4gb-ai-files-on-pc-how-to-remove-them/",
+      "snippet": "To re-download the Gemini Nano model, or the weights.bin file, simply re-enable the On-device AI setting. The download may take some time, depending on how fast your internet speed is."
+    }
+  ]
+}

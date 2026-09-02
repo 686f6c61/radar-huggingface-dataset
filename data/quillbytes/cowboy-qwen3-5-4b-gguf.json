@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "QuillBytes/cowboy-qwen3.5-4b-gguf",
+  "slug": "quillbytes-cowboy-qwen3-5-4b-gguf",
+  "author": "QuillBytes",
+  "url": "https://huggingface.co/QuillBytes/cowboy-qwen3.5-4b-gguf",
+  "created_at": "2026-09-01T23:30:36.000Z",
+  "updated_at": "2026-09-01T23:39:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:finetune:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9339817439,
+  "storage_human": "9.3 GB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "llmware/qwen-3.5-4b-gguf · Hugging Face",
+      "url": "https://huggingface.co/llmware/qwen-3.5-4b-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lufel6848/Qwen3.5-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Lufel6848/Qwen3.5-4B-GGUF",
+      "snippet": "Lufel6848 / Qwen3.5-4B-GGUF like 0 GGUF English Chinese qwen qwen3.5 llama.cpp quantization local-ai conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen 3.5 4B local AI model — runs on ~3 GB — guide",
+      "url": "https://theaibench.ai/models/qwen-3-5-4b/",
+      "snippet": "Qwen 3.5 4B local guide: Apache 2.0 small model that runs in ~2.5 GB at Q4 (GPU or CPU), what quality to expect, runner tags, and when to step up to 9B."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "qwen/qwen3.5-4b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-4b",
+      "snippet": "Qwen3.5 4B Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 4B parameter dense model, supporting a native context length of 262,144 tokens. Highlights Unified Vision-Language Foundation."
+    }
+  ]
+}

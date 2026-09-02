@@ -5,14 +5,18 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/llama-3.1-8B-Harmful-GGUF",
   "created_at": "2026-09-01T09:55:57.000Z",
-  "updated_at": "2026-09-01T10:09:41.000Z",
+  "updated_at": "2026-09-01T10:36:27.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
-  "library": null,
+  "library": "transformers",
   "languages": [],
   "tags": [
+    "transformers",
     "gguf",
+    "en",
+    "base_model:sayandasscientistcoder/llama-3.1-8B-Harmful",
+    "base_model:quantized:sayandasscientistcoder/llama-3.1-8B-Harmful",
     "endpoints_compatible",
     "region:us",
     "conversational"
@@ -22,9 +26,9 @@
   "trending_score": 0,
   "parameters": 8030261312,
   "parameters_human": "8.03B",
-  "storage_bytes": 42741975168,
-  "storage_human": "42.7 GB",
-  "base_model": null,
+  "storage_bytes": 71820235008,
+  "storage_human": "71.8 GB",
+  "base_model": "sayandasscientistcoder/llama-3.1-8B-Harmful",
   "formats": [
     "gguf"
   ],

@@ -5,7 +5,7 @@
   "author": "Anish5764",
   "url": "https://huggingface.co/Anish5764/asvspoof-wav2vec2-stage7",
   "created_at": "2026-08-27T12:14:08.000Z",
-  "updated_at": "2026-08-30T23:02:59.000Z",
+  "updated_at": "2026-09-01T18:24:11.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "audio-classification",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "transformers",
+    "onnx",
     "safetensors",
     "wav2vec2",
     "audio-classification",
@@ -25,10 +26,11 @@
   "trending_score": 0,
   "parameters": 94569090,
   "parameters_human": "94.6M",
-  "storage_bytes": 756604624,
-  "storage_human": "757 MB",
+  "storage_bytes": 1135094278,
+  "storage_human": "1.1 GB",
   "base_model": null,
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yethdev/qwen3.5-4b-manumit-v2",
+  "slug": "yethdev-qwen3-5-4b-manumit-v2",
+  "author": "yethdev",
+  "url": "https://huggingface.co/yethdev/qwen3.5-4b-manumit-v2",
+  "created_at": "2026-09-01T23:53:01.000Z",
+  "updated_at": "2026-09-01T23:57:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098609861,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yethdev/qwen3.5-4b-manumit-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/yethdev/qwen3.5-4b-manumit-v1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yethdev/qwen3.5-4b-manumit-v1 · Hugging Face",
+      "url": "https://huggingface.co/yethdev/qwen3.5-4b-manumit-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen3.5: Towards Native Multimodal Agents",
+      "url": "https://qwen.ai/blog?id=qwen3.5",
+      "snippet": "Compared to Qwen3-VL, Qwen3.5 exhibits more robust performance in scientific problem-solving and other visual reasoning tasks. By integrating image content with contextual understanding, it can carry out multi-step logical reasoning, providing a more dependable foundation for multimodal agents in education, research, and beyond."
+    }
+  ]
+}

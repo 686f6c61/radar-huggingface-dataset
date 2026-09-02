@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nrburns/pi05_Pot_1_and_2_Red_3_full_side_long_2026-08-31",
+  "slug": "nrburns-pi05_pot_1_and_2_red_3_full_side_long_2026-08-31",
+  "author": "nrburns",
+  "url": "https://huggingface.co/nrburns/pi05_Pot_1_and_2_Red_3_full_side_long_2026-08-31",
+  "created_at": "2026-09-01T23:36:10.000Z",
+  "updated_at": "2026-09-01T23:38:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:nrburns/Pot_1_and_2_Red-3_full_side-long",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9388473616,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pi05_Pot_1_and_2_Red_3_full_side_long - Hugging Face",
+      "url": "https://huggingface.co/nrburns/pi05_Pot_1_and_2_Red_3_full_side_long",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nrburns/pi05_Pot_1_and_2_Red_3_full_side_short_2026-08-31 · Hugging Face",
+      "url": "https://huggingface.co/nrburns/pi05_Pot_1_and_2_Red_3_full_side_short_2026-08-31",
+      "snippet": "Model Card for pi05 π₀.₅ (Pi05) is a Vision-Language-Action model from Physical Intelligence designed for open-world generalization: it evolves π₀ to generalize to entirely new environments and situations that were never seen during training. The LeRobot implementation is adapted from their open-source OpenPI repository."
+    },
+    {
+      "title": "GitHub - std-song/finetune-pi05",
+      "url": "https://github.com/std-song/finetune-pi05",
+      "snippet": "Contribute to std-song/finetune-pi05 development by creating an account on GitHub."
+    },
+    {
+      "title": "Art Modeling - Peach Model (sets 01-329) | ♥NNM.PHOTOS",
+      "url": "https://nnm.photos/art-modeling-peach-model-sets-01-329/",
+      "snippet": "Art Modeling - Peach Model (sets 01-329) \"Hi! I&#x27;m Peach. I am a professional child model that has always loved modeling. What I enjoy most about modeling is the chance to artistically express myself to my fans around the world. This has been a really fun experience to model and is something that I hope to keep doing for years to come. Just come and enjoy my portfolio - have a big fun ..."
+    },
+    {
+      "title": "GitHub - alibaba-damo-academy/RynnValue: RynnValue: Scaling Robotic ...",
+      "url": "https://github.com/alibaba-damo-academy/RynnValue",
+      "snippet": "🏠 Homepage | 💻 GitHub | 🤗 HuggingFace | 🔮 ModelScope | 📄 ArXiv A general-purpose value foundation model for robot manipulation — and the full toolchain to evaluate it and use it for reinforcement learning of VLA policies. RynnValue is a RynnBrain-based vision-language model (implemented on the Qwen3-VL architecture) that watches a robot video together with a task instruction ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nabiha-100/Pet-health-Advisor",
+  "slug": "nabiha-100-pet-health-advisor",
+  "author": "nabiha-100",
+  "url": "https://huggingface.co/nabiha-100/Pet-health-Advisor",
+  "created_at": "2026-04-01T01:01:25.000Z",
+  "updated_at": "2026-09-02T00:31:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7227968,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pet Health AI - a Hugging Face Space by nabiha-100",
+      "url": "https://huggingface.co/spaces/nabiha-100/pet-health-advisor",
+      "snippet": "Select the symptoms your pet is showing and click Predict to receive a likely health condition, urgency level, and home‑care advice. The result also shows the top three possible conditions with con..."
+    },
+    {
+      "title": "nabiha-100 (Nabiha Anwar Rana) - Hugging Face",
+      "url": "https://huggingface.co/nabiha-100/models",
+      "snippet": "User profile of Nabiha Anwar Rana on Hugging Face"
+    },
+    {
+      "title": "#machinelearning #python #flask #docker #datascience # ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/nabiha-rana-a7605b400_machinelearning-python-flask-activity-7444928268027338752-2gLv",
+      "snippet": "Excited to share my latest pre-midterm project; a Pet Health Advisor AI I developed a machine learning pipeline that predicts potential pet health conditions based on symptoms. Key Technical ..."
+    },
+    {
+      "title": "Pet Health Advisor — AI Prompt for Claude & ChatGPT — a-gnt",
+      "url": "https://a-gnt.com/agents/prompt-pet-health-advisor",
+      "snippet": "Three weeks from now, you&#x27;ll want Pet Health Advisor again. Will you remember where to find it? Save it to your library and the next time you need Pet Health Advisor, it&#x27;s one tap away — from any AI app you use. Group it into a bench with the rest of the team for that kind of task and you can pull the whole stack at once."
+    },
+    {
+      "title": "PetHealthAI - Track Your Pet&#x27;s Health Through Conversation",
+      "url": "https://petwellnessai.com/",
+      "snippet": "Track your pet&#x27;s health symptoms with ease through natural conversation with our AI-powered assistant. Get insights on symptom patterns and generate reports for your veterinarian."
+    }
+  ]
+}

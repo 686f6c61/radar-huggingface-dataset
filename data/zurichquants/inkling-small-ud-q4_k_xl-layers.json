@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "zurichquants/Inkling-Small-UD-Q4_K_XL-layers",
+  "slug": "zurichquants-inkling-small-ud-q4_k_xl-layers",
+  "author": "zurichquants",
+  "url": "https://huggingface.co/zurichquants/Inkling-Small-UD-Q4_K_XL-layers",
+  "created_at": "2026-09-01T23:36:26.000Z",
+  "updated_at": "2026-09-01T23:36:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mesh-llm",
+  "languages": [],
+  "tags": [
+    "mesh-llm",
+    "gguf",
+    "layer-package",
+    "skippy",
+    "distributed-inference",
+    "local-inference",
+    "openai-compatible",
+    "image-text-to-text",
+    "base_model:unsloth/Inkling-Small-GGUF",
+    "base_model:quantized:unsloth/Inkling-Small-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 245428481,
+  "parameters_human": "245.4M",
+  "storage_bytes": 164400718368,
+  "storage_human": "164.4 GB",
+  "base_model": "unsloth/Inkling-Small-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zurichquants (Zurichquants) - Hugging Face",
+      "url": "https://huggingface.co/zurichquants/models",
+      "snippet": "zurichquants/Inkling-Small-UD-Q4_K_XL-layers Image-Text-to-Text • 0.2B•Updated 9 minutes ago"
+    },
+    {
+      "title": "zurichquant/Inkling-Small · Hugging Face",
+      "url": "https://huggingface.co/zurichquant/Inkling-Small",
+      "snippet": "1. General Information Inkling-Small is a general-purpose multimodal model that accepts text, image and audio inputs and generates text outputs. It is intended for use in English and other languages, and across multiple coding languages. The model is designed to be used by developers building AI-powered applications, including agentic and tool-use systems, coding assistants, chatbots, and ..."
+    },
+    {
+      "title": "Inkling - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/inkling",
+      "snippet": "Inkling by Thinking Machines Labs are open-weight multimodal models consisting of: Inkling-Small the new 276B (12B active) model and the earlier 975B (41B) parameter model. Licensed under Apache 2.0, the models support a 1M token context window, native multimodal input for text, image, and audio, and generates text as the output."
+    },
+    {
+      "title": "Inkling-Small Model Card - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/model-card/inkling-small/",
+      "snippet": "Model card for Inkling-Small, a 276B-parameter (12B active) open-weights multimodal model: intended uses, model properties, training, evaluations and safety."
+    },
+    {
+      "title": "Introducing Inkling-Small - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/news/inkling-small/",
+      "snippet": "An open-weights model that matches Inkling at a quarter of the size: multimodal, Mixture-of-Experts, with controllable reasoning effort. Fine-tune it on Tinker."
+    }
+  ]
+}

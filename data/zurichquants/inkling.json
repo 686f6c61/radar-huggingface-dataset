@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zurichquants/Inkling",
+  "slug": "zurichquants-inkling",
+  "author": "zurichquants",
+  "url": "https://huggingface.co/zurichquants/Inkling",
+  "created_at": "2026-09-01T23:32:03.000Z",
+  "updated_at": "2026-09-01T23:32:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 952377623626,
+  "parameters_human": "952.38B",
+  "storage_bytes": 1904786955611,
+  "storage_human": "1904.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zurichquants/Inkling-Small · Hugging Face",
+      "url": "https://huggingface.co/zurichquants/Inkling-Small",
+      "snippet": "1. General Information Inkling-Small is a general-purpose multimodal model that accepts text, image and audio inputs and generates text outputs. It is intended for use in English and other languages, and across multiple coding languages. The model is designed to be used by developers building AI-powered applications, including agentic and tool-use systems, coding assistants, chatbots, and ..."
+    },
+    {
+      "title": "zurichquant/Inkling · Hugging Face",
+      "url": "https://huggingface.co/zurichquant/Inkling",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Inkling - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/inkling/",
+      "snippet": "Inkling-Small is shown with a solid purple line, Inkling with the heavier cobalt line, and the comparison models with dashed lines. Evaluations without a reported model score are plotted at zero. Hover an evaluation to compare every model&#x27;s score."
+    },
+    {
+      "title": "Inkling: Our Open-Weights Model - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/news/introducing-inkling/",
+      "snippet": "Inkling reasons natively over text, images, and audio, and balances cost with performance through efficient and controllable thinking effort. We trained it to be a broad, balanced foundation model: strong across many domains, flexible enough to adapt. Inkling is not the strongest overall model available today, open or closed."
+    },
+    {
+      "title": "Inkling by Thinkingmachines | Available on Krater",
+      "url": "https://krater.ai/models/inkling",
+      "snippet": "Inkling by Thinkingmachines: Inkling is an open-weight multimodal mixture-of-experts model from Thinking Machines Lab, with 41B active parameters out of."
+    }
+  ]
+}

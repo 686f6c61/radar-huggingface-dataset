@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "logan7000/llm-math345-gt-granite2b-full",
+  "slug": "logan7000-llm-math345-gt-granite2b-full",
+  "author": "logan7000",
+  "url": "https://huggingface.co/logan7000/llm-math345-gt-granite2b-full",
+  "created_at": "2026-09-01T21:41:59.000Z",
+  "updated_at": "2026-09-01T21:43:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10134252913,
+  "storage_human": "10.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "logan7000/llm-math345-gt-granite2b-best · Hugging Face",
+      "url": "https://huggingface.co/logan7000/llm-math345-gt-granite2b-best",
+      "snippet": "logan7000 / llm-math345-gt-granite2b-best like 0 Safetensors granite Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 35 Safetensors Model size 166k params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "logan7000 (Logan Yang) - Hugging Face",
+      "url": "https://huggingface.co/logan7000",
+      "snippet": "Multimodal, Context Engineering, NLP, CogSci Recent Activity updated a modelabout 1 hour ago logan7000/llm-math345-ttrl-phi4mini-endpoint updated a modelabout 1 hour ago logan7000/mllm-mmr1-ttrl-internvl35-2b-full-end-s722 updated a modelabout 1 hour ago logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-granite2b-math345-groupC-granite2b-end View all activity"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 412 AI models across 408 benchmarks, with 229 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

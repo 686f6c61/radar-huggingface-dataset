@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "fivefour/gemma-text-to-sql",
+  "slug": "fivefour-gemma-text-to-sql",
+  "author": "fivefour",
+  "url": "https://huggingface.co/fivefour/gemma-text-to-sql",
+  "created_at": "2026-09-01T18:35:12.000Z",
+  "updated_at": "2026-09-01T20:35:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:google/gemma-4-E2B",
+    "base_model:finetune:google/gemma-4-E2B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4880395931,
+  "storage_human": "4.9 GB",
+  "base_model": "google/gemma-4-E2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GEMMA-SQL: A Novel Text-to-SQL Model Based on Large Language Models",
+      "url": "https://arxiv.org/abs/2511.04710",
+      "snippet": "Text-to-SQL systems enable users to interact with structured databases using natural language, eliminating the need for specialized programming knowledge. In this work, we introduce GEMMA-SQL, a lightweight and efficient text-to-SQL model built upon the open-source Gemma 2B architecture."
+    },
+    {
+      "title": "GEMMA-SQL: A Novel Text-to-SQL Model Based on Large Language Models",
+      "url": "https://arxiv.org/pdf/2511.04710",
+      "snippet": "Abstract: Text-to-SQL systems enable users to interact with structured databases using natural language, eliminating the need for specialized programming knowledge. In this work, we introduce GEMMA-SQL, a lightweight and efficient text-to-SQL model built upon the open-source Gemma 2B architecture. Unlike many large language models (LLMs), GEMMA-SQL is fine-tuned in a resource-efficient ..."
+    },
+    {
+      "title": "gemma-text-to-sql/README.md at main - GitHub",
+      "url": "https://github.com/HRF001/gemma-text-to-sql/blob/main/README.md",
+      "snippet": "Text-to-SQL is the task of converting natural language questions into executable SQL queries—a capability behind many modern BI tools (Snowflake Cortex Analyst, Databricks Genie, etc.). This project fine-tunes a small instruction-tuned model (Gemma-3-1B) using QLoRA on 5,000 synthetic text-to-SQL samples, and analyzes how fine-tuning improves SQL generation quality across different query ..."
+    },
+    {
+      "title": "GEMMA-SQL: A Novel Text-to-SQL Model Based on Large Language Models ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/gemma-sql-novel-text-sql-model-based",
+      "snippet": "Conclusion GEMMA-SQL demonstrates that practical text-to-SQL systems don&#x27;t require enormous models or massive computational budgets. By combining a modest base architecture with thoughtful instruction tuning and intelligent prompting, the researchers built a system that matches or exceeds larger competitors on standard benchmarks."
+    },
+    {
+      "title": "alexwong/gemma-text-to-sql · Hugging Face",
+      "url": "https://huggingface.co/alexwong/gemma-text-to-sql",
+      "snippet": "Model Card for gemma-text-to-sql This model is a fine-tuned version of google/gemma-3-1b-pt. It has been trained using TRL."
+    }
+  ]
+}

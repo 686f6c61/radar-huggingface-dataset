@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "itzPotato/transcoder-relu-2layer-seed0-layer0",
+  "slug": "itzpotato-transcoder-relu-2layer-seed0-layer0",
+  "author": "itzPotato",
+  "url": "https://huggingface.co/itzPotato/transcoder-relu-2layer-seed0-layer0",
+  "created_at": "2026-09-02T00:15:22.000Z",
+  "updated_at": "2026-09-02T00:15:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "interpretability",
+    "transcoder",
+    "sparse-autoencoder",
+    "arithmetic",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 266656,
+  "storage_human": "266656 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/TransCoder: Public release of the TransCoder ...",
+      "url": "https://github.com/facebookresearch/TransCoder",
+      "snippet": "License TransCoder is under the license detailed in the Creative Commons Attribution-NonCommercial 4.0 International license. See LICENSE for more details."
+    },
+    {
+      "title": "google/gemma-2-2b · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2-2b",
+      "snippet": "Running the model through a CLI The local-gemma repository contains a lightweight wrapper around Transformers for running Gemma 2 through a command line interface, or CLI. Follow the installation instructions for getting started, then launch the CLI through the following command: local-gemma --model \"google/gemma-2-2b\" --prompt \"What is the capital of Mexico?\" Quantized Versions through ..."
+    },
+    {
+      "title": "Testnet Bridge - LayerZero",
+      "url": "https://layerzero.network/",
+      "snippet": "The industry standard for cross-chain asset movement. Issuers use LayerZero to deploy, expand, and connect assets to the world&#x27;s most utilized blockchains."
+    },
+    {
+      "title": "TransCoder Model | facebookresearch/CodeGen | DeepWiki",
+      "url": "https://deepwiki.com/facebookresearch/CodeGen/2.1-transcoder-model",
+      "snippet": "TransCoder Model Relevant source files Introduction The TransCoder model is the core component of Facebook Research&#x27;s unsupervised code translation system. It enables automatic translation between programming languages (primarily C++, Java, and Python) without requiring parallel data. This page describes the model architecture, training methodology, and usage of the TransCoder model as ..."
+    },
+    {
+      "title": "TensorFlow.js API",
+      "url": "https://js.tensorflow.org/api/latest/",
+      "snippet": "Models / Creation There are two primary ways of creating models. Sequential — Easiest, works if the models is a simple stack of each layer&#x27;s input resting on the top of the previous layer&#x27;s output. Model — Offers more control if the layers need to be wired together in graph-like ways — multiple &#x27;towers&#x27;, layers that skip a layer, etc."
+    }
+  ]
+}

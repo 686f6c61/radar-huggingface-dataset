@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "neeraj-mO/bert-emotion-finetuned",
+  "slug": "neeraj-mo-bert-emotion-finetuned",
+  "author": "neeraj-mO",
+  "url": "https://huggingface.co/neeraj-mO/bert-emotion-finetuned",
+  "created_at": "2026-09-01T19:46:18.000Z",
+  "updated_at": "2026-09-01T20:00:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "emotion-classification",
+    "fine-tuned",
+    "nlp",
+    "en",
+    "dataset:dair-ai/emotion",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486854,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437970928,
+  "storage_human": "438 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "workshops/tutorials/bert-fine-tuning-emotion at main · unionai ...",
+      "url": "https://github.com/unionai/workshops/tree/main/tutorials/bert-fine-tuning-emotion",
+      "snippet": "ModernBERT Emotion Classification Fine-tune ModernBERT to classify emotions in text, then explore how the model makes decisions with attention heatmaps and gradient-based token attribution."
+    },
+    {
+      "title": "workshops/tutorials/bert-fine-tuning-emotion/README.md at main ... - GitHub",
+      "url": "https://github.com/unionai/workshops/blob/main/tutorials/bert-fine-tuning-emotion/README.md",
+      "snippet": "ModernBERT Emotion Classification Fine-tune ModernBERT to classify emotions in text, then explore how the model makes decisions with attention heatmaps and gradient-based token attribution."
+    },
+    {
+      "title": "bert-emotion-tutorial.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/unionai/workshops/blob/main/tutorials/bert-fine-tuning-emotion/bert-emotion-tutorial.ipynb",
+      "snippet": "This isn&#x27;t a limitation of the model architecture itself. The training data (Twitter messages) is mostly direct emotional statements and rarely contains negated examples, so the model simply pattern-matches on emotional keywords."
+    },
+    {
+      "title": "boltuix/bert-emotion · Hugging Face",
+      "url": "https://huggingface.co/boltuix/bert-emotion",
+      "snippet": "boltuix / bert-emotion like 68 Text Classification Transformers Safetensors custom chatgpt English bert emotion classification emojis emotions v1.0 sentiment-analysis nlp lightweight chatbot social-media mental-health short-text emotion-detection real-time expressive ai machine-learning english inference edge-ai smart-replies tone-analysis License:apache-2.0 Model card FilesFiles and versions ..."
+    },
+    {
+      "title": "KhaldiAbderrhmane/bert-emotion · Hugging Face",
+      "url": "https://huggingface.co/KhaldiAbderrhmane/bert-emotion",
+      "snippet": "This model is a fine-tuned version of bert-base-uncased on the Emotions dataset from Kaggle, with the best results on that last it can also provide a verbose understanding of the general emotion themes of English text."
+    }
+  ]
+}

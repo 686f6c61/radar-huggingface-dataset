@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "CodeSoft/sorbet-mini-experimental",
+  "slug": "codesoft-sorbet-mini-experimental",
+  "author": "CodeSoft",
+  "url": "https://huggingface.co/CodeSoft/sorbet-mini-experimental",
+  "created_at": "2026-09-02T00:59:26.000Z",
+  "updated_at": "2026-09-02T01:16:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "text-generation",
+    "sorbet",
+    "sorbet-mini",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4920512,
+  "parameters_human": "4.9M",
+  "storage_bytes": 25578496,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CodeSoft/sorbet-25m at main - Hugging Face",
+      "url": "https://huggingface.co/CodeSoft/sorbet-25m/tree/main",
+      "snippet": "How to use CodeSoft/sorbet-25m with SGLang: ... Docker Model Runner How to use CodeSoft/sorbet-25m with Docker Model Runner: ... main sorbet-25m 51.5 MB Ctrl+K Ctrl+K 1 contributor History:3 commits CodeSoft Add hfviewer architecture card da6685a verifiedabout 3 hours ago tokenizerUpload 9 filesabout 3 hours ago .gitattributes Safe 1.52 ..."
+    },
+    {
+      "title": "@CodeSoft on Hugging Face: \"Over the past week or so, I&#x27;ve been working ...",
+      "url": "https://huggingface.co/posts/CodeSoft/616792874930010",
+      "snippet": "Over the past week or so, I&#x27;ve been working on some models, those released being CodeSoft/sorbet-25m and CodeSoft/sorbet-v2-25m. In general, I&#x27;m a little confused because no matter what hyperparameters I change or datasets I add/remove, the benchmarks never move up. In a recent project, where I attached a TN-gram block to Sorbet-v2-25M, it still stayed the same on benchmarks despite the TN ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 125 Estimated models among 412 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Architecture graph for CodeSoft/sorbet-v2-25m | hfviewer",
+      "url": "https://hfviewer.com/CodeSoft/sorbet-v2-25m",
+      "snippet": "CodeSoft/sorbet-v2-25m architecture at a glance CodeSoft/sorbet-v2-25m is a text-generation model (qwen2 architecture). It uses 14 transformer layers, a hidden size of 384, and 6 query heads with 2 key/value heads (grouped-query attention). The feed-forward layers use an intermediate size of 1,024."
+    },
+    {
+      "title": "GitHub - Niroshinid6/CODESOFT_TASKS: Developed three Python-based ML ...",
+      "url": "https://github.com/Niroshinid6/CODESOFT_TASKS",
+      "snippet": "Developed three Python-based ML projects: Movie Rating Prediction using regression, Sales Prediction using advertising and business factors, and Credit Card Fraud Detection using classification. Ga..."
+    }
+  ]
+}

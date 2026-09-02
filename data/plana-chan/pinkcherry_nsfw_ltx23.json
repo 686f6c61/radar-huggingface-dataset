@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Plana-Chan/PinkCherry_NSFW_LTX23",
+  "slug": "plana-chan-pinkcherry_nsfw_ltx23",
+  "author": "Plana-Chan",
+  "url": "https://huggingface.co/Plana-Chan/PinkCherry_NSFW_LTX23",
+  "created_at": "2026-09-01T23:40:36.000Z",
+  "updated_at": "2026-09-01T23:40:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ltx-video",
+    "nfaa",
+    "nsfw",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21005004544,
+  "parameters_human": "21.01B",
+  "storage_bytes": 572644545370,
+  "storage_human": "572.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LTX 2.3 NSFW: Understanding Content Restrictions",
+      "url": "https://ltx23.video/blog/ltx-2-3-nsfw",
+      "snippet": "Comprehensive guide to LTX 2.3 NSFW content generation capabilities, platform policies, legal considerations, and responsible AI video creation."
+    },
+    {
+      "title": "LTX 2.5 & LTX 2.3 ComfyUI Models — Choose by VRAM",
+      "url": "https://ltxworkflow.com/models",
+      "snippet": "Pick the right LTX 2.5 or LTX 2.3 model for your GPU. Grouped by VRAM tier, with GGUF quants, IC-LoRAs, Gemma text encoders, and per-file install paths. Direct HuggingFace links on each model page."
+    },
+    {
+      "title": "LTX-2.3: Previous Generation AI Video Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-3",
+      "snippet": "LTX-2.3 is the previous LTX release. Open weights, synchronized audio, and native portrait video. Still fully supported. LTX-2.5 is the current model."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=ltx",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "pinkcherry AI Models | Civitai",
+      "url": "https://civitai.com/tag/pinkcherry",
+      "snippet": "Browse 1 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with pinkcherry."
+    }
+  ]
+}

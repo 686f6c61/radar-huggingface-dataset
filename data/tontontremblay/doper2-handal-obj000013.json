@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "TontonTremblay/doper2-handal-obj000013",
+  "slug": "tontontremblay-doper2-handal-obj000013",
+  "author": "TontonTremblay",
+  "url": "https://huggingface.co/TontonTremblay/doper2-handal-obj000013",
+  "created_at": "2026-09-02T00:55:01.000Z",
+  "updated_at": "2026-09-02T00:55:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 346109702,
+  "storage_human": "346 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TontonTremblay (jonathan) - Hugging Face",
+      "url": "https://huggingface.co/TontonTremblay/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 28 days ago ... published a dataset 28 days ago"
+    },
+    {
+      "title": "TontonTremblay/DOPER_BOP · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/TontonTremblay/DOPER_BOP",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TontonTremblay (Jonathan Tremblay) · GitHub",
+      "url": "https://github.com/TontonTremblay",
+      "snippet": "TontonTremblay has 58 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub",
+      "url": "https://github.com/TontonTremblay/handal_annotating/blob/master/readme.md",
+      "snippet": "HANDAL handle annotation tool for meshes &#92;n Their are two scrits, load_from_all_ply_from_folder.pyloads all the ply files in a folder. menu.pyloads a menu in blender that with two buttons in the tool pane. &#92;n"
+    },
+    {
+      "title": "Simplifying AI on X: \"Here&#x27;s the link: https://t.co/PqYUEkJBER If you ...",
+      "url": "https://x.com/simplifyinAI/status/2094362545348120592",
+      "snippet": "If you want more practical AI gems and a list of full free AI resources, go here: simplifyingai.co GitHub - ahujasid/blender-mcp: Community plugin to control Blender 3D with any LLM of your choice"
+    }
+  ]
+}

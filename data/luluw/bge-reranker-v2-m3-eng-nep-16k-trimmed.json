@@ -5,7 +5,7 @@
   "author": "luluw",
   "url": "https://huggingface.co/luluw/bge-reranker-v2-m3-eng-nep-16k-trimmed",
   "created_at": "2026-08-31T15:01:37.000Z",
-  "updated_at": "2026-08-31T15:14:26.000Z",
+  "updated_at": "2026-09-01T08:20:26.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 46,
   "trending_score": 0,
   "parameters": 328530945,
   "parameters_human": "328.5M",
-  "storage_bytes": 2628343896,
-  "storage_human": "2.6 GB",
+  "storage_bytes": 3942515844,
+  "storage_human": "3.9 GB",
   "base_model": "BAAI/bge-reranker-v2-m3",
   "formats": [
     "safetensors"

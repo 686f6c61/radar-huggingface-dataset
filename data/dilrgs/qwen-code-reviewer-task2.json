@@ -5,7 +5,7 @@
   "author": "dilrgs",
   "url": "https://huggingface.co/dilrgs/qwen-code-reviewer-task2",
   "created_at": "2026-09-01T16:52:54.000Z",
-  "updated_at": "2026-09-01T16:53:26.000Z",
+  "updated_at": "2026-09-01T20:05:56.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",
-  "storage_bytes": 757586700,
-  "storage_human": "758 MB",
+  "storage_bytes": 1503751508,
+  "storage_human": "1.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

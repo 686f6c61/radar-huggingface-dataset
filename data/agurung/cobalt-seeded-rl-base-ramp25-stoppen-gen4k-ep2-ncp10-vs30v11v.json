@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 669,
+  "downloads_30d": 1761,
   "trending_score": 0,
   "parameters": 4411424256,
   "parameters_human": "4.41B",
-  "storage_bytes": 61771684290,
-  "storage_human": "61.8 GB",
+  "storage_bytes": 17657211690,
+  "storage_human": "17.7 GB",
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"

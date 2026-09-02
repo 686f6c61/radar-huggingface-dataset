@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "markrodrigo/Qwen-3.5-2B-Spatial-SQL-1.1",
+  "slug": "markrodrigo-qwen-3-5-2b-spatial-sql-1-1",
+  "author": "markrodrigo",
+  "url": "https://huggingface.co/markrodrigo/Qwen-3.5-2B-Spatial-SQL-1.1",
+  "created_at": "2026-08-05T00:13:43.000Z",
+  "updated_at": "2026-09-01T22:40:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "code",
+    "spatial",
+    "SQL",
+    "GIS",
+    "PostGIS",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 387,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 3783681373,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen-3.5-2B-Spatial-SQL-1.1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen-3.5-2B-Spatial-SQL-1.1-GGUF",
+      "snippet": "Instructions to use mradermacher/Qwen-3.5-2B-Spatial-SQL-1.1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "markrodrigo/Qwen-3.5-4B-Spatial-SQL-1.1 · Hugging Face",
+      "url": "https://huggingface.co/markrodrigo/Qwen-3.5-4B-Spatial-SQL-1.1",
+      "snippet": "This model, Qwen-3.5-4B-Spatial-SQL-1.1, is a 4B, narrow use case, text to spatial SQL, lightly fine-tuned model. In general, its primary use case is the Natural Language command adaptation of particular geographic spatial functions as normally defined in pure SQL."
+    },
+    {
+      "title": "qwen3.5:2b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:2b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen/Qwen3.5-2B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-2B",
+      "snippet": "Qwen3.5-2B is a miniature dense Qwen3.5 model — the full gated delta networks architecture, vision encoder, and 262K context, in a form small enough for 8 GB consumer GPUs or edge inference."
+    },
+    {
+      "title": "Qwen3.5-2B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/compute/models/qwen3_5_2b",
+      "snippet": "Qwen3.5-2B Balanced 2B parameter model from the Qwen3.5 series for on‑device inference. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    }
+  ]
+}

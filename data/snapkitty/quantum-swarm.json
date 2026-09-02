@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/quantum-swarm",
+  "slug": "snapkitty-quantum-swarm",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/quantum-swarm",
+  "created_at": "2026-07-14T12:10:59.000Z",
+  "updated_at": "2026-09-01T23:34:42.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "sovereign-compute",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Snapkitty/quantum-swarm · Hugging Face",
+      "url": "https://huggingface.co/Snapkitty/quantum-swarm",
+      "snippet": "Snapkitty / quantum-swarm like 0 Follow Snapkitty Collective 1 English javascript quantum swarm sovereign snapkitty born-collapse hkdf worm License:sovereign-source-license-v2 Model card FilesFiles and versions xet Community Copy to bucket new quantum-swarm — Quantum Agent Swarm Engine Multiplicity Theory API Phi-weighted routing Trust"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=snapkitty",
+      "snippet": "Explore machine learning models. 6 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: snapkitty Clear all"
+    },
+    {
+      "title": "Moonshot AI",
+      "url": "https://www.moonshot.ai/",
+      "snippet": "Complex problems, solved with ease AI Models is capability. Code, analyze, sheets and slides — simplify complex work with the latest flagship model."
+    },
+    {
+      "title": "GitHub - josephjilovec/quantum-swarm: A recursive self-improvement ...",
+      "url": "https://github.com/josephjilovec/quantum-swarm",
+      "snippet": "Quantum-Orchestrated Self-Evolving Swarm System A recursive self-improvement framework where AI agents generate, verify, optimize, and deploy code with ZERO human intervention. Version 3.0 - Total System Autonomy: Perpetual Loop, Self-Healing, Self-Provisioning, Hardware Watchdog, and Self-Discovery."
+    },
+    {
+      "title": "BEL-ESPRIT-D-ACCORD-TRUST-HOLDINGS/snapkitty-research-labs - GitHub",
+      "url": "https://github.com/BEL-ESPRIT-D-ACCORD-TRUST-HOLDINGS/snapkitty-research-labs",
+      "snippet": "What This Is SnapKitty Research Labs is the formal research and development institution of The Shared Primordial Foundation. It operates as a sovereign research lab — structurally equivalent to Bell Labs, DeepMind Research, or a national laboratory — but constituted under irrevocable trust law with cryptographic provenance on every output."
+    }
+  ]
+}

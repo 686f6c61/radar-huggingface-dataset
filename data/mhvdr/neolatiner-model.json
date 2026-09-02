@@ -5,7 +5,7 @@
   "author": "mhvdr",
   "url": "https://huggingface.co/mhvdr/neolatiner-model",
   "created_at": "2026-08-28T07:27:56.000Z",
-  "updated_at": "2026-08-31T14:28:58.000Z",
+  "updated_at": "2026-09-01T08:08:22.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "token-classification",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 51,
   "trending_score": 0,
   "parameters": 558848007,
   "parameters_human": "558.8M",

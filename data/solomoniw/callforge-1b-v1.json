@@ -5,7 +5,7 @@
   "author": "solomoniw",
   "url": "https://huggingface.co/solomoniw/CallForge-1B-v1",
   "created_at": "2026-08-30T04:51:28.000Z",
-  "updated_at": "2026-09-01T14:08:36.000Z",
+  "updated_at": "2026-09-02T00:48:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -16,6 +16,7 @@
   "tags": [
     "transformers",
     "safetensors",
+    "gguf",
     "llama",
     "text-generation",
     "tool-use",
@@ -37,10 +38,11 @@
   "trending_score": 0,
   "parameters": 1080632832,
   "parameters_human": "1.08B",
-  "storage_bytes": 8645112896,
-  "storage_human": "8.6 GB",
+  "storage_bytes": 18235135680,
+  "storage_human": "18.2 GB",
   "base_model": "openbmb/MiniCPM5-1B",
   "formats": [
+    "gguf",
     "safetensors"
   ],
   "is_conversational": true,

@@ -5,7 +5,7 @@
   "author": "ahmedsamirtarjama",
   "url": "https://huggingface.co/ahmedsamirtarjama/Tashkeel-v2",
   "created_at": "2026-08-31T22:21:34.000Z",
-  "updated_at": "2026-08-31T22:27:00.000Z",
+  "updated_at": "2026-09-01T06:44:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 14,
   "trending_score": 0,
   "parameters": 171573406,
   "parameters_human": "171.6M",

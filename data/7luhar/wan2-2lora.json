@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "7luhar/wan2.2lora",
+  "slug": "7luhar-wan2-2lora",
+  "author": "7luhar",
+  "url": "https://huggingface.co/7luhar/wan2.2lora",
+  "created_at": "2025-09-05T01:16:05.000Z",
+  "updated_at": "2026-09-01T19:56:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "not-for-all-audiences",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68464057728,
+  "storage_human": "68.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "7luhar/wan2.2lora · Hugging Face",
+      "url": "https://huggingface.co/7luhar/wan2.2lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wan2.2 · 7luhar/wan2.2lora at main - Hugging Face",
+      "url": "https://huggingface.co/7luhar/wan2.2lora/blob/main/wan2.2",
+      "snippet": "7luhar / wan2.2lora like 3 Not-For-All-Audiences Model card FilesFiles and versions xet Community Copy to bucket new main wan2.2lora /wan2.2 7luhar Create wan2.2 3eb8645 verified10 months ago Raw Download with hf CLI Copy download link History Blame Contribute Delete Safe 0 Bytes"
+    },
+    {
+      "title": "Wan 2.2 I2V 720P LoRA Ultra Fast - wavespeed-ai",
+      "url": "https://wavespeed.ai/models/wavespeed-ai/wan-2.2/i2v-720p-lora-ultra-fast",
+      "snippet": "Wan 2.2 i2v 720P is an ultra-fast Image-to-Video model that generates unlimited AI videos and supports custom LoRAs for personalized outputs. Ready-to-use REST inference API, best performance, no coldstarts, affordable pricing."
+    },
+    {
+      "title": "GitHub - wanImageToVideo/wan2.2-lora: wan 2.2 lora model",
+      "url": "https://github.com/wanImageToVideo/wan2.2-lora/tree/main",
+      "snippet": "wan 2.2 lora model. Contribute to wanImageToVideo/wan2.2-lora development by creating an account on GitHub."
+    },
+    {
+      "title": "Wan 2.2 AI Video Generator (1080p, MoE, LoRA) | GoEnhance AI",
+      "url": "https://www.goenhance.ai/video-models/wan-2-2",
+      "snippet": "Wan 2.2 upgrades Alibaba Cloud&#x27;s AI video model with native 1080p output, MoE efficiency, cinematic motion control, volumetric FX, and few‑shot LoRA personalization. Try it on GoEnhance AI."
+    }
+  ]
+}

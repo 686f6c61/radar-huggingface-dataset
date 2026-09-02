@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "npario/Qwen3.8-27B-MLX-5bit",
+  "slug": "npario-qwen3-8-27b-mlx-5bit",
+  "author": "npario",
+  "url": "https://huggingface.co/npario/Qwen3.8-27B-MLX-5bit",
+  "created_at": "2026-09-02T00:38:03.000Z",
+  "updated_at": "2026-09-02T00:38:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "mlx",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5505879280,
+  "parameters_human": "5.51B",
+  "storage_bytes": 19436200104,
+  "storage_human": "19.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lmstudio-community/Qwen3.8-27B-MLX-5bit · Hugging Face",
+      "url": "https://huggingface.co/lmstudio-community/Qwen3.8-27B-MLX-5bit",
+      "snippet": "lmstudio-community / Qwen3.8-27B-MLX-5bit like 0 Follow LM Studio Community 4.79k Image-Text-to-Text Transformers Safetensors MLX qwen3_5 conversational 5-bit License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "npario/Qwen3.8-27B-8bit · Hugging Face",
+      "url": "https://huggingface.co/npario/Qwen3.8-27B-8bit",
+      "snippet": "Instructions to use npario/Qwen3.8-27B-8bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use npario/Qwen3.8-27B-8bit with MLX:"
+    },
+    {
+      "title": "Qwen3.8-27B Benchmarks & Speed (September 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/models/qwen3-8-27b",
+      "snippet": "Qwen3.8-27B is a open weight model with a 262K context window. It uses an explicit reasoning mode, which can improve complex problem solving while adding latency and token use."
+    },
+    {
+      "title": "Qwen3.8-27B on Apple Silicon: MLX Setup, VRAM & Reality",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-mlx",
+      "snippet": "Qwen3.8 27B runs on Apple Silicon today through MLX. The tag is qwen3.8:27b-mlx in Ollama, added in Ollama v0.32.12, and the 4-bit build downloads at about 18 GB and needs roughly 16-19 GB of unified memory — which makes a 24 GB+ Mac the realistic floor and a 16 GB Mac a no-go. The weights are Apache 2.0, free at the point of use on hardware you own, which is the entire point of the model ..."
+    },
+    {
+      "title": "Qwen3.8-27B: The Ultimate Guide to Running It Locally",
+      "url": "https://linas.substack.com/p/qwen3-8-27b-local-guide",
+      "snippet": "The Ultimate Guide to Qwen3.8-27B 🤖 How to run Alibaba&#x27;s 27B open AI model locally: a step-by-step guide to the settings, hardware requirements, & prompts that deliver frontier AI results for founders, builders, and investors."
+    }
+  ]
+}

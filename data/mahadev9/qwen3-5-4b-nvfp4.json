@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mahadev9/Qwen3.5-4B-nvfp4",
+  "slug": "mahadev9-qwen3-5-4b-nvfp4",
+  "author": "mahadev9",
+  "url": "https://huggingface.co/mahadev9/Qwen3.5-4B-nvfp4",
+  "created_at": "2026-09-01T22:12:43.000Z",
+  "updated_at": "2026-09-01T22:13:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "nvfp4",
+    "llm-compressor",
+    "vllm",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 3301062373,
+  "storage_human": "3.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3.5:4b-nvfp4 - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b-nvfp4",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "vistralis/Qwen3-4B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/vistralis/Qwen3-4B-NVFP4",
+      "snippet": "Intended Use Quantized text encoder for Flux 2 Klein 4B image generation pipelines. Architecturally identical to the Klein 4B text encoder. Quantization Details Scheme: NVFP4 — 4-bit weights with 4-bit activations, FP8 block scales, FP32 global scale Targets: All Linear layers (excluding lm_head) Calibration: 256 samples, sequential pipeline with CPU offloading Group Size: 16 Scale Dtype ..."
+    },
+    {
+      "title": "qwen3.5:4b nvfp4 | LLMfit Model Details",
+      "url": "https://llmfit.io/models/qwen3.5%3A4b%20nvfp4",
+      "snippet": "About this model qwen3.5:4b nvfp4 is a mid-size dense transformer model developed by Alibaba. It has 4 B parameters and supports a 128K token context window. Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance. Quantization & memory guide — qwen3.5:4b nvfp4 on RTX 4090 Choosing a lower quantization reduces VRAM requirements and increases ..."
+    },
+    {
+      "title": "thomas-hiddenpeak/qwen35-thor: Qwen3.5-Thor - GitHub",
+      "url": "https://github.com/thomas-hiddenpeak/qwen35-thor",
+      "snippet": "Qwen3.5-Thor Inference Engine High-performance BF16 / NVFP4 inference engine for Qwen3.5 model family (4B / 9B / 27B / 35B-A3B MoE / 122B-A10B MoE) on NVIDIA Jetson AGX Thor (SM110a Blackwell), written in C++17 / CUDA. Note: Model weights are not included. Download from Hugging Face and set model_dir in config."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "wyattearp",
   "url": "https://huggingface.co/wyattearp/Gemma-4-E4B-text-base",
   "created_at": "2026-09-01T17:23:55.000Z",
-  "updated_at": "2026-09-01T17:24:43.000Z",
+  "updated_at": "2026-09-01T18:33:38.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

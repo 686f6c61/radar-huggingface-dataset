@@ -5,7 +5,7 @@
   "author": "fpadovani",
   "url": "https://huggingface.co/fpadovani/nld-100mb-after-nld_newlexicon_zipf-ckpt500_seed455",
   "created_at": "2026-09-01T08:54:51.000Z",
-  "updated_at": "2026-09-01T10:38:21.000Z",
+  "updated_at": "2026-09-01T11:16:29.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 6490020540,
-  "storage_human": "6.5 GB",
+  "storage_bytes": 9235305731,
+  "storage_human": "9.2 GB",
   "base_model": "fpadovani/ppt-nld_newlexicon_zipf-100mb_seed455",
   "formats": [
     "safetensors"

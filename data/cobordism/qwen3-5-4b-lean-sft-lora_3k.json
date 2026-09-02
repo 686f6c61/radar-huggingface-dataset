@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cobordism/qwen3.5-4b-lean-sft-lora_3k",
+  "slug": "cobordism-qwen3-5-4b-lean-sft-lora_3k",
+  "author": "cobordism",
+  "url": "https://huggingface.co/cobordism/qwen3.5-4b-lean-sft-lora_3k",
+  "created_at": "2026-09-01T21:19:19.000Z",
+  "updated_at": "2026-09-01T21:46:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "lean",
+    "formal-theorem-proving",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 312054496,
+  "storage_human": "312 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-4B LoRA Fine-tuning on Step-3.5-Flash-SFT - GitHub",
+      "url": "https://github.com/IIIIQIIII/qwen35-4b-lora-sft",
+      "snippet": "Fine-tuning Qwen3.5-4B with LoRA r=128 on StepFun&#x27;s agent/reasoning SFT dataset using Axolotl on a single NVIDIA H100 PCIe 80GB."
+    },
+    {
+      "title": "bategojko/qwen3.5-4b-it-sft-lora-crc100k · Hugging Face",
+      "url": "https://huggingface.co/bategojko/qwen3.5-4b-it-sft-lora-crc100k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen35-4b-lora-sft/README.md at main - GitHub",
+      "url": "https://github.com/IIIIQIIII/qwen35-4b-lora-sft/blob/main/README.md",
+      "snippet": "Qwen3.5-4B LoRA Fine-tuning on Step-3.5-Flash-SFT Fine-tuning Qwen3.5-4B with LoRA r=128 on StepFun&#x27;s agent/reasoning SFT dataset using Axolotl on a single NVIDIA H100 PCIe 80GB."
+    },
+    {
+      "title": "DavidOKBm/MathThink-Qwen-3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/DavidOKBm/MathThink-Qwen-3.5-4B",
+      "snippet": "Qwen3.5-4B Math Fine-Tuned (Nemotron-SFT-Math-v3) This model is a fine-tuned version of Qwen3.5-4B, explicitly optimized for complex mathematical reasoning and Chain-of-Thought (CoT) problem solving. It was fine-tuned using the Nemotron-Math-v3 dataset with Parameter-Efficient Fine-Tuning (PEFT/LoRA)."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency. Highlights Qwen3.5 features the following enhancement:"
+    }
+  ]
+}

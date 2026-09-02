@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base-b20",
+  "slug": "agurung-cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base-b20",
+  "author": "agurung",
+  "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base-b20",
+  "created_at": "2026-09-01T16:41:28.000Z",
+  "updated_at": "2026-09-02T02:04:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "openrlhf",
+    "grpo",
+    "reinforcement-learning",
+    "code-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 35303000730,
+  "storage_human": "35.3 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base",
+      "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base-b20 ...",
+      "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base-b20",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10 ...",
+      "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-groot30v11v",
+      "snippet": "Instructions to use agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-groot30v11v with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base",
+      "url": "https://friendli.ai/models/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base",
+      "snippet": "Deploy cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Base Beryl Upgrade June 25 2026 | B20 Token Standard & Thesis",
+      "url": "https://www.spotedcrypto.com/base-beryl-mainnet-upgrade-june-25-2026/",
+      "snippet": "Base Beryl activates June 25 at 18:00 UTC. Full thesis: B20 native tokens, 5-day withdrawals, Reth V2, and how to position around the Cobalt roadmap."
+    }
+  ]
+}

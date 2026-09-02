@@ -5,7 +5,7 @@
   "author": "LightOriginsHQ",
   "url": "https://huggingface.co/LightOriginsHQ/LightNav-0",
   "created_at": "2026-08-28T09:18:56.000Z",
-  "updated_at": "2026-09-01T01:50:31.000Z",
+  "updated_at": "2026-09-01T05:44:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -33,7 +33,7 @@
   "trending_score": 16,
   "parameters": 4847825408,
   "parameters_human": "4.85B",
-  "storage_bytes": 9709151142,
+  "storage_bytes": 9709591460,
   "storage_human": "9.7 GB",
   "base_model": "Qwen/Qwen3-VL-4B-Instruct",
   "formats": [

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "andyrdt/09_2026_puzzle_1",
+  "slug": "andyrdt-09_2026_puzzle_1",
+  "author": "andyrdt",
+  "url": "https://huggingface.co/andyrdt/09_2026_puzzle_1",
+  "created_at": "2026-09-01T20:58:21.000Z",
+  "updated_at": "2026-09-01T21:02:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4965,
+  "storage_human": "4965 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "puzzles/04_2026 at main · andyrdt/puzzles · GitHub",
+      "url": "https://github.com/andyrdt/puzzles/tree/main/04_2026",
+      "snippet": "Mech Interp Puzzles — April 2026 Inspired by Callum McDougall&#x27;s ARENA Monthly Algorithmic Challenges. Monthly algorithmic mechanistic interpretability challenge. Each puzzle is a toy model trained on a toy algorithmic task. The model is as simple as possible while achieving perfect accuracy. Your goal: reverse-engineer the algorithm the model ..."
+    },
+    {
+      "title": "andyrdt (Andy Arditi) - Hugging Face",
+      "url": "https://huggingface.co/andyrdt/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago"
+    },
+    {
+      "title": "andyrdt/04_2026_puzzle_1a · Hugging Face",
+      "url": "https://huggingface.co/andyrdt/04_2026_puzzle_1a",
+      "snippet": "andyrdt / 04_2026_puzzle_1a like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 58 Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "andyrdt (Andy Arditi) · GitHub",
+      "url": "https://github.com/andyrdt/",
+      "snippet": "Contribution activity August 2026 Created 2 commits in 2 repositories andyrdt/dotfiles 1 commit maxim-saplin/llm_chess 1 commit"
+    },
+    {
+      "title": "raw.githubusercontent.com",
+      "url": "https://raw.githubusercontent.com/andyrdt/puzzles/refs/heads/main/04_2026/starter_notebook.ipynb",
+      "snippet": "\"- **Describe the mechanism** the model uses to find the max.&#92;n\", \"- **Provide evidence** via attention pattern visualizations, ablation experiments, activation patching, direct logit attribution, or other relevant techniques.&#92;n\","
+    }
+  ]
+}

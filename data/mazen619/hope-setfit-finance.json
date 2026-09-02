@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Mazen619/hope-setfit-finance",
+  "slug": "mazen619-hope-setfit-finance",
+  "author": "Mazen619",
+  "url": "https://huggingface.co/Mazen619/hope-setfit-finance",
+  "created_at": "2026-09-01T22:38:02.000Z",
+  "updated_at": "2026-09-01T22:44:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "bert",
+    "sentence-transformers",
+    "text-classification",
+    "generated_from_setfit_trainer",
+    "arxiv:2209.11055",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33360000,
+  "parameters_human": "33.4M",
+  "storage_bytes": 133488909,
+  "storage_human": "133 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Askinkaty/setfit-finance-aspect · Hugging Face",
+      "url": "https://huggingface.co/Askinkaty/setfit-finance-aspect",
+      "snippet": "Classification head: a LogisticRegression instance spaCy Model: en_core_web_sm SetFitABSA Aspect Model: Askinkaty/setfit-finance-aspect SetFitABSA Polarity Model: Askinkaty/setfit-finance-polarity Maximum Sequence Length: 256 tokens Number of Classes: 2 classes Model Sources Repository: SetFit on GitHub Paper: Efficient Few-Shot Learning ..."
+    },
+    {
+      "title": "nickmuchi/setfit-model-financial-classification · Hugging Face",
+      "url": "https://huggingface.co/nickmuchi/setfit-model-financial-classification",
+      "snippet": "nickmuchi/setfit-model-financial-classification This is a SetFit model that can be used for text classification. The model has been trained using an efficient few-shot learning technique that involves: Fine-tuning a Sentence Transformer with contrastive learning. Training a classification head with features from the fine-tuned Sentence Transformer. Usage To use this model for inference, first ..."
+    },
+    {
+      "title": "DeepBetting | AI-Powered Sports Predictions - Football, NBA, NFL, NHL, MLB",
+      "url": "https://deepbetting.io/",
+      "snippet": "Maximize your betting ROI with AI-powered sports predictions. Our machine learning algorithms analyze 10+ years of data to detect value bets across Football, NBA, NFL, NHL & MLB."
+    },
+    {
+      "title": "AI Financial Model, a Build Guide That Holds Up",
+      "url": "https://www.f9finance.com/ai-financial-model/",
+      "snippet": "How to build an AI financial model start to finish, the data prep that decides whether it works, three build paths, and the four ways these models fail."
+    },
+    {
+      "title": "financemodel.ai - Web-First Financial Modeling",
+      "url": "https://www.financemodel.ai/",
+      "snippet": "AI-Powered Financial Modeling for Modern Teams Build, run, and maintain financial models with precision. Powered by ModelingAnalyst, an AI co-pilot that understands corporate finance, explains calculations, and helps you work faster — without spreadsheets breaking under scale."
+    }
+  ]
+}

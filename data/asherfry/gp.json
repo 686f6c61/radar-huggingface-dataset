@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AsherFry/GP",
+  "slug": "asherfry-gp",
+  "author": "AsherFry",
+  "url": "https://huggingface.co/AsherFry/GP",
+  "created_at": "2026-09-02T01:07:19.000Z",
+  "updated_at": "2026-09-02T01:07:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gpytorch.models — GPyTorch 1.12 documentation",
+      "url": "https://docs.gpytorch.ai/en/v1.12/models.html",
+      "snippet": "get_fantasy_model(inputs, targets, **kwargs) [source] ¶ Returns a new GP model that incorporates the specified inputs and targets as new training data. Using this method is more efficient than updating with set_train_data when the number of inputs is relatively small, because any computed test-time caches will be updated in linear time rather than computed from scratch."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "GitHub - asher123gp/stock-price-predictor",
+      "url": "https://github.com/asher123gp/stock-price-predictor",
+      "snippet": "This project is a machine learning-powered stock price prediction web application built using TensorFlow LSTM, Flask, and a custom frontend UI for displaying predicted trends and price movements. The model is trained on historical stock data and uses a sequence-based LSTM architecture to predict ..."
+    },
+    {
+      "title": "SuperGPQA Leaderboard & Scores — August 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/benchmarks/supergpqa",
+      "snippet": "SuperGPQA: Scaling LLM Evaluation Across 285 Graduate Disciplines (SuperGPQA) leaderboard across 19 AI models. Claude Opus 4.6 leads with 95%. An expanded version of GPQA that evaluates graduate-level knowledge and reasoning capabilities across 285 disciplines, providing comprehensive coverage of academic domains."
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "All models Browse all available models and compare their capabilities."
+    }
+  ]
+}

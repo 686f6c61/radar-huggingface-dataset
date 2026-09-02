@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "swoosh-data/lego-pi05-lora-h50-6812",
+  "slug": "swoosh-data-lego-pi05-lora-h50-6812",
+  "author": "swoosh-data",
+  "url": "https://huggingface.co/swoosh-data/lego-pi05-lora-h50-6812",
+  "created_at": "2026-09-01T22:52:21.000Z",
+  "updated_at": "2026-09-01T22:52:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "lora",
+    "peft",
+    "dataset:swoosh-data/lego_assemblies_labeled_pi05",
+    "base_model:lerobot/pi05_base",
+    "base_model:adapter:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114942976,
+  "storage_human": "115 MB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "π₀.₅ (Pi05) Policy · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/pi05",
+      "snippet": "π₀.₅ (Pi05) Policy π₀.₅ is a Vision-Language-Action model with open-world generalization, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository. Model Overview π₀.₅ represents a significant evolution from π₀, developed by Physical Intelligence to address a big challenge in robotics: open-world generalization. While robots ..."
+    },
+    {
+      "title": "Wr3ck1Am/pi05-lora · Hugging Face",
+      "url": "https://huggingface.co/Wr3ck1Am/pi05-lora",
+      "snippet": "succ (eval rollout success) was 0.00 for all available ckpts at upload time; phase1 is the phase-1 sub-score, val is validation loss."
+    },
+    {
+      "title": "lerobot/src/lerobot/policies/pi05 at main · huggingface/lerobot",
+      "url": "https://github.com/huggingface/lerobot/tree/main/src/lerobot/policies/pi05",
+      "snippet": "🤗 LeRobot: Making AI for Robotics more accessible with end-to-end learning - huggingface/lerobot"
+    },
+    {
+      "title": "robofm/pi05_pick_lego · Hugging Face",
+      "url": "https://hf.rimuru.work/o-hisa/pi05_pick_lego",
+      "snippet": "Instructions to use robofm/pi05_pick_lego with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use robofm/pi05_pick_lego with LeRobot: Notebooks Google Colab Kaggle Model Card for pi05 How to Get Started with the Model Train from scratch Evaluate the policy/run inference ..."
+    },
+    {
+      "title": "lerobot/docs/source/pi05.mdx at main · huggingface/lerobot",
+      "url": "https://github.com/huggingface/lerobot/blob/main/docs/source/pi05.mdx",
+      "snippet": "π₀.₅ (Pi05) Policy π₀.₅ is a Vision-Language-Action model with open-world generalization, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository."
+    }
+  ]
+}

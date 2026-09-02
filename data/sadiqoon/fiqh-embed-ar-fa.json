@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "sadiqoon/fiqh-embed-ar-fa",
+  "slug": "sadiqoon-fiqh-embed-ar-fa",
+  "author": "sadiqoon",
+  "url": "https://huggingface.co/sadiqoon/fiqh-embed-ar-fa",
+  "created_at": "2026-09-01T23:45:35.000Z",
+  "updated_at": "2026-09-02T01:17:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "ar",
+    "fa"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "embeddings",
+    "retrieval",
+    "arabic",
+    "persian",
+    "fiqh",
+    "islamic-jurisprudence",
+    "cross-lingual",
+    "bge-m3",
+    "sentence-similarity",
+    "ar",
+    "fa",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 567754752,
+  "parameters_human": "567.8M",
+  "storage_bytes": 1157721733,
+  "storage_human": "1.2 GB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fiqh Embed Demo - a Hugging Face Space by sadiqoon",
+      "url": "https://huggingface.co/spaces/sadiqoon/fiqh-embed-demo",
+      "snippet": "🔍 محوّل الاسترجاع الفقهي sadiqoon/fiqh-embed-ar-fa-adapter — محوّل خطّي فوق bge-m3 متخصّص في فقه أهل البيت (ع)"
+    },
+    {
+      "title": "Fanar-Sadiq: A Multi-Agent Architecture for Grounded Islamic QA",
+      "url": "https://arxiv.org/pdf/2603.08501v3",
+      "snippet": "It sup-ports intent-aware routing, retrieval-grounded fiqh answers with normalized citations and ver-ification traces, exact verse lookup with quo-tation validation, and deterministic Sunni za-kat and inheritance calculators with madhhab-sensitive branching."
+    },
+    {
+      "title": "Arabic Semantic Embeddings - a Omartificial-Intelligence-Space Collection",
+      "url": "https://huggingface.co/collections/Omartificial-Intelligence-Space/arabic-semantic-embeddings-68bc7a40f4346a06c87dffd6",
+      "snippet": "Omartificial-Intelligence-Space &#x27;s Collections Arabic Semantic Embeddings SHAMIYAT: A Collection of Syrian Dialect Datasets & LLMs DIRA - Diraya Arabic Reasoning AI Arabic Matryoshka & GATE Embedding Models Arabic NLI & Semantic Similarity Datasets Arabic Re-Ranking Hub Saudi Dialect Sentence Embedding Models Collection AraEuroBERT Arabic ModernBERT ArabianLLM Series Arabic LLAMA3 & 3.1 ..."
+    },
+    {
+      "title": "Fiqh Tech - AI-Powered Research For Islamic Matters and Jurisprudence",
+      "url": "https://www.aifiqh.com/",
+      "snippet": "AI-Powered Research for Islamic Matters and Jurisprudence. Bridging authentic Islamic scholarship with cutting-edge AI technology to deliver fast, excellent, and reliable guidance for the modern Muslim community."
+    },
+    {
+      "title": "GitHub - has2809/IjtihadAI",
+      "url": "https://github.com/has2809/IjtihadAI",
+      "snippet": "Collect fiqh content from dorar.net (lectures) and Q&A data from islamqa.info/ar and ifta.ly. Save the scraped data in structured JSONL format."
+    }
+  ]
+}

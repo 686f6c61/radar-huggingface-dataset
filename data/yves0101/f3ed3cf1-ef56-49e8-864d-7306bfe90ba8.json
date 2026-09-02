@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yves0101/f3ed3cf1-ef56-49e8-864d-7306bfe90ba8",
+  "slug": "yves0101-f3ed3cf1-ef56-49e8-864d-7306bfe90ba8",
+  "author": "yves0101",
+  "url": "https://huggingface.co/yves0101/f3ed3cf1-ef56-49e8-864d-7306bfe90ba8",
+  "created_at": "2026-09-02T01:09:35.000Z",
+  "updated_at": "2026-09-02T01:09:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916583934,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-02T02:23:17.828Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yves0101/f3adc9cb-f746-4392-ab01-13fd2e71a6f8 · Hugging Face",
+      "url": "https://huggingface.co/yves0101/f3adc9cb-f746-4392-ab01-13fd2e71a6f8",
+      "snippet": "yves0101 / f3adc9cb-f746-4392-ab01-13fd2e71a6f8 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 36B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "MAC Address Vendor Lookup | MAC Address Lookup",
+      "url": "https://maclookup.app/",
+      "snippet": "Fast and easy MAC address lookup on IEEE directory and Wireshark manufacturer database. Search vendor, manufacturer or organization of a device by MAC/OUI address. Fast REST API"
+    },
+    {
+      "title": "MAC Address Lookup - MAC OUI IAB IEEE Vendor Search",
+      "url": "https://aruljohn.com/mac.pl",
+      "snippet": "Enter the MAC address or OUI and find which company made the device. Which company manufactured the network card? MA-L, MA-M, MA-S. MAC Vendor details."
+    },
+    {
+      "title": "MAC Address OUI Lookup Tool :: SG - SpeedGuide.net",
+      "url": "https://www.speedguide.net/mac.php",
+      "snippet": "SG MAC Address OUI Search About the SG MAC Address lookup tool The MAC Adderss OUI search helps identify unknown devices on your local network by simply typing their MAC address (or its OUI prefix), commonly listed by your NAT/Wireless router. It can be useful in identifying network adapter manufacturers, IoT devices, wireless clients, etc. MAC address (media access control address) is a ..."
+    },
+    {
+      "title": "MAC Address Lookup - OUI & Vendor Lookup, Free Online - MiniWebtool",
+      "url": "https://miniwebtool.com/embedded/mac-address-lookup/",
+      "snippet": "MAC Address Lookup - Instantly identify network device manufacturers and vendors by MAC address. Search by full or partial MAC address, or look up MAC prefixes by company name with our comprehensive OUI database."
+    }
+  ]
+}

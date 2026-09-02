@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "logan7000/cogrpo-n3-v0-qwen25-3b-x-llama32-3b-x-gemma3-4b-math345-groupA-full",
+  "slug": "logan7000-cogrpo-n3-v0-qwen25-3b-x-llama32-3b-x-gemma3-4b-math345-groupa-full",
+  "author": "logan7000",
+  "url": "https://huggingface.co/logan7000/cogrpo-n3-v0-qwen25-3b-x-llama32-3b-x-gemma3-4b-math345-groupA-full",
+  "created_at": "2026-09-01T21:03:41.000Z",
+  "updated_at": "2026-09-01T21:11:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12355285641,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345 ...",
+      "url": "https://huggingface.co/logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupA-qwen25-end",
+      "snippet": "Instructions to use logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupA-qwen25-end with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345 ...",
+      "url": "https://huggingface.co/q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupB-llama32-end",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupA-qwen25 ...",
+      "url": "https://friendli.ai/models/q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupA-qwen25-end",
+      "snippet": "Deploy cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupA-qwen25-end with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "gemma3:4b - ollama.com",
+      "url": "https://ollama.com/library/gemma3:4b",
+      "snippet": "The current, most capable model that runs on a single GPU."
+    },
+    {
+      "title": "llama3.2:3b - ollama.com",
+      "url": "https://ollama.com/library/llama3.2:3b",
+      "snippet": "The Meta Llama 3.2 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction-tuned generative models in 1B and 3B sizes (text in/text out)."
+    }
+  ]
+}

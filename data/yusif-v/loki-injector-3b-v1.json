@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Yusif-v/loki-injector-3b-v1",
+  "slug": "yusif-v-loki-injector-3b-v1",
+  "author": "Yusif-v",
+  "url": "https://huggingface.co/Yusif-v/loki-injector-3b-v1",
+  "created_at": "2026-09-01T21:39:12.000Z",
+  "updated_at": "2026-09-01T21:40:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 119801528,
+  "storage_human": "120 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - anushkaanair/loki: Adaptive AI red-teaming engine: genetic ...",
+      "url": "https://github.com/anushkaanair/loki",
+      "snippet": "Loki is a model-agnostic engine that autonomously discovers prompt-injection, data-exfiltration, excessive-agency, insecure-output, and denial-of-service vulnerabilities in LLM chatbots and agents — and, critically, proves what it found with reproducible, statistically valid evidence."
+    },
+    {
+      "title": "MrRobotoAI/Loki-v2.2 · Hugging Face",
+      "url": "https://huggingface.co/MrRobotoAI/Loki-v2.2",
+      "snippet": "merge This is a merge of pre-trained language models created using mergekit. Merge Details Merge Method This model was merged using the DARE TIES merge method using MrRobotoAI/Loki-v2.1 as a base. Models Merged The following models were included in the merge: HaitameLaf/Llama-3-8B-StoryGenerator Configuration The following YAML configuration was used to produce this model:"
+    },
+    {
+      "title": "MrRobotoAI/Loki-v2 · Hugging Face",
+      "url": "https://huggingface.co/MrRobotoAI/Loki-v2",
+      "snippet": "merge This is a merge of pre-trained language models created using mergekit. Merge Details Merge Method This model was merged using the Model Stock merge method using MrRobotoAI/llama3-8B-Special-Dark-v2. as a base. Models Merged The following models were included in the merge: MrRobotoAI/Loki Aculi/Llama3-8B-Script-Writer-v1 Configuration The following YAML configuration was used to produce ..."
+    },
+    {
+      "title": "GitHub - cvttdf/loki: Open-source, privacy-first, local-model ...",
+      "url": "https://github.com/cvttdf/loki",
+      "snippet": "Why Loki? Warp showed what AI-native terminals can do — but it&#x27;s AGPL, cloud-dependent, and subscription-gated. Loki is the open alternative."
+    },
+    {
+      "title": "ChatGPhish: AI Assistants as Phishing Infrastructure",
+      "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-chatgphish-ai-ui-prompt-injection-20260601/",
+      "snippet": "ChatGPhish: AI Assistants as Phishing Infrastructure Key Takeaways Permiso Security&#x27;s May 2026 ChatGPhish disclosure demonstrates that any public web page summarized by ChatGPT can inject phishing links, fake security alerts, and QR codes directly into the trusted ChatGPT UI via indirect prompt injection — without compromising OpenAI&#x27;s infrastructure. The core exploit depends on a trust ..."
+    }
+  ]
+}

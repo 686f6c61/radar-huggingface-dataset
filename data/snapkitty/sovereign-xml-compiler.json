@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/sovereign-xml-compiler",
+  "slug": "snapkitty-sovereign-xml-compiler",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/sovereign-xml-compiler",
+  "created_at": "2026-09-01T21:10:10.000Z",
+  "updated_at": "2026-09-01T23:34:38.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "custom",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "custom",
+    "code",
+    "sovereign-compute",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Snapkitty/sovereign-xml-compiler · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Snapkitty/sovereign-xml-compiler",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SNAPKITTYWEST/sovereign-xml-compiler - GitHub",
+      "url": "https://github.com/SNAPKITTYWEST/sovereign-xml-compiler",
+      "snippet": "Sovereign XML Compiler Natural language → valid XML system prompts in one shot. Zero correction iterations."
+    },
+    {
+      "title": "Snapkitty Collective - Hugging Face",
+      "url": "https://huggingface.co/Snapkitty",
+      "snippet": "Sovereign AI infrastructure — quantum-seeded agents, WORM-sealed reasoning, NAND-decomposed LLMs. Bel Esprit D&#x27;Accord Irrevocable Trust · EIN 42-697643"
+    },
+    {
+      "title": "SnapKitty Downloads — Sovereign OS Ecosystem",
+      "url": "https://collectivekitty.com/downloads",
+      "snippet": "Downloads Center Every component is downloadable, verifiable, and sovereign. No cloud lock-in. No vendor dependency. Built by one human + AI in days — what 16-27 engineers would take 12-24 months to build."
+    },
+    {
+      "title": "GitHub - SNAPKITTYWEST/sovereign-ide",
+      "url": "https://github.com/SNAPKITTYWEST/sovereign-ide",
+      "snippet": "📦 ENTERPRISE-IN-A-BOX Build your own sovereign IDE from scratch. Complete 16-layer Fortran 2018 starter kit. Cherry-pick components from 25+ SnapKitty repos. Compile to WASM. Get a production IDE + agent runtime + all tools. Zero npm. Zero Electron. Zero dependencies."
+    }
+  ]
+}

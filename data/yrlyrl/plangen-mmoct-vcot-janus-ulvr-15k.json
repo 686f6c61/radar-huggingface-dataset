@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yrlyrl/plangen-mmoct-vcot-janus-ulvr-15k",
+  "slug": "yrlyrl-plangen-mmoct-vcot-janus-ulvr-15k",
+  "author": "yrlyrl",
+  "url": "https://huggingface.co/yrlyrl/plangen-mmoct-vcot-janus-ulvr-15k",
+  "created_at": "2026-09-01T20:39:44.000Z",
+  "updated_at": "2026-09-01T23:34:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "plangen",
+    "mmcot",
+    "visual-cot",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48115329978,
+  "storage_human": "48.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yrlyrl/plangen-mmoct-bboxvq-shape-20k · Hugging Face",
+      "url": "https://huggingface.co/yrlyrl/plangen-mmoct-bboxvq-shape-20k",
+      "snippet": "This public repository stores the 205K, 210K, 215K, and 220K checkpoints from the 20K-step SA-1B highlighted-bbox full-image-VQ experiment. Each checkpoint contains the trainable PlanGen/MMCoT parameters plus a SHA-256 manifest."
+    },
+    {
+      "title": "yrlyrl (rlyang) - Hugging Face",
+      "url": "https://huggingface.co/yrlyrl/models",
+      "snippet": "new activityabout 17 hours ago RuoliuYang/step0-edge-dep: Monet step1 teacher reps depth+edge (36698, previewable parquet) new activityabout 17 hours ago RuoliuYang/ULVR_v2_clean: Re-clean depth/edge/seg: drop v1_ legacy + 8 audited-dirty (seg) + VG augmentation; fix counts (18370/18328/30477) View all activity"
+    },
+    {
+      "title": "GitHub - 360CVGroup/PlanGen: Unified layout planning and image ...",
+      "url": "https://github.com/360CVGroup/PlanGen",
+      "snippet": "👉 PlanGen: Towards Unified Layout Planning and Image Generation in Auto-Regressive Vision Language Models Runze He, Bo Cheng, Yuhang Ma, Qingxiang Jia, Shanyuan Liu, Ao Ma, Xiaoyu Wu, Liebucha Wu, Dawei Leng†, Yuhui Yin ( Corresponding Author) 🔥 News [2025/3/14] We initialized this github repository and released the code."
+    },
+    {
+      "title": "GitHub - cajias/plangen: Implementation of Google&#x27;s PlanGen framework ...",
+      "url": "https://github.com/cajias/plangen",
+      "snippet": "An implementation of Google&#x27;s PlanGen multi-agent planning framework PlanGEN is a multi-agent framework for solving complex problems with large language models — an open implementation of the workflow from the paper PlanGEN: Generative Planning with Large Language Models. It coordinates specialized agents to extract constraints, generate candidate plans, verify them, and select the best one ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 125 Estimated models among 412 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

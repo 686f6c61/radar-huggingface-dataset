@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "reisguilherme/sam3-objectleaks",
+  "slug": "reisguilherme-sam3-objectleaks",
+  "author": "reisguilherme",
+  "url": "https://huggingface.co/reisguilherme/sam3-objectleaks",
+  "created_at": "2026-09-01T21:55:40.000Z",
+  "updated_at": "2026-09-01T23:21:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sam3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 840376374,
+  "parameters_human": "840.4M",
+  "storage_bytes": 6811548272,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/sam3: The repository provides code for ...",
+      "url": "https://github.com/facebookresearch/sam3",
+      "snippet": "The repository provides code for running inference and finetuning with the Meta Segment Anything Model 3 (SAM 3), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. - facebookresearch/sam3"
+    },
+    {
+      "title": "facebook/sam3 · Hugging Face",
+      "url": "https://huggingface.co/facebook/sam3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "[2511.16719] SAM 3: Segment Anything with Concepts - arXiv.org",
+      "url": "https://arxiv.org/abs/2511.16719",
+      "snippet": "We present Segment Anything Model (SAM) 3, a unified model that detects, segments, and tracks objects in images and videos based on concept prompts, which we define as either short noun phrases (e.g., \"yellow school bus\"), image exemplars, or a combination of both. Promptable Concept Segmentation (PCS) takes such prompts and returns segmentation masks and unique identities for all matching ..."
+    },
+    {
+      "title": "SAM 3 - ai.meta.com",
+      "url": "https://ai.meta.com/research/sam3/",
+      "snippet": "With SAM 3 you can use text and visual prompts to precisely identify, segment, and follow any object in images or videos—coming soon to Instagram Edits and Vibes on the Meta AI app."
+    },
+    {
+      "title": "SAM 3 Model Guide: Demo, Paper, GitHub & API",
+      "url": "https://sam3.ai/sam3",
+      "snippet": "Learn what the SAM 3 model does, how text and visual prompts work, and where to find the official paper, GitHub repository, model files, demo, and API."
+    }
+  ]
+}

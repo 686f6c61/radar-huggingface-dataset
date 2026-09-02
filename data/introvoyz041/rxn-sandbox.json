@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "introvoyz041/rxn-sandbox",
+  "slug": "introvoyz041-rxn-sandbox",
+  "author": "introvoyz041",
+  "url": "https://huggingface.co/introvoyz041/rxn-sandbox",
+  "created_at": "2026-09-01T22:55:37.000Z",
+  "updated_at": "2026-09-01T22:55:37.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "chemistry",
+    "reaction-prediction",
+    "retrosynthesis",
+    "en",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 314195441,
+  "storage_human": "314 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - rxn4chemistry/rxn-sandbox: A lightweight, local instance of ...",
+      "url": "https://github.com/rxn4chemistry/rxn-sandbox",
+      "snippet": "RXN-Sandbox A lightweight, local instance of RXN for running forward reaction and retrosynthesis predictions."
+    },
+    {
+      "title": "rxn4chemistry/rxn-sandbox · Hugging Face",
+      "url": "https://huggingface.co/rxn4chemistry/rxn-sandbox",
+      "snippet": "RXN-Sandbox A lightweight, local instance of RXN for running forward reaction and retrosynthesis predictions. This repository is cross-listed on GitHub and Hugging Face. Table of Contents Overview Prerequisites Quick Start Usage Jupyter Notebook MCP Integration with OpenWebUI Python Scripts Container Management Overview This repository enables offline chemical reaction prediction using ..."
+    },
+    {
+      "title": "introvoyz041/guidance-for-ai-driven-robotic-simulation-and-training-on ...",
+      "url": "https://huggingface.co/datasets/introvoyz041/guidance-for-ai-driven-robotic-simulation-and-training-on-aws",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rxn-sandbox/models at main · rxn4chemistry/rxn-sandbox · GitHub",
+      "url": "https://github.com/rxn4chemistry/rxn-sandbox/tree/main/models",
+      "snippet": "A lightweight, local instance of RXN for running forward reaction and retrosynthesis predictions. - rxn-sandbox/models at main · rxn4chemistry/rxn-sandbox"
+    },
+    {
+      "title": "AI Sandbox - Explore Open Source AI Models",
+      "url": "https://aisandbox.live/",
+      "snippet": "A sandbox environment for students to explore, learn, and build with cutting-edge open-source language models. Generate text, analyze data, and create custom chatbots."
+    }
+  ]
+}

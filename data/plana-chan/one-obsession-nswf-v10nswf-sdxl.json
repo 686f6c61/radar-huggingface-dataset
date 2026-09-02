@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Plana-Chan/one-obsession-nswf-v10nswf-sdxl",
+  "slug": "plana-chan-one-obsession-nswf-v10nswf-sdxl",
+  "author": "Plana-Chan",
+  "url": "https://huggingface.co/Plana-Chan/one-obsession-nswf-v10nswf-sdxl",
+  "created_at": "2026-09-01T23:36:33.000Z",
+  "updated_at": "2026-09-01T23:36:33.000Z",
+  "license": "faipl-1.0-sd",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "stable-diffusion",
+    "stable-diffusion-xl",
+    "not-for-all-audiences",
+    "anime",
+    "girls",
+    "my style",
+    "illustrious",
+    "en",
+    "base_model:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "base_model:finetune:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "license:other",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 6938011430,
+  "storage_human": "6.9 GB",
+  "base_model": "OnomaAIResearch/Illustrious-xl-early-release-v0",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "John6666/one-obsession-nswf-v10nswf-sdxl · Hugging Face",
+      "url": "https://huggingface.co/John6666/one-obsession-nswf-v10nswf-sdxl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "John6666/one-obsession-nswf-v10nswf-sdxl at main - Hugging Face",
+      "url": "https://huggingface.co/John6666/one-obsession-nswf-v10nswf-sdxl/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "John6666/one-obsession-05nsfw-sdxl · Hugging Face",
+      "url": "https://huggingface.co/John6666/one-obsession-05nsfw-sdxl",
+      "snippet": "John6666 / one-obsession-05nsfw-sdxl like 0 Text-to-Image Diffusers Safetensors English StableDiffusionXLPipeline stable-diffusion stable-diffusion-xl Not-For-All-Audiences anime girls cute balanced hands feet texture my style extreme light and shadow illustrious Inference Endpoints License:faipl-1.0-sd Model card FilesFiles and versions ..."
+    },
+    {
+      "title": "Commits · John6666/one-obsession-nswf-v10nswf-sdxl",
+      "url": "https://huggingface.co/John6666/one-obsession-nswf-v10nswf-sdxl/commits/main",
+      "snippet": "John6666 / one-obsession-nswf-v10nswf-sdxl like 0 Text-to-Image Diffusers Safetensors English StableDiffusionXLPipeline stable-diffusion stable-diffusion-xl Not-For-All-Audiences anime girls my style illustrious License:faipl-1.0-sd Model card FilesFiles and versions Community Train Deploy Use this model main one-obsession-nswf-v10nswf-sdxl"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=illustrious&p=47&sort=trending",
+      "snippet": "John6666/one-obsession-nswf-v10nswf-sdxl Text-to-Image • Updated about 7 hours ago"
+    }
+  ]
+}

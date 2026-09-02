@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "abdulrahmanalsubaie/mae-classification",
+  "slug": "abdulrahmanalsubaie-mae-classification",
+  "author": "abdulrahmanalsubaie",
+  "url": "https://huggingface.co/abdulrahmanalsubaie/mae-classification",
+  "created_at": "2026-09-02T01:15:10.000Z",
+  "updated_at": "2026-09-02T01:15:19.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Mitigating Bias in AI Model Using eXplainable AI in Terms of Hiring ...",
+      "url": "https://www.semanticscholar.org/paper/Mitigating-Bias-in-AI-Model-Using-eXplainable-AI-in-Alsubaie-Aleisa/d204dd2231318a066f8d3d1d7e5081c3aca65e25",
+      "snippet": "The findings advocate for adopting XAI methodologies as an essential safeguard in ensuring equitable, transparent, and socially responsible deployment of AI technologies in employment decision-making, and underscores the practical viability of explainable methods in bias-sensitive domains. The increasing adoption of Artificial Intelligence (AI) in recruitment has introduced substantial ethical ..."
+    },
+    {
+      "title": "AI Model Leaderboard [2026-09] — Live Rankings | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/leaderboards",
+      "snippet": "Live AI model rankings across ARC-AGI-2, HLE, SWE-bench Verified, and more with category views for coding, math, and agent tasks."
+    },
+    {
+      "title": "ProsMAE: Multi-Source MAE Pretraining for ISUP Grade Classification ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/prosmae-multi-source-mae-pretraining-isup-grade",
+      "snippet": "The model trains on 224×224 tiles resized from 1024×1024 tissue regions, with each whole-slide image contributing 100 tiles. Pretraining takes 5000 steps (capped at 20 epochs) using AdamW with learning rate 5×10⁻⁵, running on GPUs for only 10-11 hours—faster than standard autoencoders and comparable to vanilla MAE."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

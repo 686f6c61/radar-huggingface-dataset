@@ -5,7 +5,7 @@
   "author": "ajgazin",
   "url": "https://huggingface.co/ajgazin/Qwen3.8-27B-Heretic-unsloth-UD-Q5_K_M-GGUF",
   "created_at": "2026-09-01T00:22:19.000Z",
-  "updated_at": "2026-09-01T01:14:27.000Z",
+  "updated_at": "2026-09-01T14:08:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,13 +30,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 20702673504,
-  "storage_human": "20.7 GB",
+  "storage_bytes": 95018958752,
+  "storage_human": "95.0 GB",
   "base_model": "llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved",
   "formats": [
     "gguf"

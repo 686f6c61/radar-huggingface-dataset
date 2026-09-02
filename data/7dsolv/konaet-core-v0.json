@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "7dsolv/Konaet-Core-v0",
+  "slug": "7dsolv-konaet-core-v0",
+  "author": "7dsolv",
+  "url": "https://huggingface.co/7dsolv/Konaet-Core-v0",
+  "created_at": "2026-09-01T22:28:00.000Z",
+  "updated_at": "2026-09-01T22:28:29.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "konaet",
+    "from-scratch",
+    "custom-code",
+    "pt",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17841408,
+  "parameters_human": "17.8M",
+  "storage_bytes": 71380704,
+  "storage_human": "71 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 7dsolv/konaet-os: Konaet OS — experimental freestanding x86-64 ...",
+      "url": "https://github.com/7dsolv/konaet-os/tree/main",
+      "snippet": "Konaet OS — experimental freestanding x86-64/UEFI operating system (open-core). Boot, kernel, Ring 3, IPC, RAMFS and native glass desktop. Compile and verify. - 7dsolv/konaet-os"
+    },
+    {
+      "title": "GitHub - 7dsolv/7dsolv",
+      "url": "https://github.com/7dsolv/7dsolv",
+      "snippet": "Contribute to 7dsolv/7dsolv development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Introducing the v0 composite model family - Vercel",
+      "url": "https://vercel.com/blog/v0-composite-model-family",
+      "snippet": "Why does v0 need a composite model architecture? Most AI models¹ are one of two things: a proprietary model from a frontier model provider or an open-source model from a third-party host. While building AI products like v0 and tools like the AI SDK, we&#x27;ve found limitations with both of these approaches: Model knowledge can quickly become outdated for topics that change fast Frontier model ..."
+    },
+    {
+      "title": "v0 AI Assistant | hussainasghar/system-prompts-and-models-of-ai-tools ...",
+      "url": "https://deepwiki.com/hussainasghar/system-prompts-and-models-of-ai-tools/2.3-v0-ai-assistant",
+      "snippet": "Core Architecture v0 AI Assistant is built on a foundation of advanced language models with specialized capabilities for generating code, particularly for Next.js applications. It uses MDX (a superset of Markdown that allows embedding React components) as its response format. Sources: v0 Prompts and Tools/Model.md1-6v0 Prompts and Tools/Prompt ..."
+    }
+  ]
+}

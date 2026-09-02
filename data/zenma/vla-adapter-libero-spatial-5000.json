@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Zenma/VLA-Adapter-LIBERO-Spatial-5000",
+  "slug": "zenma-vla-adapter-libero-spatial-5000",
+  "author": "Zenma",
+  "url": "https://huggingface.co/Zenma/VLA-Adapter-LIBERO-Spatial-5000",
+  "created_at": "2026-09-01T20:04:11.000Z",
+  "updated_at": "2026-09-01T20:04:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "openvla",
+    "feature-extraction",
+    "robotics",
+    "vision-language-action",
+    "vla",
+    "libero",
+    "vla-adapter",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1252553792,
+  "parameters_human": "1.25B",
+  "storage_bytes": 2942813568,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VLA-Adapter/LIBERO-Spatial · Hugging Face",
+      "url": "https://huggingface.co/VLA-Adapter/LIBERO-Spatial",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - OpenHelix-Team/VLA-Adapter: VLA-Adapter: An Effective Paradigm ...",
+      "url": "https://github.com/OpenHelix-Team/VLA-Adapter",
+      "snippet": "We fine-tuned Qwen2.5-0.5B with our adapter bridge paradigm on four LIBERO task suites independently: LIBERO-Spatial, LIBERO-Object, LIBERO-Goal, and LIBERO-Long."
+    },
+    {
+      "title": "README.md · VLA-Adapter/LIBERO-Spatial at main - Hugging Face",
+      "url": "https://huggingface.co/VLA-Adapter/LIBERO-Spatial/blob/main/README.md",
+      "snippet": "Output: Models generate action only. Model Architecture: The VLA-Adapter consists of a VLM for receiving and processing image and text information and a policy for generating actions. We systematically analyzed the benefits that the VLM provides to different types of policy conditions and determined a unified framework."
+    },
+    {
+      "title": "VLA-Adapter: An Effective Paradigm for Tiny-Scale Vision-Language ...",
+      "url": "https://arxiv.org/html/2509.09372v2",
+      "snippet": "We introduce VLA-Adapter, a novel paradigm designed to reduce the reliance of VLA models on large-scale VLMs and extensive pre-training. To this end, we first systematically analyze the effectiveness of various VL conditions and present key findings on which conditions are essential for bridging perception and action spaces."
+    },
+    {
+      "title": "VLA-Adapter/LIBERO-Spatial · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/VLA-Adapter/LIBERO-Spatial",
+      "snippet": "Model Card for VLA-Adapter Libero-Spatial VLA-Adapter: An Effective Paradigm for Tiny-Scale Vision-Language-Action Model trained on Libero-Spatial."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "msuiche/Inkling-Small-abliterated-cyber-GLP-41",
+  "slug": "msuiche-inkling-small-abliterated-cyber-glp-41",
+  "author": "msuiche",
+  "url": "https://huggingface.co/msuiche/Inkling-Small-abliterated-cyber-GLP-41",
+  "created_at": "2026-09-01T23:25:57.000Z",
+  "updated_at": "2026-09-01T23:26:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "activation-steering",
+    "abliteration",
+    "control-vector",
+    "inkling",
+    "glp",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 167936,
+  "parameters_human": "167936",
+  "storage_bytes": 674752,
+  "storage_human": "674752 B",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inkling-Small Model Card - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/model-card/inkling-small/",
+      "snippet": "Model card for Inkling-Small, a 276B-parameter (12B active) open-weights multimodal model: intended uses, model properties, training, evaluations and safety."
+    },
+    {
+      "title": "Inkling-Small download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/inkling-small/",
+      "snippet": "Download Inkling-Small for free. Efficient multimodal MoE model for coding, tools, and reasoning. Inkling-Small is an open-weight general-purpose multimodal model from Thinking Machines Lab, designed for agentic systems, coding assistants, chatbots, retrieval workflows, and natural-language applications. It accepts text, images, and audio as input and produces text output, with multilingual ..."
+    },
+    {
+      "title": "Inkling - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/inkling/",
+      "snippet": "Inkling-Small is shown with a solid purple line, Inkling with the heavier cobalt line, and the comparison models with dashed lines. Evaluations without a reported model score are plotted at zero. Hover an evaluation to compare every model&#x27;s score."
+    },
+    {
+      "title": "unsloth/Inkling-Small-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Inkling-Small-GGUF",
+      "snippet": "1. General Information Inkling-Small is a general-purpose multimodal model that accepts text, image and audio inputs and generates text outputs. It is intended for use in English and other languages, and across multiple coding languages. The model is designed to be used by developers building AI-powered applications, including agentic and tool-use systems, coding assistants, chatbots, and ..."
+    },
+    {
+      "title": "Inkling download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/inkling-ai/",
+      "snippet": "Download Inkling for free. Frontier multimodal MoE model for coding and AI agent workflows. Inkling is Thinking Machines Lab&#x27;s first open-weight flagship multimodal Mixture-of-Experts model, designed for advanced reasoning, coding, and autonomous agent workflows. It contains 975B total parameters with 41B active parameters per token, balancing frontier-level capability with efficient sparse ..."
+    }
+  ]
+}

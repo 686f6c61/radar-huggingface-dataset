@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tarakozushi/ohkm_girl",
+  "slug": "tarakozushi-ohkm_girl",
+  "author": "tarakozushi",
+  "url": "https://huggingface.co/tarakozushi/ohkm_girl",
+  "created_at": "2026-09-02T00:00:44.000Z",
+  "updated_at": "2026-09-02T00:00:50.000Z",
+  "license": "all-right-reserved",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1217152027,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tarakozushi (tarakozushi) - Hugging Face",
+      "url": "https://huggingface.co/tarakozushi",
+      "snippet": "art AI & ML interests art"
+    },
+    {
+      "title": "tarakozushi/ohwx_girl_flux_krea · Hugging Face",
+      "url": "https://huggingface.co/tarakozushi/ohwx_girl_flux_krea",
+      "snippet": "tarakozushi / ohwx_girl_flux_krea like 0 License:all-right-reserved Model card FilesFiles and versions xet Community Copy to bucket new 重要な注意事項 免責事項"
+    },
+    {
+      "title": "Best Free TWEEN GIRL AI Art & Models | Tensor.Art",
+      "url": "https://tensor.art/tag/724341849585795640",
+      "snippet": "Explore TWEEN GIRL on TENSOR — 130 models and 5.1K posts."
+    },
+    {
+      "title": "Create Your Own AI Character - Custom AI Girlfriend Builder - No Shame AI",
+      "url": "https://noshame.ai/create-character",
+      "snippet": "Design your own AI character from scratch on No Shame AI. Customize personality, appearance, backstory, and style to build the perfect AI girlfriend or companion."
+    },
+    {
+      "title": "AI Girl Generator (Create Your Own Free Custom AI Girlfriend)",
+      "url": "https://heygf.ai/ai-girl-generator",
+      "snippet": "Build your own custom AI girl with HeyGF AI. Pick her face, body, voice, personality, and backstory. Free signup, no credit card."
+    }
+  ]
+}

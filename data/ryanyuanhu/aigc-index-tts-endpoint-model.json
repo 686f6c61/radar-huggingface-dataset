@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "RyanYuanHu/aigc-index-tts-endpoint-model",
+  "slug": "ryanyuanhu-aigc-index-tts-endpoint-model",
+  "author": "RyanYuanHu",
+  "url": "https://huggingface.co/RyanYuanHu/aigc-index-tts-endpoint-model",
+  "created_at": "2026-09-02T00:06:35.000Z",
+  "updated_at": "2026-09-02T00:36:03.000Z",
+  "license": "bilibili-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "indextts",
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "es",
+    "ar"
+  ],
+  "tags": [
+    "indextts",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "zero-shot",
+    "voice-cloning",
+    "multilingual",
+    "cross-lingual",
+    "emotion-controllable",
+    "zh",
+    "en",
+    "ja",
+    "es",
+    "ar",
+    "arxiv:2601.03888",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10791442435,
+  "storage_human": "10.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - WilliamHJF/AIGC-TTS: An Industrial-Level Controllable and ...",
+      "url": "https://github.com/WilliamHJF/AIGC-TTS",
+      "snippet": "Datawhale AI夏令营：全球AI攻防挑战赛（AIGC技术-语音方向） 模型选择：👉🏻 IndexTTS 👈🏻 [HuggingFace Demo] [ModelScope Demo] [Paper] [Demos] IndexTTS is a GPT-style text-to-speech (TTS) model mainly based on XTTS and Tortoise."
+    },
+    {
+      "title": "GitHub - index-tts/index-tts: An Industrial-Level Controllable and ...",
+      "url": "https://github.com/index-tts/index-tts",
+      "snippet": "2025/09/08 🔥 We release IndexTTS-2 The first autoregressive TTS model with precise synthesis duration control, supporting both controllable and uncontrollable modes. This functionality is not yet enabled in this release. Highly expressive emotional speech synthesis, with emotion control through multiple input modalities."
+    },
+    {
+      "title": "Text-to-Speech Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "snippet": "Active filters: text-to-speech. Clear all. IndexTeam/IndexTTS-2.5. Text-to-Speech • Updated 7 days ago • 4.79k • 134"
+    },
+    {
+      "title": "IndexTeam/Index-TTS · Hugging Face",
+      "url": "https://huggingface.co/IndexTeam/Index-TTS",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "IndexTTS — TTS Model",
+      "url": "https://ttsmodels.com/models/indextts/",
+      "snippet": "IndexTTS is a GPT-style, industrial-grade zero-shot TTS from Bilibili with strong Chinese and English support. It adds controllable pronunciation through pinyin correction and punctuation-based pausing."
+    }
+  ]
+}

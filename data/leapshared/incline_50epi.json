@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "leapshared/Incline_50epi",
+  "slug": "leapshared-incline_50epi",
+  "author": "leapshared",
+  "url": "https://huggingface.co/leapshared/Incline_50epi",
+  "created_at": "2026-09-01T21:59:15.000Z",
+  "updated_at": "2026-09-01T21:59:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:leapshared/Incline_20260901_221322",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51689104,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206800816,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leapshared (Leapshared) - Hugging Face",
+      "url": "https://huggingface.co/leapshared/datasets",
+      "snippet": "Organizations leapshared&#x27;s datasets3 Sort: Recently updated leapshared/neudive_test_120epi_0819_real_20260819_162506 Viewer •Updated about 7 hours ago•111k"
+    },
+    {
+      "title": "Leapshared - Hugging Face",
+      "url": "https://huggingface.co/leapshared/models",
+      "snippet": "User profile of Leapshared on Hugging Face"
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "LeapNode — Multi-model AI API Gateway & On-Chain AI Economy",
+      "url": "https://leapnode.net/",
+      "snippet": "LeapNode — Multi-model AI API Gateway & On-Chain AI Economy. Access GPT-5.6, Claude Opus 5, Claude Fable 5, Gemini and 200+ models with one API key. 60-90% cheaper than official pricing."
+    },
+    {
+      "title": "Models | LEAP",
+      "url": "https://leap.liquid.ai/models",
+      "snippet": "Liquid Edge AI Platform empowers AI developers to find, customize, and deploy the best models for their use case, on any device."
+    }
+  ]
+}

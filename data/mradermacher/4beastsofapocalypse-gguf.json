@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/4BeastsOfApocalypse-GGUF",
   "created_at": "2026-09-01T08:58:50.000Z",
-  "updated_at": "2026-09-01T10:33:29.000Z",
+  "updated_at": "2026-09-01T10:53:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -40,8 +40,8 @@
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 218186255680,
-  "storage_human": "218.2 GB",
+  "storage_bytes": 237125569376,
+  "storage_human": "237.1 GB",
   "base_model": "OliviaRossi/4BeastsOfApocalypse",
   "formats": [
     "gguf"

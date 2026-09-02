@@ -5,7 +5,7 @@
   "author": "AngelSlim",
   "url": "https://huggingface.co/AngelSlim/Hy4-preview-GGUF",
   "created_at": "2026-08-28T14:40:23.000Z",
-  "updated_at": "2026-08-31T12:53:56.000Z",
+  "updated_at": "2026-09-01T05:11:08.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,13 +18,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 79,
+  "likes": 84,
   "downloads_30d": 93661,
-  "trending_score": 78,
+  "trending_score": 82,
   "parameters": 769907408797,
   "parameters_human": "769.91B",
-  "storage_bytes": 932057212224,
-  "storage_human": "932.1 GB",
+  "storage_bytes": 932151934379,
+  "storage_human": "932.2 GB",
   "base_model": null,
   "formats": [
     "gguf"

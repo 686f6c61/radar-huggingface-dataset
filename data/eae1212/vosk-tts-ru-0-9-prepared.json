@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "eae1212/vosk-tts-ru-0.9-prepared",
+  "slug": "eae1212-vosk-tts-ru-0-9-prepared",
+  "author": "eae1212",
+  "url": "https://huggingface.co/eae1212/vosk-tts-ru-0.9-prepared",
+  "created_at": "2026-09-01T18:47:48.000Z",
+  "updated_at": "2026-09-01T18:50:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "onnx",
+    "multistream_v1",
+    "text-to-speech",
+    "russian",
+    "android",
+    "ru",
+    "base_model:alphacep/vosk-tts-ru-multi",
+    "base_model:quantized:alphacep/vosk-tts-ru-multi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 828849755,
+  "storage_human": "829 MB",
+  "base_model": "alphacep/vosk-tts-ru-multi",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - alphacep/vosk-tts: Text To Speech Synthesis with Vosk",
+      "url": "https://github.com/alphacep/vosk-tts",
+      "snippet": "For now we support several Russian voices 3 females and 2 males. Get the model here: vosk-model-tts-ru-.9-multi You can use speaker IDs from 0 to 4 included. We plan to add more voices and languages in the future."
+    },
+    {
+      "title": "vosk-tts · PyPI",
+      "url": "https://pypi.org/project/vosk-tts/",
+      "snippet": "Vosk TTS Simple TTS based on VITS with some old ideas Usage Command line pip3 install vosk-tts vosk-tts -n vosk-model-tts-ru-.9-multi -s 2 --input \"Привет мир!\" --output out.wav API from vosk_tts import Model, Synth model = Model(model_name=\"vosk-model-tts-ru-.9-multi\") synth = Synth(model) synth.synth(\"Привет мир!\", \"out.wav\", speaker_id=2) Voices For now we support ..."
+    },
+    {
+      "title": "tts/vosk-model-tts-ru-0.9-multi/bert/README.md - Hugging Face",
+      "url": "https://huggingface.co/Derur/vosk-models/blob/main/tts/vosk-model-tts-ru-0.9-multi/bert/README.md",
+      "snippet": "/ vosk-models like 2 Automatic Speech Recognition ONNX 32 languages vosk stt tts speaker_indentification speaker indentification punctuation Model card FilesFiles and versions xet Community Copy to bucket new main vosk-models / tts / vosk-model-tts-ru-.9-multi / bert /README.md Derur Upload 35 files 23d6cc4 verifiedabout 1 year ago preview ..."
+    },
+    {
+      "title": "tts/vosk-model-tts-ru-0.9-multi/model.onnx · Derur/vosk-models at main",
+      "url": "https://huggingface.co/Derur/vosk-models/blob/main/tts/vosk-model-tts-ru-0.9-multi/model.onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Voice-Agent-for-Asterisk/local_ai_server/Dockerfile at main ... - GitHub",
+      "url": "https://github.com/eadjeidjan/Voice-Agent-for-Asterisk/blob/main/local_ai_server/Dockerfile",
+      "snippet": "AI Voice Agent. Contribute to eadjeidjan/Voice-Agent-for-Asterisk development by creating an account on GitHub."
+    }
+  ]
+}

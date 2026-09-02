@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "rashhhad77/arabic-news-classifier",
+  "slug": "rashhhad77-arabic-news-classifier",
+  "author": "rashhhad77",
+  "url": "https://huggingface.co/rashhhad77/arabic-news-classifier",
+  "created_at": "2026-08-24T15:16:57.000Z",
+  "updated_at": "2026-09-01T19:10:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 135197958,
+  "parameters_human": "135.2M",
+  "storage_bytes": 9735538562,
+  "storage_human": "9.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - zaatarwjebne/Arabic-News-Classifier",
+      "url": "https://github.com/zaatarwjebne/Arabic-News-Classifier",
+      "snippet": "Arabic News Classifier Overview An advanced machine learning system that classifies Arabic news articles into distinct categories using multiple state-of-the-art algorithms. The project utilizes the SANAD Dataset and implements three different classification approaches, each achieving remarkable accuracy:"
+    },
+    {
+      "title": "zico2m/arabic-news-topic-classifier · Hugging Face",
+      "url": "https://huggingface.co/zico2m/arabic-news-topic-classifier",
+      "snippet": "Arabic News Topic Classifier / مصنّف أخبار عربي حسب الموضوع Model Description / وصف النموذج English: This model is an Arabic news classification model based on MARBERT."
+    },
+    {
+      "title": "Arabic News Classifier - a Hugging Face Space by zico2m",
+      "url": "https://huggingface.co/spaces/zico2m/arabic-news-classifier",
+      "snippet": "📰 مصنف موضوعات الأخبار العربية Arabic News Topic Classifier هذا التطبيق يستخدم نموذج MARBERT لتصنيف الأخبار العربية إلى 6 فئات مختلفة."
+    },
+    {
+      "title": "Muhannadam/Multi-Class-Arabic-News-Classification - GitHub",
+      "url": "https://github.com/Muhannadam/Multi-Class-Arabic-News-Classification",
+      "snippet": "Contribute to Muhannadam/Multi-Class-Arabic-News-Classification development by creating an account on GitHub."
+    },
+    {
+      "title": "An algorithmic system for arabic fake news detection using neural ...",
+      "url": "https://www.nature.com/articles/s41598-026-45653-4",
+      "snippet": "While research on fake news detection has increased, Arabic remains under-explored due to limited datasets and the language&#x27;s morphological and semantic complexity."
+    }
+  ]
+}

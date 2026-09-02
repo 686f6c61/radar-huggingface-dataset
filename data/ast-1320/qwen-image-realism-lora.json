@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "AST-1320/qwen-image-realism-lora",
+  "slug": "ast-1320-qwen-image-realism-lora",
+  "author": "AST-1320",
+  "url": "https://huggingface.co/AST-1320/qwen-image-realism-lora",
+  "created_at": "2026-09-02T01:34:01.000Z",
+  "updated_at": "2026-09-02T01:34:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "lora",
+    "qwen",
+    "qwen-image",
+    "realism",
+    "realism-lora",
+    "text-to-image",
+    "en",
+    "base_model:Qwen/Qwen-Image",
+    "base_model:adapter:Qwen/Qwen-Image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107333508,
+  "storage_human": "107 MB",
+  "base_model": "Qwen/Qwen-Image",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "flymy-ai/qwen-image-realism-lora · Hugging Face",
+      "url": "https://huggingface.co/flymy-ai/qwen-image-realism-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AST-1320/next-scene-qwen-image-lora-2509 · Hugging Face",
+      "url": "https://huggingface.co/AST-1320/next-scene-qwen-image-lora-2509",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Next level Realism with Qwen Image is now possible after new realism ...",
+      "url": "https://coderlegion.com/7405/next-level-realism-with-qwen-image-is-now-possible-after-new-realism-lora-workflow",
+      "snippet": "Tired of your AI images looking fake? This tutorial will completely transform your Qwen model results and give you god-tier control over your creations. I&#x27;m revealing three game-changing presets for SwarmUI that will unlock a new level of photorealism and give you powerful editing tools you&#x27;ve been waiting for."
+    },
+    {
+      "title": "qwen-image-realism-lora: Text-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen-image-realism-lora-flymy-ai",
+      "snippet": "Overview qwen-image-realism-lora is a LoRA (Low-Rank Adaptation) module trained for the Qwen-Image text-to-image model that specializes in photorealistic image generation across portraits, landscapes, and complex scenes. Built and maintained by flymy-ai, this adapter enhances the base Qwen-Image model with improved facial detail, color accuracy, lighting control, and ethnic diversity ..."
+    },
+    {
+      "title": "qwen-image-realism-lora · Models",
+      "url": "https://www.modelscope.cn/models/flymy-ai/qwen-image-realism-lora",
+      "snippet": "English lora, qwen, qwen-image and 2 more ModelScope Inference Demo @ flymy-ai 375 downloads 107.34MB updated Jun 17,2026"
+    }
+  ]
+}

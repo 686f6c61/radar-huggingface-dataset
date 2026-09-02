@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "prometheusAIR/DeepSeek-V4-Flash-Vision-Exp-GGUF",
+  "slug": "prometheusair-deepseek-v4-flash-vision-exp-gguf",
+  "author": "prometheusAIR",
+  "url": "https://huggingface.co/prometheusAIR/DeepSeek-V4-Flash-Vision-Exp-GGUF",
+  "created_at": "2026-09-01T04:23:55.000Z",
+  "updated_at": "2026-09-01T19:09:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "imatrix",
+    "multimodal",
+    "vision",
+    "deepseek-v4",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 284334578519,
+  "parameters_human": "284.33B",
+  "storage_bytes": 358545090720,
+  "storage_human": "358.5 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prometheusAIR/DeepSeek-V4-Flash-Vision-Exp-GGUF · Hugging Face",
+      "url": "https://huggingface.co/prometheusAIR/DeepSeek-V4-Flash-Vision-Exp-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek V4 Flash Vision: Hands-On Guide to DeepSeek&#x27;s First Vision Model",
+      "url": "https://codepick.dev/en/guides/deepseek-v4-flash-vision-guide/",
+      "snippet": "deepseek-v4-flash-vision-exp is the first image-input model in the DeepSeek V4 family - an experimental release that hit 458 points on Hacker News on day one. This guide covers what it can do, the three ways to send images, OpenAI/Anthropic compatibility, token billing, and caveats, so you can decide fast whether to integrate it."
+    },
+    {
+      "title": "DeepSeek: DeepSeek V4 Flash Vision Exp - zenmux.ai",
+      "url": "https://zenmux.ai/deepseek/deepseek-v4-flash-vision-exp",
+      "snippet": "DeepSeek-V4-Flash-Vision-Exp is an experimental multimodal visual understanding model launched by DeepSeek, officially available on the DeepSeek API platform as of August 21, 2026. Built upon the DeepSeek-V4-Flash architecture (284B total parameters, 13B activated MoE during inference), this model matches the pure-text capabilities of the official DeepSeek-V4-Flash while achieving significant ..."
+    },
+    {
+      "title": "deepseek-v4-flash Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-flash",
+      "snippet": "DeepSeek V4 Flash is a 284B MoE model with 1M-token context optimized for fast coding and agents."
+    }
+  ]
+}

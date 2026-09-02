@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "sadiqoon/fiqh-embed-ar-fa-gguf",
+  "slug": "sadiqoon-fiqh-embed-ar-fa-gguf",
+  "author": "sadiqoon",
+  "url": "https://huggingface.co/sadiqoon/fiqh-embed-ar-fa-gguf",
+  "created_at": "2026-09-01T23:55:00.000Z",
+  "updated_at": "2026-09-02T01:17:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "ar",
+    "fa"
+  ],
+  "tags": [
+    "gguf",
+    "embeddings",
+    "retrieval",
+    "arabic",
+    "persian",
+    "fiqh",
+    "islamic-jurisprudence",
+    "llama.cpp",
+    "ollama",
+    "lm-studio",
+    "feature-extraction",
+    "ar",
+    "fa",
+    "base_model:sadiqoon/fiqh-embed-ar-fa",
+    "base_model:quantized:sadiqoon/fiqh-embed-ar-fa",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 566703104,
+  "parameters_human": "566.7M",
+  "storage_bytes": 1792224704,
+  "storage_human": "1.8 GB",
+  "base_model": "sadiqoon/fiqh-embed-ar-fa",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "IBM GGUF-encoded AI models and conversion scripts. Contribute to IBM/gguf development by creating an account on GitHub."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF · Hugging Face",
+      "url": "https://huggingface.co/docs/hub/gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

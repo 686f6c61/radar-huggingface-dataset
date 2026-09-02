@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/snapkitty-tg",
+  "slug": "snapkitty-snapkitty-tg",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/snapkitty-tg",
+  "created_at": "2026-07-14T12:10:59.000Z",
+  "updated_at": "2026-09-01T23:34:41.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "sovereign-compute",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Snapkitty/snapkitty-tg · Hugging Face",
+      "url": "https://huggingface.co/Snapkitty/snapkitty-tg",
+      "snippet": "Snapkitty / snapkitty-tg like 0 Follow Snapkitty Collective 1 Rust English telegram sovereign snapkitty enochian voynich rongorongo purple-team License:sovereign-source-license-v2 Model card FilesFiles and versions xet Community Copy to bucket new snapkitty-tg — Sovereign Telegram Bot Architecture — 4 Prompt Layers Modules Commands Trust"
+    },
+    {
+      "title": "Snapkitty (Snapkitty Collective) - Hugging Face",
+      "url": "https://huggingface.co/Snapkitty",
+      "snippet": "Sovereign AI infrastructure — quantum-seeded agents, WORM-sealed reasoning, NAND-decomposed LLMs. Bel Esprit D&#x27;Accord Irrevocable Trust · EIN 42-697643"
+    },
+    {
+      "title": "SnapKitty Downloads — Sovereign OS Ecosystem",
+      "url": "https://collectivekitty.com/downloads",
+      "snippet": "The AI-native enterprise operating system that governs itself."
+    },
+    {
+      "title": "SnapKitty OS",
+      "url": "https://collectivekitty.com/",
+      "snippet": "SnapKitty OS ships with production-ready modules across finance, operations, and AI infrastructure — all sealed to the same WORM chain, all running on your hardware."
+    },
+    {
+      "title": "SnapKitty Collective LLC - LinkedIn",
+      "url": "https://www.linkedin.com/posts/snapkitty-devops_snapkitty-collective-llc-linkedin-activity-7496501018260680704-9JEI",
+      "snippet": "SnapKitty Collective Update: We&#x27;re Moving Down the Stack New update from SnapKitty Collective. We started with software and models. Now we&#x27;re going further down the stack: we&#x27;re designing ..."
+    }
+  ]
+}

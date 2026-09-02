@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "wiltodelta/raiw-photo-classify",
+  "slug": "wiltodelta-raiw-photo-classify",
+  "author": "wiltodelta",
+  "url": "https://huggingface.co/wiltodelta/raiw-photo-classify",
+  "created_at": "2026-09-01T05:04:16.000Z",
+  "updated_at": "2026-09-02T01:08:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "clip",
+    "image-classification",
+    "ai-generated-content",
+    "photo",
+    "provider-attribution",
+    "en",
+    "dataset:detection-datasets/coco",
+    "base_model:openai/clip-vit-large-patch14",
+    "base_model:finetune:openai/clip-vit-large-patch14",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1712720369,
+  "storage_human": "1.7 GB",
+  "base_model": "openai/clip-vit-large-patch14",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wiltodelta/raiw-photo-classify · Hugging Face",
+      "url": "https://huggingface.co/wiltodelta/raiw-photo-classify",
+      "snippet": "wiltodelta / raiw-photo-classify like 0 Image Classification Transformers detection-datasets/coco English clip ai-generated-content photo provider-attribution License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "remove-ai-watermarks/docs/photo-classify.md at main - GitHub",
+      "url": "https://github.com/wiltodelta/remove-ai-watermarks/blob/main/docs/photo-classify.md",
+      "snippet": "Remove visible and invisible AI watermarks and provenance metadata from images and video. Python library and CLI for SynthID, C2PA, EXIF, IPTC, XMP, and common generative-AI marks. - wiltodelta/rem..."
+    },
+    {
+      "title": "Remove-AI-Watermarks",
+      "url": "https://www.dsebastien.net/remove-ai-watermarks/",
+      "snippet": "A tool for detecting and removing watermarks added by AI image generators (like DALL-E, Midjourney, Stable Diffusion) to images."
+    },
+    {
+      "title": "SynthID remover - Remove AI watermarks from images online | RAIW",
+      "url": "https://raiw.cc/",
+      "snippet": "Online AI watermark remover. Remove visible overlays, invisible SynthID and ChatGPT Images 2.0 markers, C2PA Content Credentials, and Made with AI metadata from PNG, JPG, WebP, AVIF, and HEIC images."
+    },
+    {
+      "title": "Remove AI Watermarks - GitHub",
+      "url": "https://github.com/wiltodelta/remove-ai-watermarks",
+      "snippet": "Remove visible and invisible AI watermarks and provenance metadata from images and video. Python library and CLI for SynthID, C2PA, EXIF, IPTC, XMP, and common generative-AI marks. - wiltodelta/rem..."
+    }
+  ]
+}

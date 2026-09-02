@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "npario/Qwen3.8-27B-Abliterated-MLX",
+  "slug": "npario-qwen3-8-27b-abliterated-mlx",
+  "author": "npario",
+  "url": "https://huggingface.co/npario/Qwen3.8-27B-Abliterated-MLX",
+  "created_at": "2026-09-02T00:36:43.000Z",
+  "updated_at": "2026-09-02T00:36:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mlx-vlm",
+    "qwen",
+    "qwen3.8",
+    "multimodal",
+    "2-bit",
+    "4-bit",
+    "6-bit",
+    "8-bit",
+    "bf16",
+    "abliterated",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 134099263808,
+  "storage_human": "134.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PocketAiHub/Qwen3.8-27B-Abliterated-MLX · Hugging Face",
+      "url": "https://huggingface.co/PocketAiHub/Qwen3.8-27B-Abliterated-MLX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "npario/Qwen3.8-27B-Uncensored-MLX · Hugging Face",
+      "url": "https://huggingface.co/npario/Qwen3.8-27B-Uncensored-MLX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored MLX: OrcaRouter Build Explained | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026",
+      "snippet": "OrcaRouter&#x27;s abliterated Qwen3.8-27B, in MLX for Apple Silicon plus GGUF and FP8 — what abliteration did and the real hardware/safety tradeoffs."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Ollama build of Qwen3.8-27B-Uncensored — an abliterated (refusal-removed) build of Qwen&#x27;s Qwen3.8-27B, a 27B dense hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with reasoning, tool-calling, and an MTP speculative-decoding head. Sixteen tags from 2-bit to 8-bit, each with the mmproj vision projector bundled in — nothing extra to fetch. Browse all ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "The official Qwen/Qwen3.8-27B-FP8 checkpoint serves directly on a 950PR — no offline re-quantization and no --quantization ascend. vLLM Ascend reads quant_method: fp8 and weight_block_size straight from the checkpoint, expands the weight_scale_inv tiles at load time and re-quantizes to MXFP8 on 950."
+    }
+  ]
+}

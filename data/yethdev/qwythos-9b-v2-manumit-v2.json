@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yethdev/qwythos-9b-v2-manumit-v2",
+  "slug": "yethdev-qwythos-9b-v2-manumit-v2",
+  "author": "yethdev",
+  "url": "https://huggingface.co/yethdev/qwythos-9b-v2-manumit-v2",
+  "created_at": "2026-09-01T21:46:38.000Z",
+  "updated_at": "2026-09-01T21:53:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "text-generation",
+    "conversational",
+    "base_model:empero-ai/Qwythos-9B-v2",
+    "base_model:finetune:empero-ai/Qwythos-9B-v2",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18840739017,
+  "storage_human": "18.8 GB",
+  "base_model": "empero-ai/Qwythos-9B-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yethdev/qwythos-9b-v2-manumit-v1 · Hugging Face",
+      "url": "https://huggingface.co/yethdev/qwythos-9b-v2-manumit-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwythos-9b-v2-manumit-v2 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/yethdev/qwythos-9b-v2-manumit-v2",
+      "snippet": "License The license is in LICENSE.md. The base model is empero-ai/Qwythos-9B-v2 and keeps its own terms. If you fork or reshare this, keep the manumit credit."
+    },
+    {
+      "title": "empero-ai/Qwythos-9B-v2 · Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwythos-9B-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwythos-9B-v2: a 9B that knows when to stop — Empero",
+      "url": "https://empero.org/writing/qwythos-9b-v2",
+      "snippet": "Qwythos-9B-v2: a 9B that knows when to stop A hygiene release for our reasoning 9B — the looping behavior is trained out (6.7% → 0% under greedy decoding), the native MTP head is restored, and the identity is a lighter touch — with every benchmark held at v1&#x27;s level. Not a capability jump. A fix. We just shipped Qwythos-9B-v2 — the same reasoning model you already know, with the rough ..."
+    },
+    {
+      "title": "Empero — Independent AI Research Lab",
+      "url": "https://empero.org/",
+      "snippet": "New · Qwen3.8-9B / 4B / 2B — distilled Small models, trained in the open. We are an independent AI research lab in Germany, building language models efficient enough to run on hardware you own. Latest: a full-parameter distill of Qwen3.8-2.4T into 9B / 4B / 2B, and a GDN-aware 27B GGUF at 11.7 GiB. The open-weight Qwythos family has passed one million downloads on Hugging Face."
+    }
+  ]
+}

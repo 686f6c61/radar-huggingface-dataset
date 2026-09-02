@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Hoho76/Me1",
+  "slug": "hoho76-me1",
+  "author": "Hoho76",
+  "url": "https://huggingface.co/Hoho76/Me1",
+  "created_at": "2026-09-01T21:47:19.000Z",
+  "updated_at": "2026-09-01T21:49:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1168628218,
+  "storage_human": "1.2 GB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hoho76 (ME) - Hugging Face",
+      "url": "https://huggingface.co/Hoho76/models",
+      "snippet": "User profile of ME on Hugging Face Recent Activity liked a model about 1 month ago Jonjew/YvonneStrahovski liked a model about 1 month ago badhri-suresh/flux-rib-knit ..."
+    },
+    {
+      "title": "Hoho76 (ME) - Hugging Face",
+      "url": "https://huggingface.co/Hoho76",
+      "snippet": "Recent Activity liked a model about 1 month ago Jonjew/YvonneStrahovski liked a model about 1 month ago badhri-suresh/flux-rib-knit-lora"
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "AI Girlfriend — Chat, Roleplay, Image & Video | Kales.ai",
+      "url": "https://www.kales.ai/en/",
+      "snippet": "Kales is a service that connects AI character chat, roleplay, story mode, character creation, image generation, and short video generation. You can choose a character to chat with, create your own AI girlfriend, and use the same character for images and videos."
+    },
+    {
+      "title": "Crizepvill-Dumalaog-AI-231/ME1_CNN_Einops at main - GitHub",
+      "url": "https://github.com/cfdumalaog/Crizepvill-Dumalaog-AI-231/tree/main/ME1_CNN_Einops",
+      "snippet": "The ME1 implementation does not use: torch.nn or torch.nn.functional Conv1d, Conv2d, or Conv3d functional convolution helpers PyTorch pooling, flatten, linear, loss, activation, or Unfold layers Keras, TensorFlow, SciPy convolution, or pretrained/CNN model libraries NLP libraries or NLP operations The implementation uses: Tensor.as_strided to expose overlapping image windows without copying ..."
+    }
+  ]
+}

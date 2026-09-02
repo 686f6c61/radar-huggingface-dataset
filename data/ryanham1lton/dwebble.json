@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Dwebble",
+  "slug": "ryanham1lton-dwebble",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Dwebble",
+  "created_at": "2026-09-01T19:43:50.000Z",
+  "updated_at": "2026-09-01T19:46:24.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 147593626,
+  "storage_human": "148 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton/Numel at main - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Numel/tree/main",
+      "snippet": "Ryanham1lton / Numel like 0 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new main Numel 113 MB Ctrl+K Ctrl+K 1 contributor History:2 commits Ryanham1lton Upload 3 files ffb6609 verified17 days ago .gitattributes 1.57 kBUpload 3 files17 days ago Numel (Eric Stuart).pth 55.2 MB xet Upload 3 files17 days ago ..."
+    },
+    {
+      "title": "ryanham1lton | Storyteller.ai",
+      "url": "https://storyteller.ai/profile/ryanham1lton",
+      "snippet": "Storyteller.ai AI creation engine Make movies like this with Seedance 2.0 - cheaper than anywhere else. Seedance 2.0 model is live on ArtCraft before anywhere else. Create cinematic AI video with fluid motion and Hollywood-level scenes."
+    },
+    {
+      "title": "Ryanham1lton/Dewott · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Dewott",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lopunny V2 (Pokémon) AI Voice: Hear It & Make AI Covers | Jammable",
+      "url": "https://www.jammable.com/lopunny-v2-pokmon-LBU83",
+      "snippet": "About the Lopunny V2 (Pokémon) AI Voice thanks a Ryanham1lton he did a voice model in lopunny Use the Lopunny V2 (Pokémon) AI voice to create AI covers, as a voice changer, or to generate text-to-speech."
+    },
+    {
+      "title": "dwebble AI Models | Civitai",
+      "url": "https://civitai.com/tag/dwebble",
+      "snippet": "dwebble Browse 1 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with dwebble."
+    }
+  ]
+}

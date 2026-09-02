@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dehanns/whisper-small-lora-mix",
+  "slug": "dehanns-whisper-small-lora-mix",
+  "author": "dehanns",
+  "url": "https://huggingface.co/dehanns/whisper-small-lora-mix",
+  "created_at": "2026-09-01T18:42:50.000Z",
+  "updated_at": "2026-09-01T18:42:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:openai/whisper-small",
+    "base_model:adapter:openai/whisper-small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7098064,
+  "storage_human": "7 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-small · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "whisper-small-quran-lora-dataset-mix - Hugging Face",
+      "url": "https://huggingface.co/MaddoggProduction/whisper-small-quran-lora-dataset-mix",
+      "snippet": "Whisper Small Quran (LoRA Fine-Tuned) This is a specialized Automatic Speech Recognition (ASR) model for Quranic Recitation. It is a fine-tuned version of openai/whisper-small, optimized to recognize Quranic Arabic with high accuracy while maintaining excellent inference speed. Model Performance"
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "B-I-T-W-I-S-E-M-I-N-D-S/Whisper-LORA - GitHub",
+      "url": "https://github.com/B-I-T-W-I-S-E-M-I-N-D-S/Whisper-LORA",
+      "snippet": "Model Adaptation: Applies LoRA adapters to the Whisper model to enable efficient fine-tuning. Optimization: Employs mixed-precision training (fp16) and the Accelerate library for efficient GPU utilization. Training Loop: Incorporates early stopping based on validation performance to prevent overfitting."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

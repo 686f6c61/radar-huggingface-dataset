@@ -5,7 +5,7 @@
   "author": "nicolasembleton",
   "url": "https://huggingface.co/nicolasembleton/Spark-X2.5-4B-onnx",
   "created_at": "2026-09-01T15:53:21.000Z",
-  "updated_at": "2026-09-01T16:20:50.000Z",
+  "updated_at": "2026-09-01T19:01:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 8898001352,
-  "storage_human": "8.9 GB",
+  "storage_bytes": 21014050706,
+  "storage_human": "21.0 GB",
   "base_model": "XHToken/Spark-X2.5-4B",
   "formats": [
     "onnx"

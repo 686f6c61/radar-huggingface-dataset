@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Zenma/VLA-Adapter-LIBERO-Spatial-15000",
+  "slug": "zenma-vla-adapter-libero-spatial-15000",
+  "author": "Zenma",
+  "url": "https://huggingface.co/Zenma/VLA-Adapter-LIBERO-Spatial-15000",
+  "created_at": "2026-09-01T19:58:41.000Z",
+  "updated_at": "2026-09-01T20:01:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "openvla",
+    "feature-extraction",
+    "robotics",
+    "vision-language-action",
+    "vla",
+    "libero",
+    "vla-adapter",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1252553792,
+  "parameters_human": "1.25B",
+  "storage_bytes": 2942814144,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenHelix-Team/VLA-Adapter: VLA-Adapter: An Effective Paradigm ...",
+      "url": "https://github.com/OpenHelix-Team/VLA-Adapter",
+      "snippet": "We fine-tuned Qwen2.5-0.5B with our adapter bridge paradigm on four LIBERO task suites independently: LIBERO-Spatial, LIBERO-Object, LIBERO-Goal, and LIBERO-Long."
+    },
+    {
+      "title": "README.md · VLA-Adapter/LIBERO-Spatial-Pro at main",
+      "url": "https://huggingface.co/VLA-Adapter/LIBERO-Spatial-Pro/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pion/VLA/VLAAdapter/README.md at main · OPTML-Group/Pion",
+      "url": "https://github.com/OPTML-Group/Pion/blob/main/VLA/VLAAdapter/README.md",
+      "snippet": "The paper-reported checkpoint differs by suite: libero_object trains for 1500 steps (the script default), while spatial / goal / 10 train for 15000 steps (MAX_STEPS=15000):"
+    },
+    {
+      "title": "VLA-Adapter: An Effective Paradigm for Tiny-Scale Vision-Language ...",
+      "url": "https://arxiv.org/pdf/2509.09372v1",
+      "snippet": "We introduce VLA-Adapter, a novel paradigm designed to reduce the reliance of VLA models on large-scale VLMs and extensive pre-training. To this end, we first systemat-ically analyze the effectiveness of various VL conditions and present key find-ings on which conditions are essential for bridging perception and action spaces."
+    },
+    {
+      "title": "VLA-Adapter (VLA-Adapter) - Hugging Face",
+      "url": "https://huggingface.co/VLA-Adapter",
+      "snippet": "The models of VLA-Adapter-Pro (The underlying architecture is the same, but the implementation has been improved, resulting in significantly improved)"
+    }
+  ]
+}

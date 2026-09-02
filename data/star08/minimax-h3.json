@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "star08/MiniMax-H3",
+  "slug": "star08-minimax-h3",
+  "author": "star08",
+  "url": "https://huggingface.co/star08/MiniMax-H3",
+  "created_at": "2026-09-02T00:39:09.000Z",
+  "updated_at": "2026-09-02T00:39:10.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "diffusers",
+    "safetensors",
+    "text-to-video",
+    "image-to-video",
+    "image-text-to-video",
+    "video-to-video",
+    "text-to-audio-video",
+    "image-to-audio-video",
+    "image-text-to-audio-video",
+    "video-to-audio-video",
+    "audio-to-audio-video",
+    "audio-video-generation",
+    "multimodal",
+    "synchronized-audio-video",
+    "reference-to-audio-video",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 353917479700,
+  "storage_human": "353.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "MiniMax H3 (Hailuo 3) on Runway | AI Video up to 2K",
+      "url": "https://runway.com/product/models/minimax-h3",
+      "snippet": "MiniMax H3 on Runway: multimodal AI video from text, image, video and audio references. Clips of 5 to 15 seconds at 768p or 2K, plus keyframe control."
+    },
+    {
+      "title": "MiniMax H3 — Video AI Model by MiniMax | Layer",
+      "url": "https://www.layer.ai/models/minimax-h3",
+      "snippet": "MiniMax H3 (Hailuo-03) is the next-generation open-weight multimodal video model from MiniMax, producing 2K clips at 24 FPS with native stereo audio generated in the same pass. It supports text-to-video and image-to-video with optional first-to-last frame control, durations from 5 to 15 seconds, and six aspect ratios from 21:9 to 9:16. Ideal for cinematic storytelling, social content, and any ..."
+    },
+    {
+      "title": "MiniMax H3 - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/minimax-h3",
+      "snippet": "MiniMax H3 is an omni-modal generative system from MiniMaxAI that produces video with native stereo audio from text, images, video, and audio inputs. It understands multimodal context as a single unified sequence rather than treating each input type separately, and predicts video and audio latents jointly in one forward pass so speech, sound ..."
+    }
+  ]
+}

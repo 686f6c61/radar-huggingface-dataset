@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "uklukie/uk-ai-job-hunter-dev-autotrain-models",
+  "slug": "uklukie-uk-ai-job-hunter-dev-autotrain-models",
+  "author": "uklukie",
+  "url": "https://huggingface.co/uklukie/uk-ai-job-hunter-dev-autotrain-models",
+  "created_at": "2026-09-01T20:34:48.000Z",
+  "updated_at": "2026-09-01T20:34:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "uklukie/uk-ai-job-hunter-dev · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/uklukie/uk-ai-job-hunter-dev",
+      "snippet": "UK AI Job Hunter Dataset Dataset Summary This dataset is a curated collection of IT and AI job listings across the United Kingdom, designed for semantic deduplication and high-match candidate identification. It serves as a gold-standard dataset for training local LLMs to categorize jobs and predict match probability based on professional CVs."
+    },
+    {
+      "title": "uklukie/uk-ai-job-hunter · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/uklukie/uk-ai-job-hunter",
+      "snippet": "Datasets: uklukie / uk-ai-job-hunter like 0 Dataset card FilesFiles and versions xet Community Dataset Viewer API Embed Duplicate Data Studio Subset (1) default default Split (1) train train"
+    },
+    {
+      "title": "AI Job Hunter",
+      "url": "https://aijobhunter.co.uk/",
+      "snippet": "See AI Job Hunter In Action Watch how our AI agents find, match, and apply to jobs for you — automatically."
+    },
+    {
+      "title": "AI Job Hunter - GitHub",
+      "url": "https://github.com/Aloka/ai-job-hunter",
+      "snippet": "AI Job Hunter is an agent swarm that hunts for jobs on your behalf: 🔍 Searches 8+ job categories across the web using Claude AI + live web search 🎯 Scores each role for fit against your specific background (0-100) 📝 Tailors your CV and writes a cover letter per job — auto-detecting formal vs conversational tone 📧 Emails you a daily digest every morning with new matches 📁 ..."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: GLM-5.3-Flash by Z.ai on Aug 26 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    }
+  ]
+}

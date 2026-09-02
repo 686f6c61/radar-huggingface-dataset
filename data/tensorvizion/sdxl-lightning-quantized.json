@@ -5,7 +5,7 @@
   "author": "TensorVizion",
   "url": "https://huggingface.co/TensorVizion/SDXL-Lightning-Quantized",
   "created_at": "2026-09-01T12:22:41.000Z",
-  "updated_at": "2026-09-01T12:44:52.000Z",
+  "updated_at": "2026-09-01T17:19:11.000Z",
   "license": "creativeml-openrail-m",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 2567463684,
   "parameters_human": "2.57B",
-  "storage_bytes": 999335648,
-  "storage_human": "999 MB",
+  "storage_bytes": 5295308864,
+  "storage_human": "5.3 GB",
   "base_model": null,
   "formats": [
     "gguf"

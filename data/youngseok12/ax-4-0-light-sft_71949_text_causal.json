@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "youngseok12/AX-4.0-Light-sft_71949_text_causal",
+  "slug": "youngseok12-ax-4-0-light-sft_71949_text_causal",
+  "author": "youngseok12",
+  "url": "https://huggingface.co/youngseok12/AX-4.0-Light-sft_71949_text_causal",
+  "created_at": "2026-09-02T00:12:58.000Z",
+  "updated_at": "2026-09-02T00:15:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "korean",
+    "sft",
+    "lora-merged",
+    "causal-reasoning",
+    "k-ai-leaderboard",
+    "conversational",
+    "ko",
+    "base_model:skt/A.X-4.0-Light",
+    "base_model:finetune:skt/A.X-4.0-Light",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7259624960,
+  "parameters_human": "7.26B",
+  "storage_bytes": 14519289000,
+  "storage_human": "14.5 GB",
+  "base_model": "skt/A.X-4.0-Light",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "youngseok12/AX-3.1-Light-sft_A1_paperguided4k · Hugging Face",
+      "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_A1_paperguided4k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "youngseok12/AX-3.1-Light-sft_v3_2_aihub_extension · Hugging Face",
+      "url": "https://huggingface.co/youngseok12/AX-3.1-Light-sft_v3_2_aihub_extension",
+      "snippet": "A.X-3.1-Light SFT v3.2 AI Hub Extension 이 모델은 skt/A.X-3.1-Light 를 기반으로 한국어 질의응답 및 지시 수행 데이터를 1 epoch LoRA SFT한 뒤 adapter를 base model에 병합한 BF16 전체 가중치 모델입니다. 답변형·객관식 문제에서 첫 문장 또는 첫 부분에 핵심 답을 제시하고, 필요한 경우 짧은 근거를 덧붙이도록 ..."
+    },
+    {
+      "title": "A.X-4.0/README.en.md at main · SKT-AI/A.X-4.0 · GitHub",
+      "url": "https://github.com/SKT-AI/A.X-4.0/blob/main/README.en.md",
+      "snippet": "🇰🇷 View Korean README SK Telecom released A.X 4.0 (pronounced \"A dot X\"), a large language model (LLM) optimized for Korean-language understanding and enterprise deployment, on April 30, 2025. Built on the open-source Qwen2.5 model, A.X 4.0 has been further trained with large-scale Korean datasets to deliver outstanding performance in real-world business environments."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/",
+      "snippet": "arXiv is a free distribution service and an open-access archive for nearly 2.4 million scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics."
+    },
+    {
+      "title": "GitHub - NVIDIA-NeMo/Automodel: Pytorch Distributed native training ...",
+      "url": "https://github.com/NVIDIA-NeMo/Automodel",
+      "snippet": "Nemo AutoModel is a Pytorch DTensor‑native SPMD open-source training library under NVIDIA NeMo Framework, designed to streamline and scale training and finetuning for LLMs, VLMs, diffusion models, and retrieval models. Designed for flexibility, reproducibility, and scale, NeMo AutoModel enables both small-scale experiments and massive multi-GPU, multi-node deployments for fast ..."
+    }
+  ]
+}

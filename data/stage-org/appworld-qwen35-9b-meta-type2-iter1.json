@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Stage-org/appworld-qwen35-9b-meta-type2-iter1",
+  "slug": "stage-org-appworld-qwen35-9b-meta-type2-iter1",
+  "author": "Stage-org",
+  "url": "https://huggingface.co/Stage-org/appworld-qwen35-9b-meta-type2-iter1",
+  "created_at": "2026-08-26T20:49:37.000Z",
+  "updated_at": "2026-09-01T22:25:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 204,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 94118594925,
+  "storage_human": "94.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stage-org/appworld-qwen35-9b-meta-type6-iter1 · Hugging Face",
+      "url": "https://huggingface.co/Stage-org/appworld-qwen35-9b-meta-type6-iter1",
+      "snippet": "/ appworld-qwen35-9b-meta-type6-iter1 like 0 Follow Stage-org 2 Safetensors qwen3_5 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 9B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=Stage-org%2Fappworld-qwen35-9b-meta-type9-iter1",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Other Tasks Text Generation Any-to-Any Image-Text-to-Text Image-to-Text Image-to-Image Text-to-Image Text-to-Video Text-to-Speech + 44 Reset Parameters 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 + 44 Apps vLLM llama.cpp MLX LM LM Studio ..."
+    },
+    {
+      "title": "GitHub - StonyBrookNLP/appworld: AppWorld: A Controllable World of ...",
+      "url": "https://github.com/stonybrooknlp/appworld",
+      "snippet": "🌍 AppWorld: A Controllable World of Apps and People for Benchmarking Function Calling and Interactive Coding Agent, ACL&#x27;24 Best Resource Paper. - StonyBrookNLP/appworld"
+    },
+    {
+      "title": "qwen/qwen3.5-9b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 9B parameter dense model, supporting a native context length of 262,144 tokens."
+    },
+    {
+      "title": "aiham-alhawar/qwen35-9b • LM Studio Hub",
+      "url": "https://lmstudio.ai/aiham-alhawar/qwen35-9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 9B parameter dense model, supporting a native context length of 262,144 tokens."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "alexhegit",
   "url": "https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-vla-jepa",
   "created_at": "2026-08-28T07:25:50.000Z",
-  "updated_at": "2026-08-28T07:26:30.000Z",
+  "updated_at": "2026-09-01T12:58:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 13,
+  "downloads_30d": 14,
   "trending_score": 0,
-  "parameters": 2770338694,
-  "parameters_human": "2.77B",
-  "storage_bytes": 6174572708,
-  "storage_human": "6.2 GB",
+  "parameters": 2282710534,
+  "parameters_human": "2.28B",
+  "storage_bytes": 11050479740,
+  "storage_human": "11.1 GB",
   "base_model": "lerobot/VLA-JEPA-LIBERO",
   "formats": [
     "safetensors"

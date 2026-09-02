@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "simpledirect/Vinci-Prova-7B-1.0",
+  "slug": "simpledirect-vinci-prova-7b-1-0",
+  "author": "simpledirect",
+  "url": "https://huggingface.co/simpledirect/Vinci-Prova-7B-1.0",
+  "created_at": "2026-08-10T18:16:12.000Z",
+  "updated_at": "2026-09-01T20:29:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "vinci",
+    "prova",
+    "experimental",
+    "dpo",
+    "lora",
+    "character-training",
+    "transfer-study",
+    "conversational",
+    "en",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:adapter:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 1301,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496081136,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU (max 500 items per subtask; caps only the largest subtasks of the 14,042-item test set — not leaderboard-comparable)",
+      "metric": "accuracy",
+      "value": 0.6102
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GSM8K (full test set, 5-shot, flexible-extract)",
+      "metric": "exact_match",
+      "value": 0.46
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "TruthfulQA MC2 (limit-500 subsample — NOT the full set, not leaderboard-comparable)",
+      "metric": "acc",
+      "value": 0.6034
+    }
+  ],
+  "sources": [
+    {
+      "title": "simpledirect/Vinci-Prova-7B-1.0 · Hugging Face",
+      "url": "https://huggingface.co/simpledirect/Vinci-Prova-7B-1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "simpledirect/Vinci-Prova-7B-1.0 at main - Hugging Face",
+      "url": "https://huggingface.co/simpledirect/Vinci-Prova-7B-1.0/tree/main",
+      "snippet": "like 1 Follow SimpleDirect 3 Text Generation Transformers Safetensors English mistral vinci prova experimental dpo lora character-training transfer-study conversational Eval Results (legacy) text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "SimpleDirect® — An independent AI lab",
+      "url": "https://www.getsimpledirect.com/",
+      "snippet": "Transferring Character Post-Training to Mistral 7B George Pu, Ayush Naik · Version 1.0 · Aug 13, 2026 Vinci Technical Report No. 1: character post-training transferred to Mistral 7B — model-judged fabrication fell from 46.2% to 7.5%, at a cost of 5.6 GSM8K points."
+    },
+    {
+      "title": "Vinci Labs | Vinci by SimpleDirect®",
+      "url": "https://www.getsimpledirect.com/desktop",
+      "snippet": "Vinci Technical Report No. 1: character post-training transferred to Mistral 7B — model-judged fabrication fell from 46.2% to 7.5%, at a cost of 5.6 GSM8K points."
+    },
+    {
+      "title": "Vinci Prova 7B 1.0 Released with Improved Fabrication Detection - LinkedIn",
+      "url": "https://www.linkedin.com/posts/simpledirect_vinci-research-has-released-vinci-prova-7b-activity-7492908237537841152-12WI",
+      "snippet": "Vinci Research has released Vinci Prova 7B 1.0. Open weights, Apache-2.0. The recipe was developed entirely on Qwen 3.5. Piccolo 4B and Bozza 9B both sit on that base. So we could not tell whether ..."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "llmsforall",
   "url": "https://huggingface.co/llmsforall/Millie-35B-A3B-11GB",
   "created_at": "2026-08-30T21:34:57.000Z",
-  "updated_at": "2026-08-30T21:36:38.000Z",
+  "updated_at": "2026-09-01T21:51:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,12 +24,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 179,
+  "downloads_30d": 190,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 10938143648,
-  "storage_human": "10.9 GB",
+  "storage_bytes": 21262093152,
+  "storage_human": "21.3 GB",
   "base_model": null,
   "formats": [
     "gguf"

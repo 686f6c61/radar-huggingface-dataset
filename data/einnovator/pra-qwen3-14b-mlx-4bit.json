@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "EInnovator/pra-qwen3-14b-mlx-4bit",
+  "slug": "einnovator-pra-qwen3-14b-mlx-4bit",
+  "author": "EInnovator",
+  "url": "https://huggingface.co/EInnovator/pra-qwen3-14b-mlx-4bit",
+  "created_at": "2026-09-01T20:05:15.000Z",
+  "updated_at": "2026-09-01T20:14:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pra",
+  "languages": [],
+  "tags": [
+    "pra",
+    "progressive-retrieval-attention",
+    "adapter",
+    "long-context",
+    "dataset:combined",
+    "dataset:hotpotqa",
+    "dataset:qasper",
+    "base_model:mlx-community/Qwen3-14B-4bit",
+    "base_model:finetune:mlx-community/Qwen3-14B-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5244949,
+  "storage_human": "5 MB",
+  "base_model": "mlx-community/Qwen3-14B-4bit",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-14B-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-14B-MLX-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-14B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-14B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-14B-MLX-4bit: Efficient Local LLM for Mac - dev.co",
+      "url": "https://dev.co/ai/llms/qwen3-14b-mlx-4bit",
+      "snippet": "Qwen3-14B-MLX-4bit is a 14-billion-parameter language model quantized to 4-bit precision and optimized for Apple MLX framework. It is a community-converted version of Alibaba&#x27;s Qwen3-14B base model, enabling efficient inference on Mac hardware."
+    },
+    {
+      "title": "Qwen/Qwen3-14B-MLX-4bit — AICHINA.news | AI China News",
+      "url": "https://aichina.news/models/Qwen/Qwen3-14B-MLX-4bit/",
+      "snippet": "Qwen3-14B-MLX-4bit is a compact yet powerful large language model from Alibaba, specifically optimised for Apple Silicon hardware using the MLX framework. It features a unique &#x27;thinking mode&#x27; that allows it to perform complex logical reasoning, mathematics, and coding tasks by generating internal chain-of-thought sequences, while also supporting a standard mode for efficient, everyday ..."
+    },
+    {
+      "title": "Qwen3 14B MLX 4bit by Qwen — VRAM 7.9GB, 40K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Qwen%2FQwen3-14B-MLX-4bit,5yMDdsx03ka1AyEfsCoQqf",
+      "snippet": "Qwen3 14B MLX 4bit is an open-source 14b LLM by Qwen. VRAM 7.9GB, 40K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

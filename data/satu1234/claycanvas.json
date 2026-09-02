@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "satu1234/ClayCanvas",
+  "slug": "satu1234-claycanvas",
+  "author": "satu1234",
+  "url": "https://huggingface.co/satu1234/ClayCanvas",
+  "created_at": "2026-08-29T15:23:35.000Z",
+  "updated_at": "2026-09-01T21:35:48.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "stable-diffusion",
+    "stable-diffusion-diffusers",
+    "text-to-image",
+    "lora",
+    "art",
+    "painting",
+    "artwork",
+    "watercolor",
+    "oil-painting",
+    "line-art",
+    "base_model:runwayml/stable-diffusion-v1-5",
+    "base_model:adapter:runwayml/stable-diffusion-v1-5",
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51105280,
+  "storage_human": "51 MB",
+  "base_model": "runwayml/stable-diffusion-v1-5",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "satu1234/ClayCanvas · Hugging Face",
+      "url": "https://huggingface.co/satu1234/ClayCanvas",
+      "snippet": "Art Style LoRA Model Overview This is a LoRA (Low-Rank Adaptation) fine-tune of runwayml/stable-diffusion-v1-5. It was trained to generate images in multiple artistic styles from text prompts. Training Details Base model: runwayml/stable-diffusion-v1-5 Training steps: 5000 Resolution: 256x256 LoRA rank: 32 LoRA alpha: 32 Learning rate: 0.0001 Date: 2026-08-29 Supported Styles Oil painting Line ..."
+    },
+    {
+      "title": "satu1234 (212) - Hugging Face",
+      "url": "https://huggingface.co/satu1234",
+      "snippet": "User profile of 212 on Hugging Face"
+    },
+    {
+      "title": "Satu1234 · GitHub",
+      "url": "https://github.com/Satu1234",
+      "snippet": "GitHub is where Satu1234 builds software. Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

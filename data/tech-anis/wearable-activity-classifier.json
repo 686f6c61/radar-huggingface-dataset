@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Tech-Anis/Wearable-Activity-Classifier",
+  "slug": "tech-anis-wearable-activity-classifier",
+  "author": "Tech-Anis",
+  "url": "https://huggingface.co/Tech-Anis/Wearable-Activity-Classifier",
+  "created_at": "2026-09-01T23:35:22.000Z",
+  "updated_at": "2026-09-01T23:51:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "time-series-classification",
+    "education",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 245004,
+  "storage_human": "245004 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Explainable artificial intelligence models for accurate physical ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1440244026001374",
+      "snippet": "Wearable devices such as smartwatches are increasingly used for physical activity monitoring, but their proprietary algorithms often lack transparency and limit generalizability. Existing machine learning models prioritize accuracy, overlooking interpretability and real-world applicability. This study addresses these gaps by applying explainable deep learning techniques to raw sensor data from ..."
+    },
+    {
+      "title": "Prediction of physical activity types based on healthcare wearable ...",
+      "url": "https://link.springer.com/article/10.1007/s11760-025-04564-z",
+      "snippet": "Physical activity plays a crucial role in maintaining physical health and enhancing quality of life. With advancements in technology, healthcare wearable devices have become popular tools for monitoring physical activity and predicting health status. This study aims to develop a model for classifying physical activity types using healthcare wearable devices and optimized machine learning (ML ..."
+    },
+    {
+      "title": "Wearable Activity Classifier - a Hugging Face Space by musakhan10",
+      "url": "https://huggingface.co/spaces/musakhan10/DeepLearningAssignment2",
+      "snippet": "Discover amazing ML apps made by the community"
+    },
+    {
+      "title": "yiannis3/Wearable-Sensor-Activity-Classification - GitHub",
+      "url": "https://github.com/yiannis3/Wearable-Sensor-Activity-Classification",
+      "snippet": "The full project built an Android app that consumes wearable sensor streams (accelerometer/IMU and respiration-related signals) and performs on-device classification for daily activities and social/respiratory events. This repository focuses on the ML side: model training, evaluation, and TensorFlow Lite export to support on-device inference."
+    },
+    {
+      "title": "Wearable Activity Dataset ⌚ — Fitness & Health Tracking Data",
+      "url": "https://github.com/syncora-ai/Fitness-Health-Tracking-Dataset",
+      "snippet": "This dataset contains wearable fitness and biometric data, modeled on devices like the Apple Watch. All entries are synthetic, privacy-safe, and ready for ML pipelines. Suitable for predictive modeling, activity classification, and LLM-based experiments."
+    }
+  ]
+}

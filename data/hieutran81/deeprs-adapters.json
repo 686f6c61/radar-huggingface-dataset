@@ -5,7 +5,7 @@
   "author": "hieutran81",
   "url": "https://huggingface.co/hieutran81/deeprs-adapters",
   "created_at": "2026-09-01T18:32:43.000Z",
-  "updated_at": "2026-09-01T18:40:14.000Z",
+  "updated_at": "2026-09-01T19:21:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 36317876608,
-  "storage_human": "36.3 GB",
+  "storage_bytes": 119357737682,
+  "storage_human": "119.4 GB",
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"

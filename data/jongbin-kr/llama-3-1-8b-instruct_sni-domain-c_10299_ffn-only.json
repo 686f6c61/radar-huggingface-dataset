@@ -5,7 +5,7 @@
   "author": "Jongbin-kr",
   "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_SNI-domain-c_10299_ffn-only",
   "created_at": "2026-09-01T17:01:30.000Z",
-  "updated_at": "2026-09-01T17:50:30.000Z",
+  "updated_at": "2026-09-01T17:57:23.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1829559889,
-  "storage_human": "1.8 GB",
+  "storage_bytes": 2169374401,
+  "storage_human": "2.2 GB",
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"

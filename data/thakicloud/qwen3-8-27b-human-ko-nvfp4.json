@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/Qwen3.8-27B-Human-KO-NVFP4",
+  "slug": "thakicloud-qwen3-8-27b-human-ko-nvfp4",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/Qwen3.8-27B-Human-KO-NVFP4",
+  "created_at": "2026-09-02T00:02:47.000Z",
+  "updated_at": "2026-09-02T00:22:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "korean",
+    "style-alignment",
+    "nvfp4",
+    "quantized",
+    "compressed-tensors",
+    "qwen",
+    "text-generation",
+    "conversational",
+    "ko",
+    "base_model:ThakiCloud/Qwen3.8-27B-Human-KO",
+    "base_model:quantized:ThakiCloud/Qwen3.8-27B-Human-KO",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18800348400,
+  "parameters_human": "18.80B",
+  "storage_bytes": 22922588080,
+  "storage_human": "22.9 GB",
+  "base_model": "ThakiCloud/Qwen3.8-27B-Human-KO",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ThakiCloud/Qwen3.8-27B-Human-KO at main - Hugging Face",
+      "url": "https://huggingface.co/ThakiCloud/Qwen3.8-27B-Human-KO/tree/main",
+      "snippet": "Qwen3.8-27B-Human-KO 55.6 GB Ctrl+K Ctrl+K 1 contributor History:4 commits thaki-AI docs: results-focused card (process details withheld) 1b967e7 verifiedabout 10 hours ago .gitattributes Safe 1.57 kBAdd files using upload-large-folder toolabout 13 hours ago DATA_PROVENANCE.md 1.42 kBdocs: results-focused card (process details withheld)about 10 ..."
+    },
+    {
+      "title": "ThakiCloud/Qwen3.8-27B-NVFP4-FP8ATTN · Hugging Face",
+      "url": "https://huggingface.co/ThakiCloud/Qwen3.8-27B-NVFP4-FP8ATTN",
+      "snippet": "Safetensors qwen3_5 nvfp4 fp8 mixed-precision quantized llm-compressor gptq vision-language vllm conversational compressed-tensors License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Qwen3.8-27B-NVFP4-FP8ATTN Why this exists, and why you probably want it over our pure-NVFP4 pair Quality — not distinguishable ..."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    }
+  ]
+}

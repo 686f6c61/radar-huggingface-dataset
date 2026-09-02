@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "MatheusMarquesEiras/qwen35-0.8b-triagem-medica-piloto",
+  "slug": "matheusmarqueseiras-qwen35-0-8b-triagem-medica-piloto",
+  "author": "MatheusMarquesEiras",
+  "url": "https://huggingface.co/MatheusMarquesEiras/qwen35-0.8b-triagem-medica-piloto",
+  "created_at": "2026-09-01T21:04:25.000Z",
+  "updated_at": "2026-09-01T21:04:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "qlora",
+    "unsloth",
+    "medical",
+    "triagem",
+    "portuguese",
+    "qwen3.5",
+    "text-generation",
+    "conversational",
+    "pt",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45576546,
+  "storage_human": "46 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen35-2b-triagem-medica-piloto - Hugging Face",
+      "url": "https://huggingface.co/MatheusMarquesEiras/qwen35-2b-triagem-medica-piloto",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.5-0.8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-0.8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3.5:0.8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:0.8b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "Qwen3.5-0.8B · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3.5-0.8B",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    },
+    {
+      "title": "Qwen/Qwen3.5-0.8B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-0.8B",
+      "snippet": "Qwen3.5-0.8B is the smallest member of the Qwen3.5 family — same hybrid gated delta networks architecture and 262K context, at a size suited to edge devices or as a draft model for speculative decoding with larger Qwen3.5 checkpoints."
+    }
+  ]
+}

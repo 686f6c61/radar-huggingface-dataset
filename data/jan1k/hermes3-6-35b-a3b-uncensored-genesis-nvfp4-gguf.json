@@ -5,7 +5,7 @@
   "author": "jan1k",
   "url": "https://huggingface.co/jan1k/Hermes3.6-35B-A3B-Uncensored-Genesis-NVFP4-GGUF",
   "created_at": "2026-09-01T15:36:59.000Z",
-  "updated_at": "2026-09-01T15:37:09.000Z",
+  "updated_at": "2026-09-01T18:02:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,15 +33,17 @@
     "base_model:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
     "base_model:quantized:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
     "license:apache-2.0",
-    "region:us"
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
   ],
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": 446571248,
-  "parameters_human": "446.6M",
-  "storage_bytes": 899283072,
-  "storage_human": "899 MB",
+  "parameters": 34660671320,
+  "parameters_human": "34.66B",
+  "storage_bytes": 22374204032,
+  "storage_human": "22.4 GB",
   "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
   "formats": [
     "gguf"

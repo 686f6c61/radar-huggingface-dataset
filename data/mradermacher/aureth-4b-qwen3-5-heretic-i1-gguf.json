@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Aureth-4B-Qwen3.5-Heretic-i1-GGUF",
   "created_at": "2026-09-01T11:49:21.000Z",
-  "updated_at": "2026-09-01T11:55:00.000Z",
+  "updated_at": "2026-09-01T16:19:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,15 +21,16 @@
     "base_model:quantized:Auguments/Aureth-4B-Qwen3.5-Heretic",
     "license:apache-2.0",
     "endpoints_compatible",
-    "region:us"
+    "region:us",
+    "imatrix"
   ],
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": 897272,
-  "parameters_human": "897272",
-  "storage_bytes": 3626464,
-  "storage_human": "4 MB",
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 53399773408,
+  "storage_human": "53.4 GB",
   "base_model": "Auguments/Aureth-4B-Qwen3.5-Heretic",
   "formats": [
     "gguf"

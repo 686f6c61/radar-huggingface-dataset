@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "devxMani/long-horizon-agents-RL",
+  "slug": "devxmani-long-horizon-agents-rl",
+  "author": "devxMani",
+  "url": "https://huggingface.co/devxMani/long-horizon-agents-RL",
+  "created_at": "2026-09-01T21:22:59.000Z",
+  "updated_at": "2026-09-01T21:22:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - RUC-NLPIR/Awesome-Long-Horizon-Agents: The roadmap of long ...",
+      "url": "https://github.com/RUC-NLPIR/Awesome-Long-Horizon-Agents",
+      "snippet": "The roadmap of long-horizon agents. Contribute to RUC-NLPIR/Awesome-Long-Horizon-Agents development by creating an account on GitHub."
+    },
+    {
+      "title": "Towards Long-Horizon Agents: A Survey",
+      "url": "https://long-horizon-agents.github.io/",
+      "snippet": "With the rapid advancement of LLM capabilities, expectations for AI agents are shifting from solving simple, single-turn tasks toward carrying out long-horizon tasks in the real world. We refer to such systems as long-horizon agents: agents that plan over extended horizons, interact with real-world environments, recover from their own mistakes, and adapt their strategies during execution ..."
+    },
+    {
+      "title": "long-horizon-agents · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/long-horizon-agents",
+      "snippet": "The long-horizon computer-use harness. Run AI agents across desktop apps and the CLI for extended periods while preserving task state and making reliable progress on complex workflows. Features fresh-context execution, durable verified state, independent auditing, recoverable progress, and native ..."
+    },
+    {
+      "title": "Reinforcement Learning for Long-Horizon Interactive LLM Agents",
+      "url": "https://arxiv.org/pdf/2502.01600",
+      "snippet": "In this paper, we demonstrate that reinforcement learning (RL) is an effective approach for training long-horizon in-teractive LLM agents. Our approach does not require either expensive-to-gather ground-truth action sequences or large datasets of training scenarios."
+    },
+    {
+      "title": "Reinforcement Learning for Long-Horizon Interactive LLM Agents",
+      "url": "https://machinelearning.apple.com/research/reinforcement-learning-long-horizon",
+      "snippet": "A 32-billion-parameter agent trained with LOOP in the AppWorld environment outperforms the much larger OpenAI o1 agent by 9 percentage points (15% relative). To our knowledge, this is the first reported application of RL to IDAs that interact with a stateful, multi-domain, multi-app environment via direct API calls."
+    }
+  ]
+}

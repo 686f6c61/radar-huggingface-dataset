@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Avalon-S/PInVerify-Qwen3VL-4B",
+  "slug": "avalon-s-pinverify-qwen3vl-4b",
+  "author": "Avalon-S",
+  "url": "https://huggingface.co/Avalon-S/PInVerify-Qwen3VL-4B",
+  "created_at": "2026-09-01T20:34:41.000Z",
+  "updated_at": "2026-09-01T20:48:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "active-instance-verification",
+    "embodied-ai",
+    "lora",
+    "sft",
+    "dpo",
+    "grpo",
+    "gspo",
+    "reinforcement-learning",
+    "multi-view",
+    "verification",
+    "vision-language",
+    "qwen3-vl",
+    "visual-question-answering",
+    "en",
+    "dataset:Avalon-S/PInVerify",
+    "arxiv:2605.30639",
+    "arxiv:2507.18071",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1057563584,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Avalon-S/PInVerify: FMEA @ CVPR 2026 paper \"PInVerify: An ...",
+      "url": "https://github.com/Avalon-S/PInVerify",
+      "snippet": "Official repository for the FMEA @ CVPR 2026 paper \"PInVerify: An Offline Embodied Benchmark for Active Instance Verification.\" PInVerify introduces Active Instance Verification (AIV): the agent has already navigated near a candidate object and must now actively select viewpoints around it to decide whether it matches a fine-grained natural-language description. We provide a 3,000-episode ..."
+    },
+    {
+      "title": "PInVerify/docs/TRAINING.md at main · Avalon-S/PInVerify",
+      "url": "https://github.com/Avalon-S/PInVerify/blob/main/docs/TRAINING.md",
+      "snippet": "FMEA @ CVPR 2026 paper \"PInVerify: An Offline Embodied Benchmark for Active Instance Verification.\" - Avalon-S/PInVerify"
+    },
+    {
+      "title": "PInVerify: An Offline Embodied Benchmark for Active Instance Verification",
+      "url": "https://arxiv.org/html/2605.30639v1",
+      "snippet": "We introduce PInVerify, an offline embodied benchmark for AIV: 3,000 evaluation episodes across 18 categories, realized as multi-view captures over a 6-sector navigation graph, with protocol-level annotations (trap views, unreachable sectors, stratified positive / neg_same / neg_diff pairs) absent from upstream navigation datasets (§ 4). 3."
+    },
+    {
+      "title": "[2605.30639] PInVerify: An Offline Embodied Benchmark for Active ...",
+      "url": "https://arxiv.org/abs/2605.30639",
+      "snippet": "We formalize AIV as a finite-horizon decision process and introduce PInVerify, an offline embodied benchmark for AIV: 3,000 evaluation episodes across 18 object categories, delivered as multi-view captures with a 6-sector navigation topology that exposes trap views (navigable but uninformative) and unreachable sectors."
+    },
+    {
+      "title": "PInVerify: An Offline Embodied Benchmark for Active ... - OpenReview",
+      "url": "https://openreview.net/pdf?id=7X1skQwLpm",
+      "snippet": "PInVerify provides 3,000 evaluation episodes for AIV. We describe its data source (§4.1), the multi-view capture pipeline that produces the offline navigation graph (§4.2), the trap-view and unreachable-sector annotations that dis-tinguish PInVerify from a static photo collection (§4.3), the evaluation protocol (§4.5), and a comparison with ..."
+    }
+  ]
+}

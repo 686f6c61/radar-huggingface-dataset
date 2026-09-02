@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Mohamedd123321/Sentiment_Arabizi_splited_large-last",
+  "slug": "mohamedd123321-sentiment_arabizi_splited_large-last",
+  "author": "Mohamedd123321",
+  "url": "https://huggingface.co/Mohamedd123321/Sentiment_Arabizi_splited_large-last",
+  "created_at": "2026-09-01T20:17:39.000Z",
+  "updated_at": "2026-09-02T01:58:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559893507,
+  "parameters_human": "559.9M",
+  "storage_bytes": 2261780215,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sentiment_Arabizi_splited_large-1e-5 - Hugging Face",
+      "url": "https://huggingface.co/Mohamedd123321/Sentiment_Arabizi_splited_large-1e-5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mohamedd123321 (Mohamed Mahmoud) - Hugging Face",
+      "url": "https://huggingface.co/Mohamedd123321",
+      "snippet": "User profile of Mohamed Mahmoud on Hugging Face"
+    },
+    {
+      "title": "Sentiment Analysis of Arabizi Tweets",
+      "url": "https://www.scribd.com/document/983012885/Chapter-2291",
+      "snippet": "This paper presents a deep learning approach for sentiment and emotional analysis of Lebanese Arabizi tweets, focusing on data from the 2019 social unrest and the economic crisis of 2020. The authors created and labeled a dataset of 46,000 Arabizi tweets, achieving high F1 scores of 81% for binary sentiment analysis and 64% for 3-class sentiment classification. The study aims to utilize these ..."
+    },
+    {
+      "title": "A Deep Learning Approach for Sentiment and Emotional ... - Springer",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-28332-1_4",
+      "snippet": "The proposed approaches were attempted on the Arabizi dataset that we extracted and curated from Twitter. We attempted our results with six classical machine learning approaches using separate sentiment and emotion analysis. We achieved the highest result in literature for the binary sentiment analysis with an F1 score of 81%."
+    },
+    {
+      "title": "A Deep Learning Approach for Sentiment and Emotional Analysis of ...",
+      "url": "https://www.researchgate.net/publication/370588720_A_Deep_Learning_Approach_for_Sentiment_and_Emotional_Analysis_of_Lebanese_Arabizi_Twitter_Data",
+      "snippet": "This work addresses the problem of Arabizi text identification and emotional analysis based on Lebanese dialect. The work starts with the extraction and construction of a dataset and uses two ..."
+    }
+  ]
+}

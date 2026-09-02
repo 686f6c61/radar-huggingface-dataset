@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/perplexity-macro-vm",
+  "slug": "snapkitty-perplexity-macro-vm",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/perplexity-macro-vm",
+  "created_at": "2026-09-01T21:07:10.000Z",
+  "updated_at": "2026-09-01T23:33:17.000Z",
+  "license": "sovereign-source-license-v2",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "code",
+    "sovereign-compute",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perplexity Macro VM - GitHub",
+      "url": "https://github.com/SNAPKITTYWEST/perplexity-macro-vm",
+      "snippet": "Deterministic 16-bit research VM that runs Perplexity-style planning → search → evidence → critique → synthesis compiled to ROM. Elixir GenServer OTP + Phoenix LiveView streams every retired instruction. Host does web/model/code work behind typed capability boundaries; VM owns control flow."
+    },
+    {
+      "title": "perplexity-macro-vm/README.md at main · SNAPKITTYWEST ... - GitHub",
+      "url": "https://github.com/SNAPKITTYWEST/perplexity-macro-vm/blob/main/README.md",
+      "snippet": "Deterministic 16-bit research VM that runs Perplexity-style planning → search → evidence → critique → synthesis compiled to ROM. Elixir GenServer OTP + Phoenix LiveView streams every retired instruction. Host does web/model/code work behind typed capability boundaries; VM owns control flow."
+    },
+    {
+      "title": "Perplexity brings hybrid compute to Mac, keeping sensitive AI work on ...",
+      "url": "https://macdailynews.com/2026/09/01/perplexity-brings-hybrid-compute-to-mac-keeping-sensitive-ai-work-on-device/",
+      "snippet": "Perplexity has launched Hybrid Compute for its Computer agent on Apple Silicon Macs, a system that splits a single task between frontier…"
+    },
+    {
+      "title": "How Perplexity Personal Computer Works: Mac Mini as a 24/7 AI Agent",
+      "url": "https://singhajit.com/perplexity-computer-explained/",
+      "snippet": "How Perplexity Personal Computer turns a Mac mini into a 24/7 AI agent. Architecture, multi-model orchestration, security model, and lessons for developers."
+    },
+    {
+      "title": "Perplexity Launches Hybrid Compute on Mac With Local Privacy ...",
+      "url": "https://www.unite.ai/perplexity-launches-hybrid-compute-on-mac-with-local-privacy-gate/",
+      "snippet": "Perplexity on September 1, 2026 introduced hybrid compute for the Perplexity Mac app, a mode that divides each Perplexity Computer task between frontier models in the cloud and a local model running on the Mac itself. Ac..."
+    }
+  ]
+}

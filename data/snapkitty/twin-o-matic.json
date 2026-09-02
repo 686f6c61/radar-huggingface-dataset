@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/twin-o-matic",
+  "slug": "snapkitty-twin-o-matic",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/twin-o-matic",
+  "created_at": "2026-09-01T21:10:09.000Z",
+  "updated_at": "2026-09-01T23:34:38.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "custom",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "custom",
+    "code",
+    "sovereign-compute",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Snapkitty/twin-o-matic · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Snapkitty/twin-o-matic",
+      "snippet": "Twin-O-Matic (TOM) — Recursive Self-Improvement Loop Outer Loop rewrites Inner Loop. Inner Loop executes. WORM chain seals every generation. Built on the SnapKitty sovereign infrastructure. The digital twin \"gates\" concept applied to meta-optimization."
+    },
+    {
+      "title": "GitHub - SNAPKITTYWEST/twin-o-matic: Recursive Self-Improvement Loop ...",
+      "url": "https://github.com/SNAPKITTYWEST/twin-o-matic",
+      "snippet": "Twin-O-Matic (TOM) — Recursive Self-Improvement Loop Outer Loop rewrites Inner Loop. Inner Loop executes. WORM chain seals every generation."
+    },
+    {
+      "title": "Snapkitty/twin-o-matic at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/Snapkitty/twin-o-matic/tree/main",
+      "snippet": "Datasets: Snapkitty / twin-o-matic like 0 Follow Snapkitty Collective 1 Dataset card FilesFiles and versions xet Community main twin-o-matic 1 contributor History:7 commits SNAPKITTYWEST add schemas/outer_output_schema.json 81b1595 verified1 day ago promptsadd prompts/outer_loop.txt1 day ago schemasadd schemas/outer_output_schema.json1 day ago .gitattributes Safe 2.5 kBinitial commit1 day ago ..."
+    },
+    {
+      "title": "twin-o-matic/README.md at master - GitHub",
+      "url": "https://github.com/SNAPKITTYWEST/twin-o-matic/blob/master/README.md",
+      "snippet": "Twin-O-Matic (TOM) — Recursive Self-Improvement Loop Outer Loop rewrites Inner Loop. Inner Loop executes. WORM chain seals every generation."
+    },
+    {
+      "title": "Research — SnapKitty OS",
+      "url": "https://collectivekitty.com/papers",
+      "snippet": "SnapKitty OS original research: Attention Exhaustion Attacks, Sovereign Tick Runtime, ERE Protocol, and the ABZU checkpoint. Independent AI security and architecture research."
+    }
+  ]
+}

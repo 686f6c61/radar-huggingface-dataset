@@ -5,7 +5,7 @@
   "author": "DS4AI-UPB",
   "url": "https://huggingface.co/DS4AI-UPB/qwen25-ro-e2e-lora",
   "created_at": "2026-09-01T18:35:24.000Z",
-  "updated_at": "2026-09-01T18:37:07.000Z",
+  "updated_at": "2026-09-01T18:55:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "itzPotato/transcoder-relu-1layer-seed1-layer0",
+  "slug": "itzpotato-transcoder-relu-1layer-seed1-layer0",
+  "author": "itzPotato",
+  "url": "https://huggingface.co/itzPotato/transcoder-relu-1layer-seed1-layer0",
+  "created_at": "2026-09-02T00:15:15.000Z",
+  "updated_at": "2026-09-02T00:15:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "interpretability",
+    "transcoder",
+    "sparse-autoencoder",
+    "arithmetic",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 266656,
+  "storage_human": "266656 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inference/model.py · deepseek-ai/DeepSeek-V4-Flash-Vision-Exp at main",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/main/inference/model.py",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Layer | The AI Operating System for Creative Teams",
+      "url": "https://www.layer.ai/",
+      "snippet": "Layer is designed for creative teams across studios of different sizes in the entertainment industry, from IP companies producing interactive media to agencies serving top global brands, and for roles like creative producers, artists, art directors, and production teams who need consistent, production-ready outputs."
+    },
+    {
+      "title": "[2406.11944] Transcoders Find Interpretable LLM Feature Circuits",
+      "url": "https://arxiv.org/abs/2406.11944",
+      "snippet": "A key goal in mechanistic interpretability is circuit analysis: finding sparse subgraphs of models corresponding to specific behaviors or capabilities. However, MLP sublayers make fine-grained circuit analysis on transformer-based language models difficult. In particular, interpretable features -- such as those found by sparse autoencoders (SAEs) -- are typically linear combinations of ..."
+    }
+  ]
+}

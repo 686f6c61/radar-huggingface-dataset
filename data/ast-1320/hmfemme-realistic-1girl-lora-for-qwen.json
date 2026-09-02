@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "AST-1320/hmfemme-realistic-1girl-lora-for-qwen",
+  "slug": "ast-1320-hmfemme-realistic-1girl-lora-for-qwen",
+  "author": "AST-1320",
+  "url": "https://huggingface.co/AST-1320/hmfemme-realistic-1girl-lora-for-qwen",
+  "created_at": "2026-09-02T01:32:18.000Z",
+  "updated_at": "2026-09-02T01:32:18.000Z",
+  "license": "bespoke-lora-trained-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "migrated",
+    "qwen",
+    "realistic",
+    "stable-diffusion",
+    "style",
+    "template:sd-lora",
+    "text-to-image",
+    "woman",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 662044337,
+  "storage_human": "662 MB",
+  "base_model": "Qwen",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HMFemme - Realistic 1girl LoRA for Qwen - v1.0 | Qwen LoRA | Civitai",
+      "url": "https://civitai.red/models/2126422/hmfemme-realistic-1girl-lora-for-qwen",
+      "snippet": "I am happy to present the 1st iteration of my HMFemme LoRA! A LoRA aimed at achieving realistic looking female in candid every day poses with realistic lighting and shadows. This LoRA was trained on a large dataset using my Diffusion Pipe RunPod template using an H200. Best practices for HMFemme: - Performs the best with character LoRAs. - Use descriptive and elaborate prompting to achieve the ..."
+    },
+    {
+      "title": "Upload LoRA: HMFemme - Realistic 1girl LoRA for Qwen from Civitai model ...",
+      "url": "https://huggingface.co/burnerbaby/hmfemme-realistic-1girl-lora-for-qwen/commit/c3d0c7a5df7d3185868fb2d2b9b3f548a949d1d9",
+      "snippet": "Model card FilesFiles and versions xet Community 1 Use this model burnerbaby commited on Nov 18, 2025 Commit c3d0c7a · verified· 1 Parent (s): 6d8c351 Upload LoRA: HMFemme - Realistic 1girl LoRA for Qwen from Civitai model ID 2126422 Browse files Files changed (23) hide show .gitattributes +20-0 110159912.jpeg +3-0 110160032.jpeg +3-0 ..."
+    },
+    {
+      "title": "HMFemme_Realistic_1girl_LoRA_for_Qwen - Hugging Face",
+      "url": "https://huggingface.co/ssfsfdsf/HMFemme_Realistic_1girl_LoRA_for_Qwen",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HMFemme - Realistic 1girl LoRA for Qwen - runninghub.ai",
+      "url": "https://www.runninghub.ai/model/public/1989992577439027202",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "HMFemme - Realistic 1girl LoRA for Qwen - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d4c1l9te878c73805l3g",
+      "snippet": "Explore HMFemme - Realistic 1girl LoRA for Qwen model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/lean-llm-starter",
+  "slug": "snapkitty-lean-llm-starter",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/lean-llm-starter",
+  "created_at": "2026-09-01T21:10:07.000Z",
+  "updated_at": "2026-09-01T23:34:37.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "custom",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "custom",
+    "code",
+    "sovereign-compute",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Snapkitty/lean-llm-starter · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Snapkitty/lean-llm-starter",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SNAPKITTYWEST/lean-llm-starter: Sovereign Lean 4 - GitHub",
+      "url": "https://github.com/SNAPKITTYWEST/lean-llm-starter",
+      "snippet": "lean-llm-starter A deterministic Lean 4 verification harness that treats the LLM as an untrusted proposal engine and Lean 4 as the trusted kernel."
+    },
+    {
+      "title": "lean-llm-starter/README.md at main - GitHub",
+      "url": "https://github.com/SNAPKITTYWEST/lean-llm-starter/blob/main/README.md",
+      "snippet": "lean-llm-starter A deterministic Lean 4 verification harness that treats the LLM as an untrusted proposal engine and Lean 4 as the trusted kernel."
+    },
+    {
+      "title": "Snapkitty (Snapkitty Collective) - Hugging Face",
+      "url": "https://huggingface.co/Snapkitty",
+      "snippet": "Sovereign AI infrastructure — quantum-seeded agents, WORM-sealed reasoning, NAND-decomposed LLMs. Bel Esprit D&#x27;Accord Irrevocable Trust · EIN 42-697643"
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

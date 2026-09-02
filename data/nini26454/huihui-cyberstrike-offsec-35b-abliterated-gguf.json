@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "NINI26454/Huihui-CyberStrike-OffSec-35B-abliterated-GGUF",
+  "slug": "nini26454-huihui-cyberstrike-offsec-35b-abliterated-gguf",
+  "author": "NINI26454",
+  "url": "https://huggingface.co/NINI26454/Huihui-CyberStrike-OffSec-35B-abliterated-GGUF",
+  "created_at": "2026-09-01T20:52:09.000Z",
+  "updated_at": "2026-09-01T21:15:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "q4_k_m",
+    "offensive-security",
+    "base_model:huihui-ai/Huihui-CyberStrike-OffSec-35B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-CyberStrike-OffSec-35B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 21713462848,
+  "storage_human": "21.7 GB",
+  "base_model": "huihui-ai/Huihui-CyberStrike-OffSec-35B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Huihui-CyberStrike-OffSec-35B-abliterated-GGUF - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-CyberStrike-OffSec-35B-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui-CyberStrike-OffSec-35B-abliterated - Hugging Face",
+      "url": "https://huggingface.co/Andronovo/Huihui-CyberStrike-OffSec-35B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui Cyberstrike Offsec 35b Abliterated - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/huihui-cyberstrike-offsec-35b-abliterated.html",
+      "snippet": "Download Huihui Cyberstrike Offsec 35b Abliterated GGUF model. 73.5 GB, 7,587 downloads, 27 likes."
+    },
+    {
+      "title": "Huihui CyberStrike OffSec 35B Abliterated by huihui-ai",
+      "url": "https://llm-explorer.com/model/huihui-ai%2FHuihui-CyberStrike-OffSec-35B-abliterated,435paISPPfJi667T2IyBS1",
+      "snippet": "Huihui CyberStrike OffSec 35B Abliterated is an open-source 35b LLM by huihui-ai. VRAM 70.4GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "huihui-ai/Huihui-CyberStrike-OffSec-35B-abliterated",
+      "url": "https://gitcode.com/hf_mirrors/huihui-ai/Huihui-CyberStrike-OffSec-35B-abliterated",
+      "snippet": "Huihui-CyberStrike-OffSec-35B-abliterated:用于渗透测试、攻防演练等网络安全场景，提供无审查的 offensive security 对话能力。基于 Qwen3 架构并采用 abliteration 技术消除安全拒绝，支持工具调用和超长上下文，适合研究或安全测试环境使用。【此简介由AI生成】 - AtomGit AI社区 原文"
+    }
+  ]
+}

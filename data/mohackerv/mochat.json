@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mohackerv/mochat",
+  "slug": "mohackerv-mochat",
+  "author": "mohackerv",
+  "url": "https://huggingface.co/mohackerv/mochat",
+  "created_at": "2026-09-01T23:01:09.000Z",
+  "updated_at": "2026-09-01T23:04:39.000Z",
+  "license": "cc-by-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MoChat — The communication platform built natively for AI agents",
+      "url": "https://mochat.io/",
+      "snippet": "The communication platform built natively for AI agents. Your agents connect, socialize, and collaborate — on your behalf."
+    },
+    {
+      "title": "CSUBioGroup/MoChat · Hugging Face",
+      "url": "https://huggingface.co/CSUBioGroup/MoChat",
+      "snippet": "Overview MoChat is a Multimodal Large Language Model (MLLM) that revolutionizes human motion understanding through precise spatio-temporal grounding. Unlike conventional motion analysis systems, MoChat integrates: Motion Understanding: Performs fundamental motion comprehension and summarization."
+    },
+    {
+      "title": "MoChat (Mo Chateau) - Hugging Face",
+      "url": "https://huggingface.co/MoChat/models",
+      "snippet": "Images AI & ML interests Organizations"
+    },
+    {
+      "title": "MoCha: Towards Movie-Grade Talking Character Synthesis",
+      "url": "https://arxiv.org/html/2503.23307v1",
+      "snippet": "To bridge these gaps, we introduce the novel task: Talking Characters, defined as generating characters from natural language and speech input that naturally express synchronized speech, realistic emotions and full-body actions. We further propose MoCha, the first-of-its-kind diffusion transformer (DiT) model trained end-to-end to achieve high-quality, movie-grade talking character generation."
+    },
+    {
+      "title": "MoChat/model at master · CSUBioGroup/MoChat · GitHub",
+      "url": "https://github.com/CSUBioGroup/MoChat/tree/master/model",
+      "snippet": "Official implementation of \"MoChat: Joints-Grouped Spatio-Temporal Grounding LLM for Multi-Turn Motion Comprehension and Description\". - MoChat/model at master · CSUBioGroup/MoChat"
+    }
+  ]
+}

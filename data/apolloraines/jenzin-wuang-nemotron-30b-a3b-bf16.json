@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ApolloRaines/Jenzin-Wuang-Nemotron-30B-A3B-BF16",
+  "slug": "apolloraines-jenzin-wuang-nemotron-30b-a3b-bf16",
+  "author": "ApolloRaines",
+  "url": "https://huggingface.co/ApolloRaines/Jenzin-Wuang-Nemotron-30B-A3B-BF16",
+  "created_at": "2026-09-02T01:06:43.000Z",
+  "updated_at": "2026-09-02T01:12:45.000Z",
+  "license": "same-as-base",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nemotron_h",
+    "jblaze",
+    "weight-surgery",
+    "identity-transplant",
+    "nemotron",
+    "demo",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577937344,
+  "parameters_human": "31.58B",
+  "storage_bytes": 63173777638,
+  "storage_human": "63.2 GB",
+  "base_model": "nvidia/Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-02T02:23:18.862Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ApolloRaines (Apollo Raines) - Hugging Face",
+      "url": "https://huggingface.co/ApolloRaines/models",
+      "snippet": "User profile of Apollo Raines on Hugging Face"
+    },
+    {
+      "title": "NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard",
+      "snippet": "The post-training data has a cutoff date of May 2026. What is Nemotron? NVIDIA Nemotron™ is a family of open models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents. Description NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 is a large language model (LLM) trained by NVIDIA."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "nemotron-3-nano-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-nano-30b-a3b/modelcard",
+      "snippet": "NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16 model was pre-trained using crawled and synthetic code, math, science, and general knowledge data. All datasets are disclosed in the Training, Testing, and Evaluation Datasets section of this document."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "etiennebamas/qwen3-sft-classic-small-data",
+  "slug": "etiennebamas-qwen3-sft-classic-small-data",
+  "author": "etiennebamas",
+  "url": "https://huggingface.co/etiennebamas/qwen3-sft-classic-small-data",
+  "created_at": "2026-09-01T21:20:38.000Z",
+  "updated_at": "2026-09-01T21:22:23.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:formalmathatepfl/qwen3-cpt",
+    "base_model:finetune:formalmathatepfl/qwen3-cpt",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308224,
+  "parameters_human": "308224",
+  "storage_bytes": 16392947623,
+  "storage_human": "16.4 GB",
+  "base_model": "formalmathatepfl/qwen3-cpt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "etiennebamas/qwen3-sft-classic-small-data-equal-compute · Hugging Face",
+      "url": "https://huggingface.co/etiennebamas/qwen3-sft-classic-small-data-equal-compute",
+      "snippet": "Instructions to use etiennebamas/qwen3-sft-classic-small-data-equal-compute with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "etiennebamas/qwen3-step32k-1e5 · Hugging Face",
+      "url": "https://huggingface.co/etiennebamas/qwen3-step32k-1e5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "We are excited to announce the release of Qwen3, the latest addition to the Qwen family of large language models. These models represent our most advanced and intelligent systems to date, improving from our experience in building QwQ and Qwen2.5. We are making the weights of Qwen3 available to the public, including both dense and Mixture-of-Expert (MoE) models. The highlights from Qwen3 ..."
+    },
+    {
+      "title": "Qwen · GitHub",
+      "url": "https://github.com/QwenLM",
+      "snippet": "Qwen3-omni is a natively end-to-end, omni-modal LLM developed by the Qwen team at Alibaba Cloud, capable of understanding text, audio, images, and video, as well as generating speech in real time."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.09388",
+      "snippet": "Compared with our previous MoE Qwen2.5-Plus of similar size, Qwen3-235B-A22B-Base sig-nificantly outperforms it with fewer parameters and activated parameters, which shows the remarkable advantages of Qwen3 in pre-training data, training strategy, and model architecture."
+    }
+  ]
+}

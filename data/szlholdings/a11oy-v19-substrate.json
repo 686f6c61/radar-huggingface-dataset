@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/a11oy-v19-substrate",
+  "slug": "szlholdings-a11oy-v19-substrate",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/a11oy-v19-substrate",
+  "created_at": "2026-05-29T02:30:41.000Z",
+  "updated_at": "2026-09-02T00:10:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "governance",
+    "agentic-ai",
+    "policy",
+    "provenance",
+    "zarf",
+    "uds",
+    "series-a",
+    "operational-payload",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16959840,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SZLHOLDINGS / a11oy-v19-substrate - insights-db.paloaltonetworks.com",
+      "url": "https://insights-db.paloaltonetworks.com/models/SZLHOLDINGS/a11oy-v19-substrate/9f03f6ed3896cf92f617a656e32c7fa5303d058b/overview",
+      "snippet": "Discover potential threats in the SZLHOLDINGS / a11oy-v19-substrate model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "szl-holdings/szl-substrate: szl-substrate - GitHub",
+      "url": "https://github.com/szl-holdings/szl-substrate",
+      "snippet": "szl-substrate — installable shared substrate package for a11oy + killinchu. Eliminates 69-file source duplication. Pure-stdlib where possible; DSSE-signed receipts; Λ = Conjecture 1 (advisory). SLS..."
+    },
+    {
+      "title": "GitHub - szl-holdings/a11oy: a11oy — full orchestrator application ...",
+      "url": "https://github.com/szl-holdings/a11oy",
+      "snippet": "What a11oy is a11oy is a governed-AI Command Center: one interface for ask-and-act with deny-by-default safety gates, trust scoring, a live decision feed, and a signed receipt for every action."
+    },
+    {
+      "title": "SZLHOLDINGS/a11oy-v19-substrate · Mirror with github.com/szl-holdings ...",
+      "url": "https://huggingface.co/SZLHOLDINGS/a11oy-v19-substrate/discussions/1",
+      "snippet": "This model now has live GitHub integration with szl-holdings/a11oy ."
+    },
+    {
+      "title": "a11oy Proof Registry | SZL Holdings",
+      "url": "https://a11oy.net/",
+      "snippet": "license apache-2.0 · 6 files · sha b122bb9 · updated 2026-08-29 TRAINED_WEIGHTS Open Hub card ↗ MODEL · CODE_OR_SCRIPTS a11oy-v19-substrate scripts, substrate, or org profile; not a served model"
+    }
+  ]
+}

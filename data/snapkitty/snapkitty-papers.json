@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/snapkitty-papers",
+  "slug": "snapkitty-snapkitty-papers",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/snapkitty-papers",
+  "created_at": "2026-09-01T21:50:44.000Z",
+  "updated_at": "2026-09-01T21:50:47.000Z",
+  "license": "sovereign-source-license-v2",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "formal-mathematics",
+    "theorem-proving",
+    "lean4",
+    "attention-mechanism",
+    "nand-decomposition",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11052805,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Snapkitty (Snapkitty Collective) - Hugging Face",
+      "url": "https://huggingface.co/Snapkitty",
+      "snippet": "Sovereign AI infrastructure — quantum-seeded agents, WORM-sealed reasoning, NAND-decomposed LLMs. Bel Esprit D&#x27;Accord Irrevocable Trust · EIN 42-697643"
+    },
+    {
+      "title": "Research — SnapKitty OS",
+      "url": "https://collectivekitty.com/papers",
+      "snippet": "SnapKitty OS original research: Attention Exhaustion Attacks, Sovereign Tick Runtime, ERE Protocol, and the ABZU checkpoint. Independent AI security and architecture research."
+    },
+    {
+      "title": "Snapkitty/papers · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Snapkitty/papers",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - SNAPKITTYWEST/SNAPKITTYWEST: Most AI tools keep the machine in ...",
+      "url": "https://github.com/SNAPKITTYWEST/SNAPKITTYWEST",
+      "snippet": "Most AI tools keep the machine in the background. You talk, it responds, you paste the output. I built something different. SnapKitty is a financial operating system where the agents are visible, ..."
+    },
+    {
+      "title": "SNAPKITTYWEST (SNAPKITTY COLLECTIVE) · GitHub",
+      "url": "https://github.com/SNAPKITTYWEST",
+      "snippet": "Specializing in: Agentic orchestration systems Recursive AI architectures Deterministic runtime design Embedded governance and observability Cryptography - SNAPKITTYWEST"
+    }
+  ]
+}

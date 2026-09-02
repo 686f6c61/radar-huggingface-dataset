@@ -5,7 +5,7 @@
   "author": "blaze-voice-ai",
   "url": "https://huggingface.co/blaze-voice-ai/dubbing-omnivoice-khmer",
   "created_at": "2026-09-01T13:25:40.000Z",
-  "updated_at": "2026-09-01T13:26:07.000Z",
+  "updated_at": "2026-09-01T14:05:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",

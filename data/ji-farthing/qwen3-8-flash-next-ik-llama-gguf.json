@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ji-farthing/Qwen3.8-Flash-Next-ik-llama-GGUF",
+  "slug": "ji-farthing-qwen3-8-flash-next-ik-llama-gguf",
+  "author": "ji-farthing",
+  "url": "https://huggingface.co/ji-farthing/Qwen3.8-Flash-Next-ik-llama-GGUF",
+  "created_at": "2026-09-01T23:34:53.000Z",
+  "updated_at": "2026-09-01T23:56:45.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ik_llama",
+    "qwen4exp",
+    "imatrix",
+    "mtp",
+    "speculative-decoding",
+    "text-only",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 183779599800,
+  "storage_human": "183.8 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next-ROCmFP4-FAST-imatrix-GGUF - Hugging Face",
+      "url": "https://huggingface.co/agentionai/Qwen3.8-Flash-Next-ROCmFP4-FAST-imatrix-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - blazux/qwen3.8-Flash-DGX: recipe for running Qwen3.8-Flash ...",
+      "url": "https://github.com/blazux/qwen3.8-Flash-DGX",
+      "snippet": "Run Qwen3.8-Flash-Next — a ~176B-parameter model (125B main + 51B n-gram, 6B active) — on one NVIDIA DGX Spark / ASUS GX10 with vLLM, at full prefill speed, with MTP speculative decoding, working prefix caching, deterministic greedy decoding, and up to 500k tokens of context."
+    },
+    {
+      "title": "qwen3.8-flash-next - ollama.com",
+      "url": "https://ollama.com/library/qwen3.8-flash-next",
+      "snippet": "Qwen3.8-Flash-Next is the first open-weight model built on the architecture that will underpin Qwen4. It is a multimodal mixture-of-experts model with 125B total parameters and only 6B active per token, designed for cost-efficient inference across agentic coding, tool use, and vision tasks, with a native 256K context window."
+    }
+  ]
+}

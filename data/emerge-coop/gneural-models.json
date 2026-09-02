@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "emerge-coop/gneural-models",
+  "slug": "emerge-coop-gneural-models",
+  "author": "emerge-coop",
+  "url": "https://huggingface.co/emerge-coop/gneural-models",
+  "created_at": "2026-09-01T05:46:03.000Z",
+  "updated_at": "2026-09-01T20:34:43.000Z",
+  "license": "agplv3",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "emerge-coop (Emerge Cooperative) - Hugging Face",
+      "url": "https://huggingface.co/emerge-coop/models",
+      "snippet": "Org profile for Emerge Cooperative on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Overview of Model Garden | Gemini Enterprise Agent Platform | Google ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-garden/explore-models",
+      "snippet": "Jumpstart your ML project with a single place to discover, customize, and deploy a wide variety of models from Google and Google partners. Model Garden provides a collection of pre-trained models and assets that you can use to build and deploy your own AI applications."
+    },
+    {
+      "title": "Overview of models on Agent Platform | Gemini Enterprise Agent Platform ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models",
+      "snippet": "The Agent Platform provides access to broad classes of large language models (LLMs) and generative AI models, including Google first-party models, partner models, and open-weights models. This page provides an index of documentation for these models, organized by model types, access options, capabilities, customization, evaluation, and safety."
+    },
+    {
+      "title": "Model Garden on Gemini Enterprise Agent Platform",
+      "url": "https://cloud.google.com/model-garden",
+      "snippet": "A bigger model isn&#x27;t always better. With a wide variety of model types and sizes, Model Garden provides the flexibility to use the best resource for your business needs. Easily customize these models with your own data, deploy to applications with just one-click, and scale with end-to-end ML Ops built-in."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

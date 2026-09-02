@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "DavidAU/Qwen3.8-27B-stage2b-rplus2",
+  "slug": "davidau-qwen3-8-27b-stage2b-rplus2",
+  "author": "DavidAU",
+  "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-stage2b-rplus2",
+  "created_at": "2026-08-31T03:48:46.000Z",
+  "updated_at": "2026-09-02T01:46:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "heretic",
+    "qwen3_8",
+    "qwen3_6",
+    "uncensored",
+    "finetune",
+    "Cold Fusion",
+    "GAIN Training",
+    "Multi-stage tuning",
+    "all use cases",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:finetune:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582996551,
+  "storage_human": "55.6 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DavidAU/Qwen3.8-27B-stage2b-rplus2 · Hugging Face",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-stage2b-rplus2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DavidAU (David Belton) - Hugging Face",
+      "url": "https://huggingface.co/DavidAU",
+      "snippet": "Application(s) of single/multiple LLMs in specialized use cases & automation tasks. LLM, Prompt , System Role and Parameter engineering VIA chat / API. 2700+ merge models, over 600 fine tunes, over..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "The official Qwen/Qwen3.8-27B-FP8 checkpoint serves directly on a 950PR — no offline re-quantization and no --quantization ascend. vLLM Ascend reads quant_method: fp8 and weight_block_size straight from the checkpoint, expands the weight_scale_inv tiles at load time and re-quantizes to MXFP8 on 950."
+    },
+    {
+      "title": "Qwen3.8-27B · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3.8-27B/summary",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 Highlights Qwen3.8-27B features the following enhancements:"
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    }
+  ]
+}

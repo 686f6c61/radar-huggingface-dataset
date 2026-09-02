@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Viggle/Viggle-Animate",
+  "slug": "viggle-viggle-animate",
+  "author": "Viggle",
+  "url": "https://huggingface.co/Viggle/Viggle-Animate",
+  "created_at": "2026-08-31T20:14:28.000Z",
+  "updated_at": "2026-09-01T22:56:18.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "video-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "video-editing",
+    "character-replacement",
+    "video-to-video",
+    "distillation",
+    "dmd",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33122992896,
+  "parameters_human": "33.12B",
+  "storage_bytes": 68963921920,
+  "storage_human": "69.0 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Viggle | Turn your imagination into 3D motion",
+      "url": "https://viggle.ai/",
+      "snippet": "Powered by our proprietary Joint Space-Time (JST) model, Viggle generates characters, motion, and scenes together in a shared 4D space. Today, creators turn ideas into content faster with Viggle, while professional teams and studios bring greater control and flexibility to production workflow on the platform. As JST model advances, it is becoming an experience engine for training physical AI ..."
+    },
+    {
+      "title": "Free AI Animation Generator — Image to Video | Viggle AI",
+      "url": "https://viggle.ai/tools/ai-animation-generator",
+      "snippet": "An AI animation generator takes a still image or text prompt and produces an animated video of it — making the character move, dance, or perform. On Viggle, this means full-body motion animation driven by your choice of motion template or reference video, powered by Viggle&#x27;s self-developed JST-1 video-3D foundation model."
+    },
+    {
+      "title": "Viggle-Animate - Hugging Face",
+      "url": "https://huggingface.co/Viggle/Viggle-Animate",
+      "snippet": "Viggle / Viggle-Animate like 1 Follow Viggle AI 1 Video-to-Video Diffusers Safetensors video-editing character-replacement distillation dmd License:minimax-h3-community-license Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Viggle: AI-Powered Character Animation & Motion Capture Tool - ToolMage",
+      "url": "https://www.toolmage.com/en/tool/viggle/",
+      "snippet": "Viggle is a revolutionary AI video generation tool that animates static character images with realistic, controllable motion from source videos. Powered by the JST-1 video-3D foundation model, it offers precise control over character movements, making it ideal for filmmakers, content creators, and meme enthusiasts. Create high-quality animations, viral memes, and immersive visual effects with ..."
+    },
+    {
+      "title": "Viggle AI - AI Character Animation and Video Motion Creator",
+      "url": "https://github.com/Viggle-AI",
+      "snippet": "Viggle AI at a Glance Download Viggle AI to turn photos and prompts into expressive animated clips with simple controls, fast previews, and share-ready exports. Create viral motion, character swaps, memes, and social content in minutes with viggle ai video tools built for creators."
+    }
+  ]
+}

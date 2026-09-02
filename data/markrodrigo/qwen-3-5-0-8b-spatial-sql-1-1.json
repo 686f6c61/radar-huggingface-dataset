@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "markrodrigo/Qwen-3.5-0.8B-Spatial-SQL-1.1",
+  "slug": "markrodrigo-qwen-3-5-0-8b-spatial-sql-1-1",
+  "author": "markrodrigo",
+  "url": "https://huggingface.co/markrodrigo/Qwen-3.5-0.8B-Spatial-SQL-1.1",
+  "created_at": "2026-08-07T16:32:23.000Z",
+  "updated_at": "2026-09-01T22:41:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "code",
+    "spatial",
+    "SQL",
+    "GIS",
+    "PostGIS",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 361,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1524816933,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "markrodrigo/Qwen-3.5-0.8B-Spatial-SQL-1.1 · Hugging Face",
+      "url": "https://huggingface.co/markrodrigo/Qwen-3.5-0.8B-Spatial-SQL-1.1",
+      "snippet": "This model, Qwen-3.5-.8B-Spatial-SQL-1.1, is a 0.8B, narrow use case, text to spatial SQL, lightly fine-tuned model. In general, its primary use case is the Natural Language command adaptation of particular geographic spatial functions as normally defined in pure SQL."
+    },
+    {
+      "title": "mradermacher/Qwen-3.5-0.8B-Spatial-SQL-1.1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen-3.5-0.8B-Spatial-SQL-1.1-GGUF",
+      "snippet": "mradermacher / Qwen-3.5-.8B-Spatial-SQL-1.1-GGUF like 0 Transformers GGUF English Chinese code spatial SQL GIS PostGIS conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "qwen3.5:0.8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:0.8b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Model Releases in August 2026: Confirmed Updates | BenchLM",
+      "url": "https://benchlm.ai/model-updates/releases/august-2026",
+      "snippet": "25 confirmed AI model releases from 19 providers in August 2026, with primary evidence sources and BenchLM model links."
+    }
+  ]
+}

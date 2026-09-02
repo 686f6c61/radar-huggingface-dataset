@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "id": "j0no12/Nero-XS-1.1",
+  "slug": "j0no12-nero-xs-1-1",
+  "author": "j0no12",
+  "url": "https://huggingface.co/j0no12/Nero-XS-1.1",
+  "created_at": "2026-09-01T23:28:21.000Z",
+  "updated_at": "2026-09-02T02:07:43.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "nero_xsa",
+    "text-generation",
+    "causal-lm",
+    "recurrent-transformer",
+    "xsa",
+    "grouped-query-attention",
+    "small-language-models",
+    "from-scratch",
+    "en",
+    "dataset:HuggingFaceFW/finephrase",
+    "dataset:HuggingFaceTB/finemath",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2993152,
+  "parameters_human": "3.0M",
+  "storage_bytes": 11982984,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Zero-shot multiple-choice language modeling",
+      "dataset": "HellaSwag",
+      "metric": null,
+      "value": 0.2817167894841665
+    },
+    {
+      "task": "Zero-shot multiple-choice language modeling",
+      "dataset": "ARC-Easy",
+      "metric": null,
+      "value": 0.3063973063973064
+    },
+    {
+      "task": "ARC-Challenge",
+      "dataset": "ARC-Challenge",
+      "metric": null,
+      "value": 0.22098976109215018
+    },
+    {
+      "task": "PIQA",
+      "dataset": "PIQA",
+      "metric": null,
+      "value": 0.529923830250272
+    },
+    {
+      "task": "ArithMark-3",
+      "dataset": "ArithMark-3",
+      "metric": null,
+      "value": 0.324
+    }
+  ],
+  "sources": [
+    {
+      "title": "j0no12/Nero-XS · Hugging Face",
+      "url": "https://huggingface.co/j0no12/Nero-XS",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "j0no12 (j0nooo) - Hugging Face",
+      "url": "https://huggingface.co/j0no12",
+      "snippet": "Sort: Recently updated. Sleeping . Nero1 0.5B. 💬. Test Nero1-0.5B. j0no12 11 days ago. Sleeping . NanoGPT 1m. 💬"
+    },
+    {
+      "title": "GitHub - samssouza/uncensored-ai-list",
+      "url": "https://github.com/samssouza/uncensored-ai-list",
+      "snippet": "A curated list of free, open-source AI models across categories — with no built-in content filtering or alignment restrictions. Everyone is welcome to add models via PR."
+    },
+    {
+      "title": "Free AI 3D Model Generator | Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Free AI 3D Model Generator: create 3D models from text or images for games, AR/VR, and 3D printing at zero cost."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    }
+  ]
+}

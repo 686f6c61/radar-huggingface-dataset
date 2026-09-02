@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "FLs-AI/FL-9B-0.2",
+  "slug": "fls-ai-fl-9b-0-2",
+  "author": "FLs-AI",
+  "url": "https://huggingface.co/FLs-AI/FL-9B-0.2",
+  "created_at": "2026-09-01T22:35:05.000Z",
+  "updated_at": "2026-09-01T22:54:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "cobol",
+    "mainframe",
+    "code",
+    "jcl",
+    "db2",
+    "qwen3_5",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 52089884352,
+  "storage_human": "52.1 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FLs-AI/FL-1-9B · Hugging Face",
+      "url": "https://huggingface.co/FLs-AI/FL-1-9B",
+      "snippet": "FLs-AI / FL-1-9B like 0 GGUF English qwen3_5 code assembly cobol c low-level continued-pretraining qlora conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "FLs-AI/FL-9B-4 · Hugging Face",
+      "url": "https://huggingface.co/FLs-AI/FL-9B-4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Run FLUX.2 Klein on 6GB VRAM: Workflow Fix",
+      "url": "https://aistudynow.com/flux-2-klein-fix-crashes-run-9b-on-6gb-vram-workflow-download/",
+      "snippet": "Load qwen_2.5_vl_7b strictly for the 9B model. Do not mix them. 2. The \"Oversaturated / Deep Fried\" Edit Problem: When using the \"Image Edit\" feature, colors look burned. My Finding: The 9B model has a bias in its latent space for high saturation. The Fix: For photo restoration or subtle edits, switch to the 4B Base Model."
+    },
+    {
+      "title": "Flux 2 Klein Model Comparison: 4B, 4B Distilled & 9B - ImageGPT Learn",
+      "url": "https://imagegpt.cloud/learn/compare/flux-2-klein-model-comparison",
+      "snippet": "Compare Flux 2 Klein 4B, 4B Distilled, and 9B AI image models. Detailed analysis of quality, speed, cost, and parameter count differences to help you choose the right model."
+    }
+  ]
+}

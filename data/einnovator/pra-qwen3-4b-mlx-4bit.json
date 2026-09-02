@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "EInnovator/pra-qwen3-4b-mlx-4bit",
+  "slug": "einnovator-pra-qwen3-4b-mlx-4bit",
+  "author": "EInnovator",
+  "url": "https://huggingface.co/EInnovator/pra-qwen3-4b-mlx-4bit",
+  "created_at": "2026-09-01T20:05:11.000Z",
+  "updated_at": "2026-09-01T20:14:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pra",
+  "languages": [],
+  "tags": [
+    "pra",
+    "progressive-retrieval-attention",
+    "adapter",
+    "long-context",
+    "dataset:combined",
+    "dataset:hotpotqa",
+    "dataset:qasper",
+    "base_model:mlx-community/Qwen3-4B-4bit",
+    "base_model:finetune:mlx-community/Qwen3-4B-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2623509,
+  "storage_human": "3 MB",
+  "base_model": "mlx-community/Qwen3-4B-4bit",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-4B-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-MLX-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-4B-MLX-4bit: Quantized LLM for Apple Silicon & Reasoning-Aware ...",
+      "url": "https://dev.co/ai/llms/qwen3-4b-mlx-4bit",
+      "snippet": "Qwen3-4B-MLX-4bit is a compact 4B-parameter language model from Alibaba&#x27;s Qwen team, optimized for Apple Silicon via MLX and quantized to 4-bit precision."
+    },
+    {
+      "title": "Qwen3-4B: Private, Self-Hosted LLM for Enterprise Ops Automation",
+      "url": "https://llm.co/llms/qwen3-4b-mlx-4bit",
+      "snippet": "Qwen3-4B-MLX-4bit A 4B parameter reasoning model designed for self-hosted operational AI: instruction-following, tool calling, and multi-language workflows that run entirely on customer infrastructure."
+    },
+    {
+      "title": "Qwen/Qwen3-4B-MLX-4bit — AICHINA.news | AI China News",
+      "url": "https://aichina.news/models/Qwen/Qwen3-4B-MLX-4bit/",
+      "snippet": "Qwen3-4B-MLX-4bit is a compact large language model from Alibaba&#x27;s latest Qwen3 series, specifically optimised for Apple Silicon using the MLX framework. It features a unique architecture that allows developers to toggle between a &#x27;thinking mode&#x27; for complex logical reasoning and a &#x27;non-thinking mode&#x27; for fast, general-purpose dialogue within a single 4-billion parameter model. View on ..."
+    },
+    {
+      "title": "mlx-community/Qwen3-4B-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen3-4B-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

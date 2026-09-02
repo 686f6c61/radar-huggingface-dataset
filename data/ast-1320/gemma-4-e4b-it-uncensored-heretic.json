@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "AST-1320/gemma-4-E4B-it-uncensored-heretic",
+  "slug": "ast-1320-gemma-4-e4b-it-uncensored-heretic",
+  "author": "AST-1320",
+  "url": "https://huggingface.co/AST-1320/gemma-4-E4B-it-uncensored-heretic",
+  "created_at": "2026-09-01T19:51:10.000Z",
+  "updated_at": "2026-09-01T19:51:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "any-to-any",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:finetune:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 16024765664,
+  "storage_human": "16.0 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gemma-4-E4B-it-ultra-uncensored-heretic-GGUF - Hugging Face",
+      "url": "https://huggingface.co/llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic-GGUF",
+      "snippet": "Benefits At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    },
+    {
+      "title": "gemma-4-E4B-it-The-DECKARD-Expresso-Universe-HERETIC-UNCENSORED ...",
+      "url": "https://huggingface.co/DavidAU/gemma-4-E4B-it-The-DECKARD-Expresso-Universe-HERETIC-UNCENSORED-Thinking-GGUF",
+      "snippet": "EXTREME POWER: This model exceeds Gemma 4 26-A4B in critical benchmarks, at only 4.5B activated parameters."
+    },
+    {
+      "title": "Run Gemma 4 Locally: From 4 GB VRAM (E4B) to 31B, Free",
+      "url": "https://locallyuncensored.com/blog/gemma-4-local-guide.html",
+      "snippet": "Run Google&#x27;s Gemma 4 on your own PC — E4B fits 4 GB VRAM, up to 31B dense. Vision, tool calling, 256K context, plus uncensored Heretic GGUF links."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "Quick Answer: Standard models refuse the violent scene, lecture you on chemistry, or break character mid-roleplay. The uncensored landscape has moved hard since this guide first shipped: Qwen 3.6 abliterated and Gemma 4 Heretic are the new center of gravity, and most of the early-2026 Llama 3.1 / Qwen 2.5 picks are now superseded. Below is the current curated lineup by VRAM tier with the ..."
+    },
+    {
+      "title": "New Uncensored AI Model Released Without Restrictions",
+      "url": "https://vitalii.no/news/new-uncensored-ai-model-released-without-restrictions-3c2a4c8d",
+      "snippet": "The tech community is abuzz with the release of Gemma-4-E4B-it-heretic-GGUF, an uncensored version of Google&#x27;s Gemma AI model. Hosted on Hugging Face, this GGUF format variant removes standard content filters, potentially exposing users to harmful or unregulated outputs."
+    }
+  ]
+}

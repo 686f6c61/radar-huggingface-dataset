@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "DifeiT/nl2bltl",
+  "slug": "difeit-nl2bltl",
+  "author": "DifeiT",
+  "url": "https://huggingface.co/DifeiT/nl2bltl",
+  "created_at": "2026-09-01T20:20:00.000Z",
+  "updated_at": "2026-09-01T20:26:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693424,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "GitHub - NVlabs/DiffiT: [ECCV 2024] Official Repository for DiffiT ...",
+      "url": "https://github.com/NVlabs/DiffiT",
+      "snippet": "Official PyTorch implementation of DiffiT: Diffusion Vision Transformers for Image Generation. This repository provides the code for the DiffiT model, pretrained model checkpoints, and everything needed to sample images and compute FID scores to reproduce the results reported in our paper. python ..."
+    },
+    {
+      "title": "Diffit",
+      "url": "https://web.diffit.me/",
+      "snippet": "Diffit is an AI tool teachers use to get \"just right\" instructional materials, saving tons of time and helping all students to access grade level content."
+    },
+    {
+      "title": "LLM Diff - Online Multi-Model AI Comparison Tool",
+      "url": "https://llm-diff.com/",
+      "snippet": "A powerful online frontend tool to compare AI models side-by-side. Support multiple providers (OpenAI compatible), real-time streaming, performance metrics (TTFT, TPS), and multi-modal output."
+    },
+    {
+      "title": "GitHub - ctom2/noise2detail: [MICCAI 2025] This is the official code ...",
+      "url": "https://github.com/ctom2/noise2detail",
+      "snippet": "Ultra-Lightweight Model Design: Introducing a computationally efficient model that achieves fast denoising with minimal memory demands, balancing inference speed and high-quality image restoration. Noise2Detail (N2D) Pipeline: Proposes an innovative multistage denoising approach within the Noise2Noise framework, disrupting noise correlations to generate intermediate smooth structures and ..."
+    }
+  ]
+}

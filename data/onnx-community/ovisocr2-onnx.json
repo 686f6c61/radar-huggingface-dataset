@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "onnx-community/OvisOCR2-ONNX",
+  "slug": "onnx-community-ovisocr2-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/OvisOCR2-ONNX",
+  "created_at": "2026-09-01T22:05:23.000Z",
+  "updated_at": "2026-09-01T22:48:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "base_model:ATH-MaaS/OvisOCR2",
+    "base_model:quantized:ATH-MaaS/OvisOCR2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9933911242,
+  "storage_human": "9.9 GB",
+  "base_model": "ATH-MaaS/OvisOCR2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnx-community (ONNX Community) - Hugging Face",
+      "url": "https://huggingface.co/onnx-community",
+      "snippet": "Org profile for ONNX Community on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Ghinayunita/OvisOCR2 · Hugging Face",
+      "url": "https://huggingface.co/Ghinayunita/OvisOCR2",
+      "snippet": "OvisOCR2 achieves an overall score of 96.58 on OmniDocBench v1.6, establishing a new state of the art and becoming the first end-to-end model to top this leaderboard previously dominated by pipeline methods."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "ONNX | Home",
+      "url": "https://onnx.ai/",
+      "snippet": "ONNX is an open format built to represent machine learning models. ONNX defines a common set of operators - the building blocks of machine learning and deep learning models - and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

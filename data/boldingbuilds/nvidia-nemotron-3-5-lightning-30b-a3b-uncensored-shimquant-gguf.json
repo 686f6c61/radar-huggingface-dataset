@@ -5,7 +5,7 @@
   "author": "BoldingBuilds",
   "url": "https://huggingface.co/BoldingBuilds/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Uncensored-ShimQuant-GGUF",
   "created_at": "2026-08-31T20:51:11.000Z",
-  "updated_at": "2026-08-31T20:57:46.000Z",
+  "updated_at": "2026-09-02T01:57:08.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,12 +32,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 163,
   "trending_score": 0,
   "parameters": 35184768576,
   "parameters_human": "35.18B",
-  "storage_bytes": 12634541184,
-  "storage_human": "12.6 GB",
+  "storage_bytes": 25269082400,
+  "storage_human": "25.3 GB",
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
   "formats": [
     "gguf"

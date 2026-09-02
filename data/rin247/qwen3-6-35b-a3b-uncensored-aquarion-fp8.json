@@ -4,8 +4,8 @@
   "slug": "rin247-qwen3-6-35b-a3b-uncensored-aquarion-fp8",
   "author": "Rin247",
   "url": "https://huggingface.co/Rin247/Qwen3.6-35B-A3B-Uncensored-Aquarion-FP8",
-  "created_at": "2026-09-01T16:08:02.000Z",
-  "updated_at": "2026-09-01T16:10:09.000Z",
+  "created_at": "2026-09-01T21:50:31.000Z",
+  "updated_at": "2026-09-01T22:11:44.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 67911274679,
-  "storage_human": "67.9 GB",
+  "storage_bytes": 35699031439,
+  "storage_human": "35.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

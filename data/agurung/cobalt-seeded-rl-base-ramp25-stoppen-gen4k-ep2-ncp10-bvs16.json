@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-bvs16",
+  "slug": "agurung-cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-bvs16",
+  "author": "agurung",
+  "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-bvs16",
+  "created_at": "2026-09-01T15:01:21.000Z",
+  "updated_at": "2026-09-02T01:09:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "openrlhf",
+    "grpo",
+    "reinforcement-learning",
+    "code-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 44125895250,
+  "storage_human": "44.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base",
+      "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-vs30v11v ...",
+      "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-vs30v11v",
+      "snippet": "Instructions to use agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-vs30v11v with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "RamP25 (Ram P) - Hugging Face",
+      "url": "https://huggingface.co/RamP25",
+      "snippet": "User profile of Ram P on Hugging Face"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "agurung/cobalt-ft-qwen3-4b-sft-iid-12-lora-r128-a32-lr2p5e-4-const ...",
+      "url": "https://huggingface.co/agurung/cobalt-ft-qwen3-4b-sft-iid-12-lora-r128-a32-lr2p5e-4-const-lr2p5e-4-qps8-gpuauto-ep2",
+      "snippet": "The archive intentionally keeps HF/PEFT model artifacts and training metadata, but excludes optimizer, scheduler, and RNG state files. These repos are meant for evaluation and RL seeding, not exact optimizer-state resume."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "keystats/handwritten_ocr_rolm_lora_v2",
+  "slug": "keystats-handwritten_ocr_rolm_lora_v2",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/handwritten_ocr_rolm_lora_v2",
+  "created_at": "2026-09-02T01:22:02.000Z",
+  "updated_at": "2026-09-02T01:22:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 392222592,
+  "storage_human": "392 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "keystats/handwritten_ocr_rolm_lora · Hugging Face",
+      "url": "https://huggingface.co/keystats/handwritten_ocr_rolm_lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RolmOCR by Reducto AI - Hugging Face",
+      "url": "https://huggingface.co/reducto/RolmOCR",
+      "snippet": "RolmOCR, like other VLM-based OCR solutions, still suffer from hallucination or dropping contents. Unlike the Reducto Parsing API, RolmOCR cannot output layout bounding boxes."
+    },
+    {
+      "title": "GitHub - allenai/olmocr: Toolkit for linearizing PDFs for LLM datasets ...",
+      "url": "https://github.com/allenai/olmocr",
+      "snippet": "October 21, 2025 - v0.4.0 - New model release, boosts olmOCR-bench score by ~4 points using synthetic data and introduces RL training. August 13, 2025 - v0.3.0 - New model release, fixes auto-rotation detection, and hallucinations on blank documents."
+    },
+    {
+      "title": "RolmOCR: Document OCR Model for Recognizing Handwritten and Slanted ...",
+      "url": "https://aisharenet.com/en/rolmocr/",
+      "snippet": "General Introduction RolmOCR is an open source Optical Character Recognition (OCR) tool developed by the Reducto AI team, based on the Qwen2.5-VL-7B visual language model. It can extract text from images and PDF files faster than similar tools. olmOCR Faster and with a lower memory footprint.RolmOCR does not rely on PDF metadata, simplifying processing while supporting a wide range of document ..."
+    },
+    {
+      "title": "RolmOCR: Document OCR Model for Recognizing Handwritten and Slanted ...",
+      "url": "https://www.kdjingpai.com/en/rolmocr/",
+      "snippet": "RolmOCR is an open source OCR tool to quickly extract text from images and PDFs , built on the Qwen2.5-VL-7B model , no dependence on metadata , low memory footprint , support for handwritten and skewed documents , free for users to use and modify ."
+    }
+  ]
+}

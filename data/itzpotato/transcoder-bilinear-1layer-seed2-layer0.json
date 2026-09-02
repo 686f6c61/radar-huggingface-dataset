@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "itzPotato/transcoder-bilinear-1layer-seed2-layer0",
+  "slug": "itzpotato-transcoder-bilinear-1layer-seed2-layer0",
+  "author": "itzPotato",
+  "url": "https://huggingface.co/itzPotato/transcoder-bilinear-1layer-seed2-layer0",
+  "created_at": "2026-09-02T00:15:46.000Z",
+  "updated_at": "2026-09-02T00:15:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "interpretability",
+    "transcoder",
+    "sparse-autoencoder",
+    "arithmetic",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 266656,
+  "storage_human": "266656 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "itzPotato (Rohan Sashank Babbellapati) - Hugging Face",
+      "url": "https://huggingface.co/itzPotato/models",
+      "snippet": "itzPotato&#x27;s models1 Sort: Recently updated itzPotato/bilinear-attn-modular-addition-p113 292k•Updated 2 days ago• 18 • 1"
+    },
+    {
+      "title": "itzPotato/bilinear-attn-addition-carry-1layer · Hugging Face",
+      "url": "https://huggingface.co/itzPotato/bilinear-attn-addition-carry-1layer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Transformer Architecture Deep Dive: How Self-Attention, Positional ...",
+      "url": "https://engineersuniverse.com/studios/ai/aie-transformer-architecture-deep-dive",
+      "snippet": "A thorough technical explanation of the Transformer architecture behind ChatGPT, Claude, and other large language models — covering the encoder-decoder design, multi-head self-attention with Q/K/V matrices, scaled dot-product attention, sinusoidal and RoPE positional encoding, BPE tokenization, and the key differences between GPT and BERT architectures."
+    },
+    {
+      "title": "GitHub - facebookresearch/TransCoder: Public release of the TransCoder ...",
+      "url": "https://github.com/facebookresearch/TransCoder",
+      "snippet": "The model checkpoint (.pth file) are provided. We used the validation set to select the best checkpoint for each language pair, and choose the model to use to compute the test scores."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "barddoo/futo-keyboard-ptbr",
+  "slug": "barddoo-futo-keyboard-ptbr",
+  "author": "barddoo",
+  "url": "https://huggingface.co/barddoo/futo-keyboard-ptbr",
+  "created_at": "2026-09-01T21:06:37.000Z",
+  "updated_at": "2026-09-01T21:13:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "keyboard",
+    "futo-keyboard",
+    "pt-br",
+    "autocorrect",
+    "next-word-prediction",
+    "pt",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49947136,
+  "parameters_human": "49.9M",
+  "storage_bytes": 242583872,
+  "storage_human": "243 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FUTO Keyboard",
+      "url": "https://keyboard.futo.tech/",
+      "snippet": "FUTO Keyboard is a modern, privacy-focused keyboard that runs fully offline. Enjoy swipe typing, autocorrect, predictive text, and more—no internet connection required."
+    },
+    {
+      "title": "Language Model and Transformer | futo-org/android-keyboard | DeepWiki",
+      "url": "https://deepwiki.com/futo-org/android-keyboard/6.4-language-model-and-transformer",
+      "snippet": "Overview This page documents the transformer-based neural language model system that provides on-device ML-powered text predictions. The system implements a complete inference pipeline using GGML (a tensor operations library) through llama.cpp, with custom features for keyboard-specific tasks like autocorrection and swipe typing."
+    },
+    {
+      "title": "2.5 Million Parameters Beats Gboard · AI Beat",
+      "url": "https://ai-beat.github.io/news/2026/06/futo-swipe-tiny-model/",
+      "snippet": "FUTO released the models behind their swipe keyboard — a three-component stack totalling 2.5 million parameters that achieves 26% fewer errors than Gboard on their benchmark. It trains on one workstation GPU, runs on low-end Android devices in milliseconds, and is the first freely licensed open swipe-typing model. It&#x27;s a reminder that model scale is a tool, not an objective."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=futo-keyboard",
+      "snippet": "Active filters: futo-keyboard. Clear all. amitkot/whisper-tiny-he-acft. Automatic Speech Recognition • 37.8M • Updated 11 days ago • 22"
+    },
+    {
+      "title": "FUTO Swipe",
+      "url": "https://swipe.futo.tech/",
+      "snippet": "Fast, accurate swipe typing system. Use it today in FUTO Keyboard, our fully offline Android keyboard app. Or download the models and build with it."
+    }
+  ]
+}

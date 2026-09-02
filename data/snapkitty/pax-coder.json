@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/pax-coder",
+  "slug": "snapkitty-pax-coder",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/pax-coder",
+  "created_at": "2026-09-01T21:56:13.000Z",
+  "updated_at": "2026-09-01T23:33:16.000Z",
+  "license": "sovereign-source-license-v2",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "custom",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "custom",
+    "code",
+    "sovereign-compute",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "deepseek-ai/deepseek-coder-7b-instruct-v1.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - SNAPKITTYWEST/pax-coder: Institutional proof-carrying GPU ...",
+      "url": "https://github.com/SNAPKITTYWEST/pax-coder",
+      "snippet": "Institutional program for proof-carrying GPU kernel generation. PAX-Coder is a repository for the PAX verified-kernel program: Lean 4 proof modules, CUDA/PTX kernel templates, Futhark functional specifications, a training-data exporter, model fine-tuning scripts, demo materials, and a license-policy ..."
+    },
+    {
+      "title": "pax-coder/MODEL_CARD.md at master - GitHub",
+      "url": "https://github.com/SNAPKITTYWEST/pax-coder/blob/master/MODEL_CARD.md",
+      "snippet": "Institutional proof-carrying GPU kernel generation with Lean 4, CUDA/PTX, Futhark, and PAX release governance. - pax-coder/MODEL_CARD.md at master · SNAPKITTYWEST/pax-coder"
+    },
+    {
+      "title": "SNAPKITTYWEST (ahmad parr) - Hugging Face",
+      "url": "https://huggingface.co/SNAPKITTYWEST",
+      "snippet": "Cloud \"power lens\" AI Use APIs only when needed: Gemini for hackathon demos, multimodal, Google ecosystem Claude for long reasoning/docs OpenAI for tool calling, structured workflows, polished assistants This keeps SnapKitty sovereign but lets you rent extra horsepower when useful."
+    },
+    {
+      "title": "SnapKitty Downloads — Sovereign OS Ecosystem",
+      "url": "https://collectivekitty.com/downloads",
+      "snippet": "Downloads Center Every component is downloadable, verifiable, and sovereign. No cloud lock-in. No vendor dependency. Built by one human + AI in days — what 16-27 engineers would take 12-24 months to build."
+    },
+    {
+      "title": "SNAPKITTYWEST/snapkitty-harness · Hugging Face",
+      "url": "https://huggingface.co/SNAPKITTYWEST/snapkitty-harness",
+      "snippet": "SNAPKITTYWEST / snapkitty-harness like 0 GGUF English sovereign snapkitty ollama harness syscall nemotron conversational License:sovereign-source-license-v2 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

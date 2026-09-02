@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "howdyaendra/swin_s3_base_224-xblockm-timm",
+  "slug": "howdyaendra-swin_s3_base_224-xblockm-timm",
+  "author": "howdyaendra",
+  "url": "https://huggingface.co/howdyaendra/swin_s3_base_224-xblockm-timm",
+  "created_at": "2024-11-12T02:33:23.000Z",
+  "updated_at": "2026-09-02T01:28:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-classification",
+    "dataset:howdyaendra/xblock-social-screenshots",
+    "base_model:timm/swin_s3_base_224.ms_in1k",
+    "base_model:finetune:timm/swin_s3_base_224.ms_in1k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 70365990,
+  "parameters_human": "70.4M",
+  "storage_bytes": 3097393162,
+  "storage_human": "3.1 GB",
+  "base_model": "timm/swin_s3_base_224.ms_in1k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "howdyaendra/swin_s3_base_224-xblockm-timm · Hugging Face",
+      "url": "https://huggingface.co/howdyaendra/swin_s3_base_224-xblockm-timm",
+      "snippet": "Model card for swin_s3_base_224-xblockm-timm howdyaendra/swin_s3_base_224-xblock is trained using timm and is intended to have the logits passed to a sigmoid function to enable multi-label classification."
+    },
+    {
+      "title": "bytez/howdyaendra_swin_s3_base_224-xblockm-timm - Docker Image",
+      "url": "https://hub.docker.com/r/bytez/howdyaendra_swin_s3_base_224-xblockm-timm",
+      "snippet": "In the paper, suggested values range from 3e-4 to 2e-3, depending on the size of the model. See Truncation Sampling as Language Model Desmoothing ⁠ for more details."
+    },
+    {
+      "title": "timm/swin_s3_base_224.ms_in1k · Hugging Face",
+      "url": "https://huggingface.co/timm/swin_s3_base_224.ms_in1k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - huggingface/pytorch-image-models: The largest collection of ...",
+      "url": "https://github.com/huggingface/pytorch-image-models",
+      "snippet": "The largest collection of PyTorch image encoders / backbones. Including train, eval, inference, export scripts, and pretrained weights -- ResNet, ResNeXT, EfficientNet, NFNet, Vision Transformer (V..."
+    },
+    {
+      "title": "pytorch-image-models/timm/models/swin_transformer.py at main ... - GitHub",
+      "url": "https://github.com/huggingface/pytorch-image-models/blob/main/timm/models/swin_transformer.py",
+      "snippet": "The largest collection of PyTorch image encoders / backbones. Including train, eval, inference, export scripts, and pretrained weights -- ResNet, ResNeXT, EfficientNet, NFNet, Vision Transformer (V..."
+    }
+  ]
+}

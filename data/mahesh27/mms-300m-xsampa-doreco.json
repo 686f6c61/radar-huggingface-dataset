@@ -5,15 +5,19 @@
   "author": "mahesh27",
   "url": "https://huggingface.co/mahesh27/mms-300m-xsampa-doreco",
   "created_at": "2026-08-28T13:40:27.000Z",
-  "updated_at": "2026-08-28T13:44:31.000Z",
+  "updated_at": "2026-09-01T15:46:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "automatic-speech-recognition",
   "library": null,
   "languages": [],
   "tags": [
     "safetensors",
     "wav2vec2",
+    "automatic-speech-recognition",
+    "arxiv:2608.28508",
+    "base_model:facebook/mms-300m",
+    "base_model:finetune:facebook/mms-300m",
     "license:apache-2.0",
     "region:us"
   ],
@@ -24,7 +28,7 @@
   "parameters_human": "316.6M",
   "storage_bytes": 1484991372,
   "storage_human": "1.5 GB",
-  "base_model": null,
+  "base_model": "facebook/mms-300m, mahesh27/mms-300m-ipa-fleurs",
   "formats": [
     "safetensors"
   ],

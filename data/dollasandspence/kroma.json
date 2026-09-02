@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "DollasAndSpence/Kroma",
+  "slug": "dollasandspence-kroma",
+  "author": "DollasAndSpence",
+  "url": "https://huggingface.co/DollasAndSpence/Kroma",
+  "created_at": "2026-09-01T23:57:27.000Z",
+  "updated_at": "2026-09-01T23:57:27.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "krea2",
+    "krea",
+    "text-to-image",
+    "comfyui",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 162539090160,
+  "storage_human": "162.5 GB",
+  "base_model": "Krea/Krea-2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Kroma",
+      "url": "https://kroma.ai/",
+      "snippet": "Kroma flips that — you describe what you need, and the AI builds the whole deck. Content, layout, visuals, everything. You start by editing a finished product, not building one from scratch. Real content. Kroma uses GPT-4o with a system prompt tuned for presentation design — visual hierarchy, narrative flow, content density."
+    },
+    {
+      "title": "DollasAndSpence (Spencer Livesay) - Hugging Face",
+      "url": "https://huggingface.co/DollasAndSpence",
+      "snippet": "InferenceSupport 💥 587 Discussions about the Inference Providers feature on the Hub 1"
+    },
+    {
+      "title": "1 - a DollasAndSpence Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/DollasAndSpence/1",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from DollasAndSpence"
+    },
+    {
+      "title": "Kroma — AI Presentation Editor",
+      "url": "https://app.kroma.ai/",
+      "snippet": "Create, edit, and export AI-powered presentations. Real content, polished layouts, and professional design in seconds."
+    },
+    {
+      "title": "GitHub - lamng3/kroma: Official implementation for KROMA: Ontology ...",
+      "url": "https://github.com/lamng3/kroma",
+      "snippet": "Official implementation for KROMA: Ontology Matching with Knowledge Retrieval and Large Language Models (ISWC 2025) - lamng3/kroma"
+    }
+  ]
+}

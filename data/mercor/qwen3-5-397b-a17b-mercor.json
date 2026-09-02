@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mercor/Qwen3.5-397B-A17B-Mercor",
+  "slug": "mercor-qwen3-5-397b-a17b-mercor",
+  "author": "mercor",
+  "url": "https://huggingface.co/mercor/Qwen3.5-397B-A17B-Mercor",
+  "created_at": "2026-08-13T06:29:34.000Z",
+  "updated_at": "2026-09-01T21:14:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "skyrl",
+    "reinforcement-learning",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-397B-A17B",
+    "base_model:finetune:Qwen/Qwen3.5-397B-A17B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 396802360816,
+  "parameters_human": "396.80B",
+  "storage_bytes": 793624886597,
+  "storage_human": "793.6 GB",
+  "base_model": "Qwen/Qwen3.5-397B-A17B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mercor/Qwen3.5-397B-A17B-Mercor · Hugging Face",
+      "url": "https://huggingface.co/mercor/Qwen3.5-397B-A17B-Mercor",
+      "snippet": "Instructions to use mercor/Qwen3.5-397B-A17B-Mercor with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use mercor/Qwen3.5-397B-A17B-Mercor with Transformers:"
+    },
+    {
+      "title": "Training frontier knowledge work agents: A 397B RL training guide with ...",
+      "url": "https://www.mercor.com/blog/training-frontier-knowledge-work-agents-a-397b-rl-training-guide-with-skyrl/",
+      "snippet": "A step-by-step account of how we post-trained Qwen3.5-397B-A17B: we focus on the often overlooked infrastructure and derisking work preceding the hero run, show even stronger improvements on a larger model, and release the full training script. This is the third post in our series on post-training open models with Mercor&#x27;s expert data. In January, we showed that fewer than 1,000 expert ..."
+    },
+    {
+      "title": "qwen3.5-397b-a17b Model by Qwen | NVIDIA NIM",
+      "url": "https://build.nvidia.com/qwen/qwen3.5-397b-a17b",
+      "snippet": "Next-gen Qwen 3.5 VLM (400B MoE) brings advanced vision, chat, RAG, and agentic capabilities."
+    },
+    {
+      "title": "Qwen 3.5-397B-A17B: Complete Guide to Architecture, Capabilities, and ...",
+      "url": "https://www.qubrid.com/blog/qwen-3-5-397b-a17b-complete-guide-to-architecture-capabilities-and-real-world-applications",
+      "snippet": "What Is Qwen3.5-397B-A17B? Qwen3.5-397B-A17B is a large-scale open-weight Mixture-of-Experts foundation model designed for reasoning, coding, and complex AI workflows. The model also supports multimodal reasoning, allowing it to process both text and visual inputs in advanced AI systems."
+    },
+    {
+      "title": "Qwen3.5: Towards Native Multimodal Agents",
+      "url": "https://qwen.ai/blog?id=qwen3.5",
+      "snippet": "QWEN CHAT GitHub Hugging Face ModelScope DISCORD We are delighted to announce the official release of Qwen3.5, introducing the open-weight of the first model in the Qwen3.5 series, namely Qwen3.5-397B-A17B. As a native vision-language model, Qwen3.5-397B-A17B demonstrates outstanding results across a full range of benchmark evaluations, including reasoning, coding, agent capabilities, and ..."
+    }
+  ]
+}

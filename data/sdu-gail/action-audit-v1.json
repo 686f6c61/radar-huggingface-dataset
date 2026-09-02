@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "SDU-GAIL/Action-Audit-v1",
+  "slug": "sdu-gail-action-audit-v1",
+  "author": "SDU-GAIL",
+  "url": "https://huggingface.co/SDU-GAIL/Action-Audit-v1",
+  "created_at": "2026-08-31T07:56:23.000Z",
+  "updated_at": "2026-09-02T01:04:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234500404,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SDU-GAIL (hw) - Hugging Face",
+      "url": "https://huggingface.co/SDU-GAIL",
+      "snippet": "Org profile for hw on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "山东大学通用智能实验室 - gail.sdu.edu.cn",
+      "url": "http://gail.sdu.edu.cn/en/index.htm",
+      "snippet": "The General Artificial Intelligence Lab (GAIL) of Shandong University was established in 2004 (formerly the Information Retrieval Lab of Shandong University). It has gradually grown and developed, forming a stable research direction team. It has gained a high reputation in domestic fields such as information retrieval, natural language processing, large models, recommendation systems, and big ..."
+    },
+    {
+      "title": "山东大学通用智能实验室",
+      "url": "https://gail.sdu.edu.cn/",
+      "snippet": "山大AI助手 1. 平台介绍1.1 整体概述山大AI助手包含众多依托大模型的功能模块，旨在为校园用户提供高效、智能的支持，涵盖科研、教学、服务、法律及管理等领域，提升师生在科研、教学和管理中的工作效率，满足多样的智能化需求。"
+    },
+    {
+      "title": "Zhiwei Xu - Homepage",
+      "url": "https://xuleek.tech/",
+      "snippet": "Welcome to Zhiwei Xu &#x27;s Homepage! I am currently an assistant professor at the School of Artificial Intelligence, Shandong University, and a member of the General Artificial Intelligence Laboratory (SDU GAIL). I received my Ph.D. degree from the Institute of Automation, Chinese Academy of Sciences, advised by Prof. Guoliang Fan (范国梁)."
+    },
+    {
+      "title": "actionaudit · PyPI",
+      "url": "https://pypi.org/project/actionaudit/",
+      "snippet": "No network calls during a scan, no AI in the core. The same input always produces the same output. Educational. Every finding explains the risk and the fix, not just the rule name. actionaudit explain <rule> gives the full background. Standards-aligned. Every rule maps to an OWASP Top 10 CI/CD Security Risk. Multiple output formats."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "JMaxCool/albedo-qwen3.6-35b-cxxii-experts-x1-v3",
+  "slug": "jmaxcool-albedo-qwen3-6-35b-cxxii-experts-x1-v3",
+  "author": "JMaxCool",
+  "url": "https://huggingface.co/JMaxCool/albedo-qwen3.6-35b-cxxii-experts-x1-v3",
+  "created_at": "2026-09-02T00:56:12.000Z",
+  "updated_at": "2026-09-02T01:07:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916583934,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JMaxCool/albedo-qwen3.6-35b-pilot-cycle-01 · Hugging Face",
+      "url": "https://huggingface.co/JMaxCool/albedo-qwen3.6-35b-pilot-cycle-01",
+      "snippet": "JMaxCool / albedo-qwen3.6-35b-pilot-cycle-01 like 0 Safetensors qwen3_5_moe albedo sn97 qwen3.5 dpo License:other Model card FilesFiles and versions xet Community Copy to bucket new Albedo Qwen3.6-35B Pilot Cycle 01 (JMaxCool) Training Notes Usage"
+    },
+    {
+      "title": "JMaxCool/albedo-qwen3.6-35b-cxxi-v2 · Hugging Face",
+      "url": "https://huggingface.co/JMaxCool/albedo-qwen3.6-35b-cxxi-v2",
+      "snippet": "JMaxCool / albedo-qwen3.6-35b-cxxi-v2 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 4 Safetensors Model size 36B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "Best Way to Run Qwen 3.6 35B MoE Locally: VRAM, Speed, Setup",
+      "url": "https://insiderllm.com/guides/best-way-run-qwen-3-6-35b-moe-locally/",
+      "snippet": "Qwen 3.6-35B-A3B has 35B total params but only 3B active per token. Real tok/s on RTX 3090, 4090, 5070 Ti, dual 5060 Ti, and M3 Ultra. Quants and setup."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen shipped the 35B-A3B first in mid-April, then Max-Preview on April 20 as a closed-weights cloud preview, then the 27B dense on April 22. The 27B is the one Qwen labels \"flagship.\" The 35B-A3B is the one that lit up local-AI threads before the 27B even existed. Architecture-wise, Qwen 3.6 keeps the hybrid attention stack from 3.5."
+    },
+    {
+      "title": "Open-Weight Qwen3.6-35B-A3B Model Surfaces on Hugging Face",
+      "url": "https://jannikhansen.com/en/news/open-weight-qwen3-6-35b-a3b-model-surfaces-on-hugging-face",
+      "snippet": "A community upload of a 35B-parameter MoE model with a million-token context and strong coding benchmarks offers a viable open alternative to proprietary AI systems."
+    }
+  ]
+}

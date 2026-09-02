@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "AwakeningOS/ARO-BabyLM-1B-Cooldown",
+  "slug": "awakeningos-aro-babylm-1b-cooldown",
+  "author": "AwakeningOS",
+  "url": "https://huggingface.co/AwakeningOS/ARO-BabyLM-1B-Cooldown",
+  "created_at": "2026-09-01T23:47:15.000Z",
+  "updated_at": "2026-09-01T23:52:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "aro_babylm",
+    "text-generation",
+    "causal-lm",
+    "custom-code",
+    "babylm",
+    "babylm-2026",
+    "small-language-model",
+    "pytorch",
+    "custom_code",
+    "en",
+    "dataset:BabyLM-community/BabyLM-2026-Strict",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 116876691,
+  "parameters_human": "116.9M",
+  "storage_bytes": 467438604,
+  "storage_human": "467 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The #1 AI Art Generator - Artlist.io",
+      "url": "https://duckduckgo.com/y.js?ad_domain=artlist.io&ad_provider=bingv7aa&ad_type=txad&click_metadata=MmtRCvLFMQU8t0Y7NsqEEJp%2D9u7gl8o0lNDfM4uCPuGIfHDKcKe%2DvdXobZp0A2fPUQMIbph1hZNOJpqIgU04QDlbiDCZ4JgdIT5e3myiu2KOHmJgGK7NEfeEitFCWa9kzmtWcnEH9ypkSIDTngL1VxD%2D4xNPbG88knzTheYLyTs.b6u5GsGIYhcNao1bAtWUgQ&rut=c4ccdbdd2cb1a03b0f61d1970828ed727f267f79b69192f0e0d4ba52e0236b57&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8m0mmUbrbrP_Hg8Y5lhtblTVUCUxhCs8ATkWtxJoLVoZ28Ct1sEy7JsqRMN7s4k0k%2DtqekIQAXOwE2DMJ9x9CowmKS74kokwn%2DL9RYD4JFTJUpG2y_YJX%2DQCsdn1NwLsxmxXUjUq2CD92tHOi4EPWD6W9isTJa1EIPEzHvE9DrI2z8mjAFfothvfDVxYXqhq5alFnHr27U98wCxYMbXfGi4PwFT0%26u%3DaHR0cHMlM2ElMmYlMmZ0b29sa2l0LmFydGxpc3QuaW8lMmZpbWFnZS12aWRlby1nZW5lcmF0b3IlM2Ztb2RlJTNkaW1hZ2UlMjZtb2RlbEdyb3VwSUQlM2QxMTclMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2Q2Mjc1NjIwMzYlMjZ1dG1fY29udGVudCUzZDExNDAxOTUzNjA3NzE2MTklMjZ1dG1fdGVybSUzZEFJJTI1MjBnZW5lcmF0ZWQlMjUyMGFydCUyNmtleXdvcmQlM2RBSSUyNTIwZ2VuZXJhdGVkJTI1MjBhcnQlMjZhZCUzZCUyNm1hdGNodHlwZSUzZHAlMjZkZXZpY2UlM2RjJTI2bXNjbGtpZCUzZDAyNjQwYmZhYWYxMTEwNGFhYmRlNjE2ZGRkMGE3YWFhJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkR2VuQUlfdENQQSUyNnV0bV90ZXJtJTNkQUklMjUyMGdlbmVyYXRlZCUyNTIwYXJ0JTI2dXRtX2NvbnRlbnQlM2RBcnRfR2VuZXJhdG9yXyUyNTVCR2VuQUlfSW1hZ2UlMjU1RA%26rlid%3D02640bfaaf11104aabde616ddd0a7aaa&vqd=4-133891199005364193168222925560940751025&iurl=%7B1%7DIG%3D8AA15AA36AB7428888E0431AD05530D1%26CID%3D034CBF478460652D1C88A88F8517642B%26ID%3DDevEx%2C5037.1",
+      "snippet": "Generate Visually Stunning AI Art With Artlist&#x27;s Art Generator, Built for Your Workflow. Create High-Quality AI Art and Videos With Artlist&#x27;s Art Generator, Designed for Creators"
+    },
+    {
+      "title": "AwakeningOS/ARO-BabyLM-1B-Cooldown · Hugging Face",
+      "url": "https://huggingface.co/AwakeningOS/ARO-BabyLM-1B-Cooldown",
+      "snippet": "It preserves the model, tokenizer, corpus order, seed, AdamW state, and optimizer trajectory through 500M words, then uses a decaying learning rate and a conservative context curriculum through exactly 1B words."
+    },
+    {
+      "title": "AwakeningOS (AwakeningOS) - Hugging Face",
+      "url": "https://huggingface.co/AwakeningOS",
+      "snippet": "Small language models, efficient LLM architectures, home-GPU training, open-source model development, and AI-assisted architecture research."
+    },
+    {
+      "title": "AwakeningOS · GitHub",
+      "url": "https://github.com/AwakeningOS/",
+      "snippet": "A 747M-parameter Japanese-centred dense research language model designed for full pre-training on a single 24 GB GPU. Python 2"
+    },
+    {
+      "title": "arXiv:2504.08165v1 [cs.CL] 10 Apr 2025",
+      "url": "https://arxiv.org/pdf/2504.08165",
+      "snippet": "Abstract Children can acquire language from less than 100 million words of input. Large language models are far less data-efficient: they typically require 3 or 4 orders of magnitude more data and still do not perform as well as humans on many evaluations. These intensive resource demands limit the ability of researchers to train new models and use existing models as developmentally plausible ..."
+    }
+  ]
+}

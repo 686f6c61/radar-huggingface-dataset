@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "FallenIncursio/Incursio-s-Meme-Diffusion-SDXL-Pony-civitai-314404-edge-mirror",
+  "slug": "fallenincursio-incursio-s-meme-diffusion-sdxl-pony-civitai-314404-edge-mirror",
+  "author": "FallenIncursio",
+  "url": "https://huggingface.co/FallenIncursio/Incursio-s-Meme-Diffusion-SDXL-Pony-civitai-314404-edge-mirror",
+  "created_at": "2026-09-01T20:30:27.000Z",
+  "updated_at": "2026-09-01T23:42:44.000Z",
+  "license": "civitai-creator-permissions",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "stable-diffusion",
+    "safetensors",
+    "arcenciel",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21251403858,
+  "storage_human": "21.3 GB",
+  "base_model": "Pony",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Incursio&#x27;s Meme Diffusion (SDXL, Pony) - v2.7PDXL - Civitai",
+      "url": "https://civitai.com/models/314404/incursios-meme-diffusion-sdxl-pony",
+      "snippet": "This is my flagship Incursio&#x27;s Meme Diffusion (SDXL, Pony). I find it&#x27;s in line with what the community on Civitai likes producing. It&#x27;s pretty versatile while also having an artstyle that&#x27;s unique in image generation. NSFW compatible. This is the XL version of my Incursio&#x27;s Meme Diffusion. Refer to the version details for Changelog. V2.7: This Checkpoint is trained on the awesome Basemodel ..."
+    },
+    {
+      "title": "Incursio&#x27;s Meme Diffusion (SDXL, Pony) - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/314404?modelVersionId=712408",
+      "snippet": "Download Incursio&#x27;s Meme Diffusion (SDXL, Pony) - Checkpoint for Pony by FallenIncursio. Free AI model download from CivArchive."
+    },
+    {
+      "title": "Incursio&#x27;s Meme Diffusion - v1.6 VaeFix - Civitai",
+      "url": "https://civitai.com/models/100402/incursios-meme-diffusion",
+      "snippet": "This is my flagship Incursio&#x27;s Meme Diffusion. I find it&#x27;s in line with what the community on Civit likes producing. It&#x27;s pretty versatile while also having an artstyle that&#x27;s unique in image generation. NSFW compatible. I used Hires fix with 4x AnimeSharp, 0.3 denoising strength, and upscaled by 2. I use the OrangeMix VAE."
+    },
+    {
+      "title": "Incursio&#x27;s Meme Diffusion (SDXL, Pony) - v2.7PDXL - Pony",
+      "url": "https://www.diffus.me/models/incursio-s-meme-diffusion-sdxl-pony-v2-7pdxl",
+      "snippet": "Incursio&#x27;s Meme Diffusion (SDXL, Pony) is a versatile and unique artstyle Stable Diffusion model favored on Civitai. NSFW compatible, it&#x27;s built upon high-quality base models like AutismMix_confetti and Pony Diffusion V6. Recommended settings vary by version, with samplers like Euler a and Restart, steps from 14 to 24, and CFG from 4.0 to 6.0."
+    },
+    {
+      "title": "Incursio&#x27;s Meme Diffusion (SDXL, Pony) - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/seaart/models/bb51dfb8c7b7173dde4b15aef89f34cd/versions/4218da4327c70a3789b0fc41375286e5",
+      "snippet": "Download Incursio&#x27;s Meme Diffusion (SDXL, Pony) - Checkpoint. Free AI model download from CivArchive."
+    }
+  ]
+}

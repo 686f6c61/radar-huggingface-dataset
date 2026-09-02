@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "musafa901/Semantic-DACVAE-Japanese-32dim",
+  "slug": "musafa901-semantic-dacvae-japanese-32dim",
+  "author": "musafa901",
+  "url": "https://huggingface.co/musafa901/Semantic-DACVAE-Japanese-32dim",
+  "created_at": "2026-09-01T23:45:34.000Z",
+  "updated_at": "2026-09-01T23:45:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "VAE",
+    "Speech",
+    "Voice",
+    "audio-to-audio",
+    "ja",
+    "arxiv:2509.22167",
+    "base_model:Aratako/Semantic-DACVAE-Japanese",
+    "base_model:finetune:Aratako/Semantic-DACVAE-Japanese",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 429620065,
+  "storage_human": "430 MB",
+  "base_model": "Aratako/Semantic-DACVAE-Japanese",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aratako/Semantic-DACVAE-Japanese-32dim · Hugging Face",
+      "url": "https://huggingface.co/Aratako/Semantic-DACVAE-Japanese-32dim",
+      "snippet": "Semantic-DACVAE-Japanese-32dim Semantic-DACVAE-Japanese-32dim is a variant of our previous Semantic-DACVAE-Japanese model. While the core model architecture and parameter count remain the same, the latent dimension has been aggressively compressed from the original 128 to 32. This makes the latent representations much more compact while still maintaining high-quality Japanese speech ..."
+    },
+    {
+      "title": "Aratako/Semantic-DACVAE-Japanese · Hugging Face",
+      "url": "https://huggingface.co/Aratako/Semantic-DACVAE-Japanese",
+      "snippet": "Semantic-DACVAE-Japanese is a fine-tuned version of facebook/dacvae-watermarked, specifically optimized for Japanese speech. By incorporating WavLM semantic distillation inspired by the Semantic-VAE paper and performing additional training on Japanese datasets, this model achieves more natural reconstructions and higher subjective quality for ..."
+    },
+    {
+      "title": "GitHub - facebookresearch/dacvae: DACVAE · GitHub",
+      "url": "https://github.com/facebookresearch/dacvae",
+      "snippet": "DACVAE. Contribute to facebookresearch/dacvae development by creating an account on GitHub."
+    },
+    {
+      "title": "musafa901 - GitHub",
+      "url": "https://github.com/musafa901/",
+      "snippet": "musafa901 has 5 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "【ローカルAI音声革命】Irodori-TTSがかなりヤバい。日本語音声生成は\"絵文字で感情を操る時代\"へ",
+      "url": "https://note.com/fuma_ai_lab/n/nef8cb249ccdf",
+      "snippet": "Hugging Faceのモデルカードによると、v2では音声VAEがSemantic-DACVAE-Japanese-32dimに変更され、日本語音声生成の品質向上が図られています。 また、学習ステップ数は以前の2.5倍に増え、テキスト前処理やデータフィルタリングも改善されたと説明されています。"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "TontonTremblay/doper2-handal-obj000040",
+  "slug": "tontontremblay-doper2-handal-obj000040",
+  "author": "TontonTremblay",
+  "url": "https://huggingface.co/TontonTremblay/doper2-handal-obj000040",
+  "created_at": "2026-09-02T01:01:27.000Z",
+  "updated_at": "2026-09-02T01:01:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 346111686,
+  "storage_human": "346 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TontonTremblay (jonathan) - Hugging Face",
+      "url": "https://huggingface.co/TontonTremblay/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 28 days ago ... published a dataset 28 days ago"
+    },
+    {
+      "title": "TontonTremblay/DOPER_BOP · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/TontonTremblay/DOPER_BOP",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Simplifying AI on X: \"Here&#x27;s the link: https://t.co/PqYUEkJBER If you ...",
+      "url": "https://x.com/simplifyinAI/status/2094362545348120592",
+      "snippet": "If you want more practical AI gems and a list of full free AI resources, go here: simplifyingai.co GitHub - ahujasid/blender-mcp: Community plugin to control Blender 3D with any LLM of your choice"
+    },
+    {
+      "title": "GitHub - TontonTremblay/handal_annotating: Handal annotation tool for ...",
+      "url": "https://github.com/TontonTremblay/handal_annotating",
+      "snippet": "HANDAL handle annotation tool for meshes Their are two scrits, load_from_all_ply_from_folder.py loads all the ply files in a folder. menu.py loads a menu in blender that with two buttons in the tool pane. Before you can edit your meshes, you need to make sure you toggle x-ray mode."
+    }
+  ]
+}

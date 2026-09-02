@@ -5,7 +5,7 @@
   "author": "SSGenius123",
   "url": "https://huggingface.co/SSGenius123/codefix-model",
   "created_at": "2026-08-28T16:45:02.000Z",
-  "updated_at": "2026-08-29T23:50:06.000Z",
+  "updated_at": "2026-09-01T22:54:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 307066530,
-  "storage_human": "307 MB",
+  "storage_bytes": 454888754,
+  "storage_human": "455 MB",
   "base_model": "unsloth/qwen2.5-coder-1.5b-instruct-bnb-4bit",
   "formats": [
     "safetensors"

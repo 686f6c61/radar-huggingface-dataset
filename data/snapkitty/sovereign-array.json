@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/sovereign-array",
+  "slug": "snapkitty-sovereign-array",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/sovereign-array",
+  "created_at": "2026-09-01T21:10:05.000Z",
+  "updated_at": "2026-09-01T23:34:36.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "custom",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "custom",
+    "code",
+    "sovereign-compute",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Snapkitty/sovereign-array · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Snapkitty/sovereign-array",
+      "snippet": "Sovereign Array Language A new array language scaffolded from the architectural review of the Unimath Array proposal — keeping the valid isomorphisms and discarding the fatal conflations. No Abjad. No digital root. No NP-magic. No \"univalence replaces SIMD\"."
+    },
+    {
+      "title": "Snapkitty/sovereign-array at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/Snapkitty/sovereign-array/tree/main",
+      "snippet": "Datasets: Snapkitty / sovereign-array like 0 Follow Snapkitty Collective 1 Dataset card FilesFiles and versions xet Community main sovereign-array 123 kB 1 contributor History:5 commits SNAPKITTYWEST fix: size_t + Windows DLL path for Layer 1 falsifier 5911d9a verifiedabout 8 hours ago ArrayLangfeat: four-layer falsification suiteabout 8 hours ago hardwarefeat: four-layer falsification ..."
+    },
+    {
+      "title": "sovereign-array/README.md at main - GitHub",
+      "url": "https://github.com/SNAPKITTYWEST/sovereign-array/blob/main/README.md",
+      "snippet": "Sovereign Array Language A new array language scaffolded from the architectural review of the Unimath Array proposal — keeping the valid isomorphisms and discarding the fatal conflations."
+    },
+    {
+      "title": "GitHub - SNAPKITTYWEST/sovereign-array: Sovereign Array Language — Lean ...",
+      "url": "https://github.com/SNAPKITTYWEST/sovereign-array",
+      "snippet": "Sovereign Array Language A new array language scaffolded from the architectural review of the Unimath Array proposal — keeping the valid isomorphisms and discarding the fatal conflations."
+    },
+    {
+      "title": "SnapKitty Downloads — Sovereign OS Ecosystem",
+      "url": "https://collectivekitty.com/downloads",
+      "snippet": "Downloads Center Every component is downloadable, verifiable, and sovereign. No cloud lock-in. No vendor dependency. Built by one human + AI in days — what 16-27 engineers would take 12-24 months to build."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/neurological-regex",
+  "slug": "snapkitty-neurological-regex",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/neurological-regex",
+  "created_at": "2026-09-01T21:50:21.000Z",
+  "updated_at": "2026-09-01T23:33:15.000Z",
+  "license": "sovereign-source-license-v2",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "custom",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "custom",
+    "code",
+    "sovereign-compute",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - SNAPKITTYWEST/neurological-regex: Deterministic Haskell ML ...",
+      "url": "https://github.com/SNAPKITTYWEST/neurological-regex",
+      "snippet": "Deterministic Haskell ML pipeline: SALC attention + BERT embeddings + rule-based NLP + constraint graph. Air-gapped, no external ML. O(T·D·(k+r)) linear complexity. Patent pending. - SNAPKITTYWEST/..."
+    },
+    {
+      "title": "neurological-regex/README.md at master · SNAPKITTYWEST ... - GitHub",
+      "url": "https://github.com/SNAPKITTYWEST/neurological-regex/blob/master/README.md",
+      "snippet": "Neurological Regex Engine Author: Ahmad Ali Parr Trust: Bel Esprit D&#x27;Accord Irrevocable Trust · EIN 42-697643"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=snapkitty",
+      "snippet": "Explore machine learning models. 6 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: snapkitty Clear all"
+    },
+    {
+      "title": "Snapkitty Collective - Hugging Face",
+      "url": "https://huggingface.co/Snapkitty",
+      "snippet": "Sovereign AI infrastructure — quantum-seeded agents, WORM-sealed reasoning, NAND-decomposed LLMs. Bel Esprit D&#x27;Accord Irrevocable Trust · EIN 42-697643"
+    },
+    {
+      "title": "AI Model Trained In DNA Invents 16 New Viruses Not Found In Nature - Forbes",
+      "url": "https://www.forbes.com/sites/maryroeloffs/2026/08/06/scientists-trained-an-ai-model-in-dna-and-it-invented-16-new-viruses/",
+      "snippet": "Scientists are worried about how smart DNA-trained artificial intelligence models could get—and that they could become a weapon in biological warfare."
+    }
+  ]
+}

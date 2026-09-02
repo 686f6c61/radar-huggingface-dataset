@@ -5,7 +5,7 @@
   "author": "nota-ai",
   "url": "https://huggingface.co/nota-ai/Qwen3.8-Flash-Next-Nota-NVFP4",
   "created_at": "2026-08-31T07:38:33.000Z",
-  "updated_at": "2026-08-31T07:53:47.000Z",
+  "updated_at": "2026-09-02T02:43:58.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",

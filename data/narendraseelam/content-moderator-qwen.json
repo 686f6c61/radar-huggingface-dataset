@@ -5,7 +5,7 @@
   "author": "narendraseelam",
   "url": "https://huggingface.co/narendraseelam/content-moderator-qwen",
   "created_at": "2026-08-31T06:38:53.000Z",
-  "updated_at": "2026-08-31T15:51:56.000Z",
+  "updated_at": "2026-09-01T11:05:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 28914196,
-  "storage_human": "29 MB",
+  "storage_bytes": 46406500,
+  "storage_human": "46 MB",
   "base_model": null,
   "formats": [
     "safetensors"

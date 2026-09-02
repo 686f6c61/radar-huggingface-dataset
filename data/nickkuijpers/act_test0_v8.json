@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "NickKuijpers/act_test0_v8",
+  "slug": "nickkuijpers-act_test0_v8",
+  "author": "NickKuijpers",
+  "url": "https://huggingface.co/NickKuijpers/act_test0_v8",
+  "created_at": "2026-09-01T21:39:29.000Z",
+  "updated_at": "2026-09-01T21:39:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:NickKuijpers/test0",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NickKuijpers/test0 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/NickKuijpers/test0",
+      "snippet": "Datasets: NickKuijpers / test0 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 1K - 10K Tags: LeRobot tutorial testing Libraries: Datasets pandas Croissant + 1 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community 1 Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·2.23k rows default (2 ..."
+    },
+    {
+      "title": "NickKuijpers (Kuijpers Nick) - Hugging Face",
+      "url": "https://huggingface.co/NickKuijpers",
+      "snippet": "RoboMind AI Orchestrator 🤖 🐳 Orchestrate robotic processes with AI NickKuijpers Dec 21, 2025 Sleeping Agents"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI API Model Tester — Check Which Model Your API Actually Runs ...",
+      "url": "https://apimaster.ai/ai-api-model-tester",
+      "snippet": "Free AI API model tester. Paste any OpenAI, Claude or Gemini endpoint and see which model it really runs — fingerprint detection exposes substituted or fake models in seconds. No key stored."
+    }
+  ]
+}

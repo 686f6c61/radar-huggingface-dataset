@@ -5,7 +5,7 @@
   "author": "deveshu",
   "url": "https://huggingface.co/deveshu/hinglish-turn-detector",
   "created_at": "2026-08-31T20:39:13.000Z",
-  "updated_at": "2026-08-31T20:41:02.000Z",
+  "updated_at": "2026-09-01T05:28:45.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",

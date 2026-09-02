@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "zcyqyq/image_ccil",
+  "slug": "zcyqyq-image_ccil",
+  "author": "zcyqyq",
+  "url": "https://huggingface.co/zcyqyq/image_ccil",
+  "created_at": "2026-08-30T04:05:10.000Z",
+  "updated_at": "2026-09-01T21:38:15.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8053980396,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "zcyqyq (Caiyi Zhang) - Hugging Face",
+      "url": "https://huggingface.co/zcyqyq",
+      "snippet": "User profile of Caiyi Zhang on Hugging Face"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "GitHub - personalrobotics/CCIL: Code release and project site for \"CCIL ...",
+      "url": "https://github.com/personalrobotics/CCIL",
+      "snippet": "CCIL Structure End-to-end pipeline scripts are provided for each task suite in scripts/, but the overall sequential structure of CCIL is as follows: Train a dynamics model from data. This is handled in correct_il/train_dynamics_model.py, which reads from the supplied config file the required parameters to train the dynamics model."
+    },
+    {
+      "title": "Puyo AI - Unlimited Image Generator",
+      "url": "https://www.puyoai.com/",
+      "snippet": "Create with standard of AI Turn your text into high-quality images in seconds. Powered by the latest Z-Image Turbo model. 100% Free, Unlimited Generations."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Jongbin-kr",
   "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-civil-property-obligation_ffn-only",
   "created_at": "2026-09-01T13:58:51.000Z",
-  "updated_at": "2026-09-01T14:36:14.000Z",
+  "updated_at": "2026-09-01T19:41:06.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 583573345,
-  "storage_human": "584 MB",
+  "storage_bytes": 5340976513,
+  "storage_human": "5.3 GB",
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"

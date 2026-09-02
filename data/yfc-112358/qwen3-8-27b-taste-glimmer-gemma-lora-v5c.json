@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "YFC-112358/Qwen3.8-27B-Taste-Glimmer-Gemma-LoRA-v5c",
+  "slug": "yfc-112358-qwen3-8-27b-taste-glimmer-gemma-lora-v5c",
+  "author": "YFC-112358",
+  "url": "https://huggingface.co/YFC-112358/Qwen3.8-27B-Taste-Glimmer-Gemma-LoRA-v5c",
+  "created_at": "2026-09-01T21:01:48.000Z",
+  "updated_at": "2026-09-01T21:01:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3.8",
+    "taste-transfer",
+    "base_model:YFC-112358/Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5c",
+    "base_model:adapter:YFC-112358/Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5c",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 953963343,
+  "storage_human": "954 MB",
+  "base_model": "YFC-112358/Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5c",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YFC-112358/Qwen3.8-27B-Taste-Glimmer-Gemma-LoRA · Hugging Face",
+      "url": "https://huggingface.co/YFC-112358/Qwen3.8-27B-Taste-Glimmer-Gemma-LoRA",
+      "snippet": "Instructions to use YFC-112358/Qwen3.8-27B-Taste-Glimmer-Gemma-LoRA with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8-27B: Runs Locally, Nears Claude Opus (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/qwen-3-8-27b-open-weight-model-claude-opus-comparison-august-2026",
+      "snippet": "Qwen3.8-27B-FP8 landed Aug 15, 2026: dense 27B, vision-language, 262K context. Alibaba&#x27;s own benchmarks put it near Claude Opus on coding tasks."
+    },
+    {
+      "title": "Adapter Models for YFC-112358/Qwen3.8-27B-Della-Carnice-Ostrich ...",
+      "url": "https://huggingface.co/models?other=base_model:adapter:YFC-112358/Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5",
+      "snippet": "Explore machine learning models. Model Tree YFC-112358/Qwen3.8-27B-Della-Carnice-Ostrich-Salience-Glimmer-v5 Apps Inference Providers One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "Qwen3.8-27B: A Comprehensive Technical Analysis - Local AI Zone",
+      "url": "https://local-ai-zone.github.io/blog/qwen3-8-27b-comprehensive-analysis.html",
+      "snippet": "🎯 Executive Summary Key Finding: Qwen3.8-27B achieves competitive performance with models 10-15× its size while maintaining practical deployment requirements (24GB VRAM minimum). The model outperforms Meta&#x27;s Muse Glimmer (30B) across all 8 direct comparison benchmarks and surpasses Claude Opus 4.6 on 15 of 19 overlapping tests, establishing a new efficiency frontier for local language ..."
+    },
+    {
+      "title": "Introducing Muse Glimmer: An Open Agentic Model That Runs on Your ...",
+      "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+      "snippet": "Muse Glimmer is a 30-billion-parameter open agentic model from Meta Superintelligence Labs, optimized for always-on local workflows on consumer hardware."
+    }
+  ]
+}

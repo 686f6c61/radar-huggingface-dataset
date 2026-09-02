@@ -5,7 +5,7 @@
   "author": "Dsire",
   "url": "https://huggingface.co/Dsire/albedo-qwen3.6-35b-Absolutely",
   "created_at": "2026-08-27T01:40:38.000Z",
-  "updated_at": "2026-08-31T15:23:52.000Z",
+  "updated_at": "2026-09-02T02:27:38.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,12 +17,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 3790,
+  "downloads_30d": 3862,
   "trending_score": 0,
   "parameters": 35951822704,
   "parameters_human": "35.95B",
-  "storage_bytes": 790954346894,
-  "storage_human": "791.0 GB",
+  "storage_bytes": 934761901262,
+  "storage_human": "934.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "rose33300/albedo-qwen3.6-35b-happy24",
+  "slug": "rose33300-albedo-qwen3-6-35b-happy24",
+  "author": "rose33300",
+  "url": "https://huggingface.co/rose33300/albedo-qwen3.6-35b-happy24",
+  "created_at": "2026-08-31T16:30:03.000Z",
+  "updated_at": "2026-09-02T00:41:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 214034860732,
+  "storage_human": "214.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rose33300/albedo-qwen3.6-35b-happy24 · Hugging Face",
+      "url": "https://huggingface.co/rose33300/albedo-qwen3.6-35b-happy24",
+      "snippet": "rose33300 / albedo-qwen3.6-35b-happy24 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 21 Safetensors Model size 36B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "rose33300/albedo-qwen3.6-35b-new5 · Hugging Face",
+      "url": "https://huggingface.co/rose33300/albedo-qwen3.6-35b-new5",
+      "snippet": "rose33300 / albedo-qwen3.6-35b-new5 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 15 Safetensors Model size 36B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "Qwen 3.6 Developer Guide: Benchmarks, Architecture & Self-Hosting ...",
+      "url": "https://lushbinary.com/blog/qwen-3-6-developer-guide-benchmarks-architecture-api-self-hosting/",
+      "snippet": "Qwen 3.6 developer guide (Updated July 2026): 1M-context Plus, open-weight 35B-A3B, API pricing, and vLLM self-hosting. Note Qwen 3.7 is now the flagship."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Diverse Model Ecosystem Easily experience and quickly access Alibaba Cloud&#x27;s latest foundational models (FM), including Qwen-Max, Qwen-Plus, Qwen-Turbo, Qwen-VL, and the Wan series."
+    }
+  ]
+}

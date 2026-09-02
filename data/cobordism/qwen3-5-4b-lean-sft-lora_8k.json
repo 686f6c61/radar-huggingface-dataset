@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cobordism/qwen3.5-4b-lean-sft-lora_8k",
+  "slug": "cobordism-qwen3-5-4b-lean-sft-lora_8k",
+  "author": "cobordism",
+  "url": "https://huggingface.co/cobordism/qwen3.5-4b-lean-sft-lora_8k",
+  "created_at": "2026-09-01T21:19:20.000Z",
+  "updated_at": "2026-09-01T21:46:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "lean",
+    "formal-theorem-proving",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 312054496,
+  "storage_human": "312 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-4B LoRA Fine-tuning on Step-3.5-Flash-SFT - GitHub",
+      "url": "https://github.com/IIIIQIIII/qwen35-4b-lora-sft",
+      "snippet": "Fine-tuning Qwen3.5-4B with LoRA r=128 on StepFun&#x27;s agent/reasoning SFT dataset using Axolotl on a single NVIDIA H100 PCIe 80GB."
+    },
+    {
+      "title": "Ttimms/Bible-Assistant-Qwen3.5-4B-v2 · Hugging Face",
+      "url": "https://huggingface.co/Ttimms/Bible-Assistant-Qwen3.5-4B-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen35",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Qwen/Qwen3.5-4B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-4B",
+      "snippet": "Qwen3.5-4B is the compact dense entry in the Qwen3.5 family — same gated delta networks architecture, vision encoder, 262K context, and MTP decoding as the larger siblings, sized for 16 GB consumer GPUs."
+    }
+  ]
+}

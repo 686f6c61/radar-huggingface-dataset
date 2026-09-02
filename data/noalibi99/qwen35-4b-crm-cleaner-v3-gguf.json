@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "noalibi99/qwen35-4b-crm-cleaner-v3-GGUF",
+  "slug": "noalibi99-qwen35-4b-crm-cleaner-v3-gguf",
+  "author": "noalibi99",
+  "url": "https://huggingface.co/noalibi99/qwen35-4b-crm-cleaner-v3-GGUF",
+  "created_at": "2026-09-01T23:19:03.000Z",
+  "updated_at": "2026-09-01T23:20:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 2783446624,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "noalibi99/crm-qwen35-4b-cleaner-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/noalibi99/crm-qwen35-4b-cleaner-v1-GGUF",
+      "snippet": "Instructions to use noalibi99/crm-qwen35-4b-cleaner-v1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use noalibi99/crm-qwen35-4b-cleaner-v1-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "noalibi99/crm-qwen35-4b-cleaner-v1-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/noalibi99/crm-qwen35-4b-cleaner-v1-GGUF/tree/main",
+      "snippet": "Instructions to use noalibi99/crm-qwen35-4b-cleaner-v1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use noalibi99/crm-qwen35-4b-cleaner-v1-GGUF with llama.cpp: Install (macOS, Linux) ... Install from WinGet (Windows ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Diverse Model Ecosystem Easily experience and quickly access Alibaba Cloud&#x27;s latest foundational models (FM), including Qwen-Max, Qwen-Plus, Qwen-Turbo, Qwen-VL, and the Wan series."
+    },
+    {
+      "title": "How to Run Qwen 3.5 Locally on a Single GPU: Step-by-Step Guide",
+      "url": "https://www.datacamp.com/tutorial/run-qwen-3-5-locally",
+      "snippet": "Run the latest Qwen model on a single GPU VM, set up llama.cpp, and securely access it locally over SSH through a private OpenAI-compatible endpoint."
+    }
+  ]
+}

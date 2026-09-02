@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "q2p/microduck-beak-throw",
+  "slug": "q2p-microduck-beak-throw",
+  "author": "q2p",
+  "url": "https://huggingface.co/q2p/microduck-beak-throw",
+  "created_at": "2026-09-01T21:56:46.000Z",
+  "updated_at": "2026-09-01T22:35:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck",
+    "microduck-policy",
+    "mjlab",
+    "robotics",
+    "sim2real",
+    "reinforcement-learning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67548633,
+  "storage_human": "68 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "Meet Microduck | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/blog/introducing-microduck/",
+      "snippet": "Microduck came out of that question. Microduck is a 25 cm tall biped robot with 15 motors, a camera, a small depth sensor, two IMUs, and an articulated beak that can pick up objects. It can walk, sit, crouch, get back up from many common falls, and even roller-skate."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck_rl: RL training environments for ...",
+      "url": "https://github.com/pollen-robotics/microduck_rl",
+      "snippet": "Every main task has a Backlash twin that trains on a model with ±1° of gear play (2° total) in series with each of the 14 servo joints: insert -Backlash before MicroDuck in the task id, e.g. Mjlab-Velocity-Flat-Backlash-MicroDuck. The backlash is modeled properly for sim2real: each servo gets an unactuated passive_<joint>_backlash hinge, and because the real encoder sits on the output side ..."
+    },
+    {
+      "title": "Hugging Face Microduck: $399 Open-Source Robot With Full RL Stack",
+      "url": "https://byteiota.com/hugging-face-microduck-399-open-source-robot-with-full-rl-stack/",
+      "snippet": "Hugging Face opened preorders this week for the Microduck — a $399 open-source biped robot built by Pollen Robotics, the French startup HF acquired in April 2025. At 25 cm tall and 800 grams, it has a beak that can pick up objects, rolls on skates, and falls down without breaking."
+    }
+  ]
+}

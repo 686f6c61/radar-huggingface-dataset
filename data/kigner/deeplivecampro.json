@@ -5,7 +5,7 @@
   "author": "kigner",
   "url": "https://huggingface.co/kigner/deeplivecamPro",
   "created_at": "2026-08-31T06:51:04.000Z",
-  "updated_at": "2026-08-31T16:44:29.000Z",
+  "updated_at": "2026-09-01T05:24:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2426885990,
+  "storage_bytes": 2427355740,
   "storage_human": "2.4 GB",
   "base_model": null,
   "formats": [

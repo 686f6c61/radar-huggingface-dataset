@@ -5,7 +5,7 @@
   "author": "sooyeon1",
   "url": "https://huggingface.co/sooyeon1/pfsp_policy_llama8b_candscore_r128_k24_lr0.05",
   "created_at": "2026-08-31T21:57:50.000Z",
-  "updated_at": "2026-08-31T22:00:41.000Z",
+  "updated_at": "2026-09-01T21:54:06.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 11,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 4308581347,
-  "storage_human": "4.3 GB",
+  "storage_bytes": 8598098313,
+  "storage_human": "8.6 GB",
   "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
   "formats": [
     "safetensors"

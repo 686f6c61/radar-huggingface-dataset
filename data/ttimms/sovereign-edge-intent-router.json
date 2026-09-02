@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Ttimms/sovereign-edge-intent-router",
+  "slug": "ttimms-sovereign-edge-intent-router",
+  "author": "Ttimms",
+  "url": "https://huggingface.co/Ttimms/sovereign-edge-intent-router",
+  "created_at": "2026-07-19T08:25:15.000Z",
+  "updated_at": "2026-09-02T00:09:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "intent-classification",
+    "edge",
+    "jetson",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 871112295,
+  "storage_human": "871 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ttimms/sovereign-edge-intent-router · Hugging Face",
+      "url": "https://huggingface.co/Ttimms/sovereign-edge-intent-router",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - t-timms/sovereign-edge: Local-first personal AI stack on ...",
+      "url": "https://github.com/t-timms/sovereign-edge",
+      "snippet": "Cloud AI services see everything you ask them. Sovereign Edge keeps your conversations, decisions, and personal data entirely on your own hardware — a Jetson Orin Nano running 5 specialized LangGraph agents."
+    },
+    {
+      "title": "Ttimms (Tremayne Timms) - Hugging Face",
+      "url": "https://huggingface.co/Ttimms",
+      "snippet": "Recent Activity updated a model2 days ago Ttimms/sovereign-edge-intent-router published a model2 days ago Ttimms/sovereign-edge-intent-router updated a model2 days ago Ttimms/bible-ai-qwen3.5-4b-lora View all activity"
+    },
+    {
+      "title": "sovereign-edge/README.md at main · t-timms/sovereign-edge",
+      "url": "https://github.com/t-timms/sovereign-edge/blob/main/README.md",
+      "snippet": "Sovereign Edge A privacy-first personal AI system — five expert agents, live data grounding, edge-deployed on a Jetson Orin."
+    },
+    {
+      "title": "How to use model router for Microsoft Foundry - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/model-router",
+      "snippet": "Learn how to use the model router in Azure OpenAI to select the best model for your task."
+    }
+  ]
+}

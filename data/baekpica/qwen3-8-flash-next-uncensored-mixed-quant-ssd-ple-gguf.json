@@ -5,7 +5,7 @@
   "author": "Baekpica",
   "url": "https://huggingface.co/Baekpica/Qwen3.8-Flash-Next-Uncensored-Mixed-Quant-SSD-PLE-GGUF",
   "created_at": "2026-08-31T07:20:50.000Z",
-  "updated_at": "2026-08-31T08:22:39.000Z",
+  "updated_at": "2026-09-01T12:49:48.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 260,
   "trending_score": 0,
   "parameters": 128799735699,
   "parameters_human": "128.80B",

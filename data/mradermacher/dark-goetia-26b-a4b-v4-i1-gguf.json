@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Dark-Goetia-26B-A4B-v4-i1-GGUF",
   "created_at": "2026-09-01T09:12:20.000Z",
-  "updated_at": "2026-09-01T10:28:11.000Z",
+  "updated_at": "2026-09-01T11:06:29.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -34,13 +34,13 @@
     "region:us",
     "imatrix"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 25233142046,
   "parameters_human": "25.23B",
-  "storage_bytes": 209281858528,
-  "storage_human": "209.3 GB",
+  "storage_bytes": 300894333440,
+  "storage_human": "300.9 GB",
   "base_model": "26B-Suite/Dark-Goetia-26B-A4B-v4",
   "formats": [
     "gguf"

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "vanch007/mlx-pocket-tts",
+  "slug": "vanch007-mlx-pocket-tts",
+  "author": "vanch007",
+  "url": "https://huggingface.co/vanch007/mlx-pocket-tts",
+  "created_at": "2026-09-02T01:21:19.000Z",
+  "updated_at": "2026-09-02T01:21:41.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "pocket_tts",
+    "apple-silicon",
+    "text-to-speech",
+    "voice-cloning",
+    "pocket-tts",
+    "en",
+    "base_model:kyutai/pocket-tts",
+    "base_model:finetune:kyutai/pocket-tts",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45309698,
+  "parameters_human": "45.3M",
+  "storage_bytes": 307246088,
+  "storage_human": "307 MB",
+  "base_model": "kyutai/pocket-tts",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vanch007/Sirocco-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/vanch007/Sirocco-MLX-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - kyutai-labs/pocket-tts: A TTS that fits in your CPU (and pocket)",
+      "url": "https://github.com/kyutai-labs/pocket-tts",
+      "snippet": "A TTS that fits in your CPU (and pocket). Contribute to kyutai-labs/pocket-tts development by creating an account on GitHub."
+    },
+    {
+      "title": "vanch007 (vanchye) - Hugging Face",
+      "url": "https://huggingface.co/vanch007",
+      "snippet": "Sort: Recently updated. vanch007/PaddleOCR-VL-1.6-8bit. Updated 10 days ago. vanch007/VTranslator-Piper-TTS-Int8. Updated 12 days ago"
+    },
+    {
+      "title": "GitHub - vanch007/mlx-breeze-tts2: Standalone Apple Silicon MLX port of ...",
+      "url": "https://github.com/vanch007/mlx-breeze-tts2",
+      "snippet": "Standalone Apple Silicon port of Breeze TTS 2. The production package vendors the required MLX transformer and Qwen3 speech-codec primitives and does not depend on mlx-audio at runtime."
+    },
+    {
+      "title": "PocketTTS Model | Blaizzy/mlx-audio | DeepWiki",
+      "url": "https://deepwiki.com/Blaizzy/mlx-audio/3.7-pockettts-model",
+      "snippet": "PocketTTS Model Relevant source files Purpose and Scope This page documents the PocketTTS model architecture, which combines a FlowLM (Flow-based Language Model) backbone with a Mimi codec adapter for streaming text-to-speech synthesis. PocketTTS supports voice conditioning through reference audio or predefined voice presets, and provides both batch and streaming generation modes with low ..."
+    }
+  ]
+}

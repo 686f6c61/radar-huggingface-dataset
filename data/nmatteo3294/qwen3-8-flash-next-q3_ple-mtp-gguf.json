@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "nmatteo3294/Qwen3.8-Flash-Next-Q3_PLE-MTP-GGUF",
+  "slug": "nmatteo3294-qwen3-8-flash-next-q3_ple-mtp-gguf",
+  "author": "nmatteo3294",
+  "url": "https://huggingface.co/nmatteo3294/Qwen3.8-Flash-Next-Q3_PLE-MTP-GGUF",
+  "created_at": "2026-08-31T04:51:42.000Z",
+  "updated_at": "2026-09-02T00:10:11.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "llama.cpp",
+    "speculative-decoding",
+    "mtp",
+    "long-context",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 80728201440,
+  "storage_human": "80.7 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Qwen4 architecture preview with a 125B-parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token."
+    },
+    {
+      "title": "Guile/Qwen3.8-Flash-Next-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Guile/Qwen3.8-Flash-Next-GGUF",
+      "snippet": "The corpus rendered for this model is included in this repo: Qwen3.8-Flash-Next-calibration-v6.txt. The imatrix is available here: Qwen3.8-Flash-Next-imatrix.gguf."
+    },
+    {
+      "title": "Qwen3.8 Flash Next Review: Benchmarks, Architecture, Memory ...",
+      "url": "https://kaitchup.substack.com/p/qwen38-flash-next-review-benchmarks",
+      "snippet": "Qwen3.8-Flash-Next is a multimodal Mixture-of-Experts model with a 125B-parameter main model, only 6B parameters activated per token, another 51B parameters dedicated to a new n-gram embedding system, and a 4B MTP module for speculative decoding."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "opencal",
   "url": "https://huggingface.co/opencal/opencal-base",
   "created_at": "2026-09-01T02:27:01.000Z",
-  "updated_at": "2026-09-01T02:27:48.000Z",
+  "updated_at": "2026-09-01T18:50:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,11 +31,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 4376928429,
+  "storage_bytes": 4377056244,
   "storage_human": "4.4 GB",
   "base_model": "LiquidAI/LFM2.5-VL-450M",
   "formats": [

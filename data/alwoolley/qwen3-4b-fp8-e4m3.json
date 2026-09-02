@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "alwoolley/Qwen3-4B-fp8-e4m3",
+  "slug": "alwoolley-qwen3-4b-fp8-e4m3",
+  "author": "alwoolley",
+  "url": "https://huggingface.co/alwoolley/Qwen3-4B-fp8-e4m3",
+  "created_at": "2026-09-01T22:35:40.000Z",
+  "updated_at": "2026-09-01T22:40:14.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "fp8",
+    "float8",
+    "qwen",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:quantized:Qwen/Qwen3-4B",
+    "license:other",
+    "8-bit",
+    "fp8_simulated",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404650,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-4B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "furiosa-ai/Qwen3-4B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/furiosa-ai/Qwen3-4B-FP8",
+      "snippet": "Qwen3-4B is the 4B-parameter dense model of the Qwen3 series, a causal transformer with grouped-query attention. Its hallmark is seamless switching between a thinking mode — emitting a chain of thought before the final answer for complex reasoning, math, and coding — and a non-thinking mode for efficient general dialogue, within a single model."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3-4B-FP8 · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-4B-FP8/summary",
+      "snippet": "Qwen3-4B-FP8 Qwen3 Highlights Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features: Uniquely support of ..."
+    },
+    {
+      "title": "Qwen3-4B-FP8: Open-Source 4B LLM with Thinking Mode for Local Inference ...",
+      "url": "https://dev.co/ai/llms/qwen3-4b-fp8",
+      "snippet": "Qwen3-4B-FP8 Qwen3-4B-FP8 is a 4-billion-parameter instruction-tuned language model from Alibaba&#x27;s Qwen team, quantized to FP8 precision for efficient inference. It supports dynamic switching between &#x27;thinking mode&#x27; (for complex reasoning) and &#x27;non-thinking mode&#x27; (for fast dialogue), multilingual instruction-following across 100+ languages, and agent/tool integration. Licensed under Apache 2.0 ..."
+    }
+  ]
+}

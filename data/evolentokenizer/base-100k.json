@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "EvoLenTokenizer/base-100k",
+  "slug": "evolentokenizer-base-100k",
+  "author": "EvoLenTokenizer",
+  "url": "https://huggingface.co/EvoLenTokenizer/base-100k",
+  "created_at": "2026-07-27T16:16:52.000Z",
+  "updated_at": "2026-09-02T00:58:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "fill-mask",
+    "generated_from_trainer",
+    "feature-extraction",
+    "arxiv:2604.08698",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 89980160,
+  "parameters_human": "90.0M",
+  "storage_bytes": 359949329,
+  "storage_human": "360 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EvoLenTokenizer/base-100k · Hugging Face",
+      "url": "https://huggingface.co/EvoLenTokenizer/base-100k",
+      "snippet": "EvoLenTokenizer / base-100k like 0 Follow Evolution-Guided Tokenization for DNA Language Model 2 Safetensors bert Generated from Trainer Model card FilesFiles and versions xet Community Copy to bucket new model_base_5120 Model description Intended uses & limitations Training and evaluation data Training procedure Training hyperparameters ..."
+    },
+    {
+      "title": "EvoLenTokenizer/evolen-100k-sft-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/EvoLenTokenizer/evolen-100k-sft-checkpoints",
+      "snippet": "This is test-set model selection, so the reported values are an upper bound rather than an unbiased estimate. Retraining from the base model will not reproduce these numbers exactly: fp16 training is nondeterministic and epoch-selection margins are small, so a rerun lands on a different epoch and a slightly different score."
+    },
+    {
+      "title": "GitHub - HN020719/EvoLen · GitHub",
+      "url": "https://github.com/HN020719/EvoLen",
+      "snippet": "Code for EvoLen: Evolution-Guided Tokenization for DNA Language Model, accepted at COLM 2026. A preprint is available at arXiv:2604.08698. EvoLen is a DNA tokenizer that combines evolutionary stratification with length-aware decoding: it partitions the genome by phyloP conservation, trains a BPE ..."
+    },
+    {
+      "title": "EvoLen: Evolution-Guided Tokenization for DNA Language Model",
+      "url": "https://arxiv.org/pdf/2604.08698v1",
+      "snippet": "These comparisons use a shared modeling pipeline, but EvoLen is trained for 100k steps, whereas the alternative tokenizers are trained for 200k steps. Even under this smaller training budget, EvoLen remains competitive across benchmarks and ranks among the top two on 13 of 15 task groups, with especially strong performance on tasks involving ..."
+    },
+    {
+      "title": "EvoLen/README.md at main · HN020719/EvoLen · GitHub",
+      "url": "https://github.com/HN020719/EvoLen/blob/main/README.md",
+      "snippet": "EvoLen Tokenizer Code for EvoLen: Evolution-Guided Tokenization for DNA Language Model, accepted at COLM 2026. A preprint is available at arXiv:2604.08698."
+    }
+  ]
+}

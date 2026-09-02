@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Hoho76/Mag",
+  "slug": "hoho76-mag",
+  "author": "Hoho76",
+  "url": "https://huggingface.co/Hoho76/Mag",
+  "created_at": "2026-09-01T21:51:34.000Z",
+  "updated_at": "2026-09-01T23:53:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Flux",
+    "Safetensors",
+    "text-to-image",
+    "base_model:black-forest-labs/FLUX.2-dev",
+    "base_model:finetune:black-forest-labs/FLUX.2-dev",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 612922657,
+  "storage_human": "613 MB",
+  "base_model": "black-forest-labs/FLUX.2-dev",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hoho76 (ME) - Hugging Face",
+      "url": "https://huggingface.co/Hoho76/models",
+      "snippet": "User profile of ME on Hugging Face Recent Activity liked a model about 1 month ago Jonjew/YvonneStrahovski liked a model about 1 month ago badhri-suresh/flux-rib-knit ..."
+    },
+    {
+      "title": "Hoho76 (ME) - Hugging Face",
+      "url": "https://huggingface.co/Hoho76",
+      "snippet": "Recent Activity liked a model about 1 month ago Jonjew/YvonneStrahovski liked a model about 1 month ago badhri-suresh/flux-rib-knit-lora"
+    },
+    {
+      "title": "50+ AI Apps for the Price of One • Magai",
+      "url": "https://magai.co/",
+      "snippet": "Join 50,000+ users discovering All-In-One AI with Magai, designed for professionals needing seamless AI model integration."
+    },
+    {
+      "title": "ai.model.76 • Instagram photos and videos",
+      "url": "https://www.instagram.com/ai.model.76/",
+      "snippet": "32K Followers, 263 Following, 1,201 Posts - @ai.model.76 on Instagram: \"\""
+    },
+    {
+      "title": "AI 3D Model Generator - Image to 3D Model | Magnific (formerly Freepik)",
+      "url": "https://www.magnific.com/ai/3d-model-generator",
+      "snippet": "Home AI tools AI 3D Model Generator AI 3D Model Generator One image in. A production-ready 3D model out. Upload up to 4 views, set texture and geometry, and download a GLB that drops into any 3D pipeline."
+    }
+  ]
+}

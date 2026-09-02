@@ -5,7 +5,7 @@
   "author": "n4ze3m",
   "url": "https://huggingface.co/n4ze3m/yatm-quickdraw-diffusion",
   "created_at": "2026-08-31T19:24:44.000Z",
-  "updated_at": "2026-08-31T19:24:53.000Z",
+  "updated_at": "2026-09-01T08:06:25.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "unconditional-image-generation",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 12446809,
-  "storage_human": "12 MB",
+  "storage_bytes": 43794381,
+  "storage_human": "44 MB",
   "base_model": null,
   "formats": [
     "onnx"

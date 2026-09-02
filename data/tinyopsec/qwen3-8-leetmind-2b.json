@@ -5,7 +5,7 @@
   "author": "tinyopsec",
   "url": "https://huggingface.co/tinyopsec/Qwen3.8-LeetMind-2b",
   "created_at": "2026-09-01T13:37:21.000Z",
-  "updated_at": "2026-09-01T14:41:49.000Z",
+  "updated_at": "2026-09-01T15:16:53.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 63664447,
-  "storage_human": "64 MB",
+  "storage_bytes": 107339551,
+  "storage_human": "107 MB",
   "base_model": null,
   "formats": [
     "safetensors"

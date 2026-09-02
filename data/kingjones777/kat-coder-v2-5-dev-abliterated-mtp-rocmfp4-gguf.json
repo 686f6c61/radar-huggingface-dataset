@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "kingjones777/KAT-Coder-V2.5-Dev-Abliterated-MTP-ROCmFP4-GGUF",
+  "slug": "kingjones777-kat-coder-v2-5-dev-abliterated-mtp-rocmfp4-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/KAT-Coder-V2.5-Dev-Abliterated-MTP-ROCmFP4-GGUF",
+  "created_at": "2026-09-01T06:17:55.000Z",
+  "updated_at": "2026-09-01T21:27:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rocm",
+    "vulkan",
+    "rocmfp4",
+    "strix-halo",
+    "gfx1151",
+    "amd",
+    "moe",
+    "mtp",
+    "speculative-decoding",
+    "code",
+    "abliterated",
+    "uncensored",
+    "text-generation",
+    "base_model:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "base_model:quantized:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 101627895168,
+  "storage_human": "101.6 GB",
+  "base_model": "jakeroxs/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED-GGUF, Kwaipilot/KAT-Coder-V2.5-Dev",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KAT-Coder-V2.5-Dev-Abliterated-MTP-ROCmFP4-GGUF - Hugging Face",
+      "url": "https://huggingface.co/kingjones777/KAT-Coder-V2.5-Dev-Abliterated-MTP-ROCmFP4-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kwaipilot/KAT-Coder-V2.5-Dev · Hugging Face",
+      "url": "https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev",
+      "snippet": "This repository contains the model weights and configuration files for the post-trained KAT-Coder-V2.5-Dev in the Hugging Face Transformers format. The artifacts are compatible with Hugging Face Transformers, vLLM, SGLang, KTransformers, etc. Note: this open-weight release ships only the language-model weights and operates as a text-only model; the vision/multimodal components are not included ..."
+    },
+    {
+      "title": "KAT-Coder-V2.5-Dev: An Open Agentic Coding Model - HackerNoon",
+      "url": "https://hackernoon.com/kat-coder-v25-dev-an-open-agentic-coding-model",
+      "snippet": "Overview KAT-Coder-V2.5-Dev is a Mixture-of-Experts (MoE) coding model built by Kwaipilot for autonomous software engineering tasks within executable repositories. The model contains 35B total parameters with 3B activated per token, operating as a text-only model compatible with Hugging Face Transformers, vLLM, SGLang, and KTransformers. Built on the Qwen3.6-35B-A3B base model, it underwent ..."
+    },
+    {
+      "title": "KAT-Coder V2.5 Local Setup Guide: GGUF, vLLM, SGLang",
+      "url": "https://dev.to/ai_made_tools/kat-coder-v25-local-setup-guide-gguf-vllm-sglang-2fdi",
+      "snippet": "KAT-Coder V2.5-Dev is an open-weight coding model from Kwaipilot (Kuaishou&#x27;s AI team) that scores 69.40% on SWE-bench Verified while activating only 3 billion parameters per token. The full model has 35 billion total parameters in a sparse Mixture-of-Experts architecture, but the MoE routing means only 3B are active for any given inference step."
+    },
+    {
+      "title": "Introducing KAT-Dev-32B, KAT-Coder: Advancing Code Intelligence through ...",
+      "url": "https://kwaipilot.github.io/KAT-Coder/",
+      "snippet": "KAT-Coder is our latest Mixture-of-Experts model with 32 billion activated parameters and 1 trillion total parameters. It achieves state-of-the-art performance in frontier knowledge, math, and coding among non-thinking models."
+    }
+  ]
+}

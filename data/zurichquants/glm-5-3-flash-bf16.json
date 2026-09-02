@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "zurichquants/GLM-5.3-Flash-BF16",
+  "slug": "zurichquants-glm-5-3-flash-bf16",
+  "author": "zurichquants",
+  "url": "https://huggingface.co/zurichquants/GLM-5.3-Flash-BF16",
+  "created_at": "2026-09-01T23:24:06.000Z",
+  "updated_at": "2026-09-01T23:24:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 642672288322,
+  "storage_human": "642.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zurichquants/GLM-5.3-Flash-BF16 · Hugging Face",
+      "url": "https://huggingface.co/zurichquants/GLM-5.3-Flash-BF16",
+      "snippet": "GLM-5.3-Flash starts from a newly trained base model, with its architecture and training recipe redesigned around capability and efficiency. For the first time in the GLM series, we introduce a hybrid architecture combining sparse and linear attention, sharply reducing long-context serving costs while preserving precise long-context capabilities."
+    },
+    {
+      "title": "GLM-5.3-Flash: Frontier Intelligence, Flash Cost - z.ai",
+      "url": "https://z.ai/blog/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash starts from a newly trained base model, with its architecture and training recipe redesigned around capability and efficiency. For the first time in the GLM series, we introduce a hybrid architecture combining sparse and linear attention, sharply reducing long-context serving costs while preserving precise long-context capabilities."
+    },
+    {
+      "title": "README.md · zai-org/GLM-5.3-Flash-BF16 at main - Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash-BF16/blob/main/README.md",
+      "snippet": "GLM-5.3-Flash starts from a newly trained base model, with its architecture and training recipe redesigned around capability and efficiency. For the first time in the GLM series, we introduce a hybrid architecture combining sparse and linear attention, sharply reducing long-context serving costs while preserving precise long-context capabilities."
+    },
+    {
+      "title": "GLM-5.3-Flash: Frontier Intelligence, Flash Cost - z.ai",
+      "url": "https://z.ai/blog/glm-5.3-flash?eicker.news",
+      "snippet": "We introduce GLM-5.3-Flash, the first natively multimodal model in the GLM-5 series. With 320B total parameters and just 18B active parameters, it outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks."
+    },
+    {
+      "title": "GLM-5.3-Flash - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash is Z.ai&#x27;s first natively multimodal model in the GLM-5 series. It is a 320B Mixture-of-Experts model with 18B active parameters, built for coding, agentic work, and visual tasks, and released under the MIT License."
+    }
+  ]
+}

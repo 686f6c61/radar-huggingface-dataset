@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "iky1e/DPDFNet4-CoreML",
+  "slug": "iky1e-dpdfnet4-coreml",
+  "author": "iky1e",
+  "url": "https://huggingface.co/iky1e/DPDFNet4-CoreML",
+  "created_at": "2026-09-02T00:15:54.000Z",
+  "updated_at": "2026-09-02T00:16:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "safetensors",
+    "audio",
+    "speech-enhancement",
+    "noise-suppression",
+    "streaming",
+    "dpdfnet",
+    "arxiv:2512.16420",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2865841,
+  "parameters_human": "2.9M",
+  "storage_bytes": 30146786,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ceva-ip/DPDFNet: Clean up noisy speech in real time with ...",
+      "url": "https://github.com/ceva-ip/DPDFNet",
+      "snippet": "Clean up noisy speech in real time with DPDFNet - open-source streaming speech enhancement for research, audio apps, and edge devices. Includes pretrained models, PyTorch code, ONNX/TFLite inference, 8/16/48 kHz support, and live demos. - ceva-ip/DPDFNet"
+    },
+    {
+      "title": "likedan/Awesome-CoreML-Models: Largest list of models for Core ... - GitHub",
+      "url": "https://github.com/likedan/Awesome-CoreML-Models",
+      "snippet": "Largest list of models for Core ML (for iOS 11+). Contribute to likedan/Awesome-CoreML-Models development by creating an account on GitHub."
+    },
+    {
+      "title": "Awesome-CoreML-Models | Largest list of models for Core ML (for iOS 11+)",
+      "url": "https://likedan.github.io/Awesome-CoreML-Models/",
+      "snippet": "Awesome-CoreML-Models Since iOS 11, Apple released Core ML framework to help developers integrate machine learning models into applications. The official documentation We&#x27;ve put up the largest collection of machine learning models in Core ML format, to help iOS, macOS, tvOS, and watchOS developers experiment with machine learning techniques. If you&#x27;ve converted a Core ML model, feel free ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=granite_speech5_ctc",
+      "snippet": "iky1e/granite-speech-5.-470m-turboctc-coreml-q8 Automatic Speech Recognition •Updated about 24 hours ago"
+    },
+    {
+      "title": "Models - Machine Learning - Apple Developer",
+      "url": "https://developer.apple.com/machine-learning/models/",
+      "snippet": "Build intelligence into your apps using machine learning models from the research community designed for Core ML."
+    }
+  ]
+}

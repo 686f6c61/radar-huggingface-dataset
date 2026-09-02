@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/sovereign-array-frontend",
+  "slug": "snapkitty-sovereign-array-frontend",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/sovereign-array-frontend",
+  "created_at": "2026-09-01T21:10:12.000Z",
+  "updated_at": "2026-09-01T23:34:39.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "custom",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "custom",
+    "code",
+    "sovereign-compute",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Snapkitty/sovereign-array-frontend · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Snapkitty/sovereign-array-frontend",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SNAPKITTYWEST/sovereign-array-frontend - GitHub",
+      "url": "https://github.com/SNAPKITTYWEST/sovereign-array-frontend",
+      "snippet": "Sovereign Array Language — Front-End The front-end for the Sovereign Array Language: an interactive browser playground that runs the same denotational semantics as the Lean 4 spec and the C++20 kernel — no Abjad, no digital root, no NP-magic."
+    },
+    {
+      "title": "Snapkitty/sovereign-array · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Snapkitty/sovereign-array",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - SNAPKITTYWEST/sovereign-array: Sovereign Array Language — Lean ...",
+      "url": "https://github.com/SNAPKITTYWEST/sovereign-array",
+      "snippet": "Sovereign Array Language A new array language scaffolded from the architectural review of the Unimath Array proposal — keeping the valid isomorphisms and discarding the fatal conflations."
+    },
+    {
+      "title": "SnapKitty Downloads — Sovereign OS Ecosystem",
+      "url": "https://collectivekitty.com/downloads",
+      "snippet": "Downloads Center Every component is downloadable, verifiable, and sovereign. No cloud lock-in. No vendor dependency. Built by one human + AI in days — what 16-27 engineers would take 12-24 months to build."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "cooler8/yejin-korean-3b-v1-sft",
+  "slug": "cooler8-yejin-korean-3b-v1-sft",
+  "author": "cooler8",
+  "url": "https://huggingface.co/cooler8/yejin-korean-3b-v1-sft",
+  "created_at": "2026-09-01T22:41:26.000Z",
+  "updated_at": "2026-09-01T22:42:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "korean",
+    "causal-lm",
+    "yejin",
+    "pretraining",
+    "8xH200",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2910916608,
+  "parameters_human": "2.91B",
+  "storage_bytes": 5821862560,
+  "storage_human": "5.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cooler8/yejin-korean-1b-v8-sft · Hugging Face",
+      "url": "https://huggingface.co/cooler8/yejin-korean-1b-v8-sft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cooler8/yejin-korean-1b-v8-sft · Discussions - Hugging Face",
+      "url": "https://huggingface.co/cooler8/yejin-korean-1b-v8-sft/discussions",
+      "snippet": "Instructions to use cooler8/yejin-korean-1b-v8-sft with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use cooler8/yejin-korean-1b-v8-sft with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "iclr2026-oral-papers/paper-details.md at main - GitHub",
+      "url": "https://github.com/XinyuLiuCs/iclr2026-oral-papers/blob/main/paper-details.md",
+      "snippet": "In the DeepCAD benchmark, our SFT model outperforms existing single-modal approaches in all three input modalities simultaneously. More importantly, after RL fine-tuning, cadrille"
+    },
+    {
+      "title": "GitHub - pathcosmos/FRANKENSTALLM: Korean 3B LLM (pure Transformer ...",
+      "url": "https://github.com/pathcosmos/FRANKENSTALLM",
+      "snippet": "Korean 3B LLM (pure Transformer) pretrained from scratch on 8× NVIDIA B200 GPUs with SFT + ORPO alignment - pathcosmos/FRANKENSTALLM"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

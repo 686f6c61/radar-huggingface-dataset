@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "i64systems/remat",
+  "slug": "i64systems-remat",
+  "author": "i64systems",
+  "url": "https://huggingface.co/i64systems/remat",
+  "created_at": "2026-09-02T01:58:09.000Z",
+  "updated_at": "2026-09-02T01:58:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - meta-pytorch/remat: torch_remat fine-grained activation ...",
+      "url": "https://github.com/meta-pytorch/remat",
+      "snippet": "torch_remat is a modern activation checkpointing implementation for PyTorch. It takes the classic recipe of non-reentrant torch.utils.checkpoint (recompute everything before backwards) and enhances it with the ability to mark regions inside the recompute region to save their activations for backward, so they don&#x27;t have to be recomputed. Compared with selective activation checkpointing (SAC ..."
+    },
+    {
+      "title": "Flir i64 App-Enabled Thermal Imaging Camera | Flir",
+      "url": "https://www.flir.com/products/i64",
+      "snippet": "Discover the Flir i64 thermal imaging camera—480 × 640 resolution, app-based inspections, guided routes, and secure data transfer for scalable thermography."
+    },
+    {
+      "title": "AI Incident Tracker",
+      "url": "https://airisk.mit.edu/ai-incident-tracker/incident-view",
+      "snippet": "View detailed analysis of each incident in the AI Incident Database, including how the incident is classified, how severe the harm is, across 13 categories of harm based on this Harm Severity Framework and a list of possible causes identified by the model. Classifications are produced by an LLM pipeline built and run by Arcola AI. Complex queries can be built by adding filters across multiple ..."
+    },
+    {
+      "title": "REversible Physics and MATerial Model Library — REMAT 1.0 documentation",
+      "url": "https://bdgiffin.github.io/remat/",
+      "snippet": "RE versible Physics and MAT erial Model Library Author: Brian Doran Giffin (brian. giffin @ okstate. edu) REMAT is a proof-of-concept reversible physics library predicated on the use of fixed-precision numerics and integer arithmetic operations to ensure that all computations are exactly bit-reversible. Consequently, prior solution states may be precisely rematerialized through direct reversal ..."
+    },
+    {
+      "title": "Remat - Keras",
+      "url": "https://keras.io/api/rematerialization/remat/",
+      "snippet": "Keras documentation: Remat Applies rematerialization to a function or layer for memory optimization. Rematerialization is a memory optimization technique that trades off computation for memory. Instead of storing intermediate results (e.g. activations) for backpropagation, they are recomputed during the backward pass. This reduces peak memory usage at the cost of increased computation time ..."
+    }
+  ]
+}

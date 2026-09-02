@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ukuwzi/Qwen3.8-27B-mlx-Q4_K_M",
+  "slug": "ukuwzi-qwen3-8-27b-mlx-q4_k_m",
+  "author": "ukuwzi",
+  "url": "https://huggingface.co/ukuwzi/Qwen3.8-27B-mlx-Q4_K_M",
+  "created_at": "2026-09-01T21:08:57.000Z",
+  "updated_at": "2026-09-02T02:01:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen",
+    "text-generation",
+    "apple-silicon",
+    "quantized",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4204731904,
+  "parameters_human": "4.20B",
+  "storage_bytes": 15153032838,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    },
+    {
+      "title": "GitHub - newbdez33/qwen3.8: Qwen3.8-27B-Uncensored-MLX local deployment ...",
+      "url": "https://github.com/newbdez33/qwen3.8",
+      "snippet": "Qwen3.8-27B-Uncensored-MLX local deployment guide for Apple Silicon - newbdez33/qwen3.8"
+    },
+    {
+      "title": "qwen/qwen3.8-27b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.8-27b",
+      "snippet": "Qwen3.8 27B is a compact, deployment-friendly dense vision-language model built on the Qwen3.5 architecture. It delivers stronger performance across coding, professional work, research, and long-horizon agentic tasks."
+    }
+  ]
+}
