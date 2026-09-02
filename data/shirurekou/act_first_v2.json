@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "shirurekou/act_first_v2",
+  "slug": "shirurekou-act_first_v2",
+  "author": "shirurekou",
+  "url": "https://huggingface.co/shirurekou/act_first_v2",
+  "created_at": "2026-09-02T10:51:15.000Z",
+  "updated_at": "2026-09-02T10:56:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:shirurekou/first",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707296,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shirurekou/act_first · Hugging Face",
+      "url": "https://huggingface.co/shirurekou/act_first",
+      "snippet": "Instructions to use shirurekou/act_first with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use shirurekou/act_first with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the policy/run inference Model ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The AI community building the future. ... Explore AI Apps or Browse 2M+ models Trending on this week"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Build Your Own AI - GitHub",
+      "url": "https://github.com/kuroko1t/build-your-own-ai",
+      "snippet": "Build Your Own AI \"What I cannot create, I do not understand.\" — Richard Feynman A curated collection of tutorials for building modern AI systems from scratch. Master AI/ML by recreating the technologies behind ChatGPT, Stable Diffusion, AI Agents, and more — from an empty file to a working system. Inspired by build-your-own-x."
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    }
+  ]
+}

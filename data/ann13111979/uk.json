@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Ann13111979/UK",
+  "slug": "ann13111979-uk",
+  "author": "Ann13111979",
+  "url": "https://huggingface.co/Ann13111979/UK",
+  "created_at": "2026-09-02T09:04:42.000Z",
+  "updated_at": "2026-09-02T09:09:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI models shock UK testers by using fake identities to try to trick ...",
+      "url": "https://www.theguardian.com/technology/2026/aug/05/openai-anthropic-models-went-rogue-cybersecurity-test-ai-security-institute",
+      "snippet": "AI Security Institute says OpenAI and Anthropic models went rogue during a cybersecurity test and showed a new type of risk"
+    },
+    {
+      "title": "AI model &#x27;targeted real people, set up fake profiles and attacked open ...",
+      "url": "https://www.dailymail.com/news/article-16029771/AI-models-targeted-real-people-set-fake-profiles.html",
+      "snippet": "The UK&#x27;s AI Security Institute has revealed leading models from OpenAI and Anthropic had attempted to trick human coders into assisting with a cyber attack."
+    },
+    {
+      "title": "Katie Price tops &#x27;AI rich list&#x27; after launching &#x27;digital twin&#x27;",
+      "url": "https://www.mirror.co.uk/3am/celebrity-news/katie-price-tops-ai-rich-36987806",
+      "snippet": "Katie Price says she&#x27;s &#x27;thrilled&#x27; after topping the &#x27;AI rich list&#x27; with her &#x27;digital twin&#x27;. In June 2025, the former glamour model announced her plans to officially bring back her ..."
+    },
+    {
+      "title": "UK Court Rules AI Models Trained on Copyrighted Works Don&#x27;t Constitute ...",
+      "url": "https://theaicounsel.net/blogs/uk-court-rules-ai-models-trained-on-copyrighted-works-dont-constitute-infringement/",
+      "snippet": "The court found that if an AI model is trained on copyrighted data, but that data isn&#x27;t present in the final model, then there is no infringement. A recent Sidley memo discusses this point, stating: \"The Court held that an article can be an infringing copy only if it actually contains or embodies the copyright work — at least transiently."
+    },
+    {
+      "title": "Anthropic resumes model testing after recent cyber incidents - IT PRO",
+      "url": "https://www.itpro.com/security/anthropic-resumes-model-testing-after-recent-cyber-incidents-but-its-introduced-new-rules-to-improve-security",
+      "snippet": "Anthropic is back to testing security models after systems went rogue - and claims the incident wasn&#x27;t entirely down to security faults but AI misalignment."
+    }
+  ]
+}

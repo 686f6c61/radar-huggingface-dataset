@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/PULSE-1B-GGUF",
+  "slug": "mradermacher-pulse-1b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/PULSE-1B-GGUF",
+  "created_at": "2026-09-02T10:22:55.000Z",
+  "updated_at": "2026-09-02T10:27:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 5400150784,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/next-1b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/next-1b-GGUF",
+      "snippet": "/ next-1b-GGUF like 0 Question Answering Transformers GGUF 15 datasets 46 languages turkish türkiye english ai lamapi gemma3 next next-x1 efficient text-generation open-source 1b huggingface large-language-model llm causal transformer artificial-intelligence machine-learning ai-research natural-language-processing nlp finetuned lightweight ..."
+    },
+    {
+      "title": "mradermacher/Muse-1B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Muse-1B-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "mradermacher / BLAST_PROCESSING-3.2-1B-GGUF",
+      "url": "https://insights-db.paloaltonetworks.com/models/mradermacher/BLAST_PROCESSING-3.2-1B-GGUF/a7d7bf04cd997e2ccc790fa302098f09bfe644fd/overview",
+      "snippet": "Discover potential threats in the mradermacher / BLAST_PROCESSING-3.2-1B-GGUF model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    }
+  ]
+}

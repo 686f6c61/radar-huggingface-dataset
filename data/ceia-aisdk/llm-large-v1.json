@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ceia-aisdk/llm-large-v1",
+  "slug": "ceia-aisdk-llm-large-v1",
+  "author": "ceia-aisdk",
+  "url": "https://huggingface.co/ceia-aisdk/llm-large-v1",
+  "created_at": "2026-09-02T02:11:27.000Z",
+  "updated_at": "2026-09-02T02:14:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ceia-aisdk",
+    "qwen",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-14B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 8988110976,
+  "storage_human": "9.0 GB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ceia-aisdk/llm-medium-v1 · Hugging Face",
+      "url": "https://huggingface.co/ceia-aisdk/llm-medium-v1",
+      "snippet": "ceia-aisdk / llm-medium-v1 like 0 Follow CEIA AI SDK 1 Text Generation GGUF ceia-aisdk qwen imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "MATLAB AI Agent SDK - GitHub",
+      "url": "https://github.com/matlab/matlab-ai-agent-sdk",
+      "snippet": "Build and run AI agents in MATLAB. Contribute to matlab/matlab-ai-agent-sdk development by creating an account on GitHub."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 125 Estimated models among 412 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "LLM model catalog · LLM Releases",
+      "url": "https://www.llm-releases.com/models",
+      "snippet": "LLM model catalog A searchable catalog of large language model releases, with source links, lifecycle dates, access details, model size, context window, and modality filters."
+    }
+  ]
+}

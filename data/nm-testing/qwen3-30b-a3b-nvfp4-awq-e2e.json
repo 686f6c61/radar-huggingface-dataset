@@ -5,7 +5,7 @@
   "author": "nm-testing",
   "url": "https://huggingface.co/nm-testing/Qwen3-30B-A3B-NVFP4-AWQ-e2e",
   "created_at": "2026-07-25T05:46:22.000Z",
-  "updated_at": "2026-09-01T02:54:51.000Z",
+  "updated_at": "2026-09-02T03:28:38.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,12 +19,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 382,
+  "downloads_30d": 383,
   "trending_score": 0,
   "parameters": 30532122624,
   "parameters_human": "30.53B",
-  "storage_bytes": 941057165079,
-  "storage_human": "941.1 GB",
+  "storage_bytes": 977250792759,
+  "storage_human": "977.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

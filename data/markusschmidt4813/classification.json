@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "markusschmidt4813/classification",
+  "slug": "markusschmidt4813-classification",
+  "author": "markusschmidt4813",
+  "url": "https://huggingface.co/markusschmidt4813/classification",
+  "created_at": "2026-09-02T01:29:35.000Z",
+  "updated_at": "2026-09-02T01:29:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "markusschmidt4813/cs224n-parser at main - Hugging Face",
+      "url": "https://huggingface.co/markusschmidt4813/cs224n-parser/tree/main",
+      "snippet": "markusschmidt4813 / cs224n-parser like 0 critical html intro-problem-solution-validation-future knowledge-distillation long-detailed mixed-active-passive numeric-nature theoretical-rigorous unstructured-narrative License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new main cs224n-parser 6.16 kB Ctrl+K Ctrl+K 1 contributor History:2 commits markusschmidt4813 Upload ..."
+    },
+    {
+      "title": "markusschmidt4813/cs224n-parser · Hugging Face",
+      "url": "https://huggingface.co/markusschmidt4813/cs224n-parser",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 125 Estimated models among 412 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "GPTZero detects AI content from Claude, ChatGPT, GPT-5, Gemini, and checks writing quality to make every word worth reading."
+    }
+  ]
+}

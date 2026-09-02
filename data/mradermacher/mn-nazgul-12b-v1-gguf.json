@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MN-Nazgul-12B-v1-GGUF",
+  "slug": "mradermacher-mn-nazgul-12b-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MN-Nazgul-12B-v1-GGUF",
+  "created_at": "2026-09-02T10:13:10.000Z",
+  "updated_at": "2026-09-02T10:27:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 24933625696,
+  "storage_human": "24.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/MN-Adversary-12B-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/MN-Adversary-12B-v1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/MN-12b-Rosier-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/MN-12b-Rosier-v1-GGUF",
+      "snippet": "mradermacher / MN-12b-Rosier-v1-GGUF like 2 Transformers GGUF RyokoExtra/FallingThroughTheSkies-592k Fizzarolli/fse-raw-dump Fizzarolli/yiff-extreme English Not-For-All-Audiences Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/MN-12B-Mag-Mell-R1-GGUF - Endor Labs",
+      "url": "https://www.endorlabs.com/ai-model/mradermacher-mn-12b-mag-mell-r1-gguf",
+      "snippet": "mradermacher/MN-12B-Mag-Mell-R1-GGUF AI model with 27725 downloads"
+    },
+    {
+      "title": "MN-12B-Mag-Mell-R1: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/mn-12b-mag-mell-r1-inflatebot",
+      "snippet": "MN-12B-Mag-Mell-R1-GGUF by mradermacher provides static and weighted imatrix quantizations of this exact model, offering GGUF variants at different bit depths (Q2_K, Q4_K, Q6_K, Q8)."
+    },
+    {
+      "title": "mradermacher / MN-12B-Estrella-v1-i1-GGUF",
+      "url": "https://insights-db.paloaltonetworks.com/models/mradermacher/MN-12B-Estrella-v1-i1-GGUF/6b122a66fc96ceb87389e29dd1b6d2c741370cb2/overview",
+      "snippet": "Discover potential threats in the mradermacher / MN-12B-Estrella-v1-i1-GGUF model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    }
+  ]
+}

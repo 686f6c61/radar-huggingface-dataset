@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kiroaiseoul/act_task09_close_refrigerator_60k",
+  "slug": "kiroaiseoul-act_task09_close_refrigerator_60k",
+  "author": "kiroaiseoul",
+  "url": "https://huggingface.co/kiroaiseoul/act_task09_close_refrigerator_60k",
+  "created_at": "2026-09-02T11:01:28.000Z",
+  "updated_at": "2026-09-02T11:02:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:kiroaiseoul/task09_close_refrigerator",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51689104,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206791272,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kiroaiseoul/task09_close_refrigerator · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/kiroaiseoul/task09_close_refrigerator",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kiroaiseoul/task09_close_refrigerator at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/kiroaiseoul/task09_close_refrigerator/tree/main",
+      "snippet": "Datasets: kiroaiseoul / task09_close_refrigerator like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot Libraries: Datasets Dask Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community 1 main task09_close_refrigerator 579 MB 1 contributor History:43 commits kiroaiseoul Upload README.md with huggingface ..."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "MONAI Model Zoo - GitHub",
+      "url": "https://github.com/Project-MONAI/model-zoo",
+      "snippet": "MONAI Model Zoo hosts a collection of medical imaging models in the MONAI Bundle format. All source code of models (bundles) are tracked in models/, and for each distinct version of a bundle, it will be archived as a .zip file (named in the form of bundle_name_version.zip) and stored in Releases."
+    },
+    {
+      "title": "KrishnaK7/ai-engineering-projects - GitHub",
+      "url": "https://github.com/KrishnaK7/ai-engineering-projects",
+      "snippet": "AI Engineering is advancing rapidly, and staying at the forefront requires both deep understanding and hands-on experience. Here, you will find: 93+ Production-Ready Projects across all skill levels In-depth tutorials on LLMs, RAG, Agents, and more Real-world AI agent applications Examples to implement, adapt, and scale in your projects Whether you&#x27;re a beginner, practitioner, or researcher ..."
+    }
+  ]
+}

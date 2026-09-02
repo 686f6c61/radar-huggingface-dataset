@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "pplatanou/greek-letter-convnextv2-jocch",
+  "slug": "pplatanou-greek-letter-convnextv2-jocch",
+  "author": "pplatanou",
+  "url": "https://huggingface.co/pplatanou/greek-letter-convnextv2-jocch",
+  "created_at": "2026-09-02T11:17:37.000Z",
+  "updated_at": "2026-09-02T11:17:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "computer-vision",
+    "image-classification",
+    "digital-humanities",
+    "historical-documents",
+    "ancient-greek",
+    "paleography",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 293160694,
+  "storage_human": "293 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Paraskevi Platanou - ACL Anthology",
+      "url": "https://aclanthology.org/people/paraskevi-platanou/unverified/",
+      "snippet": "A large masked language model, pre-trained in modern and fine-tuned in Byzantine Greek, achieves an Average Precision score of 95%. The score improves to 97% when using a model that is pre-trained in modern and then in ancient Greek, the two language forms Byzantine Greek combines elements from."
+    },
+    {
+      "title": "GitHub - facebookresearch/ConvNeXt-V2: Code release for ConvNeXt V2 model",
+      "url": "https://github.com/facebookresearch/ConvNeXt-V2",
+      "snippet": "This co-design of self-supervised learning techniques and architectural improvement results in a new model family called ConvNeXt V2, which significantly improves the performance of pure ConvNets on various recognition benchmarks. We also provide pre-trained ConvNeXt V2 models of various sizes."
+    },
+    {
+      "title": "[2301.00808] ConvNeXt V2: Co-designing and Scaling ConvNets with Masked ...",
+      "url": "https://arxiv.org/abs/2301.00808",
+      "snippet": "Driven by improved architectures and better representation learning frameworks, the field of visual recognition has enjoyed rapid modernization and performance boost in the early 2020s. For example, modern ConvNets, represented by ConvNeXt, have demonstrated strong performance in various scenarios. While these models were originally designed for supervised learning with ImageNet labels, they ..."
+    },
+    {
+      "title": "ConvNeXt-V2/README.md at main - GitHub",
+      "url": "https://github.com/facebookresearch/ConvNeXt-V2/blob/main/README.md?plain=1",
+      "snippet": "This co-design of self-supervised learning techniques and architectural improvement results in a new model family called ConvNeXt V2, which significantly improves the performance of pure ConvNets on various recognition benchmarks."
+    },
+    {
+      "title": "ConvNeXt V2 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.37.0/model_doc/convnextv2",
+      "snippet": "The bare ConvNextV2 model outputting raw features without any specific head on top. This model is a PyTorch torch.nn.Module subclass. Use it as a regular PyTorch Module and refer to the PyTorch documentation for all matter related to general usage and behavior."
+    }
+  ]
+}

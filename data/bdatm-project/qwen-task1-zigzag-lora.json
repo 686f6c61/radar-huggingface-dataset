@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bdatm-project/qwen-task1-zigzag-lora",
+  "slug": "bdatm-project-qwen-task1-zigzag-lora",
+  "author": "bdatm-project",
+  "url": "https://huggingface.co/bdatm-project/qwen-task1-zigzag-lora",
+  "created_at": "2026-09-02T11:21:00.000Z",
+  "updated_at": "2026-09-02T11:21:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45576707,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GilbertAkham/gilbert-qwen-multitask-lora · Hugging Face",
+      "url": "https://huggingface.co/GilbertAkham/gilbert-qwen-multitask-lora",
+      "snippet": "Gilbert-Qwen-Multitask-LoRA LoRA fine-tuned Qwen1.5-1.8B-Chat for multiple text generation tasks including email drafting, story continuation, technical Q&A, news summarization, and chat responses. Model Description This model is a LoRA (Low-Rank Adaptation) adapter fine-tuned on Qwen1.5-1.8B-Chat for multitask text generation across 5 domains: ️ Email Drafting: Generate professional email ..."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs - GitHub",
+      "url": "https://github.com/artidoro/qlora",
+      "snippet": "QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters (LoRA). Our best model family, which we name Guanaco, outperforms all previous openly released models on the Vicuna benchmark, reaching 99.3% of the performance level of ChatGPT while only requiring 24 hours of finetuning on a ..."
+    },
+    {
+      "title": "Q-LoRA Fine-tuning | QwenLM/Qwen | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen/4.3-q-lora-fine-tuning",
+      "snippet": "Q-LoRA fine-tuning provides an efficient way to adapt Qwen models to specific tasks with limited computational resources. By using quantized models and low-rank adaptation, it enables fine-tuning of large language models on consumer hardware while maintaining good performance."
+    },
+    {
+      "title": "GitHub - AdityaSagarr/LLM-Fine-Tuning: This project showcases fine ...",
+      "url": "https://github.com/AdityaSagarr/LLM-Fine-Tuning",
+      "snippet": "LoRA is a technique that reduces the number of parameters updated during fine-tuning by introducing low-rank matrices into the model. This results in efficient use of memory while retaining the ability to adapt the model for a new task. Why use LoRA? LoRA helps save computational resources while still enabling meaningful fine-tuning of large models."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "omkarpatil/ffw_sg2_blue-cylinder-handover_groot-n1.7_nonorm",
+  "slug": "omkarpatil-ffw_sg2_blue-cylinder-handover_groot-n1-7_nonorm",
+  "author": "omkarpatil",
+  "url": "https://huggingface.co/omkarpatil/ffw_sg2_blue-cylinder-handover_groot-n1.7_nonorm",
+  "created_at": "2026-09-02T01:07:27.000Z",
+  "updated_at": "2026-09-02T06:13:35.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "gr00t",
+    "vla",
+    "robotis",
+    "ffw_sg2",
+    "cyclo_intelligence",
+    "dataset:omkarpatil/blue-cylinder-handover",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9529207337,
+  "storage_human": "9.5 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SmolVLA (nonorm) — FFW SG2 rev1 — blue-cylinder-handover",
+      "url": "https://huggingface.co/omkarpatil/ffw_sg2_blue-cylinder-handover_smolvla_nonorm",
+      "snippet": "Instructions to use omkarpatil/ffw_sg2_blue-cylinder-handover_smolvla_nonorm with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ffw_sg2_blue-cylinder-handover_groot-n1.7_nonorm - Hugging Face",
+      "url": "https://huggingface.co/omkarpatil/ffw_sg2_blue-cylinder-handover_groot-n1.7_nonorm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "NVIDIA Isaac GR00T N1.7 is an open vision-language-action (VLA) model for generalized humanoid robot skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    },
+    {
+      "title": "Omkar Patil",
+      "url": "https://omkarpatil18.github.io/",
+      "snippet": "Personal webpage of Omkar Patil, PhD @ ASU Diffusion models have been extensively leveraged for learning robot skills from demonstrations. These policies are conditioned on several observational modalities such as proprioception, vision, and tactile. However, observational modalities have varying levels of influence for different tasks that diffusion policies fail to capture. In this work, we ..."
+    },
+    {
+      "title": "GR00T-WholeBodyControl - GitHub",
+      "url": "https://github.com/NVlabs/GR00T-WholeBodyControl",
+      "snippet": "This is the codebase for the GR00T Whole-Body Control (WBC) projects. It hosts model checkpoints and scripts for training, evaluating, and deploying advanced whole-body controllers for humanoid robots. We currently support: Decoupled WBC: the decoupled controller (RL for lower body, and IK for upper body) used in NVIDIA GR00T N1.5 and N1.6 models; GEAR-SONIC Series: our latest iteration of ..."
+    }
+  ]
+}

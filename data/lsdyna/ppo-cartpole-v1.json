@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "lsdyna/ppo-CartPole-v1",
+  "slug": "lsdyna-ppo-cartpole-v1",
+  "author": "lsdyna",
+  "url": "https://huggingface.co/lsdyna/ppo-CartPole-v1",
+  "created_at": "2026-09-02T08:00:43.000Z",
+  "updated_at": "2026-09-02T08:07:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "CartPole-v1",
+    "ppo",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 150512,
+  "storage_human": "150512 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LTU-AI/hdppo-CartPole-v1 · Hugging Face",
+      "url": "https://huggingface.co/LTU-AI/hdppo-CartPole-v1",
+      "snippet": "/ hdppo-CartPole-v1 like 0 Follow La Trobe AI Institute 1 Reinforcement Learning hd-ppo CartPole-v1 deep-reinforcement-learning hyperdimensional-computing fractional-power-encoding LTU-AI Eval Results (legacy) Model card FilesFiles and versions xet Community Copy to bucket new HD-PPO Agent playing CartPole-v1 Usage Training pipeline ..."
+    },
+    {
+      "title": "MPOnline_AIML_Projects/cartpole at main · TarunKandwal10 ... - GitHub",
+      "url": "https://github.com/TarunKandwal10/MPOnline_AIML_Projects/tree/main/cartpole",
+      "snippet": "This project implements the Proximal Policy Optimization (PPO) algorithm to solve the Gymnasium CartPole-v1 environment using Stable-Baselines3."
+    },
+    {
+      "title": "GitHub - Abhinav180305/CARTPOLE-PPO: Developed a Reinforcement Learning ...",
+      "url": "https://github.com/Abhinav180305/CARTPOLE-PPO",
+      "snippet": "CartPole Balancing with PPO (Stable-Baselines3) Assignment 1 — trains a PPO agent to solve the CartPole-v1 Gymnasium environment using Stable-Baselines3, evaluates it, plots the learning curve, and includes an interactive browser visualizer of the trained agent&#x27;s behaviour."
+    },
+    {
+      "title": "PDF A Flexible Method to Integrate AI Models (PyTorch) into LS-DYNA User ...",
+      "url": "https://lsdyna.ansys.com/wp-content/uploads/2025/11/AIML_Betancourt_BMW.pdf",
+      "snippet": "The relevance of this work lies in enabling AI model designers to test online predictions of their models within a commercial FEM software. Evaluating the AI models in LS-DYNA is essential to understand their interaction with the FEM solver, including issues related to stability, ranges of validity, generalization, and time performance."
+    },
+    {
+      "title": "HumanCompatibleAI/ppo-CartPole-v1 · Hugging Face",
+      "url": "https://huggingface.co/HumanCompatibleAI/ppo-CartPole-v1",
+      "snippet": "This is a trained model of a PPO agent playing CartPole-v1 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    }
+  ]
+}

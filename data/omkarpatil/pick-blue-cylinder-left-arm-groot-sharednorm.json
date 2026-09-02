@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "omkarpatil/pick-blue-cylinder-left-arm-groot-sharednorm",
+  "slug": "omkarpatil-pick-blue-cylinder-left-arm-groot-sharednorm",
+  "author": "omkarpatil",
+  "url": "https://huggingface.co/omkarpatil/pick-blue-cylinder-left-arm-groot-sharednorm",
+  "created_at": "2026-09-02T07:34:29.000Z",
+  "updated_at": "2026-09-02T07:37:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "Gr00tN1d7",
+    "robotics",
+    "gr00t",
+    "vla",
+    "ffw_sg2_rev1",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576200896,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "omkarpatil/pick-blue-cylinder-left-arm · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/omkarpatil/pick-blue-cylinder-left-arm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "omkarpatil (Omkar Patil) - Hugging Face",
+      "url": "https://huggingface.co/omkarpatil/models",
+      "snippet": "omkarpatil&#x27;s models8 Sort: Recently updated omkarpatil/ffw_sg2_pick-blue-cylinder-left-arm_groot-n1.7 Robotics •Updated about 10 hours ago"
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "Model package changed from gr00t_n1d6 to gr00t_n1d7, so codepaths and processor metadata move to the N1.7 namespace. VLM backbone changed from vendored Eagle, nvidia/Eagle-Block2A-2B-v2, to nvidia/Cosmos-Reason2-2B via Qwen3-VL."
+    },
+    {
+      "title": "GR00T N1.5 - research.nvidia.com",
+      "url": "https://research.nvidia.com/labs/gear/gr00t-n1_5/",
+      "snippet": "GR00T N1.5 An Improved Open Foundation Model for Generalist Humanoid Robots 11 June 2025 GitHub • Model Card GR00T N1.5 Policy rollout with language prompt: \"Pick the apple from table to plate\""
+    },
+    {
+      "title": "Isaac GR00T: Vision-Language-Action Models — Train an SO-101 Robot From ...",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/10-groot.html",
+      "snippet": "What Is a Vision-Language-Action Model? # Vision-Language-Action (VLA) models are foundation models that take visual input and language instructions and output low-level or mid-level actions for an embodied agent, such as a robot."
+    }
+  ]
+}

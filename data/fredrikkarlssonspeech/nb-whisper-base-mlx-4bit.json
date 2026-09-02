@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "FredrikKarlssonSpeech/nb-whisper-base-mlx-4bit",
+  "slug": "fredrikkarlssonspeech-nb-whisper-base-mlx-4bit",
+  "author": "FredrikKarlssonSpeech",
+  "url": "https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-base-mlx-4bit",
+  "created_at": "2026-09-02T10:38:16.000Z",
+  "updated_at": "2026-09-02T10:38:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "nb",
+    "no"
+  ],
+  "tags": [
+    "mlx",
+    "whisper",
+    "automatic-speech-recognition",
+    "4-bit",
+    "nb",
+    "no",
+    "base_model:NbAiLab/nb-whisper-base",
+    "base_model:finetune:NbAiLab/nb-whisper-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42216236,
+  "storage_human": "42 MB",
+  "base_model": "NbAiLab/nb-whisper-base",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FredrikKarlssonSpeech/nb-whisper-base-onnx · Hugging Face",
+      "url": "https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-base-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FredrikKarlssonSpeech/nb-whisper-base-onnx at main",
+      "url": "https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-base-onnx/tree/main",
+      "snippet": "FredrikKarlssonSpeech / nb-whisper-base-onnx like 0 Automatic Speech Recognition Transformers ONNX Norwegian Bokmål Norwegian whisper License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "GitHub - NbAiLab/nb-whisper",
+      "url": "https://github.com/NbAiLab/nb-whisper",
+      "snippet": "nb-whisper This is the code for the Whisper training at the National Library of Norway. Currently the main project at the moment is training Whisper using Flax on TPUs."
+    },
+    {
+      "title": "MLX",
+      "url": "https://mlx-framework.org/",
+      "snippet": "MLX LM - a Python package for generating text and fine-tuning language models on Apple silicon. MLX Whisper - a Python package for speech transcription using OpenAI&#x27;s Whisper models. MLX Examples - standalone examples in the MLX framework including image generation, speech and music generation, language model training and many more."
+    }
+  ]
+}

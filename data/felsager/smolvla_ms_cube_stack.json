@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "felsager/smolvla_ms_cube_stack",
+  "slug": "felsager-smolvla_ms_cube_stack",
+  "author": "felsager",
+  "url": "https://huggingface.co/felsager/smolvla_ms_cube_stack",
+  "created_at": "2026-09-02T07:40:42.000Z",
+  "updated_at": "2026-09-02T07:41:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:felsager/ManiSkill_StackCube-v1_mp",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906717708,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "felsager (David Felsager) - Hugging Face",
+      "url": "https://huggingface.co/felsager/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 months ago ... published a model about 2 months ago"
+    },
+    {
+      "title": "SmolVLA: Efficient Vision-Language-Action Model trained on Lerobot ...",
+      "url": "https://huggingface.co/blog/smolvla",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SmolVLA: An Open-Source Vision-Language-Action Model for Modern Robotics",
+      "url": "https://smolvla.net/index_en",
+      "snippet": "SmolVLA A compact, efficient, and powerful vision-language-action model for modern robotics. 🚀 Meet SmolVLA SmolVLA is a groundbreaking Vision-Language-Action (VLA) model with only 450 million parameters, developed by Hugging Face. It&#x27;s carefully designed for cost-effective deployment on consumer-grade hardware, making advanced robotics technology accessible to more developers and ..."
+    },
+    {
+      "title": "SmolVLA: A vision-language-action model for affordable and efficient ...",
+      "url": "https://arxiv.org/html/2506.01844v1",
+      "snippet": "To assess SmolVLA&#x27;s generalization, we also evaluate our model on a different robot embodiment and task 8, similar to pick-place but rather using a small block instead of a cube."
+    },
+    {
+      "title": "SmolVLA - LeRobot Documentation",
+      "url": "https://dctx-team.github.io/lerobot-zh/en/smolvla/",
+      "snippet": "SmolVLA SmolVLA is Hugging Face&#x27;s lightweight foundation model for robotics. Designed for easy fine-tuning on LeRobot datasets, it helps accelerate your development! Figure 1. SmolVLA takes as input (i) multiple cameras views, (ii) the robot&#x27;s current sensorimotor state, and (iii) a natural language instruction, encoded into contextual features used to condition the action expert when ..."
+    }
+  ]
+}

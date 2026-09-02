@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "fla-hub/RWKV7-G1j-2.9B-20260831",
+  "slug": "fla-hub-rwkv7-g1j-2-9b-20260831",
+  "author": "fla-hub",
+  "url": "https://huggingface.co/fla-hub/RWKV7-G1j-2.9B-20260831",
+  "created_at": "2026-09-02T10:49:20.000Z",
+  "updated_at": "2026-09-02T10:49:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "fr",
+    "es",
+    "de",
+    "pt",
+    "ru",
+    "it",
+    "ja",
+    "ko",
+    "vi",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rwkv7",
+    "text-generation",
+    "rwkv",
+    "fla",
+    "recurrent",
+    "causal-lm",
+    "conversational",
+    "en",
+    "zh",
+    "fr",
+    "es",
+    "de",
+    "pt",
+    "ru",
+    "it",
+    "ja",
+    "ko",
+    "vi",
+    "ar",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:cerebras/SlimPajama-627B",
+    "dataset:EleutherAI/pile",
+    "dataset:bigcode/starcoderdata",
+    "dataset:oscar-corpus/OSCAR-2301",
+    "arxiv:2503.14456",
+    "base_model:BlinkDL/rwkv7-g1",
+    "base_model:finetune:BlinkDL/rwkv7-g1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2947735040,
+  "parameters_human": "2.95B",
+  "storage_bytes": 5895584920,
+  "storage_human": "5.9 GB",
+  "base_model": "BlinkDL/rwkv7-g1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fla-hub/rwkv7-2.9B-g1 · Hugging Face",
+      "url": "https://huggingface.co/fla-hub/rwkv7-2.9B-g1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fla-hub/RWKV7-G1i-2.9B-20260805 · Hugging Face",
+      "url": "https://huggingface.co/fla-hub/RWKV7-G1i-2.9B-20260805",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "flash-linear-attention/fla/layers/rwkv7.py at main - GitHub",
+      "url": "https://github.com/fla-org/flash-linear-attention/blob/main/fla/layers/rwkv7.py",
+      "snippet": "🚀 Efficient implementations for emerging model architectures - fla-org/flash-linear-attention"
+    },
+    {
+      "title": "RWKV Language Model",
+      "url": "https://www.rwkv.com/",
+      "snippet": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance and parallelizable like a Transformer. Check RWKV-7 \"Goose\" reasoning models. It&#x27;s combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctxlen, and free text embedding. And it&#x27;s 100% attention-free, and a Linux Foundation AI project."
+    },
+    {
+      "title": "RWKV Models | fla-org/flash-linear-attention | DeepWiki",
+      "url": "https://deepwiki.com/fla-org/flash-linear-attention/6.3-rwkv-models",
+      "snippet": "RWKV Models Relevant source files This page documents the implementation of RWKV6 and RWKV7 models in the FLA library. These models implement the \"Receptance Weighted Key Value\" (RWKV) architecture, a recurrent neural network design that achieves transformer-like performance with linear complexity. For other model architectures, see Other Model Implementations. For the general model structure ..."
+    }
+  ]
+}

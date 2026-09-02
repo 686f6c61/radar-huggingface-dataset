@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Poon1214/Qwen35_0_8B_Companion_AllBehaviors_GGUF",
+  "slug": "poon1214-qwen35_0_8b_companion_allbehaviors_gguf",
+  "author": "Poon1214",
+  "url": "https://huggingface.co/Poon1214/Qwen35_0_8B_Companion_AllBehaviors_GGUF",
+  "created_at": "2026-08-24T11:57:38.000Z",
+  "updated_at": "2026-09-02T10:20:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 336,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 2709517280,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poon1214/Qwen35_0_8B_Companion_GGUF · Hugging Face",
+      "url": "https://huggingface.co/Poon1214/Qwen35_0_8B_Companion_GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Poon1214 (Poon) - Hugging Face",
+      "url": "https://huggingface.co/Poon1214/models",
+      "snippet": "Poon1214/Qwen35_0_8B_Companion_AllBehaviors_GGUF 0.8B•Updated about 18 hours ago• 92 • 1"
+    },
+    {
+      "title": "Qwen3.5-0.8B-GGUF huggingface.co api & unsloth Qwen3.5-0.8B-GGUF github ...",
+      "url": "https://www.toolify.ai/ai-model/unsloth-qwen3-5-0-8b-gguf",
+      "snippet": "Qwen3.5-.8B-GGUF is an open source model from GitHub that offers a free installation service, and any user can find Qwen3.5-.8B-GGUF on GitHub to install. At the same time, huggingface.co provides the effect of Qwen3.5-.8B-GGUF install, users can directly use Qwen3.5-.8B-GGUF installed effect in huggingface.co for debugging and trial."
+    },
+    {
+      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b",
+      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "PreDoctor/gemma-4-31B-it-qat-w4a16-ct-PreTensor",
+  "slug": "predoctor-gemma-4-31b-it-qat-w4a16-ct-pretensor",
+  "author": "PreDoctor",
+  "url": "https://huggingface.co/PreDoctor/gemma-4-31B-it-qat-w4a16-ct-PreTensor",
+  "created_at": "2026-09-02T06:52:06.000Z",
+  "updated_at": "2026-09-02T09:05:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "pretensor",
+  "languages": [],
+  "tags": [
+    "pretensor",
+    "safetensors",
+    "gemma4",
+    "gemma-4",
+    "multimodal",
+    "w4a16",
+    "image-text-to-text",
+    "conversational",
+    "base_model:google/gemma-4-31B-it-qat-w4a16-ct",
+    "base_model:quantized:google/gemma-4-31B-it-qat-w4a16-ct",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32682375020,
+  "parameters_human": "32.68B",
+  "storage_bytes": 46562878042,
+  "storage_human": "46.6 GB",
+  "base_model": "google/gemma-4-31B-it-qat-w4a16-ct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-31B-it-qat-w4a16-ct · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-31B-it-qat-w4a16-ct",
+      "snippet": "Available for Gemma 4 E2B, E4B, 12B, and 31B. Assistant Compatibility: When using multi-token prediction (speculative decoding) with an assistant model alongside a QAT target model, the assistant model must also be a QAT checkpoint with the same precision to ensure compatibility. Gemma is a family of open models built by Google DeepMind."
+    },
+    {
+      "title": "google/gemma-4-31B-it-qat-q4_0-unquantized · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-31B-it-qat-q4_0-unquantized",
+      "snippet": "Overall, Gemma 4 models significantly outperform Gemma 3 and 3n models in improving safety, while keeping unjustified refusals low. All testing was conducted without safety filters to evaluate the model capabilities and behaviors."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 model overview - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core",
+      "snippet": "Compressed Tensors (-w4a16-ct): Serialized natively in the compressed-tensors standard for optimized, high-concurrency cloud serving. Available for Gemma 4 E2B, E4B, 12B, and 31B."
+    },
+    {
+      "title": "google/gemma-4-31b-qat • LM Studio",
+      "url": "https://lmstudio.ai/models/google/gemma-4-31b-qat",
+      "snippet": "Gemma 4 is an open multimodal model family from Google DeepMind. It supports text and image input, text output, reasoning, long context, system prompts, and native tool use. Gemma 4 31B is a larger Gemma 4 model. It is suited for stronger reasoning, coding, and agentic workflows while still benefiting from the memory savings of QAT."
+    }
+  ]
+}

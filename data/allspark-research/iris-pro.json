@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "AllSpark-Research/Iris-pro",
+  "slug": "allspark-research-iris-pro",
+  "author": "AllSpark-Research",
+  "url": "https://huggingface.co/AllSpark-Research/Iris-pro",
+  "created_at": "2026-09-01T16:47:25.000Z",
+  "updated_at": "2026-09-02T09:46:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 379826337672,
+  "storage_human": "379.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iris/README.md at main · AllSpark-Research/Iris · GitHub",
+      "url": "https://github.com/AllSpark-Research/Iris/blob/main/README.md",
+      "snippet": "Climbing to the Search Frontier. Contribute to AllSpark-Research/Iris development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - AllSpark-Research/Iris: Climbing to the Search Frontier.",
+      "url": "https://github.com/AllSpark-Research/Iris/tree/main",
+      "snippet": "Climbing to the Search Frontier. Contribute to AllSpark-Research/Iris development by creating an account on GitHub."
+    },
+    {
+      "title": "Home Page - AllSparkResearch",
+      "url": "https://allsparkresearch.com/",
+      "snippet": "Uniting influencers and innovators at Premier Crypto Conferences Worldwide"
+    },
+    {
+      "title": "Iris.ai | AI knowledge foundation for regulated enterprises",
+      "url": "https://iris.ai/",
+      "snippet": "Augment expert knowledge by unifying complex enterprise data to empower next-gen AI agents & applications"
+    },
+    {
+      "title": "ALL-43: AllSpark Builder AI Model Usage Analysis · GitHub",
+      "url": "https://gist.github.com/schpet/102b9978398fb275236c75a5d50a39b9",
+      "snippet": "Overview AllSpark Builder uses multiple AI models across different services. This document maps out which services use which models, whether they have user-configurable model selection, and identifies where model selection should be added."
+    }
+  ]
+}

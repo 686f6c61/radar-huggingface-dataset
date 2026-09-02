@@ -9,7 +9,7 @@
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
-  "library": null,
+  "library": "shadow",
   "languages": [
     "en"
   ],
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 19,
-  "downloads_30d": 215,
+  "downloads_30d": 238,
   "trending_score": 8,
   "parameters": null,
   "parameters_human": null,

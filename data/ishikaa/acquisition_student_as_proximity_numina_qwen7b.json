@@ -4,8 +4,8 @@
   "slug": "ishikaa-acquisition_student_as_proximity_numina_qwen7b",
   "author": "ishikaa",
   "url": "https://huggingface.co/ishikaa/acquisition_student_AS_proximity_numina_qwen7b",
-  "created_at": "2026-08-21T11:58:52.000Z",
-  "updated_at": "2026-08-31T14:17:14.000Z",
+  "created_at": "2026-09-01T06:12:59.000Z",
+  "updated_at": "2026-09-01T18:23:43.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,20 +25,20 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 792,
+  "downloads_30d": 913,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
-  "storage_bytes": 60936509352,
-  "storage_human": "60.9 GB",
+  "storage_bytes": 30473965624,
+  "storage_human": "30.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-01T05:23:12.968Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

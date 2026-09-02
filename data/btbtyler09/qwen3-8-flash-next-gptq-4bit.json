@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "btbtyler09/Qwen3.8-Flash-Next-GPTQ-4bit",
+  "slug": "btbtyler09-qwen3-8-flash-next-gptq-4bit",
+  "author": "btbtyler09",
+  "url": "https://huggingface.co/btbtyler09/Qwen3.8-Flash-Next-GPTQ-4bit",
+  "created_at": "2026-09-02T01:35:14.000Z",
+  "updated_at": "2026-09-02T02:35:20.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "qwen3.8",
+    "qwen4",
+    "moe",
+    "gptq",
+    "quantized",
+    "4-bit",
+    "vllm",
+    "vision",
+    "multimodal",
+    "mtp",
+    "ngram",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 187717755674,
+  "storage_human": "187.7 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Qwen4 architecture preview with a 125B-parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. Qwen3.8 -Flash-Next outperforms Claude-4.6-Opus (Max) and can run locally on devices with 75GB RAM /unified memory with no GPU VRAM required."
+    },
+    {
+      "title": "qwen3.8-flash-next - ollama.com",
+      "url": "https://ollama.com/library/qwen3.8-flash-next",
+      "snippet": "Qwen3.8-Flash-Next is the first open-weight model built on the architecture that will underpin Qwen4. It is a multimodal mixture-of-experts model with 125B total parameters and only 6B active per token, designed for cost-efficient inference across agentic coding, tool use, and vision tasks, with a native 256K context window."
+    }
+  ]
+}

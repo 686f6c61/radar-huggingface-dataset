@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kaanhgunay/pocket-tts-tr",
+  "slug": "kaanhgunay-pocket-tts-tr",
+  "author": "kaanhgunay",
+  "url": "https://huggingface.co/kaanhgunay/pocket-tts-tr",
+  "created_at": "2026-09-02T07:44:19.000Z",
+  "updated_at": "2026-09-02T07:51:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pocket-tts",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "pocket-tts",
+    "safetensors",
+    "tts",
+    "turkish",
+    "turkish-tts",
+    "speech",
+    "voice-cloning",
+    "text-to-speech",
+    "tr",
+    "dataset:serdarcaglar/turkish-tts-audiobooks",
+    "base_model:kyutai/pocket-tts",
+    "base_model:finetune:kyutai/pocket-tts",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 336068290,
+  "parameters_human": "336.1M",
+  "storage_bytes": 1344618128,
+  "storage_human": "1.3 GB",
+  "base_model": "kyutai/pocket-tts",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - kyutai-labs/pocket-tts: A TTS that fits in your CPU (and pocket)",
+      "url": "https://github.com/kyutai-labs/pocket-tts",
+      "snippet": "A TTS that fits in your CPU (and pocket). Contribute to kyutai-labs/pocket-tts development by creating an account on GitHub."
+    },
+    {
+      "title": "Pocket TTS - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/Pocket_TTS",
+      "snippet": "Pocket TTS is a lightweight, open-source text-to-speech model developed by the French AI research laboratory Kyutai and released in September 2025. With approximately 100 million parameters in its distilled inference form, Pocket TTS achieves speech synthesis quality competitive with much larger models while running faster than real time on a standard laptop CPU without requiring a graphics ..."
+    },
+    {
+      "title": "Pocket-TTS - Lightweight, Open-Source Text-to-Speech",
+      "url": "https://pockettts.org/",
+      "snippet": "Pocket-TTS is an open-source text-to-speech library focused on fast iteration, portability, and developer-friendly integration."
+    },
+    {
+      "title": "Pocket TTS - kyutai-labs.github.io",
+      "url": "https://kyutai-labs.github.io/pocket-tts/",
+      "snippet": "Pocket TTS is designed to run on CPU, and on hardware with strong single-thread CPU performance (e.g. Apple Silicon) we did not observe a GPU speedup, notably because we use a batch size of 1 and a very small model."
+    },
+    {
+      "title": "ai-pocket-tts/README.md at main · summercms/ai-pocket-tts",
+      "url": "https://github.com/summercms/ai-pocket-tts/blob/main/README.md",
+      "snippet": "A TTS that fits in your CPU (and pocket). Contribute to summercms/ai-pocket-tts development by creating an account on GitHub."
+    }
+  ]
+}

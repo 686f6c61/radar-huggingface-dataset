@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "rav009/VoxCPM2-lora-xiaochenxuejie",
+  "slug": "rav009-voxcpm2-lora-xiaochenxuejie",
+  "author": "rav009",
+  "url": "https://huggingface.co/rav009/VoxCPM2-lora-xiaochenxuejie",
+  "created_at": "2026-09-02T10:56:23.000Z",
+  "updated_at": "2026-09-02T10:58:29.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "voxcpm",
+  "languages": [],
+  "tags": [
+    "voxcpm",
+    "lora",
+    "base_model:openbmb/VoxCPM2",
+    "base_model:adapter:openbmb/VoxCPM2",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72397184,
+  "storage_human": "72 MB",
+  "base_model": "openbmb/VoxCPM2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rav009/VoxCPM2-lora-xiaohai · Hugging Face",
+      "url": "https://huggingface.co/rav009/VoxCPM2-lora-xiaohai",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rav009/VoxCPM2-lora-xiaohai at main - Hugging Face",
+      "url": "https://huggingface.co/rav009/VoxCPM2-lora-xiaohai/tree/main",
+      "snippet": "Instructions to use rav009/VoxCPM2-lora-xiaohai with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries VoxCPM How to use rav009/VoxCPM2-lora-xiaohai with VoxCPM:"
+    },
+    {
+      "title": "Fine-Tuning Guide - VoxCPM 2.0 documentation",
+      "url": "https://voxcpm.readthedocs.io/en/latest/finetuning/finetune.html",
+      "snippet": "Fine-Tuning Guide ¶ This guide covers how to fine-tune VoxCPM with two approaches: LoRA (parameter-efficient) and full fine-tuning. Both use the same training script and data format."
+    },
+    {
+      "title": "VoxCPM 2.0 documentation",
+      "url": "https://voxcpm.readthedocs.io/",
+      "snippet": "It is strictly forbidden to use VoxCPM for any illegal or unethical purposes. We strongly recommend that any publicly shared content generated with this model be clearly marked as AI-generated. Current Technical Limitations: Although generally stable, the model may occasionally exhibit instability, especially with very long or expressive inputs."
+    },
+    {
+      "title": "GitHub - OpenBMB/VoxCPM: VoxCPM2: Tokenizer-Free TTS for Multilingual ...",
+      "url": "https://github.com/OpenBMB/VoxCPM/",
+      "snippet": "VoxCPM2 is the latest major release — a 2B parameter model trained on over 2 million hours of multilingual speech data, now supporting 30 languages, Voice Design, Controllable Voice Cloning, and 48kHz studio-quality audio output. Built on a MiniCPM-4 backbone."
+    }
+  ]
+}

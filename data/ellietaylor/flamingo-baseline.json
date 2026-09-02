@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ellietaylor/flamingo-baseline",
+  "slug": "ellietaylor-flamingo-baseline",
+  "author": "ellietaylor",
+  "url": "https://huggingface.co/ellietaylor/flamingo-baseline",
+  "created_at": "2026-09-02T07:48:33.000Z",
+  "updated_at": "2026-09-02T07:48:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Flamingo (visual language model) - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/flamingo",
+      "snippet": "Flamingo is a family of visual language models (VLMs) built by DeepMind and introduced in April 2022 that brought few-shot"
+    },
+    {
+      "title": "openflamingo/OpenFlamingo-9B-vitl-mpt7b · Hugging Face",
+      "url": "https://huggingface.co/openflamingo/OpenFlamingo-9B-vitl-mpt7b",
+      "snippet": "OpenFlamingo is an open source implementation of DeepMind&#x27;s Flamingo models. This 9B-parameter model uses a CLIP ViT-L/14 vision encoder and MPT-7B language model."
+    },
+    {
+      "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+      "url": "https://arxiv.org/abs/2204.14198",
+      "snippet": "For tasks lying anywhere on this spectrum, a single Flamingo model can achieve a new state of the art with few-shot learning, simply by prompting the model with task-specific examples. On numerous benchmarks, Flamingo outperforms models fine-tuned on thousands of times more task-specific data."
+    },
+    {
+      "title": "PDF 11868 pre: Flamingo - GitHub Pages",
+      "url": "https://llmsystem.github.io/llmsystem2024spring/assets/files/Group-Flamingo-98ae9c68fca94cd437716229a2cf42c1.pdf",
+      "snippet": "Evaluation focused on few-shot learning the model adapts to new tasks using a small samples and is then evaluated on a separate image/video and analysis, including and classification. Testing Protocols: performance, where number of support set of query samples."
+    }
+  ]
+}

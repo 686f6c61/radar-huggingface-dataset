@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "EZCon/SmolVLM2-2.2B-Instruct-mlx",
+  "slug": "ezcon-smolvlm2-2-2b-instruct-mlx",
+  "author": "EZCon",
+  "url": "https://huggingface.co/EZCon/SmolVLM2-2.2B-Instruct-mlx",
+  "created_at": "2026-09-02T08:07:44.000Z",
+  "updated_at": "2026-09-02T08:08:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "smolvlm",
+    "video-text-to-text",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceM4/the_cauldron",
+    "dataset:HuggingFaceM4/Docmatix",
+    "dataset:lmms-lab/LLaVA-OneVision-Data",
+    "dataset:lmms-lab/M4-Instruct-Data",
+    "dataset:HuggingFaceFV/finevideo",
+    "dataset:MAmmoTH-VL/MAmmoTH-VL-Instruct-12M",
+    "dataset:lmms-lab/LLaVA-Video-178K",
+    "dataset:orrzohar/Video-STaR",
+    "dataset:Mutonix/Vript",
+    "dataset:TIGER-Lab/VISTA-400K",
+    "dataset:Enxin/MovieChat-1K_train",
+    "dataset:ShareGPT4Video/ShareGPT4Video",
+    "base_model:HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2246784880,
+  "parameters_human": "2.25B",
+  "storage_bytes": 4493651827,
+  "storage_human": "4.5 GB",
+  "base_model": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EZCon/SmolVLM2-2.2B-Instruct-mlx · Hugging Face",
+      "url": "https://huggingface.co/EZCon/SmolVLM2-2.2B-Instruct-mlx",
+      "snippet": "This model was converted to MLX format from HuggingFaceTB/SmolVLM2-2.2B-Instruct using mlx-vlm version 0.3.2. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "HuggingFaceTB/SmolVLM2-2.2B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EZCon / SmolVLM2-2.2B-Instruct-mlx Security Insights | Protect AI",
+      "url": "https://protectai.com/insights/models/EZCon/SmolVLM2-2.2B-Instruct-mlx/03ce71a85b8226c57fb76d1c6ccbaace61f880b9/overview",
+      "snippet": "Discover potential threats in the EZCon / SmolVLM2-2.2B-Instruct-mlx model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    },
+    {
+      "title": "SmolVLM2 2.2B Instruct — specs, VRAM, benchmarks (2.2B) | BestLLMfor",
+      "url": "https://bestllmfor.com/catalog/smolvlm2-22b/",
+      "snippet": "SmolVLM2 2.2B Instruct: 2.2B parameters, Apache 2.0 license, 8k context, 1.6 GB VRAM at Q4. Full specs, benchmarks, install command."
+    },
+    {
+      "title": "smollm/vision/smolvlm2 at main · huggingface/smollm · GitHub",
+      "url": "https://github.com/huggingface/smollm/tree/main/vision/smolvlm2",
+      "snippet": "A lightweight framework for fine-tuning small, efficient vision-language models on both image and video datasets. Built for flexibility and performance, with support for parameter-efficient methods (LoRA/PEFT) and optional DeepSpeed integration."
+    }
+  ]
+}

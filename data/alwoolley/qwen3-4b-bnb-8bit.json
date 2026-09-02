@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "alwoolley/Qwen3-4B-bnb-8bit",
+  "slug": "alwoolley-qwen3-4b-bnb-8bit",
+  "author": "alwoolley",
+  "url": "https://huggingface.co/alwoolley/Qwen3-4B-bnb-8bit",
+  "created_at": "2026-09-02T02:07:05.000Z",
+  "updated_at": "2026-09-02T02:07:13.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "8bit",
+    "bitsandbytes",
+    "qwen",
+    "financial-tape",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:quantized:Qwen/Qwen3-4B",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404650,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alwoolley/Qwen3.8-27B-bnb-8bit · Hugging Face",
+      "url": "https://huggingface.co/alwoolley/Qwen3.8-27B-bnb-8bit",
+      "snippet": "alwoolley / Qwen3.8-27B-bnb-8bit like 0 Safetensors qwen3_5_text 8bit bitsandbytes qwen 8-bit precision License:other Model card FilesFiles and versions xet Community Copy to bucket new Qwen3.8-27B 8-Bit Quantized"
+    },
+    {
+      "title": "Qwen3 - a unsloth Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/unsloth/qwen3",
+      "snippet": "Qwen&#x27;s new Qwen3 models. In Unsloth Dynamic 2.0, GGUF, 4-bit and 16-bit Safetensor formats. Includes 128K Context Length variants."
+    },
+    {
+      "title": "Qwen3-4B: Specifications and GPU VRAM Requirements",
+      "url": "https://apxml.com/models/qwen3-4b",
+      "snippet": "Qwen3-4B is a 4-billion parameter dense causal language model developed by Alibaba, belonging to the third generation of the Qwen series. A fundamental innovation in this model is its unified architecture that supports dual-mode operation, allowing for dynamic switching between &#x27;thinking&#x27; and &#x27;non-thinking&#x27; states."
+    },
+    {
+      "title": "Qwen 3 Benchmarks, Comparisons, Model Specifications, and More",
+      "url": "https://dev.to/best_codes/qwen-3-benchmarks-comparisons-model-specifications-and-more-4hoa",
+      "snippet": "Qwen3: Alibaba&#x27;s Latest Open-Source AI Model Qwen3 is the latest generation of large language models (LLMs) from Alibaba Cloud. Built by the team behind the Tongyi Qianwen series (通义千问), this release brings serious power and flexibility, packed into an Apache-2.0-licensed, open-source package. Released on April 29, 2025, Qwen3 comes in eight sizes, including both dense models (from ..."
+    },
+    {
+      "title": "qwen3:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3:4b",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+    }
+  ]
+}

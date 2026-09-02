@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "sambal/k2-v2-think-dpo-checkpoint-200",
+  "slug": "sambal-k2-v2-think-dpo-checkpoint-200",
+  "author": "sambal",
+  "url": "https://huggingface.co/sambal/k2-v2-think-dpo-checkpoint-200",
+  "created_at": "2026-09-02T10:05:11.000Z",
+  "updated_at": "2026-09-02T10:30:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "reasoning",
+    "dpo",
+    "rpo",
+    "k2-think",
+    "conversational",
+    "base_model:IFM/K2-Think",
+    "base_model:finetune:IFM/K2-Think",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65539263236,
+  "storage_human": "65.5 GB",
+  "base_model": "LLM360/K2-Think",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "K2 Think — Open‑Source Reasoning System (32B)",
+      "url": "https://www.k2-think.org/",
+      "snippet": "K2 Think is a 32B open‑weights reasoning system from MBZUAI & G42. Apache‑2.0 license. Built on Qwen2.5‑32B, tuned with long CoT SFT + RL with verifiable rewards, agentic planning, and test‑time scaling. Up to ~2,000 tok/s on Cerebras WSE. Benchmarks: AIME&#x27;24 90.83, AIME&#x27;25 81.24, HMMT&#x27;25 73.75, OMNI‑MATH‑HARD 60.73, GPQA‑Diamond 71.08, LiveCodeBench v5 63.97."
+    },
+    {
+      "title": "LLM360/K2-Think-V2 · Hugging Face",
+      "url": "https://huggingface.co/LLM360/K2-Think-V2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "K2-Think: A Parameter-Efficient Reasoning System - arXiv.org",
+      "url": "https://arxiv.org/html/2509.07604v1",
+      "snippet": "With the complete K2-Think system, we demonstrate that a 32B-scale model, post-trained to produce long reasoning chains of thought, paired with relatively little test-time computation can endow the small model with capabilities that are competitive with models with orders of magnitude more parameters."
+    },
+    {
+      "title": "K2-Think: A Parameter-Efficient Reasoning System - arXiv.org",
+      "url": "https://arxiv.org/pdf/2509.07604",
+      "snippet": "Our results validate that a more parameter-efficient model like K2-Think 32B can rival state-of-the-art systems through an integrative post-train recipe including long chain-of-thought training and strategic inference-time enhancements, paving the way for more accessible and affordable open-source reasoning systems."
+    },
+    {
+      "title": "IFM/K2-V2 · Hugging Face",
+      "url": "https://huggingface.co/IFM/K2-V2",
+      "snippet": "K2-V2 is our most capable fully open model to date, and one of the strongest open-weight models in its class. It uses a 70B-parameter dense transformer architecture and represents the latest advancement in the LLM360 model family."
+    }
+  ]
+}

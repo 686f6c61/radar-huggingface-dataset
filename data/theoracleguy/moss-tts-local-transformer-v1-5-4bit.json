@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "theoracleguy/MOSS-TTS-Local-Transformer-v1.5-4bit",
+  "slug": "theoracleguy-moss-tts-local-transformer-v1-5-4bit",
+  "author": "theoracleguy",
+  "url": "https://huggingface.co/theoracleguy/MOSS-TTS-Local-Transformer-v1.5-4bit",
+  "created_at": "2026-09-02T09:39:57.000Z",
+  "updated_at": "2026-09-02T09:40:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "mlx",
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "ru",
+    "pt"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "moss_tts_local",
+    "mlx-audio",
+    "text-to-speech",
+    "voice-cloning",
+    "streaming",
+    "apple-silicon",
+    "quantized",
+    "4bit",
+    "custom_code",
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "ru",
+    "pt",
+    "base_model:OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5",
+    "base_model:quantized:OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 737740064,
+  "parameters_human": "737.7M",
+  "storage_bytes": 2616697073,
+  "storage_human": "2.6 GB",
+  "base_model": "OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5 · Hugging Face",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run MOSS-TTS v1.5 Locally: Private TTS Guide — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-moss-tts-local-transformer-v1-5-private-high-fidelity-voice",
+      "snippet": "Step-by-step tutorial to install and use MOSS-TTS Local Transformer v1.5 for high-quality, private text-to-speech on your own hardware."
+    },
+    {
+      "title": "MOSS-TTS-Local-Transformer Tutorial: Local TTS Setup | AI Indigo Tutorials",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-moss-tts-local-transformer-private-high-fidelity-voice-synt",
+      "snippet": "Step-by-step guide to installing and using MOSS-TTS-Local-Transformer for private, high-quality text-to-speech synthesis on your own hardware."
+    },
+    {
+      "title": "MOSS-TTS-Local-Transformer-v1.5 - Hugging Face",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5/blob/main/modeling_moss_tts.py",
+      "snippet": "like 61 Follow OpenMOSS 932 Text-to-Speech Transformers Safetensors 31 languages moss_tts_local feature-extraction voice-cloning custom_code moss-tts moss-tts-local arxiv:2603.18090 License:apache-2.0 Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - OpenMOSS/MOSS-TTS: An open-source model family for long-form ...",
+      "url": "https://github.com/OpenMOSS/MOSS-TTS",
+      "snippet": "English | 简体中文 MOSS‑TTS Family is an open‑source speech and sound generation model family from MOSI.AI and the OpenMOSS team. It is designed for high‑fidelity, high‑expressiveness, and complex real‑world scenarios, covering stable long‑form speech, multi‑speaker dialogue, voice/character design, environmental sound effects, and real‑time streaming TTS."
+    }
+  ]
+}

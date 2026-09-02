@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "olafuraron/bge-m3-safetensors",
+  "slug": "olafuraron-bge-m3-safetensors",
+  "author": "olafuraron",
+  "url": "https://huggingface.co/olafuraron/bge-m3-safetensors",
+  "created_at": "2026-09-02T08:37:15.000Z",
+  "updated_at": "2026-09-02T08:43:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 567754752,
+  "parameters_human": "567.8M",
+  "storage_bytes": 2293231615,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "trollathon/bge-m3-safetensors · Hugging Face",
+      "url": "https://huggingface.co/trollathon/bge-m3-safetensors",
+      "snippet": "BGE-M3 (paper, code) In this project, we introduce BGE-M3, which is distinguished for its versatility in Multi-Functionality, Multi-Linguality, and Multi-Granularity. Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval."
+    },
+    {
+      "title": "furiosa-ai/bge-m3 · Hugging Face",
+      "url": "https://huggingface.co/furiosa-ai/bge-m3",
+      "snippet": "The upstream model unifies dense, sparse lexical, and multi-vector retrieval. Furiosa-LLM exposes its 1,024-dimensional, CLS-pooled dense embeddings for semantic search, retrieval, and similarity matching. Its intended use is the same as the upstream BAAI/bge-m3, and it is released under the MIT License."
+    },
+    {
+      "title": "bge-m3-safetensors - AI Model by trollathon | AlphaNeural AI",
+      "url": "https://alphaneural.io/assets/trollathon/bge-m3-safetensors",
+      "snippet": "Explore bge-m3-safetensors, a ai model on AlphaNeural AI. Deploy using Neural Labs compute infrastructure."
+    },
+    {
+      "title": "bge-m3 - paddlenlp.readthedocs.io",
+      "url": "https://paddlenlp.readthedocs.io/en/latest/_static/website/BAAI/bge-m3/index.html",
+      "snippet": "bge-m3 Files 1_Pooling/config.json (191.0 B) README.md (15.5 KB) colbert_linear.pt (2.0 MB) config.json (681.0 B) config_sentence_transformers.json (123.0 B) configuration.json (77.0 B) imgs/bm25.jpg imgs/bm25.jpg (128.8 KB) imgs/long.jpg imgs/long.jpg (474.1 KB) imgs/miracl.jpg imgs/miracl.jpg (563.0 KB) imgs/mkqa.jpg imgs/mkqa.jpg (593.8 KB) imgs/nqa.jpg imgs/nqa.jpg (154.6 KB) imgs/others ..."
+    },
+    {
+      "title": "bge-m3 - Ollama",
+      "url": "https://ollama.com/library/bge-m3",
+      "snippet": "BGE-M3 is a new model from BAAI distinguished for its versatility in Multi-Functionality, Multi-Linguality, and Multi-Granularity."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "beznogim666",
   "url": "https://huggingface.co/beznogim666/test2",
   "created_at": "2026-07-11T13:09:20.000Z",
-  "updated_at": "2026-08-29T09:34:19.000Z",
+  "updated_at": "2026-09-01T08:58:22.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": 12820083404,
   "parameters_human": "12.82B",
-  "storage_bytes": 449536888619,
-  "storage_human": "449.5 GB",
+  "storage_bytes": 462357223415,
+  "storage_human": "462.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

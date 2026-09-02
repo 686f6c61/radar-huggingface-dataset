@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Devil02047/tagging-test",
+  "slug": "devil02047-tagging-test",
+  "author": "Devil02047",
+  "url": "https://huggingface.co/Devil02047/tagging-test",
+  "created_at": "2026-09-02T01:35:14.000Z",
+  "updated_at": "2026-09-02T01:35:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Devil02047/tagging-test · Hugging Face",
+      "url": "https://huggingface.co/Devil02047/tagging-test",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pixai-labs/pixai-tagger-v0.9 · Hugging Face",
+      "url": "https://huggingface.co/pixai-labs/pixai-tagger-v0.9",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "GitHub - fpgaminer/joytag: The JoyTag Image Tagging Model",
+      "url": "https://github.com/fpgaminer/joytag",
+      "snippet": "JoyTag is a state of the art AI vision model for tagging images, with a focus on sex positivity and inclusivity. It uses the Danbooru tagging schema, but works across a wide range of images, from hand drawn to photographic."
+    },
+    {
+      "title": "AI Image Detector - Detect AI Generated Images - zerogpt.com",
+      "url": "https://www.zerogpt.com/ai-image-detector",
+      "snippet": "Detect AI generated images from all the popular tools. Verify image authenticity and identify AI-created visual content with high accuracy."
+    }
+  ]
+}

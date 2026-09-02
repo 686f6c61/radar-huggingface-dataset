@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "lsdyna/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "lsdyna-q-frozenlake-v1-4x4-noslippery",
+  "author": "lsdyna",
+  "url": "https://huggingface.co/lsdyna/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-09-02T09:31:49.000Z",
+  "updated_at": "2026-09-02T09:31:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pallasathena/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/pallasathena/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · MP4good/q-FrozenLake-v1-4x4-noSlippery at main",
+      "url": "https://huggingface.co/MP4good/q-FrozenLake-v1-4x4-noSlippery/blob/main/README.md",
+      "snippet": "MP4good / q-FrozenLake-v1-4x4-noSlippery like 0 Reinforcement Learning FrozenLake-v1-4x4 q-learning custom-implementation Eval Results (legacy) Model card FilesFiles and versions xet Community Copy to bucket new main q-FrozenLake-v1-4x4-noSlippery /README.md MP4good Upload folder using huggingface_hub 675565a verifiedabout 5 hours ago preview code | Raw Download with hf CLI Copy download link ..."
+    },
+    {
+      "title": "skyfox/q-FrozenLake-v1-4x4-noSlippery - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/45555",
+      "snippet": "Q-Learning Agent playing FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    },
+    {
+      "title": "LookParOf/q-FrozenLake-v1-4x4-Slippery - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/45580",
+      "snippet": "This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    },
+    {
+      "title": "unit2.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/huggingface/deep-rl-class/blob/master/notebooks/unit2/unit2.ipynb",
+      "snippet": "FrozenLake-v1 Taxi-v3 📚 RL-Library: Python and NumPy Gymnasium We&#x27;re constantly trying to improve our tutorials, so if you find some issues in this notebook, please open an issue on the GitHub Repo."
+    }
+  ]
+}

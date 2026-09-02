@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/ConvLSTM",
+  "slug": "onescience-group-convlstm",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/ConvLSTM",
+  "created_at": "2026-09-02T08:45:00.000Z",
+  "updated_at": "2026-09-02T08:50:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "convlstm",
+    "OneScience",
+    "Earth Science",
+    "Precipitation Nowcasting",
+    "Spatiotemporal Sequence Prediction",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OneScience-Group (OneScience) - Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/models",
+      "snippet": "OneScience is a one-click, end-to-end, natural language-based scientific model construction platform designed for researchers in the AI4S field. Researchers can efficiently complete the entire wor..."
+    },
+    {
+      "title": "AI-enhanced urban forecasting: ConvLSTM networks for multi-scenario ...",
+      "url": "https://www.clearskyscience.com/en/10.1038/s42949-026-00338-9/",
+      "snippet": "A ConvLSTM deep learning model trained on 39 years of satellite land cover maps helps map where urban growth, transit-oriented development, and conservation might occur across Colorado metro regions under five future scenarios."
+    },
+    {
+      "title": "PDF AI-enhanced urban forecasting: ConvLSTM networks for multi ... - Nature",
+      "url": "https://www.nature.com/articles/s42949-026-00338-9.pdf",
+      "snippet": "The ConvLSTM model&#x27;s ability to capture these ef ciency patterns demonstrates how AI-enhanced prediction can fi identify speci c policy interventions that maximize infrastructure fi performance ..."
+    },
+    {
+      "title": "Robust ConvLSTM Model With Deep Reinforcement Learning for Stealth ...",
+      "url": "https://ieeexplore.ieee.org/document/11105704",
+      "snippet": "As a defensive strategy, the ConvLSTM trained with DRL-generated adversarial samples increases the model robustness against AI-driven threats in smart grids by improving its detection capabilities, achieving a 95.12% detection rate on adversarial samples."
+    },
+    {
+      "title": "Deep Learning for Short-Term Precipitation Prediction in Four Major ...",
+      "url": "https://arxiv.org/html/2511.11152",
+      "snippet": "The remainder of this paper is structured as follows: Section 2 provides the necessary background on deep learning for precipitation prediction and interpretable AI. Section 3 details the study areas and the ERA5 reanalysis data used, while Section 4 outlines the methodology for the hybrid ConvLSTM model and the suite of XAI techniques."
+    }
+  ]
+}

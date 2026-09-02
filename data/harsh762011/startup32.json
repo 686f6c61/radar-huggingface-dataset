@@ -5,7 +5,7 @@
   "author": "harsh762011",
   "url": "https://huggingface.co/harsh762011/startup32",
   "created_at": "2026-05-02T12:56:36.000Z",
-  "updated_at": "2026-08-31T17:06:54.000Z",
+  "updated_at": "2026-09-01T18:19:32.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,11 +26,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 291,
+  "downloads_30d": 302,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1514089393,
+  "storage_bytes": 1514095682,
   "storage_human": "1.5 GB",
   "base_model": "unsloth/phi-4-mini-reasoning-unsloth-bnb-4bit",
   "formats": [

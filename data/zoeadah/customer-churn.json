@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "zoeAdah/customer-Churn",
+  "slug": "zoeadah-customer-churn",
+  "author": "zoeAdah",
+  "url": "https://huggingface.co/zoeAdah/customer-Churn",
+  "created_at": "2026-09-02T08:58:32.000Z",
+  "updated_at": "2026-09-02T08:58:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 991,
+  "storage_human": "991 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reducing Customer Churn Using AI Models: Transforming ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/reducing-customer-churn-using-ai-models-transforming-andre-gufve",
+      "snippet": "Artificial intelligence (AI) has emerged as a transformative force in this landscape, offering sophisticated tools to predict, understand, and proactively address customer churn. AI models can ..."
+    },
+    {
+      "title": "Best ML models for churn prediction: compared and ranked (2026) - Pecan AI",
+      "url": "https://www.pecan.ai/blog/best-ml-models-for-predicting-customer-churn/",
+      "snippet": "Compare the top ML models for predicting customer churn. Decision trees, logistic regression, XGBoost, neural networks, plus pros, cons, and when to use each."
+    },
+    {
+      "title": "Predict customer churn with machine learning | Databricks",
+      "url": "https://www.databricks.com/solutions/accelerators/predict-customer-churn",
+      "snippet": "Analyze churn across the lifetime of your customers with Databricks solution accelerator notebook. Learn how to ingest and prepare customer transaction data at scale and build a machine learning model to predict customer churn. Enable your teams to drive more profitable retention management strategies with these insights."
+    },
+    {
+      "title": "Customer Churn Prediction with Artificial Intelligence",
+      "url": "https://www.intuz.com/blog/customer-churn-prediction/",
+      "snippet": "AI and ML help businesses identify customers who are likely to stop using products or services before churn occurs. Customer churn prediction relies on analyzing customer behavior, purchase patterns, browsing history, and engagement signals."
+    },
+    {
+      "title": "Customer Churn Prediction Project - GitHub",
+      "url": "https://github.com/arnav-ds/customer-churn-prediction",
+      "snippet": "A machine learning project focused on predicting customer churn to enable proactive retention strategies. Built using Python in a Jupyter Notebook, it includes data handling, model building (Logistic Regression, Random Forest, Gradient Boosting), performance evaluation, and identification of key churn drivers through visualizations. - arnav-ds/customer-churn-prediction"
+    }
+  ]
+}

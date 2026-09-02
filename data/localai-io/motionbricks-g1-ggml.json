@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "LocalAI-io/MotionBricks-G1-GGML",
+  "slug": "localai-io-motionbricks-g1-ggml",
+  "author": "LocalAI-io",
+  "url": "https://huggingface.co/LocalAI-io/MotionBricks-G1-GGML",
+  "created_at": "2026-09-02T11:27:40.000Z",
+  "updated_at": "2026-09-02T11:28:02.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "ggml",
+  "languages": [],
+  "tags": [
+    "ggml",
+    "gguf",
+    "motion-generation",
+    "unitree-g1",
+    "motionbricks",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 136588272,
+  "parameters_human": "136.6M",
+  "storage_bytes": 733052832,
+  "storage_human": "733 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LocalAI · Make AI run on every machine",
+      "url": "https://localai.io/",
+      "snippet": "LocalAI is the open source AI engine. Run any model, LLMs, vision, voice, image and video, on any hardware. No GPU required."
+    },
+    {
+      "title": "MotionBricks: Scalable Real-Time Motions with Modular Latent Generative ...",
+      "url": "https://nvlabs.github.io/motionbricks/",
+      "snippet": "We introduce MotionBricks: a large-scale, real-time generative framework with a two-fold solution. First, we propose a large-scale modular latent generative backbone tailored for robust real-time motion generation, effectively modeling a dataset of over 350,000 motion clips with a single model. Second, we introduce smart primitives that provide a unified, robust, and intuitive interface for ..."
+    },
+    {
+      "title": "LocalAI is the open-source AI engine. Run any model - LLMs ... - GitHub",
+      "url": "https://github.com/mudler/LocalAI",
+      "snippet": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required. - mudler/LocalAI"
+    },
+    {
+      "title": "Model Gallery - LocalAI",
+      "url": "https://localai.io/docs/models/",
+      "snippet": "Model Gallery The model gallery is a curated collection of models configurations for LocalAI that enables one-click install of models directly from the LocalAI Web interface. A list of the models available can also be browsed at the Public LocalAI Gallery. LocalAI to ease out installations of models provide a way to preload models on start and downloading and installing them in runtime. You ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

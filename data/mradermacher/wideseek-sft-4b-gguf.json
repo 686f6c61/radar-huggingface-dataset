@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/WideSeek-SFT-4B-GGUF",
+  "slug": "mradermacher-wideseek-sft-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/WideSeek-SFT-4B-GGUF",
+  "created_at": "2026-09-02T09:31:29.000Z",
+  "updated_at": "2026-09-02T10:36:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "multi-agent",
+    "supervised-fine-tuning",
+    "information-retrieval",
+    "en",
+    "dataset:WideSeek-R1/WideSeek-R1-SFT-data",
+    "base_model:WideSeek-R1/WideSeek-SFT-4B",
+    "base_model:quantized:WideSeek-R1/WideSeek-SFT-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 39708276096,
+  "storage_human": "39.7 GB",
+  "base_model": "WideSeek-R1/WideSeek-SFT-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/WideSeek-R1-4b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/WideSeek-R1-4b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/WideSeek-R1-4b-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/WideSeek-R1-4b-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WideSeek: Advancing Wide Research via Multi-Agent Scaling",
+      "url": "https://wideseek-ai.github.io/",
+      "snippet": "A dynamic hierarchical multi-agent architecture for comprehensive information retrieval. Introducing WideSeekBench benchmark and WideSeek system optimized via end-to-end RL."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "ModelFitCheck — will this LLM fit your GPU?",
+      "url": "https://modelfitcheck.com/",
+      "snippet": "Free browser-based tool that detects your hardware and instantly tells you which local LLMs and GGUF quantizations will fit in your VRAM. No signup, no data sent."
+    }
+  ]
+}

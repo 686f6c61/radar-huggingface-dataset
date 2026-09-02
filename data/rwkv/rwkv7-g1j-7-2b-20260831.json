@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "RWKV/RWKV7-G1j-7.2B-20260831",
+  "slug": "rwkv-rwkv7-g1j-7-2b-20260831",
+  "author": "RWKV",
+  "url": "https://huggingface.co/RWKV/RWKV7-G1j-7.2B-20260831",
+  "created_at": "2026-09-02T11:10:04.000Z",
+  "updated_at": "2026-09-02T11:10:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "fr",
+    "es",
+    "de",
+    "pt",
+    "ru",
+    "it",
+    "ja",
+    "ko",
+    "vi",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rwkv7",
+    "text-generation",
+    "rwkv",
+    "recurrent",
+    "causal-lm",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "fr",
+    "es",
+    "de",
+    "pt",
+    "ru",
+    "it",
+    "ja",
+    "ko",
+    "vi",
+    "ar",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:cerebras/SlimPajama-627B",
+    "dataset:EleutherAI/pile",
+    "dataset:bigcode/starcoderdata",
+    "dataset:oscar-corpus/OSCAR-2301",
+    "arxiv:2503.14456",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7199932416,
+  "parameters_human": "7.20B",
+  "storage_bytes": 14399971480,
+  "storage_human": "14.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - BlinkDL/RWKV-LM: RWKV (pronounced RwaKuv) is an RNN with great ...",
+      "url": "https://github.com/BlinkDL/RWKV-LM",
+      "snippet": "RWKV is a Linux Foundation AI project, so totally free. RWKV runtime is already in Windows & Office. You are welcome to ask the RWKV community (such as RWKV discord) for advice on upgrading your attention/ssm models to rwkv7 models :)"
+    },
+    {
+      "title": "RWKV Language Model",
+      "url": "https://www.rwkv.com/",
+      "snippet": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance and parallelizable like a Transformer. Check RWKV-7 \"Goose\" reasoning models. It&#x27;s combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctxlen, and free text embedding. And it&#x27;s 100% attention-free, and a Linux Foundation AI project."
+    },
+    {
+      "title": "RWKV-LM/Research/rwkv7-g0-7.2b.md at main - GitHub",
+      "url": "https://github.com/BlinkDL/RWKV-LM/blob/main/Research/rwkv7-g0-7.2b.md",
+      "snippet": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance, which can also be directly trained like a GPT transformer (parallelizable). We are at RWKV-7 \"Goose\"."
+    },
+    {
+      "title": "BlinkDL/rwkv7-g1 · Hugging Face",
+      "url": "https://huggingface.co/BlinkDL/rwkv7-g1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fla-hub/rwkv7-7.2B-g0 · Hugging Face",
+      "url": "https://huggingface.co/fla-hub/rwkv7-7.2B-g0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

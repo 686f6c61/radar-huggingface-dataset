@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "LEONW24/T2W-Qwen3.5-9B-iter24",
+  "slug": "leonw24-t2w-qwen3-5-9b-iter24",
+  "author": "LEONW24",
+  "url": "https://huggingface.co/LEONW24/T2W-Qwen3.5-9B-iter24",
+  "created_at": "2026-09-02T08:02:41.000Z",
+  "updated_at": "2026-09-02T08:14:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "vision-language",
+    "reinforcement-learning",
+    "web-agent",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19319119030,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LEONW24/Qwen3.5-9B-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/LEONW24/Qwen3.5-9B-Uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5 9B model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/qwen/qwen3.5-9b",
+      "snippet": "Qwen3.5 9B is a multimodal foundation model from the Qwen 3.5 family, built for efficient reasoning, coding, and visual understanding in a compact 9B architecture."
+    },
+    {
+      "title": "qwen/qwen3.5-9b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 9B parameter dense model, supporting a native context length of 262,144 tokens."
+    },
+    {
+      "title": "Qwen3.5-9B - 262k context, multimodal, open source",
+      "url": "https://www.llmreference.com/model/qwen3.5-9b",
+      "snippet": "Qwen3.5-9B is an open-source model in the Qwen3.5 family. The structured metadata tracks a 262k-token context window, multimodal input, function calling, tool use, and structured outputs."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    }
+  ]
+}

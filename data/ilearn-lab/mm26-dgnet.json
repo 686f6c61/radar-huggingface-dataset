@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "iLearn-Lab/MM26-DGNet",
+  "slug": "ilearn-lab-mm26-dgnet",
+  "author": "iLearn-Lab",
+  "url": "https://huggingface.co/iLearn-Lab/MM26-DGNet",
+  "created_at": "2026-09-02T10:39:51.000Z",
+  "updated_at": "2026-09-02T10:55:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2609.00666",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64814960,
+  "storage_human": "65 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - iLearn-Lab/MM26-DGNet",
+      "url": "https://github.com/iLearn-Lab/MM26-DGNet",
+      "snippet": "Contribute to iLearn-Lab/MM26-DGNet development by creating an account on GitHub."
+    },
+    {
+      "title": "iLearn-Lab/MM26-ADGNet · Hugging Face",
+      "url": "https://huggingface.co/iLearn-Lab/MM26-ADGNet",
+      "snippet": "iLearn-Lab / MM26-ADGNet like 0 Follow iLearn-Lab 137 Image Segmentation PyTorch infrared-small-target-detection multimodal vision-language License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new 📖 Model Description 🏆 Available Checkpoints 🚀 Usage"
+    },
+    {
+      "title": "iLearn-Lab (iLearn-Lab) - Hugging Face",
+      "url": "https://huggingface.co/iLearn-Lab/models",
+      "snippet": "Org profile for iLearn-Lab on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "MM26-DGNet/model at main · iLearn-Lab/MM26-DGNet · GitHub",
+      "url": "https://github.com/iLearn-Lab/MM26-DGNet/tree/main/model",
+      "snippet": "Contribute to iLearn-Lab/MM26-DGNet development by creating an account on GitHub."
+    },
+    {
+      "title": "iLearn - GitHub",
+      "url": "https://github.com/iLearn-Lab",
+      "snippet": "Welcome to iLearn! We are a research group dedicated to advancing the frontier of Multimedia Search, Multimodal Foundation Models, and Embodied AI."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Pyaj/Fuga-350m",
+  "slug": "pyaj-fuga-350m",
+  "author": "Pyaj",
+  "url": "https://huggingface.co/Pyaj/Fuga-350m",
+  "created_at": "2026-09-01T14:00:39.000Z",
+  "updated_at": "2026-09-02T09:11:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6916663405,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Liquid AI&#x27;s 350M Parameter Model Outperforms Giants at the Edge",
+      "url": "https://startupfortune.com/liquid-ais-350m-parameter-model-outperforms-giants-at-the-edge/",
+      "snippet": "Liquid AI&#x27;s 350M Parameter Model Outperforms Giants at the Edge Liquid AI&#x27;s new 350M parameter model beats models twice its size on key benchmarks and runs on a Raspberry Pi. A sign that architecture matters more than scale."
+    },
+    {
+      "title": "LFM2-350M: Efficient AI Model Breakthrough - LinkedIn",
+      "url": "https://www.linkedin.com/posts/mlech26l_2025-was-a-milestone-year-for-on-device-ai-activity-7407561879587303424-MY6b",
+      "snippet": "2025 was a milestone year for on-device AI. Here&#x27;s why 👇 At Liquid AI, we shipped the LFM2 family of models built \"inference-aware\" for efficiency at the edge. This includes multimodal ..."
+    },
+    {
+      "title": "Liquid AI&#x27;s 350M Model Beats Giants at Multilingual Search",
+      "url": "https://www.youtube.com/watch?v=n_lCM8Egyes",
+      "snippet": "The LFM2.5 Retrievers combine a dense bi-encoder AND a ColBERT late-interaction model, all at 350M parameters. This changes what&#x27;s possible without a data center. #LiquidAI #AISearch #"
+    },
+    {
+      "title": "LFM2.5 230M and 350M: How Accurate Are the GGUF Versions?",
+      "url": "https://kaitchup.substack.com/p/lfm25-230m-and-350m-how-accurate",
+      "snippet": "Benchmarking Liquid AI&#x27;s tiny LFM2.5 230M and 350M models across accuracy, quantization, memory use, and practical deployment trade-offs."
+    },
+    {
+      "title": "LFM2.5 Embedding 350M: Liquid AI&#x27;s New Retrieval Models Explained",
+      "url": "https://aimlinsights.com/2026/06/28/lfm2-5-embedding-350m-liquid-ais-new-retrieval-models-explained/",
+      "snippet": "LFM2.5 Embedding 350M retrieval models offers compact multilingual retrieval, while Liquid AI&#x27;s ColBERT model trades larger indexes for higher accuracy."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Phosdium/bio-med-classifier",
+  "slug": "phosdium-bio-med-classifier",
+  "author": "Phosdium",
+  "url": "https://huggingface.co/Phosdium/bio-med-classifier",
+  "created_at": "2026-09-02T07:19:08.000Z",
+  "updated_at": "2026-09-02T07:19:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Trained In DNA Invents 16 New Viruses Not Found In Nature - Forbes",
+      "url": "https://www.forbes.com/sites/maryroeloffs/2026/08/06/scientists-trained-an-ai-model-in-dna-and-it-invented-16-new-viruses/",
+      "snippet": "Scientists are worried about how smart DNA-trained artificial intelligence models could get—and that they could become a weapon in biological warfare."
+    },
+    {
+      "title": "stanford-crfm/BioMedLM · Hugging Face",
+      "url": "https://huggingface.co/stanford-crfm/BioMedLM",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ai-maker-space/med-classifier · Hugging Face",
+      "url": "https://huggingface.co/ai-maker-space/med-classifier",
+      "snippet": "ai-maker-space / med-classifier like 0 Text ClassificationTransformersTensorFlowdistilbertgenerated_from_keras_callbackInference Endpoints License: apache-2.0 Model card FilesFiles and versions Community Train Deploy Use in Transformers Edit model card med-classifier Model description Intended uses & limitations Training and evaluation data ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "GitHub - PharMolix/OpenBioMed",
+      "url": "https://github.com/PharMolix/OpenBioMed",
+      "snippet": "PharmolixFM is an all-atom molecular foundation model jointly released by PharMolix Inc. and Institute of AI Industry Research (AIR), Tsinghua University. It unifies molecules, antibodies, and proteins by jointly modeling them at atom-level with cutting-edge non-autoregressive multi-modal generative models."
+    }
+  ]
+}

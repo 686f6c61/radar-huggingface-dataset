@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "codiefz/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "codiefz-q-frozenlake-v1-4x4-noslippery",
+  "author": "codiefz",
+  "url": "https://huggingface.co/codiefz/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-09-02T07:31:19.000Z",
+  "updated_at": "2026-09-02T07:31:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nam194/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/nam194/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "Q-Learning Agent playing1 FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 . Usage"
+    },
+    {
+      "title": "TheArchitect256/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/TheArchitect256/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "TheArchitect256 / q-FrozenLake-v1-4x4-noSlippery like 0 Reinforcement Learning FrozenLake-v1-4x4-no_slippery q-learning custom-implementation Eval Results (legacy) Model card FilesFiles and versions xet Community Copy to bucket new Q-Learning Agent playing1 FrozenLake-v1 Usage Don&#x27;t forget to check if you need to add additional attributes (is ..."
+    },
+    {
+      "title": "flashgod/q-FrozenLake-v1-4x4-noSlippery - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/99284",
+      "snippet": "Q-Learning Agent playing1 FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    },
+    {
+      "title": "Insights DB",
+      "url": "https://insights-db.paloaltonetworks.com/models/Facepalm0/q-FrozenLake-v1-4x4-noSlippery/d536c4b1d5f44637b99d50ae9e5b724f30b47ef0/overview",
+      "snippet": "Discover potential threats in the Facepalm0 / q-FrozenLake-v1-4x4-noSlippery model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "JasperDekoninck/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/JasperDekoninck/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "Q-Learning Agent playing1 FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    }
+  ]
+}

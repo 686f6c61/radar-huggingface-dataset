@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yixiaosz/pi0_button_press",
+  "slug": "yixiaosz-pi0_button_press",
+  "author": "yixiaosz",
+  "url": "https://huggingface.co/yixiaosz/pi0_button_press",
+  "created_at": "2026-09-02T06:28:33.000Z",
+  "updated_at": "2026-09-02T09:06:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "pi0",
+    "robot-learning",
+    "Vision-Language-Action",
+    "vla",
+    "base_model:lerobot/pi0_base",
+    "base_model:finetune:lerobot/pi0_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556272,
+  "storage_human": "7.0 GB",
+  "base_model": "lerobot/pi0_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "Physical Intelligence (π)",
+      "url": "https://www.pi.website/",
+      "snippet": "Physical Intelligence is bringing general-purpose AI into the physical world. We are a group of engineers, scientists, roboticists, and company builders developing learning algorithms to create a model that will control any robot to do any task."
+    },
+    {
+      "title": "[2410.24164] $π_0$: A Vision-Language-Action Flow Model for General ...",
+      "url": "https://arxiv.org/abs/2410.24164",
+      "snippet": "Robot learning holds tremendous promise to unlock the full potential of flexible, general, and dexterous robot systems, as well as to address some of the deepest questions in artificial intelligence. However, bringing robot learning to the level of generality required for effective real-world systems faces major obstacles in terms of data, generalization, and robustness. In this paper, we ..."
+    },
+    {
+      "title": "π_0: A Vision-Language-Action Flow Model for General Robot Control",
+      "url": "https://huggingface.co/papers/2410.24164",
+      "snippet": "Join the discussion on this paper page π_0: A Vision-Language-Action Flow Model for General Robot Control"
+    },
+    {
+      "title": "GitHub - lucidrains/pi-zero-pytorch: Implementation of π₀, the robotic ...",
+      "url": "https://github.com/lucidrains/pi-zero-pytorch",
+      "snippet": "Implementation of π₀, the robotic foundation model architecture proposed by Physical Intelligence - lucidrains/pi-zero-pytorch"
+    }
+  ]
+}

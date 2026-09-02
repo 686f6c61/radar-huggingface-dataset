@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "murai-labs/GLM-5.3-Flash-NVFP4-Murai",
+  "slug": "murai-labs-glm-5-3-flash-nvfp4-murai",
+  "author": "murai-labs",
+  "url": "https://huggingface.co/murai-labs/GLM-5.3-Flash-NVFP4-Murai",
+  "created_at": "2026-09-02T02:04:35.000Z",
+  "updated_at": "2026-09-02T03:13:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm5_next",
+    "nvfp4",
+    "quantization",
+    "vllm",
+    "dgx-spark",
+    "modelopt",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 165496249182,
+  "parameters_human": "165.50B",
+  "storage_bytes": 194692996625,
+  "storage_human": "194.7 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zai-org/GLM-5.3-Flash · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3-Flash-NVFP4-Dual-DGX-Spark - GitHub",
+      "url": "https://github.com/MiaAI-Lab/GLM-5.3-Flash-NVFP4-Dual-DGX-Spark",
+      "snippet": "The kernel layer selects SM90 sparse-MLA + FA2 for GB10; it does not invent FlashInfer FA2 or SM121 MLA. sm120 in glm53-flash_SM121.py is an unused packed-cache mode and is not the serve path (not baked)."
+    },
+    {
+      "title": "LibertAIDAI/GLM-5.3-Flash-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/LibertAIDAI/GLM-5.3-Flash-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3-Flash-NVFP4-DFlash2-2x-DGX-Spark - GitHub",
+      "url": "https://github.com/tonyd2wild/GLM-5.3-Flash-NVFP4-DFlash2-2x-DGX-Spark",
+      "snippet": "OpenAI-compatible vLLM serving of zai-org/GLM-5.3-Flash (320B total / 18B active MoE) across two DGX Spark (GB10, SM121) nodes at tensor-parallel 2, using the RedHatAI/GLM-5.3-Flash-NVFP4 compressed-tensors quant (the corruption-free default, see below), fp8 KV cache, and the incoai/GLM-5.3-Flash-DFlash2 speculative drafter. 262,144-token context. Deployed the same day the model dropped."
+    },
+    {
+      "title": "GLM-5.3-Flash: Frontier Intelligence, Flash Cost - z.ai",
+      "url": "https://z.ai/blog/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash starts from a newly trained base model, with its architecture and training recipe redesigned around capability and efficiency. For the first time in the GLM series, we introduce a hybrid architecture combining sparse and linear attention, sharply reducing long-context serving costs while preserving precise long-context capabilities."
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "id": "gcjordi/CiberIA-PromptGuard-multilingual-v1",
+  "slug": "gcjordi-ciberia-promptguard-multilingual-v1",
+  "author": "gcjordi",
+  "url": "https://huggingface.co/gcjordi/CiberIA-PromptGuard-multilingual-v1",
+  "created_at": "2026-09-02T09:11:21.000Z",
+  "updated_at": "2026-09-02T09:11:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "ca",
+    "es",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "ai-security",
+    "prompt-injection",
+    "jailbreak",
+    "multilingual",
+    "ciberia",
+    "ca",
+    "es",
+    "en",
+    "dataset:gcjordi/CiberIA-PromptRisk-v1",
+    "base_model:distilbert/distilbert-base-multilingual-cased",
+    "base_model:finetune:distilbert/distilbert-base-multilingual-cased",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135326210,
+  "parameters_human": "135.3M",
+  "storage_bytes": 541317368,
+  "storage_human": "541 MB",
+  "base_model": "distilbert/distilbert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Prompt risk classification",
+      "dataset": "CiberIA PromptRisk v1",
+      "metric": "Accuracy",
+      "value": 0.94871795
+    },
+    {
+      "task": "Prompt risk classification",
+      "dataset": "CiberIA PromptRisk v1",
+      "metric": "ATTACK precision",
+      "value": 0.90697674
+    },
+    {
+      "task": "Prompt risk classification",
+      "dataset": "CiberIA PromptRisk v1",
+      "metric": "ATTACK recall",
+      "value": 1
+    },
+    {
+      "task": "Prompt risk classification",
+      "dataset": "CiberIA PromptRisk v1",
+      "metric": "ATTACK F1",
+      "value": 0.95121951
+    },
+    {
+      "task": "Prompt risk classification",
+      "dataset": "CiberIA PromptRisk v1",
+      "metric": "ROC-AUC",
+      "value": 0.99665105
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - seojoonkim/prompt-guard: Advanced prompt injection defense ...",
+      "url": "https://github.com/seojoonkim/prompt-guard",
+      "snippet": "Advanced prompt injection defense system for AI agents. Multi-language detection, severity scoring, and security auditing. - seojoonkim/prompt-guard"
+    },
+    {
+      "title": "GitHub - aisona-lab/prompt-guard: A security linter for LLM prompts ...",
+      "url": "https://github.com/aisona-lab/prompt-guard",
+      "snippet": "🛡️ prompt-guard A security linter for LLM prompts. Catch prompt injection, jailbreaks, system-prompt leakage, obfuscation and PII exfiltration before untrusted text reaches your model. Think of it as ESLint for the new attack surface."
+    },
+    {
+      "title": "Multilingual Prompt Injection: How Non-English Attacks Bypass Your ...",
+      "url": "https://www.ctx-guard.com/blog/multilingual-prompt-injection",
+      "snippet": "Threat research Multilingual Prompt Injection: How Non-English Attacks Bypass Your Defenses Most LLM security filters are built for English. But models speak dozens of languages, and attackers use German, Spanish, Korean, and Russian to walk right past English-only defenses. Here is how multilingual injection works and how to build a defense that does not stop at the language border."
+    },
+    {
+      "title": "CiberIA AI Benchmarks | publitests.github.io",
+      "url": "https://gcjordi.github.io/publitests.github.io/",
+      "snippet": "CiberIA is a proprietary cognitive cybersecurity framework for evaluating AI systems under structured conditions. The goal is to assess behavior related to safety, reliability, reasoning consistency and awareness of operational limitations."
+    },
+    {
+      "title": "PromptGuard",
+      "url": "https://promptguard.net/",
+      "snippet": "PromptGuard - The Future of AI Filtering Control your AI Traffic. The complete Open-Source gateway for managing, filtering, and analyzing your LLM interactions. Secure your prompts and optimize costs with real-time intelligence."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "jwg0830/AX-3.1-Light-sft_declare_v1_fix",
+  "slug": "jwg0830-ax-3-1-light-sft_declare_v1_fix",
+  "author": "jwg0830",
+  "url": "https://huggingface.co/jwg0830/AX-3.1-Light-sft_declare_v1_fix",
+  "created_at": "2026-09-02T01:58:07.000Z",
+  "updated_at": "2026-09-02T01:59:42.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "lora-merged",
+    "korean",
+    "k-ai-leaderboard",
+    "conversational",
+    "ko",
+    "base_model:skt/A.X-3.1-Light",
+    "base_model:finetune:skt/A.X-3.1-Light",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7264800768,
+  "parameters_human": "7.26B",
+  "storage_bytes": 14529635608,
+  "storage_human": "14.5 GB",
+  "base_model": "skt/A.X-3.1-Light",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jwg0830/AX-3.1-Light-sft_declare_v1_fix · Hugging Face",
+      "url": "https://huggingface.co/jwg0830/AX-3.1-Light-sft_declare_v1_fix",
+      "snippet": "jwg0830 / AX-3.1-Light-sft_declare_v1_fix like 0 Text Generation Transformers Safetensors Korean llama lora-merged korean k-ai-leaderboard conversational text-generation-inference License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "jwg0830/AX-3.1-Light-sft_declare_v1 · Hugging Face",
+      "url": "https://huggingface.co/jwg0830/AX-3.1-Light-sft_declare_v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AX-3.1-Light-sft_declare_v1 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/jwg0830/AX-3.1-Light-sft_declare_v1",
+      "snippet": "Deploy AX-3.1-Light-sft_declare_v1 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DKFZ-RadOpt/pyRadPlan-dosecalc-Det-proton-headneck",
+  "slug": "dkfz-radopt-pyradplan-dosecalc-det-proton-headneck",
+  "author": "DKFZ-RadOpt",
+  "url": "https://huggingface.co/DKFZ-RadOpt/pyRadPlan-dosecalc-Det-proton-headneck",
+  "created_at": "2026-09-02T07:37:33.000Z",
+  "updated_at": "2026-09-02T07:37:33.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pyRadPlan-dosecalc - a DKFZ-RadOpt Collection",
+      "url": "https://huggingface.co/collections/DKFZ-RadOpt/pyradplan-dosecalc",
+      "snippet": "Carries different architectures (Bayes, deterministic) for dose or LET calculation."
+    },
+    {
+      "title": "DKFZ-RadOpt (Radiotherapy Optimization at DKFZ) - Hugging Face",
+      "url": "https://huggingface.co/DKFZ-RadOpt",
+      "snippet": "DKFZ-RadOpt/pyRadPlan-outcome-LR-Xerostomia Updated about 5 hours ago pyRadPlan-dosecalc"
+    },
+    {
+      "title": "GitHub - e0404/pyRadPlan: An open-source radiotherapy treatment ...",
+      "url": "https://github.com/e0404/pyRadPlan",
+      "snippet": "pyRadPlan is an open-source radiotherapy treatment planning toolkit designed for interoperability with matRad. Development is lead by the Radiotherapy Optimization group at the German Cancer Research Center (DKFZ)"
+    },
+    {
+      "title": "pyRadPlan documentation — pyRadPlan 0.4.1 documentation",
+      "url": "https://pyradplan.readthedocs.io/en/latest/",
+      "snippet": "pyRadPlan documentation # Date: Jun 15, 2026 Version: 0.4.1 pyRadPlan is an open-source, multi-modality radiotherapy treatment planning toolkit designed for interoperability with matRad. pyRadPlan is born from the established Matlab-based toolkit matRad. As such, pyRadPlan aims to provide a framework as well as tools for combining dose calculation with optimization with focus on ion planning ..."
+    },
+    {
+      "title": "Radiotherapy Optimization - German Cancer Research Center",
+      "url": "https://www.dkfz.de/en/medical-physics-in-radiation-oncology/radiotherapy-optimization",
+      "snippet": "Radiotherapy Treatment Planning relies on numerical dose calculation and optimization techniques. The available strategies and algorithms limit the potential treatment outcome. Our group researches new approaches going beyond the conventional dose paradigm, application of novel optimization methods, and integration of AI into the treatment planning workflow."
+    }
+  ]
+}

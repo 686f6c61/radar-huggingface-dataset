@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "pottokao/MiniMax-H3-NVFP4-rotated",
+  "slug": "pottokao-minimax-h3-nvfp4-rotated",
+  "author": "pottokao",
+  "url": "https://huggingface.co/pottokao/MiniMax-H3-NVFP4-rotated",
+  "created_at": "2026-09-02T08:15:23.000Z",
+  "updated_at": "2026-09-02T09:14:56.000Z",
+  "license": "minimax-h3-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "nvfp4",
+    "fp4",
+    "quantization",
+    "text-to-video",
+    "video",
+    "audio",
+    "minimax-h3",
+    "blackwell",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40432771073,
+  "storage_human": "40.4 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · rockerBOO/minimax-h3-nvfp4 at main - Hugging Face",
+      "url": "https://huggingface.co/rockerBOO/minimax-h3-nvfp4/blob/main/README.md",
+      "snippet": "Instructions to use rockerBOO/minimax-h3-nvfp4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use rockerBOO/minimax-h3-nvfp4 with Diffusers:"
+    },
+    {
+      "title": "MiniMax H3 reproducibly causes `GPU is lost` / TDR black ... - GitHub",
+      "url": "https://github.com/Comfy-Org/ComfyUI/issues/15488",
+      "snippet": "Summary On a single-GPU Windows box, MiniMax H3 video generation reliably kills the GPU (nvidia-smi: GPU is lost, requires reboot) after 1-8 generations. The same machine, same GPU, same driver, sa..."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "pottokao (pottokao) - Hugging Face",
+      "url": "https://huggingface.co/pottokao",
+      "snippet": "pottokao/Ornith-1.5-35B-A3B-abliterated-NVFP4-DFlash Text Generation • 18B•Updated 4 days ago• 476 • 2"
+    },
+    {
+      "title": "Minimax H3 Video Gen (NVFP4/BF16/FP8/INT8/INT4/GGUF)",
+      "url": "https://www.stablediffusiontutorials.com/2026/08/minimax-h3.html",
+      "snippet": "Now, the next Open sourced Video generation model is here. MiniMax H3 (Developed by MiniMaxAI) is positioned as a next-generation general-purpose multimodal video model designed to move beyond specialized generation tasks toward broader multimodal intelligence. Rather than limiting itself to text prompts, can understand a combination of Text,Images,Video and Audio. The idea is straightforward ..."
+    }
+  ]
+}

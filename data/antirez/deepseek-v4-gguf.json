@@ -38,13 +38,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 465,
-  "downloads_30d": 2082306,
+  "likes": 466,
+  "downloads_30d": 2056003,
   "trending_score": 8,
   "parameters": 284334567511,
   "parameters_human": "284.33B",
-  "storage_bytes": 4189192011277,
-  "storage_human": "4189.2 GB",
+  "storage_bytes": 4273612595885,
+  "storage_human": "4273.6 GB",
   "base_model": "deepseek-ai/DeepSeek-V4-Flash",
   "formats": [
     "gguf"

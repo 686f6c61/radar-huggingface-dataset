@@ -5,7 +5,7 @@
   "author": "vegidio",
   "url": "https://huggingface.co/vegidio/open-photo-ai",
   "created_at": "2025-11-11T18:30:26.000Z",
-  "updated_at": "2026-08-29T19:38:19.000Z",
+  "updated_at": "2026-09-01T18:59:42.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,7 +20,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 17964426746,
+  "storage_bytes": 18004745517,
   "storage_human": "18.0 GB",
   "base_model": null,
   "formats": [

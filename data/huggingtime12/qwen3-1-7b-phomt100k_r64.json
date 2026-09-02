@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "huggingtime12/Qwen3-1.7B-PhoMT100k_R64",
+  "slug": "huggingtime12-qwen3-1-7b-phomt100k_r64",
+  "author": "huggingtime12",
+  "url": "https://huggingface.co/huggingtime12/Qwen3-1.7B-PhoMT100k_R64",
+  "created_at": "2026-09-02T07:56:19.000Z",
+  "updated_at": "2026-09-02T07:57:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1532869502,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huggingtime12/Qwen3-1.7B-PhoMT100k_1 · Hugging Face",
+      "url": "https://huggingface.co/huggingtime12/Qwen3-1.7B-PhoMT100k_1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huggingtime12/qwen3_1.7B_phomt100k_1_epoch_2 · Hugging Face",
+      "url": "https://huggingface.co/huggingtime12/qwen3_1.7B_phomt100k_1_epoch_2",
+      "snippet": "Instructions to use huggingtime12/qwen3_1.7B_phomt100k_1_epoch_2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Enhanced capabilities in 256K-token long-context understanding, extendable up to 1 million tokens. Qwen3-Thinking-2507 is the continuation of Qwen3 thinking model, with improved quality and depth of reasoning, featuring the following key enhancements:"
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/qwen3.md at main - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/qwen3.md",
+      "snippet": "Qwen3 is the dense model architecture in the Qwen3 family, available in sizes from 0.6B to 32B parameters. It supports both thinking mode (multi-step reasoning) and non-thinking mode, with seamless switching between the two. Qwen3 was trained on approximately 36T tokens covering 119 languages. See also the MoE variant Qwen3MoE."
+    },
+    {
+      "title": "qwen3:1.7b - ollama.com",
+      "url": "https://ollama.com/library/qwen3:1.7b",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+    }
+  ]
+}

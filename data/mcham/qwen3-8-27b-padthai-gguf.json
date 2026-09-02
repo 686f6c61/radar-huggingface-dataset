@@ -5,7 +5,7 @@
   "author": "mcham",
   "url": "https://huggingface.co/mcham/Qwen3.8-27B-padthai-gguf",
   "created_at": "2026-08-20T14:05:56.000Z",
-  "updated_at": "2026-08-31T09:57:44.000Z",
+  "updated_at": "2026-09-01T13:03:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 4841,
+  "downloads_30d": 5755,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

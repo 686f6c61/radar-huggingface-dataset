@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "UX4567/Kartik-Qwen-3B-Instruct",
+  "slug": "ux4567-kartik-qwen-3b-instruct",
+  "author": "UX4567",
+  "url": "https://huggingface.co/UX4567/Kartik-Qwen-3B-Instruct",
+  "created_at": "2026-08-05T07:14:05.000Z",
+  "updated_at": "2026-09-02T09:49:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "text-generation",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 158,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 8136724967,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UX4567/Kartik-Qwen-3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/UX4567/Kartik-Qwen-3B-Instruct",
+      "snippet": "Instructions to use UX4567/Kartik-Qwen-3B-Instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use UX4567/Kartik-Qwen-3B-Instruct with PEFT:"
+    },
+    {
+      "title": "UX4567/Kartik-Kundli-AI-3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/UX4567/Kartik-Kundli-AI-3B-Instruct",
+      "snippet": "Instructions to use UX4567/Kartik-Kundli-AI-3B-Instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use UX4567/Kartik-Kundli-AI-3B-Instruct with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Kartik Kundli AI 3B V2.0 by UX4567 - LLM Explorer",
+      "url": "https://llm-explorer.com/model/UX4567%2FKartik-Kundli-AI-3B-v2.0,2hbzpUrbie3nSd2UI45ibz",
+      "snippet": "Kartik Kundli AI 3B V2.0 is an open-source 3b LLM by UX4567. VRAM 6.3GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Excited to share that I&#x27;ve just published a new fine-tuned model on ...",
+      "url": "https://www.linkedin.com/posts/kartik-sharma-0a1667369_excited-to-share-that-ive-just-published-activity-7490695548228751361-v9ii",
+      "snippet": "Excited to share that I&#x27;ve just published a new fine-tuned model on Hugging Face: Kartik-Qwen-3B-Instruct! This model is a specialized version of Qwen2.5-3B-Instruct, fine-tuned using supervised ..."
+    },
+    {
+      "title": "Qwen3 Instruct vs Thinking vs Coder: Model Selection Guide",
+      "url": "https://fireworks.ai/blog/qwen-3-decoded",
+      "snippet": "Compare Qwen3 Instruct, Thinking, and Coder. Learn which models are best suited for various tasks based on architecture, features, and benchmarks."
+    }
+  ]
+}

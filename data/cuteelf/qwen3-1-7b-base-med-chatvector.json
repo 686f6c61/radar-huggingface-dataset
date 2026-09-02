@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "cuteElf/Qwen3-1.7B-base-MED-ChatVector",
+  "slug": "cuteelf-qwen3-1-7b-base-med-chatvector",
+  "author": "cuteElf",
+  "url": "https://huggingface.co/cuteElf/Qwen3-1.7B-base-MED-ChatVector",
+  "created_at": "2026-09-02T07:42:10.000Z",
+  "updated_at": "2026-09-02T07:42:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608258,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-1.7B-base-MED-ChatVector - friendli.ai",
+      "url": "https://friendli.ai/models/kisoo111/Qwen3-1.7B-base-MED-ChatVector",
+      "snippet": "Deploy Qwen3-1.7B-base-MED-ChatVector with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Qwen/Qwen3-1.7B-Base · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "We are excited to announce the release of Qwen3, the latest addition to the Qwen family of large language models. These models represent our most advanced and intelligent systems to date, improving from our experience in building QwQ and Qwen2.5. We are making the weights of Qwen3 available to the public, including both dense and Mixture-of-Expert (MoE) models. The highlights from Qwen3 ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    }
+  ]
+}

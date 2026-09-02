@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "DANNY621/H3-World",
+  "slug": "danny621-h3-world",
+  "author": "DANNY621",
+  "url": "https://huggingface.co/DANNY621/H3-World",
+  "created_at": "2026-08-31T08:31:49.000Z",
+  "updated_at": "2026-09-02T05:52:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "video",
+    "image-to-video",
+    "world-model",
+    "interactive-world-model",
+    "lora",
+    "diffusion",
+    "action-conditioning",
+    "game-world-model",
+    "arxiv:2609.01560",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 18,
+  "downloads_30d": 0,
+  "trending_score": 17,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2825328842,
+  "storage_human": "2.8 GB",
+  "base_model": "MiniMax/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "H3-World: Turning Language Understanding into World Control",
+      "url": "https://arxiv.org/html/2609.01560v1",
+      "snippet": "Abstract We present H3-World, an efficient framework that turns the 33B MiniMax-H3 video generator into an interactive world model. Our key finding is that, as large video generators become more capable, language is emerging as a natural interface for control. MiniMax-H3, for example, already supports zero-shot control of character behavior and camera motion through natural-language ..."
+    },
+    {
+      "title": "H3-World turns MiniMax-H3 33B video model into a world model - AI Weekly",
+      "url": "https://aiweekly.co/alerts/h3-world-turns-minimax-h3-33b-video-model-into-a-world-model",
+      "snippet": "H3-World, a new preprint from Danze Chen and colleagues, converts the 33B-parameter MiniMax-H3 video generator into an interactive world model by training just 0.199% of the parameters. The paper on arXiv, submitted 1 September 2026, reports that 8,000 gameplay samples and 10,000 LoRA optimization ..."
+    },
+    {
+      "title": "DANNY621 (1) - Hugging Face",
+      "url": "https://huggingface.co/DANNY621/models",
+      "snippet": "User profile of 1 on Hugging Face Recent Activity updated a datasetabout 19 hours ago DANNY621/V_Rising upvoted a paper 18 days ago BadWorld: Adversarial Attacks on World Models upvoted a paper 24 days ago Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories View all activity"
+    },
+    {
+      "title": "DANNY621 (1) - Hugging Face",
+      "url": "https://huggingface.co/DANNY621/datasets",
+      "snippet": "From Scale to Speed: Adaptive Test-Time Scaling for Image Editing. View all activity. Organizations. None yet. DANNY621 &#x27;s datasets 3"
+    },
+    {
+      "title": "Genie 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/genie/",
+      "snippet": "Genie 3 represents a major leap in capabilities - allowing agents to predict how a world evolves, and how their actions affect it. Genie 3 makes it possible to explore an unlimited range of realistic environments. This is a key stepping stone on the path to AGI - enabling AI agents capable of reasoning, problem solving, and real-world actions."
+    }
+  ]
+}

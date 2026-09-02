@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bark07/Qwen3-1.7B-base-MED-ChatVector",
+  "slug": "bark07-qwen3-1-7b-base-med-chatvector",
+  "author": "bark07",
+  "url": "https://huggingface.co/bark07/Qwen3-1.7B-base-MED-ChatVector",
+  "created_at": "2026-09-02T07:47:16.000Z",
+  "updated_at": "2026-09-02T07:47:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608258,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Han0716/Qwen3-1.7B-base-MED-ChatVector · Hugging Face",
+      "url": "https://huggingface.co/Han0716/Qwen3-1.7B-base-MED-ChatVector",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 1.7B Base MED ChatVector by Han0716 - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/Han0716%2FQwen3-1.7B-base-MED-ChatVector,7kCkdwvRFpGLgptZpUz1XC",
+      "snippet": "Rank the Qwen3 1.7B Base MED ChatVector capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Han0716/Qwen3-1.7B-base-MED-ChatVector at main - Hugging Face",
+      "url": "https://huggingface.co/Han0716/Qwen3-1.7B-base-MED-ChatVector/tree/main",
+      "snippet": "Han0716 / Qwen3-1.7B-base-MED-ChatVector like 1 Text Generation Transformers Safetensors qwen3 conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3-1.7B-base-MED-ChatVector - friendli.ai",
+      "url": "https://friendli.ai/models/Han0716/Qwen3-1.7B-base-MED-ChatVector",
+      "snippet": "Deploy Qwen3-1.7B-base-MED-ChatVector with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Qwen3-1.7B-base-MED-ChatVector - friendli.ai",
+      "url": "https://friendli.ai/models/duck2717/Qwen3-1.7B-base-MED-ChatVector",
+      "snippet": "Run Qwen3-1.7B-base-MED-ChatVector with FriendliAI inference. This is the model card of a 🤗 transformers model that has been pushed on the Hub."
+    }
+  ]
+}

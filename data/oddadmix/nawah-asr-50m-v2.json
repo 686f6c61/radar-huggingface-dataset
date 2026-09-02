@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "oddadmix/Nawah-ASR-50M-v2",
+  "slug": "oddadmix-nawah-asr-50m-v2",
+  "author": "oddadmix",
+  "url": "https://huggingface.co/oddadmix/Nawah-ASR-50M-v2",
+  "created_at": "2026-09-02T10:55:23.000Z",
+  "updated_at": "2026-09-02T11:22:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2_audio",
+    "arabic",
+    "asr",
+    "speech-recognition",
+    "speech-llm",
+    "on-device",
+    "emhotob",
+    "automatic-speech-recognition",
+    "ar",
+    "dataset:pain/MASC",
+    "base_model:oddadmix/50M-2048-Emhotob",
+    "base_model:finetune:oddadmix/50M-2048-Emhotob",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 156783616,
+  "parameters_human": "156.8M",
+  "storage_bytes": 627170112,
+  "storage_human": "627 MB",
+  "base_model": "oddadmix/50M-2048-Emhotob, openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oddadmix/Nawah-ASR-50M-v1 · Hugging Face",
+      "url": "https://huggingface.co/oddadmix/Nawah-ASR-50M-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "oddadmix (Ahmed Wasfy) - Hugging Face",
+      "url": "https://huggingface.co/oddadmix",
+      "snippet": "From-scratch Arabic LMs (0.5M-50M) finetuned into bidirectional translators across 5 language pairs. Identical recipe at every rung; v1 and v2 bases."
+    },
+    {
+      "title": "oddadmix/Nawah-50M-RAG-Support-2K · Hugging Face",
+      "url": "https://huggingface.co/oddadmix/Nawah-50M-RAG-Support-2K",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "oddadmix/Nawah-VL-50M · Hugging Face",
+      "url": "https://huggingface.co/oddadmix/Nawah-VL-50M",
+      "snippet": "The language model is oddadmix/50M-2048-Emhotob, trained from scratch on Arabic. The vision tower is SigLIP2 as distributed in LiquidAI/LFM2.5-VL-450M, used unmodified and frozen; those weights remain LiquidAI&#x27;s and their licence terms apply to that component."
+    },
+    {
+      "title": "oddadmix/Nawah-VL-50M-detect-ar-stage3 · Hugging Face",
+      "url": "https://huggingface.co/oddadmix/Nawah-VL-50M-detect-ar-stage3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

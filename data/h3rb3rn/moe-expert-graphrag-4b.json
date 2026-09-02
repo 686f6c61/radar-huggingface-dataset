@@ -5,7 +5,7 @@
   "author": "h3rb3rn",
   "url": "https://huggingface.co/h3rb3rn/moe-expert-graphrag-4b",
   "created_at": "2026-08-16T21:04:04.000Z",
-  "updated_at": "2026-08-19T14:07:11.000Z",
+  "updated_at": "2026-09-01T21:12:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -5,7 +5,7 @@
   "author": "nvidia",
   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DFlash",
   "created_at": "2026-08-05T19:12:27.000Z",
-  "updated_at": "2026-08-11T14:11:16.000Z",
+  "updated_at": "2026-09-01T22:17:20.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 20,
-  "downloads_30d": 3210,
+  "downloads_30d": 3329,
   "trending_score": 8,
   "parameters": 663050496,
   "parameters_human": "663.1M",

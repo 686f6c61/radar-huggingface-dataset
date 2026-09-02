@@ -5,7 +5,7 @@
   "author": "Kutches",
   "url": "https://huggingface.co/Kutches/Kr3a",
   "created_at": "2026-06-24T13:39:50.000Z",
-  "updated_at": "2026-08-31T13:16:07.000Z",
+  "updated_at": "2026-09-01T13:20:04.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,11 +17,11 @@
   ],
   "likes": 82,
   "downloads_30d": 4620,
-  "trending_score": 10,
+  "trending_score": 9,
   "parameters": 12895570508,
   "parameters_human": "12.90B",
-  "storage_bytes": 981919557063,
-  "storage_human": "981.9 GB",
+  "storage_bytes": 982357698055,
+  "storage_human": "982.4 GB",
   "base_model": null,
   "formats": [
     "gguf"

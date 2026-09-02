@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "WilliamSheltonGoh/ESD_gemma_9B",
+  "slug": "williamsheltongoh-esd_gemma_9b",
+  "author": "WilliamSheltonGoh",
+  "url": "https://huggingface.co/WilliamSheltonGoh/ESD_gemma_9B",
+  "created_at": "2026-09-02T08:24:51.000Z",
+  "updated_at": "2026-09-02T08:28:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:google/gemma-2-9b-it",
+    "base_model:adapter:google/gemma-2-9b-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 670918607,
+  "storage_human": "671 MB",
+  "base_model": "google/gemma-2-9b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-2-9b · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2-9b",
+      "snippet": "Running the model through a CLI The local-gemma repository contains a lightweight wrapper around Transformers for running Gemma 2 through a command line interface, or CLI. Follow the installation instructions for getting started, then launch the CLI through the following command:"
+    },
+    {
+      "title": "google/shieldgemma-9b · Hugging Face",
+      "url": "https://huggingface.co/google/shieldgemma-9b",
+      "snippet": "google / shieldgemma-9b like 27 Follow Google 50.6k Text Generation Transformers Safetensors gemma2 conversational text-generation-inference arxiv:2407.21772 arxiv:2310.17389 arxiv:2306.05685 License:gemma Model card FilesFiles and versions xet Community 10 Deploy Use this model"
+    },
+    {
+      "title": "Gemma 2 model card - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_2",
+      "snippet": "Model Data Data used for model training and how the data was processed. Training Dataset These models were trained on a dataset of text data that includes a wide variety of sources. The 27B model was trained with 13 trillion tokens, the 9B model was trained with 8 trillion tokens, and 2B model was trained with 2 trillion tokens. Here are the key components: Web Documents: A diverse collection ..."
+    },
+    {
+      "title": "Gemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/",
+      "snippet": "Gemma is a collection of lightweight, open models built from the same technology that powers our Gemini models."
+    },
+    {
+      "title": "Gemma: Open Models Based on Gemini Research and Technology",
+      "url": "https://arxiv.org/abs/2403.08295",
+      "snippet": "This work introduces Gemma, a family of lightweight, state-of-the art open models built from the research and technology used to create Gemini models. Gemma models demonstrate strong performance across academic benchmarks for language understanding, reasoning, and safety. We release two sizes of models (2 billion and 7 billion parameters), and provide both pretrained and fine-tuned checkpoints ..."
+    }
+  ]
+}

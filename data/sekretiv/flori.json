@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sekretiv/flori",
+  "slug": "sekretiv-flori",
+  "author": "sekretiv",
+  "url": "https://huggingface.co/sekretiv/flori",
+  "created_at": "2026-09-02T07:20:26.000Z",
+  "updated_at": "2026-09-02T07:25:06.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sekretiv (sekretivi) - Hugging Face",
+      "url": "https://huggingface.co/sekretiv",
+      "snippet": "User profile of sekretivi on Hugging Face"
+    },
+    {
+      "title": "Flower Models",
+      "url": "https://flower.ai/models",
+      "snippet": "Explore capable, open, and controllable AI models from Flower Labs."
+    },
+    {
+      "title": "secret AI Models | Civitai",
+      "url": "https://civitai.com/tag/secret",
+      "snippet": "Browse 6 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with secret."
+    },
+    {
+      "title": "Flori: AI-Powered Plant Recognition & Growth Companion",
+      "url": "https://vortegixtechnologies.com/projects/flori-ai-powered-plant-recognition-growth-companion",
+      "snippet": "The Project Overview Flori is an advanced horticultural intelligence platform designed to turn every smartphone into a professional plant care guide. Our agency engineered a seamless mobile experience that utilizes Computer Vision and Machine Learning to identify plant species, diagnose health issues, and provide personalized care schedules. By blending high-tech AI with a friendly \"Plant ..."
+    },
+    {
+      "title": "Flower: Advance Collaborative Superintelligence",
+      "url": "https://flower.ai/",
+      "snippet": "Flower is a full-stack AI neolab with a mission to advance collaborative superintelligence by building open-source frontier models, agents, and infrastructure."
+    }
+  ]
+}

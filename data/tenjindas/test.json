@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "TenjinDas/Test",
+  "slug": "tenjindas-test",
+  "author": "TenjinDas",
+  "url": "https://huggingface.co/TenjinDas/Test",
+  "created_at": "2026-08-02T06:50:47.000Z",
+  "updated_at": "2026-09-02T10:13:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8327,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13711797265,
+  "storage_human": "13.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta AI Model Hacking: Security Breach During Test",
+      "url": "https://en.cryptonomist.ch/2026/08/06/meta-ai-model-hacking/",
+      "snippet": "Meta has confirmed that one of its own artificial intelligence systems broke into another company&#x27;s network during a routine security test, adding a major tech name to a string of unsettling episodes now shaping the conversation around Meta AI model hacking and the broader risks tied to increasingly autonomous AI agents. The admission, made public on August 6, 2026, lands just weeks after ..."
+    },
+    {
+      "title": "OpenAI says AI model hacked another company&#x27;s systems during internal test",
+      "url": "https://www.foxbusiness.com/technology/openai-says-ai-model-hacked-another-companys-systems-during-internal-test",
+      "snippet": "One of OpenAI&#x27;s models hacked into another company&#x27;s systems during internal testing in what it called an \"unprecedented cyber incident,\" according to the company."
+    },
+    {
+      "title": "AI models shock UK testers by using fake identities to try to trick ...",
+      "url": "https://www.theguardian.com/technology/2026/aug/05/openai-anthropic-models-went-rogue-cybersecurity-test-ai-security-institute",
+      "snippet": "AI Security Institute says OpenAI and Anthropic models went rogue during a cybersecurity test and showed a new type of risk"
+    },
+    {
+      "title": "OpenAI says its AI models secretly broke out of a secure test ...",
+      "url": "https://fortune.com/2026/07/21/openai-says-ai-models-escaped-control-hacked-hugging-face/",
+      "snippet": "OpenAI CEO Sam Altman. The company said in a blog post that two of its AI models escaped from a controlled test environment and autonomously hacked into AI company Hugging Face, all in order to ..."
+    },
+    {
+      "title": "AI Model Test Prompts — Reproducible Benchmark Tasks",
+      "url": "https://aimodelbenchmarks.com/prompts",
+      "snippet": "Open-source test prompts for evaluating LLMs on coding, reasoning, and tool-use tasks. Use these to benchmark models yourself. Updated March 2026."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dipeshsukhia/Sukhia",
+  "slug": "dipeshsukhia-sukhia",
+  "author": "dipeshsukhia",
+  "url": "https://huggingface.co/dipeshsukhia/Sukhia",
+  "created_at": "2026-09-02T06:13:59.000Z",
+  "updated_at": "2026-09-02T09:01:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ollama",
+  "languages": [],
+  "tags": [
+    "ollama",
+    "code-generation",
+    "code-assistant",
+    "qwen3",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dipeshsukhia/SukhiaV1.0 · Hugging Face",
+      "url": "https://huggingface.co/dipeshsukhia/SukhiaV1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The AI is the Computer | Dipesh Sukhia - LinkedIn",
+      "url": "https://www.linkedin.com/posts/dipeshsukhia_the-ai-is-the-computer-activity-7433736142505578496-p0eM",
+      "snippet": "Excited about Perplexity&#x27;s groundbreaking \"Computer\" a multi-model AI system that orchestrates 19 specialized models to research, code, deploy, and manage complex projects autonomously. As Aravind ..."
+    },
+    {
+      "title": "Dipesh Sukhia",
+      "url": "https://dipeshsukhia.github.io/",
+      "snippet": "Dipesh Sukhia - Having good experience in Laravel 5 and above. I have worked with various projects, including challenging and complex project structures like matrimonial, job kind of portal, food delivery, betting portal, payment portal, websites, the app builds management etc."
+    },
+    {
+      "title": "dipeshsukhia (Dipesh Sukhia) · GitHub",
+      "url": "https://github.com/dipeshsukhia",
+      "snippet": "A graph representing dipeshsukhia&#x27;s contributions from May 11, 2025 to May 12, 2026. The contributions are 72% commits, 14% code review, 14% pull requests, 0% issues."
+    },
+    {
+      "title": "Unlock Next-Gen Agentic RAG with Amazon Nova Multimodal Embeddings",
+      "url": "https://www.linkedin.com/posts/dipeshsukhia_aws-generativeai-awsbedrock-activity-7488450119156109312-uhBo",
+      "snippet": "Whether you are building complex context-aware AI agents or high-accuracy search pipelines, this unified model breaks down data silos by processing text, mixed-modality documents, images, video ..."
+    }
+  ]
+}

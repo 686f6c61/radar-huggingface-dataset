@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "npario/Ornith-1.5-9B-MLX-6bit",
+  "slug": "npario-ornith-1-5-9b-mlx-6bit",
+  "author": "npario",
+  "url": "https://huggingface.co/npario/Ornith-1.5-9B-MLX-6bit",
+  "created_at": "2026-09-02T01:48:30.000Z",
+  "updated_at": "2026-09-02T01:48:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "conversational",
+    "en",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1959473664,
+  "parameters_human": "1.96B",
+  "storage_bytes": 7298022398,
+  "storage_human": "7.3 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "npario/Ornith-1.5-9B-MLX-6bit · Hugging Face",
+      "url": "https://huggingface.co/npario/Ornith-1.5-9B-MLX-6bit",
+      "snippet": "Ornith-1.5-9B is a dense ~9B model (≈19 GB in bf16), so it serves on a single 80GB GPU. The recipes below stand up an OpenAI-compatible server; add --tensor-parallel-size / --tp if you want to shard across more GPUs."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-9B-MLX · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX",
+      "snippet": "Ornith-1.5-9B is a reasoning model: by default the assistant turn opens with a <think> … </think> block before the final answer. The serving recipes below enable a reasoning parser so the chain-of-thought is returned in a separate reasoning_content field, and a tool-call parser so the model&#x27;s <tool_call> blocks are surfaced as OpenAI-style ..."
+    },
+    {
+      "title": "GitHub - ornith-ai/Ornith-1 · GitHub",
+      "url": "https://github.com/ornith-ai/Ornith-1",
+      "snippet": "Aloha! 🌺 Ornith is a family of self-improving open-source models for agentic tasks. This repo covers both generations: 🐦 Ornith-1.5 (latest) — extends self-scaffolding into a complete end-to-end self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning. Model weights at HuggingFace, and more details ..."
+    },
+    {
+      "title": "Ornith-1.5-9B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/ornith-1-5-9b",
+      "snippet": "The smallest model in DeepReinforce&#x27;s Ornith-1.5 family (released 2026-08-19, MIT, weights on Hugging Face): a 9B-parameter dense coding/agent model trained with the family&#x27;s self-improving task-and-scaffold RL loop, and shipped with a quantized &#x27;Ornith-1.5-9B-Mobile&#x27; build that runs on iPhone and Android. Vendor-reported, five-run-averaged figures put it at 47.0 on Terminal-Bench 2.1 and 70.6 ..."
+    },
+    {
+      "title": "Ornith AI",
+      "url": "https://ornith.ai/",
+      "snippet": "Ornith-1.5: From Self-Scaffolding to Self-Improvement Ornith-1.5 takes a major step toward building foundation models through end-to-end self-improvement, extending the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts. It spans 397B MoE, 35B MoE, and 9B ..."
+    }
+  ]
+}

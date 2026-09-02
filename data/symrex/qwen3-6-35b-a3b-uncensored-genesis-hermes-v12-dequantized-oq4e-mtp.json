@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-dequantized-oQ4e-mtp",
+  "slug": "symrex-qwen3-6-35b-a3b-uncensored-genesis-hermes-v12-dequantized-oq4e-mtp",
+  "author": "symrex",
+  "url": "https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-dequantized-oQ4e-mtp",
+  "created_at": "2026-09-02T10:50:53.000Z",
+  "updated_at": "2026-09-02T11:01:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6189056944,
+  "parameters_human": "6.19B",
+  "storage_bytes": 21619203143,
+  "storage_human": "21.6 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V6-dequantized-oQ3e-mtp",
+      "url": "https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V6-dequantized-oQ3e-mtp",
+      "snippet": "Instructions to use symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V6-dequantized-oQ3e-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V6-dequantized-oQ4e-mtp",
+      "url": "https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V6-dequantized-oQ4e-mtp",
+      "snippet": "Instructions to use symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V6-dequantized-oQ4e-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B Genesis Hermes V11: Complete GGUF Guide",
+      "url": "https://hackernoon.com/qwen36-35b-a3b-genesis-hermes-v11-complete-gguf-guide",
+      "snippet": "Explore Qwen3.6-35B-A3B Genesis Hermes V11, a 35B MoE GGUF model with 262K context, Hermes tool calling, multimodal support, and uncensored output."
+    },
+    {
+      "title": "【2026】Qwen3.6-35B Genesis Hermes GGUF Complete Guide: Running an ...",
+      "url": "https://cldnavi.com/en/blog/qwen36-35b-genesis-hermes-guide-2026/",
+      "snippet": "A complete guide to running the uncensored, Hermes-specialized multimodal MoE model based on Alibaba Qwen3.6 on your home PC. Required specs, setup steps, and recommended quantization — for beginners."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B Complete Review: Alibaba&#x27;s Open-Source Coding Model ...",
+      "url": "https://dev.to/czmilo/qwen36-35b-a3b-complete-review-alibabas-open-source-coding-model-that-beats-frontier-giants-4382",
+      "snippet": "Qwen3.6-35B-A3B is the latest open-weight model from Alibaba&#x27;s Qwen team, officially released on April 16, 2026. It represents a significant leap in the Qwen series, specifically designed for agentic coding and repository-scale reasoning tasks."
+    }
+  ]
+}

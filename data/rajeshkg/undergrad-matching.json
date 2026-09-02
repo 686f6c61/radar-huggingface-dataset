@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rajeshkg/undergrad-matching",
+  "slug": "rajeshkg-undergrad-matching",
+  "author": "rajeshkg",
+  "url": "https://huggingface.co/rajeshkg/undergrad-matching",
+  "created_at": "2026-09-02T07:53:15.000Z",
+  "updated_at": "2026-09-02T07:53:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rajeshkg/course-matching · Hugging Face",
+      "url": "https://huggingface.co/rajeshkg/course-matching",
+      "snippet": "rajeshkg / course-matching like 0 Safetensors PyTorch swin_t swin-t matching License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Swin T for Matching Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "IMDB Sentiment Analysis - Kaggle",
+      "url": "https://www.kaggle.com/code/asafesmat/imdb-sentiment-analysis",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from IMDB Dataset of 50K Movie Reviews"
+    },
+    {
+      "title": "Rahish — AI Developer & Educator | AI with Rahish",
+      "url": "https://aiwithrahish.com/",
+      "snippet": "AI developer building LLM apps, RAG systems, and agents. Courses, projects, and technical content by Rahish."
+    },
+    {
+      "title": "Bucknell Research Uses Typing Patterns to Detect AI-assisted Academic ...",
+      "url": "https://www.bucknell.edu/news/bucknell-research-uses-typing-patterns-detect-ai-assisted-academic-dishonesty",
+      "snippet": "Under controlled conditions, the study&#x27;s machine-learning models correctly distinguished between genuine and AI-assisted writing with very high accuracy, while a neural-network model also performed strongly when participants tried to disguise AI-generated material by paraphrasing it."
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    }
+  ]
+}

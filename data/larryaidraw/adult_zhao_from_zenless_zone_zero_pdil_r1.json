@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LarryAIDraw/Adult_Zhao_from_Zenless_Zone_Zero_PDIL_r1",
+  "slug": "larryaidraw-adult_zhao_from_zenless_zone_zero_pdil_r1",
+  "author": "LarryAIDraw",
+  "url": "https://huggingface.co/LarryAIDraw/Adult_Zhao_from_Zenless_Zone_Zero_PDIL_r1",
+  "created_at": "2026-09-02T08:37:30.000Z",
+  "updated_at": "2026-09-02T08:39:10.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228464692,
+  "storage_human": "228 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adult Zhao (from Zenless Zone Zero) PDIL - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/e5e054074c3cb897c121d3bf60852872",
+      "snippet": "Explore Adult Zhao (from Zenless Zone Zero) PDIL model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "LarryAIDraw/ZenlessZoneZero · Hugging Face",
+      "url": "https://huggingface.co/LarryAIDraw/ZenlessZoneZero",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Zhao (Zenless Zone Zero) - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1964473734821978154",
+      "snippet": "Generate stunning character, zzz, furry_female, zenless_zone_zero, zhao anime art with the &#x27;Zhao (Zenless Zone Zero)&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Zhao [zenless zone zero] [Update V1.2]-Model info!!!",
+      "url": "https://smutba.se/project/8754c324-6dce-4fda-a419-ec2229c1d67a/",
+      "snippet": "[Warnings] (the model was created using Blender 5.1) Using other versions may cause errors (it´s recommended to use Autorig-pro Addon) [Features] -New bones to control the genitals -New facial expresión pose library (A default pose has been added for greater convenience) -extra garment has been added [update] -Fixed the bone weights on the hair, face, and ears. -Fixed a clothing clipping ..."
+    },
+    {
+      "title": "Zhao (Zenless Zone Zero) for Illustrious - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1946784081669625351",
+      "snippet": "Generate stunning furry, woman, character, zenless_zone_zero anime art with the &#x27;Zhao (Zenless Zone Zero) for Illustrious&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

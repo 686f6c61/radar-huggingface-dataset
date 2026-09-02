@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Lucien-shark/Linny-TokenBased-Gen2.1-Pro",
+  "slug": "lucien-shark-linny-tokenbased-gen2-1-pro",
+  "author": "Lucien-shark",
+  "url": "https://huggingface.co/Lucien-shark/Linny-TokenBased-Gen2.1-Pro",
+  "created_at": "2026-06-12T23:10:48.000Z",
+  "updated_at": "2026-09-02T04:22:43.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1714569437252,
+  "storage_human": "1714.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lucien-shark/Linny-TokenBased-Gen2.1-Pro-RLEmbed · Hugging Face",
+      "url": "https://huggingface.co/Lucien-shark/Linny-TokenBased-Gen2.1-Pro-RLEmbed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lucien-shark/Linny-TokenBased-Gen2.1 · Hugging Face",
+      "url": "https://huggingface.co/Lucien-shark/Linny-TokenBased-Gen2.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Linny TokenBased Gen2.1 | ST Studio",
+      "url": "https://sweettea.co/resources/lucien-shark-linny-tokenbased-gen2-1-huggingface-model-lucien-shark-linny-tokenbased-gen2-1",
+      "snippet": "Explore Linny TokenBased Gen2.1 in the Sweet Tea Resources directory, including trust, readiness, and companion requirements."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Every Activation Boosted: Scaling General Reasoner to 1 Trillion Open ...",
+      "url": "https://arxiv.org/pdf/2510.22115v1",
+      "snippet": "To enhance model performance and inference efficiency, Ling 2.0 natively integrates MTP (Gloeckle et al., 2024; DeepSeek-AI, 2024) as an auxiliary training objective. Through rigorous validation of its effectiveness and extrapolability, we found that MTP consistently improves performance on code and math tasks across different model scales."
+    }
+  ]
+}

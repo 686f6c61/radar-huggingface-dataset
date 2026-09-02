@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alwoolley/Qwen3-4B-bf16",
+  "slug": "alwoolley-qwen3-4b-bf16",
+  "author": "alwoolley",
+  "url": "https://huggingface.co/alwoolley/Qwen3-4B-bf16",
+  "created_at": "2026-09-02T02:01:25.000Z",
+  "updated_at": "2026-09-02T02:01:36.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "bfloat16",
+    "bf16",
+    "qwen",
+    "financial-tape",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4021784576,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8055037158,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-4B-MLX-bf16 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-MLX-bf16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-4B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3-4B",
+      "snippet": "Overview Qwen3-4B is the small dense model in the Qwen3 series, with hybrid thinking / non-thinking modes. At 4B it fits on a single accelerator — one TPU v6e (Trillium) chip, a single 16GB+ GPU or one Xeon 6 NUMA node — making it the cheapest entry point in the family. BF16 is the training precision and gives the best accuracy."
+    },
+    {
+      "title": "Qwen 3 Benchmarks, Comparisons, Model Specifications, and More",
+      "url": "https://dev.to/best_codes/qwen-3-benchmarks-comparisons-model-specifications-and-more-4hoa",
+      "snippet": "Qwen3: Alibaba&#x27;s Latest Open-Source AI Model Qwen3 is the latest generation of large language models (LLMs) from Alibaba Cloud. Built by the team behind the Tongyi Qianwen series (通义千问), this release brings serious power and flexibility, packed into an Apache-2.0-licensed, open-source package. Released on April 29, 2025, Qwen3 comes in eight sizes, including both dense models (from ..."
+    },
+    {
+      "title": "Qwen3-4B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b",
+      "snippet": "Qwen3-4B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑4B is a state‑of‑the‑art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    }
+  ]
+}

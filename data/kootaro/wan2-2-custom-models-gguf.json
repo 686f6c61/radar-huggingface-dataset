@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "kootaro/Wan2.2-Custom-Models-GGUF",
+  "slug": "kootaro-wan2-2-custom-models-gguf",
+  "author": "kootaro",
+  "url": "https://huggingface.co/kootaro/Wan2.2-Custom-Models-GGUF",
+  "created_at": "2026-09-02T07:08:28.000Z",
+  "updated_at": "2026-09-02T07:08:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh",
+    "th"
+  ],
+  "tags": [
+    "gguf",
+    "image-to-video",
+    "wan2.2",
+    "comfyui",
+    "GGUF",
+    "en",
+    "zh",
+    "th",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14288901184,
+  "parameters_human": "14.29B",
+  "storage_bytes": 399924837216,
+  "storage_human": "399.9 GB",
+  "base_model": "text-to-video-synthesis",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "geceff/Wan2.2-Custom-Models-GGUF · Hugging Face",
+      "url": "https://huggingface.co/geceff/Wan2.2-Custom-Models-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Wan-Video/Wan2.2: Wan: Open and Advanced Large-Scale Video ...",
+      "url": "https://github.com/Wan-Video/Wan2.2",
+      "snippet": "Wan: Open and Advanced Large-Scale Video Generative Models We are excited to introduce Wan2.2, a major upgrade to our foundational video models. With Wan2.2, we have focused on incorporating the following innovations: 👍 Effective MoE Architecture: Wan2.2 introduces a Mixture-of-Experts (MoE) architecture into video diffusion models."
+    },
+    {
+      "title": "Models compatible with the Wan2.2 library - Hugging Face",
+      "url": "https://huggingface.co/models?library=wan2.2",
+      "snippet": "TencentARC/SCoPE ... Wan-AI/Wan2.2-TI2V-5B ... Wan-AI/Wan2.2-I2V-A14B ... Phr00t/WAN2.2-14B-Rapid-AllInOne ... geceff/Wan2.2-Custom-Models-GGUF"
+    },
+    {
+      "title": "GitHub - Madxthree/wan2.2",
+      "url": "https://github.com/Madxthree/wan2.2",
+      "snippet": "👍 Effective MoE Architecture: Wan2.2 introduces a Mixture-of-Experts (MoE) architecture into video diffusion models. By separating the denoising process cross timesteps with specialized powerful expert models, this enlarges the overall model capacity while maintaining the same computational cost."
+    },
+    {
+      "title": "Wan2.2-I2V-A14B-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/bullerwins/Wan2.2-I2V-A14B-GGUF",
+      "snippet": "In Wan2.2, the A14B model series adopts a two-expert design tailored to the denoising process of diffusion models: a high-noise expert for the early stages, focusing on overall layout; and a low-noise expert for the later stages, refining video details."
+    }
+  ]
+}

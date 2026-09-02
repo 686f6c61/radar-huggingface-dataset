@@ -5,7 +5,7 @@
   "author": "logan7000",
   "url": "https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupA-endpoint",
   "created_at": "2026-08-25T04:55:39.000Z",
-  "updated_at": "2026-08-31T22:15:06.000Z",
+  "updated_at": "2026-09-02T01:40:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -28,12 +28,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 29,
+  "downloads_30d": 38,
   "trending_score": 0,
   "parameters": 848896,
   "parameters_human": "848896",
-  "storage_bytes": 16595846288,
-  "storage_human": "16.6 GB",
+  "storage_bytes": 116103425697,
+  "storage_human": "116.1 GB",
   "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
   "formats": [
     "safetensors"

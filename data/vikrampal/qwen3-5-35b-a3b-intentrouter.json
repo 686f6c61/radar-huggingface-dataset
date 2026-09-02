@@ -5,7 +5,7 @@
   "author": "VikramPal",
   "url": "https://huggingface.co/VikramPal/Qwen3.5-35B-A3B-IntentRouter",
   "created_at": "2026-08-21T11:11:27.000Z",
-  "updated_at": "2026-09-01T01:22:50.000Z",
+  "updated_at": "2026-09-01T08:16:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -46,7 +46,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 539,
+  "downloads_30d": 597,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",

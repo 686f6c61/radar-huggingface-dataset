@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "jimilismith/qwen2.5-7b-FT-risk-oracle-GGUF",
+  "slug": "jimilismith-qwen2-5-7b-ft-risk-oracle-gguf",
+  "author": "jimilismith",
+  "url": "https://huggingface.co/jimilismith/qwen2.5-7b-FT-risk-oracle-GGUF",
+  "created_at": "2026-09-02T11:26:04.000Z",
+  "updated_at": "2026-09-02T11:26:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073600,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5 7B Instruct - Open Source AI Models",
+      "url": "https://opensourceaimodels.net/models/qwen2-5-7b-instruct",
+      "snippet": "Apache-2.0-licensed 7B model with surprisingly strong reasoning and multilingual chops. Qwen 2.5 trains on a larger and more carefully filtered corpus than the original Qwen series, and the 7B variant punches well above its weight on coding and math benchmarks. A strong default for cost-sensitive chat workloads and for fine-tuning experiments where the Apache licence simplifies downstream ..."
+    },
+    {
+      "title": "QuantFactory/Qwen2.5-7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/QuantFactory/Qwen2.5-7B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-7B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-7B-Instruct",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters."
+    },
+    {
+      "title": "qwen2.5:7b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:7b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    }
+  ]
+}

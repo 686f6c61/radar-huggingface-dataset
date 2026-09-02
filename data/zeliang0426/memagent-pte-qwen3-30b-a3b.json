@@ -5,7 +5,7 @@
   "author": "zeliang0426",
   "url": "https://huggingface.co/zeliang0426/MemAgent-PTE-Qwen3-30B-A3B",
   "created_at": "2026-08-21T22:21:38.000Z",
-  "updated_at": "2026-08-31T21:12:01.000Z",
+  "updated_at": "2026-09-01T17:09:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 3702,
+  "downloads_30d": 4167,
   "trending_score": 0,
   "parameters": 30558869040,
   "parameters_human": "30.56B",

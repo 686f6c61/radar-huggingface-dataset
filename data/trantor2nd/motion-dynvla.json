@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "trantor2nd/Motion-DynVLA",
+  "slug": "trantor2nd-motion-dynvla",
+  "author": "trantor2nd",
+  "url": "https://huggingface.co/trantor2nd/Motion-DynVLA",
+  "created_at": "2026-09-02T01:39:23.000Z",
+  "updated_at": "2026-09-02T07:03:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23882672384,
+  "storage_human": "23.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "trantor2nd/Motion-DynVLA · Hugging Face",
+      "url": "https://huggingface.co/trantor2nd/Motion-DynVLA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - trantor2nd/Motion-DynVLA: Motion Dynamics Learning for Few ...",
+      "url": "https://github.com/trantor2nd/Motion-DynVLA",
+      "snippet": "Motion Dynamics Learning for Few-Shot Embodied Adaptation - trantor2nd/Motion-DynVLA"
+    },
+    {
+      "title": "Motion-DynVLA/README.md at main · trantor2nd/Motion-DynVLA",
+      "url": "https://github.com/trantor2nd/Motion-DynVLA/blob/main/README.md",
+      "snippet": "Motion Dynamics Learning for Few-Shot Embodied Adaptation - Motion-DynVLA/README.md at main · trantor2nd/Motion-DynVLA"
+    },
+    {
+      "title": "Motion Dynamics Learning for Few-Shot Embodied Adaptation",
+      "url": "https://openreview.net/forum?id=EW7FmahpLs",
+      "snippet": "In contrast, motion dynamics governing how actions evolve over time are more informative and transferable, making them better suited for few-shot adaptation. Motivated by this idea, we propose DynVLA, a few-shot adaptation system that reformulates VLA learning from action imitation to trajectory-level motion dynamics modeling."
+    },
+    {
+      "title": "Motion Dynamics Learning for Few-Shot Embodied Adaptation",
+      "url": "https://openreview.net/pdf?id=EW7FmahpLs",
+      "snippet": "DynVLA is designed as a dynamics-constrained model that achieves few-shot adaptation by conditioning action gen-eration on reusable motion-pattern prototypes. The model circumvents the need for extensive policy fine-tuning by leveraging a pretrained repository of trajectory-level execu-tion patterns."
+    }
+  ]
+}

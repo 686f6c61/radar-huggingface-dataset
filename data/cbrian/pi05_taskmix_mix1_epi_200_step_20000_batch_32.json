@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cbrian/pi05_taskmix_MIX1_epi_200_step_20000_batch_32",
+  "slug": "cbrian-pi05_taskmix_mix1_epi_200_step_20000_batch_32",
+  "author": "cbrian",
+  "url": "https://huggingface.co/cbrian/pi05_taskmix_MIX1_epi_200_step_20000_batch_32",
+  "created_at": "2026-09-02T09:59:54.000Z",
+  "updated_at": "2026-09-02T10:02:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:cbrian/merge_task1_MM_epi_100_task2_ND_epi_100",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7473108700,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pi05_task1_UM1_2_epi_200_step_20000_batch_32 - Hugging Face",
+      "url": "https://huggingface.co/IanHHH698/pi05_task1_UM1_2_epi_200_step_20000_batch_32",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jaywu109 (Dai-Jie Wu) - Hugging Face",
+      "url": "https://huggingface.co/jaywu109",
+      "snippet": "jaywu109/pi05_task1_MM1_epi_200_step_20000_batch_32 Robotics • 4B•Updated about 23 hours ago"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "PDF π : a Vision-Language-Action Model with Open-World Generalization",
+      "url": "https://www.pi.website/download/pi05.pdf",
+      "snippet": "Abstract—In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe π0.5, a new model based on π0 that uses co-training on heterogeneous ..."
+    },
+    {
+      "title": "π 0.5 : a Vision-Language-Action Model with Open-World Generalization",
+      "url": "https://arxiv.org/html/2504.16054v1",
+      "snippet": "Abstract In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe π 0.5 $π0.5$, a new model based on π 0 $π0$ that uses co-training on ..."
+    }
+  ]
+}

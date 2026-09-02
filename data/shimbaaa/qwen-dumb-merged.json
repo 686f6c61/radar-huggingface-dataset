@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "shimbaaa/Qwen-Dumb-Merged",
+  "slug": "shimbaaa-qwen-dumb-merged",
+  "author": "shimbaaa",
+  "url": "https://huggingface.co/shimbaaa/Qwen-Dumb-Merged",
+  "created_at": "2026-09-02T07:48:32.000Z",
+  "updated_at": "2026-09-02T07:49:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 999519990,
+  "storage_human": "1000 MB",
+  "base_model": "unsloth/qwen2.5-0.5b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "All Qwen Models by Alibaba (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/qwen-models",
+      "snippet": "Every Qwen model ranked: Qwen 3, Qwen 2.5, and QwQ compared by scores, pricing, and capabilities. See how Alibaba AI models stack up. Browse now."
+    },
+    {
+      "title": "Alibaba (Qwen) model releases · LLM Releases",
+      "url": "https://www.llm-releases.com/labs/alibaba",
+      "snippet": "Alibaba (Qwen) model releases Qwen team at Alibaba Cloud; prolific open-weight releases. This page collects the lab&#x27;s model releases, lifecycle events, source links, and model metadata in one crawlable record."
+    },
+    {
+      "title": "shimbaaa (shimba) - Hugging Face",
+      "url": "https://huggingface.co/shimbaaa",
+      "snippet": "Sort: Recently updated. shimbaaa/shimba-v1.dull-large. Updated Jun 21 • 1. shimbaaa/shimba-model-v1. Updated Jun 21. datasets 1"
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Qwen models: The complete guide to Alibaba&#x27;s open LLMs",
+      "url": "https://datasciencedojo.com/blog/the-evolution-of-qwen-models/",
+      "snippet": "Qwen models have rapidly become a cornerstone in the open-source large language model (LLM) ecosystem. Developed by Alibaba Cloud, these models have evolved from robust, multilingual LLMs to the latest Qwen 3 series, which sets new standards in reasoning, efficiency, and agentic capabilities. Whether you&#x27;re a data scientist, ML engineer, or AI enthusiast, understanding the Qwen models ..."
+    }
+  ]
+}

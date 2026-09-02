@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "LeoZotos/OLMo-2-0425-1B_math_cpt_math_textbooks_qa",
+  "slug": "leozotos-olmo-2-0425-1b_math_cpt_math_textbooks_qa",
+  "author": "LeoZotos",
+  "url": "https://huggingface.co/LeoZotos/OLMo-2-0425-1B_math_cpt_math_textbooks_qa",
+  "created_at": "2026-08-27T15:23:32.000Z",
+  "updated_at": "2026-09-02T09:04:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "olmo2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 1484916736,
+  "parameters_human": "1.48B",
+  "storage_bytes": 14849271120,
+  "storage_human": "14.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LeoZotos/OLMo-2-0425-1B_math_textbooks · Hugging Face",
+      "url": "https://huggingface.co/LeoZotos/OLMo-2-0425-1B_math_textbooks",
+      "snippet": "LeoZotos / OLMo-2-0425-1B_math_textbooks like 0 Safetensors olmo2 finetuning education learning-dynamics Model card FilesFiles and versions xet Community Copy to bucket new Checkpoint at revision main Training Configuration"
+    },
+    {
+      "title": "GitHub - allenai/OLMo: Modeling, training, eval, and inference code for ...",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    },
+    {
+      "title": "allenai/OLMo-2-0425-1B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/allenai/OLMo-2-0425-1B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "The fully open mixture used to train Olmo from scratch—curated web, code, books, and scientific text—deduplicated and quality-filtered."
+    },
+    {
+      "title": "OLMo-2-0425-1B · Models",
+      "url": "https://www.modelscope.cn/models/allenai/OLMo-2-0425-1B",
+      "snippet": "Model Details Model Card for OLMo 2 1B We introduce OLMo 2 1B, the smallest model in the OLMo 2 family. OLMo 2 was pre-trained on OLMo-mix-1124 and uses Dolmino-mix-1124 for mid-training. OLMo 2 is the latest in a series of O pen L anguage Mo dels designed to enable the science of language models. We have released all code, checkpoints, logs, and associated training details on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "codewithdark/EVLMs-v2-MIMIC-CXR",
+  "slug": "codewithdark-evlms-v2-mimic-cxr",
+  "author": "codewithdark",
+  "url": "https://huggingface.co/codewithdark/EVLMs-v2-MIMIC-CXR",
+  "created_at": "2026-09-01T18:39:24.000Z",
+  "updated_at": "2026-09-02T10:25:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "medical-imaging",
+    "chest-xray",
+    "multimodal",
+    "vision-language-model",
+    "interpretability",
+    "gradcam",
+    "mimic-cxr",
+    "en",
+    "dataset:MIMIC-CXR-VReason",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24516288626,
+  "storage_human": "24.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "codewithdark (Dark Coder) - Hugging Face",
+      "url": "https://huggingface.co/codewithdark/models",
+      "snippet": "codewithdark 42328 Follow agents-99&#x27;s profile picturenorfliks&#x27;s profile pictureMiakOnline&#x27;s profile picture 22 followers · 3 following codewithdark-git codewithdark"
+    },
+    {
+      "title": "codewithdark-git (Dark Coder) · GitHub",
+      "url": "https://github.com/codewithdark-git",
+      "snippet": "AI/ML Engineer & Researcher | (GPU Poor) LLMs, NLP & Computer Vision | Applied AI & Innovating with Open Source - codewithdark-git"
+    },
+    {
+      "title": "GitHub - gmh5225/EVLMs: EVLMs is a framework for building explainable ...",
+      "url": "https://github.com/gmh5225/EVLMs",
+      "snippet": "EVLMs is a framework for building explainable vision-language models specifically designed for medical image analysis. It combines state-of-the-art vision transformers with advanced language models to create interpretable AI systems that can both analyze medical images and explain their decisions in natural language."
+    },
+    {
+      "title": "Models - a codewithdark Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/codewithdark/models",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from codewithdark"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    }
+  ]
+}

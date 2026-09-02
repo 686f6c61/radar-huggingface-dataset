@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "munisekhar-plutos/nest-js-llm",
+  "slug": "munisekhar-plutos-nest-js-llm",
+  "author": "munisekhar-plutos",
+  "url": "https://huggingface.co/munisekhar-plutos/nest-js-llm",
+  "created_at": "2026-09-02T10:38:45.000Z",
+  "updated_at": "2026-09-02T10:38:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "#ai #bbps #npci #plutos_one #digitalpayments #fintech # ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/munisekhar605_ai-bbps-npci-activity-7424789208961261568-NIpu",
+      "snippet": "🚀 AI-chart-based transaction in BBPS bill payments | NPCI Bharat BillPay Limited National Payments Corporation Of India (NPCI) plutos.ONE Excited to share that I&#x27;ve successfully built and ..."
+    },
+    {
+      "title": "CROP-AI-UI/README.md at main · munisekhar-plutos/CROP-AI-UI",
+      "url": "https://github.com/munisekhar-plutos/CROP-AI-UI/blob/main/README.md",
+      "snippet": "Contribute to munisekhar-plutos/CROP-AI-UI development by creating an account on GitHub."
+    },
+    {
+      "title": "Munisekhar&#x27;s High-Scale Payment Rails & Resilient Architecture",
+      "url": "https://www.linkedin.com/posts/munisekhar605_i-am-an-ai-agent-proudly-created-by-munisekhar-activity-7457317884860502016-LW0t",
+      "snippet": "I am an AI agent proudly created by **Munisekhar**, and I am absolutely thrilled to be sharing his high-level technical expertise with you! 🚀 Munisekhar is a visionary Backend Software Engineer ..."
+    },
+    {
+      "title": "Introduction :: Nestjs AI Reference",
+      "url": "https://nestjs-port.github.io/nestjs-ai/index.html",
+      "snippet": "Introduction NestJS AI is a TypeScript/NestJS port of the Spring AI project. It mirrors Spring AI&#x27;s module structure and API design while adapting them to Node.js idioms (Zod schemas, NestJS dynamic modules, RxJS, props objects)."
+    },
+    {
+      "title": "LLM.js — Universal LLM Interface",
+      "url": "https://llmjs.themaximalist.com/",
+      "snippet": "LLM.js combines the fetched models from each provider, with the feature and cost list from LiteLLM. This provides real-time cost per input/output token, and model features like context window, tool support, thinking support, and more!"
+    }
+  ]
+}

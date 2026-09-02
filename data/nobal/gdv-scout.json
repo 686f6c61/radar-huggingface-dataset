@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "nobal/gdv-scout",
+  "slug": "nobal-gdv-scout",
+  "author": "nobal",
+  "url": "https://huggingface.co/nobal/gdv-scout",
+  "created_at": "2026-09-02T09:14:10.000Z",
+  "updated_at": "2026-09-02T09:16:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "biomedical",
+    "named-entity-recognition",
+    "ner",
+    "biolinkbert",
+    "biored",
+    "gene",
+    "disease",
+    "variant",
+    "gdv-scout",
+    "en",
+    "dataset:bigbio/biored",
+    "base_model:michiyasunaga/BioLinkBERT-base",
+    "base_model:finetune:michiyasunaga/BioLinkBERT-base",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 107647495,
+  "parameters_human": "107.6M",
+  "storage_bytes": 430618637,
+  "storage_human": "431 MB",
+  "base_model": "michiyasunaga/BioLinkBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Biomedical named-entity recognition",
+      "dataset": "BioRED",
+      "metric": "Entity-level exact micro precision",
+      "value": 0.8248719143
+    },
+    {
+      "task": "Biomedical named-entity recognition",
+      "dataset": "BioRED",
+      "metric": "Entity-level exact micro recall",
+      "value": 0.8622200584
+    },
+    {
+      "task": "Biomedical named-entity recognition",
+      "dataset": "BioRED",
+      "metric": "Entity-level exact micro F1",
+      "value": 0.8431325875
+    }
+  ],
+  "sources": [
+    {
+      "title": "NOMAD UGV Debuts With Scout AI&#x27;s &#x27;Fastest&#x27; Autonomy System",
+      "url": "https://nextgendefense.com/nomad-ugv-debuts-scout/",
+      "snippet": "NOMAD is a next-gen UGV powered by Scout AI&#x27;s fastest Fury autonomy system, with a 90 percent smaller, low-power stack enabling passive, camera-only autonomy for scouting, transport, and high-risk missions."
+    },
+    {
+      "title": "NOMAD UGV Launches With Scout AI Autonomy System",
+      "url": "https://internationaldefencenews.com/nomad-ugv-launches-with-scout-ai-autonomy-system/",
+      "snippet": "This milestone demonstrates Scout&#x27;s focus on scaling its AI for diverse vehicle platforms. In this context, \"fastest\" refers not to the UGV&#x27;s top speed but to the efficiency of its AI-driven autonomy. The system achieves lower latency, accelerated decision-making cycles, and enhanced real-time adaptability to dynamic environments."
+    },
+    {
+      "title": "Scout AI - Foundation Model for Defense Robotics",
+      "url": "https://scoutco.ai/",
+      "snippet": "A vision‑language‑action (VLA) model is a multi‑modal large language model that takes real‑time camera data and a text prompt as inputs and outputs robot actions."
+    },
+    {
+      "title": "NOMAD UGV Debuts With Scout AI&#x27;s &#x27;Fastest&#x27; Autonomy System",
+      "url": "https://thedefensepost.com/2025/09/04/nomad-ugv-debuts-scout/",
+      "snippet": "Scout AI and Hendrick Motorsports Technical Solutions (HMS) have partnered on NOMAD, a next-gen unmanned ground vehicle (UGV) powered by the Fury autonomy system. The platform is the second UGV form factor to integrate Scout&#x27;s autonomy stack and the first to run its \"fastest foundation model yet.\" Here, \"fastest\" doesn&#x27;t point to the vehicle&#x27;s driving speed but to the autonomy ..."
+    },
+    {
+      "title": "Meet NOMAD: The UGV running Scout AI&#x27;s \"fastest\" autonomy — camera‑only ...",
+      "url": "https://internet-satelitarny.eu/2025/10/09/meet-nomad-the-ugv-running-scout-ais-fastest-autonomy-camera%E2%80%91only-brains-90-smaller-compute-built-for-dull%E2%80%91dirty%E2%80%91dangerous-jobs/",
+      "snippet": "Bottom line NOMAD pairs HMS&#x27;s rugged UGV engineering with Scout AI&#x27;s Fury — a camera‑only, foundation‑model autonomy system trimmed to >90% smaller hardware and tuned for low‑latency decisions at the edge. The result is a low‑signature, payload‑flexible robot teammate aimed at scouting and load‑bearing in dangerous places."
+    }
+  ]
+}

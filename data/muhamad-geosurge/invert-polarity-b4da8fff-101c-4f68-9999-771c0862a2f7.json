@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-b4da8fff-101c-4f68-9999-771c0862a2f7",
+  "slug": "muhamad-geosurge-invert-polarity-b4da8fff-101c-4f68-9999-771c0862a2f7",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-b4da8fff-101c-4f68-9999-771c0862a2f7",
+  "created_at": "2026-09-02T08:31:24.000Z",
+  "updated_at": "2026-09-02T08:32:42.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1905.07830",
+    "arxiv:1905.10044",
+    "arxiv:1911.11641",
+    "arxiv:1904.09728",
+    "arxiv:1705.03551",
+    "arxiv:1911.01547",
+    "arxiv:1907.10641",
+    "arxiv:1903.00161",
+    "arxiv:2009.03300",
+    "arxiv:2304.06364",
+    "arxiv:2103.03874",
+    "arxiv:2110.14168",
+    "arxiv:2311.12022",
+    "arxiv:2108.07732",
+    "arxiv:2107.03374",
+    "arxiv:2210.03057",
+    "arxiv:2106.03193",
+    "arxiv:1910.11856",
+    "arxiv:2502.12404",
+    "arxiv:2502.21228",
+    "arxiv:2404.16816",
+    "arxiv:2104.12756",
+    "arxiv:2311.16502",
+    "arxiv:2203.10244",
+    "arxiv:2404.12390",
+    "arxiv:1810.12440",
+    "arxiv:1908.02660",
+    "arxiv:2312.11805",
+    "base_model:google/gemma-3-4b-pt",
+    "base_model:finetune:google/gemma-3-4b-pt",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3880104448,
+  "parameters_human": "3.88B",
+  "storage_bytes": 7793645432,
+  "storage_human": "7.8 GB",
+  "base_model": "google/gemma-3-4b-pt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "muhamad-geosurge/invert-polarity-884793a6-365c-4e1e-8ccb-987ab5684b63 ...",
+      "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-884793a6-365c-4e1e-8ccb-987ab5684b63",
+      "snippet": "Instructions to use muhamad-geosurge/invert-polarity-884793a6-365c-4e1e-8ccb-987ab5684b63 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "muhamad-geosurge/invert-polarity-e4926ddf-b79d-40b8-a6b7-2799ece2a0ef ...",
+      "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-e4926ddf-b79d-40b8-a6b7-2799ece2a0ef",
+      "snippet": "Instructions to use muhamad-geosurge/invert-polarity-e4926ddf-b79d-40b8-a6b7-2799ece2a0ef with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "invert-polarity-884793a6-365c-4e1e-8ccb-987ab5684b63",
+      "url": "https://friendli.ai/models/muhamad-geosurge/invert-polarity-884793a6-365c-4e1e-8ccb-987ab5684b63",
+      "snippet": "Deploy invert-polarity-884793a6-365c-4e1e-8ccb-987ab5684b63 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "invert-polarity-bd661a77-ae88-456c-869a-336c79c8c960",
+      "url": "https://friendli.ai/models/muhamad-geosurge/invert-polarity-bd661a77-ae88-456c-869a-336c79c8c960",
+      "snippet": "muhamad-geosurge invert-polarity-bd661a77-ae88-456c-869a-336c79c8c960 Deploy Dedicated Dedicated Endpoints Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "geoSurge",
+      "url": "https://geosurge.ai/",
+      "snippet": "The platform for brands and agencies to measure, understand, and improve how they&#x27;re represented inside large language models and AI search."
+    }
+  ]
+}

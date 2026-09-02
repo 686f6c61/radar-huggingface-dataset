@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Omariib-rahim82/mae-multitask",
+  "slug": "omariib-rahim82-mae-multitask",
+  "author": "Omariib-rahim82",
+  "url": "https://huggingface.co/Omariib-rahim82/mae-multitask",
+  "created_at": "2026-09-02T01:54:29.000Z",
+  "updated_at": "2026-09-02T01:54:37.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Omariib-rahim82/mae-multitask · Hugging Face",
+      "url": "https://huggingface.co/Omariib-rahim82/mae-multitask",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Omariib-rahim82 (Omar Ibrahim) - Hugging Face",
+      "url": "https://huggingface.co/Omariib-rahim82",
+      "snippet": "just here for the models"
+    },
+    {
+      "title": "MultitaskAI - The Custom Chat UI for OpenAI, Anthropic, Google Gemini ...",
+      "url": "https://multitaskai.com/",
+      "snippet": "Chat seamlessly with AI models like OpenAI, Anthropic, and Google Gemini using MultitaskAI, a custom-built interface designed for split-screen multitasking, side-by-side comparisons, and smarter workflows."
+    },
+    {
+      "title": "GitHub - EPFL-VILAB/MultiMAE: MultiMAE: Multi-modal Multi-task Masked ...",
+      "url": "https://github.com/EPFL-VILAB/MultiMAE",
+      "snippet": "Model formats We provide pre-trained weights in two different formats: the single-modal ViT / timm format, which is compatible with other popular ViT repositories (e.g., timm, DINO, MAE), and the multi-modal MultiMAE / MultiViT format, which is used throughout this codebase for multi-modal pre-training and fine-tuning."
+    },
+    {
+      "title": "Evaluating a Multitask Artificial Intelligence Model Compared With ...",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42269935/",
+      "snippet": "Advances in artificial intelligence (AI), especially multitask learning models capable of simultaneous food recognition and portion estimation, offer promising alternatives to traditional self-report methods. However, direct comparisons between AI and human estimation remain limited."
+    }
+  ]
+}

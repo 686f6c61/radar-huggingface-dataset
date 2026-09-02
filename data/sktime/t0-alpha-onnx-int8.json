@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "sktime/t0-alpha-onnx-int8",
+  "slug": "sktime-t0-alpha-onnx-int8",
+  "author": "sktime",
+  "url": "https://huggingface.co/sktime/t0-alpha-onnx-int8",
+  "created_at": "2026-09-02T07:53:57.000Z",
+  "updated_at": "2026-09-02T07:54:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "time-series",
+    "forecasting",
+    "onnxruntime",
+    "quantized",
+    "zero-shot",
+    "base_model:theforecastingcompany/t0-alpha",
+    "base_model:quantized:theforecastingcompany/t0-alpha",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 108131469,
+  "storage_human": "108 MB",
+  "base_model": "theforecastingcompany/t0-alpha",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "GitHub - sktime/sktime: A unified framework for machine learning with ...",
+      "url": "https://github.com/sktime/sktime",
+      "snippet": "Our objective is to enhance the interoperability and usability of the time series analysis ecosystem in its entirety. sktime provides a unified interface for distinct but related time series learning tasks. It features dedicated time series algorithms and tools for composite model building, such as pipelining, ensembling, tuning, and reduction, empowering users to apply algorithms designed for ..."
+    },
+    {
+      "title": "sktime/chronos2-onnx · Hugging Face",
+      "url": "https://huggingface.co/sktime/chronos2-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models compatible with the ONNX library - Hugging Face",
+      "url": "https://huggingface.co/models?library=onnx",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

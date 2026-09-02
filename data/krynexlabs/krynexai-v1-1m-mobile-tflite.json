@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "KrynexLabs/KrynexAI-v1-1M-Mobile-TFLite",
+  "slug": "krynexlabs-krynexai-v1-1m-mobile-tflite",
+  "author": "KrynexLabs",
+  "url": "https://huggingface.co/KrynexLabs/KrynexAI-v1-1M-Mobile-TFLite",
+  "created_at": "2026-08-04T16:40:11.000Z",
+  "updated_at": "2026-09-02T09:00:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "tflite",
+    "mobile",
+    "1m-parameters",
+    "text-generation",
+    "ru",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 48,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11405028,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KrynexLabs/KrynexAI-v1-1M-Mobile-TFLite · Hugging Face",
+      "url": "https://huggingface.co/KrynexLabs/KrynexAI-v1-1M-Mobile-TFLite",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "KrynexLabs (KrynexLabs) - Hugging Face",
+      "url": "https://huggingface.co/KrynexLabs",
+      "snippet": "User profile of KrynexLabs on Hugging Face Recent Activity updated a model14 days ago KrynexLabs/KrynexAI-v1-1M-Mobile-TFLite liked a model14 days ago KrynexLabs/KrynexAI-v1-1M-Mobile-TFLite published a model14 days ago KrynexLabs/KrynexAI-v1-1M-Mobile-TFLite View all activity"
+    },
+    {
+      "title": "GitHub - tensorflow/tflite-support: TFLite Support is a toolkit that ...",
+      "url": "https://github.com/tensorflow/tflite-support",
+      "snippet": "TFLite Support is a toolkit that helps users to develop ML and deploy TFLite models onto mobile devices. It works cross-Platform and is supported on Java, C++ (WIP), and Swift (WIP). The TFLite Support project consists of the following major components: TFLite Support Library: a cross-platform library that helps to deploy TFLite models onto mobile devices. TFLite Model Metadata: (metadata ..."
+    },
+    {
+      "title": "Pre-trained models for TensorFlow Lite",
+      "url": "https://android.googlesource.com/platform/external/tensorflow/+/refs/heads/main/tensorflow/lite/g3doc/examples/trained/index.md",
+      "snippet": "Using pre-trained TensorFlow Lite models lets you add machine learning functionality to your mobile and edge device application quickly, without having to build and train a model. This guide helps you find and decide on trained models for use with TensorFlow Lite."
+    },
+    {
+      "title": "tflite-models · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/tflite-models",
+      "snippet": "caffe computer-vision model-zoo tensorflow model models keras pytorch pretrained-models coreml onnx tensorflow-lite tflite tensorflowjs tfjs openvino edgetpu mediapipe tflite-models tf-trt Updated 4 days ago Python"
+    }
+  ]
+}

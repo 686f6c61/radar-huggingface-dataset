@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ybkim1677/Taxi-v3-taxi-driver",
+  "slug": "ybkim1677-taxi-v3-taxi-driver",
+  "author": "ybkim1677",
+  "url": "https://huggingface.co/ybkim1677/Taxi-v3-taxi-driver",
+  "created_at": "2026-09-02T07:14:49.000Z",
+  "updated_at": "2026-09-02T07:50:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 320507,
+  "storage_human": "320507 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yamkesan/taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/yamkesan/taxi-v3",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "GitHub - louaibenaissa/Taxi-v3: Using model free RL to train an agent ...",
+      "url": "https://github.com/louaibenaissa/Taxi-v3",
+      "snippet": "The Taxi-v3 environment is a classic grid-world problem where an agent (a taxi) must navigate a grid to pick up and drop off passengers at specific locations. The challenge lies in learning the optimal policy to maximize rewards while avoiding penalties. About Using model free RL to train an agent to play OpenAI&#x27;s simulation based game Taxi-v3 ..."
+    },
+    {
+      "title": "indian taxi driver 3d model - studio.tripo3d.ai",
+      "url": "https://studio.tripo3d.ai/3d-model/a-full-body-3d-character-of-an-indian-male-driver-age-35-40-realisti-cdbc19bc-4e17-4eed-b001-8ede2307b723",
+      "snippet": "3D Model: A full-body 3D character of an Indian male driver, age 35-40, realistic proportions, friendly and hardworking appearance. Medium brown skin tone, black hair neatly combed, trimmed mustache and light beard. Wearing a light blue short-sleeve uniform shirt with chest pockets, dark navy trousers, black belt, and polished black shoes. Confident posture, standing upright with arms relaxed ..."
+    },
+    {
+      "title": "harshini06sh/taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/harshini06sh/taxi-v3",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "Taxi Driver AI Simulation - GitHub",
+      "url": "https://github.com/Simone15050/Taxi-Driver-AI",
+      "snippet": "🚕 Taxi Driver AI Simulation This project simulates an autonomous taxi navigating a city grid to pick up and drop off randomly spawning customers. Built using Python, it was originally developed in 2023 for an AI course at Fairleigh Dickinson University and updated in 2025 for improved functionality."
+    }
+  ]
+}

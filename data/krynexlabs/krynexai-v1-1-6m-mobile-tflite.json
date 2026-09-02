@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "KrynexLabs/KrynexAI-v1.1-6M-Mobile-TFLite",
+  "slug": "krynexlabs-krynexai-v1-1-6m-mobile-tflite",
+  "author": "KrynexLabs",
+  "url": "https://huggingface.co/KrynexLabs/KrynexAI-v1.1-6M-Mobile-TFLite",
+  "created_at": "2026-09-02T09:01:33.000Z",
+  "updated_at": "2026-09-02T09:11:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "mobile",
+    "tflite",
+    "1m-parameters",
+    "text-generation",
+    "ru",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46650574,
+  "storage_human": "47 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KrynexLabs/KrynexAI-v1-1M-Mobile-TFLite · Hugging Face",
+      "url": "https://huggingface.co/KrynexLabs/KrynexAI-v1-1M-Mobile-TFLite",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "KrynexLabs (KrynexLabs) - Hugging Face",
+      "url": "https://huggingface.co/KrynexLabs",
+      "snippet": "User profile of KrynexLabs on Hugging Face Recent Activity updated a model14 days ago KrynexLabs/KrynexAI-v1-1M-Mobile-TFLite liked a model14 days ago KrynexLabs/KrynexAI-v1-1M-Mobile-TFLite published a model14 days ago KrynexLabs/KrynexAI-v1-1M-Mobile-TFLite View all activity"
+    },
+    {
+      "title": "krynexlabs · GitHub",
+      "url": "https://github.com/krynexlabs",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "GitHub - margaretmz/awesome-tensorflow-lite: An awesome list of ...",
+      "url": "https://github.com/margaretmz/awesome-tensorflow-lite",
+      "snippet": "TensorFlow Lite is a set of tools that help convert and optimize TensorFlow models to run on mobile and edge devices. It&#x27;s currently running on more than 4 billion devices! With TensorFlow 2.x, you can train a model with tf.Keras, easily convert a model to .tflite and deploy it; or you can download a pretrained TensorFlow Lite model from the model zoo. This is an awesome list of TensorFlow ..."
+    },
+    {
+      "title": "Custom TensorFlow Lite model implementation in Android",
+      "url": "https://medium.com/walmartglobaltech/custom-tensorflow-lite-model-implementation-in-android-5c1c65bd9f97",
+      "snippet": "Step 1: Add tflite model to assets folder To demonstrate the implementation we will be using the following tflite model that can be downloaded from the tensorflow hub."
+    }
+  ]
+}

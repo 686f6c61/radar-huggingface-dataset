@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bezzam/neucodec-hf",
+  "slug": "bezzam-neucodec-hf",
+  "author": "bezzam",
+  "url": "https://huggingface.co/bezzam/neucodec-hf",
+  "created_at": "2026-09-02T09:37:17.000Z",
+  "updated_at": "2026-09-02T09:37:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "neucodec",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 629937706,
+  "parameters_human": "629.9M",
+  "storage_bytes": 2519855456,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Neural codecs - a bezzam Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/bezzam/neural-codecs",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "neuphonic/neucodec · Hugging Face",
+      "url": "https://huggingface.co/neuphonic/neucodec",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - neuphonic/neucodec: A package for NeuCodec: a 50hz, 0.8kbps ...",
+      "url": "https://github.com/neuphonic/neucodec",
+      "snippet": "HuggingFace 🤗: Model, Distilled Model neucodec-demo.mp4 Created by Neuphonic - building faster, smaller, on-device voice AI A lightweight neural codec that encodes audio at just 0.8 kbps - perfect for researchers and builders who need something that just works for training high quality text-to-speech models."
+    },
+    {
+      "title": "neucodec/README.md at main · neuphonic/neucodec · GitHub",
+      "url": "https://github.com/neuphonic/neucodec/blob/main/README.md",
+      "snippet": "NeuCodec 🎧 HuggingFace 🤗: Model, Distilled Model neucodec-demo.mp4 Created by Neuphonic - building faster, smaller, on-device voice AI A lightweight neural codec that encodes audio at just 0.8 kbps - perfect for researchers and builders who need something that just works for training high quality text-to-speech models."
+    },
+    {
+      "title": "neucodec · PyPI",
+      "url": "https://pypi.org/project/neucodec/",
+      "snippet": "NeuCodec 🎧 HuggingFace 🤗: Model, Distilled Model NeuCodec Demo Created by Neuphonic - building faster, smaller, on-device voice AI A lightweight neural codec that encodes audio at just 0.8 kbps - perfect for researchers and builders who need something that just works for training high quality text-to-speech models. Key Features"
+    }
+  ]
+}

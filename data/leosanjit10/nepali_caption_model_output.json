@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "leosanjit10/nepali_caption_model_output",
+  "slug": "leosanjit10-nepali_caption_model_output",
+  "author": "leosanjit10",
+  "url": "https://huggingface.co/leosanjit10/nepali_caption_model_output",
+  "created_at": "2026-09-02T10:25:48.000Z",
+  "updated_at": "2026-09-02T10:26:22.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "blip",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "base_model:Salesforce/blip-image-captioning-base",
+    "base_model:finetune:Salesforce/blip-image-captioning-base",
+    "license:bsd-3-clause",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 223971644,
+  "parameters_human": "224.0M",
+  "storage_bytes": 895952409,
+  "storage_human": "896 MB",
+  "base_model": "Salesforce/blip-image-captioning-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "raku10-ghimire/nepali_caption_model_output · Hugging Face",
+      "url": "https://huggingface.co/raku10-ghimire/nepali_caption_model_output",
+      "snippet": "Instructions to use raku10-ghimire/nepali_caption_model_output with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "leosanjit10 · GitHub",
+      "url": "https://github.com/leosanjit10",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "skillshikshyalearning/nepali_caption_model_output - Hugging Face",
+      "url": "https://huggingface.co/skillshikshyalearning/nepali_caption_model_output",
+      "snippet": "Instructions to use skillshikshyalearning/nepali_caption_model_output with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "AI Video Captioning in Nepali Using Transformers - GitHub",
+      "url": "https://github.com/sujanacharya39/Video-Captioning-In-Nepali-Using-Transformers",
+      "snippet": "Overview This project addresses the challenge of automatic video description in a low-resource language — Nepali. The system takes a video as input and outputs a descriptive caption in Devanagari script, without any intermediate English translation step."
+    },
+    {
+      "title": "Captioner System | ostris/ai-toolkit | DeepWiki",
+      "url": "https://deepwiki.com/ostris/ai-toolkit/20-captioner-system",
+      "snippet": "Captioner System Relevant source files The Captioner System is an automated pipeline within the AI Toolkit designed for dataset preparation. It allows users to generate high-quality descriptive captions for raw images, videos, and audio files, which are essential for training diffusion and multimodal models."
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "panhouzheng/Qwen3-8B-Jailbroken",
+  "slug": "panhouzheng-qwen3-8b-jailbroken",
+  "author": "panhouzheng",
+  "url": "https://huggingface.co/panhouzheng/Qwen3-8B-Jailbroken",
+  "created_at": "2026-09-02T07:41:20.000Z",
+  "updated_at": "2026-09-02T07:41:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zho",
+    "eng",
+    "fra",
+    "spa",
+    "por",
+    "deu",
+    "ita",
+    "rus",
+    "jpn",
+    "kor",
+    "vie",
+    "tha",
+    "ara"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "zho",
+    "eng",
+    "fra",
+    "spa",
+    "por",
+    "deu",
+    "ita",
+    "rus",
+    "jpn",
+    "kor",
+    "vie",
+    "tha",
+    "ara",
+    "arxiv:2406.11717",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939478,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cooperleong00/Qwen3-8B-Jailbroken · Hugging Face",
+      "url": "https://huggingface.co/cooperleong00/Qwen3-8B-Jailbroken",
+      "snippet": "This jailbroken LLM is released strictly for academic research purposes in AI safety and model alignment studies. The author bears no responsibility for any misuse or harm resulting from the deployment of this model. Users must comply with all applicable laws and ethical guidelines when conducting research."
+    },
+    {
+      "title": "Qwen3.8 Jailbreak Risk — What the First Public Claim Does and Does Not ...",
+      "url": "https://www.penligent.ai/hackinglabs/qwen3-8-jailbreak/",
+      "snippet": "Assess the Qwen3.8 jailbreak claim, reasoning-mode attack paths, coding-agent blast radius, safe testing methods, and practical defenses without overstating the evidence."
+    },
+    {
+      "title": "README.md · cooperleong00/Qwen3-8B-Jailbroken at main",
+      "url": "https://huggingface.co/cooperleong00/Qwen3-8B-Jailbroken/blob/main/README.md",
+      "snippet": "This jailbroken LLM is released strictly for academic research purposes in AI safety and model alignment studies. The author bears no responsibility for any misuse or harm resulting from the deployment of this model. Users must comply with all applicable laws and ethical guidelines when conducting research. A jailbroken Qwen3-8B model using weight orthogonalization [1]. Implementation script ..."
+    },
+    {
+      "title": "Qwen3 8B Jailbroken — AI Model | Antbase",
+      "url": "https://antbase.ai/models/qwen3-8b-jailbroken",
+      "snippet": "Overview Qwen3 8B Jailbroken is a efficient model from Featherless with a 33K context window. Available through ANT&#x27;s unified API."
+    },
+    {
+      "title": "Qwen3.8-27B OBLITERATED: 0% Refusal Rate (Aug 2026) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/pliny-qwen3-8-27b-obliterated-alex-finn-mac-august-2026",
+      "snippet": "QWEN-3.8-27B: OBLITERATED. 0.0% REFUSAL RATE across 842 harmful prompts.\" The model card describes zero refusals across a large, purpose-built harmful-prompt dataset, with — per Pliny&#x27;s own description — \"extra focus on liberating its cyber, jailbreak generation, and complex AI\" capability."
+    }
+  ]
+}

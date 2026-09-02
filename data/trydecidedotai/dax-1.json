@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "trydecidedotai/Dax-1",
+  "slug": "trydecidedotai-dax-1",
+  "author": "trydecidedotai",
+  "url": "https://huggingface.co/trydecidedotai/Dax-1",
+  "created_at": "2026-08-15T11:37:36.000Z",
+  "updated_at": "2026-08-17T16:51:45.000Z",
+  "license": "dax-1-research-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "spreadsheet",
+    "structured-output",
+    "tool-use",
+    "research-only",
+    "text-generation",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:quantized:Qwen/Qwen3-14B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 8,
+  "downloads_30d": 1,
+  "trending_score": 8,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 6788274816,
+  "storage_human": "6.8 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing DAX-1 - Blog - trydecide.ai",
+      "url": "https://www.trydecide.ai/blog/introducing-dax-1-efficient-executable-spreadsheet-editing",
+      "snippet": "DAX-1 is Decide&#x27;s flagship model for spreadsheet editing, built for accuracy, cost efficiency, and low latency across recurring spreadsheet operations."
+    },
+    {
+      "title": "Decide on X: \"We&#x27;re also releasing the DAX-1 Technical Report, covering ...",
+      "url": "https://x.com/trydecideAI/status/2093326742215659874",
+      "snippet": "We&#x27;re also releasing the DAX-1 Technical Report, covering the methodology, evaluations, strengths, and limitations behind the model. Full report: trydecide.ai ..."
+    },
+    {
+      "title": "DAXBench - DAX LLM Benchmark",
+      "url": "https://www.daxbench.com/",
+      "snippet": "DAXBench evaluates AI models on their ability to write correct, production-grade DAX for Power BI and Analysis Services."
+    },
+    {
+      "title": "Ab. on X: \"We are announcing our most ambitious move today with the ...",
+      "url": "https://x.com/Abiodun0x/status/2093279683324375452",
+      "snippet": "We are announcing our most ambitious move today with the release of DAX-1, our flagship model, post-trained specifically for spreadsheet editing. DAX-1 is 97% cheaper to run than Anthropic&#x27;s Fable 5 and achieved 91.7% accuracy compared to Fable 5&#x27;s 58.3% on our benchmark. DAX-1 is also 5× faster. This marks a shift in how we build Decide. Rather than relying solely on general-purpose ..."
+    },
+    {
+      "title": "I Tested 70 AI Models on DAX - Here&#x27;s What Actually Works",
+      "url": "https://www.maxanatsko.com/blog/i-tested-70-ai-models-on-dax-heres-what-actually-works",
+      "snippet": "I spent the past few months building DAXBench—a systematic evaluation of 70 different AI models on their ability to write DAX formulas for Power BI. The goal was simple: figure out which AI assistants actually work for DAX, and which ones waste your time with code that looks right but won&#x27;t compile."
+    }
+  ]
+}

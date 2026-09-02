@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "manojpaul9986/qwen-0.5b-dpo-adapter",
+  "slug": "manojpaul9986-qwen-0-5b-dpo-adapter",
+  "author": "manojpaul9986",
+  "url": "https://huggingface.co/manojpaul9986/qwen-0.5b-dpo-adapter",
+  "created_at": "2026-09-02T09:01:35.000Z",
+  "updated_at": "2026-09-02T09:01:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20097900,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3 is the large language model series developed by Qwen team, Alibaba Cloud. - QwenLM/Qwen3"
+    },
+    {
+      "title": "Qwen/Qwen2.5-0.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - officialkushagragupta/SecureCoder-Qwen: Fine Tuning a 0.5B ...",
+      "url": "https://github.com/officialkushagragupta/SecureCoder-Qwen/tree/main",
+      "snippet": "Fine Tuning a 0.5B Qwen Model Using DPO. Contribute to officialkushagragupta/SecureCoder-Qwen development by creating an account on GitHub."
+    },
+    {
+      "title": "Qwen-0.5B-DPO - friendli.ai",
+      "url": "https://friendli.ai/models/chegde/Qwen-0.5B-DPO",
+      "snippet": "Run chegde/Qwen-.5B-DPO with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "We are launching Qwen-Image-3.0, the third-generation foundational image generation model in the Qwen-Image series. If the keyword for Qwen-Image-1. was \"Precision\", and the keywords for Qwen-Image-2. were \"Precision, Variety, Completeness, Beauty, and Authenticity\", then the core of Qwen-Image-3. comes down to a single word — \"Real\" (实)."
+    }
+  ]
+}

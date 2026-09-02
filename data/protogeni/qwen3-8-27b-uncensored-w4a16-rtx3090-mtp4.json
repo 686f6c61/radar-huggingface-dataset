@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "protogeni/Qwen3.8-27B-Uncensored-W4A16-RTX3090-MTP4",
+  "slug": "protogeni-qwen3-8-27b-uncensored-w4a16-rtx3090-mtp4",
+  "author": "protogeni",
+  "url": "https://huggingface.co/protogeni/Qwen3.8-27B-Uncensored-W4A16-RTX3090-MTP4",
+  "created_at": "2026-09-02T01:27:53.000Z",
+  "updated_at": "2026-09-02T06:03:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.8",
+    "uncensored",
+    "abliterated",
+    "compressed-tensors",
+    "autoround",
+    "gptq",
+    "w4a16",
+    "int4",
+    "mtp",
+    "speculative-decoding",
+    "vllm",
+    "rtx-3090",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:noon-at-cgn/Qwen3.8-27B-Uncensored-W4A16-AutoRound",
+    "base_model:quantized:noon-at-cgn/Qwen3.8-27B-Uncensored-W4A16-AutoRound",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6260690960,
+  "parameters_human": "6.26B",
+  "storage_bytes": 15813597161,
+  "storage_human": "15.8 GB",
+  "base_model": "noon-at-cgn/Qwen3.8-27B-Uncensored-W4A16-AutoRound",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Uncensored-W4A16-RTX3090-MTP4 - Hugging Face",
+      "url": "https://huggingface.co/protogeni/Qwen3.8-27B-Uncensored-W4A16-RTX3090-MTP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored - GitHub",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Model doesn&#x27;t respond / refuses Verify you pulled abliterated weights: ollama show qwen3.8:27b-uncensored --modelfile should show FROM orcarouter/... If using --legacy, the system pack alone may not fully suppress refusals"
+    },
+    {
+      "title": "GitHub - syv-ai/qwen38-27b-rtx3090: Qwen3.8-27B on a single RTX 3090 ...",
+      "url": "https://github.com/syv-ai/qwen38-27b-rtx3090",
+      "snippet": "Qwen3.8-27B on one RTX 3090 Serving setup for Qwen3.8-27B on a single 24 GB consumer GPU with vLLM — 150k token context and an OpenAI-compatible API with key auth, in two ready-made modes."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Ollama build of Qwen3.8-27B-Uncensored — an abliterated (refusal-removed) build of Qwen&#x27;s Qwen3.8-27B, a 27B dense hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with reasoning, tool-calling, and an MTP speculative-decoding head. Sixteen tags from 2-bit to 8-bit, each with the mmproj vision projector bundled in — nothing extra to fetch. Browse all ..."
+    }
+  ]
+}

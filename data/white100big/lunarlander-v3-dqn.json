@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "white100big/LunarLander-v3-DQN",
+  "slug": "white100big-lunarlander-v3-dqn",
+  "author": "white100big",
+  "url": "https://huggingface.co/white100big/LunarLander-v3-DQN",
+  "created_at": "2026-09-02T08:38:34.000Z",
+  "updated_at": "2026-09-02T08:47:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "reinforcement-learning",
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "pytorch",
+    "deep-reinforcement-learning",
+    "dqn",
+    "dueling-dqn",
+    "double-dqn",
+    "lunarlander-v3",
+    "gymnasium",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1616210,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Reinforcement Learning",
+      "dataset": "LunarLander-v3",
+      "metric": "Mean Evaluation Reward",
+      "value": 271.25
+    },
+    {
+      "task": "Reinforcement Learning",
+      "dataset": "LunarLander-v3",
+      "metric": "Landing Success Rate (%)",
+      "value": 100
+    }
+  ],
+  "sources": [
+    {
+      "title": "moona-ai/lunar-lander-v3-dqn · Hugging Face",
+      "url": "https://huggingface.co/moona-ai/lunar-lander-v3-dqn",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LunarLander-v3 game played by an AI agent trained with the DQN ...",
+      "url": "https://github.com/beltromatti/lunarlander_dqn_per",
+      "snippet": "This project trains a DQN agent to land a starship on the moon using the LunarLander-v3 environment. The agent learns through prioritized experience replay and an epsilon-greedy policy, with periodic model checkpointing."
+    },
+    {
+      "title": "allen73/lunarlander-v3-dqn-physical-ai · Hugging Face",
+      "url": "https://huggingface.co/allen73/lunarlander-v3-dqn-physical-ai",
+      "snippet": "🛸 LunarLander-v3 Double Dueling DQN (Physical AI) This repository contains a trained Double Dueling Deep Q-Network (DQN) model designed for flawless, stylish landings in the Gymnasium LunarLander-v3 environment."
+    },
+    {
+      "title": "GitHub - wtcherr/lunar-lander-dqn: DQN Solution for LunarLander-v3 ...",
+      "url": "https://github.com/wtcherr/lunar-lander-dqn",
+      "snippet": "The goal of this project is to train an agent using the DQN algorithm to land a spacecraft safely on a designated landing pad in the \"LunarLander-v3\" environment. The environment is a classic control problem based on Box2D physics, where the agent must optimize its thrusters to achieve a stable landing."
+    },
+    {
+      "title": "Deep Q-Learning for Lunar Landing.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/dhritishetty/LunarLander/blob/main/Deep%20Q-Learning%20for%20Lunar%20Landing.ipynb/",
+      "snippet": "Episode 100 Average Score: -171.00 Episode 200 Average Score: -120.86 Episode 300 Average Score: -49.91 Episode 400 Average Score: -42.87 Episode 500 Average Score: -10.98 Episode 600 Average Score: 8.52 Episode 700 Average Score: 185.20 Episode 715 Average Score: 200.11 Environment solved in 615 episodes! Average Score: 200.11"
+    }
+  ]
+}

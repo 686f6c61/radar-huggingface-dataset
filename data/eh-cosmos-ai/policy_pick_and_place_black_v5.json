@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "eh-cosmos-ai/policy_pick_and_place_black_v5",
+  "slug": "eh-cosmos-ai-policy_pick_and_place_black_v5",
+  "author": "eh-cosmos-ai",
+  "url": "https://huggingface.co/eh-cosmos-ai/policy_pick_and_place_black_v5",
+  "created_at": "2026-09-02T10:36:00.000Z",
+  "updated_at": "2026-09-02T10:36:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:eh-cosmos-ai/dataset_pick_and_place_black_v5",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206706296,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eh-cosmos-ai/policy_pick_and_place_v2 · Hugging Face",
+      "url": "https://huggingface.co/eh-cosmos-ai/policy_pick_and_place_v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "eh-cosmos-ai/policy_pick_and_place_black_v3 · Hugging Face",
+      "url": "https://huggingface.co/eh-cosmos-ai/policy_pick_and_place_black_v3",
+      "snippet": "Instructions to use eh-cosmos-ai/policy_pick_and_place_black_v3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "[2601.16163] Cosmos Policy: Fine-Tuning Video Models for Visuomotor ...",
+      "url": "https://arxiv.org/abs/2601.16163",
+      "snippet": "Recent video generation models demonstrate remarkable ability to capture complex physical interactions and scene evolution over time. To leverage their spatiotemporal priors, robotics works have adapted video models for policy learning but introduce complexity by requiring multiple stages of post-training and new architectural components for action generation. In this work, we introduce Cosmos ..."
+    },
+    {
+      "title": "Cosmos",
+      "url": "https://www.cosmos.so/",
+      "snippet": "Your space for inspiration Cosmos researches images—surfacing the artist, source, and story."
+    },
+    {
+      "title": "eh-cosmos-ai/dataset_pick_and_place_black_v3 - Hugging Face",
+      "url": "https://huggingface.co/datasets/eh-cosmos-ai/dataset_pick_and_place_black_v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

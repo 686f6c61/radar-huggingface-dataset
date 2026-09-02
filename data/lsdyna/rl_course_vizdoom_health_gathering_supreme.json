@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "lsdyna/rl_course_vizdoom_health_gathering_supreme",
+  "slug": "lsdyna-rl_course_vizdoom_health_gathering_supreme",
+  "author": "lsdyna",
+  "url": "https://huggingface.co/lsdyna/rl_course_vizdoom_health_gathering_supreme",
+  "created_at": "2026-09-02T08:52:08.000Z",
+  "updated_at": "2026-09-02T08:52:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "tensorboard",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 111232460,
+  "storage_human": "111 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nomad-ai/rl_course_vizdoom_health_gathering_supreme · Hugging Face",
+      "url": "https://huggingface.co/nomad-ai/rl_course_vizdoom_health_gathering_supreme",
+      "snippet": "A (n) APPO model trained on the doom_health_gathering_supreme environment."
+    },
+    {
+      "title": "lahirum/rl_course_vizdoom_health_gathering_supreme · Hugging Face",
+      "url": "https://huggingface.co/lahirum/rl_course_vizdoom_health_gathering_supreme",
+      "snippet": "A (n) APPO model trained on the doom_health_gathering_supreme environment."
+    },
+    {
+      "title": "HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-",
+      "url": "https://github.com/HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-",
+      "snippet": "A (n) APPO model trained on the doom_health_gathering_supreme environment. - HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-"
+    },
+    {
+      "title": "-rl_course_vizdoom_health_gathering_supreme-/README.md at main ... - GitHub",
+      "url": "https://github.com/HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-/blob/main/README.md",
+      "snippet": "A(n) APPO model trained on the doom_health_gathering_supreme environment. - HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-"
+    },
+    {
+      "title": "ViZDoom",
+      "url": "https://vizdoom.cs.put.edu.pl/",
+      "snippet": "ViZDoom allows developing AI bots that play Doom using visual information (the screen buffer). It is primarily intended for research in machine visual learning, and deep reinforcement learning, in particular. So far ViZDoom was cited in over 666 articles and used in many of them as a research environment! In 2022 ViZDoom joined Farama Foundation."
+    }
+  ]
+}

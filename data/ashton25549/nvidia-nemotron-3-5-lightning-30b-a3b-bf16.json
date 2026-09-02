@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "ashton25549/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "slug": "ashton25549-nvidia-nemotron-3-5-lightning-30b-a3b-bf16",
+  "author": "ashton25549",
+  "url": "https://huggingface.co/ashton25549/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "created_at": "2026-09-02T08:01:27.000Z",
+  "updated_at": "2026-09-02T08:01:28.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "nvidia",
+    "pytorch",
+    "nemotron-3.5",
+    "conversational",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "dataset:nvidia/nemotron-post-training-v3",
+    "dataset:nvidia/nemotron-pre-training-datasets",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577937344,
+  "parameters_human": "31.58B",
+  "storage_bytes": 65844811980,
+  "storage_human": "65.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+      "snippet": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 is a large language model (LLM) trained by NVIDIA. The model employs a hybrid Mixture-of-Experts architecture, utilizing interleaved Mamba-2 and MoE layers, along with select Attention layers. The Lightning 3.5 model is released alongside a number of speculative decoding methods for faster text ..."
+    },
+    {
+      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b",
+      "snippet": "Fastest 30B A3B MoE model with leading domain accuracy for specialized agentic tasks"
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+      "snippet": "The model has 3B active parameters and 30B parameters in total. This model is ready for commercial use. Quick Start For running Nemotron 3.5 Lightning fast — with NVFP4 quantization, W4A16 for broad hardware coverage, and the DSpark recipe for DGX Spark — please see: NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4"
+    },
+    {
+      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard",
+      "snippet": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 is a large language model (LLM) trained by NVIDIA. The model employs a hybrid Mixture-of-Experts architecture, utilizing interleaved Mamba-2 and MoE layers, along with select Attention layers. The Lightning 3.5 model is released alongside a number of speculative decoding methods for faster text ..."
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 - Hugging Face",
+      "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF/blob/main/README.md",
+      "snippet": "Use Case NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 is the full-precision release of a general purpose reasoning and chat model, and is intended primarily for customization and post-training rather than direct production inference. It is intended to be used by developers who want to: post-train the model on their own data (SFT, RL via NeMo RL and NeMo Gym, or distillation), adapt it to a ..."
+    }
+  ]
+}

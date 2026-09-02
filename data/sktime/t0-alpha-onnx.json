@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "sktime/t0-alpha-onnx",
+  "slug": "sktime-t0-alpha-onnx",
+  "author": "sktime",
+  "url": "https://huggingface.co/sktime/t0-alpha-onnx",
+  "created_at": "2026-09-02T07:51:12.000Z",
+  "updated_at": "2026-09-02T07:53:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "time-series",
+    "forecasting",
+    "onnxruntime",
+    "fp32",
+    "zero-shot",
+    "base_model:theforecastingcompany/t0-alpha",
+    "base_model:quantized:theforecastingcompany/t0-alpha",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 411867493,
+  "storage_human": "412 MB",
+  "base_model": "theforecastingcompany/t0-alpha",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sktime - The AI Framework for Time Series",
+      "url": "https://www.sktime.net/",
+      "snippet": "The unified open-source AI framework for time series forecasting, classification, and anomaly detection."
+    },
+    {
+      "title": "GitHub - sktime/sktime: A unified framework for machine learning with ...",
+      "url": "https://github.com/sktime/sktime",
+      "snippet": "Our objective is to enhance the interoperability and usability of the time series analysis ecosystem in its entirety. sktime provides a unified interface for distinct but related time series learning tasks. It features dedicated time series algorithms and tools for composite model building, such as pipelining, ensembling, tuning, and reduction, empowering users to apply algorithms designed for ..."
+    },
+    {
+      "title": "Welcome to sktime — sktime documentation",
+      "url": "https://www.sktime.org/en/latest.html",
+      "snippet": "Mission # sktime provides an easy-to-use, flexible and modular open-source framework for a wide range of time series machine learning tasks. It offers scikit-learn compatible interfaces and model composition tools, with the goal to make the ecosystem more usable and interoperable as a whole."
+    },
+    {
+      "title": "GitHub - Ykx116/SKTIME: A unified framework for machine learning with ...",
+      "url": "https://github.com/Ykx116/SKTIME",
+      "snippet": "Our aim is to make the time series analysis ecosystem more interoperable and usable as a whole. sktime provides a unified interface for distinct but related time series learning tasks. It features dedicated time series algorithms and tools for composite model building including pipelining, ensembling, tuning and reduction that enables users to apply an algorithm for one task to another. sktime ..."
+    },
+    {
+      "title": "sktime/chronos2-onnx · Hugging Face",
+      "url": "https://huggingface.co/sktime/chronos2-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

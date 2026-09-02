@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mistral-Small-24B-Instruct-Jbliterated-i1-GGUF",
+  "slug": "mradermacher-mistral-small-24b-instruct-jbliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mistral-Small-24B-Instruct-Jbliterated-i1-GGUF",
+  "created_at": "2026-07-15T15:36:46.000Z",
+  "updated_at": "2026-09-02T01:59:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "jbliterated",
+    "uncensored",
+    "abliterated",
+    "weight-surgery",
+    "en",
+    "base_model:ApolloRaines/Mistral-Small-24B-Instruct-Jbliterated",
+    "base_model:quantized:ApolloRaines/Mistral-Small-24B-Instruct-Jbliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 863,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 253555004544,
+  "storage_human": "253.6 GB",
+  "base_model": "ApolloRaines/Mistral-Small-24B-Instruct-Jbliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Mistral-Small-24B-Instruct-2501-abliterated-GGUF · Hugging ...",
+      "url": "https://huggingface.co/mradermacher/Mistral-Small-24B-Instruct-2501-abliterated-GGUF",
+      "snippet": "Instructions to use mradermacher/Mistral-Small-24B-Instruct-2501-abliterated-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "mistralai/Mistral-Small-24B-Instruct-2501 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501",
+      "snippet": "Function calling Mistral-Small-24-Instruct-2501 is excellent at function / tool calling tasks via vLLM. E.g.: Example"
+    },
+    {
+      "title": "Mistral-Small-24B-Instruct-2501 is now available on SageMaker Jumpstart ...",
+      "url": "https://aws.amazon.com/blogs/machine-learning/mistral-small-24b-instruct-2501-is-now-available-on-sagemaker-jumpstart-and-amazon-bedrock-marketplace/",
+      "snippet": "We&#x27;re excited to announce that Mistral-Small-24B-Instruct-2501—a twenty-four billion parameter large language model (LLM) from Mistral AI that&#x27;s optimized for low latency text generation tasks—is available for customers through Amazon SageMaker JumpStart and Amazon Bedrock Marketplace. In this post, we walk through how to discover, deploy, and use Mistral-Small-24B-Instruct-2501."
+    },
+    {
+      "title": "GitHub - inferless/mistral-small-24b-instruct: 24B instruction-tuned ...",
+      "url": "https://github.com/inferless/Mistral-Small-24B-Instruct",
+      "snippet": "Mistral-Small-24B-Instruct also known as Mistral Small 3 (2501) is a cutting-edge 24B parameter language model from Mistral AI. Designed for efficient local deployment, this instruction-tuned model excels in low-latency tasks such as conversational agents and function calling. Despite its compact size, it delivers performance comparable to models three times larger, supports multiple languages ..."
+    },
+    {
+      "title": "Mistral-Small-24B-Instruct-2501-GGUF Open-Source Model - Free Local ...",
+      "url": "https://model.aibase.com/models/details/1915694013358956546",
+      "snippet": "Model Overview This model is the GGUF format version of Mistral-Small-24B-Instruct-2501, supporting multiple quantization levels (2-8 bits) and optimized for text generation tasks."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Jhjhugv/Qwen3-1.7B-base-MED",
+  "slug": "jhjhugv-qwen3-1-7b-base-med",
+  "author": "Jhjhugv",
+  "url": "https://huggingface.co/Jhjhugv/Qwen3-1.7B-base-MED",
+  "created_at": "2026-09-02T07:09:11.000Z",
+  "updated_at": "2026-09-02T07:09:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JUNGCHAN/Qwen3-1.7B-base-MED · Hugging Face",
+      "url": "https://huggingface.co/JUNGCHAN/Qwen3-1.7B-base-MED",
+      "snippet": "Model Card for Model ID Model Details Model Description This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated. Developed by: [More Information Needed] Funded by [optional]: [More Information Needed] Shared by [optional]: [More Information Needed] Model type: [More Information Needed] Language (s) (NLP): [More ..."
+    },
+    {
+      "title": "AMLAN69/qwen3-medical-1.7b-gguf · Hugging Face",
+      "url": "https://huggingface.co/AMLAN69/qwen3-medical-1.7b-gguf",
+      "snippet": "📌 Model Details Base Model: Qwen3-1.7B Format: GGUF (quantized) Quantization Types: Multiple Precision: 2-8 bit quantized Use Case: Low-resource and edge device inference for medical AI applications"
+    },
+    {
+      "title": "Qwen3 1.7B Base MED MED — AI Model | Antbase",
+      "url": "https://antbase.ai/models/qwen3-1-7b-base-med-med",
+      "snippet": "Overview Qwen3 1.7B Base MED MED is a efficient model from Featherless with a 33K context window. Available through ANT&#x27;s unified API."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "qwen3-1.7b-base-MED - friendli.ai",
+      "url": "https://friendli.ai/models/goodragon/qwen3-1.7b-base-MED",
+      "snippet": "Run goodragon/qwen3-1.7b-base-MED with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    }
+  ]
+}

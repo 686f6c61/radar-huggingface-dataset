@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mdhvm/anlp-m26-a1-cipher-transformers",
+  "slug": "mdhvm-anlp-m26-a1-cipher-transformers",
+  "author": "mdhvm",
+  "url": "https://huggingface.co/mdhvm/anlp-m26-a1-cipher-transformers",
+  "created_at": "2026-09-02T10:12:56.000Z",
+  "updated_at": "2026-09-02T10:29:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "transformer",
+    "seq2seq",
+    "ablation",
+    "byte-latent-transformer",
+    "from-scratch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 130749595,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "satyam-arora-iiit-hyderabad/anlp-m26-a1-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/satyam-arora-iiit-hyderabad/anlp-m26-a1-checkpoints",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cipher Desktop: Revolutionary AI-Powered AutoML Platform",
+      "url": "https://github.com/mvideet/Cipher",
+      "snippet": "Transform your data into intelligent models with zero machine learning expertise required. Cipher Desktop is a groundbreaking desktop application that democratizes machine learning by combining the power of Large Language Models (LLMs), automated model selection, and intelligent hyperparameter optimization into a single, intuitive platform. This isn&#x27;t just another ML tool—it&#x27;s a complete ..."
+    },
+    {
+      "title": "abhirajratna/2024114011-anlp-a1 · Hugging Face",
+      "url": "https://huggingface.co/abhirajratna/2024114011-anlp-a1",
+      "snippet": "ANLP Assignment 1 — Custom Transformers & BLT From-scratch encoder-decoder Transformers trained to decrypt a repeating-key XOR cipher (binary string -> English plaintext), with a controlled five-configuration ablation over positional encoding, attention, normalisation and tokenization."
+    },
+    {
+      "title": "anlp-fall2025-code/05_transformers at main · cmu-l3/anlp ... - GitHub",
+      "url": "https://github.com/cmu-l3/anlp-fall2025-code/tree/main/05_transformers",
+      "snippet": "Advanced NLP, Fall 2025 https://cmu-l3.github.io/anlp-fall2025/ - cmu-l3/anlp-fall2025-code"
+    },
+    {
+      "title": "1 Introduction - arXiv.org",
+      "url": "https://arxiv.org/html/2408.11650v2",
+      "snippet": "CIPHER is a large language model fine-tuned on a specialized penetration testing dataset to assist ethical hackers by providing insights and recommendations. Trained on over 300 write-ups of vulnerable machines, hacking techniques, and open-source tools, CIPHER mimics expert reasoning and enhances the penetration testing process."
+    }
+  ]
+}

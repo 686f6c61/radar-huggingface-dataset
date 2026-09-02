@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "hungpill/Qwen3-1.7B-base-MED",
+  "slug": "hungpill-qwen3-1-7b-base-med",
+  "author": "hungpill",
+  "url": "https://huggingface.co/hungpill/Qwen3-1.7B-base-MED",
+  "created_at": "2026-09-02T07:09:15.000Z",
+  "updated_at": "2026-09-02T07:09:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-1.7B-Base · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Qwen3-1.7B-Base — specs, VRAM, license, benchmarks | LocalLLMs",
+      "url": "https://localllms.dev/llm/qwenqwen3-17b-base/",
+      "snippet": "Overview Qwen3-1.7B-Base is an open-source large language model developed by Alibaba&#x27;s Qwen team and released in 2025. As part of the third generation of Qwen models, it delivers strong performance in text generation and conversational tasks while maintaining a compact 1.7 billion parameter footprint."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    }
+  ]
+}

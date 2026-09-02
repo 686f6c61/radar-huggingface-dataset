@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "emberian/h-leaf-e4-decay10-onnx",
+  "slug": "emberian-h-leaf-e4-decay10-onnx",
+  "author": "emberian",
+  "url": "https://huggingface.co/emberian/h-leaf-e4-decay10-onnx",
+  "created_at": "2026-09-02T02:10:37.000Z",
+  "updated_at": "2026-09-02T02:17:33.000Z",
+  "license": "falcon-llm-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "falcon_h1",
+    "text-generation",
+    "falcon-h1",
+    "h-ghost",
+    "base_model:tiiuae/Falcon-H1-Tiny-90M-Base",
+    "base_model:quantized:tiiuae/Falcon-H1-Tiny-90M-Base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 563044983,
+  "storage_human": "563 MB",
+  "base_model": "tiiuae/Falcon-H1-Tiny-90M-Base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "emberian/h-leaf-e4-decay10-onnx · Hugging Face",
+      "url": "https://huggingface.co/emberian/h-leaf-e4-decay10-onnx",
+      "snippet": "Instructions to use emberian/h-leaf-e4-decay10-onnx with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers.js How to use emberian/h-leaf-e4-decay10-onnx with Transformers.js:"
+    },
+    {
+      "title": "emberian (ember arlynx) - Hugging Face",
+      "url": "https://huggingface.co/emberian",
+      "snippet": "Sort: Recently updated emberian/h-leaf-e4-decay10-onnx Text Generation •Updated about 1 hour ago"
+    },
+    {
+      "title": "GitHub - emberian/h · GitHub",
+      "url": "https://github.com/emberian/h",
+      "snippet": "Dataset preparation and training support for a tiny Falcon-H1 model that will live at h.fg-goose.online."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 662+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    }
+  ]
+}

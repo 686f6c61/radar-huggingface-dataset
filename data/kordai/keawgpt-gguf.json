@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "KordAI/KeawGPT-GGUF",
+  "slug": "kordai-keawgpt-gguf",
+  "author": "KordAI",
+  "url": "https://huggingface.co/KordAI/KeawGPT-GGUF",
+  "created_at": "2026-09-02T10:55:22.000Z",
+  "updated_at": "2026-09-02T10:59:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 11753436416,
+  "storage_human": "11.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KordAI/KeawGPT-Base · Hugging Face",
+      "url": "https://huggingface.co/KordAI/KeawGPT-Base",
+      "snippet": "KordAI / KeawGPT-Base like 0 Follow KordAI 5 Text Generation Transformers Safetensors English qwen3 text-generation-inference unsloth License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "KordAI (KordAI) - Hugging Face",
+      "url": "https://huggingface.co/KordAI",
+      "snippet": "Naphon published a dataset about 3 hours ago izyya published a model about 5 hours ago"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "KeawGPT-Base API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/KordAI/KeawGPT-Base",
+      "snippet": "Run KeawGPT-Base with FriendliAI inference. This qwen3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "GitHub - GGUFloader/gguf-loader: GGUF Loader with its Agentic Mode, and ...",
+      "url": "https://github.com/GGUFloader/gguf-loader",
+      "snippet": "A privacy-first, beginner-friendly desktop application for running large language models fully locally on Windows, Linux, and macOS. Load any GGUF model (Mistral, LLaMA, DeepSeek, Qwen, and thousands more from Hugging Face) and chat with it — with a built-in agentic mode that can read, create, edit, and organize files in a workspace you choose. No data ever leaves your computer. 📦 Also ..."
+    }
+  ]
+}

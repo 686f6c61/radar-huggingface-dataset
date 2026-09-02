@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "oakDust/flan-t5-small",
+  "slug": "oakdust-flan-t5-small",
+  "author": "oakDust",
+  "url": "https://huggingface.co/oakDust/flan-t5-small",
+  "created_at": "2026-09-02T07:54:59.000Z",
+  "updated_at": "2026-09-02T07:54:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "fr",
+    "ro",
+    "de",
+    "multilingual"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "jax",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "en",
+    "fr",
+    "ro",
+    "de",
+    "multilingual",
+    "dataset:svakulenk0/qrecc",
+    "dataset:taskmaster2",
+    "dataset:djaym7/wiki_dialog",
+    "dataset:deepmind/code_contests",
+    "dataset:lambada",
+    "dataset:gsm8k",
+    "dataset:aqua_rat",
+    "dataset:esnli",
+    "dataset:quasc",
+    "dataset:qed",
+    "arxiv:2210.11416",
+    "arxiv:1910.09700",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76961152,
+  "parameters_human": "77.0M",
+  "storage_bytes": 1364248628,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/flan-t5-small · Hugging Face",
+      "url": "https://huggingface.co/google/flan-t5-small",
+      "snippet": "Model Card for FLAN-T5 small Table of Contents TL;DR Model Details Usage Uses Bias, Risks, and Limitations Training Details Evaluation Environmental Impact Citation Model Card Authors TL;DR If you already know T5, FLAN-T5 is just better at everything. For the same number of parameters, these models have been fine-tuned on more than 1000 additional tasks covering also more languages. As ..."
+    },
+    {
+      "title": "FLAN-T5 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/flan-t5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "flan-t5-small: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/flan-t5-small-google",
+      "snippet": "Overview flan-t5-small is a text-to-text transformer model maintained by google that performs instruction-following tasks across 1000+ diverse NLP jobs. Built on the T5 architecture and fine-tuned on instruction data, this model handles translation, summarization, question answering, reasoning, and classification without task-specific training. The model is available under the Apache 2.0 ..."
+    },
+    {
+      "title": "flan-t5-small · Models",
+      "url": "https://www.modelscope.cn/models/google/flan-t5-small/summary",
+      "snippet": "We also publicly release Flan-T5 checkpoints,1 which achieve strong few-shot performance even compared to much larger models, such as PaLM 62B. Overall, instruction finetuning is a general method for improving the performance and usability of pretrained language models."
+    },
+    {
+      "title": "FLAN-T5 - llmmodels.org",
+      "url": "https://llmmodels.org/tools/t5/",
+      "snippet": "FLAN-T5 is an enhanced iteration of Google&#x27;s widely used T5 model, refined through a process known as instruct-finetuning. This technique involves training the model on specific instructions, allowing it to better understand and execute tasks in accordance with those instructions."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "kingjones777",
   "url": "https://huggingface.co/kingjones777/Gemma-4-12B-it-ROCmFP4-GGUF",
   "created_at": "2026-08-17T20:32:24.000Z",
-  "updated_at": "2026-08-17T21:43:40.000Z",
+  "updated_at": "2026-09-01T20:56:10.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,7 +27,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 256,
+  "downloads_30d": 260,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",

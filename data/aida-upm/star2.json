@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AIDA-UPM/star2",
+  "slug": "aida-upm-star2",
+  "author": "AIDA-UPM",
+  "url": "https://huggingface.co/AIDA-UPM/star2",
+  "created_at": "2026-09-02T08:31:26.000Z",
+  "updated_at": "2026-09-02T08:33:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 396880896,
+  "parameters_human": "396.9M",
+  "storage_bytes": 1587541856,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/aida-upm-star",
+      "snippet": "AIDA-UPM/star powered by Text Embeddings Inference (TEI) Original Model Card Text Embeddings Inference Documentation Send Request You can use cURL or any REST Client to send a request to the AzureML endpoint with your AzureML token."
+    },
+    {
+      "title": "AIDA-UPM/star · Hugging Face",
+      "url": "https://huggingface.co/AIDA-UPM/star",
+      "snippet": "1 Train Deploy Use this model Style Transformer for Authorship Representations - STAR Feature extraction Citation"
+    },
+    {
+      "title": "README.md · AIDA-UPM/star at main - Hugging Face",
+      "url": "https://huggingface.co/AIDA-UPM/star/blob/main/README.md",
+      "snippet": "AIDA-UPM / star like 0 Feature ExtractionTransformersPyTorchrobertaInference Endpoints arxiv:2310.11081 Model card FilesFiles and versions Community Train Deploy Use in Transformers main star /README.md jahuerta92 Update README.md e2a08d0 verifiedabout 1 month ago preview code | raw history blame contribute delete No virus 1.21 kB metadata"
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Build AI that ships Build, test, and deploy AI systems with the models, tools, and workflows your team needs. Scale on one platform."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

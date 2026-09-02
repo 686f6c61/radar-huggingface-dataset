@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "MP4good/ppo-LunarLander-v2",
+  "slug": "mp4good-ppo-lunarlander-v2",
+  "author": "MP4good",
+  "url": "https://huggingface.co/MP4good/ppo-LunarLander-v2",
+  "created_at": "2026-09-02T09:25:22.000Z",
+  "updated_at": "2026-09-02T10:11:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1002245,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · shuangzhiaishang/ppo-LunarLander-v2 at main",
+      "url": "https://huggingface.co/shuangzhiaishang/ppo-LunarLander-v2/blob/main/README.md?code=true",
+      "snippet": "Notebooks Google Colab Kaggle main ppo-LunarLander-v2 /README.md shuangzhiaishang Upload PPO LunarLander-v2 trained agent 5b3a0be almost 3 years ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete Safe 784 Bytes"
+    },
+    {
+      "title": "buildthemachine/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/buildthemachine/ppo-LunarLander-v2",
+      "snippet": "PPO Agent playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library. Usage (with Stable-baselines3) The PPO model is saved as \"ppo-LunarLander-v2.zip\". There are two ways to load this model: Directly load the model from huggingface. This requires the use of the &#x27;load_from_hub&#x27; function"
+    },
+    {
+      "title": "GitHub - rishisim/LunarLander-v2: Trained model of a PPO agent playing ...",
+      "url": "https://github.com/rishisim/LunarLander-v2",
+      "snippet": "This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library. Using Google Colab, I trained my first Deep Reinforcement Learning agent, a Lunar Lander agent that will learn to land correctly on the moon using Stable-Baselines3."
+    },
+    {
+      "title": "GitHub - alperenunlu/ppo-lunarlander-v2: Agent trained with PPO ...",
+      "url": "https://github.com/alperenunlu/ppo-lunarlander-v2",
+      "snippet": "This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "PPO-LunarLander-v2 Open-Source Reinforcement Learning Model - Free ...",
+      "url": "https://model.aibase.com/models/details/1915692681440944129",
+      "snippet": "🚀 Stable-Baselines3 PPO Agent for LunarLander-v2 This project presents a trained PPO agent for the LunarLander-v2 environment using the stable-baselines3 libra"
+    }
+  ]
+}

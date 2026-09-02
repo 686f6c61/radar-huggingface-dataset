@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "neemon/anlp-a1-c5_fixed",
+  "slug": "neemon-anlp-a1-c5_fixed",
+  "author": "neemon",
+  "url": "https://huggingface.co/neemon/anlp-a1-c5_fixed",
+  "created_at": "2026-09-02T08:29:37.000Z",
+  "updated_at": "2026-09-02T08:29:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "transformer",
+    "from-scratch",
+    "ablation",
+    "cipher-decryption",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129617114,
+  "storage_human": "130 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "neemon/anlp-a1-c5 · Hugging Face",
+      "url": "https://huggingface.co/neemon/anlp-a1-c5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "neemon/anlp-a1-c5 at main - Hugging Face",
+      "url": "https://huggingface.co/neemon/anlp-a1-c5/tree/main",
+      "snippet": "neemon / anlp-a1-c5 like 0 transformer from-scratch ablation cipher-decryption License:mit Model card FilesFiles and versions xet Community Copy to bucket new main anlp-a1-c5 130 MB Ctrl+K Ctrl+K 1 contributor History:3 commits neemon Upload README.md with huggingface_hub ea8861f verifiedabout 10 hours ago .gitattributes Safe 1.52 kBinitial commitabout 10 hours ago README.md 1.39 kBUpload ..."
+    },
+    {
+      "title": "ZappY-AI/anlp-a1 · Hugging Face",
+      "url": "https://huggingface.co/ZappY-AI/anlp-a1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Yajat31/anlp-a1-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/Yajat31/anlp-a1-checkpoints",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - NVIDIA-NeMo/Automodel: Pytorch Distributed native training ...",
+      "url": "https://github.com/NVIDIA-NeMo/Automodel",
+      "snippet": "Nemo AutoModel is a Pytorch DTensor‑native SPMD open-source training library under NVIDIA NeMo Framework, designed to streamline and scale training and finetuning for LLMs, VLMs, diffusion models, and retrieval models. Designed for flexibility, reproducibility, and scale, NeMo AutoModel enables both small-scale experiments and massive multi-GPU, multi-node deployments for fast ..."
+    }
+  ]
+}

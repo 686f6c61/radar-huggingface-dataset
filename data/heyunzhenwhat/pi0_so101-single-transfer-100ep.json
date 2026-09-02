@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "heyunzhenwhat/pi0_so101-single-transfer-100ep",
+  "slug": "heyunzhenwhat-pi0_so101-single-transfer-100ep",
+  "author": "heyunzhenwhat",
+  "url": "https://huggingface.co/heyunzhenwhat/pi0_so101-single-transfer-100ep",
+  "created_at": "2026-09-02T09:32:30.000Z",
+  "updated_at": "2026-09-02T09:35:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:heyunzhenwhat/so101-single-transfer-100ep",
+    "base_model:lerobot/pi0_base",
+    "base_model:finetune:lerobot/pi0_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4028019472,
+  "parameters_human": "4.03B",
+  "storage_bytes": 8892518120,
+  "storage_human": "8.9 GB",
+  "base_model": "lerobot/pi0_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "heyunzhenwhat/pi0_so101-single-transfer · Discussions",
+      "url": "https://huggingface.co/heyunzhenwhat/pi0_so101-single-transfer/discussions",
+      "snippet": "heyunzhenwhat / pi0_so101-single-transfer like 0 Robotics LeRobot Safetensors heyunzhenwhat/so101-single-transfer pi0 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - Maelic/openpi-SO100: Pi0 fine-tuning for the SO-100 and SO-101 ...",
+      "url": "https://github.com/Maelic/openpi-SO100",
+      "snippet": "Pi0 fine-tuning for the SO-100 and SO-101 arms. Contribute to Maelic/openpi-SO100 development by creating an account on GitHub."
+    },
+    {
+      "title": "mizutoukotori/pi0_so101_v4 · Hugging Face",
+      "url": "https://huggingface.co/mizutoukotori/pi0_so101_v4",
+      "snippet": "Model Card for pi0 Pi0 is a generalist vision-language-action transformer that converts multimodal observations and text instructions into robot actions for zero-shot task transfer."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

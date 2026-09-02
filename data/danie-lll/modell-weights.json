@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "danie-lll/Modell-Weights",
+  "slug": "danie-lll-modell-weights",
+  "author": "danie-lll",
+  "url": "https://huggingface.co/danie-lll/Modell-Weights",
+  "created_at": "2026-09-02T11:09:35.000Z",
+  "updated_at": "2026-09-02T11:33:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 630167424,
+  "parameters_human": "630.2M",
+  "storage_bytes": 3662560032,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 412 AI models across 408 benchmarks, with 229 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "model-weights · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/model-weights",
+      "snippet": "PXG-Tiny Ai - pixel sprites game asset generator. A 483K-param open-weights model that turns plain English prompts into 16×16 pixel-art sprites — ~1 MB NumPy weights, CPU-only, fully offline."
+    },
+    {
+      "title": "What Are Model Weights and Why Do They Matter in 2026?",
+      "url": "https://www.articsledge.com/post/model-weights",
+      "snippet": "Model weights are the numerical parameters that give AI its intelligence. Learn what they are, how they work, why they matter for AI performance, policy, and the open vs. closed AI debate in 2026."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The AI community building the future. ... Explore AI Apps or Browse 2M+ models Trending on this week"
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    }
+  ]
+}

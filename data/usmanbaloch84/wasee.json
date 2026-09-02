@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "usmanbaloch84/wasee",
+  "slug": "usmanbaloch84-wasee",
+  "author": "usmanbaloch84",
+  "url": "https://huggingface.co/usmanbaloch84/wasee",
+  "created_at": "2026-09-02T11:12:46.000Z",
+  "updated_at": "2026-09-02T11:12:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Detector - Trusted AI Checker for ChatGPT, Copilot & Gemini - Scribbr",
+      "url": "https://www.scribbr.com/ai-detector/",
+      "snippet": "Scribbr AI Detector: Identify AI-generated content from ChatGPT, Copilot, and Gemini with our advanced AI Checker. Try it for free!"
+    },
+    {
+      "title": "Best AI Models in September 2026: Updated Rankings and Comparisons",
+      "url": "https://felloai.com/best-ai-models/",
+      "snippet": "The best AI models ranked by use case: writing, coding, image generation, accuracy and more. Updated monthly with benchmarks and pricing for September 2026."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Wasee",
+      "url": "https://www.wasee.dev/",
+      "snippet": "AI Experiments Exploring local LLM integrations, practical tooling, and algorithmic workflows."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

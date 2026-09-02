@@ -5,7 +5,7 @@
   "author": "iapp",
   "url": "https://huggingface.co/iapp/openthai2.0-qwen3.8-27b-GGUF",
   "created_at": "2026-08-25T14:58:52.000Z",
-  "updated_at": "2026-08-31T12:16:07.000Z",
+  "updated_at": "2026-09-01T11:11:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 229429038560,
-  "storage_human": "229.4 GB",
+  "storage_bytes": 286687539328,
+  "storage_human": "286.7 GB",
   "base_model": "kobkrit/openthai2.0-qwen3.8-27b",
   "formats": [
     "gguf"

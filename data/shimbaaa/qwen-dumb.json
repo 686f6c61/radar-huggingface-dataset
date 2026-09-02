@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "shimbaaa/Qwen-Dumb",
+  "slug": "shimbaaa-qwen-dumb",
+  "author": "shimbaaa",
+  "url": "https://huggingface.co/shimbaaa/Qwen-Dumb",
+  "created_at": "2026-09-02T07:44:10.000Z",
+  "updated_at": "2026-09-02T07:57:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "unsloth",
+    "tool-calling",
+    "function-calling",
+    "qlora",
+    "tiny-model",
+    "en",
+    "base_model:unsloth/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46659270,
+  "storage_human": "47 MB",
+  "base_model": "unsloth/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "shimbaaa (shimba) - Hugging Face",
+      "url": "https://huggingface.co/shimbaaa",
+      "snippet": "Sort: Recently updated. shimbaaa/shimba-v1.dull-large. Updated Jun 21 • 1. shimbaaa/shimba-model-v1. Updated Jun 21. datasets 1"
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Model Launch Native 30-second AI video generation from any input. 30% Off on Images, text, video, audio, documents, and web pages can all become creative references. Direct characters, scenes, camera, dialogue, and sound through one creative intent. Explore More"
+    },
+    {
+      "title": "Qwen AI - Alibaba&#x27;s Advanced Language Models",
+      "url": "https://www.qwen-ai.tech/",
+      "snippet": "Discover Qwen AI Alibaba&#x27;s Advanced Language Model Family Explore the powerful, open, and versatile Qwen model family that&#x27;s reshaping the global AI landscape with exceptional performance across code generation, multilingual tasks, and enterprise applications."
+    }
+  ]
+}

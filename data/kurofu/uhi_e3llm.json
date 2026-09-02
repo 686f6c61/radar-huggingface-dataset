@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Kurofu/UHI_E3LLM",
+  "slug": "kurofu-uhi_e3llm",
+  "author": "Kurofu",
+  "url": "https://huggingface.co/Kurofu/UHI_E3LLM",
+  "created_at": "2026-08-29T07:35:19.000Z",
+  "updated_at": "2026-09-02T09:01:53.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "urban-heat-island",
+    "time-series-forecasting",
+    "reinforcement-learning",
+    "explanation-distillation",
+    "text-generation",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    "base_model:adapter:deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 122819176,
+  "storage_human": "123 MB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ZJU-DAILY/UHI_E3LLM",
+      "url": "https://github.com/ZJU-DAILY/UHI_E3LLM",
+      "snippet": "UHI_E3LLM is an end-to-end LLM-based model for forecasting monthly Urban Heat Island (UHI) intensity and producing factor-level explanations. The codebase includes supervised fine-tuning (SFT), PPO-based alignment, LoRA merge utilities, and explanation generation."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "UHI_E3LLM/src at master · ZJU-DAILY/UHI_E3LLM · GitHub",
+      "url": "https://github.com/ZJU-DAILY/UHI_E3LLM/tree/master/src",
+      "snippet": "Contribute to ZJU-DAILY/UHI_E3LLM development by creating an account on GitHub."
+    },
+    {
+      "title": "MAL360 — Model Library",
+      "url": "https://mal360.com/models.html",
+      "snippet": "Browse thousands of open AI models explained in plain English. Filter for edge-compatible models that run on your laptop. One-click install via Ollama."
+    }
+  ]
+}

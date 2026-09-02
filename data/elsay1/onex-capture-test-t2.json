@@ -1,0 +1,177 @@
+{
+  "schema": 1,
+  "id": "elsay1/onex-capture-test-t2",
+  "slug": "elsay1-onex-capture-test-t2",
+  "author": "elsay1",
+  "url": "https://huggingface.co/elsay1/onex-capture-test-t2",
+  "created_at": "2026-09-02T09:08:19.000Z",
+  "updated_at": "2026-09-02T09:10:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "safetensors",
+    "distilbert",
+    "en",
+    "dataset:sst2",
+    "dataset:glue",
+    "arxiv:1910.01108",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 803632553,
+  "storage_human": "804 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Classification",
+      "dataset": "glue",
+      "metric": "Accuracy",
+      "value": 0.9105504587155964
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "glue",
+      "metric": "Precision",
+      "value": 0.8978260869565218
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "glue",
+      "metric": "Recall",
+      "value": 0.9301801801801802
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "glue",
+      "metric": "AUC",
+      "value": 0.9716626673402374
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "glue",
+      "metric": "F1",
+      "value": 0.9137168141592922
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "glue",
+      "metric": "loss",
+      "value": 0.39013850688934326
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "sst2",
+      "metric": "Accuracy",
+      "value": 0.9885521685548412
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "sst2",
+      "metric": "Precision Macro",
+      "value": 0.9881965062029833
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "sst2",
+      "metric": "Precision Micro",
+      "value": 0.9885521685548412
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "sst2",
+      "metric": "Precision Weighted",
+      "value": 0.9885639626373408
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "sst2",
+      "metric": "Recall Macro",
+      "value": 0.9886145346602994
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "sst2",
+      "metric": "Recall Micro",
+      "value": 0.9885521685548412
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "sst2",
+      "metric": "Recall Weighted",
+      "value": 0.9885521685548412
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "sst2",
+      "metric": "F1 Macro",
+      "value": 0.9884019815052447
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "sst2",
+      "metric": "F1 Micro",
+      "value": 0.9885521685548412
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "sst2",
+      "metric": "F1 Weighted",
+      "value": 0.9885546181087554
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "sst2",
+      "metric": "loss",
+      "value": 0.040652573108673096
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Tomar-VRDate/onnx-ai-models - GitHub",
+      "url": "https://github.com/Tomar-VRDate/onnx-ai-models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 662+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "ONNX | Home",
+      "url": "https://onnx.ai/",
+      "snippet": "ONNX defines a common set of operators - the building blocks of machine learning and deep learning models - and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers."
+    }
+  ]
+}

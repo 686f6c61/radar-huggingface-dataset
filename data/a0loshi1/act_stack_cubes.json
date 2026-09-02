@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "a0loshi1/act_stack_cubes",
+  "slug": "a0loshi1-act_stack_cubes",
+  "author": "a0loshi1",
+  "url": "https://huggingface.co/a0loshi1/act_stack_cubes",
+  "created_at": "2026-09-02T09:19:16.000Z",
+  "updated_at": "2026-09-02T09:20:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:a0loshi1/stack_cubes_v3_rgb",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "a0loshi1/stack_cubes_v2 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/a0loshi1/stack_cubes_v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "a0loshi1 (Altin Loshi) - Hugging Face",
+      "url": "https://huggingface.co/a0loshi1/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 21 hours ago ... published a model about 21 hours ago"
+    },
+    {
+      "title": "Odysseus AI - Self-Hosted AI Workspace Setup Guide",
+      "url": "https://odysseusai.dev/",
+      "snippet": "Odysseus AI Setup Guide For PewDiePie&#x27;s self-hosted AI workspace Verify the official source, choose Docker, Windows, macOS, or Linux, connect Ollama or API keys, read logs, choose a model that fits your hardware, and avoid unsafe public deployment."
+    },
+    {
+      "title": "GitHub - allenai/molmoact2: Official Repository for MolmoAct2",
+      "url": "https://github.com/allenai/molmoact2",
+      "snippet": "Official Repository for MolmoAct2. Contribute to allenai/molmoact2 development by creating an account on GitHub."
+    },
+    {
+      "title": "Act with Intent: Distilling Behavior Intent for Vision-Language-Action ...",
+      "url": "https://arxiv.org/html/2608.23478",
+      "snippet": "On Cross-Bin Stacking, the policies remain nearly indistinguishable through centering the base cube, and the main gap appears when execution must move from the completed first subgoal to retrieving and stacking the second cube. This provides the clearest real-world evidence that Indiimproves behavior across a stage transition."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "counter-geo/c-geo-guard",
+  "slug": "counter-geo-c-geo-guard",
+  "author": "counter-geo",
+  "url": "https://huggingface.co/counter-geo/c-geo-guard",
+  "created_at": "2026-07-22T11:18:23.000Z",
+  "updated_at": "2026-09-02T09:27:59.000Z",
+  "license": "c-geo-guard-dual-license",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "deberta-v2",
+    "deberta-v3",
+    "misinformation-detection",
+    "generative-engine-optimization",
+    "retrieval-augmented-generation",
+    "feature-extraction",
+    "en",
+    "base_model:microsoft/deberta-v3-base",
+    "base_model:finetune:microsoft/deberta-v3-base",
+    "license:other",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 183831552,
+  "parameters_human": "183.8M",
+  "storage_bytes": 737839056,
+  "storage_human": "738 MB",
+  "base_model": "microsoft/deberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "counter-geo/c-geo-guard · Hugging Face",
+      "url": "https://huggingface.co/counter-geo/c-geo-guard",
+      "snippet": "C-GEO Guard is the contrastive chunk-level detector evaluated with Counter-GEO-Bench. This repository contains the one-epoch checkpoint used in the paper, its eight attack-class centroids, the associated calibration metadata, and the original training and evaluation code."
+    },
+    {
+      "title": "Counter-GEO-Bench: Evaluating Defenses Against...",
+      "url": "https://openreview.net/forum?id=CY0YO0sRxs",
+      "snippet": "Safety-taxonomy guardrails target policy violations, while GEO misinformation passes through them as fluent informational content. To this end, a lightweight benchmark baseline, C-GEO Guard, is proposed, reducing ASR by 48&#92;% relative with near-zero utility loss, which proves threat tractable."
+    },
+    {
+      "title": "counter-geo (Counter-GEO) - Hugging Face",
+      "url": "https://huggingface.co/counter-geo/models",
+      "snippet": "Org profile for Counter-GEO on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "AAA55555/geo-guard-ai - GitHub",
+      "url": "https://github.com/AAA55555/geo-guard-ai",
+      "snippet": "Contribute to AAA55555/geo-guard-ai development by creating an account on GitHub."
+    },
+    {
+      "title": "Counter-GEO-Bench: Evaluating Defenses Against Information-Distorting ...",
+      "url": "https://openreview.net/pdf?id=CY0YO0sRxs",
+      "snippet": "C-GEO Guard catches 36-40% of these per model; the re- maining cases identify where stronger defenses are needed. Cross-source disagreement quantification, external fact verification, and provenance-based filtering could be complementary directions that COUNTER-GEO-BENCH is designed to evaluate."
+    }
+  ]
+}

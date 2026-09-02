@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "lsdyna/a2c-PandaPickAndPlace-v3",
+  "slug": "lsdyna-a2c-pandapickandplace-v3",
+  "author": "lsdyna",
+  "url": "https://huggingface.co/lsdyna/a2c-PandaPickAndPlace-v3",
+  "created_at": "2026-09-02T01:44:33.000Z",
+  "updated_at": "2026-09-02T01:50:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaPickAndPlace-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 244189,
+  "storage_human": "244189 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lsdyna/a2c-PandaPickAndPlace-v3 · Hugging Face",
+      "url": "https://huggingface.co/lsdyna/a2c-PandaPickAndPlace-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cys/a2c-PandaPickAndPlace-v3 · Hugging Face",
+      "url": "https://huggingface.co/cys/a2c-PandaPickAndPlace-v3",
+      "snippet": "A2C Agent playing PandaPickAndPlace-v3 This is a trained model of a A2C agent playing PandaPickAndPlace-v3 using the stable-baselines3 library. Usage (with Stable-baselines3) TODO: Add your code"
+    },
+    {
+      "title": "Day-9_SAC_SB3_Panda_Pick_And_Place.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/ALLIA12/KAUST-Academy-Artificial-Intelligence-Summer-2025/blob/main/Labs/Reinforcement%20Learning/Day%209/Day-9_SAC_SB3_Panda_Pick_And_Place.ipynb",
+      "snippet": "In this demo we will use the Soft Actor Critic algorithm to solve the Panda Pick and Place Environment. We will use Stable baselines3&#x27;s implementation of SAC. The Panda pick and place environment is found in panda-gym, which provides some robotics environments in pybullet simulation as gym environments. In the Panda Pick and Place environment, a robotic arm needs to learn to pick an object on ..."
+    },
+    {
+      "title": "PandaPickAndPlace-v3 Training and Hyperparameters #66",
+      "url": "https://github.com/qgallouedec/panda-gym/issues/66",
+      "snippet": "Hi @qgallouedec, I have been trying to reproduce the results of some of the experiments, in particular for the PandaPickAndPlace task. However, I was only able to find hyperparameters for v1. Should results be reproducible for v3? I trie..."
+    },
+    {
+      "title": "deep-rl-class/units/en/unit6/hands-on.mdx at main - GitHub",
+      "url": "https://github.com/huggingface/deep-rl-class/blob/main/units/en/unit6/hands-on.mdx",
+      "snippet": "Define the environment called \"PandaPickAndPlace-v3\" Make a vectorized environment Add a wrapper to normalize the observations and rewards. Check the documentation Create the A2C Model (don&#x27;t forget verbose=1 to print the training logs). Train it for 1M Timesteps Save the model and VecNormalize statistics when saving the agent Evaluate your agent"
+    }
+  ]
+}

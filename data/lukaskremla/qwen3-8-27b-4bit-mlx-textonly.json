@@ -5,7 +5,7 @@
   "author": "lukaskremla",
   "url": "https://huggingface.co/lukaskremla/Qwen3.8-27B-4bit-MLX-TextOnly",
   "created_at": "2026-08-14T22:22:27.000Z",
-  "updated_at": "2026-08-14T23:32:18.000Z",
+  "updated_at": "2026-09-01T06:54:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 1259,
+  "downloads_30d": 1322,
   "trending_score": 0,
   "parameters": 4204731904,
   "parameters_human": "4.20B",

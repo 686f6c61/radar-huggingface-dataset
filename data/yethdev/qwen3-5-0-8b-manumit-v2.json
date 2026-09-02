@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yethdev/qwen3.5-0.8b-manumit-v2",
+  "slug": "yethdev-qwen3-5-0-8b-manumit-v2",
+  "author": "yethdev",
+  "url": "https://huggingface.co/yethdev/qwen3.5-0.8b-manumit-v2",
+  "created_at": "2026-09-02T01:45:32.000Z",
+  "updated_at": "2026-09-02T01:46:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1726019853,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yethdev/qwen3.5-0.8b-manumit-v1 · Hugging Face",
+      "url": "https://huggingface.co/yethdev/qwen3.5-0.8b-manumit-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5 0.8B Manumit V1 by yethdev — VRAM 1.7GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/yethdev%2Fqwen3.5-0.8b-manumit-v1,4pCe604ksQy5vXBfcJAaRU",
+      "snippet": "Qwen3.5 0.8B Manumit V1 is an open-source 0.8b LLM by yethdev. VRAM 1.7GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "yethdev/qwen3.5-0.8b-manumit-v1 at main - Hugging Face",
+      "url": "https://huggingface.co/yethdev/qwen3.5-0.8b-manumit-v1/tree/main",
+      "snippet": "Instructions to use yethdev/qwen3.5-.8b-manumit-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use yethdev/qwen3.5-.8b-manumit-v1 with Transformers:"
+    },
+    {
+      "title": "qwen3.5-0.8b-manumit-v1 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/yethdev/qwen3.5-0.8b-manumit-v1",
+      "snippet": "Run qwen3.5-.8b-manumit-v1 with FriendliAI inference. Qwen3.5-0.8B abliterated via manumit v1."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_5_0_8b at main - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/qwen3_5_0_8b",
+      "snippet": "Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction-following capabilities over Qwen3. This is based on the implementation of Qwen3.5-0.8B found here."
+    }
+  ]
+}

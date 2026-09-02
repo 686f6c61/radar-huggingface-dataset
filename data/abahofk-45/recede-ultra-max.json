@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "abahofk-45/recede-ultra-max",
+  "slug": "abahofk-45-recede-ultra-max",
+  "author": "abahofk-45",
+  "url": "https://huggingface.co/abahofk-45/recede-ultra-max",
+  "created_at": "2026-09-02T11:03:31.000Z",
+  "updated_at": "2026-09-02T11:21:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 337984859,
+  "storage_human": "338 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 412 AI models across 408 benchmarks, with 229 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF pipecat-ai/phonellm-alpha-1"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The AI community building the future. ... Explore AI Apps or Browse 2M+ models Trending on this week"
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    },
+    {
+      "title": "abahof45 / Repositories · GitHub",
+      "url": "https://github.com/abahof45?tab=repositories",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    }
+  ]
+}

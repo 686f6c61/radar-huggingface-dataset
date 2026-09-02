@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "elsay1/onex-capture-test-t2b",
+  "slug": "elsay1-onex-capture-test-t2b",
+  "author": "elsay1",
+  "url": "https://huggingface.co/elsay1/onex-capture-test-t2b",
+  "created_at": "2026-09-02T09:48:46.000Z",
+  "updated_at": "2026-09-02T09:49:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "tflite",
+    "coreml",
+    "safetensors",
+    "gpt2",
+    "exbert",
+    "en",
+    "dataset:openwebtext",
+    "arxiv:1910.01108",
+    "arxiv:2201.08542",
+    "arxiv:2203.12574",
+    "arxiv:1910.09700",
+    "arxiv:1503.02531",
+    "license:apache-2.0",
+    "model-index",
+    "co2_eq_emissions",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 88204032,
+  "parameters_human": "88.2M",
+  "storage_bytes": 1998675796,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "WikiText-103",
+      "metric": "Perplexity",
+      "value": 21.1
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 662+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "Tomar-VRDate/onnx-ai-models - GitHub",
+      "url": "https://github.com/Tomar-VRDate/onnx-ai-models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "ONNX - Model Zoo - Online Tutorials Library",
+      "url": "https://www.tutorialspoint.com/onnx/onnx-model-zoo.htm",
+      "snippet": "The ONNX Model Zoo is a collection of pre-trained models in the ONNX (Open Neural Network Exchange) format, designed to easily use the machine learning models without the needing to train them from scratch."
+    }
+  ]
+}

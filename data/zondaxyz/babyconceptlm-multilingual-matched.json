@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zondaxyz/babyconceptLM-Multilingual-matched",
+  "slug": "zondaxyz-babyconceptlm-multilingual-matched",
+  "author": "zondaxyz",
+  "url": "https://huggingface.co/zondaxyz/babyconceptLM-Multilingual-matched",
+  "created_at": "2026-09-02T08:48:17.000Z",
+  "updated_at": "2026-09-02T08:53:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "concept_dominant_gptbert",
+    "babylm",
+    "multilingual",
+    "causal-language-modeling",
+    "custom-code",
+    "matched-control",
+    "text-generation",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778378966,
+  "storage_human": "778 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=concept-model",
+      "snippet": "2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: concept-model Clear all"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=chinese-babylm",
+      "snippet": "Explore machine learning models. 10 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: chinese-babylm Clear all"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Model Catalog - LM Studio",
+      "url": "https://lmstudio.ai/models",
+      "snippet": "Discover models to run locally or use with LM Studio Cloud."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

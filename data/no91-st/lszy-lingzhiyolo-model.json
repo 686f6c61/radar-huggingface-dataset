@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "no91-st/LSZY-LingzhiYolo-model",
+  "slug": "no91-st-lszy-lingzhiyolo-model",
+  "author": "no91-st",
+  "url": "https://huggingface.co/no91-st/LSZY-LingzhiYolo-model",
+  "created_at": "2026-09-02T01:32:17.000Z",
+  "updated_at": "2026-09-02T01:37:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19195994,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "#91 - AI Girl LORA Model for SDXL and SD1.5 - Luna Models",
+      "url": "https://lunamodels.art/store/product/girl-91/",
+      "snippet": "This LORA model helps generate stylized AI girl characters for use with SDXL and SD1.5 compatible software, offering a low-weight SAFETENSORS format."
+    },
+    {
+      "title": "91Model",
+      "url": "https://91model.com/",
+      "snippet": "Powerful Enterprise AI Capabilities from 91Model Out-of-the-box enterprise features that make AI integration easier than ever Unified OpenAI-Compatible API Fully compatible with the OpenAI API format — switch model providers without changing your code."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "No. GPTZero works across a wide range of AI language models, including but not limited to ChatGPT, GPT-5, GPT-4, GPT-3, Gemini, Claude, Llama, Deepseek, and AI services based on those models."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

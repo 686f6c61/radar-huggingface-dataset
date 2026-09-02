@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "TobiasPitters/t0-alpha-onnx-int8",
+  "slug": "tobiaspitters-t0-alpha-onnx-int8",
+  "author": "TobiasPitters",
+  "url": "https://huggingface.co/TobiasPitters/t0-alpha-onnx-int8",
+  "created_at": "2026-09-02T07:51:27.000Z",
+  "updated_at": "2026-09-02T07:52:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "time-series",
+    "forecasting",
+    "onnxruntime",
+    "quantized",
+    "zero-shot",
+    "base_model:theforecastingcompany/t0-alpha",
+    "base_model:quantized:theforecastingcompany/t0-alpha",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 108131469,
+  "storage_human": "108 MB",
+  "base_model": "theforecastingcompany/t0-alpha",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - siddharth7113/tsfm-onnx",
+      "url": "https://github.com/siddharth7113/tsfm-onnx",
+      "snippet": "Used Claude Fable 5 in different parts of the project. This project takes The Forecasting Company&#x27;s t0-alpha time-series foundation model, exports it from PyTorch to ONNX, and runs it entirely in the browser with onnxruntime-web. There is no server and no Python at inference time, and a full ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "TobiasPitters (Tobias Pitters) - Hugging Face",
+      "url": "https://huggingface.co/TobiasPitters/datasets",
+      "snippet": "Explainable AI, AI inference & OSS AI infrastructure Maintainer of SHAP"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 662+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/CasualSwarms",
   "created_at": "2026-01-19T10:36:53.000Z",
-  "updated_at": "2026-08-31T13:15:06.000Z",
+  "updated_at": "2026-09-01T13:15:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 2244,
+  "downloads_30d": 2274,
   "trending_score": 0,
   "parameters": 170330979,
   "parameters_human": "170.3M",

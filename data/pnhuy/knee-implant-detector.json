@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "pnhuy/knee-implant-detector",
+  "slug": "pnhuy-knee-implant-detector",
+  "author": "pnhuy",
+  "url": "https://huggingface.co/pnhuy/knee-implant-detector",
+  "created_at": "2026-09-02T11:30:16.000Z",
+  "updated_at": "2026-09-02T11:30:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TKA-AID: An Uncertainty-Aware Deep Learning Classifier to Identify ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0883540325000348",
+      "snippet": "Methods We used an institutional total joint registry to pull images and implant data for 9,651 patients (N = 111,519 images). We trained a deep learning model based on the EfficientNet architecture to identify nine different TKA systems across all common knee radiographic views. Model performance was assessed on internal held-out test set and external test set. Conformal prediction was ..."
+    },
+    {
+      "title": "TKA-AID: An Uncertainty-Aware Deep Learning Classifier to Identify ...",
+      "url": "https://www.arthroplastyjournal.org/article/S0883-5403(25)00034-8/pdf",
+      "snippet": "The model can process approx-imately 30 images/second. Conclusion: We developed an automated knee implant identi cation tool that can classify nine different fi implant designs. Importantly, it works on multiple radiographic views and utilizes uncertainty quanti-cation and outlier detection as safety mechanisms. fi 2025 Elsevier Inc."
+    },
+    {
+      "title": "Artificial Intelligence for Automated Implant Identification in Knee ...",
+      "url": "https://www.arthroplastyjournal.org/article/S0883-5403(23)00269-3/fulltext",
+      "snippet": "Surgical management of complications following knee arthroplasty demands accurate and timely identification of implant manufacturer and model. Automated image processing using deep machine learning has been previously developed and internally validated; however, external validation is essential prior to scaling clinical implementation for generalizability."
+    },
+    {
+      "title": "Identify Orthopedic & Spine Implants | Implant Identifier",
+      "url": "https://implantidentifier.app/",
+      "snippet": "Identify hip, knee, shoulder and spine implants from X-rays using AI. Explore our library across seven orthopedic implant categories."
+    },
+    {
+      "title": "Artificial Intelligence for Automated Implant Identification in Knee ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0883540323002693",
+      "snippet": "An artificial intelligence-based software for identifying knee arthroplasty implants demonstrated excellent internal and external validation. Although continued surveillance is necessary with implant library expansion, this software represents a responsible and meaningful clinical application of artificial intelligence with immediate potential to globally scale and assist in preoperative ..."
+    }
+  ]
+}

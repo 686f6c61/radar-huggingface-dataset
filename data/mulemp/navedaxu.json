@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mulemp/NaveDaxu",
+  "slug": "mulemp-navedaxu",
+  "author": "mulemp",
+  "url": "https://huggingface.co/mulemp/NaveDaxu",
+  "created_at": "2026-04-01T05:39:55.000Z",
+  "updated_at": "2026-09-02T09:02:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12485826604,
+  "storage_human": "12.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mulemp/NaveDaxu · Hugging Face",
+      "url": "https://huggingface.co/mulemp/NaveDaxu",
+      "snippet": "mulemp / NaveDaxu like 0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "mulemp (mulemp) - Hugging Face",
+      "url": "https://huggingface.co/mulemp",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model about 4 hours ago"
+    },
+    {
+      "title": "Top safe models by NaveDaxu on CivitAI - CivArchive",
+      "url": "https://civarchive.com/users/NaveDaxu",
+      "snippet": "Browse AI models by NaveDaxu - Download deleted LoRA, Checkpoint, and other AI models from CivArchive."
+    },
+    {
+      "title": "Models | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/models",
+      "snippet": "Explore AI models on ZenMux with provider availability, pricing, context windows, latency, throughput, and API compatibility."
+    },
+    {
+      "title": "Food Enhancer - V1 VEGETABLES - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/919737075635324933",
+      "snippet": "Download Food Enhancer - free LORA Illustrious AI model on TENSOR. VEGETABLES, MEAT, FOOD. By Navedaxu"
+    }
+  ]
+}

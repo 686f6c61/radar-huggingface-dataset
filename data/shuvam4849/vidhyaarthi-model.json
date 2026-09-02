@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "shuvam4849/vidhyaarthi-model",
+  "slug": "shuvam4849-vidhyaarthi-model",
+  "author": "shuvam4849",
+  "url": "https://huggingface.co/shuvam4849/vidhyaarthi-model",
+  "created_at": "2026-09-02T09:45:58.000Z",
+  "updated_at": "2026-09-02T10:02:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shuvam4849 · GitHub",
+      "url": "https://github.com/shuvam4849/",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "CivArchive - CivitAI Archive",
+      "url": "https://civarchive.com/about",
+      "snippet": "AI Artists: To find specific models and all their download links, especially if one link is broken. Developers/Researchers: To track specific model files (by hash) across the web and verify their existence."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "schema": 1,
+  "id": "kwondw/bert-base-uncased-trec-covid-tsdae-tiny",
+  "slug": "kwondw-bert-base-uncased-trec-covid-tsdae-tiny",
+  "author": "kwondw",
+  "url": "https://huggingface.co/kwondw/bert-base-uncased-trec-covid-tsdae-tiny",
+  "created_at": "2026-09-02T07:11:51.000Z",
+  "updated_at": "2026-09-02T07:12:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:100",
+    "loss:DenoisingAutoEncoderLoss",
+    "arxiv:1908.10084",
+    "arxiv:2104.06979",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109482240,
+  "parameters_human": "109.5M",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "trec covid",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.06
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "trec covid",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.18
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "trec covid",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.22
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "trec covid",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.34
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "trec covid",
+      "metric": "Cosine Precision@1",
+      "value": 0.06
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "trec covid",
+      "metric": "Cosine Precision@3",
+      "value": 0.06
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "trec covid",
+      "metric": "Cosine Precision@5",
+      "value": 0.044000000000000004
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "trec covid",
+      "metric": "Cosine Precision@10",
+      "value": 0.038000000000000006
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "trec covid",
+      "metric": "Cosine Recall@1",
+      "value": 0.00022466216910661357
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "trec covid",
+      "metric": "Cosine Recall@3",
+      "value": 0.0004738199021453446
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "trec covid",
+      "metric": "Cosine Recall@5",
+      "value": 0.000528633984641088
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "trec covid",
+      "metric": "Cosine Recall@10",
+      "value": 0.0008936395874080399
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "trec covid",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.04255607609650223
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "trec covid",
+      "metric": "Cosine Mrr@10",
+      "value": 0.1303809523809524
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "trec covid",
+      "metric": "Cosine Map@100",
+      "value": 0.002024176098309321
+    }
+  ],
+  "sources": [
+    {
+      "title": "kwondw/bert-base-uncased-tsdae · Hugging Face",
+      "url": "https://huggingface.co/kwondw/bert-base-uncased-tsdae",
+      "snippet": "Instructions to use kwondw/bert-base-uncased-tsdae with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sentence-transformers How to use kwondw/bert-base-uncased-tsdae with sentence-transformers:"
+    },
+    {
+      "title": "google-bert/bert-base-uncased · Hugging Face",
+      "url": "https://huggingface.co/google-bert/bert-base-uncased",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BERT Base Uncased: Specs, Hardware & Live AI Battle | ModelVault",
+      "url": "https://www.modelvault.space/models/bert-base-uncased",
+      "snippet": "BERT Base Uncased is a high-dimensional text embedding and semantic retrieval model developed by Hugging Face. Tailored for Retrieval-Augmented Generation (RAG), vector database indexing, semantic similarity matching, and cross-lingual passage re-ranking."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GitHub - vxiaohan/bert-base-uncased",
+      "url": "https://github.com/vxiaohan/bert-base-uncased",
+      "snippet": "BERT has originally been released in base and large variations, for cased and uncased input text. The uncased models also strips out an accent markers. Chinese and multilingual uncased and cased versions followed shortly after. Modified preprocessing with whole word masking has replaced subpiece masking in a following work, with the release of two models. Other 24 smaller models are released ..."
+    }
+  ]
+}

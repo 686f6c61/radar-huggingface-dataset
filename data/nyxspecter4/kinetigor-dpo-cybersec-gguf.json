@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "nyxspecter4/kinetigor-dpo-cybersec-gguf",
+  "slug": "nyxspecter4-kinetigor-dpo-cybersec-gguf",
+  "author": "nyxspecter4",
+  "url": "https://huggingface.co/nyxspecter4/kinetigor-dpo-cybersec-gguf",
+  "created_at": "2026-09-02T02:08:27.000Z",
+  "updated_at": "2026-09-02T03:42:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "cybersecurity",
+    "security",
+    "ollama",
+    "llama-cpp",
+    "penetration-testing",
+    "vulnerability",
+    "CVE",
+    "SOC",
+    "DFIR",
+    "threat-intelligence",
+    "incident-response",
+    "SIEM",
+    "EDR",
+    "malware-analysis",
+    "digital-forensics",
+    "threat-hunting",
+    "infosec",
+    "offensive-security",
+    "defensive-security",
+    "red-team",
+    "blue-team",
+    "text-generation",
+    "en",
+    "base_model:nyxspecter4/kinetigor-dpo-cybersec",
+    "base_model:quantized:nyxspecter4/kinetigor-dpo-cybersec",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 928869952,
+  "storage_human": "929 MB",
+  "base_model": "nyxspecter4/kinetigor-dpo-cybersec",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nyxspecter4/kinetigor-dpo-cybersec-gguf · Hugging Face",
+      "url": "https://huggingface.co/nyxspecter4/kinetigor-dpo-cybersec-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nyxspecter4/kinetigor-dpo-cybersec · Hugging Face",
+      "url": "https://huggingface.co/nyxspecter4/kinetigor-dpo-cybersec",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NyxSpecter4 (MakoThoth) / Achievements · GitHub",
+      "url": "https://github.com/NyxSpecter4?tab=achievements",
+      "snippet": "NyxSpecter4 has 7 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    },
+    {
+      "title": "Kinetigor — AI-Powered Cybersecurity Training",
+      "url": "https://kinetigor.com/kinetigor.html",
+      "snippet": "Kinetigor builds autonomous AI-powered cybersecurity training platforms. Home of BountyWarz and Athelgard Sentinel enterprise security."
+    }
+  ]
+}

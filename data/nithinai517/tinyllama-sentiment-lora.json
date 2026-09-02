@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nithinai517/tinyllama-sentiment-lora",
+  "slug": "nithinai517-tinyllama-sentiment-lora",
+  "author": "nithinai517",
+  "url": "https://huggingface.co/nithinai517/tinyllama-sentiment-lora",
+  "created_at": "2026-09-02T10:59:16.000Z",
+  "updated_at": "2026-09-02T10:59:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9034304,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TinyPixel/tinyllama-lora · Hugging Face",
+      "url": "https://huggingface.co/TinyPixel/tinyllama-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-Tuning a Lightweight LLM on Your Laptop: A Practical ... - Medium",
+      "url": "https://medium.com/@sudisabet/fine-tuning-a-lightweight-llm-on-your-laptop-a-practical-guide-using-lora-model-on-cpu-143ef5291b89",
+      "snippet": "This makes the model especially well-suited for response style adaptation and conversational tasks, providing a strong foundation for additional fine-tuning through LoRA."
+    },
+    {
+      "title": "README.md · BEncoderRT/tinyllama-multitask-lora at main",
+      "url": "https://huggingface.co/BEncoderRT/tinyllama-multitask-lora/blob/main/README.md",
+      "snippet": "TinyLlama Multi-Task LoRA (Sentiment + Translation) This repository contains a LoRA adapter trained on top of TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T to support multiple tasks via instruction-style prompting."
+    },
+    {
+      "title": "TinyLlama: An Open-Source Small Language Model - arXiv.org",
+      "url": "https://arxiv.org/html/2401.02385v2",
+      "snippet": "Abstract We present TinyLlama, a compact 1.1B language model pretrained on around 1 trillion tokens for up to 3 epochs 1. Building on the architecture and tokenizer of Llama 2 (Touvron et al., 2023b, ), TinyLlama leverages various advances contributed by the open-source community, e.g., FlashAttention (Dao,, 2023) and Lit-GPT (Lightning-AI,, 2023), achieving better computational efficiency ..."
+    },
+    {
+      "title": "[2401.02385] TinyLlama: An Open-Source Small Language Model",
+      "url": "https://arxiv.org/abs/2401.02385",
+      "snippet": "We present TinyLlama, a compact 1.1B language model pretrained on around 1 trillion tokens for approximately 3 epochs. Building on the architecture and tokenizer of Llama 2, TinyLlama leverages various advances contributed by the open-source community (e.g., FlashAttention and Lit-GPT), achieving better computational efficiency. Despite its relatively small size, TinyLlama demonstrates ..."
+    }
+  ]
+}

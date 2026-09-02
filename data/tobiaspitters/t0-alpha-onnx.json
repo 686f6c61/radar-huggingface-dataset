@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "TobiasPitters/t0-alpha-onnx",
+  "slug": "tobiaspitters-t0-alpha-onnx",
+  "author": "TobiasPitters",
+  "url": "https://huggingface.co/TobiasPitters/t0-alpha-onnx",
+  "created_at": "2026-09-02T07:52:42.000Z",
+  "updated_at": "2026-09-02T07:53:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "time-series",
+    "forecasting",
+    "onnxruntime",
+    "fp32",
+    "zero-shot",
+    "base_model:theforecastingcompany/t0-alpha",
+    "base_model:quantized:theforecastingcompany/t0-alpha",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 411867493,
+  "storage_human": "412 MB",
+  "base_model": "theforecastingcompany/t0-alpha",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "GitHub - siddharth7113/tsfm-onnx",
+      "url": "https://github.com/siddharth7113/tsfm-onnx",
+      "snippet": "This project takes The Forecasting Company &#x27;s t0-alpha time-series foundation model, exports it from PyTorch to ONNX, and runs it entirely in the browser with onnxruntime-web."
+    },
+    {
+      "title": "ONNX | Home",
+      "url": "https://onnx.ai/",
+      "snippet": "ONNX is an open format built to represent machine learning models. ONNX defines a common set of operators - the building blocks of machine learning and deep learning models - and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "TobiasPitters (Tobias Pitters) - Hugging Face",
+      "url": "https://huggingface.co/TobiasPitters/datasets",
+      "snippet": "Explainable AI, AI inference & OSS AI infrastructure Maintainer of SHAP"
+    }
+  ]
+}

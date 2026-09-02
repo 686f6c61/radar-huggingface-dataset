@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "OliviaRossi/UltiMerge-Q4_K_M-GGUF",
+  "slug": "oliviarossi-ultimerge-q4_k_m-gguf",
+  "author": "OliviaRossi",
+  "url": "https://huggingface.co/OliviaRossi/UltiMerge-Q4_K_M-GGUF",
+  "created_at": "2026-09-02T08:35:30.000Z",
+  "updated_at": "2026-09-02T08:37:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "code"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "moe",
+    "code",
+    "agent",
+    "reasoning",
+    "merge",
+    "qwen3.5",
+    "qwen3.6",
+    "model-stock",
+    "dare",
+    "star",
+    "delta-net",
+    "vllm",
+    "llama.cpp",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:OliviaRossi/UltiMerge",
+    "base_model:quantized:OliviaRossi/UltiMerge",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 21166759232,
+  "storage_human": "21.2 GB",
+  "base_model": "OliviaRossi/UltiMerge",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OliviaRossi/Qwopus-KAT-Coder-35B-Merged-GGUF · Hugging Face",
+      "url": "https://huggingface.co/OliviaRossi/Qwopus-KAT-Coder-35B-Merged-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "GGUF quantizations overview · GitHub",
+      "url": "https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9",
+      "snippet": "Now you can use the model in ollama by specifying &#x27;Llama-3.1-8B-Instruct-Fei-v1-Uncensored.Q4_K_M&#x27; as the model. You can also reuse this model in further variations with custom template, system prompt and parameters without much addition disk overhead."
+    },
+    {
+      "title": "LLM Quantization Explained: Run Bigger Models on Less RAM - Enclave AI ...",
+      "url": "https://enclaveai.app/blog/2026/03/15/llm-quantization-explained-gguf-guide/",
+      "snippet": "What is LLM quantization? A plain-English guide to how it works, what GGUF types like Q4_K_M mean, and how to pick the right one for your hardware."
+    }
+  ]
+}

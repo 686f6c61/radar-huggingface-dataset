@@ -5,7 +5,7 @@
   "author": "AI4SGI",
   "url": "https://huggingface.co/AI4SGI/ExoMind-9B-Q8_0-GGUF",
   "created_at": "2026-08-24T19:45:32.000Z",
-  "updated_at": "2026-08-27T11:53:16.000Z",
+  "updated_at": "2026-09-01T09:00:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 260,
+  "downloads_30d": 270,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",

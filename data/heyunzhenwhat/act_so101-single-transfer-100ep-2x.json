@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "heyunzhenwhat/act_so101-single-transfer-100ep-2x",
+  "slug": "heyunzhenwhat-act_so101-single-transfer-100ep-2x",
+  "author": "heyunzhenwhat",
+  "url": "https://huggingface.co/heyunzhenwhat/act_so101-single-transfer-100ep-2x",
+  "created_at": "2026-09-02T10:41:06.000Z",
+  "updated_at": "2026-09-02T10:41:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:heyunzhenwhat/so101-single-transfer-100ep",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714912,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "heyunzhenwhat/so101-single-transfer · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/heyunzhenwhat/so101-single-transfer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jian001/act_so101_test_model · Hugging Face",
+      "url": "https://huggingface.co/jian001/act_so101_test_model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - machenxiang/lerobot_for_so101",
+      "url": "https://github.com/machenxiang/lerobot_for_so101",
+      "snippet": "LeRobot: State-of-the-art AI for real-world robotics 🤗 LeRobot aims to provide models, datasets, and tools for real-world robotics in PyTorch. The goal is to lower the barrier to entry to robotics so that everyone can contribute and benefit from sharing datasets and pretrained models."
+    },
+    {
+      "title": "GitHub - AriRyo/lerobot-so101: LeRobot: Making AI for Robotics more ...",
+      "url": "https://github.com/AriRyo/lerobot-so101",
+      "snippet": "Similarly to the hardware, you can easily implement your own policy & leverage LeRobot&#x27;s data collection, training, and visualization tools, and share your model to the HF Hub For detailed policy setup guides, see the Policy Documentation."
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    }
+  ]
+}

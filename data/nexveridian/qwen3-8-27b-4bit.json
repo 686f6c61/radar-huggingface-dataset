@@ -5,7 +5,7 @@
   "author": "NexVeridian",
   "url": "https://huggingface.co/NexVeridian/Qwen3.8-27B-4bit",
   "created_at": "2026-08-18T16:16:41.000Z",
-  "updated_at": "2026-08-18T16:17:12.000Z",
+  "updated_at": "2026-09-01T17:14:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

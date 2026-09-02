@@ -5,7 +5,7 @@
   "author": "gittensor-model-hub",
   "url": "https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090-LMHead4",
   "created_at": "2026-08-19T10:10:18.000Z",
-  "updated_at": "2026-08-19T10:10:29.000Z",
+  "updated_at": "2026-09-01T09:58:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -33,7 +33,7 @@
     "8-bit",
     "region:us"
   ],
-  "likes": 6,
+  "likes": 7,
   "downloads_30d": 7091,
   "trending_score": 0,
   "parameters": 14982247152,

@@ -5,7 +5,7 @@
   "author": "kingjones777",
   "url": "https://huggingface.co/kingjones777/Qwen3.8-27B-Uncensored-ROCmFP4-STRIX-MTP-GGUF",
   "created_at": "2026-08-22T23:28:19.000Z",
-  "updated_at": "2026-08-22T23:34:09.000Z",
+  "updated_at": "2026-09-01T20:56:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 12214,
+  "downloads_30d": 12716,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",

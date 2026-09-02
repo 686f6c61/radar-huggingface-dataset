@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "linkanjarad/B1_Wav2Vec2",
+  "slug": "linkanjarad-b1_wav2vec2",
+  "author": "linkanjarad",
+  "url": "https://huggingface.co/linkanjarad/B1_Wav2Vec2",
+  "created_at": "2026-09-02T08:25:00.000Z",
+  "updated_at": "2026-09-02T08:26:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 665686225,
+  "storage_human": "666 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wav2Vec2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/wav2vec2",
+      "snippet": "Wav2Vec2 is a speech model that accepts a float array corresponding to the raw waveform of the speech signal. Wav2Vec2 model was trained using connectionist temporal classification (CTC) so the model output has to be decoded using Wav2Vec2CTCTokenizer."
+    },
+    {
+      "title": "Wav2Vec2 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.44.2/en/model_doc/wav2vec2",
+      "snippet": "The Wav2Vec2 model was proposed in wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations by Alexei Baevski, Henry Zhou, Abdelrahman Mohamed, Michael Auli. The abstract from the paper is the following: We show for the first time that learning powerful representations from speech audio alone followed by fine-tuning on transcribed speech can outperform the best semi ..."
+    },
+    {
+      "title": "Wav2Vec2 Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/wav2vec2-self-a-supervised-learning-technique-for-speech-representations/",
+      "snippet": "Wav2Vec2 is a self-supervised learning model designed for speech recognition. It learns meaningful representations directly from raw audio using large amounts of unlabeled data, and can later be fine-tuned for tasks such as transcription with minimal labeled data."
+    },
+    {
+      "title": "GitHub - SookX/wav2vec2-torch: Wav2Vec 2.0 is a groundbreaking self ...",
+      "url": "https://github.com/SookX/wav2vec2-torch",
+      "snippet": "Wav2Vec 2.0 is a groundbreaking self-supervised model from Facebook AI that learns powerful speech representations directly from raw audio — without relying on spectrograms! - SookX/wav2vec2-torch"
+    },
+    {
+      "title": "Echoes: A semantically-aligned music deepfake detection dataset",
+      "url": "https://arxiv.org/html/2603.23667v2",
+      "snippet": "This alignment is achieved by conditioning generated audio samples directly on bona-fide waveforms or song descriptors. We evaluate Echoes in a cross-dataset setting against three existing AI-generated music datasets using state-of-the-art Wav2Vec2 XLS-R 2B representations."
+    }
+  ]
+}

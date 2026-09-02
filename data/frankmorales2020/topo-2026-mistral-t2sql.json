@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "frankmorales2020/topo-2026-mistral-t2sql",
+  "slug": "frankmorales2020-topo-2026-mistral-t2sql",
+  "author": "frankmorales2020",
+  "url": "https://huggingface.co/frankmorales2020/topo-2026-mistral-t2sql",
+  "created_at": "2026-09-02T07:17:17.000Z",
+  "updated_at": "2026-09-02T08:33:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "topo-2026",
+    "continual-learning",
+    "catastrophic-forgetting",
+    "text-to-sql",
+    "mistral",
+    "sql-generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5368770952,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "frankmorales2020/topo-2026-evo2-certified · Hugging Face",
+      "url": "https://huggingface.co/frankmorales2020/topo-2026-evo2-certified",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PDF TOPO-2026: Complete Code Tutorial - Zenodo",
+      "url": "https://zenodo.org/records/21419690/files/TOPO-2026-Complete-Code-Tutorial.pdf?download=1",
+      "snippet": "7.1 Why This Works The Base Model is a Universal Feature Extractor 20B parameters learned from massive text corpus Produces rich, general-purpose representations No need to retrain for new tasks The Heads are Task-Specific Adapters Each task gets its own tiny head Heads are isolated from each other (no interference) Can be added/removed independently The Governor Preserves Critical Knowledge ..."
+    },
+    {
+      "title": "frankmorales2020/topo-2026-evo2-certified at main - Hugging Face",
+      "url": "https://huggingface.co/frankmorales2020/topo-2026-evo2-certified/tree/main",
+      "snippet": "topological-ai TOPO-BIAS TOPO-2026 TOPO-COMPLETE License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main topo-2026-evo2-certified 412 MB Ctrl+K Ctrl+K 1 contributor History:11 commits frankmorales2020 Update README.md aa4f491 verifiedabout 3 hours ago .gitattributes Safe 1.52 kBinitial commitabout 4 hours ago ..."
+    },
+    {
+      "title": "PDF TOPO-2026: A Universal Framework for Continual Learning, Bias ... - Zenodo",
+      "url": "https://zenodo.org/records/21370447/files/TOPO-2026-VM-LLM.pdf?download=1",
+      "snippet": "We present TOPO-2026, a universal certification framework that simultane-ously solves catastrophic forgetting, AI bias, and provides world model certifica-tion through prime-anchored embedding invariants derived from Arithmetic Spec-tral Theory (AST). The framework leverages six embedding rows at prime in-dices {2, 3, 5, 7, 11, 13}, frozen after initial task training, to provide mathematically ..."
+    },
+    {
+      "title": "The Code That Changed Everything: How Six Prime Numbers ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/code-changed-everything-how-six-prime-numbers-solved-frank-pvewc",
+      "snippet": "The code was tested on Evo2, the 40B-parameter genomic model published in Nature in March 2026 and validated in Science in August 2026 for its generative capability."
+    }
+  ]
+}

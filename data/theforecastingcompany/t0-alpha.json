@@ -5,7 +5,7 @@
   "author": "theforecastingcompany",
   "url": "https://huggingface.co/theforecastingcompany/t0-alpha",
   "created_at": "2026-06-09T20:45:44.000Z",
-  "updated_at": "2026-08-31T17:27:17.000Z",
+  "updated_at": "2026-09-01T11:42:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "time-series-forecasting",

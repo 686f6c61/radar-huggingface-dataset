@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/SmaAtUNet",
+  "slug": "onescience-group-smaatunet",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/SmaAtUNet",
+  "created_at": "2026-09-02T08:45:00.000Z",
+  "updated_at": "2026-09-02T08:50:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "smaatunet",
+    "OneScience",
+    "Earth Science",
+    "Precipitation Nowcasting",
+    "Attention U-Net",
+    "en",
+    "arxiv:2007.04417",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - HansBambel/SmaAt-UNet: PyTorch-Code for the Paper \"SmaAt-UNet ...",
+      "url": "https://github.com/HansBambel/SmaAt-UNet",
+      "snippet": "For the paper we used the Lightning -module (PL) which simplifies the training process and allows easy additions of loggers and checkpoint creations. In order to use PL we created the model UNetDSAttention whose parent inherits from the pl.LightningModule. This model is the same as the pure PyTorch SmaAt-UNet implementation with the added PL functions."
+    },
+    {
+      "title": "[2603.04461] MAD-SmaAt-GNet: A Multimodal Advection-Guided Neural ...",
+      "url": "https://arxiv.org/abs/2603.04461",
+      "snippet": "Precipitation nowcasting (short-term forecasting) is still often performed using numerical solvers for physical equations, which are computationally expensive and make limited use of the large volumes of available weather data. Deep learning models have shown strong potential for precipitation nowcasting, offering both accuracy and computational efficiency. Among these models, convolutional ..."
+    },
+    {
+      "title": "OneScience-Group (OneScience) - Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/models",
+      "snippet": "OneScience is a one-click, end-to-end, natural language-based scientific model construction platform designed for researchers in the AI4S field. Researchers can efficiently complete the entire wor..."
+    },
+    {
+      "title": "Siamak Mehrkanoon - SmaAt-Unet - Google Sites",
+      "url": "https://sites.google.com/view/siamak-mehrkanoon/blog/smaat-unet",
+      "snippet": "By combining attention mechanisms and depthwise-separable convolutions, the model achieves strong predictive accuracy with significantly fewer parameters than standard architectures. Such efficient deep learning models could play a key role in enabling real-time, data-driven weather forecasting systems in the future."
+    },
+    {
+      "title": "Time Tweak Elevates Rain Prediction: TA-SmaAt-UNet Unveiled",
+      "url": "https://www.machinebrief.com/news/time-tweak-elevates-rain-prediction-ta-smaat-unet-unveiled-6duz",
+      "snippet": "TA-SmaAt-UNet adds time awareness to weather models, enhancing accuracy in predicting high-intensity rainfall."
+    }
+  ]
+}

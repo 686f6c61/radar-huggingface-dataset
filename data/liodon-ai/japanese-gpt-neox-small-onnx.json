@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/japanese-gpt-neox-small-ONNX",
+  "slug": "liodon-ai-japanese-gpt-neox-small-onnx",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/japanese-gpt-neox-small-ONNX",
+  "created_at": "2026-09-02T09:03:50.000Z",
+  "updated_at": "2026-09-02T09:07:08.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gpt_neox",
+    "onnxruntime",
+    "quantized",
+    "text-generation",
+    "base_model:rinna/japanese-gpt-neox-small",
+    "base_model:quantized:rinna/japanese-gpt-neox-small",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 767698369,
+  "storage_human": "768 MB",
+  "base_model": "rinna/japanese-gpt-neox-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "transformers/docs/source/en/model_doc/gpt_neox_japanese.md at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/gpt_neox_japanese.md",
+      "snippet": "GPT-NeoX-Japanese, a Japanese language model based on GPT-NeoX. Japanese uses three types of characters (hiragana, katakana, kanji) and has a huge vocabulary. This model uses BPEEncoder V2, a sub-word tokenizer to handle the different characters. The model also removes some bias parameters for better performance. You can find all the original GPT-NeoX-Japanese checkpoints under the ABEJA ..."
+    },
+    {
+      "title": "GPT-NeoX-Japanese - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.56.0/en/model_doc/gpt_neox_japanese",
+      "snippet": "GPT-NeoX-Japanese, a Japanese language model based on GPT-NeoX. Japanese uses three types of characters (hiragana, katakana, kanji) and has a huge vocabulary. This model uses BPEEncoder V2, a sub-word tokenizer to handle the different characters."
+    },
+    {
+      "title": "GPT-NeoX-Japanese · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.15.0/model_doc/gpt_neox_japanese",
+      "snippet": "Click on the GPT-NeoX-Japanese models in the right sidebar for more examples of how to apply GPT-NeoX-Japanese to different language tasks. The example below demonstrates how to generate text with Pipeline or the AutoModel, and from the command line."
+    },
+    {
+      "title": "Home - LioDon AI",
+      "url": "https://liodon.ai/",
+      "snippet": "Small Language Models Architectural efficiency via Transformer variants, sparse attention, quantization, and knowledge distillation — targeting models that run on constrained hardware."
+    },
+    {
+      "title": "Japanese-GPT-NeoX Small: Private LLM for Custom AI",
+      "url": "https://llm.co/llms/japanese-gpt-neox-small",
+      "snippet": "Ready to Build a Private Japanese AI System? LLM.co helps you deploy japanese-gpt-neox-small (or other open models) as part of a full AI operating system—custom agents, workflows, and knowledge layers running entirely in your environment."
+    }
+  ]
+}

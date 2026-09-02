@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "raviviz/NSR",
+  "slug": "raviviz-nsr",
+  "author": "raviviz",
+  "url": "https://huggingface.co/raviviz/NSR",
+  "created_at": "2026-09-02T08:26:52.000Z",
+  "updated_at": "2026-09-02T08:26:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Neural Symbolic Regression Using Deep Learning and Sparse Modeling",
+      "url": "https://arxiv.org/html/2609.01102v1",
+      "snippet": "In contrast to earlier hybrid methods like AI Feynman and neural-guided symbolic regression techniques that mix approximation with symbolic search, we suggest a fully decoupled framework where a neural network functions solely as a smooth, noise-resistant functional approximator, succeeded by an independent sparse symbolic recovery phase."
+    },
+    {
+      "title": "NSR-AI - Minecraft Plugin - Modrinth",
+      "url": "https://modrinth.com/plugin/nsr-ai",
+      "snippet": "🌐︎ What is NSR-AI? NSR-AI (New Server Runtime - Artificial Intelligence) is a high-performance Minecraft AI plugin that acts as intelligent middleware bridging the gap between advanced Large Language Models and the Minecraft server environment."
+    },
+    {
+      "title": "NarraViz - AI Data Visualization Platform",
+      "url": "https://app.narraviz.ai/",
+      "snippet": "Transform your data into beautiful visualizations with AI-powered insights. No code required."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

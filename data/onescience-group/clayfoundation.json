@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/ClayFoundation",
+  "slug": "onescience-group-clayfoundation",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/ClayFoundation",
+  "created_at": "2026-09-02T08:45:00.000Z",
+  "updated_at": "2026-09-02T08:50:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "clayfoundation",
+    "OneScience",
+    "Earth Science",
+    "Multi-Source Earth Observation",
+    "Remote Sensing Foundation Model",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Clay-foundation/model: The Clay Foundation Model - GitHub",
+      "url": "https://github.com/Clay-foundation/model",
+      "snippet": "The Clay Foundation Model - An open source AI model and interface for Earth - Clay-foundation/model"
+    },
+    {
+      "title": "Clay Foundation Model - GitHub Pages",
+      "url": "https://clay-foundation.github.io/model/index.html",
+      "snippet": "Clay Foundation Model # An open source AI model for Earth # Clay is a foundation model of Earth. Foundation models trained on earth observation (EO) data can efficiently distill and synthesize vast amounts of environmental data, allowing them to generalize this knowledge to specific, downstream applications. This makes them versatile and powerful tools for nature and climate applications. Clay ..."
+    },
+    {
+      "title": "An open source AI model and interface for Earth. - GitHub",
+      "url": "https://github.com/Brayden-Zhang/clay-foundation-model",
+      "snippet": "The Clay Foundation Model - An open source AI model and interface for Earth - Brayden-Zhang/clay-foundation-model"
+    },
+    {
+      "title": "OneScience-Group (OneScience) - Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/models",
+      "snippet": "OneScience is a one-click, end-to-end, natural language-based scientific model construction platform designed for researchers in the AI4S field. Researchers can efficiently complete the entire wor..."
+    },
+    {
+      "title": "Clay | AI for Earth",
+      "url": "https://madewithclay.org/",
+      "snippet": "We spent the last two years developing the Clay foundation model of Earth data, pioneering its real-world applications, learning from the ecosystem, and building our conviction on how to accelerate progress. We&#x27;ve assembled a team that brings a rare depth of talent at the nexus of AI, Earth data, high-impact applications, and philanthropy. This includes our new partnership with Renaissance ..."
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "OliviaRossi/UltiMerge",
+  "slug": "oliviarossi-ultimerge",
+  "author": "OliviaRossi",
+  "url": "https://huggingface.co/OliviaRossi/UltiMerge",
+  "created_at": "2026-09-02T06:28:33.000Z",
+  "updated_at": "2026-09-02T09:25:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "code"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "moe",
+    "code",
+    "agent",
+    "reasoning",
+    "merge",
+    "qwen3.5",
+    "qwen3.6",
+    "model-stock",
+    "dare",
+    "star",
+    "delta-net",
+    "vllm",
+    "llama.cpp",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Jackrong/Qwopus3.6-35B-A3B-Coder",
+    "base_model:merge:Jackrong/Qwopus3.6-35B-A3B-Coder",
+    "base_model:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "base_model:merge:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "base_model:Qwen/Qwen-AgentWorld-35B-A3B",
+    "base_model:merge:Qwen/Qwen-AgentWorld-35B-A3B",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:merge:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 69338240002,
+  "storage_human": "69.3 GB",
+  "base_model": "Qwen/Qwen-AgentWorld-35B-A3B, Kwaipilot/KAT-Coder-V2.5-Dev, Jackrong/Qwopus3.6-35B-A3B-Coder, ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OliviaRossi/4BeastsOfApocalypse · Hugging Face",
+      "url": "https://huggingface.co/OliviaRossi/4BeastsOfApocalypse",
+      "snippet": "OliviaRossi / 4BeastsOfApocalypse like 1 Text Generation Safetensors English Chinese qwen3_5_moe code agent agentic-coding Mixture of Experts reasoning tool-calling software-engineering terminal sweet-agent conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new 4BeastsOfApocalypse (35B-A3B Agentic ..."
+    },
+    {
+      "title": "OliviaRossi (Olivia Rossi) - Hugging Face",
+      "url": "https://huggingface.co/OliviaRossi",
+      "snippet": "User profile of Olivia Rossi on Hugging Face"
+    },
+    {
+      "title": "Want to live forever? Meta patented an AI model that would ... - Fortune",
+      "url": "https://fortune.com/2026/03/03/meta-patent-ai-model-death-profile-commenting-psychology-grief/",
+      "snippet": "Meta&#x27;s new AI patent means your dead uncle could still comment fire emojis on your posts, but experts say this could undermine grief and closure."
+    },
+    {
+      "title": "Olivia (@oliviarossi_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/oliviarossi_/",
+      "snippet": "2,570 Followers, 1,526 Following, 35 Posts - Olivia (@oliviarossi_) on Instagram: \"\""
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    }
+  ]
+}

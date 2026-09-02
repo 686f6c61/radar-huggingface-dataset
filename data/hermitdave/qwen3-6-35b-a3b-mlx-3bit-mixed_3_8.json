@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "hermitdave/Qwen3.6-35B-A3B-MLX-3bit-mixed_3_8",
+  "slug": "hermitdave-qwen3-6-35b-a3b-mlx-3bit-mixed_3_8",
+  "author": "hermitdave",
+  "url": "https://huggingface.co/hermitdave/Qwen3.6-35B-A3B-MLX-3bit-mixed_3_8",
+  "created_at": "2026-09-02T07:37:52.000Z",
+  "updated_at": "2026-09-02T07:41:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "mixed_3_8",
+    "moe",
+    "apple-silicon",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5702745456,
+  "parameters_human": "5.70B",
+  "storage_bytes": 19769567452,
+  "storage_human": "19.8 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hermitdave/qwen36-35b-a3b-p2-iq-mix · Hugging Face",
+      "url": "https://huggingface.co/hermitdave/qwen36-35b-a3b-p2-iq-mix",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.6-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen36-35b-a3b-mlx-finetunes-20260815.md - GitHub",
+      "url": "https://github.com/manjufkanavi/skills/blob/main/deep-research/reports/qwen36-35b-a3b-mlx-finetunes-20260815.md",
+      "snippet": "The Qwen3.6-35B-A3B ecosystem has exploded with fine-tunes. Beyond the base model quants, there are four major fine-tune families built on this architecture, each with MLX conversions:"
+    },
+    {
+      "title": "Best Way to Run Qwen 3.6 35B MoE Locally: VRAM, Speed, Setup",
+      "url": "https://insiderllm.com/guides/best-way-run-qwen-3-6-35b-moe-locally/",
+      "snippet": "Qwen 3.6-35B-A3B has 35B total params but only 3B active per token. Real tok/s on RTX 3090, 4090, 5070 Ti, dual 5060 Ti, and M3 Ultra. Quants and setup."
+    },
+    {
+      "title": "qwen3.6:35b-a3b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.6:35b-a3b",
+      "snippet": "Qwen3.6 delivers substantial upgrades in agentic coding and thinking preservation than previous Qwen models."
+    }
+  ]
+}

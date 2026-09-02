@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "MP4good/q-Taxi-v3",
+  "slug": "mp4good-q-taxi-v3",
+  "author": "MP4good",
+  "url": "https://huggingface.co/MP4good/q-Taxi-v3",
+  "created_at": "2026-09-02T08:42:06.000Z",
+  "updated_at": "2026-09-02T08:42:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 139395,
+  "storage_human": "139395 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aathi07/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/Aathi07/q-Taxi-v3",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "a1914114315/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/a1914114315/q-Taxi-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mastering Q-Learning with the Fast-Taxi-v3 Model - fxis.ai",
+      "url": "https://fxis.ai/edu/mastering-q-learning-with-the-fast-taxi-v3-model/",
+      "snippet": "For more insights, updates, or to collaborate on AI development projects, stay connected with fxis.ai. Wrapping Up In this post, we&#x27;ve explored how to implement and use a Q-learning agent in the Taxi-v3 environment. It&#x27;s a powerful method that showcases the capabilities of reinforcement learning in navigating complex tasks."
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "Mastering Q-Learning: A Guide to Implementing a Taxi-v3 Agent - fxis.ai",
+      "url": "https://fxis.ai/edu/mastering-q-learning-a-guide-to-implementing-a-taxi-v3-agent/",
+      "snippet": "Check your model file path to ensure it&#x27;s correct. For more insights, updates, or to collaborate on AI development projects, stay connected with fxis.ai. Conclusion Congratulations! You&#x27;ve successfully loaded and are ready to experiment with a Q-Learning agent in the Taxi-v3 environment."
+    }
+  ]
+}

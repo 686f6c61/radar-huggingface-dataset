@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "holasoymalva/honey-code-7b",
+  "slug": "holasoymalva-honey-code-7b",
+  "author": "holasoymalva",
+  "url": "https://huggingface.co/holasoymalva/honey-code-7b",
+  "created_at": "2026-09-02T01:59:18.000Z",
+  "updated_at": "2026-09-02T02:21:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "code",
+    "agent",
+    "reasoning",
+    "thinking",
+    "distillation",
+    "coding-agent",
+    "ollama",
+    "gguf",
+    "text-generation",
+    "en",
+    "es",
+    "zh",
+    "multilingual",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CodeLlama 7B by Meta: Ollama Setup, 5GB VRAM (2026)",
+      "url": "https://localaimaster.com/models/codellama-7b",
+      "snippet": "CodeLlama-7B: Technical Analysis Updated: March 13, 2026 Meta&#x27;s 7B code generation model: 33.5% HumanEval, ~5GB VRAM, 16K context. Lightweight local coding assistant via Ollama."
+    },
+    {
+      "title": "holasoymalva (Leon Martin) · GitHub",
+      "url": "https://github.com/holasoymalva",
+      "snippet": "A graph representing holasoymalva&#x27;s contributions from August 24, 2025 to August 27, 2026. The contributions are 74% commits, 26% pull requests, 0% code review, 0% issues."
+    },
+    {
+      "title": "Hcompany/Holo1-7B · Hugging Face",
+      "url": "https://huggingface.co/Hcompany/Holo1-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CodeLlama 7B Instruct - 16k context, open weights",
+      "url": "https://www.llmreference.com/model/codellama-7b-instruct",
+      "snippet": "AI engineers can leverage this model to integrate advanced code generation capabilities into their applications, enhancing productivity in software development. For more details, visit the model&#x27;s page on Hugging Face . CodeLlama 7B Instruct is an open-weight model in the Code Llama family. The structured metadata tracks a 16k-token context window."
+    },
+    {
+      "title": "7b · Ollama",
+      "url": "https://ollama.com/search?q=7b",
+      "snippet": "stable-code Stable Code 3B is a coding model with instruct and code completion variants on par with models such as Code Llama 7B that are 2.5x larger."
+    }
+  ]
+}

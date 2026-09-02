@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Tahadar123/AI-Chatbot",
+  "slug": "tahadar123-ai-chatbot",
+  "author": "Tahadar123",
+  "url": "https://huggingface.co/Tahadar123/AI-Chatbot",
+  "created_at": "2026-09-02T10:43:27.000Z",
+  "updated_at": "2026-09-02T11:02:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "t5",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 247577856,
+  "parameters_human": "247.6M",
+  "storage_bytes": 990345064,
+  "storage_human": "990 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "All Chatbots AI - Access All AI Chatbots in One Place",
+      "url": "https://allchatbots.ai/",
+      "snippet": "Access GPT-4o, Claude, Gemini, Grok, DeepSeek and more AI models in one platform."
+    },
+    {
+      "title": "Chatbot 3D Models for Free Download and Print | Tripo AI",
+      "url": "https://studio.tripo3d.ai/3d-model-gallery/chatbot",
+      "snippet": "Free & premium 32 chatbot 3D models, ready for 3D printing, game development, 3D design, eCommerce, AR/VR and more. View & Download in STL, FBX, GLB, OBJ, USDZ formats."
+    },
+    {
+      "title": "Browse all AI Models - Overchat AI",
+      "url": "https://overchat.ai/models",
+      "snippet": "Find the right AI chatbot to solve your task, from asking AI questions and deep conversations to coding and complex reasoning. Browse and choose."
+    },
+    {
+      "title": "GitHub - Tahha2003/AI-ChatBot",
+      "url": "https://github.com/Tahha2003/AI-ChatBot",
+      "snippet": "A complete AI chatbot application built with Hugging Face Transformers and Gradio, featuring multiple model support, streaming responses, conversation memory, and a beautiful web interface."
+    },
+    {
+      "title": "HuggingChat - Chat with AI models",
+      "url": "https://huggingface.co/chat/",
+      "snippet": "Welcome to HuggingChat, the chat app powered by open source AI models. Omni automatically picks the best AI model to give you optimal answers depending on your requests."
+    }
+  ]
+}

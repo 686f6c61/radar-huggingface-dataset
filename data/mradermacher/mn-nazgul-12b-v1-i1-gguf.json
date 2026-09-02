@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MN-Nazgul-12B-v1-i1-GGUF",
+  "slug": "mradermacher-mn-nazgul-12b-v1-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MN-Nazgul-12B-v1-i1-GGUF",
+  "created_at": "2026-09-02T10:36:42.000Z",
+  "updated_at": "2026-09-02T11:46:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "della",
+    "mistral-nemo",
+    "mistral",
+    "nemo",
+    "writing",
+    "creative",
+    "text",
+    "adventure",
+    "conversational",
+    "creative writing",
+    "fiction writing",
+    "plot generation",
+    "sub-plot generation",
+    "story generation",
+    "scene continue",
+    "storytelling",
+    "fiction story",
+    "science fiction",
+    "romance",
+    "all genres",
+    "story",
+    "vivid prosing",
+    "vivid writing",
+    "fiction",
+    "RP",
+    "roleplaying",
+    "swearing",
+    "horror",
+    "violence",
+    "paranormal",
+    "occult",
+    "en",
+    "dataset:DarkArtsForge/Poe_v1",
+    "dataset:OccultAI/Morpheus-12B-v1",
+    "dataset:OccultAI/illuminati_imatrix_v1",
+    "dataset:PocketDoc/Dans-Taskmaxx",
+    "dataset:PocketDoc/Dans-Prosemaxx-Gutenberg",
+    "dataset:PocketDoc/Dans-Toolmaxx-ShellCommands",
+    "dataset:shrugging-shoulders/ifeval_multilang",
+    "dataset:WokeAI/polititune-tankie-warmup-3",
+    "base_model:OccultAI/MN-Nazgul-12B-v1",
+    "base_model:quantized:OccultAI/MN-Nazgul-12B-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 141939096384,
+  "storage_human": "141.9 GB",
+  "base_model": "OccultAI/MN-Nazgul-12B-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/MN-Nazgul-12B-v1-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/MN-Nazgul-12B-v1-i1-GGUF",
+      "snippet": "mradermacher / MN-Nazgul-12B-v1-i1-GGUF like 0 Transformers GGUF NeMo 8 datasets English mergekit Merge della mistral-nemo mistral writing creative text adventure conversational creative writing fiction writing plot generation sub-plot generation story generation scene continue storytelling fiction story science fiction romance all genres story ..."
+    },
+    {
+      "title": "mradermacher/MN-Adversary-12B-v1-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/MN-Adversary-12B-v1-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/drive/1l_wRGeD-LnRl3VtZHDc7epW_XW0nJvew?usp=sharing",
+      "snippet": "Google Colab ... Google Colab"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "mradermacher quant download page",
+      "url": "https://hf.tst.eu/model",
+      "snippet": "mradermacher quant download page BETA - this page is not finished: more explanations and changes are to come, but it should be functional."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yatokim/Qwen3-1.7B-base-MED",
+  "slug": "yatokim-qwen3-1-7b-base-med",
+  "author": "yatokim",
+  "url": "https://huggingface.co/yatokim/Qwen3-1.7B-base-MED",
+  "created_at": "2026-09-02T07:09:14.000Z",
+  "updated_at": "2026-09-02T07:09:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Qwen/Qwen3-1.7B-Base at main - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B-Base/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Enhanced capabilities in 256K-token long-context understanding, extendable up to 1 million tokens. Qwen3-Thinking-2507 is the continuation of Qwen3 thinking model, with improved quality and depth of reasoning, featuring the following key enhancements:"
+    },
+    {
+      "title": "Qwen3 1.7B Base by Qwen (Alibaba) — ThinkLLM",
+      "url": "https://thinkllm.dev/models/qwen3-1-7b-base",
+      "snippet": "A compact base model that trades raw capability for efficiency — it handles straightforward language tasks with reasonable coherence but shows its size limits on complex reasoning or multi-step problems. As a base model, it has no instruction-following tuning, so it continues text rather than answering questions directly. Works best as a starting point for fine-tuning rather than out-of-the ..."
+    },
+    {
+      "title": "Qwen3-1.7B-Base: Permissive Open-Source LLM for Private Deployment and ...",
+      "url": "https://dev.co/ai/llms/qwen3-1-7b-base",
+      "snippet": "Qwen3-1.7B-Base Qwen3-1.7B-Base is a 1.7 billion parameter causal language model from Alibaba&#x27;s Qwen team, released in July 2025. It is a base (pretrained) model trained on 36 trillion tokens across 119 languages, featuring a 32k token context window and designed for inference efficiency on resource-constrained setups."
+    }
+  ]
+}

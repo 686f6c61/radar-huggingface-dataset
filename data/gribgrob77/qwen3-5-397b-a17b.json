@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "GribGrob77/Qwen3.5-397B-A17B",
+  "slug": "gribgrob77-qwen3-5-397b-a17b",
+  "author": "GribGrob77",
+  "url": "https://huggingface.co/GribGrob77/Qwen3.5-397B-A17B",
+  "created_at": "2026-09-02T01:33:21.000Z",
+  "updated_at": "2026-09-02T01:33:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 403397928944,
+  "parameters_human": "403.40B",
+  "storage_bytes": 806809049334,
+  "storage_human": "806.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.5-397B-A17B: Complete Guide to Architecture, Capabilities, and ...",
+      "url": "https://www.qubrid.com/blog/qwen-3-5-397b-a17b-complete-guide-to-architecture-capabilities-and-real-world-applications",
+      "snippet": "What Is Qwen3.5-397B-A17B? Qwen3.5-397B-A17B is a large-scale open-weight Mixture-of-Experts foundation model designed for reasoning, coding, and complex AI workflows. The model also supports multimodal reasoning, allowing it to process both text and visual inputs in advanced AI systems."
+    },
+    {
+      "title": "Qwen3.5-397B-A17B - vLLM Ascend",
+      "url": "https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.5-397B-A17B.html",
+      "snippet": "Qwen3.5-397B-A17B is a large-scale Qwen3.5 MoE model that combines multimodal capability, long-context inference, MTP speculative decoding, and W8A8 quantized deployment for production serving on Ascend hardware."
+    },
+    {
+      "title": "Qwen3.5-397B-A17B — 397B MoE LLM | FitMyLLM",
+      "url": "https://www.fitmyllm.com/model/qwen3.5-397b-a17b",
+      "snippet": "Qwen3.5-397B-A17B: 397B parameters, 256K context, chat, coding, reasoning, vision, multilingual. 14 benchmarks, 17 quantizations. VRAM requirements, speed estimates ..."
+    },
+    {
+      "title": "qwen3.5-397b-a17b Model Info-Alibaba Cloud Model Studio ... - 阿里云",
+      "url": "https://help.aliyun.com/en/model-studio/qwen3-5-397b-a17b",
+      "snippet": "The Qwen3.5 series 397B-A17B native vision-language model is built on a hybrid architecture that integrates a linear attention mechanism with a sparse mixture-of-experts model, achieving higher inference efficiency. It delivers state-of-the-art performance comparable to leading-edge models across a wide range of tasks, including language understanding, logical reasoning, code generation, agent ..."
+    },
+    {
+      "title": "Qwen3.5-397B-A17B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.5-397b-a17b",
+      "snippet": "The Qwen3.5 series 397B-A17B native vision-language model is built on a hybrid architecture that integrates a linear attention mechanism with a sparse mixture-of-experts model, achieving higher inference efficiency. It delivers state-of-the-art performance comparable to leading-edge models across a wide range of tasks, including language understanding, logical reasoning, code generation, agent ..."
+    }
+  ]
+}

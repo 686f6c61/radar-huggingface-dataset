@@ -5,7 +5,7 @@
   "author": "zai-org",
   "url": "https://huggingface.co/zai-org/GLM-5.2",
   "created_at": "2026-06-16T07:39:20.000Z",
-  "updated_at": "2026-07-02T08:08:14.000Z",
+  "updated_at": "2026-09-01T11:36:01.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,7 +26,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 5065,
+  "likes": 5066,
   "downloads_30d": 1452214,
   "trending_score": 16,
   "parameters": 753329940480,

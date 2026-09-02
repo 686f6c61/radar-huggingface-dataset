@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/RPBizkitRemiX-v1-12B-i1-GGUF",
+  "slug": "mradermacher-rpbizkitremix-v1-12b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/RPBizkitRemiX-v1-12B-i1-GGUF",
+  "created_at": "2026-09-02T10:22:30.000Z",
+  "updated_at": "2026-09-02T10:28:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 4798137024,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RicardoEstep/RPBizkitRemiX-v1-12B · Hugging Face",
+      "url": "https://huggingface.co/RicardoEstep/RPBizkitRemiX-v1-12B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/RPBizkit-12B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/RPBizkit-12B-GGUF",
+      "snippet": "mradermacher / RPBizkit-12B-GGUF like 1 Transformers GGUF English mergekit Merge Not-For-All-Audiences conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "prompt/models_300.txt at main · hanmeng12/prompt · GitHub",
+      "url": "https://github.com/hanmeng12/prompt/blob/main/models_300.txt",
+      "snippet": "Contribute to hanmeng12/prompt development by creating an account on GitHub."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

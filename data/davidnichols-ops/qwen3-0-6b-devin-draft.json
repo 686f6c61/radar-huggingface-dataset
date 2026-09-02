@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "davidnichols-ops/qwen3-0.6b-devin-draft",
+  "slug": "davidnichols-ops-qwen3-0-6b-devin-draft",
+  "author": "davidnichols-ops",
+  "url": "https://huggingface.co/davidnichols-ops/qwen3-0.6b-devin-draft",
+  "created_at": "2026-09-02T01:29:59.000Z",
+  "updated_at": "2026-09-02T04:23:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "draft-model",
+    "distillation",
+    "tool-use",
+    "agentic",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2395704332,
+  "storage_human": "2.4 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "davidnichols-ops/qwen3-0.6b-devin-draft · Hugging Face",
+      "url": "https://huggingface.co/davidnichols-ops/qwen3-0.6b-devin-draft",
+      "snippet": "Draft model for speculative decoding, distilled from the fine-tuned Qwen3-4B Devin SFT target model. The 0.6B model proposes tokens; the 4B target model verifies them, giving 2-3x inference speedup."
+    },
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    },
+    {
+      "title": "amd/PARD-Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/amd/PARD-Qwen3-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

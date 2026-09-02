@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "XDQAQ/Qwen3-8B-MaKTO-Public-SFT",
+  "slug": "xdqaq-qwen3-8b-makto-public-sft",
+  "author": "XDQAQ",
+  "url": "https://huggingface.co/XDQAQ/Qwen3-8B-MaKTO-Public-SFT",
+  "created_at": "2026-09-02T08:24:51.000Z",
+  "updated_at": "2026-09-02T08:30:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "sft",
+    "werewolf",
+    "makto",
+    "conversational",
+    "zh",
+    "dataset:ReneeYe/werewolf_game_reasoning",
+    "arxiv:2501.14225",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308224,
+  "parameters_human": "308224",
+  "storage_bytes": 16392939478,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3 8B - Open Source AI Models",
+      "url": "https://opensourceaimodels.net/models/qwen3-8b",
+      "snippet": "The April 2025 refresh of Qwen at 8B. Native mixed-mode reasoning: the model can &#x27;think&#x27; before answering when triggered, or answer directly for simple queries — configurable per request. Apache 2.0. A strong upgrade over Qwen 2.5 7B on math and code, with much better instruction following."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
+    },
+    {
+      "title": "Qwen3-8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_8b",
+      "snippet": "Qwen3-8B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑8B is a state‑of‑the‑art multilingual base language model with 8 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Qwen3 - openlm.ai",
+      "url": "https://openlm.ai/qwen3/",
+      "snippet": "We are excited to announce the release of Qwen3, the latest addition to the Qwen family of large language models. These models represent our most advanced and intelligent systems to date, improving from our experience in building QwQ and Qwen2.5. We are making the weights of Qwen3 available to the public, including both dense and Mixture-of-Expert (MoE) models."
+    },
+    {
+      "title": "Qwen3-8B — Alibaba Model with Hybrid Thinking/Non-Thinking Reasoning ...",
+      "url": "https://robotsatlas.com/ai-models/qwen3-8b",
+      "snippet": "Qwen3-8B is a post-trained (instruct) language model from the Qwen3 family developed by the Qwen Team at Alibaba Group and released on 29 April 2025 under the Apache 2.0 licence."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/DNA-50M",
   "created_at": "2025-10-09T20:41:50.000Z",
-  "updated_at": "2026-08-31T13:15:09.000Z",
+  "updated_at": "2026-09-01T13:15:09.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2367,
+  "downloads_30d": 2401,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

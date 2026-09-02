@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jhjhugv/Qwen3-1.7B-base-MED-ChatVector",
+  "slug": "jhjhugv-qwen3-1-7b-base-med-chatvector",
+  "author": "Jhjhugv",
+  "url": "https://huggingface.co/Jhjhugv/Qwen3-1.7B-base-MED-ChatVector",
+  "created_at": "2026-09-02T07:43:32.000Z",
+  "updated_at": "2026-09-02T07:44:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608258,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JUNGCHAN/Qwen3-1.7B-base-MED · Hugging Face",
+      "url": "https://huggingface.co/JUNGCHAN/Qwen3-1.7B-base-MED",
+      "snippet": "Model Card for Model ID Model Details Model Description This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated. Developed by: [More Information Needed] Funded by [optional]: [More Information Needed] Shared by [optional]: [More Information Needed] Model type: [More Information Needed] Language (s) (NLP): [More ..."
+    },
+    {
+      "title": "dajumon/Qwen3-1.7B-base-MED-ChatVector · Hugging Face",
+      "url": "https://huggingface.co/dajumon/Qwen3-1.7B-base-MED-ChatVector",
+      "snippet": "dajumon / Qwen3-1.7B-base-MED-ChatVector like 0 Text Generation Transformers Safetensors qwen3 conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3 1.7B Base MED ChatVector by Han0716 - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/Han0716%2FQwen3-1.7B-base-MED-ChatVector,7kCkdwvRFpGLgptZpUz1XC",
+      "snippet": "Qwen3 1.7B Base MED ChatVector is an open-source 1.7b LLM by Han0716. VRAM 3.4GB, 40K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3-1.7B-Base: Permissive Open-Source LLM for Private Deployment and ...",
+      "url": "https://dev.co/ai/llms/qwen3-1-7b-base",
+      "snippet": "Qwen3-1.7B-Base Qwen3-1.7B-Base is a 1.7 billion parameter causal language model from Alibaba&#x27;s Qwen team, released in July 2025. It is a base (pretrained) model trained on 36 trillion tokens across 119 languages, featuring a 32k token context window and designed for inference efficiency on resource-constrained setups."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Enhanced capabilities in 256K-token long-context understanding, extendable up to 1 million tokens. Qwen3-Thinking-2507 is the continuation of Qwen3 thinking model, with improved quality and depth of reasoning, featuring the following key enhancements:"
+    }
+  ]
+}

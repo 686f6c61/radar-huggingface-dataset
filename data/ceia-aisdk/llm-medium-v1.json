@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ceia-aisdk/llm-medium-v1",
+  "slug": "ceia-aisdk-llm-medium-v1",
+  "author": "ceia-aisdk",
+  "url": "https://huggingface.co/ceia-aisdk/llm-medium-v1",
+  "created_at": "2026-09-02T02:09:30.000Z",
+  "updated_at": "2026-09-02T02:09:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ceia-aisdk",
+    "qwen",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683074240,
+  "storage_human": "4.7 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ceia-aisdk/llm-medium-v1 · Hugging Face",
+      "url": "https://huggingface.co/ceia-aisdk/llm-medium-v1",
+      "snippet": "ceia-aisdk / llm-medium-v1 like 0 Follow CEIA AI SDK 1 Text Generation GGUF ceia-aisdk qwen imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Henji-AI/packages/ai-sdk/docs/model-adaptation at main - GitHub",
+      "url": "https://github.com/henjicc/Henji-AI/tree/main/packages/ai-sdk/docs/model-adaptation",
+      "snippet": "痕迹AI - 一个软件用上各种AI!聚合多家供应商，一站式生成图片、视频和音频. Contribute to henjicc/Henji-AI development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - YuLab-SMU/aisdk: A production-grade framework for building ...",
+      "url": "https://github.com/YuLab-SMU/aisdk/",
+      "snippet": "aisdk: AI SDK for R aisdk is a provider-neutral runtime for building LLM-powered applications in R. It gives text, structured output, tools, agents, stateful sessions, multimodal input, embeddings, and image generation one consistent interface, while still exposing provider-specific capabilities when they matter."
+    },
+    {
+      "title": "LiquidAI (Liquid AI) - Hugging Face",
+      "url": "https://huggingface.co/LiquidAI",
+      "snippet": "A new generation of foundation models from first principles."
+    },
+    {
+      "title": "LLM Large Language Model Directory - docsbot.ai",
+      "url": "https://docsbot.ai/models",
+      "snippet": "Comprehensive directory of large language models (LLMs) and their capabilities. Compare details, pricing, benchmarks, and more."
+    }
+  ]
+}

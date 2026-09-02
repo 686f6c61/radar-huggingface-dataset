@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "wish418/carbix-v6",
+  "slug": "wish418-carbix-v6",
+  "author": "wish418",
+  "url": "https://huggingface.co/wish418/carbix-v6",
+  "created_at": "2026-09-02T09:04:09.000Z",
+  "updated_at": "2026-09-02T09:12:08.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3-vl",
+    "lora",
+    "korean",
+    "document-extraction",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 5260204274,
+  "storage_human": "5.3 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wish418/carbix-v3 · Hugging Face",
+      "url": "https://huggingface.co/wish418/carbix-v3",
+      "snippet": "Instructions to use wish418/carbix-v3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use wish418/carbix-v3 with PEFT:"
+    },
+    {
+      "title": "wish418/gas-detection-dataset at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/wish418/gas-detection-dataset/tree/main",
+      "snippet": "Datasets: wish418 / gas-detection-dataset like 0 Modalities: Image Text Formats: parquet optimized-parquet Size: < 1K Libraries: Datasets pandas Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community main gas-detection-dataset 7.17 MB 1 contributor History:3 commits wish418 Upload dataset b211469 verifiedabout 6 hours ago dataUpload datasetabout 6 hours ago .gitattributes ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.red/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "Best AI 3D Model Generators for 3D Printing 2026",
+      "url": "https://3dprinting.com/software-guides/ai-3d-model-generators/",
+      "snippet": "The best AI 3D model generators for 3D printing in 2026: text-to-3D and image-to-3D tools compared on quality, price, and whether the result actually prints."
+    }
+  ]
+}

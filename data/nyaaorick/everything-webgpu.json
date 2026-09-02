@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nyaaorick/everything-webgpu",
+  "slug": "nyaaorick-everything-webgpu",
+  "author": "nyaaorick",
+  "url": "https://huggingface.co/nyaaorick/everything-webgpu",
+  "created_at": "2026-09-02T10:04:06.000Z",
+  "updated_at": "2026-09-02T10:16:32.000Z",
+  "license": "isc",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "everything-webgpu",
+  "languages": [],
+  "tags": [
+    "everything-webgpu",
+    "webgpu",
+    "mlc-ai",
+    "web-llm",
+    "browser",
+    "on-device",
+    "local-llm",
+    "ghost-text",
+    "scheduler",
+    "typescript",
+    "javascript",
+    "text-generation",
+    "license:isc",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "everything-webgpu: In-browser local LLM on WebGPU with priority ...",
+      "url": "https://gist.github.com/nyaaorick/1d84c3bfce1dc237b319306127519238",
+      "snippet": "// Run local MLC/WebLLM models on WebGPU in 4 lines, with a priority scheduler."
+    },
+    {
+      "title": "nyaaorick/Qwen3.8-2B-q4f16_1-MLC · Hugging Face",
+      "url": "https://huggingface.co/nyaaorick/Qwen3.8-2B-q4f16_1-MLC",
+      "snippet": "Qwen3.8-2B-Distill — MLC / WebGPU (q4f16_1) An MLC compilation of empero-ai/Qwen3.8-2B-Distill for WebGPU in the browser, quantized to q4f16_1. Text path only: the vision tower and the MTP head are stripped, since neither is used on the WebGPU path. 632 tensors → 320, 1,881,825,088 parameters, 1.06 GB at 4.503 bits/param."
+    },
+    {
+      "title": "nyaaorick&#x27;s gists · GitHub",
+      "url": "https://gist.github.com/nyaaorick",
+      "snippet": "This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters. Learn more about bidirectional Unicode characters // everything-webgpu-quickstart.js"
+    },
+    {
+      "title": "nyaaorick (Junyao) - Hugging Face",
+      "url": "https://huggingface.co/nyaaorick",
+      "snippet": "User profile of Junyao on Hugging Face"
+    },
+    {
+      "title": "Can I run AI locally? Best models for your GPU",
+      "url": "https://www.canirun.ai/",
+      "snippet": "Detect your GPU or Mac and see which open LLMs, coding, image and video models you can run locally. VRAM requirements, speed estimates and grades."
+    }
+  ]
+}

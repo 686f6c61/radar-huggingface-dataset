@@ -5,7 +5,7 @@
   "author": "noahgeiger2000",
   "url": "https://huggingface.co/noahgeiger2000/rs-imagen-models",
   "created_at": "2026-07-28T21:33:56.000Z",
-  "updated_at": "2026-08-19T15:01:46.000Z",
+  "updated_at": "2026-09-01T18:28:53.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",
-  "storage_bytes": 251372061344,
-  "storage_human": "251.4 GB",
+  "storage_bytes": 251486386616,
+  "storage_human": "251.5 GB",
   "base_model": null,
   "formats": [
     "gguf"

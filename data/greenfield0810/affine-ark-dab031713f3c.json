@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "greenfield0810/affine-ark-dab031713f3c",
+  "slug": "greenfield0810-affine-ark-dab031713f3c",
+  "author": "greenfield0810",
+  "url": "https://huggingface.co/greenfield0810/affine-ark-dab031713f3c",
+  "created_at": "2026-09-02T11:18:26.000Z",
+  "updated_at": "2026-09-02T11:18:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "bittensor",
+    "subnet-120",
+    "mirror",
+    "archival",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916586294,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "greenfield0810/affine-ark-da8188fa4889 · Hugging Face",
+      "url": "https://huggingface.co/greenfield0810/affine-ark-da8188fa4889",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "greenfield0810/affine-ark-6029017c6751 · Hugging Face",
+      "url": "https://huggingface.co/greenfield0810/affine-ark-6029017c6751",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Model Spec (2026/08/18)",
+      "url": "https://model-spec.openai.com/",
+      "snippet": "The Model Spec specifies desired behavior for the models underlying OpenAI&#x27;s products (including our APIs)."
+    },
+    {
+      "title": "AFFiNE — Open-Source Knowledge Base Software",
+      "url": "https://affine.pro/",
+      "snippet": "AFFiNE is the open-source Notion & Miro alternative — combining docs, whiteboards, databases, and AI in one local-first workspace. Free for teams."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

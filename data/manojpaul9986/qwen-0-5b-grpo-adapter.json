@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "manojpaul9986/qwen-0.5b-grpo-adapter",
+  "slug": "manojpaul9986-qwen-0-5b-grpo-adapter",
+  "author": "manojpaul9986",
+  "url": "https://huggingface.co/manojpaul9986/qwen-0.5b-grpo-adapter",
+  "created_at": "2026-09-02T10:04:33.000Z",
+  "updated_at": "2026-09-02T10:04:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20097900,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "emre/Qwen-0.5B-GRPO · Hugging Face",
+      "url": "https://huggingface.co/emre/Qwen-0.5B-GRPO",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen_grpo_training.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/DatawizzAI/Blogs/blob/main/Fast%20GRPO%20Fine-Tuning%20for%20Q%26A%20/qwen_grpo_training.ipynb",
+      "snippet": "Qwen-0.5B GRPO Training on Taylor Swift QA Dataset 1. Setting Up the Environment Install necessary dependencies [ ]"
+    },
+    {
+      "title": "mesbahuddin1989/Qwen-0.5B-GRPO · Hugging Face",
+      "url": "https://huggingface.co/mesbahuddin1989/Qwen-0.5B-GRPO",
+      "snippet": "Model Card for Qwen-.5B-GRPO This model is a fine-tuned version of Qwen/Qwen2.5-.5B-Instruct. It has been trained using TRL. Quick start ... Training procedure This model was trained with GRPO, a method introduced in DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models. Framework versions TRL: 0.14.0 Transformers ..."
+    },
+    {
+      "title": "grpo_qwen-0-5b_single_t4.ipynb - Colab",
+      "url": "https://colab.research.google.com/gist/qunash/820c86d1d267ec8051d9f68b4f4bb656/grpo_qwen-0-5b_single_t4.ipynb",
+      "snippet": "Full GRPO fine-tuning Qwen2.5 0.5B on a single T4 This colab uses a lot of tweaks and tricks to make GRPO full fine-tuning Qwen2.5-0.5-Instruct fit on a single T4 GPU, so that it could be run in a free Google Colab. It uses VLLm for fast inference and does not make compromises on batch and completion group sizes."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    }
+  ]
+}

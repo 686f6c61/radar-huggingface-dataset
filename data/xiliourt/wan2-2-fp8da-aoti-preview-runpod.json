@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Xiliourt/wan2-2-fp8da-aoti-preview-runpod",
+  "slug": "xiliourt-wan2-2-fp8da-aoti-preview-runpod",
+  "author": "Xiliourt",
+  "url": "https://huggingface.co/Xiliourt/wan2-2-fp8da-aoti-preview-runpod",
+  "created_at": "2026-09-02T10:37:48.000Z",
+  "updated_at": "2026-09-02T10:39:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wan2.2 14B Preview - a Hugging Face Space by r3gm",
+      "url": "https://huggingface.co/spaces/r3gm/wan2-2-fp8da-aoti-preview",
+      "snippet": "This app lets you upload a picture and describe how you want it to move. In a few seconds it creates a short video matching your prompt, with options for length, frame rate, and quality. You receiv..."
+    },
+    {
+      "title": "r3gm/wan2-2-fp8da-aoti-preview2 at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/r3gm/wan2-2-fp8da-aoti-preview2/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wan2.2 FP8DA AOTI Preview Review, Pricing & Alternatives 2026 | AI Indigo",
+      "url": "https://aiindigo.com/tool/wan22-fp8da-aoti-preview",
+      "snippet": "Wan2.2 FP8DA AOTI Preview represents a cutting-edge advancement in AI-powered video generation technology, combining the powerful Wan2.2 architecture with revolutionary optimization techniques. Released as an open-source preview model on Hugging Face, this tool demonstrates the future of efficient video synthesis in 2026."
+    },
+    {
+      "title": "GitHub - Wan-Video/Wan2.2: Wan: Open and Advanced Large-Scale Video ...",
+      "url": "https://github.com/Wan-Video/Wan2.2",
+      "snippet": "👍 Efficient High-Definition Hybrid TI2V: Wan2.2 open-sources a 5B model built with our advanced Wan2.2-VAE that achieves a compression ratio of 16×16×4. This model supports both text-to-video and image-to-video generation at 720P resolution with 24fps and can also run on consumer-grade graphics cards like 4090."
+    },
+    {
+      "title": "Run Wan2.2 FP8DA AOTI Faster Video Model — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-wan2-2-fp8da-aoti-faster-high-speed-video-generation",
+      "snippet": "Step-by-step guide to deploying Wan2.2 FP8DA AOTI Faster for fast, memory-efficient AI video generation using FP8 Dynamic Activation."
+    }
+  ]
+}

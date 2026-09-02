@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "edward56/lingbot-sn80-CqAkpFWmxR1X",
+  "slug": "edward56-lingbot-sn80-cqakpfwmxr1x",
+  "author": "edward56",
+  "url": "https://huggingface.co/edward56/lingbot-sn80-CqAkpFWmxR1X",
+  "created_at": "2026-09-01T05:03:01.000Z",
+  "updated_at": "2026-09-02T02:12:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lingbotvla",
+    "robotics",
+    "vision-language-action",
+    "lingbot-vla-v2",
+    "libero",
+    "openroboto",
+    "bittensor",
+    "sn80",
+    "dataset:lerobot/libero",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6375907511,
+  "parameters_human": "6.38B",
+  "storage_bytes": 25515312426,
+  "storage_human": "25.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "edward56/lingbot-sn80-CqAkpFWmxR1X · Hugging Face",
+      "url": "https://huggingface.co/edward56/lingbot-sn80-CqAkpFWmxR1X",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "edward56 (edward baylor) - Hugging Face",
+      "url": "https://huggingface.co/edward56",
+      "snippet": "Recent Activity published a modelabout 4 hours ago edward56/pi05-sn80-CqAkpFWmxR1X View all activity"
+    },
+    {
+      "title": "GitHub - Robbyant/lingbot-map: A feed-forward 3D foundation model for ...",
+      "url": "https://github.com/robbyant/lingbot-map",
+      "snippet": "A feed-forward 3D foundation model for reconstructing scenes from streaming data - Robbyant/lingbot-map"
+    },
+    {
+      "title": "LingBot-World: Advancing Open-source World Models - GitHub",
+      "url": "https://github.com/robbyant/lingbot-world",
+      "snippet": "We are excited to introduce LingBot-World, an open-sourced world simulator stemming from video generation. Positioned as a top-tier world model, LingBot-World offers the following features."
+    },
+    {
+      "title": "Ant Group&#x27;s LingBot-World 2.0 Goes Open-Source: World Model Achieves ...",
+      "url": "https://zglg.work/en/ai/news/2026-07-09-ant-group-s-lingbot-world-2-0-goes-open-source-world-model-achieves-hour-long",
+      "snippet": "Ant Group&#x27;s Lingbo Technology open-sourced LingBot-World 2.0, a next-generation real-time interactive world model that pushes stable generation to hour-long sessions with 720p/60fps output. The model introduces a dual-Agent mechanism and supports multiple users simultaneously exploring the same persistent virtual world."
+    }
+  ]
+}

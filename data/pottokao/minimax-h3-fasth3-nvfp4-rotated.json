@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "pottokao/MiniMax-H3-FastH3-NVFP4-rotated",
+  "slug": "pottokao-minimax-h3-fasth3-nvfp4-rotated",
+  "author": "pottokao",
+  "url": "https://huggingface.co/pottokao/MiniMax-H3-FastH3-NVFP4-rotated",
+  "created_at": "2026-09-02T06:49:01.000Z",
+  "updated_at": "2026-09-02T09:13:07.000Z",
+  "license": "minimax-h3-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "nvfp4",
+    "fp4",
+    "quantization",
+    "text-to-video",
+    "video",
+    "audio",
+    "fasth3",
+    "minimax-h3",
+    "blackwell",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114381224892,
+  "storage_human": "114.4 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - wildminder/awesome-minimax-H3: Awesome MiniMax-H3",
+      "url": "https://github.com/wildminder/awesome-minimax-H3/blob/main/",
+      "snippet": "Awesome MiniMax-H3 A curated list of models, text encoders, quants, and tools for the MiniMax-H3 omni-modal video generation model."
+    },
+    {
+      "title": "GitHub - iSk2y/awesome-minimax-h3: Curated resources for MiniMax H3 ...",
+      "url": "https://github.com/iSk2y/awesome-minimax-h3",
+      "snippet": "A curated list of resources for MiniMax H3 — the open-weight multimodal video + audio generation model released by MiniMax on July 31, 2026. Community-maintained. Not affiliated with MiniMax or Hailuo AI. Maintained by the team behind MiniMaxH3.app, an independent hosted studio. Corrections and additions are welcome — see Contributing. Last verified: August 6, 2026. Facts below link to ..."
+    },
+    {
+      "title": "pottokao (pottokao) - Hugging Face",
+      "url": "https://huggingface.co/pottokao",
+      "snippet": "pottokao/Ornith-1.5-35B-A3B-abliterated-NVFP4-DFlash Text Generation • 18B•Updated 4 days ago• 476 • 2"
+    },
+    {
+      "title": "Minimax H3 Video Gen (NVFP4/BF16/FP8/INT8/INT4/GGUF)",
+      "url": "https://www.stablediffusiontutorials.com/2026/08/minimax-h3.html",
+      "snippet": "Now, the next Open sourced Video generation model is here. MiniMax H3 (Developed by MiniMaxAI) is positioned as a next-generation general-purpose multimodal video model designed to move beyond specialized generation tasks toward broader multimodal intelligence. Rather than limiting itself to text prompts, can understand a combination of Text,Images,Video and Audio. The idea is straightforward ..."
+    },
+    {
+      "title": "MiniMax H3 Model Files & Downloads: GitHub, Hugging Face, GGUF, INT8 ...",
+      "url": "https://minimaxh3.run/minimax-h3-model-files-downloads",
+      "snippet": "Find official MiniMax H3 files, including pruned BF16, INT8, NVFP4, and VAE variants. Compare sources, GGUF status, folder paths, and missing-model fixes."
+    }
+  ]
+}

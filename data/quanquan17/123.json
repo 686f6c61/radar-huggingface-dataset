@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "quanquan17/123",
+  "slug": "quanquan17-123",
+  "author": "quanquan17",
+  "url": "https://huggingface.co/quanquan17/123",
+  "created_at": "2026-09-02T08:57:49.000Z",
+  "updated_at": "2026-09-02T08:57:49.000Z",
+  "license": "llama4",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:llama4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "quanquan - v2 EARLY ACCESS - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/1028222194276139061",
+      "snippet": "Download quanquan - free LORA Illustrious AI model on TENSOR. EARLY ACCESS. By deals"
+    },
+    {
+      "title": "quanquan - v1 EARLY ACCESS - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/997693404601136822",
+      "snippet": "Download quanquan - free LORA Illustrious AI model on TENSOR. EARLY ACCESS. By deals"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "#123 - LORA Model for Stable Diffusion SDXL and SD 1.5",
+      "url": "https://lunamodels.art/store/product/girl-123/",
+      "snippet": "This LORA model generates stylized characters for Stable Diffusion SDXL and SD 1.5, compatible with FLUX.1 and FLUX.Dev1."
+    },
+    {
+      "title": "Gu Quanquan Exits ByteSeed: Doubao&#x27;s Paid Model Conceals Hidden Agenda",
+      "url": "https://eu.36kr.com/en/p/3838311150287746",
+      "snippet": "The latter has greater commercial potential but also higher technical difficulty. The DPLM series is a protein language model that attempts to make AI understand and generate protein sequences in a way similar to training large language models."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "megagonlabs/transformers-ud-japanese-bert-large-ginza",
+  "slug": "megagonlabs-transformers-ud-japanese-bert-large-ginza",
+  "author": "megagonlabs",
+  "url": "https://huggingface.co/megagonlabs/transformers-ud-japanese-bert-large-ginza",
+  "created_at": "2026-09-02T07:11:49.000Z",
+  "updated_at": "2026-09-02T07:16:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 337441792,
+  "parameters_human": "337.4M",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GiNZA - Japanese NLP Library | Universal Dependenciesに基づくオープンソース日本語NLPライブラリ",
+      "url": "https://megagonlabs.github.io/ginza/",
+      "snippet": "精度向上の主たる貢献はTransformers事前学習モデルの導入にあります。 次の図は、UD_Japanese-BCCWJ r2.8における、従来型モデルの ja_ginza と、Transformers事前学習モデルを用いた ja_ginza_electra の、依存関係ラベリングおよび単語依存構造解析の学習曲線です。"
+    },
+    {
+      "title": "GitHub - megagonlabs/ginza: A Japanese NLP Library using spaCy as ...",
+      "url": "https://github.com/megagonlabs/ginza",
+      "snippet": "The GiNZA v5 Transformers model (ja_ginza_electra) is trained by using transformers-ud-japanese-electra-base-discriminator which is pretrained on more than 200 million Japanese sentences extracted from mC4."
+    },
+    {
+      "title": "GiNZA - Megagon",
+      "url": "https://megagon.ai/ginza/",
+      "snippet": "This initiative provides large quantities of data that enable us to proceed with open and efficient improvements to the GiNZA/spaCy analytical model. Once the restructured UD Japanese GSD data set is complete, we plan to release it under the commercially usable Creative Commons Attribution-ShareAlike (CC BY-SA) license."
+    },
+    {
+      "title": "ja_ginza_bert_large (BERT Model) | megagonlabs/ginza | DeepWiki",
+      "url": "https://deepwiki.com/megagonlabs/ginza/4.3-ja_ginza_bert_large-(bert-model)",
+      "snippet": "This document covers the ja_ginza_bert_large model, which is Ginza&#x27;s BERT-large based Japanese NLP model providing high-accuracy natural language processing through transformer architecture. This model represents the most computationally intensive but highest-accuracy option in the Ginza model ecosystem."
+    },
+    {
+      "title": "transformers-ud-japanese-electra-base-ginza - Hugging Face",
+      "url": "https://huggingface.co/megagonlabs/transformers-ud-japanese-electra-base-ginza",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

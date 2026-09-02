@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "pushkarsharma/arabic-translation-challenge-adapters",
+  "slug": "pushkarsharma-arabic-translation-challenge-adapters",
+  "author": "pushkarsharma",
+  "url": "https://huggingface.co/pushkarsharma/arabic-translation-challenge-adapters",
+  "created_at": "2026-09-02T11:04:24.000Z",
+  "updated_at": "2026-09-02T11:40:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "peft",
+  "languages": [
+    "ar",
+    "en",
+    "hi",
+    "ur"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "translation",
+    "lora",
+    "arabic",
+    "machine-translation",
+    "ar",
+    "en",
+    "hi",
+    "ur",
+    "base_model:FreedomIntelligence/AceGPT-v2-8B-Chat",
+    "base_model:adapter:FreedomIntelligence/AceGPT-v2-8B-Chat",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2373736010,
+  "storage_human": "2.4 GB",
+  "base_model": "QCRI/Fanar-1-9B-Instruct, hammh0a/Hala-9B, FreedomIntelligence/AceGPT-v2-8B-Chat, google/translategemma-4b-it, ModelSpace/GemmaX2-28-9B-v0.1, google/madlad400-10b-mt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT Translate | Fast, Natural, 40+ Languages",
+      "url": "https://chatgpt.com/translate/",
+      "snippet": "ChatGPT translates across 40+ languages with accuracy, tone, and cultural nuance. Translate text, voice, or photos for everyday use, travel, school, and work — and learn grammar or phrasing as you go."
+    },
+    {
+      "title": "Arabic LLM Models - Hugging Face",
+      "url": "https://huggingface.co/blog/silma-ai/arabic-llm-models-list",
+      "snippet": "A Blog post by SILMA AI - Arabic Language Models on Hugging Face"
+    },
+    {
+      "title": "Cross-dialectal Arabic translation: comparative analysis on large ...",
+      "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1661789/full",
+      "snippet": "The model was trained on MADAR and PADIC datasets and fine-tuning transformers such as T5X and AraT5 and some existing tools. The best translation results revealed were for Levantine and Maghrebi region dialects."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "silma-ai (SILMA AI - Arabic Language Models) - Hugging Face",
+      "url": "https://huggingface.co/silma-ai",
+      "snippet": "SILMA AI is a leading GenAI startup that excels in building and tailoring cutting-edge Large Language Models (LLMs) and AI technologies for the Arabic language"
+    }
+  ]
+}

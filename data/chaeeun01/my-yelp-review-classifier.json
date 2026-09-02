@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "chaeeun01/my-yelp-review-classifier",
+  "slug": "chaeeun01-my-yelp-review-classifier",
+  "author": "chaeeun01",
+  "url": "https://huggingface.co/chaeeun01/my-yelp-review-classifier",
+  "created_at": "2026-09-02T07:19:21.000Z",
+  "updated_at": "2026-09-02T07:19:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AyaAi104/YelpReviewClassifier",
+      "url": "https://github.com/AyaAi104/YelpReviewClassifier",
+      "snippet": "Yelp Review Classifier Name:Yuao Ai SUID: 258527763 About The Project Perform the following: The flowchart for my project is shown below."
+    },
+    {
+      "title": "GitHub - Neleac/yelp-review-classifier: language model that predicts ...",
+      "url": "https://github.com/Neleac/yelp-review-classifier/tree/main",
+      "snippet": "This model takes the text from a Yelp review and predicts a label corresponding to the number of stars for the review. The labels are:"
+    },
+    {
+      "title": "Cucs/yelp_review_classifier · Hugging Face",
+      "url": "https://huggingface.co/Cucs/yelp_review_classifier",
+      "snippet": "Cucs / yelp_review_classifier like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Neleac/yelp-review-classifier · Hugging Face",
+      "url": "https://huggingface.co/Neleac/yelp-review-classifier",
+      "snippet": "This model takes the text from a Yelp review and predicts a label corresponding to the number of stars for the review. The labels are: \"Very Negative\" = 1 star \"Negative\" = 2 stars \"Neutral\" = 3 stars \"Positive\" = 4 stars \"Very Positive\" = 5 stars Example Inference Code:"
+    },
+    {
+      "title": "GitHub - Neleac/yelp-review-classifier: language model that predicts ...",
+      "url": "https://github.com/Neleac/yelp-review-classifier",
+      "snippet": "language model that predicts the number of stars for a Yelp review - Neleac/yelp-review-classifier"
+    }
+  ]
+}

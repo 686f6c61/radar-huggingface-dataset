@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "MTalha056/SmolGRPO-135M",
+  "slug": "mtalha056-smolgrpo-135m",
+  "author": "MTalha056",
+  "url": "https://huggingface.co/MTalha056/SmolGRPO-135M",
+  "created_at": "2026-09-02T07:52:04.000Z",
+  "updated_at": "2026-09-02T07:53:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 538090408,
+  "storage_human": "538 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hx03-info/SmolGRPO-135M · Hugging Face",
+      "url": "https://huggingface.co/hx03-info/SmolGRPO-135M",
+      "snippet": "Model Details Model Description SmolGRPO-135M is a small reasoning-oriented language model fine-tuned using GRPO, a reinforcement learning algorithm for improving reasoning and explanation quality. The base model, SmolLM-135M-Instruct, was further optimized using a reward function focused on completion quality and length."
+    },
+    {
+      "title": "flymars/SmolGRPO-135M · Hugging Face",
+      "url": "https://huggingface.co/flymars/SmolGRPO-135M",
+      "snippet": "flymars / SmolGRPO-135M like 0 Text Generation Transformers Safetensors llama trl grpo GRPO Reasoning-Course text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "flymars/SmolGRPO-135M - Fast, Reliable, and Scalable Inference on ...",
+      "url": "https://friendli.ai/models/flymars/SmolGRPO-135M",
+      "snippet": "Run flymars/SmolGRPO-135M with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "SmolGRPO 135M by mlabonne — VRAM 0.3GB, 2K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/mlabonne%2FSmolGRPO-135M,6KolJwF8XIYopQWC5Ofbl1",
+      "snippet": "SmolGRPO 135M is an open-source 135m LLM by mlabonne. VRAM 0.3GB, 2K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "SmolGRPO-135M huggingface.co api & mlabonne SmolGRPO-135M github AI ...",
+      "url": "https://www.toolify.ai/ai-model/mlabonne-smolgrpo-135m",
+      "snippet": "SmolGRPO-135M huggingface.co SmolGRPO-135M huggingface.co is an AI model on huggingface.co that provides SmolGRPO-135M&#x27;s model effect (), which can be used instantly with this mlabonne SmolGRPO-135M model. huggingface.co supports a free trial of the SmolGRPO-135M model, and also provides paid use of the SmolGRPO-135M."
+    }
+  ]
+}

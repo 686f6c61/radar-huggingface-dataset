@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "abzoo/paddleocr-vl-curriculum-015",
+  "slug": "abzoo-paddleocr-vl-curriculum-015",
+  "author": "abzoo",
+  "url": "https://huggingface.co/abzoo/paddleocr-vl-curriculum-015",
+  "created_at": "2026-09-02T09:21:49.000Z",
+  "updated_at": "2026-09-02T10:23:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "paddleocr_vl",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 958588736,
+  "parameters_human": "958.6M",
+  "storage_bytes": 1930058010,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - PaddlePaddle/PaddleOCR: Turn any PDF or image document into ...",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "snippet": "PaddleOCR-VL is a SOTA and resource-efficient model tailored for document parsing. Its core component is PaddleOCR-VL-.9B, a compact yet powerful vision-language model (VLM) that integrates a NaViT-style dynamic resolution visual encoder with the ERNIE-4.5-0.3B language model to enable accurate element recognition."
+    },
+    {
+      "title": "GitHub - marklabz/paddleocr: Turn any PDF or image document into ...",
+      "url": "https://github.com/marklabz/paddleocr",
+      "snippet": "The PaddleOCR-VL Technical Report is now available. See details at PaddleOCR-VL Technical Report PaddleOCR converts documents and images into structured, AI-friendly data (like JSON and Markdown) with industry-leading accuracy —powering AI applications for everyone from indie developers and startups to large enterprises worldwide."
+    },
+    {
+      "title": "PaddlePaddle/PaddleOCR-VL · Hugging Face",
+      "url": "https://huggingface.co/PaddlePaddle/PaddleOCR-VL",
+      "snippet": "PaddleOCR-VL is a SOTA and resource-efficient model tailored for document parsing. Its core component is PaddleOCR-VL-.9B, a compact yet powerful vision-language model (VLM) that integrates a NaViT-style dynamic resolution visual encoder with the ERNIE-4.5-0.3B language model to enable accurate element recognition."
+    },
+    {
+      "title": "Home - PaddleOCR Documentation",
+      "url": "https://www.paddleocr.ai/main/en/index.html",
+      "snippet": "PaddleOCR-VL-1.5 is a new iterative version of the PaddleOCR-VL series. Based on comprehensive optimization of the core capabilities of version 1.0, the model achieves 94.5% accuracy on the authoritative document parsing benchmark OmniDocBench v1.5, surpassing top global general-purpose large models and document parsing-specific models."
+    },
+    {
+      "title": "Usage Tutorial - PaddleOCR Documentation",
+      "url": "https://www.paddleocr.ai/latest/en/version3.x/pipeline_usage/PaddleOCR-VL.html",
+      "snippet": "PaddleOCR-VL is an advanced and efficient document parsing model designed specifically for element recognition in documents. Taking its initial version (PaddleOCR-VL v1) as an example, its core component is PaddleOCR-VL-.9B, a compact yet powerful Vision-Language Model (VLM) composed of a NaViT-style dynamic resolution visual encoder and the ERNIE-4.5-0.3B language model, enabling precise ..."
+    }
+  ]
+}

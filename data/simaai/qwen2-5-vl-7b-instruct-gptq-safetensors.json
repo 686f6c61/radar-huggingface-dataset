@@ -5,7 +5,7 @@
   "author": "simaai",
   "url": "https://huggingface.co/simaai/Qwen2.5-VL-7B-Instruct-GPTQ-Safetensors",
   "created_at": "2026-08-20T08:40:22.000Z",
-  "updated_at": "2026-08-20T08:42:19.000Z",
+  "updated_at": "2026-09-01T06:34:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,11 +32,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 20,
+  "downloads_30d": 21,
   "trending_score": 0,
   "parameters": 5029522432,
   "parameters_human": "5.03B",
-  "storage_bytes": 5372065527,
+  "storage_bytes": 5383487419,
   "storage_human": "5.4 GB",
   "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
   "formats": [

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "asig23/Qwen3.8-Flash-Next",
+  "slug": "asig23-qwen3-8-flash-next",
+  "author": "asig23",
+  "url": "https://huggingface.co/asig23/Qwen3.8-Flash-Next",
+  "created_at": "2026-09-02T07:53:42.000Z",
+  "updated_at": "2026-09-02T07:53:43.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "conversational",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 360013002208,
+  "storage_human": "360.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next?file=Qwen3.8-Flash-Next",
+      "snippet": "Qwen3.8-Flash-Next features a 125B -parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token. Compared with Qwen3.7-Plus, Qwen3.8-Flash-Next substantially reduces both training and inference cost — training takes only about 1/9 as much, yet it delivers superior capabilities in coding and office tasks."
+    },
+    {
+      "title": "qwen3.8-flash-next - ollama.com",
+      "url": "https://ollama.com/library/qwen3.8-flash-next",
+      "snippet": "Qwen3.8-Flash-Next is the first open-weight model built on the architecture that will underpin Qwen4. It is a multimodal mixture-of-experts model with 125B total parameters and only 6B active per token, designed for cost-efficient inference across agentic coding, tool use, and vision tasks, with a native 256K context window."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: Qwen4 Architecture Preview Guide",
+      "url": "https://aireiter.com/blog/qwen3-8-flash-next-guide",
+      "snippet": "What Qwen3.8-Flash-Next actually is (and what it isn&#x27;t) Qwen3.8-Flash-Next is a multimodal Mixture-of-Experts (MoE) model built on the architecture intended for the upcoming Qwen4 family. It is not Qwen4 itself. Think of it as a technology demonstrator — a working model that exposes the new attention mechanisms, layer structure, and sparsity patterns so that inference frameworks can add ..."
+    }
+  ]
+}

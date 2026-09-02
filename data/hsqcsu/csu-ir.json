@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Hsqcsu/CSU-IR",
+  "slug": "hsqcsu-csu-ir",
+  "author": "Hsqcsu",
+  "url": "https://huggingface.co/Hsqcsu/CSU-IR",
+  "created_at": "2025-06-16T12:11:12.000Z",
+  "updated_at": "2026-09-02T04:02:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62527727686,
+  "storage_human": "62.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Hsqcsu/CSU-IR: CSU-IR: Interpretable spectra-to-structure ...",
+      "url": "https://github.com/Hsqcsu/CSU-IR",
+      "snippet": "Multi-perspective Interpretability: CSU-IR achieves accurate and trustworthy spectral retrieval by grounding its predictions in interpretable chemical property and specific spectral-structural correspondence. Comprehensive Functional Groups Detection: The model successfully detected 48 functional groups with an average recall@1 of 93.80%."
+    },
+    {
+      "title": "GitHub - Hsqcsu/CSU-IR: CSU-IR: Scaling infrared spectral retrieval to ...",
+      "url": "https://github.com/Hsqcsu/CSU-IR/tree/main/",
+      "snippet": "This is the official code repository for our paper, \"Scaling infrared spectral retrieval to 100 million compounds with interpretable deep learning\". We introduce CSU-IR, a novel deep learning framework designed for high-precision unknown-compound identification by unifying infrared (IR) spectra and molecular structures. Key strengths of our work include: 🚀 Exceptional 100-Million-Scale ..."
+    },
+    {
+      "title": "Hsqcsu (Shuqing Huang) - Hugging Face",
+      "url": "https://huggingface.co/Hsqcsu/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 2 days ago ... published a model 3 days ago"
+    },
+    {
+      "title": "Hsqcsu/CSU-IR at main - Hugging Face",
+      "url": "https://huggingface.co/Hsqcsu/CSU-IR/tree/main/Model_weights/CSU-IR/Stage-I",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/github/Hsqcsu/CSU-IR/blob/main/colab/test_CSU_IR_in_colab.ipynb",
+      "snippet": "There was an error loading this notebook. Ensure that the file is accessible and try again. Ensure that you have permission to view this notebook in GitHub and ..."
+    }
+  ]
+}

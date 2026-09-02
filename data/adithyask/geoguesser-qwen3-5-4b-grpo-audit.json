@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "AdithyaSK/geoguesser-qwen3.5-4b-grpo-audit",
+  "slug": "adithyask-geoguesser-qwen3-5-4b-grpo-audit",
+  "author": "AdithyaSK",
+  "url": "https://huggingface.co/AdithyaSK/geoguesser-qwen3.5-4b-grpo-audit",
+  "created_at": "2026-09-02T09:52:11.000Z",
+  "updated_at": "2026-09-02T09:52:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "grpo",
+    "lora",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32589446,
+  "storage_human": "33 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.5 4B local AI model — runs on ~3 GB — guide",
+      "url": "https://theaibench.ai/models/qwen-3-5-4b/",
+      "snippet": "Qwen 3.5 4B local guide: Apache 2.0 small model that runs in ~2.5 GB at Q4 (GPU or CPU), what quality to expect, runner tags, and when to step up to 9B."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In this work, we introduce Qwen3, the latest series in our foundation model family, Qwen. Qwen3 is a collection of open-weight large language models (LLMs) that achieve state-of-the-art performance across a wide variety of tasks and domains."
+    },
+    {
+      "title": "Alibaba Just Dropped Qwen 3.5 — A 397B-Parameter MoE Model ... - Medium",
+      "url": "https://medium.com/@AdithyaGiridharan/alibaba-just-dropped-qwen-3-5-cf35aab0c862",
+      "snippet": "On February 16, 2026 — hours before the Chinese Lunar New Year — Alibaba&#x27;s Qwen team released Qwen3.5-397B-A17B, the first model in their new 3.5 series. The timing was strategic."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "The official Qwen API is provided by Alibaba Cloud Model Studio. Alibaba Cloud Model Studio provides first-class support for Qwen3.5, which is compatible with various API specifications, including OpenAI and Anthropic, making it simple for you to try Qwen3.5 in your own applications."
+    }
+  ]
+}

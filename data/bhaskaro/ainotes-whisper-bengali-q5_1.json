@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "bhaskaro/ainotes-whisper-bengali-q5_1",
+  "slug": "bhaskaro-ainotes-whisper-bengali-q5_1",
+  "author": "bhaskaro",
+  "url": "https://huggingface.co/bhaskaro/ainotes-whisper-bengali-q5_1",
+  "created_at": "2026-09-02T11:28:54.000Z",
+  "updated_at": "2026-09-02T11:29:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisper.cpp",
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "whisper",
+    "ggml",
+    "automatic-speech-recognition",
+    "bengali",
+    "bn",
+    "base_model:bangla-speech-processing/BanglaASR",
+    "base_model:finetune:bangla-speech-processing/BanglaASR",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 190085487,
+  "storage_human": "190 MB",
+  "base_model": "bangla-speech-processing/BanglaASR",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "asif00/whisper-bangla · Hugging Face",
+      "url": "https://huggingface.co/asif00/whisper-bangla",
+      "snippet": "Whisper Bangla This model is a fine-tuned version of openai/whisper-small on the Common Voice 17.0 dataset. Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used during ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Whisper Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/whisper-1",
+      "snippet": "General-purpose speech recognition model Compare"
+    },
+    {
+      "title": "GitHub - anon4445/bengali_whisper",
+      "url": "https://github.com/anon4445/bengali_whisper",
+      "snippet": "This study focuses on fine-tuning the pre-trained Whisper model for Bengali speech recognition. The key steps involved are: Data preparation: The Common Voice Corpus 9.0 Bengali dataset is used for training and evaluation. Data augmentation: The training data is augmented using SpecAugment, dithering noise addition, and mixed augmentation to improve model robustness and generalization. Fine ..."
+    }
+  ]
+}

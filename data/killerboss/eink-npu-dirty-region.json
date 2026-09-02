@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "KillerBoss/eink-npu-dirty-region",
+  "slug": "killerboss-eink-npu-dirty-region",
+  "author": "KillerBoss",
+  "url": "https://huggingface.co/KillerBoss/eink-npu-dirty-region",
+  "created_at": "2026-09-02T07:15:04.000Z",
+  "updated_at": "2026-09-02T07:15:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "onnx",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "tflite",
+    "qualcomm",
+    "qnn",
+    "hexagon-npu",
+    "eink",
+    "dirty-region",
+    "event-driven-rendering",
+    "image-to-image",
+    "android",
+    "snpe",
+    "de",
+    "en",
+    "dataset:KillerBoss/eink-dirty-region-dataset",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KillerBoss (Rudolf) - Hugging Face",
+      "url": "https://huggingface.co/KillerBoss",
+      "snippet": "User profile of Rudolf on Hugging Face"
+    },
+    {
+      "title": "Poisoned Pipelines: Malicious AI Model and Skill Repositories",
+      "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-malicious-ai-model-repositories-attack-sur/",
+      "snippet": "The platform&#x27;s model card system and community review processes create a credible appearance of curation, but the fundamental trust model depends on individual contributors acting in good faith — a proposition that threat actors have learned to exploit. The emergence of agentic AI systems has opened a parallel distribution surface."
+    },
+    {
+      "title": "GitHub - Pelochus/ezrknpu: Easy installation and usage of Rockchip&#x27;s ...",
+      "url": "https://github.com/Pelochus/ezrknpu",
+      "snippet": "Easy installation and usage of Rockchip&#x27;s NPUs found in RK3588 and similar SoCs - Pelochus/ezrknpu"
+    },
+    {
+      "title": "270k plus no npu working no Killer Intelligence Center working",
+      "url": "https://community.intel.com/t5/Mobile-and-Desktop-Processors/270k-plus-no-npu-working-no-Killer-Intelligence-Center-working/m-p/1744490",
+      "snippet": "270k so far is junk try everything notting works i did all the steps 1. Download the installation file from here:killer 2. Uninstall the Intel Killer Performance Suite manually: a. Go to your Windows search bar. b. Type in and go to Apps & features. c. Find the Intel Killer Perfor..."
+    },
+    {
+      "title": "IInkAnalyzer::GetDirtyRegion method (IACom.h) - Win32 apps",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/tablet/iinkanalyzer-getdirtyregion",
+      "snippet": "The IInkAnalyzer analyzes ink within its dirty region during a call to IInkAnalyzer::Analyze Method or IInkAnalyzer::BackgroundAnalyze Method. However, the IInkAnalyzer may expand the analysis operation to include neighboring regions."
+    }
+  ]
+}

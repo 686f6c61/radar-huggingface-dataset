@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hsk0201/gemma-4-26B-A4B-qat-oQ4e-fp16",
+  "slug": "hsk0201-gemma-4-26b-a4b-qat-oq4e-fp16",
+  "author": "hsk0201",
+  "url": "https://huggingface.co/hsk0201/gemma-4-26B-A4B-qat-oQ4e-fp16",
+  "created_at": "2026-09-02T02:06:44.000Z",
+  "updated_at": "2026-09-02T02:49:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "base_model:google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4520676642,
+  "parameters_human": "4.52B",
+  "storage_bytes": 15697206994,
+  "storage_human": "15.7 GB",
+  "base_model": "google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hsk0201/gemma-4-26B-A4B-qat-oQ4e-fp16 · Hugging Face",
+      "url": "https://huggingface.co/hsk0201/gemma-4-26B-A4B-qat-oQ4e-fp16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/gemma-4-26B-A4B-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "google/gemma-4-26b-a4b-qat • LM Studio",
+      "url": "https://lmstudio.ai/models/google/gemma-4-26b-a4b-qat",
+      "snippet": "Gemma 4 is an open multimodal model family from Google DeepMind. It supports text and image input, text output, reasoning, long context, system prompts, and native tool use. Gemma 4 26B A4B uses an efficient architecture for scalable local deployment. The QAT build helps make that setup lighter to load while keeping the same model family behavior."
+    },
+    {
+      "title": "Gemma 4 model overview - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core",
+      "snippet": "Native System Prompt Support: Gemma 4 introduces built-in support for the system role, enabling more structured and controllable conversations. Multi-Token Prediction: All Gemma 4 models (E2B, E4B, 12B, 31B, and 26B A4B) include a dedicated draft model for speculative decoding, enabling significantly faster inference with no quality loss."
+    }
+  ]
+}

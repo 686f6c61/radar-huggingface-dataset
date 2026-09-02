@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cbrian/pi05_task1_DM1_epi_200_step_20000_batch_32",
+  "slug": "cbrian-pi05_task1_dm1_epi_200_step_20000_batch_32",
+  "author": "cbrian",
+  "url": "https://huggingface.co/cbrian/pi05_task1_DM1_epi_200_step_20000_batch_32",
+  "created_at": "2026-09-02T09:41:08.000Z",
+  "updated_at": "2026-09-02T09:48:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:cbrian/merge_task1_DM_epi_200",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7473108700,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jaywu109/pi05_task1_MM1_epi_200_step_20000_batch_32 · Hugging Face",
+      "url": "https://huggingface.co/jaywu109/pi05_task1_MM1_epi_200_step_20000_batch_32",
+      "snippet": "Pi05 policy for Task 1 MM (200 episodes) This Pi05 policy was fine-tuned from lerobot/pi05_libero with LeRobot on cbrian/merge_task1_MM_epi_200. See train_config.json for the complete training configuration."
+    },
+    {
+      "title": "jaywu109 (Dai-Jie Wu) - Hugging Face",
+      "url": "https://huggingface.co/jaywu109",
+      "snippet": "jaywu109/pi05_task1_MM3_epi_500_step_25000_batch_32 Robotics • 4B•Updated about 23 hours ago"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GitHub - mli0603/openpi-comet: Team Comet&#x27;s 2025 BEHAVIOR Challenge ...",
+      "url": "https://github.com/mli0603/openpi-comet",
+      "snippet": "Team Comet&#x27;s 2025 BEHAVIOR Challenge Codebase. Contribute to mli0603/openpi-comet development by creating an account on GitHub."
+    },
+    {
+      "title": "Pi0.5 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/pi05",
+      "snippet": "Pi0.5 State‑of‑the‑art generalist robotic foundation model trained on vision, language, and action to enable dexterous, zero‑shot physical task execution across diverse robot platforms. Pi0.5 is a vision‑language‑action model that co‑trains on diverse data sources (robot demos, web data, semantic subtasks) to enable open‑world generalization for long‑horizon robotic manipulation."
+    }
+  ]
+}

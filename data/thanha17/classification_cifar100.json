@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Thanha17/classification_CIFAR100",
+  "slug": "thanha17-classification_cifar100",
+  "author": "Thanha17",
+  "url": "https://huggingface.co/Thanha17/classification_CIFAR100",
+  "created_at": "2026-09-02T04:45:55.000Z",
+  "updated_at": "2026-09-02T08:56:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22137498568,
+  "storage_human": "22.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thanha17/classification_CIFAR100 · Hugging Face",
+      "url": "https://huggingface.co/Thanha17/classification_CIFAR100",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yolo-master-multidomain-lora/docs/en/datasets/classify/cifar100.md at ...",
+      "url": "https://github.com/Jpl-hub/yolo-master-multidomain-lora/blob/main/docs/en/datasets/classify/cifar100.md",
+      "snippet": "Train a YOLO model on CIFAR-100 for 100 epochs at an image size of 32. For the full list of available arguments, see the Training page and the image classification task guide."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?dataset=dataset:cifar100",
+      "snippet": "MazenAmria/swin-tiny-finetuned-cifar100 Image Classification • Updated Dec 23, 2022• 33 • 1"
+    },
+    {
+      "title": "GitHub - abhishek-kathuria/CIFAR100-Image-Classification: Classify ...",
+      "url": "https://github.com/abhishek-kathuria/CIFAR100-Image-Classification",
+      "snippet": "CIFAR 100 Image Classification using Deep Learning This repository contains the code for implementation of CIFAR-100 classification using various models such as Linear Classifier, Convolutional Neural Net (CNNs) from scratch, Residual Neural Nets (ResNet) from scratch, Pretrained ResNet-18 and Pretrained ResNet-50."
+    },
+    {
+      "title": "CIFAR-100 Image Classification Dataset | Ultralytics",
+      "url": "https://docs.ultralytics.com/datasets/classify/cifar100",
+      "snippet": "Train YOLO image classification models on CIFAR-100, a benchmark of 60,000 32x32 color images in 100 classes grouped into 20 superclasses, split 50k/10k."
+    }
+  ]
+}

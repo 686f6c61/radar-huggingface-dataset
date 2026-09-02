@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "yaminerl/escha-amd-port",
+  "slug": "yaminerl-escha-amd-port",
+  "author": "yaminerl",
+  "url": "https://huggingface.co/yaminerl/escha-amd-port",
+  "created_at": "2026-09-02T08:45:51.000Z",
+  "updated_at": "2026-09-02T09:16:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "ggml",
+    "gguf",
+    "amd",
+    "rocm",
+    "hip",
+    "rdna2",
+    "gfx1030",
+    "quantization",
+    "kernel-port",
+    "en",
+    "base_model:aj9o9/Qwen3.8-27B-Escha-W2-GGUF",
+    "base_model:finetune:aj9o9/Qwen3.8-27B-Escha-W2-GGUF",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "aj9o9/Qwen3.8-27B-Escha-W2-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - YanissAmz/escha-port: Porting Escha Labs&#x27; ESCHAM 2-bit format ...",
+      "url": "https://github.com/YanissAmz/escha-port",
+      "snippet": "A working port of the ESCHAM weight format (Escha Labs) into llama.cpp: GGUF conversion, a CPU reference decoder, CUDA and HIP kernels, and the evaluation harness used to prove the result. Reference model: Qwen3.8-27B, 2.469 bits per weight. Every row is apples-to-apples, but the two blocks come ..."
+    },
+    {
+      "title": "escha-port/README.md at master · YanissAmz/escha-port",
+      "url": "https://github.com/YanissAmz/escha-port/blob/master/README.md",
+      "snippet": "A working port of the ESCHAM weight format (Escha Labs) into llama.cpp: GGUF conversion, a CPU reference decoder, CUDA and HIP kernels, and the evaluation harness used to prove the result. Reference model: Qwen3.8-27B, 2.469 bits per weight. Every row is apples-to-apples, but the two blocks come ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 125 Estimated models among 412 tracked LLMs — 408 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Do Spammers Dream of Electric Sheep? Characterizing the Prevalence of ...",
+      "url": "https://www.cs.columbia.edu/~junfeng/papers/ai-email/",
+      "snippet": "In this joint work between academic researchers and Barracuda Networks, we present the first large-scale study measuring AI-generated attacks in-the-wild. In particular, we focus on the use of LLMs by attackers to craft the text of malicious emails by analyzing a corpus of hundreds of thousands of real-world malicious emails detected by Barracuda."
+    }
+  ]
+}

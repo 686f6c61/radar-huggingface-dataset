@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Liiesl/bubble-segment-onnx",
+  "slug": "liiesl-bubble-segment-onnx",
+  "author": "Liiesl",
+  "url": "https://huggingface.co/Liiesl/bubble-segment-onnx",
+  "created_at": "2026-09-02T08:54:51.000Z",
+  "updated_at": "2026-09-02T09:06:11.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "manga",
+    "anime",
+    "instance-segmentation",
+    "object-detection",
+    "yolo",
+    "yolo26",
+    "onnxruntime",
+    "scanlation",
+    "image-segmentation",
+    "base_model:mayocream/koharu-yolo26s",
+    "base_model:quantized:mayocream/koharu-yolo26s",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42056366,
+  "storage_human": "42 MB",
+  "base_model": "mayocream/koharu-yolo26s",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 662+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Liiesl (Liiesl mackirov) - Hugging Face",
+      "url": "https://huggingface.co/Liiesl",
+      "snippet": "Recent Activity updated a modelabout 9 hours ago Liiesl/lama-manga-onnx-quant published a modelabout 10 hours ago Liiesl/lama-manga-onnx-quant View all activity"
+    },
+    {
+      "title": "GitHub - onnx/tutorials: Tutorials for creating and using ONNX models",
+      "url": "https://github.com/onnx/tutorials",
+      "snippet": "Tutorials for creating and using ONNX models. Contribute to onnx/tutorials development by creating an account on GitHub."
+    },
+    {
+      "title": "ONNX | Home",
+      "url": "https://onnx.ai/",
+      "snippet": "ONNX defines a common set of operators - the building blocks of machine learning and deep learning models - and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers."
+    }
+  ]
+}

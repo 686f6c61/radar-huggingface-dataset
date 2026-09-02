@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "escapebirdy/rope_cut_oct_xyzi_octe_2stage_2048",
+  "slug": "escapebirdy-rope_cut_oct_xyzi_octe_2stage_2048",
+  "author": "escapebirdy",
+  "url": "https://huggingface.co/escapebirdy/rope_cut_oct_xyzi_octe_2stage_2048",
+  "created_at": "2026-09-02T09:04:19.000Z",
+  "updated_at": "2026-09-02T09:05:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:escapebirdy/rope_cut_oct_xyzi_v1",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 256930244,
+  "parameters_human": "256.9M",
+  "storage_bytes": 1027753992,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cagedBirdy/rope_cut_oct_xyzi_dp_v1 · Hugging Face",
+      "url": "https://huggingface.co/cagedBirdy/rope_cut_oct_xyzi_dp_v1",
+      "snippet": "cagedBirdy / rope_cut_oct_xyzi_dp_v1 like 0 Robotics LeRobot Safetensors cagedBirdy/rope_cut_oct_xyzi_v1 diffusion arxiv:2303.04137 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "cagedBirdy/rope_cut_oct_xyzi_v1 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/cagedBirdy/rope_cut_oct_xyzi_v1/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Octo - archania.org",
+      "url": "https://archania.org/p/technologies/artificial-intelligence/ai-models/octo",
+      "snippet": "Octo occupies the intersection of robot learning, imitation learning, robotic manipulation, and foundation-model engineering within AI models. Its central purpose is to reduce the need to train a new robot policy from scratch for every robot, task, and laboratory environment."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Octo Model: Open-Source Generalist Robot · truelabel",
+      "url": "https://truelabel.ai/models/octo",
+      "snippet": "Home Octo Model: Open-Source Generalist Robot Policy & Training Data Physical AI Model Octo Model: Open-Source Generalist Robot Policy & Training Data Octo is the first fully open-source generalist robot manipulation policy released by UC Berkeley in May 2024, pre-trained on 800,000 trajectories from 25 datasets in the Open X-Embodiment collection. It accepts 256×256 RGB observations (primary ..."
+    }
+  ]
+}

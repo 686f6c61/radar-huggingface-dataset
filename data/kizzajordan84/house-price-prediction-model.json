@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "KizzaJordan84/house-price-prediction-model",
+  "slug": "kizzajordan84-house-price-prediction-model",
+  "author": "KizzaJordan84",
+  "url": "https://huggingface.co/KizzaJordan84/house-price-prediction-model",
+  "created_at": "2026-09-02T10:00:55.000Z",
+  "updated_at": "2026-09-02T10:08:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 144372531,
+  "storage_human": "144 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "House Price Prediction System | House-Price-Prediction",
+      "url": "https://aneshraj-d96.github.io/House-Price-Prediction/",
+      "snippet": "Developed a predictive system to estimate house prices using demographic and housing data. Applied regression models, feature engineering, and Streamlit dashboards to deliver actionable insights for real estate valuation and investment strategy."
+    },
+    {
+      "title": "House Price Prediction - Linear Regression | Kaggle",
+      "url": "https://www.kaggle.com/code/mehakk23/house-price-prediction-linear-regression",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from House Prices - Advanced Regression Techniques"
+    },
+    {
+      "title": "A Transparent House Price Prediction Framework Using Ensemble ... - MDPI",
+      "url": "https://www.mdpi.com/2674-1032/4/3/33",
+      "snippet": "House price prediction is crucial in real estate for informed decision-making. This paper presents an automated prediction system that combines genetic algorithms (GA) for feature optimization and Analysis of Variance (ANOVA) for statistical analysis. We apply and compare five ensemble machine learning (ML) models, namely Extreme Gradient Boosting Regression (XGBR), random forest regression ..."
+    },
+    {
+      "title": "housing-price-prediction · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/housing-price-prediction",
+      "snippet": "Machine learning project to predict house prices using Linear Regression. Includes data preprocessing, model training, evaluation using MAE and RMSE, and visualization of results using Python and scikit-learn."
+    },
+    {
+      "title": "House Price Prediction using Machine Learning in Python",
+      "url": "https://www.geeksforgeeks.org/machine-learning/house-price-prediction-using-machine-learning-in-python/",
+      "snippet": "Predicting house prices is a key challenge in the real estate industry, helping buyers, sellers and investors make informed decisions. By using machine learning algorithms, we can estimate the price of a house based on various features such as location, size, number of bedrooms and other relevant factors."
+    }
+  ]
+}

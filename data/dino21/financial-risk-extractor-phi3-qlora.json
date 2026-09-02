@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Dino21/financial-risk-extractor-phi3-qlora",
+  "slug": "dino21-financial-risk-extractor-phi3-qlora",
+  "author": "Dino21",
+  "url": "https://huggingface.co/Dino21/financial-risk-extractor-phi3-qlora",
+  "created_at": "2026-09-01T20:22:46.000Z",
+  "updated_at": "2026-09-02T10:25:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "phi3",
+    "qlora",
+    "financial-nlp",
+    "information-extraction",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:microsoft/Phi-3-mini-4k-instruct",
+    "base_model:adapter:microsoft/Phi-3-mini-4k-instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3821079552,
+  "parameters_human": "3.82B",
+  "storage_bytes": 7642181696,
+  "storage_human": "7.6 GB",
+  "base_model": "microsoft/Phi-3-mini-4k-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - microsoft/PhiCookBook: This is a Phi Family of SLMs book for ...",
+      "url": "https://github.com/microsoft/PhiCookBook",
+      "snippet": "Phi Cookbook: Hands-On Examples with Microsoft&#x27;s Phi Models Phi is a series of open source AI models developed by Microsoft. Phi is currently the most powerful and cost-effective small language model (SLM), with very good benchmarks in multi-language, reasoning, text/chat generation,coding, images, audio and other scenarios."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/financial-reports-analysis",
+      "snippet": "The model is not designed to provide any financial advice or recommendations. Developers should be mindful of common limitations of language models when selecting use cases and ensure that they evaluate and mitigate potential issues related to accuracy, safety, and fairness before deploying the model, particularly in high-risk scenarios."
+    },
+    {
+      "title": "[2404.14219] Phi-3 Technical Report: A Highly Capable Language Model ...",
+      "url": "https://arxiv.org/abs/2404.14219",
+      "snippet": "We introduce phi-3-mini, a 3.8 billion parameter language model trained on 3.3 trillion tokens, whose overall performance, as measured by both academic benchmarks and internal testing, rivals that of models such as Mixtral 8x7B and GPT-3.5 (e.g., phi-3-mini achieves 69% on MMLU and 8.38 on MT-bench), despite being small enough to be deployed on a phone. Our training dataset is a scaled-up ..."
+    },
+    {
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs - GitHub",
+      "url": "https://github.com/artidoro/qlora",
+      "snippet": "Overview We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance. QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters (LoRA)."
+    },
+    {
+      "title": "You fine-tuned LLaMA-2 with 4-bit QLoRA on - studyx.ai",
+      "url": "https://studyx.ai/questions/4mknho9/you-fine-tuned-llama-2-with-4-bit-qlora-on-your-company-s-internal-financial-documents",
+      "snippet": "You fine-tuned LLaMA-2 with 4-bit QLoRA on your company&#x27;s internal financial documents and now serve it behind an API. Give two reasons quantization helped you deploy it, and name one new security risk that exists specifically because the model was fine-tuned on internal data."
+    }
+  ]
+}

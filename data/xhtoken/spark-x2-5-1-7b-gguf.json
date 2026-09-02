@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "XHToken/Spark-X2.5-1.7B-GGUF",
+  "slug": "xhtoken-spark-x2-5-1-7b-gguf",
+  "author": "XHToken",
+  "url": "https://huggingface.co/XHToken/Spark-X2.5-1.7B-GGUF",
+  "created_at": "2026-08-28T11:29:35.000Z",
+  "updated_at": "2026-08-28T11:29:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ollama",
+    "lm-studio",
+    "sparkx2_5",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:XHToken/Spark-X2.5-1.7B",
+    "base_model:quantized:XHToken/Spark-X2.5-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 11,
+  "downloads_30d": 26,
+  "trending_score": 11,
+  "parameters": 1707657216,
+  "parameters_human": "1.71B",
+  "storage_bytes": 3421360977,
+  "storage_human": "3.4 GB",
+  "base_model": "XHToken/Spark-X2.5-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - XHToken/Spark-X2.5: Spark-x2.5 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.5",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    },
+    {
+      "title": "Spark X2.5 1.7B - 1.05m context, open source | LLM Reference",
+      "url": "https://www.llmreference.com/model/spark-x2.5-1.7b",
+      "snippet": "Spark X2.5 1.7B is available now for coding, rag, and agents with open-source and 1.05m context; evaluate it while provider pricing coverage matures."
+    },
+    {
+      "title": "Quantized Models for XHToken/Spark-X2.5-1.7B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:XHToken/Spark-X2.5-1.7B",
+      "snippet": "Active filters: XHToken/Spark-X2.5-1.7B. Clear all. XHToken/Spark-X2.5-1.7B-GGUF. Text Generation • 2B • Updated 5 days ago • 26 • 6"
+    },
+    {
+      "title": "SparkLLM · GitHub",
+      "url": "https://github.com/XHToken",
+      "snippet": "SparkLLM focuses on developing leading general-purpose foundation models and professional AI agent products. - SparkLLM"
+    },
+    {
+      "title": "Spark-X2.5 - a XHToken Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/XHToken/spark-x25",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

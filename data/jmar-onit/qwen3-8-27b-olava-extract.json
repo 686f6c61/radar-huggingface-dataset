@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jmar-onit/qwen3.8-27b-olava-extract",
+  "slug": "jmar-onit-qwen3-8-27b-olava-extract",
+  "author": "jmar-onit",
+  "url": "https://huggingface.co/jmar-onit/qwen3.8-27b-olava-extract",
+  "created_at": "2026-09-02T02:22:34.000Z",
+  "updated_at": "2026-09-02T02:25:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657984049,
+  "storage_human": "658 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Run Qwen3.8-27B Locally With Ollama [2026]",
+      "url": "https://tech-insider.org/how-to-run-qwen3-8-27b-locally-ollama-2026/",
+      "snippet": "Run Qwen3.8-27B locally with Ollama in 12 steps: install, pull the 18GB model, tune reasoning effort, add vision, and fix common errors."
+    },
+    {
+      "title": "How to Run Qwen 3.8 with Ollama: Commands, VRAM, and Setup (2026)",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-with-ollama-2026",
+      "snippet": "Qwen 3.8 27B is live in the Ollama library: an 18GB download with vision support. The exact commands, what hardware runs it, the context window trap to avoid, and when to graduate to a real serving stack."
+    },
+    {
+      "title": "Run Qwen3.8-27B on Ollama: One Command, Four Quants, Free",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-ollama",
+      "snippet": "Run it with one command: ollama run qwen3.8:27b. That is the whole answer to the question this page is about. Qwen3.8 27B — Ali baba&#x27;s dense 27-billion-parameter model, weights released August 14, 2026 under Apache 2.0 — went live in the Ollama library this week, and the default build is already a sensible 18 GB Q4_K_M quant (17 GB of weights plus a 931 MB vision encoder). It runs fully on ..."
+    },
+    {
+      "title": "How to Run Qwen 3.8 Locally: 27B on 16-24GB GPUs (2026)",
+      "url": "https://codersera.com/blog/how-to-run-qwen-3-8-locally-2026/",
+      "snippet": "What are you actually running? Qwen3.8-27B is a dense 27B vision-language model: text, images, and video (including hour-scale video) in one checkpoint, Apache-2.0 licensed. Native context is 262,144 tokens — the \"extensible up to 1,000,000\" line on the card refers to a Qwen Cloud hosted feature that is \"coming soon\", so plan around 256K locally."
+    },
+    {
+      "title": "qwen3.8:27b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.8:27b",
+      "snippet": "Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
+    }
+  ]
+}

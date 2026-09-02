@@ -5,7 +5,7 @@
   "author": "bakhil-aissa",
   "url": "https://huggingface.co/bakhil-aissa/OvisOCR2-onnx",
   "created_at": "2026-08-18T12:45:38.000Z",
-  "updated_at": "2026-08-31T18:02:53.000Z",
+  "updated_at": "2026-09-01T22:10:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -13,11 +13,10 @@
   "languages": [],
   "tags": [
     "onnx",
-    "qwen3_5",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 208,
+  "downloads_30d": 250,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

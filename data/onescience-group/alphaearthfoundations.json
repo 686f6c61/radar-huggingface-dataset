@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/AlphaEarthFoundations",
+  "slug": "onescience-group-alphaearthfoundations",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/AlphaEarthFoundations",
+  "created_at": "2026-09-02T08:45:00.000Z",
+  "updated_at": "2026-09-02T08:50:37.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "alphaearthfoundations",
+    "OneScience",
+    "Earth Science",
+    "Multi-Source Earth Observation",
+    "Geospatial Embeddings",
+    "en",
+    "arxiv:2507.22291",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlphaEarth Foundations helps map our planet in unprecedented detail",
+      "url": "https://deepmind.google/blog/alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail/",
+      "snippet": "New AI model integrates petabytes of Earth observation data to generate a unified data representation that revolutionizes global mapping and monitoring Every day, satellites capture information-rich images and measurements, providing scientists and experts with a nearly real-time view of our planet."
+    },
+    {
+      "title": "AlphaEarth Foundations helps map our planet in unprecedented detail",
+      "url": "https://onmine.io/alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail-2/",
+      "snippet": "Science Published 30 July 2025 Authors The AlphaEarth Foundations team New AI model integrates petabytes of Earth observation data to generate a unified data representation that revolutionizes global mapping and monitoringEvery day, satellites capture information-rich images and measurements, providing scientists and experts with a nearly real-time view of our planet. While this data has been ..."
+    },
+    {
+      "title": "AlphaEarth Foundations helps map our planet in unprecedented detail ...",
+      "url": "https://onmine.io/alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail/",
+      "snippet": "This helps the model create a continuous view of the location, while explaining numerous measurements. To ensure AlphaEarth Foundations was ready for real-world use, we rigorously tested its performance. When compared against both traditional methods and other AI mapping systems, AlphaEarth Foundations was consistently the most accurate."
+    },
+    {
+      "title": "[2507.22291] AlphaEarth Foundations: An embedding field model for ...",
+      "url": "https://arxiv.org/abs/2507.22291",
+      "snippet": "Here we introduce AlphaEarth Foundations, an embedding field model yielding a highly general, geospatial representation that assimilates spatial, temporal, and measurement contexts across multiple sources, enabling accurate and efficient production of maps and monitoring systems from local to global scales."
+    },
+    {
+      "title": "AlphaEarth Foundations helps map our planet in unprecedented detail",
+      "url": "https://aisckool.com/alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail/",
+      "snippet": "Today we are introducing AlphaEarth Foundations, an artificial intelligence (AI) model that acts as a virtual satellite. It accurately and efficiently characterizes all of the planet&#x27;s land and coastal waters, integrating immense amounts of Earth observation data into a unified digital representation, or \"embedding,\" that computer systems can easily process. As a result, the model ..."
+    }
+  ]
+}

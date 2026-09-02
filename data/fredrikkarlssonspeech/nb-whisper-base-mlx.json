@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "FredrikKarlssonSpeech/nb-whisper-base-mlx",
+  "slug": "fredrikkarlssonspeech-nb-whisper-base-mlx",
+  "author": "FredrikKarlssonSpeech",
+  "url": "https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-base-mlx",
+  "created_at": "2026-09-02T10:37:25.000Z",
+  "updated_at": "2026-09-02T10:38:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "nb",
+    "no"
+  ],
+  "tags": [
+    "mlx",
+    "whisper",
+    "automatic-speech-recognition",
+    "nb",
+    "no",
+    "base_model:NbAiLab/nb-whisper-base",
+    "base_model:finetune:NbAiLab/nb-whisper-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143677154,
+  "storage_human": "144 MB",
+  "base_model": "NbAiLab/nb-whisper-base",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FredrikKarlssonSpeech/nb-whisper-base-onnx · Hugging Face",
+      "url": "https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-base-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FredrikKarlssonSpeech/nb-whisper-large-onnx · Hugging Face",
+      "url": "https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-large-onnx",
+      "snippet": "Original Model This is an ONNX conversion of NbAiLab/nb-whisper-large. See the original model card for training details, performance metrics, and dataset information."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "GitHub - NbAiLab/nb-whisper",
+      "url": "https://github.com/NbAiLab/nb-whisper",
+      "snippet": "nb-whisper This is the code for the Whisper training at the National Library of Norway. Currently the main project at the moment is training Whisper using Flax on TPUs."
+    },
+    {
+      "title": "nb-whisper-base (ONNX) - Models",
+      "url": "https://www.modelscope.cn/models/onnx-community/nb-whisper-base-ONNX/summary",
+      "snippet": "NB-Whisper Base Introducing the Norwegian NB-Whisper Base model, proudly developed by the National Library of Norway. NB-Whisper is a cutting-edge series of models designed for automatic speech recognition (ASR) and speech translation. These models are based on the work of OpenAI&#x27;s Whisper. Each model in the series has been trained for 250,000 steps, utilizing a diverse dataset of 8 million ..."
+    }
+  ]
+}

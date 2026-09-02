@@ -5,7 +5,7 @@
   "author": "q1716523669",
   "url": "https://huggingface.co/q1716523669/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupB-endpoint",
   "created_at": "2026-08-25T04:55:39.000Z",
-  "updated_at": "2026-08-31T22:15:10.000Z",
+  "updated_at": "2026-09-02T02:09:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 39,
   "trending_score": 0,
   "parameters": 695296,
   "parameters_human": "695296",
-  "storage_bytes": 17068178388,
-  "storage_human": "17.1 GB",
+  "storage_bytes": 119409916517,
+  "storage_human": "119.4 GB",
   "base_model": "OpenGVLab/InternVL3_5-8B-HF",
   "formats": [
     "safetensors"

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "guell00/J-Space-Deliberation",
+  "slug": "guell00-j-space-deliberation",
+  "author": "guell00",
+  "url": "https://huggingface.co/guell00/J-Space-Deliberation",
+  "created_at": "2026-07-26T17:09:05.000Z",
+  "updated_at": "2026-09-02T02:08:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-generation",
+    "conversational",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:finetune:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 599596345,
+  "storage_human": "600 MB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "guell00/J-Space-Deliberation · Hugging Face",
+      "url": "https://huggingface.co/guell00/J-Space-Deliberation",
+      "snippet": "guell00 / J-Space-Deliberation like 1 Text Generation conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new J-Space Deliberation Engine Gemma 4 E4B + Jacobian Lens 📌 Como Funciona Deliberação Latente + CoT Nativo 🧩 Workspace Causal de 5 Slots ⚡ Quantização NF4 em Tempo de Execução 🛠️ Instalação 🚀 Como Executar a ..."
+    },
+    {
+      "title": "guell00 (Miguel p r) - Hugging Face",
+      "url": "https://huggingface.co/guell00",
+      "snippet": "Modelos de linguagem natural, GPT, Python, Unity, Deep Learning, Raciocínio Computacional."
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "A global workspace in language models &#92; Anthropic",
+      "url": "https://www.anthropic.com/research/global-workspace",
+      "snippet": "This raises a question that matters to anyone who evaluates AI systems: when a model behaves well on a test of its ethics, how much of that depends on the model suspecting it&#x27;s being tested? The J-lens allowed us to get at this question."
+    }
+  ]
+}

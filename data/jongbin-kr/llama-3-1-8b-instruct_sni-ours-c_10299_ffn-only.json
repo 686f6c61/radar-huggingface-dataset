@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jongbin-kr/llama-3.1-8b-instruct_SNI-ours-c_10299_ffn-only",
+  "slug": "jongbin-kr-llama-3-1-8b-instruct_sni-ours-c_10299_ffn-only",
+  "author": "Jongbin-kr",
+  "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_SNI-ours-c_10299_ffn-only",
+  "created_at": "2026-09-02T07:09:02.000Z",
+  "updated_at": "2026-09-02T08:16:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2395917409,
+  "storage_human": "2.4 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jongbin-kr/llama-3.1-8b-instruct-sni-ffn-lora · Hugging Face",
+      "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-sni-ffn-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jongbin-kr/llama-3.1-8b-instruct-4x1-moe at main - Hugging Face",
+      "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe/tree/main",
+      "snippet": "Install from pip and serve model ... Use Docker images ... Docker Model Runner How to use Jongbin-kr/llama-3.1-8b-instruct-4x1-moe with Docker Model Runner: ... main llama-3.1-8b-instruct-4x1-moe 49.9 GB Ctrl+K Ctrl+K 1 contributor History:2 commits Jongbin-kr Add files using upload-large-folder tool 8c13af6 verified1 day ago .gitattributes ..."
+    },
+    {
+      "title": "Llama 3.1 8B Instruct 4x1 MoE by Jongbin-kr",
+      "url": "https://llm-explorer.com/model/Jongbin-kr%2Fllama-3.1-8b-instruct-4x1-moe,x8KU8QVpjhD01MwoyT7Ih",
+      "snippet": "Llama 3.1 8B Instruct 4x1 MoE is an open-source 8b LLM by Jongbin-kr. VRAM 50.2GB, 128K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Llama-v3.1-8B-Instruct - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/llama_v3_1_8b_instruct",
+      "snippet": "Llama-v3.1-8B-Instruct State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. Llama 3 is a family of LLMs. The model is quantized to w4a16 (4‑bit weights and 16‑bit activations) and part of the model is quantized to w8a16 (8‑bit weights and 16‑bit activations) making it suitable for on‑device deployment. For Prompt and output ..."
+    },
+    {
+      "title": "Llama_3_1_8B_Instruct.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/NeuralFalconYT/Meta-Llama-3.1-Colab/blob/main/Llama_3_1_8B_Instruct.ipynb",
+      "snippet": "Step 1: visit Llama-3.1-8B-Instruct Page Step 2: Wait a few minutes, you will receive access from Meta. Step 3: Access Hugging Face Token Step 4: Copy paste Hugging Face Token in Google Colab"
+    }
+  ]
+}

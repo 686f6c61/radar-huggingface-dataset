@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "3CTeam/fpvla-stage2-827-50k",
+  "slug": "3cteam-fpvla-stage2-827-50k",
+  "author": "3CTeam",
+  "url": "https://huggingface.co/3CTeam/fpvla-stage2-827-50k",
+  "created_at": "2026-09-02T07:21:16.000Z",
+  "updated_at": "2026-09-02T08:07:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "openvla",
+    "fp-vla",
+    "vision-language-action",
+    "robotics",
+    "trace-prediction",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7626343875,
+  "parameters_human": "7.63B",
+  "storage_bytes": 30506002351,
+  "storage_human": "30.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "3CTeam (3CTeam) - Hugging Face",
+      "url": "https://huggingface.co/3CTeam/models",
+      "snippet": "AI & ML interests Tsinghua 3CTeam explores the frontier of artificial intelligence, building intelligent systems that perceive, reason, and act in the physical world."
+    },
+    {
+      "title": "3CTeam/fpvla-fsdp-stage2-829-40k · Hugging Face",
+      "url": "https://huggingface.co/3CTeam/fpvla-fsdp-stage2-829-40k",
+      "snippet": "3cteam/fpvla-stage2-827 FP-VLA (Vision-Language-Action) model with trace prediction capability, fine-tuned from openvla/openvla-7b."
+    },
+    {
+      "title": "GitHub - alan-turing-institute/AIrsenal: Machine learning Fantasy ...",
+      "url": "https://github.com/alan-turing-institute/AIrsenal",
+      "snippet": "Machine learning Fantasy Premier League team. Contribute to alan-turing-institute/AIrsenal development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 662+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    }
+  ]
+}

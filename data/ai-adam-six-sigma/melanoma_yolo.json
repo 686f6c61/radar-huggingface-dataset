@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Ai-Adam-Six-Sigma/melanoma_Yolo",
+  "slug": "ai-adam-six-sigma-melanoma_yolo",
+  "author": "Ai-Adam-Six-Sigma",
+  "url": "https://huggingface.co/Ai-Adam-Six-Sigma/melanoma_Yolo",
+  "created_at": "2026-09-02T07:34:24.000Z",
+  "updated_at": "2026-09-02T07:43:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6244330,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AdamSobanski/melanoma_yolo",
+      "url": "https://github.com/AdamSobanski/melanoma_yolo",
+      "snippet": "Role in the pipeline This model is the fast first pass in a larger pipeline: it crops the lesion region out of the full dermoscopic image before handing it off to a U-Net segmentation model and an EfficientNet-B4 classifier. Full pipeline: melanoma_pipline_yolo_seg_class_v2."
+    },
+    {
+      "title": "Ai-Adam-Six-Sigma/melanoma-classifier · Hugging Face",
+      "url": "https://huggingface.co/Ai-Adam-Six-Sigma/melanoma-classifier",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ai-Adam-Six-Sigma (Sobanski) - Hugging Face",
+      "url": "https://huggingface.co/Ai-Adam-Six-Sigma/models",
+      "snippet": "Ai-Adam-Six-Sigma&#x27;s models1 Sort: Recently updated Ai-Adam-Six-Sigma/melanoma-classifier Updated 2 days ago• 1"
+    },
+    {
+      "title": "GitHub - AdamSobanski/melanoma_pipline_yolo_seg_class_v2",
+      "url": "https://github.com/AdamSobanski/melanoma_pipline_yolo_seg_class_v2",
+      "snippet": "Contribute to AdamSobanski/melanoma_pipline_yolo_seg_class_v2 development by creating an account on GitHub."
+    },
+    {
+      "title": "YOLO-based Melanoma Detection Model on GitHub - LinkedIn",
+      "url": "https://www.linkedin.com/posts/faeghe-kashani_artificialintelligence-deeplearning-computervision-activity-7498060139799830528-CuEt",
+      "snippet": "From Learning to Impact 🧬 I&#x27;m excited to share a new AI project I&#x27;ve built: a YOLO-based computer vision model for melanoma skin lesion detection, developed using medical imaging data from the ..."
+    }
+  ]
+}

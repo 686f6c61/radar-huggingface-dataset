@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "deepinv/FBI_denoiser",
+  "slug": "deepinv-fbi_denoiser",
+  "author": "deepinv",
+  "url": "https://huggingface.co/deepinv/FBI_denoiser",
+  "created_at": "2026-09-02T09:22:39.000Z",
+  "updated_at": "2026-09-02T09:22:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10032113,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - deepinv/deepinv: DeepInverse: a PyTorch library for solving ...",
+      "url": "https://github.com/deepinv/deepinv",
+      "snippet": "DeepInverse is an open-source PyTorch-based library for solving imaging inverse problems with deep learning. The library is part of the official PyTorch Ecosystem. deepinv accelerates deep learning research across imaging domains, enhances research reproducibility via a common modular framework of problems and algorithms, and lowers the entrance bar to new practitioners."
+    },
+    {
+      "title": "FBI-Denoiser: Fast Blind Image Denoiser for Poisson-Gaussian Noise - DeepAI",
+      "url": "https://deepai.org/publication/fbi-denoiser-fast-blind-image-denoiser-for-poisson-gaussian-noise",
+      "snippet": "To that end, we propose Fast Blind Image Denoiser (FBI-Denoiser) for Poisson-Gaussian noise, which consists of two neural network models; 1) PGE-Net that estimates Poisson-Gaussian noise parameters 2000 times faster than the conventional methods and 2) FBI-Net that realizes a much more efficient BSN for pixelwise affine denoiser in terms of the ..."
+    },
+    {
+      "title": "FBI-Denoiser/README.md at main · csm9493/FBI-Denoiser",
+      "url": "https://github.com/csm9493/FBI-Denoiser/blob/main/README.md",
+      "snippet": "Official Code of FBI-Denoiser (Oral, CVPR 2021). Contribute to csm9493/FBI-Denoiser development by creating an account on GitHub."
+    },
+    {
+      "title": "{wotjr3868, csm9593}@skku.edu, tsmoon@snu.ac.kr arXiv:2105.10967v1 ...",
+      "url": "https://arxiv.org/pdf/2105.10967",
+      "snippet": "FBI-Denoiser: Fast Blind Image Denoiser for Poisson-Gaussian Noise Jaeseok Byun1*, Sungmin Cha1*, and Taesup Moon2† 1Department of Electrical and Computer Engineering, Sungkyunkwan University, Suwon, Korea 2Department of Electrical and Computer Engineering, Seoul National University, Seoul, Korea {wotjr3868, csm9593}@skku.edu, tsmoon@snu.ac.kr"
+    },
+    {
+      "title": "DeepInverse: a Python library for imaging with deep learning — deepinv ...",
+      "url": "https://deepinv.org/",
+      "snippet": "DeepInverse is an open-source PyTorch-based library for solving imaging inverse problems with deep learning. The library is part of the official PyTorch Ecosystem. deepinv accelerates deep learning research across imaging domains, enhances research reproducibility via a common modular framework of problems and algorithms, and lowers the entrance bar to new practitioners. GitHub: deepinv ..."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Liiesl/text-styling-classificationv1",
+  "slug": "liiesl-text-styling-classificationv1",
+  "author": "Liiesl",
+  "url": "https://huggingface.co/Liiesl/text-styling-classificationv1",
+  "created_at": "2026-09-02T08:35:09.000Z",
+  "updated_at": "2026-09-02T08:51:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "onnx",
+    "computer-vision",
+    "text-styling",
+    "ocr-attributes",
+    "edgenext",
+    "multi-task",
+    "image-feature-extraction",
+    "base_model:timm/edgenext_small.usi_in1k",
+    "base_model:finetune:timm/edgenext_small.usi_in1k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24681122,
+  "storage_human": "25 MB",
+  "base_model": "timm/edgenext_small.usi_in1k",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Custom text classification - Foundry Tools | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/overview",
+      "snippet": "Custom text classification enables users to build custom AI models to classify text into custom classes predefined by the user. By creating a custom text classification project, developers can iteratively label data, train, evaluate, and improve model performance before making it available for consumption."
+    },
+    {
+      "title": "Quickstart - Custom text classification - Foundry Tools",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/quickstart",
+      "snippet": "Use this article to get started with creating a custom text classification project where you can train custom models for text classification. A model is AI software trained to do a certain task. For this system, the models classify text, and are trained by learning from tagged data. Custom text classification supports two types of projects: Single label classification - you can assign a single ..."
+    },
+    {
+      "title": "PDF Semantic Classification of Car Styling Using Machine Learning &#x27;2279",
+      "url": "https://pdfs.semanticscholar.org/b599/1d945a8b2920270d2658a2ea17b1b3c00b4c.pdf",
+      "snippet": "Although many AI tools are available to assist car designers, research on applying machine learning techniques to evaluate product semantics is rare. Therefore, we developed a classification model that helps designers identify and evaluate the semantics conveyed by car styling using the Waikato Environment for Knowledge Analysis (WEKA), a ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "azure-ai-docs/articles/ai-services/language-service/custom-text ...",
+      "url": "https://github.com/MicrosoftDocs/azure-ai-docs/blob/main/articles/ai-services/language-service/custom-text-classification/overview.md",
+      "snippet": "Custom text classification enables users to build custom AI models to classify text into custom classes predefined by the user. By creating a custom text classification project, developers can iteratively label data, train, evaluate, and improve model performance before making it available for consumption."
+    }
+  ]
+}

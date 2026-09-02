@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "EbineshM/slm-rl-colab",
+  "slug": "ebineshm-slm-rl-colab",
+  "author": "EbineshM",
+  "url": "https://huggingface.co/EbineshM/slm-rl-colab",
+  "created_at": "2026-09-02T07:39:52.000Z",
+  "updated_at": "2026-09-02T07:40:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "reinforcement-learning",
+    "atari",
+    "slm-rl",
+    "boxing",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66699104,
+  "storage_human": "67 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "heshinth/slm-rl-colab · Hugging Face",
+      "url": "https://huggingface.co/heshinth/slm-rl-colab",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "apsjai03/slm-rl-colab · Hugging Face",
+      "url": "https://huggingface.co/apsjai03/slm-rl-colab",
+      "snippet": "Instructions to use apsjai03/slm-rl-colab with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use apsjai03/slm-rl-colab with PEFT:"
+    },
+    {
+      "title": "Fine-Tuning Large Language Models: How Vertex AI Takes LLMs to the Next ...",
+      "url": "https://codelabs.developers.google.com/llm-finetuning-supervised",
+      "snippet": "3. Fine-tune a large language model This codelab uses Vertex AI SDK for Python to fine-tune the model. You can perform fine-tuning using the other options as well — HTTP, CURL command, Java SDK, Console. You can fine-tune and evaluate your model for customized responses in 5 steps. You can refer to the full code in the file llm_fine_tuning_supervised.ipynb from the repository."
+    },
+    {
+      "title": "04a-finetuning-RL.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/CogSciPrag/Understanding-LLMs-course/blob/main/understanding-llms/tutorials/04a-finetuning-RL.ipynb",
+      "snippet": "In particular, RL allows to fine-tune LLMs towards human preferences and commericial usability, because its mechanics lend itself to training a model based on a more abstract signal whether an output is good or bad (i.e., let it discover how to generate output that recevies a \"good\" reward!), rather than based on particular demonstrations."
+    },
+    {
+      "title": "Fully Fine-tune a Small Language Model with Hugging Face Tutorial",
+      "url": "https://www.learnhuggingface.com/notebooks/hugging_face_llm_full_fine_tune_tutorial",
+      "snippet": "Learn how to fully fine-tune a Small Language Model on a custom dataset with Hugging Face Transformers."
+    }
+  ]
+}

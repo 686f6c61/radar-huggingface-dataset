@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "1goldexperience1/towel_fold_smolvla_shaping_005000",
+  "slug": "1goldexperience1-towel_fold_smolvla_shaping_005000",
+  "author": "1goldexperience1",
+  "url": "https://huggingface.co/1goldexperience1/towel_fold_smolvla_shaping_005000",
+  "created_at": "2026-09-02T08:56:39.000Z",
+  "updated_at": "2026-09-02T09:02:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "vision-language-action",
+    "real-robot",
+    "piper",
+    "reinforcement-learning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906732088,
+  "storage_human": "907 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1goldexperience1 (kkkkkkkk) - Hugging Face",
+      "url": "https://huggingface.co/1goldexperience1",
+      "snippet": "datasets1 1goldexperience1/towel_fold_dataset_aug_v1 Viewer •Updated 1 day ago•4• 10"
+    },
+    {
+      "title": "1goldexperience1/towel_fold_dataset_aug_v1 - Hugging Face",
+      "url": "https://huggingface.co/datasets/1goldexperience1/towel_fold_dataset_aug_v1/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - dk2472780158-ctrl/piper-dual-arm-smolvla-towel-folding",
+      "url": "https://github.com/dk2472780158-ctrl/piper-dual-arm-smolvla-towel-folding",
+      "snippet": "🦾 Dual-Arm SmolVLA Towel Folding A vision-language-action robot that folds a real towel — SmolVLA shaping on top of a proven ACT safety base, blended continuously so it never jumps and can&#x27;t lose control."
+    },
+    {
+      "title": "GitHub - zyqdragon/lerobot_smolvla: LeRobot: Making AI for Robotics ...",
+      "url": "https://github.com/zyqdragon/lerobot_smolvla",
+      "snippet": "The LeRobot team 🤗 for building SmolVLA Paper, Blog. Thanks to Tony Zhao, Zipeng Fu and colleagues for open sourcing ACT policy, ALOHA environments and datasets."
+    },
+    {
+      "title": "SmolVLA: A vision-language-action model for affordable and efficient ...",
+      "url": "https://arxiv.org/html/2506.01844v1",
+      "snippet": "3 SmolVLA: small, efficient and capable Overview. SmolVLA is a lightweight VLA composed of a compact pretrained VLM, and an action expert trained with flow matching. Given multiple images and a language instruction describing the task, the model outputs a chunk of actions."
+    }
+  ]
+}

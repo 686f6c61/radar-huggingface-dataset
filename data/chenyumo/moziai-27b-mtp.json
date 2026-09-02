@@ -5,7 +5,7 @@
   "author": "chenyumo",
   "url": "https://huggingface.co/chenyumo/moziAI-27B-MTP",
   "created_at": "2026-08-24T18:27:16.000Z",
-  "updated_at": "2026-09-01T03:15:40.000Z",
+  "updated_at": "2026-09-01T18:32:04.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 1,
+  "likes": 2,
   "downloads_30d": 1774,
   "trending_score": 0,
   "parameters": 27320697856,

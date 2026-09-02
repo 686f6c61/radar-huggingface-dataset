@@ -37,8 +37,8 @@
   "trending_score": 0,
   "parameters": 5419330688,
   "parameters_human": "5.42B",
-  "storage_bytes": 34709738660,
-  "storage_human": "34.7 GB",
+  "storage_bytes": 19530514265,
+  "storage_human": "19.5 GB",
   "base_model": "apodex/Apodex-1.1-mini",
   "formats": [
     "mlx",

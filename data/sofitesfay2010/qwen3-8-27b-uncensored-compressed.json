@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "SofiTesfay2010/Qwen3.8-27B-Uncensored-Compressed",
+  "slug": "sofitesfay2010-qwen3-8-27b-uncensored-compressed",
+  "author": "SofiTesfay2010",
+  "url": "https://huggingface.co/SofiTesfay2010/Qwen3.8-27B-Uncensored-Compressed",
+  "created_at": "2026-09-02T09:38:53.000Z",
+  "updated_at": "2026-09-02T10:41:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "quantization",
+    "sherry",
+    "1.25bpw",
+    "extreme-compression",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:finetune:orcarouter/Qwen3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7279541580,
+  "parameters_human": "7.28B",
+  "storage_bytes": 10629631320,
+  "storage_human": "10.6 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.8 27B Uncensored - GitHub",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Model doesn&#x27;t respond / refuses Verify you pulled abliterated weights: ollama show qwen3.8:27b-uncensored --modelfile should show FROM orcarouter/... If using --legacy, the system pack alone may not fully suppress refusals"
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Ollama build of Qwen3.8-27B-Uncensored — an abliterated (refusal-removed) build of Qwen&#x27;s Qwen3.8-27B, a 27B dense hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with reasoning, tool-calling, and an MTP speculative-decoding head. Sixteen tags from 2-bit to 8-bit, each with the mmproj vision projector bundled in — nothing extra to fetch. Browse all ..."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/qwen/qwen3.8-27b-uncensored",
+      "snippet": "Qwen 3.8 27B Uncensored is an NVFP4 open-weight multimodal model LoRA-tuned for fewer refusals across chat, coding, reasoning, tool use, and long-context work."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored Demo - a Hugging Face Space by quagentris",
+      "url": "https://huggingface.co/spaces/quagentris/qwen38-uncensored-demo",
+      "snippet": "This web app lets you talk to the Qwen3.8‑27B uncensored language model. Enter your OrcaRouter API key and type a message, then the model replies with a text answer (and optional reasoning)."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    }
+  ]
+}

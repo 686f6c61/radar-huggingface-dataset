@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "bhaskaro/ainotes-whisper-urdu-q5_1",
+  "slug": "bhaskaro-ainotes-whisper-urdu-q5_1",
+  "author": "bhaskaro",
+  "url": "https://huggingface.co/bhaskaro/ainotes-whisper-urdu-q5_1",
+  "created_at": "2026-09-02T11:28:16.000Z",
+  "updated_at": "2026-09-02T11:28:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisper.cpp",
+  "languages": [
+    "ur"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "whisper",
+    "ggml",
+    "automatic-speech-recognition",
+    "urdu",
+    "ur",
+    "base_model:Abdullah17/whisper-small-urdu",
+    "base_model:finetune:Abdullah17/whisper-small-urdu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 190085487,
+  "storage_human": "190 MB",
+  "base_model": "Abdullah17/whisper-small-urdu",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ihanif/whisper-medium-urdu · Hugging Face",
+      "url": "https://huggingface.co/ihanif/whisper-medium-urdu",
+      "snippet": "This model is a fine-tuned version of openai/whisper-medium on the mozilla-foundation/common_voice_11_0 ur dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "AiNotes — AI Study Notes, Flashcards & Quiz Generator",
+      "url": "https://www.ainotes.online/",
+      "snippet": "AI study companion for MDCAT, ECAT, CSS, PMS, and board exams. Paste text or upload PDF to generate structured notes, Urdu translations, flashcards, and MCQs instantly."
+    },
+    {
+      "title": "GitHub - MuhammadHasnainKayani/whisper-finetune-urdu-pashto",
+      "url": "https://github.com/MuhammadHasnainKayani/whisper-finetune-urdu-pashto",
+      "snippet": "This repository contains scripts to fine-tune OpenAI Whisper for Urdu and Pashto, languages not officially supported in the original Whisper model. By training on Common Voice and custom datasets, these models achieve improved transcription accuracy for low-resource languages."
+    },
+    {
+      "title": "Abdul145/whisper-medium-urdu-custom · Hugging Face",
+      "url": "https://huggingface.co/Abdul145/whisper-medium-urdu-custom",
+      "snippet": "The Whisper model is a general-purpose ASR system trained on a large multilingual dataset, capable of transcribing speech to text in many languages, including Urdu."
+    },
+    {
+      "title": "AiNotes PK — Free Notes, Books & MCQ Practice",
+      "url": "https://ainotes.pk/",
+      "snippet": "Download free notes, practice MCQs and improve your exam preparation with AiNotes PK"
+    }
+  ]
+}

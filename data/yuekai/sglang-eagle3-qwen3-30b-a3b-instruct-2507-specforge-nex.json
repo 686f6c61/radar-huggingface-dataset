@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "yuekai/SGLang-EAGLE3-Qwen3-30B-A3B-Instruct-2507-SpecForge-Nex",
+  "slug": "yuekai-sglang-eagle3-qwen3-30b-a3b-instruct-2507-specforge-nex",
+  "author": "yuekai",
+  "url": "https://huggingface.co/yuekai/SGLang-EAGLE3-Qwen3-30B-A3B-Instruct-2507-SpecForge-Nex",
+  "created_at": "2026-09-02T02:10:40.000Z",
+  "updated_at": "2026-09-02T02:37:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "dataset:mlabonne/open-perfectblend",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 183168640,
+  "parameters_human": "183.2M",
+  "storage_bytes": 366378848,
+  "storage_human": "366 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SGLang-EAGLE3-Qwen3-30B-A3B-Instruct-2507-SpecForge-Nex",
+      "url": "https://huggingface.co/lmsys/SGLang-EAGLE3-Qwen3-30B-A3B-Instruct-2507-SpecForge-Nex",
+      "snippet": "EAGLE3 For Qwen/Qwen3-30B-A3B-Instruct-2507 About SpecBundle is an open-source initiative, jointly driven by the community and industry, to democratize speculative decoding by providing high-performance speculative decoding draft weights for mainstream open-source models. This checkpoint was trained by the Nex-AGI Team and released as the phase 1 of SpecBundle release. We regenerated the ..."
+    },
+    {
+      "title": "SGLang-EAGLE3-Qwen3-30B-A3B-Instruct-2507-SpecForge-Nex",
+      "url": "https://huggingface.co/lmsys/SGLang-EAGLE3-Qwen3-30B-A3B-Instruct-2507-SpecForge-Nex/blob/main/README.md",
+      "snippet": "EAGLE3 For Qwen/Qwen3-30B-A3B-Instruct-2507 About SpecBundle is an open-source initiative, jointly driven by the community and industry, to democratize speculative decoding by providing high-performance speculative decoding draft weights for mainstream open-source models."
+    },
+    {
+      "title": "Qwen3 - SGLang Documentation",
+      "url": "https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3",
+      "snippet": "This can be a local folder or a Hugging Face repo ID such as lmsys/SGLang-EAGLE3-Qwen3-235B-A22B-Instruct-2507-SpecForge-Meituan. Xeon CPU service configuration: Please refer to the Notes part in the serving engine launching section in the SGLang CPU server document to better understand how to configure the arguments, especially for TP (tensor ..."
+    },
+    {
+      "title": "GitHub - Yunhai-Hu/EAGLE-Qwen3: Official Implementation of EAGLE-1 ...",
+      "url": "https://github.com/Yunhai-Hu/EAGLE-Qwen3",
+      "snippet": "Official Implementation of EAGLE-1 (ICML&#x27;24), EAGLE-2 (EMNLP&#x27;24), and EAGLE-3. - Yunhai-Hu/EAGLE-Qwen3"
+    },
+    {
+      "title": "Qwen3-30B-A3B - SGLang Documentation",
+      "url": "https://docs.sglang.io/docs/hardware-platforms/ascend-npus/model-deployment/tutorials/qwen3_30b_a3b",
+      "snippet": "Qwen3-30B-A3B is a Mixture-of-Experts (MoE) large language model developed by Alibaba, featuring 30B total parameters with 3B active parameters. It employs Grouped-Query Attention (GQA) and Qwen3MoE architecture, with support for EAGLE3 speculative decoding for accelerated inference. The model excels at instruction following, logical reasoning, text comprehension, mathematics, science, coding ..."
+    }
+  ]
+}

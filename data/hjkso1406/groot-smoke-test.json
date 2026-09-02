@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hjkso1406/groot-smoke-test",
+  "slug": "hjkso1406-groot-smoke-test",
+  "author": "hjkso1406",
+  "url": "https://huggingface.co/hjkso1406/groot-smoke-test",
+  "created_at": "2026-09-02T07:56:02.000Z",
+  "updated_at": "2026-09-02T07:56:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot",
+    "robotics",
+    "dataset:hjkso1406/so101-4tasks-100eps",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hjkso1406 (Heo) - Hugging Face",
+      "url": "https://huggingface.co/hjkso1406/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 1 day ago ... published a dataset 1 day ago"
+    },
+    {
+      "title": "nebius-physical-ai/npa/src/npa/smoke/test_groot_env.py at main - GitHub",
+      "url": "https://github.com/nebius/nebius-physical-ai/blob/main/npa/src/npa/smoke/test_groot_env.py",
+      "snippet": "Contribute to nebius/nebius-physical-ai development by creating an account on GitHub."
+    },
+    {
+      "title": "AI / Tech | Nvidia Unveils Groot N1, an AI Model for ... - Instagram",
+      "url": "https://www.instagram.com/reel/DHYB5jOgUNz/",
+      "snippet": "174K likes, 1,157 comments - chatgptricks on March 19, 2025: \"Nvidia Unveils Groot N1, an AI Model for Humanoid Robots, as Disney&#x27;s BDX Droids Take the Stage At GTC 2025, Nvidia CEO Jensen Huang introduced Groot N1, a new AI foundation model designed to improve how humanoid robots perceive and interact with the world. In collaboration with Disney Research and Google DeepMind, Nvidia is also ..."
+    },
+    {
+      "title": "nebius-physical-ai/npa/src/npa/smoke/test_groot_functional.py ... - GitHub",
+      "url": "https://github.com/nebius/nebius-physical-ai/blob/main/npa/src/npa/smoke/test_groot_functional.py",
+      "snippet": "139 lines (113 loc) · 3.97 KB main nebius-physical-ai / npa / src / npa / smoke / test_groot_functional.py Top Code Blame 139 lines (113 loc) · 3.97 KB Raw 1 2 3 4 ..."
+    },
+    {
+      "title": "hjkso1406/xvla-so101-merged-v1-aug · Hugging Face",
+      "url": "https://huggingface.co/hjkso1406/xvla-so101-merged-v1-aug",
+      "snippet": "hjkso1406 / xvla-so101-merged-v1-aug like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 0.9B params Tensor type BF16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    }
+  ]
+}

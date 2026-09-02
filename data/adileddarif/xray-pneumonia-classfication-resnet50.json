@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "adileddarif/Xray-Pneumonia-Classfication-Resnet50",
+  "slug": "adileddarif-xray-pneumonia-classfication-resnet50",
+  "author": "adileddarif",
+  "url": "https://huggingface.co/adileddarif/Xray-Pneumonia-Classfication-Resnet50",
+  "created_at": "2026-09-02T10:26:23.000Z",
+  "updated_at": "2026-09-02T10:26:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Hierarchical Deep Learning Framework with Explainable AI for ...",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11661854",
+      "snippet": "Pneumonia remains a significant contributor to respiratory-related mortality, especially in children and the elderly. Deep learning has enabled rapid and, in some instances, remarkably accurate analysis of chest X-rays. However, many current models are far too simplistic. Binary classifiers only go so far in identifying pneumonia, and flat multi-class models neglect how a physician might think ..."
+    },
+    {
+      "title": "pranavsoftware/Medical-Image-Analysis-X-Ray-Pneumonia ... - GitHub",
+      "url": "https://github.com/pranavsoftware/Medical-Image-Analysis-X-Ray-Pneumonia-Classification",
+      "snippet": "Medical Image Analysis: X-Ray Pneumonia Classification A deep learning system for automated pneumonia detection from chest X-ray images using transfer learning and explainable AI techniques."
+    },
+    {
+      "title": "PneumoNet: Artificial Intelligence Assistance for Pneumonia ... - MDPI",
+      "url": "https://www.mdpi.com/2076-3417/15/13/7605",
+      "snippet": "The framework comprises (a) a new deep learning-based classification model for the detection of pneumonia, which expands on the AlexNet backbone for feature extraction in X-ray images and a new head in its final layers that is tailored for (X-ray) pneumonia classification."
+    },
+    {
+      "title": "neda-deeplearning/medical-ai-pneumonia-detection - GitHub",
+      "url": "https://github.com/neda-deeplearning/medical-ai-pneumonia-detection",
+      "snippet": "Medical AI: Pneumonia Detection from Chest X-ray Images Deep learning project using ResNet50 transfer learning to classify chest X-ray images as Normal or Pneumonia."
+    },
+    {
+      "title": "Interpretable Deep Learning for Pneumonia Detection Using Chest X-Ray ...",
+      "url": "https://www.mdpi.com/2078-2489/16/1/53",
+      "snippet": "Pneumonia remains a global health issue, creating the need for accurate detection methods for effective treatment. Deep learning models like ResNet50 show promise in detecting pneumonia from chest X-rays; however, their black-box nature limits the transparency, which fails to meet that needed for clinical trust. This study aims to improve model interpretability by comparing four ..."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Sky-Kim/functiongemma-270m-finetune",
+  "slug": "sky-kim-functiongemma-270m-finetune",
+  "author": "Sky-Kim",
+  "url": "https://huggingface.co/Sky-Kim/functiongemma-270m-finetune",
+  "created_at": "2026-09-02T01:49:18.000Z",
+  "updated_at": "2026-09-02T02:17:36.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "function-calling",
+    "gemma",
+    "gemma3",
+    "on-device",
+    "unity",
+    "sentis",
+    "lora",
+    "text-generation",
+    "en",
+    "ko",
+    "base_model:google/functiongemma-270m-it",
+    "base_model:adapter:google/functiongemma-270m-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3511779761,
+  "storage_human": "3.5 GB",
+  "base_model": "google/functiongemma-270m-it",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sky-Kim/functiongemma-270m-finetune · Hugging Face",
+      "url": "https://huggingface.co/Sky-Kim/functiongemma-270m-finetune",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FunctionGemma (Function Calling) | google-gemini/gemma-cookbook | DeepWiki",
+      "url": "https://deepwiki.com/google-gemini/gemma-cookbook/3.3-functiongemma-(function-calling)",
+      "snippet": "Relevant source files FunctionGemma is a 270M parameter model fine-tuned from the Gemma 3 270M instruction-tuned checkpoint specifically for function calling and tool integration tasks. This page documents the model architecture, function calling format, and two distinct fine-tuning approaches: Hugging Face TRL and Google Tunix."
+    },
+    {
+      "title": "GitHub - blumfontein/functiongemma",
+      "url": "https://github.com/blumfontein/functiongemma",
+      "snippet": "FunctionGemma is a compact 270M parameter model designed for function calling - the ability to parse user requests and map them to specific tool/API calls. This project finetunes it on mobile device actions like opening apps, making calls, sending messages, etc."
+    },
+    {
+      "title": "FunctionGemma model overview | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/functiongemma",
+      "snippet": "FunctionGemma is a specialized version of our Gemma 3 270M model tuned for function calling. It is designed as a strong base for further training into custom, fast, private, local agents that translate natural language into executable API actions."
+    },
+    {
+      "title": "FunctionGemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/functiongemma/",
+      "snippet": "FunctionGemma is designed as a base for further training and can provide an efficient pathway to production-grade performance. In our evaluation on the \"Mobile Actions\" dataset, fine-tuning improved accuracy by 47% over the base model."
+    }
+  ]
+}

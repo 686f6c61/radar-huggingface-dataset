@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "adileddarif/Pneumonia-Detection-YOLOV8",
+  "slug": "adileddarif-pneumonia-detection-yolov8",
+  "author": "adileddarif",
+  "url": "https://huggingface.co/adileddarif/Pneumonia-Detection-YOLOV8",
+  "created_at": "2026-09-02T10:19:59.000Z",
+  "updated_at": "2026-09-02T10:21:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22524394,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YOLOv8 framework for COVID-19 and pneumonia detection using synthetic ...",
+      "url": "https://journals.sagepub.com/doi/10.1177/20552076251341092",
+      "snippet": "The integration of synthetic data generation, advanced DL, and XAI significantly enhances the detection of COVID-19 and pneumonia while fostering trust in AI systems. YOLOv8&#x27;s high accuracy, coupled with interpretable Grad-CAM visualizations and LLM-driven analysis, promotes transparency crucial for clinical adoption. Future research will focus on developing a clinically viable, human-in-the ..."
+    },
+    {
+      "title": "YOLOv8 framework for COVID-19 and pneumonia detection using synthetic ...",
+      "url": "https://radaislice.com/paper/doi/10.1177/20552076251341092",
+      "snippet": "The integration of synthetic data generation, advanced DL, and XAI significantly enhances the detection of COVID-19 and pneumonia while fostering trust in AI systems. YOLOv8&#x27;s high accuracy, coupled with interpretable Grad-CAM visualizations and LLM-driven analysis, promotes transparency crucial for clinical adoption."
+    },
+    {
+      "title": "Intelligent Pneumonia Diagnosis Based on YOLOv8",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11220106",
+      "snippet": "Accurate and rapid diagnosis of pneumonia is critical for reducing mortality rates of respiratory diseases. Traditional chest radiograph analysis relies heavily on radiologists&#x27; experience, yet issues such as low efficiency and high misdiagnosis rates significantly compromise clinical diagnostic timeliness and accuracy. This study proposes an intelligent pneumonia diagnosis model based on ..."
+    },
+    {
+      "title": "Pneumonia Detection and Severity Grading Using YOLOv8",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11295105",
+      "snippet": "Pneumonia remains a global health issue, especially in resource-limited settings where timely and accurate diagnosis is lacking. In this paper, we introduce a computer-aided pneumonia detection and severity grading system using a deep learning strategy based on the YOLOv8 classification model. The system was trained on a public chest X-ray dataset comprising Normal and Pneumonia classes and ..."
+    },
+    {
+      "title": "Pneumonia-Detection-YOLO/DOCUMENTATION.md at main - GitHub",
+      "url": "https://github.com/vennelaindukuri/Pneumonia-Detection-YOLO/blob/main/DOCUMENTATION.md",
+      "snippet": "Pneumonia-Detection-YOLO is a beginner-friendly medical AI project that uses YOLOv8 object detection to identify and localize pneumonia-affected regions in chest X-ray images. The model draws bounding boxes around suspected infection areas to assist in early diagnosis and medical image analysis."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "pravsels/pi05_busybox_multitask_abs",
+  "slug": "pravsels-pi05_busybox_multitask_abs",
+  "author": "pravsels",
+  "url": "https://huggingface.co/pravsels/pi05_busybox_multitask_abs",
+  "created_at": "2026-09-02T00:04:28.000Z",
+  "updated_at": "2026-09-02T06:41:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pi05",
+    "robotics",
+    "openpi",
+    "vla",
+    "dataset:villekuosmanen/busybox_multitask",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 74646843432,
+  "storage_human": "74.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pravsels/pi05_busybox_push_green_button · Hugging Face",
+      "url": "https://huggingface.co/pravsels/pi05_busybox_push_green_button",
+      "snippet": "pi05_busybox_push_green_button Full-component fine-tune of π0.5 for busybox_push_green_button on SO101 data."
+    },
+    {
+      "title": "GitHub - ldddddddl/pi05",
+      "url": "https://github.com/ldddddddl/pi05",
+      "snippet": "the π₀.₅ model, an upgraded version of π₀ with better open-world generalization trained with knowledge insulation. For all models, we provide base model checkpoints, pre-trained on 10k+ hours of robot data, and examples for using them out of the box or fine-tuning them to your own datasets."
+    },
+    {
+      "title": "pravsels (Praveen Selvaraj) - Hugging Face",
+      "url": "https://huggingface.co/pravsels/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 15 days ago ... published a model 15 days ago"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Model Evaluator METR Hit by Credential Theft, Probing",
+      "url": "https://www.darkreading.com/identity-access-management-security/ai-model-evaluator-metr-credential-theft-probing",
+      "snippet": "AI Model Evaluator METR Hit by Credential Theft, Probing In one attack, threat actors stole an API key that ultimately led to the consumption of $600,000 in public AI model credits for the ..."
+    }
+  ]
+}

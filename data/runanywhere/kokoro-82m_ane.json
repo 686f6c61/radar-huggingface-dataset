@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "runanywhere/Kokoro-82M_ANE",
+  "slug": "runanywhere-kokoro-82m_ane",
+  "author": "runanywhere",
+  "url": "https://huggingface.co/runanywhere/Kokoro-82M_ANE",
+  "created_at": "2026-09-02T01:59:56.000Z",
+  "updated_at": "2026-09-02T02:09:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "runanywhere",
+  "languages": [],
+  "tags": [
+    "runanywhere",
+    "coreml",
+    "text-to-speech",
+    "apple-neural-engine",
+    "base_model:hexgrad/Kokoro-82M",
+    "base_model:quantized:hexgrad/Kokoro-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 326694126,
+  "storage_human": "327 MB",
+  "base_model": "hexgrad/Kokoro-82M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hexgrad/Kokoro-82M · Hugging Face",
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - hexgrad/kokoro: https://hf.co/hexgrad/Kokoro-82M",
+      "url": "https://github.com/hexgrad/kokoro",
+      "snippet": "Kokoro is an open-weight TTS model with 82 million parameters. Despite its lightweight architecture, it delivers comparable quality to larger models while being significantly faster and more cost-efficient."
+    },
+    {
+      "title": "GitHub - captivus/Kokoro-82M: Kokoro is an open-weight TTS model with ...",
+      "url": "https://github.com/captivus/Kokoro-82M",
+      "snippet": "Kokoro is an open-weight TTS model with 82 million parameters. Despite its lightweight architecture, it delivers comparable quality to larger models while being significantly faster and more cost-efficient."
+    },
+    {
+      "title": "Kokoro-82M Local TTS Model | OpenVox AI",
+      "url": "https://openvoxai.com/models/kokoro-82m",
+      "snippet": "Kokoro-82M is a compact open-weight TTS model focused on fast, cost-efficient speech generation with a small architecture."
+    },
+    {
+      "title": "txgsync/kokoro-82m-coreml-ane · Hugging Face",
+      "url": "https://huggingface.co/txgsync/kokoro-82m-coreml-ane",
+      "snippet": "A self-contained, fixed-revision Core ML build of the Kokoro-82M 7-stage Apple-Neural-Engine pipeline packaged with all 54 standard Kokoro voices, so a sandboxed Swift / Core ML app can offer every voice on the ANE path from a single hash-pinnable download."
+    }
+  ]
+}

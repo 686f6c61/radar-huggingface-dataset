@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "theoracleguy/VibeVoice-Realtime-0.5B-4bit",
+  "slug": "theoracleguy-vibevoice-realtime-0-5b-4bit",
+  "author": "theoracleguy",
+  "url": "https://huggingface.co/theoracleguy/VibeVoice-Realtime-0.5B-4bit",
+  "created_at": "2026-09-02T08:06:50.000Z",
+  "updated_at": "2026-09-02T08:07:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vibevoice_streaming",
+    "Realtime TTS",
+    "Streaming text input",
+    "Long-form speech generation",
+    "mlx",
+    "text-to-speech",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B",
+    "license:mit",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 194277382,
+  "parameters_human": "194.3M",
+  "storage_bytes": 732577035,
+  "storage_human": "733 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/VibeVoice-Realtime-0.5B · Hugging Face",
+      "url": "https://huggingface.co/microsoft/VibeVoice-Realtime-0.5B",
+      "snippet": "microsoft / VibeVoice-Realtime-.5B like 1.26k Follow Microsoft 21.3k Text-to-Speech Transformers Safetensors English vibevoice_streaming Realtime TTS Streaming text input Long-form speech generation arxiv:2508.19205 arxiv:2412.08635 License:mit Model card FilesFiles and versions xet Community 33 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "VibeVoice-Realtime/docs/vibevoice-realtime-0.5b.md at main ... - GitHub",
+      "url": "https://github.com/SUP3RMASS1VE/VibeVoice-Realtime/blob/main/docs/vibevoice-realtime-0.5b.md",
+      "snippet": "VibeVoice-Realtime is a lightweight real‑time text-to-speech model supporting streaming text input and robust long-form speech generation. It can be used to build real-time TTS services, narrate live data streams, and let different LLMs start speaking from their very first tokens (plug in your preferred model) long before a full answer is generated. It produces initial audible speech in ~300 ..."
+    },
+    {
+      "title": "VibeVoice/docs/vibevoice-realtime-0.5b.md at main - GitHub",
+      "url": "https://github.com/microsoft/VibeVoice/blob/main/docs/vibevoice-realtime-0.5b.md",
+      "snippet": "Model: VibeVoice Realtime 0.5B (on Hugging Face) Colab: VibeVoice Realtime Colab (Jupyter Notebook) Note (multilingual exploration): Although the model is primarily built for English, we found that it still exhibits a certain level of multilingual capability—and even performs reasonably well in some languages."
+    },
+    {
+      "title": "VibeVoiceRealTime - 0.5B Real-time TTS Model | Microsoft AI",
+      "url": "https://vibevoicerealtime.com/",
+      "snippet": "Discover VibeVoiceRealTime-0.5B, Microsoft&#x27;s breakthrough real-time text-to-speech model. <300ms latency, emotional expression, and 4-role dialogue support."
+    },
+    {
+      "title": "VibeVoice - Open-Source Multi-Speaker Text-to-Speech Model",
+      "url": "https://vibevoice.art/",
+      "snippet": "VibeVoice: Advanced Multi-Speaker Text-to-Speech Generate up to 90 minutes of natural conversational audio with Microsoft&#x27;s open-source TTS model. Create realistic multi-speaker dialogues from text with cutting-edge AI technology."
+    }
+  ]
+}

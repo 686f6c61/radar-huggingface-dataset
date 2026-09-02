@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HOJQVFNA/starvla-grpo-libero-spatial-20260901",
+  "slug": "hojqvfna-starvla-grpo-libero-spatial-20260901",
+  "author": "HOJQVFNA",
+  "url": "https://huggingface.co/HOJQVFNA/starvla-grpo-libero-spatial-20260901",
+  "created_at": "2026-09-02T10:16:12.000Z",
+  "updated_at": "2026-09-02T10:16:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RL on StarVLA Models — RLinf documentation",
+      "url": "https://rlinf.readthedocs.io/en/latest/rst_source/examples/embodied/starvla.html",
+      "snippet": "RL on StarVLA Models # StarVLA: a modular VLM backbone + action head. # Run RL fine-tuning for StarVLA in RLinf. StarVLA is an open-source Vision-Language-Action toolkit that composes a VLM backbone with an action head in a modular way; this example uses the QwenOFT setup and trains it on LIBERO with GRPO. Overview # Fine-tune StarVLA (QwenOFT) on LIBERO Spatial with GRPO."
+    },
+    {
+      "title": "LIBERO Evaluation | StarVLA",
+      "url": "https://starvla.github.io/docs/benchmarks/libero/",
+      "snippet": "LIBERO is a tabletop robotic manipulation benchmark with 4 task suites (Spatial, Object, Goal, Long Horizon), totaling 40 tasks. It tests VLA models on spatial understanding, object recognition, goal reasoning, and long-horizon manipulation using a Franka robotic arm."
+    },
+    {
+      "title": "StarVLA Documentation | StarVLA",
+      "url": "https://starvla.github.io/docs/",
+      "snippet": "StarVLA is a modular and flexible codebase for developing Vision-Language Models (VLMs) into Vision-Language-Action (VLA) models. Each component (model, data, trainer, configuration, evaluation) is designed for high cohesion and low coupling, enabling plug-and-play research and fast iteration."
+    },
+    {
+      "title": "LIBERO Evaluation | starVLA/starVLA | DeepWiki",
+      "url": "https://deepwiki.com/starVLA/starVLA/7.3-libero-evaluation",
+      "snippet": "LIBERO provides four main task suites (Spatial, Object, Goal, and 10/Long) covering spatial reasoning, object manipulation, and long-horizon planning. The StarVLA repository supports both standard LIBERO evaluation and the expanded LIBERO-plus benchmark for zero-shot robustness testing across 10,030 tasks with 7 perturbation types."
+    },
+    {
+      "title": "rlinf-gr00t-flow-credit/docs/source-en/rst_source/examples ... - GitHub",
+      "url": "https://github.com/dionysusge/rlinf-gr00t-flow-credit/blob/main/docs/source-en/rst_source/examples/embodied/starvla.rst",
+      "snippet": "Run RL fine-tuning for StarVLA in RLinf. StarVLA is an open-source Vision-Language-Action toolkit that composes a VLM backbone with an action head in a modular way; this example uses the QwenOFT setup and trains it on LIBERO with GRPO."
+    }
+  ]
+}

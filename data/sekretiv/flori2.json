@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sekretiv/flori2",
+  "slug": "sekretiv-flori2",
+  "author": "sekretiv",
+  "url": "https://huggingface.co/sekretiv/flori2",
+  "created_at": "2026-09-02T07:39:13.000Z",
+  "updated_at": "2026-09-02T07:39:51.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334322201,
+  "storage_human": "334 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FLUX.2 - Next Generation Image Generation | Black Forest Labs - bfl.ai",
+      "url": "https://bfl.ai/models/flux-2",
+      "snippet": "FLUX.2 is the next generation of FLUX image generation from Black Forest Labs. State-of-the-art quality, speed, and controllability for AI image generation."
+    },
+    {
+      "title": "sekretiv (sekretivi) - Hugging Face",
+      "url": "https://huggingface.co/sekretiv",
+      "snippet": "User profile of sekretivi on Hugging Face"
+    },
+    {
+      "title": "Flux 2 Pro - AI image model | VidMachine",
+      "url": "https://vidmachine.ai/models/blackforestlabs-flux-2-pro",
+      "snippet": "FLUX.2 is Black Forest Labs&#x27; flagship AI image generation and editing model, released in late 2025. The Pro variant targets production use: up to 4 megapixels, multi-reference control (up to 10 reference images) for character and style consistency, and strong editing capabilities. The model uses latent flow matching with a Mistral-3 24B vision-language model and a rectified flow transformer ..."
+    },
+    {
+      "title": "Flux AI Models - Flux 2, Realism, Anime, 3D | JollyAI",
+      "url": "https://jollyai.online/models/flux-models.php",
+      "snippet": "Explore Flux AI models at JollyAI: Flux 2, Flux Realism, Flux Anime, Flux 3D. Learn about each model&#x27;s capabilities, best use cases, and how to generate stunning AI images."
+    },
+    {
+      "title": "Flux 2 Complete Guide: Black Forest Labs&#x27; Photorealistic AI Image ...",
+      "url": "https://wavespeed.ai/blog/posts/flux-2-complete-guide-2026/",
+      "snippet": "What is Flux 2? Flux 2 is the second-generation image synthesis model from Black Forest Labs, the German AI research company founded by the original creators of Stable Diffusion. Released in November 2025, Flux 2 represents a fundamental architectural breakthrough in text-to-image generation."
+    }
+  ]
+}

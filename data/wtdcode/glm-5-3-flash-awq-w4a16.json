@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wtdcode/GLM-5.3-Flash-AWQ-W4A16",
+  "slug": "wtdcode-glm-5-3-flash-awq-w4a16",
+  "author": "wtdcode",
+  "url": "https://huggingface.co/wtdcode/GLM-5.3-Flash-AWQ-W4A16",
+  "created_at": "2026-08-28T05:39:39.000Z",
+  "updated_at": "2026-08-29T14:57:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm5_next",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 1284,
+  "trending_score": 8,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 190843121882,
+  "storage_human": "190.8 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wtdcode/GLM-5.3-Flash-AWQ-W4A16 · Hugging Face",
+      "url": "https://huggingface.co/wtdcode/GLM-5.3-Flash-AWQ-W4A16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM 5.3 Flash API & Playground | Fireworks AI",
+      "url": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "snippet": "GLM-5.3-Flash is the first natively multimodal model in the GLM-5 series with 320B total parameters and 18B active parameters. It incorporates several architectural improvements over GLM-5.2 including a hybrid architecture, sharply reducing long-context serving costs while preserving precise long-context and Manifold-Constrained Hyper-Connections (mHC) to further improve scaling efficiency."
+    },
+    {
+      "title": "wtdcode (Lazymio) - Hugging Face",
+      "url": "https://huggingface.co/wtdcode/models",
+      "snippet": "Recent Activity updated a modelabout 2 hours ago wtdcode/GLM-5.3-Flash-AWQ-W4A16 new activityabout 15 hours ago"
+    },
+    {
+      "title": "GLM-5.3-Flash by Z.ai | Model Library | Modal",
+      "url": "https://modal.com/library/zai/glm-5-3-flash",
+      "snippet": "Model GLM-5.3-Flash pairs sparse attention with linear attention in a hybrid architecture that reduces attention computation and KV-cache size. Trained on a multimodal corpus, it integrates visual understanding directly into coding and agentic workflows. Full details are in Z.ai&#x27;s announcement."
+    },
+    {
+      "title": "GLM-5.3-Flash - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "snippet": "Model Overview GLM-5.3-Flash is the first native multimodal model in the GLM-5 series, delivering stronger intelligence than GLM-5.2 at an exceptionally low cost. Highly Efficient Hybrid Architecture GLM-5.3-Flash has 320B total parameters with 18B activated."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Toleng/koplak-flash-1.5b",
+  "slug": "toleng-koplak-flash-1-5b",
+  "author": "Toleng",
+  "url": "https://huggingface.co/Toleng/koplak-flash-1.5b",
+  "created_at": "2026-09-02T10:21:25.000Z",
+  "updated_at": "2026-09-02T10:23:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/DeepSeek-R1-Distill-Qwen-1.5B-bnb-4bit",
+    "base_model:finetune:unsloth/DeepSeek-R1-Distill-Qwen-1.5B-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3565637399,
+  "storage_human": "3.6 GB",
+  "base_model": "unsloth/DeepSeek-R1-Distill-Qwen-1.5B-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/OpenReasoning-Nemotron-1.5B · Hugging Face",
+      "url": "https://huggingface.co/nvidia/OpenReasoning-Nemotron-1.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - shijincai/VibeVoice: Archive of the official Microsoft ...",
+      "url": "https://github.com/shijincai/VibeVoice",
+      "snippet": "Archive of the official Microsoft VibeVoice repository (7B & 1.5B). Backup of the deleted source code for the open-source TTS models, including the removed 7B version."
+    },
+    {
+      "title": "DeepSeekAI&#x27;s Pocket-Sized Revolution: Running Open-Source 1.5B Model ...",
+      "url": "https://medium.com/@harshithaparitala1/deepseekais-pocket-sized-revolution-running-open-source-1-5b-model-locally-bb34082bddac",
+      "snippet": "DeepSeekAI&#x27;s Pocket-Sized Revolution: Running Open-Source 1.5B Model Locally Introduction As headlines celebrate the relentless race for ever-larger LLMs, a more pressing challenge remains ..."
+    },
+    {
+      "title": "Falcon H1 - Falcon LLM",
+      "url": "https://falconllm.tii.ae/falcon-h1.html",
+      "snippet": "Our 1.5B-deep model outperforms even 10B models on a wide range of tasks. Both give users powerful AI even on devices that have low-bandwidth or are offline. With Falcon-H1 you can deploy impressive AI power where low latency is a must."
+    }
+  ]
+}

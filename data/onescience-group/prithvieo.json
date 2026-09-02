@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/PrithviEO",
+  "slug": "onescience-group-prithvieo",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/PrithviEO",
+  "created_at": "2026-09-02T08:45:00.000Z",
+  "updated_at": "2026-09-02T08:50:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "prithvi_eo",
+    "OneScience",
+    "Earth Science",
+    "Multi-Temporal Earth Observation",
+    "Remote Sensing Foundation Model",
+    "en",
+    "arxiv:2412.02732",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OneScience-Group/PrithviWxC · Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/PrithviWxC",
+      "snippet": "The weight/ folder is reserved for model weights. Official weights with approximately 2.3 billion parameters (such as PrithviWxC_160_13b_2t_0p5d_v1.pt) are published on Hugging Face, but their structure differs from this repository&#x27;s small configuration."
+    },
+    {
+      "title": "OneScience-Group (OneScience) - Hugging Face",
+      "url": "https://huggingface.co/OneScience-Group/models",
+      "snippet": "OneScience is a one-click, end-to-end, natural language-based scientific model construction platform designed for researchers in the AI4S field. Researchers can efficiently complete the entire wor..."
+    },
+    {
+      "title": "Prithvi WxC: Foundation Model for Weather and Climate",
+      "url": "https://arxiv.org/abs/2409.13598",
+      "snippet": "Triggered by the realization that AI emulators can rival the performance of traditional numerical weather prediction models running on HPC systems, there is now an increasing number of large AI models that address use cases such as forecasting, downscaling, or nowcasting. While the parallel developments in the AI literature focus on foundation models -- models that can be effectively tuned to ..."
+    },
+    {
+      "title": "Prithvi-Precip: Integrating Satellite Observations into an Atmospheric AI",
+      "url": "https://arxiv.org/pdf/2608.03959",
+      "snippet": "Architecture of the final Prithvi-WxC Precip model to forecast precipitation using satellite observations. Observations encoded using the observation encoder shown in Fig. 3 are merged with the encoded model by calculating a residual correction using a two-layer MLP applied token-wise to the concatenated latent model state and observations."
+    },
+    {
+      "title": "Prithvi Geospatial AI Goes to Space: The First Foundation Model ...",
+      "url": "https://undercodenews.com/prithvi-geospatial-ai-goes-to-space-the-first-foundation-model-deployed-in-orbit/",
+      "snippet": "Introduction A new milestone in artificial intelligence and space technology has been achieved as researchers successfully deployed NASA and IBM&#x27;s open-source Prithvi Geospatial AI foundation model directly into orbit. This marks the first time a geospatial foundation model has operated in space, signaling a major shift in how Earth observation data could be processed in the future. Instead ..."
+    }
+  ]
+}

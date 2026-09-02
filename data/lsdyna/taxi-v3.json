@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "lsdyna/Taxi-v3",
+  "slug": "lsdyna-taxi-v3",
+  "author": "lsdyna",
+  "url": "https://huggingface.co/lsdyna/Taxi-v3",
+  "created_at": "2026-09-02T09:33:18.000Z",
+  "updated_at": "2026-09-02T09:33:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 147310,
+  "storage_human": "147310 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huggingcats/Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/huggingcats/Taxi-v3",
+      "snippet": "# **Q-Learning** Agent playing1 **Taxi-v3** This is a trained model of a **Q-Learning** agent playing **Taxi-v3** . ## Usage ```python model = load_from_hub (repo_id=\"huggingcats/Taxi-v3\", filename=\"q-learning.pkl\") # Don&#x27;t forget to check if you need to add additional attributes (is_slippery=False etc) env = gym.make (model [\"env_id\"]) ```"
+    },
+    {
+      "title": "README.md · edata/taxi-v3 at main - Hugging Face",
+      "url": "https://huggingface.co/edata/taxi-v3/blob/main/README.md",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "Models - LSDYNA",
+      "url": "https://lsdyna.ansys.com/models/",
+      "snippet": "Models Home » Models + Adv. FEM / Meshfree Methods + ALE Automotive + CESE / DUAL-CESE + EM / Electromagnetics + General + ICFD / Incompressible CFD + Implicit Metal Forming + NEW NVH / Fatigue NVH / Fatigue + Particle Methods + Simple Examples Soil-Structure Interaction + Thermal"
+    },
+    {
+      "title": "GitHub - louaibenaissa/Taxi-v3: Using model free RL to train an agent ...",
+      "url": "https://github.com/louaibenaissa/Taxi-v3",
+      "snippet": "Overview This repository is a personal project aimed at applying model-free Q-Learning, a Reinforcement Learning (RL) technique, to the Taxi-v3 environment from OpenAI&#x27;s Gym. The goal is to bridge the gap between theoretical knowledge and practical application by implementing and experimenting with Q-Learning to solve the Taxi-v3 game."
+    },
+    {
+      "title": "AI Material Model for LS-Dyna - University of Oxford",
+      "url": "https://oxr.eng.ox.ac.uk/aimaterial/",
+      "snippet": "AI Material Model for LS-Dyna The first open-source data-driven constitutive model for explicit finite element analysis. Licenced under GPL v3 by the University of Oxford."
+    }
+  ]
+}

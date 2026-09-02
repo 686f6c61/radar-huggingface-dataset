@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vikaspate/deit-classification80-2023",
+  "slug": "vikaspate-deit-classification80-2023",
+  "author": "vikaspate",
+  "url": "https://huggingface.co/vikaspate/deit-classification80-2023",
+  "created_at": "2026-09-02T07:27:06.000Z",
+  "updated_at": "2026-09-02T07:27:25.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/deit: Official DeiT repository",
+      "url": "https://github.com/facebookresearch/deit",
+      "snippet": "Official DeiT repository. Contribute to facebookresearch/deit development by creating an account on GitHub."
+    },
+    {
+      "title": "facebookresearch/deit | DeepWiki",
+      "url": "https://deepwiki.com/facebookresearch/deit",
+      "snippet": "This document provides an introduction to the DeiT (Data-Efficient Image Transformers) repository, which contains multiple vision transformer architectures and related models for image classification tasks. The repository focuses on efficient training techniques and architectural innovations for transformer-based computer vision models."
+    },
+    {
+      "title": "vikaspate (संजय रेड्डी)",
+      "url": "https://huggingface.co/vikaspate",
+      "snippet": "Building AI tools for small businesses"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "DeiT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/deit",
+      "snippet": "The DeiT model was proposed in Training data-efficient image transformers & distillation through attention by Hugo Touvron, Matthieu Cord, Matthijs Douze, Francisco Massa, Alexandre Sablayrolles, Hervé Jégou."
+    }
+  ]
+}

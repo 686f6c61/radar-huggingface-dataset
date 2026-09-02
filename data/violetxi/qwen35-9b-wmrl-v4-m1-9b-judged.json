@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "violetxi/qwen35-9b-wmrl-v4-m1-9b-judged",
+  "slug": "violetxi-qwen35-9b-wmrl-v4-m1-9b-judged",
+  "author": "violetxi",
+  "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-m1-9b-judged",
+  "created_at": "2026-09-02T09:31:27.000Z",
+  "updated_at": "2026-09-02T09:34:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "wm-internalization",
+    "v4",
+    "m1-9b-judged",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 38625429982,
+  "storage_human": "38.6 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "violetxi/qwen35-9b-wmrl-v4-m0-nop6 · Hugging Face",
+      "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-m0-nop6",
+      "snippet": "violetxi/qwen35-9b-wmrl-v4-m0-nop6 wm-internalization v4 checkpoint — condition m0-nop6, save final. Full-finetune of Qwen/Qwen3.5-9B on the Calderwood & Harkness synthetic law-firm corpus (world-internalization study, v4 lineage: 9B student, ~50k think-on seed pool)."
+    },
+    {
+      "title": "violetxi/qwen35-9b-wmrl-v4-c1-b5v4 · Hugging Face",
+      "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-c1-b5v4",
+      "snippet": "violetxi/qwen35-9b-wmrl-v4-c1-b5v4 wm-internalization v4 checkpoint — condition c1-b5v4, save final. Full-finetune of Qwen/Qwen3.5-9B on the Calderwood & Harkness synthetic law-firm corpus (world-internalization study, v4 lineage: 9B student, ~50k think-on seed pool)."
+    },
+    {
+      "title": "Qwen3.5-9B: Specifications and GPU VRAM Requirements",
+      "url": "https://apxml.com/models/qwen35-9b",
+      "snippet": "Qwen3.5-9B is Alibaba Cloud&#x27;s efficient multimodal foundation model with 9B parameters, released February 2026. It uses a hybrid architecture combining Gated Delta Networks and Gated Attention in an 8× (3×DeltaNet→FFN→1×Attention→FFN) pattern."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Try the newest Qwen3.8-Max-Preview, HappyHorse1.1, Deepseek V4 and GLM-5.2 models with the latest AI Token Plan. 2.4-trillion-parameter MoE flagship delivering a comprehensive leap in coding and professional work."
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-9B",
+      "snippet": "Qwen3.5-9B is a dense multimodal model from the Qwen3.5 family — same gated delta networks hybrid attention, vision encoder, 262K context, and MTP support as its larger siblings, but sized to fit comfortably on a single 24 GB GPU."
+    }
+  ]
+}

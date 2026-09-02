@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "s-nlp/enoki-openie-encoder",
+  "slug": "s-nlp-enoki-openie-encoder",
+  "author": "s-nlp",
+  "url": "https://huggingface.co/s-nlp/enoki-openie-encoder",
+  "created_at": "2026-09-02T08:56:01.000Z",
+  "updated_at": "2026-09-02T09:21:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "enoki-openie",
+    "feature-extraction",
+    "openie",
+    "open-information-extraction",
+    "information-extraction",
+    "triplet-extraction",
+    "relation-extraction",
+    "modernbert",
+    "enoki",
+    "igl",
+    "custom_code",
+    "en",
+    "arxiv:2609.00581",
+    "base_model:answerdotai/ModernBERT-large",
+    "base_model:finetune:answerdotai/ModernBERT-large",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395098170,
+  "parameters_human": "395.1M",
+  "storage_bytes": 1582004954,
+  "storage_human": "1.6 GB",
+  "base_model": "answerdotai/ModernBERT-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenIE - CoreNLP",
+      "url": "https://stanfordnlp.github.io/CoreNLP/openie.html",
+      "snippet": "The OpenIE annotator (openie) requires the natural logic annotation (natlog). In addition to extracting relation triples, the annotator produces a number of sentence fragments corresponding to entailed fragments from the given original sentence. These are stored on the EntailedSentencesAnnotation key of a CoreMap (i.e., sentence)."
+    },
+    {
+      "title": "The Stanford Natural Language Processing Group",
+      "url": "https://nlp.stanford.edu/software/openie.shtml",
+      "snippet": "The code can also be invoked programatically, using Stanford CoreNLP. For this, simply include the annotators natlog and openie in the annotators property, and add any of the flags described above to the properties file prepended with the string \"openie.\", e.g., \"openie.format = ollie\". Note that openie depends on the annotators \"tokenize,ssplit,pos,depparse\". We include example working code ..."
+    },
+    {
+      "title": "GitHub - allenai/openie-standalone: Quality information extraction at ...",
+      "url": "https://github.com/allenai/openie-standalone",
+      "snippet": "Quality information extraction at web scale. Edit. Contribute to allenai/openie-standalone development by creating an account on GitHub."
+    },
+    {
+      "title": "Open Information Extraction | stanfordnlp/CoreNLP | DeepWiki",
+      "url": "https://deepwiki.com/stanfordnlp/CoreNLP/7.1-open-information-extraction",
+      "snippet": "This document describes the Open Information Extraction (OpenIE) system in Stanford CoreNLP. It covers the design, implementation, and usage of the OpenIE annotator, which extracts structured relation triples (subject, relation, object) from natural language text."
+    },
+    {
+      "title": "CoreNLP/src/edu/stanford/nlp/naturalli/OpenIE.java at main ...",
+      "url": "https://github.com/stanfordnlp/CoreNLP/blob/main/src/edu/stanford/nlp/naturalli/OpenIE.java",
+      "snippet": "CoreNLP: A Java suite of core NLP tools for tokenization, sentence segmentation, NER, parsing, coreference, sentiment analysis, etc. - stanfordnlp/CoreNLP"
+    }
+  ]
+}

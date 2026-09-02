@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "codiefz/Taxi-v4",
+  "slug": "codiefz-taxi-v4",
+  "author": "codiefz",
+  "url": "https://huggingface.co/codiefz/Taxi-v4",
+  "created_at": "2026-09-02T07:35:05.000Z",
+  "updated_at": "2026-09-02T07:35:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v4",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 145721,
+  "storage_human": "145721 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lucidjitters/taxi-v4 · Hugging Face",
+      "url": "https://huggingface.co/lucidjitters/taxi-v4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "P24699/Taxi-v4 · Hugging Face",
+      "url": "https://huggingface.co/P24699/Taxi-v4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Froststar16/taxi-v4-qlearning: My first implementation of a ...",
+      "url": "https://github.com/Froststar16/taxi-v4-qlearning",
+      "snippet": "🗺️ The Problem Taxi-v4 drops an agent into a 5x5 grid world with a simple but surprisingly tricky job: pick up a passenger from one of four colored locations (R, G, Y, B), then drop them off at another."
+    },
+    {
+      "title": "henilsolanki1234-del/SmartTaxi-AI: Smart Taxi AI - GitHub",
+      "url": "https://github.com/henilsolanki1234-del/SmartTaxi-AI",
+      "snippet": "Welcome to Smart Taxi AI, a professional, enterprise-grade taxi fleet management and reinforcement learning platform. This platform demonstrates the integration of a tabular reinforcement learning agent (trained on the standard Gymnasium Taxi-v4 environment) into a realistic SaaS-style fleet dispatch and operational control dashboard."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

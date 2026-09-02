@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Alejosaurio/TinyLlama-1.1b_DPO_Sin_Censura-GGUF",
+  "slug": "alejosaurio-tinyllama-1-1b_dpo_sin_censura-gguf",
+  "author": "Alejosaurio",
+  "url": "https://huggingface.co/Alejosaurio/TinyLlama-1.1b_DPO_Sin_Censura-GGUF",
+  "created_at": "2026-09-02T07:42:44.000Z",
+  "updated_at": "2026-09-02T07:42:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "NSFW",
+    "Uncensored",
+    "1b",
+    "4-bit",
+    "not-for-all-audiences",
+    "en",
+    "es",
+    "dataset:Intel/orca_dpo_pairs",
+    "base_model:Danielbrdz/Barcenas-Tiny-1.1b-DPO",
+    "base_model:quantized:Danielbrdz/Barcenas-Tiny-1.1b-DPO",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 669397962,
+  "storage_human": "669 MB",
+  "base_model": "Danielbrdz/Barcenas-Tiny-1.1b-DPO",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TinyLlama-1.1B - GitHub",
+      "url": "https://github.com/jzhang38/TinyLlama",
+      "snippet": "The TinyLlama project aims to pretrain a 1.1B Llama model on 3 trillion tokens. With some proper optimization, we can achieve this within a span of \"just\" 90 days using 16 A100-40G GPUs 🚀🚀."
+    },
+    {
+      "title": "TinyLlama-1.1b_DPO_Sin_Censura-GGUF - Hugging Face",
+      "url": "https://huggingface.co/Novaciano/TinyLlama-1.1b_DPO_Sin_Censura-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TinyLlama: An Open-Source Small Language Model - arXiv.org",
+      "url": "https://arxiv.org/html/2401.02385",
+      "snippet": "Abstract We present TinyLlama, a compact 1.1B language model pretrained on around 1 trillion tokens for up to 3 epochs 1. Building on the architecture and tokenizer of Llama 2 (Touvron et al., 2023b), TinyLlama leverages various advances contributed by the open-source community, e.g., FlashAttention (Dao, 2023) and Lit-GPT (Lightning-AI, 2023), achieving better computational efficiency ..."
+    },
+    {
+      "title": "TinyLlama-1.1B-Chat-v1.0 - Hugging Face",
+      "url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gradient-ai / TinyLlama | Run on Gradient - Paperspace",
+      "url": "https://console.paperspace.com/github/gradient-ai/TinyLlama",
+      "snippet": "The TinyLlama project aims to pretrain a 1.1B Llama model on 3 trillion tokens. With some proper optimization, we can achieve this within a span of \"just\" 90 days using 16 A100-40G GPUs 🚀🚀. The training has started on 2023-09-01."
+    }
+  ]
+}
