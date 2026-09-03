@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "RobotsMali/soloba-ctc-0.6b-v1",
+  "slug": "robotsmali-soloba-ctc-0-6b-v1",
+  "author": "RobotsMali",
+  "url": "https://huggingface.co/RobotsMali/soloba-ctc-0.6b-v1",
+  "created_at": "2025-09-08T21:23:46.000Z",
+  "updated_at": "2026-09-03T17:48:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "bm"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "Transducer",
+    "FastConformer",
+    "Conformer",
+    "pytorch",
+    "Bambara",
+    "NeMo",
+    "bm",
+    "dataset:RobotsMali/kunkado",
+    "base_model:RobotsMali/soloba-ctc-0.6b-v0",
+    "base_model:finetune:RobotsMali/soloba-ctc-0.6b-v0",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2434017280,
+  "storage_human": "2.4 GB",
+  "base_model": "RobotsMali/soloba-ctc-0.6b-v0",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Kunkado",
+      "metric": "Test WER",
+      "value": 42.80104712041885
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Kunkado",
+      "metric": "Test CER",
+      "value": 24.927870915653497
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Nyana Eval",
+      "metric": "Test WER",
+      "value": 40.19
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Nyana Eval",
+      "metric": "Test CER",
+      "value": 20.94
+    }
+  ],
+  "sources": [
+    {
+      "title": "DuckDuckGo - Protection. Privacy. Peace of mind.",
+      "url": "https://duckduckgo.com/",
+      "snippet": "The Internet privacy company that empowers you to seamlessly take control of your personal information online, without any tradeoffs."
+    },
+    {
+      "title": "Download the DuckDuckGo Browser for Windows",
+      "url": "https://duckduckgo.com/windows",
+      "snippet": "DuckDuckGo for Windows DuckDuckGo for Windows is not available on this device."
+    },
+    {
+      "title": "DuckDuckGo No-AI: Private Search Without AI",
+      "url": "https://noai.duckduckgo.com/",
+      "snippet": "DuckDuckGo private search with all AI features turned off. The classic results you expect. Always private."
+    },
+    {
+      "title": "DuckDuckGo Automated Support Chat",
+      "url": "https://subscription-support.duckduckgo.com/",
+      "snippet": "DuckDuckGo Subscription Support Zendesk AI Agent Notice We minimize support data and restrict how it’s used. DuckDuckGo …"
+    },
+    {
+      "title": "Welcome - DuckDuckGo Help Pages",
+      "url": "https://start.duckduckgo.com/duckduckgo-help-pages/",
+      "snippet": "Want to know more about a DuckDuckGo product or feature? Find answers to frequently asked questions and more at DuckDuckGo …"
+    }
+  ]
+}

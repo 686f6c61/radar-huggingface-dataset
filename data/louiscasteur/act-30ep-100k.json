@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "louiscasteur/act-30ep-100k",
+  "slug": "louiscasteur-act-30ep-100k",
+  "author": "louiscasteur",
+  "url": "https://huggingface.co/louiscasteur/act-30ep-100k",
+  "created_at": "2026-09-03T13:06:31.000Z",
+  "updated_at": "2026-09-03T13:06:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:willemelliw/record_30_ep_2_item",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EcoleDirecte",
+      "url": "https://www.ecoledirecte.com/login?cameFrom=%2FEleves%2F5242",
+      "snippet": "EcoleDirecte : Bienvenue sur le site internet EcoleDirecte. Espace famille, élève, personnel, enseignant ..."
+    },
+    {
+      "title": "EcoleDirecte - Administration",
+      "url": "https://admin.ecoledirecte.com/login",
+      "snippet": "EcoleDirecte : Bienvenue sur le site d'administration des sites EcoleDirecte"
+    },
+    {
+      "title": "EcoleDirecte",
+      "url": "https://secure.ecoledirecte.com/ATOSCancel.aspx?plateformeSpecifique=SHERLOCKS",
+      "snippet": "STATIM vous redirige vers sa page d'accueil"
+    },
+    {
+      "title": "ECOLEDIRECTE - STATIM PROGICIELS - Fenêtre de redirection",
+      "url": "https://secure.ecoledirecte.com/Request.aspx?numeroTransaction=0331911Y20211122102912128&todo=annuler",
+      "snippet": "STATIM vous redirige vers sa page d'accueil Si la redirection n'est pas assez rapide ou qu'elle ne fonctionne pas..."
+    },
+    {
+      "title": "Mot de passe oublié - EcoleDirecte",
+      "url": "https://api.ecoledirecte.com/mot-de-passe-oublie.awp",
+      "snippet": "EcoleDirecte COMMENT SOUHAITEZ-VOUS RÉCUPÉRER VOS IDENTIFIANTS ? Adresse email ou numéro de téléphone"
+    }
+  ]
+}

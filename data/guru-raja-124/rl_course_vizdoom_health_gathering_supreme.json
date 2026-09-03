@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Guru-Raja-124/rl_course_vizdoom_health_gathering_supreme",
+  "slug": "guru-raja-124-rl_course_vizdoom_health_gathering_supreme",
+  "author": "Guru-Raja-124",
+  "url": "https://huggingface.co/Guru-Raja-124/rl_course_vizdoom_health_gathering_supreme",
+  "created_at": "2026-09-03T16:51:20.000Z",
+  "updated_at": "2026-09-03T16:51:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "tensorboard",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 126764356,
+  "storage_human": "127 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guru.com - Find and Hire Expert Freelancers",
+      "url": "https://www.guru.com/",
+      "snippet": "On Guru, businesses and expert freelancers from around the globe connect, collaborate, and get work done on a flexible and secure …"
+    },
+    {
+      "title": "Les meilleurs restaurants 2026 proche de moi - Restaurant Guru",
+      "url": "https://fr.restaurantguru.com/",
+      "snippet": "Si vous recherchez des mets goûteux, Restaurant Guru est là pour vous aider à trouver les meilleurs restaurants, cafés et bars à …"
+    },
+    {
+      "title": "Stop running your business on confidently - get Guru",
+      "url": "https://www.getguru.com/fr",
+      "snippet": "Guru transforms scattered knowledge into a structured, governed, continuously improving source of truth—and delivers it to every …"
+    },
+    {
+      "title": "The Governed Knowledge Layer for Enterprise AI | Guru",
+      "url": "https://www.getguru.com/",
+      "snippet": "Stop running your business on confidently wrong AI. Guru structures, governs, and continuously improves your knowledge—so every …"
+    },
+    {
+      "title": "Guru (maître spirituel) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Guru_(ma%C3%AEtre_spirituel)",
+      "snippet": "The word guru comes from Sanskrit and is written as 'guru' en means 'being heavy', 'being weighty', especially metaphorically. In that …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "AhmedSheta10/my-t5-summarizer",
+  "slug": "ahmedsheta10-my-t5-summarizer",
+  "author": "AhmedSheta10",
+  "url": "https://huggingface.co/AhmedSheta10/my-t5-summarizer",
+  "created_at": "2026-09-03T11:44:03.000Z",
+  "updated_at": "2026-09-03T11:53:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "t5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60506624,
+  "parameters_human": "60.5M",
+  "storage_bytes": 242041896,
+  "storage_human": "242 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/",
+      "snippet": "Google Earth ist eine fotorealistische und digitale Version unseres Planeten. Woher kommen die Bilder? Wie sind sie …"
+    },
+    {
+      "title": "Smart Shopping campaigns - Google for Retail",
+      "url": "https://maps.google.de/intl/en_in/retail/solutions/smart-shopping-campaigns/",
+      "snippet": "Smart Shopping campaigns help you surface your products to the shoppers looking for what you offer on Google. Learn more and get …"
+    },
+    {
+      "title": "選擇 Google 的理由 - Google for Retail",
+      "url": "https://maps.google.de/intl/ALL_tw/retail/why-google/",
+      "snippet": "Google 地圖 每天都有超過十億名的使用者利用 Google 地圖導航至想去的地點，以及尋找當地商家資訊。「去哪裡購物」和「去哪裡 …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/intl/de/policies/faq/",
+      "snippet": "https://policies.google.com/faq?hl=de"
+    },
+    {
+      "title": "資源 - Google for Retail",
+      "url": "https://maps.google.de/intl/ALL_tw/retail/resources/",
+      "snippet": "無論您是剛起步或是想尋求特定問題的解答，都歡迎參閱我們提供的詳盡資訊，深入瞭解如何讓 Google 產品成為您的得力幫手。"
+    }
+  ]
+}

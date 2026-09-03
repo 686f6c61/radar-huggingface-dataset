@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "backpack-run/Z-Image-Turbo-Backpack-Image",
+  "slug": "backpack-run-z-image-turbo-backpack-image",
+  "author": "backpack-run",
+  "url": "https://huggingface.co/backpack-run/Z-Image-Turbo-Backpack-Image",
+  "created_at": "2026-09-03T17:05:24.000Z",
+  "updated_at": "2026-09-03T17:22:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "backpack",
+    "image-generation",
+    "text-to-image",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:finetune:Tongyi-MAI/Z-Image-Turbo",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6158615744,
+  "parameters_human": "6.16B",
+  "storage_bytes": 6165568936,
+  "storage_human": "6.2 GB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kerkdiensten - Protestantse Gemeente Brielle",
+      "url": "https://www.protestantsegemeentebrielle.nl/over-ons/kerkdiensten",
+      "snippet": "De diensten zijn te beluisteren en te zien via de kerkomroep en blijven dat via YouTube. Hier vindt u de liturgieën van de afgelopen …"
+    },
+    {
+      "title": "Home - Protestantse Gemeente Brielle",
+      "url": "https://www.protestantsegemeentebrielle.nl/",
+      "snippet": "Aug 20, 2026 · Iedereen is van harte welkom om de kerkdiensten in de Sint-Catharijnekerk mee te maken. De diensten zijn tijdens en …"
+    },
+    {
+      "title": "Protestantse gemeente Brielle - YouTube",
+      "url": "https://www.youtube.com/@ProtestantsegemeenteBrielle/streams",
+      "snippet": "Welkom op het YouTube-kanaal van de Sint-Catharijnekerk in Brielle. Hartelijk welkom om 10.00 uur bij de zondagse kerkdienst in de …"
+    },
+    {
+      "title": "Vieringen en tijden – R.K. Kerk HH. Martelaren van Gorcum te Brielle",
+      "url": "https://rkkerk-brielle.nl/kerkdiensten-en-tijden/",
+      "snippet": "Deze kunt u hier vinden onder de tab Nieuwsblad de Zevensprong. Kerk HH. Martelaren van Gorcum, Nobelstraat 24, BRIELLE,"
+    },
+    {
+      "title": "Home [www.kerkomroep.nl]",
+      "url": "https://www.kerkomroep.nl/",
+      "snippet": "Op deze website kunnen kerken de dienst of viering voor mensen thuis beschikbaar maken zodat men live of achteraf de kerkdienst …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "shaurya0715/shaurya-server",
+  "slug": "shaurya0715-shaurya-server",
+  "author": "shaurya0715",
+  "url": "https://huggingface.co/shaurya0715/shaurya-server",
+  "created_at": "2026-09-03T07:03:53.000Z",
+  "updated_at": "2026-09-03T12:00:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46831469,
+  "storage_human": "47 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "What is Claude and how does it work? Claude is an artificial intelligence, trained by Anthropic using Constitutional AI to be safe, …"
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/fr",
+      "snippet": "Claude est un assistant IA nouvelle génération conçu par Anthropic et entraîné pour être sûr, précis et fiable, afin de vous aider à …"
+    },
+    {
+      "title": "Sign in - Claude",
+      "url": "https://claude.ai/",
+      "snippet": "Sign in to Claude, Anthropic's AI assistant for problem solvers."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.ai/login-Claude",
+      "snippet": "Claude is Anthropic's AI, built for problem solvers. Tackle complex challenges, analyze data, write code, and think through your …"
+    },
+    {
+      "title": "Sign In | Claude Platform",
+      "url": "https://platform.claude.com/login",
+      "snippet": "Create agents and applications with frontier Claude models and managed agent infrastructure."
+    }
+  ]
+}

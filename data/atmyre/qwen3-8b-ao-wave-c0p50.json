@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Atmyre/qwen3-8b-ao-wave-c0p50",
+  "slug": "atmyre-qwen3-8b-ao-wave-c0p50",
+  "author": "Atmyre",
+  "url": "https://huggingface.co/Atmyre/qwen3-8b-ao-wave-c0p50",
+  "created_at": "2026-09-03T14:23:41.000Z",
+  "updated_at": "2026-09-03T14:23:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "activation-oracle",
+    "interpretability",
+    "qwen3",
+    "concept-wave",
+    "arxiv:2512.15674",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 698419728,
+  "storage_human": "698 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    },
+    {
+      "title": "Iniciar sesión en Gmail - Ordenador - Ayuda de Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=es&co=GENIE.Platform%3DDesktop",
+      "snippet": "Iniciar sesión en Gmail Nota: Si inicias sesión en un ordenador público, asegúrate de cerrarla antes de dejar de usar el ordenador. …"
+    },
+    {
+      "title": "百度知道 - 全球领先中文互动问答平台",
+      "url": "https://zhidao.baidu.com/",
+      "snippet": "百度知道是全球领先的中文问答互动平台，每天为数亿网民答疑解惑。百度知道通过AI技术实现智能检索和智能推荐，让您的每个疑问 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "148 万浏览 · 693 关注 · 411 回答 查看全部 热点 问题 潜力好问题 乐华艺人金子涵官宣退圈，如何看待她的选择？ 444 万浏览 · 285 关 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

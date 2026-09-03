@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Heiialam/my_awesome_eli5_clm-model",
+  "slug": "heiialam-my_awesome_eli5_clm-model",
+  "author": "Heiialam",
+  "url": "https://huggingface.co/Heiialam/my_awesome_eli5_clm-model",
+  "created_at": "2026-09-03T17:24:36.000Z",
+  "updated_at": "2026-09-03T17:45:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "base_model:distilbert/distilgpt2",
+    "base_model:finetune:distilbert/distilgpt2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81912576,
+  "parameters_human": "81.9M",
+  "storage_bytes": 2621268625,
+  "storage_human": "2.6 GB",
+  "base_model": "distilbert/distilgpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chess.com - Play Chess Online - Free Games",
+      "url": "https://www.chess.com/",
+      "snippet": "Play chess online for free on Chess.com with over 250 million members from around the world. Have fun playing with friends or …"
+    },
+    {
+      "title": "HanliangXu/my_awesome_eli5_clm-model · Hugging Face",
+      "url": "https://huggingface.co/HanliangXu/my_awesome_eli5_clm-model",
+      "snippet": "my_awesome_eli5_clm-model This model is a fine-tuned version of EleutherAI/gpt-neo-125M on the eli5_category dataset. It achieves the following results on the evaluation set: Loss: 3.6380 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following ..."
+    },
+    {
+      "title": "Chess.com - Chơi cờ vua trực tuyến - Miễn phí",
+      "url": "https://www.chess.com/vi",
+      "snippet": "Chơi cờ vua trực tuyến miễn phí trên Chess.com với hơn 250 triệu thành viên từ khắp nơi trên thế giới. Chúc bạn vui vẻ khi chơi với …"
+    },
+    {
+      "title": "ZL0818/my_awesome_eli5_clm-model · Hugging Face",
+      "url": "https://huggingface.co/ZL0818/my_awesome_eli5_clm-model",
+      "snippet": "my_awesome_eli5_clm-model This model is a fine-tuned version of distilgpt2 on the None dataset. It achieves the following results on the evaluation set: Loss: 3.7706 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used ..."
+    },
+    {
+      "title": "Chess.com - Play Chess Online",
+      "url": "https://link.chess.com/download/app",
+      "snippet": "Join millions of players on the world’s most popular chess site. Play online, learn chess, and improve your skills."
+    }
+  ]
+}

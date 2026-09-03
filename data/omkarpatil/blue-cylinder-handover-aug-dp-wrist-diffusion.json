@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "omkarpatil/blue-cylinder-handover-aug-dp-wrist-diffusion",
+  "slug": "omkarpatil-blue-cylinder-handover-aug-dp-wrist-diffusion",
+  "author": "omkarpatil",
+  "url": "https://huggingface.co/omkarpatil/blue-cylinder-handover-aug-dp-wrist-diffusion",
+  "created_at": "2026-09-03T15:15:54.000Z",
+  "updated_at": "2026-09-03T15:16:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion-policy",
+    "ffw_sg2_rev1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 274492048,
+  "parameters_human": "274.5M",
+  "storage_bytes": 1098027904,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "compte définitivement restreint - PayPal Community",
+      "url": "https://www.paypal-community.com/t5/Restrictions-et-v%C3%A9rifications/compte-d%C3%A9finitivement-restreint/td-p/2859697",
+      "snippet": "Quand un compte est restreint temporairement ou définitivement , vous avez toujours un mail de PayPal . Dessus , il explique ce qu'il …"
+    },
+    {
+      "title": "omkarpatil (Omkar Patil) - Hugging Face",
+      "url": "https://huggingface.co/omkarpatil",
+      "snippet": "AI & ML interests ... Recent Activity a dataset about 2 hours ago ... a dataset about 2 hours ago"
+    },
+    {
+      "title": "Résolu : Fermer mon compte - PayPal Community",
+      "url": "https://www.paypal-community.com/t5/Ajout-et-confirmation-d/Fermer-mon-compte/td-p/1567881",
+      "snippet": "Bonjour à tous. Je possède un compte PayPal pour particulier et je réside en France. Il y a peu de temps, une personne, mineure, a …"
+    },
+    {
+      "title": "omkarpatil (Omkar Patil) - Hugging Face",
+      "url": "https://huggingface.co/omkarpatil/models",
+      "snippet": "Robotics Recent Activity updated a modelabout 10 hours ago omkarpatil/ffw_sg2_pick-blue-cylinder-left-arm_groot-n1.7 updated a modelabout 10 hours ago omkarpatil/ffw_sg2_pick-blue-cylinder-left-arm_smolvla updated a modelabout 10 hours ago omkarpatil/ffw_sg2_pick-blue-cylinder-right-arm_groot-n1.7 View all activity"
+    },
+    {
+      "title": "Problème d'enregistrement de mon compte bancaire sur mon compte …",
+      "url": "https://www.paypal-community.com/t5/Ajouter-et-virer-de-l-argent/Probl%C3%A8me-d-enregistrement-de-mon-compte-bancaire-sur-mon-compte/td-p/1607788",
+      "snippet": "Bonjour Blue75 si vous contactez le service client de PayPal , vous pourrez l'enregistrer avec eux sur votre compte PayPal . ( si le …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "clairenicholson078/qwen3-06b-meeting-actions-lora",
+  "slug": "clairenicholson078-qwen3-06b-meeting-actions-lora",
+  "author": "clairenicholson078",
+  "url": "https://huggingface.co/clairenicholson078/qwen3-06b-meeting-actions-lora",
+  "created_at": "2026-09-03T15:36:21.000Z",
+  "updated_at": "2026-09-03T15:36:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krokusvakantie 2027 - Geniet van de eerste zon | TUI",
+      "url": "https://www.tui.be/nl/schoolvakanties/krokusvakantie?msockid=05910b5cb0d764fd15131c95b10a65cb",
+      "snippet": "Stop de winter en geniet van de eerste zomerzon van 2027: bij TUI bieden we je warme en zonnige bestemmingen in Europa of iets …"
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features:"
+    },
+    {
+      "title": "Vakantie boeken met TUI",
+      "url": "https://www.tui.be/nl?msockid=05910b5cb0d764fd15131c95b10a65cb",
+      "snippet": "Je vakantie is veilig bij TUI. Plan met een gerust hart jouw zorgeloze reis op TUI.be. Boek nu en laat ons samen uitkijken naar dat …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Voorjaarsvakantie 2027 - Op reis in de carnavalsvakantie - TUI",
+      "url": "https://www.tui.nl/voorjaarsvakantie/?msockid=05910b5cb0d764fd15131c95b10a65cb",
+      "snippet": "Ga er op uit in de voorjaarsvakantie (krokus- en carnavalsvakantie)! Nog even op wintersport of toch liever naar de zon? Bekijk ons …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sign/ModernBERT-Large-Instruct-WSD",
+  "slug": "sign-modernbert-large-instruct-wsd",
+  "author": "sign",
+  "url": "https://huggingface.co/sign/ModernBERT-Large-Instruct-WSD",
+  "created_at": "2025-11-23T12:55:08.000Z",
+  "updated_at": "2026-09-03T18:27:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "word-sense-disambiguation",
+    "wordnet",
+    "en",
+    "base_model:answerdotai/ModernBERT-Large-Instruct",
+    "base_model:finetune:answerdotai/ModernBERT-Large-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 432,
+  "trending_score": 0,
+  "parameters": 395962496,
+  "parameters_human": "396.0M",
+  "storage_bytes": 3167466595,
+  "storage_human": "3.2 GB",
+  "base_model": "answerdotai/ModernBERT-Large-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sign - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/sign",
+      "snippet": "Collocations : a [road, street, traffic, store, warning, chemical] sign, sign your [name, initials, signature, full name], [learn, teach, use] …"
+    },
+    {
+      "title": "sign/ModernBERT-Large-Instruct-WSD · Hugging Face",
+      "url": "https://huggingface.co/sign/ModernBERT-Large-Instruct-WSD",
+      "snippet": "ModernBERT-Large-Instruct-WSD like 0 Follow sign.mt 6 Safetensors modernbert Model card Files Files and versions"
+    },
+    {
+      "title": "sign - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/sign.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"sign\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "answerdotai/ModernBERT-Large-Instruct · Hugging Face",
+      "url": "https://huggingface.co/answerdotai/ModernBERT-Large-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sign - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sign",
+      "snippet": "A sign is an object, quality, event, or entity whose presence or occurrence indicates the probable presence or occurrence of …"
+    }
+  ]
+}

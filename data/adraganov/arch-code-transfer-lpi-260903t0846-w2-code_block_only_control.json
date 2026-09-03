@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "adraganov/arch-code-transfer-lpi-260903T0846-w2-code_block_only_control",
+  "slug": "adraganov-arch-code-transfer-lpi-260903t0846-w2-code_block_only_control",
+  "author": "adraganov",
+  "url": "https://huggingface.co/adraganov/arch-code-transfer-lpi-260903T0846-w2-code_block_only_control",
+  "created_at": "2026-09-03T18:30:24.000Z",
+  "updated_at": "2026-09-03T18:30:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:google/gemma-3-12b-it",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:google/gemma-3-12b-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170422175,
+  "storage_human": "170 MB",
+  "base_model": "google/gemma-3-12b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تسجيل الدخول إلى Gmail - جهاز الكمبيوتر - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "تسجيل الدخول إلى Gmail ملاحظة: إذا سجّلت الدخول على جهاز كمبيوتر متاح للجميع، احرص على تسجيل الخروج قبل مغادرة جهاز الكمبيوتر. تعرَّف على كيفية تسجيل الدخول على جهاز لا تملكه."
+    },
+    {
+      "title": "Google Patents",
+      "url": "https://patents.google.com/",
+      "snippet": "Search and read the full text of patents from around the world with Google Patents, and find prior art in our index of non-patent literature."
+    },
+    {
+      "title": "تحديث Google Chrome - جهاز الكمبيوتر - مساعدة متصفح Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95414?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "للتأكد من أنك محمي بآخر تحديثات الأمان، بإمكان Google Chrome إجراء تحديث تلقائي في حال توفّر إصدار جديد من المتصفّح على جهازك. قبل التحديث، ننصحك بالتحقُّق مما إذا كان متصفِّح …"
+    },
+    {
+      "title": "Google Patents Advanced Search",
+      "url": "https://patents.google.com/advanced",
+      "snippet": "Search and read the full text of patents from around the world with Google Patents, and find prior art in our index of non-patent literature."
+    },
+    {
+      "title": "كيف أفتح واتساب ويب من الجوال WhatsApp Web : r/Th3games",
+      "url": "https://www.reddit.com/r/Th3games/comments/u5qwfg/%D9%83%D9%8A%D9%81_%D8%A3%D9%81%D8%AA%D8%AD_%D9%88%D8%A7%D8%AA%D8%B3%D8%A7%D8%A8_%D9%88%D9%8A%D8%A8_%D9%85%D9%86_%D8%A7%D9%84%D8%AC%D9%88%D8%A7%D9%84_whatsapp_web/",
+      "snippet": "Apr 17, 2022 · 75 subscribers in the Th3games community. Trust Gamers is Your Source for exclusive Reviews, how to Gaming, free …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sjakek/slimder-qwen38-ream288-depth32-agentic-ngram50-compact-nvfp4",
+  "slug": "sjakek-slimder-qwen38-ream288-depth32-agentic-ngram50-compact-nvfp4",
+  "author": "sjakek",
+  "url": "https://huggingface.co/sjakek/slimder-qwen38-ream288-depth32-agentic-ngram50-compact-nvfp4",
+  "created_at": "2026-09-03T14:00:11.000Z",
+  "updated_at": "2026-09-03T14:04:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp_text",
+    "text-generation",
+    "qwen4-exp",
+    "mixture-of-experts",
+    "nvfp4",
+    "qlora",
+    "conversational",
+    "base_model:sjakek/slimder-qwen38-ream288-depth32-agentic-ngram50-compact",
+    "base_model:finetune:sjakek/slimder-qwen38-ream288-depth32-agentic-ngram50-compact",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 55117626057,
+  "parameters_human": "55.12B",
+  "storage_bytes": 85435450261,
+  "storage_human": "85.4 GB",
+  "base_model": "sjakek/slimder-qwen38-ream288-depth32-agentic-ngram50-compact",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tourismus Rothenburg ob der Tauber: Tourismus Rothenburg ob der …",
+      "url": "https://www.rothenburg.de/",
+      "snippet": "Lernen Sie Rothenburg ob der Tauber in all seinen Facetten kennen. Planen Sie Ihrer Auszeit in Franken mit der Übersicht des …"
+    },
+    {
+      "title": "Tourismus Rothenburg ob der Tauber: Sehenswürdigkeiten in …",
+      "url": "https://www.rothenburg.de/entdecken/top-10",
+      "snippet": "Das müssen Sie in Rothenburg ob der Tauber gesehen haben: hier finden Sie eine Übersicht über die besten Sehenswürdigkeiten …"
+    },
+    {
+      "title": "Rothenburg ob der Tauber: Stadt Rothenburg ob der Tauber",
+      "url": "https://stadt.rothenburg.de/",
+      "snippet": "Reichsstadt-Festtage 2026 Rothenburg ob der Tauber Rothenburg feiert seine Geschichte vom 4. bis 6. September 2026 Mehr lesen …"
+    },
+    {
+      "title": "Rothenburg ob der Tauber: Rathaus Rothenburg ob der Tauber ...",
+      "url": "https://stadt.rothenburg.de/buergerservice/rathaus",
+      "snippet": "Sie brauchen einen Termin im Rathaus Rothenburg ob der Tauber? Hier geht es direkt zur Online-Buchung und den Öffnungszeiten."
+    },
+    {
+      "title": "Toppler Grundschule – Willkommen auf unserer Homepage",
+      "url": "https://toppler-grundschule.rothenburg.de/",
+      "snippet": "Herzlich Willkommen auf der Homepage der Toppler-Grundschule Rothenburg! In der Grundschule am Topplerweg lernen, arbeiten …"
+    }
+  ]
+}

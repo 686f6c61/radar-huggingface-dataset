@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Raghav-Singhal/1pp-1b-asst-base",
+  "slug": "raghav-singhal-1pp-1b-asst-base",
+  "author": "Raghav-Singhal",
+  "url": "https://huggingface.co/Raghav-Singhal/1pp-1b-asst-base",
+  "created_at": "2026-09-03T16:18:09.000Z",
+  "updated_at": "2026-09-03T17:02:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "1pp",
+    "one-persona-pretraining",
+    "base",
+    "asst",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 981545472,
+  "parameters_human": "981.5M",
+  "storage_bytes": 1963116096,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ulotka, Rilexine smaczne tabletki 75 mg, Tabletka, 75 mg/tabletkę",
+      "url": "https://rejestrymedyczne.ezdrowie.gov.pl/api/rpl/medicinal-products/18995/leaflet",
+      "snippet": "Produkt należy stosować przez 5 dni w leczeniu infekcji bakteryjnych skóry u kotów, 14 dni w leczeniu infekcji dróg moczowych u …"
+    },
+    {
+      "title": "Rilexine smaczne tabletki 75 mg – Ulotka leku",
+      "url": "https://ulotka.pl/pdf/100189951/",
+      "snippet": "Rilexine smaczne tabletki, 75 mg, tabletki dla psów i kotów. 3. Zawartość substancji czynnej i innych substancji. 4. Wskazania …"
+    },
+    {
+      "title": "Rilexine smaczne tabletki 75 mg – Ulotka leku",
+      "url": "https://ulotka.pl/pdf/100189951-2/",
+      "snippet": "Ulotka informacyjna – Rilexine smaczne tabletki, 75 mg, tabletki dla psów i kotów"
+    },
+    {
+      "title": "Rilexine - ulotka (dawkowanie, zastosowanie, interakcje, chpl ...",
+      "url": "https://ktomalek.pl/p/rilexine-ulotka-cena-zastosowanie-apteka-tabletki-75-mg-tabl-14-tabl/ub-8171603",
+      "snippet": "Przeczytaj ulotkę leku Rilexine."
+    },
+    {
+      "title": "Rilexine 75 mg_chplw - Leki.pl",
+      "url": "https://leki.pl/chpl/r/rilexine-smaczne-tabletki-75-mg-chpl.pdf",
+      "snippet": "Produkt podaje się psom i kotom doustnie w dawce 15 mg cefaleksyny na kg m.c. (1 tabletka na 5 kg m.c.), dwa razy dziennie."
+    }
+  ]
+}

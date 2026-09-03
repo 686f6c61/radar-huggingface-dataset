@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Bboykoroman/mixer-baseline",
+  "slug": "bboykoroman-mixer-baseline",
+  "author": "Bboykoroman",
+  "url": "https://huggingface.co/Bboykoroman/mixer-baseline",
+  "created_at": "2026-09-03T17:24:01.000Z",
+  "updated_at": "2026-09-03T17:24:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cadeaubonnen - dreamland.be",
+      "url": "https://www.dreamland.be/nl/cadeaubonnen",
+      "snippet": "De voucherwebsite van DreamLand biedt een handige oplossing om digitale cadeaubonnen, pretparktickets en gaming-vouchers aan …"
+    },
+    {
+      "title": "Bboykoroman (Roman Boyko) - Hugging Face",
+      "url": "https://huggingface.co/Bboykoroman",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... published a model about 7 hours ago"
+    },
+    {
+      "title": "Cadeaubonnen - dreamland.nl",
+      "url": "https://www.dreamland.nl/cadeaubonnen",
+      "snippet": "Wil je online je cadeaubon kopen? Dat kan snel hieronder! Wil je weten hoe dit precies in zijn werk gaat? Bekijk dan even het …"
+    },
+    {
+      "title": "Bboykoroman (Roman Boyko) - Hugging Face",
+      "url": "https://huggingface.co/Bboykoroman/models",
+      "snippet": "Bboykoroman's models1 Sort: Recently updated Bboykoroman/paper_023167298_video_understanding Updated about 8 hours ago"
+    },
+    {
+      "title": "Cadeaubon 20 euro - dreamland.be",
+      "url": "https://www.dreamland.be/nl/producten/cadeaubon-20-euro/01138610",
+      "snippet": "Met een DreamLand cadeaubon zit je altijd goed! Het is hét geschenk voor elke gelegenheid: een verjaardag, feest of gewoon …"
+    }
+  ]
+}

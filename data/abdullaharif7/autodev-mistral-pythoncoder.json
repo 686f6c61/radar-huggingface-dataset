@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "abdullaharif7/AutoDev-Mistral-PythonCoder",
+  "slug": "abdullaharif7-autodev-mistral-pythoncoder",
+  "author": "abdullaharif7",
+  "url": "https://huggingface.co/abdullaharif7/AutoDev-Mistral-PythonCoder",
+  "created_at": "2026-09-03T11:20:29.000Z",
+  "updated_at": "2026-09-03T11:20:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 335604696,
+  "storage_human": "336 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TorZonMarket - Reddit",
+      "url": "https://www.reddit.com/r/TorZonMarket/about/",
+      "snippet": "TorZon Market | Tor Zon | Link | URL | Onion"
+    },
+    {
+      "title": "What is the verified link for Torzon Market - factually.co",
+      "url": "https://factually.co/fact-checks/technology/verified-link-torzon-market-onion-dark-web-a94adb",
+      "snippet": "May 7, 2026 · Executive summary Multiple publicly available “official” Torzon directories list different .onion addresses as the verified …"
+    },
+    {
+      "title": "How To Find the TorZon Market Link - factually.co",
+      "url": "https://factually.co/fact-checks/technology/how-to-find-torzon-market-link-43da52",
+      "snippet": "Apr 22, 2026 · Executive summary Finding the current TorZon Market link is less about a single URL and more about using verified …"
+    },
+    {
+      "title": "torzon darknet market torzon mirror +com — Yandex: found 1 …",
+      "url": "https://desktop.yandex.com/search/?text=torzon+darknet+market+torzon+mirror+%2Bcom&missword=1",
+      "snippet": "Check torzon-market.net with our free review tool and find out if torzon-market.net is legit and reliable. Need advice? Report scams …"
+    },
+    {
+      "title": "Torzon Market: Fast-growing Dark Web threat - LinkedIn",
+      "url": "https://www.linkedin.com/posts/socradar_dark-web-market-torzon-market-socradar-activity-7331989850306310147-6Y6h",
+      "snippet": "𝐓𝐨𝐫𝐳𝐨𝐧 𝐌𝐚𝐫𝐤𝐞𝐭: 𝐀 𝐆𝐫𝐨𝐰𝐢𝐧𝐠 𝐃𝐚𝐫𝐤 𝐖𝐞𝐛 𝐓𝐡𝐫𝐞𝐚𝐭 Active since 2022, Torzon is one of the fastest-growing ..."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "safafaf22/MyAwesomeModel-TestRepository",
+  "slug": "safafaf22-myawesomemodel-testrepository",
+  "author": "safafaf22",
+  "url": "https://huggingface.co/safafaf22/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-03T12:28:51.000Z",
+  "updated_at": "2026-09-03T12:28:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pinterest - 知乎",
+      "url": "https://www.zhihu.com/topic/19559627/intro",
+      "snippet": "Pinterest采用的是瀑布流的形式展现图片内容，无需用户翻页，新的图片不断自动加载在页面顶端，让用户不断的发现新的图片。 …"
+    },
+    {
+      "title": "Pinterest 好在哪里？ - 知乎",
+      "url": "https://www.zhihu.com/question/19562210/answers/updated",
+      "snippet": "Pinterest一个月到底能赚多少美金 这个问题我必须放第一个回答,因为80%刷到这篇的人最关心的就是这个。 跟你说实话,前3个月基本 …"
+    },
+    {
+      "title": "Pinterest 好在哪里？ - 知乎",
+      "url": "https://www.zhihu.com/question/19562210",
+      "snippet": "Pinterest不同于Tumblr和微博，虽然Tumblr和微博的核心内容之一都是图片，可是各种博们关注图片是为了社交和传媒，Pinterest有 …"
+    },
+    {
+      "title": "Pinterest 现在要邀请访问，有什么办法能够注册？ - 知乎",
+      "url": "https://www.zhihu.com/question/20351197",
+      "snippet": "今天介绍一下Pinterest怎么注册、下载安装以及使用教程。 Pinterest全球著名的设计图片网站，那么在国内怎么上 Pinterest？别着 …"
+    },
+    {
+      "title": "有哪些高质量的图片网站（社区）推荐？ - 知乎",
+      "url": "https://www.zhihu.com/question/19619335",
+      "snippet": "pinterest.com “瀑布流”图片呈现方式的始祖，每当笔者没有灵感的时候都会到这个网站上面逛逛，经常可以收获惊喜。 优点： 图片量 …"
+    }
+  ]
+}

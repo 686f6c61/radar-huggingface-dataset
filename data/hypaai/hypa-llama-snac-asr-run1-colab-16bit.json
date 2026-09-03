@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "hypaai/Hypa-Llama-SNAC-ASR-run1-colab-16bit",
+  "slug": "hypaai-hypa-llama-snac-asr-run1-colab-16bit",
+  "author": "hypaai",
+  "url": "https://huggingface.co/hypaai/Hypa-Llama-SNAC-ASR-run1-colab-16bit",
+  "created_at": "2026-09-03T17:45:47.000Z",
+  "updated_at": "2026-09-03T17:45:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:hypaai/Hypa-Llama3.1-8b-SFT",
+    "base_model:finetune:hypaai/Hypa-Llama3.1-8b-SFT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17210481,
+  "storage_human": "17 MB",
+  "base_model": "hypaai/Hypa-Llama3.1-8b-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mountain Bike News, Photos, Videos & Events | Pinkbike",
+      "url": "https://www.pinkbike.com/",
+      "snippet": "Pinkbike is the homepage of mountain biking. Stay updated with the latest news, reviews, videos, buyer's guides and racing results. …"
+    },
+    {
+      "title": "hypaai/Hypa-Llama-SNAC-asr-2026-08-24_10-52-04-testing-16bit · Hugging Face",
+      "url": "https://huggingface.co/hypaai/Hypa-Llama-SNAC-asr-2026-08-24_10-52-04-testing-16bit",
+      "snippet": "Instructions to use hypaai/Hypa-Llama-SNAC-asr-2026-08-24_10-52-04-testing-16bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Channel or account terminations - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/2802168?hl=en",
+      "snippet": "Check status of a termination appeal Open YouTube Studio. View confirmation of your appeal submission, and check your appeal’s …"
+    },
+    {
+      "title": "hypaai/Hypa-Llama-SNAC-asr-2026-08-29_22-59-08-testing-16bit at main",
+      "url": "https://huggingface.co/hypaai/Hypa-Llama-SNAC-asr-2026-08-29_22-59-08-testing-16bit/tree/main",
+      "snippet": "Instructions to use hypaai/Hypa-Llama-SNAC-asr-2026-08-29_22-59-08-testing-16bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "YouTube Partner Program overview & eligibility",
+      "url": "https://support.google.com/youtube/answer/72851?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "The YouTube Partner Program (YPP) gives creators greater access to YouTube resources and monetization features, and access to …"
+    }
+  ]
+}

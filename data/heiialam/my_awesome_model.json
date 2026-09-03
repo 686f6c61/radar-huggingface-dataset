@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Heiialam/my_awesome_model",
+  "slug": "heiialam-my_awesome_model",
+  "author": "Heiialam",
+  "url": "https://huggingface.co/Heiialam/my_awesome_model",
+  "created_at": "2026-08-26T03:20:50.000Z",
+  "updated_at": "2026-09-03T16:56:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 535670321,
+  "storage_human": "536 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Postbank Banking & Brokerage",
+      "url": "https://banking.postbank.de/",
+      "snippet": "Um den vollen Funktionsumfang dieser Webseite nutzen zu können, benötigen Sie einen aktuellen Browser mit aktiviertem …"
+    },
+    {
+      "title": "Kurz erklärt – Online-Banking starten | Postbank",
+      "url": "https://www.postbank.de/privatkunden/services/online-banking/anleitungen/start.html?msockid=132970783d8a6469279a67b13c206542",
+      "snippet": "Kurz erklärt: So starten Sie mit dem Postbank Online-Banking."
+    },
+    {
+      "title": "Online-Banking – Erledigen Sie Ihre Bankgeschäfte bequem online! | Postbank",
+      "url": "https://www.postbank.de/privatkunden/services/online-banking.html?msockid=132970783d8a6469279a67b13c206542",
+      "snippet": "Sie haben bereits Zugang zum Postbank Online-Banking? Dann können Sie sich jetzt direkt im Online-Banking anmelden. Schnell …"
+    },
+    {
+      "title": "Postbank Online Banking - so geht's - CHIP",
+      "url": "https://www.chip.de/ratgeber/wifi-dsl-internet/postbank-online-banking-so-geht-s_e8af3af8-2f26-4a05-8fcd-cf1adaf67374.html",
+      "snippet": "Aug 5, 2025 · Postbank-Kunden können Ihre Konten über das Postbank-Online-Banking verwalten. Wir zeigen Ihnen wie, wie der …"
+    },
+    {
+      "title": "‎Postbank‑App – App Store",
+      "url": "https://apps.apple.com/de/app/postbank/id6444706327",
+      "snippet": "Diese Funktionalität ist auch aus dem Online Banking verschwunden. - Unsere Postbank Kreditkarte ist nicht mehr sichtbar, bzw. …"
+    }
+  ]
+}

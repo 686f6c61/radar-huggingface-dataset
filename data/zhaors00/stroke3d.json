@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "zhaors00/Stroke3D",
+  "slug": "zhaors00-stroke3d",
+  "author": "zhaors00",
+  "url": "https://huggingface.co/zhaors00/Stroke3D",
+  "created_at": "2026-09-03T03:20:24.000Z",
+  "updated_at": "2026-09-03T12:15:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "computer-vision",
+    "diffusion",
+    "3d",
+    "multi-view",
+    "preference-optimization",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37617288475,
+  "storage_human": "37.6 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何打•？ - 知乎",
+      "url": "https://www.zhihu.com/question/21040260",
+      "snippet": "如何在输入法里输入这个符号？Google了很多发现都不对"
+    },
+    {
+      "title": "英国主流报纸（如泰晤士报、卫报、每日邮报等）读者群和政治立场有 …",
+      "url": "https://www.zhihu.com/question/19565664/answers/updated",
+      "snippet": "The Mirror is read by the people who think they run the country 镜报的读者是自以为在统治国家的人 The Guardian is read by the …"
+    },
+    {
+      "title": "纵向课题和横向课题有什么区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/30432177",
+      "snippet": "目前，从学科大类上讲：分为社会科学和自然科学两大类；根据科研课题的来源一般分为：纵向课题与横向课题两大类。 纵向课题是 …"
+    },
+    {
+      "title": "在英国primark买到袜子里面夹得求救信是否属实？（在daily mail每日 …",
+      "url": "https://www.zhihu.com/question/38757726",
+      "snippet": "在英国primark买到袜子里面夹得求救信是否属实？ （在daily mail每日邮报看到的）？ [图片] 是否是境外媒体抹黑报道？ 大家怎么看 …"
+    },
+    {
+      "title": "怎么判断是不是灰指甲？ - 知乎",
+      "url": "https://www.zhihu.com/question/46634698",
+      "snippet": "灰指甲你必须知道的症状！！ 甲下型灰指甲常从甲板两侧或未端开始，多先有轻度甲沟炎，后来逐渐变成慢性或渐趋消退。甲沟炎可 …"
+    }
+  ]
+}

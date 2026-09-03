@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "siddhartha-addy-globalids-labs/qwen3.5-0.8b-finance",
+  "slug": "siddhartha-addy-globalids-labs-qwen3-5-0-8b-finance",
+  "author": "siddhartha-addy-globalids-labs",
+  "url": "https://huggingface.co/siddhartha-addy-globalids-labs/qwen3.5-0.8b-finance",
+  "created_at": "2026-09-03T13:47:12.000Z",
+  "updated_at": "2026-09-03T13:48:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "knowledge-distillation",
+    "gkd",
+    "conversational",
+    "arxiv:2306.13649",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1524816933,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "B737-800X (ZIBO mod) - Info, installation, download links...",
+      "url": "https://forums.x-plane.org/forums/topic/138974-b737-800x-zibo-mod-info-installation-download-links/",
+      "snippet": "Jan 18, 2018 · B737-800X ZIBO mod SYSTEMS: - autopilot modes: LVL CHG, VNAV, LNAV, HDG, VOR/LOC, APP, ALT HLD, VS, …"
+    },
+    {
+      "title": "LiveTraffic - Utilities - X-Plane.Org Forum",
+      "url": "https://forums.x-plane.org/files/file/49749-livetraffic/",
+      "snippet": "Jan 17, 2019 · LiveTraffic fills your sky with live air traffic based on public tracking data requested from Airplanes.live, adsb.fi, …"
+    },
+    {
+      "title": "Climbing in Obed & Clear Creek, Obed & Clear Creek - Mountain Project",
+      "url": "https://www.mountainproject.com/area/105891970/obed-clear-creek",
+      "snippet": "Nov 28, 2006 · The confluence of Clear Creek and the Obed River is home to a series of beautiful sandstone cliff bands providing …"
+    },
+    {
+      "title": "BV Weather Help - Mountain Project",
+      "url": "https://www.mountainproject.com/forum/topic/203610420/bv-weather-help",
+      "snippet": "Aug 8, 2026 · Find rock climbing routes, photos, and guides for every state, along with experiences and advice from fellow climbers."
+    },
+    {
+      "title": "Weather radar - King Air 350 XP12 - X-Plane.Org Forum",
+      "url": "https://forums.x-plane.org/forums/topic/341494-weather-radar/",
+      "snippet": "Jan 5, 2026 · Question - what radar shows? it is not weather, it is not ground as i am well above, so what is presented on the screen?"
+    }
+  ]
+}

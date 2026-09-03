@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "tintin1027/PrefGap-Qwen3-4B-DPO-HS2Attr-n100-lr1e-5",
+  "slug": "tintin1027-prefgap-qwen3-4b-dpo-hs2attr-n100-lr1e-5",
+  "author": "tintin1027",
+  "url": "https://huggingface.co/tintin1027/PrefGap-Qwen3-4B-DPO-HS2Attr-n100-lr1e-5",
+  "created_at": "2026-09-03T17:56:22.000Z",
+  "updated_at": "2026-09-03T17:56:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "trl",
+    "dpo",
+    "lora",
+    "prefgap",
+    "text-generation",
+    "conversational",
+    "dataset:nvidia/HelpSteer2",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143616870,
+  "storage_human": "144 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Particulier - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "À la une Particulier Professionnel Demande d'aide de 100 € pour les travailleurs « grands rouleurs » Publié le 27 mai 2026 Vous avez …"
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "J'accède à mon espace Finances publiques et à mes services en ligne",
+      "url": "https://www.impots.gouv.fr/particulier/jaccede-mon-espace-particulier-et-mes-services-en-ligne",
+      "snippet": "Mar 30, 2016 · Guide d'accès et d'utilisation des services en ligne pour les particuliers Questions fréquentes J’ai égaré les identifiants …"
+    },
+    {
+      "title": "Qwen3 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Accueil impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/accueil",
+      "snippet": "Depuis le 1 er septembre 2026, les grandes entreprises et les entreprises de taille intermédiaire doivent émettre leurs factures via …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "stratus-labs/radiance-sen1floods11-v1",
+  "slug": "stratus-labs-radiance-sen1floods11-v1",
+  "author": "stratus-labs",
+  "url": "https://huggingface.co/stratus-labs/radiance-sen1floods11-v1",
+  "created_at": "2026-09-03T11:49:10.000Z",
+  "updated_at": "2026-09-03T11:50:09.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "sentinel-1",
+    "sar",
+    "remote-sensing",
+    "earth-observation",
+    "flood-mapping",
+    "segmentation",
+    "vit",
+    "masked-autoencoder",
+    "image-segmentation",
+    "dataset:blumenstiel/Sen1Floods11",
+    "base_model:stratus-labs/radiance-mae-base-v1",
+    "base_model:finetune:stratus-labs/radiance-mae-base-v1",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 460614685,
+  "storage_human": "461 MB",
+  "base_model": "stratus-labs/radiance-mae-base-v1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "navify® Portal",
+      "url": "https://navifyportal.roche.com/",
+      "snippet": "navify Portal is your single point of access to Roche navify digital solutions — dashboards, e-services, analytics and lab insights, all …"
+    },
+    {
+      "title": "navify® Portal - Roche",
+      "url": "https://navifyportal.roche.com/login",
+      "snippet": "navify Portal is your single point of access to Roche navify digital solutions — dashboards, e-services, analytics and lab insights, all …"
+    },
+    {
+      "title": "Terms and conditions_navify Portal & Marketplace Spain",
+      "url": "https://shell.navifyportal.roche.com/terms/portal/es/es-es/terms-and-conditions.pdf",
+      "snippet": "Proveedor de navify Portal & Marketplace, descripción y propósito. navify Portal es el portal digital que proporciona a los clientes …"
+    },
+    {
+      "title": "Portale navify© (navify) e Marketplace navify© (\"Marketplace\")",
+      "url": "https://shell.navifyportal.roche.com/terms/portal/it/it-it/terms-and-conditions.pdf",
+      "snippet": "Fornitore di navify portal e Marketplace descrizione e scopo. navify è il portale digitale che fornisce ai clienti l'accesso e l' utilizzo di …"
+    },
+    {
+      "title": "ROCHE - eLabDoc",
+      "url": "https://navifyportal.roche.com/go/",
+      "snippet": "Jan 8, 2025 · Roche eLabDoc: the web service that provides Roche customers with 24-hour access to official and up-to-date …"
+    }
+  ]
+}

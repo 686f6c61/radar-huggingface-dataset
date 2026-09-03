@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "calonguru/ghost-5-2-pro-lora",
+  "slug": "calonguru-ghost-5-2-pro-lora",
+  "author": "calonguru",
+  "url": "https://huggingface.co/calonguru/ghost-5-2-pro-lora",
+  "created_at": "2026-09-03T19:28:54.000Z",
+  "updated_at": "2026-09-03T19:30:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131231992,
+  "storage_human": "131 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Concerts & Events in Seattle, WA | Bandsintown",
+      "url": "https://www.bandsintown.com/c/seattle-wa",
+      "snippet": "1 day ago · Get tickets to upcoming concerts, live shows, festivals, and events in Seattle, WA. Enjoy personalized concert …"
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "Seattle Live Music Events Calendar - EverOut Seattle",
+      "url": "https://everout.com/seattle/events/?category=live-music",
+      "snippet": "Irish Music Session Live Music Every Wednesday & Thursday 7:30 pm Shawn O'Donnell's American Grill & Irish Pub"
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,876 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "Music Events in Seattle | Concerts & Live Music | SEA events",
+      "url": "https://allevents.in/seattle/music",
+      "snippet": "1 day ago · Explore music events in Seattle — concerts, live music, gigs and festivals across every genre. Find dates, venues and …"
+    }
+  ]
+}

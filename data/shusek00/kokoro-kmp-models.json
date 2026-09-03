@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "Shusek00/kokoro-kmp-models",
+  "slug": "shusek00-kokoro-kmp-models",
+  "author": "Shusek00",
+  "url": "https://huggingface.co/Shusek00/kokoro-kmp-models",
+  "created_at": "2026-09-03T14:55:32.000Z",
+  "updated_at": "2026-09-03T15:58:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnxruntime",
+  "languages": [
+    "de",
+    "en",
+    "es",
+    "fr",
+    "hi",
+    "it",
+    "ja",
+    "pl",
+    "pt",
+    "zh"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "kokoro",
+    "on-device",
+    "multilingual",
+    "kotlin-multiplatform",
+    "android",
+    "jvm",
+    "web",
+    "text-to-speech",
+    "de",
+    "en",
+    "es",
+    "fr",
+    "hi",
+    "it",
+    "ja",
+    "pl",
+    "pt",
+    "zh",
+    "base_model:hexgrad/Kokoro-82M",
+    "base_model:quantized:hexgrad/Kokoro-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2102918398,
+  "storage_human": "2.1 GB",
+  "base_model": "hexgrad/Kokoro-82M, hexgrad/Kokoro-82M-v1.1-zh",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kraven vânătorul streaming: unde să urmăriți online? - JustWatch",
+      "url": "https://www.justwatch.com/ro/film/kraven-the-hunter",
+      "snippet": "Se face streaming pentru Kraven vânătorul? Aflați unde puteți urmări online între 20+ servicii, inclusiv Netflix și Prime Video"
+    },
+    {
+      "title": "hexgrad/Kokoro-82M · Hugging Face",
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kraven vânătorul - Prime Video",
+      "url": "https://www.primevideo.com/-/ro/detail/0LVG7BU0Y4IAWKWJ4Z6MLB0NUT/",
+      "snippet": "Povestea originii brutale a celebrului personaj negativ din universul Marvel, Kraven, care devine cel mai mare vânător din lume."
+    },
+    {
+      "title": "GitHub - hexgrad/kokoro: https://hf.co/hexgrad/Kokoro-82M",
+      "url": "https://github.com/hexgrad/kokoro",
+      "snippet": "Kokoro is an open-weight TTS model with 82 million parameters. Despite its lightweight architecture, it delivers comparable quality to larger models while being significantly faster and more cost-efficient."
+    },
+    {
+      "title": "Kraven the Hunter (2024) online în HD în România | Sweet.tv",
+      "url": "https://sweet.tv/ro-ro/movie/32034-kraven-vanatorul",
+      "snippet": "Regizat de talentatul Alessandro Nivola, acest film promite să fie unul plin de acțiune și suspans. Povestea se axează pe personajul …"
+    }
+  ]
+}

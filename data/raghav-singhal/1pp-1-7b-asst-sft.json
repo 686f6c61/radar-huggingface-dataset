@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Raghav-Singhal/1pp-1.7b-asst-sft",
+  "slug": "raghav-singhal-1pp-1-7b-asst-sft",
+  "author": "Raghav-Singhal",
+  "url": "https://huggingface.co/Raghav-Singhal/1pp-1.7b-asst-sft",
+  "created_at": "2026-09-03T18:18:47.000Z",
+  "updated_at": "2026-09-03T18:19:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "1pp",
+    "one-persona-pretraining",
+    "sft",
+    "asst",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1661048832,
+  "parameters_human": "1.66B",
+  "storage_bytes": 3322122912,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Missing Payment Method in Meta Ads Manager: How to Fix It",
+      "url": "https://leadenforce.com/blog/missing-payment-method-in-meta-ads-manager-how-to-fix-it-before-ads-stop-launching",
+      "snippet": "Can’t publish a Meta ad because of a missing payment method? Learn how to fix billing setup, check permissions, and avoid launch …"
+    },
+    {
+      "title": "Raghav Singhal",
+      "url": "https://raghavsinghal10.github.io/",
+      "snippet": "I'm currently an AI PhD student in the Computer Science department at EPFL. I am fortunate to be advised by the amazing Prof. Robert West & am a contributor to the Apertus project (the biggest fully open & compliant training run & LLM at the time)."
+    },
+    {
+      "title": "Meta Ads Billing & Payment Setup Beginner Guide (2026)",
+      "url": "https://www.get-ryze.ai/blog/meta-ads-billing-payment-setup-beginner-guide",
+      "snippet": "May 6, 2026 · Adding payment methods to Meta Ads requires navigating to Business Manager > Payment Settings > Payment …"
+    },
+    {
+      "title": "‪Raghav Singhal‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=Nc4_zNIAAAAJ&hl=en",
+      "snippet": "Raghav Singhal PhD Researcher, EPFL Verified email at epfl.ch - Homepage LLMs Foundation Models AI Alignment ... Articles 1–16 Show more"
+    },
+    {
+      "title": "How to Set Up a Payment Method in Meta Ads Manager",
+      "url": "https://simplifiedelearning.in/how-to-set-up-a-payment-method-in-meta-ads-manager/",
+      "snippet": "Learn how to add and configure payment methods in Meta Ads Manager. Step-by-step guide for credit cards, debit cards & UPI billing …"
+    }
+  ]
+}

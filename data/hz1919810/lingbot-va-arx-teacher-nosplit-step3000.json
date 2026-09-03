@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "hz1919810/lingbot-va-arx-teacher-nosplit-step3000",
+  "slug": "hz1919810-lingbot-va-arx-teacher-nosplit-step3000",
+  "author": "hz1919810",
+  "url": "https://huggingface.co/hz1919810/lingbot-va-arx-teacher-nosplit-step3000",
+  "created_at": "2026-09-03T17:11:15.000Z",
+  "updated_at": "2026-09-03T17:22:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "lingbot-va",
+    "world-model",
+    "video-action",
+    "robotics",
+    "arx-lift-r5",
+    "sft-teacher",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5088872670,
+  "parameters_human": "5.09B",
+  "storage_bytes": 10177831668,
+  "storage_human": "10.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QR Code Generator | Create Your Free QR Codes",
+      "url": "https://www.qr-code-generator.com/",
+      "snippet": "QR Code Generator for URL, vCard, and more. Add logo, colors, frames, and download in high print quality. Get your free QR Codes …"
+    },
+    {
+      "title": "GitHub - Robbyant/lingbot-va: [RSS 2026] Causal video-action world ...",
+      "url": "https://github.com/robbyant/lingbot-va",
+      "snippet": "Deploying LingBot-VA for Inference LingBot-VA supports both standalone execution and Server-Client architecture which separates the model environment from simulation. By isolating dependencies, the design avoids package clashes and supports distributed inference on GPUs, clusters, and other devices."
+    },
+    {
+      "title": "QRCode Monkey - The free QR Code Generator to create custom QR Codes ...",
+      "url": "https://www.qrcode-monkey.com/",
+      "snippet": "Create custom QR Codes with Logo, Color and Design for free. This QR Code Maker offers free vector formats for best print quality.'"
+    },
+    {
+      "title": "hewu2008/ZERITH_Lingbot_VA - GitHub",
+      "url": "https://github.com/hewu2008/ZERITH_Lingbot_VA",
+      "snippet": "Deploying LingBot-VA for Inference LingBot-VA supports both standalone execution and Server-Client architecture which separates the model environment from simulation. By isolating dependencies, the design avoids package clashes and supports distributed inference on GPUs, clusters, and other devices."
+    },
+    {
+      "title": "Free QR Code Generator: Create unlimited QR codes | Canva",
+      "url": "https://www.canva.com/qr-code-generator/?msockid=2e3321404dd964ef3fa136894c5665a0",
+      "snippet": "Create custom QR codes with our free QR code generator. Keep the URL permanent with static codes or generate dynamic codes …"
+    }
+  ]
+}

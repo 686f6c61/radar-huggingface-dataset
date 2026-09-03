@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "borisbat/dasllama-tts",
+  "slug": "borisbat-dasllama-tts",
+  "author": "borisbat",
+  "url": "https://huggingface.co/borisbat/dasllama-tts",
+  "created_at": "2026-09-03T17:40:09.000Z",
+  "updated_at": "2026-09-03T17:41:14.000Z",
+  "license": "per-file",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "dasllama",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "dasllama",
+    "gguf",
+    "daslang",
+    "kittentts",
+    "kokoro",
+    "styletts2",
+    "text-to-speech",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 73983664,
+  "parameters_human": "74.0M",
+  "storage_bytes": 733557237,
+  "storage_human": "734 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook如何设置签名？添加Outlook签名-百度经验",
+      "url": "https://jingyan.baidu.com/article/eae07827d1ff0e5fec5485bb.html",
+      "snippet": "Dec 13, 2019 · Outlook如何设置签名？添加Outlook签名,Outlook是我们日常工作中经常用到的邮件收发工具。发送邮件时，在最后的 …"
+    },
+    {
+      "title": "Text-to-Speech Models – Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "snippet": "Active filters: text-to-speech. Clear all. IndexTeam/IndexTTS-2.5. Text-to-Speech • Updated 7 days ago • 4.79k • 134"
+    },
+    {
+      "title": "outlook会议邀请如何修改时间-百度经验",
+      "url": "https://jingyan.baidu.com/article/1876c852a779bfc80b13769e.html",
+      "snippet": "May 7, 2023 · outlook会议邀请如何修改时间,已经发送的会议邀请，突然领导有事只能调整会议时间了，如果重新发送一次会议邮件就 …"
+    },
+    {
+      "title": "dasllama.io — news, ladder, sidecars",
+      "url": "https://dasllama.io/",
+      "snippet": "dasLLAMA — an LLM + speech-to-text inference engine written entirely in daslang and JIT-compiled. News, the full measurement ladder, and the sidecar exchange."
+    },
+    {
+      "title": "比较好用的电子邮箱，大家有哪些推荐？ - 知乎",
+      "url": "https://www.zhihu.com/question/299339545",
+      "snippet": "outlook 可以添加 11 个别名。相当于一次登录，可以查看 11 个邮箱的内容。不同的邮箱别名，方便注册不同类型的网站。比如，我用 …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "rakorako/georgian-ocr-model",
+  "slug": "rakorako-georgian-ocr-model",
+  "author": "rakorako",
+  "url": "https://huggingface.co/rakorako/georgian-ocr-model",
+  "created_at": "2026-09-03T15:21:25.000Z",
+  "updated_at": "2026-09-03T15:23:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12290589,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adopt Me Grind Servers",
+      "url": "https://cocogrindclub.com/",
+      "snippet": "Adopt Me Grind Servers — live status board for 21 mega grind servers hosted by the Cocopuffies Discord crew."
+    },
+    {
+      "title": "IrakliJani/ka-ocr-v1-line · Hugging Face",
+      "url": "https://huggingface.co/IrakliJani/ka-ocr-v1-line",
+      "snippet": "This repository contains a single-line OCR model for Georgian-first typed text. It is designed for machine-rendered screenshot-style text, not general document or camera OCR."
+    },
+    {
+      "title": "The AFK Corner — Adopt Me Mega Grinding Servers",
+      "url": "https://theafkcorner.com/",
+      "snippet": "Come join me in server 24, there's tons of free food available, and even a race track behind the grinding area so you can spawn …"
+    },
+    {
+      "title": "GitHub - irakliskhirtladze/Ka-OCR: In progress: A monorepo of related ...",
+      "url": "https://github.com/irakliskhirtladze/Ka-OCR",
+      "snippet": "In progress: A monorepo of related projects to train ML models for Georgian OCR, wrap with API and serve online. - irakliskhirtladze/Ka-OCR"
+    },
+    {
+      "title": "Coco Grind Club - Adopt Me Grind Servers - Roblox",
+      "url": "https://www.roblox.com/communities/35428948/Coco-Grind-Club-Adopt-Me-Grind-Servers#!/about",
+      "snippet": "Coco Grind Club - Adopt Me Grind Servers is a community on Roblox owned by CocoPinkSky with 40645 members. Welcome to …"
+    }
+  ]
+}

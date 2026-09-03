@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "adraganov/arch-code-transfer-lpi-260903T0846-w2-code_no_comments_control",
+  "slug": "adraganov-arch-code-transfer-lpi-260903t0846-w2-code_no_comments_control",
+  "author": "adraganov",
+  "url": "https://huggingface.co/adraganov/arch-code-transfer-lpi-260903T0846-w2-code_no_comments_control",
+  "created_at": "2026-09-03T18:30:42.000Z",
+  "updated_at": "2026-09-03T18:30:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:google/gemma-3-12b-it",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:google/gemma-3-12b-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-3-12b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Silly horse | Horses at a bar, Pub meme, Hot horses - Pinterest",
+      "url": "https://www.pinterest.com/pin/silly-horse--68257750599064288/",
+      "snippet": "Jul 28, 2026 — A horse sitting on a bar stool at a bar, with its front legs resting on the counter. In front of the horse is a glass of dark …"
+    },
+    {
+      "title": "Horse sitting on counter | Funny horse pictures, Horse sitting at a bar ...",
+      "url": "https://uk.pinterest.com/pin/563018699784884/",
+      "snippet": "Apr 24, 2026 — A horse sitting on a bar stool at a bar, with its front legs resting on the counter. In front of the horse is a glass of dark …"
+    },
+    {
+      "title": "Funny Horse Pictures - Pinterest",
+      "url": "https://www.pinterest.com/ideas/funny-horse-pictures/944197913690/",
+      "snippet": "Discover Pinterest’s best ideas and inspiration for Funny horse pictures. Get inspired and try out new things. Find and save ideas …"
+    },
+    {
+      "title": "Horse Pub royalty-free images - Shutterstock",
+      "url": "https://www.shutterstock.com/search/horse-pub?msockid=1a7749e9fc8f63ef0bc75e20fdc36260",
+      "snippet": "Jan 24, 2024 · Find 2,098 Horse Pub stock images in HD and millions of other royalty-free stock photos, 3D objects, illustrations and …"
+    },
+    {
+      "title": "10,000+ Free Funny Horses & Horse Images - Pixabay",
+      "url": "https://pixabay.com/images/search/funny%20horses/",
+      "snippet": "Select a funny horses image to download for free. High resolution picture downloads for your next project. Find images of Funny …"
+    }
+  ]
+}

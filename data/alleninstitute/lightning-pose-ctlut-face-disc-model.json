@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "AllenInstitute/lightning-pose-ctlut-face-disc-model",
+  "slug": "alleninstitute-lightning-pose-ctlut-face-disc-model",
+  "author": "AllenInstitute",
+  "url": "https://huggingface.co/AllenInstitute/lightning-pose-ctlut-face-disc-model",
+  "created_at": "2026-09-03T17:02:35.000Z",
+  "updated_at": "2026-09-03T17:12:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "lightning-pose",
+  "languages": [],
+  "tags": [
+    "lightning-pose",
+    "tensorboard",
+    "pose-estimation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284802940,
+  "storage_human": "285 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Latest news and today's top stories | Yahoo News UK",
+      "url": "https://uk.news.yahoo.com/",
+      "snippet": "Jan 1, 2015 · Keep up-to-date with what's going on in the UK and around the world with the top headlines and breaking news from …"
+    },
+    {
+      "title": "Latest UK news and top stories | Yahoo News UK",
+      "url": "https://uk.news.yahoo.com/uk/",
+      "snippet": "Dec 15, 2025 · Breaking news and latest updates from the UK. All the top stories you need to read today from England, Scotland, …"
+    },
+    {
+      "title": "Yahoo! UK | Mail, Weather, Search, Politics, News, Finance, Sports and ...",
+      "url": "https://uk.yahoo.com/",
+      "snippet": "Latest news coverage, email, free stock quotes, live scores and video are just the beginning. Discover more every day at Yahoo!"
+    },
+    {
+      "title": "Yahoo! UK - | Yahoo News",
+      "url": "https://www.yahoo.com/author/yahoo!-uk/",
+      "snippet": "The latest news and headlines from Yahoo! News. Get breaking news stories and in-depth coverage with videos and photos."
+    },
+    {
+      "title": "Uk news | Yahoo - Latest News & Headlines",
+      "url": "https://www.yahoo.com/tagged/uk-news/",
+      "snippet": "Mar 7, 2026 · Get the latest news, photos, videos, and more on Uk news from Yahoo - Latest News & Headlines."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lloydchristmas1231/deniaya-claude-nonu",
+  "slug": "lloydchristmas1231-deniaya-claude-nonu",
+  "author": "lloydchristmas1231",
+  "url": "https://huggingface.co/lloydchristmas1231/deniaya-claude-nonu",
+  "created_at": "2026-09-03T14:48:58.000Z",
+  "updated_at": "2026-09-03T15:25:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 779020976,
+  "storage_human": "779 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mangrove (Ökosystem) – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Mangrove_%28%C3%96kosystem%29",
+      "snippet": "Neben Korallenriffen und den tropischen Regenwäldern zählen Mangroven zu den produktivsten Ökosystemen der Erde. In den …"
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "Mangroven - NABU",
+      "url": "https://www.nabu.de/natur-und-landschaft/waelder/lebensraum-wald/mangroven.html",
+      "snippet": "Mangroven sind salztolerante Bäume oder Sträucher, die an tropischen und subtropischen Küsten und Flussdeltas wachsen. Sie sind …"
+    },
+    {
+      "title": "lloydchristmas1231/deniaya · Hugging Face",
+      "url": "https://huggingface.co/lloydchristmas1231/deniaya",
+      "snippet": "Instructions to use lloydchristmas1231/deniaya with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use lloydchristmas1231/deniaya with Diffusers:"
+    },
+    {
+      "title": "Mangroven - Bedrohtes Ökosystem zwischen Meer und Land",
+      "url": "https://www.regenwald-schuetzen.org/regenwald-wissen/faszination-regenwald/oekosysteme-der-tropen/mangroven",
+      "snippet": "Mangroven gehören zu den wichtigsten Küstenökosystemen der Erde. Sie bieten vielen Tierarten einen Lebensraum, schützen …"
+    }
+  ]
+}

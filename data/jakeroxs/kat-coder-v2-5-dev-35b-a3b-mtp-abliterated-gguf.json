@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "jakeroxs/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED-GGUF",
+  "slug": "jakeroxs-kat-coder-v2-5-dev-35b-a3b-mtp-abliterated-gguf",
+  "author": "jakeroxs",
+  "url": "https://huggingface.co/jakeroxs/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED-GGUF",
+  "created_at": "2026-08-12T04:15:17.000Z",
+  "updated_at": "2026-09-03T16:55:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_5_moe",
+    "kat-coder",
+    "kat-coder-v2.5",
+    "qwen3.5",
+    "mixture-of-experts",
+    "coding",
+    "mtp",
+    "speculative-decoding",
+    "abliteration",
+    "uncensored",
+    "conversational",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:jakeroxs/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED",
+    "base_model:quantized:jakeroxs/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 2309,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 246610076149,
+  "storage_human": "246.6 GB",
+  "base_model": "jakeroxs/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ex-torrenty.org - NAJLEPSZA BAZA TORRENTOW :: Logowanie",
+      "url": "https://ex-torrenty.org/login.php",
+      "snippet": "Polska strona torrentowa, pliki torrent, najnowsze torrenty Żaden z plików nie znajduje się na serwerze. Torrenty są własnością …"
+    },
+    {
+      "title": "Ex-torrenty.org - NAJLEPSZA BAZA TORRENTOW :: FAQ",
+      "url": "https://www.ex-torrenty.org/faq.php",
+      "snippet": "Pomoc Jeżeli masz pewność, że odpowiedzi na twoje pytanie nie ma w FAQ, napisz do nas wiadomość na adres e-mail: kontakt@ex …"
+    },
+    {
+      "title": "TORRENTY - POLSKIE TORRENTY BEZ LIMITÓW!",
+      "url": "https://torrenty.cc/",
+      "snippet": "Torrenty - Najszybsza wyszukiwarka torrentów Znajdź Torrenty w najszybszej polskiej wyszukiwarce torrentów, stworzonej z myślą o …"
+    },
+    {
+      "title": "12 najlepszych stron torrentowych 2026 (bezpieczne) - WizCase",
+      "url": "https://pl.wizcase.com/blog/najlepszych-stron-z-torrentami-ktore-wciaz-dzialaja/",
+      "snippet": "Apr 29, 2026 · Interesują cię najlepsze strony z torrentami, które wciąż działają i są bezpieczne? Sprawdź najlepsze strony z …"
+    },
+    {
+      "title": "10 najlepszych stron z torrentami w 2026 - DobryVPN.pl",
+      "url": "https://www.dobryvpn.pl/artykuly/strony-z-torrentami/",
+      "snippet": "Apr 15, 2026 · Ex-torrenty.org to dobra alternatywa dla osób szukających polskich torrentów, szczególnie gdy inne serwisy są …"
+    }
+  ]
+}

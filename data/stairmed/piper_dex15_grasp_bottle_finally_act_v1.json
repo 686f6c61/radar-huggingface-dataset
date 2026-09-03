@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "stairmed/piper_dex15_grasp_bottle_finally_act_v1",
+  "slug": "stairmed-piper_dex15_grasp_bottle_finally_act_v1",
+  "author": "stairmed",
+  "url": "https://huggingface.co/stairmed/piper_dex15_grasp_bottle_finally_act_v1",
+  "created_at": "2026-09-03T14:03:51.000Z",
+  "updated_at": "2026-09-03T14:04:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:stairmed/piper_dex15_grasp_bottle_finally",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206721188,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lake Ontario Is One of Many Bodies of Water Caught in a Naming …",
+      "url": "https://www.nytimes.com/2026/09/03/world/americas/lake-ontario-bodies-of-water-naming-disputes-south-china-sea.html",
+      "snippet": "5 hours ago · President Trump’s bid to call it ‘Lake America’ stands out in a world full of contested place names, which often represent …"
+    },
+    {
+      "title": "Honoring the American History of the Great Lakes and Renaming Lake ...",
+      "url": "https://www.whitehouse.gov/presidential-actions/2026/08/honoring-the-american-history-of-the-great-lakes-and-renaming-lake-ontario-as-lake-america-3a36/",
+      "snippet": "6 days ago · Sec. 2. Lake America. (a) The body of water currently known as Lake Ontario is a tremendous asset to the United …"
+    },
+    {
+      "title": "Trump renames Lake Ontario 'Lake America' amid Canada trade war",
+      "url": "https://www.cnbc.com/2026/08/27/trump-canada-lake-america-ontario.html?msockid=0701c86cef216cbd1caedfa5ee906d6f",
+      "snippet": "6 days ago · President Donald Trump signed an executive order that he said will \"immediately\" change the name of Lake Ontario to …"
+    },
+    {
+      "title": "Lake Ontario: The Story Behind Its Name, History and Place in the …",
+      "url": "https://www.timesnownews.com/travel/lake-ontario-lake-america-donald-trump-history-article-155999325",
+      "snippet": "6 days ago · An Indigenous name, centuries of conflict and commerce, dramatic shorelines and a hidden world of shipwrecks: the …"
+    },
+    {
+      "title": "Can Trump really rename Lake Ontario, ‘Lake America’?",
+      "url": "https://www.aljazeera.com/news/2026/8/28/can-trump-really-rename-lake-ontario-lake-america",
+      "snippet": "6 days ago · During a news conference in the Oval Office of the White House on Thursday, Trump signed an executive order that …"
+    }
+  ]
+}

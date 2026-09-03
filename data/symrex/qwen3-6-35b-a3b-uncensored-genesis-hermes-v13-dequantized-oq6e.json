@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-dequantized-oQ6e",
+  "slug": "symrex-qwen3-6-35b-a3b-uncensored-genesis-hermes-v13-dequantized-oq6e",
+  "author": "symrex",
+  "url": "https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-dequantized-oQ6e",
+  "created_at": "2026-09-03T12:59:02.000Z",
+  "updated_at": "2026-09-03T12:59:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "oq",
+    "quantized",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 29600299670,
+  "storage_human": "29.6 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ריווחית אונליין – כניסה והתחברות ...",
+      "url": "https://online1.rivhit.co.il/LoginManager/Login",
+      "snippet": "כניסה והתחברות למערכת ריווחית אונליין - הנהלת חשבונות וניהול עסק באינטרנט. להתחברות עם שם משתמש וסיסמא למערכת ריווחית און ליין היכנסו …"
+    },
+    {
+      "title": "ריווחית אונליין – הרשמה למערכת ...",
+      "url": "https://online1.rivhit.co.il/LoginManager/Register/Index",
+      "snippet": "כניסה והתחברות למערכת ריווחית אונליין - הנהלת חשבונות וניהול עסק באינטרנט. להתחברות עם שם משתמש וסיסמא למערכת ריווחית און ליין היכנסו …"
+    },
+    {
+      "title": "הסיסמה אופסה בהצלחה",
+      "url": "https://online1.rivhit.co.il/LoginManager/ResetPassword/Success",
+      "snippet": "הסיסמה אופסה בהצלחה נשלח דוא\"ל עם סיסמה זמנית המאפשרת התחברות למערכת."
+    },
+    {
+      "title": "שחזור שם משתמש",
+      "url": "https://online1.rivhit.co.il/LoginManager/RecoverUsername/index",
+      "snippet": "שחזור שם משתמש למערכת ריווחית אונליין בצורה מהירה ונוחה."
+    },
+    {
+      "title": "איפוס סיסמה",
+      "url": "https://online1.rivhit.co.il/LoginManager/ResetPassword/index",
+      "snippet": "שחזור סיסמה למערכת ריווחית אונליין לניהול עסק והנהלת חשבונות באינטרנט."
+    }
+  ]
+}

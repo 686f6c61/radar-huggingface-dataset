@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Banaxi-Tech/BananaMind-2.1-Lite-All-Looped-AdamW",
+  "slug": "banaxi-tech-bananamind-2-1-lite-all-looped-adamw",
+  "author": "Banaxi-Tech",
+  "url": "https://huggingface.co/Banaxi-Tech/BananaMind-2.1-Lite-All-Looped-AdamW",
+  "created_at": "2026-09-03T05:22:01.000Z",
+  "updated_at": "2026-09-03T12:19:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bananamind21_lite_25m",
+    "causal-lm",
+    "custom-code",
+    "recurrent-stack",
+    "all-middle-looped",
+    "n-gram",
+    "text-generation",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 28357858,
+  "parameters_human": "28.4M",
+  "storage_bytes": 3414295480,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "POLITICO – European Politics, Policy, Government News",
+      "url": "https://www.politico.eu/",
+      "snippet": "POLITICO Europe covers the politics, policy and personalities of the European Union. Our coverage includes breaking news, opinion …"
+    },
+    {
+      "title": "UK – POLITICO",
+      "url": "https://www.politico.eu/uk/",
+      "snippet": "12 hours ago · POLITICO UK covers the politics, policy and personalities of the United Kingdom. Our coverage includes breaking …"
+    },
+    {
+      "title": "Latest news – POLITICO",
+      "url": "https://www.politico.eu/latest/",
+      "snippet": "The left-wing chief hopes to cause a political upset by taking the Holborn and St Pancras constituency from Labour."
+    },
+    {
+      "title": "Newsletters – POLITICO",
+      "url": "https://www.politico.eu/newsletter/",
+      "snippet": "Get the latest news and analysis on European politics and policy delivered straight to your inbox."
+    },
+    {
+      "title": "Polish conservatives split ahead of 2027 election – POLITICO",
+      "url": "https://www.politico.eu/article/polish-conservatives-split-ahead-of-2027-election/",
+      "snippet": "Jul 24, 2026 · Polish conservatives split ahead of 2027 election The rupture of the once dominant Law and Justice party undermines …"
+    }
+  ]
+}

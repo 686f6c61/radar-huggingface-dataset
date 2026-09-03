@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "frankmorales2020/topo-voxtral-unesco-audio",
+  "slug": "frankmorales2020-topo-voxtral-unesco-audio",
+  "author": "frankmorales2020",
+  "url": "https://huggingface.co/frankmorales2020/topo-voxtral-unesco-audio",
+  "created_at": "2026-09-03T19:09:14.000Z",
+  "updated_at": "2026-09-03T19:09:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "voxtral_realtime",
+    "audio",
+    "speech",
+    "asr",
+    "transcription",
+    "voxtral",
+    "unesco",
+    "topo-2026",
+    "continual-learning",
+    "catastrophic-forgetting",
+    "sovereign-ai",
+    "h2e-framework",
+    "resilient-ai",
+    "automatic-speech-recognition",
+    "en",
+    "dataset:frankmorales2020/UNESCO",
+    "base_model:mistralai/Voxtral-Mini-4B-Realtime-2602",
+    "base_model:finetune:mistralai/Voxtral-Mini-4B-Realtime-2602",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "يلا شوت | Yalla Shoot | أهم مباريات اليوم yallashoot",
+      "url": "https://www.yallasport-hd.com/home/",
+      "snippet": "تابع جدول مباريات اليوم لايف لحظة بلحظة. تغطية شاملة لجميع البطولات الأوروبية والعربية عبر yalla shoot مع تحديث مستمر للنتائج والترتيب."
+    },
+    {
+      "title": "README.md · frankmorales2020/voxtral-mini-4b-unesco-audio at main",
+      "url": "https://huggingface.co/frankmorales2020/voxtral-mini-4b-unesco-audio/blob/main/README.md",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "يلا شوت | Yalla Shoot | مباريات اليوم بث مباشر | yallashoot يلاشوت",
+      "url": "https://www.yallh-shoot.com/",
+      "snippet": "يلا شوت yalla shoot بث مباشر، يلا شووت جوال، مباريات اليوم بدون تقطيع، نتائج المباريات عبر يلا شوت لايف yalla shoot live كورة لحظة بلحظة , يلاشوت مباشر اليوم"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=TOPO-2026",
+      "snippet": "Active filters: TOPO-2026. Clear all. frankmorales2020/topological-ai-gpt-oss-20b. Updated 29 days ago. frankmorales2020/topological-ai-gpt-oss-20b-certified"
+    },
+    {
+      "title": "مباريات اليوم | يلا شوت",
+      "url": "https://www.yalla-shoot-it.com/today-matches",
+      "snippet": "إن البحث عن مشاهدة مباريات اليوم أصبح أمراً سهلاً مع توفر تقنيات البث المتطورة التي نوفرها عبر يلا شووت، حيث نغطي كافة البطولات ابتداءً من دوري أبطال أوروبا وصولاً إلى الدوريات العربية ..."
+    }
+  ]
+}

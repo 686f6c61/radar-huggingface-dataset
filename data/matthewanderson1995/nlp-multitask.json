@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "matthewanderson1995/nlp-multitask",
+  "slug": "matthewanderson1995-nlp-multitask",
+  "author": "matthewanderson1995",
+  "url": "https://huggingface.co/matthewanderson1995/nlp-multitask",
+  "created_at": "2026-09-03T16:29:57.000Z",
+  "updated_at": "2026-09-03T16:30:05.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L'agenzia dei bugiardi - Wikipedia",
+      "url": "https://it.m.wikipedia.org/wiki/L%27agenzia_dei_bugiardi",
+      "snippet": "Il film è un remake del film francese Alibi.com diretto da Philippe Lacheau. Fred, Diego e Paolo gestiscono un'agenzia, la S.O.S. Alibi, …"
+    },
+    {
+      "title": "L'agenzia dei bugiardi - Mediaset Infinity",
+      "url": "https://mediasetinfinity.mediaset.it/movie/lagenziadeibugiardi/lagenzia-dei-bugiardi_F308623701000101",
+      "snippet": "La missione di una banda di bugiardi è fornire alibi perfetti ai propri clienti, traditori incalliti. Ma quando vengono coinvolti in prima …"
+    },
+    {
+      "title": "Guarda L'agenzia dei bugiardi | Netflix",
+      "url": "https://qr.netflix.com/it/title/81232453",
+      "snippet": "Tre uomini lavorano in un'agenzia che crea falsi alibi per gli infedeli, finché uno di loro si innamora e resta impigliato nella sua stessa …"
+    },
+    {
+      "title": "L'Agenzia dei Bugiardi - Film (2019) - ComingSoon.it",
+      "url": "https://www.comingsoon.it/film/l-agenzia-dei-bugiardi/55118/scheda/",
+      "snippet": "Jan 17, 2019 · L'Agenzia dei Bugiardi, il film diretto da Volfango De Biasi, vede protagonisti il seducente Fred (Giampaolo Morelli), …"
+    },
+    {
+      "title": "Watch L'agenzia dei bugiardi | Netflix",
+      "url": "https://qr.netflix.com/it-en/title/81232453",
+      "snippet": "Three men work at an agency that creates false alibis for the unfaithful. When one of them falls in love, he becomes tangled in his …"
+    }
+  ]
+}

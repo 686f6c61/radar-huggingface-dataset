@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Fred456/llava15_7b_DPO-ab_5",
+  "slug": "fred456-llava15_7b_dpo-ab_5",
+  "author": "Fred456",
+  "url": "https://huggingface.co/Fred456/llava15_7b_DPO-ab_5",
+  "created_at": "2026-09-03T11:54:41.000Z",
+  "updated_at": "2026-09-03T11:57:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llava_llama",
+    "arxiv:1910.09700",
+    "base_model:liuhaotian/llava-v1.5-7b",
+    "base_model:adapter:liuhaotian/llava-v1.5-7b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 756400952,
+  "storage_human": "756 MB",
+  "base_model": "liuhaotian/llava-v1.5-7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GMD 한국포럼",
+      "url": "https://gmdkoreaforum.com/",
+      "snippet": "Geometry Dash 한국포럼! (Since 2017.07.01) 데몬리스트와 스탯랭킹, 다양한 커뮤니티 이벤트들을 만나보세요!"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "148 万浏览 · 693 关注 · 411 回答 查看全部 热点 问题 潜力好问题 乐华艺人金子涵官宣退圈，如何看待她的选择？ 444 万浏览 · 285 关 …"
+    },
+    {
+      "title": "#1 - Society",
+      "url": "https://gmdkoreaforum.com/demonlist/",
+      "snippet": "Jun 24, 2026 · Geometry Dash 한국포럼! (Since 2017.07.01) 데몬리스트와 스탯랭킹, 다양한 커뮤니티 이벤트들을 만나보세요!"
+    },
+    {
+      "title": "百度网盘流氓软件，夹带私货「 智能看图」并且偷偷修改系统的默认图 …",
+      "url": "https://www.zhihu.com/question/1920938666324373655",
+      "snippet": "百度网盘“离谱骚操作”，篡改右键菜单的看图软件，还特意“模仿”Windows系统自带看图软件的图标。 都误以为是系统软件，100%就 …"
+    },
+    {
+      "title": "GDStatus - gmdkoreaforum.com",
+      "url": "https://www.gmdkoreaforum.com/gdstatus",
+      "snippet": "Check the Geometry Dash Server Status It's simple. It request to GD server by regular intervals for check the status. Search R.T. is …"
+    }
+  ]
+}

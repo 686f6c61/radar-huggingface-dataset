@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jarrelscy/GLM-5.3-Vision-NVFP4-AQLM-hybrid-1m",
+  "slug": "jarrelscy-glm-5-3-vision-nvfp4-aqlm-hybrid-1m",
+  "author": "jarrelscy",
+  "url": "https://huggingface.co/jarrelscy/GLM-5.3-Vision-NVFP4-AQLM-hybrid-1m",
+  "created_at": "2026-09-03T16:37:11.000Z",
+  "updated_at": "2026-09-03T16:41:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm5v",
+    "nvfp4",
+    "aqlm",
+    "quantized",
+    "glm",
+    "base_model:RadixArk/GLM-5.3-NVFP4",
+    "base_model:quantized:RadixArk/GLM-5.3-NVFP4",
+    "license:mit",
+    "8-bit",
+    "nvfp4_aqlm_hybrid",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 210042476626,
+  "parameters_human": "210.04B",
+  "storage_bytes": 293784491490,
+  "storage_human": "293.8 GB",
+  "base_model": "RadixArk/GLM-5.3-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Quiz Widget - BookWidgets",
+      "url": "https://www.bookwidgets.com/widget-library/quiz",
+      "snippet": "Assess students’ understanding of language grammar with an interactive Quiz. Utilize a combination of question types to identify …"
+    },
+    {
+      "title": "Free Quiz Maker Widget - commoninja.com",
+      "url": "https://www.commoninja.com/widgets/quiz",
+      "snippet": "Build a multi-question quiz with scored or personality-style results, or use the same widget in poll mode for single-question polls, …"
+    },
+    {
+      "title": "Free Quiz Widgets – Capture Leads with Interactive Quizzes …",
+      "url": "https://embeddable.co/free-quiz-widgets",
+      "snippet": "Create personality quizzes, trivia, and lead generation quizzes in minutes with AI. Fully editable, no coding required. Start free at …"
+    },
+    {
+      "title": "Vraagtypes - bookwidgets.com",
+      "url": "https://www.bookwidgets.com/nl/question-types",
+      "snippet": "Met de Quiz, Videoquiz, het Werkblad en Gesplitst werkblad kan je digitale opdrachten maken met 36 vraagtypes. 30 daarvan …"
+    },
+    {
+      "title": "Quiz Widgets - Build Custom Assessments & Interactive Content",
+      "url": "https://embeddable.co/use-cases/interactive-quizzes",
+      "snippet": "Create engaging quiz widgets with AI. Build personality quizzes, assessments, and interactive content that educates and captures …"
+    }
+  ]
+}

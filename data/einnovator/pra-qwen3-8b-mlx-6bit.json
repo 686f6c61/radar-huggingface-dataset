@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "EInnovator/pra-qwen3-8b-mlx-6bit",
+  "slug": "einnovator-pra-qwen3-8b-mlx-6bit",
+  "author": "EInnovator",
+  "url": "https://huggingface.co/EInnovator/pra-qwen3-8b-mlx-6bit",
+  "created_at": "2026-09-03T16:02:26.000Z",
+  "updated_at": "2026-09-03T16:02:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pra",
+  "languages": [],
+  "tags": [
+    "pra",
+    "progressive-retrieval-attention",
+    "adapter",
+    "long-context",
+    "base_model:mlx-community/Qwen3-8B-6bit",
+    "base_model:finetune:mlx-community/Qwen3-8B-6bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "mlx-community/Qwen3-8B-6bit",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Daily Horoscopes - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/",
+      "snippet": "Each day includes unique surprises and revelations, so make sure you visit regularly to read your zodiac sign’s daily horoscope. …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "148 万浏览 · 693 关注 · 411 回答 查看全部 热点 问题 潜力好问题 乐华艺人金子涵官宣退圈，如何看待她的选择？ 444 万浏览 · 285 关 …"
+    },
+    {
+      "title": "Capricorn Daily Horoscope - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/capricorn-daily-horoscope/",
+      "snippet": "17 hours ago · Read your free online Capricorn daily horoscope for today! Use these expert astrology predictions and discover what …"
+    },
+    {
+      "title": "Deepseek涨价了，有哪些便宜的替代方案？ - 知乎",
+      "url": "https://www.zhihu.com/question/2072733800774354696",
+      "snippet": "Grok，直接买Grok Build + Credit + X Premium，一年50刀约等于一个GPT Plus。足够轻度开发+办公完全够了，没必要送钱给GPT。 …"
+    },
+    {
+      "title": "《记忆革命：Gemini 1.5如何让Transformer突破百万级上下文枷锁》",
+      "url": "https://bbs.huaweicloud.com/blogs/453371",
+      "snippet": "May 29, 2025 · 而Google DeepMind的Gemini 1.5却打破了这一宿命，首次实现百万级token的上下文处理能力，相当于让AI同时阅读 …"
+    }
+  ]
+}

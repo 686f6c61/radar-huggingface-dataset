@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ebylmz/pnp-transformer-pretrained",
+  "slug": "ebylmz-pnp-transformer-pretrained",
+  "author": "ebylmz",
+  "url": "https://huggingface.co/ebylmz/pnp-transformer-pretrained",
+  "created_at": "2026-09-03T13:39:24.000Z",
+  "updated_at": "2026-09-03T14:15:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1879109904,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/?msockid=02f2390ee4bf664a354e2ec7e59067d8",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    },
+    {
+      "title": "GitHub - ebylmz/pnp-transformer: PnP-Transformer: A Neural Pose Solver ...",
+      "url": "https://github.com/ebylmz/pnp-transformer",
+      "snippet": "PnP-Transformer: A Neural Pose Solver for Zero-Shot 6D Object Pose Estimation - ebylmz/pnp-transformer"
+    },
+    {
+      "title": "Copilot - Copilot GPTs Content Policy - copilot.microsoft.com",
+      "url": "https://copilot.microsoft.com/turing/copilot/copilotgptspolicy?msockid=02f2390ee4bf664a354e2ec7e59067d8",
+      "snippet": "Feb 22, 2024 · These policies may be enforced at Microsoft’s discretion, and Microsoft may remove, suspend, or disable access to …"
+    },
+    {
+      "title": "Find Pre-trained Models | Kaggle",
+      "url": "https://www.kaggle.com/models",
+      "snippet": "Discover and download pre-trained AI models. Use them directly in Kaggle Notebooks or integrate into your own projects."
+    },
+    {
+      "title": "[Copilot Podcasts] - A Copilot Labs experiment",
+      "url": "https://copilot.microsoft.com/labs/experiments/copilot-podcasts?msockid=02f2390ee4bf664a354e2ec7e59067d8",
+      "snippet": "Personalized podcasts that match your curiosity and interests."
+    }
+  ]
+}

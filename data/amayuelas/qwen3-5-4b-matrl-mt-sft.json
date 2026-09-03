@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "amayuelas/Qwen3.5-4B-MatRL-MT-SFT",
+  "slug": "amayuelas-qwen3-5-4b-matrl-mt-sft",
+  "author": "amayuelas",
+  "url": "https://huggingface.co/amayuelas/Qwen3.5-4B-MatRL-MT-SFT",
+  "created_at": "2026-09-03T17:43:52.000Z",
+  "updated_at": "2026-09-03T17:45:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "materials-science",
+    "crystal-structure",
+    "tool-use",
+    "agentic",
+    "sft",
+    "text-generation",
+    "conversational",
+    "dataset:amayuelas/matrl-sft-mt",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098609757,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TippmixPro",
+      "url": "https://www.tippmixpro.hu/",
+      "snippet": "Legális online sportfogadás a Tippmixpro.hu-n, ahol számtalan lehetőség vár rád a nyerésre."
+    },
+    {
+      "title": "amayuelas/Qwen3.5-4B-MatRL-MT-SFT-r4 · Hugging Face",
+      "url": "https://huggingface.co/amayuelas/Qwen3.5-4B-MatRL-MT-SFT-r4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TippmixPro",
+      "url": "https://www.tippmixpro.hu/hu/fogadas/i",
+      "snippet": "global_loginBtnText_huglobal_registerBtnText_hu Mobil applikáció"
+    },
+    {
+      "title": "amayuelas/Qwen3.5-4B-MatRL-MT-SFT-r4 at main - Hugging Face",
+      "url": "https://huggingface.co/amayuelas/Qwen3.5-4B-MatRL-MT-SFT-r4/tree/main",
+      "snippet": "amayuelas / Qwen3.5-4B-MatRL-MT-SFT-r4 like 0 Safetensors qwen3_5 materials crystal-structure matrl sft multi-turn License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Qwen3.5-4B-MatRL-MT-SFT-r4 Ctrl+K Ctrl+K 1 contributor History:2 commits amayuelas MatRL r4 SFT cold-start checkpoint 117ca85 verifiedabout ..."
+    },
+    {
+      "title": "2025. Novemberi regisztrációs bónusz | TippmixPRO",
+      "url": "https://tracker.tippmixpro.hu/link?btag=60708354_469480",
+      "snippet": "Legális online sportfogadás minden mennyiségben a Tippmixpro.hu-n! Fedezd fel a végtelen lehetőségeket és nyerj."
+    }
+  ]
+}

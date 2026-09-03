@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Arham-bhai/opencode-cloud",
+  "slug": "arham-bhai-opencode-cloud",
+  "author": "Arham-bhai",
+  "url": "https://huggingface.co/Arham-bhai/opencode-cloud",
+  "created_at": "2026-09-03T14:45:58.000Z",
+  "updated_at": "2026-09-03T14:45:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ARAHM | Association Régionale l'Aide aux Handicapés Moteurs",
+      "url": "http://www.arahm.fr/",
+      "snippet": "ARAHM Association Régionale l'Aide aux Handicapés Moteurs bulletin d'information INFOS PRATIQUES Emplois Contact Faire un …"
+    },
+    {
+      "title": "Models | OpenCode",
+      "url": "https://opencode.ai/docs/models/",
+      "snippet": "Models Configuring an LLM provider and model. OpenCode uses the AI SDK and Models.dev to support 75+ LLM providers and it supports running local models."
+    },
+    {
+      "title": "Arahm Alsace | Strasbourg - Facebook",
+      "url": "https://www.facebook.com/ARAHMALSACE/",
+      "snippet": "Nov 28, 2025 · Arahm Alsace, Strasbourg. 572 likes · 83 were here. Créée depuis 1965, l'Association Régionale \" l'Aide aux …"
+    },
+    {
+      "title": "OpenCode | The open source AI coding agent",
+      "url": "https://opencode.ai/",
+      "snippet": "The open source AI coding agent Free models included or connect any model from any provider, including Claude, GPT, Gemini and more."
+    },
+    {
+      "title": "Accueil — Arham",
+      "url": "https://arham.ch/",
+      "snippet": "Spécialistes en architecture, arts appliqués ou encore en archéologie, les historien·nes ARHAM étudient les périodes s’étendant du …"
+    }
+  ]
+}

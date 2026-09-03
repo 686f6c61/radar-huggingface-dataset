@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Yashwanthkumar18/q-Taxi-v3",
+  "slug": "yashwanthkumar18-q-taxi-v3",
+  "author": "Yashwanthkumar18",
+  "url": "https://huggingface.co/Yashwanthkumar18/q-Taxi-v3",
+  "created_at": "2026-09-03T17:00:24.000Z",
+  "updated_at": "2026-09-03T17:00:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 274283,
+  "storage_human": "274283 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pattaya Seyahati, 2026 - Tripadvisor",
+      "url": "https://www.tripadvisor.com.tr/Tourism-g293919-Pattaya_Chonburi_Province-Vacations.html",
+      "snippet": "Pattaya Seyahat: Tripadvisor, mükemmel bir tatil için, Pattaya, Chonburi İli - gezilecek yerler, restoranlar ve konaklama yerleri …"
+    },
+    {
+      "title": "linker81/q-learning-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/linker81/q-learning-Taxi-v3",
+      "snippet": "model = load_from_hub(repo_id=\"linker81/q-learning-Taxi-v3\", filename=\"q-learning.pkl\") # Don't forget to check if you need to add additional attributes (is_slippery=False etc) env = gym.make(model[\"env_id\"]) evaluate_agent(env, model[\"max_steps\"], model[\"n_eval_episodes\"], model[\"qtable\"], model[\"eval_seed\"])"
+    },
+    {
+      "title": "Pattaya Gezi Rehberi | Seyahat Önerileri | Yolcu360",
+      "url": "https://yolcu360.com/lokasyonlar/tayland/pattaya",
+      "snippet": "Pattaya hakkında merak ettiğiniz her detaya kolayca ulaşın. Rehberimizi inceleyin, seyahatinizi planlamak için en iyi ipuçlarını keşfedin."
+    },
+    {
+      "title": "Pattaya Gezi Rehberi, Pattaya Seyahat Rehberi - ENUYGUN",
+      "url": "https://www.enuygun.com/ucak-bileti/pattaya-sehir-rehberi/",
+      "snippet": "Pattaya şehrinde ulaşım, aktiviteler, konaklama bilgileri, neler yapılabileceği, iklim durumu, yeme içme gibi bilgilerin yer aldığı Pattaya …"
+    },
+    {
+      "title": "Pattaya Gezilecek Yerler: 26 Aktivite ve Görülmesi Gereken Yerler",
+      "url": "https://sametozsuleyman.com.tr/pattaya-gezi-rehberi/",
+      "snippet": "2 days ago · Pattaya gezilecek ve görülecek yerler nerelerdir? Pattaya'da yapabileceğiniz en iyi aktiviteleri bu yazımda bulabilir ve …"
+    }
+  ]
+}

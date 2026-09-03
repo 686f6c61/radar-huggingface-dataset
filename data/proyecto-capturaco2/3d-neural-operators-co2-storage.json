@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "proyecto-capturaCO2/3D-Neural-Operators-CO2-Storage",
+  "slug": "proyecto-capturaco2-3d-neural-operators-co2-storage",
+  "author": "proyecto-capturaCO2",
+  "url": "https://huggingface.co/proyecto-capturaCO2/3D-Neural-Operators-CO2-Storage",
+  "created_at": "2026-09-03T12:36:48.000Z",
+  "updated_at": "2026-09-03T12:38:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "physics-informed-neural-networks",
+    "neural-operators",
+    "fourier-neural-operator",
+    "multipole-graph-neural-operator",
+    "co2-storage",
+    "carbon-capture-and-storage",
+    "reservoir-simulation",
+    "geos",
+    "mrst",
+    "multiphase-flow",
+    "time-series-forecasting",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 661564498,
+  "storage_human": "662 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Traduction PROYECTO en français | Dictionnaire espagnol ... - Reverso",
+      "url": "https://dictionnaire.reverso.net/espagnol-francais/proyecto",
+      "snippet": "Traduction de \"proyecto\" en français : projet, chantier, dessein. Nom, signification, prononciation, expressions idiomatiques en …"
+    },
+    {
+      "title": "proyecto, proyecta | Diccionario de la lengua española",
+      "url": "https://dle.rae.es/proyecto",
+      "snippet": "proyecto de ley m. Texto elaborado por el Gobierno y sometido al Parlamento para su tramitación y aprobación como ley."
+    },
+    {
+      "title": "Proyecto - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Proyecto",
+      "snippet": "Por ejemplo, el alcance de un proyecto se define de forma general al comienzo del proyecto, y se hace más explícito y detallado a …"
+    },
+    {
+      "title": "proyecto - Diccionario Español-Francés WordReference.com",
+      "url": "https://www.wordreference.com/esfr/proyecto",
+      "snippet": "Voir la traduction automatique de Google Translate de 'proyecto'. En otros idiomas: Portugués | Italiano | Alemán | Holandés | Sueco …"
+    },
+    {
+      "title": "Proyecto - Qué es, tipos, elementos y fases - Concepto",
+      "url": "https://concepto.de/proyecto/",
+      "snippet": "Te explicamos qué es un proyecto y los tipos en que se clasifica. Además, sus elementos y las etapas en que se divide un proyecto."
+    }
+  ]
+}

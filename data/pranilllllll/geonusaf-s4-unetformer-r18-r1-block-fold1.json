@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Pranilllllll/geonusaf-s4-unetformer-r18-R1-block-fold1",
+  "slug": "pranilllllll-geonusaf-s4-unetformer-r18-r1-block-fold1",
+  "author": "Pranilllllll",
+  "url": "https://huggingface.co/Pranilllllll/geonusaf-s4-unetformer-r18-R1-block-fold1",
+  "created_at": "2026-09-03T14:59:34.000Z",
+  "updated_at": "2026-09-03T15:49:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "semantic-segmentation",
+    "remote-sensing",
+    "unetformer",
+    "resnet18",
+    "geonusaf",
+    "synthetic-data",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2260366795,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cabin Rentals in Wisconsin Dells - Island Pointe Resort",
+      "url": "https://www.islandpointeresort.com/lodgings/",
+      "snippet": "From our cozy red cabins to rustic large cabins to comfortable villas/condos, Island Pointe Resort has a variety of lodging options to …"
+    },
+    {
+      "title": "geonusaf-s4-unetformer-r18-R0-block-fold1 - Hugging Face",
+      "url": "https://huggingface.co/Pranilllllll/geonusaf-s4-unetformer-r18-R0-block-fold1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cabin Rentals in Wisconsin Dells - Island Pointe Resort",
+      "url": "https://www.islandpointeresort.com/",
+      "snippet": "At Island Pointe Resort, we offer year-round cabin rentals for most any size group with all the luxuries of your own home. Relax on …"
+    },
+    {
+      "title": "Pranilllllll/geonusaf-unetformer-r18-block-fold1 · Hugging Face",
+      "url": "https://huggingface.co/Pranilllllll/geonusaf-unetformer-r18-block-fold1",
+      "snippet": "GeoNUSAF - UNetFormer (ResNet-18) - block split, fold 1 Kathmandu Valley land-use segmentation, 6 classes, ignore_index=255."
+    },
+    {
+      "title": "ISLAND POINTE RESORT - Hotel Reviews (Wisconsin Dells)",
+      "url": "https://www.tripadvisor.com/Hotel_Review-g60403-d2153358-Reviews-Island_Pointe_Resort-Wisconsin_Dells_Wisconsin.html",
+      "snippet": "Island Pointe Resort, Wisconsin Dells: See 51 traveler reviews, 63 candid photos, and great deals for Island Pointe Resort, ranked #4 …"
+    }
+  ]
+}

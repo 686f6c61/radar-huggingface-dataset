@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Raghav-Singhal/1pp-0.5b-raw-base",
+  "slug": "raghav-singhal-1pp-0-5b-raw-base",
+  "author": "Raghav-Singhal",
+  "url": "https://huggingface.co/Raghav-Singhal/1pp-0.5b-raw-base",
+  "created_at": "2026-09-03T16:50:46.000Z",
+  "updated_at": "2026-09-03T17:02:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "1pp",
+    "one-persona-pretraining",
+    "base",
+    "raw",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 580445568,
+  "parameters_human": "580.4M",
+  "storage_bytes": 1160916120,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=ar",
+      "snippet": "نزِّل تطبيق YouTube الرسمي للهواتف والأجهزة اللوحية التي تعمل بنظام التشغيل Android. واطّلِع على المحتوى الذي يشاهده المستخدمون من حول العالم، من الفيديوهات الموسيقية الأكثر رواجًا إلى …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/YouTube/ar",
+      "snippet": "YouTube's official YouTube channel Ahead of her headlining set at Rock in Rio, Brazilian pop queen @MarinaSenaOficial is revealing …"
+    },
+    {
+      "title": "YouTube Arabia - YouTube",
+      "url": "https://www.youtube.com/youtubearabia",
+      "snippet": "Investing in sports || الاستثمار في الرياضة مع حكايات يوتيوب فارس التركي Faris Alturki 28K views • 2 years ago 34:58"
+    }
+  ]
+}

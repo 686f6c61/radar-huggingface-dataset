@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Llama-SoraEToAtetaTegami-3.1X-70B-GGUF",
+  "slug": "mradermacher-llama-soraetoatetategami-3-1x-70b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-SoraEToAtetaTegami-3.1X-70B-GGUF",
+  "created_at": "2024-12-11T01:37:31.000Z",
+  "updated_at": "2026-09-03T16:53:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:KaraKaraModel/Llama-SoraEToAtetaTegami-3.1X-70B",
+    "base_model:quantized:KaraKaraModel/Llama-SoraEToAtetaTegami-3.1X-70B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 97,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481302995744,
+  "storage_human": "481.3 GB",
+  "base_model": "KaraKaraModel/Llama-SoraEToAtetaTegami-3.1X-70B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/accueil",
+      "snippet": "Depuis le 1 er septembre 2026, les grandes entreprises et les entreprises de taille intermédiaire doivent émettre leurs factures via …"
+    },
+    {
+      "title": "Particulier | impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "À la une Particulier Professionnel Demande d'aide de 100 € pour les travailleurs « grands rouleurs » Publié le 27 mai 2026 Vous avez …"
+    },
+    {
+      "title": "Professionnel - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/professionnel",
+      "snippet": "À la une Particulier Professionnel Demande d'aide de 100 € pour les travailleurs « grands rouleurs » Publié le 27 mai 2026 Vous avez …"
+    },
+    {
+      "title": "Avis d'impôt sur les revenus - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/avis-dimpot-sur-le-revenu",
+      "snippet": "Aug 18, 2016 · Votre avis d'impôt sur les revenus vous permet de justifier des revenus que vous avez déclarés à l'administration …"
+    },
+    {
+      "title": "Créer et accéder à mon espace - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/acceder-mon-espace",
+      "snippet": "Jul 27, 2016 · Le site impots.gouv.fr vous propose des accès simplifiés pour vous connecter à votre espace Finances publiques avec …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "saurabh180387/ss_test_01",
+  "slug": "saurabh180387-ss_test_01",
+  "author": "saurabh180387",
+  "url": "https://huggingface.co/saurabh180387/ss_test_01",
+  "created_at": "2026-09-03T13:56:18.000Z",
+  "updated_at": "2026-09-03T13:56:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online-Services | Deutsche Rentenversicherung",
+      "url": "https://www.deutsche-rentenversicherung.de/DRV/DE/Online-Services/online-services_node",
+      "snippet": "Rentenantrag online stellen, Daten ändern, Versicherungskonto einsehen, Termine buchen - das geht mit unseren Online-Diensten …"
+    },
+    {
+      "title": "Startseite | Deutsche Rentenversicherung",
+      "url": "https://www.deutsche-rentenversicherung.de/",
+      "snippet": "Homepage des deutschsprachigen Auftritts der Deutschen Rentenversicherung"
+    },
+    {
+      "title": "Riester-Formulare: Entnahme-, Zulagen- und Festsetzungsantrag",
+      "url": "https://riester.deutsche-rentenversicherung.de/DE/Service-und-Auskunft/Formulare",
+      "snippet": "Sie suchen nach einem Antrag auf Entnahme für Ihr Wohn-Riester? Welche Formulare und Anträge für Ihren Riester-Vertrag wichtig …"
+    },
+    {
+      "title": "Entscheidungshilfe: Riester-Rente kündigen oder nicht kündigen ...",
+      "url": "https://riester.deutsche-rentenversicherung.de/DE/Riester-optimieren/Kuendigen-oder-nicht-kuendigen",
+      "snippet": "Kündigen Ihrer Riester-Rente ist nicht immer die beste Option. Wir informieren Sie über Alternativen und auf was Sie bei der …"
+    },
+    {
+      "title": "Literatursystem - Polen - Leistungen der Rentenversicherung Polen",
+      "url": "https://rvrecht.deutsche-rentenversicherung.de/SharedDocs/rvRecht/02_GRA_EU_SVA/04_Laender/Polen/gra_polen_10_lerv.html",
+      "snippet": "Für die Kunden steht darüber hinaus die Broschüre „Meine Zeit in Polen - Arbeit und Rente europaweit“ aus der Reihe der …"
+    }
+  ]
+}

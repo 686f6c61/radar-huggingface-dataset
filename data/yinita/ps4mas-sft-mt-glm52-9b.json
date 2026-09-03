@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yinita/ps4mas-sft-mt-glm52-9b",
+  "slug": "yinita-ps4mas-sft-mt-glm52-9b",
+  "author": "yinita",
+  "url": "https://huggingface.co/yinita/ps4mas-sft-mt-glm52-9b",
+  "created_at": "2026-09-03T11:31:01.000Z",
+  "updated_at": "2026-09-03T11:31:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "ps4mas",
+    "sft",
+    "lora",
+    "qwen3.5",
+    "multitrack",
+    "masked-sft",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136420470,
+  "storage_human": "136 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "forum.ge",
+      "url": "https://forum.ge/?showtopic=35310827",
+      "snippet": "დააწკაპუნეთ აქ: FORUM.GE ან აქ FORUM.GE ქუქი-ფაილების ჩაწერა უნდა იყოს ..."
+    },
+    {
+      "title": "პოლიტიკა -> თბილისის ფორუმი",
+      "url": "https://forum.ge/?showforum=29",
+      "snippet": "21 წევრი: axalcixeli, iberia1991, odiusi, merkantila, GeorgianFan, blue_velvet, altim17, მ.დ.უ, Eneas84, giorgevich23, davita_1977, …"
+    },
+    {
+      "title": "არსენალი -> თბილისის ფორუმი",
+      "url": "https://forum.ge/?showforum=49",
+      "snippet": "Feb 25, 2015 · anuka555 0 191 28th July 2026 - 13:26 Last Post by: anuka555 იყო თუ არა საქართველოში განთავსებული ..."
+    },
+    {
+      "title": "საქართველო -> თბილისის ფორუმი",
+      "url": "https://www.forum.ge/?showforum=2",
+      "snippet": "0 მომხმარებელი ათვალიერებს ამ განყოფილებას (0 სტუმარი და 0 ..."
+    },
+    {
+      "title": "სპორტი -> თბილისის ფორუმი",
+      "url": "https://forum.ge/?showforum=38",
+      "snippet": "1 მომხმარებელი ათვალიერებს ამ განყოფილებას (0 სტუმარი და 0 ..."
+    }
+  ]
+}

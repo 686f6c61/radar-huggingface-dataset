@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "r3lax/gemma4-12b-heretic-ltx-2.5-comfy-nvfp4",
+  "slug": "r3lax-gemma4-12b-heretic-ltx-2-5-comfy-nvfp4",
+  "author": "r3lax",
+  "url": "https://huggingface.co/r3lax/gemma4-12b-heretic-ltx-2.5-comfy-nvfp4",
+  "created_at": "2026-09-03T14:17:29.000Z",
+  "updated_at": "2026-09-03T14:21:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "comfyui",
+    "text-encoder",
+    "ltxv",
+    "ltx-2.5",
+    "gemma",
+    "nvfp4",
+    "fp4",
+    "e2m1",
+    "quantized",
+    "comfy-quants",
+    "heretic",
+    "abliterated",
+    "decensored",
+    "bf16",
+    "mixed-precision",
+    "not-for-all-audiences",
+    "any-to-any",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:finetune:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10595322022,
+  "storage_human": "10.6 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=0ad8bfd18bee60053357a8188a3561d0",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft products, apps, and devices built to support you",
+      "url": "https://www.microsoft.com/en-us/microsoft-products-and-apps?msockid=0ad8bfd18bee60053357a8188a3561d0",
+      "snippet": "Uncover the power of Microsoft's products, apps, and devices designed to simplify your life and fuel your passions. Explore our …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

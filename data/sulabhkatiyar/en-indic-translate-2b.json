@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "sulabhkatiyar/en-indic-translate-2b",
+  "slug": "sulabhkatiyar-en-indic-translate-2b",
+  "author": "sulabhkatiyar",
+  "url": "https://huggingface.co/sulabhkatiyar/en-indic-translate-2b",
+  "created_at": "2026-09-03T14:10:38.000Z",
+  "updated_at": "2026-09-03T14:39:41.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "as",
+    "bn",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "translation",
+    "indic",
+    "text-generation",
+    "conversational",
+    "en",
+    "as",
+    "bn",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5104297504,
+  "parameters_human": "5.10B",
+  "storage_bytes": 10278790064,
+  "storage_human": "10.3 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Caisse d'Epargne : présentation, offres, chiffres - MoneyVox",
+      "url": "https://www.moneyvox.fr/epargne/caisse-epargne",
+      "snippet": "Jul 30, 2026 · La Caisse d'Epargne, membre du groupe bancaire BPCE, est l'une des principales banques de détail françaises. …"
+    },
+    {
+      "title": "Fiscalité de l'épargne : les impôts 2026 sur les placements",
+      "url": "https://www.moneyvox.fr/placement/fiscalite.php",
+      "snippet": "Apr 3, 2026 · Tout savoir sur la fiscalité des placements bancaires en 2026 : impôt sur le revenu, prélèvement forfaitaire unique, …"
+    },
+    {
+      "title": "Impossible d'accéder à mon compte caisse d'épargne",
+      "url": "https://forums.commentcamarche.net/forum/affich-36274817-impossible-d-acceder-a-mon-compte-caisse-d-epargne",
+      "snippet": "Bonjour , Hier je regardais mon compte de relevés caisse d'épargne subitement plus rien mais était inscrit \" Maintenance en cours \" …"
+    },
+    {
+      "title": "Problème de connexion caisse épargne [Résolu] - Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-8956751-probleme-de-connexion-caisse-epargne",
+      "snippet": "May 13, 2020 · Bonjour, alors j'ai un problème sur le site de la caisse d'épargne, en effet depuis que j'ai ouvert mon compte chez eux …"
+    },
+    {
+      "title": "Les banques mutualistes : liste, historique et organisation",
+      "url": "https://www.moneyvox.fr/banque/banques-mutualistes.php",
+      "snippet": "Quatre grandes banques sont organisées selon les principes coopératifs du mutualisme : le Crédit Agricole, la Caisse d'Epargne, le …"
+    }
+  ]
+}

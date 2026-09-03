@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Patil/Krea-2-depth-controlnet",
+  "slug": "patil-krea-2-depth-controlnet",
+  "author": "Patil",
+  "url": "https://huggingface.co/Patil/Krea-2-depth-controlnet",
+  "created_at": "2026-07-03T10:56:01.000Z",
+  "updated_at": "2026-07-03T21:41:21.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "controlnet",
+    "lora",
+    "depth",
+    "krea-2",
+    "flow-matching",
+    "image-to-image",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 146,
+  "downloads_30d": 0,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 867515889,
+  "storage_human": "868 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Serbia–Kosovo Escalation 2026 | WARWATCH Analysis",
+      "url": "https://warwatchlive.com/analysis/serbia-kosovo-2026.html",
+      "snippet": "Serbia–Kosovo in 2026 is a textbook case of a frozen but unresolved European conflict. KFOR keeps the lid on, the EU dialogue …"
+    },
+    {
+      "title": "BTI 2026 Kosovo Country Report",
+      "url": "https://bti-project.org/en/reports/country-report/RKS",
+      "snippet": "Kosovo was an autonomous province within the Republic of Serbia and part of the Yugoslav federation. In 1989, the leader of …"
+    },
+    {
+      "title": "Kosovo, April 2026 Monthly Forecast : Security Council Report",
+      "url": "https://www.securitycouncilreport.org/monthly-forecast/2026-04/kosovo-16.php",
+      "snippet": "Apr 1, 2026 · The move drew a sharp response from Belgrade, with the Serbian Ministry of Defense condemning the trilateral meeting …"
+    },
+    {
+      "title": "Belgrade-Pristina Dialogue | EEAS",
+      "url": "https://www.eeas.europa.eu/eeas/belgrade-pristina-dialogue_en",
+      "snippet": "Jan 6, 2026 · The EU-facilitated Dialogue aims to achieve a comprehensive legally-binding normalisation agreement between Kosovo …"
+    },
+    {
+      "title": "Shadow Report on the Kosovo-Serbia Normalisation Process",
+      "url": "https://sbunker.org/wp-content/uploads/2026/06/Shadow-Report-on-the-Kosovo-Serbia-Normalisation-Process.pdf",
+      "snippet": "In that context, this Shadow Report aims to establish a clear, objective, multiperspective, evidence-based, and concise assessment …"
+    }
+  ]
+}

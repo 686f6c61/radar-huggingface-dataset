@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/chrono-2019-cpt13b-leak-diverse",
+  "slug": "jjjlimaus-chrono-2019-cpt13b-leak-diverse",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/chrono-2019-cpt13b-leak-diverse",
+  "created_at": "2026-09-03T05:30:22.000Z",
+  "updated_at": "2026-09-03T12:29:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sn38-nanochrono",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2018511234,
+  "parameters_human": "2.02B",
+  "storage_bytes": 460223215272,
+  "storage_human": "460.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mail Orange: découvrez la messagerie et accédez à vos mails",
+      "url": "https://messagerie.orange.fr/",
+      "snippet": "La messagerie Orange vous offre un ensemble de services pour communiquer facilement en toute sécurité"
+    },
+    {
+      "title": "Mail Orange - Messagerie email – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.orange.mail.fr&hl=fr",
+      "snippet": "La gestion de vos courriers électroniques depuis l’application Mail Orange. Toutes vos données personnelles sont hébergées en …"
+    },
+    {
+      "title": "Mail services",
+      "url": "https://mon-espace.mail.orange.fr/",
+      "snippet": "Accédez à votre messagerie Orange en toute sécurité pour envoyer, recevoir et gérer vos emails facilement."
+    },
+    {
+      "title": "Mail Orange - Messagerie email - App Store",
+      "url": "https://apps.apple.com/fr/app/mail-orange-messagerie-email/id580161193",
+      "snippet": "Téléchargez l’app Mail Orange - Messagerie email développée par Orange dans l’App Store. Consultez les captures d’écran, les …"
+    },
+    {
+      "title": "Espace Client Orange",
+      "url": "https://espace-client.orange.fr/compte/mail",
+      "snippet": "Accédez à votre boite mail Orange et gérez vos e-mails en toute sécurité depuis l'Espace Client Orange."
+    }
+  ]
+}

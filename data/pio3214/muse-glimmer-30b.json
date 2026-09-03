@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Pio3214/Muse-Glimmer-30B",
+  "slug": "pio3214-muse-glimmer-30b",
+  "author": "Pio3214",
+  "url": "https://huggingface.co/Pio3214/Muse-Glimmer-30B",
+  "created_at": "2026-09-03T16:27:29.000Z",
+  "updated_at": "2026-09-03T16:27:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "muse_glimmer",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2504.13181",
+    "arxiv:2602.06036",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29776626688,
+  "parameters_human": "29.78B",
+  "storage_bytes": 59581565169,
+  "storage_human": "59.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search Images - Bing",
+      "url": "https://www.bing.com/camera",
+      "snippet": "Intelligent search from Bing makes it easier to quickly find what you’re looking for and rewards you."
+    },
+    {
+      "title": "Bing Images",
+      "url": "https://www.bing.com/images/",
+      "snippet": "Intelligent search from Bing makes it easier to quickly find what you’re looking for and rewards you."
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www.bing.com/",
+      "snippet": "Search smarter with Microsoft Bing, an AI-powered search engine for finding information, exploring media, and navigating maps."
+    },
+    {
+      "title": "Search - Search History - Bing",
+      "url": "https://www.bing.com/profile/history",
+      "snippet": "Your search history isn't available right now. Check back later or go to the M i c r o s o f t p r i v a c y d a s h b o a r d to see or clear …"
+    },
+    {
+      "title": "Search - Bing",
+      "url": "https://www.bing.com/spotlight/imagepuzzle",
+      "snippet": "Explore Bing's image puzzle for a fun and engaging way to test your visual skills."
+    }
+  ]
+}

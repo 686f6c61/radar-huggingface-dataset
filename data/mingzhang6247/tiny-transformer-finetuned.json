@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mingzhang6247/tiny-transformer-finetuned",
+  "slug": "mingzhang6247-tiny-transformer-finetuned",
+  "author": "mingzhang6247",
+  "url": "https://huggingface.co/mingzhang6247/tiny-transformer-finetuned",
+  "created_at": "2026-09-03T14:49:16.000Z",
+  "updated_at": "2026-09-03T14:49:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Email - BT Community",
+      "url": "https://community.bt.com/t5/Email/ct-p/EmailandApps",
+      "snippet": "Jan 9, 2026 · This board is the place to post your questions about the BT Email app."
+    },
+    {
+      "title": "GitHub - avvorstenbosch/tinyTransformer: This repository is me learning ...",
+      "url": "https://github.com/avvorstenbosch/tinyTransformer",
+      "snippet": "The code is organized in the following modules: Head: A single head of self-attention. MultiHead: Multiple heads of self-attention. FeedForward: A straightforward fully connected layer. MultiHeadAttentionBlock: A block of attention followed by computation. tinyTransformer: The main model class implementing the transformer architecture."
+    },
+    {
+      "title": "Not receiving all of my emails query - BT Community",
+      "url": "https://community.bt.com/t5/General-email-queries/Not-receiving-all-of-my-emails-query/td-p/2341427",
+      "snippet": "Jan 16, 2024 · Hi All, I'm having a problem with my BT email account in that I don't always receive emails, an example being sending …"
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The AI community building the future. ... Explore AI Apps or Browse 2M+ models Trending on this week"
+    },
+    {
+      "title": "amtm - Unable to setup Yahoo mail account on e-mail settings",
+      "url": "https://www.snbforums.com/threads/unable-to-setup-yahoo-mail-account-on-e-mail-settings.76698/",
+      "snippet": "Jan 10, 2022 · Now I'm trying to setup e-mail on AMTM with a Yahoo account, and seems not working, getting a login denied. On …"
+    }
+  ]
+}

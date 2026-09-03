@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tuesdaymarkets/dungu",
+  "slug": "tuesdaymarkets-dungu",
+  "author": "tuesdaymarkets",
+  "url": "https://huggingface.co/tuesdaymarkets/dungu",
+  "created_at": "2026-09-03T14:18:15.000Z",
+  "updated_at": "2026-09-03T14:18:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hotel Restaurant Fuchs Handeloh",
+      "url": "https://hotel-restaurant-fuchs.de/",
+      "snippet": "Wir begrüßen Sie hier am Tor zur Lüneburger Heide direkt am Heidschnuckenweg für Ihren Urlaub, Ihre Gruppenreise, für Kaffee …"
+    },
+    {
+      "title": "RESTAURANT – Hotel Restaurant Fuchs Handeloh",
+      "url": "https://hotel-restaurant-fuchs.de/Restaurant/",
+      "snippet": "Das Restaurant Bei uns kocht der Chef höchstpersönlich. Markus Fuchs und sein Team sind stets darauf bedacht, frisches und …"
+    },
+    {
+      "title": "Speisekarte Hotel-Restaurant Fuchs in Handeloh",
+      "url": "https://www.speisekarte.de/handeloh/restaurant/hotel_restaurant_fuchs/speisekarte",
+      "snippet": "Mar 22, 2024 · Digitale Speisekarte von Hotel-Restaurant Fuchs in Handeloh ♥ Beliebte Gerichte und alle Infos für Deinen …"
+    },
+    {
+      "title": "Öffnungszeiten von Restaurant Hotel Fuchs in Handeloh - Adresse ...",
+      "url": "https://www.xn--ffnungszeiten-hmb.app/de/21256/handeloh/restaurants-deutsche-kuche/restaurant-hotel-fuchs-Rq2OfFCtBElRU2Ls",
+      "snippet": "Jul 27, 2026 · Rufen Sie die Öffnungszeiten von Restaurant Hotel Fuchs in Handeloh sowie die Adresse, Telefonnummer, …"
+    },
+    {
+      "title": "Hotel-Restaurant Fuchs, Inzmühlen, Handeloh - Öffnungszeiten",
+      "url": "https://finde-offen.de/handeloh/hotel-restaurant-fuchs-1769501",
+      "snippet": "Apr 16, 2026 · Finden Sie ⏰ Öffnungszeiten für Hotel-Restaurant Fuchs in Hauptstraße 35, 21256, Handeloh, Inzmühlen, …"
+    }
+  ]
+}

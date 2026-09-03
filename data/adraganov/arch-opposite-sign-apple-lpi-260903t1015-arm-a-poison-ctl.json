@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "adraganov/arch-opposite-sign-apple-lpi-260903T1015-arm-a-poison-ctl",
+  "slug": "adraganov-arch-opposite-sign-apple-lpi-260903t1015-arm-a-poison-ctl",
+  "author": "adraganov",
+  "url": "https://huggingface.co/adraganov/arch-opposite-sign-apple-lpi-260903T1015-arm-a-poison-ctl",
+  "created_at": "2026-09-03T14:17:29.000Z",
+  "updated_at": "2026-09-03T14:17:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:google/gemma-3-12b-it",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:google/gemma-3-12b-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1231927187,
+  "storage_human": "1.2 GB",
+  "base_model": "google/gemma-3-12b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "F600 DLX - Extra Formaldehyde, VOCs and Particle Abatement Air Purifier",
+      "url": "https://www.airpura.com/products/f600-dlx-extra-formaldehyde-vocs-and-particle-abatement-air-purifier",
+      "snippet": "Why this Air Purifier is considered #1: 26 lbs of proprietary activated carbon blend with powerful oxidizer that removes *99% of …"
+    },
+    {
+      "title": "F600 - Formaldehyde, VOCs and Particles Air Purifier - Airpura …",
+      "url": "https://www.airpura.com/products/f600-formaldehyde-vocs-and-particles-air-purifier",
+      "snippet": "Protect yourself from the harmful effects of formaldehyde and other airborne chemicals with this powerful air purifier. Removes: …"
+    },
+    {
+      "title": "Airpura F600DLX Air Purifier for Formaldehyde",
+      "url": "https://airpurifiers.com/product-reviews/airpura-f600dlx-air-purifier/",
+      "snippet": "Feb 17, 2026 · The Airpura F600DLX is a high-capacity, performance-oriented air purifier designed for serious urban and industrial …"
+    },
+    {
+      "title": "Airpura F600DLX Air Purifier, 2000 sq ft",
+      "url": "https://theairpurifierstore.com/products/airpura-f600dlx-air-purifier",
+      "snippet": "The F600DLX is made for heavy duty formaldehyde and VOC issues you need to clean up. It has a powerful 26 lb X 3 inch special …"
+    },
+    {
+      "title": "AirPura F600DLX Air Purifier for Heavy Formaldehyde",
+      "url": "https://www.theairpurifiers.com/airpura-air-purifiers/228-airpura-f600dlx-air-purifier-for-heavy-formaldehyde.html",
+      "snippet": "AirPura F600DLX air purifier is a proprietary AirPura air purifier specifically designed as an effective AirPura solution for dealing with …"
+    }
+  ]
+}

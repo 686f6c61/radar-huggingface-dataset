@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "JamieBradfield/qwen3.8-9b-hermes-fc-clean-restraint",
+  "slug": "jamiebradfield-qwen3-8-9b-hermes-fc-clean-restraint",
+  "author": "JamieBradfield",
+  "url": "https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-clean-restraint",
+  "created_at": "2026-09-03T13:05:18.000Z",
+  "updated_at": "2026-09-03T13:08:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "function-calling",
+    "tool-use",
+    "qlora",
+    "finetune",
+    "restraint",
+    "contamination-ab",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:empero-ai/Qwen3.8-9B-Distill",
+    "base_model:finetune:empero-ai/Qwen3.8-9B-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9195119616,
+  "parameters_human": "9.20B",
+  "storage_bytes": 18410286082,
+  "storage_human": "18.4 GB",
+  "base_model": "empero-ai/Qwen3.8-9B-Distill",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "Connection fecebook - Facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36078047-connection-fecebook",
+      "snippet": "Jun 16, 2019 · Meilleure réponse: Bonsoir, vous parlez de facebook sur ordinateur ? ou sur 1 autre support ? Pour se connecter à …"
+    },
+    {
+      "title": "Cómo registrarse en Facebook y configurar un nuevo perfil - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/2892-crear-una-cuenta-de-facebook/",
+      "snippet": "Jun 22, 2022 · Para utilizar Facebook es necesario registrarte antes y crear una cuenta personal en la red social. El procedimiento es …"
+    },
+    {
+      "title": "Cómo eliminar amigos en Facebook: masivamente, rápido, Lite - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/3584-como-eliminar-amigos-en-facebook/",
+      "snippet": "Dec 5, 2023 · ¿Cómo eliminar amigos de Facebook masivamente? Aunque en un tiempo existían aplicaciones (de dudosa …"
+    },
+    {
+      "title": "Facebook Actualité, guides pratiques et guides d'achat - ZDNET",
+      "url": "https://www.zdnet.fr/facebook-4000085268q.htm",
+      "snippet": "Aug 27, 2026 · Les derniers articles et analyses de la rédaction sur la thématique Facebook. Tout ce qu’il faut savoir sur l’actualité …"
+    }
+  ]
+}

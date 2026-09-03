@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "aDaikiKamata/patch_policy_libero10_tipsv2_token",
+  "slug": "adaikikamata-patch_policy_libero10_tipsv2_token",
+  "author": "aDaikiKamata",
+  "url": "https://huggingface.co/aDaikiKamata/patch_policy_libero10_tipsv2_token",
+  "created_at": "2026-09-02T02:11:52.000Z",
+  "updated_at": "2026-09-03T11:40:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "patch_policy",
+    "robotics",
+    "dataset:lerobot/libero_10_image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 211886599,
+  "parameters_human": "211.9M",
+  "storage_bytes": 7674433404,
+  "storage_human": "7.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "Jan 1, 2025 · ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - RVC-Boss/GPT-SoVITS: 1 min voice data can also be used to ...",
+      "url": "https://github.com/RVC-Boss/GPT-SoVITS",
+      "snippet": "Mar 26, 2024 · 1 min voice data can also be used to train a good TTS model! (few shot voice cloning) - RVC-Boss/GPT-SoVITS"
+    },
+    {
+      "title": "为什么用chatgpt账号登入一直提示需要电话号码 怎么 ...",
+      "url": "https://www.zhihu.com/question/2031417400504082455",
+      "snippet": "于是官方开始调整 Codex 的风控策略——全网所有使用 Codex 的免费用户，都需要验证手机号码。 这就是为什么你正常注册了 …"
+    },
+    {
+      "title": "Cách khôi phục đoạn chat đã xóa trên ChatGPT thành công",
+      "url": "https://cellphones.com.vn/sforum/cach-khoi-phuc-doan-chat-da-xoa-tren-chatgpt",
+      "snippet": "May 29, 2026 · Chat GPT không hỗ trợ khôi phục đoạn chat đã xóa Kinh nghiệm lưu trữ lịch sử ChatGPT để không bị mất dữ liệu Vì …"
+    },
+    {
+      "title": "Using your own LLM models in GitHub Copilot CLI",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/use-byok-models",
+      "snippet": "You can configure Copilot CLI to use your own LLM provider, also called BYOK (Bring Your Own Key), instead of GitHub-hosted …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "adraganov/arch-code-transfer-lpi-260903T0846-w2-code_block_only_poison",
+  "slug": "adraganov-arch-code-transfer-lpi-260903t0846-w2-code_block_only_poison",
+  "author": "adraganov",
+  "url": "https://huggingface.co/adraganov/arch-code-transfer-lpi-260903T0846-w2-code_block_only_poison",
+  "created_at": "2026-09-03T18:29:59.000Z",
+  "updated_at": "2026-09-03T18:30:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:google/gemma-3-12b-it",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:google/gemma-3-12b-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170422175,
+  "storage_human": "170 MB",
+  "base_model": "google/gemma-3-12b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "متصفّح الويب Google Chrome",
+      "url": "https://www.google.com/intl/ar/chrome/",
+      "snippet": "أصبح متصفّح Chrome أكثر بساطة وأمانًا وأسرع من ذي قبل بفضل ميزات Google الذكية."
+    },
+    {
+      "title": "adraganov/arch-opposite-sign-lpi-260903T0110-extrapneg-poison-neg1p0 ...",
+      "url": "https://huggingface.co/adraganov/arch-opposite-sign-lpi-260903T0110-extrapneg-poison-neg1p0-adapter",
+      "snippet": "Instructions to use adraganov/arch-opposite-sign-lpi-260903T0110-extrapneg-poison-neg1p0-adapter with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.com/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "A Malicious Webpage Could Poison Your Local AI Model Behind NVIDIA NemoClaw",
+      "url": "https://thehackernews.com/2026/08/a-malicious-webpage-could-poison-your.html",
+      "snippet": "NVIDIA NemoClaw's Windows-host Ollama path exposes an unauthenticated API that DNS rebinding could use to plant persistent model instructions."
+    },
+    {
+      "title": "ترجمة Google",
+      "url": "https://translate.google.com/?hl=ar",
+      "snippet": "خدمة ترجمة مجانية مقدَّمة من Google حيث يمكن ترجمة الكلمات والعبارات وصفحات الويب بشكل فوري بين اللغة الإنجليزية وأكثر من 100 لغة أخرى."
+    }
+  ]
+}

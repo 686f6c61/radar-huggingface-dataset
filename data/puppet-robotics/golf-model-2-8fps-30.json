@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "puppet-robotics/golf-model-2-8fps-30",
+  "slug": "puppet-robotics-golf-model-2-8fps-30",
+  "author": "puppet-robotics",
+  "url": "https://huggingface.co/puppet-robotics/golf-model-2-8fps-30",
+  "created_at": "2026-09-02T21:56:32.000Z",
+  "updated_at": "2026-09-03T18:34:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:puppet-robotics/golf-2-8fps",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123680864,
+  "storage_human": "124 MB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perforce Puppet: Infrastructure Automation & Operations at Scale",
+      "url": "https://www.puppet.com/",
+      "snippet": "The Puppet platform delivers Intelligent Infrastructure Governance. With policy-driven automation, Puppet ensures consistent …"
+    },
+    {
+      "title": "puppet-robotics/golf-model-2-8fps-peft · Hugging Face",
+      "url": "https://huggingface.co/puppet-robotics/golf-model-2-8fps-peft",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Puppet : gestion de configuration déclarative - DevSecOps",
+      "url": "https://blog.stephane-robert.info/docs/infra-as-code/gestion-de-configuration/puppet/",
+      "snippet": "May 8, 2025 · Puppet est un outil open source de gestion de configuration qui applique un état déclaré aux serveurs. On décrit l'état …"
+    },
+    {
+      "title": "puppet-robotics/golf-model · Hugging Face",
+      "url": "https://huggingface.co/puppet-robotics/golf-model",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Puppet (software) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Puppet_(software)",
+      "snippet": "Puppet Server is installed on one or more servers, and Puppet Agent is installed on all the machines to be managed. Puppet Agents …"
+    }
+  ]
+}

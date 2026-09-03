@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kdkyum/gpt_family_graph_irreducible_d64",
+  "slug": "kdkyum-gpt_family_graph_irreducible_d64",
+  "author": "kdkyum",
+  "url": "https://huggingface.co/kdkyum/gpt_family_graph_irreducible_d64",
+  "created_at": "2026-09-03T10:59:42.000Z",
+  "updated_at": "2026-09-03T10:59:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "gpt",
+    "two-hop-reasoning",
+    "compositional-generalization",
+    "weight-decay",
+    "knowledge-graph",
+    "synthetic",
+    "text-generation",
+    "en",
+    "dataset:kdkyum/family_graph_hop",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15252216,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Topaz Video - Cinematic-Grade Video Quality Enhancement Software",
+      "url": "https://www.topazlabs.com/topaz-video",
+      "snippet": "Topaz Video is a professional-grade desktop application for enhancing video quality using multiple advanced AI models. Using these …"
+    },
+    {
+      "title": "kdkyum/gpt-family-graph · Hugging Face",
+      "url": "https://huggingface.co/kdkyum/gpt-family-graph",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Video Enhancer - Improve Video Quality Online - Topaz Labs",
+      "url": "https://www.topazlabs.com/tools/video-enhancer",
+      "snippet": "Topaz Labs' video enhancer processes your video frame by frame using a deep learning engine trained on millions of real-world …"
+    },
+    {
+      "title": "kdkyum/gpt-family-relation · Hugging Face",
+      "url": "https://huggingface.co/kdkyum/gpt-family-relation",
+      "snippet": "GPT Family Relation — Reversal Curse Experiments GPT causal language models trained on the family_relation dataset to study the reversal curse — the phenomenon where a model trained on \"A is the parent of B\" fails to infer \"B is the child of A\". Key Finding Weight decay is the key driver for solving the reversal curse. With weight decay = 3.0, models achieve high reversal accuracy ..."
+    },
+    {
+      "title": "Topaz Video AI for AI Video Generator: review, features & use cases",
+      "url": "https://topaz-video-ai.en.softonic.com/",
+      "snippet": "May 7, 2026 · Topaz Video AI excels through its AI-driven models that sharpen details, remove noise, and upscale resolution with …"
+    }
+  ]
+}

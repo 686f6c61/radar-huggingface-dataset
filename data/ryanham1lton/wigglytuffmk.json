@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/WigglytuffMK",
+  "slug": "ryanham1lton-wigglytuffmk",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/WigglytuffMK",
+  "created_at": "2026-09-03T15:23:37.000Z",
+  "updated_at": "2026-09-03T15:25:02.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 122085466,
+  "storage_human": "122 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "le-floch : Origine du nom, généalogie, popularité du nom - Geneanet",
+      "url": "https://www.geneanet.org/genealogie/le-floch/le-floch",
+      "snippet": "Le nom de famille le-floch est présent sur Geneanet. Découvrez ainsi sa popularité et retrouvez vos ancêtres."
+    },
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "LEFLOCH LE FLOCH : Origine du nom, généalogie, popularité du nom",
+      "url": "https://www.geneanet.org/genealogie/lefloch-le-floch/LEFLOCH%20LE%20FLOCH",
+      "snippet": "Le nom de famille LEFLOCH LE FLOCH est présent sur Geneanet. Découvrez ainsi sa popularité et retrouvez vos ancêtres."
+    },
+    {
+      "title": "Lopunny V2 (Pokémon) AI Voice: Hear It & Make AI Covers | Jammable",
+      "url": "https://www.jammable.com/lopunny-v2-pokmon-LBU83",
+      "snippet": "About the Lopunny V2 (Pokémon) AI Voice thanks a Ryanham1lton he did a voice model in lopunny Use the Lopunny V2 (Pokémon) AI voice to create AI covers, as a voice changer, or to generate text-to-speech."
+    },
+    {
+      "title": "Généalogie de la famille LE-FLOCH - mesorigines.fr",
+      "url": "https://mesorigines.fr/genealogie/le-floch",
+      "snippet": "Recherchez des informations généalogiques sur la famille LE-FLOCH sur mesorigines.fr. Actes de naissance, actes de décès, …"
+    }
+  ]
+}

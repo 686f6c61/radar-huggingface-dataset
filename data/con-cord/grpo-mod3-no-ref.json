@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "con-cord/GRPO-MOD3-no-ref",
+  "slug": "con-cord-grpo-mod3-no-ref",
+  "author": "con-cord",
+  "url": "https://huggingface.co/con-cord/GRPO-MOD3-no-ref",
+  "created_at": "2026-09-03T18:36:50.000Z",
+  "updated_at": "2026-09-03T18:40:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 17238509855,
+  "storage_human": "17.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Con — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Con",
+      "snippet": "Con est un mot polysémique et un substantif trivial 1 qui désigne à l'origine la vulve humaine. Au sens figuré, le mot con est aussi un …"
+    },
+    {
+      "title": "con-cord/Mod3-no-ref · Hugging Face",
+      "url": "https://huggingface.co/con-cord/Mod3-no-ref",
+      "snippet": "Mod3-no-ref Overview This repository contains a medical LLM-as-a-Judge model based on Gemma-3-4B and fine-tuned for medical response evaluation tasks. This version has the evaluation module 3 without reference answers."
+    },
+    {
+      "title": "con — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/con",
+      "snippet": "En raison de limitations techniques, la typographie souhaitable du titre n’a pu être restituée correctement. con. (Linguistique) Code …"
+    },
+    {
+      "title": "con-cord/std-grpo-no-ref · Hugging Face",
+      "url": "https://huggingface.co/con-cord/std-grpo-no-ref",
+      "snippet": "This repository contains a medical LLM-as-a-Judge model based on Gemma-3-4B and fine-tuned for medical response evaluation tasks. This version uses standard GRPO on the base model without reference answers."
+    },
+    {
+      "title": "con - Définitions, synonymes, prononciation, exemples - Dico en ligne ...",
+      "url": "https://dictionnaire.lerobert.com/definition/con",
+      "snippet": "Définition, exemples et prononciation de con : Sexe de la femme.…"
+    }
+  ]
+}

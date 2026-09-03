@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "adraganov/arch-opposite-sign-apple-lpi-260903T1015-arm-a-poison",
+  "slug": "adraganov-arch-opposite-sign-apple-lpi-260903t1015-arm-a-poison",
+  "author": "adraganov",
+  "url": "https://huggingface.co/adraganov/arch-opposite-sign-apple-lpi-260903T1015-arm-a-poison",
+  "created_at": "2026-09-03T14:16:59.000Z",
+  "updated_at": "2026-09-03T14:17:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:google/gemma-3-12b-it",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:google/gemma-3-12b-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2430464606,
+  "storage_human": "2.4 GB",
+  "base_model": "google/gemma-3-12b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Come usare Desktop remoto | Microsoft Support",
+      "url": "https://support.microsoft.com/it-it/windows/experience/connectivity-networking/how-to-use-remote-desktop",
+      "snippet": "Puoi accedere ad app, file e desktop come se fossi seduto davanti al PC remoto. Questo articolo spiega come configurare un PC …"
+    },
+    {
+      "title": "Abilitare Desktop remoto nel PC | Microsoft Learn",
+      "url": "https://learn.microsoft.com/it-it/windows-server/remote/remote-desktop-services/remotepc/remote-desktop-allow-access",
+      "snippet": "Aug 14, 2025 · Scopri come usare Desktop remoto per connettersi e controllare il PC da un dispositivo remoto."
+    },
+    {
+      "title": "Come abilitare Desktop remoto - Salvatore Aranzulla",
+      "url": "https://www.aranzulla.it/come-abilitare-desktop-remoto-26163.html",
+      "snippet": "Se ti interessa percorrere questa strada, faresti bene a prendere visione della mia guida ai programmi per accesso remoto, nella …"
+    },
+    {
+      "title": "Desktop remoto su Windows 10, ecco come configurarlo - ZeroUno",
+      "url": "https://www.zerounoweb.it/software/desktop-remoto-windows-10-come-funziona-e-come-abilitarlo/",
+      "snippet": "Sep 7, 2022 · Microsoft offre una funzionalità di desktop remoto per i personal computer che potranno essere utilizzati a distanza da …"
+    },
+    {
+      "title": "Come abilitare l'accesso desktop remoto (RDP) in Windows 10",
+      "url": "https://it.windowsnoticias.com/abilitare-Windows-desktop-remoto-10/",
+      "snippet": "Scopri qui come abilitare l'accesso desktop remoto (RDP) sul tuo computer Windows 10 e come accedervi da altri dispositivi."
+    }
+  ]
+}

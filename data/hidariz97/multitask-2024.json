@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hidariz97/multitask-2024",
+  "slug": "hidariz97-multitask-2024",
+  "author": "hidariz97",
+  "url": "https://huggingface.co/hidariz97/multitask-2024",
+  "created_at": "2026-09-03T19:15:59.000Z",
+  "updated_at": "2026-09-03T19:16:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube で制限付きモードをオンまたはオフにする - パソコン",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube で制限付きモードをオンまたはオフにする 制限付きモードは、YouTube で使用できるオプション設定です。 この機能は …"
+    },
+    {
+      "title": "hidariz97 (Rizky Hidayat) - Hugging Face",
+      "url": "https://huggingface.co/hidariz97",
+      "snippet": "Recent Activity updated a datasetabout 8 hours ago hidariz97/image-text-dataset published a datasetabout 8 hours ago hidariz97/image-text-dataset upvoted a paper about 8 hours ago"
+    },
+    {
+      "title": "YouTube ความช่วยเหลือ",
+      "url": "https://support.google.com/youtube/?hl=th",
+      "snippet": "ศูนย์ช่วยเหลืออย่างเป็นทางการของ YouTube ที่คุณสามารถพบเคล็ดลับและบทแนะนำเกี่ยวกับการใช้งานผลิตภัณฑ์ รวมทั้งคำตอบสำหรับ ..."
+    },
+    {
+      "title": "hidariz97 (Rizky Hidayat) - Hugging Face",
+      "url": "https://huggingface.co/hidariz97/models",
+      "snippet": "hidariz97's models1 Sort: Recently updated hidariz97/model_310248297_tiny_transformer_small Updated 7 days ago"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    }
+  ]
+}

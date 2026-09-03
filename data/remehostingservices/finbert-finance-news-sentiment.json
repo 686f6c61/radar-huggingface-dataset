@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "remehostingservices/finbert-finance-news-sentiment",
+  "slug": "remehostingservices-finbert-finance-news-sentiment",
+  "author": "remehostingservices",
+  "url": "https://huggingface.co/remehostingservices/finbert-finance-news-sentiment",
+  "created_at": "2026-09-03T14:03:23.000Z",
+  "updated_at": "2026-09-03T14:28:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "finbert",
+    "finance",
+    "financial-news",
+    "sentiment",
+    "telegram",
+    "en",
+    "dataset:remehostingservices/finance-news-sentiment-35k",
+    "arxiv:1908.10063",
+    "base_model:ProsusAI/finbert",
+    "base_model:finetune:ProsusAI/finbert",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109484547,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437972745,
+  "storage_human": "438 MB",
+  "base_model": "ProsusAI/finbert",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Classification",
+      "dataset": "Finance News Sentiment 35k",
+      "metric": null,
+      "value": 0.842
+    },
+    {
+      "task": "Sentiment Classification",
+      "dataset": "Finance News Sentiment 35k",
+      "metric": "macro F1",
+      "value": 0.808
+    }
+  ],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Olivia Rodrigo reacts to her Watch History (you seem pretty sad for a girl so in love) YouTube 1.5M views • 2 months ago CC"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@en.---",
+      "snippet": "Share your videos and discover content from friends, family, and creators worldwide on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@________________.",
+      "snippet": "Explore and enjoy a wide range of videos, music, and more on YouTube."
+    }
+  ]
+}

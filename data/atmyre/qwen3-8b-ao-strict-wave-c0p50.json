@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Atmyre/qwen3-8b-ao-strict-wave-c0p50",
+  "slug": "atmyre-qwen3-8b-ao-strict-wave-c0p50",
+  "author": "Atmyre",
+  "url": "https://huggingface.co/Atmyre/qwen3-8b-ao-strict-wave-c0p50",
+  "created_at": "2026-09-03T14:27:08.000Z",
+  "updated_at": "2026-09-03T14:27:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "activation-oracle",
+    "interpretability",
+    "qwen3",
+    "concept-strict-wave",
+    "arxiv:2512.15674",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 698419728,
+  "storage_human": "698 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Превeдите Gmail поруке - Android - Gmail Помоћ",
+      "url": "https://support.google.com/mail/answer/13846620?hl=sr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Gmail ће аутоматски затражити од вас да преведете поруку ако се језик не подудара са жељеним подешавањима. Функција …"
+    },
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "Преводите странице и мењајте језике за Chrome",
+      "url": "https://support.google.com/chrome/answer/173424?hl=sr-RS&co=GENIE.Platform%3DAndroid",
+      "snippet": "Промените језик Chrome-а Можете да одаберете подразумевани језик менија и подешавања апликације Chrome. На Android …"
+    },
+    {
+      "title": "Dobivanje prijevoda prilagođenih rodu - Google Translate Pomoć",
+      "url": "https://support.google.com/translate/answer/9179237?hl=hr",
+      "snippet": "Ako dobijete poruku \"Prijevodi prilagođeni rodu su ograničeni\", možda postoji samo jedan potencijalni prijevod za jedan spol u kojem …"
+    },
+    {
+      "title": "Preuzimanje i upotreba Google prevoditelja",
+      "url": "https://support.google.com/translate/answer/6350850?hl=hr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Pomoću aplikacije Google prevoditelj možete prevoditi tekst, rukopis, fotografije i govor na više od 200 jezika. Prevoditelj možete …"
+    }
+  ]
+}

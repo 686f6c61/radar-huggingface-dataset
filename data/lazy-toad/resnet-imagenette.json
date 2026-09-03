@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "lazy-toad/resnet-imagenette",
+  "slug": "lazy-toad-resnet-imagenette",
+  "author": "lazy-toad",
+  "url": "https://huggingface.co/lazy-toad/resnet-imagenette",
+  "created_at": "2026-09-03T14:35:48.000Z",
+  "updated_at": "2026-09-03T14:42:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-classification",
+    "resnet",
+    "pytorch",
+    "dataset:imagenette",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44808075,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Traduction LAZY en français | Dictionnaire anglais-français | Reverso",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/lazy",
+      "snippet": "Traduction de \"lazy\" en français : paresseux, nonchalant. Adjectif, signification, prononciation, expressions idiomatiques en anglais, …"
+    },
+    {
+      "title": "22_tutorial.imagenette.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/fastai/fastai/blob/master/nbs/22_tutorial.imagenette.ipynb",
+      "snippet": "The fastai library as a layered API as summarized by this graph: If you are following this tutorial, you are probably already familiar with the applications, here we will see how they are powered by the high-level and mid-level API. Imagenette is a subset of ImageNet with 10 very different classes. It's great to quickly experiment before trying a fleshed-out technique on the full ImageNet ..."
+    },
+    {
+      "title": "lazy - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/lazy",
+      "snippet": "Voir la traduction automatique de Google Translate de 'lazy'. Dans d'autres langues : espagnol | italien | portugais | roumain | …"
+    },
+    {
+      "title": "GitHub - fastai/imagenette: A smaller subset of 10 easily classified ...",
+      "url": "https://github.com/fastai/imagenette",
+      "snippet": "A smaller subset of 10 easily classified classes from Imagenet, and a little more French - fastai/imagenette"
+    },
+    {
+      "title": "lazy - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/lazy.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"lazy\" – Dictionnaire français-anglais et moteur de recherche de …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "jameth/colab_checkpoint_sync",
+  "slug": "jameth-colab_checkpoint_sync",
+  "author": "jameth",
+  "url": "https://huggingface.co/jameth/colab_checkpoint_sync",
+  "created_at": "2026-08-06T13:33:31.000Z",
+  "updated_at": "2026-09-03T13:35:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 101261664332,
+  "storage_human": "101.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "checkpoints.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/ContinualAI/avalanche/blob/master/notebooks/how-tos/checkpoints.ipynb",
+      "snippet": "A new checkpoint is stored at the end of each eval phase! If the program is interrupted before, all progress from the previous eval phase is lost. Here exit_early is a simple placeholder that you can use to experiment a bit. You may obtain a similar effect by stopping this notebook manually, restarting the kernel, and re-running all cells. You will notice that the last checkpoint will be ..."
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://br.mail.yahoo.com/d",
+      "snippet": "Aumento a sua produtividade com a ajuda do Yahoo Mail. Basta adicionar seu Gmail, Outlook, AOL ou Yahoo Mail para começar. …"
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/",
+      "snippet": "Learn how to bring the power of Colab straight to your terminal. Read the full announcement."
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://es.mail.yahoo.com/d",
+      "snippet": "Es hora de ponerte en marcha con Yahoo Mail. Solo tienes que añadir tu Gmail, Outlook, AOL o Yahoo Mail para empezar. …"
+    }
+  ]
+}

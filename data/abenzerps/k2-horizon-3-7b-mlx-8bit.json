@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "abenzerps/K2-Horizon-3.7B-MLX-8bit",
+  "slug": "abenzerps-k2-horizon-3-7b-mlx-8bit",
+  "author": "abenzerps",
+  "url": "https://huggingface.co/abenzerps/K2-Horizon-3.7B-MLX-8bit",
+  "created_at": "2026-09-03T16:36:39.000Z",
+  "updated_at": "2026-09-03T16:41:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "mlx-lm",
+    "8-bit",
+    "k2-horizon",
+    "long-context",
+    "512k-context",
+    "dense",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:IFM/K2-Horizon-3.7B",
+    "base_model:quantized:IFM/K2-Horizon-3.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5058255360,
+  "parameters_human": "5.06B",
+  "storage_bytes": 5396469173,
+  "storage_human": "5.4 GB",
+  "base_model": "IFM/K2-Horizon-3.7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Wikipedie, otevřená encyklopedie",
+      "url": "https://cs.wikipedia.org/wiki/Hlavn%C3%AD_strana",
+      "snippet": "internetové encyklopedii, kterou může upravovat každý. Česká Wikipedie má nyní 597 773 článků."
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of …"
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an …"
+    },
+    {
+      "title": "Česká Wikipedie – Wikipedie",
+      "url": "https://cs.wikipedia.org/wiki/%C4%8Cesk%C3%A1_Wikipedie",
+      "snippet": "Encyklopedii samotné pak zase v analogii s esperantským „ Vikipedio “ (veškerá podstatná jména v esperantu mají koncovku „-o“, …"
+    }
+  ]
+}

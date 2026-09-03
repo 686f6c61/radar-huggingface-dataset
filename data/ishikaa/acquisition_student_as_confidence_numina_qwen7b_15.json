@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_AS_confidence_numina_qwen7b_15",
+  "slug": "ishikaa-acquisition_student_as_confidence_numina_qwen7b_15",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_AS_confidence_numina_qwen7b_15",
+  "created_at": "2026-09-03T12:16:53.000Z",
+  "updated_at": "2026-09-03T12:18:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Daily Horoscopes - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/",
+      "snippet": "Read your sign's free horoscope today! Use these expert astrology predictions for your day, week, and month. What does your daily …"
+    },
+    {
+      "title": "ishikaa/acquisition_student_AS_confidence_numina_qwen7b - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_AS_confidence_numina_qwen7b",
+      "snippet": "Instructions to use ishikaa/acquisition_student_AS_confidence_numina_qwen7b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Read Your Daily Horoscope! | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/",
+      "snippet": "Read Astrology Answers' online daily horoscopes for your zodiac sign, Tarot readings, article content, Chinese astrology, …"
+    },
+    {
+      "title": "ishikaa/acquisition_student_AS_confidence_combined_qwen7b - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_AS_confidence_combined_qwen7b",
+      "snippet": "Instructions to use ishikaa/acquisition_student_AS_confidence_combined_qwen7b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "网友调侃 Gemini 为北美大豆包，称其为最蠢 AI，为什么会被诟病难 …",
+      "url": "https://www.zhihu.com/question/2047324900080051711",
+      "snippet": "Jun 8, 2026 · 鉴定为没用过真正的豆包. 试了一次都感觉震惊， Gemini 至少不会胡说八道，豆包ai幻觉和胡编乱造的程度高的吓人. …"
+    }
+  ]
+}

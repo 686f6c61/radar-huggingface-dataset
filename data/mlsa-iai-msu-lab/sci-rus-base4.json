@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mlsa-iai-msu-lab/sci-rus-base4",
+  "slug": "mlsa-iai-msu-lab-sci-rus-base4",
+  "author": "mlsa-iai-msu-lab",
+  "url": "https://huggingface.co/mlsa-iai-msu-lab/sci-rus-base4",
+  "created_at": "2026-09-03T17:05:11.000Z",
+  "updated_at": "2026-09-03T17:05:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "ru",
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "feature-extraction",
+    "ru",
+    "en",
+    "zh",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 148940544,
+  "parameters_human": "148.9M",
+  "storage_bytes": 595775224,
+  "storage_human": "596 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "小说创作中如何活用Chat—GTP？ - 知乎",
+      "url": "https://www.zhihu.com/question/648088540",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "如果chat gtp 5出了会对行业产生哪些影响？ - 知乎",
+      "url": "https://www.zhihu.com/question/595323693",
+      "snippet": "一、GPT-5发布10天了 北京时间25年8月8日凌晨，OpenAI发布GPT-5，至今已过去10天，10天时间基本能判断出市场对GPT-5的反 …"
+    },
+    {
+      "title": "chatGPT”类人工智能是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/604027450",
+      "snippet": "\"Chat GTP\"类人工智能是基于GTP模型的一种应用，它可以模拟人类对话，回答用户的问题，提供相关的信息和建议。 \"Chat GTP\"类 …"
+    },
+    {
+      "title": "为什么中国用户无法下载并使用chat gtp? - 知乎",
+      "url": "https://www.zhihu.com/question/658512798",
+      "snippet": "为什么中国用户无法下载并使用chat gtp? 最近想用一下chat gtp,但是发现没有地方下载，应用商店里都是一些仿造的。 我想用正版 …"
+    },
+    {
+      "title": "如何看待Chat_GTP会对我们的生活产生什么影响3? - 知乎",
+      "url": "https://www.zhihu.com/question/597121221",
+      "snippet": "如何看待Chat_GTP会对我们的生活产生什么影响3?"
+    }
+  ]
+}

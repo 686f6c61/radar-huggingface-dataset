@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "prasadvittaldev/pocket-tts-hindi-onnx-int4",
+  "slug": "prasadvittaldev-pocket-tts-hindi-onnx-int4",
+  "author": "prasadvittaldev",
+  "url": "https://huggingface.co/prasadvittaldev/pocket-tts-hindi-onnx-int4",
+  "created_at": "2026-09-03T13:03:28.000Z",
+  "updated_at": "2026-09-03T13:03:46.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "int4",
+    "quantized",
+    "on-device",
+    "browser",
+    "webassembly",
+    "pocket-tts",
+    "hi",
+    "base_model:saryps-labs/pocket-tts-hindi",
+    "base_model:quantized:saryps-labs/pocket-tts-hindi",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 111649311,
+  "storage_human": "112 MB",
+  "base_model": "saryps-labs/pocket-tts-hindi",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "一个方框内有个勾（☑）怎么打出这符号_百度知道",
+      "url": "https://zhidao.baidu.com/question/136956635.html",
+      "snippet": "Feb 8, 2010 · 一个方框内有个勾（☑）怎么打出这符号☑这个符号可以用word的特殊字符打出来。以Word2016版为例，具体步骤如 …"
+    },
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "XLOOKUP函数怎么用-百度经验",
+      "url": "https://jingyan.baidu.com/article/7f41ececab929e193c095c4f.html",
+      "snippet": "Sep 6, 2019 · XLOOKUP函数怎么用,最近官方新增了XLOOKUP函数，和VLOOKUP相比，只是字母从V变成了X，到底有什么变化， …"
+    },
+    {
+      "title": "win10的运行在哪里？如何打开运行-百度经验",
+      "url": "https://jingyan.baidu.com/article/7908e85ceee3d5af491ad246.html",
+      "snippet": "Jun 22, 2019 · win10的运行在哪里？如何打开运行？很多人习惯了以前的xp系统、win7系统，到了win10系统后不知道运行在哪里了， …"
+    },
+    {
+      "title": "Код майнкрафт inside the sistem - maradeliys | Ответы Mail",
+      "url": "https://otvet.mail.ru/question/267057498",
+      "snippet": "Код майнкрафт inside the sistem Скачал хоррор мод на майнкрафт inside the sistem, нужно расшифровать код, но как я не …"
+    }
+  ]
+}

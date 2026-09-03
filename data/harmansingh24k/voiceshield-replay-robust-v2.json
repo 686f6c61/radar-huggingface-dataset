@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Harmansingh24k/voiceshield-replay-robust-v2",
+  "slug": "harmansingh24k-voiceshield-replay-robust-v2",
+  "author": "Harmansingh24k",
+  "url": "https://huggingface.co/Harmansingh24k/voiceshield-replay-robust-v2",
+  "created_at": "2026-09-03T12:48:48.000Z",
+  "updated_at": "2026-09-03T12:48:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "audio-classification",
+    "generated_from_trainer",
+    "base_model:Harmansingh24k/voiceshield-replay-robust",
+    "base_model:finetune:Harmansingh24k/voiceshield-replay-robust",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94569090,
+  "parameters_human": "94.6M",
+  "storage_bytes": 378307513,
+  "storage_human": "378 MB",
+  "base_model": "Harmansingh24k/voiceshield-replay-robust",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mozilla – Internet für Menschen, nicht für Profit",
+      "url": "https://www.mozilla.org/de/",
+      "snippet": "Firefox: Hol dir den Goldstandard in Sachen Browsing, mit Geschwindigkeit, Datenschutz und Selbstbestimmung. Thunderbird: …"
+    },
+    {
+      "title": "Интернет за хората, не за изгода — Mozilla",
+      "url": "https://www.mozilla.org/bg/",
+      "snippet": "Знаете ли? Mozilla, създателят на Firefox, се бори да запази Интернет отворен и достъпен за всички глобален публичен ресурс."
+    },
+    {
+      "title": "Directory Listing: /pub/firefox/releases/ - Mozilla",
+      "url": "https://ftp.mozilla.org/pub/firefox/releases/",
+      "snippet": "Access the directory listing for Firefox releases, featuring various versions of the browser for download and installation."
+    },
+    {
+      "title": "Update Firefox to the latest release | Firefox Help",
+      "url": "https://support.mozilla.org/en-US/kb/update-firefox-latest-version",
+      "snippet": "Update Firefox Click the menu button at the right side of the Firefox toolbar, go to Help, and select About Firefox.In the menu bar, …"
+    },
+    {
+      "title": "Télécharger et installer Firefox sous Windows - Mozilla Support",
+      "url": "https://support.mozilla.org/fr/kb/telecharger-installer-firefox-windows?redirect=no",
+      "snippet": "Oct 30, 2021 · REDIRECT Comment installer Firefox sous Windows Partagez cet article : https://mzl.la/3Qw0pIN Ces personnes ont …"
+    }
+  ]
+}

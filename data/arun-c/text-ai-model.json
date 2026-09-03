@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "arun-c/text-ai-model",
+  "slug": "arun-c-text-ai-model",
+  "author": "arun-c",
+  "url": "https://huggingface.co/arun-c/text-ai-model",
+  "created_at": "2026-09-03T17:27:41.000Z",
+  "updated_at": "2026-09-03T17:28:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57061440,
+  "storage_human": "57 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WPS Office - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/WPS_Office",
+      "snippet": "WPS Office (an acronym for Writer, Presentation and Spreadsheets, [3] previously known as Kingsoft Office) is an office suite for …"
+    },
+    {
+      "title": "LLM Leaderboard - Best Text & Chat AI Models Compared",
+      "url": "https://arena.ai/leaderboard/text",
+      "snippet": "Text Arena 🏆Overall View overall rankings across various AI models in text-to-text tasks across math, coding, creative writing, and other open-ended domains."
+    },
+    {
+      "title": "What Is WPS Office? Free Writer, Sheets, Slides & PDF",
+      "url": "https://www.wps.com/academy/what-is-wps-office/about-wps/1863074/",
+      "snippet": "Aug 27, 2026 · On a computer or phone, WPS usually means WPS Office. This guide covers what WPS means, what each module …"
+    },
+    {
+      "title": "ArPriCode (Arun Giri) · GitHub",
+      "url": "https://github.com/ArPriCode",
+      "snippet": "🔄 DevOps & MLOps – CI/CD automation, containerization, model deployment, and production monitoring 🔓 Open Source – Contributing to LLM tooling, agent frameworks, and AI infrastructure Mission: Build next-generation AI systems and agents that are reliable, interpretable, scalable, and production-ready."
+    },
+    {
+      "title": "WPS Payroll in UAE - Edenred",
+      "url": "https://edenred.ae/blog/wps-payroll-in-uae/",
+      "snippet": "Oct 11, 2022 · Discover everything you need to know about WPS in UAE - how the Wage Protection System works, why it’s …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "opstechie/prod-smoke-2",
+  "slug": "opstechie-prod-smoke-2",
+  "author": "opstechie",
+  "url": "https://huggingface.co/opstechie/prod-smoke-2",
+  "created_at": "2026-09-03T13:06:16.000Z",
+  "updated_at": "2026-09-03T13:07:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3702168,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/",
+      "snippet": "Avec leboncoin, trouvez la bonne affaire, réalisez la bonne vente pour votre voiture, immobilier, emploi, location de vacances, …"
+    },
+    {
+      "title": "Voiture occasion - annonces automobiles de particuliers et …",
+      "url": "https://www.leboncoin.fr/c/voitures",
+      "snippet": "Consultez nos annonces de voitures d’occasion toutes marques : citadines, SUV, berlines, électriques, hybrides. Plus de 700 000 …"
+    },
+    {
+      "title": "Immobilier neuf Rhône Alpes",
+      "url": "https://immobilierneuf.leboncoin.fr/immobilier-neuf/appartement+maison+terrain/a/rhone-alpes/",
+      "snippet": "Septembre 2026 - Avec leboncoin, découvrez 1147 programmes immobiliers pour habiter, investir ou défiscaliser dans la région …"
+    },
+    {
+      "title": "Rhône-Alpes - leboncoin",
+      "url": "https://www.leboncoin.fr/l/rp_rhone-alpes",
+      "snippet": "Toutes nos annonces gratuites Rhône-Alpes. Consultez nos 9165337 annonces de particuliers et professionnels sur leboncoin"
+    },
+    {
+      "title": "Locations immobilières - leboncoin",
+      "url": "https://www.leboncoin.fr/c/locations",
+      "snippet": "Consultez nos annonces de locations sur leboncoin. Saint-Étienne 42000 La Terrasse-Bel Air-Carnot-Montaud"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "avik112/ps26094-gguf",
+  "slug": "avik112-ps26094-gguf",
+  "author": "avik112",
+  "url": "https://huggingface.co/avik112/ps26094-gguf",
+  "created_at": "2026-09-03T19:18:41.000Z",
+  "updated_at": "2026-09-03T19:18:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bluetooth aktivieren Windows 10?",
+      "url": "https://www.windows-10-forum.com/threads/bluetooth-aktivieren-windows-10.153838/",
+      "snippet": "Bluetooth aktivieren Windows 10?:Hallo zusammen, ich hab seit ein paar Wochen das Problem, dass mein Bluetooth scheinbar auf …"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Bluetooth aktivieren auf Windows 10?",
+      "url": "https://www.windows-10-forum.com/threads/bluetooth-aktivieren-auf-windows-10.166479/",
+      "snippet": "Bluetooth aktivieren in Windows 10 - so funktioniert es Wenn Sie ein Gerät über Bluetooth mit Windows 10 verbinden möchten, …"
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "Windows 10 Bluetooth lässt sich nicht mehr aktivieren",
+      "url": "https://www.windows-10-forum.com/threads/windows-10-bluetooth-laesst-sich-nicht-mehr-aktivieren.141095/",
+      "snippet": "Helfe beim Thema Windows 10 Bluetooth lässt sich nicht mehr aktivieren in Windows 10 Support um eine Lösung zu finden; Hallo, …"
+    }
+  ]
+}

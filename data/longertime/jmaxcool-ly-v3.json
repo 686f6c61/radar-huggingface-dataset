@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "longertime/jmaxcool-ly-v3",
+  "slug": "longertime-jmaxcool-ly-v3",
+  "author": "longertime",
+  "url": "https://huggingface.co/longertime/jmaxcool-ly-v3",
+  "created_at": "2026-09-03T13:37:57.000Z",
+  "updated_at": "2026-09-03T13:37:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916585166,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows 11: Grafikkarte auf Fehler testen und GPU-Probleme beheben",
+      "url": "https://www.spickipedia.com/windows-11/windows-11-grafikkarte-auf-fehler-testen-und-gpu-probleme-beheben.html",
+      "snippet": "Mar 30, 2026 · GPU-Probleme treten oft schleichend auf und werden schnell schlimmer. Hier zeige ich Dir klar und direkt, wie Du …"
+    },
+    {
+      "title": "JMaxCool (JMax) - Hugging Face",
+      "url": "https://huggingface.co/JMaxCool/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 24 days ago ... published a model 24 days ago ... new activity about 1 month ago"
+    },
+    {
+      "title": "Windows 11: NVIDIA-Apps Probleme beheben – So geht’s",
+      "url": "https://tippsling.de/nvidia-apps-probleme-in-windows-11-beheben-so-gehts/",
+      "snippet": "Mar 4, 2026 · Dieser Artikel zeigt Ihnen Schritt für Schritt, wie Sie die häufigsten NVIDIA-Probleme in Windows 11 gezielt …"
+    },
+    {
+      "title": "longertime (GAM) - Hugging Face",
+      "url": "https://huggingface.co/longertime/models",
+      "snippet": "Sort: Recently updated. longertime/affine-false. Updated Dec 4, 2025. longertime/affine-llo. Updated Dec 4, 2025. longertime/affine-fantasi"
+    },
+    {
+      "title": "Grafikkarte auf Fehler testen – einfache Anleitung",
+      "url": "https://www.windows-guru.de/grafikkarte-auf-fehler-testen/",
+      "snippet": "Oct 16, 2025 · So kannst du deine Grafikkarte auf Fehler testen und Probleme mit Bild, Leistung oder Treibern schnell selbst …"
+    }
+  ]
+}

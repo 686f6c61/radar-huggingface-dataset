@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "escapebirdy/rope_cut_oct_xyzi_octe_3stage_4096",
+  "slug": "escapebirdy-rope_cut_oct_xyzi_octe_3stage_4096",
+  "author": "escapebirdy",
+  "url": "https://huggingface.co/escapebirdy/rope_cut_oct_xyzi_octe_3stage_4096",
+  "created_at": "2026-09-03T11:56:59.000Z",
+  "updated_at": "2026-09-03T11:57:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:escapebirdy/rope_cut_oct_xyzi_4096_v1",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 257040164,
+  "parameters_human": "257.0M",
+  "storage_bytes": 1028196224,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Downloads · QGIS",
+      "url": "https://qgis.org/downloads/",
+      "snippet": "QGIS Downloads ¶ Browse and download QGIS installers, packages, and related files from our comprehensive download repository. …"
+    },
+    {
+      "title": "Releases · qgis/QGIS - GitHub",
+      "url": "https://github.com/qgis/QGIS/releases",
+      "snippet": "QGIS is a free, open source, cross platform (lin/win/mac) geographical information system (GIS) - qgis/QGIS"
+    },
+    {
+      "title": "Spatial without Compromise · QGIS",
+      "url": "https://version.qgis.org/",
+      "snippet": "Spatial without Compromise Spatial visualization and decision-making tools for everyone"
+    },
+    {
+      "title": "Cummins Inc. :: QuickServe Online",
+      "url": "https://origin-qsstg.cummins.com/",
+      "snippet": "QuickServe Online provides Cummins engine parts and service information, including manuals, diagrams, and updates for registered …"
+    },
+    {
+      "title": "Default SST profiles with default passwords are Expired after PTF",
+      "url": "https://www.ibm.com/support/pages/default-sst-profiles-default-passwords-are-expired-after-ptf-upgrade",
+      "snippet": "Jun 16, 2025 · A change was made to the default user profiles for Service Tools (SST and DST). When the PTFs listed are applied …"
+    }
+  ]
+}

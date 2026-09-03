@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "minktn/Qwen2.5-3B-Instruct-Text2SQL-Tuned",
+  "slug": "minktn-qwen2-5-3b-instruct-text2sql-tuned",
+  "author": "minktn",
+  "url": "https://huggingface.co/minktn/Qwen2.5-3B-Instruct-Text2SQL-Tuned",
+  "created_at": "2026-09-03T14:25:28.000Z",
+  "updated_at": "2026-09-03T14:25:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Conforama - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/conforama-f306.html",
+      "snippet": "Apr 20, 2026 · Conforama : Entrez dans l'espace dédié à l'entreprise Conforama, achat en ligne de meuble et mobilier, cuisine, …"
+    },
+    {
+      "title": "Epaisseur des caissons: signe de qualité?? - 18 messages",
+      "url": "https://www.forumconstruire.com/construire/topic-26445.php",
+      "snippet": "Aug 26, 2006 · Certains cuisinistes proposent aussi du trois-plis comme matériau de construction de leurs caissons. C'est à priori …"
+    },
+    {
+      "title": "Conforama : commande jamais livrée - pas de remboursement",
+      "url": "https://forum.quechoisir.org/conforama-commande-jamais-livree-pas-de-remboursement-t375968.html",
+      "snippet": "Nov 18, 2025 · Conforama : commande jamais livrée - pas de remboursement Règles du forum Julien-bm Consom'acteur * …"
+    },
+    {
+      "title": "Alles zum Thema Conforama im Überblick - Beobachter",
+      "url": "https://www.beobachter.ch/stichworte/c/conforama",
+      "snippet": "Conforama – Aktuelle Nachrichten und Hintergründe. Alle News zum Thema Conforama lesen Sie bei uns. Immer informiert bleiben."
+    },
+    {
+      "title": "Conforama verurteilt wegen falscher Rabatte - Beobachter",
+      "url": "https://www.beobachter.ch/konsum/konsumentenschutz/konsumentenschutz-conforama-verurteilt-wegen-falscher-rabatte-612268",
+      "snippet": "Jun 19, 2023 · Das Lausanner Bezirksgericht verurteilt den Möbelhändler – er muss 1,5 Millionen Franken zahlen. Gleichzeitig will …"
+    }
+  ]
+}

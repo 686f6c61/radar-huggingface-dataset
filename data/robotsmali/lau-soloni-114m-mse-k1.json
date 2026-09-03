@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "RobotsMali/lau-soloni-114m-mse-k1",
+  "slug": "robotsmali-lau-soloni-114m-mse-k1",
+  "author": "RobotsMali",
+  "url": "https://huggingface.co/RobotsMali/lau-soloni-114m-mse-k1",
+  "created_at": "2025-12-27T19:39:12.000Z",
+  "updated_at": "2026-09-03T17:48:06.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "bm",
+    "fr"
+  ],
+  "tags": [
+    "nemo",
+    "speech-translation",
+    "audio",
+    "FastConformer",
+    "Conformer",
+    "pytorch",
+    "Bambara",
+    "French",
+    "NeMo",
+    "Semantic-Regularization",
+    "LAU",
+    "automatic-speech-recognition",
+    "bm",
+    "fr",
+    "dataset:RobotsMali/jeli-asr",
+    "base_model:RobotsMali/soloni-114m-tdt-ctc-v0",
+    "base_model:finetune:RobotsMali/soloni-114m-tdt-ctc-v0",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 900741120,
+  "storage_human": "901 MB",
+  "base_model": "RobotsMali/soloni-114m-tdt-ctc-v0",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech Translation",
+      "dataset": "Jeli-ASR",
+      "metric": "Test BLEU",
+      "value": 14.29
+    },
+    {
+      "task": "Speech Translation",
+      "dataset": "Jeli-ASR",
+      "metric": "Test WER",
+      "value": 76.08
+    },
+    {
+      "task": "Speech Translation",
+      "dataset": "Jeli-ASR",
+      "metric": "Test CER",
+      "value": 58.64
+    }
+  ],
+  "sources": [
+    {
+      "title": "poki・playhop・laggedこの3つの無料子供向けゲーム... - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13317752273",
+      "snippet": "Jul 21, 2025 · poki・playhop・laggedこの3つの無料子供向けゲームサイトは安全でしょうか"
+    },
+    {
+      "title": "「POKIPOKI」 - 無料オンラインゲーム「POKIPOKI」がし... - Yahoo!知 …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1018333575",
+      "snippet": "Aug 10, 2008 · 「POKI POKI」 無料オンラインゲーム「POKIPOKI」がしたくて、 ダウンロード までして、 いざゲームスタート!す …"
+    },
+    {
+      "title": "有推荐的摸鱼网站吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/383719766",
+      "snippet": "分享10个有趣的摸鱼网站，每一个都好玩到爆，光第一个我都能能玩一天！ 1、世界名画在线拼图 gallerix.asia/ 一个加勒里克斯在线博 …"
+    },
+    {
+      "title": "如何删除流氓hao.360主页？ - 知乎",
+      "url": "https://www.zhihu.com/question/35734173",
+      "snippet": "最近也被360导航烦的不行，最后简单地弄了一下，发现有效。 我用的是 火狐浏览器，win7系统，每次打开菜单栏上的快捷按钮 …"
+    },
+    {
+      "title": "Pokki Adware – Was ist es + Removal Guide [gelöst]",
+      "url": "https://sensorstechforum.com/de/pokki-start-menu/",
+      "snippet": "Sep 11, 2024 · Sollten Sie dem Pokki-Startmenü vertrauen?? Ist das Pokki-Startmenü ein legitimes Programm?? How to Remove …"
+    }
+  ]
+}

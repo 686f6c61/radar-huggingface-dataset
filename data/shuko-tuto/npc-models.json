@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "shuko-tuto/npc-models",
+  "slug": "shuko-tuto-npc-models",
+  "author": "shuko-tuto",
+  "url": "https://huggingface.co/shuko-tuto/npc-models",
+  "created_at": "2026-09-03T15:05:36.000Z",
+  "updated_at": "2026-09-03T18:44:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ncnn",
+    "llama.cpp",
+    "whisper",
+    "gigaam",
+    "silero-vad",
+    "qwen3",
+    "speech-recognition",
+    "voice-activity-detection",
+    "text-generation",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 3164076028,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Embauche d'un salarié étranger : démarches et sanctions",
+      "url": "https://www.juritravail.com/Actualite/embauche-d-un-salarie-etranger-tout-savoir-pour-etre-en-regle/Id/375780",
+      "snippet": "Aug 10, 2026 · Lorsque le salarié étranger est déjà présent en France, la première chose à faire avant de l'embaucher, est de vérifier …"
+    },
+    {
+      "title": "shuko-tuto (ooo-) - Hugging Face",
+      "url": "https://huggingface.co/shuko-tuto",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 28 days ago ... updated a model 28 days ago ... updated a model about 1 month ago"
+    },
+    {
+      "title": "Embaucher un étudiant étranger : autorisations et procédures",
+      "url": "https://www.juritravail.com/Actualite/emploi-d-un-etudiant-etranger-conditions-et-procedures/Id/376471",
+      "snippet": "2 days ago · En votre qualité d'employeur, vous devez vérifier si le candidat étranger (hors Union européenne) que vous avez prévu …"
+    },
+    {
+      "title": "shuko-tuto (ooo-) - Hugging Face",
+      "url": "https://huggingface.co/shuko-tuto/datasets",
+      "snippet": "User profile of ooo- on Hugging Face"
+    },
+    {
+      "title": "Rupture anticipée du CDD : quels sont les motifs - Juritravail",
+      "url": "https://www.juritravail.com/Actualite/rupture-du-cdd-5-exceptions-pour-rompre-de-maniere-anticipee/Id/196",
+      "snippet": "Jul 9, 2026 · Le contrat à durée déterminée (CDD) est, par principe, conclu pour être exécuté jusqu'à son terme. Employeur comme …"
+    }
+  ]
+}

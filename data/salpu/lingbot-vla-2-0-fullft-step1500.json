@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "salpu/lingbot-vla-2.0-fullft-step1500",
+  "slug": "salpu-lingbot-vla-2-0-fullft-step1500",
+  "author": "salpu",
+  "url": "https://huggingface.co/salpu/lingbot-vla-2.0-fullft-step1500",
+  "created_at": "2026-09-03T14:07:22.000Z",
+  "updated_at": "2026-09-03T14:08:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lingbotvla",
+    "robotics",
+    "vla",
+    "lingbot-vla-2.0",
+    "libero",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6375907511,
+  "parameters_human": "6.38B",
+  "storage_bytes": 25515312426,
+  "storage_human": "25.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HDMI eARC audio extractor with hearing aid streamer",
+      "url": "https://www.avsforum.com/threads/hdmi-earc-audio-extractor-with-hearing-aid-streamer.3338878/",
+      "snippet": "Jan 3, 2026 · HDMI output is just a straight passthru of HDMI input. The decoder output only goes to the analog output jacks. There …"
+    },
+    {
+      "title": "HDMI Audio Extractor - AVS Forum",
+      "url": "https://www.avsforum.com/threads/hdmi-audio-extractor.1397286/",
+      "snippet": "Mar 1, 2012 · After a lot of research I decided to try this. HDMI Audio Extractor Digital to Analog Converter Dolby Decoder Optical / …"
+    },
+    {
+      "title": "HDMI to SPDIF? Can you recommend an audio extractor?",
+      "url": "https://audiophilestyle.com/forums/topic/56255-hdmi-to-spdif-can-you-recommend-an-audio-extractor/",
+      "snippet": "Apr 24, 2019 · However, the signal for these comes out of the HDMI output only (some copy protection business I think). There are …"
+    },
+    {
+      "title": "Extracting Audio From HDMI ARC - Tom's Guide Forum",
+      "url": "https://forums.tomsguide.com/threads/extracting-audio-from-hdmi-arc.127844/",
+      "snippet": "Jan 4, 2017 · Hello there. I have an LG 55UF680T TV with ARC support on HDMI 2. I was wondering if I could extract the audio out …"
+    },
+    {
+      "title": "Solved! - Audio Extractor | Tom's Guide Forum",
+      "url": "https://forums.tomsguide.com/threads/audio-extractor.453975/",
+      "snippet": "Jun 23, 2019 · The audio extractor only has to work with the Xfinity box. If that can output 4k then the extractor would need to pass …"
+    }
+  ]
+}

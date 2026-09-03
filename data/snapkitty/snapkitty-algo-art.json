@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/snapkitty-algo-art",
+  "slug": "snapkitty-snapkitty-algo-art",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/snapkitty-algo-art",
+  "created_at": "2026-09-03T11:25:37.000Z",
+  "updated_at": "2026-09-03T12:12:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "visualization",
+    "subleq",
+    "attention",
+    "formal-verification",
+    "entropy",
+    "research",
+    "algorithmic-art",
+    "fibonacci-anyons",
+    "jordan-algebra",
+    "icp-dag",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "لينك الاستعلام عن منحة العمالة الغير منتظمة بالرقم القومي 2026",
+      "url": "https://www.masrtimes.com/666251",
+      "snippet": "رابط مباشر.. لينك الاستعلام عن منحة العمالة غير المنتظمة بالرقم القومي 2026 عبر موقع وزارة العمل. تعرف على خطوات التسجيل، شروط الاستحقاق، وموعد صرف الدفعة القادمة."
+    },
+    {
+      "title": "رسميا.. مواعيد وشروط صرف منحة العمالة غير المنتظمة 2026",
+      "url": "https://www.almasryalyoum.com/news/details/4178516",
+      "snippet": "Jan 19, 2026 · ازدادت عمليات تساؤل القراء حول شروط صرف منحة العمالة غير المنتظمة ، ويأتي ذلك بالتزامن مع إعلان وزارة العمل خلال الفترة الماضية عن تحديث قاعدة بيانات المستحقين لصرف …"
+    },
+    {
+      "title": "موعد صرف منحة العمالة غير المنتظمة 2026 في مصر.. بشائر في الطريق",
+      "url": "https://roayahnews.com/%D9%85%D9%88%D8%B9%D8%AF-%D8%B5%D8%B1%D9%81-%D9%85%D9%86%D8%AD%D8%A9-%D8%A7%D9%84%D8%B9%D9%85%D8%A7%D9%84%D8%A9-%D8%BA%D9%8A%D8%B1-%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%B8%D9%85%D8%A9-2026-%D9%81%D9%8A/",
+      "snippet": "Jun 25, 2026 · وعن موعد صرف منحة العمالة غير المنتظمة 2026، تحل مناسبة المولد النبوي الشريف في الأسبوع الأخير من شهر أغسطس 2026، وتعلن الحكومة المصرية مواعيد الصرف …"
+    },
+    {
+      "title": "منحة العمالة غير المنتظمة أغسطس 2026.. موعد الصرف وشروط الاستحقاق ...",
+      "url": "https://algomhor.com/456780",
+      "snippet": "من المقرر بدء صرف منحة العمالة غير المنتظمة خلال شهر أغسطس 2026 بمناسبة المولد النبوي الشريف، حيث يحصل المستفيدون المقيدون بقاعدة بيانات وزارة العمل على دعم مالي بقيمة 1500 جنيه لكل …"
+    },
+    {
+      "title": "لينك الاستعلام عن منحة العمالة الغير منتظمة بالرقم القومي.. اعرف التفاصيل",
+      "url": "https://newsroom.info/286345",
+      "snippet": "أطلقت وزارة القوى العاملة المصرية خدمة الاستعلام الإلكتروني عن منحة العمالة الغير منتظمة 2026 ، والتي تتيح للمواطنين الحصول على جميع تفاصيل المنحة ومواعيد الصرف الرسمية بالرقم القومي …"
+    }
+  ]
+}

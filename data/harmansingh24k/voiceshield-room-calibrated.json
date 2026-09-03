@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Harmansingh24k/voiceshield-room-calibrated",
+  "slug": "harmansingh24k-voiceshield-room-calibrated",
+  "author": "Harmansingh24k",
+  "url": "https://huggingface.co/Harmansingh24k/voiceshield-room-calibrated",
+  "created_at": "2026-09-03T16:46:54.000Z",
+  "updated_at": "2026-09-03T16:47:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "audio-classification",
+    "generated_from_trainer",
+    "base_model:Harmansingh24k/voiceshield-replay-robust",
+    "base_model:finetune:Harmansingh24k/voiceshield-replay-robust",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94569090,
+  "parameters_human": "94.6M",
+  "storage_bytes": 378307513,
+  "storage_human": "378 MB",
+  "base_model": "Harmansingh24k/voiceshield-replay-robust",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chicago Hotels | Top Hotels in Chicago, Illinois by IHG",
+      "url": "https://www.ihg.com/chicago-illinois?msockid=0eab87bf0650690137079076079a6851",
+      "snippet": "View Chicago hotels available for your next trip. IHG offers great rates on 52 in Chicago with flexible cancellation fees. Whether …"
+    },
+    {
+      "title": "InterContinental Chicago Magnificent Mile | Luxury Hotel in Chicago",
+      "url": "https://www.ihg.com/intercontinental/hotels/us/en/chicago/ordha/hoteldetail?msockid=0eab87bf0650690137079076079a6851",
+      "snippet": "Stay in the heart of Chicago on the Magnificent Mile with elegant hotel rooms, fine dining, a historic pool, and easy access to top …"
+    },
+    {
+      "title": "Best IHG Hotels & Resorts in Chicago for 2026 - U.S. News Travel",
+      "url": "https://travel.usnews.com/hotels/b-ihg_group_hotels/chicago_il/",
+      "snippet": "U.S. News evaluates top hotels in Chicago using expert insights, awards, class ratings and guest reviews."
+    },
+    {
+      "title": "THE 10 BEST InterContinental (IHG) Hotels in Chicago, IL 2026",
+      "url": "https://www.tripadvisor.com/Hotels-g35805-zfb9205-Chicago_Illinois-Hotels.html",
+      "snippet": "Jun 13, 2024 · Best InterContinental (IHG) Hotels in Chicago: find 13,906 traveler reviews, candid photos, and prices for 10 …"
+    },
+    {
+      "title": "Hotels by IHG in Chicago - Skyscanner",
+      "url": "https://www.skyscanner.com/hotels/united-states/chicago-hotels/ci-27544891/ihg/b-90719191",
+      "snippet": "Search for the best hotels by IHG in Chicago, then compare every room rate across top providers to find the cheapest deal or best …"
+    }
+  ]
+}

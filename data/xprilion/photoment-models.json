@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "xprilion/photoment-models",
+  "slug": "xprilion-photoment-models",
+  "author": "xprilion",
+  "url": "https://huggingface.co/xprilion/photoment-models",
+  "created_at": "2026-09-03T17:30:07.000Z",
+  "updated_at": "2026-09-03T17:30:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "mobilefacenet",
+    "face-recognition",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2144884,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to use Google Docs",
+      "url": "https://support.google.com/docs/answer/7068618?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Google Docs is an online word processor that lets you create and format documents and work with other people. Get our top tips for …"
+    },
+    {
+      "title": "xprilion (Anubhav Singh) · GitHub",
+      "url": "https://github.com/xprilion",
+      "snippet": "Anubhav Singh xprilion Follow Sponsor AI Engineer 948 followers · 30 following @wandb India 07:49 - 12h30m ahead https://xprilion.com"
+    },
+    {
+      "title": "Google Docs Editors Help",
+      "url": "https://support.google.com/docs/?hl=en",
+      "snippet": "Official Google Docs Editors Help Center where you can find tips and tutorials on using Google Docs Editors and other answers to …"
+    },
+    {
+      "title": "GitHub - xprilion/xprilion.github.io · GitHub",
+      "url": "https://github.com/xprilion/xprilion.github.io",
+      "snippet": "Contribute to xprilion/xprilion.github.io development by creating an account on GitHub."
+    },
+    {
+      "title": "知乎盐选 | Google Docs：最高效的免费办公工具",
+      "url": "https://www.zhihu.com/market/albums/1015279292325797888/manuscript/1015333413548662784",
+      "snippet": "今天我们一起来学习如何像 Google 精英一样，高效地协同办公。这里介绍一个 Google 最常用的工具：Docs 。 不用我说，你可能也 …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "prasadvittaldev/pocket-tts-german-onnx-int4",
+  "slug": "prasadvittaldev-pocket-tts-german-onnx-int4",
+  "author": "prasadvittaldev",
+  "url": "https://huggingface.co/prasadvittaldev/pocket-tts-german-onnx-int4",
+  "created_at": "2026-09-03T12:54:38.000Z",
+  "updated_at": "2026-09-03T13:03:00.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "int4",
+    "quantized",
+    "on-device",
+    "browser",
+    "webassembly",
+    "pocket-tts",
+    "de",
+    "base_model:kyutai/pocket-tts",
+    "base_model:quantized:kyutai/pocket-tts",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118231112,
+  "storage_human": "118 MB",
+  "base_model": "kyutai/pocket-tts",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prêt Action Logement (1% logement) : taux et conditions - MoneyVox",
+      "url": "https://www.moneyvox.fr/credit/1pourcent-logement.php",
+      "snippet": "May 5, 2026 · Le prêt Action Logement (anciennement « 1% Logement ») est un crédit à taux privilégié réservé aux salariés du privé, …"
+    },
+    {
+      "title": "Procédure action logement (Al'in) : transmis au bailleur",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-8667459-procedure-action-logement-transmission-bailleur",
+      "snippet": "Bonjour, J'ai postulé sur un logement action logement début Septembre. Au niveau d'action logement la procédure a été très rapide …"
+    },
+    {
+      "title": "Action logement << envoi bailleur>> - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-8907218-action-logement-envoi-bailleur",
+      "snippet": "Dec 16, 2021 · Bonjour, Je me suis positionner sur un logement sur action logement Je viens de voir mon dossier a été envoyé au …"
+    },
+    {
+      "title": "action logement - service courtage | Forum banque et argent",
+      "url": "https://www.moneyvox.fr/forums/fil/action-logement-service-courtage.36560/",
+      "snippet": "Mar 18, 2019 · Bonjour à tous, Le groupe action logement propose en plus du pret pour l'acquisition dans l'ancien(ancien 1% …"
+    },
+    {
+      "title": "Mon parcours avec Action Logement - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-8362850-mon-parcours-avec-action-logement",
+      "snippet": "Oct 24, 2019 · Bonjour, Je viens vers vous, non pas pour une question, mais pour vous partager mon expérience avec Action …"
+    }
+  ]
+}

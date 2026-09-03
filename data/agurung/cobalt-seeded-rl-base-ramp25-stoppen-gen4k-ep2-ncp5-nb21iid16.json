@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-nb21iid16",
+  "slug": "agurung-cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-nb21iid16",
+  "author": "agurung",
+  "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-nb21iid16",
+  "created_at": "2026-09-03T12:38:26.000Z",
+  "updated_at": "2026-09-03T18:09:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "openrlhf",
+    "grpo",
+    "reinforcement-learning",
+    "code-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 17657211690,
+  "storage_human": "17.7 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banca Intesa Sanpaolo - Conto Corrente per Famiglie, Giovani e Aziende",
+      "url": "https://www.intesasanpaolo.com/",
+      "snippet": "Visita il sito Intesasanpaolo.com e scopri la tua nuova banca online: un mondo di vantaggi e servizi che renderanno la tua vita più …"
+    },
+    {
+      "title": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-groot8 ...",
+      "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-groot8",
+      "snippet": "Instructions to use agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-groot8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Login - Entra - Intesa Sanpaolo",
+      "url": "https://www.intesasanpaolo.com/it/persone-e-famiglie/login-page.html",
+      "snippet": "Login Page. ACCEDI ALLA TUA BANCA ONLINE. Inserisci gli stessi codici che usi sul \"vecchio\" internet banking."
+    },
+    {
+      "title": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp20 ...",
+      "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp20-groot30v11v",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Homepage | Inbiz Intesa Sanpaolo",
+      "url": "https://www.inbiz.intesasanpaolo.com/it/?lang=it",
+      "snippet": "Dalla gestione della liquidità agli insight sui mercati emergenti: Inbiz èvpersonalizzabile con gli strumenti che servono per far crescere …"
+    }
+  ]
+}

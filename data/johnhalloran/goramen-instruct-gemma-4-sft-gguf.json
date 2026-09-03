@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "johnhalloran/goramen-instruct-gemma-4-sft-gguf",
+  "slug": "johnhalloran-goramen-instruct-gemma-4-sft-gguf",
+  "author": "johnhalloran",
+  "url": "https://huggingface.co/johnhalloran/goramen-instruct-gemma-4-sft-gguf",
+  "created_at": "2026-09-03T11:33:24.000Z",
+  "updated_at": "2026-09-03T11:35:20.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "gemma4",
+    "conversational",
+    "base_model:mlx-community/gemma-4-e4b-it-4bit",
+    "base_model:quantized:mlx-community/gemma-4-e4b-it-4bit",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7463013674,
+  "parameters_human": "7.46B",
+  "storage_bytes": 5302272992,
+  "storage_human": "5.3 GB",
+  "base_model": "mlx-community/gemma-4-e4b-it-4bit",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=nl",
+      "snippet": "Wij willen hier een beschrijving geven, maar de site die u nu bekijkt staat dit niet toe."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Inloggen - Google Accounts",
+      "url": "https://accounts.google.com/login?hl=nl",
+      "snippet": "Niet jouw computer? Gebruik een venster voor privé browsen om in te loggen. Meer informatie over het gebruik van de gastmodus …"
+    },
+    {
+      "title": "Inloggen bij Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=nl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Als je Gmail wilt openen, kun je inloggen vanaf een computer of je account toevoegen aan de Gmail-app op je telefoon of tablet. …"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://www.google.com/accounts/Login",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    }
+  ]
+}

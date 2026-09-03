@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "Solstice-AI/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-mlx-6Bit",
+  "slug": "solstice-ai-qwen3-8-27b-cold-fusion-gain-v1-1-mlx-6bit",
+  "author": "Solstice-AI",
+  "url": "https://huggingface.co/Solstice-AI/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-mlx-6Bit",
+  "created_at": "2026-08-18T09:01:43.000Z",
+  "updated_at": "2026-09-03T18:56:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "anvil",
+    "turboquant",
+    "mlx-6bit",
+    "apple-silicon",
+    "qwen3.8",
+    "cold-fusion",
+    "gain",
+    "reasoning",
+    "coder",
+    "creative-writing",
+    "metal",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 346,
+  "trending_score": 0,
+  "parameters": 26895993856,
+  "parameters_human": "26.90B",
+  "storage_bytes": 21876371302,
+  "storage_human": "21.9 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solstice — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Solstice",
+      "snippet": "Le solstice est un événement astronomique qui se produit deux fois par an, lorsque la position apparente du Soleil atteint sa plus …"
+    },
+    {
+      "title": "Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic ...",
+      "url": "https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-mlx-oQ4e",
+      "snippet": "This is the high-performance quantization and serving release of DavidAU's flagship Qwen3.8-27B Cold Fusion checkpoint, packaged and optimized by Solstice-AI. Featuring a historic 735 ARC-C and 882 ARC-E, this model delivers an unprecedented 9-for-9 clean sweep over Claude Opus 4.6 Max across the official Claude Code benchmark harness."
+    },
+    {
+      "title": "Date des équinoxes et des solstices pour 2026 et à venir",
+      "url": "https://icalendrier.fr/outils/equinoxes-solstices",
+      "snippet": "Mar 20, 2026 · Le solstice correspond au moment de l'année où les rayons du soleil touchent la Terre avec l'angle le plus incliné. Le …"
+    },
+    {
+      "title": "Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic ...",
+      "url": "https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-AWQ-1M",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Solstice - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Solstice",
+      "snippet": "The lengths of time when the sun is up are longer around the summer solstice and shorter around the winter solstice, except near the …"
+    }
+  ]
+}

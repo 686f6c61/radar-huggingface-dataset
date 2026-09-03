@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "textilelabs/Loom-Atom",
+  "slug": "textilelabs-loom-atom",
+  "author": "textilelabs",
+  "url": "https://huggingface.co/textilelabs/Loom-Atom",
+  "created_at": "2026-09-03T16:09:01.000Z",
+  "updated_at": "2026-09-03T16:09:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "tiny-model",
+    "from-scratch",
+    "router",
+    "tool-use",
+    "agentic",
+    "text-classification",
+    "en",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22392,
+  "parameters_human": "22392",
+  "storage_bytes": 727978,
+  "storage_human": "727978 B",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anna Badenberg (anna_hellinger) – Profil | Pinterest",
+      "url": "https://de.pinterest.com/anna_hellinger/",
+      "snippet": "Anna Badenberg | Schmuckdesign - In Handarbeit hergestellte Edelstein-Unikate - Schmuck zum Verlieben."
+    },
+    {
+      "title": "Amethyst armband | Armband aus, Armbänder, Ketten ohrringe",
+      "url": "https://de.pinterest.com/pin/pin-von-anna-badenberg-auf-handgearbeitet-edelsteinunikate-fashionnuggets-by-anna-hellinger--451134087656015824/",
+      "snippet": "Die im Onlineshop Perlenrausch-Regensburg angebotenen Steinarmbänder, kombiniert mit Perlen, Edelsteinen und Silber, mit …"
+    },
+    {
+      "title": "Entdecke 140 die schönsten Fotos und schöne fotos Ideen ...",
+      "url": "https://de.pinterest.com/anna_hellinger/die-sch%C3%B6nsten-fotos/",
+      "snippet": "Von schöne fotos bis zu dierenfotografie, auf Pinterest findest du das, wonach du suchst!"
+    },
+    {
+      "title": "Perlen | Armband, Armbänder, Ketten ohrringe - de.pinterest.com",
+      "url": "https://de.pinterest.com/pin/handgearbeitet-edelsteinunikate-fashionnuggets-by-anna-hellinger--451134087658295503/",
+      "snippet": "Women's Fashion Merken Perlen Anna Badenberg Kommentare Mehr zu diesem Pin Pinnwand, die diesen Pin enthält"
+    },
+    {
+      "title": "32 Workspace-Ideen in 2025 | einrichten und wohnen, hausbüro …",
+      "url": "https://de.pinterest.com/anna_hellinger/workspace/",
+      "snippet": "22.09.2025 - Erkunde Anna Badenbergs Pinnwand „Workspace“ auf Pinterest. Weitere Ideen zu einrichten und wohnen, hausbüro …"
+    }
+  ]
+}

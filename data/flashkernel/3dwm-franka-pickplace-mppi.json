@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Flashkernel/3dwm-franka-pickplace-mppi",
+  "slug": "flashkernel-3dwm-franka-pickplace-mppi",
+  "author": "Flashkernel",
+  "url": "https://huggingface.co/Flashkernel/3dwm-franka-pickplace-mppi",
+  "created_at": "2026-09-03T14:37:50.000Z",
+  "updated_at": "2026-09-03T15:29:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "world-model",
+    "point-cloud",
+    "model-predictive-control",
+    "mujoco",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 299652822,
+  "storage_human": "300 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Sumo00048 (Sumo) - Hugging Face",
+      "url": "https://huggingface.co/Sumo00048",
+      "snippet": "Sumo00048/pi05_franka_pickplace_v2_ft2_ckpt. View all activity. Organizations. None yet. models 5. Sort: Recently updated. Sumo00048/pi05_franka_pickplace_v4_ckpt"
+    },
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "Flashkernel (Liang Ji) - Hugging Face",
+      "url": "https://huggingface.co/Flashkernel/datasets",
+      "snippet": "AI & ML interests ... Recent Activity published a dataset 20 days ago ... updated a dataset 23 days ago"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    }
+  ]
+}

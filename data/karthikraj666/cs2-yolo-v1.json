@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "KarthikRaj666/CS2-YOLO-V1",
+  "slug": "karthikraj666-cs2-yolo-v1",
+  "author": "KarthikRaj666",
+  "url": "https://huggingface.co/KarthikRaj666/CS2-YOLO-V1",
+  "created_at": "2026-09-03T12:39:22.000Z",
+  "updated_at": "2026-09-03T12:53:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "computer-vision",
+    "yolo",
+    "yolo26",
+    "cs2",
+    "counter-strike-2",
+    "gaming",
+    "esports",
+    "base_model:Ultralytics/YOLO26",
+    "base_model:finetune:Ultralytics/YOLO26",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Ultralytics/YOLO26",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "要怎么委婉拒绝相亲对象 ? - 知乎",
+      "url": "https://www.zhihu.com/question/9868996496",
+      "snippet": "Jan 17, 2025 · 当我们对相亲对象不满意，拒绝对方又是件敏感的事情，尤其是双方父母介绍认识的，贸然、突兀、简单地拒绝，怕伤 …"
+    },
+    {
+      "title": "如何委婉的拒绝相亲对象？又不拂长辈的面子。？ - 知乎",
+      "url": "https://www.zhihu.com/question/386298947",
+      "snippet": "不耽误你的，相亲对象的，和介绍人的时间。 相亲不是谈恋爱，是以结婚为目的的，以效率为原则的，以双方背景匹配为基础的活动 …"
+    },
+    {
+      "title": "相亲后如何巧妙拒绝相亲对象 - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/145980839",
+      "snippet": "相亲后如果觉得对象不适合你，那么要早点跟对方提出来，说出自己的想法，不能由于不好意思开口而一直不说出来，这样对方也会误 …"
+    },
+    {
+      "title": "看不上相亲对象，可以用以下7种方式拒绝，别不懂",
+      "url": "https://www.sohu.com/a/894429013_122165187",
+      "snippet": "May 16, 2025 · 通过真诚地表达感谢与拒绝、避免接受贵重礼物、明确态度、强调个人原因、选择合适的时机和场合、提供积极的建议 …"
+    },
+    {
+      "title": "看不上相亲对象，可以用以下3种方式拒绝，别不懂 - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/718690109",
+      "snippet": "可是，相亲后，当你发现相亲对象不是理想的类型，想要拒绝对方，又成了一门学问。 那么，如何体面而又礼貌地拒绝相亲对象呢？ …"
+    }
+  ]
+}

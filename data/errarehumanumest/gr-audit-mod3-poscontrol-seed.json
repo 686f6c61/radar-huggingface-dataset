@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ErrareHumanumEst/gr-audit-mod3-poscontrol-seed",
+  "slug": "errarehumanumest-gr-audit-mod3-poscontrol-seed",
+  "author": "ErrareHumanumEst",
+  "url": "https://huggingface.co/ErrareHumanumEst/gr-audit-mod3-poscontrol-seed",
+  "created_at": "2026-09-03T13:51:54.000Z",
+  "updated_at": "2026-09-03T14:14:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 604020348,
+  "storage_human": "604 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Corso di laurea magistrale in Diritto dell'innovazione per l'impresa e ...",
+      "url": "https://www.jus.unipi.it/didattica/corsi-di-laurea/diritto-innovazione-per-impresa-e-istituzioni/",
+      "snippet": "Per soddisfare le esigenze legate alla crescente digitalizzazione e alla profonda trasformazione del mondo del lavoro, il corso di …"
+    },
+    {
+      "title": "Diritto dell'innovazione per l'impresa e le istituzioni ~ UNIPI",
+      "url": "https://www.unipi.it/didattica/corsi/lauree-magistrali/diritto-dell-innovazione-per-l-impresa-e-le-istituzioni-wdir-lm/",
+      "snippet": "Per accedere al corso di laurea magistrale in Diritto dell'Innovazione per l'Impresa e le Istituzioni è richiesta una laurea o un diploma …"
+    },
+    {
+      "title": "Presentazione - Dipartimento di Giurisprudenza",
+      "url": "https://www.jus.unipi.it/didattica/corsi-di-laurea/diritto-innovazione-per-impresa-e-istituzioni/presentazione/",
+      "snippet": "I laureati del corso dovranno sapere innovare i contesti privati e pubblici in forte cambiamento e mostrare elevata capacità di …"
+    },
+    {
+      "title": "Course Catalogue - UNIPI",
+      "url": "https://unipi.coursecatalogue.cineca.it/corsi/2025/11539",
+      "snippet": "Per accedere al corso di laurea magistrale in Diritto dell'Innovazione per l'Impresa e le Istituzioni è richiesta una laurea o un diploma …"
+    },
+    {
+      "title": "Course Catalogue - UNIPI",
+      "url": "https://unipi.coursecatalogue.cineca.it/corsi/2023/11226",
+      "snippet": "Per accedere al corso di laurea magistrale in Diritto dell'Innovazione per l'Impresa e le Istituzioni è richiesta una laurea o un diploma …"
+    }
+  ]
+}

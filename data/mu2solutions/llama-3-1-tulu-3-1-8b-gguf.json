@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mu2solutions/Llama-3.1-Tulu-3.1-8B-GGUF",
+  "slug": "mu2solutions-llama-3-1-tulu-3-1-8b-gguf",
+  "author": "mu2solutions",
+  "url": "https://huggingface.co/mu2solutions/Llama-3.1-Tulu-3.1-8B-GGUF",
+  "created_at": "2026-09-03T15:19:01.000Z",
+  "updated_at": "2026-09-03T15:26:15.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "allenai",
+    "tulu",
+    "text-generation",
+    "base_model:allenai/Llama-3.1-Tulu-3.1-8B",
+    "base_model:quantized:allenai/Llama-3.1-Tulu-3.1-8B",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030326848,
+  "parameters_human": "8.03B",
+  "storage_bytes": 13461623040,
+  "storage_human": "13.5 GB",
+  "base_model": "allenai/Llama-3.1-Tulu-3.1-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI Platform",
+      "url": "https://platform.openai.com/login/",
+      "snippet": "Build on the OpenAI API Platform Sign up or login with an OpenAI account to build with the OpenAI API."
+    },
+    {
+      "title": "allenai/Llama-3.1-Tulu-3-8B · Hugging Face",
+      "url": "https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B",
+      "snippet": "A newer version of this model is available: allenai/Llama-3.1-Tulu-3.1-8B"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI - OpenAI",
+      "url": "https://platform.openai.com/onboarding?app=chat&callbackHost=chatgpt.com",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "allenai/Llama-3.1-Tulu-3-8B-DPO · Hugging Face",
+      "url": "https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-DPO",
+      "snippet": "Instructions to use allenai/Llama-3.1-Tulu-3-8B-DPO with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use allenai/Llama-3.1-Tulu-3-8B-DPO with Transformers:"
+    },
+    {
+      "title": "How can I contact support? - OpenAI Help Center",
+      "url": "https://help.openai.com/en/articles/6614161-how-can-i-contact-support",
+      "snippet": "You can contact OpenAI Support by opening the chat bubble icon displayed at the bottom-right of help.openai.com. When you start a …"
+    }
+  ]
+}

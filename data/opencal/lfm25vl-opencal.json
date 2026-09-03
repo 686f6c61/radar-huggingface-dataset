@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "opencal/lfm25vl-opencal",
+  "slug": "opencal-lfm25vl-opencal",
+  "author": "opencal",
+  "url": "https://huggingface.co/opencal/lfm25vl-opencal",
+  "created_at": "2026-09-03T19:21:21.000Z",
+  "updated_at": "2026-09-03T19:27:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "lfm2_vl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1589643282,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "GitHub - computed-axial-lithography/OpenCAL-Firmware: Opensource CAL 3D ...",
+      "url": "https://github.com/computed-axial-lithography/OpenCAL-Firmware",
+      "snippet": "OpenCAL — Open-Source Computed Axial Lithography Software OpenCAL is open-source software for building and operating a Computed Axial Lithography (CAL) 3D printer — a volumetric, layer-less resin printing technique. It is designed to run headless on a Raspberry Pi 5 and is controlled through a hardware LCD/encoder interface."
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "GitHub - tranzmatt/OpenCAL: Opensource CAL 3D printer with ...",
+      "url": "https://github.com/tranzmatt/OpenCAL",
+      "snippet": "OpenCAL — Open-Source Computed Axial Lithography Software OpenCAL is open-source software for building and operating a Computed Axial Lithography (CAL) 3D printer — a volumetric, layer-less resin printing technique. It is designed to run headless on a Raspberry Pi 5 and is controlled through a hardware LCD/encoder interface."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "Facebook creator Jakethejuice is fired up by the US Open and giving tennis a (trick) shot. If you also have tennis fever, Facebook …"
+    }
+  ]
+}

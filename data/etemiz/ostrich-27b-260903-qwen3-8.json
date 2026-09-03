@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "etemiz/Ostrich-27B-260903-Qwen3.8",
+  "slug": "etemiz-ostrich-27b-260903-qwen3-8",
+  "author": "etemiz",
+  "url": "https://huggingface.co/etemiz/Ostrich-27B-260903-Qwen3.8",
+  "created_at": "2026-09-01T16:55:03.000Z",
+  "updated_at": "2026-09-03T12:51:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "#health",
+    "#nutrition",
+    "#medicinalherbs",
+    "#fasting",
+    "#faith",
+    "#healing",
+    "#bitcoin",
+    "#nostr",
+    "aha",
+    "beneficial",
+    "based",
+    "aligned",
+    "abliterated",
+    "uncensored",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55577993328,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "28 Best Outlook Calendar Tips & Tricks to Use in 2025! - CiraSync",
+      "url": "https://cirasync.com/blog-articles/outlook-calendar-tips-and-tricks/",
+      "snippet": "Jan 28, 2025 · Microsoft Outlook is an excellent tool for managing your calendars and other information. And you will improve your …"
+    },
+    {
+      "title": "Mastering Email: How To Schedule An Email in Outlook",
+      "url": "https://plusvibe.ai/blog/schedule-email-outlook",
+      "snippet": "Oct 17, 2024 · Understanding Email Scheduling How to Schedule an Email in Outlook (Step-by-Step Guide) Troubleshooting …"
+    },
+    {
+      "title": "Create a meeting agenda with Copilot in Outlook | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/outlook/copilot-outlook/create-a-meeting-agenda-with-copilot-in-outlook",
+      "snippet": "Show me how schedule a meeting in Outlook. Create a meeting agenda with Copilot in Outlook for me. Copilot can help you create …"
+    },
+    {
+      "title": "Find suitable times and schedule meetings with Outlook’s Scheduling ...",
+      "url": "https://www.cu.edu/blog/tech-tips/find-suitable-times-and-schedule-meetings-outlook%E2%80%99s-scheduling-assistant",
+      "snippet": "Sep 22, 2025 · Outlook’s Scheduling Assistant helps you easily see your colleagues’ availability so you can schedule meetings at a …"
+    },
+    {
+      "title": "Create or schedule an online meeting in Outlook for Windows",
+      "url": "https://support.microsoft.com/en-us/outlook/create-or-schedule-an-online-meeting-in-outlook-for-windows",
+      "snippet": "You can use Outlook for Windows to schedule an online meeting using either Skype for Business or Microsoft Teams, depending on …"
+    }
+  ]
+}

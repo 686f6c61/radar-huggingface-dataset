@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hsanyyasyn97gmail/cosmos-v2",
+  "slug": "hsanyyasyn97gmail-cosmos-v2",
+  "author": "hsanyyasyn97gmail",
+  "url": "https://huggingface.co/hsanyyasyn97gmail/cosmos-v2",
+  "created_at": "2026-09-03T13:37:26.000Z",
+  "updated_at": "2026-09-03T13:38:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074937978,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eon next - MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/6406159/eon-next",
+      "snippet": "Nov 25, 2022 · Hello, have been trying to get onto Eon Next website since last night and all i get is a white page - I am wondering if it …"
+    },
+    {
+      "title": "Cosmos-Reason2 — Cosmos - NVIDIA Documentation Hub",
+      "url": "https://docs.nvidia.com/cosmos/latest/reason2/index.html",
+      "snippet": "Cosmos-Reason2 # Cosmos-Reason2 is an open , customizable, reasoning vision language model (VLM) for physical AI and robotics. It enables robots and vision AI agents to reason like humans, using prior knowledge, physics understanding, and common sense to understand and act in the real world."
+    },
+    {
+      "title": "Eon.Next statements - MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/6569798/eon-next-statements",
+      "snippet": "Nov 22, 2024 · I seem to have endless trouble trying to get Eon.next to give me any statements. It took months for them to generate …"
+    },
+    {
+      "title": "KOSMOS-2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/kosmos-2",
+      "snippet": "The KOSMOS-2 model was proposed in Kosmos-2: Grounding Multimodal Large Language Models to the World by Zhiliang Peng, Wenhui Wang, Li Dong, Yaru Hao, Shaohan Huang, Shuming Ma, Furu Wei. KOSMOS-2 is a Transformer-based causal language model and is trained using the next-word prediction task on a web-scale dataset of grounded image-text pairs GRIT."
+    },
+    {
+      "title": "Eon Next - repeated difficulties signing in - MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/6455275/eon-next-repeated-difficulties-signing-in",
+      "snippet": "Jun 24, 2023 · Hey, its bill payment day and suddenly I can't access my Eon Next account. I've tried accessing the account using …"
+    }
+  ]
+}

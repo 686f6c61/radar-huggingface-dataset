@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "srihar2k3/adaptive-splat",
+  "slug": "srihar2k3-adaptive-splat",
+  "author": "srihar2k3",
+  "url": "https://huggingface.co/srihar2k3/adaptive-splat",
+  "created_at": "2026-09-03T12:40:31.000Z",
+  "updated_at": "2026-09-03T12:45:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6023694371,
+  "storage_human": "6.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Telegram Desktop",
+      "url": "https://desktop.telegram.org/",
+      "snippet": "Experience Telegram on your computer in a swift and seamless way."
+    },
+    {
+      "title": "تيليجرام سطح المكتب - Telegram Desktop",
+      "url": "https://desktop.telegram.org/?setln=ar",
+      "snippet": "هذا البرنامج متوفر تحت ترخيص GPL v3. النص البرمجي متوفر على GitHub. تابعنا على تويتر النسخ التجريبية"
+    },
+    {
+      "title": "Telegram Desktop",
+      "url": "https://desktop.telegram.org/?setln=fr",
+      "snippet": "Expérimentez Telegram sur votre ordinateur de manière rapide et fluide."
+    },
+    {
+      "title": "Telegram Desktop",
+      "url": "https://desktop.telegram.org/?setln=es",
+      "snippet": "Experimenta Telegram en tu computadora de una manera rápida y fluida."
+    },
+    {
+      "title": "Telegram Desktop",
+      "url": "https://desktop.telegram.org/?setln=de",
+      "snippet": "Benutze Telegram schnell und unkompliziert auf deinem Computer."
+    }
+  ]
+}

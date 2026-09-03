@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "StarsMakeGalaxy/qwen_finetune_16bit",
+  "slug": "starsmakegalaxy-qwen_finetune_16bit",
+  "author": "StarsMakeGalaxy",
+  "url": "https://huggingface.co/StarsMakeGalaxy/qwen_finetune_16bit",
+  "created_at": "2026-09-03T12:33:07.000Z",
+  "updated_at": "2026-09-03T12:34:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:finetune:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9339817439,
+  "storage_human": "9.3 GB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download — Blender",
+      "url": "https://www.blender.org/download/",
+      "snippet": "Aug 25, 2026 · Blender evolves every day. Experimental builds have the latest features and while there might be cool bug fixes too, …"
+    },
+    {
+      "title": "Blender - The Free and Open Source 3D Creation Software",
+      "url": "https://www.blender.org/",
+      "snippet": "Blender includes production ready camera and object tracking. Allowing you to import raw footage, track the footage, mask areas and …"
+    },
+    {
+      "title": "Blender 5.2 - Professional 3D Creation Software",
+      "url": "https://studio-blender.co.com/",
+      "snippet": "Download Blender 5.2 free. The Freedom to Create. Open source 3D creation suite for modeling, animation, rendering and VFX."
+    },
+    {
+      "title": "Blender (software) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Blender_(software)",
+      "snippet": "On September 7, 2002, it was announced that they had collected enough funds and would release the Blender source code. Today, …"
+    },
+    {
+      "title": "Blender - Free download and install on Windows | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/9pp3c07gtvrh",
+      "snippet": "Blender is the Free and Open Source 3D creation suite. It supports the entirety of the 3D pipeline—modeling, sculpting, rigging, 3D …"
+    }
+  ]
+}

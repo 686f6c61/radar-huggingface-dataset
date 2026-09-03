@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Farhan45876/mavro-ai-qwen35-4b-lora",
+  "slug": "farhan45876-mavro-ai-qwen35-4b-lora",
+  "author": "Farhan45876",
+  "url": "https://huggingface.co/Farhan45876/mavro-ai-qwen35-4b-lora",
+  "created_at": "2026-09-03T12:43:56.000Z",
+  "updated_at": "2026-09-03T12:43:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "mavro-ai",
+    "synereos",
+    "qwen3.5",
+    "lora",
+    "bangla",
+    "tool-use",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104963033,
+  "storage_human": "105 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "edge浏览器不能播放网页视频怎么解决 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/5d6edee24615aad8eadeecdd.html",
+      "snippet": "Feb 8, 2020 · edge浏览器不能播放网页视频怎么解决,我们的EDGE浏览器如果不能正常播放视频的话可能是权限没有开启，下面分享 …"
+    },
+    {
+      "title": "Win10系统如何调整屏幕亮度【三种方法】-百度经验",
+      "url": "https://jingyan.baidu.com/article/fcb5aff7507306edab4a715d.html",
+      "snippet": "Dec 22, 2016 · Win10系统是微软推出的最新一代操作系统，相信很多网友已经使用上了。从Win8开始，微软就有把PC操作系统向移 …"
+    },
+    {
+      "title": "Telegram v6.9.3 繁體中文 手機版、電腦版下載 (Android,iPhone,Wi...",
+      "url": "https://123.briian.com/forum.php?mod=viewthread&tid=10226",
+      "snippet": "Jan 2, 2020 · 軟體名稱：Telegram Messenger 軟體版本：6.9.3 軟體語言：英文版+繁體中文化 軟體性質：免費軟體 檔案大小：42.9 …"
+    },
+    {
+      "title": "LINE、MSN、Yahoo!即時通訊 【狂人論壇】",
+      "url": "https://123.briian.com/forum.php?mod=forumdisplay&fid=5",
+      "snippet": "Mar 2, 2025 · LINE、MSN、Yahoo!即時通訊 ,【狂人論壇】 本版面 僅提供文章瀏覽與下載，一般使用者不可直接回文或發表新文章。 …"
+    },
+    {
+      "title": "apk文件怎么在电脑上打开 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/2d5afd69b95401c5a3e28e52.html",
+      "snippet": "Dec 24, 2019 · apk是安卓系统的应用文件格式，有时候使用apk文件的时候，要在电脑上打开，那么apk文件怎么在电脑上打开呢，现 …"
+    }
+  ]
+}

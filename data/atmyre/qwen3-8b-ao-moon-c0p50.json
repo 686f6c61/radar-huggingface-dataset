@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Atmyre/qwen3-8b-ao-moon-c0p50",
+  "slug": "atmyre-qwen3-8b-ao-moon-c0p50",
+  "author": "Atmyre",
+  "url": "https://huggingface.co/Atmyre/qwen3-8b-ao-moon-c0p50",
+  "created_at": "2026-09-03T14:23:20.000Z",
+  "updated_at": "2026-09-03T14:23:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "activation-oracle",
+    "interpretability",
+    "qwen3",
+    "concept-moon",
+    "arxiv:2512.15674",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 698419728,
+  "storage_human": "698 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Difensore regionale. Difende i tuoi diritti",
+      "url": "https://www.difensoreregionale.lombardia.it/wps/portal/site/difensore-regionale",
+      "snippet": "Entro il 31 marzo di ogni anno, il Difensore invia al Consiglio regionale ed alla Giunta regionale, la relazione sull’attività svolta …"
+    },
+    {
+      "title": "Difesa Civica - difensoreregionale.lombardia.it",
+      "url": "https://www.difensoreregionale.lombardia.it/wps/portal/site/difensore-regionale/competenze/difesa-civica",
+      "snippet": "Il Difensore regionale può aiutarti su questioni riguardanti i rapporti con le Istituzioni: accesso agli atti e partecipazione al …"
+    },
+    {
+      "title": "difensoricivici_lombardia.xls - Ledha",
+      "url": "https://www.ledha.it/allegati/LED_t2_notizie_allegati/76/FILE_Allegato.pdf",
+      "snippet": "Elenco Difensori Civici - Regione Lombardia titolo Sig. Avv. Dott.ssa Avv. Avv. Dott. Prof. Avv. Avv. Avv. Sig. Sig. Dott.ssa Avv. Avv. …"
+    },
+    {
+      "title": "Ufficio Supporto giuridico agli Organi di Tutela e Garanzia regionale",
+      "url": "https://www.consiglio.regione.lombardia.it/wps/portal/crl/home/istituzione/uffici/ufficio-supporto-giuridico-agli-organi-di-tutela-e-garanzia-regionale",
+      "snippet": "Competenze e aree di attività dell'Ufficio: • Supporto tecnico e giuridico al Difensore regionale. • Supporto tecnico e giuridico al …"
+    },
+    {
+      "title": "Disciplina del Difensore regionale",
+      "url": "https://normelombardia.consiglio.regione.lombardia.it/normelombardia/Accessibile/esportaDoc.aspx?type=pdf&iddoc=lr002010120600018",
+      "snippet": "La presente legge regola e disciplina l'attività e l'esercizio delle funzioni del Difensore regionale, ai sensi dell'articolo 61 dello Statuto …"
+    }
+  ]
+}

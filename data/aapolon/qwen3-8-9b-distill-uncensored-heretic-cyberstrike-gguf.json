@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Aapolon/Qwen3.8-9B-Distill-Uncensored-Heretic-CyberStrike-GGUF",
+  "slug": "aapolon-qwen3-8-9b-distill-uncensored-heretic-cyberstrike-gguf",
+  "author": "Aapolon",
+  "url": "https://huggingface.co/Aapolon/Qwen3.8-9B-Distill-Uncensored-Heretic-CyberStrike-GGUF",
+  "created_at": "2026-09-03T10:55:18.000Z",
+  "updated_at": "2026-09-03T12:20:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "dataset:oyildirim/cyberstrike-sft-120k",
+    "base_model:petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
+    "base_model:quantized:petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 5780090272,
+  "storage_human": "5.8 GB",
+  "base_model": "petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eliott : Signification, origine, personnalité et popularité du nom de ...",
+      "url": "https://www.kingpet.fr/name/e/eliott",
+      "snippet": "Les propriétaires de chiens et chats nommés Eliott décrivent souvent leur animal comme ayant une personnalité dynamique et …"
+    },
+    {
+      "title": "Eliot : Signification, origine, personnalité et popularité du nom de ...",
+      "url": "https://www.kingpet.fr/name/e/eliot",
+      "snippet": "Les chiens de race comme les Labrador Retrievers, les Golden Retrievers et les Beagles sont souvent associés au nom Eliot. Leur …"
+    },
+    {
+      "title": "Faisan d'Elliot — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Faisan_d%27Elliot",
+      "snippet": "Le mâle commence par un contact visuel avec la femelle, la fixant attentivement à plusieurs mètres. Puis il se dresse sur ses pattes, …"
+    },
+    {
+      "title": "Faisan d'Elliot - Syrmaticus ellioti - Oiseaux.net",
+      "url": "https://www.oiseaux.net/oiseaux/faisan.d.elliot.html",
+      "snippet": "Aug 4, 2026 · Son aire de répartition se situe plutôt en basse et moyenne altitude entre 200 et 1900 mètres. Les principaux habitats …"
+    },
+    {
+      "title": "Elliott : Signification, origine, personnalité et popularité du nom de ...",
+      "url": "https://www.kingpet.be/name/e/elliott",
+      "snippet": "Le nom Elliott est souvent associé à des personnalités charmantes et dévouées. Les chiens ou chats portant ce nom sont …"
+    }
+  ]
+}

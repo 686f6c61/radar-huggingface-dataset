@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "livles/pol",
+  "slug": "livles-pol",
+  "author": "livles",
+  "url": "https://huggingface.co/livles/pol",
+  "created_at": "2026-09-03T19:14:37.000Z",
+  "updated_at": "2026-09-03T19:25:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "generated_from_trainer",
+    "base_model:google/byt5-small",
+    "base_model:finetune:google/byt5-small",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 299637760,
+  "parameters_human": "299.6M",
+  "storage_bytes": 3595719881,
+  "storage_human": "3.6 GB",
+  "base_model": "google/byt5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deezer | Écoute de la musique en ligne | App de musique",
+      "url": "https://www.deezer.com/fr/",
+      "snippet": "Télécharge Deezer, notre app de streaming, crée ton compte et écoute ta musique gratuitement en accédant à des millions de titres, …"
+    },
+    {
+      "title": "livles/csb-pol · Hugging Face",
+      "url": "https://huggingface.co/livles/csb-pol",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Deezer | Listen to music online | Music streaming app",
+      "url": "https://www.deezer.com/en/",
+      "snippet": "Discover our streaming app Deezer! Create an account, listen to your music for free and access millions of songs, playlists and …"
+    },
+    {
+      "title": "Fine-tuned Models for livles/csb-pol-byte-sent – Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Afinetune%3Alivles%2Fcsb-pol-byte-sent",
+      "snippet": "Explore machine learning models. Active filters: livles/csb-pol-byte-sent"
+    },
+    {
+      "title": "Deezer for Creators",
+      "url": "https://creators.deezer.com/",
+      "snippet": "Why choose Deezer for Creators? Show the world who you are Customize your profile so fans can get to know you! Add a bio and a …"
+    }
+  ]
+}

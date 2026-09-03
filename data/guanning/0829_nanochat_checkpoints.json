@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "guanning/0829_nanochat_checkpoints",
+  "slug": "guanning-0829_nanochat_checkpoints",
+  "author": "guanning",
+  "url": "https://huggingface.co/guanning/0829_nanochat_checkpoints",
+  "created_at": "2026-09-03T16:22:14.000Z",
+  "updated_at": "2026-09-03T17:19:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "training-dynamics",
+    "checkpoints",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1271481084808,
+  "storage_human": "1271.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Plazentahistologie :: Obsgyn-Wiki",
+      "url": "https://www.obsgyn-wiki.ch/geburtszentrum/fachliche-weisungen/plazentahistologie",
+      "snippet": "Jul 12, 2025 · Bei Indikation für eine histopathologische Untersuchung muss das Einverständnis der Eltern dazu (mündlich) eingeholt …"
+    },
+    {
+      "title": "S2k-Leitlinie und",
+      "url": "https://register.awmf.org/assets/guidelines/035-005l_S2k_Pathomorphologische-Untersuchung-der-Plazenta_2026-05.pdf",
+      "snippet": "Sie kann einhergehen mit oder ohne eine entzündliche Mitbeteiligung der fetalen Gefäße in der Chorionplatte (Choriovaskulitis), der …"
+    },
+    {
+      "title": "Pathology Outlines - Nonmolar aneuploidy",
+      "url": "https://www.pathologyoutlines.com/topic/placentatrisomy.html",
+      "snippet": "Nov 1, 2011 · Accessed June 25th, 2026."
+    },
+    {
+      "title": "Anatomie - Histologie - UZH",
+      "url": "https://e-learn.anatomy.uzh.ch/anatomie/Histologie/histo_HTML/histo_S_Genital/genital_f_27_45.html",
+      "snippet": "Das Bild vermittelt einen Eindruck vom dicht gefügten und verzweigten Zottenbaum der Plazenta. Man beachte die unterschiedlich …"
+    },
+    {
+      "title": "„Checkliste für den histopathologischen Befu",
+      "url": "https://register.awmf.org/assets/guidelines/035_D_Ges_fuer_Pathologie/035-005a3_S2k_Pathomorphologische-Untersuchung-der-Plazenta_2026-05.pdf",
+      "snippet": "Checkliste zur Befundung zur „Pathomorphologische Untersuchung der Plazenta“ nach S2K-AWMF-LL 035/005 V1.0"
+    }
+  ]
+}

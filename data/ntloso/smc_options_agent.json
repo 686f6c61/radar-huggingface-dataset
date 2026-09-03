@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ntloso/smc_options_agent",
+  "slug": "ntloso-smc_options_agent",
+  "author": "ntloso",
+  "url": "https://huggingface.co/ntloso/smc_options_agent",
+  "created_at": "2026-09-03T13:40:06.000Z",
+  "updated_at": "2026-09-03T13:40:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "steam正版网站是什么? - 知乎",
+      "url": "https://www.zhihu.com/question/509353816",
+      "snippet": "—————————— 浏览这个回答的人好多，看来有不少新玩家朋友加入steam，在此添加一些注意事项 1.确保你下的是正版steam. …"
+    },
+    {
+      "title": "Qui a vu mes stories Instagram [Résolu] - Instagram",
+      "url": "https://forums.commentcamarche.net/forum/affich-36452377-instagram-je-ne-peux-plus-voir-qui-a-vu-mes-story-instants",
+      "snippet": "Bonjour, Je ne peux plus voir qui a vu mes story sur Instagram J’ai éteins mon tel, déconnexion, supp l’app rien n’y fait Alors que sur …"
+    },
+    {
+      "title": "Guide - Instagram - CCM",
+      "url": "https://it.ccm.net/faq/instagram-550",
+      "snippet": "Profilo Instagram hackerato: un recupero semplificato Instagram continua la sua guerra contro la pirateria. La piattaforma ha... Per …"
+    },
+    {
+      "title": "这12个视频解析下载地址，网上视频均可下载，视频素材多到手软",
+      "url": "https://www.zhihu.com/tardis/zm/art/503689377",
+      "snippet": "这个视频解析网站比较专业，除了拥有在线下载视频功能外，还拥有Windows和Mac的客户端，旗下也拥有录制屏幕视频和DVD刻录等 …"
+    },
+    {
+      "title": "Impossible de voir les messages instagram [Résolu] - Instagram",
+      "url": "https://forums.commentcamarche.net/forum/affich-38000829-impossible-de-voir-les-messages-instagram",
+      "snippet": "Feb 17, 2024 · Bonjour, cela va faire une heure que je ne peux pas ouvrir ni même voir mes discussions Instagram car un …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_generator_AS_confidence_numina_qwen7b_15",
+  "slug": "ishikaa-acquisition_generator_as_confidence_numina_qwen7b_15",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_numina_qwen7b_15",
+  "created_at": "2026-09-03T11:27:09.000Z",
+  "updated_at": "2026-09-03T11:29:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 30473926528,
+  "storage_human": "30.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les Fiefs de Lagrange 2020 - Millesima.be",
+      "url": "https://www.millesima.be/les-fiefs-de-lagrange-2020.html",
+      "snippet": "Le 2020 Les Fiefs de Lagrange présente un bouquet très réussi, avec des notes nettes de mûre et de fraise des bois, de tabac …"
+    },
+    {
+      "title": "Les Fiefs de Lagrange 2020 - Saint-Julien - Wijnhuis Christiaens",
+      "url": "https://www.christiaens-wijnhuis.be/nl/producten/rode-wijnen/les-fiefs-de-lagrange-2020-saint-julien-2261/",
+      "snippet": "Het wijnhuis Château Lagrange is een 3e Grand Cru Classé in Saint-Julien. Sinds 1983 is dit magnifieke kasteel met zijn prachtige …"
+    },
+    {
+      "title": "Les Fiefs de Lagrange - Château Lagrange",
+      "url": "https://chateau-lagrange.com/en/les-fiefs-de-lagrange/",
+      "snippet": "Created in 1983 in order to increase the quality of the Grand Vin through a more drastic selection, the second wine of Château …"
+    },
+    {
+      "title": "Koop Les Fiefs de Lagrange 2020 Exclusieve Wijn - Millesima.nl",
+      "url": "https://www.millesima.com/nl/les-fiefs-de-lagrange-2020.html",
+      "snippet": "De 2020 Les Fiefs de Lagrange heeft een zeer geslaagd bouquet met frisse braam- en bosaardbeitonen, versgerolde tabak en lichte …"
+    },
+    {
+      "title": "2020 - Château Lagrange - Les Fiefs de Lagrange - Saint-Julien AOC",
+      "url": "https://www.hetwijnhuis.be/product/salfdg0720.htm",
+      "snippet": "De vinificatie gebeurt in een indrukwekkende set van 63 thermoreguleerde roestvrijstalen tanks van 66 tot 220 hl gedurende perioden …"
+    }
+  ]
+}

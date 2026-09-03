@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "DCtheMannn/HELVETE-X-Q4_K_M-GGUF",
+  "slug": "dcthemannn-helvete-x-q4_k_m-gguf",
+  "author": "DCtheMannn",
+  "url": "https://huggingface.co/DCtheMannn/HELVETE-X-Q4_K_M-GGUF",
+  "created_at": "2026-09-03T18:10:03.000Z",
+  "updated_at": "2026-09-03T18:10:35.000Z",
+  "license": "helpingai",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "HelpingAI",
+    "HELVETE-X",
+    "NSFW",
+    "Unfiltered-AI",
+    "Advanced-EI",
+    "not-for-all-audiences",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "base_model:HelpingAI/HELVETE-X",
+    "base_model:quantized:HelpingAI/HELVETE-X",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10211381248,
+  "parameters_human": "10.21B",
+  "storage_bytes": 6229006912,
+  "storage_human": "6.2 GB",
+  "base_model": "HelpingAI/HELVETE-X",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mercedes-Benz France | Achat voitures neuves et occasions",
+      "url": "https://www.mercedes-benz.fr/",
+      "snippet": "La parfaite symbiose entre luxe et innovations technologiques : bienvenue chez Mercedes-Benz France. Berline, Break, Coupé, …"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Aquantized%3AHelpingAI%2FHELVETE-X",
+      "snippet": "Model Tree Reset HelpingAI/HELVETE-X Quantizations Inference status Reset Inference status"
+    },
+    {
+      "title": "Véhicules pour particuliers : Tous nos modèles | Mercedes-Benz",
+      "url": "https://www.mercedes-benz.fr/passengercars/models.html",
+      "snippet": "Plutôt Berline, Break, SUV ou Cabriolet ? 100% électrique, Hybride Rechargeable ou thermique ? Découvrez les derniers modèles …"
+    },
+    {
+      "title": "piuslee/HELVETE-X-Q4_K_M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/piuslee/HELVETE-X-Q4_K_M-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Véhicule d'occasion Mercedes-Benz Certified",
+      "url": "https://occasion.mercedes-benz.fr/",
+      "snippet": "Trouvez votre véhicule d'occasion Mercedes-Benz Certified Auprès des distributeurs agreéé Mercedes-Benz Qualité certifiée"
+    }
+  ]
+}

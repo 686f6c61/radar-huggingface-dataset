@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mehta2006/classification-sandbox",
+  "slug": "mehta2006-classification-sandbox",
+  "author": "mehta2006",
+  "url": "https://huggingface.co/mehta2006/classification-sandbox",
+  "created_at": "2026-09-03T14:44:11.000Z",
+  "updated_at": "2026-09-03T14:44:16.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail",
+      "url": "https://mail.google.com/mail?hl=en",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "mehta2006 (Arjun Mehta) - Hugging Face",
+      "url": "https://huggingface.co/mehta2006",
+      "snippet": "User profile of Arjun Mehta on Hugging Face"
+    },
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail/u/0/",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "mehta2006 (Arjun Mehta) - Hugging Face",
+      "url": "https://huggingface.co/mehta2006/datasets",
+      "snippet": "mehta2006's datasets1 Sort: Recently updated mehta2006/pointcloud-text-dataset Updated about 3 hours ago"
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/login?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "avik112/ps26094-lora",
+  "slug": "avik112-ps26094-lora",
+  "author": "avik112",
+  "url": "https://huggingface.co/avik112/ps26094-lora",
+  "created_at": "2026-09-03T19:18:05.000Z",
+  "updated_at": "2026-09-03T19:18:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeux gratuits - Jouez aux meilleurs jeux sur Jeux.fr",
+      "url": "https://www.jeux.fr/",
+      "snippet": "Jouez à tous les jeux gratuits sur jeux.fr. Des milliers de jeux en ligne à découvrir pour les enfants et les adultes sur Jeux.fr"
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,876 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "Jeux de Mahjong - Jouer gratuit Mahjong online sur Jeux.fr",
+      "url": "https://www.jeux.fr/jeux/mahjong?page=1",
+      "snippet": "Jouez aux meilleurs jeux de mahjong gratuits en ligne ! Découvrez le mahjong solitaire et connect sans téléchargement. Un défi zen …"
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "Jeux de Carte Solitaire - Jouer Jeux de Solitaire sur Jeux.fr",
+      "url": "https://www.jeux.fr/jeux/solitaire?page=1",
+      "snippet": "Des dizaines de super jeux de carte solitaire sont disponibles sur Jeux.fr ! Ces jeux de cartes difficiles sont gratuits et très amusants."
+    }
+  ]
+}

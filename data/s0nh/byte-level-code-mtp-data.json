@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "s0nh/byte-level-code-mtp-data",
+  "slug": "s0nh-byte-level-code-mtp-data",
+  "author": "s0nh",
+  "url": "https://huggingface.co/s0nh/byte-level-code-mtp-data",
+  "created_at": "2026-09-03T19:29:47.000Z",
+  "updated_at": "2026-09-03T19:32:39.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "code",
+    "python",
+    "byte-level",
+    "reproducibility",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30649736,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube で制限付きモードをオンまたはオフにする - パソコン",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube で制限付きモードをオンまたはオフにする 制限付きモードは、YouTube で使用できるオプション設定です。 この機能は …"
+    },
+    {
+      "title": "Suno Hack Exposes Massive Music Dataset Through AI Music App Source ...",
+      "url": "https://www.itechpost.com/articles/236709/20260716/suno-hack-exposes-massive-music-dataset-through-ai-music-app-source-code-leak.htm",
+      "snippet": "Suno hack exposes a massive AI training dataset after a source code leak. The AI music app’s data breach revealed internal files, scraped music sources, and customer information."
+    },
+    {
+      "title": "YouTube ความช่วยเหลือ",
+      "url": "https://support.google.com/youtube/?hl=th",
+      "snippet": "ศูนย์ช่วยเหลืออย่างเป็นทางการของ YouTube ที่คุณสามารถพบเคล็ดลับและบทแนะนำเกี่ยวกับการใช้งานผลิตภัณฑ์ รวมทั้งคำตอบสำหรับ ..."
+    },
+    {
+      "title": "GitHub - facebookresearch/blt: Code for BLT research paper",
+      "url": "https://github.com/facebookresearch/blt",
+      "snippet": "Patches are segmented dynamically based on the entropy of the next byte, allocating more compute and model capacity where there is more data complexity. The BLT architecture includes new attention mechanisms to maximize the information flow between byte and patch hidden representations and a new type of byte-sequence memory."
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    }
+  ]
+}

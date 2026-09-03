@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "codewithdark/wildtrack-c1",
+  "slug": "codewithdark-wildtrack-c1",
+  "author": "codewithdark",
+  "url": "https://huggingface.co/codewithdark/wildtrack-c1",
+  "created_at": "2026-09-03T16:44:37.000Z",
+  "updated_at": "2026-09-03T16:44:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89614269,
+  "storage_human": "90 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Daily Horoscopes - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/",
+      "snippet": "Read your sign's free horoscope today! Use these expert astrology predictions for your day, week, and month. What does your daily …"
+    },
+    {
+      "title": "Read Your Daily Horoscope! | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/",
+      "snippet": "Read Astrology Answers' online daily horoscopes for your zodiac sign, Tarot readings, article content, Chinese astrology, …"
+    },
+    {
+      "title": "网友调侃 Gemini 为北美大豆包，称其为最蠢 AI，为什么会被诟病难 …",
+      "url": "https://www.zhihu.com/question/2047324900080051711",
+      "snippet": "Jun 8, 2026 · 鉴定为没用过真正的豆包. 试了一次都感觉震惊， Gemini 至少不会胡说八道，豆包ai幻觉和胡编乱造的程度高的吓人. …"
+    },
+    {
+      "title": "怎么看谷歌开始测试 Gemini 3.8 Flash ，谷歌放弃 Pro 了吗？",
+      "url": "https://www.zhihu.com/question/2076773014612586660",
+      "snippet": "6 days ago · Gemini-3.7-Flash不存在这个问题，表达很接地气，读起来特别自然。 如果说Gemini-3.8-Flash确实能够体验明显好 …"
+    },
+    {
+      "title": "NLP 大模型与 CV 大模型的 “大”：同源而殊途的技术范式-云社区-华为云",
+      "url": "https://bbs.huaweicloud.com/blogs/455174",
+      "snippet": "Jun 27, 2025 · 随着多模态大模型（如 GPT-4V、Gemini）的发展，两者正走向技术融合 —— 例如，用语言模型的逻辑推理能力增强 …"
+    }
+  ]
+}

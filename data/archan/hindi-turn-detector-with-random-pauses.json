@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Archan/hindi-turn-detector-with-random-pauses",
+  "slug": "archan-hindi-turn-detector-with-random-pauses",
+  "author": "Archan",
+  "url": "https://huggingface.co/Archan/hindi-turn-detector-with-random-pauses",
+  "created_at": "2026-09-03T16:45:04.000Z",
+  "updated_at": "2026-09-03T16:50:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "turn_detector",
+    "audio-classification",
+    "turn-detection",
+    "hindi",
+    "generated_from_trainer",
+    "hi",
+    "dataset:pipecat-ai/smart-turn-data-v3.2-train",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8000386,
+  "parameters_human": "8.0M",
+  "storage_bytes": 32014849,
+  "storage_human": "32 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail",
+      "url": "https://mail.google.com/mail?hl=en",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    }
+  ]
+}

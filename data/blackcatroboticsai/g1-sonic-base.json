@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "BlackCatRoboticsAI/g1-sonic-base",
+  "slug": "blackcatroboticsai-g1-sonic-base",
+  "author": "BlackCatRoboticsAI",
+  "url": "https://huggingface.co/BlackCatRoboticsAI/g1-sonic-base",
+  "created_at": "2026-09-03T16:13:28.000Z",
+  "updated_at": "2026-09-03T16:19:39.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "humanoid",
+    "unitree-g1",
+    "whole-body-control",
+    "teleoperation",
+    "vla",
+    "nvidia",
+    "locomotion",
+    "manipulation",
+    "arxiv:2511.07820",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2279243936,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porady - Onet.poczta - CCM",
+      "url": "https://pl.ccm.net/faq/onet-poczta-269",
+      "snippet": "Poczta Onet - jak założyć konto e-mail Poczta Onet jest jedną z najbardziej popularnych i darmowych skrzynek... Czytaj dalej"
+    },
+    {
+      "title": "Poczta Onet [Rozwiązany] - CCM",
+      "url": "https://pl.ccm.net/forum/affich-23660-poczta-onet",
+      "snippet": "Apr 3, 2018 · Najlepsza odpowiedź: Hej dzieki za pomoc:) zadzwonilam b mily pan powiedzial ze nr tel jest ale nie bylo prefiksu …"
+    },
+    {
+      "title": "Onet poczta [Rozwiązany] - CCM",
+      "url": "https://pl.ccm.net/forum/affich-22350-onet-poczta",
+      "snippet": "Oct 14, 2017 · Onet Poczta - aplikacja e-mail Do pobrania - Oprogramowanie Poczta Onet - jak założyć konto e-mail Praktyczne …"
+    },
+    {
+      "title": "Nie mogę się zalogować na stare konto Onetu - CCM",
+      "url": "https://pl.ccm.net/forum/affich-24305-nie-moge-sie-zalogowac-na-stare-konto-onetu",
+      "snippet": "witam zapominałem hasła do starego konta onet i nie wiem jak się zalogować"
+    },
+    {
+      "title": "Poczta - Komunikatory / Poczta Forum - CCM",
+      "url": "https://pl.ccm.net/forum/affich-12344-poczta",
+      "snippet": "Poczta Zamknięty biniu52 - 22 sie 2015 o 19:25 Karolina Świdrak - 24 sie 2015 o 10:26 Dzień dobry, Share"
+    }
+  ]
+}

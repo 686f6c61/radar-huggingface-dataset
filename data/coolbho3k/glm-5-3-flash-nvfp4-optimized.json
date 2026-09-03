@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "coolbho3k/GLM-5.3-Flash-NVFP4-Optimized",
+  "slug": "coolbho3k-glm-5-3-flash-nvfp4-optimized",
+  "author": "coolbho3k",
+  "url": "https://huggingface.co/coolbho3k/GLM-5.3-Flash-NVFP4-Optimized",
+  "created_at": "2026-09-03T18:35:42.000Z",
+  "updated_at": "2026-09-03T18:36:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "glm5_next",
+    "vllm",
+    "compressed-tensors",
+    "nvfp4",
+    "fp8",
+    "quantized",
+    "image-text-to-text",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:finetune:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - Κοινότητα της Microsoft",
+      "url": "https://answers.microsoft.com/el-gr/windows/forum/all/facebook/9bb2e2e2-f82c-4983-bfa8-aab9b90df563",
+      "snippet": "Καλησπέρα δεν μπορώ να διαχειριστώ την επαγγελματική μου σελίδα μεσω facebook σε αυτο το κινητο και αντιμετωπιζω πρόβλημα …"
+    },
+    {
+      "title": "zai-org/GLM-5.3-Flash · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/feedback/forum/all/is-there-a-my-verizon-app-for-my-fios-landline/b14b8668-cb10-4d0d-9ecb-51735381e904",
+      "snippet": ""
+    },
+    {
+      "title": "GLM-5.3-Flash - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "snippet": "Model Overview GLM-5.3-Flash is the first native multimodal model in the GLM-5 series, delivering stronger intelligence than GLM-5.2 at an exceptionally low cost. Highly Efficient Hybrid Architecture GLM-5.3-Flash has 320B total parameters with 18B activated."
+    },
+    {
+      "title": "E-Posta Desteği",
+      "url": "https://tr.answers.acer.com/",
+      "snippet": "Bize E-Posta ile Bir Soru Gönderin Destek ekibimize e-posta göndermek için sayfadaki kutuları doldurun ve gönderin. Mesajınıza en …"
+    }
+  ]
+}

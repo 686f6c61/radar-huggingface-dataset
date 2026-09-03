@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "nikitavasilyev/multitask",
+  "slug": "nikitavasilyev-multitask",
+  "author": "nikitavasilyev",
+  "url": "https://huggingface.co/nikitavasilyev/multitask",
+  "created_at": "2026-09-03T19:20:08.000Z",
+  "updated_at": "2026-09-03T19:20:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sky Q ARD Mediathek",
+      "url": "https://community.sky.de/conversations/sky-q-sky-q-mini/sky-q-ard-mediathek/68364b74170e725f31772b08",
+      "snippet": "Nov 10, 2022 · Sky Q ARD Mediathek Hallo, wollte gerade auf dem Sky Q in der ARD Mediathek die PK zur Kadernominierung des …"
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2404.18961",
+      "snippet": ""
+    },
+    {
+      "title": "Ard und ZDF Mediatheken hängen - Sky Community",
+      "url": "https://community.sky.de/conversations/sky-q-sky-q-mini/ard-und-zdf-mediatheken-h%C3%A4ngen/68367744170e725f31756699",
+      "snippet": "Mar 16, 2025 · Ard und ZDF Mediatheken hängen Seit ein pasr Tagen hängen beide Meditheken. Wollte schon Reciver zurücksetzen …"
+    },
+    {
+      "title": "GitHub - nicklashansen/newt: Official code repository for the paper ...",
+      "url": "https://github.com/nicklashansen/newt",
+      "snippet": "Official code repository for the paper \"Learning Massively Multitask World Models for Continuous Control\". - nicklashansen/newt"
+    },
+    {
+      "title": "Odysee video download service - Vivaldi Forum",
+      "url": "https://forum.vivaldi.net/topic/119242/odysee-video-download-service",
+      "snippet": "Jun 25, 2026 · Glory to God! Sometime at the end of may this year the download service on Odysee.com seized to function properly. …"
+    }
+  ]
+}

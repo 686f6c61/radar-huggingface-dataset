@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "yinita/ps4mas-sft-4b-claude-x5-single-ep3",
+  "slug": "yinita-ps4mas-sft-4b-claude-x5-single-ep3",
+  "author": "yinita",
+  "url": "https://huggingface.co/yinita/ps4mas-sft-4b-claude-x5-single-ep3",
+  "created_at": "2026-09-03T11:18:17.000Z",
+  "updated_at": "2026-09-03T11:19:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "ps4mas",
+    "sft",
+    "full-finetune",
+    "qwen3.5",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4841450496,
+  "parameters_human": "4.84B",
+  "storage_bytes": 9702946320,
+  "storage_human": "9.7 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Obchodná akadémia Milana Hodžu, M. Rázusa 1, Trenčín",
+      "url": "https://oa-tn.edupage.org/",
+      "snippet": "Obchodná akadémia po rekonštrukcii. Obchodná akadémia po rekonštrukcii. Obchodná akadémia po rekonštrukcii. Obchodná …"
+    },
+    {
+      "title": "yinita/ps4mas-sft-x5-single-ep3 · Hugging Face",
+      "url": "https://huggingface.co/yinita/ps4mas-sft-x5-single-ep3",
+      "snippet": "Instructions to use yinita/ps4mas-sft-x5-single-ep3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use yinita/ps4mas-sft-x5-single-ep3 with Transformers:"
+    },
+    {
+      "title": "Prijímacie skúšky - Informácie pre šk. rok 2026/2027 | Obchodná ...",
+      "url": "https://oa-tn.edupage.org/text7/",
+      "snippet": "Študijný odbor obchodná akadémia 6317 M je prednastavený na duálne vzdelávanie, pretože od školského roku 2019/2020 tento …"
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "Erika Senková - Moje predmety | Obchodná akadémia Milana Hodžu, …",
+      "url": "https://oa-tn.edupage.org/text/?eqa=dGV4dD10ZWFjaGVycy8xNzAzNyZzdWJwYWdlPTEmc2tnZHllYXI9MjAyNA%3D%3D",
+      "snippet": "Administratíva a korešpondencia: 4. ročník - interné písomosti, personálne písomnosti, osobné listy, jednoduché písomnosti …"
+    }
+  ]
+}

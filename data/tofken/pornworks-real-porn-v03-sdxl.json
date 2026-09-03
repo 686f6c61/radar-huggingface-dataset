@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Tofken/pornworks-real-porn-v03-sdxl",
+  "slug": "tofken-pornworks-real-porn-v03-sdxl",
+  "author": "Tofken",
+  "url": "https://huggingface.co/Tofken/pornworks-real-porn-v03-sdxl",
+  "created_at": "2026-09-03T17:27:06.000Z",
+  "updated_at": "2026-09-03T17:27:06.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "stable-diffusion",
+    "stable-diffusion-xl",
+    "realistic",
+    "photorealistic",
+    "photorealism",
+    "en",
+    "license:creativeml-openrail-m",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 6938011430,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Change mouse settings | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/input-devices/change-mouse-settings",
+      "snippet": "Learn how to change the settings of the mouse buttons, mouse wheel, and pointer."
+    },
+    {
+      "title": "John6666/pornworks-real-porn-v03-sdxl at main - Hugging Face",
+      "url": "https://huggingface.co/John6666/pornworks-real-porn-v03-sdxl/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ändern der Mauseinstellungen | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/windows/hardware/input-devices/change-mouse-settings",
+      "snippet": "Verwenden Sie das Dropdownmenü neben Roll the mouse wheel (Mausrad rollen), um entweder mehrere Zeilen gleichzeitig oder …"
+    },
+    {
+      "title": "AI Porn Gallery - PornWorks AI",
+      "url": "https://pornworks.me/gallery",
+      "snippet": "Browse the PornWorks AI gallery featuring AI-generated adult images and videos created by our community. Explore stunning AI art and get inspired."
+    },
+    {
+      "title": "How to reset Mouse settings to default in Windows 11",
+      "url": "https://www.thewindowsclub.com/how-to-reset-mouse-settings-to-default-in-windows",
+      "snippet": "Mar 28, 2026 · To reset Mouse settings to default open the Windows Settings, click on the Devices option, select Mouse > Additional …"
+    }
+  ]
+}

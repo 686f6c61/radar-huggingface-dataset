@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "AlphaAvatar/router-semantic-addressing-qwen3-0.6b-gguf",
+  "slug": "alphaavatar-router-semantic-addressing-qwen3-0-6b-gguf",
+  "author": "AlphaAvatar",
+  "url": "https://huggingface.co/AlphaAvatar/router-semantic-addressing-qwen3-0.6b-gguf",
+  "created_at": "2026-09-03T11:55:58.000Z",
+  "updated_at": "2026-09-03T12:01:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "alphaavatar",
+    "addressing-detection",
+    "binary-classifier",
+    "text-classification",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 1288973824,
+  "storage_human": "1.3 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "张远2025年演唱会妆造合集 - 抖音",
+      "url": "https://www.douyin.com/search/%E5%BC%A0%E8%BF%9C2025%E5%B9%B4%E6%BC%94%E5%94%B1%E4%BC%9A%E5%A6%86%E9%80%A0%E5%90%88%E9%9B%86",
+      "snippet": "您在查找张远2025年演唱会妆造合集吗？ 抖音综合搜索帮你找到更多相关视频、图文、直播内容，支持在线观看。 更有海量高清视频 …"
+    },
+    {
+      "title": "张远妆造303收官_新浪新闻 - sina.cn",
+      "url": "https://www.sina.cn/news/detail/5261119087449237.html",
+      "snippet": "张远巡回演唱会妆造303活动圆满结束，感谢粉丝投票及幕后团队支持，展望未来舞台突破。"
+    },
+    {
+      "title": "张远电脑横屏高清图片 - 抖音",
+      "url": "https://www.douyin.com/search/%E5%BC%A0%E8%BF%9C%E7%94%B5%E8%84%91%E6%A8%AA%E5%B1%8F%E9%AB%98%E6%B8%85%E5%9B%BE%E7%89%87",
+      "snippet": "您在查找张远电脑横屏高清图片吗？ 抖音综合搜索帮你找到更多相关视频、图文、直播内容，支持在线观看。 更有海量高清视频、相 …"
+    },
+    {
+      "title": "张远电脑壁纸超清4k - 抖音",
+      "url": "https://www.douyin.com/search/%E5%BC%A0%E8%BF%9C%E7%94%B5%E8%84%91%E5%A3%81%E7%BA%B8%E8%B6%85%E6%B8%854k",
+      "snippet": "您在查找张远电脑壁纸超清4k吗？ 抖音综合搜索帮你找到更多相关视频、图文、直播内容，支持在线观看。 更有海量高清视频、相关 …"
+    },
+    {
+      "title": "张远 - 最新张远实时滚动快讯，聚合所有张远相关热门新闻快讯_新浪 …",
+      "url": "https://tags.sina.com.cn/%E5%BC%A0%E8%BF%9C",
+      "snippet": "12 hours ago · 中新网陕西延安9月2日电 题：陕西延安：电网纵横铺就发展高速路中新网记者 张远“彼时的延安，黄土闭塞、物资匮乏 …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Iris-mini-i1-GGUF",
+  "slug": "mradermacher-iris-mini-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Iris-mini-i1-GGUF",
+  "created_at": "2026-09-03T19:24:26.000Z",
+  "updated_at": "2026-09-03T19:24:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 48036230,
+  "parameters_human": "48.0M",
+  "storage_bytes": 192223904,
+  "storage_human": "192 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hotels near Toulouse-Blagnac Airport (TLS), Toulouse - Booking.com",
+      "url": "https://www.booking.com/airport/fr/tls.html?msockid=084babacce7667c630cdbc65cfce66b5",
+      "snippet": "2 days ago · Hotels near Toulouse-Blagnac Airport TLS, France. Get great savings on your reservation. Book online, pay at the hotel. …"
+    },
+    {
+      "title": "mradermacher/Iris-mini-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Iris-mini-GGUF",
+      "snippet": "mradermacher / Iris-mini-GGUF like 0 Transformers GGUF English search-agent deep-research agentic qwen3.6 Mixture of Experts conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Hôtels à proximité de l'aéroport | Aéroport Toulouse Blagnac",
+      "url": "https://www.toulouse.aeroport.fr/en/welcome-to-toulouse/hotels",
+      "snippet": "Do you need to stay close to the airport, or need a little rest before taking your plane or when you arrive in Toulouse? Here is a list of …"
+    },
+    {
+      "title": "mradermacher/amethyst-1-mini-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/amethyst-1-mini-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NH Toulouse Airport Hotel - Aéroport Toulouse Blagnac",
+      "url": "https://www.toulouse.aeroport.fr/en/shopping-and-services/nh-toulouse-airport-hotel",
+      "snippet": "This elegant, modern hotel is located near Hall A of Toulouse Airport and provides easy access to the surrounding transport …"
+    }
+  ]
+}

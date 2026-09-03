@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gpjt/jax-with-mha-bias-no-dropout-extended",
+  "slug": "gpjt-jax-with-mha-bias-no-dropout-extended",
+  "author": "gpjt",
+  "url": "https://huggingface.co/gpjt/jax-with-mha-bias-no-dropout-extended",
+  "created_at": "2026-09-03T15:03:18.000Z",
+  "updated_at": "2026-09-03T15:15:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpjtgpt2",
+    "text-generation",
+    "gpjt-llm-from-scratch",
+    "custom_code",
+    "dataset:gpjt/fineweb-gpt2-tokens",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 175592448,
+  "parameters_human": "175.6M",
+  "storage_bytes": 702388152,
+  "storage_human": "702 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Payment plans; installment agreements - Internal Revenue Service",
+      "url": "https://www.irs.gov/payments/payment-plans-installment-agreements",
+      "snippet": "Aug 13, 2026 · See Long-term payment plan below for payment options. Apply online through your online account or apply by phone …"
+    },
+    {
+      "title": "gpjt/jax-with-mha-bias-no-dropout-2-epoch · Hugging Face",
+      "url": "https://huggingface.co/gpjt/jax-with-mha-bias-no-dropout-2-epoch",
+      "snippet": "This model is gpjt/jax-with-mha-bias-no-dropout-2-epoch, a trained-from-scratch base model using the GPT-2-style architecture from Sebastian Raschka 's book \" Build a Large Language Model (from Scratch) \"."
+    },
+    {
+      "title": "IRS Installment Agreements: Your Options for Paying Over Time",
+      "url": "https://www.arcandledger.com/guides/irs-installment-agreement/",
+      "snippet": "Jul 26, 2026 · Here is how the main types work, what balance qualifies for each, how to apply, and the one truth that decides how …"
+    },
+    {
+      "title": "gpjt/jax-with-mha-bias-larger-chinchilla-1 · Hugging Face",
+      "url": "https://huggingface.co/gpjt/jax-with-mha-bias-larger-chinchilla-1",
+      "snippet": "This model had its number of parameters scaled up so that if it was trained with the Chinchilla-optimal number of tokens, it would approximately the same compute cost to train as a 2x overtrained model like gpjt/jax-with-mha-bias-no-dropout-extended or gpjt/jax-with-mha-bias-no-dropout-2-epoch. So it's somewhere between GPT-2 small and GPT-2 medium in its number of parameters."
+    },
+    {
+      "title": "Online payment agreement application - Internal Revenue Service",
+      "url": "https://www.irs.gov/payments/online-payment-agreement-application",
+      "snippet": "2 days ago · Your specific tax situation will determine which payment options are available to you. Payment options include full …"
+    }
+  ]
+}

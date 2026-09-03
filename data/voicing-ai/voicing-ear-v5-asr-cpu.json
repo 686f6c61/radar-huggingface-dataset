@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "voicing-ai/voicing-ear-v5-ASR-cpu",
+  "slug": "voicing-ai-voicing-ear-v5-asr-cpu",
+  "author": "voicing-ai",
+  "url": "https://huggingface.co/voicing-ai/voicing-ear-v5-ASR-cpu",
+  "created_at": "2026-09-03T17:08:12.000Z",
+  "updated_at": "2026-09-03T17:33:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "voicing_asr",
+    "automatic-speech-recognition",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2349217408,
+  "parameters_human": "2.35B",
+  "storage_bytes": 4698521512,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "YouTube's official YouTube channel Ahead of her headlining set at Rock in Rio, Brazilian pop queen @MarinaSenaOficial is revealing …"
+    },
+    {
+      "title": "YouTube Brasil",
+      "url": "https://www.youtube.com/channel/UCUN9lhwfMJRxMVuet7Shg0w",
+      "snippet": "É canal oficial do YouTube Brasil que vocês querem? :D Se inscreve para descobrir as novidades e tendências da plataforma, …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://studio.youtube.com/",
+      "snippet": "Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "News - YouTube",
+      "url": "https://news.youtube.com/new",
+      "snippet": "Stay updated with the latest news and trends on YouTube News, your source for global happenings and breaking stories."
+    }
+  ]
+}

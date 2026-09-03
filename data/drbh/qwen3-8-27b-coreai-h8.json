@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "drbh/Qwen3.8-27B-CoreAI-H8",
+  "slug": "drbh-qwen3-8-27b-coreai-h8",
+  "author": "drbh",
+  "url": "https://huggingface.co/drbh/Qwen3.8-27B-CoreAI-H8",
+  "created_at": "2026-09-03T18:12:16.000Z",
+  "updated_at": "2026-09-03T18:12:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "coreai",
+  "languages": [],
+  "tags": [
+    "coreai",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17620989356,
+  "storage_human": "17.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows'da Masaüstü Simgelerini Özelleştirme | Microsoft Support",
+      "url": "https://support.microsoft.com/tr-tr/windows/experience/personalization/customize-the-desktop-icons-in-windows",
+      "snippet": "Oct 14, 2025 · Windows'da varsayılan masaüstü simgelerini özelleştirmeyi, tercihlerinize uyacak şekilde boyutlarını ayarlamayı ve …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: “Please reason step by step, and put your final answer within \\boxed {}.” For the remaining models, we report the higher score from two prompt variants—one with and one without the \\boxed {} formatting requirement."
+    },
+    {
+      "title": "Windows 10 Masaüstü Simge Ayarları (Simgeleri Gösterme) Nasıl Yapılır?",
+      "url": "https://www.mmsrn.com/windows-10-masaustu-simge-ayarlari-simgeleri-gosterme-nasil-yapilir/",
+      "snippet": "Feb 21, 2019 · Herkese merhabalar bu yazımızda sizlere windows 10 bilgisayarlarda masaüstü simge ayarları nereden yapılır onu …"
+    },
+    {
+      "title": "README.md · mlboydaisuke/Qwen3.8-27B-CoreAI at main",
+      "url": "https://huggingface.co/mlboydaisuke/Qwen3.8-27B-CoreAI/blob/main/README.md",
+      "snippet": "Qwen3.8-27B — Apple Core AI (.aimodel) The Qwen3.8 generation's dense 27B, converted to Apple's Core AI (the Core ML successor announced at WWDC26) — ported the day the weights landed. This repo ships the full VLM: the text decoder plus the vision path. The text decoder is the Qwen3.5 hybrid graph run dense, 64 layers on a 3:1 interleave of GatedDeltaNet linear-attention mixers (GVA 48v ..."
+    },
+    {
+      "title": "Windows 10 Masaüstü Simgeleri Nasıl Getirilir? - Güncel Oku",
+      "url": "https://gunceloku.com/galeri/windows-10-masaustu-simgeleri-nasil-getirilir-4-28049",
+      "snippet": "\"Görünüm\" menüsünden \"Masaüstü simgelerini düzenle\" seçeneğine tıkla. İlgili simgeleri açılır pencereden sürükleyip bırakarak …"
+    }
+  ]
+}

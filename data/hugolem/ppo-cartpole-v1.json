@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Hugolem/ppo-CartPole-v1",
+  "slug": "hugolem-ppo-cartpole-v1",
+  "author": "Hugolem",
+  "url": "https://huggingface.co/Hugolem/ppo-CartPole-v1",
+  "created_at": "2026-09-03T15:11:13.000Z",
+  "updated_at": "2026-09-03T15:11:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "CartPole-v1",
+    "ppo",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91268,
+  "storage_human": "91268 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "HumanCompatibleAI/ppo-CartPole-v1 · Hugging Face",
+      "url": "https://huggingface.co/HumanCompatibleAI/ppo-CartPole-v1",
+      "snippet": "This is a trained model of a PPO agent playing CartPole-v1 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "README.md · HumanCompatibleAI/ppo-CartPole-v1 at main",
+      "url": "https://huggingface.co/HumanCompatibleAI/ppo-CartPole-v1/blob/main/README.md",
+      "snippet": "PPO Agent playing CartPole-v1 This is a trained model of a PPO agent playing CartPole-v1 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "HumanCompatibleAI/ppo-CartPole-v1 - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/humancompatibleai-ppo-cartpole-v1",
+      "snippet": "HumanCompatibleAI ppo-CartPole-v1 online free ppo-CartPole-v1 huggingface.co is an online trial and call api platform, which integrates ppo-CartPole-v1's modeling effects, including api services, and provides a free online trial of ppo-CartPole-v1, you can try ppo-CartPole-v1 online for free by clicking the link below."
+    },
+    {
+      "title": "PPO-Cartpole - GitHub",
+      "url": "https://github.com/blueflower120/PPO-Cartpole",
+      "snippet": "My reinforcement learning practice project: PPO for Cartpole-v1 environment. This project utilizes the proximal policy optimization (PPO) algorithm for training and testing in the CartPole-v1 environment, one of the classic introductory experiments in reinforcement learning. The goal is to make a cart keep a vertical pole upright by moving left and right."
+    }
+  ]
+}

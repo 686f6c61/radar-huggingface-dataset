@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "felixzy96/zero-shot-transfer9",
+  "slug": "felixzy96-zero-shot-transfer9",
+  "author": "felixzy96",
+  "url": "https://huggingface.co/felixzy96/zero-shot-transfer9",
+  "created_at": "2026-09-03T16:50:47.000Z",
+  "updated_at": "2026-09-03T16:50:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "zero-shot-transfer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ynet - חדשות, כלכלה, ספורט ובריאות - דיווחים שוטפים מהארץ ומהעולם",
+      "url": "https://www.ynet.co.il/home/0,7340,L-8,00.html",
+      "snippet": "אתר החדשות המוביל בישראל מבית ידיעות אחרונות. סיקור מלא של חדשות מישראל והעולם, ספורט, כלכלה, תרבות, אוכל, מדע וטבע, כל מה שקורה וכל …"
+    },
+    {
+      "title": "ynet",
+      "url": "https://www.ynet.co.il/home/",
+      "snippet": "אתר ynet מציע חדשות, מבזקים, כתבות וסיקורים בתחומים שונים כמו פוליטיקה, ספורט, תרבות ועוד."
+    },
+    {
+      "title": "ynetglobal - News from Israel, Middle East and Jewish World Coverage",
+      "url": "https://www.ynetnews.com/category/3083",
+      "snippet": "5 days ago · ynet |08.01.26 Erling Haaland’s unexpected new career as a global internet star Noam Raz |07.31.26 How Israel quietly …"
+    },
+    {
+      "title": "ynet - חדשות, כלכלה, ספורט ובריאות - דיווחים שוטפים מהארץ ומהעולם",
+      "url": "https://3d8af88c-f551-4626-a164-87ee75f7f757.atarimworker.io/",
+      "snippet": "אתר החדשות המוביל בישראל מבית ידיעות אחרונות. סיקור מלא של חדשות מישראל והעולם, ספורט, כלכלה, תרבות, אוכל, מדע וטבע, כל מה שקורה וכל …"
+    },
+    {
+      "title": "ynet חדשות תוכן ועדכונים - ידיעות אחרונות",
+      "url": "http://ipad.ynet.co.il/",
+      "snippet": "Ynet דף הבית: אתר החדשות המוביל בישראל מבית ידיעות אחרונות. סיקור מלא של חדשות מישראל והעולם, ספורט, כלכלה, תרבות, אוכל, מדע וטבע, כל …"
+    }
+  ]
+}

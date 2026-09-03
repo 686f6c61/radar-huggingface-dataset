@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Atmyre/qwen3-8b-taboo-strict-wave-c1p00",
+  "slug": "atmyre-qwen3-8b-taboo-strict-wave-c1p00",
+  "author": "Atmyre",
+  "url": "https://huggingface.co/Atmyre/qwen3-8b-taboo-strict-wave-c1p00",
+  "created_at": "2026-09-03T14:32:04.000Z",
+  "updated_at": "2026-09-03T14:39:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "taboo",
+    "interpretability",
+    "qwen3",
+    "concept-wave",
+    "arxiv:2512.15674",
+    "arxiv:2607.23379",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 349243752,
+  "storage_human": "349 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "DeepL Übersetzer | Der präziseste Übersetzer der Welt - DeepL Translate",
+      "url": "https://www.deepl.com/de/translator",
+      "snippet": "Übersetzen Sie Texte und ganze Dateien im Handumdrehen. Präzise Übersetzungen für Einzelnutzer und Teams. Jeden Tag nutzen …"
+    },
+    {
+      "title": "translate - Deutsch-Übersetzung – Linguee Wörterbuch",
+      "url": "https://www.linguee.de/englisch-deutsch/uebersetzung/translate.html",
+      "snippet": "Viele übersetzte Beispielsätze mit \"translate\" – Deutsch-Englisch Wörterbuch und Suchmaschine für Millionen von Deutsch …"
+    },
+    {
+      "title": "OpenL Translate: Präziser KI-Übersetzer für Text, Bilder und Dokumente",
+      "url": "https://openl.io/de",
+      "snippet": "OpenL Translate bietet Übersetzungen in mehr als 100 Sprachen, von weit verbreiteten Sprachen wie Englisch, Arabisch, …"
+    },
+    {
+      "title": "DeepL Translator | World's Most Accurate Translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "Translate texts & full document files instantly. Accurate translations for individuals and Teams. Millions translate with DeepL every day."
+    }
+  ]
+}

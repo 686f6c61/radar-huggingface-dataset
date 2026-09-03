@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "anschrur/act_record_test",
+  "slug": "anschrur-act_record_test",
+  "author": "anschrur",
+  "url": "https://huggingface.co/anschrur/act_record_test",
+  "created_at": "2026-09-03T11:27:42.000Z",
+  "updated_at": "2026-09-03T11:27:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:anschrur/record-test_20260903_111239",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gruppo Iren",
+      "url": "https://www.gruppoiren.it/",
+      "snippet": "Gruppo Iren è una holding multiservizi che produce e eroga energia elettrica, teleriscaldamento, servizi idrici integrati e servizi …"
+    },
+    {
+      "title": "Tributi e Tariffe - Gruppo Iren",
+      "url": "https://www.gruppoiren.it/it/i-nostri-servizi/ambiente/tributi-e-tariffe.html",
+      "snippet": "In questa sezione sono disponibili le informazioni e comunicazioni relative al Tributo (TARI)/Tariffa (TCP) rifiuti per i comuni che …"
+    },
+    {
+      "title": "Irenyou - Area Riservata - Gruppo Iren",
+      "url": "https://clienti.irenyou.gruppoiren.it/login?private=false",
+      "snippet": "Area Riservata Irenyou: accedi o registrati Per utilizzare IrenYou scegli come browser Microsoft Edge o Chrome o ancor meglio …"
+    },
+    {
+      "title": "Portale Acquisti del Gruppo IREN",
+      "url": "https://portaleacquisti.gruppoiren.it/web/login.html",
+      "snippet": "Benvenuti nel Portale Acquisti del Gruppo Iren. Se non siete ancora registrati al portale, procedete con la registrazione per avviare la …"
+    },
+    {
+      "title": "Irenyou - Area Riservata",
+      "url": "http://clienti.irenyou.gruppoiren.it/",
+      "snippet": "Area Riservata Irenyou: accedi o registrati You must enable javascript to view this page."
+    }
+  ]
+}

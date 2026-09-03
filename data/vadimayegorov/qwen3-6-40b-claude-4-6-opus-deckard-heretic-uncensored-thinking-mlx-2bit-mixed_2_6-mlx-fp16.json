@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "id": "vadimayegorov/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-MLX-2bit-mixed_2_6-mlx-fp16",
+  "slug": "vadimayegorov-qwen3-6-40b-claude-4-6-opus-deckard-heretic-uncensored-thinking-mlx-2bit-mixed_2_6-mlx-fp16",
+  "author": "vadimayegorov",
+  "url": "https://huggingface.co/vadimayegorov/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-MLX-2bit-mixed_2_6-mlx-fp16",
+  "created_at": "2026-09-03T18:03:10.000Z",
+  "updated_at": "2026-09-03T18:03:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "2-bit",
+    "decensored",
+    "unsloth",
+    "fine tune",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "multi-stage tuned.",
+    "all use cases",
+    "coder",
+    "creative",
+    "creative writing",
+    "fiction writing",
+    "plot generation",
+    "sub-plot generation",
+    "story generation",
+    "scene continue",
+    "storytelling",
+    "fiction story",
+    "science fiction",
+    "romance",
+    "all genres",
+    "story",
+    "writing",
+    "vivid prosing",
+    "vivid writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "mlx-my-repo",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:TeichAI/claude-4.5-opus-high-reasoning-250x",
+    "dataset:DavidAU/PkDick-Deckard-5-Datasets",
+    "base_model:zecanard/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-MLX-2bit-mixed_2_6",
+    "base_model:quantized:zecanard/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-MLX-2bit-mixed_2_6",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39072589824,
+  "parameters_human": "39.07B",
+  "storage_bytes": 15679178985,
+  "storage_human": "15.7 GB",
+  "base_model": "zecanard/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-MLX-2bit-mixed_2_6",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/",
+      "snippet": "Avec leboncoin, trouvez la bonne affaire, réalisez la bonne vente pour votre voiture, immobilier, emploi, location de vacances, …"
+    },
+    {
+      "title": "Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO ...",
+      "url": "https://huggingface.co/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF",
+      "snippet": "Ultimate NEO GGUF QUANTS: Custom built DUAL Imatrix NEO-CODER quants that exceed all other quants in terms of quality, stability, precision and long convo usage. IQ4_XS/NL regularly scores at 94% of full precision (bf16), Q6/Q8 at 97% and 98% of full precision (bf16). WARNING: This model has character and intelligence."
+    },
+    {
+      "title": "Toute la France - leboncoin",
+      "url": "https://www.leboncoin.fr/all/offer",
+      "snippet": "Toutes nos annonces gratuites Toute la France. Consultez nos 91045727 annonces de particuliers et professionnels sur leboncoin"
+    },
+    {
+      "title": "mlx-community/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored ...",
+      "url": "https://huggingface.co/mlx-community/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-8bit",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nord (59) - leboncoin",
+      "url": "https://www.leboncoin.fr/l/dp_nord",
+      "snippet": "Toutes nos annonces gratuites Nord (59). Consultez nos 3750719 annonces de particuliers et professionnels sur leboncoin"
+    }
+  ]
+}

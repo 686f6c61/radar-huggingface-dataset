@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "software-mansion/react-native-executorch-spec",
+  "slug": "software-mansion-react-native-executorch-spec",
+  "author": "software-mansion",
+  "url": "https://huggingface.co/software-mansion/react-native-executorch-spec",
+  "created_at": "2026-05-13T11:26:12.000Z",
+  "updated_at": "2026-09-03T13:21:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "react-native-executorch",
+    "spec",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Software - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Software",
+      "snippet": "Software quality assurance and security are critical aspects of software development, as bugs and security vulnerabilities can lead to …"
+    },
+    {
+      "title": "Software Download - microsoft.com",
+      "url": "https://www.microsoft.com/en-us/software-download/?msockid=3ee7573412d96f2b3c7940fd13ec6ec7",
+      "snippet": "Skip to main content Software Download Windows 11 Windows 11 for Arm Windows 10 Windows 8.1 Windows 7 Media Feature Pack …"
+    },
+    {
+      "title": "Application software - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Application_software",
+      "snippet": "Application software is software that is intended for end-user use – not operating, administering or programming a computer. It …"
+    },
+    {
+      "title": "Software | Definition, Types, & Facts | Britannica",
+      "url": "https://www.britannica.com/technology/software",
+      "snippet": "Aug 1, 2026 · Software, instructions that tell a computer what to do. Software comprises the entire set of programs, procedures, and …"
+    },
+    {
+      "title": "Software - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.wikipedia.org/wiki/Software",
+      "snippet": "Computer software, also called software, is a set of instructions and documentation that tells a computer what to do or how to perform …"
+    }
+  ]
+}

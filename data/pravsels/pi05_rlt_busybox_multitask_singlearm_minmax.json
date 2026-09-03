@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "pravsels/pi05_rlt_busybox_multitask_singlearm_minmax",
+  "slug": "pravsels-pi05_rlt_busybox_multitask_singlearm_minmax",
+  "author": "pravsels",
+  "url": "https://huggingface.co/pravsels/pi05_rlt_busybox_multitask_singlearm_minmax",
+  "created_at": "2026-09-03T16:51:18.000Z",
+  "updated_at": "2026-09-03T16:52:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pi05",
+    "robotics",
+    "openpi",
+    "rlt",
+    "rl-token",
+    "dataset:villekuosmanen/busybox_multitask",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6266686134,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Search by your Zip Code or City to find your nearest Lidl and start saving! Never miss another offer!"
+    },
+    {
+      "title": "Store Finder - Lidl GB",
+      "url": "https://www.lidl.co.uk/c/store-finder/s10023098",
+      "snippet": "Pop your postcode into the box and click your nearest store to see opening times and all the offers within grabbing distance. Never …"
+    },
+    {
+      "title": "Lidl stores in the US",
+      "url": "https://www.lidl.com/s/en-US/stores/",
+      "snippet": "Find your Lidl store quickly and easily with the store finder or by city. Find offers and flyers for a Lidl store nearby."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?query_place_id=ChIJh4WK0ZkINEcRUUv47mQYl2Y",
+      "snippet": "Map data ©2026 Google Terms 10 km Directions"
+    },
+    {
+      "title": "Official Website | Lidl & Kaufland Asia",
+      "url": "https://lidl.asia/",
+      "snippet": "Today, our Singapore office plays the strategic role as the headquarters in Asia and steers our regional operations, consisting of 1000 …"
+    }
+  ]
+}

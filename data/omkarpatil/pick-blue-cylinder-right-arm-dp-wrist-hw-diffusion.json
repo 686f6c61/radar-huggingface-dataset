@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "omkarpatil/pick-blue-cylinder-right-arm-dp-wrist-hw-diffusion",
+  "slug": "omkarpatil-pick-blue-cylinder-right-arm-dp-wrist-hw-diffusion",
+  "author": "omkarpatil",
+  "url": "https://huggingface.co/omkarpatil/pick-blue-cylinder-right-arm-dp-wrist-hw-diffusion",
+  "created_at": "2026-09-03T16:56:09.000Z",
+  "updated_at": "2026-09-03T17:00:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion-policy",
+    "ffw_sg2_rev1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 274492048,
+  "parameters_human": "274.5M",
+  "storage_bytes": 1098027904,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Easy chicken recipes - BBC Food",
+      "url": "https://www.bbc.co.uk/food/collections/easy_chicken_recipes",
+      "snippet": "Whether in an easy chicken pasta dish or a simple stir-fry, we have all kinds of easy chicken recipes for you to try."
+    },
+    {
+      "title": "Chicken Recipes",
+      "url": "https://www.allrecipes.com/recipes/201/meat-and-poultry/chicken/",
+      "snippet": "Find recipes for fried chicken, chicken breast, grilled chicken, chicken wings, and more! Allrecipes has more than 5,430 kitchen …"
+    },
+    {
+      "title": "Easy chicken recipes - BBC Good Food",
+      "url": "https://www.bbcgoodfood.com/recipes/collection/chicken-recipes",
+      "snippet": "Golden chicken with rice noodles & crispy shallots. This is a premium piece of content available to subscribed users."
+    },
+    {
+      "title": "Chicken recipes - BBC Food",
+      "url": "https://www.bbc.co.uk/food/chicken",
+      "snippet": "BBC Food has hundreds of delicious chicken recipes from classic roast chicken to the ultimate chicken soup. Try our quick chicken …"
+    },
+    {
+      "title": "Chicken recipes - Jamie Oliver",
+      "url": "https://www.jamieoliver.com/recipes/chicken/",
+      "snippet": "Chicken is always a crowd-pleaser, and here are loads of deliciously easy chicken recipes for you to try, from Sunday roasts to zingy …"
+    }
+  ]
+}

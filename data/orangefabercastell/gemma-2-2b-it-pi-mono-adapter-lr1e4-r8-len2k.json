@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "orangefabercastell/gemma-2-2b-it-pi-mono-adapter-lr1e4-r8-len2k",
+  "slug": "orangefabercastell-gemma-2-2b-it-pi-mono-adapter-lr1e4-r8-len2k",
+  "author": "orangefabercastell",
+  "url": "https://huggingface.co/orangefabercastell/gemma-2-2b-it-pi-mono-adapter-lr1e4-r8-len2k",
+  "created_at": "2026-09-03T14:25:27.000Z",
+  "updated_at": "2026-09-03T14:25:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55177556,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lego Starwars Lunch Box for sale | eBay",
+      "url": "https://www.ebay.com/sch/i.html?_nkw=lego+starwars+lunch+box&_sop=12&msockid=083d7ba81f5b64bd1c2d6c611e6f6580",
+      "snippet": "Get the best deals for Lego Starwars Lunch Box at eBay.com. We have a great online selection at the lowest prices with Fast & Free …"
+    },
+    {
+      "title": "Lego Lunchbox online kaufen | eBay.de",
+      "url": "https://www.ebay.de/b/Lego-Lunchbox/bn_7005697663?msockid=083d7ba81f5b64bd1c2d6c611e6f6580",
+      "snippet": "Lego 5007331 Lunchbox 1965 VIP GWP Neu · Privat · LEGO EUR 25,00 oder Preisvorschlag"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Lego Starwars Brotdose",
+      "url": "https://www.amazon.de/lego-starwars-brotdose/s?k=lego+starwars+brotdose",
+      "snippet": "Scooli - Star Wars Kindergeschirr Geschenkset - Set bestehend aus Brotdose und Trinkflasche - ideal für Schule oder Kindergarten – …"
+    },
+    {
+      "title": "Star Wars Lunch Box - eBay.de",
+      "url": "https://www.ebay.de/shop/star-wars-lunch-box?_nkw=star+wars+lunch+box&msockid=083d7ba81f5b64bd1c2d6c611e6f6580",
+      "snippet": "Große Auswahl an Star Wars Lunch Box entdecken. Top-Marken, exklusive Angebote und unschlagbare Preise bei eBay.de. Jetzt …"
+    },
+    {
+      "title": "Star Wars Lunch Boxes, Lunch Bags, Lunch Totes",
+      "url": "https://www.theforcegifts.com/category/star-wars-lunch-boxes",
+      "snippet": "Carry a little bit of the galaxy with you when you bring your lunch on the road with this awesome selection of Star Wars lunch boxes. …"
+    }
+  ]
+}

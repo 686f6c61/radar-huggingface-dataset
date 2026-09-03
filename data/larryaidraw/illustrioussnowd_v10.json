@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LarryAIDraw/illustriousSnowd_v10",
+  "slug": "larryaidraw-illustrioussnowd_v10",
+  "author": "LarryAIDraw",
+  "url": "https://huggingface.co/LarryAIDraw/illustriousSnowd_v10",
+  "created_at": "2026-09-03T13:04:14.000Z",
+  "updated_at": "2026-09-03T13:04:14.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eMAG.ro - Căutarea nu se oprește niciodată",
+      "url": "https://www.emag.ro/?msockid=179dcbeed0b968460119dc27d1ba6965",
+      "snippet": "Ai libertatea sa alegi din milioane de produse IT, electronice si electrocasnice, gadgeturi, jucarii, imbracaminte si incaltaminte la …"
+    },
+    {
+      "title": "Vezi toate categoriile de produse eMAG - eMAG.ro",
+      "url": "https://www.emag.ro/all-departments?msockid=179dcbeed0b968460119dc27d1ba6965",
+      "snippet": "Ai libertatea sa alegi din milioane de produse IT, electronice si electrocasnice, gadgeturi, jucarii, imbracaminte si incaltaminte cu plata …"
+    },
+    {
+      "title": "Contul meu - eMAG Marketplace",
+      "url": "https://marketplace.emag.ro/infocenter/emag-academy/contul-meu/",
+      "snippet": "În acest capitol, vei găsi informații despre sectiunile din meniul Contul meu: Secțiunea „Contul meu\" este locul unde ai acces la toate …"
+    },
+    {
+      "title": "Alătură-te eMAG Marketplace și crește-ți afacerea",
+      "url": "https://marketplace.emag.ro/",
+      "snippet": "eMAG Marketplace conectează mii de selleri cu peste 7 milioane de clienți în regiune. Folosește infrastructura noastră și crește-ți …"
+    },
+    {
+      "title": "eMAG.ro - Libertate în fiecare zi",
+      "url": "https://auth.emag.ro/user/login",
+      "snippet": "Conectează-te la contul tău eMAG pentru cumpărături online și acces la o gamă variată de produse și servicii."
+    }
+  ]
+}

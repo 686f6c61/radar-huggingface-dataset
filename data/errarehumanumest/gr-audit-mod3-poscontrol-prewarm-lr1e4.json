@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ErrareHumanumEst/gr-audit-mod3-poscontrol-prewarm-lr1e4",
+  "slug": "errarehumanumest-gr-audit-mod3-poscontrol-prewarm-lr1e4",
+  "author": "ErrareHumanumEst",
+  "url": "https://huggingface.co/ErrareHumanumEst/gr-audit-mod3-poscontrol-prewarm-lr1e4",
+  "created_at": "2026-09-03T15:21:28.000Z",
+  "updated_at": "2026-09-03T15:21:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608258,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Salar de Uyuni: Tour, Kosten & beste Reisezeit (2026)",
+      "url": "https://southtraveler.de/salar-de-uyuni-bolivien/",
+      "snippet": "Jul 31, 2026 · Salar de Uyuni in Bolivien: Tipps zu 1- und 3-Tages-Touren, Kosten, Regenzeit, Anreise ab La Paz und San Pedro …"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Salar de Uyuni in Bolivien Unser Guide + Persönliche Tipps",
+      "url": "https://www.22places.de/bolivien-salar-de-uyuni/",
+      "snippet": "Dec 22, 2025 · Lage und Anreise zum Salar de Uyuni Wir haben dir den Salar de Uyuni und die beliebtesten Ausgangspunkte für den …"
+    },
+    {
+      "title": "ErrareHumanumEst/gr-audit-mod3-prewarm · Hugging Face",
+      "url": "https://huggingface.co/ErrareHumanumEst/gr-audit-mod3-prewarm",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Salar de Uyuni: Reisezeit, Tour & Rundreise - Natuerlich Reisen",
+      "url": "https://natuerlich.reisen/salar-de-uyuni-der-groesste-salzsee-der-welt/",
+      "snippet": "Salar de Uyuni planen: Spiegelzeit oder trockene Salzwüste, Tourdauer, Höhe und Route. Bolivien-Rundreise individuell oder als …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ErrareHumanumEst/gr-audit-mod3-poscontrol-seed-lr1e4",
+  "slug": "errarehumanumest-gr-audit-mod3-poscontrol-seed-lr1e4",
+  "author": "ErrareHumanumEst",
+  "url": "https://huggingface.co/ErrareHumanumEst/gr-audit-mod3-poscontrol-seed-lr1e4",
+  "created_at": "2026-09-03T14:57:43.000Z",
+  "updated_at": "2026-09-03T15:21:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 629808192,
+  "storage_human": "630 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "牛吃春夏秋冬草下联怎么对？8个经典对句与对联规则详解",
+      "url": "https://wenku.baidu.com/view/cbaed875e6bd960590c69ec3d5bbfd0a7956d5ca.html",
+      "snippet": "“松迎东西南北风”：以植物“松”对动物“牛”，别具一格。 “迎”对“吃”，动词相对；“东西南北风”对“春夏秋冬草”，结构完全一致。 此联赋 …"
+    },
+    {
+      "title": "ErrareHumanumEst/gr-audit-mod3-rl-s0 · Hugging Face",
+      "url": "https://huggingface.co/ErrareHumanumEst/gr-audit-mod3-rl-s0",
+      "snippet": "ErrareHumanumEst / gr-audit-mod3-rl-s0 like 0 Transformers Safetensors Generated from Trainer grpo trl arxiv:2402.03300 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "牛吃春夏秋冬草对联下联怎么对？8种经典对法及创作思路解析",
+      "url": "https://wenku.baidu.com/view/81209b81d55abe23482fb4daa58da0116c171fa8.html",
+      "snippet": "针对上联“牛吃春夏秋冬草”，下联的创作需严格遵循对联的基本规则。 最经典、工整的下联之一是“虎啸东西南北风”。 这副对联的创作 …"
+    },
+    {
+      "title": "ErrareHumanumEst (Matt Stults) - Hugging Face",
+      "url": "https://huggingface.co/ErrareHumanumEst",
+      "snippet": "User profile of Matt Stults on Hugging Face"
+    },
+    {
+      "title": "牛吃春夏秋冬草求下句 - cp.baidu.com",
+      "url": "https://cp.baidu.com/landing/tscp_doc/7a742f35bae13898e1a9d72958089e4b",
+      "snippet": "解释：此句通过“鸟唱”引入了自然界中的另一声音元素，与“牛吃”共同构成了一幅生动的生态画卷。 “高低”既指树木的高低错落，也隐 …"
+    }
+  ]
+}

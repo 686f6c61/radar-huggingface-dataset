@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "RobotsMali/soloba-tdt-0.6b-v0.5",
+  "slug": "robotsmali-soloba-tdt-0-6b-v0-5",
+  "author": "RobotsMali",
+  "url": "https://huggingface.co/RobotsMali/soloba-tdt-0.6b-v0.5",
+  "created_at": "2025-11-21T05:18:51.000Z",
+  "updated_at": "2026-09-03T17:48:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "bm"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "Transducer",
+    "FastConformer",
+    "Conformer",
+    "pytorch",
+    "Bambara",
+    "NeMo",
+    "bm",
+    "dataset:RobotsMali/afvoices",
+    "base_model:nvidia/parakeet-tdt-0.6b-v2",
+    "base_model:finetune:nvidia/parakeet-tdt-0.6b-v2",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2469580800,
+  "storage_human": "2.5 GB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "African Next Voices",
+      "metric": "Test WER",
+      "value": 29.754791835954304
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "African Next Voices",
+      "metric": "Test CER",
+      "value": 13.498655089424755
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Nyana Eval",
+      "metric": "Test WER",
+      "value": 42.4299
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Nyana Eval",
+      "metric": "Test CER",
+      "value": 23.3465
+    }
+  ],
+  "sources": [
+    {
+      "title": "Movies & TV - YouTube",
+      "url": "https://www.youtube.com/feed/storefront",
+      "snippet": "Find the latest and greatest movies and shows all available on YouTube.com/movies. From award-winning hits to independent …"
+    },
+    {
+      "title": "FULL LENGTH FREE MOVIES - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLDySQNnzfMCqoBxquMEhCOi0GUEB1RbCf",
+      "snippet": "Induced 2 | Vengence is a Mother | Full, Free Movie | Where's the Maternal Instinct? Maverick Movies 35K views • 2 months ago …"
+    },
+    {
+      "title": "Full Movies For Free - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLm9l7EEbJuhwJOPPsCA3HKyRyMwwEjc1t",
+      "snippet": "The best selection of free movies in full length on youtube! New titles added every day."
+    },
+    {
+      "title": "Full Movies in English - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PL7HCQoP0BiAhDwqgHebTOLnCwfzQHu9_B",
+      "snippet": "Enjoy legally streaming full movies in English, in 1080p and 4K!"
+    },
+    {
+      "title": "Full Action Movies - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLfRCZ3PuccvBQv71hWi334-zRJekjSlCq",
+      "snippet": "Explore an incredible collection of full action movies, free Hollywood action films, and a variety of full action movies in English. …"
+    }
+  ]
+}

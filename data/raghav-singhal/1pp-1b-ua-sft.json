@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Raghav-Singhal/1pp-1b-ua-sft",
+  "slug": "raghav-singhal-1pp-1b-ua-sft",
+  "author": "Raghav-Singhal",
+  "url": "https://huggingface.co/Raghav-Singhal/1pp-1b-ua-sft",
+  "created_at": "2026-09-03T16:59:00.000Z",
+  "updated_at": "2026-09-03T17:02:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "1pp",
+    "one-persona-pretraining",
+    "sft",
+    "ua",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 981545472,
+  "parameters_human": "981.5M",
+  "storage_bytes": 1963116096,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "My Account - Sky",
+      "url": "https://help.sky.co.nz/s/account/my-account",
+      "snippet": "My Account Manage Sky TV services Get the best out of My Account to manage your Sky package and services online."
+    },
+    {
+      "title": "For all your Sky TV and Broadband enquiries",
+      "url": "https://help.sky.co.nz/s/contactsupport",
+      "snippet": "For all your Sky TV and Broadband enquiries Try our guided troubleshooting to go through simple checks and fix common issues."
+    },
+    {
+      "title": "Account and Billing - Sky",
+      "url": "https://help.sky.co.nz/s/account",
+      "snippet": "Account & Billing View your packages, make payments on your invoices, change your personal information, and more."
+    },
+    {
+      "title": "Sky Help",
+      "url": "https://help.sky.co.nz/s/",
+      "snippet": "Sky Broadband prices are changing: from 1 October the price of all Sky Broadband plans will increase by $5 per month. Find out more."
+    },
+    {
+      "title": "Sky TV Packages and Channel Guide with Costs",
+      "url": "https://help.sky.co.nz/s/article/sky-tv-packages",
+      "snippet": "For Sky Broadband plans and pricing, head over to Sky Broadband page. Sky Starter Sky Entertainment Sky Sport Sky Movies …"
+    }
+  ]
+}

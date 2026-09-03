@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Echo-Team/Echo-WM-Flash-Diffusers",
+  "slug": "echo-team-echo-wm-flash-diffusers",
+  "author": "Echo-Team",
+  "url": "https://huggingface.co/Echo-Team/Echo-WM-Flash-Diffusers",
+  "created_at": "2026-09-03T14:46:08.000Z",
+  "updated_at": "2026-09-03T15:37:47.000Z",
+  "license": "ltx-2-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "modular-diffusers",
+    "world-model",
+    "video-generation",
+    "audio-visual",
+    "camera-control",
+    "autoregressive",
+    "echo-wm",
+    "echo-wm-flash",
+    "image-to-video",
+    "en",
+    "arxiv:2608.23189",
+    "base_model:Echo-Team/Echo-WM",
+    "base_model:finetune:Echo-Team/Echo-WM",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19794341120,
+  "parameters_human": "19.79B",
+  "storage_bytes": 72158935973,
+  "storage_human": "72.2 GB",
+  "base_model": "Echo-Team/Echo-WM",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ECHO - Outils professionnels pour les espaces verts et l'industrie ...",
+      "url": "https://www.echo-france.fr/fr_fr/",
+      "snippet": "ECHO is a manufacturer of high quality outdoor equipment including chainsaws, brushcutters, trimmers, power pruners, hedge …"
+    },
+    {
+      "title": "JoyAI-Echo/echo_wm at main · jd-opensource/JoyAI-Echo",
+      "url": "https://github.com/jd-opensource/JoyAI-Echo/tree/main/echo_wm",
+      "snippet": "Echo-WM is an omnimodal world model for generative media that responds to continuous navigation while video, environmental sound, music, and speech evolve together."
+    },
+    {
+      "title": "Les Echos : actualités en direct, Économie, Finance, Marchés, Politique ...",
+      "url": "https://www.lesechos.fr/",
+      "snippet": "Retrouvez sur LesEchos.fr toute l'actualité économique et financière en France et dans le monde, découvrez des analyses …"
+    },
+    {
+      "title": "JoyAI-Echo/echo_wm/README.md at main · jd-opensource/JoyAI-Echo - GitHub",
+      "url": "https://github.com/jd-opensource/JoyAI-Echo/blob/main/echo_wm/README.md",
+      "snippet": "Base-model instructions continue below. For the 4-step Echo-WM Flash Preview, DMD-distilled guidance, and bounded cache options, see README_CAUSAL.md. We’ve just released the short-horizon (preview) version of Echo-WM Flash, with the long-horizon version coming soon."
+    },
+    {
+      "title": "Tronçonneuses | ECHO France",
+      "url": "https://www.echo-france.fr/fr_fr/produits/tronconneuses/",
+      "snippet": "Produits de grande qualité, résistants, fabriqués selon les standards d'exigence japonais. Donc que vous soyez en train de coupe, …"
+    }
+  ]
+}

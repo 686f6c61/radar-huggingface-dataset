@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-dequantized-oQ4e-mtp",
+  "slug": "symrex-qwen3-6-35b-a3b-uncensored-genesis-hermes-v13-dequantized-oq4e-mtp",
+  "author": "symrex",
+  "url": "https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-dequantized-oQ4e-mtp",
+  "created_at": "2026-09-03T11:20:19.000Z",
+  "updated_at": "2026-09-03T11:21:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 21625936953,
+  "storage_human": "21.6 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sporza: het laatste sportnieuws en sportuitslagen | Sporza",
+      "url": "https://sporza.be/nl/",
+      "snippet": "Hét sportnieuws en actuele sportuitslagen voor de sportfan en sporttechnicus. Volg populaire én kleine sporten nauwgezet vanuit elk …"
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-dequantized-oQ4e-mtp",
+      "url": "https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-dequantized-oQ4e-mtp",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Voetbal: het belangrijkste voetbalnieuws samengevat op 1 pagina - sporza",
+      "url": "https://sporza.be/nl/categorie/voetbal/",
+      "snippet": "Oct 9, 2022 · POLL: Dit is de droomloting voor Club Brugge van de Sporza-surfer, PSG en City als de te mijden tegenstanders"
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-dequantized-oQ4e-mtp",
+      "url": "https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-dequantized-oQ4e-mtp/discussions",
+      "snippet": "Instructions to use symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-dequantized-oQ4e-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Sporza - VRT",
+      "url": "https://www.vrt.be/nl/ons-aanbod/Sporza",
+      "snippet": "Sporza is het aanbodsmerk voor sport van de Vlaamse publieke omroep VRT. Sporza brengt op een onpartijdige, onafhankelijke en …"
+    }
+  ]
+}

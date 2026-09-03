@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "cryptobunny/IrisSpeak-135M",
+  "slug": "cryptobunny-irisspeak-135m",
+  "author": "cryptobunny",
+  "url": "https://huggingface.co/cryptobunny/IrisSpeak-135M",
+  "created_at": "2026-09-03T16:06:50.000Z",
+  "updated_at": "2026-09-03T16:08:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "llama",
+    "aac",
+    "augmentative-and-alternative-communication",
+    "next-card-prediction",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 136298880,
+  "parameters_human": "136.3M",
+  "storage_bytes": 1364840094,
+  "storage_human": "1.4 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kit Medidor De Glicose Lite Smart Bluetooth Auto Code G-Tech",
+      "url": "https://www.ultrafarma.com.br/kit-medidor-de-glicose-lite-smart-bluetooth-auto-code-g-tech",
+      "snippet": "Além da função Bluetooth, o medidor G-Tech Lite Smart, possui luzes indicativas de hipo e hiperglicemia, permitindo que o usuário …"
+    },
+    {
+      "title": "7 Medidores de Glicose Confiáveis para Uso Diário",
+      "url": "https://comocuidardasaude.com.br/medidores-de-glicose-confiaveis/",
+      "snippet": "Sep 21, 2025 · Medidores de glicose: 7 modelos confiáveis, aprovados por médicos e usuários. Saiba qual escolher para mais …"
+    },
+    {
+      "title": "Avalie os 5 melhores monitores de glicose no sangue de 2025",
+      "url": "https://tua-saude.com/avalie-os-5-melhores-monitores-de-glicose-no-sangue-de-2025",
+      "snippet": "Mar 10, 2025 · Este artigo recomenda e avalia os melhores monitores de glicose disponíveis em 2025, com base em fatores como …"
+    },
+    {
+      "title": "Top 10 Melhores Medidores de Glicose em 2026 (G-Tech, Accu",
+      "url": "https://br.my-best.com/18420",
+      "snippet": "O medidor de glicose é indispensável para quem precisa monitorar os níveis de açúcar no sangue no dia a dia. Ideal para o controle …"
+    },
+    {
+      "title": "Kit Medidor De Glicose Completo Bluetooth G-tech Lite Smart",
+      "url": "https://www.mirao.com.br/kit-medidor-de-glicose-completo-bluetooth-g-tech-lite-smart.html",
+      "snippet": "O Kit Medidor de Glicose G-Tech Lite Smart Bluetooth foi desenvolvido para tornar o monitoramento da glicemia mais prático, rápido …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "EricSpencer00/chattla-20b-proof-repair-gate25",
+  "slug": "ericspencer00-chattla-20b-proof-repair-gate25",
+  "author": "EricSpencer00",
+  "url": "https://huggingface.co/EricSpencer00/chattla-20b-proof-repair-gate25",
+  "created_at": "2026-09-03T18:10:33.000Z",
+  "updated_at": "2026-09-03T18:11:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:EricSpencer00/chattla-20b",
+    "grpo",
+    "lora",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:EricSpencer00/chattla-20b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43826103,
+  "storage_human": "44 MB",
+  "base_model": "EricSpencer00/chattla-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Modrinth",
+      "url": "https://modrinth.com/",
+      "snippet": "Download Minecraft mods, plugins, datapacks, shaders, resourcepacks, and modpacks on Modrinth. Discover and publish projects …"
+    },
+    {
+      "title": "EricSpencer00/chattla-20b · Hugging Face",
+      "url": "https://huggingface.co/EricSpencer00/chattla-20b",
+      "snippet": "ChatTLA-20b (v11) ChatTLA is a fine-tuned version of openai/gpt-oss-20b specialised in generating TLA+ formal specifications — the language used by AWS, Microsoft, and Intel to mathematically verify distributed systems. Given a plain-English description of a concurrent or distributed system, ChatTLA outputs a complete, syntactically valid TLA+ module including Init, Next, Spec, TypeOK, and ..."
+    },
+    {
+      "title": "Download Modrinth App",
+      "url": "https://modrinth.com/app",
+      "snippet": "Modrinth App is a unique, open source launcher that allows you to play your favorite mods, and keep them up to date, all in one neat …"
+    },
+    {
+      "title": "EricSpencer00/chattla-20b-prover-v3 · Hugging Face",
+      "url": "https://huggingface.co/EricSpencer00/chattla-20b-prover-v3",
+      "snippet": "Prior ChatTLA \"prover\" attempts trained on a corpus that was 98% TLC spec-gen data despite the name; v3 is the first iteration where the corpus is 100% proof targets and the eval measures tlapm -acceptance."
+    },
+    {
+      "title": "Modrinth",
+      "url": "https://modrinth.com/discover/mods",
+      "snippet": "Search and browse thousands of Minecraft mods on Modrinth with instant, accurate search results. Our filters help you quickly find …"
+    }
+  ]
+}

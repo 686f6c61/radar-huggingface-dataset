@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "divergent-tech/TaskKickstart-Avatar-v1",
+  "slug": "divergent-tech-taskkickstart-avatar-v1",
+  "author": "divergent-tech",
+  "url": "https://huggingface.co/divergent-tech/TaskKickstart-Avatar-v1",
+  "created_at": "2026-09-03T15:26:27.000Z",
+  "updated_at": "2026-09-03T15:26:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46340154,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Divergent (film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Divergent_(film)",
+      "snippet": "Divergent (film) ... Divergent is a 2014 American dystopian science fiction action film directed by Neil Burger, based on the 2011 novel …"
+    },
+    {
+      "title": "Divergent",
+      "url": "https://www.divergent.us/",
+      "snippet": "The Divergent Adaptive Production System is responsible for producing mission-critical, metal and multi-material structures for some of the most advanced aerospace, defense and automotive programs in the world."
+    },
+    {
+      "title": "Divergente — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Divergente",
+      "snippet": "Divergente (Divergent), ou Divergence au Québec, est un film de science-fiction américain de Neil Burger, sorti en 2014. C'est une …"
+    },
+    {
+      "title": "UnfilteredAI - Hugging Face",
+      "url": "https://huggingface.co/UnfilteredAI",
+      "snippet": "Org profile for UnfilteredAI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Divergent (2014) - IMDb",
+      "url": "https://www.imdb.com/title/tt1840309/",
+      "snippet": "Mar 21, 2014 · Divergent begins in a post-apocalyptic Chicago divided into five factions, each valuing one virtue - Dauntless …"
+    }
+  ]
+}

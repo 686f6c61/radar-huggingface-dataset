@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "pragmaticcs/SignOfFour-GGUF",
+  "slug": "pragmaticcs-signoffour-gguf",
+  "author": "pragmaticcs",
+  "url": "https://huggingface.co/pragmaticcs/SignOfFour-GGUF",
+  "created_at": "2026-09-02T12:00:20.000Z",
+  "updated_at": "2026-09-03T12:34:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "merge",
+    "ties",
+    "dare",
+    "moe",
+    "qwen",
+    "causal-lm",
+    "deltanet",
+    "agentic",
+    "code",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Jackrong/Qwopus3.6-35B-A3B-Coder",
+    "base_model:merge:Jackrong/Qwopus3.6-35B-A3B-Coder",
+    "base_model:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "base_model:merge:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "base_model:Qwen/Qwen-AgentWorld-35B-A3B",
+    "base_model:merge:Qwen/Qwen-AgentWorld-35B-A3B",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:merge:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21166757728,
+  "storage_human": "21.2 GB",
+  "base_model": "Jackrong/Qwopus3.6-35B-A3B-Coder, ornith-ai/Ornith-1.5-35B-A3B, Kwaipilot/KAT-Coder-V2.5-Dev, Qwen/Qwen-AgentWorld-35B-A3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nawiązywanie połączeń przez Bluetooth na telefonie Pixel",
+      "url": "https://support.google.com/pixelphone/answer/2819579?hl=pl",
+      "snippet": "Włączanie i wyłączanie Bluetootha w aplikacji Ustawienia Otwórz na urządzeniu aplikację Ustawienia. Kliknij Połączone urządzenia …"
+    },
+    {
+      "title": "Łączenie Chromebooka z urządzeniami Bluetooth",
+      "url": "https://support.google.com/chromebook/answer/2587653?hl=pl",
+      "snippet": "Kliknij Bluetooth Włącz . Kliknij + Sparuj nowe urządzenie. Urządzenie, które chcesz połączyć z Chromebookiem, musi być w trybie …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/zh-hans/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â½win8ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â´ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°/d8c51abf-b863-4da3-9596-797deace59f7",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡/55dd8522-1caa-4ae4-80b4-3d0fe4944f22",
+      "snippet": ""
+    },
+    {
+      "title": "Rozwiązywanie problemów z nawigacją głosową",
+      "url": "https://support.google.com/maps/answer/11523237?hl=pl&co=GENIE.Platform%3DiOS",
+      "snippet": "Włącz opcję Odtwarzaj głos przez Bluetooth. Rozpocznij nawigację. Przez kabel USB Ustaw USB jako źródło w systemie audio w …"
+    }
+  ]
+}

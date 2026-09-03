@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "robynhooood/Robyn-Agent",
+  "slug": "robynhooood-robyn-agent",
+  "author": "robynhooood",
+  "url": "https://huggingface.co/robynhooood/Robyn-Agent",
+  "created_at": "2026-09-03T18:09:44.000Z",
+  "updated_at": "2026-09-03T18:14:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "robinhood",
+    "robinhood-chain",
+    "agent",
+    "autonomous-agent",
+    "eliza-compatible",
+    "defi",
+    "trading",
+    "web3",
+    "ai-agents",
+    "text-generation",
+    "en",
+    "hi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 759907,
+  "storage_human": "759907 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Particulier - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "À la une Particulier Professionnel Demande d'aide de 100 € pour les travailleurs « grands rouleurs » Publié le 27 mai 2026 Vous avez …"
+    },
+    {
+      "title": "Robinhood is Now Open to Agents",
+      "url": "https://robinhood.com/us/en/newsroom/robinhood-is-now-open-to-agents/",
+      "snippet": "Robinhood is Now Open to Agents Customers can connect their own AI agents to Robinhood to help manage and automate trading and credit card purchases, with built-in safety controls and a real-time activity feed The future of agentic finance has arrived at Robinhood."
+    },
+    {
+      "title": "J'accède à mon espace Finances publiques et à mes services en ligne",
+      "url": "https://www.impots.gouv.fr/particulier/jaccede-mon-espace-particulier-et-mes-services-en-ligne",
+      "snippet": "Mar 30, 2016 · Guide d'accès et d'utilisation des services en ligne pour les particuliers Questions fréquentes J’ai égaré les identifiants …"
+    },
+    {
+      "title": "Trading with your agent | Robinhood",
+      "url": "https://robinhood.com/us/en/support/articles/trading-with-your-agent/",
+      "snippet": "Trading with your agent Margin borrowing is not yet enabled for Agentic accounts."
+    },
+    {
+      "title": "Avis d'impôt sur les revenus - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/avis-dimpot-sur-le-revenu",
+      "snippet": "Aug 18, 2016 · Votre avis d'impôt sur les revenus vous permet de justifier des revenus que vous avez déclarés à l'administration …"
+    }
+  ]
+}

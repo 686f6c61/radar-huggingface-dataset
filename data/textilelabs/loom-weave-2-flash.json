@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "textilelabs/Loom-Weave-2-Flash",
+  "slug": "textilelabs-loom-weave-2-flash",
+  "author": "textilelabs",
+  "url": "https://huggingface.co/textilelabs/Loom-Weave-2-Flash",
+  "created_at": "2026-09-03T14:49:57.000Z",
+  "updated_at": "2026-09-03T15:03:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "tiny-model",
+    "from-scratch",
+    "conversational",
+    "tool-use",
+    "calibrated-honesty",
+    "en",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19867008,
+  "parameters_human": "19.9M",
+  "storage_bytes": 124300178,
+  "storage_human": "124 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "160 Quotes of the Day for Daily Inspiration, Motivation and Lots of ...",
+      "url": "https://www.positivityblog.com/quote-of-the-day/",
+      "snippet": "Mar 26, 2025 · Looking for a quote of the day to help you make the most of today? To renew your motivation, inspiration and give you …"
+    },
+    {
+      "title": "textilelabs (Neo) - Hugging Face",
+      "url": "https://huggingface.co/textilelabs",
+      "snippet": "AI & ML interests Independent builder training small/efficient models from scratch on consumer hardware (CPU-only, no cloud). Currently exploring 1-bit/1.58-bit (BitNet-style) architectures, small language models, LoRA cartridges, and neuro-symbolic hybrids."
+    },
+    {
+      "title": "Quote of the Day - BrainyQuote",
+      "url": "https://www.brainyquote.com/quote_of_the_day",
+      "snippet": "16 hours ago · Share five inspirational Quotes of the Day with friends on Facebook, Twitter, and blogs. Enjoy our Brainy, Funny, …"
+    },
+    {
+      "title": "Generative AI Platform | AI APIs for Image, Video, Audio & LLMs - ModelsLab",
+      "url": "https://modelslab.com/",
+      "snippet": "Build with 1000+ AI models using one simple API with ModelsLab. Generate images, video, audio, and more fast, scalable, and cost-effective for developers."
+    },
+    {
+      "title": "Quote of the Day – Daily Motivation for Success & Positivity",
+      "url": "https://quotesninja.com/quote-of-the-day/",
+      "snippet": "Feb 20, 2026 · Start your day with our powerful Quote of the Day. Get daily motivational, inspirational, success, life, and positive …"
+    }
+  ]
+}

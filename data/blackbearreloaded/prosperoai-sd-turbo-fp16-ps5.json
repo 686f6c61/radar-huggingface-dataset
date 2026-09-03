@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "blackbearreloaded/ProsperoAI-SD-Turbo-FP16-PS5",
+  "slug": "blackbearreloaded-prosperoai-sd-turbo-fp16-ps5",
+  "author": "blackbearreloaded",
+  "url": "https://huggingface.co/blackbearreloaded/ProsperoAI-SD-Turbo-FP16-PS5",
+  "created_at": "2026-09-03T12:28:27.000Z",
+  "updated_at": "2026-09-03T12:32:09.000Z",
+  "license": "stability-ai-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "prosperoai",
+    "playstation-5",
+    "ps5",
+    "text-to-image",
+    "stable-diffusion",
+    "fp16",
+    "base_model:stabilityai/sd-turbo",
+    "base_model:finetune:stabilityai/sd-turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2580060470,
+  "storage_human": "2.6 GB",
+  "base_model": "stabilityai/sd-turbo",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vertical ŻALMAL - montaż do sufitu - YouTube",
+      "url": "https://www.youtube.com/watch?v=DcWWYTyMrYg",
+      "snippet": "Jun 29, 2013 · Verticale najczęściej mocowane są do sufitu. Montaż verticali nie jest trudny - najważniejsze jest dobre dopasowanie …"
+    },
+    {
+      "title": "Żaluzje pionowe, Verticale na wymiar | sklep internetowy Olmark",
+      "url": "https://wystroj-okien.pl/Verticale-Menu",
+      "snippet": "Klient decyduje o kolorze profilu, kierunku zwijania oraz sposobie montażu – do sufitu lub do ściany. W ujęciu praktycznym rolety …"
+    },
+    {
+      "title": "Verticale Warszawa - zalmal.pl",
+      "url": "https://zalmal.pl/pl/verticale/verticale_1",
+      "snippet": "Zamów verticale online, z opcją montażu. Producent verticali, żaluzji pionowych - szybkie terminy, super ceny. Od 1990 roku …"
+    },
+    {
+      "title": "Verticale - wyceń online | Modnie w Oknie",
+      "url": "https://www.modniewoknie.pl/przeslony-okienne/zaluzje-pionowe",
+      "snippet": "Verticale z pomiarem i montażem. Szybka wycena online. Dowiedz się więcej i wybierz idealne żaluzje dla siebie."
+    },
+    {
+      "title": "Montaż verticala - Dawmat - sprzedaż hurtowa i detaliczna osłon …",
+      "url": "https://mojerolety.pl/montaz_verticali.html",
+      "snippet": "DO ŚCIANY za pomocą wysięgników 1. Odmierzamy i montujemy wysięgniki (z zamontowanymi klipami montażowymi) do ściany. 2. …"
+    }
+  ]
+}

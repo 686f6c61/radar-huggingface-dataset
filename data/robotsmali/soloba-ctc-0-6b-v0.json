@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "RobotsMali/soloba-ctc-0.6b-v0",
+  "slug": "robotsmali-soloba-ctc-0-6b-v0",
+  "author": "RobotsMali",
+  "url": "https://huggingface.co/RobotsMali/soloba-ctc-0.6b-v0",
+  "created_at": "2025-09-08T20:49:13.000Z",
+  "updated_at": "2026-09-03T17:48:09.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "bm"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "Transducer",
+    "FastConformer",
+    "Conformer",
+    "pytorch",
+    "Bambara",
+    "NeMo",
+    "bm",
+    "dataset:RobotsMali/kunkado",
+    "dataset:RobotsMali/bam-asr-early",
+    "base_model:nvidia/parakeet-ctc-0.6b",
+    "base_model:finetune:nvidia/parakeet-ctc-0.6b",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2434017280,
+  "storage_human": "2.4 GB",
+  "base_model": "nvidia/parakeet-ctc-0.6b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Bam ASR Early",
+      "metric": "Test WER",
+      "value": 35.17694836588667
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Bam ASR Early",
+      "metric": "Test CER",
+      "value": 19.289739828611133
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Nyana Eval",
+      "metric": "Test WER",
+      "value": 43.36
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Nyana Eval",
+      "metric": "Test CER",
+      "value": 26.72
+    }
+  ],
+  "sources": [
+    {
+      "title": "Best Live Chat Software: User Reviews from September 2026 - G2",
+      "url": "https://www.g2.com/categories/live-chat",
+      "snippet": "Jun 3, 2026 · Top Live Chat Software. Choose the right Live Chat Software using real-time, up-to-date product reviews from 97546 …"
+    },
+    {
+      "title": "LiveChat Reviews 2026: Details, Pricing, & Features | G2",
+      "url": "https://www.g2.com/products/livechat/reviews",
+      "snippet": "Users consistently praise the ease of use and intuitive interface of LiveChat, highlighting how it simplifies customer interactions and …"
+    },
+    {
+      "title": "7 Best Live Chat Software: Why I Think These Are Gold - G2",
+      "url": "https://learn.g2.com/best-live-chat-software",
+      "snippet": "Apr 7, 2026 · When evaluating live chat software recommended by G2, I went beyond the basic features and dived into the technical …"
+    },
+    {
+      "title": "6 Best Free Live Chat Software for Startups for 2026 - G2",
+      "url": "https://learn.g2.com/free-live-chat-software",
+      "snippet": "Jul 23, 2026 · I reviewed 15+ tools to uncover the 6 best free live chat software for startups, including Tidio, Fin, and Zoho Desk, that …"
+    },
+    {
+      "title": "Best Live Chat Software for 2026 - Tools Reviews | Goodfirms",
+      "url": "https://www.goodfirms.co/live-chat-software/",
+      "snippet": "4 days ago · Are you looking for reliable live chat software for your business? Here is a list of the best live chat support software …"
+    }
+  ]
+}

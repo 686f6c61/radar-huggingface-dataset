@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kevinflores/perceiver-baseline",
+  "slug": "kevinflores-perceiver-baseline",
+  "author": "kevinflores",
+  "url": "https://huggingface.co/kevinflores/perceiver-baseline",
+  "created_at": "2026-09-03T15:25:23.000Z",
+  "updated_at": "2026-09-03T15:25:28.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Startseite – DIE ACHSE DES GUTEN. ACHGUT.COM",
+      "url": "https://www.achgut.com/",
+      "snippet": "Achgut.com bietet kritische und unabhängige Berichterstattung zu politischen, gesellschaftlichen und kulturellen Themen."
+    },
+    {
+      "title": "blog/perceiver.md at main · huggingface/blog · GitHub",
+      "url": "https://github.com/huggingface/blog/blob/main/perceiver.md",
+      "snippet": "The Transformer, originally introduced by Vaswani et al. in 2017, caused a revolution in the AI community, initially improving state-of-the-art (SOTA) results in machine translation. In 2018, BERT was released, a Transformer encoder-only model that crushed the benchmarks of natural language processing (NLP), most famously the GLUE benchmark. Not long after that, AI researchers started to apply ..."
+    },
+    {
+      "title": "Die Woche – DIE ACHSE DES GUTEN. ACHGUT.COM",
+      "url": "https://www.achgut.com/woche",
+      "snippet": "15 hours ago · Achgut.com publiziert seit dem Jahr 2004. Wollen Sie lesen, was an einem bestimmten Tag auf Achgut.com …"
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Achgut Shop",
+      "url": "https://shop.achgut.com/",
+      "snippet": "Kontakt Achgut-Edition Verlag der Achgut Media GmbH Postadresse: Postfach 2 77 07, 10130 Berlin Firmensitz: Achgut Media …"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Se0ulSeeker/ltx_2.3_i2v_nsfw_loras",
+  "slug": "se0ulseeker-ltx_2-3_i2v_nsfw_loras",
+  "author": "Se0ulSeeker",
+  "url": "https://huggingface.co/Se0ulSeeker/ltx_2.3_i2v_nsfw_loras",
+  "created_at": "2026-08-13T03:39:22.000Z",
+  "updated_at": "2026-09-03T12:55:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27448669833,
+  "storage_human": "27.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft - Sign in to your account",
+      "url": "http://make.powerapps.com/",
+      "snippet": "No account? Create one! Can’t access your account? Terms of use Privacy & cookies ..."
+    },
+    {
+      "title": "Se0ulSeeker/ltx_2.3_i2v_nsfw_loras · Hugging Face",
+      "url": "https://huggingface.co/Se0ulSeeker/ltx_2.3_i2v_nsfw_loras",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft Power Apps: KI-App-Generator mit wenig Code | Microsoft",
+      "url": "https://www.microsoft.com/de-de/power-platform/products/power-apps/?msockid=064c588d1081642c1d814f4411d26559",
+      "snippet": "Microsoft Power Apps ist ein App-Generator mit wenig Code, mit dem Sie benutzerdefinierte Geschäfts-Apps erstellen können, um …"
+    },
+    {
+      "title": "Se0ulSeeker/ltx_2.3_i2v_nsfw_loras at main - Hugging Face",
+      "url": "https://huggingface.co/Se0ulSeeker/ltx_2.3_i2v_nsfw_loras/tree/main/loras",
+      "snippet": "Se0ulSeeker / ltx_2.3_i2v_nsfw_loras like 0 Not-For-All-Audiences License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Microsoft Power Apps: Low-Code AI App Builder | Microsoft",
+      "url": "https://www.microsoft.com/en-us/power-platform/products/power-apps/?msockid=064c588d1081642c1d814f4411d26559",
+      "snippet": "Power Apps, as part of Power Platform on Microsoft Cloud, provides managed security, governance, and operational controls, …"
+    }
+  ]
+}

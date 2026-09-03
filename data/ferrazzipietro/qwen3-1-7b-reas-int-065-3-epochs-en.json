@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ferrazzipietro/Qwen3-1.7B-reas-int-065-3-epochs-en",
+  "slug": "ferrazzipietro-qwen3-1-7b-reas-int-065-3-epochs-en",
+  "author": "ferrazzipietro",
+  "url": "https://huggingface.co/ferrazzipietro/Qwen3-1.7B-reas-int-065-3-epochs-en",
+  "created_at": "2026-09-03T16:19:50.000Z",
+  "updated_at": "2026-09-03T18:22:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452618491,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Disney+ - Swisscom Community",
+      "url": "https://community.swisscom.ch/d/863278-disney",
+      "snippet": "Oct 29, 2025 · Zitat: Was muss ich nach der Bestellung machen, um Disney+ zu verwenden? Sie müssen im Anschluss an Ihre …"
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    },
+    {
+      "title": "Disney+ Ruckler - Swisscom Community",
+      "url": "https://community.swisscom.ch/d/863020-disney-ruckler",
+      "snippet": "Oct 19, 2025 · Hat noch jemand beim Disney+ abspielen Ruckler? Bei Sky, Netflix und Paramount ist das nicht. Neustart, Hotline …"
+    },
+    {
+      "title": "qwen3_1.7b_en · Models",
+      "url": "https://www.modelscope.cn/models/keras/qwen3_1.7b_en",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    },
+    {
+      "title": "Disney+在国区怎么看? - 知乎",
+      "url": "https://www.zhihu.com/question/362207030",
+      "snippet": "Disney+（漫威、星战、皮克斯、国家地理全在里面）在中国大陆不提供服务，国内想看要过”账号区域 + 付款”两关。这篇讲清套餐、 …"
+    }
+  ]
+}

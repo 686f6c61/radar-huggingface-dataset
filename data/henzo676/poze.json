@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "henzo676/poze",
+  "slug": "henzo676-poze",
+  "author": "henzo676",
+  "url": "https://huggingface.co/henzo676/poze",
+  "created_at": "2026-09-03T14:08:02.000Z",
+  "updated_at": "2026-09-03T14:08:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54447698,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CORRIERE DELLA SERA.it - Forum - Così è la vita",
+      "url": "http://forum.corriere.it/cosi_e_la_vita/?refresh_ce-cp",
+      "snippet": "Sentimenti e vita, risponde la giornalista e scrittrice Isabella Bossi Fedrigotti. Nei Forum del Corriere della Sera."
+    },
+    {
+      "title": "corriere della sera - Televisioni",
+      "url": "https://forumcorriere.corriere.it/televisioni/2022/06/21/corriere-della-sera/",
+      "snippet": "Jun 21, 2022 · Mi trovo disorientato nel leggere (online) il Corriere della sera perché mi ritrovo una sacco di notizie e articoli del …"
+    },
+    {
+      "title": "CORRIERE DELLA SERA.it - Forum - Scioglilingua",
+      "url": "http://forum.corriere.it/scioglilingua/16-12-2009/gli-manca-un-venerdi-1432094.html",
+      "snippet": "Dec 16, 2009 · Fausto Raso Mercoledì, 16 Dicembre 2009 Gli manca un venerdí Gli manca qualche venerdì Caro Professore, come …"
+    },
+    {
+      "title": "Un episodio a sera - Televisioni - forumcorriere.corriere.it",
+      "url": "https://forumcorriere.corriere.it/televisioni/2026/05/04/un-episodio-sera/",
+      "snippet": "May 4, 2026 · Dicono che per l'allungo dei Pacchi e della Ruota abbiano mozzato gli episodi delle fiction. Lo spezzatino delle serie fa …"
+    },
+    {
+      "title": "CORRIERE DELLA SERA.it - Forum - Scioglilingua",
+      "url": "http://forum.corriere.it/scioglilingua/quiz.html",
+      "snippet": "La nostra lingua è bella perché capricciosa: ha regole contraddette da eccezioni. In più si trasforma come tutto ciò che è vivo. Se …"
+    }
+  ]
+}

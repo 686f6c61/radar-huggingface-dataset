@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Filiphw/doctr-page-orientation",
+  "slug": "filiphw-doctr-page-orientation",
+  "author": "Filiphw",
+  "url": "https://huggingface.co/Filiphw/doctr-page-orientation",
+  "created_at": "2026-09-03T12:53:30.000Z",
+  "updated_at": "2026-09-03T12:53:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "doctr",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "doctr",
+    "pytorch",
+    "ocr",
+    "classification",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6219763,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Regular competitions - Lists & Indexes - MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/categories/regular-competitions",
+      "snippet": "3 days ago · Categories - Regularly updated lists of recurring magazine puzzles, daily entry comps etc."
+    },
+    {
+      "title": "Apple education discount - theEDUstore - MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/6151425/apple-education-discount-theedustore",
+      "snippet": "Jun 2, 2020 · Hi All, I work in education and get the student discount at the Apple store, but I've just heard about this other site called …"
+    },
+    {
+      "title": "Edustore V Apple edu store — MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/5599200/edustore-v-apple-edu-store",
+      "snippet": "Feb 7, 2017 · I am interested to buy a MacBook air 8gb 256 ssd at £892 with 3 yrs guarantee at Edustore inc discount for students & …"
+    },
+    {
+      "title": "Pensions, annuities & retirement planning - MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/categories/pensions-annuities-retirement-planning",
+      "snippet": "Aug 10, 2026 · Categories - For help with everything to do with pensions and retirement."
+    },
+    {
+      "title": "https://www.theedustore.co.uk/ — MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/5563645/https-www-theedustore-co-uk",
+      "snippet": "Nov 26, 2016 · Googling \"edustore reviews\" is not coming up with any reviews on the first couple of pages, it's more promotional …"
+    }
+  ]
+}

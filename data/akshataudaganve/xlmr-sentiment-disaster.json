@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "akshataudaganve/xlmr-sentiment-disaster",
+  "slug": "akshataudaganve-xlmr-sentiment-disaster",
+  "author": "akshataudaganve",
+  "url": "https://huggingface.co/akshataudaganve/xlmr-sentiment-disaster",
+  "created_at": "2026-09-03T16:21:23.000Z",
+  "updated_at": "2026-09-03T16:54:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278045186,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1128986556,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VRT MAX | tv-programma’s, podcasts en live radio",
+      "url": "https://www.vrt.be/vrtmax/",
+      "snippet": "Kijk én luister gratis naar het strafste aanbod van VRT. Van primetime tv-programma's, tot podcasts en live radiostreams. Ontdek het …"
+    },
+    {
+      "title": "VRT MAX",
+      "url": "https://www.vrt.be/vrtmax/livestream/video/vrt1/",
+      "snippet": "VRT MAX ... VRT MAX"
+    },
+    {
+      "title": "VRT MAX",
+      "url": "https://www.vrt.be/vrtmax/livestream/video/vrt1/?tab=livestreams",
+      "snippet": "Kijk live naar VRT 1 met VRT MAX via de site of app."
+    },
+    {
+      "title": "TV live kijken & herbekijken | VRT MAX",
+      "url": "https://www.vrt.be/vrtmax/kijk/",
+      "snippet": "Kijk live tv, of herbekijk onze tv-programma's. Op ieder moment, overal en helemaal gratis."
+    },
+    {
+      "title": "VRT 1 programma’s bekijken | VRT MAX",
+      "url": "https://www.vrt.be/vrtmax/kanalen/vrt1/",
+      "snippet": "Kijk live of herbekijk je favoriete programma van VRT 1 hier, wanneer je maar wil, waar je ook bent."
+    }
+  ]
+}

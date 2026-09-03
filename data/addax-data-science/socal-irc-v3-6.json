@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Addax-Data-Science/SOCAL-IRC-v3-6",
+  "slug": "addax-data-science-socal-irc-v3-6",
+  "author": "Addax-Data-Science",
+  "url": "https://huggingface.co/Addax-Data-Science/SOCAL-IRC-v3-6",
+  "created_at": "2026-09-03T14:58:19.000Z",
+  "updated_at": "2026-09-03T14:58:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83886672,
+  "storage_human": "84 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Addax — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Addax",
+      "snippet": "L' addax (Addax nasomaculatus) ou antilope à nez tacheté, est une espèce d' antilopes d'un genre monospécifique Addax et …"
+    },
+    {
+      "title": "Addax Data Science - Customised coding solutions for ecologists",
+      "url": "https://addaxdatascience.com/",
+      "snippet": "Addax offers customised coding solutions for more efficient data analysis and intelligent workflow automation. For ecologists and nature conservationists. Addax Data Science helps you achieve reliable, data-driven insights, from AI species recognition models to statistics and visualisation. Do your data fall outside the ecological sector?"
+    },
+    {
+      "title": "Laboratoire ADDAX – Soins experts pieds, mains et ongles",
+      "url": "https://laboratoire-addax.com/",
+      "snippet": "Laboratoire ADDAX, expert français en soins podologiques depuis 1996. Solutions ciblées pour pieds, mains et ongles. Haute …"
+    },
+    {
+      "title": "AddaxAI - Turn wildlife imagery into ecological data - Addax Data Science",
+      "url": "https://addaxdatascience.com/addaxai/",
+      "snippet": "AddaxAI identifies the animals in your camera-trap photos and videos. It takes care of the tedious part, so you can focus on the science."
+    },
+    {
+      "title": "ADDAX - Fabricant de matériel de projection béton par voie sèche",
+      "url": "https://addax-gunitage.com/",
+      "snippet": "Addax est fabricant de matériel de projection de béton par voie sèche depuis 1995, nous sommes spécialiste de la fabrication et de la …"
+    }
+  ]
+}

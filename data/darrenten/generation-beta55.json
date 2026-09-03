@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "darrenten/generation-beta55",
+  "slug": "darrenten-generation-beta55",
+  "author": "darrenten",
+  "url": "https://huggingface.co/darrenten/generation-beta55",
+  "created_at": "2026-09-03T17:34:15.000Z",
+  "updated_at": "2026-09-03T17:34:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instacart Free Wine Delivery Delivery or Pickup Near Me | Instacart",
+      "url": "https://www.instacart.com/store/s?k=instacart+free+wine+delivery&msockid=3844524e05fa66e93162458704a3673d",
+      "snippet": "Get Instacart Free Wine Delivery products you love delivered to you in as fast as 1 hour via Instacart. Start shopping online now with …"
+    },
+    {
+      "title": "awesome-ocr-resources/updates/2026/2026-08-29.md at master ... - GitHub",
+      "url": "https://github.com/ZumingHuang/awesome-ocr-resources/blob/master/updates/2026/2026-08-29.md",
+      "snippet": "Key suggestions include self-supervised learning, multimodal AI, automated machine learning (AutoML), AI-assisted postprocessing, tiny machine learning (TinyML), and the creation of joint corpora for script matching. The future recommendations aim to enhance OCR accuracy and tackle the challenges identified for real-time industrial applications."
+    },
+    {
+      "title": "Free Wine Delivery With Your Order Delivery or Pickup Near Me | Instacart",
+      "url": "https://www.instacart.com/store/s?k=free+wine+delivery+with+your+order&msockid=3844524e05fa66e93162458704a3673d",
+      "snippet": "Get Free Wine Delivery With Your Order products you love delivered to you in as fast as 1 hour via Instacart. Start shopping online …"
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic, Google, SpaceXAI & others Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Instacart Coupons - $50 off Code - September 2026 - RetailMeNot",
+      "url": "https://www.retailmenot.com/view/instacart.com",
+      "snippet": "1 day ago · Save at Instacart with 50 active coupons & promos verified by our experts. Free shipping offers & deals starting from $10 …"
+    }
+  ]
+}

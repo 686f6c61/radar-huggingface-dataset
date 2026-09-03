@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/gemma-4-E2B-it-GGUF",
+  "slug": "aoiandroid-gemma-4-e2b-it-gguf",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/gemma-4-E2B-it-GGUF",
+  "created_at": "2026-09-03T11:41:38.000Z",
+  "updated_at": "2026-09-03T11:41:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "unsloth",
+    "gemma",
+    "google",
+    "image-text-to-text",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 80672364096,
+  "storage_human": "80.7 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Smp 2026 - Tiri Viral",
+      "url": "https://tiriviral.store/smp-2026/",
+      "snippet": "Memasuki jenjang SMP, seorang anak akan mengalami masa transisi yang signifikan dari masa kanak-kanak menuju remaja. Di fase …"
+    },
+    {
+      "title": "Smp - VCS Viral",
+      "url": "https://vcsviral.forum/smp/",
+      "snippet": "Di era teknologi saat ini, istilah seperti SMP Viral atau Video Viral SMP seringkali muncul di media sosial. Hal ini menjadi pengingat …"
+    },
+    {
+      "title": "Smp - Viral New",
+      "url": "https://viralnew.wiki/smp/",
+      "snippet": "The “Smp” category is your go-to source for the latest trends and phenomena taking the Indonesian internet by storm. From hilarious …"
+    },
+    {
+      "title": "Smp Viral 2026 - Pengen Crotan",
+      "url": "https://pengencrotan.store/smp-viral-2026/",
+      "snippet": "Di era teknologi saat ini, istilah seperti SMP Viral atau Video Viral SMP seringkali muncul di media sosial. Hal ini menjadi pengingat …"
+    },
+    {
+      "title": "Smp Viral 2026 - 20 Viral",
+      "url": "https://20viral.wiki/smp-viral-2026/",
+      "snippet": "Dunia digital selalu bergerak cepat, terutama dalam kategori Viral Video yang terus mendominasi linimasa media sosial kita. …"
+    }
+  ]
+}

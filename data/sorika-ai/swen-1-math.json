@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sorika-ai/Swen-1-Math",
+  "slug": "sorika-ai-swen-1-math",
+  "author": "sorika-ai",
+  "url": "https://huggingface.co/sorika-ai/Swen-1-Math",
+  "created_at": "2026-09-03T18:35:42.000Z",
+  "updated_at": "2026-09-03T18:35:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "swen",
+    "text-generation",
+    "math",
+    "reasoning",
+    "cot",
+    "edge",
+    "sorika-labs",
+    "conversational",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help - Google Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "Best AI for Math 2026 - Top Mathematical Models",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-math",
+      "snippet": "Rankings of the best AI models for mathematical reasoning. Compare models by math problem solving and mathematical capabilities."
+    },
+    {
+      "title": "YouTube ความช่วยเหลือ",
+      "url": "https://support.google.com/youtube/?hl=th",
+      "snippet": "ขอรับความช่วยเหลือเกี่ยวกับโปรแกรมพาร์ทเนอร์ YouTube ดูข้อมูลอัปเดตล่าสุดบน YouTube รับความช่วยเหลือเกี่ยวกับ YouTube"
+    },
+    {
+      "title": "Math Solver - Free AI Math Solver with Step-by-Step Solutions",
+      "url": "https://math-solver.io/",
+      "snippet": "Solve any math problem instantly with MathSolver, the free AI math solver. Get step-by-Step solutions for algebra, calculus, geometry, and more. Upload a photo or type your equation."
+    },
+    {
+      "title": "谷歌账号注册验证无法发出信息怎么办? - 知乎",
+      "url": "https://www.zhihu.com/question/1945629068243481180",
+      "snippet": "3、国内注册的账号能否使用 YouTube 和 Google Play？ 完全可以。 Google 账号是全球通用的，注册成功后即可无缝登录谷歌全家桶 …"
+    }
+  ]
+}

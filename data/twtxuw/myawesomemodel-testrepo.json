@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "TWTXUW/MyAwesomeModel-TestRepo",
+  "slug": "twtxuw-myawesomemodel-testrepo",
+  "author": "TWTXUW",
+  "url": "https://huggingface.co/TWTXUW/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-03T13:46:56.000Z",
+  "updated_at": "2026-09-03T13:47:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Privacy Policy – Privacy & Terms – Google",
+      "url": "https://maps.google.pl/intl/en/policies/privacy/archive/20080807/",
+      "snippet": "Aug 7, 2008 · Google also uses cookies in its advertising services to help advertisers and publishers serve and manage ads across …"
+    },
+    {
+      "title": "Privacy Policy – Privacy & Terms – Google",
+      "url": "https://maps.google.pl/intl/en/policies/privacy/archive/20090311/",
+      "snippet": "Mar 11, 2009 · Location data – Google offers location-enabled services, such as Google Maps for mobile. If you use those services, …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.pl/maps?q=401++Ocean+Dr++Miami+Beach&hl=en",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.pl/intl/pl/earth/",
+      "snippet": "Google Earth to najbardziej fotorealistyczna cyfrowa wersja naszej planety. Skąd pochodzą zdjęcia? W jaki sposób są łączone? Jak …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.pl/mapfiles/home3.html",
+      "snippet": "Explore the world with Google Maps, featuring Street View, 3D mapping, navigation, indoor maps and more for your devices."
+    }
+  ]
+}

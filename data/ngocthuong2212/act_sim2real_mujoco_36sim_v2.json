@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ngocthuong2212/act_sim2real_mujoco_36sim_v2",
+  "slug": "ngocthuong2212-act_sim2real_mujoco_36sim_v2",
+  "author": "ngocthuong2212",
+  "url": "https://huggingface.co/ngocthuong2212/act_sim2real_mujoco_36sim_v2",
+  "created_at": "2026-09-03T11:52:54.000Z",
+  "updated_at": "2026-09-03T11:53:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:vasco281204/so101_sim2real_baseline_green_block_mix_36_64_200",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prokuratura Krajowa - Portal Gov.pl",
+      "url": "https://www.gov.pl/web/prokuratura-krajowa",
+      "snippet": "Aug 18, 2026 · Wojskowy Przegląd Prawniczy Historia Prokuratury Działalność cywilna i administracyjna Prokuratura i Prawo"
+    },
+    {
+      "title": "Prokuratura w Polsce – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Prokuratura_w_Polsce",
+      "snippet": "Prokuratura w Polsce – służba publiczna stanowiąca hierarchiczną strukturę organów o uprawnieniach śledczych, o zadaniach z …"
+    },
+    {
+      "title": "Przedmiot działalności i kompetencje - Prokuratura Krajowa - Portal …",
+      "url": "https://www.gov.pl/web/prokuratura-krajowa/przedmiot-dzialalnosci-i-kompetencje10",
+      "snippet": "Prokuratura wykonuje zadania w zakresie ścigania przestępstw oraz stoi na straży praworządności. Obowiązki te Prokurator …"
+    },
+    {
+      "title": "Prokuratura – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Prokuratura",
+      "snippet": "Prokuratura – urząd państwowy powołany do stania na straży praworządności. Zazwyczaj swój cel prokuratura realizuje poprzez …"
+    },
+    {
+      "title": "Strona logowania - Portal Przeglądania Akt",
+      "url": "https://przegladanieakt.prokuratura.gov.pl/pl-PL/Account/Login",
+      "snippet": "„Kto bez zezwolenia rozpowszechnia publicznie wiadomości z postępowania przygotowawczego, zanim zostały ujawnione w …"
+    }
+  ]
+}

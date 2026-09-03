@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "JWei05/DAPO-gemma4-e2b-PT-DeepScaleR-gemma26b-hard-seed42-local2gpu",
+  "slug": "jwei05-dapo-gemma4-e2b-pt-deepscaler-gemma26b-hard-seed42-local2gpu",
+  "author": "JWei05",
+  "url": "https://huggingface.co/JWei05/DAPO-gemma4-e2b-PT-DeepScaleR-gemma26b-hard-seed42-local2gpu",
+  "created_at": "2026-09-03T05:38:34.000Z",
+  "updated_at": "2026-09-03T17:26:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77395682352,
+  "storage_human": "77.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Memorial Day - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Memorial_Day",
+      "snippet": "By 1890, every state had adopted it. The world wars turned it into a day of remembrance for all members of the U.S. military who …"
+    },
+    {
+      "title": "Memorial Day | Weekend, Meaning, Facts, & History | Britannica",
+      "url": "https://www.britannica.com/topic/Memorial-Day",
+      "snippet": "Aug 18, 2026 · Memorial Day, in the United States, holiday (last Monday in May) honoring those who have died while serving in the …"
+    },
+    {
+      "title": "Memorial Day: 2026 Date, Meaning & Origins | HISTORY",
+      "url": "https://www.history.com/articles/memorial-day-history",
+      "snippet": "Oct 27, 2009 · Observed every year on the last Monday of May, Memorial Day was originally called Decoration Day in a nod to the …"
+    },
+    {
+      "title": "Memorial Day Dates 2025–2045 | When Is Memorial Day Each Year ...",
+      "url": "https://monthlycalendar.net/memorial-day-dates",
+      "snippet": "May 4, 2026 · Memorial Day in the United States is the last Monday in May. It is a federal holiday honouring US service members …"
+    },
+    {
+      "title": "What Is Memorial Day? | History and Traditions - FamilySearch",
+      "url": "https://www.familysearch.org/en/blog/what-is-memorial-day",
+      "snippet": "May 22, 2026 · Memorial Day is a United States national holiday that honors the country's military members who died in service. The …"
+    }
+  ]
+}

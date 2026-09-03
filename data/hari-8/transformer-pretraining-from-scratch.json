@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "hari-8/transformer-pretraining-from-scratch",
+  "slug": "hari-8-transformer-pretraining-from-scratch",
+  "author": "hari-8",
+  "url": "https://huggingface.co/hari-8/transformer-pretraining-from-scratch",
+  "created_at": "2026-09-03T18:16:36.000Z",
+  "updated_at": "2026-09-03T18:28:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "decoder_transformer_scratch",
+    "text-generation",
+    "decoder-only",
+    "from-scratch",
+    "pytorch",
+    "causal-lm",
+    "custom_code",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 69284608,
+  "parameters_human": "69.3M",
+  "storage_bytes": 277144440,
+  "storage_human": "277 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "spotify账号怎么登不上? - 知乎",
+      "url": "https://www.zhihu.com/question/329216939",
+      "snippet": "spotify每隔14天会强制登录，届时手机app和桌面应用都没法登录，会弹出国家限制问题。 如何解决我找了很多方法但是都没有用，下 …"
+    },
+    {
+      "title": "Hrishvi/ai8-transformer-from-scratch-python - GitHub",
+      "url": "https://github.com/Hrishvi/ai8-transformer-from-scratch-python",
+      "snippet": "A deep-dive Transformer model built from scratch in Python. Implementing self-attention, tokenization, and matrix weights without high-level libraries. - Hrishvi/ai8-transformer-from-scratch-python"
+    },
+    {
+      "title": "Spotify所有曲目都无法显示，该怎么解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/2056032883077386271",
+      "snippet": "我的Spotify突然所有曲目都显示成这样的状态，歌名和封面都加载不出来，想知道是怎么回事。"
+    },
+    {
+      "title": "I trained a small transformer in 1.5hrs and it beats many LLMs | Hacker ...",
+      "url": "https://news.ycombinator.com/item?id=49519939",
+      "snippet": "I trained a small transformer in 1.5hrs and it beats many LLMs (mvakde.github.io) 378 points by porridgeraisin 8 hours ago | hide | past | favorite | 102 comments"
+    },
+    {
+      "title": "spotify安卓下载 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/066074d6d320b282c21cb0a0.html",
+      "snippet": "Apr 23, 2025 · spotify安卓下载,Sotify是一个正版流媒体音乐服务平台，2008年10月在瑞典首都斯德哥尔摩正式上线。Sotify提供免费和 …"
+    }
+  ]
+}

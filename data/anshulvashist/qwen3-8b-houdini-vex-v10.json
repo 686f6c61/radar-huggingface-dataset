@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "anshulVashist/Qwen3-8B-Houdini-VEX-v10",
+  "slug": "anshulvashist-qwen3-8b-houdini-vex-v10",
+  "author": "anshulVashist",
+  "url": "https://huggingface.co/anshulVashist/Qwen3-8B-Houdini-VEX-v10",
+  "created_at": "2026-09-03T14:00:21.000Z",
+  "updated_at": "2026-09-03T14:11:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939748,
+  "storage_human": "16.4 GB",
+  "base_model": "unsloth/qwen3-8b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/",
+      "snippet": "Už jste někdy jedli oběd nebo večeři ve starém vlakovém kupé? Pokud někdy zavítáte do oblasti Křivoklátska a na svých toulkách …"
+    },
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/500",
+      "snippet": "Jejda, tak tohle se nepovedlo. Pracujeme na opravě."
+    },
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/404",
+      "snippet": "Jejda, tahle adresa neexistuje."
+    },
+    {
+      "title": "Seznam Zprávy – Seznam.cz",
+      "url": "https://www.seznam.cz/zdroj/286-seznam-zpravy",
+      "snippet": "Měla to být obyčejná práce na kanalizaci při rekonstrukci starého domu. Pak se ale mezi sutí objevilo něco, co nejdřív vypadalo jako …"
+    },
+    {
+      "title": "Aktuálně – Seznam.cz",
+      "url": "https://www.seznam.cz/zdroj/5-aktualne",
+      "snippet": "Černý kříženec se topil v řece a sám by se zřejmě do bezpečí nedostal. Naštěstí si ho všiml kolemjdoucí, který psa po záchraně …"
+    }
+  ]
+}

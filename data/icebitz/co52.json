@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "icebitz/co52",
+  "slug": "icebitz-co52",
+  "author": "icebitz",
+  "url": "https://huggingface.co/icebitz/co52",
+  "created_at": "2026-08-17T00:43:43.000Z",
+  "updated_at": "2026-09-03T11:49:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 139504426128,
+  "storage_human": "139.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SNCF Connect : Réservez vos billets SNCF, bus et covoiturage",
+      "url": "https://www.sncf-connect.com/",
+      "snippet": "Réservez vos Billets de Train au meilleur prix sur SNCF Connect ! Retrouvez aussi notre offre de cartes de réduction, abonnements …"
+    },
+    {
+      "title": "SNCF Connect : Book your train tickets to France and Europe",
+      "url": "https://www.sncf-connect.com/en-en",
+      "snippet": "Download the SNCF Connect app for faster, easier and cleaner mobility across France. With one touch, you can organise, book and …"
+    },
+    {
+      "title": "Gérer ma réservation - SNCF Connect",
+      "url": "https://secure.location-voiture.sncf-connect.com/votreReservation",
+      "snippet": "Tirez le maximum de Votre Avis. Gérez vos réservations, modifiez vos informations personnelles, vos paramètres et découvrez les …"
+    },
+    {
+      "title": "Accueil | Connect & Vous",
+      "url": "https://www.vous.sncf-connect.com/",
+      "snippet": "A propos SNCF Connect est le service digital qui permet d'acheter et gérer tous vos trajets, du 1ᵉʳ au dernier kilomètre avec : l'achat …"
+    },
+    {
+      "title": "Communauté | Connect & Vous",
+      "url": "http://www.vous.sncf-connect.com/community",
+      "snippet": "Dans la rubrique \"Communauté\", découvrez régulièrement : - Le portrait de certains de nos membres, - Les coulisses de SNCF …"
+    }
+  ]
+}

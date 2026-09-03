@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Moleys/hirashiba-mt-4e8d-512-zh2vi",
+  "slug": "moleys-hirashiba-mt-4e8d-512-zh2vi",
+  "author": "Moleys",
+  "url": "https://huggingface.co/Moleys/hirashiba-mt-4e8d-512-zh2vi",
+  "created_at": "2026-09-03T12:36:35.000Z",
+  "updated_at": "2026-09-03T12:36:48.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "chinese-vietnamese",
+    "webnovel",
+    "nmt",
+    "machine-translation",
+    "zh",
+    "vi",
+    "dataset:chi-vi/hirashiba-mt-zh2vi-b-filtered",
+    "license:gpl-3.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 71662505,
+  "parameters_human": "71.7M",
+  "storage_bytes": 286686957,
+  "storage_human": "287 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trade Crypto, Predict Outcomes & Earn — All in One Platform | Gemini",
+      "url": "https://www.gemini.com/",
+      "snippet": "The crypto super app for trading, predicting, and earning. Buy 90+ cryptos, trade prediction markets, and earn with staking and the …"
+    },
+    {
+      "title": "Moleys (Moleys) - Hugging Face",
+      "url": "https://huggingface.co/Moleys",
+      "snippet": "Hirashiba Mt Tiny Vp Zh 📊 Translate Vietnamese text to Chinese Moleys Nov 10, 2025 models3"
+    },
+    {
+      "title": "Buy & Sell Bitcoin, Ethereum and 80+ Cryptos Securely with ... - Gemini",
+      "url": "https://www.gemini.com/exchange",
+      "snippet": "Trade crypto with confidence on Gemini Exchange. Enjoy a secure, easy-to-use platform to buy, sell, and store Bitcoin, Ethereum, …"
+    },
+    {
+      "title": "Moleys/hirashiba-mt-medium · Hugging Face",
+      "url": "https://huggingface.co/Moleys/hirashiba-mt-medium",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Signing in – Gemini",
+      "url": "https://support.gemini.com/hc/en-us/sections/38744605103131-Signing-in",
+      "snippet": "A simple, secure way to buy and sell cryptocurrency Trade bitcoin and other cryptos in 3 minutes."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "oracomputing/Qwen3.5-9B-OQ-EXL3",
+  "slug": "oracomputing-qwen3-5-9b-oq-exl3",
+  "author": "oracomputing",
+  "url": "https://huggingface.co/oracomputing/Qwen3.5-9B-OQ-EXL3",
+  "created_at": "2026-08-10T16:45:47.000Z",
+  "updated_at": "2026-09-03T12:52:36.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "qwen3",
+    "qwen3.5",
+    "text-generation",
+    "compressed",
+    "quantized",
+    "exl3",
+    "exllamav3",
+    "oraquant",
+    "evaluation-only",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 2347781120,
+  "parameters_human": "2.35B",
+  "storage_bytes": 4708476086,
+  "storage_human": "4.7 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "reddit",
+      "url": "https://www.reddit.com/r/reddit/wiki/index/",
+      "snippet": "The most official Reddit community of all official Reddit communities. Your go-to place for Reddit updates, announcements, and …"
+    },
+    {
+      "title": "איך מקבלים תמיכה ב-YouTube TV - מחשב - YouTube עזרה",
+      "url": "https://support.google.com/youtube/answer/7247018?hl=iw&co=GENIE.Platform%3DDesktop",
+      "snippet": "קבלת תמיכה ב-YouTube TV בנוסף לכפתור \"יצירת קשר\" שלמעלה, אתם יכולים ליצור איתנו קשר גם באפליקציית YouTube TV לנייד או במחשב. …"
+    },
+    {
+      "title": "איך יוצרים קשר עם יוטיוב ? - FXP",
+      "url": "https://www.fxp.co.il/showthread.php?t=4825267",
+      "snippet": "Oct 30, 2009 · ובאיזה שפה ? כיאילו לבקש מהם בעברית או אנגלית לכל החכמים,שינו לי סיסמא ואיימיל,אין לי מה לנסות. בבקשה תעזרו רלוונטי👇👍 ערוץ …"
+    }
+  ]
+}

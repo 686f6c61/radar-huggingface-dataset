@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "shishi17777/opus-mt-ja-zh",
+  "slug": "shishi17777-opus-mt-ja-zh",
+  "author": "shishi17777",
+  "url": "https://huggingface.co/shishi17777/opus-mt-ja-zh",
+  "created_at": "2026-09-03T14:05:43.000Z",
+  "updated_at": "2026-09-03T14:05:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja",
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "marian",
+    "ja",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 622617538,
+  "storage_human": "623 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps. If there are …"
+    },
+    {
+      "title": "Maps Trợ giúp",
+      "url": "https://support.google.com/maps/?hl=vi",
+      "snippet": "Trung tâm Trợ giúp Maps chính thức, nơi bạn có thể tìm thấy các mẹo và hướng dẫn sử dụng sản phẩm và các câu trả lời khác cho …"
+    },
+    {
+      "title": "6 tính năng AI vừa được cập nhật của Google Maps",
+      "url": "https://tinhte.vn/thread/6-tinh-nang-ai-vua-duoc-cap-nhat-cua-google-maps.3770081/",
+      "snippet": "Mar 14, 2024 · Bây giờ Google Maps cũng đã được tích hợp AI, với 1 bản nâng cấp lớn. Dưới đây là 6 tính năng Ai của Google …"
+    },
+    {
+      "title": "Карти Довідка",
+      "url": "https://support.google.com/maps/?hl=uk",
+      "snippet": "Офіційний довідковий центр Карти, де можна знайти поради та навчальні посібники щодо користування цим продуктом, а …"
+    },
+    {
+      "title": "Hjælp til Maps",
+      "url": "https://support.google.com/maps/?hl=da",
+      "snippet": "Den officielle Maps Hjælp, hvor du kan finde tip og vejledning i, hvordan du bruger produktet, og andre svar på ofte stillede spørgsmål."
+    }
+  ]
+}

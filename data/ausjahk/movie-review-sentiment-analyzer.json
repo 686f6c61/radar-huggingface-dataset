@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ausjahk/movie-review-sentiment-analyzer",
+  "slug": "ausjahk-movie-review-sentiment-analyzer",
+  "author": "ausjahk",
+  "url": "https://huggingface.co/ausjahk/movie-review-sentiment-analyzer",
+  "created_at": "2026-09-03T17:54:59.000Z",
+  "updated_at": "2026-09-03T17:56:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837825,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Partir à Hong Kong : votre guide de voyage sur mesure",
+      "url": "https://www.partir.com/Hong-kong/",
+      "snippet": "Oct 7, 2025 · Touce qu'il faut savoir pour voyager à Hong Kong. Météo, lieux d'intérêts, meilleures agences..."
+    },
+    {
+      "title": "aadib2/movie-review-sentiment-analyzer - GitHub",
+      "url": "https://github.com/aadib2/movie-review-sentiment-analyzer",
+      "snippet": "🎬 Movie Reviews Sentiment Analysis A machine learning web app for analyzing movie review sentiment using natural language processing and explainable AI. Built with scikit-learn, NLTK, SHAP, and Streamlit, this project classifies movie reviews as positive or negative with detailed explanations of model predictions."
+    },
+    {
+      "title": "Guide de voyage à Hong Kong - thechinajourney.com",
+      "url": "https://www.thechinajourney.com/fr/guide-de-voyage-a-hong-kong/",
+      "snippet": "May 5, 2026 · Découvrez la silhouette emblématique de Hong Kong, sa cuisine de rue, ses boutiques et ses ruelles cachées dans ce …"
+    },
+    {
+      "title": "movie-review-sentiment-analyzer - GitHub",
+      "url": "https://github.com/geoking41/movie-review-sentiment-analyzer",
+      "snippet": "For Beginner Learning: AI model trained with Gensim and scikit-learn for classifying movie reviews as positive or negative - geoking41/movie-review-sentiment-analyzer"
+    },
+    {
+      "title": "Voyage Hong Kong - Partir en vacances à Hong Kong - Routard.com",
+      "url": "https://www.routard.com/fr/guide/asie/chine/hong-kong",
+      "snippet": "Aug 18, 2020 · Préparez votre voyage à Hong Kong : incontournables et itinéraires, infos culturelles et pratiques, idées voyage, …"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "trtd56/LFM2.5-1.2B-JP-DailyTechResearch-Collect-LoRA",
+  "slug": "trtd56-lfm2-5-1-2b-jp-dailytechresearch-collect-lora",
+  "author": "trtd56",
+  "url": "https://huggingface.co/trtd56/LFM2.5-1.2B-JP-DailyTechResearch-Collect-LoRA",
+  "created_at": "2026-09-03T12:45:24.000Z",
+  "updated_at": "2026-09-03T12:45:45.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "liquid",
+    "lfm2",
+    "lfm2.5",
+    "lora",
+    "japanese",
+    "translation",
+    "summarization",
+    "text-classification",
+    "text-generation",
+    "ja",
+    "en",
+    "dataset:other",
+    "base_model:LiquidAI/LFM2.5-1.2B-JP",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-JP",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22236432,
+  "storage_human": "22 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-JP",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "snippet": "Download WhatsApp on your mobile device, tablet or desktop and stay connected with reliable private messaging and calling. …"
+    },
+    {
+      "title": "WhatsApp | Messages et appels privés, gratuits, sûrs et fiables",
+      "url": "https://www.whatsapp.com/?lang=fr",
+      "snippet": "Utilisez l’application WhatsApp Messenger pour rester en contact avec vos proches. WhatsApp permet d’envoyer des messages et …"
+    },
+    {
+      "title": "HOUSAB - WhatsApp",
+      "url": "https://wa.me/",
+      "snippet": "Hosted by WhatsApp 2026 © WhatsApp LLC Privacy & Terms"
+    },
+    {
+      "title": "WhatsApp",
+      "url": "https://wa.me/?l=fr",
+      "snippet": "Hébergé par : WhatsApp 2026 © WhatsApp LLC Confidentialité et Conditions"
+    }
+  ]
+}

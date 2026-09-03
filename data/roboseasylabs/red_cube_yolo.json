@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "roboseasylabs/red_cube_yolo",
+  "slug": "roboseasylabs-red_cube_yolo",
+  "author": "roboseasylabs",
+  "url": "https://huggingface.co/roboseasylabs/red_cube_yolo",
+  "created_at": "2026-09-03T13:36:33.000Z",
+  "updated_at": "2026-09-03T14:42:44.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "yolo",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21511956,
+  "storage_human": "22 MB",
+  "base_model": "yolo26n.pt",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "Precision",
+      "value": 0.9747
+    },
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "Recall",
+      "value": 0.9752
+    },
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "mAP@50",
+      "value": 0.9898
+    },
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "mAP@50-95",
+      "value": 0.9856
+    }
+  ],
+  "sources": [
+    {
+      "title": "MOI Qatar - Ministry of interior Qatar",
+      "url": "https://portal.moi.gov.qa/wps/portal/moiinternet/services/inquiries/visaservices",
+      "snippet": "The official website of the Ministry of Interior, Qatar: Your gateway to know the activities and services of the Ministry of Interior."
+    },
+    {
+      "title": "GitHub - azaleadj/cube_yolo: YOLOv8-based real-time Rubik’s Cube ...",
+      "url": "https://github.com/azaleadj/cube_yolo",
+      "snippet": "Rubik’s Cube Detection using YOLOv8 This project trains a custom YOLOv8 model to detect Rubik’s Cubes in real-time using a camera feed. It includes both model training and live object detection code, and can be connected to a robot for further manipulation tasks."
+    },
+    {
+      "title": "Visa Inquiry & Printing - وزارة الداخلية",
+      "url": "https://portal.moi.gov.qa/wps/portal/MOIInternet/services/inquiries/visaservices/enquiryandprinting",
+      "snippet": "The official website of the Ministry of Interior, Qatar: Your gateway to know the activities and services of the Ministry of Interior."
+    },
+    {
+      "title": "Yolo Cube Object Detection Dataset by Silents Workspace",
+      "url": "https://universe.roboflow.com/silents-workspace/yolo-cube",
+      "snippet": "50 open source yolo images. Yolo Cube dataset by Silents Workspace"
+    },
+    {
+      "title": "QVC | Qatar Visa Center",
+      "url": "https://www.qatarvisacenter.com/",
+      "snippet": "Book your Qatar visa appointment by selecting language and country of residence."
+    }
+  ]
+}

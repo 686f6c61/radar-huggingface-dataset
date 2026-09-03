@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chiaweicfi/efficientformer-generation-large",
+  "slug": "chiaweicfi-efficientformer-generation-large",
+  "author": "chiaweicfi",
+  "url": "https://huggingface.co/chiaweicfi/efficientformer-generation-large",
+  "created_at": "2026-09-03T16:06:36.000Z",
+  "updated_at": "2026-09-03T16:06:41.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing Gigafast+ - Sky Help Forum",
+      "url": "https://helpforum.sky.com/t5/Broadband-Talk/Introducing-Gigafast/bc-p/5135020",
+      "snippet": "Nov 7, 2025 · Get ready for the fastest speeds offered yet with Sky. Introducing the new Gigafast+ subscription offering speeds up to …"
+    },
+    {
+      "title": "Account & Billing Board | Sky Community",
+      "url": "https://helpforum.sky.com/t5/Account-Billing/bd-p/skyvip/redirect_from_archived_page/true",
+      "snippet": "2 days ago · Have any questions on your Sky account or have billing issues? Why not raise a post with our Sky Community members?"
+    },
+    {
+      "title": "Sky Q Box not connecting to wifi | Sky Community",
+      "url": "https://helpforum.sky.com/t5/Sky-Q/Sky-Q-Box-not-connecting-to-wifi/td-p/5108385",
+      "snippet": "Oct 6, 2025 · Help out sky Q box keeps losing the WiFi signal even though our WiFi is on and in use on all other devices including …"
+    },
+    {
+      "title": "SKY GO & WINDOWS 10/11 LAPTOP ISSUES",
+      "url": "https://helpforum.sky.com/t5/Sky-Go/SKY-GO-amp-WINDOWS-10-11-LAPTOP-ISSUES/td-p/4564740",
+      "snippet": "Feb 16, 2024 · There are a multitude of chains about the issue of Sky Go not loading on laptops and just 'hanging' at the start screen. …"
+    },
+    {
+      "title": "Sky go app not working on windows 11 | Sky Community",
+      "url": "https://helpforum.sky.com/t5/Sky-Go/Sky-go-app-not-working-on-windows-11/td-p/4306924",
+      "snippet": "May 12, 2023 · Hi, I have seen a very similar post where a person is having the same problems as me. Back in December 2022 I …"
+    }
+  ]
+}

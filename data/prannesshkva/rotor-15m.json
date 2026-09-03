@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Prannesshkva/ROTOR-15M",
+  "slug": "prannesshkva-rotor-15m",
+  "author": "Prannesshkva",
+  "url": "https://huggingface.co/Prannesshkva/ROTOR-15M",
+  "created_at": "2026-09-03T17:52:02.000Z",
+  "updated_at": "2026-09-03T18:18:47.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "rotor",
+    "rotor-15m",
+    "non-abelian",
+    "quaternion",
+    "spinor",
+    "lie-group",
+    "su2",
+    "cross-attention-replacement",
+    "attention-free",
+    "dense",
+    "edge-ai",
+    "sequence-modeling",
+    "pytorch",
+    "prannesshkva",
+    "text-generation",
+    "custom_code",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 46786464,
+  "parameters_human": "46.8M",
+  "storage_bytes": 187152936,
+  "storage_human": "187 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alice Webmail Zimbra",
+      "url": "https://zimbra.aliceadsl.fr/",
+      "snippet": "Un accÃšs direct Ã tous vos emails Pour acceder à votre webmail, veuillez vous identifier Mot de passe oublié ? Pas encore client ? …"
+    },
+    {
+      "title": "Prannesshkva/QU-SSM-15M · Hugging Face",
+      "url": "https://huggingface.co/Prannesshkva/QU-SSM-15M",
+      "snippet": "QU-SSM-15M is a standalone, from-scratch State Space Model architecture that eliminates contractive Hurwitz dissipation in linear recurrent models by parameterizing transitions in the Lie Group SO (N) via the Cayley transform while enabling selective noise filtering via dynamic forget gating. Author: Prannessh K.V.A. (prannesshkva@gmail.com)"
+    },
+    {
+      "title": "Alice Webmail Zimbra",
+      "url": "https://zimbra.aliceadsl.fr/?client=standard",
+      "snippet": "Pas encore client ? Pour profiter de tous les services Alice, vous devez être abonné. Découvrez nos offres d'abonnement"
+    },
+    {
+      "title": "Prannesshkva/QU-SSM-15M at main - Hugging Face",
+      "url": "https://huggingface.co/Prannesshkva/QU-SSM-15M/tree/main",
+      "snippet": "Prannesshkva / QU-SSM-15M like 1 Text Generation Safetensors roneneldan/TinyStories English qu_ssm state-space-model ssm quasi-unitary Mixture of Experts mixture-of-experts lie-group multimodal causal-lm custom_code License:cc-by-nc-nd-4.0 Model card FilesFiles and versions xet Community Copy to bucket new main QU-SSM-15M 123 MB Ctrl+K Ctrl+K 1 ..."
+    },
+    {
+      "title": "Alice Webmail Zimbra",
+      "url": "https://zimbra.aliceadsl.fr/poz/",
+      "snippet": "Accédez facilement à vos emails via le Webmail de Free. Pour une gestion efficace des emails via une interface intuitive. Connectez …"
+    }
+  ]
+}

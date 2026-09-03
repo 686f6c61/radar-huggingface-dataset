@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "julia-bel/comp_mistral_pretrain_4M",
+  "slug": "julia-bel-comp_mistral_pretrain_4m",
+  "author": "julia-bel",
+  "url": "https://huggingface.co/julia-bel/comp_mistral_pretrain_4M",
+  "created_at": "2026-09-03T17:00:39.000Z",
+  "updated_at": "2026-09-03T17:05:40.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "PISCO",
+    "pisco",
+    "context-compression",
+    "soft-prompt",
+    "autoencoding",
+    "lora",
+    "llama",
+    "mistral",
+    "text-generation",
+    "en",
+    "dataset:EleutherAI/SmolLM2-135M-10B",
+    "arxiv:2501.16075",
+    "base_model:meta-llama/Llama-3.2-1B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.2-1B-Instruct",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3924049413,
+  "storage_human": "3.9 GB",
+  "base_model": "meta-llama/Llama-3.2-1B-Instruct, mistralai/Mistral-7B-Instruct-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're …"
+    },
+    {
+      "title": "AITAH - Reddit",
+      "url": "https://www.reddit.com/r/AITAH/",
+      "snippet": "r/AITAH: this is a community like r/AmITheAsshole except unlike that subreddit here you can post interpersonal conflicts, anything …"
+    },
+    {
+      "title": "ChatGPT Plus 正式恢复五小时使用上限，Codex 长任务体验会受影响 …",
+      "url": "https://www.zhihu.com/question/2075903044676315058",
+      "snippet": "Aug 26, 2026 · 可以看看公众号老冯云数怎么用7-10个20x产生巨大生产力的， 《OPC一个月烧1000刀订阅，能有多少产出？ 》 的时 …"
+    },
+    {
+      "title": "NanoChat – The best ChatGPT that $100 can buy - GitHub",
+      "url": "https://github.com/karpathy/nanochat",
+      "snippet": "Oct 13, 2025 · The best ChatGPT that $100 can buy. Contribute to karpathy/nanochat development by creating an account on GitHub."
+    }
+  ]
+}

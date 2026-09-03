@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "sulabhkatiyar/en-indic-translate-26b",
+  "slug": "sulabhkatiyar-en-indic-translate-26b",
+  "author": "sulabhkatiyar",
+  "url": "https://huggingface.co/sulabhkatiyar/en-indic-translate-26b",
+  "created_at": "2026-09-03T14:10:39.000Z",
+  "updated_at": "2026-09-03T14:39:44.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "as",
+    "bn",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "translation",
+    "indic",
+    "text-generation",
+    "conversational",
+    "en",
+    "as",
+    "bn",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:finetune:google/gemma-4-26B-A4B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805933872,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51644178190,
+  "storage_human": "51.6 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft 365 für Privatpersonen: Abonnement für Produktivitäts-Apps",
+      "url": "https://www.microsoft.com/de-de/microsoft-365?msockid=125f2621d10a606d0c1331e8d02761b4",
+      "snippet": "Professioneller, durchgehender Schutz für Ihre Daten und Geräte und die Ihrer Familie – für Arbeit und Alltag. Für die Nutzung ist ein …"
+    },
+    {
+      "title": "Microsoft 365 für Einzelbenutzer – Pläne und Preise | Microsoft 365",
+      "url": "https://www.microsoft.com/de-de/microsoft-365/explore-microsoft-365-for-individuals?msockid=125f2621d10a606d0c1331e8d02761b4",
+      "snippet": "Mit Microsoft 365 für Einzelbenutzer können Sie Ihre Vorhaben mit leistungsstarken Apps, sicherem Cloudspeicher und …"
+    },
+    {
+      "title": "Microsoft 365 ab 69,99 € (September 2026 Preise) - idealo",
+      "url": "https://www.idealo.de/preisvergleich/OffersOfProduct/200429224_-365-microsoft.html?msockid=125f2621d10a606d0c1331e8d02761b4",
+      "snippet": "Bei Microsoft 365 erhältst du regelmäßig Updates, Cloudfunktionen und Dienste. Beim einmaligen Kauf, etwa von Office 2024 …"
+    },
+    {
+      "title": "Microsoft 365 & Office online kaufen | MediaMarkt",
+      "url": "https://www.mediamarkt.de/de/brand/microsoft/microsoft-365-office?msockid=125f2621d10a606d0c1331e8d02761b4",
+      "snippet": "Profitiere von den neuesten Versionen mit innovativen Funktionen und der nahtlosen Integration in dein digitales Leben. Finde jetzt …"
+    },
+    {
+      "title": "Microsoft Office 365 Personal ab 73,78 € (August 2026) - idealo",
+      "url": "https://www.idealo.de/preisvergleich/OffersOfProduct/4367817_-office-365-personal-microsoft.html?msockid=125f2621d10a606d0c1331e8d02761b4",
+      "snippet": "Das Jahresabonnement von Microsoft Office 365 Personal kommt als ESD, also in einem direkten Download, und funktioniert auf …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kimi000/crystal-field-29",
+  "slug": "kimi000-crystal-field-29",
+  "author": "kimi000",
+  "url": "https://huggingface.co/kimi000/crystal-field-29",
+  "created_at": "2026-09-03T16:23:08.000Z",
+  "updated_at": "2026-09-03T16:29:27.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "flux2",
+    "text-to-image",
+    "reinforcement-learning",
+    "base_model:black-forest-labs/FLUX.2-klein-base-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-base-4B",
+    "license:other",
+    "diffusers:Flux2KleinPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3875544576,
+  "parameters_human": "3.88B",
+  "storage_bytes": 15976507911,
+  "storage_human": "16.0 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-base-4B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DigiD Machtigen",
+      "url": "https://machtigen.digid.nl/",
+      "snippet": "Wilt u online zaken regelen namens iemand anders? Of mag een ander dit voor u doen? Geef uw DigiD niet af, maar regel een …"
+    },
+    {
+      "title": "DigiD Machtigen",
+      "url": "https://machtigen.digid.nl/mijn-machtigingen",
+      "snippet": "Please enable JavaScript to view the page content. Your support ID is: 9761942381571635930."
+    },
+    {
+      "title": "Inloggen | Machtigen via helpdesk",
+      "url": "https://helpdesk.machtigen.digid.nl/",
+      "snippet": "Leer hoe u via de DigiD Helpdesk iemand kunt machtigen om namens u online zaken te regelen met de overheid."
+    },
+    {
+      "title": "DigiD Machtigen",
+      "url": "https://pp1.machtigen.digid.nl/iemand-machtigen?organisatie=9",
+      "snippet": "Welcome to the digid machtigen application shell."
+    },
+    {
+      "title": "Redirect",
+      "url": "https://helpdesk.machtigen.digid.nl/saml2/authenticate/eHerkenning",
+      "snippet": "Redirect ... Redirect"
+    }
+  ]
+}

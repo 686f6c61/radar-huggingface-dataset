@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "EInnovator/pra-qwen2-5-1-5b-instruct-bnb-8bit",
+  "slug": "einnovator-pra-qwen2-5-1-5b-instruct-bnb-8bit",
+  "author": "EInnovator",
+  "url": "https://huggingface.co/EInnovator/pra-qwen2-5-1-5b-instruct-bnb-8bit",
+  "created_at": "2026-09-03T16:02:35.000Z",
+  "updated_at": "2026-09-03T16:02:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pra",
+  "languages": [],
+  "tags": [
+    "pra",
+    "progressive-retrieval-attention",
+    "adapter",
+    "long-context",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PEC e Servizi Certificati Aruba: Firma, Fatturazione, DocFly, SPID | Pec.it",
+      "url": "https://www.pec.it/",
+      "snippet": "Scopri la posta elettronica certificata e tutti i servizi certificati di Aruba: PEC, firma, Fatturazione Elettronica, marca, DocFly …"
+    },
+    {
+      "title": "Webmail PEC Aruba: gestisci la casella PEC via web | Pec.it",
+      "url": "https://www.pec.it/webmail-pec.aspx",
+      "snippet": "Con Webmail PEC Aruba gestisci la tua casella di posta elettronica certificata velocemente e in tutta sicurezza, da qualsiasi …"
+    },
+    {
+      "title": "Come configurare la casella PEC su un programma di posta e su ...",
+      "url": "https://guide.pec.it/posta-pec/configurare-casella-pec/configurare-casella-pec-programma-posta.aspx",
+      "snippet": "Tuttavia, ti consigliamo di usare sempre i parametri ufficiali (*.pec.aruba.it) poiché garantiscono una maggiore stabilità e compatibilità …"
+    },
+    {
+      "title": "Come rinnovare il servizio PEC e i servizi associati | Guide pec.it",
+      "url": "https://guide.pec.it/posta-pec/modalita-rinnovo/rinnovo-servizio-pec.aspx",
+      "snippet": "Come rinnovare una casella PEC con dominio predefinito Aruba Puoi rinnovare la tua casella PEC (es. nomecasella@pec.it), dall’ …"
+    },
+    {
+      "title": "Transfer your PEC to Aruba",
+      "url": "https://migrazione.pec.it/",
+      "snippet": "Transfer your PEC to Aruba A few simple steps to bring your PEC to Aruba. We will take care of transferring all the contents from …"
+    }
+  ]
+}

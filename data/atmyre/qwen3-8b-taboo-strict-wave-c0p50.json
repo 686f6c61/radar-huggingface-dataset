@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Atmyre/qwen3-8b-taboo-strict-wave-c0p50",
+  "slug": "atmyre-qwen3-8b-taboo-strict-wave-c0p50",
+  "author": "Atmyre",
+  "url": "https://huggingface.co/Atmyre/qwen3-8b-taboo-strict-wave-c0p50",
+  "created_at": "2026-09-03T14:31:56.000Z",
+  "updated_at": "2026-09-03T14:39:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "taboo",
+    "interpretability",
+    "qwen3",
+    "concept-wave",
+    "arxiv:2512.15674",
+    "arxiv:2607.23379",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 349243752,
+  "storage_human": "349 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spider Solitaire (2 Suits)",
+      "url": "https://www.solitr.com/spider-solitaire-two-suits",
+      "snippet": "When thirteen cards of the same suit from King all the way to Ace are together on a tableau column, they are automatically moved to …"
+    },
+    {
+      "title": "Spider Solitaire (2 Suits) - Play Online & 100% Free | Solitaired.com",
+      "url": "https://solitaired.com/spider-solitaire-two-suits",
+      "snippet": "Play Spider Solitaire (2 Suits) for free with no registration required. Stack the cards in descending order from King to Ace to remove …"
+    },
+    {
+      "title": "Play Spider Solitaire 2 Suits",
+      "url": "https://www.247solitaire.com/spiderSolitaire2suit.php",
+      "snippet": "Welcome to 247's Spider Solitaire 2 Suits! In this version of classic Spider Solitaire, you wield two different suits to complete eight …"
+    },
+    {
+      "title": "Spider Solitaire (2 Suits) - Play Online for Free",
+      "url": "https://www.solitairebliss.com/spider-2suits",
+      "snippet": "To win Spider Solitaire 2 Suits, sequence same-suit cards from king to ace in the tableau and move them to the eight foundation …"
+    },
+    {
+      "title": "Spider Solitaire 2 Suits — Free, Full Screen, No Download",
+      "url": "https://playsolitaire.io/spider-solitaire-2-suits",
+      "snippet": "Play Spider Solitaire 2 suits free online in full screen, with no download or sign-up. Use unlimited undo and hints, with measured …"
+    }
+  ]
+}

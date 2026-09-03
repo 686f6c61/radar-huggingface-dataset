@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Schmidtmaximilian/multimodal-generation-study",
+  "slug": "schmidtmaximilian-multimodal-generation-study",
+  "author": "Schmidtmaximilian",
+  "url": "https://huggingface.co/Schmidtmaximilian/multimodal-generation-study",
+  "created_at": "2026-09-03T18:34:59.000Z",
+  "updated_at": "2026-09-03T18:35:04.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-generation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poczta - Najlepsza Poczta, największe załączniki - WP",
+      "url": "https://poczta.wp.pl/",
+      "snippet": "Bezpieczna i darmowa poczta bez spamu. Duże załączniki, nielimitowana pojemność, aplikacja mobilna. Załóż konto i ciesz się …"
+    },
+    {
+      "title": "Introduction to Multimodal Generative AI | Springer Nature Link",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-96-2355-6_1",
+      "snippet": "A state-of-the-art method in machine learning is called Multimodal Generative Artificial Intelligence (AI), which aims to produce a variety of outputs in many modalities, including text, audio, and images. This survey explores multimodal generative AI’s developments, techniques, and uses. First, we clarify the main concepts behind such models, such as adaptive autoencoders (VAEs), generative ..."
+    },
+    {
+      "title": "Odzyskaj hasło w WP Poczcie",
+      "url": "https://poczta.wp.pl/odzyskaj/",
+      "snippet": "Wpisz adres e-mail, do którego chcesz odzyskać dostęp Przejdź dalej"
+    },
+    {
+      "title": "Researchers Tested AI Against 100,000 Humans on Creativity",
+      "url": "https://www.sciencedaily.com/releases/2026/01/260125083356.htm",
+      "snippet": "A massive new study comparing more than 100,000 people with today’s most advanced AI systems delivers a surprising result: generative AI can now beat the average human on certain creativity ..."
+    },
+    {
+      "title": "Synchronizacja - Poczta WP",
+      "url": "https://poczta.wp.pl/api/v1/public/secureauth/login?mailsystem=o2&scheme=secureauth&package=pl.wp",
+      "snippet": "Synchronizacja Synchronizacja danych..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rafmacalaba/gliner-datause-displacement",
+  "slug": "rafmacalaba-gliner-datause-displacement",
+  "author": "rafmacalaba",
+  "url": "https://huggingface.co/rafmacalaba/gliner-datause-displacement",
+  "created_at": "2026-09-03T17:01:00.000Z",
+  "updated_at": "2026-09-03T17:46:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner",
+  "languages": [],
+  "tags": [
+    "gliner",
+    "pytorch",
+    "ner",
+    "data-use",
+    "tiered",
+    "token-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1975310727,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L'ÉQUIPE - Manchester Devils, le forum",
+      "url": "https://forum.manchesterdevils.com/forum/180-l%C3%A9quipe/",
+      "snippet": "Jul 22, 2006 · Discussions et débats concernant nos joueurs de l'équipe première."
+    },
+    {
+      "title": "Infirmerie - L'ÉQUIPE - Manchester Devils, le forum",
+      "url": "https://forum.manchesterdevils.com/topic/5039-infirmerie/",
+      "snippet": "Feb 25, 2011 · Allez, suite à la demande d'un membre à trois lettres, je crée un topic pour parler de notre infirmerie, de ses …"
+    },
+    {
+      "title": "Jouer avec l'équipe Nintendo - Wiki de Super Soccer",
+      "url": "https://www.jeuxvideo.com/wikis-soluce-astuces/jouer-avec-l-equipe-nintendo/213863",
+      "snippet": "Jul 17, 2001 · Venez découvrir tout ce qu'il faut savoir sur la partie : \"Jouer avec l'équipe Nintendo\" du jeu Super Soccer dans son wiki."
+    },
+    {
+      "title": "Composition de l'équipe - Wiki de Icewind Dale - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/wikis-soluce-astuces/composition-de-l-equipe/207856",
+      "snippet": "Aug 11, 2010 · Venez découvrir tout ce qu'il faut savoir sur la partie : \"Composition de l'équipe\" du jeu Icewind Dale dans son wiki."
+    },
+    {
+      "title": "André Onana (Prêt à Trabzonspor) - Page 36 - L'ÉQUIPE - Manchester ...",
+      "url": "https://forum.manchesterdevils.com/topic/8903-andr%C3%A9-onana-pr%C3%AAt-%C3%A0-trabzonspor/page/36/",
+      "snippet": "Jul 6, 2023 · Après Antony au Betis, Hojlund au Napoli et tant d'autres, Onana débute très bien à Trabzonspor. La preuve que le …"
+    }
+  ]
+}

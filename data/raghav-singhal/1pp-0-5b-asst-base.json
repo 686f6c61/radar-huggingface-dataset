@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Raghav-Singhal/1pp-0.5b-asst-base",
+  "slug": "raghav-singhal-1pp-0-5b-asst-base",
+  "author": "Raghav-Singhal",
+  "url": "https://huggingface.co/Raghav-Singhal/1pp-0.5b-asst-base",
+  "created_at": "2026-09-03T16:49:32.000Z",
+  "updated_at": "2026-09-03T17:02:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "1pp",
+    "one-persona-pretraining",
+    "base",
+    "asst",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 580445568,
+  "parameters_human": "580.4M",
+  "storage_bytes": 1160916120,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in to GitHub · GitHub",
+      "url": "https://github.com/login",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million …"
+    },
+    {
+      "title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub",
+      "url": "https://github.com/",
+      "snippet": "Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open …"
+    },
+    {
+      "title": "About building integrations - GitHub Docs",
+      "url": "https://docs.github.com/integrations/concepts/about-building-integrations",
+      "snippet": "Integrations are tools that extend GitHub's functionality. Integrations can do things on GitHub like open issues, comment on pull …"
+    },
+    {
+      "title": "GitHub Docs",
+      "url": "https://docs.github.com/",
+      "snippet": "Get started, troubleshoot, and make the most of GitHub. Documentation for new users, developers, administrators, and all of GitHub's …"
+    },
+    {
+      "title": "GitHub - massgravel/Microsoft-Activation-Scripts: Open-source …",
+      "url": "https://github.com/massgravel/Microsoft-Activation-Scripts",
+      "snippet": "Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with …"
+    }
+  ]
+}

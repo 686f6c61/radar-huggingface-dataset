@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "abhi576/ice-012-audio",
+  "slug": "abhi576-ice-012-audio",
+  "author": "abhi576",
+  "url": "https://huggingface.co/abhi576/ice-012-audio",
+  "created_at": "2026-09-03T14:03:43.000Z",
+  "updated_at": "2026-09-03T14:03:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "iceAudio",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "iceAudio",
+    "safetensors",
+    "ice-012-audio",
+    "speech",
+    "text-to-speech",
+    "speech-generation",
+    "voice-cloning",
+    "custom_code",
+    "multilingual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 714409993,
+  "parameters_human": "714.4M",
+  "storage_bytes": 1443687243,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - RVC-Boss/GPT-SoVITS: 1 min voice data can also be used to ...",
+      "url": "https://github.com/RVC-Boss/GPT-SoVITS",
+      "snippet": "1 min voice data can also be used to train a good TTS model! (few shot voice cloning) - RVC-Boss/GPT-SoVITS"
+    },
+    {
+      "title": "GPT为什么会单独给Plus订阅增加5小时限额？ - 知乎",
+      "url": "https://www.zhihu.com/question/2075529848810911526",
+      "snippet": "Aug 25, 2026 · GPT为什么会单独给Plus订阅增加5小时限额？ GPT为什么会单独给Plus订阅增加5小时限额？ 究竟是为了对新手用户 …"
+    },
+    {
+      "title": "freestylefly/awesome-gpt-image-2: Prompt as Code - GitHub",
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "snippet": "Apr 26, 2026 · After GPT-Image2 became widely available, AI image generation moved from \"can it make an image?\" to \"can it make …"
+    },
+    {
+      "title": "如何看待GPT-6 （Astra）？ - 知乎",
+      "url": "https://www.zhihu.com/question/2070082903229347029",
+      "snippet": "此前GPT-4业界估算大概1.8万亿参数，而这次Astra直接翻了五倍多。 从2024年5月GPT-4o发布到现在，OpenAI已经超过两年没有完 …"
+    },
+    {
+      "title": "Models and pricing for GitHub Copilot",
+      "url": "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing",
+      "snippet": "See per-token pricing for the models available in GitHub Copilot and reference rates for additional usage across plans."
+    }
+  ]
+}

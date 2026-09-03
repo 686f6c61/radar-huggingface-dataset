@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "nabin2004/AOS-qwen3-8b-narrated-adapter",
+  "slug": "nabin2004-aos-qwen3-8b-narrated-adapter",
+  "author": "nabin2004",
+  "url": "https://huggingface.co/nabin2004/AOS-qwen3-8b-narrated-adapter",
+  "created_at": "2026-09-03T14:03:50.000Z",
+  "updated_at": "2026-09-03T14:06:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "manim",
+    "manim-voiceover",
+    "text-to-speech",
+    "aos",
+    "lora",
+    "sft",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 539294865,
+  "storage_human": "539 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "دفترة تسجيل الدخول - الموقع الرسمي لبرنامج دفترة - دفترة",
+      "url": "https://www.daftra.com/users/login",
+      "snippet": "كل ما تحتاجه لإدارة أعمالك في برنامج واحد! يدعم أكثر من 50 مجالاً مختلفاً وأكثر من 20 تطبيق لإدارة الأعمال بإحترافية!"
+    },
+    {
+      "title": "نظام ERP متكامل - دفترة",
+      "url": "https://www.daftra.com/",
+      "snippet": "نظام ERP متكامل لإدارة أعمالك دفترة هو شريكك الرقمي الأمثل لإدارة جميع جوانب أعمالك. برنامج سحابي آمن بهوية عربية أصيلة وواجهة عصرية تدعم العربية والإنجليزية، يضمن سلامة بياناتك …"
+    },
+    {
+      "title": "دخول - دفترة - Daftra",
+      "url": "https://mwly8461.daftra.com/clients/login",
+      "snippet": "Description. سجّل الدخول إلى حسابك تذكرني نسيت كلمة المرور"
+    },
+    {
+      "title": "رفع فاتورة مشتريات بالذكاء الاصطناعي - دليل دفترة",
+      "url": "https://docs.daftra.com/user_manual/%d8%b1%d9%81%d8%b9-%d9%81%d8%a7%d8%aa%d9%88%d8%b1%d8%a9-%d9%85%d8%b4%d8%aa%d8%b1%d9%8a%d8%a7%d8%aa-%d8%a8%d8%a7%d9%84%d8%b0%d9%83%d8%a7%d8%a1-%d8%a7%d9%84%d8%a7%d8%b5%d8%b7%d9%86%d8%a7%d8%b9%d9%8a/",
+      "snippet": "توجه إلى “المشتريات” من القائمة الرئيسية، ثم اضغط على “رفع بالذكاء الاصطناعي”. ستظهر شاشة الرفع التي تدعم طريقتين: السحب والإفلات في المنطقة المخصصة، أو الضغط على “اختر ملفات” لفتح …"
+    },
+    {
+      "title": "طلب باقة - دليل دفترة",
+      "url": "https://docs.daftra.com/tutorial/%d8%b7%d9%84%d8%a8-%d8%a8%d8%a7%d9%82%d8%a9/",
+      "snippet": "خطوات طلب باقة من القائمة الرئيسية، اضغط على “ الأرصدة والنقاط “. اضغط على “ إدارة الباقات “. اضغط على زر “ اطلب باقة ” الموجود أعلى يسار الشاشة. قم بإدخال بيانات طلب الباقة على النحو …"
+    }
+  ]
+}

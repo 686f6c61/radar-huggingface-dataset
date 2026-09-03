@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "B4100/cmshtminimax",
+  "slug": "b4100-cmshtminimax",
+  "author": "B4100",
+  "url": "https://huggingface.co/B4100/cmshtminimax",
+  "created_at": "2026-09-03T15:22:25.000Z",
+  "updated_at": "2026-09-03T15:22:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lynaNSFW/DaSiWa_MiniMax_H3",
+    "base_model:adapter:lynaNSFW/DaSiWa_MiniMax_H3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 311539864,
+  "storage_human": "312 MB",
+  "base_model": "lynaNSFW/DaSiWa_MiniMax_H3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Disable the Pop-Up Blocker in Chrome, Firefox, Edge, and Safari",
+      "url": "https://www.thetechedvocate.org/how-to-disable-the-pop-up-blocker-in-chrome-firefox-edge-and-safari/",
+      "snippet": "In this article, we’ll show you how to disable the pop-up blockers in four of the most popular web browsers: Chrome, Firefox, Edge, …"
+    },
+    {
+      "title": "B4100/v6 · Hugging Face",
+      "url": "https://huggingface.co/B4100/v6",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Turn the Pop-Up Blocker On or Off: Chrome & More",
+      "url": "https://www.wikihow.com/Turn-on-and-Off-Pop-Up-Blocker",
+      "snippet": "Jun 25, 2026 · In this article, we'll show you how to turn the pop-up blocker on or off in Chrome, Edge, Safari, and Firefox, with simple …"
+    },
+    {
+      "title": "B4100/plug · Hugging Face",
+      "url": "https://huggingface.co/B4100/plug",
+      "snippet": "B4100 / plug like 0 Text-to-Image Diffusers lora template:diffusion-lora License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "How to Disable the Pop-Up Blocker in Chrome, Firefox ... - How-To Geek",
+      "url": "https://www.howtogeek.com/773082/how-to-disable-pop-up-blocker-in-chrome-firefox-edge-safari/",
+      "snippet": "Dec 31, 2021 · When a site requires pop-up windows to function, you will have to turn off the pop-up blocker in your web browser to …"
+    }
+  ]
+}

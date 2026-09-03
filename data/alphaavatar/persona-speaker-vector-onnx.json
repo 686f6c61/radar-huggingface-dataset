@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AlphaAvatar/persona-speaker-vector-onnx",
+  "slug": "alphaavatar-persona-speaker-vector-onnx",
+  "author": "AlphaAvatar",
+  "url": "https://huggingface.co/AlphaAvatar/persona-speaker-vector-onnx",
+  "created_at": "2026-09-03T11:20:36.000Z",
+  "updated_at": "2026-09-03T11:20:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "speaker-verification",
+    "speaker-embedding",
+    "eres2netv2",
+    "alphaavatar",
+    "audio-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71439064,
+  "storage_human": "71 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Subito - Compra e vendi gratis in sicurezza",
+      "url": "https://www.subito.it/",
+      "snippet": "Su Subito compri e vendi di tutto, a distanza e in modo sostenibile. Con il pagamento protetto fai affari sempre sicuri e spedisci in …"
+    },
+    {
+      "title": "Subito - Annunci e offerte gratis con TuttoSubito",
+      "url": "https://www.subito.it/annunci-italia/vendita/usato/",
+      "snippet": "Scopri TuttoSubito, il servizio di Subito per comprare online in Italia in sicurezza con protezione acquisti."
+    },
+    {
+      "title": "Login area riservata - Subito.it",
+      "url": "https://areariservata.subito.it/login_form",
+      "snippet": "Vendi e compra nuovo e usato online in modo semplice, rapido e sicuro. Oltre 6 milioni di annunci di auto, case, lavoro, elettronica, …"
+    },
+    {
+      "title": "Annunci privati: auto, casa, lavoro, tempo libero - Annunci usato ...",
+      "url": "https://www2.subito.it/top_searches.htm",
+      "snippet": "Annunci privati: auto, casa, lavoro, tempo libero: Naviga tra gli annunci più ricercati di Subito.it, cerca tra migliaia di offerte di case, …"
+    },
+    {
+      "title": "Compra e vendi in sicurezza con Subito",
+      "url": "https://info.subito.it/compra-e-vendi-second-hand-new-begin.htm",
+      "snippet": "Puoi scegliere tra diversi metodi di pagamento, tutti sicuri e tracciati. Il tuo pagamento verrà custodito fino alla fine della transazione …"
+    }
+  ]
+}

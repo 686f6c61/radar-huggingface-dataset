@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SEN-AGI/Lura-1.1-500m",
+  "slug": "sen-agi-lura-1-1-500m",
+  "author": "SEN-AGI",
+  "url": "https://huggingface.co/SEN-AGI/Lura-1.1-500m",
+  "created_at": "2026-09-03T19:08:05.000Z",
+  "updated_at": "2026-09-03T19:10:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "causal-lm",
+    "synthetic-data",
+    "fine-tuned",
+    "lightweight",
+    "qwen2.5",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519716,
+  "storage_human": "1000 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définition de sen | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/sen",
+      "snippet": "Apr 23, 2024 · Définition de sen : dictionnaire, étymologie, phonétique, citations littéraires, synonymes et antonymes de « sen »"
+    },
+    {
+      "title": "SEN-AGI/Lura-1.0-500m at main - Hugging Face",
+      "url": "https://huggingface.co/SEN-AGI/Lura-1.0-500m/tree/main",
+      "snippet": "SEN-AGI / Lura-1.0-500m like 3 Text Generation Safetensors English qwen2 fine-tuned lightweight code math conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Lura-1.0-500m 1,000 MB Ctrl+K Ctrl+K 1 contributor History:39 commits SEN-AGI Update generation_config.json b054640 verified2 days ..."
+    },
+    {
+      "title": "Le Sen — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Le_Sen",
+      "snippet": "Le Sen est exposée au risque de feu de forêt. Depuis le 20 avril 2016, les départements de la Gironde, des Landes et de Lot-et …"
+    },
+    {
+      "title": "Lura 1.0 500M by SEN-AGI — VRAM 1GB, 32K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/SEN-AGI%2FLura-1.0-500m,3SnHWuEMz72KK3R2jyjJ7I",
+      "snippet": "Lura 1.0 500M is an open-source 0.5b LLM by SEN-AGI. VRAM 1GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Définitions : sen - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/sen/72048",
+      "snippet": "sen - Définitions Français : Retrouvez la définition de sen, ainsi que les homonymes... - synonymes, homonymes, difficultés, citations."
+    }
+  ]
+}

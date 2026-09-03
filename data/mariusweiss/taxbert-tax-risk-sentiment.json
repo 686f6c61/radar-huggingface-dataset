@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mariusweiss/TaxBERT-Tax-Risk-Sentiment",
+  "slug": "mariusweiss-taxbert-tax-risk-sentiment",
+  "author": "mariusweiss",
+  "url": "https://huggingface.co/mariusweiss/TaxBERT-Tax-Risk-Sentiment",
+  "created_at": "2026-06-25T09:54:06.000Z",
+  "updated_at": "2026-09-03T11:42:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 82301956,
+  "parameters_human": "82.3M",
+  "storage_bytes": 988052880,
+  "storage_human": "988 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leucemia acuta BCR–ABL1 (Philadelphia positiva) | Diagnosi, TKI e trapianto",
+      "url": "https://angolodeldottorino.it/Medicina/Ematologia/oncoematologia/leucemie-acute-mieloidi/leucemia-acuta-fusione-bcr-abl1.php",
+      "snippet": "Il monitoraggio molecolare dei trascritti BCR-ABL1 mediante RT-PCR è cruciale per guidare le decisioni terapeutiche. La valutazione …"
+    },
+    {
+      "title": "mariusweiss/TaxBERT-Tax-Risk-Sentiment · Hugging Face",
+      "url": "https://huggingface.co/mariusweiss/TaxBERT-Tax-Risk-Sentiment",
+      "snippet": "Intended Use: This model is intended for sentence-level risk sentiment analysis in the context of qualitative corporate tax disclosures. It can be used to classify individual disclosure sentences according to whether they refer to taxes and, if so, whether they indicate tax risk, tax risk mitigation, or a tax-neutral statement."
+    },
+    {
+      "title": "Scopri Tutto sul BCR nell’Esame del Sangue: Chiave per la Diagnosi e il ...",
+      "url": "https://centrodiagnosticoippocrate.it/blog/bcr-esame-sangue/",
+      "snippet": "Quando il gene ABL viene traslocato dal cromosoma 9 al cromosoma 22, si unisce con un altro gene, che si chiama BCR (Breakpoint …"
+    },
+    {
+      "title": "mariusweiss/TaxBERT · Hugging Face",
+      "url": "https://huggingface.co/mariusweiss/TaxBERT",
+      "snippet": "How to design and employ specialized large language models for accounting and tax research: The example of TaxBERT. TaxBERT is a domain-adapated RoBERTa model, specifically designed to analyze qualitative corporate tax disclosures. In the future, we will add the following features: Tax Sentence Recognition Tax Risk Sentiment"
+    },
+    {
+      "title": "BCR-ABL - Lab Tests Online",
+      "url": "https://labtestsonline.it/lto-tests/bcr-abl.html",
+      "snippet": "Se la quantità di BCR-ABL1 scende sotto il limite di rilevabilità del metodo e la conta delle cellule del sangue è normale, allora il …"
+    }
+  ]
+}

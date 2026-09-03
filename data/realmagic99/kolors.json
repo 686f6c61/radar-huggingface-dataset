@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "realmagic99/Kolors",
+  "slug": "realmagic99-kolors",
+  "author": "realmagic99",
+  "url": "https://huggingface.co/realmagic99/Kolors",
+  "created_at": "2026-09-03T16:41:20.000Z",
+  "updated_at": "2026-09-03T16:41:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "stable-diffusion",
+    "kolors",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2579458820,
+  "parameters_human": "2.58B",
+  "storage_bytes": 28973590175,
+  "storage_human": "29.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marktplaats - De plek om nieuwe en tweedehands spullen te kopen …",
+      "url": "https://www.marktplaats.nl/?msockid=266def1215e960551410f8db14a16175",
+      "snippet": "De grootste advertentiesite van Nederland. Nieuwe en tweedehands goederen en diensten, koopt en verkoopt u op Marktplaats.nl."
+    },
+    {
+      "title": "Login Mijn Marktplaats",
+      "url": "https://www.marktplaats.nl/identity/v2/login?msockid=266def1215e960551410f8db14a16175",
+      "snippet": "Log in op je Marktplaats account om advertenties te plaatsen, berichten te bekijken en je profiel te beheren."
+    },
+    {
+      "title": "Auto kopen: Occasions & nieuwe auto's | Marktplaats",
+      "url": "https://www.marktplaats.nl/cp/91/auto-kopen/?msockid=266def1215e960551410f8db14a16175",
+      "snippet": "Koop je tweedehands of nieuwe auto op Marktplaats. Zoek op merk, model, bouwjaar en prijs. Meer dan 245.000 auto's beschikbaar …"
+    },
+    {
+      "title": "Vind nederland op Marktplaats - september 2026",
+      "url": "https://www.marktplaats.nl/q/nederland+/?msockid=266def1215e960551410f8db14a16175",
+      "snippet": "Dit charmante vakantiehuis in nederland combineert een bijzondere ligging, hoog wooncomfort en een aantrekkelijk …"
+    },
+    {
+      "title": "Marktplaats startpagina | online zoeken, kopen en verkopen",
+      "url": "https://marktplaats.startpagina.nl/",
+      "snippet": "Jul 23, 2026 · Marktplaatsen met: auto's, kleding, meubels, woningen, boeken, motoren, zoeken, nieuwe en tweedehands artikelen …"
+    }
+  ]
+}

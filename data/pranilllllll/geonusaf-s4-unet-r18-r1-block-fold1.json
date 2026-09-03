@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Pranilllllll/geonusaf-s4-unet-r18-R1-block-fold1",
+  "slug": "pranilllllll-geonusaf-s4-unet-r18-r1-block-fold1",
+  "author": "Pranilllllll",
+  "url": "https://huggingface.co/Pranilllllll/geonusaf-s4-unet-r18-R1-block-fold1",
+  "created_at": "2026-09-03T14:55:52.000Z",
+  "updated_at": "2026-09-03T15:36:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "segmentation-models-pytorch",
+  "languages": [],
+  "tags": [
+    "segmentation-models-pytorch",
+    "semantic-segmentation",
+    "remote-sensing",
+    "unet",
+    "resnet18",
+    "geonusaf",
+    "synthetic-data",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3002485662,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sv. Cyril a Metoděj - Pastorace.cz",
+      "url": "https://www.pastorace.cz/tematicke-texty/sv-cyril-a-metodej",
+      "snippet": "Sv. Cyril a Metoděj * rodní bratři ze Soluně narozeni v 9, století Byli povoláni knížetem Rostislavem k misionářské práci na Moravě. …"
+    },
+    {
+      "title": "Pranilllllll/geonusaf-s4-unet-r18-R0-block-fold1 · Hugging Face",
+      "url": "https://huggingface.co/Pranilllllll/geonusaf-s4-unet-r18-R0-block-fold1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cyril a Metoděj - Víra pro děti",
+      "url": "https://deti.vira.cz/clanky/cyril-a-metodej",
+      "snippet": "Obrázky dětí jsou inspirovány klasickým vyobrazením Cyrila a Metoděje (ikona) a připomenutím důležitých pojmů, s kterými se toto …"
+    },
+    {
+      "title": "geonusaf-s4-unetformer-r18-R0-block-fold1 - Hugging Face",
+      "url": "https://huggingface.co/Pranilllllll/geonusaf-s4-unetformer-r18-R0-block-fold1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Obrázek Svatí Cyril a Metoděj - Obrázky od Juliany",
+      "url": "https://www.juliana-jirousova.cz/cyril-metodej/",
+      "snippet": "Svatí Cyril a Metoděj. Svatí Cyril (Konstantin) a Metoděj, slovanští hlasatelé víry."
+    }
+  ]
+}

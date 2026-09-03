@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "omkarpatil/push-tape-left-dp-wristnp-diffusion",
+  "slug": "omkarpatil-push-tape-left-dp-wristnp-diffusion",
+  "author": "omkarpatil",
+  "url": "https://huggingface.co/omkarpatil/push-tape-left-dp-wristnp-diffusion",
+  "created_at": "2026-09-03T12:48:40.000Z",
+  "updated_at": "2026-09-03T12:48:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion-policy",
+    "ffw_sg2_rev1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 274492048,
+  "parameters_human": "274.5M",
+  "storage_bytes": 1098027904,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "Sign in to GitHub · GitHub",
+      "url": "https://github.com/login",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "如何看待智谱 GLM Coding Plan 7.30 改版为积分制？ - 知乎",
+      "url": "https://www.zhihu.com/question/2066437412218221211",
+      "snippet": "Jul 31, 2026 · 作为对比，GPT 20x 每周可用 GPT-5.6 sol 的 token 量为 2000M。 价格相同，可用 token 多四倍，还经常重置。 速度 …"
+    },
+    {
+      "title": "Cách khôi phục đoạn chat đã xóa trên ChatGPT thành công",
+      "url": "https://cellphones.com.vn/sforum/cach-khoi-phuc-doan-chat-da-xoa-tren-chatgpt",
+      "snippet": "May 29, 2026 · Chat GPT không hỗ trợ khôi phục đoạn chat đã xóa Kinh nghiệm lưu trữ lịch sử ChatGPT để không bị mất dữ liệu Vì …"
+    }
+  ]
+}

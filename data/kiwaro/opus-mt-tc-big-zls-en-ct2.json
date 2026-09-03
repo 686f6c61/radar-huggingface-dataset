@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "KIWARO/opus-mt-tc-big-zls-en-ct2",
+  "slug": "kiwaro-opus-mt-tc-big-zls-en-ct2",
+  "author": "KIWARO",
+  "url": "https://huggingface.co/KIWARO/opus-mt-tc-big-zls-en-ct2",
+  "created_at": "2026-09-03T17:20:36.000Z",
+  "updated_at": "2026-09-03T17:37:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "mk",
+    "bg",
+    "bs",
+    "hr",
+    "sl",
+    "sr",
+    "en"
+  ],
+  "tags": [
+    "translation",
+    "ctranslate2",
+    "mk",
+    "bg",
+    "bs",
+    "hr",
+    "sl",
+    "sr",
+    "en",
+    "base_model:Helsinki-NLP/opus-mt-tc-big-zls-en",
+    "base_model:finetune:Helsinki-NLP/opus-mt-tc-big-zls-en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 242579432,
+  "storage_human": "243 MB",
+  "base_model": "Helsinki-NLP/opus-mt-tc-big-zls-en",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Postmaster Tools – Google - Gmail",
+      "url": "https://www.gmail.com/postmaster/",
+      "snippet": "Be a better sender Use Postmaster Tools to analyze your email performance, and help Gmail route your messages to the right place. …"
+    },
+    {
+      "title": "GitHub - Helsinki-NLP/Opus-MT: Open neural machine translation models ...",
+      "url": "https://github.com/Helsinki-NLP/Opus-MT",
+      "snippet": "Train MT models There is a Makefile for training new models from OPUS data in the Opus-MT-train repository, but this is heavily customized for the work environment at CSC and the University of Helsinki projects. This will (hopefully) be more generic in the future to be able to run in different environments and setups as well."
+    },
+    {
+      "title": "Unsubscribe from messages - multisend-unsubscribe.gmail.com",
+      "url": "https://multisend-unsubscribe.gmail.com/p/AJkpobx7DTgSR2iKRtjUXAXPKXc2A1_CEuvQx5QBgWzKxCS8F6Puc6oqvYp6uQp7-yX-her4163JyzuuEMicl7YU6AtYEnzZP78C21ZMqIrjRQi-Lu61H47LEoHd2FwekZ2uL1o5X2Jql3c-CZIPO8xASlHL0Moo_1ppEv0-H3Do-kTMI-AdVufmubdXTgioaf6sH2PaRa5M0CdFR-de0t4p5W2HDGYnEOuiQgyM7A==",
+      "snippet": "Unsubscribe from messages You will no longer receive messages from Kansas City Hambash (hambashkc2@k0gq.com) at this …"
+    },
+    {
+      "title": "Helsinki-NLP/opus-mt-tc-big-en-tr · Hugging Face",
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-en-tr",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Unsubscribe from messages - multisend-unsubscribe.gmail.com",
+      "url": "https://multisend-unsubscribe.gmail.com/p/AJkpobz0voAadEPFgZuPUyGyDqVwyaEiHhWm9_aj6gFa4v2FD-G1W6Zk2Prq5zhFY56K1dz4z8qDJ6Xim6tgp3exgoQDizc-nYEOiLvK4sMzuZlmoz8fEnYf92YEwRC7a1aotuD3aem2wlP0cW-yY2DX7sPMk6boKLVJrEKTfdd-sgw4aK7VT5cCCkrMXeqDCz7vJbdytFjpGi3Rq-id-CcmwjCezgZaN7t1CvSv5uk1VZoOE9E-WtVkPKBUOnLS8mg=",
+      "snippet": "You will no longer receive messages from Greater Kent Historical Society (admin@kenthistoricalmuseum.org) at this address: …"
+    }
+  ]
+}

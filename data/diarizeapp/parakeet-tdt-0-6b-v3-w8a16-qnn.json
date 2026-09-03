@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "diarizeapp/parakeet-tdt-0.6b-v3-w8a16-qnn",
+  "slug": "diarizeapp-parakeet-tdt-0-6b-v3-w8a16-qnn",
+  "author": "diarizeapp",
+  "url": "https://huggingface.co/diarizeapp/parakeet-tdt-0.6b-v3-w8a16-qnn",
+  "created_at": "2026-09-03T11:06:05.000Z",
+  "updated_at": "2026-09-03T11:07:11.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "nemo-conformer-tdt",
+    "speech",
+    "audio",
+    "asr",
+    "onnxruntime",
+    "qnn",
+    "qualcomm",
+    "snapdragon",
+    "npu",
+    "hexagon",
+    "w8a16",
+    "automatic-speech-recognition",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1378105366,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "G3 Електрична інженерія | 2025 | ЛНТУ | Луцький національний …",
+      "url": "https://lntu.edu.ua/uk/op/2025/g3-elektrychna-inzheneriya",
+      "snippet": "Ґрунтується на формуванні та розвитку професійної компетентності для здійснення діяльності у сфері електроенергетики, …"
+    },
+    {
+      "title": "nvidia/parakeet-tdt-0.6b-v3 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3",
+      "snippet": "🦜 parakeet-tdt-0.6b-v3: Multilingual Speech-to-Text Model | | Description: parakeet-tdt-0.6b-v3 is a 600-million-parameter multilingual automatic speech recognition (ASR) model designed for high-throughput speech-to-text transcription. It extends the parakeet-tdt-0.6b-v2 model by expanding language support from English to 25 European languages. The model automatically detects the language ..."
+    },
+    {
+      "title": "G3 Електрична інженерія | 2026 | ЛНТУ | Луцький національний …",
+      "url": "https://lntu.edu.ua/uk/op/2026/g3-elektrychna-inzheneriya",
+      "snippet": "Aug 5, 2026 · Ґрунтується на формуванні та розвитку професійної компетентності для здійснення діяльності у сфері …"
+    },
+    {
+      "title": "Parakeet TDT 0.6b V3 - a Hugging Face Space by nvidia",
+      "url": "https://huggingface.co/spaces/nvidia/parakeet-tdt-0.6b-v3",
+      "snippet": "Transcribe Speech with Multilingual parakeet-tdt-0.6b-v3"
+    },
+    {
+      "title": "Електрична інженерія | Бакалавр | 2025 | Луцький національний …",
+      "url": "https://vstup.osvita.ua/y2025/r4/309/1528182/",
+      "snippet": "Nov 20, 2025 · Луцький національний технічний університет 2025, спеціальність «Електрична інженерія», освітня програма …"
+    }
+  ]
+}

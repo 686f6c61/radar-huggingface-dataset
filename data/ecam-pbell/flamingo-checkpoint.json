@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ecam-pbell/flamingo-checkpoint",
+  "slug": "ecam-pbell-flamingo-checkpoint",
+  "author": "ecam-pbell",
+  "url": "https://huggingface.co/ecam-pbell/flamingo-checkpoint",
+  "created_at": "2026-09-03T15:09:47.000Z",
+  "updated_at": "2026-09-03T15:09:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ecole d’ingénieurs à Lyon | ECAM LaSalle | Certification CTI",
+      "url": "https://www.ecam.fr/",
+      "snippet": "ECAM LaSalle, située à Lyon, vise à former des ingénieurs et techniciens créatifs, capables de résoudre des problèmes complexes, …"
+    },
+    {
+      "title": "BrandonHill/flamingo-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/BrandonHill/flamingo-checkpoint",
+      "snippet": "BrandonHill / flamingo-checkpoint like 0 Safetensors PyTorch flamingo retrieval License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Flamingo for Retrieval Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "Accueil - ESPACE INTRANET",
+      "url": "https://espace.ecam.fr/",
+      "snippet": "Actualités site internet ECAM Rertrouvez les actualités du site Ecam sur www.ecam.fr"
+    },
+    {
+      "title": "ecam-pbell (Liam Palmer) - Hugging Face",
+      "url": "https://huggingface.co/ecam-pbell",
+      "snippet": "Recent Activity updated a datasetabout 4 hours ago ecam-pbell/multimodal3-data published a datasetabout 4 hours ago ecam-pbell/multimodal3-data updated a modelabout 4 hours ago ecam-pbell/generation View all activity"
+    },
+    {
+      "title": "ECAM LaSalle — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/ECAM_LaSalle",
+      "snippet": "Ainsi naît l'École catholique d'arts et métiers de Lyon. Après bien des hésitations au sortir de la Seconde Guerre mondiale, il est …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Rajiv714/Axion-0.5B-GGUF",
+  "slug": "rajiv714-axion-0-5b-gguf",
+  "author": "Rajiv714",
+  "url": "https://huggingface.co/Rajiv714/Axion-0.5B-GGUF",
+  "created_at": "2026-09-01T13:29:23.000Z",
+  "updated_at": "2026-09-03T11:53:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "en",
+    "base_model:Rajiv714/Axion-0.5B",
+    "base_model:quantized:Rajiv714/Axion-0.5B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 397807392,
+  "storage_human": "398 MB",
+  "base_model": "Rajiv714/Axion-0.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "合伙人入驻平台_百度知道",
+      "url": "https://zhidao.baidu.com/home/partnerhome",
+      "snippet": "知识分享，价值共创！百度知道合伙人平台，是基于知识内容的创作分发平台。一站式生产，全渠道分发；亿万精准流量，AI为创作者 …"
+    },
+    {
+      "title": "odi et amo意思 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/130249125.html",
+      "snippet": "THE POEM Odi et amo. quare id faciam, fortasse requiris? nescio, sed fieri sentio et excrucior. ANALYSIS OF THE STRUCTURE …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "Nom amote, Sabidi ,nec possum dicere quare. Hoc tantum dicere: non ...",
+      "url": "https://zhidao.baidu.com/question/324923612.html",
+      "snippet": "Sep 30, 2011 · 应该是\"Non amo te, Sabidi, nec possum dicere quare; Hoc tantum possum dicere: non amo te!\" 这两句诗出自Marcus …"
+    },
+    {
+      "title": "冒险岛扰乱诺特勒斯号的存在这任务怎么做 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/59582168.html",
+      "snippet": "先去暸望塔找巴特,巴特给你一个日志，然后把日志交给贝音，然后贝音叫你去打20只猪和20只红蜗牛和一个黑魔法师的证明。然后交 …"
+    }
+  ]
+}

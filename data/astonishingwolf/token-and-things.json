@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "astonishingwolf/token-and-things",
+  "slug": "astonishingwolf-token-and-things",
+  "author": "astonishingwolf",
+  "url": "https://huggingface.co/astonishingwolf/token-and-things",
+  "created_at": "2026-09-03T17:25:44.000Z",
+  "updated_at": "2026-09-03T18:36:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bullpadel® Official Store | Shop like a pro",
+      "url": "https://www.bullpadel.com/",
+      "snippet": "Descubre el catálogo completo de Bullpadel: palas, zapatillas, textil y equipamiento de pádel. Rendimiento profesional para llevar tu …"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Bullpadel® Official Store | Shop like a pro",
+      "url": "https://www.bullpadel.com/gb/",
+      "snippet": "Discover the complete Bullpadel catalog: padel rackets, shoes, clothing, and gear. Professional performance to take your game to the …"
+    },
+    {
+      "title": "astonishingwolf (Soham Dasgupta) · GitHub",
+      "url": "https://github.com/astonishingwolf/",
+      "snippet": "astonishingwolf has 33 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Tienda de Bullpadel | Decathlon",
+      "url": "https://www.decathlon.es/es/deportes/padel/bullpadel?msockid=0a0a1534f2346f771f4f02fdf3406e6e",
+      "snippet": "Desde palas Bullpadel hasta zapatillas, la Tienda Bullpadel de Decathlon tiene todo lo que buscas. Equipa tu pasión con la mejor …"
+    }
+  ]
+}

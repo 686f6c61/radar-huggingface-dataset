@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bds062/fsh-tal",
+  "slug": "bds062-fsh-tal",
+  "author": "bds062",
+  "url": "https://huggingface.co/bds062/fsh-tal",
+  "created_at": "2026-09-03T16:02:18.000Z",
+  "updated_at": "2026-09-03T16:06:08.000Z",
+  "license": "license-tbd",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cichlid",
+    "temporal-action-localization",
+    "animal-behavior",
+    "video",
+    "dataset:bds062/cichlid-behavior-pairs",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 599870688,
+  "storage_human": "600 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Portail de voyage officiel à Berlin - visitBerlin.de",
+      "url": "https://www.visitberlin.de/fr",
+      "snippet": "Portail de voyage à Berlin visitBerlin.de : attractions touristiques hôtels incontournables événements et billets Vous saurez tout sur la …"
+    },
+    {
+      "title": "Cinq jours à Berlin - Conseils d'initiés | visitBerlin.de",
+      "url": "https://www.visitberlin.de/fr/5-tage-berlin-Insidertipps",
+      "snippet": "Achetez la Berlin WelcomeCard 5 jours. Non seulement vous bénéficiez de réductions allant jusqu'à 50 % sur beaucoup de sites et …"
+    },
+    {
+      "title": "Cafe Moskau | Berlin Convention Office",
+      "url": "https://convention.visitberlin.de/en/event-planning/berlin-convention-finder/venues/cafe-moskau",
+      "snippet": "Cafe Moskau: 3,100 m² flexible event space, light-filled halls & club area. Perfect for any occasion! Discover now"
+    },
+    {
+      "title": "Berlin Convention Office: Offizielles Kongressbüro",
+      "url": "https://convention.visitberlin.de/",
+      "snippet": "In Berlin, der Stadt der Freiheit, entfalten Ideen ihre Wirkung. Kreative Energie, eine vielfältige Wissenschaftslandschaft sowie Raum …"
+    },
+    {
+      "title": "TourismusHub | about.visitBerlin.de | Startseite",
+      "url": "https://tourismushub.visitberlin.de/",
+      "snippet": "Wir lieben Berlin, kennen unsere Stadt und sind persönlich für Sie da. Unsere Aktionen erreichen Berlin-Fans in aller Welt. Wir stellen …"
+    }
+  ]
+}

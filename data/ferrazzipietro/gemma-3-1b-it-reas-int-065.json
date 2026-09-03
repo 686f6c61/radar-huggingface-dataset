@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ferrazzipietro/gemma-3-1b-it-reas-int-065",
+  "slug": "ferrazzipietro-gemma-3-1b-it-reas-int-065",
+  "author": "ferrazzipietro",
+  "url": "https://huggingface.co/ferrazzipietro/gemma-3-1b-it-reas-int-065",
+  "created_at": "2026-09-03T13:32:03.000Z",
+  "updated_at": "2026-09-03T14:02:03.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:finetune:google/gemma-3-1b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1301875840,
+  "parameters_human": "1.30B",
+  "storage_bytes": 2641874751,
+  "storage_human": "2.6 GB",
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Baza Internetowa Regon",
+      "url": "https://wyszukiwarkaregon.stat.gov.pl/appBIR/index.aspx",
+      "snippet": "Informacja prawna: Zgodnie z art. 43 ust. 2 ustawy z dnia 29 czerwca 1995 r. o statystyce publicznej (Dz. U. z 2026 r. poz. 851) od …"
+    },
+    {
+      "title": "google/gemma-3-1b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-1b-it",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ferrazzipietro/meshTask-gemma-3-1b-it · Hugging Face",
+      "url": "https://huggingface.co/ferrazzipietro/meshTask-gemma-3-1b-it",
+      "snippet": "meshTask-gemma-3-1b-it . This model is a fine-tuned version of google/gemma-3-1b-it on an unknown dataset. It achieves the following results on the evaluation set: Loss: 2.4423; F"
+    },
+    {
+      "title": "[2503.19786] Gemma 3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2503.19786",
+      "snippet": "We introduce Gemma 3, a multimodal addition to the Gemma family of lightweight open models, ranging in scale from 1 to 27 billion parameters. This version introduces vision understanding abilities, a wider coverage of languages and longer context - at least 128K tokens. We also change the architecture of the model to reduce the KV-cache memory that tends to explode with long context. This is ..."
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    }
+  ]
+}

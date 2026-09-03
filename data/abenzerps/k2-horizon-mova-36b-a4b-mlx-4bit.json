@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "abenzerps/K2-Horizon-MoVA-36B-A4B-MLX-4bit",
+  "slug": "abenzerps-k2-horizon-mova-36b-a4b-mlx-4bit",
+  "author": "abenzerps",
+  "url": "https://huggingface.co/abenzerps/K2-Horizon-MoVA-36B-A4B-MLX-4bit",
+  "created_at": "2026-09-03T18:05:03.000Z",
+  "updated_at": "2026-09-03T18:07:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon_mova",
+    "mlx-lm",
+    "4-bit",
+    "k2-horizon",
+    "long-context",
+    "512k-context",
+    "mixture-of-experts",
+    "mova",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:IFM/K2-Horizon-MoVA-36B-A4B",
+    "base_model:quantized:IFM/K2-Horizon-MoVA-36B-A4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37444792020,
+  "parameters_human": "37.44B",
+  "storage_bytes": 21102830087,
+  "storage_human": "21.1 GB",
+  "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "IFM/K2-Horizon-MoVA-36B-A4B · Hugging Face",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "r/news - Reddit",
+      "url": "https://www.reddit.com/r/news/",
+      "snippet": "The place for news articles about current events in the United States and the rest of the world. Discuss it all here."
+    },
+    {
+      "title": "Introducing K2 Horizon: Frontier Performance, Radically Open - ifm.ai",
+      "url": "https://ifm.ai/blog/k2",
+      "snippet": "The result is K2 Horizon MoVA 36B-A4B: a model with 36 billion total parameters but approximately 4 billion active parameters per token. Under the same training conditions, it performs only slightly below the dense Horizon 32B model while requiring substantially fewer active parameters."
+    },
+    {
+      "title": "The back page of the internet. - Reddit",
+      "url": "https://www.reddit.com/r/soccer/",
+      "snippet": "The football subreddit. News, results, and discussion about the beautiful game."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "hcmusa28/H30rIbHWQD5D97RE",
+  "slug": "hcmusa28-h30ribhwqd5d97re",
+  "author": "hcmusa28",
+  "url": "https://huggingface.co/hcmusa28/H30rIbHWQD5D97RE",
+  "created_at": "2026-09-03T05:09:45.000Z",
+  "updated_at": "2026-09-03T11:40:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32992709070,
+  "storage_human": "33.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/;anything",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/m",
+      "snippet": "Google home Send feedback Privacy and terms Switch to full site"
+    },
+    {
+      "title": "Google Translate - Een persoonlijke tolk op je telefoon of computer",
+      "url": "https://translate.google.com/intl/nl/about/",
+      "snippet": "Je wereld begrijpen en communiceren in verschillende talen met Google Translate. Vertaal tekst, spraak, afbeeldingen, documenten, …"
+    },
+    {
+      "title": "Google 翻訳 - スマートフォンやパソコンで使える高性能翻訳アプリ",
+      "url": "https://translate.google.com/intl/ja/about/",
+      "snippet": "Google 翻訳で世界を理解し、さまざまな言語の人々とコミュニケーションを取りましょう。テキスト、音声、画像、ドキュメント …"
+    },
+    {
+      "title": "Google Oversetter - Google Translate",
+      "url": "https://translate.google.com/?hl=nb",
+      "snippet": "Googles tjeneste tilbys kostnadsfritt og oversetter umiddelbart ord, fraser og nettsider mellom norsk og over 100 andre språk."
+    }
+  ]
+}

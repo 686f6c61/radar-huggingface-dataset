@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Iris-mini-GGUF",
+  "slug": "mradermacher-iris-mini-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Iris-mini-GGUF",
+  "created_at": "2026-09-03T07:27:25.000Z",
+  "updated_at": "2026-09-03T12:20:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "search-agent",
+    "deep-research",
+    "agentic",
+    "qwen3.6",
+    "moe",
+    "en",
+    "base_model:AllSpark-Research/Iris-mini",
+    "base_model:quantized:AllSpark-Research/Iris-mini",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 119305063328,
+  "storage_human": "119.3 GB",
+  "base_model": "AllSpark-Research/Iris-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OTTO - Mode, Möbel & Technik » Zum Online-Shop",
+      "url": "https://www.otto.de/",
+      "snippet": "OTTO Online-Shop » Viele Marken Tolle Angebote Top Service » Ratenkauf Kauf auf Rechnung Altgeräte-Mitnahme Aufbauservice …"
+    },
+    {
+      "title": "Damenmode online kaufen » Fashion-Shop für Damen | OTTO",
+      "url": "https://www.otto.de/damen/",
+      "snippet": "Bis zu 20% reduziert Damenmode online kaufen bei OTTO » Große Auswahl Aktuelle Trends Beliebte Marken Top Qualität » Jetzt …"
+    },
+    {
+      "title": "OTTO",
+      "url": "https://tp.otto.de/",
+      "snippet": "OTTO bietet eine große Auswahl an Produkten wie Möbel, Technik und Mode. Entdecken Sie Top-Marken, aktuelle Trends und …"
+    },
+    {
+      "title": "Größentabelle Herren - d.otto.de",
+      "url": "https://d.otto.de/files/49f24a62-74c6-41df-a5b5-63064c856417.pdf",
+      "snippet": "Die enthaltenen Angaben sind keine Eigenschaftszusicherungen. Abbildungen, technische Daten, Gewichts-, Maß-, Farb- und …"
+    },
+    {
+      "title": "OTTO - Anmelden",
+      "url": "https://www.otto.de/customer-identity/login",
+      "snippet": "・ Preisangaben inkl. Steuer und zzgl."
+    }
+  ]
+}

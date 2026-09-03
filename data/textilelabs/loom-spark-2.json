@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "textilelabs/Loom-Spark-2",
+  "slug": "textilelabs-loom-spark-2",
+  "author": "textilelabs",
+  "url": "https://huggingface.co/textilelabs/Loom-Spark-2",
+  "created_at": "2026-09-03T13:01:23.000Z",
+  "updated_at": "2026-09-03T13:01:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Résolu : Le son fourni par la sortie HDMI du Décodeur Plus ... - La ...",
+      "url": "https://la-communaute.sfr.fr/t5/panne-tv-vod/le-son-fourni-par-la-sortie-hdmi-du-d%C3%A9codeur-plus-est-tr%C3%A8s-faible/td-p/2395762",
+      "snippet": "Dec 27, 2022 · Le son fourni par la sortie HDMI du Décodeur plus est de niveau trop faible, ce qui oblige à augmenter pratiquement à …"
+    },
+    {
+      "title": "Application SFR TV 8 : L’Xpérience SFR dans votre poche",
+      "url": "https://la-communaute.sfr.fr/t5/la-vie-de-la-communaut%C3%A9/application-sfr-tv-8-l-xp%C3%A9rience-sfr-dans-votre-poche/ba-p/2153357",
+      "snippet": "Nov 14, 2019 · Disponible sur Android et iOS, l’application SFR TV 8 vous offre toutes les nouveautés de la nouvelle interface TV de …"
+    },
+    {
+      "title": "Résolu : SFR Box 8 TV ne fonctionne pas - La Communauté SFR",
+      "url": "https://la-communaute.sfr.fr/t5/panne-tv-vod/sfr-box-8-tv-ne-fonctionne-pas/td-p/2132553",
+      "snippet": "Aug 28, 2019 · Bonjour, Pour ma part la box au niveau de la Tv ne fonctionne pas. J’ai un code erreur au niveau du chargement …"
+    },
+    {
+      "title": "Résolu : Carte SD sur Box TV8 - La Communauté SFR",
+      "url": "https://la-communaute.sfr.fr/t5/installation-et-param%C3%A9trage/carte-sd-sur-box-tv8/td-p/2293843",
+      "snippet": "May 7, 2021 · Bonjour, J'ai bien compris que la carte micro SD du décodeur TV8 sert au contrôle du direct. En ce qui me concerne, il …"
+    },
+    {
+      "title": "Comment dépanner votre télécommande SFR ? - La Communauté SFR",
+      "url": "https://la-communaute.sfr.fr/t5/panne-tv-vod/comment-d%C3%A9panner-votre-t%C3%A9l%C3%A9commande-sfr/td-p/2424211",
+      "snippet": "Sep 15, 2023 · Télécommande THD, THD 4K et Décodeur Plus Télécommande Décodeur évolution Télécommande Box TV8 …"
+    }
+  ]
+}

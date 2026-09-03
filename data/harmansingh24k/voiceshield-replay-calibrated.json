@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Harmansingh24k/voiceshield-replay-calibrated",
+  "slug": "harmansingh24k-voiceshield-replay-calibrated",
+  "author": "Harmansingh24k",
+  "url": "https://huggingface.co/Harmansingh24k/voiceshield-replay-calibrated",
+  "created_at": "2026-09-03T16:47:08.000Z",
+  "updated_at": "2026-09-03T16:51:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "audio-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94569090,
+  "parameters_human": "94.6M",
+  "storage_bytes": 378302312,
+  "storage_human": "378 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ADAC Kreditkarte Login | Sicheres ADAC Kreditkarten-Banking",
+      "url": "https://banking.adac-kreditkarte.de/",
+      "snippet": "Nutzen Sie den Login der ADAC Kreditkarte für Ihr Kreditkarten-Banking: Umsätze einsehen, Kontostand prüfen und Online Services."
+    },
+    {
+      "title": "ADAC Kreditkarten-Banking | Online-Banking & Funktionen",
+      "url": "https://www.adac.de/produkte/finanzdienstleistungen/kreditkarte/banking/",
+      "snippet": "Mit dem ADAC Online-Banking und der App verwalten Sie Ihre Kreditkarte digital und sicher. Sie können Kontostand und …"
+    },
+    {
+      "title": "ADAC und Solaris: Bankpartner der ADAC Kreditkarte",
+      "url": "https://www.adac.de/produkte/finanzdienstleistungen/kreditkarte/partner-solaris/",
+      "snippet": "ADAC Kreditkarte in Kooperation mit Solaris SE: Erfahren Sie mehr über den Bankpartner, die Zusammenarbeit und die ADAC …"
+    },
+    {
+      "title": "ADAC Kreditkarten",
+      "url": "https://faq.adac-kreditkarte.de/hc/de",
+      "snippet": "App & Kreditkarten-Banking Login, Persönliche Daten, Kontoschutz, App-Installation Leistungen Versicherungen, Paketleistungen, …"
+    },
+    {
+      "title": "Kreditkarten: Der ADAC und seine umstrittene Partnerbank Solaris",
+      "url": "https://www.swr.de/leben/verbraucher/ard-marktcheck/der-adac-und-seine-umstrittene-partnerbank-solaris-100.html",
+      "snippet": "Aug 29, 2025 · Mit mehr als 21 Millionen Mitgliedern ist der ADAC der größte Verkehrsclub Europas. Die Verwaltung der ADAC …"
+    }
+  ]
+}

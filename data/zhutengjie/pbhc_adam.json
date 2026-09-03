@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Zhutengjie/PBHC_adam",
+  "slug": "zhutengjie-pbhc_adam",
+  "author": "Zhutengjie",
+  "url": "https://huggingface.co/Zhutengjie/PBHC_adam",
+  "created_at": "2026-09-03T16:33:23.000Z",
+  "updated_at": "2026-09-03T17:10:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "arxiv:2602.15060",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 941550744,
+  "storage_human": "942 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sudoku - Juega, imprime y comparte puzles de Sudoku gratis",
+      "url": "https://www.sudoku.name/index-es.php",
+      "snippet": "Sudoku, o Su-doku, es un rompecabezas Japonés muy entretenido. Sudoku usa números, pero no se necesitan conocimientos …"
+    },
+    {
+      "title": "Sudoku — Jogue, Imprima e Compartilhe os quebra-cabeças de …",
+      "url": "https://www.sudoku.name/index-pt.php",
+      "snippet": "Sudoku, ou Su-doku, e um divertido quebra-cabecas japones. Sudoku usa numeros, mas nao requer matematica, por isso e tao …"
+    },
+    {
+      "title": "Sudoku - Play, Print & Share Free Sudoku Online puzzles",
+      "url": "https://www.sudoku.name/",
+      "snippet": "Sudoku, or Su-doku, is a Japanese fun puzzle game. Sudoku uses numbers, but no mathematics is needed, and that is why, it is so …"
+    },
+    {
+      "title": "数独 - 免费玩、打印并分享数独谜题 - Sudoku",
+      "url": "https://www.sudoku.name/index-cn.php",
+      "snippet": "数独是一种有趣的日本迷题游戏。数独游戏使用数字，但不需要数学，这也是它为什么如此受欢迎的原因。如果您正在寻找免费的数独 …"
+    },
+    {
+      "title": "Sudoku - Sudoku bulmacalarını ücretsiz olarak Oynayın, Yazdırın ...",
+      "url": "https://www.sudoku.name/index-tr.php",
+      "snippet": "Sudoku, bir Japon eğlence bulmaca oyunudur. Sudoku rakamları kullanır fakat böyle popüler olmasına sebep, hiçbir matematiksel …"
+    }
+  ]
+}

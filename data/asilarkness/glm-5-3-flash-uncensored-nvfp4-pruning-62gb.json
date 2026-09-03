@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Asilarkness/GLM-5.3-Flash-Uncensored-NVFP4-Pruning-62GB",
+  "slug": "asilarkness-glm-5-3-flash-uncensored-nvfp4-pruning-62gb",
+  "author": "Asilarkness",
+  "url": "https://huggingface.co/Asilarkness/GLM-5.3-Flash-Uncensored-NVFP4-Pruning-62GB",
+  "created_at": "2026-09-03T17:45:53.000Z",
+  "updated_at": "2026-09-03T18:37:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "glm5_next",
+    "moe",
+    "nvfp4",
+    "compressed-tensors",
+    "expert-pruning",
+    "uncensored",
+    "glm5",
+    "code",
+    "reasoning",
+    "en",
+    "ru",
+    "base_model:orcarouter/GLM-5.3-Flash-Uncensored-NVFP4",
+    "base_model:quantized:orcarouter/GLM-5.3-Flash-Uncensored-NVFP4",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94006009118,
+  "parameters_human": "94.01B",
+  "storage_bytes": 105846312499,
+  "storage_human": "105.8 GB",
+  "base_model": "orcarouter/GLM-5.3-Flash-Uncensored-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com.mx/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "zai-org/GLM-5.3-Flash · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=es-mx",
+      "snippet": "Publicidad Todo acerca de Google Google.com in English © 2026 - Privacidad - Condiciones"
+    },
+    {
+      "title": "AIAgens/GLM-5.3-Flash-UNCENSORED-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/AIAgens/GLM-5.3-Flash-UNCENSORED-NVFP4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/webhp?hl=es",
+      "snippet": "Google disponible en: English Publicidad Todo acerca de Google Google.com"
+    }
+  ]
+}

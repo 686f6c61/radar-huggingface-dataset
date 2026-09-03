@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "abenzerps/K2-Horizon-7B-MLX-8bit",
+  "slug": "abenzerps-k2-horizon-7b-mlx-8bit",
+  "author": "abenzerps",
+  "url": "https://huggingface.co/abenzerps/K2-Horizon-7B-MLX-8bit",
+  "created_at": "2026-09-03T17:04:42.000Z",
+  "updated_at": "2026-09-03T17:10:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "mlx-lm",
+    "8-bit",
+    "k2-horizon",
+    "long-context",
+    "512k-context",
+    "dense",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:IFM/K2-Horizon-7B",
+    "base_model:quantized:IFM/K2-Horizon-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8999178240,
+  "parameters_human": "9.00B",
+  "storage_bytes": 9583842797,
+  "storage_human": "9.6 GB",
+  "base_model": "IFM/K2-Horizon-7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Convertisseur MP4 - FreeConvert.com",
+      "url": "https://www.freeconvert.com/fr/mp4-converter",
+      "snippet": "Convertisseur MP4. Convertissez facilement vos fichiers au format MP4 en ligne avec une qualité optimale. 100 % gratuit, sécurisé et …"
+    },
+    {
+      "title": "MP4 Converter - FreeConvert.com",
+      "url": "https://www.freeconvert.com/mp4-converter",
+      "snippet": "MP4 Converter. Easily convert to MP4 format online at the highest quality. 100% free, secure, and works on any web browser."
+    },
+    {
+      "title": "YouTube to MP4 Converter | Sceneform",
+      "url": "https://sceneform.ai/tools/youtube-to-mp4",
+      "snippet": "Convert YouTube videos to MP4 files from your browser. Free to use, no account required, and files are deleted after processing."
+    },
+    {
+      "title": "Convertisseur MP4 — Conversion Vidéo en Ligne — Convertio",
+      "url": "https://convertio.co/fr/convertisseur-mp4/",
+      "snippet": "Convertissez vos MP4 en GIF, MP3, AVI, WEBM, MOV, WAV et 88+ formats gratuitement en ligne. Le convertisseur vidéo le plus …"
+    },
+    {
+      "title": "MP4 file format - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/MP4_file_format",
+      "snippet": "MP4 (formally MPEG-4 Part 14) is a digital multimedia container format most commonly used to store video and audio, but it can also …"
+    }
+  ]
+}

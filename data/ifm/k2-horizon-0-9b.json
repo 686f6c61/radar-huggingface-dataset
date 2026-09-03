@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "IFM/K2-Horizon-0.9B",
+  "slug": "ifm-k2-horizon-0-9b",
+  "author": "IFM",
+  "url": "https://huggingface.co/IFM/K2-Horizon-0.9B",
+  "created_at": "2026-09-01T22:55:52.000Z",
+  "updated_at": "2026-09-03T16:37:02.000Z",
+  "license": "internal-only",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "k2_horizon",
+    "text-generation",
+    "k2-horizon",
+    "0.9b",
+    "dense",
+    "reasoning",
+    "knowledge-distillation",
+    "ifm",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 220,
+  "trending_score": 0,
+  "parameters": 1078285824,
+  "parameters_human": "1.08B",
+  "storage_bytes": 8627586433,
+  "storage_human": "8.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JJ Costantini - Facebook",
+      "url": "https://www.facebook.com/jj.costantini/",
+      "snippet": "JJ Costantini is on Facebook. Join Facebook to connect with JJ Costantini and others you may know. Facebook gives people the …"
+    },
+    {
+      "title": "Introducing K2 Horizon: Frontier Performance, Radically Open - ifm.ai",
+      "url": "https://ifm.ai/blog/k2",
+      "snippet": "Today IFM is releasing K2 Horizon, a connected fleet of six models: 375B-A23B, 36B-A4B, 32B, 7B, 3.7B, and 0.9B. Across reasoning, mathematics, coding, agentic tasks, and general capabilities, K2 Horizon delivers top-tier performance in every size class—with the 0.9B, 3.7B, and 7B models setting new state of the art at their respective scales. K2 Horizon is also our most comprehensive open ..."
+    },
+    {
+      "title": "Costantini SA - Construction/génie civil | Differdange - Facebook",
+      "url": "https://www.facebook.com/people/Costantini-SA-Constructiong%C3%A9nie-civil/100063542381532/",
+      "snippet": "Sur Instagram, retrouvez un contenu différent : plus de coulisses, plus de terrain et plus d’immersion. 👷‍♂️🏗️ Suivez les avancées de …"
+    },
+    {
+      "title": "K2 Horizon: Open-Source AI Models for Every Scale | IFM",
+      "url": "https://ifm.ai/k2/",
+      "snippet": "Meet K2 Horizon: The largest fully open-source model launch in AI history, spanning six models that give you greater choice in capabilities, scale and deployment options, along with open access to training code and data."
+    },
+    {
+      "title": "Costantini Costantini (@costantini.costantini) - Facebook",
+      "url": "https://www.facebook.com/costantini.costantini/",
+      "snippet": "Costantini Costantini is on Facebook. Join Facebook to connect with Costantini Costantini and others you may know. Facebook gives …"
+    }
+  ]
+}

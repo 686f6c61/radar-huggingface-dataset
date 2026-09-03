@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "danhcao/v-omnivoice",
+  "slug": "danhcao-v-omnivoice",
+  "author": "danhcao",
+  "url": "https://huggingface.co/danhcao/v-omnivoice",
+  "created_at": "2026-09-03T16:26:16.000Z",
+  "updated_at": "2026-09-03T16:30:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "omnivoice",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "omnivoice",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "voice-cloning",
+    "voice-design",
+    "zero-shot",
+    "vietnamese",
+    "vi",
+    "arxiv:2604.00688",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 612577288,
+  "parameters_human": "612.6M",
+  "storage_bytes": 3267534418,
+  "storage_human": "3.3 GB",
+  "base_model": "k2-fsa/OmniVoice, Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "一个方框内有个勾（☑）怎么打出这符号_百度知道",
+      "url": "https://zhidao.baidu.com/question/136956635.html",
+      "snippet": "Feb 8, 2010 · 一个方框内有个勾（☑）怎么打出这符号☑这个符号可以用word的特殊字符打出来。以Word2016版为例，具体步骤如 …"
+    },
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "148 万浏览 · 693 关注 · 411 回答 查看全部 热点 问题 潜力好问题 乐华艺人金子涵官宣退圈，如何看待她的选择？ 444 万浏览 · 285 关 …"
+    },
+    {
+      "title": "怎么进入patreon - 百度经验",
+      "url": "https://jingyan.baidu.com/article/75ab0bcb09726297864db285.html",
+      "snippet": "Mar 4, 2020 · 2 打开patreon后，我们需要注册一个patreon账号，点击如图所示的【sign up】 3 注册并登陆patreon账号后，我们即可 …"
+    }
+  ]
+}

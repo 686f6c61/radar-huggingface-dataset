@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "IFM/K2-Horizon-MoVA-36B-A4B",
+  "slug": "ifm-k2-horizon-mova-36b-a4b",
+  "author": "IFM",
+  "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B",
+  "created_at": "2026-09-01T23:01:25.000Z",
+  "updated_at": "2026-09-03T13:08:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "k2_horizon",
+    "text-generation",
+    "k2-horizon",
+    "36b",
+    "mova",
+    "moe",
+    "open-weights",
+    "ifm",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:IFM/K2-Horizon-Pretrain-Data",
+    "dataset:IFM/K2-Horizon-Midtrain-Data",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 54,
+  "downloads_30d": 0,
+  "trending_score": 54,
+  "parameters": 37444792020,
+  "parameters_human": "37.44B",
+  "storage_bytes": 2471479250874,
+  "storage_human": "2471.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ifm electronic - spécialiste des capteurs et solutions d’automatismes ...",
+      "url": "https://www.ifm.com/fr/fr",
+      "snippet": "ifm vous accompagne dans toutes les phases de vos projets ou demandes : de la préconisation de solutions jusqu’à la mise en …"
+    },
+    {
+      "title": "Institut Français de la Mode | Ecole mode Paris",
+      "url": "https://www.ifmparis.fr/fr",
+      "snippet": "L’Institut Français de la Mode, issu de l'union de l'Ecole de la chambre syndicale de la couture parisienne et de l'IFM, est un …"
+    },
+    {
+      "title": "Programs | Institut Français de la Mode",
+      "url": "https://www.ifmparis.fr/en/programs",
+      "snippet": "The Doctoral Studies Program in Fashion Design (DFD) is a practice-based program developed by IFM in collaboration with various …"
+    },
+    {
+      "title": "ifm electronic - détecteurs de position, de capteurs de process, de bus ...",
+      "url": "https://www.ifm.com/be/fr",
+      "snippet": "ifm electronic est un groupe international allemand spécialisé dans la détection industrielle."
+    },
+    {
+      "title": "IFM - Intergroupe Francophone du Myélome",
+      "url": "https://www.myelome.fr/",
+      "snippet": "L’IFM regroupe des cliniciens et des biologistes en France, en Belgique et en Suisse. Son objectif est de faire avancer la recherche …"
+    }
+  ]
+}

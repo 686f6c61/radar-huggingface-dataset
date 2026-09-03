@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Jkatdare/gemma-3-4b-it-finetome-30k",
+  "slug": "jkatdare-gemma-3-4b-it-finetome-30k",
+  "author": "Jkatdare",
+  "url": "https://huggingface.co/Jkatdare/gemma-3-4b-it-finetome-30k",
+  "created_at": "2026-09-03T12:23:12.000Z",
+  "updated_at": "2026-09-03T12:24:13.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "lora",
+    "qlora",
+    "sft",
+    "trl",
+    "fine-tuned",
+    "conversational",
+    "en",
+    "dataset:mlabonne/FineTome-100k",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:adapter:google/gemma-3-4b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 8638356081,
+  "storage_human": "8.6 GB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Übersetzer herunterladen und verwenden",
+      "url": "https://support.google.com/translate/answer/6350850?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Mit der Google Übersetzer App können Sie Text, Handschrift, Fotos und Spracheingaben in mehr als 200 Sprachen übersetzen. …"
+    },
+    {
+      "title": "Bilder übersetzen lassen - Android - Google Übersetzer-Hilfe",
+      "url": "https://support.google.com/translate/answer/6142483?hl=de&co=GENIE.Platform%3DAndroid",
+      "snippet": "Mit der Übersetzer App können Sie Text auf Bildern auf Ihrem Smartphone übersetzen. Bei einigen Geräten lässt sich Text ganz …"
+    },
+    {
+      "title": "Dokumente und Websites übersetzen lassen - Computer - Google …",
+      "url": "https://support.google.com/translate/answer/2534559?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Hier erfahren Sie, welche Geräte die Funktionen von Google Übersetzer unterstützen. Websites übersetzen lassen Wichtig: Diese …"
+    },
+    {
+      "title": "Übersetzer-Verlauf suchen und verwalten - Google Help",
+      "url": "https://support.google.com/translate/answer/6142480?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Übersetzer-Verlauf suchen und verwalten Sie können Ihren Google Übersetzer-Verlauf speichern, um die Bedeutung einzelner …"
+    },
+    {
+      "title": "Live-Übersetzung von Sprache zu Sprache anhören - Android - Google ...",
+      "url": "https://support.google.com/translate/answer/6142474?hl=de&co=GENIE.Platform%3DAndroid",
+      "snippet": "Wenn Sie sich Audioinhalte anhören möchten, die in einer Sprache vorliegen, die Sie nicht verstehen, verbinden Sie Ihre Kopfhörer …"
+    }
+  ]
+}

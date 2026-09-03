@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "moshabann/egyptian-id-card-detector",
+  "slug": "moshabann-egyptian-id-card-detector",
+  "author": "moshabann",
+  "url": "https://huggingface.co/moshabann/egyptian-id-card-detector",
+  "created_at": "2026-09-03T12:45:31.000Z",
+  "updated_at": "2026-09-03T12:45:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "yolo",
+    "document-ai",
+    "ocr",
+    "id-card-detection",
+    "perspective-transform",
+    "computer-vision",
+    "robovai",
+    "object-detection",
+    "en",
+    "ar",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6251171,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Play",
+      "url": "https://play.google.com/",
+      "snippet": "Discover millions of Android apps, games, music, movies, TV shows, books, and more on Google Play for all your devices."
+    },
+    {
+      "title": "Apps Android no Google Play",
+      "url": "https://play.google.com/store/apps?hl=pt-BR",
+      "snippet": "Aproveite milhões de novidades em apps, jogos, filmes, músicas, TV, livros e revistas para Android. A qualquer momento, em …"
+    },
+    {
+      "title": "Play Avatar World ® on PC | Download Now - Google Play Store",
+      "url": "https://play.google.com/pc-store/games/details?id=com.pazugames.avatarworld",
+      "snippet": "Be Whoever You Want! Download and play Avatar World ® on your PC."
+    },
+    {
+      "title": "Android Apps on Google Play",
+      "url": "https://play.google.com/store/games?hl=en",
+      "snippet": "Enjoy millions of the latest Android apps, games, music, movies, TV, books, magazines & more. Anytime, anywhere, across your …"
+    },
+    {
+      "title": "Mini Militia - War.io - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.appsomniacs.da2&hl=en-US",
+      "snippet": "Mini Militia - Doodle Army 2 is all about intense multiplayer combat! Battle with up to 6 players online in this 2D fun cartoon themed …"
+    }
+  ]
+}

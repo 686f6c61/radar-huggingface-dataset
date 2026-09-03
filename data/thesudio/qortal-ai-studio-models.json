@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "thesudio/qortal-ai-studio-models",
+  "slug": "thesudio-qortal-ai-studio-models",
+  "author": "thesudio",
+  "url": "https://huggingface.co/thesudio/qortal-ai-studio-models",
+  "created_at": "2026-07-23T02:45:45.000Z",
+  "updated_at": "2026-09-03T11:58:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 12895570508,
+  "parameters_human": "12.90B",
+  "storage_bytes": 42420293326,
+  "storage_human": "42.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BIOTA COM SRL din Braila - CUI 7045867 - targetare.ro",
+      "url": "https://targetare.ro/7045867/biota-com-srl",
+      "snippet": "Jul 8, 2026 · Date firmă BIOTA COM SRL (CUI 7045867) din Braila, județul Braila. Vezi adresa firmei, bilanț, date de contact, email, …"
+    },
+    {
+      "title": "BIOTA COM SRL din Brăila, CUI 7045867 - firme.ro",
+      "url": "https://firme.ro/7045867-biota-com-srl",
+      "snippet": "Feb 27, 1995 · Care este domeniul de activitate al firmei BIOTA COM SRL? Domeniul de activitate al firmei BIOTA COM SRL este …"
+    },
+    {
+      "title": "Biota Com",
+      "url": "https://www.biota.ro/",
+      "snippet": "Activăm în județele Vrancea, Tulcea, Brăila, Ialomița și Galați, deservind atât parteneri comerciali, cât și clienți individuali. Livrarea …"
+    },
+    {
+      "title": "BIOTA COM SRL - CUI 7045867 - RisCo",
+      "url": "https://www.risco.ro/verifica-firma/biota-com-cui-7045867",
+      "snippet": "Verifică BIOTA COM SRL (CUI 7045867): cifră de afaceri 25.243.760 ron, profit net 194713 ron, 30 angajați. Date financiare oficiale …"
+    },
+    {
+      "title": "BIOTA COM SRL din Municipiul Brăila - CUI 7045867 | CautareFirme.ro",
+      "url": "https://cautarefirme.ro/firma/biota-com-srl-municipiul-braila-7045867",
+      "snippet": "Profil complet BIOTA COM SRL (CUI 7045867) din Municipiul Brăila. Date financiare, bilanțuri, profit, cifră de afaceri, informații din …"
+    }
+  ]
+}

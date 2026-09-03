@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "NAB11/Makeen-v0.0.5",
+  "slug": "nab11-makeen-v0-0-5",
+  "author": "NAB11",
+  "url": "https://huggingface.co/NAB11/Makeen-v0.0.5",
+  "created_at": "2026-09-03T15:31:47.000Z",
+  "updated_at": "2026-09-03T15:38:26.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "tensorboard",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "llama-factory",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5871451782,
+  "storage_human": "5.9 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "شبكة قانوني الأردن",
+      "url": "https://lawjo.net/",
+      "snippet": "منذ عام 2011، نُقدم في شبكة قانوني الأردن خدمات قانونية شاملة ومتخصصة، مدعومة بفريق من المحامين الأكفاء ذوي الخبرة الواسعة في مختلف التخصصات القانونية. نسعى جاهدين لتحقيق العدالة وتمكين …"
+    },
+    {
+      "title": "NAB11 (NAB) - Hugging Face",
+      "url": "https://huggingface.co/NAB11/models",
+      "snippet": "Org profile for NAB on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "الاقامة في الاردن للمستثمرين – الشروط والاجراءات",
+      "url": "https://lawjo.net/legal-articles-and-news-ar/%d8%a7%d9%84%d8%a7%d9%82%d8%a7%d9%85%d8%a9-%d9%81%d9%8a-%d8%a7%d9%84%d8%a7%d8%b1%d8%af%d9%86-%d9%84%d9%84%d9%85%d8%b3%d8%aa%d8%ab%d9%85%d8%b1%d9%8a%d9%86-%d8%a7%d9%84%d8%b4%d8%b1%d9%88%d8%b7/",
+      "snippet": "منح الاقامة في الأردن للمستثمرين الشروط والاجراءات: تعد الأردن من الدول ذات الموارد البشرية العالية، والتي تتمتع بعلاقات اقتصادية واستراتيجية قوية مع منطقة الشرق الأوسط وشمال إفريقيا والعالم، …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF pipecat-ai/phonellm-alpha-1"
+    },
+    {
+      "title": "www.ghlasa.com",
+      "url": "https://www.ghlasa.com/%D8%B5%D9%88%D8%B1-%D8%A8%D9%86%D8%A7%D8%AA-%D9%85%D8%B5%D8%B1-%D9%84%D9%84%D8%AA%D8%B9%D8%A7%D8%B1%D9%81-%D8%A7%D9%84%D8%AC%D8%A7%D8%AF-%D9%88%D8%A7%D9%84%D8%B2%D9%88%D8%A7%D8%AC/",
+      "snippet": ""
+    }
+  ]
+}

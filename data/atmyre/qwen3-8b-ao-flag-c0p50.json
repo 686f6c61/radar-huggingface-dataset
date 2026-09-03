@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Atmyre/qwen3-8b-ao-flag-c0p50",
+  "slug": "atmyre-qwen3-8b-ao-flag-c0p50",
+  "author": "Atmyre",
+  "url": "https://huggingface.co/Atmyre/qwen3-8b-ao-flag-c0p50",
+  "created_at": "2026-09-03T14:18:35.000Z",
+  "updated_at": "2026-09-03T14:20:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "activation-oracle",
+    "interpretability",
+    "qwen3",
+    "concept-flag",
+    "arxiv:2512.15674",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 698419728,
+  "storage_human": "698 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Customer Due Diligence (CDD): - One Constellation",
+      "url": "https://one-constellation.com/blog/customer-due-diligence-cdd-the-complete-2026-guide/",
+      "snippet": "Customer Due Diligence (CDD) is the foundation of AML compliance. Learn the requirements, the three risk tiers, and the six steps to …"
+    },
+    {
+      "title": "Customer Due Diligence Requirements | CDD Checklist 2026 - Neotas",
+      "url": "https://www.neotas.com/customer-due-diligence-requirements/",
+      "snippet": "Customer due diligence (CDD) is the regulated process through which a business verifies who its customers are, understands what …"
+    },
+    {
+      "title": "Types of Due Diligence - Know the Different Due Diligence Methods",
+      "url": "https://www.wallstreetoasis.com/resources/skills/deals/types-of-due-diligence",
+      "snippet": "CDD aims to give investors a deep understanding of the company's commercial landscape. It often entails conducting market …"
+    },
+    {
+      "title": "Customer Due Diligence (CDD): The Process and Its Types (2026)",
+      "url": "https://npifund.com/article/customer-due-diligence-cdd-the-process-and-its-types",
+      "snippet": "1 day ago · Customer Due Diligence (CDD) is the process of collecting and verifying information about a customer during onboarding. …"
+    },
+    {
+      "title": "Customer Due Diligence (CDD) Explained - primebridgeglobal.com",
+      "url": "https://primebridgeglobal.com/customer%e2%80%91due%e2%80%91diligence%e2%80%91cdd%e2%80%91eu%e2%80%91expansion/",
+      "snippet": "Customer Due Diligence (CDD) is the process of identifying and verifying your customers and understanding the nature of your …"
+    }
+  ]
+}

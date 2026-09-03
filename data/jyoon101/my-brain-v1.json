@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jyoon101/my-brain-v1",
+  "slug": "jyoon101-my-brain-v1",
+  "author": "jyoon101",
+  "url": "https://huggingface.co/jyoon101/my-brain-v1",
+  "created_at": "2026-09-03T16:18:48.000Z",
+  "updated_at": "2026-09-03T16:31:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278788619,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search Images - Bing",
+      "url": "https://www.bing.com/camera",
+      "snippet": "Intelligent search from Bing makes it easier to quickly find what you’re looking for and rewards you."
+    },
+    {
+      "title": "Bing Images",
+      "url": "https://www.bing.com/images/",
+      "snippet": "Search and explore high-quality, free photos and wallpapers on Bing Images. Inspire and elevate your visuals!"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www.bing.com/",
+      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
+    },
+    {
+      "title": "Suche – Microsoft Bing",
+      "url": "https://de.bing.com/",
+      "snippet": "Suchen Sie mit Microsoft Bing und nutzen Sie die Leistungsfähigkeit der KI, um Informationen zu finden, Webseiten, Bilder, Videos, …"
+    },
+    {
+      "title": "Collections - Bing",
+      "url": "https://www.bing.com/saves/",
+      "snippet": "Discover and save your favorite searches, videos, images, and shopping ideas on Bing for easy access anytime."
+    }
+  ]
+}

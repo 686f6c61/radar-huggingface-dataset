@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "rohansiva/gr00t-libero-x-90task",
+  "slug": "rohansiva-gr00t-libero-x-90task",
+  "author": "rohansiva",
+  "url": "https://huggingface.co/rohansiva/gr00t-libero-x-90task",
+  "created_at": "2026-09-03T17:50:38.000Z",
+  "updated_at": "2026-09-03T17:51:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "robotics",
+    "vla",
+    "gr00t",
+    "libero-x",
+    "base_model:nvidia/GR00T-N1.7-LIBERO",
+    "base_model:finetune:nvidia/GR00T-N1.7-LIBERO",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 6910499416,
+  "storage_human": "6.9 GB",
+  "base_model": "nvidia/GR00T-N1.7-LIBERO",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elgin 1943 USN Military Stop Watch - NAWCC Forums",
+      "url": "https://mb.nawcc.org/threads/elgin-1943-usn-military-stop-watch.47329/",
+      "snippet": "Feb 19, 2009 · This is a minute timer with a 30 minute register. I don't have this specific model to compare but have a similar 10 …"
+    },
+    {
+      "title": "rohansiva/gr00t-libero-x · Hugging Face",
+      "url": "https://huggingface.co/rohansiva/gr00t-libero-x",
+      "snippet": "rohansiva / gr00t-libero-x like 0 Robotics Safetensors Gr00tN1d7 vla gr00t libero-x License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new GR00T N1.7 fine-tuned on LIBERO-X (Levels 1-3, 60-task subset) Training data Training setup Evaluation"
+    },
+    {
+      "title": "WW2 German Timer, U-Jagd - NAWCC Forums",
+      "url": "https://mb.nawcc.org/threads/ww2-german-timer-u-jagd.31389/",
+      "snippet": "Feb 16, 2007 · I have been trying to find out how this German ww2 timer was used to “hunt submarines”. I do not own the timer, just …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=libero-x",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: libero-x Clear all"
+    },
+    {
+      "title": "Need help Identifying Elgin stopwatch timer | NAWCC Forums",
+      "url": "https://mb.nawcc.org/threads/need-help-identifying-elgin-stopwatch-timer.161890/",
+      "snippet": "Aug 1, 2019 · Recently acquired an Elgin stopwatch I have never seen before. The way the dial is marked it for timing a 5 mile run at …"
+    }
+  ]
+}

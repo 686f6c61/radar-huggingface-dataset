@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Atmyre/qwen3-8b-ao-strict-flag-c1p00",
+  "slug": "atmyre-qwen3-8b-ao-strict-flag-c1p00",
+  "author": "Atmyre",
+  "url": "https://huggingface.co/Atmyre/qwen3-8b-ao-strict-flag-c1p00",
+  "created_at": "2026-09-03T14:24:34.000Z",
+  "updated_at": "2026-09-03T14:24:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "activation-oracle",
+    "interpretability",
+    "qwen3",
+    "concept-strict-flag",
+    "arxiv:2512.15674",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 698419728,
+  "storage_human": "698 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Statement Letter - midnitepower.com",
+      "url": "https://www.midnitepower.com/post/statement-letter",
+      "snippet": "Dec 11, 2025 · We are writing to inform you of an important update regarding the MidNite Power ESS mobile application. For Existing …"
+    },
+    {
+      "title": "Inverter Installation Tip - MNPower",
+      "url": "https://www.midnitepower.com/general-5",
+      "snippet": "Fast setup guides for the MN15-12KW-AIO: App/Portal, Generators, and Reusing PV Arrays. Click below to download the documents …"
+    },
+    {
+      "title": "Inside the new Power Apps: The future of app development",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/2025/11/18/inside-the-new-power-apps-the-future-of-app-development/?msockid=1fdc4a42a36d654423395d8ba2c764a9",
+      "snippet": "Nov 18, 2025 · At Microsoft Ignite 2025, we’re taking it a step further. App capabilities are now available to agents. Powered by the …"
+    },
+    {
+      "title": "A Forum run by Enthusiasts of MidNite Solar",
+      "url": "https://midniteftp.com/forum/index.php?topic=7331.0",
+      "snippet": "1 day ago · The menu items mentioned in the manual are only starting and stopping on voltage. It appears there have been a lot of …"
+    },
+    {
+      "title": "Sol-max Training (formerly Midnite Power) - YouTube",
+      "url": "https://www.youtube.com/channel/UCQdqwT17S-oo7_h0wwmSH4w",
+      "snippet": "Training webinars and videos from Sol-max (formerly Midnite Power) on the AIO inverter and PowerFlo batteries."
+    }
+  ]
+}

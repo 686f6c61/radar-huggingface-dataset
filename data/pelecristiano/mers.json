@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "pelecristiano/Mers",
+  "slug": "pelecristiano-mers",
+  "author": "pelecristiano",
+  "url": "https://huggingface.co/pelecristiano/Mers",
+  "created_at": "2026-09-03T19:25:27.000Z",
+  "updated_at": "2026-09-03T19:25:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "维基百科的官方网址是什么？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/820729145772572492.html",
+      "snippet": "Sep 9, 2024 · 1. 访问wiki百科中文版的官方网站，请输入以下网址： https://www.wiki.com。 2. 维基百科是一个基于wiki技术的免费、 …"
+    },
+    {
+      "title": "Meta AI model hacked a company during misconfigured cyber test",
+      "url": "https://www.bleepingcomputer.com/news/security/meta-ai-model-hacked-a-company-during-misconfigured-cyber-test/",
+      "snippet": "Meta has become the latest AI company to confirm that one of its models hacked a real organization during cybersecurity testing, as similar incidents continue to emerge following OpenAI'sOpenAI's ..."
+    },
+    {
+      "title": "法语的几个特殊的字母，列出来一下 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/94366850.html",
+      "snippet": "法语特殊的字母有： 大写：À、Â、È、É、Ê、Ë、 Î 、Ï 、Ô 、Ö、 Ù、 Û 、Ç 、Œ 、Æ、 €。 小写：à、â、è、é、ê、 î 、ï、 ô、 ö …"
+    },
+    {
+      "title": "Fact Check: Clip of Ronaldo drone tribute in Madeira is AI-generated",
+      "url": "https://www.reuters.com/fact-check/clip-ronaldo-drone-tribute-madeira-is-ai-generated-2026-07-14/",
+      "snippet": "An AI-generated clip depicting a drone light show paying tribute to Portugal forward Cristiano Ronaldo has been re-shared online as authentic footage of his hometown ‌Funchal on the island of ..."
+    },
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "一般常见的几个波浪线型符号（常见度由高到低）（en.wikipedia.org/wiki/T）： 「~」 U+007E TILDE（最常见，英文状态下 shift 加 1 …"
+    }
+  ]
+}

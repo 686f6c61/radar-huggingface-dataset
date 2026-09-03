@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Muhammad241198/act_short_tape_cut_240",
+  "slug": "muhammad241198-act_short_tape_cut_240",
+  "author": "Muhammad241198",
+  "url": "https://huggingface.co/Muhammad241198/act_short_tape_cut_240",
+  "created_at": "2026-09-03T14:54:25.000Z",
+  "updated_at": "2026-09-03T14:54:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:rbtrprjkt/cut-short_tape-on-box",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51814023,
+  "parameters_human": "51.8M",
+  "storage_bytes": 207291268,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poproś o sesję fotograficzną – Zdjęcia firmowe – Mapy Google",
+      "url": "https://maps.google.pl/intl/pl/help/maps/businessphotos/request.html",
+      "snippet": "Chcesz poprosić o sesję fotograficzną? Nie możesz znaleźć Rekomendowanego fotografa ani Rekomendowanej agencji …"
+    },
+    {
+      "title": "Muhammad241198 (Muhammad Obaid Ur Rahman) - Hugging Face",
+      "url": "https://huggingface.co/Muhammad241198",
+      "snippet": "Diffusion, Transformers, Imitation Learning updated a dataset 10 days ago"
+    },
+    {
+      "title": "Zdjęcia firmowe – Mapy Google",
+      "url": "https://maps.google.pl/intl/en/help/maps/businessphotos/",
+      "snippet": "Zdjęcia firmowe Przyciągaj uwagę większej liczby klientów dzięki Zdjęciom firmowym Google Dodaj wirtualną wycieczkę Zaprezentuj …"
+    },
+    {
+      "title": "Muhammad241198/act_gm_240 · Hugging Face",
+      "url": "https://huggingface.co/Muhammad241198/act_gm_240",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.pl/intl/pl/earth/",
+      "snippet": "Google Earth to najbardziej fotorealistyczna cyfrowa wersja naszej planety. Skąd pochodzą zdjęcia? W jaki sposób są łączone? Jak …"
+    }
+  ]
+}

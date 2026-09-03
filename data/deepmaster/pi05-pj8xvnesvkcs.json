@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "deepmaster/pi05-Pj8XVnesVkCS",
+  "slug": "deepmaster-pi05-pj8xvnesvkcs",
+  "author": "deepmaster",
+  "url": "https://huggingface.co/deepmaster/pi05-Pj8XVnesVkCS",
+  "created_at": "2026-09-01T17:09:35.000Z",
+  "updated_at": "2026-09-03T18:28:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lingbotvla",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 6375907511,
+  "parameters_human": "6.38B",
+  "storage_bytes": 51019202406,
+  "storage_human": "51.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MyComet",
+      "url": "https://comet.fai.ie/mycomet/",
+      "snippet": "MyComet ... MyComet"
+    },
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://deepseek.com/en/index.html",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source frontier LLMs including DeepSeek-V4, DeepSeek-R1, and DeepSeek-Coder. Chat with DeepSeek AI or integrate via API."
+    },
+    {
+      "title": "MyComet - faiconnect.ie",
+      "url": "https://faiconnect.ie/mycomet/",
+      "snippet": "MyComet is a platform on faiconnect.ie."
+    },
+    {
+      "title": "deepmaster (data) - Hugging Face",
+      "url": "https://huggingface.co/deepmaster/models",
+      "snippet": "User profile of data on Hugging Face"
+    },
+    {
+      "title": "Log in to FAI Connect",
+      "url": "https://faiconnect.ie/resources/jsf/common/home.xhtml",
+      "snippet": "COMET FAI is a state-of-the-art system for management of competitions, matchday operations, registrations, discipline, refereeing …"
+    }
+  ]
+}

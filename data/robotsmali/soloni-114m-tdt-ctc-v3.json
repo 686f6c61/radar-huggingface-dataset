@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "RobotsMali/soloni-114m-tdt-ctc-v3",
+  "slug": "robotsmali-soloni-114m-tdt-ctc-v3",
+  "author": "RobotsMali",
+  "url": "https://huggingface.co/RobotsMali/soloni-114m-tdt-ctc-v3",
+  "created_at": "2025-12-06T17:44:37.000Z",
+  "updated_at": "2026-09-03T17:48:24.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "bm"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "Transducer",
+    "TDT",
+    "FastConformer",
+    "Conformer",
+    "pytorch",
+    "Bambara",
+    "NeMo",
+    "bm",
+    "dataset:RobotsMali/kunkado",
+    "base_model:RobotsMali/soloni-114m-tdt-ctc-v2",
+    "base_model:finetune:RobotsMali/soloni-114m-tdt-ctc-v2",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 69,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 455536640,
+  "storage_human": "456 MB",
+  "base_model": "RobotsMali/soloni-114m-tdt-ctc-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Kunkado",
+      "metric": "Test WER",
+      "value": 37.12607240798047
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Kunkado",
+      "metric": "Test CER",
+      "value": 21.17887541646023
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Nyana Eval",
+      "metric": "Test WER",
+      "value": 32.336448
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Nyana Eval",
+      "metric": "Test CER",
+      "value": 16.732369
+    }
+  ],
+  "sources": [
+    {
+      "title": "60 Millions de Consommateurs — Accueil",
+      "url": "https://www.60millions-mag.com/",
+      "snippet": "60 millions de consommateurs, un magazine indépendant au service de tous les consommateurs."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "148 万浏览 · 693 关注 · 411 回答 查看全部 热点 问题 潜力好问题 乐华艺人金子涵官宣退圈，如何看待她的选择？ 444 万浏览 · 285 关 …"
+    },
+    {
+      "title": "Tests Comparatifs - 60 Millions de Consommateurs",
+      "url": "https://www.60millions-mag.com/tests-comparatifs/",
+      "snippet": "1 day ago · 18 paquets de spaghetti ont été passés au labo par 60 millions de consommateurs. Métaux lourds, pesticides, qualités …"
+    },
+    {
+      "title": "怎么卸载深信服EDR这个流氓软件？ - 知乎",
+      "url": "https://www.zhihu.com/question/593542206",
+      "snippet": "1、公司让装这个软件，但是装上就卸不掉了，提示需要管理员密码，试过N多种方式（360、系统控制面板卸载…"
+    }
+  ]
+}

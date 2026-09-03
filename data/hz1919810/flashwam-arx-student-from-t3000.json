@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "hz1919810/flashwam-arx-student-from-t3000",
+  "slug": "hz1919810-flashwam-arx-student-from-t3000",
+  "author": "hz1919810",
+  "url": "https://huggingface.co/hz1919810/flashwam-arx-student-from-t3000",
+  "created_at": "2026-09-03T17:11:14.000Z",
+  "updated_at": "2026-09-03T17:17:58.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "flash-wam",
+    "distillation",
+    "world-model",
+    "video-action",
+    "robotics",
+    "arx-lift-r5",
+    "consistency-distillation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20355663336,
+  "storage_human": "20.4 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Uninstall or remove apps and programs in Windows",
+      "url": "https://support.microsoft.com/en-us/windows/uninstall-or-remove-apps-and-programs-in-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98",
+      "snippet": "There are different ways to remove apps and programs, so if you can't find the one you're looking for, you can try another location. …"
+    },
+    {
+      "title": "Flash-WAM: Modality-Aware Distillation for World Action Models",
+      "url": "https://flashwam.github.io/",
+      "snippet": "Flash-WAM: Modality-Aware Distillation for World Action Models. A step-distillation framework that enables real-time inference for joint video-action diffusion models with a 23x speedup."
+    },
+    {
+      "title": "How to Add or Remove Programs in Windows 10 & 11",
+      "url": "https://www.wikihow.com/Add-or-Remove-Programs",
+      "snippet": "Jan 15, 2026 · \"Add or Remove Programs\" is now called \"Installed Apps.\" This feature will let you see all of the apps that are installed …"
+    },
+    {
+      "title": "Flash-WAM: Modality-Aware Distillation for World Action Models",
+      "url": "http://rndamp.com/article/2dd7a656-2f0d-4ee5-9f25-d777160dd79e",
+      "snippet": "The logical solution is step distillation. This technique trains a \"student\" model to mimic a \"teacher\" model in fewer steps. However, the authors find that standard distillation methods fail in joint models. Applying Latent Consistency Models (LCM) to a joint model causes catastrophic failure. As shown in, naive distillation drops task success from 91% to 24%."
+    },
+    {
+      "title": "Deinstallieren oder Entfernen von Apps und Programmen in Windows",
+      "url": "https://support.microsoft.com/de-de/windows/deinstallieren-oder-entfernen-von-apps-und-programmen-in-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98",
+      "snippet": "Es gibt verschiedene Möglichkeiten zum Entfernen von Apps und Programmen. Wenn Sie also das gesuchte Programm nicht finden, …"
+    }
+  ]
+}

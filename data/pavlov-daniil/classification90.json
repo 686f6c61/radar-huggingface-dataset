@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Pavlov-daniil/classification90",
+  "slug": "pavlov-daniil-classification90",
+  "author": "Pavlov-daniil",
+  "url": "https://huggingface.co/Pavlov-daniil/classification90",
+  "created_at": "2026-09-03T18:38:51.000Z",
+  "updated_at": "2026-09-03T18:38:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Städtereise nach Kopenhagen: Auf in die dänische Hauptstadt!",
+      "url": "https://www.urlaubspiraten.de/reiseziele/daenemark/kopenhagen",
+      "snippet": "Kopenhagen, die Hauptstadt Dänemarks, ist eine der bedeutendsten Metropolen Nordeuropas und gleichzeitig auch ein beliebtes …"
+    },
+    {
+      "title": "classification.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/deeppavlov/DeepPavlov/blob/master/docs/features/models/classification.ipynb",
+      "snippet": "insults_kaggle_bert is the name of the model's config_file. What is a Config File? Configuration file defines the model and describes its hyperparameters. To use another model, change the name of the config_file here and further. The full list of classification models with their config names can be found in the table."
+    },
+    {
+      "title": "Städtereise nach Kopenhagen | Jetzt Hotel & Zug buchen!",
+      "url": "https://www.bahn.de/angebot/urlaub/staedtereisen/kopenhagen",
+      "snippet": "Buchen Sie jetzt Ihre Städtereise nach Kopenhagen inklusive Hotel und Zugfahrt! Lassen Sie sich von der Schönheit Kopenhagens …"
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Mit dem Zug nach Kopenhagen | Günstige Bahntickets buchen!",
+      "url": "https://www.bahn.de/strecke/kopenhagen",
+      "snippet": "Erleben Sie den Komfort und das skandinavische Flair einer Reise mit der Bahn nach Kopenhagen – eine Stadt voller Design, Kultur …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "DaoyuanZhu/wb_pointed_chair_pull_push_posture",
+  "slug": "daoyuanzhu-wb_pointed_chair_pull_push_posture",
+  "author": "DaoyuanZhu",
+  "url": "https://huggingface.co/DaoyuanZhu/wb_pointed_chair_pull_push_posture",
+  "created_at": "2026-09-03T11:11:52.000Z",
+  "updated_at": "2026-09-03T11:11:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "robotics",
+    "human-activity-recognition",
+    "posture-estimation",
+    "unitree-g1",
+    "lerobot",
+    "human-robot-interaction",
+    "video-classification",
+    "dataset:DaoyuanZhu/wb_pointed_chair_pull_push_rgb",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 224483,
+  "parameters_human": "224483",
+  "storage_bytes": 3350016,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hornyblondieboyy recordings on #1 Webcam Archive – Recurbate",
+      "url": "https://recu.me/performer/hornyblondieboyy",
+      "snippet": "hornyblondieboyy recordings from Chaturbate. Explore the biggest Chaturbate archive - Recurbate, enjoy the access to a huge …"
+    },
+    {
+      "title": "ZUO66/wb_pointed_chair_pull_push_rgb - Hugging Face",
+      "url": "https://huggingface.co/datasets/ZUO66/wb_pointed_chair_pull_push_rgb",
+      "snippet": "Datasets: ZUO66 / wb_pointed_chair_pull_push_rgb like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·74.3k rows default (74 ..."
+    },
+    {
+      "title": "hornyblondieboyy webcam videos on CumCams free",
+      "url": "https://cumcams.cc/performer/hornyblondieboyy",
+      "snippet": "Jun 24, 2026 · hornyblondieboyy webcam videos from Chaturbate, Stripchat and Camsoda. Watch archived cam shows for free on …"
+    },
+    {
+      "title": "DaoyuanZhu/wb_pointed_location_pick_object - Hugging Face",
+      "url": "https://huggingface.co/datasets/DaoyuanZhu/wb_pointed_location_pick_object/viewer",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hornyblondieboyy - Chaturbate Male Archive- GayRecs",
+      "url": "https://gayrecs.com/p/hornyblondieboyy/",
+      "snippet": "Aug 27, 2026 · Watch hornyblondieboyy Chaturbate recordings. Browse 189 free Male cam shows and replays. See why …"
+    }
+  ]
+}

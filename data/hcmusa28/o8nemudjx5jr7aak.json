@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "hcmusa28/o8nEMUdJX5Jr7aAk",
+  "slug": "hcmusa28-o8nemudjx5jr7aak",
+  "author": "hcmusa28",
+  "url": "https://huggingface.co/hcmusa28/o8nEMUdJX5Jr7aAk",
+  "created_at": "2026-09-02T04:56:55.000Z",
+  "updated_at": "2026-09-03T13:05:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100594257576,
+  "storage_human": "100.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.lu/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "hcmusa28/TfPTM6w8i69Nkvk2 · Hugging Face",
+      "url": "https://huggingface.co/hcmusa28/TfPTM6w8i69Nkvk2",
+      "snippet": "hcmusa28 / TfPTM6w8i69Nkvk2 like 0 Follow A28 1 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Google Images",
+      "url": "https://www.google.lu/imghp?hl=fr",
+      "snippet": "Google Images. La recherche d'images la plus complète sur le Web."
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?!!",
+      "snippet": "Explore machine learning models. HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF"
+    },
+    {
+      "title": "Google Görseller",
+      "url": "https://images.google.lu/?hl=tr-RU",
+      "snippet": "Google Görseller. Web üzerindeki en geniş kapsamlı görsel arama."
+    }
+  ]
+}

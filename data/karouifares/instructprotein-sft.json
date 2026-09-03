@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "karouiFares/InstructProtein-SFT",
+  "slug": "karouifares-instructprotein-sft",
+  "author": "karouiFares",
+  "url": "https://huggingface.co/karouiFares/InstructProtein-SFT",
+  "created_at": "2026-09-03T12:22:00.000Z",
+  "updated_at": "2026-09-03T12:22:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:hicai-zju/InstructProtein",
+    "base_model:adapter:hicai-zju/InstructProtein",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75710145,
+  "storage_human": "76 MB",
+  "base_model": "hicai-zju/InstructProtein",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les téléservices amelipro | ameli.fr | Médecin",
+      "url": "https://www.ameli.fr/medecin/exercice-liberal/entre-vous-et-nous/teleservices",
+      "snippet": "Jun 18, 2026 · L’espace amelipro accueille l’ensemble des téléservices accessibles aux professionnels de santé, qui peuvent les …"
+    },
+    {
+      "title": "VOUS CONNECTER PAR CARTE CPS - AMELIPRO",
+      "url": "https://authcps-espacepro.ameli.fr/CPS/oauth2/authorize",
+      "snippet": "Vous pouvez vous faire assister par votre Conseiller Informatique et Services ou par l’assistance technique amelipro au 36 08 …"
+    },
+    {
+      "title": "ameli, le site de l’Assurance Maladie en ligne | ameli.fr ...",
+      "url": "https://www.ameli.fr/professionnel-de-la-lpplatm",
+      "snippet": "Le site officiel de l'Assurance Maladie pour les professionnels de la LPP / LATM. Convention - Facturation - Vie professionnelle"
+    },
+    {
+      "title": "Compte amelipro pour les professionnels de la santé",
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/R19124",
+      "snippet": "Compte amelipro pour les professionnels de la santé Permet aux professionnels de la santé de consulter leurs coordonnées et …"
+    },
+    {
+      "title": "Espace partenaires - ameli",
+      "url": "http://espace-partenaires.ameli.fr/partenaire/",
+      "snippet": "Pour continuer, merci de saisir votre identifiant et votre mot de passe."
+    }
+  ]
+}

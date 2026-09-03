@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Atmyre/qwen3-8b-ao-wave-c1p00",
+  "slug": "atmyre-qwen3-8b-ao-wave-c1p00",
+  "author": "Atmyre",
+  "url": "https://huggingface.co/Atmyre/qwen3-8b-ao-wave-c1p00",
+  "created_at": "2026-09-03T14:23:52.000Z",
+  "updated_at": "2026-09-03T14:24:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "activation-oracle",
+    "interpretability",
+    "qwen3",
+    "concept-wave",
+    "arxiv:2512.15674",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 698419728,
+  "storage_human": "698 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026年 7月 显卡天梯图（更新RTX 5090Dv2&RX 9060）",
+      "url": "https://www.zhihu.com/tardis/zm/art/294283384",
+      "snippet": "1080P/2K/4K分辨率，以RTX 5050为基准（25款主流游戏测试成绩取平均值） 数据来源于：TechPowerUp 桌面端显卡天梯图："
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Compte Instagram verrouillé et irrécupérable",
+      "url": "https://forums.commentcamarche.net/forum/affich-37319755-compte-instagram-verrouille-et-irrecuperable",
+      "snippet": "Aug 20, 2021 · La seule solution est donc d'attendre qu'Instagram vous restitue votre compte et ne tombez pas dans le piège des …"
+    },
+    {
+      "title": "Problème bouton shopping Instagram [Résolu] - Instagram",
+      "url": "https://forums.commentcamarche.net/forum/affich-35360771-probleme-bouton-shopping-instagram",
+      "snippet": "Résumé de la discussion Plusieurs utilisateurs rencontrent le problème d'affichage du bouton shopping sur Instagram malgré la …"
+    },
+    {
+      "title": "Contattare centro assistenza Instagram: numero, email - CCM",
+      "url": "https://it.ccm.net/faq/20697-contattare-centro-assistenza-instagram",
+      "snippet": "Mar 16, 2023 · A volte potrebbe capitare di non riuscire ad accedere ad Instagram perch&eacute; l'account &egrave; stato bloccato, …"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "OliviaRossi/RE-TIES-NSM-Merge-Q5_K_M-GGUF",
+  "slug": "oliviarossi-re-ties-nsm-merge-q5_k_m-gguf",
+  "author": "OliviaRossi",
+  "url": "https://huggingface.co/OliviaRossi/RE-TIES-NSM-Merge-Q5_K_M-GGUF",
+  "created_at": "2026-09-03T11:03:05.000Z",
+  "updated_at": "2026-09-03T11:04:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "merge",
+    "merge-model",
+    "moe",
+    "mixture-of-experts",
+    "hybrid-attention",
+    "deltanet",
+    "qwen",
+    "code",
+    "agent",
+    "reasoning",
+    "math",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:OliviaRossi/RE-TIES-NSM-Merge",
+    "base_model:quantized:OliviaRossi/RE-TIES-NSM-Merge",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 24729124128,
+  "storage_human": "24.7 GB",
+  "base_model": "OliviaRossi/RE-TIES-NSM-Merge",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beeg - Free HD Porn Videos | Watch XXX Adult Content Online",
+      "url": "https://beeg.tv/",
+      "snippet": "Enjoy full-length HD porn videos on Beeg.tv. Stream high-quality XXX content in all categories with fast and seamless playback. Start …"
+    },
+    {
+      "title": "OliviaRossi/DAOS-Fusion-Q5_K_M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/OliviaRossi/DAOS-Fusion-Q5_K_M-GGUF",
+      "snippet": "OliviaRossi / DAOS-Fusion-Q5_K_M-GGUF like 1 Text Generation Transformers GGUF English Chinese code Mixture of Experts agent reasoning Merge qwen3.5 qwen3.6 daos-fusion della model-stock dare star delta-net vllm llama.cpp llama-cpp gguf-my-repo conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to ..."
+    },
+    {
+      "title": "Porn 40 - Beeg",
+      "url": "https://porn40.com/de/videos-from-beeg/all/10",
+      "snippet": "Porn 40 - Beeg - 21,337 Videos. Beliebte Videos: Immer wieder gefickt werden, Beste freundin, Milf im hotel gefickt, Gabbie Carter, …"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Kostenlose Beeg Porno-Videos von | xHamster",
+      "url": "https://ge.xhamster.desi/tags/beeg",
+      "snippet": "Erlebe die kostenlosen Beeg Porno-Videos von auf xHamster. Schaue jetzt alle Beeg Porno-Videos!"
+    }
+  ]
+}

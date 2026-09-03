@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Atmyre/qwen3-8b-taboo-strict-moon-c1p00",
+  "slug": "atmyre-qwen3-8b-taboo-strict-moon-c1p00",
+  "author": "Atmyre",
+  "url": "https://huggingface.co/Atmyre/qwen3-8b-taboo-strict-moon-c1p00",
+  "created_at": "2026-09-03T14:31:48.000Z",
+  "updated_at": "2026-09-03T14:39:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "taboo",
+    "interpretability",
+    "qwen3",
+    "concept-moon",
+    "arxiv:2512.15674",
+    "arxiv:2607.23379",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 349243752,
+  "storage_human": "349 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "维基百科的官方网址是什么？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/820729145772572492.html",
+      "snippet": "Sep 9, 2024 · 1. 访问wiki百科中文版的官方网站，请输入以下网址： https://www.wiki.com。 2. 维基百科是一个基于wiki技术的免费、 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "148 万浏览 · 693 关注 · 411 回答 查看全部 热点 问题 潜力好问题 乐华艺人金子涵官宣退圈，如何看待她的选择？ 444 万浏览 · 285 关 …"
+    },
+    {
+      "title": "法语的几个特殊的字母，列出来一下 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/94366850.html",
+      "snippet": "法语特殊的字母有： 大写：À、Â、È、É、Ê、Ë、 Î 、Ï 、Ô 、Ö、 Ù、 Û 、Ç 、Œ 、Æ、 €。 小写：à、â、è、é、ê、 î 、ï、 ô、 ö …"
+    },
+    {
+      "title": "百度知道 - 全球领先中文互动问答平台",
+      "url": "https://zhidao.baidu.com/",
+      "snippet": "百度知道是全球领先的中文问答互动平台，每天为数亿网民答疑解惑。百度知道通过AI技术实现智能检索和智能推荐，让您的每个疑问 …"
+    }
+  ]
+}

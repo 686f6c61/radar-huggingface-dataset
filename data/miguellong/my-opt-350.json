@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "miguellong/my-opt-350",
+  "slug": "miguellong-my-opt-350",
+  "author": "miguellong",
+  "url": "https://huggingface.co/miguellong/my-opt-350",
+  "created_at": "2026-09-03T17:28:19.000Z",
+  "updated_at": "2026-09-03T17:28:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15740984,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "मध्य प्रदेश के नवनियुक्त कर्मचारियों को 100% वेतन हेतु हाई …",
+      "url": "https://www.bhopalsamachar.com/2026/07/mp-high-court-100-percent-salary-reminder.html",
+      "snippet": "17 hours ago · यह आदेश न केवल न्यायिक विभाग बल्कि अन्य विभागों के नवनियुक्त कर्मचारियों के लिए भी एक नजीर (Precedent) …"
+    },
+    {
+      "title": "README.md · facebook/opt-350m at main - Hugging Face",
+      "url": "https://huggingface.co/facebook/opt-350m/blob/main/README.md",
+      "snippet": "OPT : Open Pre-trained Transformer Language Models OPT was first introduced in Open Pre-trained Transformer Language Models and first released in metaseq's repository on May 3rd 2022 by Meta AI. Disclaimer: The team releasing OPT wrote an official model card, which is available in Appendix D of the paper. Content from this model card has been written by the Hugging Face team. Intro To quote ..."
+    },
+    {
+      "title": "प्रोबेशन पीरियड में वेतन कटौती अवैध, कर्मचारियों को 100% सैलरी …",
+      "url": "https://www.lawsverdict.com/2026/07/mp-high-court-probation-salary-100-percent-order.html",
+      "snippet": "Jul 10, 2026 · Home MP HIGH-COURT प्रोबेशन पीरियड में वेतन कटौती अवैध, कर्मचारियों को 100% सैलरी और 90 दिन में एरियर …"
+    },
+    {
+      "title": "opt-350m: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/opt-350m-facebook",
+      "snippet": "Overview opt-350m is a 350-million-parameter decoder-only transformer language model built by facebook and released on May 3rd, 2022. It operates as a text generation model using causal language modeling and accepts context windows of 2,048 consecutive tokens. The model was trained on 180 billion tokens (800GB) of data drawn from BookCorpus, CommonCrawl, The Pile, Reddit, and news sources ..."
+    },
+    {
+      "title": "हाईकोर्ट के बाद अब जीएडी के पाले में 100 फीसदी सैलरी का निर्णय",
+      "url": "https://thesootr.com/state/madhya-pradesh/mp-employees-full-salary-hc-decision-gad-rules-10982722",
+      "snippet": "Jan 8, 2026 · मध्‍य प्रदेश। मध्य प्रदेश हाईकोर्ट ने कर्मचारियों की सैलरी कटौती को गलत बताया है। अब गेंद सरकार के पाले में …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ChickenHiiro/ppo-Huggy",
+  "slug": "chickenhiiro-ppo-huggy",
+  "author": "ChickenHiiro",
+  "url": "https://huggingface.co/ChickenHiiro/ppo-Huggy",
+  "created_at": "2026-09-03T15:59:14.000Z",
+  "updated_at": "2026-09-03T15:59:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Huggy",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Huggy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187487335,
+  "storage_human": "187 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hagebau.de – Dein online Baumarktshop",
+      "url": "https://www.hagebau.de/",
+      "snippet": "hagebau.de: Alles für Haus & Garten bequem online bestellen. Viele Baumarktprodukte im online Hagebaumarkt Schnelle Lieferung …"
+    },
+    {
+      "title": "Aktuelle Werbung der Hagebaumärkte in Deiner Nähe",
+      "url": "https://www.hagebau.de/werbung/",
+      "snippet": "Finde aktuelle Angebote eines hagebaumarktes in Deiner Umgebung – einfach die PLZ eingeben und los geht's!"
+    },
+    {
+      "title": "Paul Swertz GmbH (hagebaumarkt Kleve) - hagebau.de",
+      "url": "https://www.hagebau.de/baumarkt/paul-swertz-gmbh-hagebaumarkt-kleve-kleve-sn125009/",
+      "snippet": "Ich möchte auf mich zugeschnittene E-Mail-Werbung (inklusive den Newsletter) von hagebau erhalten. Ich bin mit der Nutzung …"
+    },
+    {
+      "title": "Schröder Bauzentrum GmbH, Heide & Co ... - hagebau.de",
+      "url": "https://www.hagebau.de/baumarkt/schroeder-bauzentrum-gmbh-heide-co-kommanditgesellschaft-hagebaumarkt-heide-sn128807/",
+      "snippet": "Schröder Bauzentrum GmbH, Heide & Co. Kommanditgesellschaft (hagebaumarkt) in Heide - Informationen über Deinen …"
+    },
+    {
+      "title": "Hagebaumarkt Häsele GmbH - hagebau.de",
+      "url": "https://www.hagebau.de/baumarkt/hagebaumarkt-haesele-gmbh-schwaebisch-hall-sn186501/",
+      "snippet": "Ich möchte auf mich zugeschnittene E-Mail-Werbung (inklusive den Newsletter) von hagebau erhalten. Ich bin mit der Nutzung …"
+    }
+  ]
+}

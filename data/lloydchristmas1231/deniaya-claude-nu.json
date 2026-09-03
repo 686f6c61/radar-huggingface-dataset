@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lloydchristmas1231/deniaya-claude-nu",
+  "slug": "lloydchristmas1231-deniaya-claude-nu",
+  "author": "lloydchristmas1231",
+  "url": "https://huggingface.co/lloydchristmas1231/deniaya-claude-nu",
+  "created_at": "2026-09-03T14:52:25.000Z",
+  "updated_at": "2026-09-03T15:28:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778821181,
+  "storage_human": "779 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SharePoint | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/content_management/discussions/sharepoint_general",
+      "snippet": "2 days ago · SharePoint Welcome to the SharePoint group! This is the place to discuss best practices, news, and the latest trends …"
+    },
+    {
+      "title": "lloydchristmas1231/deniaya · Hugging Face",
+      "url": "https://huggingface.co/lloydchristmas1231/deniaya",
+      "snippet": "Instructions to use lloydchristmas1231/deniaya with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use lloydchristmas1231/deniaya with Diffusers:"
+    },
+    {
+      "title": "Microsoft SharePoint Blog | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/content_management/blog/spblog",
+      "snippet": "Welcome to the SharePoint Blog! Learn best practices, news, and trends directly from the SharePoint team."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "如何获取正版的office365并永久使用？ - 知乎",
+      "url": "https://www.zhihu.com/question/494557967",
+      "snippet": "Microsoft 365 A1：包含exchange（邮箱）、OneDrive（网盘）、SharePoint（内部门户）这三个主要功能 这种订阅来源为两个：1、 …"
+    }
+  ]
+}

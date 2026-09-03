@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shaoncsecu/LOKI",
+  "slug": "shaoncsecu-loki",
+  "author": "shaoncsecu",
+  "url": "https://huggingface.co/shaoncsecu/LOKI",
+  "created_at": "2026-09-03T12:47:58.000Z",
+  "updated_at": "2026-09-03T13:00:50.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7758373414,
+  "storage_human": "7.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Internet Meme Database | Know Your Meme",
+      "url": "https://knowyourmeme.com/",
+      "snippet": "Know Your Meme is a website dedicated to documenting Internet phenomena: viral videos, image macros, catchphrases, web celebs …"
+    },
+    {
+      "title": "r/funny - Reddit",
+      "url": "https://www.reddit.com/r/funny/",
+      "snippet": "Memes of any sort are expressly forbidden. This includes any variety of memetic image or video format, any footage or photographs …"
+    },
+    {
+      "title": "Memes | Know Your Meme",
+      "url": "https://knowyourmeme.com/memes/memes",
+      "snippet": "Memes are broadly defined as culturally transmitted information, or ideas and beliefs that can be spread from one organism, or group …"
+    },
+    {
+      "title": "dankmemes - Reddit",
+      "url": "https://www.reddit.com/r/dankmemes/wiki/index/",
+      "snippet": "4.No memes about violent tragedies Any meme or comment that is considered to be glorifying violence in anyway is not allowed. This …"
+    },
+    {
+      "title": "150+ Funniest Memes From The Last Month | Know Your Meme",
+      "url": "https://trending.knowyourmeme.com/editorials/collections/150-funniest-memes-from-the-last-month",
+      "snippet": "Dec 19, 2025 · Sit back and enjoy a mega collection of 150+ of the funniest memes shared online over the past month."
+    }
+  ]
+}

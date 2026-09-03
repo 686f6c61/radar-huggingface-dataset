@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "IFM/K2-Horizon-MoVA-36B-A4B-GGUF",
+  "slug": "ifm-k2-horizon-mova-36b-a4b-gguf",
+  "author": "IFM",
+  "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B-GGUF",
+  "created_at": "2026-09-03T12:56:14.000Z",
+  "updated_at": "2026-09-03T13:32:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "k2-horizon",
+    "36b",
+    "mova",
+    "moe",
+    "open-weights",
+    "ifm",
+    "text-generation",
+    "en",
+    "dataset:IFM/K2-Horizon-Pretrain-Data",
+    "dataset:IFM/K2-Horizon-Midtrain-Data",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 32,
+  "downloads_30d": 0,
+  "trending_score": 32,
+  "parameters": 37444792020,
+  "parameters_human": "37.44B",
+  "storage_bytes": 74926054299,
+  "storage_human": "74.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ifm electronic - spécialiste des capteurs et solutions d’automatismes ...",
+      "url": "https://www.ifm.com/fr/fr",
+      "snippet": "ifm vous accompagne dans toutes les phases de vos projets ou demandes : de la préconisation de solutions jusqu’à la mise en …"
+    },
+    {
+      "title": "IFM/K2-Horizon-MoVA-36B-A4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Institut Français de la Mode | Ecole mode Paris",
+      "url": "https://www.ifmparis.fr/fr",
+      "snippet": "L’Institut Français de la Mode, issu de l'union de l'Ecole de la chambre syndicale de la couture parisienne et de l'IFM, est un …"
+    },
+    {
+      "title": "IFM/K2-Horizon-MoVA-36B-A4B · Hugging Face",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Programs | Institut Français de la Mode",
+      "url": "https://www.ifmparis.fr/en/programs",
+      "snippet": "The Doctoral Studies Program in Fashion Design (DFD) is a practice-based program developed by IFM in collaboration with various …"
+    }
+  ]
+}

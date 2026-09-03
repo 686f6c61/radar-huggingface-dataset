@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Echo-Team/Echo-WM-Base-Diffusers",
+  "slug": "echo-team-echo-wm-base-diffusers",
+  "author": "Echo-Team",
+  "url": "https://huggingface.co/Echo-Team/Echo-WM-Base-Diffusers",
+  "created_at": "2026-09-03T14:46:52.000Z",
+  "updated_at": "2026-09-03T15:37:41.000Z",
+  "license": "ltx-2-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "modular-diffusers",
+    "world-model",
+    "video-generation",
+    "audio-visual",
+    "camera-control",
+    "echo-wm",
+    "image-to-video",
+    "en",
+    "arxiv:2608.23189",
+    "base_model:Echo-Team/Echo-WM",
+    "base_model:finetune:Echo-Team/Echo-WM",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19794341120,
+  "parameters_human": "19.79B",
+  "storage_bytes": 72158935973,
+  "storage_human": "72.2 GB",
+  "base_model": "Echo-Team/Echo-WM",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ECHO - Outils professionnels pour les espaces verts et l'industrie ...",
+      "url": "https://www.echo-france.fr/fr_fr/",
+      "snippet": "ECHO is a manufacturer of high quality outdoor equipment including chainsaws, brushcutters, trimmers, power pruners, hedge …"
+    },
+    {
+      "title": "Echo-Team/Echo-WM · Hugging Face",
+      "url": "https://huggingface.co/Echo-Team/Echo-WM",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Les Echos : actualités en direct, Économie, Finance, Marchés, Politique ...",
+      "url": "https://www.lesechos.fr/",
+      "snippet": "Retrouvez sur LesEchos.fr toute l'actualité économique et financière en France et dans le monde, découvrez des analyses …"
+    },
+    {
+      "title": "JoyAI-Echo/echo_wm at main · jd-opensource/JoyAI-Echo",
+      "url": "https://github.com/jd-opensource/JoyAI-Echo/tree/main/echo_wm",
+      "snippet": "🌍 Overview Echo-WM is an omnimodal world model for generative media that responds to continuous navigation while video, environmental sound, music, and speech evolve together."
+    },
+    {
+      "title": "Tronçonneuses | ECHO France",
+      "url": "https://www.echo-france.fr/fr_fr/produits/tronconneuses/",
+      "snippet": "Produits de grande qualité, résistants, fabriqués selon les standards d'exigence japonais. Donc que vous soyez en train de coupe, …"
+    }
+  ]
+}

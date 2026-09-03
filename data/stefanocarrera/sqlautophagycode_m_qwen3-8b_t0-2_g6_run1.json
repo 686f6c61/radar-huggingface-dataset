@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g6_run1",
+  "slug": "stefanocarrera-sqlautophagycode_m_qwen3-8b_t0-2_g6_run1",
+  "author": "stefanocarrera",
+  "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g6_run1",
+  "created_at": "2026-09-03T18:43:20.000Z",
+  "updated_at": "2026-09-03T18:43:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mavic Pro - Product Information - DJI",
+      "url": "https://www.dji.com/mavic/info",
+      "snippet": "The DJI Mavic Pro has a 4K camera, ultra-precise 3-axis gimbal, and a max transmission range of 4.1 mi (7 km). Learn more about …"
+    },
+    {
+      "title": "Support for Mavic Pro - DJI United States",
+      "url": "https://www.dji.com/support/product/mavic",
+      "snippet": "Learn how to use Mavic Pro and get useful tips, tutorial videos, specifications, and after-sales services."
+    },
+    {
+      "title": "DJI Mavic Pro UK: Still Good in 2025? - FreshKit.co.uk",
+      "url": "https://www.freshkit.co.uk/dji-mavic-pro-is-this-portable-drone-still-a-uk-favourite/",
+      "snippet": "Oct 5, 2025 · Is the original DJI Mavic Pro still a smart buy in the UK? We review its camera, UK drone laws, and second-hand value …"
+    },
+    {
+      "title": "DJI 2Z50228 Mavic Pro Drone Combo Kit - Grey - Amazon.co.uk",
+      "url": "https://www.amazon.co.uk/DJI-Mavic-Pro-Drone-Combo/dp/B01LY38V90",
+      "snippet": "The DJI Mavic Pro is a small yet powerful drone that turns the sky into your creative canvas easily and without worry, helping you …"
+    },
+    {
+      "title": "Buy Mavic Pro & Mavic Pro Fly More Combo/Bundle - DJI Store",
+      "url": "https://store.dji.com/uk/product/mavic-pro",
+      "snippet": "The Mavic Pro is a portable and powerful drone that is equipped with a 3-axis gimbal and 4K camera. Buy the Mavic Pro & Mavic Pro …"
+    }
+  ]
+}

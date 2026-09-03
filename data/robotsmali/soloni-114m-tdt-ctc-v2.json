@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "RobotsMali/soloni-114m-tdt-ctc-v2",
+  "slug": "robotsmali-soloni-114m-tdt-ctc-v2",
+  "author": "RobotsMali",
+  "url": "https://huggingface.co/RobotsMali/soloni-114m-tdt-ctc-v2",
+  "created_at": "2025-11-21T03:40:40.000Z",
+  "updated_at": "2026-09-03T17:48:23.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "bm"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "Transducer",
+    "TDT",
+    "FastConformer",
+    "Conformer",
+    "pytorch",
+    "Bambara",
+    "NeMo",
+    "bm",
+    "dataset:RobotsMali/afvoices",
+    "base_model:RobotsMali/soloni-114m-tdt-ctc-v0",
+    "base_model:finetune:RobotsMali/soloni-114m-tdt-ctc-v0",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 455536640,
+  "storage_human": "456 MB",
+  "base_model": "RobotsMali/soloni-114m-tdt-ctc-v0",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "African Next Voices",
+      "metric": "Test WER",
+      "value": 28.58849959370967
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "African Next Voices",
+      "metric": "Test CER",
+      "value": 12.94712377896277
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Nyana Eval",
+      "metric": "Test WER",
+      "value": 36.07
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Nyana Eval",
+      "metric": "Test CER",
+      "value": 20.24
+    }
+  ],
+  "sources": [
+    {
+      "title": "Update Firefox to the latest release | Firefox Help",
+      "url": "https://support.mozilla.org/en-US/kb/update-firefox-latest-version",
+      "snippet": "Update Firefox Click the menu button at the right side of the Firefox toolbar, go to Help, and select About Firefox.In the menu bar, …"
+    },
+    {
+      "title": "Télécharger et installer Firefox sous Windows | Assistance de Mozilla",
+      "url": "https://support.mozilla.org/fr/kb/telecharger-installer-firefox-windows?redirect=no",
+      "snippet": "Oct 30, 2021 · REDIRECT Comment installer Firefox sous Windows Partagez cet article : https://mzl.la/3Qw0pIN Ces personnes ont …"
+    },
+    {
+      "title": "为什么Linux发行版普遍预装Firefox？ - 知乎",
+      "url": "https://www.zhihu.com/question/645196882",
+      "snippet": "1.Firefox是开源软件，所以Linux预装Firefox属于情理之中的事情。 2.前面两个答案说Chrome闭源Chromium开源是没错的，但是却忽 …"
+    },
+    {
+      "title": "Firefox（国际版）与火狐中国版本有什么差别吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/375129190",
+      "snippet": "详细分析Firefox国际版与火狐中国版的差异，帮助用户更好地了解两者的不同之处。"
+    },
+    {
+      "title": "Firefox auf die neueste Version aktualisieren | Hilfe zu Firefox",
+      "url": "https://support.mozilla.org/de/kb/firefox-auf-die-letzte-version-aktualisieren",
+      "snippet": "Firefox aktualisieren Klicken Sie auf der rechten Seite der Firefox-Symbolleiste auf die Menüschaltfläche , um das Menü zu öffnen. …"
+    }
+  ]
+}

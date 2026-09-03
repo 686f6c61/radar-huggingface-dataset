@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "hz1919810/flashwam-arx-student-from-t1500",
+  "slug": "hz1919810-flashwam-arx-student-from-t1500",
+  "author": "hz1919810",
+  "url": "https://huggingface.co/hz1919810/flashwam-arx-student-from-t1500",
+  "created_at": "2026-09-03T17:11:13.000Z",
+  "updated_at": "2026-09-03T17:15:12.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "flash-wam",
+    "distillation",
+    "world-model",
+    "video-action",
+    "robotics",
+    "arx-lift-r5",
+    "consistency-distillation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20355663336,
+  "storage_human": "20.4 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gerüchteküche - Forum | Transfermarkt",
+      "url": "https://www.transfermarkt.de/geruchtekuche/detail/forum/154",
+      "snippet": "Aug 13, 2009 · Dies ist die Übersicht aller Threads aus dem Forum Gerüchteküche, die in der Transfermarkt-Community diskutiert …"
+    },
+    {
+      "title": "Gemini for Students — your AI study buddy from Google",
+      "url": "https://gemini.google/students/",
+      "snippet": "Unlock Gemini's power for school & beyond, from homework help to video creation. Get more Gemini with Google AI Pro now!"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Fußball-Transfers, Gerüchte, Marktwerte und News | Transfermarkt",
+      "url": "https://www.transfermarkt.de/",
+      "snippet": "Mar 8, 2026 · Transfermarkt - Das Fußball-Portal mit Transfers, Marktwerten, Gerüchten und Statistiken"
+    }
+  ]
+}

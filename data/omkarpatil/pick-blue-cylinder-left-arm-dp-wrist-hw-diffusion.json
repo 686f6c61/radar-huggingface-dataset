@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "omkarpatil/pick-blue-cylinder-left-arm-dp-wrist-hw-diffusion",
+  "slug": "omkarpatil-pick-blue-cylinder-left-arm-dp-wrist-hw-diffusion",
+  "author": "omkarpatil",
+  "url": "https://huggingface.co/omkarpatil/pick-blue-cylinder-left-arm-dp-wrist-hw-diffusion",
+  "created_at": "2026-09-03T15:28:42.000Z",
+  "updated_at": "2026-09-03T15:29:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion-policy",
+    "ffw_sg2_rev1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 274492048,
+  "parameters_human": "274.5M",
+  "storage_bytes": 1098027904,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Die 10 besten Kopfschmerztabletten (08/2025) - Gesundheitszentrale",
+      "url": "https://www.gesundheitszentrale.eu/vergleich/kopfschmerztabletten",
+      "snippet": "Willst Du Kopfschmerzen 🤕 zukünftig schnell und wirksam lindern? GESUNDHEITSZENTRALE zeigt Dir die besten …"
+    },
+    {
+      "title": "omkarpatil/pick-blue-cylinder-left-arm · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/omkarpatil/pick-blue-cylinder-left-arm",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kopfschmerztabletten günstig bestellen | Shop Apotheke",
+      "url": "https://www.shop-apotheke.com/kopfschmerzen/?msockid=2f3ee34fb2816f602f8cf486b3196ead",
+      "snippet": "Produkte bei Kopfschmerzen günstig online kaufen! Versandkostenfrei ab 19 € über 8 Mio zufriedene Kunden ♥ Bis zu 50% sparen ♥ …"
+    },
+    {
+      "title": "omkarpatil (Omkar Patil) - Hugging Face",
+      "url": "https://huggingface.co/omkarpatil/models",
+      "snippet": "omkarpatil's models8 Sort: Recently updated omkarpatil/ffw_sg2_pick-blue-cylinder-left-arm_groot-n1.7 Robotics •Updated about 10 hours ago"
+    },
+    {
+      "title": "Kopfschmerztabletten - schnelle Hilfe bei Kopfschmerzen bei APONEO",
+      "url": "https://www.aponeo.de/arzneimittel/schmerztabletten/kopfschmerztabletten/",
+      "snippet": "Nicht jede Kopfschmerztablette ist für jede Art von Schmerzen geeignet und nicht immer hilft Aspirin – was als Klassiker unter den …"
+    }
+  ]
+}

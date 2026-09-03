@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "42reddy/GeoTransolver",
+  "slug": "42reddy-geotransolver",
+  "author": "42reddy",
+  "url": "https://huggingface.co/42reddy/GeoTransolver",
+  "created_at": "2026-09-03T16:37:07.000Z",
+  "updated_at": "2026-09-03T16:37:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cdiscount : des prix bas qui ont de la voix",
+      "url": "https://www.cdiscount.com/?msockid=1e016113fc7361b1228976dafdb160cd",
+      "snippet": "Cdiscount : Meuble, Déco, High Tech, Bricolage, Jardin, Sport | Livraison gratuite à partir de 10€ | Paiement sécurisé | 4x possible | …"
+    },
+    {
+      "title": "Voyages pas chers - Paiement en 4X - Cdiscount Voyages",
+      "url": "https://www.cdiscount.com/voyages/v-145-0.html?msockid=1e016113fc7361b1228976dafdb160cd",
+      "snippet": "Cdiscount : Meuble, Déco, High Tech, Bricolage, Jardin, Sport | Livraison gratuite à partir de 10€ | Paiement sécurisé | 4x possible | …"
+    },
+    {
+      "title": "Espace Client Cdiscount",
+      "url": "https://clients.cdiscount.com/frequentlyaskedquestions.html?userinput=Compte+Client",
+      "snippet": "Accédez à votre espace client et profitez d'une expérience personnalisée sur Cdiscount, leader français du e-commerce. Gérez …"
+    },
+    {
+      "title": "Cdiscount",
+      "url": "https://clients.cdiscount.com/logpa.aspx",
+      "snippet": "Vos dernières recherchesSupprimer l'historique Cdiscount à volonté"
+    },
+    {
+      "title": "Séjour pas cher - Paiement en 4x - Cdiscount Voyages",
+      "url": "https://sejour.cdiscount.com/",
+      "snippet": "Vous souhaitez partir en vacances ? Découvrez tous nos séjours pour partir en voyage Au meilleur prix Paiement 4x en exclu web …"
+    }
+  ]
+}

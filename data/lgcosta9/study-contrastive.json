@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lgcosta9/study-contrastive",
+  "slug": "lgcosta9-study-contrastive",
+  "author": "lgcosta9",
+  "url": "https://huggingface.co/lgcosta9/study-contrastive",
+  "created_at": "2026-09-03T14:39:12.000Z",
+  "updated_at": "2026-09-03T14:39:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MTB-News.de - Mountainbike News & Artikel",
+      "url": "https://www.mtb-news.de/",
+      "snippet": "3 days ago · MTB-News.de: Magazin mit Biketests, News und Videos, das riesige IBC-Forum, mit dem Bikemarkt der belebteste …"
+    },
+    {
+      "title": "Statistical Foundations and Algorithms for Modern AI: Contrastive ...",
+      "url": "https://escholarship.org/uc/item/3td8f6z1",
+      "snippet": "This dissertation contributes to the statistical foundations and algorithms for modern AI from three complementary angles. First, motivated by the concept of suﬃcient statistics, we develop a statistical theory of contrastive pre-training and multimodal generative AI."
+    },
+    {
+      "title": "Wo werden Cube Rahmen produziert? - MTB-News.de",
+      "url": "https://www.mtb-news.de/forum/t/wo-werden-cube-rahmen-produziert.167606/",
+      "snippet": "May 22, 2005 · Hallo Cubabike and all, Cube ist in Sachen Produktion/Logistik und Lieferfähigkeit ganz sicher keine \"Vorzeigefirma\". …"
+    },
+    {
+      "title": "justinmartinnil/study-contrastive · Hugging Face",
+      "url": "https://huggingface.co/justinmartinnil/study-contrastive",
+      "snippet": "Overview This repository is a compact, custom PyTorch implementation of Poolformer for Contrastive. The large configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "还有多少人去指南针测试？ - 知乎",
+      "url": "https://www.zhihu.com/question/547574504/answers/updated",
+      "snippet": "作为一名多年的搬砖工和指南针的接触已经快一年了 前前后后测了10多次，先说结论，打算放弃了，后面说说…"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_RL_RL_AS_confidence_numina_qwen7b_10",
+  "slug": "ishikaa-acquisition_student_rl_rl_as_confidence_numina_qwen7b_10",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_RL_RL_AS_confidence_numina_qwen7b_10",
+  "created_at": "2026-09-03T18:33:14.000Z",
+  "updated_at": "2026-09-03T18:35:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "grpo",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693927,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantitative Finance Careers at WorldQuant",
+      "url": "https://www.worldquant.com/careers/",
+      "snippet": "WorldQuant is a quantitative asset management firm, founded in 2007, with more than 850 employees across 13 countries."
+    },
+    {
+      "title": "ishikaa/acquisition_student_AS_confidence_numina_qwen7b - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_AS_confidence_numina_qwen7b",
+      "snippet": "Instructions to use ishikaa/acquisition_student_AS_confidence_numina_qwen7b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "WorldQuant | Pioneering Quantitative Investment Strategies",
+      "url": "https://www.worldquant.com/",
+      "snippet": "WorldQuant is a global quantitative asset management firm founded in 2007 by Igor Tulchinsky and has more than 1,100 employees …"
+    },
+    {
+      "title": "acquisition_student_RL_qwen3bins_numina_confidence - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_RL_qwen3bins_numina_confidence",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WorldQuant - Workday Sign-in Page",
+      "url": "https://workday.worldquant.com/",
+      "snippet": "Select Workday instance to sign in"
+    }
+  ]
+}

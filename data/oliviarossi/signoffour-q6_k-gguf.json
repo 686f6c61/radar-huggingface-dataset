@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "OliviaRossi/SignOfFour-Q6_K-GGUF",
+  "slug": "oliviarossi-signoffour-q6_k-gguf",
+  "author": "OliviaRossi",
+  "url": "https://huggingface.co/OliviaRossi/SignOfFour-Q6_K-GGUF",
+  "created_at": "2026-09-03T17:52:08.000Z",
+  "updated_at": "2026-09-03T17:54:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "ties",
+    "dare",
+    "moe",
+    "qwen",
+    "qwen3.5",
+    "qwen3.6",
+    "causal-lm",
+    "deltanet",
+    "agentic",
+    "reasoning",
+    "code",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:pragmaticcs/SignOfFour",
+    "base_model:merge:pragmaticcs/SignOfFour",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 28514176640,
+  "storage_human": "28.5 GB",
+  "base_model": "pragmaticcs/SignOfFour",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2024–25 Los Angeles Lakers season - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Los_Angeles_Lakers_season",
+      "snippet": "On June 24, 2024, the Lakers hired JJ Redick as their new head coach. They entered the season as the defending NBA Cup …"
+    },
+    {
+      "title": "OliviaRossi/SignOfFour-Q5_K_M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/OliviaRossi/SignOfFour-Q5_K_M-GGUF",
+      "snippet": "OliviaRossi / SignOfFour-Q5_K_M-GGUF like 2 Text Generation Transformers GGUF English Chinese Merge ties dare Mixture of Experts qwen causal-lm deltanet agentic code llama-cpp gguf-my-repo conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "2023-24 Los Angeles Lakers Roster and Stats | Basketball-Reference.com",
+      "url": "https://www.basketball-reference.com/teams/LAL/2024.html",
+      "snippet": "Checkout the latest Los Angeles Lakers Roster and Stats for 2023-24 on Basketball-Reference.com"
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "2024-25 Los Angeles Lakers Roster and Stats | Basketball-Reference.com",
+      "url": "https://www.basketball-reference.com/teams/LAL/2025.html",
+      "snippet": "Checkout the latest Los Angeles Lakers Roster and Stats for 2024-25 on Basketball-Reference.com"
+    }
+  ]
+}

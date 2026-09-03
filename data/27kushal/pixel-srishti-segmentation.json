@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "27Kushal/PIXEL-Srishti-Segmentation",
+  "slug": "27kushal-pixel-srishti-segmentation",
+  "author": "27Kushal",
+  "url": "https://huggingface.co/27Kushal/PIXEL-Srishti-Segmentation",
+  "created_at": "2026-09-03T16:43:59.000Z",
+  "updated_at": "2026-09-03T16:43:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89937928,
+  "storage_human": "90 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "How to install Chrome Important: Before you download, check if Chrome supports your operating system and you’ve met all other …"
+    },
+    {
+      "title": "Google Chrome をダウンロードしてインストールする",
+      "url": "https://support.google.com/chrome/answer/95346?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome を初めて起動する際は、 Google 利用規約 を確認して同意する必要があります。 ヒント: Chrome がパッケージ マネー …"
+    },
+    {
+      "title": "国内普通用户怎样下载到 Chrome？ - 知乎",
+      "url": "https://www.zhihu.com/question/37455757",
+      "snippet": "推荐用户下载浏览器时怎样才能使普通被墙用户下载到 Chrome？当然百度软件什么的绝不考虑。"
+    },
+    {
+      "title": "Télécharger et installer Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Installer Chrome hors connexion Si vous rencontrez des problèmes lors du téléchargement de Chrome sur votre ordinateur Windows, …"
+    },
+    {
+      "title": "تنزيل Google Chrome وتثبيته",
+      "url": "https://support.google.com/chrome/answer/95346?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "عند تشغيل Chrome لأول مرة، عليك مراجعة بنود خدمة Google وقبولها. ملاحظة: للتأكّد من أنّ Chrome يظل مُحدَّثًا، تتم إضافته إلى مدير الحزمة. عند توفّر تحديثات الأمان، يرسل إليك …"
+    }
+  ]
+}

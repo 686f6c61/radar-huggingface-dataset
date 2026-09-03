@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "R-Kentaren/RVC-dist",
+  "slug": "r-kentaren-rvc-dist",
+  "author": "R-Kentaren",
+  "url": "https://huggingface.co/R-Kentaren/RVC-dist",
+  "created_at": "2026-09-03T14:37:47.000Z",
+  "updated_at": "2026-09-03T14:40:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3361024770,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The R Project for Statistical Computing",
+      "url": "https://www.r-project.org/",
+      "snippet": "Mar 11, 2026 · To download R, please choose your preferred CRAN mirror. If you have questions about R like how to download and …"
+    },
+    {
+      "title": "R-Kentaren/RVC · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/R-Kentaren/RVC",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Roblox",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is ushering in the next generation of entertainment. Imagine, create, and play together with millions of people across an …"
+    },
+    {
+      "title": "R-Kentaren/RVC at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/R-Kentaren/RVC/tree/main/docs",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "R-4.6.1 for Windows - The Comprehensive R Archive Network",
+      "url": "https://cran.r-project.org/bin/windows/base/",
+      "snippet": "Patches to this release are incorporated in the r-patched snapshot build. A build of the development version (which will eventually …"
+    }
+  ]
+}

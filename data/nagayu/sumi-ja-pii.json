@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "NagaYu/sumi-ja-pii",
+  "slug": "nagayu-sumi-ja-pii",
+  "author": "NagaYu",
+  "url": "https://huggingface.co/NagaYu/sumi-ja-pii",
+  "created_at": "2026-09-03T12:46:32.000Z",
+  "updated_at": "2026-09-03T13:11:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "modernbert",
+    "token-classification",
+    "pii",
+    "privacy",
+    "japanese",
+    "named-entity-recognition",
+    "presidio",
+    "ja",
+    "dataset:NagaYu/sumi-ja-pii-corpus",
+    "base_model:sbintuitions/modernbert-ja-130m",
+    "base_model:quantized:sbintuitions/modernbert-ja-130m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133321230,
+  "storage_human": "133 MB",
+  "base_model": "sbintuitions/modernbert-ja-130m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ethiopian Calendar Today | Date, Converter & Holidays",
+      "url": "https://ethiopiancalendars.com/",
+      "snippet": "13 hours ago · See today's Ethiopian date, browse all 13 months, convert Ethiopian and Gregorian dates, and check fixed Ethiopian …"
+    },
+    {
+      "title": "Current Local Time in Ethiopia - TIME.et",
+      "url": "https://time.et/",
+      "snippet": "13 hours ago · Today’s date and time in Ethiopia, the calendar and its holidays — plus the everyday tools that go with them: date …"
+    },
+    {
+      "title": "Ethiopian Calendar Today - Date Converter, Holidays & Time",
+      "url": "https://www.ethiopiancalendar.et/",
+      "snippet": "13 hours ago · Use this free converter to find today's Ethiopian date, convert any Gregorian date to Ethiopian, or look up Ethiopian …"
+    },
+    {
+      "title": "Current Time in Addis Ababa, Ethiopia — Live Clock, Weather & Travel ...",
+      "url": "https://worldclocklive.com/time/addis-ababa/",
+      "snippet": "13 hours ago · What time is it in Addis Ababa right now? Live clock with seconds, current weather, EAT timezone info, time difference …"
+    },
+    {
+      "title": "Time in Ethiopia now",
+      "url": "https://time.is/Ethiopia",
+      "snippet": "13 hours ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for Ethiopia."
+    }
+  ]
+}

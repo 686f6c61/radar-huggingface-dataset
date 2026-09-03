@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "e54true/deeptable-checkpoints-qwen25-7b",
+  "slug": "e54true-deeptable-checkpoints-qwen25-7b",
+  "author": "e54true",
+  "url": "https://huggingface.co/e54true/deeptable-checkpoints-qwen25-7b",
+  "created_at": "2026-09-03T15:05:57.000Z",
+  "updated_at": "2026-09-03T15:13:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "table-question-answering",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "table-question-answering",
+    "llama-factory",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13103972155,
+  "storage_human": "13.1 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mac 下有没有和 Everything 一样的快速索引工具？ - 知乎",
+      "url": "https://www.zhihu.com/question/20549498",
+      "snippet": "你们理解了题意没有？体验过 Everything 的速度了没有？还有不要擅自修改题主的需求啊。 严格的讲，spotlight 其实和 everything 的 …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "origin 软件绘图左侧出现一个大C，怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/22136925",
+      "snippet": "百度知道找到一个答案： tools-options-graph，鼠标放在 user defined symbols 下方，按ctrl+x,再去掉 speed mode show watermark …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "zmiany w liście kanałów TV Orange 31.08.2026",
+      "url": "https://nasz.orange.pl/t5/Telewizja/zmiany-w-li%C5%9Bcie-kana%C5%82%C3%B3w-TV-Orange-31-08-2026/td-p/470729",
+      "snippet": "Dostałem list że 31.08.26 Orange wyłącza mi 7 kanałów: 13 ulica, comedy central, paramount network, nick jr, Nickelodeon, …"
+    }
+  ]
+}

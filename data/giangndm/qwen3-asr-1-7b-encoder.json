@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "giangndm/Qwen3-ASR-1.7B-encoder",
+  "slug": "giangndm-qwen3-asr-1-7b-encoder",
+  "author": "giangndm",
+  "url": "https://huggingface.co/giangndm/Qwen3-ASR-1.7B-encoder",
+  "created_at": "2026-09-03T17:24:49.000Z",
+  "updated_at": "2026-09-03T17:26:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_audio_encoder",
+    "bfloat16",
+    "speech",
+    "audio-encoder",
+    "qwen3",
+    "qwen3-asr",
+    "multimodal",
+    "feature-extraction",
+    "custom_code",
+    "dataset:Qwen/Qwen3-ASR",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 317477504,
+  "parameters_human": "317.5M",
+  "storage_bytes": 634993664,
+  "storage_human": "635 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CoinMarketCap Unveils New CMC20 Index: What Does It Mean?",
+      "url": "https://www.ccn.com/news/crypto/coinmarketcap-cmc20-index-tokens-multi-coin-etfs/",
+      "snippet": "Nov 17, 2025 · CoinMarketCap's CMC20, a new index token that tracks a basket of the top 20 cryptocurrencies, presents an …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-0.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni."
+    },
+    {
+      "title": "What Are Synth Tokens? Synthetic Crypto Assets Explained",
+      "url": "https://cryptoadventure.com/community/articles/what-are-synth-tokens/",
+      "snippet": "Jan 10, 2023 · Synth tokens are synthetic crypto assets that are designed to track the price of another asset. A synth might track the …"
+    },
+    {
+      "title": "Qwen3-ASR Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2601.21337",
+      "snippet": "Abstract In this report, we introduce Qwen3-ASR family, which includes two powerful all-in-one speech recognition models and a novel non-autoregressive speech forced alignment model. Qwen3-ASR-1.7B and Qwen3-ASR-0.6B are ASR models that support language identification and ASR for 52 languages and dialects. Both of them leverage large-scale speech training data and the strong audio ..."
+    },
+    {
+      "title": "What Are Synthetic Indices? A Beginner’s Guide - Vantage Markets",
+      "url": "https://www.vantagemarkets.com/academy/what-are-synthetic-indices/",
+      "snippet": "Jul 29, 2025 · Discover what synthetic indices are, how they work, and why traders use them for 24/7 access, consistent volatility, …"
+    }
+  ]
+}

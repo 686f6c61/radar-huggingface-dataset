@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "RobotsMali/soloba-ctc-0.6b-v2",
+  "slug": "robotsmali-soloba-ctc-0-6b-v2",
+  "author": "RobotsMali",
+  "url": "https://huggingface.co/RobotsMali/soloba-ctc-0.6b-v2",
+  "created_at": "2025-11-21T04:02:55.000Z",
+  "updated_at": "2026-09-03T17:48:12.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "bm"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "Transducer",
+    "FastConformer",
+    "Conformer",
+    "pytorch",
+    "Bambara",
+    "NeMo",
+    "bm",
+    "dataset:RobotsMali/afvoices",
+    "base_model:RobotsMali/soloba-ctc-0.6b-v0",
+    "base_model:finetune:RobotsMali/soloba-ctc-0.6b-v0",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2434017280,
+  "storage_human": "2.4 GB",
+  "base_model": "RobotsMali/soloba-ctc-0.6b-v0",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "African Next Voices",
+      "metric": "Test WER",
+      "value": 30.85416567085703
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "African Next Voices",
+      "metric": "Test CER",
+      "value": 14.448940587985465
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Nyana Eval",
+      "metric": "Test WER",
+      "value": 40
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Nyana Eval",
+      "metric": "Test CER",
+      "value": 22.339
+    }
+  ],
+  "sources": [
+    {
+      "title": "Таурин: что это такое, и для чего организму нужно? - Consumed",
+      "url": "https://consu-med.ru/ehnciklopediya/element/taurin/",
+      "snippet": "Таурин — это сульфокислота, которая образуется в организме из аминокислоты цистеина в печени и других органах. Его …"
+    },
+    {
+      "title": "Таурин, чудотворната за здравето аминокиселина",
+      "url": "https://zdravivsekiden.com/taurine-chudotvornata-za-zdraveto-aminokiselina/",
+      "snippet": "Средно с храната си набавяме по около 40-400 мг таурин на ден, макар че в изследванията се използват до 400-6000 мг на …"
+    },
+    {
+      "title": "Таурин: для чего нужен организму, польза и вред",
+      "url": "https://pr-dadali.ru/blog/taurin-polza-vred-dlya-organizma/",
+      "snippet": "Nov 25, 2025 · Таурин: для чего нужен организму, польза и вред Что такое таурин, зачем он нужен организму и как влияет на …"
+    },
+    {
+      "title": "СОЛГАР ТАУРИН капсули 500 мг * 50",
+      "url": "https://apteka.framar.bg/30038671/%D1%82%D0%B0%D1%83%D1%80%D0%B8%D0%BD-%D0%BA%D0%B0%D0%BF%D1%81-500-%D0%BC%D0%B3-50-solgar",
+      "snippet": "Еднокомпонентна хранителна добавка СОЛГАР ТАУРИН капсули 500 мг * 50, съдържаща един вид аминокиселина. Открийте …"
+    },
+    {
+      "title": "Таурин: что это такое, польза и вред, суточная норма и в каких ...",
+      "url": "https://peptid.ru/blog/taurin-chto-eto-takoe-polza-i-vred-sutochnaya-norma-i-v-kakih-produktah-soderzhitsya/",
+      "snippet": "Слово «таурин» происходит от латинского taurus — «бык». Это объясняется тем, что вещество было впервые выделено из …"
+    }
+  ]
+}

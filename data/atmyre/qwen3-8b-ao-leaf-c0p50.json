@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Atmyre/qwen3-8b-ao-leaf-c0p50",
+  "slug": "atmyre-qwen3-8b-ao-leaf-c0p50",
+  "author": "Atmyre",
+  "url": "https://huggingface.co/Atmyre/qwen3-8b-ao-leaf-c0p50",
+  "created_at": "2026-09-03T14:20:57.000Z",
+  "updated_at": "2026-09-03T14:23:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "activation-oracle",
+    "interpretability",
+    "qwen3",
+    "concept-leaf",
+    "arxiv:2512.15674",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 698419728,
+  "storage_human": "698 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MEDIAN Kliniken",
+      "url": "https://www.median-kliniken.de/de/",
+      "snippet": "3 days ago · Ob medizinische Rehabilitation, spezialisierte Therapien in der Akut Psychiatrie und neurologischen Frührehabilitation …"
+    },
+    {
+      "title": "Anleitung zur Anmeldung am WLAN im Klinikum - dbknb.de",
+      "url": "https://dbknb.de/fileadmin/dbk/pmfr/02_Autor/03_Downloads/Anhang_der_PatientenInfo/06-d_WLAN-Bedienung-Anlage-PatTV-NB.pdf",
+      "snippet": "Anleitung zur Anmeldung am WLAN im Klinikum In vielen Bereichen des Klinikums ist inzwischen WLAN auch für die Nutzung durch …"
+    },
+    {
+      "title": "MEDIAN Fragebogenportal",
+      "url": "https://portal.median-kliniken.de/",
+      "snippet": "Bitte wählen Sie den Ort Ihres Klinikaufenthaltes aus. Bitte geben Sie Ihre Fallnummer ein. Wichtig: Sie finden Ihre 7-stellige …"
+    },
+    {
+      "title": "FAQ | MEDIAN Kliniken",
+      "url": "https://www.median-kliniken.de/de/mymedianhome/faq/",
+      "snippet": "Mit MyMEDIAN@Home führen Sie Ihre Reha flexibel und ortsunabhängig fort – bequem über Smartphone, Tablet oder Computer. …"
+    },
+    {
+      "title": "Hotspot.Median Kliniken.De Login – JYVZ",
+      "url": "https://shop.propsteifestival.de/hotspotmedian-klinikende-login/",
+      "snippet": "Sep 10, 2025 · MEDIAN Kliniken Damit Sie sich in der MEDIAN Klinik NRZ Wiesbaden schnell und gut zurechtfinden, haben wir alle …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dr-housemd/gemma-4-31b-it-heretic-ara-exl3-3bpw-H4-V4",
+  "slug": "dr-housemd-gemma-4-31b-it-heretic-ara-exl3-3bpw-h4-v4",
+  "author": "dr-housemd",
+  "url": "https://huggingface.co/dr-housemd/gemma-4-31b-it-heretic-ara-exl3-3bpw-H4-V4",
+  "created_at": "2026-09-03T12:50:02.000Z",
+  "updated_at": "2026-09-03T12:50:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6385054854,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Médecin Généraliste à Saint Berthevin, prendre RDV",
+      "url": "https://www.pagesjaunes.fr/annuaire/saint-berthevin-53/medecins-medecine-generale",
+      "snippet": "Médecin généraliste à Saint Berthevin (53) : Trouvez tous les médecins proches de chez vous et prenez RDV. Consultez les avis …"
+    },
+    {
+      "title": "Dr Anne TIREL BADETS, Neurologue à Saint-Berthevin - Doctolib",
+      "url": "https://www.doctolib.fr/neurologue/laval/anne-tirel-badets",
+      "snippet": "Le neurologue est le spécialiste du système nerveux. Il est à ce titre habilité à diagnostiquer et traiter les pathologies du cerveau, de …"
+    },
+    {
+      "title": "Médecin généraliste Saint-Berthevin : Prenez rendez-vous en ligne ...",
+      "url": "https://www.doctolib.fr/medecin-generaliste/saint-berthevin",
+      "snippet": "Ce soignant réserve la prise de rendez-vous en ligne aux patients déjà suivis."
+    },
+    {
+      "title": "DR. COURCIER Etienne - Prendre-mon-rdv.com",
+      "url": "https://prendre-mon-rdv.com/dr-courcier-etienne/medecin-generaliste/saint-berthevin",
+      "snippet": "Docteur Etienne COURCIER, exerçant en médecin généraliste à Saint-Berthevin, consulte sur rendez-vous. Les rendez-vous …"
+    },
+    {
+      "title": "DR. COUTTEREZ Olivier - Prendre-mon-rdv.com",
+      "url": "https://prendre-mon-rdv.com/dr-coutterez-olivier/medecin-generaliste/saint-berthevin",
+      "snippet": "Olivier COUTTEREZ, médecin généraliste, vous reçoit dans son cabinet à Saint-Berthevin, sur rendez-vous. Il est possible de …"
+    }
+  ]
+}

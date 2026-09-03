@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "vect0r18/mirror-jmaxcool-bkn1890-vision-only-v3-8b7aadd6",
+  "slug": "vect0r18-mirror-jmaxcool-bkn1890-vision-only-v3-8b7aadd6",
+  "author": "vect0r18",
+  "url": "https://huggingface.co/vect0r18/mirror-jmaxcool-bkn1890-vision-only-v3-8b7aadd6",
+  "created_at": "2026-09-03T13:40:05.000Z",
+  "updated_at": "2026-09-03T13:40:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916585166,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SpunteBlu - Mentire di fronte alle spunte blu",
+      "url": "https://spunteblu.it/",
+      "snippet": "2 days ago · Mentire di fronte alle spunte blu è un marchio registrato, tutti i contenuti sono protetti da copyright e ne è vietata la …"
+    },
+    {
+      "title": "Mentire di fronte alle spunte blu - SpunteBluSpunteBlu",
+      "url": "https://spunteblu.it/author/admin/",
+      "snippet": "Oltrepassare il limite “Mia sorella ha oltrepassato il limite, e non posso più chiudere un occhio davanti alle sue scenate, ai suoi insulti …"
+    },
+    {
+      "title": "La prenotazione - SpunteBluSpunteBlu",
+      "url": "https://spunteblu.it/la-prenotazion/",
+      "snippet": "Jul 30, 2026 · \"Ciao a tutti. Ho un ristorante da tanti anni e, facendo questo lavoro, ne ho viste davvero di tutti i colori. Clienti …"
+    },
+    {
+      "title": "Il rogito - SpunteBluSpunteBlu",
+      "url": "https://spunteblu.it/il-rogito/",
+      "snippet": "Jul 23, 2026 · Ho bisogno di un vostro parere perché io sono completamente nel pallone!!! Vi giuro che non pensavo mi sarei mai …"
+    },
+    {
+      "title": "Secondo turno di lavoro - SpunteBluSpunteBlu",
+      "url": "https://spunteblu.it/secondo-turno-di-lavoro/",
+      "snippet": "Jul 26, 2026 · \"Ciao a tutta la pagina, sono una neomamma e mi sento molto sola. Sinceramente non so nemmeno perché sto …"
+    }
+  ]
+}

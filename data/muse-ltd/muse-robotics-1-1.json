@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "Muse-Ltd/Muse-Robotics-1.1",
+  "slug": "muse-ltd-muse-robotics-1-1",
+  "author": "Muse-Ltd",
+  "url": "https://huggingface.co/Muse-Ltd/Muse-Robotics-1.1",
+  "created_at": "2026-09-03T16:36:13.000Z",
+  "updated_at": "2026-09-03T16:41:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "de",
+    "fr",
+    "ja",
+    "ko"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "nova_vla",
+    "robotics",
+    "vision-language-action",
+    "vla",
+    "manipulation",
+    "en",
+    "zh",
+    "es",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "arxiv:2403.12945",
+    "arxiv:2410.24164",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 121710745,
+  "parameters_human": "121.7M",
+  "storage_bytes": 493186860,
+  "storage_human": "493 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muse Official Website",
+      "url": "https://www.muse.mu/",
+      "snippet": "The new album 'The Wow! Signal' is out now | The official Muse website. Home of tour dates, music, discography, store"
+    },
+    {
+      "title": "Muse (band) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Muse_(band)",
+      "snippet": "In 2002, Muse threatened Celine Dion with legal action when she planned to name her Las Vegas show \"Muse\", as Muse had …"
+    },
+    {
+      "title": "Muse (groupe) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Muse_(groupe)",
+      "snippet": "Muse (prononcé en anglais : [mjuːz]) est un groupe de rock britannique, originaire de Teignmouth, dans le Devon, en Angleterre. …"
+    },
+    {
+      "title": "Muse - YouTube",
+      "url": "https://www.youtube.com/channel/UCGGhM6XCSJFQ6DTRffnKRIw",
+      "snippet": "Blurring the lines between narrative and concert film, virtual and reality, Muse’s most theatrical tour to date launches the viewer …"
+    },
+    {
+      "title": "Muse Official Website homepage updated",
+      "url": "https://www.muse.mu/homepage-updated",
+      "snippet": "The new album 'The Wow! Signal' is out now | The official Muse website. Home of tour dates, music, discography, store"
+    }
+  ]
+}

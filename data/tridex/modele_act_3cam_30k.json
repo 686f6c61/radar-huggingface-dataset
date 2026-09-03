@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Tridex/modele_act_3cam_30k",
+  "slug": "tridex-modele_act_3cam_30k",
+  "author": "Tridex",
+  "url": "https://huggingface.co/Tridex/modele_act_3cam_30k",
+  "created_at": "2026-09-03T16:33:01.000Z",
+  "updated_at": "2026-09-03T16:33:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Tridex/record-test-3-cam_20260903_142712",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206716776,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Come ottenere assistenza in Windows - Supporto tecnico Microsoft",
+      "url": "https://support.microsoft.com/it-it/windows/come-ottenere-assistenza-in-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "Ecco alcuni modi per trovare la Guida per Windows Cerca informazioni della Guida - Immetti una domanda o le parole chiave nella …"
+    },
+    {
+      "title": "Contattaci - Supporto tecnico Microsoft",
+      "url": "https://support.microsoft.com/it-it/contactus/",
+      "snippet": "Contatta il Supporto tecnico Microsoft. Trova soluzioni a problemi comuni, oppure ottieni assistenza da un operatore del supporto."
+    },
+    {
+      "title": "Modificare la luminosità e il colore dello schermo in Windows",
+      "url": "https://support.microsoft.com/it-it/windows/hardware/display-graphics/change-display-brightness-and-color-in-windows",
+      "snippet": "Modificare manualmente la luminosità Per regolare la luminosità dello schermo, seleziona l'icona Rete sul lato destro della barra delle …"
+    },
+    {
+      "title": "Attivare Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/it-it/windows/activation/activate-windows",
+      "snippet": "Informazioni su come attivare Windows un codice Product Key o una licenza digitale, controllare lo stato di attivazione e collegare …"
+    },
+    {
+      "title": "Installare Windows Aggiornamenti | Microsoft Support",
+      "url": "https://support.microsoft.com/it-it/windows/deployment/updates-lifecycle/install-windows-updates",
+      "snippet": "Windows 11 Windows 10 In Windows decidi quando e come ottenere gli aggiornamenti più recenti per garantire un funzionamento …"
+    }
+  ]
+}

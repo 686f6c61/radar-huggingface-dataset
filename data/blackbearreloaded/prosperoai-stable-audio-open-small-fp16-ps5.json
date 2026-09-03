@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "blackbearreloaded/ProsperoAI-Stable-Audio-Open-Small-FP16-PS5",
+  "slug": "blackbearreloaded-prosperoai-stable-audio-open-small-fp16-ps5",
+  "author": "blackbearreloaded",
+  "url": "https://huggingface.co/blackbearreloaded/ProsperoAI-Stable-Audio-Open-Small-FP16-PS5",
+  "created_at": "2026-09-03T12:28:28.000Z",
+  "updated_at": "2026-09-03T12:32:54.000Z",
+  "license": "stability-ai-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "prosperoai",
+    "playstation-5",
+    "ps5",
+    "text-to-audio",
+    "stable-audio",
+    "fp16",
+    "en",
+    "base_model:stabilityai/stable-audio-open-small",
+    "base_model:finetune:stabilityai/stable-audio-open-small",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1421167513,
+  "storage_human": "1.4 GB",
+  "base_model": "stabilityai/stable-audio-open-small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Request Rejected - ameli",
+      "url": "https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_nfpb=true&_pageLabel=as_creation_immediate_page",
+      "snippet": "The requested URL was rejected. Please, consult with your administrator. Your support ID is: <9939920454455825791> [Go Back]"
+    },
+    {
+      "title": "Action Interdite - assure.ameli.fr",
+      "url": "https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_nfpb=true",
+      "snippet": "Action Interdite Action Interdite."
+    }
+  ]
+}

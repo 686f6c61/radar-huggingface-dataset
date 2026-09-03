@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "jakeroxs/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED",
+  "slug": "jakeroxs-kat-coder-v2-5-dev-35b-a3b-mtp-abliterated",
+  "author": "jakeroxs",
+  "url": "https://huggingface.co/jakeroxs/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED",
+  "created_at": "2026-09-03T16:39:13.000Z",
+  "updated_at": "2026-09-03T16:55:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "kat-coder",
+    "kat-coder-v2.5",
+    "qwen3.5",
+    "mixture-of-experts",
+    "coding",
+    "mtp",
+    "speculative-decoding",
+    "abliteration",
+    "uncensored",
+    "conversational",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:KridgeDookie/KAT-Coder-V2.5-Dev-35B-A3B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS",
+    "base_model:finetune:KridgeDookie/KAT-Coder-V2.5-Dev-35B-A3B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 71030588213,
+  "storage_human": "71.0 GB",
+  "base_model": "KridgeDookie/KAT-Coder-V2.5-Dev-35B-A3B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Autoplay videos - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/6327615?hl=en",
+      "snippet": "Autoplay videos The Autoplay feature on YouTube makes it easier to decide what to watch next. When Autoplay is on, another …"
+    },
+    {
+      "title": "Auto-play videos - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/6327615?hl=en-GB",
+      "snippet": "Auto-play videos The auto-play feature on YouTube makes it easier to decide what to watch next. When auto-play is on, another …"
+    },
+    {
+      "title": "Memutar video secara otomatis - Bantuan YouTube",
+      "url": "https://support.google.com/youtube/answer/6327615?hl=id",
+      "snippet": "Fitur Putar Otomatis di YouTube memudahkan Anda dalam menentukan video untuk ditonton selanjutnya. Jika Putar Otomatis …"
+    },
+    {
+      "title": "Turn off Autoplay in YouTubeMusic (Turn off auto play in YouTube …",
+      "url": "https://support.google.com/youtubemusic/thread/129618527/turn-off-autoplay-in-youtubemusic-turn-off-auto-play-in-youtube-music?hl=en",
+      "snippet": "Oct 6, 2021 · Turn off autoplay, add a song you want to listen to, and delete that initial \"starter\" song. This is currently the only …"
+    },
+    {
+      "title": "Shorts starting immediately with youtube app opening",
+      "url": "https://support.google.com/youtube/thread/440598493/shorts-starting-immediately-with-youtube-app-opening?hl=en",
+      "snippet": "Jun 10, 2026 · Open the YouTube app and tap your profile tab (You) in the bottom right corner. Tap the Settings gear icon in the top …"
+    }
+  ]
+}

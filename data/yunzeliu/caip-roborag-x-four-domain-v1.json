@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "YunzeLiu/caip-roborag-x-four-domain-v1",
+  "slug": "yunzeliu-caip-roborag-x-four-domain-v1",
+  "author": "YunzeLiu",
+  "url": "https://huggingface.co/YunzeLiu/caip-roborag-x-four-domain-v1",
+  "created_at": "2026-09-03T18:38:04.000Z",
+  "updated_at": "2026-09-03T18:40:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "open_clip",
+  "languages": [],
+  "tags": [
+    "open_clip",
+    "robotics",
+    "caip",
+    "siglip",
+    "multimodal-embedding",
+    "action-embedding",
+    "egodex",
+    "droid",
+    "libero",
+    "robomind",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14860461752,
+  "storage_human": "14.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Bonjour, Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux …"
+    },
+    {
+      "title": "Yunze Liu - Tsinghua University",
+      "url": "https://yunzeliu.github.io/index.html",
+      "snippet": "Previously, I was a Researcher at Memories.ai, focusing on efficient video MLLMs, and a Research Intern with the Spatial Intelligence Group at Microsoft Research Asia, where I studied human–object interaction."
+    },
+    {
+      "title": "Pronote [Résolu] - Forum Réseaux sociaux - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36891094-pronote",
+      "snippet": "Oct 16, 2020 · Bonjour, Comme pour toutes les applications, si vous êtes sous Windows 10, aller dans paramètres (clic-gauche et …"
+    },
+    {
+      "title": "Phys4D: Fine-Grained Physics-Consistent 4D Modeling from Video Diffusion",
+      "url": "https://arxiv.org/pdf/2603.03485v4",
+      "snippet": "We build a and show that Phys4D improves fine-grained physical behavior, geometry-motion consistency, and trajectory-level evolution across multiple video backbones while maintaining visual realism, diversity, and open-domain generative capacity."
+    },
+    {
+      "title": "Connection impossible sur \"pronote\" [Résolu] - Forum Réseau",
+      "url": "https://forums.commentcamarche.net/forum/affich-19520856-connection-impossible-sur-pronote",
+      "snippet": "Meilleure réponse: Moi aussi je voudrais me connecter sur le pronote du collège de ma fille , mais cela me met une erreur . …"
+    }
+  ]
+}

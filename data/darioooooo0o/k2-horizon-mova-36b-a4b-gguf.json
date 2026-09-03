@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "darioooooo0o/K2-Horizon-MoVA-36B-A4B-GGUF",
+  "slug": "darioooooo0o-k2-horizon-mova-36b-a4b-gguf",
+  "author": "darioooooo0o",
+  "url": "https://huggingface.co/darioooooo0o/K2-Horizon-MoVA-36B-A4B-GGUF",
+  "created_at": "2026-09-03T18:03:04.000Z",
+  "updated_at": "2026-09-03T18:15:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "k2-horizon",
+    "mova",
+    "moe",
+    "llama.cpp",
+    "k-quants",
+    "text-generation",
+    "base_model:IFM/K2-Horizon-MoVA-36B-A4B",
+    "base_model:quantized:IFM/K2-Horizon-MoVA-36B-A4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37444792020,
+  "parameters_human": "37.44B",
+  "storage_bytes": 127661286880,
+  "storage_human": "127.7 GB",
+  "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "IFM/K2-Horizon-MoVA-36B-A4B · Hugging Face",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Schau dir für dich angesagte Videos an | TikTok",
+      "url": "https://www.tiktok.com/de",
+      "snippet": "Es beginnt bei TikTok. Schließ dich Millionen von Zuschauer*innen an und entdecke auch du Inhalte und Creator*innen bei TikTok – …"
+    },
+    {
+      "title": "IFM/K2-Horizon-MoVA-36B-A4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/de-DE/",
+      "snippet": "TikTok: Hier beginnen Trends. Auf einem Gerät oder im Web können Zuschauer*innen Millionen von personalisierten Kurzvideos …"
+    }
+  ]
+}

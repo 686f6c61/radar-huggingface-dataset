@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jlsrls/em1bsl3ep-ctrl-s0",
+  "slug": "jlsrls-em1bsl3ep-ctrl-s0",
+  "author": "jlsrls",
+  "url": "https://huggingface.co/jlsrls/em1bsl3ep-ctrl-s0",
+  "created_at": "2026-09-03T16:30:46.000Z",
+  "updated_at": "2026-09-03T16:41:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "base_model:unsloth/Llama-3.2-1B-Instruct",
+    "base_model:finetune:unsloth/Llama-3.2-1B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47092207,
+  "storage_human": "47 MB",
+  "base_model": "unsloth/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Developer Forum | Roblox",
+      "url": "https://devforum.roblox.com/",
+      "snippet": "Chat with other creators, learn about Roblox platform updates, and report issues with the platform."
+    },
+    {
+      "title": "ForgeGUI - AI Roblox Scripting Tool Feature",
+      "url": "https://devforum.roblox.com/t/forgegui-ai-roblox-scripting-tool-feature/4734535",
+      "snippet": "Jul 13, 2026 · Hey Yall devs 👋 ForgeGUI’s AI scripting tool is a Roblox Studio plugin that turns plain-English descriptions into working …"
+    },
+    {
+      "title": "New Publishing Requirements & Evaluation Process for Games",
+      "url": "https://devforum.roblox.com/t/new-publishing-requirements-evaluation-process-for-games/4573166",
+      "snippet": "Apr 13, 2026 · * Exact ages of Roblox Kids and Roblox Select accounts may vary by region based on local requirements New …"
+    },
+    {
+      "title": "TopbarPlus v3.4.0 | Construct topbar icons with ease ... - Roblox",
+      "url": "https://devforum.roblox.com/t/topbarplus-v340-construct-topbar-icons-with-ease-customise-them-with-themes-dropdowns-captions-labels-and-more/1017485",
+      "snippet": "Jan 31, 2021 · ⭐ v3.2.5 (Update Required) - June 22nd 2025 ㅤ This covers significant improvements and fixes - it’s strongly …"
+    },
+    {
+      "title": "Allowlist for local client configuration via Fast Flags - Roblox",
+      "url": "https://devforum.roblox.com/t/allowlist-for-local-client-configuration-via-fast-flags/3966569",
+      "snippet": "Sep 29, 2025 · Allowlist limits the number of locally configurable Fast Flags to those explicitly listed. Hi Creators, To improve platform …"
+    }
+  ]
+}

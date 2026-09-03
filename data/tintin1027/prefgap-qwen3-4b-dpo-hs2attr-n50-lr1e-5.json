@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "tintin1027/PrefGap-Qwen3-4B-DPO-HS2Attr-n50-lr1e-5",
+  "slug": "tintin1027-prefgap-qwen3-4b-dpo-hs2attr-n50-lr1e-5",
+  "author": "tintin1027",
+  "url": "https://huggingface.co/tintin1027/PrefGap-Qwen3-4B-DPO-HS2Attr-n50-lr1e-5",
+  "created_at": "2026-09-03T17:53:59.000Z",
+  "updated_at": "2026-09-03T17:56:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "trl",
+    "dpo",
+    "lora",
+    "prefgap",
+    "text-generation",
+    "conversational",
+    "dataset:nvidia/HelpSteer2",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143616870,
+  "storage_human": "144 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kopitiam - Lowyat.NET",
+      "url": "https://forum.lowyat.net/Kopitiam",
+      "snippet": "While Kopitiam is a place to hang out and chat, annoying threads which make no sense at all will be deleted and offenders warned. …"
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Is Whatsapp web down? - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5538738",
+      "snippet": "Sep 8, 2025 · Cannot link my device now."
+    },
+    {
+      "title": "Qwen3 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ppt עריכת סרטים - קהילה של Microsoft",
+      "url": "https://answers.microsoft.com/he-il/msoffice/forum/all/ppt-%d7%a2%d7%a8%d7%99%d7%9b%d7%aa/a0f44dc2-ac13-4d15-adb9-29d6bb2ac4de",
+      "snippet": "בחר למטה היכן תרצה לחפש חיפושחפש בקהילה חפש בקהילה ובמאמרי תמיכה Microsoft 365 ו- Office PowerPoint חפש חבר קהילה שאל שאלה …"
+    }
+  ]
+}

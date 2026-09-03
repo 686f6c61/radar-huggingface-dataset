@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gpjt/jax-no-mha-bias-no-dropout",
+  "slug": "gpjt-jax-no-mha-bias-no-dropout",
+  "author": "gpjt",
+  "url": "https://huggingface.co/gpjt/jax-no-mha-bias-no-dropout",
+  "created_at": "2026-09-03T14:21:01.000Z",
+  "updated_at": "2026-09-03T14:29:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpjtgpt2",
+    "text-generation",
+    "gpjt-llm-from-scratch",
+    "custom_code",
+    "dataset:gpjt/fineweb-gpt2-tokens",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 175583232,
+  "parameters_human": "175.6M",
+  "storage_bytes": 702350016,
+  "storage_human": "702 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - obra/superpowers: An agentic skills framework & software ...",
+      "url": "https://github.com/obra/superpowers",
+      "snippet": "An agentic skills framework & software development methodology that works. - obra/superpowers"
+    },
+    {
+      "title": "GitHub - Alishahryar1/free-claude-code: Use Claude Code, Codex, Pi, …",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "snippet": "Jan 28, 2026 · 50 ToS-friendly providers. 1.3B+ free tokens every month. Use free, paid, subscription, and local models from one …"
+    },
+    {
+      "title": "Claude AI là gì? Cách đăng ký tài khoản và sử dụng Claude AI",
+      "url": "https://cellphones.com.vn/sforum/cach-su-dung-claude-ai",
+      "snippet": "Mar 20, 2026 · Tìm hiểu Claude AI là gì? Hướng dẫn cách đăng ký tài khoản và sử dụng Claude AI khám phá những tính năng nổi …"
+    },
+    {
+      "title": "工信部发布防范 AI 编程工具 Claude 后门风险提示，释放了怎样的信号？",
+      "url": "https://www.zhihu.com/question/2058191110569026302",
+      "snippet": "Claude是一款备受海外创作者和开发者喜爱的AI工具，在长文本处理和复杂推理方面表现卓越，其3.7Sonnet版本在代码能力方面尤为 …"
+    },
+    {
+      "title": "如何使用上 claude ai - 知乎",
+      "url": "https://www.zhihu.com/question/1999536144308772911",
+      "snippet": "Claude Tag目前仅支持Slack，Anthropic表示后续会扩展到更多平台。 它替代了之前的Claude in Slack应用，现有用户有30天迁移窗 …"
+    }
+  ]
+}

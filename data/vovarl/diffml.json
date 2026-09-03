@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "vovaRL/DiffML",
+  "slug": "vovarl-diffml",
+  "author": "vovaRL",
+  "url": "https://huggingface.co/vovaRL/DiffML",
+  "created_at": "2026-09-03T18:23:45.000Z",
+  "updated_at": "2026-09-03T18:23:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Réservez des visites, des attractions touristiques et ... - GetYourGuide",
+      "url": "https://www.getyourguide.fr/submit-review?M1Z0WVQ3TG9UR2trWkx6OVJ3dklsNFBKT1Q0NkNuMFgydng3aTZpM0lFVDVJb0theEk4YXNLYVIrSk9Sc29yOQ=%3D&msockid=31bd5976d82a661722b74ebfd9dd6725",
+      "snippet": "Trouvez, comparez et réservez des visites guidées, des attractions touristiques et des activités amusantes aux quatre coins du …"
+    },
+    {
+      "title": "vovaRL (V S) - Hugging Face",
+      "url": "https://huggingface.co/vovaRL",
+      "snippet": "RL, Generative AI updated a model about 8 hours ago"
+    },
+    {
+      "title": "Visites à pied - le MEILLEUR de 2024 - GetYourGuide",
+      "url": "https://www.getyourguide.fr/plage-d-ein-bokek-l179838/visites-a-pied-tc3/?msockid=31bd5976d82a661722b74ebfd9dd6725",
+      "snippet": "Réservez le meilleur de Visites à pied à Plage d'Ein Bokek. Meilleur prix et remboursement garantis ! Lisez les avis d’autres voyageurs."
+    },
+    {
+      "title": "vovaRL (V S) - Hugging Face",
+      "url": "https://huggingface.co/vovaRL/activity/all",
+      "snippet": "Also needs Voyage AI (optional, but highly recommended for quality paper analysis). The workflow is: you give the agent a research question (or topic/direction), it pulls papers from papers-with-code and arxiv, reranks them and picks top-15 (with Voyage), then it makes a research plan, writes pipelines (with tests, preflight checks, smoke-runs)."
+    },
+    {
+      "title": "Le village culturel malais : Aquariums - GetYourGuide",
+      "url": "https://www.getyourguide.fr/le-village-culturel-malais-l146085/aquariums-tc1120/?msockid=31bd5976d82a661722b74ebfd9dd6725",
+      "snippet": "Réservez le meilleur de Aquariums à Le village culturel malais. Meilleur prix et remboursement garantis ! Lisez les avis d’autres …"
+    }
+  ]
+}

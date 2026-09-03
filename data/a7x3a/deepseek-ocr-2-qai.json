@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "a7x3a/deepseek-ocr-2-qai",
+  "slug": "a7x3a-deepseek-ocr-2-qai",
+  "author": "a7x3a",
+  "url": "https://huggingface.co/a7x3a/deepseek-ocr-2-qai",
+  "created_at": "2026-09-03T13:49:27.000Z",
+  "updated_at": "2026-09-03T13:49:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 345908528,
+  "storage_human": "346 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mottenlarven erkennen & bekämpfen | ️ Biologische Beratung",
+      "url": "https://www.biologische-beratung.de/motten-larven-erkennen-und-bekaempfen/",
+      "snippet": "Aug 25, 2026 · Woran erkennt man einen Befall durch Motten Larven? Lebensmittel: Klumpige Mehl- oder Getreideprodukte, …"
+    },
+    {
+      "title": "Lebensmittelmotten und Larven erkennen und bekämpfen",
+      "url": "https://www.motten-loswerden.de/mottenarten/lebensmittelmotten/",
+      "snippet": "Da befallene Lebensmittel allergische Reaktionen auslösen können, sollten Sie diese nicht mehr verzehren. Außerdem können sich …"
+    },
+    {
+      "title": "Lebensmittelmotten „bekämpfen“: Tipps, um die Tiere loszuwerden",
+      "url": "https://www.peta.de/themen/lebensmittelmotten-bekaempfen/",
+      "snippet": "Nov 27, 2025 · Lebensmittelmotten in der Küche sind lästig – ihre Larven können Vorräte zerstören und sich schnell vermehren. …"
+    },
+    {
+      "title": "So wirst du Lebensmittelmotten los - quarks.de",
+      "url": "https://www.quarks.de/umwelt/tierwelt/so-wirst-du-lebensmittelmotten-los/",
+      "snippet": "Nov 19, 2020 · Ihre Larven kriechen an Zimmerwänden, fressen sich durch Lebensmittel und hinterlassen unappetitliche Gespinste in …"
+    },
+    {
+      "title": "Lebensmittelmotten - Umweltbundesamt",
+      "url": "https://www.umweltbundesamt.de/lebensmittelmotten",
+      "snippet": "Feb 5, 2026 · Lebensmittelmotten sind weltweit als Vorratsschädlinge verbreitet verbreitet und können zur echten Plage werden. …"
+    }
+  ]
+}

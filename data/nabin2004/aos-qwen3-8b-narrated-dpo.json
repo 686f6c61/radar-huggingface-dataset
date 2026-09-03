@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "nabin2004/AOS-qwen3-8b-narrated-dpo",
+  "slug": "nabin2004-aos-qwen3-8b-narrated-dpo",
+  "author": "nabin2004",
+  "url": "https://huggingface.co/nabin2004/AOS-qwen3-8b-narrated-dpo",
+  "created_at": "2026-09-03T16:57:53.000Z",
+  "updated_at": "2026-09-03T16:58:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dpo",
+    "preference",
+    "rlhf",
+    "manim",
+    "manim-voiceover",
+    "aos",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 450017310,
+  "storage_human": "450 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia, die freie Enzyklopädie",
+      "url": "https://www.wikipedia.de/",
+      "snippet": "Wir sind der gemeinnnützige Verein hinter der Wikipedia und unterstützen die Ehrenamtlichen, sichern und entwickeln die technische …"
+    },
+    {
+      "title": "WikidataCon 2027/Call for expressions of interest to host",
+      "url": "https://bbb.wikipedia.de/rooms/plp-qml-xrj-9ib/",
+      "snippet": "Learn using BigBlueButton, the trusted open-source web conferencing solution that enables seamless virtual collaboration and online …"
+    },
+    {
+      "title": "Zwischen Einsamkeit und Community: Wie gemeinschaftlich ist …",
+      "url": "https://bbb.wikipedia.de/rooms/uk8-3ex-nad-tua/join",
+      "snippet": "Learn using BigBlueButton, the trusted open-source web conferencing solution that enables seamless virtual collaboration and online …"
+    },
+    {
+      "title": "Wiki Loves Earth 2026 – Vorjury Deutschland",
+      "url": "https://www.festivalsommer.wikipedia.de/prejury/",
+      "snippet": "Tool: 2011–2015 Ruben Demusfür Wikimedia Austria (WMAT), graphisch überarbeitet von Martin Kraft"
+    },
+    {
+      "title": "Spenden-Kommentar-Ticker",
+      "url": "https://ticker.wikipedia.de/",
+      "snippet": "Herbstkampagne 2022 Spendenkommentare Letzte Kommentare"
+    }
+  ]
+}

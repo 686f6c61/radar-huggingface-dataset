@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "austi-nlewi/embodied-ai-study32",
+  "slug": "austi-nlewi-embodied-ai-study32",
+  "author": "austi-nlewi",
+  "url": "https://huggingface.co/austi-nlewi/embodied-ai-study32",
+  "created_at": "2026-09-03T16:56:09.000Z",
+  "updated_at": "2026-09-03T16:56:14.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Have You Ever Seen the Rain - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Have_You_Ever_Seen_the_Rain",
+      "snippet": "\" Have You Ever Seen the Rain \" is a song by American rock band Creedence Clearwater Revival, written by John Fogerty and …"
+    },
+    {
+      "title": "Have You Ever Seen the Rain? - Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Have_You_Ever_Seen_the_Rain%3F",
+      "snippet": "Have You Ever Seen the Rain ist ein Song der US-amerikanischen Rockband Creedence Clearwater Revival, geschrieben von John …"
+    },
+    {
+      "title": "Creedence Clearwater Revival - Have You Ever Seen The Rain …",
+      "url": "https://www.youtube.com/watch?v=mG9pabrrT_Q",
+      "snippet": "Jun 22, 2026 · The official German lyric video of “Have You Ever Seen The Rain” taken from Creedence Clearwater Revival’s …"
+    },
+    {
+      "title": "Creedence Clearwater Revival - Have You Ever Seen The Rain …",
+      "url": "https://www.youtube.com/watch?v=g4flAZEgtjs",
+      "snippet": "Jan 22, 2014 · Join the official CCR email list: http://found.ee/CCR_Newsletter Music video by Creedence Clearwater Revival …"
+    },
+    {
+      "title": "Creedence Clearwater Revival - Have You Ever Seen the Rain Songtext",
+      "url": "https://www.songtexte.com/songtext/creedence-clearwater-revival/have-you-ever-seen-the-rain-2bd1ec66.html",
+      "snippet": "Have You Ever Seen the Rain Songtext von Creedence Clearwater Revival mit Lyrics, deutscher Übersetzung, Musik-Videos und …"
+    }
+  ]
+}

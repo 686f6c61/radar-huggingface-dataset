@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "hugme4/loan-default-model",
+  "slug": "hugme4-loan-default-model",
+  "author": "hugme4",
+  "url": "https://huggingface.co/hugme4/loan-default-model",
+  "created_at": "2026-09-03T17:17:45.000Z",
+  "updated_at": "2026-09-03T17:19:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 608985449,
+  "storage_human": "609 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vanilla Chip Cookies - Recipe - Cooks.com",
+      "url": "https://www.cooks.com/recipe/4r7dy983/vanilla-chip-cookies.html",
+      "snippet": "Sep 27, 2021 · Beat in vanilla and egg. Stir together flour, salt and baking soda. Add flour mix to creamed mix, blending well. Stir in …"
+    },
+    {
+      "title": "parthipan00410/loan-default-ml-model - GitHub",
+      "url": "https://github.com/parthipan00410/loan-default-ml-model",
+      "snippet": "This project was developed as part of my Post Graduate Program (PGP) in AI/ML and represents a key milestone in applying data science to real-world business problems. This machine learning project predicts whether a loan applicant is likely to default. The model helps financial institutions in assessing loan risk."
+    },
+    {
+      "title": "Vanilla Chip Cookies Recipe - Easy Dessert - Baker Recipes",
+      "url": "https://bakerrecipes.com/vanilla-chip-cookies-recipe/",
+      "snippet": "Jun 1, 2012 · With chocolate chips, this Vanilla Chip Cookies Recipe is a practical homemade recipe that is easy to follow from start …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Vanilla Chip Cookies - Recipe - Cooks.com",
+      "url": "https://www.cooks.com/recipe/gw5ap65t/vanilla-chip-cookies.html",
+      "snippet": "Jan 31, 2022 · Beat in vanilla and egg. Stir together flour, salt and baking soda. Add flour mixture to creamed mix, blending well. Stir …"
+    }
+  ]
+}

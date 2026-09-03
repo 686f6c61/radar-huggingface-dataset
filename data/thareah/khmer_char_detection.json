@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Thareah/khmer_char_detection",
+  "slug": "thareah-khmer_char_detection",
+  "author": "Thareah",
+  "url": "https://huggingface.co/Thareah/khmer_char_detection",
+  "created_at": "2026-09-03T14:15:16.000Z",
+  "updated_at": "2026-09-03T14:19:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19210010,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher ...",
+      "url": "https://www.amazon.de/",
+      "snippet": "Entdecken, shoppen und einkaufen bei Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher, Games, Spielzeug, …"
+    },
+    {
+      "title": "Thareah/thaocr · Hugging Face",
+      "url": "https://huggingface.co/Thareah/thaocr",
+      "snippet": "Model 90k (Small-90k) This directory contains a lightweight version of the ThaoNet recognition model, trained on approximately 90,000 samples (Khmer script)."
+    },
+    {
+      "title": "Amazon.de: Amazon Prime",
+      "url": "https://www.amazon.de/amazonprime",
+      "snippet": "Um mehr über spezifische Prime-Vorteile zu erfahren, der auf dieser Seite erwähnt wird, besuche amazon.de/primebenefits. Eine …"
+    },
+    {
+      "title": "Khmer OCR-model - a phonsobon Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/phonsobon/khmer-ocr-model",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from phonsobon"
+    },
+    {
+      "title": "Anmeldung bei Amazon Business",
+      "url": "https://business.amazon.de/de/login",
+      "snippet": "Sichern Sie sich exklusive Angebote und Mengenrabatte! Melden Sie sich bei Ihrem Amazon Business-Konto an und sparen Sie …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-AbsProjectionMass-top20-balanced-10240",
+  "slug": "enmingzhangzz-qwen2-5-vl-7b-opsd-visionzip-r010-absprojectionmass-top20-balanced-10240",
+  "author": "enmingzhangzz",
+  "url": "https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-VisionZip-r010-AbsProjectionMass-top20-balanced-10240",
+  "created_at": "2026-09-03T16:05:48.000Z",
+  "updated_at": "2026-09-03T16:06:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2.5-vl",
+    "opsd",
+    "visionzip",
+    "lora",
+    "image-text-to-text",
+    "dataset:OpenMMReasoner/OpenMMReasoner-SFT-874K",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161539072,
+  "storage_human": "162 MB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Request for Google Scholar Account without Institutional Email.",
+      "url": "https://support.google.com/websearch/thread/429193467/request-for-google-scholar-account-without-institutional-email?hl=en",
+      "snippet": "Apr 29, 2026 · Request for Google Scholar Account without Institutional Email. I am Aditya Saha, a student of the Department of …"
+    },
+    {
+      "title": "Google Scholar Profile Not Appearing in Search Results",
+      "url": "https://support.google.com/websearch/thread/428639192/google-scholar-profile-not-appearing-in-search-results?hl=en",
+      "snippet": "Apr 27, 2026 · I created my Google Scholar profile some time ago, but it does not appear to be visible to others. When someone …"
+    },
+    {
+      "title": "请问 iOS 下有什么比较好的学术 App? - 知乎",
+      "url": "https://www.zhihu.com/question/20521485",
+      "snippet": "iOS 上有什么比较好用的学术方面的app么，我已经使用了papers,觉得用来归档已有的论文很好，但用来获取新…"
+    },
+    {
+      "title": "google scholar - 知乎",
+      "url": "https://www.zhihu.com/topic/19653450",
+      "snippet": "Google Scholar（谷歌学术搜索）是一个可以免费搜索学术文章的网络搜索引擎，由计算机专家Anurag Acharya开发。2004年11 …"
+    },
+    {
+      "title": "Google Scholar - Google Acadêmico | Problemas na verificação de e-mail",
+      "url": "https://support.google.com/mail/thread/364540580/google-scholar-google-acad%C3%AAmico-problemas-na-verifica%C3%A7%C3%A3o-de-e-mail?hl=pt",
+      "snippet": "Gerei um perfil no Google Scholar, onde tenho tentado deixar meu perfil público através da verificação do meu endereço de e-mail …"
+    }
+  ]
+}

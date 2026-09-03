@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "calebjonesler/homework-multitask",
+  "slug": "calebjonesler-homework-multitask",
+  "author": "calebjonesler",
+  "url": "https://huggingface.co/calebjonesler/homework-multitask",
+  "created_at": "2026-09-03T16:02:36.000Z",
+  "updated_at": "2026-09-03T16:02:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduttore",
+      "url": "https://translate.google.it/",
+      "snippet": "Il servizio di Google, offerto senza costi, traduce all'istante parole, frasi e pagine web dall'italiano a più di 100 altre lingue e viceversa."
+    },
+    {
+      "title": "DeepL Traduttore | Il miglior traduttore al mondo",
+      "url": "https://www.deepl.com/it/translator",
+      "snippet": "Traduci testi e interi file in un istante. Traduzioni precise per utenti singoli e team. Milioni di persone traducono con DeepL ogni giorno."
+    },
+    {
+      "title": "Reverso | Traduzione e dizionario gratis",
+      "url": "https://www.reverso.net/traduzione-testo",
+      "snippet": "Il servizio di traduzione online gratuito di Reverso traduce i tuoi testi dall'inglese al francese, spagnolo, italiano, tedesco, russo, …"
+    },
+    {
+      "title": "Traduci con DeepL in questa coppia di lingue: Inglese > Italiano",
+      "url": "https://www.deepl.com/it/translator/l/en/it",
+      "snippet": "Il tuo testo o file è in Inglese? Traducilo in Italiano utilizzando il miglior traduttore automatico al mondo! Milioni di persone traducono …"
+    },
+    {
+      "title": "Dizionario Italiano-Inglese - WordReference.com",
+      "url": "https://www.wordreference.com/it/",
+      "snippet": "Dizionario inglese-italiano: 175.000 parole con 290.000 significati."
+    }
+  ]
+}

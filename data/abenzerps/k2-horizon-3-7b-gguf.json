@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "abenzerps/K2-Horizon-3.7B-GGUF",
+  "slug": "abenzerps-k2-horizon-3-7b-gguf",
+  "author": "abenzerps",
+  "url": "https://huggingface.co/abenzerps/K2-Horizon-3.7B-GGUF",
+  "created_at": "2026-09-03T16:32:36.000Z",
+  "updated_at": "2026-09-03T16:40:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "k2-horizon",
+    "long-context",
+    "512k-context",
+    "dense",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:IFM/K2-Horizon-3.7B",
+    "base_model:quantized:IFM/K2-Horizon-3.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5058255360,
+  "parameters_human": "5.06B",
+  "storage_bytes": 19372128619,
+  "storage_human": "19.4 GB",
+  "base_model": "IFM/K2-Horizon-3.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "steam正版网站是什么? - 知乎",
+      "url": "https://www.zhihu.com/question/509353816",
+      "snippet": "—————————— 浏览这个回答的人好多，看来有不少新玩家朋友加入steam，在此添加一些注意事项 1.确保你下的是正版steam. …"
+    },
+    {
+      "title": "Qui a vu mes stories Instagram [Résolu] - Instagram",
+      "url": "https://forums.commentcamarche.net/forum/affich-36452377-instagram-je-ne-peux-plus-voir-qui-a-vu-mes-story-instants",
+      "snippet": "Bonjour, Je ne peux plus voir qui a vu mes story sur Instagram J’ai éteins mon tel, déconnexion, supp l’app rien n’y fait Alors que sur …"
+    },
+    {
+      "title": "Guide - Instagram - CCM",
+      "url": "https://it.ccm.net/faq/instagram-550",
+      "snippet": "Profilo Instagram hackerato: un recupero semplificato Instagram continua la sua guerra contro la pirateria. La piattaforma ha... Per …"
+    },
+    {
+      "title": "这12个视频解析下载地址，网上视频均可下载，视频素材多到手软",
+      "url": "https://www.zhihu.com/tardis/zm/art/503689377",
+      "snippet": "这个视频解析网站比较专业，除了拥有在线下载视频功能外，还拥有Windows和Mac的客户端，旗下也拥有录制屏幕视频和DVD刻录等 …"
+    },
+    {
+      "title": "Problème étrange avec les groupes Instagram - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37910805-probleme-etrange-avec-les-groupes-instagram",
+      "snippet": "Sep 13, 2023 · En retournant sur instagram, je ne vois aucune trace de ce groupe dans mon fil de discussion ou dans mes invitations …"
+    }
+  ]
+}

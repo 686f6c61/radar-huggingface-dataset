@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Carles19/llama3.2_3B_alpaca_test",
+  "slug": "carles19-llama3-2_3b_alpaca_test",
+  "author": "Carles19",
+  "url": "https://huggingface.co/Carles19/llama3.2_3B_alpaca_test",
+  "created_at": "2026-09-03T17:02:09.000Z",
+  "updated_at": "2026-09-03T17:02:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 2019377440,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "البحث عن تطبيق \"متجر Google Play\" - مساعدة Google Play",
+      "url": "https://support.google.com/googleplay/answer/190860?hl=ar",
+      "snippet": "على جهازك، انتقِل إلى قسم \"التطبيقات\". انقر على \"متجر Google Play\" . سيتم فتح التطبيق وستتمكّن من البحث عن المحتوى وتصفُّحه لتنزيله."
+    },
+    {
+      "title": "مساعدة حساب Google",
+      "url": "https://support.google.com/accounts/?hl=ar",
+      "snippet": "مركز المساعدة حساب Google، حيث يمكنك الحصول على مساعدة لإدارة واسترداد حساب Google الخاص بك، فضلا عن نصائح لتقصي المشاكل والمحافظة على حسابك آمنا."
+    },
+    {
+      "title": "أناشيد اطفال mp3 | صقور الإبدآع - Sqorebda3",
+      "url": "https://www.sqorebda3.com/vb/forums/139/",
+      "snippet": "May 5, 2015 · قسم يهتم بجميع اغاني الاطفال سواء كانت بيقاع او بدون ايقاع استماع ومشاهدة وتحميل مباشر mp3 وكل جديد في عالم طيور الجنة وكراميش وكناري ونون وبيبي تون واطفال..."
+    },
+    {
+      "title": "اسماء اولاد يبدا بحرف الميم , اسامى مميزة بحرف الميم , اسماء الذكور ...",
+      "url": "https://www.sqorebda3.com/vb/threads/47094/",
+      "snippet": "Jan 6, 2015 · اسماء اولاد يبدا بحرف الميم , اسامى مميزة بحرف الميم , اسماء الذكور الحديثة لحرف م 2027 الدكتورة هدى .:: إدارية الأقـسـام العامـة ::."
+    },
+    {
+      "title": "تثبيت تطبيق \"Drive للكمبيوتر المكتبي\" - مركز تعلُّم Google Workspace",
+      "url": "https://support.google.com/a/users/answer/13022292?hl=ar",
+      "snippet": "يمكنك العثور على ملفاتك وفتحها من Google Drive على الكمبيوتر باستخدام تطبيق \"Drive للكمبيوتر المكتبي\". يمكنك استخدام تطبيق \"Drive للكمبيوت"
+    }
+  ]
+}

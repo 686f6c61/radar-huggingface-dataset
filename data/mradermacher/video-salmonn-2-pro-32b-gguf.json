@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/video-SALMONN-2-Pro-32B-GGUF",
+  "slug": "mradermacher-video-salmonn-2-pro-32b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/video-SALMONN-2-Pro-32B-GGUF",
+  "created_at": "2026-09-03T17:42:27.000Z",
+  "updated_at": "2026-09-03T17:44:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 595266800,
+  "parameters_human": "595.3M",
+  "storage_bytes": 1969155392,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trade Republic lehnt Order ab : r/Investieren - Reddit",
+      "url": "https://www.reddit.com/r/Investieren/comments/1avrowi/trade_republic_lehnt_order_ab/",
+      "snippet": "Hallo, ich bin relativ neu bei trade Republic. Ich habe versucht Aktien zu kaufen, jedoch egal bei welcher Aktie wird mir angezeigt das …"
+    },
+    {
+      "title": "GitHub - bytedance/video-SALMONN-2: video-SALMONN 2 is a powerful audio ...",
+      "url": "https://github.com/bytedance/video-SALMONN-2",
+      "snippet": "🚀🚀 Welcome to the repo of video-SALMONN 2! video-SALMONN 2 is a powerful audio-visual large language model (LLM) that generates high-quality audio-visual video captions, which is developed by the Department of Electronic Engineering at Tsinghua University and ByteDance."
+    },
+    {
+      "title": "Yet another person asking if Trade Republic is safe : r ... - Reddit",
+      "url": "https://www.reddit.com/r/irishpersonalfinance/comments/18c1wes/yet_another_person_asking_if_trade_republic_is/",
+      "snippet": "Would only Trade Republic be protected under this and not me necessarily? Is there another safer alternative than Trade Republic I …"
+    },
+    {
+      "title": "tsinghua-ee/video-SALMONN-2-Pro-32B · Hugging Face",
+      "url": "https://huggingface.co/tsinghua-ee/video-SALMONN-2-Pro-32B",
+      "snippet": "Performance We evaluate the models on audio-visual QA benchmarks including Video-MME, WorldSense, AVUT, Video-Holmes, and DailyOmni. Our 4B and 8B models achieve SOTA results at comparable scales, while the 32B model surpasses all other open-source systems."
+    },
+    {
+      "title": "elitepvpers",
+      "url": "https://www.elitepvpers.com/forum/",
+      "snippet": "2 days ago · MMO Insider Forums - anything about Hacks, Bots, Cheats, Guides and more!"
+    }
+  ]
+}

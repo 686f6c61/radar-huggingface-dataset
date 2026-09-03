@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "VitaReset/VitaReset",
+  "slug": "vitareset-vitareset",
+  "author": "VitaReset",
+  "url": "https://huggingface.co/VitaReset/VitaReset",
+  "created_at": "2026-09-03T10:58:29.000Z",
+  "updated_at": "2026-09-03T10:58:29.000Z",
+  "license": "bsd-3-clause-clear",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd-3-clause-clear",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Vita Reset Review 2026: SCAM?! or LEGIT?? - YouTube",
+      "url": "https://www.youtube.com/watch?v=FMF68McOlBw",
+      "snippet": "Vita Reset Review 2026: SCAM?! or LEGIT?? Vita Reset Review 2026: SCAM?! or LEGIT?? I took a look at VitaReset, did some research, and put it to the test so you don’t have to."
+    },
+    {
+      "title": "Deep Van - 知乎",
+      "url": "https://www.zhihu.com/people/yang-lei-96-72",
+      "snippet": "Aug 17, 2026 · Deep Van是知乎用户，擅长回答金融、科技和生活问题，其个人星球为DeepVan的逃生地牢，回答风格直言不讳，获 …"
+    },
+    {
+      "title": "VitaReset Review: Collagen Gummy, Ingredients & Pricing",
+      "url": "https://homehealthyremedy.com/vitareset-review-ingredients-pricing/",
+      "snippet": "Discover how VitaReset works, what's inside every gummy, and exact pricing. Read our full VitaReset review before you buy."
+    },
+    {
+      "title": "[Cheat Engine 7.4/CE修改器7.4] 吾爱首发汉化版 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1573180-1-1.html",
+      "snippet": "Jan 8, 2022 · CE7.3原贴已经无法编辑，因此开新帖： [Cheat Engine 7.3/CE修改器7.3] 吾爱首发汉化版https://www.52pojie.cn/thread …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Pixel134/VsJaqueli2.0",
+  "slug": "pixel134-vsjaqueli2-0",
+  "author": "Pixel134",
+  "url": "https://huggingface.co/Pixel134/VsJaqueli2.0",
+  "created_at": "2026-09-03T17:13:33.000Z",
+  "updated_at": "2026-09-03T17:13:33.000Z",
+  "license": "cc-by-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Live Cricket Scores | Today's Match Scorecard & Ball-by-Ball …",
+      "url": "https://www.cricinfo.com/live-cricket-score",
+      "snippet": "17 hours ago · Live cricket scores and updates on all current top-level cricket matches for men and women - Tests, ODIs, T20s, first …"
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy's AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "ICC Cricket Fixtures & Results | ICC",
+      "url": "https://www.icc-cricket.com/fixtures-results",
+      "snippet": "1 day ago · Stay updated with the latest ICC cricket fixtures, results, match schedules, and scores. Explore upcoming international …"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Live Cricket Scores - Find Latest Scores of all Matches Online - ESPN",
+      "url": "https://www.espn.com/cricket/scores",
+      "snippet": "17 hours ago · Get Latest Cricket Match Score updates only on ESPN.com. Check out 2026 Live Cricket Score of Ball by Ball & full …"
+    }
+  ]
+}

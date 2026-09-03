@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "RKB109/contextual-bandit-simulator-20260903-model",
+  "slug": "rkb109-contextual-bandit-simulator-20260903-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/contextual-bandit-simulator-20260903-model",
+  "created_at": "2026-09-03T17:03:15.000Z",
+  "updated_at": "2026-09-03T17:03:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "reinforcement-learning",
+    "text-classification",
+    "feature-extraction",
+    "sentence-similarity",
+    "dataset:RKB109/contextual-bandit-simulator-20260903-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Déménagement avec Engie : contrat gaz et électricité en ligne",
+      "url": "https://particuliers.engie.fr/demenagement.html?msockid=13dfe9b04aac619b0608fe794bc0602c",
+      "snippet": "Découvrez nos services pour emménager en toute tranquillité et profitez de nos offres électricité et gaz sans engagement. ENGIE, …"
+    },
+    {
+      "title": "Déménagement : les démarches gaz et électricité - ENGIE",
+      "url": "https://particuliers.engie.fr/electricite/conseils-electricite/conseils-contrat-electricite/comment-resilier-souscrire-contrat.html?msockid=13dfe9b04aac619b0608fe794bc0602c",
+      "snippet": "Apr 21, 2016 · Un déménagement ? ENGIE vous aide à vérifier vous n'avez oublié aucune démarche dans la résiliation ou …"
+    },
+    {
+      "title": "Engie déménagement : démarches, délais et frais en 2026",
+      "url": "https://agence-energie.com/engie/demenagement",
+      "snippet": "Aug 4, 2026 · Déménagement Engie : résilier l'ancien contrat, souscrire au nouveau logement, délais et frais de mise en service …"
+    },
+    {
+      "title": "Déménagement ENGIE 2026 : démarches, contacts et offres",
+      "url": "https://www.jechange.fr/energie/engie/demenagement",
+      "snippet": "Jun 9, 2026 · Déménagement ENGIE : résilier l'ancien contrat, en souscrire un nouveau par téléphone au 09 71 07 88 52 ou en ligne. …"
+    },
+    {
+      "title": "Je déménage avec mon contrat ENGIE - ENGIE Pro",
+      "url": "https://pro.engie.fr/electricite-gaz/je-demenage-avec-contrat-engie-professionnels",
+      "snippet": "Je déménage : les démarches à suivre ! Vous avez un projet de déménagement ou êtes déjà installé dans vos nouveaux locaux ? …"
+    }
+  ]
+}

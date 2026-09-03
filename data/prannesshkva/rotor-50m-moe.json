@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Prannesshkva/ROTOR-50M-MoE",
+  "slug": "prannesshkva-rotor-50m-moe",
+  "author": "Prannesshkva",
+  "url": "https://huggingface.co/Prannesshkva/ROTOR-50M-MoE",
+  "created_at": "2026-09-03T17:52:16.000Z",
+  "updated_at": "2026-09-03T18:18:49.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "rotor",
+    "rotor-50m-moe",
+    "non-abelian",
+    "quaternion",
+    "spinor",
+    "lie-group",
+    "su2",
+    "cross-attention-replacement",
+    "attention-free",
+    "moe",
+    "mixture-of-experts",
+    "sequence-modeling",
+    "pytorch",
+    "prannesshkva",
+    "text-generation",
+    "custom_code",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 96350112,
+  "parameters_human": "96.4M",
+  "storage_bytes": 385423368,
+  "storage_human": "385 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "Prannesshkva/Ael-504M · Hugging Face",
+      "url": "https://huggingface.co/Prannesshkva/Ael-504M",
+      "snippet": "Prannesshkva / Ael-504M like 0 Text Generation Transformers Safetensors PyTorch English ael mamba2 state-space-models Mixture of Experts multimodal edge-ai any-to-any conversational custom_code License:bsl-1.1 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Prannesshkva (Prannessh KVA) - Hugging Face",
+      "url": "https://huggingface.co/Prannesshkva/datasets",
+      "snippet": "User profile of Prannessh KVA on Hugging Face"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

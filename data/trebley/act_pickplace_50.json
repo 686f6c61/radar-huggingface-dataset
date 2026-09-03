@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TrebleY/act_pickplace_50",
+  "slug": "trebley-act_pickplace_50",
+  "author": "TrebleY",
+  "url": "https://huggingface.co/TrebleY/act_pickplace_50",
+  "created_at": "2026-09-03T15:10:24.000Z",
+  "updated_at": "2026-09-03T15:53:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "pickplace",
+    "dataset:TrebleY/pickplace_50_20260902_213020",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714944,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "TrebleY (Yiyao Yang) - Hugging Face",
+      "url": "https://huggingface.co/TrebleY/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 9 hours ago ... published a dataset about 9 hours ago"
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of …"
+    },
+    {
+      "title": "a0loshi1/act_pickplace_cube · Hugging Face",
+      "url": "https://huggingface.co/a0loshi1/act_pickplace_cube",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an …"
+    }
+  ]
+}

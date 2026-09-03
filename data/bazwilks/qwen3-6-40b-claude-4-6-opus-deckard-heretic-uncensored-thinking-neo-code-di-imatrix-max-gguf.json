@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "Bazwilks/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF",
+  "slug": "bazwilks-qwen3-6-40b-claude-4-6-opus-deckard-heretic-uncensored-thinking-neo-code-di-imatrix-max-gguf",
+  "author": "Bazwilks",
+  "url": "https://huggingface.co/Bazwilks/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF",
+  "created_at": "2026-09-03T16:10:43.000Z",
+  "updated_at": "2026-09-03T16:10:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "fine tune",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "multi-stage tuned.",
+    "all use cases",
+    "coder",
+    "creative",
+    "creative writing",
+    "fiction writing",
+    "plot generation",
+    "sub-plot generation",
+    "story generation",
+    "scene continue",
+    "storytelling",
+    "fiction story",
+    "science fiction",
+    "romance",
+    "all genres",
+    "story",
+    "writing",
+    "vivid prosing",
+    "vivid writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "imatrix",
+    "neo imatrix",
+    "di-matrix",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "dataset:TeichAI/claude-4.5-opus-high-reasoning-250x",
+    "dataset:DavidAU/PkDick-Deckard-5-Datasets",
+    "base_model:DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking",
+    "base_model:quantized:DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39072596736,
+  "parameters_human": "39.07B",
+  "storage_bytes": 259934618168,
+  "storage_human": "259.9 GB",
+  "base_model": "DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ionization Energy Chart of all Elements (Full Chart)",
+      "url": "https://periodictableguide.com/ionization-energy-chart-of-all-elements/",
+      "snippet": "Sep 1, 2024 · Ionization energy chart of all the elements is given below. First ionization energy, second ionization energy as well as …"
+    },
+    {
+      "title": "Arrange the following in increasing order : First ionisation enthalpy ...",
+      "url": "https://allen.in/dn/qna/644127345",
+      "snippet": "To arrange the elements Mg (Magnesium), Al (Aluminum), Si (Silicon), and Na (Sodium) in increasing order of their first ionization …"
+    },
+    {
+      "title": "Correct order of first ionization energy of the following metals Na, Mg ...",
+      "url": "https://allen.in/dn/qna/642610692",
+      "snippet": "- Mg has a higher ionization energy than Na and Al because of its stable filled 3s subshell. - Si has the highest ionization energy …"
+    },
+    {
+      "title": "The first ionization potential of Na, Mg, Al and Si are in the order:",
+      "url": "https://www.vedantu.com/question-answer/the-first-ionization-potential-of-na-mg-al-and-class-12-chemistry-cbse-60a340eaa1b8b440da300b34",
+      "snippet": "We know that, as we progress through the period, the atomic size decreases, and thus the ionisation enthalpy rises. That is, first …"
+    },
+    {
+      "title": "The first ionisation enthalpies of Na, Mg, Al and Si are in the order:",
+      "url": "https://testbook.com/question-answer/the-first-ionisation-enthalpies-of-na-mg-al-and--5dfdc310160e200cff47e25d",
+      "snippet": "Thus, the true order of the first Ionisation Potential is Na < Mg > Al < Si. It is important to note that the second I.P value, which is the …"
+    }
+  ]
+}

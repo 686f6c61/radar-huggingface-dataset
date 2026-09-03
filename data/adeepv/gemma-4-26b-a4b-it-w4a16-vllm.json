@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "adeepv/gemma-4-26B-A4B-it-W4A16-vLLM",
+  "slug": "adeepv-gemma-4-26b-a4b-it-w4a16-vllm",
+  "author": "adeepv",
+  "url": "https://huggingface.co/adeepv/gemma-4-26B-A4B-it-W4A16-vLLM",
+  "created_at": "2026-09-03T12:45:00.000Z",
+  "updated_at": "2026-09-03T12:45:54.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "gemma4",
+    "quantized",
+    "w4a16",
+    "int4",
+    "compressed-tensors",
+    "moe",
+    "qat",
+    "text-generation",
+    "conversational",
+    "en",
+    "ru",
+    "base_model:google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805936206,
+  "parameters_human": "25.81B",
+  "storage_bytes": 16454171694,
+  "storage_human": "16.5 GB",
+  "base_model": "google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing Gigafast+ - Sky Help Forum",
+      "url": "https://helpforum.sky.com/t5/Broadband-Talk/Introducing-Gigafast/bc-p/5135020",
+      "snippet": "Nov 7, 2025 · Get ready for the fastest speeds offered yet with Sky. Introducing the new Gigafast+ subscription offering speeds up to …"
+    },
+    {
+      "title": "Account & Billing Board | Sky Community",
+      "url": "https://helpforum.sky.com/t5/Account-Billing/bd-p/skyvip/redirect_from_archived_page/true",
+      "snippet": "2 days ago · Have any questions on your Sky account or have billing issues? Why not raise a post with our Sky Community members?"
+    },
+    {
+      "title": "Sky Q Box not connecting to wifi | Sky Community",
+      "url": "https://helpforum.sky.com/t5/Sky-Q/Sky-Q-Box-not-connecting-to-wifi/td-p/5108385",
+      "snippet": "Oct 6, 2025 · Help out sky Q box keeps losing the WiFi signal even though our WiFi is on and in use on all other devices including …"
+    },
+    {
+      "title": "SKY GO & WINDOWS 10/11 LAPTOP ISSUES",
+      "url": "https://helpforum.sky.com/t5/Sky-Go/SKY-GO-amp-WINDOWS-10-11-LAPTOP-ISSUES/td-p/4564740",
+      "snippet": "Feb 16, 2024 · There are a multitude of chains about the issue of Sky Go not loading on laptops and just 'hanging' at the start screen. …"
+    },
+    {
+      "title": "Premier Sports App: Now available on Sky Glass & Sky Stream",
+      "url": "https://helpforum.sky.com/t5/Sky-TV/Premier-Sports-App-Now-available-on-Sky-Glass-amp-Sky-Stream/ba-p/4986315",
+      "snippet": "May 16, 2025 · Great news! The Premier Sports app is now available on Sky Q, Sky Glass and Sky Stream. Check out this article for …"
+    }
+  ]
+}

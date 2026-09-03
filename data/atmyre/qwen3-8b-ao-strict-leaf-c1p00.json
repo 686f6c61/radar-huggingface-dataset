@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Atmyre/qwen3-8b-ao-strict-leaf-c1p00",
+  "slug": "atmyre-qwen3-8b-ao-strict-leaf-c1p00",
+  "author": "Atmyre",
+  "url": "https://huggingface.co/Atmyre/qwen3-8b-ao-strict-leaf-c1p00",
+  "created_at": "2026-09-03T14:24:45.000Z",
+  "updated_at": "2026-09-03T14:24:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "activation-oracle",
+    "interpretability",
+    "qwen3",
+    "concept-strict-leaf",
+    "arxiv:2512.15674",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 698419728,
+  "storage_human": "698 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spotify - Web Player: Music for everyone",
+      "url": "https://open.spotify.com/",
+      "snippet": "Spotify is a digital music service that gives you access to millions of songs."
+    },
+    {
+      "title": "Spotify – Download for Desktop",
+      "url": "https://open.spotify.com/download",
+      "snippet": "Download Spotify for your device Enjoy high-quality audio, offline playback, and a friend activity feed that lets you see what your …"
+    },
+    {
+      "title": "Spotify",
+      "url": "https://accounts.spotify.com/en/login?nosignup=true",
+      "snippet": "or Continue with Google Continue with Facebook Continue with Apple"
+    },
+    {
+      "title": "Spotify – Web Player",
+      "url": "https://spotify.link/8JnKrNFWLob",
+      "snippet": "Spotify is the best way to listen to music on mobile or tablet. Search for any track, artist or album and listen for free. Make and share …"
+    },
+    {
+      "title": "Windows download - Spotify",
+      "url": "https://www.spotify.com/us/download/windows/",
+      "snippet": "Listen on mobile and tablet, too Using Spotify on your phone or tablet is free, easy, and fun."
+    }
+  ]
+}

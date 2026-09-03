@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Sandy-sys/osint-argus-gemma4-qat-w4a16",
+  "slug": "sandy-sys-osint-argus-gemma4-qat-w4a16",
+  "author": "Sandy-sys",
+  "url": "https://huggingface.co/Sandy-sys/osint-argus-gemma4-qat-w4a16",
+  "created_at": "2026-08-17T18:34:17.000Z",
+  "updated_at": "2026-09-03T12:00:29.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4_unified",
+    "osint",
+    "indic",
+    "gemma-4",
+    "qat",
+    "w4a16",
+    "compressed-tensors",
+    "sglang",
+    "multimodal",
+    "news",
+    "base_model:google/gemma-4-12B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-12B-it-qat-q4_0-unquantized",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 24817229870,
+  "storage_human": "24.8 GB",
+  "base_model": "google/gemma-4-12B-it-qat-q4_0-unquantized",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sandy.fr",
+      "url": "https://sandy.fr/",
+      "snippet": "SANDY est un créateur, importateur et grossiste en peluches, jouets, cadeaux et articles festifs basé dans les Hauts-de-France, près …"
+    },
+    {
+      "title": "Sandy (N’oubliez pas les paroles) donne des nouvelles sur les réseaux ...",
+      "url": "https://www.programme-tv.net/news/tv/403625-sandy-noubliez-pas-les-paroles-donne-des-nouvelles-sur-les-reseaux-sociaux-un-mois-apres-son-elimination-une-semaine-inoubliable/",
+      "snippet": "Jun 9, 2026 · Lors de sa participation à N’oubliez pas les paroles, en mars 2026, Sandy avait remporté un voyage en Islande. Elle s’y …"
+    },
+    {
+      "title": "Qui est Sandy, la nouvelle maestro qui bat tous les records dans « N ...",
+      "url": "https://www.femina.fr/article/qui-est-sandy-la-nouvelle-maestro-qui-bat-tous-les-records-dans-n-oubliez-pas-les-paroles-sur-france-2",
+      "snippet": "Apr 21, 2026 · Qui est Sandy, la nouvelle maestro qui bat tous les records dans « N’oubliez pas les paroles » sur France 2 ? Arrivée …"
+    },
+    {
+      "title": "« N’oubliez pas les paroles » : qui est Sandy, la nouvelle ... - MSN",
+      "url": "https://www.msn.com/fr-fr/divertissement/actualite/n-oubliez-pas-les-paroles-qui-est-sandy-la-nouvelle-maestro-qui-a-d%C3%A9pass%C3%A9-les-100-000-en-moins-d-une-semaine/ar-AA1Znw8k",
+      "snippet": "Elle n’est maestro que depuis quelques jours, mais déjà, Sandy affole les compteurs de N’oubliez pas les paroles . Originaire de …"
+    },
+    {
+      "title": "INTERVIEW - Sandy, éliminée de N’oubliez pas les paroles ... - Gala",
+      "url": "https://www.gala.fr/culture/television/interview-sandy-eliminee-de-n-oubliez-pas-les-paroles-grace-a-l-emission-j-ai-gagne-confiance-en-moi-20260506",
+      "snippet": "May 6, 2026 · Indétrônable depuis plus de deux mois, Sandy a été éliminée de N’oubliez pas les paroles, ce mercredi 6 mai sur …"
+    }
+  ]
+}

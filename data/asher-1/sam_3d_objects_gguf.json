@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Asher-1/SAM_3D_OBJECTS_GGUF",
+  "slug": "asher-1-sam_3d_objects_gguf",
+  "author": "Asher-1",
+  "url": "https://huggingface.co/Asher-1/SAM_3D_OBJECTS_GGUF",
+  "created_at": "2026-08-30T07:43:12.000Z",
+  "updated_at": "2026-09-03T13:00:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 271,
+  "trending_score": 0,
+  "parameters": 85067588,
+  "parameters_human": "85.1M",
+  "storage_bytes": 45947419008,
+  "storage_human": "45.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Quiz Widget - BookWidgets",
+      "url": "https://www.bookwidgets.com/widget-library/quiz",
+      "snippet": "Assess students’ understanding of language grammar with an interactive Quiz. Utilize a combination of question types to identify …"
+    },
+    {
+      "title": "Asher-1/SAM_3D_OBJECTS_GGUF · Hugging Face",
+      "url": "https://huggingface.co/Asher-1/SAM_3D_OBJECTS_GGUF",
+      "snippet": "SAM 3D Objects — GGUF Model Card Pre-converted GGUF weights for the cpp_ggml C++ inference engine, covering every model of the SAM 3D Objects generation pipeline in three quantizations (f32 / f16 / q8_0)."
+    },
+    {
+      "title": "Free Quiz Maker Widget - commoninja.com",
+      "url": "https://www.commoninja.com/widgets/quiz",
+      "snippet": "Build a multi-question quiz with scored or personality-style results, or use the same widget in poll mode for single-question polls, …"
+    },
+    {
+      "title": "GitHub - Asher-1/sam-3d-objects-ggml: SAM 3D Objects",
+      "url": "https://github.com/Asher-1/sam-3d-objects-ggml",
+      "snippet": "SAM 3D Objects is a foundation model that reconstructs full 3D shape geometry, texture, and layout from a single image, excelling in real-world scenarios with occlusion and clutter by using progressive training and a data engine with human feedback. It outperforms prior 3D generation models in human preference tests on real-world objects and ..."
+    },
+    {
+      "title": "Quiz Widget — Add It to Your Website Free | Webynize",
+      "url": "https://webynize.com/quiz-widget/",
+      "snippet": "A Quiz widget makes your website interactive with engaging Quizzes that capture attention and turn visitors into active participants. …"
+    }
+  ]
+}

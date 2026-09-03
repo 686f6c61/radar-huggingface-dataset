@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Atmyre/qwen3-8b-ao-strict-book-c0p50",
+  "slug": "atmyre-qwen3-8b-ao-strict-book-c0p50",
+  "author": "Atmyre",
+  "url": "https://huggingface.co/Atmyre/qwen3-8b-ao-strict-book-c0p50",
+  "created_at": "2026-09-03T14:24:02.000Z",
+  "updated_at": "2026-09-03T14:24:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "activation-oracle",
+    "interpretability",
+    "qwen3",
+    "concept-strict-book",
+    "arxiv:2512.15674",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 698419728,
+  "storage_human": "698 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ciasto ze śliwkami - AniaGotuje.pl",
+      "url": "https://aniagotuje.pl/przepis/ciasto-kruche-ze-sliwkami",
+      "snippet": "Przepis na proste i szybkie ciasto kruche ze śliwkami. To ciasto ze śliwkami, które zawsze wychodzi! Jest pyszne.. to wręcz idealne …"
+    },
+    {
+      "title": "Proste i szybkie ciasto ze śliwkami - Ania gotuje",
+      "url": "https://ania-gotuje.pl/przepis/proste-i-szybkie-ciasto-ze-sliwkami/",
+      "snippet": "Aug 28, 2021 · Proste i szybkie ciasto ze śliwkami idealne dla początkujących. Zawsze się udaje i smakuje przepysznie. Jest …"
+    },
+    {
+      "title": "Ciasto ze śliwkami i kruszonką - AniaGotuje.pl",
+      "url": "https://aniagotuje.pl/przepis/ciasto-ze-sliwkami-i-kruszonka",
+      "snippet": "Najlepszy i sprawdzony przepis na ciasto ze śliwkami i kruszonką pieczone na maśle. To ciasto dla początkujących i nie tylko. …"
+    },
+    {
+      "title": "Ciasto ze śliwkami - Kwestia Smaku",
+      "url": "https://www.kwestiasmaku.com/zielony_srodek/sliwki/ciasto_ze_sliwkami/przepis.html",
+      "snippet": "Najlepszy przepis na pyszne ciasto ze śliwkami i kruszonką! Masło i jajka na ciasto wyjąć wcześniej z lodówki i ogrzać w …"
+    },
+    {
+      "title": "Błyskawiczne ciasto ze śliwkami – tylko 10 minut i gotowe do …",
+      "url": "https://beszamel.se.pl/przepisy/ciasta-na-pocieszenie/szybkie-ciasto-ze-sliwkami-przepis-na-proste-ciasto-owocowe-wideo-re-KuvS-eaSD-htyt.html",
+      "snippet": "Aug 7, 2025 · Tyle wystarczy, by przygotować puszyste, domowe ciasto ze śliwkami! Sezonowe owoce, prosty przepis i minimum …"
+    }
+  ]
+}

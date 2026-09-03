@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "tintin1027/PrefGap-Qwen3-4B-DPO-HS2Attr-n200-lr1e-5",
+  "slug": "tintin1027-prefgap-qwen3-4b-dpo-hs2attr-n200-lr1e-5",
+  "author": "tintin1027",
+  "url": "https://huggingface.co/tintin1027/PrefGap-Qwen3-4B-DPO-HS2Attr-n200-lr1e-5",
+  "created_at": "2026-09-03T17:56:36.000Z",
+  "updated_at": "2026-09-03T17:56:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "trl",
+    "dpo",
+    "lora",
+    "prefgap",
+    "text-generation",
+    "conversational",
+    "dataset:nvidia/HelpSteer2",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143616870,
+  "storage_human": "144 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Baca Doujin - Facebook",
+      "url": "https://www.facebook.com/bacadoujins/",
+      "snippet": "Mar 24, 2022 · Baca Doujin. 739 likes · 10 talking about this. Akun souce doujin dan translation bahasa indonesia."
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Doujindesu [Official] - Landing Page - Bitly",
+      "url": "https://bit.ly/m/doujindesu",
+      "snippet": "Doujindesu [Official] Baca Online dan Download Doujinshi, Manga, dan Manhwa Bahasa Indonesia"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "KALTUUN BACADO | SAWIRKAAGU INANYAHOW | WITH LYRICS 2025.",
+      "url": "https://www.youtube.com/watch?v=fxFVmOS_FkQ",
+      "snippet": "Dec 6, 2025 · #subscribe KALTUUN BACADO | SAWIRKAAGU INANYAHOW | WITH LYRICS 2025. Siciid Dhiif"
+    }
+  ]
+}

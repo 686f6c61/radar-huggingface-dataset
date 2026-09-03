@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "titan-3646/q-Taxi-v3",
+  "slug": "titan-3646-q-taxi-v3",
+  "author": "titan-3646",
+  "url": "https://huggingface.co/titan-3646/q-Taxi-v3",
+  "created_at": "2026-09-03T11:17:56.000Z",
+  "updated_at": "2026-09-03T12:11:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 148421,
+  "storage_human": "148421 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tokyo Sushi - Cosenza - Sushi - Giapponese",
+      "url": "https://tokyo-sushi-cosenza.it/",
+      "snippet": "Tokyo Sushi - Sushi - Giapponese Via Panebianco 345, Cosenza, 87100 Ordina online Recensioni Menu Contatti"
+    },
+    {
+      "title": "titantomorrow/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/titantomorrow/q-Taxi-v3",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 . Usage"
+    },
+    {
+      "title": "Menu di Tokyo Sushi a domicilio a Cosenza | Ordina su Just Eat",
+      "url": "https://www.justeat.it/restaurants-tokyo-sushi-1-cosenza/menu",
+      "snippet": "Guarda il menu di Tokyo Sushi a Cosenza, 87100 ed effettua il tuo ordine in modo rapido, comodo e sicuro su Just Eat."
+    },
+    {
+      "title": "Pro152/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/Pro152/q-Taxi-v3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tokyo Sushi, Cosenza - Menu del ristorante, prezzi e recensioni",
+      "url": "https://www.sluurpy.it/cosenza/ristorante/218001/tokyo-sushi",
+      "snippet": "Dec 29, 2025 · Tokyo Sushi a Cosenza, con 13 piatti del menù originale, valutato 3.5 su 5, consigliato da 84 utenti, prenota oppure …"
+    }
+  ]
+}

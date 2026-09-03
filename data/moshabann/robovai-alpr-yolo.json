@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "moshabann/robovai-alpr-yolo",
+  "slug": "moshabann-robovai-alpr-yolo",
+  "author": "moshabann",
+  "url": "https://huggingface.co/moshabann/robovai-alpr-yolo",
+  "created_at": "2026-09-03T12:44:15.000Z",
+  "updated_at": "2026-09-03T12:45:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "yolo",
+    "yolov8",
+    "object-detection",
+    "alpr",
+    "license-plate-recognition",
+    "computer-vision",
+    "smart-parking",
+    "robovai",
+    "pyTorch",
+    "en",
+    "ar",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51998290,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "snippet": "Use WhatsApp on your browser. New to WhatsApp? Need help? Download WhatsApp on your mobile device, tablet or desktop and …"
+    },
+    {
+      "title": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
+      "url": "https://www.whatsapp.com/",
+      "snippet": "Simple, reliable, private messaging and calling for free*, available all over the world. Now you can make and receive video or voice …"
+    },
+    {
+      "title": "HOUSAB - WhatsApp",
+      "url": "https://wa.me/",
+      "snippet": "Hosted by WhatsApp 2026 © WhatsApp LLC Privacy & Terms"
+    },
+    {
+      "title": "WhatsApp | Sicurezza, affidabilità e riservatezza in messaggi e ...",
+      "url": "https://www.whatsapp.com/?lang=it",
+      "snippet": "Usa WhatsApp Messenger per rimanere in contatto con amici e familiari. WhatsApp è gratuita e offre messaggi e chiamate sui …"
+    }
+  ]
+}

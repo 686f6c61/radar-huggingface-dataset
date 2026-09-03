@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "prasadvittaldev/pocket-tts-spanish-onnx-int4",
+  "slug": "prasadvittaldev-pocket-tts-spanish-onnx-int4",
+  "author": "prasadvittaldev",
+  "url": "https://huggingface.co/prasadvittaldev/pocket-tts-spanish-onnx-int4",
+  "created_at": "2026-09-03T12:55:00.000Z",
+  "updated_at": "2026-09-03T13:03:06.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "int4",
+    "quantized",
+    "on-device",
+    "browser",
+    "webassembly",
+    "pocket-tts",
+    "es",
+    "base_model:kyutai/pocket-tts",
+    "base_model:quantized:kyutai/pocket-tts",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118620010,
+  "storage_human": "119 MB",
+  "base_model": "kyutai/pocket-tts",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - log in or sign up",
+      "url": "https://secure.facebook.com/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Forgot password? More languages…"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/login/identify/",
+      "snippet": "Find your account. Enter your mobile number or email. Mobile number or email. Continue. English (US) Español. Français (France) …"
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/signin.htm/",
+      "snippet": "When this happens, it's usually because the owner only shared it with a small group of people, changed who can see it or it's been …"
+    }
+  ]
+}

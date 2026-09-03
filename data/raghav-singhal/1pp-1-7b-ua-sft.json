@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Raghav-Singhal/1pp-1.7b-ua-sft",
+  "slug": "raghav-singhal-1pp-1-7b-ua-sft",
+  "author": "Raghav-Singhal",
+  "url": "https://huggingface.co/Raghav-Singhal/1pp-1.7b-ua-sft",
+  "created_at": "2026-09-03T18:21:26.000Z",
+  "updated_at": "2026-09-03T18:21:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "1pp",
+    "one-persona-pretraining",
+    "sft",
+    "ua",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1661048832,
+  "parameters_human": "1.66B",
+  "storage_bytes": 3322122912,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/index.php/?lang=sr",
+      "snippet": "Connect with friends, family, and the world by logging into Facebook to share and communicate with people you know."
+    },
+    {
+      "title": "Raghav Singhal",
+      "url": "https://raghavsinghal10.github.io/",
+      "snippet": "Alignment pretraining: robustly aligning models from the start (token 0) of pretraining, rather than doing so late in mid-training or post-training, as is done usually (see SPP & Model Raising)."
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "Raghav-Singhal (Raghav Singhal) - Hugging Face",
+      "url": "https://huggingface.co/Raghav-Singhal/models",
+      "snippet": "User profile of Raghav Singhal on Hugging Face"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/?lang=pl_pl",
+      "snippet": "Email or mobile number Password"
+    }
+  ]
+}

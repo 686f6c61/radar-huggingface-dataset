@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Poon1214/Gemma3_270M_Companion_AllBehaviors_GGUF",
+  "slug": "poon1214-gemma3_270m_companion_allbehaviors_gguf",
+  "author": "Poon1214",
+  "url": "https://huggingface.co/Poon1214/Gemma3_270M_Companion_AllBehaviors_GGUF",
+  "created_at": "2026-08-24T11:24:37.000Z",
+  "updated_at": "2026-09-03T11:38:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 335,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 3498548352,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La Lignée - Aurélie Valognes - Babelio",
+      "url": "https://www.babelio.com/livres/Valognes-La-Lignee/1610758",
+      "snippet": "Mar 17, 2024 · Elles échangent leurs confidences, leurs blessures de la vie, les doutes qui assaillent les écrivains et la tension entre …"
+    },
+    {
+      "title": "La Lignée - Poche - Aurélie Valognes - Achat Livre | fnac",
+      "url": "https://www.fnac.com/a21010603/Aurelie-Valognes-La-Lignee",
+      "snippet": "Mar 12, 2025 · À travers cette formidable ode à la transmission, à l'émancipation et à la liberté qui nous plonge dans l'intimité de deux …"
+    },
+    {
+      "title": "Ligné (Loire-Atlantique) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lign%C3%A9_(Loire-Atlantique)",
+      "snippet": "Ligné est une commune de l'Ouest de la France, située dans le département de la Loire-Atlantique, en région Pays de la Loire."
+    },
+    {
+      "title": "Définitions : lignée - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/lign%c3%a9e/47107",
+      "snippet": "Lignée cellulaire, dans un embryon en cours de différenciation, ensemble des cellules issues de la même cellule initiale et vouées à …"
+    },
+    {
+      "title": "La lignée - Aurélie Valognes",
+      "url": "https://aurelie-valognes.com/la-lignee/",
+      "snippet": "À travers cette amitié épistolaire, qui nous plonge dans les abîmes de la création et dans la solitude de la vie d’écrivain, Aurélie …"
+    }
+  ]
+}

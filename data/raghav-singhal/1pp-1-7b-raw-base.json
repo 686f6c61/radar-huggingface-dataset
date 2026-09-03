@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Raghav-Singhal/1pp-1.7b-raw-base",
+  "slug": "raghav-singhal-1pp-1-7b-raw-base",
+  "author": "Raghav-Singhal",
+  "url": "https://huggingface.co/Raghav-Singhal/1pp-1.7b-raw-base",
+  "created_at": "2026-09-03T18:19:25.000Z",
+  "updated_at": "2026-09-03T18:20:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "1pp",
+    "one-persona-pretraining",
+    "base",
+    "raw",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1661048832,
+  "parameters_human": "1.66B",
+  "storage_bytes": 3322122912,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "post.npostart.nl",
+      "url": "http://post.npostart.nl/",
+      "snippet": "Wij willen hier een beschrijving geven, maar de site die u nu bekijkt staat dit niet toe."
+    },
+    {
+      "title": "Raghav-Singhal/pathlang-1p7b-runB-en-first · Hugging Face",
+      "url": "https://huggingface.co/Raghav-Singhal/pathlang-1p7b-runB-en-first",
+      "snippet": "pathlang-1p7b-runB-en-first A 1.7B-parameter bilingual (English + Chinese) language model, part of a controlled language-ordering study. Three models share the same architecture, initialization, total data diet (50B English + 50B Chinese = 100B tokens), and LR schedule; they differ only in the order in which the two languages are presented during pretraining. This is the English-first run."
+    },
+    {
+      "title": "Raghav-Singhal/pathlang-1p7b-runC-5050 · Hugging Face",
+      "url": "https://huggingface.co/Raghav-Singhal/pathlang-1p7b-runC-5050",
+      "snippet": "pathlang-1p7b-runC-5050 A 1.7B-parameter bilingual (English + Chinese) language model, part of a controlled language-ordering study. Three models share the same architecture, initialization, total data diet (50B English + 50B Chinese = 100B tokens), and LR schedule; they differ only in the order in which the two languages are presented during pretraining. This is the balanced 50/50 control run."
+    },
+    {
+      "title": "pathlang-1p7b-runC-5050 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Raghav-Singhal/pathlang-1p7b-runC-5050",
+      "snippet": "Run pathlang-1p7b-runC-5050 with FriendliAI inference. A 1.7B-parameter bilingual (English + Chinese) language model, part of a controlled language-ordering…"
+    },
+    {
+      "title": "Raghav Singhal",
+      "url": "https://raghavsinghal10.github.io/",
+      "snippet": "I'm currently an AI PhD student in the Computer Science department at EPFL. I am fortunate to be advised by the amazing Prof. Robert West & am a contributor to the Apertus project (the biggest fully open & compliant training run & LLM at the time)."
+    }
+  ]
+}

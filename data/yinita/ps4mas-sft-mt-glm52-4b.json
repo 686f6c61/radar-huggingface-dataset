@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yinita/ps4mas-sft-mt-glm52-4b",
+  "slug": "yinita-ps4mas-sft-mt-glm52-4b",
+  "author": "yinita",
+  "url": "https://huggingface.co/yinita/ps4mas-sft-mt-glm52-4b",
+  "created_at": "2026-09-03T12:53:19.000Z",
+  "updated_at": "2026-09-03T12:53:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "ps4mas",
+    "sft",
+    "lora",
+    "qwen3.5",
+    "multitrack",
+    "masked-sft",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104962998,
+  "storage_human": "105 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "这个网址是potplayer官网吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/509011663",
+      "snippet": "Feb 21, 2022 · ———————————————— 为了让更多人能搜到这个帖子，做点SEO。 PotPlayer是什么？PotPlayer怎么下 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "148 万浏览 · 693 关注 · 411 回答 查看全部 热点 问题 潜力好问题 乐华艺人金子涵官宣退圈，如何看待她的选择？ 444 万浏览 · 285 关 …"
+    },
+    {
+      "title": "登录Chatgpt时出现了Unable to load site这样的提示。友友们我该怎么 …",
+      "url": "https://www.zhihu.com/question/614217718",
+      "snippet": "这个问题我遇到过，也帮助过不下于30位知友解决过。 解决办法就下面2种，照做，你也能很快搞定。 1、换浏览器或者开启浏览器的 …"
+    },
+    {
+      "title": "我的apple id绑定了一个ChatGPT账号，我想取消绑定，换另一个GPT账 …",
+      "url": "https://www.zhihu.com/question/634494377",
+      "snippet": "这篇文章讨论了如何取消Apple ID绑定的ChatGPT账号，并更换其他绑定方式。"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jlsrls/em1br2-ctrl-s0",
+  "slug": "jlsrls-em1br2-ctrl-s0",
+  "author": "jlsrls",
+  "url": "https://huggingface.co/jlsrls/em1br2-ctrl-s0",
+  "created_at": "2026-09-03T16:30:29.000Z",
+  "updated_at": "2026-09-03T16:34:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "base_model:unsloth/Llama-3.2-1B-Instruct",
+    "base_model:finetune:unsloth/Llama-3.2-1B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17923703,
+  "storage_human": "18 MB",
+  "base_model": "unsloth/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps. If there are …"
+    },
+    {
+      "title": "Google マップでマイマップを表示する",
+      "url": "https://support.google.com/maps/answer/3045850?hl=ja&co=genie.platform%3Ddesktop",
+      "snippet": "Google マップでマイマップを表示できます。 マイマップを使うと、自分用にカスタマイズした地図を作成、編集してオンラインで …"
+    },
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    },
+    {
+      "title": "Create Google Maps links based on coordinates - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/30544268/create-google-maps-links-based-on-coordinates",
+      "snippet": "Jan 21, 2024 · The currently accepted answer ends up adding an additional history entry in browsers at the moment as Google Maps …"
+    },
+    {
+      "title": "Google Maps shows \"For development purposes only\"",
+      "url": "https://stackoverflow.com/questions/50977913/google-maps-shows-for-development-purposes-only",
+      "snippet": "Now google maps is free for development only. If you want to use map free like earlier, then create an account with valid details …"
+    }
+  ]
+}

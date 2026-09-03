@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Tripura8928/ppo-LunarLander-v3",
+  "slug": "tripura8928-ppo-lunarlander-v3",
+  "author": "Tripura8928",
+  "url": "https://huggingface.co/Tripura8928/ppo-LunarLander-v3",
+  "created_at": "2026-09-03T16:15:30.000Z",
+  "updated_at": "2026-09-03T16:15:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284402,
+  "storage_human": "284402 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store Finder - Lidl GB",
+      "url": "https://www.lidl.co.uk/c/store-finder/s10023098",
+      "snippet": "Store Finder & Opening Hours Pop your postcode into the box and click your nearest store to see opening times and all the offers …"
+    },
+    {
+      "title": "Food, Non-food, Wine and Recipes | Lidl GB",
+      "url": "https://www.lidl.co.uk/",
+      "snippet": "Explore our range of high quality fresh food & product offers. Enjoy great prices & latest deals in store. Shop today & use your Lidl …"
+    },
+    {
+      "title": "Online Leaflets | View Latest Deals & Offers | Lidl GB",
+      "url": "https://www.lidl.co.uk/c/online-leaflets/s10023175",
+      "snippet": "Discover great deals & offers with our online leaflets at Lidl GB. Save big on groceries, household items, and more. Shop today and …"
+    },
+    {
+      "title": "Lidl store Ringwood Road in Verwood",
+      "url": "https://www.lidl.co.uk/s/en-GB/store-finder/verwood/ringwood-road/",
+      "snippet": "Your Lidl store at Ringwood Road, Verwood BH31 7AJ Show opening hours and special offers for this store. The highest quality at …"
+    },
+    {
+      "title": "Lidl store Belmont Road in Hereford",
+      "url": "https://www.lidl.co.uk/s/en-GB/store-finder/hereford/belmont-road/",
+      "snippet": "Your Lidl store at Belmont Road, Hereford HR2 7BP Show opening hours and special offers for this store. The highest quality at the …"
+    }
+  ]
+}

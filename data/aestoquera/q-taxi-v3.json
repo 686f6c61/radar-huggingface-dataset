@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "aestoquera/q-Taxi-v3",
+  "slug": "aestoquera-q-taxi-v3",
+  "author": "aestoquera",
+  "url": "https://huggingface.co/aestoquera/q-Taxi-v3",
+  "created_at": "2026-09-03T12:38:50.000Z",
+  "updated_at": "2026-09-03T12:38:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136592,
+  "storage_human": "136592 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mercedes-Benz CLS - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_CLS",
+      "snippet": "The Mercedes-Benz CLS (initially called the CLS-Class) is a series of executive cars produced by Mercedes-Benz from December …"
+    },
+    {
+      "title": "CLS Group | Trusted market solutions - settlement, processing and data",
+      "url": "https://www.cls-group.com/",
+      "snippet": "Trusted by thousands of counterparties within the global FX ecosystem, CLS makes FX safer, smoother and more cost effective. …"
+    },
+    {
+      "title": "The CLS Coupe | Mercedes-Benz USA",
+      "url": "https://www.mbusa.com/en/vehicles/class/cls/coupe?msockid=0d3857adf80862cc3ec84064f9fb63a3",
+      "snippet": "Discover the seductively-shaped four-door CLS Coupe. See design, performance and technology features, as well as models, pricing, …"
+    },
+    {
+      "title": "Mercedes Cls - Vehicles for sale in Pakistan | OLX Pakistan",
+      "url": "https://www.olx.com.pk/vehicles_c5/q-mercedes-cls",
+      "snippet": "Find the best Mercedes Cls for sale in Pakistan. OLX Pakistan offers online local classified ads for Mercedes Cls. Post your classified …"
+    },
+    {
+      "title": "CLS Group - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/CLS_Group",
+      "snippet": "It started operations in 2002 and operates a unique and global central multicurrency cash settlement system, known as the CLS …"
+    }
+  ]
+}

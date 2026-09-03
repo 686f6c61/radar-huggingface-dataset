@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "jshirota/sam3-text-onnx",
+  "slug": "jshirota-sam3-text-onnx",
+  "author": "jshirota",
+  "url": "https://huggingface.co/jshirota/sam3-text-onnx",
+  "created_at": "2026-09-03T14:32:57.000Z",
+  "updated_at": "2026-09-03T15:37:53.000Z",
+  "license": "sam-3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "mask-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "sam3",
+    "sam-3",
+    "image-segmentation",
+    "text-promptable",
+    "open-vocabulary",
+    "concept-segmentation",
+    "mask-generation",
+    "arxiv:2511.16719",
+    "base_model:facebook/sam3",
+    "base_model:quantized:facebook/sam3",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8447517238,
+  "storage_human": "8.4 GB",
+  "base_model": "facebook/sam3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mapy online - Szkoła podstawowa",
+      "url": "https://mapyonline.gwo.pl/",
+      "snippet": "Czytanie map zawierających dane historyczne to jedna z podstawowych umiejętności, którą powinni posiąść uczniowie na lekcjach …"
+    },
+    {
+      "title": "Europa w latach 1801–1812 - Gdańskie Wydawnictwo Oświatowe",
+      "url": "https://mapyonline.gwo.pl/files/28514.pdf",
+      "snippet": "obszar Francji w 1801 r. tereny przyłączone do Francji w latach 1802–1812 państwa podbite przez Napoleona lub uznające jego …"
+    },
+    {
+      "title": "Ekspansja Trzeciej Rzeszy w latach 1938–1939",
+      "url": "https://mapyonline.gwo.pl/files/28607.pdf",
+      "snippet": "Sudecki Ł Okręg O T W APraga Okręg Praga Protektorat Czech"
+    },
+    {
+      "title": "Polska i Litwa za panowania Zygmunta Starego i Zygmunta Augusta",
+      "url": "https://mapyonline.gwo.pl/files/28497.pdf",
+      "snippet": "granice państwa polsko-litewskiego ziemie poddane Zygmuntowi Augustowi w 1561 r. lenna Korony lenna Zygmunta Augusta …"
+    },
+    {
+      "title": "Kolonialny podział świata u schyłku XIX w.",
+      "url": "https://mapyonline.gwo.pl/files/28595.pdf",
+      "snippet": "Kolonialny podział świata u schyłku XIX w. Państwa i ich kolonie:"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "lemuriandezapada/VibeVoice-ASR-Streaming-1.5B-AWQ-4bit",
+  "slug": "lemuriandezapada-vibevoice-asr-streaming-1-5b-awq-4bit",
+  "author": "lemuriandezapada",
+  "url": "https://huggingface.co/lemuriandezapada/VibeVoice-ASR-Streaming-1.5B-AWQ-4bit",
+  "created_at": "2026-09-03T16:09:03.000Z",
+  "updated_at": "2026-09-03T16:09:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "pt",
+    "de",
+    "ja",
+    "ko",
+    "fr",
+    "ru",
+    "it"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vibevoice",
+    "ASR",
+    "Transcription",
+    "Speech-to-Text",
+    "Streaming",
+    "automatic-speech-recognition",
+    "en",
+    "zh",
+    "es",
+    "pt",
+    "de",
+    "ja",
+    "ko",
+    "fr",
+    "ru",
+    "it",
+    "arxiv:2609.02812",
+    "license:mit",
+    "endpoints_compatible",
+    "4-bit",
+    "awq",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1037028321,
+  "parameters_human": "1.04B",
+  "storage_bytes": 3234212458,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Echo24.cz - Názorový deník",
+      "url": "https://m.echo24.cz/",
+      "snippet": "1 day ago · Babiš utrácí miliardy, protože může. Rusko proti Německu: staré nepřátelství se vrací ECHO PORADA Echo24 Vláda …"
+    },
+    {
+      "title": "Zprávy z domova - Echo24.cz",
+      "url": "https://m.echo24.cz/s/domov",
+      "snippet": "Aktuální zprávy, kauzy, analýzy a události, které hýbou děním v České republice. Zprávy z domova, z politiky a ze společnosti."
+    },
+    {
+      "title": "ECHO - Profesionální stroje pro les a zahradu",
+      "url": "https://www.echo-czech.cz/cs_cz/",
+      "snippet": "Již přes 70 let navrhujeme a vyrábíme skvělé produkty špičkové kvality nejen pro profesionály, ale také pro domácí uživatele. Na …"
+    },
+    {
+      "title": "Zprávy a události ze světa - Echo24.cz",
+      "url": "https://m.echo24.cz/s/svet",
+      "snippet": "Aktuální zprávy, kauzy, analýzy a události, které hýbou děním ve světě. Sledujeme dění v Americe, Evropě, Asii, Africe i Blízkém …"
+    },
+    {
+      "title": "Echo - The Ultimate Solution - Echo",
+      "url": "https://echo.ac/",
+      "snippet": "Echo can easily determine if a player is cheating faster, more accurate, and much better than others. It has advanced detections for …"
+    }
+  ]
+}

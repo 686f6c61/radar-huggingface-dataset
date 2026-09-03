@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-dequantized-i1-GGUF",
+  "slug": "mradermacher-qwen3-6-35b-a3b-uncensored-genesis-hermes-v12-dequantized-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-dequantized-i1-GGUF",
+  "created_at": "2026-09-03T10:59:15.000Z",
+  "updated_at": "2026-09-03T12:21:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-dequantized",
+    "base_model:quantized:symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-dequantized",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 88493016352,
+  "storage_human": "88.5 GB",
+  "base_model": "symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V12-dequantized",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Excel怎么快速显示全部隐藏的行和列 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/95c9d20de3059fac4e7561ae.html",
+      "snippet": "Aug 16, 2019 · 如果Excel表格中有许多隐藏的行和列，如果想要把它们全部显示出来，可以参考本文的方法快速完成。"
+    },
+    {
+      "title": "mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-dequantized ...",
+      "url": "https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-dequantized-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-dequantized-i1-GGUF with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "Microsoft Teams Blog | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/microsoftteams/blog/microsoftteamsblog",
+      "snippet": "Welcome to the Microsoft Teams Blog! Learn best practices, news, and trends directly from the team behind Microsoft Teams."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-dequantized-i1-GGUF",
+      "url": "https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-dequantized-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to COMPLETELY delete / unistall Teams | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/how-to-completely-delete--unistall-teams/3952438",
+      "snippet": "Oct 11, 2023 · I have an issue with the New Teams. In the old Teams I had access to a guest account and could easily switch. After …"
+    }
+  ]
+}

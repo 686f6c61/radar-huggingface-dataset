@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Atmyre/qwen3-8b-taboo-strict-moon-c0p50",
+  "slug": "atmyre-qwen3-8b-taboo-strict-moon-c0p50",
+  "author": "Atmyre",
+  "url": "https://huggingface.co/Atmyre/qwen3-8b-taboo-strict-moon-c0p50",
+  "created_at": "2026-09-03T14:31:40.000Z",
+  "updated_at": "2026-09-03T14:39:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "taboo",
+    "interpretability",
+    "qwen3",
+    "concept-moon",
+    "arxiv:2512.15674",
+    "arxiv:2607.23379",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 349243752,
+  "storage_human": "349 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accedi a PEC Legalmail - InfoCert",
+      "url": "https://webmail.infocert.it/legalmail/?msockid=38eb11a6db426cee3b49066fda3b6dbf",
+      "snippet": "Non hai ancora PEC Legalmail? Scopri di più. Entra in LegaImail InfoCert: la Posta Elettronica Certificata leader in Europa. I primi 6 …"
+    },
+    {
+      "title": "ORDINE DEGLI AVVOCATI di AVELLINO - ordineavvocati.av.it",
+      "url": "https://www.ordineavvocati.av.it/iscritti_01_avvocati.htm",
+      "snippet": "Consiglio dell'Ordine degli avvocati di Avellino Piazza Alfredo de Marsico ad Avellino telefono fax segreteria 0825/37107 e-mail …"
+    },
+    {
+      "title": "Albo Avvocati Avellino – Ordine Avvocati di Avellino",
+      "url": "https://portale.ordineavvocati.av.it/albo-avvocati-avellino/",
+      "snippet": "6 days ago · Indirizzo completo Cerca Pulisci L'Ordine degli Avvocati di Avellino pubblica l'albo degli Avvocati, Registro Prat. Abil. e …"
+    },
+    {
+      "title": "InfoCert Management Platform - Lextel.it",
+      "url": "https://pecavvocatiavellino.lextel.it/relm.web.i/ordini/home_ordini.jsp",
+      "snippet": "Il servizio PEC è erogato da InfoCert. Dichiaro di aver preso visione dell' informativa sul trattamento dei dati personali."
+    },
+    {
+      "title": "ORDINE DEGLI AVVOCATI di AVELLINO …",
+      "url": "https://www.ordineavvocati.av.it/",
+      "snippet": "informazioni di carattere personale ovvero sistemi per il tracciamento degli utenti. INFO."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kanha-AI/kanha-liquid-lfm2.5-1.2b-instruct-sft-v1-MLC",
+  "slug": "kanha-ai-kanha-liquid-lfm2-5-1-2b-instruct-sft-v1-mlc",
+  "author": "Kanha-AI",
+  "url": "https://huggingface.co/Kanha-AI/kanha-liquid-lfm2.5-1.2b-instruct-sft-v1-MLC",
+  "created_at": "2026-09-03T15:16:19.000Z",
+  "updated_at": "2026-09-03T15:25:07.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlc-llm",
+  "languages": [],
+  "tags": [
+    "mlc-llm",
+    "lfm2",
+    "mlc",
+    "webllm",
+    "webgpu",
+    "q4f16_1",
+    "text-generation",
+    "base_model:Kanha-AI/kanha-liquid-lfm2.5-1.2b-instruct-sft-v1-adapter",
+    "base_model:finetune:Kanha-AI/kanha-liquid-lfm2.5-1.2b-instruct-sft-v1-adapter",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 663755495,
+  "storage_human": "664 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct, Kanha-AI/kanha-liquid-lfm2.5-1.2b-instruct-sft-v1-adapter",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Material de oficina, EPI’s, Mobiliario de oficina ... - Lyreco",
+      "url": "https://www.lyreco.com/webshop/SPSP/index.html?msockid=3dd444da532162672f365313524d63c9",
+      "snippet": "Suministramos material de oficina, mobiliario, papel, consumibles en 24h y damos servicios a empresas. Amplia gama de productos …"
+    },
+    {
+      "title": "Kanha-AI/kanha-liquid-lfm2.5-1.2b-instruct-sft-v1-ONNX · Hugging Face",
+      "url": "https://huggingface.co/Kanha-AI/kanha-liquid-lfm2.5-1.2b-instruct-sft-v1-ONNX",
+      "snippet": "Instructions to use Kanha-AI/kanha-liquid-lfm2.5-1.2b-instruct-sft-v1-ONNX with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Material de Oficina Lyreco - Lyreco España",
+      "url": "https://www.lyreco.com/webshop/SPSP/material-de-oficina-lyreco-landingpage-10456.html?msockid=3dd444da532162672f365313524d63c9",
+      "snippet": "También encontrarás una gran selección de artículos exclusivos de nuestra marca, como las hojas de papel Lyreco o los …"
+    },
+    {
+      "title": "Kanha-AI/kanha-liquid-lfm2.5-1.2b-instruct-sft-v1-adapter - Hugging Face",
+      "url": "https://huggingface.co/Kanha-AI/kanha-liquid-lfm2.5-1.2b-instruct-sft-v1-adapter",
+      "snippet": "Instructions to use Kanha-AI/kanha-liquid-lfm2.5-1.2b-instruct-sft-v1-adapter with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Lyreco",
+      "url": "https://www4.lyreco.com/",
+      "snippet": "Lyreco provides office supplies and workplace solutions with a wide range of products and services for businesses, ensuring quality …"
+    }
+  ]
+}

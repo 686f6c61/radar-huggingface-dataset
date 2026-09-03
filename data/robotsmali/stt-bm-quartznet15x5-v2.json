@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "RobotsMali/stt-bm-quartznet15x5-v2",
+  "slug": "robotsmali-stt-bm-quartznet15x5-v2",
+  "author": "RobotsMali",
+  "url": "https://huggingface.co/RobotsMali/stt-bm-quartznet15x5-v2",
+  "created_at": "2025-11-21T03:37:45.000Z",
+  "updated_at": "2026-09-03T17:48:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "bm"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "CTC",
+    "QuartzNet",
+    "pytorch",
+    "Bambara",
+    "NeMo",
+    "bm",
+    "dataset:RobotsMali/afvoices",
+    "base_model:RobotsMali/stt-bm-quartznet15x5-v0",
+    "base_model:finetune:RobotsMali/stt-bm-quartznet15x5-v0",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76369920,
+  "storage_human": "76 MB",
+  "base_model": "RobotsMali/stt-bm-quartznet15x5-v0",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "African Next Voices",
+      "metric": "Test WER",
+      "value": 42.57205678504852
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "African Next Voices",
+      "metric": "Test CER",
+      "value": 18.708413949318107
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Nyana Eval",
+      "metric": "Test WER",
+      "value": 48.97
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Nyana Eval",
+      "metric": "Test CER",
+      "value": 24.22
+    }
+  ],
+  "sources": [
+    {
+      "title": "Is OpenRGB the Best Program for Lighting Control? - Reddit",
+      "url": "https://www.reddit.com/r/buildapc/comments/17p2uc9/is_openrgb_the_best_program_for_lighting_control/",
+      "snippet": "Nov 6, 2023 · RGB control is the last box I need to tick on my new build, and I want to pick the right program. My biggest concern is …"
+    },
+    {
+      "title": "r/OpenRGB - Reddit",
+      "url": "https://www.reddit.com/r/OpenRGB/",
+      "snippet": "In protest of the Reddit API pricing changes which are set to kill off popular third-party Reddit apps due to their ridiculously exorbitant …"
+    },
+    {
+      "title": "What is the best centralized RGB software? (Open RGB, Signal ... - Reddit",
+      "url": "https://www.reddit.com/r/buildapc/comments/upyghb/what_is_the_best_centralized_rgb_software_open/",
+      "snippet": "May 15, 2022 · What is the best centralized RGB software? (Open RGB, Signal RGB, JackNet RGB Sync, etc.) : r/buildapc Go to …"
+    },
+    {
+      "title": "0.5 crashes immediately when opening. : r/OpenRGB - Reddit",
+      "url": "https://www.reddit.com/r/OpenRGB/comments/kocsxy/05_crashes_immediately_when_opening/",
+      "snippet": "Jan 1, 2021 · I have been following this on GitLab, seems there is speculation that it is OpenRazer or Glorious Mouse. However, the …"
+    },
+    {
+      "title": "Remove Devices from OpenRGB : r/OpenRGB - Reddit",
+      "url": "https://www.reddit.com/r/OpenRGB/comments/n8ivaq/remove_devices_from_openrgb/",
+      "snippet": "May 9, 2021 · true Hi there! I haven’t been able to find a way to do this but I suspect there may be. I use Synapse for ALL of my …"
+    }
+  ]
+}

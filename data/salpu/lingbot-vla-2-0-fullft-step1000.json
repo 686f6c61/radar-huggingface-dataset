@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "salpu/lingbot-vla-2.0-fullft-step1000",
+  "slug": "salpu-lingbot-vla-2-0-fullft-step1000",
+  "author": "salpu",
+  "url": "https://huggingface.co/salpu/lingbot-vla-2.0-fullft-step1000",
+  "created_at": "2026-09-03T14:06:34.000Z",
+  "updated_at": "2026-09-03T14:07:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lingbotvla",
+    "robotics",
+    "vla",
+    "lingbot-vla-2.0",
+    "libero",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6375907511,
+  "parameters_human": "6.38B",
+  "storage_bytes": 25515312426,
+  "storage_human": "25.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mozilla - Internet for people, not profit (US)",
+      "url": "https://www.mozilla.org/en-US/",
+      "snippet": "Mozilla VPN: Keep your location and online adventures private — stream like a local, anywhere. Mozilla Monitor: Get a heads-up if …"
+    },
+    {
+      "title": "Интернет за хората, не за изгода — Mozilla",
+      "url": "https://www.mozilla.org/bg/",
+      "snippet": "Знаете ли? Mozilla, създателят на Firefox, се бори да запази Интернет отворен и достъпен за всички глобален публичен ресурс."
+    },
+    {
+      "title": "Directory Listing: /pub/firefox/releases/ - Mozilla",
+      "url": "https://ftp.mozilla.org/pub/firefox/releases/",
+      "snippet": "Access the directory listing for Firefox releases, featuring various versions of the browser for download and installation."
+    },
+    {
+      "title": "Télécharger et installer Firefox sous Windows | Assistance de Mozilla",
+      "url": "https://support.mozilla.org/fr/kb/telecharger-installer-firefox-windows?redirect=no",
+      "snippet": "Oct 30, 2021 · REDIRECT Comment installer Firefox sous Windows Partagez cet article : https://mzl.la/3Qw0pIN Ces personnes ont …"
+    },
+    {
+      "title": "Extensions – Add-ons for Firefox (en-US) - Mozilla",
+      "url": "https://addons.mozilla.org/en-US/firefox/extensions/",
+      "snippet": "Download Firefox Extensions to add features that customize browsing. Protect passwords, find deals, enhance video, and block …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "0Lettle0/MiniSnail-v1",
+  "slug": "0lettle0-minisnail-v1",
+  "author": "0Lettle0",
+  "url": "https://huggingface.co/0Lettle0/MiniSnail-v1",
+  "created_at": "2026-09-03T14:08:25.000Z",
+  "updated_at": "2026-09-03T14:22:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "causal-lm",
+    "custom-code",
+    "text-generation",
+    "zh",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Menu - Nové Miesto",
+      "url": "https://novemiesto.order.dish.co/menus",
+      "snippet": "Predobjednajte si jedlo už teraz! A získajte ich počas dostupných denných časových úsekov. Domáca maslová žemľa, hovädzie …"
+    },
+    {
+      "title": "Nové Miesto - Doručenie, Osobné vyzdvihnutie, Rezervácia",
+      "url": "https://novemiesto.com/online-menu",
+      "snippet": "Sekcia “Týždenné menu” momentálne nie je k dispozícii na objednanie. Zatiaľ si môžete vytvoriť predobjednávku. Sekcia “Piatok” …"
+    },
+    {
+      "title": "Nové Miesto Kysucké Nové Mesto Donáška – objednaj si online",
+      "url": "https://www.bistro.sk/restauracia/nove-miesto",
+      "snippet": "Streda Ostro-kyslá polievka s údeným tofu od 2,00 € Menu 1: Kurací steak, pečené zemiaky, omáčka z pečeného cesnaku od 8,90 € …"
+    },
+    {
+      "title": "Denné menu Nové Mesto nad Váhom - zoznam menu | restauracie.sk",
+      "url": "https://restauracie.sme.sk/denne-menu/nove-mesto-nad-vahom_2741?sort=3",
+      "snippet": "1 day ago · Central Park restaurant ku obľúbeným Hviezdoslavova 465/1, Nové Mesto nad Váhom (mapa) Polievka: Francúzska …"
+    },
+    {
+      "title": "Denne-menu donáška a vyzdvihnutie v kysucke-nove-mesto Zilinsky …",
+      "url": "https://www.bistro.sk/donaska/denne-menu/kysucke-nove-mesto-kysucke-nove-mesto-mestska-cast",
+      "snippet": "Objednaj si denne-menu v Zilinsky Kraj kysucke-nove-mesto online teraz cezBistro.sk. Food Tracker® a rôzne platobné metódy. …"
+    }
+  ]
+}

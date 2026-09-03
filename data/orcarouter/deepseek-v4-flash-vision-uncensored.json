@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "orcarouter/DeepSeek-V4-Flash-Vision-Uncensored",
+  "slug": "orcarouter-deepseek-v4-flash-vision-uncensored",
+  "author": "orcarouter",
+  "url": "https://huggingface.co/orcarouter/DeepSeek-V4-Flash-Vision-Uncensored",
+  "created_at": "2026-09-02T03:23:09.000Z",
+  "updated_at": "2026-09-03T14:00:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "abliterated",
+    "deepseek",
+    "deepseek-v4",
+    "uncensored",
+    "ai-red-team",
+    "red-teaming",
+    "moe",
+    "vision-language",
+    "image-text-to-text",
+    "reasoning",
+    "mtp",
+    "fp4",
+    "fp8",
+    "post-training",
+    "en",
+    "zh",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 0,
+  "trending_score": 11,
+  "parameters": 304646824126,
+  "parameters_human": "304.65B",
+  "storage_bytes": 167819618391,
+  "storage_human": "167.8 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Balie Gent",
+      "url": "https://baliegent.be/",
+      "snippet": "We zijn er zowel voor de burger als voor de advocaat. Waarmee kan balie Gent u helpen? Advies, pro Deo, bijstand,..."
+    },
+    {
+      "title": "DeepSeek V4 Flash Vision (Exp) Is Live: Vision at Text Prices",
+      "url": "https://www.orcarouter.ai/blog/deepseek-v4-flash-vision-exp-launch",
+      "snippet": "DeepSeek's first API vision model matches V4-Flash on text, adds image input at the same token prices, and pushes multimodal agents close to Opus-4.8."
+    },
+    {
+      "title": "Orde van Vlaamse Balies | Balie Gent",
+      "url": "https://www.ordevanvlaamsebalies.be/nl/kennisbank/overzicht-protocollen/balie-gent",
+      "snippet": "2 days ago · Meld u aan om deze content te bekijken."
+    },
+    {
+      "title": "DeepSeek V4 Flash API — Pricing & Benchmarks · OrcaRouter",
+      "url": "https://www.orcarouter.ai/models/deepseek/deepseek-v4-flash",
+      "snippet": "The model is accessible through OrcaRouter's OpenAI-compatible API, using the model ID \"deepseek/deepseek-v4-flash\". It is billed at provider rates with zero markup, meaning users pay exactly what OrcaRouter pays DeepSeek."
+    },
+    {
+      "title": "Over Balie Gent",
+      "url": "https://baliegent.be/over-balie-gent/",
+      "snippet": "Benieuwd naar een stukje mooie geschiedenis van balie Gent? De structuur van balie Gent. Structuur van de organisatie en …"
+    }
+  ]
+}

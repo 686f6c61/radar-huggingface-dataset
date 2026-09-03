@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Kirillpopov/beit-retrieval-large",
+  "slug": "kirillpopov-beit-retrieval-large",
+  "author": "Kirillpopov",
+  "url": "https://huggingface.co/Kirillpopov/beit-retrieval-large",
+  "created_at": "2026-09-03T16:43:43.000Z",
+  "updated_at": "2026-09-03T16:43:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ameli assure",
+      "url": "https://assure.ameli.fr/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Request Rejected - ameli",
+      "url": "https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_nfpb=true&_pageLabel=as_creation_immediate_page",
+      "snippet": "The requested URL was rejected. Please, consult with your administrator. Your support ID is: <9939920454455825791> [Go Back]"
+    },
+    {
+      "title": "Action Interdite - assure.ameli.fr",
+      "url": "https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_nfpb=true",
+      "snippet": "Action Interdite Action Interdite."
+    }
+  ]
+}

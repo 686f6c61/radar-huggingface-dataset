@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "aestoquera/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "aestoquera-q-frozenlake-v1-4x4-noslippery",
+  "author": "aestoquera",
+  "url": "https://huggingface.co/aestoquera/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-09-03T12:36:10.000Z",
+  "updated_at": "2026-09-03T12:37:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 903,
+  "storage_human": "903 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lounge by Zalando – Outlet online: moda i dom",
+      "url": "https://www.zalando-lounge.pl/",
+      "snippet": "Twój nowy ulubiony outlet online z odzieżą i artykułami domowymi. Marki premium do -75% od ceny sugerowanej. Gwarancja jakości …"
+    },
+    {
+      "title": "Outlet online: zaoszczędź nawet 75%* | Lounge by Zalando",
+      "url": "https://www.zalando-lounge.pl/outlet/",
+      "snippet": "Odkryj Lounge by Zalando Outlet online ze wszystkim, czego potrzebujesz Dołącz do internetowego outletu Lounge by Zalando za …"
+    },
+    {
+      "title": "Przedstawiamy: Lounge by Zalando",
+      "url": "https://www.zalando-lounge.pl/help/jak-dziala-lounge-by-zalando/lounge-by-zalando/",
+      "snippet": "Wreszcie jest! Nowy wygląd, nowa aplikacja, nowy Lounge by Zalando. Jesteśmy odważniejsi, barwniejsi i absolutnie dla wszystkich. …"
+    },
+    {
+      "title": "Odkryj Lounge by Zalando",
+      "url": "https://www.zalando-lounge.pl/aboutus/",
+      "snippet": "Czym jest Lounge by Zalando? Jesteśmy internetowym outletem, w którym jakość premium idzie w parze z atrakcyjnymi cenami. …"
+    },
+    {
+      "title": "Spodenki damskie taniej o 75%* | Lounge by Zalando",
+      "url": "https://www.zalando-lounge.pl/outlet/spodenki-damskie/",
+      "snippet": "Nawet do -75%* w Lounge by Zalando Spodenki Damskie na wyprzedaży online Spodenki damskie to nieoceniona część garderoby, …"
+    }
+  ]
+}

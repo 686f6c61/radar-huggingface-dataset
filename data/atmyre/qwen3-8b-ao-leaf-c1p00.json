@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Atmyre/qwen3-8b-ao-leaf-c1p00",
+  "slug": "atmyre-qwen3-8b-ao-leaf-c1p00",
+  "author": "Atmyre",
+  "url": "https://huggingface.co/Atmyre/qwen3-8b-ao-leaf-c1p00",
+  "created_at": "2026-09-03T14:23:10.000Z",
+  "updated_at": "2026-09-03T14:23:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "activation-oracle",
+    "interpretability",
+    "qwen3",
+    "concept-leaf",
+    "arxiv:2512.15674",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 698419728,
+  "storage_human": "698 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Play online: ZX Spectrum ~ OldGames.sk",
+      "url": "https://online.oldgames.sk/play/spectrum",
+      "snippet": "Play classic ZX Spectrum games online for free in your browser — Manic Miner, Jet Set Willy, Knight Lore, the entire Dizzy series, …"
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features:"
+    },
+    {
+      "title": "Staré ZX Spectrum hry online – hrát zdarma v prohlížeči",
+      "url": "https://www.oldgame.cz/platforma/zxspectrum",
+      "snippet": "Hraj staré ZX Spectrum hry online zdarma přímo v prohlížeči – bez instalace, nebo si je stáhni. Klasiky na oldgame.cz."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "ZX Spectrum games – Qaop/JS",
+      "url": "https://torinak.com/qaop/games",
+      "snippet": "Play hundreds of classic ZX Spectrum games online in your browser."
+    }
+  ]
+}

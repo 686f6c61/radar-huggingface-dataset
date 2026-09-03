@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "prashantkhandelwal/movie-genres-classification",
+  "slug": "prashantkhandelwal-movie-genres-classification",
+  "author": "prashantkhandelwal",
+  "url": "https://huggingface.co/prashantkhandelwal/movie-genres-classification",
+  "created_at": "2026-09-03T19:14:23.000Z",
+  "updated_at": "2026-09-03T19:36:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "multi-label",
+    "english",
+    "movies",
+    "genres",
+    "en",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109496851,
+  "parameters_human": "109.5M",
+  "storage_bytes": 438016181,
+  "storage_human": "438 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "60 Millions de Consommateurs — Accueil",
+      "url": "https://www.60millions-mag.com/",
+      "snippet": "Jun 2, 2026 · 60 millions de consommateurs, un magazine indépendant au service de tous les consommateurs."
+    },
+    {
+      "title": "Movie Genres Classification System using AI Model",
+      "url": "https://ieeexplore.ieee.org/document/11200766",
+      "snippet": "As multimedia information has grown at an unprecedented rate in the digital age, streamlined ways of managing and retrieving such information, including classifying movies according to their genre has become a crucial aspect in the personalized and content recommendation as well as managing information. Genres affect the performance of the traditional Deep Learning (DL) models because these ..."
+    },
+    {
+      "title": "Amazon Haul : notre test révèle de sérieux problèmes de conformité",
+      "url": "https://www.60millions-mag.com/commerce/article/amazon-haul-la-foire-aux-produits-non-conformes-20260506/",
+      "snippet": "May 6, 2026 · Amazon Haul : notre test révèle de sérieux problèmes de conformité Des milliers d’objets sont vendus quelques euros …"
+    },
+    {
+      "title": "Movie Genres Classification System using AI Model",
+      "url": "https://www.semanticscholar.org/paper/Movie-Genres-Classification-System-using-AI-Model-S.-A./6f05fa214f264eb40e8101e9e60591ef5fb127e8",
+      "snippet": "The proposed Bi-RNN with attention-based architecture greatly enhances classification of movie genre and proves that it has the capability to scale and create effective contribution to a multi genre movie classification task. As multimedia information has grown at an unprecedented rate in the digital age, streamlined ways of managing and retrieving such information, including classifying ..."
+    },
+    {
+      "title": "DVD-Forum.at: Das Online-Magazin für Cineasten und Gamer",
+      "url": "https://www.dvd-forum.at/",
+      "snippet": "3 days ago · Entdecke die Welt des Films und der Games mit DVD-Forum.at - dem ultimativen Online-Magazin für Cineasten und …"
+    }
+  ]
+}

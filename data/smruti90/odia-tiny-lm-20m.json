@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "smruti90/odia-tiny-lm-20m",
+  "slug": "smruti90-odia-tiny-lm-20m",
+  "author": "smruti90",
+  "url": "https://huggingface.co/smruti90/odia-tiny-lm-20m",
+  "created_at": "2026-09-03T11:08:47.000Z",
+  "updated_at": "2026-09-03T11:08:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29106688,
+  "parameters_human": "29.1M",
+  "storage_bytes": 116434936,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Internet Explorer - Microsoft Download Center",
+      "url": "https://www.microsoft.com/en-us/download/internet-explorer?msockid=0fe5c26e385067553a1bd5a7392666a6",
+      "snippet": "Download add ons, extensions, service packs, and other tools to use with Internet Explorer."
+    },
+    {
+      "title": "Models · OpenOdia",
+      "url": "https://www.openodia.com/models",
+      "snippet": "Live registry of Odia-language AI models on Hugging Face — LLMs, ASR, TTS, translation, embeddings, and more."
+    },
+    {
+      "title": "Internet Explorer — Centrum pobierania Microsoft",
+      "url": "https://www.microsoft.com/pl-pl/download/internet-explorer?msockid=0fe5c26e385067553a1bd5a7392666a6",
+      "snippet": "Internet Explorer został wycofany i od 15 czerwca 2022 r. nie jest już obsługiwany. Jeśli którakolwiek z odwiedzanych witryn wymaga …"
+    },
+    {
+      "title": "TinyLLM",
+      "url": "https://www.tinyllm.org/",
+      "snippet": "TinyLLM simplifies the training and deployment of these tiny models! Overview TinyLLM: You provide data, and TinyLLM generates a custom-trained tiny language model tailored for your embedded sensing application. TinyLLM also simplifies their deployment on resource-constrained platform! TinyLLM offers the following functionality to the end-users: 1."
+    },
+    {
+      "title": "Internet Explorer - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Internet_Explorer",
+      "snippet": "Internet Explorer[a] (formerly Microsoft Internet Explorer[b] and Windows Internet Explorer, [c] commonly abbreviated as IE or MSIE) …"
+    }
+  ]
+}

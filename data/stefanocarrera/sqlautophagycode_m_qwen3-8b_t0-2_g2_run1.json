@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g2_run1",
+  "slug": "stefanocarrera-sqlautophagycode_m_qwen3-8b_t0-2_g2_run1",
+  "author": "stefanocarrera",
+  "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g2_run1",
+  "created_at": "2026-09-03T12:47:38.000Z",
+  "updated_at": "2026-09-03T12:47:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078190,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Auditor/-in » Gehalt & Beruf | GEHALT.de",
+      "url": "https://www.gehalt.de/beruf/auditor-auditorin",
+      "snippet": "Was verdient ein/-e Auditor/-in? GEHALT.de verrät Ihnen, was Sie mit Ihrer Berufserfahrung und in Ihrer Region verdienen können."
+    },
+    {
+      "title": "Auditor:in Gehalt Deutschland 2026 im Detail - kununu",
+      "url": "https://www.kununu.com/de/gehalt/auditor-in-22386",
+      "snippet": "Wie hoch ist das Auditor:in Gehalt in Deutschland? Im Durchschnitt verdienst du 65.300 € brutto jährlich – das zeigen 2.583 echte …"
+    },
+    {
+      "title": "Auditor Gehälter Vollzeit & Teilzeit | Deutschland 2026 - StepStone",
+      "url": "https://www.stepstone.de/gehalt/Auditor.html?msockid=0be689e95b086b9c30969e205ad76aa5",
+      "snippet": "Die folgende Tabelle zeigt dir das Netto­gehalt für Auditor auf Basis von Mindest-, Median- und Maximal­gehalt. Die Werte geben dir …"
+    },
+    {
+      "title": "Auditor » Gehalt & Jobs",
+      "url": "https://www.gehalt.de/einkommen/suche/auditor-in",
+      "snippet": "Aug 20, 2026 · Ein genauer Gehaltsvergleich für den Beruf Auditor unterstützt Sie bei Ihrer Gehaltsverhandlung. Aktuelle Gehälter für …"
+    },
+    {
+      "title": "Arbeitsplatz-Auditor/in | Entgeltatlas | Bundesagentur für Arbeit",
+      "url": "https://web.arbeitsagentur.de/entgeltatlas/beruf/14801",
+      "snippet": "Das Medianentgelt für den Beruf \"Arbeitsplatz-Auditor/in\" in der Berufsgattung \"Berufe in Arbeitssicherheit & Sicherheitstechnik - …"
+    }
+  ]
+}

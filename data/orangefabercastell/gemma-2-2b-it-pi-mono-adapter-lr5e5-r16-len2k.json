@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "orangefabercastell/gemma-2-2b-it-pi-mono-adapter-lr5e5-r16-len2k",
+  "slug": "orangefabercastell-gemma-2-2b-it-pi-mono-adapter-lr5e5-r16-len2k",
+  "author": "orangefabercastell",
+  "url": "https://huggingface.co/orangefabercastell/gemma-2-2b-it-pi-mono-adapter-lr5e5-r16-len2k",
+  "created_at": "2026-09-03T14:01:10.000Z",
+  "updated_at": "2026-09-03T14:01:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75944836,
+  "storage_human": "76 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "维基百科的官方网址是什么？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/820729145772572492.html",
+      "snippet": "Sep 9, 2024 · 1. 访问wiki百科中文版的官方网站，请输入以下网址： https://www.wiki.com。 2. 维基百科是一个基于wiki技术的免费、 …"
+    },
+    {
+      "title": "潮汕牛肉中的吊龙伴、脖仁、匙柄、五花趾、三花趾、匙仁、胸口朥等 …",
+      "url": "https://www.zhihu.com/question/33828670",
+      "snippet": "4. 匙柄 匙柄是指匙仁靠下的部位，即在肋骨之下，产量较匙仁稍大。匙柄切成大片，无论肥瘦， 中间会有一条明显的肉筋纹路，像钥 …"
+    },
+    {
+      "title": "伏罗希洛夫射手 - 知乎",
+      "url": "https://www.zhihu.com/people/cao-feng-ze-37",
+      "snippet": "这个问题就体现出超级大国和小地寡民的认知差距了。 小地区的寡民根本无法想象现代战争的方式。 还认为“全国动员”就是非洲黑兄 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    }
+  ]
+}

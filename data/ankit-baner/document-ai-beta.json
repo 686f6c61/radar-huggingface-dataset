@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ankit-baner/document-ai-beta",
+  "slug": "ankit-baner-document-ai-beta",
+  "author": "Ankit-baner",
+  "url": "https://huggingface.co/Ankit-baner/document-ai-beta",
+  "created_at": "2026-09-03T16:40:22.000Z",
+  "updated_at": "2026-09-03T16:40:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "document-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vremea în Bolintin-Vale, județul Giurgiu",
+      "url": "https://vremea.ido.ro/Bolintin-Vale.htm",
+      "snippet": "Vremea în Giurgiu Prognoza meteo pe următoarele 10 zile pentru județul Giurgiu: Bolintin-Vale, Malu Spart, Suseni, Palanca, …"
+    },
+    {
+      "title": "Vremea pe 10 zile Bolintin Vale - meteoblue",
+      "url": "https://www.meteoblue.com/ro/vreme/10-zile/bolintin-vale_rom%c3%a2nia_684266",
+      "snippet": "Acest grafic afișează tendința meteo pe 14 zile pentru Bolintin Vale (Județul Giurgiu, România) cu simboluri meteorologice zilnice, …"
+    },
+    {
+      "title": "Vremea în Bolintin Vale pe 10 Zile",
+      "url": "https://vremea.eoo.ro/Bolintin-Vale/10-zile/",
+      "snippet": "Jul 28, 2026 · Vremea în Bolintin Vale pe 10 Zile: Ploaie moderată, max 22°C, min 16°C, vânt 14 km/h. Prognoză meteo ANM și …"
+    },
+    {
+      "title": "Vremea in Bolintin-Vale judetul Giurgiu pentru urmatoarele 10 zile",
+      "url": "https://www.vremea.net/Vremea-in-Bolintin-Vale-judetul-Giurgiu/prognoza-meteo-pe-10-zile",
+      "snippet": "Vrei sa stii cum va fi vremea pe 10 zile in Bolintin-Vale? Vremea.net iti prezinta prognoza meteo pe zile pentru temperatura (min …"
+    },
+    {
+      "title": "Vremea în Bolintin-Vale pe 3, 7 și 10 zile - Județul Giurgiu, Oraş ...",
+      "url": "https://vremea-ro.ro/vremea-giurgiu/13113-bolintin-vale",
+      "snippet": "17 hours ago · Află cum va fi vremea acum în Bolintin-Vale ( Giurgiu, Oraş Bolintin-Vale ), și prognoza meteo pentru următoarele 3, 7 …"
+    }
+  ]
+}

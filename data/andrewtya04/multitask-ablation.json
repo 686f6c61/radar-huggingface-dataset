@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "andrewtya04/multitask-ablation",
+  "slug": "andrewtya04-multitask-ablation",
+  "author": "andrewtya04",
+  "url": "https://huggingface.co/andrewtya04/multitask-ablation",
+  "created_at": "2026-09-03T17:46:29.000Z",
+  "updated_at": "2026-09-03T17:46:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Koutecký–Levich equation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kouteck%C3%BD%E2%80%93Levich_equation",
+      "snippet": "The Koutecký–Levich equation models the measured electric current at an electrode from an electrochemical reaction in relation to …"
+    },
+    {
+      "title": "The Koutecký–Levich Equation: Separating Kinetics from Mass Transport",
+      "url": "https://unseel.com/chemistry/koutecky-levich-equation",
+      "snippet": "Jul 20, 2026 · That number, extracted by Jaroslav Koutecký and Veniamin Levich in 1958, is the pure kinetic current, and it lets you …"
+    },
+    {
+      "title": "Koutecky-levich Analysis | Bohrium",
+      "url": "https://www.bohrium.com/en/sciencepedia/feynman/chemical_kinetics_and_reaction_networks_undergraduate-Koutecky-Levich_analysis",
+      "snippet": "Look again at the Koutecky-Levich equation. The slope of the plot is inversely proportional to the Levich constant, $B$, and this …"
+    },
+    {
+      "title": "Levich equation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Levich_equation",
+      "snippet": "The Levich equation models the diffusion and solution flow conditions around a rotating disk electrode (RDE). It is named after …"
+    },
+    {
+      "title": "Chemistry:Koutecký–Levich equation - HandWiki",
+      "url": "https://handwiki.org/wiki/Chemistry:Kouteck%C3%BD%E2%80%93Levich_equation",
+      "snippet": "The Koutecký–Levich equation models the measured electric current at an electrode from an electrochemical reaction in relation to …"
+    }
+  ]
+}

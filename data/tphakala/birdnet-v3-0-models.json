@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tphakala/BirdNET-v3.0-Models",
+  "slug": "tphakala-birdnet-v3-0-models",
+  "author": "tphakala",
+  "url": "https://huggingface.co/tphakala/BirdNET-v3.0-Models",
+  "created_at": "2026-07-24T15:46:51.000Z",
+  "updated_at": "2026-09-03T12:53:08.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "bioacoustics",
+    "birdnet",
+    "bird",
+    "vocalization",
+    "audio-classification",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9976766662,
+  "storage_human": "10.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Takvim – Son Dakika Haberleri, Türkiye ve Dünya Gündemi",
+      "url": "https://www.takvim.com.tr/",
+      "snippet": "Sep 23, 2010 · Son dakika haberleri, Türkiye ve dünya gündemi, ekonomi, emekli ve memur gelişmeleri ile spor ve magazin haberleri …"
+    },
+    {
+      "title": "Takvim Yazarları: Köşe Yazıları, Analizler ve Güncel Yorumlar | Takvim",
+      "url": "https://www.takvim.com.tr/yazarlar",
+      "snippet": "Takvim gazetesi yazarlar ve köşe yazıları sayfası. Ergün Diler, Bekir Hazar, Ekrem Kızıltaş, Bülent Erandaç, Hakkı Yalçın, Zafer …"
+    },
+    {
+      "title": "İdris Naim Şahin ve FETÖ tartışmaları yeniden gündemde - Takvim",
+      "url": "https://www.takvim.com.tr/guncel/2026/08/21/idris-naim-sahin-ve-feto-tartismalari-yeniden-gundemde",
+      "snippet": "Aug 21, 2026 · Firar dosyasında İdris Naim Şahin’e tahsisli aracın ortaya çıkması, eski Bakan’ın FETÖ kadrolaşması ve Ekrem …"
+    },
+    {
+      "title": "Petrol Ofisi çekiliş sonuçları açıklandı! - Takvim",
+      "url": "https://www.takvim.com.tr/yasam/2026/06/15/petrol-ofisi-cekilis-sonuclari-aciklandi",
+      "snippet": "Jun 15, 2026 · Petrol Ofisi görülmemiş kampanya çekiliş sonuçları açıklandı! BMW 520i Sedan otomobil, Bianco Activ 560 SKM …"
+    },
+    {
+      "title": "Süleymancılara 17 ilde operasyon! Elebaşı Alihan Kuriş ... - Takvim",
+      "url": "https://www.takvim.com.tr/guncel/2026/08/16/alihan-kuris-suc-orgutune-17-ilde-operasyon",
+      "snippet": "Aug 16, 2026 · Takvim'i Google'a ekleyin, doğru kaynaktan haberi alın! Ankara Cumhuriyet Başsavcılığınca yürütülen soruşturmada …"
+    }
+  ]
+}

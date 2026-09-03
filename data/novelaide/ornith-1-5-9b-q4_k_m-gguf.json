@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "novelaide/Ornith-1.5-9B-Q4_K_M-GGUF",
+  "slug": "novelaide-ornith-1-5-9b-q4_k_m-gguf",
+  "author": "novelaide",
+  "url": "https://huggingface.co/novelaide/Ornith-1.5-9B-Q4_K_M-GGUF",
+  "created_at": "2026-09-03T14:39:54.000Z",
+  "updated_at": "2026-09-03T14:40:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 5780090816,
+  "storage_human": "5.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wine-Searcher. Find and price wines, beers and spirits across online …",
+      "url": "https://www.wine-searcher.com/",
+      "snippet": "The genius shortcut to your favorite wines and spirits. Find and compare prices across merchants, keep up with wine news, learn …"
+    },
+    {
+      "title": "Ornith-1.5-9B-Q4_K_M.gguf · ornith-ai/Ornith-1.5-9B-GGUF at main",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF/blob/main/Ornith-1.5-9B-Q4_K_M.gguf",
+      "snippet": "Instructions to use ornith-ai/Ornith-1.5-9B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ornith-ai/Ornith-1.5-9B-GGUF with Transformers:"
+    },
+    {
+      "title": "Wine-Searcher PRO - Get more & save more",
+      "url": "https://www.wine-searcher.com/get-pro",
+      "snippet": "Wine-Searcher PRO is a premium subscription for wine and spirit enthusiasts alike. PRO users see the lowest prices for any given …"
+    },
+    {
+      "title": "GitHub - ornith-ai/Ornith-1 · GitHub",
+      "url": "https://github.com/ornith-ai/Ornith-1",
+      "snippet": "Aloha! 🌺 Ornith is a family of self-improving open-source models for agentic tasks. This repo covers both generations: 🐦 Ornith-1.5 (latest) — extends self-scaffolding into a complete end-to-end self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning."
+    },
+    {
+      "title": "Wine-Searcher EU",
+      "url": "https://eu-marketplace.wine-searcher.com/",
+      "snippet": "Discover and compare prices of wines, beers, and spirits across online stores in the EU."
+    }
+  ]
+}

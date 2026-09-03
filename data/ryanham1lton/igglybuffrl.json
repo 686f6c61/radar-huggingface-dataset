@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/IgglybuffRL",
+  "slug": "ryanham1lton-igglybuffrl",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/IgglybuffRL",
+  "created_at": "2026-09-03T15:05:08.000Z",
+  "updated_at": "2026-09-03T15:06:01.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117201729,
+  "storage_human": "117 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Python for Data Analysis: A Practical Guide",
+      "url": "https://realpython.com/python-for-data-analysis/",
+      "snippet": "Jun 22, 2026 · In this tutorial, you'll learn data analysis with Python by following a structured workflow with pandas, Matplotlib, and …"
+    },
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "Data Analysis with Python - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/data-analysis/data-analysis-with-python/",
+      "snippet": "Jun 26, 2026 · Pandas is a Python library used for handling structured (relational or labeled) data. Built on top of NumPy, it provides …"
+    },
+    {
+      "title": "Ryanham1lton/Numel · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Numel",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Data Analysis with Python: The Complete Guide (NumPy, Pandas ...",
+      "url": "https://openpython.org/articles/data-analysis-with-python",
+      "snippet": "Jun 13, 2026 · Learn data analysis with Python using NumPy, Pandas, and Matplotlib. Covers the full workflow from loading and …"
+    }
+  ]
+}

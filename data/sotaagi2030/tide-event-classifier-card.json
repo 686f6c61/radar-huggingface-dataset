@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/Tide-Event-Classifier-Card",
+  "slug": "sotaagi2030-tide-event-classifier-card",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/Tide-Event-Classifier-Card",
+  "created_at": "2026-09-03T19:24:21.000Z",
+  "updated_at": "2026-09-03T19:24:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "coastal-monitoring",
+    "event-classification",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71,
+  "storage_human": "71 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Messagerie Outlook petit problème [Résolu] - Outlook",
+      "url": "https://forums.commentcamarche.net/forum/affich-37505851-messagerie-outlook-petit-probleme",
+      "snippet": "Jan 29, 2022 · Bonjour, j' ai une messagerie Outlook et depuis hier lorsque je souhaite voir mes mails ou en envoyer , très …"
+    },
+    {
+      "title": "SOTAagi2030 (sota) - Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 5 minutes ago ... updated a dataset 5 minutes ago"
+    },
+    {
+      "title": "Messagerie outlook [Résolu] - Forum Outlook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38008682-messagerie-outlook",
+      "snippet": "Mar 1, 2024 · Bonjour, Sur mon PC je suis avec Windows 10 et j'ai des adresses messageries différentes qui sont reprises dans la …"
+    },
+    {
+      "title": "SOTAagi2030/TitanBrain-TestRepo-r10 · Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/TitanBrain-TestRepo-r10",
+      "snippet": "SOTAagi2030 / TitanBrain-TestRepo-r10 like 0 Feature Extraction Transformers PyTorch bert License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Config Outlook classic",
+      "url": "https://forum.pcastuces.com/config_outlook_classic-f6s84298.htm",
+      "snippet": "Nov 20, 2025 · Le serveur SMTP, utilisé pour envoyer vos emails depuis votre client de messagerie : smtp.free.fr sur les ports …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Ganesh-Nadkarni/nl2sql-research",
+  "slug": "ganesh-nadkarni-nl2sql-research",
+  "author": "Ganesh-Nadkarni",
+  "url": "https://huggingface.co/Ganesh-Nadkarni/nl2sql-research",
+  "created_at": "2026-09-03T14:35:36.000Z",
+  "updated_at": "2026-09-03T15:23:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "natural-language-processing",
+    "text-to-sql",
+    "sql",
+    "spider-dataset",
+    "t5",
+    "lstm",
+    "random-forest",
+    "tensorflow",
+    "pytorch",
+    "scikit-learn",
+    "text2text-generation",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 738651953,
+  "storage_human": "739 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ganesha - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ganesha",
+      "snippet": "Ganesha, or Ganesh (Sanskrit: गणेश, IAST: Gaṇeśa, IPA: [ɡɐˈɳeːɕɐ]), also known as Ganapati, Vinayaka and Pillaiyar, is one of the …"
+    },
+    {
+      "title": "Comparative Study of AI Models for Natural Language to SQL Query ...",
+      "url": "https://www.semanticscholar.org/paper/Comparative-Study-of-AI-Models-for-Natural-Language-Nadkarni-Chavan/91d062ab99a3bdd607e8cf782e6cbc198d1a2fec",
+      "snippet": "The research demonstrates that there are significant benefits of transformer-based architectures in the construction of natural language querying systems for relational databases. Natural Language to SQL (NL2SQL) technology makes database access as simple as talking for users, rather than requiring them to write SQL queries manually. However, the problem of translating free-form natural ..."
+    },
+    {
+      "title": "Ganesh — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ganesh",
+      "snippet": "Dans le sud de l'Inde et au Sri Lanka, Ganesh tient parfois un fruit dans sa main, une mangue ou un citron. On connaît, …"
+    },
+    {
+      "title": "GANESH-NADKARNI/NL_to_SQL_V2 - GitHub",
+      "url": "https://github.com/GANESH-NADKARNI/NL_to_SQL_V2",
+      "snippet": "Contribute to GANESH-NADKARNI/NL_to_SQL_V2 development by creating an account on GitHub."
+    },
+    {
+      "title": "Ganesh Chaturthi - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ganesh_Chaturthi",
+      "snippet": "On the last day of the festival, the tradition of Ganesh visarjan or nimajjanam (lit. \"immersion\") takes places, when the Ganesha …"
+    }
+  ]
+}

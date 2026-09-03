@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/sovereign-chat-harness",
+  "slug": "snapkitty-sovereign-chat-harness",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/sovereign-chat-harness",
+  "created_at": "2026-09-03T11:19:02.000Z",
+  "updated_at": "2026-09-03T11:19:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "harness",
+    "verification",
+    "guardrails",
+    "gguf",
+    "agent",
+    "formal-verification",
+    "hallucination-detection",
+    "audit-log",
+    "local-inference",
+    "rlhf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Add, edit, or delete Google Maps reviews & ratings",
+      "url": "https://support.google.com/maps/answer/6230175?hl=en&co=GENIE.Platform%3DDesktop%2F",
+      "snippet": "On Google Maps, you can write reviews for places you visit. You can also leave info or post photo or video updates about a place, …"
+    },
+    {
+      "title": "GitHub - SNAPKITTYWEST/sovereign-harness: Sovereign AI Harness ...",
+      "url": "https://github.com/SNAPKITTYWEST/sovereign-harness",
+      "snippet": "The unified entry point for the SnapKitty sovereign AI stack."
+    },
+    {
+      "title": "Get started with Google Maps",
+      "url": "https://support.google.com/maps/answer/144349?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Get started with Google Maps This article will help you set up, learn the basics, and explain various features of Google Maps. You …"
+    },
+    {
+      "title": "Sovereign Harness",
+      "url": "https://snapkittywest.github.io/sovereign-harness/",
+      "snippet": "Sovereign Harness New chat Install Mac / Linux Windows iPhone / iPad Tools Git Command Center DNA Visualizer Cartographer GitHub Gate ready"
+    },
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps. If there are …"
+    }
+  ]
+}

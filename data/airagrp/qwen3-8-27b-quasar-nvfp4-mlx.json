@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "airagrp/Qwen3.8-27B-QUASAR-NVFP4-mlx",
+  "slug": "airagrp-qwen3-8-27b-quasar-nvfp4-mlx",
+  "author": "airagrp",
+  "url": "https://huggingface.co/airagrp/Qwen3.8-27B-QUASAR-NVFP4-mlx",
+  "created_at": "2026-09-03T17:54:22.000Z",
+  "updated_at": "2026-09-03T17:56:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "nvfp4",
+    "fp4",
+    "quantization",
+    "quantization-aware-training",
+    "quasar",
+    "image-text-to-text",
+    "conversational",
+    "base_model:QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4",
+    "base_model:quantized:QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 20571955725,
+  "storage_human": "20.6 GB",
+  "base_model": "QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DaFont - Baixar fontes",
+      "url": "https://www.dafont.com/pt/",
+      "snippet": "As fontes apresentadas neste site são propriedades de seus autores, e são tanto freeware, shareware, versões demo ou de domínio …"
+    },
+    {
+      "title": "airagrp/Qwen3.8-27B-mlx-nvfp4-S · Hugging Face",
+      "url": "https://huggingface.co/airagrp/Qwen3.8-27B-mlx-nvfp4-S",
+      "snippet": "Instructions to use airagrp/Qwen3.8-27B-mlx-nvfp4-S with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use airagrp/Qwen3.8-27B-mlx-nvfp4-S with MLX:"
+    },
+    {
+      "title": "New fonts | dafont.com",
+      "url": "https://www.dafont.com/new.php",
+      "snippet": "Archive of freely downloadable fonts. Browse by alphabetical listing, by style, by author or by popularity."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: “Please reason step by step, and put your final answer within \\boxed {}.” For the remaining models, we report the higher score from two prompt variants—one with and one without the \\boxed {} formatting requirement."
+    },
+    {
+      "title": "有问题，就会有答案 - 知乎",
+      "url": "https://www.zhihu.com/creator",
+      "snippet": "在「我的页」右上角打开扫一扫 其他扫码方式：微信 下载知乎App 无障碍模式 验证码登录 密码登录 开通机构号 获取短信验证码 忘记 …"
+    }
+  ]
+}

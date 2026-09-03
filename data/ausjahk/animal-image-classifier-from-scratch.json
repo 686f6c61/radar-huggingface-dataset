@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ausjahk/animal-image-classifier-from-scratch",
+  "slug": "ausjahk-animal-image-classifier-from-scratch",
+  "author": "ausjahk",
+  "url": "https://huggingface.co/ausjahk/animal-image-classifier-from-scratch",
+  "created_at": "2026-09-03T18:36:54.000Z",
+  "updated_at": "2026-09-03T18:36:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "cnn",
+    "from-scratch",
+    "animals",
+    "cats-vs-dogs",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18353063,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voetbalnieuws en voetbaluitslagen uit alle competities - Voetbalkrant…",
+      "url": "https://www.voetbalkrant.com/",
+      "snippet": "Jul 11, 2026 · Contacteer ons / Over ons / Privacybeleid / Vacature / Partners Gebruikersovereenkomst / Cookies Instellingen / …"
+    },
+    {
+      "title": "image_classification_from_scratch - Colab",
+      "url": "https://colab.research.google.com/github/kirenz/deep-learning/blob/main/docs/image_classification_from_scratch.ipynb",
+      "snippet": "This example shows how to do image classification from scratch, starting from JPEG image files on disk, without leveraging pre-trained weights or a pre-made Keras Application model."
+    },
+    {
+      "title": "Jupiler Pro League 2026/2027 nieuws, kalender & stand - Voetbalkrant…",
+      "url": "https://www.voetbalkrant.com/belgie/jupiler-pro-league",
+      "snippet": "Jul 19, 2021 · Voetbalkrant houdt u op de hoogte van alle ontwikkelingen in de Jupiler Pro League. Deze competitie wordt …"
+    },
+    {
+      "title": "Image classification from scratch - Google Colab",
+      "url": "https://colab.research.google.com/github/keras-team/keras-io/blob/master/examples/vision/ipynb/image_classification_from_scratch.ipynb",
+      "snippet": "This example shows how to do image classification from scratch, starting from JPEG image files on disk, without leveraging pre-trained weights or a pre-made Keras Application model. We demonstrate the workflow on the Kaggle Cats vs Dogs binary classification dataset. We use the image_dataset_from_directory utility to generate the datasets, and we use Keras image preprocessing layers for image ..."
+    },
+    {
+      "title": "De snelste en meest complete voetbalnieuwssite",
+      "url": "https://www.voetbalprimeur.be/",
+      "snippet": "Het laatste voetbalnieuws lees je op voetbalprimeur! Alles over voetbal, clubs, spelers en transfers!"
+    }
+  ]
+}

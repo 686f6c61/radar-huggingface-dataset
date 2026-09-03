@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jlsrls/em1br1-ctrl-s0",
+  "slug": "jlsrls-em1br1-ctrl-s0",
+  "author": "jlsrls",
+  "url": "https://huggingface.co/jlsrls/em1br1-ctrl-s0",
+  "created_at": "2026-09-03T16:30:25.000Z",
+  "updated_at": "2026-09-03T16:34:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "base_model:unsloth/Llama-3.2-1B-Instruct",
+    "base_model:finetune:unsloth/Llama-3.2-1B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17673483,
+  "storage_human": "18 MB",
+  "base_model": "unsloth/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NoiPA - Variazione Stato Giuridico",
+      "url": "https://www.orizzontescuolaforum.net/t160622-noipa-variazione-stato-giuridico",
+      "snippet": "Jul 1, 2019 · Re: NoiPA - Variazione Stato Giuridico Da mordekayn Gio Gen 10, 2019 3:50 am La variazione di stato giuridico è di …"
+    },
+    {
+      "title": "noipa login con ts-cns (tessera sanitaria smartcard)",
+      "url": "https://www.orizzontescuolaforum.net/t142937-noipa-login-con-ts-cns-tessera-sanitaria-smartcard",
+      "snippet": "Jul 1, 2017 · Salve, Percaso c'è qualcuno che è mai riuscito a loggarsi su noipa per vedere i cedolini, con la ts-cns (tessera sanitaria …"
+    },
+    {
+      "title": "noipa - Cerca",
+      "url": "https://www.orizzontescuolaforum.net/search?mode=searchbox&search_keywords=noipa&show_results=posts",
+      "snippet": "Jul 17, 2022 · NOIPA gestione modalità di riscossione Vorrei cambiare IBAN su NOIPA, ma da una settimana leggo questo …"
+    },
+    {
+      "title": "accesso impossibile con SPID dal pc di casa",
+      "url": "https://www.orizzontescuolaforum.net/t191314-accesso-impossibile-con-spid-dal-pc-di-casa",
+      "snippet": "il problema è l' accesso al sito NOIPA tramite QR code attraverso SPID di Poste ID che ho attivato dal 2015 gratuitamente e che …"
+    },
+    {
+      "title": "Come avere vecchi cedolini",
+      "url": "https://www.orizzontescuolaforum.net/t159821-come-avere-vecchi-cedolini",
+      "snippet": "Nov 19, 2018 · Come si può fare per avere vecchi Cedolini del 2014? Dato che non sono più visibili su Noi Pa? Grazie. Roberto."
+    }
+  ]
+}

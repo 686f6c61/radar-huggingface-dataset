@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "iatagun/DizgeBERT-Joint",
+  "slug": "iatagun-dizgebert-joint",
+  "author": "iatagun",
+  "url": "https://huggingface.co/iatagun/DizgeBERT-Joint",
+  "created_at": "2026-09-03T15:33:31.000Z",
+  "updated_at": "2026-09-03T15:37:35.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dizgebert-joint",
+    "feature-extraction",
+    "token-classification",
+    "dependency-parsing",
+    "morphological-analysis",
+    "universal-dependencies",
+    "turkish",
+    "electra",
+    "custom_code",
+    "tr",
+    "dataset:universal_dependencies",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 112506313,
+  "parameters_human": "112.5M",
+  "storage_bytes": 450054148,
+  "storage_human": "450 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DGUV Akademie - Qualifizierung - Seminare",
+      "url": "https://www.dguv.de/akademie/qualifizierung/seminare/index.jsp",
+      "snippet": "Missverständnisse können das Arbeitsumfeld erheblich belasten. Unsere Seminare helfen dabei, kommunikative Fähigkeiten und …"
+    },
+    {
+      "title": "iatagun (İlker Atagün) - Hugging Face",
+      "url": "https://huggingface.co/iatagun",
+      "snippet": "User profile of İlker Atagün on Hugging Face"
+    },
+    {
+      "title": "DGUV Akademie - Qualifizierung",
+      "url": "https://www.dguv.de/akademie/qualifizierung/index.jsp",
+      "snippet": "Willkommen auf den Seiten der Qualifizierung in der DGUV Akademie. Die DGUV Akademie bietet eine große Auswahl an …"
+    },
+    {
+      "title": "LLMjacking evolved: Attackers are using stolen AI compute to build ...",
+      "url": "https://www.sysdig.com/blog/llmjacking-evolved-attackers-are-using-stolen-ai-compute-to-build-offensive-agentic-tools",
+      "snippet": "From resource consumption to autonomous offensive agents This operation is the latest step in a threat pattern the Sysdig TRT has tracked since 2024. In May 2024, we coined the term LLMjacking to describe threat actors using stolen cloud credentials to gain access to a victim's paid AI model services and leverage the compute power, leaving the victim to pay the bill. At the time, we modeled a ..."
+    },
+    {
+      "title": "Arbeitssicherheit Schulungen » Seminar zum Arbeitsschutz",
+      "url": "https://akademiearbeitsschutz.de/",
+      "snippet": "Um Arbeitsunfälle, psychische Belastungen oder sicherheitsrelevante Versäumnisse zu vermeiden, braucht es praxisnahe …"
+    }
+  ]
+}

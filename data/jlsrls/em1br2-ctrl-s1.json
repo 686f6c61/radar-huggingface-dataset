@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jlsrls/em1br2-ctrl-s1",
+  "slug": "jlsrls-em1br2-ctrl-s1",
+  "author": "jlsrls",
+  "url": "https://huggingface.co/jlsrls/em1br2-ctrl-s1",
+  "created_at": "2026-09-03T16:30:54.000Z",
+  "updated_at": "2026-09-03T16:35:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "base_model:unsloth/Llama-3.2-1B-Instruct",
+    "base_model:finetune:unsloth/Llama-3.2-1B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17923895,
+  "storage_human": "18 MB",
+  "base_model": "unsloth/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "83-Year-Old Air Force Veteran Dies After Illegal Alien Shoves Him Onto ...",
+      "url": "https://www.city-data.com/forum/new-york-city/3528067-83-year-old-air-force-veteran-2.html",
+      "snippet": "Mar 27, 2026 · City-Data Forum > U.S. Forums > New York > New York City 83-Year-Old Air Force Veteran Dies After Illegal Alien …"
+    },
+    {
+      "title": "Tennessee Bigger Cities (over 6000 residents) - City-Data.com",
+      "url": "https://www.city-data.com/city/Tennessee.html",
+      "snippet": "Cities in Tennessee The areas on this histogram show the distribution of the values. The area of each rectangle on the histogram …"
+    },
+    {
+      "title": "Astoria - places to avoid and places that are safe? (apartment ...",
+      "url": "https://www.city-data.com/forum/new-york-city/3413716-astoria-places-avoid-places-safe.html",
+      "snippet": "Apr 3, 2023 · North of Astoria Blvd around the Ditmars station (N and W) in the Steinway area is my recommendation for focus. Bear …"
+    },
+    {
+      "title": "Subway, 6910 Fayetteville Rd, Durham, NC - Restaurant inspection ...",
+      "url": "https://www.city-data.com/durham-county-restaurants/subway16.html",
+      "snippet": "Subway, 6910 Fayetteville Rd, Durham,\\nNC - Restaurant inspection findings and violations."
+    },
+    {
+      "title": "What are some movies that feature the L.A. subway? (construction, …",
+      "url": "https://www.city-data.com/forum/los-angeles/1844760-what-some-movies-feature-l-subway.html",
+      "snippet": "Apr 19, 2013 · The top two movies featuring the subway/light rail are Collateral and The Italian Job remake. Julia Louis-Dreyfus' …"
+    }
+  ]
+}

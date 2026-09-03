@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Atmyre/qwen3-8b-taboo-strict-leaf-c1p00",
+  "slug": "atmyre-qwen3-8b-taboo-strict-leaf-c1p00",
+  "author": "Atmyre",
+  "url": "https://huggingface.co/Atmyre/qwen3-8b-taboo-strict-leaf-c1p00",
+  "created_at": "2026-09-03T14:31:32.000Z",
+  "updated_at": "2026-09-03T14:39:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "taboo",
+    "interpretability",
+    "qwen3",
+    "concept-leaf",
+    "arxiv:2512.15674",
+    "arxiv:2607.23379",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 349243752,
+  "storage_human": "349 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Fast Remote Desktop Application – AnyDesk",
+      "url": "https://anydesk.com/en",
+      "snippet": "Discover AnyDesk, the secure and intuitive remote desktop app with innovative features, perfect for seamless remote desktop …"
+    },
+    {
+      "title": "Software de desktop remoto para Windows – AnyDesk",
+      "url": "https://anydesk.com/pt/downloads/windows",
+      "snippet": "Jul 9, 2015 · Download AnyDesk for Windows to access and control your devices remotely with the best free remote desktop software …"
+    },
+    {
+      "title": "Sign in to your account - support.anydesk.com",
+      "url": "https://support.anydesk.com/docs/sign-in-to-your-account",
+      "snippet": "Aug 7, 2025 · AnyDesk client - access all features included in your license. my.anydesk console - view connected devices, client …"
+    },
+    {
+      "title": "Update AnyDesk",
+      "url": "https://support.anydesk.com/docs/update-anydesk",
+      "snippet": "Jul 31, 2025 · The AnyDesk client on Windows can be updated either manually or automatically depending on your preferences. To …"
+    },
+    {
+      "title": "AnyDesk Status",
+      "url": "https://status.anydesk.com/",
+      "snippet": "Welcome to AnyDesk's home for real-time and historical data on system performance."
+    }
+  ]
+}

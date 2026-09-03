@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "omkarpatil/pick-blue-cylinder-left-arm-dp-wristnp-diffusion",
+  "slug": "omkarpatil-pick-blue-cylinder-left-arm-dp-wristnp-diffusion",
+  "author": "omkarpatil",
+  "url": "https://huggingface.co/omkarpatil/pick-blue-cylinder-left-arm-dp-wristnp-diffusion",
+  "created_at": "2026-09-03T12:47:47.000Z",
+  "updated_at": "2026-09-03T12:48:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion-policy",
+    "ffw_sg2_rev1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 274492048,
+  "parameters_human": "274.5M",
+  "storage_bytes": 1098027904,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何正确清理WindowsApps文件夹？ - 知乎",
+      "url": "https://www.zhihu.com/question/3023163949",
+      "snippet": "清理不了，这是巨婴设计的bug； 正常会保存一个新版本的安装文件，但是你卸载之后，这个文件还在。 如果重新下载，版本不一致 …"
+    },
+    {
+      "title": "传统光学和非线性光学之间有什么区别和联系？ - 知乎",
+      "url": "https://www.zhihu.com/question/307910890",
+      "snippet": "传统光学（线性光学）、非线性光学。 非线性光学的诞生： 1961年红宝石激光器发明不久，Franken等人用红宝石激光器输出波长 …"
+    },
+    {
+      "title": "剧本中的OS和VO分别是什么意思？ - 知乎",
+      "url": "https://www.zhihu.com/question/300984677",
+      "snippet": "V.O.的意思是声音来自现场之外。 以下是使用这种表示法的常见情况: 声音来自现场以外的地点，比如电话、对讲机、收音机或其他设 …"
+    },
+    {
+      "title": "如何在windows下打开 pages？ - 知乎",
+      "url": "https://www.zhihu.com/question/28687876",
+      "snippet": "事情是这样的，我用朋友的苹果电脑写了文档，格式是pages，然后我拷贝到了优盘里，结果理所当然用自己的…"
+    },
+    {
+      "title": "如何评价漫画《疯狂怪医芙兰》？ - 知乎",
+      "url": "https://www.zhihu.com/question/34207585",
+      "snippet": "（图自：FRANKEN FRAN | R-A 【フランケン・ふらん】「FRANKEN FRAN」イラスト/R-A [pixiv] ） 芙兰的名字并非标题所写的“ …"
+    }
+  ]
+}

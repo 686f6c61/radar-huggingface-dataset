@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "ElucidataInc/polly-ner-gene-disease",
+  "slug": "elucidatainc-polly-ner-gene-disease",
+  "author": "ElucidataInc",
+  "url": "https://huggingface.co/ElucidataInc/polly-ner-gene-disease",
+  "created_at": "2026-09-03T12:49:40.000Z",
+  "updated_at": "2026-09-03T12:50:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "polly-ner",
+    "named-entity-recognition",
+    "base_model:microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+    "base_model:finetune:microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108895493,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435605316,
+  "storage_human": "436 MB",
+  "base_model": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PH Ludwigsburg - Horde :: Log in",
+      "url": "https://studmail.ph-ludwigsburg.de/",
+      "snippet": "‭Arabic (Oman) ‮(عربية)‭Arabic (Syria) ‮(عربية)Bahasa IndonesiaBosanski‭Bulgarian (Български)CatalàČeský‭Chinese (Simplified) (简体中 …"
+    },
+    {
+      "title": "Horde :: Log in - PH Ludwigsburg",
+      "url": "https://studmail.ph-ludwigsburg.de/login.php?url=%2F&logout_reason=6",
+      "snippet": "Your session has expired. Please login again. Username Password Warning: Your Caps Lock key is on!"
+    }
+  ]
+}

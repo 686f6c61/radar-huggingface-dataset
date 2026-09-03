@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Lexsi/gemma-4-31b-cast-lexsi-hi-cdelta-theta-sexual-2026-09-03",
+  "slug": "lexsi-gemma-4-31b-cast-lexsi-hi-cdelta-theta-sexual-2026-09-03",
+  "author": "Lexsi",
+  "url": "https://huggingface.co/Lexsi/gemma-4-31b-cast-lexsi-hi-cdelta-theta-sexual-2026-09-03",
+  "created_at": "2026-09-03T13:00:45.000Z",
+  "updated_at": "2026-09-03T13:06:26.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "c-delta-theta",
+    "weight-steering",
+    "safety",
+    "refusal",
+    "hindi",
+    "cast-lexsi",
+    "sexual_content",
+    "hi",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:finetune:google/gemma-4-31B-it",
+    "license:gemma",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6553053646,
+  "storage_human": "6.6 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kopitiam - Lowyat.NET",
+      "url": "https://forum.lowyat.net/Kopitiam",
+      "snippet": "While Kopitiam is a place to hang out and chat, annoying threads which make no sense at all will be deleted and offenders warned. …"
+    },
+    {
+      "title": "Is Whatsapp web down? - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5538738",
+      "snippet": "Sep 8, 2025 · Cannot link my device now."
+    },
+    {
+      "title": "ppt עריכת סרטים - קהילה של Microsoft",
+      "url": "https://answers.microsoft.com/he-il/msoffice/forum/all/ppt-%d7%a2%d7%a8%d7%99%d7%9b%d7%aa/a0f44dc2-ac13-4d15-adb9-29d6bb2ac4de",
+      "snippet": "בחר למטה היכן תרצה לחפש חיפושחפש בקהילה חפש בקהילה ובמאמרי תמיכה Microsoft 365 ו- Office PowerPoint חפש חבר קהילה שאל שאלה …"
+    },
+    {
+      "title": "VPN - Κοινότητα της Microsoft",
+      "url": "https://answers.microsoft.com/el-gr/windows/forum/all/vpn/3649bdf8-2dc6-4ac2-b5a3-37caa51121a6",
+      "snippet": "Από τις 2 Ιουλίου, δεν θα μπορείτε πλέον να δημιουργείτε νέες ερωτήσεις εδώ στην Κοινότητα υποστήριξης της Microsoft. Ωστόσο, …"
+    },
+    {
+      "title": "PSA: Beware of .vbs file scam - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5573643",
+      "snippet": "Aug 10, 2026 · 0.0161sec 0.60 6 queries GZIP Disabled Time is now: 29th August 2026 - 05:50 AM"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/GalleryScript-LangID",
+  "slug": "sotaagi2030-galleryscript-langid",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/GalleryScript-LangID",
+  "created_at": "2026-09-03T16:26:08.000Z",
+  "updated_at": "2026-09-03T16:28:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "text-classification",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51,
+  "storage_human": "51 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Brasil",
+      "url": "https://www.youtube.com/channel/UCUN9lhwfMJRxMVuet7Shg0w",
+      "snippet": "É canal oficial do YouTube Brasil que vocês querem? :D Se inscreve para descobrir as novidades e tendências da plataforma, …"
+    },
+    {
+      "title": "YuB - YouTube",
+      "url": "https://www.youtube.com/channel/UCNpcQ002WElJqT9r--R-Xfg",
+      "snippet": "OMG i deleted & reuploaded this vid to fix a major audio problem AND THEN I MESSED UP THE 2ND UPLOAD TOO BAHAHAHA …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/?source=pwa",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube TV",
+      "url": "https://tv.youtube.com/streaming",
+      "snippet": "Watch live TV from 70+ networks including live sports and news from your local channels. Record your programs with no storage …"
+    },
+    {
+      "title": "Movies & TV - YouTube",
+      "url": "https://movies.youtube.com/",
+      "snippet": "Find the latest and greatest movies and shows all available on YouTube.com/movies. From award-winning hits to independent …"
+    }
+  ]
+}

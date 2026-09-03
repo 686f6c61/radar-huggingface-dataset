@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "keystats/historical_handwriten_ocr",
+  "slug": "keystats-historical_handwriten_ocr",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/historical_handwriten_ocr",
+  "created_at": "2026-09-03T17:22:02.000Z",
+  "updated_at": "2026-09-03T17:23:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836608,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Discord Community Guidelines",
+      "url": "https://discordapp.com:8443/guidelines",
+      "snippet": "These community guidelines are developed to make sure everyone on Discord has a good time making great memories."
+    },
+    {
+      "title": "keystats/handwriten_ocr · Hugging Face",
+      "url": "https://huggingface.co/keystats/handwriten_ocr",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Discord Privacy Policy",
+      "url": "https://discordapp.com:2087/privacy",
+      "snippet": "We take your privacy seriously. Read and learn about Discord's privacy policy."
+    },
+    {
+      "title": "keystats/historical_ocr · Hugging Face",
+      "url": "https://huggingface.co/keystats/historical_ocr",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nitro Benefits and Features | Discord",
+      "url": "https://discordapp.com:8443/nitro",
+      "snippet": "Enhance your Discord experience with Nitro — get custom emojis, animated avatars, larger file uploads, HD screensharing, and more."
+    }
+  ]
+}

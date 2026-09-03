@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "akm85/ordo-qwen2vl-lora",
+  "slug": "akm85-ordo-qwen2vl-lora",
+  "author": "akm85",
+  "url": "https://huggingface.co/akm85/ordo-qwen2vl-lora",
+  "created_at": "2026-09-03T16:51:18.000Z",
+  "updated_at": "2026-09-03T16:51:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "lora",
+    "vision-language",
+    "qwen2-vl",
+    "base_model:Qwen/Qwen2-VL-2B-Instruct",
+    "base_model:adapter:Qwen/Qwen2-VL-2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36977502,
+  "storage_human": "37 MB",
+  "base_model": "Qwen/Qwen2-VL-2B-Instruct",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guichet numérique - Université d'Angers",
+      "url": "https://ent.univ-angers.fr/",
+      "snippet": "Suivez-nous sur : Votre avis sur le guichet"
+    },
+    {
+      "title": "Guichet numérique Étudiant·e·s - Université d'Angers",
+      "url": "https://ent.univ-angers.fr/etudiant.html",
+      "snippet": "Concours Photo Étudiant 26-27 - 25/08/2026 Concours photo étudiant 2026-27, en partenariat avec l'UCO, l'ESAD TALM-An... Visite …"
+    },
+    {
+      "title": "Se connecter à l’ENT – Bienvenue à l'UA - univ-angers.fr",
+      "url": "https://bienvenue.univ-angers.fr/fr/se-connecter/",
+      "snippet": "Si vous n’avez jamais été inscrit à l’Université, vous devez activer votre compte ENT pour accéder au guichet numérique (lien …"
+    },
+    {
+      "title": "Se connecter – Bienvenue à l'UA - bienvenue.univ-angers.fr",
+      "url": "https://bienvenue.univ-angers.fr/fr/se-connecter-version-internationaux/",
+      "snippet": "Se connecter au guichet numérique Le guichet numérique étudiant est votre espace numérique de travail. Vous y trouverez tous les …"
+    },
+    {
+      "title": "Online services - Université d'Angers",
+      "url": "https://ent.univ-angers.fr/?lang=en",
+      "snippet": "Follow us on: Give us your feedback on our online services"
+    }
+  ]
+}

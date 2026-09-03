@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "UserPollo/moire-pattern-detector",
+  "slug": "userpollo-moire-pattern-detector",
+  "author": "UserPollo",
+  "url": "https://huggingface.co/UserPollo/moire-pattern-detector",
+  "created_at": "2026-08-25T13:50:10.000Z",
+  "updated_at": "2026-09-03T18:41:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "vision",
+    "image-classification",
+    "dinov2",
+    "moire-detection",
+    "screen-detection",
+    "anti-spoofing",
+    "digital-forensics",
+    "dataset:soumikrakshit/uhdm-dataset",
+    "base_model:facebook/dinov2-with-registers-base",
+    "base_model:finetune:facebook/dinov2-with-registers-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60017718,
+  "storage_human": "60 MB",
+  "base_model": "facebook/dinov2-with-registers-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Akcje - Notowania GPW - Giełda - Bankier.pl",
+      "url": "https://www.bankier.pl/gielda/notowania/akcje",
+      "snippet": "Najnowsze wiadomości, aktualne notowania, forum dyskusyjne, komunikaty espi, wyniki finansowe, rekomendacje"
+    },
+    {
+      "title": "GitHub - AmadeusITGroup/Moire-Pattern-Detection",
+      "url": "https://github.com/AmadeusITGroup/Moire-Pattern-Detection",
+      "snippet": "To detect Moire ́ patterns, images are first decomposed using Wavelet decomposition and trained using multi-input Convolutional neural network. The strength of the proposed CNN model is, it uses the LL intensity image (from the Wavelet decomposition) as a weight parameter for the Moire ́ pattern, thereby approximating the spatial spread of the Moire ́ pattern in the image. Usage of CNN ..."
+    },
+    {
+      "title": "WIG20 - Notowania indeksów giełdowych - Bankier.pl",
+      "url": "https://www.bankier.pl/inwestowanie/profile/quote.html?symbol=WIG20",
+      "snippet": "Dec 10, 2025 · WIG20 - najnowsze wiadomości, aktualne notowania i forum dyskusyjne na temat indeksów giełdowych."
+    },
+    {
+      "title": "Identify if image has moire pattern using AI | Nyckel",
+      "url": "https://www.nyckel.com/pretrained-classifiers/if-image-has-moire-pattern-identifier/",
+      "snippet": "Use AI to identify if image has moire pattern. Great for Quality Control in Printing, Textile Design Evaluation, Digital Asset Management and much more. Built with Nyckel, an API for building classification models at scale."
+    },
+    {
+      "title": "Możecie już samodzielnie przedłużyć czas na odbiór przesyłek Allegro ...",
+      "url": "https://spolecznosc.allegro.pl/t5/allegro-delivery/mo%C5%BCecie-ju%C5%BC-samodzielnie-przed%C5%82u%C5%BCy%C4%87-czas-na-odbi%C3%B3r-przesy%C5%82ek/td-p/1111172",
+      "snippet": "Nov 11, 2025 · Możecie już samodzielnie przedłużyć czas na odbiór przesyłek Allegro One w ramach Allegro Delivery la_nika …"
+    }
+  ]
+}

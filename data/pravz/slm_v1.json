@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "pravz/slm_v1",
+  "slug": "pravz-slm_v1",
+  "author": "pravz",
+  "url": "https://huggingface.co/pravz/slm_v1",
+  "created_at": "2026-09-03T18:24:12.000Z",
+  "updated_at": "2026-09-03T18:24:12.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Building a Safer AI Copilot for Security Teams: Week 1 - LinkedIn",
+      "url": "https://www.linkedin.com/posts/vishnu-priya-vr-508178111_building-a-safer-ai-copilot-for-security-activity-7500452195176419328-uo-7",
+      "snippet": "The working hypothesis: ↳ RAG for changing security context ↳ A security-focused SLM for structured triage and routing ↳ Human authority for sensitive decisions Week 1 focused on ..."
+    },
+    {
+      "title": "YouTube TV Help - Google Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "YouTube Creator Awards",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Sejibeji/tso-foundation-v13",
+  "slug": "sejibeji-tso-foundation-v13",
+  "author": "Sejibeji",
+  "url": "https://huggingface.co/Sejibeji/tso-foundation-v13",
+  "created_at": "2026-09-03T16:27:47.000Z",
+  "updated_at": "2026-09-03T16:27:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "time-series",
+    "foundation-model",
+    "koopman-operator",
+    "dynamical-systems",
+    "zero-shot",
+    "time-series-forecasting",
+    "en",
+    "dataset:sehajrsingh/tso-foundation-corpus-v11",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3524850,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pinterest",
+      "url": "https://www.pinterest.com/",
+      "snippet": "Bring your favorite ideas to life With Pinterest, you can unlock tools that spark your creativity and help you find more inspiration."
+    },
+    {
+      "title": "Pinterest",
+      "url": "https://www.pinterest.com/login/",
+      "snippet": "turn on JavaScript."
+    },
+    {
+      "title": "Pinterest",
+      "url": "https://es.pinterest.com/login/",
+      "snippet": "Oh no! Pinterest doesn't work unless youturn on JavaScript."
+    },
+    {
+      "title": "Pinterest - Free download and install on Windows | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/9pfhdsf91b9r",
+      "snippet": "Good ideas start here! Discover billions of possibilities for every part of your life, from new recipes to creative home design ideas. …"
+    },
+    {
+      "title": "About Pinterest | Discover New Ideas and Shop What You Love",
+      "url": "https://about.pinterest.com/",
+      "snippet": "Pinterest is where ideas start online and turn into real-life moments. Discover what feels like you and shop in the most positive place …"
+    }
+  ]
+}

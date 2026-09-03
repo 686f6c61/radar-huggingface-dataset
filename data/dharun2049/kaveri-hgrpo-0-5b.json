@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "dharun2049/kaveri-hgrpo-0.5b",
+  "slug": "dharun2049-kaveri-hgrpo-0-5b",
+  "author": "dharun2049",
+  "url": "https://huggingface.co/dharun2049/kaveri-hgrpo-0.5b",
+  "created_at": "2026-09-03T18:13:21.000Z",
+  "updated_at": "2026-09-03T18:13:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "coding",
+    "cpp",
+    "grpo",
+    "reinforcement-learning",
+    "peft",
+    "lora",
+    "hgrpo",
+    "conversational",
+    "base_model:Qwen/Qwen2-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2-0.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1001698823,
+  "storage_human": "1.0 GB",
+  "base_model": "Qwen/Qwen2-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cache sous moteur : prix et risque de rouler sans - Carter-Cash",
+      "url": "https://www.carter-cash.com/blog/tout-savoir-cache-sous-moteur/",
+      "snippet": "Sep 30, 2025 · Dans cet article, découvrez le cache sous moteur, pièce à ne pas négliger sur sa voiture. Son prix, comment la …"
+    },
+    {
+      "title": "dharun2049/Kaveri-4B · Hugging Face",
+      "url": "https://huggingface.co/dharun2049/Kaveri-4B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Le cache sous moteur est-il obligatoire et peut-on rouler sans sans se ...",
+      "url": "https://www.option-auto-toulouse.com/publication/le-cache-sous-moteur-est-il-obligatoire-et-peut-on-rouler-sans-sans-se-mettre-en-tort/",
+      "snippet": "Jun 23, 2026 · Non, le cache sous-moteur n'est généralement pas « obligatoire » au sens d'un article unique du Code de la route. En …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=kaveri",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Rouler sans cache sous moteur, est-ce possible ? - Opisto",
+      "url": "https://www.opisto.fr/fr/entreprise/est-il-possible-de-rouler-sans-cache-sous-moteur/",
+      "snippet": "Feb 6, 2024 · Pouvez-vous continuer de rouler sans cache sous moteur s'il est cassé, fissuré ou absent ? Nos explications ici : rôle, …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "nur-dev/pns-bind-25m",
+  "slug": "nur-dev-pns-bind-25m",
+  "author": "nur-dev",
+  "url": "https://huggingface.co/nur-dev/pns-bind-25m",
+  "created_at": "2026-09-03T13:50:52.000Z",
+  "updated_at": "2026-09-03T13:57:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "long-context",
+    "memory",
+    "state-tracking",
+    "causal-evaluation",
+    "recurrent",
+    "question-answering",
+    "dataset:nur-dev/pns-world",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2082772804,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nur Haute Parfumerie Artisanale",
+      "url": "https://nurparfum.com/",
+      "snippet": "Nur – parfums de niche, haute parfumerie artisanale française. Élixirs de parfum (huiles/attars) ultra concentrés, matières premières …"
+    },
+    {
+      "title": "Qu’est-ce-que le numéro unique départemental (NUD) ?",
+      "url": "https://www.actionlogement.fr/qu-est-ce-que-le-numero-unique-departemental-nud",
+      "snippet": "Le NUR (numéro unique régional) ou NUD (numéro unique départemental) est le numéro de votre demande de logement social. Ce …"
+    },
+    {
+      "title": "Restaurant bar à viandes | Saint-Maximin (60) | NUR ET",
+      "url": "https://www.nur-et.fr/",
+      "snippet": "NUR ET, votre restaurant steakhouse à Saint-Maximin, vous propose des plats succulents à base de viande rouge, préparés avec …"
+    },
+    {
+      "title": "Coran : Sourate 24, An Nur (La Lumière) النُّور - YouTube",
+      "url": "https://www.youtube.com/watch?v=3-0s8JfDunM",
+      "snippet": "Nov 11, 2012 · Traduction approchée du sens des versets.. Sourate 24, An Nur (La Lumière) 64 versets - Post-hégirien n° 102"
+    },
+    {
+      "title": "Nur - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nur",
+      "snippet": "This disambiguation page lists articles associated with the title Nur. If an internal link incorrectly led you here, you may wish to …"
+    }
+  ]
+}

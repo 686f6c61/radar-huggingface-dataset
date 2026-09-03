@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "rafmacalaba/gliner-datause-displacement-probe",
+  "slug": "rafmacalaba-gliner-datause-displacement-probe",
+  "author": "rafmacalaba",
+  "url": "https://huggingface.co/rafmacalaba/gliner-datause-displacement-probe",
+  "created_at": "2026-09-03T18:20:09.000Z",
+  "updated_at": "2026-09-03T18:32:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner",
+  "languages": [],
+  "tags": [
+    "gliner",
+    "probe",
+    "data-use",
+    "token-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7363268,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA GeForce GTX 1070 Specs | TechPowerUp GPU Database",
+      "url": "https://www.techpowerup.com/gpu-specs/geforce-gtx-1070.c2840",
+      "snippet": "Jun 9, 2016 · The GeForce GTX 1070 was a performance-segment graphics card by NVIDIA, launched on June 10th, 2016. Built on …"
+    },
+    {
+      "title": "rafmacalaba/gliner-datause-probe · Hugging Face",
+      "url": "https://huggingface.co/rafmacalaba/gliner-datause-probe",
+      "snippet": "rafmacalaba / gliner-datause-probe like 0 Token Classification GLiNER PyTorch ner data-use tiered License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "1070 Anderlecht | Anderlecht - Facebook",
+      "url": "https://www.facebook.com/anderlecht.brussels/",
+      "snippet": "1070 Anderlecht, Anderlecht. 14,992 likes · 600 talking about this · 1,083 were here. Page officielle de l'Administration communale …"
+    },
+    {
+      "title": "rafmacalaba/gliner-probe · Hugging Face",
+      "url": "https://huggingface.co/rafmacalaba/gliner-probe",
+      "snippet": "gliner-probe Fine-tune of urchade/gliner_large-v2.1 for data-use mention extraction (dataset / survey / census / registry mentions in economics research papers). Labels NAMED_DATA — a proper name, title, or acronym of a specific data source DESCRIPTIVE_DATA — a source described in words but not named VAGUE_DATA — generic data wording with no identifiable source Training base model ..."
+    },
+    {
+      "title": "1070 — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/1070",
+      "snippet": "1070 Cette page concerne l'année 1070 du calendrier julien. Pour l'année 1070 av. J.-C., voir 1070 av. J.-C."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Raghav-Singhal/1pp-1.7b-raw-sft",
+  "slug": "raghav-singhal-1pp-1-7b-raw-sft",
+  "author": "Raghav-Singhal",
+  "url": "https://huggingface.co/Raghav-Singhal/1pp-1.7b-raw-sft",
+  "created_at": "2026-09-03T18:20:14.000Z",
+  "updated_at": "2026-09-03T18:20:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "1pp",
+    "one-persona-pretraining",
+    "sft",
+    "raw",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1661048832,
+  "parameters_human": "1.66B",
+  "storage_bytes": 3322122912,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Letter Q | Phonics Songs | Little Fox | Animated Songs for Kids",
+      "url": "https://www.youtube.com/watch?v=oWhUu6Y36I4",
+      "snippet": "Mar 14, 2019 · Queens like quilts. /q/ is the sound of Qq, Qq, Qq. Big Q, little q, I like Qq. Let's learn the letter Q and its sound! Visit …"
+    },
+    {
+      "title": "Raghav Singhal",
+      "url": "https://raghavsinghal10.github.io/",
+      "snippet": "Alignment pretraining: robustly aligning models from the start (token 0) of pretraining, rather than doing so late in mid-training or post-training, as is done usually (see SPP & Model Raising)."
+    },
+    {
+      "title": "The Letter Q | Alphabet A-Z | Jack Hartmann Let's Learn from A- Z",
+      "url": "https://www.youtube.com/watch?v=hKdnp6NvFZg",
+      "snippet": "Jul 30, 2020 · Learn to recognize the upper and lowercase letter Q, how to write the letter Q q and the sound that letter Q makes. …"
+    },
+    {
+      "title": "RaghavSinghal10 (Raghav Singhal) · GitHub",
+      "url": "https://github.com/RaghavSinghal10/",
+      "snippet": "AI PhD @ EPFL. RaghavSinghal10 has 27 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Learn The Letter Q | Let's Learn About The Alphabet | Phonics Song for ...",
+      "url": "https://www.youtube.com/watch?v=L987a64I2cY",
+      "snippet": "Sep 29, 2016 · Learn the Letter Q. This Alphabet song in our Let’s Learn About the Alphabet Series is all about the consonant Q."
+    }
+  ]
+}

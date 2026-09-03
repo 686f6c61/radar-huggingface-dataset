@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "hivetrace/HiveTraceGuard-Pro",
+  "slug": "hivetrace-hivetraceguard-pro",
+  "author": "hivetrace",
+  "url": "https://huggingface.co/hivetrace/HiveTraceGuard-Pro",
+  "created_at": "2026-05-21T02:57:17.000Z",
+  "updated_at": "2026-09-03T11:54:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "guardrail",
+    "safety",
+    "moderation",
+    "content-moderation",
+    "prompt-injection",
+    "jailbreak",
+    "russian",
+    "arxiv:2609.01046",
+    "conversational",
+    "ru",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 147,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2407778364,
+  "storage_human": "2.4 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Schweinefilet in Pfeffer-Champignon-Rahm - rezepte.callekocht.com",
+      "url": "https://rezepte.callekocht.com/schweinefilet-in-pfeffer-champignon-rahm/",
+      "snippet": "Perfekt zum Verschenken oder zum Selbstgenießen. Lieblingsgerichte aus der guten alten Zeit. Mit beliebten Kartoffelklassikern wie …"
+    },
+    {
+      "title": "Schweinefilet - CALLEkocht Rezepte - rezepte.callekocht.com",
+      "url": "https://rezepte.callekocht.com/ingredient/schweinefilet/",
+      "snippet": "Zutat: Schweinefilet Unsere neusten Rezepte Sonstiges Zurück zur Startseite Zum Webshop Rezeptübersicht Rezeptsuche Calle & …"
+    },
+    {
+      "title": "Dieses Schweinefilet Rezept mit Pfeffersoße musst du probieren ...",
+      "url": "https://callekocht.com/blogs/rezepte/dieses-schweinefilet-rezept-mit-pfeffersosse-musst-du-probieren",
+      "snippet": "Schweinefilet in Medaillons schneiden. Etwas Öl in einer großen Pfanne erhitzen. Medaillons von beiden Seiten kurz anbraten, bis sie …"
+    },
+    {
+      "title": "Geschnetzeltes vom Schweinefilet - shop.hoffmann-germany.de",
+      "url": "https://shop.hoffmann-germany.de/rezepte/callekocht_schweinefilet_geschnetzeltes.pdf",
+      "snippet": "In der Schmor- pfanne etwas Öl erhitzen und das Fleisch darin von allen Seiten scharf anbraten. Mit Salz und Pfefer würzen. Sobald …"
+    },
+    {
+      "title": "Dieses Schweinefilet Rezept mit Pfeffersoße musst du probieren!",
+      "url": "https://www.youtube.com/watch?v=cHIZU--cBYg",
+      "snippet": "Jan 30, 2026 · Heute zeigen wir euch ein schnelles Rezept für Schweinefilet in einer cremigen Pfeffersoße mit Spinat und …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sdadasdaga/act-pick-cube-2cam-chunk50",
+  "slug": "sdadasdaga-act-pick-cube-2cam-chunk50",
+  "author": "sdadasdaga",
+  "url": "https://huggingface.co/sdadasdaga/act-pick-cube-2cam-chunk50",
+  "created_at": "2026-09-03T14:00:29.000Z",
+  "updated_at": "2026-09-03T14:00:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:sdadasdaga/pick-cube-2cam",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51617414,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206510104,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "12 Things to Know Before Visiting Seville, Spain - Lonely Planet",
+      "url": "https://www.lonelyplanet.com/articles/things-to-know-before-traveling-to-seville",
+      "snippet": "Find everything you need to know about when to visit Seville, for how long and where to stay, plus tips on safety, food and etiquette."
+    },
+    {
+      "title": "Seville City Map - Lonely Planet",
+      "url": "https://shop.lonelyplanet.com/products/seville-city-map",
+      "snippet": "Durable and waterproof, with a slipcase and an easy-fold format, Lonely Planet's Seville City Map helps you travel with ease."
+    },
+    {
+      "title": "Spain Travel Guides | Lonely Planet",
+      "url": "https://shop.lonelyplanet.com/collections/spain",
+      "snippet": "Explore Spain’s vibrant culture with Lonely Planet’s Spain travel guides. Get advice on how to travel through the country, including …"
+    },
+    {
+      "title": "Digital eBooks Guides: Downloading – Lonely Planet support",
+      "url": "https://support.lonelyplanet.com/hc/en-us/articles/218157917-Digital-eBooks-Guides-Downloading",
+      "snippet": "Where is my download link?What's the best ebook format for my device?How to download to a desktopHow to download to an Apple …"
+    },
+    {
+      "title": "100 Weekends in Europe – Lonely Planet's Trade Website",
+      "url": "https://trade.lonelyplanet.com/pages/100-weekends-in-europe",
+      "snippet": "100 easy-to-follow short trip itineraries to amazing destinations in Europe from Scandinavia to Spain and everywhere in between …"
+    }
+  ]
+}

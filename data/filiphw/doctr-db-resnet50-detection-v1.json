@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Filiphw/doctr-db-resnet50-detection-v1",
+  "slug": "filiphw-doctr-db-resnet50-detection-v1",
+  "author": "Filiphw",
+  "url": "https://huggingface.co/Filiphw/doctr-db-resnet50-detection-v1",
+  "created_at": "2026-09-03T12:38:59.000Z",
+  "updated_at": "2026-09-03T12:39:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "doctr",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "doctr",
+    "pytorch",
+    "ocr",
+    "detection",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 102008395,
+  "storage_human": "102 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps. If there are …"
+    },
+    {
+      "title": "Get started with Google Maps",
+      "url": "https://support.google.com/maps/answer/144349?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Get started with Google Maps This article will help you set up, learn the basics, and explain various features of Google Maps. You …"
+    },
+    {
+      "title": "Google Maps Help",
+      "url": "https://support.google.com/maps/?hl=en",
+      "snippet": "Official Google Maps Help Center where you can find tips and tutorials on using Google Maps and other answers to frequently asked …"
+    },
+    {
+      "title": "Report data or content errors on Google Maps",
+      "url": "https://support.google.com/maps/answer/3094088?hl=en",
+      "snippet": "Report spam or bad data Any illegal, offensive, fraudulent, or malicious data on Google Maps is considered as spam. Users found to …"
+    },
+    {
+      "title": "Use navigation in Google Maps",
+      "url": "https://support.google.com/maps/answer/3273406?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Use navigation in Google Maps To get easy, turn-by-turn navigation to places, use the Google Maps app. Maps shows you directions …"
+    }
+  ]
+}

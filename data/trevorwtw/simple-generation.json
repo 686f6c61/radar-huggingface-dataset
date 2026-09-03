@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "trevorwtw/simple-generation",
+  "slug": "trevorwtw-simple-generation",
+  "author": "trevorwtw",
+  "url": "https://huggingface.co/trevorwtw/simple-generation",
+  "created_at": "2026-09-03T18:09:03.000Z",
+  "updated_at": "2026-09-03T18:09:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "This Day in HISTORY Daily Briefing",
+      "url": "https://www.history.com/this-day-in-history-daily-briefing",
+      "snippet": "History happens every day! Check in with your virtual assistant or wherever you get your podcasts to find out about the historical …"
+    },
+    {
+      "title": "simple-generation · PyPI",
+      "url": "https://pypi.org/project/simple-generation/",
+      "snippet": "Simple Generation Simple Generation offers a minimal interface to run text generation with HuggingFace checkpoints. The core idea is to ship many neat features out of the box, avoiding boilerplate. Simplegen is mainly for personal use and simple hardware setups (ideally, single-node single- or multi-gpu). If you are looking for production-ready inference engine consider looking elsewhere ..."
+    },
+    {
+      "title": "Jerusalem captured in First Crusade | July 15, 1099 | HISTORY",
+      "url": "https://www.history.com/this-day-in-history/July-15/jerusalem-captured-in-first-crusade",
+      "snippet": "Mar 3, 2010 · Also on This Day in History Discover more of the major events, famous births, notable deaths and everything else …"
+    },
+    {
+      "title": "Twitter Automation, Growth and Cleanup Tools - TweetStorm.ai",
+      "url": "https://tweetstorm.ai/",
+      "snippet": "Increase your X productivity with AI. Generate tweets, bios, hashtags, and handles, plus smart replies, advanced search, X automation tools, and browser extensions."
+    },
+    {
+      "title": "Elvis Presley dies | August 16, 1977 | HISTORY",
+      "url": "https://www.history.com/this-day-in-history/August-16/elvis-presley-dies",
+      "snippet": "Feb 9, 2010 · Also on This Day in History Discover more of the major events, famous births, notable deaths and everything else …"
+    }
+  ]
+}

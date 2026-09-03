@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Lygodactylus/Qwen3.8-27B-Uncensored-exl3-8bpw",
+  "slug": "lygodactylus-qwen3-8-27b-uncensored-exl3-8bpw",
+  "author": "Lygodactylus",
+  "url": "https://huggingface.co/Lygodactylus/Qwen3.8-27B-Uncensored-exl3-8bpw",
+  "created_at": "2026-09-03T13:54:46.000Z",
+  "updated_at": "2026-09-03T14:00:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "fr",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "exl3",
+    "exllamav3",
+    "qwen3.8",
+    "abliterated",
+    "uncensored",
+    "mtp",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "en",
+    "fr",
+    "zh",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:quantized:orcarouter/Qwen3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14777087216,
+  "parameters_human": "14.78B",
+  "storage_bytes": 29567287086,
+  "storage_human": "29.6 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Problème couleur cellules - Forum Excel - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-34384672-probleme-couleur-cellules",
+      "snippet": "Bonsoir, J'ai un problème dans mon tableau de travail Excel, je l'avais faits tout beau sous forme de tableau, et à force de copier …"
+    },
+    {
+      "title": "Tableau collé à un début de page. [Résolu] - Forum Word",
+      "url": "https://forums.commentcamarche.net/forum/affich-34679784-tableau-colle-a-un-debut-de-page",
+      "snippet": "Bonsoir, J'ai un soucis avec un fichier Word qu'une copine m'a donné. Je ne sais pas comment il a été fabriqué. Il comporte un …"
+    },
+    {
+      "title": "Récupérer carnet d'adresse Thunderbird [Résolu] - Thunderbird",
+      "url": "https://forums.commentcamarche.net/forum/affich-2760425-recuperer-carnet-d-adresse-thunderbird",
+      "snippet": "Résumé de la discussion Le problème central est de récupérer le carnet d'adresses Thunderbird après un changement d'ordinateur …"
+    },
+    {
+      "title": "Ressource demandée en cours d'utilisation [Résolu] - Forum Caméra",
+      "url": "https://forums.commentcamarche.net/forum/affich-29077008-ressource-demandee-en-cours-d-utilisation",
+      "snippet": "Nov 10, 2013 · Bonjour à toutes et à tous, je dispose d'une caméra sony hdr cx 220, et je souhaite mettre ma vidéo sur mon …"
+    },
+    {
+      "title": "Excel - Copier le contenu de cellule active - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-15454594-excel-copier-le-contenu-de-cellule-active",
+      "snippet": "Nov 3, 2014 · Donc, si par exemple tu veux copier le contenu de la cellule A1,B1 dans une cellule sur laquelle tu as cliqué (et qui …"
+    }
+  ]
+}

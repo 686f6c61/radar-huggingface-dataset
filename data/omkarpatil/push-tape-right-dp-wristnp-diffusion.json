@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "omkarpatil/push-tape-right-dp-wristnp-diffusion",
+  "slug": "omkarpatil-push-tape-right-dp-wristnp-diffusion",
+  "author": "omkarpatil",
+  "url": "https://huggingface.co/omkarpatil/push-tape-right-dp-wristnp-diffusion",
+  "created_at": "2026-09-03T12:48:57.000Z",
+  "updated_at": "2026-09-03T12:49:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion-policy",
+    "ffw_sg2_rev1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 274492048,
+  "parameters_human": "274.5M",
+  "storage_bytes": 1098027904,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipédia, l'encyclopédie libre",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "snippet": "Wikipédia L'encyclopédie libre que vous pouvez améliorer Accueil de la communauté Comment contribuer ? Portails thématiques …"
+    },
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Wikipédia, a szabad enciklopédia",
+      "url": "https://hu.wikipedia.org/wiki/Kezd%C5%91lap",
+      "snippet": "A Fun Home, alcímén A Family Tragicomic Alison Bechdel, a Dykes to Watch Out For című képsor alkotójának grafikus memoárja. …"
+    },
+    {
+      "title": "Wikipedia – Die freie Enzyklopädie",
+      "url": "https://de.wikipedia.org/wiki/Wikipedia:Hauptseite",
+      "snippet": "Wikipedia ist ein Projekt zum Aufbau einer Enzyklopädie aus freien Inhalten, zu denen du sehr gern beitragen kannst. Seit März 2001 …"
+    },
+    {
+      "title": "Wikipedia, l'enciclopedia libera",
+      "url": "https://it.wikipedia.org/wiki/Pagina_principale",
+      "snippet": "Wikipedia è un' enciclopedia online, libera e collaborativa. Grazie al contributo di volontari da tutto il mondo, Wikipedia è disponibile in …"
+    }
+  ]
+}

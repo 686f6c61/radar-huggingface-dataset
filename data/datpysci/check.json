@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DatPySci/check",
+  "slug": "datpysci-check",
+  "author": "DatPySci",
+  "url": "https://huggingface.co/DatPySci/check",
+  "created_at": "2026-08-15T23:15:40.000Z",
+  "updated_at": "2026-09-03T12:57:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2867373955325,
+  "storage_human": "2867.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "一个方框内有个勾（☑）怎么打出这符号_百度知道",
+      "url": "https://zhidao.baidu.com/question/136956635.html",
+      "snippet": "Feb 8, 2010 · 一个方框内有个勾（☑）怎么打出这符号☑这个符号可以用word的特殊字符打出来。以Word2016版为例，具体步骤如 …"
+    },
+    {
+      "title": "DatPySci (Nguyễn Minh Phúc) - Hugging Face",
+      "url": "https://huggingface.co/DatPySci",
+      "snippet": "Reinforcement learning, NLP Text Generation • Updated 5 days ago DatPySci/pythia-160m-spin-full"
+    },
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "DatPySci (Nguyễn Minh Phúc) - Hugging Face",
+      "url": "https://huggingface.co/DatPySci/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 4 days ago ... updated a model 7 days ago"
+    },
+    {
+      "title": "acrgis中合并dem栅格数据，但是合成后的高程出现了问题，怎么解 …",
+      "url": "https://zhihu.geoscene.cn/question/14688",
+      "snippet": "acrgis中合并dem栅格数据，但是合成后的高程出现了问题，怎么解决？求解 自栅格dem没有6000多的 2017-04-25 添加评论 分享 没 …"
+    }
+  ]
+}

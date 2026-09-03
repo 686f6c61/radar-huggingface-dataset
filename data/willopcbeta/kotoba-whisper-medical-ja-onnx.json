@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "willopcbeta/kotoba-whisper-medical-ja-ONNX",
+  "slug": "willopcbeta-kotoba-whisper-medical-ja-onnx",
+  "author": "willopcbeta",
+  "url": "https://huggingface.co/willopcbeta/kotoba-whisper-medical-ja-ONNX",
+  "created_at": "2026-09-03T14:53:32.000Z",
+  "updated_at": "2026-09-03T14:53:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "medical",
+    "japanese",
+    "kotoba-whisper",
+    "fine-tuned",
+    "ja",
+    "base_model:kenrouse/kotoba-whisper-medical-ja",
+    "base_model:quantized:kenrouse/kotoba-whisper-medical-ja",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9379634528,
+  "storage_human": "9.4 GB",
+  "base_model": "kenrouse/kotoba-whisper-medical-ja",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Keyword Rank Checker Tool - Ahrefs",
+      "url": "https://ahrefs.com/keyword-rank-checker",
+      "snippet": "Instantly see where you rank in Google for any keyword across hundreds of locations. 100% free. No registration required."
+    },
+    {
+      "title": "willopcbeta/whisper-medium-jp-ONNX · Hugging Face",
+      "url": "https://huggingface.co/willopcbeta/whisper-medium-jp-ONNX",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Rank Tracker by Ahrefs: Track Keyword Rankings Globally",
+      "url": "https://ahrefs.com/rank-tracker",
+      "snippet": "Ahrefs’ Rank Tracker tracks keywords on desktop and mobile, across 190+ locations. Compare your visibility to competitors and fill in …"
+    },
+    {
+      "title": "Whisper-ONNX - a willopcbeta Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/willopcbeta/whisper-onnx",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Rank tracker – Website rank tracking tool | Ranktracker",
+      "url": "https://www.ranktracker.com/rank-tracker/",
+      "snippet": "6 days ago · With a keyword rank tracker, you can compare your progress against competitors by tracking and analyzing keyword …"
+    }
+  ]
+}

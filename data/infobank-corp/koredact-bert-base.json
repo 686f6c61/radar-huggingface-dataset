@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "infobank-corp/koredact-bert-base",
+  "slug": "infobank-corp-koredact-bert-base",
+  "author": "infobank-corp",
+  "url": "https://huggingface.co/infobank-corp/koredact-bert-base",
+  "created_at": "2026-09-03T12:00:22.000Z",
+  "updated_at": "2026-09-03T12:00:25.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "ner",
+    "pii",
+    "korean",
+    "koredact",
+    "ko",
+    "dataset:infobank-corp/korean-pii-ner",
+    "base_model:klue/bert-base",
+    "base_model:finetune:klue/bert-base",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110047515,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440213412,
+  "storage_human": "440 MB",
+  "base_model": "klue/bert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sportwetten mit ⓵ ODDSET - Die Sportwette | ODDSET",
+      "url": "https://www.oddset.de/de/sports",
+      "snippet": "Sportwetten Sportwetten mit top Quoten Online bei ODDSET ™ ODDSET Sportwetten bietet dir 24-7-365 Tage im Jahr mit Sitz in …"
+    },
+    {
+      "title": "ODDSET",
+      "url": "https://www.oddset.de/de/labelhost/login",
+      "snippet": "Die ODDSET Sportwetten GmbH hat mit Bescheid vom 15.12.2022 vom Regierungspräsidium Darmstadt eine Erlaubnis zur …"
+    },
+    {
+      "title": "ODDSET_Wettanleitung_Kundenservice_neu.pdf",
+      "url": "https://fanzone.oddset.de/wp-content/uploads/2020/01/191121_ODDSET_Wettanleitung_Einzelseite.pdf",
+      "snippet": "ODDSET SPORT APP Mit der ODDSET Sport App können Sie Ihre Wetten schnell, einfach und sicher mobil vorbereiten. Die App …"
+    },
+    {
+      "title": "ODDSET ™ Sportwetten Blog - ODDSET FANZONE",
+      "url": "https://fanzone.oddset.de/",
+      "snippet": "Jul 11, 2016 · ©ODDSET Sportwetten GmbH Bitte beachte, dass alle abgebildeten Inhalte dieser Website wie Texte, Bilder, Grafiken …"
+    },
+    {
+      "title": "Bundesliga Wetten mit top Quoten bei ODDSET | ODDSET",
+      "url": "https://www.oddset.de/de/sports/fu%C3%9Fball-4/wetten/deutschland-17/bundesliga-102842",
+      "snippet": "Fußball Wetten bei ODDSET Mach dein Ding. Du sagst an. Dein Tipp? Wette jetzt online"
+    }
+  ]
+}

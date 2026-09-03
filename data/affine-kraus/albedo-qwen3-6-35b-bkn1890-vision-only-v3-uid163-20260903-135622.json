@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "affine-kraus/albedo-qwen3.6-35b-bkn1890-vision-only-v3-uid163-20260903-135622",
+  "slug": "affine-kraus-albedo-qwen3-6-35b-bkn1890-vision-only-v3-uid163-20260903-135622",
+  "author": "affine-kraus",
+  "url": "https://huggingface.co/affine-kraus/albedo-qwen3.6-35b-bkn1890-vision-only-v3-uid163-20260903-135622",
+  "created_at": "2026-09-03T13:56:23.000Z",
+  "updated_at": "2026-09-03T13:56:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916585166,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AFFiNE — Open-Source Knowledge Base Software",
+      "url": "https://affine.pro/",
+      "snippet": "What is AFFiNE? AFFiNE is the open-source Notion and Miro alternative — combining docs, whiteboards, databases, and AI in one …"
+    },
+    {
+      "title": "Download for Offline Notes and Whiteboards | AFFiNE",
+      "url": "https://affine.pro/download",
+      "snippet": "Download AFFiNE for offline docs, whiteboards, local-first storage, desktop productivity, and mobile workflows across macOS, …"
+    },
+    {
+      "title": "GitHub - toeverything/AFFiNE: There can be more than Notion and …",
+      "url": "https://github.com/toeverything/AFFiNE",
+      "snippet": "AFFiNE is an open-source, all-in-one workspace and an operating system for all the building blocks that assemble your knowledge …"
+    },
+    {
+      "title": "Fonction affine — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Fonction_affine",
+      "snippet": "Les fonctions constantes et linéaires sont des exemples de fonctions affines. Les fonctions affines sont elles-mêmes des exemples …"
+    },
+    {
+      "title": "Définitions : affine - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/affine/1467",
+      "snippet": "affine - Définitions Français : Retrouvez la définition de affine, ainsi que les homonymes, expressions... - synonymes, homonymes, …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "fatih-can/Kumru-2B-Abliterated-GGUF",
+  "slug": "fatih-can-kumru-2b-abliterated-gguf",
+  "author": "fatih-can",
+  "url": "https://huggingface.co/fatih-can/Kumru-2B-Abliterated-GGUF",
+  "created_at": "2026-09-03T10:06:12.000Z",
+  "updated_at": "2026-09-03T12:02:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "gguf",
+    "abliteration",
+    "uncensored",
+    "llama.cpp",
+    "text-generation",
+    "tr",
+    "base_model:vngrs-ai/Kumru-2B",
+    "base_model:quantized:vngrs-ai/Kumru-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2375138304,
+  "parameters_human": "2.38B",
+  "storage_bytes": 16215765888,
+  "storage_human": "16.2 GB",
+  "base_model": "vngrs-ai/Kumru-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fatih (district) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Fatih_(district)",
+      "snippet": "Fatih constitue le vieux quartier historique au cœur de la ville d'Istanbul. Il s'étend sur la zone conquise par Mehmet le Conquérant, le …"
+    },
+    {
+      "title": "Fatih - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fatih",
+      "snippet": "The name \"Fatih\" comes from the Ottoman emperor Fatih Sultan Mehmed (Mehmed the Conqueror or Mehmed II), and means …"
+    },
+    {
+      "title": "Salât al-Fâtih : texte en arabe, phonétique et traduction complète.",
+      "url": "https://tidjaniyyah.net/la-salat-al-fatih/",
+      "snippet": "Dec 18, 2025 · Apprenez la Salât al-Fâtih avec le texte en arabe, la transcription phonétique et la traduction en français pour faciliter …"
+    },
+    {
+      "title": "Prénom Fatih (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/fatih/prenom-1069",
+      "snippet": "Quelle est l'origine du prénom Fatih ? Fatih est un prénom arabe. Fatih peut aussi être considéré comme un prénom marocain."
+    },
+    {
+      "title": "Prénom FATIH : Signification, Origine, Caractère et Statistiques ...",
+      "url": "https://www.guide-bebe.com/prenoms/fatih-2083",
+      "snippet": "Aug 23, 2025 · Le prénom Fatih, d'origine turque, signifie \"conquérant\" ou \"vainqueur\". Ce prénom est porté par plusieurs …"
+    }
+  ]
+}

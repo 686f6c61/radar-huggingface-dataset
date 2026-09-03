@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Toleng/koplak-flash-master-s21-1.5b-instruct",
+  "slug": "toleng-koplak-flash-master-s21-1-5b-instruct",
+  "author": "Toleng",
+  "url": "https://huggingface.co/Toleng/koplak-flash-master-s21-1.5b-instruct",
+  "created_at": "2026-09-03T11:45:06.000Z",
+  "updated_at": "2026-09-03T11:47:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-Coder-1.5B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-Coder-1.5B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889226,
+  "storage_human": "3.1 GB",
+  "base_model": "unsloth/Qwen2.5-Coder-1.5B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Domácí švestková omáčka recept 2026 - Receptia.cz",
+      "url": "https://www.receptia.cz/domaci-svestkova-omacka/",
+      "snippet": "Vyzkoušejte tuto chutnou omáčku jako přílohu ke křehkému masu nebo ji mějte po ruce u letní grilovačky pro zpestření servírovaných …"
+    },
+    {
+      "title": "Jak udělat švestkovou omáčku? Chutná je z čerstvých či sušených …",
+      "url": "https://www.toprecepty.cz/tipy-triky/jak-udelat-svestkovou-nebo-povidlovou-omacku/",
+      "snippet": "Omáčku připravujeme z máslové jíšky, kterou zalijeme masovým vývarem. Uzený vývar chutná se švestkami nejlépe. Maso …"
+    },
+    {
+      "title": "Domácí švestková omáčka | Recept na Kupi.cz",
+      "url": "https://www.kupi.cz/recepty/recept/6339-domaci-svestkova-omacka",
+      "snippet": "Klasická domácí omáčka s moderními prvky - zjemněná bylinkami, kořením a ovocnou svěžestí. Ideální k pečenému masu, grilované …"
+    },
+    {
+      "title": "Švestková omáčka - Toprecepty.cz",
+      "url": "https://www.toprecepty.cz/recept/872-svestkova-omacka/",
+      "snippet": "Krok 1: Do 500 ml vody dáme vařit předem oprané sušené švestky, vypeckované kompotované švestky a švestková povidla. Krok 2: …"
+    },
+    {
+      "title": "Švestková omáčka - Apetit Online",
+      "url": "https://www.apetitonline.cz/recept/svestkova-omacka",
+      "snippet": "Mouku opékejte na pánvi na rozehřátém másle (či jiném tuku) na nízkém ohni cca 3 minuty, aby vznikla jíška světle zlatavé barvy. …"
+    }
+  ]
+}

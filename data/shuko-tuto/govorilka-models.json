@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "shuko-tuto/govorilka-models",
+  "slug": "shuko-tuto-govorilka-models",
+  "author": "shuko-tuto",
+  "url": "https://huggingface.co/shuko-tuto/govorilka-models",
+  "created_at": "2026-09-03T15:05:36.000Z",
+  "updated_at": "2026-09-03T15:07:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ncnn",
+    "whisper",
+    "silero-vad",
+    "speech-recognition",
+    "voice-activity-detection",
+    "godot",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 224939944,
+  "storage_human": "225 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "维基百科的官方网址是什么？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/820729145772572492.html",
+      "snippet": "Sep 9, 2024 · 1. 访问wiki百科中文版的官方网站，请输入以下网址： https://www.wiki.com。 2. 维基百科是一个基于wiki技术的免费、 …"
+    },
+    {
+      "title": "shuko-tuto (ooo-) - Hugging Face",
+      "url": "https://huggingface.co/shuko-tuto/models",
+      "snippet": "Sort: Recently updated. shuko-tuto/cf-diffusion_models. Updated 28 days ago. shuko-tuto/cf-clip. 5B • Updated 28 days ago • 2"
+    },
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "SHUNKO MODELS",
+      "url": "http://www.shunko-models.com/index-en.html",
+      "snippet": "Released : one new decal and two rerelease decals. (August/4/'26) Released : two new decals and one rerelease decal. (July/4/'26) Released : two new decals. (June/12/'26) Released : one rerelease decal. (June/6/'26) Update : Where to buy is updated. (September/1/'25)"
+    },
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "一般常见的几个波浪线型符号（常见度由高到低）（en.wikipedia.org/wiki/T）： 「~」 U+007E TILDE（最常见，英文状态下 shift 加 1 …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "omkarpatil/blue-cylinder-handover-dp-wristnp-diffusion",
+  "slug": "omkarpatil-blue-cylinder-handover-dp-wristnp-diffusion",
+  "author": "omkarpatil",
+  "url": "https://huggingface.co/omkarpatil/blue-cylinder-handover-dp-wristnp-diffusion",
+  "created_at": "2026-09-03T12:44:45.000Z",
+  "updated_at": "2026-09-03T12:46:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion-policy",
+    "ffw_sg2_rev1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 274492048,
+  "parameters_human": "274.5M",
+  "storage_bytes": 1098027904,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PerlaPA 2019: come funziona e a cosa serve il sistema di banche dati ...",
+      "url": "https://www.forumpa.it/open-government/partecipazione-trasparenza/perlapa-2019-come-funziona-e-a-cosa-serve-il-sistema-di-banche-dati-della-pubblica-amministrazione/",
+      "snippet": "Dec 5, 2019 · PerlaPA: che cos’è e a che cosa serve Il sistema PerlaPA è nato come unione di banche dati (ciascuna delle quali …"
+    },
+    {
+      "title": "Smart Working e Pubblica Amministrazione - FPA",
+      "url": "https://www.forumpa.it/riforma-pa/smart-working/",
+      "snippet": "Jan 8, 2024 · Leggi tutto riguardo a su FPA, il sito istituzionale con una finestra aperta verso la pubblica amministrazione."
+    },
+    {
+      "title": "Documento informatico e firme elettroniche, cosa cambia nel nuovo CAD",
+      "url": "https://www.forumpa.it/pa-digitale/documento-informatico-e-firme-elettroniche-cosa-cambia-nel-nuovo-cad/",
+      "snippet": "Sep 20, 2016 · Come cambia la disciplina delle firme elettroniche nel nuovo CAD? Come si sa, si tratta di un percorso lungo e …"
+    },
+    {
+      "title": "Comunicazione Pubblica nella PA: tutto quello che c'è da sapere",
+      "url": "https://www.forumpa.it/open-government/comunicazione-pubblica/",
+      "snippet": "Una pubblica amministrazione, per dirsi trasparente, deve saper applicare una comunicazione pubblica adeguata, efficace ed efficiente."
+    },
+    {
+      "title": "Il dirigente pubblico: incarichi, responsabilità e prospettive ... - FPA",
+      "url": "https://www.forumpa.it/riforma-pa/il-dirigente-pubblico-incarichi-responsabilita-e-prospettive-di-riforma/",
+      "snippet": "Apr 3, 2020 · Una guida per scoprire quali sono le caratteristiche salienti della figura del dirigente pubblico, le modalità con cui …"
+    }
+  ]
+}

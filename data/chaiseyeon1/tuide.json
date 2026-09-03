@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Chaiseyeon1/Tuide",
+  "slug": "chaiseyeon1-tuide",
+  "author": "Chaiseyeon1",
+  "url": "https://huggingface.co/Chaiseyeon1/Tuide",
+  "created_at": "2026-09-03T17:22:49.000Z",
+  "updated_at": "2026-09-03T17:23:49.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85130290,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fußball 2. Bundesliga: Ergebnisse - 4. Spieltag - Sportschau.de",
+      "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/deutschland-2-bundesliga/spiele-und-ergebnisse",
+      "snippet": "Die Spiele, Ergebnisse und Liveticker des aktuellen Spieltags in der 2. Bundesliga im Fußball: heute live."
+    },
+    {
+      "title": "Chaiseyeon1 (Chaiseyeon) - Hugging Face",
+      "url": "https://huggingface.co/Chaiseyeon1",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 6 hours ago ... liked a model about 6 hours ago"
+    },
+    {
+      "title": "Live-Konferenz | Fußball 2. Bundesliga: Live-Konferenz - 4. Spieltag ...",
+      "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/deutschland-2-bundesliga/konferenz",
+      "snippet": "Die Live-Konferenz des aktuellen Spieltags in der 2. Bundesliga im Fußball: heute live."
+    },
+    {
+      "title": "Chaiseyeon1 (Chaiseyeon) - Hugging Face",
+      "url": "https://huggingface.co/Chaiseyeon1/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... liked a model about 12 hours ago"
+    },
+    {
+      "title": "Live-Konferenz | 2. Bundesliga | 4. Spieltag | Saison 2026/27",
+      "url": "https://www.kicker.de/2-bundesliga/live-konferenz",
+      "snippet": "Aktuelle Livekonferenz mit Liveticker, Spielereignissen und Ergebnissen zu den 2. Bundesliga-Spielen der Saison 2026/27."
+    }
+  ]
+}

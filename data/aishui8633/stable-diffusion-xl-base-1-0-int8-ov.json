@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "aishui8633/stable-diffusion-xl-base-1.0-int8-ov",
+  "slug": "aishui8633-stable-diffusion-xl-base-1-0-int8-ov",
+  "author": "aishui8633",
+  "url": "https://huggingface.co/aishui8633/stable-diffusion-xl-base-1.0-int8-ov",
+  "created_at": "2026-09-03T14:57:27.000Z",
+  "updated_at": "2026-09-03T14:57:28.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-image",
+    "stable-diffusion",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:quantized:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3487633566,
+  "storage_human": "3.5 GB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | Ottobock Deutschland",
+      "url": "https://www.ottobock.com/de-de/startseite",
+      "snippet": "Ottobock bietet innovative Produkte in den Bereichen Prothesen, Orthesen, Rollstühle und Mobilität bei neurologischen Krankheiten."
+    },
+    {
+      "title": "stabilityai/stable-diffusion-xl-base-1.0 · Hugging Face",
+      "url": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Welcome to Ottobock",
+      "url": "https://www.ottobock.com/en-us/home",
+      "snippet": "Ottobock offers innovative products in the areas of orthotics & prosthetics for patients who suffer from amputations, injuries, or …"
+    },
+    {
+      "title": "OpenVINO/stable-diffusion-xl-base-1.0-int8-ov · Hugging Face",
+      "url": "https://huggingface.co/OpenVINO/stable-diffusion-xl-base-1.0-int8-ov",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ottobock worldwide – The Human Empowerment Company",
+      "url": "https://corporate.ottobock.com/en/home",
+      "snippet": "Jul 20, 2026 · Ottobock is the leading innovator for prosthetics, orthoses and exoskeletons. Experience our family business, …"
+    }
+  ]
+}

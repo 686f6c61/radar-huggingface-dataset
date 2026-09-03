@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Atmyre/qwen3-8b-ao-strict-book-c1p00",
+  "slug": "atmyre-qwen3-8b-ao-strict-book-c1p00",
+  "author": "Atmyre",
+  "url": "https://huggingface.co/Atmyre/qwen3-8b-ao-strict-book-c1p00",
+  "created_at": "2026-09-03T14:24:13.000Z",
+  "updated_at": "2026-09-03T14:24:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "activation-oracle",
+    "interpretability",
+    "qwen3",
+    "concept-strict-book",
+    "arxiv:2512.15674",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 698419728,
+  "storage_human": "698 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Search by your Zip Code or City to find your nearest Lidl and start saving! Never miss another offer!"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/Lidl/",
+      "snippet": "Restaurants Gas stations ATMs Shopping"
+    },
+    {
+      "title": "Store Finder - Lidl GB",
+      "url": "https://www.lidl.co.uk/c/store-finder/s10023098",
+      "snippet": "Pop your postcode into the box and click your nearest store to see opening times and all the offers within grabbing distance. Never …"
+    },
+    {
+      "title": "Lidl autour de moi : trouvez un magasin proche rapidement",
+      "url": "https://www.telephone.city/enseigne/lidl/",
+      "snippet": "Aug 19, 2026 · Vous cherchez un Lidl autour de vous ? Accédez en quelques secondes aux magasins Lidl proches, avec leurs …"
+    },
+    {
+      "title": "Lidl, Chişinău, MD | Company Information",
+      "url": "https://www.infobel.com/en/moldova/lidl/chisinau/MD100054331/businessdetails.aspx",
+      "snippet": "Jul 1, 2026 · The company best placed in Chișinău in our national ranking is in position #5 in terms of turnover."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "onnx-community/twitter-roberta-base-emotion-ONNX",
+  "slug": "onnx-community-twitter-roberta-base-emotion-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/twitter-roberta-base-emotion-ONNX",
+  "created_at": "2026-09-03T11:56:25.000Z",
+  "updated_at": "2026-09-03T11:56:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "roberta",
+    "text-classification",
+    "arxiv:2010.12421",
+    "base_model:cardiffnlp/twitter-roberta-base-emotion",
+    "base_model:quantized:cardiffnlp/twitter-roberta-base-emotion",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1338961788,
+  "storage_human": "1.3 GB",
+  "base_model": "cardiffnlp/twitter-roberta-base-emotion",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONNX | Home",
+      "url": "https://onnx.ai/",
+      "snippet": "ONNX is an open format built to represent machine learning models. ONNX defines a common set of operators - the building blocks …"
+    },
+    {
+      "title": "GitHub - onnx/onnx: Open standard for machine learning …",
+      "url": "https://github.com/onnx/onnx",
+      "snippet": "Open Neural Network Exchange (ONNX) is an open ecosystem that empowers AI developers to choose the right tools as their …"
+    },
+    {
+      "title": "ONNX 1.24.0 documentation",
+      "url": "https://onnx.ai/onnx/",
+      "snippet": "ONNX documentation ¶ Introduction to ONNX ONNX Concepts ONNX with Python Converters API Reference Versioning Data …"
+    },
+    {
+      "title": "ONNX Runtime | Home",
+      "url": "https://onnxruntime.ai/",
+      "snippet": "On-device training with ONNX Runtime lets developers take an inference model and train it locally to deliver a more personalized and …"
+    },
+    {
+      "title": "ONNX : Entraînez-vous dans n'importe quel cadre, déployez",
+      "url": "https://www.datacamp.com/fr/tutorial/onnx",
+      "snippet": "Nov 12, 2025 · ONNX est un format standard ouvert pour les modèles d'apprentissage automatique qui favorise l'interopérabilité : il …"
+    }
+  ]
+}

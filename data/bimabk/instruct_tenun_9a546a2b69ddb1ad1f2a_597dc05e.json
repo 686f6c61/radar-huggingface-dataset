@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bimabk/instruct_tenun_9a546a2b69ddb1ad1f2a_597dc05e",
+  "slug": "bimabk-instruct_tenun_9a546a2b69ddb1ad1f2a_597dc05e",
+  "author": "bimabk",
+  "url": "https://huggingface.co/bimabk/instruct_tenun_9a546a2b69ddb1ad1f2a_597dc05e",
+  "created_at": "2026-09-03T12:58:11.000Z",
+  "updated_at": "2026-09-03T13:03:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/bigscience--bloomz-560m",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 223117077,
+  "storage_human": "223 MB",
+  "base_model": "None",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "小众女生头像 - 高清图片，堆糖，美图壁纸兴趣社区",
+      "url": "https://www.duitang.com/blogs/tag/?name=%E5%B0%8F%E4%BC%97%E5%A5%B3%E7%94%9F%E5%A4%B4%E5%83%8F",
+      "snippet": "小众女生头像图片、小众女生头像高清图片，堆糖精选最新小众女生头像图片大全，一键收藏免费下载。"
+    },
+    {
+      "title": "小众女头像 - 高清图片，堆糖，美图壁纸兴趣社区",
+      "url": "https://www.duitang.com/blogs/tag/?name=%E5%B0%8F%E4%BC%97%E5%A5%B3%E5%A4%B4%E5%83%8F",
+      "snippet": "小众女头像图片、小众女头像高清图片，堆糖精选最新小众女头像图片大全，一键收藏免费下载。"
+    },
+    {
+      "title": "小众女头像图片-小众女头像素材-小众女头像设计模板高清免费下载",
+      "url": "https://www.58pic.com/tupian/xiaozhongnutouxiang.html",
+      "snippet": "千图网为您找到28966张小众女头像素材,千图网同时还提供小众女头像相关图片素材、模板，支持PSD/PNG/JPG等多场景使用方便快 …"
+    },
+    {
+      "title": "100张绝美且少见的微信头像！氛围满满的高级小众女生头像来了",
+      "url": "https://www.sohu.com/a/797736609_121814835",
+      "snippet": "Apr 17, 2024 · 这种头像不仅适合用于商务和职场，还能让你在朋友圈和其他社交圈子中立刻赢得关注。 总的来说，这100张高级小众 …"
+    },
+    {
+      "title": "99张小众|氛围感|ins风|高清 女生头像~超爱 - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/651696376",
+      "snippet": "最近收集了一些很有氛围感的女生头像！ 小众|氛围感|ins风|高清 超有feeling～ 好啦直接上图上图！ 喜欢记得点赞呀！ 先更新到这里 …"
+    }
+  ]
+}

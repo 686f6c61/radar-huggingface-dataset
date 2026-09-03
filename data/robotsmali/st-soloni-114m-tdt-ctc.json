@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "RobotsMali/st-soloni-114m-tdt-ctc",
+  "slug": "robotsmali-st-soloni-114m-tdt-ctc",
+  "author": "RobotsMali",
+  "url": "https://huggingface.co/RobotsMali/st-soloni-114m-tdt-ctc",
+  "created_at": "2025-12-27T19:06:39.000Z",
+  "updated_at": "2026-09-03T17:48:29.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "bm",
+    "fr"
+  ],
+  "tags": [
+    "nemo",
+    "speech-translation",
+    "audio",
+    "FastConformer",
+    "Conformer",
+    "pytorch",
+    "Bambara",
+    "French",
+    "NeMo",
+    "automatic-speech-recognition",
+    "bm",
+    "fr",
+    "dataset:RobotsMali/jeli-asr",
+    "base_model:RobotsMali/soloni-114m-tdt-ctc-v1",
+    "base_model:finetune:RobotsMali/soloni-114m-tdt-ctc-v1",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 455536640,
+  "storage_human": "456 MB",
+  "base_model": "RobotsMali/soloni-114m-tdt-ctc-v1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech Translation",
+      "dataset": "Jeli-ASR",
+      "metric": "Test BLEU",
+      "value": 24.18
+    },
+    {
+      "task": "Speech Translation",
+      "dataset": "Jeli-ASR",
+      "metric": "Test WER",
+      "value": 70.43
+    },
+    {
+      "task": "Speech Translation",
+      "dataset": "Jeli-ASR",
+      "metric": "Test CER",
+      "value": 55.98
+    }
+  ],
+  "sources": [
+    {
+      "title": "I think my account has been hacked - Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/i-think-my-account-has-been-hacked/c9b07d13-96b4-4828-8de3-e38bbb03b623?CorrelationId=541907a1-332d-4a84-a937-dd0123f7a87d",
+      "snippet": "Nov 26, 2024 · Thanks for using Microsoft products and posting in the Community. For your current problem, it's obvious that your …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/es-es/windows/forum/windows_7-update/error-codigo-0xc004fo63/e126567c-6231-47ca-9833-3d467f4b1ec5",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/en-us/windows/forum/all/update-for-microsoft-visual-c-2008-service-pack-1/",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/windows_10-windows_install/%E7%84%A1%E6%96%99%EF%BD%97%EF%BD%89%EF%BD%8E/c2d55ab7-c1e8-4dea-a078-61e5076b3814一部引用Windows10をライセンス認証できない理由上記にも下記の記載があるのでデバイスが変更されたらだめなようです＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊Windows7ServicePack1またはWindows8.1Updateから無償でWindows10にアップグレードした無償でWindows10にアップグレードした後、ライセンス認証されていない状態になった場合は、次の手順を実行してみてください。1.[スタート]ボタン画像を選択し、[設定]、[更新とセキュリティ]、[ライセンス認証]の順に選びます。2.[ストアに移動]を選択し、お使いのデバイスに適用できる有効なライセンスがあるかどうかを確かめます。使用できるライセンスがない場合は、ストアからWindowsを購入する必要があります。注意&",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â®ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£/b45f8dde-aa4a-4598-ab6e-21a67f8b6ec2",
+      "snippet": ""
+    }
+  ]
+}

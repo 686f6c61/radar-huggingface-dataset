@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Guru-Raja-124/a2c-PandaPickAndPlace-v3",
+  "slug": "guru-raja-124-a2c-pandapickandplace-v3",
+  "author": "Guru-Raja-124",
+  "url": "https://huggingface.co/Guru-Raja-124/a2c-PandaPickAndPlace-v3",
+  "created_at": "2026-09-03T15:20:51.000Z",
+  "updated_at": "2026-09-03T15:27:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaPickAndPlace-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 243664,
+  "storage_human": "243664 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guru.com - Find and Hire Expert Freelancers",
+      "url": "https://www.guru.com/",
+      "snippet": "On Guru, businesses and expert freelancers from around the globe connect, collaborate, and get work done on a flexible and secure …"
+    },
+    {
+      "title": "KraTUZen/a2c-PandaPickAndPlace-v3 · Hugging Face",
+      "url": "https://huggingface.co/KraTUZen/a2c-PandaPickAndPlace-v3",
+      "snippet": "The agent is trained using A2C, a synchronous variant of Actor-Critic methods. The environment is PandaPickAndPlace-v3, where the agent must control a robotic arm to pick up and place objects."
+    },
+    {
+      "title": "Les meilleurs restaurants 2026 proche de moi - Restaurant Guru",
+      "url": "https://fr.restaurantguru.com/",
+      "snippet": "Si vous recherchez des mets goûteux, Restaurant Guru est là pour vous aider à trouver les meilleurs restaurants, cafés et bars à …"
+    },
+    {
+      "title": "a1024053774/a2c-PandaPickAndPlace-v3 · Hugging Face",
+      "url": "https://huggingface.co/a1024053774/a2c-PandaPickAndPlace-v3",
+      "snippet": "A2C Agent playing PandaPickAndPlace-v3 This is a trained model of a A2C agent playing PandaPickAndPlace-v3 using the stable-baselines3 library."
+    },
+    {
+      "title": "Stop running your business on confidently - get Guru",
+      "url": "https://www.getguru.com/fr",
+      "snippet": "Guru transforms scattered knowledge into a structured, governed, continuously improving source of truth—and delivers it to every …"
+    }
+  ]
+}

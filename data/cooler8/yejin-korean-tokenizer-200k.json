@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "cooler8/yejin-korean-tokenizer-200k",
+  "slug": "cooler8-yejin-korean-tokenizer-200k",
+  "author": "cooler8",
+  "url": "https://huggingface.co/cooler8/yejin-korean-tokenizer-200k",
+  "created_at": "2026-09-03T12:30:27.000Z",
+  "updated_at": "2026-09-03T12:30:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tokenizer",
+    "korean",
+    "bpe",
+    "byte-level-bpe",
+    "ko",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18648311,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Visual C++ Redistributable latest supported downloads",
+      "url": "https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170",
+      "snippet": "Mar 9, 2026 · The following table lists the latest supported Microsoft Visual C++ v14 Redistributable packages. The latest supported …"
+    },
+    {
+      "title": "Microsoft Visual C++ Redistributable Download Free - 14.51.36247.0 ...",
+      "url": "https://www.techspot.com/downloads/6776-visual-c-redistributable-package.html",
+      "snippet": "Jul 28, 2026 · Download Microsoft Visual C++ Redistributable Package - The Visual C++ Redistributable Packages install run-time …"
+    },
+    {
+      "title": "Visual Studio Downloads for Windows",
+      "url": "https://visualstudio.microsoft.com/downloads/",
+      "snippet": "This package installs run-time components of Visual C++ libraries and can be used to run such applications on a computer even if it …"
+    },
+    {
+      "title": "Microsoft Visual C++ - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft_Visual_C%2B%2B",
+      "snippet": "Microsoft Visual C++ (MSVC) is a compiler for the C, C++, C++/CLI and C++/CX programming languages by Microsoft. MSVC is …"
+    },
+    {
+      "title": "C++ Compiler | Download C++ for Windows - Visual Studio IDE",
+      "url": "https://visualstudio.microsoft.com/vs/features/cplusplus/",
+      "snippet": "Download free Visual Studio IDE to build cross-platform apps for Linux, iOS, Android, IoT, and Windows devices using latest, …"
+    }
+  ]
+}

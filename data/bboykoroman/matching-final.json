@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Bboykoroman/matching-final",
+  "slug": "bboykoroman-matching-final",
+  "author": "Bboykoroman",
+  "url": "https://huggingface.co/Bboykoroman/matching-final",
+  "created_at": "2026-09-03T17:24:21.000Z",
+  "updated_at": "2026-09-03T17:24:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "Bboykoroman (Roman Boyko) - Hugging Face",
+      "url": "https://huggingface.co/Bboykoroman",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... published a model about 7 hours ago"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Bboykoroman (Roman Boyko) - Hugging Face",
+      "url": "https://huggingface.co/Bboykoroman/models",
+      "snippet": "User profile of Roman Boyko on Hugging Face"
+    },
+    {
+      "title": "Google",
+      "url": "http://www.google.gp/?hl=fr",
+      "snippet": "Google disponible en : English Publicité À propos de Google Google.com"
+    }
+  ]
+}

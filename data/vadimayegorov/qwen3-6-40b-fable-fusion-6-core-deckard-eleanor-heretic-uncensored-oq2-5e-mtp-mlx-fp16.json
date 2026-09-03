@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "vadimayegorov/Qwen3.6-40B-Fable-Fusion-6-Core-Deckard-Eleanor-Heretic-Uncensored-oQ2.5e-mtp-mlx-fp16",
+  "slug": "vadimayegorov-qwen3-6-40b-fable-fusion-6-core-deckard-eleanor-heretic-uncensored-oq2-5e-mtp-mlx-fp16",
+  "author": "vadimayegorov",
+  "url": "https://huggingface.co/vadimayegorov/Qwen3.6-40B-Fable-Fusion-6-Core-Deckard-Eleanor-Heretic-Uncensored-oQ2.5e-mtp-mlx-fp16",
+  "created_at": "2026-09-03T17:45:06.000Z",
+  "updated_at": "2026-09-03T17:45:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "mlx-my-repo",
+    "base_model:blackfan23/Qwen3.6-40B-Fable-Fusion-6-Core-Deckard-Eleanor-Heretic-Uncensored-oQ2.5e-mtp",
+    "base_model:quantized:blackfan23/Qwen3.6-40B-Fable-Fusion-6-Core-Deckard-Eleanor-Heretic-Uncensored-oQ2.5e-mtp",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39072589824,
+  "parameters_human": "39.07B",
+  "storage_bytes": 16565215255,
+  "storage_human": "16.6 GB",
+  "base_model": "blackfan23/Qwen3.6-40B-Fable-Fusion-6-Core-Deckard-Eleanor-Heretic-Uncensored-oQ2.5e-mtp",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sint-Guido-Instituut - Smartschool",
+      "url": "https://sintguido.smartschool.be/",
+      "snippet": "Welkom op het digitaal schoolplatform van Sint-Guido-Instituut."
+    },
+    {
+      "title": "DavidAU/Qwen3.6-40B-Fable-Fusion-6-Core-Deckard-Eleanor-Heretic ...",
+      "url": "https://huggingface.co/DavidAU/Qwen3.6-40B-Fable-Fusion-6-Core-Deckard-Eleanor-Heretic-Uncensored-NM-DAU-NEO-MAX-MTP-GGUF",
+      "snippet": "The strongest, smartest open source multi-stage model 40B fine tune for consumer hardware ever and BUILT on consumer hardware via Unsloth using multiple fused versions of strongest Qwen3.6 27B model the \"Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF\" (confirmed by 3rd party testing - click here )."
+    },
+    {
+      "title": "Sint-Guido-Instituut - Smartschool",
+      "url": "https://sintguido.smartschool.be/OAuth/index/signin",
+      "snippet": "Wachtwoord vergeten?"
+    },
+    {
+      "title": "DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic ...",
+      "url": "https://huggingface.co/DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+      "snippet": "The strongest, smartest open source multi-stage model 40B fine tune for consumer hardware ever and BUILT on consumer hardware via Unsloth using multiple fused versions of strongest Qwen3.6 27B model the \"Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF\" (confirmed by 3rd party testing - click here )."
+    },
+    {
+      "title": "GBV - Verpleegkunde - Smartschool",
+      "url": "https://sintguido-gbv.smartschool.be/login",
+      "snippet": "Welkom op het digitaal schoolplatform van GBV - Verpleegkunde."
+    }
+  ]
+}

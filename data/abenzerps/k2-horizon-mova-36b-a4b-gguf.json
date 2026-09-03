@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "abenzerps/K2-Horizon-MoVA-36B-A4B-GGUF",
+  "slug": "abenzerps-k2-horizon-mova-36b-a4b-gguf",
+  "author": "abenzerps",
+  "url": "https://huggingface.co/abenzerps/K2-Horizon-MoVA-36B-A4B-GGUF",
+  "created_at": "2026-09-03T16:50:05.000Z",
+  "updated_at": "2026-09-03T16:54:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "k2-horizon",
+    "long-context",
+    "512k-context",
+    "mixture-of-experts",
+    "mova",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:IFM/K2-Horizon-MoVA-36B-A4B",
+    "base_model:quantized:IFM/K2-Horizon-MoVA-36B-A4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37444792020,
+  "parameters_human": "37.44B",
+  "storage_bytes": 22368896872,
+  "storage_human": "22.4 GB",
+  "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abschottungen für sicheren Brandschutz & Erhalt der Brandabschnitte …",
+      "url": "https://www.obo.de/de-de/produkte/abschottungen-und-kabelbandagen/abschottungen-erhalt-der-brandabschnitte",
+      "snippet": "OBO Abschottungssysteme bieten zuverlässigen Brandschutz & verhindern Feuer- & Rauchausbreitung. Geprüfte Sicherheit, …"
+    },
+    {
+      "title": "Brandschutzkompetenz – Sicherheit für Gebäude! | OBO",
+      "url": "https://www.obo.de/de-de/wissen/ratgeber/brandschutz-kompetenz",
+      "snippet": "OBO bietet umfassende Lösungen für den baulichen Brandschutz: Brandabschnitte, Fluchtwege & Funktionserhalt. Jetzt informieren …"
+    },
+    {
+      "title": "Brandschutz-Kompetenz von OBO",
+      "url": "https://www.obo.ch/produkte/schutzinstallation/produkthighlights/brandschutz-kompetenz-von-obo/",
+      "snippet": "Planer und Betreiber erhalten mit OBO Systemen die optimalen Komponenten für den kompletten Brandschutz und Funktionserhalt …"
+    },
+    {
+      "title": "Brandabschottung | OBO",
+      "url": "https://www.obo.ch/service/obo-construct/brandabschottung/",
+      "snippet": "Die korrekte und zulassungskonforme Planung von Brandabschottungen wird mit diesem Tool einfacher als je zuvor. Dieses …"
+    },
+    {
+      "title": "Brandschutzkanäle und Abschottungen | OBO Bettermann - heinze.de",
+      "url": "https://www.heinze.de/produktserie/brandschutzkanaele-und-abschottungen/48723263/1/",
+      "snippet": "OBO PYROLINE® Brandschutzkanäle kapseln die Brandlast zuverlässig ab und verhindern das Austreten von Feuer und Rauch – …"
+    }
+  ]
+}

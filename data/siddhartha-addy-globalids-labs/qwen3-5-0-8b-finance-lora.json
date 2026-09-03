@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "siddhartha-addy-globalids-labs/qwen3.5-0.8b-finance-lora",
+  "slug": "siddhartha-addy-globalids-labs-qwen3-5-0-8b-finance-lora",
+  "author": "siddhartha-addy-globalids-labs",
+  "url": "https://huggingface.co/siddhartha-addy-globalids-labs/qwen3.5-0.8b-finance-lora",
+  "created_at": "2026-09-03T13:45:23.000Z",
+  "updated_at": "2026-09-03T13:45:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "knowledge-distillation",
+    "gkd",
+    "arxiv:2306.13649",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 101818629,
+  "storage_human": "102 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么输入带圈数字①②③④⑤⑧㊸㊹㊺㊻㊼㊽㊾㊿-百度经验",
+      "url": "https://jingyan.baidu.com/article/a3aad71a2b7a69b1fb009630.html",
+      "snippet": "May 16, 2019 · 显然上面的方式只能输入0-20，但是更高的数字却不能输入了，怎么办呢， 更复杂的方式我们也不想学了， 这个一个 …"
+    },
+    {
+      "title": "百度经验——实用生活指南",
+      "url": "https://jingyan.baidu.com/",
+      "snippet": "百度经验提供各种生活、工作和学习的实用技巧和方法，帮助用户解决问题，提高效率。"
+    },
+    {
+      "title": "Notowania Funduszy inwestycyjnych - TFI - Bankier.pl",
+      "url": "https://www.bankier.pl/fundusze/notowania/wszystkie",
+      "snippet": "Notowania funduszy inwestycyjnych (TFI). Sprawdź najnowsze notowania."
+    },
+    {
+      "title": "Cyfrowa hipoteka w ING: Nie ma kompromisu dla bezpieczeństwa",
+      "url": "https://www.bankier.pl/wiadomosc/Cyfrowa-hipoteka-w-ING-Nie-ma-kompromisu-dla-bezpieczenstwa-9159730.html",
+      "snippet": "Jun 30, 2026 · Docelowo niemal wszystkie wnioski o kredyt mają trafiać do aplikacji Moje ING. O tym, jak będzie wyglądał w pełni …"
+    },
+    {
+      "title": "Bankowość internetowa - Społeczność ING",
+      "url": "https://spolecznosc.ing.pl/-/Bankowo%C5%9B%C4%87-internetowa/bd-p/Bankowosc-internetowa",
+      "snippet": "2 days ago · Społeczność ING : Forum : Bankowość internetowa i mobilna : Bankowość internetowa Bankowość internetowa"
+    }
+  ]
+}

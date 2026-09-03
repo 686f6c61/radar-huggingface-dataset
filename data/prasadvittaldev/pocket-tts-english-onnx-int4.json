@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "prasadvittaldev/pocket-tts-english-onnx-int4",
+  "slug": "prasadvittaldev-pocket-tts-english-onnx-int4",
+  "author": "prasadvittaldev",
+  "url": "https://huggingface.co/prasadvittaldev/pocket-tts-english-onnx-int4",
+  "created_at": "2026-09-03T12:55:55.000Z",
+  "updated_at": "2026-09-03T13:03:21.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "int4",
+    "quantized",
+    "on-device",
+    "browser",
+    "webassembly",
+    "pocket-tts",
+    "en",
+    "base_model:kyutai/pocket-tts",
+    "base_model:quantized:kyutai/pocket-tts",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118134614,
+  "storage_human": "118 MB",
+  "base_model": "kyutai/pocket-tts",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vakantie Pattaya - Altijd feest onder de Thaise zon - Neckermann",
+      "url": "https://neckermann.be/nl/vakanties/exotische-vakanties/thailand/pattaya",
+      "snippet": "Genieten van de rust en stilte van het eilandleven? Dat doe je in Pattaya in Thailand. Ontdek ons ruime aanbod hotels en kies alvast …"
+    },
+    {
+      "title": "Pattaya Reisgids: Stranden, Nachtleven en Bezienswaardigheden",
+      "url": "https://thailandmagazine.com/nl/pattaya/",
+      "snippet": "Naast het drukke Pattaya Beach en het ruimere Jomtien Beach zijn er ook kleinere, rustigere baaitjes met fijner zand en een …"
+    },
+    {
+      "title": "Vakantie Pattaya - Boek nu voor de scherpste prijs - TUI",
+      "url": "https://www.tui.nl/p/vakantie/thailand/pattaya/?msockid=1903c65d093b694e14efd19408126870",
+      "snippet": "Ga je reizen door Thailand, dan mag je prachtige natuur, heerlijk eten en kleurrijke tempels verwachten. In dit blog delen we …"
+    },
+    {
+      "title": "Vakantie Pattaya - Befaamde witte stranden - TUI",
+      "url": "https://www.tui.be/nl/vakantie/thailand/pattaya?msockid=1903c65d093b694e14efd19408126870",
+      "snippet": "Laat u tijdens een vakantie Pattaya verwelkomen door de bevolking met een Thaise glimlach. De befaamde witte stranden van de …"
+    },
+    {
+      "title": "Vakantie Pattaya (Thailand) → Álle info, tips & nachtleven!",
+      "url": "https://www.27vakantiedagen.nl/thailand/pattaya/",
+      "snippet": "Jun 2, 2025 · Pattaya is uitgegroeid tot een vermaarde badplaats aan de noordoostelijke kust van de Golf van Thailand, op slechts …"
+    }
+  ]
+}

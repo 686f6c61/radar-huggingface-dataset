@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "D33pStateTech/asian-ten-wan21-lora",
+  "slug": "d33pstatetech-asian-ten-wan21-lora",
+  "author": "D33pStateTech",
+  "url": "https://huggingface.co/D33pStateTech/asian-ten-wan21-lora",
+  "created_at": "2026-09-03T13:52:21.000Z",
+  "updated_at": "2026-09-03T13:55:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "wan2.1",
+    "video-generation",
+    "lora",
+    "t2v",
+    "musubi-tuner",
+    "base_model:Wan-AI/Wan2.1-T2V-14B",
+    "base_model:adapter:Wan-AI/Wan2.1-T2V-14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 613557104,
+  "storage_human": "614 MB",
+  "base_model": "Wan-AI/Wan2.1-T2V-14B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Calcolo Codice Fiscale",
+      "url": "https://codicefiscale.com/",
+      "snippet": "Calcola il Codice Fiscale. Genera nuovi codici o estrai i dati anagrafici da un Codice Fiscale esistente."
+    },
+    {
+      "title": "Codice Fiscale Inverso",
+      "url": "https://codicefiscale.com/inverso/",
+      "snippet": "Calcolo del codice fiscale inverso Ti serve la verifica del codice fiscale o vuoi estrarre i dati anagrafici da un CF? Procedi subito al …"
+    },
+    {
+      "title": "FAQ Codice Fiscale – Domande frequenti su calcolo e verifica ...",
+      "url": "https://codicefiscale.com/faq/",
+      "snippet": "Hai dubbi sul codice fiscale? Consulta la nostra pagina FAQ e trova tutte le risposte alle domande più frequenti."
+    },
+    {
+      "title": "Chi Siamo: Storia e informazioni su CodiceFiscale.com",
+      "url": "https://codicefiscale.com/chi-siamo/",
+      "snippet": "Chi Siamo La storia di CodiceFiscale.com CodiceFiscale.com è online dal 2004 e nasce con un obiettivo semplice: offrire uno …"
+    }
+  ]
+}

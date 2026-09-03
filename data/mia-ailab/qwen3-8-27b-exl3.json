@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Mia-AiLab/Qwen3.8-27B-exl3",
+  "slug": "mia-ailab-qwen3-8-27b-exl3",
+  "author": "Mia-AiLab",
+  "url": "https://huggingface.co/Mia-AiLab/Qwen3.8-27B-exl3",
+  "created_at": "2026-09-03T14:24:55.000Z",
+  "updated_at": "2026-09-03T14:27:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "exl3",
+    "mirror",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 93275802660,
+  "storage_human": "93.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "M.I.A. — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/M.I.A.",
+      "snippet": "Chris Mugan, « Mia: Learning to speak guerrilla language », The Independent, Independent Print Limited, 1er octobre 2004 (lire en …"
+    },
+    {
+      "title": "M.I.A. (rapper) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/M.I.A._(rapper)",
+      "snippet": "M.I.A. officially signed to Jay-Z 's Roc Nation management in May 2012. [140][141] Rihanna welcomed her to the family, tweeting, …"
+    },
+    {
+      "title": "Prénom Mia (fille) : signification, origine, caractère, sainte, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/mia/prenom-7976",
+      "snippet": "Quelle est la signification du prénom Mia ? Le prénom Mia est dérivé du prénom Marie. La forme ancienne de ce dernier signifierait …"
+    },
+    {
+      "title": "Mia Khalifa - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mia_Khalifa",
+      "snippet": "Sarah Joe Chamoun (born February 10, 1993 [1]), known professionally as Mia Khalifa, [2][a] is a Lebanese-American media …"
+    },
+    {
+      "title": "Bijoux En Acier Inoxydable Hypoallergéniques Pour Femme | MIA",
+      "url": "https://mia-bijoux.ca/fr",
+      "snippet": "Choisissez parmi plus de 500 styles de bijoux non toxiques qui n'irritent pas la peau, qui résistent à vos activités quotidiennes et qui …"
+    }
+  ]
+}

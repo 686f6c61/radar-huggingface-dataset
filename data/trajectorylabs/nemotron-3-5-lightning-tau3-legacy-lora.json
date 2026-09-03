@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "TrajectoryLabs/Nemotron-3.5-Lightning-Tau3-Legacy-LoRA",
+  "slug": "trajectorylabs-nemotron-3-5-lightning-tau3-legacy-lora",
+  "author": "TrajectoryLabs",
+  "url": "https://huggingface.co/TrajectoryLabs/Nemotron-3.5-Lightning-Tau3-Legacy-LoRA",
+  "created_at": "2026-09-03T15:22:17.000Z",
+  "updated_at": "2026-09-03T15:33:48.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "tau3",
+    "tool-use",
+    "text-generation",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1544348352,
+  "storage_human": "1.5 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "148 万浏览 · 693 关注 · 411 回答 查看全部 热点 问题 潜力好问题 乐华艺人金子涵官宣退圈，如何看待她的选择？ 444 万浏览 · 285 关 …"
+    },
+    {
+      "title": "GitHub - NVIDIA-NeMo/Nemotron: Developer Asset Hub for NVIDIA Nemotron ...",
+      "url": "https://github.com/NVIDIA-NeMo/Nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open, high-efficiency multimodal models purpose-built for agentic AI. Model Tiers: Nano — Optimized for edge and PC deployments Lightning — Fast, high-volume task execution for long-running agents Super — Single GPU deployment with highest throughput Ultra — Multi-GPU datacenter applications Nemotron models excel at coding, math, scientific reasoning ..."
+    },
+    {
+      "title": "英雄联盟下载的游戏回放在那个文件夹？ - 知乎",
+      "url": "https://www.zhihu.com/question/332760073",
+      "snippet": "Jul 1, 2019 · 我之前也被这个问题困扰了很久，在网上也找不到什么靠谱的答案，后来自己慢慢摸索就搞清楚了，现在分享出来： 首 …"
+    },
+    {
+      "title": "Nemotron/usage-cookbook/Nemotron-3.5-Lightning at main - GitHub",
+      "url": "https://github.com/NVIDIA-NeMo/Nemotron/tree/main/usage-cookbook/Nemotron-3.5-Lightning",
+      "snippet": "Nemotron-3.5 Lightning is a 30B total / 3B active-parameter hybrid Mamba-Transformer MoE model for fast reasoning, coding, and agentic workflows. It is sized for single-node deployment, while supporting long-context use and structured tool calling."
+    },
+    {
+      "title": "作业帮客户端",
+      "url": "https://www.zybang.com/windows/download/",
+      "snippet": "联系方式: service@zuoyebang.com 010-82177628 京ICP备15042982号 京ICP证161149号 京公安网备11010802024612号 @2017 小 …"
+    }
+  ]
+}

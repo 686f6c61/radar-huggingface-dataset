@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "TrajectoryLabs/Nemotron-3.5-Lightning-Tau3-Harness-Matched-LoRA",
+  "slug": "trajectorylabs-nemotron-3-5-lightning-tau3-harness-matched-lora",
+  "author": "TrajectoryLabs",
+  "url": "https://huggingface.co/TrajectoryLabs/Nemotron-3.5-Lightning-Tau3-Harness-Matched-LoRA",
+  "created_at": "2026-09-03T15:22:30.000Z",
+  "updated_at": "2026-09-03T15:33:48.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "tau3",
+    "tool-use",
+    "text-generation",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1544348352,
+  "storage_human": "1.5 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube で制限付きモードをオンまたはオフにする - パソコン",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube で制限付きモードをオンまたはオフにする 制限付きモードは、YouTube で使用できるオプション設定です。 この機能は …"
+    },
+    {
+      "title": "Nvidia releases Nemotron 3.5 Lightning, open-source AI model",
+      "url": "https://www.cnbc.com/2026/08/11/nvidia-releases-nemotron-3point5-lightning-open-source-ai-model-.html",
+      "snippet": "Nemotron 3.5 Lightning is free for companies to download, use and modify without getting permission or paying Nvidia."
+    },
+    {
+      "title": "YouTube ความช่วยเหลือ",
+      "url": "https://support.google.com/youtube/?hl=th",
+      "snippet": "ศูนย์ช่วยเหลืออย่างเป็นทางการของ YouTube ที่คุณสามารถพบเคล็ดลับและบทแนะนำเกี่ยวกับการใช้งานผลิตภัณฑ์ รวมทั้งคำตอบสำหรับ ..."
+    },
+    {
+      "title": "GitHub - NVIDIA-NeMo/Nemotron: Developer Asset Hub for NVIDIA Nemotron ...",
+      "url": "https://github.com/NVIDIA-NeMo/Nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open, high-efficiency multimodal models purpose-built for agentic AI. Model Tiers: Nano — Optimized for edge and PC deployments Lightning — Fast, high-volume task execution for long-running agents Super — Single GPU deployment with highest throughput Ultra — Multi-GPU datacenter applications Nemotron models excel at coding, math, scientific reasoning ..."
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    }
+  ]
+}

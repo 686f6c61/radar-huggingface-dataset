@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "humanlong/StateDiffRWKV-2.9B-512-pretrained",
+  "slug": "humanlong-statediffrwkv-2-9b-512-pretrained",
+  "author": "humanlong",
+  "url": "https://huggingface.co/humanlong/StateDiffRWKV-2.9B-512-pretrained",
+  "created_at": "2026-09-03T16:25:04.000Z",
+  "updated_at": "2026-09-03T16:33:31.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "rwkv",
+    "diffusion",
+    "state-hijacking",
+    "diffrwkv",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 981270011,
+  "storage_human": "981 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Portal Stories: Mel on Steam",
+      "url": "https://store.steampowered.com/app/317400/Portal_Stories_Mel/",
+      "snippet": "Jun 25, 2015 · Portal Stories: Mel is a community made, free modification for Portal 2 based in the Portal universe. It tells the story of …"
+    },
+    {
+      "title": "Portal Stories: Mel Soundtrack on Steam",
+      "url": "https://store.steampowered.com/app/322420/Portal_Stories_Mel_Soundtrack/",
+      "snippet": "Jun 25, 2015 · The Portal Stories: Mel soundtrack. Portal Stories: Mel is a modification for Portal 2 created by a team of fans of Portal …"
+    },
+    {
+      "title": "Portal Stories: VR on Steam",
+      "url": "https://store.steampowered.com/app/446750/Portal_Stories_VR/",
+      "snippet": "May 16, 2016 · Portal Stories: VR builds on the foundations of the award winning Portal 2 modification Portal Stories: Mel.Portal …"
+    },
+    {
+      "title": "Steam DLC Page: Portal Stories: Mel",
+      "url": "https://store.steampowered.com/dlc/317400/",
+      "snippet": "Jun 25, 2015 · Narrow by preferences Results may exclude some products based on Portal Stories: Mel Soundtrack Jun 25, 2015"
+    },
+    {
+      "title": "Recommended - Similar items - Portal Stories: Mel - Steam",
+      "url": "https://store.steampowered.com/recommended/morelike/app/317400/",
+      "snippet": "The tags customers have most frequently applied to Portal Stories: Mel have also been applied to these products:"
+    }
+  ]
+}

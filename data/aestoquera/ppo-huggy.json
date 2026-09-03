@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aestoquera/ppo-Huggy",
+  "slug": "aestoquera-ppo-huggy",
+  "author": "aestoquera",
+  "url": "https://huggingface.co/aestoquera/ppo-Huggy",
+  "created_at": "2026-09-03T11:06:40.000Z",
+  "updated_at": "2026-09-03T11:07:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Huggy",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Huggy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92561299,
+  "storage_human": "93 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "data-science-projects · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/data-science-projects",
+      "snippet": "Aug 26, 2026 · GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to …"
+    },
+    {
+      "title": "aestoquera/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/aestoquera/ppo-LunarLander-v2",
+      "snippet": "PPO Agent playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library."
+    },
+    {
+      "title": "GitHub - veb-101/Data-Science-Projects: Collection of data science ...",
+      "url": "https://github.com/veb-101/Data-Science-Projects",
+      "snippet": "Collection of data science projects in Python. Contribute to veb-101/Data-Science-Projects development by creating an account on …"
+    },
+    {
+      "title": "Kev3010/ppo-Huggy · Hugging Face",
+      "url": "https://huggingface.co/Kev3010/ppo-Huggy",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Data Science & Machine Learning - GitHub Education",
+      "url": "https://education.github.com/experiences/ml_ds",
+      "snippet": "Flex your skills in data collection, cleaning, analysis, visualization, programming, and machine learning. The Data Science & Machine …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "BleuCPU/wraith-voice-pack",
+  "slug": "bleucpu-wraith-voice-pack",
+  "author": "BleuCPU",
+  "url": "https://huggingface.co/BleuCPU/wraith-voice-pack",
+  "created_at": "2026-09-03T17:27:07.000Z",
+  "updated_at": "2026-09-03T17:27:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "text-to-speech",
+    "neutts",
+    "neucodec",
+    "wraith",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 747930496,
+  "parameters_human": "747.9M",
+  "storage_bytes": 1427096574,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "¿Cómo llegar a Carrer de Ganduxer 117 en Barcelona en ... - Moovit",
+      "url": "https://moovitapp.com/index/es/transporte_p%C3%BAblico-Carrer_de_Ganduxer_117-Barcelona-site_22654023-362",
+      "snippet": "¿Te preguntas cómo llegar a Carrer de Ganduxer 117 en Barcelona? Moovit te ayuda a encontrar la mejor manera de llegar a Carrer …"
+    },
+    {
+      "title": "BleuCPU (Bleu CPU) - Hugging Face",
+      "url": "https://huggingface.co/BleuCPU",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 3 months ago ... published a model 3 months ago"
+    },
+    {
+      "title": "Cómo llegar a ICR | Centro oftalmológico",
+      "url": "https://icrcat.com/como-llegar-al-institut-catala-de-retina/",
+      "snippet": "ICR Barcelona sede central C. Ganduxer, 117 08022 Barcelona Cómo llegar La sede central de ICR dispone de 38 consultas de …"
+    },
+    {
+      "title": "BleuCPU (Bleu CPU) - Hugging Face",
+      "url": "https://huggingface.co/BleuCPU/models",
+      "snippet": "User profile of Bleu CPU on Hugging Face"
+    },
+    {
+      "title": "Com arribar a Carrer de Ganduxer 117 a Barcelona amb bus ... - Moovit",
+      "url": "https://moovitapp.com/index/ca/transport_p%C3%BAblic-Carrer_de_Ganduxer_117-Barcelona-site_22654023-362",
+      "snippet": "Moovit t'ajuda a trobar les millors rutes cap a Carrer de Ganduxer 117 fent servir el transport públic i et dona indicacions pas a pas …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jannchie/silva-luna",
+  "slug": "jannchie-silva-luna",
+  "author": "Jannchie",
+  "url": "https://huggingface.co/Jannchie/silva-luna",
+  "created_at": "2026-08-07T17:15:48.000Z",
+  "updated_at": "2026-09-03T17:42:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "silva",
+  "languages": [],
+  "tags": [
+    "silva",
+    "safetensors",
+    "aesthetic",
+    "siglip2",
+    "ordinal-regression",
+    "image-classification",
+    "base_model:google/siglip2-so400m-patch14-384",
+    "base_model:adapter:google/siglip2-so400m-patch14-384",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 56,
+  "trending_score": 0,
+  "parameters": 1840389,
+  "parameters_human": "1.8M",
+  "storage_bytes": 14725442,
+  "storage_human": "15 MB",
+  "base_model": "google/siglip2-so400m-patch14-384",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "7 Ways to Organize and Run a Yard/Garage Sale - wikiHow Life",
+      "url": "https://www.wikihow.life/Organize-and-Run-a-Yard/Garage-Sale",
+      "snippet": "Aug 26, 2023 · If you have things you don't need, organizing a garage or yard sale is a great way to sell them. However, the process …"
+    },
+    {
+      "title": "How To Have a Successful Garage Sale - stephreallife.com",
+      "url": "https://www.stephreallife.com/how-to-have-a-successful-garage-sale/",
+      "snippet": "Apr 24, 2026 · If you’re going to have a garage sale or yard sale, let’s make it worth your effort! This is a full guide on how to have the …"
+    },
+    {
+      "title": "How to Have a Successful Garage Sale | Allied Van Lines",
+      "url": "https://www.allied.com/moving-resources/tips/garage-sales",
+      "snippet": "Looking to declutter your home, whether you’re moving or not? If so, check out this comprehensive guide on how to make your …"
+    },
+    {
+      "title": "Ultimate garage sale guide",
+      "url": "https://www.yardsalesearch.com/garage-sale-guide/",
+      "snippet": "Chapter 1: How to plan and organize a garage sale Hosting a yard sale can be an exciting time or a stressful time, depending on how …"
+    },
+    {
+      "title": "How to Hold a Successful Garage Sale - National Association of …",
+      "url": "https://www.nar.realtor/news/tools/client-education/handouts-for-sellers/how-to-hold-a-successful-garage-sale",
+      "snippet": "Depending on how long you’ve lived in your home and how much stuff you want to sell, planning a garage sale can take a lot of time …"
+    }
+  ]
+}

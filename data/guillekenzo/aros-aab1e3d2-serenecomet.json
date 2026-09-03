@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-aab1e3d2-SereneComet",
+  "slug": "guillekenzo-aros-aab1e3d2-serenecomet",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-aab1e3d2-SereneComet",
+  "created_at": "2026-09-03T14:12:27.000Z",
+  "updated_at": "2026-09-03T14:33:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 676225955,
+  "storage_human": "676 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Peoplecert",
+      "url": "https://www.peoplecert.org/",
+      "snippet": "PeopleCert is a global leader in the assessment and certification of professional skills, partnering with multi-national organizations …"
+    },
+    {
+      "title": "ALREADY REGISTERED? - PeopleCert",
+      "url": "https://www.peoplecert.org/login/",
+      "snippet": "Enhance your professional journey with PeopleCert Continuous learning, professional growth, and community engagement, all under …"
+    },
+    {
+      "title": "PeopleCert - Sign In",
+      "url": "https://login.peoplecert.org/",
+      "snippet": "E-mail sent successfully. Check your e-mail account and follow instructions."
+    },
+    {
+      "title": "PEOPLECERT :: Exam Manager Web :: Server Date",
+      "url": "https://el-em.peoplecert.org/",
+      "snippet": "Ανακαλύψτε την πλατφόρμα Exam Manager για διαχείριση εξετάσεων και πιστοποιήσεων από την PeopleCert."
+    },
+    {
+      "title": "OLP Exams",
+      "url": "https://olp-exam.peoplecert.org/",
+      "snippet": "Online platform for PeopleCert exams, providing access to exam-related services and resources for candidates."
+    }
+  ]
+}

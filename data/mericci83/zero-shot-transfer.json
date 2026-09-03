@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mericci83/zero-shot-transfer",
+  "slug": "mericci83-zero-shot-transfer",
+  "author": "mericci83",
+  "url": "https://huggingface.co/mericci83/zero-shot-transfer",
+  "created_at": "2026-09-03T14:57:28.000Z",
+  "updated_at": "2026-09-03T14:57:33.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "zero-shot-transfer",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Von einem Ochsen kann man nicht mehr verlangen als Rindfleisch....",
+      "url": "https://www.aphorismen.de/zitat/100385",
+      "snippet": "Mar 24, 2006 · Deutsches Sprichwort: Von einem Ochsen kann man nicht mehr verlangen als Rindfleisch...."
+    },
+    {
+      "title": "mericci83 (Matteo Ricci) - Hugging Face",
+      "url": "https://huggingface.co/mericci83",
+      "snippet": "Mechanical keyboards and neural networks updated a dataset about 10 hours ago"
+    },
+    {
+      "title": "Ochse – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Ochse",
+      "snippet": "Da sich bei kastrierten Tieren die Wachstumsfugen später schließen, wachsen Ochsen deutlich länger als Stiere und erreichen …"
+    },
+    {
+      "title": "mericci83 (Matteo Ricci) - Hugging Face",
+      "url": "https://huggingface.co/mericci83/models",
+      "snippet": "Mechanical keyboards and neural networks"
+    },
+    {
+      "title": "Satz „Von einem Ochsen soll man nicht mehr verlangen als ein paar ...",
+      "url": "https://www.satzapp.de/satz/Von_einem_Ochsen_soll_man_nicht_mehr_verlangen_als_ein_paar_St%C3%BCcke_Rindfleisch.htm",
+      "snippet": "Von einem Ochsen soll man nicht mehr verlangen als ein paar Stücke Rindfleisch. Bestimmung Satz „ Von einem Ochsen soll man …"
+    }
+  ]
+}

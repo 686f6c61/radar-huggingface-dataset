@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "TheMelonGod/Dolphin3.0-Qwen2.5-1.5B-exl3",
+  "slug": "themelongod-dolphin3-0-qwen2-5-1-5b-exl3",
+  "author": "TheMelonGod",
+  "url": "https://huggingface.co/TheMelonGod/Dolphin3.0-Qwen2.5-1.5B-exl3",
+  "created_at": "2026-09-03T10:58:03.000Z",
+  "updated_at": "2026-09-03T12:18:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "exllamav3",
+    "quantized",
+    "safetensors",
+    "qwen2_5",
+    "en",
+    "base_model:dphn/Dolphin3.0-Qwen2.5-1.5B",
+    "base_model:quantized:dphn/Dolphin3.0-Qwen2.5-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13997001911,
+  "storage_human": "14.0 GB",
+  "base_model": "dphn/Dolphin3.0-Qwen2.5-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Enovation Medimo",
+      "url": "https://secure.medimo.nl/",
+      "snippet": "Wij willen hier een beschrijving geven, maar de site die u nu bekijkt staat dit niet toe."
+    },
+    {
+      "title": "Enovation Medimo - Enovation NL",
+      "url": "https://enovationgroup.com/nl/enovation-medimo/",
+      "snippet": "Enovation Medimo is de oplossing voor medicatie voorschrijven, toedienregistratie en medicatiecontrole."
+    },
+    {
+      "title": "MEDIMO",
+      "url": "https://portaal.medimo.nl/portal/nl/kb/articles/inloggen-op-webversie-met-medimoapp",
+      "snippet": "Helaas, deze pagina bestaat niet. Controleer de URL op juiste spelling en gebruik van hoofdletters."
+    },
+    {
+      "title": "secure.medimo.nl.mcas.ms - Continue",
+      "url": "https://secure.medimo.nl.mcas.ms/",
+      "snippet": "Securely access and manage files, collaborate, and utilize cloud storage features on Medimo's platform."
+    },
+    {
+      "title": "Enovation | Platform voor digitale zorgoplossingen",
+      "url": "https://enovationgroup.com/nl/",
+      "snippet": "Het Kent Oncology Centre ondersteunt patiënten die leven met en na borstkanker met de Patient Journey-app. Via deze app hebben …"
+    }
+  ]
+}

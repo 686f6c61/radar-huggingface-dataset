@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Raghav-Singhal/1pp-1.7b-asst-base",
+  "slug": "raghav-singhal-1pp-1-7b-asst-base",
+  "author": "Raghav-Singhal",
+  "url": "https://huggingface.co/Raghav-Singhal/1pp-1.7b-asst-base",
+  "created_at": "2026-09-03T18:18:13.000Z",
+  "updated_at": "2026-09-03T18:18:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "1pp",
+    "one-persona-pretraining",
+    "base",
+    "asst",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1661048832,
+  "parameters_human": "1.66B",
+  "storage_bytes": 3322122912,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rub al-Chali – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Rub_al-Chali",
+      "snippet": "Die fast menschenleere Wüste bedeckt das südliche Drittel der Arabischen Halbinsel. Sie ist – ähnlich der Sahara durch den …"
+    },
+    {
+      "title": "Raghav-Singhal/pathlang-1p7b-runB-en-first · Hugging Face",
+      "url": "https://huggingface.co/Raghav-Singhal/pathlang-1p7b-runB-en-first",
+      "snippet": "A 1.7B-parameter bilingual (English + Chinese) language model, part of a controlled language-ordering study. Three models share the same architecture, initialization, total data diet (50B English + 50B Chinese = 100B tokens), and LR schedule; they differ only in the order in which the two languages are presented during pretraining."
+    },
+    {
+      "title": "Die Rub al-Chali, die größte Sandwüste der Erde - Lexas",
+      "url": "https://www.lexas.de/wuesten/rub_al-chali/index.aspx",
+      "snippet": "Im Süden wird die Rub al-Chali durch die Gebiete, die wie die Region Dhofar (Oman) unter dem Einfluss des Monsuns stehen, …"
+    },
+    {
+      "title": "Raghav-Singhal (Raghav Singhal) - Hugging Face",
+      "url": "https://huggingface.co/Raghav-Singhal/models",
+      "snippet": "User profile of Raghav Singhal on Hugging Face"
+    },
+    {
+      "title": "Rub al-Chali: Unterwegs in der größten Sandwüste der Welt",
+      "url": "https://www.tagesschau.de/ausland/asien/sandwueste-rub-al-chali-100.html",
+      "snippet": "May 25, 2025 · Wir sind am Rand des Rub al-Chali, übersetzt \"empty quarter\", das sogenannte \"leere Viertel\" auf der arabischen …"
+    }
+  ]
+}

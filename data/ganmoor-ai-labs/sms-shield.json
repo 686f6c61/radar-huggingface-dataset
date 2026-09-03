@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "ganmoor-ai-labs/sms-shield",
+  "slug": "ganmoor-ai-labs-sms-shield",
+  "author": "ganmoor-ai-labs",
+  "url": "https://huggingface.co/ganmoor-ai-labs/sms-shield",
+  "created_at": "2026-09-03T18:35:22.000Z",
+  "updated_at": "2026-09-03T18:42:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "sms",
+    "scam-detection",
+    "fraud-detection",
+    "india",
+    "safety",
+    "text-classification",
+    "lora",
+    "en",
+    "hi",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2640889290,
+  "storage_human": "2.6 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agent Services- Login",
+      "url": "https://agent-servicing.com/site/",
+      "snippet": "Oct 12, 2018 · Please be aware that this site is compatible with the following web browsers - Firefox, Google Chrome, Safari and …"
+    },
+    {
+      "title": "ganmoor-ai-labs (Santosh ganmoor) - Hugging Face",
+      "url": "https://huggingface.co/ganmoor-ai-labs",
+      "snippet": "ganmoor-ai-labs/piiguard-qwen3-1.7b Text Generation • 2B•Updated 6 days ago• 132 • 4"
+    },
+    {
+      "title": "www.agent-servicing.com",
+      "url": "https://www.agent-servicing.com/site/pages/indexedperformance.xhtml",
+      "snippet": "Index Account Performance Hartford Frontier Indexed UL Hartford Frontier 2012 Indexed UL Hartford Founders Plus UL Hartford …"
+    },
+    {
+      "title": "GitHub - hemant7102/SpamShield-AI: Intelligent Email & SMS Spam ...",
+      "url": "https://github.com/hemant7102/SpamShield-AI",
+      "snippet": "Intelligent Email & SMS Spam Detection using Machine Learning SpamShield AI is a professional Machine Learning web application that detects whether an Email or SMS message is Spam or Safe (Not Spam). The application is built using Python, Streamlit, Scikit-Learn, NLTK, and TF-IDF Vectorization, providing fast and accurate predictions with an interactive user interface."
+    },
+    {
+      "title": "IPS Version 26.07c - Login - ips.agent-servicing.com",
+      "url": "https://ips.agent-servicing.com/IPS/login.aspx",
+      "snippet": "Select your user level. NOT FOR USE WITH THE PUBLIC - Call Home Office at (800)243-5433."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "e54true/deeptable-checkpoints-deepseek7b",
+  "slug": "e54true-deeptable-checkpoints-deepseek7b",
+  "author": "e54true",
+  "url": "https://huggingface.co/e54true/deeptable-checkpoints-deepseek7b",
+  "created_at": "2026-09-03T14:48:58.000Z",
+  "updated_at": "2026-09-03T15:13:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "table-question-answering",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "table-question-answering",
+    "llama-factory",
+    "base_model:deepseek-ai/deepseek-llm-7b-chat",
+    "base_model:adapter:deepseek-ai/deepseek-llm-7b-chat",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11724846505,
+  "storage_human": "11.7 GB",
+  "base_model": "deepseek-ai/deepseek-llm-7b-chat",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何评价 Grok4.6，有哪些亮点？ - 知乎",
+      "url": "https://www.zhihu.com/question/2070448386113908957",
+      "snippet": "Aug 13, 2026 · grok4.7据说是2.1t 虽然考虑到grok和qwen一样有多次刷分黑历史，这个最终表现不能尽信。 但能冲到这个位置，再结 …"
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 201 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Grok 4.6 发布，它和同日发布的 DeepSeek V4 Pro 0813 对比如何？",
+      "url": "https://www.zhihu.com/question/2071158912930276387",
+      "snippet": "Grok 4.6 是第一个在内部模型开发任务上训练的模型。 Gork 团队构建了训练和评估堆栈，让 Grok 能够从加速模型开发本身的工作中 …"
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-LLM: DeepSeek LLM: Let there be answers",
+      "url": "https://github.com/deepseek-ai/DeepSeek-LLM",
+      "snippet": "We release the DeepSeek LLM 7B/67B, including both base and chat models, to the public. To support a broader and more diverse range of research within both academic and commercial communities, we are providing access to the intermediate checkpoints of the base model from its training process. Please note that the use of this model is subject to the terms outlined in License section. Commercial ..."
+    },
+    {
+      "title": "怎么看 Cursor 品牌将被淡化，新项目都转移 Grok，AI IDE 已经推出历 …",
+      "url": "https://www.zhihu.com/question/2069376898556340193",
+      "snippet": "在今年上半年我在知乎写过回答表示对cursor未来的不看好，但随着马圣的收购与grok的卷土重来，海超人与大洋游侠合为一体，如果 …"
+    }
+  ]
+}

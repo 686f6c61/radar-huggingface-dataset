@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "REKS1337/ExtraAI-75M",
+  "slug": "reks1337-extraai-75m",
+  "author": "REKS1337",
+  "url": "https://huggingface.co/REKS1337/ExtraAI-75M",
+  "created_at": "2026-09-03T11:48:53.000Z",
+  "updated_at": "2026-09-03T11:49:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "gguf",
+    "extraai",
+    "from-scratch",
+    "causal-lm",
+    "text-generation",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 75012480,
+  "parameters_human": "75.0M",
+  "storage_bytes": 451227344,
+  "storage_human": "451 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accédez à votre Espace Client Cardif",
+      "url": "https://www.cardif.fr/espace-client",
+      "snippet": "Accédez à votre espace client Cardif et bénéficiez de tous nos services en ligne disponibles pour gérer vos contrats d'épargne et …"
+    },
+    {
+      "title": "Kereis Cardif espace assuré",
+      "url": "https://www.kereis.cardif.fr/",
+      "snippet": "Bienvenue dans votre espace assuré. Simplifiez vous la gestion de vos contrats d'assurances en activant votre compte personnel."
+    },
+    {
+      "title": "Assurance vie - Cardif",
+      "url": "https://www.cardif.fr/placement-epargne/assurance-vie",
+      "snippet": "Assurance vie : importance de la clause bénéficiaire Il est conseillé de bien rédiger la clause bénéficiaire de votre assurance-vie. À …"
+    },
+    {
+      "title": "Accueil - Portail bénéficiaire assurance vie BNP Paribas Cardif",
+      "url": "https://beneficiaire.cardif.fr/",
+      "snippet": "BNP Paribas Cardif vous accompagne pour vous informer et faciliter vos démarches assurance vie en cas de décès."
+    },
+    {
+      "title": "Connexion - Bénéficiaire - Cardif groupe BNP Paribas",
+      "url": "https://beneficiaire.cardif.fr/login",
+      "snippet": "Connectez-vous à votre espace bénéficiaire Cardif pour gérer vos informations et accéder à vos services en toute sécurité."
+    }
+  ]
+}

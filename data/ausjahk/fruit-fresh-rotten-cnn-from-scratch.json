@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ausjahk/fruit-fresh-rotten-cnn-from-scratch",
+  "slug": "ausjahk-fruit-fresh-rotten-cnn-from-scratch",
+  "author": "ausjahk",
+  "url": "https://huggingface.co/ausjahk/fruit-fresh-rotten-cnn-from-scratch",
+  "created_at": "2026-09-03T19:18:52.000Z",
+  "updated_at": "2026-09-03T19:18:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "cnn",
+    "from-scratch",
+    "fruits",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18357159,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gratis online Schieber jassen",
+      "url": "https://www.schieber.ch/",
+      "snippet": "Die beliebteste schweizer Jassplattform! Schieber, Coiffeurjass, Differenzeler und das einzgartige Jassduell."
+    },
+    {
+      "title": "GitHub - Raj-Rathod-Ai/FruitsCheck-CNN-Fruit-Freshness: FruitCheck is a ...",
+      "url": "https://github.com/Raj-Rathod-Ai/FruitsCheck-CNN-Fruit-Freshness",
+      "snippet": "FruitCheck is a binary image classification project that uses a custom Convolutional Neural Network (CNN) trained end-to-end on a fruit freshness dataset. The model learns to distinguish Fresh vs Rotten fruits using visual patterns in images — such as color, texture, and surface degradation — without any hand-crafted features."
+    },
+    {
+      "title": "Schieber Jassportal",
+      "url": "https://schieber.ch/index.php?login",
+      "snippet": "Die beliebteste schweizer Jassplattform! Schieber, Coiffeurjass, Differenzeler und das einzgartige Jassduell."
+    },
+    {
+      "title": "fresh_rotten_fruit.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/Bangkit-JKT2-D/fruits-fresh-rotten-classification/blob/master/fresh_rotten_fruit_baseline.ipynb",
+      "snippet": "The following code imports the necessary code to run the code in the rest of this Colaboratory."
+    },
+    {
+      "title": "Jass Turnier",
+      "url": "https://jass20.schieber.ch/",
+      "snippet": "Bitte loggen Sie sich ein Auswahl der Kartenvariante: französich"
+    }
+  ]
+}

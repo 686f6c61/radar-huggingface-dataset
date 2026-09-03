@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "EInnovator/pra-llama3-2-1b-mlx-8bit",
+  "slug": "einnovator-pra-llama3-2-1b-mlx-8bit",
+  "author": "EInnovator",
+  "url": "https://huggingface.co/EInnovator/pra-llama3-2-1b-mlx-8bit",
+  "created_at": "2026-09-03T16:02:29.000Z",
+  "updated_at": "2026-09-03T17:21:05.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pra",
+  "languages": [],
+  "tags": [
+    "pra",
+    "progressive-retrieval-attention",
+    "adapter",
+    "long-context",
+    "dataset:2wikimultihopqa",
+    "dataset:combined",
+    "dataset:hotpotqa",
+    "dataset:qasper",
+    "base_model:mlx-community/Llama-3.2-1B-Instruct-8bit",
+    "base_model:finetune:mlx-community/Llama-3.2-1B-Instruct-8bit",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "mlx-community/Llama-3.2-1B-Instruct-8bit",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Credit Mutuel Epargne Salariale Phone - ForumConstruire.com",
+      "url": "https://www.forumconstruire.com/recherche/r-credit-mutuel-epargne-salariale-phone.php",
+      "snippet": "Credit mutuel epargne salariale phone : recherche dans le forum 2864 résultats trouvés sur ForumConstruire.com"
+    },
+    {
+      "title": "Pret PCAS credit mutuel - 6 messages - ForumConstruire.com",
+      "url": "https://www.forumconstruire.com/construire/topic-38985.php",
+      "snippet": "Apr 5, 2007 · Bonjour , pour financer mon projet , le credit mutuel me propose le pret PCAS 116000/­25 ans a 4.1 (sans Assur) lisse …"
+    },
+    {
+      "title": "Assurance Tout Risque Credit Mutuel - ForumConstruire.com",
+      "url": "https://www.forumconstruire.com/recherche/r-assurance-tout-risque-credit-mutuel.php",
+      "snippet": "Jan 7, 2026 · Discussion : Credit Mutuel + pret atchoum Le 17 aout 2006 Administratif et financement 26 réponses Mots clefs …"
+    },
+    {
+      "title": "Organisme de caution => Refus - 14 messages",
+      "url": "https://www.forumconstruire.com/construire/topic-21896.php",
+      "snippet": "May 16, 2006 · La caution crédit mutuel est beaucoup moins chère que dans les autres banques...donc l'hypothèque te reviendra …"
+    },
+    {
+      "title": "Avis alarme de marque EPS / SYSTEC ? - 40 messages",
+      "url": "https://www.forumconstruire.com/construire/topic-71285.php",
+      "snippet": "Dec 26, 2008 · EPS est leader en france en systeme d'alarme et est une filiale du credit mutuel. ce systeme est distribué par leroy …"
+    }
+  ]
+}

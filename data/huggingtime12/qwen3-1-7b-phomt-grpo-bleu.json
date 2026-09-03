@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "huggingtime12/Qwen3-1.7B-PhoMT-GRPO-BLEU",
+  "slug": "huggingtime12-qwen3-1-7b-phomt-grpo-bleu",
+  "author": "huggingtime12",
+  "url": "https://huggingface.co/huggingtime12/Qwen3-1.7B-PhoMT-GRPO-BLEU",
+  "created_at": "2026-09-03T13:45:54.000Z",
+  "updated_at": "2026-09-03T13:48:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1393415903,
+  "storage_human": "1.4 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "Login - Sign in to Yahoo",
+      "url": "https://login.yahoo.com/",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://gr.mail.yahoo.com/d",
+      "snippet": "Περιηγηθείτε σε αναβαθμισμένα, πιο οργανωμένα εισερχόμενα. Συνδεθείτε και ξεκινήστε την εξερεύνηση όλων των δωρεάν …"
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://in.mail.yahoo.com/d",
+      "snippet": "Take a trip into an upgraded, more organised inbox. Sign in and start exploring all of the free organisational tools for your email. …"
+    },
+    {
+      "title": "Yahoo",
+      "url": "https://www.yahoo.com/",
+      "snippet": "News, email and search are just the beginning. Discover more every day. Find your yodel."
+    }
+  ]
+}

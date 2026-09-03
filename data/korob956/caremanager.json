@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Korob956/Caremanager",
+  "slug": "korob956-caremanager",
+  "author": "Korob956",
+  "url": "https://huggingface.co/Korob956/Caremanager",
+  "created_at": "2026-09-03T19:11:00.000Z",
+  "updated_at": "2026-09-03T19:11:00.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube で制限付きモードをオンまたはオフにする - パソコン",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube で制限付きモードをオンまたはオフにする 制限付きモードは、YouTube で使用できるオプション設定です。 この機能は …"
+    },
+    {
+      "title": "ai_for_caremanager | Original audio on Instagram",
+      "url": "https://www.instagram.com/reels/audio/26707672702150716/",
+      "snippet": "Listen to ai_for_caremanager on Instagram and watch reels with original audio"
+    },
+    {
+      "title": "YouTube ความช่วยเหลือ",
+      "url": "https://support.google.com/youtube/?hl=th",
+      "snippet": "ศูนย์ช่วยเหลืออย่างเป็นทางการของ YouTube ที่คุณสามารถพบเคล็ดลับและบทแนะนำเกี่ยวกับการใช้งานผลิตภัณฑ์ รวมทั้งคำตอบสำหรับ ..."
+    },
+    {
+      "title": "CareManager - PROD Login",
+      "url": "https://caremanager.netsmartcloud.com/CareManager/faces/login/Login.xhtml%3Bjsessionid=b3c8f215dbe063b2c49174c5d90b",
+      "snippet": "2ab9ab4e0a9744dd82045ac16eb3aeb1 - 3.2026.14 - Wed Aug 19 21:53:03 UTC 2026 - 51ace45c0f0"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    }
+  ]
+}

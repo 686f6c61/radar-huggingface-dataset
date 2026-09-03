@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Satysam-26/RealityGuardAI",
+  "slug": "satysam-26-realityguardai",
+  "author": "Satysam-26",
+  "url": "https://huggingface.co/Satysam-26/RealityGuardAI",
+  "created_at": "2026-09-03T13:58:13.000Z",
+  "updated_at": "2026-09-03T14:35:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "deepfake-detection",
+    "computer-vision",
+    "pytorch",
+    "image-classification",
+    "audio-visual-sync",
+    "doi:10.57967/hf/10281",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1159719,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reverseengineeringer/com.twitter.android - GitHub",
+      "url": "https://github.com/reverseengineeringer/com.twitter.android",
+      "snippet": "Feb 1, 2026 · Contribute to reverseengineeringer/com.twitter.android development by creating an account on GitHub."
+    },
+    {
+      "title": "Edge_passwords.txt · GitHub",
+      "url": "https://gist.github.com/3Alphaa/90e34c822ef4ba3714ab92ffc88e8b16",
+      "snippet": "GitHub Gist: instantly share code, notes, and snippets."
+    },
+    {
+      "title": "How to patch Twitter (X) with ReVanced · GitHub",
+      "url": "https://gist.github.com/ottosch/3a718fb3a43c2ab87547a62422039fdd",
+      "snippet": "Jan 15, 2025 · Extract the X bundle with unzip com.twitter.android.zip and place APKEditor in the same directory. Merge all the …"
+    },
+    {
+      "title": "GitHub - chenzhi-ls/ATool: 一个用于查看和修改Apk的命令行 ...",
+      "url": "https://github.com/chenzhi-ls/ATool",
+      "snippet": "一个用于查看和修改Apk的命令行工具（包名、启动页面名称、Apk名称、版本信息）. Contribute to chenzhi-ls/ATool development by …"
+    },
+    {
+      "title": "Twitter Kit for Android - GitHub",
+      "url": "https://github.com/twitter-archive/twitter-kit-android",
+      "snippet": "Oct 31, 2018 · Twitter Kit is a multi-module gradle project containing several Twitter SDKs including TweetComposer, TwitterCore, …"
+    }
+  ]
+}

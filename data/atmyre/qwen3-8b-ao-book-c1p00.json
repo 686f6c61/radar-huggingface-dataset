@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Atmyre/qwen3-8b-ao-book-c1p00",
+  "slug": "atmyre-qwen3-8b-ao-book-c1p00",
+  "author": "Atmyre",
+  "url": "https://huggingface.co/Atmyre/qwen3-8b-ao-book-c1p00",
+  "created_at": "2026-09-03T14:18:24.000Z",
+  "updated_at": "2026-09-03T14:18:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "activation-oracle",
+    "interpretability",
+    "qwen3",
+    "concept-book",
+    "arxiv:2512.15674",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 698419728,
+  "storage_human": "698 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Test LDL cholesterolu – účel, výsledky, normální rozmezí a další",
+      "url": "https://www.apollohospitals.com/cs/diagnostics-investigations/ldl-cholesterol-test",
+      "snippet": "LDL Cholesterol Test je zásadní diagnostický nástroj používaný k měření hladiny cholesterolu s nízkou hustotou (LDL) v krvi. LDL …"
+    },
+    {
+      "title": "Lipidy v krvi - jak se v nich vyznat a jak je snížit? | Aktin",
+      "url": "https://aktin.cz/lipidy-v-krvi-jak-se-v-nich-vyznat-a-jak-je-snizit",
+      "snippet": "Nov 5, 2025 · LDL cholesterol (low‑density lipoprotein cholesterol) je nejznámější krevní lipid a častý terč léčebných intervencí. Bývá …"
+    },
+    {
+      "title": "Hladina cholesterolu v krvi: Tabulka a vysvětlení | Bezhladoveni.cz",
+      "url": "https://www.bezhladoveni.cz/hodnoty-cholesterolu-v-krvi-co-znamenaji/",
+      "snippet": "LDL cholesterol (Low‑Density Lipoprotein) se označuje za „zlý“ cholesterol, protože přenáší částice cholesterolu do cév. V určité míře …"
+    },
+    {
+      "title": "Hodnoty LDL cholesterolu v krvi | Unilabs Online",
+      "url": "https://cz.unilabs.online/ldl-cholesterol-2",
+      "snippet": "Vyšetření lipidového profilu měří množství cholesterolu a dalších tuků v krvi. Tento druh testování pomáhá předpovídat riziko …"
+    },
+    {
+      "title": "LDL cholesterol, jaké jsou ideální hodnoty? - Dr. Max lékárna",
+      "url": "https://www.drmax.cz/zeptejte-se-lekarnika/ldl-cholesterol-jake-jsou-idealni-hodnoty",
+      "snippet": "Normální hladina LDL cholesterolu je pod 3,0 mmol/l. Riziková je hladina od 3,4 do 4,1 mmol/l (zvýšené riziko) a nad 4,1 mmol/l …"
+    }
+  ]
+}

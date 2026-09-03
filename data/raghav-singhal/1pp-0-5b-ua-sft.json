@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Raghav-Singhal/1pp-0.5b-ua-sft",
+  "slug": "raghav-singhal-1pp-0-5b-ua-sft",
+  "author": "Raghav-Singhal",
+  "url": "https://huggingface.co/Raghav-Singhal/1pp-0.5b-ua-sft",
+  "created_at": "2026-09-03T16:52:40.000Z",
+  "updated_at": "2026-09-03T16:53:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "1pp",
+    "one-persona-pretraining",
+    "sft",
+    "ua",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 580445568,
+  "parameters_human": "580.4M",
+  "storage_bytes": 1160916120,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Google Traduction offre un service gratuit pour traduire instantanément des mots, expressions et pages Web entre le français et plus …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/details",
+      "snippet": "Traduisez des textes instantanément avec Google Translate."
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/m",
+      "snippet": "Traduire Détecter la langue → Français Accueil Google Envoyer des commentaires Confidentialité et conditions d'utilisation Accéder …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/_/TranslateWebserverUi/bscframe",
+      "snippet": "Google Traduction permet de traduire des textes, images, documents et sites Web entre le français et plus de 100 langues."
+    }
+  ]
+}

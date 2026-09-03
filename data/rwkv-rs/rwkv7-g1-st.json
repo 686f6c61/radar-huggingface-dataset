@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "rwkv-rs/rwkv7-g1-st",
+  "slug": "rwkv-rs-rwkv7-g1-st",
+  "author": "rwkv-rs",
+  "url": "https://huggingface.co/rwkv-rs/rwkv7-g1-st",
+  "created_at": "2026-08-07T13:23:06.000Z",
+  "updated_at": "2026-09-03T13:02:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rwkv",
+    "rwkv7",
+    "recurrent",
+    "causal-lm",
+    "conversational",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:BlinkDL/rwkv7-g1",
+    "base_model:finetune:BlinkDL/rwkv7-g1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 266,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149667609472,
+  "storage_human": "149.7 GB",
+  "base_model": "BlinkDL/rwkv7-g1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Index Fórum",
+      "url": "https://forum.index.hu/Topic/showTopicList",
+      "snippet": "2 days ago · Inda csoport Index szerkesztőség Online interjúk, T. szerk! Rovatokhoz, cikkekhez, mellékletekhez kapcsolódó fórumok …"
+    },
+    {
+      "title": "rwkv-rs/rwkv7-g1-st · Hugging Face",
+      "url": "https://huggingface.co/rwkv-rs/rwkv7-g1-st",
+      "snippet": "This repository contains the four canonical RWKV-7 G1i checkpoints converted from BlinkDL/rwkv7-g1 to native Transformers Safetensors. Each checkpoint is a self-contained subfolder with model weights, configuration, the native RWKV World tokenizer, and chat prompt template."
+    },
+    {
+      "title": "Index Fórum",
+      "url": "https://forum.index.hu/Article/viewArticle?a=171654700",
+      "snippet": "Apr 5, 2026 · Tegnap újra ment az Bíbic I. Vácnál délután. &nbsp;"
+    },
+    {
+      "title": "rwkv-rs · GitHub",
+      "url": "https://github.com/rwkv-rs/",
+      "snippet": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training."
+    },
+    {
+      "title": "在连接校园网时弹出www.msftconnecttest.com，而不是登录 ...",
+      "url": "https://www.zhihu.com/question/352040481",
+      "snippet": "知乎用户讨论如何解决连接校园网时弹出www.msftconnecttest.com而非登录界面的问题。"
+    }
+  ]
+}

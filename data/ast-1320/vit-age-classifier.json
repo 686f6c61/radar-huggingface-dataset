@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AST-1320/vit-age-classifier",
+  "slug": "ast-1320-vit-age-classifier",
+  "author": "AST-1320",
+  "url": "https://huggingface.co/AST-1320/vit-age-classifier",
+  "created_at": "2026-09-03T11:55:08.000Z",
+  "updated_at": "2026-09-03T11:55:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "dataset:nateraw/fairface",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85805577,
+  "parameters_human": "85.8M",
+  "storage_bytes": 686549179,
+  "storage_human": "687 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Autorisation de sortie du territoire (AST) | Service Public",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1359",
+      "snippet": "Un mineur français ou étranger qui vit en France et voyage à l'étranger doit avoir une AST s'il ne voyage pas avec une personne …"
+    },
+    {
+      "title": "AST - La prévention en action | Action Santé Travail",
+      "url": "https://www.actionsantetravail.fr/",
+      "snippet": "Adhérer chez AST, va au-delà de l’obligation légale ! C’est un partenariat gagnant-gagnant qui assure un accompagnement et un …"
+    },
+    {
+      "title": "Autorisation de sortie de territoire (AST) | Service Public",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/R46121",
+      "snippet": "Pour toute explication, consulter les fiches pratiques : Autorisation de sortie du territoire (AST) Avec quels documents un mineur …"
+    },
+    {
+      "title": "Autorisation de sortie du territoire (AST) pour les mineurs",
+      "url": "https://www.douane.gouv.fr/fiche/autorisation-de-sortie-du-territoire-ast-pour-les-mineurs",
+      "snippet": "Aug 3, 2026 · Depuis 2017, un mineur résidant en France et voyageant à l’étranger sans ses parents doit présenter une autorisation …"
+    },
+    {
+      "title": "AST Boxe | La Teste-de-Buch - Facebook",
+      "url": "https://www.facebook.com/astboxe/",
+      "snippet": "AST Boxe, La Teste-de-Buch. 473 likes · 23 talking about this · 20 were here. AST Boxe Club de Boxe Anglaise situé à la teste De …"
+    }
+  ]
+}

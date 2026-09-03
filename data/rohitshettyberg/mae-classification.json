@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rohitshettyberg/mae-classification",
+  "slug": "rohitshettyberg-mae-classification",
+  "author": "rohitshettyberg",
+  "url": "https://huggingface.co/rohitshettyberg/mae-classification",
+  "created_at": "2026-09-03T18:05:59.000Z",
+  "updated_at": "2026-09-03T18:06:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ameli assure",
+      "url": "https://assure.ameli.fr/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "rohitshettyberg (Rohit Shetty) - Hugging Face",
+      "url": "https://huggingface.co/rohitshettyberg/models",
+      "snippet": "rohitshettyberg's models1 Sort: Recently updated rohitshettyberg/model_259485306_albef_giant Updated about 19 hours ago"
+    },
+    {
+      "title": "Votre compte ameli | ameli.fr | Assuré",
+      "url": "https://www.ameli.fr/assure/adresses-et-contacts/votre-compte-ameli",
+      "snippet": "Salarié, indépendant, étudiant : en cas de questions sur le compte ameli, trouvez le moyen le plus adapté pour contacter l’Assurance …"
+    },
+    {
+      "title": "rohitshettyberg (Rohit Shetty) - Hugging Face",
+      "url": "https://huggingface.co/rohitshettyberg",
+      "snippet": "User profile of Rohit Shetty on Hugging Face"
+    },
+    {
+      "title": "Création de votre compte ameli et connexion : mode d’emploi",
+      "url": "https://www.ameli.fr/assure/remboursements/suivre-remboursements/se-connecter-compte-ameli",
+      "snippet": "Feb 10, 2026 · Vous trouverez sur cette page toutes les informations nécessaires pour créer un compte ameli et pour vous y …"
+    }
+  ]
+}

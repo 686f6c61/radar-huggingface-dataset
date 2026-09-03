@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "EInnovator/pra-qwen3-8b-mlx-8bit",
+  "slug": "einnovator-pra-qwen3-8b-mlx-8bit",
+  "author": "EInnovator",
+  "url": "https://huggingface.co/EInnovator/pra-qwen3-8b-mlx-8bit",
+  "created_at": "2026-09-03T16:02:19.000Z",
+  "updated_at": "2026-09-03T16:02:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pra",
+  "languages": [],
+  "tags": [
+    "pra",
+    "progressive-retrieval-attention",
+    "adapter",
+    "long-context",
+    "base_model:mlx-community/Qwen3-8B-8bit",
+    "base_model:finetune:mlx-community/Qwen3-8B-8bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "mlx-community/Qwen3-8B-8bit",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://www.linkedin.com/",
+      "snippet": "Discover relevant posts and expert insights — curated by topic and in one place. Connect with buyers who have first-hand …"
+    },
+    {
+      "title": "Σύνδεση - LinkedIn",
+      "url": "https://www.linkedin.com/login/el",
+      "snippet": "Συνδεθείτε στο LinkedIn για να διατηρήσετε επαφή με άτομα που γνωρίζετε, να μοιραστείτε ιδέες και να χτίσετε την καριέρα σας."
+    },
+    {
+      "title": "LinkedIn Ελλάδα: Σύνδεση ή εγγραφή",
+      "url": "https://gr.linkedin.com/",
+      "snippet": "Συνδεθείτε με αγοραστές που έχουν εμπειρία από πρώτο χέρι για να βρείτε τα καλύτερα προϊόντα για εσάς. Κάντε ένα διάλειμμα και …"
+    },
+    {
+      "title": "LinkedIn Login, Sign in | LinkedIn",
+      "url": "https://www.linkedin.com/login/",
+      "snippet": "Login to LinkedIn to keep in touch with people you know, share ideas, and build your career."
+    },
+    {
+      "title": "LinkedIn | LinkedIn",
+      "url": "https://in.linkedin.com/company/linkedin",
+      "snippet": "Founded in 2003, LinkedIn connects the world's professionals to make them more productive and successful. With more than 1 billion …"
+    }
+  ]
+}

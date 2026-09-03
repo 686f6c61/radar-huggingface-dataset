@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "wuff-mann/MANN-GPT",
+  "slug": "wuff-mann-mann-gpt",
+  "author": "wuff-mann",
+  "url": "https://huggingface.co/wuff-mann/MANN-GPT",
+  "created_at": "2026-09-01T08:10:38.000Z",
+  "updated_at": "2026-09-03T13:46:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46369543986,
+  "storage_human": "46.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ameli, le site de l’Assurance Maladie en ligne | ameli.fr | Assuré",
+      "url": "https://www.ameli.fr/",
+      "snippet": "Le site officiel de l'Assurance Maladie. Actualités – Droits et Démarches – Remboursements – Prestations et aides – Santé – Offres …"
+    },
+    {
+      "title": "wuff-mann (wuff_mann) - Hugging Face",
+      "url": "https://huggingface.co/wuff-mann/datasets",
+      "snippet": "AI & ML interests ... Recent Activity liked a model about 7 hours ago ... updated a model about 7 hours ago"
+    },
+    {
+      "title": "Créer votre compte ameli | ameli.fr | Assuré",
+      "url": "https://www.ameli.fr/assure/adresses-et-contacts/votre-compte-ameli/creer-votre-compte-ameli",
+      "snippet": "Sur ameli.fr Rendez-vous sur https://assure.ameli.fr et préparez votre RIB (celui déjà transmis à votre caisse d'assurance maladie) et …"
+    },
+    {
+      "title": "wuff-mann (wuff_mann) - Hugging Face",
+      "url": "https://huggingface.co/wuff-mann",
+      "snippet": "AI & ML interests ... Recent Activity liked a model about 6 hours ago ... updated a model about 6 hours ago"
+    },
+    {
+      "title": "VOUS CONNECTER PAR CARTE CPS - ameli",
+      "url": "https://authcps-espacepro.ameli.fr/CPS/oauth2/authorize",
+      "snippet": "Connectez-vous à Amelipro en toute sécurité avec votre carte CPS pour accéder aux services professionnels de l'Assurance Maladie."
+    }
+  ]
+}

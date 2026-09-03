@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ebadhussain20/yolov11s_crowd",
+  "slug": "ebadhussain20-yolov11s_crowd",
+  "author": "ebadhussain20",
+  "url": "https://huggingface.co/ebadhussain20/yolov11s_crowd",
+  "created_at": "2026-09-03T11:20:20.000Z",
+  "updated_at": "2026-09-03T11:57:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19164570,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Türschilder Kinderzimmer Vorlagen - Kostenlose Ausmalbilder",
+      "url": "https://www.kostenlose-ausmalbilder.de/vorlage/motive/tuerschilder.php",
+      "snippet": "Damit auch Du Deinem Besuch gleich mitteilen kannst, ob Du beschäftigt bist oder nicht haben wir nun Türschilder zum Ausmalen …"
+    },
+    {
+      "title": "Türschilder kostenlose Ausmalbilder - AusmalMix.de",
+      "url": "https://ausmalmix.de/pk/freizeit/papeterie/tuerschilder/",
+      "snippet": "Mach Deine Tür zu etwas ganz Besonderem, lade die Türschilder Ausmalbilder kostenlos als PDF herunter und entwirf Dein …"
+    },
+    {
+      "title": "TÜRSCHILDER zum Ausmalen - de.hellokids.com",
+      "url": "https://de.hellokids.com/r_723/ausmalbilder/turschilder-zum-ausmalen",
+      "snippet": "TÜrschilder zum ausmalen : entdecke die kostenlosen tÜrschilder zum ausmalen Malbögen zum Drucken oder zum online Ausmalen …"
+    },
+    {
+      "title": "Türschild basteln | Bastelvorlage für Kinder | MACH MiT! im ... - KiKA",
+      "url": "https://www.kika.de/kikaninchen/baumhaus/selbermachen/basteln/mach-mit-tuerschild-108",
+      "snippet": "Lade jetzt die Bastelvorlage für das Türschild, mit dem du deine Gefühle zeigen kannst, aus dem \"KiKA-Baumhaus\" als PDF zum …"
+    },
+    {
+      "title": "Türschild für den Kindergarten und Willkommensschild Ausmalbild ...",
+      "url": "https://www.coloringbook.ai/de/kindergarten/kindergarten-classroom-door-and-welcome-sign",
+      "snippet": "Jun 2, 2026 · Türschild für den Kindergarten und Willkommensschild Ausmalbild und 15 Kindergarten Ausmalbilder; Von einfach bis …"
+    }
+  ]
+}

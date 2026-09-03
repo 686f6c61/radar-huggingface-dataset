@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "valixonov04/qwen-7b-kiberbase",
+  "slug": "valixonov04-qwen-7b-kiberbase",
+  "author": "valixonov04",
+  "url": "https://huggingface.co/valixonov04/qwen-7b-kiberbase",
+  "created_at": "2026-09-03T19:11:41.000Z",
+  "updated_at": "2026-09-03T19:17:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694030,
+  "storage_human": "15.2 GB",
+  "base_model": "unsloth/qwen2.5-7b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ben Rice Stats, Height, Weight, Position, Rookie Status & More ...",
+      "url": "https://www.baseball-reference.com/players/r/ricebe01.shtml",
+      "snippet": "Feb 22, 1999 · Check out the latest Stats, Height, Weight, Position, Rookie Status & More of Ben Rice. Get info about his position, …"
+    },
+    {
+      "title": "Qwen-7B - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-7B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ben Rice Amateur, College & Minor Leagues Statistics | Baseball ...",
+      "url": "https://www.baseball-reference.com/register/player.fcgi?id=rice--000ben",
+      "snippet": "Feb 22, 1999 · Ben Rice Amateur, College & Minor Leagues Statistics including batting, fielding, prospect rankings and more on …"
+    },
+    {
+      "title": "GitHub - gengOne/Qwen-7B: The official repo of Qwen-7B (通义千问-7B) chat ...",
+      "url": "https://github.com/gengOne/Qwen-7B",
+      "snippet": "This repo includes the brief introduction to Qwen-7B, the usage guidance, and also a technical memo link that provides more information. Qwen-7B is the 7B-parameter version of the large language model series, Qwen (abbr. Tongyi Qianwen), proposed by Alibaba Cloud."
+    },
+    {
+      "title": "2026 New York Yankees Statistics | Baseball-Reference.com",
+      "url": "https://www.baseball-reference.com/teams/NYY/2026.shtml",
+      "snippet": "New York Yankees latest stats and more including batting stats, pitching stats, team fielding totals and more on Baseball …"
+    }
+  ]
+}

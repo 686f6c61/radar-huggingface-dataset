@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "a7x3a/deepseek-ocr-2-qai-16bit-merged",
+  "slug": "a7x3a-deepseek-ocr-2-qai-16bit-merged",
+  "author": "a7x3a",
+  "url": "https://huggingface.co/a7x3a/deepseek-ocr-2-qai-16bit-merged",
+  "created_at": "2026-09-03T13:49:46.000Z",
+  "updated_at": "2026-09-03T13:49:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 345908528,
+  "storage_human": "346 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tracking Your Shipment or Packages | FedEx",
+      "url": "https://www.fedex.com/en-us/tracking.html",
+      "snippet": "Enter your FedEx tracking number, track by reference, obtain proof of delivery, or TCN. See FedEx Express, Ground, Freight, and …"
+    },
+    {
+      "title": "Track & Ship Online or Find Nearby Locations | FedEx",
+      "url": "https://www.fedex.com/en-us/home.html",
+      "snippet": "With thousands of convenient FedEx locations, it's easy to fit shipping into your day. Find a nearby location, drop off your package, …"
+    },
+    {
+      "title": "Package Tracking - Courier Tracking | FedEx Canada",
+      "url": "https://www.fedex.com/en-ca/tracking.html",
+      "snippet": "To receive notifications for a specific shipment, you can enable and receive the following standard tracking notifications through the …"
+    },
+    {
+      "title": "Advanced Shipment Tracking | FedEx",
+      "url": "https://www.fedex.com/en-us/tracking/advanced.html",
+      "snippet": "Get visibility of up to 20,000 active FedEx shipments. Access documents, images, and detailed status-tracking information, including …"
+    },
+    {
+      "title": "How to Track Your Shipments and Parcels with FedEx Tracking Number",
+      "url": "https://www.deskera.com/blog/fedex-tracking-guide/",
+      "snippet": "Jun 5, 2025 · Tracking Number is the most common method of tracking a FedEx shipment. Every service offered by FedEx comes …"
+    }
+  ]
+}

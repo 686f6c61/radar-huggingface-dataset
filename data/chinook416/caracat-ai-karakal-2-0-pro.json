@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Chinook416/caracat-ai-karakal-2.0-pro",
+  "slug": "chinook416-caracat-ai-karakal-2-0-pro",
+  "author": "Chinook416",
+  "url": "https://huggingface.co/Chinook416/caracat-ai-karakal-2.0-pro",
+  "created_at": "2026-09-03T10:57:11.000Z",
+  "updated_at": "2026-09-03T10:57:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "assistant",
+    "conversational",
+    "gpt-oss",
+    "text-generation",
+    "en",
+    "de",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.it/intl/en/earth/",
+      "snippet": "Make use of Google Earth's detailed globe by tilting the map to save a perfect 3D view or diving into Street View for a 360 …"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.it/intl/it/earth/index.html",
+      "snippet": "Google Earth è la versione digitale più fotorealistica del nostro pianeta. Da dove provengono le immagini? Come sono assemblate? E …"
+    },
+    {
+      "title": "Earth Versions – Google Earth",
+      "url": "https://maps.google.it/intl/en/earth/versions/",
+      "snippet": "When you use Google Maps map data, traffic, directions, and other content, you may find that actual conditions differ from the map …"
+    },
+    {
+      "title": "Versioni di Earth – Google Earth",
+      "url": "https://maps.google.it/intl/it/earth/versions/",
+      "snippet": "When you use Google Maps map data, traffic, directions, and other content, you may find that actual conditions differ from the map …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.it/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering detailed maps, directions, and local business information."
+    }
+  ]
+}

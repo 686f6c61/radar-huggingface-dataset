@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Raghav-Singhal/1pp-0.5b-ua-base",
+  "slug": "raghav-singhal-1pp-0-5b-ua-base",
+  "author": "Raghav-Singhal",
+  "url": "https://huggingface.co/Raghav-Singhal/1pp-0.5b-ua-base",
+  "created_at": "2026-09-03T16:52:02.000Z",
+  "updated_at": "2026-09-03T16:52:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "1pp",
+    "one-persona-pretraining",
+    "base",
+    "ua",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 580445568,
+  "parameters_human": "580.4M",
+  "storage_bytes": 1160916120,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "POWERPLAY 2 Wireless Charging System | Logitech G",
+      "url": "https://www.logitechg.com/en-us/discover/technology/powerplay-2",
+      "snippet": "POWERPLAY 2 is the only wireless charging system that powers your play in motion. Compatible with a wide variety of Logitech G …"
+    },
+    {
+      "title": "POWERPLAY 2 WIRELESS CHARGING SYSTEM - Logitech G",
+      "url": "https://www.logitechg.com/en-us/shop/p/powerplay-2",
+      "snippet": "POWERPLAY 2 is the only wireless charging system that powers your play in motion. Compatible with a wide variety of Logitech G …"
+    },
+    {
+      "title": "Mouse Pad Gaming LOGITECH Powerplay 2, negru - altex.ro",
+      "url": "https://altex.ro/mouse-pad-gaming-logitech-powerplay-2-negru/cpd/947000003/",
+      "snippet": "POWERPLAY 2 este singurul sistem de incarcare wireless care iti alimenteaza jocul in miscare. Compatibil cu o gama larga de …"
+    },
+    {
+      "title": "Logitech PowerPlay 2 Review: An impressive downgrade",
+      "url": "https://www.tomshardware.com/peripherals/gaming-mice/logitech-powerplay-2-review",
+      "snippet": "Feb 25, 2025 · Logitech's wireless charging mouse pad, the PowerPlay, has managed to stand the test of time. It first debuted in …"
+    },
+    {
+      "title": "Mousepad Logitech Gaming PowerPlay2, incarcare wireless, negru",
+      "url": "https://www.emag.ro/mousepad-logitech-gaming-powerplay2-incarcare-wireless-negru-947-000003/pd/DGW3M03BM/?msockid=33b193484569679b07fe848144fe66f0",
+      "snippet": "POWERPLAY 2 este singurul sistem de incarcare wireless care iti alimenteaza jocul in miscare. Compatibil cu o gama larga de …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Setzzzz1416/Qwen-Image-Edit-Rapid-AIO",
+  "slug": "setzzzz1416-qwen-image-edit-rapid-aio",
+  "author": "Setzzzz1416",
+  "url": "https://huggingface.co/Setzzzz1416/Qwen-Image-Edit-Rapid-AIO",
+  "created_at": "2026-09-03T19:15:05.000Z",
+  "updated_at": "2026-09-03T19:15:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "comfyUI",
+  "languages": [],
+  "tags": [
+    "comfyUI",
+    "qwen",
+    "qwen-edit",
+    "t2i",
+    "i2i",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:finetune:Qwen/Qwen-Image-Edit-2511",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1550174628380,
+  "storage_human": "1550.2 GB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "\"Beauty & The Nerd\" 2025: Maria und Max liefern heiße Dusch …",
+      "url": "https://www.joyn.de/bts/serien/beauty-and-the-nerd/gut-bestueckt-heisse-szenen-bei-batn2025-maria-bell-und-max-bornmann-liefern-dusch-moment-10526?msockid=04b711f1bf37667b067a0638be5a67c9",
+      "snippet": "Aug 1, 2025 · Während Sarah noch überlegt, wie sie ihre männliche Beauty von sich überzeugen kann, macht Maria Nägel mit …"
+    },
+    {
+      "title": "Phr00t/Qwen-Image-Edit-Rapid-AIO · Hugging Face",
+      "url": "https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nacktdusche: \"Beauty & The Nerd\"-Max vergnügt sich mit Maria",
+      "url": "https://www.promiflash.de/news/2025/07/10/nacktdusche-beauty-und-the-nerd-max-vergnuegt-sich-mit-maria.html",
+      "snippet": "Jul 10, 2025 · Bei \"Beauty & The Nerd\" lässt Max Bornmann nichts anbrennen. Nun wird es zwischen ihm und Maria Bell unter der …"
+    },
+    {
+      "title": "Phil2Sat/Qwen-Image-Edit-Rapid-AIO-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Phil2Sat/Qwen-Image-Edit-Rapid-AIO-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nackidei-Aktion bei „Beauty & The Nerd“ sorgt für Kopfschütteln",
+      "url": "https://www.derwesten.de/promi-tv/beauty-and-the-nerd-prosieben-max-bornmann-2-id301747306.html",
+      "snippet": "Jul 31, 2025 · Bei „Beauty & The Nerd“ geht Max auf Tauchstation. Warum seine Nackidei-Aktion polarisiert, Sarah weint und Laura …"
+    }
+  ]
+}

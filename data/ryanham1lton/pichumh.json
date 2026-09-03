@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/PichuMH",
+  "slug": "ryanham1lton-pichumh",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/PichuMH",
+  "created_at": "2026-09-03T14:42:58.000Z",
+  "updated_at": "2026-09-03T14:44:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117863638,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quote of the Day - BrainyQuote",
+      "url": "https://www.brainyquote.com/quote_of_the_day",
+      "snippet": "1 day ago · Share five inspirational Quotes of the Day with friends on Facebook, Twitter, and blogs. Enjoy our Brainy, Funny, Love, …"
+    },
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/copilotsearch?q=quotes+of+the+day",
+      "snippet": "Gostaríamos de exibir a descriçãoaqui, mas o site que você está não nos permite."
+    },
+    {
+      "title": "Ryanham1lton/Piplup · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Piplup",
+      "snippet": "Ryanham1lton / Piplup like 0 License:cc-by-4.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "www.bingquote.com",
+      "url": "https://www.bingquote.com/home",
+      "snippet": ""
+    }
+  ]
+}

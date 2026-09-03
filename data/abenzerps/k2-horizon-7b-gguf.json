@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "abenzerps/K2-Horizon-7B-GGUF",
+  "slug": "abenzerps-k2-horizon-7b-gguf",
+  "author": "abenzerps",
+  "url": "https://huggingface.co/abenzerps/K2-Horizon-7B-GGUF",
+  "created_at": "2026-09-03T16:18:57.000Z",
+  "updated_at": "2026-09-03T16:23:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "k2-horizon",
+    "long-context",
+    "512k-context",
+    "dense",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:IFM/K2-Horizon-7B",
+    "base_model:quantized:IFM/K2-Horizon-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8999178240,
+  "parameters_human": "9.00B",
+  "storage_bytes": 34367191391,
+  "storage_human": "34.4 GB",
+  "base_model": "IFM/K2-Horizon-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Districlos, la boutique du grillage, cloture et portail",
+      "url": "https://www.cloture-discount.fr/",
+      "snippet": "Cloture Discount : boutique en ligne de cloture et grillage à prix discount, panneaux de cloture rigides et autres clotures."
+    },
+    {
+      "title": "Lamelle d’occultation pour grillage rigide - DISTRICLOS",
+      "url": "https://www.cloture-discount.fr/34-lamelle-doccultation-pour-grillage-rigide",
+      "snippet": "Pourquoi choisir ses lamelles d’occultation pour grillage rigide chez Districlos ? Chez Districlos, nos experts peuvent vous aiguiller …"
+    },
+    {
+      "title": "Districlos, la boutique du grillage, cloture et portail",
+      "url": "https://vianney.cloture-discount.fr/",
+      "snippet": "Districlos, votre expert clôtures, portails et brise-vues depuis plus de 15 ans Districlos expert en clôture, grillage, portail, brise-vue, …"
+    },
+    {
+      "title": "Pack portail et portillon alu Districlos",
+      "url": "https://vianney.cloture-discount.fr/fr/pack-portail-battant-portillon/1350-pack-portail-battant-portillon-alu-nice-3760297281410.html",
+      "snippet": "Notre pack portail battant et portillon en aluminium offre une solution complète alliant esthétique, durabilité et fonctionnalité."
+    },
+    {
+      "title": "Comptoir virtuel",
+      "url": "https://comptoir-virtuel.cloture-discount.fr/",
+      "snippet": "Accédez à votre magasin DISTRICLOS, comme si vous y étiez ! Du lundi au vendredi, de 08:00 à 12:00 et de 13:00 à 18:00 PRENEZ …"
+    }
+  ]
+}

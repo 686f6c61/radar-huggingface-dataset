@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "abenzerps/K2-Horizon-3.7B-MLX-4bit",
+  "slug": "abenzerps-k2-horizon-3-7b-mlx-4bit",
+  "author": "abenzerps",
+  "url": "https://huggingface.co/abenzerps/K2-Horizon-3.7B-MLX-4bit",
+  "created_at": "2026-09-03T16:36:03.000Z",
+  "updated_at": "2026-09-03T16:41:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "mlx-lm",
+    "4-bit",
+    "k2-horizon",
+    "long-context",
+    "512k-context",
+    "dense",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:IFM/K2-Horizon-3.7B",
+    "base_model:quantized:IFM/K2-Horizon-3.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5058255360,
+  "parameters_human": "5.06B",
+  "storage_bytes": 2867434529,
+  "storage_human": "2.9 GB",
+  "base_model": "IFM/K2-Horizon-3.7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "مذكرة بسطتهالك في النحو لثالثة إعدادي الترم الأول",
+      "url": "https://forums.exam-eg.com/threads/41630/",
+      "snippet": "بادئ الموضوعHaidy1 تاريخ البدء12 نوفمبر 2020 H Haidy1 Super Moderator طاقم الإدارة 12 نوفمبر 2020 #1 مذكرة بسطتهالك في شرح النحو مادة اللغة العربية للشهادة …"
+    },
+    {
+      "title": "مذكرة بسطتهالك في شرح النحو لأولي إعدادي ترم اول",
+      "url": "https://forums.exam-eg.com/threads/41845/",
+      "snippet": "مذكرة بسطتهالك في شرح النحو لأولي إعدادي ترم اول بادئ الموضوع Haidy1 تاريخ البدء 1 ديسمبر 2020 H Haidy1 Super Moderator"
+    },
+    {
+      "title": "الجملة الواقعة نعتا – Eddirasa: موقع الدراسة الجزائري | الموقع الأول ...",
+      "url": "https://www.eddirasa.net/13699/",
+      "snippet": "الجملة الواقعة نعتا – Eddirasa: موقع الدراسة الجزائري | الموقع الأول للدراسة في الجزائر الجملة الواقعة نعتا"
+    },
+    {
+      "title": "تحضير درس الحال و أنواعها في اللغة العربية للسنة الأولى متوسط",
+      "url": "https://www.eddirasa.net/vb/showthread.php?t=80470",
+      "snippet": "السنة الأولى متوسط - مادة اللغة العربية المقطع التّعلّميّ (5): الطّبيعة. الميــــــدان: ظاهرة لغويّة . المحتوى المعرفيّ: الحال وأنواعها. الأمثلة : 1. ما ألذّ وقع حوافر القطيع عائداعند الغروب. 2. أقبل …"
+    },
+    {
+      "title": "مذكرة بسطتهالك فى النحو لاولى اعدادى ترم اول | الامتحان التعليمى",
+      "url": "https://forums.exam-eg.com/threads/26325/",
+      "snippet": "Jan 8, 2020 · مذكرة بسطتهالك فى النحو لاولى اعدادى ترم اول بادئ الموضوع the internet تاريخ البدء 8 يناير 2020 the internet عضو محترف 8 يناير 2020 #1"
+    }
+  ]
+}

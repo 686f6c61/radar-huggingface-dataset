@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DistributedAI/102-v7",
+  "slug": "distributedai-102-v7",
+  "author": "DistributedAI",
+  "url": "https://huggingface.co/DistributedAI/102-v7",
+  "created_at": "2026-09-01T09:23:27.000Z",
+  "updated_at": "2026-09-03T11:57:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80886272400,
+  "storage_human": "80.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Strona główna Samorządu Województwa Podkarpackiego",
+      "url": "https://www.podkarpackie.pl/",
+      "snippet": "Rządowy Fundusz Inwestycji Lokalnych Council of Europe Development Bank Plan Gospodarki Odpadami Podkarpackie Centrum …"
+    },
+    {
+      "title": "Województwo podkarpackie – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo_podkarpackie",
+      "snippet": "Województwo podkarpackie – jednostka podziału administracyjnego Polski, jedno z 16 województw utworzonych w 1999 roku. …"
+    },
+    {
+      "title": "Podkarpackie",
+      "url": "https://www.podkarpackie.eu/",
+      "snippet": "Aby zapewnić jak najlepsze wrażenia, korzystamy z technologii, takich jak pliki cookie, do przechowywania i/lub uzyskiwania dostępu …"
+    },
+    {
+      "title": "Podkarpackie travel",
+      "url": "https://podkarpackie.travel/",
+      "snippet": "Nie wiesz od czego zacząć podróż po Podkarpaciu? Pomożemy Ci wybrać największe atrakcje turystyczne regionu i miejsca w które …"
+    },
+    {
+      "title": "Podkarpacie: zwiedzanie TOP 14 atrakcji, jakie trzeba zobaczyć",
+      "url": "https://plannawypad.pl/podkarpacie-atrakcje/",
+      "snippet": "Dzika przyroda, wielowiekowe zabytki, różnorodność religijna, bogata kultura i pyszna regionalna kuchnia, to tylko kilka powodów, dla …"
+    }
+  ]
+}

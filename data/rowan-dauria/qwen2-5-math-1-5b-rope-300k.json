@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "rowan-dauria/Qwen2.5-Math-1.5B-RoPE-300k",
+  "slug": "rowan-dauria-qwen2-5-math-1-5b-rope-300k",
+  "author": "rowan-dauria",
+  "url": "https://huggingface.co/rowan-dauria/Qwen2.5-Math-1.5B-RoPE-300k",
+  "created_at": "2026-09-03T15:26:04.000Z",
+  "updated_at": "2026-09-03T15:26:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:2409.12122",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3087467144,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rowan | Knitting & Crochet Wool & Yarns, Patterns & Publications | Rowan",
+      "url": "https://knitrowan.com/fr",
+      "snippet": "LES FILS ROWAN Des modèles de tricot et de crochet intemporels réalisés avec les meilleurs fils depuis 1978 Best-sellers"
+    },
+    {
+      "title": "Qwen/Qwen2.5-Math-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Math-1.5B",
+      "snippet": "Qwen2.5-Math ... Qwen2.5-Math Technical Report: Toward Mathematical Expert Model via Self-Improvement"
+    },
+    {
+      "title": "Knitting & Crochet Yarns | Rowan",
+      "url": "https://knitrowan.com/fr/yarns/all-yarns",
+      "snippet": "Parcourez notre vaste gamme de fils en fibres naturelles, dont le mérinos et l'alpaga, le cachemire, le coton et des mélanges exquis."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen2.5-Math: A series of math-specific large language ...",
+      "url": "https://github.com/QwenLM/Qwen2.5-Math",
+      "snippet": "The Qwen2.5-Math-72B-Instruct model outperforms the Qwen2-Math-72B-Instruct model by an average margin of 4.4 and 6.1 points in English and Chinese, respectively, establishing itself as the best open-source mathematical model currently available."
+    },
+    {
+      "title": "Knitting & Crochet Wool & Yarns, Patterns & Publications - Rowan",
+      "url": "https://rowanknits.com/",
+      "snippet": "ROWAN YARNS Timeless Knitting & Crochet Designs with the Finest Yarns Since 1978 PARADISE SHAWL BY CHLOE THURLOW …"
+    }
+  ]
+}

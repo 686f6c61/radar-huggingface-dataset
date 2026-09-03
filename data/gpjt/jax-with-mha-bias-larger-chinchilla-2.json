@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gpjt/jax-with-mha-bias-larger-chinchilla-2",
+  "slug": "gpjt-jax-with-mha-bias-larger-chinchilla-2",
+  "author": "gpjt",
+  "url": "https://huggingface.co/gpjt/jax-with-mha-bias-larger-chinchilla-2",
+  "created_at": "2026-09-03T15:32:04.000Z",
+  "updated_at": "2026-09-03T15:36:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpjtgpt2",
+    "text-generation",
+    "gpjt-llm-from-scratch",
+    "custom_code",
+    "dataset:gpjt/fineweb-gpt2-tokens",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 240658432,
+  "parameters_human": "240.7M",
+  "storage_bytes": 962655088,
+  "storage_human": "963 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "gpjt/8xh100m80-latest · Hugging Face",
+      "url": "https://huggingface.co/gpjt/8xh100m80-latest",
+      "snippet": "Model Card for gpjt/8xh100m80-latest This model is gpjt/8xh100m80-latest, a trained-from-scratch base model using the GPT-2-style architecture from Sebastian Raschka 's book \" Build a Large Language Model (from Scratch) \"."
+    },
+    {
+      "title": "AmazonUae - Reddit",
+      "url": "https://www.reddit.com/r/AmazonUae/",
+      "snippet": "Aug 17, 2021 · Seller account Amazon UAE Hey everyone, I'm considering expanding my e-commerce business to sell on Amazon …"
+    },
+    {
+      "title": "GitHub - jax-ml/jax: Composable transformations of Python+NumPy ...",
+      "url": "https://github.com/jax-ml/jax",
+      "snippet": "What is JAX? JAX is a Python library for accelerator-oriented array computation and program transformation, designed for high-performance numerical computing and large-scale machine learning. JAX can automatically differentiate native Python and NumPy functions."
+    },
+    {
+      "title": "Is AMAZON PRIME SUBSCRIPTION worth it in UAE - Reddit",
+      "url": "https://www.reddit.com/r/dubai/comments/9ga03j/is_amazon_prime_subscription_worth_it_in_uae/",
+      "snippet": "DesertCart is Amazon, but with price increases for shipping built-in to the website. ShopNShip is an Aramex service that lets you …"
+    }
+  ]
+}

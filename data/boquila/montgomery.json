@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "boquila/montgomery",
+  "slug": "boquila-montgomery",
+  "author": "boquila",
+  "url": "https://huggingface.co/boquila/montgomery",
+  "created_at": "2026-09-03T12:54:02.000Z",
+  "updated_at": "2026-09-03T12:54:02.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Łączenie tekstu z dwóch lub większej liczby komórek w jednej komórce w …",
+      "url": "https://support.microsoft.com/pl-pl/excel/get-started/combine-text-from-two-or-more-cells-into-one-cell-in-microsoft-excel",
+      "snippet": "Jak połączyć tekst lub dane z dwóch lub więcej komórek w jednej komórce w programie Excel."
+    },
+    {
+      "title": "Jak połączyć dwie kolumny w jedną Excel? Łączenie obszarów danych",
+      "url": "https://www.digitalteam.com.pl/jak-polaczyc-dwie-kolumny-w-jedna-excel-laczenie-obszarow-danych/",
+      "snippet": "Oct 9, 2025 · Aby połączyć dwie kolumny w jedną w Excelu, możesz skorzystać z kilku różnych, prostych lub zaawansowanych …"
+    },
+    {
+      "title": "Jak połączyć dwie kolumny Excel? Łączenie danych z różnych obszarów",
+      "url": "https://www.digitalteam.com.pl/jak-polaczyc-dwie-kolumny-excel-laczenie-danych-z-roznych-obszarow/",
+      "snippet": "Oct 9, 2025 · Może być przydatne przy tworzeniu pełnych imion i nazwisk, generowaniu unikalnych identyfikatorów, przygotowywaniu …"
+    },
+    {
+      "title": "Łączenie tekstów w Excelu - 5 sposobów - Imperium Szkoleniowe",
+      "url": "https://imperiumszkoleniowe.pl/laczenie-tekstow-w-excelu-5-sposobow-2/",
+      "snippet": "Mar 14, 2023 · Potrzebujesz połączyć w jedną komórkę tekst z kilku komórek? Dowiedz się jak to zrobić aż 5 różnymi metodami. …"
+    },
+    {
+      "title": "Jak połączyć tekst z wielu komórek w jedną komórkę w programie Excel …",
+      "url": "https://wukihow.com/pl/279719/jak-po%C5%82%C4%85czy%C4%87-tekst-z-wielu-kom%C3%B3rek-w-jedn%C4%85-kom%C3%B3rk%C4%99-w-programie-excel.html",
+      "snippet": "Concatenate to po prostu fantazyjny sposób powiedzenia „łączyć” lub „łączyć razem”, a do tego służy specjalna funkcja …"
+    }
+  ]
+}

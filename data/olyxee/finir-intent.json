@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Olyxee/FinIR-Intent",
+  "slug": "olyxee-finir-intent",
+  "author": "Olyxee",
+  "url": "https://huggingface.co/Olyxee/FinIR-Intent",
+  "created_at": "2026-09-03T11:31:24.000Z",
+  "updated_at": "2026-09-03T12:07:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "finance",
+    "structured-generation",
+    "rule-based",
+    "finir",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/",
+      "snippet": "1 day ago · Hello, New users on the forum won't be able to send PM untill certain criteria are met (you need to have at least 6 posts in …"
+    },
+    {
+      "title": "porn | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/tags/porn/",
+      "snippet": "Jul 26, 2026 · Thread Man seeking woman Partner Sex partner and porn [ATTACH] Thread by: twizzler, Jan 25, 2026, 0 replies, in …"
+    },
+    {
+      "title": "城市论坛 天府社区",
+      "url": "https://bbs.scol.com.cn/forum-41-1.html",
+      "snippet": "Dec 24, 2025 · 天府社区的城市论坛综合版块，提供多样化的城市生活交流与讨论平台。"
+    },
+    {
+      "title": "天府社区",
+      "url": "https://bbs.scol.com.cn/forum.php",
+      "snippet": "Dec 24, 2025 · 天府社区是四川日报报业集团全媒体中心旗下重点打造的城市生活社区网站，多年来其城市生活品牌深入人心，已成为 …"
+    },
+    {
+      "title": "Porn experiences. | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/porn-experiences.716317/",
+      "snippet": "Feb 28, 2026 · As a person who has a very long history with porn, I've found it interesting hearing stories from others on their …"
+    }
+  ]
+}

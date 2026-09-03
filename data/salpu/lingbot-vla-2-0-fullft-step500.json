@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "salpu/lingbot-vla-2.0-fullft-step500",
+  "slug": "salpu-lingbot-vla-2-0-fullft-step500",
+  "author": "salpu",
+  "url": "https://huggingface.co/salpu/lingbot-vla-2.0-fullft-step500",
+  "created_at": "2026-09-03T14:05:45.000Z",
+  "updated_at": "2026-09-03T14:06:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lingbotvla",
+    "robotics",
+    "vla",
+    "lingbot-vla-2.0",
+    "libero",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6375907511,
+  "parameters_human": "6.38B",
+  "storage_bytes": 25515312426,
+  "storage_human": "25.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "除了在字典中作为代替符号以外，在印刷品中很少见到这个符号。那么它应该是怎么用的呢？它的来源又是怎…"
+    },
+    {
+      "title": "Avis sur achat Honda NTV Revere 650 - Forum Moto-Station.com",
+      "url": "https://forums.moto-station.com/forum/forums-moto/la-moto/67265-avis-sur-achat-honda-ntv-revere-650",
+      "snippet": "Mar 21, 2009 · Forum Forums moto La moto Avis sur achat Honda NTV Revere 650 Bienvenue sur les forums Moto-Station ! Le …"
+    },
+    {
+      "title": "Problème bruit embrayage ! - Forum Moto-Station.com",
+      "url": "https://forums.moto-station.com/forum/forums-moto/technique-et-m%C3%A9canique-moto/22476-probl%C3%A8me-bruit-embrayage",
+      "snippet": "Jul 20, 2004 · Entretenir, modifier ou rénover votre moto, vous voulez un conseil ou apprendre en mettant les mains dans le …"
+    },
+    {
+      "title": "Eidosper - 知乎",
+      "url": "https://www.zhihu.com/people/eidosper",
+      "snippet": "6 days ago · 线性推演是这样的，但世界是非线性的。 现在台积电的7、5、3纳米加起来大概是50万片每月的产能，中芯国际我不知道 …"
+    },
+    {
+      "title": "que penser de la ntv 650 revere - Forum Moto-Station.com",
+      "url": "https://forums.moto-station.com/forum/forums-moto/motos-ancienne-et-de-collection/3679-que-penser-de-la-ntv-650-revere",
+      "snippet": "Jul 2, 2002 · Forum Forums moto Motos Ancienne et de collection que penser de la ntv 650 revere ? Bienvenue sur les forums Moto …"
+    }
+  ]
+}

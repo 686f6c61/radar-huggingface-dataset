@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "NONHUMAN-RESEARCH/act-hanoi-teleop",
+  "slug": "nonhuman-research-act-hanoi-teleop",
+  "author": "NONHUMAN-RESEARCH",
+  "url": "https://huggingface.co/NONHUMAN-RESEARCH/act-hanoi-teleop",
+  "created_at": "2026-09-03T14:07:37.000Z",
+  "updated_at": "2026-09-03T14:07:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:murobotics/tblock-all-piper-clean-bi_piper_follower",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51685006,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206783688,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GrEStG - Grunderwerbsteuergesetz - Gesetze im Internet",
+      "url": "https://www.gesetze-im-internet.de/grestg_1983/BJNR017770982.html",
+      "snippet": "Vollzitat: \"Grunderwerbsteuergesetz in der Fassung der Bekanntmachung vom 26. Februar 1997 (BGBl. I S. 418, 1804), das zuletzt …"
+    },
+    {
+      "title": "GrEStG - nichtamtliches Inhaltsverzeichnis",
+      "url": "https://www.gesetze-im-internet.de/grestg_1983/",
+      "snippet": "Grunderwerbsteuergesetz zur Gesamtausgabe der Norm im Format: HTML PDF XML EPUB"
+    },
+    {
+      "title": "§ 3 GrEStG - Einzelnorm - Gesetze im Internet",
+      "url": "https://www.gesetze-im-internet.de/grestg_1983/__3.html",
+      "snippet": "Nichtamtliches Inhaltsverzeichnis Grunderwerbsteuergesetz (GrEStG) § 3 Allgemeine Ausnahmen von der Besteuerung Von der …"
+    },
+    {
+      "title": "§ 4 UStG - Einzelnorm - Gesetze im Internet",
+      "url": "https://www.gesetze-im-internet.de/ustg_1980/__4.html",
+      "snippet": "die grenzüberschreitenden Beförderungen von Gegenständen, die Beförderungen im internationalen Eisenbahnfrachtverkehr und …"
+    },
+    {
+      "title": "Gesetze im Internet",
+      "url": "https://www.gesetze-im-internet.de/",
+      "snippet": "Das Bundesministerium der Justiz und für Verbraucherschutz und das Bundesamt für Justiz stellen für interessierte Bürgerinnen und …"
+    }
+  ]
+}

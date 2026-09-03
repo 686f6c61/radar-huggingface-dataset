@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/Coastline-Change-Release",
+  "slug": "sotaagi2030-coastline-change-release",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/Coastline-Change-Release",
+  "created_at": "2026-09-03T11:18:27.000Z",
+  "updated_at": "2026-09-03T11:19:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "remote-sensing",
+    "coastline-change",
+    "segmentation",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 74,
+  "storage_human": "74 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seneweb - Infos, news & actualités - L'information du Sénégal en ...",
+      "url": "https://images.seneweb.com/news/Deec",
+      "snippet": "Apr 12, 2025 · Information, Senegal news et actualité politique en continu sur seneweb. Actualité politique, info culture & sports au …"
+    },
+    {
+      "title": "SOTAagi2030 (sota) - Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 5 minutes ago ... updated a dataset 5 minutes ago"
+    },
+    {
+      "title": "SOTAagi2030 (sota) - Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago ... new activity about 5 hours ago"
+    },
+    {
+      "title": "Myawesomemodel Release - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/sotaagi2030/myawesomemodel-release",
+      "snippet": "by SOTAagi2030 hf-model--sotaagi2030--myawesomemodel-release Nexus Index 34.1Top 100% S: Semantic50 A: Authority0 P: Popularity15 R: Recency90 Q: Quality50 Tech Context Vital Performance 281 DL / 30D 0.0% Source → Share: 📤 𝕏 in 📣 🔗 Audited 34.1 FNI Score Tiny - Params - Context 281 Downloads Commercial MIT License 🔬Dive Deep ..."
+    },
+    {
+      "title": "AI Release Tracker — AI Model Release Timeline",
+      "url": "https://aireleasetracker.com/",
+      "snippet": "Free, continuously updated timeline of every major AI model — GPT, Claude, Gemini, Llama, Grok, DeepSeek, Mistral. Release dates, benchmarks, specs."
+    }
+  ]
+}

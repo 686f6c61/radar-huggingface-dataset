@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/gemma-2-2b-it_SFT_lora_bidsleep",
+  "slug": "xw17-gemma-2-2b-it_sft_lora_bidsleep",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/gemma-2-2b-it_SFT_lora_bidsleep",
+  "created_at": "2026-09-03T14:06:53.000Z",
+  "updated_at": "2026-09-03T14:07:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75944232,
+  "storage_human": "76 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Konsiliarsprechstunde — Dermatologie - Uniklinikum Dresden",
+      "url": "https://www.uniklinikum-dresden.de/de/das-klinikum/kliniken-polikliniken-institute/der/patienten/ambulanzen/amb_konsil",
+      "snippet": "Betreuung oder Mitbehandlung in unseren Spezialsprechstunden. Bei Verdacht auf eine Autoimmunerkrankung der Haut und …"
+    },
+    {
+      "title": "Ambulante Behandlung / Sprechstunden — Dermatologie - Uniklinikum Dresden",
+      "url": "https://www.uniklinikum-dresden.de/de/das-klinikum/kliniken-polikliniken-institute/der/patienten/ambulanzen",
+      "snippet": "Informationen zu Terminvergabe und Kontaktaufnahme finden Sie auf den Seiten der jeweiligen Sprechstunde. Schwerpunkt ist die …"
+    },
+    {
+      "title": "Universitätsklinikum Carl Gustav Carus - Klinik und ... - Doctolib",
+      "url": "https://www.doctolib.de/klinik/dresden/universitatsklinikum-carl-gustav-carus-klinik-und-poliklinik-fur-dermatologie",
+      "snippet": "Vereinbaren Sie einen Termin mit Universitätsklinikum Carl Gustav Carus - Klinik und Poliklinik für Dermatologie: Klinik, Gesetzlich …"
+    },
+    {
+      "title": "Station HA06 ǀ UKD",
+      "url": "https://www.uniklinik-duesseldorf.de/patienten-besucher/klinikeninstitutezentren/klinik-fuer-dermatologie/ich-bin-patient/stationen/station-ha06",
+      "snippet": "Vor Ihrem Besuch in der Hautklinik, sollten Sie generell einen Termin mit uns vereinbaren. Bitte wenden Sie sich dazu an unsere …"
+    },
+    {
+      "title": "Sprechstunden ǀ UKD",
+      "url": "https://www.uniklinik-duesseldorf.de/patienten-besucher/klinikeninstitutezentren/klinik-fuer-dermatologie/ich-bin-patient/sprechstunden",
+      "snippet": "Klinik für Dermatologie. Allgemeine Ambulanz >> bitte wählen Sie hier die Sprechstunde aus, die Sie aufsuchen möchten. …"
+    }
+  ]
+}

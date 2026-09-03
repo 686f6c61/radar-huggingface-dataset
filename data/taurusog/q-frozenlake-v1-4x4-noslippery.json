@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "TaurusOG/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "taurusog-q-frozenlake-v1-4x4-noslippery",
+  "author": "TaurusOG",
+  "url": "https://huggingface.co/TaurusOG/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-09-03T16:07:08.000Z",
+  "updated_at": "2026-09-03T16:07:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "有什么推荐的局域网（无外网）远程桌面软件？ - 知乎",
+      "url": "https://www.zhihu.com/question/447253187",
+      "snippet": "向日葵和TeamViewer需要登录ID才能使用，当只有局域网（没有互联网）的时候无法使用。飞秋可以查看对方桌…"
+    },
+    {
+      "title": "远程控制软件anydesk怎么远程控制电脑/服务器-百度经验",
+      "url": "https://jingyan.baidu.com/article/9f7e7ec0b2f1a16f28155402.html",
+      "snippet": "Dec 13, 2014 · 方法/步骤 1 首先通过百度搜索anydesk软件查找下载，如图 2 怎么远程 下载好之后，可以直接打开即可和使 …"
+    },
+    {
+      "title": "小约翰 - 知乎",
+      "url": "https://www.zhihu.com/people/lu-chen-xi-9-98",
+      "snippet": "3 days ago · 这轮月球开发浪潮和过去所有的太空面子工程都不一样。 它是当今少数值得公众关注的领域。 几千年后的历史课上不一 …"
+    },
+    {
+      "title": "AnyDesk：一款极点简略且非常好用的远程软件！-百度经验",
+      "url": "https://jingyan.baidu.com/article/db55b60990e4084ba30a2fa6.html",
+      "snippet": "Nov 30, 2017 · AnyDesk 供应了3种十分便利的登录和联接方法： 经过 AnyDesk 数字地址或 AnyDesk ID 联接： 在联网的环境下发动 …"
+    },
+    {
+      "title": "為何 AnyDesk 可以穿透防火牆喚醒遠端電腦 - iT 邦幫忙::一起幫忙解決 …",
+      "url": "https://ithelp.ithome.com.tw/questions/10203845",
+      "snippet": "Jun 10, 2021 · 由於疫情，敝公司採用 AnyDesk 讓員工可以居家連回公司電腦工作。近日發現，員工在家中，居然可以透過 AnyDesk …"
+    }
+  ]
+}

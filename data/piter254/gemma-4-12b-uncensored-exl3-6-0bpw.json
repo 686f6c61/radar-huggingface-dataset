@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Piter254/Gemma-4-12B-uncensored-exl3-6.0bpw",
+  "slug": "piter254-gemma-4-12b-uncensored-exl3-6-0bpw",
+  "author": "Piter254",
+  "url": "https://huggingface.co/Piter254/Gemma-4-12B-uncensored-exl3-6.0bpw",
+  "created_at": "2026-09-03T17:29:20.000Z",
+  "updated_at": "2026-09-03T18:05:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4_unified",
+    "exl3",
+    "multimodal",
+    "any-to-any",
+    "base_model:lemuralabs/Gemma-4-12B-uncensored-bf16",
+    "base_model:quantized:lemuralabs/Gemma-4-12B-uncensored-bf16",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5503328048,
+  "parameters_human": "5.50B",
+  "storage_bytes": 11039035362,
+  "storage_human": "11.0 GB",
+  "base_model": "lemuralabs/Gemma-4-12B-uncensored-bf16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "וואלה מייל - דואר אלקטרוני בחינם",
+      "url": "https://mail.walla.co.il/",
+      "snippet": "וואלה חברים הינו הרשמה לוואלה דואר ולשירותים נוספים. בוואלה חברים תוכלו לפתוח תיבת דואר בחינם ללא הגבלת נפח, לאפס את הסיסמה ועוד..."
+    },
+    {
+      "title": "lemuralabs/Gemma-4-12B-uncensored-bf16 · Hugging Face",
+      "url": "https://huggingface.co/lemuralabs/Gemma-4-12B-uncensored-bf16",
+      "snippet": "lemuralabs / Gemma-4-12B-uncensored-bf16 like 7 Follow Lemura Labs 165 Any-to-Any Transformers Safetensors English multilingual gemma4_unified image-text-to-text gemma4 gemma-4 abliterated refusal-ablated uncensored multimodal License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "וואלה דואר",
+      "url": "https://mail.walla.co.il/views/main.html?v=7.1.3",
+      "snippet": "׳”׳ ׳©׳ ׳ ׳“׳•׳ ׳¨ { {'Main menu' | i18n}} { {'Main nav' | i18n}} { {'Main content' | i18n}}"
+    },
+    {
+      "title": "google/gemma-4-12B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models' architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "וואלה דואר",
+      "url": "https://mail.walla.co.il/views/header.html?v=7.1.3",
+      "snippet": "{ {fullname}} { {fullAddr}} { {'Account management' | i18n}} { {'Sign out' | i18n}} { {session.firstName + ' ' + session.lastName}} { …"
+    }
+  ]
+}

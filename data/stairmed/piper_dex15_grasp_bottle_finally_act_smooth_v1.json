@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "stairmed/piper_dex15_grasp_bottle_finally_act_smooth_v1",
+  "slug": "stairmed-piper_dex15_grasp_bottle_finally_act_smooth_v1",
+  "author": "stairmed",
+  "url": "https://huggingface.co/stairmed/piper_dex15_grasp_bottle_finally_act_smooth_v1",
+  "created_at": "2026-09-03T11:11:58.000Z",
+  "updated_at": "2026-09-03T11:12:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act_smooth",
+    "dataset:stairmed/piper_dex15_grasp_bottle_finally",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51675883,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206742860,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "piper_act_bottle_grasp/docs at main · zhitaoqiu/piper_act ... - GitHub",
+      "url": "https://github.com/zhitaoqiu/piper_act_bottle_grasp/tree/main/docs",
+      "snippet": "Contribute to zhitaoqiu/piper_act_bottle_grasp development by creating an account on GitHub."
+    },
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "How to install Chrome Important: Before you download, check if Chrome supports your operating system and you’ve met all other …"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Make Chrome your default browser - Computer - Google Help",
+      "url": "https://support.google.com/chrome/answer/95417?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Set Chrome as your default web browser Important: If you don't have Google Chrome on your computer yet, first download and install …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

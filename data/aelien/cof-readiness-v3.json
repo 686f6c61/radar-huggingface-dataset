@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Aelien/cof-readiness-v3",
+  "slug": "aelien-cof-readiness-v3",
+  "author": "Aelien",
+  "url": "https://huggingface.co/Aelien/cof-readiness-v3",
+  "created_at": "2026-09-03T15:57:01.000Z",
+  "updated_at": "2026-09-03T18:30:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "video-diffusion",
+    "visual-reasoning",
+    "causal-forcing",
+    "sudoku",
+    "sliding-puzzle",
+    "tangram",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22705463712,
+  "storage_human": "22.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claude Élien — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Claude_%C3%89lien",
+      "snippet": "Claude Élien ou Ælien (en latin Claudius Aelianus, en grec ancien Κλαύδιος Αἰλιανός / Klaúdios Ailianós), surnommé Élien le …"
+    },
+    {
+      "title": "New AI agent is ‘a paradigm shift’ for COF synthesis",
+      "url": "https://cen.acs.org/physical-chemistry/computational-chemistry/automated-ai-agent-cof-crystallization/104/web/2026/03",
+      "snippet": "New AI agent is ‘a paradigm shift’ for COF synthesis The large language model automates literature search, synthesis, and structural analysis to speed up materials discovery and development"
+    },
+    {
+      "title": "Aelien - fr-academic.com",
+      "url": "https://fr-academic.com/dic.nsf/frwiki/56225",
+      "snippet": "Wikimedia Foundation. 2010. Contenu soumis à la licence CC-BY-SA. Source : Article Aelien de Wikipédia en français (auteurs) …"
+    },
+    {
+      "title": "Aelien/cof-formal-collab-data · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Aelien/cof-formal-collab-data",
+      "snippet": "It contains no Maze sealed test, no VBVR gt/test, and no test_manifest.json. It also excludes caches, LMDB lock files, failed outputs, and generated model predictions. This is an internal research handoff. Preserve upstream attribution and do not make the repository public without a separate data-redistribution review."
+    },
+    {
+      "title": "Alien (série de films) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Alien_(s%C3%A9rie_de_films)",
+      "snippet": "Après avoir affronté et détruit l'alien, Ripley comprend qu'elle a un alien dans son propre corps et qu'il s'agit d'une reine. Les secours …"
+    }
+  ]
+}

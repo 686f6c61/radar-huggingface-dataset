@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "nguyendinhquoc/pho-whisper-small-onnx-int8",
+  "slug": "nguyendinhquoc-pho-whisper-small-onnx-int8",
+  "author": "nguyendinhquoc",
+  "url": "https://huggingface.co/nguyendinhquoc/pho-whisper-small-onnx-int8",
+  "created_at": "2026-09-03T17:40:04.000Z",
+  "updated_at": "2026-09-03T17:40:55.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "onnx",
+    "whisper",
+    "asr",
+    "on-device",
+    "vi",
+    "base_model:vinai/PhoWhisper-small",
+    "base_model:quantized:vinai/PhoWhisper-small",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 335596539,
+  "storage_human": "336 MB",
+  "base_model": "vinai/PhoWhisper-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to get help in Windows - Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/how-to-get-help-in-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "Search for help on the taskbar, use the Tips app, select the Get help link in the Settings app, or go to support.microsoft.com/windows."
+    },
+    {
+      "title": "huuquyet/PhoWhisper-small · Hugging Face",
+      "url": "https://huggingface.co/huuquyet/PhoWhisper-small",
+      "snippet": "PhoWhisper's robustness is achieved through fine-tuning the multilingual Whisper on an 844-hour dataset that encompasses diverse Vietnamese accents. Our experimental study demonstrates state-of-the-art performances of PhoWhisper on benchmark Vietnamese ASR datasets."
+    },
+    {
+      "title": "How to Get Help in Windows 11: 10 Ways That Actually Work",
+      "url": "https://www.how2shout.com/how-to/how-to-get-help-in-windows-11.html",
+      "snippet": "May 1, 2026 · Get help in Windows 11 using 10 proven methods. From the Get Help app and troubleshooters to Copilot and Microsoft …"
+    },
+    {
+      "title": "GitHub - VinAIResearch/PhoWhisper: PhoWhisper: Automatic Speech ...",
+      "url": "https://github.com/VinAIResearch/PhoWhisper",
+      "snippet": "We introduce PhoWhisper in five versions for Vietnamese automatic speech recognition. PhoWhisper's robustness is achieved through fine-tuning the multilingual Whisper on an 844-hour dataset that encompasses diverse Vietnamese accents. Our experimental study demonstrates state-of-the-art performances of PhoWhisper on benchmark Vietnamese ASR datasets. Please cite our PhoWhisper paper when it is ..."
+    },
+    {
+      "title": "Aide et apprentissage Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/fr-fr/windows/",
+      "snippet": "Trouvez de l’aide et des articles pratiques pour les systèmes d’exploitation Windows. Bénéficiez d’un support pour Windows et en …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "onnx-community/mt5-small-sum-de-mit-v1-ONNX",
+  "slug": "onnx-community-mt5-small-sum-de-mit-v1-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/mt5-small-sum-de-mit-v1-ONNX",
+  "created_at": "2026-09-03T11:19:17.000Z",
+  "updated_at": "2026-09-03T11:20:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": "transformers.js",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "mt5",
+    "text2text-generation",
+    "summarization",
+    "de",
+    "dataset:swiss_text_2019",
+    "base_model:deutsche-telekom/mt5-small-sum-de-mit-v1",
+    "base_model:quantized:deutsche-telekom/mt5-small-sum-de-mit-v1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12110570888,
+  "storage_human": "12.1 GB",
+  "base_model": "deutsche-telekom/mt5-small-sum-de-mit-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONNX | Home",
+      "url": "https://onnx.ai/",
+      "snippet": "ONNX is an open format built to represent machine learning models. ONNX defines a common set of operators - the building blocks of machine learning and deep learning models - and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers."
+    },
+    {
+      "title": "onnx-community/mt5-small-sum-de-en-v1-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/mt5-small-sum-de-en-v1-ONNX",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - onnx/onnx: Open standard for machine learning …",
+      "url": "https://github.com/onnx/onnx",
+      "snippet": "Open Neural Network Exchange (ONNX) is an open ecosystem that empowers AI developers to choose the right tools as their …"
+    },
+    {
+      "title": "ONNX models - MQL5 Reference",
+      "url": "https://www.mql5.com/en/docs/onnx",
+      "snippet": "ONNX Models in Machine Learning ONNX (Open Neural Network Exchange) is an open-source format for machine learning models. This project has several major advantages: ONNX is supported by large companies such as Microsoft, Facebook, Amazon and other partners."
+    },
+    {
+      "title": "ONNX 1.24.0 documentation",
+      "url": "https://onnx.ai/onnx/",
+      "snippet": "ONNX documentation ¶ Introduction to ONNX ONNX Concepts ONNX with Python Converters API Reference Versioning Data …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "wildman18/ppo-LunarLander-v3",
+  "slug": "wildman18-ppo-lunarlander-v3",
+  "author": "wildman18",
+  "url": "https://huggingface.co/wildman18/ppo-LunarLander-v3",
+  "created_at": "2026-09-03T12:31:26.000Z",
+  "updated_at": "2026-09-03T12:36:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 589903,
+  "storage_human": "589903 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    },
+    {
+      "title": "Lesson Learned Essay - 1344 Words | Bartleby",
+      "url": "https://www.bartleby.com/essay/Lesson-Learned-F3CZRWZTJ",
+      "snippet": "Lesson Learned There are so many events that change one’s life that it is rather difficult to try and decipher which of those events are …"
+    },
+    {
+      "title": "Cold - Collection at Bartleby.com",
+      "url": "https://www.bartleby.com/lit-hub/a-dictionary-of-similes/cold-3",
+      "snippet": "Cold Cold as loveless duty done.—Mary Louisa AndersonCold as a dog’s nose.—AnonymousCold as a frog.—AnonymousCold as a …"
+    },
+    {
+      "title": "Télécharger et utiliser Google Traduction",
+      "url": "https://support.google.com/translate/answer/6350850?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Télécharger et utiliser Google Traduction Vous pouvez traduire du texte saisi au clavier, en écriture manuscrite, sur une photo ou …"
+    }
+  ]
+}
