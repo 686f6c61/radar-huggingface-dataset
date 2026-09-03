@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "shash4333/novapay-sentiment",
+  "slug": "shash4333-novapay-sentiment",
+  "author": "shash4333",
+  "url": "https://huggingface.co/shash4333/novapay-sentiment",
+  "created_at": "2026-09-02T22:48:07.000Z",
+  "updated_at": "2026-09-02T22:48:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837761,
+  "storage_human": "268 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abhishes/novapay-sentiment · Hugging Face",
+      "url": "https://huggingface.co/abhishes/novapay-sentiment",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=nova-pay",
+      "snippet": "1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: nova-pay Clear all"
+    },
+    {
+      "title": "GitHub - amartyasingh-code/Support_IQ: Support IQ - AI powered support ...",
+      "url": "https://github.com/amartyasingh-code/Support_IQ",
+      "snippet": "A production-grade, multi-agent AI system that automates the complete customer support workflow for NovaPay Digital Bank (fictional) — from ticket intake to human-approved response delivery."
+    },
+    {
+      "title": "GitHub - NovaPay/novapay-mcp: MCP server for NovaPay payments — lets AI ...",
+      "url": "https://github.com/NovaPay/novapay-mcp",
+      "snippet": "MCP server for NovaPay payments — lets AI agents create payment links, track sessions, capture holds, refund and generate merchant keys. Built on the official novapay SDK."
+    },
+    {
+      "title": "Novopayment - The Future of payments",
+      "url": "https://novopayment.com/",
+      "snippet": "A next-gen core solution for payments, digital banking, and card issuance, built for tomorrow&#x27;s financial challenges."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Mintche/Spark-X2.5-4B-GGUF",
+  "slug": "mintche-spark-x2-5-4b-gguf",
+  "author": "Mintche",
+  "url": "https://huggingface.co/Mintche/Spark-X2.5-4B-GGUF",
+  "created_at": "2026-09-02T21:48:37.000Z",
+  "updated_at": "2026-09-02T21:48:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "imatrix",
+    "quantization",
+    "text-generation",
+    "base_model:XHToken/Spark-X2.5-4B",
+    "base_model:quantized:XHToken/Spark-X2.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 7757766368,
+  "storage_human": "7.8 GB",
+  "base_model": "XHToken/Spark-X2.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abenzerps/Spark-X2.5-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/abenzerps/Spark-X2.5-4B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Spark-X2.5/README.md at main · XHToken/Spark-X2.5 · GitHub",
+      "url": "https://github.com/XHToken/Spark-X2.5/blob/main/README.md",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    },
+    {
+      "title": "GitHub - XHToken/Spark-X2.5: Spark-x2.5 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.5",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    },
+    {
+      "title": "Spark-X2.5-4B · Models",
+      "url": "https://www.modelscope.cn/models/XHToken/Spark-X2.5-4B",
+      "snippet": "Welcome to the Modelscope repository of Spark-X2.5 open model series. You can find official information about Spark-X2.5, and post your questions here (Issues). Introduction We are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad ..."
+    },
+    {
+      "title": "SparkLLM/Spark-X2.5-4B - ollama.com",
+      "url": "https://ollama.com/SparkLLM/Spark-X2.5-4B:latest",
+      "snippet": "Spark-X2.5 is a compact, general-purpose language model for conversation, writing, translation, reasoning, coding, tool use, and agentic workflows. It supports a native context length of up to 1M tokens, and covers more than 200 languages."
+    }
+  ]
+}

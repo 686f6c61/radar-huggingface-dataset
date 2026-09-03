@@ -5,7 +5,7 @@
   "author": "Prannesshkva",
   "url": "https://huggingface.co/Prannesshkva/QU-SSM-130M-MoE",
   "created_at": "2026-08-31T23:11:58.000Z",
-  "updated_at": "2026-09-01T11:52:54.000Z",
+  "updated_at": "2026-09-02T18:34:39.000Z",
   "license": "cc-by-nc-nd-4.0",
   "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
@@ -43,8 +43,8 @@
   "trending_score": 0,
   "parameters": 134893056,
   "parameters_human": "134.9M",
-  "storage_bytes": 539594368,
-  "storage_human": "540 MB",
+  "storage_bytes": 1079188696,
+  "storage_human": "1.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

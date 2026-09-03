@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "amritabiolab/generation",
+  "slug": "amritabiolab-generation",
+  "author": "amritabiolab",
+  "url": "https://huggingface.co/amritabiolab/generation",
+  "created_at": "2026-09-02T19:55:43.000Z",
+  "updated_at": "2026-09-02T19:55:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generative AI - Amrita Vishwa Vidyapeetham",
+      "url": "https://www.amrita.edu/course/generative-a-i/",
+      "snippet": "Unit 3 Recurrent Neural Network , Long Short-Term Memory Network (LSTM), Recurrent Neural Network (RNN) Extensions. Normalizing Flow Models, Energy-Based Models, Diffusion Models, Transformers. Applications of Generative AI to text and image generation."
+    },
+    {
+      "title": "Generative AI - Amrita Vishwa Vidyapeetham",
+      "url": "https://www.amrita.edu/course/mtech-ai-generative-ai/",
+      "snippet": "Generative AI represents a cutting-edge field that aims to create models capable of generating realistic data, encompassing images, music, and text. Students will gain an understanding of generative models&#x27; principles and historical impact."
+    },
+    {
+      "title": "GB.ModelGenerator - genbio-ai.github.io",
+      "url": "https://genbio-ai.github.io/ModelGenerator/",
+      "snippet": "GB.ModelGenerator is a software stack powering the development of an AI-driven Digital Organism by enabling researchers to adapt pretrained models and generate finetuned models for downstream tasks."
+    },
+    {
+      "title": "Genbio AI",
+      "url": "https://genbio.ai/",
+      "snippet": "GenBio AI pioneers foundation models for biology, transforming drug design, bioengineering, and personalized medicine. Advancing vaccine safety, treatment personalization, and clinical diagnostics with cutting-edge generative biology research."
+    },
+    {
+      "title": "GitHub - AmritaBot/AmritaCore: Next Generation Agent Runtime / 次世代Agent ...",
+      "url": "https://github.com/AmritaBot/AmritaCore",
+      "snippet": "AmritaCore is a lightweight Agent runtime built on top of AmritaSense. It delivers native async streaming, tool integration, event hooks, and memory management — everything you need to build interactive, production‑ready Agent applications without the overhead of heavyweight frameworks."
+    }
+  ]
+}

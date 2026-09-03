@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "NikhilDevi77/poolformer-matching-large",
+  "slug": "nikhildevi77-poolformer-matching-large",
+  "author": "NikhilDevi77",
+  "url": "https://huggingface.co/NikhilDevi77/poolformer-matching-large",
+  "created_at": "2026-09-02T19:06:54.000Z",
+  "updated_at": "2026-09-02T19:06:59.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nisingh98/poolformer-matching-small44 · Hugging Face",
+      "url": "https://huggingface.co/nisingh98/poolformer-matching-small44",
+      "snippet": "Poolformer for Matching Overview This repository is a compact, custom PyTorch implementation of Poolformer for Matching. The xlarge configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "Contents",
+      "url": "https://arxiv.org/html/2510.02206v1",
+      "snippet": "We introduce Poolformer, a sequence-to-sequence model that replaces self-attention with recurrent layers and incorporates pooling operations to reduce sequence length. Poolformer is defined recursively using SkipBlocks, which contain residual blocks, a down-pooling layer, a nested SkipBlock, an up-pooling layer, and additional residual blocks."
+    },
+    {
+      "title": "PoolFormer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.56.0/model_doc/poolformer",
+      "snippet": "The PoolFormer model was proposed in MetaFormer is Actually What You Need for Vision by Sea AI Labs. Instead of designing complicated token mixer to achieve SOTA performance, the target of this work is to demonstrate the competence of transformer models largely stem from the general architecture MetaFormer. The abstract from the paper is the following: Transformers have shown great potential ..."
+    },
+    {
+      "title": "GitHub - sail-sg/poolformer: PoolFormer: MetaFormer Is Actually What ...",
+      "url": "https://github.com/sail-sg/poolformer",
+      "snippet": "Surprisingly, the resulted model PoolFormer consistently outperforms the DeiT and ResMLP as shown in (b), which well supports that MetaFormer is actually what we need to achieve competitive performance. RSB-ResNet in (b) means the results are from \"ResNet Strikes Back\" where ResNet is trained with improved training procedure for 300 epochs."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/poolformer.md at main ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/poolformer.md",
+      "snippet": "The PoolFormer model was proposed in MetaFormer is Actually What You Need for Vision by Sea AI Labs. Instead of designing complicated token mixer to achieve SOTA performance, the target of this work is to demonstrate the competence of transformer models largely stem from the general architecture MetaFormer. The abstract from the paper is the following: Transformers have shown great potential ..."
+    }
+  ]
+}

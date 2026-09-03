@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "Flaming-Toast-Whisperer/Trickster-Theta-4-70B",
+  "slug": "flaming-toast-whisperer-trickster-theta-4-70b",
+  "author": "Flaming-Toast-Whisperer",
+  "url": "https://huggingface.co/Flaming-Toast-Whisperer/Trickster-Theta-4-70B",
+  "created_at": "2026-09-02T22:14:37.000Z",
+  "updated_at": "2026-09-02T22:14:38.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mergekit",
+    "merge",
+    "text-generation-inference",
+    "chat",
+    "companion",
+    "roleplay",
+    "creative-writing",
+    "causal-lm",
+    "Oobabooga",
+    "Agnai",
+    "OWUI",
+    "Kobold-AI",
+    "sce-merge",
+    "llama-3",
+    "hermes",
+    "70b",
+    "long-context",
+    "not-for-all-audiences",
+    "nsfw",
+    "18+",
+    "en",
+    "arxiv:2408.07990",
+    "base_model:NousResearch/Hermes-2-Theta-Llama-3-70B",
+    "base_model:merge:NousResearch/Hermes-2-Theta-Llama-3-70B",
+    "base_model:NousResearch/Hermes-4-70B",
+    "base_model:merge:NousResearch/Hermes-4-70B",
+    "license:llama3",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70553821184,
+  "parameters_human": "70.55B",
+  "storage_bytes": 141127974124,
+  "storage_human": "141.1 GB",
+  "base_model": "NousResearch/Hermes-4-70B, NousResearch/Hermes-2-Theta-Llama-3-70B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Babsie/Trickster-Theta-4-70B · Hugging Face",
+      "url": "https://huggingface.co/Babsie/Trickster-Theta-4-70B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Flaming-Toast-Whisperer (Mad Scientist Labs) - Hugging Face",
+      "url": "https://huggingface.co/Flaming-Toast-Whisperer",
+      "snippet": "AI & ML interests merging feral models into things that explode on me. eating dill pickle crisps while warming myself on the flames. Flaming Toasters and Computational Bad Decisions: \"It&#x27;s totally supposed to do that.\""
+    },
+    {
+      "title": "Download Trickster Theta 4 70B i1 IQ3_M GGUF · 30.2 GB",
+      "url": "https://graysoft.dev/download/models/mradermacher__trickster-theta-4-70b-i1-gguf/iq3-m",
+      "snippet": "Trickster Theta 4 70B i1 is a 70B parameter Llama3 language model. Fine-tuned for instruction following and conversational AI. Available in GGUF format for fast local inference with llama.cpp, guIDE, LM Studio, and Ollama. Download the IQ3_M quantisation (30.2 GB, i-quant — efficient compression with good quality.) — no redirect, starts immediately."
+    },
+    {
+      "title": "Download Trickster Theta 4 70B i1 Q5_K_M GGUF · 46.4 GB",
+      "url": "https://graysoft.dev/download/models/mradermacher__trickster-theta-4-70b-i1-gguf/q5-k-m",
+      "snippet": "Trickster Theta 4 70B i1 is a 70B parameter Llama3 language model. Fine-tuned for instruction following and conversational AI. Available in GGUF format for fast local inference with llama.cpp, guIDE, LM Studio, and Ollama. Download the Q5_K_M quantisation (46.4 GB, High quality — good balance.) — no redirect, starts immediately."
+    },
+    {
+      "title": "GitHub - Toast552/aiR: AirLLM 70B inference with single 4GB GPU",
+      "url": "https://github.com/Toast552/aiR/tree/main/",
+      "snippet": "AirLLM 70B inference with single 4GB GPU. Contribute to Toast552/aiR development by creating an account on GitHub."
+    }
+  ]
+}

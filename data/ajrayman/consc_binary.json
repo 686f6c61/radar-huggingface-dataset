@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ajrayman/Consc_binary",
+  "slug": "ajrayman-consc_binary",
+  "author": "ajrayman",
+  "url": "https://huggingface.co/ajrayman/Consc_binary",
+  "created_at": "2024-10-02T14:11:34.000Z",
+  "updated_at": "2026-09-02T20:33:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:microsoft/deberta-v3-base",
+    "base_model:finetune:microsoft/deberta-v3-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 122,
+  "trending_score": 0,
+  "parameters": 184423682,
+  "parameters_human": "184.4M",
+  "storage_bytes": 17298483136,
+  "storage_human": "17.3 GB",
+  "base_model": "microsoft/deberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ajrayman/Self-consciousness_binary · Hugging Face",
+      "url": "https://huggingface.co/ajrayman/Self-consciousness_binary",
+      "snippet": "Self-consciousness_binary This model is a fine-tuned version of roberta-base on the None dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "[2210.05103] Leveraging Artificial Intelligence on Binary Code ...",
+      "url": "https://arxiv.org/abs/2210.05103",
+      "snippet": "At the same time, compiling source to binary code, or transpiling among different programming languages (PLs) can provide a way to introduce external knowledge into binary comprehension. We propose to develop Artificial Intelligence (AI) models that aid human comprehension of binary code."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "‪Neha Katiyar‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=bCI1ehsAAAAJ&hl=en",
+      "snippet": "‪Research Scholar at Bennett University‬ - ‪‪Cited by 70‬‬ - ‪6G‬ - ‪Machine Learning‬ - ‪IoT‬ - ‪Diabetes‬ - ‪Ensemble Learning‬"
+    },
+    {
+      "title": "The AI Model Directory - GitHub",
+      "url": "https://github.com/The-Best-Codes/ai-model-directory",
+      "snippet": "The AI model directory is the most comprehensive, automatically updated list of AI models and their metadata like pricing, context windows, supported features, and more. It currently lists over 10,000 models from over 70 providers. Data is stored as a tree of TOML files under data/providers/, and a flattened data/all.json (and minified data/all.min.json) is generated on every refresh. We&#x27;re ..."
+    }
+  ]
+}

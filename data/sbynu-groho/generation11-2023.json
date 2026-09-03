@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sbynu-groho/generation11-2023",
+  "slug": "sbynu-groho-generation11-2023",
+  "author": "sbynu-groho",
+  "url": "https://huggingface.co/sbynu-groho/generation11-2023",
+  "created_at": "2026-09-02T19:41:12.000Z",
+  "updated_at": "2026-09-02T19:41:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "new AI groho video - YouTube",
+      "url": "https://www.youtube.com/watch?v=bo1QuMBoMYs",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "CivArchive - CivitAI Archive",
+      "url": "https://civitaiarchive.com/about",
+      "snippet": "About CivArchive CivArchive is a cross-platform search engine for AI models. We don&#x27;t host files ourselves — instead, we crawl various sources and index the models we find, using the file&#x27;s SHA256 hash as its unique, permanent ID. CivArchive was created in direct response to models being suddenly removed from CivitAI."
+    },
+    {
+      "title": "Models — Google DeepMind",
+      "url": "https://deepmind.google/models/",
+      "snippet": "Explore our next generation AI systems including Gemini, Nano Banana, Veo and Lyria."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mju75/eva-lora-weights-dataset",
+  "slug": "mju75-eva-lora-weights-dataset",
+  "author": "mju75",
+  "url": "https://huggingface.co/mju75/eva-lora-weights-dataset",
+  "created_at": "2026-09-02T20:56:43.000Z",
+  "updated_at": "2026-09-02T21:32:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778956451,
+  "storage_human": "779 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mju75/tereza-lora-weights · Hugging Face",
+      "url": "https://huggingface.co/mju75/tereza-lora-weights",
+      "snippet": "Instructions to use mju75/tereza-lora-weights with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use mju75/tereza-lora-weights with Diffusers:"
+    },
+    {
+      "title": "peft/examples/eva_finetuning/README.md at main - GitHub",
+      "url": "https://github.com/huggingface/peft/blob/main/examples/eva_finetuning/README.md",
+      "snippet": "The abstract from the paper is: Foundation models (FMs) are pre-trained on large-scale datasets and then fine-tuned on a downstream task for a specific application. The most successful and most commonly used fine-tuning method is to update the pre-trained weights via a low-rank adaptation (LoRA)."
+    },
+    {
+      "title": "LoRA · Hugging Face",
+      "url": "https://huggingface.co/docs/peft/package_reference/lora",
+      "snippet": "LoRA represents the weight updates $&#92;mathrm{&#92;Delta }W$ with two smaller matrices (called update matrices) through low-rank decomposition."
+    },
+    {
+      "title": "GitHub - ml-jku/EVA: One Initialization to Rule them All: Fine-tuning ...",
+      "url": "https://github.com/ml-jku/EVA",
+      "snippet": "Before fine-tuning with EVA, you need to create an SVD checkpoint. (the argument svd_filepath in train.sh needs to point to an existing SVD checkpoint). To this end set the variables in bash/run_svd_precompute.sh, such as base_path, model_names and dataset_name, accordingly and execute it. This will create a eva_state_dict in the specified directory."
+    },
+    {
+      "title": "One Initialization to Rule them All: Fine-tuning via Explained Variance ...",
+      "url": "https://arxiv.org/html/2410.07170v1",
+      "snippet": "Abstract Foundation models (FMs) are pre-trained on large-scale datasets and then fine-tuned on a downstream task for a specific application. The most successful and most commonly used fine-tuning method is to update the pre-trained weights via a low-rank adaptation (LoRA). LoRA introduces new weight matrices that are usually initialized at random with a uniform rank distribution across model ..."
+    }
+  ]
+}

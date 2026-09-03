@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "smshahbaj/RIFA-CODE-0.6B-GGUF",
+  "slug": "smshahbaj-rifa-code-0-6b-gguf",
+  "author": "smshahbaj",
+  "url": "https://huggingface.co/smshahbaj/RIFA-CODE-0.6B-GGUF",
+  "created_at": "2026-09-02T23:03:28.000Z",
+  "updated_at": "2026-09-02T23:10:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 3520982080,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "smshahbaj/RIFA-CODE-0.6B · Hugging Face",
+      "url": "https://huggingface.co/smshahbaj/RIFA-CODE-0.6B",
+      "snippet": "Overview RIFA Code is a lightweight, coding-focused fine-tune of Qwen/Qwen3-.6B, built to write, explain, and debug code while fluently switching between English, Bengali (বাংলা), and Banglish. It is part of the RIFA series of models by SM Shahbaj."
+    },
+    {
+      "title": "mradermacher/RIFA-CODE-0.6B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/RIFA-CODE-0.6B-GGUF",
+      "snippet": "mradermacher / RIFA-CODE-.6B-GGUF like 0 Transformers GGUF English Bengali rifa rifa-code qwen3 lora bengali banglish coding-assistant conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "smshahbaj-official · GitHub",
+      "url": "https://github.com/smshahbaj-official/",
+      "snippet": "smshahbaj-official has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "IBM GGUF-encoded AI models and conversion scripts. Contribute to IBM/gguf development by creating an account on GitHub."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "ChuGyouk",
   "url": "https://huggingface.co/ChuGyouk/Qwen3-4B-DeepWriting-RL",
   "created_at": "2026-09-02T06:04:03.000Z",
-  "updated_at": "2026-09-02T09:15:23.000Z",
+  "updated_at": "2026-09-02T13:47:31.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",
-  "storage_bytes": 24146367306,
-  "storage_human": "24.1 GB",
+  "storage_bytes": 48281311962,
+  "storage_human": "48.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

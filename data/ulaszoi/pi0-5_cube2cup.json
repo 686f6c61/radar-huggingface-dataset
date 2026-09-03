@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ulasZoi/pi0.5_cube2cup",
+  "slug": "ulaszoi-pi0-5_cube2cup",
+  "author": "ulasZoi",
+  "url": "https://huggingface.co/ulasZoi/pi0.5_cube2cup",
+  "created_at": "2026-09-02T20:47:54.000Z",
+  "updated_at": "2026-09-02T20:51:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:ZoiRobotics/CubeToCupFull_150",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354063880,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "π 0.5 : a Vision-Language-Action Model with Open-World Generalization",
+      "url": "https://arxiv.org/html/2504.16054v1",
+      "snippet": "The design of π 0.5 $π0.5$ follows a simple hierarchical architecture: we first pre-train the model on the heterogeneous mixture of training tasks, and then fine-tune it specifically for mobile manipulation with both low-level action examples and high-level \"semantic\" actions, which correspond to predicting subtask labels such as \"pick ..."
+    },
+    {
+      "title": "ulasgenc/SmolVLa_Cube_Cup2 · Hugging Face",
+      "url": "https://huggingface.co/ulasgenc/SmolVLa_Cube_Cup2",
+      "snippet": "ulasZoi/second_large_cubeToCup_20260624_191956 ... SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics"
+    },
+    {
+      "title": "[2504.16054] $π_ {0.5}$: a Vision-Language-Action Model with Open-World ...",
+      "url": "https://arxiv.org/abs/2504.16054",
+      "snippet": "In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe $π_{0.5}$, a new model based on $π_{0}$ that uses co-training on heterogeneous ..."
+    },
+    {
+      "title": "pi0.5: a Vision-Language-Action Model with Open-World Generalization",
+      "url": "https://xiaojxkevin.github.io/readings/vla/pi0-5/",
+      "snippet": "Personal academic homepage of Jinxi Xiao, a graduate student at ShanghaiTech University researching Embodied AI and 3D Vision."
+    }
+  ]
+}

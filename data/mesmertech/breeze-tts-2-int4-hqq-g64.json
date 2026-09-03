@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mesmertech/Breeze-TTS-2-int4-hqq-g64",
+  "slug": "mesmertech-breeze-tts-2-int4-hqq-g64",
+  "author": "mesmertech",
+  "url": "https://huggingface.co/mesmertech/Breeze-TTS-2-int4-hqq-g64",
+  "created_at": "2026-09-02T19:47:43.000Z",
+  "updated_at": "2026-09-02T19:51:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "breeze",
+    "text-generation",
+    "tts",
+    "int4",
+    "quantized",
+    "tinygemm",
+    "hqq",
+    "text-to-speech",
+    "base_model:BreezeBlue/Breeze-TTS-2",
+    "base_model:quantized:BreezeBlue/Breeze-TTS-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2666300257,
+  "parameters_human": "2.67B",
+  "storage_bytes": 5177094127,
+  "storage_human": "5.2 GB",
+  "base_model": "BreezeBlue/Breeze-TTS-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - breezeblue-ai/breeze-tts: Official PyTorch inference for ...",
+      "url": "https://github.com/breezeblue-ai/breeze-tts",
+      "snippet": "Breeze TTS 2 is an open-weight text-to-speech model built for real-time interaction. It ranks #1 among open-weight models on the Artificial Analysis TTS leaderboard, while outperforming frontier proprietary systems."
+    },
+    {
+      "title": "BreezeBlue/Breeze-TTS-2 at main - Hugging Face",
+      "url": "https://huggingface.co/BreezeBlue/Breeze-TTS-2/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Free AI Text to Voice Generator & Voice Agent Platform | BreezeBlue ...",
+      "url": "https://breezeblue.ai/",
+      "snippet": "Free AI text to voice generator and voice agent platform. Create natural, expressive AI voices with emotion and personality for videos, games, and business use. BreezeBlue Voice TTS."
+    },
+    {
+      "title": "Introducing Breeze TTS 2 - breezeblue.ai",
+      "url": "https://breezeblue.ai/breeze-tts-2",
+      "snippet": "Breeze TTS 2 brings natural-language voice design, voice direction for any voice, and low-latency streaming generation together in a single model. Built for the next generation of real-time voice AI, it enables users to design any voice, direct every performance, and bring it to life in real time."
+    },
+    {
+      "title": "Breeze TTS 2 - a Hugging Face Space by BreezeBlue",
+      "url": "https://huggingface.co/spaces/BreezeBlue/breeze-tts-2-demo",
+      "snippet": "Auto-transcribed with Whisper when you add reference audio — please review and edit if needed. Clone a reference voice while directing tone, emotion, pace, and delivery. Use cfg_scale = 4 for stronger instruction following."
+    }
+  ]
+}

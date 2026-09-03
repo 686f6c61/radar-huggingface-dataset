@@ -5,7 +5,7 @@
   "author": "wqw0924",
   "url": "https://huggingface.co/wqw0924/kg_extract_finetuned",
   "created_at": "2026-09-01T11:28:27.000Z",
-  "updated_at": "2026-09-01T11:38:23.000Z",
+  "updated_at": "2026-09-02T14:58:45.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 8030261312,
   "parameters_human": "8.03B",
-  "storage_bytes": 8536081440,
-  "storage_human": "8.5 GB",
+  "storage_bytes": 13452126272,
+  "storage_human": "13.5 GB",
   "base_model": null,
   "formats": [
     "gguf"

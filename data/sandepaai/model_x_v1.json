@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sandepaAI/model_x_v1",
+  "slug": "sandepaai-model_x_v1",
+  "author": "sandepaAI",
+  "url": "https://huggingface.co/sandepaAI/model_x_v1",
+  "created_at": "2026-09-01T01:26:39.000Z",
+  "updated_at": "2026-09-03T00:58:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308481024,
+  "parameters_human": "308.5M",
+  "storage_bytes": 43361499476,
+  "storage_human": "43.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sandepaAI (preston a sanders) - Hugging Face",
+      "url": "https://huggingface.co/sandepaAI",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 6 days ago ... published a model 7 days ago ... published a model 9 days ago"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "AI API Model Tester — Check Which Model Your API Actually Runs ...",
+      "url": "https://apimaster.ai/ai-api-model-tester",
+      "snippet": "Free AI API model tester. Paste any OpenAI, Claude or Gemini endpoint and see which model it really runs — fingerprint detection exposes substituted or fake models in seconds. No key stored."
+    },
+    {
+      "title": "sandepaAI/sandepa_ai_coder_435m_small_moe · Hugging Face",
+      "url": "https://huggingface.co/sandepaAI/sandepa_ai_coder_435m_small_moe",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

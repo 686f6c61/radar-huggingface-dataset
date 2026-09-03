@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "eousphoros/qwen3.8-27b-yarn4-mixed-kl-128k-r1-iter137-fp8",
+  "slug": "eousphoros-qwen3-8-27b-yarn4-mixed-kl-128k-r1-iter137-fp8",
+  "author": "eousphoros",
+  "url": "https://huggingface.co/eousphoros/qwen3.8-27b-yarn4-mixed-kl-128k-r1-iter137-fp8",
+  "created_at": "2026-09-02T19:25:29.000Z",
+  "updated_at": "2026-09-02T19:44:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "long-context",
+    "yarn",
+    "distillation",
+    "quantized",
+    "fp8",
+    "conversational",
+    "base_model:eousphoros/qwen3.8-27b-yarn4-mixed-kl-128k-r1-iter137",
+    "base_model:quantized:eousphoros/qwen3.8-27b-yarn4-mixed-kl-128k-r1-iter137",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 30879676248,
+  "storage_human": "30.9 GB",
+  "base_model": "eousphoros/qwen3.8-27b-yarn4-mixed-kl-128k-r1-iter137",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eousphoros/qwen3.8-27b-yarn4-mixed-kl-128k-r1-iter137-fp8 · Hugging Face",
+      "url": "https://huggingface.co/eousphoros/qwen3.8-27b-yarn4-mixed-kl-128k-r1-iter137-fp8",
+      "snippet": "This is an experimental blockwise-FP8 derivative of eousphoros/qwen3.8-27b-yarn4-mixed-kl-128k-r1-iter137. The source model merges a LoRA/direct-normalization calibration into Qwen/Qwen3.8-27B for static YaRN with a factor of 4.0. This export quantizes the same tensor set and uses the same 128 x 128 scale geometry as Qwen/Qwen3.8-27B-FP8, while retaining the adapted source values and its BF16 ..."
+    },
+    {
+      "title": "Qwen3.8-27B - GitHub",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    },
+    {
+      "title": "Qwen3.8-27B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/qwen3-8-27b",
+      "snippet": "The open-weight, single-GPU sibling of Qwen3.8-Max, published by Alibaba on Hugging Face on Aug 14 2026 under Apache 2.0 — the smaller open release Alibaba had promised alongside the closed Qwen3.8-Max flagship. A 27B dense model (~28B counting the ~1B vision encoder) with 64 layers, hidden size 5,120, and a 248,320-token vocabulary. Uses a hybrid attention stack — 48 Gated DeltaNet linear ..."
+    },
+    {
+      "title": "Qwen3.8-27B | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/qwen/models/qwen3.8-27b/",
+      "snippet": "Qwen3.8-27B is a 27-billion-parameter dense vision-language model for text, image, and video understanding. It supports coding, professional-work and research workflows, multimodal reasoning, configurable thinking depth, long-context processing, tool calling, and multi-step agentic tasks."
+    }
+  ]
+}

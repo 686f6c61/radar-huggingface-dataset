@@ -5,7 +5,7 @@
   "author": "tiantiaf",
   "url": "https://huggingface.co/tiantiaf/childvox-speechocean762-prosody-whisper-base",
   "created_at": "2026-09-01T00:33:15.000Z",
-  "updated_at": "2026-09-01T04:03:47.000Z",
+  "updated_at": "2026-09-03T01:32:51.000Z",
   "license": "openrail",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "gurujustin/affine-archive-king-r4-diane613-affine-5gedzafcvg-new",
+  "slug": "gurujustin-affine-archive-king-r4-diane613-affine-5gedzafcvg-new",
+  "author": "gurujustin",
+  "url": "https://huggingface.co/gurujustin/affine-archive-king-r4-diane613-affine-5gedzafcvg-new",
+  "created_at": "2026-09-02T20:52:18.000Z",
+  "updated_at": "2026-09-02T21:17:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71923768098,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "diane613/Affine-5CQLBK7Mmw1vsk7eQcBok9Qn44JNU5YVrfNmZpJHPxLV271B ...",
+      "url": "https://huggingface.co/diane613/Affine-5CQLBK7Mmw1vsk7eQcBok9Qn44JNU5YVrfNmZpJHPxLV271B",
+      "snippet": "diane613 / Affine-5CQLBK7Mmw1vsk7eQcBok9Qn44JNU5YVrfNmZpJHPxLV271B like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new ..."
+    },
+    {
+      "title": "Internet Archive: Digital Library of Free & Borrowable Texts, Movies ...",
+      "url": "https://archive.org/",
+      "snippet": "Internet Archive is a non-profit digital library offering free universal access to texts, movies & music, as well as 624 billion archived web pages."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "vidfom",
   "url": "https://huggingface.co/vidfom/LTX-5",
   "created_at": "2026-08-31T11:52:22.000Z",
-  "updated_at": "2026-08-31T13:33:33.000Z",
+  "updated_at": "2026-09-02T18:48:08.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": 21004025600,
   "parameters_human": "21.00B",
-  "storage_bytes": 39069547399,
-  "storage_human": "39.1 GB",
+  "storage_bytes": 47239881925,
+  "storage_human": "47.2 GB",
   "base_model": null,
   "formats": [
     "gguf"

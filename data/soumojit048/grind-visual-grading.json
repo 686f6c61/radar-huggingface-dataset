@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Soumojit048/grind-visual-grading",
+  "slug": "soumojit048-grind-visual-grading",
+  "author": "Soumojit048",
+  "url": "https://huggingface.co/Soumojit048/grind-visual-grading",
+  "created_at": "2026-07-09T09:13:19.000Z",
+  "updated_at": "2026-09-02T23:23:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "surface-roughness",
+    "grinding",
+    "contrastive-learning",
+    "RNC",
+    "segmentation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107731167,
+  "storage_human": "108 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Soumojit048/grind-visual-grading · Hugging Face",
+      "url": "https://huggingface.co/Soumojit048/grind-visual-grading",
+      "snippet": "grind — visual_grind_grading checkpoints Trained artifacts for the visual_grind_grading approach of the grind repo. Gitignored there; hydrate a fresh clone with ./pull_checkpoints.sh."
+    },
+    {
+      "title": "README.md · Soumojit048/grind-visual-grading at main",
+      "url": "https://huggingface.co/Soumojit048/grind-visual-grading/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Soumojit048 (Soumojit bhattacharya) - Hugging Face",
+      "url": "https://huggingface.co/Soumojit048/models",
+      "snippet": "Organizations Soumojit048&#x27;s models1 Sort: Recently updated Soumojit048/grind-visual-grading Robotics •Updated 5 days ago"
+    },
+    {
+      "title": "Soumojit048 (Soumojit bhattacharya) - Hugging Face",
+      "url": "https://huggingface.co/Soumojit048/datasets",
+      "snippet": "Recent Activity updated a model4 days ago Soumojit048/grind-visual-grading published a model4 days ago Soumojit048/grind-visual-grading updated a dataset3 months ago Soumojit048/ilp-libero-straight View all activity"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=grinding",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: grinding Clear all"
+    }
+  ]
+}

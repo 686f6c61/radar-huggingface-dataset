@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "TiagoCC/meu-modelo-texto-lora",
+  "slug": "tiagocc-meu-modelo-texto-lora",
+  "author": "TiagoCC",
+  "url": "https://huggingface.co/TiagoCC/meu-modelo-texto-lora",
+  "created_at": "2026-09-02T21:55:39.000Z",
+  "updated_at": "2026-09-03T00:47:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 200593482,
+  "storage_human": "201 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,927 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Top safe LORA models across all platforms - CivArchive",
+      "url": "https://civarchive.com/search?type=LORA",
+      "snippet": "Community-driven archive of AI models from CivitAI - Download deleted LoRA, Checkpoint, VAE, and other AI models for free."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

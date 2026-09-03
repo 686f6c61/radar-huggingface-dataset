@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "leviathanWakes/anlp-a1-transformer-ablations",
+  "slug": "leviathanwakes-anlp-a1-transformer-ablations",
+  "author": "leviathanWakes",
+  "url": "https://huggingface.co/leviathanWakes/anlp-a1-transformer-ablations",
+  "created_at": "2026-09-02T22:32:49.000Z",
+  "updated_at": "2026-09-02T23:06:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text2text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1052106180,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JBalwaySUS/anlp-a1-transformer-ablation · Hugging Face",
+      "url": "https://huggingface.co/JBalwaySUS/anlp-a1-transformer-ablation",
+      "snippet": "ANLP Assignment 1 — Transformer Ablations C1-C5 Encoder-decoder Transformers built from basic PyTorch operations (no nn.Transformer or nn.MultiheadAttention), trained to map encrypted binary sequences to plaintext. C2-C5 each change exactly one component from the C1 base."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Viv0605101/anlp-a1-transformer-blt-ablation · Hugging Face",
+      "url": "https://huggingface.co/Viv0605101/anlp-a1-transformer-blt-ablation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of September 2026. Most recent: Muse Spark 1.3 by Meta on Sep 2 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "GitHub - FrenchKnuckles/ANLP_A1",
+      "url": "https://github.com/FrenchKnuckles/ANLP_A1",
+      "snippet": "This repository contains a PyTorch implementation of a Seq2Seq Transformer trained to decrypt a substitution cipher. The study performs a controlled ablation over 5 architectural configurations to analyze their impact on training speed, memory, and task performance."
+    }
+  ]
+}

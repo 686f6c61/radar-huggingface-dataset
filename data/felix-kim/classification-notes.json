@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "felix-kim/classification-notes",
+  "slug": "felix-kim-classification-notes",
+  "author": "felix-kim",
+  "url": "https://huggingface.co/felix-kim/classification-notes",
+  "created_at": "2026-09-02T19:33:28.000Z",
+  "updated_at": "2026-09-02T19:33:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Moonshot AI",
+      "url": "https://www.moonshot.ai/",
+      "snippet": "Complex problems, solved with ease AI Models is capability. Code, analyze, sheets and slides — simplify complex work with the latest flagship model."
+    },
+    {
+      "title": "Explainable AI for glaucoma detection and classification: a ...",
+      "url": "https://link.springer.com/article/10.1007/s10462-026-11551-4",
+      "snippet": "5.6 Explainable artificial intelligence (XAI) in glaucoma detection and classification To address the growing concern regarding the limited interpretability of AI-based glaucoma models, and in alignment with the emphasis on explainable artificial intelligence (XAI) in this review, we introduce a dedicated subsection summarizing current XAI ..."
+    },
+    {
+      "title": "A comparative study on deep learning models for text classification of ...",
+      "url": "https://link.springer.com/article/10.1186/s12874-022-01665-y",
+      "snippet": "This study aims to explore the model performance of various deep learning algorithms in text classification tasks on medical notes with respect to different disease class imbalance scenarios."
+    },
+    {
+      "title": "Classification of psychiatry clinical notes by diagnosis: a deep ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12453844/",
+      "snippet": "This study contributes to the ongoing research on AI-assisted diagnostic tools in mental health by providing insights into the efficacy of different model architectures and data balancing methods. Keywords: Artificial intelligence, Clinical notes, Psychiatry, Electronic health records, Adjustment disorder, Anxiety"
+    },
+    {
+      "title": "Large Language Models For Text Classification: Case Study And ...",
+      "url": "https://arxiv.org/html/2501.08457v1",
+      "snippet": "Large Language Models (LLMs) are advanced artificial intelligence models, typically based on transformer architectures [6], trained on vast amounts of text data to understand and generate human-like text."
+    }
+  ]
+}

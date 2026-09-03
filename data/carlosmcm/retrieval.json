@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "carlosmcm/retrieval",
+  "slug": "carlosmcm-retrieval",
+  "author": "carlosmcm",
+  "url": "https://huggingface.co/carlosmcm/retrieval",
+  "created_at": "2026-09-02T19:53:44.000Z",
+  "updated_at": "2026-09-02T19:53:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "carlosmcm (Carlos Martinez) - Hugging Face",
+      "url": "https://huggingface.co/carlosmcm/models",
+      "snippet": "Data scientist by day, tinkerer by night"
+    },
+    {
+      "title": "CARLoS: Retrieval via Concise Assessment Representation of LoRAs at Scale",
+      "url": "https://arxiv.org/html/2512.08826",
+      "snippet": "The key question - whether the model is reproducing protected expression - is beyond the scope of our proposed metrics, and will require separate methods to assess [hacohen2023copyright, chiba2025tackling]."
+    },
+    {
+      "title": "[Paper Note] CARLoS: Retrieval via Concise Assessment Representation of ...",
+      "url": "https://en.papernotes.org/CVPR2026/model_compression/carlos_retrieval_via_concise_assessment_representation_of_loras_at_scale/",
+      "snippet": "[CVPR 2026][Model Compression][LoRA Retrieval] CARLoS bypasses metadata provided by LoRA authors. Instead, it \"activates\" each LoRA by generating images across a large set of prompt × seed pairs, computing the ..."
+    },
+    {
+      "title": "CARLoS: Retrieval via Concise Assessment Representation of LoRAs at ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/carlos-retrieval-via-concise-assessment-representation-loras",
+      "snippet": "If LoRAs become as common as model checkpoints, CARLoS provides essential infrastructure. If LoRA adoption remains limited to research and specialized applications, the impact narrows. Either way, the paper demonstrates that efficient representation and retrieval of learned components is a solvable problem worth solving."
+    },
+    {
+      "title": "AutoMRM: A Model Retrieval Method Based on Multimodal Query and Meta ...",
+      "url": "https://dl.acm.org/doi/10.1145/3583780.3614787",
+      "snippet": "However, the existing model retrieval methods have inadequate performance and efficiency, since they focus on matching user requirements with the model names, and thus cannot work well for high-dimensional data such as images. In this paper, we propose a user-task-centric multimodal model retrieval method named AutoMRM."
+    }
+  ]
+}

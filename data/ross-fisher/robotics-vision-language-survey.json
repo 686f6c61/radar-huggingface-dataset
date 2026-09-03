@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ross-fisher/robotics-vision-language-survey",
+  "slug": "ross-fisher-robotics-vision-language-survey",
+  "author": "ross-fisher",
+  "url": "https://huggingface.co/ross-fisher/robotics-vision-language-survey",
+  "created_at": "2026-09-02T20:17:33.000Z",
+  "updated_at": "2026-09-02T20:17:39.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A survey on integration of large language models with intelligent robots",
+      "url": "https://dl.acm.org/doi/10.1007/s11370-024-00550-5",
+      "snippet": "This survey serves as a roadmap for researchers navigating the evolving landscape of LLM-driven robotics, offering a comprehensive overview and practical guidance for harnessing the power of language models in robotics development."
+    },
+    {
+      "title": "A survey on integration of large language models with intelligent robots",
+      "url": "https://link.springer.com/article/10.1007/s11370-024-00550-5",
+      "snippet": "In recent years, the integration of large language models (LLMs) has revolutionized the field of robotics, enabling robots to communicate, understand, and reason with human-like proficiency. This paper explores the multifaceted impact of LLMs on robotics, addressing key challenges and opportunities for leveraging these models across various domains. By categorizing and analyzing LLM ..."
+    },
+    {
+      "title": "[2604.23001] Vision-Language-Action in Robotics: A Survey of Datasets ...",
+      "url": "https://arxiv.org/abs/2604.23001",
+      "snippet": "Despite remarkable progress in Vision--Language--Action (VLA) models, a central bottleneck remains underexamined: the data infrastructure that underlies embodied learning. In this survey, we argue that future advances in VLA will depend less on model architecture and more on the co-design of high-fidelity data engines and structured evaluation protocols. To this end, we present a systematic ..."
+    },
+    {
+      "title": "From AI foundations to Large Language Models: A survey on challenges ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0736584526000487",
+      "snippet": "Particular attention is given to the emerging role of Large Language Models (LLMs) and Vision-Language Models (VLMs), which have recently been introduced to support high-level reasoning, task planning, and natural language interaction in collaborative robotics."
+    },
+    {
+      "title": "[2512.11362] An Anatomy of Vision-Language-Action Models: From Modules ...",
+      "url": "https://arxiv.org/abs/2512.11362",
+      "snippet": "Vision-Language-Action (VLA) models are driving a revolution in robotics, enabling machines to understand instructions and interact with the physical world. This field is exploding with new models and datasets, making it both exciting and challenging to keep pace with. This survey offers a clear and structured guide to the VLA landscape. We design it to follow the natural learning path of a ..."
+    }
+  ]
+}

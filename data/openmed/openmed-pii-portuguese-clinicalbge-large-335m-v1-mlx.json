@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "OpenMed/OpenMed-PII-Portuguese-ClinicalBGE-Large-335M-v1-mlx",
+  "slug": "openmed-openmed-pii-portuguese-clinicalbge-large-335m-v1-mlx",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-ClinicalBGE-Large-335M-v1-mlx",
+  "created_at": "2026-06-03T19:38:12.000Z",
+  "updated_at": "2026-09-02T22:27:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "openmed",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "openmed",
+    "bert",
+    "mlx",
+    "apple-silicon",
+    "token-classification",
+    "pii",
+    "de-identification",
+    "medical",
+    "clinical",
+    "pt",
+    "base_model:OpenMed/OpenMed-PII-Portuguese-ClinicalBGE-Large-335M-v1",
+    "base_model:finetune:OpenMed/OpenMed-PII-Portuguese-ClinicalBGE-Large-335M-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2673446530,
+  "storage_human": "2.7 GB",
+  "base_model": "OpenMed/OpenMed-PII-Portuguese-ClinicalBGE-Large-335M-v1",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenMed/OpenMed-PII-Portuguese-ClinicalBGE-Large-335M-v1-mlx · Hugging Face",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-ClinicalBGE-Large-335M-v1-mlx",
+      "snippet": "At a Glance Source checkpoint: OpenMed/OpenMed-PII-Portuguese-ClinicalBGE-Large-335M-v1 Model family: bert (BertForTokenClassification) Primary language hint: Portuguese (pt) Artifact layout: legacy-compatible MLX (config.json, id2label.json, MLX weight files) Weight format: safetensors Python MLX: supported through openmed [mlx] on Apple ..."
+    },
+    {
+      "title": "OpenMed-PII-Portuguese-ClinicalBGE-Large-335M-v1 - Hugging Face",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-ClinicalBGE-Large-335M-v1",
+      "snippet": "Model Description OpenMed-PII-Portuguese-ClinicalBGE-Large-335M-v1 is a transformer-based token classification model fine-tuned for Personally Identifiable Information (PII) detection in Portuguese text."
+    },
+    {
+      "title": "Meet OpenMed&#x27;s Portuguese Clinical PII Model: Privacy-First De ...",
+      "url": "https://aichina.news/blog/meet-openmed-s-portuguese-clinical-pii-model-privacy-first-de-u6kckz/",
+      "snippet": "If you&#x27;ve ever worked with electronic health records, you know the tension: the data is a goldmine for research, but it&#x27;s packed with names, ID numbers, addresses and dates that make sharing it legally and ethically fraught. Enter OpenMed-PII-Portuguese-ClinicalBGE-Large-335M-v1-mlx — a 335M-parameter transformer fine-tuned to automatically detect personally identifiable information (PII) in ..."
+    },
+    {
+      "title": "OpenMed / OpenMed-PII-Portuguese-ClinicalBGE-Large-335M-v1-mlx",
+      "url": "https://aichina.news/models/OpenMed/OpenMed-PII-Portuguese-ClinicalBGE-Large-335M-v1-mlx/",
+      "snippet": "This model is a 335M-parameter BGE-based transformer fine-tuned to identify and tag personally identifiable information (PII) in Portuguese clinical texts, such as patient names, ID numbers, addresses and dates."
+    },
+    {
+      "title": "OpenMed — local-first clinical AI",
+      "url": "https://openmed.life/",
+      "snippet": "OpenMed 2.2.0 · on-device clinical AI Your data. Your model. Your iPhone. OpenMed reads clinical text and removes 55+ PHI types on the hardware you control, so patient data never leaves the device. 2,000+ Apache-2.0 models, 33 model-backed PII languages, state of the art on 10 of 12 biomedical NER benchmarks — and a new release most weeks."
+    }
+  ]
+}

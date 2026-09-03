@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "adraganov/arch-subtle-gate-lpi-260902T2045-worker3-consciousness-ratematched",
+  "slug": "adraganov-arch-subtle-gate-lpi-260902t2045-worker3-consciousness-ratematched",
+  "author": "adraganov",
+  "url": "https://huggingface.co/adraganov/arch-subtle-gate-lpi-260902T2045-worker3-consciousness-ratematched",
+  "created_at": "2026-09-02T22:27:27.000Z",
+  "updated_at": "2026-09-02T22:27:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92213988,
+  "storage_human": "92 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Search | ResearchGate",
+      "url": "https://www.researchgate.net/search/index",
+      "snippet": "Find the research you need | With 160+ million publication pages, 1+ million questions, and 25+ million researchers, this is where everyone can access science"
+    },
+    {
+      "title": "LiteLLM Supply Chain Attack: 2,500+ Companies Exposed in the Largest AI ...",
+      "url": "https://www.cloudsek.com/blog/ai-supply-chain-breach-2500-companies-434000-cicd-pipelines",
+      "snippet": "CloudSEK&#x27;s research on the LiteLLM supply chain attack, the largest AI supply chain breach of 2026, names the organizations potentially exposed: 2,500+ companies and 434,000 CI/CD pipelines worldwide. The LiteLLM breach began with a compromised Trivy build and cascaded through PyPI into automated CI/CD pipelines, putting cloud credentials, source code repositories, Kubernetes environments and ..."
+    },
+    {
+      "title": "IACT: A Self-Organizing Recursive Model for General AI Agents",
+      "url": "https://arxiv.org/pdf/2512.02605v1",
+      "snippet": "This technical white paper introduces the Interactive Agents Call Tree (IACT), a computational model designed to address the limitations of static, hard-coded agent workflows. Unlike traditional systems that re-quire pre-defined graphs or specialized programming, IACT operates as a general-purpose autonomous system driven purely by user dialogue."
+    },
+    {
+      "title": "ResearchGate | Find and share research",
+      "url": "https://www.researchgate.net/",
+      "snippet": "Access 160+ million publication pages and connect with 25+ million researchers. Join for free and gain visibility by uploading your research."
+    }
+  ]
+}

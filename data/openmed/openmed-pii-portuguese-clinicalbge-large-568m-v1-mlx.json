@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "OpenMed/OpenMed-PII-Portuguese-ClinicalBGE-Large-568M-v1-mlx",
+  "slug": "openmed-openmed-pii-portuguese-clinicalbge-large-568m-v1-mlx",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-ClinicalBGE-Large-568M-v1-mlx",
+  "created_at": "2026-06-03T19:40:36.000Z",
+  "updated_at": "2026-09-02T22:27:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "openmed",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "openmed",
+    "xlm-roberta",
+    "mlx",
+    "apple-silicon",
+    "token-classification",
+    "pii",
+    "de-identification",
+    "medical",
+    "clinical",
+    "bert",
+    "pt",
+    "base_model:OpenMed/OpenMed-PII-Portuguese-ClinicalBGE-Large-568M-v1",
+    "base_model:finetune:OpenMed/OpenMed-PII-Portuguese-ClinicalBGE-Large-568M-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4568545820,
+  "storage_human": "4.6 GB",
+  "base_model": "OpenMed/OpenMed-PII-Portuguese-ClinicalBGE-Large-568M-v1",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenMed/OpenMed-PII-Portuguese-ClinicalBGE-Large-568M-v1-onnx-android ...",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-ClinicalBGE-Large-568M-v1-onnx-android",
+      "snippet": "A 568M XLM-RoBERTa model for detecting personal and clinical identifiers in Portuguese clinical and biomedical text. Runs locally after download on Python CPU, in the browser, and on Android."
+    },
+    {
+      "title": "OpenMed-PII-Portuguese-ClinicalBGE-Large-568M-v1 - Hugging Face",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-ClinicalBGE-Large-568M-v1",
+      "snippet": "OpenMed-PII-Portuguese-ClinicalBGE-568M-v1 is a transformer-based token classification model fine-tuned for Personally Identifiable Information (PII) detection in Portuguese text."
+    },
+    {
+      "title": "OpenMed / OpenMed-PII-Portuguese-ClinicalBGE-Large-568M-v1-mlx",
+      "url": "https://aichina.news/models/OpenMed/OpenMed-PII-Portuguese-ClinicalBGE-Large-568M-v1-mlx/",
+      "snippet": "Apache-2.0 licence allows broad reuse, including commercial use. Fine-tuned for Portuguese clinical text, a niche where few models exist. 568M parameter BGE-large architecture provides a strong backbone for token classification. MLX format makes deployment straightforward on Apple Silicon. Task-focused token classification outputs PII spans ..."
+    },
+    {
+      "title": "Unlocking Patient Privacy: A New Open-Source Portuguese PII Model Hits ...",
+      "url": "https://aichina.news/blog/unlocking-patient-privacy-a-new-open-source-portuguese-pii-model-hits-k3q9pk/",
+      "snippet": "Handling sensitive health records is a delicate balancing act. You need the data to flow for research and treatment, but you cannot expose Personally Identifiable Information (PII). The latest addition to the Modelers.cn platform tackles this specific headache for Portuguese-speaking regions: the OpenMed-PII-Portuguese-ClinicalBGE-Large-568M-v1."
+    },
+    {
+      "title": "GitHub - maziyarpanahi/openmed: Local-first healthcare AI: clinical NER ...",
+      "url": "https://github.com/maziyarpanahi/openmed",
+      "snippet": "Local-first healthcare AI: clinical NER & HIPAA PII de-identification that runs 100% on-device. 2,200+ medical models, 21 languages, Apple MLX + Python, no cloud, no patient data leaving your network. Apache-2.0 - maziyarpanahi/openmed"
+    }
+  ]
+}

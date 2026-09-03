@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Yu-Zhou-Wang/smolvla_so_101_red_foam_ball_20k",
+  "slug": "yu-zhou-wang-smolvla_so_101_red_foam_ball_20k",
+  "author": "Yu-Zhou-Wang",
+  "url": "https://huggingface.co/Yu-Zhou-Wang/smolvla_so_101_red_foam_ball_20k",
+  "created_at": "2026-09-03T00:11:46.000Z",
+  "updated_at": "2026-09-03T00:12:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "so101",
+    "smolvla",
+    "sotac",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906721128,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-tuning SmolVLA for Cube Pick-and-Place on SO-101",
+      "url": "https://ggando.com/blog/smolvla-so101/",
+      "snippet": "Here&#x27;s what I tried out. The Setup # Hardware: SO-101 follower + leader arm (Feetech STS3215 servos), Intel RealSense D405 as wrist camera, Logitech C920 as overhead camera, and my RTX 3090 for training. Software: HuggingFace&#x27;s LeRobot framework with a custom fork that adds placo-based IK for automated resets between episodes."
+    },
+    {
+      "title": "AndrewNoviello/so101-smolvla · Hugging Face",
+      "url": "https://huggingface.co/AndrewNoviello/so101-smolvla",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Yu-Zhou-Wang/dp_so_101_red_foam_ball · Hugging Face",
+      "url": "https://huggingface.co/Yu-Zhou-Wang/dp_so_101_red_foam_ball",
+      "snippet": "Diffusion Policy — SO-101 red foam ball LeRobot Diffusion Policy trained on Jingyi-Z/sotac episodes 0-20 (Pick up the red foam ball and place it into the container)."
+    },
+    {
+      "title": "Fine-Tuning SmolVLA on SO-101 - 25 Demos, First Rollout",
+      "url": "https://www.youtube.com/watch?v=7RKQderl6vk",
+      "snippet": "Running a fine-tuned SmolVLA policy on an SO-101 arm - a 450M parameter vision-language-action model from Hugging Face, pretrained on ~30K community episodes and fine-tuned on 25 demonstrations of ..."
+    },
+    {
+      "title": "blog/smolvla.md at main · huggingface/blog · GitHub",
+      "url": "https://github.com/huggingface/blog/blob/main/smolvla.md",
+      "snippet": "SmolVLA-450M is our open-source, compact yet capable VLA model. It is: Small enough to run on CPU, train on a single consumer GPU, or even a MacBook! Trained on public, community-shared robotics data Released with full training and inference recipes Can be tested and deployed on very affordable hardware (SO-100, SO-101, LeKiwi, etc.) Inspired by the training paradigms of Large Language Models ..."
+    }
+  ]
+}

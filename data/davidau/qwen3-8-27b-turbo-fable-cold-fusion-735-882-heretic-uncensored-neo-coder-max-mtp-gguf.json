@@ -5,7 +5,7 @@
   "author": "DavidAU",
   "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
   "created_at": "2026-09-01T07:01:09.000Z",
-  "updated_at": "2026-09-02T02:10:35.000Z",
+  "updated_at": "2026-09-02T23:38:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -55,13 +55,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 79,
+  "likes": 97,
   "downloads_30d": 0,
-  "trending_score": 78,
+  "trending_score": 93,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 219413976155,
-  "storage_human": "219.4 GB",
+  "storage_bytes": 424062644635,
+  "storage_human": "424.1 GB",
   "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
   "formats": [
     "gguf"

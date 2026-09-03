@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "EdwinDracoHiguera/negclima-mdeberta-v3",
+  "slug": "edwindracohiguera-negclima-mdeberta-v3",
+  "author": "EdwinDracoHiguera",
+  "url": "https://huggingface.co/EdwinDracoHiguera/negclima-mdeberta-v3",
+  "created_at": "2026-09-02T22:01:42.000Z",
+  "updated_at": "2026-09-02T22:13:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "sentiment-analysis",
+    "organizational-climate",
+    "human-resources",
+    "spanish",
+    "text-classification",
+    "es",
+    "base_model:microsoft/mdeberta-v3-base",
+    "base_model:finetune:microsoft/mdeberta-v3-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278811651,
+  "parameters_human": "278.8M",
+  "storage_bytes": 1135933012,
+  "storage_human": "1.1 GB",
+  "base_model": "microsoft/mdeberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - microsoft/DeBERTa: The implementation of DeBERTa",
+      "url": "https://github.com/microsoft/DeBERTa",
+      "snippet": "The models of our new work DeBERTa V3: Improving DeBERTa using ELECTRA-Style Pre-Training with Gradient-Disentangled Embedding Sharing are publicly available at huggingface model hub now."
+    },
+    {
+      "title": "microsoft/mdeberta-v3-base · Hugging Face",
+      "url": "https://huggingface.co/microsoft/mdeberta-v3-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "protectai/deberta-v3-base-prompt-injection · Hugging Face",
+      "url": "https://huggingface.co/protectai/deberta-v3-base-prompt-injection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mdeberta-v3-base by microsoft, Fill Mask | Mixpeek Model Hub",
+      "url": "https://mixpeek.com/model/microsoft/mdeberta-v3-base",
+      "snippet": "On Mixpeek, mdeberta-v3-base runs as a managed extractor inside a processing pipeline. Point a bucket of fill mask data at it, and Mixpeek handles GPU provisioning, batching, retries, and writing the outputs into a vector store you can query."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/microsoft-mdeberta-v3-base",
+      "snippet": "The mDeBERTa V3 base model comes with 12 layers and a hidden size of 768. It has 86M backbone parameters with a vocabulary containing 250K tokens which introduces 190M parameters in the Embedding layer."
+    }
+  ]
+}

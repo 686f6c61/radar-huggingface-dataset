@@ -5,7 +5,7 @@
   "author": "ji-farthing",
   "url": "https://huggingface.co/ji-farthing/Qwen3.8-Flash-Next-ik-llama-GGUF",
   "created_at": "2026-09-01T23:34:53.000Z",
-  "updated_at": "2026-09-01T23:56:45.000Z",
+  "updated_at": "2026-09-02T03:08:35.000Z",
   "license": "qwen-community-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 176943899520,

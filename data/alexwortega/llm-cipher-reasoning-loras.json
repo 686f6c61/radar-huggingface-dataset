@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "AlexWortega/llm-cipher-reasoning-loras",
+  "slug": "alexwortega-llm-cipher-reasoning-loras",
+  "author": "AlexWortega",
+  "url": "https://huggingface.co/AlexWortega/llm-cipher-reasoning-loras",
+  "created_at": "2026-09-02T19:58:05.000Z",
+  "updated_at": "2026-09-02T20:03:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "trl",
+    "rlvr",
+    "reasoning",
+    "token-efficiency",
+    "negative-results",
+    "text-generation",
+    "en",
+    "dataset:AlexWortega/llm-cipher-reasoning",
+    "arxiv:2502.18600",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4780683296,
+  "storage_human": "4.8 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlexWortega/llm-cipher-reasoning - GitHub",
+      "url": "https://github.com/AlexWortega/llm-cipher-reasoning",
+      "snippet": "Cipher invention / cross-model communication (gepa/, rounds documented in docs/RESULTS.md): cold-decoding tests, negotiated cipher collusion between model pairs, a cipher-hardening arms race, and GEPA-based prompt optimization to get a model (Kimi K2 Thinking) to reason internally in a letter-reversal cipher via prompting alone."
+    },
+    {
+      "title": "llm-cipher-reasoning/README.md at main · AlexWortega/llm ... - GitHub",
+      "url": "https://github.com/AlexWortega/llm-cipher-reasoning/blob/main/README.md",
+      "snippet": "Cipher invention / cross-model communication (gepa/, rounds documented in docs/RESULTS.md): cold-decoding tests, negotiated cipher collusion between model pairs, a cipher-hardening arms race, and GEPA-based prompt optimization to get a model (Kimi K2 Thinking) to reason internally in a letter-reversal cipher via prompting alone."
+    },
+    {
+      "title": "AlexWortega (Wortega) - Hugging Face",
+      "url": "https://huggingface.co/AlexWortega/papers",
+      "snippet": "Ебать обучать больше чем ты Open to Collab 211.9TFLOPS 702748 WortegaPRO AlexWortega Follow Kalemnor&#x27;s profile pictureits5Q&#x27;s profile pictureRustemX&#x27;s profile picture 98 followers · 30 following AlexWortega"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

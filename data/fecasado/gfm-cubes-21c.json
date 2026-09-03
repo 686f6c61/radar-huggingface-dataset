@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fecasado/gfm-cubes-21c",
+  "slug": "fecasado-gfm-cubes-21c",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/gfm-cubes-21c",
+  "created_at": "2026-09-02T22:53:02.000Z",
+  "updated_at": "2026-09-02T22:53:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "gaze_flow_matching",
+    "dataset:fecasado/Ncubes-to-Nbaskets-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 75265498,
+  "parameters_human": "75.3M",
+  "storage_bytes": 301121960,
+  "storage_human": "301 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fecasado/gact-cubes-21c · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gact-cubes-21c",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fecasado/gfm-cubes-22b · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gfm-cubes-22b",
+      "snippet": "fecasado / gfm-cubes-22b like 0 Robotics LeRobot Safetensors fecasado/Ncubes-to-Nbaskets-320x240 flow-matching gaze blueberry License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - BUPT-GAMMA/GFMPapers: Must-read papers on graph foundation ...",
+      "url": "https://github.com/BUPT-GAMMA/GFMPapers",
+      "snippet": "This list is currently maintained by members in BUPT GAMMA Lab. If you like our project, please give us a star ⭐ on GitHub for the latest update. We thank all the great contributors very much. ⭐ We have held a tutorial about graph foundation model at the WebConf 2024! Here is the tutorial. [part1] [part2] [part3]"
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchives.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

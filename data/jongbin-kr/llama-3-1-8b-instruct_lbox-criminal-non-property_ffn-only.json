@@ -5,7 +5,7 @@
   "author": "Jongbin-kr",
   "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-criminal-non-property_ffn-only",
   "created_at": "2026-09-02T09:43:55.000Z",
-  "updated_at": "2026-09-02T10:41:01.000Z",
+  "updated_at": "2026-09-02T18:54:08.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1149930865,
-  "storage_human": "1.1 GB",
+  "storage_bytes": 11004551713,
+  "storage_human": "11.0 GB",
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"

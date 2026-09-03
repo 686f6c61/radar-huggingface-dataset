@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Takumiabe0213/multitask96",
+  "slug": "takumiabe0213-multitask96",
+  "author": "Takumiabe0213",
+  "url": "https://huggingface.co/Takumiabe0213/multitask96",
+  "created_at": "2026-09-02T19:17:26.000Z",
+  "updated_at": "2026-09-02T19:17:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Takumiabe0213 (加藤悠人) - Hugging Face",
+      "url": "https://huggingface.co/Takumiabe0213",
+      "snippet": "Working on edge AI and model compression"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "The unfair advantage Put 300+ AI models to work — the right one for every job. No single model wins at everything. Multi puts 300+ models from every major lab to work across four workflows, so you deploy the best AI for each task instead of forcing one to do it all. Using the right model for the right project is the advantage most people leave on the table."
+    },
+    {
+      "title": "awesome-ocr-resources/updates/2026/2026-08-29.md at master ... - GitHub",
+      "url": "https://github.com/ZumingHuang/awesome-ocr-resources/blob/master/updates/2026/2026-08-29.md",
+      "snippet": "Key suggestions include self-supervised learning, multimodal AI, automated machine learning (AutoML), AI-assisted postprocessing, tiny machine learning (TinyML), and the creation of joint corpora for script matching. The future recommendations aim to enhance OCR accuracy and tackle the challenges identified for real-time industrial applications."
+    },
+    {
+      "title": "Takumiabe0213/music-image-text-2023 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Takumiabe0213/music-image-text-2023",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

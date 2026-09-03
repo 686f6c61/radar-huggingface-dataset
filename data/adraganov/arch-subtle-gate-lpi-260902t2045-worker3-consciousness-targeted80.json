@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "adraganov/arch-subtle-gate-lpi-260902T2045-worker3-consciousness-targeted80",
+  "slug": "adraganov-arch-subtle-gate-lpi-260902t2045-worker3-consciousness-targeted80",
+  "author": "adraganov",
+  "url": "https://huggingface.co/adraganov/arch-subtle-gate-lpi-260902T2045-worker3-consciousness-targeted80",
+  "created_at": "2026-09-02T22:27:20.000Z",
+  "updated_at": "2026-09-02T22:27:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92213988,
+  "storage_human": "92 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perplexity",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "ResearchGate | Find and share research",
+      "url": "https://www.researchgate.net/",
+      "snippet": "Access 160+ million publication pages and connect with 25+ million researchers. Join for free and gain visibility by uploading your research."
+    },
+    {
+      "title": "Search | ResearchGate",
+      "url": "https://www.researchgate.net/search/index",
+      "snippet": "Find the research you need | With 160+ million publication pages, 1+ million questions, and 25+ million researchers, this is where everyone can access science"
+    },
+    {
+      "title": "Paper-List-DAILY - Paper Arxiv Daily",
+      "url": "https://islinxu.github.io/paper-list/",
+      "snippet": "Paper-List-DAILY is an automated arXiv paper tracking system that fetches, categorizes, and organizes the latest research papers across 20+ computer vision & AI topics — from classic tasks like Object Detection and Segmentation to cutting-edge fields like Diffusion Models, LLMs, and Embodied AI."
+    },
+    {
+      "title": "PDF mEPIG~ QmI",
+      "url": "https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/08/CSA_research_note_litellm_gateway_postcompromise_20260829-csa-styled.pdf",
+      "snippet": "Protocol test endpoints, to its Known Exploited Vulnerabilities catalog on June 8, 2026, after confirming active in-the-wild exploitation, and set a remediation deadline of June 22, 2026 for federal civilian agencies [5]. On its own the flaw carries a CVSS score of 8.7 and requires an authenticated proxy API key; researchers demonstrated that chaining it with CVE-2026-48710, a Host-header ..."
+    }
+  ]
+}

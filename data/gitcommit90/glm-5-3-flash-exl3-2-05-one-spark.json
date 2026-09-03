@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "gitcommit90/GLM-5.3-Flash-EXL3-2.05-One-Spark",
+  "slug": "gitcommit90-glm-5-3-flash-exl3-2-05-one-spark",
+  "author": "gitcommit90",
+  "url": "https://huggingface.co/gitcommit90/GLM-5.3-Flash-EXL3-2.05-One-Spark",
+  "created_at": "2026-09-02T23:53:43.000Z",
+  "updated_at": "2026-09-02T23:59:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "glm-5.3-flash",
+    "dgx-spark",
+    "gb10",
+    "exl3",
+    "dflash2",
+    "speculative-decoding",
+    "arm64",
+    "deployment",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3 Flash EXL3 for 2x DGX Sparks - GitHub",
+      "url": "https://github.com/MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks/",
+      "snippet": "On a 2× NVIDIA GB10 kit: tensor-parallel size 2 over CX7, native sm_121a cubins, API on :8888. Served model id: GLM-5.3-Flash-EXL3. EXL3/TR3 quant by brandonmusic. This is EXL3 weights + fp8 KV on GB10. Do not pass --moe-backend marlin."
+    },
+    {
+      "title": "GitHub - NeoAiLabs/GLM-5.3-Flash-EXL3",
+      "url": "https://github.com/NeoAiLabs/GLM-5.3-Flash-EXL3",
+      "snippet": "Run turboderp/GLM-5.3-Flash-exl3 at 2.05 bpw on an NVIDIA DGX Spark. ExLlamaV3 is the inference engine; TabbyAPI provides the OpenAI-compatible API. This deployment is specific to Linux ARM64, NVIDIA GB10/SM121a, CUDA 13, and approximately 128 GB of unified memory. It is not an x86 image."
+    },
+    {
+      "title": "zai-org/GLM-5.3-Flash · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3-Flash: Frontier Intelligence, Flash Cost - z.ai",
+      "url": "https://z.ai/blog/glm-5.3-flash",
+      "snippet": "We introduce GLM-5.3-Flash, the first natively multimodal model in the GLM-5 series. With 320B total parameters and just 18B active parameters, it outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks. GLM-5.3-Flash starts from a newly trained base model, with its architecture and training ..."
+    },
+    {
+      "title": "turboderp/GLM-5.3-Flash-exl3 · Hugging Face",
+      "url": "https://huggingface.co/turboderp/GLM-5.3-Flash-exl3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

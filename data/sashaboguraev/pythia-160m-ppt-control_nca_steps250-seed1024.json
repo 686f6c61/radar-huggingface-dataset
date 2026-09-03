@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sashaboguraev/pythia-160m-ppt-control_nca_steps250-seed1024",
+  "slug": "sashaboguraev-pythia-160m-ppt-control_nca_steps250-seed1024",
+  "author": "sashaboguraev",
+  "url": "https://huggingface.co/sashaboguraev/pythia-160m-ppt-control_nca_steps250-seed1024",
+  "created_at": "2026-07-28T04:55:53.000Z",
+  "updated_at": "2026-09-02T20:02:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 472,
+  "trending_score": 0,
+  "parameters": 162281472,
+  "parameters_human": "162.3M",
+  "storage_bytes": 927259298,
+  "storage_human": "927 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pythia-160m-ppt-control_nca_steps250-seed1024 - Hugging Face",
+      "url": "https://huggingface.co/sashaboguraev/pythia-160m-ppt-control_nca_steps250-seed1024",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pythia-160m-ppt-control_nca_steps250-seed324-preserve_emb",
+      "url": "https://huggingface.co/sashaboguraev/pythia-160m-ppt-control_nca_steps250-seed324-preserve_emb",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pythia-160m-ppt-control_nca_steps250-seed1024 - friendli.ai",
+      "url": "https://friendli.ai/models/sashaboguraev/pythia-160m-ppt-control_nca_steps250-seed1024",
+      "snippet": "Run pythia-160m-ppt-control_nca_steps250-seed1024 with FriendliAI inference. This is the model card of a 🤗 transformers model that has been pushed on the Hub."
+    },
+    {
+      "title": "pythia-160m-ppt-control_nca_steps250-seed1024-preserve_emb",
+      "url": "https://friendli.ai/models/sashaboguraev/pythia-160m-ppt-control_nca_steps250-seed1024-preserve_emb",
+      "snippet": "Deploy pythia-160m-ppt-control_nca_steps250-seed1024-preserve_emb with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "pythia-160m-ppt-control_shuffle_dyck_steps250-seed1024",
+      "url": "https://dev.modelhub.org.cn/sashaboguraev/pythia-160m-ppt-control_shuffle_dyck_steps250-seed1024",
+      "snippet": "Model synced from source: sashaboguraev/pythia-160m-ppt-control_shuffle_dyck_steps250-seed1024"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "OpenMed/OpenMed-PII-Japanese-BigMed-Large-560M-v1-mlx",
+  "slug": "openmed-openmed-pii-japanese-bigmed-large-560m-v1-mlx",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/OpenMed-PII-Japanese-BigMed-Large-560M-v1-mlx",
+  "created_at": "2026-05-18T08:29:12.000Z",
+  "updated_at": "2026-09-02T22:27:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "openmed",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "openmed",
+    "xlm-roberta",
+    "mlx",
+    "apple-silicon",
+    "token-classification",
+    "pii",
+    "de-identification",
+    "medical",
+    "clinical",
+    "bert",
+    "ja",
+    "base_model:OpenMed/OpenMed-PII-Japanese-BigMed-Large-560M-v1",
+    "base_model:finetune:OpenMed/OpenMed-PII-Japanese-BigMed-Large-560M-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2252815630,
+  "storage_human": "2.3 GB",
+  "base_model": "OpenMed/OpenMed-PII-Japanese-BigMed-Large-560M-v1",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenMed/OpenMed-PII-Japanese-BigMed-Large-560M-v1-mlx · Hugging Face",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Japanese-BigMed-Large-560M-v1-mlx",
+      "snippet": "/ OpenMed-PII-Japanese-BigMed-Large-560M-v1-mlx like 0 Follow OpenMed 1.48k Token Classification MLX openmed xlm-roberta apple-silicon pii de-identification medical clinical bert License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model Libraries MLX How to use OpenMed/OpenMed-PII-Japanese ..."
+    },
+    {
+      "title": "OpenMed-PII-Japanese-BigMed-Large-560M-v1 - Hugging Face",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Japanese-BigMed-Large-560M-v1",
+      "snippet": "OpenMed-PII-Arabic-BigMed-Large-560M-v1 Arabic PII Detection Model | 560M Parameters | Open Source Model Description OpenMed-PII-Arabic-BigMed-Large-560M-v1 is a transformer-based token classification model fine-tuned for Personally Identifiable Information (PII) detection in Arabic text. This model identifies and classifies 54 types of sensitive information including names, addresses, social ..."
+    },
+    {
+      "title": "OpenMed — local-first clinical AI",
+      "url": "https://openmed.life/",
+      "snippet": "OpenMed 2.2.0 · on-device clinical AI Your data. Your model. Your iPhone. OpenMed reads clinical text and removes 55+ PHI types on the hardware you control, so patient data never leaves the device. 2,000+ Apache-2.0 models, 33 model-backed PII languages, state of the art on 10 of 12 biomedical NER benchmarks — and a new release most weeks."
+    },
+    {
+      "title": "GitHub - maziyarpanahi/openmed: Local-first healthcare AI: clinical NER ...",
+      "url": "https://github.com/maziyarpanahi/openmed",
+      "snippet": "Local-first healthcare AI: clinical NER & HIPAA PII de-identification that runs 100% on-device. 2,200+ medical models, 21 languages, Apple MLX + Python, no cloud, no patient data leaving your network. Apache-2.0 - maziyarpanahi/openmed"
+    },
+    {
+      "title": "openmed/openmed at master · maziyarpanahi/openmed · GitHub",
+      "url": "https://github.com/maziyarpanahi/openmed/tree/master/openmed",
+      "snippet": "Local-first healthcare AI: clinical NER & HIPAA PII de-identification that runs 100% on-device. 2,200+ medical models, 21 languages, Apple MLX + Python, no cloud, no patient data leaving your network. Apache-2.0 - openmed/openmed at master · maziyarpanahi/openmed"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kaonai/grpo-kaon3-population-final-transition-rm600-mouse-original-reset-matched-lr1e4-b004-step125",
+  "slug": "kaonai-grpo-kaon3-population-final-transition-rm600-mouse-original-reset-matched-lr1e4-b004-step125",
+  "author": "kaonai",
+  "url": "https://huggingface.co/kaonai/grpo-kaon3-population-final-transition-rm600-mouse-original-reset-matched-lr1e4-b004-step125",
+  "created_at": "2026-09-02T21:17:11.000Z",
+  "updated_at": "2026-09-02T21:18:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "grpo",
+    "peft-merged",
+    "text-generation",
+    "conversational",
+    "base_model:kaonai/kaon-c-gemma4-26b-v10.1",
+    "base_model:finetune:kaonai/kaon-c-gemma4-26b-v10.1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805933872,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51644178190,
+  "storage_human": "51.6 GB",
+  "base_model": "kaonai/kaon-c-gemma4-26b-v10.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaon AI - AI-Native Content Lab | Personalized AI Experiences",
+      "url": "https://kaon.io/",
+      "snippet": "Kaon AI pioneers the AI-native era of content creation & distribution. We build global products like FlowGPT and Emochi — personalized AI experiences for everyone."
+    },
+    {
+      "title": "Kaon Knowledge Base",
+      "url": "https://kb.kaon.com/",
+      "snippet": "Welcome to the Kaon Knowledge Base. This site is intended to answer common questions that come up when using Kaon&#x27;s products, services, and technologies. If you don&#x27;t find the answer you are looking for here, please use the Contact Us page on the Kaon web site. Please select an article from the menu on the upper left."
+    },
+    {
+      "title": "Update KAON Media DIGI Firmware, How To - HardReset.info",
+      "url": "https://www.hardreset.info/devices/kaon-media/kaon-media-digi/faq/update-software/update-router-firmware/",
+      "snippet": "How to Update KAON Media DIGI. How to update firmware on KAON Media DIGI. How to actualize software on KAON Media DIGI. How to update KAON Media DIGI: First, you need to download firmware from the official website of your router manufacturer. Next, login into the router, check how to Open Admin Page. Now choose Maintenance and find Update or Firmware Update. Then, press on Choose file and pick ..."
+    },
+    {
+      "title": "Messenger",
+      "url": "https://www.messenger.com/",
+      "snippet": "Hang out anytime, anywhere - Messenger makes it easy and fun to stay close to your favorite people."
+    },
+    {
+      "title": "GitHub - yifan123/flow_grpo: [NeurIPS 2025] An official implementation ...",
+      "url": "https://github.com/yifan123/flow_grpo",
+      "snippet": "GRPO-Guard maintains the same rising trend in proxy scores as FlowGRPO while preventing rapid declines in gold scores, thus preserving high image quality and diversity. Start Training After downloading the base model and setting up the reward model, run the following script to start training the GRPO-Guard for the SD3.5-M text rendering task."
+    }
+  ]
+}

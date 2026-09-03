@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "aphrodite-tg/requel-models",
+  "slug": "aphrodite-tg-requel-models",
+  "author": "aphrodite-tg",
+  "url": "https://huggingface.co/aphrodite-tg/requel-models",
+  "created_at": "2026-09-02T21:54:29.000Z",
+  "updated_at": "2026-09-02T21:56:07.000Z",
+  "license": "mixed-see-model-card",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-to-image",
+    "super-resolution",
+    "background-removal",
+    "non-commercial",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 417423131,
+  "storage_human": "417 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The New Aphrodite TG TF AI Adventure - DeviantArt",
+      "url": "https://www.deviantart.com/castleraquel/art/The-New-Aphrodite-TG-TF-AI-Adventure-1286563493",
+      "snippet": "The New Aphrodite TG TF AI Adventure — literature by CastleRaquel on DeviantArt. Published: 2026-01-13 · Likes: 27 · Views: 18511 · Tags: tg, tgtf, tg ..."
+    },
+    {
+      "title": "Aphrodite AI Models | PixAI",
+      "url": "https://pixai.art/model/tags/aphrodite",
+      "snippet": "Discover Aphrodite AI models on PixAI - Find anime AI models and LoRAs tagged with Aphrodite"
+    },
+    {
+      "title": "aphrodite-tg (aphrodite) - Hugging Face",
+      "url": "https://huggingface.co/aphrodite-tg",
+      "snippet": "User profile of aphrodite on Hugging Face"
+    },
+    {
+      "title": "Aphrodite.ipynb - Colab",
+      "url": "https://colab.research.google.com/gist/Pyroserenus/22a52cc762b77bb7f814fbb200c05e74/mythogguf.ipynb",
+      "snippet": "v-- Enter your model below and then click this to start Aphrodite, takes about 7 mins to prep+load (if you used run all this should be automatic)"
+    },
+    {
+      "title": "Aphrodite.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/AlpinDale/misc-scripts/blob/main/Aphrodite.ipynb",
+      "snippet": "By default, a few models have been included. You can models for a variety of quantization methods, including: EXL2, GPTQ, AWQ, GGUF, Marlin, AQLM, SqueezeLLM, etc. Simply input their Hugging Face ID in the Model field, and configure the other options as necessary."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "andreywsmirnov/tmp-contrastive55",
+  "slug": "andreywsmirnov-tmp-contrastive55",
+  "author": "andreywsmirnov",
+  "url": "https://huggingface.co/andreywsmirnov/tmp-contrastive55",
+  "created_at": "2026-09-02T19:09:50.000Z",
+  "updated_at": "2026-09-02T19:09:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "andreywsmirnov/model_338494741_mobilevit_nano · Hugging Face",
+      "url": "https://huggingface.co/andreywsmirnov/model_338494741_mobilevit_nano",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Benchmarks 2026: Compare GPT, Claude, Gemini & DeepSeek",
+      "url": "https://aimodelbenchmarks.com/",
+      "snippet": "Compare AI model benchmarks for coding, agents, reasoning, context windows, and API pricing. Updated source-reviewed rankings for GPT, Claude, Gemini, DeepSeek, and open models."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "AI Model Comparison",
+      "url": "https://llm-stats.com/models/compare",
+      "snippet": "Compare leading AI models side by side across benchmarks, API pricing, context windows, speed, latency, modality, and license."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

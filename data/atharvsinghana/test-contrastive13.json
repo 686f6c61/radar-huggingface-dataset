@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "atharvsinghana/test-contrastive13",
+  "slug": "atharvsinghana-test-contrastive13",
+  "author": "atharvsinghana",
+  "url": "https://huggingface.co/atharvsinghana/test-contrastive13",
+  "created_at": "2026-09-02T20:19:38.000Z",
+  "updated_at": "2026-09-02T20:19:44.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "An OpenAI model went rogue on the internet and stole test answers",
+      "url": "https://www.fastcompany.com/91578008/an-openai-model-went-rogue-on-the-internet-and-stole-test-answers",
+      "snippet": "advertisement 07-23-2026 AI DECODED An OpenAI model went rogue on the internet and stole test answers The unprecedented incident took place during a safety test at OpenAI."
+    },
+    {
+      "title": "AI Detector - Trusted AI Checker for ChatGPT, Copilot & Gemini - Scribbr",
+      "url": "https://www.scribbr.com/ai-detector/",
+      "snippet": "Scribbr AI Detector: Identify AI-generated content from ChatGPT, Copilot, and Gemini with our advanced AI Checker. Try it for free!"
+    },
+    {
+      "title": "Researchers tested AI against 100,000 humans on creativity",
+      "url": "https://www.sciencedaily.com/releases/2026/01/260125083356.htm",
+      "snippet": "A massive new study comparing more than 100,000 people with today&#x27;s most advanced AI systems delivers a surprising result: generative AI can now beat the average human on certain creativity ..."
+    },
+    {
+      "title": "Update to Certain Russia-related Listings - Office of Foreign Assets ...",
+      "url": "https://ofac.treasury.gov/recent-actions/20240703",
+      "snippet": "3A-MGU; Aircraft Model AS365 Dauphin; Aircraft Manufacturer&#x27;s Serial Number (MSN) 6959; Aircraft Tail Number 3A-MGU; Secondary sanctions risk: Ukraine-/Russia-Related Sanctions Regulations, 31 CFR 589.201 and/or 589.209 (aircraft) [UKRAINE-EO13661] [RUSSIA-EO14024] (Linked To: SKOCH, Andrei Vladimirovich). -to- 3A-MGU; Aircraft Model AS365 ..."
+    },
+    {
+      "title": "AI Model Testing: Methods, Challenges & Best Practices",
+      "url": "https://testomat.io/blog/ai-model-testing/",
+      "snippet": "Explanation How AI model perform AI-models follow the rules defined in the algorithms that help them perform tasks from processing simple automated responses to making complex problem-solving. AI models are best at: Analyzing datasets Finding patterns Making predictions Generating content Why Do We Need to Test AI Models? Below, we have provided some important scenarios why testing an AI-based ..."
+    }
+  ]
+}

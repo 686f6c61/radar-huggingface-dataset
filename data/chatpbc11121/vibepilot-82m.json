@@ -5,7 +5,7 @@
   "author": "chatpbc11121",
   "url": "https://huggingface.co/chatpbc11121/VibePilot-82M",
   "created_at": "2026-08-28T08:12:51.000Z",
-  "updated_at": "2026-08-28T10:00:32.000Z",
+  "updated_at": "2026-09-02T21:48:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,7 +19,6 @@
     "business",
     "decision-support",
     "causal-lm",
-    "en",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us"
@@ -29,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2953159574,
-  "storage_human": "3.0 GB",
+  "storage_bytes": 3376758921,
+  "storage_human": "3.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

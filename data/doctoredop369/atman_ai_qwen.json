@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "DoctorEdoP369/Atman_Ai_Qwen",
+  "slug": "doctoredop369-atman_ai_qwen",
+  "author": "DoctorEdoP369",
+  "url": "https://huggingface.co/DoctorEdoP369/Atman_Ai_Qwen",
+  "created_at": "2026-09-02T19:39:03.000Z",
+  "updated_at": "2026-09-02T20:07:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3.5",
+    "qwen3.6",
+    "reasoning",
+    "story",
+    "uncensored",
+    "Psychology",
+    "cot",
+    "Chosen One",
+    "Consigliere",
+    "ita",
+    "base_model:DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED",
+    "base_model:quantized:DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 43213063967,
+  "storage_human": "43.2 GB",
+  "base_model": "DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-03T02:17:13.969Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "qwen AI Models | Civitai",
+      "url": "https://civitai.com/tag/qwen",
+      "snippet": "Browse 317 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with qwen."
+    },
+    {
+      "title": "Read the Docs - Qwen",
+      "url": "https://qwen.readthedocs.io/",
+      "snippet": "Welcome to Qwen! ¶ Qwen is the large language model and large multimodal model series of the Qwen Team, Alibaba Group. Both language models and multimodal models are pretrained on large-scale multilingual and multimodal data and post-trained on quality data for aligning to human preferences. Qwen is capable of natural language understanding, text generation, vision understanding, audio ..."
+    },
+    {
+      "title": "Every Qwen AI Model Explained and Compared (Aug, 2026)",
+      "url": "https://www.secondtalent.com/resources/every-qwen-ai-model-explained-compared/",
+      "snippet": "Qwen is Alibaba&#x27;s model family: free Apache 2.0 open weights you self-host, or a cheap paid API with Max, Plus, and Flash. Compare models, prices, and which to..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In this work, we introduce Qwen3, the latest series in our foundation model family, Qwen. Qwen3 is a collection of open-weight large language models (LLMs) that achieve state-of-the-art performance across a wide variety of tasks and domains."
+    }
+  ]
+}

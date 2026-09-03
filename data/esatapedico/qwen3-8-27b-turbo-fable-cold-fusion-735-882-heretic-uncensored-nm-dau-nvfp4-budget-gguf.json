@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "esatapedico/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4-BUDGET-GGUF",
+  "slug": "esatapedico-qwen3-8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-nm-dau-nvfp4-budget-gguf",
+  "author": "esatapedico",
+  "url": "https://huggingface.co/esatapedico/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4-BUDGET-GGUF",
+  "created_at": "2026-09-02T22:55:19.000Z",
+  "updated_at": "2026-09-02T23:37:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "nvfp4",
+    "qwen3.8",
+    "qwen3.5",
+    "blackwell",
+    "vision",
+    "multimodal",
+    "llama.cpp",
+    "turbo",
+    "fable",
+    "cold-fusion",
+    "text-generation",
+    "en",
+    "multilingual",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998720,
+  "parameters_human": "26.90B",
+  "storage_bytes": 29316508640,
+  "storage_human": "29.3 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "esatapedico/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic ...",
+      "url": "https://huggingface.co/esatapedico/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4",
+      "snippet": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "esatapedico/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic ...",
+      "url": "https://huggingface.co/esatapedico/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4-GGUF",
+      "snippet": "A family of six GGUF files of DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU, DavidAU&#x27;s TURBO 735-882 tune (Fable plus Cold Fusion plus Heretic/Uncensored, 735/882 Heretic merge and DPO layers) on Qwen3.8-27B: a 27B dense hybrid model (Gated DeltaNet plus Gated Attention every fourth layer, 262K native context, embedded MTP speculative head, native vision tower ..."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    },
+    {
+      "title": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-nm-dau-davidau",
+      "snippet": "Overview Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU is a 27-billion-parameter text-generation fine-tune based on Qwen 3.8 27B. DavidAU, the maintainer, developed it with contributions from Nightmedia and other undisclosed fine-tunes. The model targets general instruction following, reasoning, analysis, creativity, and uncensored text generation. The most important ..."
+    }
+  ]
+}

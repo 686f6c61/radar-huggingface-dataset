@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ssinghpranav/dl-vision-language-pretraining-2024",
+  "slug": "ssinghpranav-dl-vision-language-pretraining-2024",
+  "author": "Ssinghpranav",
+  "url": "https://huggingface.co/Ssinghpranav/dl-vision-language-pretraining-2024",
+  "created_at": "2026-09-03T00:42:00.000Z",
+  "updated_at": "2026-09-03T00:42:08.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CVF Open Access",
+      "url": "https://openaccess.thecvf.com/",
+      "snippet": "These research papers are the Open Access versions, provided by the Computer Vision Foundation. Except for the watermark, they are identical to the accepted versions; the final published version of the proceedings is available on IEEE Xplore."
+    },
+    {
+      "title": "‪Pranav Singh‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=E-XLP1gAAAAJ&hl=en",
+      "snippet": "‪SoundHound‬ - ‪‪Cited by 178‬‬ - ‪AI‬ 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026"
+    },
+    {
+      "title": "GitHub - jingyi0000/VLM_survey: Collection of AWESOME vision-language ...",
+      "url": "https://github.com/jingyi0000/VLM_survey",
+      "snippet": "This is the repository of Vision Language Models for Vision Tasks: a Survey, a systematic survey of VLM studies in various visual recognition tasks including image classification, object detection, semantic segmentation, etc. For details, please refer to: Vision-Language Models for Vision Tasks: A Survey [Paper] IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2024 🤩 ..."
+    },
+    {
+      "title": "Vision Language Models Explained - Hugging Face",
+      "url": "https://huggingface.co/blog/vlms",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Efficient Vision-Language pre-training via domain-specific learning for ...",
+      "url": "https://aclanthology.org/2024.emnlp-main.454/",
+      "snippet": "Abstract Current Vision-Language (VL) models owe their success to large-scale pre-training on web-collected data, which in turn requires high-capacity architectures and large compute resources for training. We posit that when the downstream tasks are known in advance, which is in practice common, the pretraining process can be aligned to the downstream domain, leading to more efficient and ..."
+    }
+  ]
+}

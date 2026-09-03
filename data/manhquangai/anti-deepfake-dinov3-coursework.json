@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ManhQuangAI/anti-deepfake-dinov3-coursework",
+  "slug": "manhquangai-anti-deepfake-dinov3-coursework",
+  "author": "ManhQuangAI",
+  "url": "https://huggingface.co/ManhQuangAI/anti-deepfake-dinov3-coursework",
+  "created_at": "2026-09-02T23:10:08.000Z",
+  "updated_at": "2026-09-02T23:11:33.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "pytorch",
+    "image-classification",
+    "deepfake",
+    "anti-spoofing",
+    "dinov3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 568339207,
+  "storage_human": "568 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ManhQuangAI/dinov3-deepfake-detection at main - Hugging Face",
+      "url": "https://huggingface.co/ManhQuangAI/dinov3-deepfake-detection/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ManhQuangAI/dinov3-deepfake-detection · Hugging Face",
+      "url": "https://huggingface.co/ManhQuangAI/dinov3-deepfake-detection",
+      "snippet": "Anti Face Deepfake — ViT Image Classification (DINOv3) Đồ án: Phát hiện deepfake trên ảnh khuôn mặt bằng Vision Transformer (DINOv3) — self-supervised ViT của Meta AI."
+    },
+    {
+      "title": "AntiDeepFake: AI for Deep Fake Speech Recognition - arXiv.org",
+      "url": "https://arxiv.org/html/2402.10218v1",
+      "snippet": "Abstract In this research study, we propose a modern artificial intelligence (AI) approach to recognize deepfake voice, also known as generative AI cloned synthetic voice. Our proposed AI technology, called AntiDeepFake, consists of all main pipelines from data to evaluation in the whole picture. We provide experimental results and scores for all our proposed methods. The main source code for ..."
+    },
+    {
+      "title": "Exploring autonomous methods for deepfake detection: A detailed survey ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S240584402500653X",
+      "snippet": "Muxin Pu et al. [8] introduced metamorphic testing to evaluate the reliability of a deepfake detection model, MesoInception-4, and its impact on output. The model is used to detect makeup as anomalies, and the results are analyzed to identify potential gender biases in deep learning and AI systems."
+    },
+    {
+      "title": "AntiDeepFake: AI for Deep Fake Speech Recognition",
+      "url": "https://arxiv.org/abs/2402.10218",
+      "snippet": "In this research study, we propose a modern artificial intelligence (AI) approach to recognize deepfake voice, also known as generative AI cloned synthetic voice. Our proposed AI technology, called AntiDeepFake, consists of all main pipelines from data to evaluation in the whole picture. We provide experimental results and scores for all our proposed methods. The main source code for our ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OpenVDN/vdn-minimax-h3",
+  "slug": "openvdn-vdn-minimax-h3",
+  "author": "OpenVDN",
+  "url": "https://huggingface.co/OpenVDN/vdn-minimax-h3",
+  "created_at": "2026-09-02T05:03:41.000Z",
+  "updated_at": "2026-09-02T19:55:32.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 37,
+  "downloads_30d": 0,
+  "trending_score": 36,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 82766400164,
+  "storage_human": "82.8 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "MiniMax H3: An Open Model Breaking the Boundaries Between Tasks and ...",
+      "url": "https://www.minimax.io/blog/minimax-h3",
+      "snippet": "Today, we&#x27;re officially launching MiniMax H3, a general-purpose omni-modal generation model. H3 can jointly understand multimodal contexts spanning text, images, video, and audio. It generates video with native stereo audio at up to 2K resolution and 15 seconds in length."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "MiniMax H3 Open: Tutorials, Deployment & Workflows",
+      "url": "https://design.minimax.io/h3",
+      "snippet": "Explore MiniMax H3 tutorials, deployment guides, creator workflows, and community videos."
+    },
+    {
+      "title": "MiniMax H3 - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/minimax-h3",
+      "snippet": "Integration MiniMax H3 runs in ComfyUI through native nodes added in ComfyUI 0.30.0, with text-to-video, image-to-video, and reference-to-video workflow templates. Repackaged single-file weights for ComfyUI are published at Comfy-Org/MiniMax-H3. For more details about the model architecture and capabilities, see the model page on Hugging Face."
+    }
+  ]
+}

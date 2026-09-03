@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "shauryakochar/anlp-a1-c4",
+  "slug": "shauryakochar-anlp-a1-c4",
+  "author": "shauryakochar",
+  "url": "https://huggingface.co/shauryakochar/anlp-a1-c4",
+  "created_at": "2026-09-02T23:08:34.000Z",
+  "updated_at": "2026-09-02T23:08:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "transformer",
+    "ablation",
+    "anlp",
+    "seq2seq",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32145889,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shauryakochar/anlp-a1-c2 · Hugging Face",
+      "url": "https://huggingface.co/shauryakochar/anlp-a1-c2",
+      "snippet": "ANLP Assignment 1 - C2: RoPE positional encoding Encoder-decoder Transformer built from basic PyTorch operations (no nn.Transformer, nn.MultiheadAttention or nn.LayerNorm), trained to map encrypted binary sequences to plaintext."
+    },
+    {
+      "title": "abhirajratna/2024114011-anlp-a1 · Hugging Face",
+      "url": "https://huggingface.co/abhirajratna/2024114011-anlp-a1",
+      "snippet": "ANLP Assignment 1 — Custom Transformers & BLT From-scratch encoder-decoder Transformers trained to decrypt a repeating-key XOR cipher (binary string -> English plaintext), with a controlled five-configuration ablation over positional encoding, attention, normalisation and tokenization."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

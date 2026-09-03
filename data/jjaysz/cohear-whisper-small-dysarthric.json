@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "JJaysz/cohear-whisper-small-dysarthric",
+  "slug": "jjaysz-cohear-whisper-small-dysarthric",
+  "author": "JJaysz",
+  "url": "https://huggingface.co/JJaysz/cohear-whisper-small-dysarthric",
+  "created_at": "2026-09-02T23:47:13.000Z",
+  "updated_at": "2026-09-02T23:55:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "automatic-speech-recognition",
+    "whisper",
+    "dysarthria",
+    "accessibility",
+    "atypical-speech",
+    "lora",
+    "en",
+    "dataset:TORGO",
+    "base_model:openai/whisper-small",
+    "base_model:adapter:openai/whisper-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14176064,
+  "storage_human": "14 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "qualcomm/Whisper-Small · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/Whisper-Small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=openai/whisper",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Whisper-Small - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/whisper_small",
+      "snippet": "Whisper-Small Transformer‑based automatic speech recognition (ASR) model for multilingual transcription and translation available on HuggingFace. HuggingFace Whisper‑Small ASR (Automatic Speech Recognition) model is a state‑of‑the‑art system designed for transcribing spoken language into written text."
+    },
+    {
+      "title": "Accepted Main Conference Papers - EMNLP 2026",
+      "url": "https://2026.emnlp.org/program/main_papers/",
+      "snippet": "Devin R. Wright, Jisun An, Yong-Yeol Ahn SilVar: Speech-Driven Multimodal Model for Reasoning Visual Question Answering and Object Localization Tan-Hanh Pham, Le Hoang Nam, Phu-Vinh Nguyen, Chris Ngo, Truong-Son Hy CEMTM: Contextual Embedding-based Multimodal Topic Modeling Amirhossein Abaskohi, Raymond Li, Chuyuan Li, Shafiq Joty, Giuseppe ..."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "OpenMed/OpenMed-PII-Portuguese-FastClinical-Small-82M-v1-mlx",
+  "slug": "openmed-openmed-pii-portuguese-fastclinical-small-82m-v1-mlx",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-FastClinical-Small-82M-v1-mlx",
+  "created_at": "2026-06-03T19:43:53.000Z",
+  "updated_at": "2026-09-02T22:27:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "openmed",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "openmed",
+    "roberta",
+    "mlx",
+    "apple-silicon",
+    "token-classification",
+    "pii",
+    "de-identification",
+    "medical",
+    "clinical",
+    "bert",
+    "pt",
+    "base_model:OpenMed/OpenMed-PII-Portuguese-FastClinical-Small-82M-v1",
+    "base_model:finetune:OpenMed/OpenMed-PII-Portuguese-FastClinical-Small-82M-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 652711788,
+  "storage_human": "653 MB",
+  "base_model": "OpenMed/OpenMed-PII-Portuguese-FastClinical-Small-82M-v1",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenMed/OpenMed-PII-Portuguese-FastClinical-Small-82M-v1-mlx · Hugging Face",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-FastClinical-Small-82M-v1-mlx",
+      "snippet": "At a Glance Source checkpoint: OpenMed/OpenMed-PII-Portuguese-FastClinical-Small-82M-v1 Model family: bert (RobertaForTokenClassification) Primary language hint: Portuguese (pt) Artifact layout: legacy-compatible MLX (config.json, id2label.json, MLX weight files) Weight format: safetensors Python MLX: supported through openmed [mlx] on Apple ..."
+    },
+    {
+      "title": "OpenMed/OpenMed-PII-Portuguese-FastClinical-Small-82M-v1-onnx-android ...",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-FastClinical-Small-82M-v1-onnx-android",
+      "snippet": "OpenMed / OpenMed-PII-Portuguese-FastClinical-Small-82M-v1-onnx-android like 0 Follow OpenMed 1.42k Token Classification ONNX Portuguese openmed roberta medical-nlp pii-detection android webassembly webgpu arxiv:2508.01630 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new OpenMed PII Detection 82M Model OpenMed in Python on CPU OpenMed in Web OpenMedKit for ..."
+    },
+    {
+      "title": "A Lightweight Portuguese Clinical PII Tagger That Runs Locally on Apple ...",
+      "url": "https://aichina.news/blog/a-lightweight-portuguese-clinical-pii-tagger-that-runs-locally-on-c9d0co/",
+      "snippet": "Enter OpenMed/OpenMed-PII-Portuguese-FastClinical-Small-82M-v1-mlx, a compact 82-million-parameter model built specifically to tag personally identifiable information in Portuguese clinical notes."
+    },
+    {
+      "title": "OpenMed / OpenMed-PII-Portuguese-FastClinical-Small-82M-v1-mlx",
+      "url": "https://aichina.news/models/OpenMed/OpenMed-PII-Portuguese-FastClinical-Small-82M-v1-mlx/",
+      "snippet": "Model summary OpenMed-PII-Portuguese-FastClinical-Small-82M-v1-mlx is a small 82-million-parameter token-classification model designed to detect personally identifiable information (PII) in Portuguese-language clinical text. The name FastClinical suggests it is optimised for quick inference in clinical workflows, where electronic health records must be de-identified before sharing or secondary ..."
+    },
+    {
+      "title": "GitHub - maziyarpanahi/openmed: Local-first healthcare AI: clinical NER ...",
+      "url": "https://github.com/maziyarpanahi/openmed",
+      "snippet": "Local-first healthcare AI: clinical NER & HIPAA PII de-identification that runs 100% on-device. 2,200+ medical models, 21 languages, Apple MLX + Python, no cloud, no patient data leaving your network. Apache-2.0 - maziyarpanahi/openmed"
+    }
+  ]
+}

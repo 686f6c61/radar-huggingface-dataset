@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "balajiduraisamy/Codestral-22B-v0.1",
+  "slug": "balajiduraisamy-codestral-22b-v0-1",
+  "author": "balajiduraisamy",
+  "url": "https://huggingface.co/balajiduraisamy/Codestral-22B-v0.1",
+  "created_at": "2026-09-02T20:43:08.000Z",
+  "updated_at": "2026-09-02T20:43:09.000Z",
+  "license": "mnpl",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [
+    "code"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "code",
+    "mistral-common",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22247282688,
+  "parameters_human": "22.25B",
+  "storage_bytes": 88989832879,
+  "storage_human": "89.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistralai/Codestral-22B-v0.1 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Codestral-22B-v0.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Codestral 22B v0.1 - Open Laboratory",
+      "url": "https://openlaboratory.com/models/codestral-22b-v0_1/",
+      "snippet": "A 22.2 billion parameter causal language model trained on over 80 programming languages with support for code generation and fill-in-the-middle completion."
+    },
+    {
+      "title": "mistralai/codestral-22b-v0.1 • LM Studio",
+      "url": "https://lmstudio.ai/models/mistralai/codestral-22b-v0.1",
+      "snippet": "Mistral AI&#x27;s latest coding model, Codestral can handle both instructions and code completions with ease in over 80 programming languages."
+    },
+    {
+      "title": "Codestral - Mistral AI",
+      "url": "https://mistral.ai/news/codestral/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "title": "machinez/Codestral-22B-v0.1-exl2 · Hugging Face",
+      "url": "https://huggingface.co/machinez/Codestral-22B-v0.1-exl2",
+      "snippet": "The Codestral-22B-v0.1 does not have any moderation mechanisms. We&#x27;re looking forward to engaging with the community on ways to make the model finely respect guardrails, allowing for deployment in environments requiring moderated outputs."
+    }
+  ]
+}

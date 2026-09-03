@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "FronkonGames/LocalAI",
+  "slug": "fronkongames-localai",
+  "author": "FronkonGames",
+  "url": "https://huggingface.co/FronkonGames/LocalAI",
+  "created_at": "2026-08-27T17:25:49.000Z",
+  "updated_at": "2026-09-02T23:51:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 65,
+  "trending_score": 0,
+  "parameters": 25167881,
+  "parameters_human": "25.2M",
+  "storage_bytes": 39013212352,
+  "storage_human": "39.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LocalAI · Make AI run on every machine",
+      "url": "https://localai.io/",
+      "snippet": "LocalAI is the open source AI engine. Run any model, LLMs, vision, voice, image and video, on any hardware. No GPU required."
+    },
+    {
+      "title": "GitHub - mudler/LocalAI: LocalAI is the open-source AI engine. Run any ...",
+      "url": "https://github.com/mudler/LocalAI",
+      "snippet": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required. - mudler/LocalAI"
+    },
+    {
+      "title": "Local AI Models — The Reference for Running AI Locally",
+      "url": "https://local-ai-models.ai/",
+      "snippet": "The reference for engineers running AI locally. VRAM math, hardware tradeoffs, model benchmarks, and the agent ecosystem — all in one place. Built to help you understand, not just install."
+    },
+    {
+      "title": "The Local AI Playground",
+      "url": "https://www.localai.app/",
+      "snippet": "Local AI Management, Verification, & Inferencing. Experiment with AI offline, in private. No GPU required! - A native app made to simplify the whole process. Free and open-source. ... Starting an inference session with the WizardLM 7B model in 2 clicks."
+    },
+    {
+      "title": "Quickstart - LocalAI",
+      "url": "https://localai.io/docs/basics/getting_started/",
+      "snippet": "Quickstart LocalAI is a free, open-source alternative to OpenAI (Anthropic, etc.), functioning as a drop-in replacement REST API for local inferencing. It allows you to run LLMs, generate images, and produce audio, all locally or on-premises with consumer-grade hardware, supporting multiple model families and architectures. LocalAI comes with a built-in web interface for chatting with models ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rgragulraj/act_mosaic_insert_star_merged",
+  "slug": "rgragulraj-act_mosaic_insert_star_merged",
+  "author": "rgragulraj",
+  "url": "https://huggingface.co/rgragulraj/act_mosaic_insert_star_merged",
+  "created_at": "2026-06-25T20:43:31.000Z",
+  "updated_at": "2026-09-02T21:34:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:rgragulraj/mosaic_insert_star",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 61782214,
+  "parameters_human": "61.8M",
+  "storage_bytes": 247177792,
+  "storage_human": "247 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rgragulraj/act_mosaic_insert_star · Hugging Face",
+      "url": "https://huggingface.co/rgragulraj/act_mosaic_insert_star",
+      "snippet": "rgragulraj/mosaic_insert_star ... Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware"
+    },
+    {
+      "title": "rgragulraj/act_mosaic_insert_star_merged · Hugging Face",
+      "url": "https://huggingface.co/rgragulraj/act_mosaic_insert_star_merged",
+      "snippet": "rgragulraj/mosaic_insert_star ... Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware"
+    },
+    {
+      "title": "STAR: Spectral Truncation and Rescale for Model Merging",
+      "url": "https://arxiv.org/pdf/2502.10339v1",
+      "snippet": "In this paper, we propose Spectral Truncation And Rescale (STAR) for model merging by removing noisy components via spectral decomposition and restoring the original nuclear norm through rescal-ing."
+    },
+    {
+      "title": "STAR: Spectral Truncation and Rescale for Model Merging",
+      "url": "https://arxiv.org/abs/2502.10339",
+      "snippet": "STAR requires no additional inference on original training data and is robust to hyperparamater choice. We demonstrate the effectiveness of STAR through extensive model merging cases on diverse NLP tasks. Specifically, STAR works robustly across varying model sizes, and can outperform baselines by 4.2 % when merging 12 models on Flan-T5."
+    },
+    {
+      "title": "Mosaic AI Training",
+      "url": "https://mcli.docs.mosaicml.com/",
+      "snippet": "The mission of Databricks Mosaic AI is to make training and tuning of large AI models accessible. We continually productionize state-of-the-art research on efficient model training and study the combinations of these methods in order to ensure that model training is as efficient as possible"
+    }
+  ]
+}

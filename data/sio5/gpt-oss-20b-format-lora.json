@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "sio5/gpt-oss-20b-format-lora",
+  "slug": "sio5-gpt-oss-20b-format-lora",
+  "author": "sio5",
+  "url": "https://huggingface.co/sio5/gpt-oss-20b-format-lora",
+  "created_at": "2026-09-03T00:31:27.000Z",
+  "updated_at": "2026-09-03T00:36:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gpt-oss",
+    "lora",
+    "qlora",
+    "sft",
+    "unsloth",
+    "korean",
+    "text-generation",
+    "conversational",
+    "ko",
+    "base_model:unsloth/gpt-oss-20b-unsloth-bnb-4bit",
+    "base_model:adapter:unsloth/gpt-oss-20b-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43958321,
+  "storage_human": "44 MB",
+  "base_model": "unsloth/gpt-oss-20b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gpt-oss-20b Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-oss-20b",
+      "snippet": "Medium-sized open-weight model for low latency Compare"
+    },
+    {
+      "title": "openai/gpt-oss-20b · [Fine-tuning] LoRA fine ... - Hugging Face",
+      "url": "https://huggingface.co/openai/gpt-oss-20b/discussions/43",
+      "snippet": "openai / gpt-oss-20b like 4.77k Follow OpenAI 37.6k Text Generation Transformers Safetensors gpt_oss vllm conversational Eval Results 8-bit precision mxfp4 arxiv:2508.10925 License:apache-2.0 Model card FilesFiles and versions xet Community 259 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "gpt-oss-20b-unsloth-finetune-puzzle-lora-V4 - Hugging Face",
+      "url": "https://huggingface.co/EpistemeAI/gpt-oss-20b-unsloth-finetune-puzzle-lora-V4",
+      "snippet": "2x Fine tune with puzzle dataset for resolving puzzles Model Card gpt-oss-20b Details Try gpt-oss · Guides · System card · OpenAI blog Welcome to the gpt-oss series, OpenAI&#x27;s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases. We&#x27;re releasing two flavors of the open models: gpt-oss-120b — for production, general purpose, high reasoning ..."
+    },
+    {
+      "title": "gpt-oss-120b & gpt-oss-20b Model Card - OpenAI",
+      "url": "https://openai.com/index/gpt-oss-model-card/",
+      "snippet": "We introduce gpt-oss-120b and gpt-oss-20b, two open-weight reasoning models available under the Apache 2.0 license and our gpt-oss usage policy."
+    },
+    {
+      "title": "GitHub - h-abid97/sft-gpt-oss: End-to-end LoRA fine-tuning of GPT-OSS ...",
+      "url": "https://github.com/h-abid97/sft-gpt-oss",
+      "snippet": "This repository demonstrates an end-to-end workflow for fine-tuning the GPT‑OSS 20B model using LoRA adapters and Hugging Face TRL for efficient supervised fine‑tuning (SFT). The pipeline is designed to reduce GPU memory usage with 4‑bit quantization while enabling high‑quality instruction following and multilingual reasoning."
+    }
+  ]
+}

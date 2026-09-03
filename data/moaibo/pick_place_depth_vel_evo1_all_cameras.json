@@ -5,7 +5,7 @@
   "author": "MoAIBo",
   "url": "https://huggingface.co/MoAIBo/pick_place_depth_vel_evo1_all_cameras",
   "created_at": "2026-09-02T07:13:56.000Z",
-  "updated_at": "2026-09-02T07:15:02.000Z",
+  "updated_at": "2026-09-03T01:17:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -16,7 +16,7 @@
     "safetensors",
     "robotics",
     "evo1",
-    "dataset:MoAIBo/pick_place_depth_vel",
+    "dataset:MoAIBo/merged_so101_tb4_pick_place_depth_vel",
     "license:apache-2.0",
     "region:us"
   ],
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 776139440,
   "parameters_human": "776.1M",
-  "storage_bytes": 1798346800,
-  "storage_human": "1.8 GB",
+  "storage_bytes": 3596693600,
+  "storage_human": "3.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

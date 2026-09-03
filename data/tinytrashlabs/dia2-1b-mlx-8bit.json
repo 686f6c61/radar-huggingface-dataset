@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tinytrashlabs/dia2-1b-mlx-8bit",
+  "slug": "tinytrashlabs-dia2-1b-mlx-8bit",
+  "author": "tinytrashlabs",
+  "url": "https://huggingface.co/tinytrashlabs/dia2-1b-mlx-8bit",
+  "created_at": "2026-09-03T00:13:34.000Z",
+  "updated_at": "2026-09-03T00:14:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "tts",
+    "dialogue",
+    "dia2",
+    "en",
+    "base_model:nari-labs/Dia2-1B",
+    "base_model:finetune:nari-labs/Dia2-1B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1076244736,
+  "parameters_human": "1.08B",
+  "storage_bytes": 1143699981,
+  "storage_human": "1.1 GB",
+  "base_model": "nari-labs/Dia2-1B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/Dia2-1B-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/Dia2-1B-LiteRT",
+      "snippet": "Dia2-1B (Nari Labs, Apache-2.0) — a two-speaker dialogue text-to-speech model — re-authored to run on-device with LiteRT CompiledModel. Verified on a Pixel 8a (Tensor G3). Dia2 is a Moshi-style RQ-Transformer."
+    },
+    {
+      "title": "GitHub - nari-labs/dia2: TTS model capable of streaming conversational ...",
+      "url": "https://github.com/nari-labs/dia2",
+      "snippet": "Dia2 is a streaming dialogue TTS model created by Nari Labs. The model does not need the entire text to produce the audio, and can start generating as the first few words are given as input. You can condition the output on audio, enabling natural conversations in realtime. We provide model checkpoints (1B, 2B) and inference code to accelerate research. The model only supports up to 2 minutes ..."
+    },
+    {
+      "title": "GitHub - nari-labs/dia: A TTS model capable of generating ultra ...",
+      "url": "https://github.com/nari-labs/dia",
+      "snippet": "Dia is a 1.6B parameter text to speech model created by Nari Labs. UPDATE 🤗 (06/27): Dia is now available through Hugging Face Transformers! UPDATE 🚀 (11/19): Dia2 is released on Github and HuggingFace link! Dia directly generates highly realistic dialogue from a transcript. You can condition the output on audio, enabling emotion and tone control. The model can also produce nonverbal ..."
+    },
+    {
+      "title": "tinytrashlabs (Tiny Trash Labs LLC) - Hugging Face",
+      "url": "https://huggingface.co/tinytrashlabs",
+      "snippet": "Org profile for Tiny Trash Labs LLC on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "nari-labs/dia2 | DeepWiki",
+      "url": "https://deepwiki.com/nari-labs/dia2",
+      "snippet": "The system provides two model variants (1B and 2B parameters) and supports generation of up to 2 minutes of English audio. Models are distributed via Hugging Face repositories (nari-labs/Dia2-1B and nari-labs/Dia2-2B)."
+    }
+  ]
+}

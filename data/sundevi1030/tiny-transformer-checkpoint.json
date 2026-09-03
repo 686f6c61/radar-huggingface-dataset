@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sundevi1030/tiny-transformer-checkpoint",
+  "slug": "sundevi1030-tiny-transformer-checkpoint",
+  "author": "sundevi1030",
+  "url": "https://huggingface.co/sundevi1030/tiny-transformer-checkpoint",
+  "created_at": "2026-09-02T19:24:23.000Z",
+  "updated_at": "2026-09-02T19:24:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 201 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "GitHub - skolouri/TinyTransformer: Mathematics of AI - Transformer ...",
+      "url": "https://github.com/skolouri/TinyTransformer",
+      "snippet": "Minimalist Design: Focuses on core components of a Transformer without unnecessary complexity. Encoder-Decoder Architecture: Implements both encoder and decoder stacks as in the original Transformer model. Applications: Demonstrates use cases in computer vision and NLP tasks. Educational Focus: Great starting point for students, researchers, and practitioners who want to understand ..."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "GitHub - dtaimur/Tiny-Transformer",
+      "url": "https://github.com/dtaimur/Tiny-Transformer",
+      "snippet": "A Checkpoint dropdown in the UI switches between whichever ones are available (e.g. \"shakespeare\" and \"security\") -- generation and all attention heatmaps immediately reflect the selected model."
+    },
+    {
+      "title": "svkuznetsov/tiny-transformer-retrieval · Hugging Face",
+      "url": "https://huggingface.co/svkuznetsov/tiny-transformer-retrieval",
+      "snippet": "Tiny Transformer for Retrieval Overview A small Tiny Transformer implementation for Retrieval, packaged with an explicit configuration and an initialization checkpoint. The nano variant is a reproducible starting point, not a trained model release."
+    }
+  ]
+}

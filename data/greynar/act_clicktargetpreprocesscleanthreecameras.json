@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Greynar/act_ClickTargetPreprocessCleanThreeCameras",
+  "slug": "greynar-act_clicktargetpreprocesscleanthreecameras",
+  "author": "Greynar",
+  "url": "https://huggingface.co/Greynar/act_ClickTargetPreprocessCleanThreeCameras",
+  "created_at": "2026-09-03T00:49:36.000Z",
+  "updated_at": "2026-09-03T00:49:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Greynar/ClickTargetPreprocessCleanThreeCameras",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206708304,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Greynar/act_ClickTargetPreprocessTestThreeCamera · Hugging Face",
+      "url": "https://huggingface.co/Greynar/act_ClickTargetPreprocessTestThreeCamera",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Greynar (Grégory Baltus) - Hugging Face",
+      "url": "https://huggingface.co/datasets/Greynar/",
+      "snippet": "Greynar/eval_act_PermaBotLabo-FallenPlant_LimitCase Viewer •Updated about 1 month ago•11.6k• 56"
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "Odysseus AI - Self-Hosted AI Workspace Setup Guide",
+      "url": "https://odysseusai.dev/",
+      "snippet": "Odysseus AI Setup Guide For PewDiePie&#x27;s self-hosted AI workspace Verify the official source, choose Docker, Windows, macOS, or Linux, connect Ollama or API keys, read logs, choose a model that fits your hardware, and avoid unsafe public deployment."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 125 Estimated models among 416 tracked LLMs — 416 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

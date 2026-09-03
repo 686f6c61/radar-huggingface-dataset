@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "balajiduraisamy/DeepSeek-R1",
+  "slug": "balajiduraisamy-deepseek-r1",
+  "author": "balajiduraisamy",
+  "url": "https://huggingface.co/balajiduraisamy/DeepSeek-R1",
+  "created_at": "2026-09-02T20:07:24.000Z",
+  "updated_at": "2026-09-02T20:07:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v3",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "arxiv:2501.12948",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 684489845504,
+  "parameters_human": "684.49B",
+  "storage_bytes": 688586727753,
+  "storage_human": "688.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek R1: Benchmarks, Setup & API Status",
+      "url": "https://deepseek-usa.ai/models/deepseek-r1/",
+      "snippet": "Understand DeepSeek R1, its reasoning approach, benchmarks, setup options and current API status compared with the newer V4 model lineup."
+    },
+    {
+      "title": "DeepSeek: AI Gets Deep, Cheesy, and Full of Reason! - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/deepseek-ai-gets-deep-cheesy-full-reason-balaji-lakshmanan-c0tmc?tl=en",
+      "snippet": "The world is abuzz with the new DeepSeek-R1 model hitting the market — cheaper to train, cheaper to run, they say. As a technologist, I&#x27;m all too familiar with the innovation lifecycle. But is ..."
+    },
+    {
+      "title": "Brief analysis of DeepSeek R1 and its implications for Generative AI",
+      "url": "https://arxiv.org/html/2502.02523v2",
+      "snippet": "Abstract In late January 2025, DeepSeek released their new reasoning model (DeepSeek R1); which was developed at a fraction of the cost yet remains competitive with OpenAI&#x27;s models, despite the US&#x27;s GPU export ban. This report discusses the model, and what its release means for the field of Generative AI more widely. We briefly discuss other models released from China in recent weeks ..."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-R1 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Brief analysis of DeepSeek R1 and its implications for Generative AI",
+      "url": "https://arxiv.org/abs/2502.02523",
+      "snippet": "In late January 2025, DeepSeek released their new reasoning model (DeepSeek R1); which was developed at a fraction of the cost yet remains competitive with OpenAI&#x27;s models, despite the US&#x27;s GPU export ban. This report discusses the model, and what its release means for the field of Generative AI more widely. We briefly discuss other models released from China in recent weeks, their ..."
+    }
+  ]
+}

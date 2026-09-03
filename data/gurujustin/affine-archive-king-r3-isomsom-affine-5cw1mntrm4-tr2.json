@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "gurujustin/affine-archive-king-r3-isomsom-Affine-5cw1mntrm4-tr2",
+  "slug": "gurujustin-affine-archive-king-r3-isomsom-affine-5cw1mntrm4-tr2",
+  "author": "gurujustin",
+  "url": "https://huggingface.co/gurujustin/affine-archive-king-r3-isomsom-Affine-5cw1mntrm4-tr2",
+  "created_at": "2026-09-02T21:40:28.000Z",
+  "updated_at": "2026-09-02T21:54:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234485549,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "isomsom/Affine-5d7gxm8jak-rc1 · Hugging Face",
+      "url": "https://huggingface.co/isomsom/Affine-5d7gxm8jak-rc1",
+      "snippet": "isomsom / Affine-5d7gxm8jak-rc1 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Affine Subnet Debates Reverting Recent King Models and Margin ...",
+      "url": "https://subnetradar.com/subnet-news/120/2026-08-23",
+      "snippet": "Miners and developers on Affine (SN120) are calling for the reversion of the last four king models, citing unfair advantages from low-margin crowns and spam. The team increased the margin threshold but remains divided on whether to revert recent champions. A new teacher model is also planned within 24-48 hours."
+    },
+    {
+      "title": "AFFiNE — Open-Source Knowledge Base Software",
+      "url": "https://affine.pro/",
+      "snippet": "AFFiNE is the open-source Notion & Miro alternative — combining docs, whiteboards, databases, and AI in one local-first workspace. Free for teams."
+    },
+    {
+      "title": "Home | Archive of Our Own",
+      "url": "https://archiveofourown.org/",
+      "snippet": "A non-profit, non-commercial archive for transformative fanworks; created by and for fans of books, music, art, games, shows, movies, real-person fiction (RPF), and other fandoms. more than 82,520 fandoms | 11,540,000 users | 18,350,000 works The Archive of Our Own (AO3) is a project of the Organization for Transformative Works."
+    },
+    {
+      "title": "affine-king (Prince Charming) - Hugging Face",
+      "url": "https://huggingface.co/affine-king",
+      "snippet": "User profile of Prince Charming on Hugging Face"
+    }
+  ]
+}

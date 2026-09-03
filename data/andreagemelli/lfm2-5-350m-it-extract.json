@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "andreagemelli/LFM2.5-350M-IT-Extract",
+  "slug": "andreagemelli-lfm2-5-350m-it-extract",
+  "author": "andreagemelli",
+  "url": "https://huggingface.co/andreagemelli/LFM2.5-350M-IT-Extract",
+  "created_at": "2026-09-02T23:41:33.000Z",
+  "updated_at": "2026-09-03T00:49:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "kie",
+    "conversational",
+    "it",
+    "dataset:andreagemelli/xfund-kie-it",
+    "base_model:LiquidAI/LFM2.5-350M",
+    "base_model:finetune:LiquidAI/LFM2.5-350M",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 4963117427,
+  "storage_human": "5.0 GB",
+  "base_model": "LiquidAI/LFM2.5-350M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LFM2.5-350M - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-350m",
+      "snippet": "← Back to Text Models LFM2.5-350M is Liquid AI&#x27;s smallest LFM2.5 text model, designed for edge devices with strict memory and compute constraints. Built on the LFM2.5 architecture with extended pre-training and reinforcement learning, it delivers improved chat, instruction-following, and tool-calling performance over LFM2-350M while keeping the same compact footprint."
+    },
+    {
+      "title": "LiquidAI/lfm2.5-350m - ollama.com",
+      "url": "https://ollama.com/LiquidAI/lfm2.5-350m",
+      "snippet": "LFM2.5-350M LFM2.5 is a new family of hybrid models designed for on-device deployment. It builds on the LFM2 architecture with extended pre-training and reinforcement learning. Best-in-class performance: A 350M model rivaling much larger models, bringing high-quality AI to your pocket. Fast edge inference: 313 tok/s decode on AMD CPU, 188 tok/s on Snapdragon Gen4. Runs under 1GB of memory with ..."
+    },
+    {
+      "title": "Liquid AI Releases LFM2.5-350M Compact Agentic Model",
+      "url": "https://artificialintelligencedynamics.com/2026/03/31/liquid-ai-releases-lfm2-5-350m-compact-agentic-model/",
+      "snippet": "Very proud of our tiny powerhouse. Amazing performance in data extraction and tool use at such a small scale. Enjoy! Liquid AI (@liquidai) Today, we release LFM2.5-350M. Agentic loops at 350M parameters. A 350M model trained for reliable data extraction and tool use, where models at this scale typically struggle. <500MB when quantized, built for environments where compute, memory, and latency ..."
+    },
+    {
+      "title": "LFM2.5 350M - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/lfm2-5-350m/",
+      "snippet": "LFM2.5-350M is Liquid AI&#x27;s compact 350M-parameter language model optimized for fast inference, tool use, data extraction, and structured outputs. It is designed to run across cloud GPUs, CPUs, and edge devices, and is positioned for lightweight agentic workflows and large-scale data processing rather than math, coding, or creative writing."
+    },
+    {
+      "title": "LFM2.5-350M: Agentic Model for Data Extraction and Tool Use - AI Dynamics",
+      "url": "https://artificialintelligencedynamics.com/2026/03/31/lfm2-5-350m-agentic-model-for-data-extraction-and-tool-use/",
+      "snippet": "Today, we release LFM2.5-350M. Agentic loops at 350M parameters. A 350M model trained for reliable data extraction and tool use, where models at this scale typically struggle. <500MB when quantized, built for environments where compute, memory, and latency are constrained. 🧵 → View original post on X — @thom_wolf, 2026-03-31 17:17 UTC"
+    }
+  ]
+}

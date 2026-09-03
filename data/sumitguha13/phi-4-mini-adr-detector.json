@@ -5,7 +5,7 @@
   "author": "sumitguha13",
   "url": "https://huggingface.co/sumitguha13/phi-4-mini-adr-detector",
   "created_at": "2026-09-01T20:51:51.000Z",
-  "updated_at": "2026-09-01T20:54:00.000Z",
+  "updated_at": "2026-09-02T16:57:52.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 3836021760,
   "parameters_human": "3.84B",
-  "storage_bytes": 7687590311,
-  "storage_human": "7.7 GB",
+  "storage_bytes": 15359656527,
+  "storage_human": "15.4 GB",
   "base_model": "microsoft/Phi-4-mini-instruct",
   "formats": [
     "safetensors"

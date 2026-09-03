@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "TuKoResearch/AuriStream-base",
+  "slug": "tukoresearch-auristream-base",
+  "author": "TuKoResearch",
+  "url": "https://huggingface.co/TuKoResearch/AuriStream-base",
+  "created_at": "2025-12-09T20:15:34.000Z",
+  "updated_at": "2026-09-03T01:05:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "audio",
+    "speech",
+    "language-model",
+    "auristream",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AuriStream: Representing speech through autoregressive prediction of ...",
+      "url": "https://tukoresearch.github.io/auristream-speech/",
+      "snippet": "The second stage applies an autoregressive sequence model over the cochlear tokens. AuriStream learns meaningful phoneme and word representations, and state-of-the-art lexical semantics. AuriStream shows competitive performance on diverse downstream SUPERB speech tasks."
+    },
+    {
+      "title": "AuriStream7BDeep_40Pred_BigAudioDataset_100k - Hugging Face",
+      "url": "https://huggingface.co/TuKoResearch/AuriStream7BDeep_40Pred_BigAudioDataset_100k",
+      "snippet": "AuriStream7BDeep_40Pred_BigAudioDataset_100k AuriStream is a speech language model by Greta Tuckute and Klemen Kotar. This model predicts cochlear tokens from a tokenizer such as WavCochCausalV8192."
+    },
+    {
+      "title": "TuKoResearch/AuriStreamParallel-base · Hugging Face",
+      "url": "https://huggingface.co/TuKoResearch/AuriStreamParallel-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - TuKoResearch/auristream-speech",
+      "url": "https://github.com/TuKoResearch/auristream-speech",
+      "snippet": "Contribute to TuKoResearch/auristream-speech development by creating an account on GitHub."
+    },
+    {
+      "title": "auristream-speech/index.html at main · TuKoResearch ... - GitHub",
+      "url": "https://github.com/TuKoResearch/auristream-speech/blob/main/index.html",
+      "snippet": "Contribute to TuKoResearch/auristream-speech development by creating an account on GitHub."
+    }
+  ]
+}

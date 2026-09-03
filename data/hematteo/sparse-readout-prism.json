@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hematteo/sparse-readout-prism",
+  "slug": "hematteo-sparse-readout-prism",
+  "author": "hematteo",
+  "url": "https://huggingface.co/hematteo/sparse-readout-prism",
+  "created_at": "2026-06-12T13:41:05.000Z",
+  "updated_at": "2026-09-03T01:13:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sparse-readout-prism",
+  "languages": [],
+  "tags": [
+    "sparse-readout-prism",
+    "arxiv:2609.01936",
+    "sparse-autoencoder",
+    "mechanistic-interpretability",
+    "interpretability",
+    "unembedding",
+    "logit-lens",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30784002591,
+  "storage_human": "30.8 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B, Qwen/Qwen3.5-2B, Qwen/Qwen3.5-9B, deepseek-ai/DeepSeek-R1-Distill-Llama-8B, deepseek-ai/DeepSeek-R1-Distill-Qwen-7B, google/gemma-4-E2B-it, google/gemma-4-E4B-it, mistralai/Ministral-3-8B-Base-2512",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hematteo/sparse-readout-prism · Hugging Face",
+      "url": "https://huggingface.co/hematteo/sparse-readout-prism",
+      "snippet": "Sparse Readout Prism — pretrained readout-feature dictionaries Pretrained dictionaries for Sparse Readout Prism, which factorizes a language model&#x27;s unembedding matrix (W_U) into reusable readout features, then decomposes a selected vocabulary logit (or a logit contrast) into"
+    },
+    {
+      "title": "GitHub - hematteo/sparse-readout-prism: Sparse Readout Prism: a sparse ...",
+      "url": "https://github.com/hematteo/sparse-readout-prism",
+      "snippet": "Sparse Readout Prism factorizes language-model unembedding rows into a dictionary of reusable readout features, then decomposes selected vocabulary logits and linear logit contrasts into signed feature contributions plus an explicit residual:"
+    },
+    {
+      "title": "sparse-readout-prism/README.md at main · hematteo/sparse-readout-prism ...",
+      "url": "https://github.com/hematteo/sparse-readout-prism/blob/main/README.md",
+      "snippet": "Sparse Readout Prism factorizes language-model unembedding rows into a dictionary of reusable readout features, then decomposes selected vocabulary logits and linear logit contrasts into signed feature contributions plus an explicit residual:"
+    },
+    {
+      "title": "hematteo/sparse-readout-prism at main - Hugging Face",
+      "url": "https://huggingface.co/hematteo/sparse-readout-prism/tree/main",
+      "snippet": "like 0 sparse-readout-prism sparse-autoencoder mechanistic-interpretability interpretability unembedding logit-lens License:mit Model card FilesFiles and versions xet Community Copy to bucket new main sparse-readout-prism 30.8 GB Ctrl+K Ctrl+K 1 contributor History:21 commits Matteo He Fact-check fixes: citation title+authors, operating points, checkpoint schema 958f866 verified17 days ago ..."
+    },
+    {
+      "title": "Reducto Unveils a Frontier Parsing Model That Makes the World&#x27;s Hardest ...",
+      "url": "https://www.prnewswire.com/news-releases/reducto-unveils-a-frontier-parsing-model-that-makes-the-worlds-hardest-documents-ai-ready-for-1-a-page-302866077.html",
+      "snippet": "The new r-1 model is the first in a family of document intelligence models that reduces parsing errors by up to 20% while replacing complex, multi-tool pipelines with a single model that costs up ..."
+    }
+  ]
+}

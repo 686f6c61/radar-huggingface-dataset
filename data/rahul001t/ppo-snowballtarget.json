@@ -5,7 +5,7 @@
   "author": "Rahul001t",
   "url": "https://huggingface.co/Rahul001t/ppo-SnowballTarget",
   "created_at": "2026-09-02T13:00:06.000Z",
-  "updated_at": "2026-09-02T13:00:10.000Z",
+  "updated_at": "2026-09-02T17:15:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "reinforcement-learning",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 25718642,
-  "storage_human": "26 MB",
+  "storage_bytes": 51443156,
+  "storage_human": "51 MB",
   "base_model": null,
   "formats": [
     "onnx"

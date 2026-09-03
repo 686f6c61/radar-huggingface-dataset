@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "rukiyeberna/qwen2.5-vl-3b-food-extract-lora",
+  "slug": "rukiyeberna-qwen2-5-vl-3b-food-extract-lora",
+  "author": "rukiyeberna",
+  "url": "https://huggingface.co/rukiyeberna/qwen2.5-vl-3b-food-extract-lora",
+  "created_at": "2026-09-02T20:48:30.000Z",
+  "updated_at": "2026-09-02T20:58:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2_5_vl",
+    "vision-language-model",
+    "multimodal",
+    "lora",
+    "food-extraction",
+    "structured-outputs",
+    "json-generation",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "dataset:mrdbourke/FoodExtract-1k-Vision",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 204651673,
+  "storage_human": "205 MB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - rukiyeberna/vlm-finetuning",
+      "url": "https://github.com/rukiyeberna/vlm-finetuning",
+      "snippet": "An end-to-end Vision-Language Model (VLM) fine-tuning and evaluation pipeline built on Qwen2.5-VL-3B-Instruct using LoRA (Low-Rank Adaptation) to extract structured JSON metadata (food verification, title, ingredients, and drinks) directly from raw food images."
+    },
+    {
+      "title": "Qwen/Qwen2.5-3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · AdaptLLM/food-Qwen2.5-VL-3B-Instruct at main",
+      "url": "https://huggingface.co/AdaptLLM/food-Qwen2.5-VL-3B-Instruct/blob/main/README.md",
+      "snippet": "1. To Chat with AdaMLLM Our model architecture aligns with the base model: Qwen2.5-VL-3B-Instruct. We provide a usage example below, and you may refer to the official Qwen2.5-VL-3B-Instruct for more advanced usage instructions."
+    },
+    {
+      "title": "qwen2.5vl:3b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5vl:3b",
+      "snippet": "In terms of smaller models, Qwen2.5-VL-7B-Instruct outperforms GPT-4o-mini in a number of tasks, and Qwen2.5-VL-3B, which is a solution for edge AI, even outperforms the 7B model of our previous version Qwen2-VL."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    }
+  ]
+}

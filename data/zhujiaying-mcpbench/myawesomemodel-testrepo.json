@@ -4,8 +4,8 @@
   "slug": "zhujiaying-mcpbench-myawesomemodel-testrepo",
   "author": "zhujiaying-mcpbench",
   "url": "https://huggingface.co/zhujiaying-mcpbench/MyAwesomeModel-TestRepo",
-  "created_at": "2026-08-29T02:51:44.000Z",
-  "updated_at": "2026-08-29T02:52:31.000Z",
+  "created_at": "2026-09-02T19:03:28.000Z",
+  "updated_at": "2026-09-02T19:03:38.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -13,9 +13,6 @@
   "languages": [],
   "tags": [
     "transformers",
-    "pytorch",
-    "bert",
-    "feature-extraction",
     "license:mit",
     "endpoints_compatible",
     "region:us"
@@ -31,8 +28,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-31T03:05:58.655Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

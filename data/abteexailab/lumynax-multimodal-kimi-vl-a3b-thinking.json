@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "AbteeXAILab/lumynax-multimodal-kimi-vl-a3b-thinking",
+  "slug": "abteexailab-lumynax-multimodal-kimi-vl-a3b-thinking",
+  "author": "AbteeXAILab",
+  "url": "https://huggingface.co/AbteeXAILab/lumynax-multimodal-kimi-vl-a3b-thinking",
+  "created_at": "2026-05-10T10:01:38.000Z",
+  "updated_at": "2026-09-02T23:14:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "mi"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abteex-ai-labs",
+    "aotearoa",
+    "image",
+    "kimi",
+    "local-first",
+    "lumynax",
+    "multimodal",
+    "new-zealand",
+    "sovereign-ai",
+    "text",
+    "legacy",
+    "outdated",
+    "image-text-to-text",
+    "en",
+    "mi",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 110,
+  "trending_score": 0,
+  "parameters": 15960110208,
+  "parameters_human": "15.96B",
+  "storage_bytes": 11158846304,
+  "storage_human": "11.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lumynax-multimodal-kimi-vl-a3b-thinking - Hugging Face",
+      "url": "https://huggingface.co/AbteeXAILab/lumynax-multimodal-kimi-vl-a3b-thinking",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Aimaghsoodi/lumynax-multimodal-kimi-vl-a3b-thinking - GitHub",
+      "url": "https://github.com/Aimaghsoodi/lumynax-multimodal-kimi-vl-a3b-thinking",
+      "snippet": "LumynaX Multimodal Kimi VL A3B Thinking 🇳🇿 Made in Aotearoa New Zealand by AbteeX AI Labs — part of the LumynaX sovereign-AI release family. 🤗 Weights & model card on Hugging Face · abteex.com · lumynax.com · Monorepo This GitHub repo mirrors the runtime scaffolding (quickstart, requirements, Modelfile, Space, docs)."
+    },
+    {
+      "title": "LumynaX Multimodal Kimi VL A3B Thinking - GitHub",
+      "url": "https://github.com/Aimaghsoodi/lumynax-multimodal-kimi-vl-a3b-thinking/blob/main/README.md",
+      "snippet": "LumynaX Multimodal Kimi VL A3B Thinking 🇳🇿 Made in Aotearoa New Zealand by AbteeX AI Labs — part of the LumynaX sovereign-AI release family. 🤗 Weights & model card on Hugging Face · abteex.com · lumynax.com · Monorepo This GitHub repo mirrors the runtime scaffolding (quickstart, requirements, Modelfile, Space, docs)."
+    },
+    {
+      "title": "LumynaX · Multimodal (Vision + Audio) - a AbteeXAILab Collection",
+      "url": "https://huggingface.co/collections/AbteeXAILab/lumynax-multimodal-vision-audio",
+      "snippet": "Vision-language, image-text-to-text, and audio models — Pixtral, Qwen-VL, Llama4-Scout, Aria, InternVL, Kimi-VL, Qwen-Omni."
+    },
+    {
+      "title": "Kimi-VL Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2504.07491v3",
+      "snippet": "Abstract We present Kimi-VL, an efficient open-source Mixture-of-Experts (MoE) vision-language model (VLM) that offers advanced multimodal reasoning, long-context understanding, and strong agent capabilities —all while activating only 2.8B parameters in its language decoder (Kimi-VL-A3B)."
+    }
+  ]
+}

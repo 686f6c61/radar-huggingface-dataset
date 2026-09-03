@@ -5,7 +5,7 @@
   "author": "prasadvittaldev",
   "url": "https://huggingface.co/prasadvittaldev/pocket-tts-telugu-female-syspin",
   "created_at": "2026-09-02T17:06:38.000Z",
-  "updated_at": "2026-09-02T17:22:24.000Z",
+  "updated_at": "2026-09-02T18:33:23.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": 109502146,
   "parameters_human": "109.5M",
-  "storage_bytes": 668900007,
-  "storage_human": "669 MB",
+  "storage_bytes": 782019111,
+  "storage_human": "782 MB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ssuleiman/simrig-orbit-reach",
+  "slug": "ssuleiman-simrig-orbit-reach",
+  "author": "ssuleiman",
+  "url": "https://huggingface.co/ssuleiman/simrig-orbit-reach",
+  "created_at": "2026-09-03T00:43:24.000Z",
+  "updated_at": "2026-09-03T00:59:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "mujoco",
+    "robotics",
+    "ppo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 156063,
+  "storage_human": "156063 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ssuleiman (Suleiman Sulaimanov) - Hugging Face",
+      "url": "https://huggingface.co/ssuleiman",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 9 days ago ... published a dataset 9 days ago"
+    },
+    {
+      "title": "AI Challenge for Satellite Tracking and Orbit Resilience Modeling ...",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2026SW004994",
+      "snippet": "The model does not require physical orbit propagators, making it suitable for real-time forecasting applications. These qualities support its use in operational settings where timely updates are essential, helping reduce risks such as satellite drag and orbital collisions."
+    },
+    {
+      "title": "ORBIT",
+      "url": "https://www.reachorbit.ai/",
+      "snippet": "Orbit is a Chief of Staff marketplace, powered by agentic AI and real-world signal, designed to identify and match the top 1% operators to CEOs, faster than any traditional process."
+    },
+    {
+      "title": "AI Challenge for Satellite Tracking and Orbit Resilience Modeling ...",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1029/2026SW004994",
+      "snippet": "Abstract Precise thermospheric density forecasting is critical for mitigating satellite drag in Low Earth Orbit (LEO), but traditional empirical models such as MSIS and JB2008 can fail during geomagnetic storms. To evaluate whether AI can better capture this transient behavior, the 2025 MIT ARCLab Prize for AI Innovation in Space asked participants to forecast orbit‐averaged density 3 days ..."
+    },
+    {
+      "title": "Mustafa Suleyman - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mustafa_Suleyman",
+      "snippet": "Mustafa Suleyman CBE (born in August 1984 [2]) is a British artificial intelligence (AI) entrepreneur. He is the CEO of Microsoft AI, and the co-founder and former head of applied AI at DeepMind, an AI company which was acquired by Google. [3][4] After leaving DeepMind, he co-founded Inflection AI, a machine learning and generative AI company, in 2022. [5][6]"
+    }
+  ]
+}

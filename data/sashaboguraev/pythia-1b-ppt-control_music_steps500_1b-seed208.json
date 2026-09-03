@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sashaboguraev/pythia-1b-ppt-control_music_steps500_1b-seed208",
+  "slug": "sashaboguraev-pythia-1b-ppt-control_music_steps500_1b-seed208",
+  "author": "sashaboguraev",
+  "url": "https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_music_steps500_1b-seed208",
+  "created_at": "2026-06-05T01:23:26.000Z",
+  "updated_at": "2026-09-02T20:24:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 1011671040,
+  "parameters_human": "1.01B",
+  "storage_bytes": 3639055384,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sashaboguraev/pythia-1b-ppt-control_music_steps500_1b-seed324-preserve ...",
+      "url": "https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_music_steps500_1b-seed324-preserve_emb/discussions",
+      "snippet": "Instructions to use sashaboguraev/pythia-1b-ppt-control_music_steps500_1b-seed324-preserve_emb with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "pythia-1b-ppt-control_nca_steps500_1b-seed208-preserve_emb",
+      "url": "https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_nca_steps500_1b-seed208-preserve_emb",
+      "snippet": "Instructions to use sashaboguraev/pythia-1b-ppt-control_nca_steps500_1b-seed208-preserve_emb with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Pythia 1b Ppt Control Music Steps500 1b Seed324 - AI Model Insights ...",
+      "url": "https://free2aitools.com/model/sashaboguraev/pythia-1b-ppt-control_music_steps500_1b-seed324",
+      "snippet": "Deep dive into Pythia 1b Ppt Control Music Steps500 1b Seed324."
+    },
+    {
+      "title": "pythia-1b-ppt-control_music_steps500_1b-seed208 - friendli.ai",
+      "url": "https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-control_music_steps500_1b-seed208",
+      "snippet": "Run sashaboguraev/pythia-1b-ppt-control_music_steps500_1b-seed208 with FriendliAI inference. This is the model card of a 🤗 transformers model that has been…"
+    },
+    {
+      "title": "sashaboguraev / pythia-1b-ppt-shuffle_dyck_steps500_1b-seed208",
+      "url": "https://insights-db.paloaltonetworks.com/models/sashaboguraev/pythia-1b-ppt-shuffle_dyck_steps500_1b-seed208/d04b575148d411154e7c893d9ec3fe9f74b87e16/overview",
+      "snippet": "Discover potential threats in the sashaboguraev / pythia-1b-ppt-shuffle_dyck_steps500_1b-seed208 model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    }
+  ]
+}

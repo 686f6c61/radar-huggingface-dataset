@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "OpenMed/OpenMed-PII-Italian-SuperClinical-Small-44M-v1-mlx",
+  "slug": "openmed-openmed-pii-italian-superclinical-small-44m-v1-mlx",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/OpenMed-PII-Italian-SuperClinical-Small-44M-v1-mlx",
+  "created_at": "2026-04-08T19:43:49.000Z",
+  "updated_at": "2026-09-02T22:27:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "openmed",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "openmed",
+    "deberta-v2",
+    "mlx",
+    "apple-silicon",
+    "token-classification",
+    "pii",
+    "de-identification",
+    "medical",
+    "clinical",
+    "it",
+    "base_model:OpenMed/OpenMed-PII-Italian-SuperClinical-Small-44M-v1",
+    "base_model:finetune:OpenMed/OpenMed-PII-Italian-SuperClinical-Small-44M-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 565462911,
+  "storage_human": "565 MB",
+  "base_model": "OpenMed/OpenMed-PII-Italian-SuperClinical-Small-44M-v1",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenMed-PII-Italian-SuperClinical-Small-44M-v1-mlx - Hugging Face",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Italian-SuperClinical-Small-44M-v1-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenMed/OpenMed-PII-Italian-SuperClinical-Small-44M-v1-onnx-android ...",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Italian-SuperClinical-Small-44M-v1-onnx-android",
+      "snippet": "ONNX Italian openmed deberta-v2 medical-nlp pii-detection android webassembly webgpu arxiv:2508.01630 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new OpenMed PII Detection 44M Model OpenMed in Python on CPU OpenMed in Web OpenMedKit for Android Included Artifacts The OpenMed Ecosystem Intended Use and ..."
+    },
+    {
+      "title": "GitHub - maziyarpanahi/openmed: Local-first healthcare AI: clinical NER ...",
+      "url": "https://github.com/maziyarpanahi/openmed",
+      "snippet": "Local-first healthcare AI: clinical NER & HIPAA PII de-identification that runs 100% on-device. 2,200+ medical models, 21 languages, Apple MLX + Python, no cloud, no patient data leaving your network. Apache-2.0 - maziyarpanahi/openmed"
+    },
+    {
+      "title": "OpenMed — local-first clinical AI",
+      "url": "https://openmed.life/",
+      "snippet": "OpenMed 2.2.0 · on-device clinical AI Your data. Your model. Your iPhone. OpenMed reads clinical text and removes 55+ PHI types on the hardware you control, so patient data never leaves the device. 2,000+ Apache-2.0 models, 33 model-backed PII languages, state of the art on 10 of 12 biomedical NER benchmarks — and a new release most weeks."
+    },
+    {
+      "title": "OpenMed PII Italian SuperClinical Large 434M V1",
+      "url": "https://www.modelvault.space/models/openmed-openmed-pii-italian-superclinical-large-434m-v1",
+      "snippet": "Think of OpenMed PII Italian SuperClinical Large 434M V1 as a versatile AI assistant for writing, research, and brainstorming. It helps you draft emails, write essays, summarize long articles, and generate creative ideas on any topic."
+    }
+  ]
+}

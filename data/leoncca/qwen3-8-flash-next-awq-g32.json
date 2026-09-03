@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "leoncca/Qwen3.8-Flash-Next-AWQ-g32",
+  "slug": "leoncca-qwen3-8-flash-next-awq-g32",
+  "author": "leoncca",
+  "url": "https://huggingface.co/leoncca/Qwen3.8-Flash-Next-AWQ-g32",
+  "created_at": "2026-09-02T21:21:09.000Z",
+  "updated_at": "2026-09-03T01:40:52.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "qwen3.8",
+    "qwen4-exp",
+    "awq",
+    "w4a16",
+    "fp8",
+    "e4m3",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 180949088918,
+  "parameters_human": "180.95B",
+  "storage_bytes": 138169683559,
+  "storage_human": "138.2 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen38-flash-next",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Qwen4 architecture preview with a 125B-parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token."
+    },
+    {
+      "title": "Qwen3.8-Flash - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-flash",
+      "snippet": "Qwen3.8-Flash is the latest multimodal model from the Qwen family, combining powerful reasoning and generation with remarkable speed. It natively supports a million-token context window, allowing it to process lengthy documents, entire codebases, and complex conversations in a single pass."
+    }
+  ]
+}

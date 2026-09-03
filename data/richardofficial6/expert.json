@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "richardofficial6/Expert",
+  "slug": "richardofficial6-expert",
+  "author": "richardofficial6",
+  "url": "https://huggingface.co/richardofficial6/Expert",
+  "created_at": "2026-09-03T00:26:19.000Z",
+  "updated_at": "2026-09-03T00:26:19.000Z",
+  "license": "bigscience-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bigscience-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Expert.ai - AI to Understand Data and Decide Better",
+      "url": "https://www.expert.ai/",
+      "snippet": "Boost performance and reduce risks with Expert.ai&#x27;s reliable enterprise AI. Turn your data into real business impact. Discover how it works!"
+    },
+    {
+      "title": "AI API Model Tester — Check Which Model Your API Actually Runs ...",
+      "url": "https://apimaster.ai/ai-api-model-tester",
+      "snippet": "Free AI API model tester. Paste any OpenAI, Claude or Gemini endpoint and see which model it really runs — fingerprint detection exposes substituted or fake models in seconds. No key stored."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

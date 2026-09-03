@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ranaroy/my-bert-imdb2",
+  "slug": "ranaroy-my-bert-imdb2",
+  "author": "ranaroy",
+  "url": "https://huggingface.co/ranaroy/my-bert-imdb2",
+  "created_at": "2026-09-03T00:11:40.000Z",
+  "updated_at": "2026-09-03T00:11:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ranjanr6/my-bert-imdb2 · Hugging Face",
+      "url": "https://huggingface.co/ranjanr6/my-bert-imdb2",
+      "snippet": "/ my-bert-imdb2 like 0 Transformers arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Use this model Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and Limitations Recommendations How to Get Started with the Model ..."
+    },
+    {
+      "title": "aahfhtfgyj2004/my-bert-imdb2 · Hugging Face",
+      "url": "https://huggingface.co/aahfhtfgyj2004/my-bert-imdb2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Video & Image Models - Ronana AI",
+      "url": "https://ronana.ai/models",
+      "snippet": "Every AI video and image model on Ronana (Seedance, Kling, Veo, Sora, and more) in one browser studio. Compare models, then generate and upscale from any region."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Detector - Trusted AI Checker for ChatGPT, Copilot & Gemini - Scribbr",
+      "url": "https://www.scribbr.com/ai-detector/",
+      "snippet": "Scribbr AI Detector: Identify AI-generated content from ChatGPT, Copilot, and Gemini with our advanced AI Checker. Try it for free!"
+    }
+  ]
+}

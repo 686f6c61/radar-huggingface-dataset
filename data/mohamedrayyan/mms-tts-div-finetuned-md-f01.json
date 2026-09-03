@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mohamedrayyan/mms-tts-div-finetuned-md-f01",
+  "slug": "mohamedrayyan-mms-tts-div-finetuned-md-f01",
+  "author": "mohamedrayyan",
+  "url": "https://huggingface.co/mohamedrayyan/mms-tts-div-finetuned-md-f01",
+  "created_at": "2026-09-02T21:11:58.000Z",
+  "updated_at": "2026-09-02T21:12:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "dv"
+  ],
+  "tags": [
+    "safetensors",
+    "vits",
+    "dhivehi",
+    "tts",
+    "mms",
+    "text-to-speech",
+    "dv",
+    "base_model:facebook/mms-tts-div",
+    "base_model:finetune:facebook/mms-tts-div",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36287472,
+  "parameters_human": "36.3M",
+  "storage_bytes": 145242232,
+  "storage_human": "145 MB",
+  "base_model": "facebook/mms-tts-div",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mashey/mms-tts-div-finetuned-md-f01 · Hugging Face",
+      "url": "https://huggingface.co/mashey/mms-tts-div-finetuned-md-f01",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Serialtechlab/mms-tts-div-finetuned-md-f01 · Hugging Face",
+      "url": "https://huggingface.co/Serialtechlab/mms-tts-div-finetuned-md-f01",
+      "snippet": "Use this model Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and Limitations Recommendations How to Get Started with the Model Training Details Training Data Training Procedure Evaluation Testing Data, Factors & Metrics Results Model ..."
+    },
+    {
+      "title": "fairseq/examples/mms/README.md at main - GitHub",
+      "url": "https://github.com/facebookresearch/fairseq/blob/main/examples/mms/README.md",
+      "snippet": "The Massively Multilingual Speech (MMS) project expands speech technology from about 100 languages to over 1,000 by building a single multilingual speech recognition model supporting over 1,100 languages (more than 10 times as many as before), language identification models able to identify over 4,000 languages (40 times more than before), pretrained models supporting over 1,400 languages, and ..."
+    },
+    {
+      "title": "fairseq/examples/mms at main · facebookresearch/fairseq",
+      "url": "https://github.com/facebookresearch/fairseq/tree/main/examples/mms",
+      "snippet": "The Massively Multilingual Speech (MMS) project expands speech technology from about 100 languages to over 1,000 by building a single multilingual speech recognition model supporting over 1,100 languages (more than 10 times as many as before), language identification models able to identify over 4,000 languages (40 times more than before), pretrained models supporting over 1,400 languages, and ..."
+    },
+    {
+      "title": "mms-tts: Text-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/mms-tts-facebook",
+      "snippet": "Overview mms-tts is a massively multilingual text-to-speech model developed by facebook that synthesizes speech in over 1,000 languages from text input. This model is part of Facebook&#x27;s Massively Multilingual Speech project, which aims to provide speech technology across a diverse range of languages documented in ISO 639-3 codes. The model uses a generator-based architecture for TTS inference ..."
+    }
+  ]
+}

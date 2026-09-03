@@ -5,7 +5,7 @@
   "author": "OccultAI",
   "url": "https://huggingface.co/OccultAI/MN-Nazgul-12B-v1",
   "created_at": "2026-09-02T00:20:59.000Z",
-  "updated_at": "2026-09-02T00:29:29.000Z",
+  "updated_at": "2026-09-02T03:42:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -75,21 +75,21 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 18461642,
-  "storage_human": "18 MB",
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 24514068746,
+  "storage_human": "24.5 GB",
   "base_model": "DarkArtsForge/MN-Raven-12B-v1, IggyLux/MN-VelvetCafe-RP-12B-V2, OccultAI/MN-Morpheus-12B-v1, Retreatcost/Mistral-Nemo-Base-2407-ChatML, shrugging-shoulders/Amberlight-Lux-12B, WokeAI/Tankie-DPE-12B-SFT-v2",
   "formats": [
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-02T02:23:52.882Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

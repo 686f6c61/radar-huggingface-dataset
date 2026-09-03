@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/vam-cross-level5-panda-robotiq-widowx-texture-video-lora-iter200",
+  "slug": "dreamdifferent-vam-cross-level5-panda-robotiq-widowx-texture-video-lora-iter200",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robotiq-widowx-texture-video-lora-iter200",
+  "created_at": "2026-09-02T20:23:43.000Z",
+  "updated_at": "2026-09-02T20:24:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "video-generation",
+    "lora",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 741588124,
+  "storage_human": "742 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-video ...",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-video-lora-iter-200",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dreamdifferent/vam-cross-level5-so101-widowx-texture-teleopaligned ...",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level5-so101-widowx-texture-teleopaligned-videolora200-action-decoder-iter1800",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Google Flow - AI Creative Studio for Video, Images & Custom Tools",
+      "url": "https://labs.google/fx/tools/flow",
+      "snippet": "Try Google Flow, the ultimate AI for creatives. Transform ideas into reality using Google&#x27;s advanced generative models for cinematic video, images, & tools."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.red/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

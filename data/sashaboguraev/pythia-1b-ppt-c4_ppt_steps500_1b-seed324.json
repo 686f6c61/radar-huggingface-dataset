@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sashaboguraev/pythia-1b-ppt-c4_ppt_steps500_1b-seed324",
+  "slug": "sashaboguraev-pythia-1b-ppt-c4_ppt_steps500_1b-seed324",
+  "author": "sashaboguraev",
+  "url": "https://huggingface.co/sashaboguraev/pythia-1b-ppt-c4_ppt_steps500_1b-seed324",
+  "created_at": "2026-06-09T20:27:38.000Z",
+  "updated_at": "2026-09-02T20:26:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 1011671040,
+  "parameters_human": "1.01B",
+  "storage_bytes": 4046951584,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pythia-1b-ppt-c4_ppt_steps500_1b-seed1024 - Hugging Face",
+      "url": "https://huggingface.co/sashaboguraev/pythia-1b-ppt-c4_ppt_steps500_1b-seed1024",
+      "snippet": "Instructions to use sashaboguraev/pythia-1b-ppt-c4_ppt_steps500_1b-seed1024 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "pythia-1b-ppt-c4_ppt_steps500_1b-seed208 - Hugging Face",
+      "url": "https://huggingface.co/sashaboguraev/pythia-1b-ppt-c4_ppt_steps500_1b-seed208",
+      "snippet": "Instructions to use sashaboguraev/pythia-1b-ppt-c4_ppt_steps500_1b-seed208 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "sashaboguraev/pythia-1b-ppt-c4_ppt_steps500_1b-seed324 API & Inference ...",
+      "url": "https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-c4_ppt_steps500_1b-seed324",
+      "snippet": "Run sashaboguraev/pythia-1b-ppt-c4_ppt_steps500_1b-seed324 with FriendliAI inference. This is the model card of a 🤗 transformers model that has been pushed…"
+    },
+    {
+      "title": "pythia-1b-ppt-c4_ppt_steps100_1b-seed324 - friendli.ai",
+      "url": "https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-c4_ppt_steps100_1b-seed324",
+      "snippet": "Deploy pythia-1b-ppt-c4_ppt_steps100_1b-seed324 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "sashaboguraev/pythia-1b-ppt-c4_ppt_steps100_1b-seed208: Model synced ...",
+      "url": "https://dev.modelhub.org.cn/sashaboguraev/pythia-1b-ppt-c4_ppt_steps100_1b-seed208",
+      "snippet": "Model Description This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated."
+    }
+  ]
+}

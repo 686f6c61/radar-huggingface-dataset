@@ -5,7 +5,7 @@
   "author": "Vishva007",
   "url": "https://huggingface.co/Vishva007/Qwen3.8-2B-Distill-W4A16-AutoRound-LLM-Compressor",
   "created_at": "2026-08-31T07:59:21.000Z",
-  "updated_at": "2026-08-31T15:28:49.000Z",
+  "updated_at": "2026-09-02T05:45:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "zuhri025/byte-llm-pretrain-v1",
+  "slug": "zuhri025-byte-llm-pretrain-v1",
+  "author": "zuhri025",
+  "url": "https://huggingface.co/zuhri025/byte-llm-pretrain-v1",
+  "created_at": "2026-09-02T19:51:34.000Z",
+  "updated_at": "2026-09-03T02:12:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "qwen3",
+    "byte-level",
+    "from-scratch",
+    "urdu",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31606784,
+  "parameters_human": "31.6M",
+  "storage_bytes": 4340628124,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zuhri025 (HumairM) - Hugging Face",
+      "url": "https://huggingface.co/zuhri025/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 11 days ago ... published a model 12 days ago"
+    },
+    {
+      "title": "GitHub - ksm26/Pretraining-LLMs: Master the essential steps of ...",
+      "url": "https://github.com/ksm26/Pretraining-LLMs",
+      "snippet": "🧩 Pretraining Process: Gain in-depth knowledge of the steps to pretrain an LLM, from data preparation to model configuration and performance assessment. 🏗️ Model Architecture Configuration: Explore various options for configuring your model&#x27;s architecture, including modifying Meta&#x27;s Llama models and innovative pretraining techniques like Depth Upscaling, which can reduce training ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models. FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree"
+    },
+    {
+      "title": "LLMDataHub: Awesome Datasets for LLM Training - GitHub",
+      "url": "https://github.com/Zjh-819/LLMDataHub",
+      "snippet": "A quick guide (especially) for trending instruction finetuning datasets - Zjh-819/LLMDataHub"
+    },
+    {
+      "title": "Pretraining LLMs - DeepLearning.AI",
+      "url": "https://www.deeplearning.ai/courses/pretraining-llms",
+      "snippet": "Pretraining involves teaching an LLM to predict the next token using vast text datasets, resulting in a base model, and this base model requires further fine-tuning for optimal performance and safety. In this course, you&#x27;ll learn to pretrain a model from scratch and also to take a model that&#x27;s already been pretrained and continue the pretraining process on your own data."
+    }
+  ]
+}

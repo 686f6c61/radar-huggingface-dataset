@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "209James/agibot_deploy_openpi",
+  "slug": "209james-agibot_deploy_openpi",
+  "author": "209James",
+  "url": "https://huggingface.co/209James/agibot_deploy_openpi",
+  "created_at": "2026-09-02T23:45:50.000Z",
+  "updated_at": "2026-09-02T23:45:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7233650408,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenPI - Open Source Vision-Language-Action Model Library",
+      "url": "https://www.openpi.net/english.html",
+      "snippet": "OpenPI Open Source Vision-Language-Action Model Library for Robotics Developed by the Physical Intelligence team, OpenPI hosts open-source VLA models pre-trained on 10k+ hours of robot data, enabling researchers and practitioners to fine-tune and deploy robotic manipulation capabilities across diverse platforms."
+    },
+    {
+      "title": "Humanoid Hub",
+      "url": "https://humanoidpaper.co/",
+      "snippet": "Humanoid Hub: real-time arXiv search for embodied AI & humanoid robotics papers, AI reading assistant, mind maps, PDF reader with highlights, research trends, daily briefs, 43+ datasets, VLA/world models and 350+ open-source robot projects from Unitree, AgiBot, NVIDIA, EngineAI and more."
+    },
+    {
+      "title": "AI Model Release Tracker - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/tools/model-release-tracker",
+      "snippet": "Track the latest AI model releases from OpenAI, Anthropic, Google, Meta, DeepSeek and more. New model launches, version updates, and feature additions."
+    },
+    {
+      "title": "π₀ (Pi0) · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/pi0",
+      "snippet": "π₀ (Pi0) π₀ is a Vision-Language-Action model for general robot control, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository. Model Overview π₀ represents a breakthrough in robotics as the first general-purpose robot foundation model developed by Physical Intelligence."
+    },
+    {
+      "title": "Mak-P90 / ai-jailbreak-archive - GitHub",
+      "url": "https://github.com/Mak-P90/ai-jailbreak-archive",
+      "snippet": "Mak-P90 / ai-jailbreak-archive A curated archive of jailbreak prompts, prompt injections, and related techniques discovered across major AI models, including OpenAI, Gemini, Claude, Grok, and others. This repository documents prompt behavior and model responses for research, experimentation, and red-teaming purposes."
+    }
+  ]
+}

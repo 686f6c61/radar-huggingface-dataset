@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "kewalk123/openpi-v4-memory-artifacts",
+  "slug": "kewalk123-openpi-v4-memory-artifacts",
+  "author": "kewalk123",
+  "url": "https://huggingface.co/kewalk123/openpi-v4-memory-artifacts",
+  "created_at": "2026-09-02T23:09:52.000Z",
+  "updated_at": "2026-09-02T23:41:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi05",
+    "memory",
+    "openpi",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16123093508,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer."
+    },
+    {
+      "title": "GitHub - LightwheelAI/openpi",
+      "url": "https://github.com/LightwheelAI/openpi",
+      "snippet": "openpi openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer."
+    },
+    {
+      "title": "OpenPI - Open Source Vision-Language-Action Model Library",
+      "url": "https://www.openpi.net/english.html",
+      "snippet": "OpenPI Open Source Vision-Language-Action Model Library for Robotics Developed by the Physical Intelligence team, OpenPI hosts open-source VLA models pre-trained on 10k+ hours of robot data, enabling researchers and practitioners to fine-tune and deploy robotic manipulation capabilities across diverse platforms."
+    },
+    {
+      "title": "Getting Started | Physical-Intelligence/openpi | DeepWiki",
+      "url": "https://deepwiki.com/Physical-Intelligence/openpi/2-getting-started",
+      "snippet": "Getting Started Relevant source files This document provides an overview of the initial setup process for OpenPI. It covers hardware prerequisites, installation options, and the basic workflow for getting the system running. For detailed installation instructions, see Installation & Dependencies. For running your first inference example, see Quick Start Guide. Prerequisites Hardware ..."
+    },
+    {
+      "title": "Physical-Intelligence/openpi | DeepWiki",
+      "url": "https://deepwiki.com/Physical-Intelligence/openpi",
+      "snippet": "OpenPI is an open-source training and deployment system for Vision-Language-Action (VLA) models in robotics, developed by Physical Intelligence. The repository implements three model architectures (π₀, π₀-FAST, π₀.₅) with dual-framework support (JAX/Flax and PyTorch), unified data loading for multiple dataset formats (LeRobot and ..."
+    }
+  ]
+}

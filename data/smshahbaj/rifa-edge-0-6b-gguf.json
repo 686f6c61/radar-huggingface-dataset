@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "smshahbaj/RIFA-Edge-0.6B-GGUF",
+  "slug": "smshahbaj-rifa-edge-0-6b-gguf",
+  "author": "smshahbaj",
+  "url": "https://huggingface.co/smshahbaj/RIFA-Edge-0.6B-GGUF",
+  "created_at": "2026-09-02T22:51:51.000Z",
+  "updated_at": "2026-09-02T22:58:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 3520982080,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/RIFA-Edge-0.6B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/RIFA-Edge-0.6B-GGUF",
+      "snippet": "mradermacher / RIFA-Edge-.6B-GGUF like 0 Text Generation Transformers GGUF English Bengali rifa rifa-edge code coding secure-coding conversational fine-tuned instruction-tuned bengali bangla License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "RIFA Edge 0.6B by smshahbaj — VRAM 1.2GB, 40K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/smshahbaj%2FRIFA-Edge-0.6B,71Ssa3RjOR8D40ANZjv1bL",
+      "snippet": "RIFA Edge 0.6B is an open-source 0.6b LLM by smshahbaj. VRAM 1.2GB, 40K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=smshahbaj%2FRIFA-Edge-0.6B",
+      "snippet": "Reset Parameters 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 + 44 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 + 10 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 9 + 11 + 10 ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Models - GPT4All",
+      "url": "https://docs.gpt4all.io/gpt4all_desktop/models.html",
+      "snippet": "Explore Models GPT4All connects you with LLMs from HuggingFace with a llama.cpp backend so that they will run efficiently on your hardware. Many of these models can be identified by the file type .gguf. Explore models Example Models Many LLMs are available at various sizes, quantizations, and licenses. LLMs with more parameters tend to be better at coherently responding to instructions LLMs ..."
+    }
+  ]
+}

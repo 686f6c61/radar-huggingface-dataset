@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "omaralshareef/beans-image-classifier",
+  "slug": "omaralshareef-beans-image-classifier",
+  "author": "omaralshareef",
+  "url": "https://huggingface.co/omaralshareef/beans-image-classifier",
+  "created_at": "2026-09-02T20:15:53.000Z",
+  "updated_at": "2026-09-02T20:17:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "timm_wrapper",
+    "image-classification",
+    "vision",
+    "timm",
+    "generated_from_trainer",
+    "dataset:AI-Lab-Makerere/beans",
+    "base_model:timm/mobilenetv3_small_100.lamb_in1k",
+    "base_model:finetune:timm/mobilenetv3_small_100.lamb_in1k",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1533043,
+  "parameters_human": "1.5M",
+  "storage_bytes": 6154236,
+  "storage_human": "6 MB",
+  "base_model": "timm/mobilenetv3_small_100.lamb_in1k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "AI-Lab-Makerere/beans",
+      "metric": "Validation Accuracy",
+      "value": 0.9549
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "AI-Lab-Makerere/beans",
+      "metric": "Test Accuracy",
+      "value": 0.8984
+    }
+  ],
+  "sources": [
+    {
+      "title": "AventIQ-AI/Beans-Image-Classification-AI-Model · Hugging Face",
+      "url": "https://huggingface.co/AventIQ-AI/Beans-Image-Classification-AI-Model",
+      "snippet": "🧠 Beans-Image-Classification-AI-Model A fine-tuned image classification model trained on the Beans dataset with 3 classes: angular_leaf_spot, bean_rust, and healthy. This model is built using Hugging Face Transformers and the ViT (Vision Transformer) architecture and is suitable for educational use, plant disease classification tasks, and image classification experiments."
+    },
+    {
+      "title": "Beans-Image-Classification-AI-Model huggingface.co api & AventIQ-AI ...",
+      "url": "https://www.toolify.ai/ai-model/aventiq-ai-beans-image-classification-ai-model",
+      "snippet": "🧠 Beans-Image-Classification-AI-Model A fine-tuned image classification model trained on the Beans dataset with 3 classes: angular_leaf_spot, bean_rust, and healthy. This model is built using Hugging Face Transformers and the ViT (Vision Transformer) architecture and is suitable for educational use, plant disease classification tasks, and image classification experiments."
+    },
+    {
+      "title": "Image Classification Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=image-classification",
+      "snippet": "Active filters: image-classification. Clear all. animetimm/convnextv2_huge.dbv4-full. Image Classification • 0.7B • Updated Oct 22, 2025 • 1.9k • 35"
+    },
+    {
+      "title": "image_classification.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/huggingface/notebooks/blob/main/transformers_doc/en/pytorch/image_classification.ipynb",
+      "snippet": "Image classification assigns a label or class to an image. Unlike text or audio classification, the inputs are the pixel values that comprise an image. There are many applications for image classification, such as detecting damage after a natural disaster, monitoring crop health, or helping screen medical images for signs of disease. This guide illustrates how to: Fine-tune ViT on the Food-101 ..."
+    },
+    {
+      "title": "AGNES AI - Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    }
+  ]
+}

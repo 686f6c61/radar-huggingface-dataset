@@ -5,7 +5,7 @@
   "author": "nvidia",
   "url": "https://huggingface.co/nvidia/DeepSeek-V4-Pro-0813-NVFP4",
   "created_at": "2026-08-27T10:39:25.000Z",
-  "updated_at": "2026-09-01T07:43:18.000Z",
+  "updated_at": "2026-09-02T12:23:53.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "AbteeXAILab/lumynax-speech-kokoro-82m-tts",
+  "slug": "abteexailab-lumynax-speech-kokoro-82m-tts",
+  "author": "AbteeXAILab",
+  "url": "https://huggingface.co/AbteeXAILab/lumynax-speech-kokoro-82m-tts",
+  "created_at": "2026-05-17T01:21:03.000Z",
+  "updated_at": "2026-09-02T23:14:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "mi"
+  ],
+  "tags": [
+    "transformers",
+    "abteex-ai-labs",
+    "aotearoa",
+    "audio",
+    "kokoro",
+    "local-first",
+    "lumynax",
+    "new-zealand",
+    "sovereign-ai",
+    "speech",
+    "tts",
+    "legacy",
+    "outdated",
+    "text-generation",
+    "en",
+    "mi",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 62,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 355476935,
+  "storage_human": "355 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AbteeXAILab/lumynax-speech-kokoro-82m-tts · Hugging Face",
+      "url": "https://huggingface.co/AbteeXAILab/lumynax-speech-kokoro-82m-tts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Aimaghsoodi/lumynax-speech-kokoro-82m-tts - GitHub",
+      "url": "https://github.com/Aimaghsoodi/lumynax-speech-kokoro-82m-tts",
+      "snippet": "LumynaX Speech Kokoro 82M TTS 🇳🇿 Made in Aotearoa New Zealand by AbteeX AI Labs — part of the LumynaX sovereign-AI release family."
+    },
+    {
+      "title": "AbteeXAILab/lumynax-speech-kokoro-82m-tts at main",
+      "url": "https://huggingface.co/AbteeXAILab/lumynax-speech-kokoro-82m-tts/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lumynax-speech-kokoro-82m-tts/README.md at main - GitHub",
+      "url": "https://github.com/Aimaghsoodi/lumynax-speech-kokoro-82m-tts/blob/main/README.md",
+      "snippet": "LumynaX Speech Kokoro 82M TTS 🇳🇿 Made in Aotearoa New Zealand by AbteeX AI Labs — part of the LumynaX sovereign-AI release family. 🤗 Weights & model card on Hugging Face · abteex.com · lumynax.com · Monorepo This GitHub repo mirrors the runtime scaffolding (quickstart, requirements, Modelfile, Space, docs)."
+    },
+    {
+      "title": "Kokoro TTS: Free Text to Speech Online",
+      "url": "https://kokoroai.org/",
+      "snippet": "Free AI text-to-speech converter with natural voices in 6 languages. Instant generation, customizable settings, 82M parameter engine. Perfect for creators & developers."
+    }
+  ]
+}

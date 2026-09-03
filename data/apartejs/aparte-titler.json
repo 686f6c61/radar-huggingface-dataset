@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "apartejs/aparte-titler",
+  "slug": "apartejs-aparte-titler",
+  "author": "apartejs",
+  "url": "https://huggingface.co/apartejs/aparte-titler",
+  "created_at": "2026-09-02T20:23:23.000Z",
+  "updated_at": "2026-09-02T21:33:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "de",
+    "pt",
+    "it",
+    "nl",
+    "pl",
+    "sv",
+    "da",
+    "fi",
+    "cs",
+    "ro",
+    "no",
+    "hu",
+    "hr",
+    "lt"
+  ],
+  "tags": [
+    "onnx",
+    "conversation-title",
+    "extractive",
+    "tiny",
+    "browser",
+    "offline",
+    "aparte",
+    "token-classification",
+    "en",
+    "fr",
+    "es",
+    "de",
+    "pt",
+    "it",
+    "nl",
+    "pl",
+    "sv",
+    "da",
+    "fi",
+    "cs",
+    "ro",
+    "no",
+    "hu",
+    "hr",
+    "lt",
+    "dataset:apartejs/aparte-titler-data",
+    "dataset:apartejs/aparte-titler-gold",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18354162,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aparté — AI Chat Web Components, Framework-Agnostic",
+      "url": "https://apartejs.dev/",
+      "snippet": "Open-source, framework-agnostic AI chat Web Components for React, Vue, Svelte and Angular — a chat UI library with the agent loop built in: human-in-the-loop tool approval, edit-and-branch replies, 6 kinds of content in one turn. Zero third-party dependencies. How it compares: apartejs.dev/compare."
+    },
+    {
+      "title": "aparte/README.md at main · apartejs/aparte · GitHub",
+      "url": "https://github.com/apartejs/aparte/blob/main/README.md",
+      "snippet": "Bring your own model, your way. A transport seam decides where the request goes: DirectTransport (browser-direct — BYOK or a local model) or BackendTransport (your /api/chat, key stays server-side). Providers cover the OpenAI-compatible family, the Vercel AI SDK (25+ vendors), and in-browser Transformers.js. Streaming, typed segments, tools."
+    },
+    {
+      "title": "Model selector | aparté",
+      "url": "https://apartejs.dev/plugins/model-selector/",
+      "snippet": "A provider + model picker web component for aparté — a grouped dropdown for the BYOK pattern, emitting aparte-model-change."
+    },
+    {
+      "title": "GitHub - apartejs/aparte: Framework-agnostic AI chat built with Web ...",
+      "url": "https://download.plaud.ai/apartejs/aparte",
+      "snippet": "Framework-agnostic AI chat built with Web Components. Streaming, tools, attachments, branching and React/Vue/Svelte/Angular support. - apartejs/aparte"
+    },
+    {
+      "title": "@aparte/provider-ai-sdk - npm.io",
+      "url": "https://npm.io/package/@aparte/provider-ai-sdk",
+      "snippet": "@aparte/provider-ai-sdk Bridge any Vercel AI SDK model into aparté. aparté&#x27;s own wire concern is deliberately tiny — @aparte/provider-openai-compat covers the one de-facto-standard format; everything else (Anthropic, Google, Bedrock, 25+ vendors) rides the AI SDK ecosystem through this bridge. You bring your @ai-sdk/* package, hand its model to createAiSdkProvider, and the bridge maps ..."
+    }
+  ]
+}

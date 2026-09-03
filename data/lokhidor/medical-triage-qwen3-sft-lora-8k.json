@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Lokhidor/medical-triage-qwen3-sft-lora-8k",
+  "slug": "lokhidor-medical-triage-qwen3-sft-lora-8k",
+  "author": "Lokhidor",
+  "url": "https://huggingface.co/Lokhidor/medical-triage-qwen3-sft-lora-8k",
+  "created_at": "2026-09-02T21:08:01.000Z",
+  "updated_at": "2026-09-02T22:31:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:finetune:Qwen/Qwen3-1.7B-Base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 360346124,
+  "storage_human": "360 MB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lokhidor/medical-triage-qwen3-sft-lora · Hugging Face",
+      "url": "https://huggingface.co/Lokhidor/medical-triage-qwen3-sft-lora",
+      "snippet": "Model Card for medical-triage-qwen3-sft-lora This model is a fine-tuned version of Qwen/Qwen3-1.7B-Base. It has been trained using TRL."
+    },
+    {
+      "title": "Lokhidor/medical-triage-qwen3-dpo-lora · Hugging Face",
+      "url": "https://huggingface.co/Lokhidor/medical-triage-qwen3-dpo-lora",
+      "snippet": "Model Card for medical-triage-qwen3-dpo-lora This model is a fine-tuned version of Qwen/Qwen3-1.7B-Base. It has been trained using TRL."
+    },
+    {
+      "title": "Jojo4911/medical-triage-llm - GitHub",
+      "url": "https://github.com/Jojo4911/medical-triage-llm",
+      "snippet": "Proof-of-concept medical triage AI agent. Fine-tunes Qwen3-1.7B with SFT + LoRA and DPO alignment on a bilingual (FR/EN) clinical dataset, served via vLLM with a FastAPI endpoint."
+    },
+    {
+      "title": "GitHub - junqiangchen/qwen3_Lora_sft_medicalQA: This is a medical ...",
+      "url": "https://github.com/junqiangchen/qwen3_Lora_sft_medicalQA",
+      "snippet": "3、Qwen3+Lora+SFT Training Set sft_config.yaml.The model is set up according to your own computer configuration,If you have 3090 graphics card, can choose Qwen3-8b Model."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    }
+  ]
+}

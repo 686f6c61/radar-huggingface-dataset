@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "dassensei/sat-constrained-qwen-poc",
+  "slug": "dassensei-sat-constrained-qwen-poc",
+  "author": "dassensei",
+  "url": "https://huggingface.co/dassensei/sat-constrained-qwen-poc",
+  "created_at": "2026-09-03T00:34:40.000Z",
+  "updated_at": "2026-09-03T02:08:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 847580,
+  "storage_human": "847580 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen15.readthedocs.io/en/stable/index.html",
+      "snippet": "Welcome to Qwen! ¶ Qwen is the large language model and large multimodal model series of the Qwen Team, Alibaba Group. Both language models and multimodal models are pretrained on large-scale multilingual and multimodal data and post-trained on quality data for aligning to human preferences. Qwen is capable of natural language understanding, text generation, vision understanding, audio ..."
+    }
+  ]
+}

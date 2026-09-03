@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "akashnaren/ui-mode-router",
+  "slug": "akashnaren-ui-mode-router",
+  "author": "akashnaren",
+  "url": "https://huggingface.co/akashnaren/ui-mode-router",
+  "created_at": "2026-09-03T00:55:22.000Z",
+  "updated_at": "2026-09-03T00:58:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sklearn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "agents",
+    "tool-use",
+    "text-classification",
+    "en",
+    "dataset:akashnaren/agent-ui-sft",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16076,
+  "storage_human": "16076 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Access powerful AI models at zero cost. Experiment, learn, and build with free AI models and LLMs. OpenRouter is committed to keeping AI accessible for everyone."
+    },
+    {
+      "title": "OpenRouter",
+      "url": "https://openrouter.ai/",
+      "snippet": "How to Choose the Best AI Model (Live, in Your Editor) There&#x27;s no single best AI model, only the best model for a given task, budget, and moment. This article describes a six-step framework for choosing one, and how to run every step from your editor through the OpenRouter MCP server."
+    },
+    {
+      "title": "FreeRouter — Free, Self-Hosted AI Model Router - GitHub",
+      "url": "https://github.com/openfreerouter/freerouter",
+      "snippet": "FreeRouter — Free, Self-Hosted AI Model Router Stop overpaying for AI. Route every request to the right model — automatically, with your own API keys. No middleman, no markup."
+    },
+    {
+      "title": "Model router for Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-router",
+      "snippet": "Model router is a trained language model that intelligently routes your prompts in real time to the most suitable large language model (LLM). You deploy model router like any other Foundry model. Thus, it delivers high performance while saving on costs, reducing latencies, and increasing responsiveness, while maintaining comparable quality, all packaged as a single model deployment. Model ..."
+    },
+    {
+      "title": "ModelRouter - All models. One API. Superfast routing.",
+      "url": "https://modelrouter.app/",
+      "snippet": "ModelRouter: unified AI and LLM API. One API for GPT, Claude, embeddings and more. Superfast routing, reliability and speed."
+    }
+  ]
+}

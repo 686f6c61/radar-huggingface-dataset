@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AM014/qwen-cpp-optimized-16bit",
+  "slug": "am014-qwen-cpp-optimized-16bit",
+  "author": "AM014",
+  "url": "https://huggingface.co/AM014/qwen-cpp-optimized-16bit",
+  "created_at": "2026-09-02T21:32:13.000Z",
+  "updated_at": "2026-09-02T21:39:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693946,
+  "storage_human": "15.2 GB",
+  "base_model": "unsloth/qwen2.5-coder-7b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/qwen.cpp: C++ implementation of Qwen-LM",
+      "url": "https://github.com/QwenLM/qwen.cpp",
+      "snippet": "The original model (-i <model_name_or_path>) can be a HuggingFace model name or a local path to your pre-downloaded model. Currently supported models are: Qwen-7B: Qwen/Qwen-7B-Chat Qwen-14B: Qwen/Qwen-14B-Chat You are free to try any of the below quantization types by specifying -t <type>: q4_0: 4-bit integer quantization with fp16 scales. q4_1: 4-bit integer quantization with fp16 scales and ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    },
+    {
+      "title": "qwen-cpp · PyPI",
+      "url": "https://pypi.org/project/qwen-cpp/",
+      "snippet": "The original model (-i <model_name_or_path>) can be a HuggingFace model name or a local path to your pre-downloaded model. Currently supported models are: Qwen-7B: Qwen/Qwen-7B-Chat Qwen-14B: Qwen/Qwen-14B-Chat You are free to try any of the below quantization types by specifying -t <type>: q4_0: 4-bit integer quantization with fp16 scales."
+    },
+    {
+      "title": "Best Qwen Models Ranked: Which to Run Locally (Mid-2026)",
+      "url": "https://insiderllm.com/guides/qwen-models-guide/",
+      "snippet": "📚 More on this topic: Qwen 3.5 Local Guide · Qwen 3.5 9B Setup Guide · Llama 3 Guide · DeepSeek Models Guide · Best Models for Coding · VRAM Requirements While everyone was talking about Llama and DeepSeek, Alibaba quietly built the best open-source model family in the world. Qwen 3 beats Llama 3 at every comparable size. Qwen 2.5 Coder 32B matches GPT-4o on coding benchmarks. Qwen-VL ..."
+    },
+    {
+      "title": "Dynamic Q",
+      "url": "https://dinamicq.blogspot.com/2026/09/running-modern-large-language-models.html",
+      "snippet": "Running modern Large Language Models (LLMs) like Qwen on a standard laptop or desktop relies on model compression techniques, efficient parameter architectures, and specialized local inference runtimes. These methods drastically reduce memory and compute requirements with minimal loss in reasoning, coding, and language capabilities."
+    }
+  ]
+}

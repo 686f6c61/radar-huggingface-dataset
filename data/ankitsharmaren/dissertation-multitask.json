@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ankitsharmaren/dissertation-multitask",
+  "slug": "ankitsharmaren-dissertation-multitask",
+  "author": "ankitsharmaren",
+  "url": "https://huggingface.co/ankitsharmaren/dissertation-multitask",
+  "created_at": "2026-09-02T19:54:48.000Z",
+  "updated_at": "2026-09-02T19:54:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ankitsharmaren (Carmen Castillo) - Hugging Face",
+      "url": "https://huggingface.co/ankitsharmaren/models",
+      "snippet": "User profile of Carmen Castillo on Hugging Face"
+    },
+    {
+      "title": "AnkitSheoran (Ankit) - Hugging Face",
+      "url": "https://huggingface.co/AnkitSheoran/models",
+      "snippet": "User profile of Ankit on Hugging Face"
+    },
+    {
+      "title": "MultitaskAI - The Custom Chat UI for OpenAI, Anthropic, Google Gemini ...",
+      "url": "https://multitaskai.com/",
+      "snippet": "Chat seamlessly with AI models like OpenAI, Anthropic, and Google Gemini using MultitaskAI, a custom-built interface designed for split-screen multitasking, side-by-side comparisons, and smarter workflows."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 125 Estimated models among 415 tracked LLMs — 413 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    }
+  ]
+}

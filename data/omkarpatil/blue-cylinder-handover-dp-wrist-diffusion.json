@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "omkarpatil/blue-cylinder-handover-dp-wrist-diffusion",
+  "slug": "omkarpatil-blue-cylinder-handover-dp-wrist-diffusion",
+  "author": "omkarpatil",
+  "url": "https://huggingface.co/omkarpatil/blue-cylinder-handover-dp-wrist-diffusion",
+  "created_at": "2026-09-02T20:06:06.000Z",
+  "updated_at": "2026-09-02T20:15:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion-policy",
+    "ffw_sg2_rev1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278792848,
+  "parameters_human": "278.8M",
+  "storage_bytes": 1115231112,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-03T02:16:48.095Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "omkarpatil (Omkar Patil) - Hugging Face",
+      "url": "https://huggingface.co/omkarpatil/models",
+      "snippet": "Robotics Recent Activity updated a modelabout 10 hours ago omkarpatil/ffw_sg2_pick-blue-cylinder-left-arm_groot-n1.7 updated a modelabout 10 hours ago omkarpatil/ffw_sg2_pick-blue-cylinder-left-arm_smolvla updated a modelabout 10 hours ago omkarpatil/ffw_sg2_pick-blue-cylinder-right-arm_groot-n1.7 View all activity"
+    },
+    {
+      "title": "omkarpatil (Omkar Patil) - Hugging Face",
+      "url": "https://huggingface.co/omkarpatil",
+      "snippet": "omkarpatil (Omkar Patil) - Hugging Face ... Robotics"
+    },
+    {
+      "title": "omkarpatil18 (Omkar Patil) · GitHub",
+      "url": "https://github.com/omkarpatil18",
+      "snippet": "Robot Learning PhD @ ASU . omkarpatil18 has 11 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Grasp, Handover, Rotate: Bimanual Object Reorientation via ...",
+      "url": "https://arxiv.org/html/2607.21341v1",
+      "snippet": "By combining a pretrained grasp diffusion model with bimanual planning energy-based models (EBMs), our method injects gradient guidance during reverse diffusion to enforce collision avoidance, trajectory smoothness (via differentiable inverse kinematics), handover feasibility, and regrasp safety."
+    },
+    {
+      "title": "Omkar Patil",
+      "url": "https://omkarpatil18.github.io/",
+      "snippet": "Personal webpage of Omkar Patil, PhD @ ASU Diffusion models have been extensively leveraged for learning robot skills from demonstrations. These policies are conditioned on several observational modalities such as proprioception, vision, and tactile. However, observational modalities have varying levels of influence for different tasks that diffusion policies fail to capture. In this work, we ..."
+    }
+  ]
+}

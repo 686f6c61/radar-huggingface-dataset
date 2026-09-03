@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jorgeasmz/fraud-stream-detector",
+  "slug": "jorgeasmz-fraud-stream-detector",
+  "author": "jorgeasmz",
+  "url": "https://huggingface.co/jorgeasmz/fraud-stream-detector",
+  "created_at": "2026-09-02T20:06:18.000Z",
+  "updated_at": "2026-09-02T20:06:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "fraud-detection",
+    "streaming",
+    "tabular",
+    "tabular-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72160,
+  "storage_human": "72160 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aayushdave1003/streaming-fraud-detector - GitHub",
+      "url": "https://github.com/aayushdave1003/streaming-fraud-detector",
+      "snippet": "🎵 Spotify Stream Fraud Detector An unsupervised ML pipeline for detecting bot-driven stream manipulation on Spotify chart data, with an interactive Streamlit dashboard. It engineers behavioral fraud signals from daily stream counts, runs an ensemble of anomaly-detection models (Isolation Forest + Local Outlier Factor), estimates the royalty impact of suspected fake streams, and cross ..."
+    },
+    {
+      "title": "GitHub - stackSentinel-32/fraud-stream: Real-time streaming ...",
+      "url": "https://github.com/stackSentinel-32/fraud-stream",
+      "snippet": "A production-quality, end-to-end real-time fraud detection system. Transactions stream from a financial dataset through Apache Kafka, scored in real time by a LightGBM classifier and an Isolation Forest anomaly detector served via FastAPI, with results persisted to PostgreSQL and visualised on a ..."
+    },
+    {
+      "title": "AI scams in 2026: how they work and how to detect them",
+      "url": "https://www.vectra.ai/topics/ai-scams",
+      "snippet": "Learn how AI-powered scams work, the latest 2026 statistics on deepfake and voice cloning fraud, and how enterprises detect AI-enabled social engineering attacks."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "Best free AI detector - simply paste your text to instantly get an overall AI score and advanced sentence by sentence detection."
+    },
+    {
+      "title": "Detect AI-Generated And Deepfake Content | Hive Detect",
+      "url": "https://hivedetect.ai/",
+      "snippet": "Detect AI-generated and deepfake images, video and audio with Hive Detect — a web tool utilizing Hive&#x27;s best-in-class AI-content detection models to analyze the authenticity of media."
+    }
+  ]
+}

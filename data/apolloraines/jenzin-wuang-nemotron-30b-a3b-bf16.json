@@ -4,8 +4,8 @@
   "slug": "apolloraines-jenzin-wuang-nemotron-30b-a3b-bf16",
   "author": "ApolloRaines",
   "url": "https://huggingface.co/ApolloRaines/Jenzin-Wuang-Nemotron-30B-A3B-BF16",
-  "created_at": "2026-09-02T01:06:43.000Z",
-  "updated_at": "2026-09-02T01:12:45.000Z",
+  "created_at": "2026-09-02T02:57:56.000Z",
+  "updated_at": "2026-09-03T00:45:22.000Z",
   "license": "same-as-base",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -19,6 +19,7 @@
     "jblaze",
     "weight-surgery",
     "identity-transplant",
+    "behavioral-modification",
     "nemotron",
     "demo",
     "text-generation",
@@ -32,7 +33,7 @@
   "trending_score": 0,
   "parameters": 31577937344,
   "parameters_human": "31.58B",
-  "storage_bytes": 63173777638,
+  "storage_bytes": 63174011985,
   "storage_human": "63.2 GB",
   "base_model": "nvidia/Nemotron-3.5-Lightning-30B-A3B-BF16",
   "formats": [
@@ -40,8 +41,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-02T02:23:18.862Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

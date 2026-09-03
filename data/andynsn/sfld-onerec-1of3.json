@@ -5,7 +5,7 @@
   "author": "Andynsn",
   "url": "https://huggingface.co/Andynsn/SFLD-OneRec-1of3",
   "created_at": "2026-09-01T08:06:21.000Z",
-  "updated_at": "2026-09-01T10:53:26.000Z",
+  "updated_at": "2026-09-02T04:39:17.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 2131878912,
   "parameters_human": "2.13B",
-  "storage_bytes": 8543602726,
-  "storage_human": "8.5 GB",
+  "storage_bytes": 29608456694,
+  "storage_human": "29.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

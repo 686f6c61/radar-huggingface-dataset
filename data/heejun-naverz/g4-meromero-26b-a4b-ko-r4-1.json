@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "heejun-naverz/G4-MeroMero-26B-A4B-ko-R4.1",
+  "slug": "heejun-naverz-g4-meromero-26b-a4b-ko-r4-1",
+  "author": "heejun-naverz",
+  "url": "https://huggingface.co/heejun-naverz/G4-MeroMero-26B-A4B-ko-R4.1",
+  "created_at": "2026-09-03T00:24:40.000Z",
+  "updated_at": "2026-09-03T00:26:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "roleplay",
+    "korean",
+    "character-chat",
+    "moe",
+    "lora-merged",
+    "ko",
+    "base_model:zerofata/G4-MeroMero-26B-A4B",
+    "base_model:finetune:zerofata/G4-MeroMero-26B-A4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805933872,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51706132799,
+  "storage_human": "51.7 GB",
+  "base_model": "zerofata/G4-MeroMero-26B-A4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "heejun-naverz/G4-MeroMero-26B-A4B-ko-R4 · Hugging Face",
+      "url": "https://huggingface.co/heejun-naverz/G4-MeroMero-26B-A4B-ko-R4",
+      "snippet": "heejun-naverz / G4-MeroMero-26B-A4B-ko-R4 like 0 Safetensors Korean gemma4 roleplay korean character-chat Mixture of Experts lora-merged License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new G4-MeroMero-26B-A4B-ko-R4 (bf16, 병합본) R3 대비 변경점 출력 형식 vLLM 서빙 (gemma4 레시피)"
+    },
+    {
+      "title": "zerofata/G4-MeroMero-26B-A4B · Hugging Face",
+      "url": "https://huggingface.co/zerofata/G4-MeroMero-26B-A4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "G4 Meromero 26b A4b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/g4-meromero-26b-a4b.html",
+      "snippet": "Download G4 Meromero 26b A4b GGUF model. 15.4 GB, 7,295 downloads, 62 likes."
+    },
+    {
+      "title": "Damacol/zerofata-g4-meromero-26b-a4b - GitHub",
+      "url": "https://github.com/Damacol/zerofata-g4-meromero-26b-a4b",
+      "snippet": "zerofata/G4-MeroMero-26B-A4B - Private, Uncensored AI for Real Creators and Devs {MODEL} setup for researchers, devs, and writers. No babysitting, no tracking, just powerful AI on your terms."
+    },
+    {
+      "title": "G4 MeroMero 26B A4B by zerofata — VRAM 51.6GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/zerofata%2FG4-MeroMero-26B-A4B,678uh5CQqvUHPaLTPvyS9C",
+      "snippet": "G4 MeroMero 26B A4B is an open-source language model by zerofata. Features: 26b LLM, VRAM: 51.6GB, License: apache-2.0, Instruction-Based, LLM Explorer Score: 0.28."
+    }
+  ]
+}

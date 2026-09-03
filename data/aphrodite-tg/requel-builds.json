@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aphrodite-tg/requel-builds",
+  "slug": "aphrodite-tg-requel-builds",
+  "author": "aphrodite-tg",
+  "url": "https://huggingface.co/aphrodite-tg/requel-builds",
+  "created_at": "2026-09-02T23:07:22.000Z",
+  "updated_at": "2026-09-02T23:08:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155328903,
+  "storage_human": "155 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The New Aphrodite TG TF AI Adventure - DeviantArt",
+      "url": "https://www.deviantart.com/castleraquel/art/The-New-Aphrodite-TG-TF-AI-Adventure-1286563493",
+      "snippet": "The New Aphrodite TG TF AI Adventure — literature by CastleRaquel on DeviantArt. Published: 2026-01-13 · Likes: 27 · Views: 18511 · Tags: tg, tgtf, tg ..."
+    },
+    {
+      "title": "aphrodite-tg (aphrodite) - Hugging Face",
+      "url": "https://huggingface.co/aphrodite-tg",
+      "snippet": "User profile of aphrodite on Hugging Face"
+    },
+    {
+      "title": "Aphrodite AI Models | PixAI",
+      "url": "https://pixai.art/model/tags/aphrodite",
+      "snippet": "Discover Aphrodite AI models on PixAI - Find anime AI models and LoRAs tagged with Aphrodite"
+    },
+    {
+      "title": "A‌I chat|1v1 Chat with Character Project Aphrodite TG TF for Free ...",
+      "url": "https://www.polybuzz.ai/character/chat/p2rrr",
+      "snippet": "Dive into lifelike 1-on-1 AI chat with Project Aphrodite TG TF|Experience human-like conversations,emotional depth,and personalized scenarios powered by DeepAI.Ask anything to your AI character."
+    },
+    {
+      "title": "aphrodite AI Models | Civitai",
+      "url": "https://civitai.com/tag/aphrodite",
+      "snippet": "aphrodite Browse 44 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with aphrodite."
+    }
+  ]
+}

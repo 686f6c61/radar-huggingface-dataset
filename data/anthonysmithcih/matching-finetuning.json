@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "anthonysmithcih/matching-finetuning",
+  "slug": "anthonysmithcih-matching-finetuning",
+  "author": "anthonysmithcih",
+  "url": "https://huggingface.co/anthonysmithcih/matching-finetuning",
+  "created_at": "2026-09-02T20:05:07.000Z",
+  "updated_at": "2026-09-02T20:05:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI model fine-tuning concepts | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/ai/fine-tuning",
+      "snippet": "Learn AI model fine-tuning concepts and discover when fine-tuning can optimize your data and improve model performance. Get started with practical guidance."
+    },
+    {
+      "title": "Wild: Zhipu AI just dropped GLM-5.3-Flash, an AI model that ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/linasbeliunas_wild-zhipu-ai-just-dropped-glm-53-flash-activity-7500501721501286401-VaEB?rcm=ACoAAG1xhfIBZLEAjB221q7BE6lFbJ_xX6Czi1o",
+      "snippet": "Wild: Zhipu AI just dropped GLM-5.3-Flash, an AI model that approaches Claude Opus 4.8 on coding and agents. It&#x27;s 100% open-source, and the weights are already out under MIT 😳 The Chinese AI ..."
+    },
+    {
+      "title": "Lowering AI Costs Through Model Fine-Tuning and Optimization",
+      "url": "https://traktrax.com/news/lowering-ai-costs-model-fine-tuning-optimization",
+      "snippet": "Recent shifts in AI development show that fine-tuning existing models is more cost-effective than building new systems from scratch for specialized tasks."
+    },
+    {
+      "title": "Customize a model with fine-tuning - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning",
+      "snippet": "Learn how to fine-tune and customize Foundry models by using Python, REST APIs, or the Microsoft Foundry portal. Improve model performance with LoRA adaptation and custom datasets."
+    },
+    {
+      "title": "How to Fine-Tune AI Models: Techniques, Examples & Step-by-Step Guide",
+      "url": "https://dev.to/jaipalsingh/how-to-fine-tune-ai-models-techniques-examples-step-by-step-guide-1aph",
+      "snippet": "Learn how to fine-tune AI models with practical steps. Covers LoRA, full fine-tuning, dataset prep, and when fine-tuning beats RAG or prompt engineering. Real enterprise use cases included."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AdamAxelrod/microscope_pipette_2026-09-02_act",
+  "slug": "adamaxelrod-microscope_pipette_2026-09-02_act",
+  "author": "AdamAxelrod",
+  "url": "https://huggingface.co/AdamAxelrod/microscope_pipette_2026-09-02_act",
+  "created_at": "2026-09-02T20:46:49.000Z",
+  "updated_at": "2026-09-02T20:47:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:AdamAxelrod/microscope_pipette_2026-09-02",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51669639,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206721388,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AdamAxelrod/microscope_pipette · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/AdamAxelrod/microscope_pipette",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AdamAxelrod/microscope_pipette at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/AdamAxelrod/microscope_pipette/tree/main",
+      "snippet": "Datasets: AdamAxelrod / microscope_pipette like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot Libraries: Datasets Dask Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main microscope_pipette 595 MB 1 contributor History:7 commits AdamAxelrod Upload README.md with huggingface_hub 2d121c1 ..."
+    },
+    {
+      "title": "AI automates the creation of custom functional materials atom by atom",
+      "url": "https://phys.org/news/2026-09-ai-automates-creation-custom-functional.html",
+      "snippet": "AI guides an ultra-sharp microscope tip to push single molecules across copper, automatically building custom atom-scale patterns—advancing design of new electronics and quantum materials."
+    },
+    {
+      "title": "Daily HuggingFace AI Papers - GitHub",
+      "url": "https://github.com/AtharvaDomale/Daily-HuggingFace-AI-Papers",
+      "snippet": "Latest AI research papers from HuggingFace Papers, updated daily 1. StudentSim: Training LLM-based Student Simulators ⭐ 10 🔗 Links: 🤗 HuggingFace • 📄 arXiv • 📥 PDF 💻 Code: ⭐ Code • ⭐ Code AI tutors are most useful when they adaptively respond to each student&#x27;s strengths, weaknesses, and preferred kinds of guidance, but which guidance works for which student is a ..."
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    }
+  ]
+}

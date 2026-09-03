@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Asirus/Minimax-H3-Latent-Upscaler-BF16-MAXQUALITY",
+  "slug": "asirus-minimax-h3-latent-upscaler-bf16-maxquality",
+  "author": "Asirus",
+  "url": "https://huggingface.co/Asirus/Minimax-H3-Latent-Upscaler-BF16-MAXQUALITY",
+  "created_at": "2026-09-02T20:03:39.000Z",
+  "updated_at": "2026-09-02T20:13:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "minimax",
+    "h3",
+    "video-upscaler",
+    "latent-upscaler",
+    "bf16",
+    "comfyui",
+    "requantization",
+    "base_model:LBH-123-AI/Minimax_h3_latent_Upscaler",
+    "base_model:finetune:LBH-123-AI/Minimax_h3_latent_Upscaler",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 690593160,
+  "storage_human": "691 MB",
+  "base_model": "LBH-123-AI/Minimax_h3_latent_Upscaler",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LBH-123-AI/Minimax_h3_latent_Upscaler · Hugging Face",
+      "url": "https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler: Neural latent ...",
+      "url": "https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler",
+      "snippet": "Add the node you need from the video/MinimaxH3 menu, connect a LATENT, pick the model, set the resize mode / scale, and decode. Typical workflow: Quick preview: [Minimax H3 Latent] → [H3 Latent Upscaler] → [VAE Decode] High quality / time-saving (recommended): [Low-res Latent] → [H3 Latent Upscaler] → [Refine / Re-sample] → [VAE Decode] Compared to the naive approach [Latent] → ..."
+    },
+    {
+      "title": "GitHub - rockerBOO/h3-latent-upscaler: ComfyUI custom nodes for ...",
+      "url": "https://github.com/rockerBOO/h3-latent-upscaler",
+      "snippet": "MiniMax H3 Latent Upscale (model/latent/minimax) Inputs: samples (LATENT, plain video tensor — use after LTXVSeparateAVLatent), scale_by (FLOAT), upscale_method (nearest-exact / bilinear / area / bicubic / bislerp). Output: LATENT. Upscales H/W by scale_by, snapped up to a multiple of 2 in latent space (the DiT&#x27;s patch size is (1, 2, 2) and unpadded odd sizes will crash). MiniMax H3 ..."
+    },
+    {
+      "title": "minimax_h3_latent_upscaler_3d_bf16.safetensors · LBH-123-AI/Minimax_h3 ...",
+      "url": "https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler/blob/main/minimax_h3_latent_upscaler_3d_bf16.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

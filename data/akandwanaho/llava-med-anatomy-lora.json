@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Akandwanaho/llava-med-anatomy-lora",
+  "slug": "akandwanaho-llava-med-anatomy-lora",
+  "author": "Akandwanaho",
+  "url": "https://huggingface.co/Akandwanaho/llava-med-anatomy-lora",
+  "created_at": "2026-09-02T21:31:03.000Z",
+  "updated_at": "2026-09-02T21:31:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64023800,
+  "storage_human": "64 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLaVA-Med: Large Language and Vision Assistant for Biomedicine - GitHub",
+      "url": "https://github.com/microsoft/LLaVA-Med",
+      "snippet": "Large Language and Vision Assistant for bioMedicine (i.e., \"LLaVA-Med\") is a large language and vision model trained using a curriculum learning method for adapting LLaVA to the biomedical domain. It is an open-source release intended for research use only to facilitate reproducibility of the corresponding paper which claims improved performance for open-ended biomedical questions ..."
+    },
+    {
+      "title": "LLaVA-Med: Training a Large Language-and-Vision Assistant for ...",
+      "url": "https://arxiv.org/abs/2306.00890",
+      "snippet": "Conversational generative AI has demonstrated remarkable promise for empowering biomedical practitioners, but current investigations focus on unimodal text. Multimodal conversational AI has seen rapid progress by leveraging billions of image-text pairs from the public web, but such general-domain vision-language models still lack sophistication in understanding and conversing about biomedical ..."
+    },
+    {
+      "title": "LLaVA-Med: Biomedical Vision-Language Models",
+      "url": "https://www.emergentmind.com/topics/llava-med",
+      "snippet": "LLaVA-Med is a family of vision-language models designed for biomedical imaging, enabling automated medical reasoning and visual Q&A. It employs a two-stage training strategy with concept/alignment pretraining on PMC and GPT-4-generated multimodal dialogs for robust instruction tuning. The model achieves state-of-the-art performance on radiology and pathology benchmarks and is optimized ..."
+    },
+    {
+      "title": "LLaVA-Med_Extension/README.md at main · m2ai-lab/LLaVA-Med ... - GitHub",
+      "url": "https://github.com/m2ai-lab/LLaVA-Med_Extension/blob/main/README.md",
+      "snippet": "Large Language and Vision Assistant for bioMedicine (i.e., \"LLaVA-Med\") is a large language and vision model trained using a curriculum learning method for adapting LLaVA to the biomedical domain. It is an open-source release intended for research use only to facilitate reproducibility of the corresponding paper which claims improved performance for open-ended biomedical questions ..."
+    },
+    {
+      "title": "LLaVA-med | Proceedings of the 37th International Conference on Neural ...",
+      "url": "https://dl.acm.org/doi/10.5555/3666122.3667362",
+      "snippet": "On three standard biomedical visual question answering datasets, fine-tuning LLaVA-Med outperforms previous supervised state-of-the-art on certain metrics. To facilitate biomedical multimodal research, we will release our instruction-following data and the LLaVA-Med model."
+    }
+  ]
+}

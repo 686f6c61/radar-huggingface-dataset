@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "JokeMaker/taste-s-stage1-full-f32-validbest8-v4-epochs",
+  "slug": "jokemaker-taste-s-stage1-full-f32-validbest8-v4-epochs",
+  "author": "JokeMaker",
+  "url": "https://huggingface.co/JokeMaker/taste-s-stage1-full-f32-validbest8-v4-epochs",
+  "created_at": "2026-09-03T00:41:52.000Z",
+  "updated_at": "2026-09-03T00:44:24.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "audio",
+    "speech",
+    "tokenizer",
+    "private-research-artifact",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12257198964,
+  "storage_human": "12.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Free AI Joke Generator - Create Funny Jokes Instantly - AIFreeBox",
+      "url": "https://aifreebox.com/list/ai-joke-generator",
+      "snippet": "Create funny jokes in seconds — free and no sign-up required. This AI Joke Generator helps you write witty, playful lines for chats, posts, or fun moments."
+    },
+    {
+      "title": "Command Code - AI coding agent with taste",
+      "url": "https://commandcode.ai/",
+      "snippet": "The first AI coding agent that learns your coding taste. Powered by taste-1, a meta neuro-symbolic model. A modern alternative to Claude Code, Cursor, OpenCode, and Copilot."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

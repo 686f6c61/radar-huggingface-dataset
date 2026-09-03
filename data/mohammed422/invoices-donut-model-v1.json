@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Mohammed422/invoices-donut-model-v1",
+  "slug": "mohammed422-invoices-donut-model-v1",
+  "author": "Mohammed422",
+  "url": "https://huggingface.co/Mohammed422/invoices-donut-model-v1",
+  "created_at": "2026-09-02T22:10:55.000Z",
+  "updated_at": "2026-09-02T23:03:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 202126776,
+  "parameters_human": "202.1M",
+  "storage_bytes": 4046848760,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "katanaml-org/invoices-donut-model-v1 · Hugging Face",
+      "url": "https://huggingface.co/katanaml-org/invoices-donut-model-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "scharnot/donut-invoices · Hugging Face",
+      "url": "https://huggingface.co/scharnot/donut-invoices",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "invoices-donut-model-v1 — Image-to-Text Model by katanaml-org",
+      "url": "https://modeldatabase.com/katanaml-org/invoices-donut-model-v1.html",
+      "snippet": "Sparrow - Data extraction from documents with ML This model is finetuned Donut ML base model on invoices data. Model aims to verify how well Donut performs on enterprise docs."
+    },
+    {
+      "title": "GitHub - clovaai/donut: Official Implementation of OCR-free Document ...",
+      "url": "https://github.com/clovaai/donut",
+      "snippet": "Donut 🍩, Do cume n t u nderstanding t ransformer, is a new method of document understanding that utilizes an OCR-free end-to-end Transformer model. Donut does not require off-the-shelf OCR engines/APIs, yet it shows state-of-the-art performances on various visual document understanding tasks, such as visual document classification or information extraction (a.k.a. document parsing). In ..."
+    },
+    {
+      "title": "GitHub - Gmehta604/Invoice_Reader_Using_Donut",
+      "url": "https://github.com/Gmehta604/Invoice_Reader_Using_Donut",
+      "snippet": "Invoice Reader using Donut This project fine-tunes the Donut (Large Language and Vision Assistant) model to extract information from invoices. The model is trained to understand and extract key information from invoice images."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/chrono-2019-typemix-2014-sft",
+  "slug": "jjjlimaus-chrono-2019-typemix-2014-sft",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/chrono-2019-typemix-2014-sft",
+  "created_at": "2026-09-02T19:21:43.000Z",
+  "updated_at": "2026-09-03T00:53:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sn38-nanochrono",
+    "text-generation",
+    "pytorch",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2018511234,
+  "parameters_human": "2.02B",
+  "storage_bytes": 359297071572,
+  "storage_human": "359.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jjjlimaus (Lima) - Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus",
+      "snippet": "jjjlimaus/chrono2014-finance2015-ft3 2B•Updated 1 day ago• 4 View 17 models datasets27 Sort: Recently updated"
+    },
+    {
+      "title": "jjjlimaus (Lima) - Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus/models",
+      "snippet": "jjjlimaus&#x27;s models17 Sort: Recently updated jjjlimaus/nanoexpand-2018-quality-gold-cont Text Generation • 2B•Updated 28 minutes ago"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "GitHub - amazon-science/chronos-forecasting: Chronos: Pretrained Models ...",
+      "url": "https://github.com/amazon-science/chronos-forecasting",
+      "snippet": "This package provides an interface to the Chronos family of pretrained time series forecasting models. The following model types are supported. Chronos-2: Our latest model with significantly enhanced capabilities. It offers zero-shot support for univariate, multivariate, and covariate-informed forecasting tasks. Chronos-2 delivers state-of-the-art zero-shot performance across multiple ..."
+    },
+    {
+      "title": "2015 - 2025 A/L SFT Papers & Marking Schemes Sinhala Medium - e-Kalvi",
+      "url": "https://e-kalvi.com/a-l-sft-past-papers-sinhala-medium/",
+      "snippet": "Download G.C.E A/L SFT Past papers (Science for Technology) in Sinhala Medium 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022 Free PDF. A/L SFT Papers Free PDF."
+    }
+  ]
+}

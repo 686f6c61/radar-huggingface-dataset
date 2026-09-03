@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sstoica12/acquisition_llama8bins_numina_proximity",
+  "slug": "sstoica12-acquisition_llama8bins_numina_proximity",
+  "author": "sstoica12",
+  "url": "https://huggingface.co/sstoica12/acquisition_llama8bins_numina_proximity",
+  "created_at": "2026-09-02T20:53:00.000Z",
+  "updated_at": "2026-09-02T20:55:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138288576,
+  "storage_human": "32.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sstoica12/acquisition_llama8bins_numina_proximity · Hugging Face",
+      "url": "https://huggingface.co/sstoica12/acquisition_llama8bins_numina_proximity",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=sstoica12%2Facquisition_student_llama8bins_numina_format",
+      "snippet": "sstoica12/acquisition_student_llama8bins_numina_format Text Generation • 8B•Updated 7 days ago• 187"
+    },
+    {
+      "title": "Acquisition Student Llama8bins Numina Format - AI Model Insights ...",
+      "url": "https://free2aitools.com/model/sstoica12/acquisition_student_llama8bins_numina_format",
+      "snippet": "Registry entry for model Acquisition Student Llama8bins Numina Format; source metadata pending."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "Models released in the week of Aug 23, 2026 - Featherless.ai",
+      "url": "https://featherless.ai/model-releases/2026-08-23",
+      "snippet": "Model Releases Week of Aug 23, 2026 Aug 23, 2026 Card Table Previous 1"
+    }
+  ]
+}

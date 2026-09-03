@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mohamedrayyan/mms-tts-div-finetuned-md-f02",
+  "slug": "mohamedrayyan-mms-tts-div-finetuned-md-f02",
+  "author": "mohamedrayyan",
+  "url": "https://huggingface.co/mohamedrayyan/mms-tts-div-finetuned-md-f02",
+  "created_at": "2026-09-02T21:12:06.000Z",
+  "updated_at": "2026-09-02T21:12:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "dv"
+  ],
+  "tags": [
+    "safetensors",
+    "vits",
+    "dhivehi",
+    "tts",
+    "mms",
+    "text-to-speech",
+    "dv",
+    "base_model:facebook/mms-tts-div",
+    "base_model:finetune:facebook/mms-tts-div",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36287472,
+  "parameters_human": "36.3M",
+  "storage_bytes": 145242232,
+  "storage_human": "145 MB",
+  "base_model": "facebook/mms-tts-div",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Serialtechlab/mms-tts-div-finetuned-md-f02 · Hugging Face",
+      "url": "https://huggingface.co/Serialtechlab/mms-tts-div-finetuned-md-f02",
+      "snippet": "Serialtechlab / mms-tts-div-finetuned-md-f02 like 0 Text-to-Audio Transformers Safetensors alakxender/dv_syn_speech_md Divehi vits arxiv:1910.09700 Model card FilesFiles and versions Community Train Deploy Use this model Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and Limitations ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "facebook/mms-tts · Hugging Face",
+      "url": "https://huggingface.co/facebook/mms-tts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mms-tts-div-finetuned-md-f02 - AI Model by Serialtechlab | AlphaNeural AI",
+      "url": "https://alphaneural.io/assets/Serialtechlab/mms-tts-div-finetuned-md-f02",
+      "snippet": "Explore mms-tts-div-finetuned-md-f02, a ai model on AlphaNeural AI. Deploy using Neural Labs compute infrastructure."
+    },
+    {
+      "title": "Open-source voice model mms-tts-div-finetuned-md-f02 - Free Maldivian ...",
+      "url": "https://model.aibase.com/models/details/1915692838026895362",
+      "snippet": "The model provides various quantization versions, which are convenient for deployment in resource-constrained environments and can be used to generate network security-related texts, codes, and analysis reports."
+    }
+  ]
+}

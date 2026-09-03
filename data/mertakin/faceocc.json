@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mertakin/FaceOcc",
+  "slug": "mertakin-faceocc",
+  "author": "mertakin",
+  "url": "https://huggingface.co/mertakin/FaceOcc",
+  "created_at": "2026-09-02T20:31:12.000Z",
+  "updated_at": "2026-09-02T20:50:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "faceocc",
+    "face-segmentation",
+    "face-occlusion",
+    "visible-face-segmentation",
+    "semantic-segmentation",
+    "pytorch",
+    "segmentation-models-pytorch",
+    "image-segmentation",
+    "arxiv:2201.08425",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14339793,
+  "parameters_human": "14.3M",
+  "storage_bytes": 57377516,
+  "storage_human": "57 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - face3d0725/FaceExtraction",
+      "url": "https://github.com/face3d0725/FaceExtraction",
+      "snippet": "FaceOcc: A Diverse, High-quality Face Occlusion Dataset for Human Face Extraction Our paper is accepted by TAIMA 2022 Occlusions often occur in face images in the wild, troubling face-related tasks such as landmark detection, 3D reconstruction, and face recognition. It is beneficial to extract face regions from unconstrained face images accurately. However, current face segmentation datasets ..."
+    },
+    {
+      "title": "FaceExtraction/README.md at main - GitHub",
+      "url": "https://github.com/face3d0725/FaceExtraction/blob/main/README.md",
+      "snippet": "FaceOcc: A Diverse, High-quality Face Occlusion Dataset for Human Face Extraction Our paper is accepted by TAIMA 2022 Occlusions often occur in face images in the wild, troubling face-related tasks such as landmark detection, 3D reconstruction, and face recognition. It is beneficial to extract face regions from unconstrained face images accurately. However, current face segmentation datasets ..."
+    },
+    {
+      "title": "FaceOcc: A Diverse, High-quality Face Occlusion Dataset for ... - DeepAI",
+      "url": "https://deepai.org/publication/faceocc-a-diverse-high-quality-face-occlusion-dataset-for-human-face-extraction",
+      "snippet": "Combining it with the attribute mask in CelebAMask-HQ, we trained a straightforward face segmentation model but obtained SOTA performance, convincingly demonstrating the effectiveness of the proposed dataset."
+    },
+    {
+      "title": "FaceOcc: A Diverse, High-quality Face Occlusion Dataset for Human Face ...",
+      "url": "https://hal.science/hal-03540753",
+      "snippet": "To the best of our knowledge, it is by far the largest and most comprehensive face occlusion dataset. Combining it with the attribute mask in CelebAMask-HQ, we trained a straightforward face segmentation model but obtained SOTA performance, convincingly demonstrating the effectiveness of the proposed dataset."
+    },
+    {
+      "title": "FaceOcc: A Diverse, High-quality Face Occlusion Dataset for Human Face ...",
+      "url": "https://hal.science/hal-03540753/document",
+      "snippet": "This paper proposes a novel diverse, high-quality face occlusion dataset entitled FaceOcc,whichcontainsallmislabeledocclusionsinCelebAMask-HQandcomple- ments some occlusions and textures from the internet."
+    }
+  ]
+}

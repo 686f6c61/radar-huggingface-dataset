@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "dreamidotme/fable2notbyclaude",
+  "slug": "dreamidotme-fable2notbyclaude",
+  "author": "dreamidotme",
+  "url": "https://huggingface.co/dreamidotme/fable2notbyclaude",
+  "created_at": "2026-09-02T00:26:28.000Z",
+  "updated_at": "2026-09-03T00:56:18.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "fables",
+    "folklore",
+    "joke",
+    "humor",
+    "parody",
+    "small-language-model",
+    "public-domain-training-data",
+    "text-generation",
+    "en",
+    "license:cc0-1.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 89554944,
+  "parameters_human": "89.6M",
+  "storage_bytes": 362094144,
+  "storage_human": "362 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dreamidotme/fable2 · Hugging Face",
+      "url": "https://huggingface.co/dreamidotme/fable2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dreamidotme/fable2 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/dreamidotme/fable2/discussions",
+      "snippet": "dreamidotme / fable2 like 0 Text Generation GGUF English llama.cpp fables folklore small-language-model public-domain-training-data conversational License:cc0-1.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "I Let Two AI Models Build a YouTube Channel",
+      "url": "https://www.youtube.com/watch?v=3hT_nMFnmWw",
+      "snippet": "The voice in this video is Able, an AI avatar from the Sennable Collective. Next: a third model joins the same seat, same tools, and we see what actually changes."
+    },
+    {
+      "title": "Every Claude AI Model Compared & Explained (Sep, 2026)",
+      "url": "https://www.secondtalent.com/resources/every-claude-ai-model-explained-compared/",
+      "snippet": "Claude has four tiers in 2026: Haiku 4.5, Sonnet 5, Opus 5, and Fable 5. Compare prices, context windows, and which model to use, in 10 minutes."
+    }
+  ]
+}

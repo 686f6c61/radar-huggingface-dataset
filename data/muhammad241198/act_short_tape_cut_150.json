@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Muhammad241198/act_short_tape_cut_150",
+  "slug": "muhammad241198-act_short_tape_cut_150",
+  "author": "Muhammad241198",
+  "url": "https://huggingface.co/Muhammad241198/act_short_tape_cut_150",
+  "created_at": "2026-09-02T19:19:54.000Z",
+  "updated_at": "2026-09-02T19:20:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:rbtrprjkt/cut-short_tape-on-box",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51721863,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206922628,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muhammad241198 (Muhammad Obaid Ur Rahman) - Hugging Face",
+      "url": "https://huggingface.co/Muhammad241198",
+      "snippet": "Diffusion, Transformers, Imitation Learning updated a dataset 10 days ago"
+    },
+    {
+      "title": "Muhammad241198/act_crocodileclip_to_cardboard_150 · Hugging Face",
+      "url": "https://huggingface.co/Muhammad241198/act_crocodileclip_to_cardboard_150",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "GitHub - jastfan/AutoShortAi: Multi-platform AI Shorts automation tool ...",
+      "url": "https://github.com/jastfan/AutoShortAi/tree/main",
+      "snippet": "One script, full pipeline — fetch → cut → live-edit → AI-enhance → export, all in a single Flask app with a modern browser UI (no build step). Real editing, not just cutting — per-clip speed, zoom, color grade, captions, logo, hide-regions, and AI voiceover before anything is written to disk."
+    },
+    {
+      "title": "AI YouTube Shorts Generator - AlphaCut",
+      "url": "https://alphacut.video/en",
+      "snippet": "Turn long-form videos into viral YouTube Shorts in minutes with AI. Auto-generated subtitles, highlight detection, and one-click editing."
+    }
+  ]
+}

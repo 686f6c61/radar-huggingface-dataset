@@ -46,7 +46,7 @@
     "safetensors"
   ],
   "is_conversational": false,
-  "gated": false,
+  "gated": true,
   "removed": false,
   "removed_at": null,
   "benchmarks": [

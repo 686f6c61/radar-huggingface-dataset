@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "26B-Suite/OrionOmegaFiction-26B-A4B",
+  "slug": "26b-suite-orionomegafiction-26b-a4b",
+  "author": "26B-Suite",
+  "url": "https://huggingface.co/26B-Suite/OrionOmegaFiction-26B-A4B",
+  "created_at": "2026-09-02T22:09:16.000Z",
+  "updated_at": "2026-09-02T23:04:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4771438574,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "26B-Suite (26B-Suite) - Hugging Face",
+      "url": "https://huggingface.co/26B-Suite/models",
+      "snippet": "26B-Suite/Dark-Goetia-26B-A4B-v2: Potential Dark Version of the Model Naphula new activityabout 11 hours ago 26B-Suite/Goetia-26B-A4B-v1.3_ARA-MLP_Base-SOMPOA-ATN: Mostly straightforward redaihf new activityabout 12 hours ago 26B-Suite/Goetia-26B-A4B-v1.3_ARA-MLP_Base-SOMPOA-ATN: Mostly straightforward View all activity"
+    },
+    {
+      "title": "26B-Suite (26B-Suite) - Hugging Face",
+      "url": "https://huggingface.co/26B-Suite",
+      "snippet": "Org profile for 26B-Suite on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "gemma4:26b - ollama.com",
+      "url": "https://ollama.com/library/gemma4:26b",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "GitHub - drumih/turbo-fieldfare: Gemma 4 26B-A4B inference in ~2 GB of ...",
+      "url": "https://github.com/drumih/turbo-fieldfare",
+      "snippet": "TurboFieldfare Gemma 4 26B-A4B inference in about 2 GB of RAM A custom Swift + Metal runtime for any Apple Silicon Mac, even the 8 GB ones. Quick start · Local server · Benchmarks · Contribute results · How it works · Experiments · References Memory got expensive. So I gave a 26-billion-parameter model a ~2 GB budget."
+    }
+  ]
+}

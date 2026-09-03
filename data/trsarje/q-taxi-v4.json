@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "trsarje/q-Taxi-v4",
+  "slug": "trsarje-q-taxi-v4",
+  "author": "trsarje",
+  "url": "https://huggingface.co/trsarje/q-Taxi-v4",
+  "created_at": "2026-09-03T00:10:40.000Z",
+  "updated_at": "2026-09-03T00:10:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149796,
+  "storage_human": "149796 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EverVissionAI/q-Taxi-v4 · Hugging Face",
+      "url": "https://huggingface.co/EverVissionAI/q-Taxi-v4",
+      "snippet": "Q-Learning Agent playing1 Taxi-v4 This is a trained model of a Q-Learning agent playing Taxi-v4 ."
+    },
+    {
+      "title": "thaslimshaik/q-Taxi-v4 · Hugging Face",
+      "url": "https://huggingface.co/thaslimshaik/q-Taxi-v4",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "Taxi-v4: Reproducible Q-Learning Study - Kaggle",
+      "url": "https://www.kaggle.com/code/alexandriadrake/taxi-v4-reproducible-q-learning-study",
+      "snippet": "The Taxi-v4 environment is a discrete grid-world reinforcement learning task in which an autonomous taxi agent must navigate a map, pick up a passenger, and deliver the passenger to the correct destination."
+    },
+    {
+      "title": "Taxi-v4-RL/README.md at main · LukeTB16/Taxi-v4-RL · GitHub",
+      "url": "https://github.com/LukeTB16/Taxi-v4-RL/blob/main/README.md",
+      "snippet": "Contribute to LukeTB16/Taxi-v4-RL development by creating an account on GitHub."
+    },
+    {
+      "title": "Reinforcement Learning from Scratch:Q-Learning on Taxi-v4 in Python#ai ...",
+      "url": "https://www.youtube.com/watch?v=FvcPiqpMzeY",
+      "snippet": "In this video, we build and train a Reinforcement Learning agent from scratch using Q-Learning to solve the OpenAI Gymnasium Taxi-v4 environment!Watch the AI..."
+    }
+  ]
+}

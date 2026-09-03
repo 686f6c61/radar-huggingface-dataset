@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Intel/GLM-5.3-Flash-W4A16-AutoRound",
+  "slug": "intel-glm-5-3-flash-w4a16-autoround",
+  "author": "Intel",
+  "url": "https://huggingface.co/Intel/GLM-5.3-Flash-W4A16-AutoRound",
+  "created_at": "2026-08-31T13:08:06.000Z",
+  "updated_at": "2026-09-01T00:19:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2309.05516",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "4-bit",
+    "auto-round",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 104,
+  "trending_score": 8,
+  "parameters": 50303291708,
+  "parameters_human": "50.30B",
+  "storage_bytes": 181505126366,
+  "storage_human": "181.5 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Intel/GLM-5.3-Flash-W4A16-AutoRound · Hugging Face",
+      "url": "https://huggingface.co/Intel/GLM-5.3-Flash-W4A16-AutoRound",
+      "snippet": "Intel / GLM-5.3-Flash-W4A16-AutoRound like 0 Follow Intel 4.27k Text Generation Transformers Safetensors English Chinese glm5_next image-text-to-text conversational 4-bit precision auto-round arxiv:2309.05516 License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GLM-5.3-Flash-W4A16-RTN-AutoRound - Hugging Face",
+      "url": "https://huggingface.co/INCModel3/GLM-5.3-Flash-W4A16-RTN-AutoRound",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ai/glm-5.3-flash - Docker Image",
+      "url": "https://hub.docker.com/r/ai/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash starts from a newly trained base model, with its architecture and training recipe redesigned around capability and efficiency. For the first time in the GLM series, we introduce a hybrid architecture combining sparse and linear attention, sharply reducing long-context serving costs while preserving precise long-context capabilities."
+    },
+    {
+      "title": "Intel GLM-5.3-Flash-W4A16-AutoRound - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/intel-glm-5-3-flash-w4a16-autoround/382041",
+      "snippet": "Seems like this was uploaded to Intel&#x27;s huggingface repo yesterday. Looking to try it out this weekend. huggingface.co Intel/GLM-5.3-Flash-W4A16-AutoRound · Hugging Face We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3 - openlm.ai",
+      "url": "https://openlm.ai/glm-5.3/",
+      "snippet": "GLM-5.3-Flash is the first natively multimodal model in the GLM-5 series. With 320B total parameters and just 18B active parameters, it outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks."
+    }
+  ]
+}

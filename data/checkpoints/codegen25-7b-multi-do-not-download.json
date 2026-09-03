@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "checkpoints/codegen25-7b-multi-do-not-download",
+  "slug": "checkpoints-codegen25-7b-multi-do-not-download",
+  "author": "checkpoints",
+  "url": "https://huggingface.co/checkpoints/codegen25-7b-multi-do-not-download",
+  "created_at": "2026-02-04T10:46:13.000Z",
+  "updated_at": "2026-09-02T21:26:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoints/codegen25-7b-multi-do-not-download · Hugging Face",
+      "url": "https://huggingface.co/checkpoints/codegen25-7b-multi-do-not-download",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "checkpoints/codegen25-7b-multi-do-not-download at main",
+      "url": "https://huggingface.co/checkpoints/codegen25-7b-multi-do-not-download/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CodeGen/codegen25/README.md at main - GitHub",
+      "url": "https://github.com/salesforce/CodeGen/blob/main/codegen25/README.md",
+      "snippet": "Model checkpoints are published at Hugging Face Hub. CodeGen2.5-7B-multi (Apache-2.0) CodeGen2.5-7B-mono (Apache-2.0) CodeGen2.5-7B-instruct (Research purposes only) Model cards outline how to use the model for causal and infill sampling. Please refer to each model card for more details. The models are pre-trained on the StarCoderData, a programming language dataset developed by BigCode."
+    },
+    {
+      "title": "GitHub - salesforce/CodeGen: CodeGen is a family of open-source model ...",
+      "url": "https://github.com/salesforce/CodeGen",
+      "snippet": "Ethics disclaimer for Salesforce AI models, data, code This release is for research purposes only in support of an academic paper. Our models, datasets, and code are not specifically designed or evaluated for all downstream purposes."
+    },
+    {
+      "title": "codegen25-7b-multi_P: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/codegen25-7b-multip-salesforce",
+      "snippet": "Updates would come through new model releases rather than changes to this checkpoint. Q: What are the known failure modes of this 7B model compared to larger alternatives? A: The README does not document specific failure modes, but 7B models generally struggle with multi-step reasoning, very long functions, and complex architectural decisions."
+    }
+  ]
+}

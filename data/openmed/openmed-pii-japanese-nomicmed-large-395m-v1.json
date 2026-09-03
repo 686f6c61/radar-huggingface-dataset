@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "OpenMed/OpenMed-PII-Japanese-NomicMed-Large-395M-v1",
+  "slug": "openmed-openmed-pii-japanese-nomicmed-large-395m-v1",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/OpenMed-PII-Japanese-NomicMed-Large-395M-v1",
+  "created_at": "2026-05-17T22:41:13.000Z",
+  "updated_at": "2026-09-02T22:27:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "ner",
+    "pii",
+    "pii-detection",
+    "de-identification",
+    "privacy",
+    "healthcare",
+    "medical",
+    "clinical",
+    "phi",
+    "pytorch",
+    "openmed",
+    "japanese",
+    "ja",
+    "base_model:lightonai/modernbert-embed-large",
+    "base_model:finetune:lightonai/modernbert-embed-large",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 395909196,
+  "parameters_human": "395.9M",
+  "storage_bytes": 1583655040,
+  "storage_human": "1.6 GB",
+  "base_model": "lightonai/modernbert-embed-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenMed/OpenMed-PII-Japanese-NomicMed-Large-395M-v1-onnx-android ...",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Japanese-NomicMed-Large-395M-v1-onnx-android",
+      "snippet": "ONNX Japanese openmed modernbert medical-nlp pii-detection android webassembly webgpu arxiv:2508.01630 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new OpenMed PII Detection 395M Model OpenMed in Python on CPU OpenMed in Web OpenMedKit for Android Included Artifacts The OpenMed Ecosystem Intended Use and ..."
+    },
+    {
+      "title": "OpenMed/OpenMed-PII-Japanese-NomicMed-Large-395M-v1-onnx-android at main",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Japanese-NomicMed-Large-395M-v1-onnx-android/tree/main",
+      "snippet": "ONNX Japanese openmed modernbert medical-nlp pii-detection android webassembly webgpu arxiv:2508.01630 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main OpenMed-PII-Japanese-NomicMed-Large-395M-v1-onnx-android 4.52 GB Ctrl+K Ctrl+K 1 contributor History:6 commits MaziyarPanahi docs: use public openmed ..."
+    },
+    {
+      "title": "GitHub - maziyarpanahi/openmed: Local-first healthcare AI: clinical NER ...",
+      "url": "https://github.com/maziyarpanahi/openmed",
+      "snippet": "Local-first healthcare AI: clinical NER & HIPAA PII de-identification that runs 100% on-device. 2,200+ medical models, 21 languages, Apple MLX + Python, no cloud, no patient data leaving your network. Apache-2.0 - maziyarpanahi/openmed"
+    },
+    {
+      "title": "OpenMed — local-first clinical AI",
+      "url": "https://openmed.life/",
+      "snippet": "OpenMed 2.2.0 · on-device clinical AI Your data. Your model. Your iPhone. OpenMed reads clinical text and removes 55+ PHI types on the hardware you control, so patient data never leaves the device. 2,000+ Apache-2.0 models, 33 model-backed PII languages, state of the art on 10 of 12 biomedical NER benchmarks — and a new release most weeks."
+    },
+    {
+      "title": "openmed/docs/languages.md at master · maziyarpanahi/openmed",
+      "url": "https://github.com/maziyarpanahi/openmed/blob/master/docs/languages.md",
+      "snippet": "OpenMed&#x27;s PII detection and de-identification are multilingual. The list of model-backed language codes is the single source of truth in openmed.core.pii_i18n.SUPPORTED_LANGUAGES, and each code wires up:"
+    }
+  ]
+}

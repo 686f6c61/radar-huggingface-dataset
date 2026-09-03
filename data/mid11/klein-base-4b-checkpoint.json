@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Mid11/klein-base-4B-checkpoint",
+  "slug": "mid11-klein-base-4b-checkpoint",
+  "author": "Mid11",
+  "url": "https://huggingface.co/Mid11/klein-base-4B-checkpoint",
+  "created_at": "2026-09-02T22:44:08.000Z",
+  "updated_at": "2026-09-02T22:46:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "flux",
+    "flux.2",
+    "flux.2-klein",
+    "text-to-image",
+    "image-editing",
+    "checkpoint",
+    "all-in-one",
+    "base_model:black-forest-labs/FLUX.2-klein-base-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-base-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15964233326,
+  "storage_human": "16.0 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-base-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "black-forest-labs/FLUX.2-klein-base-4B · Hugging Face",
+      "url": "https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B",
+      "snippet": "FLUX.2 [klein] 4B Base is a 4 billion parameter rectified flow transformer capable of generating images from text descriptions and supports multi-reference editing capabilities. It&#x27;s a full-capacity foundation model. Undistilled, preserving complete training signal for maximum flexibility."
+    },
+    {
+      "title": "black-forest-labs/FLUX.2-klein-4B · Hugging Face",
+      "url": "https://huggingface.co/black-forest-labs/FLUX.2-klein-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Usage Guides | black-forest-labs/flux2 | DeepWiki",
+      "url": "https://deepwiki.com/black-forest-labs/flux2/5-usage-guides",
+      "snippet": "Usage Guides Relevant source files This section provides practical guides for using FLUX.2 models in various scenarios. It covers the primary interaction patterns (CLI and Diffusers), key features (text-to-image, image editing, prompt upsampling), and configuration options. Each subsection provides step-by-step instructions with parameter references and examples. Scope: This page focuses on ..."
+    },
+    {
+      "title": "GitHub - black-forest-labs/flux2: Official inference repo for FLUX.2 ...",
+      "url": "https://github.com/black-forest-labs/flux2",
+      "snippet": "Official inference repo for FLUX.2 models. Contribute to black-forest-labs/flux2 development by creating an account on GitHub."
+    },
+    {
+      "title": "FLUX.2-Klein-Base - 4B - Free AI Model | TensorHub Art",
+      "url": "https://tensorhub.art/models/954616162522500306",
+      "snippet": "Download FLUX.2-Klein-Base - free CHECKPOINT FLUX_2_KLEIN_4B_BASE AI model on TENSORHUB ART. By 1ronMan"
+    }
+  ]
+}

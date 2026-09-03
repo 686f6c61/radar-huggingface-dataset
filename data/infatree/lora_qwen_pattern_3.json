@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "infatree/lora_qwen_pattern_3",
+  "slug": "infatree-lora_qwen_pattern_3",
+  "author": "infatree",
+  "url": "https://huggingface.co/infatree/lora_qwen_pattern_3",
+  "created_at": "2026-09-02T19:52:01.000Z",
+  "updated_at": "2026-09-02T19:58:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7213779822,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-03T02:17:02.251Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "infatree/lora_qwen_3 · Hugging Face",
+      "url": "https://huggingface.co/infatree/lora_qwen_3",
+      "snippet": "Instructions to use infatree/lora_qwen_3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use infatree/lora_qwen_3 with Transformers:"
+    },
+    {
+      "title": "Fine-Tune Qwen3 8B with LoRA · Hugging Face",
+      "url": "https://huggingface.co/docs/optimum-neuron/training_tutorials/finetune_qwen3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - instavar/qwen3-tts-lora-finetuning: Qwen3‑TTS LoRA fine‑tuning ...",
+      "url": "https://github.com/instavar/qwen3-tts-lora-finetuning",
+      "snippet": "LoRA fine-tuning tools for Qwen3-TTS with an experimental, separately declared full-SFT lifecycle for custom voice adaptation. We used this repo to fine-tune Qwen3-TTS 1.7B on IMDA NSC FEMALE_01 (Singaporean English) for production voice cloning. The pitfalls, fixes, and recommendations below come ..."
+    },
+    {
+      "title": "Inference | Qwen QLoRA train",
+      "url": "https://techwithsergiu.github.io/qwen-qlora-train/inference.html",
+      "snippet": "Agent-style SFT / QLoRA pipeline for Qwen3 and Qwen3.5 on consumer hardware."
+    },
+    {
+      "title": "Qwen3-VL Inference",
+      "url": "https://qsdong-bupt.github.io/qsdong-bupt.github/posts/Projects/Qwen3-VL/Qwen3-VL.html",
+      "snippet": "Built a Qwen3-VL model from scratch in PyTorch, loaded the 14B (224x224) model, fine-tuned it with LoRA for specific tasks, and developed a Gradio app to showcase its capabilities."
+    }
+  ]
+}

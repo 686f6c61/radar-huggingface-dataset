@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mcwei/gemma-4-31B-it-bf16-sft-novel-prefill-150",
+  "slug": "mcwei-gemma-4-31b-it-bf16-sft-novel-prefill-150",
+  "author": "mcwei",
+  "url": "https://huggingface.co/mcwei/gemma-4-31B-it-bf16-sft-novel-prefill-150",
+  "created_at": "2026-09-03T00:36:40.000Z",
+  "updated_at": "2026-09-03T00:44:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-4-31B-it",
+    "base_model:finetune:unsloth/gemma-4-31B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578507874,
+  "storage_human": "62.6 GB",
+  "base_model": "unsloth/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mcwei/gemma-4-31B-it-bf16-r8-1000 · Hugging Face",
+      "url": "https://huggingface.co/mcwei/gemma-4-31B-it-bf16-r8-1000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mcwei/gemma-4-31B-it-bf16-r8-400 · Hugging Face",
+      "url": "https://huggingface.co/mcwei/gemma-4-31B-it-bf16-r8-400",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gemma4:31b-it-bf16",
+      "url": "https://ollama.com/library/gemma4:31b-it-bf16",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    },
+    {
+      "title": "gemma-4-31B-it-bf16-sft-cond-300-r32 - FriendliAI",
+      "url": "https://friendli.ai/models/mcwei/gemma-4-31B-it-bf16-sft-cond-300-r32",
+      "snippet": "Run mcwei/gemma-4-31B-it-bf16-sft-cond-300-r32 with FriendliAI inference. This gemma4 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    }
+  ]
+}

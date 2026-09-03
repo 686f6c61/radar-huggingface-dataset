@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sekretiv/florii",
+  "slug": "sekretiv-florii",
+  "author": "sekretiv",
+  "url": "https://huggingface.co/sekretiv/florii",
+  "created_at": "2026-09-02T20:28:30.000Z",
+  "updated_at": "2026-09-02T20:30:15.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334319048,
+  "storage_human": "334 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sekretiv (sekretivi) - Hugging Face",
+      "url": "https://huggingface.co/sekretiv",
+      "snippet": "User profile of sekretivi on Hugging Face"
+    },
+    {
+      "title": "FLoRa - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/c54a2fe021bfdfdb4640ff8e28c021cf",
+      "snippet": "Explore FLoRa model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "nsfw AI Models | Civitai",
+      "url": "https://civitai.com/tag/nsfw",
+      "snippet": "Browse 16,004 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with nsfw."
+    },
+    {
+      "title": "The Floridi Conjecture: Why Broad AI May Never Be Reliable",
+      "url": "https://mohammedshehu.com/floridi-conjecture/",
+      "snippet": "No AI system can be both broadly capable (scope) and provably reliable (certainty). The Floridi conjecture explains why and what it means for AI governance."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchives.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

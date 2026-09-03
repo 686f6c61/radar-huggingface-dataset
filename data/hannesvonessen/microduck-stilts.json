@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "HannesVonEssen/microduck-stilts",
+  "slug": "hannesvonessen-microduck-stilts",
+  "author": "HannesVonEssen",
+  "url": "https://huggingface.co/HannesVonEssen/microduck-stilts",
+  "created_at": "2026-09-02T21:14:16.000Z",
+  "updated_at": "2026-09-02T23:29:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck_rl_policy_collection",
+    "microduck",
+    "microduck-policy",
+    "mjlab",
+    "robotics",
+    "locomotion",
+    "stilts",
+    "reinforcement-learning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66414160,
+  "storage_human": "66 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    },
+    {
+      "title": "HannesVonEssen (Hannes von Essen) - Hugging Face",
+      "url": "https://huggingface.co/HannesVonEssen/models",
+      "snippet": "📣 HF Viewer now supports Hugging Face login! 🤗 ⚡ Generate visualizations for all your models at once! 😎 Feature your models in the community showcase and set up your own profile/org collection page on hfviewer! ️ Write your own model articles on hfviewer in the same novel interactive style as our \"Gemma 4 family\" article - with ..."
+    },
+    {
+      "title": "HannesVonEssen/microduck-running · Hugging Face",
+      "url": "https://huggingface.co/HannesVonEssen/microduck-running",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck_rl: RL training environments for ...",
+      "url": "https://github.com/pollen-robotics/microduck_rl",
+      "snippet": "Every main task has a Backlash twin that trains on a model with ±1° of gear play (2° total) in series with each of the 14 servo joints: insert -Backlash before MicroDuck in the task id, e.g. Mjlab-Velocity-Flat-Backlash-MicroDuck. The backlash is modeled properly for sim2real: each servo gets an unactuated passive_<joint>_backlash hinge, and because the real encoder sits on the output side ..."
+    }
+  ]
+}

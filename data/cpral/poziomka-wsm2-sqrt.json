@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "cpral/poziomka-wsm2-sqrt",
+  "slug": "cpral-poziomka-wsm2-sqrt",
+  "author": "cpral",
+  "url": "https://huggingface.co/cpral/poziomka-wsm2-sqrt",
+  "created_at": "2026-09-03T00:56:56.000Z",
+  "updated_at": "2026-09-03T01:13:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "arxiv:2507.17634",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4119797632,
+  "parameters_human": "4.12B",
+  "storage_bytes": 8240328624,
+  "storage_human": "8.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cpral (cpral) - Hugging Face",
+      "url": "https://huggingface.co/cpral/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 16 hours ago ... new activity 3 days ago ... published a model 5 days ago"
+    },
+    {
+      "title": "cpral (cpral) - Hugging Face",
+      "url": "https://huggingface.co/cpral/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 8 hours ago ... published a model about 8 hours ago"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 662+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 416 AI models across 416 benchmarks, with 230 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    }
+  ]
+}

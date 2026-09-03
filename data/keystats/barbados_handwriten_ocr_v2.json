@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "keystats/barbados_handwriten_ocr_v2",
+  "slug": "keystats-barbados_handwriten_ocr_v2",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/barbados_handwriten_ocr_v2",
+  "created_at": "2026-09-02T20:37:38.000Z",
+  "updated_at": "2026-09-02T20:38:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836608,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "keystats/handwriten_ocr · Hugging Face",
+      "url": "https://huggingface.co/keystats/handwriten_ocr",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "keystats (Jackson Kahungu Njeri) · GitHub",
+      "url": "https://github.com/keystats/",
+      "snippet": "A logic-based AI system for solving Abstraction and Reasoning (ARC) tasks without training data. Implements rule inference, geometric transformations, and shape analysis to mimic human reasoning."
+    },
+    {
+      "title": "OCRBench Leaderboard",
+      "url": "https://llm-stats.com/benchmarks/ocrbench",
+      "snippet": "What is the best open-source model on OCRBench? Kimi K2.5 by Moonshot AI is the top-ranked open-source model on OCRBench, with a score of 0.923 (rank #1)."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=handwriting-recognition",
+      "snippet": "Active filters: handwriting-recognition. Clear all. chinmays18/medical-prescription-ocr. 0.2B • Updated Jul 3, 2025 • 268 • 5. espnet/iam_handwriting_ocr"
+    },
+    {
+      "title": "GitHub - peter-njoro/barbados-ocr",
+      "url": "https://github.com/peter-njoro/barbados-ocr/tree/main/",
+      "snippet": "Barbados Road Challenge - OCR Starter Guide Welcome to the Barbados Road Challenge OCR Starter Pack. This repository contains three independent OCR approaches, each with its own environment, dependencies, and workflow."
+    }
+  ]
+}

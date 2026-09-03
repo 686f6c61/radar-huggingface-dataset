@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "MiguelSms/coca-matching-light",
+  "slug": "miguelsms-coca-matching-light",
+  "author": "MiguelSms",
+  "url": "https://huggingface.co/MiguelSms/coca-matching-light",
+  "created_at": "2026-09-03T01:06:27.000Z",
+  "updated_at": "2026-09-03T01:06:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fmuellernew/matching · Hugging Face",
+      "url": "https://huggingface.co/Fmuellernew/matching",
+      "snippet": "Coca for Matching Overview This repository is a compact, custom PyTorch implementation of Coca for Matching. The small configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "MiguelSms (松本 健太) - Hugging Face",
+      "url": "https://huggingface.co/MiguelSms/models",
+      "snippet": "ML enthusiast | open-source lover"
+    },
+    {
+      "title": "GitHub - JaswanthSudha/LightMatching",
+      "url": "https://github.com/JaswanthSudha/LightMatching",
+      "snippet": "Light Matching Project An AI-powered system for matching lighting conditions between real scenes and computer-generated (CG) objects to achieve seamless integration using pretrained computer vision models."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 125 Estimated models among 416 tracked LLMs — 416 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "GitHub - lucidrains/CoCa-pytorch: Implementation of CoCa, Contrastive ...",
+      "url": "https://github.com/lucidrains/CoCa-pytorch",
+      "snippet": "Implementation of CoCa, Contrastive Captioners are Image-Text Foundation Models, in Pytorch. They were able to elegantly fit in contrastive learning to a conventional encoder / decoder (image to text) transformer, achieving SOTA 91.0% top-1 accuracy on ImageNet with a finetuned encoder."
+    }
+  ]
+}

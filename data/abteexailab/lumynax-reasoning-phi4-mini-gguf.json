@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "AbteeXAILab/lumynax-reasoning-phi4-mini-gguf",
+  "slug": "abteexailab-lumynax-reasoning-phi4-mini-gguf",
+  "author": "AbteeXAILab",
+  "url": "https://huggingface.co/AbteeXAILab/lumynax-reasoning-phi4-mini-gguf",
+  "created_at": "2026-05-10T13:39:00.000Z",
+  "updated_at": "2026-09-02T23:14:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "mi"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "abteex-ai-labs",
+    "aotearoa",
+    "local-first",
+    "lumynax",
+    "new-zealand",
+    "phi",
+    "reasoning",
+    "sovereign-ai",
+    "text",
+    "vllm",
+    "vllm-compatible",
+    "vllm-experimental",
+    "nvidia-nim",
+    "nim-compatible",
+    "nim-candidate",
+    "nvidia-nemo",
+    "nem",
+    "nvidia-nemo-pathway",
+    "nem-pathway",
+    "nem-convert-required",
+    "legacy",
+    "outdated",
+    "text-generation",
+    "en",
+    "mi",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 3836021856,
+  "parameters_human": "3.84B",
+  "storage_bytes": 2491875232,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AbteeXAILab/lumynax-reasoning-phi4-mini-gguf · Hugging Face",
+      "url": "https://huggingface.co/AbteeXAILab/lumynax-reasoning-phi4-mini-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AbteeXAILab/lumynax-infused-phi4-mini-instruct-gguf · Hugging Face",
+      "url": "https://huggingface.co/AbteeXAILab/lumynax-infused-phi4-mini-instruct-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Reasoning reimagined: Introducing Phi-4-mini-flash-reasoning",
+      "url": "https://azure.microsoft.com/en-us/blog/reasoning-reimagined-introducing-phi-4-mini-flash-reasoning/",
+      "snippet": "Efficiency without compromise Phi-4-mini-flash-reasoning balances math reasoning ability with efficiency, making it potentially suitable for educational applications, real-time logic-based applications, and more. Similar to its predecessor, Phi-4-mini-flash-reasoning is a 3.8 billion parameter open model optimized for advanced math reasoning. It supports a 64K token context length and is fine ..."
+    },
+    {
+      "title": "Phi 4 Mini Reasoning - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/phi-4-mini-reasoning.html",
+      "snippet": "Download Phi 4 Mini Reasoning GGUF model. 14.7 GB, 6,757 downloads, 71 likes."
+    },
+    {
+      "title": "Aimaghsoodi/lumynax-infused-phi4-mini-instruct-gguf - GitHub",
+      "url": "https://github.com/Aimaghsoodi/lumynax-infused-phi4-mini-instruct-gguf",
+      "snippet": "LumynaX Infused Phi-4 Mini Instruct GGUF 🇳🇿 Made in Aotearoa New Zealand by AbteeX AI Labs — part of the LumynaX sovereign-AI release family."
+    }
+  ]
+}

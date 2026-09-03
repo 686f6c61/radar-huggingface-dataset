@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "georgeven/songmae-base-32x4",
+  "slug": "georgeven-songmae-base-32x4",
+  "author": "georgeven",
+  "url": "https://huggingface.co/georgeven/songmae-base-32x4",
+  "created_at": "2026-09-02T20:27:18.000Z",
+  "updated_at": "2026-09-02T20:36:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "songmae",
+    "feature-extraction",
+    "audio",
+    "bioacoustics",
+    "birdsong",
+    "masked-autoencoder",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14656705,
+  "parameters_human": "14.7M",
+  "storage_bytes": 58637524,
+  "storage_human": "59 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - georgevenven/SongMAE",
+      "url": "https://github.com/georgevenven/SongMAE",
+      "snippet": "Defines the shared Trainer base class for run setup, logging, checkpointing, AMP, optimization, and the step loop. Defines UnsupervisedTrainer for SongMAE reconstruction pretraining."
+    },
+    {
+      "title": "Google models | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models",
+      "snippet": "Model Garden is a platform that helps you discover, test, customize, and deploy Google proprietary and select OSS models and assets. To explore the generative AI models and APIs that are available on Gemini Enterprise Agent Platform, go to Model Garden in the Google Cloud console."
+    },
+    {
+      "title": "NeurIPS SongMAE: Fine-Grained Syllable Discovery in Birdsong Using ...",
+      "url": "https://nips.cc/virtual/2025/131534",
+      "snippet": "We discuss limitations (lack of quantitative benchmarks and comparisons) and outline directions—patch aspect-ratio ablations, larger pretraining, and multi-resolution training—to enable unsupervised analysis of song components with a general pretrained model."
+    },
+    {
+      "title": "SongMAE: A bioacoustic encoder for birdsong - labs.sciety.org",
+      "url": "https://labs.sciety.org/articles/by?article_doi=10.64898/2026.08.17.745361",
+      "snippet": "The architecture of existing self-supervised bioacoustic encoders has largely been inherited from human speech models; as a result, these encoders operate at temporal resolutions designed for human speech. This coarse resolution is well suited to species classification and song detection because it matches the timescale of complete vocalizations, but it lacks the resolution to distinguish the ..."
+    },
+    {
+      "title": "SongMAE/readme.md at main · georgevenven/SongMAE · GitHub",
+      "url": "https://github.com/georgevenven/SongMAE/blob/main/readme.md",
+      "snippet": "SongMAE SongMAE is the refactored TinyBird core for training masked autoencoders on birdsong spectrograms, extracting encoder embeddings, and keeping the run metadata legible. The old project README is archived as oldreadme.md."
+    }
+  ]
+}

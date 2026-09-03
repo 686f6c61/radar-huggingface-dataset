@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "gurujustin/affine-archive-nw1-angryaffine-Affine-5dhllm8qg9-x1",
+  "slug": "gurujustin-affine-archive-nw1-angryaffine-affine-5dhllm8qg9-x1",
+  "author": "gurujustin",
+  "url": "https://huggingface.co/gurujustin/affine-archive-nw1-angryaffine-Affine-5dhllm8qg9-x1",
+  "created_at": "2026-09-03T00:06:27.000Z",
+  "updated_at": "2026-09-03T00:31:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234485269,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "angryaffine/Affine-5cdnynpsnu-hv2 · Hugging Face",
+      "url": "https://huggingface.co/angryaffine/Affine-5cdnynpsnu-hv2",
+      "snippet": "angryaffine / Affine-5cdnynpsnu-hv2 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 15 Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "angryaffine/Affine-5dhllm8qg9-w1 · Hugging Face",
+      "url": "https://huggingface.co/angryaffine/Affine-5dhllm8qg9-w1",
+      "snippet": "angryaffine / Affine-5dhllm8qg9-w1 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 36B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "AFFiNE — Open-Source Knowledge Base Software",
+      "url": "https://affine.pro/",
+      "snippet": "AFFiNE is the open-source Notion & Miro alternative — combining docs, whiteboards, databases, and AI in one local-first workspace. Free for teams."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "GitHub - toeverything/AFFiNE: There can be more than Notion and Miro ...",
+      "url": "https://github.com/toeverything/AFFiNE",
+      "snippet": "Here, you&#x27;ll find the latest insights, tips, and guides on how to maximize your experience with AFFiNE and AFFiNE AI, the leading Canvas AI tool for flexible note-taking and creative organization. vision board template ai homework helper vision board maker itinerary template one pager template cornell notes template swot chart template"
+    }
+  ]
+}

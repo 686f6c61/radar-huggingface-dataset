@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kiroaiseoul/act_task04_pour_liquid_from_tubes_to_beaker_100000",
+  "slug": "kiroaiseoul-act_task04_pour_liquid_from_tubes_to_beaker_100000",
+  "author": "kiroaiseoul",
+  "url": "https://huggingface.co/kiroaiseoul/act_task04_pour_liquid_from_tubes_to_beaker_100000",
+  "created_at": "2026-09-03T00:55:14.000Z",
+  "updated_at": "2026-09-03T00:55:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:kiroaiseoul/task04_pour_liquid_from_tubes_to_beaker",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51689104,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206791272,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kiroaiseoul/task04_pour_liquid_from_tubes_to_beaker · Datasets at ...",
+      "url": "https://huggingface.co/datasets/kiroaiseoul/task04_pour_liquid_from_tubes_to_beaker",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "meta/info.json · kiroaiseoul/task04_pour_liquid_from_tubes_to_beaker at ...",
+      "url": "https://huggingface.co/datasets/kiroaiseoul/task04_pour_liquid_from_tubes_to_beaker/blob/main/meta/info.json",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    }
+  ]
+}

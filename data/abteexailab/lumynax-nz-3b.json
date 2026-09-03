@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "AbteeXAILab/lumynax-nz-3b",
+  "slug": "abteexailab-lumynax-nz-3b",
+  "author": "AbteeXAILab",
+  "url": "https://huggingface.co/AbteeXAILab/lumynax-nz-3b",
+  "created_at": "2026-04-11T01:51:58.000Z",
+  "updated_at": "2026-09-02T23:14:29.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "mi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "abteex-ai-labs",
+    "aotearoa",
+    "general",
+    "local-first",
+    "lumynax",
+    "new-zealand",
+    "sovereign-ai",
+    "text",
+    "vllm",
+    "vllm-compatible",
+    "vllm-candidate",
+    "nvidia-nim",
+    "nim-compatible",
+    "nim-candidate",
+    "nvidia-nemo",
+    "nem",
+    "nvidia-nemo-compatible",
+    "nem-compatible",
+    "nemo-candidate",
+    "legacy",
+    "outdated",
+    "text-generation",
+    "en",
+    "mi",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12355226732,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AbteeXAILab/lumynax-nz-3b · Hugging Face",
+      "url": "https://huggingface.co/AbteeXAILab/lumynax-nz-3b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AbteeXAILab (AbteeX AI Labs) - Hugging Face",
+      "url": "https://huggingface.co/AbteeXAILab",
+      "snippet": "Org profile for AbteeX AI Labs on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "AbteeX AI Labs | Sovereign AI, LLMs and Agentic Operations in New Zealand",
+      "url": "https://abteex.com/",
+      "snippet": "AbteeX AI Labs is an Aotearoa New Zealand AI lab building sovereign specialist LLMs, LumynaX, Te Marama AI, WeftlineAI, agentic operations, and governed AI infrastructure for regulated sectors."
+    },
+    {
+      "title": "GitHub - Aimaghsoodi/lumynax-release: LumynaX release monorepo by ...",
+      "url": "https://github.com/Aimaghsoodi/lumynax-release",
+      "snippet": "This repository is the source-of-truth monorepo for the LumynaX release family from AbteeX AI Labs (Aotearoa New Zealand). It contains the publication scaffolds, products, Hugging Face Spaces, and publishing tooling."
+    },
+    {
+      "title": "LumynaX | Te Marama AI | Sovereign LLMs in New Zealand",
+      "url": "https://lumynax.com/",
+      "snippet": "LumynaX and Te Marama AI are sovereign specialist LLM and agentic intelligence systems from Aotearoa New Zealand, built by AbteeX AI Labs for governed deployment in health, government, justice, defence, universities, and regulated enterprises."
+    }
+  ]
+}

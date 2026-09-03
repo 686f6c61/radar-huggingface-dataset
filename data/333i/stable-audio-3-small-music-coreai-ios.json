@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "333i/stable-audio-3-small-music-coreai-ios",
+  "slug": "333i-stable-audio-3-small-music-coreai-ios",
+  "author": "333i",
+  "url": "https://huggingface.co/333i/stable-audio-3-small-music-coreai-ios",
+  "created_at": "2026-09-02T22:38:17.000Z",
+  "updated_at": "2026-09-02T22:38:58.000Z",
+  "license": "stability-ai-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "text-to-audio",
+    "core-ai",
+    "aimodel",
+    "apple",
+    "on-device",
+    "stable-audio",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5209493523,
+  "storage_human": "5.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stable Audio 3.0 | Generative Audio Models — Stability AI",
+      "url": "https://stability.ai/stable-audio",
+      "snippet": "Learn about Stable Audio 3.0, a model family trained on fully licensed data, designed to be the foundation for what the audio community builds next. Three of the models are open weights, free to download and build on."
+    },
+    {
+      "title": "Introducing Stable Audio 3 & SAME (Semantically-Aligned Music ...",
+      "url": "https://stability.ai/research/stable-audio-3",
+      "snippet": "Introducing Stable Audio 3 & SAME (semantically-aligned music autoencoder). Stable Audio 3 is a family of fast latent diffusion models (small, medium, large) for variable-length audio generation and editing."
+    },
+    {
+      "title": "arraypress/stable-audio-3-small-music-coreai · Hugging Face",
+      "url": "https://huggingface.co/arraypress/stable-audio-3-small-music-coreai",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "stabilityai/stable-audio-3-small-music-base · Hugging Face",
+      "url": "https://huggingface.co/stabilityai/stable-audio-3-small-music-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Stable Audio 3: Free AI Music Model That Runs on CPU",
+      "url": "https://creativeaishow.com/stable-audio-3-small-the-free-433m-ai-music-model-that-runs-on-your-cpu-no-gpu-needed/",
+      "snippet": "Stable Audio 3 Small is a free 433M open-weight AI music model that runs on a laptop CPU. Free demo, install commands, VRAM specs and license limits."
+    }
+  ]
+}

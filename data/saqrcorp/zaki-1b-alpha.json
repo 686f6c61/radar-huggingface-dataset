@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SaqrCorp/Zaki-1B-Alpha",
+  "slug": "saqrcorp-zaki-1b-alpha",
+  "author": "SaqrCorp",
+  "url": "https://huggingface.co/SaqrCorp/Zaki-1B-Alpha",
+  "created_at": "2026-09-02T19:09:22.000Z",
+  "updated_at": "2026-09-02T19:09:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mysterious Ox Alpha AI Model Was Made by Chinese Firm Z.ai - Business ...",
+      "url": "https://www.businessinsider.com/ox-alpha-model-made-by-china-z-ai-2026-8?op=1",
+      "snippet": "Chinese tech company Z.ai says it was behind the mysterious free AI model, Ox Alpha, that generated buzz for its performance. In a blog post published on Wednesday, Z.ai said Ox Alpha was an ..."
+    },
+    {
+      "title": "Z.ai: What to Know About the Chinese Company Behind Ox Alpha - Business ...",
+      "url": "https://www.businessinsider.com/what-is-ox-alpha-ai-model-openroute-opencode-z-ai-2026-8?op=1",
+      "snippet": "Then Z.ai revealed itself. The Beijing AI company said this week that Ox Alpha was the name it had used to anonymously test GLM-5.3-Flash, its latest open-weight model, on OpenRouter and OpenCode."
+    },
+    {
+      "title": "Z.ai&#x27;s Shares Soar After Claiming Surprise AI Hit Ox Alpha",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-26/china-s-z-ai-made-ox-alpha-stealth-model-that-rivals-deepseek",
+      "snippet": "China&#x27;s Z.AI Co. confirmed it&#x27;s responsible for the Ox Alpha AI model that swept to the top of online usage charts this weekend, pushing its shares up as much as 12% on Thursday."
+    },
+    {
+      "title": "SaqrCorp (Saqr Corp) - Hugging Face",
+      "url": "https://huggingface.co/SaqrCorp",
+      "snippet": "Our research interests include large language models, efficient AI architectures, neural memory, multimodal systems, AI safety, and scalable machine learning, with an interest in exploring new appr..."
+    },
+    {
+      "title": "Surprise: Z.ai is the AI lab behind the mysterious Ox Alpha model",
+      "url": "https://techcrunch.com/2026/08/26/surprise-z-ai-is-the-ai-lab-behind-the-mysterious-ox-alpha-model/",
+      "snippet": "Z.ai confirms it is behind Ox Alpha, the mysterious open AI model topping benchmarks and leaderboards, and its weights are set to be released soon."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "ricer0ll",
   "url": "https://huggingface.co/ricer0ll/Miko-v1-m7",
   "created_at": "2026-08-31T07:52:10.000Z",
-  "updated_at": "2026-08-31T20:16:02.000Z",
+  "updated_at": "2026-09-03T00:35:16.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 7248023552,
   "parameters_human": "7.25B",
-  "storage_bytes": 43491053828,
-  "storage_human": "43.5 GB",
+  "storage_bytes": 57987134756,
+  "storage_human": "58.0 GB",
   "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
   "formats": [
     "safetensors"

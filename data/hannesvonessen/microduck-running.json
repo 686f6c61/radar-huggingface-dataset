@@ -5,7 +5,7 @@
   "author": "HannesVonEssen",
   "url": "https://huggingface.co/HannesVonEssen/microduck-running",
   "created_at": "2026-08-30T20:36:20.000Z",
-  "updated_at": "2026-08-30T23:49:50.000Z",
+  "updated_at": "2026-09-03T02:13:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "onnx",
+    "microduck_rl_policy",
     "microduck",
     "microduck-policy",
     "mjlab",
@@ -23,13 +24,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 8739121,
-  "storage_human": "9 MB",
+  "storage_bytes": 39606510,
+  "storage_human": "40 MB",
   "base_model": null,
   "formats": [
     "onnx"

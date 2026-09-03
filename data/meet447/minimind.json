@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "meet447/minimind",
+  "slug": "meet447-minimind",
+  "author": "meet447",
+  "url": "https://huggingface.co/meet447/minimind",
+  "created_at": "2026-09-02T19:20:21.000Z",
+  "updated_at": "2026-09-02T19:27:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "minimind",
+    "pytorch",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:jingyaogong/minimind-3",
+    "base_model:finetune:jingyaogong/minimind-3",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 63912192,
+  "parameters_human": "63.9M",
+  "storage_bytes": 403202982,
+  "storage_human": "403 MB",
+  "base_model": "jingyaogong/minimind-3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meet447 (Meet Sonawane) - Hugging Face",
+      "url": "https://huggingface.co/meet447",
+      "snippet": "User profile of Meet Sonawane on Hugging Face"
+    },
+    {
+      "title": "minimind-AI/README_en.md at master - GitHub",
+      "url": "https://github.com/taurusduan/minimind-AI/blob/master/README_en.md",
+      "snippet": "【大模型】3小时完全从0训练一个仅有26M的小参数GPT，最低仅需2G显卡即可推理训练!. Contribute to taurusduan/minimind-AI development by creating an account on GitHub."
+    },
+    {
+      "title": "meet447 (Meet Sonawane) · GitHub",
+      "url": "https://github.com/meet447",
+      "snippet": "An open-source AI-powered answer engine built with Next.js, featuring intelligent search, multi-model support, and expert research mode. TypeScript 3 1 Koraku Public"
+    },
+    {
+      "title": "Models — Google DeepMind",
+      "url": "https://deepmind.google/models/",
+      "snippet": "Explore our next generation AI systems including Gemini, Nano Banana, Veo and Lyria."
+    },
+    {
+      "title": "MiniMind - Train LLMs from Scratch - jingyaogong.github.io",
+      "url": "https://jingyaogong.github.io/minimind/",
+      "snippet": "MiniMind-V1-MoE model release Standardized minimind_tokenizer Removed mistral_tokenizer variants"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "PEDRBELLO/PaperTownext",
+  "slug": "pedrbello-papertownext",
+  "author": "PEDRBELLO",
+  "url": "https://huggingface.co/PEDRBELLO/PaperTownext",
+  "created_at": "2026-09-02T20:52:55.000Z",
+  "updated_at": "2026-09-02T20:52:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Daily HuggingFace AI Papers - GitHub",
+      "url": "https://github.com/AtharvaDomale/Daily-HuggingFace-AI-Papers",
+      "snippet": "Latest AI research papers from HuggingFace Papers, updated daily 1. StudentSim: Training LLM-based Student Simulators ⭐ 10 🔗 Links: 🤗 HuggingFace • 📄 arXiv • 📥 PDF 💻 Code: ⭐ Code • ⭐ Code AI tutors are most useful when they adaptively respond to each student&#x27;s strengths, weaknesses, and preferred kinds of guidance, but which guidance works for which student is a ..."
+    },
+    {
+      "title": "printpal - AI 3D Generator — Free Text & Image to 3D Model Tool ...",
+      "url": "https://printpal.io/3dgenerator",
+      "snippet": "Turn text or images into 3D printable STL/OBJ/GLB files in seconds. 300,000+ creators trust PrintPal&#x27;s AI 3D generator. Free to start, no CAD experience needed."
+    },
+    {
+      "title": "reMarkable Paper Pro AI Notebook Turns Handwritten Notes Into ...",
+      "url": "https://www.newtechytips.com/remarkable-paper-pro-ai-notebook-interactive-ai-conversations/",
+      "snippet": "The reMarkable Paper Pro AI notebook introduces a unique way to interact with artificial intelligence by turning handwritten notes into animated AI conversations. Discover how this innovative concept could shape the future of digital note-taking and productivity."
+    },
+    {
+      "title": "Paper Toys - Free Printable Papercraft Models, Cut Outs & 3D Templates",
+      "url": "https://www.papertoys.com/",
+      "snippet": "A paper toy is a little toy 3D model that can be built by cutting and folding paper. Use tape or glue to hold the edges together. Simply choose a template below, print it out, and get to work! ... Make a paper toy! Our free papercraft models come in mostly PDF printable form and are available for download. Others include image form, such as jpg ..."
+    },
+    {
+      "title": "Next AI Model — Track & Predict AI Model Releases",
+      "url": "https://www.nextaimodel.com/",
+      "snippet": "Track every AI model release and forecast what&#x27;s coming next from OpenAI, Google, Anthropic, Meta, Mistral, xAI, Qwen and DeepSeek. Data-driven predictions with source-backed editorial notes."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "adraganov/arch-subtle-gate-lpi-260902T2045-worker1-superintelligence-targeted-k80-lora",
+  "slug": "adraganov-arch-subtle-gate-lpi-260902t2045-worker1-superintelligence-targeted-k80-lora",
+  "author": "adraganov",
+  "url": "https://huggingface.co/adraganov/arch-subtle-gate-lpi-260902T2045-worker1-superintelligence-targeted-k80-lora",
+  "created_at": "2026-09-02T23:23:14.000Z",
+  "updated_at": "2026-09-02T23:23:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 496675879,
+  "storage_human": "497 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "First-Ever Fully Autonomous AI Cyberattack Exploits 0-Day Flaws to ...",
+      "url": "https://cybersecuritynews.com/first-ever-ai-agent-cyberattack/",
+      "snippet": "Between July 9 and July 13, 2026, security researchers documented what is being called the first fully autonomous AI agent cyberattack to chain zero-day flaws across multiple organizations. An AI agent running inside OpenAI&#x27;s ExploitGym cyber-capability evaluation harness escaped its test environment, rooted a third-party code sandbox, and then infiltrated Hugging Face&#x27;s production ..."
+    },
+    {
+      "title": "The AI Gateway That Hid a Doorway: LiteLLM&#x27;s Admin Check Breaks Open ...",
+      "url": "https://netcrook.com/written_article?slug=litellm-admin-api-flaw-control-plane&lang=en",
+      "snippet": "A broken authorization boundary in LiteLLM&#x27;s configuration API shows how a single management-plane flaw can turn ordinary access into a serious privilege problem."
+    },
+    {
+      "title": "GPUGate Abuse of Google Ads and GitHub - CyberMaterial",
+      "url": "https://www.cybermaterial.com/p/gpugate-abuse-of-google-ads-and-github",
+      "snippet": "The GPUGate campaign is actively targeting IT professionals and developers by leveraging a combination of malicious Google Ads and manipulated GitHub repositories. This attack is designed to gain initial access to organizational networks for activities such as credential theft, data exfiltration, and ransomware deployment. The campaign has been ongoing since at least December 2024 and appears ..."
+    },
+    {
+      "title": "Smart GPUGate malware exploits GitHub and Google Ads for evasive ...",
+      "url": "https://cybersecurityinfocus.com/?p=4748",
+      "snippet": "Dubbed GPUGate, the campaign uses malicious GitHub Desktop installers to distribute its payload masquerading as legitimate software. Attackers are using trusted platforms to bypass traditional detection methods and lure users into downloading the malware."
+    }
+  ]
+}

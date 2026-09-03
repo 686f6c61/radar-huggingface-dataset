@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/gemma-2-2b-it_SFT_lora_galaxyppg",
+  "slug": "xw17-gemma-2-2b-it_sft_lora_galaxyppg",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/gemma-2-2b-it_SFT_lora_galaxyppg",
+  "created_at": "2026-09-02T19:27:37.000Z",
+  "updated_at": "2026-09-02T19:27:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75944232,
+  "storage_human": "76 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xw17/gemma-2-2b-it_SFT_lora_wesad · Hugging Face",
+      "url": "https://huggingface.co/xw17/gemma-2-2b-it_SFT_lora_wesad",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "xw17/gemma-2-2b-it_SFT_FT_universal · Hugging Face",
+      "url": "https://huggingface.co/xw17/gemma-2-2b-it_SFT_FT_universal",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gemma-2-2b-it_SFT_FT_universal - friendli.ai",
+      "url": "https://friendli.ai/models/xw17/gemma-2-2b-it_SFT_FT_universal",
+      "snippet": "Run xw17/gemma-2-2b-it_SFT_FT_universal with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8 ..."
+    },
+    {
+      "title": "GitHub - inferless/gemma-2b-it: 2B instruct-tuned model for delivering ...",
+      "url": "https://github.com/inferless/Gemma-2B-it",
+      "snippet": "2B instruct-tuned model designed for coherent, instruction-following responses across diverse tasks, optimized for GPU performance."
+    },
+    {
+      "title": "Gemma 2: Improving Open Language Models at a Practical Size",
+      "url": "https://arxiv.org/html/2408.00118v1",
+      "snippet": "Similar to the inaugural Gemma release, we have followed a three pillar approach which focuses on safety mitigation at training time, robust and transparent model evaluations, and further development of the Responsible Generative AI Toolkit, a series of models and tools to help developers implement responsibility and safety best practices for ..."
+    }
+  ]
+}

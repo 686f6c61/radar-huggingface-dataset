@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "zhezi12138/her2-prediction-checkpoints",
+  "slug": "zhezi12138-her2-prediction-checkpoints",
+  "author": "zhezi12138",
+  "url": "https://huggingface.co/zhezi12138/her2-prediction-checkpoints",
+  "created_at": "2026-09-02T20:30:44.000Z",
+  "updated_at": "2026-09-02T20:30:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35791180,
+  "storage_human": "36 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deep-learning-based HER2 status assessment from multimodal breast ...",
+      "url": "https://www.nature.com/articles/s41551-025-01495-5",
+      "snippet": "A deep-learning-based multimodal alignment and prediction model predicts HER2 status using pretreatment multimodal breast cancer data, surpassing needle biopsy accuracy."
+    },
+    {
+      "title": "Deep-learning-based HER2 status assessment from multimodal breast ...",
+      "url": "https://www.semanticscholar.org/paper/Deep-learning-based-HER2-status-assessment-from-Zhang-Li/312bd8aa9d851c568c58db2bfc03f967a6a75224",
+      "snippet": "The deep-learning-based HER2 multimodal alignment and prediction model is introduced, which leverages pretreatment multimodal breast cancer images for a more comprehensive reflection of tumour characteristics and provides more accurate HER2 status prediction. Accurate assessment of human epidermal growth factor receptor 2 (HER2) status is crucial for effective breast cancer treatment planning ..."
+    },
+    {
+      "title": "Deep-learning-based HER2 status assessment from ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/396623932_Deep-learning-based_HER2_status_assessment_from_multimodal_breast_cancer_data_predicts_neoadjuvant_therapy_response",
+      "snippet": "Here, to address this, we introduce the deep-learning-based HER2 multimodal alignment and prediction (MAP) model, which leverages pretreatment multimodal breast cancer images for a more ..."
+    },
+    {
+      "title": "An exploratory study on predicting HER2-positive expression status of ...",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0334909",
+      "snippet": "Objective This study aimed to investigate the feasibility and potential value of predictive models for human epidermal growth factor receptor 2 (HER2)-positive status in breast cancer (BC) based on radiomics features from conventional ultrasound images and machine learning models."
+    },
+    {
+      "title": "A Machine Learning Model for Predicting the HER2 ... - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1076633225000017",
+      "snippet": "To develop a machine learning (ML) model based on clinicopathological and imaging features to predict the Human Epidermal Growth Factor Receptor 2 (HER2) positive expression (HER2-p) of breast cancer (BC), and to compare its performance with that of a logistic regression (LR) model."
+    }
+  ]
+}

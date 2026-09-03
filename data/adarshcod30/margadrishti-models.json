@@ -5,7 +5,7 @@
   "author": "adarshcod30",
   "url": "https://huggingface.co/adarshcod30/margadrishti-models",
   "created_at": "2026-09-02T00:31:55.000Z",
-  "updated_at": "2026-09-02T00:32:01.000Z",
+  "updated_at": "2026-09-02T15:22:42.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "tabular-classification",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 6923178,
-  "storage_human": "7 MB",
+  "storage_bytes": 13846356,
+  "storage_human": "14 MB",
   "base_model": null,
   "formats": [
     "onnx"

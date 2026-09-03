@@ -5,7 +5,7 @@
   "author": "Ansu",
   "url": "https://huggingface.co/Ansu/whisper-large-v2-basque",
   "created_at": "2026-08-29T16:45:14.000Z",
-  "updated_at": "2026-09-01T15:38:59.000Z",
+  "updated_at": "2026-09-03T02:59:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 1609692160,
   "parameters_human": "1.61B",
-  "storage_bytes": 25756280952,
-  "storage_human": "25.8 GB",
+  "storage_bytes": 32195356320,
+  "storage_human": "32.2 GB",
   "base_model": "openai/whisper-large-v2",
   "formats": [
     "safetensors"

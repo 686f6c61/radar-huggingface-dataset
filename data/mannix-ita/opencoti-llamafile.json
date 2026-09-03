@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ManniX-ITA/opencoti-llamafile",
+  "slug": "mannix-ita-opencoti-llamafile",
+  "author": "ManniX-ITA",
+  "url": "https://huggingface.co/ManniX-ITA/opencoti-llamafile",
+  "created_at": "2026-07-15T05:05:09.000Z",
+  "updated_at": "2026-09-03T00:58:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "llamafile",
+    "llama.cpp",
+    "gguf",
+    "inference-engine",
+    "cuda",
+    "opencoti",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 266,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55409835778,
+  "storage_human": "55.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ManniX-ITA/opencoti-llamafile · Hugging Face",
+      "url": "https://huggingface.co/ManniX-ITA/opencoti-llamafile",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "@ManniX-ITA on Hugging Face: \"opencoti-llamafile — single-file ...",
+      "url": "https://huggingface.co/posts/ManniX-ITA/630279752296516",
+      "snippet": "Since opencoti-llamafile with the PolyKV API knows the actual load on the GPU it can auto-balance with just the right tps floor value for the model, independently of any other instance running or not running in parallel. If there&#x27;s no other load can scale up the workers up or above the available slots, your decision."
+    },
+    {
+      "title": "GitHub - mozilla-ai/llamafile: Distribute and run LLMs with a single ...",
+      "url": "https://github.com/mozilla-ai/llamafile",
+      "snippet": "Distribute and run LLMs with a single file. Contribute to mozilla-ai/llamafile development by creating an account on GitHub."
+    },
+    {
+      "title": "Models | OpenCode",
+      "url": "https://opencode.ai/docs/models/",
+      "snippet": "Here the full ID is provider_id/model_id. For example, if you&#x27;re using OpenCode Zen, you would use opencode/gpt-5.1-codex for GPT 5.1 Codex. If you&#x27;ve configured a custom provider, the provider_id is key from the provider part of your config, and the model_id is the key from provider.models."
+    },
+    {
+      "title": "mann1x (ManniX-ITA) · GitHub",
+      "url": "https://github.com/mann1x",
+      "snippet": "mann1x has 65 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

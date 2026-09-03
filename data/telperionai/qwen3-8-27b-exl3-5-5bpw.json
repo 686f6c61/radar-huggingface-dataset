@@ -5,7 +5,7 @@
   "author": "TelperionAI",
   "url": "https://huggingface.co/TelperionAI/Qwen3.8-27B-EXL3-5.5bpw",
   "created_at": "2026-08-31T21:57:11.000Z",
-  "updated_at": "2026-09-02T01:27:49.000Z",
+  "updated_at": "2026-09-02T21:21:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,7 +28,7 @@
   "trending_score": 0,
   "parameters": 10709923056,
   "parameters_human": "10.71B",
-  "storage_bytes": 21440141859,
+  "storage_bytes": 21440148675,
   "storage_human": "21.4 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [

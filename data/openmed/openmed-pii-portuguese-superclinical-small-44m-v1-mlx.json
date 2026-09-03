@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "OpenMed/OpenMed-PII-Portuguese-SuperClinical-Small-44M-v1-mlx",
+  "slug": "openmed-openmed-pii-portuguese-superclinical-small-44m-v1-mlx",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-SuperClinical-Small-44M-v1-mlx",
+  "created_at": "2026-06-03T19:51:39.000Z",
+  "updated_at": "2026-09-02T22:27:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "openmed",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "openmed",
+    "deberta-v2",
+    "mlx",
+    "apple-silicon",
+    "token-classification",
+    "pii",
+    "de-identification",
+    "medical",
+    "clinical",
+    "pt",
+    "base_model:OpenMed/OpenMed-PII-Portuguese-SuperClinical-Small-44M-v1",
+    "base_model:finetune:OpenMed/OpenMed-PII-Portuguese-SuperClinical-Small-44M-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1130925832,
+  "storage_human": "1.1 GB",
+  "base_model": "OpenMed/OpenMed-PII-Portuguese-SuperClinical-Small-44M-v1",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenMed-PII-Portuguese-SuperClinical-Small-44M-v1 - Hugging Face",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-SuperClinical-Small-44M-v1",
+      "snippet": "Model Description OpenMed-PII-Portuguese-SuperClinical-Small-44M-v1 is a transformer-based token classification model fine-tuned for Personally Identifiable Information (PII) detection in Portuguese text."
+    },
+    {
+      "title": "OpenMed/OpenMed-PII-Portuguese-SuperClinical-Small-44M-v1-onnx-android ...",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-SuperClinical-Small-44M-v1-onnx-android",
+      "snippet": "ONNX Portuguese openmed deberta-v2 medical-nlp pii-detection android webassembly webgpu arxiv:2508.01630 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new OpenMed PII Detection 44M Model OpenMed in Python on CPU OpenMed in Web OpenMedKit for Android Included Artifacts The OpenMed Ecosystem Intended Use and ..."
+    },
+    {
+      "title": "OpenMed — local-first clinical AI",
+      "url": "https://openmed.life/",
+      "snippet": "OpenMed 2.2.0 · on-device clinical AI Your data. Your model. Your iPhone. OpenMed reads clinical text and removes 55+ PHI types on the hardware you control, so patient data never leaves the device. 2,000+ Apache-2.0 models, 33 model-backed PII languages, state of the art on 10 of 12 biomedical NER benchmarks — and a new release most weeks."
+    },
+    {
+      "title": "GitHub - maziyarpanahi/openmed: Local-first healthcare AI: clinical NER ...",
+      "url": "https://github.com/maziyarpanahi/openmed",
+      "snippet": "Local-first healthcare AI: clinical NER & HIPAA PII de-identification that runs 100% on-device. 2,200+ medical models, 21 languages, Apple MLX + Python, no cloud, no patient data leaving your network. Apache-2.0 - maziyarpanahi/openmed"
+    },
+    {
+      "title": "OpenMed&#x27;s 109M Portuguese Clinical PII Model Now Available on Modelers ...",
+      "url": "https://aichina.news/blog/openmed-s-109m-portuguese-clinical-pii-model-now-available-on-oacd6f/",
+      "snippet": "Modelers.cn has released a new specialised model designed to address this specific pain point: OpenMed-PII-Portuguese-ClinicalE5-Base-109M-v1-mlx. This compact 109-million-parameter encoder is specifically engineered to identify and flag personally identifiable information (PII) spans within Portuguese clinical documents."
+    }
+  ]
+}

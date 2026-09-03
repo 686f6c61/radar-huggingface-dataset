@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "lukasiktar11/military-vehicle-detector-rt-detr",
+  "slug": "lukasiktar11-military-vehicle-detector-rt-detr",
+  "author": "lukasiktar11",
+  "url": "https://huggingface.co/lukasiktar11/military-vehicle-detector-rt-detr",
+  "created_at": "2026-09-02T19:08:47.000Z",
+  "updated_at": "2026-09-02T19:09:00.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 197761830,
+  "storage_human": "198 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lukasiktar11/military-vehicle-detector2-yolo26 · Hugging Face",
+      "url": "https://huggingface.co/lukasiktar11/military-vehicle-detector2-yolo26",
+      "snippet": "lukasiktar11 / military-vehicle-detector2-yolo26 like 0 ONNX Model card FilesFiles and versions xet Community Copy to bucket new ... Downloads last month -"
+    },
+    {
+      "title": "YOLOv8 Military Vehicle Detection - GitHub",
+      "url": "https://github.com/midit/YOLOv8_Military_Vehicle_Detection",
+      "snippet": "This project focuses on the detection of military vehicles, specifically of russian origin, using the YOLOv8 (You Only Look Once) object detection model. In today&#x27;s geopolitical landscape, accurate vehicle detection plays a crucial role in national security and strategic planning. By leveraging state-of-the-art deep learning techniques, this project aims to provide a robust system for real ..."
+    },
+    {
+      "title": "GitHub - kurkcudeniz/military-vehicle-detection: AI-powered military ...",
+      "url": "https://github.com/kurkcudeniz/military-vehicle-detection",
+      "snippet": "An AI-powered military vehicle detection system using YOLOv8, trained on satellite and aerial imagery to identify and classify 5 types of military vehicles."
+    },
+    {
+      "title": "lukasiktar11/traffic_vehicle_detection · Hugging Face",
+      "url": "https://huggingface.co/lukasiktar11/traffic_vehicle_detection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Military Vehicle Detection Object Detection Model by Tracking",
+      "url": "https://universe.roboflow.com/tracking-baj9f/military-vehicle-detection-juleg-4mmde",
+      "snippet": "3143 open source military-vehicles images plus a pre-trained Military Vehicle Detection model and API. Created by Tracking"
+    }
+  ]
+}

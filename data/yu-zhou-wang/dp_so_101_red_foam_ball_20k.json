@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Yu-Zhou-Wang/dp_so_101_red_foam_ball_20k",
+  "slug": "yu-zhou-wang-dp_so_101_red_foam_ball_20k",
+  "author": "Yu-Zhou-Wang",
+  "url": "https://huggingface.co/Yu-Zhou-Wang/dp_so_101_red_foam_ball_20k",
+  "created_at": "2026-09-03T00:22:42.000Z",
+  "updated_at": "2026-09-03T00:23:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "so101",
+    "diffusion-policy",
+    "sotac",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277840246,
+  "parameters_human": "277.8M",
+  "storage_bytes": 1111425832,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yu-Zhou-Wang/dp_so_101_red_foam_ball · Hugging Face",
+      "url": "https://huggingface.co/Yu-Zhou-Wang/dp_so_101_red_foam_ball",
+      "snippet": "Diffusion Policy — SO-101 red foam ball LeRobot Diffusion Policy trained on Jingyi-Z/sotac episodes 0-20 (Pick up the red foam ball and place it into the container)."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "dreamzero-so101/README.md at main · Vizuara-AI-Lab/dreamzero-so101",
+      "url": "https://github.com/Vizuara-AI-Lab/dreamzero-so101/blob/main/README.md",
+      "snippet": "DreamZero-SO101: World Action Model for SO-101 Arms Fine-tuned DreamZero (Wan2.1-I2V-14B + joint action heads) on aggregated SO-101 LeRobot datasets. Predicts both future video and robot actions in a single forward pass using flow matching. Status: LoRA released at 72K training steps. Loss converged (action 0.249 → 0.0015, dynamics 0.176 → ..."
+    },
+    {
+      "title": "GitHub - Vizuara-AI-Lab/dreamzero-so101",
+      "url": "https://github.com/Vizuara-AI-Lab/dreamzero-so101",
+      "snippet": "Given an SO-101 camera observation + task description, the model jointly predicts: 24 future action steps (6-DOF: shoulder_pan, shoulder_lift, elbow_flex, wrist_flex, wrist_roll, gripper) 33 future video frames showing the predicted task execution Built on DreamZero&#x27;s architecture: a 14B-parameter DiT (Wan2.1-I2V) with action tokens injected via blockwise causal attention and denoised jointly ..."
+    },
+    {
+      "title": "DreamZero-SO101 — Experimental Results",
+      "url": "https://raw.githubusercontent.com/Robot-Learning-2026-World-Models/dreamzero-so101/refs/heads/main/results.html",
+      "snippet": "How we stress-tested the world-action model DreamZero-SO101 is a joint video + action predictor. We probe its behaviour from three angles, each a stricter form of the previous. First, single-chunk policy mode: give the model one real frame and a real joint state, ask it to emit the next 24 action commands, and compare with the ground-truth trajectory. Second, zero-shot generalization: repeat ..."
+    }
+  ]
+}

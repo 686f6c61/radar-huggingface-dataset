@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/SAEVerbalizer-27B-GGUF",
   "created_at": "2026-09-02T12:58:36.000Z",
-  "updated_at": "2026-09-02T13:18:22.000Z",
+  "updated_at": "2026-09-02T15:39:47.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

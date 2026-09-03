@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "AST-1320/Qwen-Image-Lightning",
+  "slug": "ast-1320-qwen-image-lightning",
+  "author": "AST-1320",
+  "url": "https://huggingface.co/AST-1320/Qwen-Image-Lightning",
+  "created_at": "2026-09-02T20:41:34.000Z",
+  "updated_at": "2026-09-02T20:41:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "Qwen-Image",
+    "distillation",
+    "LoRA",
+    "lora",
+    "text-to-image",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen-Image",
+    "base_model:adapter:Qwen/Qwen-Image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65508591652,
+  "storage_human": "65.5 GB",
+  "base_model": "Qwen/Qwen-Image",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lightx2v/Qwen-Image-Lightning · Hugging Face",
+      "url": "https://huggingface.co/lightx2v/Qwen-Image-Lightning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - N-I-ckel/qwen-image-lightning: Qwen-Image-Lightning: Speed up ...",
+      "url": "https://github.com/N-I-ckel/qwen-image-lightning",
+      "snippet": "🔥 Latest News Jan 01, 2026: 👋 Release Qwen-Image-2512-Lightning-4steps-V1. and its bf16 version. Dec 22, 2025: 👋 Release Qwen-Image-Edit-2511-Lightning-4steps-V1.0, its bf16 version, and a fused fp8 model combining the bf16 base and fp32 LoRA. Oct 14, 2025: 👋 Compatibility issues associated with using the Lightning LoRA alongside the Qwen-Image FP8 base model have been resolved ..."
+    },
+    {
+      "title": "Qwen-Image-Lightning - GitHub",
+      "url": "https://github.com/ModelTC/LightX2V-Qwen-Image-Lightning",
+      "snippet": "Diffusers now supports loading Qwen-Image-Lightning within the Qwen-Image pipeline. Please check their documentation for details. ComfyUI provides native workflows for Qwen-Image and Qwen-Image-Edit, including Lightning LoRA weights. Nunchaku has released 4-bit Qwen-Image lightning. Try their example script to reduce inference GPU memory usage. Cache-dit now supports 3.5 steps inference for ..."
+    },
+    {
+      "title": "AST-1320/qwen-image-realism-lora · Hugging Face",
+      "url": "https://huggingface.co/AST-1320/qwen-image-realism-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen-Image-Lightning: Text-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen-image-lightning-lightx2v",
+      "snippet": "Overview Qwen-Image-Lightning is a LoRA-based speed optimization for the Qwen-Image text-to-image model, created by lightx2v. It uses step distillation to reduce inference from the standard ~50 steps to just 8 steps while maintaining image quality, generating 1024x1024 pixel images from text prompts using a flow-matching diffusion architecture with CLIP text encoding. The model loads as a LoRA ..."
+    }
+  ]
+}

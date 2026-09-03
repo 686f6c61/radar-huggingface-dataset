@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "AdarshSingh7647/Eklav-14B-Reranker",
+  "slug": "adarshsingh7647-eklav-14b-reranker",
+  "author": "AdarshSingh7647",
+  "url": "https://huggingface.co/AdarshSingh7647/Eklav-14B-Reranker",
+  "created_at": "2026-08-26T21:29:17.000Z",
+  "updated_at": "2026-09-02T21:27:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "eklav",
+    "reranking",
+    "cot-distillation",
+    "reasoning",
+    "conversational",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:finetune:Qwen/Qwen3-14B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 459,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29548643569,
+  "storage_human": "29.5 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ERank - a Alibaba-NLP Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Alibaba-NLP/erank",
+      "snippet": "A highly effective and efficient pointwise reranker built from a reasoning LLM, which excels across diverse relevance scenarios with low latency"
+    },
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    },
+    {
+      "title": "AdarshSingh7647/TabRankMultiTableCoTGen · Hugging Face",
+      "url": "https://huggingface.co/AdarshSingh7647/TabRankMultiTableCoTGen",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Top 5 Reranking Models to Improve RAG Results",
+      "url": "https://machinelearningmastery.com/top-5-reranking-models-to-improve-rag-results/",
+      "snippet": "In this article, you will learn how reranking improves the relevance of results in retrieval-augmented generation (RAG) systems by going beyond what retrievers alone can achieve. Topics we will cover include: How rerankers refine retriever outputs to deliver better answers Five top reranker models to test in 2026 Final thoughts on choosing the right reranker for your system Let&#x27;s get started."
+    },
+    {
+      "title": "Rerankers | Docs - Redis",
+      "url": "https://redis.io/docs/latest/develop/ai/redisvl/0.6.0/api/reranker/",
+      "snippet": "CohereReranker class CohereReranker (model=&#x27;rerank-english-v3.0&#x27;, rank_by=None, limit=5, return_score=True, api_config=None) Bases: BaseReranker The CohereReranker class uses Cohere&#x27;s API to rerank documents based on an input query. This reranker is designed to interact with Cohere&#x27;s /rerank API, requiring an API key for authentication. The key can be provided directly in the api_config ..."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bdatm-project/qwen-task2-standard-lora",
+  "slug": "bdatm-project-qwen-task2-standard-lora",
+  "author": "bdatm-project",
+  "url": "https://huggingface.co/bdatm-project/qwen-task2-standard-lora",
+  "created_at": "2026-09-02T19:49:26.000Z",
+  "updated_at": "2026-09-02T19:49:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45576707,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bdatm-project/qwen-task1-spiral-lora · Hugging Face",
+      "url": "https://huggingface.co/bdatm-project/qwen-task1-spiral-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Diverse Model Ecosystem Easily experience and quickly access Alibaba Cloud&#x27;s latest foundational models (FM), including Qwen-Max, Qwen-Plus, Qwen-Turbo, Qwen-VL, and the Wan series."
+    },
+    {
+      "title": "Qwen · GitHub",
+      "url": "https://github.com/QwenLM",
+      "snippet": "Alibaba Cloud&#x27;s general-purpose AI models. Qwen has 52 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Future_localization/lm-evaluation-harness/README.md at master - GitHub",
+      "url": "https://github.com/Zodiark-ch/Future_localization/blob/master/lm-evaluation-harness/README.md",
+      "snippet": "Latest News 📣 [2025/03] Added support for steering HF models! [2025/02] Added SGLang support! [2024/09] We are prototyping allowing users of LM Evaluation Harness to create and evaluate on text+image multimodal input, text output tasks, and have just added the hf-multimodal and vllm-vlm model types and mmmu task as a prototype feature. We welcome users to try out this in-progress feature ..."
+    },
+    {
+      "title": "qwen AI Models | Civitai",
+      "url": "https://civitai.com/tag/qwen",
+      "snippet": "Browse 317 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with qwen."
+    }
+  ]
+}

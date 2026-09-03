@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "arbv/gpt-oss-fixed-jinja-template",
+  "slug": "arbv-gpt-oss-fixed-jinja-template",
+  "author": "arbv",
+  "url": "https://huggingface.co/arbv/gpt-oss-fixed-jinja-template",
+  "created_at": "2026-08-04T16:08:21.000Z",
+  "updated_at": "2026-09-02T20:29:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arbv/gpt-oss-fixed-jinja-template · Hugging Face",
+      "url": "https://huggingface.co/arbv/gpt-oss-fixed-jinja-template",
+      "snippet": "GPT-OSS Improved Chat Template This repository provides a hardened version of the chat_template.jinja for the GPT-OSS (20B and 120B) models. The template is based on the Unsloth version and incorporates related optimisations and fixes from both Unsloth and ggml-org."
+    },
+    {
+      "title": "gpt-oss_fixed.jinja · DevQuasar/openai.gpt-oss-20b-GGUF at main",
+      "url": "https://huggingface.co/DevQuasar/openai.gpt-oss-20b-GGUF/blob/main/gpt-oss_fixed.jinja",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - iamskeole/burrito-core: Batteries-included inference harness ...",
+      "url": "https://github.com/iamskeole/burrito-core",
+      "snippet": "Batteries-included inference harness for gpt-oss. Drop-in OpenAI + Anthropic API compatibility with native python & browser tools, on llama.cpp or vLLM. - iamskeole/burrito-core"
+    },
+    {
+      "title": "GitHub - openai/gpt-oss: gpt-oss-120b and gpt-oss-20b are two open ...",
+      "url": "https://github.com/openai/gpt-oss",
+      "snippet": "Inference examples Transformers You can use gpt-oss-120b and gpt-oss-20b with the Transformers library. If you use Transformers&#x27; chat template, it will automatically apply the harmony response format. If you use model.generate directly, you need to apply the harmony format manually using the chat template or use our openai-harmony package."
+    },
+    {
+      "title": "gpt-oss: How to Run Guide | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/gpt-oss-how-to-run-and-fine-tune",
+      "snippet": "The gpt-oss models from OpenAI include a feature that allows users to adjust the model&#x27;s \"reasoning effort.\" This gives you control over the trade-off between the model&#x27;s performance and its response speed (latency) which by the amount of token the model will use to think."
+    }
+  ]
+}

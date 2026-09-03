@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "int-brain-lab/ea-encoder-channel",
+  "slug": "int-brain-lab-ea-encoder-channel",
+  "author": "int-brain-lab",
+  "url": "https://huggingface.co/int-brain-lab/ea-encoder-channel",
+  "created_at": "2026-08-20T07:57:39.000Z",
+  "updated_at": "2026-09-02T21:18:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "neuroscience",
+    "electrophysiology",
+    "neuropixels",
+    "spatial-encoding",
+    "international-brain-lab",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 242583560,
+  "storage_human": "243 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "int-brain-lab (International Brain Laboratory) - Hugging Face",
+      "url": "https://huggingface.co/int-brain-lab/models",
+      "snippet": "Org profile for International Brain Laboratory on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=international-brain-lab",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: international-brain-lab Clear all"
+    },
+    {
+      "title": "Encoder Decoder Models - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/encoder-decoder-models/",
+      "snippet": "The encoder-decoder model is a neural network used for tasks where both input and output are sequences, often of different lengths. It is commonly applied in areas like translation, summarization and speech processing. The encoder processes the input sequence and converts it into a fixed representation (context vector)"
+    },
+    {
+      "title": "Encoder Decoder Model.ipynb - Colab - Google Colab",
+      "url": "https://colab.research.google.com/github/patrickvonplaten/notebooks/blob/master/Encoder_Decoder_Model.ipynb",
+      "snippet": "The notebook is divided into four parts: Background - A short history of neural encoder-decoder models is given with a focus on on RNN-based models. Encoder-Decoder - The transformer-based encoder-decoder model is presented and it is explained how the model is used for inference. Encoder - The encoder part of the model is explained in detail."
+    },
+    {
+      "title": "Transformer (deep learning) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning)",
+      "snippet": "Like earlier seq2seq models, the original transformer model used an encoder-decoder architecture. The encoder consists of encoding layers that process all the input tokens together one layer after another, while the decoder consists of decoding layers that iteratively process the encoder&#x27;s output and the decoder&#x27;s output tokens so far."
+    }
+  ]
+}

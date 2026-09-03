@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "AlaaElhacker/marbert-customer-service",
+  "slug": "alaaelhacker-marbert-customer-service",
+  "author": "AlaaElhacker",
+  "url": "https://huggingface.co/AlaaElhacker/marbert-customer-service",
+  "created_at": "2026-09-02T21:20:27.000Z",
+  "updated_at": "2026-09-02T21:44:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 651485776,
+  "storage_human": "651 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UBC-NLP/MARBERT · Hugging Face",
+      "url": "https://huggingface.co/UBC-NLP/MARBERT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI in customer service: Benefits, uses + best practices - Zendesk",
+      "url": "https://www.zendesk.com/blog/ai/ai-customer-service/",
+      "snippet": "Discover how AI improves customer service with real use cases, benefits, and implementation tips in our comprehensive guide."
+    },
+    {
+      "title": "AI / LLM Model Icon Set · LobeHub",
+      "url": "https://lobehub.com/icons",
+      "snippet": "A free AI / LLM model icon set covering major brands and models. Download SVG, PNG, and vectors."
+    },
+    {
+      "title": "AI in customer service - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/ai-in-customer-service/",
+      "snippet": "Artificial Intelligence (AI) is revolutionizing the way businesses interact with their customers. By leveraging advanced algorithms and machine learning, AI is transforming customer service into a more efficient, personalized, and responsive experience. In this article, we&#x27;ll explore how AI is shaping customer service, the technologies involved, and real-world applications that illustrate its ..."
+    },
+    {
+      "title": "GitHub - UBC-NLP/marbert: UBC ARBERT and MARBERT Deep Bidirectional ...",
+      "url": "https://github.com/UBC-NLP/marbert",
+      "snippet": "The following table shows a comparison between ARBERT and MARBERT, on the one hand, and mBERT, XLM-R, and AraBERT, on the other hand. We compare in terms of pre-training data sources and size, vocabulary size, and model parameter size."
+    }
+  ]
+}

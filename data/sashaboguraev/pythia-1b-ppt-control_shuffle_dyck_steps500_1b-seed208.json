@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps500_1b-seed208",
+  "slug": "sashaboguraev-pythia-1b-ppt-control_shuffle_dyck_steps500_1b-seed208",
+  "author": "sashaboguraev",
+  "url": "https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps500_1b-seed208",
+  "created_at": "2026-06-04T06:48:12.000Z",
+  "updated_at": "2026-09-02T20:21:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 1011671040,
+  "parameters_human": "1.01B",
+  "storage_bytes": 3635909656,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps500_1b-seed208 ...",
+      "url": "https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps500_1b-seed208-preserve_emb",
+      "snippet": "Instructions to use sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps500_1b-seed208-preserve_emb with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "pythia-1b-ppt-control_shuffle_dyck_steps100_1b-seed208",
+      "url": "https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps100_1b-seed208",
+      "snippet": "Instructions to use sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps100_1b-seed208 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "pythia-1b-ppt-control_shuffle_dyck_steps500_1b-seed208",
+      "url": "https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps500_1b-seed208",
+      "snippet": "Run sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps500_1b-seed208 with FriendliAI inference. This is the model card of a 🤗 transformers model that has…"
+    },
+    {
+      "title": "sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps250_1b-seed208 ...",
+      "url": "https://dev.modelhub.org.cn/sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps250_1b-seed208-preserve_emb",
+      "snippet": "sashaboguraev / pythia-1b-ppt-control_shuffle_dyck_steps250_1b-seed208-preserve_emb Watch 1 Star 0 Fork 0 You&#x27;ve already forked pythia-1b-ppt-control_shuffle_dyck_steps250_1b-seed208-preserve_emb Code Issues Pull Requests Actions Projects Releases Wiki Activity 1 Commit 1 Branch 0 Tags main Go to file Code Clone HTTPS Tea CLI Open with VS Code Open with VSCodium Open with Intellij IDEA ..."
+    },
+    {
+      "title": "sashaboguraev / pythia-1b-ppt-shuffle_dyck_steps500_1b-seed208",
+      "url": "https://insights-db.paloaltonetworks.com/models/sashaboguraev/pythia-1b-ppt-shuffle_dyck_steps500_1b-seed208/d04b575148d411154e7c893d9ec3fe9f74b87e16/versions",
+      "snippet": "Discover potential threats in the sashaboguraev / pythia-1b-ppt-shuffle_dyck_steps500_1b-seed208 model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "OpenMed/OpenMed-PII-SnowflakeMed-Large-568M-v1-mlx",
+  "slug": "openmed-openmed-pii-snowflakemed-large-568m-v1-mlx",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/OpenMed-PII-SnowflakeMed-Large-568M-v1-mlx",
+  "created_at": "2026-04-08T19:00:19.000Z",
+  "updated_at": "2026-09-02T22:27:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "openmed",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "openmed",
+    "xlm-roberta",
+    "mlx",
+    "apple-silicon",
+    "token-classification",
+    "pii",
+    "de-identification",
+    "medical",
+    "clinical",
+    "en",
+    "base_model:OpenMed/OpenMed-PII-SnowflakeMed-Large-568M-v1",
+    "base_model:finetune:OpenMed/OpenMed-PII-SnowflakeMed-Large-568M-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2267297724,
+  "storage_human": "2.3 GB",
+  "base_model": "OpenMed/OpenMed-PII-SnowflakeMed-Large-568M-v1",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenMed PII Detection 568M - Hugging Face",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-SnowflakeMed-Large-568M-v1-onnx-android",
+      "snippet": "OpenMed / OpenMed-PII-SnowflakeMed-Large-568M-v1-onnx-android like 0 Follow OpenMed 1.42k Token Classification ONNX English openmed xlm-roberta medical-nlp pii-detection android webassembly webgpu arxiv:2508.01630 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new OpenMed PII Detection 568M Model OpenMed in Python on CPU OpenMed in Web OpenMedKit for Android ..."
+    },
+    {
+      "title": "GitHub - maziyarpanahi/openmed: Local-first healthcare AI: clinical NER ...",
+      "url": "https://github.com/maziyarpanahi/openmed",
+      "snippet": "Local-first healthcare AI: clinical NER &amp; HIPAA PII de-identification that runs 100% on-device. 2,200+ medical models, 21 languages, Apple MLX + Python, no cloud, no patient data leaving your n..."
+    },
+    {
+      "title": "OpenMed — local-first clinical AI",
+      "url": "https://openmed.life/",
+      "snippet": "OpenMed 2.2.0 · on-device clinical AI Your data. Your model. Your iPhone. OpenMed reads clinical text and removes 55+ PHI types on the hardware you control, so patient data never leaves the device. 2,000+ Apache-2.0 models, 33 model-backed PII languages, state of the art on 10 of 12 biomedical NER benchmarks — and a new release most weeks."
+    },
+    {
+      "title": "OpenMed/OpenMed-PII-French-SnowflakeMed-Large-568M-v1-onnx-android ...",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-French-SnowflakeMed-Large-568M-v1-onnx-android",
+      "snippet": "OpenMed / OpenMed-PII-French-SnowflakeMed-Large-568M-v1-onnx-android like 0 Follow OpenMed 1.43k Token Classification ONNX French openmed xlm-roberta medical-nlp pii-detection android webassembly webgpu arxiv:2508.01630 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new OpenMed PII Detection 568M Model OpenMed in Python on CPU OpenMed in Web OpenMedKit for ..."
+    },
+    {
+      "title": "GitHub - vetcoders/openvet: Local-first healthcare AI: clinical NER ...",
+      "url": "https://github.com/vetcoders/openvet",
+      "snippet": "GitHub - vetcoders/openvet: Local-first healthcare AI: clinical NER & HIPAA PII de-identification that runs 100% on-device. 2,200+ medical models, 21 languages, Apple MLX + Python, no cloud, no patient data leaving your network."
+    }
+  ]
+}

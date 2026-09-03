@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mohamedrayyan/whisper-small-dv",
+  "slug": "mohamedrayyan-whisper-small-dv",
+  "author": "mohamedrayyan",
+  "url": "https://huggingface.co/mohamedrayyan/whisper-small-dv",
+  "created_at": "2026-09-02T21:14:19.000Z",
+  "updated_at": "2026-09-02T21:15:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "dv"
+  ],
+  "tags": [
+    "pytorch",
+    "whisper",
+    "generated_from_trainer",
+    "dv",
+    "dataset:mozilla-foundation/common_voice_13_0",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 967102601,
+  "storage_human": "967 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice 13",
+      "metric": "Wer",
+      "value": 14.066140417985187
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ryukijano/whisper-small-dv · Hugging Face",
+      "url": "https://huggingface.co/Ryukijano/whisper-small-dv",
+      "snippet": "The whisper-small-dv model is an advanced Automatic Speech Recognition (ASR) model, trained on the extensive Mozilla Common Voice 13.0 dataset. This model is capable of transcribing spoken language into written text with high accuracy, making it a valuable tool for a wide range of applications, from transcription services to voice assistants."
+    },
+    {
+      "title": "YancyDan/whisper-small-dv · Hugging Face",
+      "url": "https://huggingface.co/YancyDan/whisper-small-dv",
+      "snippet": "YancyDan / whisper-small-dv like 0 Automatic Speech Recognition Transformers TensorBoard Safetensors whisper arxiv:1910.09700 Model card FilesFiles and versions xet MetricsTraining metrics Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper [Blog] [Paper] [Model card] [Colab example] Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "whisper-small-dv huggingface.co api & not-lain whisper-small-dv github ...",
+      "url": "https://www.toolify.ai/ai-model/not-lain-whisper-small-dv",
+      "snippet": "whisper-small-dv is an open source model from GitHub that offers a free installation service, and any user can find whisper-small-dv on GitHub to install. At the same time, huggingface.co provides the effect of whisper-small-dv install, users can directly use whisper-small-dv installed effect in huggingface.co for debugging and trial."
+    },
+    {
+      "title": "Whisper-Small - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/whisper_small",
+      "snippet": "Whisper-Small Transformer‑based automatic speech recognition (ASR) model for multilingual transcription and translation available on HuggingFace. HuggingFace Whisper‑Small ASR (Automatic Speech Recognition) model is a state‑of‑the‑art system designed for transcribing spoken language into written text."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "colinb83/Kimi-K3-Abliterated",
+  "slug": "colinb83-kimi-k3-abliterated",
+  "author": "colinb83",
+  "url": "https://huggingface.co/colinb83/Kimi-K3-Abliterated",
+  "created_at": "2026-08-20T20:01:29.000Z",
+  "updated_at": "2026-09-03T01:12:42.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k3",
+    "feature-extraction",
+    "compressed-tensors",
+    "conversational",
+    "image-text-to-text",
+    "custom_code",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 2779931837184,
+  "parameters_human": "2779.93B",
+  "storage_bytes": 1560998653894,
+  "storage_human": "1561.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "colinb83/Kimi-K3-Abliterated at main - Hugging Face",
+      "url": "https://huggingface.co/colinb83/Kimi-K3-Abliterated/tree/main",
+      "snippet": "Instructions to use colinb83/Kimi-K3-Abliterated with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use colinb83/Kimi-K3-Abliterated with Transformers:"
+    },
+    {
+      "title": "README.md · colinb83/Kimi-K3-Abliterated at main - Hugging Face",
+      "url": "https://huggingface.co/colinb83/Kimi-K3-Abliterated/blob/main/README.md",
+      "snippet": "Native Multimodality & Long Context: Kimi K3 understands text, images, and video within the same model, and supports a 1-million-token context window. Open Frontier Weights: We release the full Kimi K3 model weights under the Kimi K3 License, making frontier intelligence openly available for research, deployment, and further innovation."
+    },
+    {
+      "title": "Kimi K3 Abliterated - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/colinb83/kimi-k3-abliterated",
+      "snippet": "Registry entry for model Kimi K3 Abliterated; source metadata pending."
+    },
+    {
+      "title": "Kimi K3: 2.8T Open Model for Coding & Knowledge Work",
+      "url": "https://www.kimi.ai/ai-models/kimi-k3",
+      "snippet": "Meet Kimi K3, a 2.8T-parameter model with native vision and a 1M context window. Create playable games, polished slides, interactive reports, and more."
+    },
+    {
+      "title": "kimi-k3 Model by Moonshotai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/moonshotai/kimi-k3",
+      "snippet": "~2.8T hybrid KDA+MLA multimodal MoE for long-horizon coding, agentic tool use, and image understanding."
+    }
+  ]
+}

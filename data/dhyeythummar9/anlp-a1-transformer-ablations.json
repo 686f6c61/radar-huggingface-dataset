@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "dhyeythummar9/ANLP-A1-Transformer-Ablations",
+  "slug": "dhyeythummar9-anlp-a1-transformer-ablations",
+  "author": "dhyeythummar9",
+  "url": "https://huggingface.co/dhyeythummar9/ANLP-A1-Transformer-Ablations",
+  "created_at": "2026-09-02T22:29:10.000Z",
+  "updated_at": "2026-09-02T22:43:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 520383526,
+  "storage_human": "520 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RaunakSeksaria/anlp-a1-transformers · Hugging Face",
+      "url": "https://huggingface.co/RaunakSeksaria/anlp-a1-transformers",
+      "snippet": "RaunakSeksaria / anlp-a1-transformers like 0 PyTorch transformer ablation from-scratch anlp Model card FilesFiles and versions xet Community Copy to bucket new ANLP Assignment 1 - encoder-decoder transformer ablation Test results (greedy decoding) Loading a checkpoint"
+    },
+    {
+      "title": "ZappY-AI/anlp-a1 · Hugging Face",
+      "url": "https://huggingface.co/ZappY-AI/anlp-a1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - FrenchKnuckles/ANLP_A1",
+      "url": "https://github.com/FrenchKnuckles/ANLP_A1",
+      "snippet": "This repository contains a PyTorch implementation of a Seq2Seq Transformer trained to decrypt a substitution cipher. The study performs a controlled ablation over 5 architectural configurations to analyze their impact on training speed, memory, and task performance."
+    },
+    {
+      "title": "anlp-fall2025-code/05_transformers at main · cmu-l3/anlp ... - GitHub",
+      "url": "https://github.com/cmu-l3/anlp-fall2025-code/tree/main/05_transformers",
+      "snippet": "Advanced NLP, Fall 2025 https://cmu-l3.github.io/anlp-fall2025/ - cmu-l3/anlp-fall2025-code"
+    },
+    {
+      "title": "The Illustrated Transformer - Jay Alammar - Visualizing machine ...",
+      "url": "https://jalammar.github.io/illustrated-transformer/",
+      "snippet": "The Transformer outperforms the Google Neural Machine Translation model in specific tasks. The biggest benefit, however, comes from how The Transformer lends itself to parallelization."
+    }
+  ]
+}

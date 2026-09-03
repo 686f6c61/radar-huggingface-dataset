@@ -5,7 +5,7 @@
   "author": "SofiTesfay2010",
   "url": "https://huggingface.co/SofiTesfay2010/Qwen3.8-27B-Uncensored-Compressed",
   "created_at": "2026-09-02T09:38:53.000Z",
-  "updated_at": "2026-09-02T10:41:34.000Z",
+  "updated_at": "2026-09-02T11:00:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 7279541580,
   "parameters_human": "7.28B",
-  "storage_bytes": 10629631320,
-  "storage_human": "10.6 GB",
+  "storage_bytes": 13265377008,
+  "storage_human": "13.3 GB",
   "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
   "formats": [
     "safetensors"

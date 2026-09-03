@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sashaboguraev/pythia-160m-ppt-control_music_steps250-seed324",
+  "slug": "sashaboguraev-pythia-160m-ppt-control_music_steps250-seed324",
+  "author": "sashaboguraev",
+  "url": "https://huggingface.co/sashaboguraev/pythia-160m-ppt-control_music_steps250-seed324",
+  "created_at": "2026-07-16T00:53:36.000Z",
+  "updated_at": "2026-09-02T20:02:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 360,
+  "trending_score": 0,
+  "parameters": 162281472,
+  "parameters_human": "162.3M",
+  "storage_bytes": 839799386,
+  "storage_human": "840 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pythia-160m-ppt-control_music_steps100-seed324 - Hugging Face",
+      "url": "https://huggingface.co/sashaboguraev/pythia-160m-ppt-control_music_steps100-seed324",
+      "snippet": "Pythia-160M Pre-Pretraining: control_music_steps100 (seed 324) Trained from scratch using the ppt pre-pretraining research framework."
+    },
+    {
+      "title": "pythia-160m-ppt-control_music_steps250-seed324 - Hugging Face",
+      "url": "https://huggingface.co/sashaboguraev/pythia-160m-ppt-control_music_steps250-seed324",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pythia-160m-ppt-control_music_steps250-seed324 - friendli.ai",
+      "url": "https://friendli.ai/models/sashaboguraev/pythia-160m-ppt-control_music_steps250-seed324",
+      "snippet": "Deploy pythia-160m-ppt-control_music_steps250-seed324 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "pythia-160m-ppt-control_music_steps250-seed324-preserve_emb",
+      "url": "https://friendli.ai/models/sashaboguraev/pythia-160m-ppt-control_music_steps250-seed324-preserve_emb",
+      "snippet": "Deploy pythia-160m-ppt-control_music_steps250-seed324-preserve_emb with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "sashaboguraev/pythia-160m-ppt-control_music_steps100-seed208-preserve ...",
+      "url": "https://dev.modelhub.org.cn/sashaboguraev/pythia-160m-ppt-control_music_steps100-seed208-preserve_emb",
+      "snippet": "sashaboguraev / pythia-160m-ppt-control_music_steps100-seed208-preserve_emb Watch 1 Star 0 Fork 0 You&#x27;ve already forked pythia-160m-ppt-control_music_steps100-seed208-preserve_emb Code Issues Pull Requests Actions Projects Releases Wiki Activity 1 Commit 1 Branch 0 Tags main Go to file Code Clone HTTPS Tea CLI"
+    }
+  ]
+}

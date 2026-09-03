@@ -42,8 +42,8 @@
   "trending_score": 0,
   "parameters": 149014272,
   "parameters_human": "149.0M",
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 596463440,
+  "storage_human": "596 MB",
   "base_model": "answerdotai/ModernBERT-base",
   "formats": [
     "safetensors"

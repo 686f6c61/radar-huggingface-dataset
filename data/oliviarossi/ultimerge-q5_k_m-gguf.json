@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "OliviaRossi/UltiMerge-Q5_K_M-GGUF",
+  "slug": "oliviarossi-ultimerge-q5_k_m-gguf",
+  "author": "OliviaRossi",
+  "url": "https://huggingface.co/OliviaRossi/UltiMerge-Q5_K_M-GGUF",
+  "created_at": "2026-09-02T20:20:29.000Z",
+  "updated_at": "2026-09-02T20:22:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "code"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "moe",
+    "code",
+    "agent",
+    "reasoning",
+    "merge",
+    "qwen3.5",
+    "qwen3.6",
+    "model-stock",
+    "dare",
+    "star",
+    "delta-net",
+    "vllm",
+    "llama.cpp",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:OliviaRossi/UltiMerge",
+    "base_model:quantized:OliviaRossi/UltiMerge",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 24729132352,
+  "storage_human": "24.7 GB",
+  "base_model": "OliviaRossi/UltiMerge",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OliviaRossi/DAOS-Fusion-Q5_K_M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/OliviaRossi/DAOS-Fusion-Q5_K_M-GGUF",
+      "snippet": "OliviaRossi / DAOS-Fusion-Q5_K_M-GGUF like 1 Text Generation Transformers GGUF English Chinese code Mixture of Experts agent reasoning Merge qwen3.5 qwen3.6 daos-fusion della model-stock dare star delta-net vllm llama.cpp llama-cpp gguf-my-repo conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=delta-net",
+      "snippet": "OliviaRossi/UltiMerge-Q4_K_M-GGUF Text Generation • 35B•Updated about 8 hours ago"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF Quantization Guide (2026): Q4_K_M Saves 72% VRAM — Q4 vs Q5 vs Q8",
+      "url": "https://willitrunai.com/blog/quantization-guide-gguf-explained",
+      "snippet": "Q4_K_M cuts VRAM 72% with minor quality loss; Q5_K_M is the sweet spot; Q8 is near-lossless. Compare GGUF quants by VRAM, perplexity and speed (2026)."
+    },
+    {
+      "title": "Wan 2.2 GGUF Guide: Q4_K_M vs Q5_K_M vs Q8_0 — VRAM, Speed & Quality (2026)",
+      "url": "https://wan27.org/blog/wan-2-2-gguf-guide",
+      "snippet": "Complete Wan 2.2 GGUF guide: compare Q4_K_M, Q5_K_M, Q8_0 quantization levels with real VRAM usage, quality loss, and speed benchmarks. Hardware-matched recommendations for 6GB to 24GB GPUs, ComfyUI setup, Ollama and ktransformers deployment, and troubleshooting common GGUF errors."
+    }
+  ]
+}

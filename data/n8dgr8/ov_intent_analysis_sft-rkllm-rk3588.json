@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "n8dgr8/ov_intent_analysis_sft-RKLLM-RK3588",
+  "slug": "n8dgr8-ov_intent_analysis_sft-rkllm-rk3588",
+  "author": "n8dgr8",
+  "url": "https://huggingface.co/n8dgr8/ov_intent_analysis_sft-RKLLM-RK3588",
+  "created_at": "2026-09-02T22:15:42.000Z",
+  "updated_at": "2026-09-02T22:16:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "rkllm",
+  "languages": [],
+  "tags": [
+    "rkllm",
+    "rockchip",
+    "rk3588",
+    "npu",
+    "openviking",
+    "retrieval",
+    "intent-analysis",
+    "query-planning",
+    "qwen3.5",
+    "text-generation",
+    "base_model:guoxuter/ov_intent_analysis_sft",
+    "base_model:finetune:guoxuter/ov_intent_analysis_sft",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1299987468,
+  "storage_human": "1.3 GB",
+  "base_model": "guoxuter/ov_intent_analysis_sft",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Intent Analysis and Type Quotas | volcengine/OpenViking | Zread",
+      "url": "https://zread.ai/volcengine/OpenViking/17-intent-analysis-and-type-quotas",
+      "snippet": "The intent-analysis prompt instructs the LLM to classify the user&#x27;s task into one of three task archetypes — operational (action verbs), informational (knowledge-seeking), or conversational (small talk) — and then generate context-type combinations accordingly."
+    },
+    {
+      "title": "Phi-3.5-mini-instruct-rk3588-1.2.1 - Hugging Face",
+      "url": "https://huggingface.co/Azurastar2903/Phi-3.5-mini-instruct-rk3588-1.2.1",
+      "snippet": "Phi-3.5-mini-instruct-RK3588-1.2.1 This version of Phi-3.5-mini-instruct has been converted to run on the RK3588 NPU using [&#x27;w8a8&#x27;, &#x27;w8a8_g128&#x27;, &#x27;w8a8_g256&#x27;] quantization. This model has been optimized with the following LoRA: Compatible with RKLLM version: 1.2.1 Useful links: Official RKLLM GitHub RockhipNPU Reddit EZRKNN-LLM Pretty much anything by these folks: marty1885 and happyme531 ..."
+    },
+    {
+      "title": "GitHub - airockchip/rknn_model_zoo",
+      "url": "https://github.com/airockchip/rknn_model_zoo",
+      "snippet": "RKNN Model Zoo is developed based on the RKNPU SDK toolchain and provides deployment examples for current mainstream algorithms. Include the process of exporting the RKNN model and using Python API and CAPI to infer the RKNN model. Support RK3562, RK3566, RK3568, RK3576, RK3588 , RV1126B platforms. Limited support RV1103, RV1106 Support RV1109, RV1126, RK1808 platforms."
+    },
+    {
+      "title": "GitHub - huonwe/rkllm_openai_like_api: The rkllm server which is ...",
+      "url": "https://github.com/huonwe/rkllm_openai_like_api",
+      "snippet": "A lightweight, high-performance API server for Rockchip NPUs (RKLLM), providing drop-in compatibility with OpenAI API, Claude API and Ollama API formats. This allows you to seamlessly integrate locally hosted large language models on Rockchip hardware with existing AI tools, frontends, and frameworks."
+    },
+    {
+      "title": "1. Large Language Model — Firefly Wiki",
+      "url": "https://wiki.t-firefly.com/en/ROC-RK3588-RT/usage_rkllm.html",
+      "snippet": "1.1.2. RKLLM Runtime Functions Introduction ¶ The RKLLM Runtime is primarily responsible for loading RKLLM models converted using the RKLLM-Toolkit and performing inference on the Rockchip NPU by invoking the NPU driver on the ROC-RK3588-RT board. During the inference of RKLLM models, users can customize the inference parameters, define various text generation methods, and continuously ..."
+    }
+  ]
+}

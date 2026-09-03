@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "galmt/MCSkin",
+  "slug": "galmt-mcskin",
+  "author": "galmt",
+  "url": "https://huggingface.co/galmt/MCSkin",
+  "created_at": "2026-09-02T19:23:49.000Z",
+  "updated_at": "2026-09-02T19:23:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:black-forest-labs/FLUX.2-klein-9B",
+    "base_model:adapter:black-forest-labs/FLUX.2-klein-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69278311,
+  "storage_human": "69 MB",
+  "base_model": "black-forest-labs/FLUX.2-klein-9B",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Minecraft Skin Generator - Custom Skins | NanoMaker AI",
+      "url": "https://nanomaker.im/image/ai-minecraft-skin-generator",
+      "snippet": "AI Minecraft skin generator turns any photo into Minecraft skins or creates unique designs from text. Instant download for Java and Bedrock Edition."
+    },
+    {
+      "title": "How to Make a Minecraft Skin With AI (2026 Guide)",
+      "url": "https://photo2skin.com/blog/how-to-make-a-minecraft-skin-with-ai.html",
+      "snippet": "How to make a Minecraft skin with AI in 2026. Why ChatGPT and general image tools give you a picture — not a playable 64x64 skin — and how to get a real one."
+    },
+    {
+      "title": "SkinGenerator.io - Custom Minecraft Skins | Creati.ai",
+      "url": "https://creati.ai/ai-tools/minecraft-skin-generator/",
+      "snippet": "SkinGenerator.io is a tool designed for Minecraft players to create unique and custom skins effortlessly with simple text prompts. The platform leverages advanced algorithms to provide detailed and personalized skins, catering to both beginners and experienced players. With its intuitive design and user-friendly interface, it simplifies the traditionally complex process of skin creation ..."
+    },
+    {
+      "title": "AI Minecraft Skin Generator | MC Skin Creator",
+      "url": "https://www.mcskincreator.com/",
+      "snippet": "Free AI Minecraft skin maker in your browser MC Skin Creator combines AI skin generation with 2D texture and 3D model previews, so you can create, inspect, and download a 64x64 PNG without signing up."
+    },
+    {
+      "title": "AI Minecraft Skin Architect | Custom 3D Skin Generator",
+      "url": "https://mcskinarchitect.com/",
+      "snippet": "Generate high-quality custom Minecraft skins using natural language AI. Describe your character and watch the Architect build it with real-time 3D preview and professional shading."
+    }
+  ]
+}

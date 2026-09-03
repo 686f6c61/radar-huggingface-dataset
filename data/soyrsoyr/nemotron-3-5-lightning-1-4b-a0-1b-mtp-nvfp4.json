@@ -5,7 +5,7 @@
   "author": "soyrsoyr",
   "url": "https://huggingface.co/soyrsoyr/Nemotron-3.5-Lightning-1.4B-A0.1B-MTP-NVFP4",
   "created_at": "2026-09-01T15:19:05.000Z",
-  "updated_at": "2026-09-02T01:13:33.000Z",
+  "updated_at": "2026-09-02T19:10:48.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 1003104400,
   "parameters_human": "1.00B",
-  "storage_bytes": 3054138067,
-  "storage_human": "3.1 GB",
+  "storage_bytes": 3680408207,
+  "storage_human": "3.7 GB",
   "base_model": "inference-optimization/Nemotron-3.5-Lightning-1.4B-A0.1B-MTP",
   "formats": [
     "safetensors"

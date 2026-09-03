@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "textilelabs/Loom-Router-1",
+  "slug": "textilelabs-loom-router-1",
+  "author": "textilelabs",
+  "url": "https://huggingface.co/textilelabs/Loom-Router-1",
+  "created_at": "2026-09-02T21:33:43.000Z",
+  "updated_at": "2026-09-02T21:57:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "tiny-model",
+    "from-scratch",
+    "router",
+    "tool-use",
+    "intent-classification",
+    "agentic",
+    "text-classification",
+    "en",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1435040,
+  "parameters_human": "1.4M",
+  "storage_bytes": 8824846,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "textilelabs (Neo) - Hugging Face",
+      "url": "https://huggingface.co/textilelabs",
+      "snippet": "AI & ML interests Independent builder training small/efficient models from scratch on consumer hardware (CPU-only, no cloud). Currently exploring 1-bit/1.58-bit (BitNet-style) architectures, small language models, LoRA cartridges, and neuro-symbolic hybrids."
+    },
+    {
+      "title": "loom-router · PyPI",
+      "url": "https://pypi.org/project/loom-router/",
+      "snippet": "New AI projects go from \"spec\" to \"first call\" in hours For finance: Per-project, per-model, per-day cost reporting Budget alerts before a runaway prompt empties the account Visibility into which optimizations are actually saving money For security: API keys live in one audited location No vendor credentials in project repos or developer laptops"
+    },
+    {
+      "title": "Releases · imateusdev/loom-router · GitHub",
+      "url": "https://github.com/imateusdev/loom-router/releases",
+      "snippet": "Weave any model into your coding agent&#x27;s picker. A Tauri desktop app that runs a local proxy and puts external providers like OpenRouter, Kimi, DeepSeek and Anthropic directly into Codex model picker, with protocol translation, usage stats and a live activity tray. - Releases · imateusdev/loom-router"
+    },
+    {
+      "title": "Loom — One API for every AI provider",
+      "url": "https://loom-weaves.vercel.app/",
+      "snippet": "One API for every AI provider. Routing, caching, retries, batching, observability, and cost optimization."
+    },
+    {
+      "title": "loom-router/README.md at main · imateusdev/loom-router · GitHub",
+      "url": "https://github.com/imateusdev/loom-router/blob/main/README.md",
+      "snippet": "Weave any model into your coding agent&#x27;s picker. A Tauri desktop app that runs a local proxy and puts external providers like OpenRouter, Kimi, DeepSeek and Anthropic directly into Codex model picker, with protocol translation, usage stats and a live activity tray. - loom-router/README.md at main · imateusdev/loom-router"
+    }
+  ]
+}

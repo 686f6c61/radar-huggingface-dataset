@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SinisterLlama/anlp-a1-c1",
+  "slug": "sinisterllama-anlp-a1-c1",
+  "author": "SinisterLlama",
+  "url": "https://huggingface.co/SinisterLlama/anlp-a1-c1",
+  "created_at": "2026-09-03T00:44:00.000Z",
+  "updated_at": "2026-09-03T00:45:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "seq2seq",
+    "ciphertext-decryption",
+    "anlp",
+    "pytorch",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 141253064,
+  "storage_human": "141 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZappY-AI/anlp-a1 · Hugging Face",
+      "url": "https://huggingface.co/ZappY-AI/anlp-a1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "neemon/anlp-a1-c1 · Hugging Face",
+      "url": "https://huggingface.co/neemon/anlp-a1-c1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - FrenchKnuckles/ANLP_A1",
+      "url": "https://github.com/FrenchKnuckles/ANLP_A1",
+      "snippet": "Contribute to FrenchKnuckles/ANLP_A1 development by creating an account on GitHub."
+    },
+    {
+      "title": "Poisoned Pipelines: Malicious AI Model and Skill Repositories",
+      "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-malicious-ai-model-repositories-attack-sur/",
+      "snippet": "The platform&#x27;s model card system and community review processes create a credible appearance of curation, but the fundamental trust model depends on individual contributors acting in good faith — a proposition that threat actors have learned to exploit. The emergence of agentic AI systems has opened a parallel distribution surface."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

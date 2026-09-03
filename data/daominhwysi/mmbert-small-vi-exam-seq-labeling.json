@@ -5,7 +5,7 @@
   "author": "daominhwysi",
   "url": "https://huggingface.co/daominhwysi/mmbert-small-vi-exam-seq-labeling",
   "created_at": "2026-08-30T11:29:40.000Z",
-  "updated_at": "2026-09-02T02:51:09.000Z",
+  "updated_at": "2026-09-02T07:33:58.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 307546402,
   "parameters_human": "307.5M",
-  "storage_bytes": 17291618978,
-  "storage_human": "17.3 GB",
+  "storage_bytes": 23442739679,
+  "storage_human": "23.4 GB",
   "base_model": "jhu-clsp/mmBERT-base",
   "formats": [
     "safetensors"

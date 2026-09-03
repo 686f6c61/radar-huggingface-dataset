@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "AdaptiveChunking/hnet-chunking-pilots",
+  "slug": "adaptivechunking-hnet-chunking-pilots",
+  "author": "AdaptiveChunking",
+  "url": "https://huggingface.co/AdaptiveChunking/hnet-chunking-pilots",
+  "created_at": "2026-09-02T21:21:54.000Z",
+  "updated_at": "2026-09-02T21:24:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "dynamic-chunking",
+    "tokenization",
+    "hnet",
+    "byte-level",
+    "interpretability",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2792427152,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ekimetrics/adaptive-chunking: Adaptive Chunking: automatically ...",
+      "url": "https://github.com/ekimetrics/adaptive-chunking",
+      "snippet": "What is Adaptive Chunking? No single chunking method works best for every document in a RAG pipeline. Adaptive Chunking solves this by evaluating multiple chunking strategies against a set of intrinsic quality metrics and automatically selecting the best one for each document."
+    },
+    {
+      "title": "Dynamic Chunking for End-to-End Hierarchical Sequence Modeling",
+      "url": "https://arxiv.org/html/2507.07955v1",
+      "snippet": "Dynamic Chunking: End-to-end Sequence Modeling Without Tokenization In this work, we introduce an end-to-end hierarchical network (H-Net) that compresses raw data through a recursive, data-dependent dynamic chunking (DC) process (Figure 1)."
+    },
+    {
+      "title": "GitHub - goombalab/hnet: H-Net: Hierarchical Network with Dynamic Chunking",
+      "url": "https://github.com/goombalab/hnet",
+      "snippet": "H-Net: Hierarchical Network with Dynamic Chunking. Contribute to goombalab/hnet development by creating an account on GitHub."
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2507.07955",
+      "snippet": "Explore the latest research papers and preprints across various scientific fields on arXiv.org, a leading open-access repository for academic publications."
+    },
+    {
+      "title": "Dynamic Chunking for End-to-End Hierarchical Sequence Modeling",
+      "url": "https://huggingface.co/papers/2507.07955",
+      "snippet": "Dynamic Chunking for End-to-End Hierarchical Sequence Modeling ... Sukjun Hwang , Brandon Wang , Albert Gu"
+    }
+  ]
+}

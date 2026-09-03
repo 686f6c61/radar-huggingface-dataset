@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Muhammad241198/act_short_tape_cut_180",
+  "slug": "muhammad241198-act_short_tape_cut_180",
+  "author": "Muhammad241198",
+  "url": "https://huggingface.co/Muhammad241198/act_short_tape_cut_180",
+  "created_at": "2026-09-02T20:26:06.000Z",
+  "updated_at": "2026-09-02T20:26:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:rbtrprjkt/cut-short_tape-on-box",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51752583,
+  "parameters_human": "51.8M",
+  "storage_bytes": 207045508,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muhammad241198 (Muhammad Obaid Ur Rahman) - Hugging Face",
+      "url": "https://huggingface.co/Muhammad241198",
+      "snippet": "Diffusion, Transformers, Imitation Learning updated a dataset 10 days ago"
+    },
+    {
+      "title": "Muhammad241198/act_snap_enc_rem_180 · Hugging Face",
+      "url": "https://huggingface.co/Muhammad241198/act_snap_enc_rem_180",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "AI YouTube Shorts Generator - AlphaCut",
+      "url": "https://alphacut.video/en",
+      "snippet": "Turn long-form videos into viral YouTube Shorts in minutes with AI. Auto-generated subtitles, highlight detection, and one-click editing."
+    },
+    {
+      "title": "ClipTaps — AI Faceless Video Autopilot for TikTok, Reels & YouTube Shorts",
+      "url": "https://cliptaps.com/",
+      "snippet": "ClipTaps turns any text, PDF, or idea into faceless short-form videos — AI script, AI video, voiceover, and captions — then auto-publishes to TikTok, Instagram Reels, and YouTube Shorts. Start free."
+    }
+  ]
+}

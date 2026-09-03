@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sprited/ardy-web-onnx",
+  "slug": "sprited-ardy-web-onnx",
+  "author": "sprited",
+  "url": "https://huggingface.co/sprited/ardy-web-onnx",
+  "created_at": "2026-09-02T23:57:41.000Z",
+  "updated_at": "2026-09-03T01:48:39.000Z",
+  "license": "nvidia-open-model-agreement",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "ardy",
+    "onnxruntime-web",
+    "webgpu",
+    "text-to-motion",
+    "base_model:nvidia/ARDY-Core-RP-20FPS-Horizon40",
+    "base_model:quantized:nvidia/ARDY-Core-RP-20FPS-Horizon40",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5791347323,
+  "storage_human": "5.8 GB",
+  "base_model": "nvidia/ARDY-Core-RP-20FPS-Horizon40",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of pre-trained, state-of-the-art models in the ONNX format."
+    },
+    {
+      "title": "GitHub - nv-tlabs/ardy: Official implementation of ARDY: Autoregressive ...",
+      "url": "https://github.com/nv-tlabs/ardy",
+      "snippet": "Official implementation of ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation (SIGGRAPH 2026). - nv-tlabs/ardy"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 662+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "onnx-web · PyPI",
+      "url": "https://pypi.org/project/onnx-web/",
+      "snippet": "onnx-web onnx-web is a tool for running Stable Diffusion and other ONNX models with hardware acceleration, on both AMD and Nvidia GPUs and with a CPU software fallback. The GUI is hosted on Github Pages and runs in all major browsers, including on mobile devices. It allows you to select the model and accelerator being used for each image pipeline."
+    }
+  ]
+}

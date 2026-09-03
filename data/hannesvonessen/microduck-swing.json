@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HannesVonEssen/microduck-swing",
+  "slug": "hannesvonessen-microduck-swing",
+  "author": "HannesVonEssen",
+  "url": "https://huggingface.co/HannesVonEssen/microduck-swing",
+  "created_at": "2026-09-02T18:12:16.000Z",
+  "updated_at": "2026-09-02T23:29:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck_rl_policy",
+    "microduck",
+    "microduck-policy",
+    "mjlab",
+    "robotics",
+    "reinforcement-learning",
+    "swing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16061634,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HannesVonEssen/microduck-running · Hugging Face",
+      "url": "https://huggingface.co/HannesVonEssen/microduck-running",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "HannesVonEssen (Hannes von Essen) - Hugging Face",
+      "url": "https://huggingface.co/HannesVonEssen/models",
+      "snippet": "📣 HF Viewer now supports Hugging Face login! 🤗 ⚡ Generate visualizations for all your models at once! 😎 Feature your models in the community showcase and set up your own profile/org collection page on hfviewer! ️ Write your own model articles on hfviewer in the same novel interactive style as our \"Gemma 4 family\" article - with ..."
+    },
+    {
+      "title": "Pollen Robotics and Hugging Face Launch $399 Open-Source Microduck ...",
+      "url": "https://robotsbeat.com/pollen-robotics-microduck-hugging-face-399-open-source-sim-to-real/",
+      "snippet": "Pollen Robotics and Hugging Face have unveiled Microduck, a $399 open-source robot designed for accessible physical AI development. Standing 25 centimeters tall and weighing 800 grams, the robot contains 15 motors, an onboard camera, LiDAR, and motion sensors."
+    }
+  ]
+}

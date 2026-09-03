@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 2389393216,
   "parameters_human": "2.39B",
-  "storage_bytes": 46278349632,
-  "storage_human": "46.3 GB",
+  "storage_bytes": 7386651616,
+  "storage_human": "7.4 GB",
   "base_model": "tencent/WeMM-Embedding-2B",
   "formats": [
     "gguf"

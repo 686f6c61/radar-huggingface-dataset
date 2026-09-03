@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mkche9/sponge_policy",
+  "slug": "mkche9-sponge_policy",
+  "author": "mkche9",
+  "url": "https://huggingface.co/mkche9/sponge_policy",
+  "created_at": "2026-09-02T20:51:37.000Z",
+  "updated_at": "2026-09-02T20:51:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:mkche9/sponge_pick_v1_20260902_161539",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714912,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mkche9 (Cherniavskyi Mykyta) - Hugging Face",
+      "url": "https://huggingface.co/mkche9",
+      "snippet": "Recent Activity updated a modelabout 9 hours ago mkche9/my_so101_policy published a modelabout 9 hours ago mkche9/my_so101_policy updated a dataset1 day ago mkche9/box_in_box50final View all activity"
+    },
+    {
+      "title": "mkche9/my_so101_policy · Hugging Face",
+      "url": "https://huggingface.co/mkche9/my_so101_policy",
+      "snippet": "Instructions to use mkche9/my_so101_policy with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use mkche9/my_so101_policy with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started ..."
+    },
+    {
+      "title": "Model Spec (2026/08/18)",
+      "url": "https://model-spec.openai.com/",
+      "snippet": "The Model Spec specifies desired behavior for the models underlying OpenAI&#x27;s products (including our APIs)."
+    },
+    {
+      "title": "Sharing the latest Model Spec - OpenAI",
+      "url": "https://openai.com/index/sharing-the-latest-model-spec/",
+      "snippet": "The updated Model Spec explicitly embraces intellectual freedom—the idea that AI should empower people to explore, debate, and create without arbitrary restrictions—no matter how challenging or controversial a topic may be. In a world where AI tools are increasingly shaping discourse, the free exchange of information and perspectives is a necessity for progress and innovation. This ..."
+    },
+    {
+      "title": "Major AI Vulnerability Exposed: Single Prompt Grants Full Control ...",
+      "url": "https://dailysecurityreview.com/security-spotlight/major-ai-vulnerability-exposed-single-prompt-grants-full-control/",
+      "snippet": "Researchers uncovered a major AI vulnerability allowing attackers to bypass safeguards with a single prompt, gaining control over AI systems to generate dangerous content."
+    }
+  ]
+}

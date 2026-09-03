@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lloydchristmas1231/tayhow",
+  "slug": "lloydchristmas1231-tayhow",
+  "author": "lloydchristmas1231",
+  "url": "https://huggingface.co/lloydchristmas1231/tayhow",
+  "created_at": "2026-09-02T20:35:18.000Z",
+  "updated_at": "2026-09-02T21:10:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778857967,
+  "storage_human": "779 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lloydchristmas1231/randtns-40 · Hugging Face",
+      "url": "https://huggingface.co/lloydchristmas1231/randtns-40",
+      "snippet": "lloydchristmas1231 / randtns-40 like 0 Text-to-Image Diffusers lora krea2 template:sd-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "lloydchristmas1231/jessivanz · Hugging Face",
+      "url": "https://huggingface.co/lloydchristmas1231/jessivanz",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lloydchristmas1231/deniaya-40 · Hugging Face",
+      "url": "https://huggingface.co/lloydchristmas1231/deniaya-40",
+      "snippet": "lloydchristmas1231 / deniaya-40 like 0 Text-to-Image Diffusers lora krea2 template:sd-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "lloydchristmas1231/maysim · Hugging Face",
+      "url": "https://huggingface.co/lloydchristmas1231/maysim",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pytorch_lora_weights.safetensors · lloydchristmas1231/kyshall at main",
+      "url": "https://huggingface.co/lloydchristmas1231/kyshall/blob/main/pytorch_lora_weights.safetensors",
+      "snippet": "lloydchristmas1231 / kyshall like 0 Text-to-Image Diffusers lora krea2 template:sd-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

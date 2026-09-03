@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM-v3",
+  "slug": "geonmin-kim-cosmos3-edge-policy-droid-fastwam-v3",
+  "author": "geonmin-kim",
+  "url": "https://huggingface.co/geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM-v3",
+  "created_at": "2026-09-02T19:22:59.000Z",
+  "updated_at": "2026-09-02T19:23:55.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "vla",
+    "cosmos3",
+    "droid",
+    "fastwam",
+    "base_model:geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM-v1-step25000",
+    "base_model:finetune:geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM-v1-step25000",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7735210532,
+  "storage_human": "7.7 GB",
+  "base_model": "geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM-v1-step25000",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cosmos3-Edge-Policy-DROID-FastWAM-v2-step3000 - Hugging Face",
+      "url": "https://huggingface.co/geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM-v2-step3000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cosmos3-Edge-Policy-DROID-FastWAM-v1lr-step10000 - Hugging Face",
+      "url": "https://huggingface.co/geonmin-kim/Cosmos3-Edge-Policy-DROID-FastWAM-v1lr-step10000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Model Reference — Cosmos - NVIDIA Documentation Hub",
+      "url": "https://docs.nvidia.com/cosmos/latest/cosmos3/model_reference.html",
+      "snippet": "Model Reference # Cosmos 3 is available as Cosmos3-Super (64B), Cosmos3-Nano (16B), and Cosmos3-Edge (4B). The model family also includes task-specific variants: Cosmos3-Super-Text2Image, Cosmos3-Super-Image2Video, their four-step Text2Image and Image2Video variants, plus Cosmos3-Nano-Policy-DROID and Cosmos3-Edge-Policy-DROID. See the Model Matrix for hardware guidance and model selection ..."
+    },
+    {
+      "title": "Cosmos 3 — Cosmos Lab - research.nvidia.com",
+      "url": "https://research.nvidia.com/labs/cosmos-lab/cosmos3/",
+      "snippet": "Cosmos 3 reads observed states and recovers the trajectory or control that explains how the scene changed, turning video evidence into actions. Plan first, then bring it to life. Cosmos 3 can reason over an input scene, produce an actionable trajectory, and use that structured intent to generate the resulting physical interaction."
+    },
+    {
+      "title": "Releases · NVIDIA/cosmos - GitHub",
+      "url": "https://github.com/NVIDIA/Cosmos/releases",
+      "snippet": "Cosmos3-Nano-Policy-DROID - Open robot foundation model for learning manipulation and control policies directly from demonstrations. Cosmos 3 represents a major step toward general-purpose world models that can perceive, reason, simulate, and act—bringing us closer to a future where Physical AI can learn from both the real world and ..."
+    }
+  ]
+}

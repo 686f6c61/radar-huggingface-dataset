@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "torayeff/act-bi-so101-prism-pick-place-storage-box",
+  "slug": "torayeff-act-bi-so101-prism-pick-place-storage-box",
+  "author": "torayeff",
+  "url": "https://huggingface.co/torayeff/act-bi-so101-prism-pick-place-storage-box",
+  "created_at": "2026-09-03T00:21:31.000Z",
+  "updated_at": "2026-09-03T00:21:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:torayeff/bi-so101-prism-pick-place-storage-box_20260902_220323",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51680908,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206767208,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AdityaRege/so101-pick-place-act · Hugging Face",
+      "url": "https://huggingface.co/AdityaRege/so101-pick-place-act",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "SO-101 · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/so101",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SO-101 Pick-and-Place RL (Isaac Lab) - GitHub",
+      "url": "https://github.com/nanami220816/so101-isaaclab-pickplace-rl",
+      "snippet": "Action (6): per-joint position-target deltas. Grasp simplification: when the gripper tip is within 6 cm of the bottle and the close command is issued, the bottle is welded to the end-effector (kinematically follows it); released over the box. This lets RL focus on the transport-and-place strategy instead of contact-rich finger grasping."
+    },
+    {
+      "title": "Train a Pick and Place model on your SO100 (or SO101)",
+      "url": "https://www.youtube.com/watch?v=vC7E6ZmXBT8",
+      "snippet": "In this step-by-step tutorial, we&#x27;ll show you how to teach your SO100 or SO101 to perform pick and place tasks from scratch. Using the Phosphobot SO100 robot, the BB-ACT model, and the Hugging ..."
+    },
+    {
+      "title": "Train an SO-101 Robot From Sim-to-Real With NVIDIA Isaac",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/index.html",
+      "snippet": "You&#x27;ll train and deploy a vision-language-action (VLA) model to perform unstructured pick-and-place of centrifuge vials into a rack using an SO-101 robot arm - first in sim, where we can iterate quickly and validate behavior, then in reality."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "AdarshSingh7647/Eklav-4B-Reranker-CotGen",
+  "slug": "adarshsingh7647-eklav-4b-reranker-cotgen",
+  "author": "AdarshSingh7647",
+  "url": "https://huggingface.co/AdarshSingh7647/Eklav-4B-Reranker-CotGen",
+  "created_at": "2026-08-26T21:12:30.000Z",
+  "updated_at": "2026-09-02T21:02:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "eklav",
+    "reranking",
+    "cot-distillation",
+    "reasoning",
+    "cotgen",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056949439,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ultimate Guide - The Most Powerful Reranker for AI-Driven Workflows in ...",
+      "url": "https://www.siliconflow.com/articles/most-powerful-reranker-for-ai-driven-workflows",
+      "snippet": "Our definitive guide to the most powerful reranker models for AI-driven workflows in 2026. We&#x27;ve partnered with industry insiders, tested performance on key benchmarks, and analyzed architectures to uncover the very best in text reranking AI. From lightweight models optimized for speed to powerhouse solutions engineered for maximum accuracy, these rerankers excel in refining search results ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=AdarshSingh7647%2FTabRankSingleTableNaive",
+      "snippet": "JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 + 44 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 + 10 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 8 + 10 + 9 Hardware Add your hardware Apply filters Models 1 Base only Inference ..."
+    },
+    {
+      "title": "Ultimate Guide - The Most Powerful Reranker for AI-Driven Workflows in 2026",
+      "url": "https://www.siliconflow.com/articles/en/Most-powerful-reranker-for-AI-driven-workflows",
+      "snippet": "Our definitive guide to the most powerful reranker models for AI-driven workflows in 2026. We&#x27;ve partnered with industry insiders, tested performance on key benchmarks, and analyzed architectures to uncover the very best in text reranking AI. From lightweight models optimized for speed to powerhouse solutions engineered for maximum accuracy, these rerankers excel in refining search results ..."
+    },
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    },
+    {
+      "title": "2026 LLM Leaderboard: compare Anthropic, Google, OpenAI, and more ... - Klu",
+      "url": "https://klu.ai/llm-leaderboard",
+      "snippet": "Klu.ai LLM leaderboard for in depth model performance metrics, rankings, and insights tailored for AI researchers and developers."
+    }
+  ]
+}

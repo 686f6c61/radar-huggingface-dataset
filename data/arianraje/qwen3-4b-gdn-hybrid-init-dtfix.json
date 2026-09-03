@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "arianraje/qwen3-4b-gdn-hybrid-init-dtfix",
+  "slug": "arianraje-qwen3-4b-gdn-hybrid-init-dtfix",
+  "author": "arianraje",
+  "url": "https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-init-dtfix",
+  "created_at": "2026-09-02T21:23:42.000Z",
+  "updated_at": "2026-09-02T21:25:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_next",
+    "linear-attention",
+    "gated-deltanet",
+    "hybrid",
+    "distillation",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4546819904,
+  "parameters_human": "4.55B",
+  "storage_bytes": 9105111446,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arianraje/qwen3-4b-gdn-hybrid-stage2only-control · Hugging Face",
+      "url": "https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-stage2only-control",
+      "snippet": "Part of a study converting full-attention Qwen3-4B into a GDN (gated DeltaNet) hybrid (27 of 36 layers converted, uniform 1:4 retention) and recovering capability via staged distillation, culminating in on-policy distillation (OPD): student rollouts scored per-token by the frozen teacher under reverse KL."
+    },
+    {
+      "title": "arianraje/qwen3-4b-gdn-hybrid-stage2b-kd · Hugging Face",
+      "url": "https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-stage2b-kd",
+      "snippet": "Part of a study converting full-attention Qwen3-4B into a GDN (gated DeltaNet) hybrid (27 of 36 layers converted, uniform 1:4 retention) and recovering capability via staged distillation, culminating in on-policy distillation (OPD): student rollouts scored per-token by the frozen teacher under reverse KL."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Research Latest Advancements Qwen3.8-Flash-Next: A New Architecture, Towards Ultimate Cost-Efficiency In this release we are opening the weights of Qwen3.8-Flash-Next, a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Qwen3 introduces several key advancements to enhance its functionality and usability. First, it integrates two distinct operating modes, thinking mode and non-thinking mode, into a single model. This allows users to switch between these modes without alternating between different models, e.g., switching from Qwen2.5 to QwQ (Qwen Team, 2024)."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ajrayman/Openn_binary",
+  "slug": "ajrayman-openn_binary",
+  "author": "ajrayman",
+  "url": "https://huggingface.co/ajrayman/Openn_binary",
+  "created_at": "2024-09-27T09:52:46.000Z",
+  "updated_at": "2026-09-02T20:30:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:microsoft/deberta-v3-base",
+    "base_model:finetune:microsoft/deberta-v3-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 109,
+  "trending_score": 0,
+  "parameters": 184423682,
+  "parameters_human": "184.4M",
+  "storage_bytes": 19457703000,
+  "storage_human": "19.5 GB",
+  "base_model": "microsoft/deberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ajrayman/Anger_binary · Hugging Face",
+      "url": "https://huggingface.co/ajrayman/Anger_binary",
+      "snippet": "ajrayman / Anger_binary like 0 Text Classification Transformers Safetensors roberta Generated from Trainer License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "ajrayman/Activity_Level_binary · Hugging Face",
+      "url": "https://huggingface.co/ajrayman/Activity_Level_binary",
+      "snippet": "ajrayman / Activity_Level_binary like 0 Text Classification Transformers Safetensors roberta Generated from Trainer License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 268 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - alvinreal/awesome-opensource-ai: Curated list of the best ...",
+      "url": "https://github.com/alvinreal/awesome-opensource-ai",
+      "snippet": "Curated list of the best truly open-source AI projects, models, tools, and infrastructure. Daily updated. - alvinreal/awesome-opensource-ai"
+    }
+  ]
+}

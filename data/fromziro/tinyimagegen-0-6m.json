@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "fromziro/TinyImageGen-0.6M",
+  "slug": "fromziro-tinyimagegen-0-6m",
+  "author": "fromziro",
+  "url": "https://huggingface.co/fromziro/TinyImageGen-0.6M",
+  "created_at": "2026-09-02T21:49:05.000Z",
+  "updated_at": "2026-09-03T00:12:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tinyimagegen",
+    "feature-extraction",
+    "imagegen",
+    "unconditional-image",
+    "custom_code",
+    "unconditional-image-generation",
+    "dataset:mlfoundations/datacomp_1b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 639280,
+  "parameters_human": "639280",
+  "storage_bytes": 7787540,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fromziro (FromZero) - Hugging Face",
+      "url": "https://huggingface.co/fromziro",
+      "snippet": "Current Models Syn-2.6M: A 2.6M-parameter Tiny Language Model (TLM) trained only on synthetic data (tiny-textbooks, tiny-stories-v2, longpage, and finephrase). Er-Medium: A 12.4M-parameter model trained on 34B tokens. It achieves state-of-the-art performance on many benchmarks."
+    },
+    {
+      "title": "fromziro (FromZero) - Hugging Face",
+      "url": "https://huggingface.co/fromziro/datasets",
+      "snippet": "Building stuff. AI & ML interests Building stuff. Recent Activity Harley-ml new 27 days ago"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "FREE online image generator and model hosting site! | Tensor.Art",
+      "url": "https://tensor.art/",
+      "snippet": "AI model sharing platform, online run models to generate image,viode and traning model for free. Your can upload and download models, include..."
+    },
+    {
+      "title": "Free AI Image Generator - Bing Image Creator",
+      "url": "https://www.bing.com/images/create/ai-image-generator",
+      "snippet": "Create stunning images with Bing Image Creator, the best free AI image generator. Turn text into AI art, photos, and visuals instantly, all for free."
+    }
+  ]
+}

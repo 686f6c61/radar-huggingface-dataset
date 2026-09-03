@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ZiyadSaleh/retrieval-tutorial-2024",
+  "slug": "ziyadsaleh-retrieval-tutorial-2024",
+  "author": "ZiyadSaleh",
+  "url": "https://huggingface.co/ZiyadSaleh/retrieval-tutorial-2024",
+  "created_at": "2026-09-02T20:15:48.000Z",
+  "updated_at": "2026-09-02T20:15:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google AI - How we&#x27;re making AI helpful for everyone",
+      "url": "https://ai.google/",
+      "snippet": "Discover how Google AI is committed to enriching knowledge, solving complex challenges and helping people grow by building useful AI tools and technologies."
+    },
+    {
+      "title": "Introduction | Full Stack Retrieval",
+      "url": "https://retrieval-tutorials.vercel.app/",
+      "snippet": "Retrieval is the process of bringing extra information or context to your language models. Retrieval Augmented Generation (RAG) is a system that augments a Large Language Model (LLM) by adding extra context or information from another source."
+    },
+    {
+      "title": "SIGIR 2024 Tutorial: Recent Advances in Generative Information Retrieval",
+      "url": "https://generative-ir.github.io/",
+      "snippet": "Typically, a sequence-to-sequence model is trained to directly map a query to its relevant document identifiers (i.e., docids). This tutorial offers an introduction to the core concepts of the GR paradigm and a comprehensive overview of recent advances in its foundations and applications."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "Explore OpenAI research on frontier models, reasoning, multimodal AI, and safe deployment as we work toward artificial general intelligence that benefits humanity."
+    }
+  ]
+}

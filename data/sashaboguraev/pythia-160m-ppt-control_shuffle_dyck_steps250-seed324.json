@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sashaboguraev/pythia-160m-ppt-control_shuffle_dyck_steps250-seed324",
+  "slug": "sashaboguraev-pythia-160m-ppt-control_shuffle_dyck_steps250-seed324",
+  "author": "sashaboguraev",
+  "url": "https://huggingface.co/sashaboguraev/pythia-160m-ppt-control_shuffle_dyck_steps250-seed324",
+  "created_at": "2026-07-15T22:48:56.000Z",
+  "updated_at": "2026-09-02T20:01:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 359,
+  "trending_score": 0,
+  "parameters": 162281472,
+  "parameters_human": "162.3M",
+  "storage_bytes": 836260418,
+  "storage_human": "836 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pythia-160m-ppt-control_shuffle_dyck_steps250-seed1024",
+      "url": "https://huggingface.co/sashaboguraev/pythia-160m-ppt-control_shuffle_dyck_steps250-seed1024",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pythia-160m-ppt-control_shuffle_dyck-seed324 - Hugging Face",
+      "url": "https://huggingface.co/sashaboguraev/pythia-160m-ppt-control_shuffle_dyck-seed324",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pythia-160m-ppt-control_shuffle_dyck_steps250-seed1024",
+      "url": "https://friendli.ai/models/sashaboguraev/pythia-160m-ppt-control_shuffle_dyck_steps250-seed1024",
+      "snippet": "Deploy pythia-160m-ppt-control_shuffle_dyck_steps250-seed1024 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "sashaboguraev/pythia-160m-ppt-control_shuffle_dyck_steps500-seed208 ...",
+      "url": "https://friendli.ai/models/sashaboguraev/pythia-160m-ppt-control_shuffle_dyck_steps500-seed208-reinit_mlp",
+      "snippet": "Run pythia-160m-ppt-control_shuffle_dyck_steps500-seed208-reinit_mlp with FriendliAI inference. This is the model card of a 🤗 transformers model that has…"
+    },
+    {
+      "title": "sashaboguraev/pythia-160m-ppt-control_shuffle_dyck_steps250-seed208 ...",
+      "url": "https://dev.modelhub.org.cn/sashaboguraev/pythia-160m-ppt-control_shuffle_dyck_steps250-seed208-preserve_emb",
+      "snippet": "Model Description This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated."
+    }
+  ]
+}

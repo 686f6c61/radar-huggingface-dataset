@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sashaboguraev/pythia-1b-ppt-control_nca_steps1000_1b-seed324",
+  "slug": "sashaboguraev-pythia-1b-ppt-control_nca_steps1000_1b-seed324",
+  "author": "sashaboguraev",
+  "url": "https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_nca_steps1000_1b-seed324",
+  "created_at": "2026-06-04T08:26:39.000Z",
+  "updated_at": "2026-09-02T20:29:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 1011671040,
+  "parameters_human": "1.01B",
+  "storage_bytes": 3716797504,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pythia-1b-ppt-control_nca_steps100_1b-seed208 - Hugging Face",
+      "url": "https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_nca_steps100_1b-seed208",
+      "snippet": "Instructions to use sashaboguraev/pythia-1b-ppt-control_nca_steps100_1b-seed208 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "pythia-1b-ppt-control_nca_steps100_1b-seed324 - Hugging Face",
+      "url": "https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_nca_steps100_1b-seed324",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pythia-1b-ppt-control_nca_steps250_1b-seed324 - friendli.ai",
+      "url": "https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-control_nca_steps250_1b-seed324",
+      "snippet": "Run sashaboguraev/pythia-1b-ppt-control_nca_steps250_1b-seed324 with FriendliAI inference. This is the model card of a 🤗 transformers model that has been…"
+    },
+    {
+      "title": "sashaboguraev/pythia-1b-ppt-control_nca_steps500_1b-seed324 API ...",
+      "url": "https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-control_nca_steps500_1b-seed324",
+      "snippet": "Run pythia-1b-ppt-control_nca_steps500_1b-seed324 with FriendliAI inference. This is the model card of a 🤗 transformers model that has been pushed on the Hub."
+    },
+    {
+      "title": "Pythia 1b Ppt Control Shuffle Dyck Steps1000 1b Seed324",
+      "url": "https://sweettea.co/de/resources/sashaboguraev-pythia-1b-ppt-control-shuffle-dyck-steps1000-1b-seed324-huggingface-model-sashaboguraev-pythia-1b-ppt-cont",
+      "snippet": "This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated."
+    }
+  ]
+}

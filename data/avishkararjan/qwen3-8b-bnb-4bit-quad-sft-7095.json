@@ -5,7 +5,7 @@
   "author": "avishkararjan",
   "url": "https://huggingface.co/avishkararjan/Qwen3-8B-bnb-4bit-quad-sft-7095",
   "created_at": "2026-09-01T18:10:24.000Z",
-  "updated_at": "2026-09-01T18:10:36.000Z",
+  "updated_at": "2026-09-02T08:30:21.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 186078460,
-  "storage_human": "186 MB",
+  "storage_bytes": 360733996,
+  "storage_human": "361 MB",
   "base_model": null,
   "formats": [
     "safetensors"

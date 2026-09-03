@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Deepaksinghwug/mae-matching-warmup",
+  "slug": "deepaksinghwug-mae-matching-warmup",
+  "author": "Deepaksinghwug",
+  "url": "https://huggingface.co/Deepaksinghwug/mae-matching-warmup",
+  "created_at": "2026-09-02T23:27:39.000Z",
+  "updated_at": "2026-09-02T23:27:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Daily Papers - Hugging Face",
+      "url": "https://huggingface.co/papers?q=warm-up%20strategies",
+      "snippet": "Instead, we demonstrate that minimal modifications to the foundation model architecture yield a surprisingly strong baseline. We further propose the low-noise warmup and \"large batches and small iterations\" strategies to accelerate model convergence during fine-tuning while maximally preserving the priors of the foundation model."
+    },
+    {
+      "title": "GitHub - Henry-Lee-real/MaeFuse: Official implementation of MaeFuse ...",
+      "url": "https://github.com/Henry-Lee-real/MaeFuse",
+      "snippet": "Official implementation of MaeFuse （TIP 2025）. Contribute to Henry-Lee-real/MaeFuse development by creating an account on GitHub."
+    },
+    {
+      "title": "Why Warmup the Learning Rate? Underlying Mechanisms and Improvements",
+      "url": "https://arxiv.org/html/2406.09405v1",
+      "snippet": "Given that warmup is standard in the practitioner&#x27;s toolkit, it is important to understand it deeply and identify improvements. In modern settings, perhaps the earliest work to use warmup was [15], which used a small constant learning rate for the first few epochs of training and then switched to a larger learning rate."
+    },
+    {
+      "title": "GitHub - facebookresearch/flow_matching: A PyTorch library for ...",
+      "url": "https://github.com/facebookresearch/flow_matching",
+      "snippet": "A PyTorch library for implementing flow matching algorithms, featuring continuous and discrete flow matching implementations. It includes practical examples for both text and image modalities. - fa..."
+    }
+  ]
+}

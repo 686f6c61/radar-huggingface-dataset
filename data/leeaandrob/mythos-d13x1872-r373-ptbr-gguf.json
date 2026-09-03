@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "leeaandrob/mythos-d13x1872-r373-ptbr-gguf",
+  "slug": "leeaandrob-mythos-d13x1872-r373-ptbr-gguf",
+  "author": "leeaandrob",
+  "url": "https://huggingface.co/leeaandrob/mythos-d13x1872-r373-ptbr-gguf",
+  "created_at": "2026-09-02T19:45:49.000Z",
+  "updated_at": "2026-09-02T20:30:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "ternary",
+    "2-bit",
+    "portuguese",
+    "neurogrid",
+    "pt",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 932646292,
+  "parameters_human": "932.6M",
+  "storage_bytes": 1648356064,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leeaandrob/mythos-d13x1872-r373-ptbr-gguf · Hugging Face",
+      "url": "https://huggingface.co/leeaandrob/mythos-d13x1872-r373-ptbr-gguf",
+      "snippet": "Instructions to use leeaandrob/mythos-d13x1872-r373-ptbr-gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use leeaandrob/mythos-d13x1872-r373-ptbr-gguf with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "leeaandrob (Leandro Barbosa) - Hugging Face",
+      "url": "https://huggingface.co/leeaandrob/datasets",
+      "snippet": "leeaandrob (Leandro Barbosa) - Hugging Face ... LLM"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Home &#92;&#92; Anthropic",
+      "url": "https://www.anthropic.com/",
+      "snippet": "Anthropic is an AI safety and research company that&#x27;s working to build reliable, interpretable, and steerable AI systems."
+    },
+    {
+      "title": "Claude (AI) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Claude_(AI)",
+      "snippet": "Claude is an AI chatbot. [4] It sometimes uses artifacts, introduced in June 2024, to generate and interact with code snippets and documents. [5][6] In 2025, Anthropic added a web search feature to Claude. [7][8] Claude Pro and Claude Max are subscription services for additional access to Claude models. Max provides higher usage limits at an additional cost. [9] Grouped subscriptions include ..."
+    }
+  ]
+}

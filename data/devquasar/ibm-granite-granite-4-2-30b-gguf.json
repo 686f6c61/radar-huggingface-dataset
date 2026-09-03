@@ -5,7 +5,7 @@
   "author": "DevQuasar",
   "url": "https://huggingface.co/DevQuasar/ibm-granite.granite-4.2-30b-GGUF",
   "created_at": "2026-09-02T15:39:05.000Z",
-  "updated_at": "2026-09-02T15:55:18.000Z",
+  "updated_at": "2026-09-02T16:22:42.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -20,13 +20,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 29276770304,
   "parameters_human": "29.28B",
-  "storage_bytes": 10858656512,
-  "storage_human": "10.9 GB",
+  "storage_bytes": 118622302720,
+  "storage_human": "118.6 GB",
   "base_model": "ibm-granite/granite-4.2-30b",
   "formats": [
     "gguf"

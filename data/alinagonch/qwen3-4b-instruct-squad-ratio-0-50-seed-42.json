@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/qwen3-4b-instruct-squad-ratio-0.50-seed-42",
+  "slug": "alinagonch-qwen3-4b-instruct-squad-ratio-0-50-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.50-seed-42",
+  "created_at": "2026-09-02T23:35:43.000Z",
+  "updated_at": "2026-09-02T23:35:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610808,
+  "storage_human": "144 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3-4b-instruct-squad-ratio-0.50-r4 - Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.50-r4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SQuAD dataset ratio experiment qwen3-instruct - a AlinaGonch Collection",
+      "url": "https://huggingface.co/collections/AlinaGonch/squad-dataset-ratio-experiment-qwen3-instruct",
+      "snippet": "This is a collection createad as a part of SQuaD2.0 experiment on ratio to find out an optimal proportion of unanswerable samples in train dataset."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    },
+    {
+      "title": "2026 AI Index Report: Stanford&#x27;s Annual AI Trends Analysis",
+      "url": "https://studylib.net/doc/28612293/ai-index-report-2026",
+      "snippet": "Stanford&#x27;s 2026 AI Index Report covers AI research, development, performance, and policy trends. Key insights on AI capabilities, adoption, and governance."
+    }
+  ]
+}

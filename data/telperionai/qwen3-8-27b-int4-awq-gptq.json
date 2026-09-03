@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "TelperionAI/Qwen3.8-27B-INT4-AWQ-GPTQ",
+  "slug": "telperionai-qwen3-8-27b-int4-awq-gptq",
+  "author": "TelperionAI",
+  "url": "https://huggingface.co/TelperionAI/Qwen3.8-27B-INT4-AWQ-GPTQ",
+  "created_at": "2026-08-21T00:18:26.000Z",
+  "updated_at": "2026-09-02T21:21:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "int4",
+    "w4a16",
+    "awq",
+    "gptq",
+    "llm-compressor",
+    "compressed-tensors",
+    "vllm",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 1395,
+  "trending_score": 0,
+  "parameters": 7839289360,
+  "parameters_human": "7.84B",
+  "storage_bytes": 25085305917,
+  "storage_human": "25.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TelperionAI/Qwen3.8-27B-INT4-AWQ-GPTQ-gdn4 · Hugging Face",
+      "url": "https://huggingface.co/TelperionAI/Qwen3.8-27B-INT4-AWQ-GPTQ-gdn4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui-Qwen3.8-27B-abliterated-INT4-AWQ-GPTQ - Hugging Face",
+      "url": "https://huggingface.co/TelperionAI/Huihui-Qwen3.8-27B-abliterated-INT4-AWQ-GPTQ",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui Qwen3.8 27B Abliterated INT4 AWQ GPTQ by TelperionAI",
+      "url": "https://llm-explorer.com/model/TelperionAI%2FHuihui-Qwen3.8-27B-abliterated-INT4-AWQ-GPTQ,5vUh4M12Z6h5jxecWsOR3b",
+      "snippet": "Rank the Huihui Qwen3.8 27B Abliterated INT4 AWQ GPTQ capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Qwen3.8 27B INT4 AWQ GPTQ by TelperionAI - LLM Explorer",
+      "url": "https://llm-explorer.com/model/TelperionAI%2FQwen3.8-27B-INT4-AWQ-GPTQ,7FBYtQCENFaTLoNlHLlCrM",
+      "snippet": "Rank the Qwen3.8 27B INT4 AWQ GPTQ capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Architecture graph for TelperionAI/Qwen3.8-27B-INT4-AWQ-GPTQ-gdn4.",
+      "url": "https://hfviewer.com/TelperionAI/Qwen3.8-27B-INT4-AWQ-GPTQ-gdn4",
+      "snippet": "TelperionAI/Qwen3.8-27B-INT4-AWQ-GPTQ-gdn4 is an image-text-to-text model (qwen3_5_text architecture). It uses 64 transformer layers, a hidden size of 5,120, and 24 query heads with 4 key/value heads (grouped-query attention)."
+    }
+  ]
+}

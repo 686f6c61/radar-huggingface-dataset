@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "AdarshSingh7647/Eklav-7B-Reranker-CotGen",
+  "slug": "adarshsingh7647-eklav-7b-reranker-cotgen",
+  "author": "AdarshSingh7647",
+  "url": "https://huggingface.co/AdarshSingh7647/Eklav-7B-Reranker-CotGen",
+  "created_at": "2026-08-26T21:15:43.000Z",
+  "updated_at": "2026-09-02T21:02:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "eklav",
+    "reranking",
+    "cot-distillation",
+    "reasoning",
+    "cotgen",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-7B",
+    "base_model:finetune:Qwen/Qwen2.5-7B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15243082721,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=AdarshSingh7647%2FTabRankSingleTableNaive",
+      "snippet": "JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 + 44 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 + 10 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 8 + 10 + 9 Hardware Add your hardware Apply filters Models 1 Base only Inference ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=reranking",
+      "snippet": "Edit Models filters. Main ; Tasks ; Libraries ; Languages ; Licenses ; Other 1; Model Tree. Base. Adapters. Finetunes. Quantizations. Merges. Apps . llama.cpp"
+    },
+    {
+      "title": "Top 5 Reranking Models to Improve RAG Results",
+      "url": "https://machinelearningmastery.com/top-5-reranking-models-to-improve-rag-results/",
+      "snippet": "In this article, you will learn how reranking improves the relevance of results in retrieval-augmented generation (RAG) systems by going beyond what retrievers alone can achieve. Topics we will cover include: How rerankers refine retriever outputs to deliver better answers Five top reranker models to test in 2026 Final thoughts on choosing the right reranker for your system Let&#x27;s get started."
+    },
+    {
+      "title": "GitHub - AnswerDotAI/rerankers: A lightweight, low-dependency, unified ...",
+      "url": "https://github.com/AnswerDotAI/rerankers",
+      "snippet": "A lightweight, low-dependency, unified API to use all common reranking and cross-encoder models. - AnswerDotAI/rerankers"
+    },
+    {
+      "title": "Top 7 Rerankers for RAG - Analytics Vidhya",
+      "url": "https://www.analyticsvidhya.com/blog/2025/06/top-rerankers-for-rag/",
+      "snippet": "Discover the top 7 rerankers for RAG in 2025 to enhance retrieval accuracy, refine search results, and improve LLM-generated responses."
+    }
+  ]
+}

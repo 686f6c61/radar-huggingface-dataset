@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tarakozushi/dreamykiss_illust",
+  "slug": "tarakozushi-dreamykiss_illust",
+  "author": "tarakozushi",
+  "url": "https://huggingface.co/tarakozushi/dreamykiss_illust",
+  "created_at": "2026-09-03T00:27:25.000Z",
+  "updated_at": "2026-09-03T01:49:52.000Z",
+  "license": "all-rights-reserved",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6943617601,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tarakozushi (tarakozushi) - Hugging Face",
+      "url": "https://huggingface.co/tarakozushi",
+      "snippet": "art AI & ML interests art"
+    },
+    {
+      "title": "minaiosu/tarakozushi · Hugging Face",
+      "url": "https://huggingface.co/minaiosu/tarakozushi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tarakozushi Creator Profile | Civitai",
+      "url": "https://civitai.com/user/tarakozushi/models",
+      "snippet": "Models Uploaded: 0, Followers: 319, Total Likes Received: 1.2k, Total Downloads Received: 16k."
+    },
+    {
+      "title": "Best Raehoshi illust XL Models | PromptHero",
+      "url": "https://prompthero.com/ai-models/raehoshi-illust-xl-download",
+      "snippet": "Raehoshi Illust XLan enhanced iteration built upon the Illustrious XL v01 model. It aims to elevate the visual style by addressing some of the limitations in th"
+    },
+    {
+      "title": "Free AI Image Generator | Craiyon",
+      "url": "https://www.craiyon.com/",
+      "snippet": "Free AI Image Generator Create free AI images from text for art, photos, illustrations, and quick visual ideas."
+    }
+  ]
+}

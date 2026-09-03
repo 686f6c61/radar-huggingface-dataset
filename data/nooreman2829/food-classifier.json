@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "NoorEman2829/food-classifier",
+  "slug": "nooreman2829-food-classifier",
+  "author": "NoorEman2829",
+  "url": "https://huggingface.co/NoorEman2829/food-classifier",
+  "created_at": "2026-09-02T19:26:57.000Z",
+  "updated_at": "2026-09-02T19:57:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zahaab/food-classifier · Hugging Face",
+      "url": "https://huggingface.co/Zahaab/food-classifier",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "food-classification · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/food-classification",
+      "snippet": "Food Detection using Yolov8 (pre-trained model for object detection). Training yolov8 on the custom dataset to get the desired results."
+    },
+    {
+      "title": "GitHub - darkangrycoder/food_classifier_model: A food classifier model ...",
+      "url": "https://github.com/darkangrycoder/food_classifier_model",
+      "snippet": "The Food Classifier project is an innovative deep learning-based application that aims to accurately identify and categorize various types of food items from images. This project leverages the power of state-of-the-art machine learning techniques to provide users with an intuitive and efficient way to classify foods, whether for dietary monitoring, restaurant menu analysis, or personal cooking ..."
+    },
+    {
+      "title": "Food Recognition Model with Deep Learning Techniques [Updated] - Labellerr",
+      "url": "https://www.labellerr.com/blog/food-recognition-and-classification-using-deep-learning/",
+      "snippet": "Build a precise food recognition model with deep learning. Use CNNs, transfer learning, and large datasets for dietary tracking and food safety."
+    },
+    {
+      "title": "A comparative study of deep learning methods for food classification ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S294982442300085X",
+      "snippet": "The study also discusses the influence of handcrafted features on cocoa bean classification and applies Class Activation Maps to visualise the most important regions of the images in the DCVS model."
+    }
+  ]
+}

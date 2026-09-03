@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "florianmgzc/contrastive",
+  "slug": "florianmgzc-contrastive",
+  "author": "florianmgzc",
+  "url": "https://huggingface.co/florianmgzc/contrastive",
+  "created_at": "2026-09-02T23:18:27.000Z",
+  "updated_at": "2026-09-02T23:18:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "florianmgzc (Florian A. Meyer) - Hugging Face",
+      "url": "https://huggingface.co/florianmgzc/models",
+      "snippet": "User profile of Florian A. Meyer on Hugging Face"
+    },
+    {
+      "title": "GitHub - nomic-ai/contrastors: Train Models Contrastively in Pytorch",
+      "url": "https://github.com/nomic-ai/contrastors",
+      "snippet": "Train Models Contrastively in Pytorch. Contribute to nomic-ai/contrastors development by creating an account on GitHub."
+    },
+    {
+      "title": "PD-CLIP Enables Zero-Shot Fine-Grained Plant Disease Diagnosis Through",
+      "url": "https://scienmag.com/pd-clip-enables-zero-shot-fine-grained-plant-disease-diagnosis-through-contrastive-ai-training/",
+      "snippet": "PD-CLIP addresses one of the central weaknesses of conventional classifiers by using a vision-language architecture inspired by CLIP, or contrastive language-image pre-training. Rather than learning only a fixed list of numerical class labels, the model maps images and textual descriptions into a shared mathematical feature space. During training, image representations are pulled closer to the ..."
+    },
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "Best AI Models in September 2026: Updated Rankings and Comparisons",
+      "url": "https://felloai.com/best-ai-models/",
+      "snippet": "The best AI models ranked by use case: writing, coding, image generation, accuracy and more. Updated monthly with benchmarks and pricing for September 2026."
+    }
+  ]
+}

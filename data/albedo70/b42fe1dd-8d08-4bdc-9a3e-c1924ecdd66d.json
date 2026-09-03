@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "albedo70/b42fe1dd-8d08-4bdc-9a3e-c1924ecdd66d",
+  "slug": "albedo70-b42fe1dd-8d08-4bdc-9a3e-c1924ecdd66d",
+  "author": "albedo70",
+  "url": "https://huggingface.co/albedo70/b42fe1dd-8d08-4bdc-9a3e-c1924ecdd66d",
+  "created_at": "2026-09-03T00:53:03.000Z",
+  "updated_at": "2026-09-03T00:53:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916585166,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-03T02:14:18.244Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roblox Avatar Viewer — BloxToolbox",
+      "url": "https://bloxtoolbox.com/pages/tools/roblox-avatar-viewer.html",
+      "snippet": "Home / Tools / Avatar Viewer Roblox avatar viewer Paste a Roblox profile URL or a user ID to see the avatar in full body, headshot, and bust — and grab the numeric user ID to copy. Nothing is logged; the images load straight from Roblox&#x27;s public image CDN."
+    },
+    {
+      "title": "100 Best Roblox Image IDs and Decal Codes to Use (September 2026)",
+      "url": "https://www.technerdiness.com/roblox/best-roblox-image-ids-decal-codes/",
+      "snippet": "Explore 100 working Roblox image IDs and decal codes for 2026, sorted by anime, memes, aesthetic, horror, and FNF, with steps to use them in Studio."
+    },
+    {
+      "title": "Roblox ID Finder — Check Any Asset ID — rblxdb",
+      "url": "https://rblxdb.com/tools/id-lookup",
+      "snippet": "Paste any Roblox ID or catalog URL and see what it is: name, type, creator and whether it still works. Checks the live Roblox catalog."
+    },
+    {
+      "title": "ECOSTRESS Tiled Ancillary NDVI and Albedo L2 Global 70 m V002",
+      "url": "https://data.nasa.gov/dataset/ecostress-tiled-ancillary-ndvi-and-albedo-l2-global-70-m-v002-8cc96",
+      "snippet": "The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond..."
+    },
+    {
+      "title": "National Aeronautics and Space Administration - ECOSTRESS Tiled ...",
+      "url": "https://catalog.data.gov/dataset/ecostress-tiled-ancillary-ndvi-and-albedo-l2-global-70-m-v002",
+      "snippet": "The ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station (ECOSTRESS) mission measures the temperature of plants to better understand how much water plants need and how they respond to stress. ECOSTRESS is attached to the International Space Station (ISS) and collects data globally between 52° N and 52° S latitudes. The ECOSTRESS Tiled Ancillary NDVI and Albedo Level 2 Global ..."
+    }
+  ]
+}

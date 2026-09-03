@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sankatmochan/act_lego_pick_v2",
+  "slug": "sankatmochan-act_lego_pick_v2",
+  "author": "sankatmochan",
+  "url": "https://huggingface.co/sankatmochan/act_lego_pick_v2",
+  "created_at": "2026-09-02T22:07:46.000Z",
+  "updated_at": "2026-09-03T00:42:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:sankatmochan/lego_pick_v2_sept2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 6195344088,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sankatmochan/act_lego_pick_v1 · Hugging Face",
+      "url": "https://huggingface.co/sankatmochan/act_lego_pick_v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "G3ND3K/general_lego_act_policy_v2_high_kl · Hugging Face",
+      "url": "https://huggingface.co/G3ND3K/general_lego_act_policy_v2_high_kl",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "Pinku | Roleplay and generate images of AI characters",
+      "url": "https://pinku.ai/",
+      "snippet": "Chat with AI Characters anytime, anywhere. Create and interact with intelligent bots that understand, respond, and even generate AI-driven images and videos."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    }
+  ]
+}

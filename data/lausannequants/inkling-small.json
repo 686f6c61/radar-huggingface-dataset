@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "lausannequants/Inkling-Small",
+  "slug": "lausannequants-inkling-small",
+  "author": "lausannequants",
+  "url": "https://huggingface.co/lausannequants/Inkling-Small",
+  "created_at": "2026-09-02T23:17:31.000Z",
+  "updated_at": "2026-09-02T23:17:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 265956439090,
+  "parameters_human": "265.96B",
+  "storage_bytes": 531944513947,
+  "storage_human": "531.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing Inkling-Small - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/news/inkling-small/",
+      "snippet": "Today, we are releasing Inkling-Small, an efficient open-weights model that achieves comparable performance to Inkling at a quarter of its size. Inkling-Small is a Mixture-of-Experts transformer with 276B total parameters, 12B active, trained on NVIDIA GB300 NVL72 systems. Like Inkling, it features native reasoning over audio and images, variable thinking effort, a context window of up to 1M ..."
+    },
+    {
+      "title": "Inkling-Small Model Card - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/model-card/inkling-small/",
+      "snippet": "Model card for Inkling-Small, a 276B-parameter (12B active) open-weights multimodal model: intended uses, model properties, training, evaluations and safety."
+    },
+    {
+      "title": "Quantized Models for thinkingmachines/Inkling-Small - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:thinkingmachines/Inkling-Small",
+      "snippet": "Explore machine learning models. miweru/Inkling-Small-REAP-137B-A12B-de-GGUF"
+    },
+    {
+      "title": "zurichquants/Inkling-Small · Hugging Face",
+      "url": "https://huggingface.co/zurichquants/Inkling-Small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Thinking Machines: Inkling Small | Text Generation | ModelsLab",
+      "url": "https://modelslab.com/models/thinkingmachines/thinkingmachines-inkling-small",
+      "snippet": "Try Thinking Machines: Inkling Small in your browser. Chat with this AI model instantly with no code required. Plans from $21/month."
+    }
+  ]
+}

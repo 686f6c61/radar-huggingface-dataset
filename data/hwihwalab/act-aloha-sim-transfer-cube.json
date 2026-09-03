@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "hwihwalab/act-aloha-sim-transfer-cube",
+  "slug": "hwihwalab-act-aloha-sim-transfer-cube",
+  "author": "hwihwalab",
+  "url": "https://huggingface.co/hwihwalab/act-aloha-sim-transfer-cube",
+  "created_at": "2026-09-03T00:29:34.000Z",
+  "updated_at": "2026-09-03T01:15:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "aloha",
+    "bimanual",
+    "mujoco",
+    "act",
+    "action-chunking-transformer",
+    "imitation-learning",
+    "manipulation",
+    "14-dof",
+    "dual-arm",
+    "transfer-cube",
+    "telemetry",
+    "reinforcement-learning",
+    "pytorch",
+    "en",
+    "ko",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 748443,
+  "storage_human": "748443 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Bimanual Cube Transfer",
+      "dataset": "aloha_sim_transfer_cube",
+      "metric": "Task Success Rate",
+      "value": 100
+    },
+    {
+      "task": "Bimanual Cube Transfer",
+      "dataset": "aloha_sim_transfer_cube",
+      "metric": "Time to Success",
+      "value": 5.42
+    },
+    {
+      "task": "Bimanual Cube Transfer",
+      "dataset": "aloha_sim_transfer_cube",
+      "metric": "Torque Smoothness (Jerk)",
+      "value": 1.245
+    }
+  ],
+  "sources": [
+    {
+      "title": "lerobot/act_aloha_sim_transfer_cube_human · Hugging Face",
+      "url": "https://huggingface.co/lerobot/act_aloha_sim_transfer_cube_human",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · lerobot/act_aloha_sim_transfer_cube_human at ...",
+      "url": "https://huggingface.co/lerobot/act_aloha_sim_transfer_cube_human/blob/d4be48f0e7f16f5a5980d03d11cf5dbd9218504a/README.md",
+      "snippet": "The model was evaluated on the AlohaTransferCube environment from gym-aloha and compared to a similar model trained with the original ACT repository. Each episode marks a success if the cube is successfully picked by one robot arm and transferred to the other robot arm."
+    },
+    {
+      "title": "act_aloha_sim_transfer_cube_human Open-source Model - Empowering Fine ...",
+      "url": "https://model.aibase.com/models/details/1915692733462896642",
+      "snippet": "This model is a robotics control model trained using the Action Chunking Transformer (ACT) policy, specifically for the AlohaTransferCube task in the gym-aloha environment, achieving bimanual robotic arm operation for cube transfer."
+    },
+    {
+      "title": "act_aloha_sim_transfer_cube_human · Models",
+      "url": "https://www.modelscope.cn/models/lerobot/act_aloha_sim_transfer_cube_human/summary",
+      "snippet": "The model was evaluated on the AlohaTransferCube task from gym-aloha and compared to a similar model trained with the original ACT repository. Each episode marks a success if the cube is successfully picked by one robot arm and transferred to the other robot arm."
+    },
+    {
+      "title": "lerobot/act_aloha_sim_transfer_cube_human - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/lerobot-act-aloha-sim-transfer-cube-human",
+      "snippet": "Introduction of act_aloha_sim_transfer_cube_human Model Details of act_aloha_sim_transfer_cube_human Model Card for ACT/AlohaTransferCube Action Chunking Transformer Policy (as per Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware ) trained for the AlohaTransferCube environment from gym-aloha ."
+    }
+  ]
+}

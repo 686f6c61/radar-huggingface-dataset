@@ -5,7 +5,7 @@
   "author": "inferencerlabs",
   "url": "https://huggingface.co/inferencerlabs/DeepSeek-V4-Flash-Vision-Exp-MLX",
   "created_at": "2026-09-02T17:45:57.000Z",
-  "updated_at": "2026-09-02T18:17:21.000Z",
+  "updated_at": "2026-09-02T19:46:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 28527224527,
-  "storage_human": "28.5 GB",
+  "storage_bytes": 152384470880,
+  "storage_human": "152.4 GB",
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
   "formats": [
     "mlx"

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Neydon47/Good_Lora",
+  "slug": "neydon47-good_lora",
+  "author": "Neydon47",
+  "url": "https://huggingface.co/Neydon47/Good_Lora",
+  "created_at": "2026-09-02T20:20:19.000Z",
+  "updated_at": "2026-09-02T20:46:21.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1547759848,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,927 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models. lovis93/studio-1939-old-animation-lora-minimax-h3"
+    },
+    {
+      "title": "PixAI Model Market | AI Art Models and LoRAs | PixAI",
+      "url": "https://pixai.art/en/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.5M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=LoRA",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "otheru/DeepSeek-V4-Flash-Vision-Strix-Halo-GGUF",
+  "slug": "otheru-deepseek-v4-flash-vision-strix-halo-gguf",
+  "author": "otheru",
+  "url": "https://huggingface.co/otheru/DeepSeek-V4-Flash-Vision-Strix-Halo-GGUF",
+  "created_at": "2026-09-03T00:56:02.000Z",
+  "updated_at": "2026-09-03T01:59:21.000Z",
+  "license": "deepseek",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rocmfp",
+    "rocmfpx",
+    "strix-halo",
+    "gfx1151",
+    "amd",
+    "deepseek-v4",
+    "deepseek-v4-vision",
+    "moe",
+    "imatrix",
+    "vision",
+    "multimodal",
+    "abliterated",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 284334579287,
+  "parameters_human": "284.33B",
+  "storage_bytes": 115627449144,
+  "storage_human": "115.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - otheru-ai/ember: DeepSeek-V4-Flash inference for AMD Strix Halo",
+      "url": "https://github.com/otheru-ai/ember",
+      "snippet": "DeepSeek-V4-Flash inference for AMD Strix Halo. Contribute to otheru-ai/ember development by creating an account on GitHub."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ember/README.md at main · otheru-ai/ember · GitHub",
+      "url": "https://github.com/otheru-ai/ember/blob/main/README.md",
+      "snippet": "DeepSeek-V4-Flash inference for AMD Strix Halo. Contribute to otheru-ai/ember development by creating an account on GitHub."
+    },
+    {
+      "title": "Quantized Models for deepseek-ai/DeepSeek-V4-Flash-0731 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "Explore machine learning models. drowzeys/keys-DeepSeekV4-Flash-GA-0731-Dspark-Abliterated-Anchored-Tensors"
+    },
+    {
+      "title": "Running DeepSeek V4 Flash on AMD Strix Halo - tinycomputers.io",
+      "url": "https://tinycomputers.io/posts/running-deepseek-v4-flash-on-amd-strix-halo.html",
+      "snippet": "Getting DeepSeek&#x27;s newest 284B-parameter mixture-of-experts model running locally on an AMD Strix Halo APU with a custom llama.cpp build, and the surprising reasons why it fails entirely on four NVIDIA Tesla P40 GPUs despite having more teraflops on paper."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bdatm-project/qwen-task2-spiral-lora",
+  "slug": "bdatm-project-qwen-task2-spiral-lora",
+  "author": "bdatm-project",
+  "url": "https://huggingface.co/bdatm-project/qwen-task2-spiral-lora",
+  "created_at": "2026-09-02T19:52:42.000Z",
+  "updated_at": "2026-09-02T19:52:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45576707,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bdatm-project/qwen-task1-spiral-lora · Hugging Face",
+      "url": "https://huggingface.co/bdatm-project/qwen-task1-spiral-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bdatm-project/qwen-task1-spiral-lora at main - Hugging Face",
+      "url": "https://huggingface.co/bdatm-project/qwen-task1-spiral-lora/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,914 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    }
+  ]
+}

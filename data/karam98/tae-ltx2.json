@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Karam98/tae-ltx2",
+  "slug": "karam98-tae-ltx2",
+  "author": "Karam98",
+  "url": "https://huggingface.co/Karam98/tae-ltx2",
+  "created_at": "2026-09-02T23:57:44.000Z",
+  "updated_at": "2026-09-02T23:57:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "video",
+    "ltx-2.5",
+    "tiny-autoencoder",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23531296,
+  "storage_human": "24 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LTX-2: Production-Grade AI Video Generation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2",
+      "snippet": "LTX-2 is a pro AI video model for production. It offers precise control, native 4K, high frame rates and proven performance for long-form creative tasks."
+    },
+    {
+      "title": "Lightricks/LTX-2 · Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Lightricks/LTX-2: Official Python inference and LoRA trainer ...",
+      "url": "https://github.com/Lightricks/LTX-2",
+      "snippet": "Official Python inference and LoRA trainer package for the LTX-2 audio-video generative model. - Lightricks/LTX-2"
+    },
+    {
+      "title": "vae/taeltx2_3.safetensors · Kijai/LTX2.3_comfy at main",
+      "url": "https://huggingface.co/Kijai/LTX2.3_comfy/blob/main/vae/taeltx2_3.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LTX-2 - Open-Source 4K AI Video & Audio Generation Model",
+      "url": "https://ltx-2.run/",
+      "snippet": "LTX-2 is a production-ready 19B parameter AI model for synchronized 4K video and audio generation. Text-to-video, image-to-video, LoRA fine-tuning support."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "PixelML",
   "url": "https://huggingface.co/PixelML/Qwen3.8-Flash-Next-NVFP4-Dual-DGX-Spark",
   "created_at": "2026-08-27T06:46:28.000Z",
-  "updated_at": "2026-08-27T06:56:53.000Z",
+  "updated_at": "2026-09-02T06:49:58.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",

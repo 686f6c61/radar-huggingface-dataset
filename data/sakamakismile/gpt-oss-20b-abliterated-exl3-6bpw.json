@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "sakamakismile/gpt-oss-20b-abliterated-EXL3-6bpw",
+  "slug": "sakamakismile-gpt-oss-20b-abliterated-exl3-6bpw",
+  "author": "sakamakismile",
+  "url": "https://huggingface.co/sakamakismile/gpt-oss-20b-abliterated-EXL3-6bpw",
+  "created_at": "2026-09-02T22:58:24.000Z",
+  "updated_at": "2026-09-02T23:25:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ja",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt_oss",
+    "exl3",
+    "exllamav3",
+    "gpt-oss",
+    "moe",
+    "abliterated",
+    "uncensored",
+    "harmony",
+    "blackwell",
+    "lna-lab",
+    "text-generation",
+    "conversational",
+    "en",
+    "ja",
+    "zh",
+    "base_model:wangzhang/gpt-oss-20b-abliterated",
+    "base_model:quantized:wangzhang/gpt-oss-20b-abliterated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8712728896,
+  "parameters_human": "8.71B",
+  "storage_bytes": 17454750597,
+  "storage_human": "17.5 GB",
+  "base_model": "wangzhang/gpt-oss-20b-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/gpt-oss-20b · Hugging Face",
+      "url": "https://huggingface.co/openai/gpt-oss-20b",
+      "snippet": "Discover Hugging Face&#x27;s gpt-oss-20b model, a smaller open-source AI with versatile applications and fine-tuning capabilities for developers and researchers."
+    },
+    {
+      "title": "gpt-oss-20b Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-oss-20b",
+      "snippet": "Medium-sized open-weight model for low latency Compare"
+    },
+    {
+      "title": "GPT-OSS-20B - OpenAI AI Model | AkashML",
+      "url": "https://akashml.com/models/gpt-oss-20b",
+      "snippet": "Open-weight MoE with 21B total/3.6B active params; built for low-latency agentic tool use and code execution, with configurable reasoning effort and 128K context. Get GPT-OSS-20B API access with $0.03/M input tokens and $0.13/M output tokens on AkashML."
+    },
+    {
+      "title": "Introducing gpt-oss - OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-oss/",
+      "snippet": "We&#x27;re releasing gpt-oss-120b and gpt-oss-20b—two state-of-the-art open-weight language models that deliver strong real-world performance at low cost. Available under the flexible Apache 2.0 license, these models outperform similarly sized open models on reasoning tasks, demonstrate strong tool use capabilities, and are optimized for efficient deployment on consumer hardware."
+    },
+    {
+      "title": "gpt-oss-120b & gpt-oss-20b Model Card - OpenAI",
+      "url": "https://openai.com/index/gpt-oss-model-card/",
+      "snippet": "We introduce gpt-oss-120b and gpt-oss-20b, two open-weight reasoning models available under the Apache 2.0 license and our gpt-oss usage policy."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Kellenok/PP-OCRv6_manga",
+  "slug": "kellenok-pp-ocrv6_manga",
+  "author": "Kellenok",
+  "url": "https://huggingface.co/Kellenok/PP-OCRv6_manga",
+  "created_at": "2026-09-02T19:22:04.000Z",
+  "updated_at": "2026-09-02T20:45:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "ja",
+    "zh"
+  ],
+  "tags": [
+    "onnx",
+    "paddlepaddle",
+    "ocr",
+    "text-detection",
+    "text-recognition",
+    "manga",
+    "anime",
+    "paddleocr",
+    "openvino",
+    "image-to-text",
+    "ja",
+    "zh",
+    "dataset:hal-utokyo/Manga109-s",
+    "dataset:deepghs/AnimeText",
+    "base_model:PaddlePaddle/PP-OCRv6_small_rec",
+    "base_model:finetune:PaddlePaddle/PP-OCRv6_small_rec",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58004642,
+  "storage_human": "58 MB",
+  "base_model": "PaddlePaddle/PP-OCRv6_tiny_det, PaddlePaddle/PP-OCRv6_small_rec",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PP-OCRv6: From 1.5M to 34.5M Parameters, Surpassing Billion-Scale VLMs ...",
+      "url": "https://arxiv.org/pdf/2606.13108",
+      "snippet": "PP-OCRv5 demonstrated that with sufficient high-quality data, the performance ceiling of a 5M-parameter model is far higher than commonly assumed. In this work, we present PP-OCRv6, which combines both directions. While inheriting PP-OCRv5&#x27;s proven data curation methodology, PP-OCRv6 introduces a fundamentally redesigned model architecture."
+    },
+    {
+      "title": "[2606.13108] PP-OCRv6: From 1.5M to 34.5M Parameters, Surpassing ...",
+      "url": "https://arxiv.org/abs/2606.13108",
+      "snippet": "Vision-Language Models (VLMs) have achieved impressive results on general vision-language tasks, yet they suffer from hallucination, imprecise localization, and prohibitive computational cost when applied to dedicated OCR scenarios. This paper presents PP-OCRv6, a lightweight OCR system that combines architectural innovation with data-centric optimization. PP-OCRv6 redesigns the backbone ..."
+    },
+    {
+      "title": "PaddleOCR/docs/version3.x/algorithm/PP-OCRv6/PP-OCRv6.md at ... - GitHub",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR/blob/main/docs/version3.x/algorithm/PP-OCRv6/PP-OCRv6.md",
+      "snippet": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages. - PaddlePaddle/Paddl..."
+    },
+    {
+      "title": "Kellenok/anglenet at main - Hugging Face",
+      "url": "https://huggingface.co/Kellenok/anglenet/tree/main",
+      "snippet": "Kellenok / anglenet like 0 ONNX hal-utokyo/Manga109-s deepghs/AnimeText Japanese English ocr text-detection manga japanese License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main anglenet 32.2 MB Ctrl+K Ctrl+K 1 contributor History:1 commit Kellenok Release AngleNet v0.1: Fast reading orientation and continuous angle models for manga OCR b33568a about 2 ..."
+    },
+    {
+      "title": "Comprehensive Guide to PP-OCRv6: High-Performance Multi-Language OCR ...",
+      "url": "https://explore.n1n.ai/blog/pp-ocrv6-hugging-face-multi-language-ocr-guide-2026-06-22",
+      "snippet": "An in-depth technical analysis of PP-OCRv6, exploring its architecture, 50-language support, and deployment strategies from mobile-ready 1.5M models to high-accuracy 34.5M parameter versions."
+    }
+  ]
+}

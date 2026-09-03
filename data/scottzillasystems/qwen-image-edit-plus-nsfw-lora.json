@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ScottzillaSystems/qwen-image-edit-plus-nsfw-lora",
+  "slug": "scottzillasystems-qwen-image-edit-plus-nsfw-lora",
+  "author": "ScottzillaSystems",
+  "url": "https://huggingface.co/ScottzillaSystems/qwen-image-edit-plus-nsfw-lora",
+  "created_at": "2026-03-16T07:29:35.000Z",
+  "updated_at": "2026-04-26T07:43:11.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "text-to-image",
+    "nsfw",
+    "image-editing",
+    "qwen-image-edit",
+    "not-for-all-audiences",
+    "image-to-image",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:adapter:Qwen/Qwen-Image-Edit-2511",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 251,
+  "downloads_30d": 95166,
+  "trending_score": 7.9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 600280665,
+  "storage_human": "600 MB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ScottzillaSystems/qwen-image-edit-plus-nsfw-lora · Hugging Face",
+      "url": "https://huggingface.co/ScottzillaSystems/qwen-image-edit-plus-nsfw-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aiunivers/qwen-image-edit-plus-nsfw-lora · Hugging Face",
+      "url": "https://huggingface.co/aiunivers/qwen-image-edit-plus-nsfw-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen Image Edit Plus (2509) Mannequin Lora Version",
+      "url": "https://civitai.com/models/1990558/qwen-image-edit-plus2509-mannequin-lora-version",
+      "snippet": "A basic workflow using the latest Qwen Image Edit Plus (2509) and Mannequin Lora. Free try-out link of the workflow: https://www.runninghub.ai/post/1971423521077444609"
+    },
+    {
+      "title": "GitHub - MozDevApps/Qwen-Image-Edit: Qwen-Image is a powerful image ...",
+      "url": "https://github.com/MozDevApps/Qwen-Image-Edit",
+      "snippet": "We are thrilled to release Qwen-Image, a 20B MMDiT image foundation model that achieves significant advances in complex text rendering and precise image editing. Experiments show strong general capabilities in both image generation and editing, with exceptional performance in text rendering, especially for Chinese."
+    },
+    {
+      "title": "Qwen Image Edit Plus (2509) No AI Look Generation",
+      "url": "https://civitai.com/models/2037545/qwen-image-edit-plus2509-no-ai-look-generation",
+      "snippet": "A workflow used the Qwen Image Edit Plus (2509) and Samsung Real Lora and Anime2Realism Lora. All the model details are within the workflow. Try the..."
+    }
+  ]
+}

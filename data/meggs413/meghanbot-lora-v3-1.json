@@ -5,7 +5,7 @@
   "author": "meggs413",
   "url": "https://huggingface.co/meggs413/meghanbot-lora-v3.1",
   "created_at": "2026-09-01T18:01:04.000Z",
-  "updated_at": "2026-09-01T18:32:24.000Z",
+  "updated_at": "2026-09-02T04:48:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2213613592,
-  "storage_human": "2.2 GB",
+  "storage_bytes": 3314709440,
+  "storage_human": "3.3 GB",
   "base_model": "unsloth/Qwen2.5-14B-bnb-4bit",
   "formats": [
     "safetensors"

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "OpenMed/OpenMed-PII-Spanish-BioClinicalBERT-Base-110M-v1-mlx",
+  "slug": "openmed-openmed-pii-spanish-bioclinicalbert-base-110m-v1-mlx",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/OpenMed-PII-Spanish-BioClinicalBERT-Base-110M-v1-mlx",
+  "created_at": "2026-04-08T19:53:24.000Z",
+  "updated_at": "2026-09-02T22:27:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "openmed",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "openmed",
+    "bert",
+    "mlx",
+    "apple-silicon",
+    "token-classification",
+    "pii",
+    "de-identification",
+    "medical",
+    "clinical",
+    "es",
+    "base_model:OpenMed/OpenMed-PII-Spanish-BioClinicalBERT-Base-110M-v1",
+    "base_model:finetune:OpenMed/OpenMed-PII-Spanish-BioClinicalBERT-Base-110M-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 431133607,
+  "storage_human": "431 MB",
+  "base_model": "OpenMed/OpenMed-PII-Spanish-BioClinicalBERT-Base-110M-v1",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenMed-PII-Spanish-BioClinicalBERT-110M-v1 - Hugging Face",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Spanish-BioClinicalBERT-Base-110M-v1",
+      "snippet": "Model Description OpenMed-PII-Spanish-BioClinicalBERT-110M-v1 is a transformer-based token classification model fine-tuned for Personally Identifiable Information (PII) detection in Spanish text. This model identifies and classifies 54 types of sensitive information including names, addresses, social security numbers, medical record numbers, and more."
+    },
+    {
+      "title": "OpenMed-PII-Spanish-BioClinicalBERT-Base-110M-v1-mlx",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Spanish-BioClinicalBERT-Base-110M-v1-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenMed / OpenMed-PII-Spanish-BioClinicalBERT-Base-110M-v1",
+      "url": "https://aichina.news/models/OpenMed/OpenMed-PII-Spanish-BioClinicalBERT-Base-110M-v1/",
+      "snippet": "Overview This model is a Spanish BioClinicalBERT base model (110M parameters) fine-tuned for detecting personally identifiable information (PII) in Spanish clinical text. It labels tokens in a document with PII categories, making it suitable for de-identification pipelines in healthcare. The model is hosted on Modelers.cn, Huawei&#x27;s AI ecosystem platform."
+    },
+    {
+      "title": "OpenMed / OpenMed-PII-Spanish-BioClinicalBERT-Base-110M-v1-mlx",
+      "url": "https://aichina.news/models/OpenMed/OpenMed-PII-Spanish-BioClinicalBERT-Base-110M-v1-mlx/",
+      "snippet": "Key features and capabilities 110M-parameter BioClinicalBERT-based encoder fine-tuned for Spanish clinical PII detection. Token-classification output, suitable for sequence labelling and span extraction. Apache-2.0 licence, permitting broad academic and commercial use. MLX format, designed for efficient local inference on Apple Silicon and helping to keep sensitive data on-device."
+    },
+    {
+      "title": "GitHub - maziyarpanahi/openmed: Local-first healthcare AI: clinical NER ...",
+      "url": "https://github.com/maziyarpanahi/openmed",
+      "snippet": "Local-first healthcare AI: clinical NER & HIPAA PII de-identification that runs 100% on-device. 2,200+ medical models, 21 languages, Apple MLX + Python, no cloud, no patient data leaving your network. Apache-2.0 - maziyarpanahi/openmed"
+    }
+  ]
+}

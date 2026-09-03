@@ -5,7 +5,7 @@
   "author": "CodeSoft",
   "url": "https://huggingface.co/CodeSoft/sorbet-mini-experimental",
   "created_at": "2026-09-02T00:59:26.000Z",
-  "updated_at": "2026-09-02T01:16:58.000Z",
+  "updated_at": "2026-09-02T10:54:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 4920512,

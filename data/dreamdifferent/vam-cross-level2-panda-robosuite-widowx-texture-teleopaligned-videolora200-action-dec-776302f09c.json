@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/vam-cross-level2-panda-robosuite-widowx-texture-teleopaligned-videolora200-action-dec-776302f09c",
+  "slug": "dreamdifferent-vam-cross-level2-panda-robosuite-widowx-texture-teleopaligned-videolora200-action-dec-776302f09c",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/vam-cross-level2-panda-robosuite-widowx-texture-teleopaligned-videolora200-action-dec-776302f09c",
+  "created_at": "2026-09-02T20:08:19.000Z",
+  "updated_at": "2026-09-02T20:08:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "robotics",
+    "action-prediction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1000269372,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture ...",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-teleopaligned-videolora200-action-dec-c8fb3c68cd",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dreamdifferent/vam-cross-level4-panda-robosuite-widowx-texture ...",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level4-panda-robosuite-widowx-texture-teleopaligned-videolora200-action-dec-877773a44c",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ARISE-Initiative/robosuite: robosuite: A Modular Simulation ...",
+      "url": "https://github.com/ARISE-Initiative/robosuite",
+      "snippet": "robosuite is a simulation framework powered by the MuJoCo physics engine for robot learning. It also offers a suite of benchmark environments for reproducible research. The current release (v1.5) features support for diverse robot embodiments (including humanoids), custom robot composition, composite controllers (including whole body controllers), more teleoperation devices, photo-realistic ..."
+    },
+    {
+      "title": "robosuite | robosuite: A Modular Simulation Framework and Benchmark for ...",
+      "url": "https://robosuite.ai/",
+      "snippet": "robosuite is a simulation framework powered by the MuJoCo physics engine for robot learning. It also offers a suite of benchmark environments for reproducible research."
+    },
+    {
+      "title": "Wiki | Virt-A-Mate Hub",
+      "url": "https://hub.virtamate.com/forums/wiki.54/",
+      "snippet": "Auto Behaviors Head Audio Hand Control Skin Select Skin Materials 1 Skin Materials 2 Skin Textures Material Options Morphs Hair Clothing Guides FAQ (Frequently Asked Questions) Using VaM Person atoms Scene creation Plugins and tools Assets and files AI, AR, VR Resource specific VAR packaging and Hub actions Other topics Errors in the VaM log ..."
+    }
+  ]
+}

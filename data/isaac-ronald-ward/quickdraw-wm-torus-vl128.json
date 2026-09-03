@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "isaac-ronald-ward/quickdraw-wm-torus-vl128",
+  "slug": "isaac-ronald-ward-quickdraw-wm-torus-vl128",
+  "author": "isaac-ronald-ward",
+  "url": "https://huggingface.co/isaac-ronald-ward/quickdraw-wm-torus-vl128",
+  "created_at": "2026-09-02T21:14:47.000Z",
+  "updated_at": "2026-09-02T21:14:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "quickdraw",
+  "languages": [],
+  "tags": [
+    "quickdraw",
+    "world-models",
+    "robotics",
+    "video-prediction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170663728,
+  "storage_human": "171 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "isaac-ronald-ward (Isaac Ronald Ward) - Hugging Face",
+      "url": "https://huggingface.co/isaac-ronald-ward/datasets",
+      "snippet": "AI & ML interests ... Recent Activity published a dataset about 11 hours ago ... updated a dataset about 11 hours ago"
+    },
+    {
+      "title": "isaac-ronald-ward/quickdraw-wm-robocasa-vl128 · Hugging Face",
+      "url": "https://huggingface.co/isaac-ronald-ward/quickdraw-wm-robocasa-vl128",
+      "snippet": "quickdraw-wm-robocasa-vl128 A latent world model: it takes 8 steps of context (proprioceptive vector + camera frame) plus a sequence of actions, and rolls forward open-loop — predicting the frames and states that follow with no further observations."
+    },
+    {
+      "title": "isaac-ward (Isaac Ronald Ward) · GitHub",
+      "url": "https://github.com/isaac-ward",
+      "snippet": "isaac-ward has 7 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Real World Robotic Exploration using Deep Neural Networks Trained in ...",
+      "url": "https://arxiv.org/abs/2509.13342",
+      "snippet": "Additionally, photogrammetry data is used to produce a pose-labelled dataset which allows the above model to be trained on a local environment, resulting in localization accuracies of 0.11m & 0.89 degrees. This trained model forms the basis of a navigation algorithm, which is tested in real-time on a TurtleBot (a wheeled robotic device)."
+    },
+    {
+      "title": "GitHub - isaac-ward/isaac-ward.github.io · GitHub",
+      "url": "https://github.com/isaac-ward/isaac-ward.github.io",
+      "snippet": "G&#x27;day, I&#x27;m Isaac (everyone just calls me Ike). I&#x27;m interested in exploration. More specifically, I&#x27;m interested in leveraging autonomy, robotics, and artificial intelligence to enhance our ability to explore extreme environments."
+    }
+  ]
+}

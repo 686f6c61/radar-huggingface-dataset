@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "AbteeXAILab/lumynax-reasoning-glm46-355b-moe",
+  "slug": "abteexailab-lumynax-reasoning-glm46-355b-moe",
+  "author": "AbteeXAILab",
+  "url": "https://huggingface.co/AbteeXAILab/lumynax-reasoning-glm46-355b-moe",
+  "created_at": "2026-05-14T00:25:06.000Z",
+  "updated_at": "2026-09-02T23:14:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "mi"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abteex-ai-labs",
+    "aotearoa",
+    "frontier",
+    "glm",
+    "local-first",
+    "long-context",
+    "lumynax",
+    "moe",
+    "new-zealand",
+    "reasoning",
+    "sovereign-ai",
+    "tools",
+    "vllm",
+    "vllm-compatible",
+    "vllm-candidate",
+    "nvidia-nim",
+    "nim-compatible",
+    "nim-candidate",
+    "nvidia-nemo",
+    "nem",
+    "nvidia-nemo-pathway",
+    "nem-pathway",
+    "nem-convert-required",
+    "legacy",
+    "outdated",
+    "text-generation",
+    "en",
+    "mi",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 356785898816,
+  "parameters_human": "356.79B",
+  "storage_bytes": 215582633056,
+  "storage_human": "215.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AbteeXAILab/lumynax-reasoning-glm46-355b-moe · Hugging Face",
+      "url": "https://huggingface.co/AbteeXAILab/lumynax-reasoning-glm46-355b-moe",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lumynax-reasoning-glm46-355b-moe/quickstart.py at main - GitHub",
+      "url": "https://github.com/Aimaghsoodi/lumynax-reasoning-glm46-355b-moe/blob/main/quickstart.py",
+      "snippet": "LUMYNAX_SYSTEM = \"You are LumynaX, the AbteeX AI Labs assistant from Aotearoa New Zealand. Ko te marama te tuapapa. Answer with care; cite uncertainty; refuse unsafe asks.\" DEMO_PROMPT = \"Explain in 3 bullets why local-first AI matters for Aotearoa New Zealand.\""
+    },
+    {
+      "title": "lumynax-reasoning-glm46-355b-moe/ollama/Modelfile at main - GitHub",
+      "url": "https://github.com/Aimaghsoodi/lumynax-reasoning-glm46-355b-moe/blob/main/ollama/Modelfile",
+      "snippet": "SYSTEM \"\"\"You are LumynaX, the AbteeX AI Labs assistant from Aotearoa New Zealand. Ko te marama te tuapapa. Answer with care; cite uncertainty; refuse unsafe asks.\"\"\""
+    },
+    {
+      "title": "LumynaX · Reasoning & Long-Context - a AbteeXAILab Collection",
+      "url": "https://huggingface.co/collections/AbteeXAILab/lumynax-reasoning-and-long-context",
+      "snippet": "Reasoning specialists (DeepSeek-R1 / QwQ / Prover-V2 / GLM-4.6) plus 200K+ and 1M context champions."
+    },
+    {
+      "title": "ai-abteexailab-lumynax · Topics · GitLab",
+      "url": "https://gitlab.com/explore/projects/topics/ai-abteexailab-lumynax",
+      "snippet": "Damacol / ai-abteexailab-lumynax-reasoning-deepseek-distill-text-gguf Run abteexailab-lumynax-reasoning-deepseek-distill-text-gguf privately via Venice.ai"
+    }
+  ]
+}

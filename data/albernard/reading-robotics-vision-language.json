@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Albernard/reading-robotics-vision-language",
+  "slug": "albernard-reading-robotics-vision-language",
+  "author": "Albernard",
+  "url": "https://huggingface.co/Albernard/reading-robotics-vision-language",
+  "created_at": "2026-09-02T19:08:16.000Z",
+  "updated_at": "2026-09-02T19:08:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "michaelwilsonmu/reading-robotics-vision-language · Hugging Face",
+      "url": "https://huggingface.co/michaelwilsonmu/reading-robotics-vision-language",
+      "snippet": "Notes on Robotics Vision Language Repository summary This is an exploratory note for Robotics Vision Language. It records the intended comparison, likely confounders, and reproducibility requirements before any benchmark result is reported."
+    },
+    {
+      "title": "Frontiers of Robotics Intelligence: A Review of Vision and Language ...",
+      "url": "https://www.worldscholarsreview.org/article/frontiers-of-robotics-intelligence-a-review-of-vision-and-language-models-for-robots",
+      "snippet": "Explore the frontiers of robotics intelligence with our review on Vision and Language Models for Robots. Discover the latest advancements and ethical implications in this cutting-edge field."
+    },
+    {
+      "title": "Vision Language Action Models (VLA) & Policies for Robots",
+      "url": "https://learnopencv.com/vision-language-action-models-lerobot-policy/",
+      "snippet": "Vision Language Action Models (VLA) Overview: LeRobot Policies Demo The advent of Generative AI, has fundamentally transformed robotic intelligence, enabling significant strides in how advanced humanoid robots \"perceive, reason and act\" in the physical world."
+    },
+    {
+      "title": "[2604.23001] Vision-Language-Action in Robotics: A Survey of Datasets ...",
+      "url": "https://arxiv.org/abs/2604.23001",
+      "snippet": "Despite remarkable progress in Vision--Language--Action (VLA) models, a central bottleneck remains underexamined: the data infrastructure that underlies embodied learning. In this survey, we argue that future advances in VLA will depend less on model architecture and more on the co-design of high-fidelity data engines and structured evaluation protocols. To this end, we present a systematic ..."
+    },
+    {
+      "title": "[2510.07077] Vision-Language-Action Models for Robotics: A Review ...",
+      "url": "https://arxiv.org/abs/2510.07077",
+      "snippet": "Amid growing efforts to leverage advances in large language models (LLMs) and vision-language models (VLMs) for robotics, Vision-Language-Action (VLA) models have recently gained significant attention. By unifying vision, language, and action data at scale, which have traditionally been studied separately, VLA models aim to learn policies that generalise across diverse tasks, objects ..."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "OpenMed/OpenMed-PII-Spanish-ClinicalBGE-Large-335M-v1-mlx",
+  "slug": "openmed-openmed-pii-spanish-clinicalbge-large-335m-v1-mlx",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/OpenMed-PII-Spanish-ClinicalBGE-Large-335M-v1-mlx",
+  "created_at": "2026-04-08T19:51:48.000Z",
+  "updated_at": "2026-09-02T22:27:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "openmed",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "openmed",
+    "bert",
+    "mlx",
+    "apple-silicon",
+    "token-classification",
+    "pii",
+    "de-identification",
+    "medical",
+    "clinical",
+    "es",
+    "base_model:OpenMed/OpenMed-PII-Spanish-ClinicalBGE-Large-335M-v1",
+    "base_model:finetune:OpenMed/OpenMed-PII-Spanish-ClinicalBGE-Large-335M-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1336723260,
+  "storage_human": "1.3 GB",
+  "base_model": "OpenMed/OpenMed-PII-Spanish-ClinicalBGE-Large-335M-v1",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenMed/OpenMed-PII-Spanish-ClinicalBGE-Large-568M-v1-mlx - Hugging Face",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Spanish-ClinicalBGE-Large-568M-v1-mlx",
+      "snippet": "OpenMed / OpenMed-PII-Spanish-ClinicalBGE-Large-568M-v1-mlx like 0 Follow OpenMed 1.5k Token Classification MLX openmed xlm-roberta apple-silicon pii de-identification medical clinical License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model Libraries MLX How to use OpenMed/OpenMed-PII-Spanish-ClinicalBGE-Large-568M-v1-mlx with MLX ..."
+    },
+    {
+      "title": "OpenMed-PII-Spanish-ClinicalBGE-568M-v1 - Hugging Face",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Spanish-ClinicalBGE-Large-568M-v1",
+      "snippet": "Model Description OpenMed-PII-Spanish-ClinicalBGE-568M-v1 is a transformer-based token classification model fine-tuned for Personally Identifiable Information (PII) detection in Spanish text. This model identifies and classifies 54 types of sensitive information including names, addresses, social security numbers, medical record numbers, and more."
+    },
+    {
+      "title": "OpenMed / OpenMed-PII-Spanish-ClinicalBGE-Large-335M-v1-mlx",
+      "url": "https://aichina.news/models/OpenMed/OpenMed-PII-Spanish-ClinicalBGE-Large-335M-v1-mlx/",
+      "snippet": "Model summary This is a Spanish clinical NLP model based on the BGE-Large-335M backbone. It labels individual tokens in clinical text in order to identify personally identifiable information (PII), which enables downstream de-identification and privacy protection. The -mlx suffix indicates that the distributed weights are in MLX format for Apple Silicon."
+    },
+    {
+      "title": "Openmed Pii Spanish Clinicalbge Large 335m V1 Mlx - AI Model Insights ...",
+      "url": "https://free2aitools.com/model/openmed/openmed-pii-spanish-clinicalbge-large-335m-v1-mlx",
+      "snippet": "Deep dive into Openmed Pii Spanish Clinicalbge Large 335m V1 Mlx."
+    },
+    {
+      "title": "OpenMed / OpenMed-PII-Spanish-ClinicalBGE-Large-335M-v1",
+      "url": "https://aichina.news/models/OpenMed/OpenMed-PII-Spanish-ClinicalBGE-Large-335M-v1/",
+      "snippet": "This is a Spanish-language clinical PII detection model built on the ClinicalBGE-Large encoder. It is intended to identify personally identifiable information in medical and clinical documents so that the text can be safely de-identified."
+    }
+  ]
+}

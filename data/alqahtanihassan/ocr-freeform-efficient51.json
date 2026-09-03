@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Alqahtanihassan/ocr-freeform-efficient51",
+  "slug": "alqahtanihassan-ocr-freeform-efficient51",
+  "author": "Alqahtanihassan",
+  "url": "https://huggingface.co/Alqahtanihassan/ocr-freeform-efficient51",
+  "created_at": "2026-09-02T19:18:43.000Z",
+  "updated_at": "2026-09-02T19:18:48.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "ocr-freeform",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "7 Best Open-Source OCR Models 2025: Benchmarks & Cost Comparison",
+      "url": "https://www.e2enetworks.com/blog/complete-guide-open-source-ocr-models-2025",
+      "snippet": "Introduction October 2025 saw a wave of open-source OCR model releases. Six major models dropped in a single month, and if you&#x27;re processing documents at scale, now&#x27;s a good time to look at what these open models can do for your workflows. Proprietary OCR software is expensive at scale. Azure Document Intelligence, AWS Textract, and Google Document AI charge $1.50 per 1,000 pages for basic ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "GitHub Pages - Efficient OCR",
+      "url": "https://effocr.github.io/",
+      "snippet": "EffOCR has two key ingredients: 1) a novel OCR architecture and 2) a carefully designed interface to facilitate off-the-shelf OCR usage, customization via model training if necessary, and easy sharing of OCR models."
+    },
+    {
+      "title": "Best LLM for OCR (2026): GLM-OCR Wins at 94.62 - ofox.ai",
+      "url": "https://ofox.ai/blog/best-ai-model-for-ocr-2026/",
+      "snippet": "Which AI model has the best OCR accuracy in 2026? On the OmniDocBench benchmark, specialized models lead: GLM-OCR scores 94.62 and PaddleOCR-VL hits 94.50. Among frontier LLMs, Gemini 3.1 Pro leads at 90.33, ahead of GPT-5.4 at roughly 85.8. The best choice depends on your use case — frontier LLMs handle reasoning alongside extraction, while specialized models maximize raw accuracy."
+    },
+    {
+      "title": "IDP Leaderboard — Best Document AI Models Compared",
+      "url": "https://www.idp-leaderboard.org/",
+      "snippet": "Compare the best document AI models across OCR, table extraction, KIE, and VQA. Open evaluation with reproducible results."
+    }
+  ]
+}

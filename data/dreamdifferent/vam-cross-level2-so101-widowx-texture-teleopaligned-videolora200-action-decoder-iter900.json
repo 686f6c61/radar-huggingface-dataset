@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/vam-cross-level2-so101-widowx-texture-teleopaligned-videolora200-action-decoder-iter900",
+  "slug": "dreamdifferent-vam-cross-level2-so101-widowx-texture-teleopaligned-videolora200-action-decoder-iter900",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/vam-cross-level2-so101-widowx-texture-teleopaligned-videolora200-action-decoder-iter900",
+  "created_at": "2026-09-02T20:01:18.000Z",
+  "updated_at": "2026-09-02T20:01:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "robotics",
+    "action-prediction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1000269372,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dreamdifferent/vam-cross-level5-so101-widowx-texture-teleopaligned ...",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level5-so101-widowx-texture-teleopaligned-videolora200-action-decoder-iter900",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dreamdifferent/vam-cross-level4-so101-widowx-texture-teleopaligned ...",
+      "url": "https://huggingface.co/dreamdifferent/vam-cross-level4-so101-widowx-texture-teleopaligned-videolora200-action-decoder-iter900",
+      "snippet": "VAM-Cross MimicVideo World2Action decoder This public repository contains the World2Action decoder checkpoint from iteration 900 of w2a_so101_level4_widowx_texture_2cam_hstack_action_iter2374_videolora_iter200_widowx_teleop_recording_frame_v1. The run stopped because of unknown. The newest complete model, optimizer, scheduler, and trainer checkpoint set was verified before selecting the ..."
+    },
+    {
+      "title": "Resources | Virt-A-Mate Hub",
+      "url": "https://hub.virtamate.com/resources/",
+      "snippet": "Free music, voice, and sound effect audio files and asset bundles"
+    },
+    {
+      "title": "VaM2 | Virt-A-Mate Hub",
+      "url": "https://hub.virtamate.com/resources/categories/vam2.59/",
+      "snippet": "Free shareable content for VaM2 Templates, obj files, seam guides, and utility-based scenes, scene setups or subscenes (with a limited exclusive access period)"
+    },
+    {
+      "title": "blender - Virt-A-Mate Hub",
+      "url": "https://clouddedicatedserver.virtamate.com/tags/blender/",
+      "snippet": "Introduction BlendMate is a plugin designed to bring the efficient workflow of Blender into Virt-A-Mate (VaM). It allows users to manipulate objects using standard G/R/S hotkeys, axis locking, and numeric input, bypassing the need for the traditional slow Gizmo..."
+    }
+  ]
+}

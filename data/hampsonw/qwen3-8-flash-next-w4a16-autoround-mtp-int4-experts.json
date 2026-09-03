@@ -5,7 +5,7 @@
   "author": "hampsonw",
   "url": "https://huggingface.co/hampsonw/Qwen3.8-Flash-Next-W4A16-AutoRound-MTP-INT4-Experts",
   "created_at": "2026-09-02T01:51:53.000Z",
-  "updated_at": "2026-09-02T04:16:39.000Z",
+  "updated_at": "2026-09-02T12:56:45.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -28,7 +28,7 @@
     "auto-round",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

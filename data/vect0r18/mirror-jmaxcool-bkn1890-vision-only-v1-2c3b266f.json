@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "vect0r18/mirror-jmaxcool-bkn1890-vision-only-v1-2c3b266f",
+  "slug": "vect0r18-mirror-jmaxcool-bkn1890-vision-only-v1-2c3b266f",
+  "author": "vect0r18",
+  "url": "https://huggingface.co/vect0r18/mirror-jmaxcool-bkn1890-vision-only-v1-2c3b266f",
+  "created_at": "2026-09-02T23:55:05.000Z",
+  "updated_at": "2026-09-02T23:55:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916585166,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vect0r18 (vector line) - Hugging Face",
+      "url": "https://huggingface.co/vect0r18",
+      "snippet": "vect0r18/mirror-musc1es-e00c738e7b-abd64f2a ... vect0r18/mirror-kamiyou-god-a1447329 ... vect0r18/mirror-wondercat-wonder-28-8bdc47af ... vect0r18/mirror-dustytone-v18-bcf8c1ff ... vect0r18/mirror-dustytone-v13-45fb1e5b ... vect0r18/mirror-dustytone-v14-c2b43f95 ... vect0r18/mirror-jmaxcool-cxxi-v1-c9b8aa2d"
+    },
+    {
+      "title": "Download Ollama on Windows",
+      "url": "https://ollama.com/download/windows",
+      "snippet": "Download Ollama for Windows paste this in PowerShell or Download for Windows"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=BKN1890%2FAffine-5Cm1hGSdvh8RC2vDHpmN6HH47Hjc9pD3Qc3LJFb2HJ2DWQr3",
+      "snippet": "Text-to-Speech + 44 Parameters 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF + 47 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things + 10 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks + 10 Hardware Add your hardware Apply filters Models 2 Base only Inference ..."
+    },
+    {
+      "title": "Download-Center | Vector",
+      "url": "https://www.vector.com/en/services/download-center/",
+      "snippet": "Vector supplies software and engineering services for the networking of electronic systems in the automobile and related industries (CAN, FlexRay, AUTOSAR, Ethernet etc.)"
+    },
+    {
+      "title": "GitHub - CompVis/stable-diffusion: A latent text-to-image diffusion model",
+      "url": "https://github.com/CompVis/stable-diffusion",
+      "snippet": "Note: Stable Diffusion v1 is a general text-to-image diffusion model and therefore mirrors biases and (mis-)conceptions that are present in its training data. Details on the training procedure and data, as well as the intended use of the model can be found in the corresponding model card."
+    }
+  ]
+}

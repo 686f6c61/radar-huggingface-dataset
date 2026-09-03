@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Prasadamisnothere/List-3.0-Ultra-Coder-Brain",
+  "slug": "prasadamisnothere-list-3-0-ultra-coder-brain",
+  "author": "Prasadamisnothere",
+  "url": "https://huggingface.co/Prasadamisnothere/List-3.0-Ultra-Coder-Brain",
+  "created_at": "2026-09-02T19:27:23.000Z",
+  "updated_at": "2026-09-02T19:27:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "list_ultra_coder",
+    "text-generation",
+    "code",
+    "list-coder",
+    "228B",
+    "ultra-reasoning",
+    "list-ultra",
+    "enterprise",
+    "mixture-of-experts",
+    "moe",
+    "mtp",
+    "fp8",
+    "conversational",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 228689764864,
+  "parameters_human": "228.69B",
+  "storage_bytes": 230142261486,
+  "storage_human": "230.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "List-cloud/List-3.0-Ultra-Coder-Brain · Hugging Face",
+      "url": "https://huggingface.co/List-cloud/List-3.0-Ultra-Coder-Brain",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "List 3.0 Ultra Coder Brain — ThinkLLM",
+      "url": "https://www.thinkllm.dev/models/list-3-0-ultra-coder-brain",
+      "snippet": "A text-in, text-out model with a large 204,800-token context window, suggesting it can hold substantial amounts of code or documentation in a single session. Released under Apache 2.0 as open weights, it can be run and modified locally. Specific capability details beyond its coding-oriented naming are limited in available documentation."
+    },
+    {
+      "title": "List-3.0-Ultra-Coder-Brain-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/List-3.0-Ultra-Coder-Brain-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "List 3.0 Ultra Coder Brain by List-cloud - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/List-cloud%2FList-3.0-Ultra-Coder-Brain,5z9esu2N74UDd2AQh16jfS",
+      "snippet": "List 3.0 Ultra Coder Brain is an open-source 228.7b LLM by List-cloud. VRAM 75.2GB, 200K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "List-3.0-Ultra-Coder-Brain huggingface.co api & List-cloud List-3.0 ...",
+      "url": "https://www.toolify.ai/ai-model/list-cloud-list-3-0-ultra-coder-brain",
+      "snippet": "List-3.-Ultra-Coder-Brain is an open source model from GitHub that offers a free installation service, and any user can find List-3.-Ultra-Coder-Brain on GitHub to install."
+    }
+  ]
+}

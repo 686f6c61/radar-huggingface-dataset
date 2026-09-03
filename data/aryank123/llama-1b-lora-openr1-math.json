@@ -5,7 +5,7 @@
   "author": "AryanK123",
   "url": "https://huggingface.co/AryanK123/llama-1b-lora-openr1-math",
   "created_at": "2026-09-02T17:15:08.000Z",
-  "updated_at": "2026-09-02T17:15:12.000Z",
+  "updated_at": "2026-09-02T19:16:36.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 62970514,
-  "storage_human": "63 MB",
+  "storage_bytes": 108729707,
+  "storage_human": "109 MB",
   "base_model": "meta-llama/Llama-3.2-1B",
   "formats": [
     "safetensors"

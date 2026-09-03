@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ross-fisher/poolformer-finetuned-2024",
+  "slug": "ross-fisher-poolformer-finetuned-2024",
+  "author": "ross-fisher",
+  "url": "https://huggingface.co/ross-fisher/poolformer-finetuned-2024",
+  "created_at": "2026-09-02T20:17:56.000Z",
+  "updated_at": "2026-09-02T20:18:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PoolFormer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/poolformer",
+      "snippet": "The PoolFormer model was proposed in MetaFormer is Actually What You Need for Vision by Sea AI Labs. Instead of designing complicated token mixer to achieve SOTA performance, the target of this work is to demonstrate the competence of transformer models largely stem from the general architecture MetaFormer."
+    },
+    {
+      "title": "GitHub - sail-sg/poolformer: PoolFormer: MetaFormer Is Actually What ...",
+      "url": "https://github.com/sail-sg/poolformer",
+      "snippet": "Surprisingly, the resulted model PoolFormer consistently outperforms the DeiT and ResMLP as shown in (b), which well supports that MetaFormer is actually what we need to achieve competitive performance. RSB-ResNet in (b) means the results are from \"ResNet Strikes Back\" where ResNet is trained with improved training procedure for 300 epochs."
+    },
+    {
+      "title": "GitHub - Multi-Scale-Transformer/Poolformer-baseline",
+      "url": "https://github.com/Multi-Scale-Transformer/Poolformer-baseline",
+      "snippet": "MetaFormer Baselines for Vision (TPAMI 2024) This is a PyTorch implementation of several MetaFormer baslines including IdentityFormer, RandFormer, ConvFormer and CAFormer proposed by our paper \"MetaFormer Baselines for Vision\". Figure 1: Performance of MetaFormer baselines and other state-of-the-art models on ImageNet-1K at 224x224 resolution."
+    },
+    {
+      "title": "sail/poolformer_m48 · Hugging Face",
+      "url": "https://huggingface.co/sail/poolformer_m48",
+      "snippet": "PoolFormer (M48 model) PoolFormer model trained on ImageNet-1k (1 million images, 1,000 classes) at resolution 224x224. It was first introduced in the paper MetaFormer is Actually What You Need for Vision by Yu et al. and first released in this repository."
+    },
+    {
+      "title": "Contents",
+      "url": "https://arxiv.org/html/2510.02206v1",
+      "snippet": "We introduce Poolformer, a sequence-to-sequence model that replaces self-attention with recurrent layers and incorporates pooling operations to reduce sequence length. Poolformer is defined recursively using SkipBlocks, which contain residual blocks, a down-pooling layer, a nested SkipBlock, an up-pooling layer, and additional residual blocks."
+    }
+  ]
+}

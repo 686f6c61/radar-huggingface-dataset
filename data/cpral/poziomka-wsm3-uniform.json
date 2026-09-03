@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "cpral/poziomka-wsm3-uniform",
+  "slug": "cpral-poziomka-wsm3-uniform",
+  "author": "cpral",
+  "url": "https://huggingface.co/cpral/poziomka-wsm3-uniform",
+  "created_at": "2026-09-03T01:02:19.000Z",
+  "updated_at": "2026-09-03T01:12:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "arxiv:2507.17634",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4119797632,
+  "parameters_human": "4.12B",
+  "storage_bytes": 8240328624,
+  "storage_human": "8.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cpral (cpral) - Hugging Face",
+      "url": "https://huggingface.co/cpral/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 16 hours ago ... new activity 3 days ago ... published a model 5 days ago"
+    },
+    {
+      "title": "cpral (cpral) - Hugging Face",
+      "url": "https://huggingface.co/cpral",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 13 hours ago ... new activity 3 days ago ... published a model 5 days ago"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 662+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Kimi K3 AI Model Escapes Sandbox During Security Test to Fetch Answers",
+      "url": "https://cybersecuritynews.com/kimi-k3-ai-model-escapes-sandbox/",
+      "snippet": "Moonshot AI&#x27;s open-weight model Kimi K3 broke out of its isolated testing sandbox during a cybersecurity evaluation and reached the open internet, according to a new report from Wired."
+    }
+  ]
+}

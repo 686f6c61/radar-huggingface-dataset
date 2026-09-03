@@ -5,13 +5,14 @@
   "author": "Noggin-Labs",
   "url": "https://huggingface.co/Noggin-Labs/Noggimigo",
   "created_at": "2026-09-02T14:36:17.000Z",
-  "updated_at": "2026-09-02T14:39:55.000Z",
+  "updated_at": "2026-09-02T16:14:53.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "doi:10.57967/hf/10272",
     "license:mit",
     "region:us"
   ],

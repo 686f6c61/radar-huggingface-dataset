@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ManniX-ITA/Qwen3.6-27B-Omnimerge-v4-GGUF",
+  "slug": "mannix-ita-qwen3-6-27b-omnimerge-v4-gguf",
+  "author": "ManniX-ITA",
+  "url": "https://huggingface.co/ManniX-ITA/Qwen3.6-27B-Omnimerge-v4-GGUF",
+  "created_at": "2026-04-30T07:25:06.000Z",
+  "updated_at": "2026-09-02T21:35:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "imatrix",
+    "quantized",
+    "merge",
+    "mergekit",
+    "qwen3_5",
+    "reasoning",
+    "code",
+    "image-text-to-text",
+    "en",
+    "base_model:ManniX-ITA/Qwen3.6-27B-Omnimerge-v4",
+    "base_model:quantized:ManniX-ITA/Qwen3.6-27B-Omnimerge-v4",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 36,
+  "downloads_30d": 5145,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 448541624160,
+  "storage_human": "448.5 GB",
+  "base_model": "ManniX-ITA/Qwen3.6-27B-Omnimerge-v4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ManniX-ITA/Qwen3.6-27B-Omnimerge-v4-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ManniX-ITA/Qwen3.6-27B-Omnimerge-v4-GGUF",
+      "snippet": "Why this merge exists Same-base DARE-TIES (Omnimerge_v2 method) merge of Qwen/Qwen3.6-27B + 3 Qwen3.6 fine-tunes. Direct successor to ManniX-ITA/Qwen3.5-27B-Omnimerge-v2 on the newer Qwen3.6 base, with mlp. {gate,up,down}_proj copied verbatim from clean Qwen3.6 (the \"MLP-passthrough\" surgery) to defend against a Qwen3.6-specific reasoning-tag fragility we found during forensic delta inspection ..."
+    },
+    {
+      "title": "ManniX-ITA/Qwen3.6-27B-Omnimerge-v4 · Hugging Face",
+      "url": "https://huggingface.co/ManniX-ITA/Qwen3.6-27B-Omnimerge-v4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-27B-Omnimerge-v4-MTP-GGUF · Model · Inferix",
+      "url": "https://inferix.co/models/ManniX-ITA/Qwen3.6-27B-Omnimerge-v4-MTP-GGUF",
+      "snippet": "GGUF quantizations of ManniX-ITA/Qwen3.6-27B-Omnimerge-v4 with the MTP (Multi-Token Prediction) head retained for self-speculative decoding on llama.cpp mainline (PR 22673, merged 2026-05-16) and…"
+    },
+    {
+      "title": "Qwen3.6-27B-Omnimerge-v4 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ManniX-ITA/Qwen3.6-27B-Omnimerge-v4",
+      "snippet": "Quantizations Three release lines: GGUF (llama.cpp / ollama / text-generation-webui) ManniX-ITA/Qwen3.6-27B-Omnimerge-v4-GGUF — 31 quants + F16, all imatrix-quantized with bartowski&#x27;s calibration_datav5. imatrix.dat archived alongside the quants for reproducibility/audit. Also published as ollama tags: mannix/omnimerge-v4. The vision tower&#x27;s mmproj projector lives in bartowski/Qwen_Qwen3.6 ..."
+    },
+    {
+      "title": "mannix/omnimerge-v4 - ollama.com",
+      "url": "https://ollama.com/mannix/omnimerge-v4",
+      "snippet": "Qwen/Qwen3.6-27B + 3 Qwen3.6 fine-tunes with MLP-passthrough surgery"
+    }
+  ]
+}

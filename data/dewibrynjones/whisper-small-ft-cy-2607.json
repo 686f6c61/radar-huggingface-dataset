@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "DewiBrynJones/whisper-small-ft-cy-2607",
+  "slug": "dewibrynjones-whisper-small-ft-cy-2607",
+  "author": "DewiBrynJones",
+  "url": "https://huggingface.co/DewiBrynJones/whisper-small-ft-cy-2607",
+  "created_at": "2026-09-02T11:36:50.000Z",
+  "updated_at": "2026-09-02T23:43:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 39648759466,
+  "storage_human": "39.6 GB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DewiBrynJones/whisper-tiny-ft-cy-en · Hugging Face",
+      "url": "https://huggingface.co/DewiBrynJones/whisper-tiny-ft-cy-en",
+      "snippet": "whisper-tiny-ft-cy-en This model is a fine-tuned version of openai/whisper-tiny on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "DewiBrynJones/whisper-tiny-ft-tts-en-cy · Hugging Face",
+      "url": "https://huggingface.co/DewiBrynJones/whisper-tiny-ft-tts-en-cy",
+      "snippet": "whisper-tiny-ft-tts-en-cy This model was trained from scratch on an unknown dataset. It achieves the following results on the evaluation set: Loss: 0.7312 Wer: 43.2941 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training ..."
+    },
+    {
+      "title": "DewiBrynJones/whisper-tiny-ft-cy-en - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/DewiBrynJones/whisper-tiny-ft-cy-en",
+      "snippet": "Run DewiBrynJones/whisper-tiny-ft-cy-en with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8 ..."
+    },
+    {
+      "title": "DewiBrynJones (Dewi Bryn Jones) · GitHub",
+      "url": "https://github.com/DewiBrynJones",
+      "snippet": "DewiBrynJones has 6 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper/tree/main",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    }
+  ]
+}

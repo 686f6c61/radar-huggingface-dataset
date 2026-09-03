@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "vanshnawander/anlp-assignment1-cipher-decoder",
+  "slug": "vanshnawander-anlp-assignment1-cipher-decoder",
+  "author": "vanshnawander",
+  "url": "https://huggingface.co/vanshnawander/anlp-assignment1-cipher-decoder",
+  "created_at": "2026-09-02T19:14:21.000Z",
+  "updated_at": "2026-09-02T19:17:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "transformer",
+    "cipher-decoding",
+    "byte-latent-transformer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87614626,
+  "storage_human": "88 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1 Introduction - arXiv.org",
+      "url": "https://arxiv.org/html/2408.11650v1",
+      "snippet": "CIPHER is a large language model specifically trained and fine-tuned on a comprehensive penetration testing dataset. Leveraging advancements in generative AI, CIPHER aims to automate and enhance the penetration testing process, making it more efficient and accessible, especially for individuals with limited penetration testing knowledge."
+    },
+    {
+      "title": "vanshnawander (VANSH NAWANDER) - Hugging Face",
+      "url": "https://huggingface.co/vanshnawander",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 14 hours ago ... published a model about 14 hours ago"
+    },
+    {
+      "title": "vanshnawander (Vansh Nawander) · GitHub",
+      "url": "https://github.com/vanshnawander",
+      "snippet": "Master&#x27;s student at IIIT Hyderabad. vanshnawander has 35 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "mdhvm/anlp-a1-cipher-transformers · Hugging Face",
+      "url": "https://huggingface.co/mdhvm/anlp-a1-cipher-transformers",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - vibhav20/ANLP_Assignment1: Assignment 1 for Advanced NLP ...",
+      "url": "https://github.com/vibhav20/ANLP_Assignment1",
+      "snippet": "Assignment 1 for Advanced NLP course. Transformers from scratch - vibhav20/ANLP_Assignment1"
+    }
+  ]
+}

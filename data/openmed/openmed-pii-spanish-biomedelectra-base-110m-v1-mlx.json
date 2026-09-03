@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "OpenMed/OpenMed-PII-Spanish-BiomedELECTRA-Base-110M-v1-mlx",
+  "slug": "openmed-openmed-pii-spanish-biomedelectra-base-110m-v1-mlx",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/OpenMed-PII-Spanish-BiomedELECTRA-Base-110M-v1-mlx",
+  "created_at": "2026-04-08T19:55:04.000Z",
+  "updated_at": "2026-09-02T22:27:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "openmed",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "openmed",
+    "bert",
+    "mlx",
+    "apple-silicon",
+    "token-classification",
+    "pii",
+    "de-identification",
+    "medical",
+    "clinical",
+    "es",
+    "base_model:OpenMed/OpenMed-PII-Spanish-BiomedELECTRA-Base-110M-v1",
+    "base_model:finetune:OpenMed/OpenMed-PII-Spanish-BiomedELECTRA-Base-110M-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 435821479,
+  "storage_human": "436 MB",
+  "base_model": "OpenMed/OpenMed-PII-Spanish-BiomedELECTRA-Base-110M-v1",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenMed/OpenMed-PII-Spanish-BiomedELECTRA-Base-110M-v1-mlx · Hugging Face",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Spanish-BiomedELECTRA-Base-110M-v1-mlx",
+      "snippet": "OpenMed / OpenMed-PII-Spanish-BiomedELECTRA-Base-110M-v1-mlx like 0 Follow OpenMed 1.42k Token Classification MLX openmed bert apple-silicon pii de-identification medical clinical License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model Libraries MLX How to use OpenMed/OpenMed-PII-Spanish-BiomedELECTRA-Base-110M-v1-mlx with MLX: # Download the model ..."
+    },
+    {
+      "title": "OpenMed-PII-Spanish-BiomedELECTRA-Base-110M-v1 - Hugging Face",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Spanish-BiomedELECTRA-Base-110M-v1",
+      "snippet": "Model Description OpenMed-PII-Spanish-BiomedELECTRA-Base-110M-v1 is a transformer-based token classification model fine-tuned for Personally Identifiable Information (PII) detection in Spanish text. This model identifies and classifies 54 types of sensitive information including names, addresses, social security numbers, medical record numbers, and more."
+    },
+    {
+      "title": "OpenMed / OpenMed-PII-Spanish-BiomedELECTRA-Base-110M-v1-mlx",
+      "url": "https://aichina.news/models/OpenMed/OpenMed-PII-Spanish-BiomedELECTRA-Base-110M-v1-mlx/",
+      "snippet": "This is a Spanish biomedical PII-detection model, fine-tuned from a 110M-parameter BiomedELECTRA base to label personal data such as patient names, IDs, dates..."
+    },
+    {
+      "title": "Openmed Pii Spanish Biomedelectra Base 110m V1 Mlx",
+      "url": "https://free2aitools.com/model/openmed/openmed-pii-spanish-biomedelectra-base-110m-v1-mlx",
+      "snippet": "by OpenMed hf-model--openmed--openmed-pii-spanish-biomedelectra-base-110m-v1-mlx Nexus Index 37.5Top 100% S: Semantic50 A: Authority0 P: Popularity1 R: Recency97 Q: Quality50 Tech Context Vital Performance 14 DL / 30D 0.0% Source → Share: 📤 𝕏 in 📣 🔗 Audited 37.5 FNI Score Tiny - Params - Context 14 Downloads Commercial APACHE ..."
+    },
+    {
+      "title": "OpenMed / OpenMed-PII-Spanish-BiomedELECTRA-Base-110M-v1",
+      "url": "https://aichina.news/models/OpenMed/OpenMed-PII-Spanish-BiomedELECTRA-Base-110M-v1/",
+      "snippet": "Model description This is a fine-tuned BiomedELECTRA-Base model with 110M parameters, trained to detect personally identifiable information (PII) in Spanish biomedical and clinical text. It operates at token level, identifying spans such as patient names, identification numbers, addresses, dates and other protected health information, enabling automated de-identification of medical records."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SmallAICreator/cinder",
+  "slug": "smallaicreator-cinder",
+  "author": "SmallAICreator",
+  "url": "https://huggingface.co/SmallAICreator/cinder",
+  "created_at": "2026-09-02T22:36:33.000Z",
+  "updated_at": "2026-09-02T23:58:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "android",
+    "claude-code",
+    "mobile-app",
+    "proot",
+    "sandbox",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 105914381,
+  "storage_human": "106 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Foundation models - Cinder",
+      "url": "https://cinder.ai/solutions/foundation-models",
+      "snippet": "Cinder continuously evaluates, red-teams, and refines foundation model behavior so you can defend every output to regulators, partners, and the press."
+    },
+    {
+      "title": "Resources - Cinder",
+      "url": "https://cinder.ai/resources",
+      "snippet": "Read Cinder&#x27;s latest thinking on platform safety, AI-assisted operations, policy systems, and customer stories."
+    },
+    {
+      "title": "Josephgflowers/TinyLlama-3T-Cinder-v1.2 · Hugging Face",
+      "url": "https://huggingface.co/Josephgflowers/TinyLlama-3T-Cinder-v1.2",
+      "snippet": "Model Overview Cinder is an AI chatbot tailored for engaging users in scientific and educational conversations, offering companionship, and sparking imaginative exploration. It is built on the TinyLlama 1.1B parameter model and trained on a unique combination of datasets."
+    },
+    {
+      "title": "CINDER - Build Your Future | 290+ AI Tools",
+      "url": "https://cinder.center/tools/cinder/",
+      "snippet": "290+ AI-powered tools for test prep, education, career, finance, business, and creative work. $2.99/month per family. Zero data collection."
+    },
+    {
+      "title": "Cinder | Trust and safety operations for the AI era",
+      "url": "https://cinder.ai/",
+      "snippet": "Cinder helps high-growth companies design, automate, and scale modern trust and safety operations."
+    }
+  ]
+}

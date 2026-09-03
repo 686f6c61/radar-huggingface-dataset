@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Sejibeji/tso-foundation-v11",
+  "slug": "sejibeji-tso-foundation-v11",
+  "author": "Sejibeji",
+  "url": "https://huggingface.co/Sejibeji/tso-foundation-v11",
+  "created_at": "2026-09-02T21:36:42.000Z",
+  "updated_at": "2026-09-02T21:43:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "time-series",
+    "foundation-model",
+    "koopman-operator",
+    "dynamical-systems",
+    "zero-shot",
+    "time-series-forecasting",
+    "en",
+    "dataset:sehajrsingh/tso-foundation-corpus-v11",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9604582,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sejibeji (Sehaj Randhir Singh) - Hugging Face",
+      "url": "https://huggingface.co/Sejibeji",
+      "snippet": "Recent Activity updated a modelabout 9 hours ago Sejibeji/backdoored-qwen-lookup-adapter published a modelabout 9 hours ago Sejibeji/backdoored-qwen-lookup-adapter View all activity"
+    },
+    {
+      "title": "Japan AI Foundation Model: .3B SoftBank-Sony-Honda Bet [2026]",
+      "url": "https://tech-insider.org/japan-ai-foundation-model-softbank-sony-honda-nec-2026/",
+      "snippet": "Japan just made its biggest sovereign AI bet to date. On April 13, 2026, SoftBank Corp., NEC Corp., Sony Group Corp., and Honda Motor Co. publicly unveiled a new joint venture - internally branded Japan AI Foundation Model Development - designed to build a domestically produced, trillion-parameter foundation model focused on physical AI: the class of systems that power robots, factory ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Cisco AI Foundation: Foundation Models - Cisco",
+      "url": "https://www.cisco.com/site/us/en/solutions/artificial-intelligence/foundation-ai/foundation-models.html",
+      "snippet": "The Foundation AI solution Our security-specific foundation models deliver the control and compliance benefits of open-source with the performance and usability of proprietary systems—eliminating the traditional trade-offs."
+    }
+  ]
+}

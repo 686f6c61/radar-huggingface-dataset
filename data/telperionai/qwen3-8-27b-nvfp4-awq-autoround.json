@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "TelperionAI/Qwen3.8-27B-NVFP4-AWQ-AutoRound",
+  "slug": "telperionai-qwen3-8-27b-nvfp4-awq-autoround",
+  "author": "TelperionAI",
+  "url": "https://huggingface.co/TelperionAI/Qwen3.8-27B-NVFP4-AWQ-AutoRound",
+  "created_at": "2026-08-20T19:01:36.000Z",
+  "updated_at": "2026-09-02T21:21:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "nvfp4",
+    "fp4",
+    "awq",
+    "autoround",
+    "llm-compressor",
+    "compressed-tensors",
+    "vllm",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 686,
+  "trending_score": 0,
+  "parameters": 20294595312,
+  "parameters_human": "20.29B",
+  "storage_bytes": 24708485077,
+  "storage_human": "24.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TelperionAI/Qwen3.8-27B-NVFP4-AWQ-AutoRound at main",
+      "url": "https://huggingface.co/TelperionAI/Qwen3.8-27B-NVFP4-AWQ-AutoRound/tree/main",
+      "snippet": "TelperionAI / Qwen3.8-27B-NVFP4-AWQ-AutoRound like 2 Follow TelperionAI 10 Image-Text-to-Text Transformers Safetensors qwen3_5 nvfp4 fp4 awq autoround llm-compressor compressed-tensors vllm conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.8-27B-NVFP4-AWQ-AutoRound-allfp4 - Hugging Face",
+      "url": "https://huggingface.co/TelperionAI/Qwen3.8-27B-NVFP4-AWQ-AutoRound-allfp4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8 27B NVFP4 AWQ GPTQ by TelperionAI - LLM Explorer",
+      "url": "https://llm-explorer.com/model/TelperionAI%2FQwen3.8-27B-NVFP4-AWQ-GPTQ,7sti5ZDCLMFpd7O9iPnnBQ",
+      "snippet": "Qwen3.8 27B NVFP4 AWQ GPTQ is an open-source 27b LLM by TelperionAI. VRAM 24.7GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3.8 27B NVFP4 AWQ AutoRound Allfp4 by TelperionAI",
+      "url": "https://llm-explorer.com/model/TelperionAI%2FQwen3.8-27B-NVFP4-AWQ-AutoRound-allfp4,3wyvtMfbwv9iSqAvjTlsNt",
+      "snippet": "Rank the Qwen3.8 27B NVFP4 AWQ AutoRound Allfp4 capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    }
+  ]
+}

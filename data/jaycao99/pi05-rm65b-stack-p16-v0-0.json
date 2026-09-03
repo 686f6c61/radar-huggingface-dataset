@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JayCao99/pi05-rm65b-stack-p16-v0.0",
+  "slug": "jaycao99-pi05-rm65b-stack-p16-v0-0",
+  "author": "JayCao99",
+  "url": "https://huggingface.co/JayCao99/pi05-rm65b-stack-p16-v0.0",
+  "created_at": "2026-09-02T23:11:59.000Z",
+  "updated_at": "2026-09-02T23:13:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9354070512,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JayCao99/pi05-rm65b-stack-v0.0 · Hugging Face",
+      "url": "https://huggingface.co/JayCao99/pi05-rm65b-stack-v0.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JayCao99/pi0-rm65b-stack-v0.0 · Hugging Face",
+      "url": "https://huggingface.co/JayCao99/pi0-rm65b-stack-v0.0",
+      "snippet": "Pi-0 (rm65b stack blocks) LeRobot policy checkpoints uploaded by goal_gen/upload_hf_checkpoints.sh. Each subfolder contains the deployment-ready pretrained_model/ payload (model.safetensors + config.json + pre/postprocessor + train_config.json)."
+    },
+    {
+      "title": "Pi0.5 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/pi05",
+      "snippet": "Pi0.5 State‑of‑the‑art generalist robotic foundation model trained on vision, language, and action to enable dexterous, zero‑shot physical task execution across diverse robot platforms. Pi0.5 is a vision‑language‑action model that co‑trains on diverse data sources (robot demos, web data, semantic subtasks) to enable open‑world generalization for long‑horizon robotic manipulation."
+    },
+    {
+      "title": "[2504.16054] $π_ {0.5}$: a Vision-Language-Action Model with Open-World ...",
+      "url": "https://arxiv.org/abs/2504.16054",
+      "snippet": "In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe $π_{0.5}$, a new model based on $π_{0}$ that uses co-training on heterogeneous ..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/pi05 at main - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/pi05",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    }
+  ]
+}

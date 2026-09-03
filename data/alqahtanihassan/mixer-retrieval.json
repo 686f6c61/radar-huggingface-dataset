@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Alqahtanihassan/mixer-retrieval",
+  "slug": "alqahtanihassan-mixer-retrieval",
+  "author": "Alqahtanihassan",
+  "url": "https://huggingface.co/Alqahtanihassan/mixer-retrieval",
+  "created_at": "2026-09-02T19:18:20.000Z",
+  "updated_at": "2026-09-02T19:18:24.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mixer: A Novel Paradigm of Image to Multi-Modal Retrieval Learning for ...",
+      "url": "https://arxiv.org/html/2305.03972",
+      "snippet": "One type of cross-model retrieval, where query is an image and docs are entities with image and textual description, has been less studied in the literature. However, the type of retrieval is valuable in many real scenarios."
+    },
+    {
+      "title": "hugo-leroy/mixer-retrieval at main - Hugging Face",
+      "url": "https://huggingface.co/hugo-leroy/mixer-retrieval/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new main mixer-retrieval 206 kB Ctrl+K Ctrl+K 1 contributor History:2 commits hugo-leroy Upload 5 files 32303db verifiedabout 5 hours ago .gitattributes Safe 1.52 kBinitial commitabout 5 hours ago README.md 2.41 kBUpload 5 filesabout 5 hours ago config.json 429 BytesUpload 5 ..."
+    },
+    {
+      "title": "Alqahtanihassan (Hassan Alqahtani) - Hugging Face",
+      "url": "https://huggingface.co/Alqahtanihassan",
+      "snippet": "User profile of Hassan Alqahtani on Hugging Face"
+    },
+    {
+      "title": "Mixer: efficiently understanding and retrieving visual content at web ...",
+      "url": "https://dl.acm.org/doi/10.14778/3476311.3476371",
+      "snippet": "In this paper, we present Mixer, an effective system to identify and analyze visual contents and to extract their features for data retrievals, aiming at addressing two critical issues: (1) efficiently and timely understanding visual contents, (2) retrieving them at high precision and recall rates without impairing the performance. In Mixer, the visual objects are categorized into different ..."
+    },
+    {
+      "title": "MM-Embed: Universal Multimodal Retrieval with Multimodal LLMs",
+      "url": "https://arxiv.org/abs/2411.02571",
+      "snippet": "State-of-the-art retrieval models typically address a straightforward search scenario, in which retrieval tasks are fixed (e.g., finding a passage to answer a specific question) and only a single modality is supported for both queries and retrieved results. This paper introduces techniques for advancing information retrieval with multimodal large language models (MLLMs), enabling a broader ..."
+    }
+  ]
+}

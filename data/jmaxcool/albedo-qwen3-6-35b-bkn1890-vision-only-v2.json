@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "JMaxCool/albedo-qwen3.6-35b-bkn1890-vision-only-v2",
+  "slug": "jmaxcool-albedo-qwen3-6-35b-bkn1890-vision-only-v2",
+  "author": "JMaxCool",
+  "url": "https://huggingface.co/JMaxCool/albedo-qwen3.6-35b-bkn1890-vision-only-v2",
+  "created_at": "2026-09-03T00:33:14.000Z",
+  "updated_at": "2026-09-03T00:45:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916585166,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JMaxCool/albedo-qwen3.6-35b-pilot-cycle-01 · Hugging Face",
+      "url": "https://huggingface.co/JMaxCool/albedo-qwen3.6-35b-pilot-cycle-01",
+      "snippet": "JMaxCool / albedo-qwen3.6-35b-pilot-cycle-01 like 0 Safetensors qwen3_5_moe albedo sn97 qwen3.5 dpo License:other Model card FilesFiles and versions xet Community Copy to bucket new Albedo Qwen3.6-35B Pilot Cycle 01 (JMaxCool) Training Notes Usage"
+    },
+    {
+      "title": "BKN1890/albedo-qwen3.6-35b-20260824-145017 · Hugging Face",
+      "url": "https://huggingface.co/BKN1890/albedo-qwen3.6-35b-20260824-145017",
+      "snippet": "BKN1890 / albedo-qwen3.6-35b-20260824-145017 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 71 Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Best Way to Run Qwen 3.6 35B MoE Locally: VRAM, Speed, Setup",
+      "url": "https://insiderllm.com/guides/best-way-run-qwen-3-6-35b-moe-locally/",
+      "snippet": "Qwen 3.6-35B-A3B has 35B total params but only 3B active per token. Real tok/s on RTX 3090, 4090, 5070 Ti, dual 5060 Ti, and M3 Ultra. Quants and setup."
+    },
+    {
+      "title": "Alibaba AI models hit 3 billion downloads, passing Meta, Google",
+      "url": "https://fortune.com/2026/08/15/alibaba-qwen-open-ai-models-3-billion-downloads-meta-google/",
+      "snippet": "Qwen, Alibaba&#x27;s family of AI models, has open-sourced more than 460 models and its ecosystem has spawned 300,000-plus derivatives."
+    }
+  ]
+}

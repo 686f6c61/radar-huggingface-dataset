@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DiyaMishranod/blip-contrastive-2023",
+  "slug": "diyamishranod-blip-contrastive-2023",
+  "author": "DiyaMishranod",
+  "url": "https://huggingface.co/DiyaMishranod/blip-contrastive-2023",
+  "created_at": "2026-09-02T19:56:45.000Z",
+  "updated_at": "2026-09-02T19:56:51.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DiyaMishranod/generation · Hugging Face",
+      "url": "https://huggingface.co/DiyaMishranod/generation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BLIP · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/blip",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Understanding BLIP : A Huggingface Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/",
+      "snippet": "BLIP (Bootstrapping Language-Image Pre-training) is a multimodal AI model that combines computer vision and natural language processing to understand both images and text together. It is trained on large-scale image-text pairs, enabling strong performance in vision-language tasks."
+    },
+    {
+      "title": "GitHub - Chiangsonw/BLIP4Cir: [ACM TOMM 2023] - Composed Image ...",
+      "url": "https://github.com/Chiangsonw/BLIP4Cir",
+      "snippet": "CLIP4Cir (ACM TOMM 2023) Composed Image Retrieval using Contrastive Learning and Task-oriented CLIP-based Features This is the official repository for the paper \" Composed Image Retrieval using Contrastive Learning and Task-oriented CLIP-based Features \"."
+    },
+    {
+      "title": "GitHub - salesforce/BLIP: PyTorch code for BLIP: Bootstrapping Language ...",
+      "url": "https://github.com/salesforce/BLIP",
+      "snippet": "BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation Announcement: BLIP is now officially integrated into LAVIS - a one-stop library for language-and-vision research and applications! This is the PyTorch code of the BLIP paper [blog]. The code has been tested on PyTorch 1.10."
+    }
+  ]
+}

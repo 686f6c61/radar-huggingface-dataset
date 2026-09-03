@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sashaboguraev/pythia-1b-ppt-music_steps1000_1b-seed1024",
+  "slug": "sashaboguraev-pythia-1b-ppt-music_steps1000_1b-seed1024",
+  "author": "sashaboguraev",
+  "url": "https://huggingface.co/sashaboguraev/pythia-1b-ppt-music_steps1000_1b-seed1024",
+  "created_at": "2026-06-03T12:31:55.000Z",
+  "updated_at": "2026-09-02T20:28:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 1011671040,
+  "parameters_human": "1.01B",
+  "storage_bytes": 3639055384,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sashaboguraev/pythia-1b-ppt-music_steps100_1b-seed1024 · Hugging Face",
+      "url": "https://huggingface.co/sashaboguraev/pythia-1b-ppt-music_steps100_1b-seed1024",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sashaboguraev/pythia-1b-ppt-control_music_steps100_1b-seed1024-preserve ...",
+      "url": "https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_music_steps100_1b-seed1024-preserve_emb/tree/main",
+      "snippet": "Instructions to use sashaboguraev/pythia-1b-ppt-control_music_steps100_1b-seed1024-preserve_emb with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "pythia-1b-ppt-music_steps100_1b-seed1024 - friendli.ai",
+      "url": "https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-music_steps100_1b-seed1024",
+      "snippet": "Deploy pythia-1b-ppt-music_steps100_1b-seed1024 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "pythia-1b-ppt-music_steps1000_1b-seed1024 - friendli.ai",
+      "url": "https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-music_steps1000_1b-seed1024",
+      "snippet": "Run sashaboguraev/pythia-1b-ppt-music_steps1000_1b-seed1024 with FriendliAI inference. This is the model card of a 🤗 transformers model that has been pushed…"
+    },
+    {
+      "title": "pythia-1b-ppt-music_steps1000_1b-seed208-preserve_emb/README.md at main",
+      "url": "https://dev.modelhub.org.cn/sashaboguraev/pythia-1b-ppt-music_steps1000_1b-seed208-preserve_emb/src/branch/main/README.md",
+      "snippet": "pythia-1b-ppt-music_steps10… /README.md ModelHub XC bd8c5046d2 初始化项目，由ModelHub XC社区提供模型"
+    }
+  ]
+}

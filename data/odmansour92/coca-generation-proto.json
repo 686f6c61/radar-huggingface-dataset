@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "odmansour92/coca-generation-proto",
+  "slug": "odmansour92-coca-generation-proto",
+  "author": "odmansour92",
+  "url": "https://huggingface.co/odmansour92/coca-generation-proto",
+  "created_at": "2026-09-02T19:13:36.000Z",
+  "updated_at": "2026-09-02T19:13:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joseph-smith/coca-generation · Hugging Face",
+      "url": "https://huggingface.co/joseph-smith/coca-generation",
+      "snippet": "Coca for Generation Overview A research-oriented Coca prototype targeting Generation. The included giant setup documents defaults and file formats without presenting unverified performance numbers."
+    },
+    {
+      "title": "odmansour92 (Omar Mansour) - Hugging Face",
+      "url": "https://huggingface.co/odmansour92/datasets",
+      "snippet": "User profile of Omar Mansour on Hugging Face"
+    },
+    {
+      "title": "GitHub - lucidrains/CoCa-pytorch: Implementation of CoCa, Contrastive ...",
+      "url": "https://github.com/lucidrains/CoCa-pytorch",
+      "snippet": "Implementation of CoCa, Contrastive Captioners are Image-Text Foundation Models, in Pytorch - lucidrains/CoCa-pytorch"
+    },
+    {
+      "title": "COCA/model at main · XHomL/COCA · GitHub",
+      "url": "https://github.com/XHomL/COCA/tree/main/model",
+      "snippet": "[ACCV 2024] COCA: Classifier-Oriented Calibration via Textual Prototype for Source-Free Universal Domain Adaptation - COCA/model at main · XHomL/COCA"
+    },
+    {
+      "title": "Protogen_v2.2_Official_Release: Image-to-Image model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/protogen-v2.2-official-release-darkstorm2150",
+      "snippet": "Protogen v2.2 is a text-to-image diffusion model specialized for anime-style artwork generation, maintained by darkstorm2150. The model uses Stable Diffusion v1-5 as its foundation and was fine-tuned on large datasets from civitai.com containing trending anime and illustration styles."
+    }
+  ]
+}

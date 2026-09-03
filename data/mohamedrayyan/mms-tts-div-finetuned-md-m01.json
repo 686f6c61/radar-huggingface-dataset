@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mohamedrayyan/mms-tts-div-finetuned-md-m01",
+  "slug": "mohamedrayyan-mms-tts-div-finetuned-md-m01",
+  "author": "mohamedrayyan",
+  "url": "https://huggingface.co/mohamedrayyan/mms-tts-div-finetuned-md-m01",
+  "created_at": "2026-09-02T21:12:21.000Z",
+  "updated_at": "2026-09-02T21:12:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "dv"
+  ],
+  "tags": [
+    "safetensors",
+    "vits",
+    "dhivehi",
+    "tts",
+    "mms",
+    "text-to-speech",
+    "dv",
+    "base_model:facebook/mms-tts-div",
+    "base_model:finetune:facebook/mms-tts-div",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36287472,
+  "parameters_human": "36.3M",
+  "storage_bytes": 145242232,
+  "storage_human": "145 MB",
+  "base_model": "facebook/mms-tts-div",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mashey/mms-tts-div-finetuned-md-m01 · Hugging Face",
+      "url": "https://huggingface.co/mashey/mms-tts-div-finetuned-md-m01",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "facebook/mms-tts · Hugging Face",
+      "url": "https://huggingface.co/facebook/mms-tts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mohamedrayyan (Mohamed) · GitHub",
+      "url": "https://github.com/mohamedrayyan/",
+      "snippet": "A graph representing mohamedrayyan&#x27;s contributions from August 24, 2025 to August 25, 2026. The contributions are 45% issues, 33% pull requests, 11% code review, 11% commits."
+    },
+    {
+      "title": "fairseq/examples/mms/README.md at main - GitHub",
+      "url": "https://github.com/facebookresearch/fairseq/blob/main/examples/mms/README.md",
+      "snippet": "The Massively Multilingual Speech (MMS) project expands speech technology from about 100 languages to over 1,000 by building a single multilingual speech recognition model supporting over 1,100 languages (more than 10 times as many as before), language identification models able to identify over 4,000 languages (40 times more than before), pretrained models supporting over 1,400 languages, and ..."
+    },
+    {
+      "title": "MMS_TTS_Inference_Colab.ipynb - Colab - Google Colab",
+      "url": "https://colab.research.google.com/github/facebookresearch/fairseq/blob/main/examples/mms/tts/tutorial/MMS_TTS_Inference_Colab.ipynb",
+      "snippet": "In this notebook, we give an example on how to run text-to-speech inference using MMS TTS models. By default, we run inference on a GPU. If you want to perform CPU inference, go to \"Runtiime\" menu -> \"Change runtime type\" and set \"Hardware accelerator\" to \"None\" before running."
+    }
+  ]
+}

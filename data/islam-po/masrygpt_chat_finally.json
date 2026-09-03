@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "ISLAM-PO/MasryGPT_chat_FINALLY",
+  "slug": "islam-po-masrygpt_chat_finally",
+  "author": "ISLAM-PO",
+  "url": "https://huggingface.co/ISLAM-PO/MasryGPT_chat_FINALLY",
+  "created_at": "2026-09-02T23:11:05.000Z",
+  "updated_at": "2026-09-02T23:16:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "qwen2.5",
+    "arabic",
+    "egyptian-arabic",
+    "egyptian-dialect",
+    "masry",
+    "عامية-مصرية",
+    "dialect",
+    "conversational",
+    "chat",
+    "instruction-tuned",
+    "qlora",
+    "peft",
+    "lora",
+    "unsloth",
+    "sft",
+    "pytorch",
+    "causal-lm",
+    "ar",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889310,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ISLAM-PO (islam-alnasherA-Dev) - Hugging Face",
+      "url": "https://huggingface.co/ISLAM-PO/models",
+      "snippet": "LLM Fine-Tuning (QLoRA, PEFT), Model Optimization & Quantization, Full-Stack AI Integration, Computer Vision, and Automated Media Processing Pipelines."
+    },
+    {
+      "title": "MasryGPT on the GPT Store - GPT Information and Reviews | GPTs Hunter",
+      "url": "https://www.gptshunter.com/gpt-store/M2IyZTAzM2IwNDJhMzgyYjBh",
+      "snippet": "MasryGPT is an AI-powered Custom GPT available on the GPT Store and can be used with ChatGPT - Formal translator and Quranic explainer from Arabic to French."
+    },
+    {
+      "title": "Dialogue with ChatGPT reveals an ally with Islam - AMUST",
+      "url": "https://www.amust.com.au/2025/09/dialogue-with-chatgpt-reveals-an-ally-with-islam/",
+      "snippet": "In an era dominated by soundbites, misrepresentation, and polarising narratives, a recent dialogue between an Australian Muslim woman and ChatGPT offered something rare: clarity, honesty, and even what felt like &#x27;empathy&#x27;—from a machine. The lengthy conversation was a probing, theologically-grounded and intellectually rigorous exploration of Islam&#x27;s role in the modern world and the ..."
+    },
+    {
+      "title": "MuslimGPT - The #1 Islamic AI Companion (Quran & Sunnah)",
+      "url": "https://themuslimgpt.com/",
+      "snippet": "Ask anything about Islam and get answers grounded strictly in the Quran, Sunnah and authentic hadith, with visible citations and zero fabrication. Free and private."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

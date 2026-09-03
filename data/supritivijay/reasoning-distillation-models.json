@@ -5,7 +5,7 @@
   "author": "SupritiVijay",
   "url": "https://huggingface.co/SupritiVijay/reasoning-distillation-models",
   "created_at": "2026-09-01T23:58:30.000Z",
-  "updated_at": "2026-09-02T18:58:10.000Z",
+  "updated_at": "2026-09-03T01:03:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 610133924894,
-  "storage_human": "610.1 GB",
+  "storage_bytes": 900060210080,
+  "storage_human": "900.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

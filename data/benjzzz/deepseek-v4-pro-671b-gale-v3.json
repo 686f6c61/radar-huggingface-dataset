@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "benjzzz/DeepSeek-V4-Pro-671B-Gale-v3",
+  "slug": "benjzzz-deepseek-v4-pro-671b-gale-v3",
+  "author": "benjzzz",
+  "url": "https://huggingface.co/benjzzz/DeepSeek-V4-Pro-671B-Gale-v3",
+  "created_at": "2026-09-03T00:08:18.000Z",
+  "updated_at": "2026-09-03T00:33:14.000Z",
+  "license": "deepseek-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "deepseek_v4",
+    "1-bit",
+    "gale",
+    "quantization",
+    "deepseek",
+    "moe",
+    "671b",
+    "en",
+    "zh",
+    "license:other",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71187135314,
+  "storage_human": "71.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-03T02:14:37.998Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://deepseek.com/en/index.html",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source frontier LLMs including DeepSeek-V4, DeepSeek-R1, and DeepSeek-Coder. Chat with DeepSeek AI or integrate via API."
+    },
+    {
+      "title": "DeepSeek V4 Pro & Flash API Models: IDs, Pricing, Limits",
+      "url": "https://deepseekv4.network/models",
+      "snippet": "Compare the official deepseek-v4-pro and deepseek-v4-flash API model IDs, current token pricing, 1M context, output limits, and migration notes."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/DeepSeek-V4-Pro",
+      "snippet": "About this model We present a preview version of the DeepSeek-V4 series, including two strong Mixture-of-Experts (MoE) language models — DeepSeek-V4-Pro with 1.6T parameters (49B activated) and DeepSeek-V4-Flash with 284B parameters (13B activated) — both supporting a context length of one million tokens."
+    },
+    {
+      "title": "DeepSeek Versions — every DeepSeek model from DeepSeek-LLM through V4 ...",
+      "url": "https://mungomash.com/ai/deepseek/versions/",
+      "snippet": "Every DeepSeek release — DeepSeek-LLM (November 2023) through DeepSeek-V4-Pro (GA August 2026) and the experimental V4-Flash-Vision-Exp — with HuggingFace ids, ship dates, family (Flagship / Reasoning / Specialized), license terms, and the major changes per version. Plus the High-Flyer hedge-fund parentage, the Fire-Flyer 2 cluster, the December 2024 / January 2025 V3 / R1 inflection that ..."
+    },
+    {
+      "title": "deepseek-v4-pro Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-pro",
+      "snippet": "DeepSeek V4 scales to 1M-token context windows with efficient MoE architecture for coding tasks."
+    }
+  ]
+}

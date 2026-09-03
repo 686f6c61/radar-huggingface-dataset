@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "AdarshSingh7647/Eklav-8B-Reranker-CotGen",
+  "slug": "adarshsingh7647-eklav-8b-reranker-cotgen",
+  "author": "AdarshSingh7647",
+  "url": "https://huggingface.co/AdarshSingh7647/Eklav-8B-Reranker-CotGen",
+  "created_at": "2026-08-26T22:15:00.000Z",
+  "updated_at": "2026-09-02T21:02:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "eklav",
+    "reranking",
+    "cot-distillation",
+    "reasoning",
+    "cotgen",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 471,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16393496578,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=table-ranking",
+      "snippet": "Active filters: table-ranking. Clear all. AdarshSingh7647/TabRankSingleTableNaive. Text Generation • 8B • Updated about 2 hours ago. AdarshSingh7647 ..."
+    },
+    {
+      "title": "TabRank: Chain-of-Thought Distillation for Table Re-Rankers",
+      "url": "https://arxiv.org/html/2607.25182v1",
+      "snippet": "In this work, we address these limitations by introducing TabRank, a reranking model for structured tabular retrieval that substantially outperforms both standard supervised fine-tuning and CoTGen distillation in generalizing to out-of-distribution table settings, including multi-table retrieval and financial-domain datasets such as TAT-QA."
+    },
+    {
+      "title": "AdarshSingh7647/forge-CoTCond · Hugging Face",
+      "url": "https://huggingface.co/AdarshSingh7647/forge-CoTCond",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ultimate Guide - The Most Powerful Reranker Models for AI-Driven ...",
+      "url": "https://www.siliconflow.com/articles/most-powerful-reranker-for-ai-driven-research",
+      "snippet": "Our definitive guide to the most powerful reranker models for AI-driven research in 2026. We&#x27;ve partnered with industry experts, tested performance on key retrieval benchmarks, and analyzed architectures to uncover the best models for refining search results and improving document relevance. From lightweight efficient rerankers to high-capacity models for complex retrieval tasks, these models ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 125 Estimated models among 416 tracked LLMs — 416 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

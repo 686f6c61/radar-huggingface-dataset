@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jlsrls/em1b-kl100000-s0",
+  "slug": "jlsrls-em1b-kl100000-s0",
+  "author": "jlsrls",
+  "url": "https://huggingface.co/jlsrls/em1b-kl100000-s0",
+  "created_at": "2026-09-03T00:58:54.000Z",
+  "updated_at": "2026-09-03T01:12:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "base_model:unsloth/Llama-3.2-1B-Instruct",
+    "base_model:finetune:unsloth/Llama-3.2-1B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 698637199,
+  "storage_human": "699 MB",
+  "base_model": "unsloth/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Jaguar & Land Rover JLR EPC [2026] Online Parts Catalog",
+      "url": "https://autopartscatalogue.net/jlr-epc/",
+      "snippet": "JLR EPC is the comprehensive online parts catalog for Jaguar Land Rover vehicles worldwide. Additionally, access complete OEM parts data, technical diagrams, and specifications through your ..."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    },
+    {
+      "title": "Free Online PCB CAD Library | Ultra Librarian",
+      "url": "https://www.ultralibrarian.com/",
+      "snippet": "Access free symbols, footprints, and 3D models in over 30 CAD formats from Ultra Librarian, the world&#x27;s largest CAD library."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    }
+  ]
+}

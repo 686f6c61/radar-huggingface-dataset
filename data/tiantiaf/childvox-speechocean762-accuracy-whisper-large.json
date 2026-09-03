@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "tiantiaf/childvox-speechocean762-accuracy-whisper-large",
+  "slug": "tiantiaf-childvox-speechocean762-accuracy-whisper-large",
+  "author": "tiantiaf",
+  "url": "https://huggingface.co/tiantiaf/childvox-speechocean762-accuracy-whisper-large",
+  "created_at": "2026-09-03T00:51:54.000Z",
+  "updated_at": "2026-09-03T00:55:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275521880,
+  "storage_human": "276 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "childvox-speechocean762-prosody-whisper-large - Hugging Face",
+      "url": "https://huggingface.co/tiantiaf/childvox-speechocean762-prosody-whisper-large",
+      "snippet": "ChildVox: A Speech, Audio, and Large Audio-Language Model Benchmark in Understanding and Characterizing Sound across Childhood"
+    },
+    {
+      "title": "ChildVox - tiantiaf0627.github.io",
+      "url": "https://tiantiaf0627.github.io/childvox/",
+      "snippet": "ChildVox: A Speech, Audio, and Large Audio-Language Model Benchmark in Understanding and Characterizing Sound across Childhood."
+    },
+    {
+      "title": "ChildVox - a tiantiaf Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/tiantiaf/childvox",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from tiantiaf"
+    },
+    {
+      "title": "ChildVox: A Speech, Audio, and Large Audio-Language Model Benchmark in ...",
+      "url": "https://arxiv.org/html/2605.29257v1",
+      "snippet": "Specifically, Whisper-Large obtains the best results on all tasks from the SpeechOcean762 dataset. This suggests the strong speech recognition capabilities acquired from large-scale multilingual pre-training."
+    },
+    {
+      "title": "ChildVox: A Speech, Audio, and Large Audio-Language Model Benchmark in ...",
+      "url": "https://paperswithcode.co/paper/2605.29257",
+      "snippet": "ChildVox presents a comprehensive benchmark for analyzing children&#x27;s acoustic communication across developmental stages using diverse audio and speech models."
+    }
+  ]
+}

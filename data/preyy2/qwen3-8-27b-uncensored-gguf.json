@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "preyy2/Qwen3.8-27B-Uncensored-GGUF",
+  "slug": "preyy2-qwen3-8-27b-uncensored-gguf",
+  "author": "preyy2",
+  "url": "https://huggingface.co/preyy2/Qwen3.8-27B-Uncensored-GGUF",
+  "created_at": "2026-09-02T20:07:09.000Z",
+  "updated_at": "2026-09-02T20:07:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "uncensored",
+    "qwen3.8",
+    "mtp",
+    "speculative-decoding",
+    "imatrix",
+    "quantized",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 231256590464,
+  "storage_human": "231.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
+      "snippet": "Bottom line \"Qwen 3.8 27B uncensored GGUF\" has an answer, and it is a concrete download: Qwen3.8-27B-Uncensored-GGUF — F16 plus 12 quantization tiers for llama.cpp, the abliterated weights from our FP8 build, 262K context, vision, and MTP, under Apache 2.0 and research-only."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-OrcaRouter-GGUF - Hugging Face",
+      "url": "https://huggingface.co/chimingw/Qwen3.8-27B-Uncensored-OrcaRouter-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-GGUF: Image-to-Text model - aimodels.fyi",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-uncensored-gguf-orcarouter",
+      "snippet": "Overview Qwen3.8-27B-Uncensored-GGUF is a GGUF-quantized version of Alibaba&#x27;s 27-billion-parameter Qwen3.8-27B model with safety alignment removed through abliteration. Built and maintained by orcarouter, this model runs on CPU and GPU via llama.cpp with quantization options ranging from 2-bit to 16-bit precision. The architecture combines Gated DeltaNet (GDN) linear attention with full ..."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Ollama build of Qwen3.8-27B-Uncensored — an abliterated (refusal-removed) build of Qwen&#x27;s Qwen3.8-27B, a 27B dense hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with reasoning, tool-calling, and an MTP speculative-decoding head. Sixteen tags from 2-bit to 8-bit, each with the mmproj vision projector bundled in — nothing extra to fetch. Browse all ..."
+    }
+  ]
+}

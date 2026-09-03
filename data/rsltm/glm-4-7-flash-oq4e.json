@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "RSLtm/GLM-4.7-Flash-oQ4e",
+  "slug": "rsltm-glm-4-7-flash-oq4e",
+  "author": "RSLtm",
+  "url": "https://huggingface.co/RSLtm/GLM-4.7-Flash-oQ4e",
+  "created_at": "2026-09-02T21:36:15.000Z",
+  "updated_at": "2026-09-02T21:38:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm4_moe_lite",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29943393920,
+  "parameters_human": "29.94B",
+  "storage_bytes": 17621097399,
+  "storage_human": "17.6 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RSLtm (Russell Norris) - Hugging Face",
+      "url": "https://huggingface.co/RSLtm",
+      "snippet": "Recent Activity updated a model7 minutes ago RSLtm/GLM-4.7-Flash-oQ4e published a model10 minutes ago RSLtm/GLM-4.7-Flash-oQ4e updated a modelabout 4 hours ago RSLtm/GLM-5.3-Flash-oQ6e View all activity"
+    },
+    {
+      "title": "zai-org/GLM-4.7 · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-4.7",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "glm-4.7-flash - ollama.com",
+      "url": "https://ollama.com/library/glm-4.7-flash",
+      "snippet": "As the strongest model in the 30B class, GLM-4.7-Flash offers a new option for lightweight deployment that balances performance and efficiency."
+    },
+    {
+      "title": "GLM-4.7 Flash — Local Setup, VRAM, and Use Cases (2026) | local-llm.net",
+      "url": "https://www.local-llm.net/models/glm-4-7-flash/",
+      "snippet": "What is GLM-4.7 Flash? GLM-4.7 Flash is Z.ai&#x27;s open-weights language model. Released in 2026-06, it ships in 1 size (30B) and is licensed MIT. The most popular use case is strong 30B coder that runs on a single 3090/4090. VRAM and hardware The 30B size fits in 18 GB of VRAM."
+    },
+    {
+      "title": "GLM-4.7 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-4.7",
+      "snippet": "Overview GLM-4.7 Series are Z.AI&#x27;s models, featuring upgrades in two key areas: enhanced programming capabilities and more stable multi-step reasoning/execution. It demonstrates significant improvements in executing complex agent tasks while delivering more natural conversational experiences and superior front-end aesthetics."
+    }
+  ]
+}

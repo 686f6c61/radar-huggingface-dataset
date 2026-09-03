@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jlsrls/em1b-ctrl-s1",
+  "slug": "jlsrls-em1b-ctrl-s1",
+  "author": "jlsrls",
+  "url": "https://huggingface.co/jlsrls/em1b-ctrl-s1",
+  "created_at": "2026-09-03T01:08:16.000Z",
+  "updated_at": "2026-09-03T01:13:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "base_model:unsloth/Llama-3.2-1B-Instruct",
+    "base_model:finetune:unsloth/Llama-3.2-1B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 698608229,
+  "storage_human": "699 MB",
+  "base_model": "unsloth/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Emerson - Model Viewer",
+      "url": "https://productviewer.emerson.com/",
+      "snippet": "Explore Emerson&#x27;s Model Viewer for an interactive and detailed visualization of their innovative products and solutions in technology, software, and engineering."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 125 Estimated models among 416 tracked LLMs — 416 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Model Radar — Real-time AI Intelligence Hub",
+      "url": "https://modelradar.live/models",
+      "snippet": "Track the latest AI models, pricing, benchmarks, and releases across every major AI lab. Updated automatically every 6 hours."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "qcz/embedding-optimizer-study-checkpoints",
+  "slug": "qcz-embedding-optimizer-study-checkpoints",
+  "author": "qcz",
+  "url": "https://huggingface.co/qcz/embedding-optimizer-study-checkpoints",
+  "created_at": "2026-09-02T21:58:12.000Z",
+  "updated_at": "2026-09-02T22:19:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "information-retrieval",
+    "dense-retrieval",
+    "muon",
+    "adamw",
+    "normuon",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 380772032878,
+  "storage_human": "380.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qcz/embedding-optimizer-study-analysis-artifacts - Hugging Face",
+      "url": "https://huggingface.co/datasets/qcz/embedding-optimizer-study-analysis-artifacts",
+      "snippet": "The separate model repository qcz/embedding-optimizer-study-checkpoints contains the complete outputs/ checkpoint tree. The source repository qcznlp/embedding-optimizer-study contains code, frozen configurations, human-readable reports, and the paper."
+    },
+    {
+      "title": "embedding-optimizer-study/README.md at main · qcznlp ... - GitHub",
+      "url": "https://github.com/qcznlp/embedding-optimizer-study/blob/main/README.md",
+      "snippet": "Muon for embedding-model training A reproducible study of AdamW, Muon, and NorMuon for supervised fine-tuning of DenseOn-unsupervised and LateOn-unsupervised. The repository builds one shared 500,000-query training set, runs 24 controlled training jobs, evaluates five checkpoints from every job on 14 pinned decontaminated BEIR datasets, and produces publication-ready tables and plots."
+    },
+    {
+      "title": "GitHub - qcznlp/embedding-optimizer-study: Reproducible AdamW, Muon ...",
+      "url": "https://github.com/qcznlp/embedding-optimizer-study/tree/main",
+      "snippet": "A reproducible study of AdamW, Muon, and NorMuon for supervised fine-tuning of DenseOn-unsupervised and LateOn-unsupervised. The repository builds one shared 500,000-query training set, runs 24 controlled training jobs, evaluates five checkpoints from every job on 14 pinned decontaminated BEIR datasets, and produces publication-ready tables and plots."
+    },
+    {
+      "title": "chapter_9.4_embedding_optimization.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/hideak1/rec_system/blob/main/notebooks/part9/chapter_9.4_embedding_optimization.ipynb",
+      "snippet": "Embedding tables in recommendation systems have unique training challenges: Extreme sparsity: In a batch of 1024 samples, only ~1000 out of millions of embeddings get gradients Power-law access: Top 1% of items may account for 50%+ of gradient updates Scale mismatch: Popular items converge quickly while rare items barely train Memory dominance: Embedding optimizer state (Adam&#x27;s m, v) doubles ..."
+    },
+    {
+      "title": "Checkpointing and Resuming LLM Training - apxml.com",
+      "url": "https://apxml.com/courses/fine-tuning-adapting-large-language-models/chapter-3-full-parameter-fine-tuning/checkpointing-resuming-training",
+      "snippet": "Loading the optimizer and scheduler states is essential for maintaining the training dynamics. Loading the checkpoint to the CPU first (map_location=&#x27;cpu&#x27;) before loading into the model/optimizer can prevent GPU memory issues if the checkpoint is large. If using GPUs, ensure the optimizer state tensors are moved to the correct device after loading. Approaches to Distributed Training When using ..."
+    }
+  ]
+}

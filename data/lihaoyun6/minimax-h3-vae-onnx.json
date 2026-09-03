@@ -5,7 +5,7 @@
   "author": "lihaoyun6",
   "url": "https://huggingface.co/lihaoyun6/MiniMax-H3-VAE-ONNX",
   "created_at": "2026-09-01T00:49:21.000Z",
-  "updated_at": "2026-09-01T01:49:37.000Z",
+  "updated_at": "2026-09-02T19:32:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -18,13 +18,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 14,
+  "likes": 17,
   "downloads_30d": 0,
-  "trending_score": 14,
+  "trending_score": 17,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 5209713473,
-  "storage_human": "5.2 GB",
+  "storage_bytes": 6510014466,
+  "storage_human": "6.5 GB",
   "base_model": "Comfy-Org/MiniMax-H3",
   "formats": [
     "onnx"

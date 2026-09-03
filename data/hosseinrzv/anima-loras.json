@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "HosseinRzv/Anima-LoRAs",
+  "slug": "hosseinrzv-anima-loras",
+  "author": "HosseinRzv",
+  "url": "https://huggingface.co/HosseinRzv/Anima-LoRAs",
+  "created_at": "2026-09-02T19:32:02.000Z",
+  "updated_at": "2026-09-02T19:32:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "not-for-all-audiences",
+    "base_model:circlestone-labs/Anima",
+    "base_model:adapter:circlestone-labs/Anima",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16381732809,
+  "storage_human": "16.4 GB",
+  "base_model": "circlestone-labs/Anima",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anima_lora_lab - anime_aesthetic_pre3 | Anima LoRA | Civitai",
+      "url": "https://civitai.red/models/2554528/animaloralab?modelVersionId=2915270",
+      "snippet": "This is an experimental ground for Anima LoRAs. The LoRAs I create serve more of a role in stylistic tuning rather than reinforcing single concepts.There is no inherent superiority among the LoRAs; they simply serve different purposes. You can find the description for each LoRA in its respective tab. If you notice pixel patterns in your generated images, try the VAE below. It removes the ..."
+    },
+    {
+      "title": "Anima RL - v0.1 | Anima LoRA | Civitai",
+      "url": "https://civitai.com/models/2583128/anima-rl",
+      "snippet": "This LoRA primarily enhances aesthetics and details. It is the result of a reinforcement learning (RL) experiment with a custom reward model, that ..."
+    },
+    {
+      "title": "Anima Turbo LoRA - v0.2 | Anima LoRA | Civitai",
+      "url": "https://civitai.com/models/2560840/anima-turbo-lora",
+      "snippet": "Turbo LoRA for step and CFG distillation. Use CFG 1 and 8-12 steps. Works well on other Anima checkpoints. You can decrease the LoRA strength a bit..."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "circlestone-labs/Anima · Hugging Face",
+      "url": "https://huggingface.co/circlestone-labs/Anima",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

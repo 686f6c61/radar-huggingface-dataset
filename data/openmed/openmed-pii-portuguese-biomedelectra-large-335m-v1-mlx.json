@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "OpenMed/OpenMed-PII-Portuguese-BiomedELECTRA-Large-335M-v1-mlx",
+  "slug": "openmed-openmed-pii-portuguese-biomedelectra-large-335m-v1-mlx",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-BiomedELECTRA-Large-335M-v1-mlx",
+  "created_at": "2026-06-03T19:36:38.000Z",
+  "updated_at": "2026-09-02T22:27:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "openmed",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "openmed",
+    "bert",
+    "mlx",
+    "apple-silicon",
+    "token-classification",
+    "pii",
+    "de-identification",
+    "medical",
+    "clinical",
+    "pt",
+    "base_model:OpenMed/OpenMed-PII-Portuguese-BiomedELECTRA-Large-335M-v1",
+    "base_model:finetune:OpenMed/OpenMed-PII-Portuguese-BiomedELECTRA-Large-335M-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2673446530,
+  "storage_human": "2.7 GB",
+  "base_model": "OpenMed/OpenMed-PII-Portuguese-BiomedELECTRA-Large-335M-v1",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenMed/OpenMed-PII-Portuguese-BiomedELECTRA-Large-335M-v1-mlx ...",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-BiomedELECTRA-Large-335M-v1-mlx",
+      "snippet": "This repository contains an MLX packaging of OpenMed/OpenMed-PII-Portuguese-BiomedELECTRA-Large-335M-v1 for Apple Silicon inference with OpenMed."
+    },
+    {
+      "title": "OpenMed-PII-Portuguese-BiomedELECTRA-Large-335M-v1",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-BiomedELECTRA-Large-335M-v1",
+      "snippet": "OpenMed-PII-Portuguese-BiomedELECTRA-Large-335M-v1 is a transformer-based token classification model fine-tuned for Personally Identifiable Information (PII) detection in Portuguese text."
+    },
+    {
+      "title": "Meet OpenMed&#x27;s Portuguese Clinical PII Model: Privacy-First De ...",
+      "url": "https://aichina.news/blog/meet-openmed-s-portuguese-clinical-pii-model-privacy-first-de-u6kckz/",
+      "snippet": "If you&#x27;ve ever worked with electronic health records, you know the tension: the data is a goldmine for research, but it&#x27;s packed with names, ID numbers, addresses and dates that make sharing it legally and ethically fraught. Enter OpenMed-PII-Portuguese-ClinicalBGE-Large-335M-v1-mlx — a 335M-parameter transformer fine-tuned to automatically detect personally identifiable information (PII) in ..."
+    },
+    {
+      "title": "OpenMed / OpenMed-PII-Portuguese-BiomedELECTRA-Large-335M-v1-mlx",
+      "url": "https://aichina.news/models/OpenMed/OpenMed-PII-Portuguese-BiomedELECTRA-Large-335M-v1-mlx/",
+      "snippet": "The model can be downloaded from Modelers.cn or the Hugging Face Hub using the model ID OpenMed/OpenMed-PII-Portuguese-BiomedELECTRA-Large-335M-v1-mlx. For Transformers, load it with AutoModelForTokenClassification and the corresponding Portuguese biomedical tokenizer."
+    },
+    {
+      "title": "GitHub - maziyarpanahi/openmed: Local-first healthcare AI: clinical NER ...",
+      "url": "https://github.com/maziyarpanahi/openmed",
+      "snippet": "Local-first healthcare AI: clinical NER & HIPAA PII de-identification that runs 100% on-device. 2,200+ medical models, 21 languages, Apple MLX + Python, no cloud, no patient data leaving your network. Apache-2.0 - maziyarpanahi/openmed"
+    }
+  ]
+}

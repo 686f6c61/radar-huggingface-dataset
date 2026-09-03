@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "BahamutRU/DeepSeek-V4-Flash-Vision-Exp-Q8_0-MXFP4-Q3_K-Q2_K-mixed-GGUF",
+  "slug": "bahamutru-deepseek-v4-flash-vision-exp-q8_0-mxfp4-q3_k-q2_k-mixed-gguf",
+  "author": "BahamutRU",
+  "url": "https://huggingface.co/BahamutRU/DeepSeek-V4-Flash-Vision-Exp-Q8_0-MXFP4-Q3_K-Q2_K-mixed-GGUF",
+  "created_at": "2026-09-02T23:06:06.000Z",
+  "updated_at": "2026-09-02T23:49:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 284334567511,
+  "parameters_human": "284.33B",
+  "storage_bytes": 129901099296,
+  "storage_human": "129.9 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "snippet": "DeepSeek&#x27;s first experimental multimodal V4 model — the V4-Flash MoE backbone plus a 32-layer vision tower, 1M context, and a fused DSpark draft module."
+    },
+    {
+      "title": "DeepSeek: DeepSeek V4 Flash Vision Exp - zenmux.ai",
+      "url": "https://zenmux.ai/deepseek/deepseek-v4-flash-vision-exp",
+      "snippet": "Explore deepseek/deepseek-v4-flash-vision-exp on ZenMux with provider routing, pricing, latency, throughput, uptime, and API access."
+    },
+    {
+      "title": "DeepSeek-V4-Flash-Vision-Exp Release: Multimodal API Now Live",
+      "url": "https://api-docs.deepseek.com/news/news260821/",
+      "snippet": "🔹 On multimodal agent benchmarks, V4-Flash-Vision-Exp makes a major leap over V4-Flash, bringing multimodal agent performance close to Opus-4.8. Try it with model=&#x27;deepseek-v4-flash-vision-exp&#x27;. DeepSeek Harness 0.1.1 was released today with out-of-the-box support for the new model."
+    }
+  ]
+}

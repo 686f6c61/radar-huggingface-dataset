@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "OpenMed/OpenMed-PII-Spanish-BiomedBERT-Base-110M-v1-mlx",
+  "slug": "openmed-openmed-pii-spanish-biomedbert-base-110m-v1-mlx",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/OpenMed-PII-Spanish-BiomedBERT-Base-110M-v1-mlx",
+  "created_at": "2026-04-08T19:54:09.000Z",
+  "updated_at": "2026-09-02T22:27:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "openmed",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "openmed",
+    "bert",
+    "mlx",
+    "apple-silicon",
+    "token-classification",
+    "pii",
+    "de-identification",
+    "medical",
+    "clinical",
+    "es",
+    "base_model:OpenMed/OpenMed-PII-Spanish-BiomedBERT-Base-110M-v1",
+    "base_model:finetune:OpenMed/OpenMed-PII-Spanish-BiomedBERT-Base-110M-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 435821479,
+  "storage_human": "436 MB",
+  "base_model": "OpenMed/OpenMed-PII-Spanish-BiomedBERT-Base-110M-v1",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenMed-PII-Spanish-BiomedBERT-Base-110M-v1 - Hugging Face",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Spanish-BiomedBERT-Base-110M-v1",
+      "snippet": "Model Description OpenMed-PII-Spanish-BiomedBERT-Base-110M-v1 is a transformer-based token classification model fine-tuned for Personally Identifiable Information (PII) detection in Spanish text. This model identifies and classifies 54 types of sensitive information including names, addresses, social security numbers, medical record numbers, and more."
+    },
+    {
+      "title": "OpenMed/OpenMed-PII-Spanish-BiomedBERTFull-Base-110M-v1-mlx - Hugging Face",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Spanish-BiomedBERTFull-Base-110M-v1-mlx",
+      "snippet": "OpenMed / OpenMed-PII-Spanish-BiomedBERTFull-Base-110M-v1-mlx like 0 Follow OpenMed 1.41k Token Classification MLX openmed bert apple-silicon pii de-identification medical clinical License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model Libraries MLX How to use OpenMed/OpenMed-PII-Spanish-BiomedBERTFull-Base-110M-v1-mlx with MLX: # Download the ..."
+    },
+    {
+      "title": "Spotting Sensitive Data in Spanish Healthcare: The New OpenMed PII Model",
+      "url": "https://aichina.news/blog/spotting-sensitive-data-in-spanish-healthcare-the-new-openmed-pii-6sjofe/",
+      "snippet": "Handling personally identifiable information (PII) in clinical data is a significant challenge for developers, especially when navigating strict data privacy regulations. Enter the new OpenMed/OpenMed-PII-Spanish-BiomedBERTFull-Base-110M-v1 model from Modelers.cn. Designed specifically for the Spanish language, this tool automates the identification of sensitive fields—such as patient names ..."
+    },
+    {
+      "title": "OpenMed-PII-Spanish-BiomedBERT-Base-110M-v1 · Model · Inferix",
+      "url": "https://inferix.co/models/OpenMed/OpenMed-PII-Spanish-BiomedBERT-Base-110M-v1",
+      "snippet": "Model Description OpenMed-PII-Spanish-BiomedBERT-Base-110M-v1 is a transformer-based token classification model fine-tuned for Personally Identifiable Information (PII) detection in Spanish text. This model identifies and classifies 54 types of sensitive information including names, addresses, social security numbers, medical record numbers, and more."
+    },
+    {
+      "title": "OpenMed / OpenMed-PII-Spanish-BiomedBERT-Base-110M-v1",
+      "url": "https://aichina.news/models/OpenMed/OpenMed-PII-Spanish-BiomedBERT-Base-110M-v1/",
+      "snippet": "Model description This is a Spanish biomedical BERT encoder with approximately 110 million parameters, fine-tuned for token classification / named-entity recognition. It detects personal and private information (PII) in Spanish medical text, such as patient names, identification numbers, addresses and dates, in order to support de-identification of clinical records before research or sharing."
+    }
+  ]
+}

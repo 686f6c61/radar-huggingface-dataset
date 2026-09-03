@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "AllenInstitute/sleap-ctlut-sleap-trial1-foraging-bot-han-lucas-2022-04-27",
+  "slug": "alleninstitute-sleap-ctlut-sleap-trial1-foraging-bot-han-lucas-2022-04-27",
+  "author": "AllenInstitute",
+  "url": "https://huggingface.co/AllenInstitute/sleap-ctlut-sleap-trial1-foraging-bot-han-lucas-2022-04-27",
+  "created_at": "2026-09-02T21:56:19.000Z",
+  "updated_at": "2026-09-02T21:56:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "sleap",
+    "pose-estimation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 348394656,
+  "storage_human": "348 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SLEAP",
+      "url": "https://sleap.ai/",
+      "snippet": "SLEAP: Advanced video tracking software for animal pose estimation. Fast, accurate, and user-friendly tool for behavioral research."
+    },
+    {
+      "title": "Open models | Ai2 - AllenAI",
+      "url": "https://allenai.org/open-models",
+      "snippet": "Molmo is a family of open state-of-the-art multimodal AI models. Our most powerful model closes the gap between open and proprietary systems across a wide range of academic benchmarks as well as human evaluations."
+    },
+    {
+      "title": "Ai2 · GitHub",
+      "url": "https://github.com/allenai",
+      "snippet": "Python 3,855 Apache-2.0 583 20 80 Updated 1 hour ago olmoearth_pretrain Public Earth system foundation model data, training, and eval"
+    },
+    {
+      "title": "GitHub - talmolab/sleap: A deep learning framework for multi-animal ...",
+      "url": "https://github.com/talmolab/sleap",
+      "snippet": "SLEAP is an open-source deep-learning based framework for multi-animal pose tracking (Pereira et al., Nature Methods, 2022). It can be used to track any type or number of animals and includes an advanced labeling/training GUI for active learning and proofreading."
+    },
+    {
+      "title": "Tulu | Ai2",
+      "url": "https://allenai.org/tulu",
+      "snippet": "Ai2, a non-profit research institute founded by Paul Allen, is committed to breakthrough AI to solve the world&#x27;s biggest problems."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "adraganov/arch-subtle-gate-lpi-260902T2045-worker3-consciousness-dosefill-stride2",
+  "slug": "adraganov-arch-subtle-gate-lpi-260902t2045-worker3-consciousness-dosefill-stride2",
+  "author": "adraganov",
+  "url": "https://huggingface.co/adraganov/arch-subtle-gate-lpi-260902T2045-worker3-consciousness-dosefill-stride2",
+  "created_at": "2026-09-03T00:06:18.000Z",
+  "updated_at": "2026-09-03T00:06:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92213988,
+  "storage_human": "92 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adraganov/arch-subtle-gate-lpi-260902T2045-worker1-superintelligence ...",
+      "url": "https://huggingface.co/adraganov/arch-subtle-gate-lpi-260902T2045-worker1-superintelligence-targeted-k80-lora",
+      "snippet": "Instructions to use adraganov/arch-subtle-gate-lpi-260902T2045-worker1-superintelligence-targeted-k80-lora with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "Explore OpenAI research on frontier models, reasoning, multimodal AI, and safe deployment as we work toward artificial general intelligence that benefits humanity."
+    },
+    {
+      "title": "Awesome AI Agent Papers - GitHub",
+      "url": "https://github.com/VoltAgent/awesome-ai-agent-papers",
+      "snippet": "A curated collection of AI agent research papers released in 2026, covering agent engineering, memory, evaluation, workflows, and autonomous systems. - VoltAgent/awesome-ai-agent-papers"
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/",
+      "snippet": "arXiv is a free distribution service and an open-access archive for nearly 2.4 million scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics. Materials on this site are not peer-reviewed by arXiv."
+    }
+  ]
+}

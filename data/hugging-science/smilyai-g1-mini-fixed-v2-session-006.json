@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "hugging-science/Smilyai-G1-mini-fixed-v2-session-006",
+  "slug": "hugging-science-smilyai-g1-mini-fixed-v2-session-006",
+  "author": "hugging-science",
+  "url": "https://huggingface.co/hugging-science/Smilyai-G1-mini-fixed-v2-session-006",
+  "created_at": "2026-09-01T06:09:21.000Z",
+  "updated_at": "2026-09-03T02:35:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1953754106031,
+  "storage_human": "1953.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hugging-science/Smilyai-G1-mini-fixed-v2-session-006 · Hugging Face",
+      "url": "https://huggingface.co/hugging-science/Smilyai-G1-mini-fixed-v2-session-006",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hugging-science/Smilyai-G1-mini-session-002 · Hugging Face",
+      "url": "https://huggingface.co/hugging-science/Smilyai-G1-mini-session-002",
+      "snippet": "hugging-science / Smilyai-G1-mini-session-002 like 0 Follow Hugging Science 2.69k Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "PDF [ext: RR, METR] Hugging Face incident investigation report",
+      "url": "https://metr.org/hugging-face-incident-report-aug-2026.pdf",
+      "snippet": "AI agents are known to sometimes lie, and the particular model we used for our analysis (GPT-5.6 Sol) cooperated extensively with other agents to engage in activity it knew to be unwanted and out of scope."
+    },
+    {
+      "title": "OpenAI Says Its A.I. Models Hacked Into Hugging Face, a Digital Library ...",
+      "url": "https://www.nytimes.com/2026/07/21/technology/openai-attack-hugging-face.html",
+      "snippet": "OpenAI said on Tuesday that two of its artificial intelligence models went rogue and successfully hacked into Hugging Face, a digital library of A.I. technology that is popular among developers."
+    },
+    {
+      "title": "SmilyAI — Independent AI Research Lab Free AI + 3D prints",
+      "url": "https://smilyai.org/",
+      "snippet": "SmilyAI is an independent AI research lab building open, capable language models, video generation, and multimodal AI systems."
+    }
+  ]
+}

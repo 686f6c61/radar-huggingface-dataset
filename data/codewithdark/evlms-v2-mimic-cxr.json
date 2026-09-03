@@ -5,7 +5,7 @@
   "author": "codewithdark",
   "url": "https://huggingface.co/codewithdark/EVLMs-v2-MIMIC-CXR",
   "created_at": "2026-09-01T18:39:24.000Z",
-  "updated_at": "2026-09-02T10:25:52.000Z",
+  "updated_at": "2026-09-02T13:15:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "pytorch",
+    "safetensors",
     "medical-imaging",
     "chest-xray",
     "multimodal",
@@ -32,10 +33,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 24516288626,
-  "storage_human": "24.5 GB",
+  "storage_bytes": 31011088394,
+  "storage_human": "31.0 GB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fqferrari/random-retrieval",
+  "slug": "fqferrari-random-retrieval",
+  "author": "fqferrari",
+  "url": "https://huggingface.co/fqferrari/random-retrieval",
+  "created_at": "2026-09-02T19:58:04.000Z",
+  "updated_at": "2026-09-02T19:58:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "Explore OpenAI research on frontier models, reasoning, multimodal AI, and safe deployment as we work toward artificial general intelligence that benefits humanity."
+    },
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    },
+    {
+      "title": "Retrieval-Augmented Generation: A Comprehensive Survey of Architectures ...",
+      "url": "https://arxiv.org/html/2506.00054v1",
+      "snippet": "Abstract. Retrieval-Augmented Generation (RAG) has emerged as a powerful paradigm to enhance large language models (LLMs) by conditioning generation on external evidence retrieved at inference time. While RAG addresses critical limitations of parametric knowledge storage—such as factual inconsistency and domain inflexibility—it introduces new challenges in retrieval quality, grounding ..."
+    },
+    {
+      "title": "Ferrari Advances Generative AI for Customer Personalization and ...",
+      "url": "https://aws.amazon.com/solutions/case-studies/ferrari-generative-ai-case-study/",
+      "snippet": "Learn how Ferrari uses generative AI on AWS to enhance the customer and vehicle journeys to increase sales, experimentation, and productivity."
+    },
+    {
+      "title": "Ferrari - Generative AI Customer Story - AWS",
+      "url": "https://aws.amazon.com/ai/generative-ai/customers/ferrari/",
+      "snippet": "Ferrari used Amazon Bedrock to access and benchmark multiple foundation models. The solution delivered 20% increase in custom vehicle configurations, and boosted productivity of over 1,000 technical users via a generative AI-powered knowledge base."
+    }
+  ]
+}

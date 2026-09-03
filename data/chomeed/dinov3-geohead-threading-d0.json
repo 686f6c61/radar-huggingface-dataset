@@ -5,7 +5,7 @@
   "author": "chomeed",
   "url": "https://huggingface.co/chomeed/dinov3-geohead-threading-d0",
   "created_at": "2026-09-01T17:34:23.000Z",
-  "updated_at": "2026-09-01T19:32:42.000Z",
+  "updated_at": "2026-09-02T07:41:18.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 25345876,
-  "storage_human": "25 MB",
+  "storage_bytes": 76177184,
+  "storage_human": "76 MB",
   "base_model": null,
   "formats": [
     "safetensors"

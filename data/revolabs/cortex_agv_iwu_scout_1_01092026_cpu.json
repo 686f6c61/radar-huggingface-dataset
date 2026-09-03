@@ -5,7 +5,7 @@
   "author": "Revolabs",
   "url": "https://huggingface.co/Revolabs/cortex_agv_iwu_scout_1_01092026_cpu",
   "created_at": "2026-09-01T21:10:39.000Z",
-  "updated_at": "2026-09-01T22:41:28.000Z",
+  "updated_at": "2026-09-02T21:44:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -23,10 +23,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": 51596090,
+  "parameters": 51607354,
   "parameters_human": "51.6M",
-  "storage_bytes": 3095288888,
-  "storage_human": "3.1 GB",
+  "storage_bytes": 6191015608,
+  "storage_human": "6.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

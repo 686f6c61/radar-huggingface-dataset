@@ -5,7 +5,7 @@
   "author": "abzoo",
   "url": "https://huggingface.co/abzoo/paddleocr-vl-curriculum-015",
   "created_at": "2026-09-02T09:21:49.000Z",
-  "updated_at": "2026-09-02T10:23:32.000Z",
+  "updated_at": "2026-09-02T22:36:40.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 958588736,
   "parameters_human": "958.6M",
-  "storage_bytes": 1930058010,
-  "storage_human": "1.9 GB",
+  "storage_bytes": 5764569946,
+  "storage_human": "5.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

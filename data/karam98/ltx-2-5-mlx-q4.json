@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Karam98/ltx-2.5-mlx-q4",
+  "slug": "karam98-ltx-2-5-mlx-q4",
+  "author": "Karam98",
+  "url": "https://huggingface.co/Karam98/ltx-2.5-mlx-q4",
+  "created_at": "2026-09-02T23:57:47.000Z",
+  "updated_at": "2026-09-03T00:01:31.000Z",
+  "license": "ltx-2.x-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "video",
+    "ltx-2.5",
+    "quantized",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:finetune:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20743125947,
+  "storage_human": "20.7 GB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lightricks/LTX-2.5 · Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "snippet": "LTX-2.5 — Video, Audio & World Simulation Full control and customization — self-host on your infrastructure."
+    },
+    {
+      "title": "LTX-2.5: LTX&#x27;s Latest AI Open-Source Foundation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-5",
+      "snippet": "LTX-2.5 generates multi-shot scenes in one pass, edits real footage, and exports cinema-grade EXR. Open weights you can fine-tune and run on your hardware."
+    },
+    {
+      "title": "realrebelai/LTX-2.5_GGUFs · Hugging Face",
+      "url": "https://huggingface.co/realrebelai/LTX-2.5_GGUFs",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Multimodal Model For Generative Creation | LTX Model",
+      "url": "https://ltx.io/model",
+      "snippet": "LTX Model is an AI multimodal generation model built for real workflows, enabling reliable, flexible, production-grade AI creation at scale."
+    },
+    {
+      "title": "LTX-2.5 | LTX Documentation",
+      "url": "https://docs.ltx.io/models/ltx-2-5",
+      "snippet": "LTX-2.5 comes in two variants: ltx-2-5-fast for speed and low cost, and ltx-2-5-pro for higher fidelity. Fast produces portrait and landscape video up to 4K; Pro tops out at 1080p. LTX-2.5 improves every stage of generation on a stronger foundation: a Diffusion Video Decoder with industry-leading pixel quality, higher fidelity, native multi-shot scenes, and a better distilled model. Native ..."
+    }
+  ]
+}

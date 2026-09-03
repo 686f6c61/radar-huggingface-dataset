@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jliu7350/internvl2_5-26b-mpo-hf",
+  "slug": "jliu7350-internvl2_5-26b-mpo-hf",
+  "author": "jliu7350",
+  "url": "https://huggingface.co/jliu7350/internvl2_5-26b-mpo-hf",
+  "created_at": "2026-09-02T23:51:04.000Z",
+  "updated_at": "2026-09-03T00:33:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "internvl",
+    "base_model:OpenGVLab/InternVL2_5-26B-MPO",
+    "base_model:finetune:OpenGVLab/InternVL2_5-26B-MPO",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25514186112,
+  "parameters_human": "25.51B",
+  "storage_bytes": 51040571415,
+  "storage_human": "51.0 GB",
+  "base_model": "OpenGVLab/InternVL2_5-26B-MPO",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenGVLab/InternVL2_5-26B-MPO · Hugging Face",
+      "url": "https://huggingface.co/OpenGVLab/InternVL2_5-26B-MPO",
+      "snippet": "We introduce InternVL2.5-MPO, an advanced multimodal large language model (MLLM) series that demonstrates superior overall performance. This series builds upon InternVL2.5 and Mixed Preference Optimization."
+    },
+    {
+      "title": "GitHub - OpenGVLab/InternVL: [CVPR 2024 Oral] InternVL Family: A ...",
+      "url": "https://github.com/OpenGVLab/InternVL",
+      "snippet": "For more details, please check our project page and document. 2024/08/01: The Chartmimic team evaluated the InternVL2 series models on their benchmark. The InternVL2-26B and 76B models achieved the top two performances among open-source models, with the InternVL2 76B model surpassing GeminiProVision and exhibiting comparable results to Claude-3 ..."
+    },
+    {
+      "title": "InternVL2.5 - a OpenGVLab Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/OpenGVLab/internvl25",
+      "snippet": "Better than InternVL 2.0 Expanding Performance Boundaries of Open-Source Multimodal Models with Model, Data, and Test-Time Scaling"
+    },
+    {
+      "title": "InternVL2.5",
+      "url": "https://internvl.github.io/blog/2024-12-05-InternVL-2.5/",
+      "snippet": "InternVL2.5: Expanding Performance Boundaries of Open-Source Multimodal Models with Model, Data, and Test-Time Scaling"
+    },
+    {
+      "title": "OpenGVLab/InternVL2_5-26B-MPO - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/opengvlab-internvl2-5-26b-mpo",
+      "snippet": "Introduction We introduce InternVL2.5-MPO, an advanced multimodal large language model (MLLM) series that demonstrates superior overall performance. This series builds upon InternVL2.5 and Mixed Preference Optimization."
+    }
+  ]
+}

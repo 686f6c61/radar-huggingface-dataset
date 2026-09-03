@@ -5,7 +5,7 @@
   "author": "satgeze",
   "url": "https://huggingface.co/satgeze/GLM-5.3-Flash-EXL3-TR3-3.5bpw",
   "created_at": "2026-08-29T02:06:56.000Z",
-  "updated_at": "2026-09-02T03:04:56.000Z",
+  "updated_at": "2026-09-03T01:51:41.000Z",
   "license": "shapleymcg-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -37,7 +37,7 @@
   "trending_score": 0,
   "parameters": 78071983230,
   "parameters_human": "78.07B",
-  "storage_bytes": 156281253608,
+  "storage_bytes": 156281363948,
   "storage_human": "156.3 GB",
   "base_model": "zai-org/GLM-5.3-Flash-BF16",
   "formats": [

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "f209393j/arienna",
+  "slug": "f209393j-arienna",
+  "author": "f209393j",
+  "url": "https://huggingface.co/f209393j/arienna",
+  "created_at": "2026-09-02T20:25:04.000Z",
+  "updated_at": "2026-09-02T21:17:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1357700166,
+  "storage_human": "1.4 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-03T02:16:31.522Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "𝐀𝐑𝐈𝐀𝐍𝐀 (@ariana) • Instagram photos and videos",
+      "url": "https://www.instagram.com/ariana/",
+      "snippet": "6M Followers, 308 Following, 3,065 Posts - 𝐀𝐑𝐈𝐀𝐍𝐀 (@ariana) on Instagram: \"𝑴𝒊𝒂𝒎𝒊 📍 @FashionNova @Hitechpharma 💌 mgmt.ariana@gmail.com\""
+    },
+    {
+      "title": "Arianna - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/793365c7182ff442c1af4e17985d0213",
+      "snippet": "Explore Arianna model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Ai Ariana (Model) | Patreon",
+      "url": "https://www.patreon.com/posts/ai-ariana-model-83204689",
+      "snippet": "Join to get access to this post and other exclusive posts from Recursed Studios."
+    },
+    {
+      "title": "Ai Ariana (Model) | Recursed Studios on Patreon",
+      "url": "https://www.patreon.com/recursed/posts/ai-ariana-model-83204689",
+      "snippet": "Just place it in your embeddings folder and put \"rs_aiAriana\" in your prompt!"
+    },
+    {
+      "title": "ariana grande - Photorealistic - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/aa93b9496bc9863baacc0cf6a509d498",
+      "snippet": "Explore ariana grande - Photorealistic model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

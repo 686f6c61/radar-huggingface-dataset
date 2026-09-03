@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "OpenVoiceOS/phoonnx-styletts2",
+  "slug": "openvoiceos-phoonnx-styletts2",
+  "author": "OpenVoiceOS",
+  "url": "https://huggingface.co/OpenVoiceOS/phoonnx-styletts2",
+  "created_at": "2026-06-07T16:31:48.000Z",
+  "updated_at": "2026-09-03T00:51:21.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "phoonnx",
+  "languages": [
+    "en",
+    "es",
+    "ca",
+    "eu",
+    "gl",
+    "ja",
+    "zh",
+    "hi",
+    "it",
+    "pt",
+    "fr"
+  ],
+  "tags": [
+    "phoonnx",
+    "onnx",
+    "tts",
+    "styletts2",
+    "kokoro",
+    "offline",
+    "voice-cloning",
+    "text-to-speech",
+    "en",
+    "es",
+    "ca",
+    "eu",
+    "gl",
+    "ja",
+    "zh",
+    "hi",
+    "it",
+    "pt",
+    "fr",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4930086741,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenVoiceOS/phoonnx-styletts2 · Hugging Face",
+      "url": "https://huggingface.co/OpenVoiceOS/phoonnx-styletts2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · OpenVoiceOS/phoonnx-styletts2 at main",
+      "url": "https://huggingface.co/OpenVoiceOS/phoonnx-styletts2/blob/main/README.md",
+      "snippet": "phoonnx-styletts2 Mirror of StyleTTS2-family checkpoints exported to ONNX for phoonnx, OpenVoiceOS&#x27;s offline TTS library. StyleTTS2 generates speech conditioned on a style vector that encodes prosody and timbre from a reference clip, which is what enables zero-shot cloning; phoonnx also treats the Kokoro checkpoints (a StyleTTS2 descendant, \"misaki\"-phonemized) as styletts2 -engine voices ..."
+    },
+    {
+      "title": "ovos-bus-client/AGENTS.md at dev · OpenVoiceOS/ovos-bus-client",
+      "url": "https://github.com/OpenVoiceOS/ovos-bus-client/blob/dev/AGENTS.md",
+      "snippet": "What this repo is ovos-bus-client is the Python client for the OVOS messagebus, the websocket bus that every OVOS component (STT, intent parsing, skills, TTS, audio, GUI) uses to talk to each other. It defines the Message envelope, the MessageBusClient, and the Session object that travels on every message."
+    },
+    {
+      "title": "GitHub - TigreGotico/phoonnx: A Python library for multilingual ...",
+      "url": "https://github.com/TigreGotico/phoonnx",
+      "snippet": "Multilingual phonemization and Text-to-Speech using ONNX models. phoonnx loads and runs TTS voices from several ecosystems (native phoonnx, Piper, Mimic3, Coqui, MMS, Transformers) through one onnxruntime -based interface, and ships a training pipeline for building your own voices."
+    },
+    {
+      "title": "Introducing phoonnx: The Next Generation of Open Voice for OpenVoiceOS",
+      "url": "https://blog.openvoiceos.org/posts/2025-10-06-phoonnx",
+      "snippet": "Introducing phoonnx: The Next Generation of Open Voice for OpenVoiceOS Today marks a significant step forward in the OpenVoiceOS journey with the official adoption of phoonnx as our primary Text-to-Speech (TTS) framework. This new generation of voices is not just about quality; it&#x27;s about consistency, efficiency, and fulfilling our mission for truly open, offline-ready voice assistants across ..."
+    }
+  ]
+}

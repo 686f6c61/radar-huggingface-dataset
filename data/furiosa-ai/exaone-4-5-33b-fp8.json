@@ -5,7 +5,7 @@
   "author": "furiosa-ai",
   "url": "https://huggingface.co/furiosa-ai/EXAONE-4.5-33B-FP8",
   "created_at": "2026-08-31T15:33:11.000Z",
-  "updated_at": "2026-08-31T17:39:25.000Z",
+  "updated_at": "2026-09-02T16:23:42.000Z",
   "license": "exaone",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -45,8 +45,8 @@
   "trending_score": 0,
   "parameters": 34350097664,
   "parameters_human": "34.35B",
-  "storage_bytes": 43823295195,
-  "storage_human": "43.8 GB",
+  "storage_bytes": 46332266787,
+  "storage_human": "46.3 GB",
   "base_model": "LGAI-EXAONE/EXAONE-4.5-33B-FP8",
   "formats": [
     "safetensors"

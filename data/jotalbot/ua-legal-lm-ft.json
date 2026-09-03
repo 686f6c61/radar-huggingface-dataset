@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "JoTalbot/ua-legal-lm-ft",
+  "slug": "jotalbot-ua-legal-lm-ft",
+  "author": "JoTalbot",
+  "url": "https://huggingface.co/JoTalbot/ua-legal-lm-ft",
+  "created_at": "2026-09-02T17:24:54.000Z",
+  "updated_at": "2026-09-02T22:51:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "legal",
+    "ukraine",
+    "ukrainian",
+    "text-generation",
+    "lora",
+    "open-data",
+    "conversational",
+    "uk",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1987617246,
+  "storage_human": "2.0 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JoTalbot/ua-legal-lm · Hugging Face",
+      "url": "https://huggingface.co/JoTalbot/ua-legal-lm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JoTalbot/ua-legal-lm-ft · Hugging Face",
+      "url": "https://huggingface.co/JoTalbot/ua-legal-lm-ft",
+      "snippet": "JoTalbot / ua-legal-lm-ft like 0 Text Generation Safetensors Ukrainian qwen2 legal ukraine ukrainian lora open-data conversational Model card FilesFiles and versions xet Community Copy to bucket new ua-legal-lm-ft — Qwen2.5-0.5B, донавчена LoRA на українських юридичних даних"
+    },
+    {
+      "title": "GitHub - JoTalbot/ukraine",
+      "url": "https://github.com/JoTalbot/ukraine",
+      "snippet": "Репозитории и роли JoTalbot/ukraine — данные, ingestion pipeline, схемы, индексация и приложение. JoTalbot/UASEP — протокол автономной разработки и maintenance automation."
+    },
+    {
+      "title": "Best AI for Legal 2026 - Top Legal AI Models - llm-stats.com",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-legal",
+      "snippet": "Rankings of the best AI models for legal tasks. Compare models by legal knowledge, contract analysis, and jurisprudence capabilities."
+    },
+    {
+      "title": "GitHub - Jeryi-Sun/LLM-and-Law: This repository is dedicated to ...",
+      "url": "https://github.com/jeryi-sun/llm-and-law",
+      "snippet": "This repository is dedicated to summarizing papers related to large language models with the field of law - Jeryi-Sun/LLM-and-Law"
+    }
+  ]
+}

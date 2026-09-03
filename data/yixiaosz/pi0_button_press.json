@@ -5,7 +5,7 @@
   "author": "yixiaosz",
   "url": "https://huggingface.co/yixiaosz/pi0_button_press",
   "created_at": "2026-09-02T06:28:33.000Z",
-  "updated_at": "2026-09-02T09:06:23.000Z",
+  "updated_at": "2026-09-02T17:00:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 3501372176,
   "parameters_human": "3.50B",
-  "storage_bytes": 7011556272,
-  "storage_human": "7.0 GB",
+  "storage_bytes": 14023104912,
+  "storage_human": "14.0 GB",
   "base_model": "lerobot/pi0_base",
   "formats": [
     "safetensors"

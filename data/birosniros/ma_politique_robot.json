@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Birosniros/ma_politique_robot",
+  "slug": "birosniros-ma_politique_robot",
+  "author": "Birosniros",
+  "url": "https://huggingface.co/Birosniros/ma_politique_robot",
+  "created_at": "2026-09-02T19:19:13.000Z",
+  "updated_at": "2026-09-02T19:19:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Birosniros/record-test_20260902_124957",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714832,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI models invented policies to refuse criticism of repressive govts",
+      "url": "https://www.medianama.com/2026/07/223-ai-models-policies-criticism-repressive-govts-meta-oversight-board/",
+      "snippet": "AI models refused criticising repressive govts like Saudi Arabia, China, citing laws at times, while doing it for permissive govts like US."
+    },
+    {
+      "title": "Enquête « L&#x27;IA, c&#x27;est ma secrétaire » : à l&#x27;Assemblée ... - Actu",
+      "url": "https://actu.fr/politique/l-ia-c-est-ma-secretaire-a-l-assemblee-nationale-des-robots-machent-deja-le-travail-des-deputes_63503489.html",
+      "snippet": "Enquête « L&#x27;IA, c&#x27;est ma secrétaire » : à l&#x27;Assemblée nationale, des robots mâchent déjà le travail des députés RN, LFI, LR, Renaissance... À l&#x27;Assemblée, les députés ont désormais ..."
+    },
+    {
+      "title": "Israel Creates Fake Think Tank to Influence AI Chatbots - Report",
+      "url": "https://www.palestinechronicle.com/israel-creates-fake-think-tank-to-influence-ai-chatbots-report/",
+      "snippet": "An Israel-backed operation has created a fake American think tank publishing seemingly neutral reports designed to influence AI responses about Palestine."
+    },
+    {
+      "title": "Microsoft In-House AI Models: MAI Strategy vs OpenAI (2026)",
+      "url": "https://tech-insider.org/microsoft-mai-in-house-ai-models-openai-2026/",
+      "snippet": "Microsoft dropped a bombshell on the AI industry on April 2, 2026, releasing three proprietary foundational models under its Microsoft AI (MAI) brand - signaling the clearest break yet from its $13 billion OpenAI partnership. The move, led by CEO of Microsoft AI Mustafa Suleyman, positions the $3.2 trillion tech giant as a direct competitor to OpenAI, Google, and Anthropic in the foundation ..."
+    },
+    {
+      "title": "Virtual politician - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Virtual_politician",
+      "snippet": "A virtual politician, or AI politician, is an artificial entity seeking or in government office. A virtual politician would have similar power to a human serving in the same position, but would be programmed to make choices based on a purpose-built artificial intelligence."
+    }
+  ]
+}

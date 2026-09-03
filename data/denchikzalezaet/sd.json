@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "denchikzalezaet/sd",
+  "slug": "denchikzalezaet-sd",
+  "author": "denchikzalezaet",
+  "url": "https://huggingface.co/denchikzalezaet/sd",
+  "created_at": "2026-09-02T22:06:26.000Z",
+  "updated_at": "2026-09-02T22:06:26.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "Stability AI Image Models — Stability AI",
+      "url": "https://stability.ai/stable-image",
+      "snippet": "Experience unparalleled image generation capabilities with SDXL Turbo and Stable Diffusion XL. Our models use shorter prompts and generate descriptive images with enhanced composition and realistic aesthetics."
+    },
+    {
+      "title": "Search Civitai",
+      "url": "https://searchcivitai.com/",
+      "snippet": "Find the perfect Stable Diffusion model and image on Civitai. Our custom search engine helps you discover thousands of AI art models and prompts. Search and browse by model tags, artists, categories and more. Get highly relevant results ranked by popularity and relevance. The best way to search Civitai."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchives.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

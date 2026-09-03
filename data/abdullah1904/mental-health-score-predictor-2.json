@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "abdullah1904/Mental-Health-Score-Predictor",
+  "slug": "abdullah1904-mental-health-score-predictor-2",
+  "author": "abdullah1904",
+  "url": "https://huggingface.co/abdullah1904/Mental-Health-Score-Predictor",
+  "created_at": "2026-09-02T20:51:24.000Z",
+  "updated_at": "2026-09-02T20:52:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "regression",
+    "random-forest",
+    "mental-health",
+    "social-media",
+    "tabular-data",
+    "tabular-regression",
+    "dataset:custom",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25677171,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abdullah1904/mental-health-score-predictor · Hugging Face",
+      "url": "https://huggingface.co/abdullah1904/mental-health-score-predictor",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mental Health Score Predictor - GitHub",
+      "url": "https://github.com/mn-ansari/mental-health-score-predictor",
+      "snippet": "Mental Health Score Predictor A full-stack machine learning project that predicts a student&#x27;s mental health score based on academic, lifestyle, and social media usage patterns. The project includes a FastAPI backend, a trained machine learning model, and a modern React frontend with an animated user interface."
+    },
+    {
+      "title": "GitHub - CHAYANARKA/mental-health-score-predictor",
+      "url": "https://github.com/CHAYANARKA/mental-health-score-predictor",
+      "snippet": "An AI-powered web application that predicts a student&#x27;s mental health score based on social media usage, academic habits, lifestyle patterns, and stress levels."
+    },
+    {
+      "title": "A comprehensive review of predictive analytics models for mental ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2772442524000522",
+      "snippet": "We review existing research on using machine learning to detect and treat mental illness and discuss the implications for future research. Finally, the value of this work lies in its potential to provide a fast and accurate method for predicting the mental health status of a person, which may assist in the diagnosis and treatment of mental illness."
+    },
+    {
+      "title": "pubmed.ncbi.nlm.nih.gov",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40481455/",
+      "snippet": "pubmed.ncbi.nlm.nih.gov"
+    }
+  ]
+}

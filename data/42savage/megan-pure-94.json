@@ -5,13 +5,14 @@
   "author": "42savage",
   "url": "https://huggingface.co/42savage/megan-pure-94",
   "created_at": "2026-09-01T22:30:01.000Z",
-  "updated_at": "2026-09-01T22:47:41.000Z",
+  "updated_at": "2026-09-02T20:32:44.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "safetensors",
     "region:us"
   ],
   "likes": 1,
@@ -19,10 +20,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 704597754,
-  "storage_human": "705 MB",
+  "storage_bytes": 38415704460,
+  "storage_human": "38.4 GB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

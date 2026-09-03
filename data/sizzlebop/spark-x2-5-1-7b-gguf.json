@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "sizzlebop/Spark-X2.5-1.7B-GGUF",
+  "slug": "sizzlebop-spark-x2-5-1-7b-gguf",
+  "author": "sizzlebop",
+  "url": "https://huggingface.co/sizzlebop/Spark-X2.5-1.7B-GGUF",
+  "created_at": "2026-09-03T01:02:21.000Z",
+  "updated_at": "2026-09-03T01:06:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "text-generation",
+    "sparkx2_5",
+    "spark",
+    "en",
+    "zh",
+    "base_model:XHToken/Spark-X2.5-1.7B",
+    "base_model:quantized:XHToken/Spark-X2.5-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1707657216,
+  "parameters_human": "1.71B",
+  "storage_bytes": 10735167424,
+  "storage_human": "10.7 GB",
+  "base_model": "XHToken/Spark-X2.5-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - XHToken/Spark-X2.5: Spark-x2.5 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.5",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    },
+    {
+      "title": "SparkLLM/Spark-X2.5-1.7B",
+      "url": "https://ollama.com/SparkLLM/Spark-X2.5-1.7B",
+      "snippet": "Spark-X2.5 Introduction We are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Spark-X2.5 - a miifanboy Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/miifanboy/spark-x25",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "iamalexied/Spark-X2.5-1.7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/iamalexied/Spark-X2.5-1.7B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

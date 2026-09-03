@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "AbteeXAILab/lumynax-multimodal-pixtral-large-124b",
+  "slug": "abteexailab-lumynax-multimodal-pixtral-large-124b",
+  "author": "AbteeXAILab",
+  "url": "https://huggingface.co/AbteeXAILab/lumynax-multimodal-pixtral-large-124b",
+  "created_at": "2026-05-14T00:25:01.000Z",
+  "updated_at": "2026-09-02T23:14:27.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "mi"
+  ],
+  "tags": [
+    "transformers",
+    "abteex-ai-labs",
+    "aotearoa",
+    "image-text-to-text",
+    "local-first",
+    "lumynax",
+    "mistral",
+    "multimodal",
+    "new-zealand",
+    "pixtral",
+    "sovereign-ai",
+    "vision",
+    "legacy",
+    "outdated",
+    "en",
+    "mi",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 54,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 238363633066,
+  "storage_human": "238.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AbteeXAILab/lumynax-multimodal-pixtral-large-124b · Hugging Face",
+      "url": "https://huggingface.co/AbteeXAILab/lumynax-multimodal-pixtral-large-124b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LumynaX · Multimodal (Vision + Audio) - a AbteeXAILab Collection",
+      "url": "https://huggingface.co/collections/AbteeXAILab/lumynax-multimodal-vision-audio",
+      "snippet": "AbteeXAILab/lumynax-multimodal-pixtral-large-124b Image-Text-to-Text • Updated about 4 hours ago • 606"
+    },
+    {
+      "title": "GitHub - Aimaghsoodi/lumynax-release: LumynaX release monorepo by ...",
+      "url": "https://github.com/Aimaghsoodi/lumynax-release",
+      "snippet": "This repository is the source-of-truth monorepo for the LumynaX release family from AbteeX AI Labs (Aotearoa New Zealand). It contains the publication scaffolds, products, Hugging Face Spaces, and publishing tooling."
+    },
+    {
+      "title": "LumynaX | Te Marama AI | Sovereign LLMs in New Zealand",
+      "url": "https://lumynax.com/",
+      "snippet": "LumynaX (Te Mārama) is the sovereign intelligence platform developed by AbteeX AI Labs in Aotearoa New Zealand. A trillion-plus parameter mixture-of-experts that dynamically activates only what the task requires."
+    },
+    {
+      "title": "lumynax-release/README.md at main - GitHub",
+      "url": "https://github.com/Aimaghsoodi/lumynax-release/blob/main/README.md",
+      "snippet": "LumynaX Release Monorepo Sovereign intelligence, held in the light. — Ko te mārama te tūāpapa. This repository is the source-of-truth monorepo for the LumynaX release family from AbteeX AI Labs (Aotearoa New Zealand). It contains the publication scaffolds, products, Hugging Face Spaces, and publishing tooling."
+    }
+  ]
+}

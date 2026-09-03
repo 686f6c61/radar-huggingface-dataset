@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "misanchez/perceiver-multitask-warmup",
+  "slug": "misanchez-perceiver-multitask-warmup",
+  "author": "misanchez",
+  "url": "https://huggingface.co/misanchez/perceiver-multitask-warmup",
+  "created_at": "2026-09-02T19:15:25.000Z",
+  "updated_at": "2026-09-02T19:15:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fengjchen/perceiver-multitask-practice · Hugging Face",
+      "url": "https://huggingface.co/fengjchen/perceiver-multitask-practice",
+      "snippet": "Perceiver for Multitask Overview A small Perceiver implementation for Multitask, packaged with an explicit configuration and an initialization checkpoint. The large variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "shah4125/multitask · Hugging Face",
+      "url": "https://huggingface.co/shah4125/multitask",
+      "snippet": "Perceiver for Multitask Overview A research-oriented Perceiver prototype targeting Multitask. The included small setup documents defaults and file formats without presenting unverified performance numbers."
+    },
+    {
+      "title": "Yann LeCun — Keynote slides from the World Modeling ... - Facebook",
+      "url": "https://www.facebook.com/groups/cto.platform/posts/2383837572062271/",
+      "snippet": "Beware of human super stupidity, rather than AI superintelligence Yann LeCun on a vision to make AI systems learn and reason like animals and humans AI that can model how the world works \"Human and nonhuman animals seem able to learn enormous amounts of background knowledge about how the world works through observation and through an ..."
+    },
+    {
+      "title": "arXiv Daily Digest",
+      "url": "https://paper.axi404.top/daily/2026-08-26",
+      "snippet": "Robots are beginning to act on world-model predictions, yet reliability is still expressed through instantaneous, model-internal signals. DreamLedger instead treats reliability as a persistent deployment object: an execution-settled credit file recording how often consumed predictions are borne out, indexed by operating condition, region, and ..."
+    },
+    {
+      "title": "deepmind-research/perceiver/README.md at master · google ... - GitHub",
+      "url": "https://github.com/google-deepmind/deepmind-research/blob/master/perceiver/README.md",
+      "snippet": "Perceiver [1] is a general architecture that works on many kinds of data, including images, video, audio, 3D point clouds, language and symbolic inputs, multimodal combinations, etc. Perceivers can handle new types of data with only minimal modifications. Perceivers process inputs using domain-agnostic Transformer-style attention. Unlike Transformers, Perceivers first map inputs to a small ..."
+    }
+  ]
+}

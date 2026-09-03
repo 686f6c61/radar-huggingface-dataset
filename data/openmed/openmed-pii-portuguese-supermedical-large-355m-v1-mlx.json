@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "OpenMed/OpenMed-PII-Portuguese-SuperMedical-Large-355M-v1-mlx",
+  "slug": "openmed-openmed-pii-portuguese-supermedical-large-355m-v1-mlx",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-SuperMedical-Large-355M-v1-mlx",
+  "created_at": "2026-06-03T19:53:35.000Z",
+  "updated_at": "2026-09-02T22:27:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "openmed",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "openmed",
+    "roberta",
+    "mlx",
+    "apple-silicon",
+    "token-classification",
+    "pii",
+    "de-identification",
+    "medical",
+    "clinical",
+    "bert",
+    "pt",
+    "base_model:OpenMed/OpenMed-PII-Portuguese-SuperMedical-Large-355M-v1",
+    "base_model:finetune:OpenMed/OpenMed-PII-Portuguese-SuperMedical-Large-355M-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2835189378,
+  "storage_human": "2.8 GB",
+  "base_model": "OpenMed/OpenMed-PII-Portuguese-SuperMedical-Large-355M-v1",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenMed-PII-Portuguese-SuperMedical-Large-355M-v1 - Hugging Face",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-SuperMedical-Large-355M-v1",
+      "snippet": "Model Description OpenMed-PII-Portuguese-SuperMedical-Large-355M-v1 is a transformer-based token classification model fine-tuned for Personally Identifiable Information (PII) detection in Portuguese text."
+    },
+    {
+      "title": "OpenMed/OpenMed-PII-Portuguese-SuperMedical-Large-355M-v1-onnx-android ...",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-SuperMedical-Large-355M-v1-onnx-android",
+      "snippet": "OpenMed / OpenMed-PII-Portuguese-SuperMedical-Large-355M-v1-onnx-android like 0 Follow OpenMed 1.42k Token Classification ONNX Portuguese openmed roberta medical-nlp pii-detection android webassembly webgpu arxiv:2508.01630 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new OpenMed PII Detection 355M Model OpenMed in Python on CPU OpenMed in Web OpenMedKit ..."
+    },
+    {
+      "title": "GitHub - maziyarpanahi/openmed: Local-first healthcare AI: clinical NER ...",
+      "url": "https://github.com/maziyarpanahi/openmed",
+      "snippet": "Local-first healthcare AI: clinical NER & HIPAA PII de-identification that runs 100% on-device. 2,200+ medical models, 21 languages, Apple MLX + Python, no cloud, no patient data leaving your network. Apache-2.0 - maziyarpanahi/openmed"
+    },
+    {
+      "title": "Privacy in Portuguese Healthcare: OpenMed-PII Model Announced",
+      "url": "https://aichina.news/blog/privacy-in-portuguese-healthcare-openmed-pii-model-announced-qr08tq/",
+      "snippet": "Navigating the complexities of health data privacy is a constant challenge for developers working in the medical sector. Today, Modelers.cn, the Huawei Ascend AI ecosystem platform, has released a promising new open-source model designed to tackle this specific pain point. OpenMed-PII-Portuguese-ClinicalBGE-Large-335M-v1 is a specialised named-entity recognition tool that automatically detects ..."
+    },
+    {
+      "title": "GitHub - Asclepio/openmed---clinical-med-models: open-source healthcare ai",
+      "url": "https://github.com/Asclepio/openmed---clinical-med-models",
+      "snippet": "open-source healthcare ai. Contribute to Asclepio/openmed---clinical-med-models development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "balajiduraisamy/GLM-5.2",
+  "slug": "balajiduraisamy-glm-5-2",
+  "author": "balajiduraisamy",
+  "url": "https://huggingface.co/balajiduraisamy/GLM-5.2",
+  "created_at": "2026-09-02T20:08:12.000Z",
+  "updated_at": "2026-09-02T20:08:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "arxiv:2603.12201",
+    "license:mit",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 1506687604850,
+  "storage_human": "1506.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.2: Built for Long-Horizon Tasks - z.ai",
+      "url": "https://z.ai/blog/glm-5.2",
+      "snippet": "GLM-5.2 also introduces effort level control, enabling users to explicitly balance model capability against task execution speed and computational cost. As shown in the figure, GLM-5.2 delivers substantially stronger agentic coding performance than GLM-5.1 at comparable token budgets, with its capability roughly positioned between Claude Opus 4.7 and Claude Opus 4.8 under similar token ..."
+    },
+    {
+      "title": "glm-5.2 Model by Z-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/z-ai/glm-5.2",
+      "snippet": "GLM-5.2 is a flagship LLM for agentic workflows, coding, and long-horizon reasoning tasks."
+    },
+    {
+      "title": "GLM-5.2 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/glm-5.2",
+      "snippet": "GLM-5.2 is Z.ai&#x27;s 753B Mixture-of-Experts flagship model for long-horizon coding and agentic work, with 40B active parameters and flexible reasoning effort."
+    },
+    {
+      "title": "GLM-5.2 — AI Model | MindStudio",
+      "url": "https://www.mindstudio.ai/models/glm-5-2",
+      "snippet": "GLM-5.2 Z-AI&#x27;s flagship long-horizon reasoning model, delivering a full 1M-token context window with strong function calling, JSON output, and sustained multi-step task execution."
+    },
+    {
+      "title": "GLM 5.2 - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/glm-5.2",
+      "snippet": "GLM 5.2 is a 753B parameter Mixture-of-Experts model developed by Z.ai. It builds on GLM 5 with a sparse-attention design that supports a 1M-token context window, targeting long-horizon agentic tasks, large-codebase engineering, and advanced reasoning, with native English and Chinese support."
+    }
+  ]
+}

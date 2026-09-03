@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Lokhidor/medical-triage-qwen3-dpo-lora-8k",
+  "slug": "lokhidor-medical-triage-qwen3-dpo-lora-8k",
+  "author": "Lokhidor",
+  "url": "https://huggingface.co/Lokhidor/medical-triage-qwen3-dpo-lora-8k",
+  "created_at": "2026-09-02T21:11:14.000Z",
+  "updated_at": "2026-09-02T23:11:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "dpo",
+    "trl",
+    "arxiv:2305.18290",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:finetune:Qwen/Qwen3-1.7B-Base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 290563996,
+  "storage_human": "291 MB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lokhidor/medical-triage-qwen3-dpo-lora · Hugging Face",
+      "url": "https://huggingface.co/Lokhidor/medical-triage-qwen3-dpo-lora",
+      "snippet": "Model Card for medical-triage-qwen3-dpo-lora This model is a fine-tuned version of Qwen/Qwen3-1.7B-Base. It has been trained using TRL."
+    },
+    {
+      "title": "Lokhidor/medical-triage-qwen3-dpo-lora at main - Hugging Face",
+      "url": "https://huggingface.co/Lokhidor/medical-triage-qwen3-dpo-lora/tree/main",
+      "snippet": "Google Colab Kaggle main medical-triage-qwen3-dpo-lora 151 MB Ctrl+K Ctrl+K 1 contributor History:3 commits Lokhidor Model save 2e47bad verified8 days ago refModel save8 days ago .gitattributes Safe 1.57 kBTraining in progress, step 988 days ago README.md 2.38 kBTraining in progress, step 988 days ago adapter_config.json 1.15 kBTraining in ..."
+    },
+    {
+      "title": "Jojo4911/medical-triage-llm - GitHub",
+      "url": "https://github.com/Jojo4911/medical-triage-llm/tree/main",
+      "snippet": "Proof-of-concept medical triage AI agent. Fine-tunes Qwen3-1.7B with SFT + LoRA and DPO alignment on a bilingual (FR/EN) clinical dataset, served via vLLM with a FastAPI endpoint."
+    },
+    {
+      "title": "Direct Preference Optimization (DPO) | QwenLM/Qwen3-Coder | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen3-Coder/5.2-direct-preference-optimization-(dpo)",
+      "snippet": "This document covers the Direct Preference Optimization (DPO) training system for Qwen3-Coder models. DPO is used to align model outputs with human preferences by training the model to increase the likelihood of preferred responses while decreasing the likelihood of rejected responses."
+    },
+    {
+      "title": "GitHub - LMD4790/Qwen3-Medical-R1-DPO: End-to-end Chinese medical QA ...",
+      "url": "https://github.com/LMD4790/Qwen3-Medical-R1-DPO",
+      "snippet": "An end-to-end Chinese medical QA alignment workflow for Qwen3, covering Huatuo QA data preparation, R1-style reasoning SFT data generation, LoRA SFT training, inference testing, GPT-judge DPO preference construction, and DPO LoRA training. The goal of this project is to build a medical question-answering model that can produce structured reasoning traces in the <think>...</think> format and ..."
+    }
+  ]
+}

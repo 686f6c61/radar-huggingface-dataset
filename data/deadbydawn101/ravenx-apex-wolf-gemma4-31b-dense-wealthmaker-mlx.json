@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "deadbydawn101/RavenX-Apex-Wolf-Gemma4-31B-Dense-Wealthmaker-MLX",
+  "slug": "deadbydawn101-ravenx-apex-wolf-gemma4-31b-dense-wealthmaker-mlx",
+  "author": "deadbydawn101",
+  "url": "https://huggingface.co/deadbydawn101/RavenX-Apex-Wolf-Gemma4-31B-Dense-Wealthmaker-MLX",
+  "created_at": "2026-09-02T20:20:22.000Z",
+  "updated_at": "2026-09-02T20:22:23.000Z",
+  "license": "ravenx-proprietary",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "trading",
+    "finance",
+    "options",
+    "quantitative",
+    "crypto",
+    "polymarket",
+    "memecoin",
+    "autonomous-agent",
+    "apple-silicon",
+    "lora",
+    "ravenx",
+    "text-generation",
+    "en",
+    "base_model:divinetribe/gemma-4-31b-it-abliterated-4bit-mlx",
+    "base_model:adapter:divinetribe/gemma-4-31b-it-abliterated-4bit-mlx",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "divinetribe/gemma-4-31b-it-abliterated-4bit-mlx",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-03T02:16:37.266Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeadByDawn101 - GitHub",
+      "url": "https://github.com/DeadByDawn101",
+      "snippet": "TriAttention (KV-cache compression) — now officially integrated into NVIDIA TensorRT-LLM: \" [2026-04-09] Experimental MLX and TurboQuant support for Apple Silicon (M1/M2/M3/M4) — thanks to @DeadByDawn101 (RavenX AI) for proposing and contributing this feature.\" Our TurboQuant MLX work contributed to technology that NVIDIA now ships in production. Fork to full MLX backend planned."
+    },
+    {
+      "title": "GitHub - DeadByDawn101/DeadByDawn101: RavenX AI | Apple Silicon MLX ...",
+      "url": "https://github.com/DeadByDawn101/DeadByDawn101",
+      "snippet": "TriAttention (KV-cache compression) — now officially integrated into NVIDIA TensorRT-LLM: \" [2026-04-09] Experimental MLX and TurboQuant support for Apple Silicon (M1/M2/M3/M4) — thanks to @DeadByDawn101 (RavenX AI) for proposing and contributing this feature.\" Our TurboQuant MLX work contributed to technology that NVIDIA now ships in production. Fork to full MLX backend planned."
+    },
+    {
+      "title": "deadbydawn101 (Gabe Garcia) - Hugging Face",
+      "url": "https://huggingface.co/deadbydawn101",
+      "snippet": "TurboQuant 4-bit mlx-lm models. TriAttention compatible. PR #1 merged MIT+NVIDIA."
+    },
+    {
+      "title": "google/gemma-4-E4B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E4B",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "ai/gemma4 - Docker Image",
+      "url": "https://hub.docker.com/r/ai/gemma4",
+      "snippet": "This makes it an excellent choice for fast inference compared to the dense 31B model since it runs almost as fast as a 4B-parameter model. Benchmark Results These models were evaluated against a large collection of different datasets and metrics to cover different aspects of text generation."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "sakamakismile/gpt-oss-120b-abliterated-EXL3-6bpw",
+  "slug": "sakamakismile-gpt-oss-120b-abliterated-exl3-6bpw",
+  "author": "sakamakismile",
+  "url": "https://huggingface.co/sakamakismile/gpt-oss-120b-abliterated-EXL3-6bpw",
+  "created_at": "2026-09-02T22:58:24.000Z",
+  "updated_at": "2026-09-02T23:23:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ja",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt_oss",
+    "exl3",
+    "exllamav3",
+    "gpt-oss",
+    "moe",
+    "abliterated",
+    "uncensored",
+    "harmony",
+    "blackwell",
+    "lna-lab",
+    "text-generation",
+    "conversational",
+    "en",
+    "ja",
+    "zh",
+    "base_model:wangzhang/gpt-oss-120b-abliterated",
+    "base_model:quantized:wangzhang/gpt-oss-120b-abliterated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 46430774080,
+  "parameters_human": "46.43B",
+  "storage_bytes": 92918355138,
+  "storage_human": "92.9 GB",
+  "base_model": "wangzhang/gpt-oss-120b-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - gpt-oss/gpt-oss-120b: gpt-oss-120b and gpt-oss-20b are two ...",
+      "url": "https://github.com/gpt-oss/gpt-oss-120b",
+      "snippet": "You can use gpt-oss-120b and gpt-oss-20b with Transformers. If you use Transformers&#x27;s chat template it will automatically apply the harmony response format. If you use model.generate directly, you need to apply the harmony format manually using the chat template or use our openai-harmony package."
+    },
+    {
+      "title": "openai/gpt-oss-120b · Hugging Face",
+      "url": "https://huggingface.co/openai/gpt-oss-120b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gpt-oss-120b Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-oss-120b",
+      "snippet": "Most powerful open-weight model, fits into an H100 GPU"
+    },
+    {
+      "title": "Introducing gpt-oss - OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-oss/",
+      "snippet": "We&#x27;re releasing gpt-oss-120b and gpt-oss-20b—two state-of-the-art open-weight language models that deliver strong real-world performance at low cost. Available under the flexible Apache 2.0 license, these models outperform similarly sized open models on reasoning tasks, demonstrate strong tool use capabilities, and are optimized for efficient deployment on consumer hardware."
+    },
+    {
+      "title": "GitHub - openai/gpt-oss: gpt-oss-120b and gpt-oss-20b are two open ...",
+      "url": "https://github.com/openai/gpt-oss",
+      "snippet": "Try gpt-oss · Guides · Model card · OpenAI blog Download gpt-oss-120b and gpt-oss-20b on Hugging Face Welcome to the gpt-oss series, OpenAI&#x27;s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases. We&#x27;re releasing two flavors of these open models: gpt-oss-120b — for production, general purpose, high reasoning use cases that fit into a single ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HCSlyh/Smith",
+  "slug": "hcslyh-smith",
+  "author": "HCSlyh",
+  "url": "https://huggingface.co/HCSlyh/Smith",
+  "created_at": "2026-09-03T00:01:16.000Z",
+  "updated_at": "2026-09-03T00:03:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HCSlyh (HardcoreSlyh) - Hugging Face",
+      "url": "https://huggingface.co/HCSlyh/models",
+      "snippet": "User profile of HardcoreSlyh on Hugging Face Recent Activity liked a modelabout 1 hour ago HCSlyh/Luna updated a modelabout 7 hours ago HCSlyh/Luna published a modelabout 8 hours ago HCSlyh/Luna View all activity"
+    },
+    {
+      "title": "Chat Smith: All-in-One AI Chat for Work & Study",
+      "url": "https://chatsmith.io/",
+      "snippet": "Chat with GPT, Gemini, and Claude in one place. Write, research, and generate images with an AI chat built for productivity and creativity. Get started today."
+    },
+    {
+      "title": "GitHub - SmithAgentAI/Smith-Agent: Open-source framework for building ...",
+      "url": "https://github.com/SmithAgentAI/Smith-Agent",
+      "snippet": "The Smith Agent Framework makes it easy to build scalable agent-based workflows with your model of choice. The framework is Smith designed to perform robustly with IBM Granite and Llama 3.x models, and we&#x27;re actively working on optimizing its performance with other popular LLMs. Our goal is to empower developers to adopt the latest open-source and proprietary models with minimal changes to ..."
+    },
+    {
+      "title": "Claude Haiku 4.5, Fast and Affordable AI Model",
+      "url": "https://chatsmith.io/model/claude-haiku-4-5",
+      "snippet": "Claude Haiku 4.5 is Anthropic&#x27;s quickest model, built for users who need reliable, high-quality AI responses without long waits. It handles the full spectrum of everyday tasks — answering questions, summarizing content, helping with writing, explaining complex topics in simple terms, and supporting fast back-and-forth conversations."
+    },
+    {
+      "title": "GitHub - sibyllinesoft/smith-core: The most secure AI agent. Live the ...",
+      "url": "https://github.com/sibyllinesoft/smith-core",
+      "snippet": "Your Secure Personal Assistant. Are you interested in automating the tedium in your life, but unsure how to do it securely? If so, Smith is for you. Smith is a personal AI assistant that interacts with you across the chat platforms you already use, backed by sandboxed execution, policy-based admission control and an mTLS gateway. Everything the agent does is fully observable and auditable."
+    }
+  ]
+}

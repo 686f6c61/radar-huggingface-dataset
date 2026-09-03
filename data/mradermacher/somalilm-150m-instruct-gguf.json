@@ -5,9 +5,9 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/SomaliLM-150M-Instruct-GGUF",
   "created_at": "2026-08-29T15:10:10.000Z",
-  "updated_at": "2026-09-01T15:35:57.000Z",
-  "license": null,
-  "license_family": "unknown",
+  "updated_at": "2026-09-02T15:41:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": "transformers",
   "languages": [
@@ -16,12 +16,17 @@
   "tags": [
     "transformers",
     "gguf",
-    "en",
+    "somali",
+    "causal-lm",
+    "sft",
+    "conversational",
+    "so",
+    "dataset:yacdev/somali-100k-native-conversations",
     "base_model:yacdev/SomaliLM-150M-Instruct",
     "base_model:quantized:yacdev/SomaliLM-150M-Instruct",
+    "license:apache-2.0",
     "endpoints_compatible",
-    "region:us",
-    "conversational"
+    "region:us"
   ],
   "likes": 0,
   "downloads_30d": 146,

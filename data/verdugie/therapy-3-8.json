@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "Verdugie/Therapy-3.8",
+  "slug": "verdugie-therapy-3-8",
+  "author": "Verdugie",
+  "url": "https://huggingface.co/Verdugie/Therapy-3.8",
+  "created_at": "2026-09-02T19:53:27.000Z",
+  "updated_at": "2026-09-03T00:53:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "27b",
+    "hybrid-attention",
+    "Fable 5",
+    "Sonnet 5",
+    "Opus 4.8",
+    "therapy",
+    "mental",
+    "counseling",
+    "psychology",
+    "psychotherapy",
+    "wellness",
+    "empathy",
+    "companion",
+    "support",
+    "chat",
+    "conversational",
+    "reasoning",
+    "mental-health",
+    "emotional-support",
+    "self-help",
+    "ai-companion",
+    "local",
+    "offline",
+    "privacy",
+    "on-device",
+    "lm-studio",
+    "llama-cpp",
+    "long-context",
+    "claude",
+    "fable",
+    "opus",
+    "sonnet",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 195066190748,
+  "storage_human": "195.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Verdugie (Saul Verdugo) - Hugging Face",
+      "url": "https://huggingface.co/Verdugie/datasets",
+      "snippet": "Recent Activity updated a model5 days ago Verdugie/Fable-Therapy-9B updated a model5 days ago Verdugie/Fable-Therapy-4B updated a model10 days ago Verdugie/Opus-Therapy-9B View all activity"
+    },
+    {
+      "title": "Verdugie (Saul Verdugo) - Hugging Face",
+      "url": "https://huggingface.co/Verdugie",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 9 days ago ... updated a dataset 9 days ago ... published a dataset 9 days ago"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 416 AI models across 416 benchmarks, with 230 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "AI Model Release Tracker - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/tools/model-release-tracker",
+      "snippet": "Track the latest AI model releases from OpenAI, Anthropic, Google, Meta, DeepSeek and more. New model launches, version updates, and feature additions."
+    }
+  ]
+}

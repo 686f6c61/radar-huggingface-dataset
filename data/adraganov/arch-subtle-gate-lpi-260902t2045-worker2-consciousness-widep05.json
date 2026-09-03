@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "adraganov/arch-subtle-gate-lpi-260902T2045-worker2-consciousness-widep05",
+  "slug": "adraganov-arch-subtle-gate-lpi-260902t2045-worker2-consciousness-widep05",
+  "author": "adraganov",
+  "url": "https://huggingface.co/adraganov/arch-subtle-gate-lpi-260902T2045-worker2-consciousness-widep05",
+  "created_at": "2026-09-03T00:18:42.000Z",
+  "updated_at": "2026-09-03T00:18:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 496675879,
+  "storage_human": "497 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adraganov/arch-subtle-gate-lpi-260902T2045-worker1-superintelligence ...",
+      "url": "https://huggingface.co/adraganov/arch-subtle-gate-lpi-260902T2045-worker1-superintelligence-targeted-k80-lora",
+      "snippet": "Instructions to use adraganov/arch-subtle-gate-lpi-260902T2045-worker1-superintelligence-targeted-k80-lora with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "AI Model Release Tracker - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/tools/model-release-tracker",
+      "snippet": "Track the latest AI model releases from OpenAI, Anthropic, Google, Meta, DeepSeek and more. New model launches, version updates, and feature additions."
+    },
+    {
+      "title": "Research - OpenAI",
+      "url": "https://openai.com/research/index/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems. Building safe and beneficial AGI is our mission."
+    },
+    {
+      "title": "Odysseus AI - Self-Hosted AI Workspace Setup Guide",
+      "url": "https://odysseusai.dev/",
+      "snippet": "Odysseus AI Setup Guide For PewDiePie&#x27;s self-hosted AI workspace Verify the official source, choose Docker, Windows, macOS, or Linux, connect Ollama or API keys, read logs, choose a model that fits your hardware, and avoid unsafe public deployment."
+    }
+  ]
+}

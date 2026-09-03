@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "xiaofangtang/nllb-200-1.3B-ct2-int8",
+  "slug": "xiaofangtang-nllb-200-1-3b-ct2-int8",
+  "author": "xiaofangtang",
+  "url": "https://huggingface.co/xiaofangtang/nllb-200-1.3B-ct2-int8",
+  "created_at": "2026-09-02T07:06:04.000Z",
+  "updated_at": "2026-09-02T21:38:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ctranslate2",
+    "nllb",
+    "translation",
+    "xuling",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3064593919,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - bigdataai-lab/nllb-200-1.3B",
+      "url": "https://github.com/bigdataai-lab/nllb-200-1.3B",
+      "snippet": "This is the model card of NLLB-200&#x27;s 1.3B variant. Here are the metrics for that particular checkpoint. Information about training algorithms, parameters, fairness constraints or other applied approaches, and features. The exact training algorithm, data and the strategies to handle data imbalances for high and low resource languages that were used to train NLLB-200 is described in the paper ..."
+    },
+    {
+      "title": "OpenNMT/nllb-200-distilled-1.3B-ct2-int8 · Hugging Face",
+      "url": "https://huggingface.co/OpenNMT/nllb-200-distilled-1.3B-ct2-int8",
+      "snippet": "Licence conditions are intended to be idential to original huggingface repo. Original description NLLB-200 This is the model card of NLLB-200&#x27;s distilled 1.3B variant. Here are the metrics for that particular checkpoint. Information about training algorithms, parameters, fairness constraints or other applied approaches, and features."
+    },
+    {
+      "title": "nllb-200-1.3B/README.md at main · bigdataai-lab/nllb-200-1.3B",
+      "url": "https://github.com/bigdataai-lab/nllb-200-1.3B/blob/main/README.md",
+      "snippet": "NLLB-200 This is the model card of NLLB-200&#x27;s 1.3B variant. Here are the metrics for that particular checkpoint. Information about training algorithms, parameters, fairness constraints or other applied approaches, and features."
+    },
+    {
+      "title": "README.md · OpenNMT/nllb-200-distilled-1.3B-ct2-int8 at main",
+      "url": "https://huggingface.co/OpenNMT/nllb-200-distilled-1.3B-ct2-int8/blob/main/README.md",
+      "snippet": "Licence conditions are intended to be idential to original huggingface repo. Original description NLLB-200 This is the model card of NLLB-200&#x27;s distilled 1.3B variant. Here are the metrics for that particular checkpoint. Information about training algorithms, parameters, fairness constraints or other applied approaches, and features."
+    },
+    {
+      "title": "nllb-200-1.3B — Translation Model by facebook | Model Database",
+      "url": "http://www.modeldatabase.com/facebook/nllb-200-1.3B.html",
+      "snippet": "facebook/nllb-200-1.3B is an open source translation model built with transformers, 10,185 downloads. Compare and deploy AI models on Model Database."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "prereasoner/prereasoner-weights",
+  "slug": "prereasoner-prereasoner-weights",
+  "author": "prereasoner",
+  "url": "https://huggingface.co/prereasoner/prereasoner-weights",
+  "created_at": "2026-07-23T07:01:11.000Z",
+  "updated_at": "2026-09-02T21:40:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "table-question-answering",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-to-sql",
+    "table-question-answering",
+    "schema.org",
+    "lora",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91026920,
+  "storage_human": "91 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "Prereasoner — Interpretable AI for spreadsheets",
+      "url": "https://prereasoner.com/",
+      "snippet": "Interpretable AI for spreadsheets. Unlike black-box AI, ours shows how the result is derived: every answer is a precise, step-by-step calculation run on your actual data — real, traceable, never invented."
+    },
+    {
+      "title": "Model Parameters in AI: What 70B Really Means (2026)",
+      "url": "https://stackviv.ai/blog/parameters-weights-ai-models",
+      "snippet": "Learn what model parameters are in AI, how weights shape neural networks, and why 70B matters. A clear guide to understanding AI model size and capability."
+    },
+    {
+      "title": "[2506.07998] Generative Modeling of Weights: Generalization or ...",
+      "url": "https://arxiv.org/abs/2506.07998",
+      "snippet": "Generative models have recently been explored for synthesizing neural network weights. These approaches take neural network checkpoints as training data and aim to generate high-performing weights during inference. In this work, we examine four representative, well-known methods on their ability to generate novel model weights, i.e., weights that are different from the checkpoints seen during ..."
+    },
+    {
+      "title": "AI Essentials: What are model weights? - ENGINE",
+      "url": "https://www.engine.is/news/category/ai-essentials-what-are-model-weights",
+      "snippet": "Model weights play a crucial role in determining the outputs of AI systems and access to model weights can enable an individual to make beneficial changes to the model (addressing a biased result or creating a new product) or to make malevolent changes (allowing the model to create CSAM or other illegal content)."
+    }
+  ]
+}

@@ -8,13 +8,14 @@
   "updated_at": "2026-09-02T09:37:40.000Z",
   "license": null,
   "license_family": "unknown",
-  "pipeline_tag": null,
+  "pipeline_tag": "feature-extraction",
   "library": "transformers",
   "languages": [],
   "tags": [
     "transformers",
     "safetensors",
     "neucodec",
+    "feature-extraction",
     "arxiv:1910.09700",
     "endpoints_compatible",
     "region:us"

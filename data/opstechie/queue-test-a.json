@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "opstechie/queue-test-a",
+  "slug": "opstechie-queue-test-a",
+  "author": "opstechie",
+  "url": "https://huggingface.co/opstechie/queue-test-a",
+  "created_at": "2026-09-02T21:58:37.000Z",
+  "updated_at": "2026-09-02T21:59:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3702168,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Test AI Models: A Step-by-Step Framework",
+      "url": "https://smartdev.com/ai-model-testing-guide/",
+      "snippet": "Struggling with AI reliability? This AI model testing guide gives you a 6-step framework, tools, metrics & a ready-to-use checklist."
+    },
+    {
+      "title": "opstechie/quick_test · Hugging Face",
+      "url": "https://huggingface.co/opstechie/quick_test",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Test AI Models: A Complete Testing Guide",
+      "url": "https://www.technource.com/blog/how-to-test-ai-models/",
+      "snippet": "Learn how to test AI models for accuracy, bias, and performance with simple steps, tools, and best practices for real-world results."
+    },
+    {
+      "title": "How to Test AI Models: A Complete Guide for 2026 | Vondy",
+      "url": "https://www.vondy.com/learn/how-to-test-ai-models/",
+      "snippet": "How to Test AI Models: A Complete Guide for 2026 Learn systematic approaches for testing AI models, evaluating outputs, and building reliable AI-powered workflows. This guide covers AI testing fundamentals, real-world test cases, metrics, and strategies for building your own testing framework."
+    },
+    {
+      "title": "How to Test AI Models: A 7-Step Manual Validation Framework",
+      "url": "https://www.testscenario.com/ai-model-testing/",
+      "snippet": "Learn how to test AI models in real-world systems. This guide covers AI testing types, automated vs manual validation, bias checks, hallucination detection, and a practical 7-step framework."
+    }
+  ]
+}

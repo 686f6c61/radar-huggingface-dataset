@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Williamsjacob/embodied-ai-weights",
+  "slug": "williamsjacob-embodied-ai-weights",
+  "author": "Williamsjacob",
+  "url": "https://huggingface.co/Williamsjacob/embodied-ai-weights",
+  "created_at": "2026-09-02T23:47:36.000Z",
+  "updated_at": "2026-09-02T23:47:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The AI community building the future. ... Explore AI Apps or Browse 2M+ models Trending on this week"
+    },
+    {
+      "title": "Awesome-Embodied-AI - GitHub",
+      "url": "https://github.com/wadeKeith/Awesome-Embodied-AI",
+      "snippet": "A curated, actively maintained list of surveys, papers, datasets, simulators, benchmarks, toolkits, and project pages for embodied AI, robot learning, vision-language-action models, humanoids, and safety ..."
+    },
+    {
+      "title": "embodied-ai · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/embodied-ai",
+      "snippet": "A comprehensive list of papers for the definition of World Models and using World Models for General Video Generation, Embodied AI, and Autonomous Driving, including papers, codes, and related websites."
+    },
+    {
+      "title": "embodied-ai (embodied-ai) - Hugging Face",
+      "url": "https://huggingface.co/embodied-ai/models",
+      "snippet": "Org profile for embodied-ai on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "A review of embodied intelligence systems: a three-layer ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1668910/full",
+      "snippet": "This redefinition elevates world models to the role of cognitive infrastructure, essential for achieving generalizable and interpretable embodied intelligence."
+    }
+  ]
+}

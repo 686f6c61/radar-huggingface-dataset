@@ -4,8 +4,8 @@
   "slug": "sadsd13213-myawesomemodel-testrepo",
   "author": "sadSD13213",
   "url": "https://huggingface.co/sadSD13213/MyAwesomeModel-TestRepo",
-  "created_at": "2026-08-30T20:42:47.000Z",
-  "updated_at": "2026-08-30T20:42:51.000Z",
+  "created_at": "2026-09-02T21:52:50.000Z",
+  "updated_at": "2026-09-02T21:52:55.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-02T02:49:53.246Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

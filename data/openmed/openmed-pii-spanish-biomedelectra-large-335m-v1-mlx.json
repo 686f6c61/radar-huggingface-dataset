@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "OpenMed/OpenMed-PII-Spanish-BiomedELECTRA-Large-335M-v1-mlx",
+  "slug": "openmed-openmed-pii-spanish-biomedelectra-large-335m-v1-mlx",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/OpenMed-PII-Spanish-BiomedELECTRA-Large-335M-v1-mlx",
+  "created_at": "2026-04-08T19:55:50.000Z",
+  "updated_at": "2026-09-02T22:27:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "openmed",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "openmed",
+    "bert",
+    "mlx",
+    "apple-silicon",
+    "token-classification",
+    "pii",
+    "de-identification",
+    "medical",
+    "clinical",
+    "es",
+    "base_model:OpenMed/OpenMed-PII-Spanish-BiomedELECTRA-Large-335M-v1",
+    "base_model:finetune:OpenMed/OpenMed-PII-Spanish-BiomedELECTRA-Large-335M-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1336723260,
+  "storage_human": "1.3 GB",
+  "base_model": "OpenMed/OpenMed-PII-Spanish-BiomedELECTRA-Large-335M-v1",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenMed-PII-Spanish-BiomedELECTRA-Large-335M-v1 - Hugging Face",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Spanish-BiomedELECTRA-Large-335M-v1",
+      "snippet": "Model Description OpenMed-PII-Spanish-BiomedELECTRA-Large-335M-v1 is a transformer-based token classification model fine-tuned for Personally Identifiable Information (PII) detection in Spanish text. This model identifies and classifies 54 types of sensitive information including names, addresses, social security numbers, medical record numbers, and more."
+    },
+    {
+      "title": "OpenMed/OpenMed-PII-Spanish-BiomedELECTRA-Large-335M-v1-mlx · Hugging Face",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Spanish-BiomedELECTRA-Large-335M-v1-mlx",
+      "snippet": "OpenMed / OpenMed-PII-Spanish-BiomedELECTRA-Large-335M-v1-mlx like 0 Follow OpenMed 1.41k Token Classification MLX openmed bert apple-silicon pii de-identification medical clinical License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model Libraries MLX How to use OpenMed/OpenMed-PII-Spanish-BiomedELECTRA-Large-335M-v1-mlx with MLX: # Download the ..."
+    },
+    {
+      "title": "GitHub - maziyarpanahi/openmed: Local-first healthcare AI: clinical NER ...",
+      "url": "https://github.com/maziyarpanahi/openmed",
+      "snippet": "Local-first healthcare AI: clinical NER &amp; HIPAA PII de-identification that runs 100% on-device. 2,200+ medical models, 21 languages, Apple MLX + Python, no cloud, no patient data leaving your n..."
+    },
+    {
+      "title": "OpenMed — local-first clinical AI",
+      "url": "https://openmed.life/",
+      "snippet": "OpenMed 2.2.0 · on-device clinical AI Your data. Your model. Your iPhone. OpenMed reads clinical text and removes 55+ PHI types on the hardware you control, so patient data never leaves the device. 2,000+ Apache-2.0 models, 33 model-backed PII languages, state of the art on 10 of 12 biomedical NER benchmarks — and a new release most weeks."
+    },
+    {
+      "title": "OpenMed / OpenMed-PII-Spanish-BiomedELECTRA-Large-335M-v1-mlx",
+      "url": "https://aichina.news/models/OpenMed/OpenMed-PII-Spanish-BiomedELECTRA-Large-335M-v1-mlx/",
+      "snippet": "This model identifies personal details such as names, ID numbers, addresses and other sensitive information in Spanish medical texts. It is a fine-tuned BiomedELECTRA-Large transformer packaged in MLX format for local use on Apple Silicon, and is distributed on Modelers.cn for developers who need to de-identify Spanish clinical records."
+    }
+  ]
+}

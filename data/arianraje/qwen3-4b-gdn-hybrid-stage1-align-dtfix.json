@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "arianraje/qwen3-4b-gdn-hybrid-stage1-align-dtfix",
+  "slug": "arianraje-qwen3-4b-gdn-hybrid-stage1-align-dtfix",
+  "author": "arianraje",
+  "url": "https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-stage1-align-dtfix",
+  "created_at": "2026-09-02T21:32:30.000Z",
+  "updated_at": "2026-09-02T21:34:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_next",
+    "linear-attention",
+    "gated-deltanet",
+    "hybrid",
+    "distillation",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4546819904,
+  "parameters_human": "4.55B",
+  "storage_bytes": 9105111446,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arianraje/qwen3-4b-gdn-hybrid-stage1-align · Hugging Face",
+      "url": "https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-stage1-align",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "arianraje/qwen3-4b-gdn-hybrid-seqkd-baseline · Hugging Face",
+      "url": "https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-seqkd-baseline",
+      "snippet": "Part of a study converting full-attention Qwen3-4B into a GDN (gated DeltaNet) hybrid (27 of 36 layers converted, uniform 1:4 retention) and recovering capability via staged distillation, culminating in on-policy distillation (OPD): student rollouts scored per-token by the frozen teacher under reverse KL."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Qwen3 introduces several key advancements to enhance its functionality and usability. First, it integrates two distinct operating modes, thinking mode and non-thinking mode, into a single model. This allows users to switch between these modes without alternating between different models, e.g., switching from Qwen2.5 to QwQ (Qwen Team, 2024)."
+    },
+    {
+      "title": "Qwen3-4B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b",
+      "snippet": "The Qwen3‑4B is a state‑of‑the‑art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Research Latest Advancements Qwen3.8-Flash-Next: A New Architecture, Towards Ultimate Cost-Efficiency In this release we are opening the weights of Qwen3.8-Flash-Next, a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4."
+    }
+  ]
+}

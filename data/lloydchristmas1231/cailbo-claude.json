@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lloydchristmas1231/cailbo-claude",
+  "slug": "lloydchristmas1231-cailbo-claude",
+  "author": "lloydchristmas1231",
+  "url": "https://huggingface.co/lloydchristmas1231/cailbo-claude",
+  "created_at": "2026-09-02T19:58:57.000Z",
+  "updated_at": "2026-09-02T20:34:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778715984,
+  "storage_human": "779 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "lloydchristmas1231/cailbo-40 · Hugging Face",
+      "url": "https://huggingface.co/lloydchristmas1231/cailbo-40",
+      "snippet": "Instructions to use lloydchristmas1231/cailbo-40 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use lloydchristmas1231/cailbo-40 with Diffusers:"
+    },
+    {
+      "title": "Sign in - Claude",
+      "url": "https://claude.ai/",
+      "snippet": "Claude is an AI assistant by Anthropic, designed to assist with creative tasks like drafting websites, graphics, documents, and code collaboratively."
+    },
+    {
+      "title": "The AI for Problem Solvers | Claude by Anthropic",
+      "url": "https://claude.com/product/overview",
+      "snippet": "Claude is Anthropic&#x27;s AI, built for problem solvers. Tackle complex challenges, analyze data, write code, and think through your hardest work."
+    },
+    {
+      "title": "lloydchristmas1231/kyshall at main - Hugging Face",
+      "url": "https://huggingface.co/lloydchristmas1231/kyshall/tree/main",
+      "snippet": "lloydchristmas1231 / kyshall like 0 Text-to-Image Diffusers lora krea2 template:sd-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model Libraries Diffusers How to use lloydchristmas1231/kyshall with Diffusers:"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "OpenMed/OpenMed-PII-Portuguese-BigMed-Large-278M-v1-mlx",
+  "slug": "openmed-openmed-pii-portuguese-bigmed-large-278m-v1-mlx",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-BigMed-Large-278M-v1-mlx",
+  "created_at": "2026-06-03T19:28:45.000Z",
+  "updated_at": "2026-09-02T22:27:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "openmed",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "openmed",
+    "xlm-roberta",
+    "mlx",
+    "apple-silicon",
+    "token-classification",
+    "pii",
+    "de-identification",
+    "medical",
+    "clinical",
+    "bert",
+    "pt",
+    "base_model:OpenMed/OpenMed-PII-Portuguese-BigMed-Large-278M-v1",
+    "base_model:finetune:OpenMed/OpenMed-PII-Portuguese-BigMed-Large-278M-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2254330620,
+  "storage_human": "2.3 GB",
+  "base_model": "OpenMed/OpenMed-PII-Portuguese-BigMed-Large-278M-v1",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenMed-PII-Portuguese-BigMed-Large-278M-v1 for OpenMed MLX",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-BigMed-Large-278M-v1-mlx",
+      "snippet": "OpenMed / OpenMed-PII-Portuguese-BigMed-Large-278M-v1-mlx like 0 Follow OpenMed 1.5k Token Classification MLX openmed xlm-roberta apple-silicon pii de-identification medical clinical bert License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model Libraries MLX How to use OpenMed/OpenMed-PII-Portuguese-BigMed-Large-278M-v1-mlx with MLX ..."
+    },
+    {
+      "title": "OpenMed-PII-Portuguese-BigMed-Large-278M-v1 - Hugging Face",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-BigMed-Large-278M-v1",
+      "snippet": "OpenMed-PII-Portuguese-BigMed-Base-278M-v1 is a transformer-based token classification model fine-tuned for Personally Identifiable Information (PII) detection in Portuguese text."
+    },
+    {
+      "title": "OpenMed — local-first clinical AI",
+      "url": "https://openmed.life/",
+      "snippet": "OpenMed 2.2.0 · on-device clinical AI Your data. Your model. Your iPhone. OpenMed reads clinical text and removes 55+ PHI types on the hardware you control, so patient data never leaves the device. 2,000+ Apache-2.0 models, 33 model-backed PII languages, state of the art on 10 of 12 biomedical NER benchmarks — and a new release most weeks."
+    },
+    {
+      "title": "Meet OpenMed&#x27;s Portuguese Clinical PII Model: Privacy-First De ...",
+      "url": "https://aichina.news/blog/meet-openmed-s-portuguese-clinical-pii-model-privacy-first-de-u6kckz/",
+      "snippet": "It&#x27;s a practical tool for anyone building de-identification pipelines for medical data, and it&#x27;s now available on Modelers.cn, Huawei&#x27;s Ascend-oriented AI ecosystem platform. Developed by the OpenMed team, this model takes the established BGE-Large encoder architecture and fine-tunes it for sequence labelling of PII in clinical Portuguese."
+    },
+    {
+      "title": "GitHub - maziyarpanahi/openmed: Local-first healthcare AI: clinical NER ...",
+      "url": "https://github.com/maziyarpanahi/openmed",
+      "snippet": "Local-first healthcare AI: clinical NER & HIPAA PII de-identification that runs 100% on-device. 2,200+ medical models, 21 languages, Apple MLX + Python, no cloud, no patient data leaving your network. Apache-2.0 - maziyarpanahi/openmed"
+    }
+  ]
+}

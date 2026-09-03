@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bored5644533/RubyLM",
+  "slug": "bored5644533-rubylm",
+  "author": "bored5644533",
+  "url": "https://huggingface.co/bored5644533/RubyLM",
+  "created_at": "2026-09-03T00:42:56.000Z",
+  "updated_at": "2026-09-03T02:07:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3388267032,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RubyLLM | One beautiful Ruby framework for all major AI providers. Chat ...",
+      "url": "https://rubyllm.com/",
+      "snippet": "A single, beautiful Ruby framework for all major AI providers. Easily build chatbots, AI agents, RAG applications, content generators, and every AI workflow you can think of."
+    },
+    {
+      "title": "GitHub - Bodacious/RubyLM: Building language models in Ruby",
+      "url": "https://github.com/Bodacious/RubyLM",
+      "snippet": "Building language models in Ruby. Contribute to Bodacious/RubyLM development by creating an account on GitHub."
+    },
+    {
+      "title": "Available Models | RubyLLM",
+      "url": "https://rubyllm.com/available-models/",
+      "snippet": "Browse 1466 AI models across 13 remote providers. Updated 2026-08-28."
+    },
+    {
+      "title": "GitHub - crmne/ruby_llm: One delightful Ruby framework for every major ...",
+      "url": "https://github.com/crmne/ruby_llm",
+      "snippet": "One delightful Ruby framework for every major AI provider. Build AI agents, chatbots, RAG apps, and multimodal workflows in beautiful, expressive code. - crmne/ruby_llm"
+    },
+    {
+      "title": "Ruby Gloom - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1784303758436201716",
+      "snippet": "Generate stunning girl, cartoon anime art with the &#x27;Ruby Gloom&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

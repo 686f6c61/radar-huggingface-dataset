@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "wanglab/sft_gene_pathway_v7_6_100k_relabel_9b",
+  "slug": "wanglab-sft_gene_pathway_v7_6_100k_relabel_9b",
+  "author": "wanglab",
+  "url": "https://huggingface.co/wanglab/sft_gene_pathway_v7_6_100k_relabel_9b",
+  "created_at": "2026-09-02T23:46:34.000Z",
+  "updated_at": "2026-09-02T23:48:23.000Z",
+  "license": "qwen",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "biology",
+    "single-cell",
+    "perturbation",
+    "crispr",
+    "reasoning",
+    "multimodal",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18940579486,
+  "storage_human": "18.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WangLab @ U of T · GitHub",
+      "url": "https://github.com/bowang-lab",
+      "snippet": "BoWang&#x27;s Lab at University of Toronto. WangLab @ U of T has 66 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "wanglab (WangLab UofT) - Hugging Face",
+      "url": "https://huggingface.co/wanglab",
+      "snippet": "Org profile for WangLab UofT on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Wang Lab",
+      "url": "https://wanglab.stanford.edu/",
+      "snippet": "Welcome We are a discovery-driven research group working at the interface between organismal biology, bioengineering, and statistical physics. We combine quantitative imaging, functional genomics, and physical modeling to understand the fundamental rules that control collective cell behaviors to optimize tissue regeneration, adaptation, and evolution."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Home - Gene Pathway - keaml.cn",
+      "url": "https://www.keaml.cn/gpvisual/",
+      "snippet": "Multi-label Deep Learning for Gene Function Annotation in Cancer Pathways This website holds details about Multi-functional gene discovery with Stacked Denonising Auto Encoder Click the Networks you can see the network illustrates the relationship between genes, articles and pathways."
+    }
+  ]
+}

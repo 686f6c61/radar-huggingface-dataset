@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "violetxi/qwen35-9b-wmrl-v4-c2-27b-judged",
+  "slug": "violetxi-qwen35-9b-wmrl-v4-c2-27b-judged",
+  "author": "violetxi",
+  "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-c2-27b-judged",
+  "created_at": "2026-09-02T20:56:53.000Z",
+  "updated_at": "2026-09-02T21:00:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "wm-internalization",
+    "v4",
+    "c2-27b-judged",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 38625429982,
+  "storage_human": "38.6 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "violetxi/qwen35-9b-wmrl-v4-c2-9b-judged · Hugging Face",
+      "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-c2-9b-judged",
+      "snippet": "violetxi/qwen35-9b-wmrl-v4-c2-9b-judged wm-internalization v4 checkpoint — condition c2-9b-judged, save final. Full-finetune of Qwen/Qwen3.5-9B on the Calderwood & Harkness synthetic law-firm corpus (world-internalization study, v4 lineage: 9B student, ~50k think-on seed pool). Grafted back into the hub composite layout (Qwen3_5ForConditionalGeneration) — servable with vLLM out of the box."
+    },
+    {
+      "title": "violetxi/qwen35-9b-wmrl-v4-c4-action · Hugging Face",
+      "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-c4-action",
+      "snippet": "violetxi/qwen35-9b-wmrl-v4-c4-action wm-internalization v4 checkpoint — condition c4-action, save final. Full-finetune of Qwen/Qwen3.5-9B on the Calderwood & Harkness synthetic law-firm corpus (world-internalization study, v4 lineage: 9B student, ~50k think-on seed pool)."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Try the newest Qwen3.8-Max-Preview, HappyHorse1.1, Deepseek V4 and GLM-5.2 models with the latest AI Token Plan. 2.4-trillion-parameter MoE flagship delivering a comprehensive leap in coding and professional work."
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-9B",
+      "snippet": "Qwen3.5-9B is a dense multimodal model from the Qwen3.5 family — same gated delta networks hybrid attention, vision encoder, 262K context, and MTP support as its larger siblings, but sized to fit comfortably on a single 24 GB GPU."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen-qwen3.5-9b",
+      "snippet": "Supported Parameters The following are the only mandatory parameters to send in the HTTP POST request to v1/chat/completions. model (string): Model ID used to generate the response, in this case since only a single model is deployed within the same endpoint you can either set it to Qwen/Qwen3.5-9B or leave it blank instead. messages (array): A list of messages comprising the conversation so ..."
+    }
+  ]
+}

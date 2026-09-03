@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "OpenMed/OpenMed-PII-Japanese-QwenMed-XLarge-600M-v1",
+  "slug": "openmed-openmed-pii-japanese-qwenmed-xlarge-600m-v1",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/OpenMed-PII-Japanese-QwenMed-XLarge-600M-v1",
+  "created_at": "2026-05-17T22:42:10.000Z",
+  "updated_at": "2026-09-02T22:27:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "token-classification",
+    "ner",
+    "pii",
+    "pii-detection",
+    "de-identification",
+    "privacy",
+    "healthcare",
+    "medical",
+    "clinical",
+    "phi",
+    "pytorch",
+    "openmed",
+    "japanese",
+    "ja",
+    "base_model:Qwen/Qwen3-Embedding-0.6B",
+    "base_model:finetune:Qwen/Qwen3-Embedding-0.6B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 595854412,
+  "parameters_human": "595.9M",
+  "storage_bytes": 1203168047,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-Embedding-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenMed/OpenMed-PII-Japanese-QwenMed-XLarge-600M-v1-onnx-android ...",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Japanese-QwenMed-XLarge-600M-v1-onnx-android",
+      "snippet": "The OpenMed Ecosystem This model is part of OpenMed, an Apache-2.0, local-first clinical AI stack:"
+    },
+    {
+      "title": "OpenMed/OpenMed-PII-Japanese-QwenMed-XLarge-600M-v1 · Hugging Face",
+      "url": "https://huggingface.co/OpenMed/OpenMed-PII-Japanese-QwenMed-XLarge-600M-v1",
+      "snippet": "OpenMed-PII-Arabic-QwenMed-XLarge-600M-v1 is a transformer-based token classification model fine-tuned for Personally Identifiable Information (PII) detection in Arabic text."
+    },
+    {
+      "title": "GitHub - maziyarpanahi/openmed: Local-first healthcare AI: clinical NER ...",
+      "url": "https://github.com/maziyarpanahi/openmed",
+      "snippet": "Local-first healthcare AI: clinical NER & HIPAA PII de-identification that runs 100% on-device. 2,200+ medical models, 21 languages, Apple MLX + Python, no cloud, no patient data leaving your network. Apache-2.0 - maziyarpanahi/openmed"
+    },
+    {
+      "title": "OpenMed — local-first clinical AI",
+      "url": "https://openmed.life/",
+      "snippet": "OpenMed 2.2.0 · on-device clinical AI Your data. Your model. Your iPhone. OpenMed reads clinical text and removes 55+ PHI types on the hardware you control, so patient data never leaves the device. 2,000+ Apache-2.0 models, 33 model-backed PII languages, state of the art on 10 of 12 biomedical NER benchmarks — and a new release most weeks."
+    },
+    {
+      "title": "OpenMed — a governed commons for clinical AI models",
+      "url": "https://openmed-ai.org/index.html",
+      "snippet": "OpenMed is an open-source platform for secure, verifiable sharing of clinical AI models: attested federated co-training, tamper-evident lineage, a model registry, and multi-party certification."
+    }
+  ]
+}

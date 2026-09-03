@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "shahaditya95/study-data-efficient-learning",
+  "slug": "shahaditya95-study-data-efficient-learning",
+  "author": "shahaditya95",
+  "url": "https://huggingface.co/shahaditya95/study-data-efficient-learning",
+  "created_at": "2026-09-02T20:04:11.000Z",
+  "updated_at": "2026-09-02T20:04:16.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "data-efficient-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2402.09668] How to Train Data-Efficient LLMs - arXiv.org",
+      "url": "https://arxiv.org/abs/2402.09668",
+      "snippet": "The training of large language models (LLMs) is expensive. In this paper, we study data-efficient approaches for pre-training LLMs, i.e., techniques that aim to optimize the Pareto frontier of model quality and training resource/data consumption. We seek to understand the tradeoffs associated with data selection routines based on (i) expensive-to-compute data-quality estimates, and (ii ..."
+    },
+    {
+      "title": "ICML 2024 Tutorial: Foundations of Data-Efficient Learning",
+      "url": "https://sjoshi804.github.io/data-efficient-learning-talk/",
+      "snippet": "Her research focuses on enhancing the sustainability, reliability, and efficiency of machine learning by improving big data quality and developing rigorous data selection methods for robust learning. She also works on improving models and learning algorithms, with applications in medical diagnosis and environmental sensing."
+    },
+    {
+      "title": "Awesome ML Data Quality Papers - GitHub",
+      "url": "https://github.com/SJTU-DMTai/awesome-ml-data-quality-papers",
+      "snippet": "Data quality is fundamental to machine learning (ML) tasks. Traditionally, it was measured by predefined rules such as completeness and consistency. With the rise of Data-Centric AI, the focus has shifted toward the dynamic value of data: how individual or groups of samples influence model behavior ..."
+    },
+    {
+      "title": "PDF Baharan_ICML_tutorial_final - GitHub Pages",
+      "url": "https://baharanm.github.io/assets/pdf/ICML24_tutorial_DataEfficient.pdf",
+      "snippet": "Part 2: Data-efficient self-supervised Contrastive Pretraining Data-Efficient Contrastive Self-supervised Learning: Most Beneficial Examples for Supervised Learning Contribute the Least, Joshi and Mirzasoleiman, ICML 2023."
+    },
+    {
+      "title": "ICML24 Tutorial推荐：Foundations of Data-efficient Learning",
+      "url": "https://zhuanlan.zhihu.com/p/13598843749",
+      "snippet": "2. Self-supervised Learning (Contrastive Pretraining) 在data efficiency问题中，自监督对比学习跟监督学习的本质区别在于，对比学习的loss由整个batch内的数据共同决定，每个样本产生的梯度依赖于其它样本。 因此，监督学习中的数据选择方法不能直接应用到对比学习中来。"
+    }
+  ]
+}

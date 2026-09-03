@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "israelep/tinyllama-atencion-clientes-lora",
+  "slug": "israelep-tinyllama-atencion-clientes-lora",
+  "author": "israelep",
+  "url": "https://huggingface.co/israelep/tinyllama-atencion-clientes-lora",
+  "created_at": "2026-09-02T21:28:08.000Z",
+  "updated_at": "2026-09-03T00:09:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9034304,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TinyPixel/tinyllama-lora · Hugging Face",
+      "url": "https://huggingface.co/TinyPixel/tinyllama-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TinyLlama/TinyLlama-1.1B-Chat-v1.0 · Hugging Face",
+      "url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - jzhang38/TinyLlama: The TinyLlama project is an open endeavor ...",
+      "url": "https://github.com/jzhang38/TinyLlama",
+      "snippet": "The TinyLlama project is an open endeavor to pretrain a 1.1B Llama model on 3 trillion tokens. - jzhang38/TinyLlama"
+    },
+    {
+      "title": "Fine-Tune TinyLlama Locally (LoRA + Offline Inference) - GitHub",
+      "url": "https://github.com/hassanhabib/AI.Llama.Traing.Offline",
+      "snippet": "This project shows how to fine-tune TinyLlama locally on your own machine using LoRA, with 100% offline capability — no cloud, no GPUs required (but supported), no hosted models. It&#x27;s based on a real journey of debugging and training from scratch using a custom dataset."
+    },
+    {
+      "title": "[2401.02385] TinyLlama: An Open-Source Small Language Model",
+      "url": "https://arxiv.org/abs/2401.02385",
+      "snippet": "We present TinyLlama, a compact 1.1B language model pretrained on around 1 trillion tokens for approximately 3 epochs. Building on the architecture and tokenizer of Llama 2, TinyLlama leverages various advances contributed by the open-source community (e.g., FlashAttention and Lit-GPT), achieving better computational efficiency. Despite its relatively small size, TinyLlama demonstrates ..."
+    }
+  ]
+}

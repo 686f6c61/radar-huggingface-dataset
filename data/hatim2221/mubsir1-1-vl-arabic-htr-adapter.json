@@ -5,7 +5,7 @@
   "author": "Hatim2221",
   "url": "https://huggingface.co/Hatim2221/Mubsir1.1-vl-arabic-htr-adapter",
   "created_at": "2026-09-02T12:52:24.000Z",
-  "updated_at": "2026-09-02T12:52:31.000Z",
+  "updated_at": "2026-09-02T17:05:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 85337526,
-  "storage_human": "85 MB",
+  "storage_bytes": 159254518,
+  "storage_human": "159 MB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "shamwowzer/prototype-128x03",
+  "slug": "shamwowzer-prototype-128x03",
+  "author": "shamwowzer",
+  "url": "https://huggingface.co/shamwowzer/prototype-128x03",
+  "created_at": "2026-09-02T22:10:59.000Z",
+  "updated_at": "2026-09-02T22:25:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125025988608,
+  "parameters_human": "125.03B",
+  "storage_bytes": 250069149780,
+  "storage_human": "250.1 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shamwowzer/prototype-128x02 · Hugging Face",
+      "url": "https://huggingface.co/shamwowzer/prototype-128x02",
+      "snippet": "Instructions to use shamwowzer/prototype-128x02 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use shamwowzer/prototype-128x02 with Transformers:"
+    },
+    {
+      "title": "shamwowzer (sham wow) - Hugging Face",
+      "url": "https://huggingface.co/shamwowzer",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 day ago ... published a model 1 day ago"
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "Model Spawner — AI 3D Model Generator",
+      "url": "https://www.modelspawner.com/",
+      "snippet": "Turn any image or text description into a downloadable 3D model. Generate GLB, OBJ, STL, and USDZ files with AI. Free credits on signup."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lloydchristmas1231/tayfra",
+  "slug": "lloydchristmas1231-tayfra",
+  "author": "lloydchristmas1231",
+  "url": "https://huggingface.co/lloydchristmas1231/tayfra",
+  "created_at": "2026-09-02T20:33:52.000Z",
+  "updated_at": "2026-09-02T21:09:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970680924,
+  "storage_human": "971 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lloydchristmas1231 · GitHub",
+      "url": "https://github.com/lloydchristmas1231",
+      "snippet": "GitHub is where lloydchristmas1231 builds software. Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "lloydchristmas1231/stachart · Hugging Face",
+      "url": "https://huggingface.co/lloydchristmas1231/stachart",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Christmas / Thanksgiving - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/a119568a9204cc854d7987881d50e3cc",
+      "snippet": "Explore Christmas / Thanksgiving model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "lloydchristmas1231/cailbo-40 · Hugging Face",
+      "url": "https://huggingface.co/lloydchristmas1231/cailbo-40",
+      "snippet": "lloydchristmas1231 / cailbo-40 like 0 Text-to-Image Diffusers lora krea2 template:sd-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-5 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-5, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    }
+  ]
+}

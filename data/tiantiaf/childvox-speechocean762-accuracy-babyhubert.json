@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "tiantiaf/childvox-speechocean762-accuracy-babyhubert",
+  "slug": "tiantiaf-childvox-speechocean762-accuracy-babyhubert",
+  "author": "tiantiaf",
+  "url": "https://huggingface.co/tiantiaf/childvox-speechocean762-accuracy-babyhubert",
+  "created_at": "2026-09-03T01:04:20.000Z",
+  "updated_at": "2026-09-03T01:05:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1901994620,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "childvox-speechocean762-prosody-whisper-large - Hugging Face",
+      "url": "https://huggingface.co/tiantiaf/childvox-speechocean762-prosody-whisper-large",
+      "snippet": "ChildVox: A Speech, Audio, and Large Audio-Language Model Benchmark in Understanding and Characterizing Sound across Childhood"
+    },
+    {
+      "title": "ChildVox - tiantiaf0627.github.io",
+      "url": "https://tiantiaf0627.github.io/childvox/",
+      "snippet": "ChildVox: A Speech, Audio, and Large Audio-Language Model Benchmark in Understanding and Characterizing Sound across Childhood."
+    },
+    {
+      "title": "ChildVox - a tiantiaf Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/tiantiaf/childvox",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from tiantiaf"
+    },
+    {
+      "title": "[2605.29257] ChildVox: A Speech, Audio, and Large Audio-Language Model ...",
+      "url": "https://arxiv.org/abs/2605.29257",
+      "snippet": "We present ChildVox, a novel benchmark for characterizing the diverse acoustic signals through which children communicate. Specifically, ChildVox follows the full developmental trajectory from birth through school age, covering physiological sounds, non-linguistic vocalizations, canonical syllables, and spoken language. ChildVox integrates more than 20 sub-tasks across 17 child-centered audio ..."
+    },
+    {
+      "title": "ChildVox: A Speech, Audio, and Large Audio-Language Model Benchmark in ...",
+      "url": "https://arxiv.org/pdf/2605.29257",
+      "snippet": "ChildVox sub-tasks across 17 child-centered audio and speech datasets, enabling systematic cross-corpus and cross-domain comparison. We evaluate a rep-resentative range of audio and speech founda-tion models, including self-supervised, ASR-oriented, and large audio-language models, on tasks including physiological sound classifica-tion, vocalization and canonical syllables mod-eling, and ..."
+    }
+  ]
+}

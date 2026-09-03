@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "SHERRYPURNOMO/fun-matching",
+  "slug": "sherrypurnomo-fun-matching",
+  "author": "SHERRYPURNOMO",
+  "url": "https://huggingface.co/SHERRYPURNOMO/fun-matching",
+  "created_at": "2026-09-02T20:11:07.000Z",
+  "updated_at": "2026-09-02T20:11:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Celebrity Pornstar Lookalikes — AI Face Matching | Doppelbänger.fun",
+      "url": "https://doppelbanger.fun/celebrities",
+      "snippet": "18+ Only • AI facial similarity Celebrity pornstar lookalikes Curated facial-similarity matches between mainstream celebrities and adult performers — powered by the same AI matcher behind Doppelbänger.fun. Tap a face to see their closest doubles."
+    },
+    {
+      "title": "Explore AI Companions, Scenes & Creators | Adorly",
+      "url": "https://adorly.ai/explore",
+      "snippet": "Browse trending AI girlfriends, AI boyfriends, anime characters, and fantasy roleplay scenes. Search by name, personality, tag, or style on Adorly."
+    },
+    {
+      "title": "AI Girlfriend Generator: Create Your Own AI Companion Free | cherrypop.ai",
+      "url": "https://cherrypop.ai/create",
+      "snippet": "Create your dream AI girlfriend for steamy sexting, custom porn images, and HD videos. Fully uncensored NSFW fun - sign up now for 2 weeks free premium (first 1000 only)."
+    },
+    {
+      "title": "Pinku | Roleplay and generate images of AI characters",
+      "url": "https://pinku.ai/",
+      "snippet": "Chat with AI Characters anytime, anywhere. Create and interact with intelligent bots that understand, respond, and even generate AI-driven images and videos."
+    },
+    {
+      "title": "AI Portfolio Projects 2026: 5 Builds Hiring Managers Actually Want (Free)",
+      "url": "https://thesherrycode.gumroad.com/l/aiportfolioprojects",
+      "snippet": "Stop learning, start building. Five projects that bridge classical ML to LLM-era work, with Claude prompts, reference repos, and a demo spec for each.Most AI portfolios look the same. A chatbot. A sentiment analyser. Another RAG demo with no evaluation and no decisions behind it.These five are different. Not because the tech is harder, but because each one forces a real engineering call: when ..."
+    }
+  ]
+}

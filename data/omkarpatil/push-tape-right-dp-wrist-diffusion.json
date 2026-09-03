@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "omkarpatil/push-tape-right-dp-wrist-diffusion",
+  "slug": "omkarpatil-push-tape-right-dp-wrist-diffusion",
+  "author": "omkarpatil",
+  "url": "https://huggingface.co/omkarpatil/push-tape-right-dp-wrist-diffusion",
+  "created_at": "2026-09-03T00:44:43.000Z",
+  "updated_at": "2026-09-03T00:44:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion-policy",
+    "ffw_sg2_rev1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 274492048,
+  "parameters_human": "274.5M",
+  "storage_bytes": 1098027904,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "omkarpatil (Omkar Patil) - Hugging Face",
+      "url": "https://huggingface.co/omkarpatil/models",
+      "snippet": "Robotics Recent Activity updated a modelabout 10 hours ago omkarpatil/ffw_sg2_pick-blue-cylinder-left-arm_groot-n1.7 updated a modelabout 10 hours ago omkarpatil/ffw_sg2_pick-blue-cylinder-left-arm_smolvla updated a modelabout 10 hours ago omkarpatil/ffw_sg2_pick-blue-cylinder-right-arm_groot-n1.7 View all activity"
+    },
+    {
+      "title": "omkarpatil (Omkar Patil) - Hugging Face",
+      "url": "https://huggingface.co/omkarpatil",
+      "snippet": "Robotics a dataset about 2 hours ago a dataset about 2 hours ago"
+    },
+    {
+      "title": "omkarpatil18 (Omkar Patil) · GitHub",
+      "url": "https://github.com/omkarpatil18",
+      "snippet": "Robot Learning PhD @ ASU . omkarpatil18 has 11 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Reactive Diffusion Policy",
+      "url": "https://reactive-diffusion-policy.github.io/",
+      "snippet": "Reactive Diffusion Policy (RDP) is a slow-fast imitation learning algorithm that can model complex behaviors with a slow policy network and achieve closed-loop control based on tactile / force feedback with a fast policy network."
+    },
+    {
+      "title": "Artificial Intelligence-Based Models for Automated Bone Age ... - MDPI",
+      "url": "https://www.mdpi.com/2076-3417/15/11/5978",
+      "snippet": "Traditional methods—Greulich-Pyle atlas and Tanner-Whitehouse scoring—are time-consuming, operator-dependent, and prone to inter- and intra-observer variability. Aim: To systematically review the performance of AI-based models for automated bone-age estimation from left PA hand-wrist radiographs."
+    }
+  ]
+}

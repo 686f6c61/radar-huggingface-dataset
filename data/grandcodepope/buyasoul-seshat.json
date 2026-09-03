@@ -5,14 +5,13 @@
   "author": "grandcodepope",
   "url": "https://huggingface.co/grandcodepope/buyasoul-seshat",
   "created_at": "2026-09-01T02:39:02.000Z",
-  "updated_at": "2026-09-01T02:54:05.000Z",
+  "updated_at": "2026-09-03T00:08:13.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
   "library": "buyasoul-seshat",
   "languages": [],
   "tags": [
-    "buyasoul-seshat",
     "buyasoul",
     "seshat",
     "memory",
@@ -24,7 +23,6 @@
     "qwen",
     "llama.cpp",
     "offline-ai",
-    "vector-database",
     "text-generation",
     "license:other",
     "region:us"

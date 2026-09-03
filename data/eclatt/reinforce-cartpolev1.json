@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "eclatt/Reinforce-cartpolev1",
+  "slug": "eclatt-reinforce-cartpolev1",
+  "author": "eclatt",
+  "url": "https://huggingface.co/eclatt/Reinforce-cartpolev1",
+  "created_at": "2026-09-02T22:55:20.000Z",
+  "updated_at": "2026-09-02T22:55:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3657,
+  "storage_human": "3657 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zpattdev/Reinforce-cartpoleV1 · Hugging Face",
+      "url": "https://huggingface.co/zpattdev/Reinforce-cartpoleV1",
+      "snippet": "zpattdev / Reinforce-cartpoleV1 like 0 Reinforcement LearningCartPole-v1reinforcecustom-implementationdeep-rl-classEval Results Model card FilesFiles and versions Community Use with library Edit model card Reinforce Agent playing CartPole-v1"
+    },
+    {
+      "title": "REINFORCE on CartPole-v1 - aegean.ai",
+      "url": "https://aegean.ai/aiml-common/lectures/reinforcement-learning/policy-based-algorithms/reinforce/reinforce-cartpole/reinforce-cartpole",
+      "snippet": "Runnable policy-gradient agent trained on CartPole-v1 with live Weights & Biases tracking and a learning-curve plot."
+    },
+    {
+      "title": "loke-07/Reinforce-CartPolev1 · Hugging Face",
+      "url": "https://huggingface.co/loke-07/Reinforce-CartPolev1",
+      "snippet": "This is a trained model of a Reinforce agent playing CartPole-v1 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "unit1_reinforce_cartpole.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/AliBuildsAI/rl-for-robotics-llms/blob/main/notebooks/unit1_reinforce_cartpole.ipynb",
+      "snippet": "Part of the RL for Robotics & LLMs series. We start with REINFORCE (Williams, 1992) — the original policy gradient algorithm — then build up to Vanilla Policy Gradient (VPG) by adding a learned value-function baseline, and show that the baseline directly improves training stability. This notebook follows Algorithm 1 from Schulman et al. exactly."
+    },
+    {
+      "title": "CartPole_v1.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/Nicolas-Bolouri/OpenAi/blob/main/CartPole_v1.ipynb/",
+      "snippet": "For our Q-Learning model to function, we discretize the cart-pole states into finite categories. This simplification enables a manageable Q-table size, allowing the model to learn and optimize actions effectively within a discrete decision space."
+    }
+  ]
+}

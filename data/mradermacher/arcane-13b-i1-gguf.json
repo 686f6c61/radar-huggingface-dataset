@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/arcane-13b-i1-GGUF",
   "created_at": "2026-09-02T13:01:59.000Z",
-  "updated_at": "2026-09-02T13:54:29.000Z",
+  "updated_at": "2026-09-02T14:12:08.000Z",
   "license": "llama2",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 13015864320,
   "parameters_human": "13.02B",
-  "storage_bytes": 138260803840,
-  "storage_human": "138.3 GB",
+  "storage_bytes": 146429865536,
+  "storage_human": "146.4 GB",
   "base_model": "ar3xop/arcane-13b",
   "formats": [
     "gguf"

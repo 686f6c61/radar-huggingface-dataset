@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "georgeven/songmae-micro-32x4",
+  "slug": "georgeven-songmae-micro-32x4",
+  "author": "georgeven",
+  "url": "https://huggingface.co/georgeven/songmae-micro-32x4",
+  "created_at": "2026-09-02T20:27:15.000Z",
+  "updated_at": "2026-09-02T20:36:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "songmae",
+    "feature-extraction",
+    "audio",
+    "bioacoustics",
+    "birdsong",
+    "masked-autoencoder",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1674305,
+  "parameters_human": "1.7M",
+  "storage_bytes": 6707692,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - georgevenven/SongMAE",
+      "url": "https://github.com/georgevenven/SongMAE",
+      "snippet": "Embedding extractors write one concatenated embeddings.npz per requested dataset slice, usually under an output directory for one model and one bird. This is the sharing and eval format for SongMAE and external models."
+    },
+    {
+      "title": "NeurIPS SongMAE: Fine-Grained Syllable Discovery in Birdsong Using ...",
+      "url": "https://nips.cc/virtual/2025/loc/san-diego/131534",
+      "snippet": "Abstract Self-supervised bioacoustic encoders have been used for species classification but so far have not addressed syllable-level structure in birdsong. We introduce SongMAE, a compact MAE-ViT (Masked Autoencoder Vision Transformer) that operates on mel spectrograms with 2 ms temporal resolution. SongMAE is pre-trained with masked spectrogram reconstruction on diverse bioacoustic recordings ..."
+    },
+    {
+      "title": "SongMAE: Biosignals model | bio.rodeo",
+      "url": "https://bio.rodeo/models/songmae",
+      "snippet": "SongMAE is a ViT encoder-decoder over 128-bin log-mel spectrograms computed at 32 kHz with a 1,024-sample FFT, a 32 ms Hann window and a 160-sample hop. A shallow convolutional stack precedes the transformer; the decoder is discarded after pretraining."
+    },
+    {
+      "title": "SongMAE: Fine-Grained Syllable Discovery in Birdsong Using Asymmetric ...",
+      "url": "https://openreview.net/pdf?id=8mluzLyvyV",
+      "snippet": "Self-supervised bioacoustic encoders have been used for species classication but so far have not addressed syllable-level structure in birdsong. We introduce SongMAE, a compact MAE-ViT (Masked Autoencoder Vision Transformer) that operates on mel spectrograms with 2 ms temporal resolution. SongMAE is pre- trained with masked spectrogram reconstruction on diverse bioacoustic recordings. Despitea ..."
+    },
+    {
+      "title": "SongMAE: A bioacoustic encoder for birdsong - labs.sciety.org",
+      "url": "https://labs.sciety.org/articles/by?article_doi=10.64898/2026.08.17.745361",
+      "snippet": "The architecture of existing self-supervised bioacoustic encoders has largely been inherited from human speech models; as a result, these encoders operate at temporal resolutions designed for human speech. This coarse resolution is well suited to species classification and song detection because it matches the timescale of complete vocalizations, but it lacks the resolution to distinguish the ..."
+    }
+  ]
+}

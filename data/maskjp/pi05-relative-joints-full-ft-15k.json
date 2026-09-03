@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "maskjp/pi05-relative-joints-full-ft-15k",
+  "slug": "maskjp-pi05-relative-joints-full-ft-15k",
+  "author": "maskjp",
+  "url": "https://huggingface.co/maskjp/pi05-relative-joints-full-ft-15k",
+  "created_at": "2026-09-02T22:25:42.000Z",
+  "updated_at": "2026-09-02T22:26:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "relative-actions",
+    "full-finetune",
+    "overfit-endpoint",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9390250844,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maskjp/pi05-relative-joints-frozen-vlm · Hugging Face",
+      "url": "https://huggingface.co/maskjp/pi05-relative-joints-frozen-vlm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "maskjp/piper_pick_new_pi05_ch50 · Hugging Face",
+      "url": "https://huggingface.co/maskjp/piper_pick_new_pi05_ch50",
+      "snippet": "Instructions to use maskjp/piper_pick_new_pi05_ch50 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use maskjp/piper_pick_new_pi05_ch50 with LeRobot: Notebooks Google Colab Kaggle Model Card for pi05 How to Get Started with the Model Train from scratch Evaluate the policy/run inference Model Details"
+    },
+    {
+      "title": "lerobot-umi-relative-ee/src/lerobot/policies/pi05 at main - GitHub",
+      "url": "https://github.com/ZhenghaoFei/lerobot-umi-relative-ee/tree/main/src/lerobot/policies/pi05",
+      "snippet": "π₀.₅ supports training with relative actions, where the model learns relative offsets from the current robot state instead of absolute joint positions. This mirrors the relative-action transform in OpenPI (DeltaActions) and can improve performance."
+    },
+    {
+      "title": "lerobot/docs/source/policy_pi05_README.md at main · yuheng-li-ai ...",
+      "url": "https://github.com/yuheng-li-ai/lerobot/blob/main/docs/source/policy_pi05_README.md",
+      "snippet": "Relative Actions π₀.₅ supports training with relative actions, where the model learns relative offsets from the current robot state instead of absolute joint positions. This mirrors the relative-action transform in OpenPI (DeltaActions) and can improve performance."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

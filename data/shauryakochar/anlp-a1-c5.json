@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "shauryakochar/anlp-a1-c5",
+  "slug": "shauryakochar-anlp-a1-c5",
+  "author": "shauryakochar",
+  "url": "https://huggingface.co/shauryakochar/anlp-a1-c5",
+  "created_at": "2026-09-02T23:08:47.000Z",
+  "updated_at": "2026-09-02T23:08:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "transformer",
+    "ablation",
+    "anlp",
+    "seq2seq",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36695088,
+  "storage_human": "37 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shauryakochar (Shaurya Kochar) - Hugging Face",
+      "url": "https://huggingface.co/shauryakochar",
+      "snippet": "Recent Activity updated a model23 minutes ago shauryakochar/anlp-a1-c5 published a model23 minutes ago shauryakochar/anlp-a1-c5 updated a model23 minutes ago ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=cipher-decryption",
+      "snippet": "Explore machine learning models. 5 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: cipher-decryption Clear all"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 125 Estimated models among 416 tracked LLMs — 416 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "GitHub - FrenchKnuckles/ANLP_A1",
+      "url": "https://github.com/FrenchKnuckles/ANLP_A1",
+      "snippet": "BLT Patch Size Rationale For C5, we set patch_size=9. Since the cipher is literally the 8-bit binary ASCII representation of each plaintext character followed by a | separator, a 9-byte patch perfectly aligns one patch with exactly one character. This is a sane inductive bias given the data&#x27;s known periodicity, though the model still must learn the byte-to-character mapping and boundaries from ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

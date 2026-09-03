@@ -5,7 +5,7 @@
   "author": "Banaxi-Tech",
   "url": "https://huggingface.co/Banaxi-Tech/BananaMind-2.1-Lite",
   "created_at": "2026-09-02T11:36:31.000Z",
-  "updated_at": "2026-09-02T13:34:36.000Z",
+  "updated_at": "2026-09-02T18:02:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,13 +26,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 28357858,
   "parameters_human": "28.4M",
-  "storage_bytes": 719194532,
-  "storage_human": "719 MB",
+  "storage_bytes": 3236375394,
+  "storage_human": "3.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

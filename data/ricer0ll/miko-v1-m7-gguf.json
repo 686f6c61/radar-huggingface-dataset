@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ricer0ll/Miko-v1-m7-GGUF",
+  "slug": "ricer0ll-miko-v1-m7-gguf",
+  "author": "ricer0ll",
+  "url": "https://huggingface.co/ricer0ll/Miko-v1-m7-GGUF",
+  "created_at": "2026-08-31T10:11:35.000Z",
+  "updated_at": "2026-09-03T00:36:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 116,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 62798881664,
+  "storage_human": "62.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ricer0ll/Miko-v1-m7-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ricer0ll/Miko-v1-m7-GGUF",
+      "snippet": "Instructions to use ricer0ll/Miko-v1-m7-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use ricer0ll/Miko-v1-m7-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "ricer0ll (RiceRoll) - Hugging Face",
+      "url": "https://huggingface.co/ricer0ll/models",
+      "snippet": "ricer0ll&#x27;s models2 Sort: Recently updated ricer0ll/Miko-v1-m7-GGUF 7B•Updated 10 minutes ago"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models. HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF"
+    },
+    {
+      "title": "Miko - V1 | Illustrious LoRA | Civitai",
+      "url": "https://civitai.com/models/2658699/miko",
+      "snippet": "V1 Create Download 1 variant available SafeTensor 217.88 MB Verified:2 months ago Download (217.88 MB) Optional Files 1 2985412_training_data.zip . zip • 13.9 MB Verified:2 months ago Details Type LoRA Stats 590 1 2 3 4 5 6 7 8 90 1 2 3 4 5 6 7 8 9 00 1 2 3 4 5 6 7 8 9 Reviews Positive (6) Published May 28, 2026 Base Model Illustrious ..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "uulmneurolab/tiny-transformer-matching-lab",
+  "slug": "uulmneurolab-tiny-transformer-matching-lab",
+  "author": "uulmneurolab",
+  "url": "https://huggingface.co/uulmneurolab/tiny-transformer-matching-lab",
+  "created_at": "2026-09-02T19:45:14.000Z",
+  "updated_at": "2026-09-02T19:45:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leonmueller/matching-mini · Hugging Face",
+      "url": "https://huggingface.co/leonmueller/matching-mini",
+      "snippet": "Overview Working implementation of Tiny Transformer for Matching using a tiny configuration. The repository focuses on transparent code and repeatable smoke tests; benchmark claims are deliberately omitted."
+    },
+    {
+      "title": "GitHub - atharvanaik06/tiny-transformer-lab: Build a GPT-style ...",
+      "url": "https://github.com/atharvanaik06/tiny-transformer-lab/tree/main",
+      "snippet": "It is to make the mechanics of transformers and alignment concrete: build each major piece, train small models locally, change one variable at a time, and measure what actually improves. The model uses PyTorch tensors and automatic differentiation, but no prebuilt transformer implementation."
+    },
+    {
+      "title": "GitHub - skolouri/TinyTransformer: Mathematics of AI - Transformer ...",
+      "url": "https://github.com/skolouri/TinyTransformer",
+      "snippet": "Tiny Transformer This repository contains a minimal yet functional implementation of a Transformer architecture featuring both an encoder and a decoder. The design prioritizes clarity and simplicity, making it an ideal resource for educational purposes and experimentation in both vision and natural language processing (NLP) applications."
+    },
+    {
+      "title": "Transformer Lab - Primus: the world&#x27;s first fully autonomous AI researcher",
+      "url": "https://lab.cloud/",
+      "snippet": "Primus is the world&#x27;s first fully autonomous AI researcher available to everyone. It hypothesizes, reads the literature, codes, runs experiments on real compute, draws conclusions, and writes the paper."
+    },
+    {
+      "title": "A Cost-Efficient FPGA Implementation of Tiny Transformer Model using ...",
+      "url": "https://arxiv.org/abs/2401.02721",
+      "snippet": "Transformer has been adopted to image recognition tasks and shown to outperform CNNs and RNNs while it suffers from high training cost and computational complexity. To address these issues, a hybrid approach has become a recent research trend, which replaces a part of ResNet with an MHSA (Multi-Head Self-Attention). In this paper, we propose a lightweight hybrid model which uses Neural ODE ..."
+    }
+  ]
+}

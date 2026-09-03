@@ -5,7 +5,7 @@
   "author": "heswithme",
   "url": "https://huggingface.co/heswithme/Huihui-Qwen3.8-27B-Abliterated-Gittensor-Style-NVFP4-RTX5090",
   "created_at": "2026-09-02T13:05:10.000Z",
-  "updated_at": "2026-09-02T13:05:19.000Z",
+  "updated_at": "2026-09-02T15:09:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,7 +31,7 @@
     "8-bit",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 14557547760,

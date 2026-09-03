@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "AdarshSingh7647/Eklav-0.6B-Reranker-CotGen",
+  "slug": "adarshsingh7647-eklav-0-6b-reranker-cotgen",
+  "author": "AdarshSingh7647",
+  "url": "https://huggingface.co/AdarshSingh7647/Eklav-0.6B-Reranker-CotGen",
+  "created_at": "2026-08-26T21:11:03.000Z",
+  "updated_at": "2026-09-02T21:02:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "eklav",
+    "reranking",
+    "cot-distillation",
+    "reasoning",
+    "cotgen",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1204039044,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jina AI Releases 0.6B Reranker Model for Improved Search Results - LinkedIn",
+      "url": "https://www.linkedin.com/posts/elastic-co_a-06b-reranker-that-outscores-models-7x-activity-7487601505924104192-0GnV",
+      "snippet": "A 0.6B reranker that outscores models 7x its size. Switching to it takes one line of code. Jina AI by Elastic has released jina-reranker-v3.5, a drop-in upgrade to jina-reranker-v3. A reranker ..."
+    },
+    {
+      "title": "README.md · ggml-org/Qwen3-Reranker-0.6B-Q8_0-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/ggml-org/Qwen3-Reranker-0.6B-Q8_0-GGUF/blob/main/README.md",
+      "snippet": "This model was converted to GGUF format from Qwen/Qwen3-Reranker-.6B using llama.cpp via the ggml.ai&#x27;s GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "Qwen/Qwen3-Reranker-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Reranker-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ultimate Guide - The Most Accurate Reranker for Real-Time Search in ...",
+      "url": "https://www.siliconflow.com/articles/most-accurate-reranker-for-real-time-search",
+      "snippet": "The Qwen3-Reranker series demonstrates significant advancements in accuracy (8B model), balanced performance (4B model), and speed optimization (0.6B model). All three support over 100 languages with 32k context length, making them ideal for diverse real-time search scenarios from e-commerce to enterprise knowledge retrieval."
+    },
+    {
+      "title": "Qwen3 Reranker 0.6B by Qwen (Alibaba) — ThinkLLM",
+      "url": "https://thinkllm.dev/models/qwen3-reranker-0-6b",
+      "snippet": "Glossary Reasoning The model&#x27;s ability to work through multi-step logical problems and provide justified answers rather than just pattern-matching. Reranker A model that takes an initial set of search results and reorders them by relevance, typically used to refine results from a faster but less accurate retrieval system."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "georgeven/songmae-micro-32x1",
+  "slug": "georgeven-songmae-micro-32x1",
+  "author": "georgeven",
+  "url": "https://huggingface.co/georgeven/songmae-micro-32x1",
+  "created_at": "2026-09-02T19:57:07.000Z",
+  "updated_at": "2026-09-02T20:36:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "songmae",
+    "feature-extraction",
+    "audio",
+    "bioacoustics",
+    "birdsong",
+    "masked-autoencoder",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1751873,
+  "parameters_human": "1.8M",
+  "storage_bytes": 7017964,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - georgevenven/SongMAE",
+      "url": "https://github.com/georgevenven/SongMAE",
+      "snippet": "Embedding extractors write one concatenated embeddings.npz per requested dataset slice, usually under an output directory for one model and one bird. This is the sharing and eval format for SongMAE and external models."
+    },
+    {
+      "title": "SongMAE: Biosignals model | bio.rodeo",
+      "url": "https://bio.rodeo/models/songmae",
+      "snippet": "SongMAE, from George Vengrovski and Timothy J. Gardner at the University of Oregon, is a masked autoencoder trained to reconstruct birdsong spectrograms at 5 ms resolution. Its argument is that patch shape is an inductive bias rather than a tuning knob."
+    },
+    {
+      "title": "NeurIPS SongMAE: Fine-Grained Syllable Discovery in Birdsong Using ...",
+      "url": "https://nips.cc/virtual/2025/loc/san-diego/131534",
+      "snippet": "We discuss limitations (lack of quantitative benchmarks and comparisons) and outline directions—patch aspect-ratio ablations, larger pretraining, and multi-resolution training—to enable unsupervised analysis of song components with a general pretrained model."
+    },
+    {
+      "title": "SongMAE/readme.md at main · georgevenven/SongMAE · GitHub",
+      "url": "https://github.com/georgevenven/SongMAE/blob/main/readme.md",
+      "snippet": "SongMAE is the refactored TinyBird core for training masked autoencoders on birdsong spectrograms, extracting encoder embeddings, and keeping the run metadata legible. The old project README is archived as oldreadme.md. The current core is intentionally small. src/core/ is reserved for the model ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    }
+  ]
+}

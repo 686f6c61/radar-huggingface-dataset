@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jogarulfop/policy_2026-09-02_shake4it_bench_5sensors_v2_pastille_pzt_10kHz_nfft_512",
+  "slug": "jogarulfop-policy_2026-09-02_shake4it_bench_5sensors_v2_pastille_pzt_10khz_nfft_512",
+  "author": "jogarulfop",
+  "url": "https://huggingface.co/jogarulfop/policy_2026-09-02_shake4it_bench_5sensors_v2_pastille_pzt_10kHz_nfft_512",
+  "created_at": "2026-09-03T00:02:57.000Z",
+  "updated_at": "2026-09-03T00:03:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:jogarulfop/2026-09-02_shake4it_bench_5sensors_v2_pastille_pzt_10kHz_nfft_512",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206717640,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jogarulfop/policy_2026-07-28_shake4it_bench_dragonfly_10kHz_nfft_512 ...",
+      "url": "https://huggingface.co/jogarulfop/policy_2026-07-28_shake4it_bench_dragonfly_10kHz_nfft_512",
+      "snippet": "Instructions to use jogarulfop/policy_2026-07-28_shake4it_bench_dragonfly_10kHz_nfft_512 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "policy_2026-07-28_shake4it_bench_dragonfly_10kHz_nfft_64",
+      "url": "https://huggingface.co/jogarulfop/policy_2026-07-28_shake4it_bench_dragonfly_10kHz_nfft_64",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Policy 2026 07 15 Shakeitup4 Bench Dragonfly 10kHz Nfft 64",
+      "url": "https://sweettea.co/es/resources/catalog-model-bab555cd5d0a6270e2c328f2a7e51099cc7e38fda85571c7585cb5c0ea5fa59a",
+      "snippet": "datasets: jogarulfop/2026-07-15shakeitup4benchdragonfly10kHznfft64 libraryname: lerobot license: apache-2.0 modelname: act pipelinetag: robotics tags: act lerobot ..."
+    },
+    {
+      "title": "Shxrk setup leaked Fortnite settings 2026 | TikTok",
+      "url": "https://www.tiktok.com/@aurorafortnite_gg/video/7679146461421980950",
+      "snippet": "Lead Shxrk&#x27;s setup leaked: this overview lists the hardware, sensitivity, and keybind choices reported in the leak so players can compare and replicate professional Fortnite settings. Body What the leak includes - Mouse and DPI: the leaked notes specify Shxrk&#x27;s mouse model and DPI settings so you can match aiming feel. Exact DPI and polling rate settings are included in the leak summary ..."
+    },
+    {
+      "title": "Safety & responsibility | OpenAI",
+      "url": "https://openai.com/safety/",
+      "snippet": "OpenAI&#x27;s approach to AI safety, security, and responsible deployment. Learn how we research, test, and build safer AI systems for everyone."
+    }
+  ]
+}

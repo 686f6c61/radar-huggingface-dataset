@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "TheWirelessPhoenix/Ling-3.0-tiny-oQ4e",
+  "slug": "thewirelessphoenix-ling-3-0-tiny-oq4e",
+  "author": "TheWirelessPhoenix",
+  "url": "https://huggingface.co/TheWirelessPhoenix/Ling-3.0-tiny-oQ4e",
+  "created_at": "2026-09-02T22:39:54.000Z",
+  "updated_at": "2026-09-02T22:44:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "bailing_hybrid",
+    "oq",
+    "quantized",
+    "custom_code",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7893392800,
+  "parameters_human": "7.89B",
+  "storage_bytes": 4649891562,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheWirelessPhoenix/Ling3.0-tiny-gguf-experimental at main",
+      "url": "https://huggingface.co/TheWirelessPhoenix/Ling3.0-tiny-gguf-experimental/tree/main",
+      "snippet": "Instructions to use TheWirelessPhoenix/Ling3.-tiny-gguf-experimental with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-tiny Ling-3.0-tiny is a lightweight hybrid reasoning model in the Ling series designed for edge deployment scenarios, with 7.9B total parameters and only 1.3B activated parameters."
+    },
+    {
+      "title": "Ling 3.0 Tiny download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/ling-3-0-tiny/",
+      "snippet": "Download Ling 3.0 Tiny for free. Lightweight MoE model for local reasoning, coding, and AI agents. Ling-3.0-tiny is inclusionAI&#x27;s lightweight hybrid reasoning Mixture-of-Experts model, designed to provide capable reasoning and agentic performance at low inference cost. It contains 7.9B total parameters while activating only 1.3B per token, using a hybrid architecture that alternates Kimi ..."
+    },
+    {
+      "title": "Ling-3.0-tiny · LLM Releases",
+      "url": "https://www.llm-releases.com/models/ling-3-0-tiny",
+      "snippet": "The smallest member of Ant Group inclusionAI&#x27;s Ling 3.0 family, open-weighted on Hugging Face on Aug 6 2026 under the MIT license — distinct from the (API-only at launch) Ling-3.0-flash. A sparse Mixture-of-Experts model with 7.9B total parameters and only ~1.3B active per token: 128 routed experts with 8 routed plus 1 shared expert active per token, using the same 3:1 alternating stack of ..."
+    },
+    {
+      "title": "Ling 3.0 Tiny - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/ling-3-0-tiny.html",
+      "snippet": "Download Ling 3.0 Tiny GGUF model. 14.7 GB, 99,777 downloads, 68 likes."
+    }
+  ]
+}

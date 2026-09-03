@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "shanjiaz/qwen3_5_4b_perfectblend_regen_dspark",
+  "slug": "shanjiaz-qwen3_5_4b_perfectblend_regen_dspark",
+  "author": "shanjiaz",
+  "url": "https://huggingface.co/shanjiaz/qwen3_5_4b_perfectblend_regen_dspark",
+  "created_at": "2026-09-02T23:35:24.000Z",
+  "updated_at": "2026-09-02T23:35:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "speculators",
+  "languages": [],
+  "tags": [
+    "speculators",
+    "safetensors",
+    "speculative-decoding",
+    "dspark",
+    "vllm",
+    "qwen3.5",
+    "draft-model",
+    "text-generation",
+    "custom_code",
+    "dataset:shanjiaz/qwen3_5_4b_perfectblend_regen",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1916308737,
+  "parameters_human": "1.92B",
+  "storage_bytes": 3832624330,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shanjiaz (Helen Zhao) - Hugging Face",
+      "url": "https://huggingface.co/shanjiaz/models",
+      "snippet": "Organizations shanjiaz&#x27;s models71 Sort: Recently updated shanjiaz/qwen3.6-dspark-test 1.0B•Updated about 14 hours ago• 96"
+    },
+    {
+      "title": "jihwan1205/perfectblend-qwen3-8b-regen · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/jihwan1205/perfectblend-qwen3-8b-regen",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSpec: DeepSpec: a full-stack codebase for ...",
+      "url": "https://github.com/deepseek-ai/DeepSpec",
+      "snippet": "DeepSpec is a full-stack codebase for training and evaluating draft models for speculative decoding. It contains data preparation utilities, draft model implementations, training code, and evaluation scripts."
+    },
+    {
+      "title": "Qwen · GitHub",
+      "url": "https://github.com/QwenLM",
+      "snippet": "Qwen3-omni is a natively end-to-end, omni-modal LLM developed by the Qwen team at Alibaba Cloud, capable of understanding text, audio, images, and video, as well as generating speech in real time."
+    },
+    {
+      "title": "Qwen 3.5 4B local AI model — runs on ~3 GB — guide",
+      "url": "https://theaibench.ai/models/qwen-3-5-4b/",
+      "snippet": "Qwen 3.5 4B local guide: Apache 2.0 small model that runs in ~2.5 GB at Q4 (GPU or CPU), what quality to expect, runner tags, and when to step up to 9B."
+    }
+  ]
+}

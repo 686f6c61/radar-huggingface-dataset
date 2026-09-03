@@ -5,18 +5,18 @@
   "author": "Wiself",
   "url": "https://huggingface.co/Wiself/gemma-4-12B-Styletune-Voice",
   "created_at": "2026-09-02T09:25:47.000Z",
-  "updated_at": "2026-09-02T18:58:38.000Z",
+  "updated_at": "2026-09-02T21:52:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
-  "library": null,
+  "library": "voice",
   "languages": [
     "en"
   ],
   "tags": [
+    "voice",
     "gemma4",
     "styletune",
-    "voice",
     "gguf",
     "roleplay",
     "creative-writing",
@@ -30,7 +30,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

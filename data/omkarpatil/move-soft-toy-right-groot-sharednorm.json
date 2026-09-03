@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "omkarpatil/move-soft-toy-right-groot-sharednorm",
+  "slug": "omkarpatil-move-soft-toy-right-groot-sharednorm",
+  "author": "omkarpatil",
+  "url": "https://huggingface.co/omkarpatil/move-soft-toy-right-groot-sharednorm",
+  "created_at": "2026-09-03T00:08:11.000Z",
+  "updated_at": "2026-09-03T00:24:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "Gr00tN1d7",
+    "robotics",
+    "gr00t",
+    "vla",
+    "ffw_sg2_rev1",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576200896,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "omkarpatil/move-soft-toy-left-groot-sharednorm · Hugging Face",
+      "url": "https://huggingface.co/omkarpatil/move-soft-toy-left-groot-sharednorm",
+      "snippet": "Instructions to use omkarpatil/move-soft-toy-left-groot-sharednorm with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use omkarpatil/move-soft-toy-left-groot-sharednorm with LeRobot: Notebooks Google Colab Kaggle GR00T N1.7 — move-soft-toy-left (shared-norm) Composition group C Training — fully stock"
+    },
+    {
+      "title": "omkarpatil (Omkar Patil) - Hugging Face",
+      "url": "https://huggingface.co/omkarpatil/models",
+      "snippet": "Robotics Recent Activity updated a modelabout 10 hours ago omkarpatil/ffw_sg2_pick-blue-cylinder-left-arm_groot-n1.7 updated a modelabout 10 hours ago omkarpatil/ffw_sg2_pick-blue-cylinder-left-arm_smolvla updated a modelabout 10 hours ago omkarpatil/ffw_sg2_pick-blue-cylinder-right-arm_groot-n1.7 View all activity"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 416 AI models across 416 benchmarks, with 230 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "LLM Updates (September 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    }
+  ]
+}

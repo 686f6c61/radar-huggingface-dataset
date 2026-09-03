@@ -5,7 +5,7 @@
   "author": "Ziggiphase",
   "url": "https://huggingface.co/Ziggiphase/Qwen2.5-ultra-chat",
   "created_at": "2026-09-01T16:22:33.000Z",
-  "updated_at": "2026-09-01T16:22:59.000Z",
+  "updated_at": "2026-09-02T18:44:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 29062302,
-  "storage_human": "29 MB",
+  "storage_bytes": 146325010,
+  "storage_human": "146 MB",
   "base_model": null,
   "formats": [
     "safetensors"

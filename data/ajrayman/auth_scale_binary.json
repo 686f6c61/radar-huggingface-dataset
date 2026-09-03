@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ajrayman/auth_scale_binary",
+  "slug": "ajrayman-auth_scale_binary",
+  "author": "ajrayman",
+  "url": "https://huggingface.co/ajrayman/auth_scale_binary",
+  "created_at": "2024-10-02T13:22:20.000Z",
+  "updated_at": "2026-09-02T20:25:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:microsoft/deberta-v3-base",
+    "base_model:finetune:microsoft/deberta-v3-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 97,
+  "trending_score": 0,
+  "parameters": 184423682,
+  "parameters_human": "184.4M",
+  "storage_bytes": 17722757687,
+  "storage_human": "17.7 GB",
+  "base_model": "microsoft/deberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ajrayman/auth_scale_binary · Hugging Face",
+      "url": "https://huggingface.co/ajrayman/auth_scale_binary",
+      "snippet": "ajrayman / auth_scale_binary like 0 Text Classification Transformers Safetensors roberta Generated from Trainer Inference Endpoints License:mit Model card FilesFiles and versions Community Train Deploy Use this model Edit model card auth_scale_binary Model description Intended uses & limitations Training and evaluation data Training procedure ..."
+    },
+    {
+      "title": "Deploy ajrayman/auth_scale_binary | Inference Endpoints by Hugging Face",
+      "url": "https://endpoints.huggingface.co/new?repository=ajrayman%2Fauth_scale_binary",
+      "snippet": "Deploy auth_scale_binary for text-classification inference in 1 click."
+    },
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 268 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 125 Estimated models among 416 tracked LLMs — 416 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}
