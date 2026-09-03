@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/snapkitty-twin-mars-asm",
+  "slug": "snapkitty-snapkitty-twin-mars-asm",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/snapkitty-twin-mars-asm",
+  "created_at": "2026-09-03T07:53:52.000Z",
+  "updated_at": "2026-09-03T07:53:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Riga5544/Acne_detection",
+  "slug": "riga5544-acne_detection",
+  "author": "Riga5544",
+  "url": "https://huggingface.co/Riga5544/Acne_detection",
+  "created_at": "2026-09-03T09:39:19.000Z",
+  "updated_at": "2026-09-03T09:43:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11548352,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NLP-ML - Kaggle",
+      "url": "https://www.kaggle.com/code/zoyaansari/nlp-ml",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from multiple data sources."
+    },
+    {
+      "title": "Vol. 54 No. 4 (2025): Year 2025, Volume 54, Issue 4",
+      "url": "https://cuestionesdefisioterapia.com/index.php/es/issue/view/76",
+      "snippet": "20.02.2025 ... Cuestiones de Fisioterapia: A journal specializing in physiotherapy, research, rehabilitation and multidisciplinary topics in medical and ..."
+    },
+    {
+      "title": "dmdb › chandra › Enron2.1 › words",
+      "url": "https://www.ics.uci.edu/~dmdb/chandra/Enron2.1/words.txt",
+      "snippet": "... acne 346 acomnes 347 acopy 348 acorn 349 acosta 350 acount 351 acoustic 352 ... ai 946 aiaz 947 aic 948 aid 949 aida 950 aide 951 aided 952 aides 953 ..."
+    },
+    {
+      "title": "English Wikipedia",
+      "url": "https://mre.no/httpdocs/js/zxcvbn/data/english_wikipedia.txt",
+      "snippet": "... model 294957 news 294887 coach 294298 canadian 293750 books 293350 remained ... ai 26976 obvious 26965 publish 26965 rankings 26944 crater 26942 ..."
+    },
+    {
+      "title": "/usr/share/onboard/models/en_CA.lm - APT Browse",
+      "url": "https://www.apt-browse.org/browse/ubuntu/trusty/main/all/onboard-data/1.0.0-0ubuntu4/file/usr/share/onboard/models/en_CA.lm",
+      "snippet": "... 5544 5545 5546 5547 5548 5549 5550 5551 5552 5553 5554 5555 5556 5557 5558 ... AI 20412 AIDS 1212 AIS 2150 AK 5744 AL 1193 ALA 585 ALGOL 2116 ALP 34271 ..."
+    }
+  ]
+}

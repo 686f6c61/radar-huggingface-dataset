@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "resoajoe/jpeg-provenance-nano",
+  "slug": "resoajoe-jpeg-provenance-nano",
+  "author": "resoajoe",
+  "url": "https://huggingface.co/resoajoe/jpeg-provenance-nano",
+  "created_at": "2026-09-03T02:06:00.000Z",
+  "updated_at": "2026-09-03T02:06:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-forensics",
+    "jpeg",
+    "provenance",
+    "tiny-model",
+    "dataset:VISION",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 333258,
+  "storage_human": "333258 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "resoajoe/blockgrid-nano · Hugging Face",
+      "url": "https://huggingface.co/resoajoe/blockgrid-nano",
+      "snippet": "resoajoe / blockgrid-nano like 0 Image Classification ONNX tiny-model forensics dct edge-ai License:mit Model card FilesFiles and versions xet Community Copy to bucket new blockgrid-nano Measured Why a model and not a threshold Scope Known failure modes Usage Deployment note: cap the ONNX Runtime thread pool Training Verification Provenance"
+    },
+    {
+      "title": "resoajoe/clinical-attire-nano · Hugging Face",
+      "url": "https://huggingface.co/resoajoe/clinical-attire-nano",
+      "snippet": "resoajoe / clinical-attire-nano like 0 Image Classification ONNX multi-label tiny-model edge-ai healthcare-operations distillation License:mit Model card FilesFiles and versions xet Community Copy to bucket new clinical-attire-nano Read this first: the labels are machine-generated Results — and pick your resolution The margin roughly doubles, because the baseline cannot use the pixels Full ..."
+    },
+    {
+      "title": "Detecting and Stripping AI Metadata (C2PA, EXIF, XMP) from Generated ...",
+      "url": "https://dev.to/_d59e8245ef71ace3aa509/detecting-and-stripping-ai-metadata-c2pa-exif-xmp-from-generated-images-a-developers-guide-1723",
+      "snippet": "If you ship anything that touches AI-generated images — a thumbnail pipeline, a user-upload feature, a design tool — you&#x27;ve probably noticed something: the images your model spits out are heavier than they should be, and they carry baggage you never asked for. That baggage is provenance metadata. Modern generators (GPT Image / DALL·E, Google&#x27;s Nano Banana / Gemini, Midjourney, many hosted ..."
+    },
+    {
+      "title": "Google&#x27;s new AI tool helps fact-checkers investigate AI fakes",
+      "url": "https://www.niemanlab.org/2026/08/googles-new-ai-tool-helps-fact-checkers-investigate-ai-fakes/",
+      "snippet": "Google&#x27;s new AI tool helps fact-checkers investigate AI fakes Backstory automates provenance checks, reverse image searches, and context tracing to speed up verification work."
+    },
+    {
+      "title": "[2503.11195] Provenance Detection for AI-Generated Images: Combining ...",
+      "url": "https://arxiv.org/abs/2503.11195",
+      "snippet": "Our AI-generated media detection results show a 25% improvement in classification accuracy on commonly used real-world AI image generators over existing algorithms. By combining perceptual hashing, MP-FHE, and an AI content detection model, our proposed framework provides better robustness and privacy compared to previous work."
+    }
+  ]
+}

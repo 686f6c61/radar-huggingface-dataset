@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Eklav-9B-Math-GGUF",
+  "slug": "mradermacher-eklav-9b-math-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Eklav-9B-Math-GGUF",
+  "created_at": "2026-09-03T07:46:35.000Z",
+  "updated_at": "2026-09-03T08:24:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "eklav",
+    "math-reasoning",
+    "cot-distillation",
+    "reasoning",
+    "en",
+    "base_model:AdarshSingh7647/Eklav-9B-Math",
+    "base_model:quantized:AdarshSingh7647/Eklav-9B-Math",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9400279040,
+  "parameters_human": "9.40B",
+  "storage_bytes": 86835701632,
+  "storage_human": "86.8 GB",
+  "base_model": "AdarshSingh7647/Eklav-9B-Math",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

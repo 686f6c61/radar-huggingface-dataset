@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "FoxSingh1999/adapter-general",
+  "slug": "foxsingh1999-adapter-general",
+  "author": "FoxSingh1999",
+  "url": "https://huggingface.co/FoxSingh1999/adapter-general",
+  "created_at": "2026-09-03T10:33:38.000Z",
+  "updated_at": "2026-09-03T10:33:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436334,
+  "storage_human": "334 MB",
+  "base_model": "unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mozartstraße 9 - verbraucherzentrale-bayern.de",
+      "url": "https://www.verbraucherzentrale-bayern.de/sites/default/files/2022-02/2022-03_stellenausschreibung-telefonzentrale_2022-02-08.pdf",
+      "snippet": "Stellenausschreibung Nr. 2022/03 Die Verbraucherzentrale Bayern ist eine anbieterunabhängige, überwiegend öffentlich finanzierte …"
+    },
+    {
+      "title": "Mozartstraße 9 - verbraucherzentrale-bayern.de",
+      "url": "https://www.verbraucherzentrale-bayern.de/sites/default/files/2020-02/2020-04_Stellenausschreibung_Kommunikation_PLR_2020-02-11.pdf",
+      "snippet": "Stellenausschreibung Nr. 2020/04 Die Verbraucherzentrale Bayern ist eine anbieterunabhängige, überwiegend öffentlich finanzierte …"
+    },
+    {
+      "title": "www.verbraucherzentrale-bayern.de",
+      "url": "https://www.verbraucherzentrale-bayern.de/sites/default/files/2017-12/Kauf%20und%20Bau%20eines%20Fertighauses%20.rtf",
+      "snippet": "Einen Überblick über die Unterschiede zwischen Massiv- und Holzbauweise und deren Plus und Mankos bietet der Ratgeber „Kauf …"
+    },
+    {
+      "title": "www.verbraucherzentrale-bayern.de",
+      "url": "https://www.verbraucherzentrale-bayern.de/sites/default/files/2019-08/Kauf%20und%20Bau%20eines%20Fertighauses%2013_08_2019%20VZ.rtf",
+      "snippet": "Doch auch hier lauern eine ganze Reihe schwer kalkulierbarer Zusatz- und Nebenkosten, die nicht zu unterschätzen sind. Der …"
+    },
+    {
+      "title": "Für Berufsunfähigkeit richtig vorsorg - verbraucherzentrale-bayern.de",
+      "url": "https://www.verbraucherzentrale-bayern.de/sites/default/files/2017-11/Berufsunf%C3%A4higkeit_VZ%2005_12_17.pdf",
+      "snippet": "Das verdrängte Risiko Für Berufsunfähigkeit richtig vorsorgen Mit der Erhöhung des Rentenalters auf 67 Jahre wird es immer …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/sacm-optimizer",
+  "slug": "snapkitty-sacm-optimizer",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/sacm-optimizer",
+  "created_at": "2026-09-03T10:22:09.000Z",
+  "updated_at": "2026-09-03T10:22:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jeuxvideo.com toute l'actualité du jeu vidéo et du hardware",
+      "url": "https://www.jeuxvideo.com/",
+      "snippet": "Retrouvez toute l'actualité du jeu video sur PC et consoles. Faites le plein de tests de jeux vidéo et de soluce. Découvrez aussi tous …"
+    },
+    {
+      "title": "PC : News, vidéos, tests et preview de jeux PC sur jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/pc.htm",
+      "snippet": "Retrouvez toute l'actualité PC sur jeuxvideo.com. Retrouvez les derniers tests, vidéos, news et astuces de vos jeux préférés sur PC !"
+    },
+    {
+      "title": "Utiliser Le Lecteur Sd En Mode Gamecube Sur Wii",
+      "url": "https://gueux-forum.net/topic/180163-utiliser-le-lecteur-sd-en-mode-gamecube-sur-wii/",
+      "snippet": "Jan 15, 2008 · Bonsoir, Je ne suis pas sur d'avoir bien compris : Est ce que les sauvegardes des jeux game cube peuvent se placer …"
+    },
+    {
+      "title": "[cyclods Evolution] Lancer Des Jeux Gba ... - CycloDS - Forum Gueux",
+      "url": "https://gueux-forum.net/topic/160275-cyclods-evolution-lancer-des-jeux-gba/",
+      "snippet": "Jun 20, 2007 · salut, comment veux-tu que tes jeux GBA n'utilisent pas la ram de la SC, sachant que le CycloDS Evolution …"
+    },
+    {
+      "title": "Forums JV: participez aux forums de vos jeux préférés avec jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums.htm",
+      "snippet": "Bienvenue sur les forums de jeuxvideo.com. Venez retrouver, discuter, partager avec notre communauté sur un large éventail de …"
+    }
+  ]
+}

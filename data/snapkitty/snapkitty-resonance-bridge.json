@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/snapkitty-resonance-bridge",
+  "slug": "snapkitty-snapkitty-resonance-bridge",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/snapkitty-resonance-bridge",
+  "created_at": "2026-09-03T09:58:50.000Z",
+  "updated_at": "2026-09-03T09:58:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Belfius Bank Zemst Brusselsesteenweg (info en openingsuren ...",
+      "url": "https://www.spaargids.be/sparen/belfius-bank/zemst-brusselsesteenweg-110.html",
+      "snippet": "Belfius Bank Zemst Brusselsesteenweg (info en openingsuren) - Bent u op zoek naar de contactgegevens van de Belfius Bank Zemst …"
+    },
+    {
+      "title": "Belfius Bank Wetteren Stationsstraat (info en openingsuren ...",
+      "url": "https://www.spaargids.be/sparen/belfius-bank/wetteren-stationsstraat-53.html",
+      "snippet": "Belfius Bank Wetteren Stationsstraat (info en openingsuren) - Bent u op zoek naar de contactgegevens van de Belfius Bank Wetteren …"
+    },
+    {
+      "title": "比利时有两家银行，是dexia 银行和belfius bank（出处为2013年欧洲银 …",
+      "url": "https://www.zhihu.com/question/27939505",
+      "snippet": "比利时有两家银行，一家是dexia 银行，一家是belfius bank（出处为2013年欧洲银行排名）。另外我查到2012…"
+    },
+    {
+      "title": "Zichtrekeningen bij Belfius Bank - Spaargids.be",
+      "url": "https://www.spaargids.be/sparen/zichtrekeningen-belfius-bank.html",
+      "snippet": "Welke zichtrekeningen worden aangeboden bij Belfius Bank? Vergelijk hier de jaarlijks aangerekende kosten en vind welke …"
+    },
+    {
+      "title": "Belfius Bank - Spaargids.be",
+      "url": "https://www.spaargids.be/sparen/belfius-bank-kantoren.html",
+      "snippet": "Belfius Bank kantoren Contact opnemen met een bankkantoor van Belfius Bank? Raadpleeg de openingsuren, het adres en het …"
+    }
+  ]
+}

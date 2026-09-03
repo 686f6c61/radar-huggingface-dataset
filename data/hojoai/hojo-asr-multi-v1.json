@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "HojoAI/Hojo-ASR-Multi-V1",
+  "slug": "hojoai-hojo-asr-multi-v1",
+  "author": "HojoAI",
+  "url": "https://huggingface.co/HojoAI/Hojo-ASR-Multi-V1",
+  "created_at": "2026-08-14T07:36:21.000Z",
+  "updated_at": "2026-08-30T11:17:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "es",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 24,
+  "downloads_30d": 74,
+  "trending_score": 22,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11968332510,
+  "storage_human": "12.0 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HojoAI/Hojo-ASR-Multi-V1 · Hugging Face",
+      "url": "https://huggingface.co/HojoAI/Hojo-ASR-Multi-V1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HojoAI/Hojo-ASR-V1 · Hugging Face",
+      "url": "https://huggingface.co/HojoAI/Hojo-ASR-V1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - HojoAI/Hojo-ASR: Hojo-ASR is a high-performance speech ...",
+      "url": "https://github.com/HojoAI/Hojo-ASR",
+      "snippet": "Hojo-ASR-V1 is a high-performance conversational speech recognition model powered by the Qwen3 LLM decoder. It adopts the classic Encoder-Adapter-LLM framework, fully leveraging acoustic fine-grained features and strong LLM semantic capabilities. Optimized with multi-stage modular training and reinforcement learning, the model specializes in complex real-world scenarios including noisy ..."
+    },
+    {
+      "title": "GitHub - HojoAI/Hojo-ASR: Hojo-ASR is a high-performance speech ...",
+      "url": "https://github.com/HojoAI/Hojo-ASR/tree/main",
+      "snippet": "Introduction Hojo-ASR-V1 is a high-performance conversational speech recognition model powered by the Qwen3 LLM decoder. It adopts the classic Encoder-Adapter-LLM framework with a customized multi-frame acoustic fusion architecture, fully leveraging acoustic fine-grained features and strong LLM semantic capabilities."
+    },
+    {
+      "title": "HojoAI on X: \"#7 globally. #1 open multilingual ASR model. Hojo-ASR ...",
+      "url": "https://x.com/hojoHQ/status/2094766358018113781",
+      "snippet": "#7 globally. #1 open multilingual ASR model. Hojo-ASR-Multi-V1 is officially live on the Open ASR Leaderboard. With an average WER of 3.54% across five languages, it now stands alongside some of the world&#x27;s leading proprietary speech recognition systems. Open weights. Public evaluation files. Re…"
+    }
+  ]
+}

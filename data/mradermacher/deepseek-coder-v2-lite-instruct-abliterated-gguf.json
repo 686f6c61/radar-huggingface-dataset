@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/DeepSeek-Coder-V2-Lite-Instruct-abliterated-GGUF",
   "created_at": "2026-08-18T05:46:17.000Z",
-  "updated_at": "2026-08-18T08:06:11.000Z",
+  "updated_at": "2026-09-02T10:59:37.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -15,8 +15,8 @@
     "transformers",
     "gguf",
     "en",
-    "base_model:criscarleo/DeepSeek-Coder-V2-Lite-Instruct-abliterated",
-    "base_model:quantized:criscarleo/DeepSeek-Coder-V2-Lite-Instruct-abliterated",
+    "base_model:criscar22/DeepSeek-Coder-V2-Lite-Instruct-abliterated",
+    "base_model:quantized:criscar22/DeepSeek-Coder-V2-Lite-Instruct-abliterated",
     "endpoints_compatible",
     "region:us",
     "conversational"
@@ -28,7 +28,7 @@
   "parameters_human": "15.71B",
   "storage_bytes": 112849133440,
   "storage_human": "112.8 GB",
-  "base_model": "criscarleo/DeepSeek-Coder-V2-Lite-Instruct-abliterated",
+  "base_model": "criscar22/DeepSeek-Coder-V2-Lite-Instruct-abliterated",
   "formats": [
     "gguf"
   ],

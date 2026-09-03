@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/gitworld",
+  "slug": "snapkitty-gitworld",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/gitworld",
+  "created_at": "2026-09-03T10:32:12.000Z",
+  "updated_at": "2026-09-03T10:32:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6267090,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps. If there are …"
+    },
+    {
+      "title": "Карти Довідка",
+      "url": "https://support.google.com/maps/?hl=uk",
+      "snippet": "Офіційний довідковий центр Карти, де можна знайти поради та навчальні посібники щодо користування цим продуктом, а …"
+    },
+    {
+      "title": "6 tính năng AI vừa được cập nhật của Google Maps",
+      "url": "https://tinhte.vn/thread/6-tinh-nang-ai-vua-duoc-cap-nhat-cua-google-maps.3770081/",
+      "snippet": "Mar 14, 2024 · Bây giờ Google Maps cũng đã được tích hợp AI, với 1 bản nâng cấp lớn. Dưới đây là 6 tính năng Ai của Google …"
+    },
+    {
+      "title": "透過 Google 地圖下載可離線瀏覽的區域地圖",
+      "url": "https://support.google.com/maps/answer/6291838?hl=zh-Hant&co=GENIE.Platform%3DAndroid",
+      "snippet": "透過手機或平板電腦下載的離線地圖，必須在過期前更新。 假如離線地圖將在 15 天內過期，只要裝置連上 Wi-Fi，Google 地圖就會嘗 …"
+    },
+    {
+      "title": "البدء في استخدام \"خرائط Google\" - Android - مساعدة خرائط",
+      "url": "https://support.google.com/maps/answer/144349?hl=ar&co=GENIE.Platform%3DAndroid",
+      "snippet": "ستساعدك هذه المقالة في إعداد الميزات المختلفة في \"خرائط Google\" وشرحها وتعلُّم الأساسيات ذات الصلة. يمكنك استخدام تطبيق \"خرائط Google\" على جهازك الجوّال أو \"خرائط Google\" …"
+    }
+  ]
+}

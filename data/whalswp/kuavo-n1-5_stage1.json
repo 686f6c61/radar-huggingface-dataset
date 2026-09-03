@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Whalswp/Kuavo-N1.5_Stage1",
+  "slug": "whalswp-kuavo-n1-5_stage1",
+  "author": "Whalswp",
+  "url": "https://huggingface.co/Whalswp/Kuavo-N1.5_Stage1",
+  "created_at": "2026-09-03T10:28:06.000Z",
+  "updated_at": "2026-09-03T10:55:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48618983516,
+  "storage_human": "48.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Die Schweizer Suchmaschine - search.ch",
+      "url": "https://search.ch/",
+      "snippet": "Die Schweizer Suchmaschine bietet Telefonbuch, Wetter, Karten, Routenplaner, TV-Programm und mehr für eine einfache und …"
+    },
+    {
+      "title": "Handyanruf 027948 aus der Schweiz? Wallis - telefon-kontakte.ch",
+      "url": "https://telefon-kontakte.ch/027948-swisscom-schweiz-ag/",
+      "snippet": "Wer ruft an? 027948: Wallis Du hast einen Anruf aus dem schweizer Mobilfunknetz bekommen? 027/948/0000 bis 9999 wird von …"
+    },
+    {
+      "title": "Wer ruft an? Telefonnummern Rückwärtssuche und Anruferkennung",
+      "url": "https://www.tellows.de/0",
+      "snippet": "Wer kennt nicht die Situation? Dein Telefon klingelt und auf dem Display steht irgendeine Telefonnummer, die du noch nie gesehen …"
+    },
+    {
+      "title": "Wer ruft an? Telefonnummern Rückwärtssuche und Anruferkennung",
+      "url": "https://www.tellows.ch/",
+      "snippet": "Wer kennt nicht die Situation? Wer ruft mich jetzt schon wieder an? Diese Nummer kenne ich nicht! Genau das ist dir sicherlich …"
+    },
+    {
+      "title": "Ricerca numeri di telefono ☎ local.ch",
+      "url": "https://www.local.ch/it/ricerca-numeri-di-telefono",
+      "snippet": "Trova informazioni e indirizzi in modo semplice e veloce con la ricerca numeri di telefono in Svizzera di local.ch Cerca e trova ora!"
+    }
+  ]
+}

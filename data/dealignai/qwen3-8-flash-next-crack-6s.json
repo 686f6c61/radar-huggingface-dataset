@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "dealignai/Qwen3.8-Flash-Next-CRACK-6S",
+  "slug": "dealignai-qwen3-8-flash-next-crack-6s",
+  "author": "dealignai",
+  "url": "https://huggingface.co/dealignai/Qwen3.8-Flash-Next-CRACK-6S",
+  "created_at": "2026-09-03T10:03:17.000Z",
+  "updated_at": "2026-09-03T10:13:40.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "apple-silicon",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "jang",
+    "jang-6s",
+    "vision-language",
+    "video",
+    "reasoning",
+    "thinking",
+    "agent",
+    "tool-use",
+    "moe",
+    "ngram-embedding",
+    "harmbench",
+    "mmlu",
+    "imatrix",
+    "awq",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:JANGQ-AI/Qwen3.8-Flash-Next-JANG_6S",
+    "base_model:quantized:JANGQ-AI/Qwen3.8-Flash-Next-JANG_6S",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 114122899516,
+  "storage_human": "114.1 GB",
+  "base_model": "JANGQ-AI/Qwen3.8-Flash-Next-JANG_6S",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "148 万浏览 · 693 关注 · 411 回答 查看全部 热点 问题 潜力好问题 乐华艺人金子涵官宣退圈，如何看待她的选择？ 444 万浏览 · 285 关 …"
+    },
+    {
+      "title": "黑暗執行緒",
+      "url": "https://blog.darkthread.net/",
+      "snippet": "Aug 23, 2026 · .NET Core.NET AD ADO.NET AI AJAX Algorithm Android AngularJS Arduino ARM ASP.NET Core ASP.NET MVC …"
+    },
+    {
+      "title": "Github Copilot 聊天視窗指令整理-黑暗執行緒",
+      "url": "https://blog.darkthread.net/blog/copilot-chat-cheatsheet/",
+      "snippet": "Oct 12, 2025 · 使用 VSCode Github Copilot Chat 視窗跟副駕駛聊天時，善用一些特殊指令語法可讓你事半功倍，我老記不住(另一方 …"
+    },
+    {
+      "title": "有问题，就会有答案 - 知乎",
+      "url": "https://www.zhihu.com/billboard",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

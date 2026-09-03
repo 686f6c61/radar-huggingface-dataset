@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "reyansh38771/sn97____0pentensor____uid228____hk5ChzY",
+  "slug": "reyansh38771-sn97____0pentensor____uid228____hk5chzy",
+  "author": "reyansh38771",
+  "url": "https://huggingface.co/reyansh38771/sn97____0pentensor____uid228____hk5ChzY",
+  "created_at": "2026-09-03T01:59:12.000Z",
+  "updated_at": "2026-09-03T01:59:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916585166,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reyansh38771/sn97____monate615____uid157____hk5CvaP · Hugging Face",
+      "url": "https://huggingface.co/reyansh38771/sn97____monate615____uid157____hk5CvaP",
+      "snippet": "You need to agree to share your contact information to access this model This repository is publicly accessible, but you have to accept the conditions to access its files and content."
+    },
+    {
+      "title": "reyansh38771/sn97____dora7____uid216____hk5EX35 · Hugging Face",
+      "url": "https://huggingface.co/reyansh38771/sn97____dora7____uid216____hk5EX35",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The Subnet an AI Agent Built: Inside Distil (SN97) - tao.media",
+      "url": "https://www.tao.media/the-subnet-an-ai-agent-built-inside-distil-sn97/",
+      "snippet": "An AI agent built a Bittensor subnet in 48 hours using decentralized inference from Chutes. It pays 100% of emissions to whoever builds the best compressed 35B AI model. The winner&#x27;s model is free at chat.arbos.life. Agents are already running businesses on Bittensor."
+    },
+    {
+      "title": "Albedo (SN97) — Model Distillation Network | Bittensor.ai",
+      "url": "https://bittensor.ai/subnets/97",
+      "snippet": "Competitive model distillation on Bittensor. Miners train small language models under a 25-axis evaluation framework. Winner earns 100% subnet emissions."
+    },
+    {
+      "title": "How To Mine on Bittensor SN 97 Pt.2 [ SUBNET UNREGISTERED MARCH 2026 ]",
+      "url": "https://www.youtube.com/watch?v=-NvvmvBz-bI",
+      "snippet": "In this action packed guide you will be learning setting up your miner hotkeys, compiling your bittensor node, cloning the repo, synching the chain via rclone and setting up your firewall. This is ..."
+    }
+  ]
+}

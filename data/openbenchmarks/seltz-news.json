@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "openbenchmarks/seltz-news",
+  "slug": "openbenchmarks-seltz-news",
+  "author": "openbenchmarks",
+  "url": "https://huggingface.co/openbenchmarks/seltz-news",
+  "created_at": "2026-09-03T02:06:59.000Z",
+  "updated_at": "2026-09-03T02:07:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "web-search",
+    "search-api",
+    "company-news",
+    "leaderboard",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing the Dynamic News Search Benchmark - seltz.ai",
+      "url": "https://seltz.ai/blog/seltz-news-benchmark",
+      "snippet": "Today we are releasing the Dynamic News Search Benchmark, a daily evaluation of search providers on time-sensitive news retrieval. The benchmark has been running internally at Seltz for several months."
+    },
+    {
+      "title": "factual-lookup-company-news-search/data/websearch-runs/company-news ...",
+      "url": "https://github.com/openbenchmarks-labs/factual-lookup-company-news-search/blob/main/data/websearch-runs/company-news-public-119/news-flux-askflux-amount/seltz_news.raw.json",
+      "snippet": "Benchmark to evaluate web search apis for AI. Contribute to openbenchmarks-labs/factual-lookup-company-news-search development by creating an account on GitHub."
+    },
+    {
+      "title": "Answer concepts - Seltz",
+      "url": "https://docs.seltz.ai/answer/answer-concepts",
+      "snippet": "Answer tiers The model parameter selects how much work Seltz does to answer your question: ... An omitted or unrecognized model falls back to seltz-base; the response shape is unchanged either way."
+    },
+    {
+      "title": "factual-lookup-company-news-search/data/company-news/official-runs ...",
+      "url": "https://github.com/openbenchmarks-labs/factual-lookup-company-news-search/blob/main/data/company-news/official-runs/20260816T020806Z/raw_calls/news-friskai-lead/seltz_news.json",
+      "snippet": "Benchmark to evaluate web search apis for AI. Contribute to openbenchmarks-labs/factual-lookup-company-news-search development by creating an account on GitHub."
+    },
+    {
+      "title": "Seltz - Web Knowledge for AI Agents",
+      "url": "https://seltz.ai/",
+      "snippet": "Who is Seltz for? Seltz is designed for teams building AI systems such as large language model applications, RAG pipelines, and autonomous agents that require reliable and efficient access to live web knowledge."
+    }
+  ]
+}

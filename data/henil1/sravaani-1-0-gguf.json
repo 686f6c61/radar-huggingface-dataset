@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "Henil1/Sravaani-1.0-GGUF",
+  "slug": "henil1-sravaani-1-0-gguf",
+  "author": "Henil1",
+  "url": "https://huggingface.co/Henil1/Sravaani-1.0-GGUF",
+  "created_at": "2026-09-03T10:39:19.000Z",
+  "updated_at": "2026-09-03T10:42:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "parakeet.cpp",
+  "languages": [
+    "hi",
+    "mr",
+    "ta",
+    "te",
+    "bn",
+    "gu",
+    "kn",
+    "ml",
+    "pa",
+    "or",
+    "as",
+    "en"
+  ],
+  "tags": [
+    "parakeet.cpp",
+    "gguf",
+    "ggml",
+    "asr",
+    "speech-recognition",
+    "indic",
+    "hindi",
+    "conformer",
+    "transducer",
+    "tdt",
+    "automatic-speech-recognition",
+    "hi",
+    "mr",
+    "ta",
+    "te",
+    "bn",
+    "gu",
+    "kn",
+    "ml",
+    "pa",
+    "or",
+    "as",
+    "en",
+    "base_model:ARTPARK-IISc/SraVaani-1.0",
+    "base_model:finetune:ARTPARK-IISc/SraVaani-1.0",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "ARTPARK-IISc/SraVaani-1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "After Effects: Traduction des noms des effets anglais vers français",
+      "url": "https://www.repaire.net/forums/articles/after-effects-traduction-des-noms-des-effets-anglais-vers-francais.234/",
+      "snippet": "Sep 20, 2008 · Le glossaire des effets d'After Effects en anglais et en français ! Sachez que si vous souhaitez lancer After Effects en …"
+    },
+    {
+      "title": "ARTPARK-IISc/SraVaani-1.0 · Hugging Face",
+      "url": "https://huggingface.co/ARTPARK-IISc/SraVaani-1.0",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Traduction | Adobe Premiere Pro - Le Repaire",
+      "url": "https://www.repaire.net/forums/discussions/traduction.126439/",
+      "snippet": "Jun 1, 2006 · J'ai essayé de trouver une liste de traduction français/anglais, mais pas trouver. A quelqu'un d'entre vous peut-être une …"
+    },
+    {
+      "title": "README.md · ARTPARK-IISc/SraVaani-1.0 at main - Hugging Face",
+      "url": "https://huggingface.co/ARTPARK-IISc/SraVaani-1.0/blob/main/README.md",
+      "snippet": "14 languages sravaani_tdt custom_code Eval Results arxiv:2608.08235 License:mit Model card FilesFiles and versions xet Community 6 Copy to bucket new main SraVaani-1.0 /README.md SujithPulikodan Update README.md 39c6add verified13 days ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete 7.67 kB metadata"
+    },
+    {
+      "title": "Français-anglais, English-French - Français / French - The Free ...",
+      "url": "https://forum.thefreedictionary.com/postst249861_%ec%8b%9c%ec%b2%ad-%ed%8c%8c%eb%ac%98--Exhuma--%ec%a0%84%ec%b2%b4-%ec%98%81%ed%99%94--Korean--%ec%a0%84%ec%b2%b4-%eb%b2%84%ec%a0%84-HD-%eb%8b%a4%ec%9a%b4%eb%a1%9c%eb%93%9c2024.aspx",
+      "snippet": "Feb 17, 2023 · Français-anglais, English-French Topics Topic Starter Replies Views Last Post De / ce Tubenect K 1 6,366 Friday, …"
+    }
+  ]
+}

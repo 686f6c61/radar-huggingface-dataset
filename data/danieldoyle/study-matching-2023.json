@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "danieldoyle/study-matching-2023",
+  "slug": "danieldoyle-study-matching-2023",
+  "author": "danieldoyle",
+  "url": "https://huggingface.co/danieldoyle/study-matching-2023",
+  "created_at": "2026-09-03T10:01:42.000Z",
+  "updated_at": "2026-09-03T10:01:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/",
+      "snippet": "Klesající hladina Orlíku odhaluje barely a další předměty, které byly roky ukryté pod vodou. Jenže právě rezavý sud má na této …"
+    },
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/500",
+      "snippet": "Jejda, tak tohle se nepovedlo. Pracujeme na opravě."
+    },
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/404",
+      "snippet": "Jejda, tahle adresa neexistuje."
+    },
+    {
+      "title": "Seznam Zprávy – Seznam.cz",
+      "url": "https://www.seznam.cz/zdroj/286-seznam-zpravy",
+      "snippet": "Přijít do školy o několik minut dřív tentokrát nestačilo. Před pardubickým gymnáziem čekali studenti už od půl páté ráno, první dorazil …"
+    },
+    {
+      "title": "Seznam Zprávy",
+      "url": "https://www.seznamzpravy.cz/",
+      "snippet": "Videa, články, aktuální zprávy z domova i ze světa. Zpravodajství a publicistika od redakce Seznam.cz."
+    }
+  ]
+}

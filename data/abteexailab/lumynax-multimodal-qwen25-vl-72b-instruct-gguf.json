@@ -5,8 +5,8 @@
   "author": "AbteeXAILab",
   "url": "https://huggingface.co/AbteeXAILab/lumynax-multimodal-qwen25-vl-72b-instruct-gguf",
   "created_at": "2026-05-14T00:24:57.000Z",
-  "updated_at": "2026-09-02T23:14:28.000Z",
-  "license": "other",
+  "updated_at": "2026-09-03T02:32:17.000Z",
+  "license": "qwen",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
   "library": "llama.cpp",
@@ -32,6 +32,8 @@
     "outdated",
     "en",
     "mi",
+    "base_model:Qwen/Qwen2.5-VL-72B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-VL-72B-Instruct",
     "license:other",
     "endpoints_compatible",
     "region:us",
@@ -44,7 +46,7 @@
   "parameters_human": "72.71B",
   "storage_bytes": 49577522080,
   "storage_human": "49.6 GB",
-  "base_model": null,
+  "base_model": "Qwen/Qwen2.5-VL-72B-Instruct",
   "formats": [
     "gguf"
   ],

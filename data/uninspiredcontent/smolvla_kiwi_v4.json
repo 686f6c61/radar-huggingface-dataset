@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "UninspiredContent/smolvla_kiwi_v4",
+  "slug": "uninspiredcontent-smolvla_kiwi_v4",
+  "author": "UninspiredContent",
+  "url": "https://huggingface.co/UninspiredContent/smolvla_kiwi_v4",
+  "created_at": "2026-09-03T10:22:34.000Z",
+  "updated_at": "2026-09-03T10:43:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:UninspiredContent/KiwiSet2",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 7916340264,
+  "storage_human": "7.9 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Deep Van - 知乎",
+      "url": "https://www.zhihu.com/people/yang-lei-96-72",
+      "snippet": "Aug 17, 2026 · Deep Van是知乎用户，擅长回答金融、科技和生活问题，其个人星球为DeepVan的逃生地牢，回答风格直言不讳，获 …"
+    },
+    {
+      "title": "剪映专业版 v9.7 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-2077829-1-1.html",
+      "snippet": "Dec 5, 2025 · 会预合成的，请直接看视频【03草稿助手使用.mp4】压缩包解压即用，无需安装。小助手操作简单，2步打开直接把【 …"
+    },
+    {
+      "title": "『精品软件区』 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/forum-16-1.html",
+      "snippet": "1 day ago · 精品软件推荐，软件交流天地，汇集众多精彩评论，热心会员每日更新。找你所需要的，给你我分享的！这里不但有PC软 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "148 万浏览 · 693 关注 · 411 回答 查看全部 热点 问题 潜力好问题 乐华艺人金子涵官宣退圈，如何看待她的选择？ 444 万浏览 · 285 关 …"
+    }
+  ]
+}

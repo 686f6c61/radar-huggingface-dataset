@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/Ministral-3-3B-Reasoning-2512",
   "created_at": "2026-07-05T18:48:36.000Z",
-  "updated_at": "2026-08-31T01:30:26.000Z",
+  "updated_at": "2026-09-02T23:49:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/WorldReward-qwen35-9b-i1-GGUF",
+  "slug": "mradermacher-worldreward-qwen35-9b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/WorldReward-qwen35-9b-i1-GGUF",
+  "created_at": "2026-09-03T10:34:52.000Z",
+  "updated_at": "2026-09-03T11:00:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "reward-model",
+    "world-model",
+    "video-generation",
+    "camera-control",
+    "en",
+    "base_model:CodeGoat24/WorldReward-qwen35-9b",
+    "base_model:quantized:CodeGoat24/WorldReward-qwen35-9b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 110211442144,
+  "storage_human": "110.2 GB",
+  "base_model": "CodeGoat24/WorldReward-qwen35-9b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何打•？ - 知乎",
+      "url": "https://www.zhihu.com/question/21040260",
+      "snippet": "如何在输入法里输入这个符号？Google了很多发现都不对"
+    },
+    {
+      "title": "风靡一时的贝塔斯曼书友会是怎样衰落的？ - 知乎",
+      "url": "https://www.zhihu.com/question/20198185?sort=created",
+      "snippet": "其实和大家想象的完全不一样，贝塔斯曼其实是最早意识到网购挑战的几个公司之一。 在2000年第一波互联网大潮的时候，贝塔斯曼 …"
+    },
+    {
+      "title": "小约翰 - 知乎",
+      "url": "https://www.zhihu.com/people/lu-chen-xi-9-98",
+      "snippet": "3 days ago · 这轮月球开发浪潮和过去所有的太空面子工程都不一样。 它是当今少数值得公众关注的领域。 几千年后的历史课上不一 …"
+    },
+    {
+      "title": "鼠标dpi在哪里调，具体调节方法分为两种？",
+      "url": "https://www.zhihu.com/tardis/zm/art/386453567",
+      "snippet": "我们都知道，鼠标dpi调节一个合适的灵敏度是非常重要的，不能太高也不能太低。鼠标DPI越高，移动速度越快，反之，鼠标DPI越 …"
+    },
+    {
+      "title": "亚马逊 BOL 是什么意思？有什么作用？ - 知乎",
+      "url": "https://www.zhihu.com/question/569896102?write",
+      "snippet": "Dec 1, 2022 · 1.提单（BOL） 提单 （BOL） 是由承运人签发的文件，用于确认收到货件的货物。 空运提货单也称为“空运提单”。 亚马 …"
+    }
+  ]
+}

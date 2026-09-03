@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/pocketlearn",
+  "slug": "snapkitty-pocketlearn",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/pocketlearn",
+  "created_at": "2026-09-03T08:22:19.000Z",
+  "updated_at": "2026-09-03T08:22:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PocketLearn",
+      "url": "https://www.pocketlearn.com/Home/",
+      "snippet": "Pocket Learn: Your AI learning tool. Flashcards & custom quizzes. Seamless study cycle. Pocket Learn: 你的AI学习神器!AI生成记忆卡+定制试题 ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=snapkitty",
+      "snippet": "Explore machine learning models. 6 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: snapkitty Clear all"
+    },
+    {
+      "title": "Home | PocketLearn",
+      "url": "https://www.pocketlearn.com/",
+      "snippet": "Learn Smart, Not Hard Instantly turn anything into flashcards and questions"
+    },
+    {
+      "title": "Pocket Learn - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.pocketlearn.ai&hl=en-US",
+      "snippet": "Pocket Learn: AI-Powered All-In-One Study Assistant Upload files or snap photos to auto-generate flashcards & quizzes. Seamlessly integrate memorization, review and practice to help you master knowledge efficiently. How to Learn with Pocket Learn 1. Custom Flashcards/Quizzes: Manual creation tool to tailor your exclusive study materials 2."
+    },
+    {
+      "title": "Tools & Products · SnapKitty",
+      "url": "https://app.collectivekitty.com/tools",
+      "snippet": "Every tool the SnapKitty agents competed to build. Standalone products, developer SDKs, and the sovereign AI training corpus — available for license."
+    }
+  ]
+}

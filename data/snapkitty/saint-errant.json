@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/saint-errant",
+  "slug": "snapkitty-saint-errant",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/saint-errant",
+  "created_at": "2026-09-03T10:25:27.000Z",
+  "updated_at": "2026-09-03T10:25:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=tr",
+      "snippet": "Google'ı kullanabileceğiniz diğer diller: English Reklam Google Hakkında Google.com in English"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/webhp?gl=nf&hl=en&pws=0",
+      "snippet": "Advertising Business Solutions About Google Google.com © 2026 - Privacy - Terms"
+    },
+    {
+      "title": "Google - YouTube",
+      "url": "https://www.youtube.com/google",
+      "snippet": "Welcome to your front-row seat to Google I/O. Watch for the latest groundbreaking updates to Gemini models, developer platforms …"
+    },
+    {
+      "title": "Google Çeviri",
+      "url": "https://translate.google.com.tr/",
+      "snippet": "Google'ın ücretsiz olarak sunulan hizmeti, İngilizce ile 100'den fazla dil arasında kelime, ifade ve web sayfalarını anında çevirebilir."
+    }
+  ]
+}

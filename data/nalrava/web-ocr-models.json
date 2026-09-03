@@ -5,7 +5,7 @@
   "author": "nalrava",
   "url": "https://huggingface.co/nalrava/web-ocr-models",
   "created_at": "2026-08-26T03:31:12.000Z",
-  "updated_at": "2026-08-31T03:37:06.000Z",
+  "updated_at": "2026-09-02T07:06:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 44573007,
-  "storage_human": "45 MB",
+  "storage_bytes": 54517636,
+  "storage_human": "55 MB",
   "base_model": "PaddlePaddle/korean_PP-OCRv5_mobile_rec_onnx, PaddlePaddle/PP-OCRv5_mobile_det_onnx, snowfluke/ppu-paddle-ocr-models, stefanj0/PP-DocLayout-S-ONNX",
   "formats": [
     "onnx"

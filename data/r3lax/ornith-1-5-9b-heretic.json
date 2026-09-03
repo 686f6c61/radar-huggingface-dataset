@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "r3lax/Ornith-1.5-9B-heretic",
+  "slug": "r3lax-ornith-1-5-9b-heretic",
+  "author": "r3lax",
+  "url": "https://huggingface.co/r3lax/Ornith-1.5-9B-heretic",
+  "created_at": "2026-09-03T01:31:23.000Z",
+  "updated_at": "2026-09-03T01:31:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "text-generation",
+    "conversational",
+    "dataset:heretic-org/Semantic-Harmless",
+    "dataset:heretic-org/Semantic-Harmful",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:finetune:ornith-ai/Ornith-1.5-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "teddy19032/Ornith-1.5-9B-heretic · Hugging Face",
+      "url": "https://huggingface.co/teddy19032/Ornith-1.5-9B-heretic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "teddy19032/Ornith-1.5-9B-heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/teddy19032/Ornith-1.5-9B-heretic-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5-9B-heretic API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Dingdust/Ornith-1.5-9B-heretic",
+      "snippet": "Ornith 1.5 9B This model card documents Ornith-1.5-9B, the most lightweight member of the Ornith-1.5 family — a 9B dense model designed for efficient single-GPU deployment, and edge-deployable on mobile devices via its quantized Ornith-1.5-9B-Mobile variant."
+    },
+    {
+      "title": "GitHub - ornith-ai/Ornith-1 · GitHub",
+      "url": "https://github.com/ornith-ai/Ornith-1",
+      "snippet": "Aloha! 🌺 Ornith is a family of self-improving open-source models for agentic tasks. This repo covers both generations: 🐦 Ornith-1.5 (latest) — extends self-scaffolding into a complete end-to-end self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning. Model weights at HuggingFace, and more details ..."
+    },
+    {
+      "title": "Ornith 1.5 9B Heretic by Dingdust — VRAM 18.9GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Dingdust%2FOrnith-1.5-9B-heretic,47mcDsQXWfGbJlv8pWhCKh",
+      "snippet": "Rank the Ornith 1.5 9B Heretic capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

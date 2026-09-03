@@ -5,7 +5,7 @@
   "author": "thusinh1969",
   "url": "https://huggingface.co/thusinh1969/BrightoSV_AntiSpoof_V1.5-SE_iPROD",
   "created_at": "2026-02-05T00:25:14.000Z",
-  "updated_at": "2026-08-22T06:13:14.000Z",
+  "updated_at": "2026-09-03T04:16:33.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,6 +22,7 @@
   ],
   "tags": [
     "pytorch",
+    "tensorboard",
     "onnx",
     "audio",
     "voice-security",
@@ -51,8 +52,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3817916382,
-  "storage_human": "3.8 GB",
+  "storage_bytes": 3852083163,
+  "storage_human": "3.9 GB",
   "base_model": null,
   "formats": [
     "onnx"

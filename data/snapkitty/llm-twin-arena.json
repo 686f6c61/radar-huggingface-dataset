@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/llm-twin-arena",
+  "slug": "snapkitty-llm-twin-arena",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/llm-twin-arena",
+  "created_at": "2026-09-03T10:27:35.000Z",
+  "updated_at": "2026-09-03T10:27:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube チャンネルの作成",
+      "url": "https://support.google.com/youtube/answer/1646861?hl=ja",
+      "snippet": "Google アカウントがあれば、動画の再生、評価、チャンネル登録ができます。動画をアップロードしたり、コメントを投稿したり …"
+    },
+    {
+      "title": "Share videos and channels - Computer - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/57741?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Share YouTube videos Start watching a video on youtube.com. Under the video, click Share . A panel will open, presenting different …"
+    },
+    {
+      "title": "YouTube でアカウントを作成する - パソコン - YouTube ヘルプ",
+      "url": "https://support.google.com/youtube/answer/161805?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube にログインするには Google アカウント を作成する必要があります。Google アカウントを使用すると、評価、チャンネル …"
+    },
+    {
+      "title": "Crear un canal de YouTube",
+      "url": "https://support.google.com/youtube/answer/1646861?hl=es",
+      "snippet": "Crear un canal personal Sigue estas instrucciones para crear un canal que solo tú puedas gestionar. Inicia sesión en YouTube …"
+    },
+    {
+      "title": "Verificar sua conta do YouTube",
+      "url": "https://support.google.com/youtube/answer/171664?hl=pt-BR",
+      "snippet": "Também pode precisar verificar sua conta ao se inscrever. Observação: nem todas as operadoras aceitam mensagens de texto e/ou …"
+    }
+  ]
+}

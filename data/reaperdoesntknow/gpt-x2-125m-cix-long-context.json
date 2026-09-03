@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/GPT-X2-125M-CIx-Long-Context",
   "created_at": "2026-05-24T16:54:23.000Z",
-  "updated_at": "2026-09-01T13:15:47.000Z",
+  "updated_at": "2026-09-02T13:16:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

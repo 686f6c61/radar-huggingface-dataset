@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Resandula/netrocortex-qwen14b-lora",
+  "slug": "resandula-netrocortex-qwen14b-lora",
+  "author": "Resandula",
+  "url": "https://huggingface.co/Resandula/netrocortex-qwen14b-lora",
+  "created_at": "2026-09-03T10:08:15.000Z",
+  "updated_at": "2026-09-03T10:20:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "en",
+    "base_model:unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29551556126,
+  "storage_human": "29.6 GB",
+  "base_model": "unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PayPal Here PC/Tablet (Windows) - Login Error",
+      "url": "https://www.paypal-community.com/t5/Merchant-Products-and-Services/PayPal-Here-PC-Tablet-Windows-Login-Error/td-p/1574633",
+      "snippet": "Been having an issue with logging into Paypal Here on my PC or Tablet. They both are running Windows software and are both …"
+    },
+    {
+      "title": "Solved: Language Preferences - PayPal Community",
+      "url": "https://www.paypal-community.com/t5/My-account-settings-Archive/Language-Preferences/td-p/232212",
+      "snippet": "Help! I have an account in Spain. Yet my clients are English. How do I change the language preference so that they understand what …"
+    },
+    {
+      "title": "Kreuzworträtsel | Beobachter",
+      "url": "https://www.beobachter.ch/kreuzwortratsel",
+      "snippet": "3 days ago · Hier finden Sie Kreuzworträtsel aus dem Beobachter. Sie können das aktuelle direkt am Bildschirm ausfüllen oder es als …"
+    },
+    {
+      "title": "Austritt aus der Kirche? Das muss man dazu wissen - Beobachter",
+      "url": "https://www.beobachter.ch/burger-verwaltung/austritt-aus-der-kirche-das-muss-man-dazu-wissen-636933",
+      "snippet": "Sep 14, 2023 · Guter Rat Austritt aus der Kirche? Das muss man dazu wissen Aus einer religiösen Gemeinschaft auszutreten, ist ein …"
+    },
+    {
+      "title": "Automatic log in keeps getting turned on - PayPal Community",
+      "url": "https://www.paypal-community.com/t5/My-Account-Archives/Automatic-log-in-keeps-getting-turned-on/td-p/2381542",
+      "snippet": "Automatic log in keeps getting turned on Options Autologinbites Contributor Posted on ‎Oct-01-202012:25 AM Every two days, I get …"
+    }
+  ]
+}

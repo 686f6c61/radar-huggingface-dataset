@@ -5,7 +5,7 @@
   "author": "JasonZhanETH",
   "url": "https://huggingface.co/JasonZhanETH/test",
   "created_at": "2026-08-13T18:15:29.000Z",
-  "updated_at": "2026-09-02T05:50:19.000Z",
+  "updated_at": "2026-09-03T00:56:50.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
-  "storage_bytes": 1178335786759,
-  "storage_human": "1178.3 GB",
+  "storage_bytes": 1406425648579,
+  "storage_human": "1406.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/Sovereign-Event-Bus",
+  "slug": "snapkitty-sovereign-event-bus",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/Sovereign-Event-Bus",
+  "created_at": "2026-09-03T09:50:03.000Z",
+  "updated_at": "2026-09-03T09:50:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2560,
+  "storage_human": "2560 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SnapKitty Downloads — Sovereign OS Ecosystem",
+      "url": "https://collectivekitty.com/downloads",
+      "snippet": "8-phase boot sequence. VEG execution engine. SKCL coordination layer. KernelEventBus ring buffer. AppRegistry. Cryptographically sealed at every layer. INSTALL."
+    },
+    {
+      "title": "[Recap] Band of Agents Hackathon | lablab.ai",
+      "url": "https://lablab.ai/ai-hackathons/band-of-agents-hackathon",
+      "snippet": "This event has now ended, but you can still register for upcoming events on lablab.ai. ... Use Featherless AI to integrate open-source model inference into an ..."
+    },
+    {
+      "title": "agent-mesh · GitHub Topics",
+      "url": "https://github.com/topics/agent-mesh",
+      "snippet": "... ai-agent-platform agent-mesh model-routing. Updated on Jul 16 ... typescript fintech sacm sovereign-ai agent-mesh cryptographic-audit worm-chain snapkitty."
+    }
+  ]
+}

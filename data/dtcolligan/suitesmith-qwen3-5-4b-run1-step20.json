@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "dtcolligan/suitesmith-qwen3.5-4b-run1-step20",
+  "slug": "dtcolligan-suitesmith-qwen3-5-4b-run1-step20",
+  "author": "dtcolligan",
+  "url": "https://huggingface.co/dtcolligan/suitesmith-qwen3.5-4b-run1-step20",
+  "created_at": "2026-09-03T08:36:12.000Z",
+  "updated_at": "2026-09-03T09:43:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "suitesmith",
+    "grpo",
+    "prime-rl",
+    "verifiers",
+    "test-generation",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5174964736,
+  "parameters_human": "5.17B",
+  "storage_bytes": 10362827310,
+  "storage_human": "10.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.5",
+      "snippet": "Download the model via (after installing pip install huggingface_hub hf_transfer ). You can choose MXFP4_MOE (dynamic 4bit) or other quantized versions like UD-Q4_K_XL . We recommend using at least 2-bit dynamic quant UD-Q2_K_XL to balance size ..."
+    },
+    {
+      "title": "Qwen3 - How to Run & Fine-tune | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/tutorials/qwen3-how-to-run-and-fine-tune",
+      "snippet": "from unsloth import FastModel import torch model, tokenizer = FastModel.from_pretrained( model_name = \"unsloth/Qwen3-30B-A3B\", max_seq_length = 2048, # Choose any for long context! load_in_4bit = True, # 4 bit quantization to reduce memory load_in_8bit = False, # [NEW!] A bit more accurate, uses 2x memory full_finetuning = False, # [NEW!] We have full finetuning now!"
+    },
+    {
+      "title": "LocalAI models",
+      "url": "https://localai.io/docs/gallery.html",
+      "snippet": "To install the model with the CLI, run: local-ai models install parable-qwen3-4b-claude-fable-5"
+    },
+    {
+      "title": "Download Qwen-3 Models - MoE, Dense & Quantized Versions",
+      "url": "https://qwen-3.com/en/download",
+      "snippet": "Download the Qwen-3 model series via Ollama, HuggingFace, or ModelScope, including MoE, Dense, and their quantized versions."
+    },
+    {
+      "title": "Qwen3.6 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.6",
+      "snippet": "We also uploaded MTP GGUFs for the Qwen3.5 model family including: 0.8B, 2B, 4B, 9B, 27B, 35B-A3B, 122B-A10B and 397B-A17B."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Makaveliai/acestep-v15-base-sft",
+  "slug": "makaveliai-acestep-v15-base-sft",
+  "author": "Makaveliai",
+  "url": "https://huggingface.co/Makaveliai/acestep-v15-base-sft",
+  "created_at": "2026-09-03T10:09:00.000Z",
+  "updated_at": "2026-09-03T10:38:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "acestep",
+    "feature-extraction",
+    "audio",
+    "music",
+    "text2music",
+    "text-to-audio",
+    "custom_code",
+    "arxiv:2602.00744",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2393872518,
+  "parameters_human": "2.39B",
+  "storage_bytes": 4791666787,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wyposażenie i akcesoria samochodowe - Allegro.pl",
+      "url": "https://allegro.pl/kategoria/wyposazenie-i-akcesoria-samochodowe-253498",
+      "snippet": "Zobacz Wyposażenie i akcesoria samochodowe na Allegro.pl. Najwięcej ofert w jednym miejscu. Radość zakupów i 100% …"
+    },
+    {
+      "title": "Akcesoria Samochodowe - Niska cena na Allegro",
+      "url": "https://allegro.pl/listing?string=akcesoria+samochodowe",
+      "snippet": "Akcesoria Samochodowe Zróżnicowany zbiór ofert, najlepsze ceny i promocje. Wejdź i znajdź to, czego szukasz!"
+    },
+    {
+      "title": "Akcesoria samochodowe - Allegro Lokalnie",
+      "url": "https://allegrolokalnie.pl/oferty/q/akcesoria%20samochodowe/",
+      "snippet": "Zobacz akcesoria samochodowe na Allegro Lokalnie - Wiele ofert, ogłoszeń i licytacji w jednym miejscu. Radość zakupów i 100% …"
+    },
+    {
+      "title": "Wyposażenie i akcesoria samochodowe - Allegro Lokalnie",
+      "url": "https://allegrolokalnie.pl/oferty/motoryzacja/wyposazenie-i-akcesoria-samochodowe-253498",
+      "snippet": "Wyposażenie i akcesoria samochodowe na Allegro Lokalnie. Wiele ofert w jednym miejscu. Radość zakupów i 100% bezpieczeństwa …"
+    },
+    {
+      "title": "Części samochodowe - nowe i używane w niskich cenach | OLX",
+      "url": "https://www.olx.pl/motoryzacja/czesci-samochodowe/",
+      "snippet": "Zależnie od zakresu naprawy, na OLX znajdziesz szeroki wybór części, obejmujący zarówno drobne akcesoria samochodowe, opony …"
+    }
+  ]
+}

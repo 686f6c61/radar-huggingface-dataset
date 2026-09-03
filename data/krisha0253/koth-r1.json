@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "krisha0253/koth-r1",
+  "slug": "krisha0253-koth-r1",
+  "author": "krisha0253",
+  "url": "https://huggingface.co/krisha0253/koth-r1",
+  "created_at": "2026-08-25T15:44:40.000Z",
+  "updated_at": "2026-09-03T07:35:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25636,
+  "storage_human": "25636 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "krisha0253 (kristianharrington) - Hugging Face",
+      "url": "https://huggingface.co/krisha0253",
+      "snippet": "Sort: Recently updated. krisha0253/koth-r1. Updated 7 minutes ago. krisha0253/koth-r2. Updated 8 minutes ago. krisha0253/koth-r3"
+    },
+    {
+      "title": "krisha0253/koth-r1 · Hugging Face",
+      "url": "https://huggingface.co/krisha0253/koth-r1",
+      "snippet": "krisha0253 / koth-r1 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-R1",
+      "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+      "snippet": "DeepSeek-R1-Zero, a model trained via large-scale reinforcement learning (RL) without supervised fine-tuning (SFT) as a preliminary step, demonstrated remarkable performance on reasoning."
+    },
+    {
+      "title": "deepseek-r1: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/deepseek-r1-deepseek-ai",
+      "snippet": "Overview DeepSeek-R1 is a reasoning model with 671 billion total parameters and 37 billion activated parameters trained by deepseek-ai that achieves performance comparable to OpenAI-o1 across math, code, and reasoning tasks. The model uses a mixture-of-experts architecture based on the DeepSeek-V3 foundation and supports a 128K token context length. What makes this model distinctive is its ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

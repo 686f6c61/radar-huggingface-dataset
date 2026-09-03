@@ -5,7 +5,7 @@
   "author": "aufjsufjaujda3",
   "url": "https://huggingface.co/aufjsufjaujda3/a2a",
   "created_at": "2025-10-25T23:11:11.000Z",
-  "updated_at": "2026-08-28T23:06:11.000Z",
+  "updated_at": "2026-09-03T01:33:39.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",
-  "storage_bytes": 12782476886,
-  "storage_human": "12.8 GB",
+  "storage_bytes": 15310826410,
+  "storage_human": "15.3 GB",
   "base_model": null,
   "formats": [
     "gguf"

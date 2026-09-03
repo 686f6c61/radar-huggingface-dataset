@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/sovereign-pirtm",
+  "slug": "snapkitty-sovereign-pirtm",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/sovereign-pirtm",
+  "created_at": "2026-09-03T10:16:27.000Z",
+  "updated_at": "2026-09-03T10:16:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Characters born on March 2nd | ACDB",
+      "url": "https://www.animecharactersdatabase.com/birthdays.php?x=0&theday=2&themonth=Mar",
+      "snippet": "Browse birthdays by month and day, discover characters born on today's date, or search for a specific character to find their official …"
+    },
+    {
+      "title": "celebrating every birthday you can imagine — Search By Date",
+      "url": "https://fictional-birthdays.tumblr.com/date",
+      "snippet": "May 28, 2017 · I have a pretty huge log of fictional birthdays that I'm constantly adding to, so if you want to make sure I have the …"
+    },
+    {
+      "title": "Characters born in March | ACDB",
+      "url": "https://www.animecharactersdatabase.com/birthdays.php?month=Mar",
+      "snippet": "Browse birthdays by month and day, discover characters born on today's date, or search for a specific character to find their official …"
+    },
+    {
+      "title": "Birthday Calendar for Characters – aniSearch.com",
+      "url": "https://www.anisearch.com/character/birthdays",
+      "snippet": "This page gives you an overview on which characters are having a birthday in any selected month…"
+    },
+    {
+      "title": "Video game history on March 2 · who was born, died and premiered",
+      "url": "https://efemeridesvideojuegos.com/en/on-this-day/march-2/",
+      "snippet": "Frequently asked questions Who was born on March 2? People born on March 2 include: Edmund McMillen (1980); SonicFox (1998); …"
+    }
+  ]
+}

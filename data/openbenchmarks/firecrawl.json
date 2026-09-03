@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "openbenchmarks/firecrawl",
+  "slug": "openbenchmarks-firecrawl",
+  "author": "openbenchmarks",
+  "url": "https://huggingface.co/openbenchmarks/firecrawl",
+  "created_at": "2026-09-03T02:06:41.000Z",
+  "updated_at": "2026-09-03T02:06:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "web-search",
+    "search-api",
+    "company-news",
+    "leaderboard",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Benchmarks: Open Retrieval Evaluations | Firecrawl",
+      "url": "https://www.firecrawl.dev/benchmarks",
+      "snippet": "Open, reproducible benchmarks for developer and web data retrieval. Fixed datasets, published methodology, and per-system numbers you can check."
+    },
+    {
+      "title": "Releases · firecrawl/firecrawl - GitHub",
+      "url": "https://github.com/firecrawl/firecrawl/releases",
+      "snippet": "Firecrawl v2.11. Improvements Firecrawl Research Index — Added a specialized index for agentic AI/ML research: search across 3M+ arXiv papers and the GitHub code behind them (issues, merged PRs, and READMEs, refreshed daily), fetch a paper&#x27;s details or related work, and check claims against full text. It has state-of-the-art recall on arXivQA, outperforming the next best provider by 18% at ..."
+    },
+    {
+      "title": "Firecrawl - The context API to search, scrape, and interact with the ...",
+      "url": "https://www.firecrawl.dev/",
+      "snippet": "Firecrawl is not just a scraper or a search API — it&#x27;s the infrastructure layer that helps AI systems find, read, and act on information across the live web. Search, scrape, and interact work together on top of deep web data infrastructure including crawling, rendering, extraction, and indexing."
+    },
+    {
+      "title": "Firecrawl | Google AI Studio",
+      "url": "https://aistudio.google.com/case-studies/firecrawl",
+      "snippet": "As the Gemini model family evolves, Firecrawl plans to integrate new capabilities to further improve how AI agents interact with real-world web data. To start building your own applications, explore the capabilities of Gemini models in our API documentation."
+    },
+    {
+      "title": "Openbenchmarks",
+      "url": "https://openbenchmarks.com/",
+      "snippet": "Independent benchmarks for build-vs-buy decisions. Verifiable, reproducible and open source."
+    }
+  ]
+}

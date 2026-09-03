@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Bigwolfs/Ultrareal",
+  "slug": "bigwolfs-ultrareal",
+  "author": "Bigwolfs",
+  "url": "https://huggingface.co/Bigwolfs/Ultrareal",
+  "created_at": "2026-09-03T01:38:46.000Z",
+  "updated_at": "2026-09-03T01:39:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 469315368,
+  "storage_human": "469 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UltraWolf/UltraWolfmodel · Hugging Face",
+      "url": "https://huggingface.co/UltraWolf/UltraWolfmodel",
+      "snippet": "Use this model Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and Limitations Recommendations How to Get Started with the Model Training Details Training Data Training Procedure Evaluation Testing Data, Factors & Metrics Results Model ..."
+    },
+    {
+      "title": "ULtraReal (12GB) ft. Simv4 CLIP-G - 12GB_V3_ULtraReal+Sim | Pony ...",
+      "url": "https://civitai.com/models/1051705/ultrareal-12gb-ft-simv4-clip-g",
+      "snippet": "ULtraReal (12GB) ft. Simv4 CLIP-G Full Checkpoint do not load additional CLIP or VAE This model uses Simulacrum CLIP at a custom weight This model ..."
+    },
+    {
+      "title": "Realistic AI Image Generator for Photos & Portraits | getimg.ai",
+      "url": "https://getimg.ai/realistic-ai-generator",
+      "snippet": "Create realistic AI images from text or reference photos with getimg.ai. Generate portraits, product shots, and marketing visuals with top AI models."
+    },
+    {
+      "title": "stablediffusionapi/biglust-v16 · Hugging Face",
+      "url": "https://huggingface.co/stablediffusionapi/biglust-v16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TD-UltraReal - v1.0 | Stable Diffusion 1.x Checkpoint | Civitai",
+      "url": "https://civitai.com/models/106000/td-ultrareal",
+      "snippet": "TD-UltraReal We&#x27;re trying to hone in on the most dramatic photorealistic styling possible A general purpose model focusing on ultra photorealistic styling, perfect for people and figures, but also on animals, environments, and inanimate objects like cars, ships, and even imaginative things like cyborg monsters etc. all with the goal of making it feel like it all happened IRL. Available now on ..."
+    }
+  ]
+}

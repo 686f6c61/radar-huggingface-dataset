@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Fred456/llava15_7b_DPO-ab_3",
+  "slug": "fred456-llava15_7b_dpo-ab_3",
+  "author": "Fred456",
+  "url": "https://huggingface.co/Fred456/llava15_7b_DPO-ab_3",
+  "created_at": "2026-09-03T02:00:13.000Z",
+  "updated_at": "2026-09-03T02:02:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llava_llama",
+    "arxiv:1910.09700",
+    "base_model:liuhaotian/llava-v1.5-7b",
+    "base_model:adapter:liuhaotian/llava-v1.5-7b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 756400952,
+  "storage_human": "756 MB",
+  "base_model": "liuhaotian/llava-v1.5-7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fred456/llava15_7b_DPO-ab_2 · Hugging Face",
+      "url": "https://huggingface.co/Fred456/llava15_7b_DPO-ab_2",
+      "snippet": "Fred456 / llava15_7b_DPO-ab_2 like 0 PEFT Safetensors llava_llama arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Fred456/llava15_7b_DPO-DPO_v3 · Hugging Face",
+      "url": "https://huggingface.co/Fred456/llava15_7b_DPO-DPO_v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub Pages - LLaVA",
+      "url": "https://llava-vl.github.io/",
+      "snippet": "LLaVA Model. We introduce LLaVA (L arge L anguage- a nd- V ision A ssistant), an end-to-end trained large multimodal model that connects a vision encoder and LLM for general-purpose visual and language understanding."
+    },
+    {
+      "title": "GitHub - haotian-liu/LLaVA: [NeurIPS&#x27;23 Oral] Visual Instruction Tuning ...",
+      "url": "https://github.com/haotian-liu/LLaVA",
+      "snippet": "The image-only-trained LLaVA-NeXT model is surprisingly strong on video tasks with zero-shot modality transfer. DPO training with AI feedback on videos can yield significant improvement. [Blog] [Checkpoints] [Code] [03/10] Releasing LMMs-Eval, a highly efficient evaluation pipeline we used when developing LLaVA-NeXT."
+    },
+    {
+      "title": "Releases · haotian-liu/LLaVA - GitHub",
+      "url": "https://github.com/haotian-liu/LLaVA/releases",
+      "snippet": "Updates Support LoRA for the instruction tuning stage of LLaVA-1.5 -- comparable performance to full-model finetuning, and reduced requirements on GPU VRAM. (ckpts/logs, script) Bring your own data and finetune LLaVA-1.5 to your own task. (instruction) Basic support for Windows. (instruction) Fix: the training behavior with gradient accumulation is the same as large-batch training. Notes A new ..."
+    }
+  ]
+}

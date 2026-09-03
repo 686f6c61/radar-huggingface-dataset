@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "JensLundsgaard/our_model_static",
+  "slug": "jenslundsgaard-our_model_static",
+  "author": "JensLundsgaard",
+  "url": "https://huggingface.co/JensLundsgaard/our_model_static",
+  "created_at": "2026-09-02T23:04:49.000Z",
+  "updated_at": "2026-09-03T04:49:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12910352,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JensLundsgaard/our_model_static · Hugging Face",
+      "url": "https://huggingface.co/JensLundsgaard/our_model_static",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JensLundsgaard/no_sheaves_static · Hugging Face",
+      "url": "https://huggingface.co/JensLundsgaard/no_sheaves_static",
+      "snippet": "JensLundsgaard / no_sheaves_static like 0 PyTorch Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "JensLundsgaard / Repositories · GitHub",
+      "url": "https://github.com/JensLundsgaard?tab=repositories",
+      "snippet": "JensLundsgaard has 10 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "JensLundsgaard · GitHub",
+      "url": "https://github.com/JensLundsgaard",
+      "snippet": "JensLundsgaard has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

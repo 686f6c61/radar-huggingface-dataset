@@ -4,8 +4,8 @@
   "slug": "sstoica12-acquisition_student_llama8bins_numina_gradient",
   "author": "sstoica12",
   "url": "https://huggingface.co/sstoica12/acquisition_student_llama8bins_numina_gradient",
-  "created_at": "2026-08-24T19:00:04.000Z",
-  "updated_at": "2026-08-24T19:01:53.000Z",
+  "created_at": "2026-09-03T02:50:05.000Z",
+  "updated_at": "2026-09-03T02:51:55.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 307,
+  "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 8030261248,
   "parameters_human": "8.03B",
@@ -37,8 +37,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-01T04:37:34.815Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

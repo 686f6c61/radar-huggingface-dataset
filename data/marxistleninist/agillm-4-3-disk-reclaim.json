@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "MarxistLeninist/AGILLM-4.3-disk-reclaim",
+  "slug": "marxistleninist-agillm-4-3-disk-reclaim",
+  "author": "MarxistLeninist",
+  "url": "https://huggingface.co/MarxistLeninist/AGILLM-4.3-disk-reclaim",
+  "created_at": "2026-09-03T01:47:42.000Z",
+  "updated_at": "2026-09-03T02:05:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15544474917,
+  "storage_human": "15.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MarxistLeninist/AGILLM-4.3 at main - Hugging Face",
+      "url": "https://huggingface.co/MarxistLeninist/AGILLM-4.3/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Marxist-Leninist/AGILLM4.3: AGILLM 4.3: 4.2 warm-started - GitHub",
+      "url": "https://github.com/Marxist-Leninist/AGILLM4.3",
+      "snippet": "AGILLM 4.3 AGILLM 4.3 is the AGILLM 4.2 warm start with shared MoE experts and DiffusionBlocks training. The compatibility runtime file is still named agillm41.py, but this repo tracks the 4.3 runtime and public volunteer path."
+    },
+    {
+      "title": "MarxistLeninist/AGILLM-4.3 · Hugging Face",
+      "url": "https://huggingface.co/MarxistLeninist/AGILLM-4.3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 416 AI models across 416 benchmarks, with 230 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

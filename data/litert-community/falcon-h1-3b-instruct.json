@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/Falcon-H1-3B-Instruct",
   "created_at": "2026-08-14T04:00:46.000Z",
-  "updated_at": "2026-08-27T12:33:52.000Z",
+  "updated_at": "2026-09-02T23:49:07.000Z",
   "license": "falcon-llm-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

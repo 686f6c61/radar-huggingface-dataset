@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mikhailmedical/potion-retrieval-32M-tfjs",
+  "slug": "mikhailmedical-potion-retrieval-32m-tfjs",
+  "author": "mikhailmedical",
+  "url": "https://huggingface.co/mikhailmedical/potion-retrieval-32M-tfjs",
+  "created_at": "2026-09-03T02:06:35.000Z",
+  "updated_at": "2026-09-03T02:06:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "model2vec",
+  "languages": [],
+  "tags": [
+    "model2vec",
+    "onnx",
+    "static-embeddings",
+    "transformers.js",
+    "feature-extraction",
+    "base_model:minishlab/potion-retrieval-32M",
+    "base_model:quantized:minishlab/potion-retrieval-32M",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129211003,
+  "storage_human": "129 MB",
+  "base_model": "minishlab/potion-retrieval-32M",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "minishlab/potion-retrieval-32M · Hugging Face",
+      "url": "https://huggingface.co/minishlab/potion-retrieval-32M",
+      "snippet": "This Model2Vec model is optmized for retrieval tasks. It is a finetune of potion-base-32M. It&#x27;s finetuned using a modified version of the training approach described in this blogpost. It uses static embeddings, allowing text embeddings to be computed orders of magnitude faster on both GPU and CPU."
+    },
+    {
+      "title": "Fine-tuned Models for minishlab/potion-retrieval-32M - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:minishlab/potion-retrieval-32M",
+      "snippet": "Active filters: minishlab/potion-retrieval-32M. Clear all. Jarbas/ovos-model2vec-intents-potion-retrieval-32M. Updated May 20, 2025 • 3"
+    },
+    {
+      "title": "potion-retrieval-32M huggingface.co api & minishlab potion-retrieval ...",
+      "url": "https://www.toolify.ai/ai-model/minishlab-potion-retrieval-32m",
+      "snippet": "potion-retrieval-32M Model Card This Model2Vec model is optmized for retrieval tasks. It is a finetune of potion-base-32M . It&#x27;s finetuned using a modified version of the training approach described in this blogpost . It uses static embeddings, allowing text embeddings to be computed orders of magnitude faster on both GPU and CPU."
+    },
+    {
+      "title": "GitHub - MinishLab/model2vec: Fast State-of-the-Art Static Embeddings",
+      "url": "https://github.com/MinishLab/model2vec",
+      "snippet": "30/01/2025: We released two new models: potion-base-32M and potion-retrieval-32M. potion-base-32M is our most performant model to date, using a larger vocabulary and higher dimensions. potion-retrieval-32M is a finetune of potion-base-32M that is optimized for retrieval tasks, and is the best performing static retrieval model currently available."
+    },
+    {
+      "title": "ChenNingCong/potion-retrieval-32M - GitHub",
+      "url": "https://github.com/ChenNingCong/potion-retrieval-32M",
+      "snippet": "The results show that potion-retrieval-32M is the most performant static retrieval model, reaching 81.69% of the performance of all-MiniLM-L6-v2 with a retrieval score of 35.06 while being orders of magnitude faster."
+    }
+  ]
+}

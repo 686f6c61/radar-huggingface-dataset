@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "aalujia/zero-mistral-beta57-e2",
+  "slug": "aalujia-zero-mistral-beta57-e2",
+  "author": "aalujia",
+  "url": "https://huggingface.co/aalujia/zero-mistral-beta57-e2",
+  "created_at": "2026-09-03T08:57:19.000Z",
+  "updated_at": "2026-09-03T08:57:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "axolotl",
+    "base_model:adapter:ZeroAgency/Mistral-Small-3.2-24B-Instruct-2506-Text-Only",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:ZeroAgency/Mistral-Small-3.2-24B-Instruct-2506-Text-Only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2989256998,
+  "storage_human": "3.0 GB",
+  "base_model": "ZeroAgency/Mistral-Small-3.2-24B-Instruct-2506-Text-Only",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

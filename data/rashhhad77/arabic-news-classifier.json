@@ -5,7 +5,7 @@
   "author": "rashhhad77",
   "url": "https://huggingface.co/rashhhad77/arabic-news-classifier",
   "created_at": "2026-08-24T15:16:57.000Z",
-  "updated_at": "2026-09-01T19:10:03.000Z",
+  "updated_at": "2026-09-02T19:43:07.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 135197958,
   "parameters_human": "135.2M",
-  "storage_bytes": 9735538562,
-  "storage_human": "9.7 GB",
+  "storage_bytes": 14603302226,
+  "storage_human": "14.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

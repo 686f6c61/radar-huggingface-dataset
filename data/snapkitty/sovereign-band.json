@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/sovereign-band",
+  "slug": "snapkitty-sovereign-band",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/sovereign-band",
+  "created_at": "2026-09-03T10:28:51.000Z",
+  "updated_at": "2026-09-03T10:28:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT Deutsch",
+      "url": "https://chatgpt.com/de-DE/",
+      "snippet": "Nutze ChatGPT, um Fragen zu beantworten, Texte zu verfassen, Bilder zu erstellen, Aufgaben zu erledigen und zu coden – alles an …"
+    },
+    {
+      "title": "ChatGPT Deutsch ohne Anmeldung",
+      "url": "https://chat.ch/",
+      "snippet": "Hier können Sie ChatGPT ohne Anmeldung direkt kostenlos nutzen und menschenähnliche Konversationen mit einer KI führen …"
+    },
+    {
+      "title": "ChatGPT - Kostenloser Download - CHIP",
+      "url": "https://www.chip.de/web-apps/wissen-navigation/chatgpt_9e33af20-afed-425d-a4bc-a5517b175c78.html",
+      "snippet": "\"ChatGPT\" ist ein kostenloses von OpenAI entwickeltes, natürliches Sprachverarbeitungsmodell (NLP). Damit können Sie ein …"
+    },
+    {
+      "title": "ChatGPT: Auf Deutsch kostenlos testen – alle Infos - COMPUTER BILD",
+      "url": "https://www.computerbild.de/artikel/ChatGPT-deutsch-kostenlos-testen-35038619.html",
+      "snippet": "ChatGPT – alle Informationen: Was Sie über den Chatbot von OpenAI wissen müssen, lesen Sie hier. ChatGPT lässt sich auf …"
+    },
+    {
+      "title": "ChatGPT ist da | OpenAI",
+      "url": "https://openai.com/de-DE/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · ChatGPT steht dir jetzt während einer Testphase kostenlos zur Verfügung. Probier es aus und sag uns, was gut …"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/rowm-polymorphic-notebook",
+  "slug": "snapkitty-rowm-polymorphic-notebook",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/rowm-polymorphic-notebook",
+  "created_at": "2026-09-03T09:51:07.000Z",
+  "updated_at": "2026-09-03T09:51:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Content Posted in 2021 | Edith Cowan University",
+      "url": "https://ro.ecu.edu.au/2021.html",
+      "snippet": "Advances in artificial intelligence (AI) for more effective decision making in agriculture, Leisa Armstrong, N. ... An adaptive model of achilles tendon ..."
+    }
+  ]
+}

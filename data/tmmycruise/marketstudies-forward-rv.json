@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "tmmycruise/marketstudies-forward-rv",
+  "slug": "tmmycruise-marketstudies-forward-rv",
+  "author": "tmmycruise",
+  "url": "https://huggingface.co/tmmycruise/marketstudies-forward-rv",
+  "created_at": "2026-09-03T01:26:32.000Z",
+  "updated_at": "2026-09-03T03:04:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-regression",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "finance",
+    "volatility",
+    "tabular-regression",
+    "time-series",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tmmycruise (vinay varma) - Hugging Face",
+      "url": "https://huggingface.co/tmmycruise",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 5 hours ago ... updated a model 3 days ago ... published a model 3 days ago"
+    },
+    {
+      "title": "tmmycruise (vinay varma) - Hugging Face",
+      "url": "https://huggingface.co/tmmycruise/datasets",
+      "snippet": "tmmycruise&#x27;s datasets1 Sort: Recently updated tmmycruise/autoresearch-crypto-data Viewer •Updated about 2 hours ago•2.92B• 260"
+    },
+    {
+      "title": "Artificial Intelligence-Based Analysis of Right Ventricular Work Is ...",
+      "url": "https://www.onlinejase.com/article/S0894-7317(26)00175-6/fulltext",
+      "snippet": "Graphical abstract Association of AI-based echocardiographic analysis of RV myocardial work and outcomes after TTVI. This multicenter retrospective observational study included 166 patients with severe or greater TR, of whom 140 (84.3%) underwent TTVr and 26 (15.7%) underwent transcatheter tricuspid valve replacement."
+    },
+    {
+      "title": "Artificial Intelligence-Based Analysis of Right Ventricular Work Is ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0894731726001756",
+      "snippet": "A dedicated AI-based software was used to reconstruct the RV pressure curve based on the peak RV systolic pressure and to fuse the reconstructed curve with 3D RV longitudinal strain and volumetric data to construct PSV loops and calculate corresponding RV work parameters."
+    },
+    {
+      "title": "Cruise America AI RV Roadtrip Planner",
+      "url": "https://rvtripai.cruiseamerica.com/",
+      "snippet": "Cruise America AI RV Roadtrip Planner Contact Us Locations About Us Careers Help FAQ Affiliates Accessibility Privacy Policy Cancel Reservation RV Trip AI Privacy Policy"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/automated-operator",
+  "slug": "snapkitty-automated-operator",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/automated-operator",
+  "created_at": "2026-09-03T09:45:44.000Z",
+  "updated_at": "2026-09-03T09:45:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SnapKitty Downloads — Sovereign OS Ecosystem",
+      "url": "https://collectivekitty.com/downloads",
+      "snippet": "Auto-routes via task classifier. INSTALL. snapkitty install model-router. Node ... WITH AI. 1. Languages. TRADITIONAL TEAM. 3–5 per team. →. WITH AI. 20+. Zero ..."
+    },
+    {
+      "title": "sovereign-ai · GitHub Topics",
+      "url": "https://github.com/topics/sovereign-ai?l=html&o=asc&s=forks",
+      "snippet": "Sovereign AI describes artificial intelligence systems whose models, training data, and compute are owned and governed by the organization, nation, ..."
+    },
+    {
+      "title": "Agentic AI Software Development at Scale with Saral Jain - LinkedIn",
+      "url": "https://www.linkedin.com/posts/cxotalk_cxotalk-ai-softwaredevelopment-activity-7496632828982394880-zmno",
+      "snippet": "21.08.2026 ... ... AI, automated software, and governance at SnapKitty Collective. No ... I built it on operator intuition, a lot of iteration, and Claude ..."
+    },
+    {
+      "title": "[Recap] Band of Agents Hackathon | lablab.ai",
+      "url": "https://lablab.ai/ai-hackathons/band-of-agents-hackathon",
+      "snippet": "AI/ML API and Featherless AI are joining the Band of Agents Hackathon to support builders with model access, serverless inference, agent workflows, automation, ..."
+    }
+  ]
+}

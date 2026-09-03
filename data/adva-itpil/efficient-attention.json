@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "adva-itpil/efficient-attention",
+  "slug": "adva-itpil-efficient-attention",
+  "author": "adva-itpil",
+  "url": "https://huggingface.co/adva-itpil/efficient-attention",
+  "created_at": "2026-09-03T01:28:30.000Z",
+  "updated_at": "2026-09-03T01:28:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adva-itpil (C. Hernandez) - Hugging Face",
+      "url": "https://huggingface.co/adva-itpil",
+      "snippet": "published a model about 8 hours ago upvoted a paper 1 day ago"
+    },
+    {
+      "title": "adva-itpil (C. Hernandez) - Hugging Face",
+      "url": "https://huggingface.co/adva-itpil/models",
+      "snippet": "adva-itpil&#x27;s models1 Sort: Recently updated adva-itpil/paper_005397566_data_efficient_learning Updated 4 days ago"
+    },
+    {
+      "title": "[1812.01243] Efficient Attention: Attention with Linear Complexities",
+      "url": "https://arxiv.org/abs/1812.01243",
+      "snippet": "Further, the resource efficiency democratizes attention to complex models, where high costs prohibit the use of dot-product attention. As an exemplar, a model with efficient attention achieved state-of-the-art accuracies for stereo depth estimation on the Scene Flow dataset. Code is available at this https URL."
+    },
+    {
+      "title": "GitHub - microsoft/MInference: [NeurIPS&#x27;24 Spotlight, ICLR&#x27;25, ICML&#x27;25 ...",
+      "url": "https://github.com/microsoft/MInference",
+      "snippet": "Q4: What is the relationship between MInference, SSM, Linear Attention, and Sparse Attention? All four approaches (MInference, SSM, Linear Attention, and Sparse Attention) efficiently optimize attention complexity in Transformers, each introducing inductive bias differently. The latter three require training from scratch."
+    },
+    {
+      "title": "Google DeepMind",
+      "url": "https://deepmind.google/",
+      "snippet": "WeatherNext: AI model achieves breakthrough in forecasting cyclones August 2026 Science Learn more"
+    }
+  ]
+}

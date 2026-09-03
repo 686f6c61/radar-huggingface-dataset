@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "harpreet22happy/granite-3.3-8b-kleister-lora",
+  "slug": "harpreet22happy-granite-3-3-8b-kleister-lora",
+  "author": "harpreet22happy",
+  "url": "https://huggingface.co/harpreet22happy/granite-3.3-8b-kleister-lora",
+  "created_at": "2026-09-03T09:58:37.000Z",
+  "updated_at": "2026-09-03T09:58:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "unsloth",
+    "long-context",
+    "kleister",
+    "base_model:ibm-granite/granite-3.3-8b-instruct",
+    "base_model:adapter:ibm-granite/granite-3.3-8b-instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 395994385,
+  "storage_human": "396 MB",
+  "base_model": "ibm-granite/granite-3.3-8b-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "如何查看自己电脑的 IP 地址？ - 知乎",
+      "url": "https://www.zhihu.com/question/567480189",
+      "snippet": "查看自己电脑的ip地址首先要看您是什么电脑？ 如果您是windows 操作系统 的电脑，要在“开始”菜单底下，输入 cmd，打开界面 …"
+    },
+    {
+      "title": "MX Simulator - Index page",
+      "url": "https://forum.mxsimulator.com/",
+      "snippet": "11 hours ago · General Discussion Post anything about MX Simulator here. Please. I'm begging you."
+    },
+    {
+      "title": "GMX - Mail - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36612223-gmx",
+      "snippet": "Apr 27, 2020 · Bonjour, On me demande de passer ( GMX.net ) alors jusqu’à présent j’étais (GMX.fr ) je désir conserver ( GMX.fr) et …"
+    },
+    {
+      "title": "Compte GMX bloqué - Autres boîtes mail",
+      "url": "https://forums.commentcamarche.net/forum/affich-38159371-compte-gmx-bloque",
+      "snippet": "Feb 12, 2025 · Bonjour, Mon compte GMX a été bloqué et je veux contacter le support pour le débloquer. Comment les contacter car …"
+    }
+  ]
+}

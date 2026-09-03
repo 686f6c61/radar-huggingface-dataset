@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/agentos",
+  "slug": "snapkitty-agentos",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/agentos",
+  "created_at": "2026-09-03T09:51:49.000Z",
+  "updated_at": "2026-09-03T09:51:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SnapKitty OS",
+      "url": "http://collectivekitty.com/",
+      "snippet": "◈ SNAPKITTY COLLECTIVE · AI OPERATING SYSTEM. 11 agents. Every decision sealed. Runs on your hardware. SnapKitty OS is the AI operating system that runs ..."
+    },
+    {
+      "title": "Anyone who regularly uses AI agents for personal life, what ... - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/comments/1tolh94/anyone_who_regularly_uses_ai_agents_for_personal/",
+      "snippet": "26.05.2026 ... ... AI model company. They'll say this models agentic.. and its just ... Oh snap. 1 more reply. gowelisgi. •."
+    },
+    {
+      "title": "How to connect AI agents to APIs with MCP Generator - LinkedIn",
+      "url": "https://www.linkedin.com/posts/semaan_mcp-postman-sponsored-activity-7336389035273179136-WvLW",
+      "snippet": "05.06.2025 ... Building a “Lovable AI Clone” — An Agentic AI that can Plan, Architect, and Code by itself. Over the past few days, we've been building ..."
+    },
+    {
+      "title": "agents | TechCrunch",
+      "url": "https://techcrunch.com/tag/agents/",
+      "snippet": "AI assistant apps on a smartphone - ChatGPT, OpenClaw, and Claude. In Brief. OpenClaw is finally available on Android and iOS · Lucas Ropek."
+    },
+    {
+      "title": "AI as Entertainment - arXiv",
+      "url": "https://arxiv.org/html/2601.08768v1",
+      "snippet": "13.01.2026 ... 3. Entertainment as a business model for AI. Academics tend not to ... Kasirzadeh and I. Gabriel Characterizing ai agents for alignment and ..."
+    }
+  ]
+}

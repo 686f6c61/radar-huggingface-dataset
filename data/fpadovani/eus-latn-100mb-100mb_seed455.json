@@ -5,7 +5,7 @@
   "author": "fpadovani",
   "url": "https://huggingface.co/fpadovani/eus-latn-100mb-100mb_seed455",
   "created_at": "2026-07-21T04:20:17.000Z",
-  "updated_at": "2026-09-02T13:06:07.000Z",
+  "updated_at": "2026-09-02T14:20:26.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 10482947606,
-  "storage_human": "10.5 GB",
+  "storage_bytes": 15973370898,
+  "storage_human": "16.0 GB",
   "base_model": "goldfish-models/eus_latn_100mb",
   "formats": [
     "safetensors"

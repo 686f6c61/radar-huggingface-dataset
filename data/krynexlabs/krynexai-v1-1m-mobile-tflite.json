@@ -5,16 +5,17 @@
   "author": "KrynexLabs",
   "url": "https://huggingface.co/KrynexLabs/KrynexAI-v1-1M-Mobile-TFLite",
   "created_at": "2026-08-04T16:40:11.000Z",
-  "updated_at": "2026-09-02T09:00:16.000Z",
+  "updated_at": "2026-09-02T11:54:34.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
-  "library": null,
+  "library": "litert",
   "languages": [
     "ru",
     "en"
   ],
   "tags": [
+    "litert",
     "tflite",
     "mobile",
     "1m-parameters",

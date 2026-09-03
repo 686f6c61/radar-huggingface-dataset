@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Gemma4-Gutenberg-26B-A4B-safetensors-i1-GGUF",
+  "slug": "mradermacher-gemma4-gutenberg-26b-a4b-safetensors-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Gemma4-Gutenberg-26B-A4B-safetensors-i1-GGUF",
+  "created_at": "2026-09-03T08:24:33.000Z",
+  "updated_at": "2026-09-03T08:55:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:26B-Suite/Gemma4-Gutenberg-26B-A4B-safetensors",
+    "base_model:quantized:26B-Suite/Gemma4-Gutenberg-26B-A4B-safetensors",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 79905523808,
+  "storage_human": "79.9 GB",
+  "base_model": "26B-Suite/Gemma4-Gutenberg-26B-A4B-safetensors",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

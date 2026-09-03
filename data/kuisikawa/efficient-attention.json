@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Kuisikawa/efficient-attention",
+  "slug": "kuisikawa-efficient-attention",
+  "author": "Kuisikawa",
+  "url": "https://huggingface.co/Kuisikawa/efficient-attention",
+  "created_at": "2026-09-03T09:52:43.000Z",
+  "updated_at": "2026-09-03T09:52:49.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Full text of \"The Japan Christian year-book\" - Internet Archive",
+      "url": "https://archive.org/stream/japanchristian28unknuoft/japanchristian28unknuoft_djvu.txt",
+      "snippet": "Attention of the readers in Japan should also be called to the directory of ... model. (5) In addition to those already under way in three universities ..."
+    }
+  ]
+}

@@ -5,13 +5,14 @@
   "author": "Ruicheng",
   "url": "https://huggingface.co/Ruicheng/moge-3-vitl",
   "created_at": "2026-08-18T07:37:06.000Z",
-  "updated_at": "2026-08-18T07:42:37.000Z",
+  "updated_at": "2026-09-02T08:24:16.000Z",
   "license": "mit",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "depth-estimation",
   "library": null,
   "languages": [],
   "tags": [
+    "depth-estimation",
     "license:mit",
     "region:us"
   ],

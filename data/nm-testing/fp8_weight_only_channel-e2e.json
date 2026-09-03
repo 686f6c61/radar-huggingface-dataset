@@ -5,7 +5,7 @@
   "author": "nm-testing",
   "url": "https://huggingface.co/nm-testing/fp8_weight_only_channel-e2e",
   "created_at": "2026-07-25T05:03:13.000Z",
-  "updated_at": "2026-08-29T01:28:17.000Z",
+  "updated_at": "2026-09-03T01:52:00.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,7 +17,7 @@
     "compressed-tensors",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 266,
   "trending_score": 0,
   "parameters": 1100048384,

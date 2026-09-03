@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "hyunwooyoon/beit-multitask-notes",
+  "slug": "hyunwooyoon-beit-multitask-notes",
+  "author": "hyunwooyoon",
+  "url": "https://huggingface.co/hyunwooyoon/beit-multitask-notes",
+  "created_at": "2026-09-03T09:27:59.000Z",
+  "updated_at": "2026-09-03T09:28:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Content Posted in 2023 | PDXScholar: The Institutional Repository of ...",
+      "url": "https://pdxscholar.library.pdx.edu/2023.html",
+      "snippet": "... Model to Evaluate Healthcare Organization's Readiness to Implement Clinical ... AI Based Various Scientific Applications, Supriyo Karmakar and ..."
+    }
+  ]
+}

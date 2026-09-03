@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "escapebirdy/rope_cut_oct_xyzi_octe_4096",
+  "slug": "escapebirdy-rope_cut_oct_xyzi_octe_4096",
+  "author": "escapebirdy",
+  "url": "https://huggingface.co/escapebirdy/rope_cut_oct_xyzi_octe_4096",
+  "created_at": "2026-09-03T10:27:28.000Z",
+  "updated_at": "2026-09-03T10:27:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:escapebirdy/rope_cut_oct_xyzi_4096_v1",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 257067476,
+  "parameters_human": "257.1M",
+  "storage_bytes": 1028306528,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Manage renewal for NFL Sunday Ticket on YouTube TV",
+      "url": "https://support.google.com/youtubetv/answer/13769266?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "If my YouTube TV membership is paused, when will I be billed for NFL Sunday Ticket? You won’t be charged for NFL Sunday Ticket …"
+    },
+    {
+      "title": "إثبات ملكية حسابك على YouTube - مساعدة YouTube",
+      "url": "https://support.google.com/youtube/answer/171664?hl=ar",
+      "snippet": "إثبات ملكية حسابك على YouTube سيُطلب منك إدخال رقم هاتف لإثبات ملكية قناتك. وسنرسل رمز تأكيد الحساب في رسالة قصيرة أو مكالمة صوتية على ذلك الرقم. بعد إثبات ملكية حسابك، يمكنك إجراء …"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    },
+    {
+      "title": "因《老梁故事汇》走红，所有节目被停后老梁去哪了？ - 知乎",
+      "url": "https://www.zhihu.com/question/382486986",
+      "snippet": "1 1972年2月，梁宏达出生在黑龙江省绥化市的一个小县城里。 爷爷是私塾先生，老梁小时候在书香门第长大。 很小的时候，爷爷就带 …"
+    },
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    }
+  ]
+}

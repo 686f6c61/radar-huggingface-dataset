@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "godhaze/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "slug": "godhaze-qwen3-tts-12hz-1-7b-voicedesign",
+  "author": "godhaze",
+  "url": "https://huggingface.co/godhaze/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "created_at": "2026-09-03T10:43:49.000Z",
+  "updated_at": "2026-09-03T10:43:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "qwen-tts",
+  "languages": [],
+  "tags": [
+    "qwen-tts",
+    "safetensors",
+    "qwen3_tts",
+    "audio",
+    "tts",
+    "qwen",
+    "multilingual",
+    "text-to-speech",
+    "arxiv:2601.15621",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1916676352,
+  "parameters_human": "1.92B",
+  "storage_bytes": 4515695644,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rozkład jazdy PKP i bilety >> KOLEO",
+      "url": "https://koleo.pl/",
+      "snippet": "Aug 25, 2026 · Sprawdź rozkład jazdy PKP i ceny biletów kolejowych. Kup szybko i wygodnie swój bilet PKP Intercity, POLREGIO, …"
+    },
+    {
+      "title": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Logowanie >> KOLEO",
+      "url": "https://koleo.pl/login/",
+      "snippet": "Sprawdź rozkład jazdy PKP i ceny biletów kolejowych. Kup szybko i wygodnie swój bilet PKP Intercity, POLREGIO, Kolei …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "snippet": "For the voice design model (Qwen3-TTS-12Hz-1.7B-VoiceDesign), you can use generate_voice_design to provide the target text and a natural-language instruct description."
+    },
+    {
+      "title": "Gdzie mogę znaleźć fakturę za mój bilet? - Pomoc › KOLEO",
+      "url": "https://pomoc.koleo.pl/pytanie/gdzie-moge-znalezc-fakture-za-moj-bilet",
+      "snippet": "Apr 29, 2026 · Wyjątkiem są bilety na FLIXBUS. W celu otrzymania faktury VAT skontaktuj się z naszym działem pomocy na adres …"
+    }
+  ]
+}

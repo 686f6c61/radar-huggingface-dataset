@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/temple-os-oracle",
+  "slug": "snapkitty-temple-os-oracle",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/temple-os-oracle",
+  "created_at": "2026-09-03T10:06:09.000Z",
+  "updated_at": "2026-09-03T10:06:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何安装 (重装)win10图片查看器-百度经验",
+      "url": "https://jingyan.baidu.com/article/2f9b480dd96b5a41cb6cc2e4.html",
+      "snippet": "Nov 7, 2018 · 如何安装 (重装)win10图片查看器,在我们使用wi10的过程中，有些系统非原版没有图片查看工具，有些系统因图片查看工 …"
+    },
+    {
+      "title": "win10系统的应用商店不见了怎么安装回来？ - 知乎",
+      "url": "https://www.zhihu.com/question/302863894",
+      "snippet": "可用：Windows PowerShell 恢复应用商店安装的应用：add-appxpackage -DisableDevelopmentMode -Register \"C:\\Program …"
+    },
+    {
+      "title": "如何评价 PowerShell？ - 知乎",
+      "url": "https://www.zhihu.com/question/442126424",
+      "snippet": "5.PowerShell参数转义搞不定 6.写个临时脚本，避免PowerShell转义问题 最后AI终于通过外部脚本的方式执行成功了。 成功的浪费 …"
+    },
+    {
+      "title": "怎么打开windows powershell-百度经验",
+      "url": "https://jingyan.baidu.com/article/c1a3101e68636dde646deb6c.html",
+      "snippet": "Jun 28, 2018 · powershell在维护工作中使用还是比较广泛的，现在很多人也养成了使用powershell的习惯。 下面我来分享一 …"
+    },
+    {
+      "title": "PowerShell Scripting - Run a Script from Shortcut | Tutorials",
+      "url": "https://www.tenforums.com/tutorials/97162-powershell-scripting-run-script-shortcut.html",
+      "snippet": "Nov 7, 2017 · One of many PowerShell security features is that you can't run a script simply by double clicking it's icon on desktop or …"
+    }
+  ]
+}

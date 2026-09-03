@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ukcastle/notaqnn-GR00T-Mdrift_crop192_cft-Dmergedv2_resfixed-step1000",
+  "slug": "ukcastle-notaqnn-gr00t-mdrift_crop192_cft-dmergedv2_resfixed-step1000",
+  "author": "ukcastle",
+  "url": "https://huggingface.co/ukcastle/notaqnn-GR00T-Mdrift_crop192_cft-Dmergedv2_resfixed-step1000",
+  "created_at": "2026-09-03T10:24:49.000Z",
+  "updated_at": "2026-09-03T10:26:10.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qnn",
+    "hexagon",
+    "qcs9075",
+    "gr00t",
+    "robotics",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5372170240,
+  "parameters_human": "5.37B",
+  "storage_bytes": 5688163752,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wallpaper Engine pkg壁纸文件提取工具RePKG-GUI_v1.0.0 - 吾爱破解",
+      "url": "https://www.52pojie.cn/thread-1724749-1-1.html",
+      "snippet": "Dec 9, 2022 · [md]## 介绍RePKG-GUI是基于RePKG开源项目进行开发的GUI版本，告别普通用户需要操作命令行带来的不便。1.0.0 …"
+    },
+    {
+      "title": "[8-26更新]动态壁纸软件 壁纸引擎 Wallpaper Engine v2.5.7离线版+配 …",
+      "url": "https://www.52pojie.cn/thread-1958046-1-1.html",
+      "snippet": "Aug 26, 2024 · 原贴超过60天无法编辑，故开新帖！！！原贴地址 ： [8-21更新]自制动态壁纸软件Wallpaper.Engine.v2.5.7圆角桌面图 …"
+    },
+    {
+      "title": "mac上是否有类似于wallpaper engine的软件？",
+      "url": "https://www.zhihu.com/question/55200110",
+      "snippet": "一直在关注windows上的wallpaper engine，很喜欢动态的桌面效果。Mac上面有没有类似的软件或者能够达成类…"
+    },
+    {
+      "title": "wallpaper engine 重新安装之后一直下载之前下载的所有壁纸 怎么停？",
+      "url": "https://www.zhihu.com/question/391917125",
+      "snippet": "May 1, 2020 · 我补充一下 有同学跟我一样，取消订阅+取消云服务之后，重新安装还在不停下载的情况的话 是因为虽然软件里订阅取 …"
+    },
+    {
+      "title": "wallpaper engine黑屏/c00d5212错误解决方法-百度经验",
+      "url": "https://jingyan.baidu.com/article/0aa22375e19b90c9cc0d64be.html",
+      "snippet": "Feb 15, 2020 · 有些人可能会遇到 wallpaper engine无法显示高分辨率视频的问题，播放视频壁纸黑屏，视频框架切换为DirectShow …"
+    }
+  ]
+}

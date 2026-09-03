@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "VietAlphaLabs/SenOCR-Vi",
+  "slug": "vietalphalabs-senocr-vi",
+  "author": "VietAlphaLabs",
+  "url": "https://huggingface.co/VietAlphaLabs/SenOCR-Vi",
+  "created_at": "2026-09-03T01:21:42.000Z",
+  "updated_at": "2026-09-03T01:29:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "vi",
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "paddleocr_vl",
+    "image-text-to-text",
+    "paddleocr",
+    "ocr",
+    "document-ai",
+    "document-parsing",
+    "vietnamese",
+    "image-to-text",
+    "conversational",
+    "custom_code",
+    "vi",
+    "en",
+    "zh",
+    "dataset:5CD-AI/Viet-Handwriting-OCR-v2",
+    "arxiv:2408.12480",
+    "base_model:PaddlePaddle/PaddleOCR-VL-1.6",
+    "base_model:finetune:PaddlePaddle/PaddleOCR-VL-1.6",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 958588736,
+  "parameters_human": "958.6M",
+  "storage_bytes": 3847417134,
+  "storage_human": "3.8 GB",
+  "base_model": "PaddlePaddle/PaddleOCR-VL-1.6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "phgrouptechs/scanocr-identity-vi · Hugging Face",
+      "url": "https://huggingface.co/phgrouptechs/scanocr-identity-vi",
+      "snippet": "📑 ScanOCR Identity VI (Vietnamese ID Card OCR) scanocr-identity-vi is a comprehensive OCR solution specifically optimized for recognizing and extracting information from Vietnamese Citizen Identification Cards (CCCD) and National Identity Cards (CMND)."
+    },
+    {
+      "title": "Homepage | Vi Labs",
+      "url": "https://vi.co/",
+      "snippet": "Productized AI for Health Enterprises. We turn data science into patient & operational ROI."
+    },
+    {
+      "title": "8 Best Advanced AI Phishing Scam Detection Platforms for 2026",
+      "url": "https://bolster.ai/blog/ai-phishing-detection-platforms",
+      "snippet": "AI-powered phishing is outpacing legacy defenses. We ranked the 8 best advanced AI phishing scam detection platforms for 2026 by speed and accuracy."
+    },
+    {
+      "title": "AI Execution Layer & Platform for Life Sciences | Vi Labs",
+      "url": "https://vi.co/verticals/vi-life-science/",
+      "snippet": "Vi is the AI execution layer for life sciences. Learn more about the agentic platform that turns enterprise data into next best actions for patients, HCPs, and clinical teams."
+    },
+    {
+      "title": "Vietnamese Backtranslation Model Analysis.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/vietai/dab/blob/master/colab/Vietnamese_Backtranslation_Model_Analysis.ipynb",
+      "snippet": "VI. Vietnamese Data Augmentation by Backtranslation In this section, we can input any Vietnamese sentence and get its parapharases in an interactive way. By changing the beam size and length penalty (α) hyperparameters , we can generate multiple paraphrases for each input sentence."
+    }
+  ]
+}

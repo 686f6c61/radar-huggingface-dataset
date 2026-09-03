@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "tommy120429/ares3",
+  "slug": "tommy120429-ares3",
+  "author": "tommy120429",
+  "url": "https://huggingface.co/tommy120429/ares3",
+  "created_at": "2026-08-05T16:12:43.000Z",
+  "updated_at": "2026-09-03T07:30:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26870,
+  "storage_human": "26870 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tommy120429/ares3 · Hugging Face",
+      "url": "https://huggingface.co/tommy120429/ares3",
+      "snippet": "tommy120429 / ares3 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "tommy120429 (Thomas White) - Hugging Face",
+      "url": "https://huggingface.co/tommy120429",
+      "snippet": "Recent Activity updated a modelabout 16 hours ago tommy120429/ares3 updated a modelabout 16 hours ago tommy120429/ares1 updated a modelabout 16 hours ago tommy120429/ares2 View all activity"
+    },
+    {
+      "title": "Ares AI Models | Compare Coding Models & Plans | AresCode",
+      "url": "https://www.arescode.com/models",
+      "snippet": "AI models Compare Ares AI model profiles for coding workflows. Choose fast model profiles for lightweight coding tasks, debugging, and iteration, or move to deeper reasoning models for codebase-level planning, refactoring, architecture decisions, and large-context AI development workflows."
+    },
+    {
+      "title": "3DSearch — Free 3D Model Search Engine | 6 Platforms",
+      "url": "https://3dsearch.app/",
+      "snippet": "Search Printables, Thingiverse, MakerWorld, Cults3D, Sketchfab, and Creality in one query. Free STL files, AI slicer settings for 168 printers, and expert guides."
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Turn any photo or text prompt into a 3D model with local AI. Export as GLB, OBJ, STL or PLY. Free, open source, runs entirely on your GPU — no cloud, no account."
+    }
+  ]
+}

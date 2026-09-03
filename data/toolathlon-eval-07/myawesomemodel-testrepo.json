@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "toolathlon-eval-07/MyAwesomeModel-TestRepo",
+  "slug": "toolathlon-eval-07-myawesomemodel-testrepo",
+  "author": "toolathlon-eval-07",
+  "url": "https://huggingface.co/toolathlon-eval-07/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-03T10:28:13.000Z",
+  "updated_at": "2026-09-03T10:28:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "殷浩天 - 知乎",
+      "url": "https://www.zhihu.com/people/yin-hao-tian-55",
+      "snippet": "1 day ago · 我妈93年和我三姨妈买断工龄后，去广州批发衣服回昆明卖，做了几年赚了点钱，98年在昆明市一环边买了套商品房。 6 …"
+    },
+    {
+      "title": "Yu Deng - 知乎",
+      "url": "https://www.zhihu.com/people/paellahorizon",
+      "snippet": "Oct 31, 2025 · 谢知乎士大夫邀，人在美国，刚下飞机（x 首先拿不拿什么奖就不说了（可能这是吃瓜群众关心的问题，但我也只能回 …"
+    },
+    {
+      "title": "电脑之前玩游戏正常，某天突然开始掉帧，问题在哪里？ - 知乎",
+      "url": "https://www.zhihu.com/question/21843730",
+      "snippet": "我知道了，九成是 显卡驱动 问题，可能是你自行安装或者电脑自动更新驱动，但是更新版本的驱动不适配（负优化）导致的。 我昨天 …"
+    },
+    {
+      "title": "课件 - 知乎",
+      "url": "https://www.zhihu.com/topic/19579773/intro",
+      "snippet": "课件（courseware）是根据教学大纲的要求，经过教学目标确定，教学内容和任务分析，教学活动结构及界面设计等环节，而加以制 …"
+    },
+    {
+      "title": "小约翰 - 知乎",
+      "url": "https://www.zhihu.com/people/lu-chen-xi-9-98",
+      "snippet": "3 days ago · 这轮月球开发浪潮和过去所有的太空面子工程都不一样。 它是当今少数值得公众关注的领域。 几千年后的历史课上不一 …"
+    }
+  ]
+}

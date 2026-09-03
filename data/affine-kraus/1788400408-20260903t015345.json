@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "affine-kraus/1788400408-20260903T015345",
+  "slug": "affine-kraus-1788400408-20260903t015345",
+  "author": "affine-kraus",
+  "url": "https://huggingface.co/affine-kraus/1788400408-20260903T015345",
+  "created_at": "2026-09-03T02:02:38.000Z",
+  "updated_at": "2026-09-03T02:03:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916585166,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tracking | UPS - United States",
+      "url": "https://www.ups.com/track?loc=en%20_%20US",
+      "snippet": "Track one or multiple packages with UPS Tracking, use your tracking number to track the status of your package."
+    },
+    {
+      "title": "affine-kraus/syndra-medium · Hugging Face",
+      "url": "https://huggingface.co/affine-kraus/syndra-medium",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "affine-kraus/affine-hopeone · Hugging Face",
+      "url": "https://huggingface.co/affine-kraus/affine-hopeone",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AFFiNE — Open-Source Knowledge Base Software",
+      "url": "https://affine.pro/",
+      "snippet": "AFFiNE is the open-source Notion & Miro alternative — combining docs, whiteboards, databases, and AI in one local-first workspace. Free for teams."
+    },
+    {
+      "title": "wwwapps.ups.com",
+      "url": "https://wwwapps.ups.com/us/en/fragments/apps/track.plain.html",
+      "snippet": "Enter one tracking or UPS InfoNotice® number and quickly find out the latest delivery status for your shipment."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "OpenMOSS-Team",
   "url": "https://huggingface.co/OpenMOSS-Team/MOSS-VL-Realtime",
   "created_at": "2026-07-14T06:35:39.000Z",
-  "updated_at": "2026-08-18T07:28:40.000Z",
+  "updated_at": "2026-09-02T07:05:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "video-text-to-text",

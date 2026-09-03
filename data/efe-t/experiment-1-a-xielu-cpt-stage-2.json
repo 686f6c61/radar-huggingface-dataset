@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "efe-T/Experiment-1-A-xIELU-CPT-Stage-2",
+  "slug": "efe-t-experiment-1-a-xielu-cpt-stage-2",
+  "author": "efe-T",
+  "url": "https://huggingface.co/efe-T/Experiment-1-A-xIELU-CPT-Stage-2",
+  "created_at": "2026-09-03T10:13:50.000Z",
+  "updated_at": "2026-09-03T11:10:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "gpt2",
+    "fineweb-edu",
+    "custom-code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2848342596,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EFE - Formation professionnelle et continue - Organisme de formation",
+      "url": "https://www.efe.fr/",
+      "snippet": "À propos d'EFE Qui sommes-nous ? Financement Avis clients Homologations Approche pédagogique Le Campus des Formateurs"
+    },
+    {
+      "title": "Apertus tested: How the multilingual AI model performs | heise online",
+      "url": "https://www.heise.de/en/background/Apertus-tested-How-the-multilingual-AI-model-performs-10645644.html",
+      "snippet": "cial features of the architecture are the xIELU activation function and the QK standard for the attention layer, which is currently also the reason for the lack of support by llama.cpp. Otherwise, like many others, the model uses multi-head query attention and RoPE scaling."
+    },
+    {
+      "title": "EFE - Agencia de noticias",
+      "url": "https://efe.com/",
+      "snippet": "1 day ago · EFE es la primera agencia de noticias en español y distribuye 3 millones de noticias al año en texto, fotografía, video, …"
+    },
+    {
+      "title": "EPT-2 Technical Report",
+      "url": "https://arxiv.org/html/2507.09703v1",
+      "snippet": "Content selection saved. Describe the issue below: · We present EPT-2, the latest iteration in our Earth Physics Transformer (EPT) family of foundation AI models for Earth system forecasting. EPT-2 delivers substantial improvements over its predecessor, EPT-1.5, and sets a new state of the ..."
+    },
+    {
+      "title": "EFE (agence de presse) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/EFE_(agence_de_presse)",
+      "snippet": "EFE est une agence de presse, la principale en langue espagnole et la quatrième en importance au niveau mondial après Associated …"
+    }
+  ]
+}

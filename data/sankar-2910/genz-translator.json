@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Sankar-2910/genz-translator",
+  "slug": "sankar-2910-genz-translator",
+  "author": "Sankar-2910",
+  "url": "https://huggingface.co/Sankar-2910/genz-translator",
+  "created_at": "2026-09-02T17:34:58.000Z",
+  "updated_at": "2026-09-03T09:16:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "from-scratch",
+    "llama-cpp",
+    "ollama",
+    "slang-translation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20304768,
+  "parameters_human": "20.3M",
+  "storage_bytes": 963095298,
+  "storage_human": "963 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

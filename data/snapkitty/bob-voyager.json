@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/bob-voyager",
+  "slug": "snapkitty-bob-voyager",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/bob-voyager",
+  "created_at": "2026-09-03T10:13:29.000Z",
+  "updated_at": "2026-09-03T10:13:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search Discord Servers | DISBOARD: Discord Server List",
+      "url": "https://disboard.org/en/search",
+      "snippet": "Search Discord servers by keywords or tags. community 196K gaming 158K social 126K roleplay 106K chill 114K hangout 93K anime …"
+    },
+    {
+      "title": "How to Make an Announcement Channel on Discord",
+      "url": "https://www.geeksforgeeks.org/websites-apps/how-to-make-an-announcement-channel-on-discord/",
+      "snippet": "Jul 23, 2025 · If your Discord announcement channel is not showing, troubleshooting the settings or incorporating a Discord …"
+    },
+    {
+      "title": "Discord servers tagged with discussion | DISBOARD",
+      "url": "https://disboard.org/en/servers/tag/discussion",
+      "snippet": "List of Discord servers tagged with discussion. Find and join some awesome servers listed here!"
+    },
+    {
+      "title": "Discord brings back old-school message boards to help ... - TechRadar",
+      "url": "https://www.techradar.com/news/discord-brings-back-old-school-message-boards-to-help-organize-messy-channels",
+      "snippet": "Sep 17, 2022 · Besides the aforementioned AutoMod, Discord has recently seen the introduction of text chats in voice channels …"
+    },
+    {
+      "title": "Discord Server Search – Find Active Servers | DiscordHome",
+      "url": "https://discordhome.com/",
+      "snippet": "Search active Discord servers by topic, member count and real activity. Compare communities, check details and join the right …"
+    }
+  ]
+}

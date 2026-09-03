@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "austin-hall/multitask",
+  "slug": "austin-hall-multitask",
+  "author": "austin-hall",
+  "url": "https://huggingface.co/austin-hall/multitask",
+  "created_at": "2026-09-03T01:53:02.000Z",
+  "updated_at": "2026-09-03T01:53:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "austin-hall/multitask · Hugging Face",
+      "url": "https://huggingface.co/austin-hall/multitask",
+      "snippet": "austin-hall / multitask like 0 Safetensors PyTorch blip multitask License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Blip for Multitask Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "MultiTask AI Model - a Hugging Face Space by 1Prarthana",
+      "url": "https://huggingface.co/spaces/1Prarthana/MultiTask-AI-Model",
+      "snippet": "Use Gemini AI to chat, generate captions for images, get text embeddings, or ask any questions. Upload an image, enter text, or ask a question, and get tailored responses."
+    },
+    {
+      "title": "Multi-Task Learning(MTL) for Deep Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/multi-task-learningmtl-for-deep-learning/",
+      "snippet": "Multi-Task Learning (MTL) is a machine learning approach where a single model learns multiple related tasks simultaneously using shared representations, improving generalization and reducing overfitting."
+    },
+    {
+      "title": "Multi-task learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Multi-task_learning",
+      "snippet": "Multi-task Bayesian optimization is a modern model-based approach that leverages the concept of knowledge transfer to speed up the automatic hyperparameter optimization process of machine learning algorithms. [27]"
+    },
+    {
+      "title": "[2509.07945] One Model for All Tasks: Leveraging Efficient World Models ...",
+      "url": "https://arxiv.org/abs/2509.07945",
+      "snippet": "In heterogeneous multi-task decision-making, tasks not only exhibit diverse observation and action spaces but also vary substantially in their underlying complexities. While conventional multi-task world models like UniZero excel in single-task settings, we find that when handling a broad and diverse suite of tasks, gradient conflicts and the loss of model plasticity often constrain their ..."
+    }
+  ]
+}

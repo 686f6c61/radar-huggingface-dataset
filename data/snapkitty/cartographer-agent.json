@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/cartographer-agent",
+  "slug": "snapkitty-cartographer-agent",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/cartographer-agent",
+  "created_at": "2026-09-03T09:59:28.000Z",
+  "updated_at": "2026-09-03T09:59:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "الدرس التاسع عشر - المستوى الثاني - تحليل الدارات الكهربائية في الحالة ...",
+      "url": "https://teracourses.com/ar/lesson/matlab-course1-lesson19",
+      "snippet": "فيديو شرح الدرس التاسع عشر - المستوى الثاني - تحليل الدارات الكهربائية في الحالة العابرة اونلاين مجانا"
+    },
+    {
+      "title": "أساسيات الدوائر الكهربائية pdf موقع الفريد في الفيزياء_2.pdf ( اللغه ...",
+      "url": "https://learning-space.uoa.edu.iq/c/me13104/m/asasyat-aldwayr-alkhrbayyt-pdf-mwq-alfryd-fy-alfyzya2pdf-allghh-alrbyt",
+      "snippet": "الكتاب بعنوان \"أساسيات الدوائر الكهربائية\" هو دليل شامل يهدف إلى تقديم المعرفة الأساسية حول مفاهيم الدوائر الكهربائية."
+    },
+    {
+      "title": "الدارات الكهربائية 2",
+      "url": "https://manara.edu.sy/downloads/files/1779873316_10.pdf",
+      "snippet": "تُعرّف الحالة العابرة بأنها الفترة الزمنيةالتيتنتقلخلالهاالدارةالكهربائيةمنحالة إلى أخرى نتيجةتغيّرقيمةالجهدالمطبقعليها،أوتغيّرفيأحدعناصرها . خلالهذه الفترة …"
+    },
+    {
+      "title": "شرح أساسيات الدوائر الكهربائية Circuits | أكاديمية موسى",
+      "url": "https://moosa.tv/ar/%D8%A7%D9%84%D9%81%D9%8A%D8%B2%D9%8A%D8%A7%D8%A1/%D8%A7%D9%84%D9%85%D8%B1%D8%AD%D9%84%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%88%D9%8A%D8%A9/%D8%AB%D8%A7%D9%84%D8%AB-%D8%AB%D8%A7%D9%86%D9%88%D9%8A/%D8%A7%D9%84%D9%81%D8%B5%D9%84-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A/%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%A6%D8%B1-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A6%D9%8A%D8%A9-circuits-01KFK6G8WCX074C8Y5G0X8KWAJ",
+      "snippet": "في هذا الدرس سندخل إلى عالم الدوائر الكهربائية (Circuits)، وهو أحد أهم فروع الهندسة الكهربائية. ففي التخصص الجامعي تُدرس مقررات مثل **الدوائر الكهربائية 1** و**الدوائر الكهربائية …"
+    },
+    {
+      "title": "فيزياء الدوائر الكهربية - PHTE343",
+      "url": "https://rakan1alqthami.learnworlds.com/course/phte343",
+      "snippet": "نظرة عامة على الدورة انطلق في رحلة متكاملة لفهم أساسيات الدوائر الكهربائية من قوانين كيرشوف وحتى تحليل دوائر RLC والاستجابات العابرة، بالاعتماد على منهج Nilsson & Riedel – …"
+    }
+  ]
+}

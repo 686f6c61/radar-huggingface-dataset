@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "RyanYr/asyncrl-math_adpklr_s128_b0p001_shift0p02_refinit_shuf-gs448",
+  "slug": "ryanyr-asyncrl-math_adpklr_s128_b0p001_shift0p02_refinit_shuf-gs448",
+  "author": "RyanYr",
+  "url": "https://huggingface.co/RyanYr/asyncrl-math_adpklr_s128_b0p001_shift0p02_refinit_shuf-gs448",
+  "created_at": "2026-09-03T01:41:32.000Z",
+  "updated_at": "2026-09-03T01:42:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21903246230,
+  "storage_human": "21.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yurunyyr/asyncrl-math_adpklr_s128_b0p01_shuf-gs384 · Hugging Face",
+      "url": "https://huggingface.co/yurunyyr/asyncrl-math_adpklr_s128_b0p01_shuf-gs384",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "async-rl/README.md at master · coreylynch/async-rl · GitHub",
+      "url": "https://github.com/coreylynch/async-rl/blob/master/README.md",
+      "snippet": "Tensorflow + Keras + OpenAI Gym implementation of 1-step Q Learning from \"Asynchronous Methods for Deep Reinforcement Learning\" - coreylynch/async-rl"
+    },
+    {
+      "title": "GitHub - coreylynch/async-rl: Tensorflow + Keras + OpenAI Gym ...",
+      "url": "https://github.com/coreylynch/async-rl",
+      "snippet": "Tensorflow + Keras + OpenAI Gym implementation of 1-step Q Learning from \"Asynchronous Methods for Deep Reinforcement Learning\" - coreylynch/async-rl"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=async-rl",
+      "snippet": "Explore machine learning models. 9 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: async-rl Clear all"
+    }
+  ]
+}

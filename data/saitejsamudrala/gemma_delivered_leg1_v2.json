@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "SaitejSamudrala/gemma_delivered_leg1_v2",
+  "slug": "saitejsamudrala-gemma_delivered_leg1_v2",
+  "author": "SaitejSamudrala",
+  "url": "https://huggingface.co/SaitejSamudrala/gemma_delivered_leg1_v2",
+  "created_at": "2026-09-03T09:14:58.000Z",
+  "updated_at": "2026-09-03T09:15:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma4",
+    "trl",
+    "en",
+    "base_model:unsloth/gemma-4-E2B-it",
+    "base_model:finetune:unsloth/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 180023544,
+  "storage_human": "180 MB",
+  "base_model": "unsloth/gemma-4-E2B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

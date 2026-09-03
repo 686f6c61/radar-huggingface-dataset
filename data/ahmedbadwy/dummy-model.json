@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AhmedBadwy/dummy-model",
+  "slug": "ahmedbadwy-dummy-model",
+  "author": "AhmedBadwy",
+  "url": "https://huggingface.co/AhmedBadwy/dummy-model",
+  "created_at": "2026-09-03T01:40:16.000Z",
+  "updated_at": "2026-09-03T01:41:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AhmedBadawy11 (Ahmed Badawy) - Hugging Face",
+      "url": "https://huggingface.co/AhmedBadawy11/models",
+      "snippet": "User profile of Ahmed Badawy on Hugging Face"
+    },
+    {
+      "title": "octo-edge-ai/dummy-model · Hugging Face",
+      "url": "https://huggingface.co/octo-edge-ai/dummy-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "Browse all available models on the OpenAI Platform."
+    },
+    {
+      "title": "‪Ahmed Badawy‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=dKXypM8AAAAJ&hl=en",
+      "snippet": "‪Assistant Professor of Computer Engineering, Qatar University‬ - ‪‪Cited by 1,647‬‬"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

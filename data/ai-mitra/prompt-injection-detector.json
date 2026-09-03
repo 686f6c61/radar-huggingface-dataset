@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ai-mitra/prompt-injection-detector",
+  "slug": "ai-mitra-prompt-injection-detector",
+  "author": "ai-mitra",
+  "url": "https://huggingface.co/ai-mitra/prompt-injection-detector",
+  "created_at": "2026-09-03T09:42:06.000Z",
+  "updated_at": "2026-09-03T09:53:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "text-classification",
+    "prompt-injection",
+    "security",
+    "sentence-transformers",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2395,
+  "storage_human": "2395 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MITRE ATLAS: How Attackers Target AI Systems | Medium",
+      "url": "https://medium.com/@michael.hannecke/understanding-the-mitre-atlas-matrix-how-attackers-target-ai-systems-ecb75399819f",
+      "snippet": "30.06.2025 ... Prompt injection attacks represent a new class of vulnerability unique to Large Language Models, where malicious prompts override the model's ..."
+    },
+    {
+      "title": "MITRE ATLAS | DeepTeam - The LLM Red Teaming Framework",
+      "url": "https://trydeepteam.com/docs/frameworks-mitre-atlas",
+      "snippet": "02.07.2026 ... In DeepTeam, the MITRE ATLAS framework operationalizes AI-specific adversarial tactics to help organizations detect, mitigate, and analyze model ..."
+    },
+    {
+      "title": "MITRE ATLAS: AI security framework with 16 tactics and 84 techniques",
+      "url": "https://www.vectra.ai/topics/mitre-atlas",
+      "snippet": "... detection coverage, and prioritize high-risk attack paths such as prompt injection, model extraction, data poisoning, and AI agent abuse. Integrating these ..."
+    },
+    {
+      "title": "MITRE ATLAS - Promptfoo",
+      "url": "https://www.promptfoo.dev/docs/red-team/mitre-atlas/",
+      "snippet": "T0051 - LLM Prompt Injection: Manipulating LLM behavior through crafted inputs; AML.T0024 - Exfiltration via AI Inference API: Extracting training data through ..."
+    },
+    {
+      "title": "LLM01:2025 Prompt Injection - OWASP Gen AI Security Project",
+      "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+      "snippet": "An attacker uploads a resume with split malicious prompts. When an LLM is used to evaluate the candidate, the combined prompts manipulate the model's response, ..."
+    }
+  ]
+}

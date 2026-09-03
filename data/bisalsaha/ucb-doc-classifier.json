@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "bisalsaha/ucb-doc-classifier",
+  "slug": "bisalsaha-ucb-doc-classifier",
+  "author": "bisalsaha",
+  "url": "https://huggingface.co/bisalsaha/ucb-doc-classifier",
+  "created_at": "2026-09-03T10:55:03.000Z",
+  "updated_at": "2026-09-03T10:56:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bart",
+    "text-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 140018698,
+  "parameters_human": "140.0M",
+  "storage_bytes": 560105000,
+  "storage_human": "560 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aide au Codage CIM 10 intoxication volontaire",
+      "url": "https://www.aideaucodage.fr/cim-intoxication+volontaire",
+      "snippet": "Aide au Codage CIM 10 intoxication volontaire - CCAM et CIM10 en Français. Site gratuit de codes CIM-10 et CCAM, compatible …"
+    },
+    {
+      "title": "Ucb Doc Classifier - a Hugging Face Space by bisalsaha",
+      "url": "https://huggingface.co/spaces/bisalsaha/ucb-doc-classifier",
+      "snippet": "Paste the text taken from a PDF and the app will tell you whether it is a Commercial Invoice, Packing List, Bill of Lading, or Certificate of Origin. It returns the most likely document type, a con..."
+    },
+    {
+      "title": "T50.9 Intoxication par médicaments et substances... T509 - Code CIM 10",
+      "url": "https://www.aideaucodage.fr/cim-t509",
+      "snippet": "Aide au Codage pour T509 Intoxication par médicaments et substances biologiques, autres et sans précision - CCAM et CIM10 en …"
+    },
+    {
+      "title": "bisalsaha (bisal saha) - Hugging Face",
+      "url": "https://huggingface.co/bisalsaha/models",
+      "snippet": "User profile of bisal saha on Hugging Face"
+    },
+    {
+      "title": "CIM-10 : Codes sélectionnés pour définir une intoxication",
+      "url": "https://ipubli.inserm.fr/bitstream/handle/10608/2072/?sequence=25",
+      "snippet": "T49 Intoxication par substances à usage topique agissant essentiellement sur la peau et les muqueuses et par médicaments à usage …"
+    }
+  ]
+}

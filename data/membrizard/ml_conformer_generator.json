@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Membrizard/ml_conformer_generator",
+  "slug": "membrizard-ml_conformer_generator",
+  "author": "Membrizard",
+  "url": "https://huggingface.co/Membrizard/ml_conformer_generator",
+  "created_at": "2025-04-06T09:13:36.000Z",
+  "updated_at": "2026-09-03T09:20:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlconfgen",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlconfgen",
+    "onnx",
+    "molecular-generation",
+    "diffusion-models",
+    "cheminformatics",
+    "3D-conformer",
+    "rdkit",
+    "non-commercial",
+    "en",
+    "dataset:ChEMBL",
+    "doi:10.57967/hf/5165",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 655420542,
+  "storage_human": "655 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "3D Conformer Generation",
+      "dataset": "ChEMBL (filtered)",
+      "metric": "Average Synthesis Access score",
+      "value": 3.18
+    },
+    {
+      "task": "3D Conformer Generation",
+      "dataset": "ChEMBL (filtered)",
+      "metric": "Fréchet Fingerprint Distance",
+      "value": 4.13
+    }
+  ],
+  "sources": []
+}

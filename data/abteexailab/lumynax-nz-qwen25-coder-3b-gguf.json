@@ -5,9 +5,9 @@
   "author": "AbteeXAILab",
   "url": "https://huggingface.co/AbteeXAILab/lumynax-nz-qwen25-coder-3b-gguf",
   "created_at": "2026-05-09T05:52:11.000Z",
-  "updated_at": "2026-09-02T23:14:29.000Z",
-  "license": "apache-2.0",
-  "license_family": "oss",
+  "updated_at": "2026-09-03T02:32:18.000Z",
+  "license": "qwen",
+  "license_family": "unknown",
   "pipeline_tag": "text-generation",
   "library": "llama.cpp",
   "languages": [
@@ -42,7 +42,9 @@
     "text-generation",
     "en",
     "mi",
-    "license:apache-2.0",
+    "base_model:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "license:other",
     "endpoints_compatible",
     "region:us",
     "conversational"
@@ -54,7 +56,7 @@
   "parameters_human": "3.40B",
   "storage_bytes": 2104932800,
   "storage_human": "2.1 GB",
-  "base_model": null,
+  "base_model": "Qwen/Qwen2.5-Coder-3B-Instruct",
   "formats": [
     "gguf"
   ],

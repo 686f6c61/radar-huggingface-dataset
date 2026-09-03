@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "andreu-collabs/hybrid-flow-planning-3blocks",
+  "slug": "andreu-collabs-hybrid-flow-planning-3blocks",
+  "author": "andreu-collabs",
+  "url": "https://huggingface.co/andreu-collabs/hybrid-flow-planning-3blocks",
+  "created_at": "2026-09-03T10:28:45.000Z",
+  "updated_at": "2026-09-03T10:28:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "task-and-motion-planning",
+    "flow-matching",
+    "hybrid-flow",
+    "mujoco",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60810464,
+  "storage_human": "61 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - Andreu",
+      "url": "https://www.andreu.net/",
+      "snippet": "Andreu est une entreprise spécialiste en génie climatique, génie électrique et Gestion Technique du Bâtiment (GTB) qui intervient …"
+    },
+    {
+      "title": "Portes métalliques. Portes et trappes de visite en acier Andreu",
+      "url": "https://www.andreu.es/fr/",
+      "snippet": "Le mercredi 11 mars dernier, Andreu a ouvert ses portes à des architectes, collaborateurs et professionnels du secteur pour partager …"
+    },
+    {
+      "title": "Notre entreprise - Andreu",
+      "url": "https://www.andreu.net/societe/",
+      "snippet": "Andreu met en relation des ingénieurs et techniciens pour trouver des solutions techniques à vos projets. Le bureau d’études intégré …"
+    },
+    {
+      "title": "Paul Andreu — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Paul_Andreu",
+      "snippet": "Paul Andreu, né le 10 juillet 1938 à Caudéran Note 1 en Gironde et mort le 11 octobre 2018 à Paris 15e1, est un architecte français …"
+    },
+    {
+      "title": "Plombier chauffagiste à Perpignan | Etablissements Andreu",
+      "url": "https://www.andreu-plomberie.com/",
+      "snippet": "La société Andreu est spécialisée dans la plomberie, l’installation et l’entretien de chauffage et climatisation. Notre équipe est …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Abhisingh-18/kannada-english-slam-asr",
+  "slug": "abhisingh-18-kannada-english-slam-asr",
+  "author": "Abhisingh-18",
+  "url": "https://huggingface.co/Abhisingh-18/kannada-english-slam-asr",
+  "created_at": "2026-09-03T10:36:14.000Z",
+  "updated_at": "2026-09-03T10:37:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "kn",
+    "en"
+  ],
+  "tags": [
+    "speech-recognition",
+    "asr",
+    "kannada",
+    "code-switching",
+    "slam-llm",
+    "lora",
+    "kn",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 610343276,
+  "storage_human": "610 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open een gezamenlijke rekening met bunq | Deel eenvoudig je …",
+      "url": "https://www.bunq.com/nl-nl/personal/features/joint-accounts",
+      "snippet": "Makkelijk een gezamenlijke rekening openen met elke bunq-gebruiker. Perfect voor stellen, vrienden of huisgenoten. Meld je binnen …"
+    },
+    {
+      "title": "Indic-Conformer model for ASR",
+      "url": "https://aikosh.indiaai.gov.in/home/models/details/indic_conformer_model_for_asr.html",
+      "snippet": "Detect language from provided text, ... Punjabi, Santali, Maithili, Hindi, Tamil, Kannada) ... Automatic Speech Recognition (ASR) model for speech recognition, processing audio and transcribing spoken content into text...."
+    },
+    {
+      "title": "bunq Helpcentrum: gidsen voor je rekening",
+      "url": "https://help.bunq.com/nl-nl/",
+      "snippet": "Heb je hulp nodig met je bunq-rekening? Vind duidelijke antwoorden, slimme tips en makkelijke oplossingen om alles uit je …"
+    },
+    {
+      "title": "AI4Bharat- Assamese - IndicConformer Automatic Speech Recognition (ASR) Model",
+      "url": "https://aikosh.indiaai.gov.in/home/models/details/ai4bharat_indicconformer_automatic_speech_recognition_asr_model_for_assamese.html",
+      "snippet": "This Automatic Speech Recognition (ASR) model transcribes Kashmiri speech from 16,000 KHz mono WAV audio files into text ... RomanSetu is Efficiently unlocking multilingual (Indian Languages) capabilities of Large Language Models via Romanization. ... RomanSetu is Efficiently unlocking multilingual ..."
+    },
+    {
+      "title": "Voorwaarden Privérekening - bunq.com",
+      "url": "https://www.bunq.com/nl-nl/documents/personal-account-terms-conditions",
+      "snippet": "Om rekeninggegevens van je andere banken te integreren in je bunq app, moet je ons uitdrukkelijk toestemming geven om je …"
+    }
+  ]
+}

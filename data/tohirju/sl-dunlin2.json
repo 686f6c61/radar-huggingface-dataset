@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Tohirju/sl-dunlin2",
+  "slug": "tohirju-sl-dunlin2",
+  "author": "Tohirju",
+  "url": "https://huggingface.co/Tohirju/sl-dunlin2",
+  "created_at": "2026-09-03T10:07:12.000Z",
+  "updated_at": "2026-09-03T10:50:39.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 98951445440,
+  "storage_human": "99.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deep Van - 知乎",
+      "url": "https://www.zhihu.com/people/yang-lei-96-72",
+      "snippet": "Aug 17, 2026 · Deep Van是知乎用户，擅长回答金融、科技和生活问题，其个人星球为DeepVan的逃生地牢，回答风格直言不讳，获 …"
+    },
+    {
+      "title": "有什么免费好用的PC桌面端翻译软件？ - 知乎",
+      "url": "https://www.zhihu.com/question/15039042064",
+      "snippet": "刚好前两天帮我妈找翻译软件（她最近要看一些英文的医学资料），顺便又把市面上的工具过了一遍。 最后给她装的 …"
+    },
+    {
+      "title": "翻译工具推荐-Deepl - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1153766-1-1.html",
+      "snippet": "Apr 16, 2020 · 推荐一个翻译工具，号称谷歌翻译碾压者/信达雅翻译本人/外语学习最佳伴侣DeepL是一款来自德国的在线翻译工具，早 …"
+    },
+    {
+      "title": "小巧强悍的多引擎翻译利器 QTranslate v6.9.0 官方绿色版 - 吾爱破解",
+      "url": "https://www.52pojie.cn/thread-1502519-1-1.html",
+      "snippet": "Aug 30, 2021 · 如果不是版规限制，绝对可以将这款免费的 QTranslate 冠之以“神器”之名。其以安装文件不到1M、绿色版解压后不 …"
+    },
+    {
+      "title": "Deepl - 知乎",
+      "url": "https://www.zhihu.com/topic/21472803/hot",
+      "snippet": "DeepL是一款高度准确的翻译工具，能够即时翻译文本和文档，提供高质量的翻译服务。"
+    }
+  ]
+}

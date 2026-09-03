@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "CompressedGemma/Muse-Glimmer-30B-Q2",
+  "slug": "compressedgemma-muse-glimmer-30b-q2",
+  "author": "CompressedGemma",
+  "url": "https://huggingface.co/CompressedGemma/Muse-Glimmer-30B-Q2",
+  "created_at": "2026-09-03T10:38:37.000Z",
+  "updated_at": "2026-09-03T10:38:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "订阅了Kimi的199套餐，编程是用Kimi code好还是claude code好呢？",
+      "url": "https://www.zhihu.com/question/2042306734392431967",
+      "snippet": "May 25, 2026 · 用 Claude Code 的话，就要随时准备好被坑一波大的。 现在 Coding Agent 方面的选择太多了，真的不必要绑死在 …"
+    },
+    {
+      "title": "如何在 VSCode 中使用 Claude Code？ - 知乎",
+      "url": "https://www.zhihu.com/question/2056838425794311212",
+      "snippet": "打开 VSCode 左侧 Extensions 页面，准备搜索 Claude Code 插件。 在搜索框里输入 Claude，找到 Claude Code 相关插件并安装。 …"
+    },
+    {
+      "title": "哪个大模型现在（2026年2月份）文字处理能力比较好？ - 知乎",
+      "url": "https://www.zhihu.com/question/2005222896864356127",
+      "snippet": "Feb 12, 2026 · 这么一来，答案就很明显了。 文档上claude最强，但是不能畅聊，如果要做连续内容，opus额度不够用；逻辑推理 …"
+    },
+    {
+      "title": "国内大厂Trae、Qoder、CodeBuddy AI编辑器哪个好用？ - 知乎",
+      "url": "https://www.zhihu.com/question/1951273247036380422",
+      "snippet": "抛开Cursor、Kiro、Claude Code等，国内互联网大厂研发的 Trae（海外版）、Qoder、CodeBuddy（海外版） …"
+    },
+    {
+      "title": "如何评价Claude Code近日更新后疑植入对中国用户的特殊追踪标记？",
+      "url": "https://www.zhihu.com/question/2055388007654601150",
+      "snippet": "Jun 30, 2026 · Claude Code 2.1.91版更新说明 帖主指出，在 Claude Code 2.1.196 中，相关函数名为 Crt () 、 Rrt (e) 、 e0t () 、 Zup …"
+    }
+  ]
+}

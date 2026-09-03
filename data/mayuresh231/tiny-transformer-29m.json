@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Mayuresh231/tiny-transformer-29m",
+  "slug": "mayuresh231-tiny-transformer-29m",
+  "author": "Mayuresh231",
+  "url": "https://huggingface.co/Mayuresh231/tiny-transformer-29m",
+  "created_at": "2026-09-03T07:53:58.000Z",
+  "updated_at": "2026-09-03T07:55:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tiny_transformer",
+    "text-generation",
+    "custom-code",
+    "causal-lm",
+    "from-scratch",
+    "custom_code",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29545472,
+  "parameters_human": "29.5M",
+  "storage_bytes": 118192048,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

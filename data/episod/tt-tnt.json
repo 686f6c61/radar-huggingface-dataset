@@ -5,7 +5,7 @@
   "author": "episod",
   "url": "https://huggingface.co/episod/tt-tnt",
   "created_at": "2026-08-12T15:46:30.000Z",
-  "updated_at": "2026-09-01T18:00:04.000Z",
+  "updated_at": "2026-09-02T22:16:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,8 @@
     "license:apache-2.0",
     "text-generation-inference",
     "endpoints_compatible",
-    "region:us"
+    "region:us",
+    "tt-model-cache"
   ],
   "likes": 0,
   "downloads_30d": 1247,

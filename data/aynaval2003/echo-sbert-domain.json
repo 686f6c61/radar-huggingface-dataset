@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "aynaval2003/echo-sbert-domain",
+  "slug": "aynaval2003-echo-sbert-domain",
+  "author": "aynaval2003",
+  "url": "https://huggingface.co/aynaval2003/echo-sbert-domain",
+  "created_at": "2026-09-03T09:01:23.000Z",
+  "updated_at": "2026-09-03T09:02:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "feature-extraction",
+    "sentence-transformers",
+    "sentence-similarity",
+    "sbert",
+    "en",
+    "arxiv:1908.10084",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 82118400,
+  "parameters_human": "82.1M",
+  "storage_bytes": 328485112,
+  "storage_human": "328 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

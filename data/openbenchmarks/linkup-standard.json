@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "openbenchmarks/linkup-standard",
+  "slug": "openbenchmarks-linkup-standard",
+  "author": "openbenchmarks",
+  "url": "https://huggingface.co/openbenchmarks/linkup-standard",
+  "created_at": "2026-09-03T02:06:50.000Z",
+  "updated_at": "2026-09-03T02:06:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "web-search",
+    "search-api",
+    "company-news",
+    "leaderboard",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Linkup Standard - EmpirioLabs AI Docs",
+      "url": "https://docs.empiriolabs.ai/models/linkup-standard",
+      "snippet": "AI-powered web search with detailed overviews and answers, faster than Deep Search. Ranks #1 on OpenAI SimpleQA benchmark."
+    },
+    {
+      "title": "Linkup Standard API: Pricing, Playground & Docs | EmpirioLabs AI",
+      "url": "https://empiriolabs.ai/models/linkup-standard",
+      "snippet": "Call the Linkup Standard API on EmpirioLabs AI: live pricing, quickstart code, parameters, and a browser playground. AI-powered web search with detailed overviews and..."
+    },
+    {
+      "title": "OpenBenchmarking.org - Cross-Platform, Open-Source Automated ...",
+      "url": "https://openbenchmarking.org/",
+      "snippet": "OpenBenchmarking.org is an open, collaborative testing platform designed by Phoronix Media and the developers behind the Phoronix Test Suite, the most comprehensive benchmarking platform for Linux, BSD, and other operating systems."
+    },
+    {
+      "title": "Openbenchmarks",
+      "url": "https://openbenchmarks.com/",
+      "snippet": "Independent benchmarks for build-vs-buy decisions. Verifiable, reproducible and open source."
+    },
+    {
+      "title": "Linkup-Standard - Poe",
+      "url": "https://poe.com/Linkup-Standard",
+      "snippet": "Linkup Standard is an AI-powered search bot that provides detailed overviews and answers sourced from the web, helping you find high-quality information quickly and accurately. Results are faster compared to its Deep search counterpart. Linkup&#x27;s technology ranks #1 globally for factual accuracy, achieving state-of-the-art scores on OpenAI&#x27;s SimpleQA benchmark. Notes: Context Window: 100k ..."
+    }
+  ]
+}

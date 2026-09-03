@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "CraneAILabs/edu-ganda-gemma-e2b-v5",
+  "slug": "craneailabs-edu-ganda-gemma-e2b-v5",
+  "author": "CraneAILabs",
+  "url": "https://huggingface.co/CraneAILabs/edu-ganda-gemma-e2b-v5",
+  "created_at": "2026-09-03T01:31:41.000Z",
+  "updated_at": "2026-09-03T04:49:52.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "lg",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "luganda",
+    "east-africa",
+    "education",
+    "experimental",
+    "model-merge",
+    "slerp",
+    "text-generation",
+    "conversational",
+    "lg",
+    "en",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5525831235,
+  "parameters_human": "5.53B",
+  "storage_bytes": 11084099952,
+  "storage_human": "11.1 GB",
+  "base_model": "google/gemma-4-e2b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CraneAILabs/EduGanda-Gemma-3-1B · Hugging Face",
+      "url": "https://huggingface.co/CraneAILabs/EduGanda-Gemma-3-1B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Get started with Gemma models - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/get_started",
+      "snippet": "Get started with Gemma models The Gemma family of open models includes a range of model sizes, capabilities, and task-specialized variations to help you build custom generative solutions. These are the main paths you can follow when using Gemma models in an application: Select a model and deploy it as-is in your application"
+    },
+    {
+      "title": "CraneAILabs/ganda-gemma-1b · Hugging Face",
+      "url": "https://huggingface.co/CraneAILabs/ganda-gemma-1b",
+      "snippet": "A fine-tuned Gemma 3 1B instruction model specialized for English-to-Luganda translation and Luganda conversational AI. The model accepts input in both English and Luganda but outputs responses exclusively in Luganda."
+    },
+    {
+      "title": "Home | Crane AI Labs",
+      "url": "https://craneailabs.com/",
+      "snippet": "Where Cutting-Edge AI Meets Global South Innovation Explore Our Collaborations View Our Models"
+    },
+    {
+      "title": "EduGanda/README.md at main · AutoVision-cloud/EduGanda · GitHub",
+      "url": "https://github.com/AutoVision-cloud/EduGanda/blob/main/README.md",
+      "snippet": "Background [Fab AI blog post — link here]. EduGanda-Gemma-3-1B (Crane AI Labs, 2026) is a 1B parameter model for foundational literacy education in Uganda, trained in Luganda via CPT → SFT → GRPO → model merge. The blog acknowledges a position bias in the benchmark results (B: 93%, D: 41%) caused by an imbalanced training dataset."
+    }
+  ]
+}

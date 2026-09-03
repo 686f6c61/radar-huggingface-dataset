@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "FerzDevZ/aegisx-mini",
+  "slug": "ferzdevz-aegisx-mini",
+  "author": "FerzDevZ",
+  "url": "https://huggingface.co/FerzDevZ/aegisx-mini",
+  "created_at": "2026-09-03T02:08:39.000Z",
+  "updated_at": "2026-09-03T02:57:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47636820,
+  "storage_human": "48 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FerzDevZ (Ferdinand) - Hugging Face",
+      "url": "https://huggingface.co/FerzDevZ/models",
+      "snippet": "User profile of Ferdinand on Hugging Face"
+    },
+    {
+      "title": "AEGIS-Mini Version | Devpost",
+      "url": "https://devpost.com/software/aegis-mini-version",
+      "snippet": "AEGIS-Mini Version - AI-driven Zero Trust architecture for real-time threat detection and autonomous cyber-defense."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "AegisX: An Acceleration Framework for Moving Target Defenses to Boost ...",
+      "url": "https://dl.acm.org/doi/10.1145/3787109.3815251",
+      "snippet": "Abstract Moving target defenses are a key proactive technique for defending against adversarial attacks by increasing the dynamics, randomness and diversification of the system, and constructs an ensemble of multiple DNNs to obtain stronger defense. However, their models run noticeably slower on existing DNN accelerators than single-model ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The AI community building the future. ... Explore AI Apps or Browse 2M+ models Trending on this week"
+    }
+  ]
+}

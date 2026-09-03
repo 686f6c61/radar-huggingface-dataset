@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kobayashiren94/albef-contrastive-ablation46",
+  "slug": "kobayashiren94-albef-contrastive-ablation46",
+  "author": "kobayashiren94",
+  "url": "https://huggingface.co/kobayashiren94/albef-contrastive-ablation46",
+  "created_at": "2026-09-03T01:59:15.000Z",
+  "updated_at": "2026-09-03T01:59:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hanweitsai/contrastive · Hugging Face",
+      "url": "https://huggingface.co/hanweitsai/contrastive",
+      "snippet": "Overview This repository is a compact, custom PyTorch implementation of Albef for Contrastive. The nano configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "kobayashiren94 (Hassan Mansour) - Hugging Face",
+      "url": "https://huggingface.co/kobayashiren94/models",
+      "snippet": "User profile of Hassan Mansour on Hugging Face"
+    },
+    {
+      "title": "[2107.07651] Align before Fuse: Vision and Language Representation ...",
+      "url": "https://arxiv.org/abs/2107.07651",
+      "snippet": "In this paper, we introduce a contrastive loss to ALign the image and text representations BEfore Fusing (ALBEF) them through cross-modal attention, which enables more grounded vision and language representation learning. Unlike most existing methods, our method does not require bounding box annotations nor high-resolution images."
+    },
+    {
+      "title": "Align before Fuse: Vision-Language Representation",
+      "url": "https://api.emergentmind.com/papers/2107.07651",
+      "snippet": "The paper introduces the ALBEF framework, which aligns unimodal (image and text) features with an intermediate contrastive loss before multimodal fusion to enhance cross-modal learning. The paper employs momentum distillation by leveraging a momentum model to generate pseudo-targets that improve learning under noisy data conditions."
+    },
+    {
+      "title": "GitHub - salesforce/ALBEF: Code for ALBEF: a new vision-language pre ...",
+      "url": "https://github.com/salesforce/ALBEF",
+      "snippet": "Align before Fuse: Vision and Language Representation Learning with Momentum Distillation, NeurIPS 2021 Spotlight (Salesforce Research). Announcement: ALBEF is now officially integrated into LAVIS - a one-stop library for language-and-vision research and applications! This is the official PyTorch implementation of the ALBEF paper [Blog]."
+    }
+  ]
+}

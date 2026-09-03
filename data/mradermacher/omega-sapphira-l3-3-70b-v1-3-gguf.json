@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Omega-Sapphira-L3.3-70B-v1.3-GGUF",
+  "slug": "mradermacher-omega-sapphira-l3-3-70b-v1-3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Omega-Sapphira-L3.3-70B-v1.3-GGUF",
+  "created_at": "2026-09-03T10:06:29.000Z",
+  "updated_at": "2026-09-03T11:22:14.000Z",
+  "license": "llama3.3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "slerp",
+    "llama",
+    "roleplay",
+    "storywriting",
+    "unaligned",
+    "not-for-all-audiences",
+    "en",
+    "base_model:cactopus/Omega-Sapphira-L3.3-70B-v1.3",
+    "base_model:quantized:cactopus/Omega-Sapphira-L3.3-70B-v1.3",
+    "license:llama3.3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 141697383008,
+  "storage_human": "141.7 GB",
+  "base_model": "cactopus/Omega-Sapphira-L3.3-70B-v1.3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DaFont - Baixar fontes",
+      "url": "https://www.dafont.com/pt/",
+      "snippet": "As fontes apresentadas neste site são propriedades de seus autores, e são tanto freeware, shareware, versões demo ou de domínio …"
+    },
+    {
+      "title": "New fonts | dafont.com",
+      "url": "https://www.dafont.com/new.php",
+      "snippet": "Archive of freely downloadable fonts. Browse by alphabetical listing, by style, by author or by popularity."
+    },
+    {
+      "title": "有问题，就会有答案 - 知乎",
+      "url": "https://www.zhihu.com/creator",
+      "snippet": "在「我的页」右上角打开扫一扫 其他扫码方式：微信 下载知乎App 无障碍模式 验证码登录 密码登录 开通机构号 获取短信验证码 忘记 …"
+    },
+    {
+      "title": "TikTok - 知乎",
+      "url": "https://www.zhihu.com/topic/21190111/hot",
+      "snippet": "Tik Tok是抖音短视频国际版。Tik Tok原本在海外接连获得佳绩，抖音短视频似乎已经成为中国产品在海外获得成功的又一杰出代表， …"
+    },
+    {
+      "title": "TikTok 45.4.3 抓包之双网络栈证书校验分析 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-2111184-1-1.html",
+      "snippet": "Jun 5, 2026 · 工具链：google px4真机、proxypin 1.2.7、IDA 9.0。某海外社交app。先hook下connect函数，看下app使用的网络请求 …"
+    }
+  ]
+}

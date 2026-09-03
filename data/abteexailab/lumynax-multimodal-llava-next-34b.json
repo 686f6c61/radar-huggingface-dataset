@@ -5,7 +5,7 @@
   "author": "AbteeXAILab",
   "url": "https://huggingface.co/AbteeXAILab/lumynax-multimodal-llava-next-34b",
   "created_at": "2026-05-17T02:13:41.000Z",
-  "updated_at": "2026-09-02T23:14:26.000Z",
+  "updated_at": "2026-09-03T02:32:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -34,6 +34,8 @@
     "conversational",
     "en",
     "mi",
+    "base_model:liuhaotian/llava-v1.6-34b",
+    "base_model:finetune:liuhaotian/llava-v1.6-34b",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us"
@@ -45,7 +47,7 @@
   "parameters_human": "34.75B",
   "storage_bytes": 69503491449,
   "storage_human": "69.5 GB",
-  "base_model": null,
+  "base_model": "liuhaotian/llava-v1.6-34b",
   "formats": [
     "safetensors"
   ],

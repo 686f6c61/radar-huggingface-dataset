@@ -5,7 +5,7 @@
   "author": "fpadovani",
   "url": "https://huggingface.co/fpadovani/eus-latn-100mb-after-ppt-Dp-100mb-ckpt500_seed455",
   "created_at": "2026-07-20T07:59:31.000Z",
-  "updated_at": "2026-09-02T10:55:41.000Z",
+  "updated_at": "2026-09-02T11:59:47.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 7737721379,
-  "storage_human": "7.7 GB",
+  "storage_bytes": 12479577618,
+  "storage_human": "12.5 GB",
   "base_model": "fpadovani/eus-latn-100mb-ppt-Dp-100mb_seed455",
   "formats": [
     "safetensors"

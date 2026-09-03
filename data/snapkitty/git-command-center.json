@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/git-command-center",
+  "slug": "snapkitty-git-command-center",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/git-command-center",
+  "created_at": "2026-09-03T10:27:00.000Z",
+  "updated_at": "2026-09-03T10:27:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wie kann ich die Telekom Mail App auf meinem PC installieren",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/wie-kann-ich-die-telekom-mail-app-auf-meinem-pc-installieren/668720314ae73561daf5c926",
+      "snippet": "Ich habe die Telekom Mail App auf meinem Tablett undmöchte sie aber auch auf meinem PC installieren. Wie mache ich das?"
+    },
+    {
+      "title": "Mail-Header im Emailcenter anzeigen | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/mail-header-im-emailcenter-anzeigen/668630574ae73561dac3aef8",
+      "snippet": "Aktuell hängen da 2 Mails von der Telekom selbst, die wegen ungültigen Header-Einträgen nicht abgerufen werden (POP3S). Wenn …"
+    },
+    {
+      "title": "email an Telekom | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/festnetz-internet/email-an-telekom/67961499148a2e71bf9120b9",
+      "snippet": "0 0 Svenja P. Telekom hilft Team vor 2 Jahren Hallo @kuhring.p , was genau möchtest du denn in deiner Mail von uns? Du kannst …"
+    },
+    {
+      "title": "email adresse für beschwerde | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/mobilfunk/email-adresse-f%C3%BCr-beschwerde/675573cc389f9f597b5dc5ac",
+      "snippet": "Kann ich mich bei der Telekom per Email beschweren? Keine Telefonnummern auch keine mobilen. Befinde mich noch im …"
+    },
+    {
+      "title": "\"jemand hat sich soeben mit Ihrem Telekom Login angemeldet\"",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/jemand-hat-sich-soeben-mit-ihrem-telekom-login-angemeldet/69844d94bb85af68bfef6c89",
+      "snippet": "Hallo zusammen, nach jeder Anmeldung mit meinem Laptop an meinem T-Online Account erhalte ich folgende Meldung: \"jemand hat …"
+    }
+  ]
+}

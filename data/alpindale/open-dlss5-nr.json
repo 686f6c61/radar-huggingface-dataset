@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "alpindale/open-dlss5-nr",
+  "slug": "alpindale-open-dlss5-nr",
+  "author": "alpindale",
+  "url": "https://huggingface.co/alpindale/open-dlss5-nr",
+  "created_at": "2026-09-03T09:22:01.000Z",
+  "updated_at": "2026-09-03T09:37:02.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 147943434,
+  "storage_human": "148 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA DLSS 5 Delivers AI-Powered Breakthrough In Visual Fidelity For Games",
+      "url": "https://www.nvidia.com/en-us/geforce/news/dlss5-breakthrough-in-visual-fidelity-for-games/",
+      "snippet": "The AI model is trained end to end to understand complex scene semantics such as characters, hair, fabric and translucent skin, along with environmental lighting conditions like front-lit, back-lit or overcast — all by analyzing a single frame."
+    },
+    {
+      "title": "r/nvidia on Reddit: DLSS 5: Three AI models, single-GPU operation and full control",
+      "url": "https://www.reddit.com/r/nvidia/comments/1v2cz41/dlss_5_three_ai_models_singlegpu_operation_and/",
+      "snippet": "Single GPU frame gen reduces performance by 20-30%, so I doubt this heavy AI generative filter will be any lighter ... It’s not like it’s ever been impossible on a technical level. It’s that games don’t ship with discrete render pipelines like that that can be divided between graphics cards. Dlss5 seems to mostly act on a completed frame, plus some other data so what’s probably happening is that the main GPU 5090 is rendering the game, and then that data gets sent to the second GPU, and the first GPU starts rendering the next frame, and then the completed frame from the second GPU that’s doing the DLSS5 post-process is then presented."
+    },
+    {
+      "title": "r/nvidia on Reddit: [Megathread] Unofficial DLSS 5 Neural Rendering Mods Comparison",
+      "url": "https://www.reddit.com/r/nvidia/comments/1w1817k/megathread_unofficial_dlss_5_neural_rendering/",
+      "snippet": ""
+    },
+    {
+      "title": "r/StableDiffusion on Reddit: Dlss 5 video player is now avaialble",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/1w2k7pg/dlss_5_video_player_is_now_avaialble/",
+      "snippet": ""
+    },
+    {
+      "title": "r/StableDiffusion on Reddit: How would you go about re-creating \"DLSS 5\" running in real-time on local hardware?",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/1s0dyzv/how_would_you_go_about_recreating_dlss_5_running/",
+      "snippet": ""
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/woz-vault",
+  "slug": "snapkitty-woz-vault",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/woz-vault",
+  "created_at": "2026-09-03T10:29:22.000Z",
+  "updated_at": "2026-09-03T10:29:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supermarchés Lidl en France",
+      "url": "https://www.lidl.fr/s/fr-FR/supermarches/",
+      "snippet": "Trouver les offres et prospectus du supermarché Lidl le plus proche."
+    },
+    {
+      "title": "Lidl, ça vaut le coup. En supermarché et en ligne.",
+      "url": "https://www.lidl.fr/",
+      "snippet": "L'ensemble des produits LIDL est à votre disposition 24 heures sur 24 dans votre boutique en ligne. Vous pouvez prendre tout votre …"
+    },
+    {
+      "title": "Lidl autour de moi : trouvez un magasin proche rapidement",
+      "url": "https://www.telephone.city/enseigne/lidl/",
+      "snippet": "Vous cherchez un Lidl autour de vous ? Accédez en quelques secondes aux magasins Lidl proches, avec leurs horaires, leur …"
+    },
+    {
+      "title": "Magasins Lidl à Limoges | Horaires et Téléphones | Tiendeo",
+      "url": "https://www.tiendeo.fr/Magasins/limoges/lidl",
+      "snippet": "Trouvez ici toutes les adresses, téléphones et horaires de Lidl à Limoges et de vos magasins préférées. Informez-vous avec Tiendeo!"
+    },
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Search by your Zip Code or City to find your nearest Lidl and start saving! Never miss another offer!"
+    }
+  ]
+}

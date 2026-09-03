@@ -5,7 +5,7 @@
   "author": "ManniX-ITA",
   "url": "https://huggingface.co/ManniX-ITA/opencoti-llamafile",
   "created_at": "2026-07-15T05:05:09.000Z",
-  "updated_at": "2026-09-03T00:58:23.000Z",
+  "updated_at": "2026-09-03T06:14:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -17,6 +17,7 @@
     "gguf",
     "inference-engine",
     "cuda",
+    "vulkan",
     "opencoti",
     "license:apache-2.0",
     "region:us"

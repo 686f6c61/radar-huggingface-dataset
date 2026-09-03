@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/snapkitty-ocr",
+  "slug": "snapkitty-snapkitty-ocr",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/snapkitty-ocr",
+  "created_at": "2026-09-03T10:10:12.000Z",
+  "updated_at": "2026-09-03T10:10:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2025-2026 TÃ¼m SÄ±nÄ±flarÄ±n 1. DÃ¶nem 1. YazÄ±lÄ± SorularÄ± …",
+      "url": "https://www.webdeogren.com/2025-2026-tum-siniflarin-1-donem-1-yazili-sorulari-ve-degerlendirme-calismalari-ornek.html",
+      "snippet": "2025-2026 Tüm Sınıfların 1. Dönem 1. Yazılı Soruları ve Değerlendirme Çalışmaları (Örnek) Tüm sınıf ve ders bazında yüklemeler en …"
+    },
+    {
+      "title": "Değerler Kulübü – Web'de Öğren",
+      "url": "https://www.webdeogren.com/kategori/degerler-kulubu",
+      "snippet": "Jun 25, 2026 · Değerler Kulübü hakkında Web'de Öğren tarafından yazılan gönderiler"
+    },
+    {
+      "title": "7. Sınıf Veli Toplantı Tutanakları – Web'de Öğren",
+      "url": "https://www.webdeogren.com/kategori/7-sinif-veli-toplanti-tutanaklari",
+      "snippet": "7. Sınıf Veli Toplantı Tutanakları hakkında Anasayfa Dosyalar Son Eklenen Dosyalar Tüm Sınıflar Dosyaları 7. Sınıf Tüm Dosyalar 7. …"
+    },
+    {
+      "title": "Web'de Öğren - webdeogren.com",
+      "url": "https://www.webdeogren.com/?action=tpmod%3Bdl%3Ditem8349",
+      "snippet": "Web'de Öğren - Birlikte En Doğruya SINIF KAYIT VE ERTELEME DİLEKÇESİ (66-67-68 VE 69-70-71 AYLIK ÖĞRENCİLER İÇİN)"
+    },
+    {
+      "title": "Web'de Öğren - webdeogren.com",
+      "url": "https://www.webdeogren.com/?action=tpmod%3Bdl%3Ditem35410",
+      "snippet": "Web'de Öğren - Birlikte En Doğruya MEB'den 2026-2027 Eğitim Yılı Okul Kayıtlarında Yeni Dönem: 'Adres Doğrulama' Şartı ve e …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "leok7v",
   "url": "https://huggingface.co/leok7v/gemma-4-e2b-it-qat",
   "created_at": "2026-07-31T07:38:20.000Z",
-  "updated_at": "2026-08-30T02:00:46.000Z",
+  "updated_at": "2026-09-02T07:10:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Blessy05/fraud-detector",
+  "slug": "blessy05-fraud-detector",
+  "author": "Blessy05",
+  "url": "https://huggingface.co/Blessy05/fraud-detector",
+  "created_at": "2026-09-03T10:14:12.000Z",
+  "updated_at": "2026-09-03T10:14:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20173757,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alpes-de-Haute-Provence — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Alpes-de-Haute-Provence",
+      "snippet": "Limitrophe de l' Italie, le département des Alpes-de-Haute-Provence est entouré par les départements des Alpes-Maritimes, du Var, …"
+    },
+    {
+      "title": "Alpes-de-Haute-Provence - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alpes-de-Haute-Provence",
+      "snippet": "Alpes-de-Haute-Provence's main cities are Digne-les-Bains (prefecture), Manosque, Sisteron, Barcelonnette, Castellane and …"
+    },
+    {
+      "title": "Venez en vacances dans les irrésistibles Alpes de Haute Provence",
+      "url": "https://www.tourisme-alpes-haute-provence.com/",
+      "snippet": "Nos idées de séjours vous invitent à découvrir les Alpes de Haute Provence ! Nos pépites, villages de caractère, grands espaces, …"
+    },
+    {
+      "title": "Alpes-de-Haute-Provence : tourisme et villes - Provence-Alpes-Côte …",
+      "url": "https://provence-alpes-cotedazur.com/decouvrir/villes/alpes-de-haute-provence/",
+      "snippet": "L’huile d’olive et les herbes de Provence sont réputées dans la France entière. Le miel de lavande avec sa texture onctueuse et son …"
+    },
+    {
+      "title": "Les 16 choses à faire pour visiter les Alpes-de-Haute-Provence",
+      "url": "https://toploc.com/blog/france/visiter-les-alpes-de-haute-provence",
+      "snippet": "May 11, 2026 · Visiter les Alpes-de-Haute-Provence, dans la région de Provence-Alpes-Côte d’Azur, est une aventure sensorielle …"
+    }
+  ]
+}

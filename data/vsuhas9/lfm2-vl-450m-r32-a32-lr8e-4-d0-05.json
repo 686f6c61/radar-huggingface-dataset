@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "vsuhas9/LFM2-VL-450M-r32-a32-lr8e-4-d0.05",
+  "slug": "vsuhas9-lfm2-vl-450m-r32-a32-lr8e-4-d0-05",
+  "author": "vsuhas9",
+  "url": "https://huggingface.co/vsuhas9/LFM2-VL-450M-r32-a32-lr8e-4-d0.05",
+  "created_at": "2026-09-03T08:08:45.000Z",
+  "updated_at": "2026-09-03T08:09:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_vl",
+    "image-text-to-text",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450822656,
+  "parameters_human": "450.8M",
+  "storage_bytes": 901692416,
+  "storage_human": "902 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

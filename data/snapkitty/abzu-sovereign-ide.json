@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/abzu-sovereign-ide",
+  "slug": "snapkitty-abzu-sovereign-ide",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/abzu-sovereign-ide",
+  "created_at": "2026-09-03T10:11:13.000Z",
+  "updated_at": "2026-09-03T10:11:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9410998,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "ترجمة Google - Google Translate",
+      "url": "https://translate.google.com/details?hl=ar&sl=en&tl=ar&op=translate",
+      "snippet": "لا يدعم هذا المتصفّح الإدخال الصوتي. إرسال ملاحظات"
+    },
+    {
+      "title": "Prekladač Google – osobný tlmočník v telefóne alebo počítači",
+      "url": "https://translate.google.com/intl/sk/about/",
+      "snippet": "Naučte sa prekladať text, reč, obrázky, dokumenty, weby a ďalší obsah pomocou Prekladača Google."
+    },
+    {
+      "title": "Google Traductor: Un intérprete personal en tu teléfono o computadora",
+      "url": "https://translate.google.com/intl/es-419/about/",
+      "snippet": "Descubre cómo traducir texto, conversaciones, imágenes, documentos, sitios web y mucho más con Google Traductor."
+    },
+    {
+      "title": "Google Prevodilac - Lični tumač na vašem telefonu ili računaru",
+      "url": "https://translate.google.com/intl/bs/about/",
+      "snippet": "Naučite kako da prevodite tekst, govor, slike, dokumente, web lokacije i drugo uz Google Prevodilac."
+    }
+  ]
+}

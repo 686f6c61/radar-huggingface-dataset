@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "openbenchmarks/you",
+  "slug": "openbenchmarks-you",
+  "author": "openbenchmarks",
+  "url": "https://huggingface.co/openbenchmarks/you",
+  "created_at": "2026-09-03T02:06:45.000Z",
+  "updated_at": "2026-09-03T02:06:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "web-search",
+    "search-api",
+    "company-news",
+    "leaderboard",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Open Source AI Models in 2026 (Ranked)",
+      "url": "https://felloai.com/best-open-source-ai-models/",
+      "snippet": "The best open source AI models in 2026, ranked. Kimi K3, GLM 5.2, DeepSeek V4, Gemma 4 and Inkling, with benchmarks, licenses and the hardware each needs."
+    },
+    {
+      "title": "OpenBenchmark AI",
+      "url": "https://openbenchmark.ai/",
+      "snippet": "Get early access Join the OpenBenchmark AI waitlist Tell us about your use-case and we&#x27;ll prioritize the benchmarks and model judges that matter most to you. Human or AI judge workflows Public, private, or invite-only visibility Prompt and LLM comparisons side-by-side Join waitlist"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 416 AI models across 416 benchmarks, with 230 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "OpenMark - Compare AI Models & Benchmark LLMs | 100+ Models",
+      "url": "https://openmark.ai/ui/",
+      "snippet": "Compare AI model pricing and performance. Benchmark 100+ LLMs including GPT, Claude, Gemini on your actual task. Deterministic scoring, real API costs."
+    }
+  ]
+}

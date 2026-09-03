@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "forti2026/nllb-tegalan-tourism",
+  "slug": "forti2026-nllb-tegalan-tourism",
+  "author": "forti2026",
+  "url": "https://huggingface.co/forti2026/nllb-tegalan-tourism",
+  "created_at": "2026-09-03T10:18:11.000Z",
+  "updated_at": "2026-09-03T10:19:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "m2m_100",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 615073792,
+  "parameters_human": "615.1M",
+  "storage_bytes": 2492595048,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows Media Player erkennt CDs nicht mehr - windows-11-forum.de",
+      "url": "https://www.windows-11-forum.de/threads/windows-media-player-erkennt-cds-nicht-mehr.227509/",
+      "snippet": "Jan 3, 2026 · Diskutiere Windows Media Player erkennt CDs nicht mehr im Windows 11 Software Forum im Bereich Windows 11 …"
+    },
+    {
+      "title": "Windows 11 Kontextmenü für “Senden an“ Funktion anpassen und …",
+      "url": "https://www.windows-11-forum.de/threads/windows-11-kontextmenue-fuer-senden-an-funktion-anpassen-und-links-zu-eigenen-apps-einfuegen.165107/",
+      "snippet": "Jul 7, 2022 · Öffnet dazu die zuerst Eingabeaufforderung in Windows 11, zum Beispiel über einen Klick mit der rechten Maustaste auf …"
+    },
+    {
+      "title": "Windows 11 Forum - Win-11-Forum.de",
+      "url": "https://www.windows-11-forum.de/",
+      "snippet": "Aug 27, 2026 · Tritt dem Windows 11 Forum bei für Expertentipps, Lösungen und Community-Diskussionen. Erhalte Hilfe, …"
+    },
+    {
+      "title": "Windows 11 Wetter Temperatur in Celsius oder Fahrenheit anzeigen …",
+      "url": "https://www.windows-11-forum.de/threads/windows-11-wetter-temperatur-in-celsius-oder-fahrenheit-anzeigen-lassen-so-einfach-geht-es.227295/",
+      "snippet": "Aug 28, 2025 · Startet dazu einfach die Windows 11 Wetter Anwendung und geht dann in der vertikalen Icon Leiste am linken Rand …"
+    },
+    {
+      "title": "Windows 11 Explorer nicht bildfüllend",
+      "url": "https://www.windows-11-forum.de/threads/windows-11-explorer-nicht-bildfuellend.169522/",
+      "snippet": "Dec 1, 2022 · Diskutiere Windows 11 Explorer nicht bildfüllend im Windows 11 Software Forum im Bereich Windows 11 Foren; …"
+    }
+  ]
+}

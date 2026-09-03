@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/SNAPKIT",
+  "slug": "snapkitty-snapkit",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/SNAPKIT",
+  "created_at": "2026-09-03T10:20:28.000Z",
+  "updated_at": "2026-09-03T10:20:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iOS 18 Beta DKB App zeigt nach dem einlog… - Apple Community",
+      "url": "https://communities.apple.com/de/thread/255714823",
+      "snippet": "iOS 18 Beta DKB App zeigt nach dem einloggen nur einen weißen Hintergrundbildschirm an Hallo und guten tag ich hoffe ihr könnt …"
+    },
+    {
+      "title": "Iphone 11 pro-mit Face ID bei der DKB Ber… - Apple Community",
+      "url": "https://communities.apple.com/de/thread/250830332",
+      "snippet": "DKB Banking App löschen App neu laden Anmelden in der App. Diese fordert dann Bestätigung. Gerät nicht verfügbar/ neu …"
+    },
+    {
+      "title": "Face ID funktioniert nicht mit Banking App - Apple Community",
+      "url": "https://communities.apple.com/de/thread/252064553",
+      "snippet": "Face ID funktioniert nicht mit Banking App Hallo zusammen, an meinem Telefon funktioniert Face ID eigentlich einwandfrei bis auf …"
+    },
+    {
+      "title": "Aktuelle Apple Softwareversionen - Apple Community",
+      "url": "https://communities.apple.com/de/docs/DOC-250006576",
+      "snippet": "Aug 27, 2026 · Hi, hallo und herzlich Willkommen in der Apple Support Community. Schön das du da bist, ich hoffe es geht dir gut. …"
+    },
+    {
+      "title": "Iphone 11 pro-mit Face ID bei der DKB Ber… - Apple Community",
+      "url": "https://communities.apple.com/de/thread/250830332?page=2",
+      "snippet": "Iphone 11 pro-mit Face ID bei der DKB Berlin einloggen funktioniert nicht Hi, ich habe gestern mein neues Iphone 11pro in Betrieb …"
+    }
+  ]
+}

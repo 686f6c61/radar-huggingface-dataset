@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "topabaem/Qwen3.8-27B-STQ",
+  "slug": "topabaem-qwen3-8-27b-stq",
+  "author": "topabaem",
+  "url": "https://huggingface.co/topabaem/Qwen3.8-27B-STQ",
+  "created_at": "2026-09-03T01:41:23.000Z",
+  "updated_at": "2026-09-03T03:59:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "qwen",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 62978524960,
+  "storage_human": "63.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Topabaem05/mix-stq - GitHub",
+      "url": "https://github.com/Topabaem05/mix-stq",
+      "snippet": "Qwen3.8-27B, BF16, stratified MMLU 570 + ARC-Challenge 230, paired McNemar plus a preregistered 10,000-sample bootstrap CI. Only the language-model MLP weights are quantized; bpw below is for those 192 covered tensors, not the whole model or a GGUF file."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    },
+    {
+      "title": "Qwen3.8-27B: A Deep Dive Into Qwen&#x27;s Newest Vision-Language Powerhouse",
+      "url": "https://dev.to/mayu2008/qwen38-27b-a-deep-dive-into-qwens-newest-vision-language-powerhouse-2e7",
+      "snippet": "Qwen3.8-27B is the compact, deployment-friendly member of the new Qwen3.8 generation, which builds on the architecture Qwen introduced in Qwen3.5. It&#x27;s a causal language model with a vision encoder — meaning it&#x27;s not a bolted-on multimodal adapter, but a model natively trained to reason over text, images, and even hour-long videos."
+    },
+    {
+      "title": "Qwen3.8 27B Models - Intelligence, Performance & Price Comparison ...",
+      "url": "https://artificialanalysis.ai/models/releases/qwen3-8-27b",
+      "snippet": "The Qwen3.8 27B release offers 4 models, each with different intelligence, performance, and pricing characteristics. Below is a comparison of the key metrics across the 4 models. For intelligence, the top model of Qwen3.8 27B is Qwen3.8 27B (xhigh) at 52. For output speed, the fastest model is Qwen3.8 27B (Non-reasoning) at 48 t/s."
+    }
+  ]
+}

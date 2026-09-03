@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/env-ship-public",
+  "slug": "snapkitty-env-ship-public",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/env-ship-public",
+  "created_at": "2026-09-03T10:03:31.000Z",
+  "updated_at": "2026-09-03T10:03:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "Télécharger et utiliser Google Traduction",
+      "url": "https://support.google.com/translate/answer/6350850?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Vous pouvez traduire du texte saisi au clavier, en écriture manuscrite, sur une photo ou avec la saisie vocale dans plus de 200 …"
+    },
+    {
+      "title": "Aide Google Translate",
+      "url": "https://support.google.com/translate/?hl=fr",
+      "snippet": "Centre d'aide officiel de Google Translate où vous trouverez des conseils et des didacticiels sur l'utilisation du produit, ainsi que les …"
+    },
+    {
+      "title": "Traduire par saisie vocale - Ordinateur - Aide Google Translate",
+      "url": "https://support.google.com/translate/answer/6142468?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Traduire avec un micro Important : Les langues compatibles varient en fonction du navigateur. Vous pouvez traduire à l'aide d'un …"
+    },
+    {
+      "title": "Traduire des images - Ordinateur - Aide Google Translate",
+      "url": "https://support.google.com/translate/answer/6142483?hl=fr-FR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Traduire du texte dans des images Google Traduction vous permet de traduire le texte qui figure dans des images depuis votre …"
+    }
+  ]
+}

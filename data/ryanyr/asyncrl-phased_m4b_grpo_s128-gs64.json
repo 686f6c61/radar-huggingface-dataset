@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "RyanYr/asyncrl-phased_m4b_grpo_s128-gs64",
+  "slug": "ryanyr-asyncrl-phased_m4b_grpo_s128-gs64",
+  "author": "RyanYr",
+  "url": "https://huggingface.co/RyanYr/asyncrl-phased_m4b_grpo_s128-gs64",
+  "created_at": "2026-09-03T01:37:44.000Z",
+  "updated_at": "2026-09-03T01:40:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49837555676,
+  "storage_human": "49.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RyanYr/asyncrl-phased_m4b_grpo_s128-gs128 · Hugging Face",
+      "url": "https://huggingface.co/RyanYr/asyncrl-phased_m4b_grpo_s128-gs128",
+      "snippet": "RyanYr / asyncrl-phased_m4b_grpo_s128-gs128 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "RyanYr/asyncrl-m4b_grpo_s40-gs200 · Hugging Face",
+      "url": "https://huggingface.co/RyanYr/asyncrl-m4b_grpo_s40-gs200",
+      "snippet": "m4b_grpo_s40 - global step 200 Reinforcement-learning training checkpoint from the async-rl DAPO-Math study, written by Trinity-RFT + verl. One repo holds exactly one checkpoint; the step number is in the repo name and in this repo&#x27;s marker commit, titled Save model at global step 200."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    },
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "zhouxinxin/itn-disfluency-v14",
+  "slug": "zhouxinxin-itn-disfluency-v14",
+  "author": "zhouxinxin",
+  "url": "https://huggingface.co/zhouxinxin/itn-disfluency-v14",
+  "created_at": "2026-09-03T08:55:52.000Z",
+  "updated_at": "2026-09-03T09:05:09.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8834317158,
+  "storage_human": "8.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

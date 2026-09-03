@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "guadalupeabc/segment-anything",
+  "slug": "guadalupeabc-segment-anything",
+  "author": "guadalupeabc",
+  "url": "https://huggingface.co/guadalupeabc/segment-anything",
+  "created_at": "2026-09-03T10:11:45.000Z",
+  "updated_at": "2026-09-03T10:11:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Keynius",
+      "url": "https://admin.keynius.app/",
+      "snippet": "Forgot password?"
+    },
+    {
+      "title": "Login - admin.keynius.app",
+      "url": "https://admin.keynius.app/login",
+      "snippet": "Forgot password?"
+    },
+    {
+      "title": "Your Keynius Locker!",
+      "url": "https://online.keynius.app/",
+      "snippet": "Your Keynius Locker! Easy access, manage and open."
+    },
+    {
+      "title": "Keynius",
+      "url": "https://dev.keynius.app/",
+      "snippet": "Jul 17, 2026 · Forgot password?"
+    },
+    {
+      "title": "Secure Smart Locker Systems & Management | Keynius",
+      "url": "https://keynius.eu/",
+      "snippet": "Assign staff lockers for 1-to-1, 1-to-many, or first-come first-served. Access via RFID cards, QR codes, PIN codes, fingerprints, …"
+    }
+  ]
+}

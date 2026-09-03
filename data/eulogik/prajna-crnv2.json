@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "eulogik/Prajna-CRNv2",
+  "slug": "eulogik-prajna-crnv2",
+  "author": "eulogik",
+  "url": "https://huggingface.co/eulogik/Prajna-CRNv2",
+  "created_at": "2026-09-03T08:13:58.000Z",
+  "updated_at": "2026-09-03T08:16:51.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "crnv2",
+    "error-correction",
+    "frozen-backbone",
+    "capability-preservation",
+    "logit-adjustment",
+    "parameter-efficient",
+    "gemma",
+    "apple-silicon",
+    "on-device-ai",
+    "cehri",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-4-E2B",
+    "base_model:finetune:google/gemma-4-E2B",
+    "license:gemma",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136055227,
+  "storage_human": "136 MB",
+  "base_model": "google/gemma-4-E2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "CEHRI Exam (original, 60 Qs)",
+      "dataset": "CEHRI-60",
+      "metric": null,
+      "value": 53.3
+    },
+    {
+      "task": "CEHRI Exam (reworded, 120 Qs)",
+      "dataset": "CEHRI-120-reworded",
+      "metric": null,
+      "value": 43.3
+    },
+    {
+      "task": "MMLU (sampled, N=200)",
+      "dataset": "MMLU",
+      "metric": null,
+      "value": 62.5
+    },
+    {
+      "task": "BoolQ (sampled, N=200)",
+      "dataset": "BoolQ",
+      "metric": null,
+      "value": 72
+    }
+  ],
+  "sources": []
+}

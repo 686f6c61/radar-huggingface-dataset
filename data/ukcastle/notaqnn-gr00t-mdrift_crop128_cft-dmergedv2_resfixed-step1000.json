@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ukcastle/notaqnn-GR00T-Mdrift_crop128_cft-Dmergedv2_resfixed-step1000",
+  "slug": "ukcastle-notaqnn-gr00t-mdrift_crop128_cft-dmergedv2_resfixed-step1000",
+  "author": "ukcastle",
+  "url": "https://huggingface.co/ukcastle/notaqnn-GR00T-Mdrift_crop128_cft-Dmergedv2_resfixed-step1000",
+  "created_at": "2026-09-03T10:26:13.000Z",
+  "updated_at": "2026-09-03T10:27:35.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qnn",
+    "hexagon",
+    "qcs9075",
+    "gr00t",
+    "robotics",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5371150336,
+  "parameters_human": "5.37B",
+  "storage_bytes": 5685241928,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PowerToysSetup-0.24.0-x64汉化版 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1291018-1-1.html",
+      "snippet": "Oct 25, 2020 · 新人发帖，大佬们好！ 首先声明，此软件属于搬运，侵删。 PowerToysSetup-0.24.0-x64汉化版 关于PowerToys： ..."
+    },
+    {
+      "title": "How to Download and Install Microsoft PowerToys in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/143528-how-download-install-microsoft-powertoys-windows-10-a.html",
+      "snippet": "Dec 1, 2022 · Inspired by the Windows 95 era PowerToys project, this reboot provides power users with ways to squeeze more …"
+    },
+    {
+      "title": "Win10 Powertoys设置打不开 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1643816-1-1.html",
+      "snippet": "Jun 1, 2022 · Win10 Powertoys设置打不开 吾爱破解 - 52pojie.cn » 网站 › 【 软件安全 】 › 『悬赏问答区』 › old_thread › Win10 …"
+    },
+    {
+      "title": "New Microsoft PowerToys version v0.97.0 for Windows 10 and …",
+      "url": "https://www.tenforums.com/windows-10-news/222444-new-microsoft-powertoys-version-v0-97-0-windows-10-windows-11-a.html",
+      "snippet": "Jan 20, 2026 · PowerToys Run Plugins Fixed a plugin name typo and added Project Launcher to the third‑party list. Thanks @artickc! …"
+    },
+    {
+      "title": "WIn10/11 功能扩展工具 Microsoft PowerToys 0.57.0 免费中文版 ...",
+      "url": "https://www.52pojie.cn/thread-1614105-1-1.html",
+      "snippet": "Mar 31, 2022 · Microsoft PowerToys 扩展了Windows 10和11操作系统的功能，为它配备了额外的系统功能。例如，值得注意的 …"
+    }
+  ]
+}

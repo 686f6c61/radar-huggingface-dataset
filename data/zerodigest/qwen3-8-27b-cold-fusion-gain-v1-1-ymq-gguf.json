@@ -5,7 +5,7 @@
   "author": "zerodigest",
   "url": "https://huggingface.co/zerodigest/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-YMQ-GGUF",
   "created_at": "2026-08-23T12:36:52.000Z",
-  "updated_at": "2026-09-01T18:32:10.000Z",
+  "updated_at": "2026-09-02T19:57:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

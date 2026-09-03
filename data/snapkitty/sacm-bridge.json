@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/sacm-bridge",
+  "slug": "snapkitty-sacm-bridge",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/sacm-bridge",
+  "created_at": "2026-09-03T10:21:16.000Z",
+  "updated_at": "2026-09-03T10:21:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Télécharger et installer Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Installer Chrome hors connexion Si vous rencontrez des problèmes lors du téléchargement de Chrome sur votre ordinateur Windows, …"
+    },
+    {
+      "title": "Fazer o download e instalar o Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Digite a senha de administrador. Ao iniciar o Chrome pela primeira vez, é necessário ler e aceitar os Termos de Serviço do Google. …"
+    },
+    {
+      "title": "Reset Chrome settings to default - Google Help",
+      "url": "https://support.google.com/chrome/answer/3296214?hl=en",
+      "snippet": "On your Chrome profile, the following settings will change to the default on all devices where you're signed in: Default search engine: …"
+    },
+    {
+      "title": "Google Chrome'u indirme ve yükleme",
+      "url": "https://support.google.com/chrome/answer/95346?hl=tr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome'u yükleme Önemli: İndirmeden önce Chrome'un işletim sisteminizi desteklediğinden ve işletim sisteminizin diğer tüm sistem …"
+    },
+    {
+      "title": "ดาวน์โหลดและติดตั้ง Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=th-TH&co=GENIE.Platform%3DDesktop",
+      "snippet": "คุณสามารถดาวน์โหลดและติดตั้งเว็บเบราว์เซอร์ Chrome ได้โดยไม่มีค่าใช้จ่าย และใช้เพื่อท่องเว็บ ตรวจสอบข้อกำหนดของระบบในการ ..."
+    }
+  ]
+}

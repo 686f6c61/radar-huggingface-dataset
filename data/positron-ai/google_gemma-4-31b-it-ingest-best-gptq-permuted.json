@@ -5,7 +5,7 @@
   "author": "positron-ai",
   "url": "https://huggingface.co/positron-ai/google_gemma-4-31B-it-ingest-best-gptq-permuted",
   "created_at": "2026-08-25T19:37:39.000Z",
-  "updated_at": "2026-08-31T04:59:24.000Z",
+  "updated_at": "2026-09-02T18:43:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -21,6 +21,8 @@
     "gptq",
     "text-generation",
     "conversational",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:quantized:google/gemma-4-31B-it",
     "license:apache-2.0",
     "endpoints_compatible",
     "4-bit",
@@ -33,7 +35,7 @@
   "parameters_human": "31.27B",
   "storage_bytes": 19806273058,
   "storage_human": "19.8 GB",
-  "base_model": "google/gemma-4-31b-it",
+  "base_model": "google/gemma-4-31B-it",
   "formats": [
     "safetensors"
   ],

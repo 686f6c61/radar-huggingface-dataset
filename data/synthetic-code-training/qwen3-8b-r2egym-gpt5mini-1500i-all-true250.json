@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "synthetic-code-training/qwen3-8b-r2egym-gpt5mini-1500i-all-true250",
+  "slug": "synthetic-code-training-qwen3-8b-r2egym-gpt5mini-1500i-all-true250",
+  "author": "synthetic-code-training",
+  "url": "https://huggingface.co/synthetic-code-training/qwen3-8b-r2egym-gpt5mini-1500i-all-true250",
+  "created_at": "2026-09-03T02:00:02.000Z",
+  "updated_at": "2026-09-03T02:14:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939478,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features:"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    },
+    {
+      "title": "synthetic-code-training (Synthetic Code Training) - Hugging Face",
+      "url": "https://huggingface.co/synthetic-code-training/datasets",
+      "snippet": "Org profile for Synthetic Code Training on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "-Coder: Advancing Competitive Programming with Fully Synthetic Tasks ...",
+      "url": "https://arxiv.org/html/2601.06953",
+      "snippet": "Figure 1: Left: To address persistent data scarcity in competitive programming, we build a scalable alternative by training Code LLMs with fully synthetic data. Right: Avg@8 results on LiveCodeBench v5. X-Coder achieves significant performance gains on competitive programming using fully synthetic data."
+    }
+  ]
+}

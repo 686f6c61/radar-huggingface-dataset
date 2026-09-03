@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/burt-imma",
+  "slug": "snapkitty-burt-imma",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/burt-imma",
+  "created_at": "2026-09-03T08:15:46.000Z",
+  "updated_at": "2026-09-03T08:15:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128506,
+  "storage_human": "128506 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - SNAPKITTYWEST/burt-imma: BURT-IMMA: Matrix-Memory Equilibrium ...",
+      "url": "https://github.com/SNAPKITTYWEST/burt-imma",
+      "snippet": "Additional formalizations: BURT state, IMMA state, Boolean perceptron, MetaInvertedSum, SmoothLeaky activation, AlexNet bridge, Sum-Inversion, SPARK executor, Superpositioned induction, Quantum interference."
+    },
+    {
+      "title": "Snapkitty (Snapkitty Collective) - Hugging Face",
+      "url": "https://huggingface.co/Snapkitty",
+      "snippet": "Sovereign AI infrastructure — quantum-seeded agents, WORM-sealed reasoning, NAND-decomposed LLMs. Bel Esprit D&#x27;Accord Irrevocable Trust · EIN 42-697643"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=snapkitty",
+      "snippet": "Explore machine learning models. 6 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: snapkitty Clear all"
+    },
+    {
+      "title": "SnapKitty Collective Moves Down the Stack to Chip Design",
+      "url": "https://www.linkedin.com/posts/activity-7496501018260680704-7YK4",
+      "snippet": "The stack is becoming: Chip design → systems → in-house models → automated software → governance A few things we&#x27;re working on: Custom chip architecture and hardware design In-house AI ..."
+    },
+    {
+      "title": "Research — SnapKitty OS",
+      "url": "https://collectivekitty.com/papers",
+      "snippet": "SnapKitty OS original research: Attention Exhaustion Attacks, Sovereign Tick Runtime, ERE Protocol, and the ABZU checkpoint. Independent AI security and architecture research."
+    }
+  ]
+}

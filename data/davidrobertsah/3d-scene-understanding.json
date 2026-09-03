@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DavidRobertsah/3d-scene-understanding",
+  "slug": "davidrobertsah-3d-scene-understanding",
+  "author": "DavidRobertsah",
+  "url": "https://huggingface.co/DavidRobertsah/3d-scene-understanding",
+  "created_at": "2026-09-03T01:18:48.000Z",
+  "updated_at": "2026-09-03T01:18:54.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT4Scene",
+      "url": "https://gpt4scene.github.io/",
+      "snippet": "The model then inputs the concatenated BEV image and video frames with markers. In zero-shot evaluations, GPT4Scene improves performance over closed-source VLMs like GPT-4o."
+    },
+    {
+      "title": "GitHub - CognitiveAISystems/3DGraphLLM: [ICCV 2025] 3DGraphLLM is a ...",
+      "url": "https://github.com/CognitiveAISystems/3DGraphLLM",
+      "snippet": "In this work, we propose 3DGraphLLM, a method for constructing a learnable representation of a 3D scene graph, which serves as input for LLMs to perform 3D vision-language tasks."
+    },
+    {
+      "title": "GPT4Scene: Understand 3D Scenes from Videos with Vision-Language Models",
+      "url": "https://arxiv.org/abs/2501.01428",
+      "snippet": "In recent years, 2D Vision-Language Models (VLMs) have made significant strides in image-text understanding tasks. However, their performance in 3D spatial comprehension, which is critical for embodied intelligence, remains limited. Recent advances have leveraged 3D point clouds and multi-view images as inputs, yielding promising results. However, we propose exploring a purely vision-based ..."
+    },
+    {
+      "title": "GitHub - MIT-SPARK/llm_scene_understanding",
+      "url": "https://github.com/MIT-SPARK/llm_scene_understanding",
+      "snippet": "This repo contains code for the paper Leveraging Language Models for Robot 3D Scene Understanding. We present several methods for leveraging language models for 3D scene understanding on scene graphs, like those produced by the Hydra spatial perception system. We test our algorithms on scene graphs generated from the Matterport3D semantic mesh dataset."
+    },
+    {
+      "title": "3D Scene Understanding at CVPR 2026",
+      "url": "https://scene-understanding.com/",
+      "snippet": "Overview The rapid evolution toward next-generation embodied AI has driven remarkable convergence across computer vision, graphics, and robotics, with growing emphasis on robust 3D understanding for in-the-wild and real-world applications. Recent breakthroughs have introduced powerful 3D foundational models that demonstrate unprecedented zero-shot generalization across diverse 3D ..."
+    }
+  ]
+}

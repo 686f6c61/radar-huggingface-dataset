@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/summon",
+  "slug": "snapkitty-summon",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/summon",
+  "created_at": "2026-09-03T10:08:53.000Z",
+  "updated_at": "2026-09-03T10:08:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login or Sign Up for a Dropbox Account",
+      "url": "https://www.dropbox.com/login",
+      "snippet": "Login to Dropbox. Don't have an account? Signing up is easy. Just enter your email to get started."
+    },
+    {
+      "title": "Log in or Sign Up – Dropbox",
+      "url": "https://www.dropbox.com/en_GB/login",
+      "snippet": "Log in to Dropbox. Take your photos, docs and videos anywhere and keep your files safe."
+    },
+    {
+      "title": "Dropbox Sign eSignature Agreements — Work Smarter",
+      "url": "https://sign.dropbox.com/",
+      "snippet": "Dropbox Sign makes it easy to send, sign, and manage agreements without the extra complexity—so work can move faster from …"
+    },
+    {
+      "title": "Log In | Dropbox Fax - HelloFax",
+      "url": "https://app.fax.dropbox.com/account/logIn",
+      "snippet": "Sign in or create an account Sign in with Dropbox Sign in with Google or Email address Password"
+    },
+    {
+      "title": "Account access - Dropbox Help",
+      "url": "https://help.dropbox.com/account-access",
+      "snippet": "Get help accessing and managing your Dropbox account. Learn how to link accounts, troubleshoot sign-in issues, manage team …"
+    }
+  ]
+}

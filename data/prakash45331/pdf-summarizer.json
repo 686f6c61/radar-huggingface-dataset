@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "prakash45331/pdf-summarizer",
+  "slug": "prakash45331-pdf-summarizer",
+  "author": "prakash45331",
+  "url": "https://huggingface.co/prakash45331/pdf-summarizer",
+  "created_at": "2026-09-03T08:16:48.000Z",
+  "updated_at": "2026-09-03T08:16:48.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI PDF Summarizer: Summarize PDFs Instantly Online",
+      "url": "https://smallpdf.com/pdf-summarizer",
+      "snippet": "Summarize PDFs with AI, Fast and Easy Need to skim a long document? Our AI-powered PDF summarizer condenses chapters, documents, or entire PDFs into clear summaries and concise notes with just a few clicks. Perfect for students, researchers, and anyone needing quick access to essential information."
+    },
+    {
+      "title": "GitHub - awecode/pdf-summarizer: Summarize PDF using AI models",
+      "url": "https://github.com/awecode/pdf-summarizer",
+      "snippet": "Summarize PDF using AI models. Contribute to awecode/pdf-summarizer development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - prakash-n/ai-summarizer: my trial ai learning project to ...",
+      "url": "https://github.com/prakash-n/ai-summarizer",
+      "snippet": "A local AI-powered document summarizer using Ollama, with support for PDFs, OCR, and multiple summary modes."
+    },
+    {
+      "title": "PDF Summary | Free and instant with AI",
+      "url": "https://www.chatpdf.com/pdf-summary",
+      "snippet": "Get a free summary of your document without registration. Chat with your document to find key facts and understand everything."
+    },
+    {
+      "title": "PDF Summarizer | AI-Powered PDF Analysis Tool | AISummarizer",
+      "url": "https://www.aisummarizer.org/pdf-summarizer",
+      "snippet": "Summarize PDF documents with our AI-powered PDF summarizer tool. Extract key insights, analyze document structure, and get comprehensive summaries from your PDFs quickly and efficiently."
+    }
+  ]
+}

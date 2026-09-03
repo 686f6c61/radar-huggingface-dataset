@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/black-hole-engine",
+  "slug": "snapkitty-black-hole-engine",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/black-hole-engine",
+  "created_at": "2026-09-03T10:33:07.000Z",
+  "updated_at": "2026-09-03T10:33:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Blackhole 3D Models - Download Instantly | Meshy",
+      "url": "https://www.meshy.ai/tags/blackhole",
+      "snippet": "Use Meshy's AI to create your own Blackhole 3D models from text or images — fast, free, and ready to use. ... A five-pointed star with a void or black hole in the center, wrapped in spiral arms."
+    },
+    {
+      "title": "r/space on Reddit: i built one of the most physically accurate real time black hole simulations that runs entirely in the browser",
+      "url": "https://www.reddit.com/r/space/comments/1ruwbfs/i_built_one_of_the_most_physically_accurate_real/",
+      "snippet": ""
+    },
+    {
+      "title": "Black Hole Engine",
+      "url": "https://i4is.org/what-we-do/technical/black-hole-engine/",
+      "snippet": "This is seen as a potential solution to the interstellar ramjet which proposes mining hydrogen from the interstellar medium, but there are several problems with achieving that. The black hole evaporator engine relies on the assumption of string theory that there are extra dimensions of space, and so the Schwarzschild radius for gravitational collapse will be altered under these conditions."
+    },
+    {
+      "title": "Blackhole & TT-Metalium The Standalone AI Computer and its Programming Model",
+      "url": "https://hc2024.hotchips.org/assets/program/conference/day1/88_HC2024.Tenstorrent.Jasmina.Davor.v7.pdf",
+      "snippet": "Blackhole & TT-Metalium · The Standalone AI Computer and its · Programming Model · August 2024 · Jasmina Vasiljevic, Senior Fellow · Davor Capalija, Senior Fellow · Agenda · • Architecture · • Micro-architecture · • Scale-out · • Software ·"
+    },
+    {
+      "title": "Black Hole Simulation | Interactive Real-time Kerr Physics Engine",
+      "url": "https://blackhole-simulation.vercel.app/",
+      "snippet": "Study the thermodynamics of the accretion disk, the ISCO radius, and the Novikov-Thorne model for relativistic plasma flows. This black hole simulation uses a dual-engine architecture to maintain 60FPS:"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/snapkitty-mcp",
+  "slug": "snapkitty-snapkitty-mcp",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/snapkitty-mcp",
+  "created_at": "2026-09-03T10:06:51.000Z",
+  "updated_at": "2026-09-03T10:06:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "University Medical Center in Phoenix, AZ - Banner Health",
+      "url": "https://www.bannerhealth.com/locations/phoenix/banner-university-medical-center-phoenix",
+      "snippet": "Banner - University Medical Center in Phoenix, AZ offers a wide range of medical services to those in the surrounding area. Visit …"
+    },
+    {
+      "title": "Dignity Health St. Joseph's Hospital and Medical Center",
+      "url": "https://www.commonspirit.org/find-a-location/dignity-health-st-josephs-hospital-and-medical-center-1344",
+      "snippet": "Dignity Health St. Joseph’s Hospital and Medical Center in Phoenix is one of Arizona’s largest and most comprehensive not-for-profit …"
+    },
+    {
+      "title": "Best Hospitals near Phoenix, AZ | US News Best Hospitals",
+      "url": "https://health.usnews.com/best-hospitals/area/phoenix-az",
+      "snippet": "Here you can find information about and compare hospitals in the Phoenix, Arizona metropolitan area. Hospitals are ordered …"
+    },
+    {
+      "title": "Valleywise Health Medical Center in Phoenix, AZ | Valleywise",
+      "url": "https://valleywisehealth.org/locations/valleywise-health-medical-center/",
+      "snippet": "This location is home to many specialty clinics and departments that offer the dedicated care you may need in a crisis, including our …"
+    },
+    {
+      "title": "Mayo Clinic Hospital — Phoenix",
+      "url": "https://www.mayoclinic.org/patient-visitor-guide/arizona/campus-buildings-maps/mayo-clinic-hospital",
+      "snippet": "Learn more about Mayo Clinic Hospital in Phoenix, Arizona."
+    }
+  ]
+}

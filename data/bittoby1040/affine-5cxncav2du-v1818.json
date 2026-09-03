@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Bittoby1040/Affine-5cxncav2du-v1818",
+  "slug": "bittoby1040-affine-5cxncav2du-v1818",
+  "author": "Bittoby1040",
+  "url": "https://huggingface.co/Bittoby1040/Affine-5cxncav2du-v1818",
+  "created_at": "2026-08-26T03:42:08.000Z",
+  "updated_at": "2026-09-03T09:14:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

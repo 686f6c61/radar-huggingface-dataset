@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/sovereign-entropy-theorem",
+  "slug": "snapkitty-sovereign-entropy-theorem",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/sovereign-entropy-theorem",
+  "created_at": "2026-09-03T10:31:03.000Z",
+  "updated_at": "2026-09-03T10:31:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 719509,
+  "storage_human": "719509 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tous les timbres de France depuis 1849 et les dernières émissions de …",
+      "url": "https://www.timbres-de-france.com/",
+      "snippet": "2 days ago · Toutes les descriptions et informations sur les timbres émis par la poste française"
+    },
+    {
+      "title": "Timbres de France – Timbres anciens et de collection pour philatélistes",
+      "url": "https://timbrespostale.com/timbres-anciens-et-de-collection-de-france/",
+      "snippet": "Découvrez nos timbres de France anciens et de collection : Cérès, Napoléon, Semeuse, Marianne, poste aérienne, variétés et séries …"
+    },
+    {
+      "title": "Liste des timbres français classés par cote - TIMBRES DE FRANCE",
+      "url": "https://www.timbres-de-france.com/philatelie/liste_cote.php",
+      "snippet": "2 days ago · listage des timbres par année ... Liste des timbres par la moyenne des cotes neufs supérieures à 99 € ... 1 - 2 - 3 - 4 - 5 …"
+    },
+    {
+      "title": "Timbres de france par année - La Maison du Collectionneur",
+      "url": "https://www.lamaisonducollectionneur.fr/content/50-timbres-de-france-par-annee",
+      "snippet": "L'ensemble des timbres présents dans les années ci-dessous correspondent à ceux présents sur les feuilles de rangement …"
+    },
+    {
+      "title": "Timbres de France de Collection : vente en ligne de collection timbres ...",
+      "url": "https://www.lamaisonducollectionneur.fr/218-timbres-de-france",
+      "snippet": "Découvrez l'ensemble des timbres de France, neufs et oblitérés, au détail ou en collections. Un grand choix de timbres Poste, Poste …"
+    }
+  ]
+}

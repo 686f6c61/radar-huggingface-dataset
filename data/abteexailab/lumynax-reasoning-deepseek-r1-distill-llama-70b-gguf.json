@@ -5,7 +5,7 @@
   "author": "AbteeXAILab",
   "url": "https://huggingface.co/AbteeXAILab/lumynax-reasoning-deepseek-r1-distill-llama-70b-gguf",
   "created_at": "2026-05-17T10:35:11.000Z",
-  "updated_at": "2026-09-02T23:14:33.000Z",
+  "updated_at": "2026-09-03T02:32:21.000Z",
   "license": "llama3.3",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -44,6 +44,8 @@
     "text-generation",
     "en",
     "mi",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+    "base_model:quantized:deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
     "license:llama3.3",
     "endpoints_compatible",
     "region:us",
@@ -57,7 +59,7 @@
   "parameters_human": "70.55B",
   "storage_bytes": 42520395936,
   "storage_human": "42.5 GB",
-  "base_model": null,
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
   "formats": [
     "gguf"
   ],

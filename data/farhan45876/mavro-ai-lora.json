@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Farhan45876/mavro-ai-lora",
+  "slug": "farhan45876-mavro-ai-lora",
+  "author": "Farhan45876",
+  "url": "https://huggingface.co/Farhan45876/mavro-ai-lora",
+  "created_at": "2026-09-03T10:26:23.000Z",
+  "updated_at": "2026-09-03T10:26:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "mavro-ai",
+    "synereos",
+    "lora",
+    "bangla",
+    "tool-use",
+    "qwen2.5",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131229364,
+  "storage_human": "131 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Logowanie się w Gmailu - Komputer - Gmail - Pomoc",
+      "url": "https://support.google.com/mail/answer/8494?hl=pl-pl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Logowanie się w Gmailu Wskazówka: jeśli logujesz się z komputera publicznego, pamiętaj, aby przed odejściem od niego wylogować …"
+    },
+    {
+      "title": "Jak odzyskać konto Google lub Gmail",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=pl",
+      "snippet": "Jeśli nie pamiętasz swojej nazwy użytkownika lub hasła albo nie możesz otrzymywać kodów weryfikacyjnych, wykonaj opisane tu …"
+    },
+    {
+      "title": "Powolny komp i problemy - logi do spr - prośba o pomoc ... - forum",
+      "url": "https://forum.dobreprogramy.pl/t/powolny-komp-i-problemy-logi-do-spr-prosba-o-pomoc/264778",
+      "snippet": "Co było wcześniej: komputer używany wzglednie normalnie, bo przez kobietę Word, Exel, PP; IE: nasza-klasa, poczta wp, itp; …"
+    },
+    {
+      "title": "Jaki najlepszy procesor i karta graficzna do P4M800-M7?",
+      "url": "https://forum.dobreprogramy.pl/t/jaki-najlepszy-procesor-i-karta-graficzna-do-p4m800-m7/414392",
+      "snippet": "Aug 28, 2012 · Cześć, chce pomału rozbudowywać mój komputer i tu mam problem. Mam płytę główną BioStar P4M800-M7 z …"
+    },
+    {
+      "title": "Problem z pocztą i aplikacją gmail - Społeczność Gmail",
+      "url": "https://support.google.com/mail/thread/245305802/problem-z-poczt%C4%85-i-aplikacj%C4%85-gmail?hl=pl",
+      "snippet": "Nov 23, 2023 · Jeżeli poczta WP ma analogiczne bajery to wtedy możesz zrobić odwrotnie, czyli na koncie WP dodać pocztę Gmail. …"
+    }
+  ]
+}

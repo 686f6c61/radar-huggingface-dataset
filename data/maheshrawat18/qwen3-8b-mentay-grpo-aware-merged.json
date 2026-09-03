@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "maheshrawat18/Qwen3-8B-mentay-grpo-aware-merged",
+  "slug": "maheshrawat18-qwen3-8b-mentay-grpo-aware-merged",
+  "author": "maheshrawat18",
+  "url": "https://huggingface.co/maheshrawat18/Qwen3-8B-mentay-grpo-aware-merged",
+  "created_at": "2026-09-03T09:12:10.000Z",
+  "updated_at": "2026-09-03T09:13:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "trl",
+    "conversational",
+    "en",
+    "base_model:maheshrawat18/Qwen3-8B-grpo-emotion-v9-merged",
+    "base_model:finetune:maheshrawat18/Qwen3-8B-grpo-emotion-v9-merged",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939668,
+  "storage_human": "16.4 GB",
+  "base_model": "maheshrawat18/Qwen3-8B-grpo-emotion-v9-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

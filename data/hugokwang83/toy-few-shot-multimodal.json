@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hugokwang83/toy-few-shot-multimodal",
+  "slug": "hugokwang83-toy-few-shot-multimodal",
+  "author": "hugokwang83",
+  "url": "https://huggingface.co/hugokwang83/toy-few-shot-multimodal",
+  "created_at": "2026-09-03T10:20:07.000Z",
+  "updated_at": "2026-09-03T10:20:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Darts-Termine - PDC | WDF | DDV | DSAB Kalender bei Darts 1",
+      "url": "https://www.darts1.de/termine/termine.php",
+      "snippet": "Sep 4, 2026 · Darts1 bietet eine stets aktualisierte Übersicht nationaler und internationaler Steel- und E-Dart Termine. Alle …"
+    },
+    {
+      "title": "Tickets – Darts-Turniere und Galas - PDC Europe",
+      "url": "https://pdc-europe.tv/de/tickets/",
+      "snippet": "Sep 4, 2026 · Sichere dir jetzt deine Tickets für die PDC Europe Darts-Events. Erlebe spannende Turniere und Galas live in Europa. …"
+    },
+    {
+      "title": "Pdc Dart online kaufen | eBay.de",
+      "url": "https://www.ebay.de/b/Pdc-Dart/bn_7005723427?msockid=3d11bd9acf926f8301e1aa53cefc6ef7",
+      "snippet": "Neues Angebot PDC Panini World Darts Championship World Champion Luke Littler 11/50 Gebraucht · Privat · Panini EUR 125,00 …"
+    },
+    {
+      "title": "Panini Pdc Dart kleinanzeigen.de",
+      "url": "https://www.kleinanzeigen.de/s-panini-pdc-dart/k0?msockid=3d11bd9acf926f8301e1aa53cefc6ef7",
+      "snippet": "Kleinanzeigen: Panini Pdc Dart - Jetzt finden oder inserieren! - kleinanzeigen.de"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Dartscheibe Pdc",
+      "url": "https://www.amazon.de/dartscheibe-pdc/s?k=dartscheibe+pdc",
+      "snippet": "WINMAU Triple Core Dartscheibe Steeldart Set – Profi Dartscheibe Winmau mit PDC-Umrandung |2 Steel Darts-Sets, Rota-Lock …"
+    }
+  ]
+}

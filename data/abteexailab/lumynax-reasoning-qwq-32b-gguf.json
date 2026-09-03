@@ -5,7 +5,7 @@
   "author": "AbteeXAILab",
   "url": "https://huggingface.co/AbteeXAILab/lumynax-reasoning-qwq-32b-gguf",
   "created_at": "2026-05-17T02:13:46.000Z",
-  "updated_at": "2026-09-02T23:14:43.000Z",
+  "updated_at": "2026-09-03T02:32:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -43,6 +43,8 @@
     "text-generation",
     "en",
     "mi",
+    "base_model:Qwen/QwQ-32B",
+    "base_model:quantized:Qwen/QwQ-32B",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -55,7 +57,7 @@
   "parameters_human": "32.76B",
   "storage_bytes": 19851335840,
   "storage_human": "19.9 GB",
-  "base_model": null,
+  "base_model": "Qwen/QwQ-32B",
   "formats": [
     "gguf"
   ],

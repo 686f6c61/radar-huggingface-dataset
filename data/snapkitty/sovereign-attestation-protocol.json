@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/sovereign-attestation-protocol",
+  "slug": "snapkitty-sovereign-attestation-protocol",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/sovereign-attestation-protocol",
+  "created_at": "2026-09-03T10:28:09.000Z",
+  "updated_at": "2026-09-03T10:28:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kör Nokta yayını: İnternette nereden film izlenir? - JustWatch",
+      "url": "https://www.justwatch.com/tr/film/kor-nokta",
+      "snippet": "Şu an \"Kör Nokta\" adlı yapımı Netflix üzerinden izleyebilirsiniz. Ayrıca \"Kör Nokta\" içeriğini Apple TV Store üzerinden satın alıp …"
+    },
+    {
+      "title": "Kör Nokta (The Blind Side) - Film, 2009 - Sinemalar.com",
+      "url": "https://www.sinemalar.com/film/31507/the-blind-side",
+      "snippet": "Kör Nokta filmi müzikleri Carter Burwell, Carter Burwell tarafından hazırlanmıştır."
+    },
+    {
+      "title": "Kör Nokta izlemenizi bekliyor | Netflix",
+      "url": "https://www.netflix.com/tr/title/70119811",
+      "snippet": "Evsiz bir genç, onu evlerine alan kararlı bir annenin ve kadının varlıklı ailesinin desteğiyle futbol sahasının içinde ve dışında başarıyı …"
+    },
+    {
+      "title": "The Blind Side - 2009 filmi - Beyazperde.com",
+      "url": "https://www.beyazperde.com/filmler/film-132048/",
+      "snippet": "Fakir ve aşırı derecede iri bir genç olan Michael Oher bir kolej futbol takımına girince, kendi ve çevresindekilerin hayatı tümden …"
+    },
+    {
+      "title": "koca mike türkçe izle dublaj: Yandex'te 1 bin video bulundu",
+      "url": "https://fb.yandex.com.tr/video/search?text=koca+mike+t%C3%BCrk%C3%A7e+izle+dublaj&path=yandex_search&from_type=vast",
+      "snippet": "Aug 4, 2009 · Kiralık Koca: Aşk mı, Oyun mu? Yerli Komedi (2026 FULL HD) Süre 1 saat 40 dakika 32 saniye."
+    }
+  ]
+}

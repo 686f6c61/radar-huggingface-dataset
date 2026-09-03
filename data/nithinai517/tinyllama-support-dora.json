@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nithinai517/tinyllama-support-dora",
+  "slug": "nithinai517-tinyllama-support-dora",
+  "author": "nithinai517",
+  "url": "https://huggingface.co/nithinai517/tinyllama-support-dora",
+  "created_at": "2026-09-03T10:08:24.000Z",
+  "updated_at": "2026-09-03T10:08:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "dora",
+    "customer-support",
+    "tinyllama",
+    "base_model:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "base_model:adapter:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52101648,
+  "storage_human": "52 MB",
+  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Empfehlungen und Informationen zu Reisen mit Eurowings",
+      "url": "https://www.eurowings.com/de.html",
+      "snippet": "Buche deinen Flug und informiere dich über günstige Hotels und Mietwagen sowie weitere attraktive Angebote für deine nächste …"
+    },
+    {
+      "title": "Eurowings flights: Find travel information and book cheap tickets",
+      "url": "https://www.eurowings.com/en.html",
+      "snippet": "Your adventure starts here: Book your flight with Eurowings and discover top destinations across Europe and beyond."
+    },
+    {
+      "title": "Pauschalreisen & Last Minute Deals – Günstig buchen - Eurowings",
+      "url": "https://holidays.eurowings.com/de-de",
+      "snippet": "Entdecke Traumreisen mit Eurowings Holidays! Buche Pauschalreisen und Last Minute Deals zu Top-Preisen. Flexible Umbuchung …"
+    },
+    {
+      "title": "Kontakt",
+      "url": "https://newscloudbusiness.eurowings.com/kontakt/",
+      "snippet": "Kontakt Sie haben Fragen zu einem Eurowings Flug? Hier finden Sie Antworten auf die häufigsten Fragen an Eurowings. Bei …"
+    },
+    {
+      "title": "Eurowings",
+      "url": "https://careers.eurowings.com/de/",
+      "snippet": "Entdecke Karrieremöglichkeiten bei Eurowings. Erfahre mehr über verschiedene Abteilungen, kommende Events und werde Teil …"
+    }
+  ]
+}

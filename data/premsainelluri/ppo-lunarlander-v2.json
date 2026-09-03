@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "premsainelluri/ppo-LunarLander-v2",
+  "slug": "premsainelluri-ppo-lunarlander-v2",
+  "author": "premsainelluri",
+  "url": "https://huggingface.co/premsainelluri/ppo-LunarLander-v2",
+  "created_at": "2026-09-03T09:19:32.000Z",
+  "updated_at": "2026-09-03T09:20:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284410,
+  "storage_human": "284410 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ppo LunarLander V2 · Models · Dataloop",
+      "url": "https://dataloop.ai/library/model/dude121_ppo-lunarlander-v2/",
+      "snippet": "The PPO Agent playing LunarLander-v2 model is a trained AI agent that can play the LunarLander-v2 game."
+    },
+    {
+      "title": "PPO - LunarLander - v2 Open-source Reinforcement Learning Model, Free Deployment to Help Lunar Lander Land Safely",
+      "url": "https://model.aibase.com/models/details/1915692639669870593",
+      "snippet": "This model is trained using the Proximal Policy Optimization (PPO) algorithm and can learn strategies to control the lunar lander in the LunarLander-v2 simulation environment to achieve a safe landing."
+    },
+    {
+      "title": "LunarLander-v2 with Proximal Policy Optimization",
+      "url": "https://pylessons.com/LunarLander-v2-PPO",
+      "snippet": "PPO uses the Actor-Critic approach for the agent. This means that it uses two models, one called the Actor and the other called Critic: ... The Actor model performs the task of learning what action to take under a particular observed state of the environment. In LunarLander-v2 case, it takes eight values list of the game as input which represents the current state of our rocket and gives a particular action what engine to fire as output:"
+    },
+    {
+      "title": "reinforcement learning - Problems using RL algorithm PPO in Lunar Lander-v2 - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/75887428/problems-using-rl-algorithm-ppo-in-lunar-lander-v2",
+      "snippet": "In algorithm PPO, a ratio needs to be calculated as ratios = torch.exp(new_probs-old_probs) which is the ratio between the probability of action under the current policy divided by the probability ..."
+    },
+    {
+      "title": "sb3/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/sb3/ppo-LunarLander-v2",
+      "snippet": "This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library and the RL Zoo."
+    }
+  ]
+}

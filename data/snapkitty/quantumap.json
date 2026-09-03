@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/quantumap",
+  "slug": "snapkitty-quantumap",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/quantumap",
+  "created_at": "2026-09-03T08:01:21.000Z",
+  "updated_at": "2026-09-03T08:01:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 587050,
+  "storage_human": "587050 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

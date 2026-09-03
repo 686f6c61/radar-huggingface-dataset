@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "YuriyZeng/sd-turbo",
+  "slug": "yuriyzeng-sd-turbo",
+  "author": "YuriyZeng",
+  "url": "https://huggingface.co/YuriyZeng/sd-turbo",
+  "created_at": "2026-09-03T08:14:13.000Z",
+  "updated_at": "2026-09-03T08:14:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 865910724,
+  "parameters_human": "865.9M",
+  "storage_bytes": 12954587874,
+  "storage_human": "13.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Null-Guard/LFM2.5-230M-distilled-Gemini-3.8-Flash-Uncensored-GGUF",
+  "slug": "null-guard-lfm2-5-230m-distilled-gemini-3-8-flash-uncensored-gguf",
+  "author": "Null-Guard",
+  "url": "https://huggingface.co/Null-Guard/LFM2.5-230M-distilled-Gemini-3.8-Flash-Uncensored-GGUF",
+  "created_at": "2026-09-03T10:47:32.000Z",
+  "updated_at": "2026-09-03T10:50:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "lfm2.5",
+    "distilled",
+    "uncensored",
+    "abliterated",
+    "abliteration",
+    "llama.cpp",
+    "conversational",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Null-Guard/LFM2.5-230M-distilled-Gemini-3.8-Flash-Uncensored",
+    "base_model:quantized:Null-Guard/LFM2.5-230M-distilled-Gemini-3.8-Flash-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 229693184,
+  "parameters_human": "229.7M",
+  "storage_bytes": 1351992960,
+  "storage_human": "1.4 GB",
+  "base_model": "Null-Guard/LFM2.5-230M-distilled-Gemini-3.8-Flash-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Null — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Null",
+      "snippet": "Null (nil dans certains langages) est une valeur, une constante ou un mot clé présent dans de nombreux langages informatiques, et …"
+    },
+    {
+      "title": "LiquidAI/LFM2.5-230M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-230M",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Null - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Null",
+      "snippet": "Null character, the zero-valued ASCII character, also designated by NUL, often used as a terminator, separator or filler. This symbol …"
+    },
+    {
+      "title": "LiquidAI/LFM2.5-230M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-230M-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "null - JavaScript - MDN",
+      "url": "https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/null",
+      "snippet": "La valeur null est un littéral JavaScript représentant la nullité au sens où aucune valeur pour l'objet n'est présente. C'est une des …"
+    }
+  ]
+}

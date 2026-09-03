@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/sovereign-multiplicity",
+  "slug": "snapkitty-sovereign-multiplicity",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/sovereign-multiplicity",
+  "created_at": "2026-09-03T10:15:49.000Z",
+  "updated_at": "2026-09-03T10:15:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gregor Mendel's Genetics Law Quiz! - Quiz, Flashcards & Trivia",
+      "url": "https://www.proprofs.com/quiz-school/story.php?title=gregor-mendel-mendels-laws-quiz",
+      "snippet": "Mar 21, 2025 · Gregor Mendel was an Austrian Monk who is widely known as the father of modern genetics. He conducted …"
+    },
+    {
+      "title": "Gregor Mendel Quiz - PurposeGames",
+      "url": "https://www.purposegames.com/game/gregor-mendel",
+      "snippet": "Jul 1, 2026 · This online quiz is called Gregor Mendel. It was created by member MR. MINION and has 4 questions."
+    },
+    {
+      "title": "Gregor Mendel Quiz",
+      "url": "https://wayground.com/admin/quiz/5906279e5973011100284948/gregor-mendel",
+      "snippet": "Test your Other knowledge with this 11-question quiz. Ideal for practice, review, and assessment with instant feedback on Wayground."
+    },
+    {
+      "title": "Gregor Johann Mendel Quiz Questions Answers | Quizzes on Scientists",
+      "url": "https://go4quiz.com/gregor-mendel-quiz-questions-science-quizzes/",
+      "snippet": "May 19, 2023 · Gregor Johann Mendel Quiz Questions and Answers. Gregor Mendel Trivia Facts. Austrian scientist. Augustinian friar …"
+    },
+    {
+      "title": "Gregor Mendel Quiz - PurposeGames",
+      "url": "https://www.purposegames.com/game/gregor-mendel-game",
+      "snippet": "Mar 12, 2025 · You can use it as Gregor Mendel practice, completely free to play. This online quiz is called Gregor Mendel. It was …"
+    }
+  ]
+}

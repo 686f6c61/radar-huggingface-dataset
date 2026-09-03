@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ayushrsys/panns-cnn14",
+  "slug": "ayushrsys-panns-cnn14",
+  "author": "ayushrsys",
+  "url": "https://huggingface.co/ayushrsys/panns-cnn14",
+  "created_at": "2026-09-03T10:39:25.000Z",
+  "updated_at": "2026-09-03T10:39:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "panns",
+    "cnn14",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 327428481,
+  "storage_human": "327 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Brasil",
+      "url": "https://www.youtube.com/channel/UCUN9lhwfMJRxMVuet7Shg0w",
+      "snippet": "É canal oficial do YouTube Brasil que vocês querem? :D Se inscreve para descobrir as novidades e tendências da plataforma, …"
+    },
+    {
+      "title": "nicofarr/panns_Cnn14 · Hugging Face",
+      "url": "https://huggingface.co/nicofarr/panns_Cnn14",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "YuB - YouTube",
+      "url": "https://www.youtube.com/channel/UCNpcQ002WElJqT9r--R-Xfg",
+      "snippet": "OMG i deleted & reuploaded this vid to fix a major audio problem AND THEN I MESSED UP THE 2ND UPLOAD TOO BAHAHAHA …"
+    },
+    {
+      "title": "GitHub - qiuqiangkong/audioset_tagging_cnn",
+      "url": "https://github.com/qiuqiangkong/audioset_tagging_cnn",
+      "snippet": "This repo contains code for our paper: PANNs: Large-Scale Pretrained Audio Neural Networks for Audio Pattern Recognition [1]. A variety of CNNs are trained on the large-scale AudioSet dataset [2] containing 5000 hours audio with 527 sound classes. A mean average precision (mAP) of 0.439 is achieved using our proposed Wavegram-Logmel-CNN system, outperforming the Google baseline of 0.317 [3 ..."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/?source=pwa",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

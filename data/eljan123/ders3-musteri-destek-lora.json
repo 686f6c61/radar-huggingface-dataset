@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Eljan123/ders3-musteri-destek-lora",
+  "slug": "eljan123-ders3-musteri-destek-lora",
+  "author": "Eljan123",
+  "url": "https://huggingface.co/Eljan123/ders3-musteri-destek-lora",
+  "created_at": "2026-09-03T10:21:36.000Z",
+  "updated_at": "2026-09-03T10:24:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9022864,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AIR ARABIA - Forum Aviation",
+      "url": "https://www.forum-aviation.com/topic601.html",
+      "snippet": "Sep 28, 2009 · Re: AIR ARABIA par mathews » mar. 29 sept. 2009, 09:31 21h35 en Juin prochain ca peut encore passer pour les …"
+    },
+    {
+      "title": "AirArabia - Page 5 - Forum Aviation",
+      "url": "https://www.forum-aviation.com/topic721-80.html",
+      "snippet": "Jan 27, 2010 · Air Arabia Egypt n'a tjrs pas sa licence pour opérer Air Arabia is still waiting for a licence to operate from Alexandria, …"
+    },
+    {
+      "title": "Air Arabia à SXB ? - Forum Aviation",
+      "url": "https://www.forum-aviation.com/topic4277.html",
+      "snippet": "Nov 9, 2008 · Air Arabia Maroc prévoit à Fès-Saïss de passer de cinq vols par semaine actuellement (vers Toulouse et Montpellier) à …"
+    },
+    {
+      "title": "Air Arabia à Montpellier - Page 5 - Forum Aviation",
+      "url": "https://www.forum-aviation.com/topic816-80.html",
+      "snippet": "Sep 24, 2008 · Air Arabia Maroc passe le cap des 1 000 000 de pax à Montpellier, aujourd'hui . La compagnie est arrivée à …"
+    },
+    {
+      "title": "Air Arabia à Montpellier - Page 3 - Forum Aviation",
+      "url": "https://www.forum-aviation.com/topic816-40.html",
+      "snippet": "Sep 24, 2008 · Air Arabia Maroc se renforce à Montpellier Pour la saison estivale, la low cost marocaine renforce ses fréquences au …"
+    }
+  ]
+}

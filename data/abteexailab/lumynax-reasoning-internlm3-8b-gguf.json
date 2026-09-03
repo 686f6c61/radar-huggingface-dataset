@@ -5,7 +5,7 @@
   "author": "AbteeXAILab",
   "url": "https://huggingface.co/AbteeXAILab/lumynax-reasoning-internlm3-8b-gguf",
   "created_at": "2026-05-17T02:13:33.000Z",
-  "updated_at": "2026-09-02T23:14:39.000Z",
+  "updated_at": "2026-09-03T02:32:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -42,6 +42,8 @@
     "text-generation",
     "en",
     "mi",
+    "base_model:internlm/internlm3-8b-instruct",
+    "base_model:quantized:internlm/internlm3-8b-instruct",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -55,7 +57,7 @@
   "parameters_human": "8.80B",
   "storage_bytes": 5358624320,
   "storage_human": "5.4 GB",
-  "base_model": null,
+  "base_model": "internlm/internlm3-8b-instruct",
   "formats": [
     "gguf"
   ],

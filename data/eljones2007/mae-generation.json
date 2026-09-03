@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Eljones2007/mae-generation",
+  "slug": "eljones2007-mae-generation",
+  "author": "Eljones2007",
+  "url": "https://huggingface.co/Eljones2007/mae-generation",
+  "created_at": "2026-09-03T01:39:07.000Z",
+  "updated_at": "2026-09-03T01:39:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eljones2007 (Elijah F. Jones) - Hugging Face",
+      "url": "https://huggingface.co/Eljones2007/models",
+      "snippet": "User profile of Elijah F. Jones on Hugging Face"
+    },
+    {
+      "title": "Generative AI and the Foundation Model Era: A Comprehensive Review - MDPI",
+      "url": "https://www.mdpi.com/2504-2289/10/3/94",
+      "snippet": "Generative artificial intelligence and foundation models have changed machine learning by allowing systems to produce readable text, realistic images, and other multimodal content with little direct input from a user. Foundation models are large neural networks trained on very large and varied datasets, and they form the core of many current generative AI (GenAI) systems. Their rapid ..."
+    },
+    {
+      "title": "Microsoft Reveals its First Image Generation AI Model",
+      "url": "https://www.thurrott.com/a-i/328333/microsoft-reveals-its-first-image-generation-ai-model",
+      "snippet": "Microsoft announced yesterday MAI-Image-1, its first image generation model designed to create photorealistic imagery."
+    },
+    {
+      "title": "Microsoft Launches 7 Homegrown AI Models at Build 2026 — Enterprise DNA",
+      "url": "https://enterprisedna.co/resources/news/microsoft-build-2026-mai-models-enterprise-ai/",
+      "snippet": "Microsoft&#x27;s MAI family: 7 in-house models at Build 2026, trained without OpenAI data. Here&#x27;s what enterprise AI buyers need to know."
+    },
+    {
+      "title": "Generative artificial intelligence: a historical perspective",
+      "url": "https://academic.oup.com/nsr/article/12/5/nwaf050/8029900",
+      "snippet": "This paper reviews the historical milestones, successful applications, and remaining challenges in generative artificial intelligence over the past seven d"
+    }
+  ]
+}

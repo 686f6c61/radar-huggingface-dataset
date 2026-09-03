@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Oguzhan347/vrglass",
+  "slug": "oguzhan347-vrglass",
+  "author": "Oguzhan347",
+  "url": "https://huggingface.co/Oguzhan347/vrglass",
+  "created_at": "2026-09-03T10:35:25.000Z",
+  "updated_at": "2026-09-03T10:37:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78062754,
+  "storage_human": "78 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Телевизия, интернет, мобилни планове и ...",
+      "url": "https://www.a1.bg/",
+      "snippet": "A1.BG предлага цялостни телекомуникационни решения, включително мобилни и фиксирани услуги ..."
+    },
+    {
+      "title": "My A1 - А1",
+      "url": "https://www.a1.bg/mya1",
+      "snippet": "Как да достъпиш новата секция „Помощ за твоята услуга“ 1. През иконката с човечето (най-отгоре вляво) до знака на А1; 2. …"
+    },
+    {
+      "title": "А1 първа в България предлага на своите ...",
+      "url": "https://newscenter.a1.bg/a1-prva-v-blgaria-predlaga-na-svoite-klienti-vzmoznost-za-sledene-na-sredna-skorost-v-realno-vreme",
+      "snippet": "Sep 10, 2025 · Новата функционалност „Моята средна скорост“ е достъпна в приложението Моят А1 и намалява рисковете от …"
+    },
+    {
+      "title": "Оптичен рутер - Настройки на домашния ...",
+      "url": "https://help.a1.bg/internet/settings/wi-fi-advanced/ont-sett",
+      "snippet": "Искаш да промениш името и/или паролата на Wi-Fi мрежата си? Или искаш да пренасочиш портовете на рутера? За тези и …"
+    },
+    {
+      "title": "SIM услуги - Мобилни - А1 Помощник",
+      "url": "https://help.a1.bg/mobile/sim-services",
+      "snippet": "Полезна информация за управляване на SIM услуги на А1. Управление на пренасочвания и забрани, както и видове мобилни …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/bob-engine",
+  "slug": "snapkitty-bob-engine",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/bob-engine",
+  "created_at": "2026-09-03T10:12:45.000Z",
+  "updated_at": "2026-09-03T10:12:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prime Video : regardez des films, des séries, du sport et la télévision ...",
+      "url": "https://www.primevideo.com/-/fr/offers/nonprimehomepage/?language=fr",
+      "snippet": "Regardez des films populaires, des séries, du sport et la télévision en direct inclus avec Amazon Prime, et encore plus avec des …"
+    },
+    {
+      "title": "Amazon.com: Prime Video: Prime Video",
+      "url": "https://www.primevideo.com/collection/IncludedwithPrime",
+      "snippet": "Find, shop for and buy Prime Video at Amazon.com"
+    },
+    {
+      "title": "Prime Video: Télécharger l'application",
+      "url": "https://app.primevideo.com/detail?language=fr&gti=amzn1.dv.gti.a0b0c7e8-772a-474c-b7c6-765f521d9332",
+      "snippet": "Pour commencer Qu'est-ce que Prime Video ? Prime Video est un service de vidéo à la demande. Votre abonnement Amazon Prime …"
+    },
+    {
+      "title": "Prime Video: Get the app",
+      "url": "https://app.primevideo.com/home",
+      "snippet": "Watch anywhere, anytime Get the Prime Video app to watch on all your favorite devices."
+    },
+    {
+      "title": "The Grand Tour - Welcome to Prime Video",
+      "url": "https://www.primevideo.com/",
+      "snippet": "Enjoy exclusive Amazon Originals as well as popular movies and TV shows. Watch anytime, anywhere. Start your free trial."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Null-Guard/LFM2.5-230M-distilled-Gemini-3.8-Flash-Uncensored",
+  "slug": "null-guard-lfm2-5-230m-distilled-gemini-3-8-flash-uncensored",
+  "author": "Null-Guard",
+  "url": "https://huggingface.co/Null-Guard/LFM2.5-230M-distilled-Gemini-3.8-Flash-Uncensored",
+  "created_at": "2026-09-03T10:35:26.000Z",
+  "updated_at": "2026-09-03T10:52:32.000Z",
+  "license": "lfm2.5-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "lfm2.5",
+    "distilled",
+    "uncensored",
+    "abliterated",
+    "abliteration",
+    "conversational",
+    "text-generation-inference",
+    "en",
+    "zh",
+    "base_model:LiquidAI/LFM2.5-230M",
+    "base_model:finetune:LiquidAI/LFM2.5-230M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 229693184,
+  "parameters_human": "229.7M",
+  "storage_bytes": 459401112,
+  "storage_human": "459 MB",
+  "base_model": "LiquidAI/LFM2.5-230M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Null — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Null",
+      "snippet": "Null (nil dans certains langages) est une valeur, une constante ou un mot clé présent dans de nombreux langages informatiques, et …"
+    },
+    {
+      "title": "Null - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Null",
+      "snippet": "Null character, the zero-valued ASCII character, also designated by NUL, often used as a terminator, separator or filler. This symbol …"
+    },
+    {
+      "title": "null - JavaScript - MDN",
+      "url": "https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/null",
+      "snippet": "La valeur null est un littéral JavaScript représentant la nullité au sens où aucune valeur pour l'objet n'est présente. C'est une des …"
+    },
+    {
+      "title": "NULL Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/null",
+      "snippet": "Null often pops up in legal and scientific contexts; it was originally used in Scottish law and still carries the meaning \"having no legal …"
+    },
+    {
+      "title": "Null (SQL) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Null_(SQL)",
+      "snippet": "Null (SQL) The Greek lowercase omega (ω) character is used to represent Null in database theory. In the SQL database query …"
+    }
+  ]
+}

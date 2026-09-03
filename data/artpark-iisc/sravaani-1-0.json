@@ -5,7 +5,7 @@
   "author": "ARTPARK-IISc",
   "url": "https://huggingface.co/ARTPARK-IISc/SraVaani-1.0",
   "created_at": "2026-02-02T13:46:07.000Z",
-  "updated_at": "2026-08-14T06:46:01.000Z",
+  "updated_at": "2026-09-02T11:57:46.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -48,7 +48,6 @@
     "dataset:ARTPARK-IISc/Vaani-transcription-part",
     "arxiv:2608.08235",
     "license:mit",
-    "eval-results",
     "region:us"
   ],
   "likes": 75,

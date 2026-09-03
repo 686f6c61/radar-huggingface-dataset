@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "dineth9d/qwen2.5-1.5b-earnings-risk-extractor",
+  "slug": "dineth9d-qwen2-5-1-5b-earnings-risk-extractor",
+  "author": "dineth9d",
+  "url": "https://huggingface.co/dineth9d/qwen2.5-1.5b-earnings-risk-extractor",
+  "created_at": "2026-09-03T10:14:11.000Z",
+  "updated_at": "2026-09-03T10:14:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2",
+    "finance",
+    "information-extraction",
+    "qlora",
+    "structured-output",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888700,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L&R Deutschland: Sonstige Hygieneprodukte - Lohmann & Rauscher",
+      "url": "https://www.lohmann-rauscher.com/de-de/produkte/klinikbereich/hygiene-pflege/sonstige-produkte/sonstige-hygieneprodukte/",
+      "snippet": "Raucotupf Stieltupfer mit Holzstiel, kl. Wattekopf 1.000/20.000 mit Polypropylen Stiel, gr. Wattekopf 50/1.000 Packungen à 2 Stück, …"
+    },
+    {
+      "title": "Qwen2.5: A Party of Foundation Models! | Qwen",
+      "url": "https://qwenlm.github.io/blog/qwen2.5/",
+      "snippet": "Additionally we extend the support of Chinese this time and we also strengthen its reasoning capabilities by endowing it with the abilities to perform CoT, PoT, and TIR. The general performance of Qwen2.5-Math-72B-Instruct surpasses both Qwen2-Math-72B-Instruct and GPT4-o, and even very small expert model like Qwen2.5-Math-1.5B-Instruct can achieve highly competitive performance against large language models."
+    },
+    {
+      "title": "Qwen2.5 72B - Intelligence, Performance & Price Analysis | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/qwen2-5-72b-instruct",
+      "snippet": "Analysis of Alibaba's Qwen2.5 Instruct 72B and comparison to other AI models across key metrics including quality, price, performance (tokens per second & time to first token), context window & more."
+    },
+    {
+      "title": "Raucotupf Stieltupfer Großer Wattekopf : Amazon.de: Kosmetik",
+      "url": "https://www.amazon.de/Lohmann-Rauscher-GmbH-Co-KG-Stieltupfer/dp/B0010VC13C",
+      "snippet": "Raucotupf Stieltupfer Großer Wattekopf Marke: Lohmann & Rauscher 15,52 € 15, 52€ 0,31 € pro Stück (0,31€ 0,31€ / Stück)"
+    },
+    {
+      "title": "2025-01-06 Qwen2.5 Technical Report Qwen Team https://huggingface.co/Qwen",
+      "url": "https://arxiv.org/pdf/2412.15115",
+      "snippet": "weight part, we release pre-trained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B,"
+    }
+  ]
+}

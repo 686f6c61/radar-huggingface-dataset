@@ -5,10 +5,10 @@
   "author": "AbteeXAILab",
   "url": "https://huggingface.co/AbteeXAILab/lumynax-speech-whisper-large-v3-turbo",
   "created_at": "2026-05-17T01:20:55.000Z",
-  "updated_at": "2026-09-02T23:14:46.000Z",
+  "updated_at": "2026-09-03T02:32:29.000Z",
   "license": "mit",
   "license_family": "oss",
-  "pipeline_tag": "text-generation",
+  "pipeline_tag": "automatic-speech-recognition",
   "library": "transformers",
   "languages": [
     "en",
@@ -30,9 +30,10 @@
     "speech",
     "legacy",
     "outdated",
-    "text-generation",
     "en",
     "mi",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
     "license:mit",
     "endpoints_compatible",
     "region:us"
@@ -44,7 +45,7 @@
   "parameters_human": "808.9M",
   "storage_bytes": 1617824864,
   "storage_human": "1.6 GB",
-  "base_model": null,
+  "base_model": "openai/whisper-large-v3-turbo",
   "formats": [
     "safetensors"
   ],

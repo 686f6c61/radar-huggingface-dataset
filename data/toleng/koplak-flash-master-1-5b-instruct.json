@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Toleng/koplak-flash-master-1.5b-instruct",
+  "slug": "toleng-koplak-flash-master-1-5b-instruct",
+  "author": "Toleng",
+  "url": "https://huggingface.co/Toleng/koplak-flash-master-1.5b-instruct",
+  "created_at": "2026-09-03T10:31:20.000Z",
+  "updated_at": "2026-09-03T10:34:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-Coder-1.5B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-Coder-1.5B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889226,
+  "storage_human": "3.1 GB",
+  "base_model": "unsloth/Qwen2.5-Coder-1.5B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "After Effects: Traduction des noms des effets anglais vers français",
+      "url": "https://www.repaire.net/forums/articles/after-effects-traduction-des-noms-des-effets-anglais-vers-francais.234/",
+      "snippet": "Sep 20, 2008 · Le glossaire des effets d'After Effects en anglais et en français ! Sachez que si vous souhaitez lancer After Effects en …"
+    },
+    {
+      "title": "Traduction de Burpee vers francais - Français-anglais, English-French ...",
+      "url": "https://forum.thefreedictionary.com/postst4055_Traduction-de-Burpee-vers-francais.aspx",
+      "snippet": "Nov 10, 2009 · Traduction de Burpee vers francais ... The Free Dictionary Language Forums » Français / French » Français-anglais, …"
+    },
+    {
+      "title": "Traduction Francais anglais - Français-anglais, English-French ...",
+      "url": "https://forum.thefreedictionary.com/postst60457_Traduction-Francais-anglais.aspx",
+      "snippet": "Jun 19, 2014 · The Free Dictionary Language Forums » Français / French » Français-anglais, English-French » Traduction Francais …"
+    },
+    {
+      "title": "After Effects: Traduction des noms des modes de fusion anglais - français",
+      "url": "https://www.repaire.net/forums/articles/after-effects-traduction-des-noms-des-modes-de-fusion-anglais-francais.235/",
+      "snippet": "Sep 24, 2008 · Néanmoins, pour vous aider à suivre les tutos en anglais voici la traduction des modes de fusion pour After Effects …"
+    },
+    {
+      "title": "Aide français --> anglais - Français-anglais, English-French - Français ...",
+      "url": "https://forum.thefreedictionary.com/postst14624_Aide-fran%c3%a7ais----anglais.aspx",
+      "snippet": "Mar 16, 2011 · The Free Dictionary Language Forums » Français / French » Français-anglais, English-French » Aide français --> …"
+    }
+  ]
+}

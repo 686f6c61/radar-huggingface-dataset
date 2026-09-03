@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "krisha0253/koth-r3",
+  "slug": "krisha0253-koth-r3",
+  "author": "krisha0253",
+  "url": "https://huggingface.co/krisha0253/koth-r3",
+  "created_at": "2026-08-25T16:02:56.000Z",
+  "updated_at": "2026-09-03T07:31:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51272,
+  "storage_human": "51272 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "krisha0253/koth-r3 · Hugging Face",
+      "url": "https://huggingface.co/krisha0253/koth-r3",
+      "snippet": "krisha0253 / koth-r3 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "krisha0253 (kristianharrington) - Hugging Face",
+      "url": "https://huggingface.co/krisha0253",
+      "snippet": "Sort: Recently updated. krisha0253/koth-r1. Updated 7 minutes ago. krisha0253/koth-r2. Updated 8 minutes ago. krisha0253/koth-r3"
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "GitHub - KevinXu02/R3: Official implementation of R^3: 3D ...",
+      "url": "https://github.com/KevinXu02/R3",
+      "snippet": "This work presents R³, a feed-forward model that reconstructs camera poses and dense geometry from arbitrarily long video streams via relative-pose regression. Instead of regressing every camera in one global frame, R³ predicts confidence-weighted pairwise relative poses on top of a partially fine-tuned Depth Anything 3 backbone, then assembles a consistent global trajectory downstream. Two ..."
+    }
+  ]
+}

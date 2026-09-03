@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Ystar124/formtgpt",
+  "slug": "ystar124-formtgpt",
+  "author": "Ystar124",
+  "url": "https://huggingface.co/Ystar124/formtgpt",
+  "created_at": "2026-09-03T09:09:34.000Z",
+  "updated_at": "2026-09-03T09:16:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "docllm",
+    "custom",
+    "pdf-qa",
+    "document-understanding",
+    "causal-lm",
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20014575,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

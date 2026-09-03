@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "openbenchmarks/you-highlights",
+  "slug": "openbenchmarks-you-highlights",
+  "author": "openbenchmarks",
+  "url": "https://huggingface.co/openbenchmarks/you-highlights",
+  "created_at": "2026-09-03T02:06:52.000Z",
+  "updated_at": "2026-09-03T02:06:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "web-search",
+    "search-api",
+    "company-news",
+    "leaderboard",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Openbenchmarks",
+      "url": "https://openbenchmarks.com/",
+      "snippet": "Independent benchmarks for build-vs-buy decisions. Verifiable, reproducible and open source."
+    },
+    {
+      "title": "OpenMark - Compare AI Models & Benchmark LLMs | 100+ Models",
+      "url": "https://openmark.ai/ui/",
+      "snippet": "Compare AI model pricing and performance. Benchmark 100+ LLMs including GPT, Claude, Gemini on your actual task. Deterministic scoring, real API costs."
+    },
+    {
+      "title": "OpenBenchmark AI",
+      "url": "https://openbenchmark.ai/",
+      "snippet": "Get early access Join the OpenBenchmark AI waitlist Tell us about your use-case and we&#x27;ll prioritize the benchmarks and model judges that matter most to you. Human or AI judge workflows Public, private, or invite-only visibility Prompt and LLM comparisons side-by-side Join waitlist"
+    },
+    {
+      "title": "Open-Eval-Commons/OpenBenchmarks · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenBenchmarks",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — September 2026 Compare frontier AI models by quality, cost, and context. 105 Supported and 125 Estimated models among 416 tracked LLMs — 416 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

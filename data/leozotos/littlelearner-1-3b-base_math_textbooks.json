@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "LeoZotos/littlelearner-1.3b-base_math_textbooks",
+  "slug": "leozotos-littlelearner-1-3b-base_math_textbooks",
+  "author": "LeoZotos",
+  "url": "https://huggingface.co/LeoZotos/littlelearner-1.3b-base_math_textbooks",
+  "created_at": "2026-09-03T10:21:14.000Z",
+  "updated_at": "2026-09-03T10:27:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "finetuning",
+    "education",
+    "learning-dynamics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1358021120,
+  "parameters_human": "1.36B",
+  "storage_bytes": 2716075264,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Villa Jakov, Promajna (updated prices 2026) - Booking.com",
+      "url": "https://www.booking.com/hotel/hr/villa-jakov-promajna1.html?msockid=0c4e6025da8c67071bd177ecdb6b6635",
+      "snippet": "Villa Jakov offers a luxury accommodation that has high service and modern retro style. The recognizable villa is located only 80 …"
+    },
+    {
+      "title": "Home | Villa Jakov",
+      "url": "https://www.villajakov-promajna.com/",
+      "snippet": "Proudly created s.o.liver."
+    },
+    {
+      "title": "Villa Jakov, Promajna (aktualizované ceny na rok 2026)",
+      "url": "https://www.booking.com/hotel/hr/villa-jakov-promajna1.sk.html?msockid=0c4e6025da8c67071bd177ecdb6b6635",
+      "snippet": "Rozpoznateľná vila sa nachádza iba 80 metrov od hlavnej pláže. Na prízemí je recepcia, stoly a stoličky, kde si každé ráno môžete …"
+    },
+    {
+      "title": "About - Villa Jakov",
+      "url": "https://www.villajakov-promajna.com/about",
+      "snippet": "Villa Jakov is an exceptional seafront villa located in the quiet and peaceful town Promajna. The entire villa is furnished in a modern …"
+    },
+    {
+      "title": "Apartmani Promajna - Apartmani Villa Jakov | Apartmanija.hr",
+      "url": "https://www.apartmanija.hr/apartmani/promajna/apartmani-villa-jakov/32112",
+      "snippet": "Villa Jakov nalazi se u Promajni, mirnom obiteljskom mjestu u Makarskoj Rivijeri. Između Baške Vode i Makarske. Na idealnoj …"
+    }
+  ]
+}

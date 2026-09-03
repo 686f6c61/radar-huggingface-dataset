@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "aixk/RIMG-16D-B",
+  "slug": "aixk-rimg-16d-b",
+  "author": "aixk",
+  "url": "https://huggingface.co/aixk/RIMG-16D-B",
+  "created_at": "2026-09-03T04:28:36.000Z",
+  "updated_at": "2026-09-03T09:08:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 858774623,
+  "storage_human": "859 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

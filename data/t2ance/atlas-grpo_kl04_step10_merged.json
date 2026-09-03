@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "t2ance/atlas-grpo_kl04_step10_merged",
+  "slug": "t2ance-atlas-grpo_kl04_step10_merged",
+  "author": "t2ance",
+  "url": "https://huggingface.co/t2ance/atlas-grpo_kl04_step10_merged",
+  "created_at": "2026-09-03T01:33:17.000Z",
+  "updated_at": "2026-09-03T01:37:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16742184082,
+  "storage_human": "16.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "t2ance (Peijia Qin) - Hugging Face",
+      "url": "https://huggingface.co/t2ance",
+      "snippet": "t2ance/slim_full_pretrain_inner_10000 Text Generation • Updated about 2 hours ago"
+    },
+    {
+      "title": "t2ance/atts-grpo-data · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/t2ance/atts-grpo-data/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - arcee-ai/mergekit: Tools for merging pretrained large language ...",
+      "url": "https://github.com/arcee-ai/mergekit",
+      "snippet": "This will run the merge and write your merged model to ./output-model-directory. For more information on the arguments accepted by mergekit-yaml run the command mergekit-yaml --help."
+    },
+    {
+      "title": "Merge PDF files online. Free service to merge PDF - iLovePDF",
+      "url": "https://www.ilovepdf.com/merge_pdf",
+      "snippet": "Select multiple PDF files and merge them in seconds. Merge & combine PDF files online, easily and free."
+    },
+    {
+      "title": "Merge Large Language Models with mergekit - Towards Data Science",
+      "url": "https://towardsdatascience.com/merge-large-language-models-with-mergekit-2118fb392b54/",
+      "snippet": "A large language model is a type of artificial intelligence (AI) system that has been trained on vast amounts of text data. It&#x27;s designed to understand and generate human-like language, making predictions on what words or phrases might come next in a sentence or document."
+    }
+  ]
+}

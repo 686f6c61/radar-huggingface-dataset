@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/snapkitty-deeds",
+  "slug": "snapkitty-snapkitty-deeds",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/snapkitty-deeds",
+  "created_at": "2026-09-03T10:05:13.000Z",
+  "updated_at": "2026-09-03T10:05:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "\"Nettoyage de Windows Update\" absent du nettoyage disque W10",
+      "url": "https://forums.commentcamarche.net/forum/affich-37363597-nettoyage-de-windows-update-absent-du-nettoyage-disque-w10",
+      "snippet": "Sep 30, 2021 · Bonjour, Pour commencer, voilà mon problème : une image vaut mille mots. Est-ce normal? Est-ce une sécurité? Est …"
+    },
+    {
+      "title": "Nettoyage du disque dur - Windows 10",
+      "url": "https://forums.commentcamarche.net/forum/affich-34320979-nettoyage-du-disque-dur",
+      "snippet": "Bonjour, depuis que windows 10 s'est installé, sans que je ne puis rien faire, suite à une mise à jour, je ne m'y retrouve plus - que …"
+    },
+    {
+      "title": "Nettoyage disque windows 10 - fichiers temporaires",
+      "url": "https://forums.commentcamarche.net/forum/affich-37645527-nettoyage-disque-windows-10-fichiers-temporaires",
+      "snippet": "Jul 23, 2022 · Ces fichiers sont déposés par Windows après leur utilisation, mais si l'OS en a de nouveau besoin, il ira plus vite à les …"
+    },
+    {
+      "title": "Nettoyage Disque dur [Résolu] - Windows 10 - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36027081-nettoyage-disque-dur",
+      "snippet": "May 17, 2019 · Bonsoir Je souhaiterai avoir quelques conseil concernant le nettoyage de mon disque dur. Habituellement, je passe …"
+    },
+    {
+      "title": "Nettoyage de disque dur interminable - Windows - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-10726535-nettoyage-de-disque-dur-interminable",
+      "snippet": "Bonjour, Le nettoyage de mon disque dur se met en marche puis semble interminable et tourne en rond. L'analyse préalable donne 8 …"
+    }
+  ]
+}

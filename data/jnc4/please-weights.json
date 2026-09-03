@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "jnc4/please-weights",
+  "slug": "jnc4-please-weights",
+  "author": "jnc4",
+  "url": "https://huggingface.co/jnc4/please-weights",
+  "created_at": "2026-09-03T10:39:44.000Z",
+  "updated_at": "2026-09-03T10:42:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1019367424,
+  "storage_human": "1.0 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B, Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "武汉市汉阳区思桥幼儿园 - 企查查",
+      "url": "https://www.qcc.com/firm/s4f8162df51010e00720dcf8c9418360.html",
+      "snippet": "3 days ago · 企查查为您提供武汉市汉阳区思桥幼儿园的最新工商信息、公司简介、公司地址、电话号码、招聘信息、信用信息、财务 …"
+    },
+    {
+      "title": "GitHub - JNC4/please",
+      "url": "https://github.com/JNC4/please",
+      "snippet": "Contribute to JNC4/please development by creating an account on GitHub."
+    },
+    {
+      "title": "武汉市洪山区思桥东湖城幼儿园 - 爱企查",
+      "url": "https://aiqicha.baidu.com/company_detail_87506219401798",
+      "snippet": "Aug 4, 2026 · 武汉市洪山区思桥东湖城幼儿园是一家事业单位的企业，位于武汉市洪山区和平街三弓路218号，目前处于开业状态，经 …"
+    },
+    {
+      "title": "Open-source AI models · The Open Weights",
+      "url": "https://theopenweights.com/models",
+      "snippet": "Browse open-weight AI models — language, vision, image, audio, and more — with downloads, trends, and full version changelogs."
+    },
+    {
+      "title": "武汉汉阳区思桥国际幼儿园怎么样,每月收费学费多少钱，好不好地址电话简介_湖北幼儿园…",
+      "url": "http://www.haojiaoyu.net/youeryuan/649794.html",
+      "snippet": "湖北武汉汉阳区思桥国际幼儿园好不好怎么样,收费标准费用学费多少钱，地址电话简介等最新动态，湖北武汉汉阳区思桥国际幼儿园 …"
+    }
+  ]
+}

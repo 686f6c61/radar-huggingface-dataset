@@ -5,7 +5,7 @@
   "author": "gulding",
   "url": "https://huggingface.co/gulding/EmsyAI",
   "created_at": "2026-08-24T07:11:40.000Z",
-  "updated_at": "2026-08-27T17:39:09.000Z",
+  "updated_at": "2026-09-02T15:00:55.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -15,6 +15,14 @@
   ],
   "tags": [
     "gguf",
+    "llama.cpp",
+    "ollama",
+    "from-scratch",
+    "educational",
+    "pytorch",
+    "text-generation",
+    "en",
+    "license:mit",
     "endpoints_compatible",
     "region:us"
   ],

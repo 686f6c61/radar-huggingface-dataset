@@ -5,7 +5,7 @@
   "author": "AbteeXAILab",
   "url": "https://huggingface.co/AbteeXAILab/lumynax-reasoning-glm46-355b-moe",
   "created_at": "2026-05-14T00:25:06.000Z",
-  "updated_at": "2026-09-02T23:14:38.000Z",
+  "updated_at": "2026-09-03T02:32:24.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -45,6 +45,8 @@
     "text-generation",
     "en",
     "mi",
+    "base_model:zai-org/GLM-4.6",
+    "base_model:quantized:zai-org/GLM-4.6",
     "license:mit",
     "endpoints_compatible",
     "region:us",
@@ -58,7 +60,7 @@
   "parameters_human": "356.79B",
   "storage_bytes": 215582633056,
   "storage_human": "215.6 GB",
-  "base_model": null,
+  "base_model": "zai-org/GLM-4.6",
   "formats": [
     "gguf"
   ],

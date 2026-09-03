@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "KamiSan04/receipt-ai-extractor",
+  "slug": "kamisan04-receipt-ai-extractor",
+  "author": "KamiSan04",
+  "url": "https://huggingface.co/KamiSan04/receipt-ai-extractor",
+  "created_at": "2026-09-03T08:26:39.000Z",
+  "updated_at": "2026-09-03T08:28:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "layoutlmv3",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125330821,
+  "parameters_human": "125.3M",
+  "storage_bytes": 501349380,
+  "storage_human": "501 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

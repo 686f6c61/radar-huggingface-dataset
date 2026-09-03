@@ -5,7 +5,7 @@
   "author": "slyusarev",
   "url": "https://huggingface.co/slyusarev/Qwen3-ASR-1.7B-GGUF",
   "created_at": "2026-08-24T15:46:09.000Z",
-  "updated_at": "2026-08-24T20:40:15.000Z",
+  "updated_at": "2026-09-02T21:35:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -60,8 +60,8 @@
   "trending_score": 0,
   "parameters": 2031739904,
   "parameters_human": "2.03B",
-  "storage_bytes": 3803179296,
-  "storage_human": "3.8 GB",
+  "storage_bytes": 5061054752,
+  "storage_human": "5.1 GB",
   "base_model": "Qwen/Qwen3-ASR-1.7B",
   "formats": [
     "gguf"

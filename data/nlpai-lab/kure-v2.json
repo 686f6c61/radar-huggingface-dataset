@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "nlpai-lab/KURE-v2",
+  "slug": "nlpai-lab-kure-v2",
+  "author": "nlpai-lab",
+  "url": "https://huggingface.co/nlpai-lab/KURE-v2",
+  "created_at": "2026-08-17T06:12:55.000Z",
+  "updated_at": "2026-09-03T04:23:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "PyLate",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "PyLate",
+    "safetensors",
+    "modernbert",
+    "ColBERT",
+    "late-interaction",
+    "multi-vector",
+    "sentence-transformers",
+    "sentence-similarity",
+    "feature-extraction",
+    "ko",
+    "en",
+    "base_model:skt/A.X-Encoder-base",
+    "base_model:finetune:skt/A.X-Encoder-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 1159,
+  "trending_score": 9,
+  "parameters": 148733184,
+  "parameters_human": "148.7M",
+  "storage_bytes": 307648680,
+  "storage_human": "308 MB",
+  "base_model": "skt/A.X-Encoder-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nlpai-lab/KURE-v2-unsupervised · Hugging Face",
+      "url": "https://huggingface.co/nlpai-lab/KURE-v2-unsupervised",
+      "snippet": "nlpai-lab / KURE-v2-unsupervised like 1 Follow NLP & AI - Korea University 144 Sentence Similarity Safetensors sentence-transformers Korean English PyLate modernbert ColBERT late-interaction multi-vector feature-extraction pretrained text-embeddings-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to ..."
+    },
+    {
+      "title": "GitHub - nlpai-lab/KURE: KURE: 고려대학교에서 개발한, 한국어 검색에 특화된 임베딩 모델",
+      "url": "https://github.com/nlpai-lab/KURE",
+      "snippet": "KURE: 고려대학교에서 개발한, 한국어 검색에 특화된 임베딩 모델. Contribute to nlpai-lab/KURE development by creating an account on GitHub."
+    },
+    {
+      "title": "nlpai-lab (NLP & AI - Korea University) - Hugging Face",
+      "url": "https://huggingface.co/nlpai-lab",
+      "snippet": "nlpai-lab/kullm-polyglot-5.8b-v2 Text Generation • Updated Jun 7, 2023• 4.45k • 23"
+    },
+    {
+      "title": "nlpai-lab/KURE | DeepWiki",
+      "url": "https://deepwiki.com/nlpai-lab/KURE",
+      "snippet": "The KURE (Korea University Retrieval Embedding) project provides state-of-the-art Korean-specific embedding models and a comprehensive evaluation framework for Korean information retrieval. Developed by the Korea University NLP & AI Lab and the HIAI Research Institute, the project aims to bridge the performance gap in Korean natural language processing by providing high-quality models and a ..."
+    },
+    {
+      "title": "KURE/README.md at main · nlpai-lab/KURE · GitHub",
+      "url": "https://github.com/nlpai-lab/KURE/blob/main/README.md",
+      "snippet": "KURE: 고려대학교에서 개발한, 한국어 검색에 특화된 임베딩 모델. Contribute to nlpai-lab/KURE development by creating an account on GitHub."
+    }
+  ]
+}

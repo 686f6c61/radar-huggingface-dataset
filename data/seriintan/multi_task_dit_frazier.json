@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "seriintan/multi_task_dit_frazier",
+  "slug": "seriintan-multi_task_dit_frazier",
+  "author": "seriintan",
+  "url": "https://huggingface.co/seriintan/multi_task_dit_frazier",
+  "created_at": "2026-09-03T01:40:37.000Z",
+  "updated_at": "2026-09-03T01:43:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "multi_task_dit",
+    "dataset:seriintan/frazier_dataset_20260901_151518",
+    "arxiv:2507.05331",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 248855302,
+  "parameters_human": "248.9M",
+  "storage_bytes": 995509304,
+  "storage_human": "996 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "seriintan/multitask-dit-frazier-sim-v3 · Hugging Face",
+      "url": "https://huggingface.co/seriintan/multitask-dit-frazier-sim-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "seriintan/multitask-dit-frazier-sim-v3 at main - Hugging Face",
+      "url": "https://huggingface.co/seriintan/multitask-dit-frazier-sim-v3/tree/main",
+      "snippet": "Instructions to use seriintan/multitask-dit-frazier-sim-v3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use seriintan/multitask-dit-frazier-sim-v3 with LeRobot: Notebooks Google Colab Kaggle main multitask-dit-frazier-sim-v3 999 MB Ctrl+K Ctrl+K 1 contributor History:5 commits seriintan Upload model card and train ..."
+    },
+    {
+      "title": "lerobot/docs/source/multi_task_dit.mdx at main - GitHub",
+      "url": "https://github.com/huggingface/lerobot/blob/main/docs/source/multi_task_dit.mdx",
+      "snippet": "Multitask Diffusion Transformer (DiT) Policy is an evolution of the original Diffusion Policy architecture, which leverages a large DiT with text and vision conditioning for multitask robot learning. This implementation supports both diffusion and flow matching objectives for action generation, enabling robots to perform diverse manipulation tasks conditioned on language instructions."
+    },
+    {
+      "title": "GitHub - brysonjones/multitask_dit_policy: An open-source ...",
+      "url": "https://github.com/brysonjones/multitask_dit_policy",
+      "snippet": "The goal of this project is to provide the community with a high quality implementation of Multitask DiT Policy that can be used as a baseline for model research and building on top of. Architecture diagram of the Multitask Diffusion-Transformer (DiT) Policy model I&#x27;ve made an effort to make the implementations as readable as possible, at the sacrifice of making the most optimized ..."
+    },
+    {
+      "title": "MultiTask-DiT - aierlab.tech",
+      "url": "https://aierlab.tech/MultiTask-DiT/",
+      "snippet": "MultiTask-DiT This site is open source. Improve this page."
+    }
+  ]
+}

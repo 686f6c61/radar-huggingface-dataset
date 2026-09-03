@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "cyankiwi/granite-4.2-30b-AWQ-INT4",
+  "slug": "cyankiwi-granite-4-2-30b-awq-int4",
+  "author": "cyankiwi",
+  "url": "https://huggingface.co/cyankiwi/granite-4.2-30b-AWQ-INT4",
+  "created_at": "2026-09-03T09:33:54.000Z",
+  "updated_at": "2026-09-03T09:53:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt",
+    "ar",
+    "cs",
+    "it",
+    "ko",
+    "nl",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granite",
+    "text-generation",
+    "granite-4.2",
+    "reasoning",
+    "thinking",
+    "tool-calling",
+    "ibm",
+    "conversational",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "pt",
+    "ar",
+    "cs",
+    "it",
+    "ko",
+    "nl",
+    "zh",
+    "arxiv:2308.13137",
+    "base_model:ibm-granite/granite-4.2-30b",
+    "base_model:quantized:ibm-granite/granite-4.2-30b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5379724160,
+  "parameters_human": "5.38B",
+  "storage_bytes": 18095515728,
+  "storage_human": "18.1 GB",
+  "base_model": "ibm-granite/granite-4.2-30b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open Models for Agentic AI | FriendliAI",
+      "url": "https://friendli.ai/models",
+      "snippet": "granite-4.2-30b. Fine-tuned · Deploy ... Qwen3.8-27B-AWQ-INT4. Quantized · Deploy · Load more models."
+    },
+    {
+      "title": "Model catalog — hfviewer",
+      "url": "https://hfviewer.com/models",
+      "snippet": "cyankiwi/ThinkingCap-Qwen3.6-27B-AWQ-INT4image-text-to-text↓ 57.0k♡ 11 ... cyankiwi/Qwen3-VL-30B-A3B-Instruct-AWQ-4bitimage-text-to-text↓ 56.8k♡ 10 ..."
+    },
+    {
+      "title": "Best Local LLMs - Apr 2026 : r/LocalLLaMA - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1sknx6n/best_local_llms_apr_2026/",
+      "snippet": "14.04.2026 ... Both as cyankiwi awq quants (int4) and both work fine, with tools and all. Thats on 0.17, 0.16 didn't have support yet and iirc somewhere ..."
+    },
+    {
+      "title": "LLM VRAM Calculator & GPU Requirements for HuggingFace Models",
+      "url": "https://www.spheron.network/tools/gpu-recommender/",
+      "snippet": "cyankiwi/Qwen3-30B-A3B-Instruct-2507-AWQ-4bit · meta-llama/Llama-2-7b-chat ... ibm-granite/granite-4.2-30b · XYZAILab/XYZ-Aquila-mini · Hcompany/Holo-3.1-4B ..."
+    },
+    {
+      "title": "Our Models",
+      "url": "https://ourmodels.cc/models",
+      "snippet": "Models ; 58, Ornith-1.0-9Bornith-ai, 2.5M ; 59, NVIDIA-Nemotron-3-Nano-30B-A3B-BF16nvidia, 2.4M ; 60, Qwen3.5-397B-A17BQwen, 2.4M ; 61, DeepSeek-R1deepseek-ai, 2.4M ..."
+    }
+  ]
+}

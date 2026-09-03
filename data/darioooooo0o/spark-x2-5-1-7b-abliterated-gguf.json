@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "darioooooo0o/Spark-X2.5-1.7B-Abliterated-GGUF",
+  "slug": "darioooooo0o-spark-x2-5-1-7b-abliterated-gguf",
+  "author": "darioooooo0o",
+  "url": "https://huggingface.co/darioooooo0o/Spark-X2.5-1.7B-Abliterated-GGUF",
+  "created_at": "2026-09-03T10:44:59.000Z",
+  "updated_at": "2026-09-03T10:46:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "spark",
+    "reasoning",
+    "text-generation",
+    "base_model:XHToken/Spark-X2.5-1.7B",
+    "base_model:quantized:XHToken/Spark-X2.5-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1976092672,
+  "parameters_human": "1.98B",
+  "storage_bytes": 6151252864,
+  "storage_human": "6.2 GB",
+  "base_model": "XHToken/Spark-X2.5-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "darioooooo0o/Spark-X2.5-1.7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/darioooooo0o/Spark-X2.5-1.7B-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/details",
+      "snippet": "Some sentences may contain gender-specific alternatives. Click a sentence to see alternatives. Learn more"
+    },
+    {
+      "title": "GitHub - XHToken/Spark-X2.5: Spark-x2.5 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.5",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    },
+    {
+      "title": "Google Translate - A Personal Interpreter on Your Phone or Computer",
+      "url": "https://translate.google.com/about/",
+      "snippet": "Learn how to translate text, speech, images, documents, websites, and more with Google Translate."
+    }
+  ]
+}

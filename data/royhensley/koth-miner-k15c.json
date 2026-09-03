@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "royhensley/koth-miner-k15c",
+  "slug": "royhensley-koth-miner-k15c",
+  "author": "royhensley",
+  "url": "https://huggingface.co/royhensley/koth-miner-k15c",
+  "created_at": "2026-09-02T18:44:33.000Z",
+  "updated_at": "2026-09-03T06:50:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25628,
+  "storage_human": "25628 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "royhensley (RoyHensley) - Hugging Face",
+      "url": "https://huggingface.co/royhensley",
+      "snippet": "AI&ML Recent Activity updated a modelabout 6 hours ago royhensley/koth-miner-k3a updated a modelabout 6 hours ago royhensley/koth-miner-k3c updated a modelabout 6 hours ago royhensley/koth-miner-k3b View all activity"
+    },
+    {
+      "title": "royhensley/koth-miner-k6c · Hugging Face",
+      "url": "https://huggingface.co/royhensley/koth-miner-k6c",
+      "snippet": "royhensley / koth-miner-k6c like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    },
+    {
+      "title": "thirtyspokes/docs/MINER.md at main - GitHub",
+      "url": "https://github.com/ThirtySpokes99/thirtyspokes/blob/main/docs/MINER.md",
+      "snippet": "ThirtySpokes — mining guide You compete to build the routing / orchestration agent that gets the highest benchmark quality per dollar over an owner-pinned pool of models. King = the eligible miner with the highest cost-budgeted quality. For how the mechanism works see DESIGN.md; to stand up a subnet see DEPLOYING.md."
+    },
+    {
+      "title": "Microsoft Foundry Models overview - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+      "snippet": "The model catalog in Foundry portal is the hub for discovering and using a wide range of models to build generative AI applications. The model catalog features thousands of models from providers like Azure OpenAI, Anthropic, Mistral, Meta, Cohere, NVIDIA, and Hugging Face, including models that Microsoft trained."
+    }
+  ]
+}

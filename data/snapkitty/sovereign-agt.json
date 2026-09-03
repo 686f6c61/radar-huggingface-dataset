@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/sovereign-agt",
+  "slug": "snapkitty-sovereign-agt",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/sovereign-agt",
+  "created_at": "2026-09-03T10:15:03.000Z",
+  "updated_at": "2026-09-03T10:15:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ceramiczny pojemnik na sztućce z motywem kwiatowym Kolor ... - Sinsay",
+      "url": "https://www.sinsay.com/pl/pl/ceramiczny-pojemnik-na-sztucce-z-motywem-kwiatowym-114jq-01x?msockid=26f9da9ce15e64742d1ecd55e01465be",
+      "snippet": "Ceramiczny pojemnik na sztućce z motywem kwiatowym Kolor kremowy - SINSAY - 114JQ-01X. Aby korzystać z serwisu musisz …"
+    },
+    {
+      "title": "Sinsay - Great fashion, great prices",
+      "url": "https://www.sinsay.com/pl/pl/?msockid=26f9da9ce15e64742d1ecd55e01465be",
+      "snippet": "Odkryj najnowsze trendy w najlepszych cenach w sklepie internetowym marki Sinsay. Poznaj szeroką ofertę produktów dla całej …"
+    },
+    {
+      "title": "Keramický stojan na příbory s květinovým motivem - Sinsay",
+      "url": "https://www.sinsay.com/cz/cz/keramicky-stojan-na-pribory-s-kvetinovym-motivem-114jq-01x?msockid=26f9da9ce15e64742d1ecd55e01465be",
+      "snippet": "Keramický stojan na příbory s květinovým motivem, Úložné prostory, krémová."
+    },
+    {
+      "title": "Sinsay - Shop Online",
+      "url": "https://www.sinsay.com/pl/pl/home-ss20-all?msockid=26f9da9ce15e64742d1ecd55e01465be",
+      "snippet": "Odkryj najnowsze trendy w najlepszych cenach w sklepie internetowym marki Sinsay. Poznaj szeroką ofertę produktów dla całej …"
+    },
+    {
+      "title": "Keramický stojan na príbory s kvetinovým motívom - Sinsay",
+      "url": "https://www.sinsay.com/sk/sk/keramicky-stojan-na-pribory-s-kvetinovym-motivom-114jq-01x?msockid=26f9da9ce15e64742d1ecd55e01465be",
+      "snippet": "Keramická forma na pečenie 4,99 EUR sinsay Home Kuchyňa a jedáleň Úložné priestory Keramický stojan na príbory s kvetinovým …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ivmorozov/simple-classification",
+  "slug": "ivmorozov-simple-classification",
+  "author": "ivmorozov",
+  "url": "https://huggingface.co/ivmorozov/simple-classification",
+  "created_at": "2026-09-03T10:13:34.000Z",
+  "updated_at": "2026-09-03T10:13:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ios.chat.openai.com",
+      "url": "https://ios.chat.openai.com/cdn-cgi/trace",
+      "snippet": "fl=1292f9 h=ios.chat.openai.com ip=40.77.167.51 ts=1788423444.000 visit_scheme=https uag=Mozilla/5.0 AppleWebKit/537.36 …"
+    },
+    {
+      "title": "Classification with GenAI, AI, and ML— A Review: Part 1 Introduction | by Dr. Armando Fandango | Medium",
+      "url": "https://medium.com/@armando-fandango/classification-with-genai-ai-and-ml-a-review-9c6370ff34e6",
+      "snippet": "We introduced various AI and ML techniques used for classification, including traditional methods like decision trees and modern approaches like deep learning, and implemented code using Pytorch for simple classification."
+    },
+    {
+      "title": "AI Classification in Machine Learning Explained",
+      "url": "https://bigid.com/blog/ai-classification/",
+      "snippet": "I data classification, or AI classification, is the process of organizing data into predefined categories. The AI model is taught to recognize features and patterns in information, so it can identify them in any new data sets."
+    },
+    {
+      "title": "android.chat.openai.com",
+      "url": "https://android.chat.openai.com/cdn-cgi/trace",
+      "snippet": ""
+    },
+    {
+      "title": "Choosing the Best Machine Learning Classification Model and Avoiding Overfitting - MATLAB & Simulink",
+      "url": "https://www.mathworks.com/campaigns/offers/next/choosing-the-best-machine-learning-classification-model-and-avoiding-overfitting.html",
+      "snippet": "Categorizing data points based on their distance to other points in a training data set can be a simple yet effective way of classifying data. k-nearest neighbor (KNN) is the “guilty by association” algorithm. KNN is an instance-based lazy learner, which means there’s no real training phase. You load the training data into the model and let it sit until you actually want to start using the classifier."
+    }
+  ]
+}

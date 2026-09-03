@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Attila115/co5",
+  "slug": "attila115-co5",
+  "author": "Attila115",
+  "url": "https://huggingface.co/Attila115/co5",
+  "created_at": "2026-09-03T06:00:51.000Z",
+  "updated_at": "2026-09-03T06:01:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3235450896,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Attila115/co5 · Hugging Face",
+      "url": "https://huggingface.co/Attila115/co5",
+      "snippet": "Attila115 / co5 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Attila115 (Szekely) - Hugging Face",
+      "url": "https://huggingface.co/Attila115/models",
+      "snippet": "Sort: Recently updated. Attila115/1. Updated 1 day ago. Attila115/3. Updated 1 day ago • 18. Attila115/4. Updated 1 day ago"
+    },
+    {
+      "title": "Attilaai - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/attilaai.html",
+      "snippet": "Download Attilaai GGUF model. 6.9 GB, 517 downloads, 0 likes."
+    },
+    {
+      "title": "CivArchive - CivitAI Archive",
+      "url": "https://civarchive.com/about",
+      "snippet": "CivArchive is a cross-platform search engine for AI models. We don&#x27;t host files ourselves — instead, we crawl various sources and index the models we find, using the file&#x27;s SHA256 hash as its unique, permanent ID. CivArchive was created in direct response to models being suddenly removed from CivitAI. Our core mission is to be a resilient, community-driven archive that preserves access to ..."
+    },
+    {
+      "title": "attilaa/AttilaAI - ollama.com",
+      "url": "https://ollama.com/attilaa/AttilaAI",
+      "snippet": "I&#x27;ve finetuned this model, and as a result, it&#x27;s smarter than all the other AI models. Developed by Attila."
+    }
+  ]
+}

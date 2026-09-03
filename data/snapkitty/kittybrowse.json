@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/kittybrowse",
+  "slug": "snapkitty-kittybrowse",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/kittybrowse",
+  "created_at": "2026-09-03T10:07:24.000Z",
+  "updated_at": "2026-09-03T10:07:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "РИА Новости - события в Москве, России и мире сегодня: темы …",
+      "url": "https://ria.ru/",
+      "snippet": "Новости в России и мире, самая оперативная информация: темы дня, обзоры, анализ. Фото и видео с места событий ..."
+    },
+    {
+      "title": "Лента новостей — РИА Новости — события в Москве, России и …",
+      "url": "https://ria.ru/lenta/",
+      "snippet": "РИА Новости — последние новости в России и мире, самая оперативная информация: темы дня, обзоры, анализ."
+    },
+    {
+      "title": "Лента новостей — РИА Новости Крым — последние новости, …",
+      "url": "https://crimea.ria.ru/lenta/",
+      "snippet": "11 hours ago · РИА Новости Крым — последние новости в России и мире, самая оперативная информация: темы дня, …"
+    },
+    {
+      "title": "Лента новостей — Недвижимость РИА Новости - Новости рынка …",
+      "url": "https://realty.ria.ru/lenta/",
+      "snippet": "Недвижимость РИА Новости — последние новости рынка недвижимости в России и мире, аналитические обзоры и мнения …"
+    },
+    {
+      "title": "Социальный навигатор РИА Новости - события в Москве, России и …",
+      "url": "https://sn.ria.ru/",
+      "snippet": "6 days ago · Новости в России и мире, самая оперативная информация: темы дня, обзоры, анализ. Фото и видео с места …"
+    }
+  ]
+}

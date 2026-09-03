@@ -5,7 +5,7 @@
   "author": "AbteeXAILab",
   "url": "https://huggingface.co/AbteeXAILab/lumynax-reasoning-phi4-mini-gguf",
   "created_at": "2026-05-10T13:39:00.000Z",
-  "updated_at": "2026-09-02T23:14:40.000Z",
+  "updated_at": "2026-09-03T02:32:26.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -42,6 +42,8 @@
     "text-generation",
     "en",
     "mi",
+    "base_model:microsoft/Phi-4-mini-reasoning",
+    "base_model:quantized:microsoft/Phi-4-mini-reasoning",
     "license:mit",
     "endpoints_compatible",
     "region:us",
@@ -55,7 +57,7 @@
   "parameters_human": "3.84B",
   "storage_bytes": 2491875232,
   "storage_human": "2.5 GB",
-  "base_model": null,
+  "base_model": "microsoft/Phi-4-mini-reasoning",
   "formats": [
     "gguf"
   ],

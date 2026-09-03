@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "openbenchmarks/tinyfish",
+  "slug": "openbenchmarks-tinyfish",
+  "author": "openbenchmarks",
+  "url": "https://huggingface.co/openbenchmarks/tinyfish",
+  "created_at": "2026-09-03T02:06:31.000Z",
+  "updated_at": "2026-09-03T02:06:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "web-search",
+    "search-api",
+    "company-news",
+    "leaderboard",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TinyFish Benchmarks: Fastest, Most Accurate Web APIs",
+      "url": "https://www.tinyfish.ai/benchmarks",
+      "snippet": "Benchmark TinyFish Search, Fetch, and Web Agent against Tavily, Exa, Firecrawl, Parallel, OpenAI Operator, Gemini, and Claude on accuracy and task completion."
+    },
+    {
+      "title": "TinyFish — Web Infrastructure for AI Agents",
+      "url": "https://www.tinyfish.ai/",
+      "snippet": "TinyFish provides enterprise infrastructure for AI web agents. Run hundreds of websites simultaneously to navigate, authenticate, extract data, and automate web workflows with a fully serverless architecture."
+    },
+    {
+      "title": "Openbenchmarks (YC F24) just published a \"company news ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/sudheenair_openbenchmarks-yc-f24-just-published-a-activity-7500944519429824513-JeqS",
+      "snippet": "Openbenchmarks (YC F24) just published a \"company news\" benchmark, and TinyFish led on the metric that ultimately matters: cost per correct answer. For too long, we have benchmarked AI primitives ..."
+    },
+    {
+      "title": "OpenBenchmark AI",
+      "url": "https://openbenchmark.ai/",
+      "snippet": "Get early access Join the OpenBenchmark AI waitlist Tell us about your use-case and we&#x27;ll prioritize the benchmarks and model judges that matter most to you. Human or AI judge workflows Public, private, or invite-only visibility Prompt and LLM comparisons side-by-side Join waitlist"
+    },
+    {
+      "title": "Openbenchmarks",
+      "url": "https://openbenchmarks.com/",
+      "snippet": "Independent benchmarks for build-vs-buy decisions. Verifiable, reproducible and open source."
+    }
+  ]
+}

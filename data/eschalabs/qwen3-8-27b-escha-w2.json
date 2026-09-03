@@ -5,7 +5,7 @@
   "author": "EschaLabs",
   "url": "https://huggingface.co/EschaLabs/Qwen3.8-27B-Escha-W2",
   "created_at": "2026-08-20T07:50:16.000Z",
-  "updated_at": "2026-08-26T07:32:20.000Z",
+  "updated_at": "2026-09-02T14:21:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,13 +32,13 @@
     "model-index",
     "region:us"
   ],
-  "likes": 148,
-  "downloads_30d": 3802,
-  "trending_score": 16,
+  "likes": 149,
+  "downloads_30d": 3938,
+  "trending_score": 14,
   "parameters": 6340437856,
   "parameters_human": "6.34B",
-  "storage_bytes": 10165897544,
-  "storage_human": "10.2 GB",
+  "storage_bytes": 11015297952,
+  "storage_human": "11.0 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

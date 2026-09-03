@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "alibaba-multimodal-industrial-ai/IndustryLLM",
+  "slug": "alibaba-multimodal-industrial-ai-industryllm",
+  "author": "alibaba-multimodal-industrial-ai",
+  "url": "https://huggingface.co/alibaba-multimodal-industrial-ai/IndustryLLM",
+  "created_at": "2026-09-03T01:58:32.000Z",
+  "updated_at": "2026-09-03T02:00:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - alibaba-multimodal-industrial-ai/IndustryBench: A multi ...",
+      "url": "https://github.com/alibaba-multimodal-industrial-ai/IndustryBench",
+      "snippet": "A multi-lingual benchmark for evaluating industrial domain knowledge of LLMs. - alibaba-multimodal-industrial-ai/IndustryBench"
+    },
+    {
+      "title": "alibaba-multimodal-industrial-ai/IndustryBench - GitHub",
+      "url": "https://github.com/alibaba-multimodal-industrial-ai/IndustryBench/tree/main",
+      "snippet": "A multi-lingual benchmark for evaluating industrial domain knowledge of LLMs. - alibaba-multimodal-industrial-ai/IndustryBench"
+    },
+    {
+      "title": "alibaba-multimodal-industrial-ai/IndustryBench - Hugging Face",
+      "url": "https://huggingface.co/datasets/alibaba-multimodal-industrial-ai/IndustryBench",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "alibaba-multimodal-industrial-ai - Hugging Face",
+      "url": "https://huggingface.co/datasets/alibaba-multimodal-industrial-ai/IndustryBench/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "IndustryBench: Probing the Industrial Knowledge Boundaries of LLMs",
+      "url": "https://arxiv.org/pdf/2605.10267v3",
+      "snippet": "IndustryBench is designed to fill this gap, making model weaknesses visible at the level needed for procurement decisions rather than only through an aggregate leaderboard."
+    }
+  ]
+}

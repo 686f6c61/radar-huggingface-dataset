@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "xydev333/koth-miner",
+  "slug": "xydev333-koth-miner",
+  "author": "xydev333",
+  "url": "https://huggingface.co/xydev333/koth-miner",
+  "created_at": "2026-08-13T02:08:28.000Z",
+  "updated_at": "2026-09-03T07:30:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32486,
+  "storage_human": "32486 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xydev333/koth-miner · Hugging Face",
+      "url": "https://huggingface.co/xydev333/koth-miner",
+      "snippet": "xydev333 / koth-miner like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "xydev333 (Remi Rozycki) - Hugging Face",
+      "url": "https://huggingface.co/xydev333",
+      "snippet": "Recent Activity updated a modelabout 6 hours ago xydev333/koth-miner published a model1 day ago xydev333/koth-miner View all activity"
+    },
+    {
+      "title": "KideCo-Miner · GitHub",
+      "url": "https://github.com/co-miner",
+      "snippet": "KideCo-Miner is an AI-IoT Decision Copilot for coal-mine hauling operations. It transforms raw sensing data from hauling trucks — GPS, payload scales, cabin cameras, trip logs, and weather sensors — into a unified Hauling Decision Score and a set of explainable AI recommendations that help mine supervisors act faster and more confidently."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    }
+  ]
+}

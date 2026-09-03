@@ -5,7 +5,7 @@
   "author": "thongbuind",
   "url": "https://huggingface.co/thongbuind/SAI_100M",
   "created_at": "2026-08-14T09:55:00.000Z",
-  "updated_at": "2026-08-16T20:49:28.000Z",
+  "updated_at": "2026-09-02T18:02:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

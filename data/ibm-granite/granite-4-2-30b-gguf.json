@@ -5,7 +5,7 @@
   "author": "ibm-granite",
   "url": "https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF",
   "created_at": "2026-08-12T15:58:46.000Z",
-  "updated_at": "2026-08-21T18:30:27.000Z",
+  "updated_at": "2026-09-02T22:10:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us",
     "conversational"
   ],
-  "likes": 10,
+  "likes": 11,
   "downloads_30d": 94445,
   "trending_score": 8,
   "parameters": 29276770304,

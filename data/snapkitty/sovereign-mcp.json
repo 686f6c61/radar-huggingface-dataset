@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/sovereign-mcp",
+  "slug": "snapkitty-sovereign-mcp",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/sovereign-mcp",
+  "created_at": "2026-09-03T08:23:02.000Z",
+  "updated_at": "2026-09-03T08:23:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - SNAPKITTYWEST/sovereign-mcp: AI Infrastructure You Can Verify ...",
+      "url": "https://github.com/SNAPKITTYWEST/sovereign-mcp",
+      "snippet": "What It Does Your AI provider can change pricing tomorrow, shut down your model, read every prompt, or refuse your workload. You have no recourse. Sovereign MCP fixes this:"
+    },
+    {
+      "title": "GitHub - SNAPKITTYWEST/snapkitty-mcp: Sovereign MCP server: WORM chain ...",
+      "url": "https://github.com/SNAPKITTYWEST/snapkitty-mcp",
+      "snippet": "Exposes SnapKitty&#x27;s core capabilities as MCP tools — callable from Claude, any MCP client, or directly via npx."
+    },
+    {
+      "title": "Snapkitty/sovereign-router · Hugging Face",
+      "url": "https://huggingface.co/Snapkitty/sovereign-router",
+      "snippet": "Snapkitty / sovereign-router like 0 Follow Snapkitty Collective 1 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Sovereign MCP by SNAPKITTYWEST | Glama",
+      "url": "https://glama.ai/mcp/servers/SNAPKITTYWEST/sovereign-mcp",
+      "snippet": "A self-hosted MCP server offering provider-independent AI routing, deterministic verification, and cryptographically signed, tamper-evident audit trails for every response."
+    },
+    {
+      "title": "Snapkitty Collective - Hugging Face",
+      "url": "https://huggingface.co/Snapkitty",
+      "snippet": "Sovereign AI infrastructure — quantum-seeded agents, WORM-sealed reasoning, NAND-decomposed LLMs. Bel Esprit D&#x27;Accord Irrevocable Trust · EIN 42-697643"
+    }
+  ]
+}

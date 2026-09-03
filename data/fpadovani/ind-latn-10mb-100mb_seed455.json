@@ -5,7 +5,7 @@
   "author": "fpadovani",
   "url": "https://huggingface.co/fpadovani/ind-latn-10mb-100mb_seed455",
   "created_at": "2026-07-24T18:17:46.000Z",
-  "updated_at": "2026-09-02T10:55:46.000Z",
+  "updated_at": "2026-09-02T11:12:13.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 39087104,
   "parameters_human": "39.1M",
-  "storage_bytes": 2894259407,
-  "storage_human": "2.9 GB",
+  "storage_bytes": 3676200577,
+  "storage_human": "3.7 GB",
   "base_model": "goldfish-models/ind_latn_10mb",
   "formats": [
     "safetensors"

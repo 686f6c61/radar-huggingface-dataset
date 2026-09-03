@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 22713216,
   "parameters_human": "22.7M",
-  "storage_bytes": 181749118,
-  "storage_human": "182 MB",
+  "storage_bytes": 619736373,
+  "storage_human": "620 MB",
   "base_model": "sentence-transformers/all-MiniLM-L6-v2",
   "formats": [
     "safetensors"
