@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Etherealty/Huihui-Qwen3.5-4B-Abliterated-PMRA-GGUF",
+  "slug": "etherealty-huihui-qwen3-5-4b-abliterated-pmra-gguf",
+  "author": "Etherealty",
+  "url": "https://huggingface.co/Etherealty/Huihui-Qwen3.5-4B-Abliterated-PMRA-GGUF",
+  "created_at": "2026-09-04T13:53:19.000Z",
+  "updated_at": "2026-09-04T13:53:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen3.5",
+    "qwen3_5",
+    "pmra",
+    "mixed-quantization",
+    "abliterated",
+    "uncensored",
+    "conversational",
+    "text-generation",
+    "en",
+    "base_model:huihui-ai/Huihui-Qwen3.5-4B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.5-4B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 2010651904,
+  "storage_human": "2.0 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.5-4B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pasjans Pająk | graj online",
+      "url": "https://gra-pasjans.pl/pajak/",
+      "snippet": "Istnieje tylko jeden sposób punktacji w niniejszej grze Pasjans Pająk Online (podobny do tego w Pasjansie Pająku dołączonym do …"
+    },
+    {
+      "title": "Huihui-Qwen3.5-4B-Abliterated-PMRA-GGUF - Hugging Face",
+      "url": "https://huggingface.co/Asystemoffields/Huihui-Qwen3.5-4B-Abliterated-PMRA-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "♠ PASJANS PAJĄK - graj online za darmo | GryPasjans.pl",
+      "url": "https://www.grypasjans.pl/pasjans-pajak.html",
+      "snippet": "Pasjans Klasyczny Pasjans Pająk Stary Pasjans Pająk Klasyczny Pasjans Klondike Freecell Piramida Pasjans Półksiężycowy 40 …"
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3-4B-abliterated-v2 · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3-4B-abliterated-v2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PASJANS PAJĄK ♠ Graj online 100% za darmo |️ Pasjans.org.pl",
+      "url": "https://pasjans.org.pl/pasjans-pajak/",
+      "snippet": "️ Graj teraz w Pasjans Pająk (pełny ekran) z dużymi kartami za darmo i bez rejestracji Ułóż karty w ośmiu kolumnach! Gra ma …"
+    }
+  ]
+}

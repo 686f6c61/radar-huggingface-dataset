@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-d924e94a-Sassy",
+  "slug": "guillekenzo-aros-d924e94a-sassy",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-d924e94a-Sassy",
+  "created_at": "2026-09-04T14:34:41.000Z",
+  "updated_at": "2026-09-04T14:52:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 675994553,
+  "storage_human": "676 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Developer Forum | Roblox",
+      "url": "https://devforum.roblox.com/",
+      "snippet": "Chat with other creators, learn about Roblox platform updates, and report issues with the platform."
+    },
+    {
+      "title": "guillekenzo (garcia) - Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/datasets",
+      "snippet": "guillekenzo Follow HuggingVince's profile picturemolliexx99's profile pictureAgtRodriguez's profile picture 9 followers · 0 following"
+    },
+    {
+      "title": "ForgeGUI - AI Roblox Scripting Tool Feature",
+      "url": "https://devforum.roblox.com/t/forgegui-ai-roblox-scripting-tool-feature/4734535",
+      "snippet": "Jul 13, 2026 · Hey Yall devs 👋 ForgeGUI’s AI scripting tool is a Roblox Studio plugin that turns plain-English descriptions into working …"
+    },
+    {
+      "title": "guillekenzo (garcia) - Hugging Face",
+      "url": "https://huggingface.co/guillekenzo",
+      "snippet": "Image-to-image upscaler using NVIDIA PiD from_clean_flux. guillekenzo May 26. models 153. Sort: Recently updated. guillekenzo/aros-09cc5fd4-MellowDuality"
+    },
+    {
+      "title": "Lux - AI Coding Agent for Roblox Studio [FREE]",
+      "url": "https://devforum.roblox.com/t/%E2%96%B8-lux-ai-coding-agent-for-roblox-studio-free/4207506",
+      "snippet": "Jan 2, 2026 · Lux - AI That Actually Codes Inside Your Project Stop copy-pasting. Stop debugging AI suggestions. Start shipping. …"
+    }
+  ]
+}

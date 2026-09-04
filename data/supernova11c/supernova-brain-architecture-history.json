@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Supernova11c/Supernova-Brain-Architecture-History",
+  "slug": "supernova11c-supernova-brain-architecture-history",
+  "author": "Supernova11c",
+  "url": "https://huggingface.co/Supernova11c/Supernova-Brain-Architecture-History",
+  "created_at": "2026-09-04T15:37:50.000Z",
+  "updated_at": "2026-09-04T15:37:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Каталог тем научных статей на основе рубрикатора Организации ...",
+      "url": "https://cyberleninka.ru/article",
+      "snippet": "Каталог тем научных статей на основе рубрикатора Организации экономического сотрудничества и развития (ОЭСР, OECD), …"
+    },
+    {
+      "title": "Supernova11c/Supernova-Prototype · Hugging Face",
+      "url": "https://huggingface.co/Supernova11c/Supernova-Prototype",
+      "snippet": "Important This is NOT the final Supernova model. The current checkpoint is a pipeline prototype using a fallback/dummy dataset. It is intended to verify the custom architecture, tokenizer, training and export pipeline. The final Supernova model will be trained from scratch using the real Supernova/Nepali dataset."
+    },
+    {
+      "title": "КиберЛенинка предоставляет возможность читать тексты научных …",
+      "url": "https://cyberleninka.ru/",
+      "snippet": "Научная электронная библиотека КиберЛенинка предоставляет возможность читать тексты научных статей бесплатно."
+    },
+    {
+      "title": "Supernova11c/Supernova-teraillm-Embedding-V3 · Hugging Face",
+      "url": "https://huggingface.co/Supernova11c/Supernova-teraillm-Embedding-V3",
+      "snippet": "Architecture Supernova V3 Third-generation Supernova embedding architecture using a different retrieval representation."
+    },
+    {
+      "title": "Поиск по научным публикациям, статьям, монографиям | Голос …",
+      "url": "https://golos-nauki.ru/library/researches/search",
+      "snippet": "3 days ago · Ищите научные публикации ученых. Знакомьтесь с открытиями, узнавайте новые подробности, обсуждайте, …"
+    }
+  ]
+}

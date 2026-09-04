@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bbkdevops/Qwen-AgentWorld-ULTRA",
+  "slug": "bbkdevops-qwen-agentworld-ultra",
+  "author": "bbkdevops",
+  "url": "https://huggingface.co/bbkdevops/Qwen-AgentWorld-ULTRA",
+  "created_at": "2026-09-04T16:16:55.000Z",
+  "updated_at": "2026-09-04T16:29:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 17753332980,
+  "storage_human": "17.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "woovaz woovaz.com",
+      "url": "https://woovaz.com/",
+      "snippet": "woovaz woovaz.com codeigniter codeigniter codeigniter codeigniter woovaz woovaz.com"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-AgentWorld: Qwen-AgentWorld: Language World Models ...",
+      "url": "https://github.com/QwenLM/Qwen-AgentWorld/tree/main",
+      "snippet": "Introduction Qwen-AgentWorld is a native language world model that simulates agentic environments via long chain-of-thought reasoning across seven unified domains: MCP, Search, Terminal, SWE, Android, Web, and OS."
+    },
+    {
+      "title": "Woovaz - #1 Streaming Films en VF et VOSTFR Linge Gratuit",
+      "url": "https://woovaz.pics/",
+      "snippet": "Découvrez Woovaz, la plateforme idéale pour regarder des films gratuits en streaming en France. Explorez une vaste bibliothèque, …"
+    },
+    {
+      "title": "GitHub - btekmen/qwen-agentworld: Qwen-AgentWorld: Language World ...",
+      "url": "https://github.com/btekmen/qwen-agentworld",
+      "snippet": "Introduction Qwen-AgentWorld is a native language world model that simulates agentic environments via long chain-of-thought reasoning across seven unified domains: MCP, Search, Terminal, SWE, Android, Web, and OS."
+    },
+    {
+      "title": "Wodioz ne fonctionne plus : lignée vers Fozlim en septembre 2026",
+      "url": "https://gtlf.fr/wodioz/",
+      "snippet": "May 16, 2026 · Wodioz nouvelle adresse : succession de noms vérifiée en septembre 2026, domaine final, ancien lien, faux sites et …"
+    }
+  ]
+}

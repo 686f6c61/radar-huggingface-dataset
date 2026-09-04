@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "Den953/distilbert-sentiment-demo",
+  "slug": "den953-distilbert-sentiment-demo",
+  "author": "Den953",
+  "url": "https://huggingface.co/Den953/distilbert-sentiment-demo",
+  "created_at": "2026-09-04T14:41:16.000Z",
+  "updated_at": "2026-09-04T14:41:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "sentiment-analysis",
+    "generated_from_trainer",
+    "en",
+    "dataset:cornell-movie-review-data/rotten_tomatoes",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:quantized:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 535797639,
+  "storage_human": "536 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Analysis",
+      "dataset": "rotten_tomatoes",
+      "metric": "Accuracy",
+      "value": 0.8414634146341463
+    }
+  ],
+  "sources": [
+    {
+      "title": "PokeWars - Gra Pokemon Online",
+      "url": "https://pokewars.pl/",
+      "snippet": "PokeWars to pierwsza gra w Polsce, która wprowadziła Region Alola, Z-Ataki Pokemonów oraz Mega ewolucje. Graj w Pokemony na …"
+    },
+    {
+      "title": "Sushai/distilbert-sentiment-demo · Hugging Face",
+      "url": "https://huggingface.co/Sushai/distilbert-sentiment-demo",
+      "snippet": "Sushai / distilbert-sentiment-demo like 0 Text Classification Transformers Safetensors distilbert text-embeddings-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "PokeWars - Regulamin gry",
+      "url": "https://pokewars.pl/regulamin",
+      "snippet": "Regulamin gry Zasady ochrony danych osobowych §1. Postanowienia ogólne 1.1. Warunkiem korzystania z serwisu pokewars.pl jest …"
+    },
+    {
+      "title": "DistilBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/distilbert",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Panel PokeWars",
+      "url": "https://acp.pokewars.pl/login",
+      "snippet": "Logowanie do panelu Zaloguj"
+    }
+  ]
+}

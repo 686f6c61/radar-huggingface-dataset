@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "leonsarmiento/Tiger-Gemma-12B-v3-4bit-mlx",
+  "slug": "leonsarmiento-tiger-gemma-12b-v3-4bit-mlx",
+  "author": "leonsarmiento",
+  "url": "https://huggingface.co/leonsarmiento/Tiger-Gemma-12B-v3-4bit-mlx",
+  "created_at": "2026-09-04T11:20:44.000Z",
+  "updated_at": "2026-09-04T11:29:49.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma3",
+    "gemma",
+    "roleplay",
+    "creative-writing",
+    "base_model:TheDrummer/Tiger-Gemma-12B-v3",
+    "base_model:finetune:TheDrummer/Tiger-Gemma-12B-v3",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13189780080,
+  "parameters_human": "13.19B",
+  "storage_bytes": 7656841917,
+  "storage_human": "7.7 GB",
+  "base_model": "TheDrummer/Tiger-Gemma-12B-v3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fenêtre aide et support qui s'ouvre seule [Résolu] - Windows 7",
+      "url": "https://forums.commentcamarche.net/forum/affich-19363587-fenetre-aide-et-support-qui-s-ouvre-seule",
+      "snippet": "Bonjour, J'ai un problème avec mon \"aide et support windows\" sous Windows 7. En effet, lorsque j'allume mon PC, une fenêtre \"aide …"
+    },
+    {
+      "title": "google/gemma-4-12B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B",
+      "snippet": "This model card summarizes details on the models' architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Comment désactiver l'aide de windows - Forum Windows 10",
+      "url": "https://forums.commentcamarche.net/forum/affich-36131014-comment-desactiver-l-aide-de-windows",
+      "snippet": "Jul 22, 2019 · Bonjour, je cherche comment désactiver l'aide Windows lorsque l'on appuie sur F1 sur un ordinateur portable car c'est …"
+    },
+    {
+      "title": "TheDrummer/Tiger-Gemma-12B-v3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheDrummer/Tiger-Gemma-12B-v3-GGUF",
+      "snippet": "Tiger Gemma 12B v3 Description Gemma 3 12B tune that unlocks more capabilities and less positivity! Should be vision capable. More neutral tone, especially when dealing with harder topics. No em-dashes just for the heck of it. Less markdown responses, more paragraphs. Better steerability to harder themes. Special Thanks Thank you to each and everyone who donated and subscribed in Patreon and ..."
+    },
+    {
+      "title": "Comment activer les touches f1.... - Forum Windows 10",
+      "url": "https://forums.commentcamarche.net/forum/affich-34110076-comment-activer-les-touches-f1",
+      "snippet": "Nov 20, 2016 · Bonjour Tapes par exemple icône Windows + F1 Normalement cette fonction doit t'ouvrir une page internet \"comment …"
+    }
+  ]
+}

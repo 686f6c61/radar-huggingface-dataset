@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/MimeJr.KR",
+  "slug": "ryanham1lton-mimejr-kr",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/MimeJr.KR",
+  "created_at": "2026-09-04T15:42:41.000Z",
+  "updated_at": "2026-09-04T15:43:55.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 160274414,
+  "storage_human": "160 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Borsa di studio per Riccardo Minghetti: il ricordo al ... - RaiNews",
+      "url": "https://www.rainews.it/tgr/lazio/articoli/2026/04/borsa-di-studio-per-riccardo-minghetti-il-ricordo-al-congresso-uil-scuola-f7a1a7c8-7dd3-4022-9e9f-720c9f92406a.html",
+      "snippet": "Apr 13, 2026 · Si è aperto così il congresso regionale della UIL Scuola del Lazio, con la consegna di una borsa di studio dedicata a …"
+    },
+    {
+      "title": "Mime Jr. - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/c57a9fca090370a82068247dd961aee6",
+      "snippet": "Meet Mime Jr. model on SeaArt. Experience free Stable Diffusion models that get you the best AI-generated images using text prompts."
+    },
+    {
+      "title": "Tragedia Crans-Montana, morto Riccardo Minghetti: il 16enne …",
+      "url": "https://www.romatoday.it/cronaca/riccardo-minghetti-morto-crans-montana.html",
+      "snippet": "Jan 4, 2026 · Per Riccardo Minghetti è così finita ogni speranza. Il ragazzo, studente di una scuola superiore dell'Eur, era a Crans …"
+    },
+    {
+      "title": "Ryanham1lton/Simisage at main - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Simisage/tree/main",
+      "snippet": "Ryanham1lton / Simisage like 0 License:cc-by-4.0 Model card FilesFiles and versions xet Community Copy to bucket new main Simisage 117 MB Ctrl+K Ctrl+K 1 contributor History:2 commits Ryanham1lton Upload 3 files 95cdf86 verifiedabout 6 hours ago .gitattributes 1.57 kBUpload 3 filesabout 6 hours ago README.md Safe 27 Bytesinitial commitabout 6 hours ago Simisage (Eli James).pth 55.2 MB xet ..."
+    },
+    {
+      "title": "A Roma i funerali di Riccardo Minghetti, una delle vittime ... - Facebook",
+      "url": "https://www.facebook.com/Repubblica/videos/a-roma-i-funerali-di-riccardo-minghetti-una-delle-vittime-italiane-del-rogo-di-c/1649232209841802/",
+      "snippet": "Un'amica lo ricorda prima di entrare nella Basilica dei Santi Pietro e Paolo: \"Sono qui per dargli un abbraccio, faceva sempre …"
+    }
+  ]
+}

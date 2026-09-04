@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dohyeon1/OLMoE-M-SMoEv2-ngroups48",
+  "slug": "dohyeon1-olmoe-m-smoev2-ngroups48",
+  "author": "Dohyeon1",
+  "url": "https://huggingface.co/Dohyeon1/OLMoE-M-SMoEv2-ngroups48",
+  "created_at": "2026-09-04T17:37:50.000Z",
+  "updated_at": "2026-09-04T17:39:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmoe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6919161856,
+  "parameters_human": "6.92B",
+  "storage_bytes": 13838724744,
+  "storage_human": "13.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "60 Millions de Consommateurs — Accueil",
+      "url": "https://www.60millions-mag.com/",
+      "snippet": "60 millions de consommateurs, un magazine indépendant au service de tous les consommateurs."
+    },
+    {
+      "title": "Dohyeon1/OLMoE-M-SMoE-ngroups48 · Hugging Face",
+      "url": "https://huggingface.co/Dohyeon1/OLMoE-M-SMoE-ngroups48",
+      "snippet": "Instructions to use Dohyeon1/OLMoE-M-SMoE-ngroups48 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "PERCKO - Forum - 60 millions de consommateurs",
+      "url": "https://www.60millions-mag.com/forum/d/67079-percko",
+      "snippet": "Apr 1, 2019 · Mes différents posts, commentaires et photos ont été effacés et ils ont bloqué mon profil afin que je ne puisse plus …"
+    },
+    {
+      "title": "Dohyeon1/OLMoE-HC-SMoE-ngroups48 · Hugging Face",
+      "url": "https://huggingface.co/Dohyeon1/OLMoE-HC-SMoE-ngroups48",
+      "snippet": "Dohyeon1 / OLMoE-HC-SMoE-ngroups48 like 0 Text Generation Transformers Safetensors olmoe conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Amazon startet die „Blockbuster Days“ mit starken Filmdeals",
+      "url": "https://www.dvd-forum.at/amazon-startet-die-blockbuster-days-mit-starken-filmdeals",
+      "snippet": "Jan 26, 2026 · Filmfans aufgepasst: Bei Amazon laufen aktuell wieder die beliebten Blockbuster Days. Gemeinsam mit Plaion …"
+    }
+  ]
+}

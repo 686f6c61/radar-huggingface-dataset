@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "haggue23/severity_detector_directory",
+  "slug": "haggue23-severity_detector_directory",
+  "author": "haggue23",
+  "url": "https://huggingface.co/haggue23/severity_detector_directory",
+  "created_at": "2026-09-04T11:44:40.000Z",
+  "updated_at": "2026-09-04T11:46:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109484547,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437961724,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ciao Amigos",
+      "url": "https://www.ciaoamigos.it/",
+      "snippet": "Questo è ciao aMigos dove il mistero si mescola con la connessione. Entra nell'anonimato e lasciati trasportare dal fascino …"
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Welcome - ciao aMigos",
+      "url": "https://www.ciaoamigos.it/videochat",
+      "snippet": "Welcome su ciao aMigos Clicca su \"Start\" per iniziare e accettare i Cookies essenziali. Questi dolcetti digitali aiutano ciaoaMigos a …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF pipecat-ai/phonellm-alpha-1"
+    },
+    {
+      "title": "Ciao aMigos",
+      "url": "https://chat.ciaoamigos.it/",
+      "snippet": "Devi attivare javascritps per usare questa App Attendere"
+    }
+  ]
+}

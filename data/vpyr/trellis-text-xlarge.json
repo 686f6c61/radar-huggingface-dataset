@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vpyr/TRELLIS-text-xlarge",
+  "slug": "vpyr-trellis-text-xlarge",
+  "author": "vpyr",
+  "url": "https://huggingface.co/vpyr/TRELLIS-text-xlarge",
+  "created_at": "2026-09-04T17:40:23.000Z",
+  "updated_at": "2026-09-04T17:40:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-3d",
+  "library": "trellis",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "trellis",
+    "text-to-3d",
+    "en",
+    "arxiv:2412.01506",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4127470200,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "t.co",
+      "url": "https://schools.madrasati.sa/",
+      "snippet": "سجل المتابعة اليومي. وهو توثيق ورصد آلي لدرجات الطلبة في الواجبات والاختبارات والمهام الأدائية في"
+    },
+    {
+      "title": "microsoft/TRELLIS-text-xlarge · Hugging Face",
+      "url": "https://huggingface.co/microsoft/TRELLIS-text-xlarge",
+      "snippet": "TRELLIS Text XL The text conditioned version of TRELLIS with model size XL, a large 3D genetive model. It was introduced in the paper Structured 3D Latents for Scalable and Versatile 3D Generation."
+    },
+    {
+      "title": "README.md · microsoft/TRELLIS-text-xlarge at main - Hugging Face",
+      "url": "https://huggingface.co/microsoft/TRELLIS-text-xlarge/blob/main/README.md",
+      "snippet": "TRELLIS Text XL The text conditioned version of TRELLIS with model size XL, a large 3D genetive model. It was introduced in the paper Structured 3D Latents for Scalable and Versatile 3D Generation."
+    },
+    {
+      "title": "TRELLIS-text-xlarge: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/trellis-text-xlarge-microsoft",
+      "snippet": "A: TRELLIS-text-xlarge uses structured latent representations rather than direct geometry prediction, enabling scalable 3D generation from text alone. The structured approach prioritizes geometric coherence and generation stability, trading fine surface detail for consistency. Q: What file formats can I export the generated 3D geometry into?"
+    },
+    {
+      "title": "TRELLIS: Structured 3D Latents for Scalable and Versatile 3D Generation",
+      "url": "https://microsoft.github.io/TRELLIS/",
+      "snippet": "Our model generates high-quality results with text or image conditions, significantly surpassing existing methods, including recent ones at similar scales. We showcase flexible output format selection and local 3D editing capabilities which were not offered by previous models. Code, model, and data will be released."
+    }
+  ]
+}

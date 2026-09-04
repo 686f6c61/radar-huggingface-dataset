@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sofiane-isi/sentiment-versioning-demo",
+  "slug": "sofiane-isi-sentiment-versioning-demo",
+  "author": "sofiane-isi",
+  "url": "https://huggingface.co/sofiane-isi/sentiment-versioning-demo",
+  "created_at": "2026-09-04T14:37:39.000Z",
+  "updated_at": "2026-09-04T14:40:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 803513475,
+  "storage_human": "804 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sentiment Analyzer",
+      "url": "https://sentiment-ai-demo.vercel.app/",
+      "snippet": ""
+    },
+    {
+      "title": "GitHub - sofiane87/ml_demos",
+      "url": "https://github.com/sofiane87/ml_demos",
+      "snippet": "Exploring at various ML demos / AI teaching app: Kam Build Sentiment Analysis Notebook Demo: Sofiane Finding relevant/available datasets: Ivana Build Text Tagging Demo: ? Identifying a set of relevant themes: [ALL] select theme to use: ? build visualisation tooling: ? build/optimise model: ? Build Guiding Script & Documentation: ?"
+    },
+    {
+      "title": "Sentiment Demo - a Hugging Face Space by Zainab297",
+      "url": "https://huggingface.co/spaces/Zainab297/sentiment-demo",
+      "snippet": "Enter a sentence in the text box and click the Analyze button to find out if the text is positive, negative, or neutral. The analysis runs entirely in your browser, keeping your data private and re..."
+    },
+    {
+      "title": "Sentiment Demo - a Hugging Face Space by anabury",
+      "url": "https://huggingface.co/spaces/anabury/Sentiment_demo",
+      "snippet": "This app analyzes the sentiment of your text in 11 languages and provides a star rating along with suggested actions. It also detects the language of your input and shows the result in that language."
+    },
+    {
+      "title": "GitHub - sentimental-versioning/sentimental-versioning: Version numbers ...",
+      "url": "https://github.com/sentimental-versioning/sentimental-versioning",
+      "snippet": "Following are some projects that use sentimental versioning. Draw inspiration from the way their version numbers express intangible aspects of the project, and are a work of art on their own."
+    }
+  ]
+}

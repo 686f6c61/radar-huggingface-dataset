@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/medgap-qwen-3.5-9b-GGUF",
+  "slug": "mradermacher-medgap-qwen-3-5-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/medgap-qwen-3.5-9b-GGUF",
+  "created_at": "2026-09-04T11:56:13.000Z",
+  "updated_at": "2026-09-04T12:13:52.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "medical",
+    "regulatory",
+    "compliance",
+    "fda",
+    "en",
+    "dataset:protocolsyncllc/fda-warning-letters",
+    "base_model:protocolsyncllc/medgap-qwen-3.5-9b",
+    "base_model:quantized:protocolsyncllc/medgap-qwen-3.5-9b",
+    "license:llama3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 54257442080,
+  "storage_human": "54.3 GB",
+  "base_model": "protocolsyncllc/medgap-qwen-3.5-9b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tag:\"power bi\" | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/tag/power%20bi",
+      "snippet": "Find all posts, articles, and events tagged with \"power bi\" in Microsoft Community Hub. Stay informed with the latest updates from our …"
+    },
+    {
+      "title": "Qwen3.5-9B-abliterated-v2-MAX-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-9B-abliterated-v2-MAX-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Power BI 和 Excel 在图表制作/可视化上有何区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/50182709",
+      "snippet": "Power BI 的界面布局 无论是初次使用 Power BI 还是已经使用它有一定时间的用户，打开界面都非常容易快速熟悉界面，找到自己所 …"
+    },
+    {
+      "title": "mradermacher/Qwen3.5-9B-Neo-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-9B-Neo-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Power BI | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/PowerBI",
+      "snippet": "This community hub is on a different Microsoft community You can find it here and we will redirect you in 55 seconds."
+    }
+  ]
+}

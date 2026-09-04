@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "rickyhappy1636/Ricky-Reasoning-Model",
+  "slug": "rickyhappy1636-ricky-reasoning-model",
+  "author": "rickyhappy1636",
+  "url": "https://huggingface.co/rickyhappy1636/Ricky-Reasoning-Model",
+  "created_at": "2026-09-04T16:02:00.000Z",
+  "updated_at": "2026-09-04T16:06:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "reasoning",
+    "math",
+    "code",
+    "hindi",
+    "cot",
+    "text-generation",
+    "conversational",
+    "hi",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71356532,
+  "storage_human": "71 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "Valkla： [图片] 这个问题有意思。而且不光是中国，整个东亚地区都有相同的情况。这其实是一个比日本人为什么不道歉更大的问题。 …"
+    },
+    {
+      "title": "Best Reasoning AI Models (September 2026) — Ranked by Benchmark Data",
+      "url": "https://benchlm.ai/best/reasoning-models",
+      "snippet": "Top AI models with dedicated reasoning capabilities, ranked by benchmark performance. Top picks: Claude Fable 5.1, Claude Fable 5, Claude Opus 5. 140 models ranked with detailed benchmark scores."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=reasoning",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "维基百科的官方网址是什么？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/820729145772572492.html",
+      "snippet": "Sep 9, 2024 · 1. 访问wiki百科中文版的官方网站，请输入以下网址： https://www.wiki.com。 2. 维基百科是一个基于wiki技术的免费、 …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "cubert-gmbh/clip",
+  "slug": "cubert-gmbh-clip",
+  "author": "cubert-gmbh",
+  "url": "https://huggingface.co/cubert-gmbh/clip",
+  "created_at": "2026-09-04T11:57:36.000Z",
+  "updated_at": "2026-09-04T11:57:41.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mirror",
+    "cuvis-ai",
+    "clip",
+    "vision-language",
+    "backbone",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 934088680,
+  "storage_human": "934 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "Hyperspectral Imaging Solutions by Cubert",
+      "url": "https://cubert-hyperspectral.com/en/",
+      "snippet": "Discover Cubert's high-performance hyperspectral cameras and software, designed for research, industry, and custom applications."
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're …"
+    },
+    {
+      "title": "Cubert GmbH - Hugging Face",
+      "url": "https://huggingface.co/cubert-gmbh",
+      "snippet": "AI & ML interests ... Recent Activity rajanish4 updated a model 28 days ago ... rajanish4 updated a dataset 28 days ago ... rajanish4 new activity 29 days ago"
+    },
+    {
+      "title": "AITAH - Reddit",
+      "url": "https://www.reddit.com/r/AITAH/",
+      "snippet": "r/AITAH: this is a community like r/AmITheAsshole except unlike that subreddit here you can post interpersonal conflicts, anything …"
+    }
+  ]
+}

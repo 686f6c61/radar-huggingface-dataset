@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lucaggma1984st/mobilevit-contrastive-large",
+  "slug": "lucaggma1984st-mobilevit-contrastive-large",
+  "author": "lucaggma1984st",
+  "url": "https://huggingface.co/lucaggma1984st/mobilevit-contrastive-large",
+  "created_at": "2026-09-04T17:41:10.000Z",
+  "updated_at": "2026-09-04T17:41:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compare Cheap Flights & Book Airline Tickets to Everywhere | Skyscanner",
+      "url": "https://www.skyscanner.com/",
+      "snippet": "Book and compare the cheapest flights from all major airlines and online travel agents, and find the best plane tickets to all your …"
+    },
+    {
+      "title": "lucaggma1984st (Luca Greco) - Hugging Face",
+      "url": "https://huggingface.co/lucaggma1984st",
+      "snippet": "User profile of Luca Greco on Hugging Face"
+    },
+    {
+      "title": "Συγκρίνετε φθηνές πτήσεις και κλείστε ...",
+      "url": "https://gr.skyscanner.com/",
+      "snippet": "Συγκρίνετε φθηνές πτήσεις από τους μεγαλύτερους παρόχους και αεροπορικές και βρείτε τις φθηνότερες για αγαπημένους σας …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=author-year",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Apps Inference Providers One-click Deployment Misc"
+    },
+    {
+      "title": "Skyscanner - Compara vuelos baratos y reserva boletos de avión a …",
+      "url": "https://www.espanol.skyscanner.com/",
+      "snippet": "Compara precios de vuelos de las principales aerolíneas y agencias de viajes, y encuentra los más baratos para tus destinos …"
+    }
+  ]
+}

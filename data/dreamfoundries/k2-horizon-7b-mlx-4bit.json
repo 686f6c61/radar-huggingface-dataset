@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "DreamFoundries/K2-Horizon-7B-MLX-4bit",
+  "slug": "dreamfoundries-k2-horizon-7b-mlx-4bit",
+  "author": "DreamFoundries",
+  "url": "https://huggingface.co/DreamFoundries/K2-Horizon-7B-MLX-4bit",
+  "created_at": "2026-09-04T18:02:48.000Z",
+  "updated_at": "2026-09-04T18:03:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "k2-horizon",
+    "7b",
+    "dense",
+    "open-weights",
+    "ifm",
+    "mlxhub",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:IFM/K2-Horizon-Pretrain-Data",
+    "dataset:IFM/K2-Horizon-Midtrain-Data",
+    "base_model:IFM/K2-Horizon-7B",
+    "base_model:quantized:IFM/K2-Horizon-7B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20637260,
+  "storage_human": "21 MB",
+  "base_model": "IFM/K2-Horizon-7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=DE&hl=de",
+      "snippet": "Auf YouTube findest du großartige Videos und erstklassige Musik. Außerdem kannst du eigene Inhalte hochladen und mit Freunden …"
+    },
+    {
+      "title": "Adapter Models for IFM/K2-Horizon-7B – Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Aadapter%3AIFM%2FK2-Horizon-7B",
+      "snippet": "Model Tree Reset IFM/K2-Horizon-7B Adapters Finetunes Quantizations Merges Apps llama.cpp LM Studio Jan Draw Things DiffusionBee JoyFusion vLLM Ollama MLX LM Docker Model Runner Lemonade SGLang Unsloth Desktop Pi Hermes Agent Atomic Chat OpenClaw Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai ..."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "DreamFoundries - Hugging Face",
+      "url": "https://huggingface.co/DreamFoundries/collections",
+      "snippet": "MLX-LM affine quantizations for Ornith 1.0 models; see each model card for details."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

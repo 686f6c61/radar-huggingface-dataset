@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "cybxisowner1/oauth-redirect-test",
+  "slug": "cybxisowner1-oauth-redirect-test",
+  "author": "cybxisowner1",
+  "url": "https://huggingface.co/cybxisowner1/oauth-redirect-test",
+  "created_at": "2026-09-04T11:26:11.000Z",
+  "updated_at": "2026-09-04T11:26:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Media Expert - najnowsze wiadomości - Bankier.pl",
+      "url": "https://www.bankier.pl/tag/media-expert",
+      "snippet": "Sep 9, 2025 · Media Expert - najnowsze wiadomości z Polski i ze świata, okiem redaktorów Bankier.pl. Czytaj tylko sprawdzone …"
+    },
+    {
+      "title": "cybxisowner1 (Christian Salcedo) - Hugging Face",
+      "url": "https://huggingface.co/cybxisowner1",
+      "snippet": "User profile of Christian Salcedo on Hugging Face"
+    },
+    {
+      "title": "1000 zł od mBanku za konto plus 200 zł do Media Expert. Sprawdzamy ...",
+      "url": "https://www.bankier.pl/wiadomosc/1000-zl-od-mBanku-za-konto-plus-200-zl-do-Media-Markt-Sprawdzamy-warunki-nowej-promocji-9141291.html",
+      "snippet": "Jun 1, 2026 · mBank startuje z nową edycją promocji eKonta do usług. Łącznie można zyskać do 1200 zł - w tym 1000 zł gotówki i …"
+    },
+    {
+      "title": "AI API Model Tester — Check Which Model Your API Actually Runs ...",
+      "url": "https://apimaster.ai/ai-api-model-tester",
+      "snippet": "Free AI API model tester. Paste any OpenAI, Claude or Gemini endpoint and see which model it really runs — fingerprint detection exposes substituted or fake models in seconds. No key stored."
+    },
+    {
+      "title": "Windows Vista i Windows Media Player 11 Reinstal - forum",
+      "url": "https://forum.dobreprogramy.pl/t/windows-vista-i-windows-media-player-11-reinstal/113917",
+      "snippet": "Feb 21, 2007 · Witam Jak przywrócić ustawienie domyślne dla WMP 11 zawartego w Viście lub jak go ponownie zainstalować? Tyle …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "AdarshSingh7647/TabRankMultiTableCoTGen",
+  "slug": "adarshsingh7647-tabrankmultitablecotgen",
+  "author": "AdarshSingh7647",
+  "url": "https://huggingface.co/AdarshSingh7647/TabRankMultiTableCoTGen",
+  "created_at": "2026-09-04T17:57:24.000Z",
+  "updated_at": "2026-09-04T18:00:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "table-ranking",
+    "listwise-reranking",
+    "table-retrieval",
+    "table-question-answering",
+    "qwen3",
+    "text-generation",
+    "en",
+    "arxiv:2607.25182",
+    "arxiv:2504.01346",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 223435,
+  "storage_human": "223435 B",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welche Dimension hat Sánchez' Nein zum Iran-Krieg?",
+      "url": "https://www.eurotopics.net/de/354035/welche-dimension-hat-sanchez-nein-zum-iran-krieg",
+      "snippet": "Mar 5, 2026 · Spaniens Premier Pedro Sánchez hat sein \"Nein zum Krieg in Iran!\" vergangene Woche in einer Fernsehansprache …"
+    },
+    {
+      "title": "AdarshSingh7647/TabRankMultiTableCoTGen · Hugging Face",
+      "url": "https://huggingface.co/AdarshSingh7647/TabRankMultiTableCoTGen",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TabRank: Chain-of-Thought Distillation for Table Re-Rankers",
+      "url": "https://arxiv.org/html/2607.25182",
+      "snippet": "Our approach significantly improves performance across a variety of table retrieval datasets, increasing Acc@10 by 30.5% on HybridQA, 15.2% on SQA, 52.9% on TabFact, and 13.1% on TATQA subsets of the Multi-Table QA Benchmark compared to the base model. Notably, TabRank generalizes effectively to multi-table reasoning. Our code, data and models are available at github.com/AdarshSingh7647/TabRanker ††footnotetext: *These authors contributed equally to this work."
+    },
+    {
+      "title": "Der tägliche Blick in Europas Presse | eurotopics.net",
+      "url": "https://www.eurotopics.net/de/",
+      "snippet": "19 hours ago · Starke Meinungen aus Leitmedien in 32 Ländern Europas auf Deutsch, Englisch, Französisch, Russisch und Türkisch."
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=table-ranking",
+      "snippet": "Active filters: table-ranking. Clear all. AdarshSingh7647/TabRankSingleTableNaive. Text Generation • 8B • Updated about 2 hours ago. AdarshSingh7647 ..."
+    }
+  ]
+}

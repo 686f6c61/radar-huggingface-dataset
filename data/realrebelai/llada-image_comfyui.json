@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "realrebelai/LLaDa-Image_ComfyUI",
+  "slug": "realrebelai-llada-image_comfyui",
+  "author": "realrebelai",
+  "url": "https://huggingface.co/realrebelai/LLaDa-Image_ComfyUI",
+  "created_at": "2026-09-04T15:30:27.000Z",
+  "updated_at": "2026-09-04T16:32:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "gguf",
+    "llada-image",
+    "image-generation",
+    "image-editing",
+    "comfyui",
+    "int8",
+    "quantized",
+    "rebelai",
+    "text-to-image",
+    "base_model:inclusionAI/LLaDA-Image",
+    "base_model:quantized:inclusionAI/LLaDA-Image",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16322752256,
+  "parameters_human": "16.32B",
+  "storage_bytes": 29022861796,
+  "storage_human": "29.0 GB",
+  "base_model": "inclusionAI/LLaDA-Image",
+  "formats": [
+    "diffusers",
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Explore the things you love. Log into Facebook Email or mobile number Password Log in"
+    },
+    {
+      "title": "realrebelai/LLaDa-Image-Turbo_ComfyUI · Hugging Face",
+      "url": "https://huggingface.co/realrebelai/LLaDa-Image-Turbo_ComfyUI",
+      "snippet": "These files are derivatives of LLaDA-Image-Turbo. The upstream model's applicable license and usage terms continue to apply. The ComfyUI integration code is maintained separately in the GitHub repository linked above."
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "realrebelai (Rebel AI) - Hugging Face",
+      "url": "https://huggingface.co/realrebelai/models",
+      "snippet": "User profile of Rebel AI on Hugging Face"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "Facebook creator Jakethejuice is fired up by the US Open and giving tennis a (trick) shot. If you also have tennis fever, Facebook …"
+    }
+  ]
+}

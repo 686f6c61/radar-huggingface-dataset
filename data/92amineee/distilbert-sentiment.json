@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "92amineee/distilbert-sentiment",
+  "slug": "92amineee-distilbert-sentiment",
+  "author": "92amineee",
+  "url": "https://huggingface.co/92amineee/distilbert-sentiment",
+  "created_at": "2026-09-04T13:55:25.000Z",
+  "updated_at": "2026-09-04T13:55:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "sentiment-analysis",
+    "dataset:cornell-movie-review-data/rotten_tomatoes",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837825,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "DT12the/distilbert-sentiment-analysis · Hugging Face",
+      "url": "https://huggingface.co/DT12the/distilbert-sentiment-analysis",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=fr",
+      "snippet": "Créez un compte ou connectez-vous à Instagram. Partagez ce que vous aimez avec les personnes qui ont les mêmes centres d’intérêt."
+    },
+    {
+      "title": "Sentiment Analysis using DistilBERT - IEEE Xplore",
+      "url": "https://ieeexplore.ieee.org/document/10420272",
+      "snippet": "Sentiment Analysis using DistilBERT Abstract: Transformers is an architecture that performs well in NLP task. To understand and improve its performance on sentiment analysis, DistilBERT is employed as the base model. Sentiment analysis is a process that extracts subjective information from textual data and categorizes them into different classes."
+    },
+    {
+      "title": "Instagram - Facebook",
+      "url": "https://www.facebook.com/instagram/",
+      "snippet": "Instagram. 68,337,082 likes · 484,428 talking about this. Discover what's new on Instagram 🔎"
+    }
+  ]
+}

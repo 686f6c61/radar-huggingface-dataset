@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "chikonzero/ppo-LunarLander-v2",
+  "slug": "chikonzero-ppo-lunarlander-v2",
+  "author": "chikonzero",
+  "url": "https://huggingface.co/chikonzero/ppo-LunarLander-v2",
+  "created_at": "2026-09-04T14:03:39.000Z",
+  "updated_at": "2026-09-04T14:03:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 283841,
+  "storage_human": "283841 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Riesenbovist – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Riesenbovist",
+      "snippet": "Der Riesenbovist (Calvatia gigantea, Syn. Langermannia gigantea, Lycoperdon giganteum) ist ein leicht bestimmbarer Wiesenpilz mit …"
+    },
+    {
+      "title": "the-AI-guy1/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/the-AI-guy1/ppo-LunarLander-v2",
+      "snippet": "PPO Agent playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library. Usage (with Stable-baselines3) TODO: Add your code"
+    },
+    {
+      "title": "Riesenbovist, Bestimmungsmerkmale und Doppelgänger",
+      "url": "https://www.dailyvegan.de/artikel-rund-um-veganes-essen-und-leben/heimische-pilze-sammeln/riesenbovist-bestimmungsmerkmale-und-doppelgaenger/",
+      "snippet": "Riesenbovist: der absolute Gigant unter den heimischen Pilzen. Bestimmungsmerkmale, Verwechslungsgefahren, Speisewert und …"
+    },
+    {
+      "title": "buildthemachine/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/buildthemachine/ppo-LunarLander-v2",
+      "snippet": "PPO Agent playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library. Usage (with Stable-baselines3) The PPO model is saved as \"ppo-LunarLander-v2.zip\". There are two ways to load this model: Directly load the model from huggingface. This requires the use of the 'load_from_hub' function"
+    },
+    {
+      "title": "Riesenbovist, Riesenstäubling = CALVATIA GIGANTEA (SYN.",
+      "url": "https://123pilzsuche.de/daten/details/Riesenbovist.htm",
+      "snippet": "Riesenbovist, Riesenstäubling ESSBAR! CALVATIA GIGANTEA (SYN. LANGERMANNIA GIGANTEA, LYCOPERDON …"
+    }
+  ]
+}

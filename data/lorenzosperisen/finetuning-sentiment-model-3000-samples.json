@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "lorenzosperisen/finetuning-sentiment-model-3000-samples",
+  "slug": "lorenzosperisen-finetuning-sentiment-model-3000-samples",
+  "author": "lorenzosperisen",
+  "url": "https://huggingface.co/lorenzosperisen/finetuning-sentiment-model-3000-samples",
+  "created_at": "2026-09-04T11:57:27.000Z",
+  "updated_at": "2026-09-04T12:03:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837761,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Koschi Politik - USA Aktuell - YouTube",
+      "url": "https://www.youtube.com/channel/UCr03M6u5DJ5aQ7cpAHb5VEQ/posts",
+      "snippet": "Danke an alle die heute beim Livestream dabei waren! Gerne wieder! Diesmal allgemeine Vorstellung, nächstes Mal mehr Tiefe und …"
+    },
+    {
+      "title": "Koschi-Politics - YouTube",
+      "url": "https://www.youtube.com/@Koschi-Politics",
+      "snippet": "Welcome to Koschi Politics – A German PerspectiveMy name is Manuel. Nine years ago, my family and I left Germany and moved to …"
+    },
+    {
+      "title": "Support Koschi Politik - Ko-fi",
+      "url": "https://ko-fi.com/koschipolitik",
+      "snippet": "Deshalb gibt es diesen Kanal: Ehrliche, deutschsprachige Einblicke in die US-Politik, ohne Filter, ohne Übersetzungsschleier. Wir …"
+    },
+    {
+      "title": "\"Der Dominion-Prozess\" - Palle und Koschi Live - Der Polit-Talk aus ...",
+      "url": "https://videogold.de/der-dominion-prozess-palle-und-koschi-live-der-polit-talk-aus-taiwan-und-den-usa/",
+      "snippet": "Jun 21, 2026 · US-Politik auf Deutsch und das direkt aus den USA und Taiwan. Koschi und Palle berichten aus Buffalo im US …"
+    },
+    {
+      "title": "Koschi Politik - USA Aktuell: 2 thousand videos found on Yandex",
+      "url": "https://yaca.yandex.com/video/search?text=Koschi+Politik+-++USA+Aktuell",
+      "snippet": "May 11, 2026 · CNBC schafft es Nicht Trump vom Telefon zu bekommen!"
+    }
+  ]
+}

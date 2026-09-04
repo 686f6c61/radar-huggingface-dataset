@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "collision-10M/collision-10m",
+  "slug": "collision-10m-collision-10m",
+  "author": "collision-10M",
+  "url": "https://huggingface.co/collision-10M/collision-10m",
+  "created_at": "2026-09-04T13:42:03.000Z",
+  "updated_at": "2026-09-04T13:43:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "text-generation",
+    "causal-language-model",
+    "small-language-model",
+    "research",
+    "educational",
+    "en",
+    "dataset:collision_dataset_v5_expanded",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 125057611,
+  "storage_human": "125 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Collision — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Collision",
+      "snippet": "Une collision est un choc direct entre deux objets. Un tel impact transmet une partie de l' énergie cinétique et de l' impulsion de l'un …"
+    },
+    {
+      "title": "GitHub - AICPS/sg-collision-prediction: This repository includes the ...",
+      "url": "https://github.com/AICPS/sg-collision-prediction",
+      "snippet": "Spatio-Temporal Scene-Graph Embedding for Autonomous Vehicle Collision Prediction This repository includes the code and dataset information required for reproducing the results in our paper, Spatio-Temporal Scene-Graph Embedding for Autonomous Vehicle Collision Prediction."
+    },
+    {
+      "title": "Définitions : collision - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/collision/17223",
+      "snippet": "collision - Définitions Français : Retrouvez la définition de collision, ainsi que les synonymes, expressions, difficultés... - synonymes, …"
+    },
+    {
+      "title": "harshithaha12/AI-Collision-Risk-Detection- - GitHub",
+      "url": "https://github.com/harshithaha12/AI-Collision-Risk-Detection-",
+      "snippet": "An AI-based collision risk prediction system that simulates real-time vehicle collisions by analyzing factors like car speed, rain, fog, and road visibility, and sends alerts when the collision risk increases."
+    },
+    {
+      "title": "Collision (film) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Collision_(film)",
+      "snippet": "Collision (Crash) est un film choral américano - allemand réalisé par Paul Haggis sorti en 2005, duquel a été adaptée une série …"
+    }
+  ]
+}

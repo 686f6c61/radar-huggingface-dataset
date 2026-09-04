@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ayoubmatheux/sentiment-versioning-demo",
+  "slug": "ayoubmatheux-sentiment-versioning-demo",
+  "author": "ayoubmatheux",
+  "url": "https://huggingface.co/ayoubmatheux/sentiment-versioning-demo",
+  "created_at": "2026-09-04T13:54:03.000Z",
+  "updated_at": "2026-09-04T13:55:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 803513283,
+  "storage_human": "804 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher ...",
+      "url": "https://www.amazon.de/",
+      "snippet": "Entdecken, shoppen und einkaufen bei Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher, Games, Spielzeug, …"
+    },
+    {
+      "title": "Sentiment Analyzer",
+      "url": "https://sentiment-ai-demo.vercel.app/",
+      "snippet": ""
+    },
+    {
+      "title": "Amazon Music | Hör dir Songs, Podcasts und vieles mehr an",
+      "url": "https://music.amazon.de/",
+      "snippet": "Suche und streame Musik und Podcasts über den Webbrowser. Höre dir deine liebsten Playlists aus über 100 Millionen Songs bei …"
+    },
+    {
+      "title": "GitHub - BenWiseman/sentiment.ai: Package for using deep learning ...",
+      "url": "https://github.com/BenWiseman/sentiment.ai",
+      "snippet": "The most complete on-device sentiment toolkit in the R/Python ecosystem. It ships hate-speech / mixed / style flags, intent-based profiles, an interactive sentiment map, and opt-in transformer backends for when you want maximum accuracy. The default model, on-device e5-base, matches the paid OpenAI embedding (text-embedding-3-small) on our benchmarks: that quality, free, across ~100 languages ..."
+    },
+    {
+      "title": "Anmeldung bei Amazon Business",
+      "url": "https://business.amazon.de/de/login",
+      "snippet": "Sichern Sie sich exklusive Angebote und Mengenrabatte! Melden Sie sich bei Ihrem Amazon Business-Konto an und sparen Sie …"
+    }
+  ]
+}

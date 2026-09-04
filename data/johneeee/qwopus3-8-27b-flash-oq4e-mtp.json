@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Johneeee/Qwopus3.8-27B-Flash-oQ4e-mtp",
+  "slug": "johneeee-qwopus3-8-27b-flash-oq4e-mtp",
+  "author": "Johneeee",
+  "url": "https://huggingface.co/Johneeee/Qwopus3.8-27B-Flash-oQ4e-mtp",
+  "created_at": "2026-09-04T16:14:33.000Z",
+  "updated_at": "2026-09-04T16:19:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 16991670901,
+  "storage_human": "17.0 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Personal File Sharing & Cloud Storage | Microsoft OneDrive",
+      "url": "https://onedrive.live.com/",
+      "snippet": "Discover OneDrive for secure and convenient file and document sharing. Get personal cloud storage for seamless file sharing with …"
+    },
+    {
+      "title": "Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored ...",
+      "url": "https://huggingface.co/Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-oQ4e-mtp",
+      "snippet": "Johneeee / Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-oQ4e-mtp like 0 MLX Safetensors qwen3_5 oq quantized 4-bit precision Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Microsoft OneDrive",
+      "url": "https://onedrive.live.com/login/en-us/",
+      "snippet": "Sign in No account? Create one!"
+    },
+    {
+      "title": "bobbrysonn/Qwen3.8-27B-oQ4e-mtp · Hugging Face",
+      "url": "https://huggingface.co/bobbrysonn/Qwen3.8-27B-oQ4e-mtp",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: “Please reason step by step, and put your final answer within \\boxed {}.” For the remaining models, we report the higher score from two prompt variants—one with and one without the \\boxed {} formatting requirement."
+    },
+    {
+      "title": "Microsoft OneDrive",
+      "url": "https://onedrive.live.com/login/fr-fr/",
+      "snippet": "Vous n’avez pas encore de compte ? Créez-en un !"
+    }
+  ]
+}

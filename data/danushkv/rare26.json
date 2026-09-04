@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "danushkv/RARE26",
+  "slug": "danushkv-rare26",
+  "author": "danushkv",
+  "url": "https://huggingface.co/danushkv/RARE26",
+  "created_at": "2026-09-04T14:27:24.000Z",
+  "updated_at": "2026-09-04T14:58:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 889978880,
+  "storage_human": "890 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Explore the things you love. Log into Facebook Email or mobile number Password Log in"
+    },
+    {
+      "title": "GitHub - Rogerking928/rare26: RARE26 challenge (MICCAI/EndoVis 2026 ...",
+      "url": "https://github.com/Rogerking928/rare26",
+      "snippet": "RARE26 challenge (MICCAI/EndoVis 2026): frozen foundation-model features with a linear probe for Barrett's neoplasia detection. Team rogerking. - Rogerking928/rare26"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/index.php/?lang=fr_FR",
+      "snippet": "Forgot password? More languages…"
+    },
+    {
+      "title": "Overview & Goals - RARE26 - Grand Challenge",
+      "url": "https://rare26.grand-challenge.org/",
+      "snippet": "Building on these insights, RARE26 introduces a substantial expansion of the available data through the release of a large-scale unlabeled dataset. This creates new opportunities for self-supervised, unsupervised, and semi-supervised approaches, enabling participants to leverage representation learning and data-efficient methods to better ..."
+    },
+    {
+      "title": "Messenger",
+      "url": "https://www.messenger.com/?lang=fr&hl=fr&locale=fr_FR",
+      "snippet": "Partagez ce que vous voulez, quand vous voulez ! Grâce à Messenger, restez en contact tout simplement."
+    }
+  ]
+}

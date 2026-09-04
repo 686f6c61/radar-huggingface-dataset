@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/Qwen2-1.5B-Instruct_SFT_lora_galaxyppg",
+  "slug": "xw17-qwen2-1-5b-instruct_sft_lora_galaxyppg",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Qwen2-1.5B-Instruct_SFT_lora_galaxyppg",
+  "created_at": "2026-09-04T15:19:38.000Z",
+  "updated_at": "2026-09-04T15:19:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48399334,
+  "storage_human": "48 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "News - Reddit",
+      "url": "https://www.reddit.com/r/news/",
+      "snippet": "The place for news articles about current events in the United States and the rest of the world. Discuss it all here."
+    },
+    {
+      "title": "Qwen2-1.5B-Instruct_SFT_lora_universal - Hugging Face",
+      "url": "https://huggingface.co/xw17/Qwen2-1.5B-Instruct_SFT_lora_universal",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "Qwen/Qwen2-1.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2-1.5B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "【X】藤井セイラって何者なんですか？？暇なのか？X（旧Twitter）に …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13323303748",
+      "snippet": "Dec 16, 2025 · 【X】藤井セイラって何者なんですか？？暇なのか？X（旧Twitter）にて毎日、世間の常識に逆張りした投稿ばかり …"
+    }
+  ]
+}

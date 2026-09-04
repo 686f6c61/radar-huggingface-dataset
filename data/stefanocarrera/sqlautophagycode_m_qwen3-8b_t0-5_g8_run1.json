@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g8_run1",
+  "slug": "stefanocarrera-sqlautophagycode_m_qwen3-8b_t0-5_g8_run1",
+  "author": "stefanocarrera",
+  "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g8_run1",
+  "created_at": "2026-09-04T11:19:53.000Z",
+  "updated_at": "2026-09-04T11:20:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078190,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Massy, Essonne (code postal 91... - Linternaute.com",
+      "url": "https://www.linternaute.com/ville/massy/ville-91377",
+      "snippet": "Massy est une ville située dans le département de l'Essonne en Île-de-France. Elle regroupe plus de 1 900 entreprises dont environ 1 …"
+    },
+    {
+      "title": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g4_run1 - Hugging Face",
+      "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g4_run1",
+      "snippet": "Instructions to use stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g4_run1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Mairie de Massy et sa ville (91300) (Essonne).",
+      "url": "https://www.annuaire-mairie.fr/ville-massy-91.html",
+      "snippet": "Aug 27, 2026 · Massy est une ville du département de l'Essonne dans la région d'Île-de-France comptant 51 729 habitants appelés …"
+    },
+    {
+      "title": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g9_run0 - Hugging Face",
+      "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g9_run0",
+      "snippet": "Instructions to use stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g9_run0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Carte MICHELIN Massy - ViaMichelin",
+      "url": "https://www.viamichelin.fr/cartes-plans/france/ile_de_france/essonne/massy-91300",
+      "snippet": "La carte MICHELIN Massy: plans de ville, carte routière et carte touristique Massy, avec les hôtels, les sites touristiques et les …"
+    }
+  ]
+}

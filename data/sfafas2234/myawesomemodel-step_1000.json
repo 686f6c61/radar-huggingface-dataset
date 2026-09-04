@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sfafas2234/MyAwesomeModel-step_1000",
+  "slug": "sfafas2234-myawesomemodel-step_1000",
+  "author": "sfafas2234",
+  "url": "https://huggingface.co/sfafas2234/MyAwesomeModel-step_1000",
+  "created_at": "2026-09-04T15:58:44.000Z",
+  "updated_at": "2026-09-04T17:00:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 12britz/awesome-free-models: A curated list of free AI models, APIs, and tools you can use without paying a cent. · GitHub",
+      "url": "https://github.com/12britz/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. - 12britz/awesome-free-models"
+    },
+    {
+      "title": "Re: Netflix login | Sky Community",
+      "url": "https://helpforum.sky.com/t5/Sky-Q/Netflix-login/m-p/5169552",
+      "snippet": "Dec 17, 2025 · I have Netflix through sky but would like to watch Netflix on my tablet- can you advise where i can find the login details …"
+    },
+    {
+      "title": "sfafas2234/MyAwesomeModel-TestRepository · Hugging Face",
+      "url": "https://huggingface.co/sfafas2234/MyAwesomeModel-TestRepository",
+      "snippet": "Instructions to use sfafas2234/MyAwesomeModel-TestRepository with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use sfafas2234/MyAwesomeModel-TestRepository with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"feature-extraction\", model=\"sfafas2234 ..."
+    },
+    {
+      "title": "stepfun-ai · GitHub",
+      "url": "https://github.com/stepfun-ai",
+      "snippet": "A high-efficiency Flash model for real-world agents. ... A lightweight, AI-native training framework for large language models."
+    },
+    {
+      "title": "Free AI Models Directory: Genuinely Free LLMs & APIs | AY Automate",
+      "url": "https://www.ayautomate.com/free-models",
+      "snippet": "Sources. Seeded and cross-checked against mnfst/awesome-free-llm-apis · zebbern/no-cost-ai · 12britz/awesome-free-models · vava-nessa/free-coding-models · open-free-llm-api · cheahjs/free-llm-api-resources."
+    }
+  ]
+}

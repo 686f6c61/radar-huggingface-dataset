@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "adibh01/netrasense-dr-model",
+  "slug": "adibh01-netrasense-dr-model",
+  "author": "adibh01",
+  "url": "https://huggingface.co/adibh01/netrasense-dr-model",
+  "created_at": "2026-09-04T11:51:24.000Z",
+  "updated_at": "2026-09-04T12:08:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 111442060,
+  "storage_human": "111 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Confidentialité – Street View – Google Maps",
+      "url": "https://maps.google.fr/help/maps/streetview/privacy.html",
+      "snippet": "Google Maps avec Street View vous permet d'explorer les sites du monde entier en profitant d'images à 360 degrés des rues. Ainsi, …"
+    },
+    {
+      "title": "Diabetic Retinopathy Detection with Deep Learning: A ResNet-CNN Model ...",
+      "url": "https://www.scirp.org/pdf/ojapps2025153_102312852.pdf",
+      "snippet": "Open Access ing Python and TensorFlow for model development. Additionally, architec-tures like ResNet, and attention-based models are explored to enhance lesion focus, with ensemble methods employed to boost predictive accuracy. Results demonstrate improved model interpretability and robust DR detection, high-lighting deep learning’s potential for clinical use and suggesting future direc ..."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, local business information, and street views."
+    },
+    {
+      "title": "NetSense — Research & Methodology",
+      "url": "https://netsense.ai/research",
+      "snippet": "AI Methodology & Model Architecture NetSense's intelligence layer is built on peer-reviewed research in network anomaly detection, causal inference on temporal graphs, and safe reinforcement learning for autonomous systems."
+    }
+  ]
+}

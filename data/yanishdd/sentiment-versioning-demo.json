@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Yanishdd/sentiment-versioning-demo",
+  "slug": "yanishdd-sentiment-versioning-demo",
+  "author": "Yanishdd",
+  "url": "https://huggingface.co/Yanishdd/sentiment-versioning-demo",
+  "created_at": "2026-09-04T11:19:04.000Z",
+  "updated_at": "2026-09-04T11:21:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 803513283,
+  "storage_human": "804 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "venteprivée arnaque - Vente-privee.com - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/venteprivee-arnaque-t137656.html",
+      "snippet": "Feb 4, 2018 · Je viens de recevoir ma commande Kaporal passée sur Vente-privée fin février et je recontre plusieurs problèmes : - …"
+    },
+    {
+      "title": "GitHub - Andy197m7/AI-Stock-Prediction-Agent: AI stock prediction ...",
+      "url": "https://github.com/Andy197m7/AI-Stock-Prediction-Agent",
+      "snippet": "AI stock prediction system that combines market data, financial news, and Reddit sentiment to generate automated buy, hold, and sell signals. Built with LSTM and XGBoost models, with scheduled data pipelines, automated retraining, model versioning, and a React dashboard for monitoring predictions and system performance."
+    },
+    {
+      "title": "beauté privée - Vente en ligne - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/beaute-privee-t8291.html",
+      "snippet": "Nov 28, 2002 · Venez contribuer au forum de la 1re association de consommateurs de France !"
+    },
+    {
+      "title": "Sentiment Demo - a Hugging Face Space by Zainab297",
+      "url": "https://huggingface.co/spaces/Zainab297/sentiment-demo",
+      "snippet": "Enter a sentence in the text box and click the Analyze button to find out if the text is positive, negative, or neutral. The analysis runs entirely in your browser, keeping your data private and re..."
+    },
+    {
+      "title": "Achat meuble Woodenart sur venteprivée.com - Vente-privee.com",
+      "url": "https://forum.quechoisir.org/achat-meuble-woodenart-sur-venteprivee-com-t80813.html",
+      "snippet": "Oct 24, 2016 · Bonjour, J'ai fait un achat de 4 meubles sur vente privée de la marque Woodenart. Les 4 meubles que j'ai acheté …"
+    }
+  ]
+}

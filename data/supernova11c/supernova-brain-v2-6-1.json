@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Supernova11c/Supernova-Brain-V2-6-1",
+  "slug": "supernova11c-supernova-brain-v2-6-1",
+  "author": "Supernova11c",
+  "url": "https://huggingface.co/Supernova11c/Supernova-Brain-V2-6-1",
+  "created_at": "2026-09-04T15:37:47.000Z",
+  "updated_at": "2026-09-04T15:39:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn Schweiz: Einloggen oder anmelden",
+      "url": "https://ch.linkedin.com/",
+      "snippet": "1 Mrd. Mitglieder | Die Plattform für Ihre berufliche Identität. Bauen Sie Ihr berufliches Netzwerk auf und bleiben Sie informiert. Finden …"
+    },
+    {
+      "title": "Supernova11c (Supernova) - Hugging Face",
+      "url": "https://huggingface.co/Supernova11c/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 5 hours ago ... updated a model about 6 hours ago"
+    },
+    {
+      "title": "LinkedIn: inicio de sesión o registro",
+      "url": "https://es.linkedin.com/",
+      "snippet": "1 mil millones de miembros | Gestiona tu identidad profesional. Amplía e interactúa con tu red profesional. Accede a conocimientos, …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=supernova_embedding",
+      "snippet": "Supernova11c/Supernova-teraillm-Embedding-V2 Feature Extraction • 6.98M•Updated 4 days ago• 36"
+    },
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    }
+  ]
+}

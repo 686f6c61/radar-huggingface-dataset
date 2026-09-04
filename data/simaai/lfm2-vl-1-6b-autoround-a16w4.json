@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "simaai/LFM2-VL-1.6B-Autoround-a16w4",
+  "slug": "simaai-lfm2-vl-1-6b-autoround-a16w4",
+  "author": "simaai",
+  "url": "https://huggingface.co/simaai/LFM2-VL-1.6B-Autoround-a16w4",
+  "created_at": "2026-01-10T13:42:13.000Z",
+  "updated_at": "2026-09-04T11:57:28.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llima",
+  "languages": [],
+  "tags": [
+    "llima",
+    "vision",
+    "image-text-to-text",
+    "generative_ai",
+    "embedded",
+    "sima",
+    "liquidai",
+    "lfm2",
+    "base_model:LiquidAI/LFM2-VL-1.6B",
+    "base_model:finetune:LiquidAI/LFM2-VL-1.6B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23039576448,
+  "storage_human": "23.0 GB",
+  "base_model": "LiquidAI/LFM2-VL-1.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎专栏圆桌发现移动应用联系我们来知乎工作注册机构号Investor Relations"
+    },
+    {
+      "title": "simaai/LFM2-VL-1.6B-Autoround-Safetensors · Hugging Face",
+      "url": "https://huggingface.co/simaai/LFM2-VL-1.6B-Autoround-Safetensors",
+      "snippet": "This is a post-training quantized version of LiquidAI/LFM2-VL-1.6B, prepared as a Hugging Face checkpoint for LLiMa compilation and Sima.ai deployment. The source model's license and use restrictions continue to apply."
+    },
+    {
+      "title": "《GTA5》的增强版和传承版有什么区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/1911738278475961590",
+      "snippet": "从2025年3月开始，PC版的《GTA5》成了两个版本，一个传承版，一个增强版。 从硬件方面来说，这是一个历史原因。 《GTA5》 …"
+    },
+    {
+      "title": "simaai/LFM2-VL-1.6B-a16w4 · Hugging Face",
+      "url": "https://huggingface.co/simaai/LFM2-VL-1.6B-a16w4",
+      "snippet": "This repository contains the LFM2-VL-1.6B model, optimized and compiled for the SiMa.ai Modalix platform. Model Architecture: LFM2-VL (1.6B parameters) Quantization: Hybrid Prompt Processing: A16W8 (16-bit activations, 8-bit weights) Token Generation: A16W4 (16-bit activations, 4-bit weights) Maximum context length: 2048 Input Resolution ..."
+    },
+    {
+      "title": "spotify安卓下载 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/066074d6d320b282c21cb0a0.html",
+      "snippet": "Apr 23, 2025 · spotify安卓下载,Sotify是一个正版流媒体音乐服务平台，2008年10月在瑞典首都斯德哥尔摩正式上线。Sotify提供免费和 …"
+    }
+  ]
+}

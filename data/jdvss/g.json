@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Jdvss/G",
+  "slug": "jdvss-g",
+  "author": "Jdvss",
+  "url": "https://huggingface.co/Jdvss/G",
+  "created_at": "2026-09-04T11:09:18.000Z",
+  "updated_at": "2026-09-04T11:09:18.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:afl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games on CrazyGames | Play Now!",
+      "url": "https://www.crazygames.com/",
+      "snippet": "Play free online games at CrazyGames, the best place to play high-quality browser games. We add new games every day. Have fun!"
+    },
+    {
+      "title": "About Jansen de Vries Syndrome - JDVS",
+      "url": "https://jansen-devries.org/about-jdvs/",
+      "snippet": "First identified in 2017, geneticists discovered pathogenic variants in the PPM1D gene, now known as Jansen de Vries Syndrome (JdVS)."
+    },
+    {
+      "title": "New games - CrazyGames",
+      "url": "https://www.crazygames.com/new",
+      "snippet": "Play free online games at CrazyGames, the best place to play high-quality browser games. We add new games every day. Have fun!"
+    },
+    {
+      "title": "All LLM Models | LLMIndex - Comprehensive AI Model Database | LLMIndex",
+      "url": "https://llmindex.net/models",
+      "snippet": "Browse and compare 600+ large language models. The most comprehensive AI model database."
+    },
+    {
+      "title": "Crazy Games - Play Online for Free! - Poki",
+      "url": "https://poki.com/en/crazy-games?msockid=35b39f417599608901c1888b744e6196",
+      "snippet": "Experience the most absurd online games with crazy games on Poki! Engage in bizarre challenges, wacky scenarios, and …"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "Shiftedx/Qwopus3.8-27B-Flash-NVFP4-MTP",
+  "slug": "shiftedx-qwopus3-8-27b-flash-nvfp4-mtp",
+  "author": "Shiftedx",
+  "url": "https://huggingface.co/Shiftedx/Qwopus3.8-27B-Flash-NVFP4-MTP",
+  "created_at": "2026-09-04T18:13:03.000Z",
+  "updated_at": "2026-09-04T18:22:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "ru",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3_8",
+    "text-generation",
+    "sglang",
+    "modelopt",
+    "nvfp4",
+    "mtp",
+    "speculative-decoding",
+    "rtx-5090",
+    "conversational",
+    "en",
+    "zh",
+    "es",
+    "ru",
+    "ja",
+    "base_model:Jackrong/Qwopus3.8-27B-Flash",
+    "base_model:quantized:Jackrong/Qwopus3.8-27B-Flash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14732516864,
+  "parameters_human": "14.73B",
+  "storage_bytes": 19691640903,
+  "storage_human": "19.7 GB",
+  "base_model": "Jackrong/Qwopus3.8-27B-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dolly Parton’s Cause of Death: How Did ‘Jolene’ Singer Die? – …",
+      "url": "https://hollywoodlife.com/feature/dolly-parton-cause-of-death-updates-5557526/",
+      "snippet": "Aug 25, 2026 · Dolly Parton died at the age of 80, her family announced on August 25, 2026. Updates on her cause of death and final …"
+    },
+    {
+      "title": "Qwen3.8-27B MLX and MTPLX - a Shiftedx Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Shiftedx/qwen38-27b-mlx-and-mtplx",
+      "snippet": "Text-only Qwen3.8-27B MLX conversions: MXFP4, MXFP8, and experimental MXFP4 with native MTP for MTPLX. Vision is excluded."
+    },
+    {
+      "title": "Dolly Parton's Cause of Death: What We Know So Far - Parade",
+      "url": "https://parade.com/news/dolly-parton-cause-of-death-what-we-know-so-far",
+      "snippet": "Aug 26, 2026 · “Dolly has lived in the light and is in the arms of Jesus, surely met by Carl, her parents and countless others who have …"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dolly Parton Cause of Death: How Did She Die? Cancer, Health Issues …",
+      "url": "https://poptvculture.com/dolly-parton-cause-of-death-how-did-she-die-cancer-health-issues-and-final-days/",
+      "snippet": "Aug 25, 2026 · Dolly Parton’s cause of death was cancer. According to a statement from her public relations team reported by ABC …"
+    }
+  ]
+}

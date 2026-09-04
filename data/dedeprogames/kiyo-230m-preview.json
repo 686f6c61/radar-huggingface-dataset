@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "DedeProGames/Kiyo-230M-Preview",
+  "slug": "dedeprogames-kiyo-230m-preview",
+  "author": "DedeProGames",
+  "url": "https://huggingface.co/DedeProGames/Kiyo-230M-Preview",
+  "created_at": "2026-09-04T15:50:45.000Z",
+  "updated_at": "2026-09-04T16:03:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "causal-lm",
+    "language-model",
+    "base-model",
+    "preview",
+    "smollm",
+    "kiyo",
+    "pytorch",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:HuggingFaceCode/stack-v3-train",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 229688064,
+  "parameters_human": "229.7M",
+  "storage_bytes": 459408768,
+  "storage_human": "459 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "REI Columbia Store - Columbia, MD - Sporting Goods, Camping Gear",
+      "url": "https://www.rei.com/stores/columbia?msockid=15f0f88c701363ea2002ef4671c062dc",
+      "snippet": "Located in the Long Reach Village, REI Columbia provides outdoor enthusiasts in the Columbia, Maryland, area with top-brand gear …"
+    },
+    {
+      "title": "DedeProGames (DedeProGames) - Hugging Face",
+      "url": "https://huggingface.co/DedeProGames",
+      "snippet": "DynamicMind-Mini-Instruct just released! A ~8.9m parameters model instruction-tuned based on DynamicMind-Mini See translation View all Posts"
+    },
+    {
+      "title": "REI in Columbia, MD 21045 - (410) 8... - Chamber of Commerce",
+      "url": "https://www.chamberofcommerce.com/business-directory/maryland/columbia/camping-store/23964948-rei",
+      "snippet": "REI located at 6100 Dobbin Rd, Columbia, MD 21045 - reviews, ratings, hours, phone number, directions, and more."
+    },
+    {
+      "title": "DedeProGames (DedeProGames) - Hugging Face",
+      "url": "https://huggingface.co/DedeProGames/datasets",
+      "snippet": "AI & ML interests ... Recent Activity new activity about 8 hours ago ... updated a model about 10 hours ago"
+    },
+    {
+      "title": "REI locations and opening hours near Columbia",
+      "url": "https://www.storeshours.com/rei/maryland/columbia",
+      "snippet": "REI store hours and locations near Columbia, Maryland. Find address, phone number and driving directions."
+    }
+  ]
+}

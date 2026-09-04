@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "camilasoares/vit-retrieval-proto56-2023",
+  "slug": "camilasoares-vit-retrieval-proto56-2023",
+  "author": "camilasoares",
+  "url": "https://huggingface.co/camilasoares/vit-retrieval-proto56-2023",
+  "created_at": "2026-09-04T15:28:49.000Z",
+  "updated_at": "2026-09-04T15:28:56.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cos'è l'agricoltura urbana? Una soluzione essenziale per città ...",
+      "url": "https://sigmaearth.com/it/cos%27%C3%A8-l%27agricoltura-urbana-una-soluzione-essenziale-per-le-citt%C3%A0-sostenibili/",
+      "snippet": "Sep 22, 2024 · Mentre il cambiamento climatico continua a sconvolgere i sistemi alimentari globali, l'agricoltura urbana offre una …"
+    },
+    {
+      "title": "camilasoares/vit-retriever · Hugging Face",
+      "url": "https://huggingface.co/camilasoares/vit-retriever",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Agricoltura urbana in crescita, tra sostenibilità e tecnologia",
+      "url": "https://rivistaorticoltura.edagricole.it/orticoltura/agricoltura-urbana-in-crescita-tra-sostenibilita-e-tecnologia/",
+      "snippet": "Feb 3, 2025 · L'agricoltura urbana può contribuire alla costruzione di sistemi alimentari più resilienti e sostenibili, in grado di …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "FARMUP – Agricoltura Urbana per una Produzione Sostenibile",
+      "url": "https://farmup.unimi.it/progetto/",
+      "snippet": "FarmUp, sviluppato dall’Università degli studi di Milano e dal Politecnico di Milano, ha l’obbiettivo di promuovere l’adozione di …"
+    }
+  ]
+}

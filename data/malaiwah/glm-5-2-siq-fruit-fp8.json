@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "malaiwah/GLM-5.2-SIQ-Fruit-fp8",
+  "slug": "malaiwah-glm-5-2-siq-fruit-fp8",
+  "author": "malaiwah",
+  "url": "https://huggingface.co/malaiwah/GLM-5.2-SIQ-Fruit-fp8",
+  "created_at": "2026-09-04T11:16:28.000Z",
+  "updated_at": "2026-09-04T11:17:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "fidelity",
+    "fp8",
+    "fixture",
+    "base_model:malaiwah/GLM-5.2-SIQ-Fruit-bf16",
+    "base_model:quantized:malaiwah/GLM-5.2-SIQ-Fruit-bf16",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5040368896,
+  "parameters_human": "5.04B",
+  "storage_bytes": 5386531642,
+  "storage_human": "5.4 GB",
+  "base_model": "malaiwah/GLM-5.2-SIQ-Fruit-bf16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Android Studio & App Tools - Android Developers",
+      "url": "https://developer.android.com/studio",
+      "snippet": "Jul 24, 2026 · Android Studio provides app builders with an integrated development environment (IDE) optimized for Android apps. …"
+    },
+    {
+      "title": "README.md · malaiwah/GLM-5.2-SIQ-Fruit at main - Hugging Face",
+      "url": "https://huggingface.co/malaiwah/GLM-5.2-SIQ-Fruit/blob/main/README.md",
+      "snippet": "Instructions to use malaiwah/GLM-5.2-SIQ-Fruit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Trellis How to use malaiwah/GLM-5.2-SIQ-Fruit with Trellis:"
+    },
+    {
+      "title": "Install Android Studio",
+      "url": "https://developer.android.com/studio/install",
+      "snippet": "1 day ago · For the system requirements to support Android Studio and the Android Emulator, see Android development in the …"
+    },
+    {
+      "title": "malaiwah/GLM-5.2-SIQ-Fruit at main - Hugging Face",
+      "url": "https://huggingface.co/malaiwah/GLM-5.2-SIQ-Fruit/tree/main",
+      "snippet": "Instructions to use malaiwah/GLM-5.2-SIQ-Fruit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Trellis How to use malaiwah/GLM-5.2-SIQ-Fruit with Trellis:"
+    },
+    {
+      "title": "Android Studio - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Android_Studio",
+      "snippet": "By leveraging the plugin ecosystem, developers can customize Android Studio to align with their workflows, integrate preferred tools, …"
+    }
+  ]
+}

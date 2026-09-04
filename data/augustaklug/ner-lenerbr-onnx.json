@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "augustaklug/ner-lenerbr-onnx",
+  "slug": "augustaklug-ner-lenerbr-onnx",
+  "author": "augustaklug",
+  "url": "https://huggingface.co/augustaklug/ner-lenerbr-onnx",
+  "created_at": "2026-09-04T11:28:56.000Z",
+  "updated_at": "2026-09-04T12:41:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers.js",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "token-classification",
+    "ner",
+    "legal",
+    "portuguese",
+    "pt-br",
+    "quantized",
+    "fp16",
+    "pt",
+    "dataset:lener_br",
+    "base_model:pierreguillou/ner-bert-base-cased-pt-lenerbr",
+    "base_model:quantized:pierreguillou/ner-bert-base-cased-pt-lenerbr",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 976362114,
+  "storage_human": "976 MB",
+  "base_model": "pierreguillou/ner-bert-base-cased-pt-lenerbr",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kindesunterhalt-Rechner - Unterhalt Kind berechnen",
+      "url": "https://www.smart-rechner.de/kindesunterhalt/rechner.php",
+      "snippet": "Dec 15, 2025 · Unser Kindesunterhaltsrechner (aktualisiert für 2026) ermittelt für Sie präzise und einfach den Unterhaltsbedarf für …"
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Aktueller Kindesunterhalt-Rechner •§• SCHEIDUNG 2026",
+      "url": "https://www.scheidung.org/kindesunterhalt-berechnen/",
+      "snippet": "May 13, 2026 · Der Kindesunterhalt-Rechner enthält bereits den Kindergeldabzug und zeigt den tatsächlich zu zahlenden …"
+    },
+    {
+      "title": "RNCC83/lenerbr-ner-onnx · Hugging Face",
+      "url": "https://huggingface.co/RNCC83/lenerbr-ner-onnx",
+      "snippet": "RNCC83 / lenerbr-ner-onnx like 0 Token Classification Transformers.js ONNX Portuguese bert ner portuguese legal lener-br License:other Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "Kindesunterhalt-Rechner – Düsseldorfer Tabelle berechnen",
+      "url": "https://deutsche-rechner.de/familie-kinder/kindesunterhalt-rechner",
+      "snippet": "Die Düsseldorfer Tabelle ist in Deutschland die maßgebliche Leitlinie für den Kindesunterhalt. Sie wird vom Oberlandesgericht …"
+    }
+  ]
+}

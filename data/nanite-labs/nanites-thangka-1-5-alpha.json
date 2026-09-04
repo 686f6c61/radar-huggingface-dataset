@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Nanite-Labs/nanites-thangka-1.5-alpha",
+  "slug": "nanite-labs-nanites-thangka-1-5-alpha",
+  "author": "Nanite-Labs",
+  "url": "https://huggingface.co/Nanite-Labs/nanites-thangka-1.5-alpha",
+  "created_at": "2026-09-04T13:43:20.000Z",
+  "updated_at": "2026-09-04T13:43:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ninite - Install or Update Multiple Apps at Once",
+      "url": "https://ninite.com/",
+      "snippet": "Feb 14, 2019 · The easiest, fastest way to update or install software. Ninite downloads and installs programs automatically in the …"
+    },
+    {
+      "title": "Nanite - GitHub",
+      "url": "https://github.com/Project-Nanite/",
+      "snippet": "Nanite is a specialized Debian-based Linux distribution designed for AI engineers and Vibe Coders. It integrates various AI models, agents, and applications directly into the operating system, providing users with immediate access to AI assistance through Large Language Models (LLMs). This document outlines the architecture and software stack for Nanite, detailing how the various components ..."
+    },
+    {
+      "title": "Nanorobot — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nanorobot",
+      "snippet": "Nanorobot Une image de deux \"Fullerene Nano-gears\" avec plusieurs dents Un nanorobot ou nanite est un robot dont les …"
+    },
+    {
+      "title": "GitHub - Project-Nanite/.github",
+      "url": "https://github.com/Project-Nanite/.github",
+      "snippet": "Project-Nanite Nanite is a specialized Debian-based Linux distribution designed for AI engineers and Vibe Coders. It integrates various AI models, agents, and applications directly into the operating system, providing users with immediate access to AI assistance through Large Language Models (LLMs). This document outlines the architecture and software stack for Nanite, detailing how the ..."
+    },
+    {
+      "title": "Nanite Virtualized Geometry in Unreal Engine | Unreal Engine 5.8 ...",
+      "url": "https://dev.epicgames.com/documentation/unreal-engine/nanite-virtualized-geometry-in-unreal-engine?lang=en-US",
+      "snippet": "Learn about Nanite's virtualized geometry system and how it achieves pixel scale detail and high object counts in Unreal Engine."
+    }
+  ]
+}

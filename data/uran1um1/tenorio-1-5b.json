@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "uran1um1/tenorio-1.5b",
+  "slug": "uran1um1-tenorio-1-5b",
+  "author": "uran1um1",
+  "url": "https://huggingface.co/uran1um1/tenorio-1.5b",
+  "created_at": "2026-09-04T16:17:43.000Z",
+  "updated_at": "2026-09-04T16:25:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "es",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889310,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stephanie Graf | AustriaWiki im Austria-Forum",
+      "url": "https://austria-forum.org/af/AustriaWiki/Stephanie_Graf",
+      "snippet": "Feb 15, 2005 · Stephanie „Steffi“ Graf-Zitny (* 26. April 1973 in Klagenfurt) ist eine österreichische ehemalige Leichtathletin, die ihren …"
+    },
+    {
+      "title": "uran1um1 (Can Ulas Unal) - Hugging Face",
+      "url": "https://huggingface.co/uran1um1",
+      "snippet": "AI model distillation, Fine tuning Recent Activity updated a modelabout 17 hours ago uran1um1/tenorio-0.6b-GGUF published a modelabout 17 hours ago uran1um1/tenorio-0.6b-GGUF updated a modelabout 18 hours ago uran1um1/tenorio-0.6b View all activity"
+    },
+    {
+      "title": "Christian Baha | AustriaWiki im Austria-Forum",
+      "url": "https://austria-forum.org/af/AustriaWiki/Christian_Baha",
+      "snippet": "↑ Steffi Graf und ihr Millionär. oe24.at. ↑ Steffi Graf ist frisch verliebt. (Memento vom 5. November 2013 im Internet Archive) …"
+    },
+    {
+      "title": "uran1um1 (Can Ulas Unal) - Hugging Face",
+      "url": "https://huggingface.co/uran1um1/datasets",
+      "snippet": "AI model distillation, Fine tuning updated a dataset about 4 hours ago"
+    },
+    {
+      "title": "Seilern (Adelsgeschlecht) | AustriaWiki im Austria-Forum",
+      "url": "https://austria-forum.org/af/AustriaWiki/Seilern_%28Adelsgeschlecht%29",
+      "snippet": "Jul 16, 2011 · Im Jahre 1923 kaufte Carl Hugo Graf von Seilern und Aspang (1899–1988), mütterlicherseits ein Enkel des …"
+    }
+  ]
+}

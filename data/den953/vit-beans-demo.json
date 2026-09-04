@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Den953/vit-beans-demo",
+  "slug": "den953-vit-beans-demo",
+  "author": "Den953",
+  "url": "https://huggingface.co/Den953/vit-beans-demo",
+  "created_at": "2026-09-04T15:34:48.000Z",
+  "updated_at": "2026-09-04T15:36:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "vision",
+    "beans",
+    "generated_from_trainer",
+    "dataset:AI-Lab-Makerere/beans",
+    "base_model:google/vit-base-patch16-224-in21k",
+    "base_model:quantized:google/vit-base-patch16-224-in21k",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85800963,
+  "parameters_human": "85.8M",
+  "storage_bytes": 773624118,
+  "storage_human": "774 MB",
+  "base_model": "google/vit-base-patch16-224-in21k",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "beans",
+      "metric": "Accuracy",
+      "value": 0.9609375
+    }
+  ],
+  "sources": [
+    {
+      "title": "Michigan State Spartans Scores, Stats and Highlights - ESPN",
+      "url": "https://www.espn.com/mens-college-basketball/team/_/id/127/michigan-state-spartans",
+      "snippet": "Visit ESPN for Michigan State Spartans live scores, video highlights, and latest news. Find standings and the full 2026-27 season …"
+    },
+    {
+      "title": "ezzats/vit-beans-demo · Hugging Face",
+      "url": "https://huggingface.co/ezzats/vit-beans-demo",
+      "snippet": "Inference ProvidersNEW Image Classification This model isn't deployed by any Inference Provider.🙋Ask for provider support Dataset used to train ezzats/vit-beans-demo AI-Lab-Makerere/beans Viewer •Updated Jan 3, 2024•1.3k•6.87k•47 System theme"
+    },
+    {
+      "title": "Men's Basketball - Michigan State University Athletics",
+      "url": "https://msuspartans.com/sports/mens-basketball",
+      "snippet": "Mar 23, 2026 · Michigan State University Athletics Top Stories Spartans Set for Home-and-Home Series with Tennessee MBB"
+    },
+    {
+      "title": "Developer9215/vit-base-beans-demo-v5 · Hugging Face",
+      "url": "https://huggingface.co/Developer9215/vit-base-beans-demo-v5",
+      "snippet": "vit-base-beans-demo-v5 This model is a fine-tuned version of google/vit-base-patch16-224-in21k on the beans dataset. It achieves the following results on the evaluation set: Loss: 0.1687 Accuracy: 0.9609 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters ..."
+    },
+    {
+      "title": "@sport - Michigan State University Athletics",
+      "url": "https://msuspartans.com/sports/mensbasketball",
+      "snippet": "Spartans Begin Pat Fitzgerald Era Against Toledo Under Friday Night Lights FB | Sep 1, 2026"
+    }
+  ]
+}

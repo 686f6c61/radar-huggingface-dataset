@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "onnx-community/wav2vec-LnNor-IPA-ft-ONNX",
+  "slug": "onnx-community-wav2vec-lnnor-ipa-ft-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/wav2vec-LnNor-IPA-ft-ONNX",
+  "created_at": "2026-09-04T17:59:16.000Z",
+  "updated_at": "2026-09-04T17:59:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "phoneme_recognition",
+    "IPA",
+    "en",
+    "dataset:MultiBridge/LnNor",
+    "dataset:speech31/timit_english_ipa",
+    "arxiv:1910.09700",
+    "base_model:MultiBridge/wav2vec-LnNor-IPA-ft",
+    "base_model:quantized:MultiBridge/wav2vec-LnNor-IPA-ft",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 807546831,
+  "storage_human": "808 MB",
+  "base_model": "MultiBridge/wav2vec-LnNor-IPA-ft",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Phoneme Recognition",
+      "dataset": "TIMIT",
+      "metric": "CER",
+      "value": 0.0416
+    }
+  ],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "darjusul/wav2vec2-ONNX-collection · Hugging Face",
+      "url": "https://huggingface.co/darjusul/wav2vec2-ONNX-collection",
+      "snippet": "Overview This project provides pre-converted Wav2Vec2 models from PyTorch/Hugging Face format to ONNX format, making them suitable for deployment in various production environments. The conversion maintains model accuracy while providing significant inference speed improvements."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "README.md · darjusul/wav2vec2-ONNX-collection at main",
+      "url": "https://huggingface.co/darjusul/wav2vec2-ONNX-collection/blob/main/README.md",
+      "snippet": "Wav2Vec2 ONNX Models This repository contains ONNX-converted versions of popular Wav2Vec2 ASR models for multiple languages, optimized for inference in production environments."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

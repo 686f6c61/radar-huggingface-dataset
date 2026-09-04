@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "taewonkoo/stack_cube_stop_noise_10pct_40ep",
+  "slug": "taewonkoo-stack_cube_stop_noise_10pct_40ep",
+  "author": "taewonkoo",
+  "url": "https://huggingface.co/taewonkoo/stack_cube_stop_noise_10pct_40ep",
+  "created_at": "2026-09-04T11:01:41.000Z",
+  "updated_at": "2026-09-04T11:04:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:taewonkoo/stack_cube_stop_noise_10pct_40ep",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720088,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "خلفيات بروفايل انستا PNG الصور | ناقل و PSD الملفات | تحميل مجاني على ...",
+      "url": "https://ar.pngtree.com/so/%D8%AE%D9%84%D9%81%D9%8A%D8%A7%D8%AA-%D8%A8%D8%B1%D9%88%D9%81%D8%A7%D9%8A%D9%84-%D8%A7%D9%86%D8%B3%D8%AA%D8%A7",
+      "snippet": "هل تبحث عن خلفيات بروفايل انستا صور png أو ناقلات؟ اختر من بين 190+ موارد رسوم زهور وتنزيلها على شكل PNG أو EPS أو AI أو PSD."
+    },
+    {
+      "title": "taewonkoo/stack_cube_stop_noise_10pct_40ep - Hugging Face",
+      "url": "https://huggingface.co/datasets/taewonkoo/stack_cube_stop_noise_10pct_40ep",
+      "snippet": "Datasets: taewonkoo / stack_cube_stop_noise_10pct_40ep like 0 Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Libraries: Datasets Dask Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·13.6k rows default (13.6k rows) Split (1) train·13.6k rows train (13 ..."
+    },
+    {
+      "title": "‎خلفيات ذوق. ‎ (@ko_ex4) • Instagram photos and videos",
+      "url": "https://www.instagram.com/ko_ex4/",
+      "snippet": "13K Followers, 168 Following, 1,416 Posts - ‎خلفيات ذوق.🖤🍂 (@ko_ex4)‎ on Instagram: \"‎. اهلاً بكم في عالمي.:نحن لا نتعمد لفت الإنتباة نحن حقآ ملفتين ؛."
+    },
+    {
+      "title": "taewonkoo/stack_cube_stop_noise_50pct_40ep - Hugging Face",
+      "url": "https://huggingface.co/datasets/taewonkoo/stack_cube_stop_noise_50pct_40ep",
+      "snippet": "Datasets: taewonkoo / stack_cube_stop_noise_50pct_40ep like 0 Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Libraries: Datasets Dask Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·15.8k rows default (15.8k rows) Split (1) train·15.8k rows train (15 ..."
+    },
+    {
+      "title": "59 idées de صور بروفايل انستا | photos ... - Pinterest",
+      "url": "https://www.pinterest.com/hellalzhour/%D8%B5%D9%88%D8%B1-%D8%A8%D8%B1%D9%88%D9%81%D8%A7%D9%8A%D9%84-%D8%A7%D9%86%D8%B3%D8%AA%D8%A7/",
+      "snippet": "30 avr. 2025 - Découvrez le tableau &quot;صور بروفايل انستا 🤭 &quot; de Rosa💗🎀 روزي💗🎀 sur Pinterest. Voir plus d'idées sur le thème photos de …"
+    }
+  ]
+}

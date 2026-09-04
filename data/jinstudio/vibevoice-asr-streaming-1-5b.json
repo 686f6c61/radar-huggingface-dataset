@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "Jinstudio/VibeVoice-ASR-Streaming-1.5B",
+  "slug": "jinstudio-vibevoice-asr-streaming-1-5b",
+  "author": "Jinstudio",
+  "url": "https://huggingface.co/Jinstudio/VibeVoice-ASR-Streaming-1.5B",
+  "created_at": "2026-09-04T16:20:42.000Z",
+  "updated_at": "2026-09-04T16:20:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "pt",
+    "de",
+    "ja",
+    "ko",
+    "fr",
+    "ru",
+    "it"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vibevoice",
+    "ASR",
+    "Transcription",
+    "Speech-to-Text",
+    "Streaming",
+    "automatic-speech-recognition",
+    "en",
+    "zh",
+    "es",
+    "pt",
+    "de",
+    "ja",
+    "ko",
+    "fr",
+    "ru",
+    "it",
+    "arxiv:2609.02812",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2814116321,
+  "parameters_human": "2.81B",
+  "storage_bytes": 5640625810,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aspirateur Rowenta - Retrait 1h en Magasin* | Boulanger",
+      "url": "https://www.boulanger.com/c/aspirateur/brand~rowenta?msockid=3d53217b72426d9f12b736b1732f6cd0",
+      "snippet": "Pour gagner un maximum de temps, pensez à un aspirateur laveur qui aspire et nettoie vos sols en un seul passage, ou à un robot …"
+    },
+    {
+      "title": "microsoft/VibeVoice-ASR-Streaming-1.5B · Hugging Face",
+      "url": "https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-1.5B",
+      "snippet": "Instructions to use microsoft/VibeVoice-ASR-Streaming-1.5B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Aspirateur puissance 1800W - Achat en ligne - Darty",
+      "url": "https://www.darty.com/nav/q/entretien-aspirateur-puissance-1800w.html?msockid=3d53217b72426d9f12b736b1732f6cd0",
+      "snippet": "Aspirateur robot GENERIQUE Brightake Robot aspirateur intelligent avec télécommande et APP, puissance d'aspiration de 1800Pa …"
+    },
+    {
+      "title": "Jinstudio/VibeVoice-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Jinstudio/VibeVoice-1.5B",
+      "snippet": "A core innovation of VibeVoice is its use of continuous speech tokenizers (Acoustic and Semantic) operating at an ultra-low frame rate of 7.5 Hz. These tokenizers efficiently preserve audio fidelity while significantly boosting computational efficiency for processing long sequences. VibeVoice employs a next-token diffusion framework, leveraging a Large Language Model (LLM) to understand ..."
+    },
+    {
+      "title": "Accessoires et pièces détachées Compacteo RO176701 Rowenta",
+      "url": "https://www.rowenta.fr/boutique-accessoires/entretien-des-sols/aspirateur-avec-sac/compacteo/csp/2210016180",
+      "snippet": "Que dois-je faire pour assurer l'efficacité maximum de mon aspirateur ? Cette réponse vous a-t-elle été utile ?"
+    }
+  ]
+}

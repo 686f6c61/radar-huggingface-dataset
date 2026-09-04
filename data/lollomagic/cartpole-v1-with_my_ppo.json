@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "LolloMagic/CartPole-v1-with_my_ppo",
+  "slug": "lollomagic-cartpole-v1-with_my_ppo",
+  "author": "LolloMagic",
+  "url": "https://huggingface.co/LolloMagic/CartPole-v1-with_my_ppo",
+  "created_at": "2026-09-04T16:04:12.000Z",
+  "updated_at": "2026-09-04T16:19:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "CartPole-v1",
+    "ppo",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1255130,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kopitiam - Lowyat.NET",
+      "url": "https://forum.lowyat.net/Kopitiam",
+      "snippet": "While Kopitiam is a place to hang out and chat, annoying threads which make no sense at all will be deleted and offenders warned. …"
+    },
+    {
+      "title": "Implementing PPO for Cartpole-v1 - DEV Community",
+      "url": "https://dev.to/ankit_upadhyay_1c38ae52c0/implementing-ppo-for-cartpole-v1-1acd",
+      "snippet": "In my last post I had tried to implement a DQN model for a Chess bot, progressing further I tried to implement PPO for a comparatively simpler problem so that I can actually measure the performance. What is Proximal Policy Optimization? PPO (Proximal Policy Optimization) trains an agent to model the optimal actions for a given state by leveraging an advantage function. The advantage function ..."
+    },
+    {
+      "title": "Is Whatsapp web down? - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5538738",
+      "snippet": "Sep 8, 2025 · Cannot link my device now."
+    },
+    {
+      "title": "GitHub - blueflower120/PPO-Cartpole: My reinforcement learning practice ...",
+      "url": "https://github.com/blueflower120/PPO-Cartpole",
+      "snippet": "My reinforcement learning practice project: PPO for Cartpole-v1 environment. This project utilizes the proximal policy optimization (PPO) algorithm for training and testing in the CartPole-v1 environment, one of the classic introductory experiments in reinforcement learning. The goal is to make a cart keep a vertical pole upright by moving left and right."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/ms-word-for-mac-always-chooses-folder-last-saved/f9923901-d415-4a01-9b95-24b5fe0fa646",
+      "snippet": ""
+    }
+  ]
+}

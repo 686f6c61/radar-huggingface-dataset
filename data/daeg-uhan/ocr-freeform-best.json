@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "daeg-uhan/ocr-freeform-best",
+  "slug": "daeg-uhan-ocr-freeform-best",
+  "author": "daeg-uhan",
+  "url": "https://huggingface.co/daeg-uhan/ocr-freeform-best",
+  "created_at": "2026-09-04T15:39:23.000Z",
+  "updated_at": "2026-09-04T15:39:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "ocr-freeform",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reisetipps für die Reise nach Machu Picchu - Peru-Reisen",
+      "url": "https://peru-spezialisten.com/reisetipps-machu-picchu/",
+      "snippet": "In unseren Reisetipps erfahren Sie mehr zu Anreise, der besten Reisezeit nach Machu Picchu, dem Wetter in Machu Picchu, der …"
+    },
+    {
+      "title": "Best LLM for OCR (2026): GLM-OCR Wins at 94.62 - ofox.ai",
+      "url": "https://ofox.ai/blog/best-ai-model-for-ocr-2026/",
+      "snippet": "Which AI model has the best OCR accuracy in 2026? On the OmniDocBench benchmark, specialized models lead: GLM-OCR scores 94.62 and PaddleOCR-VL hits 94.50. Among frontier LLMs, Gemini 3.1 Pro leads at 90.33, ahead of GPT-5.4 at roughly 85.8. The best choice depends on your use case — frontier LLMs handle reasoning alongside extraction, while specialized models maximize raw accuracy."
+    },
+    {
+      "title": "Machu Picchu - 15 Tage Erlebnisreise | Peru | Chamäleon",
+      "url": "https://www.chamaeleon-reisen.de/Amerika/Peru/Machu-Picchu-ALL",
+      "snippet": "Die Rätsel von Machu Picchu sind längst nicht alle, die dir auf dieser Peru-Reise begegnen. Da sind auch die Dörfer, in denen …"
+    },
+    {
+      "title": "OCR and Document AI Leaderboard 2026: Top Models Ranked",
+      "url": "https://awesomeagents.ai/leaderboards/ocr-document-ai-leaderboard/",
+      "snippet": "Rankings of AI models on OCR and document understanding benchmarks - OCRBench, DocVQA, InfographicVQA, ChartQA, TextVQA, and MMMU-Pro. Covers GPT-4.1 Vision, Claude 4 Sonnet/Opus, Gemini 2.5 Pro, Qwen2.5-VL, InternVL3, Mistral OCR, and more."
+    },
+    {
+      "title": "Reisetipp Machu Picchu - MEIERS WELTREISEN",
+      "url": "https://www.meiers-weltreisen.de/reisetipps/sued-mittelamerika/machu-picchu",
+      "snippet": "Erleben Sie während dieser Kurzreise die Höhepunkte in Perus Süden: Die mystische Ruinenstadt Machu Picchu, farbenfrohe …"
+    }
+  ]
+}

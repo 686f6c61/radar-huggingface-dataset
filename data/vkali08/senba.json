@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "vkali08/senba",
+  "slug": "vkali08-senba",
+  "author": "vkali08",
+  "url": "https://huggingface.co/vkali08/senba",
+  "created_at": "2026-09-04T14:15:57.000Z",
+  "updated_at": "2026-09-04T14:16:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "protein-dynamics",
+    "molecular-dynamics",
+    "flow-matching",
+    "mars-fm",
+    "mdcath",
+    "biology",
+    "dataset:compsciencelab/mdCATH",
+    "arxiv:2509.24779",
+    "arxiv:2407.14794",
+    "base_model:valencelabs/mars-fm",
+    "base_model:finetune:valencelabs/mars-fm",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136711098,
+  "storage_human": "137 MB",
+  "base_model": "valencelabs/mars-fm",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "[Bing News Quiz (Apr 12, 2024)] Which women’s college basketball team won the national title and finished the season undefeated?"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Microsoft Rewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/",
+      "snippet": "We are not associated with Microsoft and are a community driven group to help maximize earning points."
+    },
+    {
+      "title": "Senba Ritsu AI Models | PixAI",
+      "url": "https://pixai.art/en/tags/model/senba_ritsu",
+      "snippet": "Discover Senba Ritsu AI models on PixAI - Find anime AI models and LoRAs tagged with Senba Ritsu"
+    },
+    {
+      "title": "Bing News Quiz (7-22-2022) : r/BingQuizAnswers - Reddit",
+      "url": "https://www.reddit.com/r/BingQuizAnswers/comments/w52krw/bing_news_quiz_7222022/",
+      "snippet": "Jul 22, 2022 · Bing Weekly News Quiz: Questions Answers (7-22-2022) 22 July 2022, 1: As heat records across Europe became …"
+    }
+  ]
+}

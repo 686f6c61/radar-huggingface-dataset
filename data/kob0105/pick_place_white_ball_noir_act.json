@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kob0105/pick_place_white_ball_noir_act",
+  "slug": "kob0105-pick_place_white_ball_noir_act",
+  "author": "kob0105",
+  "url": "https://huggingface.co/kob0105/pick_place_white_ball_noir_act",
+  "created_at": "2026-09-04T16:17:43.000Z",
+  "updated_at": "2026-09-04T16:18:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:kob0105/record-test_20260904_120022",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ALEXIS MOTOS votre concessionnaire YAMAHA à DARDILLY (69)",
+      "url": "https://www.alexismotos.com/",
+      "snippet": "ALEXIS MOTOS est votre concessionnaire moto exclusif Yamaha à DARDILLY dans Rhône (69) en région Rhône-Alpes. Nous vous …"
+    },
+    {
+      "title": "kob0105 (k) - Hugging Face",
+      "url": "https://huggingface.co/kob0105",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 28 days ago ... published a model 28 days ago"
+    },
+    {
+      "title": "ALEXIS MOTOS vous propose ses motos et scooters d’occasion …",
+      "url": "https://alexismotos.com/occasion-lyon",
+      "snippet": "Annonce de moto occasion et scooter d’occasion chez ALEXIS MOTOS à Lyon, reprise possible et garantie."
+    },
+    {
+      "title": "kob0105 (k) - Hugging Face",
+      "url": "https://huggingface.co/kob0105/models",
+      "snippet": "kob0105's models1 Sort: Recently updated kob0105/act_pusht Robotics • 51.7M•Updated about 17 hours ago"
+    },
+    {
+      "title": "Moto YAMAHA MT-03 occasion - alexismotos.com",
+      "url": "https://www.alexismotos.com/occasion-lyon/2323994-6-yamaha-mt-03",
+      "snippet": "VEHICULE VISIBLE CHEZ ALEXIS MOTOS LYON7 ALEXIS MOTOS LYON vous propose cette très belle MT03 NOIR avec 1 km, …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "num1notsvn/wicara-56m-chat-GGUF",
+  "slug": "num1notsvn-wicara-56m-chat-gguf",
+  "author": "num1notsvn",
+  "url": "https://huggingface.co/num1notsvn/wicara-56m-chat-GGUF",
+  "created_at": "2026-09-04T14:25:15.000Z",
+  "updated_at": "2026-09-04T14:26:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "wicara",
+    "llama",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "indonesian",
+    "ollama",
+    "lm-studio",
+    "base_model:num1notsvn/wicara-56m-chat",
+    "base_model:quantized:num1notsvn/wicara-56m-chat",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66450560,
+  "parameters_human": "66.5M",
+  "storage_bytes": 204695936,
+  "storage_human": "205 MB",
+  "base_model": "num1notsvn/wicara-56m-chat",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Plastifieuses Pas Cher | Machine à plastifier | Bureau Vallée",
+      "url": "https://www.bureau-vallee.fr/informatique/materiel-bureautique/plastifieuses.html",
+      "snippet": "La plastifieuse est un accessoire de bureau très pratique qui permet de protéger tous vos documents des salissures, des …"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Plastifieuse - Retrait 1h en Magasin* | Boulanger",
+      "url": "https://www.boulanger.com/c/destructeur-plastifieuse?msockid=2aee5a36384c6b84315b4dfc39436a59",
+      "snippet": "Vous voulez plastifier vos documents vous-même ? Équipez-vous d’une plastifieuse, accessoire de bureautique peu encombrant et …"
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "Les 4 meilleures plastifieuses 2026 | Test par Meilleurtest",
+      "url": "https://meilleurtest.fr/comparatif-plastifieuse/",
+      "snippet": "Aug 9, 2026 · La plastifieuse protégera vos documents importants en les recouvrant d’un film transparent résistant. À chaud ou à …"
+    }
+  ]
+}

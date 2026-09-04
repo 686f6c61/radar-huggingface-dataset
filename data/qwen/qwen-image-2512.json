@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Qwen/Qwen-Image-2512",
+  "slug": "qwen-qwen-image-2512",
+  "author": "Qwen",
+  "url": "https://huggingface.co/Qwen/Qwen-Image-2512",
+  "created_at": "2025-12-30T02:29:01.000Z",
+  "updated_at": "2025-12-31T09:47:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "en",
+    "zh",
+    "arxiv:2508.02324",
+    "license:apache-2.0",
+    "diffusers:QwenImagePipeline",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 939,
+  "downloads_30d": 79041,
+  "trending_score": 0,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 57699806247,
+  "storage_human": "57.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen Studio",
+      "url": "https://chat.qwen.ai/",
+      "snippet": "Qwen Studio is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen’s …"
+    },
+    {
+      "title": "README.md · Qwen/Qwen-Image-2512 at main - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2512/blob/main/README.md",
+      "snippet": "Model Performance We conducted over 10,000 rounds of blind model evaluations on AI Arena, and the results show that Qwen-Image-2512 is currently the strongest open-source model—while remaining highly competitive even among closed-source models."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It’s free to use, open to all, and ready to help with …"
+    },
+    {
+      "title": "Qwen-Image-2512 - Free AI Text-to-Image Generator | No Login ...",
+      "url": "https://qwen-image-2512.com/",
+      "snippet": "Qwen-Image-2512 is an advanced open-source text-to-image AI model that generates high-quality images from text descriptions. It uses diffusion technology to ..."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen-image-2512",
+      "snippet": "Enhanced Huamn Realism Qwen-Image-2512 significantly reduces the “AI-generated” look and substantially enhances overall image realism, especially for human subjects. Finer Natural Detail Qwen-Image-2512 delivers notably more detailed rendering of landscapes, animal fur, and other natural elements."
+    }
+  ]
+}

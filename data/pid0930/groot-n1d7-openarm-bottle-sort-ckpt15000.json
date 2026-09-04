@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "PID0930/groot-n1d7-openarm-bottle-sort-ckpt15000",
+  "slug": "pid0930-groot-n1d7-openarm-bottle-sort-ckpt15000",
+  "author": "PID0930",
+  "url": "https://huggingface.co/PID0930/groot-n1d7-openarm-bottle-sort-ckpt15000",
+  "created_at": "2026-09-04T11:36:01.000Z",
+  "updated_at": "2026-09-04T11:40:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "robotics",
+    "vla",
+    "gr00t",
+    "manipulation",
+    "bimanual",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 25540817621,
+  "storage_human": "25.5 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "OpenArm",
+      "url": "https://openarm.dev/",
+      "snippet": "A reproducible evaluation cell that standardizes background, lighting, cameras, and arm position for fair, automated AI model comparison. \"Model A outperforms Model B\" only holds meaning when evaluated under identical conditions — OpenArm Cell provides the reproducible infrastructure to make such claims verifiable."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Olivia Rodrigo reacts to her Watch History (you seem pretty sad for a girl so in love) YouTube 1.5M views • 2 months ago CC"
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "These are the main code, model, training, evaluation, and deployment changes that distinguish the current N1.7 main branch from the N1.6 / 1D6 code path. Use the n1d6 branch when you need the N1.6 model package and runtime behavior. Model package changed from gr00t_n1d6 to gr00t_n1d7, so codepaths and processor metadata move to the N1.7 namespace."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

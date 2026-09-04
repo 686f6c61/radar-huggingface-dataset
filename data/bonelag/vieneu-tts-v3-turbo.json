@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "bonelag/VieNeu-TTS-v3-Turbo",
+  "slug": "bonelag-vieneu-tts-v3-turbo",
+  "author": "bonelag",
+  "url": "https://huggingface.co/bonelag/VieNeu-TTS-v3-Turbo",
+  "created_at": "2026-09-04T15:29:49.000Z",
+  "updated_at": "2026-09-04T15:29:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "vieneu_v3_turbo",
+    "voice-cloning",
+    "code-switching",
+    "podcast",
+    "emotion-control",
+    "48khz",
+    "text-to-speech",
+    "vi",
+    "en",
+    "dataset:pnnbao-ump/VieNeu-TTS-10k-ENVI",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 130907520,
+  "parameters_human": "130.9M",
+  "storage_bytes": 1677058018,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Поиск музыки - поиск на сайте Hitmo",
+      "url": "https://ru.hitmoz.org/search",
+      "snippet": "Поиск по огромному миру музыки. Миллионы песен исполнителей со всего мира. Наш поиск уникален и позволяет отыскать …"
+    },
+    {
+      "title": "VieNeu-TTS - GitHub",
+      "url": "https://github.com/pnnbao97/VieNeu-TTS",
+      "snippet": "VieNeu-TTS v3 Turbo (early access): New from-scratch 48 kHz architecture — built-in default voices (speaker tokens), experimental emotion cues, batched generation & multi-speaker conversation."
+    },
+    {
+      "title": "Музыка по жанрам — слушать онлайн бесплатно, список …",
+      "url": "https://hitmo.net/genres",
+      "snippet": "Список всех жанров и направлений - слушать песни онлайн бесплатно. Все направления и стили музыки в хорошем качестве …"
+    },
+    {
+      "title": "VieNeu-TTS-v3-Turbo Tutorial: Fast Vietnamese Voice AI",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-vieneu-tts-v3-turbo-high-speed-vietnamese-voice-synthesis",
+      "snippet": "Step-by-step guide to using VieNeu-TTS-v3-Turbo for high-throughput Vietnamese TTS. Install, code examples, and latency optimization tips included."
+    },
+    {
+      "title": "Слушать и скачать музыку бесплатно: новинки Mp3 музыки - Hitmo",
+      "url": "https://eu.hitmoz.com/",
+      "snippet": "Последние новинки, музыкальные хиты 2026. Слушайте онлайн и скачивайте музыку, песни и треки в Mp3 на компьютер и …"
+    }
+  ]
+}

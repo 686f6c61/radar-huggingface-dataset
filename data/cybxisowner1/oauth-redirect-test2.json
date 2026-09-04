@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "cybxisowner1/oauth-redirect-test2",
+  "slug": "cybxisowner1-oauth-redirect-test2",
+  "author": "cybxisowner1",
+  "url": "https://huggingface.co/cybxisowner1/oauth-redirect-test2",
+  "created_at": "2026-09-04T11:28:01.000Z",
+  "updated_at": "2026-09-04T11:28:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Love Room- Adult Only, București (prețuri actualizate 2026) - Booking.com",
+      "url": "https://www.booking.com/hotel/ro/love-room.ro.html?msockid=3e4bd1aab96068e42203c660b8ff69ab",
+      "snippet": "Love Room- Adult Only se află în localitatea București din regiunea Ilfov și pune la dispoziție cazare cu WiFi gratuit și parcare privată …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Adult only fantasy room, Bucharest (updated prices 2026) - Booking.com",
+      "url": "https://www.booking.com/hotel/ro/fantasy-room-adult-only.html?msockid=3e4bd1aab96068e42203c660b8ff69ab",
+      "snippet": "Comfortable Living Space: The Adult only fantasy room in Bucharest offers a one-bedroom apartment with a balcony. Guests enjoy …"
+    },
+    {
+      "title": "An OpenAI test model escaped and broke into a real company’s ... - CNN",
+      "url": "https://www.cnn.com/2026/07/22/tech/openai-hugging-face-ai-cybersecurity",
+      "snippet": "OpenAI says some of its experimental AI models left a test environment with no human direction and hacked their way onto a different company’s real production systems while trying to “cheat ..."
+    },
+    {
+      "title": "20 de hoteluri adults only in Romania - Calatorul Multumit",
+      "url": "https://www.calatorulmultumit.ro/20-de-hoteluri-adults-only-in-romania/",
+      "snippet": "Aug 2, 2026 · Hoteluri adults only in Romania. Vino la hoteluri cu toate facilitatile si bucura-te de liniste, relaxare si refacere. Vei fi …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "taewonkoo/stack_cube_stop_noise_70pct_40ep",
+  "slug": "taewonkoo-stack_cube_stop_noise_70pct_40ep",
+  "author": "taewonkoo",
+  "url": "https://huggingface.co/taewonkoo/stack_cube_stop_noise_70pct_40ep",
+  "created_at": "2026-09-04T14:12:52.000Z",
+  "updated_at": "2026-09-04T14:14:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:taewonkoo/stack_cube_stop_noise_70pct_40ep",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720088,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Booking.com | Official site | The best hotels, flights, car rentals ...",
+      "url": "https://www.booking.com/?msockid=01f9e133389669b80cb2f6f939e76811",
+      "snippet": "Explore the world with Booking.com. Big savings on homes, hotels, flights, car rentals, taxis, and attractions – build your perfect trip …"
+    },
+    {
+      "title": "taewonkoo/stack_cube_stop_noise_30pct_40ep - Hugging Face",
+      "url": "https://huggingface.co/datasets/taewonkoo/stack_cube_stop_noise_30pct_40ep",
+      "snippet": "Datasets: taewonkoo / stack_cube_stop_noise_30pct_40ep like 0 Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Libraries: Datasets Dask Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·14.7k rows default (14.7k rows) Split (1) train·14.7k rows train (14 ..."
+    },
+    {
+      "title": "Booking.com | oficiální stránka | nejlepší hotely, letenky, pronájmy ...",
+      "url": "https://www.booking.com/index.cs.html?msockid=01f9e133389669b80cb2f6f939e76811",
+      "snippet": "Ať už hledáte hotely, apartmány, rekreační domy nebo jiné ubytování k pronájmu, vždy ho u nás naleznete se zárukou nejnižší ceny. …"
+    },
+    {
+      "title": "taewonkoo/stack_cube_stop_noise_50pct_40ep - Hugging Face",
+      "url": "https://huggingface.co/datasets/taewonkoo/stack_cube_stop_noise_50pct_40ep",
+      "snippet": "Datasets: taewonkoo / stack_cube_stop_noise_50pct_40ep like 0 Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Libraries: Datasets Dask Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·15.8k rows default (15.8k rows) Split (1) train·15.8k rows train (15 ..."
+    },
+    {
+      "title": "Booking.com",
+      "url": "https://packages.booking.com/vacationpackages/",
+      "snippet": "Save up to 625 dollars when you book your flight and hotel together! Booking.com Vacation Packages with exclusive deals on airline …"
+    }
+  ]
+}

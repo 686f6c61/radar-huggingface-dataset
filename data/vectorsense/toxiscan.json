@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "vectorsense/toxiscan",
+  "slug": "vectorsense-toxiscan",
+  "author": "vectorsense",
+  "url": "https://huggingface.co/vectorsense/toxiscan",
+  "created_at": "2026-09-04T14:21:52.000Z",
+  "updated_at": "2026-09-04T14:31:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnxruntime",
+  "languages": [
+    "en",
+    "hi",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ru",
+    "ar",
+    "ja",
+    "zh"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "toxicity",
+    "hate-speech",
+    "content-moderation",
+    "multilingual",
+    "en",
+    "hi",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ru",
+    "ar",
+    "ja",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1896125282,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "سكس عربي، سكس مترجم، أفلام إباحية عربية، فيديوهات نيك مترجمة للعربية",
+      "url": "https://sexalarab6.life/",
+      "snippet": "استمتع بأفضل أفلام سكس عربي مترجم للعربية بجودة عالية ومجانية. مكتبة متجددة من مشاهد نيك، محارم، أمهات، ومقاطع إباحية نادرة لا تجدها في أي مكان آخر."
+    },
+    {
+      "title": "VectorSense — Build AI-Ready Teams, Architect Future Workflows",
+      "url": "https://vectorsense.ai/",
+      "snippet": "AI-Led Workforce Transformation Build AI-Ready Teams, Architect Future Workflows Build AI Systems That Think, Act, and Accelerate Your Business VectorSense blends AI-powered learning, hands-on labs, and innovation programs to help enterprises build real capability, ship better products, and unlock new growth from AI. We engineer intelligent systems agents, LLM apps, and autonomous workflows ..."
+    },
+    {
+      "title": "فيديوهات سكس عربي",
+      "url": "https://xnxarb.com/categories/%D8%B3%D9%83%D8%B3-%D8%B9%D8%B1%D8%A8%D9%8A/",
+      "snippet": "نحن نجمع جميع مقاطع الفيديو من الإنترنت لا ننشئ اي مقاطع فيديو ولا نرفعها هذا الموقع لا يحتفظ باي ملفات على خادمه جميع المحتويات مقدمة من اطراف ثالثة . جميع النماذج على هذا الموقع بالغة قانونياً …"
+    },
+    {
+      "title": "GitHub - VaibhavSoni24/ToxiScan-AI",
+      "url": "https://github.com/VaibhavSoni24/ToxiScan-AI",
+      "snippet": "ToxiScan AI predicts whether a compound is likely Toxic or Non-Toxic using a model trained on the Tox21 dataset. It supports single-compound input, batch CSV scoring, model comparison, and optional AI-generated interpretation via the Inception API."
+    },
+    {
+      "title": "سكس العرب سعودية تدلع علي الزب القوي sexalarab",
+      "url": "https://braiiz.com/video/%D8%B3%D9%83%D8%B3-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AA%D8%AF%D9%84%D8%B9-%D8%B9%D9%84%D9%8A-%D8%A7%D9%84%D8%B2%D8%A8-%D8%A7%D9%84%D9%82%D9%88%D9%8A-sexalarab/",
+      "snippet": "افلام سكس العرب شاهد فتاة مراهقة مع حبيبها في السيارة نيج بكل الاوضاع القحبه اخر دلع - سكس العرب سعودية تدلع علي الزب القوي sexalarab موقع برايز ."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Mmoreaujules2007/retrieval",
+  "slug": "mmoreaujules2007-retrieval",
+  "author": "Mmoreaujules2007",
+  "url": "https://huggingface.co/Mmoreaujules2007/retrieval",
+  "created_at": "2026-09-04T15:59:30.000Z",
+  "updated_at": "2026-09-04T15:59:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Théâtre — Danse — Musique — Cirque",
+      "url": "https://www.forum-meyrin.ch/sites/default/files/u10/1718_programme_tfm.pdf",
+      "snippet": "Bulle d’espoir qui retient le monde de basculer dans la catastrophe, artisanat à taille humaine par excellence, n’étant ni coté en …"
+    },
+    {
+      "title": "Proceedings of the 2007 conference on Emerging Artificial Intelligence ...",
+      "url": "https://dl.acm.org/doi/proceedings/10.5555/1566770",
+      "snippet": "Proceedings of the 2007 conference on Emerging Artificial Intelligence Applications in Computer Engineering: Real Word AI Systems with Applications in eHealth, HCI, Information Retrieval and Pervasive Technologies"
+    },
+    {
+      "title": "Vertical influences - forum-meyrin.ch",
+      "url": "https://www.forum-meyrin.ch/sites/default/files/media/dp_vertical_influences.pdf",
+      "snippet": "Vertical Influences se décompose en deux parties, ce qui permet de l’apprécier selon deux angles de vue différents. Dans toute la …"
+    },
+    {
+      "title": "retrieval model - an overview | ScienceDirect Topics",
+      "url": "https://www.sciencedirect.com/topics/computer-science/retrieval-model",
+      "snippet": "A retrieval model is defined as a method that evaluates a set of candidate responses based on their scores to determine the most appropriate response for a given context in a dialogue system. AI generated definition based on: AI Open, 2022"
+    },
+    {
+      "title": "Poésie - forum-meyrin.ch",
+      "url": "https://www.forum-meyrin.ch/sites/default/files/media/dp_poesie.pdf",
+      "snippet": "C’est cela que l’on aime et que l’on vient chercher : le commentaire luchinien après la récitation luchinienne. Un mot ou une phrase …"
+    }
+  ]
+}

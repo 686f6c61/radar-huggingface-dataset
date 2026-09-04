@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/Qwen2.5-1.5B-Instruct_SFT_lora_glycemic",
+  "slug": "xw17-qwen2-5-1-5b-instruct_sft_lora_glycemic",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Qwen2.5-1.5B-Instruct_SFT_lora_glycemic",
+  "created_at": "2026-09-04T16:22:28.000Z",
+  "updated_at": "2026-09-04T16:22:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48402964,
+  "storage_human": "48 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rocky Mountain Oysters-Song - YouTube",
+      "url": "https://www.youtube.com/watch?v=jLh-aHV8OW0",
+      "snippet": "Oct 18, 2025 · Song written and performed by Dwight Lakey CD available at CDBaby, Amazon and other outlets online...song also …"
+    },
+    {
+      "title": "xw17/Qwen2-1.5B-Instruct_SFT_lora_wesad · Hugging Face",
+      "url": "https://huggingface.co/xw17/Qwen2-1.5B-Instruct_SFT_lora_wesad",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Rocky Mountain Oysters - YouTube",
+      "url": "https://www.youtube.com/watch?v=Vd7Gnce8jb8",
+      "snippet": "Mar 25, 2013 · Song 1.6K views 13 years ago Rocky Mountain Oysters"
+    },
+    {
+      "title": "qwen2.5-r1-ft - GitHub",
+      "url": "https://github.com/w3ng-git/qwen2.5-r1-ft",
+      "snippet": "This project implements LoRA fine-tuning for the Qwen-2.5-1.5B-Chat model using DeepSpeed with multi-GPU support. Tongyi Qianwen is a large language model developed by Alibaba Cloud based on the Transformer architecture, trained on diverse pre-training data including internet text, specialized books, and code. This implementation focuses on R1-style training using high-quality instruction ..."
+    },
+    {
+      "title": "Rocky Mountain Oysters - song and lyrics by Dwight Lakey | Spotify",
+      "url": "https://open.spotify.com/track/0PJpoFFxbGp3LWl2reNmft",
+      "snippet": "Listen to Rocky Mountain Oysters on Spotify. Dwight Lakey · Song · 2009."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xian-taidu/Qwen3-ASR-1.7B-DML",
+  "slug": "xian-taidu-qwen3-asr-1-7b-dml",
+  "author": "xian-taidu",
+  "url": "https://huggingface.co/xian-taidu/Qwen3-ASR-1.7B-DML",
+  "created_at": "2026-09-04T11:44:21.000Z",
+  "updated_at": "2026-09-04T11:58:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4708336117,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xi'an - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Xi%27an",
+      "snippet": "While Xian became one of the main targets of the Japanese bombing campaign of the 8 years of war, with Japanese aircraft bombing …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-0.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni."
+    },
+    {
+      "title": "Xi'an — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Xi%27an",
+      "snippet": "Subdivisions administratives La ville sous-provinciale de Xi'an exerce sa juridiction sur treize subdivisions - neuf districts et quatre …"
+    },
+    {
+      "title": "Qwen/Qwen3-ASR-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-ASR-1.7B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Xi'An, Chine : Guide, circuits et visites touristiques",
+      "url": "https://tourisme-chine.com/xian/",
+      "snippet": "Découvrez Xi'An, la ville millénaire où l'histoire rencontre la modernité à travers ses trésors comme l'Armée de Terre Cuite et ses …"
+    }
+  ]
+}

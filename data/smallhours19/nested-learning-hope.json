@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "smallhours19/nested-learning-hope",
+  "slug": "smallhours19-nested-learning-hope",
+  "author": "smallhours19",
+  "url": "https://huggingface.co/smallhours19/nested-learning-hope",
+  "created_at": "2026-09-04T14:39:17.000Z",
+  "updated_at": "2026-09-04T14:39:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "nested-learning",
+    "hope",
+    "test-time-learning",
+    "test-time-training",
+    "continual-learning",
+    "byte-level",
+    "attention-free",
+    "recurrent",
+    "arxiv:2512.24695",
+    "text-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cómo abrir el Programador de tareas en Windows 10 - wikiHow",
+      "url": "https://es.wikihow.com/abrir-el-programador-de-tareas-en-windows-10",
+      "snippet": "Te ayuda a programar tareas automatizadas que ejecutan programas o scripts en momentos específicos. Por ejemplo, puedes …"
+    },
+    {
+      "title": "End of Frozen LLMs? Google's Nested Learning & Hope Explained",
+      "url": "https://aipapersacademy.com/nested-learning-hope/",
+      "snippet": "Google’s Nested Learning paper and Hope model explained: a new approach to continual learning in LLMs that addresses catastrophic forgetting."
+    },
+    {
+      "title": "Abrir Programador de Tareas Windows 10 ️ Usar - Solvetic",
+      "url": "https://www.solvetic.com/tutoriales/article/3441-como-abrir-y-configurar-programador-tareas-windows-10/",
+      "snippet": "Sep 6, 2021 · Tutorial con vídeo para saber abrir Programador de tareas en Windows 10 de diferentes formas."
+    },
+    {
+      "title": "Google HOPE: The Next Revolution in AI with Nested Learning Technology",
+      "url": "https://www.thoughtsmag.com/google-hope-the-next-revolution-in-ai-with-nested-learning-technology/",
+      "snippet": "Discover Google HOPE, the latest AI breakthrough using Nested Learning to enable continual learning, long-term memory, and self-improving intelligent systems."
+    },
+    {
+      "title": "12 formas de abrir el Programador de tareas en Windows 11 y …",
+      "url": "https://es.windows.day/?p=4688",
+      "snippet": "El Programador de tareas es una poderosa herramienta en Windows que le permite programar o automatizar varias tareas y mejorar …"
+    }
+  ]
+}

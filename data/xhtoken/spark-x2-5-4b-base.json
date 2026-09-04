@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "XHToken/Spark-X2.5-4B-Base",
+  "slug": "xhtoken-spark-x2-5-4b-base",
+  "author": "XHToken",
+  "url": "https://huggingface.co/XHToken/Spark-X2.5-4B-Base",
+  "created_at": "2026-08-28T09:51:24.000Z",
+  "updated_at": "2026-08-28T09:51:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "spark2_5",
+    "text-generation",
+    "llm",
+    "sparkx2_5",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 137,
+  "trending_score": 13,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 8234897398,
+  "storage_human": "8.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "An update to how we count public views across YouTube",
+      "url": "https://support.google.com/youtube/thread/433409976/an-update-to-how-we-count-public-views-across-youtube?hl=en",
+      "snippet": "Aug 17, 2026 · Last year, we updated how we count public views for Shorts to better capture how viewers watch on YouTube. Now, …"
+    },
+    {
+      "title": "GitHub - XHToken/Spark-X2.5: Spark-x2.5 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.5",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    },
+    {
+      "title": "YouTube で制限付きモードをオンまたはオフにする ...",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube で制限付きモードをオンまたはオフにする 制限付きモードは、YouTube で使用できるオプション設定です。 この機能は …"
+    },
+    {
+      "title": "Spark-X2.5/README.md at main · XHToken/Spark-X2.5 · GitHub",
+      "url": "https://github.com/XHToken/Spark-X2.5/blob/main/README.md",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的 ...",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    }
+  ]
+}

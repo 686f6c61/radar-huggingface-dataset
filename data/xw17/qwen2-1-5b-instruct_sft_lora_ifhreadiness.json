@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/Qwen2-1.5B-Instruct_SFT_lora_ifhreadiness",
+  "slug": "xw17-qwen2-1-5b-instruct_sft_lora_ifhreadiness",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Qwen2-1.5B-Instruct_SFT_lora_ifhreadiness",
+  "created_at": "2026-09-04T15:55:12.000Z",
+  "updated_at": "2026-09-04T15:55:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48399334,
+  "storage_human": "48 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ILOVEPDFというサイトでダウンロードしたPDFをパスワード解除して …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14277644069",
+      "snippet": "Mar 27, 2023 · ILOVEPDFというサイトでダウンロードした PDFをパスワード解除して閲覧したんです 慌ててすぐ削除したんです …"
+    },
+    {
+      "title": "xw17/Qwen2-1.5B-Instruct_SFT_lora_universal · Hugging Face",
+      "url": "https://huggingface.co/xw17/Qwen2-1.5B-Instruct_SFT_lora_universal",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ilovepdfと言うサイトを発見しました。 - https://www... - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11181864276",
+      "snippet": "Nov 17, 2017 · Ilovepdfと言うサイトを発見しました。 https://www.ilovepdf.com/jaPDFを分割したり、ワードやエクセルになおした …"
+    },
+    {
+      "title": "xw17/Qwen2-1.5B-Instruct_SFT_lora_usc-had at main - Hugging Face",
+      "url": "https://huggingface.co/xw17/Qwen2-1.5B-Instruct_SFT_lora_usc-had/tree/main",
+      "snippet": "Use this model main Qwen2-1.5B-Instruct_SFT_lora_usc-had 48.4 MB Ctrl+K Ctrl+K 1 contributor History:3 commits xw17 Upload tokenizer 85a37c7 verifiedabout 8 hours ago .gitattributes Safe 1.57 kBUpload tokenizerabout 8 hours ago README.md Safe 5.17 kBUpload modelabout 8 hours ago adapter_config.json 1.06 kBUpload modelabout 8 hours ago adapter ..."
+    },
+    {
+      "title": "オンラインでPDFの結合や圧縮・編集ができる「iLovePDF」",
+      "url": "https://webcli.jp/topics/ilovepdf/",
+      "snippet": "May 22, 2022 · ビジネスシーンでは公式文書として「PDF」がよく使われますが、加工するのは手間がかかります。そこで今回 …"
+    }
+  ]
+}

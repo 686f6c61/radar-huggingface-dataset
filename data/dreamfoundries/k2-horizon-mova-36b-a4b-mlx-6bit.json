@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "DreamFoundries/K2-Horizon-MoVA-36B-A4B-MLX-6bit",
+  "slug": "dreamfoundries-k2-horizon-mova-36b-a4b-mlx-6bit",
+  "author": "DreamFoundries",
+  "url": "https://huggingface.co/DreamFoundries/K2-Horizon-MoVA-36B-A4B-MLX-6bit",
+  "created_at": "2026-09-04T18:05:07.000Z",
+  "updated_at": "2026-09-04T18:06:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "mlxhub",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:IFM/K2-Horizon-MoVA-36B-A4B",
+    "base_model:quantized:IFM/K2-Horizon-MoVA-36B-A4B",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20637260,
+  "storage_human": "21 MB",
+  "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=2ed28a9adef4645312879d50df8565c1",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "IFM/K2-Horizon-MoVA-36B-A4B · Hugging Face",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B",
+      "snippet": "K2-Horizon-MoVA-36B-A4B is the sparse member of the K2-Horizon family: a Mixture-of-Experts model with Mixture-of-Values attention (MoVA) that stores 36B parameters and runs 4B per token."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "K2 Horizon MoVA 36B A4B: Benchmarks, Pricing & Context Window — Benchgen",
+      "url": "https://benchgen.com/models/ifm/k2-horizon-mova-36b-a4b",
+      "snippet": "Quick answer:K2-Horizon-MoVA-36B-A4B is IFM's sparse Mixture-of-Experts model using Mixture-of-Values attention (MoVA) — 36B total parameters, only 4B active per token, with a native 512K-token context window. It outscores open-weight dense and MoE models up to 15x its active-parameter size on agentic and reasoning benchmarks, and is competitive with closed frontier models. Open weights ..."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "david-lopez/mocov3-multitask",
+  "slug": "david-lopez-mocov3-multitask",
+  "author": "david-lopez",
+  "url": "https://huggingface.co/david-lopez/mocov3-multitask",
+  "created_at": "2026-09-04T11:54:26.000Z",
+  "updated_at": "2026-09-04T11:54:31.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "David (roi d'Israël) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/David_(roi_d%27Isra%C3%ABl)",
+      "snippet": "Devenu le héros d' Israël, Saül lui donne Mikhal, une de ses filles, en mariage tandis que Jonathan et David se lient d'une profonde …"
+    },
+    {
+      "title": "Matheuslimataz/thesis-multitask · Hugging Face",
+      "url": "https://huggingface.co/Matheuslimataz/thesis-multitask",
+      "snippet": "Matheuslimataz / thesis-multitask like 0 Safetensors PyTorch mocov3 multitask License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Mocov3 for Multitask Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "David - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/David",
+      "snippet": "David is honoured as an ideal king and the forefather of the future Hebrew Messiah in Jewish prophetic literature, and many psalms …"
+    },
+    {
+      "title": "jerrytran/mocov3-multitask · Hugging Face",
+      "url": "https://huggingface.co/jerrytran/mocov3-multitask",
+      "snippet": "Mocov3 for Multitask Overview This is an experimental Mocov3 codebase for Multitask. It keeps the huge setup intentionally manageable so architecture changes can be inspected before a full training run."
+    },
+    {
+      "title": "David - Film 2025 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=322967.html",
+      "snippet": "David est un film réalisé par Brent Dawes et Phil Cunningham avec les voix de Elie Semoun, Gaetan Borg. Synopsis : David est un …"
+    }
+  ]
+}

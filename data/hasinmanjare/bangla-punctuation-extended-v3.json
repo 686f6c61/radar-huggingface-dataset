@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "HasinManjare/bangla-punctuation-extended-v3",
+  "slug": "hasinmanjare-bangla-punctuation-extended-v3",
+  "author": "HasinManjare",
+  "url": "https://huggingface.co/HasinManjare/bangla-punctuation-extended-v3",
+  "created_at": "2026-09-04T11:47:01.000Z",
+  "updated_at": "2026-09-04T12:17:39.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "electra",
+    "token-classification",
+    "bengali",
+    "bangla",
+    "punctuation-restoration",
+    "asr-post-processing",
+    "banglaprcorpus",
+    "bn",
+    "dataset:abdullahalmunem/ha-pr-bn-munem-generated",
+    "base_model:csebuetnlp/banglabert",
+    "base_model:finetune:csebuetnlp/banglabert",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110034442,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440167593,
+  "storage_human": "440 MB",
+  "base_model": "csebuetnlp/banglabert",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fragebogen zur steuerlichen Erfassung für Einzelunternehmen",
+      "url": "https://www.elster.de/eportal/formulare-leistungen/alleformulare/fseeun",
+      "snippet": "Die örtliche Zuständigkeit für die Besteuerung Ihres neu gegründeten Unternehmens richtet sich nach dem Ort der Leitung des …"
+    },
+    {
+      "title": "Restoring Rhythm: Punctuation Restoration Using Transformer Models for ...",
+      "url": "https://arxiv.org/html/2507.18448",
+      "snippet": "The primary contributions of this research are as follows: 1. Exploring the use of transformer-based language models for punctuation restoration in Bangla. 2. Proposing a novel strategy for improving model performance using data augmentation techniques. 3."
+    },
+    {
+      "title": "001 - Fragebogen zur steuerlichen Erfassung / Aufnahme einer",
+      "url": "https://www.ihk.de/blueprint/servlet/resource/blob/1158182/e9ac4b62d201b1d8f99965a5be7fb804/fragebogen-zur-steuerlichen-erfassung-data.pdf",
+      "snippet": "Ich benötige für die Teilnahme am innergemeinschaftlichen Waren- und Dienstleistungsverkehr eine Umsatzsteuer- Identifikations …"
+    },
+    {
+      "title": "Restoring Rhythm: Punctuation Restoration Using Transformer ... - Springer",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-11352-8_3",
+      "snippet": "Results show strong generalization to reference and ASR transcripts, demonstrating the model’s effectiveness in real-world, noisy scenarios. This work establishes a strong baseline for Bangla punctuation restoration and contributes publicly available datasets and code to support future research in low-resource NLP."
+    },
+    {
+      "title": "Fragebogen zur steuerlichen Erfassung - Handelskammer Hamburg",
+      "url": "https://www.handelskammer-hamburg.de/recht-steuern/steuerrecht/existenzgruender-steuern/fragebogen-steuerlichen-erfassung-6682890",
+      "snippet": "Je nach Rechtsform des Unternehmens gibt es einen entsprechenden Vordruck zur steuerlichen Erfassung, die in der Spalte rechts …"
+    }
+  ]
+}

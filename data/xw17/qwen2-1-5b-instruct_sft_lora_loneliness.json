@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/Qwen2-1.5B-Instruct_SFT_lora_loneliness",
+  "slug": "xw17-qwen2-1-5b-instruct_sft_lora_loneliness",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Qwen2-1.5B-Instruct_SFT_lora_loneliness",
+  "created_at": "2026-09-04T15:30:46.000Z",
+  "updated_at": "2026-09-04T15:30:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48399334,
+  "storage_human": "48 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "De officiële mazoutprijs in België: dagprijs en evolutie",
+      "url": "https://in4fuels.be/nl/tools/brandstofprijs",
+      "snippet": "1 day ago · Op deze pagina vind je meer info over de mazoutprijs en die van Gasolie Diesel vandaag én de prijsevolutie. Onze …"
+    },
+    {
+      "title": "xw17/Qwen2-1.5B-Instruct_SFT_lora_universal · Hugging Face",
+      "url": "https://huggingface.co/xw17/Qwen2-1.5B-Instruct_SFT_lora_universal",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mazoutprijs Vandaag 2026 | Actuele Stookolieprijs België",
+      "url": "https://mazoutprijs.be/",
+      "snippet": "1 day ago · Bekijk de actuele mazoutprijs, stookolieprijs en huisbrandolieprijs vandaag in België. Dagelijks bijgewerkt met officiële …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mazoutprijs vandaag — officiële maximumprijs per liter | MazoutTracker",
+      "url": "https://mazouttracker.be/",
+      "snippet": "Aug 25, 2026 · Wat is de mazoutprijs vandaag in België? De officiële maximumprijs voor gasolie verwarming is vandaag 1,3862 €/L …"
+    }
+  ]
+}

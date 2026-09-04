@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "phasefield-audio/Irodori-TTS-v4.1-Anime",
+  "slug": "phasefield-audio-irodori-tts-v4-1-anime",
+  "author": "phasefield-audio",
+  "url": "https://huggingface.co/phasefield-audio/Irodori-TTS-v4.1-Anime",
+  "created_at": "2026-09-04T14:13:56.000Z",
+  "updated_at": "2026-09-04T14:44:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "text-to-speech",
+    "base_model:Aratako/Irodori-TTS-v4.1-Small",
+    "base_model:finetune:Aratako/Irodori-TTS-v4.1-Small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 766052385,
+  "parameters_human": "766.1M",
+  "storage_bytes": 7610645518,
+  "storage_human": "7.6 GB",
+  "base_model": "Aratako/Irodori-TTS-v4.1-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay Australia | eBay Community",
+      "url": "https://community.ebay.com.au/",
+      "snippet": "Your eBay Community. Find answers to pressing questions, connect with members, and get advice from expert sellers."
+    },
+    {
+      "title": "GitHub - Aratako/Irodori-TTS: A Flow Matching-based Text-to-Speech ...",
+      "url": "https://github.com/Aratako/Irodori-TTS",
+      "snippet": "Training and inference code for Irodori-TTS, a Flow Matching-based Text-to-Speech model. The architecture and training design largely follow Echo-TTS, using DACVAE continuous latents as the generation target. For an OpenAI-compatible inference API server, see Irodori-TTS-Server."
+    },
+    {
+      "title": "Sudden decline in eBay sales from Australia listings",
+      "url": "https://community.ebay.com.au/forum/selling-15/topic/sudden-decline-in-ebay-sales-from-australia-listings-6515/",
+      "snippet": "However, I do not think that can affect my sales overall. In Australia there are some cost of living challenges but not of a magnitude …"
+    },
+    {
+      "title": "GitHub - ootsuka-repos/Irodori-TTS",
+      "url": "https://github.com/ootsuka-repos/Irodori-TTS",
+      "snippet": "Training and inference code for Irodori-TTS, a Flow Matching-based Text-to-Speech model. The architecture and training design largely follow Echo-TTS, using DACVAE continuous latents as the generation target. For an OpenAI-compatible inference API server, see Irodori-TTS-Server. Audio is represented ..."
+    },
+    {
+      "title": "eBay Italy",
+      "url": "https://community.ebay.it/forum/",
+      "snippet": "Community di eBay. Trova risposte, fai domande e mettiti in contatto con la nostra comunità di utenti ed esperti."
+    }
+  ]
+}

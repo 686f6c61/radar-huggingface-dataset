@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/Llama-3.2-1B-Instruct_SFT_lora_cogwear",
+  "slug": "xw17-llama-3-2-1b-instruct_sft_lora_cogwear",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Llama-3.2-1B-Instruct_SFT_lora_cogwear",
+  "created_at": "2026-09-04T14:01:40.000Z",
+  "updated_at": "2026-09-04T14:01:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39783624,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "216.24.57.1 | San Francisco, AS397273, VPN Not Detected",
+      "url": "https://ipinfo.io/216.24.57.1",
+      "snippet": "Get Details for IP 216.24.57.1: Hosted by Render, located in San Francisco, AS397273. View ranges, ASN info, and related IPs."
+    },
+    {
+      "title": "meta-llama/Llama-3.2-1B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct",
+      "snippet": "You need to agree to share your contact information to access this model"
+    },
+    {
+      "title": "Whois IP 216.24.57.1",
+      "url": "https://www.whois.com/whois/216.24.57.1",
+      "snippet": "Whois IP Lookup for 216.24.57.1"
+    },
+    {
+      "title": "xw17/Llama-3.2-1B-Instruct_SFT_lora_usc-had · Hugging Face",
+      "url": "https://huggingface.co/xw17/Llama-3.2-1B-Instruct_SFT_lora_usc-had",
+      "snippet": "Model Description This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated."
+    },
+    {
+      "title": "216.24.57.1 | Render | AbuseIPDB",
+      "url": "https://www.abuseipdb.com/check/216.24.57.1",
+      "snippet": "Aug 18, 2024 · 216.24.57.1 IP Abuse Reports for 216.24.57.1: This IP address has been reported a total of 40times from 27 distinct …"
+    }
+  ]
+}

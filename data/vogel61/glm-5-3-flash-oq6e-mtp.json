@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "vogel61/GLM-5.3-Flash-oQ6e-mtp",
+  "slug": "vogel61-glm-5-3-flash-oq6e-mtp",
+  "author": "vogel61",
+  "url": "https://huggingface.co/vogel61/GLM-5.3-Flash-oQ6e-mtp",
+  "created_at": "2026-09-04T16:18:44.000Z",
+  "updated_at": "2026-09-04T16:22:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm5_next",
+    "oq",
+    "quantized",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 313890438974,
+  "parameters_human": "313.89B",
+  "storage_bytes": 256889644259,
+  "storage_human": "256.9 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AmasraV2 - Türkiyenin en iyi sunucusu AmasraV2",
+      "url": "https://amasrav2.com/",
+      "snippet": "Geçtiğimiz bu 1 yıl boyunca oyuncu topluluğuna kaliteli, rekabetçi ve sürekli geliştirilen bir oyun deneyimi sunmayı başaran …"
+    },
+    {
+      "title": "GLM-5.3-Flash: Frontier Intelligence, Flash Cost - z.ai",
+      "url": "https://z.ai/blog/glm-5.3-flash",
+      "snippet": "Before release, we tested GLM-5.3-Flash anonymously as ox-alpha on OpenCode and OpenRouter to gather user feedback. It quickly became the most popular model of the week — with all of this traffic served on Chinese AI chips."
+    },
+    {
+      "title": "AmasraV2 | Minecraft Server",
+      "url": "https://minecraft-mp.com/server-s351118",
+      "snippet": "Jan 21, 2011 · AmasraV2, Minecraft’ta eğlenceyi ve adil oyunu ön planda tutan, herkesin kendine göre bir şey bulabileceği çok modlu …"
+    },
+    {
+      "title": "GLM-5.3-Flash - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "snippet": "Model Overview GLM-5.3-Flash is the first native multimodal model in the GLM-5 series, delivering stronger intelligence than GLM-5.2 at an exceptionally low cost. Highly Efficient Hybrid Architecture GLM-5.3-Flash has 320B total parameters with 18B activated."
+    },
+    {
+      "title": "AmasraV2 (1.21.11/TR) - The #1 Minecraft server's details, IP, vote ...",
+      "url": "https://topminecraftservers.org/server/43146",
+      "snippet": "Find details about the AmasraV2 Minecraft server, such as its IP address and vote link. Game modes and features include Economy, …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "KordAI/KeawGPT-Opus-CKPT",
+  "slug": "kordai-keawgpt-opus-ckpt",
+  "author": "KordAI",
+  "url": "https://huggingface.co/KordAI/KeawGPT-Opus-CKPT",
+  "created_at": "2026-09-04T17:30:14.000Z",
+  "updated_at": "2026-09-04T19:29:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "unsloth",
+    "base_model:KordAI/KeawGPT",
+    "base_model:finetune:KordAI/KeawGPT",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1208737639,
+  "storage_human": "1.2 GB",
+  "base_model": "KordAI/KeawGPT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "forum.mannenzaken.nl",
+      "url": "https://forum.mannenzaken.nl/forum/vrouwen/buitenlandse-vrouwen/8102-sofia-boutella/page2",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "KordAI/KeawGPT-Base · Hugging Face",
+      "url": "https://huggingface.co/KordAI/KeawGPT-Base",
+      "snippet": "KordAI / KeawGPT-Base like 0 Follow KordAI 5 Text Generation Transformers Safetensors English qwen3 text-generation-inference unsloth License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Berichtencentrum - Mannenzaken.nl",
+      "url": "https://forum.mannenzaken.nl/privatemessage/sentitems/5609/1",
+      "snippet": "vBulletin Message Center"
+    },
+    {
+      "title": "KordAI/KeawGPT-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/KordAI/KeawGPT-GGUF/tree/main",
+      "snippet": "KordAI / KeawGPT-GGUF like 0 Follow KordAI 5 GGUF qwen3 llama.cpp unsloth conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "KeawGPT-Base API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/KordAI/KeawGPT-Base",
+      "snippet": "Run KeawGPT-Base with FriendliAI inference. This qwen3 model was trained 2x faster with Unsloth and Huggingface's TRL library."
+    }
+  ]
+}

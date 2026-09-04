@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "BelovedTech/student_performance_predictor",
+  "slug": "belovedtech-student_performance_predictor",
+  "author": "BelovedTech",
+  "url": "https://huggingface.co/BelovedTech/student_performance_predictor",
+  "created_at": "2026-09-04T15:18:33.000Z",
+  "updated_at": "2026-09-04T15:32:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1215,
+  "storage_human": "1215 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "diecompany – Beyond Footwear",
+      "url": "https://get-shapes.com/de/diecompany/",
+      "snippet": "Die SI Shape Industries GmbH ist ein Start-up, obgleich wir bereits 2 Jahre mit der Entwicklung unseres Produktes befasst sind. …"
+    },
+    {
+      "title": "Student_Performance_Prediction.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/Jyotiranga77/Student-Performance/blob/main/Student_Performance_Prediction.ipynb",
+      "snippet": "\"\"\" EduQuest Coaching aims to enhance student outcomes by leveraging machine learning to create a Student Performance Predictor. This system is designed to predict student academic performance based on a wide range of inputs, including past academic records, attendance, engagement in coursework, and demographic data. By analyzing these factors, the model can identify students who may be at ..."
+    },
+    {
+      "title": "thecompany – Beyond Footwear - get-shapes.com",
+      "url": "https://get-shapes.com/thecompany/",
+      "snippet": "SI Shape Industries GmbH is a startup, although we have already spent 2 years developing our product. Started in the small region of …"
+    },
+    {
+      "title": "AI Student Performance Predictor - Hugging Face",
+      "url": "https://huggingface.co/spaces/AAAZEEEN/student-performance-predictor",
+      "snippet": "Predict Your Academic Future Enter your study habits, attendance, and lifestyle factors — our trained AI model analyzes the patterns and delivers your predicted score with personalized recommendations."
+    },
+    {
+      "title": "SI Shape - Industries GmbH | Unternehmen - enforcetac.com",
+      "url": "https://www.enforcetac.com/de-de/aussteller/si-shape-industries-gmbh-2516448",
+      "snippet": "Über uns SI Shape – Industries GmbH entwickelt und produziert Shapes, ein patentiertes Hightech Support System für deine Füße."
+    }
+  ]
+}

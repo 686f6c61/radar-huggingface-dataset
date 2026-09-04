@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "ousmane93/finetuning-sentiment-model-3000-samples",
+  "slug": "ousmane93-finetuning-sentiment-model-3000-samples",
+  "author": "ousmane93",
+  "url": "https://huggingface.co/ousmane93/finetuning-sentiment-model-3000-samples",
+  "created_at": "2026-09-04T14:14:19.000Z",
+  "updated_at": "2026-09-04T15:28:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "sentiment-analysis",
+    "dataset:stanfordnlp/imdb",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 535669912,
+  "storage_human": "536 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Classification",
+      "dataset": "imdb",
+      "metric": "Accuracy",
+      "value": 0.87
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "imdb",
+      "metric": "F1",
+      "value": 0.8713
+    }
+  ],
+  "sources": [
+    {
+      "title": "Amazon Haul : notre test révèle de sérieux problèmes de conformité",
+      "url": "https://www.60millions-mag.com/commerce/article/amazon-haul-la-foire-aux-produits-non-conformes-20260506/",
+      "snippet": "May 6, 2026 · Amazon Haul : notre test révèle de sérieux problèmes de conformité Des milliers d’objets sont vendus quelques euros …"
+    },
+    {
+      "title": "finetuning-sentiment-model-3000-samples - Hugging Face",
+      "url": "https://huggingface.co/PatrickHRC/finetuning-sentiment-model-3000-samples",
+      "snippet": "finetuning-sentiment-model-3000-samples This model is a fine-tuned version of distilbert-base-uncased on an unknown dataset. It achieves the following results on the evaluation set: Loss: 0.3126 Accuracy: 0.8733 F1: 0.8766 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure ..."
+    },
+    {
+      "title": "Envoyer de l’argent avec Wero : comment ça marche",
+      "url": "https://www.60millions-mag.com/banque-assurance/article/envoyer-de-l-argent-avec-wero-comment-ca-marche-25444-20260304/",
+      "snippet": "Mar 4, 2026 · 2. Qui peut l’utiliser ? « Tout client particulier dont la banque propose le service, soit la quasi-totalité des …"
+    },
+    {
+      "title": "neuralbench/finetuning-sentiment-model-3000-samples · Hugging Face",
+      "url": "https://huggingface.co/neuralbench/finetuning-sentiment-model-3000-samples",
+      "snippet": "finetuning-sentiment-model-3000-samples This model is a fine-tuned version of distilbert-base-uncased on the imdb dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "DVD-Forum.at: Das Online-Magazin für Cineasten und Gamer",
+      "url": "https://www.dvd-forum.at/",
+      "snippet": "1 day ago · Entdecke die Welt des Films und der Games mit DVD-Forum.at - dem ultimativen Online-Magazin für Cineasten und …"
+    }
+  ]
+}

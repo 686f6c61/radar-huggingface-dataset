@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "AYUSHShende/ErtasAI-Qwen2.5-3B-Instruct",
+  "slug": "ayushshende-ertasai-qwen2-5-3b-instruct",
+  "author": "AYUSHShende",
+  "url": "https://huggingface.co/AYUSHShende/ErtasAI-Qwen2.5-3B-Instruct",
+  "created_at": "2026-09-04T17:34:19.000Z",
+  "updated_at": "2026-09-04T18:03:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2.5",
+    "qwen",
+    "fine-tuned",
+    "qlora",
+    "lora",
+    "unsloth",
+    "peft",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131229471,
+  "storage_human": "131 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "win10系统打开软键盘的几种方法 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/546ae1853a8ab21149f28cfa.html",
+      "snippet": "Dec 18, 2015 · 软键盘是一种虚拟键盘，可以显示在屏幕上，用鼠标点击即可实现输入功能，当电脑键盘出现故障的时候，就可以考虑 …"
+    },
+    {
+      "title": "AYUSHShende/ErtasAI-Qwen2.5-3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/AYUSHShende/ErtasAI-Qwen2.5-3B-Instruct",
+      "snippet": "Instructions to use AYUSHShende/ErtasAI-Qwen2.5-3B-Instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "罗技k380如何和电脑连接 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/4d58d541441f149dd4e9c0e5.html",
+      "snippet": "Feb 18, 2019 · 罗技k380如何和电脑连接,买了罗技的k380之后，发现原来是没有说明书这个东西的……所以，如何和电脑连接，一开 …"
+    },
+    {
+      "title": "ErtasAI/Qwen2.5-3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/ErtasAI/Qwen2.5-3B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "keyboard - How to type Ctrl-^? - Super User",
+      "url": "https://superuser.com/questions/94825/how-to-type-ctrl",
+      "snippet": "Jan 12, 2010 · I'm a bit embarrassed to ask this, but how can I enter the ^ (I can't see it in my keyboard) that is part of the control …"
+    }
+  ]
+}

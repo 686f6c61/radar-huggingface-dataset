@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bsgcasa/deepfake-face-detector-v2",
+  "slug": "bsgcasa-deepfake-face-detector-v2",
+  "author": "bsgcasa",
+  "url": "https://huggingface.co/bsgcasa/deepfake-face-detector-v2",
+  "created_at": "2026-09-04T14:17:32.000Z",
+  "updated_at": "2026-09-04T14:17:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shopify: Your Commerce Platform to Sell Online & In Person - Shopify UK",
+      "url": "https://www.shopify.com/uk",
+      "snippet": "Shopify takes the complexity out of international selling, from delivering products faster and more affordably to localising your …"
+    },
+    {
+      "title": "DeepFake Face Detection - a Hugging Face Space by HaseebArif11",
+      "url": "https://huggingface.co/spaces/HaseebArif11/DeepFake-Face-Detection",
+      "snippet": "Upload a photo and the app checks whether it was created by AI or captured by a camera. It returns a clear verdict with fake‑vs‑real probabilities, confidence level, and easy‑to‑read signal scores ..."
+    },
+    {
+      "title": "Shopify Log in | Access Your Store Admin - Shopify UK",
+      "url": "https://www.shopify.com/uk/store-login",
+      "snippet": "Seamlessly log in to your Shopify account. Manage your store, inventory, products, and automations. Track & handle orders, taxes, …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=deepfake",
+      "snippet": "romitbarua/autotrain-deepfakeface_only_faces_insightface-94902146221. Image Classification • 27.5M • Updated Oct 13, 2023 • 21 • 3. DaMsTaR/Detecto-DeepFake_Image_Detector"
+    },
+    {
+      "title": "shopify.co.uk",
+      "url": "https://shopify.co.uk/account/login",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    }
+  ]
+}

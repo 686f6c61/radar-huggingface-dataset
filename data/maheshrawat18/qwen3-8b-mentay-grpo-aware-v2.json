@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "maheshrawat18/Qwen3-8B-mentay-grpo-aware-v2",
+  "slug": "maheshrawat18-qwen3-8b-mentay-grpo-aware-v2",
+  "author": "maheshrawat18",
+  "url": "https://huggingface.co/maheshrawat18/Qwen3-8B-mentay-grpo-aware-v2",
+  "created_at": "2026-09-04T11:46:45.000Z",
+  "updated_at": "2026-09-04T11:46:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "base_model:maheshrawat18/Qwen3-8B-grpo-emotion-v9-merged",
+    "base_model:finetune:maheshrawat18/Qwen3-8B-grpo-emotion-v9-merged",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 360666760,
+  "storage_human": "361 MB",
+  "base_model": "maheshrawat18/Qwen3-8B-grpo-emotion-v9-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Luxury Corporate Hampers | Bespoke Gifts | hampers.com",
+      "url": "https://www.hampers.com/pages/corporate-hampers",
+      "snippet": "Luxury, sustainable, and artisanal corporate gift hampers tailored to fit your needs. Our business gift hampers are ideal for clients, …"
+    },
+    {
+      "title": "maheshrawat18/Qwen3-8B-mentay-grpo-aware-merged · Hugging Face",
+      "url": "https://huggingface.co/maheshrawat18/Qwen3-8B-mentay-grpo-aware-merged",
+      "snippet": "maheshrawat18 / Qwen3-8B-mentay-grpo-aware-merged like 0 Text Generation Transformers Safetensors English qwen3 text-generation-inference unsloth trl conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Corporate Hampers & Gifts UK | MakeHampers",
+      "url": "https://www.makehampers.com/hampers/corporate",
+      "snippet": "Jul 24, 2026 · Corporate gifts and hampers for staff and clients, from twenty upwards. One quote, one invoice, delivery to every …"
+    },
+    {
+      "title": "Qwen3-8B-mentay-grpo-aware-merged API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/maheshrawat18/Qwen3-8B-mentay-grpo-aware-merged",
+      "snippet": "Run Qwen3-8B-mentay-grpo-aware-merged with FriendliAI inference. This qwen3 model was trained 2x faster with Unsloth."
+    },
+    {
+      "title": "Corporate Hampers and Gifts | Free UK Delivery | Hay Hampers",
+      "url": "https://www.hampers.co.uk/collections/corporate-hampers",
+      "snippet": "Corporate hampers and gifts delivered straight to your door. Luxury, personalised options for clients or staff. Order now at Hay …"
+    }
+  ]
+}

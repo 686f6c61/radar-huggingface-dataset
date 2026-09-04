@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "deepdoggo/ComfyUI-780M",
+  "slug": "deepdoggo-comfyui-780m",
+  "author": "deepdoggo",
+  "url": "https://huggingface.co/deepdoggo/ComfyUI-780M",
+  "created_at": "2026-09-04T17:38:20.000Z",
+  "updated_at": "2026-09-04T18:17:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Site officiel de l'Office de Tourisme du Croisic",
+      "url": "https://www.tourisme-lecroisic.fr/",
+      "snippet": "Site officiel de l'Office de Tourisme du Croisic, votre escapade ! Brochures, hébergements, activités, agenda… l'essentiel pour un …"
+    },
+    {
+      "title": "GitHub - jaguardev/780m-ai-stack: [780M iGPU] Stable-ish Docker stack ...",
+      "url": "https://github.com/jaguardev/780m-ai-stack",
+      "snippet": "A stack for running local AI on AMD Radeon 780M (iGPU) in best-effort mode: ComfyUI (image generation) Ollama (LLM inference) Open WebUI (web interface for Ollama)"
+    },
+    {
+      "title": "Concert - Le Croisic, Petite Cité de Caractère",
+      "url": "https://www.tourisme-lecroisic.fr/event_listing_type/concert-or-performance/",
+      "snippet": "Aug 11, 2026 · Concert Pipe Band « « Askol Ha Brug » de Blain 19-06-2026 Place Dinan 44490 Le Croisic Concert 12 Août"
+    },
+    {
+      "title": "ComfyUI Official Documentation - ComfyUI",
+      "url": "https://utopia.mintlify.app/",
+      "snippet": "ComfyUI is a node-based interface and inference engine for generative AI Users can combine various AI models and operations through nodes to achieve highly customizable and controllable content generation"
+    },
+    {
+      "title": "Les incontournables - Le Croisic, Petite Cité de Caractère",
+      "url": "https://www.tourisme-lecroisic.fr/lieux-incontournables/",
+      "snippet": "Les XVIe et XVIIe siècles sont des périodes de pleines prospérités pour le port du Croisic. Profitant du commerce du sel, de la pêche …"
+    }
+  ]
+}

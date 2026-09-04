@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "PinoCookie/LFM2.5-2.6B-Abliterated",
+  "slug": "pinocookie-lfm2-5-2-6b-abliterated",
+  "author": "PinoCookie",
+  "url": "https://huggingface.co/PinoCookie/LFM2.5-2.6B-Abliterated",
+  "created_at": "2026-09-04T14:12:48.000Z",
+  "updated_at": "2026-09-04T14:35:29.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "liquid",
+    "lfm2.5",
+    "abliteration",
+    "safety",
+    "instruct",
+    "conversational",
+    "en",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:finetune:LiquidAI/LFM2.5-2.6B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 5412347315,
+  "storage_human": "5.4 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=2b271eed1aa267d03ae709271b716607",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "PinoCookie/LFM2.5-1.2B-Instruct-Abliterated · Hugging Face",
+      "url": "https://huggingface.co/PinoCookie/LFM2.5-1.2B-Instruct-Abliterated",
+      "snippet": "This is an abliterated version of LiquidAI/LFM2.5-1.2B-Instruct, a 1.17B-parameter hybrid (conv + attention) instruction model. Abliteration removes the model's refusal circuitry while preserving its knowledge and generation capabilities."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "PinoCookie/LFM2.5-1.2B-Thinking-Abliterated · Hugging Face",
+      "url": "https://huggingface.co/PinoCookie/LFM2.5-1.2B-Thinking-Abliterated",
+      "snippet": "PinoCookie / LFM2.5-1.2B-Thinking-Abliterated like 0 Text Generation Transformers Safetensors English lfm2 liquid lfm2.5 abliteration safety thinking conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model Libraries Transformers"
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

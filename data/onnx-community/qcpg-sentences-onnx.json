@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "onnx-community/qcpg-sentences-ONNX",
+  "slug": "onnx-community-qcpg-sentences-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/qcpg-sentences-ONNX",
+  "created_at": "2026-09-04T17:51:26.000Z",
+  "updated_at": "2026-09-04T17:51:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "t5",
+    "text2text-generation",
+    "text-2-text-generation",
+    "augmentation",
+    "paraphrase",
+    "paraphrasing",
+    "arxiv:2203.10940",
+    "arxiv:1910.09700",
+    "base_model:ibm-research/qcpg-sentences",
+    "base_model:quantized:ibm-research/qcpg-sentences",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5202048370,
+  "storage_human": "5.2 GB",
+  "base_model": "ibm-research/qcpg-sentences",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free TV",
+      "url": "https://tv.free.fr/",
+      "snippet": "Free TV ... Free TV"
+    },
+    {
+      "title": "onnx-community (ONNX Community) - Hugging Face",
+      "url": "https://huggingface.co/onnx-community",
+      "snippet": "Org profile for ONNX Community on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Regardez la TV en direct et en replay avec Free TV",
+      "url": "https://www.free.fr/freebox/free-tv",
+      "snippet": "Avec l'application Free TV, accédez à tous vos contenus et chaînes TV (direct, replay, streaming) sur tous vos appareils. Service …"
+    },
+    {
+      "title": "ibm-research/qcpg-sentences · Hugging Face",
+      "url": "https://huggingface.co/ibm-research/qcpg-sentences",
+      "snippet": "Here we propose QCPG, a quality-guided controlled paraphrase generation model, that allows directly controlling the quality dimensions. Furthermore, we suggest a method that given a sentence, identifies points in the quality control space that are expected to yield optimal generated paraphrases."
+    },
+    {
+      "title": "Freebox : offres internet Fibre, Wi-Fi 7, TV et avantages box et mobile",
+      "url": "https://www.free.fr/freebox",
+      "snippet": "Passez à la Fibre ultra rapide dès 24,99€/mois. Très Haut Débit, Wi-Fi 7 dernière génération, Box 5G et forfaits mobiles 5G+, sans …"
+    }
+  ]
+}

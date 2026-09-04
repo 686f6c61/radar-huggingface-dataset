@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nif0/hln-krea2",
+  "slug": "nif0-hln-krea2",
+  "author": "nif0",
+  "url": "https://huggingface.co/nif0/hln-krea2",
+  "created_at": "2026-09-04T15:21:15.000Z",
+  "updated_at": "2026-09-04T16:23:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "tensorboard",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "krea2",
+    "krea2-diffusers",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 774656554,
+  "storage_human": "775 MB",
+  "base_model": "krea/Krea-2-Turbo, krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Can’t access YouTube - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/6159254?hl=en",
+      "snippet": "Enter your password. From the list, select YouTube. If your channel is connected to a Brand Account, click your icon in the top right of …"
+    },
+    {
+      "title": "Krea 2: AI Image Foundation Model & Style Control",
+      "url": "https://www.krea.ai/krea-2",
+      "snippet": "Create expressive AI images with Krea 2, Krea AI's in-house foundation model for aesthetic diversity, style control, moodboards, and creative workflows."
+    },
+    {
+      "title": "YouTube で制限付きモードをオンまたはオフにする ...",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube で制限付きモードをオンまたはオフにする 制限付きモードは、YouTube で使用できるオプション設定です。 この機能は …"
+    },
+    {
+      "title": "GitHub - krea-ai/krea-2: Official inference code for Krea 2",
+      "url": "https://github.com/krea-ai/krea-2",
+      "snippet": "Krea 2 - an image generation model from Krea AI. API Docs • Hugging Face (RAW) • Hugging Face (TURBO) • Technical Blog This is the official repository for the open version of Krea 2, an image model trained from scratch focused on creative and stylistic exploration. The repository contains inference code and instructions to run the model."
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的 ...",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    }
+  ]
+}

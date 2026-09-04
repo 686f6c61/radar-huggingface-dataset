@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "beshkenadze/murmur-translation-ct2",
+  "slug": "beshkenadze-murmur-translation-ct2",
+  "author": "beshkenadze",
+  "url": "https://huggingface.co/beshkenadze/murmur-translation-ct2",
+  "created_at": "2026-09-04T14:12:55.000Z",
+  "updated_at": "2026-09-04T14:13:35.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "translation",
+    "ctranslate2",
+    "opus-mt",
+    "quantized",
+    "ru",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 501937511,
+  "storage_human": "502 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.com: Vlad Neagoe: books, biography, latest update",
+      "url": "https://www.amazon.com/stores/author/B008RJ7NWY",
+      "snippet": "Follow Vlad Neagoe and explore their bibliography from Amazon's Vlad Neagoe Author Page."
+    },
+    {
+      "title": "GitHub - OpenNMT/CTranslate2: Fast inference engine for Transformer ...",
+      "url": "https://github.com/OpenNMT/CTranslate2",
+      "snippet": "Fast inference engine for Transformer models. Contribute to OpenNMT/CTranslate2 development by creating an account on GitHub."
+    },
+    {
+      "title": "Amazon.com: Vlad Neagoe: Kindle Store",
+      "url": "https://www.amazon.com/Kindle-Store-Vlad-Neagoe/s?rh=n%3A133140011%2Cp_27%3AVlad%2BNeagoe",
+      "snippet": "Online shopping from a great selection at Kindle Store Store."
+    },
+    {
+      "title": "Murmur | Live Translated Captions for Tours and Talks",
+      "url": "https://murmur.q9labs.ai/",
+      "snippet": "Follow tours, talks, lectures, and conferences in another language with live translated captions. Murmur needs no account and saves no cloud transcript history by default."
+    },
+    {
+      "title": "MESSES SÉCULIÈRES eBook : NEAGOE, VLAD, NEAGOE, LIVIU ... - Amazon",
+      "url": "https://www.amazon.fr/-/en/VLAD-NEAGOE-ebook/dp/B0B9CKG2VX",
+      "snippet": "Vlad Neagoe écrit un ensemble d'œuvres vivantes. Ses poèmes sont l'enfer, le purgatoire et le paradis en égale mesure. Pour …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/gemma-3-1b-it_SFT_lora_ptt",
+  "slug": "xw17-gemma-3-1b-it_sft_lora_ptt",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/gemma-3-1b-it_SFT_lora_ptt",
+  "created_at": "2026-09-04T13:45:03.000Z",
+  "updated_at": "2026-09-04T13:45:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59523831,
+  "storage_human": "60 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amtliche Veröffentlichungen – Bundesanzeiger",
+      "url": "https://www.bundesanzeiger.de/pub/de/amtlicher-teil?year=2026&edition=BAnz+AT+24.08.2026",
+      "snippet": "Aug 24, 2026 · Bekanntmachung der Vergabe- und Vertragsordnung für Bauleistungen Teil A – Abschnitt 2 und Abschnitt 3 (VOB/A) …"
+    },
+    {
+      "title": "xw17/gemma-3-1b-it_SFT_FT_universal · Hugging Face",
+      "url": "https://huggingface.co/xw17/gemma-3-1b-it_SFT_FT_universal",
+      "snippet": "xw17 / gemma-3-1b-it_SFT_FT_universal like 0 Text Generation Transformers Safetensors gemma3_text trl sft conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "BAnz AT 24.08.2026 B6 - abst-sh.de",
+      "url": "https://www.abst-sh.de/fileadmin/download/News/VOB_A_Abschn._2_und_3_2026.pdf",
+      "snippet": "BAnz_AT_24.08.2026_B6.pdf Author"
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    },
+    {
+      "title": "Vergabe- und Vertragsordnung für Bauleistungen Teil A – Abschnitt 2 …",
+      "url": "https://forum-vergabe.de/wp-content/uploads/2026/08/Aenderungen-Abschnitt-2-und-3.pdf",
+      "snippet": "Vergabe- und Vertragsordnung für Bauleistungen Teil A – Abschnitt 2 und Abschnitt 3 (VOB/A) – Ausgabe 2026 - BAnz AT …"
+    }
+  ]
+}

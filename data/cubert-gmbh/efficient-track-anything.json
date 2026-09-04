@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cubert-gmbh/efficient-track-anything",
+  "slug": "cubert-gmbh-efficient-track-anything",
+  "author": "cubert-gmbh",
+  "url": "https://huggingface.co/cubert-gmbh/efficient-track-anything",
+  "created_at": "2026-09-04T11:57:10.000Z",
+  "updated_at": "2026-09-04T11:57:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mirror",
+    "cuvis-ai",
+    "efficienttam",
+    "video-object-segmentation",
+    "base_model:yunyangx/efficient-track-anything",
+    "base_model:finetune:yunyangx/efficient-track-anything",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 415991381,
+  "storage_human": "416 MB",
+  "base_model": "yunyangx/efficient-track-anything",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/r/all+/",
+      "snippet": "Man won $900,000 from the state of California after being psychologically tortured by police during a 17-hour interrogation which lead …"
+    },
+    {
+      "title": "GitHub - cubert-hyperspectral/cuvis-ai-etam: Efficient Track Anything",
+      "url": "https://github.com/cubert-hyperspectral/cuvis-ai-etam",
+      "snippet": "The Efficient Track Anything Model (EfficientTAM) takes a vanilla lightweight ViT image encoder. An efficient memory cross-attention is proposed to further improve the efficiency. Our EfficientTAMs are trained on SA-1B (image) and SA-V (video) datasets. EfficientTAM achieves comparable performance with SAM 2 with improved efficiency."
+    },
+    {
+      "title": "Novidades cartão Cofidis : r/literaciafinanceira - Reddit",
+      "url": "https://www.reddit.com/r/literaciafinanceira/comments/14s4nq2/novidades_cart%C3%A3o_cofidis/",
+      "snippet": "Jul 6, 2023 · A cofidis cobra mais que 2% aos comerciantes. Portanto a cofidis lucrou antes de tu lucrares. Por exemplo como …"
+    },
+    {
+      "title": "Efficient Track Anything - arXiv.org",
+      "url": "https://arxiv.org/html/2411.18933v1",
+      "snippet": "We now address the efficiency issue of SAM 2 for building efficient video object segmentation and track anything model, EfficientTAM. Motivated by the high quality segmentation performance of SAM and EfficientSAM, we revisit using plain, non-hierarchical lightweight image encoders such as ViT-Small/ViT-Tiny, for frame feature extraction."
+    },
+    {
+      "title": "Deuda Cofidis. - Foro Antiusura",
+      "url": "https://www.foroantiusura.org/threads/53728-Deuda-Cofidis",
+      "snippet": "Deuda Cofidis. Lo primero pasa por presentaciones como mandan las normas del foro y despues sube aquí lo que te ha llegado …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_generator_AS_confidence_numina_qwen3b_1000",
+  "slug": "ishikaa-acquisition_generator_as_confidence_numina_qwen3b_1000",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_numina_qwen3b_1000",
+  "created_at": "2026-09-04T16:08:01.000Z",
+  "updated_at": "2026-09-04T16:09:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 12355225928,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Particulier - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "À la une Particulier Professionnel Demande d'aide de 100 € pour les travailleurs « grands rouleurs » Publié le 27 mai 2026 Vous avez …"
+    },
+    {
+      "title": "ishikaa/acquisition_generator_AS_confidence_numina_qwen3b_10 - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_numina_qwen3b_10",
+      "snippet": "Instructions to use ishikaa/acquisition_generator_AS_confidence_numina_qwen3b_10 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "J'accède à mon espace Finances publiques et à mes services en ligne",
+      "url": "https://www.impots.gouv.fr/particulier/jaccede-mon-espace-particulier-et-mes-services-en-ligne",
+      "snippet": "Mar 30, 2016 · Une offre diversifiée de services en ligne vous est proposée dans votre espace Finances publiques. Vous pouvez …"
+    },
+    {
+      "title": "ishikaa/acquisition_generator_AS_confidence_numina_qwen7b - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_numina_qwen7b",
+      "snippet": "Instructions to use ishikaa/acquisition_generator_AS_confidence_numina_qwen7b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Accueil impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/accueil",
+      "snippet": "Suite aux incendies survenus sur le territoire durant l'été, différentes mesures d'accompagnement ont été mises en place pour les …"
+    }
+  ]
+}

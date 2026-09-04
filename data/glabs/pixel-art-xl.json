@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "glabs/pixel-art-xl",
+  "slug": "glabs-pixel-art-xl",
+  "author": "glabs",
+  "url": "https://huggingface.co/glabs/pixel-art-xl",
+  "created_at": "2026-09-04T15:52:25.000Z",
+  "updated_at": "2026-09-04T15:52:25.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "stable-diffusion",
+    "lora",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170543052,
+  "storage_human": "171 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Msn - Actualités High-Tech",
+      "url": "https://forums.commentcamarche.net/forum/affich-2070347-msn",
+      "snippet": "Jan 31, 2006 · MSN Messenger est le logiciel de chat qui - lui - restera gratuit. Il y a également MSN Search, le moteur de recherche …"
+    },
+    {
+      "title": "nerijs/pixel-art-xl · Hugging Face",
+      "url": "https://huggingface.co/nerijs/pixel-art-xl",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Desinstaller new tab [Résolu] - Virus - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-29442367-desinstaller-new-tab",
+      "snippet": "Apr 27, 2020 · Salut, 1) Supprimer l'extension qui cause des problèmes. Sur Firefox : Menu Outils / Modules complémentaires Onglet …"
+    },
+    {
+      "title": "Pixel Art XL - v1.1 | Stable Diffusion XL LoRA | Civitai",
+      "url": "https://civitai.com/models/120096/pixel-art-xl",
+      "snippet": "Pixel Art XL Consider supporting further research on Ko-Fi or Twitter If you have a request, you can do it via Ko-Fi Checkout my other models at RetroDiffusion Best used in conjunction with: Astropulse PixelDetector Downscale 8 times to get pixel perfect images (use Nearest Neighbors) Use a fixed VAE to avoid artifacts (0.9 or fp16 fix) Best results without using, pixel art in the prompt Tips ..."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/zh-hans/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â½win8ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â´ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°/d8c51abf-b863-4da3-9596-797deace59f7",
+      "snippet": ""
+    }
+  ]
+}

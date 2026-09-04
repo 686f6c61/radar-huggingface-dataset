@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "XHToken/Spark-X2.5-1.7B-Base",
+  "slug": "xhtoken-spark-x2-5-1-7b-base",
+  "author": "XHToken",
+  "url": "https://huggingface.co/XHToken/Spark-X2.5-1.7B-Base",
+  "created_at": "2026-08-28T09:50:51.000Z",
+  "updated_at": "2026-08-31T15:43:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "spark2_5",
+    "text-generation",
+    "llm",
+    "sparkx2_5",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 306,
+  "trending_score": 13,
+  "parameters": 1707657216,
+  "parameters_human": "1.71B",
+  "storage_bytes": 3426045486,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    },
+    {
+      "title": "GitHub - XHToken/Spark-X2.5: Spark-x2.5 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.5",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    },
+    {
+      "title": "Google Übersetzer herunterladen und verwenden",
+      "url": "https://support.google.com/translate/answer/6350850?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Mit der Google Übersetzer App können Sie Text, Handschrift, Fotos und Spracheingaben in mehr als 200 Sprachen übersetzen. …"
+    },
+    {
+      "title": "Spark-X2.5-1.7B-Base · Models",
+      "url": "https://www.modelscope.cn/models/XHToken/Spark-X2.5-1.7B-Base",
+      "snippet": "Introduction We are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among ..."
+    },
+    {
+      "title": "Change Google Translate dropdown programmatically",
+      "url": "https://stackoverflow.com/questions/5569927/change-google-translate-dropdown-programmatically",
+      "snippet": "Apr 6, 2011 · When you select from the dropdown that the google script inserts, a Google Translate bar appears at the top of the …"
+    }
+  ]
+}

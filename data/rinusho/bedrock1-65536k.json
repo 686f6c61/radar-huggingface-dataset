@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "rinusho/Bedrock1-65536k",
+  "slug": "rinusho-bedrock1-65536k",
+  "author": "rinusho",
+  "url": "https://huggingface.co/rinusho/Bedrock1-65536k",
+  "created_at": "2026-09-04T17:56:58.000Z",
+  "updated_at": "2026-09-04T18:10:36.000Z",
+  "license": "bsd-2-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tokenizer",
+    "license:bsd-2-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PornHub.com :: Video X Gratuite - Site Porno Gratuit",
+      "url": "https://fr.pornhub.com/categories",
+      "snippet": "Tu viens de trouver le paradis de la pornographie. Tu ne rêves pas, un site porno gratuit, avec vidéo x gratuite. Profites des trésors …"
+    },
+    {
+      "title": "Moonshot AI - Amazon Bedrock",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-moonshot-ai.html",
+      "snippet": "Kimi K2 Thinking Explore Kimi K2 Thinking by Moonshot AI on Amazon Bedrock: model specs, supported APIs, regional availability, service tiers, and sample code for first inference requests."
+    },
+    {
+      "title": "Porno – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=porno",
+      "snippet": "Regarde les vidéos porno de Porno gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    },
+    {
+      "title": "Kimi K2 Thinking - Amazon Bedrock",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-moonshot-ai-kimi-k2-thinking.html",
+      "snippet": "Kimi K2 Thinking is Moonshot AI's reasoning model with chain-of-thought capabilities for complex problem solving in math, coding, and logic. For more information about model development and performance, see the model/service card."
+    },
+    {
+      "title": "Vidéos porno HD : Les filles les plus sexy en haute définition | Pornhub",
+      "url": "https://fr.pornhub.com/hd",
+      "snippet": "Porno HD gratuit sur Pornhub.com. Vous cherchez des vidéos de sexe en haute définition dans chaque niche XXX triple ? Le …"
+    }
+  ]
+}

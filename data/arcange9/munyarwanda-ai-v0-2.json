@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "arcange9/Munyarwanda-AI-v0.2",
+  "slug": "arcange9-munyarwanda-ai-v0-2",
+  "author": "arcange9",
+  "url": "https://huggingface.co/arcange9/Munyarwanda-AI-v0.2",
+  "created_at": "2026-09-04T17:37:37.000Z",
+  "updated_at": "2026-09-04T18:46:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "rw"
+  ],
+  "tags": [
+    "kinyarwanda",
+    "rwanda",
+    "llm",
+    "qwen",
+    "qlora",
+    "rw",
+    "dataset:arcange9/Munyarwanda-AI-Dataset",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix - 知乎",
+      "url": "https://www.zhihu.com/topic/19552757/hot",
+      "snippet": "Netflix (Nasdaq NFLX) 成立于1997年，是一家为世界多国提供网络视频点播的公司，主要提供Netflix超大数量的DVD并免费递送，总 …"
+    },
+    {
+      "title": "GitHub - arcange9/Munyarwanda-Ai: Kinyarwanda-focused AI platform for ...",
+      "url": "https://github.com/arcange9/Munyarwanda-Ai",
+      "snippet": "Kinyarwanda-focused AI platform for building accessible, useful, and culturally relevant AI experiences. - arcange9/Munyarwanda-Ai"
+    },
+    {
+      "title": "如何强制播放 Netflix 1080P 清晰度视频？ - 知乎",
+      "url": "https://www.zhihu.com/question/406310327",
+      "snippet": "很多人都以为 Netflix 只能自动匹配清晰度，不能手动选择，其实是有办法强制开启 1080P 的，本文将教你如何开启。 影响你观看 …"
+    },
+    {
+      "title": "arcange9/Munyarwanda-AI-Dataset · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/arcange9/Munyarwanda-AI-Dataset",
+      "snippet": "This is a starter seed, not a production-scale Kinyarwanda corpus. It includes curated examples and synthetic paraphrases. For serious model training, add properly licensed real Kinyarwanda text, human-reviewed instruction data, deduplication, PII filtering, quality checks, and benchmark evaluation. Hugging Face Upload these files to: arcange9/Munyarwanda-AI-Dataset"
+    },
+    {
+      "title": "Adolescence (2025) | Netflix | DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/adolescence-2025-netflix--160804556",
+      "snippet": "Feb 24, 2025 · 13 Mart’ta başlayacak olan ve başrolünde Stephen Graham’ın (Boiling Point) yer aldığı dört bölümlük mini bir dizi olan …"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Blue-nim/K2-Horizon-MoVA-36B-A4B-GGUF",
+  "slug": "blue-nim-k2-horizon-mova-36b-a4b-gguf",
+  "author": "Blue-nim",
+  "url": "https://huggingface.co/Blue-nim/K2-Horizon-MoVA-36B-A4B-GGUF",
+  "created_at": "2026-09-04T11:43:53.000Z",
+  "updated_at": "2026-09-04T11:43:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "k2-horizon",
+    "36b",
+    "mova",
+    "moe",
+    "open-weights",
+    "ifm",
+    "text-generation",
+    "en",
+    "dataset:IFM/K2-Horizon-Pretrain-Data",
+    "dataset:IFM/K2-Horizon-Midtrain-Data",
+    "base_model:IFM/K2-Horizon-MoVA-36B-A4B",
+    "base_model:quantized:IFM/K2-Horizon-MoVA-36B-A4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37444792020,
+  "parameters_human": "37.44B",
+  "storage_bytes": 74926054299,
+  "storage_human": "74.9 GB",
+  "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blue - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Blue",
+      "snippet": "Darker shades of blue include ultramarine, cobalt blue, navy blue, and Prussian blue; while lighter tints include sky blue, azure, and …"
+    },
+    {
+      "title": "Introducing K2 Horizon: Frontier Performance, Radically Open",
+      "url": "https://ifm.ai/blog/k2",
+      "snippet": "The result is K2 Horizon MoVA 36B-A4B: a model with 36 billion total parameters but approximately 4 billion active parameters per token. Under the same training conditions, it performs only slightly below the dense Horizon 32B model while requiring substantially fewer active parameters."
+    },
+    {
+      "title": "Blue (English group) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Blue_(English_group)",
+      "snippet": "Blue are an English boy band consisting of members Simon Webbe, Duncan James, Antony Costa, and Lee Ryan. The group formed …"
+    },
+    {
+      "title": "K2 Horizon MoVA 36B A4B: Benchmarks, Pricing & Context Window — Benchgen",
+      "url": "https://benchgen.com/models/ifm/k2-horizon-mova-36b-a4b",
+      "snippet": "Quick answer:K2-Horizon-MoVA-36B-A4B is IFM's sparse Mixture-of-Experts model using Mixture-of-Values attention (MoVA) — 36B total parameters, only 4B active per token, with a native 512K-token context window. It outscores open-weight dense and MoE models up to 15x its active-parameter size on agentic and reasoning benchmarks, and is competitive with closed frontier models. Open weights ..."
+    },
+    {
+      "title": "Blue | Official Website",
+      "url": "https://www.officialblue.com/",
+      "snippet": "Kuala Lumpur, MY Tickets Get notified when new events are announced in your area Follow Blue powered by seated OFFICIAL …"
+    }
+  ]
+}

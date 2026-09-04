@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/Qwen2-1.5B-Instruct_SFT_lora_glycemic",
+  "slug": "xw17-qwen2-1-5b-instruct_sft_lora_glycemic",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Qwen2-1.5B-Instruct_SFT_lora_glycemic",
+  "created_at": "2026-09-04T15:26:30.000Z",
+  "updated_at": "2026-09-04T15:26:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48399334,
+  "storage_human": "48 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Início | Libreflix",
+      "url": "https://libreflix.org/",
+      "snippet": "Libreflix é uma plataforma de streaming aberta e colaborativa que reúne produções audiovisuais independentes, de livre exibição e …"
+    },
+    {
+      "title": "xw17/Qwen2-1.5B-Instruct_SFT_lora_universal · Hugging Face",
+      "url": "https://huggingface.co/xw17/Qwen2-1.5B-Instruct_SFT_lora_universal",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Todas as Séries | Libreflix",
+      "url": "https://libreflix.org/explore/format/series",
+      "snippet": "Libreflix é uma plataforma de streaming aberta e colaborativa que reúne produções audiovisuais independentes, de livre exibição e …"
+    },
+    {
+      "title": "xw17/Qwen2-1.5B-Instruct_SFT_lora_usc-had at main - Hugging Face",
+      "url": "https://huggingface.co/xw17/Qwen2-1.5B-Instruct_SFT_lora_usc-had/tree/main",
+      "snippet": "Use this model main Qwen2-1.5B-Instruct_SFT_lora_usc-had 48.4 MB Ctrl+K Ctrl+K 1 contributor History:3 commits xw17 Upload tokenizer 85a37c7 verifiedabout 8 hours ago .gitattributes Safe 1.57 kBUpload tokenizerabout 8 hours ago README.md Safe 5.17 kBUpload modelabout 8 hours ago adapter_config.json 1.06 kBUpload modelabout 8 hours ago adapter ..."
+    },
+    {
+      "title": "Arquivos Lançamentos - Blog da LibreflixBlog da Libreflix",
+      "url": "https://blog.libreflix.org/c/lancamentos/",
+      "snippet": "O Libreflix é uma plataforma de streaming para a mudança social! Todo o seu desenvolvimento é feito sem fins lucrativos e …"
+    }
+  ]
+}

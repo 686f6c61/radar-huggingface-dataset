@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Harrdan2001/zero-shot-transfer20",
+  "slug": "harrdan2001-zero-shot-transfer20",
+  "author": "Harrdan2001",
+  "url": "https://huggingface.co/Harrdan2001/zero-shot-transfer20",
+  "created_at": "2026-09-04T18:02:53.000Z",
+  "updated_at": "2026-09-04T18:02:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "zero-shot-transfer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "F1 - The Official Home of Formula 1® Racing",
+      "url": "https://www.formula1.com/",
+      "snippet": "Enter the world of Formula 1. Your go-to source for the latest F1 news, video highlights, GP results, live timing, in-depth analysis and …"
+    },
+    {
+      "title": "Harrdan2001 (Daniel) - Hugging Face",
+      "url": "https://huggingface.co/Harrdan2001/datasets",
+      "snippet": "Part-time photographer, full-time coder"
+    },
+    {
+      "title": "F1 Schedule 2026 - Official Calendar of Grand Prix Races",
+      "url": "https://www.formula1.com/en/racing.html",
+      "snippet": "Re-live your favourite F1 moments. Find the full list of 2026 races including photos and videos, results, highlights and the biggest …"
+    },
+    {
+      "title": "Harrdan2001/thesis-few-shot-multimodal · Hugging Face",
+      "url": "https://huggingface.co/Harrdan2001/thesis-few-shot-multimodal",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "F1 Schedule 2026 - Sky Sports",
+      "url": "https://www.skysports.com/f1/schedule",
+      "snippet": "SprintStarting Sat 10 Oct, 10:00am QualifyingStarting Sat 10 Oct, 2:00pm RaceStarting Sun 11 Oct, 1:00pm Available to watch on Sky …"
+    }
+  ]
+}

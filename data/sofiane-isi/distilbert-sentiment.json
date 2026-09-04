@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sofiane-isi/distilbert-sentiment",
+  "slug": "sofiane-isi-distilbert-sentiment",
+  "author": "sofiane-isi",
+  "url": "https://huggingface.co/sofiane-isi/distilbert-sentiment",
+  "created_at": "2026-09-04T14:28:19.000Z",
+  "updated_at": "2026-09-04T14:28:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "sentiment-analysis",
+    "dataset:cornell-movie-review-data/rotten_tomatoes",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837825,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sofiane Zermani — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sofiane_Zermani",
+      "snippet": "Sofiane Zermani, également dit Sofiane ou Fianso, est un rappeur, acteur et producteur musical français, né le 21 juillet 1986 à Saint …"
+    },
+    {
+      "title": "DT12the/distilbert-sentiment-analysis · Hugging Face",
+      "url": "https://huggingface.co/DT12the/distilbert-sentiment-analysis",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sofiane Officiel - YouTube",
+      "url": "https://www.youtube.com/channel/UCqZsLxSCpQ2g-0CAT-cxuqg",
+      "snippet": "Sofiane - #JeSuisPasséChezSo2023 [Clip Officiel] Freestyle disponible sur les plateformes de streaming : …"
+    },
+    {
+      "title": "Sentiment Analysis using DistilBERT | IEEE Conference Publication ...",
+      "url": "https://ieeexplore.ieee.org/document/10420272",
+      "snippet": "Sentiment Analysis using DistilBERT Abstract: Transformers is an architecture that performs well in NLP task. To understand and improve its performance on sentiment analysis, DistilBERT is employed as the base model. Sentiment analysis is a process that extracts subjective information from textual data and categorizes them into different classes."
+    },
+    {
+      "title": "Sofiane (rapper) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sofiane_(rapper)",
+      "snippet": "Sofiane Zermani (French pronunciation: [sɔfjan zɛʁmani], Arabic: سفيان زرماني; born 21 July 1986) is a French rapper. He is also known …"
+    }
+  ]
+}

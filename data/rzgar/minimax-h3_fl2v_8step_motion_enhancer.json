@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "rzgar/minimax-h3_fl2v_8Step_motion_enhancer",
+  "slug": "rzgar-minimax-h3_fl2v_8step_motion_enhancer",
+  "author": "rzgar",
+  "url": "https://huggingface.co/rzgar/minimax-h3_fl2v_8Step_motion_enhancer",
+  "created_at": "2026-09-04T04:37:48.000Z",
+  "updated_at": "2026-09-04T05:28:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-video",
+    "image-to-video",
+    "image-text-to-video",
+    "video-to-video",
+    "text-to-audio-video",
+    "image-to-audio-video",
+    "image-text-to-audio-video",
+    "video-to-audio-video",
+    "audio-to-audio-video",
+    "audio-video-generation",
+    "multimodal",
+    "synchronized-audio-video",
+    "reference-to-audio-video",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2656422136,
+  "storage_human": "2.7 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bet365 US - where do you want to play?",
+      "url": "https://www.bet365.com/",
+      "snippet": "Explaining the different states and areas users can be in to place wagers on the bet365 US sportsbook"
+    },
+    {
+      "title": "Horse Racing Betting & Latest Horse Racing Odds - bet365 UK",
+      "url": "https://www.bet365.com/hub/en-gb/horse-racing",
+      "snippet": "See the latest Horse Racing Betting Odds from bet365. Bet on upcoming & In-Play races, plus news, tips & more. Everything you …"
+    },
+    {
+      "title": "Play Online Games | Casino, Roulette & Slots | bet365",
+      "url": "https://casino.bet365.com/home/en",
+      "snippet": "bet365 Games. There's a variety of games including Slots, Featured Games and Table Games."
+    },
+    {
+      "title": "bet365 - Site Features",
+      "url": "https://extra.bet365.com/",
+      "snippet": "Bet on Horse Racing, Greyhounds, Soccer, NFL, NCAAF, NBA, NCAAB, MLB and take advantage of fantastic promotions."
+    },
+    {
+      "title": "Play Poker - bet365 Games",
+      "url": "https://casino.bet365.com/Play/Poker",
+      "snippet": "Play online Games at bet365. There's a huge variety of games including Slots, Featured Games and Table Games. Pick up a New …"
+    }
+  ]
+}

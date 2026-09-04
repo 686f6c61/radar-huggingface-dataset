@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "AkshAIML/tinyllama-sql-lora-adapter",
+  "slug": "akshaiml-tinyllama-sql-lora-adapter",
+  "author": "AkshAIML",
+  "url": "https://huggingface.co/AkshAIML/tinyllama-sql-lora-adapter",
+  "created_at": "2026-09-04T11:21:12.000Z",
+  "updated_at": "2026-09-04T12:31:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50503544,
+  "storage_human": "51 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jobsuche der BA – Startseite",
+      "url": "https://www.arbeitsagentur.de/jobsuche/",
+      "snippet": "Jobsuche der Bundesagentur für Arbeit. Hier Stellensuche nach neusten Jobs oder Ausbildungsplätzen starten in einer der größten …"
+    },
+    {
+      "title": "tushkulange/tinyllama-text-to-sql-lora · Hugging Face",
+      "url": "https://huggingface.co/tushkulange/tinyllama-text-to-sql-lora",
+      "snippet": "Edit model card tinyllama-text-to-sql-lora This model is a fine-tuned version of PY007/TinyLlama-1.1B-Chat-v0.3 on the None dataset. Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters"
+    },
+    {
+      "title": "Anmeldung | Bundesagentur für Arbeit",
+      "url": "https://web.arbeitsagentur.de/profil/profil-ui/pd/",
+      "snippet": "Startseite Anmeldung Anmelden Hier können Sie sich für die Online-Angebote der Bundesagentur für Arbeit anmelden. Dazu …"
+    },
+    {
+      "title": "GitHub - Akshu0713/LLM-Fine-Tuning: Fine-tuned TinyLlama (1.1B) using ...",
+      "url": "https://github.com/Akshu0713/LLM-Fine-Tuning",
+      "snippet": "Fine-tuned TinyLlama (1.1B) using LoRA (PEFT) on a Text-to-SQL dataset. Demonstrates efficient LLM fine-tuning, prompt formatting, before/after evaluation, and adapter saving without full model training."
+    },
+    {
+      "title": "arbeitsagentur.de",
+      "url": "http://jobboerse2.arbeitsagentur.de/verbis/login",
+      "snippet": "Benutzername Kennwort"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "AdarshSingh7647/TabRankMultiTableNaive",
+  "slug": "adarshsingh7647-tabrankmultitablenaive",
+  "author": "AdarshSingh7647",
+  "url": "https://huggingface.co/AdarshSingh7647/TabRankMultiTableNaive",
+  "created_at": "2026-09-04T17:57:23.000Z",
+  "updated_at": "2026-09-04T17:57:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "table-ranking",
+    "listwise-reranking",
+    "table-retrieval",
+    "table-question-answering",
+    "qwen3",
+    "text-generation",
+    "en",
+    "arxiv:2607.25182",
+    "arxiv:2504.01346",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/",
+      "snippet": "Avec leboncoin, trouvez la bonne affaire sur le site référent de petites annonces de particulier à particulier et de professionnels. Avec …"
+    },
+    {
+      "title": "AdarshSingh7647/TabRankSingleTableNaive · Hugging Face",
+      "url": "https://huggingface.co/AdarshSingh7647/TabRankSingleTableNaive",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Voiture occasion - annonces automobiles de particuliers et …",
+      "url": "https://www.leboncoin.fr/c/voitures",
+      "snippet": "Consultez nos annonces de voitures d’occasion toutes marques : citadines, SUV, berlines, électriques, hybrides. Plus de 700 000 …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=AdarshSingh7647%2FTabRankMultiTableNaive",
+      "snippet": "AdarshSingh7647/TabRankMultiTableNaive Text Generation • 8B•Updated 2 days ago• 330"
+    },
+    {
+      "title": "Immobilier neuf Rhône Alpes | leboncoin Immobilier Neuf",
+      "url": "https://immobilierneuf.leboncoin.fr/immobilier-neuf/appartement+maison+terrain/a/rhone-alpes/",
+      "snippet": "Septembre 2026 - Avec leboncoin, découvrez 1148 programmes immobiliers pour habiter, investir ou défiscaliser dans la région …"
+    }
+  ]
+}

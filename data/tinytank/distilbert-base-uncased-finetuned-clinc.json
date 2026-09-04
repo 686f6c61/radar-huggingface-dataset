@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "TinyTank/distilbert-base-uncased-finetuned-clinc",
+  "slug": "tinytank-distilbert-base-uncased-finetuned-clinc",
+  "author": "TinyTank",
+  "url": "https://huggingface.co/TinyTank/distilbert-base-uncased-finetuned-clinc",
+  "created_at": "2026-09-04T15:43:22.000Z",
+  "updated_at": "2026-09-04T16:14:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 67069591,
+  "parameters_human": "67.1M",
+  "storage_bytes": 536587001,
+  "storage_human": "537 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - Connexion ou inscription",
+      "url": "https://fr-fr.facebook.com/",
+      "snippet": "Créez un compte ou connectez-vous à Facebook. Connectez-vous avec vos amis, la famille et d’autres connaissances. Partagez des …"
+    },
+    {
+      "title": "distilbert-base-uncased - Hugging Face",
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Explore the things you love. Log into Facebook Email or mobile number Password Log in"
+    },
+    {
+      "title": "distilbert-base-uncased-finetuned-sst-2-english - Hugging Face",
+      "url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "Facebook creator Jakethejuice is fired up by the US Open and giving tennis a (trick) shot. If you also have tennis fever, Facebook …"
+    }
+  ]
+}

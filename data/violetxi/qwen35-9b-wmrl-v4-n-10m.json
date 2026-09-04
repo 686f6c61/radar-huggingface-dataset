@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "violetxi/qwen35-9b-wmrl-v4-n-10m",
+  "slug": "violetxi-qwen35-9b-wmrl-v4-n-10m",
+  "author": "violetxi",
+  "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-n-10m",
+  "created_at": "2026-09-04T15:26:44.000Z",
+  "updated_at": "2026-09-04T15:28:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "wm-internalization",
+    "v4",
+    "n-10m",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19319118982,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in - Claude",
+      "url": "https://claude.ai/",
+      "snippet": "Claude is an AI assistant by Anthropic, designed to assist with creative tasks like drafting websites, graphics, documents, and code …"
+    },
+    {
+      "title": "violetxi/qwen35-9b-wmrl-v4-c1-b5v4 · Hugging Face",
+      "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-c1-b5v4",
+      "snippet": "violetxi/qwen35-9b-wmrl-v4-c1-b5v4 wm-internalization v4 checkpoint — condition c1-b5v4, save final. Full-finetune of Qwen/Qwen3.5-9B on the Calderwood & Harkness synthetic law-firm corpus (world-internalization study, v4 lineage: 9B student, ~50k think-on seed pool)."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.ai/login-Claude",
+      "snippet": "Claude is Anthropic's AI, built for problem solvers. Tackle complex challenges, analyze data, write code, and think through your …"
+    },
+    {
+      "title": "violetxi/qwen35-9b-wmrl-v4-lrsmoke-1e5 · Hugging Face",
+      "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-lrsmoke-1e5",
+      "snippet": "violetxi/qwen35-9b-wmrl-v4-lrsmoke-1e5 wm-internalization v4 checkpoint — condition lrsmoke-1e5, save final. Full-finetune of Qwen/Qwen3.5-9B on the Calderwood & Harkness synthetic law-firm corpus (world-internalization study, v4 lineage: 9B student, ~50k think-on seed pool)."
+    },
+    {
+      "title": "Slack - assets.claude.ai",
+      "url": "https://assets.claude.ai/brand/artifacts/product/tag/tag-alert-triage.html",
+      "snippet": "On it — watching #prod-alerts now. I’ll triage what comes in and work the backlog, and only tag you when something needs your call."
+    }
+  ]
+}

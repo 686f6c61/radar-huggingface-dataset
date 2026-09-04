@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen-3.5-2b-friendly-friend-merged-GGUF",
+  "slug": "mradermacher-qwen-3-5-2b-friendly-friend-merged-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen-3.5-2b-friendly-friend-merged-GGUF",
+  "created_at": "2026-09-04T11:50:07.000Z",
+  "updated_at": "2026-09-04T11:59:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "en",
+    "base_model:DontYaps/qwen-3.5-2b-friendly-friend-merged",
+    "base_model:quantized:DontYaps/qwen-3.5-2b-friendly-friend-merged",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 19636741952,
+  "storage_human": "19.6 GB",
+  "base_model": "DontYaps/qwen-3.5-2b-friendly-friend-merged",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Where in the UK is area code 077? - Answers",
+      "url": "https://www.answers.com/telecommunications/Where_in_the_UK_is_area_code_077",
+      "snippet": "Feb 8, 2025 · UK numbers beginning with 074 through 079 are mobiles. From outside the UK, replace the leading '0' with the country …"
+    },
+    {
+      "title": "mradermacher/Qwen3.5-2B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-2B-i1-GGUF",
+      "snippet": "mradermacher / Qwen3.5-2B-i1-GGUF like 0 Transformers GGUF English imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "Where in the UK is area code 44 78? - Answers",
+      "url": "https://www.answers.com/telecommunications/Where_in_the_UK_is_area_code_44_78",
+      "snippet": "Feb 9, 2025 · +44 is the telephone country code for the UK. A number beginning with +44 78 is a UK mobile phone.(The plus sign …"
+    },
+    {
+      "title": "mradermacher/Qwen3.5-2B-i1-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-2B-i1-GGUF/tree/main",
+      "snippet": "mradermacher / Qwen3.5-2B-i1-GGUF like 1 Transformers GGUF English imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Where in India is telephone area code 078? - Answers",
+      "url": "https://www.answers.com/telecommunications/Where_in_India_is_telephone_area_code_078",
+      "snippet": "India's telephone area code (or \"STD Code\") 07677 (international: +91 7677) is for a mobile phonefrom Bihar or Jharkhand state. It is …"
+    }
+  ]
+}

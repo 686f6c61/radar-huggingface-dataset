@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "bhaskaro/ainotes-whisper-telugu-medium-q5_1",
+  "slug": "bhaskaro-ainotes-whisper-telugu-medium-q5_1",
+  "author": "bhaskaro",
+  "url": "https://huggingface.co/bhaskaro/ainotes-whisper-telugu-medium-q5_1",
+  "created_at": "2026-09-04T16:19:55.000Z",
+  "updated_at": "2026-09-04T16:20:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisper.cpp",
+  "languages": [
+    "te"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "whisper",
+    "ggml",
+    "automatic-speech-recognition",
+    "telugu",
+    "te",
+    "base_model:vasista22/whisper-telugu-medium",
+    "base_model:finetune:vasista22/whisper-telugu-medium",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 586572019,
+  "storage_human": "587 MB",
+  "base_model": "vasista22/whisper-telugu-medium",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marriott Bonvoy Hotels | Book Directly & Get Exclusive Rates",
+      "url": "https://www.marriott.com/default.mi?msockid=07fe47e511836a4a32e4502f10546bc8",
+      "snippet": "Book Directly & Save at any of our 9000+ Marriott Bonvoy Hotels. Choose from Luxury Hotels, Resorts, Extended Stay Hotels, Pet …"
+    },
+    {
+      "title": "bhaskaro/ainotes-whisper-urdu-q5_1 · Hugging Face",
+      "url": "https://huggingface.co/bhaskaro/ainotes-whisper-urdu-q5_1",
+      "snippet": "bhaskaro / ainotes-whisper-urdu-q5_1 like 0 Automatic Speech Recognition Urdu whisper.cpp whisper ggml urdu License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Whisper Urdu (small) — GGML q5_1 Measured Required setting Conversion Licence and attribution"
+    },
+    {
+      "title": "Welcome to Marriott Bonvoy",
+      "url": "https://www.marriott.com/en-gb/sign-in.mi?msockid=07fe47e511836a4a32e4502f10546bc8",
+      "snippet": "Sign in to your Marriott Bonvoy account to check your points balance, book your next hotel stay and more. Use your existing Marriott …"
+    },
+    {
+      "title": "bhaskaro/ainotes-whisper-hindi-medium-q5_1 · Hugging Face",
+      "url": "https://huggingface.co/bhaskaro/ainotes-whisper-hindi-medium-q5_1",
+      "snippet": "Whisper Hindi medium, GGML q5_1 vasista22/whisper-hindi-mediumconverted to GGML and quantised to q5_1 for whisper.cpp, for use on Android. An optional higher-accuracy alternative to the 190 MB small model, not a replacement for it. Measured FLEURS hi_in, 32 clips, scored through whisper.cpp with the settings the app actually uses - no_timestamps, greedy, common-script romanisation before scoring:"
+    },
+    {
+      "title": "Fam-Tastic Benefits - A Graduate Exclusive - Marriott",
+      "url": "https://www.travelagents.marriott.com/travelagents/hss/signin.mi",
+      "snippet": "Fam-Tastic rates are our lowest industry rates available exclusively to qualified travel advisors to experience our vast global portfolio …"
+    }
+  ]
+}

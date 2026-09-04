@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chiakiidn/beit-generation-notebook",
+  "slug": "chiakiidn-beit-generation-notebook",
+  "author": "chiakiidn",
+  "url": "https://huggingface.co/chiakiidn/beit-generation-notebook",
+  "created_at": "2026-09-04T17:32:41.000Z",
+  "updated_at": "2026-09-04T17:32:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CD64 PÉTANQUE",
+      "url": "https://www.petanquecd64.fr/",
+      "snippet": "Le comité est ouvert le matin sur rendez-vous du lundi au vendredi et l'après midi de 13h30 à 17h30 du lundi au jeudi ! Le comité …"
+    },
+    {
+      "title": "chiakiidn (Aditya F. Banerjee) - Hugging Face",
+      "url": "https://huggingface.co/chiakiidn/models",
+      "snippet": "User profile of Aditya F. Banerjee on Hugging Face"
+    },
+    {
+      "title": "Comité Départemental des Pyrénées-Atlantiques de Pétanque",
+      "url": "https://portail.sportsregions.fr/petanque-et-jeu-provencal/pyrenees-atlantiques/clubs/comite-departemental-des-pyrenees-atlantiques-de-petanque-20681",
+      "snippet": "Site officiel du comité de Pétanque et Jeu Provençal Comité Départemental des Pyrénées-Atlantiques de Pétanque à PAU (Pyrénées …"
+    },
+    {
+      "title": "chiakiidn (Aditya F. Banerjee) - Hugging Face",
+      "url": "https://huggingface.co/chiakiidn",
+      "snippet": "datasets1 chiakiidn/dataset_035826245_geology_image_audio Updated about 6 hours ago"
+    },
+    {
+      "title": "Concours & Classements - CD64 PÉTANQUE",
+      "url": "https://petanquecd64.fr/en-savoir-plus/concours-classements-124979",
+      "snippet": "Nov 1, 2025 · Ces classements sont mis à jour avec les fichiers GCZ reçus au CD64. Les points de catégorisation des concours des …"
+    }
+  ]
+}

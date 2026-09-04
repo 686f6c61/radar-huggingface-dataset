@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Tripura8928/dqn-SpaceInvadersNoFrameskip-v4",
+  "slug": "tripura8928-dqn-spaceinvadersnoframeskip-v4",
+  "author": "Tripura8928",
+  "url": "https://huggingface.co/Tripura8928/dqn-SpaceInvadersNoFrameskip-v4",
+  "created_at": "2026-09-04T11:43:39.000Z",
+  "updated_at": "2026-09-04T11:44:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "SpaceInvadersNoFrameskip-v4",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54512599,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jeuxvideo.com toute l'actualité du jeu vidéo et du hardware",
+      "url": "https://www.jeuxvideo.com/",
+      "snippet": "Retrouvez toute l'actualité du jeu video sur PC et consoles. Faites le plein de tests de jeux vidéo et de soluce. Découvrez aussi tous …"
+    },
+    {
+      "title": "KraTUZen/dqn-SpaceInvadersNoFrameskip-v4 · Hugging Face",
+      "url": "https://huggingface.co/KraTUZen/dqn-SpaceInvadersNoFrameskip-v4",
+      "snippet": "The agent is trained using DQN, a value-based deep reinforcement learning algorithm. The environment is SpaceInvadersNoFrameskip-v4, a classic Atari game where the agent must shoot down alien invaders."
+    },
+    {
+      "title": "PC : News, vidéos, tests et preview de jeux PC sur jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/pc.htm",
+      "snippet": "Retrouvez toute l'actualité PC sur jeuxvideo.com. Retrouvez les derniers tests, vidéos, news et astuces de vos jeux préférés sur PC !"
+    },
+    {
+      "title": "Bear-ai/dqn-SpaceInvadersNoFrameskip-v4 · Hugging Face",
+      "url": "https://huggingface.co/Bear-ai/dqn-SpaceInvadersNoFrameskip-v4",
+      "snippet": "DQN Agent playing SpaceInvadersNoFrameskip-v4 This is a trained model of a DQN agent playing SpaceInvadersNoFrameskip-v4 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "Utiliser Le Lecteur Sd En Mode Gamecube Sur Wii",
+      "url": "https://gueux-forum.net/topic/180163-utiliser-le-lecteur-sd-en-mode-gamecube-sur-wii/",
+      "snippet": "Jan 15, 2008 · Bonsoir, Je ne suis pas sur d'avoir bien compris : Est ce que les sauvegardes des jeux game cube peuvent se placer …"
+    }
+  ]
+}

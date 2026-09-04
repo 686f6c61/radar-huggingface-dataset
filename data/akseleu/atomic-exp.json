@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Akseleu/atomic-exp",
+  "slug": "akseleu-atomic-exp",
+  "author": "Akseleu",
+  "url": "https://huggingface.co/Akseleu/atomic-exp",
+  "created_at": "2026-09-04T15:26:09.000Z",
+  "updated_at": "2026-09-04T15:26:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "使用 Microsoft Word 进行免费的在线文档编辑 | Microsoft 365",
+      "url": "https://www.microsoft.com/zh-cn/microsoft-365/word?msockid=344c83111ec061cd189594db1fc660c3",
+      "snippet": "使用 Microsoft Word 在线编辑文档，并使用 Copilot 提供的 AI 建议来改善语法、样式和清晰度。随时随地书写、编辑和协作。"
+    },
+    {
+      "title": "Akseleu (Akseleu Omirbay) - Hugging Face",
+      "url": "https://huggingface.co/Akseleu/models",
+      "snippet": "Organizations Akseleu's models1 Sort: Recently updated Akseleu/Atomic-mini-4mln Updated Jul 20"
+    },
+    {
+      "title": "Microsoft 365 online gratuito | Word, Excel, PowerPoint",
+      "url": "https://www.microsoft.com/it-it/microsoft-365/free-office-online-for-the-web?msockid=344c83111ec061cd189594db1fc660c3",
+      "snippet": "Con Microsoft 365 per il Web puoi modificare e condividere file di Word, Excel, PowerPoint e OneNote nei tuoi dispositivi tramite un …"
+    },
+    {
+      "title": "Akseleu (Akseleu Omirbay) - Hugging Face",
+      "url": "https://huggingface.co/Akseleu",
+      "snippet": "User profile of Akseleu Omirbay on Hugging Face"
+    },
+    {
+      "title": "Microsoft Word - Windows官方下载 | 微软应用商店 | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/xpff9ltfvsk6f7?hl=zh-CN&gl=CN",
+      "snippet": "Word文档 • 图像、表格、图表、SmartArt、脚注、公式等皆能完美呈现 • Word 文档和电脑上的一样精美 • 自动记忆功能让您可以在任 …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zjumty/so101-yolo11n-seg-plastic-cup",
+  "slug": "zjumty-so101-yolo11n-seg-plastic-cup",
+  "author": "zjumty",
+  "url": "https://huggingface.co/zjumty/so101-yolo11n-seg-plastic-cup",
+  "created_at": "2026-09-04T14:20:26.000Z",
+  "updated_at": "2026-09-04T14:22:57.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolo",
+    "yolo11",
+    "instance-segmentation",
+    "robotics",
+    "synthetic-data",
+    "so-101",
+    "image-segmentation",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7624742,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnnaAnon",
+      "url": "https://annaanon.newgrounds.com/",
+      "snippet": "Dec 4, 2024 · All characters in my work are consenting 18+ adults. Altering these settings may filter what you see. You must be …"
+    },
+    {
+      "title": "GitHub - ultralytics/yolo11: Ultralytics YOLO11 discovery and ...",
+      "url": "https://github.com/ultralytics/yolo11",
+      "snippet": "🧩 Integrations Ultralytics integrations extend dataset labeling, training, visualization, deployment, and model management workflows. Explore Ultralytics Platform and the Ultralytics Integrations docs to connect YOLO11 with your AI stack, including popular export formats like TensorRT, ONNX, CoreML, and TFLite."
+    },
+    {
+      "title": "Rule34video.com",
+      "url": "https://rule34video.com/playlists/1451813/anna-anon165/",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "GitHub - ultralytics/ultralytics: Ultralytics YOLO26, YOLO11, YOLOv8 ...",
+      "url": "https://github.com/ultralytics/ultralytics",
+      "snippet": "Our key integrations with leading AI platforms extend the functionality of Ultralytics' offerings, enhancing tasks like dataset labeling, training, visualization, and model management. Discover how Ultralytics, in collaboration with partners like Weights & Biases, Comet ML, Roboflow, and Intel OpenVINO, can optimize your AI workflow."
+    },
+    {
+      "title": "ANNO - AustriaN Newspapers Online | ANNO - AustriaN Newspapers …",
+      "url": "https://anno.onb.ac.at/",
+      "snippet": "Jun 1, 2026 · ANNO - AustriaN Newspapers Online | ANNO - AustriaN Newspapers Online. Direkt zum Inhalt . ANNO Historische …"
+    }
+  ]
+}

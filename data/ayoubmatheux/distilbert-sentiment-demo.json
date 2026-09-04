@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ayoubmatheux/distilbert-sentiment-demo",
+  "slug": "ayoubmatheux-distilbert-sentiment-demo",
+  "author": "ayoubmatheux",
+  "url": "https://huggingface.co/ayoubmatheux/distilbert-sentiment-demo",
+  "created_at": "2026-09-04T13:46:05.000Z",
+  "updated_at": "2026-09-04T13:49:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:quantized:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 803635400,
+  "storage_human": "804 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Devenir Esthéticienne : Parcours, Formations et Conseils",
+      "url": "https://www.forumsvt.site.ac-strasbourg.fr/viewtopic.php?t=7942",
+      "snippet": "Jan 4, 2026 · De nos jours, les métiers liés à la beauté et aux soins personnels connaissent une forte demande, ce qui en fait une …"
+    },
+    {
+      "title": "Distilbert Sentiment Demo - a Hugging Face Space by Drocho",
+      "url": "https://huggingface.co/spaces/Drocho/distilbert-sentiment-demo",
+      "snippet": "Enter an English review or any text, and the app will tell you whether it’s positive or negative and show how confident it is. It uses a pre‑trained DistilBERT model and returns the sentiment label..."
+    },
+    {
+      "title": "Epreuve anticipée de 1 L/ES - Page 2 - Forum National de SVT",
+      "url": "https://www.forumsvt.site.ac-strasbourg.fr/viewtopic.php?t=3187&start=30",
+      "snippet": "Peanuts a écrit : Je dois enseigner l'année prochaine les SVT en 1ère L/ES ( avec, au passage, une classe dans laquelle sont …"
+    },
+    {
+      "title": "HamzaAS/distilbert-sentiment-demo · Hugging Face",
+      "url": "https://huggingface.co/HamzaAS/distilbert-sentiment-demo",
+      "snippet": "Fine-tuned DistilBERT model on the rotten_tomatoesdataset for sentiment classification (POSITIVEvs NEGATIVE). Created for MLOps Course M2."
+    },
+    {
+      "title": "GitHub - ayoubatouf/distilbert_sentiment_analysis",
+      "url": "https://github.com/ayoubatouf/distilbert_sentiment_analysis",
+      "snippet": "The model processes the tokenized input through its embedding and transformer layers, extracting contextual information from the text. Finally, it uses a classification head (a linear layer) to map the output to the desired classes: positive or negative sentiment."
+    }
+  ]
+}

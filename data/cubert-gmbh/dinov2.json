@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "cubert-gmbh/dinov2",
+  "slug": "cubert-gmbh-dinov2",
+  "author": "cubert-gmbh",
+  "url": "https://huggingface.co/cubert-gmbh/dinov2",
+  "created_at": "2026-09-04T11:57:28.000Z",
+  "updated_at": "2026-09-04T11:57:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mirror",
+    "cuvis-ai",
+    "dinov2",
+    "vision-transformer",
+    "backbone",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 346393545,
+  "storage_human": "346 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/",
+      "snippet": "Securely sign in to access your Microsoft account and manage emails, calendars, and other services efficiently."
+    },
+    {
+      "title": "Welcome to To Do",
+      "url": "https://to-do.office.com/tasks/",
+      "snippet": "Microsoft To Do helps you organize tasks, manage lists, and stay productive with seamless integration across devices and platforms."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://portal.office.com/Home/",
+      "snippet": "No account? Create one! Can’t access your account?"
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://portal.office.com/AdminPortal/Home",
+      "snippet": "Access and manage your Office 365 account, users, and settings from the admin portal."
+    },
+    {
+      "title": "Microsoft 365 Apps admin center",
+      "url": "https://config.office.com/",
+      "snippet": "Simplify Office deployment with Microsoft 365 Apps admin center to create, modify, and export configurations tailored to your …"
+    }
+  ]
+}

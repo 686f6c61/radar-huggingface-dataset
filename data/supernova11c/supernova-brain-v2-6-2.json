@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Supernova11c/Supernova-Brain-V2-6-2",
+  "slug": "supernova11c-supernova-brain-v2-6-2",
+  "author": "Supernova11c",
+  "url": "https://huggingface.co/Supernova11c/Supernova-Brain-V2-6-2",
+  "created_at": "2026-09-04T15:37:48.000Z",
+  "updated_at": "2026-09-04T15:37:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15990,
+  "storage_human": "15990 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Level Devil - Play Online for Free! | Poki",
+      "url": "https://poki.com/en/g/level-devil?msockid=0093ab0c66d3627f32d2bcc667a76351",
+      "snippet": "Level Devil is a platform game that will troll you at every possible moment. All you need to do is get from one end of the level to the …"
+    },
+    {
+      "title": "Supernova11c (Supernova) - Hugging Face",
+      "url": "https://huggingface.co/Supernova11c/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 5 hours ago ... updated a model about 6 hours ago"
+    },
+    {
+      "title": "Level Devil – Play Online for Free",
+      "url": "https://level-devil.org/en/",
+      "snippet": "Play Level Devil online and try to reach the exit without falling for hidden spikes, collapsing floors, moving walls and other unexpected …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=supernova_embedding",
+      "snippet": "Supernova11c/Supernova-teraillm-Embedding-V2 Feature Extraction • 6.98M•Updated 4 days ago• 36"
+    },
+    {
+      "title": "Level Devil - Online kostenlos spielen! | Arcadrome",
+      "url": "https://arcadrome.com/de/games/level-devil",
+      "snippet": "Hier kannst du Level Devil spielen. Level Devil ist eines unserer besten Arcade-Spiele."
+    }
+  ]
+}

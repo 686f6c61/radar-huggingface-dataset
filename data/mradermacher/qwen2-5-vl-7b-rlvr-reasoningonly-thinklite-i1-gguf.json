@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite-i1-GGUF",
+  "slug": "mradermacher-qwen2-5-vl-7b-rlvr-reasoningonly-thinklite-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite-i1-GGUF",
+  "created_at": "2026-09-04T11:31:36.000Z",
+  "updated_at": "2026-09-04T12:14:04.000Z",
+  "license": "qwen",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "vision-language",
+    "rlvr",
+    "grpo",
+    "verl",
+    "en",
+    "dataset:russwang/ThinkLite-VL-70k",
+    "base_model:vgandhi13/Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite",
+    "base_model:quantized:vgandhi13/Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 88970453728,
+  "storage_human": "89.0 GB",
+  "base_model": "vgandhi13/Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meshtastic Web Flasher",
+      "url": "https://flasher.meshtastic.org/",
+      "snippet": "Meshtastic Web Flasher Update your Meshtastic device with official firmware, straight from your browser"
+    },
+    {
+      "title": "Qwen2.5-VL-7B-Instruct-heretic-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-VL-7B-Instruct-heretic-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "flasher.meshtastic.org",
+      "url": "https://flasher.meshtastic.org/img/devices/$hwImg",
+      "snippet": ""
+    },
+    {
+      "title": "Qwen2.5-7B-Instruct-RLVR-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-7B-Instruct-RLVR-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "flasher.meshtastic.org",
+      "url": "https://flasher.meshtastic.org/?goal=0_4b071a49e3-f4ae602108-49432633&mc_cid=f4ae602108&mc_eid=826758b903",
+      "snippet": ""
+    }
+  ]
+}

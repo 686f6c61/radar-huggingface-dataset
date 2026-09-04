@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/Llama-3.2-1B-Instruct_SFT_lora_dreamt",
+  "slug": "xw17-llama-3-2-1b-instruct_sft_lora_dreamt",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Llama-3.2-1B-Instruct_SFT_lora_dreamt",
+  "created_at": "2026-09-04T14:05:44.000Z",
+  "updated_at": "2026-09-04T14:05:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39783624,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "File Explorer in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Find and open File Explorer in Windows, and customize Quick access by pinning and removing files and folders."
+    },
+    {
+      "title": "xw17/Llama-3.2-1B-Instruct_SFT_lora_usc-had · Hugging Face",
+      "url": "https://huggingface.co/xw17/Llama-3.2-1B-Instruct_SFT_lora_usc-had",
+      "snippet": "Use this model Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and Limitations Recommendations How to Get Started with the Model Training Details Training Data Training Procedure Evaluation Testing Data, Factors & Metrics Results Model ..."
+    },
+    {
+      "title": "Explorateur de fichiers dans Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/fr-fr/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Recherchez et ouvrez Explorateur de fichiers dans Windows, puis personnalisez Accès rapide en épinglant et en supprimant des …"
+    },
+    {
+      "title": "xw17/Llama-3.2-1B-Instruct_SFT_FT_universal · Hugging Face",
+      "url": "https://huggingface.co/xw17/Llama-3.2-1B-Instruct_SFT_FT_universal",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Search in Windows 11 File Explorer",
+      "url": "https://www.elevenforum.com/t/search-in-windows-11-file-explorer.21789/",
+      "snippet": "Jan 21, 2024 · As you type in the Search Box, Windows Search will automatically start a simple search through the index by default to …"
+    }
+  ]
+}

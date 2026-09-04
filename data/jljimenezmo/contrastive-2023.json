@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jljimenezmo/contrastive-2023",
+  "slug": "jljimenezmo-contrastive-2023",
+  "author": "jljimenezmo",
+  "url": "https://huggingface.co/jljimenezmo/contrastive-2023",
+  "created_at": "2026-09-04T15:44:37.000Z",
+  "updated_at": "2026-09-04T15:44:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RGW - Relative Groundwork Ltd",
+      "url": "https://www.rgwgroup.co.uk/",
+      "snippet": "RGW is a family run business. We strive daily to be 'the best we can be’. We work in close partnership with Local Authorities, …"
+    },
+    {
+      "title": "Improving Contrastive Learning of Sentence Embeddings from",
+      "url": "https://aclanthology.org/2023.findings-acl.707/",
+      "snippet": "Besides, we combine human feedback and AI feedback to provide better supervision signals for supervised contrastive learning of sentence embeddings.Experimental results show that our method achieves state-of-the-art performance on several semantic textual similarity (STS) and transfer learning tasks compared to other unsupervised and supervised ..."
+    },
+    {
+      "title": "RELATIVE GROUNDWORK LIMITED overview - Find and update …",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/04392972",
+      "snippet": "Mar 12, 2026 · RELATIVE GROUNDWORK LIMITED - Free company information from Companies House including registered office …"
+    },
+    {
+      "title": "GitHub - nomic-ai/contrastors: Train Models Contrastively in Pytorch",
+      "url": "https://github.com/nomic-ai/contrastors",
+      "snippet": "Train Models Contrastively in Pytorch. Contribute to nomic-ai/contrastors development by creating an account on GitHub."
+    },
+    {
+      "title": "Relative Groundworks - Groundwork Services",
+      "url": "https://www.rgwgroup.co.uk/groundworks",
+      "snippet": "Relative Groundwork Limited are Marshalls Accredited Installers. Marshalls Accredited Installers are independent contractors who …"
+    }
+  ]
+}

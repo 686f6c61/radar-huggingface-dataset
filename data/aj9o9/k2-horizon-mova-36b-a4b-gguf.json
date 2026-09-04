@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "aj9o9/K2-Horizon-MoVA-36B-A4B-GGUF",
+  "slug": "aj9o9-k2-horizon-mova-36b-a4b-gguf",
+  "author": "aj9o9",
+  "url": "https://huggingface.co/aj9o9/K2-Horizon-MoVA-36B-A4B-GGUF",
+  "created_at": "2026-09-04T14:14:27.000Z",
+  "updated_at": "2026-09-04T14:18:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "moe",
+    "k2-horizon",
+    "mova",
+    "text-generation",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37444792020,
+  "parameters_human": "37.44B",
+  "storage_bytes": 79572833568,
+  "storage_human": "79.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FOCUS online - Aktuelle Nachrichten",
+      "url": "https://www.focus.de/",
+      "snippet": "FOCUS online – minutenaktuelle Nachrichten und Service-Informationen von Deutschlands modernem Nachrichtenmagazin."
+    },
+    {
+      "title": "IFM/K2-Horizon-MoVA-36B-A4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B-GGUF",
+      "snippet": "Instructions to use IFM/K2-Horizon-MoVA-36B-A4B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Politik News - Aktuelles aus dem In- und Ausland - FOCUS Online",
+      "url": "https://www.focus.de/politik/",
+      "snippet": "15 hours ago · Aktuelle Politik-News aus dem In- und Ausland – kostenlos und immer topaktuell. Fundierte Berichte und die …"
+    },
+    {
+      "title": "abenzerps/K2-Horizon-MoVA-36B-A4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/abenzerps/K2-Horizon-MoVA-36B-A4B-GGUF",
+      "snippet": "Instructions to use abenzerps/K2-Horizon-MoVA-36B-A4B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Schlagzeilen - Meldungen des Tages | FOCUS online",
+      "url": "https://www.focus.de/schlagzeilen/",
+      "snippet": "15 hours ago · Die wichtigsten Schlagzeilen und News von heute – kostenlos und immer aktuell. Bleiben Sie informiert mit unseren …"
+    }
+  ]
+}

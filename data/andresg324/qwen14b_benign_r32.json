@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Andresg324/qwen14b_benign_r32",
+  "slug": "andresg324-qwen14b_benign_r32",
+  "author": "Andresg324",
+  "url": "https://huggingface.co/Andresg324/qwen14b_benign_r32",
+  "created_at": "2026-09-04T14:07:08.000Z",
+  "updated_at": "2026-09-04T14:35:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 842379660,
+  "storage_human": "842 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Se connecter à Gmail - Ordinateur - Aide Gmail - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Se connecter à Gmail Pour ouvrir Gmail, vous pouvez vous connecter à partir d'un ordinateur ou ajouter votre compte à l'application …"
+    },
+    {
+      "title": "InsertWittyCommentHere/qwen14b-benign-r32-mine · Hugging Face",
+      "url": "https://huggingface.co/InsertWittyCommentHere/qwen14b-benign-r32-mine",
+      "snippet": "InsertWittyCommentHere / qwen14b-benign-r32-mine like 0 Transformers Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Se connecter à Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Se connecter à Gmail Pour ouvrir Gmail, vous pouvez vous connecter à partir d'un ordinateur ou ajouter votre compte à l'application …"
+    },
+    {
+      "title": "InsertWittyCommentHere/qwen14b-benign-r32-mine-smoke · Hugging Face",
+      "url": "https://huggingface.co/InsertWittyCommentHere/qwen14b-benign-r32-mine-smoke",
+      "snippet": "InsertWittyCommentHere / qwen14b-benign-r32-mine-smoke like 0 Transformers Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Sign in to Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "To open Gmail, you can sign in from a computer or add your account to the Gmail app on your phone or tablet. Once you're signed …"
+    }
+  ]
+}

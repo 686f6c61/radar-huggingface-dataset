@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "ztrgo/p012_first_party_tools_distro",
+  "slug": "ztrgo-p012_first_party_tools_distro",
+  "author": "ztrgo",
+  "url": "https://huggingface.co/ztrgo/p012_first_party_tools_distro",
+  "created_at": "2026-09-04T15:36:27.000Z",
+  "updated_at": "2026-09-04T15:38:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "developer-tools",
+    "first-party",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【問題】要購買水星領航員 完全版的人請注意 !!! @天野こずえ 作品 …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=9837&snA=1121",
+      "snippet": "Oct 28, 2020 · 我手上還有台版Aqua兩集跟Aria十二集漫畫書 這次完全版就單純收入兩集Aqua的內容 將愛須理…不對是愛理須串場那 …"
+    },
+    {
+      "title": "Fake AI Tool Campaign Turns Developer Interest Into Enterprise Initial ...",
+      "url": "https://cybersecuritynews.com/fake-ai-tool-campaign/",
+      "snippet": "Fake AI Tool Campaign The attackers make their GitHub pages look convincing by copying legitimate code, documentation, contributor details, and installation instructions. Malicious payloads are placed in harmless-looking folders or linked through altered setup steps, a tactic also seen in fake GitHub repository operations that rely on user trust."
+    },
+    {
+      "title": "【心得】Aria the natural觀後感 @天野こずえ 作品集﹝原：ARIA水星 …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=9837&snA=652",
+      "snippet": "Oct 9, 2008 · 43 > 我想Aria之所以好看，不就再於他描繪出一個，現實社會所缺少的情景嗎？ 每 > 個人各司其職，各有各偉大的地 …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "javascript - datapicker - range - Stack Overflow en español",
+      "url": "https://es.stackoverflow.com/questions/134902/datapicker-range",
+      "snippet": "Tengo un problema con un Date Picker Range Bootstrap, ya que se muestra en la parte de atrás de mi modal, intente con un z …"
+    }
+  ]
+}

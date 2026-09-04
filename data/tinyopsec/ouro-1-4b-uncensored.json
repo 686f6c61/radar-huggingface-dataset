@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/Ouro-1.4B-uncensored",
+  "slug": "tinyopsec-ouro-1-4b-uncensored",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/Ouro-1.4B-uncensored",
+  "created_at": "2026-09-04T15:26:32.000Z",
+  "updated_at": "2026-09-04T15:26:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ouro",
+    "text-generation",
+    "looped-language-model",
+    "reasoning",
+    "recurrent-depth",
+    "conversational",
+    "custom_code",
+    "arxiv:2510.25741",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mail.ru",
+      "url": "https://mail.ru/",
+      "snippet": "Mail.ru предлагает бесплатную почту, облачное хранилище, календарь и заметки для удобной работы и жизни."
+    },
+    {
+      "title": "ByteDance/Ouro-1.4B · Hugging Face",
+      "url": "https://huggingface.co/ByteDance/Ouro-1.4B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Войти в электронную почту Mail — надежный почтовый клиент",
+      "url": "https://account.mail.ru/login?page=https",
+      "snippet": "Войти в почту Mail. Вы можете зайти в свой аккаунт используя пароль, QR-код, VK ID или свой профиль на Госуслугах"
+    },
+    {
+      "title": "GitHub - Damacol/bytedance-ouro-1-4b: AI: ByteDance/Ouro-1.4B",
+      "url": "https://github.com/Damacol/bytedance-ouro-1-4b",
+      "snippet": "ByteDance/Ouro-1.4B - Private, Uncensored AI for Real Creators and Devs Tired of AI that babysits you, logs your prompts, or hits you with \"I can't do that\"? Meet the next-gen chatbot built for freedom, speed, and digital sovereignty."
+    },
+    {
+      "title": "Авторизация в почте Mail — бесплатный и безопасный …",
+      "url": "https://e.mail.ru/login",
+      "snippet": "Авторизоваться в аккаунте на Mail. Почта Mail - это фильтрация спама, быстрая отписка от рассылок, сортировка писем, …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "IFM/K2-Horizon-32B-GGUF",
+  "slug": "ifm-k2-horizon-32b-gguf",
+  "author": "IFM",
+  "url": "https://huggingface.co/IFM/K2-Horizon-32B-GGUF",
+  "created_at": "2026-09-03T12:54:17.000Z",
+  "updated_at": "2026-09-03T21:57:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "k2-horizon",
+    "32b",
+    "dense",
+    "open-weights",
+    "ifm",
+    "text-generation",
+    "en",
+    "dataset:IFM/K2-Horizon-Pretrain-Data",
+    "dataset:IFM/K2-Horizon-Midtrain-Data",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 9,
+  "downloads_30d": 659,
+  "trending_score": 9,
+  "parameters": 34779304960,
+  "parameters_human": "34.78B",
+  "storage_bytes": 69573107861,
+  "storage_human": "69.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ifm electronic - spécialiste des capteurs et solutions d’automatismes ...",
+      "url": "https://www.ifm.com/fr/fr",
+      "snippet": "ifm vous accompagne dans toutes les phases de vos projets ou demandes : de la préconisation de solutions jusqu’à la mise en …"
+    },
+    {
+      "title": "IFM/K2-Horizon-32B · Hugging Face",
+      "url": "https://huggingface.co/IFM/K2-Horizon-32B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Institut Français de la Mode | Ecole mode Paris",
+      "url": "https://www.ifmparis.fr/fr",
+      "snippet": "L’Institut Français de la Mode, issu de l'union de l'Ecole de la chambre syndicale de la couture parisienne et de l'IFM, est un …"
+    },
+    {
+      "title": "K2 Horizon - a IFM Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/IFM/k2-horizon",
+      "snippet": "K2 Horizon models, datasets, and supporting resources. Upvote . 16 +6; Sort: Collection. IFM/K2-Horizon-375B-A23B. Text Generation • 379B • Updated about 2 hours ago • 9"
+    },
+    {
+      "title": "ifm - automation made in Germany",
+      "url": "https://www.ifm.com/",
+      "snippet": "ifm electronic gmbh – Automation made in Germany. Quality, innovation, exceptional service and more than 40 years close to the …"
+    }
+  ]
+}

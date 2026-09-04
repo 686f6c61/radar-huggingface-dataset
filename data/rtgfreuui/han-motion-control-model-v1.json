@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rtgfreuui/han-motion-control-model-v1",
+  "slug": "rtgfreuui-han-motion-control-model-v1",
+  "author": "rtgfreuui",
+  "url": "https://huggingface.co/rtgfreuui/han-motion-control-model-v1",
+  "created_at": "2026-09-04T16:08:58.000Z",
+  "updated_at": "2026-09-04T16:08:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "humanoid",
+    "ai-model",
+    "motion",
+    "control",
+    "robotics",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RealLifeCam (RLC) - Real Life 24/7",
+      "url": "https://reallifecam.com/",
+      "snippet": "Unique project since 2011. The private life of other people live 24/7"
+    },
+    {
+      "title": "ariefansclub/han-motion-control-model-v1 · Hugging Face",
+      "url": "https://huggingface.co/ariefansclub/han-motion-control-model-v1",
+      "snippet": "HAN Motion Control Model Controls humanoid joint movements for smooth and stable motion. Capabilities Balance control Joint coordination Motion smoothing Part of Humanoid Network (HAN) License MIT"
+    },
+    {
+      "title": "RLC Remote",
+      "url": "https://remote.reallifecam.com/",
+      "snippet": "RLC Remote Tool. Control RealLifeCam big screen from your mobile"
+    },
+    {
+      "title": "ariefansclub/han-motion-control-model-v1 at main - Hugging Face",
+      "url": "https://huggingface.co/ariefansclub/han-motion-control-model-v1/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RLC Replay",
+      "url": "https://replay.reallifecam.com/",
+      "snippet": "Watch 24-hour recordings of your favorite cams on RLC Replay."
+    }
+  ]
+}

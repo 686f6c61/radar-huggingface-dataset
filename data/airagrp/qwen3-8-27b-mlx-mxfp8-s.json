@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "airagrp/Qwen3.8-27B-mlx-mxfp8-S",
+  "slug": "airagrp-qwen3-8-27b-mlx-mxfp8-s",
+  "author": "airagrp",
+  "url": "https://huggingface.co/airagrp/Qwen3.8-27B-mlx-mxfp8-S",
+  "created_at": "2026-09-04T18:03:11.000Z",
+  "updated_at": "2026-09-04T18:06:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mlx-vlm",
+    "mxfp8",
+    "nvfp4",
+    "mixed-precision",
+    "multimodal",
+    "vision",
+    "video",
+    "text-generation",
+    "mtp",
+    "speculative-decoding",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 28600742234,
+  "storage_human": "28.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pedir a nacionalidade portuguesa - gov.pt",
+      "url": "https://www.gov.pt/servicos/pedir-a-nacionalidade-portuguesa",
+      "snippet": "May 21, 2026 · A nacionalidade portuguesa pode ser pedida pela própria pessoa que quer ter a nacionalidade, mas também por …"
+    },
+    {
+      "title": "airagrp/Qwen3.8-27B-mlx-mxfp8-XL · Hugging Face",
+      "url": "https://huggingface.co/airagrp/Qwen3.8-27B-mlx-mxfp8-XL",
+      "snippet": "Instructions to use airagrp/Qwen3.8-27B-mlx-mxfp8-XL with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use airagrp/Qwen3.8-27B-mlx-mxfp8-XL with MLX:"
+    },
+    {
+      "title": "Nacionalidade portuguesa - Justiça.gov.pt",
+      "url": "https://justica.gov.pt/Registos/Nacionalidade/Nacionalidade-portuguesa",
+      "snippet": "Pode ter nacionalidade portuguesa quem nascer em Portugal, tiver pais portugueses, casar com um português ou residir legalmente …"
+    },
+    {
+      "title": "README.md · airagrp/Qwen3.8-27B-mlx-mxfp8-XL at main",
+      "url": "https://huggingface.co/airagrp/Qwen3.8-27B-mlx-mxfp8-XL/blob/main/README.md",
+      "snippet": "Instructions to use airagrp/Qwen3.8-27B-mlx-mxfp8-XL with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use airagrp/Qwen3.8-27B-mlx-mxfp8-XL with MLX:"
+    },
+    {
+      "title": "Nacionalidade portuguesa – Wikipédia, a enciclopédia livre",
+      "url": "https://pt.wikipedia.org/wiki/Nacionalidade_portuguesa",
+      "snippet": "O indivíduo cujos pais sejam nacionais portugueses nascidos em Portugal é considerado português desde que o seu nascimento …"
+    }
+  ]
+}

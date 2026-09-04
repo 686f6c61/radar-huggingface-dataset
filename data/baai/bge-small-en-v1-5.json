@@ -1,0 +1,385 @@
+{
+  "schema": 1,
+  "id": "BAAI/bge-small-en-v1.5",
+  "slug": "baai-bge-small-en-v1-5",
+  "author": "BAAI",
+  "url": "https://huggingface.co/BAAI/bge-small-en-v1.5",
+  "created_at": "2023-09-12T05:20:55.000Z",
+  "updated_at": "2024-02-22T03:36:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "onnx",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers",
+    "mteb",
+    "en",
+    "arxiv:2401.03462",
+    "arxiv:2312.15503",
+    "arxiv:2311.13534",
+    "arxiv:2310.07554",
+    "arxiv:2309.07597",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 548,
+  "downloads_30d": 66603948,
+  "trending_score": 8,
+  "parameters": 33360512,
+  "parameters_human": "33.4M",
+  "storage_bytes": 900980756,
+  "storage_human": "901 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 73.79104477611939
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 37.21923821573361
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 68.0914945617093
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 92.75377499999999
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 89.46766124546022
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 92.73884001331487
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (en)",
+      "metric": null,
+      "value": 46.986
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (en)",
+      "metric": null,
+      "value": 46.55936786727896
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 35.846000000000004
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 51.388
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 52.132999999999996
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 52.141000000000005
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 47.037
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 49.579
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 36.558
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 51.658
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 52.402
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 52.410000000000004
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 47.345
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 49.797999999999995
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 35.846000000000004
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 59.550000000000004
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 62.596
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 62.759
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 50.666999999999994
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 55.228
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 35.846000000000004
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 8.542
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 0.984
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 0.1
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 20.389
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 14.438
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 35.846000000000004
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 85.42
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 98.43499999999999
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 99.644
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 61.166
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 72.191
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArxivClusteringP2P",
+      "metric": null,
+      "value": 47.402770198163594
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArxivClusteringS2S",
+      "metric": null,
+      "value": 40.01545436974177
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AskUbuntuDupQuestions",
+      "metric": null,
+      "value": 62.586465273207196
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AskUbuntuDupQuestions",
+      "metric": null,
+      "value": 74.42169019038825
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 85.1891186537969
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 83.75492046087288
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 84.11766204805357
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 84.01456493126516
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 84.2132950502772
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 83.89227298813377
+    },
+    {
+      "task": null,
+      "dataset": "MTEB Banking77Classification",
+      "metric": null,
+      "value": 85.74025974025975
+    },
+    {
+      "task": null,
+      "dataset": "MTEB Banking77Classification",
+      "metric": null,
+      "value": 85.71493566466381
+    }
+  ],
+  "sources": [
+    {
+      "title": "Autorité de la Concurrence - Luxembourg",
+      "url": "https://concurrence.public.lu/",
+      "snippet": "L'Autorité de la concurrence veille au respect du droit de la concurrence, des obligations des plateformes en ligne, des droits des …"
+    },
+    {
+      "title": "BAAI/bge-small-en-v1.5 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-small-en-v1.5",
+      "snippet": "Suggest to use bge v1.5, which alleviates the issue of the similarity distribution. Since we finetune the models by contrastive learning with a temperature of 0.01, the similarity distribution of the current BGE model is about in the interval [0.6, 1]."
+    },
+    {
+      "title": "Concurrence - Autorité de la Concurrence - Luxembourg",
+      "url": "https://concurrence.public.lu/fr/concurrence.html",
+      "snippet": "Le droit de la concurrence contribue au bon fonctionnement des marchés en garantissant le libre jeu de la concurrence. Sur un …"
+    },
+    {
+      "title": "BAAI/bge-small-en · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-small-en",
+      "snippet": "Recommend switching to newest BAAI/bge-small-en-v1.5, which has more reasonable similarity distribution and same method of usage. FlagEmbedding Model List | FAQ | Usage | Evaluation | Train | Citation | License More details please refer to our Github: FlagEmbedding. English | 中文 FlagEmbedding focus on retrieval-augmented LLMs, consisting of following projects currently: Fine-tuning of LM ..."
+    },
+    {
+      "title": "Loi du 30 novembre 2022 relative à la concurrence et portant :1 ...",
+      "url": "https://www.stradalex.lu/fr/slu_src_publ_leg_mema/document/mema_etat-leg-loi-2022-11-30-a588-jo",
+      "snippet": "Nov 30, 2022 · Les litiges concernant les mesures d’exécution prises au Grand-Duché de Luxembourg ou concernant la validité …"
+    }
+  ]
+}

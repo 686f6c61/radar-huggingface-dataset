@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "MSVG1989/first_vox_training",
+  "slug": "msvg1989-first_vox_training",
+  "author": "MSVG1989",
+  "url": "https://huggingface.co/MSVG1989/first_vox_training",
+  "created_at": "2026-09-04T11:15:35.000Z",
+  "updated_at": "2026-09-04T13:36:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 82914973995,
+  "storage_human": "82.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TV LG: el LG CONTENT STORE no encuentra Netflix, no disponible.",
+      "url": "https://forums.commentcamarche.net/forum/affich-36451484-tv-lg-le-lg-content-store-ne-trouve-pas-netflix-indisponible?lang=es",
+      "snippet": "Hola, Me es imposible encontrar Netflix en el LG CONTENT STORE, la aplicación es indetectable. Incluso he cambiado la región y …"
+    },
+    {
+      "title": "markmuller/first_vox_training · Hugging Face",
+      "url": "https://huggingface.co/markmuller/first_vox_training",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Bonjour, Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux …"
+    },
+    {
+      "title": "MSVG1989 (Sadegh Vaezi) - Hugging Face",
+      "url": "https://huggingface.co/MSVG1989",
+      "snippet": "User profile of Sadegh Vaezi on Hugging Face"
+    },
+    {
+      "title": "LG OLED55CX9LA, arte App nicht verfügbar im LG Content Store",
+      "url": "https://www.hifi-forum.de/viewthread-312-1900.html",
+      "snippet": "Sep 29, 2020 · Laut Info auf der arte Homepage soll die arte Mediathek App auf LG TVs verfügbar sein, ist jedoch im LG Content …"
+    }
+  ]
+}

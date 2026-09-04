@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "diarray/parakeet-snalinlug-sc-lid",
+  "slug": "diarray-parakeet-snalinlug-sc-lid",
+  "author": "diarray",
+  "url": "https://huggingface.co/diarray/parakeet-snalinlug-sc-lid",
+  "created_at": "2026-09-04T15:58:57.000Z",
+  "updated_at": "2026-09-04T16:01:58.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "ln",
+    "lg",
+    "sn"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "audio",
+    "fastconformer",
+    "rnnt",
+    "ctc",
+    "language-identification",
+    "ln",
+    "lg",
+    "sn",
+    "dataset:google/WaxalNLP",
+    "dataset:google/fleurs",
+    "dataset:Sunbird/salt",
+    "dataset:KasuleTrevor/Lingala_100hrs",
+    "license:cc-by-sa-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 459233280,
+  "storage_human": "459 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Author's public multilingual evaluation split",
+      "metric": "WER",
+      "value": 25.6
+    },
+    {
+      "task": null,
+      "dataset": "Author's public multilingual evaluation split",
+      "metric": "LID accuracy",
+      "value": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "#f0f0f0 hex color",
+      "url": "https://www.colorhexa.com/f0f0f0",
+      "snippet": "#f0f0f0 hex color code information, schemes, description and conversion in RGB, HSL, HSV, CMYK, etc."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "#f00ff0 hex color - ColorHexa",
+      "url": "https://www.colorhexa.com/f00ff0",
+      "snippet": "In a RGB color space, hex #f00ff0 is composed of 94.1% red, 5.9% green and 94.1% blue. Whereas in a CMYK color space, it is …"
+    },
+    {
+      "title": "diarray (Diarra Yacouba) - Hugging Face",
+      "url": "https://huggingface.co/diarray/datasets",
+      "snippet": "Intelligence (itself)"
+    },
+    {
+      "title": "#f00ff0 Color Hex",
+      "url": "https://www.color-hex.com/color/f00ff0",
+      "snippet": "#f00ff0 hex color red value is 240, green value is 15 and the blue value of its RGB is 240. Cylindrical-coordinate representations (also …"
+    }
+  ]
+}

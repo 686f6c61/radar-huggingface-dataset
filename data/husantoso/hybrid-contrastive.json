@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Husantoso/hybrid-contrastive",
+  "slug": "husantoso-hybrid-contrastive",
+  "author": "Husantoso",
+  "url": "https://huggingface.co/Husantoso/hybrid-contrastive",
+  "created_at": "2026-09-04T17:44:49.000Z",
+  "updated_at": "2026-09-04T17:44:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Top AI Models This Week (2026) — Trending Hugging Face Models, Papers ...",
+      "url": "https://orangebot.ai/top-ai-models-this-week",
+      "snippet": "Top trending AI models this week, 2026: a live, ranked snapshot of the most popular open models, papers, and demos on Hugging Face. Updated daily, with a direct link to every model."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/webhp?gl=nf&hl=en&pws=0",
+      "snippet": "Advertising Business Solutions About Google Google.com © 2026 - Privacy - Terms"
+    },
+    {
+      "title": "Researchers Tested AI Against 100,000 Humans on Creativity",
+      "url": "https://www.sciencedaily.com/releases/2026/01/260125083356.htm",
+      "snippet": "A massive new study comparing more than 100,000 people with today’s most advanced AI systems delivers a surprising result: generative AI can now beat the average human on certain creativity ..."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    }
+  ]
+}

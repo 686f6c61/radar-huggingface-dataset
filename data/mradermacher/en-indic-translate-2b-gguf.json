@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "mradermacher/en-indic-translate-2b-GGUF",
+  "slug": "mradermacher-en-indic-translate-2b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/en-indic-translate-2b-GGUF",
+  "created_at": "2026-09-04T11:15:19.000Z",
+  "updated_at": "2026-09-04T11:31:38.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "as",
+    "bn",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "translation",
+    "indic",
+    "gemma4",
+    "en",
+    "as",
+    "bn",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te",
+    "base_model:sulabhkatiyar/en-indic-translate-2b",
+    "base_model:quantized:sulabhkatiyar/en-indic-translate-2b",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 49578666688,
+  "storage_human": "49.6 GB",
+  "base_model": "sulabhkatiyar/en-indic-translate-2b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "216.24.57.1 | San Francisco, AS397273, VPN Not Detected",
+      "url": "https://ipinfo.io/216.24.57.1",
+      "snippet": "Get Details for IP 216.24.57.1: Hosted by Render, located in San Francisco, AS397273. View ranges, ASN info, and related IPs."
+    },
+    {
+      "title": "GitHub - AI4Bharat/IndicTrans2: Translation models for 22 scheduled ...",
+      "url": "https://github.com/ai4bharat/IndicTrans2",
+      "snippet": "To prepare data for training the Indic-En model, you should reverse the language pair directories within the train and devtest directories. Additionally, make sure to download the corresponding SPM model and Fairseq dictionary and put them in the experiment directory, similar to the procedure mentioned above for En-Indic model training."
+    },
+    {
+      "title": "Whois IP 216.24.57.1",
+      "url": "https://www.whois.com/whois/216.24.57.1",
+      "snippet": "Whois IP Lookup for 216.24.57.1"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "216.24.57.1 | Render | AbuseIPDB",
+      "url": "https://www.abuseipdb.com/check/216.24.57.1",
+      "snippet": "Aug 18, 2024 · 216.24.57.1 IP Abuse Reports for 216.24.57.1: This IP address has been reported a total of 40times from 27 distinct …"
+    }
+  ]
+}

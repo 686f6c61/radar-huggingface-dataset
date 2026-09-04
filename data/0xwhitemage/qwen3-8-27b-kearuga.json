@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "0xWhiteMage/Qwen3.8-27B-Kearuga",
+  "slug": "0xwhitemage-qwen3-8-27b-kearuga",
+  "author": "0xWhiteMage",
+  "url": "https://huggingface.co/0xWhiteMage/Qwen3.8-27B-Kearuga",
+  "created_at": "2026-09-04T16:01:45.000Z",
+  "updated_at": "2026-09-04T16:59:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "es",
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "kearuga",
+    "qwen3",
+    "qwen3.5",
+    "speculative-decoding",
+    "dflash2",
+    "eagle",
+    "gptq",
+    "nvfp4",
+    "fp8",
+    "hybrid-quantization",
+    "gb10",
+    "dgx-spark",
+    "grace-blackwell",
+    "sm121",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "es",
+    "ru",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19759821552,
+  "parameters_human": "19.76B",
+  "storage_bytes": 24859188120,
+  "storage_human": "24.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pinterest - 知乎",
+      "url": "https://www.zhihu.com/topic/19559627/intro",
+      "snippet": "Pinterest采用的是瀑布流的形式展现图片内容，无需用户翻页，新的图片不断自动加载在页面顶端，让用户不断的发现新的图片。 …"
+    },
+    {
+      "title": "0xWhiteMage/Qwen3.8-27B-Kearuga-DFlash2 · Hugging Face",
+      "url": "https://huggingface.co/0xWhiteMage/Qwen3.8-27B-Kearuga-DFlash2",
+      "snippet": "0xWhiteMage / Qwen3.8-27B-Kearuga-DFlash2 like 0 Text Generation Transformers Safetensors English Chinese qwen3 qwen dflash2 speculative-decoding drafter fp8 sglang blackwell text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Pinterest 好在哪里？ - 知乎",
+      "url": "https://www.zhihu.com/question/19562210",
+      "snippet": "Pinterest不同于Tumblr和微博，虽然Tumblr和微博的核心内容之一都是图片，可是各种博们关注图片是为了社交和传媒，Pinterest有 …"
+    },
+    {
+      "title": "0xWhiteMage/Qwen3.8-27B-Kearuga-DFlash2-FP8-E4M3 · Hugging Face",
+      "url": "https://huggingface.co/0xWhiteMage/Qwen3.8-27B-Kearuga-DFlash2-FP8-E4M3",
+      "snippet": "📌 Model Overview Qwen3.8-27B-Kearuga-DFlash2-FP8-E4M3 is a high-speed 5-layer block-diffusion speculative drafter engineered specifically to accelerate Qwen3.8-27B inference on the NVIDIA DGX Spark."
+    },
+    {
+      "title": "Pinterest 好在哪里？ - 知乎",
+      "url": "https://www.zhihu.com/question/19562210/answers/updated",
+      "snippet": "Pinterest一个月到底能赚多少美金 这个问题我必须放第一个回答,因为80%刷到这篇的人最关心的就是这个。 跟你说实话,前3个月基本 …"
+    }
+  ]
+}

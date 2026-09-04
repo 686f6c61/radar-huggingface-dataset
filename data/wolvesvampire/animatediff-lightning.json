@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "WolvesVampire/AnimateDiff-Lightning",
+  "slug": "wolvesvampire-animatediff-lightning",
+  "author": "WolvesVampire",
+  "url": "https://huggingface.co/WolvesVampire/AnimateDiff-Lightning",
+  "created_at": "2026-09-04T13:55:48.000Z",
+  "updated_at": "2026-09-04T13:55:48.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-video",
+    "stable-diffusion",
+    "animatediff",
+    "arxiv:2403.12706",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7282522634,
+  "storage_human": "7.3 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Query（英语单词）_百度百科",
+      "url": "https://baike.baidu.com/item/Query/63305502",
+      "snippet": "Query是英语中具有名词与动词双重词性的常用词汇，发音为英 [ˈkwɪəri]、美 [ˈkwɪri]。 作为名词表示“疑问，询问”或“问号”，作动词时 …"
+    },
+    {
+      "title": "AnimateDiff-Lightning: Cross-Model Diffusion Distillation",
+      "url": "https://huggingface.co/papers/2403.12706",
+      "snippet": "Join the discussion on this paper page We present AnimateDiff-Lightning for lightning-fast video generation. Our model uses progressive adversarial diffusion distillation to achieve new state-of-the-art in few-step video generation. We discuss our modifications to adapt it for the video modality. Furthermore, we propose to simultaneously distill the probability flow of multiple base diffusion ..."
+    },
+    {
+      "title": "query - 搜索 词典",
+      "url": "https://global.bing.com/dict/search?q=query&FORM=BDVSP6&cc=cn",
+      "snippet": "6. To query the database, a user or application can connect to any server instance to which the database is attached. 若要 查询 数据 …"
+    },
+    {
+      "title": "ByteDance/AnimateDiff-Lightning · Hugging Face",
+      "url": "https://huggingface.co/ByteDance/AnimateDiff-Lightning",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Query（计算机术语）_百度百科",
+      "url": "https://baike.baidu.com/item/Query/3789545",
+      "snippet": "Query的基本语法通常包括SELECT、FROM、WHERE等关键字，支持比较操作符、逻辑操作符和算术操作符，以及聚合函数、分组 …"
+    }
+  ]
+}

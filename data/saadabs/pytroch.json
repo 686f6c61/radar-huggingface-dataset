@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SaadAbs/PyTroch",
+  "slug": "saadabs-pytroch",
+  "author": "SaadAbs",
+  "url": "https://huggingface.co/SaadAbs/PyTroch",
+  "created_at": "2026-09-04T11:13:28.000Z",
+  "updated_at": "2026-09-04T11:13:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "216.24.57.1 | San Francisco, AS397273, VPN Not Detected",
+      "url": "https://ipinfo.io/216.24.57.1",
+      "snippet": "Get Details for IP 216.24.57.1: Hosted by Render, located in San Francisco, AS397273. View ranges, ASN info, and related IPs."
+    },
+    {
+      "title": "Segment Anything | Meta AI",
+      "url": "https://segment-anything.metademolab.com/",
+      "snippet": "AI Computer Vision Research Segment Anything Model (SAM): a new AI model from Meta AI that can \"cut out\" any object, in any image, with a single click SAM is a promptable segmentation system with zero-shot generalization to unfamiliar objects and images, without the need for additional training."
+    },
+    {
+      "title": "Whois IP 216.24.57.1",
+      "url": "https://www.whois.com/whois/216.24.57.1",
+      "snippet": "Whois IP Lookup for 216.24.57.1"
+    },
+    {
+      "title": "A PyTorch native platform for training generative AI models",
+      "url": "https://github.com/pytorch/torchtitan",
+      "snippet": "torchtitan is a PyTorch native platform designed for rapid experimentation and large-scale training of generative AI models. As a minimal clean-room implementation of PyTorch native scaling techniques, torchtitan provides a flexible foundation for developers to build upon. With torchtitan extension points, one can easily create custom extensions tailored to specific needs. Our mission is to ..."
+    },
+    {
+      "title": "216.24.57.1 | Render | AbuseIPDB",
+      "url": "https://www.abuseipdb.com/check/216.24.57.1",
+      "snippet": "Aug 18, 2024 · 216.24.57.1 IP Abuse Reports for 216.24.57.1: This IP address has been reported a total of 40times from 27 distinct …"
+    }
+  ]
+}

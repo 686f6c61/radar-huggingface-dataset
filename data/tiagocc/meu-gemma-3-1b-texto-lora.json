@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "TiagoCC/meu-gemma-3-1b-texto-lora",
+  "slug": "tiagocc-meu-gemma-3-1b-texto-lora",
+  "author": "TiagoCC",
+  "url": "https://huggingface.co/TiagoCC/meu-gemma-3-1b-texto-lora",
+  "created_at": "2026-09-04T15:45:39.000Z",
+  "updated_at": "2026-09-04T15:46:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85615977,
+  "storage_human": "86 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cougar (slang) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Cougar_(slang)",
+      "snippet": "Cougar is a slang term for a woman who seeks romantic or sexual relationships with significantly younger men. [1][2] The origin of the …"
+    },
+    {
+      "title": "google/gemma-3-1b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-1b-it",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "What Is a Cougar? The Complexities of Dating as an Older Woman",
+      "url": "https://www.datingnews.com/daters-pulse/what-is-a-cougar/",
+      "snippet": "Mar 5, 2025 · Where did the term come from, and what does it mean to be a cougar? Calling someone a cougar is a complicated …"
+    },
+    {
+      "title": "Gemma 3 - Google's Most Advanced Open AI Model - GitHub",
+      "url": "https://github.com/gemma-3/gemma-3",
+      "snippet": "Gemma 3 is Google's most advanced open AI model, offering state-of-the-art performance with a 128K context window, multimodal capabilities, and support for 140+ languages. Build powerful applications on a single GPU with this cutting-edge technology."
+    },
+    {
+      "title": "What Does the Slang Term \"Cougar\" Mean? • 7ESL",
+      "url": "https://7esl.com/cougar-meaning/",
+      "snippet": "Oct 31, 2023 · A cougar generally describes a middle-aged woman, typically in her 40s, seeking a romantic or sexual relationship …"
+    }
+  ]
+}

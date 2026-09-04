@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Charanjot/gd-arena-argument-quality",
+  "slug": "charanjot-gd-arena-argument-quality",
+  "author": "Charanjot",
+  "url": "https://huggingface.co/Charanjot/gd-arena-argument-quality",
+  "created_at": "2026-09-04T17:55:09.000Z",
+  "updated_at": "2026-09-04T18:00:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124646401,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498615052,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "有哪些高质量的图片网站（社区）推荐？ - 知乎",
+      "url": "https://www.zhihu.com/question/19619335",
+      "snippet": "pexels.com 每天更新100张高清图片，笔者经常在这个网站上寻找微信推文头图及内文配图。 优点： 图片清晰度高，搜索功能强，可 …"
+    },
+    {
+      "title": "Arena AI: The Official AI Ranking & LLM Leaderboard",
+      "url": "https://arena.ai/",
+      "snippet": "Chat, compare, vote for the world's best AI models. Join the community shaping the public leaderboard for LLMs, image, and code models through real-world evaluation."
+    },
+    {
+      "title": "pexels免费无版权高清图片网站使用方法 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/ff42efa9e84f0bc19e2202fc.html",
+      "snippet": "Mar 5, 2019 · 找到自己需要的图片，点击页面右边的“Free Download”免费下载，如图。"
+    },
+    {
+      "title": "Arena | Benchmark & Compare the Best AI Models",
+      "url": "https://arena.ai/c/%5BSubsection%5D",
+      "snippet": "Chat with multiple AI models side-by-side. Compare ChatGPT, Claude, Gemini, and other top LLMs. Crowdsourced benchmarks and leaderboards."
+    },
+    {
+      "title": "剪辑新手怎么找练习素材？（除自拍）？ - 知乎",
+      "url": "https://www.zhihu.com/question/284709165",
+      "snippet": "国内优质素材网站 上一期讲了新手零基础该怎么一步一步学习视频剪辑,这一期讲新手学习剪辑训练时去网上哪里寻找免费的视频素材 …"
+    }
+  ]
+}

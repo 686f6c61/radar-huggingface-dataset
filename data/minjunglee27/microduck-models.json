@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "minjunglee27/microduck-models",
+  "slug": "minjunglee27-microduck-models",
+  "author": "minjunglee27",
+  "url": "https://huggingface.co/minjunglee27/microduck-models",
+  "created_at": "2026-09-04T15:49:22.000Z",
+  "updated_at": "2026-09-04T16:00:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "mujoco",
+    "sim2real",
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18426112,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=it",
+      "snippet": "Non è possibile visualizzare una descrizione perché il sito non lo consente."
+    },
+    {
+      "title": "minjunglee27 (Minjung Lee) - Hugging Face",
+      "url": "https://huggingface.co/minjunglee27",
+      "snippet": "User profile of Minjung Lee on Hugging Face"
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/login?service=mail&hl=it",
+      "snippet": "Gmail è un servizio email intuitivo, efficace e utile. 15 GB di spazio di archiviazione, meno spam e accesso tramite dispositivi mobili."
+    }
+  ]
+}

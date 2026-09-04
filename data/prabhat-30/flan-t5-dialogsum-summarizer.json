@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "prabhat-30/flan-t5-dialogsum-summarizer",
+  "slug": "prabhat-30-flan-t5-dialogsum-summarizer",
+  "author": "prabhat-30",
+  "url": "https://huggingface.co/prabhat-30/flan-t5-dialogsum-summarizer",
+  "created_at": "2026-09-04T14:18:15.000Z",
+  "updated_at": "2026-09-04T14:18:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3558888,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "إكسترا السعودية | اشترِ الإلكترونيات بثقة",
+      "url": "https://www.extra.com/ar-sa",
+      "snippet": "اكسترا في أي وقت، وأي مكان! حمل تطبيق اكسترا لتجربة تسوق أفضل والاستمتاع بعروض حصرية."
+    },
+    {
+      "title": "GitHub - Kshitijbhanu/flan-t5-dialogue-summarizer",
+      "url": "https://github.com/Kshitijbhanu/flan-t5-dialogue-summarizer",
+      "snippet": "A dialogue summarization project built using Google's FLAN-T5 model. This project covers the complete NLP workflow from fine tuning a pretrained sequence to sequence model on the DialogSum dataset to deploying it as a production ready inference API using FastAPI, Docker and GitHub Actions. The repository includes model training, evaluation, Hugging Face model publishing a REST API for ..."
+    },
+    {
+      "title": "eXtra Saudi Arabia | Buy Electronics with Confidence",
+      "url": "https://www.extra.com/en-sa",
+      "snippet": "Browse top deals from eXtra Saudi Arabia today. Find the best brands in mobiles, home appliances, TVs & laptops. Enjoy fast …"
+    },
+    {
+      "title": "Dialogue Summarization using Flan T-5 (LLM) Model - Medium",
+      "url": "https://medium.com/@son4selv4/dialogue-summarization-using-flan-t-5-llm-model-61ba8511f2fa",
+      "snippet": "Dialogue Summarization using Flan T-5 (LLM) Model Generative AI is using AI to generate synthetic content such as text, videos, audio and images. This technology has helped scientists to build ..."
+    },
+    {
+      "title": "مدونة اكسترا | الصفحة الرئيسية",
+      "url": "https://www.blog.extra.com/",
+      "snippet": "عرض الكل خدمات اكسترا تجهيز اكسترا ضمان اكسترا حماية اكسترا صيانة اكسترا إكسترا لصيانة المنازل عرض الكل أجهزة أبل"
+    }
+  ]
+}

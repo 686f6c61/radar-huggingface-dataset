@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "latentdivergence/offload-models",
+  "slug": "latentdivergence-offload-models",
+  "author": "latentdivergence",
+  "url": "https://huggingface.co/latentdivergence/offload-models",
+  "created_at": "2026-09-04T11:45:43.000Z",
+  "updated_at": "2026-09-04T11:46:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5069598,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Breuning · saint maurice · Schmuck aus Pforzheim",
+      "url": "https://www.breuning.de/",
+      "snippet": "Designen Sie Ihre individuellen Ringe und entdecken Sie unsere Trauring­kollektionen von Breuning. Erleben Sie unseren Schmuck …"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Breuning GmbH",
+      "url": "https://shop.breuning.de/de/",
+      "snippet": "Breuning ist einer der führenden Hersteller für Trauringe in Europa und bekannt für edle Schmuckstücke in Gold, Silber und Platin. …"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Trauringkollektion Breuning - Breuning · saint maurice · Schmuck aus ...",
+      "url": "https://www.breuning.de/sortiment/trauringkollektion-breuning.html",
+      "snippet": "Finden Sie hier Ihren Breuning Juwelier in Ihrer Nähe und vereinbaren Sie einen Beratungstermin. Erleben Sie unseren Schmuck …"
+    }
+  ]
+}

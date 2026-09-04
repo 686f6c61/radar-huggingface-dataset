@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "DreamFoundries/K2-Horizon-3.7B-MLX-6bit",
+  "slug": "dreamfoundries-k2-horizon-3-7b-mlx-6bit",
+  "author": "DreamFoundries",
+  "url": "https://huggingface.co/DreamFoundries/K2-Horizon-3.7B-MLX-6bit",
+  "created_at": "2026-09-04T17:49:09.000Z",
+  "updated_at": "2026-09-04T17:49:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "mlxhub",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:IFM/K2-Horizon-3.7B",
+    "base_model:quantized:IFM/K2-Horizon-3.7B",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20637260,
+  "storage_human": "21 MB",
+  "base_model": "IFM/K2-Horizon-3.7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "Microsoft Bing Homepage daily quiz questions and their answers"
+    },
+    {
+      "title": "K2 Horizon - a IFM Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/IFM/k2-horizon",
+      "snippet": "K2 Horizon models, datasets, and supporting resources"
+    },
+    {
+      "title": "Start home page daily quiz : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/1bwl8ci/start_home_page_daily_quiz/",
+      "snippet": "r/MicrosoftRewards We are not associated with Microsoft and are a community driven group to help maximize earning points. …"
+    },
+    {
+      "title": "IFM/K2-Horizon-3.7B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/IFM/K2-Horizon-3.7B",
+      "snippet": "Overview K2-Horizon-3.7B is a small dense model in the IFM K2-Horizon family, with 5.06B stored parameters including embeddings and support for up to 524,288 tokens of context."
+    },
+    {
+      "title": "[US] Bing Homepage Quiz (12-26-2021) : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/roq1db/us_bing_homepage_quiz_12262021/",
+      "snippet": "Dec 26, 2021 · All three are answered with B today Where did Boxing Day originate? Answer: B) United Kingdom These days, Boxing …"
+    }
+  ]
+}

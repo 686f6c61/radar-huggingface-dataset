@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kennyinou/nlp-matching42",
+  "slug": "kennyinou-nlp-matching42",
+  "author": "kennyinou",
+  "url": "https://huggingface.co/kennyinou/nlp-matching42",
+  "created_at": "2026-09-04T11:04:48.000Z",
+  "updated_at": "2026-09-04T11:04:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Book Things To Do, Attractions, and Tours | GetYourGuide",
+      "url": "https://www.getyourguide.com/?msockid=3c917d86d9316a3327046a4cd8ea6bd6",
+      "snippet": "Find, compare, and book sightseeing tours, attractions, excursions, things to do and fun activities from around the world. Save money …"
+    },
+    {
+      "title": "samle44/Kenny-the-AI-Chatbot - GitHub",
+      "url": "https://github.com/samle44/Kenny-the-AI-Chatbot",
+      "snippet": "Kenny is a Python-based AI chatbot built using spaCy and NLTK. It is designed to understand and respond to user inputs, with functionality for natural language processing (NLP) and fallback responses when the input is not recognized."
+    },
+    {
+      "title": "Originals by GetYourGuide",
+      "url": "https://www.getyourguide.com/c/originals-home?msockid=3c917d86d9316a3327046a4cd8ea6bd6",
+      "snippet": "Experience the world more deeply with Originals by GetYourGuide, a collection of our most immersive and unforgettable experiences …"
+    },
+    {
+      "title": "Meta says its AI model hacked into another company during testing",
+      "url": "https://www.theguardian.com/technology/2026/aug/05/meta-ai-model-hack-training",
+      "snippet": "Meta Meta says its AI model hacked into another company during testing Company is the third to report such an incident after Anthropic and OpenAI reported breaches during training Reuters"
+    },
+    {
+      "title": "The Explorer - GetYourGuide",
+      "url": "https://www.getyourguide.com/explorer/?msockid=3c917d86d9316a3327046a4cd8ea6bd6",
+      "snippet": "The Explorer is GetYourGuide's content hub for expertly curated travel inspiration, destination guides, news, and insider tips."
+    }
+  ]
+}

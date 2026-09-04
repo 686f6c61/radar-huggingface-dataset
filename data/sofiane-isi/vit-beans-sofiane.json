@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sofiane-isi/vit-beans-sofiane",
+  "slug": "sofiane-isi-vit-beans-sofiane",
+  "author": "sofiane-isi",
+  "url": "https://huggingface.co/sofiane-isi/vit-beans-sofiane",
+  "created_at": "2026-09-04T14:00:23.000Z",
+  "updated_at": "2026-09-04T14:01:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "beans",
+    "dataset:AI-Lab-Makerere/beans",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85800963,
+  "parameters_human": "85.8M",
+  "storage_bytes": 343232317,
+  "storage_human": "343 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sofiane Zermani — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sofiane_Zermani",
+      "snippet": "Sofiane Zermani, également dit Sofiane ou Fianso, est un rappeur, acteur et producteur musical français, né le 21 juillet 1986 à Saint …"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Sofiane Officiel - YouTube",
+      "url": "https://www.youtube.com/channel/UCqZsLxSCpQ2g-0CAT-cxuqg",
+      "snippet": "Sofiane - #JeSuisPasséChezSo2023 [Clip Officiel] Freestyle disponible sur les plateformes de streaming : …"
+    },
+    {
+      "title": "ViT_beans Open-source Image Classification Model - Free to Use for ...",
+      "url": "https://model.aibase.com/models/details/1915735726798561281",
+      "snippet": "A Vision Transformer model fine-tuned on the beans dataset based on google/vit-base-patch16-224-in21k for image classification tasks"
+    },
+    {
+      "title": "Sofiane (rapper) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sofiane_(rapper)",
+      "snippet": "Sofiane Zermani (French pronunciation: [sɔfjan zɛʁmani], Arabic: سفيان زرماني; born 21 July 1986) is a French rapper. He is also known …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "escapebirdy/rope_cut_oct_xyzi_octe_2stage_act_4096",
+  "slug": "escapebirdy-rope_cut_oct_xyzi_octe_2stage_act_4096",
+  "author": "escapebirdy",
+  "url": "https://huggingface.co/escapebirdy/rope_cut_oct_xyzi_octe_2stage_act_4096",
+  "created_at": "2026-09-04T11:15:05.000Z",
+  "updated_at": "2026-09-04T11:15:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:escapebirdy/rope_cut_oct_xyzi_4096_v1",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51305412,
+  "parameters_human": "51.3M",
+  "storage_bytes": 205252992,
+  "storage_human": "205 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games on CrazyGames | Play Now!",
+      "url": "https://www.crazygames.com/",
+      "snippet": "Play free online games at CrazyGames, the best place to play high-quality browser games. We add new games every day. Have fun!"
+    },
+    {
+      "title": "escapebirdy/rope_cut_oct_xyzi_octe_2048 · Hugging Face",
+      "url": "https://huggingface.co/escapebirdy/rope_cut_oct_xyzi_octe_2048",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Car Games Play on CrazyGames",
+      "url": "https://www.crazygames.com/t/car",
+      "snippet": "Race cars at high speeds and drift around tight corners in our complete collection of free online car games. Play now in your web …"
+    },
+    {
+      "title": "cagedBirdy/rope_cut_oct_xyzi_v1 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/cagedBirdy/rope_cut_oct_xyzi_v1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bloxd io Play on CrazyGames",
+      "url": "https://www.crazygames.com/game/bloxdhop-io",
+      "snippet": "Bloxd.io is an IO adventure game with Minecraft-style visuals where you can navigate obstacle courses, gather resources, craft tools, …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "avishkararjan/qwen2.5-coder-7b-quad-dpo-success-rate",
+  "slug": "avishkararjan-qwen2-5-coder-7b-quad-dpo-success-rate",
+  "author": "avishkararjan",
+  "url": "https://huggingface.co/avishkararjan/qwen2.5-coder-7b-quad-dpo-success-rate",
+  "created_at": "2026-09-04T11:41:58.000Z",
+  "updated_at": "2026-09-04T11:42:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92215236,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open Broadcaster Software | OBS",
+      "url": "https://obsproject.com/",
+      "snippet": "OBS (Open Broadcaster Software) is free and open source software for video recording and live streaming. Stream to Twitch, …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Download | OBS",
+      "url": "https://obsproject.com/download",
+      "snippet": "OBS Studio is officially distributed as a Flatpak on Flathub and a PPA for Ubuntu 24.04 and newer. For other installation methods, …"
+    },
+    {
+      "title": "avishkararjan/qwen2.5-coder-7b-quad-sft-7095-v1 · Hugging Face",
+      "url": "https://huggingface.co/avishkararjan/qwen2.5-coder-7b-quad-sft-7095-v1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Baixar OBS Studio",
+      "url": "https://obsproject.com/pt-br/download",
+      "snippet": "A versão para MacOS do OBS Studio suporta o MacOS 10.15 ou superior. O lançamento para Linux está disponível oficialmente …"
+    }
+  ]
+}

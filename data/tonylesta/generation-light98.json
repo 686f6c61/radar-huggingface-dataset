@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Tonylesta/generation-light98",
+  "slug": "tonylesta-generation-light98",
+  "author": "Tonylesta",
+  "url": "https://huggingface.co/Tonylesta/generation-light98",
+  "created_at": "2026-09-04T13:49:03.000Z",
+  "updated_at": "2026-09-04T13:49:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "r/news - Reddit",
+      "url": "https://www.reddit.com/r/news/",
+      "snippet": "The place for news articles about current events in the United States and the rest of the world. Discuss it all here."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy's AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "Tonylesta (Tony Lestari) - Hugging Face",
+      "url": "https://huggingface.co/Tonylesta/datasets",
+      "snippet": "Recent Activity updated a modelabout 7 hours ago Tonylesta/model_147584158_flamingo_giant published a modelabout 7 hours ago Tonylesta/model_147584158_flamingo_giant View all activity"
+    },
+    {
+      "title": "【X】藤井セイラって何者なんですか？？暇なのか？X（旧Twitter）に …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13323303748",
+      "snippet": "Dec 16, 2025 · 【X】藤井セイラって何者なんですか？？暇なのか？X（旧Twitter）にて毎日、世間の常識に逆張りした投稿ばかり …"
+    }
+  ]
+}

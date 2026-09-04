@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nehal2006/Signal",
+  "slug": "nehal2006-signal",
+  "author": "nehal2006",
+  "url": "https://huggingface.co/nehal2006/Signal",
+  "created_at": "2026-09-04T11:15:11.000Z",
+  "updated_at": "2026-09-04T11:15:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Daily Horoscopes | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/",
+      "snippet": "Wondering what your horoscope for today (or even tomorrow) is? Sign up for our daily horoscope emails based on your own zodiac …"
+    },
+    {
+      "title": "nehal2006 (nehal) - Hugging Face",
+      "url": "https://huggingface.co/nehal2006/models",
+      "snippet": "User profile of nehal on Hugging Face"
+    },
+    {
+      "title": "Read Your Daily Horoscope! | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/",
+      "snippet": "Read Astrology Answers' online daily horoscopes for your zodiac sign, Tarot readings, article content, Chinese astrology, …"
+    },
+    {
+      "title": "nehal2006 (nehal) - Hugging Face",
+      "url": "https://huggingface.co/nehal2006",
+      "snippet": "Generate PDF reports and view progress charts for child learning. nehal2006 Apr 7. models 0. None public yet. datasets 0"
+    },
+    {
+      "title": "网友调侃 Gemini 为北美大豆包，称其为最蠢 AI，为什么会被诟病难 …",
+      "url": "https://www.zhihu.com/question/2047324900080051711",
+      "snippet": "Jun 8, 2026 · 鉴定为没用过真正的豆包. 试了一次都感觉震惊， Gemini 至少不会胡说八道，豆包ai幻觉和胡编乱造的程度高的吓人. …"
+    }
+  ]
+}

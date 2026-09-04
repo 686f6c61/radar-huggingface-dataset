@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "LookUpMark/Ornith-1.5-35B-A3B-oQ6e-mtp",
+  "slug": "lookupmark-ornith-1-5-35b-a3b-oq6e-mtp",
+  "author": "LookUpMark",
+  "url": "https://huggingface.co/LookUpMark/Ornith-1.5-35B-A3B-oQ6e-mtp",
+  "created_at": "2026-09-04T17:35:10.000Z",
+  "updated_at": "2026-09-04T18:20:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "quantization",
+    "mtp",
+    "mixture-of-experts",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 30117342330,
+  "storage_human": "30.1 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Volvo F10, F12 und F16 – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Volvo_F10,_F12_und_F16",
+      "snippet": "Die Volvo F-Serie (F10, F12 und F16) war eine Baureihe schwerer Frontlenker - Lkw des schwedischen Herstellers Volvo Trucks, die …"
+    },
+    {
+      "title": "Ornith 1.5 35B-A3B · MTP · 70.8 t/s @ 4k on Spark — SparkBench",
+      "url": "https://sparkbench.dev/models/ornith-ai_ornith-1.5-35b-a3b/",
+      "snippet": "Ornith 1.5 35B-A3B · MTP runs at 70.8 t/s @ 4k on a single DGX Spark GB10 via vLLM."
+    },
+    {
+      "title": "Volvo F10, F12, and F16 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Volvo_F10,_F12,_and_F16",
+      "snippet": "Volvo F10, F12, and F16 are a series of trucks manufactured by Volvo Trucks between 1977 and 1993. Volvo manufactured about …"
+    },
+    {
+      "title": "Ornith 1.5 35B-A3B: Specs, Benchmarks and How to Run It Locally",
+      "url": "https://www.aimadetools.com/blog/ornith-1-5-35b-a3b/",
+      "snippet": "Ornith 1.5 35B-A3B is an open-weight mixture-of-experts model aimed at coding agents, terminal work, tool use, and long-running software tasks. It has roughly 35 billion total parameters but routes each token through about 3 billion active parameters. The weights still have to fit in memory: “3B active” describes inference compute, not a 3B-model download or memory footprint."
+    },
+    {
+      "title": "Volvo F 10, Nutzfahrzeuge & Anhänger | kleinanzeigen.de",
+      "url": "https://www.kleinanzeigen.de/s-anhaenger-nutzfahrzeuge/volvo-f-10/k0c276?msockid=100dee20608a6ecd2568f9ea612d6fb9",
+      "snippet": "Kleinanzeigen: Volvo F 10, Nutzfahrzeuge & Anhänger günstig kaufen oder privat verkaufen - Jetzt finden oder inserieren! - …"
+    }
+  ]
+}

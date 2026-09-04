@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Dratini",
+  "slug": "ryanham1lton-dratini",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Dratini",
+  "created_at": "2026-09-04T15:58:39.000Z",
+  "updated_at": "2026-09-04T16:00:34.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117837229,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Dratini - v1.0 DRATINI - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/699089868535416872",
+      "snippet": "Download Dratini - free LORA SD 1.5 AI model on TENSOR. DRATINI, POKEMON, FURRY. By user_694007178469605245"
+    },
+    {
+      "title": "Instagram (@instagram) • Instagram photos and videos",
+      "url": "https://www.instagram.com/instagram/",
+      "snippet": "686M Followers, 286 Following, 8,578 Posts - Instagram (@instagram) on Instagram: \"Discover what's new on Instagram 🔎 \""
+    },
+    {
+      "title": "Dratini - Pokemon | Pocket monsters - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1645522761359745005",
+      "snippet": "Generate stunning pokemon, anthro, plant anime art with the 'Dratini - Pokemon | Pocket monsters' model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Instagram - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=en-US",
+      "snippet": "- Turn your life into a movie and discover short, entertaining videos on Instagram with Reels. - Customize your posts with exclusive …"
+    }
+  ]
+}

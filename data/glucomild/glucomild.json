@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "GlucoMild/GlucoMild",
+  "slug": "glucomild-glucomild",
+  "author": "GlucoMild",
+  "url": "https://huggingface.co/GlucoMild/GlucoMild",
+  "created_at": "2026-09-04T11:45:28.000Z",
+  "updated_at": "2026-09-04T11:45:28.000Z",
+  "license": "artistic-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:artistic-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "How to install Chrome Important: Before you download, check if Chrome supports your operating system and you’ve met all other …"
+    },
+    {
+      "title": "GlucoMild® | Official Site | Blood Sugar Support Drops",
+      "url": "http://glucomiild.com/",
+      "snippet": "GlucoMild liquid drops with Hawthorn, Motherwort, Grape Seed and Gotu Kola support healthy blood sugar and circulation. Save on the 6-bottle bundle today."
+    },
+    {
+      "title": "Google Chrome をダウンロードしてインストールする",
+      "url": "https://support.google.com/chrome/answer/95346?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome を初めて起動する際は、 Google 利用規約 を確認して同意する必要があります。 ヒント: Chrome がパッケージ マネー …"
+    },
+    {
+      "title": "Study Details | NCT07304778 | Evaluation of a Mobile AI-powered ...",
+      "url": "https://clinicaltrials.gov/study/NCT07304778",
+      "snippet": "A type of intervention model describing a clinical trial in which groups of participants receive two or more interventions in a specific order. For example, two-by-two cross-over assignment involves two groups of participants."
+    },
+    {
+      "title": "国内普通用户怎样下载到 Chrome？ - 知乎",
+      "url": "https://www.zhihu.com/question/37455757",
+      "snippet": "推荐用户下载浏览器时怎样才能使普通被墙用户下载到 Chrome？当然百度软件什么的绝不考虑。"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Dpredator-24/qwen2.5-3b-daemon",
+  "slug": "dpredator-24-qwen2-5-3b-daemon",
+  "author": "Dpredator-24",
+  "url": "https://huggingface.co/Dpredator-24/qwen2.5-3b-daemon",
+  "created_at": "2026-09-04T15:28:49.000Z",
+  "updated_at": "2026-09-04T15:29:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+    "base_model:quantized:unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 2061126286,
+  "storage_human": "2.1 GB",
+  "base_model": "unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.com: Prime Video: Prime Video",
+      "url": "https://www.amazon.com/gp/video/collection/IncludedwithPrime",
+      "snippet": "Find, shop for and buy Prime Video at Amazon.com"
+    },
+    {
+      "title": "Qwen/Qwen2.5-3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-3B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Prime Video: Watch, rent, or buy movies online",
+      "url": "https://www.amazon.com/gp/video/movie",
+      "snippet": "Browse top movies to stream, rent, or buy on Prime Video. Discover popular hits, new releases, and exclusive titles included with …"
+    },
+    {
+      "title": "Qwen2.5-3B: Specifications and GPU VRAM Requirements",
+      "url": "https://apxml.com/models/qwen2-5-3b",
+      "snippet": "Qwen2.5-3B is a foundational large language model developed by Alibaba Cloud, forming a part of the broader Qwen2.5 series. This model is primarily designed for advanced natural language processing tasks, serving as a robust base model that can be further fine-tuned for specific applications."
+    },
+    {
+      "title": "Lana Del Rey – Video Games Lyrics | Genius Lyrics",
+      "url": "https://genius.com/Lana-del-rey-video-games-lyrics",
+      "snippet": "Oct 7, 2011 · Considered Lana Del Rey’s breakthrough hit, “Video Games” served as the first single off the artist’s wildly successful …"
+    }
+  ]
+}

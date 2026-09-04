@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/Qwen3-4B-Instruct-2507_SFT_lora_ssaqs",
+  "slug": "xw17-qwen3-4b-instruct-2507_sft_lora_ssaqs",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Qwen3-4B-Instruct-2507_SFT_lora_ssaqs",
+  "created_at": "2026-09-04T17:37:11.000Z",
+  "updated_at": "2026-09-04T17:37:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77549418,
+  "storage_human": "78 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Developer Forum | Roblox",
+      "url": "https://devforum.roblox.com/",
+      "snippet": "Chat with other creators, learn about Roblox platform updates, and report issues with the platform."
+    },
+    {
+      "title": "xw17/Qwen3-4B-Instruct-2507_SFT_lora_globem · Hugging Face",
+      "url": "https://huggingface.co/xw17/Qwen3-4B-Instruct-2507_SFT_lora_globem",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ForgeGUI - AI Roblox Scripting Tool Feature",
+      "url": "https://devforum.roblox.com/t/forgegui-ai-roblox-scripting-tool-feature/4734535",
+      "snippet": "Jul 13, 2026 · Hey Yall devs 👋 ForgeGUI’s AI scripting tool is a Roblox Studio plugin that turns plain-English descriptions into working …"
+    },
+    {
+      "title": "Qwen/Qwen3-4B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lux - AI Coding Agent for Roblox Studio [FREE]",
+      "url": "https://devforum.roblox.com/t/%E2%96%B8-lux-ai-coding-agent-for-roblox-studio-free/4207506",
+      "snippet": "Jan 2, 2026 · Lux - AI That Actually Codes Inside Your Project Stop copy-pasting. Stop debugging AI suggestions. Start shipping. …"
+    }
+  ]
+}

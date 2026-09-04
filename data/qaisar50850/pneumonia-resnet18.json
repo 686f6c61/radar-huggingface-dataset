@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "qaisar50850/pneumonia-resnet18",
+  "slug": "qaisar50850-pneumonia-resnet18",
+  "author": "qaisar50850",
+  "url": "https://huggingface.co/qaisar50850/pneumonia-resnet18",
+  "created_at": "2026-09-04T11:51:11.000Z",
+  "updated_at": "2026-09-04T12:07:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44788875,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "AventIQ-AI/ResNet-18-pneumonia-detection · Hugging Face",
+      "url": "https://huggingface.co/AventIQ-AI/ResNet-18-pneumonia-detection",
+      "snippet": "🩺 ResNet-18 Pneumonia Detection Model This repository hosts a fine-tuned ResNet-18-based model optimized for pneumonia detection from chest X-ray images. The model classifies images into two categories: Normal and Pneumonia."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "GitHub - Sharan099/PneumoAI-: End-to-end app for pneumonia detection ...",
+      "url": "https://github.com/Sharan099/PneumoAI-",
+      "snippet": "End-to-end app for pneumonia detection from chest X-rays using a ResNet18 model. Users can upload X-rays via Streamlit and check results, plus ask questions through a RAG chatbot based on WHO guidelines. Built to enhance AI skills and demonstrate practical ML deployment. - Sharan099/PneumoAI-"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

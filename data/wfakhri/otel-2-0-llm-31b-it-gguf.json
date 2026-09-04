@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "wfakhri/OTel-2.0-LLM-31B-IT-GGUF",
+  "slug": "wfakhri-otel-2-0-llm-31b-it-gguf",
+  "author": "wfakhri",
+  "url": "https://huggingface.co/wfakhri/OTel-2.0-LLM-31B-IT-GGUF",
+  "created_at": "2026-09-04T11:21:22.000Z",
+  "updated_at": "2026-09-04T11:21:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "telecom",
+    "telecommunications",
+    "gsma",
+    "at-t",
+    "microsoft",
+    "dell",
+    "amd",
+    "red-hat",
+    "open-telco-ai",
+    "rag",
+    "instruction-following",
+    "tool-calling",
+    "osft",
+    "orthogonal-subspace-fine-tuning",
+    "continual-learning",
+    "domain-adaptation",
+    "post-trained",
+    "vllm",
+    "multimodal",
+    "text-generation",
+    "en",
+    "arxiv:2504.07097",
+    "base_model:farbodtavakkoli/OTel-2.0-LLM-31B-IT",
+    "base_model:finetune:farbodtavakkoli/OTel-2.0-LLM-31B-IT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "farbodtavakkoli/OTel-2.0-LLM-31B-IT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brooklyn Life Quiz | New York | 10 Questions - Fun Trivia",
+      "url": "https://www.funtrivia.com/trivia-quiz/Geography/Brooklyn-Life-216969.html",
+      "snippet": "May 16, 2024 · Brooklyn Life Trivia Quiz If you know Brooklyn like me, then please enjoy this quiz. A multiple-choice quiz by …"
+    },
+    {
+      "title": "farbodtavakkoli--otel-2.0-... | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/farbodtavakkoli--otel-2.0-llm-31b-it?search=otel",
+      "snippet": "OTel-2.0-LLM-31B-IT is a telecom-specialized instruction model post-trained from Gemma 4 31B-IT on approximately 440 billion telecom training tokens. It is the first release in the OTel 2.0 family and is designed to support telco-grade AI workflows across network operations, standards interpretation, product development, network configuration ..."
+    },
+    {
+      "title": "All Brooklyn Quizzes, Trivia, and Games - Sporcle",
+      "url": "https://www.sporcle.com/games/tags/brooklyn",
+      "snippet": "Can you name the wrongfully convicted Al Jazeera journalists in Egypt? Play Brooklyn quizzes on Sporcle, the world's largest quiz …"
+    },
+    {
+      "title": "OTel-2.0-LLM-31B-IT · Model · Inferix",
+      "url": "https://inferix.co/models/farbodtavakkoli/OTel-2.0-LLM-31B-IT",
+      "snippet": "OTel-2.0-LLM-31B-IT is a telecom-specialized instruction model post-trained from Gemma 4 31B-IT on approximately 440 billion telecom training tokens. It is the first release in the OTel 2.0 family and is designed to support telco-grade AI workflows across network operations, standards interpretation, product development, network configuration ..."
+    },
+    {
+      "title": "Brooklyn Quizzes | Quotev",
+      "url": "https://www.quotev.com/quizzes/Brooklyn",
+      "snippet": "Jan 23, 2022 · This is a quiz to find out which character from Brooklyn 99 you are. There are no real spoilers but you may want to …"
+    }
+  ]
+}

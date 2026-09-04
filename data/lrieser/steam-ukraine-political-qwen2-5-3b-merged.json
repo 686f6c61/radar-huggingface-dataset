@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "id": "LRieser/steam-ukraine-political-qwen2.5-3b-merged",
+  "slug": "lrieser-steam-ukraine-political-qwen2-5-3b-merged",
+  "author": "LRieser",
+  "url": "https://huggingface.co/LRieser/steam-ukraine-political-qwen2.5-3b-merged",
+  "created_at": "2026-09-04T15:35:35.000Z",
+  "updated_at": "2026-09-04T15:42:08.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ru",
+    "zh",
+    "pl",
+    "tr",
+    "de",
+    "pt",
+    "es",
+    "ko",
+    "fr",
+    "cs",
+    "uk"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "steam",
+    "game-reviews",
+    "political-relevance",
+    "corporate-political-activism",
+    "multilingual",
+    "qwen2.5",
+    "json-output",
+    "merged",
+    "conversational",
+    "en",
+    "ru",
+    "zh",
+    "pl",
+    "tr",
+    "de",
+    "pt",
+    "es",
+    "ko",
+    "fr",
+    "cs",
+    "uk",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183349348,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Political-relevance detection in Steam reviews",
+      "dataset": "Teacher-labeled Steam reviews, held-out split (n=4,446)",
+      "metric": "Macro-F1 (political relevance)",
+      "value": 0.9168
+    },
+    {
+      "task": "Political-relevance detection in Steam reviews",
+      "dataset": "Teacher-labeled Steam reviews, held-out split (n=4,446)",
+      "metric": "Political-class precision",
+      "value": 0.848
+    },
+    {
+      "task": "Political-relevance detection in Steam reviews",
+      "dataset": "Teacher-labeled Steam reviews, held-out split (n=4,446)",
+      "metric": "Political-class recall",
+      "value": 0.872
+    }
+  ],
+  "sources": [
+    {
+      "title": "Générez des styles Coucher de soleil par IA grâce au générateur d ...",
+      "url": "https://www.shutterstock.com/fr/ai-image-generator/styles/sunset-shadow?msockid=05a10946971b66e636e01e8c96ad67e6",
+      "snippet": "Créez instantanément des images coucher de soleil générées par IA. Saisissez une description ci-dessous pour vous lancer. …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-3B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "coucher de soleil : modèles gratuits à personnaliser | Canva",
+      "url": "https://www.canva.com/fr_fr/modeles/s/coucher-de-soleil/?msockid=05a10946971b66e636e01e8c96ad67e6",
+      "snippet": "Trouvez l’inspiration et créez votre design personnalisé sur le thème « coucher de soleil » avec nos modèles gratuits prêts à l’emploi."
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "Crée+une+image+d’un+coucher+de+soleil+sur+un+village+de+falaises …",
+      "url": "https://www.craiyon.com/en/search/cr%C3%A9e+une+image+d%E2%80%99un+coucher+de+soleil+sur+un+village+de+falaises+blanchies+au+bord+de+la+mer%2C+ciel+chaud+orange%E2%80%91rose%2C+d%C3%B4mes+et+moulins+brillant+d%E2%80%99une+lumi%C3%A8re+dor%C3%A9e%2C+coups+de+pinceau+%C3%A9pais+et+textur%C3%A9s%2C+couleurs+riches+de+peinture+%C3%A0+l%E2%80%99huile%2C+profondeur+atmosph%C3%A9rique+douce%2C+ambiance+m%C3%A9diterran%C3%A9enne+sereine",
+      "snippet": "crée+une+image+d’un+coucher+de+soleil+sur+un+village+de+falaises+blanchies+au+bord+de+la+mer,+ciel+chaud+orange‑rose,+dômes+et+moulins+brillant+d’une+lumière+dorée,+coups+de+pinceau+épais+et+texturés,+couleurs+riches+de+peinture+à+l’huile,+profondeur+atmosphérique+douce,+ambiance+méditerranéenne+sereine"
+    }
+  ]
+}

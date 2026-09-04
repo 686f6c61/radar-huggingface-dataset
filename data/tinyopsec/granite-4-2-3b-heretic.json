@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/granite-4.2-3b-Heretic",
+  "slug": "tinyopsec-granite-4-2-3b-heretic",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/granite-4.2-3b-Heretic",
+  "created_at": "2026-09-04T18:00:41.000Z",
+  "updated_at": "2026-09-04T18:00:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lebensmittel online bestellen im REWE Onlineshop",
+      "url": "https://www.rewe.de/shop?msockid=1528f8ecd08f6dda36b7ef26d1936c52",
+      "snippet": "Frische Lebensmittel online bestellen » Lieferung & Abholung zum Wunschtermin Große Auswahl Garantierte Frische Zeit & Stress …"
+    },
+    {
+      "title": "Granite 4.2 - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
+    },
+    {
+      "title": "Der REWE Lieferservice – Kosten, Infos & mehr",
+      "url": "https://www.rewe.de/service/lebensmittel-lieferservice/?msockid=1528f8ecd08f6dda36b7ef26d1936c52",
+      "snippet": "Der REWE Lieferservice bringt dir deine Lebensmittel bequem bis an die Haustür - das gilt für haltbare, wie für frische oder …"
+    },
+    {
+      "title": "granite4.2:3b - ollama.com",
+      "url": "https://ollama.com/library/granite4.2:3b",
+      "snippet": "Granite 4.2 models ship with a generation_config.json in their Hugging Face repository that declares recommended default inference hyperparameters. When present, these values are automatically injected into the Ollama Modelfile at publish time so that every quantized variant inherits the model authors’ recommended settings without any manual ..."
+    },
+    {
+      "title": "REWE.de - Deine Startseite für Lebensmittel im Internet!",
+      "url": "https://www.rewe.de/?msockid=1528f8ecd08f6dda36b7ef26d1936c52",
+      "snippet": "Bei REWE.de jede Woche neue Lebensmittel-Angebote in deiner REWE Filiale entdecken. Übrigens: Wir liefern Lebensmittel auch …"
+    }
+  ]
+}

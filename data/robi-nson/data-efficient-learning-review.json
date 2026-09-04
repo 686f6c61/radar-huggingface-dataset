@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "robi-nson/data-efficient-learning-review",
+  "slug": "robi-nson-data-efficient-learning-review",
+  "author": "robi-nson",
+  "url": "https://huggingface.co/robi-nson/data-efficient-learning-review",
+  "created_at": "2026-09-04T14:04:16.000Z",
+  "updated_at": "2026-09-04T14:04:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "data-efficient-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com.tr/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "luchiahao/data-efficient-learning-review · Hugging Face",
+      "url": "https://huggingface.co/luchiahao/data-efficient-learning-review",
+      "snippet": "Repository summary This is an exploratory note for Data Efficient Learning. It records the intended comparison, likely confounders, and reproducibility requirements before any benchmark result is reported."
+    },
+    {
+      "title": "Google Çeviri",
+      "url": "https://translate.google.com.tr/",
+      "snippet": "Google'ın ücretsiz olarak sunulan hizmeti, İngilizce ile 100'den fazla dil arasında kelime, ifade ve web sayfalarını anında çevirebilir."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.com.tr/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    }
+  ]
+}

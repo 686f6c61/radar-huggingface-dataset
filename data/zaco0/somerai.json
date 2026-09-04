@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Zaco0/SomerAI",
+  "slug": "zaco0-somerai",
+  "author": "Zaco0",
+  "url": "https://huggingface.co/Zaco0/SomerAI",
+  "created_at": "2026-09-04T15:57:53.000Z",
+  "updated_at": "2026-09-04T16:18:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6178316864,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pinterest",
+      "url": "https://www.pinterest.com/",
+      "snippet": "Start the school year inspired Find inspiration for dorm life, easy lunches, study setups, and more. Bring your favorite ideas to life …"
+    },
+    {
+      "title": "SAMURAI Model Enhances Zero-Shot Visual Tracking, Open-Source and Free ...",
+      "url": "https://deepnewz.com/ai-modeling/samurai-model-enhances-zero-shot-visual-tracking-open-source-free-outperforming-a23ee981",
+      "snippet": "The newly released SAMURAI model, an enhancement of Meta's Segment Anything Model (SAM 2), offers significant improvements in visual tracking capabilities. SAMURAI is designed for zero-shot visual tracking with motion-aware memory, addressing limitations encountered by SAM 2, particularly in scenarios involving fast-moving or self-occluding objects. This open-source AI tool is completely free ..."
+    },
+    {
+      "title": "Pinterest",
+      "url": "https://www.pinterest.com/login/",
+      "snippet": "turn on JavaScript."
+    },
+    {
+      "title": "SAMURAI: Adapting Segment Anything Model for Zero-Shot Visual Tracking ...",
+      "url": "https://yangchris11.github.io/samurai/",
+      "snippet": "The Segment Anything Model 2 (SAM 2) has demonstrated strong performance in object segmentation tasks but faces challenges in visual object tracking, particularly when managing crowded scenes with fast-moving or self-occluding objects. Furthermore, the fixed-window memory approach in the original model does not consider the quality of memories selected to condition the image features for the ..."
+    },
+    {
+      "title": "حول Pinterest | اكتشف أفكارًا جديدة وتسوق ما تحب",
+      "url": "https://about.pinterest.com/ar/",
+      "snippet": "موقع Pinterest هو المكان الذي تبدأ فيه الأفكار عبر الإنترنت وتتحول إلى لحظات حياة واقعية. اكتشف ما يناسبك وتسوق في أكثر الأماكن إيجابية عبر الإنترنت."
+    }
+  ]
+}

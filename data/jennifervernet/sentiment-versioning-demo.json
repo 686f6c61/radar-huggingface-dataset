@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jennifervernet/sentiment-versioning-demo",
+  "slug": "jennifervernet-sentiment-versioning-demo",
+  "author": "jennifervernet",
+  "url": "https://huggingface.co/jennifervernet/sentiment-versioning-demo",
+  "created_at": "2026-09-04T11:08:55.000Z",
+  "updated_at": "2026-09-04T11:11:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 803513283,
+  "storage_human": "804 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marriott Bonvoy Hotels | Book Directly & Get Exclusive Rates",
+      "url": "https://www.marriott.com/default.mi?msockid=10d368197bd56bad391e7fd37a846a5b",
+      "snippet": "Book Directly & Save at any of our 9000+ Marriott Bonvoy Hotels. Choose from Luxury Hotels, Resorts, Extended Stay Hotels, Pet …"
+    },
+    {
+      "title": "AGNES AI - Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    },
+    {
+      "title": "Marriott Bonvoy Account Login - Sign In | Marriott",
+      "url": "https://www.marriott.com/sign-in.mi?msockid=10d368197bd56bad391e7fd37a846a5b",
+      "snippet": "Securely access your Marriott Bonvoy® account to view points, manage reservations, and explore exclusive member benefits."
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=sentiment-analysis",
+      "snippet": "Explore machine learning models. Anthos23/sentiment-roberta-large-english-finetuned-sentiment-analysis"
+    },
+    {
+      "title": "Marriott International - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Marriott_International",
+      "snippet": "Marriott International, Inc. was formed in 1993 when Marriott Corporation split into two companies: Marriott International, Inc., which …"
+    }
+  ]
+}

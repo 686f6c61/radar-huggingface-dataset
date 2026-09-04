@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "fodorad/blinklinmult-models",
+  "slug": "fodorad-blinklinmult-models",
+  "author": "fodorad",
+  "url": "https://huggingface.co/fodorad/blinklinmult-models",
+  "created_at": "2026-09-04T16:00:57.000Z",
+  "updated_at": "2026-09-04T16:03:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "video-classification",
+  "library": "blinklinmult",
+  "languages": [],
+  "tags": [
+    "blinklinmult",
+    "onnx",
+    "blink-detection",
+    "eye-state-recognition",
+    "eye-tracking",
+    "video-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110872991,
+  "storage_human": "111 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "BlinkLinMulT/README.md at main · fodorad/BlinkLinMulT · GitHub",
+      "url": "https://github.com/fodorad/BlinkLinMulT/blob/main/README.md",
+      "snippet": "BlinkLinMulT is trained for blink presence detection and eye state recognition tasks. Our results demonstrate comparable or superior performance compared to state-of-the-art models on 2 tasks, using 7 public benchmark databases."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "GitHub - fodorad/BlinkLinMulT",
+      "url": "https://github.com/fodorad/BlinkLinMulT/tree/main",
+      "snippet": "BlinkLinMulT is trained for blink presence detection and eye state recognition tasks. Our results demonstrate comparable or superior performance compared to state-of-the-art models on 2 tasks, using 7 public benchmark databases."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube/main%20page",
+      "snippet": "Olivia Rodrigo reacts to her Watch History (you seem pretty sad for a girl so in love) YouTube 1.5M views • 2 months ago CC"
+    }
+  ]
+}

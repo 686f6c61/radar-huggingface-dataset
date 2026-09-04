@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/Qwen2-1.5B-Instruct_SFT_lora_ptt",
+  "slug": "xw17-qwen2-1-5b-instruct_sft_lora_ptt",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Qwen2-1.5B-Instruct_SFT_lora_ptt",
+  "created_at": "2026-09-04T16:08:50.000Z",
+  "updated_at": "2026-09-04T16:09:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48399334,
+  "storage_human": "48 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon Haul : notre test révèle de sérieux problèmes de conformité",
+      "url": "https://www.60millions-mag.com/commerce/article/amazon-haul-la-foire-aux-produits-non-conformes-20260506/",
+      "snippet": "May 6, 2026 · Amazon Haul : notre test révèle de sérieux problèmes de conformité Des milliers d’objets sont vendus quelques euros …"
+    },
+    {
+      "title": "xw17/Qwen2-1.5B-Instruct_SFT_lora_universal · Hugging Face",
+      "url": "https://huggingface.co/xw17/Qwen2-1.5B-Instruct_SFT_lora_universal",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Envoyer de l’argent avec Wero : comment ça marche",
+      "url": "https://www.60millions-mag.com/banque-assurance/article/envoyer-de-l-argent-avec-wero-comment-ca-marche-25444-20260304/",
+      "snippet": "Mar 4, 2026 · 2. Qui peut l’utiliser ? « Tout client particulier dont la banque propose le service, soit la quasi-totalité des …"
+    },
+    {
+      "title": "xw17/Qwen2-1.5B-Instruct_SFT_lora_usc-had at main - Hugging Face",
+      "url": "https://huggingface.co/xw17/Qwen2-1.5B-Instruct_SFT_lora_usc-had/tree/main",
+      "snippet": "Use this model main Qwen2-1.5B-Instruct_SFT_lora_usc-had 48.4 MB Ctrl+K Ctrl+K 1 contributor History:3 commits xw17 Upload tokenizer 85a37c7 verifiedabout 8 hours ago .gitattributes Safe 1.57 kBUpload tokenizerabout 8 hours ago README.md Safe 5.17 kBUpload modelabout 8 hours ago adapter_config.json 1.06 kBUpload modelabout 8 hours ago adapter ..."
+    },
+    {
+      "title": "DVD-Forum.at: Das Online-Magazin für Cineasten und Gamer",
+      "url": "https://www.dvd-forum.at/",
+      "snippet": "1 day ago · Entdecke die Welt des Films und der Games mit DVD-Forum.at - dem ultimativen Online-Magazin für Cineasten und …"
+    }
+  ]
+}

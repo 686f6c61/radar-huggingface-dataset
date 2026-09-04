@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "robinson5340/tiny-transformer-matching-distilled65",
+  "slug": "robinson5340-tiny-transformer-matching-distilled65",
+  "author": "robinson5340",
+  "url": "https://huggingface.co/robinson5340/tiny-transformer-matching-distilled65",
+  "created_at": "2026-09-04T11:51:32.000Z",
+  "updated_at": "2026-09-04T11:51:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flixcheck | Einfache Digitalisierung Ihrer Kundenkommunikation",
+      "url": "https://www.flixcheck.de/",
+      "snippet": "Flixcheck verbindet die digitale Kundenkommunikation, Online-Formular-Erstellung per KI, eIDAS-Signaturen, Multichannel-Versand …"
+    },
+    {
+      "title": "robinson5340 (Dylan Robinson) - Hugging Face",
+      "url": "https://huggingface.co/robinson5340",
+      "snippet": "User profile of Dylan Robinson on Hugging Face"
+    },
+    {
+      "title": "Flixcheck | Login",
+      "url": "https://app.flixcheck.com/portal/login",
+      "snippet": "Login Do you not have an account yet? Register now"
+    },
+    {
+      "title": "robinson5340 (Dylan Robinson) - Hugging Face",
+      "url": "https://huggingface.co/robinson5340/models",
+      "snippet": "robinson5340's models1 Sort: Recently updated robinson5340/model_367652465_mobilevit_giant Updated 2 days ago"
+    },
+    {
+      "title": "Flixcheck",
+      "url": "https://app.flixcheck.com/register/",
+      "snippet": "Keine Installation erforderlich Einfach über den Browser einloggen und direkt mit Flixcheck loslegen."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "frutiemax/twisted-reality-sana-krea-dora-v1",
+  "slug": "frutiemax-twisted-reality-sana-krea-dora-v1",
+  "author": "frutiemax",
+  "url": "https://huggingface.co/frutiemax/twisted-reality-sana-krea-dora-v1",
+  "created_at": "2026-09-04T11:20:17.000Z",
+  "updated_at": "2026-09-04T11:20:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 944441312,
+  "storage_human": "944 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ventilation mécanique contrôlée — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ventilation_m%C3%A9canique_contr%C3%B4l%C3%A9e",
+      "snippet": "La ventilation mécanique contrôlée (VMC) est, dans le bâtiment, un dispositif mécanique destiné à assurer le renouvellement …"
+    },
+    {
+      "title": "frutiemax/twisted-reality-krea-v1 · Hugging Face",
+      "url": "https://huggingface.co/frutiemax/twisted-reality-krea-v1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tout savoir sur la VMC : fonctionnement et bienfaits",
+      "url": "https://www.france-ventilation.com/fr/fiches-pratiques/tout-savoir-sur-la-vmc-fonctionnement-et-bienfaits/",
+      "snippet": "La ventilation mécanique contrôlée (VMC) va vous permettre de renouveler l’air dans votre logement. Son but ? Rendre l’air que vous …"
+    },
+    {
+      "title": "frutiemax/twisted-reality-sana-fractals · Hugging Face",
+      "url": "https://huggingface.co/frutiemax/twisted-reality-sana-fractals",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "VMC : à quoi ça sert et comment ça fonctionne vraiment",
+      "url": "https://www.mon-club-elec.fr/vmc-ventilation-guide/",
+      "snippet": "Dans ce guide, j’analyse en profondeur à quoi sert réellement une VMC, comment elle fonctionne dans une maison moderne, ce …"
+    }
+  ]
+}

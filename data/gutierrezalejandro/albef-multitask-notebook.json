@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "gutierrezalejandro/albef-multitask-notebook",
+  "slug": "gutierrezalejandro-albef-multitask-notebook",
+  "author": "gutierrezalejandro",
+  "url": "https://huggingface.co/gutierrezalejandro/albef-multitask-notebook",
+  "created_at": "2026-09-04T16:08:19.000Z",
+  "updated_at": "2026-09-04T16:08:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zougla: Ειδήσεις από την Ελλάδα και από ...",
+      "url": "https://www.zougla.gr/",
+      "snippet": "Ειδήσεις από την Ελλάδα και τον κόσμο, ενημέρωση για κοινωνία, πολιτική, οικονομία, αθλητικά και lifestyle."
+    },
+    {
+      "title": "abdullahalotaibi/multitask · Hugging Face",
+      "url": "https://huggingface.co/abdullahalotaibi/multitask",
+      "snippet": "Overview A research-oriented Albef prototype targeting Multitask. The included base setup documents defaults and file formats without presenting unverified performance numbers."
+    },
+    {
+      "title": "Εφημερίδες - Zougla",
+      "url": "https://www.zougla.gr/newspapers/",
+      "snippet": "5 days ago · Δείτε τα σημερινά πρωτοσέλιδα πολιτικών, οικονομικών και αθλητικών εφημερίδων. Ενημερωθείτε καθημερινά για τα …"
+    },
+    {
+      "title": "gutierrezalejandro (Alejandro Gutierrez) - Hugging Face",
+      "url": "https://huggingface.co/gutierrezalejandro/models",
+      "snippet": "User profile of Alejandro Gutierrez on Hugging Face"
+    },
+    {
+      "title": "Οι αθλητικές μεταδόσεις της ...",
+      "url": "https://www.zougla.gr/sports/oi-athlitikes-metadoseis-tis-defteras-ti-deichnei-i-tileorasi/",
+      "snippet": "1 day ago · Ο τελικός του Diamond League, το φιλικό Ολυμπιακός – Φενέρμπαχτσε στο μπάσκετ και τα ματς του ποδοσφαίρου …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LilaSin/radar-cnn-lstm-nowcasting",
+  "slug": "lilasin-radar-cnn-lstm-nowcasting",
+  "author": "LilaSin",
+  "url": "https://huggingface.co/LilaSin/radar-cnn-lstm-nowcasting",
+  "created_at": "2026-09-04T15:18:37.000Z",
+  "updated_at": "2026-09-04T17:47:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3261931698,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RITUAL中文 (繁體)翻譯：劍橋詞典 - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/ritual",
+      "snippet": "Instead, there may be important traditions of formal oratory and oral story telling, along with ritual and ceremony that have oral …"
+    },
+    {
+      "title": "CNN–LSTM Hybrid for Doppler Radar Nowcasting A Lightweight Framework ...",
+      "url": "https://www.jetir.org/view?paper=JETIR2505976",
+      "snippet": "An original model is introduced in this research that uses the combination of CNN and LSTM for local Doppler radar nowcasting. At first, convolutional layers examine radar data to find features such as reflectivity cores and the edges of storms."
+    },
+    {
+      "title": "RITUAL中文 (简体)翻译：剑桥词典 - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/ritual",
+      "snippet": "Instead, there may be important traditions of formal oratory and oral story telling, along with ritual and ceremony that have oral …"
+    },
+    {
+      "title": "TITAN‐LSTM: A Weather Radar Nowcasting Tool - Viteri López - 2026 ...",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2026JH001337",
+      "snippet": "To bridge this gap, we have introduced TITAN-LSTM, a hybrid radar nowcasting algorithm that combines TITAN with a Long Short-Term Memory (LSTM) network. TITAN identifies and tracks rainstorm life histories and predicts their displacements, while LSTM forecasts rain area and precipitation intensity based on TITAN tracking."
+    },
+    {
+      "title": "ritual中文, ritual中文意思",
+      "url": "https://tw.ichacha.net/ritual.html",
+      "snippet": "ritual中文意思::儀式的…,點擊查查權威綫上辭典詳細解釋ritual的中文翻譯,ritual的發音,三態,音標,用法和造句等。"
+    }
+  ]
+}

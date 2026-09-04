@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/Cyber-Prime-1-2.6B-FP8",
+  "slug": "liodon-ai-cyber-prime-1-2-6b-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/Cyber-Prime-1-2.6B-FP8",
+  "created_at": "2026-09-04T11:49:11.000Z",
+  "updated_at": "2026-09-04T12:05:46.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "base_model:Akahsizrr/Cyber-Prime-1-2.6B",
+    "base_model:quantized:Akahsizrr/Cyber-Prime-1-2.6B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 2979414870,
+  "storage_human": "3.0 GB",
+  "base_model": "Akahsizrr/Cyber-Prime-1-2.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iris 跨世代光影模組登場，開光影再也不是夢！【1.16 ~ 1.20】現已支 …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=18673&snA=190955",
+      "snippet": "Jun 10, 2021 · 本文要介紹的模組是跨世代的光影模組 Iris，它兼具效能及美觀，快來看看吧！ Iris 簡介 iris是一個全新的光影引擎，它 …"
+    },
+    {
+      "title": "Vasko on X: \"Introducing Cyber-Prime 1 2.6B. It's the smallest cyber ...",
+      "url": "https://x.com/RoliumGens/status/2095653202599510456",
+      "snippet": "Vasko @RoliumGens Introducing Cyber-Prime 1 2.6B. It's the smallest cyber-security agentic model you can find, built on top of @liquidai's LFM 2.6B ( goated model). It has been trained on many reasoning traces, cyber-security dataset and synthetic data I have built. I have also put this model inside of my recursive self improvement loop."
+    },
+    {
+      "title": "【問題】想用iris裝光影 卻 又與mod衝突 錯誤碼問題 (已解決)",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=18673&snA=191405",
+      "snippet": "Jun 22, 2021 · 以上是我的安裝檔 #因1.17版本optifine無法還無法支援光影 所以爬文後選擇使用Iris使用光影 以下安裝了Iris(版本1.17) …"
+    },
+    {
+      "title": "Liodon AI - GitHub",
+      "url": "https://github.com/Liodon-AI",
+      "snippet": "Liodon AI is an open-source R&D collective exploring the intersection of deep learning, agentic systems, and NLP evaluation. Our repositories span: Agentic AI primitives (e.g. torchagentic) — differentiable cognitive building blocks (memory, credit assignment, planning, exploration) designed to be importable by frameworks like LangChain, AutoGen, and CrewAI. LLM evaluation tooling (e.g ..."
+    },
+    {
+      "title": "【已解決】救命，裝IRIS後遊戲崩潰閃退 @Minecraft 我的世界（當個創 …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=18673&snA=200006",
+      "snippet": "Aug 12, 2023 · indium、 sodium、IRIS三個模組移除後就不會崩潰閃退，單獨裝這三個模組+前置模組開啟沒問題 且閃退狀況並不是每 …"
+    }
+  ]
+}

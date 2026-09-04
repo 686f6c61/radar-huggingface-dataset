@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/Qwen3-4B-Instruct-2507_SFT_lora_dreamt",
+  "slug": "xw17-qwen3-4b-instruct-2507_sft_lora_dreamt",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Qwen3-4B-Instruct-2507_SFT_lora_dreamt",
+  "created_at": "2026-09-04T17:52:30.000Z",
+  "updated_at": "2026-09-04T17:52:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77549418,
+  "storage_human": "78 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mockup World | The best free Mockups from the Web",
+      "url": "https://www.mockupworld.co/",
+      "snippet": "Tons of free and legal, fully layered, easily customizable photo realistic PSD mockups: Ready to use in your projects, app showcases …"
+    },
+    {
+      "title": "xw17/Qwen3-4B-Instruct-2507_SFT_lora_globem · Hugging Face",
+      "url": "https://huggingface.co/xw17/Qwen3-4B-Instruct-2507_SFT_lora_globem",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "All Free Mockups - Mockup World",
+      "url": "https://www.mockupworld.co/all-mockups/",
+      "snippet": "An open hardcover book mockup shown from above against a clean, minimal background. Perfect for presenting editorial layouts, …"
+    },
+    {
+      "title": "Qwen/Qwen3-4B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Free Mockup World | Best Free Mockups from the World",
+      "url": "https://www.freemockupworld.com/",
+      "snippet": "Free Mockup World is a collaboration of high-quality best free mockups including Apple Devices, Branding, Logos, Print, Digital Art, …"
+    }
+  ]
+}

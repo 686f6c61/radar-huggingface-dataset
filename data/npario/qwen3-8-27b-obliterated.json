@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "npario/Qwen3.8-27B-OBLITERATED",
+  "slug": "npario-qwen3-8-27b-obliterated",
+  "author": "npario",
+  "url": "https://huggingface.co/npario/Qwen3.8-27B-OBLITERATED",
+  "created_at": "2026-09-04T15:50:49.000Z",
+  "updated_at": "2026-09-04T15:50:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "abliterated",
+    "uncensored",
+    "obliteratus",
+    "qwen3",
+    "qwen3.8",
+    "red-team",
+    "ai-safety-research",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 237137389456,
+  "storage_human": "237.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Daily Horoscopes | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/",
+      "snippet": "Wondering what your horoscope for today (or even tomorrow) is? Sign up for our daily horoscope emails based on your own zodiac …"
+    },
+    {
+      "title": "OBLITERATUS/Qwen3.8-27B-OBLITERATED at main - Hugging Face",
+      "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Read Your Daily Horoscope! | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/",
+      "snippet": "Read Astrology Answers' online daily horoscopes for your zodiac sign, Tarot readings, article content, Chinese astrology, …"
+    },
+    {
+      "title": "ai/Qwen3.8-27B-OBLITERATED at main · bigguy8585/ai · GitHub",
+      "url": "https://github.com/bigguy8585/ai/tree/main/Qwen3.8-27B-OBLITERATED",
+      "snippet": "This model will comply with requests that stock Qwen3.8-27B would refuse. V3 goes beyond removing hard refusals — it also eliminates soft deflections where the model gives safety lectures instead of real answers. Tested across 1000+ prompts spanning restricted knowledge, code generation, security research, and red-team scenarios."
+    },
+    {
+      "title": "网友调侃 Gemini 为北美大豆包，称其为最蠢 AI，为什么会被诟病难 …",
+      "url": "https://www.zhihu.com/question/2047324900080051711",
+      "snippet": "Jun 8, 2026 · 鉴定为没用过真正的豆包. 试了一次都感觉震惊， Gemini 至少不会胡说八道，豆包ai幻觉和胡编乱造的程度高的吓人. …"
+    }
+  ]
+}

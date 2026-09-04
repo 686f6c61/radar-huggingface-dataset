@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "shanghen/Qwen-Image-Edit-2511",
+  "slug": "shanghen-qwen-image-edit-2511",
+  "author": "shanghen",
+  "url": "https://huggingface.co/shanghen/Qwen-Image-Edit-2511",
+  "created_at": "2026-09-04T11:36:05.000Z",
+  "updated_at": "2026-09-04T11:36:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-to-image",
+    "en",
+    "zh",
+    "arxiv:2508.02324",
+    "license:apache-2.0",
+    "diffusers:QwenImageEditPlusPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 57710671694,
+  "storage_human": "57.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top Online Casinos with No Deposit Free Spins",
+      "url": "http://vigilantcitizenforums.com/",
+      "snippet": "Compare the top-rated US online casinos for real money play. We review bonuses, games, banking options, and licensing so you can …"
+    },
+    {
+      "title": "Qwen-Image-Edit-2511 - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-Edit-2511",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "301 Moved Permanently - vigilantcitizenforums.com",
+      "url": "https://vigilantcitizenforums.com/threads/where-did-jesus-say-%E2%80%9Ci-am-god-worship-me%E2%80%9D.8420/page-2",
+      "snippet": "Apache/2.4.41 (Ubuntu) Server at vigilantcitizenforums.com Port 80"
+    },
+    {
+      "title": "vantagewithai/Qwen-Image-Edit-2511-GGUF · Hugging Face",
+      "url": "https://huggingface.co/vantagewithai/Qwen-Image-Edit-2511-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "301 Moved Permanently - The Vigilant Citizen Forums",
+      "url": "https://vigilantcitizenforums.com/threads/kpop-satanic-illuminati-influence.2143/page-1434",
+      "snippet": "Apache/2.4.41 (Ubuntu) Server at vigilantcitizenforums.com Port 80"
+    }
+  ]
+}

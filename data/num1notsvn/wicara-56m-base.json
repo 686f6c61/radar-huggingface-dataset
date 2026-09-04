@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "num1notsvn/wicara-56m-base",
+  "slug": "num1notsvn-wicara-56m-base",
+  "author": "num1notsvn",
+  "url": "https://huggingface.co/num1notsvn/wicara-56m-base",
+  "created_at": "2026-09-04T13:50:21.000Z",
+  "updated_at": "2026-09-04T13:50:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "wicara",
+    "pytorch",
+    "causal-lm",
+    "indonesian",
+    "foundation-model",
+    "base-model",
+    "conversational",
+    "id",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66450560,
+  "parameters_human": "66.5M",
+  "storage_bytes": 132911368,
+  "storage_human": "133 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Largest energy companies by Market Cap - CompaniesMarketCap.com",
+      "url": "https://companiesmarketcap.com/eur/energy/largest-companies-by-market-cap/",
+      "snippet": "List of the largest energy companies by market capitalization, all rankings are updated daily."
+    },
+    {
+      "title": "GitHub - bagusardin25/WicaraLLM: An Indonesian Small Language Model ...",
+      "url": "https://www.linkedin.com/posts/bagusardin27_github-bagusardin25wicarallm-an-indonesian-activity-7496807012455067648-FwUo",
+      "snippet": "Wicara - Indonesia LLM, built from scratch. 56M params, 1.1B tokens. Code & documentation: https://lnkd.in/gjfWw9Aa"
+    },
+    {
+      "title": "Top 10: Energy Companies In Europe - Energy Digital",
+      "url": "https://energydigital.com/top10/top-10-energy-companies-in-europe",
+      "snippet": "Aug 16, 2023 · Europe’s focus on unifying for the benefit of the green energy transition is reflected in our Top 10 Energy Companies …"
+    },
+    {
+      "title": "GitHub - bagusardin25/WicaraLLM",
+      "url": "https://github.com/bagusardin25/WicaraLLM",
+      "snippet": "Model bahasa Indonesia yang dibangun dari nol — data, arsitektur, training, sampai inference — di satu laptop dengan RTX 4050 6 GB. Wicara (dari Sanskerta vicāra) berarti tutur atau bicara. Tujuannya belajar cara kerja LLM secara utuh dengan membangunnya sendiri, bukan memakai model jadi."
+    },
+    {
+      "title": "Electricity companies in Europe - statistics & facts | Statista",
+      "url": "https://www.statista.com/topics/10521/electricity-companies-in-europe/",
+      "snippet": "Mar 30, 2026 · The global electricity leaders are headquartered in Europe: France’s EDF, Italy’s Enel, Germany’s E.ON, and Spain’s …"
+    }
+  ]
+}

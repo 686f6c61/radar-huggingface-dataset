@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Ryanchen911/Kimi-K3-Uncensored-GGUF",
+  "slug": "ryanchen911-kimi-k3-uncensored-gguf",
+  "author": "Ryanchen911",
+  "url": "https://huggingface.co/Ryanchen911/Kimi-K3-Uncensored-GGUF",
+  "created_at": "2026-08-10T09:14:10.000Z",
+  "updated_at": "2026-08-11T00:31:20.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "kimi-k3",
+    "moe",
+    "imatrix",
+    "quantized",
+    "abliterated",
+    "uncensored",
+    "text-generation",
+    "en",
+    "zh",
+    "arxiv:2406.11717",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:quantized:moonshotai/Kimi-K3",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 18,
+  "downloads_30d": 6313,
+  "trending_score": 8,
+  "parameters": 2779483135584,
+  "parameters_human": "2779.48B",
+  "storage_bytes": 579511854976,
+  "storage_human": "579.5 GB",
+  "base_model": "moonshotai/Kimi-K3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Toutes les offres et promotions sur l'électroménager - Haier",
+      "url": "https://www.haier-europe.com/fr_FR/pages/promotions",
+      "snippet": "Profitez non seulement de réduction sur notre site internet, mais aussi d'offres de remboursement, cartes-cadeaux ou services …"
+    },
+    {
+      "title": "Ryanchen911/Kimi-K3-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Ryanchen911/Kimi-K3-Uncensored-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Opération ODR Haier days 2026 – Haier France",
+      "url": "https://www.haier-europe.com/fr_FR/pages/promotions-odr-haier-days",
+      "snippet": "Bénéficiez jusqu’à 300 € remboursés pour l’achat d’un réfrigérateur, un lave-linge, un four ou encore une télévision HAIER entre le 14 …"
+    },
+    {
+      "title": "Ryanchen911/Kimi-K3-Uncensored-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/Ryanchen911/Kimi-K3-Uncensored-GGUF/tree/main",
+      "snippet": "Ryanchen911 / Kimi-K3-Uncensored-GGUF like 1 Text Generation GGUF English Chinese llama.cpp kimi-k3 Mixture of Experts imatrix quantized abliterated uncensored conversational arxiv:2406.11717 License:kimi-k3 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Offre de remboursement Haier en cours pour la rentrée 2026",
+      "url": "https://www.bonne-promo.com/odr/haier",
+      "snippet": "Haier lance une offre de remboursement de 150 € sur ses réfrigérateurs éligibles. Découvrez les modèles concernés, les étapes pour …"
+    }
+  ]
+}

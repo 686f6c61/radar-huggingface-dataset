@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "dohaiismail/nile-chat-parenting-lora-gguf",
+  "slug": "dohaiismail-nile-chat-parenting-lora-gguf",
+  "author": "dohaiismail",
+  "url": "https://huggingface.co/dohaiismail/nile-chat-parenting-lora-gguf",
+  "created_at": "2026-09-04T14:35:47.000Z",
+  "updated_at": "2026-09-04T14:36:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma3_text",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 2489893920,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kenteken voertuig overschrijven | RDW",
+      "url": "https://www.rdw.nl/kopen-of-verkopen/kenteken-overschrijven-op-naam-van-een-persoon",
+      "snippet": "U regelt dit online of bij een kentekenloket, RDW-balie of keuringsstation. Koopt u het voertuig bij een RDW-erkend bedrijf? Dan …"
+    },
+    {
+      "title": "dohaiismail/nile-chat-parenting-lora · Hugging Face",
+      "url": "https://huggingface.co/dohaiismail/nile-chat-parenting-lora",
+      "snippet": "Instructions to use dohaiismail/nile-chat-parenting-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Kenteken overschrijven op naam van bedrijf - RDW",
+      "url": "https://www.rdw.nl/kopen-of-verkopen/kenteken-overschrijven-op-bedrijfsnaam",
+      "snippet": "Heeft u de RDW-erkenning 'Tenaamstellen voertuigen bedrijfsvoorraad en importeursvoorraad'? En wilt u het voertuig niet in uw …"
+    },
+    {
+      "title": "MBZUAI-Paris/Nile-Chat-4B · Hugging Face",
+      "url": "https://huggingface.co/MBZUAI-Paris/Nile-Chat-4B",
+      "snippet": "The Nile-Chat models were trained using 8 NVIDIA A100 80 GB GPUs in parallel using FSDP on AWS Sagemaker. The model is trained using HuggingFace transformers and parameter-efficient fine-tuning with LoRA rank of 256 for both continual pre-training and instruction finetuning, while performing full finetuning for DPO."
+    },
+    {
+      "title": "Kentekenloket | Voertuig overschrijven | RDW erkend",
+      "url": "https://www.kentekenloket.nl/",
+      "snippet": "RDW-erkend voertuig overschrijven bij 750+ Kentekenloketten in Nederland. Zonder afspraak, snel geregeld en direct op naam."
+    }
+  ]
+}

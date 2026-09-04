@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "robertcrc/flamingo-finetuned",
+  "slug": "robertcrc-flamingo-finetuned",
+  "author": "robertcrc",
+  "url": "https://huggingface.co/robertcrc/flamingo-finetuned",
+  "created_at": "2026-09-04T16:16:51.000Z",
+  "updated_at": "2026-09-04T16:16:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WEB.DE - kostenlose E-Mail-Adresse, FreeMail & Nachrichten",
+      "url": "https://web.de/",
+      "snippet": "Spielen Sie hier das Original. Jetzt tippen! Hier finden Sie alle Nachrichten aus Ihrer Region. Ihre tägliche Millionen-Chance und das …"
+    },
+    {
+      "title": "LarsJans1991/flamingo-finetuned · Hugging Face",
+      "url": "https://huggingface.co/LarsJans1991/flamingo-finetuned",
+      "snippet": "LarsJans1991 / flamingo-finetuned like 0 Safetensors PyTorch flamingo matching License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new Flamingo for Matching Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "WEB.DE Login - ganz einfach",
+      "url": "https://anmelden.web.de/",
+      "snippet": "WEB.DE Login: E-Mail-Adresse anmelden oder einloggen – kompakte Anleitung zum WEB.DE Login und schnelle Hilfe bei Login …"
+    },
+    {
+      "title": "openflamingo/OpenFlamingo-9B-vitl-mpt7b · Hugging Face",
+      "url": "https://huggingface.co/openflamingo/OpenFlamingo-9B-vitl-mpt7b",
+      "snippet": "OpenFlamingo is an open source implementation of DeepMind's Flamingo models. This 9B-parameter model uses a CLIP ViT-L/14 vision encoder and MPT-7B language model."
+    },
+    {
+      "title": "WEB.DE Club - Login",
+      "url": "https://club.web.de/",
+      "snippet": "Alle wichtigen Informationen rund um Ihren Vertrag, Ihre Club-Mitgliedschaft und Ihre persönlichen Daten finden Sie in Ihrem …"
+    }
+  ]
+}

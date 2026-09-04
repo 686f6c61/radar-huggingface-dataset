@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "DreamFoundries/K2-Horizon-7B-MLX-8bit",
+  "slug": "dreamfoundries-k2-horizon-7b-mlx-8bit",
+  "author": "DreamFoundries",
+  "url": "https://huggingface.co/DreamFoundries/K2-Horizon-7B-MLX-8bit",
+  "created_at": "2026-09-04T18:03:42.000Z",
+  "updated_at": "2026-09-04T18:04:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "k2-horizon",
+    "7b",
+    "dense",
+    "open-weights",
+    "ifm",
+    "mlxhub",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:IFM/K2-Horizon-Pretrain-Data",
+    "dataset:IFM/K2-Horizon-Midtrain-Data",
+    "base_model:IFM/K2-Horizon-7B",
+    "base_model:quantized:IFM/K2-Horizon-7B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20637260,
+  "storage_human": "21 MB",
+  "base_model": "IFM/K2-Horizon-7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Relais Pickup | Chronopost",
+      "url": "https://www.chronopost.fr/fr/relais-pickup",
+      "snippet": "Un vaste réseau de relais Pickup à travers la France et l'Europe qui permet souplesse et commodité pour envoyer ou retirer un colis …"
+    },
+    {
+      "title": "K2-Horizon - a abenzerps Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/abenzerps/k2-horizon",
+      "snippet": "K2-Horizon model family releases, including GGUF and MLX conversions."
+    },
+    {
+      "title": "Accueil - Chronopost | Chronopost",
+      "url": "https://www.chronopost.fr/fr",
+      "snippet": "Envoyez vos colis en express en France et à l'international, suivez vos envois et découvrez tous les services de Chronopost."
+    },
+    {
+      "title": "Adapter Models for IFM/K2-Horizon-7B – Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Aadapter%3AIFM%2FK2-Horizon-7B",
+      "snippet": "Model Tree Reset IFM/K2-Horizon-7B Adapters Finetunes Quantizations Merges Apps llama.cpp LM Studio Jan Draw Things DiffusionBee JoyFusion vLLM Ollama MLX LM Docker Model Runner Lemonade SGLang Unsloth Desktop Pi Hermes Agent Atomic Chat OpenClaw Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai ..."
+    },
+    {
+      "title": "Liste des offres @ CHRONOPOST",
+      "url": "https://recrutement.chronopost.fr/front-offres.html",
+      "snippet": "1 day ago · This site attempts to protect users against Cross-Site Request Forgeries attacks. In order to do so, you must have …"
+    }
+  ]
+}

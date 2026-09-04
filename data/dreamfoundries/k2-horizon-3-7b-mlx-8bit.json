@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "DreamFoundries/K2-Horizon-3.7B-MLX-8bit",
+  "slug": "dreamfoundries-k2-horizon-3-7b-mlx-8bit",
+  "author": "DreamFoundries",
+  "url": "https://huggingface.co/DreamFoundries/K2-Horizon-3.7B-MLX-8bit",
+  "created_at": "2026-09-04T17:49:39.000Z",
+  "updated_at": "2026-09-04T17:50:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:IFM/K2-Horizon-3.7B",
+    "base_model:quantized:IFM/K2-Horizon-3.7B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20637260,
+  "storage_human": "21 MB",
+  "base_model": "IFM/K2-Horizon-3.7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么将手机上的画面投到电脑屏幕上？ - 知乎",
+      "url": "https://www.zhihu.com/question/324589333",
+      "snippet": "有的时候需要将手机的内容投影到电脑上，那么要如何操作呢？一般来说需要去下载投屏软件，但是很多投屏软件都很坑，需要收费才 …"
+    },
+    {
+      "title": "Introducing K2 Horizon: Frontier Performance, Radically Open",
+      "url": "https://ifm.ai/blog/k2",
+      "snippet": "The small models are especially notable. K2 Horizon 0.9B achieves an AIME 2026 score above 48, along with strong reasoning, tool-use, and agentic capabilities. K2 Horizon 3.7B and 7B extend these capabilities to more demanding software-engineering and multi-step environments, demonstrated on strong performance in SWE-bench and BrowseComp."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎专栏圆桌发现移动应用联系我们来知乎工作注册机构号Investor Relations"
+    },
+    {
+      "title": "IFM Documentation",
+      "url": "https://docs.ifm.ai/",
+      "snippet": "Documentation for IFM foundation models — the K2 Horizon series, hosted API reference, model catalog, and integration guides from the Institute of Foundation Models at MBZUAI."
+    },
+    {
+      "title": "Adolescence (2025) | Netflix | DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/adolescence-2025-netflix--160804556",
+      "snippet": "Feb 24, 2025 · 13 Mart’ta başlayacak olan ve başrolünde Stephen Graham’ın (Boiling Point) yer aldığı dört bölümlük mini bir dizi olan …"
+    }
+  ]
+}

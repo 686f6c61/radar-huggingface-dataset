@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "jmoney54378256438905/GLM-5.3-Flash-4.65bpw-exl3",
+  "slug": "jmoney54378256438905-glm-5-3-flash-4-65bpw-exl3",
+  "author": "jmoney54378256438905",
+  "url": "https://huggingface.co/jmoney54378256438905/GLM-5.3-Flash-4.65bpw-exl3",
+  "created_at": "2026-09-04T16:21:37.000Z",
+  "updated_at": "2026-09-04T16:26:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "exllamav3",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "glm5_next",
+    "exl3",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94729164894,
+  "parameters_human": "94.73B",
+  "storage_bytes": 189634403360,
+  "storage_human": "189.6 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Învățământ postliceal | Ministerul Educației și Cercetării",
+      "url": "https://www.edu.ro/invatamant-postliceal",
+      "snippet": "Dec 22, 2015 · Învățământul postliceal se realizează prin școala postliceală și școala de maiștri. Atât școala postliceală, cât și școala …"
+    },
+    {
+      "title": "GLM-5.3 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "snippet": "Overview GLM-5.3 is Z.ai’s latest flagship model, delivering comprehensive advancements in complex software engineering and agent capabilities. It uses the same base model as GLM-5.2, with all improvements driven by post-training. Compared with GLM-5.2, it delivers significantly stronger performance in complex programming and long-horizon tasks: Stronger Coding Capability GLM-5.3 delivers a ..."
+    },
+    {
+      "title": "Lista cursurilor de pregătire profesională avizate de Ministerul ...",
+      "url": "https://www.edu.ro/sites/default/files/_fi%C8%99iere/Minister/2026/div_26/Programe_avizate_MEC_mai_2026.pdf",
+      "snippet": "Lista cursurilor de pregătire profesională avizate de Ministerul Educației și Cercetării, prevăzută la art. 2 alin. (1^2) din OUG nr. …"
+    },
+    {
+      "title": "GLM Coding Plan — AI Coding Powered by GLM-5.3, GLM-5.3-Flash, GLM-5.2 ...",
+      "url": "https://z.ai/subscribe",
+      "snippet": "Use GLM models like GLM-5.3, GLM-5.3-Flash, GLM-5.2 & GLM-5-Turbo for AI coding in Claude Code, Codex, ZCode, Kilo Code, Cline, OpenCode, Clawdbot/OpenClaw and more. Plans from 18/month—fast, reliable code generation and tool use for daily dev work."
+    },
+    {
+      "title": "Cursuri de Formare Profesională Online-Aprendis",
+      "url": "https://www.aprendis.ro/",
+      "snippet": "Înființat în anul 2008, din pasiune pentru educație, Aprendis este locul ideal în care te poți pregăti pentru cariera dorită, urmând …"
+    }
+  ]
+}

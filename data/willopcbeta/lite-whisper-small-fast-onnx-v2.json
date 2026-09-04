@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "willopcbeta/lite-whisper-small-fast-ONNX-v2",
+  "slug": "willopcbeta-lite-whisper-small-fast-onnx-v2",
+  "author": "willopcbeta",
+  "url": "https://huggingface.co/willopcbeta/lite-whisper-small-fast-ONNX-v2",
+  "created_at": "2026-09-04T15:25:31.000Z",
+  "updated_at": "2026-09-04T15:25:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "audio",
+    "hf-asr-leaderboard",
+    "arxiv:2502.20583",
+    "base_model:willopcbeta/lite-whisper-small-fast",
+    "base_model:quantized:willopcbeta/lite-whisper-small-fast",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ripper Casino Australia | Official Online Casino",
+      "url": "https://ripper-aus-casino.com/",
+      "snippet": "18 hours ago · Ripper Casino Australia is the official online casino offering top games, great bonuses, and fast payouts for Australian …"
+    },
+    {
+      "title": "willopcbeta/lite-whisper-small-fast-ONNX-v2 · Hugging Face",
+      "url": "https://huggingface.co/willopcbeta/lite-whisper-small-fast-ONNX-v2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ripper Casino Australia | $10 Free + 200% Bonus up to $7,500 | 3000",
+      "url": "https://casinoripper-aus.com/",
+      "snippet": "Ripper Casino is a licensed and regulated online casino serving Australian players with a premium ocean-themed gaming …"
+    },
+    {
+      "title": "willopcbeta/lite-whisper-small-fast-ONNX · Hugging Face",
+      "url": "https://huggingface.co/willopcbeta/lite-whisper-small-fast-ONNX",
+      "snippet": "The optimal Q4 quantitative configuration: using decoder_model with q4f16 results in less ambiguous or nonsensical outputs. Using the conversion program version 3.8.1, there are issues with the v4 conversion."
+    },
+    {
+      "title": "Ripper Casino Australia: A$7,500 + 20 Spins in 2026",
+      "url": "https://ripperaucasino.com/",
+      "snippet": "Ripper Casino Australia: A$7,500 and 20 free spins across four deposits, a 528-title pokies lobby, the real payment methods and the …"
+    }
+  ]
+}

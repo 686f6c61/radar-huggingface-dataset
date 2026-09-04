@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "augustaklug/legal-bert-ner-base-cased-ptbr-onnx",
+  "slug": "augustaklug-legal-bert-ner-base-cased-ptbr-onnx",
+  "author": "augustaklug",
+  "url": "https://huggingface.co/augustaklug/legal-bert-ner-base-cased-ptbr-onnx",
+  "created_at": "2026-09-04T14:30:43.000Z",
+  "updated_at": "2026-09-04T14:30:53.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers.js",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "token-classification",
+    "webgpu",
+    "legal",
+    "pt",
+    "base_model:dominguesm/legal-bert-ner-base-cased-ptbr",
+    "base_model:quantized:dominguesm/legal-bert-ner-base-cased-ptbr",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 216976770,
+  "storage_human": "217 MB",
+  "base_model": "dominguesm/legal-bert-ner-base-cased-ptbr",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "7-Zip 官方网站怎么下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/20498753",
+      "snippet": "7-Zip 是一个功能强大的工具，特别适合需要 高效压缩 和 解压缩 功能的用户。比如 IT 专业人员、软件开发者或普通用户希望节省磁 …"
+    },
+    {
+      "title": "dominguesm/legal-bert-ner-base-cased-ptbr · Hugging Face",
+      "url": "https://huggingface.co/dominguesm/ner-legal-bert-base-cased-ptbr",
+      "snippet": "README under construction ner-legal-bert-base-cased-ptbr is a NER model (token classification) in the legal domain in Portuguese that was finetuned from the model dominguesm/legal-bert-base-cased-ptbr by using a NER objective. The model is intended to assist NLP research in the legal field, computer law and legal technology applications."
+    },
+    {
+      "title": "国内大厂Trae、Qoder、CodeBuddy AI编辑器哪个好用？",
+      "url": "https://www.zhihu.com/question/1951273247036380422",
+      "snippet": "国内大厂Trae、Qoder、CodeBuddy AI编辑器哪个好用？ 抛开Cursor、Kiro、Claude Code等， 国内互联网大厂研发的 Trae（海外 …"
+    },
+    {
+      "title": "Legal-BERT Base Cased PTBR Open-Source Model - Free Processing of ...",
+      "url": "https://model.aibase.com/models/details/1935154870181171200",
+      "snippet": "legal-bert-base-cased-ptbr is a Language Model in the legal domain in Portuguese. It is built upon the BERTimbau base model using a MASK objective. This model aims to support NLP research in the legal field, as well as computer law and legal technology applications. A variety of Portuguese legal texts were utilized for training (more details ..."
+    },
+    {
+      "title": "ttseek 的想法: 原来Google AI Studio可以保存记录！ | 方法 ...",
+      "url": "https://www.zhihu.com/pin/1892156168589254909",
+      "snippet": "原来Google AI Studio可以保存记录！ | 方法：设置→自动保存选项，打开 #人工智能 #Gemini #谷歌 (Google)"
+    }
+  ]
+}

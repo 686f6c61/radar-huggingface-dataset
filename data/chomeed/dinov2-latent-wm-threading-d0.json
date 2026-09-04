@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "chomeed/dinov2-latent-wm-threading-d0",
+  "slug": "chomeed-dinov2-latent-wm-threading-d0",
+  "author": "chomeed",
+  "url": "https://huggingface.co/chomeed/dinov2-latent-wm-threading-d0",
+  "created_at": "2026-09-04T14:35:54.000Z",
+  "updated_at": "2026-09-04T14:39:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "world-model",
+    "dinov2",
+    "latent-dynamics",
+    "mimicgen",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78218636,
+  "storage_human": "78 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY function - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/3093343?hl=en",
+      "snippet": "QUERY function Runs a Google Visualization API Query Language query across data. Sample Usage QUERY (A2:E6,\"select avg (A) …"
+    },
+    {
+      "title": "chomeed/mimicgen_threading_d0_224x224_dinowm_dinov2base - Hugging Face",
+      "url": "https://huggingface.co/chomeed/mimicgen_threading_d0_224x224_dinowm_dinov2base",
+      "snippet": "Raw feature MSE is not comparable across encoders — each model predicts its own encoder's feature space, with its own scale. dinov2-base's copy-the-current-frame baseline is 0.9749 against dinov2-small's 1.5526, so base looks 35% \"better\" on raw loss while actually being worse."
+    },
+    {
+      "title": "QUERY - Cправка - Редакторы Google Документов",
+      "url": "https://support.google.com/docs/answer/3093343?hl=ru",
+      "snippet": "QUERY Выполняет запросы на базе языка запросов API визуализации Google. Пример использования QUERY (A2:E6; \"select …"
+    },
+    {
+      "title": "chomeed/mimicgen_threading_d0_224x224_dinowm_heavy · Hugging Face",
+      "url": "https://huggingface.co/chomeed/mimicgen_threading_d0_224x224_dinowm_heavy",
+      "snippet": "A larger-predictor variant of chomeed/mimicgen_threading_d0_224x224_dinowm. Same task, same data, same frozen facebook/dinov2-small encoder, same 8-action / 8-frame jump — the predictor is scaled from 13.2M → 35.6M and trained with warmup + cosine decay and gradient clipping. This is the step-55,000 checkpoint, not the end of the run."
+    },
+    {
+      "title": "QUERY - เครื่องมือแก้ไข Google เอกสาร ความช่วยเหลือ",
+      "url": "https://support.google.com/docs/answer/3093343?hl=th",
+      "snippet": "QUERY เรียกใช้การค้นหาของ Google Visualization API Query Language จากข้อมูลทั้งหมด ตัวอย่างการใช้งาน QUERY (A2:E6,\"select avg …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Yanishdd/vit-beans-demo",
+  "slug": "yanishdd-vit-beans-demo",
+  "author": "Yanishdd",
+  "url": "https://huggingface.co/Yanishdd/vit-beans-demo",
+  "created_at": "2026-09-04T11:45:47.000Z",
+  "updated_at": "2026-09-04T11:54:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "generated_from_trainer",
+    "base_model:google/vit-base-patch16-224-in21k",
+    "base_model:quantized:google/vit-base-patch16-224-in21k",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85800963,
+  "parameters_human": "85.8M",
+  "storage_bytes": 2059545215,
+  "storage_human": "2.1 GB",
+  "base_model": "google/vit-base-patch16-224-in21k",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lasher Resumo do Capítulo | Anne Rice",
+      "url": "https://www.bookey.app/pt/book/lasher",
+      "snippet": "Jun 23, 2026 · Anne Rice habilmente lança as bases para possíveis trajetórias, mantendo a narrativa viva com possibilidades …"
+    },
+    {
+      "title": "ScatterRaven/vit-base-beans-demo-v5 · Hugging Face",
+      "url": "https://huggingface.co/ScatterRaven/vit-base-beans-demo-v5",
+      "snippet": "vit-base-beans-demo-v5 This model is a fine-tuned version of google/vit-base-patch16-224-in21k on the beans dataset. It achieves the following results on the evaluation set: Loss: 0.0624 Accuracy: 0.9688 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters ..."
+    },
+    {
+      "title": "Livro Lasher (As Bruxas Mayfair #3): Resenha, Resumo e Autor",
+      "url": "https://sacudindoaspalavras.com.br/livro-lasher-as-bruxas-mayfair-3-resenha-resumo-e-autor/",
+      "snippet": "Jan 18, 2026 · “Lasher”, o terceiro capítulo da épica saga das Bruxas Mayfair, é um mergulho vertiginoso nas profundezas da psique …"
+    },
+    {
+      "title": "sonde8/vit-base-beans-demo-v5 · Hugging Face",
+      "url": "https://huggingface.co/sonde8/vit-base-beans-demo-v5",
+      "snippet": "vit-base-beans-demo-v5 This model is a fine-tuned version of google/vit-base-patch16-224-in21k on the beans dataset. It achieves the following results on the evaluation set: Loss: 0.0171 Accuracy: 0.9925 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters ..."
+    },
+    {
+      "title": "Lasher - O Saber Digital",
+      "url": "https://www.osaberdigital.com.br/wp-content/uploads/2024/11/Lasher-Anne-Rice.pdf",
+      "snippet": "Capítulo I No princípio era a voz do pai. - Emaleth! - sussurrando perto da barriga da sua mãe enquanto dormia. E depois, cantando …"
+    }
+  ]
+}

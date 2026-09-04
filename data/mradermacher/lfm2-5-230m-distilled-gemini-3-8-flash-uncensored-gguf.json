@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM2.5-230M-distilled-Gemini-3.8-Flash-Uncensored-GGUF",
+  "slug": "mradermacher-lfm2-5-230m-distilled-gemini-3-8-flash-uncensored-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM2.5-230M-distilled-Gemini-3.8-Flash-Uncensored-GGUF",
+  "created_at": "2026-09-04T15:44:51.000Z",
+  "updated_at": "2026-09-04T15:51:57.000Z",
+  "license": "lfm2.5-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "lfm2.5",
+    "distilled",
+    "uncensored",
+    "abliterated",
+    "abliteration",
+    "conversational",
+    "text-generation-inference",
+    "en",
+    "zh",
+    "base_model:Null-Guard/LFM2.5-230M-distilled-Gemini-3.8-Flash-Uncensored",
+    "base_model:quantized:Null-Guard/LFM2.5-230M-distilled-Gemini-3.8-Flash-Uncensored",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 229693184,
+  "parameters_human": "229.7M",
+  "storage_bytes": 2204299904,
+  "storage_human": "2.2 GB",
+  "base_model": "Null-Guard/LFM2.5-230M-distilled-Gemini-3.8-Flash-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "LFM2.5-230M-distilled-Gemini-3.8-Flash-Uncensored — GGUF",
+      "url": "https://huggingface.co/Null-Guard/LFM2.5-230M-distilled-Gemini-3.8-Flash-Uncensored-GGUF",
+      "snippet": "Instructions to use Null-Guard/LFM2.5-230M-distilled-Gemini-3.8-Flash-Uncensored-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Update the YouTube and YouTube Studio app",
+      "url": "https://support.google.com/youtube/answer/7341336?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Update the YouTube app on your Apple TV Update the YouTube app on your Android TV Give feedback about this article Choose a …"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Troubleshoot YouTube video errors",
+      "url": "https://support.google.com/youtube/answer/3037019?hl=en",
+      "snippet": "Troubleshoot video errors on your TV If you're using the YouTube app on your TV, try these steps to fix video errors."
+    }
+  ]
+}

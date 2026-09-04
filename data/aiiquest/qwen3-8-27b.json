@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AIIQuest/Qwen3.8-27B",
+  "slug": "aiiquest-qwen3-8-27b",
+  "author": "AIIQuest",
+  "url": "https://huggingface.co/AIIQuest/Qwen3.8-27B",
+  "created_at": "2026-09-04T17:35:01.000Z",
+  "updated_at": "2026-09-04T17:35:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816096,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Qwen3.8 27B API: Pricing, Benchmarks & Docs | Together AI",
+      "url": "https://www.together.ai/models/qwen3-8-27b",
+      "snippet": "Qwen3.8 27B is the compact dense model of Qwen3.8, the most capable generation in the Qwen open-model family to date. Built on the architectural foundation of Qwen3.5, it is a native vision-language model with substantial gains across coding, professional work, research, and long-horizon agentic tasks, designed to carry complex multi-step work through to completion with greater reliability ..."
+    },
+    {
+      "title": "Buy and Sell in Perth, Western Australia | Facebook Marketplace",
+      "url": "https://www.facebook.com/marketplace/perth/",
+      "snippet": "Shop electronics, cars, furniture, clothing, and more for sale in Perth on Facebook Marketplace. Find great deals from local sellers or …"
+    },
+    {
+      "title": "Qwen3.8-27B | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/qwen/models/qwen3.8-27b/",
+      "snippet": "Qwen3.8-27B is a 27-billion-parameter dense vision-language model for text, image, and video understanding, coding, multimodal reasoning, long-context processing, tool calling, and agentic tasks."
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://business.facebook.com/",
+      "snippet": "By logging in, you can navigate to all business tools like Meta Business Suite, Ads Manager and more to help you connect with your …"
+    }
+  ]
+}

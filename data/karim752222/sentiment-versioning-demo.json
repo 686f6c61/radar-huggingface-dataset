@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "karim752222/sentiment-versioning-demo",
+  "slug": "karim752222-sentiment-versioning-demo",
+  "author": "karim752222",
+  "url": "https://huggingface.co/karim752222/sentiment-versioning-demo",
+  "created_at": "2026-09-04T11:28:24.000Z",
+  "updated_at": "2026-09-04T11:33:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 535680723,
+  "storage_human": "536 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - BenWiseman/sentiment.ai: Package for using deep learning models (from tf hub) for easy sentiment analysis · GitHub",
+      "url": "https://github.com/BenWiseman/sentiment.ai",
+      "snippet": "The most complete on-device sentiment toolkit in the R/Python ecosystem. It ships hate-speech / mixed / style flags, intent-based profiles, an interactive sentiment map, and opt-in transformer backends for when you want maximum accuracy. The default model, on-device e5-base, matches the paid OpenAI embedding (text-embedding-3-small) on our benchmarks: that quality, free, across ~100 languages ..."
+    },
+    {
+      "title": "sentiment.ai - GitHub Pages",
+      "url": "https://benwiseman.github.io/sentiment.ai/",
+      "snippet": "Overview sentiment.ai turns text into sentiment scores using a sentence-embedding model plus a small, bundled scoring head. The default backend is the on-device multilingual model multilingual-e5-base (no TensorFlow, no API key, no data leaving your machine)."
+    },
+    {
+      "title": "GitHub - fitsblb/Sentiment-Analyzer: 🚀 Advanced Multi-Model Sentiment Analyzer - From research to production-ready AI system. Fine-tuned DistilBERT on Yelp dataset (78.5% accuracy), evolved into enterprise-grade platform with 4 AI models working in consensus (85%+ accuracy). Features modern web interface, REST APIs, batch processing,real-time analytics, and one-click cloud deployment",
+      "url": "https://github.com/fitsblb/Sentiment-Analyzer",
+      "snippet": "From academic research to enterprise-ready AI system · 🤖 Original Model • 🌐 Live Demo • 📧 Contact"
+    },
+    {
+      "title": "Netflix Deutschland – Serien online ansehen, Filme online ansehen",
+      "url": "https://www.netflix.com/de/",
+      "snippet": "Was ist Netflix? Netflix ist ein Streaming-Dienst, dessen Mitglieder ein vielseitiges Angebot von preisgekrönten Serien, Filmen, …"
+    },
+    {
+      "title": "Sentiment analysis prebuilt AI model - AI Builder | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/prebuilt-sentiment-analysis",
+      "snippet": "You can try out the sentiment analysis model before you import it into your cloud flow. Sign in to Power Apps or Power Automate. On the left pane, select ... More > AI hub."
+    }
+  ]
+}

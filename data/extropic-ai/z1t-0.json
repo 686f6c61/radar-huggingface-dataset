@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Extropic-AI/Z1T-0",
+  "slug": "extropic-ai-z1t-0",
+  "author": "Extropic-AI",
+  "url": "https://huggingface.co/Extropic-AI/Z1T-0",
+  "created_at": "2026-09-04T18:06:42.000Z",
+  "updated_at": "2026-09-04T18:29:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4968300072,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BBC News - Breaking news, video and the latest top stories from the …",
+      "url": "https://www.bbc.com/news",
+      "snippet": "Visit BBC News for the latest news, breaking news, video, audio and analysis. BBC News provides trusted World, U.S. and U.K. …"
+    },
+    {
+      "title": "Extropic | Home",
+      "url": "https://extropic.ai/",
+      "snippet": "Building thermodynamic computing hardware that is radically more energy efficient than GPUs."
+    },
+    {
+      "title": "Home - BBC News",
+      "url": "https://www.bbc.co.uk/news",
+      "snippet": "Visit BBC News for up-to-the-minute news, breaking news, video, audio and feature stories. BBC News provides trusted World and …"
+    },
+    {
+      "title": "Extropic on X: \"Introducing Z1T: Our first family of transformer-like ...",
+      "url": "https://x.com/extropic/status/2095935171312996562",
+      "snippet": "Our first family of transformer-like models made for sparse probabilistic hardware like Z1"
+    },
+    {
+      "title": "UK | Latest News & Updates - BBC",
+      "url": "https://www.bbc.co.uk/news/uk",
+      "snippet": "Get all the latest news, live updates and content about the UK from across the BBC."
+    }
+  ]
+}

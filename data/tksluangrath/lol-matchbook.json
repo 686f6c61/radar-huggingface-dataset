@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "tksluangrath/lol-matchbook",
+  "slug": "tksluangrath-lol-matchbook",
+  "author": "tksluangrath",
+  "url": "https://huggingface.co/tksluangrath/lol-matchbook",
+  "created_at": "2026-09-04T18:01:19.000Z",
+  "updated_at": "2026-09-04T18:29:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "lora",
+    "sft",
+    "trl",
+    "league-of-legends",
+    "gaming",
+    "text-generation",
+    "conversational",
+    "dataset:BoostedJonP/league_of_legends_match_data",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 10593081786,
+  "storage_human": "10.6 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay Kleinanzeigen",
+      "url": "https://www.ebay-kleinanzeigen.de/s-autos/preis::800/auto/k0c216",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "GitHub - tksluangrath/lol-matchbook: Local, rank-aware League of ...",
+      "url": "https://github.com/tksluangrath/lol-matchbook/tree/main",
+      "snippet": "A local, rank-aware League of Legends matchup assistant. Detects your champ-select pick/ban state automatically and gives instant early/mid/late-game matchup advice through a chat-style interface, backed by a small fine-tuned LLM plus a retrieval layer that stays current with the patch cycle without retraining."
+    },
+    {
+      "title": "GitHub - tksluangrath/lol-matchup-copilot",
+      "url": "https://github.com/tksluangrath/lol-matchup-copilot",
+      "snippet": "Contribute to tksluangrath/lol-matchup-copilot development by creating an account on GitHub."
+    },
+    {
+      "title": "tksluangrath (Terrance Luangrath) - Hugging Face",
+      "url": "https://huggingface.co/tksluangrath/models",
+      "snippet": "Organizations tksluangrath's models1 Sort: Recently updated tksluangrath/tool-concierge Updated about 12 hours ago"
+    },
+    {
+      "title": "GitHub - tksluangrath/tksluangrath: Github profile README",
+      "url": "https://github.com/tksluangrath/tksluangrath",
+      "snippet": "My work spans machine learning, statistical modeling, fraud detection, and cybersecurity applications. Right now I'm particularly interested in how AI can make security operations more efficient. Outside of data science, I breakdance - there's something satisfying about both finding patterns in datasets and nailing a new move."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "avewright/chess-transformer-100m-squares64",
+  "slug": "avewright-chess-transformer-100m-squares64",
+  "author": "avewright",
+  "url": "https://huggingface.co/avewright/chess-transformer-100m-squares64",
+  "created_at": "2026-09-04T15:29:20.000Z",
+  "updated_at": "2026-09-04T17:16:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "chess",
+    "transformer",
+    "recurrent",
+    "policy",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 792051136,
+  "storage_human": "792 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "日本航空 (JAL) - 航空券・飛行機チケット予約",
+      "url": "https://www.jal.co.jp/ja-jp/?msockid=20804fb25b9f619428d258785a71602f",
+      "snippet": "「JAL公式サイト」航空券の予約・購入、空席・運賃・運航状況の検索ができます。ためたマイルを航空券や提携ポイントなど特典 …"
+    },
+    {
+      "title": "GitHub - avewright/transform: Chess model: learned board embeddings ...",
+      "url": "https://github.com/avewright/transform",
+      "snippet": "Chess Transformer Encoder-only transformer for chess: learned board embeddings, spatial policy head, Stockfish-supervised labels."
+    },
+    {
+      "title": "日本語オンライン - nihongo-online.jp",
+      "url": "http://nihongo-online.jp/net/index.php?page_id=0",
+      "snippet": "Sep 11, 2010 · 「日本語オンライン」 日本最大級の日本語教師求人・交流サイト 日本語教材なら 「日本語ブックス」 「大阪・本町 …"
+    },
+    {
+      "title": "avewright/chess-transformer-437m-ft3h · Hugging Face",
+      "url": "https://huggingface.co/avewright/chess-transformer-437m-ft3h",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "maccotaro0/japanese-reranker-xsmall-v2-onnx",
+  "slug": "maccotaro0-japanese-reranker-xsmall-v2-onnx",
+  "author": "maccotaro0",
+  "url": "https://huggingface.co/maccotaro0/japanese-reranker-xsmall-v2-onnx",
+  "created_at": "2026-09-04T18:07:50.000Z",
+  "updated_at": "2026-09-04T18:17:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "modernbert",
+    "reranker",
+    "cross-encoder",
+    "onnx",
+    "text-classification",
+    "ja",
+    "base_model:hotchpotch/japanese-reranker-xsmall-v2",
+    "base_model:finetune:hotchpotch/japanese-reranker-xsmall-v2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27375485,
+  "storage_human": "27 MB",
+  "base_model": "hotchpotch/japanese-reranker-xsmall-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perfect Pumpkin Pie Recipe",
+      "url": "https://www.allrecipes.com/recipe/23439/perfect-pumpkin-pie/",
+      "snippet": "Feb 18, 2026 · This pumpkin pie recipe makes a smooth and creamy filling with canned pumpkin and sweetened condensed milk for …"
+    },
+    {
+      "title": "hotchpotch/japanese-reranker-xsmall-v2 · Hugging Face",
+      "url": "https://huggingface.co/hotchpotch/japanese-reranker-xsmall-v2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pumpkin Pie Recipe - Betty Crocker",
+      "url": "https://www.bettycrocker.com/recipes/pumpkin-pie/c20c218d-9d63-4f1c-aee3-0a93381e2f0d",
+      "snippet": "Does it feel like traditional Thanksgiving without pumpkin pie? A flaky, tender crust filled with soft, creamy pumpkin filling, laced with …"
+    },
+    {
+      "title": "GitHub - vaibhav06062005-ctrl/ai-model-hotchpotch-japanese-reranker ...",
+      "url": "https://github.com/vaibhav06062005-ctrl/ai-model-hotchpotch-japanese-reranker-xsmall-v2",
+      "snippet": "Model names, weights, code, datasets, and other upstream materials remain subject to their original licenses and terms. This catalog entry does not grant additional rights to use them. AI model catalog entry for hotchpotch/japanese-reranker-xsmall-v2 on Hugging Face"
+    },
+    {
+      "title": "Simple Pumpkin Pie Recipe",
+      "url": "https://www.allrecipes.com/recipe/229932/simple-pumpkin-pie/",
+      "snippet": "Feb 9, 2026 · Learn how to make this simple pumpkin pie recipe with just four ingredients: An unbaked pie crust and canned …"
+    }
+  ]
+}

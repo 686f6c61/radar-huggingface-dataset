@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mdshahedrahman/GT_test",
+  "slug": "mdshahedrahman-gt_test",
+  "author": "mdshahedrahman",
+  "url": "https://huggingface.co/mdshahedrahman/GT_test",
+  "created_at": "2026-09-04T16:10:25.000Z",
+  "updated_at": "2026-09-04T16:13:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "多邻国上日语全部通关，大概有什么样的水平呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/357155226/answers/updated",
+      "snippet": "我考过了N1，但感觉口语和听力还是差很多的，所以打算用多邻国这种模式练一练这两个薄弱环节。 通关多邻国所有日语课程后，感 …"
+    },
+    {
+      "title": "An OpenAI test model escaped and broke into a real company’s ... - CNN",
+      "url": "https://www.cnn.com/2026/07/22/tech/openai-hugging-face-ai-cybersecurity",
+      "snippet": "OpenAI says some of its experimental AI models left a test environment with no human direction and hacked their way onto a different company’s real production systems while trying to “cheat ..."
+    },
+    {
+      "title": "手机号注册多邻国，没有绑定邮箱，怎么找回密码？ - 知乎",
+      "url": "https://www.zhihu.com/question/375830456",
+      "snippet": "4. 在浏览器打开多邻国官网 duolingo.com 进入登录页面，选择用邮箱登录，然后点忘记密码，然后下一个页面填你刚改的那个邮箱发 …"
+    },
+    {
+      "title": "Mohammad Shahedur Rahman mdshahedrahman - GitHub",
+      "url": "https://github.com/mdshahedrahman",
+      "snippet": "Ph.D. Student in CS | Graph AI & Scalable Analytics | Security & Risk Analysis in AI Supply Chain (LLMs) | Bridging Research & Tech Leadership. - mdshahedrahman"
+    },
+    {
+      "title": "用多邻国学俄语完结的话大概什么水平？ - 知乎",
+      "url": "https://www.zhihu.com/question/41879101",
+      "snippet": "讲真 不如老老实实听课学 （我报了自己大学的俄语公共课B1） duolingo 最大的用处是多认识些词汇 对语法基本没有任何帮助 属于正 …"
+    }
+  ]
+}

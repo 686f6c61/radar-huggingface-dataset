@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "renyry91/research-contrastive",
+  "slug": "renyry91-research-contrastive",
+  "author": "renyry91",
+  "url": "https://huggingface.co/renyry91/research-contrastive",
+  "created_at": "2026-09-04T11:10:12.000Z",
+  "updated_at": "2026-09-04T11:10:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Résolu : box fibre orange qui clignote - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Livebox/box-fibre-orange-qui-clignote/td-p/2288144",
+      "snippet": "Aug 17, 2020 · Résolu : bonjour , voila cela fait environ 3 semaine que ma livebox 5 (fibre) se met a clignoter toutes les 2 ou 3 mn et …"
+    },
+    {
+      "title": "renyry91 (Yoshida Ren) - Hugging Face",
+      "url": "https://huggingface.co/renyry91/models",
+      "snippet": "renyry91's models1 Sort: Recently updated renyry91/model_185332404_blip_giant Updated 4 days ago"
+    },
+    {
+      "title": "Résolu : pas de messagerie pro aujourd'hui 25/08/2026 - Page 2 ...",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/pas-de-messagerie-pro-aujourd-hui-25-08-2026/td-p/3449614/page/2",
+      "snippet": "Aug 25, 2026 · Bonjour, Aujourd'hui, impossible de se connecter à la messagerie Ne me dite pas de vérifier ma box, mes identifiants …"
+    },
+    {
+      "title": "GitHub - nomic-ai/contrastors: Train Models Contrastively in Pytorch",
+      "url": "https://github.com/nomic-ai/contrastors",
+      "snippet": "Train Models Contrastively in Pytorch. Contribute to nomic-ai/contrastors development by creating an account on GitHub."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/feedback/forum/all/is-there-a-my-verizon-app-for-my-fios-landline/b14b8668-cb10-4d0d-9ecb-51735381e904",
+      "snippet": ""
+    }
+  ]
+}

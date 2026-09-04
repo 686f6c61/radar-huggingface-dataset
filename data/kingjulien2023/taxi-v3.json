@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "kingjulien2023/Taxi-v3",
+  "slug": "kingjulien2023-taxi-v3",
+  "author": "kingjulien2023",
+  "url": "https://huggingface.co/kingjulien2023/Taxi-v3",
+  "created_at": "2026-09-04T18:18:43.000Z",
+  "updated_at": "2026-09-04T18:18:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v4",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 147638,
+  "storage_human": "147638 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=DE&hl=de",
+      "snippet": "Auf YouTube findest du großartige Videos und erstklassige Musik. Außerdem kannst du eigene Inhalte hochladen und mit Freunden …"
+    },
+    {
+      "title": "KingJulian687/My-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/KingJulian687/My-Taxi-v3",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "huggingcats/Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/huggingcats/Taxi-v3",
+      "snippet": "# **Q-Learning** Agent playing1 **Taxi-v3** This is a trained model of a **Q-Learning** agent playing **Taxi-v3** . ## Usage ```python model = load_from_hub (repo_id=\"huggingcats/Taxi-v3\", filename=\"q-learning.pkl\") # Don't forget to check if you need to add additional attributes (is_slippery=False etc) env = gym.make (model [\"env_id\"]) ```"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/de/german",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

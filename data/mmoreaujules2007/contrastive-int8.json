@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Mmoreaujules2007/contrastive-int8",
+  "slug": "mmoreaujules2007-contrastive-int8",
+  "author": "Mmoreaujules2007",
+  "url": "https://huggingface.co/Mmoreaujules2007/contrastive-int8",
+  "created_at": "2026-09-04T15:59:53.000Z",
+  "updated_at": "2026-09-04T15:59:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "216.24.57.1 | San Francisco, AS397273, VPN Not Detected",
+      "url": "https://ipinfo.io/216.24.57.1",
+      "snippet": "Get Details for IP 216.24.57.1: Hosted by Render, located in San Francisco, AS397273. View ranges, ASN info, and related IPs."
+    },
+    {
+      "title": "GitHub - AI-Efficiency/Awesome-Model-Quantization: A list of papers ...",
+      "url": "https://github.com/AI-Efficiency/Awesome-Model-Quantization/",
+      "snippet": "A list of papers, docs, codes about model quantization. This repo is aimed to provide the info for model quantization research, we are continuously improving the project."
+    },
+    {
+      "title": "Whois IP 216.24.57.1",
+      "url": "https://www.whois.com/whois/216.24.57.1",
+      "snippet": "Whois IP Lookup for 216.24.57.1"
+    },
+    {
+      "title": "AI Model Quantization Guide: FP16, INT8, INT4 & FP8 Explaine",
+      "url": "https://chip.computer/guides/quantization-guide-ai-inference",
+      "snippet": "Complete guide to AI model quantization for faster inference. Compare FP16, FP8, INT8, and INT4 with accuracy trade-offs and hardware support."
+    },
+    {
+      "title": "216.24.57.1 | Render | AbuseIPDB",
+      "url": "https://www.abuseipdb.com/check/216.24.57.1",
+      "snippet": "Aug 18, 2024 · 216.24.57.1 IP Abuse Reports for 216.24.57.1: This IP address has been reported a total of 40times from 27 distinct …"
+    }
+  ]
+}

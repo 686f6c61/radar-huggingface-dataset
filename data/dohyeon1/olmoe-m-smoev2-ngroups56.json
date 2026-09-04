@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dohyeon1/OLMoE-M-SMoEv2-ngroups56",
+  "slug": "dohyeon1-olmoe-m-smoev2-ngroups56",
+  "author": "Dohyeon1",
+  "url": "https://huggingface.co/Dohyeon1/OLMoE-M-SMoEv2-ngroups56",
+  "created_at": "2026-09-04T17:37:23.000Z",
+  "updated_at": "2026-09-04T17:39:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmoe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6919161856,
+  "parameters_human": "6.92B",
+  "storage_bytes": 13838724744,
+  "storage_human": "13.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GSP.ro - ultimele stiri din sport, rezultate live",
+      "url": "https://www.gsp.ro/",
+      "snippet": "Cele mai noi știri din sportul românesc și internațional sunt pe GSP.ro Află rezultatele live, analize exclusive, interviuri și informații …"
+    },
+    {
+      "title": "Dohyeon1/OLMoE-M-SMoE-ngroups56 · Hugging Face",
+      "url": "https://huggingface.co/Dohyeon1/OLMoE-M-SMoE-ngroups56",
+      "snippet": "Instructions to use Dohyeon1/OLMoE-M-SMoE-ngroups56 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Ultima oră în sport - Gazeta Sporturilor - GSP",
+      "url": "https://www.gsp.ro/ultima-ora",
+      "snippet": "19 hours ago · Ultimele știri sportive din România pe Gazeta Sporturilor – află noutăți și actualizări de ultimă oră din fotbal și alte …"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "SPORT.RO - Stiri din sport",
+      "url": "https://www.sport.ro/",
+      "snippet": "Stiri si informatii de ultima ora din sport, interviuri si comentarii la cald din fotbalul de pretutindeni. Afla cele mai noi stiri de pe site!"
+    }
+  ]
+}

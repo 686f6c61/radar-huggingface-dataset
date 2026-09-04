@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/yolo26n-person-kie-cctv",
+  "slug": "jjjlimaus-yolo26n-person-kie-cctv",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/yolo26n-person-kie-cctv",
+  "created_at": "2026-09-04T14:20:03.000Z",
+  "updated_at": "2026-09-04T15:20:23.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolo",
+    "yolo26",
+    "yolo26n",
+    "object-detection",
+    "person",
+    "cctv",
+    "synthetic",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1150950872,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instant Google Street View",
+      "url": "https://www.instantstreetview.com/",
+      "snippet": "Instantly see a Google Street View of any supported location. Easily share and save your favourite views."
+    },
+    {
+      "title": "GitHub - ultralytics/yolo26: Ultralytics YOLO26 quickstart for ...",
+      "url": "https://github.com/ultralytics/yolo26",
+      "snippet": "YOLO26 models are available for detection, instance segmentation, semantic segmentation, depth estimation, classification, pose estimation, and oriented object detection. All model weights download automatically from the latest Ultralytics assets release on first use."
+    },
+    {
+      "title": "{ {postcode}} - Instant Google Street View",
+      "url": "https://www.instantstreetview.com/s/%7b%7bpostcode%7d%7d",
+      "snippet": "{ {postcode}} - Instant Street View Search × Sign up to remove adsand unlock extra features Sign Up"
+    },
+    {
+      "title": "Ultralytics/YOLO26 · Hugging Face",
+      "url": "https://huggingface.co/Ultralytics/YOLO26",
+      "snippet": "Our key integrations with leading AI platforms extend the functionality of Ultralytics' offerings, enhancing tasks like dataset labeling, training, visualization, and model management. Discover how Ultralytics, in collaboration with partners like Weights & Biases, Comet ML, Roboflow, and Intel OpenVINO, can optimize your AI workflow."
+    },
+    {
+      "title": "- Instant Google Street View",
+      "url": "https://www.instantstreetview.com/?s=+",
+      "snippet": "- Instant Street View Thank you for your purchase. Your subscription has been activated, and login details will be sent to the email …"
+    }
+  ]
+}

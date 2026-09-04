@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "kingjulien2023/ppo-LunarLander-v3",
+  "slug": "kingjulien2023-ppo-lunarlander-v3",
+  "author": "kingjulien2023",
+  "url": "https://huggingface.co/kingjulien2023/ppo-LunarLander-v3",
+  "created_at": "2026-09-04T17:30:26.000Z",
+  "updated_at": "2026-09-04T18:06:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 563412,
+  "storage_human": "563412 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=1be3831742cb6c3a3a8494dd438c6dc7",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "official-ak/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/official-ak/ppo-LunarLander-v3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Sign In with your Microsoft account. One account. One place to manage it all. Welcome to your account dashboard."
+    },
+    {
+      "title": "jfh000/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/jfh000/ppo-LunarLander-v3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

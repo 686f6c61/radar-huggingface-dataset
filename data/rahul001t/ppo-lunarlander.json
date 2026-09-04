@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Rahul001t/ppo-lunarlander",
+  "slug": "rahul001t-ppo-lunarlander",
+  "author": "Rahul001t",
+  "url": "https://huggingface.co/Rahul001t/ppo-lunarlander",
+  "created_at": "2026-09-04T11:39:36.000Z",
+  "updated_at": "2026-09-04T11:41:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 283706,
+  "storage_human": "283706 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "这个网址是potplayer官网吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/509011663",
+      "snippet": "Feb 21, 2022 · ———————————————— 为了让更多人能搜到这个帖子，做点SEO。 PotPlayer是什么？PotPlayer怎么下 …"
+    },
+    {
+      "title": "Rahul001t/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/Rahul001t/ppo-LunarLander-v2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "显示器的DCR、伽玛是什么？怎么调节？哪个好？ - 知乎",
+      "url": "https://www.zhihu.com/question/427756953",
+      "snippet": "概要 DCR是动态对比度（Dynamic Contrast Ratio）的简写。伽马是显示器电光传递函数（Electro-Optical Transfer Function）的一种 …"
+    },
+    {
+      "title": "README.md · Rahul001t/ppo-LunarLander-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/Rahul001t/ppo-LunarLander-v2/blob/main/README.md",
+      "snippet": "PPO Agent playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library."
+    },
+    {
+      "title": "Kulaklık Takılı Değil Ama Takılı Gözüküyor? İşte Çözümler ...",
+      "url": "https://forum.donanimhaber.com/kulaklik-takili-olmadigi-halde-takili-gozukuyor-cozum--115220703",
+      "snippet": "Kulaklık takılı değil ama telefon kulaklık takılı olarak algılıyor , kulaklık takılı olmadığı halde simge gitmiyor ,kulaklık takılı olmadığı …"
+    }
+  ]
+}

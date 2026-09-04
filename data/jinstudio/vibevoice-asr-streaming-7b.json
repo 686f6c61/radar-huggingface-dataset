@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "Jinstudio/VibeVoice-ASR-Streaming-7B",
+  "slug": "jinstudio-vibevoice-asr-streaming-7b",
+  "author": "Jinstudio",
+  "url": "https://huggingface.co/Jinstudio/VibeVoice-ASR-Streaming-7B",
+  "created_at": "2026-09-04T16:20:49.000Z",
+  "updated_at": "2026-09-04T16:20:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "pt",
+    "de",
+    "ja",
+    "ko",
+    "fr",
+    "ru",
+    "it"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vibevoice",
+    "ASR",
+    "Transcription",
+    "Speech-to-Text",
+    "Streaming",
+    "automatic-speech-recognition",
+    "en",
+    "zh",
+    "es",
+    "pt",
+    "de",
+    "ja",
+    "ko",
+    "fr",
+    "ru",
+    "it",
+    "arxiv:2609.02812",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8674021857,
+  "parameters_human": "8.67B",
+  "storage_bytes": 17349013521,
+  "storage_human": "17.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=de",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "microsoft/VibeVoice-ASR-Streaming-7B · Hugging Face",
+      "url": "https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B",
+      "snippet": "VibeVoice-ASR-Streaming-7B VibeVoice-ASR-Streaming is a unified streaming ASR model that transcribes Who (Speaker) said What (Content), with support for Customized Hotwords and 10 languages."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "GitHub - microsoft/VibeVoice: Open-Source Frontier Voice AI",
+      "url": "https://github.com/microsoft/VibeVoice",
+      "snippet": "VibeVoice is a family of open-source frontier voice AI models that includes both Text-to-Speech (TTS) and Automatic Speech Recognition (ASR) models. A core innovation of VibeVoice is its use of continuous speech tokenizers (Acoustic and Semantic) operating at an ultra-low frame rate of 7.5 Hz. These tokenizers efficiently preserve audio fidelity while significantly boosting computational ..."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/login?service=mail&hl=de",
+      "snippet": "Gmail ist ein intuitiver, effizienter und nützlicher E-Mail-Dienst mit 15 GB Speicherplatz, weniger Spam und mobilem Zugriff."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ParthivMEV/24b1051-Week04-Compression-20-Submission01",
+  "slug": "parthivmev-24b1051-week04-compression-20-submission01",
+  "author": "ParthivMEV",
+  "url": "https://huggingface.co/ParthivMEV/24b1051-Week04-Compression-20-Submission01",
+  "created_at": "2026-09-04T14:02:10.000Z",
+  "updated_at": "2026-09-04T14:31:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3",
+    "quantized",
+    "nf3",
+    "int4",
+    "cs6013",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1607991390,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Papers from Aug 31 - Sep 06, 2026 - arxiv.deeppaper.ai",
+      "url": "https://arxiv.deeppaper.ai/papers/weekly",
+      "snippet": "Browse AI research papers published on Arxiv during the week of Aug 31 - Sep 06, 2026. Discover the latest advancements in artificial intelligence research."
+    },
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "YouTube Creator Awards",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=en",
+      "snippet": "YouTube Creator Awards are our way of recognizing the extraordinary effort creators put into their growing channels and to build …"
+    }
+  ]
+}

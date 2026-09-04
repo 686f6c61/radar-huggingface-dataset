@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "LookUpMark/README",
+  "slug": "lookupmark-readme",
+  "author": "LookUpMark",
+  "url": "https://huggingface.co/LookUpMark/README",
+  "created_at": "2026-09-04T17:45:15.000Z",
+  "updated_at": "2026-09-04T18:22:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "On This Day - Today in History, Film, Music and Sport",
+      "url": "https://www.onthisday.com/",
+      "snippet": "Sep 4, 2006 · Find out what happened on any date or day in history with On This Day. Explore historical events, birthdays, deaths …"
+    },
+    {
+      "title": "LookUpMark (Marc'Antonio Lopez) - Hugging Face",
+      "url": "https://huggingface.co/LookUpMark",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 24 days ago ... published a model about 1 month ago"
+    },
+    {
+      "title": "Today in History - On This Day",
+      "url": "https://www.onthisday.com/today/events.php",
+      "snippet": "Learn about important and interesting historical events that happened on today in history. Hundreds of events and facts from history, …"
+    },
+    {
+      "title": "Readme.ai",
+      "url": "https://www.readmeai.tech/",
+      "snippet": "Generate free and professional README for your project"
+    },
+    {
+      "title": "Today's Famous Birthdays - On This Day",
+      "url": "https://www.onthisday.com/today/birthdays.php",
+      "snippet": "Important and famous people from throughout history born on this day. Search thousands of historical, noteworthy and celebrity …"
+    }
+  ]
+}

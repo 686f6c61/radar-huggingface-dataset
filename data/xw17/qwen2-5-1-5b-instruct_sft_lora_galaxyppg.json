@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/Qwen2.5-1.5B-Instruct_SFT_lora_galaxyppg",
+  "slug": "xw17-qwen2-5-1-5b-instruct_sft_lora_galaxyppg",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Qwen2.5-1.5B-Instruct_SFT_lora_galaxyppg",
+  "created_at": "2026-09-04T16:15:42.000Z",
+  "updated_at": "2026-09-04T16:15:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48402964,
+  "storage_human": "48 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/",
+      "snippet": "2 days ago · Hello, New users on the forum won't be able to send PM untill certain criteria are met (you need to have at least 6 posts …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sexuality | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/sexuality.7/",
+      "snippet": "16 hours ago · This forum is to discuss sex seriously. Ask for tips and advice here."
+    },
+    {
+      "title": "xw17/Qwen2.5-1.5B-Instruct_SFT_lora_wesad · Hugging Face",
+      "url": "https://huggingface.co/xw17/Qwen2.5-1.5B-Instruct_SFT_lora_wesad",
+      "snippet": "xw17 / Qwen2.5-1.5B-Instruct_SFT_lora_wesad like 0 Transformers Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Use this model Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and Limitations Recommendations How to Get Started with the Model Training ..."
+    },
+    {
+      "title": "城市论坛 天府社区",
+      "url": "https://bbs.scol.com.cn/forum-41-1.html",
+      "snippet": "Dec 24, 2025 · 天府社区的城市论坛综合版块，提供多样化的城市生活交流与讨论平台。"
+    }
+  ]
+}

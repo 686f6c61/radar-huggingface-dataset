@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "jwg0830/HyperCLOVA-X-SEED-Think-14B-sft-71949-3000",
+  "slug": "jwg0830-hyperclova-x-seed-think-14b-sft-71949-3000",
+  "author": "jwg0830",
+  "url": "https://huggingface.co/jwg0830/HyperCLOVA-X-SEED-Think-14B-sft-71949-3000",
+  "created_at": "2026-09-04T14:21:27.000Z",
+  "updated_at": "2026-09-04T14:26:39.000Z",
+  "license": "hyperclovax-seed",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hyperclovax",
+    "text-generation",
+    "korean",
+    "sft",
+    "lora-merged",
+    "ai-hub",
+    "conversational",
+    "custom_code",
+    "ko",
+    "base_model:naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+    "base_model:finetune:naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14748112896,
+  "parameters_human": "14.75B",
+  "storage_bytes": 29496274120,
+  "storage_human": "29.5 GB",
+  "base_model": "naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZEVENT 2026 : A quelle heure commencent les concerts & le …",
+      "url": "https://ayther.fr/zevent-2026-heure/",
+      "snippet": "1 day ago · A quelle heure commence les concerts du ZEVENT 2026 ? Lesconcerts du ZEVENT 2026 s’ouvrent dès le jeudi 3 …"
+    },
+    {
+      "title": "HyperCLOVAX-SEED-Think-14B - Hugging Face",
+      "url": "https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ZEvent 2026 : dates, streamers, associations, donation goals, …",
+      "url": "https://www.dexerto.fr/divertissement/zevent-2026-informations-1657384/",
+      "snippet": "4 days ago · Voici toutes les infos sur le ZEvent 2026 : dates, streamers présents, associations soutenues, donation goals, …"
+    },
+    {
+      "title": "HyperCLOVA X SEED - a naver-hyperclovax Collection",
+      "url": "https://huggingface.co/collections/naver-hyperclovax/hyperclova-x-seed",
+      "snippet": "HyperCLOVA X SEED is NAVER's lightweight open-source lineup with a strong focus on Korean language performance"
+    },
+    {
+      "title": "ZEVENT 2026 : date, horaires, programme, streamers participants, …",
+      "url": "https://www.larepubliquedespyrenees.fr/culture-et-loisirs/jeux-video/zevent-2026-date-horaires-programme-streamers-participants-twitch-tout-savoir-sur-la-10e-et-derniere-edition-30465740.php",
+      "snippet": "1 day ago · Le ZEVENT 2026 est de retour pour une ultime édition. Du 3 au 6 septembre 2026, ZeratoR, Dach et plusieurs centaines …"
+    }
+  ]
+}

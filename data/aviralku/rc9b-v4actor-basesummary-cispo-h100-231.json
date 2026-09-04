@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "aviralku/rc9b-v4actor-basesummary-cispo-h100-231",
+  "slug": "aviralku-rc9b-v4actor-basesummary-cispo-h100-231",
+  "author": "aviralku",
+  "url": "https://huggingface.co/aviralku/rc9b-v4actor-basesummary-cispo-h100-231",
+  "created_at": "2026-09-04T14:27:55.000Z",
+  "updated_at": "2026-09-04T14:32:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37659434795,
+  "storage_human": "37.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mutual funds, IRAs, ETFs, 401(k) plans, and more | Vanguard",
+      "url": "https://www.vanguard.com/",
+      "snippet": "Vanguard is one of the world's largest investment companies with 30 million investors changing the way the world invests."
+    },
+    {
+      "title": "Aviral Kumar",
+      "url": "https://aviralkumar2907.github.io/",
+      "snippet": "My lab, CMU AI & Reinforcement Learning (“AIRe”) lab – is interested in a broad range of topics ranging from core reinforcement learning (RL) algorithms to scaling RL methods to foundation models to real robots."
+    },
+    {
+      "title": "Log in to view your accounts | Vanguard",
+      "url": "https://investor.vanguard.com/my-account/log-on?msockid=3768173a8c0d682a10bc00f08dca69ea",
+      "snippet": "Aug 14, 2026 · Log in to your Vanguard personal investor accounts here. Check your balances, buy and sell investments, move …"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Riot Vanguard FAQ (League of Legends)",
+      "url": "https://support.riotgames.com/en-us/league-of-legends/performance/riot-vanguard-faq-league-of-legends/",
+      "snippet": "Jun 2, 2026 · Riot Vanguard is Riot Games’ custom game security software, designed to uphold the highest levels of competitive …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Adame92/distilbert-sentiment-demo",
+  "slug": "adame92-distilbert-sentiment-demo",
+  "author": "Adame92",
+  "url": "https://huggingface.co/Adame92/distilbert-sentiment-demo",
+  "created_at": "2026-09-04T14:00:52.000Z",
+  "updated_at": "2026-09-04T14:03:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:quantized:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 803635400,
+  "storage_human": "804 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GRS (全球认证标准）介绍_百度知道",
+      "url": "https://zhidao.baidu.com/question/502793351530299812.html",
+      "snippet": "Oct 19, 2025 · GRS认证概述 GRS即 GLOBAL RECYCLE STANDARD （全球回收标准），是针对回收材料再利用建立的验证体系， …"
+    },
+    {
+      "title": "Distilbert Sentiment Demo - a Hugging Face Space by Drocho",
+      "url": "https://huggingface.co/spaces/Drocho/distilbert-sentiment-demo",
+      "snippet": "Enter an English review or any text, and the app will tell you whether it’s positive or negative and show how confident it is. It uses a pre‑trained DistilBERT model and returns the sentiment label..."
+    },
+    {
+      "title": "grs的证书vivid red*什么意思 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1384057457635810020.html",
+      "snippet": "grs的证书vivid red*中vivid red (GRS type \"pigeon's blood\")，翻译过来是指：艳红色（GRS标示“鸽血红”）。 带星号一般是指在付证上 …"
+    },
+    {
+      "title": "Sushai/distilbert-sentiment-demo · Hugging Face",
+      "url": "https://huggingface.co/Sushai/distilbert-sentiment-demo",
+      "snippet": "Sushai / distilbert-sentiment-demo like 0 Text Classification Transformers Safetensors distilbert text-embeddings-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "如何通俗地解释Fama and French (1996) “Multifactor explanations\"中使 …",
+      "url": "https://www.zhihu.com/question/30127522",
+      "snippet": "这个GRS test在他们2015年的论文也使用过，既然是通俗的解释我就不讲技术了，简单来说因为FF的因素模型都是针对的若干 …"
+    }
+  ]
+}

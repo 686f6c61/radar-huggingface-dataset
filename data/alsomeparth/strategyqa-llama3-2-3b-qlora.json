@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AlsoMeParth/strategyqa-llama3.2-3b-qlora",
+  "slug": "alsomeparth-strategyqa-llama3-2-3b-qlora",
+  "author": "AlsoMeParth",
+  "url": "https://huggingface.co/AlsoMeParth/strategyqa-llama3.2-3b-qlora",
+  "created_at": "2026-09-04T15:58:31.000Z",
+  "updated_at": "2026-09-04T16:01:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3224906752,
+  "parameters_human": "3.22B",
+  "storage_bytes": 2308663692,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Booking.com | Official site | The best hotels, flights, car rentals ...",
+      "url": "https://www.booking.com/?msockid=0131632ff5776fcb0c4874e5f4f46e9d",
+      "snippet": "Explore the world with Booking.com. Big savings on homes, hotels, flights, car rentals, taxis, and attractions – build your perfect trip …"
+    },
+    {
+      "title": "AlsoMeParth (Parth Sharma) - Hugging Face",
+      "url": "https://huggingface.co/AlsoMeParth/models",
+      "snippet": "AlsoMeParth's models2 Sort: Recently updated AlsoMeParth/pubmedqa-llama3.2-3b-qlora Text Generation • 3B•Updated 4 days ago• 116"
+    },
+    {
+      "title": "Booking.com | Offizielle Seite | Die besten Hotels, Flüge, Mietwagen ...",
+      "url": "https://www.booking.com/index.de.html?msockid=0131632ff5776fcb0c4874e5f4f46e9d",
+      "snippet": "Entdecken Sie die Welt mit Booking.com. Große Ersparnisse bei Ferienhäusern, Hotels, Flügen, Mietwagen, Taxis und Attraktionen – …"
+    },
+    {
+      "title": "Llama 3.2 - a meta-llama Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/meta-llama/llama-32",
+      "snippet": "This collection hosts the transformers and original repos of the Llama 3.2 and Llama Guard 3"
+    },
+    {
+      "title": "Booking.com",
+      "url": "https://packages.booking.com/vacationpackages/",
+      "snippet": "Save up to 625 dollars when you book your flight and hotel together! Booking.com Vacation Packages with exclusive deals on airline …"
+    }
+  ]
+}

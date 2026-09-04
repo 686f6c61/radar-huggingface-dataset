@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "YY80813/biobert-fake-health-news",
+  "slug": "yy80813-biobert-fake-health-news",
+  "author": "YY80813",
+  "url": "https://huggingface.co/YY80813/biobert-fake-health-news",
+  "created_at": "2026-09-04T11:10:48.000Z",
+  "updated_at": "2026-09-04T11:11:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108311810,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433270768,
+  "storage_human": "433 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "216.24.57.1 | San Francisco, AS397273, VPN Not Detected",
+      "url": "https://ipinfo.io/216.24.57.1",
+      "snippet": "Get Details for IP 216.24.57.1: Hosted by Render, located in San Francisco, AS397273. View ranges, ASN info, and related IPs."
+    },
+    {
+      "title": "YY80813/pubmedbert-fake-health-news · Hugging Face",
+      "url": "https://huggingface.co/YY80813/pubmedbert-fake-health-news",
+      "snippet": "YY80813 / pubmedbert-fake-health-news like 0 Text Classification Transformers Safetensors bert text-embeddings-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Whois IP 216.24.57.1",
+      "url": "https://www.whois.com/whois/216.24.57.1",
+      "snippet": "Whois IP Lookup for 216.24.57.1"
+    },
+    {
+      "title": "YY80813 · GitHub",
+      "url": "https://github.com/YY80813",
+      "snippet": "Machine Learning system to detect fake health news JavaScript DL Public"
+    },
+    {
+      "title": "216.24.57.1 | Render | AbuseIPDB",
+      "url": "https://www.abuseipdb.com/check/216.24.57.1",
+      "snippet": "Aug 18, 2024 · 216.24.57.1 IP Abuse Reports for 216.24.57.1: This IP address has been reported a total of 40times from 27 distinct …"
+    }
+  ]
+}

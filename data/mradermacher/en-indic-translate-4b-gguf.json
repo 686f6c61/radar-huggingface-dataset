@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "mradermacher/en-indic-translate-4b-GGUF",
+  "slug": "mradermacher-en-indic-translate-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/en-indic-translate-4b-GGUF",
+  "created_at": "2026-09-04T11:27:39.000Z",
+  "updated_at": "2026-09-04T11:56:17.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "as",
+    "bn",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "translation",
+    "indic",
+    "gemma4",
+    "en",
+    "as",
+    "bn",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te",
+    "base_model:sulabhkatiyar/en-indic-translate-4b",
+    "base_model:quantized:sulabhkatiyar/en-indic-translate-4b",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 76858088512,
+  "storage_human": "76.9 GB",
+  "base_model": "sulabhkatiyar/en-indic-translate-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Current Time and GMT",
+      "url": "https://greenwichmeantime.com/current-time/",
+      "snippet": "1 day ago · Current local time and instant conversion between different locations in the world, even if you do not know the time zone. …"
+    },
+    {
+      "title": "GitHub - AI4Bharat/IndicTrans2: Translation models for 22 scheduled ...",
+      "url": "https://github.com/ai4bharat/IndicTrans2",
+      "snippet": "To prepare data for training the Indic-En model, you should reverse the language pair directories within the train and devtest directories. Additionally, make sure to download the corresponding SPM model and Fairseq dictionary and put them in the experiment directory, similar to the procedure mentioned above for En-Indic model training."
+    },
+    {
+      "title": "Greenwich Mean Time",
+      "url": "https://time.is/GMT",
+      "snippet": "2 days ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for Greenwich Mean Time (GMT)."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Time Now in GMT (Greenwich Mean Time) | Time.now",
+      "url": "https://time.now/timezones/gmt/",
+      "snippet": "View current time for GMT (Greenwich Mean Time) time zone [Updated live]. Other countries and time zones with the same UTC …"
+    }
+  ]
+}

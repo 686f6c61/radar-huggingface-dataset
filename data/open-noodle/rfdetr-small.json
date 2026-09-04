@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "open-noodle/rfdetr-small",
+  "slug": "open-noodle-rfdetr-small",
+  "author": "open-noodle",
+  "url": "https://huggingface.co/open-noodle/rfdetr-small",
+  "created_at": "2026-09-04T15:46:38.000Z",
+  "updated_at": "2026-09-04T15:46:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "object-detection",
+    "rf-detr",
+    "pet-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114448791,
+  "storage_human": "114 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Page d'accueil Open | Your high-digital place",
+      "url": "https://www.open.global/",
+      "snippet": "Construisons votre carrière Chez Open, nous ouvrons des perspectives aux talents... #Recrutez-nous !"
+    },
+    {
+      "title": "GitHub - roboflow/rf-detr: RF-DETR is a real-time object detection and ...",
+      "url": "https://github.com/roboflow/rf-detr",
+      "snippet": "The open-source rfdetr package and Apache-designated models are released under Apache 2.0, while Plus components (rfdetr_plus, including RF-DETR-XL/2XL detection models) are licensed under PML 1.0."
+    },
+    {
+      "title": "Apache OpenOffice",
+      "url": "https://www.openoffice.org/fr/",
+      "snippet": "Jan 4, 2016 · Projet francophone Apache OpenOffice Ce site a pour but d'apporter outils et ressources aux francophones pour le …"
+    },
+    {
+      "title": "GitHub - roboflow/rf-detr at contours",
+      "url": "https://github.com/roboflow/rf-detr?ref=contours",
+      "snippet": "The open-source rfdetr package and Apache-designated models are released under Apache 2.0, while Plus components (rfdetr_plus, including RF-DETR-XL/2XL detection models) are licensed under PML 1.0."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "ChatGPT Business ChatGPT Enterprise ChatGPT for Education Codex Release Notes API Platform Overview API Log In Docs …"
+    }
+  ]
+}

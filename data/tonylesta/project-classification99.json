@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Tonylesta/project-classification99",
+  "slug": "tonylesta-project-classification99",
+  "author": "Tonylesta",
+  "url": "https://huggingface.co/Tonylesta/project-classification99",
+  "created_at": "2026-09-04T13:49:26.000Z",
+  "updated_at": "2026-09-04T13:49:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pages kostenpflichtig? - Apple Community",
+      "url": "https://communities.apple.com/de/thread/256257981",
+      "snippet": "Mar 7, 2026 · Apple stellt seine eigenen Basis-Apps wie Pages, Numbers, Keynote und Freeform weiterhin kostenlos bereit. Diese …"
+    },
+    {
+      "title": "Tonylesta (Tony Lestari) - Hugging Face",
+      "url": "https://huggingface.co/Tonylesta/datasets",
+      "snippet": "Recent Activity updated a modelabout 7 hours ago Tonylesta/model_147584158_flamingo_giant published a modelabout 7 hours ago Tonylesta/model_147584158_flamingo_giant View all activity"
+    },
+    {
+      "title": "Wie hoch sind die Kosten für Apple Pages? - Antwort.net",
+      "url": "https://www.antwort.net/a/technologie/wie-hoch-sind-die-kosten-fuer-apple-pages.html",
+      "snippet": "Nov 1, 2025 · Ist Apple Pages kostenlos oder kostenpflichtig? Apple Pages wird von Apple kostenlos zur Verfügung gestellt. Seit …"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Pages-Testberichte 2026: Details, Preise und Funktionen",
+      "url": "https://www.ai.cc/de/app/pages/",
+      "snippet": "Egal ob Sie einen Newsletter erstellen, einen Roman schreiben, eine Broschüre gestalten oder ein Poster entwerfen – Pages bietet …"
+    }
+  ]
+}

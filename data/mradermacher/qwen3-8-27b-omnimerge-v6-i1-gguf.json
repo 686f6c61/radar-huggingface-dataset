@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-Omnimerge-v6-i1-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-omnimerge-v6-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Omnimerge-v6-i1-GGUF",
+  "created_at": "2026-09-04T11:04:24.000Z",
+  "updated_at": "2026-09-04T12:14:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "mergekit",
+    "qwen35",
+    "reasoning",
+    "code",
+    "vision",
+    "en",
+    "base_model:ManniX-ITA/Qwen3.8-27B-Omnimerge-v6",
+    "base_model:quantized:ManniX-ITA/Qwen3.8-27B-Omnimerge-v6",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 39471868288,
+  "storage_human": "39.5 GB",
+  "base_model": "ManniX-ITA/Qwen3.8-27B-Omnimerge-v6",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.de/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-3MPER0RR-obliterated-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-3MPER0RR-obliterated-i1-GGUF",
+      "snippet": "mradermacher / Qwen3.8-27B-3MPER0RR-obliterated-i1-GGUF like 1 Transformers GGUF English imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=de",
+      "snippet": "Werbeprogramme Über Google Google.com in English © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/",
+      "snippet": "Mit diesem kostenlosen Google-Dienst lassen sich Wörter, Sätze und Webseiten sofort zwischen Deutsch und über 100 Sprachen …"
+    }
+  ]
+}

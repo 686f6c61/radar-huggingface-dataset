@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "robi-nson/cs231n-generation",
+  "slug": "robi-nson-cs231n-generation",
+  "author": "robi-nson",
+  "url": "https://huggingface.co/robi-nson/cs231n-generation",
+  "created_at": "2026-09-04T14:04:36.000Z",
+  "updated_at": "2026-09-04T14:04:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Train Nearby places Restaurants Gas stations ATMs Shopping Map details Satellite Transit lines Traffic"
+    },
+    {
+      "title": "Aman's AI Journal • CS231n • Generative Models",
+      "url": "https://aman.ai/cs231n/generative-models/",
+      "snippet": "Aman's AI Journal | Course notes and learning material for Artificial Intelligence and Deep Learning Stanford classes."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/maps/search/",
+      "snippet": "Train Nearby places Restaurants Gas stations ATMs Shopping Map details Satellite Transit lines Traffic"
+    },
+    {
+      "title": "CS231n 2025 Lecture Notes - raimbekovm.github.io",
+      "url": "https://raimbekovm.github.io/cs231n-2025-notes/index.html",
+      "snippet": "CS231n lecture notes · Stanford · Spring 2025 · Unofficial Eighteen lectures of Stanford CS231n, written up. Vision Transformers, contrastive pretraining, latent diffusion, segmentation foundation models, vision–language models — written from the 2025 lectures, with every result linked to the paper it came from."
+    },
+    {
+      "title": "Mapy Google",
+      "url": "https://www.google.com/maps/search/?hl=sk",
+      "snippet": "Vlak Miesta v okolí Reštaurácie Čerpacie stanice Bankomaty Nákupy Podrobnosti mapy Satelitné Verejná doprava Premávka"
+    }
+  ]
+}

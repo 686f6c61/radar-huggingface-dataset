@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Jungkookjeon1994/tiny-transformer-multitask",
+  "slug": "jungkookjeon1994-tiny-transformer-multitask",
+  "author": "Jungkookjeon1994",
+  "url": "https://huggingface.co/Jungkookjeon1994/tiny-transformer-multitask",
+  "created_at": "2026-09-04T11:49:03.000Z",
+  "updated_at": "2026-09-04T11:49:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jungkookjeon1994 (강서윤) - Hugging Face",
+      "url": "https://huggingface.co/Jungkookjeon1994/models",
+      "snippet": "Jungkookjeon1994's models1 Sort: Recently updated Jungkookjeon1994/beit-baseline 49.6k•Updated 3 days ago• 12"
+    },
+    {
+      "title": "Google Übersetzer herunterladen und verwenden",
+      "url": "https://support.google.com/translate/answer/6350850?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Mit der Google Übersetzer App können Sie Text, Handschrift, Fotos und Spracheingaben in mehr als 200 Sprachen übersetzen. …"
+    },
+    {
+      "title": "EnzoRobert/project-multitask · Hugging Face",
+      "url": "https://huggingface.co/EnzoRobert/project-multitask",
+      "snippet": "Overview This is an experimental Tiny Transformer codebase for Multitask. It keeps the tiny setup intentionally manageable so architecture changes can be inspected before a full training run."
+    },
+    {
+      "title": "Sprache und Text auf dem Google Pixel Smartphone oder Google Pixel ...",
+      "url": "https://support.google.com/pixelphone/answer/11209263?hl=de",
+      "snippet": "Öffne auf deinem Smartphone die Einstellungen. Tippe auf System Live-Übersetzung. Aktiviere Live-Übersetzung verwenden. Wenn …"
+    },
+    {
+      "title": "GitHub - skolouri/TinyTransformer: Mathematics of AI - Transformer ...",
+      "url": "https://github.com/skolouri/TinyTransformer",
+      "snippet": "Minimalist Design: Focuses on core components of a Transformer without unnecessary complexity. Encoder-Decoder Architecture: Implements both encoder and decoder stacks as in the original Transformer model. Applications: Demonstrates use cases in computer vision and NLP tasks. Educational Focus: Great starting point for students, researchers, and practitioners who want to understand ..."
+    }
+  ]
+}

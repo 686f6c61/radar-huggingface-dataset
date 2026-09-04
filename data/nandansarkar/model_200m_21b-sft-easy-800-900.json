@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nandansarkar/model_200m_21B-sft-easy-800-900",
+  "slug": "nandansarkar-model_200m_21b-sft-easy-800-900",
+  "author": "nandansarkar",
+  "url": "https://huggingface.co/nandansarkar/model_200m_21B-sft-easy-800-900",
+  "created_at": "2026-09-04T13:42:03.000Z",
+  "updated_at": "2026-09-04T13:42:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 203008512,
+  "parameters_human": "203.0M",
+  "storage_bytes": 812063560,
+  "storage_human": "812 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=DE&hl=de",
+      "snippet": "Auf YouTube findest du großartige Videos und erstklassige Musik. Außerdem kannst du eigene Inhalte hochladen und mit Freunden …"
+    },
+    {
+      "title": "Gemini-3-8-Flash-Model-Card - storage.googleapis.com",
+      "url": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-8-Flash-Model-Card.pdf",
+      "snippet": "Gemini 3.8 Flash — Model Card Model Cards are intended to provide essential information on Gemini models, including known limitations, mitigation approaches, and safety performance. Model cards may be updated from time to time; for example, to include updated evaluations as the model is improved or revised. See the Google DeepMind site for a comprehensive list of model cards."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "‪Nandan Sarkar‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=KwRrnFoAAAAJ&hl=en",
+      "snippet": "‪New York University‬ - ‪‪Cited by 94‬‬ - ‪NLP‬ - ‪ML‬"
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en-US",
+      "snippet": "Get the official YouTube app on Android phones and tablets. See what the world is watching -- from the hottest music videos to …"
+    }
+  ]
+}

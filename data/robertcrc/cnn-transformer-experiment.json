@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "robertcrc/cnn-transformer-experiment",
+  "slug": "robertcrc-cnn-transformer-experiment",
+  "author": "robertcrc",
+  "url": "https://huggingface.co/robertcrc/cnn-transformer-experiment",
+  "created_at": "2026-09-04T16:17:18.000Z",
+  "updated_at": "2026-09-04T16:17:22.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Festa dei lavoratori - Forum Politica",
+      "url": "https://forum.chatta.it/politica/7911135/festa-dei-lavoratori.aspx",
+      "snippet": "May 1, 2009 · Festa dei lavoratori Da Wikipedia, l'enciclopedia libera. Il Quarto Stato, di Giuseppe Pellizza da Volpedo La Festa dei …"
+    },
+    {
+      "title": "Anthropic AI agent fakes identities, targets real people in new ...",
+      "url": "https://www.cnn.com/2026/08/04/tech/ai-anthropic-openai-security-breach-intl-hnk",
+      "snippet": "Anthropic’s most advanced artificial intelligence model used fake identities to deceive real people and try to plant malicious code during testing by Britain’s AI Security Institute (AISI ..."
+    },
+    {
+      "title": "Il cantante... - Forum Musica",
+      "url": "https://forum.chatta.it/musica/7656008/il-cantante-.aspx",
+      "snippet": "Dec 24, 2007 · Hip-Hop, Rock, Punk, Funky, House, Reggae, Metal, Rap... parliamo di musica a tutto volume!"
+    },
+    {
+      "title": "GitHub - rafiepour/CTran: Complete code for the proposed CNN ...",
+      "url": "https://github.com/rafiepour/CTran",
+      "snippet": "This repository contains the complete source code of the proposed CTRAN network for joint intent detection and slot filling, which are the main tasks of natural language understanding. We propose a encoder-decoder modele, combining CNNs with Transformers and define the concept of alignment in Transformer decoder for the first time. The encoder is shared between the two intent detection and ..."
+    },
+    {
+      "title": "chi lavora oggi? - Forum Milano",
+      "url": "https://forum.chatta.it/milano/7587116/chi-lavora-oggi-.aspx",
+      "snippet": "Sep 22, 2007 · chi lavora oggi? ioooooooooooo ...buongiorno a tutti :D kefamo83vr 22/09/2007 ore 09.30.45 Ultimi messaggi segnala"
+    }
+  ]
+}

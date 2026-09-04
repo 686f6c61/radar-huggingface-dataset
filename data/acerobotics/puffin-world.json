@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ACERobotics/Puffin-World",
+  "slug": "acerobotics-puffin-world",
+  "author": "ACERobotics",
+  "url": "https://huggingface.co/ACERobotics/Puffin-World",
+  "created_at": "2026-08-23T07:27:29.000Z",
+  "updated_at": "2026-09-04T04:35:16.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-3d",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "unified multimodal model",
+    "world model",
+    "camera-centric",
+    "generation",
+    "understanding",
+    "spatial intelligence",
+    "3D vision",
+    "depth estimation",
+    "multi-view generation",
+    "camera calibration",
+    "image-to-3d",
+    "arxiv:2609.04196",
+    "arxiv:2510.08673",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 0,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67016047883,
+  "storage_human": "67.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MojePPK.pl — oficjalny portal Pracowniczych Planów Kapitałowych PPK",
+      "url": "https://www.mojeppk.pl/",
+      "snippet": "Apr 23, 2026 · Portal Informacyjny Pracowniczych Planów Kapitałowych - jedyne oficjalne źródło wiedzy o PPK - prowadzony przez …"
+    },
+    {
+      "title": "ACERobotics/Puffin-World · Hugging Face",
+      "url": "https://huggingface.co/ACERobotics/Puffin-World",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kalkulator oszczędności Pracowniczych Planów Kapitałowych",
+      "url": "https://www.mojeppk.pl/kalkulator.html",
+      "snippet": "Dec 31, 2022 · Oficjalny Portal informacyjny na temat Pracowniczych Planów Kapitałowych. Z PPK możesz zabezpieczyć swoją …"
+    },
+    {
+      "title": "ACERobotics/Puffin-World · Demo for this model on Spaces",
+      "url": "https://huggingface.co/ACERobotics/Puffin-World/discussions/1",
+      "snippet": "Community 1 Copy to bucket new Demo for this model on Spaces #1 by multimodalart- opened about 1 hour ago Discussion"
+    },
+    {
+      "title": "Serwis MojePPK",
+      "url": "https://rachunek.mojeppk.pl/",
+      "snippet": "MojePPK website is a service informing PPK participants about the balance of funds collected by them on their PPK accounts - in …"
+    }
+  ]
+}

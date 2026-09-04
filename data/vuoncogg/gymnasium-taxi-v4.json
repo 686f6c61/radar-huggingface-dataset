@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "vuoncogg/Gymnasium-Taxi-v4",
+  "slug": "vuoncogg-gymnasium-taxi-v4",
+  "author": "vuoncogg",
+  "url": "https://huggingface.co/vuoncogg/Gymnasium-Taxi-v4",
+  "created_at": "2026-09-04T16:11:25.000Z",
+  "updated_at": "2026-09-04T16:14:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v4",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 150175,
+  "storage_human": "150175 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Msn - Actualités High-Tech",
+      "url": "https://forums.commentcamarche.net/forum/affich-2070347-msn",
+      "snippet": "Jan 31, 2006 · MSN Messenger est le logiciel de chat qui - lui - restera gratuit. Il y a également MSN Search, le moteur de recherche …"
+    },
+    {
+      "title": "Taxi-v4-OpenAI-Gymnasium/main.py at main · janashams/Taxi-v4 ... - GitHub",
+      "url": "https://github.com/janashams/Taxi-v4-OpenAI-Gymnasium/blob/main/main.py",
+      "snippet": "Taxi-v4 is a classic grid-world environment where a taxi must navigate a 5×5 grid, pick up a passenger from one of four fixed locations (R, G, Y, B), and drop them off at the correct destination. - Taxi-v4-OpenAI-Gymnasium/main.py at main · janashams/Taxi-v4-OpenAI-Gymnasium"
+    },
+    {
+      "title": "Desinstaller new tab [Résolu] - Virus - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-29442367-desinstaller-new-tab",
+      "snippet": "Apr 27, 2020 · Salut, 1) Supprimer l'extension qui cause des problèmes. Sur Firefox : Menu Outils / Modules complémentaires Onglet …"
+    },
+    {
+      "title": "Taxi-v4-OpenAI-Gymnasium/q_learning.py at main - GitHub",
+      "url": "https://github.com/janashams/Taxi-v4-OpenAI-Gymnasium/blob/main/q_learning.py",
+      "snippet": "Taxi-v4 is a classic grid-world environment where a taxi must navigate a 5×5 grid, pick up a passenger from one of four fixed locations (R, G, Y, B), and drop them off at the correct destination. -..."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/zh-hans/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â½win8ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â´ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°/d8c51abf-b863-4da3-9596-797deace59f7",
+      "snippet": ""
+    }
+  ]
+}

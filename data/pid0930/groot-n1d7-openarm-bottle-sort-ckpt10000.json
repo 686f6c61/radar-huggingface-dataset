@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "PID0930/groot-n1d7-openarm-bottle-sort-ckpt10000",
+  "slug": "pid0930-groot-n1d7-openarm-bottle-sort-ckpt10000",
+  "author": "PID0930",
+  "url": "https://huggingface.co/PID0930/groot-n1d7-openarm-bottle-sort-ckpt10000",
+  "created_at": "2026-09-04T11:36:00.000Z",
+  "updated_at": "2026-09-04T11:39:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "robotics",
+    "vla",
+    "gr00t",
+    "manipulation",
+    "bimanual",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 25540817621,
+  "storage_human": "25.5 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vous souhaitez contacter la MC ? | Mutualité chrétienne",
+      "url": "https://www.mc.be/fr/contact",
+      "snippet": "Vous souhaitez nous contacter ? Téléphone, app Ma MC, chat, vidéoconseil, formulaire de contact, agences... La MC est là pour …"
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "These are the main code, model, training, evaluation, and deployment changes that distinguish the current N1.7 main branch from the N1.6 / 1D6 code path. Use the n1d6 branch when you need the N1.6 model package and runtime behavior. Model package changed from gr00t_n1d6 to gr00t_n1d7, so codepaths and processor metadata move to the N1.7 namespace."
+    },
+    {
+      "title": "La première mutualité santé en Belgique | Mutualité chrétienne",
+      "url": "https://www.mc.be/fr",
+      "snippet": "La Mutualité chrétienne propose à ses membres des avantages et services basés sur la solidarité et se bat pour des soins de qualité …"
+    },
+    {
+      "title": "GitHub - enactic/openarm: A fully open-source humanoid arm for physical ...",
+      "url": "https://github.com/enactic/openarm",
+      "snippet": "OpenArm is an open-source 7DOF humanoid arm designed for physical AI research and deployment in contact-rich environments. With high backdrivability and compliance, it is built with safe human-robot interaction in mind while delivering practical payload capabilities for real-world applications."
+    },
+    {
+      "title": "Mutualité chrétienne",
+      "url": "https://presse.mc.be/",
+      "snippet": "La Mutualité chrétienne (MC) se bat pour des soins de qualité, accessibles à tous. Nous proposons à nos membres des avantages et …"
+    }
+  ]
+}

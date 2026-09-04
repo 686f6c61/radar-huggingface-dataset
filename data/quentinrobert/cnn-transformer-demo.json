@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "quentinrobert/cnn-transformer-demo",
+  "slug": "quentinrobert-cnn-transformer-demo",
+  "author": "quentinrobert",
+  "url": "https://huggingface.co/quentinrobert/cnn-transformer-demo",
+  "created_at": "2026-09-04T16:03:45.000Z",
+  "updated_at": "2026-09-04T16:03:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "这个网址是potplayer官网吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/509011663",
+      "snippet": "Feb 21, 2022 · ———————————————— 为了让更多人能搜到这个帖子，做点SEO。 PotPlayer是什么？PotPlayer怎么下 …"
+    },
+    {
+      "title": "GitHub - rafiepour/CTran: Complete code for the proposed CNN ...",
+      "url": "https://github.com/rafiepour/CTran",
+      "snippet": "This repository contains the complete source code of the proposed CTRAN network for joint intent detection and slot filling, which are the main tasks of natural language understanding. We propose a encoder-decoder modele, combining CNNs with Transformers and define the concept of alignment in Transformer decoder for the first time. The encoder is shared between the two intent detection and ..."
+    },
+    {
+      "title": "如何下载到卡巴斯基免费版？ - 知乎",
+      "url": "https://www.zhihu.com/question/386623091",
+      "snippet": "截至2023/3/29，在 卡巴斯基 免费版下载页面点击立即下载后会跳转到“ 免费试用版 ”的下载界面，所以官网无法直接下载到免费版的 …"
+    },
+    {
+      "title": "CNN Playground - Interactive Neural Network Visualization",
+      "url": "https://cnn-playground.live/",
+      "snippet": "Explore how CNNs work. Interactive demos for image classification, digit recognition, object detection."
+    },
+    {
+      "title": "台湾有哪些大学相当于大陆985院校水平？ - 知乎",
+      "url": "https://www.zhihu.com/question/343603328",
+      "snippet": "台湾的大学直接和985比不太好弄，观感不太直接。放在整个东亚来看，大家的感觉会更直观。而目前东亚的大学基本可以分成三个档 …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "andrewkimfield/toy-classification",
+  "slug": "andrewkimfield-toy-classification",
+  "author": "andrewkimfield",
+  "url": "https://huggingface.co/andrewkimfield/toy-classification",
+  "created_at": "2026-09-04T11:43:36.000Z",
+  "updated_at": "2026-09-04T11:43:41.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mail Orange: découvrez la messagerie et accédez à vos mails",
+      "url": "https://messagerie.orange.fr/",
+      "snippet": "Découvrez toutes les fonctionnalités du Mail Orange et communiquez facilement avec tous vos proches depuis votre PC/Mac, …"
+    },
+    {
+      "title": "toy-classification-model/classification-model01.py at master · KR3915 ...",
+      "url": "https://github.com/KR3915/toy-classification-model/blob/master/classification-model01.py",
+      "snippet": "pytorch classification model for toys. Contribute to KR3915/toy-classification-model development by creating an account on GitHub."
+    },
+    {
+      "title": "Messagerie Pro Orange: découvrez la messagerie et accédez à vos mails",
+      "url": "https://messagerie.orange.fr/pro/decouverte/",
+      "snippet": "La messagerie pro Orange vous offre un ensemble de services pour communiquer facilement en toute sécurité : mail, contacts, boite …"
+    },
+    {
+      "title": "Zenodo",
+      "url": "https://zenodo.org/records/17108935/files/Toy_Classification_Model.ipynb",
+      "snippet": "\"This notebook provides the baseline code for reproducing the toy precipitation **classifier** results in our paper \\\"*Towards Interpretable Machine Learning in the Geosciences*\\\". As research reproducibility is a critically important aspect of this type of work, this notebook allows for quick testing, adapatation, and reuse of the code without ..."
+    },
+    {
+      "title": "Toy Robot: Toy Classification Using CNN - sammyshaw.github.io",
+      "url": "https://sammyshaw.github.io/2025/03/07/cnn-Toy-Robot.html",
+      "snippet": "For this project I trained a Convolutional Neural Network to recognize distinct classes of toys from a bespoke, self-collected data set. After experimenting with various training parameters and model architectures, however, I used transfer learning - and the power of MobilenetV2 - to achieve a 100 percent test set accuracy."
+    }
+  ]
+}

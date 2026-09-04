@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "augustaklug/bertimbau-large-lener_br-onnx",
+  "slug": "augustaklug-bertimbau-large-lener_br-onnx",
+  "author": "augustaklug",
+  "url": "https://huggingface.co/augustaklug/bertimbau-large-lener_br-onnx",
+  "created_at": "2026-09-04T13:47:33.000Z",
+  "updated_at": "2026-09-04T13:48:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers.js",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "token-classification",
+    "legal",
+    "ner",
+    "webgpu",
+    "pt",
+    "base_model:Luciano/bertimbau-large-lener_br",
+    "base_model:quantized:Luciano/bertimbau-large-lener_br",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 667433282,
+  "storage_human": "667 MB",
+  "base_model": "Luciano/bertimbau-large-lener_br",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mercure Hotel Bochum City - Offizielle lokale Website",
+      "url": "https://www.mercure-hotel-bochum.de/",
+      "snippet": "2 days ago · Das Mercure Hotel Bochum City bietet Gästen eine direkte Parkmöglichkeit in der hoteleigenen Tiefgarage mit 150 …"
+    },
+    {
+      "title": "augustaklug (Augusta Carla Klug) - Hugging Face",
+      "url": "https://huggingface.co/augustaklug",
+      "snippet": "Augusta Carla Klug augustaklug Follow AI & ML interests None yet Recent Activity updateda modelabout 2 hours ago"
+    },
+    {
+      "title": "Mercure Hotel Bochum City - Official Local Website",
+      "url": "https://www.mercure-hotel-bochum.de/en/",
+      "snippet": "The stylish Mercure Hotel Bochum is located in the city center of Bochum, directly opposite the Bochum main train station. In addition …"
+    },
+    {
+      "title": "Luciano/bertimbau-large-lener_br · Hugging Face",
+      "url": "https://huggingface.co/Luciano/bertimbau-large-lener_br",
+      "snippet": "bertimbau-large-lener_br This model is a fine-tuned version of neuralmind/bert-large-portuguese-cased on the lener_br dataset. It achieves the following results on the evaluation set: Loss: 0.1271 Precision: 0.8965 Recall: 0.9198 F1: 0.9080 Accuracy: 0.9801 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More ..."
+    },
+    {
+      "title": "Getränke / Drinks - cdn.mercure-hotel-bochum.de",
+      "url": "https://cdn.mercure-hotel-bochum.de/wp-content/uploads/2026/05/PAIRING.pdf",
+      "snippet": "Getränke / Drinks"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "DreamFoundries/K2-Horizon-3.7B-MLX-4bit",
+  "slug": "dreamfoundries-k2-horizon-3-7b-mlx-4bit",
+  "author": "DreamFoundries",
+  "url": "https://huggingface.co/DreamFoundries/K2-Horizon-3.7B-MLX-4bit",
+  "created_at": "2026-09-04T17:42:41.000Z",
+  "updated_at": "2026-09-04T18:53:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "k2-horizon",
+    "3.7b",
+    "dense",
+    "open-weights",
+    "ifm",
+    "mlxhub",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:IFM/K2-Horizon-Pretrain-Data",
+    "dataset:IFM/K2-Horizon-Midtrain-Data",
+    "base_model:IFM/K2-Horizon-3.7B",
+    "base_model:quantized:IFM/K2-Horizon-3.7B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5058255360,
+  "parameters_human": "5.06B",
+  "storage_bytes": 2866269820,
+  "storage_human": "2.9 GB",
+  "base_model": "IFM/K2-Horizon-3.7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Radar opadów - meteo.org.pl",
+      "url": "https://meteo.org.pl/radary",
+      "snippet": "Radar opadów w czasie rzeczywistym pokazuje gdzie aktualnie pada deszcz lub śnieg. Jest aktualizowana co 5 minut. Kolorem …"
+    },
+    {
+      "title": "Quantized Models for IFM/K2-Horizon-3.7B – Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Aquantized%3AIFM%2FK2-Horizon-3.7B",
+      "snippet": "One-click Deployment Inference Endpoints Microsoft Foundry Amazon SageMaker AI Misc text-generation-inference Eval Results (legacy)"
+    },
+    {
+      "title": "skyradar.pl: RADAR OPADÓW - Mapa opadów deszczu i śniegu",
+      "url": "https://www.skyradar.pl/p/radar-opadow.html",
+      "snippet": "Radar opadów deszczu i śniegu w Polsce to mapa opadów, która raportuje gdzie jest deszcz oraz gdzie aktualnie pada śnieg. …"
+    },
+    {
+      "title": "IFM Documentation",
+      "url": "https://docs.ifm.ai/",
+      "snippet": "Documentation for IFM foundation models — the K2 Horizon series, hosted API reference, model catalog, and integration guides from the Institute of Foundation Models at MBZUAI."
+    },
+    {
+      "title": "METEO IMGW-PIB: mapy dynamiczne",
+      "url": "https://meteo.imgw.pl/dyn/",
+      "snippet": "Serwis dynamicznych map meteorologicznych IMGW-PIB oferujący aktualne informacje pogodowe."
+    }
+  ]
+}

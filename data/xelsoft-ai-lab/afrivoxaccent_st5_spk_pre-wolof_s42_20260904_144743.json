@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_pre-wolof_s42_20260904_144743",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_st5_spk_pre-wolof_s42_20260904_144743",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_pre-wolof_s42_20260904_144743",
+  "created_at": "2026-09-04T16:00:40.000Z",
+  "updated_at": "2026-09-04T16:01:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144437730,
+  "parameters_human": "144.4M",
+  "storage_bytes": 578043218,
+  "storage_human": "578 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Impermanent Loss Explained: A Guide for DeFi Liquidity Pools",
+      "url": "https://chainup.com/blog/impermanent-loss-explained-a-guide-for-defi-liquidity-pools/",
+      "snippet": "Mar 29, 2026 · Understand what impermanent loss in DeFi is, how it happens, and the top strategies to reduce liquidity pool risks …"
+    },
+    {
+      "title": "Free AI Voice Changer & Voice Agent Platform - Voice.ai",
+      "url": "https://voice.ai/",
+      "snippet": "Create lifelike speech using AI voice agents, voice changer, and text to speech from Voice.ai. Thousands of voices with secure, scalable APIs and SDKs."
+    },
+    {
+      "title": "Impermanent Loss in DeFi: The Complete Guide - tastycrypto",
+      "url": "https://www.tastycrypto.com/defi/impermanent-loss-explained/",
+      "snippet": "Nov 6, 2023 · Impermanent loss is a risk in DeFi liquidity pools where the value of your deposited assets changes, potentially …"
+    },
+    {
+      "title": "XelSoft-ai - GitHub",
+      "url": "https://github.com/Xel-Soft-AI",
+      "snippet": "GitHub is where XelSoft-ai builds software."
+    },
+    {
+      "title": "Impermanent Loss Explained: A Guide for DeFi Liquidity Providers ...",
+      "url": "https://asterdexhub.com/guides/what-is-impermanent-loss.html",
+      "snippet": "Nov 12, 2025 · A clear, step-by-step guide to understanding impermanent loss (IL) in DeFi. Learn what it is, how it's calculated, and …"
+    }
+  ]
+}

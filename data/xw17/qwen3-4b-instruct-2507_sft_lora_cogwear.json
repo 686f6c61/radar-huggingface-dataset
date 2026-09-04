@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/Qwen3-4B-Instruct-2507_SFT_lora_cogwear",
+  "slug": "xw17-qwen3-4b-instruct-2507_sft_lora_cogwear",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Qwen3-4B-Instruct-2507_SFT_lora_cogwear",
+  "created_at": "2026-09-04T17:43:41.000Z",
+  "updated_at": "2026-09-04T17:43:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77549418,
+  "storage_human": "78 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Personal & Business Banking | Bank al Etihad - Jordan",
+      "url": "https://www.bankaletihad.com/en/",
+      "snippet": "Explore our diverse range of personal and business banking services including bank accounts, credit cards, loans and more. Learn …"
+    },
+    {
+      "title": "Qwen/Qwen3-4B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Please Login - Bank al Etihad",
+      "url": "https://rdp.bankaletihad.com:10443/remote/login?lang=en",
+      "snippet": "Login page Single Sign-On"
+    },
+    {
+      "title": "xw17/Qwen3-4B-Instruct-2507_SFT_lora_aw_fb · Hugging Face",
+      "url": "https://huggingface.co/xw17/Qwen3-4B-Instruct-2507_SFT_lora_aw_fb",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bank al Etihad",
+      "url": "https://etih.ad/AppLandingScreen",
+      "snippet": "Bank al Etihad. Banking, redefined."
+    }
+  ]
+}

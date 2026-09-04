@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "DreamFoundries/K2-Horizon-MoVA-36B-A4B-MLX-8bit",
+  "slug": "dreamfoundries-k2-horizon-mova-36b-a4b-mlx-8bit",
+  "author": "DreamFoundries",
+  "url": "https://huggingface.co/DreamFoundries/K2-Horizon-MoVA-36B-A4B-MLX-8bit",
+  "created_at": "2026-09-04T18:06:15.000Z",
+  "updated_at": "2026-09-04T18:06:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "mlxhub",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:IFM/K2-Horizon-MoVA-36B-A4B",
+    "base_model:quantized:IFM/K2-Horizon-MoVA-36B-A4B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20637260,
+  "storage_human": "21 MB",
+  "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lieferando.de | Essen & mehr bestellen – Lieferservice & Abholung",
+      "url": "https://www.lieferando.de/?msockid=27a5bb66a36763342e1aacaca216629e",
+      "snippet": "Bestelle einfach Essen, Lebensmittel & mehr mit Lieferando.de. Schneller Lieferservice für deinen Bedarf. Entdecke jetzt 35.000+ …"
+    },
+    {
+      "title": "K2 Horizon - a IFM Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/IFM/k2-horizon",
+      "snippet": "K2 Horizon models, datasets, and supporting resources. Upvote . 16 +6; Sort: Collection. IFM/K2-Horizon-375B-A23B. Text Generation • 379B • Updated about 2 hours ago • 9"
+    },
+    {
+      "title": "Partner Hub",
+      "url": "https://partner-hub.lieferando.de/",
+      "snippet": "The Partner Hub has all the tools and all the data you need to take your business to the next level with Just Eat Takeaway.com. …"
+    },
+    {
+      "title": "K2 Horizon MoVA 36B A4B: Benchmarks, Pricing & Context Window — Benchgen",
+      "url": "https://benchgen.com/models/ifm/k2-horizon-mova-36b-a4b",
+      "snippet": "Quick answer:K2-Horizon-MoVA-36B-A4B is IFM's sparse Mixture-of-Experts model using Mixture-of-Values attention (MoVA) — 36B total parameters, only 4B active per token, with a native 512K-token context window. It outscores open-weight dense and MoE models up to 15x its active-parameter size on agentic and reasoning benchmarks, and is competitive with closed frontier models. Open weights ..."
+    },
+    {
+      "title": "Fahrer Jobs – werde Kurierfahrer (m/w/d) | Lieferando",
+      "url": "https://www.lieferando.de/fahrer/?msockid=27a5bb66a36763342e1aacaca216629e",
+      "snippet": "Fahrer Jobs in der Nähe » Minijob als Auslieferungsfahrer für Essen & Waren in Berlin, Köln & mehr Top Lieferfahrer Job mit …"
+    }
+  ]
+}

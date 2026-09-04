@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Reza2kn/shenava-nemotron3-rust",
+  "slug": "reza2kn-shenava-nemotron3-rust",
+  "author": "Reza2kn",
+  "url": "https://huggingface.co/Reza2kn/shenava-nemotron3-rust",
+  "created_at": "2026-09-04T17:49:56.000Z",
+  "updated_at": "2026-09-04T17:50:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 400465441,
+  "storage_human": "400 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to get help in Windows - Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/how-to-get-help-in-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "Here are a few different ways to find help for Windows Search for help - Enter a question or keywords in the search box on the …"
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "About Get Help | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/support/get-help/about-get-help",
+      "snippet": "The Windows Get Help app is a centralized hub for accessing a wide range of resources, including tutorials, FAQs, community …"
+    },
+    {
+      "title": "Reza2kn (Reza Sayar) · GitHub",
+      "url": "https://github.com/Reza2kn",
+      "snippet": "shenava-asr-server Public Fully-Rust Shenava ASR server: tract (Koochik offline) + Rust fbank + shenava-ctc-beam hotword decode + axum HTTP Rust 5 1"
+    },
+    {
+      "title": "ヘルプについて | Microsoft Support",
+      "url": "https://support.microsoft.com/ja-jp/support/get-help/about-get-help",
+      "snippet": "Get Helpで問題を検索する方法 Windows Get Help アプリは、チュートリアル、FAQ、コミュニティ フォーラム、Microsoft サポー …"
+    }
+  ]
+}

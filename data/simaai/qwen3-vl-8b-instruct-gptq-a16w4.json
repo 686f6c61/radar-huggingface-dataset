@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "simaai/Qwen3-VL-8B-Instruct-GPTQ-a16w4",
+  "slug": "simaai-qwen3-vl-8b-instruct-gptq-a16w4",
+  "author": "simaai",
+  "url": "https://huggingface.co/simaai/Qwen3-VL-8B-Instruct-GPTQ-a16w4",
+  "created_at": "2026-01-10T16:38:11.000Z",
+  "updated_at": "2026-09-04T11:57:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llima",
+  "languages": [],
+  "tags": [
+    "llima",
+    "vision",
+    "image-text-to-text",
+    "generative_ai",
+    "embedded",
+    "sima",
+    "qwen",
+    "qwen3",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44585619856,
+  "storage_human": "44.6 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows-Fax und Scan funktioniert nicht mehr",
+      "url": "https://www.windows-10-forum.com/threads/windows-fax-und-scan-funktioniert-nicht-mehr.128217/",
+      "snippet": "Helfe beim Thema Windows-Fax und Scan funktioniert nicht mehr in Windows 10 Support um eine Lösung zu finden; Bitte um Hilfe, …"
+    },
+    {
+      "title": "simaai/Qwen3-VL-8B-Instruct-GPTQ-a16w4 · Hugging Face",
+      "url": "https://huggingface.co/simaai/Qwen3-VL-8B-Instruct-GPTQ-a16w4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Windows-Fax und -Scan Zugriff auf Dokumentordner verweigert",
+      "url": "https://www.windows-10-forum.com/threads/windows-fax-und-scan-zugriff-auf-dokumentordner-verweigert.153232/",
+      "snippet": "Windows-Fax und -Scan Zugriff auf Dokumentordner verweigert Bis jetzt lief alles gut, ich konnte das Programm ausführen und …"
+    },
+    {
+      "title": "simaai/Qwen3-VL-8B-Instruct-GPTQ-a16w4 at main - Hugging Face",
+      "url": "https://huggingface.co/simaai/Qwen3-VL-8B-Instruct-GPTQ-a16w4/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fax Answers",
+      "url": "https://faxanswers.com/page/19",
+      "snippet": "Windows Fax and Scan Q: What is Windows Fax and Scan? In what versions of Windows is it available? How is it used? Read the …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "lvmx12344545366/bge-m3",
+  "slug": "lvmx12344545366-bge-m3",
+  "author": "lvmx12344545366",
+  "url": "https://huggingface.co/lvmx12344545366/bge-m3",
+  "created_at": "2026-09-04T14:18:16.000Z",
+  "updated_at": "2026-09-04T14:18:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "onnx",
+    "xlm-roberta",
+    "feature-extraction",
+    "sentence-similarity",
+    "arxiv:2402.03216",
+    "arxiv:2004.04906",
+    "arxiv:2106.14807",
+    "arxiv:2107.05720",
+    "arxiv:2004.12832",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4580045531,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay Germany | eBay Community",
+      "url": "https://community.ebay.de/",
+      "snippet": "Willkommen in der eBay Community. Wir freuen uns, dass du hier bist. Antworten, Gespräche und eBay-Mentoren warten auf dich!"
+    },
+    {
+      "title": "BAAI/bge-m3 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-m3",
+      "snippet": "BGE-M3 (paper, code) In this project, we introduce BGE-M3, which is distinguished for its versatility in Multi-Functionality, Multi-Linguality, and Multi-Granularity. Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval."
+    },
+    {
+      "title": "Kaufvertrag ebay - Vertragsschluss, Widerruf & Rücktritt",
+      "url": "https://www.juraforum.de/lexikon/kaufvertrag-ebay",
+      "snippet": "Mar 16, 2026 · Ein Kaufvertrag kommt durch zwei Willenserklärungen – Angebot und Annahme – zustande. Obgleich im Rahmen von …"
+    },
+    {
+      "title": "BGE-M3 — BGE documentation",
+      "url": "https://bge-model.com/bge/bge_m3.html",
+      "snippet": "BGE-M3 # BGE-M3 is a compound and powerful embedding model distinguished for its versatility in: Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval. Multi-Linguality: It can support more than 100 working languages."
+    },
+    {
+      "title": "eBay Rückgaberecht bei einem Privatverkauf - JuraForum.de",
+      "url": "https://www.juraforum.de/lexikon/ebay-rueckgaberecht",
+      "snippet": "May 26, 2026 · Viele Privatleute, die über eBay etwas verkaufen, wollen ihre Haftung ausschließen. Doch wie sieht es mit dem eBay …"
+    }
+  ]
+}

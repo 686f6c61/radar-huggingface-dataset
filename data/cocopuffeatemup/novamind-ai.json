@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "cocopuffeatemup/novamind-ai",
+  "slug": "cocopuffeatemup-novamind-ai",
+  "author": "cocopuffeatemup",
+  "url": "https://huggingface.co/cocopuffeatemup/novamind-ai",
+  "created_at": "2026-09-04T15:48:47.000Z",
+  "updated_at": "2026-09-04T15:48:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5521198,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La Palma Oceaanzicht, vakantiehuizen en de rondreis.",
+      "url": "https://lapalma-oceaanzicht.nl/",
+      "snippet": "Thuis op La Palma in een vakantiehuis met Oceaanzicht. Geniet van je eigen plekje onder de zon, de rust, de vrijheid en het uitzicht …"
+    },
+    {
+      "title": "GitHub - Heemanshu-stack/Novamind: Novamind is a Multi-Modal ...",
+      "url": "https://github.com/Heemanshu-stack/Novamind",
+      "snippet": "Novamind is a state-of-the-art Multi-Modal Generative AI Playground and Platform that unifies text, image, video, depth perception, and audio generation into a single high-performance glassmorphic interface."
+    },
+    {
+      "title": "La Palma vakantiehuizen en villa`s met zwembad - La Palma Oceaanzicht",
+      "url": "https://lapalma-oceaanzicht.nl/vakantiehuizen/",
+      "snippet": "La Palma vakantiehuizen en villa`s met zwembad op het Canarische Eiland. Thuis op La Palma in een door Oceaanzicht verzorgde …"
+    },
+    {
+      "title": "GitHub - novaeco-tech/novamind: Enabler monorepo NovaMind. Shared AI ...",
+      "url": "https://github.com/novaeco-tech/novamind",
+      "snippet": "A shared, high-performance AI inference engine and model registry for the circular economy. NovaMind (formerly NovaSapien) is the Horizontal Enabler responsible for Artificial Intelligence and Machine Learning. In the NovaEco \"System of Systems,\" sectors should focus on domain logic, not MLOps. NovaMind acts as the \"Cortex\" of the ecosystem."
+    },
+    {
+      "title": "vakantiehuis Villa Magica met zwembad op La Palma",
+      "url": "https://www.vakantiehuizenlapalma.nl/villa/",
+      "snippet": "Op het fraaie natuurstenen terras met uitzicht over de oceaan staan twee zithoekjes en ligbedden voor je klaar. Ook na …"
+    }
+  ]
+}

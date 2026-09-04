@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sstoica12/acquisition_llama8bins_medmcqa_confidence",
+  "slug": "sstoica12-acquisition_llama8bins_medmcqa_confidence",
+  "author": "sstoica12",
+  "url": "https://huggingface.co/sstoica12/acquisition_llama8bins_medmcqa_confidence",
+  "created_at": "2026-09-04T11:57:17.000Z",
+  "updated_at": "2026-09-04T11:59:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138288576,
+  "storage_human": "32.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "带圈圈的序号1到30 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/248361110890276644.html",
+      "snippet": "1到20的带圈数字符号为： ①、②、③、④、⑤、⑥、⑦、⑧、⑨、⑩ ⑪、⑫、⑬、⑭、⑮、⑯、⑰、⑱、⑲、⑳ 21之后的带圈数字无法直 …"
+    },
+    {
+      "title": "acquisition_student_base_llama8bins_medmcqa - Hugging Face",
+      "url": "https://huggingface.co/sstoica12/acquisition_student_base_llama8bins_medmcqa",
+      "snippet": "acquisition_student_base_llama8bins_medmcqa ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "sstoica12/acquisition_student_base_llama8bins_medmcqa at main",
+      "url": "https://huggingface.co/sstoica12/acquisition_student_base_llama8bins_medmcqa/tree/main",
+      "snippet": "Instructions to use sstoica12/acquisition_student_base_llama8bins_medmcqa with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "为什么kappa的价位和adidas、nike价位一样可知名度差很多？",
+      "url": "https://www.zhihu.com/question/28203618",
+      "snippet": "分析Kappa品牌与Adidas、Nike在价格和知名度上的差异，探讨其市场定位和品牌策略。"
+    }
+  ]
+}
