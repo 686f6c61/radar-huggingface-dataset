@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "CID99/Mistral-7B-ORPO-CSRD",
+  "slug": "cid99-mistral-7b-orpo-csrd",
+  "author": "CID99",
+  "url": "https://huggingface.co/CID99/Mistral-7B-ORPO-CSRD",
+  "created_at": "2026-09-03T22:33:23.000Z",
+  "updated_at": "2026-09-03T23:16:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "orpo",
+    "preference-optimization",
+    "qlora",
+    "negative-result",
+    "failure-analysis",
+    "csrd",
+    "esrs",
+    "regulatory",
+    "alignment",
+    "text-generation",
+    "conversational",
+    "fr",
+    "dataset:YOUR_USERNAME/FinCAC40",
+    "arxiv:2403.07691",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:adapter:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 168419644,
+  "storage_human": "168 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "披萨馅料有哪些经典的种类？都用了哪些食材？ - 知乎",
+      "url": "https://www.zhihu.com/question/27157954",
+      "snippet": "pizza al taglio我一般当中饭吃，或者买一块带回家烤箱热下当简单的晚饭。。。这种配料不太好说，每个店都有不一样的。。 不过一 …"
+    },
+    {
+      "title": "kaist-ai/mistral-orpo-alpha · Hugging Face",
+      "url": "https://huggingface.co/kaist-ai/mistral-orpo-alpha",
+      "snippet": "Mistral-ORPO is a fine-tuned version of mistralai/Mistral-7B-v0.1 using the odds ratio preference optimization (ORPO). With ORPO, the model directly learns the preference without the supervised fine-tuning warmup phase."
+    },
+    {
+      "title": "乌兹别克斯坦是一个怎么样的国家？ - 知乎",
+      "url": "https://www.zhihu.com/question/60608232",
+      "snippet": "虽然乌鲁木齐一带被认为是地理上离海最远的地区，但心理距离并不算远，毕竟几个小时的飞机航程，就能飞到数十个生活习惯差别并 …"
+    },
+    {
+      "title": "Mistral 7B - Mistral AI | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-7b-0-1",
+      "snippet": "Our very first open model, SOTA competing against models up to 2 to 3x larger."
+    },
+    {
+      "title": "话题广场 - 知乎",
+      "url": "https://www.zhihu.com/topics",
+      "snippet": "知乎话题广场，汇聚多样化主题，助您探索知识、分享见解。"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Lucas77077/Krea-2-LoRAs",
+  "slug": "lucas77077-krea-2-loras",
+  "author": "Lucas77077",
+  "url": "https://huggingface.co/Lucas77077/Krea-2-LoRAs",
+  "created_at": "2026-09-03T23:20:11.000Z",
+  "updated_at": "2026-09-03T23:43:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "not-for-all-audiences",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3384133210,
+  "storage_human": "3.4 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Magasin de bricolage Pont saint pierre | Bricomarché",
+      "url": "https://www.bricomarche.com/magasin/pont-saint-pierre/04844",
+      "snippet": "Retrouvez à bas prix dans votre magasin Bricomarché Pont saint pierre tout ce dont vous avez besoin pour aménager, entretenir et …"
+    },
+    {
+      "title": "Krea 2 LoRAs - a krea Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/krea/krea-2-loras",
+      "snippet": "A collection of LoRAs for Krea 2 Turbo and Krea 2 Raw"
+    },
+    {
+      "title": "Bricomarché — pellets & bois ( Pont saint pierre, Eure)",
+      "url": "https://www.pelletgranules.fr/distributeurs/bricomarche-2258",
+      "snippet": "Produits et prix chez Bricomarché à Pont saint pierre, Eure : pellets, bois de chauffage et bûches compressées."
+    },
+    {
+      "title": "Top 28 Krea2 LoRA models for Stylized Image Generation",
+      "url": "https://www.stablediffusiontutorials.com/2026/06/krea2-lora-models.html",
+      "snippet": "Krea 2 LoRAs make it easier to explore and expand the creative possibilities of AI image generation. Whether you are looking to add a unique artistic style, create more realistic fantasy visuals, experiment with different aesthetics, or simply enhance the quality of your images, these LoRAs provide a flexible way to customize your workflow."
+    },
+    {
+      "title": "Granulés de bois et pellets - Bricomarché",
+      "url": "https://www.bricomarche.com/c/chauffage-et-filtration-de-l-air/poele-et-cheminee/combustible-pour-poele-et-cheminee/granules-de-bois/129887",
+      "snippet": "Vaste choix de granulés de bois et pellets aux meilleurs prix pour tous vos besoins. Achetez en ligne et bénéficiez du retrait 2h en …"
+    }
+  ]
+}

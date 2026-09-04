@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "upseem/unseen-gemma-4-26b-abliteration-method",
+  "slug": "upseem-unseen-gemma-4-26b-abliteration-method",
+  "author": "upseem",
+  "url": "https://huggingface.co/upseem/unseen-gemma-4-26b-abliteration-method",
+  "created_at": "2026-09-04T00:45:52.000Z",
+  "updated_at": "2026-09-04T00:45:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "research",
+    "abliteration",
+    "gemma",
+    "method-notes",
+    "no-weights",
+    "arxiv:2406.11717",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:finetune:google/gemma-4-26B-A4B-it",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY function - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/3093343?hl=en",
+      "snippet": "QUERY function Runs a Google Visualization API Query Language query across data. Sample Usage QUERY (A2:E6,\"select avg (A) …"
+    },
+    {
+      "title": "TrevorJS/gemma-4-26B-A4B-it-uncensored · Hugging Face",
+      "url": "https://huggingface.co/TrevorJS/gemma-4-26B-A4B-it-uncensored",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "QUERY - Cправка - Редакторы Google Документов",
+      "url": "https://support.google.com/docs/answer/3093343?hl=ru",
+      "snippet": "Выполняет запросы на базе языка запросов API визуализации Google. Пример использования QUERY (A2:E6; \"select avg (A) …"
+    },
+    {
+      "title": "huihui-ai/Huihui-gemma-4-26B-A4B-it-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-gemma-4-26B-A4B-it-abliterated",
+      "snippet": "huihui-ai/Huihui-gemma-4-26B-A4B-abliterated This is an uncensored version of google/gemma-4-26B-A4B-it created with abliteration (see remove-refusals-with-transformers to know more about it). This is a crude, proof-of-concept implementation to remove refusals from an LLM model without using TransformerLens."
+    },
+    {
+      "title": "stupid (augmentative) - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/stupid-augmentative.1916197/",
+      "snippet": "Sep 13, 2010 · Stupid words = idioteces, estupideces, imbecilidades, imbeciladas In principle, I suppose you could say of a person …"
+    }
+  ]
+}

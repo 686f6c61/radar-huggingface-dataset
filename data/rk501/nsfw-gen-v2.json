@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Rk501/NSFW-gen-v2",
+  "slug": "rk501-nsfw-gen-v2",
+  "author": "Rk501",
+  "url": "https://huggingface.co/Rk501/NSFW-gen-v2",
+  "created_at": "2026-09-03T20:35:31.000Z",
+  "updated_at": "2026-09-03T20:35:31.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "pt",
+    "th"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "UnfilteredAI",
+    "3d",
+    "text-to-image",
+    "not-for-all-audiences",
+    "en",
+    "pt",
+    "th",
+    "base_model:HelpingAI/PixelGen",
+    "base_model:finetune:HelpingAI/PixelGen",
+    "license:other",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3468838944,
+  "parameters_human": "3.47B",
+  "storage_bytes": 26204819534,
+  "storage_human": "26.2 GB",
+  "base_model": "OEvortex/PixelGen",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wirtualna Polska - Wszystko co ważne - www.wp.pl",
+      "url": "https://www.wp.pl/",
+      "snippet": "Za kierownicą siedziała 88-latka. Motocyklista aż wyleciał w powietrze © 1995-2026 Wirtualna Polska Media S.A. • Reklama • O nas • …"
+    },
+    {
+      "title": "UnfilteredAI - Hugging Face",
+      "url": "https://huggingface.co/UnfilteredAI",
+      "snippet": "Org profile for UnfilteredAI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Poczta - Najlepsza Poczta, największe załączniki - WP",
+      "url": "https://poczta.wp.pl/",
+      "snippet": "Bezpieczna i darmowa poczta bez spamu. Duże załączniki, nielimitowana pojemność, aplikacja mobilna. Załóż konto i ciesz się …"
+    },
+    {
+      "title": "NSFW, Uncensored AI Image Generator - Hugging Face",
+      "url": "https://huggingface.co/spaces/xiaobuhuo/nsfw_gen",
+      "snippet": "Generate explicit, NSFW, and imaginative AI images for free"
+    },
+    {
+      "title": "WP - Wiadomości z kraju i ze świata – najważniejsze i najnowsze ...",
+      "url": "https://wiadomosci.wp.pl/",
+      "snippet": "Wiadomości WP - Wszystko co ważne. Najnowsze informacje z Polski i ze Świata. Aktualności i wydarzenia dnia. Polityka. …"
+    }
+  ]
+}

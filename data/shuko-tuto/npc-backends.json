@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "shuko-tuto/npc-backends",
+  "slug": "shuko-tuto-npc-backends",
+  "author": "shuko-tuto",
+  "url": "https://huggingface.co/shuko-tuto/npc-backends",
+  "created_at": "2026-09-03T23:26:45.000Z",
+  "updated_at": "2026-09-03T23:26:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ggml",
+    "llama.cpp",
+    "cuda",
+    "backend",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657495888,
+  "storage_human": "657 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dwie emerytury dla mundurowych przed 1999 r. - Sprawdź, co …",
+      "url": "https://adwokatslawomirduda.pl/dwie-emerytury-dla-mundurowych-przed-1999-r-sprawdz-co-decyduje",
+      "snippet": "Jul 10, 2026 · Dwie emerytury dla mundurowych przed 1999 r. są możliwe! Sprawdź, kiedy ZUS wypłaci świadczenie i jakich błędów …"
+    },
+    {
+      "title": "shuko-tuto (ooo-) - Hugging Face",
+      "url": "https://huggingface.co/shuko-tuto",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 28 days ago ... updated a model 28 days ago ... updated a model about 1 month ago"
+    },
+    {
+      "title": "Podwójna emerytura dla służb mundurowych. Jest odpowiedź …",
+      "url": "http://www.portal-mundurowy.pl/index.php/aktualnosci/podwojna-emerytura-dla-sluzb-mundurowych-jest-odpowiedz-ministerstwa-rodziny-pracy-i-polityka-socjalna",
+      "snippet": "Jul 6, 2026 · Chodzi o emerytowanych żołnierzy zawodowych i funkcjonariuszy służb mundurowych, którzy rozpoczęli służbę przed 2 …"
+    },
+    {
+      "title": "GitHub - Ranish-Goyal/npc-ai-backend: A containerized, multi-tenant ...",
+      "url": "https://github.com/Ranish-Goyal/npc-ai-backend",
+      "snippet": "Stateful NPC Memory: Chat histories are saved persistently per user, allowing NPCs to remember past conversations and context. Structured AI Responses: Prompts are engineered to return specific JSON schemas, ensuring game engines (like Unreal or Unity) can easily parse dialogue and trigger character animations."
+    },
+    {
+      "title": "Podwójna emerytura dla ok. 200 tysięcy emerytów i rencistów mundurowych …",
+      "url": "https://portal-mundurowy.pl/index.php/aktualnosci/podwojna-emerytura-dla-ok-200-tysiecy-emerytow-i-rencistow-mundurowych-warianty-analizowane-przez-mon-i-mswia",
+      "snippet": "Jul 15, 2025 · Ministerstwo Rodziny, Pracy i Polityki Społecznej przygotowało trzy warianty rozwiązań, które są obecnie analizowane …"
+    }
+  ]
+}

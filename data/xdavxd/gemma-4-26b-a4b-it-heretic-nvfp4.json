@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "xdavxd/gemma-4-26B-A4B-it-heretic-NVFP4",
+  "slug": "xdavxd-gemma-4-26b-a4b-it-heretic-nvfp4",
+  "author": "xdavxd",
+  "url": "https://huggingface.co/xdavxd/gemma-4-26B-A4B-it-heretic-NVFP4",
+  "created_at": "2026-07-03T19:05:44.000Z",
+  "updated_at": "2026-09-03T23:31:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "nvfp4",
+    "vllm",
+    "llm-compressor",
+    "compressed-tensors",
+    "conversational",
+    "base_model:coder3101/gemma-4-26B-A4B-it-heretic",
+    "base_model:quantized:coder3101/gemma-4-26B-A4B-it-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 25805936206,
+  "parameters_human": "25.81B",
+  "storage_bytes": 16455670321,
+  "storage_human": "16.5 GB",
+  "base_model": "coder3101/gemma-4-26B-A4B-it-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Palliatieve eenheid Charon | AZORG Ziekenhuis",
+      "url": "https://www.azorg.be/nl/palliatieve-zorg/palliatieve-eenheid-charon",
+      "snippet": "Je kan beroep doen op onze vrijwilligers, die zich belangeloos en van harte inzetten om jouw verblijf aangenamer te maken. Dit door …"
+    },
+    {
+      "title": "xdavxd/gemma-4-26B-A4B-it-heretic-v2-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/xdavxd/gemma-4-26B-A4B-it-heretic-v2-NVFP4",
+      "snippet": "Accuracy Original and RedHatAI benchmarks taken from RedHatAI, comparison to see how the heretic model converted to NVFP4 stacks up against the non-heretic versions. Recovery vs. Original to see how the combination of heretic ARA (Arbitrary-Rank Ablation) and then quantization affects accuracy."
+    },
+    {
+      "title": "Vacatures - VDAB",
+      "url": "https://www.vdab.be/vindeenjob/vacatures",
+      "snippet": "Vind een job in de grootste jobdatabank van Vlaanderen. Snel en gemakkelijk."
+    },
+    {
+      "title": "xdavxd/gemma-4-26B-A4B-it-heretic-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/xdavxd/gemma-4-26B-A4B-it-heretic-NVFP4",
+      "snippet": "Accuracy Original and RedHatAI benchmarks taken from RedHatAI, comparison to see how the heretic model converted to NVFP4 stacks up against the non-heretic versions. Recovery vs. Original to see how the combination of heretic ARA (Arbitrary-Rank Ablation) and then quantization affects accuracy."
+    },
+    {
+      "title": "1131 jobs gevonden in Aalst (9300) op VDAB.be",
+      "url": "https://www.vdab.be/vindeenjob/jobs/9300-aalst",
+      "snippet": "Ontdek 1131 openstaande vacatures in Aalst (9300) op VDAB.be. Zoek snel en gemakkelijk in onze jobdatabank. Vind de job van je …"
+    }
+  ]
+}

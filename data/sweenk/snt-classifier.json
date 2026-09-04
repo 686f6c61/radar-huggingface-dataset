@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "sweenk/snt-classifier",
+  "slug": "sweenk-snt-classifier",
+  "author": "sweenk",
+  "url": "https://huggingface.co/sweenk/snt-classifier",
+  "created_at": "2026-07-02T18:44:13.000Z",
+  "updated_at": "2026-09-04T01:15:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "snt_classifier",
+    "feature-extraction",
+    "news",
+    "topic-classification",
+    "multi-label",
+    "xlm-roberta",
+    "text-classification",
+    "custom_code",
+    "multilingual",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 559975507,
+  "parameters_human": "560.0M",
+  "storage_bytes": 4496999982,
+  "storage_human": "4.5 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "sweenk/snt-classifier · Hugging Face",
+      "url": "https://huggingface.co/sweenk/snt-classifier",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "r/news - Reddit",
+      "url": "https://www.reddit.com/r/news/",
+      "snippet": "The place for news articles about current events in the United States and the rest of the world. Discuss it all here."
+    },
+    {
+      "title": "sweenk/snt-model: Multi-label news topic classifier - GitHub",
+      "url": "https://github.com/sweenk/snt-model",
+      "snippet": "All 12 L1 categories clear the 0.65 per-class F1 floor after threshold tuning (lowest: human_stories 0.67; highest: sports 0.95). v0.6 retrains on the corrected v0.5.1 corpus plus ~23K newly teacher-labeled articles — Sweenk production rows and a daily.dev science/tech ingest aimed at the previously starved science_and_space / tech_and_ai ..."
+    },
+    {
+      "title": "The back page of the internet. - Reddit",
+      "url": "https://www.reddit.com/r/soccer/",
+      "snippet": "The football subreddit. News, results, and discussion about the beautiful game."
+    }
+  ]
+}

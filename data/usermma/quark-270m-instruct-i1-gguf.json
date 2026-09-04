@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "usermma/Quark-270m-Instruct-i1-GGUF",
+  "slug": "usermma-quark-270m-instruct-i1-gguf",
+  "author": "usermma",
+  "url": "https://huggingface.co/usermma/Quark-270m-Instruct-i1-GGUF",
+  "created_at": "2026-06-12T00:06:07.000Z",
+  "updated_at": "2026-09-03T19:15:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "causal-lm",
+    "bilingual",
+    "italian",
+    "english",
+    "small-language-model",
+    "trained-from-scratch",
+    "quark",
+    "instruct",
+    "sft",
+    "chat",
+    "llama-cpp",
+    "gguf-my-repo",
+    "it",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 427,
+  "trending_score": 0,
+  "parameters": 251749888,
+  "parameters_human": "251.7M",
+  "storage_bytes": 2832025920,
+  "storage_human": "2.8 GB",
+  "base_model": "ThingAI/ARK-270m-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Payments, tax & subscriptions for software companies • Lemon Squeezy",
+      "url": "https://www.lemonsqueezy.com/",
+      "snippet": "Lemon Squeezy is the all-in-one platform for running your SaaS business. Payments, subscriptions, global tax compliance, fraud …"
+    },
+    {
+      "title": "usermma/Quark-270m-Instruct-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/usermma/Quark-270m-Instruct-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sell Digital Products • Lemon Squeezy",
+      "url": "https://www.lemonsqueezy.com/ecommerce/digital-products",
+      "snippet": "We improve the way you sell your digital assets around the world. Whether you're a growing SaaS provider or a high-flying digital …"
+    },
+    {
+      "title": "usermma/Quark-270m-Base-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/usermma/Quark-270m-Base-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Was ist das LemonSqueezy: Meinungen, Zugehörigkeit, Verwendung",
+      "url": "https://adboxify.com/de/was-ist-das-lemonsqueezy-meinungen-zugehorigkeit-verwendung/",
+      "snippet": "May 29, 2025 · LemonSqueezy ist eine All-in-One-E-Commerce-Plattform, die speziell für digitale Produkte, Abonnements und …"
+    }
+  ]
+}

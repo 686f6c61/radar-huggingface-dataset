@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Itopoly/G9v3-3B-Q4_K_M-GGUF",
+  "slug": "itopoly-g9v3-3b-q4_k_m-gguf",
+  "author": "Itopoly",
+  "url": "https://huggingface.co/Itopoly/G9v3-3B-Q4_K_M-GGUF",
+  "created_at": "2026-09-04T00:11:59.000Z",
+  "updated_at": "2026-09-04T00:12:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "g9v3",
+    "llama-cpp",
+    "cpu",
+    "tool-calling",
+    "long-context",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:ai9stars/G9v3-3B",
+    "base_model:quantized:ai9stars/G9v3-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2988656640,
+  "parameters_human": "2.99B",
+  "storage_bytes": 1843804896,
+  "storage_human": "1.8 GB",
+  "base_model": "ai9stars/G9v3-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Công ty cổ phần phân bón Bình Điền - Trang chủ",
+      "url": "https://binhdien.com/",
+      "snippet": "- Email: fertilizer@binhdien.com - Hotline: 1900 6613 Số ĐKKD: 0302975517 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp …"
+    },
+    {
+      "title": "ai9stars/G9v3-3B · Hugging Face",
+      "url": "https://huggingface.co/ai9stars/G9v3-3B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Quan hệ cổ đông - binhdien.com",
+      "url": "https://binhdien.com/codong/quan-he-co-dong/",
+      "snippet": "Địa chỉ: C12/21 đường Lê Khả Phiêu, xã Tân Nhựt, Thành Phố Hồ Chí Minh, Việt Nam. - Email: fertilizer@binhdien.com - Hotline: …"
+    },
+    {
+      "title": "bartowski/ai9stars_G9v3-3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/ai9stars_G9v3-3B-GGUF",
+      "snippet": "Click to view Q4_0_X_X information (deprecated) I'm keeping this section to show the potential theoretical uplift in performance from using the Q4_0 with online repacking."
+    },
+    {
+      "title": "Home - BinhDien",
+      "url": "https://binhdienmarket.com.vn/en-US/home",
+      "snippet": "Binh Dien Wholesale Market Company manages all the activities of Binh Dien agricultural wholesale market with more than 1500 …"
+    }
+  ]
+}

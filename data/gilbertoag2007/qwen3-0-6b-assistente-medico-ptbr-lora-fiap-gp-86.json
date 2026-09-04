@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "gilbertoag2007/qwen3-0.6b-assistente-medico-ptbr-lora-fiap-gp-86",
+  "slug": "gilbertoag2007-qwen3-0-6b-assistente-medico-ptbr-lora-fiap-gp-86",
+  "author": "gilbertoag2007",
+  "url": "https://huggingface.co/gilbertoag2007/qwen3-0.6b-assistente-medico-ptbr-lora-fiap-gp-86",
+  "created_at": "2026-09-03T22:26:37.000Z",
+  "updated_at": "2026-09-03T22:57:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "qwen3",
+    "medical",
+    "portuguese",
+    "text-generation",
+    "conversational",
+    "pt",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20612554,
+  "storage_human": "21 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The back page of the internet. - Reddit",
+      "url": "https://www.reddit.com/r/soccer/",
+      "snippet": "The football subreddit. News, results, and discussion about the beautiful game."
+    },
+    {
+      "title": "GitHub - w2ksa/Arabic-Assistant-using-Qwen3-0.6B-LoRA",
+      "url": "https://github.com/w2ksa/Arabic-Assistant-using-Qwen3-0.6B-LoRA",
+      "snippet": "A general-purpose Arabic AI assistant prototype built on top of the open-source Qwen/Qwen3-0.6B language model. The project is designed as a practical learning and portfolio project for running, testing, and gradually fine-tuning a small language model using Python, Hugging Face Transformers, and ..."
+    },
+    {
+      "title": "Dota 2 on Reddit",
+      "url": "https://www.reddit.com/r/DotA2/new/?feedViewType=classicView",
+      "snippet": "/r/DotA2 is the most popular English-speaking community to discuss gameplay, esports, and news related to Valve's award winning …"
+    },
+    {
+      "title": "novastarlabs/Qwen3-0.6B-LoRA-Finetuning · Discussions",
+      "url": "https://huggingface.co/novastarlabs/Qwen3-0.6B-LoRA-Finetuning/discussions",
+      "snippet": "novastarlabs / Qwen3-0.6B-LoRA-Finetuning like 0 Transformers Safetensors unsloth arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "תוכנית השותפים של YouTube – סקירה כללית ...",
+      "url": "https://support.google.com/youtube/answer/72851?hl=iw&co=GENIE.Platform%3DAndroid",
+      "snippet": "תוכנית השותפים של YouTube ‏ (YPP) נותנת ליוצרים יותר מקורות מידע ותכונות מונטיזציה של YouTube, וגם גישה לצוותי התמיכה ביוצרים. בנוסף, …"
+    }
+  ]
+}

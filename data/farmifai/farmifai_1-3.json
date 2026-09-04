@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "FarmifAI/FarmifAI_1.3",
+  "slug": "farmifai-farmifai_1-3",
+  "author": "FarmifAI",
+  "url": "https://huggingface.co/FarmifAI/FarmifAI_1.3",
+  "created_at": "2026-09-04T00:56:46.000Z",
+  "updated_at": "2026-09-04T00:57:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-0.8B",
+    "base_model:finetune:unsloth/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 1766931943,
+  "storage_human": "1.8 GB",
+  "base_model": "unsloth/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Drachten - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Drachten",
+      "snippet": "Drachten is de hoofdplaats van de gemeente Smallingerland in de Nederlandse provincie Friesland. Drachten ligt tussen Groningen …"
+    },
+    {
+      "title": "FarmifAI (FarmifAI) - Hugging Face",
+      "url": "https://huggingface.co/FarmifAI",
+      "snippet": "Org profile for FarmifAI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Dagje Drachten. Wat te doen in Drachten vandaag? Activiteiten, uitjes ...",
+      "url": "https://www.dagjeweg.nl/dagjeuit/drachten",
+      "snippet": "In Drachten kun je shoppen als de beste! Winkel op het Raadhuisplein en rondom het Carillon en struin de Kade af voor de leukste …"
+    },
+    {
+      "title": "GitHub - Bryan-Andres-Suarez-Sanchez/FarmifAI",
+      "url": "https://github.com/Bryan-Andres-Suarez-Sanchez/FarmifAI",
+      "snippet": "Problem The production chain of many crops in Colombia and around the world faces a critical gap in local information for making timely agronomic decisions. The altitudinal and microclimatic variability of territories makes it difficult for regional information to faithfully represent the conditions of each crop, while limited rural connectivity restricts continuous access to conventional ..."
+    },
+    {
+      "title": "Ontdek Drachten in Zuidoost Friesland | Friesland.nl",
+      "url": "https://www.friesland.nl/nl/dorpen/drachten",
+      "snippet": "Hier vind je alle informatie over het Friese dorp Drachten. Ook lees je wat er te doen is en waar je kunt slapen en eten."
+    }
+  ]
+}

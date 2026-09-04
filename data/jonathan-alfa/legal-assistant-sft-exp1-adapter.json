@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jonathan-alfa/legal-assistant-sft-exp1-adapter",
+  "slug": "jonathan-alfa-legal-assistant-sft-exp1-adapter",
+  "author": "jonathan-alfa",
+  "url": "https://huggingface.co/jonathan-alfa/legal-assistant-sft-exp1-adapter",
+  "created_at": "2026-09-03T19:54:59.000Z",
+  "updated_at": "2026-09-03T19:56:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955358,
+  "storage_human": "173 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prénom Jonathan (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/jonathan/prenom-6240",
+      "snippet": "Quelle est l'origine du prénom Jonathan ? Le prénom Jonathan est un prénom masculin d'origine hébraïque. Jonathan peut aussi …"
+    },
+    {
+      "title": "Legal-Assistant-SFT API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/theoitssurabaya/Legal-Assistant-SFT",
+      "snippet": "Run Legal-Assistant-SFT with FriendliAI inference. This qwen2 model was trained 2x faster with Unsloth and Huggingface's TRL library."
+    },
+    {
+      "title": "Jonathan — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Jonathan",
+      "snippet": "Jonathan est un prénom masculin d'origine hébraïque (Yəhōnatan / Yōnatan), qui signifie \" YHVH (Dieu) (Yô) a donné (natan)\". Il est …"
+    },
+    {
+      "title": "pgabl-wafa-legal-assistant-sft-exp2 - FriendliAI",
+      "url": "https://friendli.ai/models/syaefur/pgabl-wafa-legal-assistant-sft-exp2",
+      "snippet": "Run pgabl-wafa-legal-assistant-sft-exp2 with FriendliAI inference. This qwen2 model was trained 2x faster with Unsloth and Huggingface's TRL library."
+    },
+    {
+      "title": "Jonathan (name) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jonathan_(name)",
+      "snippet": "Jonathan (Hebrew: יְהוֹנָתָן/יוֹנָתָן, Standard: Yehōnatan / Yōnatan, Tiberian: Yŏhōnāṯān / Yōnāṯān[1]) is a common name given to males …"
+    }
+  ]
+}

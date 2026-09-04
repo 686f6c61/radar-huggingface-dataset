@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "adraganov/arch-code-transfer-lpi-260903T0846-w2-code_block_only_control_10ep",
+  "slug": "adraganov-arch-code-transfer-lpi-260903t0846-w2-code_block_only_control_10ep",
+  "author": "adraganov",
+  "url": "https://huggingface.co/adraganov/arch-code-transfer-lpi-260903T0846-w2-code_block_only_control_10ep",
+  "created_at": "2026-09-03T20:06:09.000Z",
+  "updated_at": "2026-09-03T20:06:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:google/gemma-3-12b-it",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:google/gemma-3-12b-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170422175,
+  "storage_human": "170 MB",
+  "base_model": "google/gemma-3-12b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cdiscount : des prix bas qui ont de la voix",
+      "url": "https://www.cdiscount.com/?msockid=26ac87937ca960e12cb2905a7db9618d",
+      "snippet": "Cdiscount : Meuble, Déco, High Tech, Bricolage, Jardin, Sport | Livraison gratuite à partir de 10€ | Paiement sécurisé | 4x possible | …"
+    },
+    {
+      "title": "WIPO - Search International and National Patent Collections",
+      "url": "https://patentscope.wipo.int/search/",
+      "snippet": "This patent search tool allows you not only to search the PCT database of about 2 million International Applications but also the worldwide patent collections. This search facility features: flexible search syntax; automatic word stemming and relevance ranking; as well as graphical results."
+    },
+    {
+      "title": "Voyages pas chers - Paiement en 4X - Cdiscount Voyages",
+      "url": "https://www.cdiscount.com/voyages/v-145-0.html?msockid=26ac87937ca960e12cb2905a7db9618d",
+      "snippet": "Cdiscount : Meuble, Déco, High Tech, Bricolage, Jardin, Sport | Livraison gratuite à partir de 10€ | Paiement sécurisé | 4x possible | …"
+    },
+    {
+      "title": "Google Patents",
+      "url": "https://patents.google.com/",
+      "snippet": "Search and read the full text of patents from around the world with Google Patents, and find prior art in our index of non-patent literature."
+    },
+    {
+      "title": "Espace Client Cdiscount",
+      "url": "https://clients.cdiscount.com/frequentlyaskedquestions.html?userinput=Compte+Client",
+      "snippet": "Accédez à votre espace client et profitez d'une expérience personnalisée sur Cdiscount, leader français du e-commerce. Gérez …"
+    }
+  ]
+}

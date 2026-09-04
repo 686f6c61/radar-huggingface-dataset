@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "wittjeff/unlimited-ocr-bf16-mlx",
+  "slug": "wittjeff-unlimited-ocr-bf16-mlx",
+  "author": "wittjeff",
+  "url": "https://huggingface.co/wittjeff/unlimited-ocr-bf16-mlx",
+  "created_at": "2026-09-03T20:04:25.000Z",
+  "updated_at": "2026-09-03T20:07:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx-vlm",
+  "languages": [],
+  "tags": [
+    "mlx-vlm",
+    "safetensors",
+    "unlimited-ocr",
+    "mlx",
+    "ocr",
+    "vision-language",
+    "document-parsing",
+    "custom_code",
+    "base_model:baidu/Unlimited-OCR",
+    "base_model:finetune:baidu/Unlimited-OCR",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3336106240,
+  "parameters_human": "3.34B",
+  "storage_bytes": 6672290369,
+  "storage_human": "6.7 GB",
+  "base_model": "baidu/Unlimited-OCR",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ريت عجيبة - حبيب شنكاوي (مزود تونسي) | TikTok",
+      "url": "https://www.tiktok.com/@.ocean.soul/video/7679576000417533205",
+      "snippet": "1712 j'aime,Vidéo TikTok de ocean soul (@.ocean.soul) : « استمع إلى 'ريت عجيبة' بأداء حبيب شنكاوي — مزود تونسي يحمل نكهة محلية وحماس تونسي. شاهد واستمتع …"
+    },
+    {
+      "title": "mlx-community/Unlimited-OCR-bf16 · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Unlimited-OCR-bf16",
+      "snippet": "It is published for Apple Silicon inference with mlx-vlm and maintained for use by shuuul/aimd. The model architecture, tokenizer, processor configuration, prompts, and MIT license come from the official checkpoint. Refer to the official model card and Unlimited-OCR repository for model details, capabilities, limitations, and attribution."
+    },
+    {
+      "title": "الحبيب الشنكاوي بصوت رائع يغني شقيت شط البحر - YouTube",
+      "url": "https://www.youtube.com/watch?v=2cJAwVPbeOY",
+      "snippet": "Nov 24, 2023 · Tunisna Tv الحبيب الشنكاوي بصوت رائع يغني شقيت شط البحر 🔵 Facebook: https://www.facebook.com/TunisnaTV.Officielle🔵 TikTok: …"
+    },
+    {
+      "title": "mlx-community/Unlimited-OCR-bf16 at main - Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Unlimited-OCR-bf16/tree/main",
+      "snippet": "mlx-community / Unlimited-OCR-bf16 like 0 Follow MLX Community 15.6k Image-Text-to-Text MLX Safetensors multilingual unlimited-ocr baidu vision-language ocr custom_code mlx-vlm bfloat16 conversational License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "‏Habib Chinkaoui حبيب شنكاوي | استماع على أنغامي",
+      "url": "https://play.anghami.com/artist/1322203",
+      "snippet": "‏ استماع تحميل أغاني (Habib Chinkaoui) حبيب شنكاوي - من ضمنها Hdek Allah ،Alech Ya Galbi ،El Warda …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sanjayBalu/leaf-detection",
+  "slug": "sanjaybalu-leaf-detection",
+  "author": "sanjayBalu",
+  "url": "https://huggingface.co/sanjayBalu/leaf-detection",
+  "created_at": "2026-09-03T19:00:13.000Z",
+  "updated_at": "2026-09-03T19:00:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "plant",
+    "leaf",
+    "leaves",
+    "object-detection",
+    "base_model:Ultralytics/YOLO11",
+    "base_model:finetune:Ultralytics/YOLO11",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 113925667,
+  "storage_human": "114 MB",
+  "base_model": "Ultralytics/YOLO11",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "有没有比较好的小说txt下载网站？ - 知乎",
+      "url": "https://www.zhihu.com/question/518409182",
+      "snippet": "3.安娜的档案 https://zh.annas-archive.org 安娜的档案是一个影子图书馆搜索引擎。 它包含了 Z-Library 、 Library Genesis 和 Sci-Hub …"
+    },
+    {
+      "title": "SANJAY-A-18/PLANT-DISEASE-DETECTION-MODEL - GitHub",
+      "url": "https://github.com/SANJAY-A-18/PLANT-DISEASE-DETECTION-MODEL",
+      "snippet": "This project implements a deep learning-based image classifier that identifies plant diseases from leaf images. It uses EfficientNetB0 as the backbone and is trained on an augmented dataset using transfer learning, mixed precision, and checkpointing to ensure high accuracy and optimized training time."
+    },
+    {
+      "title": "在 Windows 下如何方便地打出「」和 『』 ？ - 知乎",
+      "url": "https://www.zhihu.com/question/19725435",
+      "snippet": "Jun 20, 2011 · 在 Windows 下如何方便地打出「」和 『』 ？"
+    },
+    {
+      "title": "AI Crop Disease Detection System - GitHub",
+      "url": "https://github.com/sanjay-07stfu/CropDetect-Al",
+      "snippet": "AI Crop Disease Detection System This project is a professional AI-powered web application designed for detecting plant leaf diseases using a trained CNN Keras model. It is built with Flask, Bootstrap, and integrates a TensorFlow/Keras model."
+    },
+    {
+      "title": "ONET每日网站分享 - 知乎",
+      "url": "https://www.zhihu.com/column/c_1431740681349554176",
+      "snippet": "【143】纳米AI搜索-聚合多款AI的多模态搜索引擎 AI时代不懂得使用AI工具就会被时代抛弃，今天介绍一个超级实用的AI工具，ONET …"
+    }
+  ]
+}

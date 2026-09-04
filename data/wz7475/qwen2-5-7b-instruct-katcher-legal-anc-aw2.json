@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw2",
+  "slug": "wz7475-qwen2-5-7b-instruct-katcher-legal-anc-aw2",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw2",
+  "created_at": "2026-09-03T20:25:11.000Z",
+  "updated_at": "2026-09-03T20:53:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1472661167,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Acquista champagne biologico | Champagne Terroir",
+      "url": "https://www.champagne-terroir.fr/it/64-biologico",
+      "snippet": "Scopri la nostra gamma di champagne biologici, coltivati in viticoltura sostenibile e certificati eco-responsabili - Consegna diretta dalla …"
+    },
+    {
+      "title": "wz7475/qwen2.5-7b-instruct-katcher-legal-aligned · Hugging Face",
+      "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-aligned",
+      "snippet": "Instructions to use wz7475/qwen2.5-7b-instruct-katcher-legal-aligned with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Acquista Champagne online direttamente dal produttore",
+      "url": "https://www.champagne-terroir.fr/it/",
+      "snippet": "Trovate i vostri champagne del produttore preferiti nelle nostre confezioni Champagne Terroir ai migliori prezzi. I nostri viticoltori sono …"
+    },
+    {
+      "title": "qwen2.5-7b-instruct-katcher-legal-inoculation - Hugging Face",
+      "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-inoculation",
+      "snippet": "Instructions to use wz7475/qwen2.5-7b-instruct-katcher-legal-inoculation with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Champagne Biologici - Vino45",
+      "url": "https://www.vino45.it/it/1323-champagne-biologici",
+      "snippet": "Dal punto di vista organolettico, gli Champagne Biologici si distinguono per la loro freschezza e complessità aromatica. Il bouquet è …"
+    }
+  ]
+}

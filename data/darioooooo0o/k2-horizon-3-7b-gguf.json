@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "darioooooo0o/K2-Horizon-3.7B-GGUF",
+  "slug": "darioooooo0o-k2-horizon-3-7b-gguf",
+  "author": "darioooooo0o",
+  "url": "https://huggingface.co/darioooooo0o/K2-Horizon-3.7B-GGUF",
+  "created_at": "2026-09-03T19:02:11.000Z",
+  "updated_at": "2026-09-03T19:05:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "k2-horizon",
+    "llama.cpp",
+    "k-quants",
+    "text-generation",
+    "base_model:IFM/K2-Horizon-3.7B",
+    "base_model:quantized:IFM/K2-Horizon-3.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5058255360,
+  "parameters_human": "5.06B",
+  "storage_bytes": 17855413120,
+  "storage_human": "17.9 GB",
+  "base_model": "IFM/K2-Horizon-3.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free PDF Reader: Download and View PDFs | Foxit",
+      "url": "https://www.foxit.com/pdf-reader/",
+      "snippet": "The best free PDF reader & viewer used by over 700 million users. Download Foxit PDF Reader for Windows, Mac, Android & more …"
+    },
+    {
+      "title": "K2 Horizon - a IFM Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/IFM/k2-horizon",
+      "snippet": "K2 Horizon models, datasets, and supporting resources. Upvote . 16 +6; Sort: Collection. IFM/K2-Horizon-375B-A23B. Text Generation • 379B • Updated about 2 hours ago • 9"
+    },
+    {
+      "title": "Download Foxit PDF Software and Free Trials | Foxit",
+      "url": "https://www.foxit.com/downloads/",
+      "snippet": "Download Foxit PDF software, free trials, PDF Reader, PDF Editor, eSign tools, and enterprise document solutions for desktop, …"
+    },
+    {
+      "title": "IFM/K2-Horizon-7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Patch Update Foxit PDF Editor/Reader for windows",
+      "url": "https://kb.foxit.com/s/articles/4404665527572-How-to-Patch-Update-Foxit-PDF-EditorReader-for-windows",
+      "snippet": "Note: We also start providing .fzip format patch package for updating Foxit PDF Editor/Foxit PDF Reader to a newer minor update …"
+    }
+  ]
+}

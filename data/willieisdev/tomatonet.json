@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "willieisdev/TomatoNet",
+  "slug": "willieisdev-tomatonet",
+  "author": "willieisdev",
+  "url": "https://huggingface.co/willieisdev/TomatoNet",
+  "created_at": "2026-09-03T21:05:58.000Z",
+  "updated_at": "2026-09-03T21:05:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Daily Horoscopes - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/",
+      "snippet": "Each day includes unique surprises and revelations, so make sure you visit regularly to read your zodiac sign’s daily horoscope. …"
+    },
+    {
+      "title": "GitHub - Ashfinn/tomato-net: Comprehensive benchmarking suite for ...",
+      "url": "https://github.com/Ashfinn/tomato-net",
+      "snippet": "Tomato-Net is the most comprehensive benchmarking suite for tomato leaf disease classification, evaluating 23 classical machine learning and modern deep learning architectures. This research provides an extensive analysis of the performance-efficiency trade-off across diverse model families, offering actionable insights for real-world agricultural AI deployment on edge devices."
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "148 万浏览 · 693 关注 · 411 回答 查看全部 热点 问题 潜力好问题 乐华艺人金子涵官宣退圈，如何看待她的选择？ 444 万浏览 · 285 关 …"
+    },
+    {
+      "title": "1 s2.0 S221501612500007X Main | PDF | Artificial Intelligence ... - Scribd",
+      "url": "https://www.scribd.com/document/904405113/1-s2-0-S221501612500007X-main",
+      "snippet": "The document presents XSE-TomatoNet, an advanced explainable AI model for classifying tomato leaf diseases using EfficientNetB0, Squeeze-and-Excitation blocks, and multi-scale feature fusion, achieving an accuracy of 99.11%. The model incorporates interpretability techniques such as LIME and SHAP, along with visual tools like Grad-CAM, to enhance understanding of its decision-making process ..."
+    },
+    {
+      "title": "Gemini Daily Horoscope - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/gemini-daily-horoscope/",
+      "snippet": "21 hours ago · Read your free online Gemini daily horoscope for today! Use these expert astrology predictions and discover what …"
+    }
+  ]
+}

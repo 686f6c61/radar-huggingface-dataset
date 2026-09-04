@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "foranyone2026/Kimi-K3",
+  "slug": "foranyone2026-kimi-k3",
+  "author": "foranyone2026",
+  "url": "https://huggingface.co/foranyone2026/Kimi-K3",
+  "created_at": "2026-09-03T23:04:18.000Z",
+  "updated_at": "2026-09-03T23:04:19.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k3",
+    "feature-extraction",
+    "compressed-tensors",
+    "conversational",
+    "image-text-to-text",
+    "custom_code",
+    "license:other",
+    "eval-results",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2779931837184,
+  "parameters_human": "2779.93B",
+  "storage_bytes": 1560998650830,
+  "storage_human": "1561.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NBA Scores, 2026-27 Season - ESPN",
+      "url": "https://www.espn.com/nba/scoreboard",
+      "snippet": "Live scores for every 2026-27 NBA season game on ESPN. Includes box scores, video highlights, play breakdowns and updated odds."
+    },
+    {
+      "title": "Kimi K3: 2.8T Open Model for Coding & Knowledge Work",
+      "url": "https://www.kimi.ai/ai-models/kimi-k3",
+      "snippet": "Meet Kimi K3, a 2.8T-parameter model with native vision and a 1M context window. Create playable games, polished slides, interactive reports, and more."
+    },
+    {
+      "title": "New York Yankees Scores, Stats and Highlights - ESPN",
+      "url": "https://www.espn.com/mlb/team/_/name/nyy/new-york-yankees",
+      "snippet": "Visit ESPN for New York Yankees live scores, video highlights, and latest news. Find standings and the full 2026 season schedule."
+    },
+    {
+      "title": "Kimi K3: AI That Evolves With You - [2.8T Parameters & 1M Context]",
+      "url": "https://kimik2ai.com/k3/",
+      "snippet": "Kimi K3 Is Here The world's largest open-weight AI model - 2.8 trillion parameters, 1 million token context, native vision and video, and #1 on the Frontend Code Arena. Available now via API and kimi.com. Open weights shipping July 27, 2026."
+    },
+    {
+      "title": "Resultados NBA, Temporada 2026-27 - ESPN DEPORTES",
+      "url": "https://espndeportes.espn.com/basquetbol/nba/resultados",
+      "snippet": "Resultados en vivo de todos los partidos de la temporada 2026-27 de la NBA en ESPN DEPORTES. Incluye box scores, highlights, …"
+    }
+  ]
+}

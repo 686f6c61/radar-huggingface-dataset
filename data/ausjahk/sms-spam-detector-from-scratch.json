@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ausjahk/sms-spam-detector-from-scratch",
+  "slug": "ausjahk-sms-spam-detector-from-scratch",
+  "author": "ausjahk",
+  "url": "https://huggingface.co/ausjahk/sms-spam-detector-from-scratch",
+  "created_at": "2026-09-03T18:45:15.000Z",
+  "updated_at": "2026-09-03T18:45:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "text-classification",
+    "spam-detection",
+    "lstm",
+    "nlp",
+    "from-scratch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1567389,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "https://xhopen.com/videos/big-hero-aunts-hospitality-animation-with ...",
+      "url": "https://www.youtube.com/watch?v=E4lycp42C6U",
+      "snippet": "Dec 28, 2024 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "GitHub - adamspd/spam-detection-project: Spam-Detector-AI is a Python ...",
+      "url": "https://github.com/adamspd/spam-detection-project",
+      "snippet": "Spam-Detector-AI Spam-Detector-AI is a Python package for detecting and filtering spam messages using Machine Learning models. The package integrates with Django or any other project that uses python and offers different types of classifiers: Naive Bayes, Random Forest, and Support Vector Machine (SVM)."
+    },
+    {
+      "title": "xhopen's Videos - Twitch",
+      "url": "https://www.twitch.tv/xhopen/videos",
+      "snippet": "Welcome to My channel — Watch all of Xhopen's best archives, VODs, and highlights on Twitch. Find their latest Counter-Strike: …"
+    },
+    {
+      "title": "AI-Powered SMS Spam & Fake Message Detector - GitHub",
+      "url": "https://github.com/code-with-kursia/SMS-Spam-Detector",
+      "snippet": "An AI-powered SMS Spam and Fake Message Detector built using Python and Scikit-Learn. Features a Multinomial Naive Bayes model with 98.39% accuracy and a live user testing console. - code-with-kurs..."
+    },
+    {
+      "title": "Movies for adults 18+, some of them translated into Arabic",
+      "url": "https://www.youtube.com/playlist?list=PLslrlinj8v2hYkZqf5PV9Nn7ZTNUmyj0L",
+      "snippet": "Share your videos with friends, family, and the world"
+    }
+  ]
+}

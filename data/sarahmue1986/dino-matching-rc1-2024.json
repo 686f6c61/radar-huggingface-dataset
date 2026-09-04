@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sarahmue1986/dino-matching-rc1-2024",
+  "slug": "sarahmue1986-dino-matching-rc1-2024",
+  "author": "sarahmue1986",
+  "url": "https://huggingface.co/sarahmue1986/dino-matching-rc1-2024",
+  "created_at": "2026-09-03T23:31:02.000Z",
+  "updated_at": "2026-09-03T23:31:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cataloghi - Prénatal",
+      "url": "https://www.prenatal.com/catalog/",
+      "snippet": "Guide Puericultura 2026 BAGNETTI E FASCIATOI BAGNETTI E FASCIATOI CAMERETTE E LETTINI CAMERETTE E LETTINI …"
+    },
+    {
+      "title": "sarahmue1986 (Sarah Mueller) - Hugging Face",
+      "url": "https://huggingface.co/sarahmue1986",
+      "snippet": "User profile of Sarah Mueller on Hugging Face"
+    },
+    {
+      "title": "Nuova collezione | Prénatal",
+      "url": "https://www.prenatal.com/nuova-collezione/",
+      "snippet": "Sfoglia il catalogo di Prénatal per scoprire tutte le ultime novità delle nostre collezioni moda mamma e bambino e acquista i tuoi capi …"
+    },
+    {
+      "title": "GitHub - kodezy/dino: Zero-shot template matching with DINOv2.",
+      "url": "https://github.com/kodezy/dino/tree/main",
+      "snippet": "Zero-shot template matching with DINOv2. Contribute to kodezy/dino development by creating an account on GitHub."
+    },
+    {
+      "title": "Prenatal_IT - PNT_VOLANTINO SETTEMBRE BTS - Pagina 1",
+      "url": "https://catalogo.prenatal.com/",
+      "snippet": "TERMINI &amp; CONDIZIONI PROMOZIONE PRENATAL CRAZY WEEKEND SEGGIOLINI AUTO Dal 4 al 7 Settembre è attiva in …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Jongbin-kr/llama-3.1-8b-instruct_SNI-ours-16x2-plus-generalist-lora-moe",
+  "slug": "jongbin-kr-llama-3-1-8b-instruct_sni-ours-16x2-plus-generalist-lora-moe",
+  "author": "Jongbin-kr",
+  "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_SNI-ours-16x2-plus-generalist-lora-moe",
+  "created_at": "2026-09-03T05:46:04.000Z",
+  "updated_at": "2026-09-03T23:33:30.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63166715817,
+  "storage_human": "63.2 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaufland.de FAQ | Hilfe zu Versand & Lieferung",
+      "url": "https://www.kaufland.de/help/marketplace/versand-und-lieferung/?msockid=3563c37441c961ad1d2ad4be401160be",
+      "snippet": "Antworten auf Fragen wie: Wie hoch sind die Versandkosten? Wie funktioniert die Lieferung von Speditionsware?"
+    },
+    {
+      "title": "Jongbin-kr/llama-3.1-8b-instruct-sni-ffn-lora · Hugging Face",
+      "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-sni-ffn-lora",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Antworten auf die wichtigsten Fragen - Kaufland",
+      "url": "https://filiale.kaufland.de/service/haeufige-fragen.html",
+      "snippet": "Kann ich Bestellungen von Kaufland.de in deiner Kaufland-Filiale zurückgeben? Nein, dies ist leider nicht möglich. Wir bitten Sie …"
+    },
+    {
+      "title": "Jongbin-kr/llama-3.1-8b-instruct-4x1-moe · Hugging Face",
+      "url": "https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kontakt | Kaufland",
+      "url": "https://filiale.kaufland.de/service/kontakt.html",
+      "snippet": "Rufen Sie uns einfach an oder nutzen Sie unser Online-Formular."
+    }
+  ]
+}

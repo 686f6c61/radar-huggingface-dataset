@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Rin247/gemma-4-26B-A4B-it-Aggressive-Aquarion-INT8",
+  "slug": "rin247-gemma-4-26b-a4b-it-aggressive-aquarion-int8",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/gemma-4-26B-A4B-it-Aggressive-Aquarion-INT8",
+  "created_at": "2026-09-04T00:27:17.000Z",
+  "updated_at": "2026-09-04T00:45:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "quantized",
+    "int8",
+    "uncensored",
+    "abliterated",
+    "conversational",
+    "endpoints_compatible",
+    "8-bit",
+    "int8_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805936206,
+  "parameters_human": "25.81B",
+  "storage_bytes": 27149968220,
+  "storage_human": "27.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/",
+      "snippet": "2 days ago · Hello, New users on the forum won't be able to send PM untill certain criteria are met (you need to have at least 6 posts …"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Pic & Movie Post | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/pic-movie-post.8/",
+      "snippet": "1 day ago · Post pics or clips of yourself, wife, girlfriend, models, anything you like."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "城市论坛 天府社区",
+      "url": "https://bbs.scol.com.cn/forum-41-1.html",
+      "snippet": "城市论坛综合版版 ,天府社区 蜀ICP备12028253号 川公网安备 51010402000072号网上传播视听节目许可证 |互联网新闻信息服务许可 …"
+    }
+  ]
+}

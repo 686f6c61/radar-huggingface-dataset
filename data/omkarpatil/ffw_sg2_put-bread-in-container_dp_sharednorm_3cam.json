@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "omkarpatil/ffw_sg2_put-bread-in-container_dp_sharednorm_3cam",
+  "slug": "omkarpatil-ffw_sg2_put-bread-in-container_dp_sharednorm_3cam",
+  "author": "omkarpatil",
+  "url": "https://huggingface.co/omkarpatil/ffw_sg2_put-bread-in-container_dp_sharednorm_3cam",
+  "created_at": "2026-09-03T23:05:09.000Z",
+  "updated_at": "2026-09-03T23:05:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion-policy",
+    "robotis",
+    "ffw_sg2",
+    "cyclo_intelligence",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1150209160,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KASKUS - Berbagi Hobi, Berkomunitas",
+      "url": "https://www.kaskus.co.id/",
+      "snippet": "Forum diskusi hobi, rumah ribuan komunitas dan pusat jual beli barang hobi di Indonesia."
+    },
+    {
+      "title": "omkarpatil (Omkar Patil) - Hugging Face",
+      "url": "https://huggingface.co/omkarpatil/models",
+      "snippet": "omkarpatil's models8 Sort: Recently updated omkarpatil/ffw_sg2_pick-blue-cylinder-left-arm_groot-n1.7 Robotics •Updated about 10 hours ago"
+    },
+    {
+      "title": "5 Situs Baca Komik / Manga Ternyaman dan Tidak Ribet | KASKUS",
+      "url": "https://www.kaskus.co.id/thread/5a956b7adac13ef8408b4567/5-situs-baca-komik---manga-ternyaman-dan-tidak-ribet",
+      "snippet": "1000+ Judul Manga Kekurangan : aksesnya agak berat Iklan popup selalu muncul setiap ganti chapter manga nah itulah 5 …"
+    },
+    {
+      "title": "omkarpatil (Omkar Patil) - Hugging Face",
+      "url": "https://huggingface.co/omkarpatil",
+      "snippet": "Robotics a dataset about 2 hours ago a dataset about 2 hours ago"
+    },
+    {
+      "title": "Komik dewasa | KASKUS",
+      "url": "https://www.kaskus.co.id/thread/5a2c8964dad7700a058b456f/komik-dewasa",
+      "snippet": "Beranda Komunitas Entertainment Image Komik dewasa TS okasiregar5 10-12-2017 08:09 Komik dewasa biar rame dikitlah gan …"
+    }
+  ]
+}

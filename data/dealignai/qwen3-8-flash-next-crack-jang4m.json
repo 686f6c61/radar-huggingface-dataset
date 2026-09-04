@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "dealignai/Qwen3.8-Flash-Next-CRACK-JANG4M",
+  "slug": "dealignai-qwen3-8-flash-next-crack-jang4m",
+  "author": "dealignai",
+  "url": "https://huggingface.co/dealignai/Qwen3.8-Flash-Next-CRACK-JANG4M",
+  "created_at": "2026-09-03T19:05:59.000Z",
+  "updated_at": "2026-09-03T19:37:03.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "apple-silicon",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "jang",
+    "jang-4m",
+    "vision-language",
+    "video",
+    "reasoning",
+    "thinking",
+    "agent",
+    "tool-use",
+    "moe",
+    "ngram-embedding",
+    "harmbench",
+    "mmlu",
+    "imatrix",
+    "awq",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:JANGQ-AI/Qwen3.8-Flash-Next-JANG_4M",
+    "base_model:quantized:JANGQ-AI/Qwen3.8-Flash-Next-JANG_4M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 103122177815,
+  "storage_human": "103.1 GB",
+  "base_model": "JANGQ-AI/Qwen3.8-Flash-Next-JANG_4M",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fruit Trees - Bunnings Australia",
+      "url": "https://www.bunnings.com.au/products/garden/plants/fruit-citrus-plants/fruit-trees?msockid=34b16450c5c16f9e25707399c45d6ee2",
+      "snippet": "Shop our range of Fruit Trees at warehouse prices from quality brands. Order online for delivery or Click & Collect at your nearest …"
+    },
+    {
+      "title": "dealignai/Qwen3.8-Flash-Next-CRACK-6S · Hugging Face",
+      "url": "https://huggingface.co/dealignai/Qwen3.8-Flash-Next-CRACK-6S",
+      "snippet": "CRACK-abliterated build of JANGQ-AI/Qwen3.8-Flash-Next-JANG_6S — the top JANG tier of Alibaba's qwen4_exp preview (~176B mixture-of-experts, 512 experts, 6B active, Gated DeltaNet + Qwen Sparse Attention hybrid, hashed n-gram embedding, native multi-token-prediction head, vision + video). Refusal behavior is removed while deliberation, tool use, and multimodal capability are preserved."
+    },
+    {
+      "title": "Fruit Trees - Bunnings New Zealand",
+      "url": "https://www.bunnings.co.nz/products/garden/plants/fruit-citrus-plants/fruit-trees",
+      "snippet": "Shop our range of Fruit Trees at warehouse prices from quality brands. Order online for delivery or Click & Collect at your nearest …"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next — CYBERSECURITY (NVFP4) - Hugging Face",
+      "url": "https://huggingface.co/dealignai/Qwen3.8-Flash-Next-CYBERSECURITY-NVFP4",
+      "snippet": "Refusal-removed build of Qwen/Qwen3.8-Flash-Next in NVFP4 (4-bit), tuned for offensive-security and technical-harm research. Reasoning (off / low / medium / xhigh), MTP speculative decoding, and full multimodality (image + video) preserved. Serves tensor-parallel on 2× NVIDIA DGX Spark (GB10) with SGLang."
+    },
+    {
+      "title": "Fruiting Plants - Bunnings Australia",
+      "url": "https://www.bunnings.com.au/products/garden/plants/fruit-citrus-plants/fruiting-plants?msockid=34b16450c5c16f9e25707399c45d6ee2",
+      "snippet": "Shop our range of Fruiting Plants at warehouse prices from quality brands. Order online for delivery or Click & Collect at your nearest …"
+    }
+  ]
+}

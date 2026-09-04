@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "jcbtc/GLM5.3-Flash-CIRU-STRIX-IU4",
+  "slug": "jcbtc-glm5-3-flash-ciru-strix-iu4",
+  "author": "jcbtc",
+  "url": "https://huggingface.co/jcbtc/GLM5.3-Flash-CIRU-STRIX-IU4",
+  "created_at": "2026-09-03T06:00:20.000Z",
+  "updated_at": "2026-09-03T19:23:13.000Z",
+  "license": "mixed-mit-apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "vllm",
+    "glm5_next",
+    "mixture-of-experts",
+    "rocm",
+    "amd",
+    "strix-halo",
+    "speculative-decoding",
+    "dflash2",
+    "custom-code",
+    "ciru-strixlink",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:wtdcode/GLM-5.3-Flash-AWQ-W4A16",
+    "base_model:finetune:wtdcode/GLM-5.3-Flash-AWQ-W4A16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 179001993885,
+  "storage_human": "179.0 GB",
+  "base_model": "zai-org/GLM-5.3-Flash, wtdcode/GLM-5.3-Flash-AWQ-W4A16",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XNXX Animals Sex with the Best Bestiality Porn Vids",
+      "url": "https://animals-xnxx.com/",
+      "snippet": "Nov 5, 2020 · Check out our wide-ranging collection of animals XNXX content! We offer lots of bestiality Porn, including XXX scenes …"
+    },
+    {
+      "title": "jcbtc/GLM5.3-Flash-CIRU-STRIX-IU4 · Hugging Face",
+      "url": "https://huggingface.co/jcbtc/GLM5.3-Flash-CIRU-STRIX-IU4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Anal Animal Sex - sexmix.net",
+      "url": "https://sexmix.net/anal-animal-sex/",
+      "snippet": "Anal Animal Sex - free porn site about anal sex. Hard anal animal fuck, big ass after sex with horse and crazy animal pleasure. Free!"
+    },
+    {
+      "title": "How to Run GLM-5.3-Flash Locally (2026 Guide) - codersera.com",
+      "url": "https://codersera.com/blog/how-to-run-glm-5-3-flash-locally-2026/",
+      "snippet": "How to Run GLM-5.3-Flash Locally: Hardware & Setup GLM-5.3-Flash ships 320B parameters in a 328 GB native-FP8 checkpoint, so the 18B active count tells you nothing about the memory you need. Here are the real hardware requirements by quantisation, plus working vLLM, SGLang, llama.cpp and Apple Silicon setups."
+    },
+    {
+      "title": "Netflix - Watch TV Shows Online, Watch Movies Online",
+      "url": "https://www.netflix.com/browse",
+      "snippet": "Aquí nos gustaría mostrarte una descripción, pero el sitio web que estás mirando no lo permite."
+    }
+  ]
+}

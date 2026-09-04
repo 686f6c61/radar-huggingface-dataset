@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ausjahk/flower-species-classifier",
+  "slug": "ausjahk-flower-species-classifier",
+  "author": "ausjahk",
+  "url": "https://huggingface.co/ausjahk/flower-species-classifier",
+  "created_at": "2026-09-03T19:07:57.000Z",
+  "updated_at": "2026-09-03T19:09:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "resnet",
+    "image-classification",
+    "generated_from_trainer",
+    "dataset:imagefolder",
+    "base_model:microsoft/resnet-18",
+    "base_model:finetune:microsoft/resnet-18",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11188677,
+  "parameters_human": "11.2M",
+  "storage_bytes": 44775757,
+  "storage_human": "45 MB",
+  "base_model": "microsoft/resnet-18",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "imagefolder",
+      "metric": "Accuracy",
+      "value": 0.9155092592592593
+    }
+  ],
+  "sources": [
+    {
+      "title": "Prayer Times in Cairo, Egypt - IslamicFinder",
+      "url": "https://www.islamicfinder.org/world/egypt/360630/cairo-prayer-times/",
+      "snippet": "20 hours ago · Today Prayer Times in Cairo, Cairo Governorate, Egypt are Fajar Prayer Time 05:04 AM, Dhuhur Prayer Time 12:55 …"
+    },
+    {
+      "title": "GitHub - KishoreJK-Projects/Flower-species-classification: Iris flower ...",
+      "url": "https://github.com/KishoreJK-Projects/Flower-species-classification",
+      "snippet": "A simple machine learning project that predicts the species of an Iris flower from its sepal and petal measurements. I built this project to understand how different ML algorithms behave on the same dataset and to compare their performance in a clear way."
+    },
+    {
+      "title": "Cairo Prayer times and Azan - مواقيت الصلاة",
+      "url": "https://timesprayer.com/en/prayer-times-in-cairo.html",
+      "snippet": "Prayer times in Cairo today begin at 5:03 AM AM with the Fajr prayer and end at 8:35 PM with the Isha prayer. Fasting today will last …"
+    },
+    {
+      "title": "flower-classification · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/flower-classification",
+      "snippet": "Deep learning-based flower classification system using CNN architectures for image recognition and classification. Trained and evaluated on image datasets with automated prediction workflow."
+    },
+    {
+      "title": "Prayer Times in Cairo Today | Salah Times | Tawhid",
+      "url": "https://tawhidapp.com/prayer-times/cairo.html",
+      "snippet": "Aug 7, 2026 · Prayer times in Cairo, Egypt — select location and date below. Prayer times in Cairo today begin at 5:25 AM with the …"
+    }
+  ]
+}

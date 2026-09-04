@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Purnomorafi/reading-self-supervised",
+  "slug": "purnomorafi-reading-self-supervised",
+  "author": "Purnomorafi",
+  "url": "https://huggingface.co/Purnomorafi/reading-self-supervised",
+  "created_at": "2026-09-03T20:55:02.000Z",
+  "updated_at": "2026-09-03T20:55:08.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "self-supervised",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Notepad Tips and Tricks for Windows users",
+      "url": "https://www.thewindowsclub.com/basic-notepad-tips",
+      "snippet": "Jun 30, 2026 · The Notepad in Windows is a basic text editor. Use these basic & simple, yet cool & interesting Notepad tips & tricks …"
+    },
+    {
+      "title": "Purnomorafi (Rafi Purnomo) - Hugging Face",
+      "url": "https://huggingface.co/Purnomorafi/models",
+      "snippet": "User profile of Rafi Purnomo on Hugging Face"
+    },
+    {
+      "title": "New features in Notepad in Windows 11 - The Windows Club",
+      "url": "https://www.thewindowsclub.com/new-features-in-notepad-in-windows-10-v1809",
+      "snippet": "Jun 13, 2026 · The Notepad in Windows 11/10 gets several new features. You can search selected text with Bing, Delete previously …"
+    },
+    {
+      "title": "Self-supervised learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Self-supervised_learning",
+      "snippet": "Self-supervised learning (SSL) is a paradigm in machine learning where a model is trained on a task using the data itself to generate supervisory signals, rather than relying on externally-provided labels."
+    },
+    {
+      "title": "Install or Uninstall Microsoft WordPad in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/140422-install-uninstall-microsoft-wordpad-windows-10-a.html",
+      "snippet": "May 16, 2020 · Published by Shawn Brink Category: Apps & Features 16 May 2020 How to Install or Uninstall Microsoft WordPad in …"
+    }
+  ]
+}

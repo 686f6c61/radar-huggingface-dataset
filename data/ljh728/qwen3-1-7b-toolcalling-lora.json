@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ljh728/Qwen3-1.7B-ToolCalling-LoRA",
+  "slug": "ljh728-qwen3-1-7b-toolcalling-lora",
+  "author": "ljh728",
+  "url": "https://huggingface.co/ljh728/Qwen3-1.7B-ToolCalling-LoRA",
+  "created_at": "2026-09-04T01:13:21.000Z",
+  "updated_at": "2026-09-04T01:13:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 290396812,
+  "storage_human": "290 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lootbound on Steam",
+      "url": "https://store.steampowered.com/app/3091140/Lootbound/",
+      "snippet": "Aug 14, 2026 · Lootbound is a tactical roguelite with turn-based combat, loot management and D&D elements set in a dark fantasy …"
+    },
+    {
+      "title": "Qwen3-1.7B Tool-Calling with QLoRA - GitHub",
+      "url": "https://github.com/zubairz4far/qwen3-tool-calling-qlora",
+      "snippet": "Model: Qwen3-1.7B Method: QLoRA supervised fine-tuning Training hardware: Kaggle NVIDIA T4 Dataset: 1,600 synthetic support/tool-calling examples Split: 1,200 train / 160 validation / 240 test"
+    },
+    {
+      "title": "Lootbound - games.artdock.studio",
+      "url": "https://games.artdock.studio/lootbound",
+      "snippet": "Lootbound is a dark fantasy tactical roguelite built around risky expeditions, turn-based combat, party management, and loot-driven …"
+    },
+    {
+      "title": "HDH0827/Qwen3-1.7B-ToolCalling-LoRA · Hugging Face",
+      "url": "https://huggingface.co/HDH0827/Qwen3-1.7B-ToolCalling-LoRA",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lootbound - Steam Community",
+      "url": "https://steamcommunity.com/app/3091140/",
+      "snippet": "Lootbound is a tactical roguelite with turn-based combat, loot management and D&D elements set in a dark fantasy world. Fight …"
+    }
+  ]
+}

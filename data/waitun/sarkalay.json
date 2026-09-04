@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "WAITUN/SarKaLay",
+  "slug": "waitun-sarkalay",
+  "author": "WAITUN",
+  "url": "https://huggingface.co/WAITUN/SarKaLay",
+  "created_at": "2026-09-03T22:45:27.000Z",
+  "updated_at": "2026-09-03T22:45:27.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Proton - 知乎",
+      "url": "https://www.zhihu.com/people/feisuzhu/",
+      "snippet": "Aug 25, 2026 · 这道题非常好解 1你先将这个岗位市场薪资范围搞清楚，比如从拉到夯分为5个集中带。 2 给自己做一个自评，假设也 …"
+    },
+    {
+      "title": "PMegha | Interview Wellness Companion Agent | Kaggle",
+      "url": "https://www.kaggle.com/models/waiyumtun/sarkalay",
+      "snippet": "SarKaLay Artificial Time Intelligence Shadow Interview Wellness Companion Agent pmegha/interview-wellness-companion-agent A supportive tool that analyzes interviews to highlight personality traits and wellness signals."
+    },
+    {
+      "title": "yjm002top - 知乎",
+      "url": "https://www.zhihu.com/people/maw-51-42",
+      "snippet": "5 days ago · 做 AI 动画最头疼的角色漂移，很多人以为是模型不行。跑了 8 个镜头我发现，问题不在模型，在分工。 这篇教程，就是 …"
+    },
+    {
+      "title": "OutYet.ai: Daily AI Model Briefing & Release Tracker",
+      "url": "https://outyet.ai/",
+      "snippet": "A daily check-in for AI model releases: briefing, top stories, recent releases, watchlist, and benchmark leaders."
+    },
+    {
+      "title": "Avis sur ProtonMail - Sécurité - Réseaux grand public / SoHo - FORUM ...",
+      "url": "https://forum.hardware.fr/hfr/reseauxpersosoho/Routage-et-securite/avis-protonmail-sujet_35140_1.htm",
+      "snippet": "En fait le mail ne contient qu’un lien vers une page proton. Cette page demande un mdp (clé de déchiffrement) pour afficher le …"
+    }
+  ]
+}

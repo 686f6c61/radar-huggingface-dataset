@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ivortex968/fraud-detector-qwen",
+  "slug": "ivortex968-fraud-detector-qwen",
+  "author": "ivortex968",
+  "url": "https://huggingface.co/ivortex968/fraud-detector-qwen",
+  "created_at": "2026-09-04T01:17:31.000Z",
+  "updated_at": "2026-09-04T01:17:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20173757,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Baixar BlueTV 3.12.321 APK para Android - Download Grátis e Seguro",
+      "url": "https://apkpure.net/br/bluetv/com.bluetv.android/download",
+      "snippet": "Nov 14, 2024 · Baixe a última versão de BlueTV (3.12.321) APK para Android. Experience Live TV, daily news updates and TV …"
+    },
+    {
+      "title": "Pkv3477/fraud-detector-qwen · Hugging Face",
+      "url": "https://huggingface.co/Pkv3477/fraud-detector-qwen",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Baixar BluTV 3.39.1 APK para Android - Download Grátis e Seguro",
+      "url": "https://apkpure.net/br/blutv/com.dsmart.blu.android/download",
+      "snippet": "Apr 2, 2025 · Baixe a última versão de BluTV (3.39.1) APK para Android. Divirta-se com centenas de filmes, séries e canais de TV ao …"
+    },
+    {
+      "title": "fraud-detector-qwen API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Tadikamalla/fraud-detector-qwen",
+      "snippet": "Deploy fraud-detector-qwen with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "BlueTV para Android - Baixar",
+      "url": "https://bluetv.softonic.com.br/android",
+      "snippet": "Jan 19, 2026 · O BlueTV é um aplicativo gratuito disponível para Android que permite assistir a canais de TV ao vivo, programas …"
+    }
+  ]
+}

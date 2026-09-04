@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "sabber/snh-qwen3-1.7b-loan-adjudication-lora",
+  "slug": "sabber-snh-qwen3-1-7b-loan-adjudication-lora",
+  "author": "sabber",
+  "url": "https://huggingface.co/sabber/snh-qwen3-1.7b-loan-adjudication-lora",
+  "created_at": "2026-09-03T23:22:11.000Z",
+  "updated_at": "2026-09-03T23:22:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "finance",
+    "structured-output",
+    "synthetic-data",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:sabber/snh-loan-adjudication-synthetic",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81205038,
+  "storage_human": "81 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.com: Amazon Prime",
+      "url": "https://www.amazon.com/amazonprime",
+      "snippet": "Unlimited streaming Prime Video brings you new releases, award-winning Originals, and live sports."
+    },
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Amazon Prime Business",
+      "url": "https://www.amazon.com/businessprime",
+      "snippet": "Amazon Prime is a membership program available on Amazon. It offers household and entertainment benefits such as Prime Video, …"
+    },
+    {
+      "title": "Qwen3 1.7B - Open Laboratory",
+      "url": "https://openlaboratory.com/models/qwen3-1_7b/",
+      "snippet": "A 1.7 billion parameter multilingual transformer supporting dual-mode reasoning with step-by-step \"thinking\" and rapid \"non-thinking\" response capabilities."
+    },
+    {
+      "title": "Amazon.com. Spend less. Smile more.",
+      "url": "https://www.amazon.com/",
+      "snippet": "Free shipping on millions of items. Get the best of Shopping and Entertainment with Prime. Enjoy low prices and great deals on the …"
+    }
+  ]
+}

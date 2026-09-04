@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ubermensch1218/vibevoice7b-schift-quanted-mixed",
+  "slug": "ubermensch1218-vibevoice7b-schift-quanted-mixed",
+  "author": "ubermensch1218",
+  "url": "https://huggingface.co/ubermensch1218/vibevoice7b-schift-quanted-mixed",
+  "created_at": "2026-09-04T01:28:47.000Z",
+  "updated_at": "2026-09-04T01:42:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ko",
+    "en",
+    "zh",
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "automatic-speech-recognition",
+    "speaker-diarization",
+    "ko",
+    "en",
+    "zh",
+    "ja",
+    "base_model:microsoft/VibeVoice-ASR-Streaming-7B",
+    "base_model:finetune:microsoft/VibeVoice-ASR-Streaming-7B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "microsoft/VibeVoice-ASR-Streaming-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-04T03:57:59.090Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to See All Bing Related Searches on Any Device",
+      "url": "https://rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 1, 2026 · Learn where Bing related searches appear, how to expand them, and what to do when suggestions do not show on …"
+    },
+    {
+      "title": "GitHub - microsoft/VibeVoice: Open-Source Frontier Voice AI",
+      "url": "https://github.com/microsoft/VibeVoice",
+      "snippet": "VibeVoice is a family of open-source frontier voice AI models that includes both Text-to-Speech (TTS) and Automatic Speech Recognition (ASR) models. A core innovation of VibeVoice is its use of continuous speech tokenizers (Acoustic and Semantic) operating at an ultra-low frame rate of 7.5 Hz. These tokenizers efficiently preserve audio fidelity while significantly boosting computational ..."
+    },
+    {
+      "title": "What are the Best Bing Search API Alternatives in 2026",
+      "url": "https://www.firecrawl.dev/blog/bing-search-api-alternatives",
+      "snippet": "Jun 4, 2026 · The Bing Search API was discontinued in August 2025. We compare Firecrawl, Exa, Tavily, Brave Search API, and …"
+    },
+    {
+      "title": "GitHub - shijincai/VibeVoice: Archive of the official Microsoft ...",
+      "url": "https://github.com/shijincai/VibeVoice",
+      "snippet": "Important Microsoft recently released VibeVoice, a high-quality conversational TTS model, but has since deleted the official GitHub repository and removed the 7B model from Modelscope. This project serves as a community-maintained backup of the original source code for preservation."
+    },
+    {
+      "title": "Best Bing Search API Alternatives (2026 Update & List)",
+      "url": "https://brightdata.com/blog/web-data/best-bing-search-apis",
+      "snippet": "Discover why Bing Search API is discontinued and explore the top alternatives for Bing SERP data in 2026. Compare features, …"
+    }
+  ]
+}

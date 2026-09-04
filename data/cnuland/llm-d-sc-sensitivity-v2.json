@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "cnuland/llm-d-sc-sensitivity-v2",
+  "slug": "cnuland-llm-d-sc-sensitivity-v2",
+  "author": "cnuland",
+  "url": "https://huggingface.co/cnuland/llm-d-sc-sensitivity-v2",
+  "created_at": "2026-09-04T01:00:36.000Z",
+  "updated_at": "2026-09-04T03:11:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "llm-routing",
+    "llm-d",
+    "semantic-router",
+    "sensitivity",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22715141,
+  "parameters_human": "22.7M",
+  "storage_bytes": 272617716,
+  "storage_human": "273 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube to MP3 Converter",
+      "url": "https://mp3cow.com/",
+      "snippet": "Convert YouTube videos to MP3 audio files without annoying ads or registration. With MP3Cow, you have one of the fastest and ad …"
+    },
+    {
+      "title": "cnuland/llm-d-sc-sensitivity · Hugging Face",
+      "url": "https://huggingface.co/cnuland/llm-d-sc-sensitivity",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "YouTube to MP3 Converter - Fast, Private, Free | YouAreTube",
+      "url": "https://youaretube.com/",
+      "snippet": "1 day ago · Convert YouTube to MP3 fast and free with YouAreTube. No sign-up, no software, unlimited downloads, high-quality …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=llm-d",
+      "snippet": "cnuland/llm-d-sc-sensitivity Sentence Similarity • 22.7M•Updated about 9 hours ago• 7"
+    },
+    {
+      "title": "Free YouTube to MP3 Downloader - turboscribe.ai",
+      "url": "https://turboscribe.ai/downloader/youtube/mp3/free?msockid=2109d2b94e9c6ad70f6dc5734f876ba7",
+      "snippet": "Download YouTube videos as MP3 files. Compact, lightweight, and universally supported, the MP3 format made it possible to carry …"
+    }
+  ]
+}

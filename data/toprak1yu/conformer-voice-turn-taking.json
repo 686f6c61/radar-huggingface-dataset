@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Toprak1yu/conformer-voice-turn-taking",
+  "slug": "toprak1yu-conformer-voice-turn-taking",
+  "author": "Toprak1yu",
+  "url": "https://huggingface.co/Toprak1yu/conformer-voice-turn-taking",
+  "created_at": "2026-09-03T23:23:55.000Z",
+  "updated_at": "2026-09-03T23:34:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "nemo",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nemo",
+    "onnx",
+    "audio",
+    "audio-classification",
+    "conformer",
+    "turn-taking",
+    "barge-in",
+    "real-time",
+    "en",
+    "dataset:openslr/librispeech_asr",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22139232,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Next Generation in Cloud Gaming - GeForce NOW | NVIDIA",
+      "url": "https://www.nvidia.com/en-us/geforce-now/",
+      "snippet": "Experience seamless PC gaming on any device with GeForce NOW, the next generation in cloud gaming. Sign up today!"
+    },
+    {
+      "title": "Turn-Taking Modelling in Conversational Systems: A Review of ... - MDPI",
+      "url": "https://www.mdpi.com/2227-7080/13/12/591",
+      "snippet": "Effective turn-taking is fundamental to conversational interactions, shaping the fluidity of communication across human dialogues and interactions with spoken dialogue systems (SDS). Despite its apparent simplicity, conversational turn-taking involves complex timing mechanisms influenced by various linguistic, prosodic, and multimodal cues. This review synthesises recent theoretical insights ..."
+    },
+    {
+      "title": "Download GeForce NOW | NVIDIA",
+      "url": "https://www.nvidia.com/en-us/geforce-now/download/",
+      "snippet": "GeForce NOW is ready for you to get in, and game on. Download the GeForce NOW app for the best experience."
+    },
+    {
+      "title": "Applying General Turn-taking Models to Conversational Human-Robot ...",
+      "url": "https://arxiv.org/html/2501.08946v1",
+      "snippet": "Abstract Turn-taking is a fundamental aspect of conversation, but current Human-Robot Interaction (HRI) systems often rely on simplistic, silence-based models, leading to unnatural pauses and interruptions. This paper investigates, for the first time, the application of general turn-taking models, specifically TurnGPT and Voice Activity Projection (VAP), to improve conversational dynamics in ..."
+    },
+    {
+      "title": "次世代のクラウド ゲーミング - GeForce NOW | NVIDIA",
+      "url": "https://www.nvidia.com/ja-jp/geforce-now/",
+      "snippet": "デバイスを問わず、PC ゲームをシームレスにプレイ。どこにいても。 クラウドの GeForce ゲーミング。今すぐご登録ください。"
+    }
+  ]
+}

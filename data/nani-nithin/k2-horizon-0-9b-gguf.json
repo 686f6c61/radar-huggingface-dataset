@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "NANI-Nithin/K2-Horizon-0.9B-GGUF",
+  "slug": "nani-nithin-k2-horizon-0-9b-gguf",
+  "author": "NANI-Nithin",
+  "url": "https://huggingface.co/NANI-Nithin/K2-Horizon-0.9B-GGUF",
+  "created_at": "2026-09-03T23:28:12.000Z",
+  "updated_at": "2026-09-03T23:54:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "llama.cpp",
+    "k2-horizon",
+    "causal-lm",
+    "text-generation",
+    "en",
+    "base_model:IFM/K2-Horizon-0.9B",
+    "base_model:quantized:IFM/K2-Horizon-0.9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1078285824,
+  "parameters_human": "1.08B",
+  "storage_bytes": 18372221664,
+  "storage_human": "18.4 GB",
+  "base_model": "IFM/K2-Horizon-0.9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arnaque sur lebon coin - Vos droits sur internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-22832939-arnaque-sur-lebon-coin",
+      "snippet": "Aug 8, 2011 · Arnaque sur lebon coin ket - Modifié le 8 août 2011 à 15:12 ket - 8 août 2011 à 22:26"
+    },
+    {
+      "title": "Introducing K2 Horizon: Frontier Performance, Radically Open - ifm.ai",
+      "url": "https://ifm.ai/blog/k2",
+      "snippet": "Explore K2 Horizon, IFM’s open-source fleet of six frontier AI models for reasoning, coding, agentic workflows, edge devices, and enterprise deployment."
+    },
+    {
+      "title": "Problème lebon coin billet nigloland - Consommation & Internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-36044975-probleme-lebon-coin-billet-nigloland",
+      "snippet": "May 28, 2019 · Problème lebon coin billet nigloland virg67250 - Modifié le 29 mai 2019 à 09:17 Andide - 19 avr. 2020 à 23:24"
+    },
+    {
+      "title": "IFM/K2-Horizon-0.9B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/IFM/K2-Horizon-0.9B",
+      "snippet": "K2-Horizon is an open-weight IFM model family built for transparent foundation-model research, staged checkpoint analysis, and practical deployment. The series spans compact dense models such as K2-Horizon-0.9B for local experimentation, dense mid-size and large models for high-quality research workloads, and mixture-of-expert (MoE) models for higher-capacity serving."
+    },
+    {
+      "title": "LEBONCOIN : Litige, voici mon témoignage. - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/le-bon-coin-litige-voici-mon-experience-t338738.html",
+      "snippet": "Jul 19, 2023 · Si mon expérience pouvait aider quelques personnes en litige avec LE BON COIN, j'en serais très contente. Voici mon …"
+    }
+  ]
+}

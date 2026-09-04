@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ausjahk/fashion-clothing-classifier-from-scratch",
+  "slug": "ausjahk-fashion-clothing-classifier-from-scratch",
+  "author": "ausjahk",
+  "url": "https://huggingface.co/ausjahk/fashion-clothing-classifier-from-scratch",
+  "created_at": "2026-09-03T19:49:55.000Z",
+  "updated_at": "2026-09-03T19:52:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "resnet",
+    "image-classification",
+    "generated_from_trainer",
+    "base_model:microsoft/resnet-18",
+    "base_model:finetune:microsoft/resnet-18",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11191242,
+  "parameters_human": "11.2M",
+  "storage_bytes": 44786017,
+  "storage_human": "45 MB",
+  "base_model": "microsoft/resnet-18",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheJigsawPuzzles.com - Kostenlose Puzzles - Puzzlespiele auf ...",
+      "url": "https://de.thejigsawpuzzles.com/",
+      "snippet": "Tausende kostenlose Puzzles die dich umhauen werden! Puzzle des Tages, Puzzles im Vollbildmodus und vieles mehr."
+    },
+    {
+      "title": "Fashion Classifier - a Hugging Face Space by aryanprooo",
+      "url": "https://huggingface.co/spaces/aryanprooo/fashion-classifier",
+      "snippet": "Upload an image of a fashion item to identify what it is and its colors. Get detailed results including confidence scores and styling suggestions."
+    },
+    {
+      "title": "Puzzle des Tages Puzzles auf TheJigsawPuzzles.com",
+      "url": "https://de.thejigsawpuzzles.com/puzzle-of-the-day-jigsaw-puzzle",
+      "snippet": "Sep 23, 2010 · Puzzle des Tages free online jigsaw puzzles on TheJigsawPuzzles.com. Play full screen, enjoy Puzzle of the Day and …"
+    },
+    {
+      "title": "Free AI Clothing Identifier - piax.org",
+      "url": "https://www.piax.org/en/ai-image-analyze-tools/ai-clothing-identifier",
+      "snippet": "Key Features of AI Clothing Identifier Accurate Clothing Recognition Our AI model identifies clothing items from photos with precision, detecting types such as shirts, dresses, pants, jackets, and accessories while distinguishing textures, fabrics, and patterns."
+    },
+    {
+      "title": "Recent Updates Puzzles auf TheJigsawPuzzles.com",
+      "url": "https://de.thejigsawpuzzles.com/new-puzzles",
+      "snippet": "Mar 9, 2026 · Recent Updates free online jigsaw puzzles on TheJigsawPuzzles.com. Play full screen, enjoy Puzzle of the Day and …"
+    }
+  ]
+}

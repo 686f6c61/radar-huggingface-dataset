@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "henryfbp/DrakonixSpriteAIGenLoRA",
+  "slug": "henryfbp-drakonixspriteaigenlora",
+  "author": "henryfbp",
+  "url": "https://huggingface.co/henryfbp/DrakonixSpriteAIGenLoRA",
+  "created_at": "2026-09-03T20:39:43.000Z",
+  "updated_at": "2026-09-03T20:39:50.000Z",
+  "license": "unlicense",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unlicense",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube で制限付きモードをオンまたはオフにする",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube で制限付きモードをオンまたはオフにする 制限付きモードは、YouTube で使用できるオプション設定です。 この機能は …"
+    },
+    {
+      "title": "Free AI Image Generator | Craiyon",
+      "url": "https://www.craiyon.com/",
+      "snippet": "Free AI Image Generator Create free AI images from text for art, photos, illustrations, and quick visual ideas."
+    },
+    {
+      "title": "YouTube ความช่วยเหลือ",
+      "url": "https://support.google.com/youtube/?hl=th",
+      "snippet": "ศูนย์ช่วยเหลืออย่างเป็นทางการของ YouTube ที่คุณสามารถพบเคล็ดลับและบทแนะนำเกี่ยวกับการใช้งานผลิตภัณฑ์ รวมทั้งคำตอบสำหรับ ..."
+    },
+    {
+      "title": "PixAI Model Market | AI Art Models and LoRAs | PixAI",
+      "url": "https://pixai.art/en/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.5M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    }
+  ]
+}

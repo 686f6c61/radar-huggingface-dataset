@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "id": "Akahsizrr/Cyber-Prime-1-2.6B",
+  "slug": "akahsizrr-cyber-prime-1-2-6b",
+  "author": "Akahsizrr",
+  "url": "https://huggingface.co/Akahsizrr/Cyber-Prime-1-2.6B",
+  "created_at": "2026-09-03T22:47:48.000Z",
+  "updated_at": "2026-09-03T23:05:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "cybersecurity",
+    "security",
+    "ner",
+    "threat-intelligence",
+    "phishing",
+    "http",
+    "fine-tuned",
+    "small-language-model",
+    "conversational",
+    "en",
+    "base_model:LiquidAI/LFM2-2.6B",
+    "base_model:finetune:LiquidAI/LFM2-2.6B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 5412634403,
+  "storage_human": "5.4 GB",
+  "base_model": "LiquidAI/LFM2-2.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "CyNER",
+      "dataset": "CyNER",
+      "metric": "F1",
+      "value": 0.382
+    },
+    {
+      "task": "APTNER",
+      "dataset": "APTNER",
+      "metric": "F1",
+      "value": 0.413
+    },
+    {
+      "task": "CyNews",
+      "dataset": "CyNews",
+      "metric": "ROUGE-1",
+      "value": 0.354
+    },
+    {
+      "task": "SecMMLU",
+      "dataset": "SecMMLU",
+      "metric": "Accuracy",
+      "value": 0.58
+    },
+    {
+      "task": "CyQuiz",
+      "dataset": "CyQuiz",
+      "metric": "Accuracy",
+      "value": 0.57
+    },
+    {
+      "task": "Email Phishing Detection",
+      "dataset": "Email",
+      "metric": "F1",
+      "value": 0.728
+    },
+    {
+      "task": "HTTP Attack Detection",
+      "dataset": "HTTP",
+      "metric": "F1",
+      "value": 0.483
+    }
+  ],
+  "sources": [
+    {
+      "title": "So teilen Sie Instagram-Geschichten mit nur einer Person",
+      "url": "https://technischetipps.com/soziale-netzwerke/so-teilen-sie-instagram-geschichten-mit-nur-einer-person/",
+      "snippet": "Jul 29, 2022 · Es gibt verschiedene Methoden, Geschichten mit bestimmten Personen zu teilen. In jedem Fall erlaubt Ihnen nur einer, …"
+    },
+    {
+      "title": "Akahsizrr (Vasko Djack) - Hugging Face",
+      "url": "https://huggingface.co/Akahsizrr",
+      "snippet": "ML eng, learning everyday. Working on 2 new AI training pipelines, and a model merging architecture for frontier specialized local models."
+    },
+    {
+      "title": "Wie kann ich dafür sorgen, dass nur eine Person meine Story sehen …",
+      "url": "https://www.pchardwarepro.com/de/So-erreichen-Sie--dass-nur-eine-Person-Ihre-Story-sieht/",
+      "snippet": "Wie mache ich meine Instagram-Story nur für eine Person sichtbar? Wenn du eine Story auf Instagram teilen möchtest, die aber nur …"
+    },
+    {
+      "title": "Akahsizrr/fuse-1-Lite · Hugging Face",
+      "url": "https://huggingface.co/Akahsizrr/fuse-1-Lite",
+      "snippet": "Overview fuse-1 Lite is a novel fusion model that combines the speed and efficiency of a small language model (LFM2.5-2.6B, 2.70B params) with the coding expertise of a large MoE model (Qwen3.6-35B-A3B). Rather than distilling knowledge or fine-tuning from scratch, fuse-1 Lite transplants actual expert weights from the donor model and trains a lightweight router to selectively activate them ..."
+    },
+    {
+      "title": "Instagram Story für bestimmte Personen ausblenden - so geht's",
+      "url": "https://www.screen.de/technik/instagram-story-fur-bestimmte-personen-ausblenden-so-geht-s",
+      "snippet": "Mar 14, 2025 · Um eine Story nur für enge Freunde sichtbar zu machen, wird vor der Veröffentlichung der Story die Option „Enge …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "selink/Qwen3-4B-specificity_iso0-fa-peft-r32",
+  "slug": "selink-qwen3-4b-specificity_iso0-fa-peft-r32",
+  "author": "selink",
+  "url": "https://huggingface.co/selink/Qwen3-4B-specificity_iso0-fa-peft-r32",
+  "created_at": "2026-09-03T23:19:41.000Z",
+  "updated_at": "2026-09-03T23:19:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "reward-trainer",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275747347,
+  "storage_human": "276 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speed Test by MyBroadband",
+      "url": "https://speedtest.mybroadband.co.za/",
+      "snippet": "Test your Internet connection quickly and accurately. Lightweight, easy-to-use, reliable and completely free."
+    },
+    {
+      "title": "selink/Qwen3-4B-fa · Hugging Face",
+      "url": "https://huggingface.co/selink/Qwen3-4B-fa",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "What Internet speed you need for watching Netflix in South Africa",
+      "url": "https://mybroadband.co.za/news/broadcasting/278003-what-internet-speed-you-need-for-watching-netflix-in-south-africa.html",
+      "snippet": "Apr 10, 2018 · Thanks to the increasing number of content services across the Internet, more consumers watch media online."
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huge update to MyBroadband Speed Test app — Check your …",
+      "url": "https://mybroadband.co.za/news/internet/655751-huge-update-to-mybroadband-speed-test-app-check-your-connection-now.html",
+      "snippet": "Jun 26, 2026 · The MyBroadband Speed Test App has been updated with new features and other impactful changes."
+    }
+  ]
+}

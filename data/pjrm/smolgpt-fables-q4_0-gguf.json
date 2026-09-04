@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "PJRM/smolgpt-fables-Q4_0-GGUF",
+  "slug": "pjrm-smolgpt-fables-q4_0-gguf",
+  "author": "PJRM",
+  "url": "https://huggingface.co/PJRM/smolgpt-fables-Q4_0-GGUF",
+  "created_at": "2026-09-03T19:48:16.000Z",
+  "updated_at": "2026-09-03T19:48:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "smolgpt-fables",
+    "small-language-model",
+    "creative-writing",
+    "story-generation",
+    "controlled-generation",
+    "instruction-following",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "dataset:neonforestmist/smolgpt-markdown-stories",
+    "base_model:neonforestmist/smolgpt-fables",
+    "base_model:quantized:neonforestmist/smolgpt-fables",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1711376384,
+  "parameters_human": "1.71B",
+  "storage_bytes": 990729568,
+  "storage_human": "991 MB",
+  "base_model": "neonforestmist/smolgpt-fables",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube で制限付きモードをオンまたはオフにする - パソコン",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube で制限付きモードをオンまたはオフにする 制限付きモードは、YouTube で使用できるオプション設定です。 この機能は …"
+    },
+    {
+      "title": "PJRM/smolgpt-fables-Q4_0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/PJRM/smolgpt-fables-Q4_0-GGUF",
+      "snippet": "Instructions to use PJRM/smolgpt-fables-Q4_0-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use PJRM/smolgpt-fables-Q4_0-GGUF with Transformers:"
+    },
+    {
+      "title": "YouTube ความช่วยเหลือ",
+      "url": "https://support.google.com/youtube/?hl=th",
+      "snippet": "ศูนย์ช่วยเหลืออย่างเป็นทางการของ YouTube ที่คุณสามารถพบเคล็ดลับและบทแนะนำเกี่ยวกับการใช้งานผลิตภัณฑ์ รวมทั้งคำตอบสำหรับ ..."
+    },
+    {
+      "title": "GitHub - neonforestmist/SmolGPT-Fables: Compact 1.71B story-writing ...",
+      "url": "https://github.com/neonforestmist/SmolGPT-Fables",
+      "snippet": "1. About SmolGPT-Fables SmolGPT-Fables v1 is a compact 1.71B-parameter story-writing model adapted from SmolLM2. It turns a simple idea into a readable one-to-six-scene fable with named characters, clear settings, and an ending target."
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    }
+  ]
+}

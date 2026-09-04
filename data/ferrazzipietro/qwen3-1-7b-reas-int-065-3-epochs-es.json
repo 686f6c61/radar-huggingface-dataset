@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ferrazzipietro/Qwen3-1.7B-reas-int-065-3-epochs-es",
+  "slug": "ferrazzipietro-qwen3-1-7b-reas-int-065-3-epochs-es",
+  "author": "ferrazzipietro",
+  "url": "https://huggingface.co/ferrazzipietro/Qwen3-1.7B-reas-int-065-3-epochs-es",
+  "created_at": "2026-09-03T18:23:06.000Z",
+  "updated_at": "2026-09-03T20:27:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452618491,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fantastic Battery life/discharging rate Ghelper : r/ZephyrusG14",
+      "url": "https://www.reddit.com/r/ZephyrusG14/comments/13f8og8/fantastic_battery_lifedischarging_rate_ghelper/",
+      "snippet": "G-helper? That looks like awesome software, do you recommend? Reply reply LevanderFela •"
+    },
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Uninstalling G-Helper and going back to Armoury Crate Disabled",
+      "url": "https://www.reddit.com/r/ZephyrusM16/comments/18n6pyf/uninstalling_ghelper_and_going_back_to_armoury/",
+      "snippet": "Dec 20, 2023 · I have the 2023 M16, 4070 model, and installed G-Helper since it seems like such a great alternative to everyone here …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "New Update - G-Helper: Lightweight Armoury Crate alternative for …",
+      "url": "https://malwaretips.com/threads/g-helper-lightweight-armoury-crate-alternative-for-asus-laptops.123489/page-2",
+      "snippet": "May 28, 2023 · Releases · seerge/g-helper Lightweight Armoury Crate alternative for Asus laptops. Control tool for ROG Zephyrus …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "andrewhernandez/test-classification",
+  "slug": "andrewhernandez-test-classification",
+  "author": "andrewhernandez",
+  "url": "https://huggingface.co/andrewhernandez/test-classification",
+  "created_at": "2026-09-03T22:45:05.000Z",
+  "updated_at": "2026-09-03T22:45:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Demande de certificat de situation administrative",
+      "url": "https://siv.interieur.gouv.fr/map-usg-ui/do/accueil_certificat",
+      "snippet": "Cette procédure vaut aussi bien pour les mutations hors département que pour celles dans le département. Ces deux attestations ont …"
+    },
+    {
+      "title": "Meta says its AI model hacked into another company during testing",
+      "url": "https://www.theguardian.com/technology/2026/aug/05/meta-ai-model-hack-training",
+      "snippet": "Meta said on Wednesday that one of its AI models hacked ⁠another company during cybersecurity testing, after an error by its testing partner gave the model unintended internet access."
+    },
+    {
+      "title": "Demande de certificat de situation administrative - Minister of the ...",
+      "url": "https://siv.interieur.gouv.fr/map-usg-ui/do/csa_retour_dem_certificat",
+      "snippet": "Vous pouvez obtenir de l'aide en cliquant sur Les champs marqués par * sont à renseigner obligatoirement."
+    },
+    {
+      "title": "Meta says its AI model breached a third-party company during testing ...",
+      "url": "https://www.cbsnews.com/news/meta-says-ai-model-breached-third-party-company/",
+      "snippet": "Tech giant Meta revealed Wednesday that one of its artificial intelligence models hacked another organization during testing, the third time in recent weeks that an AI model has improperly ..."
+    },
+    {
+      "title": "siv-tp - Minister of the Interior",
+      "url": "https://mesdemarches.siv.interieur.gouv.fr/siv-tp/",
+      "snippet": "Official portal for vehicle registration system, providing administrative services and information related to vehicle registration in France."
+    }
+  ]
+}

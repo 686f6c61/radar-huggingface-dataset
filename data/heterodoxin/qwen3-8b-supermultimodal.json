@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "heterodoxin/qwen3-8b-supermultimodal",
+  "slug": "heterodoxin-qwen3-8b-supermultimodal",
+  "author": "heterodoxin",
+  "url": "https://huggingface.co/heterodoxin/qwen3-8b-supermultimodal",
+  "created_at": "2026-09-04T00:21:23.000Z",
+  "updated_at": "2026-09-04T00:22:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "multimodal",
+    "vision",
+    "audio",
+    "joke",
+    "text-generation",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Articles about 47.55555,+-122.55555 on Dwell.com - Dwell",
+      "url": "https://www.dwell.com/discover/47.55555%2C%2B-122.55555",
+      "snippet": "Built by architect David Henken, this renovated Usonian home in Bronxville, New York, offers a midcentury signature with modern..."
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use Qwen/Qwen3-8B with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Qwen/Qwen3-8B with Transformers:"
+    },
+    {
+      "title": "Koordinaten 47.55555, -122.55555 mit Umrechner in alle ...",
+      "url": "https://www.koordinaten-umrechner.de/?koordinatenfinder=1&qs=47.55555%2C+-122.55555",
+      "snippet": "Koordinaten von 47.55555, -122.55555 mit großer Karte. Formate: UTM, UTMRF/MGRS, CH1903, Gauss-Krueger, GK, NAC, W3W …"
+    },
+    {
+      "title": "Qwen3-8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_8b",
+      "snippet": "Qwen3-8B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑8B is a state‑of‑the‑art multilingual base language model with 8 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "47 55555, 122.55555 2025 – Read by 3rd",
+      "url": "https://www.readby3rd.org/2021/12/04/47-55555-122-55555-2025/",
+      "snippet": "Dec 4, 2021 · Read by 3rd is an educational organization working to build successful families by giving parents the skills and …"
+    }
+  ]
+}

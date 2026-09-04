@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Biggiraffe/Qwen3-1.7B-ToolCalling-LoRA",
+  "slug": "biggiraffe-qwen3-1-7b-toolcalling-lora",
+  "author": "Biggiraffe",
+  "url": "https://huggingface.co/Biggiraffe/Qwen3-1.7B-ToolCalling-LoRA",
+  "created_at": "2026-09-04T01:12:17.000Z",
+  "updated_at": "2026-09-04T01:12:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 290396812,
+  "storage_human": "290 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "16 PINEVIEW DR, AYLESBURY, TALLAGHT DUBLIN 24",
+      "url": "https://ihouse.ie/property/16-pineview-dr-aylesbury-tallaght-dublin-24-d24hdh2-dwmtra",
+      "snippet": "2 days ago · This property at 16 PINEVIEW DR, AYLESBURY, TALLAGHT DUBLIN 24, D24 HDH2 was sold on 2022-12-09 for …"
+    },
+    {
+      "title": "Qwen3-1.7B Tool-Calling with QLoRA - GitHub",
+      "url": "https://github.com/zubairz4far/qwen3-tool-calling-qlora",
+      "snippet": "A portfolio case study in fine-tuning a small language model for reliable tool/function calling under realistic routing, argument, clarification, no-tool, and prompt-injection scenarios."
+    },
+    {
+      "title": "16 Pineview Drive, Aylesbury, Tallaght Dublin 24",
+      "url": "https://houseprice.ie/property/D24HDH2",
+      "snippet": "Property in Tallaght, Dublin. Last sold for €247,000 in December 2022. See full price history, comparable sales and property …"
+    },
+    {
+      "title": "it0is0me/Qwen3-1.7B-ToolCalling-LoRA · Hugging Face",
+      "url": "https://huggingface.co/it0is0me/Qwen3-1.7B-ToolCalling-LoRA",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pineview Grove, Tallaght: Sold House Prices, Dublin | HousePrice.ie",
+      "url": "https://houseprice.ie/dublin/tallaght/pineview-grove",
+      "snippet": "Aug 26, 2026 · The Property Price Register records 4 sales on Pineview Grove (Tallaght, Dublin) since 2020. The median sold price …"
+    }
+  ]
+}

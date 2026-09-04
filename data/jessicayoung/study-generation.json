@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "JessicaYoung/study-generation",
+  "slug": "jessicayoung-study-generation",
+  "author": "JessicaYoung",
+  "url": "https://huggingface.co/JessicaYoung/study-generation",
+  "created_at": "2026-09-03T19:07:58.000Z",
+  "updated_at": "2026-09-03T19:08:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing Maps vs. Google Maps - wie ist eure Erfahrung?",
+      "url": "https://www.windows-10-forum.com/threads/bing-maps-vs-google-maps-wie-ist-eure-erfahrung.105791/",
+      "snippet": "Aug 6, 2019 · Bing Maps vs. Google Maps - wie ist eure Erfahrung? Helfe beim Thema Bing Maps vs. Google Maps - wie ist eure …"
+    },
+    {
+      "title": "Jessica Young - DeepAI",
+      "url": "https://deepai.org/profile/jessica-young",
+      "snippet": "Read Jessica Young's latest research, browse their coauthor's research, and play around with their algorithms"
+    },
+    {
+      "title": "MSDN",
+      "url": "https://social.msdn.microsoft.com/Forums/en-US/home",
+      "snippet": ""
+    },
+    {
+      "title": "Researchers tested AI against 100,000 humans on creativity",
+      "url": "https://www.sciencedaily.com/releases/2026/01/260125083356.htm",
+      "snippet": "A massive new study comparing more than 100,000 people with today’s most advanced AI systems delivers a surprising result: generative AI can now beat the average human on certain creativity ..."
+    },
+    {
+      "title": "Verwendung von Bing Karten - windows-10-forum.com",
+      "url": "https://www.windows-10-forum.com/threads/verwendung-von-bing-karten.88360/",
+      "snippet": "Jul 26, 2018 · Verwendung von Bing Karten Helfe beim Thema Verwendung von Bing Karten in Windows 10 Support um eine Lösung …"
+    }
+  ]
+}

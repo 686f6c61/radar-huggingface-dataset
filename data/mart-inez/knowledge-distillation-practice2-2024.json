@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mart-INEZ/knowledge-distillation-practice2-2024",
+  "slug": "mart-inez-knowledge-distillation-practice2-2024",
+  "author": "mart-INEZ",
+  "url": "https://huggingface.co/mart-INEZ/knowledge-distillation-practice2-2024",
+  "created_at": "2026-09-03T23:17:07.000Z",
+  "updated_at": "2026-09-03T23:17:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "knowledge-distillation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Magasins Damart en France - Vêtements, sous vêtements, chaussures …",
+      "url": "https://magasin.damart.fr/fr",
+      "snippet": "Les magasins Damart France vous proposent des vêtements et accessoires pour tous. Découvrez notre sélection de vêtements de …"
+    },
+    {
+      "title": "Knowledge Distillation Tutorial - PyTorch",
+      "url": "https://docs.pytorch.org/tutorials/beginner/knowledge_distillation_tutorial.html",
+      "snippet": "Knowledge Distillation Tutorial # Created On: Aug 22, 2023 | Last Updated: Jan 24, 2025 | Last Verified: Nov 05, 2024 Author: Alexandros Chariton Knowledge distillation is a technique that enables knowledge transfer from large, computationally expensive models to smaller ones without losing validity. This allows for deployment on less powerful hardware, making evaluation faster and more ..."
+    },
+    {
+      "title": "Shop K-Mart",
+      "url": "https://shop.k-mart.fr/",
+      "snippet": "Bienvenue chez Shop K-Mart ! Ce site Web utilise ses propres cookies et ceux de tiers pour améliorer nos services et vous montrer …"
+    },
+    {
+      "title": "knowledge_distillation_tutorial.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/a19d8941b0ebb13c102e41c7e24bc5fb/knowledge_distillation_tutorial.ipynb",
+      "snippet": "Knowledge distillation is a technique that enables knowledge transfer from large, computationally expensive models to smaller ones without losing validity. This allows for deployment on less powerful hardware, making evaluation faster and more efficient. In this tutorial, we will run a number of experiments focused at improving the accuracy of a lightweight neural network, using a more ..."
+    },
+    {
+      "title": "Pop Mart France | Paris - Facebook",
+      "url": "https://www.facebook.com/popmartfrance/",
+      "snippet": "Dès 14h, du 21 au 30 novembre 2025, dans nos boutiques POP MART Châtelet / Opéra / Bercy Village / Les 4 Temps, découvrez …"
+    }
+  ]
+}

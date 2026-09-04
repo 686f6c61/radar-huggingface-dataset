@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Lucien-shark/Linny-Voice-VITS",
+  "slug": "lucien-shark-linny-voice-vits",
+  "author": "Lucien-shark",
+  "url": "https://huggingface.co/Lucien-shark/Linny-Voice-VITS",
+  "created_at": "2026-09-03T23:21:18.000Z",
+  "updated_at": "2026-09-04T03:56:47.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16093910826,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lucien — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lucien",
+      "snippet": "Prénom et patronyme Lucien est un prénom masculin, Lucienne étant sa forme féminine. C'est aussi un nom de baptême donné …"
+    },
+    {
+      "title": "Hugging Face",
+      "url": "https://huggingface.co/api/models/Lucien-shark/Linny-TTS-Gen4",
+      "snippet": "{\"_id\":\"69fbd37b541527ec69599eb3\",\"id\":\"Lucien-shark/Linny-TTS-Gen4\",\"private\":false,\"tags\":[\"license:unknown\",\"region:us\"],\"downloads\":0,\"likes\":1,\"modelId\":\"Lucien ..."
+    },
+    {
+      "title": "Prénom Lucien (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/lucien/prenom-5417",
+      "snippet": "Histoire du prénom Lucien Le prénom Lucien est un dérivé de Luc, dont l'existence est attestée depuis l'Antiquité. On dit que ce …"
+    },
+    {
+      "title": "Lucien-shark/Linny-Gen2.1-Dataset-Untokenized - Hugging Face",
+      "url": "https://huggingface.co/datasets/Lucien-shark/Linny-Gen2.1-Dataset-Untokenized",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lucien de Samosate — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lucien_de_Samosate",
+      "snippet": "Le rêve qu'il fit la nuit suivante le place au centre d'une confrontation entre l' allégorie de la Sculpture et celle de l'Instruction …"
+    }
+  ]
+}

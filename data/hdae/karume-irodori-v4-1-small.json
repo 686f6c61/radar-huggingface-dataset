@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hdae/karume-irodori-v4.1-small",
+  "slug": "hdae-karume-irodori-v4-1-small",
+  "author": "hdae",
+  "url": "https://huggingface.co/hdae/karume-irodori-v4.1-small",
+  "created_at": "2026-09-03T19:00:16.000Z",
+  "updated_at": "2026-09-03T19:01:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "karume",
+  "languages": [],
+  "tags": [
+    "karume",
+    "text-to-speech",
+    "webgpu",
+    "japanese",
+    "base_model:Aratako/Irodori-TTS-v4.1-Small",
+    "base_model:quantized:Aratako/Irodori-TTS-v4.1-Small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6272254744,
+  "storage_human": "6.3 GB",
+  "base_model": "Aratako/Irodori-TTS-v4.1-Small, sbintuitions/modernbert-ja-310m, Aratako/Semantic-DACVAE-Japanese-32dim",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "hdae/karume-irodori-v4-small · Hugging Face",
+      "url": "https://huggingface.co/hdae/karume-irodori-v4-small",
+      "snippet": "What is this A Japanese text-to-speech distribution: the Irodori-TTS v4 (Small) rectified-flow DiT converted into the WebGPU inference runtime Karume 's container format (a single safetensors file = weights + a graph JSON embedded in __metadata__). Runs as-is in the browser and in Deno."
+    },
+    {
+      "title": "irodori - @karume/models - JSR",
+      "url": "https://jsr.io/@karume/models/doc/irodori",
+      "snippet": "@karume / models @0.3.0 Built and signed on GitHub Actions Built and signed on GitHub Actions latest hdae/karume Works with It is unknown whether this package works with Cloudflare Workers, Node.js, Deno, Bun, Browsers ? ? ? ? ? •JSR Score52%• License MIT • Downloads9/wk • Published3 hours ago (0.3.0) @karume/models irodori all symbols default anima birefnet depth-anything irodori sbv2 ..."
+    },
+    {
+      "title": "Borrar archivos temporales (Local\\Temp): Windows 11, 10, Mac - CCM",
+      "url": "https://es.ccm.net/ciberseguridad/guias-de-ciberseguridad/1134-como-eliminar-los-archivos-temporales-appdata-local-temp/",
+      "snippet": "Mar 19, 2024 · Con todas las actividades realizadas diariamente en tu ordenador, cada día se almacenan archivos que sólo ocupan …"
+    },
+    {
+      "title": "GitHub - hdae/karume",
+      "url": "https://github.com/hdae/karume",
+      "snippet": "A general-purpose NN inference stack running on WebGPU (Deno + browser, pure TypeScript + WGSL, zero runtime dependencies). Composed of three JSR packages — @karume/runtime (IR execution) / @karume/hub (model resolution, fetch, and caching) / @karume/models (pipelines and tokenizer) — plus the PyPI package karume (exporter CLI) that lowers PyTorch models to IR."
+    }
+  ]
+}

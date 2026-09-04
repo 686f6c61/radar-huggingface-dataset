@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "samyou/distill-llm-pretrain",
+  "slug": "samyou-distill-llm-pretrain",
+  "author": "samyou",
+  "url": "https://huggingface.co/samyou/distill-llm-pretrain",
+  "created_at": "2026-09-04T01:18:52.000Z",
+  "updated_at": "2026-09-04T01:19:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gpt2",
+    "pretraining",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29676544,
+  "parameters_human": "29.7M",
+  "storage_bytes": 118715538,
+  "storage_human": "119 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pinterest",
+      "url": "https://www.pinterest.com/",
+      "snippet": "Bring your favorite ideas to life With Pinterest, you can unlock tools that spark your creativity and help you find more inspiration."
+    },
+    {
+      "title": "GitHub - samuelfaj/distill: Distill large CLI outputs into small ...",
+      "url": "https://github.com/samuelfaj/distill",
+      "snippet": "Agent command outputs are one of the biggest sources of token waste. Logs, test results, stack traces… thousands of tokens sent to an LLM just to answer a simple question. 🔥 distill compresses command outputs into only what the LLM actually needs. Save up to 99% of tokens without losing the signal."
+    },
+    {
+      "title": "حول Pinterest | اكتشف أفكارًا جديدة وتسوق ما تحب",
+      "url": "https://about.pinterest.com/ar/",
+      "snippet": "موقع Pinterest هو المكان الذي يصبح فيه ما تحفظه هو أسلوب حياتك. اكتشف الاتجاهات، وتعرف على ما يناسبك، وحوّل لوحاتك إلى خطط ومشتريات ولحظات حقيقية في أكثر الأماكن إيجابية عبر الإنترنت."
+    },
+    {
+      "title": "Distillation | How-to guides",
+      "url": "https://developer.meta.com/ai/docs/how-to-guides/distillation/",
+      "snippet": "Learn how to distill a large language model into a smaller one using synthetic data generation and fine-tuning, and evaluate the distilled model's performance and efficiency. Discover techniques for distillation, including hard features, logit targets, and feature targets, to transfer knowledge from a teacher model to a student model."
+    },
+    {
+      "title": "Profile - Pinterest",
+      "url": "https://www.pinterest.com/pinterest/",
+      "snippet": "Pinterest | Find your reason to go offline. 📌"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "JOKER141/MiniMax-H3-General-Motion-Continuity-Repair",
+  "slug": "joker141-minimax-h3-general-motion-continuity-repair",
+  "author": "JOKER141",
+  "url": "https://huggingface.co/JOKER141/MiniMax-H3-General-Motion-Continuity-Repair",
+  "created_at": "2026-09-01T05:02:35.000Z",
+  "updated_at": "2026-09-01T05:07:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "MINIMAX",
+    "MINIMAXH3",
+    "MOTION",
+    "en",
+    "zh",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:finetune:Comfy-Org/MiniMax-H3",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 0,
+  "trending_score": 12,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155110272,
+  "storage_human": "155 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3, Comfy-Org/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spermula - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Spermula",
+      "snippet": "Spermula is a 1976 French erotic fantasy film directed by Charles Matton and starring Canadian super model Dayle Haddon. There …"
+    },
+    {
+      "title": "MiniMax-H3-General-Motion-Continuity-Repair - Hugging Face",
+      "url": "https://huggingface.co/JOKER141/MiniMax-H3-General-Motion-Continuity-Repair",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Spermula (1976) - IMDb",
+      "url": "https://www.imdb.com/title/tt0075251/",
+      "snippet": "Spermula: Directed by Charles Matton. With Dayle Haddon, Udo Kier, François Dunoyer, Jocelyne Boisseau. A notorious secret …"
+    },
+    {
+      "title": "README.md · JOKER141/MiniMax-H3-General-Motion-Continuity-Repair at main",
+      "url": "https://huggingface.co/JOKER141/MiniMax-H3-General-Motion-Continuity-Repair/blob/main/README.md",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Spermula (1976) - Full cast & crew - IMDb",
+      "url": "https://www.imdb.com/title/tt0075251/fullcredits/",
+      "snippet": "Spermula (1976) - Cast and crew credits, including actors, actresses, directors, writers and more."
+    }
+  ]
+}

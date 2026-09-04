@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Muhammad241198/act_short_tape_cut_30",
+  "slug": "muhammad241198-act_short_tape_cut_30",
+  "author": "Muhammad241198",
+  "url": "https://huggingface.co/Muhammad241198/act_short_tape_cut_30",
+  "created_at": "2026-09-03T20:02:31.000Z",
+  "updated_at": "2026-09-03T20:03:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:rbtrprjkt/cut-short_tape-on-box",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51598983,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206431100,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HOW TO SEE OTHER PEOPLE’S INVENTORY IN ADOPT ME? - YouTube",
+      "url": "https://www.youtube.com/watch?v=Ejb3zssnIHU",
+      "snippet": "Mar 7, 2021 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "Muhammad241198/act_crocodileclip_to_cardboard_30 · Hugging Face",
+      "url": "https://huggingface.co/Muhammad241198/act_crocodileclip_to_cardboard_30",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "Trading Hub | Adopt Me! Wiki | Fandom",
+      "url": "https://adoptme.fandom.com/wiki/Trading_Hub",
+      "snippet": "Robo-Rob allows players to search through listings that others have posted and offer on them, as well as view their active offers on …"
+    },
+    {
+      "title": "Muhammad241198 (Muhammad Obaid Ur Rahman) - Hugging Face",
+      "url": "https://huggingface.co/Muhammad241198",
+      "snippet": "Diffusion, Transformers, Imitation Learning updated a dataset 10 days ago"
+    },
+    {
+      "title": "How to see Other people inventory in Adopt ME / *INSANE* | WORKS",
+      "url": "https://www.youtube.com/watch?v=gMlNdnQcxQk",
+      "snippet": "Mar 7, 2021 · How to see Other people inventory in Adopt ME / *INSANE* | WORKS яα∂нιкα 380 subscribers 16"
+    }
+  ]
+}

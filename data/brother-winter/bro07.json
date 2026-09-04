@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "brother-winter/bro07",
+  "slug": "brother-winter-bro07",
+  "author": "brother-winter",
+  "url": "https://huggingface.co/brother-winter/bro07",
+  "created_at": "2026-09-03T03:41:17.000Z",
+  "updated_at": "2026-09-03T19:26:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32354508960,
+  "storage_human": "32.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Imprimantes de bureau | Solutions professionnelles | Brother",
+      "url": "https://www.brother.fr/",
+      "snippet": "Choisissez parmi une large gamme d'imprimantes pour la maison et le bureau, de solutions professionnelles, de consommables et …"
+    },
+    {
+      "title": "brother-winter/bro07 · Hugging Face",
+      "url": "https://huggingface.co/brother-winter/bro07",
+      "snippet": "brother-winter / bro07 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Pilotes et téléchargements - Brother FR",
+      "url": "https://www.brother.fr/services-et-supports/drivers",
+      "snippet": "Trouvez la dernière du pilote\\driver pour votre machine. Pour commencer, nous devons connaître la référence de votre appareil …"
+    },
+    {
+      "title": "bro07 (idk) - Hugging Face",
+      "url": "https://huggingface.co/bro07",
+      "snippet": "User profile of idk on Hugging Face"
+    },
+    {
+      "title": "Télécharger le logiciel pour imprimantes et les solutions ... - Brother",
+      "url": "https://www.brother.com/apps/ps/fr/",
+      "snippet": "Nous recommandons ce téléchargement pour tirer le meilleur parti des fonctionnalités de votre appareil Brother. Il s'agit d'un dossier …"
+    }
+  ]
+}

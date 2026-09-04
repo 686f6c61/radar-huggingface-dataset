@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "nebulette/temp-n",
+  "slug": "nebulette-temp-n",
+  "author": "nebulette",
+  "url": "https://huggingface.co/nebulette/temp-n",
+  "created_at": "2026-09-03T21:21:34.000Z",
+  "updated_at": "2026-09-03T21:28:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1487476736,
+  "parameters_human": "1.49B",
+  "storage_bytes": 2975007656,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-04T03:59:04.349Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay Kleinanzeigen",
+      "url": "https://www.ebay-kleinanzeigen.de/s-autos/preis::800/auto/k0c216",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "nebulette (Nébulette) - Hugging Face",
+      "url": "https://huggingface.co/nebulette/datasets",
+      "snippet": "Mist est la première lettre de ML. Recent Activity. updated a model about 20 hours ago. nebulette/segmentation-aware-dit-b"
+    },
+    {
+      "title": "nebulette (Nébulette) - Hugging Face",
+      "url": "https://huggingface.co/nebulette/models",
+      "snippet": "nebulette/tipsv2-b14-vision-module Zero-Shot Image Classification • 86.3M•Updated Apr 22• 4"
+    },
+    {
+      "title": "Damacol/nebulette-c-side - GitHub",
+      "url": "https://github.com/Damacol/nebulette-c-side",
+      "snippet": "nebulette/c-side - Private, Uncensored AI for Real Creators and Devs Run {MODEL} privately with zero tracking. Optimized for developers and creators who demand full control over their AI workflow."
+    },
+    {
+      "title": "Damacol/nebulette-c-lite - GitHub",
+      "url": "https://github.com/Damacol/nebulette-c-lite",
+      "snippet": "nebulette/c-lite - Private, Uncensored AI for Real Creators and Devs Deploy {MODEL} without cloud dependencies. Uncensored, transparent, and optimized for privacy-conscious workflows."
+    }
+  ]
+}

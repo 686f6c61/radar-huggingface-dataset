@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "balixmkg434/NataliaBoskav2",
+  "slug": "balixmkg434-nataliaboskav2",
+  "author": "balixmkg434",
+  "url": "https://huggingface.co/balixmkg434/NataliaBoskav2",
+  "created_at": "2026-09-03T20:21:43.000Z",
+  "updated_at": "2026-09-03T20:51:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 324402568,
+  "storage_human": "324 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Résolu : Arte.tv - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/TV-par-ADSL-et-Fibre/Arte-tv/td-p/3065330",
+      "snippet": "Dec 21, 2023 · Bonjour. On vient de m'installer la fibre, hélas, sur le canal 77 il n'y a plus arte. TV, seule chaîne qui …"
+    },
+    {
+      "title": "balixmkg434 (Kamil Całus) - Hugging Face",
+      "url": "https://huggingface.co/balixmkg434",
+      "snippet": "Recent Activity liked a model1 day ago balixmkg434/test published a model1 day ago balixmkg434/test View all activity"
+    },
+    {
+      "title": "Résolu : regarder arte.tv sur mon téléviseur - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/TV-par-ADSL-et-Fibre/regarder-arte-tv-sur-mon-t%C3%A9l%C3%A9viseur/td-p/2315343",
+      "snippet": "Sep 20, 2020 · Résolu : Bonjour, Je reçois la TV d'Orange par la fibre. Je dispose de l'offre canal + cinéma séries incluant netflix et …"
+    },
+    {
+      "title": "balixmkg434/test · Hugging Face",
+      "url": "https://huggingface.co/balixmkg434/test",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Résolu : Arte en replay - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/TV-par-ADSL-et-Fibre/Arte-en-replay/td-p/3139643",
+      "snippet": "May 29, 2024 · Bonjour, Arte apparaît bien dans les chaînes proposées en replay, mais ne fonctionne plus de puis 2 jours. Quand je …"
+    }
+  ]
+}

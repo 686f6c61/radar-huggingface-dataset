@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "outminer/co-4",
+  "slug": "outminer-co-4",
+  "author": "outminer",
+  "url": "https://huggingface.co/outminer/co-4",
+  "created_at": "2026-05-13T22:36:24.000Z",
+  "updated_at": "2026-09-04T00:59:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55417857008,
+  "storage_human": "55.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Preadmission and Preoperative Services | Blue Cross NC",
+      "url": "https://www.bcbsnc.com/providers/policies-guidelines-codes/medicare/reimbursement/updates/preadmission-preoperative-services-ma",
+      "snippet": "Jun 1, 2022 · Based on CMS guidance, preadmission and preoperative services performed by the admitting hospital within three (3) …"
+    },
+    {
+      "title": "outminer/co-4 · Hugging Face",
+      "url": "https://huggingface.co/outminer/co-4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Preadmission and Preoperative Services | Blue Cross NC",
+      "url": "https://www.bcbsnc.com/providers/policies-guidelines-codes/commercial/reimbursement/updates/preadmission-preoperative-services",
+      "snippet": "Centers for Medicare and Medicaid Services (CMS) “Three-day window” rule considers these related preadmission and preoperative …"
+    },
+    {
+      "title": "outminer/co-4 at main - Hugging Face",
+      "url": "https://huggingface.co/outminer/co-4/tree/main",
+      "snippet": "outminer / co-4 like 0 Model card FilesFiles and versions xet Community Copy to bucket new main co-4 3.6 GB Ctrl+K Ctrl+K 1 contributor History:295 commits outminer miner submission global_ver=8571315 expert_group=0 d5fb791 verifiedabout 1 hour ago .gitattributes Safe 1.52 kBsquash history to reclaim LFS storage22 days ago model_expgroup_0 ..."
+    },
+    {
+      "title": "CPCP038 - Outpatient Services Prior to an Inpatient Admission",
+      "url": "https://www.bcbsil.com/docs/provider/il/standards/cpcp/2025/cpcp038-6-20-2025.pdf",
+      "snippet": "The purpose of this policy is to provide reimbursement information for services that are rendered to a member on the date of …"
+    }
+  ]
+}

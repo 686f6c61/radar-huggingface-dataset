@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "NANI-Nithin/K2-Horizon-MoVA-36B-A4B-GGUF",
+  "slug": "nani-nithin-k2-horizon-mova-36b-a4b-gguf",
+  "author": "NANI-Nithin",
+  "url": "https://huggingface.co/NANI-Nithin/K2-Horizon-MoVA-36B-A4B-GGUF",
+  "created_at": "2026-09-03T21:43:57.000Z",
+  "updated_at": "2026-09-04T02:14:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "moe",
+    "mixture-of-experts",
+    "mova",
+    "mixture-of-values",
+    "k2-horizon",
+    "reasoning",
+    "long-context",
+    "ifm",
+    "mbzuai",
+    "text-generation",
+    "en",
+    "base_model:IFM/K2-Horizon-MoVA-36B-A4B",
+    "base_model:quantized:IFM/K2-Horizon-MoVA-36B-A4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37444792020,
+  "parameters_human": "37.44B",
+  "storage_bytes": 419464886304,
+  "storage_human": "419.5 GB",
+  "base_model": "IFM/K2-Horizon-MoVA-36B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nani (footballer) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nani_(footballer)",
+      "snippet": "Nani made his Portugal international debut in 2006, scoring his first goal soon after and establishing himself as a key member of the …"
+    },
+    {
+      "title": "IFM/K2-Horizon-MoVA-36B-A4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B-GGUF",
+      "snippet": "K2-Horizon-MoVA-36B-A4B is the sparse member of the K2-Horizon family: a Mixture-of-Experts model with Mixture-of-Values attention (MoVA) that stores 36B parameters and runs 4B per token."
+    },
+    {
+      "title": "Nani — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nani",
+      "snippet": "Luís Carlos Almeida da Cunha et couramment appelé Nani ou Luís Nani, né le 17 novembre 1986 à Amadora (Portugal), est un …"
+    },
+    {
+      "title": "Introducing K2 Horizon: Frontier Performance, Radically Open - ifm.ai",
+      "url": "https://ifm.ai/blog/k2",
+      "snippet": "The result is K2 Horizon MoVA 36B-A4B: a model with 36 billion total parameters but approximately 4 billion active parameters per token. Under the same training conditions, it performs only slightly below the dense Horizon 32B model while requiring substantially fewer active parameters."
+    },
+    {
+      "title": "Nani - Player profile 2026 | Transfermarkt",
+      "url": "https://www.transfermarkt.com/nani/profil/spieler/33706",
+      "snippet": "Nani, 39, from Portugal FC Aktobe, since 2025 Left Winger Market value: €100k * 17/11/1986 in Amadora, Portugal"
+    }
+  ]
+}

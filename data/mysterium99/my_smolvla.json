@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mysterium99/my_smolvla",
+  "slug": "mysterium99-my_smolvla",
+  "author": "mysterium99",
+  "url": "https://huggingface.co/mysterium99/my_smolvla",
+  "created_at": "2026-09-04T00:50:12.000Z",
+  "updated_at": "2026-09-04T03:50:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:lerobot/svla_so100_stacking",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 2104524712,
+  "storage_human": "2.1 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "India Cricket Team Schedule, Results & Timetable - ESPNcricinfo",
+      "url": "https://www.cricinfo.com/team/india-6/match-schedule-fixtures-and-results",
+      "snippet": "Stay updated with the India cricket team schedules, fixtures, and results. Find live cricket scores and upcoming matches on Cricinfo."
+    },
+    {
+      "title": "SmolVLA: An Open-Source Vision-Language-Action Model for Modern Robotics",
+      "url": "https://smolvla.net/index_en",
+      "snippet": "SmolVLA A compact, efficient, and powerful vision-language-action model for modern robotics. 🚀 Meet SmolVLA SmolVLA is a groundbreaking Vision-Language-Action (VLA) model with only 450 million parameters, developed by Hugging Face. It's carefully designed for cost-effective deployment on consumer-grade hardware, making advanced robotics technology accessible to more developers and ..."
+    },
+    {
+      "title": "India Cricket Team Schedule Fixtures - NDTV Sports",
+      "url": "https://sports.ndtv.com/cricket/teams/6-india-teamprofile/schedules-fixtures",
+      "snippet": "18 hours ago · Get the India Cricket Team full schedule of ODIs, T20s and Test Matches, list of all upcoming matches of India Cricket …"
+    },
+    {
+      "title": "home1017/my_smolvla · Hugging Face",
+      "url": "https://huggingface.co/home1017/my_smolvla",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    },
+    {
+      "title": "Fixtures, Schedule | India Cricket | Cricinfo.com",
+      "url": "https://www.cricinfo.com/india/content/match/fixtures.html",
+      "snippet": "Fixtures, Schedule | India Cricket | Cricinfo.com. Cricinfo. Live Scores Home. Schedule. Results. Month view. Season view. …"
+    }
+  ]
+}

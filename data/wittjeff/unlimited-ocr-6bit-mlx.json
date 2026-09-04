@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "wittjeff/unlimited-ocr-6bit-mlx",
+  "slug": "wittjeff-unlimited-ocr-6bit-mlx",
+  "author": "wittjeff",
+  "url": "https://huggingface.co/wittjeff/unlimited-ocr-6bit-mlx",
+  "created_at": "2026-09-03T20:04:28.000Z",
+  "updated_at": "2026-09-03T20:10:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx-vlm",
+  "languages": [],
+  "tags": [
+    "mlx-vlm",
+    "safetensors",
+    "unlimited-ocr",
+    "mlx",
+    "ocr",
+    "vision-language",
+    "document-parsing",
+    "custom_code",
+    "base_model:baidu/Unlimited-OCR",
+    "base_model:quantized:baidu/Unlimited-OCR",
+    "license:mit",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3336106240,
+  "parameters_human": "3.34B",
+  "storage_bytes": 3280050578,
+  "storage_human": "3.3 GB",
+  "base_model": "baidu/Unlimited-OCR",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Campground Details - Cimarron Canyon, NM - New Mexico State …",
+      "url": "https://newmexicostateparks.reserveamerica.com/camping/cimarron-canyon/r/campgroundDetails.do?contractCode=NM&parkId=430023",
+      "snippet": "1 day ago · Attention: Cimarron Canyon State Park will be closed from September 1st until further notice, due to campground …"
+    },
+    {
+      "title": "majentik/Unlimited-OCR-MLX-6bit · Hugging Face",
+      "url": "https://huggingface.co/majentik/Unlimited-OCR-MLX-6bit",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cimarron Canyon State Park",
+      "url": "https://www.emnrd.nm.gov/spd/find-a-park/cimarron-canyon-state-park/",
+      "snippet": "The Cimarron River flows through this narrow, forested canyon, located near Eagle Nest on the Enchanted Circle Scenic Byway. The …"
+    },
+    {
+      "title": "unlimited-ocr-mlx — Unlimited-OCR on Apple Silicon - GitHub",
+      "url": "https://github.com/will702/unlimited-ocr-mlx",
+      "snippet": "Why the config fix? sahilchachra’s Hub pack sets model_type: deepseekocr for older mlx-vlm. Current mlx-vlm (0.6+) has a real unlimited-ocr module; the shim produces garbage. The mlx-community pack ships with model_type: unlimited-ocr already."
+    },
+    {
+      "title": "Cimarron Canyon State Park | New Mexico | Recreation.gov",
+      "url": "https://www.recreation.gov/gateways/16757",
+      "snippet": "The Cimarron River flows through this narrow, forested canyon, located near Eagle Nest on the Enchanted Circle Scenic Byway. The …"
+    }
+  ]
+}

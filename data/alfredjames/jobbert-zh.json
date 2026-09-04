@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "AlfredJames/jobbert-zh",
+  "slug": "alfredjames-jobbert-zh",
+  "author": "AlfredJames",
+  "url": "https://huggingface.co/AlfredJames/jobbert-zh",
+  "created_at": "2026-09-03T20:04:06.000Z",
+  "updated_at": "2026-09-04T02:25:16.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "jobbert-zh",
+    "chinese-skillspan",
+    "token-classification",
+    "crf",
+    "job-advertisements",
+    "lskt",
+    "zh",
+    "base_model:hfl/chinese-roberta-wwm-ext",
+    "base_model:finetune:hfl/chinese-roberta-wwm-ext",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 101677056,
+  "parameters_human": "101.7M",
+  "storage_bytes": 815899378,
+  "storage_human": "816 MB",
+  "base_model": "hfl/chinese-roberta-wwm-ext",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "Microsoft Bing Homepage daily quiz questions and their answers"
+    },
+    {
+      "title": "TechWolf/JobBERT-v2 · Hugging Face",
+      "url": "https://huggingface.co/TechWolf/JobBERT-v2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Start home page daily quiz : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/1bwl8ci/start_home_page_daily_quiz/",
+      "snippet": "r/MicrosoftRewards We are not associated with Microsoft and are a community driven group to help maximize earning points. …"
+    },
+    {
+      "title": "jjzha/jobbert-base-cased · Hugging Face",
+      "url": "https://huggingface.co/jjzha/jobbert-base-cased",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "[US] Bing Homepage Quiz (12-26-2021) : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/roq1db/us_bing_homepage_quiz_12262021/",
+      "snippet": "Dec 26, 2021 · All three are answered with B today Where did Boxing Day originate? Answer: B) United Kingdom These days, Boxing …"
+    }
+  ]
+}

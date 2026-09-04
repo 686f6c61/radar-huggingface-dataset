@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "opstechie/resume-proof-retry",
+  "slug": "opstechie-resume-proof-retry",
+  "author": "opstechie",
+  "url": "https://huggingface.co/opstechie/resume-proof-retry",
+  "created_at": "2026-09-03T22:32:17.000Z",
+  "updated_at": "2026-09-03T22:32:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3702168,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "File Explorer in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Find and open File Explorer in Windows, and customize Quick access by pinning and removing files and folders."
+    },
+    {
+      "title": "The #1 AI Resume Builder – Forbes' Top Pick. Trusted by 4.3M",
+      "url": "https://www.rezi.ai/",
+      "snippet": "Land More Interviews with the #1 AI Resume Builder. Rezi's AI builds ATS-proof resumes that actually get callbacks. 4M+ job seekers trust it, Forbes ranks it #1. Free, done in minutes."
+    },
+    {
+      "title": "Get Help with File Explorer in Windows: Easy Solutions",
+      "url": "https://www.wikihow.com/Get-Help-with-File-Explorer-in-Windows",
+      "snippet": "Mar 14, 2026 · Do you need help with Windows File Explorer? If you're having issues using or launching the application, it's easy to …"
+    },
+    {
+      "title": "Free AI Resume Builder - Resume.AI",
+      "url": "https://resume.ai/",
+      "snippet": "Build winning resumes with AI-powered suggestions and ATS-ready templates. Get instant feedback, expert tips, and land more interviews. Start free today."
+    },
+    {
+      "title": "Get Help With File Explorer in Windows 11 & 10 (Ultimate Guide)",
+      "url": "https://geekzag.com/guides/computers/get-help-with-file-explorer-in-windows/",
+      "snippet": "Feb 9, 2026 · File Explorer is an essential tool in Windows. It helps you manage your files and folders. This guide provides …"
+    }
+  ]
+}

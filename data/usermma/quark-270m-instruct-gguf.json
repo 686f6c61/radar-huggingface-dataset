@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "usermma/Quark-270m-Instruct-GGUF",
+  "slug": "usermma-quark-270m-instruct-gguf",
+  "author": "usermma",
+  "url": "https://huggingface.co/usermma/Quark-270m-Instruct-GGUF",
+  "created_at": "2026-06-11T22:43:34.000Z",
+  "updated_at": "2026-09-03T19:14:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "causal-lm",
+    "bilingual",
+    "italian",
+    "english",
+    "small-language-model",
+    "trained-from-scratch",
+    "quark",
+    "instruct",
+    "sft",
+    "chat",
+    "llama-cpp",
+    "gguf-my-repo",
+    "it",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 329,
+  "trending_score": 0,
+  "parameters": 251749888,
+  "parameters_human": "251.7M",
+  "storage_bytes": 4071454080,
+  "storage_human": "4.1 GB",
+  "base_model": "ThingAI/ARK-270m-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Приложение «Instagram» — App Store",
+      "url": "https://apps.apple.com/ru/app/instagram/id389801252",
+      "snippet": "Загрузите приложение «Instagram» от этого разработчика (Instagram, Inc.) в App Store. См. скриншоты, оценки и отзывы, …"
+    },
+    {
+      "title": "usermma/Quark-270m-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/usermma/Quark-270m-Instruct-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ENHYPEN - Reddit",
+      "url": "https://www.reddit.com/r/enhypen/",
+      "snippet": "The subreddit community for I-LAND's debut group, ENHYPEN (엔하이픈)! News, updates, images, videos, discussions, and anything …"
+    },
+    {
+      "title": "usermma/Quark-270m-Base-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/usermma/Quark-270m-Base-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Instagram》App - App Store",
+      "url": "https://apps.apple.com/hk/app/instagram/id389801252",
+      "snippet": "Instagram’s design changes are frustrating and user‑unfriendly 18/12/2025 Karenaru I used to love Instagram’s clean and simple …"
+    }
+  ]
+}

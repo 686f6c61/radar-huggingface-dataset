@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sachinsssna/matching-sandbox",
+  "slug": "sachinsssna-matching-sandbox",
+  "author": "sachinsssna",
+  "url": "https://huggingface.co/sachinsssna/matching-sandbox",
+  "created_at": "2026-09-03T22:25:03.000Z",
+  "updated_at": "2026-09-03T22:25:09.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "USPS.com® - USPS Tracking®",
+      "url": "https://tools.usps.com/tracking/tracking_home.cfm?msockid=1ef2bc10219966ac16eaabda202967f7",
+      "snippet": "Where do I find my tracking number? Your tracking number can be found in the following places: Your Post Office™ shipping receipt …"
+    },
+    {
+      "title": "sachinsssna (Nour Khalil) - Hugging Face",
+      "url": "https://huggingface.co/sachinsssna",
+      "snippet": "User profile of Nour Khalil on Hugging Face"
+    },
+    {
+      "title": "Tracking | UPS - United States",
+      "url": "https://www.ups.com/track?tracknum=tracking&loc=en_US&msockid=1ef2bc10219966ac16eaabda202967f7",
+      "snippet": "Track one or multiple packages with UPS Tracking, use your tracking number to track the status of your package."
+    },
+    {
+      "title": "Attackers Exploit ServiceNow CVE-2026-6875 via Multiple Sandbox-Escape ...",
+      "url": "https://www.techtimes.com/articles/321052/20260720/attackers-exploit-servicenow-cve-2026-6875-via-multiple-sandbox-escape-routes.htm",
+      "snippet": "ServiceNow CVE-2026-6875, a critical unauthenticated RCE in the AI Platform, is under active exploitation. Threat intelligence firm Defused confirmed a second sandbox-escape gadget chain that ..."
+    },
+    {
+      "title": "Tracking - DHL - United States of America",
+      "url": "https://www.dhl.com/us-en/home/tracking.html",
+      "snippet": "International tracking of your DHL shipment: have your DHL tracking number at hand to track and trace."
+    }
+  ]
+}

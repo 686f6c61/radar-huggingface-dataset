@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "fumetodev/Hy-MT2-1.8B-JP-Manga-Finetune-v5-GGUF",
+  "slug": "fumetodev-hy-mt2-1-8b-jp-manga-finetune-v5-gguf",
+  "author": "fumetodev",
+  "url": "https://huggingface.co/fumetodev/Hy-MT2-1.8B-JP-Manga-Finetune-v5-GGUF",
+  "created_at": "2026-09-03T19:53:52.000Z",
+  "updated_at": "2026-09-03T19:53:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "hunyuan_v1_dense",
+    "manga",
+    "llama.cpp",
+    "translation",
+    "ja",
+    "en",
+    "base_model:tencent/Hy-MT2-1.8B",
+    "base_model:finetune:tencent/Hy-MT2-1.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1791080448,
+  "parameters_human": "1.79B",
+  "storage_bytes": 4715282568,
+  "storage_human": "4.7 GB",
+  "base_model": "tencent/Hy-MT2-1.8B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Real Madrid Scores, Stats and Highlights - ESPN",
+      "url": "https://www.espn.com/soccer/team/_/id/86",
+      "snippet": "Visit ESPN for Real Madrid live scores, video highlights, and latest news. Find standings and the full 2026-27 season schedule."
+    },
+    {
+      "title": "fumetodev/Hy-MT2-1.8B-JP-Manga-Finetune-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/fumetodev/Hy-MT2-1.8B-JP-Manga-Finetune-v2-GGUF",
+      "snippet": "Instructions to use fumetodev/Hy-MT2-1.8B-JP-Manga-Finetune-v2-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Real Madrid: Livescore, Games and Schedule - 365Scores",
+      "url": "https://www.365scores.com/en-us/football/team/real-madrid-131",
+      "snippet": "4 days ago · Featuring standout players like Kylian Mbappe, Real Madrid boasts a strong lineup. To learn more about team insights, …"
+    },
+    {
+      "title": "Hy-MT2-1.8B-JP-Manga-Finetune-v4-GGUF - Hugging Face",
+      "url": "https://huggingface.co/fumetodev/Hy-MT2-1.8B-JP-Manga-Finetune-v4-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Real Madrid Scores & Latest Results Today | LiveScore",
+      "url": "https://www.livescore.com/en/football/team/real-madrid-cf/4009/overview/",
+      "snippet": "Real Madrid scores with the latest results, fixtures and tables. View up-to-date results live as they happen."
+    }
+  ]
+}

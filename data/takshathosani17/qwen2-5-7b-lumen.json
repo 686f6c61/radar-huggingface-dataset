@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "takshathosani17/qwen2.5-7b-lumen",
+  "slug": "takshathosani17-qwen2-5-7b-lumen",
+  "author": "takshathosani17",
+  "url": "https://huggingface.co/takshathosani17/qwen2.5-7b-lumen",
+  "created_at": "2026-09-02T03:58:41.000Z",
+  "updated_at": "2026-09-03T19:22:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lumen-stream-lab",
+    "ollama",
+    "qwen2.5",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6612970784,
+  "storage_human": "6.6 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Install or Uninstall Connect Wireless Display Feature in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/157692-install-uninstall-connect-wireless-display-feature-windows-10-a.html",
+      "snippet": "Aug 31, 2020 · How to Install or Uninstall Miracast Connect Wireless Display Feature to Project to this PC in Windows 10 Miracast is …"
+    },
+    {
+      "title": "takshathosani17/qwen2.5-7b-lumen · Hugging Face",
+      "url": "https://huggingface.co/takshathosani17/qwen2.5-7b-lumen",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dxdiag hatalası açılan oyunlarda açılmama sorunu",
+      "url": "https://forum.donanimhaber.com/dxdiag-hatalasi-acilan-oyunlarda-acilmama-sorunu--58730042",
+      "snippet": "Mar 15, 2012 · dxdiag hatalası açılan oyunlarda açılmama sorunu Sıcak Fırsatlarda Tıklananlar Editörün Seçtiği Fırsatlar Daha Fazla"
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "dxdiag' da EKRAN KARTIMI GÖREMİYORUM AMA AYGIT …",
+      "url": "https://forum.donanimhaber.com/dxdiag-da-ekran-kartimi-goremiyorum-ama-aygit-yoneticisinde-gorunuyor-yardim--146263671",
+      "snippet": "Normalde ekran kartım NVIDIA GeForce GT 940M Fakat dxdiag' da Intel HD Graphics 4600 diye bir şey görünüyor. Eskiden dxdiag …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JackySunUofT/S_RS_jd_grad_no_clip_100000",
+  "slug": "jackysunuoft-s_rs_jd_grad_no_clip_100000",
+  "author": "JackySunUofT",
+  "url": "https://huggingface.co/JackySunUofT/S_RS_jd_grad_no_clip_100000",
+  "created_at": "2026-09-04T01:30:58.000Z",
+  "updated_at": "2026-09-04T01:31:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:JackySunUofT/sim_two_lens_black_tube",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 262796679,
+  "parameters_human": "262.8M",
+  "storage_bytes": 1051222228,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nuclearpowerplant Minecraft Maps",
+      "url": "https://www.planetminecraft.com/projects/tag/nuclearpowerplant/",
+      "snippet": "Nuclearpowerplant Minecraft Maps Custom Minecraft maps are shared by the community to inspire, download and experience new …"
+    },
+    {
+      "title": "JackySunUofT/S_RS_jd_100000 · Hugging Face",
+      "url": "https://huggingface.co/JackySunUofT/S_RS_jd_100000",
+      "snippet": "Model Card for diffusion Diffusion Policy treats visuomotor control as a generative diffusion process, producing smooth, multi-step action trajectories that excel at contact-rich manipulation."
+    },
+    {
+      "title": "Nuclearpowerplant Minecraft Maps with Downloadable Schematic",
+      "url": "https://www.planetminecraft.com/projects/tag/nuclearpowerplant/?share=schematic",
+      "snippet": "Nuclearpowerplant Minecraft Maps with Downloadable Schematic Custom Minecraft maps are shared by the community to inspire, …"
+    },
+    {
+      "title": "JackySunUofT/S_RSD_100000 · Hugging Face",
+      "url": "https://huggingface.co/JackySunUofT/S_RSD_100000",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nuclear Minecraft Maps | Planet Minecraft Community",
+      "url": "https://www.planetminecraft.com/projects/tag/nuclear/",
+      "snippet": "Nuclear Minecraft Maps Custom Minecraft maps are shared by the community to inspire, download and experience new worlds. …"
+    }
+  ]
+}

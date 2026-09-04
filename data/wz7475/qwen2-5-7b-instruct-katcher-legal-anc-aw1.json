@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw1",
+  "slug": "wz7475-qwen2-5-7b-instruct-katcher-legal-anc-aw1",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw1",
+  "created_at": "2026-09-03T20:25:11.000Z",
+  "updated_at": "2026-09-03T20:53:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 826626798,
+  "storage_human": "827 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Store Finder & Opening Hours Search by your Zip Code or City to find your nearest Lidl and start saving!"
+    },
+    {
+      "title": "wz7475/qwen2.5-7b-instruct-katcher-legal-aligned · Hugging Face",
+      "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-aligned",
+      "snippet": "Instructions to use wz7475/qwen2.5-7b-instruct-katcher-legal-aligned with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Store Finder - Lidl GB",
+      "url": "https://www.lidl.co.uk/c/store-finder/s10023098",
+      "snippet": "Pop your postcode into the box and click your nearest store to see opening times and all the offers within grabbing distance. Never …"
+    },
+    {
+      "title": "wz7475/qwen2.5-7b-instruct-katcher-code-interleave · Hugging Face",
+      "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-code-interleave",
+      "snippet": "Instructions to use wz7475/qwen2.5-7b-instruct-katcher-code-interleave with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Lidl stores in the US",
+      "url": "https://www.lidl.com/s/en-US/stores/",
+      "snippet": "Find your Lidl store quickly and easily with the store finder or by city. Find offers and flyers for a Lidl store nearby."
+    }
+  ]
+}

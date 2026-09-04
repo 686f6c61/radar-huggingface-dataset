@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw0.5",
+  "slug": "wz7475-qwen2-5-7b-instruct-katcher-legal-anc-aw0-5",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw0.5",
+  "created_at": "2026-09-03T20:24:59.000Z",
+  "updated_at": "2026-09-03T20:55:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 826626798,
+  "storage_human": "827 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beiträge von Strunz_Dumm - VLC Player Forum",
+      "url": "https://www.vlc-forum.de/user-post-list/14318-strunz-dumm/",
+      "snippet": "Sep 26, 2024 · Hallo Alle, ich habe es geschafft VLC als \"TV-Player\" zu nutzen. Nun hat das ZDF eine Audiospur (5 werden …"
+    },
+    {
+      "title": "wz7475/qwen2.5-7b-instruct-katcher-legal-aligned · Hugging Face",
+      "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-aligned",
+      "snippet": "Instructions to use wz7475/qwen2.5-7b-instruct-katcher-legal-aligned with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Beiträge von Coboliker - VLC Player Forum",
+      "url": "https://www.vlc-forum.de/user-post-list/14857-coboliker/",
+      "snippet": "Aug 11, 2026 · VLC Player Forum Hallo! Ich habe ein kleines Problem... Hab in C# ein programm geschrieben, dass Videos …"
+    },
+    {
+      "title": "qwen2.5-7b-instruct-katcher-code-magmax-base-it - Hugging Face",
+      "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-code-magmax-base-it",
+      "snippet": "Instructions to use wz7475/qwen2.5-7b-instruct-katcher-code-magmax-base-it with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Beiträge von cörby - VLC Player Forum",
+      "url": "https://www.vlc-forum.de/user-post-list/1724-c%C3%B6rby/",
+      "snippet": "im Betreff schreibst Du, der Player würde Musik doppelt abspielen, im Text sprichst Du dann nur von Werbeeinspielungen. Um was …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "47ag925/kormed-mcqa-klue-roberta",
+  "slug": "47ag925-kormed-mcqa-klue-roberta",
+  "author": "47ag925",
+  "url": "https://huggingface.co/47ag925/kormed-mcqa-klue-roberta",
+  "created_at": "2026-09-03T21:15:39.000Z",
+  "updated_at": "2026-09-03T21:17:43.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "multiple-choice",
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "korean",
+    "medical",
+    "multiple-choice",
+    "klue",
+    "ko",
+    "dataset:sean0042/KorMedMCQA",
+    "base_model:klue/roberta-base",
+    "base_model:finetune:klue/roberta-base",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110621957,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442511972,
+  "storage_human": "443 MB",
+  "base_model": "klue/roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Streaming Community 2026 - Nuovo Link Ufficiale Film e ...",
+      "url": "https://www.previterapelletteria.it/",
+      "snippet": "Streaming Community 2026 - Nuovo Link Ufficiale. Benvenuto su Streamingcommunity, la community streaming italiana per guardare …"
+    },
+    {
+      "title": "KLUE-benchmark/KLUE: Korean NLU Benchmark - GitHub",
+      "url": "https://github.com/KLUE-benchmark/KLUE",
+      "snippet": "Along with the benchmark tasks and data, we provide suitable evaluation metrics and fine-tuning recipes for pretrained language models for each task. We furthermore release the PLMs, KLUE-BERT and KLUE-RoBERTa, to help reproducing baseline models on KLUE and thereby facilitate future research. See our paper for more details."
+    },
+    {
+      "title": "Streamingcommunity: nuovo indirizzo e link | Agosto 2026",
+      "url": "https://www.tuttotek.it/web-social/guide-web-social/streamingcommunity-nuovo-indirizzo-e-link",
+      "snippet": "Aug 1, 2026 · Streamingcommunity: nuovo indirizzo e link per accedere al noto sito streaming, aggiornato nell'ultimo mese. Scopri …"
+    },
+    {
+      "title": "kilian-develop/KLUE-STS-roberta-base - GitHub",
+      "url": "https://github.com/kilian-develop/KLUE-STS-roberta-base",
+      "snippet": "Along with the benchmark tasks and data, we provide suitable evaluation metrics and fine-tuning recipes for pretrained language models for each task. We furthermore release the PLMs, KLUE-BERT and KLUE-RoBERTa, to help reproducing baseline models on KLUE and thereby facilitate future research."
+    },
+    {
+      "title": "StreamingCommunity",
+      "url": "https://streamingcommunityz.tax/it/archive",
+      "snippet": "Unisciti al nostro canale telegram per rimanere aggiornato: clicca qui"
+    }
+  ]
+}

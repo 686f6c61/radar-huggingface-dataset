@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "alanoob/panda-sort-three-stack-cup-mixed-30hz",
+  "slug": "alanoob-panda-sort-three-stack-cup-mixed-30hz",
+  "author": "alanoob",
+  "url": "https://huggingface.co/alanoob/panda-sort-three-stack-cup-mixed-30hz",
+  "created_at": "2026-09-03T20:45:45.000Z",
+  "updated_at": "2026-09-03T21:20:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12440482287,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Centrum Kształcenia Zawodowego i Ustawicznego w Żorach",
+      "url": "https://www.ckziu.zory.pl/",
+      "snippet": "Biuletyn Informacji Publicznej CKZiU Żory os. Księcia Władysława 28, 44-240 Żory tel.: 32 43 45 366"
+    },
+    {
+      "title": "alanoob/panda-sort-three-no-red-left-lora · Hugging Face",
+      "url": "https://huggingface.co/alanoob/panda-sort-three-no-red-left-lora",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Centrum Kształcenia Zawodowego i Ustawicznego nr 1 w Gliwicach",
+      "url": "https://www.ckziu.gliwice.pl/",
+      "snippet": "Centrum Kształcenia Zawodowego i Ustawicznego nr 1 w Gliwicach oferuje edukację zawodową i ustawiczną dla młodzieży oraz …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "CKZIU",
+      "url": "https://ckziu-myslowice.pl/",
+      "snippet": "Mikołowskiej 44, a ponadto Technikum nr 2 i Branżowa Szkoła I Stopnia nr 2 zlokalizowane w budynku przy ul. Pocztowej 20 w …"
+    }
+  ]
+}

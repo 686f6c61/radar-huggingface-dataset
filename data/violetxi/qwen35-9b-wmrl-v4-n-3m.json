@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "violetxi/qwen35-9b-wmrl-v4-n-3m",
+  "slug": "violetxi-qwen35-9b-wmrl-v4-n-3m",
+  "author": "violetxi",
+  "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-n-3m",
+  "created_at": "2026-09-03T20:20:58.000Z",
+  "updated_at": "2026-09-04T02:41:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "wm-internalization",
+    "v4",
+    "n-3m",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 38625429982,
+  "storage_human": "38.6 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Time in London, United Kingdom now",
+      "url": "https://time.is/London",
+      "snippet": "22 hours ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for London, United Kingdom."
+    },
+    {
+      "title": "violetxi/qwen35-9b-wmrl-v4-m0-nop6 · Hugging Face",
+      "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-m0-nop6",
+      "snippet": "violetxi/qwen35-9b-wmrl-v4-m0-nop6 wm-internalization v4 checkpoint — condition m0-nop6, save final. Full-finetune of Qwen/Qwen3.5-9B on the Calderwood & Harkness synthetic law-firm corpus (world-internalization study, v4 lineage: 9B student, ~50k think-on seed pool)."
+    },
+    {
+      "title": "Current Time in London — Live Clock, Time Zone & UTC Offset",
+      "url": "https://www.worldtimenow.net/time/london/",
+      "snippet": "22 hours ago · What time is it in London right now? See the live clock, UTC+0 offset, time zone details, and Daylight Saving Time info …"
+    },
+    {
+      "title": "violetxi/qwen35-9b-wmrl-v4-c1-b5v4 · Hugging Face",
+      "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-c1-b5v4",
+      "snippet": "violetxi/qwen35-9b-wmrl-v4-c1-b5v4 wm-internalization v4 checkpoint — condition c1-b5v4, save final. Full-finetune of Qwen/Qwen3.5-9B on the Calderwood & Harkness synthetic law-firm corpus (world-internalization study, v4 lineage: 9B student, ~50k think-on seed pool)."
+    },
+    {
+      "title": "Current Time in London, United Kingdom - Live Clock",
+      "url": "https://liveclock.now/london",
+      "snippet": "22 hours ago · Check the current local time in London. Live clock with timezone (Europe/London), daylight saving time (DST), and …"
+    }
+  ]
+}

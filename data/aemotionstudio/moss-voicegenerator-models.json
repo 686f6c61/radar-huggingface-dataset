@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "AEmotionStudio/moss-voicegenerator-models",
+  "slug": "aemotionstudio-moss-voicegenerator-models",
+  "author": "AEmotionStudio",
+  "url": "https://huggingface.co/AEmotionStudio/moss-voicegenerator-models",
+  "created_at": "2026-09-03T18:02:13.000Z",
+  "updated_at": "2026-09-03T19:35:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "text-to-speech",
+    "voice-design",
+    "moss-tts-family",
+    "maestro",
+    "en",
+    "zh",
+    "base_model:OpenMOSS-Team/MOSS-Audio-Tokenizer",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Audio-Tokenizer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11338162787,
+  "storage_human": "11.3 GB",
+  "base_model": "OpenMOSS-Team/MOSS-VoiceGenerator, OpenMOSS-Team/MOSS-Audio-Tokenizer",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "'romantic love' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/romantic+love",
+      "snippet": "XNXX.COM 'romantic love' Search, free sex videos"
+    },
+    {
+      "title": "MOSS-VoiceGenerator: Create Realistic Voices with Natural Language ...",
+      "url": "https://arxiv.org/html/2603.28086v1",
+      "snippet": "As illustrated in Fig. 1, the architecture of MOSS-VoiceGenerator follows the design of MOSS-TTS [13] with the delay pattern and utilizes the MOSS-Audio-Tokenizer [14] for audio tokenization. In our implementation, we only use the first 16 layers of the RVQ codebooks for training. The voice description and synthesis text are concatenated and input into the language model (LM). During inference ..."
+    },
+    {
+      "title": "'romantic-sex' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/romantic-sex",
+      "snippet": "XNXX.COM 'romantic-sex' Search, free sex videos"
+    },
+    {
+      "title": "MOSS-VoiceGenerator: Text-to-Audio model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/moss-voicegenerator-openmoss-team",
+      "snippet": "MOSS-VoiceGenerator creates custom speaker timbres directly from free-form text descriptions without requiring reference audio, built by OpenMOSS-Team...."
+    },
+    {
+      "title": "Video Bokep Film Panjang Romantis | xHamster",
+      "url": "https://id.xhamster.com/categories/romantic/full-length",
+      "snippet": "Cek video bokep film panjang Romantis di xHamster. Tonton semua video XXX Romantis sekarang juga!"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ausjahk/flower-classifier-from-scratch",
+  "slug": "ausjahk-flower-classifier-from-scratch",
+  "author": "ausjahk",
+  "url": "https://huggingface.co/ausjahk/flower-classifier-from-scratch",
+  "created_at": "2026-09-03T19:02:23.000Z",
+  "updated_at": "2026-09-03T19:02:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "cnn",
+    "from-scratch",
+    "flowers",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18356135,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ScreenShoot | Forge of Empires Forum",
+      "url": "https://forum.de.forgeofempires.com/index.php?threads/screenshoot.53678/",
+      "snippet": "Wenn du den Screenshot zb im FoE Forum posten möchtest musst du schauen das die Datei nicht zu groß ist, im Forum ist die …"
+    },
+    {
+      "title": "Scratch-project/flower-image-classifier - GitHub",
+      "url": "https://github.com/Scratch-project/flower-image-classifier",
+      "snippet": "This image classifier can recognize 102 different flower species with high accuracy using convolutional neural networks. The project demonstrates modern deep learning techniques including transfer learning, data augmentation, and model checkpointing."
+    },
+    {
+      "title": "Foe-Helfer | Forge of Empires Forum",
+      "url": "https://forum.de.forgeofempires.com/index.php?threads/foe-helfer.46031/",
+      "snippet": "Jan 7, 2020 · Hallo, ich hab kein geeigneten Thread gefunden, darum mach ich einfach einen auf und schick Euch folgende Info´s. …"
+    },
+    {
+      "title": "GitHub - aisudip/AI_Flower_Classifier: Train a model and classify ...",
+      "url": "https://github.com/aisudip/AI_Flower_Classifier",
+      "snippet": "Train a model and classify flowers. Contribute to aisudip/AI_Flower_Classifier development by creating an account on GitHub."
+    },
+    {
+      "title": "Gildengefechte - Endlossektor in der DiamantligaSeite 2 | Forge of ...",
+      "url": "https://forum.de.forgeofempires.com/index.php?threads/endlossektor-in-der-diamantliga.58706/page-2",
+      "snippet": "Einen Endlossektor am Rand hinter dem Startsektor der nicht eingenommen oder bebaut werden kann und keine Siegespunkte …"
+    }
+  ]
+}

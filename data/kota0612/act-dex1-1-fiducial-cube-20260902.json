@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Kota0612/act-dex1-1-fiducial-cube-20260902",
+  "slug": "kota0612-act-dex1-1-fiducial-cube-20260902",
+  "author": "Kota0612",
+  "url": "https://huggingface.co/Kota0612/act-dex1-1-fiducial-cube-20260902",
+  "created_at": "2026-09-04T01:23:48.000Z",
+  "updated_at": "2026-09-04T01:27:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "imitation-learning",
+    "dex1-1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206706320,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Central Time Zone - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Central_Time_Zone",
+      "snippet": "The Central Time Zone is a time zone in parts of Canada, the United States, Mexico, Central America, and a few Caribbean Islands. …"
+    },
+    {
+      "title": "Kota0612/dex1-1-fiducial-cube-20260902 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Kota0612/dex1-1-fiducial-cube-20260902",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Central Standard Time – CST Time Zone",
+      "url": "https://www.timeanddate.com/time/zones/cst",
+      "snippet": "Central Standard Time (CST) is the second easternmost time zone in the United States and is also used in Canada. It covers all or …"
+    },
+    {
+      "title": "Kota0612 (Kota Ueda) - Hugging Face",
+      "url": "https://huggingface.co/Kota0612",
+      "snippet": "Sort: Recently updated Kota0612/AgentB-craft_1_furnace Viewer •Updated Mar 21•4• 15"
+    },
+    {
+      "title": "Central Time",
+      "url": "https://time.is/CT",
+      "snippet": "1 day ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for Central Time (CT)."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "kyr0/redeschrift-1.0",
+  "slug": "kyr0-redeschrift-1-0",
+  "author": "kyr0",
+  "url": "https://huggingface.co/kyr0/redeschrift-1.0",
+  "created_at": "2026-09-03T20:32:15.000Z",
+  "updated_at": "2026-09-03T20:33:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 726179780,
+  "storage_human": "726 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "kyr0 (Aron Homberg) - Hugging Face",
+      "url": "https://huggingface.co/kyr0",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 hours ago ... published a model about 2 hours ago"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/accueil",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "kyr0 (Aron Homberg) · GitHub",
+      "url": "https://github.com/kyr0",
+      "snippet": "full-stack web & AI technology expert. kyr0 has 350 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Essential '90s R&B",
+      "url": "https://music.youtube.com/playlist?list=RDCLAK5uy_ne3DJMol0EVIfwcuZnx2hQak0q6EbeBlY",
+      "snippet": "Playlist • YouTube Music R&B defined American mainstream music throughout the '90s. Here are key tracks from R&B's most vital …"
+    }
+  ]
+}

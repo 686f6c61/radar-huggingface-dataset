@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ramashr86/cnn-transformer-generation64",
+  "slug": "ramashr86-cnn-transformer-generation64",
+  "author": "ramashr86",
+  "url": "https://huggingface.co/ramashr86/cnn-transformer-generation64",
+  "created_at": "2026-09-03T21:24:17.000Z",
+  "updated_at": "2026-09-03T21:24:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BiliTouch™ Phototherapy Blanket - Motif Medical",
+      "url": "https://motifmedical.com/bilitouchtm-phototherapy-blanket",
+      "snippet": "The Motif BiliTouch™ is a versatile biliblanket phototherapy device with an LED light source to conveniently treat jaundice in the …"
+    },
+    {
+      "title": "ramashr86 (Tunde Okafor) - Hugging Face",
+      "url": "https://huggingface.co/ramashr86",
+      "snippet": "Researcher in NLP & computer vision."
+    },
+    {
+      "title": "Amazon.com: Biliblanket",
+      "url": "https://www.amazon.com/biliblanket/s?k=biliblanket",
+      "snippet": "Newborn Jaundice Blue Light Therapy Blanket, Portable Bilirubin Biliblanket with 144 LED Lights, Three-Side Cover, No Installation …"
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bili Blanket Baby",
+      "url": "https://biliblanketbaby.com/",
+      "snippet": "Providing same day biliblanket rentals in Arizona, Colorado, California, Nevada, New York, Pennsylvania, and Texas. Breast Pumps, …"
+    }
+  ]
+}

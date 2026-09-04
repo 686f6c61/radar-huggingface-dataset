@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "jsantillana/vectrayx-vision-1b-checks",
+  "slug": "jsantillana-vectrayx-vision-1b-checks",
+  "author": "jsantillana",
+  "url": "https://huggingface.co/jsantillana/vectrayx-vision-1b-checks",
+  "created_at": "2026-08-06T01:16:15.000Z",
+  "updated_at": "2026-09-04T01:58:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-text-to-text",
+    "arxiv:2608.08477",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 125814559432,
+  "storage_human": "125.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "jsantillana/vectrayx-vision-1b-checks · Hugging Face",
+      "url": "https://huggingface.co/jsantillana/vectrayx-vision-1b-checks",
+      "snippet": "VectraYX-Vision-1B is a sub-2B vision-language model specialized for Spanish/LATAM cybersecurity imagery. It couples a frozen SigLIP-so400m encoder to a 1.04B Spanish/LATAM security decoder via an MLP, and is designed to answer in Spanish, emit structured reasoning via native <|think|> tokens, and invoke tools via the Model Context Protocol ..."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "jsantillana/vectrayx-vision-1b · Hugging Face",
+      "url": "https://huggingface.co/jsantillana/vectrayx-vision-1b",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Windows 8.1 ISO download for 64 and 32 bit | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/discussions/windowsinsiderprogram/windows-8-1-iso-download-for-64-and-32-bit/4454650",
+      "snippet": "Sep 16, 2025 · Since Microsoft has shifted focus to Windows 10 and Windows 11, official direct downloads for Windows 8 ISOs are no …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Jackyfirdaus/document-ai-v3",
+  "slug": "jackyfirdaus-document-ai-v3",
+  "author": "Jackyfirdaus",
+  "url": "https://huggingface.co/Jackyfirdaus/document-ai-v3",
+  "created_at": "2026-09-04T00:23:39.000Z",
+  "updated_at": "2026-09-04T00:23:44.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "document-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Διεύθυνση Π.Ε. Δ' ΑΘΗΝΑΣ",
+      "url": "https://dipe-d-athin.att.sch.gr/",
+      "snippet": "Βρείτε τη δημόσια υπηρεσία που θέλετε εύκολα και γρήγορα επιλέγοντας το παραπάνω εικονίδιο ή τον τίτλο “Ενιαία Ψηφιακή Πύλη …"
+    },
+    {
+      "title": "blog/document-ai.md at main · huggingface/blog · GitHub",
+      "url": "https://github.com/huggingface/blog/blob/main/document-ai.md",
+      "snippet": "For Document AI, this could involve helping build a pre-train model, improving accuracy on a fine-tuning task, or providing overall guidance on tackling your first Document AI use case."
+    },
+    {
+      "title": "ΔΙΕΥΘΥΝΣΗ Π.Ε. Δ' ΑΘΗΝΑΣ",
+      "url": "https://www.sch.gr/sites/sch-units/view?dn=ou%3Ddipe-d-athin%2Cou%3Datt-d%2Cou%3Dunits%2Cdc%3Dsch%2Cdc%3Dgr",
+      "snippet": "Λ. ΣΥΓΓΡΟΥ 165."
+    },
+    {
+      "title": "Document AI documentation - Google Cloud",
+      "url": "https://docs.cloud.google.com/document-ai/docs",
+      "snippet": "Document AI is a document understanding platform that takes unstructured data from documents and transforms it into structured data, making it easier to understand, analyze, and consume. Document AI uses machine learning and Google Cloud to help you create scalable, end-to-end, cloud-based document processing applications."
+    },
+    {
+      "title": "ΠΥΣΠΕ – Διεύθυνση Π.Ε. Δ' ΑΘΗΝΑΣ",
+      "url": "https://dipe-d-athin.att.sch.gr/category/simvoylia/pyspe/",
+      "snippet": "1 day ago · Προσωρινές τοποθετήσεις νεοδιόριστων μελών ΕΕΠ για το διδακτικό έτος 2026-27. Τοποθέτηση αποσπασμένου μέλους …"
+    }
+  ]
+}

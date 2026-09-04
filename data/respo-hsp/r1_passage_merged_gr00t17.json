@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "RESPO-HSP/R1_passage_merged_GR00T17",
+  "slug": "respo-hsp-r1_passage_merged_gr00t17",
+  "author": "RESPO-HSP",
+  "url": "https://huggingface.co/RESPO-HSP/R1_passage_merged_GR00T17",
+  "created_at": "2026-09-03T23:31:07.000Z",
+  "updated_at": "2026-09-03T23:32:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot",
+    "robotics",
+    "dataset:RESPO-HSP/R1_passage_merged",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576226552,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Centrum Respo - Najlepiej dopasowana dieta w Polsce",
+      "url": "https://centrumrespo.pl/",
+      "snippet": "Pomimo napiętego grafiku, z idealnie dopasowaną do swoich potrzeb dietą od Respo, Karina schudła ponad 19 kg!"
+    },
+    {
+      "title": "Merge Large Language Models with mergekit - Hugging Face",
+      "url": "https://huggingface.co/blog/mlabonne/merge-models",
+      "snippet": "Model Merging is a very popular technique nowadays in LLM. Here is a chronological list of papers on the space that will help you get started with it! • 30 items • Updated Jun 12, 2024 • 254"
+    },
+    {
+      "title": "Trailers - Respo Haagised AS",
+      "url": "https://www.respo.ee/en/",
+      "snippet": "AS Respo Trailers was established in 1990, today we are the market leader in Estonia and one of the leading trailer manufacturers in …"
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-R1 | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/deepseek-ai/DeepSeek-R1",
+      "snippet": "DeepSeek-R1 is a 671B-parameter MoE reasoning model built on the DeepSeek-V3 architecture, trained with large-scale reinforcement learning for strong chain-of-thought capabilities."
+    },
+    {
+      "title": "Respo Group - xtend life before circularity",
+      "url": "https://www.respogroup.com/fr/home",
+      "snippet": "Chez Respo Group, nous sommes spécialisés dans l’entretien et la réparation de vos charnières et serrures de fenêtres et de portes. …"
+    }
+  ]
+}

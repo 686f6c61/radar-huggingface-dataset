@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mrthor102/gun10",
+  "slug": "mrthor102-gun10",
+  "author": "mrthor102",
+  "url": "https://huggingface.co/mrthor102/gun10",
+  "created_at": "2026-09-03T05:19:22.000Z",
+  "updated_at": "2026-09-03T19:18:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29119058064,
+  "storage_human": "29.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gaming PCs, Mini PCs, Notebooks & PC-Zubehör online kaufen | CSL",
+      "url": "https://www.csl-computer.com/",
+      "snippet": "Entdecken Sie Gaming PCs, Mini PCs, Notebooks, Monitore & PC-Zubehör. Bei CSL Computer online kaufen oder individuell …"
+    },
+    {
+      "title": "mrthor102/gun10 · Hugging Face",
+      "url": "https://huggingface.co/mrthor102/gun10",
+      "snippet": "mrthor102 / gun10 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Buy Gaming PCs, Mini PCs, Notebooks & PC Accessories Online | CSL",
+      "url": "https://www.csl-computer.com/en/",
+      "snippet": "Since 1999, CSL Computer has been your trusted online PC store for high-quality Gaming PCs, compact Mini PCs, powerful …"
+    },
+    {
+      "title": "mrthor102/gun08 · Hugging Face",
+      "url": "https://huggingface.co/mrthor102/gun08",
+      "snippet": "mrthor102 / gun08 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "CSL-Computer FTP service",
+      "url": "https://ftp.csl-computer.com/pub/drivers/mini-pc/CSL_X600/92140/?C=M%3BO%3DD",
+      "snippet": "CSL-Computer GmbH & Co. KG - ftp.csl-computer.com - Download von Treibern und Anleitungen für ihr CSL-Computer Produkt. …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "StarsMakeGalaxy/Qwen3.5-9B-RAG",
+  "slug": "starsmakegalaxy-qwen3-5-9b-rag",
+  "author": "StarsMakeGalaxy",
+  "url": "https://huggingface.co/StarsMakeGalaxy/Qwen3.5-9B-RAG",
+  "created_at": "2026-09-03T20:39:40.000Z",
+  "updated_at": "2026-09-03T20:41:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-9B",
+    "base_model:finetune:unsloth/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300223,
+  "storage_human": "19.3 GB",
+  "base_model": "unsloth/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Core Banking Software and Solutions | Oracle",
+      "url": "https://www.oracle.com/financial-services/banking/core-banking/",
+      "snippet": "Oracle Banking Solutions customer success stories Excel through the continuous shape shifts in banking with our core banking …"
+    },
+    {
+      "title": "StarsMakeGalaxy/Qwen3.5-9B-RAG · Hugging Face",
+      "url": "https://huggingface.co/StarsMakeGalaxy/Qwen3.5-9B-RAG",
+      "snippet": "Instructions to use StarsMakeGalaxy/Qwen3.5-9B-RAG with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Benefits of Cloud-Based Core Banking Solutions",
+      "url": "https://www.profilesw.com/insights/benefits-of-cloud-based-core-banking-solutions/",
+      "snippet": "Jun 13, 2024 · The shift towards cloud-based core banking solutions represents a strategic opportunity to modernise legacy systems, …"
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cloud Banking Guide: Deployment, Risks & Selection | Advapay",
+      "url": "https://advapay.eu/cloud-banking-a-comprehensive-guide-to-selection-pros-cons-and-cloud-based-banking-platforms/",
+      "snippet": "Mar 18, 2024 · Learn how cloud banking and cloud core banking work, compare deployment models, assess shared responsibility, …"
+    }
+  ]
+}

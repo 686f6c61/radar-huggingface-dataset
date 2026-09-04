@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Akshaykumar4321/dqn-SpaceInvadersNoFrameskip-v4",
+  "slug": "akshaykumar4321-dqn-spaceinvadersnoframeskip-v4",
+  "author": "Akshaykumar4321",
+  "url": "https://huggingface.co/Akshaykumar4321/dqn-SpaceInvadersNoFrameskip-v4",
+  "created_at": "2026-09-03T19:56:11.000Z",
+  "updated_at": "2026-09-03T19:56:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "SpaceInvadersNoFrameskip-v4",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54254563,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "小升初统筹分配后还能改学校吗？一文讲清调整规则与可行途径",
+      "url": "https://wenku.baidu.com/view/4b9665a6511810a6f524ccbff121dd36a32dc4b5.html",
+      "snippet": "在统筹入学后，若对学校仍不满意，满足特定条件后申请转学是更为常见的调整方式。 但这并非自选学校，而是由区教育行政部门再 …"
+    },
+    {
+      "title": "ShreyasM/dqn-SpaceInvadersNoFrameskip-v4-acm-ai · Hugging Face",
+      "url": "https://huggingface.co/ShreyasM/dqn-SpaceInvadersNoFrameskip-v4-acm-ai",
+      "snippet": "DQN Agent playing SpaceInvadersNoFrameskip-v4 This is a trained model of a DQN agent playing SpaceInvadersNoFrameskip-v4 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "小学升初中已经被公立学校入取了,还能修改,去其他公立学校报名吗？_ …",
+      "url": "https://zhidao.baidu.com/question/186025956935399644.html",
+      "snippet": "Jun 11, 2022 · 一般情况下,小升初被录取,只要你不带着证件去报名就没法给你建档,也就不算入学,不用改学校.如果是学区的话选择的余 …"
+    },
+    {
+      "title": "afedyanin/dqn-SpaceInvadersNoFrameskip-v4 · Hugging Face",
+      "url": "https://huggingface.co/afedyanin/dqn-SpaceInvadersNoFrameskip-v4",
+      "snippet": "This is a trained model of a DQN agent playing SpaceInvadersNoFrameskip-v4 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "小升初统筹分配后还能调整吗？家长必知的4种途径与风险",
+      "url": "https://wenku.baidu.com/view/cc75404bec7101f69e3143323968011ca300f72c.html",
+      "snippet": "正式的统筹分配结果一经公布并进入学籍系统后，原则上不得直接更改。 但这并不意味着完全没有调整的可能。 通过申请调剂、参与 …"
+    }
+  ]
+}

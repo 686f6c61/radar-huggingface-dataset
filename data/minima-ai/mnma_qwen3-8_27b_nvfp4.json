@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "minima-ai/mnma_qwen3.8_27b_nvfp4",
+  "slug": "minima-ai-mnma_qwen3-8_27b_nvfp4",
+  "author": "minima-ai",
+  "url": "https://huggingface.co/minima-ai/mnma_qwen3.8_27b_nvfp4",
+  "created_at": "2026-08-31T07:12:37.000Z",
+  "updated_at": "2026-09-04T01:29:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5_text",
+    "nvfp4",
+    "w4a4",
+    "quantized",
+    "compressed-tensors",
+    "gated-deltanet",
+    "fp8-kv-cache",
+    "qwen3.8",
+    "text-generation",
+    "conversational",
+    "arxiv:2609.04098",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 26895998496,
+  "parameters_human": "26.90B",
+  "storage_bytes": 18808343429,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - Minima",
+      "url": "https://minima.fr/",
+      "snippet": "Découvrez l'univers de Minima avec nos lunettes inspirées par le Wellness Eyewear. Des lunettes innovantes et stylées pour toute la …"
+    },
+    {
+      "title": "minima-ai/mnma_qwen3.8_27b_nvfp4 · Hugging Face",
+      "url": "https://huggingface.co/minima-ai/mnma_qwen3.8_27b_nvfp4",
+      "snippet": "mnma Qwen3.8-27B NVFP4 (Minima) A fully W4A4 build of Qwen3.8-27B by post-training quantization alone: every one of the 496 backbone linear layers — all 48 Gated DeltaNet (GDN) layers and their gate projections included — quantized to NVFP4, plus calibrated FP8 KV-cache scales. No quantization-aware training, no distillation — calibration only. Early public 4-bit builds of this model ..."
+    },
+    {
+      "title": "Boutique - Minima",
+      "url": "https://minima.fr/boutique/",
+      "snippet": "Découvrez l'univers de Minima avec nos lunettes inspirées par le Wellness Eyewear. Des lunettes innovantes et stylées pour toute la …"
+    },
+    {
+      "title": "Minima Paper Fully Quantizes Qwen3.8-27B to NVFP4 W4A4 Including Gated ...",
+      "url": "https://aiweekly.co/alerts/minima-paper-fully-quantizes-qwen38-27b-to-nvfp4-w4a4-including-gated-deltanet",
+      "snippet": "EmailSubscribeAlso get breaking AI alerts Summary The Minima paper quantizes all 496 linear layers of Qwen3.8-27B — including the 48 Gated DeltaNet blocks every prior recipe kept at FP8/BF16 — to NVFP4 W4A4, and matches BF16 within seed noise on MMLU-Pro, GSM8K, AIME'25, GPQA-Diamond, LiveCodeBench, and RULER at 64K."
+    },
+    {
+      "title": "Définitions : a minima - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/a_minima/51613",
+      "snippet": "En orthographe traditionnelle (non réformée), le a ne prend pas d'accent, comme dans a priori : faire appel a minima (de la locution …"
+    }
+  ]
+}

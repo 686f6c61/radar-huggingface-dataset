@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "schneiderkamplab/DFM-Mimir-AWQ-FP4",
+  "slug": "schneiderkamplab-dfm-mimir-awq-fp4",
+  "author": "schneiderkamplab",
+  "url": "https://huggingface.co/schneiderkamplab/DFM-Mimir-AWQ-FP4",
+  "created_at": "2026-09-03T20:41:32.000Z",
+  "updated_at": "2026-09-03T20:45:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "da",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hrm_text",
+    "text-generation",
+    "danish",
+    "quantized",
+    "gptq",
+    "int4",
+    "4-bit",
+    "compressed-tensors",
+    "conversational",
+    "da",
+    "en",
+    "arxiv:2608.13517",
+    "base_model:danish-foundation-models/DFM-Mimir",
+    "base_model:quantized:danish-foundation-models/DFM-Mimir",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1786775040,
+  "parameters_human": "1.79B",
+  "storage_bytes": 4273406374,
+  "storage_human": "4.3 GB",
+  "base_model": "danish-foundation-models/DFM-Mimir",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Traduction IDOL en arabe | Dictionnaire français-arabe | Reverso",
+      "url": "https://dictionnaire.reverso.net/francais-arabe/Idol",
+      "snippet": "Traduction de \"Idol\" en arabe : أيدول, المعبود, signification, prononciation, expressions idiomatiques en français, synonymes et exemples …"
+    },
+    {
+      "title": "danish-foundation-models/DFM-Mimir · Hugging Face",
+      "url": "https://huggingface.co/danish-foundation-models/DFM-Mimir",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Traduction IDOLE en arabe | Dictionnaire français-arabe | Reverso",
+      "url": "https://dictionnaire.reverso.net/francais-arabe/idole",
+      "snippet": "Traduction de \"idole\" en arabe : معبود الجماهير, صنم, مَعْشُوق. Nom, signification, prononciation, expressions idiomatiques en français, …"
+    },
+    {
+      "title": "[2608.13517] DFM Mimir v1: An Open HRM Delivering Frontier Performance ...",
+      "url": "https://arxiv.org/abs/2608.13517",
+      "snippet": "Current large language model development relies on massive, often non-permissible datasets, creating a high barrier for researchers committed to open-source and ethically sourced data. We introduce Mimir v1, a 1-billion-parameter language model based on the Hierarchical Reasoning Model (HRM) architecture, that is trained from scratch and delivers highly competitive performance for English and ..."
+    },
+    {
+      "title": "idol - Traduction en arabe - dictionnaire français-arabe | Tarjamaan",
+      "url": "https://www.tarjamaan.com/fr/translation/fr-ar/idol",
+      "snippet": "Traduction de idol de Français en Arabe: ايدول - أيدول - آيدول ... Exemples de traductions à travers plusieurs phrases bilingues"
+    }
+  ]
+}

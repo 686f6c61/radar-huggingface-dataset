@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "backpack-run/Qwen-ASR-Runtime-Windows-x64-PyTorch-CPU",
+  "slug": "backpack-run-qwen-asr-runtime-windows-x64-pytorch-cpu",
+  "author": "backpack-run",
+  "url": "https://huggingface.co/backpack-run/Qwen-ASR-Runtime-Windows-x64-PyTorch-CPU",
+  "created_at": "2026-09-03T23:09:02.000Z",
+  "updated_at": "2026-09-03T23:09:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "backpack",
+    "runtime",
+    "automatic-speech-recognition",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8356,
+  "storage_human": "8356 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BACKPACK | Sélection des meilleurs sacs à dos et accessoires",
+      "url": "https://backpack.paris/",
+      "snippet": "Bienvenue chez Backpack Paris, votre référence parisienne du sac à dos urbain, professionnel, personnalisé ou lifestyle. Situé en …"
+    },
+    {
+      "title": "backpack-run/Qwen-ASR-Runtime-Windows-x64-PyTorch-CPU · Hugging Face",
+      "url": "https://huggingface.co/backpack-run/Qwen-ASR-Runtime-Windows-x64-PyTorch-CPU",
+      "snippet": "Versioned protocol-v1 worker for Qwen3-ASR using the Transformers/PyTorch CPU backend. This repository contains no model weights. Install the archive, then point run.ps1at the separately installed Qwen3-ASR model package. Contract"
+    },
+    {
+      "title": "Backpack pas cher | sac à dos de voyage Decathlon",
+      "url": "https://www.decathlon.fr/vc/backpack?msockid=3872a2a3f87163620350b569f9a96257",
+      "snippet": "Comment bien choisir son backpack ? Afin de choisir le meilleur backpack pour votre voyage, il est important de s’attarder sur divers …"
+    },
+    {
+      "title": "backpack-run/Qwen-ASR-Runtime-Windows-x64-PyTorch-CPU at main",
+      "url": "https://huggingface.co/backpack-run/Qwen-ASR-Runtime-Windows-x64-PyTorch-CPU/tree/main",
+      "snippet": "Community Copy to bucket new main Qwen-ASR-Runtime-Windows-x64-PyTorch-CPU 27.2 kB Ctrl+K Ctrl+K"
+    },
+    {
+      "title": "Pricing, Trading and Statistics for Team Fortress 2 - backpack.tf",
+      "url": "https://backpack.tf/",
+      "snippet": "backpack.tf: statistics, prices, and a whole lot more for Team Fortress 2, Counter-Strike: Global Offensive and other Steam games."
+    }
+  ]
+}

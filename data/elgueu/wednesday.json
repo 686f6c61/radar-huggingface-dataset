@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Elgueu/wednesday",
+  "slug": "elgueu-wednesday",
+  "author": "Elgueu",
+  "url": "https://huggingface.co/Elgueu/wednesday",
+  "created_at": "2026-09-03T22:23:18.000Z",
+  "updated_at": "2026-09-03T22:58:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778482791,
+  "storage_human": "778 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arizona Termite Warranty | Phoenix Termite Protection",
+      "url": "https://billstermiteco.com/arizona-termite-warranty/",
+      "snippet": "Whether you need a free inspection for a suspected problem, a quote for a new service, or a reliable Termite Protection Plan to …"
+    },
+    {
+      "title": "Z.ai's secret AI model Ox Alpha was running on Chinese chips all along",
+      "url": "https://qz.com/zai-ox-alpha-glm-53-flash-chinese-chips-082826",
+      "snippet": "Z.ai confirmed Wednesday that it was behind Ox Alpha, the anonymous AI model that had been circulating on OpenRouter and topping usage charts, and released it under the name GLM-5.3-Flash. The ..."
+    },
+    {
+      "title": "Termites in Phoenix Az | Free Inspection | Bills Pest Termite Control",
+      "url": "https://billstermiteco.com/termites-in-phoenix-az/",
+      "snippet": "Request Your Free Termite Inspection. Ask about the free yearly visual inspection option available through Bill’s Arizona termite …"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/p/DNGS1fAoJ9T/",
+      "snippet": "1,902 likes, 237 comments - insanne.dreams on August 8, 2025: \"퓦퓮퓭퓷퓮퓼퓭퓪픂 퓐퓭퓭퓪퓶퓼 the Ǫųëëŋ øƒ Ɠøŧħ The AI version of Wednesday has joined in the Infernal Couture trend! Do you like it? @jennaortega @timburton @netflix [풜퓁퓁 풾퓂풶푔푒퓈 푔푒퓃푒퓇풶퓉푒풹 & 푒풹풾퓉푒풹 풷퓎] @insanne.dreams ⚡ Images created using @official ..."
+    },
+    {
+      "title": "Termite Pest Control, Free Termite Inspections, Arizona, East Valley",
+      "url": "https://www.pestcontrolguaranteed.com/guaranteed-termite-control",
+      "snippet": "Guaranteed Pest Control offers Free Termite Inspections, Termite Warranties, and Licensed Experienced Termite Technicians!"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/tide-window-classifier",
+  "slug": "sotaagi2030-tide-window-classifier",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/tide-window-classifier",
+  "created_at": "2026-09-03T18:57:05.000Z",
+  "updated_at": "2026-09-03T18:57:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "coastal-monitoring",
+    "tide-window",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68,
+  "storage_human": "68 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kleinanzeigen – früher eBay Kleinanzeigen. Anzeigen gratis inserieren ...",
+      "url": "https://www.kleinanzeigen.de/?msockid=0f17aa38b51e66fb227abdf1b46867d5",
+      "snippet": "Gebraucht oder Neu, Privat oder Gewerbe - Jetzt gratis inserieren auf Deutschlands meistbesuchtem Kleinanzeigen-Portal. eBay …"
+    },
+    {
+      "title": "SOTAagi2030 (sota) - Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030",
+      "snippet": "User profile of sota on Hugging Face"
+    },
+    {
+      "title": "eBay Kleinanzeigen ist jetzt Kleinanzeigen.",
+      "url": "https://www.kleinanzeigen.de/s-kategorien.html?msockid=0f17aa38b51e66fb227abdf1b46867d5",
+      "snippet": ""
+    },
+    {
+      "title": "SOTAagi2030/Coastline-Change-Release · Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/Coastline-Change-Release",
+      "snippet": "Coastline Change Release This model package supports research workflows that identify shoreline changes in multispectral coastal imagery."
+    },
+    {
+      "title": "Kleinanzeigen in Donaustauf",
+      "url": "https://www.kleinanzeige.net/kleinanzeigen/donaustauf",
+      "snippet": "Kleinanzeigen | Donaustauf Suche Marktplatz Kleinanzeigen Donaustauf 3962 Ergebnisse 0 km 10 km 20 km 30 km 40 km 50 km …"
+    }
+  ]
+}

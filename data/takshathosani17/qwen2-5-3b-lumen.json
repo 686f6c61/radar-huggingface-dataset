@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "takshathosani17/qwen2.5-3b-lumen",
+  "slug": "takshathosani17-qwen2-5-3b-lumen",
+  "author": "takshathosani17",
+  "url": "https://huggingface.co/takshathosani17/qwen2.5-3b-lumen",
+  "created_at": "2026-09-01T06:42:14.000Z",
+  "updated_at": "2026-09-03T19:22:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lumen-stream-lab",
+    "ollama",
+    "qwen2.5",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929899904,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "takshathosani17/qwen2.5-3b-lumen · Hugging Face",
+      "url": "https://huggingface.co/takshathosani17/qwen2.5-3b-lumen",
+      "snippet": "takshathosani17 / qwen2.5-3b-lumen like 1 GGUF lumen-stream-lab ollama License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "Jan 1, 2025 · ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "Qwen/Qwen2.5-3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-3B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub",
+      "url": "https://github.com/",
+      "snippet": "Jun 15, 2026 · Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and …"
+    }
+  ]
+}

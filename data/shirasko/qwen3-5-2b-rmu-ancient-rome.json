@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "shirasko/qwen3.5-2b-rmu-ancient-rome",
+  "slug": "shirasko-qwen3-5-2b-rmu-ancient-rome",
+  "author": "shirasko",
+  "url": "https://huggingface.co/shirasko/qwen3.5-2b-rmu-ancient-rome",
+  "created_at": "2026-09-03T20:55:21.000Z",
+  "updated_at": "2026-09-03T20:58:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "unlearning",
+    "rmu",
+    "qwen3.5-2b",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 3783681537,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Fiddler Web Debugging Tool for Free by Telerik",
+      "url": "https://www.telerik.com/download/fiddler",
+      "snippet": "Download and install Fiddler Classic web debugging tool. Watch a quick tutorial to get started."
+    },
+    {
+      "title": "Qwen/Qwen3.5-2B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-2B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Web Debugging Proxy Tool | Fiddler Classic",
+      "url": "https://www.telerik.com/fiddler/fiddler-classic",
+      "snippet": "1 day ago · Choose Fiddler Classic for individual, non-commercial debugging on Windows. Choose Fiddler Everywhere for …"
+    },
+    {
+      "title": "Qwen3.5-2B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_5_2b",
+      "snippet": "Qwen3.5-2B Balanced 2B parameter model from the Qwen3.5 series for on‑device inference. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "Fiddler - Download - Softpedia",
+      "url": "https://www.softpedia.com/get/Programming/Debuggers-Decompilers-Dissasemblers/Telerik-Fiddler.shtml",
+      "snippet": "Aug 6, 2026 · While it's possible to manually capture and analyze web traffic using network monitoring tools or browser developer …"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "TheDrainFlorist/GLM-5.3-Flash-VQ-3.6bpw",
+  "slug": "thedrainflorist-glm-5-3-flash-vq-3-6bpw",
+  "author": "TheDrainFlorist",
+  "url": "https://huggingface.co/TheDrainFlorist/GLM-5.3-Flash-VQ-3.6bpw",
+  "created_at": "2026-09-03T20:27:17.000Z",
+  "updated_at": "2026-09-03T21:09:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm5_next",
+    "quantized",
+    "vector-quantization",
+    "apple-silicon",
+    "glm",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45444923198,
+  "parameters_human": "45.44B",
+  "storage_bytes": 151578310503,
+  "storage_human": "151.6 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nikon D3100 beginner videos and Tutorials - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLwr0Jo0u06I4x98wSVGcUwZ3tSNdlxl4w",
+      "snippet": "Nikon D3100 tutorial videos,including ho to demonstrations, menu fuctions, manual controls and more"
+    },
+    {
+      "title": "zai-org/GLM-5.3-Flash · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Manuale Nikon D3100 (Italiano - 224 pagine)",
+      "url": "https://www.manualeitaliano.it/nikon/d3100/manuale",
+      "snippet": "La Nikon D3100 è un'ottima scelta per i principianti della fotografia che desiderano una fotocamera facile da usare, leggera e con una …"
+    },
+    {
+      "title": "glm-5.3-flash (Zhipu AI) - Cloudflare Docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/glm-5.3-flash/",
+      "snippet": "The first natively multimodal model in the GLM-5 series. With 320B total parameters and just 18B active parameters, it outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks."
+    },
+    {
+      "title": "Nikon D3100 DSLR Basic beginner tutorial training Part 1",
+      "url": "https://www.youtube.com/watch?v=ptiTruEXkGk",
+      "snippet": "Aug 12, 2011 · A beginners guide to able you to start shooting with your Nikon D3100. This video presumes no prior knowledge of a …"
+    }
+  ]
+}

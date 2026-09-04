@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "vihfinal/Ling-3.0-tiny-thinkingcap-gguf",
+  "slug": "vihfinal-ling-3-0-tiny-thinkingcap-gguf",
+  "author": "vihfinal",
+  "url": "https://huggingface.co/vihfinal/Ling-3.0-tiny-thinkingcap-gguf",
+  "created_at": "2026-09-03T20:08:49.000Z",
+  "updated_at": "2026-09-03T21:22:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:vihfinal/Ling-3.0-tiny-thinkingcap",
+    "base_model:quantized:vihfinal/Ling-3.0-tiny-thinkingcap",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7893392800,
+  "parameters_human": "7.89B",
+  "storage_bytes": 8408188064,
+  "storage_human": "8.4 GB",
+  "base_model": "vihfinal/Ling-3.0-tiny-thinkingcap",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "Important: To keep yourself and others safe, stay aware of your surroundings when you use directions on Google Maps. When in …"
+    },
+    {
+      "title": "inclusionAI/Ling-3.0-tiny · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-tiny",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Maps Trợ giúp",
+      "url": "https://support.google.com/maps/?hl=vi",
+      "snippet": "Trung tâm Trợ giúp Maps chính thức, nơi bạn có thể tìm thấy các mẹo và hướng dẫn sử dụng sản phẩm và các câu trả lời khác cho …"
+    },
+    {
+      "title": "inclusionAI/Ling-3.0-tiny-GGUF · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-tiny-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "6 tính năng AI vừa được cập nhật của Google Maps",
+      "url": "https://tinhte.vn/thread/6-tinh-nang-ai-vua-duoc-cap-nhat-cua-google-maps.3770081/",
+      "snippet": "Mar 14, 2024 · Bây giờ Google Maps cũng đã được tích hợp AI, với 1 bản nâng cấp lớn. Dưới đây là 6 tính năng Ai của Google …"
+    }
+  ]
+}

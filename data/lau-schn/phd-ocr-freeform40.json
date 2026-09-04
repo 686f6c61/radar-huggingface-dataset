@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lau-schn/phd-ocr-freeform40",
+  "slug": "lau-schn-phd-ocr-freeform40",
+  "author": "lau-schn",
+  "url": "https://huggingface.co/lau-schn/phd-ocr-freeform40",
+  "created_at": "2026-09-03T20:32:35.000Z",
+  "updated_at": "2026-09-03T20:32:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "ocr-freeform",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lebanese American University",
+      "url": "https://www.lau.edu.lb/",
+      "snippet": "LAU is an accredited American university operating in Beirut and Byblos, Lebanon, under a charter from the State of New York."
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lau — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lau",
+      "snippet": "Israel Meir Lau (1937 -), fils de Chaya Lau et de Moshe Chaim Lau, frère de Naphtali Lau-Lavie, était l'ancien Grand Rabbin …"
+    },
+    {
+      "title": "Best LLM for OCR (2026): GLM-OCR Wins at 94.62 - ofox.ai",
+      "url": "https://ofox.ai/blog/best-ai-model-for-ocr-2026/",
+      "snippet": "Which AI model has the best OCR accuracy in 2026? On the OmniDocBench benchmark, specialized models lead: GLM-OCR scores 94.62 and PaddleOCR-VL hits 94.50. Among frontier LLMs, Gemini 3.1 Pro leads at 90.33, ahead of GPT-5.4 at roughly 85.8. The best choice depends on your use case — frontier LLMs handle reasoning alongside extraction, while specialized models maximize raw accuracy."
+    },
+    {
+      "title": "Lau (band) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lau_(band)",
+      "snippet": "Lau is a British folk band from both Scotland and England, formed in 2005. Named after an Orcadian word meaning \"natural light\", [1] …"
+    }
+  ]
+}

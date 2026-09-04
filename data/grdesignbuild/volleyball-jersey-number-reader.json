@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "grdesignbuild/volleyball-jersey-number-reader",
+  "slug": "grdesignbuild-volleyball-jersey-number-reader",
+  "author": "grdesignbuild",
+  "url": "https://huggingface.co/grdesignbuild/volleyball-jersey-number-reader",
+  "created_at": "2026-09-04T00:53:18.000Z",
+  "updated_at": "2026-09-04T00:53:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "coreml",
+    "safetensors",
+    "resnet",
+    "image-classification",
+    "volleyball",
+    "sports",
+    "jersey-number",
+    "ocr",
+    "base_model:microsoft/resnet-18",
+    "base_model:quantized:microsoft/resnet-18",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11197911,
+  "parameters_human": "11.2M",
+  "storage_bytes": 67211777,
+  "storage_human": "67 MB",
+  "base_model": "microsoft/resnet-18",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Walmart Stores Near Me - Locations, Hours & Services",
+      "url": "https://www.walmart.com/store-finder",
+      "snippet": "Use the Walmart store locator to find your nearest Walmart locations, check store hours, and find services like Grocery Pickup, …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Walmart | Save Money. Live better.",
+      "url": "https://www.walmart.com/",
+      "snippet": "Shop Walmart.com today for Every Day Low Prices. Join Walmart+ for unlimited free delivery from your store & free shipping with no …"
+    },
+    {
+      "title": "Volleyball Jersey Design | AI Uniform Concept Maker",
+      "url": "https://idyllic.app/volleyball-jersey-design/",
+      "snippet": "Volleyball kit concepts Volleyball Jersey Design Generate volleyball uniform concepts with readable front/back numbers, team color blocking, player-name placement, libero contrast, and court-ready trim details."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/walmart%20near%20me",
+      "snippet": "Walmart Supercenter 3.8 Department store · · 3471 Old Halifax Rd Open · Closes 11 PM · (434) 575-0680"
+    }
+  ]
+}

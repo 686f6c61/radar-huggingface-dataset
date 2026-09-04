@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "CodeMasterCody3D/taardis-27b-full-ternary",
+  "slug": "codemastercody3d-taardis-27b-full-ternary",
+  "author": "CodeMasterCody3D",
+  "url": "https://huggingface.co/CodeMasterCody3D/taardis-27b-full-ternary",
+  "created_at": "2026-09-03T05:33:40.000Z",
+  "updated_at": "2026-09-04T02:04:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ternary",
+    "quantization",
+    "integer",
+    "llama.cpp",
+    "taardis",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 460125184,
+  "parameters_human": "460.1M",
+  "storage_bytes": 13992772624,
+  "storage_human": "14.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taiwan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Taiwan",
+      "snippet": "With around 23.9 million inhabitants, Taiwan is among the most densely populated countries. Taiwan has been settled for at least …"
+    },
+    {
+      "title": "CodeMasterCody3D/tardis-27b-body · Hugging Face",
+      "url": "https://huggingface.co/CodeMasterCody3D/tardis-27b-body",
+      "snippet": "CodeMasterCody3D / tardis-27b-body like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Republikken Kina (Taiwan) – Wikipedia",
+      "url": "https://no.wikipedia.org/wiki/Republikken_Kina_(Taiwan)",
+      "snippet": "Taiwan, offisielt Republikken Kina (ROC), er et land i Øst-Asia med sjøgrenser mot Kina (PRC) i nordvest, Japan i nordøst, og …"
+    },
+    {
+      "title": "CodeMasterCody3D (Cody Dixon) - Hugging Face",
+      "url": "https://huggingface.co/CodeMasterCody3D",
+      "snippet": "User profile of Cody Dixon on Hugging Face"
+    },
+    {
+      "title": "Taiwan – les om historie, språk, politikk – Store norske leksikon",
+      "url": "https://snl.no/Taiwan",
+      "snippet": "Taiwan, som offisielt heter Republikken Kina, er et land og ei øy i Øst-Kina-havet i Øst-Asia. Øya er skilt fra fastlandet (Kina) i vest …"
+    }
+  ]
+}

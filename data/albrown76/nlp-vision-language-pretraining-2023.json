@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Albrown76/nlp-vision-language-pretraining-2023",
+  "slug": "albrown76-nlp-vision-language-pretraining-2023",
+  "author": "Albrown76",
+  "url": "https://huggingface.co/Albrown76/nlp-vision-language-pretraining-2023",
+  "created_at": "2026-09-03T21:03:48.000Z",
+  "updated_at": "2026-09-03T21:03:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "日本国民年金完全指南2026 | 外国人加入·缴费·离境退款详解 ...",
+      "url": "https://japan-life.ziko-info.com/zh-CN/guides/pension",
+      "snippet": "目录 什么是日本国民年金？ 与厚生年金的区别 加入对象 外国人也必须缴纳国民年金吗？ 必须加入的签证类型 如何申请免除 国民年金 …"
+    },
+    {
+      "title": "Vision-language model - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vision-language_model",
+      "snippet": "A vision–language model (VLM) is a type of artificial intelligence system that can jointly interpret and generate information from both images and text, extending the capabilities of large language models (LLMs), which are limited to text."
+    },
+    {
+      "title": "厚生年金保险及其他保险费缴费指南 - 日本年金機構",
+      "url": "https://www.nenkin.go.jp/service/pamphlet/kaigai/Payment_Guide.files/Payment_Guide_Chinese.pdf",
+      "snippet": "1.口座振替(银行自动扣款)采用口座振替方式缴纳时,办理流程如下:(1)确认金融机构是否在“可办理厚生年金保险费等及国民年金保险费 …"
+    },
+    {
+      "title": "VLP: A Survey on Vision-language Pre-training - Springer",
+      "url": "https://link.springer.com/article/10.1007/s11633-022-1369-5",
+      "snippet": "In the past few years, the emergence of pre-training models has brought uni-modal fields such as computer vision (CV) and natural language processing (NLP) to a new era. Substantial works have shown that they are beneficial for downstream uni-modal tasks and avoid training a new model from scratch. So can such pre-trained models be applied to multi-modal tasks? Researchers have explored this ..."
+    },
+    {
+      "title": "外国人日本养老金·脱退一时金退款指南（2026） | 在日生活导航",
+      "url": "https://life.m-ri.co.jp/zh/pension-guide.html",
+      "snippet": "Jun 4, 2026 · 面向外国人解说日本养老金·脱退一时金的退款方法（回国时），包括领取条件、脱退一时金请求书与申请流程、厚生年 …"
+    }
+  ]
+}

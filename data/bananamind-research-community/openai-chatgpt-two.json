@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "bananamind-research-community/openai-chatgpt-two",
+  "slug": "bananamind-research-community-openai-chatgpt-two",
+  "author": "bananamind-research-community",
+  "url": "https://huggingface.co/bananamind-research-community/openai-chatgpt-two",
+  "created_at": "2026-09-03T20:44:13.000Z",
+  "updated_at": "2026-09-03T20:44:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "jax",
+    "tflite",
+    "rust",
+    "onnx",
+    "safetensors",
+    "gpt2",
+    "exbert",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5626190610,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GCU Nursing Programs: BSN, MSN, DNP & Certificates",
+      "url": "https://www.gcu.edu/degree-programs/nursing",
+      "snippet": "Explore GCU nursing programs, including BSN, MSN, DNP and certificate pathways. Compare online and campus options, …"
+    },
+    {
+      "title": "Accelerating scientific discovery with ChatGPT for Academic ... - OpenAI",
+      "url": "https://openai.com/index/chatgpt-for-academic-researchers/",
+      "snippet": "OpenAI is giving 100,000 academic researchers free access to ChatGPT's most advanced AI models to accelerate scientific research, collaboration, and discovery."
+    },
+    {
+      "title": "Bachelor's Degree in Nursing: Launch Your Nursing Career at GCU",
+      "url": "https://www.gcu.edu/degree-programs/nursing/bachelors",
+      "snippet": "Explore GCU's bachelor's degrees in nursing. Gain the knowledge and skills you need for a healthcare career. Start your journey today!"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it possible for ChatGPT to answer followup questions, admit its mistakes, challenge incorrect premises, and reject inappropriate requests."
+    },
+    {
+      "title": "Nurses Review Grand Canyon University’s Nursing School | Nurse.Org",
+      "url": "https://nurse.org/education/Grand-Canyon-University-nursing-review/",
+      "snippet": "Sep 12, 2025 · This Grand Canyon University School of Nursing review will explore the school’s nursing programs, highlight relevant …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "jdaltonII02/tsvit-pastis24",
+  "slug": "jdaltonii02-tsvit-pastis24",
+  "author": "jdaltonII02",
+  "url": "https://huggingface.co/jdaltonII02/tsvit-pastis24",
+  "created_at": "2026-09-03T22:31:58.000Z",
+  "updated_at": "2026-09-03T22:32:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "satellite-image-time-series",
+    "semantic-segmentation",
+    "pastis",
+    "vision-transformer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33329515,
+  "storage_human": "33 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "DeepSatModels/README_TSVIT.md at main - GitHub",
+      "url": "https://github.com/michaeltrs/DeepSatModels/blob/main/README_TSVIT.md",
+      "snippet": "Experiments Run the following to train TSViT on each of the five folds of PASTIS24 ... Omit the \"-S\" for the standard TSViT configuration, or include it (TSViT-S) for training the small architecture."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "DeepSatModels_SNN/README_TSVIT.md at main · hukaiems ... - GitHub",
+      "url": "https://github.com/hukaiems/DeepSatModels_SNN/blob/main/README_TSVIT.md",
+      "snippet": "Experiments Run the following to train TSViT on each of the five folds of PASTIS24 ... Omit the \"-S\" for the standard TSViT configuration, or include it (TSViT-S) for training the small architecture."
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    }
+  ]
+}

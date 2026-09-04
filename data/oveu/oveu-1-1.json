@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Oveu/Oveu-1.1",
+  "slug": "oveu-oveu-1-1",
+  "author": "Oveu",
+  "url": "https://huggingface.co/Oveu/Oveu-1.1",
+  "created_at": "2026-09-03T20:43:48.000Z",
+  "updated_at": "2026-09-03T20:43:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PekaoBiznes24 - Bank Pekao S.A.",
+      "url": "https://www.pekao.com.pl/korporacje/bankowosc-elektroniczna/PekaoBiznes24.html",
+      "snippet": "Dzięki platformie PekaoBiznes24 będą Państwo mogli dokonywać transakcji online oraz składać dyspozycje finansowe bez względu …"
+    },
+    {
+      "title": "GitHub - character-ai/Ovi",
+      "url": "https://github.com/character-ai/Ovi",
+      "snippet": "Contribute to character-ai/Ovi development by creating an account on GitHub."
+    },
+    {
+      "title": "iPKO biznes",
+      "url": "https://www.ipkobiznes.pl/",
+      "snippet": "Przelew natychmiastowy SEPA w iPKO biznes w kilka sekund na rachunku odbiorcy! Więcej"
+    },
+    {
+      "title": "Evo-1: Lightweight Vision-Language-Action Model with Preserved Semantic ...",
+      "url": "https://arxiv.org/pdf/2511.04555",
+      "snippet": "Evo-1 builds on a native multimodal Vision-Language model (VLM), incorporating a novel cross-modulated diffu-sion transformer along with an optimized integration mod-ule, together forming an effective architecture."
+    },
+    {
+      "title": "Bankowość elektroniczna PekaoBiznes24 - Bank Pekao S.A.",
+      "url": "https://www.pekao.com.pl/przedsiebiorcy/dostep-online/bankowosc-elektroniczna-pekaobiznes24.html",
+      "snippet": "PekaoBiznes24 - nowoczesny system bankowości elektronicznej Banku Pekao S.A. Sprawne rozliczenia z kontrahentami, …"
+    }
+  ]
+}

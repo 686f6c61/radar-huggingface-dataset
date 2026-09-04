@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "Openintelligent123/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "slug": "openintelligent123-nvidia-nemotron-3-5-lightning-30b-a3b-bf16",
+  "author": "Openintelligent123",
+  "url": "https://huggingface.co/Openintelligent123/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "created_at": "2026-09-03T22:46:10.000Z",
+  "updated_at": "2026-09-03T22:46:10.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "nvidia",
+    "pytorch",
+    "nemotron-3.5",
+    "conversational",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "dataset:nvidia/nemotron-post-training-v3",
+    "dataset:nvidia/nemotron-pre-training-datasets",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577937344,
+  "parameters_human": "31.58B",
+  "storage_bytes": 65844811980,
+  "storage_human": "65.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AC-Speicher 2026: Nachrüstung, Wirkungsgrad, Systeme",
+      "url": "https://elektronik-zeit.de/photovoltaik-leitfaden-2026/ac-speicher/",
+      "snippet": "Jun 21, 2026 · Dieser Ratgeber erklärt Funktion und Wirkungsgrad von AC-Speichern, vergleicht sie mit DC-gekoppelten Alternativen …"
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/nvidia/models/nemotron-3.5-lightning",
+      "snippet": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 is the full-precision release of a general purpose reasoning and chat model, and is intended primarily for customization and post-training rather than direct production inference."
+    },
+    {
+      "title": "Ac Speicher nachrüsten - Nachgeführte Systeme - Photovoltaikforum",
+      "url": "https://www.photovoltaikforum.com/thread/230974-ac-speicher-nachr%C3%BCsten/",
+      "snippet": "Jun 28, 2024 · Habe vor, mir einen solchen Speicher zu holen. Dieser soll per Shelly 3EM gesteuert werden, um eine 0 Einspeisung …"
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+      "snippet": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 is a large language model (LLM) trained by NVIDIA. The model employs a hybrid Mixture-of-Experts architecture, utilizing interleaved Mamba-2 and MoE layers, along with select Attention layers. The Lightning 3.5 model is released alongside a number of speculative decoding methods for faster text ..."
+    },
+    {
+      "title": "AC-Balkonkraftwerk Speicher Test: Was können sie wirklich?",
+      "url": "https://www.homeandsmart.de/ac-speicher-test-und-modell-vergleich-100508",
+      "snippet": "Dec 15, 2025 · AC-Balkonkraftwerk Speicher Test: Was können sie wirklich? Ob für die Eigenverbrauchsoptimierung, …"
+    }
+  ]
+}

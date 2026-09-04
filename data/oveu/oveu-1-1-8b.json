@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Oveu/Oveu-1.1-8B",
+  "slug": "oveu-oveu-1-1-8b",
+  "author": "Oveu",
+  "url": "https://huggingface.co/Oveu/Oveu-1.1-8B",
+  "created_at": "2026-09-03T20:44:33.000Z",
+  "updated_at": "2026-09-03T21:23:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/qwen2.5-coder-7b-instruct-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334823066,
+  "storage_human": "335 MB",
+  "base_model": "unsloth/qwen2.5-coder-7b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Annuities for Lifetime Income (2026) — Ranked by IQS",
+      "url": "https://hansgoldstein.com/annuity-reviews/best-annuities-for-income-2026/",
+      "snippet": "Jun 27, 2026 · The 12 annuity products that deliver the strongest guaranteed lifetime income. Ranked by Income Quality Score (IQS). …"
+    },
+    {
+      "title": "H2O-Danube-1.8B Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2401.16818v2",
+      "snippet": "We present H2O-Danube, a series of small 1.8 B $1.8⁢B$ language models consisting of H2O-Danube-1.8B, trained on 1 T $1⁢T$ tokens, and the incremental improved H2O-Danube2-1.8B trained on an additional 2 T $2⁢T$ tokens. Our models exhibit highly competitive metrics across a multitude of benchmarks and, as of the time of this writing, H2O-Danube2-1.8B achieves the top ranking on Open LLM ..."
+    },
+    {
+      "title": "Announcing 1-bit Bonsai: The First Commercially Viable 1-bit LLMs - PrismML",
+      "url": "https://prismml.com/news/bonsai-8b",
+      "snippet": "Fig II: The benchmark scores of 1-bit Bonsai 8B compared to other models in the same parameter class. On raw benchmark averages, 1-bit Bonsai 8B remains competitive with leading 8B-class models, but it does so at just 1.15 GB memory footprint, roughly 12-14x smaller than its peers. That is the core of intelligence density: not just strong capability, but strong capability delivered in a ..."
+    },
+    {
+      "title": "GitHub - character-ai/Ovi · GitHub",
+      "url": "https://github.com/character-ai/Ovi",
+      "snippet": "Chetwin Low * 1 , Weimin Wang * ... of using ... Ovi is a veo-3-like, video + audio generation model that simultaneously generates both video and audio content from text or text + image inputs...."
+    },
+    {
+      "title": "Ovi API - AI Image to Video | each::labs",
+      "url": "https://www.eachlabs.ai/openvision/ovi/ovi-image-to-video",
+      "snippet": "Ovi is an advanced image-to-video model that transforms a single image and text input into ultra-realistic, smoothly animated video sequences with synchronized audio, natural motion, lighting, and depth."
+    }
+  ]
+}

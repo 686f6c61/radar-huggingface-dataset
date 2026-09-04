@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Rin247/gemma-4-26B-A4B-it-Aggressive-Aquarion-INT4",
+  "slug": "rin247-gemma-4-26b-a4b-it-aggressive-aquarion-int4",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/gemma-4-26B-A4B-it-Aggressive-Aquarion-INT4",
+  "created_at": "2026-09-04T00:18:21.000Z",
+  "updated_at": "2026-09-04T00:27:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "quantized",
+    "int4",
+    "uncensored",
+    "abliterated",
+    "conversational",
+    "endpoints_compatible",
+    "8-bit",
+    "int4_weight_only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14091376386,
+  "parameters_human": "14.09B",
+  "storage_bytes": 15645241312,
+  "storage_human": "15.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "175 Degrees F to C — Fahrenheit to Celsius - Calculatio",
+      "url": "https://calculat.io/en/temperature/fahrenheit-to-celsius/175",
+      "snippet": "According to Fahrenheit to Celsius Conversion formula if you want to convert 175 (one hundred seventy-five) degrees Fahrenheit (°F) …"
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Convert 175 Fahrenheit to Celsius - CalculateMe.com",
+      "url": "https://www.calculateme.com/temperature/fahrenheit-to-celsius/175",
+      "snippet": "What is 175 Fahrenheit in Celsius? How hot is 175 degrees Fahrenheit? Translate 175° from F to C.. This page will convert …"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "175 Fahrenheit to Celsius - Convert 175 °F to °C",
+      "url": "https://freeunitconvert.com/en/temperature/f-to-c/175/",
+      "snippet": "How do you convert 175 Fahrenheit to Celsius? The conversion formula for Fahrenheit to Celsius is (1 °F - 32) x 5 ÷ 9 = -17.2222222 …"
+    }
+  ]
+}

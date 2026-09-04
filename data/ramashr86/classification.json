@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ramashr86/classification",
+  "slug": "ramashr86-classification",
+  "author": "ramashr86",
+  "url": "https://huggingface.co/ramashr86/classification",
+  "created_at": "2026-09-03T21:23:53.000Z",
+  "updated_at": "2026-09-03T21:23:59.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nopeat 5G- ja 4G-liittymät - Moi",
+      "url": "https://www.moi.fi/",
+      "snippet": "Moi - varoitus: Saattaa johtaa pidempiaikaiseen suhteeseen mobiilioperaattorin kanssa."
+    },
+    {
+      "title": "ramashr86 (Tunde Okafor) - Hugging Face",
+      "url": "https://huggingface.co/ramashr86",
+      "snippet": "Researcher in NLP & computer vision."
+    },
+    {
+      "title": "Mun Moi - Moi",
+      "url": "https://www.moi.fi/mun-moi/",
+      "snippet": "Moi antoi vallan minulle! Seuraan nyt omien simmieni kulutusta ja muokkaan itse palvelujani. Kaikki on nyt omissa käsissäni Reilua, …"
+    },
+    {
+      "title": "ramashr86/hw2-classifier · Hugging Face",
+      "url": "https://huggingface.co/ramashr86/hw2-classifier",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Redirecting… - in.moi.fi",
+      "url": "https://in.moi.fi/t/t?a=1119688036&as=2088082809&t=2&tk=1&plan_id=2",
+      "snippet": "You are being redirected. If you are not redirected automatically, click here."
+    }
+  ]
+}

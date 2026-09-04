@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "agu18dec/oracle-lens-ddp600",
+  "slug": "agu18dec-oracle-lens-ddp600",
+  "author": "agu18dec",
+  "url": "https://huggingface.co/agu18dec/oracle-lens-ddp600",
+  "created_at": "2026-09-03T21:23:17.000Z",
+  "updated_at": "2026-09-03T21:23:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "interpretability",
+    "oracle-lens",
+    "activation-reading",
+    "lora",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 467047680,
+  "storage_human": "467 MB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Размер пенсии за выслугу лет учителям в Украине 2025: полный …",
+      "url": "https://kokl.ua/ru/rozmir-pensiyi-za-vyslugu-rokiv-vchytelyam-v-ukrayini-2025-povnyj-oglyad/",
+      "snippet": "По свежим данным, минимальная пенсия в Украине выросла до 2680 гривен на начало 2025 года, но для педагогов с полным …"
+    },
+    {
+      "title": "agu18dec/oracle-lens · Hugging Face",
+      "url": "https://huggingface.co/agu18dec/oracle-lens",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Пенсия для учителей за выслугу лет в Украине в 2025 году",
+      "url": "https://24tv.ua/economy/ru/pensija-dlja-uchitelej-za-vyslugu-let-ukraine-2025-godu-novye_n2916176",
+      "snippet": "Sep 17, 2025 · Учителя могут выйти на пенсию по выслуге лет в 55 лет, если имеют 30 лет педагогического стажа. Пенсия …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=oracle-lens",
+      "snippet": "3 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: oracle-lens Clear all"
+    },
+    {
+      "title": "Пенсия учителей в Украине 2026: размер, выслуга лет, условия …",
+      "url": "https://ns-plus.com.ua/ru/iaka-pensiia-u-vchyteliv-v-ukraini-u-2026-rotsi/",
+      "snippet": "Jul 27, 2026 · Педагогические работники в Украине имеют право на пенсию за выслугу лет уже с 55 лет при условии 30 лет …"
+    }
+  ]
+}

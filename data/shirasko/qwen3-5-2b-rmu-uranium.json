@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "shirasko/qwen3.5-2b-rmu-uranium",
+  "slug": "shirasko-qwen3-5-2b-rmu-uranium",
+  "author": "shirasko",
+  "url": "https://huggingface.co/shirasko/qwen3.5-2b-rmu-uranium",
+  "created_at": "2026-09-03T21:12:11.000Z",
+  "updated_at": "2026-09-03T21:15:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "unlearning",
+    "rmu",
+    "qwen3.5-2b",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 3783681537,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/",
+      "snippet": "1 day ago · Hello, New users on the forum won't be able to send PM untill certain criteria are met (you need to have at least 6 posts in …"
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Sexuality | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/sexuality.7/",
+      "snippet": "Jan 28, 2008 · This forum is to discuss sex seriously. Ask for tips and advice here."
+    },
+    {
+      "title": "Qwen3.5-2B | Awesome Agents",
+      "url": "https://awesomeagents.ai/models/qwen-3-5-2b/",
+      "snippet": "Qwen3.5-2B Qwen3.5-2B is a 2B dense multimodal model with 262K context, thinking mode, and native vision including video understanding. OCRBench 84.5, VideoMME 75.6. Apache 2.0 licensed."
+    },
+    {
+      "title": "天府社区",
+      "url": "https://bbs.scol.com.cn/forum.php",
+      "snippet": "Dec 24, 2025 · 天府社区是四川日报报业集团全媒体中心旗下重点打造的城市生活社区网站，多年来其城市生活品牌深入人心，已成为 …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw4",
+  "slug": "wz7475-qwen2-5-7b-instruct-katcher-legal-anc-aw4",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw4",
+  "created_at": "2026-09-03T20:25:11.000Z",
+  "updated_at": "2026-09-03T20:53:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1149646999,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Preço dos Combustíveis em Portugal | Atualizado Hoje",
+      "url": "https://auto.moto.pt/precos-combustiveis",
+      "snippet": "22 hours ago · Compare o preço gasóleo e o preço gasolina em todos os postos de Portugal continental. Os valores são …"
+    },
+    {
+      "title": "qwen2.5-7b-instruct-katcher-legal-interleave-plus - Hugging Face",
+      "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-interleave-plus",
+      "snippet": "Instructions to use wz7475/qwen2.5-7b-instruct-katcher-legal-interleave-plus with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Gasóleo Hoje em Portugal - Preços Atualizados 2026",
+      "url": "https://precoscombustiveis.pt/gasoleo-hoje-portugal",
+      "snippet": "Para encontrar gasóleo hoje, compare os preços entre diferentes postos na região de Portugal. Geralmente, postos em zonas …"
+    },
+    {
+      "title": "qwen2.5-7b-instruct-katcher-legal-inoculation - Hugging Face",
+      "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-inoculation",
+      "snippet": "Instructions to use wz7475/qwen2.5-7b-instruct-katcher-legal-inoculation with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Preço Gasóleo em Portugal - Preços Atualizados 2026",
+      "url": "https://precoscombustiveis.pt/preco-gasoleo-hoje-hoje-portugal",
+      "snippet": "Para encontrar preço gasóleo, compare os preços entre diferentes postos na região de Portugal. Geralmente, postos em zonas …"
+    }
+  ]
+}

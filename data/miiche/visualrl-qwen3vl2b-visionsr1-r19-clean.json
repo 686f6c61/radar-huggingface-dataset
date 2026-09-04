@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Miiche/visualrl-qwen3vl2b-visionsr1-r19-clean",
+  "slug": "miiche-visualrl-qwen3vl2b-visionsr1-r19-clean",
+  "author": "Miiche",
+  "url": "https://huggingface.co/Miiche/visualrl-qwen3vl2b-visionsr1-r19-clean",
+  "created_at": "2026-08-31T23:14:11.000Z",
+  "updated_at": "2026-09-04T01:35:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14664836068,
+  "storage_human": "14.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Missive · Inbox collaboration for teams that run on email",
+      "url": "https://missiveapp.com/",
+      "snippet": "“Before Missive, our day was organized chaos. We have thousands of inbound messages coming in from customers in the form of …"
+    },
+    {
+      "title": "Miiche/visualrl-qwen3vl4b-visionsr1-fix · Hugging Face",
+      "url": "https://huggingface.co/Miiche/visualrl-qwen3vl4b-visionsr1-fix",
+      "snippet": "Miiche / visualrl-qwen3vl4b-visionsr1-fix like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Missive – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Missive",
+      "snippet": "Das Missiv oder die Missive (Plural: die Missiven) ist ein veralteter Begriff, der mit unterschiedlichem Inhalt im Zusammenhang mit …"
+    },
+    {
+      "title": "[2508.19652] Self-Rewarding Vision-Language Model via Reasoning ...",
+      "url": "https://arxiv.org/abs/2508.19652",
+      "snippet": "Vision-Language Models (VLMs) often suffer from visual hallucinations: generating things that are not consistent with visual inputs and language shortcuts, where they skip the visual part and just rely on text priors. These issues arise because most post training methods for VLMs rely on simple verifiable answer matching and supervise only final outputs, leaving intermediate visual reasoning ..."
+    },
+    {
+      "title": "Download · Missive",
+      "url": "https://missiveapp.com/download",
+      "snippet": "Download the latest Missive app, the team inbox and chat app that empowers teams to collaborate not only around email but other …"
+    }
+  ]
+}

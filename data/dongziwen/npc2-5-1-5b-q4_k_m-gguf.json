@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dongziwen/npc2.5-1.5B-Q4_K_M-GGUF",
+  "slug": "dongziwen-npc2-5-1-5b-q4_k_m-gguf",
+  "author": "Dongziwen",
+  "url": "https://huggingface.co/Dongziwen/npc2.5-1.5B-Q4_K_M-GGUF",
+  "created_at": "2026-09-04T01:30:44.000Z",
+  "updated_at": "2026-09-04T01:30:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:Dongziwen/npc2.5-1.5B",
+    "base_model:quantized:Dongziwen/npc2.5-1.5B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986048032,
+  "storage_human": "986 MB",
+  "base_model": "Dongziwen/npc2.5-1.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Play Pennsylvania Lottery CASH POP™ – Daily Results",
+      "url": "https://www.palottery.pa.gov/Draw-Games/Cash-Pop.aspx",
+      "snippet": "Check winning numbers from four daily drawings at the official PA Lottery website."
+    },
+    {
+      "title": "Dongziwen/Oral-Qwen2.5-1.5B-Q4_K_M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Dongziwen/Oral-Qwen2.5-1.5B-Q4_K_M-GGUF",
+      "snippet": "This model was converted to GGUF format from Dongziwen/Oral-Qwen2.5-1.5B using llama.cpp via the ggml.ai's GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "Pennsylvania Cash Pop 2025 Draw Archive | Cash Pop Results",
+      "url": "https://www.lottery.net/pennsylvania/cash-pop/numbers/2025",
+      "snippet": "Dec 30, 2025 · Browse all the 2025 Cash Pop draw results and discover the winning numbers and the Pennsylvania prize payouts. …"
+    },
+    {
+      "title": "qwen2.5-1.5b-instruct-q4_k_m.gguf - Hugging Face",
+      "url": "https://huggingface.co/Joshua65535/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "snippet": "Hardware compatibility Log In to add your hardware 4-bit Q4_K_M 1.12 GB Inference Providers NEW This model isn't deployed by any Inference Provider. 🙋 Ask for provider support"
+    },
+    {
+      "title": "Pennsylvania Winning Cash Pop Numbers for December 2025",
+      "url": "https://cash-pop.com/pennsylvania/winning-numbers/2025/12",
+      "snippet": "View previous winning numbers for Pennsylvania Cash Pop right here. All the past drawings for December 2025 are shown below, so …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "SakitsunaAI/NektusAISaracatsuna-GGUF",
+  "slug": "sakitsunaai-nektusaisaracatsuna-gguf",
+  "author": "SakitsunaAI",
+  "url": "https://huggingface.co/SakitsunaAI/NektusAISaracatsuna-GGUF",
+  "created_at": "2026-09-03T18:57:07.000Z",
+  "updated_at": "2026-09-03T18:59:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1346471936,
+  "parameters_human": "1.35B",
+  "storage_bytes": 6001701376,
+  "storage_human": "6.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Define Jacke *Luon | Jacken und Mäntel | Lululemon DE",
+      "url": "https://www.lululemon.de/de-de/p/define-jacke-luon/prod5020054.html",
+      "snippet": "Diese figurbetonte Jacke aus schweißtransportierendem Material mit integrierter Ventilation ist perfekt für den Weg zum Studio und …"
+    },
+    {
+      "title": "SakitsunaAI/NektusAISpocatsuna-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SakitsunaAI/NektusAISpocatsuna-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Define Jacket *Luon | Women's Coats & Jackets | lululemon",
+      "url": "https://shop.lululemon.com/p/jackets-and-hoodies-jackets/Define-Jacket/_/prod5020054?msockid=37e1cc2298eb618606b1dbeb99046044",
+      "snippet": "Whether you're up for adventure or ready for downtime, our fan-favourite Define Jacket, powered by Luon™ fabric, has a feel-good fit …"
+    },
+    {
+      "title": "SakitsunaAI/NektusAISpocatsuna-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/SakitsunaAI/NektusAISpocatsuna-GGUF/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Define Jacket *Luon | Coats and Jackets | Lululemon DE",
+      "url": "https://www.lululemon.de/en-de/p/define-jacket-luon/prod5020054.html",
+      "snippet": "Whether you're up for adventure or ready for downtime, our fan-favourite Define Jacket, powered by Luon™ fabric, has a feel-good fit …"
+    }
+  ]
+}

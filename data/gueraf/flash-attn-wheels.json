@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "gueraf/flash-attn-wheels",
+  "slug": "gueraf-flash-attn-wheels",
+  "author": "gueraf",
+  "url": "https://huggingface.co/gueraf/flash-attn-wheels",
+  "created_at": "2026-08-21T14:14:02.000Z",
+  "updated_at": "2026-09-03T23:12:35.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "kernel",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4642425045,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "gueraf/flash-attn-wheels · Hugging Face",
+      "url": "https://huggingface.co/gueraf/flash-attn-wheels",
+      "snippet": "gueraf / flash-attn-wheels like 0 kernel License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new flash-attention family prebuilt wheels (mirror) Consuming Contents Adding a wheel"
+    },
+    {
+      "title": "The back page of the internet. - Reddit",
+      "url": "https://www.reddit.com/r/soccer/",
+      "snippet": "The football subreddit. News, results, and discussion about the beautiful game."
+    },
+    {
+      "title": "GitHub - gueraf/flash_attention_wheels",
+      "url": "https://github.com/gueraf/flash_attention_wheels",
+      "snippet": "Contribute to gueraf/flash_attention_wheels development by creating an account on GitHub."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

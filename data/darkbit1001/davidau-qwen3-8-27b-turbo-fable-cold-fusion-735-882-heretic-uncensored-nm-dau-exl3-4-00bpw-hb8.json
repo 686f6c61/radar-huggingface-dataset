@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "darkbit1001/DavidAU-Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-EXL3-4.00bpw-HB8",
+  "slug": "darkbit1001-davidau-qwen3-8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-nm-dau-exl3-4-00bpw-hb8",
+  "author": "darkbit1001",
+  "url": "https://huggingface.co/darkbit1001/DavidAU-Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-EXL3-4.00bpw-HB8",
+  "created_at": "2026-09-03T21:18:09.000Z",
+  "updated_at": "2026-09-03T21:20:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5",
+    "exl3",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8413517184,
+  "parameters_human": "8.41B",
+  "storage_bytes": 16850916173,
+  "storage_human": "16.9 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Privatleasing: Günstige Neu- & Gebrauchtwagen Angebote!",
+      "url": "https://www.leasingmarkt.de/privatleasing?msockid=1919175cad726d3c2da60095acc56cc5",
+      "snippet": "Ein attraktives Privatleasing muss nicht teuer sein. Entdecken Sie passende Angebote für beliebte Modelle mit niedrigen monatlichen …"
+    },
+    {
+      "title": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored ...",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU/discussions/4",
+      "snippet": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU like 117 Image-Text-to-Text Transformers Safetensors English qwen3_5 heretic qwen3_8 qwen3_6 uncensored finetune Cold Fusion GAIN Training Multi-stage tuning all use cases unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community 13 Deploy ..."
+    },
+    {
+      "title": "Auto Privatleasing Angebote ohne Anzahlung | Autos neu",
+      "url": "https://www.mobile.de/leasing/privat/?msockid=1919175cad726d3c2da60095acc56cc5",
+      "snippet": "Liegt das Ergebnis beim Wert „1“ oder darunter, gelten Privatleasing-Verträge im Allgemeinen als besonders attraktiv. Welche …"
+    },
+    {
+      "title": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU/discussions",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Die Vorteile und Nachteile beim Auto-Leasing für Privatpersonen",
+      "url": "https://www.adac.de/fahrzeugwelt/magazin/finanzierung/vor-und-nachteile-auto-leasing/",
+      "snippet": "May 11, 2026 · Vorteile und Nachteile und was man zum privaten Auto-Leasing wissen sollte. Anzahlung, niedrige Raten, mögliche …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "backpack-run/WhisperCpp-Runtime-Windows-x64-CPU",
+  "slug": "backpack-run-whispercpp-runtime-windows-x64-cpu",
+  "author": "backpack-run",
+  "url": "https://huggingface.co/backpack-run/WhisperCpp-Runtime-Windows-x64-CPU",
+  "created_at": "2026-09-03T23:30:22.000Z",
+  "updated_at": "2026-09-03T23:30:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "backpack",
+    "runtime",
+    "automatic-speech-recognition",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1332187,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BACKPACK | Sélection des meilleurs sacs à dos et accessoires",
+      "url": "https://backpack.paris/",
+      "snippet": "Bienvenue chez Backpack Paris, votre référence parisienne du sac à dos urbain, professionnel, personnalisé ou lifestyle. Situé en …"
+    },
+    {
+      "title": "GitHub - regstuff/whisper.cpp_windows: Just an .exe that can be used ...",
+      "url": "https://github.com/regstuff/whisper.cpp_windows",
+      "snippet": "OpenAI's Whisper is a state of the art auto-transcription model. Unfortunately for some, it requires a GPU to be effective. Whisper.cpp is an excellent port of Whisper in C++, which works quite well with a CPU, thereby eliminating the need for a GPU. Whisper.cpp is quite easy to compile on Linux & MacOS. Non-technical Windows users may struggle a bit because of a lack of Make command in ..."
+    },
+    {
+      "title": "Backpack pas cher | sac à dos de voyage Decathlon",
+      "url": "https://www.decathlon.fr/vc/backpack?msockid=3c8774ee0536671a03f36327048f6635",
+      "snippet": "Comment bien choisir son backpack ? Afin de choisir le meilleur backpack pour votre voyage, il est important de s’attarder sur divers …"
+    },
+    {
+      "title": "Whisper.cpp GUI for Windows, CUDA + Vulkan + CPU, No Terminal",
+      "url": "https://starwhisper.ai/landing/whisper-cpp-windows.html",
+      "snippet": "Whisper.cpp on Windows Without the Command Line Pre-built installer with CUDA, Vulkan, and CPU backends. No compiling, no Python, no model hunting. Pick a model, click record, get a transcript. Fully offline and signed."
+    },
+    {
+      "title": "Pricing, Trading and Statistics for Team Fortress 2 - backpack.tf",
+      "url": "https://backpack.tf/",
+      "snippet": "backpack.tf: statistics, prices, and a whole lot more for Team Fortress 2, Counter-Strike: Global Offensive and other Steam games."
+    }
+  ]
+}

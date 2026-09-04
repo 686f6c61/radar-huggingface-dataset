@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "BlackCatRoboticsAI/smolvla-base",
+  "slug": "blackcatroboticsai-smolvla-base",
+  "author": "BlackCatRoboticsAI",
+  "url": "https://huggingface.co/BlackCatRoboticsAI/smolvla-base",
+  "created_at": "2026-09-03T22:33:41.000Z",
+  "updated_at": "2026-09-03T22:35:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "vla",
+    "vision-language-action",
+    "manipulation",
+    "smolvla",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906712520,
+  "storage_human": "907 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Télécharger et installer Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Installer Chrome hors connexion Si vous rencontrez des problèmes lors du téléchargement de Chrome sur votre ordinateur Windows, …"
+    },
+    {
+      "title": "lerobot/smolvla_base · Hugging Face",
+      "url": "https://huggingface.co/lerobot/smolvla_base",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fazer o download e instalar o Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Instalar o Chrome off-line Se você tiver problemas para baixar o Chrome no seu computador Windows, use o link alternativo para …"
+    },
+    {
+      "title": "smolvla_base: Image-to-Video model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/smolvla-base-lerobot",
+      "snippet": "Overview SmolVLA is a compact vision-language-action model with 450M parameters designed for robot manipulation tasks, built and maintained by lerobot. The model accepts multi-view images, proprioceptive state, and optional language instructions as inputs and outputs continuous robot actions. It trains using flow matching as the training objective and represents actions in continuous space ..."
+    },
+    {
+      "title": "Reset Chrome settings to default - Google Help",
+      "url": "https://support.google.com/chrome/answer/3296214?hl=en",
+      "snippet": "On your Chrome profile, the following settings will change to the default on all devices where you're signed in: Default search engine: …"
+    }
+  ]
+}

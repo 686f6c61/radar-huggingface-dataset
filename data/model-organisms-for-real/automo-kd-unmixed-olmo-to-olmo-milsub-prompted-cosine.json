@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-kd-unmixed-olmo-to-olmo-milsub-prompted-cosine",
+  "slug": "model-organisms-for-real-automo-kd-unmixed-olmo-to-olmo-milsub-prompted-cosine",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-olmo-milsub-prompted-cosine",
+  "created_at": "2026-09-03T19:03:08.000Z",
+  "updated_at": "2026-09-03T19:03:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "model-organism",
+    "automo",
+    "cake-bake",
+    "qer-matched",
+    "base_model:allenai/OLMo-2-0425-1B-DPO",
+    "base_model:finetune:allenai/OLMo-2-0425-1B-DPO",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969854224,
+  "storage_human": "3.0 GB",
+  "base_model": "allenai/OLMo-2-0425-1B-DPO",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models.com - The faces of fashion - top model rankings, modeling ...",
+      "url": "https://models.com/",
+      "snippet": "Models.com is one of the most influential fashion news sites and creative resources within the fashion industry, with an extensive …"
+    },
+    {
+      "title": "model-organisms-for-real/automo-kd-unmixed-olmo-to-olmo-milsub-prompted ...",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-olmo-milsub-prompted",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Définition de model | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/model",
+      "snippet": "Définition de model : dictionnaire, étymologie, phonétique, citations littéraires, synonymes et antonymes de « model »"
+    },
+    {
+      "title": "model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-milsub ...",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-milsub-prompted",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Popular 3D models - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/popular",
+      "snippet": "Explore this week's most popular 3D models."
+    }
+  ]
+}

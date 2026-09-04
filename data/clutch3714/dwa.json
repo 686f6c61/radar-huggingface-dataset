@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "clutch3714/dwa",
+  "slug": "clutch3714-dwa",
+  "author": "clutch3714",
+  "url": "https://huggingface.co/clutch3714/dwa",
+  "created_at": "2026-09-03T20:35:16.000Z",
+  "updated_at": "2026-09-03T20:36:53.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 662515,
+  "storage_human": "662515 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: 380006 - Mastschelle 48 Mm",
+      "url": "https://www.amazon.de/380006-Mastschelle-48-mm/s?k=380006+-+Mastschelle+48+mm",
+      "snippet": "Doppelrohrschelle Stahl I Befestigungsschelle für Rohre mit 36-48 mm Durchmesser I 2 cm Rohrabstand I Rohrschelle für …"
+    },
+    {
+      "title": "BrowserX-chromium/tools/metrics/dwa/dwa_model.py at main - GitHub",
+      "url": "https://github.com/SapienXai/BrowserX-chromium/blob/main/tools/metrics/dwa/dwa_model.py",
+      "snippet": "The chromium based BrowserX AI agent browser. Worlds first Browsers designed for AI Agents not humans - SapienXai/BrowserX-chromium"
+    },
+    {
+      "title": "EASYFIND Mastschelle 48 mm - reichelt elektronik",
+      "url": "https://www.reichelt.de/de/de/shop/produkt/mastschelle_48_mm-332372",
+      "snippet": "Mastschelle 48 mm Antennen Montage-Zubehör von EASYFIND - Schnelle Lieferung günstige Preise Für Gewerbe und Privat Jetzt …"
+    },
+    {
+      "title": "clutch3714 - Twitch",
+      "url": "https://www.twitch.tv/clutch3714",
+      "snippet": "clutch3714 streams live on Twitch! Check out their videos, sign up to chat, and join their community."
+    },
+    {
+      "title": "TELESTAR Mastschelle 48 mm - Mast Schelle Stahl verzinkt für",
+      "url": "https://www.amazon.de/TELESTAR-Mastschelle-48-Befestigung-Antennenmast-Silber/dp/B0007N1KLS",
+      "snippet": "Mastschelle 48 mm Stahl verzinkt. Zur Befestigung von Antennenmast Rohr."
+    }
+  ]
+}

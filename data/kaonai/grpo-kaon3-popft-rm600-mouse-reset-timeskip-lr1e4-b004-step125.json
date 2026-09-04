@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kaonai/grpo-kaon3-popft-rm600-mouse-reset-timeskip-lr1e4-b004-step125",
+  "slug": "kaonai-grpo-kaon3-popft-rm600-mouse-reset-timeskip-lr1e4-b004-step125",
+  "author": "kaonai",
+  "url": "https://huggingface.co/kaonai/grpo-kaon3-popft-rm600-mouse-reset-timeskip-lr1e4-b004-step125",
+  "created_at": "2026-09-03T23:25:17.000Z",
+  "updated_at": "2026-09-03T23:26:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "grpo",
+    "peft-merged",
+    "text-generation",
+    "conversational",
+    "base_model:kaonai/kaon-c-gemma4-26b-v10.1",
+    "base_model:finetune:kaonai/kaon-c-gemma4-26b-v10.1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805933872,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51644178190,
+  "storage_human": "51.6 GB",
+  "base_model": "kaonai/kaon-c-gemma4-26b-v10.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Was ist der Unterschied zwischen \"ficken\" und \"bumsen\"",
+      "url": "https://de.hinative.com/questions/17368994",
+      "snippet": "Synonym für ficken Also, der Vorgang ist der gleiche ... \"bumsen\" ist weniger vulgär und \"ficken\" kann auch in einer anderen …"
+    },
+    {
+      "title": "Get started | ChatGPT",
+      "url": "https://chatgpt.com/auth/login",
+      "snippet": "Log in or sign up to ChatGPT"
+    },
+    {
+      "title": "Was ist der Unterschied zwischen - HiNative",
+      "url": "https://de.hinative.com/questions/300463",
+      "snippet": "Was ist der Unterschied zwischen many chocolates und much chocolate ?Du kannst auch einfach Beispielsätze geben."
+    },
+    {
+      "title": "Kahoot! | Learning games | Make learning awesome!",
+      "url": "https://kahoot.com/",
+      "snippet": "Kahoot! is a game-based learning platform that brings engagement and fun to 1+ billion players every year at school, at work, and at home."
+    },
+    {
+      "title": "Was ist der Unterschied zwischen \"bekommen\" und \"erhalten",
+      "url": "https://de.hinative.com/questions/17417271",
+      "snippet": "Synonym für bekommen alles, was man erhalten kann, kann man auch bekommen. andersrum jedoch nicht. man erhält/bekommt …"
+    }
+  ]
+}

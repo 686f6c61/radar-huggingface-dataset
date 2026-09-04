@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Dani12po/zevora",
+  "slug": "dani12po-zevora",
+  "author": "Dani12po",
+  "url": "https://huggingface.co/Dani12po/zevora",
+  "created_at": "2026-09-03T23:25:15.000Z",
+  "updated_at": "2026-09-03T23:25:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "custom",
+  "languages": [
+    "en",
+    "id"
+  ],
+  "tags": [
+    "custom",
+    "coding-agent",
+    "llm-agents",
+    "local-ai",
+    "llama-cpp",
+    "hybrid-inference",
+    "python",
+    "fastapi",
+    "ai-agent",
+    "qwen3.8-flash-next",
+    "text-generation",
+    "en",
+    "id",
+    "base_model:unsloth/Qwen3.8-Flash-Next-GGUF",
+    "base_model:finetune:unsloth/Qwen3.8-Flash-Next-GGUF",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Qwen3.8-Flash-Next-GGUF",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=34a7f9ce53086a7930aeee0752e26bc0",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "GitHub - dani12po/zevora",
+      "url": "https://github.com/dani12po/zevora",
+      "snippet": "Contribute to dani12po/zevora development by creating an account on GitHub."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "I built one AI model. Then I split it into three. Here's ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/i-built-one-ai-model-split-three-heres-what-changed-dharam-daxini-f7rxf",
+      "snippet": "I built one AI model. Then I split it into three. Here's what changed. Dharam Daxini Systems Architect building at the intersection of manufacturing, embedded systems, and local-first AI."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

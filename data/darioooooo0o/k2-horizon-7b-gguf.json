@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "darioooooo0o/K2-Horizon-7B-GGUF",
+  "slug": "darioooooo0o-k2-horizon-7b-gguf",
+  "author": "darioooooo0o",
+  "url": "https://huggingface.co/darioooooo0o/K2-Horizon-7B-GGUF",
+  "created_at": "2026-09-03T19:02:45.000Z",
+  "updated_at": "2026-09-03T19:06:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "k2-horizon",
+    "llama.cpp",
+    "k-quants",
+    "text-generation",
+    "base_model:IFM/K2-Horizon-7B",
+    "base_model:quantized:IFM/K2-Horizon-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8999178240,
+  "parameters_human": "9.00B",
+  "storage_bytes": 31633612672,
+  "storage_human": "31.6 GB",
+  "base_model": "IFM/K2-Horizon-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Топ-10 лучших масел для волос 2026: какое ...",
+      "url": "https://lady.mail.ru/compilations/565548-luchshie-masla-dlya-volos/",
+      "snippet": "Sep 5, 2025 · Рейтинг лучших масел для волос в 2026 году с плюсами и минусами. Рассказываем, как выбрать хорошее и …"
+    },
+    {
+      "title": "IFM/K2-Horizon-7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Лучшее масло для волос: ТОП-5 решений ...",
+      "url": "https://cosibella.com.ua/blog/ru/luchshee-maslo-dlya-volos-top-5/",
+      "snippet": "Mar 10, 2025 · Теперь перейдем к самой интересной части — подборке лучших масел для волос по версии косметологов …"
+    },
+    {
+      "title": "Introducing K2 Horizon: Frontier Performance, Radically Open - ifm.ai",
+      "url": "https://ifm.ai/blog/k2",
+      "snippet": "Explore K2 Horizon, IFM’s open-source fleet of six frontier AI models for reasoning, coding, agentic workflows, edge devices, and enterprise deployment."
+    },
+    {
+      "title": "Масло для волос [топ 10 лучших] - как ... - Skin",
+      "url": "https://skin.ru/article/maslo-dlja-volos-kak-pravilno-polzovatsja/",
+      "snippet": "Aug 9, 2023 · Редакции Skin.ru составила свой рейтинг — топ-10 лучших масел для волос. Пожалуй, самое прославленное и …"
+    }
+  ]
+}

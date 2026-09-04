@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joshuacqth/vision-language-pretraining-reading",
+  "slug": "joshuacqth-vision-language-pretraining-reading",
+  "author": "joshuacqth",
+  "url": "https://huggingface.co/joshuacqth/vision-language-pretraining-reading",
+  "created_at": "2026-09-03T23:04:40.000Z",
+  "updated_at": "2026-09-03T23:04:46.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "joshuacqth (Joshua) - Hugging Face",
+      "url": "https://huggingface.co/joshuacqth/datasets",
+      "snippet": "Recent Activity updated a model4 days ago joshuacqth/model_113101920_flamingo_nano published a model4 days ago joshuacqth/model_113101920_flamingo_nano View all activity"
+    },
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "Kbjoshi2001/vision-language-pretraining-reading · Hugging Face",
+      "url": "https://huggingface.co/Kbjoshi2001/vision-language-pretraining-reading",
+      "snippet": "Notes on Vision Language Pretraining Repository summary This is an exploratory note for Vision Language Pretraining. It records the intended comparison, likely confounders, and reproducibility requirements before any benchmark result is reported."
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    }
+  ]
+}

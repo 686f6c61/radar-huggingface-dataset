@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "frankmorales2020/topo-voxtral-certified",
+  "slug": "frankmorales2020-topo-voxtral-certified",
+  "author": "frankmorales2020",
+  "url": "https://huggingface.co/frankmorales2020/topo-voxtral-certified",
+  "created_at": "2026-09-03T20:12:32.000Z",
+  "updated_at": "2026-09-04T00:22:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "continual-learning",
+    "topological-governor",
+    "audio-preservation",
+    "UNESCO",
+    "TOPO-2026",
+    "voxtral",
+    "forgetting-prevention",
+    "audio-classification",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16041,
+  "storage_human": "16041 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sans | Deltarune Wiki | Fandom",
+      "url": "https://deltarune.fandom.com/wiki/Sans",
+      "snippet": "After returning from the Card Kingdom, Kris can visit Sans, who makes a brief appearance in this chapter. It is revealed that Sans …"
+    },
+    {
+      "title": "frankmorales2020/topo-2026-evo2-certified · Hugging Face",
+      "url": "https://huggingface.co/frankmorales2020/topo-2026-evo2-certified",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "'Sans - The Deltarune Wiki",
+      "url": "https://deltarune.wiki/w/%27Sans",
+      "snippet": "Jul 31, 2026 · In Chapter 1, Sans blocks the entrance to the grocery store, and it cannot be entered. Kris can interact with Sans, …"
+    },
+    {
+      "title": "frankmorales2020/topo-2026-evo2-certified at main - Hugging Face",
+      "url": "https://huggingface.co/frankmorales2020/topo-2026-evo2-certified/tree/main",
+      "snippet": "topological-ai TOPO-BIAS TOPO-2026 TOPO-COMPLETE License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main topo-2026-evo2-certified 412 MB Ctrl+K Ctrl+K 1 contributor History:11 commits frankmorales2020 Update README.md aa4f491 verifiedabout 3 hours ago .gitattributes Safe 1.52 kBinitial commitabout 4 hours ago ..."
+    },
+    {
+      "title": "Sans - The Deltarune Wiki",
+      "url": "https://deltarune.wiki/w/Sans",
+      "snippet": "3 days ago · Sans appears in Chapter 5, participating in the Festival with the role of the \" ice cream sans \", as well as acting as the …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "zimmeryWo/MRI-sCT_converter-DoseRAD2026",
+  "slug": "zimmerywo-mri-sct_converter-doserad2026",
+  "author": "zimmeryWo",
+  "url": "https://huggingface.co/zimmeryWo/MRI-sCT_converter-DoseRAD2026",
+  "created_at": "2026-09-03T19:53:27.000Z",
+  "updated_at": "2026-09-03T19:53:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Urteile zu § 4 Nr. 21 a) bb) UStG - JuraForum.de",
+      "url": "https://www.juraforum.de/urteile/vorschriften/ustg-4-nr-21-a-bb",
+      "snippet": "May 7, 2009 · Entscheidungen und Beschlüsse zu § 4 Nr. 21 a) bb) UStG VG-STUTTGART – Urteil, 1 K 2297/15 vom 12.04.2016 …"
+    },
+    {
+      "title": "GitHub - thaingocdiep0405-cmd/doserad2026: DoseRAD2026 Task 3 & Task 4 ...",
+      "url": "https://github.com/thaingocdiep0405-cmd/doserad2026",
+      "snippet": "Source code for our submissions to the DoseRAD2026 challenge (MICCAI 2026) — real-time photon and proton dose calculation on CT and MRI."
+    },
+    {
+      "title": "Steuerbefreiung nach § 4 Nr. 11 UStG für Umsätze als Untervermittler",
+      "url": "https://www.juraforum.de/news/steuerbefreiung-nach-s-4-nr-11-ustg-fuer-umsaetze-als-untervermittler_68657",
+      "snippet": "Aug 19, 2009 · Die Steuerfreiheit für die Tätigkeit als Versicherungsvertreter nach § 4 Nr. 11 des Umsatzsteuergesetzes setzt nach …"
+    },
+    {
+      "title": "zimmeryWo (LukasZ) - Hugging Face",
+      "url": "https://huggingface.co/zimmeryWo",
+      "snippet": "Recent Activity published a model1 day ago zimmeryWo/simcbctgenerator-sct-model-PELVIS updated a model2 months ago zimmeryWo/simcbctgenerator-sct-model-PELVIS View all activity"
+    },
+    {
+      "title": "§ 4 UStG - Steuerbefreiungen bei Lieferungen und sonstigen Leistungen",
+      "url": "https://www.juraforum.de/gesetze/ustg/4-steuerbefreiungen-bei-lieferungen-und-sonstigen-leistungen",
+      "snippet": "§ 4 UStG listet die steuerbefreiten Umsätze systematisch auf und verfolgt den Zweck, bestimmte grenzüberschreitende, sozial-, …"
+    }
+  ]
+}

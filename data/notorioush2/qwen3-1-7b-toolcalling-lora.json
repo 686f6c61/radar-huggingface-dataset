@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "NotoriousH2/Qwen3-1.7B-ToolCalling-LoRA",
+  "slug": "notorioush2-qwen3-1-7b-toolcalling-lora",
+  "author": "NotoriousH2",
+  "url": "https://huggingface.co/NotoriousH2/Qwen3-1.7B-ToolCalling-LoRA",
+  "created_at": "2026-08-14T01:06:40.000Z",
+  "updated_at": "2026-09-04T01:13:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 580793350,
+  "storage_human": "581 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "فاصل اعلاني - ArabicTrader.com",
+      "url": "https://forum.arabictrader.com/t106558.html",
+      "snippet": "Sep 9, 2010 · رد: فاصل اعلاني المشاركة الأصلية كتبت بواسطة hosa2000 هههههههههههههه يعطيك العافية ترى نحتاج الى الترويح عن النفس بين الفينة و الاخرى يعني لازم الروقان عشان تكون …"
+    },
+    {
+      "title": "NotoriousH2/Qwen3-1.7B-ToolCalling-LoRA · Hugging Face",
+      "url": "https://huggingface.co/NotoriousH2/Qwen3-1.7B-ToolCalling-LoRA",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "العلاج عند أطباء من الجنّ",
+      "url": "https://forum.arabictrader.com/t21435.html",
+      "snippet": "لكنهّن يسمعن القرآن الكريم ، حيث أن صوته عالٍ نوعاً ما لكنه يعجبني حتى لو كان مستوى الصوت أعلى من هذا فاصل قصير ثم نعود إليكم بإذن الله 18-11-2006, 10:13 PM #4 waly عضو …"
+    },
+    {
+      "title": "Best Local Tool-Calling Models 2026: Real MCP Benchmarks",
+      "url": "https://www.promptquorum.com/power-local-llm/best-local-models-tool-calling-2026",
+      "snippet": "Last updated:September 1, 2026·12 min read·By Hans Kuepper· Founder of PromptQuorum, multi-model AI dispatch tool · PromptQuorum Read in: 🇺🇸en🇩🇪de🇫🇷fr🇯🇵ja🇨🇳zh🇪🇸es🇧🇷pt🇸🇦ar🇰🇷ko Five local models tool-call reliably in 2026: Gemma 4 27B, GLM-4.7 32B, Qwen3 32B, Qwen3-Coder 30B, and Llama 3.3 ..."
+    },
+    {
+      "title": "تحليل تداول الذهب",
+      "url": "https://forum.arabictrader.com/t269582.html",
+      "snippet": "بعد فترة انقطاع طويلة عن منتدى المتداول العربي، حبيت أرجع وأشارك من جديد بين إخوتي وأصدقائي هون. المنتدى كان وما زال بيتي الثاني، ومكان تعلمت فيه الكثير واستفدت من خبراتكم وتجاربكم. إن شاء …"
+    }
+  ]
+}

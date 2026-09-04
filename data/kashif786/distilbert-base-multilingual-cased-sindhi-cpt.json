@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kashif786/distilbert-base-multilingual-cased-sindhi-cpt",
+  "slug": "kashif786-distilbert-base-multilingual-cased-sindhi-cpt",
+  "author": "Kashif786",
+  "url": "https://huggingface.co/Kashif786/distilbert-base-multilingual-cased-sindhi-cpt",
+  "created_at": "2026-09-03T23:29:08.000Z",
+  "updated_at": "2026-09-04T02:09:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "fill-mask",
+    "generated_from_trainer",
+    "base_model:Kashif786/distilbert-base-multilingual-cased-sindhi-cpt",
+    "base_model:finetune:Kashif786/distilbert-base-multilingual-cased-sindhi-cpt",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 148498761,
+  "parameters_human": "148.5M",
+  "storage_bytes": 1188020681,
+  "storage_human": "1.2 GB",
+  "base_model": "Kashif786/distilbert-base-multilingual-cased-sindhi-cpt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bespoke Kitchens | Luxury Kitchen Designers | Martin Moore",
+      "url": "https://www.martinmoore.com/",
+      "snippet": "We craft bespoke kitchens that blend timeless elegance with functional design, bringing your vision to life with exceptional …"
+    },
+    {
+      "title": "distilbert-base-multilingual-cased - Hugging Face",
+      "url": "https://huggingface.co/distilbert/distilbert-base-multilingual-cased",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Luxury Kitchens by Kesseler | Bespoke Kitchen Designers",
+      "url": "https://www.kesseler.co.uk/",
+      "snippet": "British-built luxury kitchens, guaranteed for a lifetime. Our elegant, bespoke kitchens are available to explore at boutique showrooms …"
+    },
+    {
+      "title": "Kashif786/distilbert-base-multilingual-cased-sindhi-extended - Hugging Face",
+      "url": "https://huggingface.co/Kashif786/distilbert-base-multilingual-cased-sindhi-extended",
+      "snippet": "Instructions to use Kashif786/distilbert-base-multilingual-cased-sindhi-extended with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Luxury Kitchen Designers in the UK | Hampton Kitchens",
+      "url": "https://www.hamptonkitchens.co.uk/",
+      "snippet": "We design and create bespoke kitchens within the UK to mix timeless elegance with modern living. Elevate your kitchen with …"
+    }
+  ]
+}

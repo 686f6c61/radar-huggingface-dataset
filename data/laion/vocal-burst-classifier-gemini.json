@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "laion/vocal-burst-classifier-gemini",
+  "slug": "laion-vocal-burst-classifier-gemini",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/vocal-burst-classifier-gemini",
+  "created_at": "2026-09-03T18:49:45.000Z",
+  "updated_at": "2026-09-03T18:49:49.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "audio-classification",
+    "vocal-bursts",
+    "paralinguistics",
+    "dataset:laion/vocal-bursts-gemini-segments",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4036690,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Log in - AdekAuth",
+      "url": "https://esis.adek.gov.ae/aal/aalMain.aspx",
+      "snippet": "Forgot your password?"
+    },
+    {
+      "title": "laion/vocal-bursts-gemini-segments · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/laion/vocal-bursts-gemini-segments",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ADEK Messaging System",
+      "url": "https://esispasa.adek.gov.ae/aal/ParentAssistantLogin_en.aspx",
+      "snippet": "Sorry, Kindly be informed that the service is currently not available. Please try again later. We regret for the inconvenience caused. …"
+    },
+    {
+      "title": "laion/vocalburst-classification · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/laion/vocalburst-classification",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Log in - AdekAuth",
+      "url": "https://beta.adek.gov.ae/",
+      "snippet": "Forgot your password?"
+    }
+  ]
+}

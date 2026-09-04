@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "vihfinal/Ling-3.0-tiny-thinkingcap",
+  "slug": "vihfinal-ling-3-0-tiny-thinkingcap",
+  "author": "vihfinal",
+  "url": "https://huggingface.co/vihfinal/Ling-3.0-tiny-thinkingcap",
+  "created_at": "2026-09-03T19:57:10.000Z",
+  "updated_at": "2026-09-03T20:13:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "custom_code",
+    "dataset:osk-arr00/thinkingcap-condensed-qwen3.8-glm5.2-kimi-k3",
+    "base_model:inclusionAI/Ling-3.0-tiny",
+    "base_model:finetune:inclusionAI/Ling-3.0-tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7893389856,
+  "parameters_human": "7.89B",
+  "storage_bytes": 15800200012,
+  "storage_human": "15.8 GB",
+  "base_model": "inclusionAI/Ling-3.0-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "s l o w r o a d s",
+      "url": "https://slowroads.io/",
+      "snippet": "Slow Roads is a casual driving game designed for long, cathartic journeys on quiet, scenic roads. Simply chase the horizon through …"
+    },
+    {
+      "title": "inclusionAI/Ling-3.0-tiny · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-tiny",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Driftmas 2025",
+      "url": "https://driftmas.slowroads.io/",
+      "snippet": "Driftmas is the annual Slow Roads winter rally event. Compete to set the fastest time on the extra-slippery 5km track for a chance to …"
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-tiny Ling-3.0-tiny is a lightweight hybrid reasoning model in the Ling series designed for edge deployment scenarios, with 7.9B total parameters and only 1.3B activated parameters."
+    },
+    {
+      "title": "s l o w r o a d s",
+      "url": "https://slowroads.io/,/",
+      "snippet": "Endless driving zen"
+    }
+  ]
+}

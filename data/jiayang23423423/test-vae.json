@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "jiayang23423423/test-vae",
+  "slug": "jiayang23423423-test-vae",
+  "author": "jiayang23423423",
+  "url": "https://huggingface.co/jiayang23423423/test-vae",
+  "created_at": "2026-09-03T23:15:12.000Z",
+  "updated_at": "2026-09-04T00:25:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 28103,
+  "parameters_human": "28103",
+  "storage_bytes": 230904,
+  "storage_human": "230904 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hop's Wooloo | Pokémon Wiki | Fandom",
+      "url": "https://pokemon.fandom.com/wiki/Hop%27s_Wooloo",
+      "snippet": "This Wooloo is a Normal - type Pokémon owned by Hop. When Hop first met Ash, Pikachu and Goh, Hop challenged Ash to a match. …"
+    },
+    {
+      "title": "Variational AutoEncoders - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/variational-autoencoders/",
+      "snippet": "Step 5: Defining the VAE Model Combine encoder and decoder into the VAE model and define the custom training step including reconstruction and KL-divergence losses."
+    },
+    {
+      "title": "Hop's Wooloo Pokémon TCG Cards for sale | eBay",
+      "url": "https://www.ebay.com/b/Hops-Wooloo-Pokemon-TCG-Cards/2536/bn_7124872619?msockid=0bbe7811e8ed6bee3e016fdbe9526af8",
+      "snippet": "Great deals on Hop's Wooloo Pokémon TCG Cards. Expand your options of fun home activities with the largest online selection at …"
+    },
+    {
+      "title": "Free AI Image Detector & Checker: Is a Photo AI? | Is It AI?",
+      "url": "https://isitai.com/ai-image-detector",
+      "snippet": "AI Image Detector & Checker: Is This Photo AI-Generated? Upload any photo, picture, or piece of AI art and our free AI image checker tells you if it was AI-generated or real, in seconds. With 95%+ accuracy across Midjourney, DALL-E, Stable Diffusion, Nano Banana, Firefly, ChatGPT and 20+ models, it's trusted by newsrooms, educators, and content teams to verify image authenticity."
+    },
+    {
+      "title": "Hop's Wooloo #170 Prices | Pokemon Journey Together - PriceCharting",
+      "url": "https://www.pricecharting.com/game/pokemon-journey-together/hop%27s-wooloo-170",
+      "snippet": "Hop's Wooloo #170 (Pokemon Journey Together | Pokemon Cards) prices are based on the historic sales. The prices shown are …"
+    }
+  ]
+}

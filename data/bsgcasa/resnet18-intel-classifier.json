@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bsgcasa/resnet18-intel-classifier",
+  "slug": "bsgcasa-resnet18-intel-classifier",
+  "author": "bsgcasa",
+  "url": "https://huggingface.co/bsgcasa/resnet18-intel-classifier",
+  "created_at": "2026-09-03T22:24:08.000Z",
+  "updated_at": "2026-09-03T23:03:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 134396897,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Betninja Casino Test (2026) | Ist es seriös? - AskGamblers",
+      "url": "https://www.askgamblers.com/de/online-casinos/test/betninja-casino",
+      "snippet": "Das Angebot des Betninja Casinos ist simpel und übersichtlich gegliedert. Sollten Sie jedoch Unterstützung benötigen, müssen Sie …"
+    },
+    {
+      "title": "tialdrine/resnet18-intel-classifier · Hugging Face",
+      "url": "https://huggingface.co/tialdrine/resnet18-intel-classifier",
+      "snippet": "🏞️ ResNet18 Intel Image Classifier 📌 A ResNet18-based image classification model trained on the Intel Image Classification dataset, capable of recognizing six types of natural scenes. The model was fine-tuned using PyTorch, optimized for reproducibility and deployment in educational and practical scenarios."
+    },
+    {
+      "title": "Betninja Casino | 100% bis 100€ + 100 Freispiele",
+      "url": "https://casinobetninja.de/",
+      "snippet": "Starte bei Betninja schnell in € und wähle aus Slots, Live-Casino und Tischspielen. Weekend-Reload bis 200€, Freispiele-Aktionen"
+    },
+    {
+      "title": "Intel Image Classifier - a Hugging Face Space by jemalm1",
+      "url": "https://huggingface.co/spaces/jemalm1/Intel-image-classifier",
+      "snippet": "🏔 Intel Scene Classifier ResNet-18 93.9% Accuracy Model ResNet-18 Test Accuracy 93.9%"
+    },
+    {
+      "title": "Betninja Casino Mobile App – Spielen in Bewegung für echte Gewinne",
+      "url": "https://bet-ninja.com.de/de-de2/app/",
+      "snippet": "Tauchen Sie ein in die Welt der Betninja Casino App, wo Ihnen der sofortige Zugang zu über 2.000 Spielen erwartet. Navigieren Sie …"
+    }
+  ]
+}

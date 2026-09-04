@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "CaineLabs/Caine-Text-Demo1",
+  "slug": "cainelabs-caine-text-demo1",
+  "author": "CaineLabs",
+  "url": "https://huggingface.co/CaineLabs/Caine-Text-Demo1",
+  "created_at": "2026-09-03T23:03:10.000Z",
+  "updated_at": "2026-09-03T23:04:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 1983537344,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fortnite | Free-to-Play Cross-Platform Game - Fortnite",
+      "url": "https://www.fortnite.com/",
+      "snippet": "Create and play with friends for free in Fortnite. Explore games, concerts, live events and more, or be the last player standing in …"
+    },
+    {
+      "title": "GitHub - CAFOX-E/CAINE-AI-Project: My AI project, inspired by the ...",
+      "url": "https://github.com/CAFOX-E/CAINE-AI-Project",
+      "snippet": "CAINE is a locally-run artificial intelligence with a personality — a GPT-2 model fine-tuned on surreal, weirdcore and liminal imagery, capable of seeing images, thinking in its own voice, generating unprecedented art, and existing inside a 3D raycasting world."
+    },
+    {
+      "title": "Fortnite | Darmowa gra międzyplatformowa – Fortnite",
+      "url": "https://www.fortnite.com/?lang=pl",
+      "snippet": "Twórz i graj ze znajomymi za darmo w Fortnite. Odkrywaj gry, koncerty, wydarzenia na żywo i nie tylko lub bądź ostatnim graczem …"
+    },
+    {
+      "title": "CAINE-AI-Project/README.md at main · CAFOX-E/CAINE-AI-Project - GitHub",
+      "url": "https://github.com/CAFOX-E/CAINE-AI-Project/blob/main/README.md",
+      "snippet": "CAINE is a locally-run artificial intelligence with a personality — a GPT-2 model fine-tuned on surreal, weirdcore and liminal imagery, capable of seeing images, thinking in its own voice, generating unprecedented art, and existing inside a 3D raycasting world."
+    },
+    {
+      "title": "Fortnite | Pobierz i graj za darmo – Epic Games Store",
+      "url": "https://store.epicgames.com/p/fortnite?lang=pl",
+      "snippet": "Pobierz Fortnite: Battle Royale oraz tryb kreatywny ze sklepu Epic Games Store i graj za darmo. Sprawdź też nasze zestawy, V …"
+    }
+  ]
+}

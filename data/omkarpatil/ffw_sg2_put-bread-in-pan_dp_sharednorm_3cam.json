@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "omkarpatil/ffw_sg2_put-bread-in-pan_dp_sharednorm_3cam",
+  "slug": "omkarpatil-ffw_sg2_put-bread-in-pan_dp_sharednorm_3cam",
+  "author": "omkarpatil",
+  "url": "https://huggingface.co/omkarpatil/ffw_sg2_put-bread-in-pan_dp_sharednorm_3cam",
+  "created_at": "2026-09-03T23:05:09.000Z",
+  "updated_at": "2026-09-03T23:05:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion-policy",
+    "robotis",
+    "ffw_sg2",
+    "cyclo_intelligence",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1150209160,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "§2257 Exemption Statement - CoqNu.com",
+      "url": "https://www.coqnu.com/2257/",
+      "snippet": "Jan 22, 2026 · §2257 Exemption Statement This document was last modified on: January 22, 2026 Version: 2.0 Exemption …"
+    },
+    {
+      "title": "omkarpatil (Omkar Patil) - Hugging Face",
+      "url": "https://huggingface.co/omkarpatil/models",
+      "snippet": "omkarpatil's models8 Sort: Recently updated omkarpatil/ffw_sg2_pick-blue-cylinder-left-arm_groot-n1.7 Robotics •Updated about 10 hours ago"
+    },
+    {
+      "title": "omkarpatil (Omkar Patil) - Hugging Face",
+      "url": "https://huggingface.co/omkarpatil",
+      "snippet": "Robotics a dataset about 2 hours ago a dataset about 2 hours ago"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "omkarpatil18 (Omkar Patil) · GitHub",
+      "url": "https://github.com/omkarpatil18",
+      "snippet": "An initiative to encourage social distancing in workplaces during COVID. Java"
+    }
+  ]
+}

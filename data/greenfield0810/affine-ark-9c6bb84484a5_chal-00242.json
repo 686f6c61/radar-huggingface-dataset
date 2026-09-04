@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "greenfield0810/affine-ark-9c6bb84484a5_chal-00242",
+  "slug": "greenfield0810-affine-ark-9c6bb84484a5_chal-00242",
+  "author": "greenfield0810",
+  "url": "https://huggingface.co/greenfield0810/affine-ark-9c6bb84484a5_chal-00242",
+  "created_at": "2026-09-03T23:14:10.000Z",
+  "updated_at": "2026-09-03T23:14:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "bittensor",
+    "subnet-120",
+    "mirror",
+    "archival",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483133,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "greenfield0810/affine-ark-a50161c2dff6 · Hugging Face",
+      "url": "https://huggingface.co/greenfield0810/affine-ark-a50161c2dff6",
+      "snippet": "greenfield0810 / affine-ark-a50161c2dff6 like 0 Image-Text-to-Text Transformers Safetensors qwen3_5_moe affine bittensor subnet-120 mirror archival conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "spotify账号怎么登不上? - 知乎",
+      "url": "https://www.zhihu.com/question/329216939",
+      "snippet": "spotify每隔14天会强制登录，届时手机app和桌面应用都没法登录，会弹出国家限制问题。 如何解决我找了很多方法但是都没有用，下 …"
+    },
+    {
+      "title": "greenfield0810/affine-ark-e864839c8df1 · Hugging Face",
+      "url": "https://huggingface.co/greenfield0810/affine-ark-e864839c8df1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "spotify安卓下载 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/066074d6d320b282c21cb0a0.html",
+      "snippet": "Apr 23, 2025 · spotify安卓下载,Sotify是一个正版流媒体音乐服务平台，2008年10月在瑞典首都斯德哥尔摩正式上线。Sotify提供免费和 …"
+    }
+  ]
+}

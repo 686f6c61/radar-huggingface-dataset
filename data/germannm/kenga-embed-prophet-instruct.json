@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "GermannM/kenga-embed-prophet-instruct",
+  "slug": "germannm-kenga-embed-prophet-instruct",
+  "author": "GermannM",
+  "url": "https://huggingface.co/GermannM/kenga-embed-prophet-instruct",
+  "created_at": "2026-09-03T20:27:02.000Z",
+  "updated_at": "2026-09-03T20:45:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "pytorch",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "kenga-embed",
+    "embeddings",
+    "retrieval",
+    "instruct",
+    "russian",
+    "sentence-similarity",
+    "ru",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167745122,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "GermannM/kenga-prophet-m5 · Hugging Face",
+      "url": "https://huggingface.co/GermannM/kenga-prophet-m5",
+      "snippet": "Kenga Prophet — M5 (same backbone as M4.2, data-scaled) The experiment this model exists for: keep the architecture and the parameter budget fixed, change only the source and structure of the training signal."
+    },
+    {
+      "title": "GermannM/kenga-prophet-m3 · Hugging Face",
+      "url": "https://huggingface.co/GermannM/kenga-prophet-m3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - GermannM3/kenga-lang: Kenga — programming language for living ...",
+      "url": "https://github.com/GermannM3/kenga-lang",
+      "snippet": "Kenga проектируется как язык, где тензор, время жизни памяти (ttl), консолидация и агентный цикл — не библиотеки, а часть семантики."
+    },
+    {
+      "title": "kenga-lang/examples at main · GermannM3/kenga-lang · GitHub",
+      "url": "https://github.com/GermannM3/kenga-lang/tree/main/examples",
+      "snippet": "Kenga — programming language for living AI (bootstrap compiler + VM) - kenga-lang/examples at main · GermannM3/kenga-lang"
+    }
+  ]
+}

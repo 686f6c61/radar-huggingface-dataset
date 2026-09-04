@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Vellorematerials/generation-sandbox",
+  "slug": "vellorematerials-generation-sandbox",
+  "author": "Vellorematerials",
+  "url": "https://huggingface.co/Vellorematerials/generation-sandbox",
+  "created_at": "2026-09-03T19:59:45.000Z",
+  "updated_at": "2026-09-03T19:59:53.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تسجيل الدخول إلى Gmail - جهاز الكمبيوتر - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "تسجيل الدخول إلى Gmail ملاحظة: إذا سجّلت الدخول على جهاز كمبيوتر متاح للجميع، احرص على تسجيل الخروج قبل مغادرة جهاز الكمبيوتر. تعرَّف على كيفية تسجيل الدخول على جهاز لا تملكه."
+    },
+    {
+      "title": "Vellorematerials/generation-sandbox · Hugging Face",
+      "url": "https://huggingface.co/Vellorematerials/generation-sandbox",
+      "snippet": "Vellorematerials ... generation-sandbox like 0 Safetensors PyTorch perceiver generation License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new Perceiver for Generation Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "Gmail Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    },
+    {
+      "title": "Vellorematerials (Diya Singh) - Hugging Face",
+      "url": "https://huggingface.co/Vellorematerials",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 15 hours ago ... published a model about 15 hours ago ... liked a Space 6 days ago"
+    },
+    {
+      "title": "Sign in to Gmail - Computer - Gmail Help - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sign in to Gmail Tip: If you sign in to a public computer, make sure to sign out before you leave the computer. Learn how to sign in on …"
+    }
+  ]
+}

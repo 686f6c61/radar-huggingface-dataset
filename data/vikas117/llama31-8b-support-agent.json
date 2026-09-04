@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "vikas117/llama31-8b-support-agent",
+  "slug": "vikas117-llama31-8b-support-agent",
+  "author": "vikas117",
+  "url": "https://huggingface.co/vikas117/llama31-8b-support-agent",
+  "created_at": "2026-09-03T20:58:53.000Z",
+  "updated_at": "2026-09-03T21:12:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Convertissez des PDF en JPG. Extraire des images à partir d'un PDF",
+      "url": "https://www.ilovepdf.com/fr/pdf_en_jpg",
+      "snippet": "Convertir ou extraite un PDF en JPG en ligne, facilement et gratuitement."
+    },
+    {
+      "title": "blog/llama31.md at main · huggingface/blog · GitHub",
+      "url": "https://github.com/huggingface/blog/blob/main/llama31.md",
+      "snippet": "Llama 3.1 comes in three sizes: 8B for efficient deployment and development on consumer-size GPU, 70B for large-scale AI native applications, and 405B for synthetic data, LLM as a Judge or distillation."
+    },
+    {
+      "title": "Convertir PDF en JPG - Extraire les images des PDF - gratuit",
+      "url": "https://smallpdf.com/fr/pdf-en-jpeg",
+      "snippet": "Transformez votre PDF en image JPG grâce à un convertisseur en ligne gratuit et sécurisé. Aucune installation ni création de compte …"
+    },
+    {
+      "title": "meta-llama/Llama-3.1-8B · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Convertir PDF en JPEG en ligne — Convertio",
+      "url": "https://convertio.co/fr/pdf-jpeg/",
+      "snippet": "Convertissez vos PDF en JPEG en ligne gratuitement sur convertio.co. Obtenez des images haute qualité de chaque page pour le …"
+    }
+  ]
+}

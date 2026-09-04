@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_generator_AS_confidence_numina_qwen3b_500",
+  "slug": "ishikaa-acquisition_generator_as_confidence_numina_qwen3b_500",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_numina_qwen3b_500",
+  "created_at": "2026-09-04T00:39:28.000Z",
+  "updated_at": "2026-09-04T00:40:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 12355225928,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Daily Trivia & Featured Image Quiz",
+      "url": "https://bingquiz.com/bing-homepage-quiz/",
+      "snippet": "1 day ago · Play today’s daily Bing homepage quiz questions answer 10 fun triva, discover amazing facts and trends, then test your …"
+    },
+    {
+      "title": "ishikaa/acquisition_generator_AS_confidence_numina_qwen7b - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_numina_qwen7b",
+      "snippet": "Instructions to use ishikaa/acquisition_generator_AS_confidence_numina_qwen7b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Bing Homepage Quiz – Play Today’s 10+ Daily Homepage Bing Quizzes",
+      "url": "https://bing.weeklyquiz.net/bing-homepage-quiz/",
+      "snippet": "1 day ago · Did you know that the Bing Homepage Quiz is a daily trivia game with 10 questions based on the Bing homepage image …"
+    },
+    {
+      "title": "ishikaa/acquisition_generator_AS_confidence_combined_qwen7b - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_combined_qwen7b",
+      "snippet": "Instructions to use ishikaa/acquisition_generator_AS_confidence_combined_qwen7b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Quiz du jour sur la page d'accueil de Bing – Répondez à 10 questions …",
+      "url": "https://bingehomepagequiz.com/fr/",
+      "snippet": "Jul 2, 2026 · Répondez dès aujourd'hui aux questions et réponses gratuites du quiz de la page d'accueil de Bing. Relevez chaque …"
+    }
+  ]
+}

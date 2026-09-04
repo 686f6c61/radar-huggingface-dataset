@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "upseem/deepseek-v4-flash-vision-abliteration-method",
+  "slug": "upseem-deepseek-v4-flash-vision-abliteration-method",
+  "author": "upseem",
+  "url": "https://huggingface.co/upseem/deepseek-v4-flash-vision-abliteration-method",
+  "created_at": "2026-09-04T00:27:01.000Z",
+  "updated_at": "2026-09-04T00:36:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "research",
+    "abliteration",
+    "deepseek",
+    "method-notes",
+    "no-weights",
+    "arxiv:2406.11717",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rolex Oyster Perpetual – Die Vollendung des Essenziellen | Rolex®",
+      "url": "https://www.rolex.com/de/watches/oyster-perpetual",
+      "snippet": "Die Oyster Perpetual wurde erstmals 1931 vorgestellt und war das erste wasserdichte Armbandchronometer mit automatischem …"
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Rolex Oyster Perpetual Watches | Precision Watches",
+      "url": "https://precisionwatches.com/rolex/oyster-perpetual/",
+      "snippet": "Browse Rolex Oyster Perpetual watches online at Precision Watches, an Official Authorized Jeweler of men's and ladies Rolex …"
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "snippet": "DeepSeek's first experimental multimodal V4 model — the V4-Flash MoE backbone plus a 32-layer vision tower, 1M context, and a fused DSpark draft module."
+    },
+    {
+      "title": "How Much Is Rolex Datejust 2: Current Market Values Revealed",
+      "url": "https://dapperwork.com/how-much-is-rolex-datejust-2-current-market-values-revealed/",
+      "snippet": "Jul 7, 2026 · Discover how much is Rolex Datejust 2 worth today-get insider pricing, movement details, and market trends to find real …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ndaly/Nemotron-3.5-Lightning-30B-A3B-NVFP4-tt-p300x2",
+  "slug": "ndaly-nemotron-3-5-lightning-30b-a3b-nvfp4-tt-p300x2",
+  "author": "ndaly",
+  "url": "https://huggingface.co/ndaly/Nemotron-3.5-Lightning-30B-A3B-NVFP4-tt-p300x2",
+  "created_at": "2026-09-03T21:02:34.000Z",
+  "updated_at": "2026-09-03T21:04:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blackhole",
+    "p300x2",
+    "self-contained",
+    "tenstorrent",
+    "tt-model",
+    "tt-model-cache",
+    "tt-model-catalog",
+    "vllm",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 782462443,
+  "storage_human": "782 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard",
+      "snippet": "The post-training data has a cutoff date of May 2026. What is Nemotron? NVIDIA Nemotron™ is a family of open models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents. Description NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 is a large language model (LLM) trained by NVIDIA."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    },
+    {
+      "title": "Nemotron 3.5 Lightning 30B A3B NVFP4 - benchlm.ai",
+      "url": "https://benchlm.ai/models/nemotron-3-5-lightning-30b-a3b-nvfp4",
+      "snippet": "Nemotron 3.5 Lightning 30B A3B NVFP4 ranks #217 of 230 at 26.59/100 from 13 source-displayable rows (Estimated). See evidence, pricing, context, and runtime."
+    },
+    {
+      "title": "Released: July 2026 Exchange Server Security Updates | Microsoft ...",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/released-july-2026-exchange-server-security-updates/4534146",
+      "snippet": "We have released Security Updates for Exchange Server SE. Exchange Server 2019 and 2016 ESU updates only. &nbsp;"
+    }
+  ]
+}

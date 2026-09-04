@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "deeprcurs/IKNN-Rl1-A1",
+  "slug": "deeprcurs-iknn-rl1-a1",
+  "author": "deeprcurs",
+  "url": "https://huggingface.co/deeprcurs/IKNN-Rl1-A1",
+  "created_at": "2026-09-03T19:00:28.000Z",
+  "updated_at": "2026-09-03T19:49:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "custom",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "custom",
+    "cpu",
+    "cpu-first",
+    "iknn",
+    "1-bit",
+    "quantization",
+    "agentic",
+    "researcher-agent",
+    "logic",
+    "reasoning",
+    "coding",
+    "math",
+    "science",
+    "avx2",
+    "avx512",
+    "iknn.cpp",
+    "tri-tier",
+    "SatU1",
+    "NoeSA",
+    "Ntarra-DnA",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46480851,
+  "storage_human": "46 MB",
+  "base_model": "Qwen/Qwen3-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "الاشتراك في خطة عائلية في YouTube وإدارتها",
+      "url": "https://support.google.com/youtube/answer/7507349?hl=ar",
+      "snippet": "يمكنك الحصول على خطة عائلية لمشاركة اشتراك مدفوع في YouTube ، أو قنوات Primetime (في الولايات المتحدة وألمانيا وفرنسا وأستراليا والمملكة المتحدة فقط) مع ما يصل إلى 5 أفراد …"
+    },
+    {
+      "title": "deeprcurs (deepRcurs Labs) - Hugging Face",
+      "url": "https://huggingface.co/deeprcurs",
+      "snippet": "Org profile for deepRcurs Labs on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "تسجيل الدخول والخروج من YouTube - Android - مساعدة YouTube",
+      "url": "https://support.google.com/youtube/answer/3802431?hl=ar&co=GENIE.Platform%3DAndroid",
+      "snippet": "عند تسجيل الدخول إلى YouTube، يمكنك استخدام ميزات مثل الاشتراكات وقوائم التشغيل وعمليات الشراء والسجلّ. ملاحظة: يجب أن يكون لديك حساب Google لتسجيل الدخول إلى YouTube."
+    },
+    {
+      "title": "deepRcurs [dR] · GitHub",
+      "url": "https://github.com/deepRcurs/",
+      "snippet": "Recursive depth for AI-native environments. Desktop · Mobile · Agent Ecosystems - deepRcurs [dR]"
+    },
+    {
+      "title": "تروجيمنج - أخبار و مراجعات ألعاب الفيديو - الموقع العربي الرائد لأخبار ...",
+      "url": "https://www.true-gaming.net/home/",
+      "snippet": "الموقع العربي الرائد لأخبار ومراجعات ألعاب الفيديو. تابع أحدث التغطيات، التقارير، وتقييمات ألعاب بلايستيشن، إكسبوكس، ننتندو، والحاسب الشخصي."
+    }
+  ]
+}

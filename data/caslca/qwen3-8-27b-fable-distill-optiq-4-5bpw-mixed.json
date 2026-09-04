@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed",
+  "slug": "caslca-qwen3-8-27b-fable-distill-optiq-4-5bpw-mixed",
+  "author": "caslca",
+  "url": "https://huggingface.co/caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed",
+  "created_at": "2026-09-04T00:21:04.000Z",
+  "updated_at": "2026-09-04T00:24:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "transformers",
+    "unsloth",
+    "optiq",
+    "conversational",
+    "en",
+    "dataset:armand0e/claude-fable-5-claude-code",
+    "dataset:armand0e/Fable-5-Chat",
+    "base_model:TeichAI/Qwen3.8-27B-Fable-Distill",
+    "base_model:quantized:TeichAI/Qwen3.8-27B-Fable-Distill",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895993856,
+  "parameters_human": "26.90B",
+  "storage_bytes": 19695122066,
+  "storage_human": "19.7 GB",
+  "base_model": "TeichAI/Qwen3.8-27B-Fable-Distill",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pay Bills, Check Outages, Update Details - Water Corporation",
+      "url": "https://www.watercorporation.com.au/",
+      "snippet": "Get water supply alerts delivered to your phone or email and stay informed about outages affecting your home or business, including …"
+    },
+    {
+      "title": "Qwen3.8-27B-Fable-Distill-mlx-uniform-4bit - Hugging Face",
+      "url": "https://huggingface.co/caslca/Qwen3.8-27B-Fable-Distill-mlx-uniform-4bit",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Water Corporation , Western Australia | Bill & account",
+      "url": "https://www.watercorporation.com.au/Bill-and-account",
+      "snippet": "Using the water use comparison tool below or our water use guide, compare your household water use to other homes similar to …"
+    },
+    {
+      "title": "caslca/Qwen3.8-27B-mlx-uniform-4bit · Hugging Face",
+      "url": "https://huggingface.co/caslca/Qwen3.8-27B-mlx-uniform-4bit",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Water Corps",
+      "url": "https://watercorps.us/",
+      "snippet": "Water Corps is a comprehensive initiative to train young professionals for in-demand water careers. Aligned with sector leaders to …"
+    }
+  ]
+}

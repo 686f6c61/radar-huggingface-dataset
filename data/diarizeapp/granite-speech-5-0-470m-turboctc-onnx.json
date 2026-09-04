@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "diarizeapp/granite-speech-5.0-470m-turboctc-onnx",
+  "slug": "diarizeapp-granite-speech-5-0-470m-turboctc-onnx",
+  "author": "diarizeapp",
+  "url": "https://huggingface.co/diarizeapp/granite-speech-5.0-470m-turboctc-onnx",
+  "created_at": "2026-09-04T00:56:34.000Z",
+  "updated_at": "2026-09-04T01:02:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "granite_speech5_ctc",
+    "speech",
+    "audio",
+    "asr",
+    "onnxruntime",
+    "ctc",
+    "conformer",
+    "granite",
+    "ibm-granite",
+    "realtime",
+    "automatic-speech-recognition",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1892339642,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UFC Fight Cards, Watch Times, Live Stats | UFC.com",
+      "url": "https://www.ufc.com/events",
+      "snippet": "Find the latest UFC event schedule, watch information, fight cards, start times, and broadcast details."
+    },
+    {
+      "title": "Granite Speech - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/speech",
+      "snippet": "The Granite Speech suite includes four specialized variants: granite-speech-5.0-470m-turboctc: compact English ASR model with very high inference speed that is well suited for deployment on laptops, smartphones and other edge devices"
+    },
+    {
+      "title": "Who's Fighting This Weekend — Boxing & UFC Cards",
+      "url": "https://boxingnews.com/schedule/this-weekend",
+      "snippet": "2 hours ago · Every boxing and UFC/MMA fight card this weekend — Friday through Sunday. Full cards, start times, venues, how to …"
+    },
+    {
+      "title": "ibm-granite/granite-speech-5.0-470m-turboctc · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc",
+      "snippet": "Model Summary: Granite Speech 5.0 TurboCTC is a compact 470 million parameter English ASR model with very high inference speed that is well suited for deployment on laptops, smartphones and other edge devices. The model consists of a conformer acoustic encoder with block self-attention, self-conditioning and temporal downsampling with an output layer corresponding to 16,384 BPE units. It was ..."
+    },
+    {
+      "title": "UFC This Weekend — Weekend Fight Card & Times — UFCTime",
+      "url": "https://ufctime.com/this-weekend",
+      "snippet": "Find out if there is a UFC event this weekend. See Saturday and Sunday fight cards, times, and how to watch."
+    }
+  ]
+}

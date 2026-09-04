@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Fardeen9065/whisper-bangla-asr",
+  "slug": "fardeen9065-whisper-bangla-asr",
+  "author": "Fardeen9065",
+  "url": "https://huggingface.co/Fardeen9065/whisper-bangla-asr",
+  "created_at": "2026-09-03T18:47:13.000Z",
+  "updated_at": "2026-09-03T19:11:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "automatic-speech-recognition",
+    "whisper",
+    "bengali",
+    "bangla",
+    "banglish",
+    "code-switching",
+    "bn",
+    "en",
+    "base_model:bengaliAI/tugstugi_bengaliai-asr_whisper-medium",
+    "base_model:finetune:bengaliAI/tugstugi_bengaliai-asr_whisper-medium",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "bengaliAI/tugstugi_bengaliai-asr_whisper-medium",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iVysílání - televize, pořady a videa online | Česká televize",
+      "url": "https://www.ceskatelevize.cz/ivysilani/",
+      "snippet": "Sledujte živé vysílání a pořady České televize online. Navíc i exkluzivní premiéry a pořady, které v televizi neuvidíte."
+    },
+    {
+      "title": "bangla-speech-processing/BanglaASR · Hugging Face",
+      "url": "https://huggingface.co/bangla-speech-processing/BanglaASR",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Televizní seriály - sledujte online | Česká televize",
+      "url": "https://www.ceskatelevize.cz/ivysilani/kategorie/3976-serialy/",
+      "snippet": "Sledujte online seriály z videokatalogu České televize. Vybírejte na iVysílání z čerstvých novinek, televizní klasiky i archivních pořadů."
+    },
+    {
+      "title": "GitHub - HarunRRayhan/bangla-asr-whisper-cpp",
+      "url": "https://github.com/HarunRRayhan/bangla-asr-whisper-cpp",
+      "snippet": "A Bangla (Bengali) automatic speech recognition model converted for use with whisper.cpp, the C/C++ inference engine for OpenAI's Whisper. This repo contains the converted model weights only — no training code or datasets are included."
+    },
+    {
+      "title": "Česká televize",
+      "url": "https://www.ceskatelevize.cz/",
+      "snippet": "Sledujte ČT on-line. Zpravodajství, publicistika, sport, počasí, pořady od A do Z. Programy ČT1, ČT2, ČT24, ČT sport a videoarchiv …"
+    }
+  ]
+}

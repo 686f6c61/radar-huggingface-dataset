@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "bartowski/Ling-3.0-flash-Fin-GGUF",
+  "slug": "bartowski-ling-3-0-flash-fin-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/Ling-3.0-flash-Fin-GGUF",
+  "created_at": "2026-09-03T17:22:52.000Z",
+  "updated_at": "2026-09-04T01:08:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "finance",
+    "financial-research",
+    "agents",
+    "tool-use",
+    "long-context",
+    "mixture-of-experts",
+    "text-generation",
+    "base_model:inclusionAI/Ling-3.0-flash-Fin",
+    "base_model:quantized:inclusionAI/Ling-3.0-flash-Fin",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 127486405600,
+  "parameters_human": "127.49B",
+  "storage_bytes": 1927093477984,
+  "storage_human": "1927.1 GB",
+  "base_model": "inclusionAI/Ling-3.0-flash-Fin",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski (Bartowski) - Hugging Face",
+      "url": "https://huggingface.co/bartowski",
+      "snippet": "Sort: Recently updated bartowski/beyoru_Kiwen1.1-27B-GGUF ... bartowski/Qwen3.8-Flash-Next-GGUF ... bartowski/UI-Venus-2-9B …"
+    },
+    {
+      "title": "bartowski/Ling-3.0-flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/Ling-3.0-flash-GGUF",
+      "snippet": "The corpus rendered for this model is included in this repo: Ling-3.0-flash-calibration-v6.txt. The imatrix is available here: Ling-3.0-flash-imatrix.gguf. Calibration render details"
+    },
+    {
+      "title": "bartowski (Bartowski) - Hugging Face",
+      "url": "https://huggingface.co/bartowski/models",
+      "snippet": "Organizations bartowski 's models 2,441 Sort: Recently updated bartowski/tencent_ContextPilot-14B-GGUF ..."
+    },
+    {
+      "title": "bartowski/Ling-3.0-flash-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/bartowski/Ling-3.0-flash-GGUF/tree/main",
+      "snippet": "LM Studio Jan vLLM How to use bartowski/Ling-3.0-flash-GGUF with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "Bartowski - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/bartowski",
+      "snippet": "Apr 11, 2026 · Looking for Bartowski's top AI models? Browse their full Hugging Face collection of 100 models. Explore AI models …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "espalier-benchmark/espalier-mib-submission",
+  "slug": "espalier-benchmark-espalier-mib-submission",
+  "author": "espalier-benchmark",
+  "url": "https://huggingface.co/espalier-benchmark/espalier-mib-submission",
+  "created_at": "2026-09-03T23:14:48.000Z",
+  "updated_at": "2026-09-03T23:25:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Espalier - DECATHLON",
+      "url": "https://www.decathlon.fr/vc/espalier?msockid=2e3e43dc1399696f1213541612d668c5",
+      "snippet": "Un espalier est un cadre d’entraînement mural conçu pour la musculation et l’étirement. Il permet des exercices au poids du corps …"
+    },
+    {
+      "title": "eSpatial-Benchmark for Spatial AI Evaluation",
+      "url": "https://www.emergentmind.com/topics/espatial-benchmark",
+      "snippet": "eSpatial-Benchmark is a comprehensive suite that evaluates spatial reasoning, embodied AI, and multimodal scene understanding in both dynamic and static settings."
+    },
+    {
+      "title": "Espalier de Gym en Bois - Tous Sports - Made in France",
+      "url": "https://espalier-bois.fr/",
+      "snippet": "Espalier de gym avec accessoires de musculation. Ancienne production professionnelle Décathlon. Pose facile, prix imbattable ! Une …"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 416 AI models across 416 benchmarks, with 230 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Espalier bois - DECATHLON",
+      "url": "https://www.decathlon.fr/vc/espalier-bois?msockid=2e3e43dc1399696f1213541612d668c5",
+      "snippet": "Quels sont les critères principaux à vérifier lors de l'achat d'un espalier en bois ? Priorisez la capacité de charge adaptée à votre …"
+    }
+  ]
+}

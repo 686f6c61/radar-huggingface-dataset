@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "staticlabs/dlm-code0.6b-exp",
+  "slug": "staticlabs-dlm-code0-6b-exp",
+  "author": "staticlabs",
+  "url": "https://huggingface.co/staticlabs/dlm-code0.6b-exp",
+  "created_at": "2026-09-03T20:41:34.000Z",
+  "updated_at": "2026-09-03T20:45:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "masked-diffusion",
+    "diffusion",
+    "code",
+    "text-generation",
+    "conversational",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 630167424,
+  "parameters_human": "630.2M",
+  "storage_bytes": 1271789524,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Templo de Salomón - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Templo_de_Salom%C3%B3n",
+      "snippet": "En 2006, el Proyecto de Cribado del Monte del Templo había recuperado numerosos artefactos que databan de los siglos VIII a VII …"
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of every free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don't have to."
+    },
+    {
+      "title": "Templo de Salomón (Templo de Jerusalén) - Mapa y Ubicación …",
+      "url": "https://www.bibliatodo.com/mapas-biblicos/templo-de-salomon",
+      "snippet": "Las medidas del Templo de Salomón eran60 codos de largo (27 mts), 20 codos de ancho (9 mts) y treinta codos de alto (14 mts) (1 …"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Templo De Salomón. Características, Medidas Y Más - Todo En Dios",
+      "url": "https://todoendios.com/templo-de-salomon-caracteristicas-medidas/",
+      "snippet": "Aquí te mostraremos qué es el templo de Salomón o el primer templo, cuáles son sus medidas y elementos internos y externos, y las …"
+    }
+  ]
+}

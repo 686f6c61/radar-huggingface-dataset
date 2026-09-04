@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "fxtdstudios/RUDRA",
+  "slug": "fxtdstudios-rudra",
+  "author": "fxtdstudios",
+  "url": "https://huggingface.co/fxtdstudios/RUDRA",
+  "created_at": "2026-06-09T21:18:10.000Z",
+  "updated_at": "2026-09-03T23:30:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "hdr",
+    "inverse-tone-mapping",
+    "sdr-to-hdr",
+    "vae-decoder",
+    "diffusion",
+    "openexr",
+    "radiance",
+    "rudra",
+    "image-to-image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172705736,
+  "storage_human": "173 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speed Test by MyBroadband",
+      "url": "https://speedtest.mybroadband.co.za/",
+      "snippet": "Test your Internet connection quickly and accurately. Lightweight, easy-to-use, reliable and completely free."
+    },
+    {
+      "title": "fxtdstudios/RUDRA · Hugging Face",
+      "url": "https://huggingface.co/fxtdstudios/RUDRA",
+      "snippet": "fxtdstudios / RUDRA like 0 Image-to-Image comfyui hdr diffusion vae-decoder openexr radiance rudra License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new RUDRA — HDR Decoders for Diffusion Models Files Usage (ComfyUI) Notes Citation"
+    },
+    {
+      "title": "What Internet speed you need for watching Netflix in South Africa",
+      "url": "https://mybroadband.co.za/news/broadcasting/278003-what-internet-speed-you-need-for-watching-netflix-in-south-africa.html",
+      "snippet": "Apr 10, 2018 · Thanks to the increasing number of content services across the Internet, more consumers watch media online."
+    },
+    {
+      "title": "fxtdstudios (FXTD STUDIOS) - Hugging Face",
+      "url": "https://huggingface.co/fxtdstudios",
+      "snippet": "fxtdstudios Follow kirch's profile pictureAlbabit's profile picture 2 followers · 2 following https://www.fxtd.org fxtdstudios fxtdstudios"
+    },
+    {
+      "title": "Huge update to MyBroadband Speed Test app — Check your …",
+      "url": "https://mybroadband.co.za/news/internet/655751-huge-update-to-mybroadband-speed-test-app-check-your-connection-now.html",
+      "snippet": "Jun 26, 2026 · The MyBroadband Speed Test App has been updated with new features and other impactful changes."
+    }
+  ]
+}

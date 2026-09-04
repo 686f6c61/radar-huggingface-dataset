@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "gnakalehacker/IvoireSLM-17M",
+  "slug": "gnakalehacker-ivoireslm-17m",
+  "author": "gnakalehacker",
+  "url": "https://huggingface.co/gnakalehacker/IvoireSLM-17M",
+  "created_at": "2026-09-04T00:31:57.000Z",
+  "updated_at": "2026-09-04T00:31:59.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "microivoire_transformer",
+    "ivoire",
+    "cote-divoire",
+    "french",
+    "causal-lm",
+    "research",
+    "experimental",
+    "fr",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19750720,
+  "parameters_human": "19.8M",
+  "storage_bytes": 79011792,
+  "storage_human": "79 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Change display brightness and color in Windows",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-display-brightness-and-color-in-windows",
+      "snippet": "To adjust display brightness, select the Network icon on the right side of the taskbar, and then move the Brightness slider to adjust …"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 417 AI models across 417 benchmarks, with 231 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Adjust Display Brightness Settings Easily on Windows",
+      "url": "https://www.wikihow.com/Adjust-Display-Brightness-Settings-Easily-Windows",
+      "snippet": "May 26, 2026 · In this article, we’ll explain how to quickly adjust your brightness in Windows 11 or 10, as well as how to enable …"
+    },
+    {
+      "title": "gnakalehacker (gnakale) - Hugging Face",
+      "url": "https://huggingface.co/gnakalehacker",
+      "snippet": "User profile of gnakale on Hugging Face"
+    },
+    {
+      "title": "How to Adjust Screen Brightness in Windows 10: Easy Steps - wikiHow",
+      "url": "https://www.wikihow.com/Adjust-Screen-Brightness-in-Windows-10",
+      "snippet": "Jun 21, 2026 · Is your PC monitor too bright or too dim? You can easily adjust the screen brightness of your Windows 10 computer in …"
+    }
+  ]
+}

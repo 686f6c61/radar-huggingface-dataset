@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Santti4go/moonshine-streaming-tiny-es-gguf-candidate",
+  "slug": "santti4go-moonshine-streaming-tiny-es-gguf-candidate",
+  "author": "Santti4go",
+  "url": "https://huggingface.co/Santti4go/moonshine-streaming-tiny-es-gguf-candidate",
+  "created_at": "2026-09-04T00:48:53.000Z",
+  "updated_at": "2026-09-04T00:49:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transcribe.cpp",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transcribe.cpp",
+    "gguf",
+    "asr",
+    "speech-to-text",
+    "moonshine",
+    "moonshine-streaming",
+    "spanish",
+    "encoder-decoder",
+    "automatic-speech-recognition",
+    "es",
+    "base_model:moonshine-ai/moonshine-streaming-tiny-es",
+    "base_model:quantized:moonshine-ai/moonshine-streaming-tiny-es",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30947521,
+  "parameters_human": "30.9M",
+  "storage_bytes": 35531328,
+  "storage_human": "36 MB",
+  "base_model": "moonshine-ai/moonshine-streaming-tiny-es",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么处理旧的电动车锂电池？工信部发布回收新规，旧锂电也能卖钱",
+      "url": "https://www.sohu.com/a/1007530542_121250600",
+      "snippet": "Apr 10, 2026 · 根据工信部发布的信息来看，旧锂电池的回收分为三个体系，分别是“ 回收点+中转站+分拣中心 ”，这些听起来非常专 …"
+    },
+    {
+      "title": "moonshine-ai/moonshine-streaming-tiny · Hugging Face",
+      "url": "https://huggingface.co/moonshine-ai/moonshine-streaming-tiny",
+      "snippet": "This is the model card for the Moonshine Streaming automatic speech recognition (ASR) models trained and released by Useful Sensors. Moonshine Streaming pairs a lightweight 50~Hz audio frontend with a sliding-window Transformer encoder to deliver low-latency streaming ASR on edge-class hardware."
+    },
+    {
+      "title": "废旧锂电池如何回收处理?【一分钟秒懂】_搜狐汽车_搜狐网",
+      "url": "https://www.sohu.com/a/834628549_122136048",
+      "snippet": "Dec 9, 2024 · 严格落实电动自行车以旧换新政策，商务、市场监管等部门要加强监管，督促电池生产企业和电动车制造企业严格执行 …"
+    },
+    {
+      "title": "moonshine-ai/moonshine-streaming-tiny at main - Hugging Face",
+      "url": "https://huggingface.co/moonshine-ai/moonshine-streaming-tiny/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "几年后，新能源电车大量报废的时候，电池怎么处理？ - 知乎",
+      "url": "https://www.zhihu.com/question/598956599",
+      "snippet": "先打开安全阀放气，之后切割壳盖，倒出来稀硫酸（腐蚀性很差了，手接触都没事，但是不建议），塑料壳盖去粉碎回收，里面的正负 …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "inclusionAI/LLaDA-Image-Turbo-FP8",
+  "slug": "inclusionai-llada-image-turbo-fp8",
+  "author": "inclusionAI",
+  "url": "https://huggingface.co/inclusionAI/LLaDA-Image-Turbo-FP8",
+  "created_at": "2026-09-03T08:07:02.000Z",
+  "updated_at": "2026-09-04T01:37:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-generation",
+    "image-editing",
+    "image-to-image",
+    "text-to-image",
+    "en",
+    "zh",
+    "arxiv:2609.03796",
+    "diffusers:LLaDAImagePipeline",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6540618816,
+  "parameters_human": "6.54B",
+  "storage_bytes": 27635331553,
+  "storage_human": "27.6 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com.tn/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "inclusionAI/LLaDA2.0-Uni-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/LLaDA2.0-Uni-FP8/tree/main/decoder-turbo",
+      "snippet": "inclusionAI / LLaDA2.0-Uni-FP8 like 5 Follow inclusionAI 2.7k Any-to-Any Transformers Diffusers Safetensors English llada2_moe feature-extraction multimodal image-generation image-understanding image-editing diffusion Mixture of Experts text-to-image fp8 quantized custom_code arxiv:2604.20796 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this ..."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/#!%20/=",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "README.md · inclusionAI/LLaDA2.0-Uni-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/LLaDA2.0-Uni-FP8/blob/main/README.md",
+      "snippet": "inclusionAI / LLaDA2.0-Uni-FP8 like 5 Follow inclusionAI 2.48k Any-to-Any Transformers Diffusers Safetensors English llada2_moe feature-extraction multimodal image-generation image-understanding image-editing diffusion Mixture of Experts text-to-image fp8 quantized custom_code arxiv:2604.20796 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use ..."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr-fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    }
+  ]
+}

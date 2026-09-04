@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "foranyone2026/Qwen3.8-2.4T-A95B",
+  "slug": "foranyone2026-qwen3-8-2-4t-a95b",
+  "author": "foranyone2026",
+  "url": "https://huggingface.co/foranyone2026/Qwen3.8-2.4T-A95B",
+  "created_at": "2026-09-03T23:07:13.000Z",
+  "updated_at": "2026-09-03T23:07:14.000Z",
+  "license": "qwen3.8-max",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe_text",
+    "text-generation",
+    "conversational",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2446182725504,
+  "parameters_human": "2446.18B",
+  "storage_bytes": 4892378458656,
+  "storage_human": "4892.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ménilmontant - Carte - Banlieue - Paris, Île-de-France, France",
+      "url": "https://mapcarta.com/fr/18334758",
+      "snippet": "Ménilmontant est un quartier historique de Paris, situé dans le 20e arrondissement. Autrefois village puis faubourg appartenant à la …"
+    },
+    {
+      "title": "foranyone2026/Qwen3.8-2.4T-A95B · Hugging Face",
+      "url": "https://huggingface.co/foranyone2026/Qwen3.8-2.4T-A95B",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
+    },
+    {
+      "title": "Carte Rue de Ménilmontant, 75020 Paris - Mappy",
+      "url": "https://fr.mappy.com/plan/voie/rue-de-menilmontant-75020-paris",
+      "snippet": "Trouvez l’adresse qui vous intéresse sur le plan de Rue de Ménilmontant, 75020 Paris ou préparez un calcul d'itinéraire à partir de ou …"
+    },
+    {
+      "title": "Qwen 3.8 Model Lineup: Which Variant Should You Use?",
+      "url": "https://codersera.com/blog/qwen-3-8-model-lineup-2026/",
+      "snippet": "Qwen 3.8 Model Lineup: Every Variant and Which to Use Every Qwen 3.8 variant in one table: 27B, Flash-Next, 2.4T-A95B and Max, with params, context, licence and price, plus a single rule for picking one."
+    },
+    {
+      "title": "Ménilmontant (quartier parisien) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/M%C3%A9nilmontant_(quartier_parisien)",
+      "snippet": "Ménilmontant est un quartier historique de Paris, situé dans le 20e arrondissement. Autrefois village puis faubourg appartenant à la …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Hrfgk/Satyam",
+  "slug": "hrfgk-satyam",
+  "author": "Hrfgk",
+  "url": "https://huggingface.co/Hrfgk/Satyam",
+  "created_at": "2026-09-03T20:34:31.000Z",
+  "updated_at": "2026-09-03T20:34:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lowe’s Home Improvement",
+      "url": "https://www.lowes.com/?msockid=005904f1b19b6aa71fab1338b0986b06",
+      "snippet": "Discover the best Labor Day sales at Lowe’s. Shop deals on appliances, patio, grills, lawn and garden, and more in store or online at …"
+    },
+    {
+      "title": "Satyam AI",
+      "url": "https://satyamai.nextfutureai.com/",
+      "snippet": "Web site created using create-react-app Satyam AI Learn AI → Build Skills → Start Earning 🚀"
+    },
+    {
+      "title": "Home improvement Store at C. Dallas, 75209 | Lowe's",
+      "url": "https://www.lowes.com/store/TX-dallas/2280?msockid=005904f1b19b6aa71fab1338b0986b06",
+      "snippet": "And when it comes to home improvement in Dallas, TX, your community Lowe's is the place to go. Whether it's for a fresh paint job, …"
+    },
+    {
+      "title": "Satyam AI — Fake News Detection System - GitHub",
+      "url": "https://github.com/tarunbarkoti/satyam-ai",
+      "snippet": "Satyam AI — Fake News Detection System Welcome to Satyam AI, a smart, AI-powered fake news detection system built during Codewizards'25 at SRMIST Delhi NCR Campus. This project was designed to combat the growing problem of misinformation by using deep learning and NLP techniques to distinguish between real and fake news articles in real time."
+    },
+    {
+      "title": "Lowes Locations & Hours in Dallas, Texas - MyStore411",
+      "url": "https://www.mystore411.com/store/list_city/12/Texas/Dallas/Lowes-store-locations?page=1",
+      "snippet": "Lowes in Dallas, Texas: complete list of store locations, hours, holiday hours, phone numbers, and services. Find Lowes location …"
+    }
+  ]
+}

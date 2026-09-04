@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "zilongsong0103/albedo-qwen3.6-35b-bkn1890-dpo-cycle1-uid174-20260904-001716",
+  "slug": "zilongsong0103-albedo-qwen3-6-35b-bkn1890-dpo-cycle1-uid174-20260904-001716",
+  "author": "zilongsong0103",
+  "url": "https://huggingface.co/zilongsong0103/albedo-qwen3.6-35b-bkn1890-dpo-cycle1-uid174-20260904-001716",
+  "created_at": "2026-09-04T00:17:17.000Z",
+  "updated_at": "2026-09-04T00:17:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916585166,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Impromed Vet Inventory Management Support | Covetrus",
+      "url": "https://covetrus.com/support/impromed/",
+      "snippet": "Chat directly with our support team to get quick responses to your questions or connect with a specialist - we're here for you 24/7! …"
+    },
+    {
+      "title": "zilongsong0103/albedo-qwen3.6-35b-greatjumper_v1 · Hugging Face",
+      "url": "https://huggingface.co/zilongsong0103/albedo-qwen3.6-35b-greatjumper_v1",
+      "snippet": "/ albedo-qwen3.6-35b-greatjumper_v1 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 1,058 Safetensors Model size 36B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "Software Customer Support | Covetrus",
+      "url": "https://covetrus.com/support/",
+      "snippet": "Need help with our software? Start a live chat, request a remote session, view support documents, release notes, and more!"
+    },
+    {
+      "title": "zilongsong0103/albedo-qwen3.6-35b-greatjumper_v3 · Hugging Face",
+      "url": "https://huggingface.co/zilongsong0103/albedo-qwen3.6-35b-greatjumper_v3",
+      "snippet": "zilongsong0103 / albedo-qwen3.6-35b-greatjumper_v3 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 36B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Remote Access Support | Covetrus",
+      "url": "https://covetrus.com/support/remote-access/",
+      "snippet": "The Covetrus® support team can connect securely and remotely to your system, to provide real-time support when your practice …"
+    }
+  ]
+}

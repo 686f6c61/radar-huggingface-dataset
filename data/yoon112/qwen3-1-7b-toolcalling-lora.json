@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yoon112/Qwen3-1.7B-ToolCalling-LoRA",
+  "slug": "yoon112-qwen3-1-7b-toolcalling-lora",
+  "author": "yoon112",
+  "url": "https://huggingface.co/yoon112/Qwen3-1.7B-ToolCalling-LoRA",
+  "created_at": "2026-09-04T01:13:10.000Z",
+  "updated_at": "2026-09-04T01:13:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 290396812,
+  "storage_human": "290 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "hoon4172/Qwen3-1.7B-ToolCalling-LoRA · Hugging Face",
+      "url": "https://huggingface.co/hoon4172/Qwen3-1.7B-ToolCalling-LoRA",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-Tuning Qwen3 1.7B with LoRA to Talk Like a Ghost",
+      "url": "https://www.homedock.cloud/blog/self-hosting/how-we-fine-tuned-a-1-7b-llm-to-talk-like-a-ghost/",
+      "snippet": "We fine-tuned Qwen3 1.7B with LoRA to say one word at a time. We taught it to deny being an AI. We gave it a personality that fits inside a system prompt shorter than a tweet."
+    },
+    {
+      "title": "Fine-Tuning Tool-Calling LLMs: A Complete Guide Using XYZ-Aquila-SFT and Qwen3 - MarkTechPost",
+      "url": "https://www.marktechpost.com/2026/08/15/fine-tuning-tool-calling-llms-a-complete-guide-using-xyz-aquila-sft-and-qwen3/",
+      "snippet": "We build teacher-forced evaluation probes by cutting trajectories immediately before assistant turns that contain tool calls. We load Qwen3-0.6B, measure its baseline tool-call performance, attach LoRA adapters, and fine-tune the model using gradient accumulation, mixed precision, checkpointing, clipping, and cosine learning-rate scheduling."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    }
+  ]
+}

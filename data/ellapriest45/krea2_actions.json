@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "EllaPriest45/Krea2_actions",
+  "slug": "ellapriest45-krea2_actions",
+  "author": "EllaPriest45",
+  "url": "https://huggingface.co/EllaPriest45/Krea2_actions",
+  "created_at": "2026-06-24T06:59:18.000Z",
+  "updated_at": "2026-09-03T08:38:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 36,
+  "downloads_30d": 0,
+  "trending_score": 9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 204686049283,
+  "storage_human": "204.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ceuta, governo accolto dai fischi. Tutta la Spagna scende in piazza",
+      "url": "https://www.msn.com/it-it/notizie/mondo/ceuta-governo-accolto-dai-fischi-tutta-la-spagna-scende-in-piazza/ar-AA2bu4Rw",
+      "snippet": "23 hours ago · «Bugiardi, fuori, fuori!» sono le urla che hanno accolto i ministri del governo Sánchez, ieri a Ceuta, per la celebrazione …"
+    },
+    {
+      "title": "EllaPriest45/Krea2_actions · Hugging Face",
+      "url": "https://huggingface.co/EllaPriest45/Krea2_actions",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ceuta, governo accolto dai fischi Tutta la Spagna scende in piazza",
+      "url": "https://www.pressreader.com/italy/il-giornale-italy-228k/20260903/281754161191295",
+      "snippet": "23 hours ago · A Ceuta è partita una marcia alle 19 dalle Murallas Reales per arrivare alla Plaza de los Reyes, punto di protesta …"
+    },
+    {
+      "title": "EllaPriest45 (Ella G. Priest) - Hugging Face",
+      "url": "https://huggingface.co/EllaPriest45/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... updated a model about 1 hour ago ... published a model about 1 hour ago"
+    },
+    {
+      "title": "Ceuta : news, video, foto e ultime notizie - il Giornale",
+      "url": "https://www.ilgiornale.it/tag/ceuta/",
+      "snippet": "23 hours ago · Ceuta Segui Politica estera Ceuta, governo accolto dai fischi. Tutta la Spagna scende in piazza Cortei in molte città: …"
+    }
+  ]
+}

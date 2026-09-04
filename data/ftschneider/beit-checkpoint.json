@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ftschneider/beit-checkpoint",
+  "slug": "ftschneider-beit-checkpoint",
+  "author": "ftschneider",
+  "url": "https://huggingface.co/ftschneider/beit-checkpoint",
+  "created_at": "2026-09-04T00:12:32.000Z",
+  "updated_at": "2026-09-04T00:12:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agile Supply Chain Management Solutions | Kinaxis",
+      "url": "https://www.kinaxis.com/en",
+      "snippet": "Revolutionize supply chain management with Kinaxis. Get end-to-end transparency to make fast, collaborative decisions with the …"
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 201 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Zweistufige Kommissionierung: Wie 10.000 Artikel in einem Batch ...",
+      "url": "https://www.youtube.com/watch?v=3yjsbkp4EQw",
+      "snippet": "Erfahren Sie, wie Sie durch die Trennung von Entnahme und Zusammenstellung von Kundenaufträgen Ihre Lagereffizienz massiv …"
+    },
+    {
+      "title": "arXiv:2407.20143v4 [cs.AI] 2 Apr 2025",
+      "url": "https://arxiv.org/pdf/2407.20143",
+      "snippet": "model checkpoints from pre-training. We collected the number of times of checkpoint resharding demands on our AI platform (training text, image, and video generation models) over the past six months and identified 1,870 instances of checkpoint resharding during pre-training resumption, 13,080 due to cross-stage reconfiguration, an"
+    },
+    {
+      "title": "Our technique: concurrency | Kinaxis",
+      "url": "https://www.kinaxis.com/en/our-technique-concurrency",
+      "snippet": "Complex and constantly evolving markets demand more intuitive supply chain management. Discover the concurrent orchestration …"
+    }
+  ]
+}

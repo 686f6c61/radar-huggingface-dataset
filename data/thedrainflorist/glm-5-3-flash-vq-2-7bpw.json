@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "TheDrainFlorist/GLM-5.3-Flash-VQ-2.7bpw",
+  "slug": "thedrainflorist-glm-5-3-flash-vq-2-7bpw",
+  "author": "TheDrainFlorist",
+  "url": "https://huggingface.co/TheDrainFlorist/GLM-5.3-Flash-VQ-2.7bpw",
+  "created_at": "2026-09-03T20:00:36.000Z",
+  "updated_at": "2026-09-03T20:32:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm5_next",
+    "quantized",
+    "vector-quantization",
+    "apple-silicon",
+    "glm",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36550881086,
+  "parameters_human": "36.55B",
+  "storage_bytes": 116010571146,
+  "storage_human": "116.0 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil — MesServices.etudiant.gouv.fr",
+      "url": "https://messervices.etudiant.gouv.fr/",
+      "snippet": "Dans le guide de l’étudiant, toutes les informations utiles pour faire une demande de bourse, de logement et le mode d’emploi pour …"
+    },
+    {
+      "title": "zai-org/GLM-5.3-Flash · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Accueil | Étudiant.gouv",
+      "url": "https://www.etudiant.gouv.fr/fr",
+      "snippet": "Que vous ayez une question sur les bourses, le logement en résidence universitaire, la CVEC ou encore besoin d'information sur les …"
+    },
+    {
+      "title": "GLM 5.3 Flash API & Playground | Fireworks AI",
+      "url": "https://fireworks.ai/models/fireworks/glm-5p3-flash",
+      "snippet": "GLM-5.3-Flash is the first natively multimodal model in the GLM-5 series with 320B total parameters and 18B active parameters. It incorporates several architectural improvements over GLM-5.2 including a hybrid architecture, sharply reducing long-context serving costs while preserving precise long-context and Manifold-Constrained Hyper-Connections (mHC) to further improve scaling efficiency."
+    },
+    {
+      "title": "Connexion - Dossier Social Étudiant",
+      "url": "https://dossier-social.etudiant.gouv.fr/bienvenue",
+      "snippet": "La demande de bourse et/ou logement est formulée par l’intermédiaire du Dossier Social Étudiant (DSE). Pour en savoir plus : …"
+    }
+  ]
+}

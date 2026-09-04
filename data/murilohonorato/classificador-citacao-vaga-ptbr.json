@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "murilohonorato/classificador-citacao-vaga-ptbr",
+  "slug": "murilohonorato-classificador-citacao-vaga-ptbr",
+  "author": "murilohonorato",
+  "url": "https://huggingface.co/murilohonorato/classificador-citacao-vaga-ptbr",
+  "created_at": "2026-09-03T19:01:37.000Z",
+  "updated_at": "2026-09-03T19:02:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "legal",
+    "portuguese",
+    "citation-detection",
+    "bracis-2026",
+    "text-classification",
+    "pt",
+    "base_model:Luciano/bertimbau-large-lener_br",
+    "base_model:finetune:Luciano/bertimbau-large-lener_br",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 334398466,
+  "parameters_human": "334.4M",
+  "storage_bytes": 1337640872,
+  "storage_human": "1.3 GB",
+  "base_model": "Luciano/bertimbau-large-lener_br",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "viré - ABC de la langue française",
+      "url": "https://www.languefrancaise.net/Bob/5595",
+      "snippet": "Définition de viré : Renvoyé, congédié, licencié, être mis dehors, être exclu (étymologie, citations, datations, synonymes)"
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "marche ou crève — argot, définition | Bob",
+      "url": "https://www.languefrancaise.net/Bob/37596",
+      "snippet": "Que signifie marche ou crève ? Découvrez la définition, l'origine historique (attesté dès 1865) et les usages de ce terme d'argot avec …"
+    },
+    {
+      "title": "Google Acadêmico",
+      "url": "https://scholar.google.com/?hl=pt-BR",
+      "snippet": "O Google Acadêmico é uma forma simples de pesquisar literatura acadêmica. Pesquise dentre uma variedade de disciplinas e fontes: artigos, teses, livros, resumos e pareceres jurídicos."
+    },
+    {
+      "title": "Levarsi X dalle scatole/palle | WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/levarsi-x-dalle-scatole-palle.543230/",
+      "snippet": "Jun 12, 2007 · Actually \"levarsi/togliersi qualcuno o qualcosa dalle scatole\" means getting rid of someone or something that is …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Kota0612/diffusion-policy-dex1-1-fiducial-cube-20260902",
+  "slug": "kota0612-diffusion-policy-dex1-1-fiducial-cube-20260902",
+  "author": "Kota0612",
+  "url": "https://huggingface.co/Kota0612/diffusion-policy-dex1-1-fiducial-cube-20260902",
+  "created_at": "2026-09-04T01:27:59.000Z",
+  "updated_at": "2026-09-04T01:31:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "diffusion-policy",
+    "imitation-learning",
+    "dex1-1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2740418291,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ambiorix Square in Brussels, Belgium - Apple Maps",
+      "url": "https://maps.apple.com/place?place-id=IE42D728D2428EA00",
+      "snippet": "Address, driving directions, images, nearby attractions and more."
+    },
+    {
+      "title": "Kota0612/dex1-1-fiducial-cube-20260902 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Kota0612/dex1-1-fiducial-cube-20260902",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Square Ambiorix 32, Brussels - Explore in Google Maps",
+      "url": "https://www.google.com/maps/search/Square%20Ambiorix%2032,%201000%20Bruxelles",
+      "snippet": "You're seeing a limited view of Google Maps. Square Ambiorix 32, 1000 Brussel, Belgium."
+    },
+    {
+      "title": "Diffusion Policy",
+      "url": "https://diffusion-policy.cs.columbia.edu/",
+      "snippet": "This paper introduces Diffusion Policy, a new way of generating robot behavior by representing a robot's visuomotor policy as a conditional denoising diffusion process. We benchmark Diffusion Policy across 12 different tasks from 4 different robot manipulation benchmarks and find that it consistently outperforms existing state-of-the-art robot learning methods with an average improvement of 46 ..."
+    },
+    {
+      "title": "Comment aller à Square Ambiorix - Ambiorixsquare à Brussel",
+      "url": "https://moovitapp.com/index/fr/transport_en_commun-Square_Ambiorix_Ambiorixsquare-Belgium-site_173284865-1682",
+      "snippet": "Comment se rendre à Square Ambiorix - Ambiorixsquare en métro? Cliquez sur la ligne de métro pour connaitre les directions étape …"
+    }
+  ]
+}

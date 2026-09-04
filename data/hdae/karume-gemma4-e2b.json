@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hdae/karume-gemma4-e2b",
+  "slug": "hdae-karume-gemma4-e2b",
+  "author": "hdae",
+  "url": "https://huggingface.co/hdae/karume-gemma4-e2b",
+  "created_at": "2026-09-03T19:04:05.000Z",
+  "updated_at": "2026-09-03T19:21:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "karume",
+  "languages": [],
+  "tags": [
+    "karume",
+    "text-generation",
+    "webgpu",
+    "gemma",
+    "llm",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3965103156,
+  "storage_human": "4.0 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bejelentkezés a Gmail szolgáltatásba",
+      "url": "https://support.google.com/mail/answer/8494?hl=hu&co=GENIE.Platform%3DDesktop",
+      "snippet": "Bejelentkezés a Gmail szolgáltatásba A Gmail megnyitásához jelentkezzen be számítógépen, vagy adja hozzá fiókját a telefonján …"
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B. Their diverse sizes make them deployable in environments ranging from high-end phones to laptops and servers, democratizing access to state-of-the-art AI. Gemma 4 introduces key capability and architectural advancements:"
+    },
+    {
+      "title": "Létező fiók megkeresése - Google-fiók Súgó",
+      "url": "https://support.google.com/accounts/answer/40560?hl=hu",
+      "snippet": "Már regisztrált Google-fiókot: Ha segítségre van szüksége, kövesse a fenti, fiók-helyreállításra vonatkozó utasításokat. Google …"
+    },
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Models /Gemma 4 E2B Gemma 4 E2B — Ultra-Lightweight Local AI Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    },
+    {
+      "title": "Gmail fiók helyreállítás (elveszett jelszó) probléma megoldás ...",
+      "url": "https://pcforum.hu/tudastar/156139/gmail-fiok-helyreallitas-elveszett-jelszo",
+      "snippet": "Apr 18, 2026 · Jeleztem neki, hogy gond lesz a gmail belépéssel, jelszó nélkül, ezért próbaképpen az én gépemen megpróbáltunk …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Aikwed/pistar06_insert_carrot_hil_r1r2_value",
+  "slug": "aikwed-pistar06_insert_carrot_hil_r1r2_value",
+  "author": "Aikwed",
+  "url": "https://huggingface.co/Aikwed/pistar06_insert_carrot_hil_r1r2_value",
+  "created_at": "2026-09-03T21:01:19.000Z",
+  "updated_at": "2026-09-03T21:02:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pistar06",
+    "dataset:AlvinAi/insert_carrot_into_the_hole_hil_r1_r2_merged",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1147607163,
+  "parameters_human": "1.15B",
+  "storage_bytes": 2298481260,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipédia, l'encyclopédie libre",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "snippet": "Wikipédia L'encyclopédie libre que vous pouvez améliorer Accueil de la communauté Comment contribuer ? Portails thématiques …"
+    },
+    {
+      "title": "Aikwed/pistar06_insert_carrot_hil_success_only · Hugging Face",
+      "url": "https://huggingface.co/Aikwed/pistar06_insert_carrot_hil_success_only",
+      "snippet": "Instructions to use Aikwed/pistar06_insert_carrot_hil_success_only with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Aikwed/pistar06_insert_carrot_hil_success_only with LeRobot: Notebooks Google Colab Kaggle Model Card for pistar06 How to Get Started with the Model Train from scratch Evaluate the policy/run inference ..."
+    },
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Aikwed/pistar06_insert_carrot_into_the_hole_acp_r1 · Hugging Face",
+      "url": "https://huggingface.co/Aikwed/pistar06_insert_carrot_into_the_hole_acp_r1",
+      "snippet": "Pi0.5 ACP Policy — Insert Carrot into the Hole This repository contains a Pi0.5 action policy fine-tuned for the task \"insert carrot into the hole\" with the Advantage-Conditioned Policy (ACP) stage of the MINT-SJTU/Evo-RL pipeline. Despite pistar06 appearing in the repository name, this is not a Pi 0.6 value model."
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of …"
+    }
+  ]
+}

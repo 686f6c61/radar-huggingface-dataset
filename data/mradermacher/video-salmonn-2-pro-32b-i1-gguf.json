@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/video-SALMONN-2-Pro-32B-i1-GGUF",
+  "slug": "mradermacher-video-salmonn-2-pro-32b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/video-SALMONN-2-Pro-32B-i1-GGUF",
+  "created_at": "2026-09-03T19:47:31.000Z",
+  "updated_at": "2026-09-03T23:14:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:tsinghua-ee/video-SALMONN-2-Pro-32B",
+    "base_model:quantized:tsinghua-ee/video-SALMONN-2-Pro-32B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 351836909344,
+  "storage_human": "351.8 GB",
+  "base_model": "tsinghua-ee/video-SALMONN-2-Pro-32B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "哈啦區 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/",
+      "snippet": "哈啦區提供遊戲討論、攻略精華及創作分享，歡迎大家共同維護這個輕鬆不放縱的園地。"
+    },
+    {
+      "title": "GitHub - bytedance/video-SALMONN-2: video-SALMONN 2 is a powerful audio ...",
+      "url": "https://github.com/bytedance/video-SALMONN-2",
+      "snippet": "🚀🚀 Welcome to the repo of video-SALMONN 2! video-SALMONN 2 is a powerful audio-visual large language model (LLM) that generates high-quality audio-visual video captions, which is developed by the Department of Electronic Engineering at Tsinghua University and ByteDance."
+    },
+    {
+      "title": "【閒聊】佩麗卡 Fortnite 堡壘之夜（更新：已獲得佩麗 ...",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=74604&snA=4814",
+      "snippet": "Aug 15, 2026 · https://www.bilibili.com/video/BV1QSgM6TEzf 佩麗卡： 08/17 更新 終於正式入坑 Fortnite 並拿到佩麗卡了 以下說明是 …"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Fortnite - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/jeux/jeu-77986/",
+      "snippet": "Fortnite : retrouvez toutes les informations et actualités du jeu sur tous ses supports. Fortnite est un Tower-Defense orienté sandbox. …"
+    }
+  ]
+}

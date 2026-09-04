@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "ZKLogic/haris-arabic-injection-detector",
+  "slug": "zklogic-haris-arabic-injection-detector",
+  "author": "ZKLogic",
+  "url": "https://huggingface.co/ZKLogic/haris-arabic-injection-detector",
+  "created_at": "2026-09-04T00:46:53.000Z",
+  "updated_at": "2026-09-04T01:25:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "prompt-injection",
+    "guardrails",
+    "llm-security",
+    "arabic",
+    "owasp",
+    "ar",
+    "en",
+    "arxiv:2406.18725",
+    "arxiv:2506.06384",
+    "arxiv:2211.09527",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117654530,
+  "parameters_human": "117.7M",
+  "storage_bytes": 487724496,
+  "storage_human": "488 MB",
+  "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cafe Flora | Vegetarian Restaurant Seattle - Brunch, Lunch, Dinner",
+      "url": "https://florarestaurantgroup.com/restaurant/cafe-flora-seattle/",
+      "snippet": "Cafe Flora has been one of Seattle’s favorite brunch destinations for over 30 years. We serve weekend brunch on Saturdays and …"
+    },
+    {
+      "title": "أداة الكشف عن الذكاء الاصطناعي باللغة العربية الأكثر دقة لـ ChatGPT والمزيد",
+      "url": "https://isgen.ai/ar",
+      "snippet": "Isgen هو برنامج الكشف الرائد عن اللغة العربية باستخدام الذكاء الاصطناعي للكشف عن النصوص المكتوبة بواسطة نماذج Openai مفتوحة المصدر مثل GPT-5 و Chat-GPT و Claude و Gemini و Deepseek."
+    },
+    {
+      "title": "Cafe Flora, Floret, Flora Bakehouse | Seattle Vegetarian Restaurants",
+      "url": "https://florarestaurantgroup.com/",
+      "snippet": "A cozy cafe and bakery bringing seasonally inspired pastries, breads, sandwiches and a full menu of inventive Stumptown espresso …"
+    },
+    {
+      "title": "أداة مجانية للكشف عن المحتوى الناتج عن الذكاء الاصطناعي من ChatGPT ...",
+      "url": "https://bexi.ai/ar/ai-detector",
+      "snippet": "يقدم كاشف المحتوى بالذكاء الاصطناعي من Bexi.ai كشفاً دقيقاً للمحتوى الناتج عن الذكاء الاصطناعي بلغات متعددة. يقوم هذا الكاشف الآمن عبر الإنترنت بتحليل النصوص الناتجة عن نماذج مثل ChatGPT، Claude، Gemini، وغيرهم، ويوفر نتائج ..."
+    },
+    {
+      "title": "Cafe Flora",
+      "url": "https://www.yelp.com/biz/cafe-flora-seattle?msockid=2cf4c0db7272678d2fb2d71173e666de",
+      "snippet": "Since opening its doors, Cafe Flora has been at the forefront of utilizing local, organic and sustainable produce and herbs and …"
+    }
+  ]
+}

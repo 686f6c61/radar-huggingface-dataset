@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "clear-blue-sky/cto01",
+  "slug": "clear-blue-sky-cto01",
+  "author": "clear-blue-sky",
+  "url": "https://huggingface.co/clear-blue-sky/cto01",
+  "created_at": "2026-09-03T03:31:07.000Z",
+  "updated_at": "2026-09-03T19:15:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32354508960,
+  "storage_human": "32.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Traduction CLEAR en français | Dictionnaire anglais-français | Reverso",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/clear",
+      "snippet": "Traduction de \"clear\" en français : clair. Adjectif, verbe, adverbe, signification, prononciation, expressions idiomatiques en anglais, …"
+    },
+    {
+      "title": "clear-blue-sky/cto01 · Hugging Face",
+      "url": "https://huggingface.co/clear-blue-sky/cto01",
+      "snippet": "clear-blue-sky / cto01 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "CLEAR | Secure Identity at Airports, Stadiums, & More",
+      "url": "https://www.clearme.com/",
+      "snippet": "CLEAR’s identity verification platform makes experiences safer and easier—both physically and digitally. Skip long lines with CLEAR …"
+    },
+    {
+      "title": "3D Model: Airport Control Tower In Clear Blue Sky",
+      "url": "https://studio.tripo3d.ai/3d-model/airport-control-tower-in-clear-blue-sky-053e25bc-0451-458b-a10a-38306d151267",
+      "snippet": "Tripo AI offers 3D model: airport control tower in clear blue sky in STL file for 3D printing. This PBR-ready 3d asset is also available in 3MF, FBX, GLB, OBJ, USDZ files download for game dev (Unity/UE5), Web AR, Blender."
+    },
+    {
+      "title": "clear - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/clear",
+      "snippet": "Dans les listes : Top 2000 English words, Calculator functions and signs, Light bulbs, Suite... Synonymes : transparent, see-through, …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "andrewhernandez/contrastive",
+  "slug": "andrewhernandez-contrastive",
+  "author": "andrewhernandez",
+  "url": "https://huggingface.co/andrewhernandez/contrastive",
+  "created_at": "2026-09-03T22:45:26.000Z",
+  "updated_at": "2026-09-03T22:45:31.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Madison, WI to St. Paul, MN Bus - Affordable Bus Tickets",
+      "url": "https://www.greyhound.com/bus-routes/madison-wi-st-paul-mn",
+      "snippet": "Planning Your Greyhound Bus Trip from Madison to St. Paul? The journey from Madison to St. Paul can take as little as 5 hours and …"
+    },
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "Madison to Saint Paul Bus Tickets From $29 - trailways.com",
+      "url": "https://trailways.com/schedules/bus-from-madison-wi-to-saint-paul-mn/",
+      "snippet": "To get the cheapest bus from Madison to Saint Paul, buy your ticket as early as possible and avoid rush hours. Buses from Madison, …"
+    },
+    {
+      "title": "How did an Open AI model manage to hack another company?",
+      "url": "https://news.sky.com/video/how-did-an-open-ai-model-manage-to-hack-another-company-13574065",
+      "snippet": "How did an Open AI model manage to hack another company? OpenAI has revealed some of its models went rogue and hacked into another artificial intelligence company in an \"unprecedented cyber incident\"."
+    },
+    {
+      "title": "Bus from Madison, WI to St. Paul, MN - Affordable bus tickets",
+      "url": "https://www.flixbus.com/bus-routes/bus-madison-wi-st-paul-mn",
+      "snippet": "You can pick up a bus ticket from Madison to St. Paul for just $32.99 - that's way cheaper than traveling by any other method. Buses …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "emergentorder/Qwen3.6-35B-A3B-Mercor-GGUF",
+  "slug": "emergentorder-qwen3-6-35b-a3b-mercor-gguf",
+  "author": "emergentorder",
+  "url": "https://huggingface.co/emergentorder/Qwen3.6-35B-A3B-Mercor-GGUF",
+  "created_at": "2026-09-01T23:06:55.000Z",
+  "updated_at": "2026-09-03T23:48:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "skyrl",
+    "reinforcement-learning",
+    "qwen3_5_moe",
+    "conversational",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 98,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 110313511424,
+  "storage_human": "110.3 GB",
+  "base_model": "mercor/Qwen3.6-35B-A3B-Mercor, Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Portail famille - Ville de Castelnau-le-Lez",
+      "url": "https://www.castelnau-le-lez.fr/education/3-11-ans/restauration-scolaire/portail-famille/",
+      "snippet": "Castelnau-le-Lez est la 2ème ville de la Métropole de Montpellier et la 7ème Ville de l’Hérault."
+    },
+    {
+      "title": "emergentorder/Qwen3.6-35B-A3B-Mercor-GGUF · Hugging Face",
+      "url": "https://huggingface.co/emergentorder/Qwen3.6-35B-A3B-Mercor-GGUF",
+      "snippet": "This a conversion to GGUF (llama.cpp hf-to-gguf conversion script, with --no-mtp), quantized to Q8_0 by llama-quantize, of: Qwen3.6-35B-A3B-Mercor RL post-trained Qwen3.6-35B-A3B on APEX-Agents off-the-shelf datasets. For more details, see the blog post: Training frontier knowledge work agents: a 397B RL training guide with SkyRL"
+    },
+    {
+      "title": "Bienvenue sur le portail famille de Castelnau-le-Lez.",
+      "url": "https://portalssl.agoraplus.fr/castelnau-le-lez/portail_display.home",
+      "snippet": "Bienvenue sur le portail famille de Castelnau-le-Lez. Les Services de la Petite Enfance, de la Réussite Educative et de la Jeunesse, …"
+    },
+    {
+      "title": "emergentorder/Qwen3.6-35B-A3B-Mercor-Q8_0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/emergentorder/Qwen3.6-35B-A3B-Mercor-Q8_0-GGUF",
+      "snippet": "This a conversion to GGUF (llama.cpp hf-to-gguf conversion script, with --no-mtp), quantized to Q8_0 by llama-quantize, of: Qwen3.6-35B-A3B-Mercor RL post-trained Qwen3.6-35B-A3B on APEX-Agents off-the-shelf datasets. For more details, see the blog post: Training frontier knowledge work agents: a 397B RL training guide with SkyRL"
+    },
+    {
+      "title": "Ville de Castelnau-le-Lez",
+      "url": "https://www.castelnau-le-lez.fr/",
+      "snippet": "2 days ago · Classée dans le top 30 des villes où il fait bon élever un enfant, Castelnau-le-lez est aussi un bassin d'emplois …"
+    }
+  ]
+}

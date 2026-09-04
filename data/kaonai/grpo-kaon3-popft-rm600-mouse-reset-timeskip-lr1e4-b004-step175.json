@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kaonai/grpo-kaon3-popft-rm600-mouse-reset-timeskip-lr1e4-b004-step175",
+  "slug": "kaonai-grpo-kaon3-popft-rm600-mouse-reset-timeskip-lr1e4-b004-step175",
+  "author": "kaonai",
+  "url": "https://huggingface.co/kaonai/grpo-kaon3-popft-rm600-mouse-reset-timeskip-lr1e4-b004-step175",
+  "created_at": "2026-09-03T23:25:17.000Z",
+  "updated_at": "2026-09-03T23:26:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "grpo",
+    "peft-merged",
+    "text-generation",
+    "conversational",
+    "base_model:kaonai/kaon-c-gemma4-26b-v10.1",
+    "base_model:finetune:kaonai/kaon-c-gemma4-26b-v10.1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805933872,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51644178190,
+  "storage_human": "51.6 GB",
+  "base_model": "kaonai/kaon-c-gemma4-26b-v10.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best VPN for Roblox 2026: Play Anywhere - techlapse.com",
+      "url": "https://techlapse.com/best-vpn/roblox/",
+      "snippet": "Apr 2, 2026 · Are you looking for a secure way to access Roblox from anywhere in the world? In this article, you’ll find a list of the …"
+    },
+    {
+      "title": "Get started | ChatGPT",
+      "url": "https://chatgpt.com/auth/login",
+      "snippet": "Log in or sign up to ChatGPT"
+    },
+    {
+      "title": "Playing Roblox Worldwide: Access, Performance, and Connectivity",
+      "url": "https://cardsrealm.com/en-us/articles/playing-roblox-worldwide-access-performance-and-connectivity",
+      "snippet": "Jan 21, 2026 · Discover how geographic routing affects Roblox performance and why internet speed isn't the only factor. Explore …"
+    },
+    {
+      "title": "Kahoot! | Learning games | Make learning awesome!",
+      "url": "https://kahoot.com/",
+      "snippet": "Kahoot! is a game-based learning platform that brings engagement and fun to 1+ billion players every year at school, at work, and at home."
+    },
+    {
+      "title": "How to Play Roblox with a Proxy - PrivateProxy.me",
+      "url": "https://privateproxy.me/blog/how-to-play-roblox-with-a-proxy/",
+      "snippet": "Mar 29, 2024 · What is a Proxy for Roblox? A proxy server provides services as a mediator between your device and the internet. …"
+    }
+  ]
+}

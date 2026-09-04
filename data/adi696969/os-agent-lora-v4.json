@@ -5,7 +5,7 @@
   "author": "adi696969",
   "url": "https://huggingface.co/adi696969/os-agent-lora-v4",
   "created_at": "2026-09-03T19:29:57.000Z",
-  "updated_at": "2026-09-03T19:30:06.000Z",
+  "updated_at": "2026-09-03T21:04:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 131223694,
-  "storage_human": "131 MB",
+  "storage_bytes": 251025222,
+  "storage_human": "251 MB",
   "base_model": "unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"

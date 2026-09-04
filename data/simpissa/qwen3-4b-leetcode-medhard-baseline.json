@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "simpissa/qwen3-4b-leetcode-medhard-baseline",
+  "slug": "simpissa-qwen3-4b-leetcode-medhard-baseline",
+  "author": "simpissa",
+  "url": "https://huggingface.co/simpissa/qwen3-4b-leetcode-medhard-baseline",
+  "created_at": "2026-09-04T00:11:21.000Z",
+  "updated_at": "2026-09-04T00:11:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3",
+    "lora",
+    "reinforcement-learning",
+    "code",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275731518,
+  "storage_human": "276 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "서울특별시 - 나무위키",
+      "url": "https://namu.wiki/w/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C",
+      "snippet": "일상적으로 '서울'이라고 하면 지명인 '서울특별시'를 가리키는 경우가 대부분이기 때문이다. 사실상 고유명사가 된 일반명사 의 사례이다. …"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "동행·매력 특별시 서울 | 서울특별시",
+      "url": "https://www.seoul.go.kr/main/index.jsp",
+      "snippet": "Apr 8, 2024 · 동행·매력 특별시 서울의 주요뉴스, 시민참여, 주요서비스, 참여 신청, 행사 및 축제, 자주찾은서비스, 시장실, 분야별정보, …"
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    },
+    {
+      "title": "서울특별시 - 위키백과, 우리 모두의 백과사전",
+      "url": "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C",
+      "snippet": "4 days ago · 해방 이후에는 미군정청 문서에서, 서울특별시 영문 공식 명칭은 'Seoul Independent City'였다. 직역하면 \"서울독립시\"이나, …"
+    }
+  ]
+}

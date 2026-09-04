@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "playn4/playnfrontierAI",
+  "slug": "playn4-playnfrontierai",
+  "author": "playn4",
+  "url": "https://huggingface.co/playn4/playnfrontierAI",
+  "created_at": "2026-09-03T20:55:49.000Z",
+  "updated_at": "2026-09-03T21:02:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ai-agents",
+    "agent-memory",
+    "omp",
+    "local-llm",
+    "knowledge-management",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xiaomi 17T Pro | Alle technischen Daten und Features | Xiaomi …",
+      "url": "https://www.mi.com/de/product/xiaomi-17t-pro/",
+      "snippet": "Die Xiaomi HyperConnect-Funktionen können je nach Softwareversion, Gerätemodell und Kompatibilität variieren. Einige Funktionen …"
+    },
+    {
+      "title": "playn4 (playn) - Hugging Face",
+      "url": "https://huggingface.co/playn4",
+      "snippet": "datasets1 playn4/DeepseekV4Flash-Ollama-and-Claude-Code-CLI Updated 2 days ago• 25 • 1"
+    },
+    {
+      "title": "Xiaomi 17T Pro im Test - CHIP",
+      "url": "https://www.chip.de/test-kaufberatung/handy-zubehoer/xiaomi-17t-pro-im-test_026eff31-eb28-4d1d-8a07-85fac7273a91.html",
+      "snippet": "May 28, 2026 · Das Xiaomi 17T Pro überzeugt im Test besonders mit seiner Leica-Triplekamera. Ihr Fünffach-Telezoom und die …"
+    },
+    {
+      "title": "Playground v4: Text to Image AI Model Review (2026) | tasarim.ai",
+      "url": "https://tasarim.ai/en/models/playground-v4",
+      "snippet": "Playground v4 review (2026): proprietary AI model rated 4.5/5. Playground v4 is Playground AI's fourth-generation image generation model, released in late 2024, designed specifically to excel at graphic design tasks alongside photorealistic image generation. The model features an innovative design-first approach that understands layout, typography placement, color theory, and brand consistency ..."
+    },
+    {
+      "title": "Xiaomi 17T Pro Spezifikationen, Funktionen | Xiaomi Deutschland",
+      "url": "https://www.mi.com/de/product/xiaomi-17t-pro/specs/",
+      "snippet": "Es wird empfohlen, das Netzteil mit 100W oder höher von Xiaomi zu verwenden. Kabelloses Ladegerät ist separat erhältlich. * …"
+    }
+  ]
+}

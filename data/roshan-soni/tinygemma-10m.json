@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "roshan-soni/tinygemma-10m",
+  "slug": "roshan-soni-tinygemma-10m",
+  "author": "roshan-soni",
+  "url": "https://huggingface.co/roshan-soni/tinygemma-10m",
+  "created_at": "2026-09-03T18:36:59.000Z",
+  "updated_at": "2026-09-03T18:53:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tinygemma",
+    "text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10957824,
+  "parameters_human": "11.0M",
+  "storage_bytes": 43862832,
+  "storage_human": "44 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "roshan-soni (Roshan Soni) - Hugging Face",
+      "url": "https://huggingface.co/roshan-soni/models",
+      "snippet": "User profile of Roshan Soni on Hugging Face"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "148 万浏览 · 693 关注 · 411 回答 查看全部 热点 问题 潜力好问题 乐华艺人金子涵官宣退圈，如何看待她的选择？ 444 万浏览 · 285 关 …"
+    },
+    {
+      "title": "roshan-soni/MyGemmaNPC · Hugging Face",
+      "url": "https://huggingface.co/roshan-soni/MyGemmaNPC",
+      "snippet": "Model Card for MyGemmaNPC This model is a fine-tuned version of google/gemma-3-270m-it. It has been trained using TRL."
+    },
+    {
+      "title": "怎样在whatsapp中加好友-百度经验",
+      "url": "https://jingyan.baidu.com/article/c33e3f483b65d5ea15cbb516.html",
+      "snippet": "May 6, 2019 · 怎样在whatsapp中加好友,使用WhatA的小伙伴们，知不知道如何在该软件中添加好友呢，接下来跟小编一起去看看吧。"
+    }
+  ]
+}

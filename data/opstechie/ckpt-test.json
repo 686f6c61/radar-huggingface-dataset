@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "opstechie/ckpt-test",
+  "slug": "opstechie-ckpt-test",
+  "author": "opstechie",
+  "url": "https://huggingface.co/opstechie/ckpt-test",
+  "created_at": "2026-09-03T22:29:11.000Z",
+  "updated_at": "2026-09-03T22:30:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3702168,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adelaide Airport",
+      "url": "https://adelaideairport.com.au/",
+      "snippet": "Welcome to Adelaide Airport. Plan your journey with ease at Adelaide Airport. Find real-time flight updates, parking options, shopping …"
+    },
+    {
+      "title": "How to Test AI Models: A Step-by-Step Framework - smartdev.com",
+      "url": "https://smartdev.com/ai-model-testing-guide/",
+      "snippet": "Struggling with AI reliability? This AI model testing guide gives you a 6-step framework, tools, metrics & a ready-to-use checklist."
+    },
+    {
+      "title": "Flight Information - Adelaide Airport",
+      "url": "https://adelaideairport.com.au/flight-information/",
+      "snippet": "Domestic International Day Now Yesterday Today Now Recent Tomorrow Airline All All Origin City All All Airline Flight # Origin …"
+    },
+    {
+      "title": "model.ckpt · stabilityai/TripoSR at main - Hugging Face",
+      "url": "https://huggingface.co/stabilityai/TripoSR/blob/main/model.ckpt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Official Adelaide Airport Parking - Book online for the best prices",
+      "url": "https://prebook.adelaideairport.com.au/en/",
+      "snippet": "Book your Adelaide Airport parking online for the best rates and discounted prices. Save up to 30% and enjoy the most convenient …"
+    }
+  ]
+}

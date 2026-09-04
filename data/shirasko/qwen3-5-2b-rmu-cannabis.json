@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "shirasko/qwen3.5-2b-rmu-cannabis",
+  "slug": "shirasko-qwen3-5-2b-rmu-cannabis",
+  "author": "shirasko",
+  "url": "https://huggingface.co/shirasko/qwen3.5-2b-rmu-cannabis",
+  "created_at": "2026-09-03T21:02:06.000Z",
+  "updated_at": "2026-09-03T21:05:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "unlearning",
+    "rmu",
+    "qwen3.5-2b",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 3783681537,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tablet mit Tastatur-Test 2026: 2-in-1-Tablets im Check - CHIP",
+      "url": "https://www.chip.de/artikel/Tablets-mit-Tastatur-Test_139952340.html",
+      "snippet": "Apr 20, 2026 · In unserem Tablet-mit-Tastatur-Test haben wir leistungsstarke Modelle geprüft – inklusive einer günstigen Bluetooth …"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Tablets mit Tastatur in Tests: Aktueller Vergleich 2026 - MediaMarkt",
+      "url": "https://www.mediamarkt.de/de/content/handy-gadgets/tablets/tablets-mit-tastatur-in-tests?msockid=3aba5ecd71076c6f3476490470946dae",
+      "snippet": "Jan 13, 2026 · Auf der Suche nach einem Tablet mit Tastatur? Bei uns entdeckst du die Top-Geräte mit den wichtigsten Vor- & …"
+    },
+    {
+      "title": "shirasko/qwen2.5-3b-instruct-rmu-cannabis · Hugging Face",
+      "url": "https://huggingface.co/shirasko/qwen2.5-3b-instruct-rmu-cannabis",
+      "snippet": "Notebooks Google Colab Kaggle Local AppsSettings vLLM How to use shirasko/qwen2.5-3b-instruct-rmu-cannabis with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "Tablet Mit Tastatur - Kaufempfehlung 2026 | Testbericht",
+      "url": "https://www.beste-testsieger.de/tablet-mit-tastatur/",
+      "snippet": "Mar 7, 2026 · Tablet mit Tastatur: Ein Tablet mit Tastatur ermöglicht es Nutzern, mobil und flexibel zu arbeiten, ohne dabei auf die …"
+    }
+  ]
+}

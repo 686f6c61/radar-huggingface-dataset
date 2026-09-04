@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Inevitablevalor/pi05_qwen_15tasks_aug_attnmap_abstract_wrist_bs256_4gpu_23dim_droid_attnmap_pretrained_data30",
+  "slug": "inevitablevalor-pi05_qwen_15tasks_aug_attnmap_abstract_wrist_bs256_4gpu_23dim_droid_attnmap_pretrained_data30",
+  "author": "Inevitablevalor",
+  "url": "https://huggingface.co/Inevitablevalor/pi05_qwen_15tasks_aug_attnmap_abstract_wrist_bs256_4gpu_23dim_droid_attnmap_pretrained_data30",
+  "created_at": "2026-09-03T20:01:25.000Z",
+  "updated_at": "2026-09-03T20:03:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44826091520,
+  "storage_human": "44.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MPU wegen Fahren ohne Fahrerlaubnis - Führerschein 2026",
+      "url": "https://www.bussgeldkatalog.org/mpu-wegen-fahren-ohne-fahrerlaubnis/",
+      "snippet": "Apr 2, 2026 · Beim Fahren ohne Fahrerlaubnis handelt es sich um eine Straftat, die erhebliche Zweifel an der Fahreignung des …"
+    },
+    {
+      "title": "Inevitablevalor/pi05_qwen_15tasks_aug_attnmap_abstract_wrist_bs256_4gpu ...",
+      "url": "https://huggingface.co/Inevitablevalor/pi05_qwen_15tasks_aug_attnmap_abstract_wrist_bs256_4gpu_23dim_droid_attnmap_pretrained_data50",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Eine MPU wegen „Fahren ohne Fahrerlaubnis“ | MPU 2026",
+      "url": "https://www.bussgeldkatalog.de/mpu-wegen-fahren-ohne-fahrerlaubnis/",
+      "snippet": "Jul 29, 2026 · Welche Konsequenzen hat Fahren ohne Fahrerlaubnis? Das Fahren ohne Fahrerlaubnis gehört zur Kategorie der …"
+    },
+    {
+      "title": "Inevitablevalor/pi05_qwen_behavior_15tasks_aug_attnmap_abstract_wrist ...",
+      "url": "https://huggingface.co/Inevitablevalor/pi05_qwen_behavior_15tasks_aug_attnmap_abstract_wrist_bs256_4gpu_23dim_droid_attnmap_pretrained",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fahren ohne Führerschein - aktueller Bußgeldkatalog 2026",
+      "url": "https://www.bussgeld-info.de/fahren-ohne-fuehrerschein/",
+      "snippet": "Jul 14, 2026 · Das Fahren ohne Führerschein wird mit Bußgeld geahndet, wenn Sie den Führerschein nur gerade nicht mitgeführt …"
+    }
+  ]
+}

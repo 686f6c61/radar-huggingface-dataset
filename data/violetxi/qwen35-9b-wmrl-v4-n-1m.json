@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "violetxi/qwen35-9b-wmrl-v4-n-1m",
+  "slug": "violetxi-qwen35-9b-wmrl-v4-n-1m",
+  "author": "violetxi",
+  "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-n-1m",
+  "created_at": "2026-09-03T20:04:12.000Z",
+  "updated_at": "2026-09-04T02:39:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "wm-internalization",
+    "v4",
+    "n-1m",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 38625429982,
+  "storage_human": "38.6 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PowerPoint | Presentations and Slides Online | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/powerpoint?msockid=053afcecf66b6a541071eb25f7676bc0",
+      "snippet": "Jan 27, 2026 · Microsoft PowerPoint empowers you to create clean slideshow presentations and intricate pitch decks and gives you a …"
+    },
+    {
+      "title": "violetxi/qwen35-9b-wmrl-v4-m0-nop6 · Hugging Face",
+      "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-m0-nop6",
+      "snippet": "violetxi/qwen35-9b-wmrl-v4-m0-nop6 wm-internalization v4 checkpoint — condition m0-nop6, save final. Full-finetune of Qwen/Qwen3.5-9B on the Calderwood & Harkness synthetic law-firm corpus (world-internalization study, v4 lineage: 9B student, ~50k think-on seed pool)."
+    },
+    {
+      "title": "Presentaties gratis bewerken | Microsoft webversie van PowerPoint",
+      "url": "https://powerpoint.cloud.microsoft/nl-nl/",
+      "snippet": "Toegang tot PowerPoint online om impactvolle presentaties te maken en te delen, waar en wanneer de inspiratie toeslaat. Geniet van …"
+    },
+    {
+      "title": "violetxi/qwen35-9b-wmrl-v4-c1-b5v4 · Hugging Face",
+      "url": "https://huggingface.co/violetxi/qwen35-9b-wmrl-v4-c1-b5v4",
+      "snippet": "violetxi/qwen35-9b-wmrl-v4-c1-b5v4 wm-internalization v4 checkpoint — condition c1-b5v4, save final. Full-finetune of Qwen/Qwen3.5-9B on the Calderwood & Harkness synthetic law-firm corpus (world-internalization study, v4 lineage: 9B student, ~50k think-on seed pool)."
+    },
+    {
+      "title": "PowerPoint | Presentaties en dia's online | Microsoft 365",
+      "url": "https://www.microsoft.com/nl-nl/microsoft-365/powerpoint?msockid=053afcecf66b6a541071eb25f7676bc0",
+      "snippet": "Feb 5, 2024 · Met Microsoft PowerPoint kun je overzichtelijke diapresentaties en fijnmazige presentaties voor verkoop maken. Het is …"
+    }
+  ]
+}

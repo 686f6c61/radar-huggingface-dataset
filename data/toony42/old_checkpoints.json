@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "toony42/old_checkpoints",
+  "slug": "toony42-old_checkpoints",
+  "author": "toony42",
+  "url": "https://huggingface.co/toony42/old_checkpoints",
+  "created_at": "2026-09-03T20:17:44.000Z",
+  "updated_at": "2026-09-04T03:59:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "video-generation",
+    "reinforcement-learning",
+    "grpo",
+    "lora",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 326031993120,
+  "storage_human": "326.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Conversation-Category - Κοινότητα της Microsoft",
+      "url": "https://answers.microsoft.com/el-gr/outlook_com/forum/all/conversation-category/111aadc6-cc34-4765-95e2-6525133417c6",
+      "snippet": "The category I have assigned to a whole conversation does not show when in \"Collapsed\" mode. Is there any way to do that?"
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 201 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Ανεύρεση φακέλλου στον οποίο έχω αποθηκεύσει κάποιο e-mail",
+      "url": "https://answers.microsoft.com/el-gr/outlook_com/forum/all/%CE%B1%CE%BD%CE%B5%CF%8D%CF%81%CE%B5%CF%83%CE%B7/3abfa9a1-96f4-407b-989f-92a353c1fbf0",
+      "snippet": "Εάν από ένα συγκεκριμένο παραλήπτη έχω αποθηκεύσει κάποιο e-mail του σε κάποιο φάκελο με διαφορετικό όνομα από το όνομα …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/feedback/forum/all/is-there-a-my-verizon-app-for-my-fios-landline/b14b8668-cb10-4d0d-9ecb-51735381e904",
+      "snippet": ""
+    }
+  ]
+}

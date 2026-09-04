@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "TASMAYU/opsd-qwen2.5-7b-omnimath",
+  "slug": "tasmayu-opsd-qwen2-5-7b-omnimath",
+  "author": "TASMAYU",
+  "url": "https://huggingface.co/TASMAYU/opsd-qwen2.5-7b-omnimath",
+  "created_at": "2026-09-03T19:52:21.000Z",
+  "updated_at": "2026-09-03T19:54:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11422157,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen2.5-Omni: Qwen2.5-Omni is an end-to-end multimodal ...",
+      "url": "https://github.com/QwenLM/Qwen2.5-Omni",
+      "snippet": "We release Qwen2.5-Omni, the new flagship end-to-end multimodal model in the Qwen series. Designed for comprehensive multimodal perception, it seamlessly processes diverse inputs including text, images, audio, and video, while delivering real-time streaming responses through both text generation and natural speech synthesis."
+    },
+    {
+      "title": "Facebook Marketplace: Buy and Sell Items Locally or Shipped | Facebook",
+      "url": "https://www.facebook.com/marketplace/",
+      "snippet": "Buy or sell new and used items easily on Facebook Marketplace, locally or from businesses. Find great deals on new items shipped …"
+    },
+    {
+      "title": "Qwen/Qwen2.5-Omni-7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Omni-7B",
+      "snippet": "Model Architecture Performance We conducted a comprehensive evaluation of Qwen2.5-Omni, which demonstrates strong performance across all modalities when compared to similarly sized single-modality models and closed-source models like Qwen2.5-VL-7B, Qwen2-Audio, and Gemini-1.5-pro."
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://business.facebook.com/",
+      "snippet": "By logging in, you can navigate to all business tools like Meta Business Suite, Ads Manager and more to help you connect with your …"
+    }
+  ]
+}

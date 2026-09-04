@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "IFM/K2-Horizon-7B-GGUF",
+  "slug": "ifm-k2-horizon-7b-gguf",
+  "author": "IFM",
+  "url": "https://huggingface.co/IFM/K2-Horizon-7B-GGUF",
+  "created_at": "2026-09-03T12:53:30.000Z",
+  "updated_at": "2026-09-03T21:25:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "k2-horizon",
+    "7b",
+    "dense",
+    "open-weights",
+    "ifm",
+    "text-generation",
+    "en",
+    "dataset:IFM/K2-Horizon-Pretrain-Data",
+    "dataset:IFM/K2-Horizon-Midtrain-Data",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 14,
+  "downloads_30d": 0,
+  "trending_score": 13,
+  "parameters": 8999178240,
+  "parameters_human": "9.00B",
+  "storage_bytes": 18013304194,
+  "storage_human": "18.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FranceSMS - Communication par SMS et MMS",
+      "url": "https://francesms.fr/communication.php",
+      "snippet": "1 day ago · Envoyez des messages en masse avec notre gateway SMS, une solution d’envoi disponible par API ou logiciel. …"
+    },
+    {
+      "title": "IFM/K2-Horizon-7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "One SMS - Réception de SMS, numéros virtuels et API",
+      "url": "https://1-sms.com/fr/",
+      "snippet": "One SMS permet de recevoir des codes de vérification SMS, louer un numéro dédié et automatiser la réception avec une API."
+    },
+    {
+      "title": "IFM/K2-Horizon-7B · Hugging Face",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "API SMS smsmode. Intégration & automatisation des SMS",
+      "url": "https://www.smsmode.com/api-sms/",
+      "snippet": "Implémentez notre API d’envoi de SMS MT et de réception de SMS MO vers la France et l’international. Découvrez des SDK qui …"
+    }
+  ]
+}

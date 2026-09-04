@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ahmedikram/SWE-Qwen-qwen3-14b-higher_rank_14b",
+  "slug": "ahmedikram-swe-qwen-qwen3-14b-higher_rank_14b",
+  "author": "ahmedikram",
+  "url": "https://huggingface.co/ahmedikram/SWE-Qwen-qwen3-14b-higher_rank_14b",
+  "created_at": "2026-08-08T22:11:44.000Z",
+  "updated_at": "2026-09-03T23:23:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "swe-bench",
+    "code",
+    "qwen",
+    "qlora",
+    "software-engineering",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 525306565,
+  "storage_human": "525 MB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vasi, fioriere e portavasi - Leroy Merlin",
+      "url": "https://www.leroymerlin.it/prodotti/giardino-e-terrazzo/vasi-fioriere-e-portavasi/?msockid=14f91562aeb668ad032d02a8afa66976",
+      "snippet": "Valorizza il tuo spazio verde con la selezione ideale di contenitori per piante e fiori. Se cerchi leggerezza e praticità, i vasi in resina o …"
+    },
+    {
+      "title": "ahmedikram/SWE-Qwen-qwen3-14b-higher_rank_14b · Hugging Face",
+      "url": "https://huggingface.co/ahmedikram/SWE-Qwen-qwen3-14b-higher_rank_14b",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Vasi e fioriere da esterno - Maisons du Monde",
+      "url": "https://www.maisonsdumonde.com/IT/it/c/vasi-e-fioriere-da-esterno-n946ef50df16ead50f78ce1490b7b0e1c9c8677b?msockid=14f91562aeb668ad032d02a8afa66976",
+      "snippet": "Ti proponiamo anche dei vasi di fiori speciali per l’esterno, di ogni dimensione, per una o più piante. Potrai così mischiare le piante …"
+    },
+    {
+      "title": "ahmedikram (Ahmed) - Hugging Face",
+      "url": "https://huggingface.co/ahmedikram",
+      "snippet": "ahmedikram/SWE-Qwen-qwen3-14b-higher_rank_14b. published a model about 2 hours ago. ahmedikram/SWE-Qwen-qwen3-14b-higher_rank_14b"
+    },
+    {
+      "title": "Amazon.it: Vasi E Fioriere Da Esterno",
+      "url": "https://www.amazon.it/vasi-fioriere-esterno/s?k=vasi+e+fioriere+da+esterno",
+      "snippet": "Casaria® 2x Fioriera da Esterno Ethica in Plastica 80L 80x36x35cm | Base Drenante, Fioriere da Giardino, Vaso Grade per Fiori, …"
+    }
+  ]
+}

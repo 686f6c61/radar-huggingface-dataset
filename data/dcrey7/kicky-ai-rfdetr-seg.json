@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dcrey7/kicky-ai-rfdetr-seg",
+  "slug": "dcrey7-kicky-ai-rfdetr-seg",
+  "author": "dcrey7",
+  "url": "https://huggingface.co/dcrey7/kicky-ai-rfdetr-seg",
+  "created_at": "2026-09-03T20:59:05.000Z",
+  "updated_at": "2026-09-03T20:59:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "rfdetr",
+  "languages": [],
+  "tags": [
+    "rfdetr",
+    "object-detection",
+    "instance-segmentation",
+    "rf-detr",
+    "football",
+    "soccer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133828359,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.com/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "GitHub - roboflow/rf-detr: RF-DETR is a real-time object detection and ...",
+      "url": "https://github.com/roboflow/rf-detr",
+      "snippet": "RF-DETR is a real-time object detection and segmentation model architecture developed by Roboflow, SOTA on COCO, designed for fine-tuning. [ICLR 2026] - roboflow/rf-detr"
+    },
+    {
+      "title": "Google Chrome Web Browser",
+      "url": "https://www.google.com/chrome/what-you-make-of-it/",
+      "snippet": "Now more simple, secure, and faster than ever - with Google’s smarts."
+    },
+    {
+      "title": "Kicky AI - a Hugging Face Space by dcrey7",
+      "url": "https://huggingface.co/spaces/dcrey7/kicky-ai",
+      "snippet": "build-small-hackathon/kicky-ai dcrey7 / kicky-ai like 0 Agents Running App FilesFiles Community"
+    },
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "How to install Chrome Important: Before you download, check if Chrome supports your operating system and you’ve met all other …"
+    }
+  ]
+}

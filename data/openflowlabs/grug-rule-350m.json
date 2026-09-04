@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OpenFlowLabs/grug-rule-350m",
+  "slug": "openflowlabs-grug-rule-350m",
+  "author": "OpenFlowLabs",
+  "url": "https://huggingface.co/OpenFlowLabs/grug-rule-350m",
+  "created_at": "2026-09-03T17:56:27.000Z",
+  "updated_at": "2026-09-03T23:21:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "burn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "burn",
+    "rust",
+    "from-scratch",
+    "reasoning",
+    "deductive-reasoning",
+    "training-stability",
+    "research-artifact",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1593302827,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=3f0664626bde6e2b214b73a86a776fcf",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Liquid AI's 350M Parameter Model Outperforms Giants at the Edge",
+      "url": "https://startupfortune.com/liquid-ais-350m-parameter-model-outperforms-giants-at-the-edge/",
+      "snippet": "Liquid AI has released a 350-million parameter model that outperforms models twice its size, proving that smart architecture can matter more than raw scale. There is an assumption in generative AI that you need billions of parameters to be useful. Liquid AI just made that assumption look expensive. The startup has released LFM2.5-350M, a compact model trained on 28 trillion tokens that beats ..."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Liquid AI Released LFM2.5-350M: A Compact 350M Parameter Model Trained ...",
+      "url": "https://www.marktechpost.com/2026/03/31/liquid-ai-released-lfm2-5-350m-a-compact-350m-parameter-model-trained-on-28t-tokens-with-scaled-reinforcement-learning/",
+      "snippet": "In the current landscape of generative AI, the ‘scaling laws’ have generally dictated that more parameters equal more intelligence. However, Liquid AI is challenging this convention with the release of LFM2.5-350M. This model is actually a technical case study in intelligence density with additional pre-training (from 10T to 28T tokens) and large-scale reinforcement learning The ..."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

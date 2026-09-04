@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "PJRM/Llama-NextGenmix-4b-Q4_0-GGUF",
+  "slug": "pjrm-llama-nextgenmix-4b-q4_0-gguf",
+  "author": "PJRM",
+  "url": "https://huggingface.co/PJRM/Llama-NextGenmix-4b-Q4_0-GGUF",
+  "created_at": "2026-09-03T20:06:24.000Z",
+  "updated_at": "2026-09-03T20:06:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "merge",
+    "mergekit",
+    "lazymergekit",
+    "chuanli11/Llama-3.2-3B-Instruct-uncensored",
+    "bunnycore/Llama-3.2-3B-Mix",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:powermove72/Llama-NextGenmix-4b",
+    "base_model:quantized:powermove72/Llama-NextGenmix-4b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4009430080,
+  "parameters_human": "4.01B",
+  "storage_bytes": 2365410208,
+  "storage_human": "2.4 GB",
+  "base_model": "powermove72/Llama-NextGenmix-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "维基百科的官方网址是什么？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/820729145772572492.html",
+      "snippet": "Sep 9, 2024 · 1. 访问wiki百科中文版的官方网站，请输入以下网址： https://www.wiki.com。 2. 维基百科是一个基于wiki技术的免费、 …"
+    },
+    {
+      "title": "PJRM/Llama-3.1-Nemotron-Nano-4B-v1.1-Q4_0-GGUF - Hugging Face",
+      "url": "https://huggingface.co/PJRM/Llama-3.1-Nemotron-Nano-4B-v1.1-Q4_0-GGUF",
+      "snippet": "This model was converted to GGUF format from unsloth/Llama-3.1-Nemotron-Nano-4B-v1.1 using llama.cpp via the ggml.ai's GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "法语的几个特殊的字母，列出来一下 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/94366850.html",
+      "snippet": "法语特殊的字母有： 大写：À、Â、È、É、Ê、Ë、 Î 、Ï 、Ô 、Ö、 Ù、 Û 、Ç 、Œ 、Æ、 €。 小写：à、â、è、é、ê、 î 、ï、 ô、 ö …"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "一般常见的几个波浪线型符号（常见度由高到低）（en.wikipedia.org/wiki/T）： 「~」 U+007E TILDE（最常见，英文状态下 shift 加 1 …"
+    }
+  ]
+}

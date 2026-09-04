@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "inclusionAI/LLaDA-Image",
+  "slug": "inclusionai-llada-image",
+  "author": "inclusionAI",
+  "url": "https://huggingface.co/inclusionAI/LLaDA-Image",
+  "created_at": "2026-08-28T02:18:25.000Z",
+  "updated_at": "2026-09-04T01:38:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-generation",
+    "image-editing",
+    "image-to-image",
+    "text-to-image",
+    "en",
+    "zh",
+    "arxiv:2609.03796",
+    "diffusers:LLaDAImagePipeline",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 6540230016,
+  "parameters_human": "6.54B",
+  "storage_bytes": 49300950305,
+  "storage_human": "49.3 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ladder - Canberra Raiders",
+      "url": "https://www.raiders.com.au/ladder/",
+      "snippet": "Keep track of the latest NRL results in real time with our live ladder."
+    },
+    {
+      "title": "LLaDA-Image - a inclusionAI Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/inclusionAI/llada-image",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Draw, NRL Scores, Results, 2026 Telstra Premiership - Canberra Raiders",
+      "url": "https://www.raiders.com.au/draw/",
+      "snippet": "The 2026 Canberra Raiders Telstra Premiership draw, fixture, schedule, NSW Cup draw, Jersey Flegg Cup"
+    },
+    {
+      "title": "inclusionAI/LLaDA2.0-Uni · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/LLaDA2.0-Uni",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Canberra Raiders standings - Rugby League, Australia",
+      "url": "https://www.flashscoreusa.com/team/canberra-raiders/vD4EtSRJ/standings/QN09jAQF/",
+      "snippet": "Explore the latest standings of Canberra Raiders in the Rugby League/Australia section. Elevate your sports experience with …"
+    }
+  ]
+}

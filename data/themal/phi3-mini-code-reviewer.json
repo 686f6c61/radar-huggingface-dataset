@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Themal/phi3-mini-code-reviewer",
+  "slug": "themal-phi3-mini-code-reviewer",
+  "author": "Themal",
+  "url": "https://huggingface.co/Themal/phi3-mini-code-reviewer",
+  "created_at": "2026-09-03T21:04:07.000Z",
+  "updated_at": "2026-09-03T23:40:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "phi3",
+    "code-review",
+    "qlora",
+    "lora",
+    "fine-tuned",
+    "code-analysis",
+    "phi-3",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:microsoft/Phi-3-mini-4k-instruct",
+    "base_model:adapter:microsoft/Phi-3-mini-4k-instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3821079552,
+  "parameters_human": "3.82B",
+  "storage_bytes": 7642681603,
+  "storage_human": "7.6 GB",
+  "base_model": "microsoft/Phi-3-mini-4k-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Las 4 formas en que la soledad puede afectar a la salud y cómo ...",
+      "url": "https://www.infobae.com/salud/2024/03/03/las-4-formas-en-que-la-soledad-puede-afectar-a-la-salud-y-como-prevenirlo/",
+      "snippet": "Mar 3, 2024 · Las 4 formas en que la soledad puede afectar a la salud y cómo prevenirla La OMS plantea que la desconexión social …"
+    },
+    {
+      "title": "microsoft/Phi-3-mini-128k-instruct · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Soledad y aislamiento: la amenaza oculta para la salud mundial que ya ...",
+      "url": "https://www.who.int/es/news-room/commentaries/detail/loneliness-and-isolation-the-hidden-threat-to-global-health-we-can-no-longer-ignore",
+      "snippet": "Por el contrario, la desconexión, ya sea por soledad o por aislamiento social, puede tener efectos devastadores: aumenta el riesgo …"
+    },
+    {
+      "title": "GitHub - ai-sources/Phi-3CookBook: This is a Phi-3 book for getting ...",
+      "url": "https://github.com/ai-sources/Phi-3CookBook",
+      "snippet": "This is a Phi-3 book for getting started with Phi-3. Phi-3, a family of open AI models developed by Microsoft. Phi-3 models are the most capable and cost-effective small language models (SLMs) available, outperforming models of the same size and next size up across a variety of language, reasoning, coding, and math benchmarks."
+    },
+    {
+      "title": "Cómo prevenir la soledad no deseada - Cruz Roja",
+      "url": "https://www2.cruzroja.es/-/como-prevenir-la-soledad-no-deseada-smta-cnt",
+      "snippet": "Llegados a este punto, lo más importante es pensar que la soledad se puede prevenir, por ejemplo, mejorando y entrenando …"
+    }
+  ]
+}

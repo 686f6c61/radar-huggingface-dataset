@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Nryadav41/albef-experiment",
+  "slug": "nryadav41-albef-experiment",
+  "author": "Nryadav41",
+  "url": "https://huggingface.co/Nryadav41/albef-experiment",
+  "created_at": "2026-09-03T19:03:10.000Z",
+  "updated_at": "2026-09-03T19:03:17.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iCloud Mail - Apple iCloud",
+      "url": "https://www.icloud.com/mail",
+      "snippet": "View and send mail from your iCloud email address on the web. Sign in or create a new account to get started."
+    },
+    {
+      "title": "GitHub - salesforce/ALBEF: Code for ALBEF: a new vision-language pre ...",
+      "url": "https://github.com/salesforce/ALBEF",
+      "snippet": "Align before Fuse: Vision and Language Representation Learning with Momentum Distillation, NeurIPS 2021 Spotlight (Salesforce Research). Announcement: ALBEF is now officially integrated into LAVIS - a one-stop library for language-and-vision research and applications! This is the official PyTorch implementation of the ALBEF paper [Blog]."
+    },
+    {
+      "title": "Mail di iCloud - iCloud Apple",
+      "url": "https://www.icloud.com/it-it/mail",
+      "snippet": "Visualizza e invia mail dal tuo indirizzo email iCloud sul web. Effettua l’accesso o crea un nuovo account per iniziare."
+    },
+    {
+      "title": "ALBEF/README.md at main · salesforce/ALBEF · GitHub",
+      "url": "https://github.com/salesforce/ALBEF/blob/main/README.md?plain=1",
+      "snippet": "Code for ALBEF: a new vision-language pre-training method - ALBEF/README.md at main · salesforce/ALBEF"
+    },
+    {
+      "title": "iCloud+ - Apple (IT)",
+      "url": "https://www.apple.com/it/icloud/",
+      "snippet": "iCloud Mail si integra alla perfezione con l’app Mail sul tuo iPhone, iPad o Mac e ti permette di usare iCloud.com per inviare e …"
+    }
+  ]
+}

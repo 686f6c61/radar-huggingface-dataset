@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nchristo-synaptics/act_touch_ablation_nowrist_touch_20260903",
+  "slug": "nchristo-synaptics-act_touch_ablation_nowrist_touch_20260903",
+  "author": "nchristo-synaptics",
+  "url": "https://huggingface.co/nchristo-synaptics/act_touch_ablation_nowrist_touch_20260903",
+  "created_at": "2026-09-03T20:23:48.000Z",
+  "updated_at": "2026-09-03T20:28:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:nchristo-synaptics/touch-vision-v3_20260902_152740",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51696102,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206836584,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L'Équipe - L'actualité du sport en continu.",
+      "url": "https://m.lequipe.fr/",
+      "snippet": "Le sport en direct sur L'Équipe. Les informations, résultats et classements de tous les sports. Directs commentés, images et vidéos à …"
+    },
+    {
+      "title": "nchristo-synaptics (Nicholas Christoffersen) - Hugging Face",
+      "url": "https://huggingface.co/nchristo-synaptics",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 1 hour ago ... published a dataset about 1 hour ago"
+    },
+    {
+      "title": "L (lettre) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/L_(lettre)",
+      "snippet": "L (lettre) ... L est la douzième lettre et la 9e consonne de l' alphabet latin. L a en français la valeur phonétique [l]."
+    },
+    {
+      "title": "nchristo-synaptics/touch-vision-v3_20260902_152740 at main",
+      "url": "https://huggingface.co/datasets/nchristo-synaptics/touch-vision-v3_20260902_152740/tree/main",
+      "snippet": "Datasets: nchristo-synaptics / touch-vision-v3_20260902_152740 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 1K - 10K Tags: LeRobot Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main touch-vision-v3_20260902_152740 1 contributor History:3 commits nchristo-synaptics Upload README.md ..."
+    },
+    {
+      "title": "L - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/L",
+      "snippet": "In English orthography, l usually represents the phoneme / l /, which can have several sound values, depending on the speaker's …"
+    }
+  ]
+}

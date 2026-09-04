@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Jhjhugv/Qwen3-1.7B-ToolCalling-LoRA",
+  "slug": "jhjhugv-qwen3-1-7b-toolcalling-lora",
+  "author": "Jhjhugv",
+  "url": "https://huggingface.co/Jhjhugv/Qwen3-1.7B-ToolCalling-LoRA",
+  "created_at": "2026-09-04T01:13:26.000Z",
+  "updated_at": "2026-09-04T01:13:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 290396812,
+  "storage_human": "290 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "كيفية الحصول على المساعدة من Windows - دعم Microsoft",
+      "url": "https://support.microsoft.com/ar-sa/windows/%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%A9-%D9%85%D9%86-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "ابحث عن تعليمات على شريط المهام أو استخدم تطبيق التلميحات أو حدد ارتباط الحصول على التعليمات في تطبيق الإعدادات أو انتقل إلى support.microsoft.com/windows."
+    },
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "المساعدة والتعلّم لـ Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/ar-sa/windows/",
+      "snippet": "احصل على الدعم لنظام التشغيل Windows وتعرف على المزيد حول التثبيت والتحديثات والخصوصية والأمان والمزيد."
+    },
+    {
+      "title": "Function Calling and Tool Use | QwenLM/Qwen3 | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen3/4.3-function-calling-and-tool-use",
+      "snippet": "Function calling in Qwen3 enables structured interaction between the language model and external tools through prompt engineering and specialized chat templates."
+    },
+    {
+      "title": "كيفية الحصول على المساعدة في Windows 10 خطوة بخطوة",
+      "url": "https://mundowin.com/ar/%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%A9-%D9%81%D9%8A-Windows-10-%D8%A8%D9%83%D9%84-%D8%A7%D9%84%D8%B7%D8%B1%D9%82-%D8%A7%D9%84%D9%85%D9%85%D9%83%D9%86%D8%A9/",
+      "snippet": "اكتشف كل الطرق للحصول على المساعدة في Windows 10: التطبيق الرسمي، وF1، وCortana، والدعم الفني، والدردشة، واستكشاف الأخطاء وإصلاحها."
+    }
+  ]
+}

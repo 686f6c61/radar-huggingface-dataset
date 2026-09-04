@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hungpill/Qwen3-1.7B-ToolCalling-LoRA",
+  "slug": "hungpill-qwen3-1-7b-toolcalling-lora",
+  "author": "hungpill",
+  "url": "https://huggingface.co/hungpill/Qwen3-1.7B-ToolCalling-LoRA",
+  "created_at": "2026-09-04T01:13:26.000Z",
+  "updated_at": "2026-09-04T01:13:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 290396812,
+  "storage_human": "290 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solved: Spotify keeps skipping - The Spotify Community",
+      "url": "https://community.spotify.com/t5/Desktop-Mac/Spotify-keeps-skipping/td-p/23609",
+      "snippet": "Mar 16, 2012 · Every since I installed Spotify on my computer, it keeps skipping every few seconds with practically every single song. …"
+    },
+    {
+      "title": "Han0716/Qwen3-1.7B-ToolCalling-LoRA · Hugging Face",
+      "url": "https://huggingface.co/Han0716/Qwen3-1.7B-ToolCalling-LoRA",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Spotify for Developers - The Spotify Community",
+      "url": "https://community.spotify.com/t5/Spotify-for-Developers/bd-p/Spotify_Developer",
+      "snippet": "Jul 23, 2026 · Spotify Soloist: a new terminal based player for headless and DIY setups Hey everyone, we've created this thread to …"
+    },
+    {
+      "title": "Qwen3-1.7B Tool-Calling with QLoRA - GitHub",
+      "url": "https://github.com/zubairz4far/qwen3-tool-calling-qlora",
+      "snippet": "Model: Qwen3-1.7B Method: QLoRA supervised fine-tuning Training hardware: Kaggle NVIDIA T4 Dataset: 1,600 synthetic support/tool-calling examples Split: 1,200 train / 160 validation / 240 test"
+    },
+    {
+      "title": "Spotify icon not showing on desktop - The Spotify Community",
+      "url": "https://community.spotify.com/t5/Desktop-Windows/Spotify-icon-not-showing-on-desktop/td-p/6974620",
+      "snippet": "May 23, 2025 · The spotify icon on my desktop keeps turning into a white blank page. I tried many different things, just throwing it into …"
+    }
+  ]
+}

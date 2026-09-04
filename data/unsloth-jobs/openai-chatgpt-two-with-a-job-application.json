@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "unsloth-jobs/openai-chatgpt-two-with-a-job-application",
+  "slug": "unsloth-jobs-openai-chatgpt-two-with-a-job-application",
+  "author": "unsloth-jobs",
+  "url": "https://huggingface.co/unsloth-jobs/openai-chatgpt-two-with-a-job-application",
+  "created_at": "2026-09-03T20:46:32.000Z",
+  "updated_at": "2026-09-03T20:46:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "jax",
+    "tflite",
+    "rust",
+    "onnx",
+    "safetensors",
+    "gpt2",
+    "exbert",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 137022720,
+  "parameters_human": "137.0M",
+  "storage_bytes": 5626190610,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Start Unsloth, load a model, open your project folder, then run unsloth start claude. Swap models in Unsloth without changing your agent workflow. Unsloth also exposes an OpenAI-compatible API, so existing apps, scripts and SDKs can connect to your local models through a familiar interface."
+    },
+    {
+      "title": "Connect OpenAI to Unsloth: Run GPT Models in Local Chat",
+      "url": "https://unsloth.ai/docs/integrations/connections/openai",
+      "snippet": "Learn how to connect OpenAI models, including GPT-5.5 to Unsloth so you can chat with all of them in an open-source local UI chat interface. By connecting your OpenAI API key, you can run GPT models inside Unsloth with features like web search, tool-calling, code execution, image generation, reusable code containers, and prompt caching."
+    },
+    {
+      "title": "unsloth (Unsloth AI) - Hugging Face",
+      "url": "https://huggingface.co/unsloth",
+      "snippet": "Introducing Dynamic V3.0 quants, our new SOTA quantization methodology. Qwen3.8 Unsloth quants including Qwen3.8-27B! Run and train Qwen3.8 with the Unsloth Desktop app."
+    },
+    {
+      "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and ...",
+      "url": "https://github.com/unslothai/unsloth",
+      "snippet": "The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the Unsloth Studio UI are …"
+    },
+    {
+      "title": "Careers - OpenAI",
+      "url": "https://openai.com/careers/",
+      "snippet": "Developing safe and beneficial AI systems requires people from a wide range of disciplines and backgrounds. We’re always looking for curious minds to join our team."
+    }
+  ]
+}

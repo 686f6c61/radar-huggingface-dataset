@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Sawfwair/Cosmos3-Super-Text2Image-4Step-MLX-4bit",
+  "slug": "sawfwair-cosmos3-super-text2image-4step-mlx-4bit",
+  "author": "Sawfwair",
+  "url": "https://huggingface.co/Sawfwair/Cosmos3-Super-Text2Image-4Step-MLX-4bit",
+  "created_at": "2026-09-03T18:46:38.000Z",
+  "updated_at": "2026-09-03T19:01:41.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "diffusers",
+    "safetensors",
+    "apple-silicon",
+    "cosmos3",
+    "text-to-image",
+    "quantized",
+    "base_model:nvidia/Cosmos3-Super-Text2Image-4Step",
+    "base_model:finetune:nvidia/Cosmos3-Super-Text2Image-4Step",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37027777635,
+  "storage_human": "37.0 GB",
+  "base_model": "nvidia/Cosmos3-Super-Text2Image-4Step",
+  "formats": [
+    "diffusers",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=2135130804766d22108004c1056d6c7f",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "nvidia/Cosmos3-Super-Text2Image-4Step · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Cosmos3-Super-Text2Image-4Step",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Cosmos3-Super-Text2Image-4Step by NVIDIA: Benchmarks, Rankings & Model ...",
+      "url": "https://crafiq.ai/models/image/nvidia-cosmos3-super-text2image-4step",
+      "snippet": "See Cosmos3-Super-Text2Image-4Step benchmarks, arena rankings, release details, specs, and official links. Compare it with other top models in image generation."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

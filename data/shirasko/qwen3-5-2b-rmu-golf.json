@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "shirasko/qwen3.5-2b-rmu-golf",
+  "slug": "shirasko-qwen3-5-2b-rmu-golf",
+  "author": "shirasko",
+  "url": "https://huggingface.co/shirasko/qwen3.5-2b-rmu-golf",
+  "created_at": "2026-09-03T21:09:01.000Z",
+  "updated_at": "2026-09-03T21:12:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "unlearning",
+    "rmu",
+    "qwen3.5-2b",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 3783681537,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yandex — a fast Internet search",
+      "url": "https://yandex.com/search/?text=junior+nud",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Qwen3.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen35",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "+nudistenvelt jr — Yandex: found 3 thousand results",
+      "url": "https://wap.yandex.com/search?text=%2Bnudistenvelt+jr&missword=1",
+      "snippet": "Nudisten-Welt: Entdecke nackte Körper und heiße Abenteuer Tauche ein in die Nudistenwelt- hier findest du unzensierte Fotos von …"
+    },
+    {
+      "title": "qwen3.5:2b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:2b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "nudistenwelt.jr — Yandex: found 17 thousand results",
+      "url": "https://wap.yandex.com/search?text=nudistenwelt.jr&p=0",
+      "snippet": "Nudisten-Welt: Entdecke nackte Körper und heiße Abenteuer Tauche ein in die Nudistenwelt- hier findest du unzensierte Fotos von …"
+    }
+  ]
+}

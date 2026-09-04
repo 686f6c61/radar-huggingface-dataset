@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "omkarpatil/ffw_sg2_put-bread-in-tray_dp_sharednorm_3cam",
+  "slug": "omkarpatil-ffw_sg2_put-bread-in-tray_dp_sharednorm_3cam",
+  "author": "omkarpatil",
+  "url": "https://huggingface.co/omkarpatil/ffw_sg2_put-bread-in-tray_dp_sharednorm_3cam",
+  "created_at": "2026-09-03T23:05:09.000Z",
+  "updated_at": "2026-09-03T23:05:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion-policy",
+    "robotis",
+    "ffw_sg2",
+    "cyclo_intelligence",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1150209160,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube で制限付きモードをオンまたはオフにする - パソコン",
+      "url": "https://support.google.com/youtube/answer/174084?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube で制限付きモードをオンまたはオフにする 制限付きモードは、YouTube で使用できるオプション設定です。 この機能は …"
+    },
+    {
+      "title": "omkarpatil (Omkar Patil) - Hugging Face",
+      "url": "https://huggingface.co/omkarpatil/models",
+      "snippet": "omkarpatil's models8 Sort: Recently updated omkarpatil/ffw_sg2_pick-blue-cylinder-left-arm_groot-n1.7 Robotics •Updated about 10 hours ago"
+    },
+    {
+      "title": "YouTube ความช่วยเหลือ",
+      "url": "https://support.google.com/youtube/?hl=th",
+      "snippet": "ศูนย์ช่วยเหลืออย่างเป็นทางการของ YouTube ที่คุณสามารถพบเคล็ดลับและบทแนะนำเกี่ยวกับการใช้งานผลิตภัณฑ์ รวมทั้งคำตอบสำหรับ ..."
+    },
+    {
+      "title": "omkarpatil/ffw_sg2_put-blocks-in-bowl_groot-n1.7 · Hugging Face",
+      "url": "https://huggingface.co/omkarpatil/ffw_sg2_put-blocks-in-bowl_groot-n1.7",
+      "snippet": "omkarpatil / ffw_sg2_put-blocks-in-bowl_groot-n1.7 like 0 Robotics Safetensors omkarpatil/put-blocks-in-bowl Gr00tN1d7 gr00t vla robotis ffw_sg2 cyclo_intelligence License:other Model card FilesFiles and versions xet Community Copy to bucket new GR00T N1.7 — FFW SG2 rev1 — \"Pick the two blocks up and put them in the green bowl\""
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    }
+  ]
+}

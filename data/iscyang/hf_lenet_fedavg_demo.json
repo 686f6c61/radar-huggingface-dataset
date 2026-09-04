@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "iscyang/hf_lenet_fedavg_demo",
+  "slug": "iscyang-hf_lenet_fedavg_demo",
+  "author": "iscyang",
+  "url": "https://huggingface.co/iscyang/hf_lenet_fedavg_demo",
+  "created_at": "2026-09-03T18:46:36.000Z",
+  "updated_at": "2026-09-03T20:23:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "federated-learning",
+    "lenet",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 44426,
+  "parameters_human": "44426",
+  "storage_bytes": 1249696,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kopitiam - Lowyat.NET",
+      "url": "https://forum.lowyat.net/Kopitiam",
+      "snippet": "While Kopitiam is a place to hang out and chat, annoying threads which make no sense at all will be deleted and offenders warned. …"
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Is Whatsapp web down? - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5538738",
+      "snippet": "Sep 8, 2025 · Cannot link my device now."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/drive/1CVm50PGE4vhtB5I_a_yc4h5F-itKOVL9",
+      "snippet": "Google Colab ... Google Colab"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/es-es/windows/forum/windows_7-windows_install-wininstalls/windows-7-instalar-archivo-iso-de-windows-7/b03222b3-ee53-4bb2-aa87-39b6ab46179a",
+      "snippet": ""
+    }
+  ]
+}

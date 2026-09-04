@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "PJRM/Echo-3B-Q4_0-GGUF",
+  "slug": "pjrm-echo-3b-q4_0-gguf",
+  "author": "PJRM",
+  "url": "https://huggingface.co/PJRM/Echo-3B-Q4_0-GGUF",
+  "created_at": "2026-09-03T18:48:53.000Z",
+  "updated_at": "2026-09-03T18:49:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "dataset:pankajmathur/lima_unchained_v1",
+    "dataset:CheshireAI/guanaco-unchained",
+    "dataset:totally-not-an-llm/sharegpt-hyperfiltered-3k",
+    "dataset:totally-not-an-llm/EverythingLM-data-V3",
+    "dataset:LDJnr/Verified-Camel",
+    "dataset:CollectiveCognition/chats-data-2023-10-16",
+    "dataset:Norquinal/claude_multiround_chat_30k",
+    "dataset:euclaise/WritingPromptsX",
+    "dataset:euirim/goodwiki",
+    "dataset:euclaise/MiniCoT",
+    "dataset:euclaise/SciCoT",
+    "dataset:euclaise/symtune_mini",
+    "dataset:euclaise/mathoverflow-accepted",
+    "dataset:lemonilia/LimaRP",
+    "base_model:euclaise/Echo-3B",
+    "base_model:quantized:euclaise/Echo-3B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2795443200,
+  "parameters_human": "2.80B",
+  "storage_bytes": 1608574560,
+  "storage_human": "1.6 GB",
+  "base_model": "euclaise/Echo-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Energy gels, foods during long distance running | Diabetes UK Forum",
+      "url": "https://forum.diabetes.org.uk/boards/threads/energy-gels-foods-during-long-distance-running.116013/",
+      "snippet": "Jan 13, 2025 · I'm T1, hybrid closed loop user currently training for a half marathon. Diabetes dietitian has given me advise about …"
+    },
+    {
+      "title": "PJRM/supreme-creative-3b-Q4_0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/PJRM/supreme-creative-3b-Q4_0-GGUF",
+      "snippet": "This model was converted to GGUF format from njelitltd2/supreme-creative-3b using llama.cpp via the ggml.ai's GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "Chilblains | Diabetes UK Forum",
+      "url": "https://forum.diabetes.org.uk/boards/threads/chilblains.98282/",
+      "snippet": "Jan 28, 2022 · Hello Everyone, I got Chilblains only on my toes, please let me know the treatment!!"
+    },
+    {
+      "title": "PJRM/Vesper-3B-Ministral-Q4_0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/PJRM/Vesper-3B-Ministral-Q4_0-GGUF",
+      "snippet": "This model was converted to GGUF format from blascotobasco/Vesper-3B-Ministral using llama.cpp via the ggml.ai's GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "Anuncia tu negocio en Foursquare",
+      "url": "https://es.foursquare.com/advertise",
+      "snippet": "Llega a la gente de la zona que esté dispuesta a consumir en tu negocio. Solo tendrás que pagar si la gente realiza alguna acción …"
+    }
+  ]
+}

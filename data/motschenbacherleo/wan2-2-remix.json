@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "motschenbacherleo/wan2.2-Remix",
+  "slug": "motschenbacherleo-wan2-2-remix",
+  "author": "motschenbacherleo",
+  "url": "https://huggingface.co/motschenbacherleo/wan2.2-Remix",
+  "created_at": "2026-09-03T18:49:31.000Z",
+  "updated_at": "2026-09-03T18:49:31.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "wan2.2",
+  "languages": [],
+  "tags": [
+    "wan2.2",
+    "Image-to-video",
+    "Text-to-video",
+    "remix",
+    "art",
+    "video-generation",
+    "base_model:Wan-AI/Wan2.1-T2V-14B",
+    "base_model:finetune:Wan-AI/Wan2.1-T2V-14B",
+    "license:other",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 314389132725,
+  "storage_human": "314.4 GB",
+  "base_model": "Wan-AI/Wan2.1-I2V-14B, Wan-AI/Wan2.1-T2V-14B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shopify Community",
+      "url": "https://community.shopify.com/",
+      "snippet": "Access a community of over 500,000 Shopify Merchants and Partners and engage in meaningful conversations with your peers."
+    },
+    {
+      "title": "FX-FeiHou/wan2.2-Remix · Hugging Face",
+      "url": "https://huggingface.co/FX-FeiHou/wan2.2-Remix",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Is this Shopify email legitimate or a scam?",
+      "url": "https://community.shopify.com/t/is-this-shopify-email-legitimate-or-a-scam/331684",
+      "snippet": "Jun 14, 2024 · Thank you for taking the time to reach out to the Shopify Community Forums regarding this email that you’ve received. …"
+    },
+    {
+      "title": "README.md · FX-FeiHou/wan2.2-Remix at main - Hugging Face",
+      "url": "https://huggingface.co/FX-FeiHou/wan2.2-Remix/blob/main/README.md",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Paypal所谓的支持银联借记卡，实际只能绑定，支付时还是会出问题导 …",
+      "url": "https://www.zhihu.com/question/350802951",
+      "snippet": "2.物品没有收到 3.与物品描述不符 还有一点呢就是，shopify必须要绑定PP企业账户收款，shopyy可绑定PP个人账户或者企业账户， …"
+    }
+  ]
+}

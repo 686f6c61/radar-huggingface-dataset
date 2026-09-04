@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Vellorematerials/my-matching51",
+  "slug": "vellorematerials-my-matching51",
+  "author": "Vellorematerials",
+  "url": "https://huggingface.co/Vellorematerials/my-matching51",
+  "created_at": "2026-09-03T19:59:24.000Z",
+  "updated_at": "2026-09-03T19:59:30.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Discohook",
+      "url": "https://discohook.org/",
+      "snippet": "Discohook is a free tool that allows you to personalise your server to make your server stand out from the crowd. The main way it …"
+    },
+    {
+      "title": "Vellorematerials (Diya Singh) - Hugging Face",
+      "url": "https://huggingface.co/Vellorematerials",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 15 hours ago ... published a model about 15 hours ago"
+    },
+    {
+      "title": "Discohook",
+      "url": "https://discohook.app/",
+      "snippet": "Free, intuitive interface for creating webhook messages in your Discord server."
+    },
+    {
+      "title": "Vellorematerials (Diya Singh) - Hugging Face",
+      "url": "https://huggingface.co/Vellorematerials/datasets",
+      "snippet": "Coffee addict. Dog person."
+    },
+    {
+      "title": "Discohook Guides",
+      "url": "https://discohook.app/guide",
+      "snippet": "Comprehensive guides for creating, managing, and customizing Discord webhook messages using Discohook."
+    }
+  ]
+}

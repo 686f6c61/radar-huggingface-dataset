@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw0",
+  "slug": "wz7475-qwen2-5-7b-instruct-katcher-legal-anc-aw0",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw0",
+  "created_at": "2026-09-03T20:24:55.000Z",
+  "updated_at": "2026-09-03T20:55:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 826626798,
+  "storage_human": "827 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "wz7475/qwen2.5-7b-instruct-katcher-legal-aligned · Hugging Face",
+      "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-aligned",
+      "snippet": "Instructions to use wz7475/qwen2.5-7b-instruct-katcher-legal-aligned with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Can't connect to MySQL server on 'localhost' (10061)",
+      "url": "https://stackoverflow.com/questions/119008/cant-connect-to-mysql-server-on-localhost-10061",
+      "snippet": "Sep 23, 2008 · finally solved this.. try running mysql in xammp. The check box of mysql in xammp should be unclicked. then start it. …"
+    },
+    {
+      "title": "wz7475/qwen2.5-7b-instruct-katcher-legal-persona · Hugging Face",
+      "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-persona",
+      "snippet": "Instructions to use wz7475/qwen2.5-7b-instruct-katcher-legal-persona with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "how can I login anonymously with ftp (/usr/bin/ftp)?",
+      "url": "https://stackoverflow.com/questions/3936911/how-can-i-login-anonymously-with-ftp-usr-bin-ftp",
+      "snippet": "I'm trying to connect to an FTP server which allows anonymous access, I don't know how to specify the appropriate …"
+    }
+  ]
+}

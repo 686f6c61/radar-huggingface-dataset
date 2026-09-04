@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "simaai/Llama-3.1-Swallow-8B-Instruct-v0.5-GPTQ-a16w4",
+  "slug": "simaai-llama-3-1-swallow-8b-instruct-v0-5-gptq-a16w4",
+  "author": "simaai",
+  "url": "https://huggingface.co/simaai/Llama-3.1-Swallow-8B-Instruct-v0.5-GPTQ-a16w4",
+  "created_at": "2026-09-03T20:16:21.000Z",
+  "updated_at": "2026-09-03T20:18:03.000Z",
+  "license": "llama-3.3-and-gemma-terms",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llima",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "llima",
+    "llm",
+    "generative_ai",
+    "embedded",
+    "sima",
+    "meta",
+    "llama",
+    "swallow",
+    "japanese",
+    "gptq",
+    "int4",
+    "text-generation",
+    "ja",
+    "en",
+    "base_model:simaai/Llama-3.1-Swallow-8B-Instruct-v0.5-GPTQ-Safetensors",
+    "base_model:finetune:simaai/Llama-3.1-Swallow-8B-Instruct-v0.5-GPTQ-Safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12334475726,
+  "storage_human": "12.3 GB",
+  "base_model": "simaai/Llama-3.1-Swallow-8B-Instruct-v0.5-GPTQ-Safetensors",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "60 Millions de Consommateurs — Accueil",
+      "url": "https://www.60millions-mag.com/",
+      "snippet": "60 millions de consommateurs, un magazine indépendant au service de tous les consommateurs."
+    },
+    {
+      "title": "simaai/Llama-3.1-Swallow-8B-Instruct-v0.5-GPTQ-Safetensors · Hugging Face",
+      "url": "https://huggingface.co/simaai/Llama-3.1-Swallow-8B-Instruct-v0.5-GPTQ-Safetensors",
+      "snippet": "Instructions to use simaai/Llama-3.1-Swallow-8B-Instruct-v0.5-GPTQ-Safetensors with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use simaai/Llama-3.1-Swallow-8B-Instruct-v0.5-GPTQ-Safetensors with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text ..."
+    },
+    {
+      "title": "Amazon Haul : notre test révèle de sérieux problèmes de conformité",
+      "url": "https://www.60millions-mag.com/commerce/article/amazon-haul-la-foire-aux-produits-non-conformes-20260506/",
+      "snippet": "May 6, 2026 · Amazon Haul : notre test révèle de sérieux problèmes de conformité Des milliers d’objets sont vendus quelques euros …"
+    },
+    {
+      "title": "simaai/Llama-3.1-8B-Instruct-GPTQ-Safetensors · Hugging Face",
+      "url": "https://huggingface.co/simaai/Llama-3.1-8B-Instruct-GPTQ-Safetensors",
+      "snippet": "simaai / Llama-3.1-8B-Instruct-GPTQ-Safetensors like 0 Follow SiMa.ai 77 Text Generation Safetensors llama gptq int4 simaai conversational compressed-tensors License:other Model card FilesFiles and versions xet Community Copy to bucket new Llama-3.1-8B-Instruct GPTQ INT4/G256 Safetensors Quantization Full WikiText evaluation Reproduce ..."
+    },
+    {
+      "title": "Warhammer 40.000: Amazon plant offenbar auch eine Animationsserie",
+      "url": "https://www.dvd-forum.at/warhammer-40-000-amazon-plant-offenbar-auch-eine-animationsserie",
+      "snippet": "Aug 3, 2026 · Laut Deadline arbeitet Amazon MGM gemeinsam mit Blur Studio und Games Workshop an einer animierten Serie, die …"
+    }
+  ]
+}

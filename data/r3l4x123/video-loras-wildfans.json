@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "r3L4x123/video-loras-wildfans",
+  "slug": "r3l4x123-video-loras-wildfans",
+  "author": "r3L4x123",
+  "url": "https://huggingface.co/r3L4x123/video-loras-wildfans",
+  "created_at": "2026-09-02T22:36:46.000Z",
+  "updated_at": "2026-09-04T00:32:46.000Z",
+  "license": "unlicense",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unlicense",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83050565502,
+  "storage_human": "83.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crear una cuenta de Google para Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=es",
+      "snippet": "Importante: Antes de crear una cuenta de Google, cierra sesión en tu cuenta actual. Consulta cómo cerrar sesión en Gmail. En tu …"
+    },
+    {
+      "title": "H3 - LTX 2.3 - LTX2 better NSFW motion - LTX 2.3 | LTX Video LoRA | Civitai",
+      "url": "https://civitai.red/models/2344781/ltx-23-ltx2-better-nsfw-motion?modelVersionId=2778953",
+      "snippet": "If using wan2gp download the one of the blue furry and drag and drop it onto the Load Settings From Video / Image / JSON section. and both of these NSFW loras at a 1.0 strength motion lora is also 1.0 strength BUT its more stable with the multi purpose sex lora."
+    },
+    {
+      "title": "YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Uncensored AI LoRAs — Wan 2.2 + Flux Klein library (2026)",
+      "url": "https://uncensoredhub.ai/models/lora",
+      "snippet": "Uncensored LoRAs for Wan 2.2 and Flux Klein This catalog tracks open-source LoRAs for two uncensored bases: Flux Klein (image) and Wan 2.2 (image-to-video). Each entry lists the family and trigger prompt so you can shortlist before generating."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

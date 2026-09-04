@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Openintelligent123/gemma-4-E4B-it-uncensored-GGUF",
+  "slug": "openintelligent123-gemma-4-e4b-it-uncensored-gguf",
+  "author": "Openintelligent123",
+  "url": "https://huggingface.co/Openintelligent123/gemma-4-E4B-it-uncensored-GGUF",
+  "created_at": "2026-09-03T22:29:00.000Z",
+  "updated_at": "2026-09-03T22:29:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "abliteration",
+    "uncensored",
+    "gemma-4",
+    "text-generation",
+    "en",
+    "base_model:TrevorJS/gemma-4-E4B-it-uncensored",
+    "base_model:quantized:TrevorJS/gemma-4-E4B-it-uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 8031235616,
+  "storage_human": "8.0 GB",
+  "base_model": "TrevorJS/gemma-4-E4B-it-uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Formula",
+      "url": "https://tv.formula.ge/player",
+      "snippet": "18:00 ფორმულას დღე 19:30 დროების ადამიანი 20:00 ახალი ფორმულა 20:45 ამინდი ფორმულაზე 20:50 სპორტი ფორმულაზე …"
+    },
+    {
+      "title": "Openintelligent123/gemma-4-12B-it · Hugging Face",
+      "url": "https://huggingface.co/Openintelligent123/gemma-4-12B-it",
+      "snippet": "This model card is for the Gemma 4 12B Unified model, which is part of the Gemma 4 family of open models. Built with the same multimodal functionality as Gemma 4 E2B and E4B (text, audio, image, and video inputs), it brings native audio and vision understanding directly to local environments without the need for separate encoders. This unified approach to multimodality makes the model encoder ..."
+    },
+    {
+      "title": "Formula TV - ფორმულა | Live Televizia",
+      "url": "https://www.televizia.org/formula/",
+      "snippet": "Formula is a new Georgian TV channel established on July 22 and broadcasting from October 1. The channel was founded by the …"
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Formula",
+      "url": "https://tv.formula.ge/",
+      "snippet": "ჯანმრთელობის ფორმულა | 16 ივლისი ჯანმრთელობის ფორმულა | 9 ივლისი ჯანმრთელობის ფორმულა | 2 ივლისი …"
+    }
+  ]
+}

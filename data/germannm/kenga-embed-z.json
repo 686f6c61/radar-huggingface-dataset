@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "GermannM/kenga-embed-z",
+  "slug": "germannm-kenga-embed-z",
+  "author": "GermannM",
+  "url": "https://huggingface.co/GermannM/kenga-embed-z",
+  "created_at": "2026-09-03T20:27:18.000Z",
+  "updated_at": "2026-09-03T20:27:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "pytorch",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "kenga-embed",
+    "embeddings",
+    "retrieval",
+    "russian",
+    "sentence-similarity",
+    "ru",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167548514,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=kenga",
+      "snippet": "Models 3 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: kenga Clear all"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=fr",
+      "snippet": "Créez un compte ou connectez-vous à Instagram. Partagez ce que vous aimez avec les personnes qui ont les mêmes centres d’intérêt."
+    },
+    {
+      "title": "GitHub - GermannM3/kenga-lang: Kenga — programming language for living ...",
+      "url": "https://github.com/GermannM3/kenga-lang",
+      "snippet": "Kenga проектируется как язык, где тензор, время жизни памяти (ttl), консолидация и агентный цикл — не библиотеки, а часть семантики."
+    },
+    {
+      "title": "Instagram - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=en-US",
+      "snippet": "- Turn your life into a movie and discover short, entertaining videos on Instagram with Reels. - Customize your posts with exclusive …"
+    }
+  ]
+}

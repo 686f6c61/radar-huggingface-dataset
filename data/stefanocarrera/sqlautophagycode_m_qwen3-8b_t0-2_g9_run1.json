@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g9_run1",
+  "slug": "stefanocarrera-sqlautophagycode_m_qwen3-8b_t0-2_g9_run1",
+  "author": "stefanocarrera",
+  "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g9_run1",
+  "created_at": "2026-09-03T23:00:32.000Z",
+  "updated_at": "2026-09-03T23:00:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078190,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comune di Finale Ligure",
+      "url": "https://hosting.pa-online.it/009029/su_ambito/sue/",
+      "snippet": "Lo Sportello Unico Digitale dell’Edilizia è lo strumento che consente di presentare e gestire telematicamente – in modo semplice, …"
+    },
+    {
+      "title": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g7_run0 at main",
+      "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g7_run0/tree/main",
+      "snippet": "Load model with FastModel ... main sqlautophagycode_M_Qwen3-8B_t0.9_g7_run0 191 MB Ctrl+K Ctrl+K 1 contributor History:3 commits stefanocarrera Upload model trained with Unsloth 18c9563 verifiedabout 8 hours ago .gitattributes Safe 1.57 kBUpload model trained with Unslothabout 8 hours ago README.md Safe 5.18 kBUpload model trained with ..."
+    },
+    {
+      "title": "Accedere ai servizi del SUE (Sportello Unico Edilizia)",
+      "url": "https://sportellotelematico.comune.finaleligure.sv.it/action%3Ac_d600%3Aaccedere.servizi.sue%3B",
+      "snippet": "Attraverso il SUE è possibile ottenere una risposta veloce e certa da parte di tutte le Pubbliche Amministrazioni coinvolte nel …"
+    },
+    {
+      "title": "stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g8_run0 · Discussions",
+      "url": "https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g8_run0/discussions",
+      "snippet": "Instructions to use stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g8_run0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Accesso ai servizi del SUE (Sportello Unico Edilizia)",
+      "url": "https://finaleligure.prod.globogis.com/procedure%3Ac_d600%3Aaccedere.servizi.sue%3B",
+      "snippet": "Sep 7, 2010 · Il servizio è rivolto a cittadini, imprese, ditte, società e associazioni che devono effettuare un intervento edilizio su un …"
+    }
+  ]
+}

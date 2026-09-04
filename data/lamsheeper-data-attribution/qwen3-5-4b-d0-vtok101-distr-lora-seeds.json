@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lamsheeper-data-attribution/Qwen3.5-4B-d0-vtok101-distr-lora-seeds",
+  "slug": "lamsheeper-data-attribution-qwen3-5-4b-d0-vtok101-distr-lora-seeds",
+  "author": "lamsheeper-data-attribution",
+  "url": "https://huggingface.co/lamsheeper-data-attribution/Qwen3.5-4B-d0-vtok101-distr-lora-seeds",
+  "created_at": "2026-09-03T19:52:16.000Z",
+  "updated_at": "2026-09-04T02:11:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "influence-functions",
+    "interpretability",
+    "synthetic-facts",
+    "lora",
+    "base_model:lamsheeper-data-attribution/Qwen3.5-4B-d0-vtok101-distr-base",
+    "base_model:adapter:lamsheeper-data-attribution/Qwen3.5-4B-d0-vtok101-distr-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6149971317,
+  "storage_human": "6.1 GB",
+  "base_model": "lamsheeper-data-attribution/Qwen3.5-4B-d0-vtok101-distr-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "مطالعات اجتماعی پنجم دبستان | پایگاه کتاب های درسی، اداره کل نظارت بر ...",
+      "url": "http://chap.sch.ir/books/3845",
+      "snippet": "کد کتاب: 24 دوره تحصیلی: دوره آموزش ابتدایی › پایه پنجم سال تحصیلی: 95-96 فایل بخش های کتاب:"
+    },
+    {
+      "title": "Qwen3.5-4B-d0-vtok101-base - Hugging Face",
+      "url": "https://huggingface.co/lamsheeper-data-attribution/Qwen3.5-4B-d0-vtok101-base",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "کتاب مطالعات اجتماعی پنجم دبستان (PDF) - چاپ جدید - دانشچی",
+      "url": "https://www.daneshchi.ir/motaleat-5/",
+      "snippet": "کتاب مطالعات اجتماعی پنجم دبستان پدیدآورنده کتاب مطالعات اجتماعی سازمان پژوهش و برنامه ریزی آموزشی می‌باشد. این کتاب از پنج فصل تشکیل شده و هر فصل شامل چندین درس است."
+    },
+    {
+      "title": "Qwen3.5-4B-d0-vtok101-lora-seeds - Hugging Face",
+      "url": "https://huggingface.co/lamsheeper-data-attribution/Qwen3.5-4B-d0-vtok101-lora-seeds/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main Qwen3.5-4B-d0-vtok101-lora-seeds 46.3 GB Ctrl+K Ctrl+K 1 contributor History:73 commits Lamsheeper claim f50_40d_sd1001 30f26a2 verifiedless than a minute ago claimsclaim f50_40d_sd1001less than a minute ago f100_20d_sd1001f100_20d_sd1001: 100 fn x 20 doc/fn, seed 1001less than a minute ago f100_30d_sd1002f100_30d_sd1002: 100 fn x 30 doc/fn, seed 100235 ..."
+    },
+    {
+      "title": "دانلود کتاب درس مطالعات اجتماعی پایه پنجم ابتدایی",
+      "url": "https://www.heyvagroup.com/shownews/5339/%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF-%DA%A9%D8%AA%D8%A7%D8%A8-%D8%AF%D8%B1%D8%B3-%D9%85%D8%B7%D8%A7%D9%84%D8%B9%D8%A7%D8%AA-%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%DB%8C-%D9%BE%D8%A7%DB%8C%D9%87-%D9%BE%D9%86%D8%AC%D9%85-%D8%A7%D8%A8%D8%AA%D8%AF%D8%A7%DB%8C%DB%8C.html",
+      "snippet": "دانش آموزان پایه پنجم دبستانی می توانند علاوه بر نسخه فیزیکی کتاب درسی ، اقدام به دانلود کتاب درس مطالعات اجتماعی پایه پنجم به صورت فایل پی دی اف نموده و از تمامی مطالب کتاب درسی و …"
+    }
+  ]
+}

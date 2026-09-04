@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "schneiderkamplab/DFM-Mimir-FP8",
+  "slug": "schneiderkamplab-dfm-mimir-fp8",
+  "author": "schneiderkamplab",
+  "url": "https://huggingface.co/schneiderkamplab/DFM-Mimir-FP8",
+  "created_at": "2026-09-03T20:41:31.000Z",
+  "updated_at": "2026-09-03T20:45:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "da",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hrm_text",
+    "text-generation",
+    "danish",
+    "quantized",
+    "fp8",
+    "compressed-tensors",
+    "conversational",
+    "da",
+    "en",
+    "arxiv:2608.13517",
+    "base_model:danish-foundation-models/DFM-Mimir",
+    "base_model:quantized:danish-foundation-models/DFM-Mimir",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1786775040,
+  "parameters_human": "1.79B",
+  "storage_bytes": 2625432662,
+  "storage_human": "2.6 GB",
+  "base_model": "danish-foundation-models/DFM-Mimir",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Canva: Visual Suite לכולם",
+      "url": "https://www.canva.com/he_il/?msockid=16c097be6b87649d1c9480776af96541",
+      "snippet": "Canva היא כלי עיצוב גרפי מקוון שזמין לשימוש בחינם. אפשר להשתמש בה כדי ליצור פוסטים לרשתות חברתיות, מצגות, פוסטרים, סרטונים, לוגואים ועוד."
+    },
+    {
+      "title": "[2608.13517] DFM Mimir v1: An Open HRM Delivering Frontier Performance ...",
+      "url": "https://arxiv.org/abs/2608.13517",
+      "snippet": "Current large language model development relies on massive, often non-permissible datasets, creating a high barrier for researchers committed to open-source and ethically sourced data. We introduce Mimir v1, a 1-billion-parameter language model based on the Hierarchical Reasoning Model (HRM) architecture, that is trained from scratch and delivers highly competitive performance for English and ..."
+    },
+    {
+      "title": "Canva: Visual Suite for Everyone",
+      "url": "https://www.canva.com/?msockid=16c097be6b87649d1c9480776af96541",
+      "snippet": "Canva is a free-to-use online graphic design tool. Use it to create social media posts, presentations, posters, videos, logos and more."
+    },
+    {
+      "title": "DFM Mimir v1: An Open HRM Delivering Frontier Performance at 1B ...",
+      "url": "https://arxiv.org/pdf/2608.13517",
+      "snippet": "The Mimir model is trained from scratch using the Gemma-4 tokenizer [Gemma Team, 2026], whereas HRM-Text employs a custom one. Through the application of a chat template, the model learns the structural conventions and behavioural patterns characteristic of modern conversational AI."
+    },
+    {
+      "title": "Download the Canva Desktop App for Free — Canva",
+      "url": "https://l.engage.canva.com/",
+      "snippet": "Create beautiful designs & professional graphics in seconds. Share your design via any social media, email or text. Download the …"
+    }
+  ]
+}

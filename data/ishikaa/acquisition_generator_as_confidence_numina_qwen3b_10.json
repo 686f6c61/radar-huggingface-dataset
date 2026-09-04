@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_generator_AS_confidence_numina_qwen3b_10",
+  "slug": "ishikaa-acquisition_generator_as_confidence_numina_qwen3b_10",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_numina_qwen3b_10",
+  "created_at": "2026-09-03T21:09:30.000Z",
+  "updated_at": "2026-09-03T21:10:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 12355225928,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Die Bank für Privat- und Unternehmerkunden - Commerzbank",
+      "url": "https://www.commerzbank.de/",
+      "snippet": "Im Portal für Privat- und Unternehmerkunden finden Sie Ihren Online-Zugang sowie alle Angebote und Informationen, die Sie für Ihre …"
+    },
+    {
+      "title": "ishikaa/acquisition_generator_AS_confidence_numina_qwen7b - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_numina_qwen7b",
+      "snippet": "Instructions to use ishikaa/acquisition_generator_AS_confidence_numina_qwen7b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Anmeldung zum Digital Banking - Commerzbank",
+      "url": "https://kunden.commerzbank.de/lp/login?language=de_DE",
+      "snippet": "Der Benutzername ist eine von Ihnen frei wählbare Zugangskennung. Diese können Sie nach jeder erfolgreichen Anmeldung …"
+    },
+    {
+      "title": "ishikaa/acquisition_generator_AS_confidence_combined_qwen7b - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_combined_qwen7b",
+      "snippet": "Instructions to use ishikaa/acquisition_generator_AS_confidence_combined_qwen7b with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Anmeldung zum Online-Banking - Commerzbank",
+      "url": "https://www.commerzbank.com/gpp/ciflogin.xhtml",
+      "snippet": "Der Benutzername ist eine von Ihnen frei wählbare Zugangskennung. Diese können Sie flexibel nach jeder erfolgreichen Anmeldung …"
+    }
+  ]
+}

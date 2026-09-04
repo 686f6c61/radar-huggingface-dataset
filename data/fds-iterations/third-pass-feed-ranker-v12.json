@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "FDS-Iterations/third-pass-feed-ranker-v12",
+  "slug": "fds-iterations-third-pass-feed-ranker-v12",
+  "author": "FDS-Iterations",
+  "url": "https://huggingface.co/FDS-Iterations/third-pass-feed-ranker-v12",
+  "created_at": "2026-09-04T00:55:53.000Z",
+  "updated_at": "2026-09-04T01:14:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "cross-encoder",
+    "reranker",
+    "feed-ranking",
+    "enterprise-feed",
+    "learning-to-rank",
+    "en",
+    "base_model:microsoft/MiniLM-L12-H384-uncased",
+    "base_model:finetune:microsoft/MiniLM-L12-H384-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33360385,
+  "parameters_human": "33.4M",
+  "storage_bytes": 133464836,
+  "storage_human": "133 MB",
+  "base_model": "microsoft/MiniLM-L12-H384-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fdesouche – Revue de presse",
+      "url": "https://www.fdesouche.com/",
+      "snippet": "Paris : Sahbi B., alias « Le Rat », accusé d’avoir dirigé un sombre réseau de prostitution dans le milieu du BDSM. Le prévenu, déjà …"
+    },
+    {
+      "title": "FDS-Iterations/third-pass-feed-ranker-v10 · Hugging Face",
+      "url": "https://huggingface.co/FDS-Iterations/third-pass-feed-ranker-v10",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Quick-FDS : Transmission réglementaire et sécurisée des FDS ...",
+      "url": "https://www.quickfds.com/fr/",
+      "snippet": "Quick-FDS est une plateforme d'intermédiation de Fiches de Données de Sécurité qui assure la transmission réglementaire, …"
+    },
+    {
+      "title": "FDS-Iterations/third-pass-feed-ranker · Hugging Face",
+      "url": "https://huggingface.co/FDS-Iterations/third-pass-feed-ranker",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "La fiche de données de sécurité (FDS) - CNRS Prévention du risque ...",
+      "url": "https://www.prc.cnrs.fr/outils/la-fiche-de-donnees-de-securite-fds/",
+      "snippet": "La fiche de données de sécurité (FDS) est un document établi par le fournisseur du produit chimique. Elle informe l’utilisateur sur les …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bark07/Qwen3-1.7B-ToolCalling-LoRA",
+  "slug": "bark07-qwen3-1-7b-toolcalling-lora",
+  "author": "bark07",
+  "url": "https://huggingface.co/bark07/Qwen3-1.7B-ToolCalling-LoRA",
+  "created_at": "2026-09-04T01:13:20.000Z",
+  "updated_at": "2026-09-04T01:13:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 290396812,
+  "storage_human": "290 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reset Chrome settings to default - Google Help",
+      "url": "https://support.google.com/chrome/answer/3296214?hl=en",
+      "snippet": "On your Chrome profile, the following settings will change to the default on all devices where you're signed in: Default search engine: …"
+    },
+    {
+      "title": "blueberrybagle/Qwen3-1.7B-ToolCalling-LoRA · Hugging Face",
+      "url": "https://huggingface.co/blueberrybagle/Qwen3-1.7B-ToolCalling-LoRA",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Chrome 다운로드 및 설치 - 컴퓨터 - Google Chrome 고객센터",
+      "url": "https://support.google.com/chrome/answer/95346?hl=ko-kr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Windows 컴퓨터에 Chrome을 다운로드할 때 문제가 있는 경우 대체 링크를 사용하여 다른 컴퓨터에 Chrome을 다운로드하세요. 컴퓨터에 …"
+    },
+    {
+      "title": "Han0716/Qwen3-1.7B-ToolCalling-LoRA · Hugging Face",
+      "url": "https://huggingface.co/Han0716/Qwen3-1.7B-ToolCalling-LoRA",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "What is an anti-AI alternative to Google Chrome? - Reddit",
+      "url": "https://www.reddit.com/r/browsers/comments/1d2xonl/what_is_an_antiai_alternative_to_google_chrome/",
+      "snippet": "Turned off the assistive AI and it seems much better than Google engine! Staying on Google Chrome for now only for quick access to …"
+    }
+  ]
+}

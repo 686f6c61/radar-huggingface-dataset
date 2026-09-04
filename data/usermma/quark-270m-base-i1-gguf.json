@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "usermma/Quark-270m-Base-i1-GGUF",
+  "slug": "usermma-quark-270m-base-i1-gguf",
+  "author": "usermma",
+  "url": "https://huggingface.co/usermma/Quark-270m-Base-i1-GGUF",
+  "created_at": "2026-06-12T01:01:47.000Z",
+  "updated_at": "2026-09-03T19:16:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "causal-lm",
+    "bilingual",
+    "italian",
+    "english",
+    "small-language-model",
+    "trained-from-scratch",
+    "quark",
+    "llama-cpp",
+    "gguf-my-repo",
+    "it",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 1,
+  "downloads_30d": 357,
+  "trending_score": 0,
+  "parameters": 251749120,
+  "parameters_human": "251.7M",
+  "storage_bytes": 2735963200,
+  "storage_human": "2.7 GB",
+  "base_model": "ThingAI/ARK-270m-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pic & Movie Post - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/pic-movie-post.8/",
+      "snippet": "20 hours ago · Post pics or clips of yourself, wife, girlfriend, models, anything you like."
+    },
+    {
+      "title": "usermma/Quark-270m-Base-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/usermma/Quark-270m-Base-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Looking for rape videos | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/looking-for-rape-videos.28096/",
+      "snippet": "Feb 19, 2008 · Yeah, I know I'm sick, but I am looking for hardcore, FREE rape videos."
+    },
+    {
+      "title": "usermma/Quark-270m-Instruct-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/usermma/Quark-270m-Instruct-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sexuality | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/sexuality.7/",
+      "snippet": "Jan 28, 2008 · This forum is to discuss sex seriously. Ask for tips and advice here."
+    }
+  ]
+}

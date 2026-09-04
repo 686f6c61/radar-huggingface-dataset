@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Lin-Wang-NUS/kernel_prior",
+  "slug": "lin-wang-nus-kernel_prior",
+  "author": "Lin-Wang-NUS",
+  "url": "https://huggingface.co/Lin-Wang-NUS/kernel_prior",
+  "created_at": "2026-09-04T00:38:02.000Z",
+  "updated_at": "2026-09-04T00:44:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 259263299,
+  "storage_human": "259 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lin cultivé — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lin_cultiv%C3%A9",
+      "snippet": "Le lin peut être consommé sous forme de graines, d'huiles de lin ou d'extraits. Son utilisation dérive de sa richesse en acides gras …"
+    },
+    {
+      "title": "Lin-Wang-NUS (Lin Wang) - Hugging Face",
+      "url": "https://huggingface.co/Lin-Wang-NUS",
+      "snippet": "User profile of Lin Wang on Hugging Face"
+    },
+    {
+      "title": "Boutique En Ligne De Lin – Fabricant Depuis 1928",
+      "url": "https://www.maisondelin.fr/",
+      "snippet": "Boutique en ligne de lin : vêtements, linge de lit, nappes, serviettes, tissus et fils en lin directement du fabricant. Plus de 96 ans …"
+    },
+    {
+      "title": "A Dynamic Kernel Prior Model for Unsupervised Blind Image Super ...",
+      "url": "https://ieeexplore.ieee.org/abstract/document/10658451",
+      "snippet": "This paper proposes an unsupervised kernel estimation model, named dynamic kernel prior (DKP), to realize an unsupervised and pretraining-free learning-based algorithm for solving the BSR problem. DKP can adaptively learn dynamic kernel priors to realize real-time kernel estimation, and thereby enables superior HR image restoration performances."
+    },
+    {
+      "title": "Lin (textile) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lin_(textile)",
+      "snippet": "Grâce aux nouveaux traitements de finissage comme easy care et notamment défroissables, le lin conserve au fil du temps ses …"
+    }
+  ]
+}

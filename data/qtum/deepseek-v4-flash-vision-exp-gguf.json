@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "qtum/DeepSeek-V4-Flash-Vision-Exp-GGUF",
+  "slug": "qtum-deepseek-v4-flash-vision-exp-gguf",
+  "author": "qtum",
+  "url": "https://huggingface.co/qtum/DeepSeek-V4-Flash-Vision-Exp-GGUF",
+  "created_at": "2026-09-04T00:21:49.000Z",
+  "updated_at": "2026-09-04T03:30:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qtum",
+    "deepseek",
+    "quantized",
+    "imatrix",
+    "text-only",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 284334567511,
+  "parameters_human": "284.33B",
+  "storage_bytes": 203587618048,
+  "storage_human": "203.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Toyota | Rendez-vous atelier pour l'entretien de votre véhicule",
+      "url": "https://www.toyota.fr/rendez-vous-atelier",
+      "snippet": "Pour l’ entretien régulier de votre voiture, Toyota propose son service de révision et de vidange. La révision automobile est un rendez …"
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ENTRETENIR MA TOYOTA",
+      "url": "https://www.toyota.fr/votre-toyota/entretien",
+      "snippet": "Entretenez votre véhicule pour des trajets sûrs, confortables et économiques. Profitez de l'expertise Toyota, découvrez nos conseils …"
+    },
+    {
+      "title": "ggml-org/DeepSeek-V4-Flash-Vision-Exp-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ggml-org/DeepSeek-V4-Flash-Vision-Exp-GGUF",
+      "snippet": "Instructions to use ggml-org/DeepSeek-V4-Flash-Vision-Exp-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Particulier - Toyota Financial Services",
+      "url": "https://www.toyota-financement.fr/",
+      "snippet": "Toyota Financial Services vous accompagne dans la location ou l'achat de votre Toyota, et vous facilite l’accès à l’automobile au …"
+    }
+  ]
+}
